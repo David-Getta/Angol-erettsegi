@@ -5,7 +5,8 @@ import type { ObjectiveTask } from "@/lib/content/schema";
 import { findLoose, segmentText } from "@/lib/content/text";
 import { t } from "@/lib/i18n/hu";
 import { PracticeRunner, type RunnerProps } from "../exercise/PracticeRunner";
-import { pickVoice, speak, stopSpeaking, useSpeechSupport, voicesReady, type Gender } from "../speech";
+import { pickVoice, speak, stopSpeaking, useSpeechSupport, useVoiceInfo, voicesReady, type Gender } from "../speech";
+import Link from "next/link";
 import { fmtClock } from "../useTimer";
 import { btn } from "../ui";
 
@@ -61,6 +62,7 @@ export function ListeningPlayer({
   onDone?: () => void;
 }) {
   const L = task.listening!;
+  const voiceInfo = useVoiceInfo(L.speakers[0]?.accent ?? "en-GB");
   const plays = L.plays ?? 2;
   const prep = L.prepSeconds ?? prepSeconds ?? 60;
   const pause = L.pauseSeconds ?? pauseSeconds ?? 30;
@@ -105,7 +107,7 @@ export function ListeningPlayer({
   const speakerVoices = useMemo(() => new Map<string, { voiceURI: string | null; pitch: number }>(), []);
 
   async function assignVoices() {
-    await voicesReady();
+    await voicesReady(L.speakers[0]?.accent ?? "en");
     const used = new Set<string>();
     const counts = new Map<string, number>();
     for (const sp of L.speakers) {
@@ -148,8 +150,8 @@ export function ListeningPlayer({
       setLine(i);
       const l = L.script[i]!;
       const v = speakerVoices.get(l.speaker);
-      const gender = L.speakers.find((s) => s.id === l.speaker)?.gender as Gender | undefined;
-      await speak(l.text, { rate, voiceURI: v?.voiceURI ?? null, pitch: v?.pitch ?? 1, gender });
+      const sp = L.speakers.find((s) => s.id === l.speaker);
+      await speak(l.text, { rate, voiceURI: v?.voiceURI ?? null, pitch: v?.pitch ?? 1, gender: sp?.gender as Gender | undefined, accent: sp?.accent });
       await new Promise((r) => setTimeout(r, 250));
     }
   }
@@ -194,6 +196,19 @@ export function ListeningPlayer({
     <div className="rounded-xl border border-accent/30 bg-accent-soft/50 p-4" data-testid="listening-player">
       {audioSrc && <audio ref={audioRef} src={audioSrc} preload="auto" />}
       {!tts && !audioSrc && <p className="mb-2 text-sm text-bad">{t.listening.noTts}</p>}
+      {tts && !audioSrc && voiceInfo.ready && !voiceInfo.voice && (
+        <p className="mb-2 text-sm text-bad" data-testid="no-voice">
+          {t.listening.noVoice(L.speakers[0]?.accent ?? "en-GB")}
+        </p>
+      )}
+      {tts && !audioSrc && voiceInfo.voice && (
+        <p className="mb-2 text-xs text-muted" data-testid="voice-used">
+          {t.listening.voiceUsed(voiceInfo.voice.name, voiceInfo.voice.lang)} ·{" "}
+          <Link href="/beallitasok#hangok" className="underline">
+            {t.listening.voiceChange}
+          </Link>
+        </p>
+      )}
       <div className="flex flex-wrap items-center gap-3">
         {phase === "idle" && (
           <button type="button" className={btn.primary} onClick={run} disabled={!tts && !audioSrc} data-testid="start-audio">

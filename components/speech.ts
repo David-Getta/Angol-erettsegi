@@ -13,15 +13,51 @@ export type Gender = "female" | "male";
 const FEMALE_HINTS = /female|woman|samantha|victoria|karen|moira|tessa|fiona|serena|kate|susan|zira|hazel|libby|sonia|jenny|aria|emma|amy|joanna|salli|kimberly|ivy|natasha|olivia|ava|allison|catherine|nicky|martha|maisie|google uk english female|google us english/i;
 const MALE_HINTS = /\bmale\b|daniel|alex|fred|george|david|mark|ryan|guy|thomas|oliver|arthur|aaron|rishi|brian|matthew|joey|justin|russell|eric|tom|james|liam|william|google uk english male/i;
 
+/** macOS effect voices (they sing, whisper or sound robotic) – never used for listening. */
+const NOVELTY = /\b(albert|bad news|bahh|bells|boing|bubbles|cellos|deranged|good news|hysterical|jester|junior|kathy|organ|princess|ralph|superstar|trinoids|whisper|wobble|zarvox|fred)\b/i;
+/** Voices that macOS lists although they may not be downloaded: speaking with them silently falls back to the system voice (often Hungarian). */
+const MAYBE_MISSING = /premium|enhanced|siri/i;
+/** Synthetic "Eloquence" voices: installed everywhere, but robotic. */
+const ELOQUENCE = /\b(eddy|flo|grandma|grandpa|reed|rocko|sandy|shelley)\b/i;
+/** Voices that are installed by default and sound natural. */
+const RELIABLE = /google|microsoft .*(natural|online)|\b(daniel|samantha|karen|moira|tessa|rishi|alex|hazel|george|susan|zira|david|libby|sonia|ryan|anna|helena|markus|yannick|petra|tünde|tunde)\b/i;
+
+export function isNoveltyVoice(v: SpeechSynthesisVoice): boolean {
+  return NOVELTY.test(v.name);
+}
+
 export function hasTts(): boolean {
   return typeof window !== "undefined" && "speechSynthesis" in window;
 }
 
-/** Voices of a language ("en", "hu", "de" …); English by default. */
+/** Usable voices of a language ("en", "en-GB", "de-DE", "hu" …), best first; English by default. Effect voices are left out. */
 export function voicesFor(lang = "en"): SpeechSynthesisVoice[] {
   if (!hasTts()) return [];
   const prefix = lang.slice(0, 2).toLowerCase();
-  return window.speechSynthesis.getVoices().filter((v) => v.lang.toLowerCase().startsWith(prefix));
+  const list = window.speechSynthesis.getVoices().filter((v) => v.lang.replace("_", "-").toLowerCase().startsWith(prefix) && !isNoveltyVoice(v));
+  return list.sort((a, b) => voiceQuality(b) - voiceQuality(a));
+}
+
+/** How safe and natural a voice is (independent of the speaker). */
+export function voiceQuality(v: SpeechSynthesisVoice): number {
+  let q = 0;
+  // Chrome renders its Google voices itself, so they do not depend on the voices installed in the OS
+  if (/^google\b/i.test(v.name)) q += 1.5;
+  if (RELIABLE.test(v.name)) q += 3;
+  if (MAYBE_MISSING.test(v.voiceURI) || MAYBE_MISSING.test(v.name)) q -= 3;
+  if (ELOQUENCE.test(v.name)) q -= 2;
+  if (v.localService) q += 0.5;
+  return q;
+}
+
+/** Waits until the browser has loaded its voice list (Chrome loads it lazily). */
+export function ensureVoices(timeoutMs = 1500): Promise<void> {
+  return new Promise((resolve) => {
+    if (!hasTts() || window.speechSynthesis.getVoices().length) return resolve();
+    const done = () => resolve();
+    window.speechSynthesis.addEventListener("voiceschanged", done, { once: true });
+    setTimeout(done, timeoutMs);
+  });
 }
 
 export function englishVoices(): SpeechSynthesisVoice[] {
@@ -35,15 +71,9 @@ export function voiceGender(v: SpeechSynthesisVoice): Gender | null {
 }
 
 /** Voices may load asynchronously (Chrome). */
-export function voicesReady(timeoutMs = 1500): Promise<SpeechSynthesisVoice[]> {
-  return new Promise((resolve) => {
-    if (!hasTts()) return resolve([]);
-    const v = englishVoices();
-    if (v.length) return resolve(v);
-    const done = () => resolve(englishVoices());
-    window.speechSynthesis.addEventListener("voiceschanged", done, { once: true });
-    setTimeout(done, timeoutMs);
-  });
+export async function voicesReady(lang = "en", timeoutMs = 1500): Promise<SpeechSynthesisVoice[]> {
+  await ensureVoices(timeoutMs);
+  return voicesFor(lang);
 }
 
 export function pickVoice(opts: { gender?: Gender; accent?: string; voiceURI?: string | null; avoid?: Set<string> }): SpeechSynthesisVoice | null {
@@ -55,13 +85,12 @@ export function pickVoice(opts: { gender?: Gender; accent?: string; voiceURI?: s
     if (v) return v;
   }
   const score = (v: SpeechSynthesisVoice) => {
-    let s = 0;
+    let s = voiceQuality(v);
     if (opts.gender && voiceGender(v) === opts.gender) s += 4;
     if (opts.gender && voiceGender(v) && voiceGender(v) !== opts.gender) s -= 4;
     if (opts.accent && v.lang.replace("_", "-").toLowerCase() === opts.accent.toLowerCase()) s += 2;
     else if (v.lang.toLowerCase().startsWith("en-gb")) s += 1;
     if (opts.avoid?.has(v.voiceURI)) s -= 3;
-    if (v.localService) s += 0.5;
     return s;
   };
   return [...voices].sort((a, b) => score(b) - score(a))[0] ?? null;
@@ -84,24 +113,37 @@ export function chunkText(text: string, max = 180): string[] {
   return out;
 }
 
-export function speak(text: string, opts: SpeakOpts = {}): Promise<void> {
+export async function speak(text: string, opts: SpeakOpts = {}): Promise<void> {
+  if (!hasTts()) return;
+  // without a loaded voice list the browser would read with the system voice (on a Hungarian Mac: Hungarian)
+  await ensureVoices();
   return new Promise((resolve) => {
-    if (!hasTts()) return resolve();
     const voice = opts.voice ?? pickVoice({ gender: opts.gender, accent: opts.accent, voiceURI: opts.voiceURI });
     const chunks = chunkText(text);
+    // a network voice (Google) fails offline: then the rest is read with the best local voice of the language
+    let current = voice;
+    const localFallback = () => voicesFor(opts.accent ?? voice?.lang ?? "en").find((x) => x.localService) ?? null;
     let i = 0;
-    const next = () => {
-      if (i >= chunks.length) return resolve();
-      const u = new SpeechSynthesisUtterance(chunks[i++]!);
-      if (voice) {
-        u.voice = voice;
-        u.lang = voice.lang;
+    const say = (chunk: string, retried: boolean) => {
+      const u = new SpeechSynthesisUtterance(chunk);
+      if (current) {
+        u.voice = current;
+        u.lang = current.lang;
       } else u.lang = opts.accent ?? "en-GB";
       u.rate = opts.rate ?? 0.95;
       u.pitch = opts.pitch ?? 1;
       u.onend = next;
-      u.onerror = next;
+      u.onerror = (e: SpeechSynthesisErrorEvent) => {
+        if (!retried && current && !current.localService && e.error !== "interrupted" && e.error !== "canceled") {
+          current = localFallback();
+          say(chunk, true);
+        } else next();
+      };
       window.speechSynthesis.speak(u);
+    };
+    const next = () => {
+      if (i >= chunks.length) return resolve();
+      say(chunks[i++]!, false);
     };
     next();
   });
@@ -195,6 +237,23 @@ export function startDictation(opts: { lang?: string; onText: (finalText: string
       }
     },
   };
+}
+
+/** The voice the app will use for a language, read after mount (null = none installed for that language). */
+export function useVoiceInfo(lang: string): { ready: boolean; voice: { name: string; lang: string } | null } {
+  const [info, setInfo] = useState<{ ready: boolean; voice: { name: string; lang: string } | null }>({ ready: false, voice: null });
+  useEffect(() => {
+    let alive = true;
+    void ensureVoices().then(() => {
+      if (!alive) return;
+      const v = pickVoice({ accent: lang });
+      setInfo({ ready: true, voice: v ? { name: v.name, lang: v.lang } : null });
+    });
+    return () => {
+      alive = false;
+    };
+  }, [lang]);
+  return info;
 }
 
 /** Browser capability flags, read after mount so server and client render the same HTML. */

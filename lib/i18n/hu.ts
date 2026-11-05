@@ -205,6 +205,10 @@ export const t = {
     transcriptHint: "A kiemelt részekben van a válasz.",
     stop: "Leállítás",
     voices: "Hangok",
+    voiceUsed: (name: string, lang: string) => `Felolvasó hang: ${name} (${lang})`,
+    voiceChange: "Másik hang",
+    noVoice: (lang: string) =>
+      `Nincs ${lang} nyelvű felolvasó hang a gépeden, ezért a böngésző a rendszer hangján (pl. magyarul) olvasna. Mac: Rendszerbeállítások → Kisegítő lehetőségek → Felolvasott tartalom → Rendszerhang → Hangok kezelése – tölts le egy hangot (pl. angol: Daniel vagy Samantha, német: Anna), majd töltsd újra az oldalt. Windows: Beállítások → Idő és nyelv → Beszéd → Hangok hozzáadása. Chrome-ban a „Google UK English” hangok internetkapcsolattal mindig működnek.`,
   },
 
   weak: {
@@ -217,7 +221,7 @@ export const t = {
 
   voice: {
     keep: "A hangomat is rögzítse (visszahallgatáshoz)",
-    keepHint: "A felvétel csak a böngésződben marad, sehova nem kerül fel. A kiejtést (3 pont a vizsgán) így magad ellenőrizheted.",
+    keepHint: "A felvétel csak a böngésződben marad, sehova nem kerül fel. A kiejtést így magad ellenőrizheted.",
     yourVoice: "A hangod",
     listenSample: "🔊 A mintaválasz felolvasása",
     stopSample: "■ Állj",
@@ -395,6 +399,7 @@ export const t = {
     rate: { 1: "Nem tudtam", 2: "Nehéz", 3: "Jó", 4: "Könnyű" } as Record<number, string>,
     rateKeys: "1–4: értékelés · Szóköz: válasz",
     types: { "en-hu": "angol → magyar", "hu-en": "magyar → angol", cloze: "példamondat-kitöltés", collocation: "kollokáció", fix: "javítsd ki" } as Record<string, string>,
+    typesFor: (name: string): Record<string, string> => ({ "en-hu": `${name} → magyar`, "hu-en": `magyar → ${name}`, cloze: "példamondat-kitöltés", collocation: "kollokáció", fix: "javítsd ki" }),
     typesGeneric: { "en-hu": "fogalom → magyarázat", "hu-en": "magyarázat → fogalom", cloze: "mondatkiegészítés", collocation: "szókapcsolat / képlet", fix: "javítsd ki" } as Record<string, string>,
     fixPrompt: "Javítsd ki a hibát:",
     fixAdd: "＋ Ismétlésbe",
@@ -751,8 +756,12 @@ export const t = {
     ttsRate: "Sebesség",
     voiceFemale: "Női hang",
     voiceMale: "Férfi hang",
-    voiceAuto: "Automatikus",
+    voiceAuto: "Automatikus (ajánlott)",
     testVoice: "Kipróbálás",
+    voiceSample: { en: "Hello! This is how I sound when I read the listening tasks.", de: "Hallo! So klinge ich, wenn ich die Hörtexte vorlese.", hu: "Szia! Így hangzom, amikor felolvasom a kérdéseket." } as Record<string, string>,
+    voiceHint: (lang: string) =>
+      `A lista csak a(z) ${lang} nyelvű hangokat mutatja, a legjobbakkal kezdve. Ha a felolvasás magyar kiejtésű vagy betűz, válassz itt egy hangot és próbáld ki. Macen a „Premium/Enhanced” hangokat előbb le kell tölteni (Rendszerbeállítások → Kisegítő lehetőségek → Felolvasott tartalom → Rendszerhang → Hangok kezelése); Chrome-ban a „Google UK English” hangok internettel mindig működnek.`,
+    noVoices: (lang: string) => `Nincs ${lang} nyelvű hang telepítve – a böngésző a rendszer hangján olvasna. Telepíts egyet a fenti útmutató szerint.`,
     theme: "Téma",
     data: "Adatok",
     export: "Exportálás (JSON)",

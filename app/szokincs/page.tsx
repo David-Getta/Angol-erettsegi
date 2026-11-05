@@ -101,7 +101,7 @@ export default async function VocabPage({ searchParams }: { searchParams: Promis
           </form>
         }
       >
-        <CardTable words={[...words.values()]} language={examConfig.subject().language} />
+        <CardTable words={[...words.values()]} language={examConfig.subject().language} speechLang={examConfig.subject().speechLang} languageName={examConfig.subject().languageName ?? "angol"} />
       </Card>
     </div>
   );

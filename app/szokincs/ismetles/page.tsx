@@ -26,7 +26,7 @@ export default function ReviewPage() {
   return (
     <>
       <h1 className="sr-only">{t.vocab.review}</h1>
-      <ReviewSession initial={queue} ttsRate={s.ttsRate} language={examConfig.subject().language} />
+      <ReviewSession initial={queue} ttsRate={s.ttsRate} language={examConfig.subject().language} speechLang={examConfig.subject().speechLang} languageName={examConfig.subject().languageName ?? "angol"} />
     </>
   );
 }

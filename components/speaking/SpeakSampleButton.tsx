@@ -6,7 +6,7 @@ import { btn } from "@/components/ui";
 import { t } from "@/lib/i18n/hu";
 
 /** Reads the candidate's part of a sample answer aloud (browser TTS) to compare with your own recording. */
-export function SpeakSampleButton({ text }: { text: string }) {
+export function SpeakSampleButton({ text, lang = "en-GB" }: { text: string; lang?: string }) {
   const { tts } = useSpeechSupport();
   const [playing, setPlaying] = useState(false);
   if (!tts) return null;
@@ -21,7 +21,7 @@ export function SpeakSampleButton({ text }: { text: string }) {
           return;
         }
         setPlaying(true);
-        await speak(text, { rate: 0.95, accent: "en-GB" });
+        await speak(text, { rate: 0.95, accent: lang });
         setPlaying(false);
       }}
     >

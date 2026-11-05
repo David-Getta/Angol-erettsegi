@@ -7,7 +7,7 @@ import { t } from "@/lib/i18n/hu";
 import { saveSettingsAction, importDataAction, backupAction } from "@/app/actions";
 import { Card, btn, formatDate } from "@/components/ui";
 import { useToast } from "@/components/Toast";
-import { englishVoices, speak } from "@/components/speech";
+import { speak, voicesFor } from "@/components/speech";
 
 const CARD_TYPES = ["en-hu", "hu-en", "cloze", "collocation"] as const;
 
@@ -16,10 +16,15 @@ export function SettingsForm({
   totals,
   backups,
   language = true,
+  speechLang = "en-GB",
+  languageName = "angol",
 }: {
   settings: Settings;
-  /** Foreign-language subject: card type labels and voice settings refer to English. */
+  /** Foreign-language subject: card type labels and voice settings refer to its language. */
   language?: boolean;
+  /** Language of the read-aloud voices (en-GB, de-DE, hu-HU). */
+  speechLang?: string;
+  languageName?: string;
   totals: Record<"kozep" | "emelt", number>;
   backups: { name: string; size: number; at: string }[];
 }) {
@@ -31,13 +36,13 @@ export function SettingsForm({
   const fileRef = useRef<HTMLInputElement>(null);
 
   useEffect(() => {
-    const load = () => setVoices(englishVoices());
+    const load = () => setVoices(voicesFor(speechLang));
     load();
     if (typeof window !== "undefined" && "speechSynthesis" in window) {
       window.speechSynthesis.addEventListener("voiceschanged", load);
       return () => window.speechSynthesis.removeEventListener("voiceschanged", load);
     }
-  }, []);
+  }, [speechLang]);
 
   const save = () =>
     start(async () => {
@@ -102,13 +107,16 @@ export function SettingsForm({
                   setS({ ...s, cardTypes: e.target.checked ? [...s.cardTypes, ct] : s.cardTypes.filter((x) => x !== ct).length ? s.cardTypes.filter((x) => x !== ct) : s.cardTypes })
                 }
               />
-              {(language ? t.vocab.types : t.vocab.typesGeneric)[ct]}
+              {(language ? t.vocab.typesFor(languageName) : t.vocab.typesGeneric)[ct]}
             </label>
           ))}
         </fieldset>
       </Card>
 
       <Card title={t.settings.tts}>
+        <div id="hangok" />
+        <p className="mb-3 text-xs text-muted">{t.settings.voiceHint(speechLang)}</p>
+        {voices.length === 0 && <p className="mb-3 text-sm text-bad" data-testid="no-voices">{t.settings.noVoices(speechLang)}</p>}
         <label className="block text-sm font-medium">
           {t.settings.ttsRate}: {s.ttsRate.toFixed(2)}×
           <input type="range" min={0.5} max={1.5} step={0.05} value={s.ttsRate} onChange={(e) => setS({ ...s, ttsRate: Number(e.target.value) })} className="mt-1 w-full accent-[var(--accent)]" />
@@ -128,7 +136,7 @@ export function SettingsForm({
               <button
                 type="button"
                 className={`${btn.secondary} mt-1`}
-                onClick={() => speak("Hello! This is how I sound when I read the listening tasks.", { rate: s.ttsRate, voiceURI: s[k], gender: k === "ttsVoiceFemale" ? "female" : "male" })}
+                onClick={() => speak(t.settings.voiceSample[speechLang.slice(0, 2)] ?? t.settings.voiceSample.en!, { rate: s.ttsRate, voiceURI: s[k], gender: k === "ttsVoiceFemale" ? "female" : "male", accent: speechLang })}
               >
                 ▶ {t.settings.testVoice}
               </button>

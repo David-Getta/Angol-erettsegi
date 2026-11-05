@@ -23,10 +23,10 @@ export type ReviewCard = {
   isNew: boolean;
 };
 
-export function ReviewSession({ initial, ttsRate, language = true }: { initial: ReviewCard[]; ttsRate: number; language?: boolean }) {
-  const typeLabels = language ? t.vocab.types : t.vocab.typesGeneric;
-  const lang = language ? "en" : "hu";
-  const accent = language ? "en-GB" : "hu-HU";
+export function ReviewSession({ initial, ttsRate, language = true, speechLang = "en-GB", languageName = "angol" }: { initial: ReviewCard[]; ttsRate: number; language?: boolean; speechLang?: string; languageName?: string }) {
+  const typeLabels = language ? t.vocab.typesFor(languageName) : t.vocab.typesGeneric;
+  const lang = speechLang.slice(0, 2);
+  const accent = speechLang;
   const [queue, setQueue] = useState(initial);
   const [shown, setShown] = useState(false);
   const [typed, setTyped] = useState("");

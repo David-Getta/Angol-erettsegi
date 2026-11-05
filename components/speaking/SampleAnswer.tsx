@@ -1,6 +1,7 @@
 import type { SpeakingTask } from "@/lib/content/schema";
 import { quotedPhrases, wordCount } from "@/lib/content/text";
 import { t } from "@/lib/i18n/hu";
+import { examConfig } from "@/lib/exam/config";
 import { AddPhraseChips } from "@/components/vocab/AddPhraseChips";
 import { SpeakSampleButton } from "./SpeakSampleButton";
 
@@ -22,7 +23,7 @@ export function SampleAnswer({ task, open = false }: { task: SpeakingTask; open?
       </summary>
       <div className="mt-2 flex flex-wrap items-center gap-3">
         <p className="text-sm text-muted">{t.sample.hint}</p>
-        <SpeakSampleButton text={sa.turns.filter((x) => x.speaker === "candidate").map((x) => x.text).join(" ")} />
+        <SpeakSampleButton text={sa.turns.filter((x) => x.speaker === "candidate").map((x) => x.text).join(" ")} lang={examConfig.subject().speechLang} />
       </div>
       <div className="mt-3 grid grid-cols-1 gap-5 lg:grid-cols-[minmax(0,1fr)_minmax(0,0.7fr)]">
         <div className="space-y-2">

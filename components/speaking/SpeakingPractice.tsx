@@ -30,7 +30,7 @@ function examinerTurns(task: SpeakingTask): string[] {
  * questions are read aloud and dictated in English; for other subjects the
  * recogniser and the TTS use Hungarian.
  */
-export function SpeakingPractice({ task, examinerPrompt, ttsRate, base, language = true }: { task: SpeakingTask; examinerPrompt: string; ttsRate: number; base: string; language?: boolean }) {
+export function SpeakingPractice({ task, examinerPrompt, ttsRate, base, language = true, speechLang = "en-GB" }: { task: SpeakingTask; examinerPrompt: string; ttsRate: number; base: string; language?: boolean; speechLang?: string }) {
   const [tab, setTab] = useState<"self" | "live">("self");
   return (
     <div className="grid grid-cols-1 gap-5 lg:grid-cols-[minmax(0,1fr)_minmax(0,1.2fr)]">
@@ -44,7 +44,7 @@ export function SpeakingPractice({ task, examinerPrompt, ttsRate, base, language
             💬 {t.speaking.live}
           </button>
         </div>
-        {tab === "self" ? <SelfPractice task={task} ttsRate={ttsRate} base={base} language={language} /> : <LivePractice task={task} examinerPrompt={examinerPrompt} base={base} />}
+        {tab === "self" ? <SelfPractice task={task} ttsRate={ttsRate} base={base} language={language} speechLang={speechLang} /> : <LivePractice task={task} examinerPrompt={examinerPrompt} base={base} />}
       </div>
     </div>
   );
@@ -153,8 +153,8 @@ function TaskCard({ task }: { task: SpeakingTask }) {
   );
 }
 
-function SelfPractice({ task, ttsRate, base: basePath, language }: { task: SpeakingTask; ttsRate: number; base: string; language: boolean }) {
-  const lang = language ? "en-GB" : "hu-HU";
+function SelfPractice({ task, ttsRate, base: basePath, language, speechLang }: { task: SpeakingTask; ttsRate: number; base: string; language: boolean; speechLang: string }) {
+  const lang = speechLang;
   const turnsQ = examinerTurns(task);
   const [step, setStep] = useState(0);
   const [turns, setTurns] = useState<Turn[]>([]);

@@ -43,6 +43,10 @@ export const SubjectSchema = z.object({
   language: z.boolean().default(false),
   /** Prefix of every content id of the subject (ids are global database keys); empty for the original English bank. */
   idPrefix: z.string().regex(/^[a-z0-9]*$/).default(""),
+  /** Language of text-to-speech and speech recognition (BCP 47, e.g. en-GB, de-DE, hu-HU). */
+  speechLang: z.string().regex(/^[a-z]{2}-[A-Z]{2}$/).default("hu-HU"),
+  /** Language subjects: the name of the language in Hungarian ("angol"), used in card-type labels. */
+  languageName: z.string().optional(),
   available: z.boolean().default(true),
   defaultLevel: LevelSchema.default("kozep"),
   defaultExamDate: z.string().regex(/^\d{4}-\d{2}-\d{2}$/),

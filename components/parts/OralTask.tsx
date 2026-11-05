@@ -38,7 +38,7 @@ export function OralTask({ part, id }: { part: ExamPart; id: string }) {
         <h1 className="text-2xl font-semibold">{task.title}</h1>
         <GuideLink type="speaking" target={task.type} label={t.guides.open(taskTypeName("speaking", task.type))} />
       </div>
-      <SpeakingPractice task={task} examinerPrompt={prompt} ttsRate={s.ttsRate} base={base} language={examConfig.subject().language} />
+      <SpeakingPractice task={task} examinerPrompt={prompt} ttsRate={s.ttsRate} base={base} language={examConfig.subject().language} speechLang={examConfig.subject().speechLang} />
       {task.sampleAnswer && (
         <div className="mt-6">
           <SampleAnswer task={task} />

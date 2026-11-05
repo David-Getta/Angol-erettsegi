@@ -15,7 +15,7 @@ export default function SettingsPage() {
   return (
     <div>
       <PageHeader title={t.settings.title} />
-      <SettingsForm settings={s} totals={totals} backups={backups} language={examConfig.subject().language} />
+      <SettingsForm settings={s} totals={totals} backups={backups} language={examConfig.subject().language} speechLang={examConfig.subject().speechLang} languageName={examConfig.subject().languageName ?? "angol"} />
       <Card className="mt-6" title={t.settings.provenance}>
         <p className="mb-4 text-sm text-muted">{t.settings.provenanceHint}</p>
         <div className="space-y-4">
