@@ -52,17 +52,17 @@
       "prompt": "Miben különböznek egymástól ugyanannak az elemnek az izotópjai?",
       "options": [
         { "key": "A", "text": "A protonok számában." },
-        { "key": "B", "text": "A neutronok számában." },
+        { "key": "B", "text": "A rendszámban." },
         { "key": "C", "text": "A semleges atom elektronjainak számában." },
-        { "key": "D", "text": "A rendszámban." }
+        { "key": "D", "text": "A neutronok számában." }
       ],
-      "answer": "B",
+      "answer": "D",
       "category": "fogalmak",
-      "explanation": "Helyes: B. Az izotópok rendszáma (protonszáma) azonos – ezért ugyanaz az elem, és kémiailag is egyformán viselkednek –, de a neutronszámuk és így a tömegszámuk különböző (pl. ¹²C és ¹⁴C).",
+      "explanation": "Helyes: D. Az izotópok rendszáma (protonszáma) azonos – ezért ugyanaz az elem, és kémiailag is egyformán viselkednek –, de a neutronszámuk és így a tömegszámuk különböző (pl. ¹²C és ¹⁴C).",
       "wrongOptions": {
         "A": "A protonszám határozza meg, melyik elemről van szó; ha az eltérne, már másik elem lenne.",
-        "C": "Semleges atomban az elektronok száma a protonok számával egyenlő, tehát az izotópoknál ez is azonos.",
-        "D": "A rendszám a protonszám; ez az izotópoknál éppen megegyezik."
+        "B": "A rendszám a protonszám; ez az izotópoknál éppen megegyezik.",
+        "C": "Semleges atomban az elektronok száma a protonok számával egyenlő, tehát az izotópoknál ez is azonos."
       }
     },
     {
@@ -127,16 +127,16 @@
       "kind": "choice",
       "prompt": "Milyen folyamat termeli az energiát egy atomerőmű (például a paksi) reaktorában?",
       "options": [
-        { "key": "A", "text": "Könnyű atommagok egyesülése (magfúzió)." },
-        { "key": "B", "text": "Urán-235 atommagok hasadása neutronbefogás után, láncreakcióban." },
+        { "key": "A", "text": "Urán-235 atommagok hasadása neutronbefogás után, láncreakcióban." },
+        { "key": "B", "text": "Könnyű atommagok egyesülése (magfúzió)." },
         { "key": "C", "text": "Az urán elégetése (kémiai reakció oxigénnel)." },
         { "key": "D", "text": "Az urán természetes alfa-bomlása." }
       ],
-      "answer": "B",
+      "answer": "A",
       "category": "jelenseg-magyarazat",
-      "explanation": "Helyes: B. A reaktorban az urán-235 magja egy lassú neutront befogva két közepes tömegű magra hasad, és 2–3 új neutron is kiszabadul, amelyek újabb hasadásokat okoznak (szabályozott láncreakció). A felszabaduló energia a hasadási termékek mozgási energiájaként jelenik meg, ami hővé alakul, és ez gőzt termel a turbinák számára.",
+      "explanation": "Helyes: A. A reaktorban az urán-235 magja egy lassú neutront befogva két közepes tömegű magra hasad, és 2–3 új neutron is kiszabadul, amelyek újabb hasadásokat okoznak (szabályozott láncreakció). A felszabaduló energia a hasadási termékek mozgási energiájaként jelenik meg, ami hővé alakul, és ez gőzt termel a turbinák számára.",
       "wrongOptions": {
-        "A": "Magfúzió a Napban zajlik; erőművi méretű, energiát termelő fúziós reaktor ma még nem működik.",
+        "B": "Magfúzió a Napban zajlik; erőművi méretű, energiát termelő fúziós reaktor ma még nem működik.",
         "C": "Az atomerőműben nincs égés: az energia magreakcióból származik, egységnyi tömegre milliószor többet ad, mint egy kémiai reakció.",
         "D": "A természetes bomlás nagyon lassú (az U-235 felezési ideje kb. 700 millió év), ebből nem lehetne erőművi teljesítményt nyerni."
       }
@@ -147,17 +147,17 @@
       "prompt": "A Bohr-féle atommodell szerint mikor bocsát ki fényt (fotont) az atom?",
       "options": [
         { "key": "A", "text": "Amikor az elektron alacsonyabb energiájú állapotból magasabb energiájúba kerül." },
-        { "key": "B", "text": "Amikor az elektron magasabb energiájú állapotból alacsonyabb energiájúba kerül." },
+        { "key": "B", "text": "Amikor az atommag elbomlik." },
         { "key": "C", "text": "Folyamatosan, amíg az elektron a mag körül kering." },
-        { "key": "D", "text": "Amikor az atommag elbomlik." }
+        { "key": "D", "text": "Amikor az elektron magasabb energiájú állapotból alacsonyabb energiájúba kerül." }
       ],
-      "answer": "B",
+      "answer": "D",
       "category": "torvenyek",
-      "explanation": "Helyes: B. Bohr posztulátumai szerint a megengedett pályán keringő elektron nem sugároz. Fényt akkor bocsát ki az atom, amikor az elektron magasabb energiaszintről alacsonyabbra ugrik; a foton energiája a két szint különbsége: h·f = E₂ − E₁. Ezért vonalas a gázok színképe.",
+      "explanation": "Helyes: D. Bohr posztulátumai szerint a megengedett pályán keringő elektron nem sugároz. Fényt akkor bocsát ki az atom, amikor az elektron magasabb energiaszintről alacsonyabbra ugrik; a foton energiája a két szint különbsége: h·f = E₂ − E₁. Ezért vonalas a gázok színképe.",
       "wrongOptions": {
         "A": "Magasabb szintre kerüléshez az atomnak energiát kell FELVENNIE (pl. fotont elnyelnie) – ez az elnyelés, nem a kibocsátás.",
-        "C": "Éppen ezt zárja ki Bohr első posztulátuma: a stacionárius pályán az elektron nem sugároz.",
-        "D": "A mag bomlása a radioaktivitás (pl. gamma-sugárzás); a látható fény kibocsátása az elektronburok folyamata."
+        "B": "A mag bomlása a radioaktivitás (pl. gamma-sugárzás); a látható fény kibocsátása az elektronburok folyamata.",
+        "C": "Éppen ezt zárja ki Bohr első posztulátuma: a stacionárius pályán az elektron nem sugároz."
       }
     },
     {
@@ -166,17 +166,17 @@
       "prompt": "Mi a Nap energiatermelésének forrása?",
       "options": [
         { "key": "A", "text": "Nehéz atommagok hasadása." },
-        { "key": "B", "text": "Hidrogén magjainak héliummá egyesülése (magfúzió)." },
+        { "key": "B", "text": "A Nap zsugorodásakor felszabaduló gravitációs energia." },
         { "key": "C", "text": "A Napban lévő gázok elégése." },
-        { "key": "D", "text": "A Nap zsugorodásakor felszabaduló gravitációs energia." }
+        { "key": "D", "text": "Hidrogén magjainak héliummá egyesülése (magfúzió)." }
       ],
-      "answer": "B",
+      "answer": "D",
       "category": "jelenseg-magyarazat",
-      "explanation": "Helyes: B. A Nap magjában (kb. 15 millió K hőmérsékleten és óriási nyomáson) hidrogénatommagok egyesülnek héliummá. A keletkező hélium tömege kisebb a kiinduló magok tömegénél, és ez a tömeghiány E = Δm·c² szerint energiaként szabadul fel.",
+      "explanation": "Helyes: D. A Nap magjában (kb. 15 millió K hőmérsékleten és óriási nyomáson) hidrogénatommagok egyesülnek héliummá. A keletkező hélium tömege kisebb a kiinduló magok tömegénél, és ez a tömeghiány E = Δm·c² szerint energiaként szabadul fel.",
       "wrongOptions": {
         "A": "Maghasadás az atomerőművekben zajlik; a Nap anyaga szinte csak hidrogén és hélium, nehéz hasadó magokat alig tartalmaz.",
-        "C": "Kémiai égéssel a Nap csak néhány ezer évig világíthatott volna, és az égéshez oxigén is kellene.",
-        "D": "A gravitációs összehúzódás a csillag kialakulásakor jelentős, de ma a Nap sugárzását a fúzió fedezi; összehúzódással csak néhány tízmillió évig sugározhatna."
+        "B": "A gravitációs összehúzódás a csillag kialakulásakor jelentős, de ma a Nap sugárzását a fúzió fedezi; összehúzódással csak néhány tízmillió évig sugározhatna.",
+        "C": "Kémiai égéssel a Nap csak néhány ezer évig világíthatott volna, és az égéshez oxigén is kellene."
       }
     }
   ],

@@ -133,11 +133,11 @@
       "options": [
         {
           "key": "A",
-          "text": "Súrlódásos lejtőn lecsúszó doboz."
+          "text": "Légellenállás nélkül szabadon eső kő."
         },
         {
           "key": "B",
-          "text": "Légellenállás nélkül szabadon eső kő."
+          "text": "Súrlódásos lejtőn lecsúszó doboz."
         },
         {
           "key": "C",
@@ -148,11 +148,11 @@
           "text": "Összetapadó kocsik ütközése."
         }
       ],
-      "answer": "B",
+      "answer": "A",
       "category": "torvenyek",
-      "explanation": "Helyes: B. A mechanikai energia akkor marad meg, ha csak a nehézségi (konzervatív) erő végez munkát; a szabadon eső kőnél a helyzeti energia teljesen mozgási energiává alakul.",
+      "explanation": "Helyes: A. A mechanikai energia akkor marad meg, ha csak a nehézségi (konzervatív) erő végez munkát; a szabadon eső kőnél a helyzeti energia teljesen mozgási energiává alakul.",
       "wrongOptions": {
-        "A": "A súrlódási erő munkája miatt a mechanikai energia egy része hővé alakul.",
+        "B": "A súrlódási erő munkája miatt a mechanikai energia egy része hővé alakul.",
         "C": "A fékezés éppen a mozgási energia hővé alakítása.",
         "D": "Rugalmatlan ütközésnél a mozgási energia egy része belső energiává alakul."
       }
@@ -261,7 +261,7 @@
         },
         {
           "key": "B",
-          "text": "A lendületük vektori összege."
+          "text": "A sebességük nagyságának összege."
         },
         {
           "key": "C",
@@ -269,16 +269,16 @@
         },
         {
           "key": "D",
-          "text": "A sebességük nagyságának összege."
+          "text": "A lendületük vektori összege."
         }
       ],
-      "answer": "B",
+      "answer": "D",
       "category": "torvenyek",
-      "explanation": "Helyes: B. Külső erők nélkül a rendszer lendülete megmarad: kezdetben 0, utána m₁·v₁ + m₂·v₂ = 0, ezért ellentétes irányba mozognak. A mozgási energia nő, mert az izmaik munkát végeznek.",
+      "explanation": "Helyes: D. Külső erők nélkül a rendszer lendülete megmarad: kezdetben 0, utána m₁·v₁ + m₂·v₂ = 0, ezért ellentétes irányba mozognak. A mozgási energia nő, mert az izmaik munkát végeznek.",
       "wrongOptions": {
         "A": "A mozgási energia 0-ról nő: a korcsolyázók izommunkája mozgási energiává alakul.",
-        "C": "A sebességek nem maradnak meg; a lendület a tömeggel súlyozott sebesség.",
-        "D": "A sebességek nagysága 0-ról nő, ez sem megmaradó mennyiség."
+        "B": "A sebességek nagysága 0-ról nő, ez sem megmaradó mennyiség.",
+        "C": "A sebességek nem maradnak meg; a lendület a tömeggel súlyozott sebesség."
       }
     },
     {

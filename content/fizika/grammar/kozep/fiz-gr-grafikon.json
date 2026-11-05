@@ -129,7 +129,7 @@
         },
         {
           "key": "B",
-          "text": "A gyorsulást."
+          "text": "Az átlagsebességet."
         },
         {
           "key": "C",
@@ -137,16 +137,16 @@
         },
         {
           "key": "D",
-          "text": "Az átlagsebességet."
+          "text": "A gyorsulást."
         }
       ],
-      "answer": "B",
+      "answer": "D",
       "category": "grafikon",
-      "explanation": "Helyes: B. A meredekség Δv/Δt, ami a gyorsulás definíciója (m/s²).",
+      "explanation": "Helyes: D. A meredekség Δv/Δt, ami a gyorsulás definíciója (m/s²).",
       "wrongOptions": {
         "A": "A megtett út a v–t grafikon alatti TERÜLET.",
-        "C": "Az elmozdulás is területként (előjelesen) olvasható ki, nem meredekségként.",
-        "D": "Az átlagsebesség a teljes út osztva a teljes idővel."
+        "B": "Az átlagsebesség a teljes út osztva a teljes idővel.",
+        "C": "Az elmozdulás is területként (előjelesen) olvasható ki, nem meredekségként."
       }
     },
     {
@@ -187,11 +187,11 @@
       "options": [
         {
           "key": "A",
-          "text": "Az anyag ekkor nem kap hőt."
+          "text": "Az anyag ekkor halmazállapot-változáson megy át (pl. olvad vagy forr)."
         },
         {
           "key": "B",
-          "text": "Az anyag ekkor halmazállapot-változáson megy át (pl. olvad vagy forr)."
+          "text": "Az anyag ekkor nem kap hőt."
         },
         {
           "key": "C",
@@ -202,11 +202,11 @@
           "text": "A mérés hibás."
         }
       ],
-      "answer": "B",
+      "answer": "A",
       "category": "grafikon",
-      "explanation": "Helyes: B. A felvett hő ilyenkor a halmazállapot-változásra (pl. olvadásra) fordítódik, a hőmérséklet nem nő; a szakasz hossza a halmazállapot-változáshoz szükséges hővel arányos.",
+      "explanation": "Helyes: A. A felvett hő ilyenkor a halmazállapot-változásra (pl. olvadásra) fordítódik, a hőmérséklet nem nő; a szakasz hossza a halmazállapot-változáshoz szükséges hővel arányos.",
       "wrongOptions": {
-        "A": "A fűtés folyamatos, az anyag végig kap hőt.",
+        "B": "A fűtés folyamatos, az anyag végig kap hőt.",
         "C": "Ha a hőmérséklet nem nő hőközlésre, az nem nulla, hanem „végtelen” fajhőnek felelne meg – a helyes magyarázat a halmazállapot-változás.",
         "D": "Ez valódi, jól ismert jelenség (olvadás- vagy forráspont)."
       }

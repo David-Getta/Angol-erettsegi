@@ -129,7 +129,7 @@
         },
         {
           "key": "B",
-          "text": "Mert a stopper kezelésének (állandó nagyságú) hibája így a lengésidőnek csak tizedrészét terheli."
+          "text": "Mert így a kitérés kisebb lesz."
         },
         {
           "key": "C",
@@ -137,16 +137,16 @@
         },
         {
           "key": "D",
-          "text": "Mert így a kitérés kisebb lesz."
+          "text": "Mert a stopper kezelésének (állandó nagyságú) hibája így a lengésidőnek csak tizedrészét terheli."
         }
       ],
-      "answer": "B",
+      "answer": "D",
       "category": "meres-kiertekeles",
-      "explanation": "Helyes: B. A reakcióidő miatti hiba (kb. 0,2 s) független a mért időtartam hosszától; 10 lengésnél ez a teljes időre jut, így egy lengés idejének hibája kb. 0,02 s.",
+      "explanation": "Helyes: D. A reakcióidő miatti hiba (kb. 0,2 s) független a mért időtartam hosszától; 10 lengésnél ez a teljes időre jut, így egy lengés idejének hibája kb. 0,02 s.",
       "wrongOptions": {
         "A": "A kis csillapítás miatt az inga sokáig leng; nem ezért mérünk tízet.",
-        "C": "A lengésidő a lengések számától független (állandó).",
-        "D": "A kitérést a mérés kezdete határozza meg, a mért lengések száma nem változtatja."
+        "B": "A kitérést a mérés kezdete határozza meg, a mért lengések száma nem változtatja.",
+        "C": "A lengésidő a lengések számától független (állandó)."
       }
     },
     {
@@ -191,7 +191,7 @@
         },
         {
           "key": "B",
-          "text": "Ellenőrizzük újraméréssel; ha mérési hiba volt, a kiegyenlítő egyenest a többi pontra illesztjük, és a hibát a jegyzőkönyvben jelezzük."
+          "text": "A kilógó pont alapján új törvényt fogalmazunk meg."
         },
         {
           "key": "C",
@@ -199,16 +199,16 @@
         },
         {
           "key": "D",
-          "text": "A kilógó pont alapján új törvényt fogalmazunk meg."
+          "text": "Ellenőrizzük újraméréssel; ha mérési hiba volt, a kiegyenlítő egyenest a többi pontra illesztjük, és a hibát a jegyzőkönyvben jelezzük."
         }
       ],
-      "answer": "B",
+      "answer": "D",
       "category": "meres-kiertekeles",
-      "explanation": "Helyes: B. Az egyetlen kilógó pont valószínűleg leolvasási vagy beállítási hiba; újraméréssel ellenőrizzük, és a kiértékelést a megbízható pontokra illesztett egyenesből végezzük, a döntést indokolva.",
+      "explanation": "Helyes: D. Az egyetlen kilógó pont valószínűleg leolvasási vagy beállítási hiba; újraméréssel ellenőrizzük, és a kiértékelést a megbízható pontokra illesztett egyenesből végezzük, a döntést indokolva.",
       "wrongOptions": {
         "A": "A töröttvonal a mérési hibákat is „ábrázolja”, nem a törvényszerűséget.",
-        "C": "Egy hibás pont miatt nem kell az egész mérést elvetni.",
-        "D": "Egyetlen, a többinek ellentmondó pontból nem lehet törvényt levonni."
+        "B": "Egyetlen, a többinek ellentmondó pontból nem lehet törvényt levonni.",
+        "C": "Egy hibás pont miatt nem kell az egész mérést elvetni."
       }
     },
     {

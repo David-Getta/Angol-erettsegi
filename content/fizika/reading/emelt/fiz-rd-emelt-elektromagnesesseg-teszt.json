@@ -71,17 +71,17 @@
       "prompt": "Egy elektron a homogén mágneses mező indukcióvonalaira merőleges sebességgel lép be a mezőbe. Milyen mozgást végez a mezőben?",
       "options": [
         { "key": "A", "text": "Egyenletesen gyorsul az indukcióvonalak irányában." },
-        { "key": "B", "text": "Egyenletes körmozgást végez, a sebességének nagysága nem változik." },
+        { "key": "B", "text": "Eltérítés nélkül, egyenes vonalban halad tovább." },
         { "key": "C", "text": "Egyenletesen lassul, majd megáll." },
-        { "key": "D", "text": "Eltérítés nélkül, egyenes vonalban halad tovább." }
+        { "key": "D", "text": "Egyenletes körmozgást végez, a sebességének nagysága nem változik." }
       ],
-      "answer": "B",
+      "answer": "D",
       "category": "vektor-irany",
-      "explanation": "Helyes: B. A Lorentz-erő (F = q·v·B) mindig merőleges a sebességre, ezért nem végez munkát: a sebesség nagysága állandó, csak az iránya változik. Az állandó nagyságú, a sebességre merőleges erő centripetális erőként egyenletes körmozgást hoz létre, r = m·v/(q·B) sugárral.",
+      "explanation": "Helyes: D. A Lorentz-erő (F = q·v·B) mindig merőleges a sebességre, ezért nem végez munkát: a sebesség nagysága állandó, csak az iránya változik. Az állandó nagyságú, a sebességre merőleges erő centripetális erőként egyenletes körmozgást hoz létre, r = m·v/(q·B) sugárral.",
       "wrongOptions": {
         "A": "A mágneses erő merőleges az indukcióvonalakra és a sebességre is, ezért nem gyorsít a mező irányában.",
-        "C": "A Lorentz-erő merőleges a sebességre, munkát nem végez, így a részecske nem lassulhat le.",
-        "D": "Egyenesen csak az indukcióvonalakkal párhuzamosan mozgó töltés haladna; merőleges sebességnél az erő maximális."
+        "B": "Egyenesen csak az indukcióvonalakkal párhuzamosan mozgó töltés haladna; merőleges sebességnél az erő maximális.",
+        "C": "A Lorentz-erő merőleges a sebességre, munkát nem végez, így a részecske nem lassulhat le."
       }
     },
     {

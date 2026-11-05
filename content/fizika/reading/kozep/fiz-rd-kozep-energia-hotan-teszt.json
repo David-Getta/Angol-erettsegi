@@ -52,17 +52,17 @@
       "prompt": "Egy autó sebességét a kétszeresére növeljük. Hányszorosára nő a mozgási energiája?",
       "options": [
         { "key": "A", "text": "2-szeresére" },
-        { "key": "B", "text": "4-szeresére" },
+        { "key": "B", "text": "8-szorosára" },
         { "key": "C", "text": "√2-szeresére" },
-        { "key": "D", "text": "8-szorosára" }
+        { "key": "D", "text": "4-szeresére" }
       ],
-      "answer": "B",
+      "answer": "D",
       "category": "torvenyek",
-      "explanation": "Helyes: B. A mozgási energia a sebesség négyzetével arányos: E = ½·m·v². Ha v → 2v, akkor v² → 4v², tehát az energia a négyszeresére nő. Ezért nő ilyen gyorsan a fékút is a sebességgel.",
+      "explanation": "Helyes: D. A mozgási energia a sebesség négyzetével arányos: E = ½·m·v². Ha v → 2v, akkor v² → 4v², tehát az energia a négyszeresére nő. Ezért nő ilyen gyorsan a fékút is a sebességgel.",
       "wrongOptions": {
         "A": "A lendület (m·v) duplázódik, a mozgási energia a sebesség NÉGYZETÉVEL arányos.",
-        "C": "A √2 fordított gondolkodás: akkor nőne az energia 2-szeresére, ha a sebesség √2-szeresére nőne.",
-        "D": "A sebesség a második, nem a harmadik hatványon szerepel a képletben."
+        "B": "A sebesség a második, nem a harmadik hatványon szerepel a képletben.",
+        "C": "A √2 fordított gondolkodás: akkor nőne az energia 2-szeresére, ha a sebesség √2-szeresére nőne."
       }
     },
     {
@@ -90,17 +90,17 @@
       "prompt": "Melyik állítás igaz a hő és a hőmérséklet kapcsolatáról?",
       "options": [
         { "key": "A", "text": "A hő és a hőmérséklet ugyanazt jelenti, csak más egységben mérjük." },
-        { "key": "B", "text": "A hő a hőmérséklet-különbség miatt egyik testről a másikra átadott energia." },
+        { "key": "B", "text": "A hőmérséklet mértékegysége a joule." },
         { "key": "C", "text": "A magasabb hőmérsékletű testben mindig több hő van." },
-        { "key": "D", "text": "A hőmérséklet mértékegysége a joule." }
+        { "key": "D", "text": "A hő a hőmérséklet-különbség miatt egyik testről a másikra átadott energia." }
       ],
-      "answer": "B",
+      "answer": "D",
       "category": "fogalmak",
-      "explanation": "Helyes: B. A hő (Q) energiaátadás: a melegebb testről a hidegebbre jut át a hőmérséklet-különbség miatt, egysége a joule. A hőmérséklet (T) állapotjelző, amely a részecskék átlagos mozgási energiájával függ össze, egysége a kelvin vagy a °C.",
+      "explanation": "Helyes: D. A hő (Q) energiaátadás: a melegebb testről a hidegebbre jut át a hőmérséklet-különbség miatt, egysége a joule. A hőmérséklet (T) állapotjelző, amely a részecskék átlagos mozgási energiájával függ össze, egysége a kelvin vagy a °C.",
       "wrongOptions": {
         "A": "Két különböző mennyiség: a hőmérséklet állapotjelző, a hő átadott energia.",
-        "C": "A testnek nincs „hőtartalma”, belső energiája van; a hő csak a folyamat során átadott energia. Egy nagy, hideg tó belső energiája nagyobb lehet egy forró teáénál.",
-        "D": "A hőmérsékletet kelvinben vagy Celsius-fokban mérjük; a joule az energia (hő, munka) egysége."
+        "B": "A hőmérsékletet kelvinben vagy Celsius-fokban mérjük; a joule az energia (hő, munka) egysége.",
+        "C": "A testnek nincs „hőtartalma”, belső energiája van; a hő csak a folyamat során átadott energia. Egy nagy, hideg tó belső energiája nagyobb lehet egy forró teáénál."
       }
     },
     {
@@ -108,16 +108,16 @@
       "kind": "choice",
       "prompt": "Ugyanannyi hőt közlünk 1 kg vízzel (c = 4200 J/(kg·°C)) és 1 kg rézzel (c = 390 J/(kg·°C)). Melyik melegszik fel jobban?",
       "options": [
-        { "key": "A", "text": "A víz, mert nagyobb a fajhője." },
-        { "key": "B", "text": "A réz, mert kisebb a fajhője." },
+        { "key": "A", "text": "A réz, mert kisebb a fajhője." },
+        { "key": "B", "text": "A víz, mert nagyobb a fajhője." },
         { "key": "C", "text": "Egyformán melegszenek, mert azonos a tömegük." },
         { "key": "D", "text": "Attól függ, mennyi a közölt hő." }
       ],
-      "answer": "B",
+      "answer": "A",
       "category": "torvenyek",
-      "explanation": "Helyes: B. Q = c·m·ΔT, ebből ΔT = Q/(c·m). Azonos Q és m mellett a hőmérséklet-változás fordítottan arányos a fajhővel: a réz fajhője kb. 11-szer kisebb, ezért kb. 11-szer nagyobb a hőmérséklet-emelkedése.",
+      "explanation": "Helyes: A. Q = c·m·ΔT, ebből ΔT = Q/(c·m). Azonos Q és m mellett a hőmérséklet-változás fordítottan arányos a fajhővel: a réz fajhője kb. 11-szer kisebb, ezért kb. 11-szer nagyobb a hőmérséklet-emelkedése.",
       "wrongOptions": {
-        "A": "A nagy fajhő éppen azt jelenti, hogy sok hő kell 1 °C-os melegítéshez – a víz melegszik kevésbé.",
+        "B": "A nagy fajhő éppen azt jelenti, hogy sok hő kell 1 °C-os melegítéshez – a víz melegszik kevésbé.",
         "C": "A fajhők eltérnek, ezért azonos tömegnél sem azonos a felmelegedés.",
         "D": "A hő mennyisége a különbség nagyságát befolyásolja, de azt, hogy MELYIK melegszik jobban, minden Q-nál a fajhő dönti el."
       }

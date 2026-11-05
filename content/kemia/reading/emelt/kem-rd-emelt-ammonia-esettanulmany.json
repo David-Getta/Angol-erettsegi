@@ -40,10 +40,22 @@
       "kind": "choice",
       "prompt": "Hogyan hat a nyomás növelése az N₂ + 3 H₂ ⇌ 2 NH₃ egyensúlyra?",
       "options": [
-        { "key": "A", "text": "Az ammóniaképződés irányába tolja el." },
-        { "key": "B", "text": "A kiindulási anyagok irányába tolja el." },
-        { "key": "C", "text": "Nem befolyásolja az egyensúly helyzetét." },
-        { "key": "D", "text": "Csak a reakció sebességét csökkenti." }
+        {
+          "key": "A",
+          "text": "Az ammóniaképződés irányába tolja el."
+        },
+        {
+          "key": "B",
+          "text": "A kiindulási anyagok irányába tolja el."
+        },
+        {
+          "key": "C",
+          "text": "Nem befolyásolja az egyensúly helyzetét."
+        },
+        {
+          "key": "D",
+          "text": "Csak a reakció sebességét csökkenti."
+        }
       ],
       "answer": "A",
       "category": "egyensuly-kinetika",
@@ -59,10 +71,22 @@
       "kind": "choice",
       "prompt": "Miért alkalmaznak az üzemekben 400–500 °C-ot, bár az exoterm reakciónak az alacsony hőmérséklet kedvezne?",
       "options": [
-        { "key": "A", "text": "Mert alacsony hőmérsékleten a reakció gazdaságtalanul lassú lenne." },
-        { "key": "B", "text": "Mert magas hőmérsékleten nagyobb az egyensúlyi ammóniahányad." },
-        { "key": "C", "text": "Mert az ammónia csak melegen cseppfolyósítható." },
-        { "key": "D", "text": "Mert a nitrogén csak magas hőmérsékleten oldódik hidrogénben." }
+        {
+          "key": "A",
+          "text": "Mert alacsony hőmérsékleten a reakció gazdaságtalanul lassú lenne."
+        },
+        {
+          "key": "B",
+          "text": "Mert magas hőmérsékleten nagyobb az egyensúlyi ammóniahányad."
+        },
+        {
+          "key": "C",
+          "text": "Mert az ammónia csak melegen cseppfolyósítható."
+        },
+        {
+          "key": "D",
+          "text": "Mert a nitrogén csak magas hőmérsékleten oldódik hidrogénben."
+        }
       ],
       "answer": "A",
       "category": "egyensuly-kinetika",
@@ -77,7 +101,10 @@
       "id": "3",
       "kind": "text",
       "prompt": "Hány mol hidrogén szükséges 4 mol ammónia előállításához?",
-      "answer": ["6 mol", "6"],
+      "answer": [
+        "6 mol",
+        "6"
+      ],
       "maxWords": 2,
       "category": "reakcioegyenlet",
       "explanation": "Helyes: 6 mol. Az egyenlet szerint 3 mol H₂-ből 2 mol NH₃ keletkezik (3 : 2 arány), így 4 mol ammóniához 4 · 3/2 = 6 mol hidrogén kell."
@@ -94,7 +121,14 @@
       "id": "5",
       "kind": "text",
       "prompt": "Milyen alakú az ammóniamolekula?",
-      "answer": ["trigonális piramis", "piramis", "háromszög alapú piramis", "trigonális piramis alakú", "piramis alakú", "háromoldalú piramis"],
+      "answer": [
+        "trigonális piramis",
+        "piramis",
+        "háromszög alapú piramis",
+        "trigonális piramis alakú",
+        "piramis alakú",
+        "háromoldalú piramis"
+      ],
       "maxWords": 4,
       "category": "kotes-szerkezet",
       "explanation": "Helyes: trigonális piramis. A nitrogén körül négy elektronpár (három kötő, egy nemkötő) helyezkedik el tetraéderesen; a három hidrogén és a nitrogén egy háromszög alapú piramist alkot, a nemkötő pár a csúcs felé mutat."
@@ -104,17 +138,29 @@
       "kind": "choice",
       "prompt": "Milyen kémhatású az ammónia vizes oldata, és miért?",
       "options": [
-        { "key": "A", "text": "Savas, mert a molekula protont ad le." },
-        { "key": "B", "text": "Semleges, mert az ammónia nem reagál a vízzel." },
-        { "key": "C", "text": "Lúgos, mert a nitrogén nemkötő elektronpárja protont vesz fel a vízből, és hidroxidion marad vissza." },
-        { "key": "D", "text": "Lúgos, mert az ammónia hidroxidiont tartalmaz." }
+        {
+          "key": "A",
+          "text": "Savas, mert a molekula protont ad le."
+        },
+        {
+          "key": "B",
+          "text": "Lúgos, mert a nitrogén nemkötő elektronpárja protont vesz fel a vízből, és hidroxidion marad vissza."
+        },
+        {
+          "key": "C",
+          "text": "Semleges, mert az ammónia nem reagál a vízzel."
+        },
+        {
+          "key": "D",
+          "text": "Lúgos, mert az ammónia hidroxidiont tartalmaz."
+        }
       ],
-      "answer": "C",
+      "answer": "B",
       "category": "reakciotipus",
-      "explanation": "Helyes: C. Az ammónia Brønsted-bázis: a nitrogén nemkötő elektronpárjával protont köt meg a vízmolekulából, NH₃ + H₂O ⇌ NH₄⁺ + OH⁻, a keletkező hidroxidionok teszik lúgossá az oldatot.",
+      "explanation": "Helyes: B. Az ammónia Brønsted-bázis: a nitrogén nemkötő elektronpárjával protont köt meg a vízmolekulából, NH₃ + H₂O ⇌ NH₄⁺ + OH⁻, a keletkező hidroxidionok teszik lúgossá az oldatot.",
       "wrongOptions": {
         "A": "Az ammónia nem ad le protont, hanem felvesz; nem sav, hanem bázis.",
-        "B": "Az ammónia reagál a vízzel (protolízis), oldata lúgos.",
+        "C": "Az ammónia reagál a vízzel (protolízis), oldata lúgos.",
         "D": "Az NH₃ molekulában nincs hidroxidion; az OH⁻ a vízből keletkezik a protonátadás során."
       }
     },
@@ -122,7 +168,14 @@
       "id": "7",
       "kind": "text",
       "prompt": "Mennyi hő szabadul fel 1 mol ammónia képződésekor (kJ)?",
-      "answer": ["46 kJ", "46", "−46 kJ", "-46 kJ", "−46", "-46"],
+      "answer": [
+        "46 kJ",
+        "46",
+        "−46 kJ",
+        "-46 kJ",
+        "−46",
+        "-46"
+      ],
       "maxWords": 2,
       "category": "egyensuly-kinetika",
       "explanation": "Helyes: 46 kJ. A megadott ΔrH = −92 kJ/mol a felírt egyenletre, azaz 2 mol ammónia képződésére vonatkozik; 1 mol ammóniára ennek fele, 46 kJ hő szabadul fel (ΔkH(NH₃) = −46 kJ/mol)."
@@ -137,8 +190,14 @@
     }
   ],
   "glossary": [
-    { "term": "Le Chatelier-elv", "meaning": "a legkisebb kényszer elve: az egyensúlyi rendszer a külső hatást (koncentráció-, nyomás-, hőmérséklet-változás) csökkentő irányba tolódik el" },
-    { "term": "katalizátor", "meaning": "anyag, amely a reakció sebességét növeli, de maga nem használódik el, és az egyensúly helyzetét nem változtatja meg" }
+    {
+      "term": "Le Chatelier-elv",
+      "meaning": "a legkisebb kényszer elve: az egyensúlyi rendszer a külső hatást (koncentráció-, nyomás-, hőmérséklet-változás) csökkentő irányba tolódik el"
+    },
+    {
+      "term": "katalizátor",
+      "meaning": "anyag, amely a reakció sebességét növeli, de maga nem használódik el, és az egyensúly helyzetét nem változtatja meg"
+    }
   ],
   "suggestedMinutes": 12
 }

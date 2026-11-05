@@ -133,11 +133,11 @@
       "options": [
         {
           "key": "A",
-          "text": "250 m"
+          "text": "125 m"
         },
         {
           "key": "B",
-          "text": "125 m"
+          "text": "250 m"
         },
         {
           "key": "C",
@@ -148,11 +148,11 @@
           "text": "62,5 m"
         }
       ],
-      "answer": "B",
+      "answer": "A",
       "category": "kepletek",
-      "explanation": "Helyes: B. Nyugalomból egyenletesen gyorsulva s = (v₀ + v)/2 · t = (0 + 25)/2 · 10 = 125 m (vagy a = 2,5 m/s², s = a/2·t² = 125 m).",
+      "explanation": "Helyes: A. Nyugalomból egyenletesen gyorsulva s = (v₀ + v)/2 · t = (0 + 25)/2 · 10 = 125 m (vagy a = 2,5 m/s², s = a/2·t² = 125 m).",
       "wrongOptions": {
-        "A": "250 m = v·t, az egyenletes mozgás képlete; gyorsulásnál az átlagsebesség csak 12,5 m/s.",
+        "B": "250 m = v·t, az egyenletes mozgás képlete; gyorsulásnál az átlagsebesség csak 12,5 m/s.",
         "C": "2,5 a gyorsulás m/s²-ben, nem az út.",
         "D": "62,5 m = a/4·t²: kétszer is felezett."
       }
@@ -168,7 +168,7 @@
         },
         {
           "key": "B",
-          "text": "g = 4π²·l/T²"
+          "text": "g = 4π²·T²/l"
         },
         {
           "key": "C",
@@ -176,16 +176,16 @@
         },
         {
           "key": "D",
-          "text": "g = 4π²·T²/l"
+          "text": "g = 4π²·l/T²"
         }
       ],
-      "answer": "B",
+      "answer": "D",
       "category": "kepletek",
-      "explanation": "Helyes: B. Négyzetre emelve T² = 4π²·l/g, ebből g = 4π²·l/T². Ellenőrzés: m / s² = m/s², a mértékegység helyes.",
+      "explanation": "Helyes: D. Négyzetre emelve T² = 4π²·l/g, ebből g = 4π²·l/T². Ellenőrzés: m / s² = m/s², a mértékegység helyes.",
       "wrongOptions": {
         "A": "A négyzetre emelés kimaradt: a gyök és a 2π négyzete is kell.",
-        "C": "Ez 1/g, a reciprok.",
-        "D": "Az l és T² felcserélődött; a mértékegység s²/m lenne."
+        "B": "Az l és T² felcserélődött; a mértékegység s²/m lenne.",
+        "C": "Ez 1/g, a reciprok."
       }
     },
     {

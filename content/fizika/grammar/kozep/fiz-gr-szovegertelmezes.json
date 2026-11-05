@@ -125,11 +125,11 @@
       "options": [
         {
           "key": "A",
-          "text": "A test tömege."
+          "text": "A kezdősebesség függőleges összetevője nulla."
         },
         {
           "key": "B",
-          "text": "A kezdősebesség függőleges összetevője nulla."
+          "text": "A test tömege."
         },
         {
           "key": "C",
@@ -140,11 +140,11 @@
           "text": "A test a földet a torony tövében éri el."
         }
       ],
-      "answer": "B",
+      "answer": "A",
       "category": "szovegertelmezes",
-      "explanation": "Helyes: B. A „vízszintesen elhajítjuk” azt jelenti, hogy a kezdősebesség teljes egészében vízszintes, a függőleges összetevő v₀y = 0; függőlegesen tehát szabadesés történik, t = √(2h/g) = 2 s (g = 10 m/s²).",
+      "explanation": "Helyes: A. A „vízszintesen elhajítjuk” azt jelenti, hogy a kezdősebesség teljes egészében vízszintes, a függőleges összetevő v₀y = 0; függőlegesen tehát szabadesés történik, t = √(2h/g) = 2 s (g = 10 m/s²).",
       "wrongOptions": {
-        "A": "A tömeg nem következik a szövegből, és a mozgáshoz nem is kell.",
+        "B": "A tömeg nem következik a szövegből, és a mozgáshoz nem is kell.",
         "C": "Éppen a vízszintes sebesség az, ami nem nulla (ezért vízszintes hajítás).",
         "D": "A test a vízszintes sebessége miatt távolabb ér földet."
       }
@@ -191,23 +191,23 @@
         },
         {
           "key": "B",
-          "text": "33 %"
+          "text": "100 %"
         },
         {
           "key": "C",
-          "text": "100 %"
+          "text": "33 %"
         },
         {
           "key": "D",
           "text": "25 %"
         }
       ],
-      "answer": "B",
+      "answer": "C",
       "category": "szovegertelmezes",
-      "explanation": "Helyes: B. Az új érték a régi 400/300 ≈ 1,33-szorosa, vagyis kb. 33 %-kal nagyobb. A 133 % arra a kérdésre felelne, hogy „hány százaléka” az új érték a réginek.",
+      "explanation": "Helyes: C. Az új érték a régi 400/300 ≈ 1,33-szorosa, vagyis kb. 33 %-kal nagyobb. A 133 % arra a kérdésre felelne, hogy „hány százaléka” az új érték a réginek.",
       "wrongOptions": {
         "A": "133 % = 400/300: az új érték a régi 133 %-a, tehát 33 %-kal nőtt.",
-        "C": "100 K-nel nőtt, ami nem 100 %, mert a kiindulás 300 K.",
+        "B": "100 K-nel nőtt, ami nem 100 %, mert a kiindulás 300 K.",
         "D": "25 % = 100/400: a változást a VÉGSŐ értékhez viszonyította, nem a kiindulóhoz."
       }
     },
@@ -222,7 +222,7 @@
         },
         {
           "key": "B",
-          "text": "„A test egyenes vonalú egyenletes mozgást végez.”"
+          "text": "„A test szabadon esik.”"
         },
         {
           "key": "C",
@@ -230,16 +230,16 @@
         },
         {
           "key": "D",
-          "text": "„A test szabadon esik.”"
+          "text": "„A test egyenes vonalú egyenletes mozgást végez.”"
         }
       ],
-      "answer": "B",
+      "answer": "D",
       "category": "szovegertelmezes",
-      "explanation": "Helyes: B. Newton I. törvénye szerint egyenes vonalú egyenletes mozgásnál (és nyugalomban) az eredő erő nulla. Ez a feladatszöveg egyik leggyakoribb rejtett adata.",
+      "explanation": "Helyes: D. Newton I. törvénye szerint egyenes vonalú egyenletes mozgásnál (és nyugalomban) az eredő erő nulla. Ez a feladatszöveg egyik leggyakoribb rejtett adata.",
       "wrongOptions": {
         "A": "Gyorsulásnál az eredő erő F = m·a ≠ 0.",
-        "C": "Körmozgásnál a sebesség iránya változik, ezért van eredő (centripetális) erő.",
-        "D": "Szabadesésnél a nehézségi erő az eredő."
+        "B": "Szabadesésnél a nehézségi erő az eredő.",
+        "C": "Körmozgásnál a sebesség iránya változik, ezért van eredő (centripetális) erő."
       }
     },
     {

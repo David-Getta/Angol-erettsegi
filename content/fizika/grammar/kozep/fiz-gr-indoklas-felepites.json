@@ -191,7 +191,7 @@
         },
         {
           "key": "B",
-          "text": "„Az izzón átfolyó áram elektromos energiát szállít, amely az izzószálban hővé és fénnyé alakul.”"
+          "text": "„Az áram átmegy a feszültségen.”"
         },
         {
           "key": "C",
@@ -199,16 +199,16 @@
         },
         {
           "key": "D",
-          "text": "„Az áram átmegy a feszültségen.”"
+          "text": "„Az izzón átfolyó áram elektromos energiát szállít, amely az izzószálban hővé és fénnyé alakul.”"
         }
       ],
-      "answer": "B",
+      "answer": "D",
       "category": "indoklas-felepites",
-      "explanation": "Helyes: B. A töltés (és az áram) nem fogy el; az energia alakul át a fogyasztóban. Ez a mondat pontosan megnevezi a mennyiségeket és a folyamatot.",
+      "explanation": "Helyes: D. A töltés (és az áram) nem fogy el; az energia alakul át a fogyasztóban. Ez a mondat pontosan megnevezi a mennyiségeket és a folyamatot.",
       "wrongOptions": {
         "A": "Az áramerősség soros körben az izzó előtt és után is ugyanaz; az energia alakul át.",
-        "C": "A feszültség két pont közötti mennyiség, nem „fogyasztható”.",
-        "D": "A feszültség nem anyag vagy hely, amin az áram „átmegy”."
+        "B": "A feszültség nem anyag vagy hely, amin az áram „átmegy”.",
+        "C": "A feszültség két pont közötti mennyiség, nem „fogyasztható”."
       }
     },
     {
@@ -249,11 +249,11 @@
       "options": [
         {
           "key": "A",
-          "text": "Teljes pontszám, mert minden szempont szerepel."
+          "text": "A tartalomra kevés pont jár, mert a szempontok nincsenek kifejtve (képlet, magyarázat, példa nélkül), és a kifejtés módja is gyenge."
         },
         {
           "key": "B",
-          "text": "A tartalomra kevés pont jár, mert a szempontok nincsenek kifejtve (képlet, magyarázat, példa nélkül), és a kifejtés módja is gyenge."
+          "text": "Teljes pontszám, mert minden szempont szerepel."
         },
         {
           "key": "C",
@@ -264,11 +264,11 @@
           "text": "Csak a helyesírást értékelik."
         }
       ],
-      "answer": "B",
+      "answer": "A",
       "category": "indoklas-felepites",
-      "explanation": "Helyes: B. A tartalmi pontok a szempontok TELJES, szakszerű kifejtéséért járnak (törvény, összefüggés, példa); a puszta említés csak töredékpontot ér, és a felsoroló stílus a kifejtés módja szempontot is rontja.",
+      "explanation": "Helyes: A. A tartalmi pontok a szempontok TELJES, szakszerű kifejtéséért járnak (törvény, összefüggés, példa); a puszta említés csak töredékpontot ér, és a felsoroló stílus a kifejtés módja szempontot is rontja.",
       "wrongOptions": {
-        "A": "A szempont megemlítése nem azonos a kifejtésével.",
+        "B": "A szempont megemlítése nem azonos a kifejtésével.",
         "C": "Nem nulla: az említett helyes elemekért jár néhány pont.",
         "D": "A helyesírás csak a kifejtés módja (5 pont) egyik eleme."
       }

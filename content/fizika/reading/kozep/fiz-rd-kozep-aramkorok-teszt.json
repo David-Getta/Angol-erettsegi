@@ -143,7 +143,7 @@
         },
         {
           "key": "B",
-          "text": "Az áramerősség."
+          "text": "Az ellenállás."
         },
         {
           "key": "C",
@@ -151,16 +151,16 @@
         },
         {
           "key": "D",
-          "text": "Az ellenállás."
+          "text": "Az áramerősség."
         }
       ],
-      "answer": "B",
+      "answer": "D",
       "category": "torvenyek",
-      "explanation": "Helyes: B. Soros kapcsolásban az áramnak egyetlen útja van, ezért minden fogyasztón ugyanaz az áram folyik. A feszültség az ellenállások arányában oszlik meg (U = I·R), így a nagyobb ellenálláson nagyobb a feszültség és a teljesítmény is.",
+      "explanation": "Helyes: D. Soros kapcsolásban az áramnak egyetlen útja van, ezért minden fogyasztón ugyanaz az áram folyik. A feszültség az ellenállások arányában oszlik meg (U = I·R), így a nagyobb ellenálláson nagyobb a feszültség és a teljesítmény is.",
       "wrongOptions": {
         "A": "A feszültség a soros ágban megoszlik az ellenállások arányában; a feszültség a PÁRHUZAMOS kapcsolásban közös.",
-        "C": "A teljesítmény P = I²·R, tehát a nagyobb ellenállású fogyasztón nagyobb.",
-        "D": "Az ellenállás a fogyasztó saját tulajdonsága, bármilyen értékű fogyasztókat sorba lehet kapcsolni."
+        "B": "Az ellenállás a fogyasztó saját tulajdonsága, bármilyen értékű fogyasztókat sorba lehet kapcsolni.",
+        "C": "A teljesítmény P = I²·R, tehát a nagyobb ellenállású fogyasztón nagyobb."
       }
     },
     {
@@ -205,7 +205,7 @@
         },
         {
           "key": "B",
-          "text": "Ha a tekercset átjáró mágneses fluxus (indukcióvonalak száma) változik."
+          "text": "Ha a tekercs felmelegszik."
         },
         {
           "key": "C",
@@ -213,16 +213,16 @@
         },
         {
           "key": "D",
-          "text": "Ha a tekercs felmelegszik."
+          "text": "Ha a tekercset átjáró mágneses fluxus (indukcióvonalak száma) változik."
         }
       ],
-      "answer": "B",
+      "answer": "D",
       "category": "torvenyek",
-      "explanation": "Helyes: B. Faraday indukciós törvénye: indukált feszültség akkor jön létre, ha a tekercsen áthaladó mágneses fluxus időben változik – például mágnest mozgatunk a tekercsben, vagy a tekercset forgatjuk a mezőben. Az indukált feszültség a fluxusváltozás gyorsaságával arányos.",
+      "explanation": "Helyes: D. Faraday indukciós törvénye: indukált feszültség akkor jön létre, ha a tekercsen áthaladó mágneses fluxus időben változik – például mágnest mozgatunk a tekercsben, vagy a tekercset forgatjuk a mezőben. Az indukált feszültség a fluxusváltozás gyorsaságával arányos.",
       "wrongOptions": {
         "A": "Nyugvó tekercs állandó mezőben: a fluxus nem változik, ezért nincs indukció.",
-        "C": "Az indukcióhoz nem kell áramot vezetni a tekercsbe; éppen a fluxusváltozás hozza létre a feszültséget.",
-        "D": "A melegedés nem változtatja a fluxust, így nem indukál feszültséget."
+        "B": "A melegedés nem változtatja a fluxust, így nem indukál feszültséget.",
+        "C": "Az indukcióhoz nem kell áramot vezetni a tekercsbe; éppen a fluxusváltozás hozza létre a feszültséget."
       }
     },
     {

@@ -17,14 +17,26 @@
     "kind": "choice",
     "prompt": "Melyik molekula lineáris alakú?",
     "options": [
-      { "key": "A", "text": "H₂O" },
-      { "key": "B", "text": "CO₂" },
-      { "key": "C", "text": "NH₃" },
-      { "key": "D", "text": "CH₄" }
+      {
+        "key": "A",
+        "text": "H₂O"
+      },
+      {
+        "key": "B",
+        "text": "CH₄"
+      },
+      {
+        "key": "C",
+        "text": "NH₃"
+      },
+      {
+        "key": "D",
+        "text": "CO₂"
+      }
     ],
-    "answer": "B",
+    "answer": "D",
     "category": "kotes-szerkezet",
-    "explanation": "Helyes: B. A szén-dioxidban a központi szénatom körül két kettős kötés van és nincs nemkötő elektronpár, a két elektronpár-tartomány 180°-os szöget zár be: a molekula lineáris. A víz V alakú, az ammónia trigonális piramis, a metán tetraéder."
+    "explanation": "Helyes: D. A szén-dioxidban a központi szénatom körül két kettős kötés van és nincs nemkötő elektronpár, a két elektronpár-tartomány 180°-os szöget zár be: a molekula lineáris. A víz V alakú, az ammónia trigonális piramis, a metán tetraéder."
   },
   "items": [
     {
@@ -32,10 +44,22 @@
       "kind": "choice",
       "prompt": "Melyik molekula poláris (dipólus)?",
       "options": [
-        { "key": "A", "text": "CCl₄" },
-        { "key": "B", "text": "CO₂" },
-        { "key": "C", "text": "NH₃" },
-        { "key": "D", "text": "BF₃" }
+        {
+          "key": "A",
+          "text": "CCl₄"
+        },
+        {
+          "key": "B",
+          "text": "CO₂"
+        },
+        {
+          "key": "C",
+          "text": "NH₃"
+        },
+        {
+          "key": "D",
+          "text": "BF₃"
+        }
       ],
       "answer": "C",
       "category": "kotes-szerkezet",
@@ -51,17 +75,29 @@
       "kind": "choice",
       "prompt": "Melyik anyag kristályrácsa atomrács?",
       "options": [
-        { "key": "A", "text": "jég" },
-        { "key": "B", "text": "gyémánt" },
-        { "key": "C", "text": "nátrium-klorid" },
-        { "key": "D", "text": "vas" }
+        {
+          "key": "A",
+          "text": "jég"
+        },
+        {
+          "key": "B",
+          "text": "nátrium-klorid"
+        },
+        {
+          "key": "C",
+          "text": "gyémánt"
+        },
+        {
+          "key": "D",
+          "text": "vas"
+        }
       ],
-      "answer": "B",
+      "answer": "C",
       "category": "kotes-szerkezet",
-      "explanation": "Helyes: B. A gyémántban minden szénatom négy másikhoz kapcsolódik kovalens kötéssel, a rácspontokban atomok vannak, a rácsot kovalens kötések tartják össze: atomrács (ezért rendkívül kemény és magas olvadáspontú).",
+      "explanation": "Helyes: C. A gyémántban minden szénatom négy másikhoz kapcsolódik kovalens kötéssel, a rácspontokban atomok vannak, a rácsot kovalens kötések tartják össze: atomrács (ezért rendkívül kemény és magas olvadáspontú).",
       "wrongOptions": {
         "A": "A jég molekularácsos: a rácspontokban vízmolekulák vannak, amelyeket hidrogénkötések tartanak össze.",
-        "C": "A nátrium-klorid ionrácsos: Na⁺- és Cl⁻-ionok váltakoznak a rácsban.",
+        "B": "A nátrium-klorid ionrácsos: Na⁺- és Cl⁻-ionok váltakoznak a rácsban.",
         "D": "A vas fémrácsos: a rácspontokban fématomok (ionok), köztük delokalizált elektronok."
       }
     },
@@ -70,16 +106,28 @@
       "kind": "choice",
       "prompt": "Melyik molekulában a legpolárisabb a kötés?",
       "options": [
-        { "key": "A", "text": "HF" },
-        { "key": "B", "text": "HCl" },
-        { "key": "C", "text": "HBr" },
-        { "key": "D", "text": "HI" }
+        {
+          "key": "A",
+          "text": "HCl"
+        },
+        {
+          "key": "B",
+          "text": "HF"
+        },
+        {
+          "key": "C",
+          "text": "HBr"
+        },
+        {
+          "key": "D",
+          "text": "HI"
+        }
       ],
-      "answer": "A",
+      "answer": "B",
       "category": "kotes-szerkezet",
-      "explanation": "Helyes: A. A kötés polaritását a két atom elektronegativitás-különbsége adja. A fluor elektronegativitása a legnagyobb (4,0), a hidrogéné 2,1, így a H–F kötésben a legnagyobb a különbség (1,9); a halogének sorában lefelé az EN csökken, a kötés egyre kevésbé poláris.",
+      "explanation": "Helyes: B. A kötés polaritását a két atom elektronegativitás-különbsége adja. A fluor elektronegativitása a legnagyobb (4,0), a hidrogéné 2,1, így a H–F kötésben a legnagyobb a különbség (1,9); a halogének sorában lefelé az EN csökken, a kötés egyre kevésbé poláris.",
       "wrongOptions": {
-        "B": "A klór elektronegativitása (3,0) kisebb a fluorénál, ezért a H–Cl kötés kevésbé poláris.",
+        "A": "A klór elektronegativitása (3,0) kisebb a fluorénál, ezért a H–Cl kötés kevésbé poláris.",
         "C": "A bróm EN-értéke (2,8) még kisebb, a H–Br kötés kevésbé poláris.",
         "D": "A jód EN-értéke (2,5) a legkisebb, a H–I a sorban a legkevésbé poláris kötés."
       }
@@ -89,18 +137,30 @@
       "kind": "choice",
       "prompt": "Melyik anyag molekulái között alakul ki hidrogénkötés?",
       "options": [
-        { "key": "A", "text": "CH₄" },
-        { "key": "B", "text": "H₂S" },
-        { "key": "C", "text": "CH₃OH" },
-        { "key": "D", "text": "CH₃Cl" }
+        {
+          "key": "A",
+          "text": "CH₄"
+        },
+        {
+          "key": "B",
+          "text": "H₂S"
+        },
+        {
+          "key": "C",
+          "text": "CH₃Cl"
+        },
+        {
+          "key": "D",
+          "text": "CH₃OH"
+        }
       ],
-      "answer": "C",
+      "answer": "D",
       "category": "kotes-szerkezet",
-      "explanation": "Helyes: C. Hidrogénkötés akkor alakul ki, ha a hidrogén nagy elektronegativitású, kis méretű atomhoz (N, O, F) kapcsolódik, amelynek nemkötő elektronpárja is van. A metanol O–H csoportja ilyen; ezért forráspontja (65 °C) jóval magasabb a hasonló tömegű apoláris anyagokénál.",
+      "explanation": "Helyes: D. Hidrogénkötés akkor alakul ki, ha a hidrogén nagy elektronegativitású, kis méretű atomhoz (N, O, F) kapcsolódik, amelynek nemkötő elektronpárja is van. A metanol O–H csoportja ilyen; ezért forráspontja (65 °D) jóval magasabb a hasonló tömegű apoláris anyagokénál.",
       "wrongOptions": {
         "A": "A metán apoláris, csak gyenge diszperziós kölcsönhatás van a molekulái között.",
         "B": "A kén elektronegativitása kicsi (2,5), az S–H kötés alig poláris, a kén-hidrogén molekulái között nincs hidrogénkötés (csak dipólus–dipólus).",
-        "D": "A klórmetán dipólusmolekula, de a hidrogén szénhez kötődik, a klór pedig nagy méretű: nincs hidrogénkötés."
+        "C": "A klórmetán dipólusmolekula, de a hidrogén szénhez kötődik, a klór pedig nagy méretű: nincs hidrogénkötés."
       }
     },
     {
@@ -108,18 +168,30 @@
       "kind": "choice",
       "prompt": "Mekkora a kötésszög a vízmolekulában?",
       "options": [
-        { "key": "A", "text": "180°" },
-        { "key": "B", "text": "120°" },
-        { "key": "C", "text": "109,5°" },
-        { "key": "D", "text": "kb. 104,5°" }
+        {
+          "key": "A",
+          "text": "kb. 104,5°"
+        },
+        {
+          "key": "B",
+          "text": "120°"
+        },
+        {
+          "key": "C",
+          "text": "109,5°"
+        },
+        {
+          "key": "D",
+          "text": "180°"
+        }
       ],
-      "answer": "D",
+      "answer": "A",
       "category": "kotes-szerkezet",
-      "explanation": "Helyes: D. Az oxigén körül négy elektronpár (két kötő, két nemkötő) helyezkedik el tetraéderesen, de a nemkötő párok nagyobb helyet igényelnek és összenyomják a kötőpárokat, ezért a H–O–H szög a 109,5°-nál kisebb, kb. 104,5°.",
+      "explanation": "Helyes: A. Az oxigén körül négy elektronpár (két kötő, két nemkötő) helyezkedik el tetraéderesen, de a nemkötő párok nagyobb helyet igényelnek és összenyomják a kötőpárokat, ezért a H–O–H szög a 109,5°-nál kisebb, kb. 104,5°.",
       "wrongOptions": {
-        "A": "180° a lineáris molekulákra jellemző (két elektronpár-tartomány, pl. CO₂).",
         "B": "120° a síkbeli háromszög alakú molekulákra (három elektronpár-tartomány, pl. BF₃, SO₃).",
-        "C": "109,5° a szabályos tetraéder szöge (pl. CH₄), ahol nincs nemkötő elektronpár, amely torzítaná a szöget."
+        "C": "109,5° a szabályos tetraéder szöge (pl. CH₄), ahol nincs nemkötő elektronpár, amely torzítaná a szöget.",
+        "D": "180° a lineáris molekulákra jellemző (két elektronpár-tartomány, pl. CO₂)."
       }
     },
     {
@@ -127,10 +199,22 @@
       "kind": "choice",
       "prompt": "Hány szigma- (σ) és hány pi- (π) kötés van az etinmolekulában (H–C≡C–H)?",
       "options": [
-        { "key": "A", "text": "3 σ és 2 π" },
-        { "key": "B", "text": "2 σ és 3 π" },
-        { "key": "C", "text": "5 σ és 0 π" },
-        { "key": "D", "text": "3 σ és 1 π" }
+        {
+          "key": "A",
+          "text": "3 σ és 2 π"
+        },
+        {
+          "key": "B",
+          "text": "2 σ és 3 π"
+        },
+        {
+          "key": "C",
+          "text": "5 σ és 0 π"
+        },
+        {
+          "key": "D",
+          "text": "3 σ és 1 π"
+        }
       ],
       "answer": "A",
       "category": "kotes-szerkezet",
@@ -146,10 +230,22 @@
       "kind": "choice",
       "prompt": "Melyik ion nem nemesgáz-szerkezetű?",
       "options": [
-        { "key": "A", "text": "Fe²⁺" },
-        { "key": "B", "text": "Ca²⁺" },
-        { "key": "C", "text": "S²⁻" },
-        { "key": "D", "text": "Al³⁺" }
+        {
+          "key": "A",
+          "text": "Fe²⁺"
+        },
+        {
+          "key": "B",
+          "text": "Ca²⁺"
+        },
+        {
+          "key": "C",
+          "text": "S²⁻"
+        },
+        {
+          "key": "D",
+          "text": "Al³⁺"
+        }
       ],
       "answer": "A",
       "category": "atomszerkezet",

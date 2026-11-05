@@ -153,11 +153,11 @@
       "options": [
         {
           "key": "A",
-          "text": "3-metilpentán"
+          "text": "2-etilbután"
         },
         {
           "key": "B",
-          "text": "2-etilbután"
+          "text": "3-metilpentán"
         },
         {
           "key": "C",
@@ -168,11 +168,11 @@
           "text": "hexán"
         }
       ],
-      "answer": "A",
+      "answer": "B",
       "category": "szerves-elnevezes",
       "explanation": "Helyes: 3-metilpentán. A leghosszabb lánc 5 szénatomos (pentán), a metilcsoport bármelyik végéről számozva a 3. szénatomon van.",
       "wrongOptions": {
-        "B": "Az etilcsoport a leghosszabb lánc része, így a lánc 5 szénatomos, az alapnév pentán.",
+        "A": "Az etilcsoport a leghosszabb lánc része, így a lánc 5 szénatomos, az alapnév pentán.",
         "C": "Az etilcsoport a lánc része, és ilyen helyzetszámmal még a számozás is hibás lenne.",
         "D": "A hexán elágazás nélküli; ez a vegyület ugyan C₆H₁₄, de elágazó láncú izomer."
       }
@@ -227,11 +227,11 @@
       "options": [
         {
           "key": "A",
-          "text": "etanol és dimetil-éter"
+          "text": "etanol és etanal"
         },
         {
           "key": "B",
-          "text": "etanol és etanal"
+          "text": "etanol és dimetil-éter"
         },
         {
           "key": "C",
@@ -242,11 +242,11 @@
           "text": "cisz-but-2-én és transz-but-2-én"
         }
       ],
-      "answer": "A",
+      "answer": "B",
       "category": "szerves-elnevezes",
       "explanation": "Helyes: etanol és dimetil-éter. Mindkettő C₂H₆O, de az egyik alkohol, a másik éter.",
       "wrongOptions": {
-        "B": "Az etanal (C₂H₄O) összegképlete különbözik az etanolétól (C₂H₆O), ezért nem izomerek.",
+        "A": "Az etanal (C₂H₄O) összegképlete különbözik az etanolétól (C₂H₆O), ezért nem izomerek.",
         "C": "A metán és az etán a homológ sor egymást követő tagjai, összegképletük különböző.",
         "D": "Ezek izomerek, de geometriai (térbeli), nem funkcióscsoport-izomerek."
       }
@@ -272,11 +272,11 @@
       "options": [
         {
           "key": "A",
-          "text": "propán-2-ol"
+          "text": "bután-2-ol"
         },
         {
           "key": "B",
-          "text": "bután-2-ol"
+          "text": "propán-2-ol"
         },
         {
           "key": "C",
@@ -287,11 +287,11 @@
           "text": "etanol"
         }
       ],
-      "answer": "B",
+      "answer": "A",
       "category": "szerves-elnevezes",
       "explanation": "Helyes: bután-2-ol. A 2. szénatomhoz H, OH, CH₃ és C₂H₅ kapcsolódik – négy különböző csoport.",
       "wrongOptions": {
-        "A": "A propán-2-ol 2. szénatomjához két azonos metilcsoport kapcsolódik.",
+        "B": "A propán-2-ol 2. szénatomjához két azonos metilcsoport kapcsolódik.",
         "C": "A 2. szénatomhoz három metilcsoport kapcsolódik.",
         "D": "Az etanol egyik szénatomjához sem kapcsolódik négy különböző csoport (a CH₂-csoportban két H van)."
       }

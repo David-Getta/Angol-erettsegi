@@ -159,7 +159,7 @@
         },
         {
           "key": "B",
-          "text": "30"
+          "text": "82"
         },
         {
           "key": "C",
@@ -167,16 +167,16 @@
         },
         {
           "key": "D",
-          "text": "82"
+          "text": "30"
         }
       ],
-      "answer": "B",
+      "answer": "D",
       "category": "atomszerkezet",
       "explanation": "Helyes: 30. A neutronszám a tömegszám és a rendszám különbsége: 56 − 26 = 30.",
       "wrongOptions": {
         "A": "A 26 a rendszám, vagyis a protonok (és a semleges atomban az elektronok) száma.",
-        "C": "Az 56 a tömegszám, a protonok és a neutronok együttes száma.",
-        "D": "A 82 a tömegszám és a rendszám összege – ennek nincs fizikai jelentése."
+        "B": "A 82 a tömegszám és a rendszám összege – ennek nincs fizikai jelentése.",
+        "C": "Az 56 a tömegszám, a protonok és a neutronok együttes száma."
       }
     },
     {
@@ -198,7 +198,7 @@
       "options": [
         {
           "key": "A",
-          "text": "1s² 2s² 2p⁶ 3s² 3p⁶ 4s²"
+          "text": "1s² 2s² 2p⁶ 3s² 3p⁶ 4s¹ 3d¹"
         },
         {
           "key": "B",
@@ -210,16 +210,16 @@
         },
         {
           "key": "D",
-          "text": "1s² 2s² 2p⁶ 3s² 3p⁶ 4s¹ 3d¹"
+          "text": "1s² 2s² 2p⁶ 3s² 3p⁶ 4s²"
         }
       ],
-      "answer": "A",
+      "answer": "D",
       "category": "atomszerkezet",
-      "explanation": "Helyes: A. A 3p alhéj után a kisebb energiájú 4s alhéj töltődik be, így a kalcium utolsó két elektronja a 4s alhéjra kerül.",
+      "explanation": "Helyes: D. A 3p alhéj után a kisebb energiájú 4s alhéj töltődik be, így a kalcium utolsó két elektronja a 4s alhéjra kerül.",
       "wrongOptions": {
+        "A": "Ez gerjesztett állapot lenne: alapállapotban a 4s alhéj betelik, mielőtt a 3d-re elektron kerülne.",
         "B": "A 3d alhéj csak a 4s után töltődik; a kalciumban még nincs d-elektron.",
-        "C": "A p-alhéjon legfeljebb 6 elektron fér el (3 pálya × 2 elektron).",
-        "D": "Ez gerjesztett állapot lenne: alapállapotban a 4s alhéj betelik, mielőtt a 3d-re elektron kerülne."
+        "C": "A p-alhéjon legfeljebb 6 elektron fér el (3 pálya × 2 elektron)."
       }
     },
     {
@@ -233,7 +233,7 @@
         },
         {
           "key": "B",
-          "text": "K > Na > Li"
+          "text": "O > S > Se"
         },
         {
           "key": "C",
@@ -241,16 +241,16 @@
         },
         {
           "key": "D",
-          "text": "O > S > Se"
+          "text": "K > Na > Li"
         }
       ],
-      "answer": "B",
+      "answer": "D",
       "category": "atomszerkezet",
       "explanation": "Helyes: K > Na > Li. A csoportban lefelé nő a héjak száma, ezért nő az atomsugár.",
       "wrongOptions": {
         "A": "A periódusban balról jobbra az atomsugár csökken, tehát Na > Mg > Al.",
-        "C": "A csoportban lefelé nő az atomsugár: F < Cl < Br.",
-        "D": "A csoportban lefelé nő az atomsugár: O < S < Se."
+        "B": "A csoportban lefelé nő az atomsugár: O < S < Se.",
+        "C": "A csoportban lefelé nő az atomsugár: F < Cl < Br."
       }
     },
     {
@@ -273,7 +273,7 @@
       "options": [
         {
           "key": "A",
-          "text": "A magnéziumnak 2 vegyértékelektronja van."
+          "text": "A magnézium a 3. periódusban van."
         },
         {
           "key": "B",
@@ -281,19 +281,19 @@
         },
         {
           "key": "C",
-          "text": "A magnézium a 3. periódusban van."
+          "text": "A magnéziumnak 2 vegyértékelektronja van."
         },
         {
           "key": "D",
           "text": "A magnézium nemfém."
         }
       ],
-      "answer": "A",
+      "answer": "C",
       "category": "atomszerkezet",
-      "explanation": "Helyes: A. A harmadik elektront már a neonszerkezetű belső héjból kellene eltávolítani, ezért ugrik meg az energia – a külső héjon tehát 2 elektron van.",
+      "explanation": "Helyes: C. A harmadik elektront már a neonszerkezetű belső héjból kellene eltávolítani, ezért ugrik meg az energia – a külső héjon tehát 2 elektron van.",
       "wrongOptions": {
+        "A": "A periódusszám igaz, de nem az ionizációs energiák ugrásából, hanem a héjak számából következik.",
         "B": "Ha 3 vegyértékelektron lenne, a nagy ugrás a 3. és a 4. ionizációs energia között jelentkezne.",
-        "C": "A periódusszám igaz, de nem az ionizációs energiák ugrásából, hanem a héjak számából következik.",
         "D": "A kis első és második ionizációs energia éppen a fémes jellegre utal."
       }
     }

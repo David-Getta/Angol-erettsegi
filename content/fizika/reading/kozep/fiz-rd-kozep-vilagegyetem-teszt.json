@@ -32,16 +32,16 @@
       "kind": "choice",
       "prompt": "Mit jelent a fényév?",
       "options": [
-        { "key": "A", "text": "Egy időtartamot: annyi időt, amennyi alatt a csillag fénye a Földre ér." },
-        { "key": "B", "text": "Egy távolságot: amennyi utat a fény vákuumban egy év alatt megtesz." },
+        { "key": "A", "text": "Egy távolságot: amennyi utat a fény vákuumban egy év alatt megtesz." },
+        { "key": "B", "text": "Egy időtartamot: annyi időt, amennyi alatt a csillag fénye a Földre ér." },
         { "key": "C", "text": "A Föld és a Nap átlagos távolságát." },
         { "key": "D", "text": "A fény sebességét kilométer per évben, vagyis egy sebességegységet." }
       ],
-      "answer": "B",
+      "answer": "A",
       "category": "fogalmak",
-      "explanation": "Helyes: B. A fényév TÁVOLSÁGegység: a fény által vákuumban egy év alatt megtett út, kb. 9,46 · 10¹² km (≈ 9,5 billió km). Csillagászati távolságok megadására használjuk; a Naphoz legközelebbi csillag, a Proxima Centauri kb. 4,2 fényévre van.",
+      "explanation": "Helyes: A. A fényév TÁVOLSÁGegység: a fény által vákuumban egy év alatt megtett út, kb. 9,46 · 10¹² km (≈ 9,5 billió km). Csillagászati távolságok megadására használjuk; a Naphoz legközelebbi csillag, a Proxima Centauri kb. 4,2 fényévre van.",
       "wrongOptions": {
-        "A": "A nevében szerepel az „év”, de nem idő, hanem út: a sebesség és az egy év szorzata.",
+        "B": "A nevében szerepel az „év”, de nem idő, hanem út: a sebesség és az egy év szorzata.",
         "C": "A Föld–Nap átlagos távolság a csillagászati egység (CSE, kb. 150 millió km); a fény ezt kb. 8 perc alatt teszi meg.",
         "D": "A fényév nem sebesség: a fény sebessége állandó (300 000 km/s), a fényév egy adott idő alatt megtett távolság."
       }
@@ -52,17 +52,17 @@
       "prompt": "Mi okozza a Hold fázisait (újhold, telihold stb.)?",
       "options": [
         { "key": "A", "text": "A Föld árnyéka, amely a hónap során különböző mértékben takarja a Holdat." },
-        { "key": "B", "text": "Az, hogy a Hold Nap által megvilágított feléből a Nap–Föld–Hold kölcsönös helyzetétől függően mekkora részt látunk a Földről." },
+        { "key": "B", "text": "A Föld légkörében lévő felhők, amelyek eltakarják a Hold egy részét." },
         { "key": "C", "text": "A Hold saját tengely körüli forgása, amely miatt a világos és a sötét oldala felváltva fordul felénk." },
-        { "key": "D", "text": "A Föld légkörében lévő felhők, amelyek eltakarják a Hold egy részét." }
+        { "key": "D", "text": "Az, hogy a Hold Nap által megvilágított feléből a Nap–Föld–Hold kölcsönös helyzetétől függően mekkora részt látunk a Földről." }
       ],
-      "answer": "B",
+      "answer": "D",
       "category": "jelenseg-magyarazat",
-      "explanation": "Helyes: B. A Holdnak mindig az a fele világos, amelyik a Nap felé néz. Ahogy a Hold kb. egy hónap alatt megkerüli a Földet, ebből a megvilágított félgömbből hol semennyit (újhold), hol egy részt (sarló, negyed), hol az egészet (telihold) látjuk.",
+      "explanation": "Helyes: D. A Holdnak mindig az a fele világos, amelyik a Nap felé néz. Ahogy a Hold kb. egy hónap alatt megkerüli a Földet, ebből a megvilágított félgömbből hol semennyit (újhold), hol egy részt (sarló, negyed), hol az egészet (telihold) látjuk.",
       "wrongOptions": {
         "A": "A Föld árnyéka a HOLDFOGYATKOZÁST okozza, amely csak teliholdkor és ritkán fordul elő, nem havonta ismétlődő fázisváltozás.",
-        "C": "A Hold kötött tengelyforgású: mindig ugyanazt az oldalát mutatja felénk, így a forgása nem magyarázza a fázisokat.",
-        "D": "A felhők az időjárás részei, véletlenszerűek; a fázisok szabályosan, kb. 29,5 naponként ismétlődnek."
+        "B": "A felhők az időjárás részei, véletlenszerűek; a fázisok szabályosan, kb. 29,5 naponként ismétlődnek.",
+        "C": "A Hold kötött tengelyforgású: mindig ugyanazt az oldalát mutatja felénk, így a forgása nem magyarázza a fázisokat."
       }
     },
     {
@@ -70,16 +70,16 @@
       "kind": "choice",
       "prompt": "Miért vannak évszakok a Földön?",
       "options": [
-        { "key": "A", "text": "Mert a Föld pályája ellipszis, és nyáron közelebb vagyunk a Naphoz." },
-        { "key": "B", "text": "Mert a Föld forgástengelye ferde (kb. 23,5°-os szöget zár be a pályasík merőlegesével), ezért év közben változik a napsugarak beesési szöge és a nappalok hossza." },
+        { "key": "A", "text": "Mert a Föld forgástengelye ferde (kb. 23,5°-os szöget zár be a pályasík merőlegesével), ezért év közben változik a napsugarak beesési szöge és a nappalok hossza." },
+        { "key": "B", "text": "Mert a Föld pályája ellipszis, és nyáron közelebb vagyunk a Naphoz." },
         { "key": "C", "text": "Mert a Nap sugárzási teljesítménye az év során periodikusan változik." },
         { "key": "D", "text": "Mert a Hold nyáron távolabb van a Földtől." }
       ],
-      "answer": "B",
+      "answer": "A",
       "category": "jelenseg-magyarazat",
-      "explanation": "Helyes: B. A ferde forgástengely iránya a keringés során állandó, ezért nyáron az északi félteke a Nap felé hajlik: magasabban delel a Nap, meredekebben érkeznek a sugarak (egységnyi felületre több energia jut), és hosszabbak a nappalok. Fél év múlva ugyanez a déli féltekén történik.",
+      "explanation": "Helyes: A. A ferde forgástengely iránya a keringés során állandó, ezért nyáron az északi félteke a Nap felé hajlik: magasabban delel a Nap, meredekebben érkeznek a sugarak (egységnyi felületre több energia jut), és hosszabbak a nappalok. Fél év múlva ugyanez a déli féltekén történik.",
       "wrongOptions": {
-        "A": "A Föld pályája alig tér el a körtől, és napközelben (perihélium) január elején vagyunk – az északi féltekén ekkor tél van. Ráadásul a két féltekén ellentétes az évszak, ami távolsággal nem magyarázható.",
+        "B": "A Föld pályája alig tér el a körtől, és napközelben (perihélium) január elején vagyunk – az északi féltekén ekkor tél van. Ráadásul a két féltekén ellentétes az évszak, ami távolsággal nem magyarázható.",
         "C": "A Nap teljesítménye nagyon kis mértékben ingadozik, és ugyanúgy hatna mindkét féltekére – az évszakok viszont a két féltekén ellentétesek.",
         "D": "A Hold a tengerjárást befolyásolja, a Föld felszínének felmelegedésére nincs érdemi hatása."
       }
@@ -147,17 +147,17 @@
       "prompt": "Miért „lebegnek” (súlytalanok) az űrhajósok a Föld körül keringő űrállomáson?",
       "options": [
         { "key": "A", "text": "Mert az űrállomás magasságában már nincs gravitáció." },
-        { "key": "B", "text": "Mert az űrállomással együtt szabadon esnek: a gravitációs erő csak a körpályán tartásukhoz szükséges centripetális erőt adja." },
+        { "key": "B", "text": "Mert a Hold vonzása kiegyenlíti a Föld vonzását." },
         { "key": "C", "text": "Mert a légüres térben nincs levegő, ami lenyomná őket." },
-        { "key": "D", "text": "Mert a Hold vonzása kiegyenlíti a Föld vonzását." }
+        { "key": "D", "text": "Mert az űrállomással együtt szabadon esnek: a gravitációs erő csak a körpályán tartásukhoz szükséges centripetális erőt adja." }
       ],
-      "answer": "B",
+      "answer": "D",
       "category": "jelenseg-magyarazat",
-      "explanation": "Helyes: B. Az űrállomás kb. 400 km magasan kering, ahol a gravitációs gyorsulás még a felszíni érték közel 90 %-a. Az űrhajósok és az állomás együtt, ugyanazzal a gyorsulással „esnek” a Föld körül, ezért nem nyomják a padlót – ez a súlytalanság. A gravitációs erő hat rájuk, és éppen ez tartja őket körpályán.",
+      "explanation": "Helyes: D. Az űrállomás kb. 400 km magasan kering, ahol a gravitációs gyorsulás még a felszíni érték közel 90 %-a. Az űrhajósok és az állomás együtt, ugyanazzal a gyorsulással „esnek” a Föld körül, ezért nem nyomják a padlót – ez a súlytalanság. A gravitációs erő hat rájuk, és éppen ez tartja őket körpályán.",
       "wrongOptions": {
         "A": "400 km magasan a gravitáció alig gyengébb a felszíninél (közel 90 %); ha nem lenne gravitáció, az állomás egyenes vonalban elrepülne.",
-        "C": "A súly a gravitáció miatt van, nem a levegő miatt; a levegő éppen felhajtóerőt fejt ki, nem lenyom.",
-        "D": "A Hold vonzóereje az űrállomáson a Földének csak néhány milliomod része, így nem egyenlítheti ki."
+        "B": "A Hold vonzóereje az űrállomáson a Földének csak néhány milliomod része, így nem egyenlítheti ki.",
+        "C": "A súly a gravitáció miatt van, nem a levegő miatt; a levegő éppen felhajtóerőt fejt ki, nem lenyom."
       }
     }
   ],

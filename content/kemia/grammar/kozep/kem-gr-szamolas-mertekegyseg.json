@@ -168,23 +168,23 @@
         },
         {
           "key": "B",
-          "text": "3"
+          "text": "4"
         },
         {
           "key": "C",
-          "text": "4"
+          "text": "3"
         },
         {
           "key": "D",
           "text": "6"
         }
       ],
-      "answer": "C",
+      "answer": "B",
       "category": "szamolas-mertekegyseg",
       "explanation": "Helyes: 4 (4, 0, 6, 0). A bevezető nullák nem értékesek, a számjegyek közötti és a tizedes tört végén álló nulla igen.",
       "wrongOptions": {
         "A": "A 4 és a 6 közötti, valamint a végén álló nulla is értékes jegy.",
-        "B": "A tizedes tört végén álló nulla is értékes jegy, mert a mérés pontosságát jelzi.",
+        "C": "A tizedes tört végén álló nulla is értékes jegy, mert a mérés pontosságát jelzi.",
         "D": "A bevezető nullák (0,0…) csak a helyiértéket jelölik, nem értékesek."
       }
     },
@@ -199,23 +199,23 @@
         },
         {
           "key": "B",
-          "text": "1,0 · 10⁻³ mol/dm³"
+          "text": "11 mol/dm³"
         },
         {
           "key": "C",
-          "text": "11 mol/dm³"
+          "text": "1,0 · 10⁻³ mol/dm³"
         },
         {
           "key": "D",
           "text": "3,0 mol/dm³"
         }
       ],
-      "answer": "B",
+      "answer": "C",
       "category": "szamolas-mertekegyseg",
       "explanation": "Helyes: 1,0 · 10⁻³ mol/dm³. pOH = 14 − 11 = 3, így [OH⁻] = 10⁻³ mol/dm³.",
       "wrongOptions": {
         "A": "Ez az oxóniumion-koncentráció, nem a hidroxidioné.",
-        "C": "A pH nem koncentráció, hanem annak negatív logaritmusa.",
+        "B": "A pH nem koncentráció, hanem annak negatív logaritmusa.",
         "D": "A pOH értéke 3, a koncentráció ebből 10⁻³ mol/dm³, nem 3 mol/dm³."
       }
     },

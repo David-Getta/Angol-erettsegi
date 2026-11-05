@@ -17,14 +17,26 @@
     "kind": "choice",
     "prompt": "Hány elektron van egy nátriumatomban?",
     "options": [
-      { "key": "A", "text": "11" },
-      { "key": "B", "text": "12" },
-      { "key": "C", "text": "23" },
-      { "key": "D", "text": "1" }
+      {
+        "key": "A",
+        "text": "1"
+      },
+      {
+        "key": "B",
+        "text": "12"
+      },
+      {
+        "key": "C",
+        "text": "23"
+      },
+      {
+        "key": "D",
+        "text": "11"
+      }
     ],
-    "answer": "A",
+    "answer": "D",
     "category": "atomszerkezet",
-    "explanation": "Helyes: A. A nátrium rendszáma 11, a rendszám a protonok számát adja meg, és a semleges atomban az elektronok száma egyenlő a protonok számával. A 23 a tömegszám (protonok + neutronok), az 1 pedig a vegyértékelektronok száma."
+    "explanation": "Helyes: D. A nátrium rendszáma 11, a rendszám a protonok számát adja meg, és a semleges atomban az elektronok száma egyenlő a protonok számával. A 23 a tömegszám (protonok + neutronok), az 1 pedig a vegyértékelektronok száma."
   },
   "items": [
     {
@@ -32,18 +44,30 @@
       "kind": "choice",
       "prompt": "Melyik részecske elektronszerkezete egyezik meg a neonatoméval?",
       "options": [
-        { "key": "A", "text": "Na atom" },
-        { "key": "B", "text": "Mg²⁺ ion" },
-        { "key": "C", "text": "Cl⁻ ion" },
-        { "key": "D", "text": "K⁺ ion" }
+        {
+          "key": "A",
+          "text": "Na atom"
+        },
+        {
+          "key": "B",
+          "text": "K⁺ ion"
+        },
+        {
+          "key": "C",
+          "text": "Cl⁻ ion"
+        },
+        {
+          "key": "D",
+          "text": "Mg²⁺ ion"
+        }
       ],
-      "answer": "B",
+      "answer": "D",
       "category": "atomszerkezet",
-      "explanation": "Helyes: B. A neonatomnak 10 elektronja van. A magnéziumatom 12 elektronjából kettőt lead, így a Mg²⁺ ionnak 10 elektronja marad – ez a neon elektronszerkezete (2, 8).",
+      "explanation": "Helyes: D. A neonatomnak 10 elektronja van. A magnéziumatom 12 elektronjából kettőt lead, így a Mg²⁺ ionnak 10 elektronja marad – ez a neon elektronszerkezete (2, 8).",
       "wrongOptions": {
         "A": "A nátriumatomnak 11 elektronja van, egy több, mint a neonnak; a Na⁺ ion lenne neonszerkezetű.",
-        "C": "A kloridion 17 + 1 = 18 elektront tartalmaz, ez az argon elektronszerkezete.",
-        "D": "A káliumion 19 − 1 = 18 elektronos, szintén argonszerkezetű."
+        "B": "A káliumion 19 − 1 = 18 elektronos, szintén argonszerkezetű.",
+        "C": "A kloridion 17 + 1 = 18 elektront tartalmaz, ez az argon elektronszerkezete."
       }
     },
     {
@@ -51,10 +75,22 @@
       "kind": "choice",
       "prompt": "Mi a klóratom vegyértékelektron-szerkezete alapállapotban?",
       "options": [
-        { "key": "A", "text": "2s²2p⁵" },
-        { "key": "B", "text": "3s²3p⁵" },
-        { "key": "C", "text": "3s²3p⁶" },
-        { "key": "D", "text": "3s¹3p⁶" }
+        {
+          "key": "A",
+          "text": "2s²2p⁵"
+        },
+        {
+          "key": "B",
+          "text": "3s²3p⁵"
+        },
+        {
+          "key": "C",
+          "text": "3s²3p⁶"
+        },
+        {
+          "key": "D",
+          "text": "3s¹3p⁶"
+        }
       ],
       "answer": "B",
       "category": "atomszerkezet",
@@ -70,17 +106,29 @@
       "kind": "choice",
       "prompt": "Melyik sorrend helyes az atomsugár növekedése szerint?",
       "options": [
-        { "key": "A", "text": "Li < Na < K" },
-        { "key": "B", "text": "K < Na < Li" },
-        { "key": "C", "text": "Na < Mg < Al" },
-        { "key": "D", "text": "Mg < Ca < Be" }
+        {
+          "key": "A",
+          "text": "Na < Mg < Al"
+        },
+        {
+          "key": "B",
+          "text": "K < Na < Li"
+        },
+        {
+          "key": "C",
+          "text": "Li < Na < K"
+        },
+        {
+          "key": "D",
+          "text": "Mg < Ca < Be"
+        }
       ],
-      "answer": "A",
+      "answer": "C",
       "category": "atomszerkezet",
-      "explanation": "Helyes: A. Egy főcsoportban lefelé haladva nő a héjak száma, ezért nő az atomsugár: a lítiumnak 2, a nátriumnak 3, a káliumnak 4 elektronhéja van.",
+      "explanation": "Helyes: C. Egy főcsoportban lefelé haladva nő a héjak száma, ezért nő az atomsugár: a lítiumnak 2, a nátriumnak 3, a káliumnak 4 elektronhéja van.",
       "wrongOptions": {
+        "A": "Egy perióduson belül balról jobbra az atomsugár csökken (nő a magtöltés, a héjak száma nem), ezért Na > Mg > Al.",
         "B": "Ez a csökkenő sorrend: a kálium a legnagyobb, a lítium a legkisebb atom.",
-        "C": "Egy perióduson belül balról jobbra az atomsugár csökken (nő a magtöltés, a héjak száma nem), ezért Na > Mg > Al.",
         "D": "A berillium a II. főcsoport legkisebb atomja (2 héj), a helyes növekvő sorrend Be < Mg < Ca."
       }
     },
@@ -89,10 +137,22 @@
       "kind": "choice",
       "prompt": "Melyik ion töltése van helyesen megadva?",
       "options": [
-        { "key": "A", "text": "Al²⁺" },
-        { "key": "B", "text": "S²⁻" },
-        { "key": "C", "text": "Ca⁺" },
-        { "key": "D", "text": "O⁻" }
+        {
+          "key": "A",
+          "text": "Al²⁺"
+        },
+        {
+          "key": "B",
+          "text": "S²⁻"
+        },
+        {
+          "key": "C",
+          "text": "Ca⁺"
+        },
+        {
+          "key": "D",
+          "text": "O⁻"
+        }
       ],
       "answer": "B",
       "category": "atomszerkezet",
@@ -108,16 +168,28 @@
       "kind": "choice",
       "prompt": "Hány neutron van a ³⁷Cl izotóp atommagjában?",
       "options": [
-        { "key": "A", "text": "17" },
-        { "key": "B", "text": "20" },
-        { "key": "C", "text": "37" },
-        { "key": "D", "text": "54" }
+        {
+          "key": "A",
+          "text": "20"
+        },
+        {
+          "key": "B",
+          "text": "17"
+        },
+        {
+          "key": "C",
+          "text": "37"
+        },
+        {
+          "key": "D",
+          "text": "54"
+        }
       ],
-      "answer": "B",
+      "answer": "A",
       "category": "atomszerkezet",
-      "explanation": "Helyes: B. A tömegszám (37) a protonok és neutronok együttes száma; a klór rendszáma 17, tehát a neutronok száma 37 − 17 = 20.",
+      "explanation": "Helyes: A. A tömegszám (37) a protonok és neutronok együttes száma; a klór rendszáma 17, tehát a neutronok száma 37 − 17 = 20.",
       "wrongOptions": {
-        "A": "A 17 a protonok száma (rendszám), nem a neutronoké.",
+        "B": "A 17 a protonok száma (rendszám), nem a neutronoké.",
         "C": "A 37 a tömegszám, vagyis a protonok és neutronok együttes száma.",
         "D": "Az 54 a tömegszám és a rendszám összege, ennek nincs fizikai jelentése."
       }
@@ -127,18 +199,30 @@
       "kind": "choice",
       "prompt": "Melyik elem elektronegativitása a legnagyobb?",
       "options": [
-        { "key": "A", "text": "fluor" },
-        { "key": "B", "text": "klór" },
-        { "key": "C", "text": "oxigén" },
-        { "key": "D", "text": "nitrogén" }
+        {
+          "key": "A",
+          "text": "nitrogén"
+        },
+        {
+          "key": "B",
+          "text": "klór"
+        },
+        {
+          "key": "C",
+          "text": "oxigén"
+        },
+        {
+          "key": "D",
+          "text": "fluor"
+        }
       ],
-      "answer": "A",
+      "answer": "D",
       "category": "atomszerkezet",
-      "explanation": "Helyes: A. Az elektronegativitás a periódusos rendszerben jobbra és felfelé nő (a nemesgázokat nem számítva), ezért a fluor a legnagyobb elektronegativitású elem (EN = 4,0).",
+      "explanation": "Helyes: D. Az elektronegativitás a periódusos rendszerben jobbra és felfelé nő (a nemesgázokat nem számítva), ezért a fluor a legnagyobb elektronegativitású elem (EN = 4,0).",
       "wrongOptions": {
+        "A": "A nitrogén elektronegativitása (3,0) kisebb az oxigénénél és a fluorénál is.",
         "B": "A klór a fluor alatt van a VII. főcsoportban, elektronegativitása kisebb (3,0 körül).",
-        "C": "Az oxigén a második legnagyobb elektronegativitású elem (3,5), de a fluoré nagyobb.",
-        "D": "A nitrogén elektronegativitása (3,0) kisebb az oxigénénél és a fluorénál is."
+        "C": "Az oxigén a második legnagyobb elektronegativitású elem (3,5), de a fluoré nagyobb."
       }
     },
     {
@@ -146,16 +230,28 @@
       "kind": "choice",
       "prompt": "Melyik állítás igaz, ha egy perióduson belül balról jobbra haladunk?",
       "options": [
-        { "key": "A", "text": "Nő az atomsugár." },
-        { "key": "B", "text": "Nő az elektronegativitás." },
-        { "key": "C", "text": "Nő az elektronhéjak száma." },
-        { "key": "D", "text": "Csökken a vegyértékelektronok száma." }
+        {
+          "key": "A",
+          "text": "Nő az elektronegativitás."
+        },
+        {
+          "key": "B",
+          "text": "Nő az atomsugár."
+        },
+        {
+          "key": "C",
+          "text": "Nő az elektronhéjak száma."
+        },
+        {
+          "key": "D",
+          "text": "Csökken a vegyértékelektronok száma."
+        }
       ],
-      "answer": "B",
+      "answer": "A",
       "category": "atomszerkezet",
-      "explanation": "Helyes: B. Egy periódusban a héjak száma azonos, de a magtöltés nő, ezért a mag erősebben vonzza az elektronokat: az atomsugár csökken, az elektronegativitás (és általában az ionizációs energia) nő.",
+      "explanation": "Helyes: A. Egy periódusban a héjak száma azonos, de a magtöltés nő, ezért a mag erősebben vonzza az elektronokat: az atomsugár csökken, az elektronegativitás (és általában az ionizációs energia) nő.",
       "wrongOptions": {
-        "A": "Az atomsugár balról jobbra csökken, mert a növekvő magtöltés ugyanannyi héjat erősebben húz össze.",
+        "B": "Az atomsugár balról jobbra csökken, mert a növekvő magtöltés ugyanannyi héjat erősebben húz össze.",
         "C": "Az elektronhéjak száma egy periódusban állandó (a periódus száma adja meg).",
         "D": "A vegyértékelektronok száma balról jobbra 1-től 8-ig nő, nem csökken."
       }

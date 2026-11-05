@@ -51,16 +51,16 @@
       "kind": "choice",
       "prompt": "Egy gáz 500 J hőt vesz fel, és közben 200 J munkát végez a környezetén. Mennyivel változik a belső energiája?",
       "options": [
-        { "key": "A", "text": "700 J-lal nő." },
-        { "key": "B", "text": "300 J-lal nő." },
+        { "key": "A", "text": "300 J-lal nő." },
+        { "key": "B", "text": "700 J-lal nő." },
         { "key": "C", "text": "300 J-lal csökken." },
         { "key": "D", "text": "200 J-lal nő." }
       ],
-      "answer": "B",
+      "answer": "A",
       "category": "vektor-irany",
-      "explanation": "Helyes: B. A termodinamika I. főtétele: ΔE = Q + W, ahol W a gázon végzett munka. A gáz VÉGEZ munkát, ezért a rajta végzett munka W = −200 J: ΔE = 500 J − 200 J = 300 J, a belső energia 300 J-lal nő.",
+      "explanation": "Helyes: A. A termodinamika I. főtétele: ΔE = Q + W, ahol W a gázon végzett munka. A gáz VÉGEZ munkát, ezért a rajta végzett munka W = −200 J: ΔE = 500 J − 200 J = 300 J, a belső energia 300 J-lal nő.",
       "wrongOptions": {
-        "A": "Előjelhiba: a gáz által végzett munka csökkenti a belső energiát, ezért nem hozzáadni, hanem levonni kell.",
+        "B": "Előjelhiba: a gáz által végzett munka csökkenti a belső energiát, ezért nem hozzáadni, hanem levonni kell.",
         "C": "A felvett hő (500 J) nagyobb a végzett munkánál (200 J), ezért a belső energia nő, nem csökken.",
         "D": "A végzett munkát tekintette energiaváltozásnak; a változás a felvett hő és a végzett munka különbsége."
       }
@@ -71,17 +71,17 @@
       "prompt": "Egy gáz adiabatikusan (hőcsere nélkül) kitágul. Mi történik a hőmérsékletével?",
       "options": [
         { "key": "A", "text": "Nő, mert a gáz munkát végez." },
-        { "key": "B", "text": "Csökken, mert a végzett munkát a gáz a belső energiájából fedezi." },
+        { "key": "B", "text": "Csökken, mert a gáz hőt ad le a környezetének." },
         { "key": "C", "text": "Nem változik, mert nincs hőcsere." },
-        { "key": "D", "text": "Csökken, mert a gáz hőt ad le a környezetének." }
+        { "key": "D", "text": "Csökken, mert a végzett munkát a gáz a belső energiájából fedezi." }
       ],
-      "answer": "B",
+      "answer": "D",
       "category": "jelenseg-magyarazat",
-      "explanation": "Helyes: B. Adiabatikus folyamatban Q = 0, így ΔE = W. Táguláskor a gáz munkát végez (a rajta végzett munka negatív), ezért a belső energiája és vele a hőmérséklete csökken. Ezért hűl le a szifonpatronból vagy a szelepből kiáramló, gyorsan táguló gáz.",
+      "explanation": "Helyes: D. Adiabatikus folyamatban Q = 0, így ΔE = W. Táguláskor a gáz munkát végez (a rajta végzett munka negatív), ezért a belső energiája és vele a hőmérséklete csökken. Ezért hűl le a szifonpatronból vagy a szelepből kiáramló, gyorsan táguló gáz.",
       "wrongOptions": {
         "A": "A munkavégzés energiát visz EL a gázból; a hőmérséklet akkor nő, ha a gázt adiabatikusan összenyomjuk.",
-        "C": "A hőcsere hiánya nem jelenti, hogy a belső energia állandó: munkavégzéssel is változhat.",
-        "D": "Adiabatikus folyamatban definíció szerint nincs hőcsere; a lehűlés oka a munkavégzés."
+        "B": "Adiabatikus folyamatban definíció szerint nincs hőcsere; a lehűlés oka a munkavégzés.",
+        "C": "A hőcsere hiánya nem jelenti, hogy a belső energia állandó: munkavégzéssel is változhat."
       }
     },
     {
@@ -166,17 +166,17 @@
       "prompt": "Melyik állítás a termodinamika II. főtételének egyik megfogalmazása?",
       "options": [
         { "key": "A", "text": "Az energia nem keletkezik és nem vész el, csak átalakul." },
-        { "key": "B", "text": "Hő magától (külső beavatkozás nélkül) csak a melegebb testről a hidegebbre megy át." },
+        { "key": "B", "text": "Jó szigeteléssel elérhető, hogy egy hőerőgép a felvett hőt teljes egészében munkává alakítsa." },
         { "key": "C", "text": "Állandó térfogaton a gáz nyomása egyenesen arányos az abszolút hőmérsékletével." },
-        { "key": "D", "text": "Jó szigeteléssel elérhető, hogy egy hőerőgép a felvett hőt teljes egészében munkává alakítsa." }
+        { "key": "D", "text": "Hő magától (külső beavatkozás nélkül) csak a melegebb testről a hidegebbre megy át." }
       ],
-      "answer": "B",
+      "answer": "D",
       "category": "torvenyek",
-      "explanation": "Helyes: B. A II. főtétel (Clausius-féle megfogalmazás) szerint a hő önként csak melegebbről hidegebb testre áramlik; a fordított irányhoz munkát kell befektetni (hűtőgép, hőszivattyú). Ezzel egyenértékű, hogy nincs olyan periodikusan működő gép, amely a felvett hőt teljesen munkává alakítja.",
+      "explanation": "Helyes: D. A II. főtétel (Clausius-féle megfogalmazás) szerint a hő önként csak melegebbről hidegebb testre áramlik; a fordított irányhoz munkát kell befektetni (hűtőgép, hőszivattyú). Ezzel egyenértékű, hogy nincs olyan periodikusan működő gép, amely a felvett hőt teljesen munkává alakítja.",
       "wrongOptions": {
         "A": "Ez az energiamegmaradás, azaz a termodinamika I. főtétele.",
-        "C": "Ez Gay-Lussac II. törvénye (izochor állapotváltozás), nem főtétel.",
-        "D": "Éppen ezt tiltja a II. főtétel: a hő egy részét mindig le kell adni a hűtőnek, ezért η < 100 % szigeteléstől függetlenül."
+        "B": "Éppen ezt tiltja a II. főtétel: a hő egy részét mindig le kell adni a hűtőnek, ezért η < 100 % szigeteléstől függetlenül.",
+        "C": "Ez Gay-Lussac II. törvénye (izochor állapotváltozás), nem főtétel."
       }
     }
   ],

@@ -172,23 +172,23 @@
         },
         {
           "key": "B",
-          "text": "2,45 dm³"
+          "text": "4,90 dm³"
         },
         {
           "key": "C",
-          "text": "4,90 dm³"
+          "text": "2,45 dm³"
         },
         {
           "key": "D",
           "text": "0,245 dm³"
         }
       ],
-      "answer": "B",
+      "answer": "C",
       "category": "anyagmennyiseg",
       "explanation": "Helyes: 2,45 dm³. Zn + 2 HCl → ZnCl₂ + H₂; n(Zn) = 6,54 g / 65,4 g/mol = 0,100 mol = n(H₂); V = 0,100 mol · 24,5 dm³/mol = 2,45 dm³.",
       "wrongOptions": {
         "A": "Ez a fele: mintha 2 mol cinkből 1 mol hidrogén lenne – az egyenlet szerint az arány 1 : 1.",
-        "C": "Ez a kétszerese: mintha a HCl együtthatóját vette volna a hidrogénre.",
+        "B": "Ez a kétszerese: mintha a HCl együtthatóját vette volna a hidrogénre.",
         "D": "Helyiérték-hiba: 0,100 mol · 24,5 dm³/mol = 2,45 dm³, nem 0,245 dm³."
       }
     },
@@ -199,11 +199,11 @@
       "options": [
         {
           "key": "A",
-          "text": "H₂"
+          "text": "O₂"
         },
         {
           "key": "B",
-          "text": "O₂"
+          "text": "H₂"
         },
         {
           "key": "C",
@@ -214,11 +214,11 @@
           "text": "CH₄"
         }
       ],
-      "answer": "A",
+      "answer": "B",
       "category": "anyagmennyiseg",
       "explanation": "Helyes: H₂. Azonos tömegnél annak a gáznak a legnagyobb az anyagmennyisége (és így a térfogata), amelynek a legkisebb a moláris tömege: M(H₂) = 2,0 g/mol.",
       "wrongOptions": {
-        "B": "M(O₂) = 32 g/mol, így 1,00 g csak 0,031 mol.",
+        "A": "M(O₂) = 32 g/mol, így 1,00 g csak 0,031 mol.",
         "C": "M(CO₂) = 44 g/mol – ez tölti be a legkisebb térfogatot.",
         "D": "M(CH₄) = 16 g/mol, ez nagyobb a hidrogénénél."
       }

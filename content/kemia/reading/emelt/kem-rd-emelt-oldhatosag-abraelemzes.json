@@ -27,7 +27,12 @@
     "id": "0",
     "kind": "text",
     "prompt": "Melyik anyag oldhatósága csökken a hőmérséklet emelésével?",
-    "answer": ["Ca(OH)₂", "Ca(OH)2", "kalcium-hidroxid", "kalcium hidroxid"],
+    "answer": [
+      "Ca(OH)₂",
+      "Ca(OH)2",
+      "kalcium-hidroxid",
+      "kalcium hidroxid"
+    ],
     "caseSensitive": true,
     "maxWords": 2,
     "category": "szovegertelmezes",
@@ -38,7 +43,11 @@
       "id": "1",
       "kind": "text",
       "prompt": "Hány gramm kálium-nitrát oldható fel 50 g vízben 20 °C-on?",
-      "answer": ["16 g", "16", "16 gramm"],
+      "answer": [
+        "16 g",
+        "16",
+        "16 gramm"
+      ],
       "maxWords": 2,
       "category": "oldatok-szamitas",
       "explanation": "Helyes: 16 g. Az oldhatóság 100 g vízre 32 g, az oldott anyag tömege arányos a víz tömegével: 50 g vízben 32 · 50/100 = 16 g oldódik."
@@ -55,7 +64,11 @@
       "id": "3",
       "kind": "text",
       "prompt": "Mekkora a tömege a 80 °C-on 100 g vízzel készített telített kálium-nitrát-oldatnak?",
-      "answer": ["269 g", "269", "269 gramm"],
+      "answer": [
+        "269 g",
+        "269",
+        "269 gramm"
+      ],
       "maxWords": 2,
       "category": "oldatok-szamitas",
       "explanation": "Helyes: 269 g. Az oldat tömege az oldószer és az oldott anyag tömegének összege: 100 g víz + 169 g KNO₃ = 269 g."
@@ -64,7 +77,11 @@
       "id": "4",
       "kind": "text",
       "prompt": "Hány gramm kálium-nitrát válik ki, ha ezt a 80 °C-os telített oldatot (100 g vízzel) 20 °C-ra hűtjük?",
-      "answer": ["137 g", "137", "137 gramm"],
+      "answer": [
+        "137 g",
+        "137",
+        "137 gramm"
+      ],
       "maxWords": 2,
       "category": "oldatok-szamitas",
       "explanation": "Helyes: 137 g. 100 g víz 20 °C-on már csak 32 g KNO₃-ot tart oldatban, a különbség kristályosan kiválik: 169 − 32 = 137 g. A víz mennyisége közben nem változik."
@@ -74,18 +91,30 @@
       "kind": "choice",
       "prompt": "Mekkora a 20 °C-os telített nátrium-klorid-oldat tömegszázalékos összetétele?",
       "options": [
-        { "key": "A", "text": "36,0 %" },
-        { "key": "B", "text": "26,5 %" },
-        { "key": "C", "text": "56,3 %" },
-        { "key": "D", "text": "3,6 %" }
+        {
+          "key": "A",
+          "text": "36,0 %"
+        },
+        {
+          "key": "B",
+          "text": "3,6 %"
+        },
+        {
+          "key": "C",
+          "text": "56,3 %"
+        },
+        {
+          "key": "D",
+          "text": "26,5 %"
+        }
       ],
-      "answer": "B",
+      "answer": "D",
       "category": "oldatok-szamitas",
-      "explanation": "Helyes: B. A tömegszázalékot az oldat tömegére kell vonatkoztatni: 36 g só 136 g oldatban van, 36/136 · 100 = 26,5 %.",
+      "explanation": "Helyes: D. A tömegszázalékot az oldat tömegére kell vonatkoztatni: 36 g só 136 g oldatban van, 36/136 · 100 = 26,5 %.",
       "wrongOptions": {
         "A": "A 36 g az oldhatóság 100 g vízre, nem 100 g oldatra vonatkozik – ez a leggyakoribb hiba.",
-        "C": "36/64 értelmetlen hányados; a 64 g sehol nem szerepel az adatokban.",
-        "D": "Nagyságrendi hiba: 3,6 % a 36 g só 1000 g-ra vonatkoztatott aránya lenne; a helyes hányados 36/136 = 0,265."
+        "B": "Nagyságrendi hiba: 3,6 % a 36 g só 1000 g-ra vonatkoztatott aránya lenne; a helyes hányados 36/136 = 0,265.",
+        "C": "36/64 értelmetlen hányados; a 64 g sehol nem szerepel az adatokban."
       }
     },
     {
@@ -100,7 +129,11 @@
       "id": "7",
       "kind": "text",
       "prompt": "Legalább hány gramm 80 °C-os víz kell 102 g kálium-klorid feloldásához?",
-      "answer": ["200 g", "200", "200 gramm"],
+      "answer": [
+        "200 g",
+        "200",
+        "200 gramm"
+      ],
       "maxWords": 2,
       "category": "oldatok-szamitas",
       "explanation": "Helyes: 200 g. 80 °C-on 100 g víz 51 g KCl-t old, 102 g KCl-hoz kétszer annyi, 200 g víz szükséges (102/51 = 2)."
@@ -110,23 +143,38 @@
       "kind": "choice",
       "prompt": "Mekkora a 20 °C-os telített nátrium-klorid-oldat anyagmennyiség-koncentrációja, ha sűrűsége 1,20 g/cm³?",
       "options": [
-        { "key": "A", "text": "kb. 5,4 mol/dm³" },
-        { "key": "B", "text": "kb. 6,2 mol/dm³" },
-        { "key": "C", "text": "kb. 0,62 mol/dm³" },
-        { "key": "D", "text": "kb. 4,5 mol/dm³" }
+        {
+          "key": "A",
+          "text": "kb. 0,62 mol/dm³"
+        },
+        {
+          "key": "B",
+          "text": "kb. 6,2 mol/dm³"
+        },
+        {
+          "key": "C",
+          "text": "kb. 5,4 mol/dm³"
+        },
+        {
+          "key": "D",
+          "text": "kb. 4,5 mol/dm³"
+        }
       ],
-      "answer": "A",
+      "answer": "C",
       "category": "oldatok-szamitas",
-      "explanation": "Helyes: A. 136 g oldat térfogata V = m/ρ = 136 g / 1,20 g/cm³ = 113,3 cm³ = 0,1133 dm³; n(NaCl) = 36 g / 58,5 g/mol = 0,615 mol; c = 0,615 mol / 0,1133 dm³ = 5,43 mol/dm³.",
+      "explanation": "Helyes: C. 136 g oldat térfogata V = m/ρ = 136 g / 1,20 g/cm³ = 113,3 cm³ = 0,1133 dm³; n(NaCl) = 36 g / 58,5 g/mol = 0,615 mol; c = 0,615 mol / 0,1133 dm³ = 5,43 mol/dm³.",
       "wrongOptions": {
+        "A": "Tízszeres hiba: a térfogatot cm³-ben hagyva vagy a sűrűséget rosszul alkalmazva kaphatjuk.",
         "B": "Ezt kapjuk, ha a 36 g sót a 100 g víz térfogatára (0,1 dm³) vonatkoztatjuk, nem az oldatéra.",
-        "C": "Tízszeres hiba: a térfogatot cm³-ben hagyva vagy a sűrűséget rosszul alkalmazva kaphatjuk.",
         "D": "Ezt kapjuk, ha a sűrűséget figyelmen kívül hagyjuk, és a 136 g oldat térfogatát 136 cm³-nek vesszük: 0,615 mol / 0,136 dm³ = 4,5 mol/dm³."
       }
     }
   ],
   "glossary": [
-    { "term": "átkristályosítás", "meaning": "tisztítási eljárás: forró telített oldat lehűtésekor a tiszta anyag kikristályosodik, a szennyezők oldatban maradnak" }
+    {
+      "term": "átkristályosítás",
+      "meaning": "tisztítási eljárás: forró telített oldat lehűtésekor a tiszta anyag kikristályosodik, a szennyezők oldatban maradnak"
+    }
   ],
   "suggestedMinutes": 12
 }

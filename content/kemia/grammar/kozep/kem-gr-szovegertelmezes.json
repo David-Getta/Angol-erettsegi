@@ -116,11 +116,11 @@
       "options": [
         {
           "key": "A",
-          "text": "AgNO₃ + NaCl → AgCl + NaNO₃"
+          "text": "Ag⁺ + Cl⁻ → AgCl"
         },
         {
           "key": "B",
-          "text": "Ag⁺ + Cl⁻ → AgCl"
+          "text": "AgNO₃ + NaCl → AgCl + NaNO₃"
         },
         {
           "key": "C",
@@ -131,11 +131,11 @@
           "text": "ezüst-klorid csapadék"
         }
       ],
-      "answer": "B",
+      "answer": "A",
       "category": "szovegertelmezes",
-      "explanation": "Helyes: B. Az ionegyenlet csak a ténylegesen átalakuló ionokat tartalmazza; a Na⁺ és a NO₃⁻ néző ion.",
+      "explanation": "Helyes: A. Az ionegyenlet csak a ténylegesen átalakuló ionokat tartalmazza; a Na⁺ és a NO₃⁻ néző ion.",
       "wrongOptions": {
-        "A": "Ez molekulaegyenlet, nem ionegyenlet.",
+        "B": "Ez molekulaegyenlet, nem ionegyenlet.",
         "C": "A néző ionokat nem írjuk fel, és a NaNO₃ az oldatban ionjaira disszociálva marad.",
         "D": "Ez a tapasztalat leírása, nem egyenlet."
       }
@@ -151,23 +151,23 @@
         },
         {
           "key": "B",
-          "text": "25,4 %"
+          "text": "66,0 %"
         },
         {
           "key": "C",
-          "text": "66,0 %"
+          "text": "25,4 %"
         },
         {
           "key": "D",
           "text": "51,5 %"
         }
       ],
-      "answer": "B",
+      "answer": "C",
       "category": "szovegertelmezes",
       "explanation": "Helyes: 25,4 %. Az adat 100 g vízre vonatkozik: w = 34,0 / 134,0 · 100 % = 25,4 %.",
       "wrongOptions": {
         "A": "Ez csak akkor lenne igaz, ha az adat 100 g oldatra vonatkozna.",
-        "C": "A 66,0 a 100 − 34,0 különbség, ennek nincs jelentése.",
+        "B": "A 66,0 a 100 − 34,0 különbség, ennek nincs jelentése.",
         "D": "Az 51,5 a 34,0 / 66,0 hányados – rossz viszonyítás."
       }
     },
@@ -229,23 +229,23 @@
         },
         {
           "key": "B",
-          "text": "vanádium(V)-oxidot"
+          "text": "vasat"
         },
         {
           "key": "C",
-          "text": "vasat"
+          "text": "vanádium(V)-oxidot"
         },
         {
           "key": "D",
           "text": "nem használnak katalizátort"
         }
       ],
-      "answer": "B",
+      "answer": "C",
       "category": "szovegertelmezes",
       "explanation": "Helyes: vanádium(V)-oxidot (V₂O₅) – a szöveg ezt adja meg.",
       "wrongOptions": {
         "A": "Régen valóban platinát is használtak, de a kérdés a szövegben leírt eljárásra vonatkozik.",
-        "C": "Vaskatalizátort az ammóniaszintézisben használnak.",
+        "B": "Vaskatalizátort az ammóniaszintézisben használnak.",
         "D": "A szöveg kifejezetten katalizátort említ."
       }
     },
@@ -260,7 +260,7 @@
         },
         {
           "key": "B",
-          "text": "bután-2-ol"
+          "text": "dietil-éter"
         },
         {
           "key": "C",
@@ -268,16 +268,16 @@
         },
         {
           "key": "D",
-          "text": "dietil-éter"
+          "text": "bután-2-ol"
         }
       ],
-      "answer": "B",
+      "answer": "D",
       "category": "szovegertelmezes",
       "explanation": "Helyes: bután-2-ol. A nátriummal való reakció hidroxilcsoportot jelez, a ketonná oxidálódás szekunder alkoholt – a C₄-alkoholok közül ez az egyetlen szekunder.",
       "wrongOptions": {
         "A": "Primer alkohol, enyhe oxidációval aldehid (butanal) lesz belőle.",
-        "C": "Tercier alkohol, enyhe körülmények között nem oxidálódik.",
-        "D": "Az éterben nincs hidroxilcsoport, nátriummal nem reagál."
+        "B": "Az éterben nincs hidroxilcsoport, nátriummal nem reagál.",
+        "C": "Tercier alkohol, enyhe körülmények között nem oxidálódik."
       }
     }
   ],

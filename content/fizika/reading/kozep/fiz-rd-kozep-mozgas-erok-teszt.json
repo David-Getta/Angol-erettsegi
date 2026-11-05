@@ -32,16 +32,16 @@
       "kind": "choice",
       "prompt": "Egy test szabadon esik (a légellenállás elhanyagolható). Melyik állítás igaz a mozgására?",
       "options": [
-        { "key": "A", "text": "A sebessége állandó." },
-        { "key": "B", "text": "A gyorsulása állandó." },
+        { "key": "A", "text": "A gyorsulása állandó." },
+        { "key": "B", "text": "A sebessége állandó." },
         { "key": "C", "text": "A gyorsulása egyenletesen nő." },
         { "key": "D", "text": "Az első másodpercben nagyobb a gyorsulása, mint később." }
       ],
-      "answer": "B",
+      "answer": "A",
       "category": "torvenyek",
-      "explanation": "Helyes: B. A szabadesés egyenletesen gyorsuló mozgás: a gyorsulás a nehézségi gyorsulás (g ≈ 9,81 m/s²), amely a Föld felszíne közelében állandó. A sebesség egyenletesen nő (v = g·t), a gyorsulás nem változik.",
+      "explanation": "Helyes: A. A szabadesés egyenletesen gyorsuló mozgás: a gyorsulás a nehézségi gyorsulás (g ≈ 9,81 m/s²), amely a Föld felszíne közelében állandó. A sebesség egyenletesen nő (v = g·t), a gyorsulás nem változik.",
       "wrongOptions": {
-        "A": "Szabadesésnél a sebesség másodpercenként kb. 10 m/s-mal nő, nem állandó – az állandó mennyiség a gyorsulás.",
+        "B": "Szabadesésnél a sebesség másodpercenként kb. 10 m/s-mal nő, nem állandó – az állandó mennyiség a gyorsulás.",
         "C": "A g nem változik az esés közben; az, ami egyenletesen nő, a sebesség.",
         "D": "A nehézségi gyorsulás független az eltelt időtől: az első és a tizedik másodpercben is ugyanannyi."
       }
@@ -71,17 +71,17 @@
       "prompt": "Egy ló húzza a szekeret. Mit mond Newton III. törvénye a ló és a szekér közötti erőkről?",
       "options": [
         { "key": "A", "text": "A ló nagyobb erővel hat a szekérre, mint a szekér a lóra, különben a szekér nem indulna el." },
-        { "key": "B", "text": "A szekér ugyanolyan nagy, ellentétes irányú erővel hat a lóra, mint a ló a szekérre." },
+        { "key": "B", "text": "Az erő és az ellenerő ugyanarra a testre hat, ezért kiegyenlítik egymást." },
         { "key": "C", "text": "A szekér csak akkor hat vissza a lóra, ha már mozgásban van." },
-        { "key": "D", "text": "Az erő és az ellenerő ugyanarra a testre hat, ezért kiegyenlítik egymást." }
+        { "key": "D", "text": "A szekér ugyanolyan nagy, ellentétes irányú erővel hat a lóra, mint a ló a szekérre." }
       ],
-      "answer": "B",
+      "answer": "D",
       "category": "torvenyek",
-      "explanation": "Helyes: B. A hatás–ellenhatás törvénye szerint két test kölcsönhatásában az erők mindig egyenlő nagyságúak és ellentétes irányúak, de különböző testekre hatnak. A szekér azért indul el, mert a rá ható erők eredője (a ló húzóereje mínusz a súrlódás) nem nulla – ez Newton II. törvénye, nem a III.",
+      "explanation": "Helyes: D. A hatás–ellenhatás törvénye szerint két test kölcsönhatásában az erők mindig egyenlő nagyságúak és ellentétes irányúak, de különböző testekre hatnak. A szekér azért indul el, mert a rá ható erők eredője (a ló húzóereje mínusz a súrlódás) nem nulla – ez Newton II. törvénye, nem a III.",
       "wrongOptions": {
         "A": "A kölcsönhatás két ereje mindig egyenlő nagyságú; a szekér elindulását a RÁ ható erők eredője dönti el, nem a ló–szekér erőpár különbsége.",
-        "C": "Az erő és az ellenerő mindig egyszerre lép fel, nyugalomban is (pl. az asztalon fekvő könyv is nyomja az asztalt, és az asztal is a könyvet).",
-        "D": "Az erő és az ellenerő két KÜLÖNBÖZŐ testre hat, ezért nem egyenlíthetik ki egymást."
+        "B": "Az erő és az ellenerő két KÜLÖNBÖZŐ testre hat, ezért nem egyenlíthetik ki egymást.",
+        "C": "Az erő és az ellenerő mindig egyszerre lép fel, nyugalomban is (pl. az asztalon fekvő könyv is nyomja az asztalt, és az asztal is a könyvet)."
       }
     },
     {
@@ -90,17 +90,17 @@
       "prompt": "Egy test egyenletes körmozgást végez. Melyik mennyisége állandó?",
       "options": [
         { "key": "A", "text": "A sebességvektora." },
-        { "key": "B", "text": "A sebességének nagysága." },
+        { "key": "B", "text": "Nincs gyorsulása, ezért minden mennyisége állandó." },
         { "key": "C", "text": "A gyorsulásvektora." },
-        { "key": "D", "text": "Nincs gyorsulása, ezért minden mennyisége állandó." }
+        { "key": "D", "text": "A sebességének nagysága." }
       ],
-      "answer": "B",
+      "answer": "D",
       "category": "fogalmak",
-      "explanation": "Helyes: B. Egyenletes körmozgásnál a sebesség nagysága állandó, de az iránya folyamatosan változik (mindig a kör érintőjének irányába mutat). Mivel a sebességvektor változik, a testnek van gyorsulása: a centripetális gyorsulás (a = v²/r), amely mindig a kör középpontja felé mutat.",
+      "explanation": "Helyes: D. Egyenletes körmozgásnál a sebesség nagysága állandó, de az iránya folyamatosan változik (mindig a kör érintőjének irányába mutat). Mivel a sebességvektor változik, a testnek van gyorsulása: a centripetális gyorsulás (a = v²/r), amely mindig a kör középpontja felé mutat.",
       "wrongOptions": {
         "A": "A sebesség iránya minden pillanatban más (érintő irányú), így a sebességvektor változik.",
-        "C": "A centripetális gyorsulás nagysága állandó, de iránya mindig a középpont felé mutat, azaz folyton változik.",
-        "D": "Az irányváltozás is gyorsulás: a körmozgást a középpont felé mutató (centripetális) gyorsulás tartja fenn."
+        "B": "Az irányváltozás is gyorsulás: a körmozgást a középpont felé mutató (centripetális) gyorsulás tartja fenn.",
+        "C": "A centripetális gyorsulás nagysága állandó, de iránya mindig a középpont felé mutat, azaz folyton változik."
       }
     },
     {
@@ -165,16 +165,16 @@
       "kind": "choice",
       "prompt": "Egy űrhajós tömege a Földön 60 kg. A Holdon a nehézségi gyorsulás a földinek kb. hatoda. Mi igaz a Holdon?",
       "options": [
-        { "key": "A", "text": "Tömege 10 kg, súlya kb. 100 N." },
-        { "key": "B", "text": "Tömege 60 kg, súlya kb. 100 N." },
+        { "key": "A", "text": "Tömege 60 kg, súlya kb. 100 N." },
+        { "key": "B", "text": "Tömege 10 kg, súlya kb. 100 N." },
         { "key": "C", "text": "Tömege 60 kg, súlya kb. 600 N." },
         { "key": "D", "text": "Tömege 10 kg, súlya kb. 600 N." }
       ],
-      "answer": "B",
+      "answer": "A",
       "category": "fogalmak",
-      "explanation": "Helyes: B. A tömeg a test tehetetlenségének mértéke, mindenhol ugyanannyi (60 kg). A súly a nehézségi erő: G = m·g. A Földön 60 kg · 10 m/s² ≈ 600 N, a Holdon g kb. 1,6 m/s², ezért a súly kb. 600 N / 6 ≈ 100 N.",
+      "explanation": "Helyes: A. A tömeg a test tehetetlenségének mértéke, mindenhol ugyanannyi (60 kg). A súly a nehézségi erő: G = m·g. A Földön 60 kg · 10 m/s² ≈ 600 N, a Holdon g kb. 1,6 m/s², ezért a súly kb. 600 N / 6 ≈ 100 N.",
       "wrongOptions": {
-        "A": "A tömeg nem változik a helytől függően – csak a súly csökken a hatodára.",
+        "B": "A tömeg nem változik a helytől függően – csak a súly csökken a hatodára.",
         "C": "600 N a földi súly; a Holdon a kisebb g miatt a súly is kisebb.",
         "D": "Mindkét érték rossz: a tömeg marad 60 kg, a súly pedig csökken, nem marad 600 N."
       }

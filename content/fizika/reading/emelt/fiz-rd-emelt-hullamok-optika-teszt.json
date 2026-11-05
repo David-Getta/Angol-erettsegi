@@ -18,13 +18,13 @@
     "prompt": "Mikor léphet fel teljes visszaverődés két átlátszó közeg határán?",
     "options": [
       { "key": "A", "text": "Ha a fény optikailag ritkább közegből sűrűbbe lép." },
-      { "key": "B", "text": "Ha a fény optikailag sűrűbb közegből ritkábba lép, és a beesési szög nagyobb a határszögnél." },
+      { "key": "B", "text": "Csak merőleges beesésnél." },
       { "key": "C", "text": "Mindig, ha a beesési szög 45°-nál nagyobb." },
-      { "key": "D", "text": "Csak merőleges beesésnél." }
+      { "key": "D", "text": "Ha a fény optikailag sűrűbb közegből ritkábba lép, és a beesési szög nagyobb a határszögnél." }
     ],
-    "answer": "B",
+    "answer": "D",
     "category": "torvenyek",
-    "explanation": "Helyes: B. Sűrűbb közegből ritkábba lépve a fény a merőlegestől törik; a határszögnél (sin α_h = n_ritkább/n_sűrűbb) a törési szög eléri a 90°-ot, ennél nagyobb beesési szögnél a fény már nem lép ki, teljesen visszaverődik (pl. optikai szálban)."
+    "explanation": "Helyes: D. Sűrűbb közegből ritkábba lépve a fény a merőlegestől törik; a határszögnél (sin α_h = n_ritkább/n_sűrűbb) a törési szög eléri a 90°-ot, ennél nagyobb beesési szögnél a fény már nem lép ki, teljesen visszaverődik (pl. optikai szálban)."
   },
   "items": [
     {
@@ -70,16 +70,16 @@
       "kind": "choice",
       "prompt": "Egy két végén rögzített, 0,60 m hosszú húron a hullám terjedési sebessége 240 m/s. Mekkora a húr alaphangjának frekvenciája?",
       "options": [
-        { "key": "A", "text": "100 Hz" },
-        { "key": "B", "text": "200 Hz" },
+        { "key": "A", "text": "200 Hz" },
+        { "key": "B", "text": "100 Hz" },
         { "key": "C", "text": "400 Hz" },
         { "key": "D", "text": "144 Hz" }
       ],
-      "answer": "B",
+      "answer": "A",
       "category": "kepletek",
-      "explanation": "Helyes: B. A két végén rögzített húron a végeken csomópont van; az alaphangnál a húr hossza fél hullámhossz: λ = 2L = 1,2 m. A frekvencia f = c/λ = 240 m/s / 1,2 m = 200 Hz.",
+      "explanation": "Helyes: A. A két végén rögzített húron a végeken csomópont van; az alaphangnál a húr hossza fél hullámhossz: λ = 2L = 1,2 m. A frekvencia f = c/λ = 240 m/s / 1,2 m = 200 Hz.",
       "wrongOptions": {
-        "A": "100 Hz-et λ = 4L-lel kapnánk; ez az egyik végén zárt síp alaphangjára igaz, a két végén rögzített húrra nem.",
+        "B": "100 Hz-et λ = 4L-lel kapnánk; ez az egyik végén zárt síp alaphangjára igaz, a két végén rögzített húrra nem.",
         "C": "400 Hz-et λ = L-lel kapnánk, ez a húr első felhangja (második harmonikusa).",
         "D": "144 = c·L: a sebességet szorozta a hosszal; a frekvencia a sebesség és a hullámhossz hányadosa."
       }
@@ -89,16 +89,16 @@
       "kind": "choice",
       "prompt": "Egy szirénázó mentőautó közeledik, majd elhalad mellettünk és távolodik. Milyennek halljuk a sziréna hangmagasságát a kibocsátotthoz képest?",
       "options": [
-        { "key": "A", "text": "Végig magasabbnak." },
-        { "key": "B", "text": "Közeledéskor magasabbnak, távolodáskor mélyebbnek." },
+        { "key": "A", "text": "Közeledéskor magasabbnak, távolodáskor mélyebbnek." },
+        { "key": "B", "text": "Végig magasabbnak." },
         { "key": "C", "text": "Közeledéskor mélyebbnek, távolodáskor magasabbnak." },
         { "key": "D", "text": "Ugyanolyannak, csak a hangerő változik." }
       ],
-      "answer": "B",
+      "answer": "A",
       "category": "jelenseg-magyarazat",
-      "explanation": "Helyes: B. Ez a Doppler-jelenség: a közeledő forrás hullámfrontjai sűrűbben érkeznek hozzánk (rövidebb hullámhossz, nagyobb észlelt frekvencia), a távolodóé ritkábban. Az elhaladás pillanatában az észlelt hangmagasság hirtelen lecsökken.",
+      "explanation": "Helyes: A. Ez a Doppler-jelenség: a közeledő forrás hullámfrontjai sűrűbben érkeznek hozzánk (rövidebb hullámhossz, nagyobb észlelt frekvencia), a távolodóé ritkábban. Az elhaladás pillanatában az észlelt hangmagasság hirtelen lecsökken.",
       "wrongOptions": {
-        "A": "Távolodáskor a hullámfrontok ritkábban érkeznek, ezért az észlelt frekvencia kisebb a kibocsátottnál.",
+        "B": "Távolodáskor a hullámfrontok ritkábban érkeznek, ezért az észlelt frekvencia kisebb a kibocsátottnál.",
         "C": "Éppen fordítva: a közeledés növeli, a távolodás csökkenti az észlelt frekvenciát.",
         "D": "A hangerő is változik, de a mozgó forrás az észlelt frekvenciát is megváltoztatja – ez jól hallható."
       }
@@ -109,17 +109,17 @@
       "prompt": "Young kétréses kísérletében a két rés távolságát a kétszeresére növeljük (a hullámhossz és az ernyő távolsága változatlan). Mi történik az ernyőn látható interferenciacsíkokkal?",
       "options": [
         { "key": "A", "text": "A szomszédos világos csíkok távolsága a kétszeresére nő." },
-        { "key": "B", "text": "A szomszédos világos csíkok távolsága a felére csökken." },
+        { "key": "B", "text": "A csíkok eltűnnek, mert a fény nem lesz koherens." },
         { "key": "C", "text": "A csíkok távolsága nem változik." },
-        { "key": "D", "text": "A csíkok eltűnnek, mert a fény nem lesz koherens." }
+        { "key": "D", "text": "A szomszédos világos csíkok távolsága a felére csökken." }
       ],
-      "answer": "B",
+      "answer": "D",
       "category": "torvenyek",
-      "explanation": "Helyes: B. Kis szögeknél a szomszédos maximumok távolsága Δx = λ·L/d, ahol d a résköz, L az ernyő távolsága. Kétszeres d mellett Δx a felére csökken, a csíkok sűrűbbek lesznek.",
+      "explanation": "Helyes: D. Kis szögeknél a szomszédos maximumok távolsága Δx = λ·L/d, ahol d a résköz, L az ernyő távolsága. Kétszeres d mellett Δx a felére csökken, a csíkok sűrűbbek lesznek.",
       "wrongOptions": {
         "A": "A csíktávolság a résközzel FORDÍTOTTAN arányos; a hullámhossz vagy az ernyőtávolság növelése növelné.",
-        "C": "A csíktávolság függ a résköztől (Δx = λ·L/d).",
-        "D": "A két rést ugyanaz a hullámfront világítja meg, így a koherencia megmarad; csak a csíkok sűrűsége változik."
+        "B": "A két rést ugyanaz a hullámfront világítja meg, így a koherencia megmarad; csak a csíkok sűrűsége változik.",
+        "C": "A csíktávolság függ a résköztől (Δx = λ·L/d)."
       }
     },
     {

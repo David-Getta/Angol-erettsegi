@@ -147,17 +147,17 @@
       "prompt": "Mi igaz az atommag tömegére?",
       "options": [
         { "key": "A", "text": "Nagyobb, mint az alkotó szabad protonok és neutronok tömegének összege." },
-        { "key": "B", "text": "Kisebb, mint az alkotó szabad nukleonok tömegének összege; a különbség c²-szerese a mag kötési energiája." },
+        { "key": "B", "text": "Kisebb a nukleonok tömegének összegénél, és a különbség az elektronok tömege." },
         { "key": "C", "text": "Pontosan egyenlő a nukleonok tömegének összegével." },
-        { "key": "D", "text": "Kisebb a nukleonok tömegének összegénél, és a különbség az elektronok tömege." }
+        { "key": "D", "text": "Kisebb, mint az alkotó szabad nukleonok tömegének összege; a különbség c²-szerese a mag kötési energiája." }
       ],
-      "answer": "B",
+      "answer": "D",
       "category": "fogalmak",
-      "explanation": "Helyes: B. A mag kialakulásakor energia szabadul fel, ezért a kötött rendszer tömege kisebb: ez a tömeghiány (Δm). A kötési energia E_k = Δm·c², ennyi energia kellene a mag nukleonjaira bontásához.",
+      "explanation": "Helyes: D. A mag kialakulásakor energia szabadul fel, ezért a kötött rendszer tömege kisebb: ez a tömeghiány (Δm). A kötési energia E_k = Δm·c², ennyi energia kellene a mag nukleonjaira bontásához.",
       "wrongOptions": {
         "A": "Ha nagyobb lenne, a mag magától szétesne nukleonjaira; a stabil magok tömege kisebb.",
-        "C": "A pontos tömegmérések mérhető tömeghiányt mutatnak; erre épül a magenergia felszabadulásának magyarázata.",
-        "D": "Az elektronok nem részei a magnak; a tömeghiány a nukleonok kötési energiájának megfelelő tömeg."
+        "B": "Az elektronok nem részei a magnak; a tömeghiány a nukleonok kötési energiájának megfelelő tömeg.",
+        "C": "A pontos tömegmérések mérhető tömeghiányt mutatnak; erre épül a magenergia felszabadulásának magyarázata."
       }
     },
     {

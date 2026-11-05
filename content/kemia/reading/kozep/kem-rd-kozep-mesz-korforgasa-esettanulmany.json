@@ -43,10 +43,22 @@
       "kind": "choice",
       "prompt": "Mi az égetett mész képlete?",
       "options": [
-        { "key": "A", "text": "CaCO₃" },
-        { "key": "B", "text": "CaO" },
-        { "key": "C", "text": "Ca(OH)₂" },
-        { "key": "D", "text": "Ca(HCO₃)₂" }
+        {
+          "key": "A",
+          "text": "CaCO₃"
+        },
+        {
+          "key": "B",
+          "text": "CaO"
+        },
+        {
+          "key": "C",
+          "text": "Ca(OH)₂"
+        },
+        {
+          "key": "D",
+          "text": "Ca(HCO₃)₂"
+        }
       ],
       "answer": "B",
       "category": "anyagismeret",
@@ -61,7 +73,12 @@
       "id": "2",
       "kind": "text",
       "prompt": "Írd fel az oltott mész képletét!",
-      "answer": ["Ca(OH)₂", "Ca(OH)2", "kalcium-hidroxid", "kalcium hidroxid"],
+      "answer": [
+        "Ca(OH)₂",
+        "Ca(OH)2",
+        "kalcium-hidroxid",
+        "kalcium hidroxid"
+      ],
       "caseSensitive": true,
       "maxWords": 2,
       "category": "anyagismeret",
@@ -80,10 +97,22 @@
       "kind": "choice",
       "prompt": "A habarcs megkötése során melyik anyag épül be a levegőből?",
       "options": [
-        { "key": "A", "text": "oxigén" },
-        { "key": "B", "text": "nitrogén" },
-        { "key": "C", "text": "szén-dioxid" },
-        { "key": "D", "text": "vízgőz" }
+        {
+          "key": "A",
+          "text": "oxigén"
+        },
+        {
+          "key": "B",
+          "text": "nitrogén"
+        },
+        {
+          "key": "C",
+          "text": "szén-dioxid"
+        },
+        {
+          "key": "D",
+          "text": "vízgőz"
+        }
       ],
       "answer": "C",
       "category": "szovegertelmezes",
@@ -98,7 +127,11 @@
       "id": "5",
       "kind": "text",
       "prompt": "Hány gramm szén-dioxid keletkezik 200 g kalcium-karbonát teljes hőbontásakor?",
-      "answer": ["88 g", "88", "88 gramm"],
+      "answer": [
+        "88 g",
+        "88",
+        "88 gramm"
+      ],
       "maxWords": 2,
       "category": "anyagmennyiseg",
       "explanation": "Helyes: 88 g. A szöveg szerint 100 g (1 mol) CaCO₃-ból 44 g CO₂ keletkezik, így 200 g-ból (2 mol) kétszer annyi: 2 · 44 g = 88 g. Ellenőrzés: M(CO₂) = 12 + 2 · 16 = 44 g/mol."
@@ -116,24 +149,42 @@
       "kind": "choice",
       "prompt": "Miért oldja a szén-dioxid-tartalmú csapadékvíz a mészkövet?",
       "options": [
-        { "key": "A", "text": "Mert a kalcium-karbonát tiszta vízben is jól oldódik." },
-        { "key": "B", "text": "Mert vízben oldódó kalcium-hidrogén-karbonát keletkezik." },
-        { "key": "C", "text": "Mert a szén-dioxid redukálja a kalciumot fémmé." },
-        { "key": "D", "text": "Mert a reakció során a hőfejlődés megolvasztja a kőzetet." }
+        {
+          "key": "A",
+          "text": "Mert a kalcium-karbonát tiszta vízben is jól oldódik."
+        },
+        {
+          "key": "B",
+          "text": "Mert a reakció során a hőfejlődés megolvasztja a kőzetet."
+        },
+        {
+          "key": "C",
+          "text": "Mert a szén-dioxid redukálja a kalciumot fémmé."
+        },
+        {
+          "key": "D",
+          "text": "Mert vízben oldódó kalcium-hidrogén-karbonát keletkezik."
+        }
       ],
-      "answer": "B",
+      "answer": "D",
       "category": "reakciotipus",
-      "explanation": "Helyes: B. A szénsavas víz a vízben oldhatatlan karbonátot oldható hidrogén-karbonáttá alakítja: CaCO₃ + CO₂ + H₂O → Ca(HCO₃)₂. Ez a karsztosodás alapja.",
+      "explanation": "Helyes: D. A szénsavas víz a vízben oldhatatlan karbonátot oldható hidrogén-karbonáttá alakítja: CaCO₃ + CO₂ + H₂O → Ca(HCO₃)₂. Ez a karsztosodás alapja.",
       "wrongOptions": {
         "A": "A szöveg első mondata szerint a kalcium-karbonát vízben gyakorlatilag nem oldódik.",
-        "C": "A folyamat nem redoxireakció: a kalcium oxidációs száma +2 marad, fém nem keletkezik.",
-        "D": "A folyamat során nincs jelentős hőfejlődés, és a mészkő olvadáspontja igen magas; az oldódás kémiai reakció."
+        "B": "A folyamat során nincs jelentős hőfejlődés, és a mészkő olvadáspontja igen magas; az oldódás kémiai reakció.",
+        "C": "A folyamat nem redoxireakció: a kalcium oxidációs száma +2 marad, fém nem keletkezik."
       }
     }
   ],
   "glossary": [
-    { "term": "endoterm", "meaning": "hőt felvevő (hőelnyelő) folyamat" },
-    { "term": "hidrogén-karbonát", "meaning": "a HCO₃⁻ iont tartalmazó só" }
+    {
+      "term": "endoterm",
+      "meaning": "hőt felvevő (hőelnyelő) folyamat"
+    },
+    {
+      "term": "hidrogén-karbonát",
+      "meaning": "a HCO₃⁻ iont tartalmazó só"
+    }
   ],
   "suggestedMinutes": 10
 }

@@ -77,11 +77,11 @@
       "options": [
         {
           "key": "A",
-          "text": "A hang transzverzális, a fény longitudinális hullám."
+          "text": "A hang terjedéséhez közeg kell, a fény vákuumban is terjed."
         },
         {
           "key": "B",
-          "text": "A hang terjedéséhez közeg kell, a fény vákuumban is terjed."
+          "text": "A hang transzverzális, a fény longitudinális hullám."
         },
         {
           "key": "C",
@@ -92,11 +92,11 @@
           "text": "Mindkettő mechanikai hullám, csak a sebességük különbözik."
         }
       ],
-      "answer": "B",
+      "answer": "A",
       "category": "fogalmak",
-      "explanation": "Helyes: B. A hang mechanikai (longitudinális) hullám: a közeg részecskéinek sűrűsödése-ritkulása terjed, ezért vákuumban nincs hang. A fény elektromágneses hullám, amelyhez nem kell közeg – ezért jut el hozzánk a Nap fénye az űrön át.",
+      "explanation": "Helyes: A. A hang mechanikai (longitudinális) hullám: a közeg részecskéinek sűrűsödése-ritkulása terjed, ezért vákuumban nincs hang. A fény elektromágneses hullám, amelyhez nem kell közeg – ezért jut el hozzánk a Nap fénye az űrön át.",
       "wrongOptions": {
-        "A": "Fordítva: a hang levegőben longitudinális, a fény transzverzális (elektromágneses) hullám.",
+        "B": "Fordítva: a hang levegőben longitudinális, a fény transzverzális (elektromágneses) hullám.",
         "C": "Éppen fordítva: a hangnak kell közeg, a fénynek nem.",
         "D": "A fény nem mechanikai hullám, hanem elektromágneses; az űrben is terjed."
       }
@@ -205,7 +205,7 @@
         },
         {
           "key": "B",
-          "text": "A hanghullám frekvenciájától."
+          "text": "A hang terjedési sebességétől."
         },
         {
           "key": "C",
@@ -213,16 +213,16 @@
         },
         {
           "key": "D",
-          "text": "A hang terjedési sebességétől."
+          "text": "A hanghullám frekvenciájától."
         }
       ],
-      "answer": "B",
+      "answer": "D",
       "category": "fogalmak",
-      "explanation": "Helyes: B. A hangmagasságot a frekvencia határozza meg: a nagyobb frekvenciájú hang magasabb (az emberi hallás kb. 20 Hz–20 kHz). Az amplitúdó a hangerősséget adja, a hangszín a felhangok összetételétől függ.",
+      "explanation": "Helyes: D. A hangmagasságot a frekvencia határozza meg: a nagyobb frekvenciájú hang magasabb (az emberi hallás kb. 20 Hz–20 kHz). Az amplitúdó a hangerősséget adja, a hangszín a felhangok összetételétől függ.",
       "wrongOptions": {
         "A": "Az amplitúdó a hang ERŐSSÉGÉT (hangosságát) határozza meg.",
-        "C": "A méret csak közvetve számít (egy nagyobb húr mélyebben szól), a fizikai mennyiség a frekvencia.",
-        "D": "A terjedési sebesség a közegtől függ, és adott közegben minden frekvenciára azonos."
+        "B": "A terjedési sebesség a közegtől függ, és adott közegben minden frekvenciára azonos.",
+        "C": "A méret csak közvetve számít (egy nagyobb húr mélyebben szól), a fizikai mennyiség a frekvencia."
       }
     },
     {
@@ -236,7 +236,7 @@
         },
         {
           "key": "B",
-          "text": "Az üveg törésmutatója a különböző színű (frekvenciájú) fényekre eltérő, ezért azok különböző szögben törnek meg."
+          "text": "A fény interferál a prizma lapjain."
         },
         {
           "key": "C",
@@ -244,16 +244,16 @@
         },
         {
           "key": "D",
-          "text": "A fény interferál a prizma lapjain."
+          "text": "Az üveg törésmutatója a különböző színű (frekvenciájú) fényekre eltérő, ezért azok különböző szögben törnek meg."
         }
       ],
-      "answer": "B",
+      "answer": "D",
       "category": "jelenseg-magyarazat",
-      "explanation": "Helyes: B. Ez a diszperzió (színszórás): az üvegben a fény sebessége, így törésmutatója is függ a frekvenciától. A kék (ibolya) fény törésmutatója nagyobb, ezért erősebben törik meg, mint a vörös; a prizma két ferde lapja a különbséget felnagyítja, és megjelenik a színkép.",
+      "explanation": "Helyes: D. Ez a diszperzió (színszórás): az üvegben a fény sebessége, így törésmutatója is függ a frekvenciától. A kék (ibolya) fény törésmutatója nagyobb, ezért erősebben törik meg, mint a vörös; a prizma két ferde lapja a különbséget felnagyítja, és megjelenik a színkép.",
       "wrongOptions": {
         "A": "Az elnyelés gyengítené a fényt, de nem bontaná színekre.",
-        "C": "A visszaverődés szöge minden színre azonos, ezért nem okoz színekre bomlást.",
-        "D": "Interferencia-színeket vékony rétegek (szappanhártya) adnak; a prizmában a fénytörés frekvenciafüggése a magyarázat."
+        "B": "Interferencia-színeket vékony rétegek (szappanhártya) adnak; a prizmában a fénytörés frekvenciafüggése a magyarázat.",
+        "C": "A visszaverődés szöge minden színre azonos, ezért nem okoz színekre bomlást."
       }
     }
   ],

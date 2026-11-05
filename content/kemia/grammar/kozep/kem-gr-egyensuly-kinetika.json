@@ -142,7 +142,7 @@
         },
         {
           "key": "B",
-          "text": "A kiindulási anyagok felé tolja, az egyensúlyi állandó csökken."
+          "text": "Csak a reakciósebességet csökkenti."
         },
         {
           "key": "C",
@@ -150,16 +150,16 @@
         },
         {
           "key": "D",
-          "text": "Csak a reakciósebességet csökkenti."
+          "text": "A kiindulási anyagok felé tolja, az egyensúlyi állandó csökken."
         }
       ],
-      "answer": "B",
+      "answer": "D",
       "category": "egyensuly-kinetika",
-      "explanation": "Helyes: B. A reakció exoterm, így a hőmérséklet emelésekor az endoterm irány, az ammónia bomlása kerül előtérbe; az egyensúlyi állandó csökken.",
+      "explanation": "Helyes: D. A reakció exoterm, így a hőmérséklet emelésekor az endoterm irány, az ammónia bomlása kerül előtérbe; az egyensúlyi állandó csökken.",
       "wrongOptions": {
         "A": "Az ammónia képződése exoterm, a melegítés az ellentétes (endoterm) irányt segíti.",
-        "C": "A hőmérséklet az egyetlen tényező, amely magát K értékét is megváltoztatja.",
-        "D": "Melegítéskor a reakciósebesség nő, nem csökken."
+        "B": "Melegítéskor a reakciósebesség nő, nem csökken.",
+        "C": "A hőmérséklet az egyetlen tényező, amely magát K értékét is megváltoztatja."
       }
     },
     {
@@ -183,7 +183,7 @@
       "options": [
         {
           "key": "A",
-          "text": "a reakcióhőt"
+          "text": "az aktiválási energiát"
         },
         {
           "key": "B",
@@ -191,19 +191,19 @@
         },
         {
           "key": "C",
-          "text": "az aktiválási energiát"
+          "text": "a reakcióhőt"
         },
         {
           "key": "D",
           "text": "az egyensúlyi termékhozamot"
         }
       ],
-      "answer": "C",
+      "answer": "A",
       "category": "egyensuly-kinetika",
       "explanation": "Helyes: az aktiválási energiát. A katalizátor kisebb aktiválási energiájú reakcióutat nyit, ezért gyorsabb a reakció.",
       "wrongOptions": {
-        "A": "A reakcióhő csak a kiindulási és a végállapottól függ (Hess-tétel), ezt a katalizátor nem változtatja meg.",
         "B": "Az egyensúlyi állandó csak a hőmérséklettől függ.",
+        "C": "A reakcióhő csak a kiindulási és a végállapottól függ (Hess-tétel), ezt a katalizátor nem változtatja meg.",
         "D": "A katalizátor mindkét irányt egyformán gyorsítja, az egyensúlyi összetétel nem változik."
       }
     },
@@ -214,7 +214,7 @@
       "options": [
         {
           "key": "A",
-          "text": "a sósav melegítése"
+          "text": "a sósav hígítása vízzel"
         },
         {
           "key": "B",
@@ -226,16 +226,16 @@
         },
         {
           "key": "D",
-          "text": "a sósav hígítása vízzel"
+          "text": "a sósav melegítése"
         }
       ],
-      "answer": "D",
+      "answer": "A",
       "category": "egyensuly-kinetika",
-      "explanation": "Helyes: D. Hígításkor csökken az oxóniumionok koncentrációja, időegység alatt kevesebb az ütközés, a reakció lassul.",
+      "explanation": "Helyes: A. Hígításkor csökken az oxóniumionok koncentrációja, időegység alatt kevesebb az ütközés, a reakció lassul.",
       "wrongOptions": {
-        "A": "Magasabb hőmérsékleten több a hatásos ütközés, a reakció gyorsabb.",
         "B": "Nagyobb koncentrációnál több az ütközés, a reakció gyorsabb.",
-        "C": "A por nagyobb felületen érintkezik a savval, a reakció gyorsabb."
+        "C": "A por nagyobb felületen érintkezik a savval, a reakció gyorsabb.",
+        "D": "Magasabb hőmérsékleten több a hatásos ütközés, a reakció gyorsabb."
       }
     },
     {
@@ -258,11 +258,11 @@
       "options": [
         {
           "key": "A",
-          "text": "0,25 mol"
+          "text": "0,50 mol"
         },
         {
           "key": "B",
-          "text": "0,50 mol"
+          "text": "0,25 mol"
         },
         {
           "key": "C",
@@ -273,11 +273,11 @@
           "text": "1,0 mol"
         }
       ],
-      "answer": "B",
+      "answer": "A",
       "category": "egyensuly-kinetika",
       "explanation": "Helyes: 0,50 mol. x² / (1,0 − x)² = 1,0 → x / (1,0 − x) = 1,0 → x = 0,50 mol.",
       "wrongOptions": {
-        "A": "0,25 mol esetén K = 0,25² / 0,75² = 0,11 lenne.",
+        "B": "0,25 mol esetén K = 0,25² / 0,75² = 0,11 lenne.",
         "C": "0,75 mol esetén K = 0,75² / 0,25² = 9,0 lenne.",
         "D": "Megfordítható reakcióban a kiindulási anyag nem alakulhat át teljesen."
       }

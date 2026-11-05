@@ -125,11 +125,11 @@
       "options": [
         {
           "key": "A",
-          "text": "kilogramm"
+          "text": "newton"
         },
         {
           "key": "B",
-          "text": "newton"
+          "text": "kilogramm"
         },
         {
           "key": "C",
@@ -140,11 +140,11 @@
           "text": "kilopond"
         }
       ],
-      "answer": "B",
+      "answer": "A",
       "category": "fogalmak",
-      "explanation": "Helyes: B. A súly erő, ezért egysége a newton (N). Egy 1 kg tömegű test súlya nyugalomban a Földön kb. 9,81 N.",
+      "explanation": "Helyes: A. A súly erő, ezért egysége a newton (N). Egy 1 kg tömegű test súlya nyugalomban a Földön kb. 9,81 N.",
       "wrongOptions": {
-        "A": "A kilogramm a tömeg egysége, nem a súlyé.",
+        "B": "A kilogramm a tömeg egysége, nem a súlyé.",
         "C": "A joule a munka és az energia egysége.",
         "D": "A kilopond régi, nem SI-erőegység (≈ 9,81 N); az SI-ben a newton használatos."
       }
@@ -160,7 +160,7 @@
         },
         {
           "key": "B",
-          "text": "A hő a hőmérséklet-különbség miatt átadott energia."
+          "text": "Két egyforma hőmérsékletű test között hő áramlik."
         },
         {
           "key": "C",
@@ -168,16 +168,16 @@
         },
         {
           "key": "D",
-          "text": "Két egyforma hőmérsékletű test között hő áramlik."
+          "text": "A hő a hőmérséklet-különbség miatt átadott energia."
         }
       ],
-      "answer": "B",
+      "answer": "D",
       "category": "fogalmak",
-      "explanation": "Helyes: B. A hő energiaátadás, amely a hőmérséklet-különbség miatt történik a melegebb testről a hidegebbre; egysége a joule.",
+      "explanation": "Helyes: D. A hő energiaátadás, amely a hőmérséklet-különbség miatt történik a melegebb testről a hidegebbre; egysége a joule.",
       "wrongOptions": {
         "A": "A hőmérséklet állapotjelző, nem a „hő mennyisége”; a testnek belső energiája van.",
-        "C": "A belső energia a test állapotát jellemzi, a hő az átadott energia egy folyamatban.",
-        "D": "Azonos hőmérsékletnél hőmérsékleti egyensúly van, nincs hőáramlás."
+        "B": "Azonos hőmérsékletnél hőmérsékleti egyensúly van, nincs hőáramlás.",
+        "C": "A belső energia a test állapotát jellemzi, a hő az átadott energia egy folyamatban."
       }
     },
     {
@@ -249,11 +249,11 @@
       "options": [
         {
           "key": "A",
-          "text": "5 m/s és 400 m"
+          "text": "5 m/s és 0 m"
         },
         {
           "key": "B",
-          "text": "5 m/s és 0 m"
+          "text": "5 m/s és 400 m"
         },
         {
           "key": "C",
@@ -264,11 +264,11 @@
           "text": "0 m/s és 400 m"
         }
       ],
-      "answer": "B",
+      "answer": "A",
       "category": "fogalmak",
-      "explanation": "Helyes: B. A megtett út 400 m, az átlagsebesség 400 m / 80 s = 5 m/s. Mivel a futó a kiindulópontba érkezik vissza, az elmozdulása (a kezdőpontból a végpontba mutató vektor) nulla.",
+      "explanation": "Helyes: A. A megtett út 400 m, az átlagsebesség 400 m / 80 s = 5 m/s. Mivel a futó a kiindulópontba érkezik vissza, az elmozdulása (a kezdőpontból a végpontba mutató vektor) nulla.",
       "wrongOptions": {
-        "A": "A 400 m az út, nem az elmozdulás; az elmozdulás a kezdő- és végpont távolsága.",
+        "B": "A 400 m az út, nem az elmozdulás; az elmozdulás a kezdő- és végpont távolsága.",
         "C": "Az átlagsebesség (út/idő) nem nulla, csak az elmozdulás.",
         "D": "Felcserélte a két mennyiséget."
       }
