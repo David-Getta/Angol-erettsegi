@@ -26,6 +26,7 @@ const groups: { title?: string; items: NavItem[] }[] = [
       { href: "/szokincs", label: t.nav.vocabulary, icon: "🗂" },
       { href: "/hibanaplo", label: t.nav.errorLog, icon: "⚑" },
       { href: "/szabalytar", label: t.nav.lessons, icon: "§" },
+      { href: "/kifejezesek", label: t.nav.phrases, icon: "❝" },
     ],
   },
   {

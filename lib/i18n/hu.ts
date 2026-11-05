@@ -33,6 +33,7 @@ export const t = {
     vocabulary: "Szókincs",
     errorLog: "Hibanapló",
     lessons: "Szabálytár",
+    phrases: "Kifejezéstár",
     mock: "Próbaérettségi",
     examInfo: "Az érettségiről",
     official: "Hivatalos feladatsorok",
@@ -502,6 +503,19 @@ export const t = {
     notEnoughTargeted: "Ehhez a kategóriához kevés a célzott item. Generálj újakat:",
     incompleteCards: (n: number) => `${n} hiányos szókártyád van. Kiegészítéshez futtasd:`,
     officialPending: (f: string) => `A(z) ${f} mappa még nincs importálva. Futtasd:`,
+  },
+
+  phrases: {
+    title: "Kifejezéstár",
+    intro: "Az írás- és szóbeli feladatkártyák hasznos kifejezései szövegtípusonként. Amit meg akarsz tanulni, vedd fel szókártyának – az ismétlésben magyar → angol irányban is előkerül.",
+    search: "Keresés angolul vagy magyarul…",
+    writing: "Írás",
+    speaking: "Szóbeli",
+    add: "＋ Szókártya",
+    added: "✓ Felvéve",
+    inCards: "✓ a kártyáid között",
+    count: (n: number) => `${n} kifejezés`,
+    none: "Nincs találat.",
   },
 
   examInfo: {
