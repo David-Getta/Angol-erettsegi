@@ -1,0 +1,89 @@
+{
+  "schemaVersion": 1,
+  "id": "nem-sp-kozep-munka-picture",
+  "subject": "nemet",
+  "revision": 1,
+  "level": "kozep",
+  "source": "generated",
+  "topic": "munka",
+  "title": "Zwei Arbeitsplätze",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "speaking",
+  "type": "picture",
+  "partNumber": 3,
+  "instructionsHu": "Nézd meg a két kép leírását. Írd le a két munkahelyet, hasonlítsd össze az előnyeiket és hátrányaikat, mondd el, melyik munkát választanád és miért, majd válaszolj a vizsgáztató kérdéseire.",
+  "scenes": [
+    {
+      "description": "Ein junger Koch in weißer Jacke steht in einer großen Restaurantküche. Auf dem Herd stehen mehrere Töpfe und Pfannen, aus denen Dampf aufsteigt. Er schwitzt und schaut auf eine lange Liste mit Bestellungen. Hinter ihm arbeiten zwei Kollegen sehr schnell. Es ist Abend, und das Restaurant ist voll."
+    },
+    {
+      "description": "Eine Frau sitzt im Wohnzimmer an einem kleinen Schreibtisch am Fenster und arbeitet am Laptop. Sie trägt bequeme Kleidung und hat Kopfhörer auf, weil sie gerade eine Videokonferenz hat. Neben dem Laptop stehen eine Tasse Tee und eine Pflanze, und hinter ihr schläft eine Katze auf dem Sofa."
+    }
+  ],
+  "prompts": [
+    "Beschreiben Sie die beiden Bilder.",
+    "Vergleichen Sie die beiden Arbeitsplätze: Welche Vor- und Nachteile haben sie?",
+    "Welche Arbeit würden Sie lieber machen? Warum?"
+  ],
+  "followUpQuestions": [
+    "Haben Sie schon einmal gejobbt? Wo?",
+    "Was ist für Sie bei einem Beruf am wichtigsten: das Geld, die Arbeitszeit oder die Kollegen?",
+    "Möchten Sie später von zu Hause aus arbeiten? Warum (nicht)?",
+    "Was sind Ihre Berufspläne?"
+  ],
+  "usefulPhrases": [
+    {
+      "en": "Das erste Bild zeigt …",
+      "hu": "Az első kép … mutat."
+    },
+    {
+      "en": "Er steht unter Stress.",
+      "hu": "Stresszes, nyomás alatt van."
+    },
+    {
+      "en": "im Homeoffice arbeiten",
+      "hu": "otthonról (home office-ban) dolgozik"
+    },
+    {
+      "en": "Ein Vorteil ist, dass …",
+      "hu": "Előny, hogy …"
+    },
+    {
+      "en": "Ein Nachteil ist, dass …",
+      "hu": "Hátrány, hogy …"
+    },
+    {
+      "en": "Man arbeitet im Team.",
+      "hu": "Csapatban dolgozik az ember."
+    },
+    {
+      "en": "Ich würde lieber … arbeiten, weil …",
+      "hu": "Inkább … dolgoznék, mert …"
+    }
+  ],
+  "speakingSeconds": 300,
+  "prepSeconds": 30,
+  "sampleAnswer": {
+    "turns": [
+      {
+        "speaker": "candidate",
+        "text": "Das erste Bild zeigt einen jungen Koch in einer Restaurantküche. Es ist sehr heiß, aus den Töpfen kommt Dampf, und der Koch schaut auf eine lange Liste mit Bestellungen. Ich glaube, er steht unter Stress, weil das Restaurant voll ist. Auf dem zweiten Bild arbeitet eine Frau zu Hause am Laptop. Sie hat gerade eine Videokonferenz, und hinter ihr schläft eine Katze. Die beiden Arbeitsplätze sind sehr unterschiedlich. Der Koch arbeitet im Team und hat viel Kontakt mit Kollegen, aber er muss abends und am Wochenende arbeiten, und die Arbeit ist körperlich anstrengend. Die Frau im Homeoffice kann bequem und ruhig arbeiten und muss nicht zur Arbeit fahren. Ein Nachteil ist aber, dass sie oft allein ist. Ich würde lieber im Büro oder zu Hause arbeiten, weil ich nicht gut mit Stress umgehen kann. Trotzdem koche ich gern, aber nur für meine Familie."
+      },
+      {
+        "speaker": "examiner",
+        "text": "Haben Sie schon einmal gejobbt? Wo?"
+      },
+      {
+        "speaker": "candidate",
+        "text": "Ja, letzten Sommer habe ich drei Wochen in einer Bäckerei gearbeitet. Ich musste um sechs Uhr anfangen, das war nicht leicht. Aber ich habe mein erstes eigenes Geld verdient, und darauf war ich stolz."
+      }
+    ],
+    "notes": [
+      "Feladat teljesítése: a vizsgázó leírja mindkét munkahelyet, mindkettőnél előnyt és hátrányt is említ (csapatmunka ↔ esti és hétvégi munka; kényelem, nincs utazás ↔ magány), indokoltan választ, és a kérdésre saját munkatapasztalattal felel.",
+      "Szókincs: a munka világának szavai pontosak (Bestellungen, unter Stress stehen, im Team arbeiten, Homeoffice, körperlich anstrengend, Geld verdienen).",
+      "Nyelvhelyesség: a „weil” mellékmondatok helyes szórendje (weil das Restaurant voll ist), Konjunktiv II a választásnál (Ich würde lieber …), Perfekt és Präteritum a saját élménynél (habe … gearbeitet, musste, war).",
+      "Érdemes megtanulni: „Ich glaube, er steht unter Stress”, „Die beiden Arbeitsplätze sind sehr unterschiedlich”, „Ein Nachteil ist aber, dass …”, „darauf war ich stolz”."
+    ]
+  }
+}

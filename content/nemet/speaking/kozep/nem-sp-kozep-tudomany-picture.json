@@ -1,0 +1,85 @@
+{
+  "schemaVersion": 1,
+  "id": "nem-sp-kozep-tudomany-picture",
+  "subject": "nemet",
+  "revision": 1,
+  "level": "kozep",
+  "source": "generated",
+  "topic": "tudomany",
+  "title": "Technik in der Familie",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "speaking",
+  "type": "picture",
+  "partNumber": 3,
+  "instructionsHu": "Nézd meg a két kép leírását. Írd le a jeleneteket, hasonlítsd össze, hogyan hat a technika a családi életre, mondd el, te és a családod hogyan használjátok a digitális eszközöket, majd válaszolj a vizsgáztató kérdéseire.",
+  "scenes": [
+    {
+      "description": "Eine Familie sitzt am Abend am Esstisch: Vater, Mutter, eine Tochter im Teenageralter und ein kleiner Sohn. Alle schauen auf ihre Handys oder Tablets, niemand spricht. Das Essen auf den Tellern wird kalt. Im Hintergrund läuft der Fernseher."
+    },
+    {
+      "description": "Eine Großmutter sitzt mit ihrem Enkel auf dem Sofa. Der Enkel zeigt ihr auf einem Tablet, wie man ein Videogespräch führt. Auf dem Bildschirm winkt eine junge Frau mit einem Baby auf dem Arm. Die Großmutter lacht und winkt zurück."
+    }
+  ],
+  "prompts": [
+    "Beschreiben Sie die beiden Bilder.",
+    "Vergleichen Sie: Wie beeinflusst die Technik auf den beiden Bildern das Familienleben?",
+    "Wie nutzen Sie und Ihre Familie digitale Geräte?"
+  ],
+  "followUpQuestions": [
+    "Gibt es bei Ihnen zu Hause Regeln für das Handy?",
+    "Haben Sie Ihren Großeltern schon einmal etwas am Handy oder am Computer erklärt?",
+    "Könnten Sie eine Woche ohne Handy leben? Warum (nicht)?",
+    "Ist Technik für ältere Menschen eher eine Hilfe oder ein Problem?"
+  ],
+  "usefulPhrases": [
+    {
+      "en": "Alle schauen auf ihre Handys.",
+      "hu": "Mindenki a telefonját nézi."
+    },
+    {
+      "en": "Niemand spricht miteinander.",
+      "hu": "Senki sem beszél a másikkal."
+    },
+    {
+      "en": "ein Videogespräch führen",
+      "hu": "videóhívást folytat"
+    },
+    {
+      "en": "Auf dem ersten Bild trennt die Technik die Familie, auf dem zweiten bringt sie sie zusammen.",
+      "hu": "Az első képen a technika elválasztja, a másodikon összehozza a családot."
+    },
+    {
+      "en": "Bei uns gibt es eine Regel: …",
+      "hu": "Nálunk van egy szabály: …"
+    },
+    {
+      "en": "Das Handy bleibt beim Essen in der Küche.",
+      "hu": "Evés közben a telefon a konyhában marad."
+    }
+  ],
+  "speakingSeconds": 300,
+  "prepSeconds": 30,
+  "sampleAnswer": {
+    "turns": [
+      {
+        "speaker": "candidate",
+        "text": "Auf dem ersten Bild sitzt eine Familie beim Abendessen. Alle haben ein Handy oder ein Tablet in der Hand, und niemand spricht. Im Hintergrund läuft auch noch der Fernseher, und das Essen wird kalt. Auf dem zweiten Bild sitzen eine Großmutter und ihr Enkel auf dem Sofa. Der Junge zeigt seiner Oma, wie ein Videogespräch funktioniert, und auf dem Bildschirm winkt eine junge Frau mit einem Baby. Vielleicht ist das die Tochter der Oma. Auf beiden Bildern spielt die Technik eine große Rolle, aber ganz unterschiedlich. Auf dem ersten Bild trennt sie die Familie, obwohl alle am selben Tisch sitzen. Auf dem zweiten Bild bringt sie die Familie zusammen, obwohl die Menschen weit voneinander entfernt sind. Bei uns zu Hause gibt es eine Regel: Beim Abendessen bleiben die Handys in der Küche. Am Anfang fand ich das blöd, aber jetzt reden wir viel mehr miteinander."
+      },
+      {
+        "speaker": "examiner",
+        "text": "Haben Sie Ihren Großeltern schon einmal etwas am Handy oder am Computer erklärt?"
+      },
+      {
+        "speaker": "candidate",
+        "text": "Ja, sehr oft. Mein Opa hat letztes Jahr ein Smartphone bekommen, und ich habe ihm gezeigt, wie man Fotos schickt. Jetzt schickt er mir jeden Tag Fotos von seinem Garten."
+      }
+    ],
+    "notes": [
+      "Feladat teljesítése: a vizsgázó leírja mindkét jelenetet, találó összehasonlítást tesz (a technika az egyik képen elválaszt, a másikon összeköt), és saját családi szabállyal, majd személyes élménnyel kapcsolja a témát magához.",
+      "Szókincs: pontos és témához illő (Videogespräch, Bildschirm, im Hintergrund läuft der Fernseher, voneinander entfernt).",
+      "Nyelvhelyesség: az „obwohl” mellékmondatok szórendje helyes (obwohl alle am selben Tisch sitzen), a „wie ein Videogespräch funktioniert” függő kérdés és a részes esetes szerkezetek (zeigt seiner Oma, hat ihm gezeigt) is pontosak.",
+      "Érdemes megtanulni: „Auf beiden Bildern spielt … eine große Rolle”, „trennt / bringt … zusammen”, „Bei uns zu Hause gibt es eine Regel: …”, „Am Anfang fand ich das blöd, aber …”."
+    ]
+  }
+}

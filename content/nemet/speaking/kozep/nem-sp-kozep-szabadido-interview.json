@@ -1,44 +1,136 @@
 {
+  "schemaVersion": 1,
+  "id": "nem-sp-kozep-szabadido-interview",
+  "subject": "nemet",
+  "revision": 1,
+  "level": "kozep",
+  "source": "generated",
   "topic": "szabadido",
   "title": "Freizeit und Hobbys",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "speaking",
   "type": "interview",
   "partNumber": 1,
   "instructionsHu": "A vizsgáztató a szabadidődről, a hobbijaidról és a nyári szünetedről kérdez. Válaszolj több mondatban, és mondj konkrét példákat.",
   "questions": [
-    { "q": "Was machen Sie in Ihrer Freizeit am liebsten?", "followUps": [] },
-    { "q": "Wie viel Freizeit haben Sie an einem normalen Schultag?", "followUps": [] },
-    { "q": "Treiben Sie Sport?", "followUps": ["Wie oft?"] },
-    { "q": "Lesen Sie gern? Was haben Sie zuletzt gelesen?", "followUps": [] },
-    { "q": "Welche Musik hören Sie gern?", "followUps": [] },
-    { "q": "Gehen Sie oft ins Kino, oder sehen Sie Filme lieber zu Hause?", "followUps": [] },
-    { "q": "Was machen Sie am Wochenende mit Ihren Freunden?", "followUps": [] },
-    { "q": "Wie viel Zeit verbringen Sie am Handy oder am Computer?", "followUps": [] },
-    { "q": "Was haben Sie in den letzten Sommerferien gemacht?", "followUps": [] },
-    { "q": "Welches Hobby möchten Sie gern einmal ausprobieren?", "followUps": [] }
+    {
+      "q": "Was machen Sie in Ihrer Freizeit am liebsten?",
+      "followUps": []
+    },
+    {
+      "q": "Wie viel Freizeit haben Sie an einem normalen Schultag?",
+      "followUps": []
+    },
+    {
+      "q": "Treiben Sie Sport?",
+      "followUps": [
+        "Wie oft?"
+      ]
+    },
+    {
+      "q": "Lesen Sie gern? Was haben Sie zuletzt gelesen?",
+      "followUps": []
+    },
+    {
+      "q": "Welche Musik hören Sie gern?",
+      "followUps": []
+    },
+    {
+      "q": "Gehen Sie oft ins Kino, oder sehen Sie Filme lieber zu Hause?",
+      "followUps": []
+    },
+    {
+      "q": "Was machen Sie am Wochenende mit Ihren Freunden?",
+      "followUps": []
+    },
+    {
+      "q": "Wie viel Zeit verbringen Sie am Handy oder am Computer?",
+      "followUps": []
+    },
+    {
+      "q": "Was haben Sie in den letzten Sommerferien gemacht?",
+      "followUps": []
+    },
+    {
+      "q": "Welches Hobby möchten Sie gern einmal ausprobieren?",
+      "followUps": []
+    }
   ],
   "usefulPhrases": [
-    { "en": "Am liebsten treffe ich mich mit meinen Freunden.", "hu": "Legszívesebben a barátaimmal találkozom." },
-    { "en": "Ich spiele seit sechs Jahren Gitarre.", "hu": "Hat éve gitározom." },
-    { "en": "zweimal pro Woche", "hu": "hetente kétszer" },
-    { "en": "Danach fühle ich mich entspannt.", "hu": "Utána nyugodtnak, ellazultnak érzem magam." },
-    { "en": "Ehrlich gesagt …", "hu": "Őszintén szólva …" },
-    { "en": "Ich wollte Geld für einen Laptop sparen.", "hu": "Pénzt akartam gyűjteni egy laptopra." },
-    { "en": "Ich möchte gern einmal tauchen lernen.", "hu": "Szeretnék egyszer megtanulni búvárkodni." }
+    {
+      "en": "Am liebsten treffe ich mich mit meinen Freunden.",
+      "hu": "Legszívesebben a barátaimmal találkozom."
+    },
+    {
+      "en": "Ich spiele seit sechs Jahren Gitarre.",
+      "hu": "Hat éve gitározom."
+    },
+    {
+      "en": "zweimal pro Woche",
+      "hu": "hetente kétszer"
+    },
+    {
+      "en": "Danach fühle ich mich entspannt.",
+      "hu": "Utána nyugodtnak, ellazultnak érzem magam."
+    },
+    {
+      "en": "Ehrlich gesagt …",
+      "hu": "Őszintén szólva …"
+    },
+    {
+      "en": "Ich wollte Geld für einen Laptop sparen.",
+      "hu": "Pénzt akartam gyűjteni egy laptopra."
+    },
+    {
+      "en": "Ich möchte gern einmal tauchen lernen.",
+      "hu": "Szeretnék egyszer megtanulni búvárkodni."
+    }
   ],
   "speakingSeconds": 210,
   "prepSeconds": 0,
   "sampleAnswer": {
     "turns": [
-      { "speaker": "examiner", "text": "Was machen Sie in Ihrer Freizeit am liebsten?" },
-      { "speaker": "candidate", "text": "Am liebsten treffe ich mich mit meinen Freunden. Wir gehen zusammen ins Kino oder sitzen einfach in einem Café und reden. Außerdem spiele ich seit sechs Jahren Gitarre." },
-      { "speaker": "examiner", "text": "Treiben Sie Sport?" },
-      { "speaker": "candidate", "text": "Ja, ich spiele zweimal pro Woche Volleyball in einem Verein. Am Wochenende haben wir manchmal Spiele gegen andere Mannschaften. Sport ist für mich wichtig, weil ich mich danach immer entspannt fühle." },
-      { "speaker": "examiner", "text": "Wie viel Zeit verbringen Sie am Handy oder am Computer?" },
-      { "speaker": "candidate", "text": "Ehrlich gesagt ziemlich viel, vielleicht drei Stunden am Tag. Ich schaue Videos und chatte mit meinen Freunden. Meine Eltern finden das zu viel, und eigentlich haben sie recht." },
-      { "speaker": "examiner", "text": "Was haben Sie in den letzten Sommerferien gemacht?" },
-      { "speaker": "candidate", "text": "Im Juli habe ich zwei Wochen in einem Café gearbeitet, weil ich Geld für einen neuen Laptop sparen wollte. Danach bin ich mit meiner Familie nach Kroatien gefahren. Wir haben jeden Tag im Meer gebadet, das war super." },
-      { "speaker": "examiner", "text": "Welches Hobby möchten Sie gern einmal ausprobieren?" },
-      { "speaker": "candidate", "text": "Ich möchte gern einmal tauchen lernen. In Kroatien habe ich Leute gesehen, die getaucht sind, und die Fische unter Wasser sehen bestimmt fantastisch aus." }
+      {
+        "speaker": "examiner",
+        "text": "Was machen Sie in Ihrer Freizeit am liebsten?"
+      },
+      {
+        "speaker": "candidate",
+        "text": "Am liebsten treffe ich mich mit meinen Freunden. Wir gehen zusammen ins Kino oder sitzen einfach in einem Café und reden. Außerdem spiele ich seit sechs Jahren Gitarre."
+      },
+      {
+        "speaker": "examiner",
+        "text": "Treiben Sie Sport?"
+      },
+      {
+        "speaker": "candidate",
+        "text": "Ja, ich spiele zweimal pro Woche Volleyball in einem Verein. Am Wochenende haben wir manchmal Spiele gegen andere Mannschaften. Sport ist für mich wichtig, weil ich mich danach immer entspannt fühle."
+      },
+      {
+        "speaker": "examiner",
+        "text": "Wie viel Zeit verbringen Sie am Handy oder am Computer?"
+      },
+      {
+        "speaker": "candidate",
+        "text": "Ehrlich gesagt ziemlich viel, vielleicht drei Stunden am Tag. Ich schaue Videos und chatte mit meinen Freunden. Meine Eltern finden das zu viel, und eigentlich haben sie recht."
+      },
+      {
+        "speaker": "examiner",
+        "text": "Was haben Sie in den letzten Sommerferien gemacht?"
+      },
+      {
+        "speaker": "candidate",
+        "text": "Im Juli habe ich zwei Wochen in einem Café gearbeitet, weil ich Geld für einen neuen Laptop sparen wollte. Danach bin ich mit meiner Familie nach Kroatien gefahren. Wir haben jeden Tag im Meer gebadet, das war super."
+      },
+      {
+        "speaker": "examiner",
+        "text": "Welches Hobby möchten Sie gern einmal ausprobieren?"
+      },
+      {
+        "speaker": "candidate",
+        "text": "Ich möchte gern einmal tauchen lernen. In Kroatien habe ich Leute gesehen, die getaucht sind, und die Fische unter Wasser sehen bestimmt fantastisch aus."
+      }
     ],
     "notes": [
       "Feladat teljesítése: minden válasz kifejtett – a vizsgázó elmondja, mit, milyen gyakran és miért csinál, és a nyári szünetről is konkrétan mesél.",
