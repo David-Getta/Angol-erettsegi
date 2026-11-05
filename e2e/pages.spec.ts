@@ -24,6 +24,7 @@ const ROUTES = [
   "/hivatalos",
   "/statisztika",
   "/jelentes",
+  "/hallas/diktalas",
   "/utmutatok",
   "/parancsok",
   "/beallitasok",

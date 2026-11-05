@@ -538,6 +538,26 @@ export const t = {
     officialPending: (f: string) => `A(z) ${f} mappa még nincs importálva. Futtasd:`,
   },
 
+  dictation: {
+    title: "Diktálás",
+    intro: "Mondatok a hallási feladatok leirataiból, a beszélő hangján. Hallgasd meg (akár többször vagy lassabban), írd le, és nézd meg szóról szóra, mit hallottál jól. A hallás utáni értést és a helyesírást is fejleszti.",
+    open: "✎ Diktálás",
+    play: "▶ Lejátszás",
+    slow: "🐢 Lassabban",
+    type: "Írd le, amit hallasz…",
+    check: "Ellenőrzés",
+    next: "Következő mondat →",
+    original: "Az eredeti mondat",
+    from: (title: string) => `Forrás: ${title}`,
+    score: (a: number, b: number) => `${a} / ${b} szó helyes`,
+    total: (a: number, b: number) => `Eddig: ${a} / ${b} szó`,
+    legend: "Zöld: jó · áthúzott piros: hiányzott vagy mást írtál · szürke: felesleges szó",
+    done: "Kész a kör!",
+    again: "Új kör",
+    noTts: "A böngésződ nem tud felolvasni – Chrome vagy Edge kell hozzá.",
+    none: "Ezen a szinten még nincs elég hallási leirat a diktáláshoz.",
+  },
+
   report: {
     title: "Haladási jelentés",
     intro: "Egyoldalas összefoglaló a felkészülésről – kinyomtatható vagy PDF-be menthető, például a tanárodnak vagy a szüleidnek.",

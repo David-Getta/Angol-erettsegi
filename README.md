@@ -15,18 +15,20 @@ vagy a javítást a Claude appba bemásolt prompttal kérheted. Nincs fiók, nin
 | **Szintfelmérő** | kb. 45 perces teszt mind a négy írásbeli részből → becsült CEFR-szint, erősségek és gyengeségek |
 | **Olvasott szöveg** | érettségi-típusú feladatok, gyakorló és vizsga mód, magyarázat minden kérdéshez (hol van a szövegben, miért rossz a többi opció), szavak felvétele szókártyába kattintással |
 | **Nyelvhelyesség** | lyukas szövegek, szóképzés, igealakok, hibakeresés …; több helyes válasz elfogadva, elírás-jelzés; célzott gyakorlás a hibanaplóból |
+| **Diktálás** | mondatok a hallási leiratokból a beszélő hangján (lassítható), begépelés, szóról szóra összevetés |
 | **Hallott szöveg** | a böngésző olvassa fel a szkripteket beszélőnként külön hanggal, felkészülési idő, kétszeri meghallgatás, utána leirat a válaszok kiemelésével; hivatalos mp3 is lejátszható |
 | **Íráskészség** | feladatkártyák, szerkesztő élő szószámlálóval és időzítővel, önellenőrző lista, beadás javításra, javítás nézet (pontok szempontonként, kiemelt hibák magyarázattal), átírás, változatok összehasonlítása; az első beadás után mintamegoldás megjegyzésekkel |
 | **Szóbeli** | kérdéskártyák, szituációk, képleírás-helyettesítő jelenetek, emelten vitatételek; felolvasás, időzítő, beszédfelismerés; vizsgáztató-prompt a Claude app hangmódjához |
 | **Szókincs** | FSRS-alapú ismétlés (angol→magyar, magyar→angol, példamondat-kitöltés, kollokáció), témakörönkénti paklik; a saját hibáid is felvehetők „javítsd ki” kártyának |
 | **Hibanapló** | minden hibád a helyes megoldással és a magyarázattal, kategóriánként, trenddel, „Gyakoroltasd ezt” gombbal |
+| **Útmutatók** | minden írásbeli szövegtípushoz, szóbeli feladattípushoz és vizsgarészhez: felépítés, kész kifejezések, tipikus hibák, ellenőrző lista, időbeosztás |
 | **Szabálytár** | minden hibakategóriához magyar szabálymagyarázat példákkal, a magyarul beszélők tipikus hibái, érettségi-tippek és mini-gyakorlás; a hibanaplóból és minden hibamagyarázatból egy kattintással elérhető |
 | **Témakörök** | a tíz szóbeli témakör mindegyikénél egy helyen a feladatok minden vizsgarészből (kész / még nem) és a szókincs-pakli |
 | **Kifejezéstár** | az írás- és szóbeli kártyák hasznos kifejezései szövegtípusonként, kereshetően, egy kattintással szókártyába |
 | **Az érettségiről** | a vizsga felépítése, időkeretei, pontozása, jegyhatárai és a nyelvvizsga-egyenértékűség egy oldalon, a config fájlokból |
 | **Próbaérettségi** | teljes írásbeli szimuláció hivatalos időkeretekkel és szigorú részenkénti időzítéssel → pontszám, százalék, 12%-os küszöbök, becsült jegy, nyelvvizsga-egyenértékűség |
 | **Hivatalos feladatsorok** | a letöltött régi érettségik importálása saját használatra, egyértelmű „Hivatalos” jelöléssel |
-| **Statisztika, Parancsok, Beállítások** | grafikonok; a Claude Code parancsok súgója parancsépítővel; export/import, adatbázis-mentés |
+| **Statisztika, Parancsok, Beállítások** | grafikonok és kinyomtatható haladási jelentés; a Claude Code parancsok súgója parancsépítővel; export/import, adatbázis-mentés (automatikusan is) |
 
 ## Telepítés
 

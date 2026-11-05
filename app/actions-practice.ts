@@ -5,6 +5,7 @@ import { saveAttempt, type AttemptMode } from "@/lib/attempts";
 import { addWord } from "@/lib/vocab/cards";
 import { getTaskRow } from "@/lib/tasks";
 import { checkTargetedItem, logTargetedTime } from "@/lib/targeted";
+import { logActivity } from "@/lib/activity";
 import { checkLessonItem } from "@/lib/lessons";
 
 export async function saveAttemptAction(input: {
@@ -55,4 +56,9 @@ export async function logTargetedTimeAction(seconds: number) {
 /** Checks one self-check item of a Szabálytár lesson (scored on the server). */
 export async function checkLessonItemAction(input: { category: string; itemId: string; answer: string; seconds?: number }) {
   return checkLessonItem(input.category, input.itemId, input.answer, input.seconds ?? 0);
+}
+
+/** Practice time of a dictation round (counts as listening). */
+export async function logDictationTimeAction(seconds: number) {
+  logActivity("listening", seconds);
 }
