@@ -1,0 +1,251 @@
+{
+  "schemaVersion": 1,
+  "id": "mag-gr-informacio-visszakereses",
+  "subject": "magyar",
+  "revision": 1,
+  "level": "kozep",
+  "source": "generated",
+  "topic": "nyelvtan",
+  "title": "Információ visszakeresése",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "grammar",
+  "type": "lesson",
+  "category": "informacio-visszakereses",
+  "summaryHu": "Az információ visszakeresése a szövegértési feladatsor alapja: a kérdésben kért adatot, állítást pontosan meg kell találni a szövegben, és pontosan kell visszaadni. A pontvesztés leggyakoribb oka nem a megértés hiánya, hanem a pontatlanság: rossz bekezdésből vett adat, lemaradt mértékegység, saját szavakkal „kiegészített” válasz. Mindkét szinten a feladatok jelentős része ilyen kérdés, ezért itt lehet a legbiztosabban pontot szerezni.",
+  "rules": [
+    {
+      "title": "Kulcsszavak a kérdésben és a szövegben",
+      "explanation": "Először húzd alá a kérdés kulcsszavait: a kérdőszót (ki, mikor, hány, mennyi ideig, miért) és a tartalmi szavakat. Ezután keresd meg őket a szövegben – de számíts arra, hogy a kérdés átfogalmazza a szöveget, ezért a kulcsszó rokon értelmű szóval vagy más szófajú alakban is szerepelhet (megnyílt → kapuit megnyitotta, népszerű → sokan látogatják).",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "Kérdés: Mikor nyílt meg a múzeum? → A szövegben: „A múzeum 1902 tavaszán fogadta első látogatóit.”",
+          "hu": "A „megnyílt” a szövegben „fogadta első látogatóit” formában szerepel; a kérdőszó (mikor?) időpontot kér: 1902 tavaszán."
+        }
+      ]
+    },
+    {
+      "title": "A kérdőszó dönti el a válasz típusát",
+      "explanation": "A „mikor?” időpontot, a „mennyi ideig?” időtartamot, a „hány?” darabszámot, a „miért?” okot kérdez. Sok hibás válasz helyes adatot közöl, csak nem azt, amit a kérdés kér. Válaszadás előtt mondd ki magadban: milyen típusú válasz kell ide?",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "Kérdés: Mennyi ideig tartott a felújítás? Szöveg: „A felújítás 2019-ben kezdődött és 2022-ben fejeződött be.”",
+          "hu": "Helyes válasz: három évig. A „2019-től 2022-ig” is elfogadható, de a „2022-ben” nem, mert az időpont, nem időtartam."
+        }
+      ]
+    },
+    {
+      "title": "Szűkítő és tagadó szavak: NEM, csak, első, legalább, kivéve",
+      "explanation": "A kérdésben szereplő szűkítő szavak megfordítják vagy leszűkítik a feladatot. A „Melyik NEM szerepel…?” kérdésnél a szövegben megtalálható állítások a rossz válaszok. Az ilyen szavakat a feladatlapon is karikázd be.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "Melyik állítás NEM igaz a szöveg szerint?",
+          "hu": "Itt három állítás igaz (megtalálható a szövegben), és azt az egyet kell kiválasztani, amelyik ellentmond a szövegnek vagy nem szerepel benne."
+        }
+      ]
+    },
+    {
+      "title": "Idézés: szó szerint, idézőjellel",
+      "explanation": "Ha a feladat azt kéri, hogy „Idézze!” vagy „Írja ki a szövegből!”, akkor a választ szó szerint, a szöveg helyesírásával és ragozásával kell leírni, idézőjelben. Ha viszont azt kéri: „Fogalmazza meg saját szavaival!”, akkor ne idézz, hanem tömören, átfogalmazva válaszolj. A két utasítás összekeverése pontvesztés.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "Írja ki a szövegből azt a kifejezést, amellyel a szerző a fákat nevezi!",
+          "hu": "Helyes: „csendes és ingyenes hűtőberendezés” – pontosan úgy, ahogy a szövegben áll, nem „hűtőgép” vagy „légkondi”."
+        }
+      ]
+    },
+    {
+      "title": "Számok, mértékegységek, nevek",
+      "explanation": "Az adatokat mértékegységgel és pontosan írd le (4,5 km, nem csak 4,5; 1848-ban, nem a 19. század közepén). Neveket teljes alakjukban, helyesen írva add meg. Ellenőrizd, hogy a szám abból a bekezdésből való-e, amelyikre a kérdés vonatkozik – egy szövegben gyakran több hasonló adat is szerepel.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "Szöveg: „A tó legnagyobb mélysége 12 méter, átlagos mélysége alig 3 méter.” Kérdés: Milyen mély a tó átlagosan?",
+          "hu": "Helyes: 3 méter. A 12 méter is szerepel a szövegben, de az a legnagyobb mélység."
+        }
+      ]
+    },
+    {
+      "title": "Több helyről összerakott információ",
+      "explanation": "Emelt szinten gyakori, hogy a válasz nem egyetlen mondatban áll: két bekezdés adatát kell összevetni, kiszámolni egy különbséget, vagy két állítást összekapcsolni. Ilyenkor jelöld meg mindkét helyet a szövegben, és a válaszban csak a kért eredményt add meg.",
+      "emeltOnly": true,
+      "examples": [
+        {
+          "en": "Szöveg: „A hidat 1849-ben adták át. […] 1945-ben felrobbantották.” Kérdés: Hány évvel az átadása után robbantották fel?",
+          "hu": "1945 − 1849 = 96 év. A két adat két különböző mondatból származik, a választ számítással kapjuk."
+        }
+      ]
+    }
+  ],
+  "commonMistakes": [
+    {
+      "wrong": "Kérdés: Mennyi ideig volt zárva a színház? Válasz: 1944-ben bezárt.",
+      "right": "Hat évig (1944-től 1950-ig).",
+      "why": "A kérdés időtartamot kérdez, a válasz viszont csak időpontot ad. Mindig a kérdőszóhoz igazítsd a válasz típusát."
+    },
+    {
+      "wrong": "Idézze azt a mondatot, amely a kutatás eredményét összegzi! → A kutatók szerint papíron jobban értünk.",
+      "right": "„Az ismeretterjesztő, magyarázó szövegeknél a papíron olvasók átlagosan valamivel jobban teljesítettek.”",
+      "why": "Az „Idézze!” szó szerinti másolást kér idézőjelben; a saját szavas összefoglalás itt nem kap pontot."
+    },
+    {
+      "wrong": "A szöveg szerint egy nagy fa 400 liter vizet párologtat el naponta.",
+      "right": "A szöveg szerint egy nagy fa akár több száz liter vizet is elpárologtathat.",
+      "why": "Ne egészítsd ki a szöveget a saját tudásoddal, és ne pontosíts: a szöveg állítását add vissza, a benne szereplő óvatos megfogalmazással (akár, több száz)."
+    },
+    {
+      "wrong": "Kérdés: Milyen hosszú az út? Válasz: 4,5",
+      "right": "4,5 kilométer",
+      "why": "A mértékegység nélküli szám nem teljes válasz: lehetne méter vagy óra is."
+    }
+  ],
+  "examTips": [
+    "A szövegértési feladatsor első kérdései szinte mindig visszakereső kérdések: ezeket oldd meg gyorsan, de figyelmesen, mert itt a legkönnyebb biztos pontot szerezni.",
+    "Minden válasz után keresd meg a szövegben azt a mondatot, amely igazolja – ha nem találod, valószínűleg a saját tudásodból válaszoltál.",
+    "Igaz–hamis feladatoknál a hamis állítás gyakran csak egyetlen szóban (legnagyobb ↔ legkisebb, első ↔ utolsó) tér el a szövegtől: olvasd vissza szóról szóra."
+  ],
+  "practice": [
+    {
+      "id": "1",
+      "kind": "choice",
+      "prompt": "Szöveg: „A kiállítás május 3-án nyílt meg, és a tervezett hat hét helyett a nagy érdeklődés miatt nyolc hétig tartott nyitva.” Kérdés: Hány hétig volt nyitva a kiállítás?",
+      "options": [
+        {
+          "key": "A",
+          "text": "hat hétig"
+        },
+        {
+          "key": "B",
+          "text": "nyolc hétig"
+        },
+        {
+          "key": "C",
+          "text": "három hétig"
+        },
+        {
+          "key": "D",
+          "text": "tizennégy hétig"
+        }
+      ],
+      "answer": "B",
+      "category": "informacio-visszakereses",
+      "explanation": "Helyes: nyolc hétig. A hat hét a tervezett időtartam volt, a kiállítás végül nyolc hétig tartott nyitva – a „helyett” szó jelzi a változást.",
+      "wrongOptions": {
+        "A": "Ez a tervezett időtartam, a „helyett” szó mutatja, hogy nem így történt.",
+        "C": "A 3 a nyitás napja (május 3.), nem időtartam.",
+        "D": "A két szám összeadása értelmetlen; a szöveg nem ezt mondja."
+      }
+    },
+    {
+      "id": "2",
+      "kind": "text",
+      "prompt": "Szöveg: „A tanösvény hossza 4,5 kilométer, bejárása nagyjából két órát vesz igénybe.” Kérdés: Milyen hosszú a tanösvény? (Számmal és mértékegységgel válaszoljon!)",
+      "answer": [
+        "4,5 kilométer",
+        "4,5 km",
+        "4.5 km",
+        "4.5 kilométer",
+        "4,5 kilométeres",
+        "négy és fél kilométer"
+      ],
+      "category": "informacio-visszakereses",
+      "explanation": "Helyes válasz: 4,5 kilométer. A kérdés a hosszúságot kéri, ezért a két óra (az időtartam) nem jó válasz; a mértékegységet is meg kell adni."
+    },
+    {
+      "id": "3",
+      "kind": "choice",
+      "prompt": "Szöveg: „A program célja, hogy a diákok megismerjék a helyi növényeket, gyakorolják a csapatmunkát, és kedvet kapjanak a természetjáráshoz.” Kérdés: Melyik NEM célja a programnak a szöveg szerint?",
+      "options": [
+        {
+          "key": "A",
+          "text": "a helyi növények megismerése"
+        },
+        {
+          "key": "B",
+          "text": "a csapatmunka gyakorlása"
+        },
+        {
+          "key": "C",
+          "text": "versenyek megnyerése"
+        },
+        {
+          "key": "D",
+          "text": "a természetjárás megkedveltetése"
+        }
+      ],
+      "answer": "C",
+      "category": "informacio-visszakereses",
+      "explanation": "Helyes: C. A szöveg három célt sorol fel (növények, csapatmunka, természetjárás); versenyekről nincs szó. A NEM szó miatt a szövegben nem szereplő állítást kellett kiválasztani.",
+      "wrongOptions": {
+        "A": "Ez szerepel a szövegben: „megismerjék a helyi növényeket”.",
+        "B": "Ez is szerepel: „gyakorolják a csapatmunkát”.",
+        "D": "Ez is szerepel: „kedvet kapjanak a természetjáráshoz”."
+      }
+    },
+    {
+      "id": "4",
+      "kind": "choice",
+      "prompt": "A feladat így szól: „Idézze a szövegből azt a mondatot, amely a kutatás eredményét összegzi!” Mit kell tennie?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Szó szerint, idézőjelben kimásolni a mondatot."
+        },
+        {
+          "key": "B",
+          "text": "Saját szavaival összefoglalni a mondat tartalmát."
+        },
+        {
+          "key": "C",
+          "text": "Megadni, hányadik bekezdésben található a mondat."
+        },
+        {
+          "key": "D",
+          "text": "Leírni a mondat első és utolsó szavát."
+        }
+      ],
+      "answer": "A",
+      "category": "informacio-visszakereses",
+      "explanation": "Helyes: A. Az „Idézze!” utasítás szó szerinti, pontos másolást kér idézőjelben, a szöveg helyesírásával.",
+      "wrongOptions": {
+        "B": "Ezt a „Fogalmazza meg saját szavaival!” utasítás kérné; idézésnél az átfogalmazás pontvesztés.",
+        "C": "A bekezdés száma nem idézet; a feladat a mondat szövegét kéri.",
+        "D": "A mondat töredéke nem teljes idézet."
+      }
+    },
+    {
+      "id": "5",
+      "kind": "text",
+      "prompt": "Szöveg: „A tó legnagyobb mélysége 12 méter, átlagos mélysége alig 3 méter.” Kérdés: Milyen mély átlagosan a tó?",
+      "answer": [
+        "3 méter",
+        "3 m",
+        "alig 3 méter",
+        "három méter"
+      ],
+      "category": "informacio-visszakereses",
+      "explanation": "Helyes válasz: 3 méter. A 12 méter a legnagyobb mélység; a kérdés az átlagos mélységre vonatkozik. A két hasonló adat közül a kérdés kulcsszava (átlagosan) választ."
+    },
+    {
+      "id": "6",
+      "kind": "text",
+      "prompt": "Szöveg: „A hidat 1849-ben adták át a forgalomnak. […] A második világháború végén, 1945-ben felrobbantották.” Kérdés: Hány évvel az átadása után robbantották fel a hidat? (Számmal válaszoljon!)",
+      "answer": [
+        "96",
+        "96 évvel",
+        "96 év",
+        "96 évvel később"
+      ],
+      "category": "informacio-visszakereses",
+      "explanation": "Helyes válasz: 96 évvel. A két évszám két különböző mondatban áll: 1945 − 1849 = 96. Az ilyen kérdésnél a két adatot össze kell kapcsolni."
+    }
+  ],
+  "relatedCategories": [
+    "lenyegkiemeles",
+    "kovetkeztetes"
+  ]
+}

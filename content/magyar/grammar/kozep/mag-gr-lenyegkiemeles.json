@@ -1,0 +1,274 @@
+{
+  "schemaVersion": 1,
+  "id": "mag-gr-lenyegkiemeles",
+  "subject": "magyar",
+  "revision": 1,
+  "level": "kozep",
+  "source": "generated",
+  "topic": "nyelvtan",
+  "title": "Lényegkiemelés, tömörítés",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "grammar",
+  "type": "lesson",
+  "category": "lenyegkiemeles",
+  "summaryHu": "A lényegkiemelés azt méri, felismered-e egy bekezdés vagy egy egész szöveg fő gondolatát, és meg tudod-e különböztetni a lényeget a részletektől, példáktól, adatoktól. A szövegértési feladatsorban címadás, fő gondolat kiválasztása, vázlatpontok párosítása és rövid összefoglalás formájában jelenik meg. A tipikus hiba, hogy egy feltűnő, de mellékes részletet vagy egy példát tekintünk fő gondolatnak.",
+  "rules": [
+    {
+      "title": "A tételmondat",
+      "explanation": "A bekezdés fő gondolatát összefoglaló mondat a tételmondat. Ismeretterjesztő és publicisztikai szövegben leggyakrabban a bekezdés első mondata, néha az utolsó (összegző) mondata. A többi mondat ezt magyarázza, bizonyítja vagy szemlélteti.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "„A papír melletti másik érv a tájékozódás. Egy nyomtatott könyvben a szöveg helye is jelentést hordoz…”",
+          "hu": "Az első mondat a tételmondat; a következő mondatok (a mondat helye, a kéz érzi a terjedelmet) ezt fejtik ki."
+        }
+      ]
+    },
+    {
+      "title": "Lényeg és részlet",
+      "explanation": "A példák, számadatok, idézetek, anekdoták a fő gondolatot támasztják alá, de nem maguk a fő gondolat. Ha egy válaszlehetőség csak egy példát nevez meg, valószínűleg túl szűk. Ha olyan általános, hogy bármelyik bekezdésre igaz lenne, túl tág.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "Bekezdés: a fák árnyékot adnak, párologtatnak, egy nagy fa több száz liter vizet is elpárologtathat.",
+          "hu": "A fő gondolat: a fák hűtik a környezetüket. A „több száz liter víz” csak egy alátámasztó adat."
+        }
+      ]
+    },
+    {
+      "title": "Tömörítés: kulcsszavas vázlat és egymondatos összefoglalás",
+      "explanation": "Tömörítéskor hagyd el a példákat, ismétléseket, díszítő elemeket, és tartsd meg az állításokat. Egy bekezdés lényege általában egy rövid mondatban vagy egy-két kulcsszóban megfogalmazható. Vázlatnál a pontok azonos szerkezetűek legyenek (pl. mind főnévi szerkezet).",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "Tömörítve: „A hősziget okai: sötét felületek, kevés növényzet, szűk utcák, emberi hőtermelés.”",
+          "hu": "Négy bekezdés lényege egyetlen mondatban, a példák nélkül."
+        }
+      ]
+    },
+    {
+      "title": "Címadás",
+      "explanation": "A jó cím a szöveg egészének témáját vagy fő gondolatát fedi le, nem csak egy részletét. Ha több cím közül kell választani, vesd össze mindegyiket a szöveg elejével és végével: a jó cím a bevezetésre és a zárásra is illik.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "Egy szöveg a mesék szerkezetéről, lélektani hatásáról és a közös mesélésről szól. Jó cím: „Miért mesélünk még?” – rossz cím: „A Grimm testvérek”.",
+          "hu": "A Grimm testvérek csak egy bekezdés részletei; a cím a szöveg egészének kérdését fogalmazza meg."
+        }
+      ]
+    },
+    {
+      "title": "A szöveg egészének fő gondolata és a szerkezet",
+      "explanation": "Emelt szinten gyakran a teljes szöveg tézisét kell megfogalmazni, vagy a bekezdések egymáshoz viszonyított szerepét (bevezetés, ellenérv, összegzés). A fő gondolat ilyenkor sokszor a zárásban fogalmazódik meg a legtisztábban, a „tehát”, „vagyis”, „összességében” típusú szavak után.",
+      "emeltOnly": true,
+      "examples": [
+        {
+          "en": "„Az olasz mondás tehát csak félig igaz.”",
+          "hu": "A „tehát” összegző kötőszó után álló mondat az esszé egészének tézisét fogalmazza meg."
+        }
+      ]
+    }
+  ],
+  "commonMistakes": [
+    {
+      "wrong": "A bekezdés fő gondolata: egy nagy fa több száz liter vizet párologtat el.",
+      "right": "A bekezdés fő gondolata: a fák árnyékolással és párologtatással hűtik a környezetüket.",
+      "why": "A számadat csak alátámasztja az állítást; a fő gondolat az, amit az adat bizonyít."
+    },
+    {
+      "wrong": "Összefoglalás: a teljes bekezdés kimásolása.",
+      "right": "Összefoglalás: egy-két saját mondat, csak a lényeges állításokkal.",
+      "why": "A tömörítés lényege az elhagyás; a szó szerinti átmásolás nem mutatja, hogy megértetted, mi a fontos."
+    },
+    {
+      "wrong": "Cím: „Az aszfalt” (a hőszigetről szóló szövegre).",
+      "right": "Cím: „Forró város, hűs fák – a városi hősziget”.",
+      "why": "A túl szűk cím csak egy részletet nevez meg; a jó cím a szöveg egész témáját lefedi."
+    },
+    {
+      "wrong": "Fő gondolat: „Az olvasás fontos.”",
+      "right": "Fő gondolat: „Nem a felület számít, hanem hogy tudatosan választunk-e papír és képernyő között.”",
+      "why": "A túl általános megfogalmazás bármelyik olvasásról szóló szövegre igaz lenne; a fő gondolatnak az adott szöveg sajátos állítását kell visszaadnia."
+    }
+  ],
+  "examTips": [
+    "Fő gondolatra vagy címre vonatkozó kérdésnél előbb fogalmazd meg magadban a választ, és csak utána nézd meg az opciókat – így kevésbé visznek félre a csábító részletek.",
+    "Vázlatpontok és bekezdések párosításánál a bekezdések első mondatait olvasd el újra: ott van a legtöbbször a tételmondat.",
+    "A szövegalkotási feladatban is hasznos ez a készség: a forrásszöveg fő gondolatát egy mondatban kell tudnod összefoglalni, mielőtt reflektálsz rá."
+  ],
+  "practice": [
+    {
+      "id": "1",
+      "kind": "choice",
+      "prompt": "Bekezdés: „A kerékpáros közlekedés egyre népszerűbb a városokban. Egyre több helyen épülnek kerékpárutak, a közösségi bérlőrendszerek forgalma évről évre nő, és sok munkahely öltözőt is kialakít a biciklivel érkezőknek.” Mi a bekezdés fő gondolata?",
+      "options": [
+        {
+          "key": "A",
+          "text": "A kerékpáros közlekedés egyre népszerűbb a városokban."
+        },
+        {
+          "key": "B",
+          "text": "A munkahelyeken öltözőket alakítanak ki."
+        },
+        {
+          "key": "C",
+          "text": "A bérlőrendszerek drágák."
+        },
+        {
+          "key": "D",
+          "text": "A kerékpárutak veszélyesek."
+        }
+      ],
+      "answer": "A",
+      "category": "lenyegkiemeles",
+      "explanation": "Helyes: A. Ez a bekezdés első mondata, a tételmondat; a további mondatok (kerékpárutak, bérlőrendszer, öltözők) ezt bizonyítják.",
+      "wrongOptions": {
+        "B": "Ez csak az egyik alátámasztó példa, nem a fő gondolat.",
+        "C": "Az árakról a bekezdés nem beszél.",
+        "D": "Veszélyről nincs szó a bekezdésben."
+      }
+    },
+    {
+      "id": "2",
+      "kind": "choice",
+      "prompt": "Egy szöveg a mesék lejegyzéséről, ismétlődő szerkezetéről, lélektani hatásáról és a közös esti mesélésről szól. Melyik a legjobb cím?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Miért mesélünk még?"
+        },
+        {
+          "key": "B",
+          "text": "A Grimm testvérek gyűjteménye"
+        },
+        {
+          "key": "C",
+          "text": "A hétfejű sárkány"
+        },
+        {
+          "key": "D",
+          "text": "Az olvasás története"
+        }
+      ],
+      "answer": "A",
+      "category": "lenyegkiemeles",
+      "explanation": "Helyes: A. Ez a cím a szöveg egészét átfogó kérdést fogalmazza meg, amelyre minden bekezdés egy-egy választ ad.",
+      "wrongOptions": {
+        "B": "Túl szűk: csak egy bekezdés részletét nevezi meg.",
+        "C": "Túl szűk: egyetlen mesei motívum.",
+        "D": "Túl tág és pontatlan: a szöveg nem az olvasás történetéről szól."
+      }
+    },
+    {
+      "id": "3",
+      "kind": "choice",
+      "prompt": "Melyik mondat a tételmondat ebben a bekezdésben? „Az unalomnak rossz a híre. Az iskolában büntetésnek számít, a munkahelyen a lustaság jelének, a szórakoztatóipar pedig dollármilliárdokat költ arra, hogy soha ne érezzük.”",
+      "options": [
+        {
+          "key": "A",
+          "text": "Az unalomnak rossz a híre."
+        },
+        {
+          "key": "B",
+          "text": "Az iskolában büntetésnek számít."
+        },
+        {
+          "key": "C",
+          "text": "A munkahelyen a lustaság jelének számít."
+        },
+        {
+          "key": "D",
+          "text": "A szórakoztatóipar dollármilliárdokat költ."
+        }
+      ],
+      "answer": "A",
+      "category": "lenyegkiemeles",
+      "explanation": "Helyes: A. Az első mondat általános állítást tesz, a többi három tagmondat ennek példáit sorolja (iskola, munkahely, szórakoztatóipar).",
+      "wrongOptions": {
+        "B": "Ez az első példa a rossz hírre, nem az összefoglaló állítás.",
+        "C": "Ez a második példa.",
+        "D": "Ez a harmadik példa."
+      }
+    },
+    {
+      "id": "4",
+      "kind": "choice",
+      "prompt": "Melyik a legjobb egymondatos összefoglalás? Bekezdés: „A nyelvek ritkán halnak meg hirtelen. A közösség egyre több helyzetben egy presztízsesebb nyelvet használ, a saját nyelv a családba szorul vissza, végül a gyerekek már nem tanulják meg.”",
+      "options": [
+        {
+          "key": "A",
+          "text": "A nyelvek többnyire lassú nyelvcsere során tűnnek el, amikor a közösség fokozatosan áttér egy másik nyelvre."
+        },
+        {
+          "key": "B",
+          "text": "A gyerekek nem tanulnak nyelveket."
+        },
+        {
+          "key": "C",
+          "text": "A nyelvek katasztrófák miatt halnak meg."
+        },
+        {
+          "key": "D",
+          "text": "A családban más nyelven beszélnek, mint az iskolában, és ez így is van rendjén."
+        }
+      ],
+      "answer": "A",
+      "category": "lenyegkiemeles",
+      "explanation": "Helyes: A. Megtartja a lényeget (lassú folyamat, áttérés egy másik nyelvre), és elhagyja a részleteket.",
+      "wrongOptions": {
+        "B": "Torzít: a szöveg szerint a gyerekek a közösség régi nyelvét nem tanulják meg, nem általában a nyelveket.",
+        "C": "Ellentmond a szövegnek: „ritkán halnak meg hirtelen”.",
+        "D": "Értékelést tesz hozzá, amely nincs a szövegben, és a lényeget (a nyelv eltűnése) kihagyja."
+      }
+    },
+    {
+      "id": "5",
+      "kind": "text",
+      "prompt": "Bekezdés: „A hősziget kialakulásának több oka van. Az első a felszínek anyaga. A második a növényzet hiánya. Szerepet játszik a város szerkezete is, végül maga az emberi tevékenység is melegít.” Hány okot sorol fel a bekezdés? (Számmal válaszoljon!)",
+      "answer": [
+        "4",
+        "négy",
+        "4 okot",
+        "négy okot"
+      ],
+      "category": "lenyegkiemeles",
+      "explanation": "Helyes válasz: négy (felszínek anyaga, növényzet hiánya, a város szerkezete, emberi tevékenység). A felsorolást az „első”, „második”, „is”, „végül” elemek tagolják – a vázlatkészítéshez ezek adják a pontokat."
+    },
+    {
+      "id": "6",
+      "kind": "choice",
+      "prompt": "Egy esszé utolsó bekezdése így kezdődik: „Az olasz mondás tehát csak félig igaz.” Mit jelez ez a mondat?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Az esszé összegző tézisét: a szerző árnyalja a bevezetésben idézett mondást."
+        },
+        {
+          "key": "B",
+          "text": "Egy új téma kezdetét."
+        },
+        {
+          "key": "C",
+          "text": "Egy példa bevezetését."
+        },
+        {
+          "key": "D",
+          "text": "Azt, hogy a szerző egyetért a mondással."
+        }
+      ],
+      "answer": "A",
+      "category": "lenyegkiemeles",
+      "explanation": "Helyes: A. A „tehát” összegző kötőszó és a visszautalás („Az olasz mondás”) jelzi, hogy a szerző levonja a következtetést: ez a szöveg egészének fő gondolata.",
+      "wrongOptions": {
+        "B": "A mondat visszautal a bevezetésre, nem új témát nyit.",
+        "C": "Példát a „például”, „gondoljunk csak…” fordulat vezetne be, nem a „tehát”.",
+        "D": "A „csak félig igaz” éppen azt jelzi, hogy nem ért vele teljesen egyet."
+      }
+    }
+  ],
+  "relatedCategories": [
+    "informacio-visszakereses",
+    "szovegszerkezet"
+  ]
+}

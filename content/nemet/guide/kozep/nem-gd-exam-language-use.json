@@ -1,5 +1,15 @@
 {
+  "schemaVersion": 1,
+  "id": "nem-gd-exam-language-use",
+  "subject": "nemet",
+  "revision": 1,
+  "level": "kozep",
+  "source": "generated",
+  "topic": "utmutato",
   "title": "Nyelvhelyesség",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "guide",
   "type": "exam",
   "target": "language-use",
   "summaryHu": "Az írásbeli második része: középszinten 30 perc és 18 pont, emelt szinten 50 perc és 30 pont; szótár nem használható. Lyukas szövegeket kapsz (nyitott, feleletválasztós vagy szóbankos), szóképzést, igealak-kitöltést, kimaradt szavakat, mondatrész-beillesztést, emelt szinten hibakeresést is. Itt a német nyelvtan pontossága számít: eset, névelő, melléknévvégződés, igeragozás, szórend és helyesírás.",
@@ -54,13 +64,41 @@
     }
   ],
   "phrases": [
-    { "group": "Elöljárók esete", "en": "mit, nach, bei, seit, von, zu, aus + Dativ", "hu": "mindig részes eset" },
-    { "group": "Elöljárók esete", "en": "für, um, durch, gegen, ohne + Akkusativ", "hu": "mindig tárgyeset" },
-    { "group": "Elöljárók esete", "en": "in, an, auf, über, unter, vor, hinter, neben, zwischen", "hu": "váltakozó: hová? → Akkusativ, hol? → Dativ" },
-    { "group": "Elöljárók esete", "en": "wegen, trotz, während + Genitiv", "hu": "birtokos eset (írott nyelvben)" },
-    { "group": "Kötőszó és szórend", "en": "weil, dass, ob, wenn, als, obwohl …", "hu": "mellékmondat: az ige a végén" },
-    { "group": "Kötőszó és szórend", "en": "und, aber, oder, denn, sondern", "hu": "nem változtat a szórenden (ige a 2. helyen)" },
-    { "group": "Kötőszó és szórend", "en": "deshalb, trotzdem, außerdem, dann …", "hu": "utánuk fordított szórend: az ige közvetlenül utánuk jön" }
+    {
+      "group": "Elöljárók esete",
+      "en": "mit, nach, bei, seit, von, zu, aus + Dativ",
+      "hu": "mindig részes eset"
+    },
+    {
+      "group": "Elöljárók esete",
+      "en": "für, um, durch, gegen, ohne + Akkusativ",
+      "hu": "mindig tárgyeset"
+    },
+    {
+      "group": "Elöljárók esete",
+      "en": "in, an, auf, über, unter, vor, hinter, neben, zwischen",
+      "hu": "váltakozó: hová? → Akkusativ, hol? → Dativ"
+    },
+    {
+      "group": "Elöljárók esete",
+      "en": "wegen, trotz, während + Genitiv",
+      "hu": "birtokos eset (írott nyelvben)"
+    },
+    {
+      "group": "Kötőszó és szórend",
+      "en": "weil, dass, ob, wenn, als, obwohl …",
+      "hu": "mellékmondat: az ige a végén"
+    },
+    {
+      "group": "Kötőszó és szórend",
+      "en": "und, aber, oder, denn, sondern",
+      "hu": "nem változtat a szórenden (ige a 2. helyen)"
+    },
+    {
+      "group": "Kötőszó és szórend",
+      "en": "deshalb, trotzdem, außerdem, dann …",
+      "hu": "utánuk fordított szórend: az ige közvetlenül utánuk jön"
+    }
   ],
   "mistakes": [
     {

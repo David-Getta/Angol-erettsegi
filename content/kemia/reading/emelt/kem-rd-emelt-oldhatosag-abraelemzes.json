@@ -27,8 +27,8 @@
     "id": "0",
     "kind": "text",
     "prompt": "Melyik anyag oldhatósága csökken a hőmérséklet emelésével?",
-    "answer": ["Ca(OH)₂", "Ca(OH)2", "kalcium-hidroxid", "kalcium hidroxid", "Kalcium-hidroxid", "Kalcium hidroxid"],
-      "caseSensitive": true,
+    "answer": ["Ca(OH)₂", "Ca(OH)2", "kalcium-hidroxid", "kalcium hidroxid"],
+    "caseSensitive": true,
     "maxWords": 2,
     "category": "szovegertelmezes",
     "explanation": "Helyes: a kalcium-hidroxid, Ca(OH)₂. A táblázatban csak az ő oldhatósága kisebb 80 °C-on (0,09 g), mint 20 °C-on (0,17 g); a szöveg szerint az oldódása exoterm."
@@ -85,7 +85,7 @@
       "wrongOptions": {
         "A": "A 36 g az oldhatóság 100 g vízre, nem 100 g oldatra vonatkozik – ez a leggyakoribb hiba.",
         "C": "36/64 értelmetlen hányados; a 64 g sehol nem szerepel az adatokban.",
-        "D": "Tízszeres nagyságrendi hiba: 36/136 nem 0,036."
+        "D": "Nagyságrendi hiba: 3,6 % a 36 g só 1000 g-ra vonatkoztatott aránya lenne; a helyes hányados 36/136 = 0,265."
       }
     },
     {
@@ -121,7 +121,7 @@
       "wrongOptions": {
         "B": "Ezt kapjuk, ha a 36 g sót a 100 g víz térfogatára (0,1 dm³) vonatkoztatjuk, nem az oldatéra.",
         "C": "Tízszeres hiba: a térfogatot cm³-ben hagyva vagy a sűrűséget rosszul alkalmazva kaphatjuk.",
-        "D": "Ezt kapjuk, ha a sűrűséget szorzás helyett osztásként alkalmazzuk (136 · 1,2 = 163 cm³)."
+        "D": "Ezt kapjuk, ha a sűrűséget figyelmen kívül hagyjuk, és a 136 g oldat térfogatát 136 cm³-nek vesszük: 0,615 mol / 0,136 dm³ = 4,5 mol/dm³."
       }
     }
   ],

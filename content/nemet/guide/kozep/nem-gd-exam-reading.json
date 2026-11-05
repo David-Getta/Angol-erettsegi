@@ -1,5 +1,15 @@
 {
+  "schemaVersion": 1,
+  "id": "nem-gd-exam-reading",
+  "subject": "nemet",
+  "revision": 1,
+  "level": "kozep",
+  "source": "generated",
+  "topic": "utmutato",
   "title": "Olvasott szöveg értése",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "guide",
   "type": "exam",
   "target": "reading",
   "summaryHu": "Az írásbeli első része: középszinten 60 perc és 33 pont, emelt szinten 70 perc és 30 pont; szótár nem használható. Több német nyelvű szöveget kapsz különböző feladattípusokkal (címillesztés, hiányzó mondatok vagy bekezdéskezdések, feleletválasztás, rövid válasz, igaz / hamis / nem derül ki, mondatbefejezés, információ párosítása), és mindegyik feladat egy példával (0) kezdődik. A feladatok azt mérik, megtalálod-e a konkrét információt, érted-e a fő gondolatot és a szöveg szerkezetét, és tudsz-e következtetni.",
@@ -54,14 +64,46 @@
     }
   ],
   "phrases": [
-    { "group": "Jelzőszavak a szövegben", "en": "aber / jedoch", "hu": "de, azonban (ellentét következik)" },
-    { "group": "Jelzőszavak a szövegben", "en": "trotzdem", "hu": "ennek ellenére (megengedés)" },
-    { "group": "Jelzőszavak a szövegben", "en": "deshalb / deswegen / daher", "hu": "ezért (következmény)" },
-    { "group": "Jelzőszavak a szövegben", "en": "außerdem / zudem", "hu": "ezenkívül, ráadásul (újabb információ)" },
-    { "group": "Jelzőszavak a szövegben", "en": "statt / stattdessen", "hu": "helyett / ehelyett" },
-    { "group": "Jelzőszavak a szövegben", "en": "zuerst … danach … am Ende", "hu": "először … aztán … végül (időrend)" },
-    { "group": "Visszautalás", "en": "dies / das / diese", "hu": "ez / ezek (az előző mondatra utal – hiányzó mondatnál kulcs)" },
-    { "group": "Visszautalás", "en": "dabei / darauf / damit", "hu": "eközben / arra / azzal (da-összetétel: az előzőre utal vissza)" }
+    {
+      "group": "Jelzőszavak a szövegben",
+      "en": "aber / jedoch",
+      "hu": "de, azonban (ellentét következik)"
+    },
+    {
+      "group": "Jelzőszavak a szövegben",
+      "en": "trotzdem",
+      "hu": "ennek ellenére (megengedés)"
+    },
+    {
+      "group": "Jelzőszavak a szövegben",
+      "en": "deshalb / deswegen / daher",
+      "hu": "ezért (következmény)"
+    },
+    {
+      "group": "Jelzőszavak a szövegben",
+      "en": "außerdem / zudem",
+      "hu": "ezenkívül, ráadásul (újabb információ)"
+    },
+    {
+      "group": "Jelzőszavak a szövegben",
+      "en": "statt / stattdessen",
+      "hu": "helyett / ehelyett"
+    },
+    {
+      "group": "Jelzőszavak a szövegben",
+      "en": "zuerst … danach … am Ende",
+      "hu": "először … aztán … végül (időrend)"
+    },
+    {
+      "group": "Visszautalás",
+      "en": "dies / das / diese",
+      "hu": "ez / ezek (az előző mondatra utal – hiányzó mondatnál kulcs)"
+    },
+    {
+      "group": "Visszautalás",
+      "en": "dabei / darauf / damit",
+      "hu": "eközben / arra / azzal (da-összetétel: az előzőre utal vissza)"
+    }
   ],
   "mistakes": [
     {

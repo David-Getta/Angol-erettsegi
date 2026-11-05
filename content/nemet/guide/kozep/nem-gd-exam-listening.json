@@ -1,5 +1,15 @@
 {
+  "schemaVersion": 1,
+  "id": "nem-gd-exam-listening",
+  "subject": "nemet",
+  "revision": 1,
+  "level": "kozep",
+  "source": "generated",
+  "topic": "utmutato",
   "title": "Hallott szöveg értése",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "guide",
   "type": "exam",
   "target": "listening",
   "summaryHu": "Az írásbeli harmadik része: mindkét szinten 30 perc, középszinten 33, emelt szinten 30 pont; szótár nem használható. Minden felvételt kétszer hallasz. Párbeszédek, interjúk, rádióműsorok, bejelentések és monológok jönnek, gyakran különböző német nyelvterületi kiejtéssel (Németország, Ausztria). Feladattípusok: feleletválasztás, igaz / hamis, rövid válasz, táblázatkitöltés, beszélő hozzárendelése, mondatkiegészítés.",
@@ -46,14 +56,46 @@
     }
   ],
   "phrases": [
-    { "group": "Javítás, ellentét a felvételen", "en": "aber / sondern", "hu": "de / hanem (gyakran itt jön a valódi válasz)" },
-    { "group": "Javítás, ellentét a felvételen", "en": "eigentlich", "hu": "tulajdonképpen (az eredeti terv – ami aztán nem valósult meg)" },
-    { "group": "Javítás, ellentét a felvételen", "en": "nicht mehr / noch nicht", "hu": "már nem / még nem" },
-    { "group": "Javítás, ellentét a felvételen", "en": "erst um neun", "hu": "csak kilenckor (később, mint várnánk)" },
-    { "group": "Gyakoriság, mennyiség", "en": "alle zehn Minuten / jede halbe Stunde", "hu": "tízpercenként / félóránként" },
-    { "group": "Gyakoriság, mennyiség", "en": "etwa / ungefähr / fast", "hu": "körülbelül / majdnem" },
-    { "group": "Osztrák szavak", "en": "Grüß Gott / Servus", "hu": "üdvözlés (osztrák, bajor)" },
-    { "group": "Osztrák szavak", "en": "die Matura / zusperren / der Jänner", "hu": "érettségi / bezár / január (osztrák)" }
+    {
+      "group": "Javítás, ellentét a felvételen",
+      "en": "aber / sondern",
+      "hu": "de / hanem (gyakran itt jön a valódi válasz)"
+    },
+    {
+      "group": "Javítás, ellentét a felvételen",
+      "en": "eigentlich",
+      "hu": "tulajdonképpen (az eredeti terv – ami aztán nem valósult meg)"
+    },
+    {
+      "group": "Javítás, ellentét a felvételen",
+      "en": "nicht mehr / noch nicht",
+      "hu": "már nem / még nem"
+    },
+    {
+      "group": "Javítás, ellentét a felvételen",
+      "en": "erst um neun",
+      "hu": "csak kilenckor (később, mint várnánk)"
+    },
+    {
+      "group": "Gyakoriság, mennyiség",
+      "en": "alle zehn Minuten / jede halbe Stunde",
+      "hu": "tízpercenként / félóránként"
+    },
+    {
+      "group": "Gyakoriság, mennyiség",
+      "en": "etwa / ungefähr / fast",
+      "hu": "körülbelül / majdnem"
+    },
+    {
+      "group": "Osztrák szavak",
+      "en": "Grüß Gott / Servus",
+      "hu": "üdvözlés (osztrák, bajor)"
+    },
+    {
+      "group": "Osztrák szavak",
+      "en": "die Matura / zusperren / der Jänner",
+      "hu": "érettségi / bezár / január (osztrák)"
+    }
   ],
   "mistakes": [
     {

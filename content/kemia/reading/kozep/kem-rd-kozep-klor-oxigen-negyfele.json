@@ -163,7 +163,7 @@
     {
       "id": "8",
       "kind": "choice",
-      "prompt": "Fémekkel alkotott vegyületeiben az oxidációs száma −1.",
+      "prompt": "Fémekkel alkotott kétkomponensű (biner) vegyületeiben az oxidációs száma mindig −1.",
       "options": [
         { "key": "A", "text": "klór" },
         { "key": "B", "text": "oxigén" },
@@ -172,10 +172,10 @@
       ],
       "answer": "A",
       "category": "reakciotipus",
-      "explanation": "Helyes: A. A fém-kloridokban (NaCl, CaCl₂) a klór kloridion formájában van, oxidációs száma −1. Az oxigén a fém-oxidokban −2 oxidációs számú (pl. MgO, Fe₂O₃).",
+      "explanation": "Helyes: A. A fém-kloridokban (NaCl, CaCl₂) a klór kloridion formájában van, oxidációs száma mindig −1. Az oxigén a fém-oxidokban −2 oxidációs számú (pl. MgO, Fe₂O₃), −1 csak a peroxidokban (pl. Na₂O₂), tehát rá nem igaz, hogy mindig −1.",
       "wrongOptions": {
-        "B": "Az oxigén oxidációs száma a fém-oxidokban −2.",
-        "C": "Csak a klórra igaz; az oxigén −2.",
+        "B": "Az oxigén oxidációs száma a fém-oxidokban −2 (−1 csak a peroxidokban, pl. Na₂O₂), tehát nem mindig −1.",
+        "C": "Csak a klórra igaz; az oxigén a fém-oxidokban −2.",
         "D": "A klórra igaz az állítás (pl. NaCl: Na +1, Cl −1)."
       }
     }

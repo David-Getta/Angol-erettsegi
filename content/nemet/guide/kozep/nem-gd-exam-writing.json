@@ -1,5 +1,15 @@
 {
+  "schemaVersion": 1,
+  "id": "nem-gd-exam-writing",
+  "subject": "nemet",
+  "revision": 1,
+  "level": "kozep",
+  "source": "generated",
+  "topic": "utmutato",
   "title": "Íráskészség",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "guide",
   "type": "exam",
   "target": "writing",
   "summaryHu": "Az írásbeli negyedik része két írásfeladattal. Középszinten 60 perc és 33 pont: egy rövidebb irányított szöveg (80–100 szó, 3 szempont, 11 pont) és egy hosszabb irányított szöveg (100–120 szó, 3–4 szempont, 22 pont). Emelt szinten 90 perc és 30 pont: egy irányított fogalmazás (120–150 szó, 3 szempont, 15 pont) és egy érvelő szöveg (200–250 szó, 4 szempont, 15 pont). Csak ebben a részben használható nyomtatott szótár. A szövegtípus lehet baráti vagy hivatalos e-mail, blog- vagy fórumbejegyzés, emelten cikk is.",
@@ -46,11 +56,31 @@
     }
   ],
   "phrases": [
-    { "group": "Szövegkohézió", "en": "Zuerst … / Außerdem … / Zum Schluss …", "hu": "Először … / Ezenkívül … / Végül …" },
-    { "group": "Szövegkohézió", "en": "Deshalb / Trotzdem / Zum Beispiel", "hu": "Ezért / Ennek ellenére / Például" },
-    { "group": "Szövegkohézió", "en": "Einerseits …, andererseits …", "hu": "Egyrészt …, másrészt …" },
-    { "group": "Vélemény", "en": "Meiner Meinung nach …", "hu": "Véleményem szerint … (utána az ige jön!)" },
-    { "group": "Vélemény", "en": "Ich finde, dass …", "hu": "Úgy gondolom, hogy …" }
+    {
+      "group": "Szövegkohézió",
+      "en": "Zuerst … / Außerdem … / Zum Schluss …",
+      "hu": "Először … / Ezenkívül … / Végül …"
+    },
+    {
+      "group": "Szövegkohézió",
+      "en": "Deshalb / Trotzdem / Zum Beispiel",
+      "hu": "Ezért / Ennek ellenére / Például"
+    },
+    {
+      "group": "Szövegkohézió",
+      "en": "Einerseits …, andererseits …",
+      "hu": "Egyrészt …, másrészt …"
+    },
+    {
+      "group": "Vélemény",
+      "en": "Meiner Meinung nach …",
+      "hu": "Véleményem szerint … (utána az ige jön!)"
+    },
+    {
+      "group": "Vélemény",
+      "en": "Ich finde, dass …",
+      "hu": "Úgy gondolom, hogy …"
+    }
   ],
   "mistakes": [
     {
