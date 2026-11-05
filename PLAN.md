@@ -58,6 +58,14 @@ A fázisok után az app mindig futtatható; ami kész, az használható.
 - [x] Playwright-tesztek a fő folyamatokra
 - [x] README magyarul
 
+## 12. Továbbfejlesztés
+- [x] Szabálytár (`/szabalytar`): hibakategóriánként magyar szabálymagyarázat, tipikus hibák, érettségi-tippek, mini-gyakorlás; link minden hibából
+- [x] Mintamegoldás minden írásfeladathoz (az első beadás után), mintaválasz a szóbeli feladatokhoz
+- [x] Hibák újrapróbálása (`/hibanaplo/ujraproba`) és „javítsd ki” szókártyák a javításokból
+- [x] Az érettségiről (`/vizsga`), Kifejezéstár (`/kifejezesek`), Témakörök (`/temakorok`)
+- [x] Több gyakorlófeladat: +4 olvasás és +3 hallás szintenként
+- [x] E2E: próbaérettségi, Szabálytár, minden oldal betöltése hiba nélkül; mobil elrendezés javítása; web manifest
+
 ---
 
 ## Döntések
@@ -91,3 +99,8 @@ A fázisok után az app mindig futtatható; ami kész, az használható.
 | D25 | Íráskészség: a szempontok és pontok a hivatalos táblázat szerint (közép 11 + 22, emelt 15 + 15 nyers pont = vizsgapont, `conversion: identity`); a középszintű 1. feladat szóhatára 80–100 szó lett (a 7 kártya is) | a korábbi ideiglenes 50–80 szó és 10 + 20 pont nem felelt meg a hivatalos útmutatónak |
 | D26 | Szóbeli: feladattípusonkénti rubrika (`tasks[].types`), feladatonként 4 + 3 + 3 pont; a kiejtést (3 pont, `overall`) az app nem pontozza, mert átiratból nem ítélhető meg; emelten a feladatonkénti hivatalos bontás nem volt ellenőrizhető, ezért a középszintű szerkezet arányosan 30 pontra számolva | a gyakorló feladat egy-egy vizsgafeladatnak felel meg, így a pontozás a hivatalos szerkezetet követi |
 | D27 | Emelt szinten az elégséges határa 25% (2024 óta), a középszinttel azonos | a 2026-os pontozási szabályok szerint |
+| D28 | A szabályleckék külön tartalomrész (`grammar`), hibakategóriánként egy fájl, szintfüggetlen (`kozep` mappa, `emeltOnly` jelölés) | a szabály nem függ a szinttől; így a validátor, a seed és a /feladatok parancs ugyanúgy kezeli, mint a többi tartalmat |
+| D29 | A minta- és mintaválaszok (`modelAnswer`, `sampleAnswer`) nem kerülnek be a javítási anyagba (inbox `task.card`) | ne horgonyozzák le a pontozást |
+| D30 | Írásnál a mintamegoldás csak az első beadás után látszik, szóbelinél összecsukva mindig elérhető | írásnál a saját próbálkozás a lényeg; szóbelin a minta a felkészülést segíti |
+| D31 | Hibák újrapróbálása csak nyelvhelyességi itemekre, legkorábban 20 óra múlva (`config/app.json → review`) | ezek önmagukban is megoldhatók; a késleltetés a felidézést gyakoroltatja |
+| D32 | A javításokból „fix” típusú FSRS-kártya lesz, de csak kérésre (gomb) | nem minden javítás érdemes ismétlésre; a tanuló dönti el |
