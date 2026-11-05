@@ -1,0 +1,135 @@
+{
+  "schemaVersion": 1,
+  "id": "nem-gr-detail",
+  "subject": "nemet",
+  "level": "kozep",
+  "source": "generated",
+  "topic": "nyelvtan",
+  "title": "Részletek megértése",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "grammar",
+  "type": "lesson",
+  "category": "detail",
+  "summaryHu": "A részletkérdések konkrét információra kérdeznek rá: névre, számra, időpontra, árra, helyre, okra. A szöveget nem kell szóról szóra megérteni, de a megtalált részt pontosan kell elolvasni vagy meghallgatni, mert a csapdák ott vannak: több hasonló adat szerepel, a kérdés más szavakkal fogalmaz, mint a szöveg, vagy az adat később módosul (aber, doch, stattdessen). Németül a számok (vierundfünfzig = 54) és az időpontok (Viertel vor neun, halb neun) külön figyelmet kívánnak. Ez a készség szinte minden olvasás- és hallásfeladatban pontot ér.",
+  "rules": [
+    {
+      "title": "Előbb a kérdés: mit keresel pontosan?",
+      "explanation": "Mielőtt a szöveget olvasnád vagy a felvétel elindulna, olvasd el a kérdést, húzd alá a kulcsszavakat, és döntsd el, milyen információt keresel: számot, dátumot, nevet, helyet, okot. Figyelj minden megszorításra (melyik nap, ki, eredetileg vagy végül, összesen) – ezek döntik el, melyik adat a jó.",
+      "emeltOnly": false,
+      "examples": [
+        { "en": "Frage: Wann schließt das Museum am Sonntag?", "note": "Kulcsszavak: schließt, am Sonntag → a vasárnapi záróidőt keresed; a nyitás és a hétköznapi záróra a csapda." },
+        { "en": "Frage: Wie viele Leute arbeiten jetzt im Tierheim?", "note": "jetzt → a mostani létszám kell, nem az, hogy hányan kezdték." }
+      ]
+    },
+    {
+      "title": "Szinonimát keress, ne szó szerinti egyezést",
+      "explanation": "A feladatírók szinte mindig átfogalmazzák az információt: a kérdés szavai helyett a szövegben szinonima, körülírás vagy más szerkezet áll. Ha egy kérdésszót szó szerint megtalálsz, az még nem bizonyíték – ellenőrizd, hogy a mondat valóban arra válaszol-e.",
+      "emeltOnly": false,
+      "examples": [
+        { "en": "Frage: Wie ist Tom zum Festival gekommen?\nText: „…am Ende hat ihn sein Onkel mit dem Auto mitgenommen.”", "note": "A gekommen nincs a válaszmondatban; a mitgenommen (elvitte) a válasz: autóval." },
+        { "en": "Frage: Warum wurde der Ausflug abgesagt?\nText: „Es haben sich zu wenige Schüler angemeldet, deshalb findet die Fahrt nicht statt.”", "note": "abgesagt = findet nicht statt; az ok a deshalb előtt áll: kevés jelentkező." }
+      ]
+    },
+    {
+      "title": "Olvasd végig a mondatot: módosítás, kivétel, tagadás",
+      "explanation": "A megtalált adatnál ne állj meg az első számnál vagy névnél. A mondat folytatása gyakran módosítja: aber, doch, jedoch, eigentlich, stattdessen, außer, erst, nur. Hallásnál gyakori, hogy a beszélő javítja magát (Nein, Moment, ich meine …; Ach nein, doch nicht …) – a végleges adat számít.",
+      "emeltOnly": false,
+      "examples": [
+        { "en": "Das Konzert sollte um 20 Uhr beginnen, wegen des Gewitters wurde es aber auf halb zehn verschoben.", "note": "Két időpont: az eredeti (20 óra) és a tényleges (21.30). Ha a kérdés az, mikor kezdődött a koncert: 21.30." },
+        { "en": "Wir treffen uns um zehn am Bahnhof – ach nein, der Zug fährt ja um zehn, sagen wir lieber Viertel vor.", "note": "Javítás: a találkozó 9.45-kor van, nem 10-kor." }
+      ]
+    },
+    {
+      "title": "Számok, időpontok, árak németül",
+      "explanation": "A német kétjegyű számokban az egyes áll elöl: vierundfünfzig = 54, neunzehn = 19, neunzig = 90 – hallásnál könnyű felcserélni. Időpont: halb neun = 8.30 (mint a magyar „fél kilenc”), Viertel nach acht = 8.15, Viertel vor neun = 8.45; Ausztriában és Dél-Németországban dreiviertel neun = 8.45, viertel neun = 8.15 (mint a magyarban). Ár: 3,50 € = drei Euro fünfzig. Gyakran számolni is kell (kedvezmény, időtartam), és a teljes választ írd le: 8 €, nem csak 8.",
+      "emeltOnly": false,
+      "examples": [
+        { "en": "Die Karte kostet 12 Euro, Schüler zahlen aber nur die Hälfte.", "note": "Ha a diákjegy árát kérdezik: 6 €. A 12 € a csapda." },
+        { "en": "Der Bus kommt um Viertel vor acht.", "note": "7.45 – nem 8.15!" }
+      ]
+    },
+    {
+      "title": "Rövid válasznál: csak annyit, amennyit kérnek",
+      "explanation": "Rövid válaszos és táblázatkitöltős feladatnál nem kell teljes mondat: írd le a lényeges szavakat, lehetőleg a szöveg szavaival, de úgy, hogy illeszkedjenek a kérdéshez. Tartsd be a szókorlátot: a túl hosszú válasz rossznak számíthat, és ha felesleges, téves információt is beleírsz, az elronthatja a választ. Helyesírási hiba csak akkor nem gond, ha a szó egyértelműen felismerhető.",
+      "emeltOnly": false,
+      "examples": [
+        { "en": "Frage: Was haben die Freiwilligen gesammelt? (max. 3 Wörter)\nText: „Die Freiwilligen haben am Wochenende am Donauufer Plastikflaschen gesammelt.”", "note": "Jó válasz: Plastikflaschen. Nem kell az egész mondatot kimásolni." }
+      ]
+    }
+  ],
+  "commonMistakes": [
+    { "wrong": "Az első időpontot írom be, ami a mondatban szerepel: 20 Uhr.", "right": "Végigolvasom a mondatot: a koncertet halb zehnre (21.30) tették át, a kérdés a tényleges kezdésre vonatkozik → 21.30.", "why": "A szövegek szándékosan több hasonló adatot tartalmaznak. Az a jó, amelyik a kérdés minden részére illik (melyik nap, ki, eredetileg vagy végül)." },
+    { "wrong": "Hallottam: vierundfünfzig → 45-öt írok.", "right": "A német számokban az egyes áll elöl: vier-und-fünfzig = 54.", "why": "A magyarban a tízes áll elöl (ötvennégy), a németben fordítva. Hallás közben jegyzetelj így: először az egyest, aztán a tízest írd le a megfelelő helyre." },
+    { "wrong": "A kérdés szavát keresem szó szerint, és abból a mondatból válaszolok, ahol megtalálom.", "right": "A kérdés jelentését keresem: ugyanaz más szavakkal is állhat (abgesagt → findet nicht statt, mit dem Auto → mitgenommen).", "why": "A feladatírók átfogalmazzák az információt; a szó szerinti egyezés gyakran éppen egy rossz mondatnál van, csapdaként." },
+    { "wrong": "Hallásnál lemaradtam egy adatról, ezért azon gondolkodom, és közben a következő kérdés válasza is elmegy.", "right": "Továbblépek a következő kérdésre, és a második meghallgatáskor pótolom a hiányzó adatot.", "why": "A hallás részben a felvételeket kétszer hallod. Ha egy kérdésen leragadsz, a következőket is elveszítheted; a második meghallgatás a pótlásra és az ellenőrzésre való." }
+  ],
+  "examTips": [
+    "Rövid válasz és táblázatkitöltés: a kérdések többnyire a szöveg sorrendjét követik. Ha megtaláltad a 3. válasz helyét, a 4.-et utána keresd.",
+    "Hallás előtt használd ki az olvasási időt: írd a kérdések mellé, milyen adatot vársz (szám, név, nap, hely, ár). Számoknál és időpontoknál készülj fel a német sorrendre (einundzwanzig = 21, Viertel vor = negyed … előtt).",
+    "Ha a felvételen betűznek egy nevet (Das schreibt man …), az azért van, mert pontosan le kell írnod – jegyzeteld betűről betűre. Tanuld meg a német ábécé kiejtését (pl. e = [é], i = [í], j = [jot], v = [fau], w = [vé], y = [üpszilon])."
+  ],
+  "practice": [
+    {
+      "id": "1",
+      "kind": "choice",
+      "prompt": "Der Deutschkurs beginnt normalerweise um 17 Uhr und dauert 90 Minuten. Diese Woche fängt er wegen einer Lehrerkonferenz eine Stunde später an.\n\nWann endet der Kurs diese Woche?",
+      "options": [
+        { "key": "A", "text": "Um 17 Uhr" },
+        { "key": "B", "text": "Um 18 Uhr" },
+        { "key": "C", "text": "Um 18.30 Uhr" },
+        { "key": "D", "text": "Um 19.30 Uhr" }
+      ],
+      "answer": "D",
+      "category": "detail",
+      "evidence": "Diese Woche fängt er wegen einer Lehrerkonferenz eine Stunde später an.",
+      "explanation": "Helyes: D. A kurzus ezen a héten egy órával később, 18 órakor kezdődik, és 90 percig tart, tehát 19.30-kor ér véget. Két adatot kell összekapcsolni és számolni.",
+      "wrongOptions": {
+        "A": "17 óra a szokásos kezdés (normalerweise), nem a befejezés.",
+        "B": "18 óra az e heti kezdés (eine Stunde später), nem a befejezés.",
+        "C": "18.30 a szokásos befejezés lenne (17 + 90 perc), de ezen a héten egy órával később kezdődik."
+      }
+    },
+    {
+      "id": "2",
+      "kind": "choice",
+      "prompt": "Früher ist Lena jeden Tag mit dem Rad zur Arbeit gefahren. Seit ihre Firma in einen anderen Stadtteil umgezogen ist, nimmt sie die S-Bahn. Nur bei schönem Wetter geht sie manchmal zu Fuß nach Hause.\n\nWie kommt Lena jetzt normalerweise zur Arbeit?",
+      "options": [
+        { "key": "A", "text": "Mit dem Fahrrad" },
+        { "key": "B", "text": "Mit der S-Bahn" },
+        { "key": "C", "text": "Zu Fuß" },
+        { "key": "D", "text": "Mit dem Auto" }
+      ],
+      "answer": "B",
+      "category": "detail",
+      "evidence": "Seit ihre Firma in einen anderen Stadtteil umgezogen ist, nimmt sie die S-Bahn.",
+      "explanation": "Helyes: B. A kérdés a mostani, szokásos munkába járásra vonatkozik (jetzt, normalerweise, zur Arbeit): mióta a cége átköltözött, S-Bahnnal jár.",
+      "wrongOptions": {
+        "A": "A Früher … mit dem Rad azt jelenti, hogy régen biciklivel járt – ma már nem.",
+        "C": "Gyalog csak néha, szép időben megy – és akkor is haza (nach Hause), nem munkába.",
+        "D": "Az autó egyáltalán nem szerepel a szövegben."
+      }
+    },
+    {
+      "id": "3",
+      "kind": "choice",
+      "prompt": "Das Freibad ist von Montag bis Freitag von 6 bis 21 Uhr geöffnet, am Samstag von 8 bis 20 Uhr. Sonntags bleibt es geschlossen – außer in den Sommerferien, dann ist es auch sonntags von 9 bis 18 Uhr offen.\n\nWann kann man an einem Sonntag in den Sommerferien schwimmen gehen?",
+      "options": [
+        { "key": "A", "text": "Gar nicht – sonntags ist das Bad geschlossen." },
+        { "key": "B", "text": "Von 6 bis 21 Uhr" },
+        { "key": "C", "text": "Von 8 bis 20 Uhr" },
+        { "key": "D", "text": "Von 9 bis 18 Uhr" }
+      ],
+      "answer": "D",
+      "category": "detail",
+      "evidence": "außer in den Sommerferien, dann ist es auch sonntags von 9 bis 18 Uhr offen",
+      "explanation": "Helyes: D. Vasárnap általában zárva van, de az außer in den Sommerferien kivételt tesz: a nyári szünetben vasárnap is nyitva tart, 9-től 18 óráig. A kivételt csak az veszi észre, aki végigolvassa a mondatot.",
+      "wrongOptions": {
+        "A": "Ez a mondat első felére igaz (Sonntags bleibt es geschlossen), de az außer in den Sommerferien kivételt tesz.",
+        "B": "Ez a hétköznapi nyitvatartás (von Montag bis Freitag).",
+        "C": "Ez a szombati nyitvatartás (am Samstag)."
+      }
+    }
+  ],
+  "relatedCategories": ["true-false-trap", "vocabulary-in-context"]
+}

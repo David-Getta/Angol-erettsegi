@@ -1,0 +1,265 @@
+{
+  "schemaVersion": 1,
+  "id": "fiz-gr-vektor-irany",
+  "subject": "fizika",
+  "revision": 1,
+  "level": "kozep",
+  "source": "generated",
+  "topic": "nyelvtan",
+  "title": "Irányok, előjelek, vektorok",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "grammar",
+  "type": "lesson",
+  "category": "vektor-irany",
+  "summaryHu": "Az erő, a sebesség, a gyorsulás, a lendület és a térerősség vektor: iránya is van, ezért nem adhatók össze egyszerűen számként, ha nem egy egyenesbe esnek. Az előjelek (lassulás, munkavégzés, hőcsere iránya) következetes kezelése nélkül a megmaradási törvények és a főtételek is rossz eredményt adnak.",
+  "rules": [
+    {
+      "title": "Vektorok összeadása",
+      "explanation": "Egy egyenesbe eső vektoroknál válassz pozitív irányt, és előjelesen add össze őket. Merőleges vektoroknál Pitagorasz-tétellel számolj, egyébként vektorábrával (paralelogramma) vagy összetevőkkel.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "Két egymásra merőleges erő: 3 N és 4 N → eredő 5 N",
+          "hu": "√(3² + 4²) = 5."
+        },
+        {
+          "en": "Ellentétes erők: 20 N előre, 8 N hátra → eredő 12 N előre",
+          "hu": "Pozitív irány: előre."
+        }
+      ]
+    },
+    {
+      "title": "Felbontás összetevőkre",
+      "explanation": "Lejtőn a nehézségi erőt lejtőirányú (m·g·sin α) és lejtőre merőleges (m·g·cos α) összetevőre bontjuk. Ferde hajításnál a kezdősebesség vízszintes összetevője v₀·cos α (állandó), függőleges összetevője v₀·sin α (g-vel változik).",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "30°-os lejtő, m = 2 kg: lejtőirányú erő 2 · 10 · 0,5 = 10 N",
+          "hu": "A nyomóerő 2 · 10 · 0,866 ≈ 17,3 N."
+        },
+        {
+          "en": "v₀ = 20 m/s, α = 30°: vₓ ≈ 17,3 m/s, v_y = 10 m/s",
+          "hu": "A pálya csúcsán csak vₓ marad."
+        }
+      ]
+    },
+    {
+      "title": "Előjelek a mozgásban",
+      "explanation": "Rögzíts egy pozitív irányt (pl. a mozgás iránya vagy felfelé). A lassuló mozgás gyorsulása ekkor negatív. Függőleges hajításnál felfelé pozitív irányban g = −9,81 m/s². A sebesség előjele az irányt, a nagysága a gyorsaságot mutatja.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "Fékezés: v₀ = 20 m/s, a = −5 m/s² → v = 20 − 5t",
+          "hu": "4 s után megáll."
+        },
+        {
+          "en": "Felfelé dobott labda: v = v₀ − g·t",
+          "hu": "A csúcson v = 0, utána negatív (lefelé mozog)."
+        }
+      ]
+    },
+    {
+      "title": "Előjelek az energiában és a hőtanban",
+      "explanation": "A munka előjeles: ha az erő a mozgással ellentétes (fékezés, súrlódás), a munkája negatív. Az I. főtételben (ΔE = Q + W) a felvett hő és a gázon végzett munka pozitív; a gáz által végzett munka (tágulás) a gázon végzett munkaként negatív.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "Súrlódás: W = −F_s·s",
+          "hu": "A test mozgási energiája csökken."
+        },
+        {
+          "en": "Táguló gáz: W_gázon = −p·ΔV",
+          "hu": "500 J hő, 200 J tágulási munka: ΔE = 500 − 200 = 300 J."
+        }
+      ]
+    },
+    {
+      "title": "Irányszabályok az elektromágnességben",
+      "explanation": "A mágneses mezőben mozgó töltésre ható Lorentz-erő merőleges a sebességre és az indukcióra is (jobbkéz-szabály pozitív töltésre; elektronra fordított). Az indukált áram irányát Lenz törvénye adja: akadályozza az őt létrehozó változást. Az áramjárta egyenes vezető mágneses indukcióvonalai koncentrikus körök (jobbkéz-szabály).",
+      "emeltOnly": true,
+      "examples": [
+        {
+          "en": "Mágnes északi pólusa közeledik a gyűrűhöz → a gyűrű felénk eső oldala északi pólus lesz",
+          "hu": "Taszítás, a közeledés akadályozása."
+        },
+        {
+          "en": "Merőlegesen belépő elektron homogén mágneses mezőben körpályán mozog",
+          "hu": "Az erő mindig merőleges a sebességre, ezért munkát nem végez."
+        }
+      ]
+    }
+  ],
+  "commonMistakes": [
+    {
+      "wrong": "Két 10 N-os, egymásra merőleges erő eredője 20 N.",
+      "right": "Az eredő √(10² + 10²) ≈ 14,1 N.",
+      "why": "Csak egy irányba mutató erők nagysága adódik össze; merőlegeseknél vektorösszeg (Pitagorasz) kell."
+    },
+    {
+      "wrong": "A pálya legmagasabb pontján a ferdén elhajított test sebessége nulla.",
+      "right": "A csúcson csak a függőleges összetevő nulla; a sebesség v₀·cos α.",
+      "why": "A vízszintes sebességösszetevő a hajítás alatt állandó."
+    },
+    {
+      "wrong": "A fékező autó gyorsulása +5 m/s², ezért v = 20 + 5t.",
+      "right": "Ha a mozgás iránya pozitív, a fékezés gyorsulása −5 m/s²: v = 20 − 5t.",
+      "why": "A lassulás a sebességgel ellentétes irányú gyorsulás, az előjelet következetesen kell kezelni."
+    },
+    {
+      "wrong": "A gáz 500 J hőt vesz fel és 200 J munkát végez, tehát ΔE = 700 J.",
+      "right": "ΔE = Q + W_gázon = 500 J + (−200 J) = 300 J.",
+      "why": "A gáz által VÉGZETT munka csökkenti a belső energiát."
+    }
+  ],
+  "examTips": [
+    "Rajzolj! Az erőket, sebességeket nyíllal ábrázoló vázlat a számításos feladatban az indoklás része, és segít az előjelek helyes kezelésében.",
+    "Teszt: a „mekkora a sebesség a pálya tetején”, „mekkora az eredő erő” típusú kérdéseknél a rossz válaszok gyakran a vektorok egyszerű összeadásából vagy az összetevő elhagyásából adódnak.",
+    "Az I. főtételnél és a munkánál írd le, melyik előjelkonvenciót használod („a gázon végzett munka pozitív”)."
+  ],
+  "practice": [
+    {
+      "id": "1",
+      "kind": "choice",
+      "prompt": "Egy testre két, egymásra merőleges erő hat: 6 N és 8 N. Mekkora az eredő erő?",
+      "options": [
+        {
+          "key": "A",
+          "text": "2 N"
+        },
+        {
+          "key": "B",
+          "text": "10 N"
+        },
+        {
+          "key": "C",
+          "text": "14 N"
+        },
+        {
+          "key": "D",
+          "text": "48 N"
+        }
+      ],
+      "answer": "B",
+      "category": "vektor-irany",
+      "explanation": "Helyes: B. Merőleges vektoroknál az eredő a Pitagorasz-tétellel: √(6² + 8²) = √100 = 10 N.",
+      "wrongOptions": {
+        "A": "A különbség csak ellentétes irányú erőknél lenne az eredő.",
+        "C": "Az összeg csak azonos irányú erőknél lenne az eredő.",
+        "D": "Az erők szorzata nem eredő erő (és mértékegysége N² lenne)."
+      }
+    },
+    {
+      "id": "2",
+      "kind": "choice",
+      "prompt": "Egy 4 kg-os láda 30°-os súrlódásmentes lejtőn csúszik. Mekkora a nehézségi erő lejtővel párhuzamos összetevője? (g = 10 m/s²)",
+      "options": [
+        {
+          "key": "A",
+          "text": "40 N"
+        },
+        {
+          "key": "B",
+          "text": "34,6 N"
+        },
+        {
+          "key": "C",
+          "text": "20 N"
+        },
+        {
+          "key": "D",
+          "text": "10 N"
+        }
+      ],
+      "answer": "C",
+      "category": "vektor-irany",
+      "explanation": "Helyes: C. A lejtőirányú összetevő m·g·sin α = 4 · 10 · 0,5 = 20 N; ez gyorsítja a ládát (a = g·sin α = 5 m/s²).",
+      "wrongOptions": {
+        "A": "40 N a teljes nehézségi erő; ennek csak egy része hat a lejtő irányában.",
+        "B": "34,6 N = m·g·cos α, a lejtőre MERŐLEGES összetevő.",
+        "D": "10 N = m·g·sin α / 2 lenne; nincs ilyen felezés."
+      }
+    },
+    {
+      "id": "3",
+      "kind": "choice",
+      "prompt": "Egy labdát függőlegesen felfelé dobunk 15 m/s sebességgel. Mekkora és milyen irányú a sebessége 2 s múlva? (g = 10 m/s², légellenállás nélkül)",
+      "options": [
+        {
+          "key": "A",
+          "text": "35 m/s felfelé"
+        },
+        {
+          "key": "B",
+          "text": "5 m/s felfelé"
+        },
+        {
+          "key": "C",
+          "text": "5 m/s lefelé"
+        },
+        {
+          "key": "D",
+          "text": "0 m/s"
+        }
+      ],
+      "answer": "C",
+      "category": "vektor-irany",
+      "explanation": "Helyes: C. Felfelé pozitív iránnyal v = v₀ − g·t = 15 − 10 · 2 = −5 m/s. A negatív előjel azt jelenti, hogy a labda már lefelé mozog (1,5 s-nál érte el a csúcsot).",
+      "wrongOptions": {
+        "A": "A g-t hozzáadta; felfelé mozgásnál a nehézségi gyorsulás lassít.",
+        "B": "Jó a nagyság, de rossz az irány: a negatív előjel lefelé mozgást jelent.",
+        "D": "A sebesség a csúcson, 1,5 s-nál nulla, 2 s-nál már nem."
+      }
+    },
+    {
+      "id": "4",
+      "kind": "choice",
+      "prompt": "Súrlódásos vízszintes úton csúszó testnél milyen előjelű a súrlódási erő munkája?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Pozitív, mert a test mozog."
+        },
+        {
+          "key": "B",
+          "text": "Negatív, mert a súrlódási erő a mozgással ellentétes irányú."
+        },
+        {
+          "key": "C",
+          "text": "Nulla, mert a súrlódási erő vízszintes."
+        },
+        {
+          "key": "D",
+          "text": "Attól függ, mekkora a test tömege."
+        }
+      ],
+      "answer": "B",
+      "category": "vektor-irany",
+      "explanation": "Helyes: B. W = F·s·cos α, és a súrlódási erő az elmozdulással 180°-ot zár be (cos 180° = −1), ezért a munkája negatív: csökkenti a test mozgási energiáját.",
+      "wrongOptions": {
+        "A": "A munka előjele az erő és az elmozdulás szögétől függ, nem attól, hogy van-e mozgás.",
+        "C": "Nulla munkát a mozgásra merőleges erő végez; a súrlódás az elmozdulással párhuzamos (ellentétes).",
+        "D": "A tömeg a munka nagyságát befolyásolja, az előjelét nem."
+      }
+    },
+    {
+      "id": "5",
+      "kind": "text",
+      "prompt": "Egy gáz 300 J hőt ad le, miközben a környezete 500 J munkát végez rajta (összenyomja). Mennyivel változik a belső energiája? (J-ban, előjellel)",
+      "answer": [
+        "+200",
+        "200",
+        "+200 J",
+        "200 J"
+      ],
+      "maxWords": 2,
+      "category": "vektor-irany",
+      "explanation": "Helyes: +200 J (nő). ΔE = Q + W = −300 J + 500 J = +200 J: a leadott hő negatív, a gázon végzett munka pozitív."
+    }
+  ],
+  "relatedCategories": [
+    "torvenyek",
+    "kepletek",
+    "grafikon"
+  ]
+}

@@ -1,0 +1,259 @@
+{
+  "schemaVersion": 1,
+  "id": "bio-gr-genetikai-szamitas",
+  "subject": "biologia",
+  "revision": 1,
+  "level": "kozep",
+  "source": "generated",
+  "topic": "nyelvtan",
+  "title": "Genetikai feladatok megoldása",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "grammar",
+  "type": "lesson",
+  "category": "genetikai-szamitas",
+  "summaryHu": "A genetikai feladatok (keresztezések, vércsoportok, ivarhoz kötött öröklés, családfa, emelten Hardy–Weinberg) minden érettségin előfordulnak, és biztos pontot jelentenek, ha a megoldás menetét betartod: jelölés → szülői genotípusok → ivarsejtek → keresztezési táblázat → arányok. A hibák többsége a jelölésben, a valószínűségek összeszorzásában és a feltételes valószínűségben van.",
+  "rules": [
+    {
+      "title": "Monohibrid keresztezés lépései",
+      "explanation": "1. Jelöld az allélokat (domináns nagybetű, recesszív kisbetű). 2. Írd fel a szülők genotípusát. 3. Írd fel az ivarsejteket (minden ivarsejt egy allélt kap). 4. Készíts keresztezési táblázatot. 5. Add meg a genotípus- és fenotípusarányt.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "Aa × Aa → 1 AA : 2 Aa : 1 aa; fenotípus 3 domináns : 1 recesszív.",
+          "hu": "Klasszikus hasadás."
+        },
+        {
+          "en": "Aa × aa (tesztelő keresztezés) → 1 Aa : 1 aa.",
+          "hu": "Az utódok fele recesszív fenotípusú."
+        }
+      ]
+    },
+    {
+      "title": "Független öröklődés: szorzási szabály",
+      "explanation": "Ha a gének különböző kromoszómán vannak, a génpárokat külön-külön kezeld, és a valószínűségeket szorozd össze. Egy n génpárra heterozigóta egyed 2ⁿ-féle ivarsejtet képez.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "AaBb × AaBb: P(aabb) = 1/4 · 1/4 = 1/16; fenotípusarány 9 : 3 : 3 : 1.",
+          "hu": "Szorzás."
+        },
+        {
+          "en": "AaBbCc egyed ivarsejtjeinek száma: 2³ = 8-féle.",
+          "hu": "2ⁿ szabály."
+        }
+      ]
+    },
+    {
+      "title": "Kodominancia és az AB0-vércsoport",
+      "explanation": "Az AB0-rendszerben három allél van: A és B kodomináns, a 0 mindkettőhöz képest recesszív. Fenotípus–genotípus: A: AA vagy A0; B: BB vagy B0; AB: AB; 0: 00.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "A0 × B0 → AB, A0, B0, 00: mind a négy vércsoport előfordulhat, egyenként 1/4 eséllyel.",
+          "hu": "Négy fenotípus."
+        },
+        {
+          "en": "AB × 00 → A0 vagy B0: a gyermek A vagy B vércsoportú, sosem AB és sosem 0.",
+          "hu": "Kizárás."
+        }
+      ]
+    },
+    {
+      "title": "Ivarhoz kötött (X-hez kötött) öröklés",
+      "explanation": "Az X kromoszómán lévő gén alléljait X betűvel jelöld (X^A, X^a). A férfi (XY) egyetlen X-ét az anyjától kapja, és a lányainak adja tovább; ezért X-hez kötött recesszív betegség (színtévesztés, hemofília) a férfiakban gyakoribb.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "Hordozó anya (X^A X^a) × egészséges apa (X^A Y): a fiúk fele beteg, a lányok fele hordozó, beteg lány nincs.",
+          "hu": "Tipikus feladat."
+        },
+        {
+          "en": "Beteg apa (X^a Y) minden lánya legalább hordozó, fiainak nem adja át az allélt.",
+          "hu": "Apa → lány."
+        }
+      ]
+    },
+    {
+      "title": "Családfaelemzés és feltételes valószínűség",
+      "explanation": "Ha két egészséges szülőnek beteg gyermeke van, a betegség recesszív. Ha beteg lány apja egészséges, a betegség nem lehet X-hez kötött recesszív → autoszomális. Egy két hordozó szülőtől származó EGÉSZSÉGES gyermek 2/3 valószínűséggel hordozó (az AA, Aa, aA lehetőségek közül kettő Aa).",
+      "emeltOnly": true,
+      "examples": [
+        {
+          "en": "Egészséges testvér hordozó voltának esélye 2/3, nem 1/2.",
+          "hu": "Feltételes valószínűség."
+        },
+        {
+          "en": "Minden gyermeknél újra 1/4 a betegség esélye, akárhány beteg gyermek született már.",
+          "hu": "Független események."
+        }
+      ]
+    },
+    {
+      "title": "Hardy–Weinberg-szabály",
+      "explanation": "Nagy, véletlenszerűen párosodó populációban, mutáció, szelekció és vándorlás nélkül: p + q = 1 és p² + 2pq + q² = 1. A recesszív allél gyakoriságát a recesszív fenotípusúak arányából számold: q = √q².",
+      "emeltOnly": true,
+      "examples": [
+        {
+          "en": "Ha a populáció 16%-a recesszív fenotípusú: q² = 0,16 → q = 0,4; p = 0,6; heterozigóták: 2pq = 0,48.",
+          "hu": "Lépésenként."
+        },
+        {
+          "en": "A domináns fenotípusúak között a heterozigóták aránya: 2pq / (p² + 2pq).",
+          "hu": "Gyakori emelt kérdés."
+        }
+      ]
+    }
+  ],
+  "commonMistakes": [
+    {
+      "wrong": "Négy gyermekből biztosan egy lesz beteg (Aa × Aa).",
+      "right": "Minden gyermek 1/4 valószínűséggel beteg; négy gyermekből várhatóan egy, de lehet nulla vagy több is.",
+      "why": "Az arány valószínűséget jelent, nem előre biztos eloszlást."
+    },
+    {
+      "wrong": "Egy két hordozótól született egészséges gyermek 1/2 eséllyel hordozó.",
+      "right": "2/3 eséllyel hordozó.",
+      "why": "Az aa lehetőség kiesik (egészséges), a maradék három egyenlő esélyű kombinációból kettő Aa."
+    },
+    {
+      "wrong": "A színtévesztő fiú az apjától örökölte a betegséget.",
+      "right": "A fiú az X kromoszómáját az anyjától kapja, ezért az anyjától örökölte.",
+      "why": "Az apa a fiának Y kromoszómát ad."
+    },
+    {
+      "wrong": "AaBb × AaBb: P(aabb) = 1/4 + 1/4 = 1/2.",
+      "right": "P(aabb) = 1/4 · 1/4 = 1/16.",
+      "why": "Független eseményeknél az együttes valószínűség a valószínűségek szorzata."
+    },
+    {
+      "wrong": "q² = 0,16 → q = 0,08",
+      "right": "q = √0,16 = 0,4",
+      "why": "A gyakoriság négyzetgyökét kell venni, nem a felét."
+    }
+  ],
+  "examTips": [
+    "Mindig írd fel a jelölést és a szülői genotípusokat, még a rövid számításos feladatban is – így elkerülöd a kis- és nagybetűk összekeverését.",
+    "Családfánál először az öröklésmenetet döntsd el (domináns/recesszív, autoszomális/X-hez kötött), és írd le, melyik személy alapján döntöttél – ezt a szóbelin és az emelt feladatokban külön pontozzák.",
+    "A valószínűséget add meg törtben és százalékban is, ha nem tudod, melyiket kéri a kulcs; az app mindkettőt elfogadja."
+  ],
+  "practice": [
+    {
+      "id": "1",
+      "kind": "text",
+      "prompt": "Aa × Aa keresztezésben az utódok hány százaléka heterozigóta?",
+      "answer": [
+        "50",
+        "50%",
+        "50 %",
+        "1/2",
+        "0,5",
+        "0.5"
+      ],
+      "category": "genetikai-szamitas",
+      "explanation": "Helyes: 50%. A keresztezési táblázat négy egyenlő esélyű kombinációjából (AA, Aa, aA, aa) kettő heterozigóta: 2/4 = 50%.",
+      "maxWords": 2
+    },
+    {
+      "id": "2",
+      "kind": "text",
+      "prompt": "AaBb × aabb (tesztelő keresztezés) – az utódok hányad része aabb genotípusú?",
+      "answer": [
+        "1/4",
+        "25%",
+        "25 %",
+        "0,25",
+        "0.25",
+        "25"
+      ],
+      "category": "genetikai-szamitas",
+      "explanation": "Helyes: 1/4. Az AaBb négyféle ivarsejtet ad egyenlő arányban (AB, Ab, aB, ab), az aabb csak ab-t; az ab × ab találkozás esélye 1/4.",
+      "maxWords": 2
+    },
+    {
+      "id": "3",
+      "kind": "choice",
+      "prompt": "Egy 0 vércsoportú anyának AB vércsoportú gyermeke született. Mi következik ebből?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Az apa biztosan AB vércsoportú."
+        },
+        {
+          "key": "B",
+          "text": "Ez nem lehetséges: 0-s anyának nem lehet AB gyermeke."
+        },
+        {
+          "key": "C",
+          "text": "Az apa biztosan 0-s vércsoportú."
+        },
+        {
+          "key": "D",
+          "text": "Az apa A vércsoportú."
+        }
+      ],
+      "answer": "B",
+      "category": "genetikai-szamitas",
+      "explanation": "Helyes: B. A 0-s anya (00) csak 0 allélt adhat; az AB gyermeknek viszont mindkét szülőtől A vagy B allélt kellett kapnia. A 0-s anya gyermeke csak A0, B0 vagy 00 lehet.",
+      "wrongOptions": {
+        "A": "Még AB apa esetén is csak A0 vagy B0 lehetne a gyermek, mert az anya 0 allélt ad.",
+        "C": "Két 0-s szülő gyermeke csak 0-s lehet.",
+        "D": "A vércsoportú apával is csak A0 vagy 00 lehetne a gyermek."
+      }
+    },
+    {
+      "id": "4",
+      "kind": "text",
+      "prompt": "Egy hordozó nő (X^A X^a) és egy egészséges férfi (X^A Y) gyermekei közül mekkora valószínűséggel lesz egy gyermek (nemtől függetlenül) beteg? Adja meg százalékban!",
+      "answer": [
+        "25",
+        "25%",
+        "25 %",
+        "1/4",
+        "0,25",
+        "0.25"
+      ],
+      "category": "genetikai-szamitas",
+      "explanation": "Helyes: 25%. A négy egyenlő esélyű utód: X^A X^A, X^A X^a (egészséges lányok), X^A Y (egészséges fiú), X^a Y (beteg fiú). Négyből egy beteg: 1/4.",
+      "maxWords": 2
+    },
+    {
+      "id": "5",
+      "kind": "text",
+      "prompt": "Két egészséges, hordozó (Aa) szülő EGÉSZSÉGES gyermekének mekkora a valószínűsége, hogy hordozó? (törtben)",
+      "answer": [
+        "2/3",
+        "66,7%",
+        "66.7%",
+        "67%",
+        "0,67",
+        "0.67",
+        "66,7"
+      ],
+      "category": "genetikai-szamitas",
+      "explanation": "Helyes: 2/3. Az egészséges gyermek lehetséges genotípusai AA, Aa, aA (az aa kizárt); ebből kettő hordozó, így a valószínűség 2/3.",
+      "maxWords": 2
+    },
+    {
+      "id": "6",
+      "kind": "text",
+      "prompt": "Egy populációban a recesszív fenotípusúak aránya 9%. Mekkora a recesszív allél gyakorisága (q)?",
+      "answer": [
+        "0,3",
+        "0.3",
+        "30%",
+        "30 %",
+        "0,30",
+        "0.30"
+      ],
+      "category": "genetikai-szamitas",
+      "explanation": "Helyes: 0,3. q² = 0,09, ezért q = √0,09 = 0,3; a domináns allél gyakorisága p = 0,7.",
+      "maxWords": 2
+    }
+  ],
+  "relatedCategories": [
+    "fogalomhasznalat",
+    "okologiai-szamitas",
+    "evolucios-ervel"
+  ]
+}

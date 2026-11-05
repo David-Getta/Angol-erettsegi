@@ -1,0 +1,247 @@
+{
+  "schemaVersion": 1,
+  "id": "fol-gr-terkep-olvasas",
+  "subject": "foldrajz",
+  "revision": 1,
+  "level": "kozep",
+  "source": "generated",
+  "topic": "nyelvtan",
+  "title": "Térképolvasás, jelmagyarázat, méretarány",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "grammar",
+  "type": "lesson",
+  "category": "terkep-olvasas",
+  "summaryHu": "A térkép a földrajz alapvető eszköze: a méretarány, a fokhálózat, a jelmagyarázat és a domborzatábrázolás pontos ismerete nélkül sem a számításos feladatok, sem a szóbeli atlaszhasználat nem sikerül. A vizsgán méretarány-számítást, koordináta-leolvasást, irányok és domborzat felismerését kérik. A szóbelin a topográfia-szempont része az atlasz szakszerű használata.",
+  "rules": [
+    {
+      "title": "A méretarány",
+      "explanation": "A méretarány megmutatja, hányszorosára kicsinyítették a valóságot: 1 : 100 000 azt jelenti, hogy a térképen 1 cm a valóságban 100 000 cm = 1 km. Minél kisebb a méretarányszám (a kettőspont utáni szám), annál nagyobb a méretarány, és annál részletesebb a térkép.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "1 : 10 000 – nagy méretarány (várostérkép, részletes)"
+        },
+        {
+          "en": "1 : 10 000 000 – kis méretarány (világtérkép, kevés részlet)"
+        },
+        {
+          "en": "Gyors váltás: a méretarányszámból elhagyunk 5 nullát → 1 cm hány km (1 : 250 000 → 1 cm = 2,5 km)"
+        }
+      ]
+    },
+    {
+      "title": "A fokhálózat",
+      "explanation": "A szélességi körök az Egyenlítővel párhuzamosak, a földrajzi szélesség 0°-tól (Egyenlítő) 90°-ig (sarkok) mérhető északra (é. sz.) vagy délre (d. sz.). A hosszúsági körök a sarkokat összekötő félkörök, a földrajzi hosszúság a greenwichi kezdőmeridiántól 180°-ig mérhető keletre (k. h.) vagy nyugatra (ny. h.). Egy szélességi fok kb. 111 km.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "Budapest: kb. é. sz. 47,5°, k. h. 19°"
+        },
+        {
+          "en": "Két hely között 2° szélességkülönbség ≈ 222 km észak–déli távolság"
+        }
+      ]
+    },
+    {
+      "title": "Jelmagyarázat és domborzatábrázolás",
+      "explanation": "A domborzati (természetföldrajzi) térképen a színek a tengerszint feletti magasságot jelölik: zöld az alföld (0–200 m), sárga–világosbarna a dombság, sötétbarna a hegység; a kék árnyalatai a víz mélységét. A zöld szín itt nem erdőt jelent! A szintvonalak azonos magasságú pontokat kötnek össze: ahol sűrűek, ott meredek a lejtő.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "Sűrű szintvonalak → meredek lejtő; ritka szintvonalak → lankás"
+        }
+      ]
+    },
+    {
+      "title": "Tájolás és irányok",
+      "explanation": "A térképek többségén észak felül van. Az irányokat a fokhálózat mutatja: a hosszúsági körök észak–déli, a szélességi körök kelet–nyugati irányúak. Terepen a térképet iránytűvel vagy tereptárgyakkal tájoljuk.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "Ha egy folyó a térképen balról jobbra folyik, nyugatról kelet felé folyik."
+        }
+      ]
+    },
+    {
+      "title": "Szintvonalas metszet, távérzékelés, helymeghatározás",
+      "explanation": "Emelt szinten szintvonalas térképből lejtőszöget, magasságkülönbséget, metszetet is kell készíteni; ismerni kell a műholdas helymeghatározás (GPS) és a távérzékelés (műholdfelvételek) elvét és felhasználását (időjárás-előrejelzés, erdőtüzek, árvizek megfigyelése).",
+      "emeltOnly": true,
+      "examples": [
+        {
+          "en": "A GPS-vevő több műhold jelének futási idejéből számítja ki a helyzetét."
+        }
+      ]
+    }
+  ],
+  "commonMistakes": [
+    {
+      "wrong": "Az 1 : 1 000 000 méretarány nagyobb, mint az 1 : 10 000.",
+      "right": "Az 1 : 10 000 a nagyobb méretarány.",
+      "why": "A méretarány egy tört (1/10 000 > 1/1 000 000): minél kisebb a nevező, annál kevésbé kicsinyítettünk, annál részletesebb a térkép."
+    },
+    {
+      "wrong": "A domborzati térképen a zöld szín erdőt jelöl.",
+      "right": "A domborzati térképen a zöld szín az alacsony fekvésű síkságot jelöli.",
+      "why": "A színfokozatok a magasságot mutatják; az erdőt külön jel vagy más térképtípus ábrázolja."
+    },
+    {
+      "wrong": "A hosszúsági körök párhuzamosak az Egyenlítővel.",
+      "right": "A szélességi körök párhuzamosak az Egyenlítővel; a hosszúsági körök a sarkokon futnak össze.",
+      "why": "A két fogalmat gyakran összekeverik; a hosszúság a kelet–nyugati helyzetet, a szélesség az észak–délit adja meg."
+    },
+    {
+      "wrong": "A sűrű szintvonalak lankás lejtőt jelentenek.",
+      "right": "A sűrű szintvonalak meredek lejtőt jelentenek.",
+      "why": "Sűrű vonalaknál kis vízszintes távolságon belül nagy a magasságkülönbség."
+    },
+    {
+      "wrong": "1 : 50 000 méretarányon 4 cm = 20 km.",
+      "right": "1 : 50 000 méretarányon 4 cm = 2 km.",
+      "why": "4 × 50 000 = 200 000 cm = 2000 m = 2 km; a cm → km váltásnál 100 000-rel kell osztani."
+    }
+  ],
+  "examTips": [
+    "A méretarányos feladatokban a mértékegység-váltás a leggyakoribb hibaforrás: írd le a cm → m → km lépéseket.",
+    "A szóbeli vizsgán az atlaszt szakszerűen kell használni: a térkép típusát (domborzati, gazdasági, éghajlati) és a jelmagyarázatot is nevezd meg, amikor mutatsz.",
+    "A koordinátákat mindig a félgömb jelölésével együtt add meg (é. sz. / d. sz., k. h. / ny. h.)."
+  ],
+  "practice": [
+    {
+      "id": "1",
+      "kind": "text",
+      "prompt": "Egy 1 : 50 000 méretarányú térképen két pont távolsága 6 cm. Hány km a valódi távolság?",
+      "answer": [
+        "3 km",
+        "3",
+        "3km"
+      ],
+      "category": "terkep-olvasas",
+      "explanation": "3 km: 6 cm × 50 000 = 300 000 cm = 3000 m = 3 km."
+    },
+    {
+      "id": "2",
+      "kind": "choice",
+      "prompt": "Melyik a legnagyobb méretarány?",
+      "options": [
+        {
+          "key": "A",
+          "text": "1 : 10 000"
+        },
+        {
+          "key": "B",
+          "text": "1 : 100 000"
+        },
+        {
+          "key": "C",
+          "text": "1 : 1 000 000"
+        },
+        {
+          "key": "D",
+          "text": "1 : 25 000 000"
+        }
+      ],
+      "answer": "A",
+      "category": "terkep-olvasas",
+      "explanation": "Helyes: 1 : 10 000. Ennél kicsinyítettek a legkevésbé, ez a legrészletesebb térkép.",
+      "wrongOptions": {
+        "B": "1 : 100 000 tízszer jobban kicsinyít, mint az 1 : 10 000, tehát kisebb méretarány.",
+        "C": "1 : 1 000 000 kis méretarányú, áttekintő térkép.",
+        "D": "1 : 25 000 000 a legkisebb méretarány a felsoroltak közül (világtérkép)."
+      }
+    },
+    {
+      "id": "3",
+      "kind": "choice",
+      "prompt": "Mit jelöl a zöld szín egy domborzati térképen?",
+      "options": [
+        {
+          "key": "A",
+          "text": "alacsony fekvésű síkságot"
+        },
+        {
+          "key": "B",
+          "text": "erdőt"
+        },
+        {
+          "key": "C",
+          "text": "mezőgazdasági területet"
+        },
+        {
+          "key": "D",
+          "text": "nemzeti parkot"
+        }
+      ],
+      "answer": "A",
+      "category": "terkep-olvasas",
+      "explanation": "Helyes: A. A domborzati térkép színfokozatai a tengerszint feletti magasságot mutatják, a zöld a legalacsonyabb szárazföldi szint.",
+      "wrongOptions": {
+        "B": "Az erdőt külön jel ábrázolja, nem a domborzati színezés.",
+        "C": "A földhasználatot gazdasági térkép mutatja.",
+        "D": "A nemzeti parkot határvonal vagy külön jel jelzi."
+      }
+    },
+    {
+      "id": "4",
+      "kind": "text",
+      "prompt": "Hány km kb. egy szélességi fok?",
+      "answer": [
+        "111 km",
+        "111",
+        "kb. 111 km",
+        "111km"
+      ],
+      "category": "terkep-olvasas",
+      "explanation": "Kb. 111 km: a Föld kerülete kb. 40 000 km, ezt 360 fokra osztva kb. 111 km jut egy fokra.",
+      "maxWords": 3
+    },
+    {
+      "id": "5",
+      "kind": "choice",
+      "prompt": "Mit jelentenek a sűrűn egymás mellett futó szintvonalak?",
+      "options": [
+        {
+          "key": "A",
+          "text": "meredek lejtőt"
+        },
+        {
+          "key": "B",
+          "text": "lankás lejtőt"
+        },
+        {
+          "key": "C",
+          "text": "síkságot"
+        },
+        {
+          "key": "D",
+          "text": "tavat"
+        }
+      ],
+      "answer": "A",
+      "category": "terkep-olvasas",
+      "explanation": "Helyes: meredek lejtőt. Kis vízszintes távolságon nagy a magasságkülönbség.",
+      "wrongOptions": {
+        "B": "A lankás lejtőn a szintvonalak ritkák.",
+        "C": "Síkságon a szintvonalak nagyon ritkák vagy hiányoznak.",
+        "D": "A tavat kék szín jelöli, nem a szintvonalak sűrűsége."
+      }
+    },
+    {
+      "id": "6",
+      "kind": "text",
+      "prompt": "Egy térképen 5 cm felel meg 25 km-nek. Mekkora a méretarány?",
+      "answer": [
+        "1 : 500 000",
+        "1:500 000",
+        "1:500000",
+        "1 : 500000"
+      ],
+      "category": "terkep-olvasas",
+      "explanation": "1 : 500 000: 25 km = 2 500 000 cm; 2 500 000 : 5 = 500 000, tehát 1 cm a térképen 500 000 cm = 5 km."
+    }
+  ],
+  "relatedCategories": [
+    "szamitas-foldrajzi",
+    "helymeghatarozas"
+  ]
+}
