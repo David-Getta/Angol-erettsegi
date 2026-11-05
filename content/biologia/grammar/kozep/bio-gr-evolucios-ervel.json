@@ -1,0 +1,252 @@
+{
+  "schemaVersion": 1,
+  "id": "bio-gr-evolucios-ervel",
+  "subject": "biologia",
+  "revision": 1,
+  "level": "kozep",
+  "source": "generated",
+  "topic": "nyelvtan",
+  "title": "Evolúciós érvelés: szelekció, nem cél",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "grammar",
+  "type": "lesson",
+  "category": "evolucios-ervel",
+  "summaryHu": "Az evolúciós kérdésekben (antibiotikum-rezisztencia, alkalmazkodás, fajképződés) a javítók azt nézik, hogy a magyarázat darwini-e: a populáció örökletes változatosságából indul-e, és a szelekcióval magyaráz-e. A „azért, hogy…”, „szüksége volt rá”, „megtanulta” típusú, célirányos (lamarcki) megfogalmazás akkor is pontot veszít, ha a végeredmény helyes.",
+  "rules": [
+    {
+      "title": "A darwini magyarázat négy lépése",
+      "explanation": "1. A populáció egyedei örökletesen különböznek (mutáció, rekombináció). 2. Több utód születik, mint amennyi felnőhet, ezért a környezet szelektál. 3. Az adott környezetben előnyös változat hordozói nagyobb eséllyel maradnak életben és szaporodnak. 4. Ezért a következő nemzedékekben nő az előnyös allélok gyakorisága.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "Egyes nyulak bundája örökletesen világosabb; havas tájon a ragadozók ritkábban veszik észre őket, több utódot hagynak, így nemzedékek alatt nő a világos bundájúak aránya.",
+          "hu": "Mind a négy lépés benne van."
+        },
+        {
+          "en": "Rossz: „A nyulak kifehéredtek, hogy elrejtőzzenek a hóban.”",
+          "hu": "Célirányos, nem darwini."
+        }
+      ]
+    },
+    {
+      "title": "Az egyed nem evolválódik, a populáció igen",
+      "explanation": "Az egyed örökítőanyaga élete során nem változik meg célirányosan; amit az egyed szerez (izom, tudás, sebhely), nem öröklődik. Az evolúció a populáció allélgyakoriságainak változása nemzedékek során.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "Egy testépítő gyermekei nem születnek nagyobb izomzattal.",
+          "hu": "Szerzett tulajdonság nem öröklődik."
+        },
+        {
+          "en": "A rezisztens baktériumok aránya a populációban nő, nem egy baktérium „lesz” rezisztens a kezelés hatására.",
+          "hu": "Populációs szemlélet."
+        }
+      ]
+    },
+    {
+      "title": "A mutáció véletlenszerű, a szelekció nem",
+      "explanation": "A mutációk a környezettől és a szükséglettől függetlenül, véletlenszerűen jelennek meg; a szelekció viszont irányított: a környezet dönti el, melyik változat előnyös. Ugyanaz a változat más környezetben hátrányos lehet.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "A rezisztenciát okozó mutáció már a kezelés előtt is megvolt egyes baktériumokban.",
+          "hu": "Az antibiotikum csak kiválogat."
+        },
+        {
+          "en": "A sarlósejtes allél maláriás vidéken a heterozigótáknak előnyös, máshol hátrányos.",
+          "hu": "A környezet dönt."
+        }
+      ]
+    },
+    {
+      "title": "Homológia, analógia és a közös ős",
+      "explanation": "A homológ szervek a közös leszármazás bizonyítékai; az analóg szervek hasonló környezetben, eltérő eredetből alakultak ki (konvergencia). Az ember és a csimpánz nem egymásból, hanem közös ősből származik.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "A cápa és a delfin hasonló testalkata konvergens evolúció eredménye.",
+          "hu": "Analógia."
+        },
+        {
+          "en": "Az ember és a csimpánz közös őse kb. 6–7 millió éve élt.",
+          "hu": "Közös ős, nem leszármazás egymásból."
+        }
+      ]
+    },
+    {
+      "title": "Szelekció és sodródás megkülönböztetése",
+      "explanation": "A szelekció a genotípustól (fenotípustól) függő túlélés és szaporodás; a genetikai sodródás az allélgyakoriság véletlen változása, amely kis populációkban erős (palacknyak-, alapítóhatás).",
+      "emeltOnly": true,
+      "examples": [
+        {
+          "en": "Egy szigetre véletlenül néhány madár jut el: az új populáció allélgyakorisága eltérhet az eredetitől.",
+          "hu": "Alapítóhatás."
+        },
+        {
+          "en": "Ha egy árvíz a genotípustól függetlenül pusztít, az allélgyakoriság változása sodródás.",
+          "hu": "Nem szelekció."
+        }
+      ]
+    }
+  ],
+  "commonMistakes": [
+    {
+      "wrong": "A baktériumok rezisztenssé váltak, hogy túléljék az antibiotikumot.",
+      "right": "A populációban már meglévő rezisztens változatok túlélték a kezelést és elszaporodtak.",
+      "why": "Az „azért, hogy” célt tulajdonít a folyamatnak; a mutáció véletlen, a szelekció válogat."
+    },
+    {
+      "wrong": "A zsiráf nyaka a nyújtózkodástól megnyúlt, és ezt örökölték az utódai.",
+      "right": "A hosszabb nyakú egyedek több táplálékhoz jutottak, több utódot hagytak, így nőtt a hosszú nyakat okozó allélok gyakorisága.",
+      "why": "Ez Lamarck téves elképzelése: a szerzett tulajdonság nem öröklődik."
+    },
+    {
+      "wrong": "Az ember a majomtól (csimpánztól) származik.",
+      "right": "Az ember és a csimpánz közös őstől származik.",
+      "why": "A ma élő fajok egymás „unokatestvérei”, nem ősei."
+    },
+    {
+      "wrong": "A sötét lepkék megtanultak a kormos fákon rejtőzni.",
+      "right": "A sötét változatot a madarak ritkábban vették észre, ezért a sötét változatot okozó allél gyakorisága nőtt.",
+      "why": "A szín öröklött, nem tanult tulajdonság; a változás a populáció szintjén történt."
+    },
+    {
+      "wrong": "Az evolúció mindig a tökéletesebb felé halad.",
+      "right": "Az evolúció az adott környezethez való alkalmazkodás irányába halad; ha a környezet változik, a szelekció iránya is változik.",
+      "why": "Nincs előre kijelölt cél vagy „fejlettségi” irány."
+    }
+  ],
+  "examTips": [
+    "Kifejtős kérdésben (pl. „Magyarázza meg, hogyan terjedt el…”) mindig írd le a négy lépést: változatosság → szelekciós tényező → eltérő túlélés/szaporodás → allélgyakoriság-változás.",
+    "Feleletválasztásnál a „szüksége volt rá”, „azért, hogy”, „megtanulta”, „hozzászokott” kifejezéseket tartalmazó opciók szinte mindig hibásak.",
+    "Nevezd meg a konkrét szelekciós tényezőt (ragadozó, antibiotikum, éghajlat, beporzó) – ezért külön pont járhat."
+  ],
+  "practice": [
+    {
+      "id": "1",
+      "kind": "choice",
+      "prompt": "Melyik magyarázat darwini a rovarirtó szerrel szembeni ellenállóság kialakulására?",
+      "options": [
+        {
+          "key": "A",
+          "text": "A rovarok hozzászoktak a méreghez, és ezt átörökítették."
+        },
+        {
+          "key": "B",
+          "text": "A méreg ellenálló képességet idézett elő a rovarokban."
+        },
+        {
+          "key": "C",
+          "text": "A populációban eleve voltak ellenálló egyedek; ezek túlélték a permetezést, és elszaporodtak."
+        },
+        {
+          "key": "D",
+          "text": "A rovarok azért váltak ellenállóvá, hogy túléljenek."
+        }
+      ],
+      "answer": "C",
+      "category": "evolucios-ervel",
+      "explanation": "Helyes: C. Az ellenállóságot okozó mutáció véletlenül, a permetezéstől függetlenül jelent meg; a méreg szelekciós tényezőként csak a már meglévő ellenálló változatokat hagyta életben.",
+      "wrongOptions": {
+        "A": "A „hozzászokás” szerzett tulajdonság, nem öröklődik – lamarcki magyarázat.",
+        "B": "A méreg nem hoz létre célzottan ellenállóságot; a mutáció véletlenszerű.",
+        "D": "Célirányos megfogalmazás: az evolúciónak nincs célja."
+      }
+    },
+    {
+      "id": "2",
+      "kind": "choice",
+      "prompt": "Mi az evolúció legkisebb egysége, amelyben az allélgyakoriság változása megfigyelhető?",
+      "options": [
+        {
+          "key": "A",
+          "text": "az egyed"
+        },
+        {
+          "key": "B",
+          "text": "a populáció"
+        },
+        {
+          "key": "C",
+          "text": "a sejt"
+        },
+        {
+          "key": "D",
+          "text": "az életközösség"
+        }
+      ],
+      "answer": "B",
+      "category": "evolucios-ervel",
+      "explanation": "Helyes: B. Az egyed genotípusa élete során nem változik; az evolúció a populáció génkészletében, az allélgyakoriságok nemzedékek közötti változásaként jelenik meg.",
+      "wrongOptions": {
+        "A": "Az egyed nem evolválódik: génjei egész életében ugyanazok.",
+        "C": "A sejtszintű változás (pl. testi mutáció) nem öröklődik az utódokra, ha nem az ivarsejtben történik.",
+        "D": "Az életközösség sok faj populációiból áll; az evolúció fajonként, populációkban zajlik."
+      }
+    },
+    {
+      "id": "3",
+      "kind": "text",
+      "prompt": "Hogyan nevezzük az allélgyakoriság véletlenszerű változását, amely különösen kis populációkban erős?",
+      "answer": [
+        "genetikai sodródás",
+        "sodródás",
+        "génsodródás",
+        "genetikai drift"
+      ],
+      "category": "evolucios-ervel",
+      "explanation": "Helyes: genetikai sodródás. A véletlen (kinek jut utód, ki pusztul el egy katasztrófában) kis populációban jelentősen megváltoztathatja az allélgyakoriságot, a genotípustól függetlenül.",
+      "maxWords": 2
+    },
+    {
+      "id": "4",
+      "kind": "choice",
+      "prompt": "Melyik állítás igaz a mutációkra?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Mindig károsak."
+        },
+        {
+          "key": "B",
+          "text": "A környezet igényeinek megfelelően, célzottan jelennek meg."
+        },
+        {
+          "key": "C",
+          "text": "Véletlenszerűen jelennek meg; hatásuk lehet káros, közömbös vagy előnyös."
+        },
+        {
+          "key": "D",
+          "text": "Csak a testi sejtekben jönnek létre."
+        }
+      ],
+      "answer": "C",
+      "category": "evolucios-ervel",
+      "explanation": "Helyes: C. A mutáció véletlenszerű; hogy előnyös-e, azt a környezet (a szelekció) dönti el. A legtöbb mutáció közömbös vagy káros, de az előnyösek az alkalmazkodás alapjai.",
+      "wrongOptions": {
+        "A": "Vannak közömbös és előnyös mutációk is, ezek nélkül nem lenne evolúció.",
+        "B": "A mutáció nem célirányos – ez a lamarcki gondolkodás hibája.",
+        "D": "Az ivarsejtekben is keletkeznek mutációk, és csak ezek öröklődnek."
+      }
+    },
+    {
+      "id": "5",
+      "kind": "text",
+      "prompt": "Hogyan nevezzük a közös eredetű, de eltérő működésű szerveket (pl. a denevér szárnya és a ló mellső lába)?",
+      "answer": [
+        "homológ",
+        "homológ szervek",
+        "homológ szerv"
+      ],
+      "category": "evolucios-ervel",
+      "explanation": "Helyes: homológ szervek. Azonos alaptervre épülnek (ugyanazok a csontok), mert közös ősből származnak; működésük a környezethez alkalmazkodva eltérhet.",
+      "maxWords": 3
+    }
+  ],
+  "relatedCategories": [
+    "fogalomhasznalat",
+    "rendszertan-fajismeret",
+    "genetikai-szamitas"
+  ]
+}
