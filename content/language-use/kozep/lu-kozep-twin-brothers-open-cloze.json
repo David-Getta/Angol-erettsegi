@@ -1,0 +1,45 @@
+{
+  "schemaVersion": 1,
+  "id": "lu-kozep-twin-brothers-open-cloze",
+  "revision": 1,
+  "level": "kozep",
+  "source": "generated",
+  "topic": "szemelyes",
+  "title": "Same face, different people",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "language-use",
+  "type": "open-cloze",
+  "instructions": "Read the text and fill in the gaps with ONE suitable word. There is an example (0) at the beginning.",
+  "instructionsHu": "Egészítsd ki a szöveget egy-egy odaillő szóval. A 0. a példa.",
+  "passage": {
+    "title": "Same face, different people",
+    "blocks": [
+      { "text": "My name is Áron, and I have a twin brother, Levente. We were born [[0]] a cold morning in March 2009, just eleven minutes apart. We are identical twins, so we have [[1]] same face, the same voice and even the same laugh. When we were babies, Mum painted one of my toenails red, because without it she wasn't [[2]] to tell us apart!" },
+      { "text": "At primary school, we often played tricks on our teachers. Once we swapped seats after lunch, and our maths teacher didn't notice anything at all. Now we are seventeen, and things are different. We go to the same school, but we have [[3]] in different classes [[4]] we were fourteen. Our parents thought it would help us make our own friends, and they were right." },
+      { "text": "People often ask us [[5]] we can read each other's minds. The answer is no! In fact, we are very different. Levente is interested [[6]] history and wants to become a lawyer, [[7]] I prefer science and spend most of my free time in the school lab. He is also much more talkative than me, and I'm not nearly as good at making jokes [[8]] he is." },
+      { "text": "[[9]] of us love pizza and old films, but that's where the similarities end. Still, there is one person [[10]] understands me better than anyone else, and it's Levente. Next year he is going to study in Budapest, and I'm staying in Debrecen. I know I'm going to miss him a lot – but I'll never tell him that!" }
+    ]
+  },
+  "example": {
+    "id": "0",
+    "kind": "text",
+    "answer": ["on"],
+    "category": "preposition",
+    "explanation": "Napok, dátumok és egy konkrét nap része (a cold morning) előtt az „on” elöljárószó áll: on a cold morning, on 14 March, on Monday. (De: in the morning – ha nincs előtte jelző.)"
+  },
+  "items": [
+    { "id": "1", "kind": "text", "answer": ["the"], "category": "article", "explanation": "A „same” (ugyanaz) előtt mindig határozott névelő áll: the same face, the same voice. A mondat folytatása (the same voice, the same laugh) is ezt mutatja." },
+    { "id": "2", "kind": "text", "answer": ["able"], "category": "modal", "explanation": "„be able to + ige” = képes valamire, tud valamit (a „can” helyett, pl. múltban vagy tagadásban): she wasn't able to tell us apart = nem tudott minket megkülönböztetni." },
+    { "id": "3", "kind": "text", "answer": ["been"], "category": "tense", "explanation": "Present perfect: have + 3. alak. A „be” harmadik alakja „been”: we have been in different classes = (azóta) külön osztályba járunk. A múltban kezdődött és ma is tartó helyzetet fejez ki." },
+    { "id": "4", "kind": "text", "answer": ["since"], "category": "tense", "explanation": "Present perfect mellett a kezdőpontot a „since” vezeti be: since we were fourteen = tizennégy éves korunk óta. Időtartam előtt „for” állna (for three years), de itt egy időpontról (14 éves kor) van szó." },
+    { "id": "5", "kind": "text", "answer": ["if", "whether"], "category": "reported-speech", "explanation": "Függő eldöntendő kérdés: ask somebody if/whether … = megkérdezi, hogy …-e. Utána egyenes szórend jön (we can read), nem kérdő szórend (can we read)." },
+    { "id": "6", "kind": "text", "answer": ["in"], "category": "preposition", "explanation": "Melléknév + elöljárószó: „be interested in something” = érdeklődik valami iránt: Levente is interested in history." },
+    { "id": "7", "kind": "text", "answer": ["while", "whereas", "but", "whilst"], "category": "linking", "explanation": "Két ellentétes tény összekapcsolása egy mondaton belül: Levente ügyvéd akar lenni, míg én a természettudományokat szeretem. Ellentétet kifejező kötőszó kell: while / whereas / whilst (míg, ezzel szemben) vagy but (de)." },
+    { "id": "8", "kind": "text", "answer": ["as"], "category": "comparison", "explanation": "Egyenlőség (vagy tagadva: nem olyan …, mint) kifejezése: (not) as + melléknév + as. I'm not nearly as good at making jokes as he is = közel sem vagyok olyan jó a viccelődésben, mint ő. Az első „as” után a második is „as”, nem „than”." },
+    { "id": "9", "kind": "text", "answer": ["Both"], "category": "quantifier", "explanation": "Két személyre (az ikrekre) vonatkozó mennyiségjelző: Both of us = mindketten. Mivel a mondat hasonlóságról szól (that's where the similarities end), a tagadó „Neither” nem jó, az „All” pedig kettőnél több személyre utal." },
+    { "id": "10", "kind": "text", "answer": ["who", "that"], "category": "relative-clause", "explanation": "Személyre (one person) utaló szűkítő vonatkozó mellékmondat, ahol a névmás a mellékmondat alanya: one person who/that understands me. Alanyi szerepben a vonatkozó névmás nem hagyható el." }
+  ],
+  "glossary": [],
+  "suggestedMinutes": 10
+}
