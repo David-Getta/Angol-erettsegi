@@ -17,7 +17,7 @@ export type MockKind = "mock" | "diagnostic";
 export type MockPart = { part: PartId; name: string; timeSec: number; taskIds: string[] };
 export type MockPlan = { parts: MockPart[] };
 
-/** Diagnostic: one short task per written part (about 35–40 minutes in total). */
+/** Diagnostic: one short task per written part (about 45 minutes in total). */
 const DIAGNOSTIC: Record<string, { count: number; minutes: number }> = {
   reading: { count: 1, minutes: 12 },
   "language-use": { count: 1, minutes: 8 },

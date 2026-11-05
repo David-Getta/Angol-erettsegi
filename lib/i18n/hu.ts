@@ -419,7 +419,7 @@ export const t = {
 
   diagnostic: {
     title: "Szintfelmérő",
-    intro: "Rövid diagnosztikus teszt mind a négy írásbeli részből (kb. 30–40 perc). Az eredményből becsült szintet és erősség/gyengeség-képet kapsz, erre épül a Mai terv.",
+    intro: "Rövid diagnosztikus teszt mind a négy írásbeli részből (kb. 45 perc). Az eredményből becsült szintet és erősség/gyengeség-képet kapsz, erre épül a Mai terv.",
     start: "Szintfelmérő indítása",
     resume: "Folytatás",
     parts: "Részek",

@@ -62,7 +62,7 @@ export function todayPlan(level: Level, estimates: PartEstimate[], hasDiagnostic
   const items: PlanItem[] = [];
 
   if (!hasDiagnostic) {
-    items.push({ key: "diag", title: "Szintfelmérő kitöltése", reason: "Ebből áll össze a személyre szabott terv.", href: "/szintfelmero", section: "diagnostic", minutes: 35, done: false });
+    items.push({ key: "diag", title: "Szintfelmérő kitöltése", reason: "Ebből áll össze a személyre szabott terv.", href: "/szintfelmero", section: "diagnostic", minutes: 45, done: false });
   }
 
   const due = dueInfo();

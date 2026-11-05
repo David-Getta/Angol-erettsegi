@@ -12,7 +12,7 @@ vagy a javítást a Claude appba bemásolt prompttal kérheted. Nincs fiók, nin
 | Modul | Röviden |
 |---|---|
 | **Kezdőlap** | visszaszámláló, becsült pontszám vizsgarészenként a 12%-os küszöbbel és a céloddal, Mai terv, sorozat, heti gyakorlási idő, tartalomkészlet-jelző, javításra váró beadások |
-| **Szintfelmérő** | kb. 35–40 perces teszt mind a négy írásbeli részből → becsült CEFR-szint, erősségek és gyengeségek |
+| **Szintfelmérő** | kb. 45 perces teszt mind a négy írásbeli részből → becsült CEFR-szint, erősségek és gyengeségek |
 | **Olvasott szöveg** | érettségi-típusú feladatok, gyakorló és vizsga mód, magyarázat minden kérdéshez (hol van a szövegben, miért rossz a többi opció), szavak felvétele szókártyába kattintással |
 | **Nyelvhelyesség** | lyukas szövegek, szóképzés, igealakok, hibakeresés …; több helyes válasz elfogadva, elírás-jelzés; célzott gyakorlás a hibanaplóból |
 | **Hallott szöveg** | a böngésző olvassa fel a szkripteket beszélőnként külön hanggal, felkészülési idő, kétszeri meghallgatás, utána leirat a válaszok kiemelésével; hivatalos mp3 is lejátszható |
