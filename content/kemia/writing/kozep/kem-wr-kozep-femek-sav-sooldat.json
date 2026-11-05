@@ -1,0 +1,96 @@
+{
+  "schemaVersion": 1,
+  "id": "kem-wr-kozep-femek-sav-sooldat",
+  "subject": "kemia",
+  "revision": 1,
+  "level": "kozep",
+  "source": "generated",
+  "topic": "szervetlen-femek",
+  "title": "Fémek viselkedése sósavban és réz(II)-szulfát-oldatban",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "writing",
+  "type": "kiserletelemzo",
+  "taskNumber": 2,
+  "situation": "Három kémcsőbe 5–5 cm³ híg sósavat öntünk. Az elsőbe cinkdarabkát, a másodikba rézforgácsot, a harmadikba magnéziumszalagot teszünk. Ezután egy negyedik kémcsőbe kék színű réz(II)-szulfát-oldatot öntünk, és megtisztított cinklemezt merítünk bele.\n\nStandardpotenciálok: E°(Mg²⁺/Mg) = −2,37 V; E°(Zn²⁺/Zn) = −0,76 V; E°(H⁺/H₂) = 0,00 V; E°(Cu²⁺/Cu) = +0,34 V.\n\na) Mit tapasztalunk az első három kémcsőben? Hasonlítsa össze a két reagáló fém reakciójának hevességét, és indokolja! (3 pont)\nb) Írja fel a lejátszódó reakciók rendezett egyenletét! (2 pont)\nc) Miért nem reagál a réz a sósavval? (2 pont)\nd) Mit tapasztalunk a negyedik kémcsőben? Írja fel az ionegyenletet, és nevezze meg az oxidálódó és a redukálódó részecskét! (4 pont)\ne) Hogyan igazolható, hogy a fejlődő gáz hidrogén? (2 pont)",
+  "points": [
+    {
+      "id": "p1",
+      "text": "a) Tapasztalatok a három kémcsőben, a reakcióhevesség összehasonlítása és indoklása (3 pont)"
+    },
+    {
+      "id": "p2",
+      "text": "b) A cink és a magnézium sósavas reakciójának egyenlete (2 pont)"
+    },
+    {
+      "id": "p3",
+      "text": "c) A réz viselkedésének magyarázata a standardpotenciállal (2 pont)"
+    },
+    {
+      "id": "p4",
+      "text": "d) A cink és a réz(II)-szulfát reakciója: tapasztalat, ionegyenlet, oxidálódó és redukálódó részecske (4 pont)"
+    },
+    {
+      "id": "p5",
+      "text": "e) A hidrogén kimutatása (2 pont)"
+    }
+  ],
+  "suggestedMinutes": 20,
+  "usefulPhrases": [
+    {
+      "en": "negatívabb standardpotenciál = erősebb redukálószer",
+      "hu": "Ezzel indokold a reakció hevességét és a fémkiszorítást."
+    },
+    {
+      "en": "a hidrogénnél pozitívabb standardpotenciálú fém nem fejleszt hidrogént",
+      "hu": "Réz, ezüst, arany: sósavban nem oldódnak."
+    },
+    {
+      "en": "vörösbarna bevonat; a kék szín halványul",
+      "hu": "A rézkiválás és a réz(II)-ionok fogyásának tapasztalata."
+    },
+    {
+      "en": "Zn + Cu²⁺ → Zn²⁺ + Cu",
+      "hu": "Ionegyenlet: a szulfátion néző ion, nem írjuk fel."
+    },
+    {
+      "en": "oxidálódik / redukálódik",
+      "hu": "Oxidáció = elektronleadás (oxidációs szám nő), redukció = elektronfelvétel."
+    },
+    {
+      "en": "durranógáz-próba",
+      "hu": "A hidrogén kimutatása: lánghoz tartva pukkan."
+    }
+  ],
+  "checklistExtra": [],
+  "modelAnswer": {
+    "text": "a) Az első kémcsőben a cink felületén színtelen gázbuborékok fejlődnek, a cink lassan fogy. A második kémcsőben a rézzel nem történik változás. A harmadik kémcsőben a magnéziumszalag hevesen pezseg, gyorsan feloldódik, és a kémcső érezhetően felmelegszik. A magnézium tehát hevesebben reagál, mint a cink, mert standardpotenciálja (−2,37 V) jóval negatívabb, vagyis erősebb redukálószer.\n\nb) Zn + 2 HCl → ZnCl₂ + H₂\nMg + 2 HCl → MgCl₂ + H₂\n\nc) A réz standardpotenciálja (+0,34 V) pozitívabb, mint a hidrogéné (0,00 V), ezért a réz nem tudja redukálni az oxóniumionokat hidrogénné. A réz a nem oxidáló savakban, így a híg sósavban sem oldódik.\n\nd) A cinklemez felületén vörösbarna bevonat (fémréz) válik ki, az oldat kék színe pedig fokozatosan halványul, mert fogynak a réz(II)-ionok. A cink negatívabb standardpotenciálú, mint a réz, ezért elektront ad át a réz(II)-ionoknak:\nZn + Cu²⁺ → Zn²⁺ + Cu\nOxidálódik a cinkatom (0 → +2), redukálódik a réz(II)-ion (+2 → 0).\n\ne) A gázt szájával lefelé tartott kémcsőben fogjuk fel, mert a hidrogén sűrűsége kisebb a levegőénél, majd a kémcső száját lánghoz tartjuk: jellegzetes kis pukkanás hallható (durranógáz-próba), mert a hidrogén a levegő oxigénjével vízzé ég: 2 H₂ + O₂ → 2 H₂O.",
+    "pointsCovered": [
+      {
+        "id": "p1",
+        "quote": "A magnézium tehát hevesebben reagál, mint a cink, mert standardpotenciálja (−2,37 V) jóval negatívabb, vagyis erősebb redukálószer."
+      },
+      {
+        "id": "p2",
+        "quote": "Zn + 2 HCl → ZnCl₂ + H₂"
+      },
+      {
+        "id": "p3",
+        "quote": "A réz standardpotenciálja (+0,34 V) pozitívabb, mint a hidrogéné (0,00 V), ezért a réz nem tudja redukálni az oxóniumionokat hidrogénné."
+      },
+      {
+        "id": "p4",
+        "quote": "Oxidálódik a cinkatom (0 → +2), redukálódik a réz(II)-ion (+2 → 0)."
+      },
+      {
+        "id": "p5",
+        "quote": "jellegzetes kis pukkanás hallható (durranógáz-próba)"
+      }
+    ],
+    "notes": [
+      "Tapasztalatok: mind a négy kémcső változását (vagy annak hiányát) megfigyelhető jelenségekkel írja le – gázbuborék, pezsgés, felmelegedés, vörösbarna bevonat, halványuló kék szín, pukkanás.",
+      "Magyarázat: minden jelenséget a megadott standardpotenciálokkal indokol, a sósavas reakciókra rendezett egyenletet, a kiszorításra ionegyenletet ír, és megnevezi az oxidálódó és a redukálódó részecskét.",
+      "Szaknyelv: helyesen használja a redukálószer, oxóniumion, oxidációs szám fogalmát; nem keveri a tapasztalatot („pukkanás”) a következtetéssel („hidrogén”)."
+    ]
+  }
+}

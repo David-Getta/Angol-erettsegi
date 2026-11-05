@@ -1,0 +1,66 @@
+{
+  "schemaVersion": 1,
+  "id": "fiz-sp-kozep-hotagulas",
+  "subject": "fizika",
+  "revision": 1,
+  "level": "kozep",
+  "source": "generated",
+  "topic": "energia-munka-ho",
+  "title": "Hőtágulás – szilárd testek, folyadékok és gázok",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "speaking",
+  "type": "tetel",
+  "partNumber": 1,
+  "instructionsHu": "Fejtsd ki a hőtágulás jelenségét szilárd testeknél, folyadékoknál és gázoknál (részecskemodell, összefüggések, a víz rendellenes viselkedése, gyakorlati példák), majd mutasd be a Gravesande-golyós és a bimetallszalagos kísérletet, és értelmezd a tapasztalatot!",
+  "prompts": [
+    "A hőtágulás oka a részecskemodell alapján",
+    "A szilárd testek lineáris és térfogati hőtágulása, a lineáris hőtágulási együttható",
+    "A folyadékok hőtágulása; a víz rendellenes hőtágulása és jelentősége a természetben",
+    "A gázok hőtágulása (állandó nyomáson V ~ T)",
+    "Gyakorlati példák: dilatációs hézag, bimetall hőkapcsoló, folyadékos hőmérő"
+  ],
+  "sources": [
+    {
+      "title": "Kísérlet 1: Gravesande-golyó",
+      "text": "Eszközök: Gravesande-készülék (fémgolyó láncon és egy fémgyűrű, amelyen a hideg golyó éppen átfér), Bunsen-égő vagy gázégő, hideg víz.\nMenet: mutasd meg, hogy szobahőmérsékleten a golyó átfér a gyűrűn! Melegítsd a golyót 1–2 percig a lángban, majd próbáld újra átengedni! Ezután hagyd a golyót a gyűrűn hűlni, vagy hűtsd le vízben!\nVárt tapasztalat: a felmelegített golyó nem fér át a gyűrűn, lehűlve újra átesik."
+    },
+    {
+      "title": "Kísérlet 2: bimetallszalag",
+      "text": "Eszközök: egymáshoz szegecselt réz- és acélcsíkból álló bimetallszalag nyélen, gyertya vagy borszeszégő.\nMenet: tartsd a szalagot vízszintesen a láng fölé, és figyeld az alakját!\nVárt tapasztalat: a szalag elhajlik úgy, hogy a réz kerül a görbület külső oldalára, lehűlve kiegyenesedik."
+    }
+  ],
+  "keyPoints": [
+    "Melegítéskor a részecskék rezgése/mozgása élénkebb, átlagos távolságuk nő, ezért nő a test mérete.",
+    "Szilárd testek hosszváltozása Δl = α·l₀·ΔT, ahol α a lineáris hőtágulási együttható (1/°C); a térfogati együttható kb. 3α.",
+    "A folyadékok jobban tágulnak a szilárd testeknél: ΔV = β·V₀·ΔT.",
+    "A víz 0 és 4 °C között melegítve összehúzódik, 4 °C-on a legnagyobb a sűrűsége; ezért fagynak be a tavak felülről, és a fenéken kb. 4 °C-os víz marad.",
+    "Gázok állandó nyomáson az abszolút hőmérséklettel arányosan tágulnak (V/T = állandó, Gay-Lussac I. törvénye).",
+    "A Gravesande-golyó a térfogati hőtágulást mutatja: a meleg golyó nem fér át a gyűrűn.",
+    "A bimetallszalag a két fém eltérő hőtágulási együtthatója miatt hajlik el; a jobban táguló réz a külső ív.",
+    "Alkalmazások: hőmérő, bimetall hőkapcsoló (vasaló, villanybojler), sínek és hidak dilatációs hézaga, távvezetékek belógása."
+  ],
+  "speakingSeconds": 900,
+  "prepSeconds": 1800,
+  "sampleAnswer": {
+    "turns": [
+      {
+        "speaker": "candidate",
+        "text": "A tételem a hőtágulás. Hőtágulásnak nevezzük azt a jelenséget, hogy a testek mérete melegítéskor általában nő, hűtéskor csökken. Az ok a részecskemodellel magyarázható: magasabb hőmérsékleten a részecskék élénkebben rezegnek vagy mozognak, ezért átlagosan nagyobb távolságra kerülnek egymástól.\nSzilárd testeknél a hosszváltozás egyenesen arányos az eredeti hosszal és a hőmérséklet-változással: Δl = α·l₀·ΔT. Az α lineáris hőtágulási együttható anyagra jellemző, például a vasé kb. 1,2 · 10⁻⁵ 1/°C, ami azt jelenti, hogy egy 1 m-es vasrúd 100 °C melegedéskor kb. 1,2 mm-rel nyúlik meg. A térfogat is változik, a térfogati együttható körülbelül a lineáris háromszorosa. A folyadékok jobban tágulnak, mint a szilárd testek; ezen alapul a folyadékos hőmérő. A víz viselkedése rendellenes: 0 és 4 °C között melegítve összehúzódik, és 4 °C-on a legnagyobb a sűrűsége. Ezért télen a tavak alján 4 °C-os víz marad, a tavak felülről fagynak be, és a jég szigeteli az alatta lévő vizet, így a halak áttelelhetnek. A gázok tágulnak a legjobban: állandó nyomáson a térfogatuk az abszolút hőmérséklettel arányos, ez Gay-Lussac I. törvénye.\nA hőtágulással a technikában számolni kell: a hidakon és a régebbi síneken dilatációs hézagot hagynak, a nyári melegben a távvezetékek jobban belógnak.\nAz első kísérletben a Gravesande-golyó hidegen éppen átfért a gyűrűn. Miután egy-két percig melegítettem a lángban, már nem fért át, fennakadt a gyűrűn, majd kis idő múlva, ahogy lehűlt, átesett. Ez azt mutatja, hogy a golyó térfogata melegítéskor megnőtt. A második kísérletben a réz- és acélcsíkból álló bimetallszalagot melegítettem: a szalag elhajlott, és a rézcsík került a görbület külső oldalára. Ennek oka, hogy a réz hőtágulási együtthatója nagyobb, mint az acélé, ezért jobban megnyúlik, és mivel a két csík össze van szegecselve, a szalag csak meghajolva tudja ezt követni. Ezen az elven működik a vasaló vagy a villanybojler bimetallos hőkapcsolója."
+      },
+      {
+        "speaker": "examiner",
+        "text": "Miért szoktak a befőttesüveg beszorult fémtetejére forró vizet engedni?"
+      },
+      {
+        "speaker": "candidate",
+        "text": "Mert a fém hőtágulási együtthatója nagyobb, mint az üvegé, és a vékony fémtető gyorsabban fel is melegszik. A forró víztől a tető jobban kitágul, mint az üveg nyaka, ezért meglazul, és könnyebben lecsavarható."
+      }
+    ],
+    "notes": [
+      "A felelet minden halmazállapotra kitér, megadja a lineáris hőtágulás összefüggését konkrét számpéldával (vasrúd), és a víz rendellenes viselkedését a természetbeli jelentőségével együtt magyarázza – ez a tartalmi rész lényege.",
+      "Mindkét kísérletnél leírja a lépéseket, a tapasztalatot és a fizikai magyarázatot (a bimetallnál a két fém eltérő α-ját és a meghajlás okát), majd alkalmazást is említ.",
+      "A vizsgáztató hétköznapi kérdésére a hőtágulási együtthatók összehasonlításával válaszol, ami az önálló alkalmazás jele."
+    ]
+  }
+}

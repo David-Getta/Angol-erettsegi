@@ -1,0 +1,221 @@
+{
+  "schemaVersion": 1,
+  "id": "mat-gr-kepletek",
+  "subject": "matematika",
+  "revision": 1,
+  "level": "kozep",
+  "source": "generated",
+  "topic": "nyelvtan",
+  "title": "Képletek helyes alkalmazása",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "grammar",
+  "type": "lesson",
+  "category": "kepletek",
+  "summaryHu": "A függvénytáblázatban szinte minden képlet megtalálható, a pontvesztés abból ered, hogy rossz képletet választunk, vagy rossz mennyiséget helyettesítünk be (oldalmagasság helyett testmagasság, sugár helyett átmérő, qⁿ helyett qⁿ⁻¹). Ez a lecke azt mutatja meg, hogyan dönts a képletek között, és mire figyelj behelyettesítéskor.",
+  "rules": [
+    {
+      "title": "Nevezd meg a mennyiségeket",
+      "explanation": "Behelyettesítés előtt írd le, melyik adat melyik betű (r = 3 cm, m = 4 cm, a = 5 cm alkotó). Egy ábra a jelölésekkel megelőzi a felcserélést, és a javító is látja, mit számolsz.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "Kúp: r = 3 cm, m = 4 cm → alkotó a = √(3² + 4²) = 5 cm",
+          "hu": "Az alkotó nem a magasság."
+        },
+        {
+          "en": "V = r²π · m/3 = 9π · 4/3 = 12π ≈ 37,7 cm³",
+          "hu": "Kúpnál és gúlánál a 3-mal osztás kötelező."
+        }
+      ]
+    },
+    {
+      "title": "Térgeometria: felszín és térfogat",
+      "explanation": "Hasáb és henger: V = T_alap · m. Gúla és kúp: V = T_alap · m/3. Gömb: V = 4r³π/3, A = 4r²π. A felszín a határoló lapok területének összege (kúp: A = r²π + rπa, ahol a az alkotó).",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "Kúp felszíne r = 3, a = 5: A = 9π + 15π = 24π",
+          "hu": "Alaplap + palást."
+        },
+        {
+          "en": "Gúla térfogata: alapterület 100, m = 12 → V = 400",
+          "hu": "A hasábé 1200 lenne."
+        }
+      ]
+    },
+    {
+      "title": "Sorozatok képletei",
+      "explanation": "Számtani: aₙ = a₁ + (n − 1)d, Sₙ = (a₁ + aₙ)n/2. Mértani: bₙ = b₁qⁿ⁻¹, Sₙ = b₁(qⁿ − 1)/(q − 1), q ≠ 1. A kitevő és a szorzó n − 1, mert az első tagtól az n-edikig n − 1 lépés van.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "b₁ = 3, q = 2 → b₇ = 3 · 2⁶ = 192",
+          "hu": "Nem 3 · 2⁷ = 384."
+        },
+        {
+          "en": "a₁ = 4, d = 3 → a₁₀ = 4 + 9 · 3 = 31",
+          "hu": "Kilencszer adjuk hozzá d-t."
+        }
+      ]
+    },
+    {
+      "title": "Kombinatorika: melyik képlet?",
+      "explanation": "Számít-e a sorrend, és lehet-e ismétlés? Sorrend számít, nincs ismétlés: variáció n!/(n − k)!; sorrend nem számít: kombináció C(n; k); ismétléssel, sorrendben: nᵏ; minden elem sorrendje: n!.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "10 versenyző dobogója: 10 · 9 · 8 = 720",
+          "hu": "A helyezések különbözők → számít a sorrend."
+        },
+        {
+          "en": "10 tanulóból 3 fős csoport: C(10; 3) = 120",
+          "hu": "A csoporton belül nincs sorrend."
+        }
+      ]
+    },
+    {
+      "title": "Síkidomok területe",
+      "explanation": "Háromszög: a · mₐ/2 vagy ab · sin γ/2; trapéz: (a + c) · m/2; paralelogramma: a · mₐ; rombusz és deltoid: e · f/2; kör: r²π. Mindig az adott oldalhoz tartozó magassággal számolj.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "Trapéz: a = 10, c = 6, m = 4 → T = 16 · 4/2 = 32",
+          "hu": "A két alap átlaga szorozva a magassággal."
+        }
+      ]
+    }
+  ],
+  "commonMistakes": [
+    {
+      "wrong": "A kúp térfogata V = r²π · m",
+      "right": "V = r²π · m/3",
+      "why": "A kúp térfogata az azonos alapú és magasságú henger térfogatának harmada; a 3-mal osztás nélkül a henger térfogatát kapod."
+    },
+    {
+      "wrong": "Mértani sorozat: b₆ = b₁ · q⁶",
+      "right": "b₆ = b₁ · q⁵",
+      "why": "Az első tagtól a hatodikig ötször szorzunk q-val, ezért a kitevő n − 1."
+    },
+    {
+      "wrong": "10 versenyző első három helye: C(10; 3) = 120",
+      "right": "10 · 9 · 8 = 720",
+      "why": "A helyezések különbözők, tehát a sorrend számít: variációt kell számolni, nem kombinációt."
+    },
+    {
+      "wrong": "Gúla palástjánál a testmagassággal számolok",
+      "right": "Az oldallap területéhez az oldallap magassága kell",
+      "why": "A testmagasság a csúcsból az alaplapra állított merőleges; az oldallap háromszögének magassága ennél hosszabb (Pitagorasz-tétellel számolható)."
+    }
+  ],
+  "examTips": [
+    "A függvénytáblázat használható – a vizsgán ne fejből bizonytalankodj, hanem keresd ki a képletet, és írd le, melyiket használod.",
+    "Térgeometriai feladatban (II. rész) a „melyik magasság?” kérdést egy ábrával és a derékszögű segédháromszög megnevezésével döntsd el – ez külön pontot ér.",
+    "Kombinatorikánál egy mondatban indokold, miért számít (vagy nem számít) a sorrend; az indoklás nélküli képlet kevesebb pontot ér."
+  ],
+  "practice": [
+    {
+      "id": "1",
+      "kind": "text",
+      "prompt": "Egy kúp alapkörének sugara 3 cm, magassága 4 cm. Mekkora a térfogata egész cm³-re kerekítve?",
+      "answer": [
+        "38",
+        "38 cm³",
+        "38 cm3",
+        "12π",
+        "12π cm³"
+      ],
+      "category": "kepletek",
+      "explanation": "38 cm³. V = r²π · m/3 = 9π · 4/3 = 12π ≈ 37,7 ≈ 38 cm³. A 3-mal való osztás nélkül 113 cm³ (a henger térfogata) jönne ki."
+    },
+    {
+      "id": "2",
+      "kind": "choice",
+      "prompt": "Egy kúp alapkörének sugara 3 cm, alkotója 5 cm. Mekkora a felszíne?",
+      "options": [
+        {
+          "key": "A",
+          "text": "24π cm²"
+        },
+        {
+          "key": "B",
+          "text": "15π cm²"
+        },
+        {
+          "key": "C",
+          "text": "9π cm²"
+        },
+        {
+          "key": "D",
+          "text": "33π cm²"
+        }
+      ],
+      "answer": "A",
+      "category": "kepletek",
+      "explanation": "A helyes: 24π cm². A = alaplap + palást = r²π + rπa = 9π + 15π = 24π cm².",
+      "wrongOptions": {
+        "B": "A 15π csak a palást területe, az alaplap hiányzik.",
+        "C": "A 9π csak az alaplap területe.",
+        "D": "A 33π-ben az alaplap kétszer szerepel: r²π + rπ(r + a) = 9π + 24π; a palást csak rπa = 15π."
+      }
+    },
+    {
+      "id": "3",
+      "kind": "text",
+      "prompt": "Egy mértani sorozat első tagja 3, hányadosa 2. Mennyi a 7. tagja?",
+      "answer": [
+        "192"
+      ],
+      "category": "kepletek",
+      "explanation": "192. b₇ = b₁ · q⁶ = 3 · 64 = 192. A kitevő 7 − 1 = 6, mert az első tagtól a hetedikig hatszor szorzunk 2-vel."
+    },
+    {
+      "id": "4",
+      "kind": "choice",
+      "prompt": "Egy versenyen 10-en indulnak. Hányféleképpen alakulhat az első három hely (holtverseny nincs)?",
+      "options": [
+        {
+          "key": "A",
+          "text": "120"
+        },
+        {
+          "key": "B",
+          "text": "720"
+        },
+        {
+          "key": "C",
+          "text": "1000"
+        },
+        {
+          "key": "D",
+          "text": "6"
+        }
+      ],
+      "answer": "B",
+      "category": "kepletek",
+      "explanation": "A helyes: 720. A sorrend számít és nincs ismétlés: 10 · 9 · 8 = 720 (ismétlés nélküli variáció).",
+      "wrongOptions": {
+        "A": "A 120 = C(10; 3) azt adja meg, kik állnak a dobogón, de a sorrendjüket nem.",
+        "C": "A 10³ ismétléses variáció lenne, de ugyanaz az ember nem lehet egyszerre első és második.",
+        "D": "A 3! = 6 csak három rögzített ember sorrendjeinek száma."
+      }
+    },
+    {
+      "id": "5",
+      "kind": "text",
+      "prompt": "Egy trapéz párhuzamos oldalai 10 cm és 6 cm, magassága 4 cm. Mekkora a területe (cm²)?",
+      "answer": [
+        "32",
+        "32 cm²",
+        "32 cm2"
+      ],
+      "category": "kepletek",
+      "explanation": "32 cm². T = (a + c) · m/2 = (10 + 6) · 4/2 = 32 cm²."
+    }
+  ],
+  "relatedCategories": [
+    "geometria-osszefuggesek",
+    "definicio-tetel",
+    "mertekegyseg-kerekites"
+  ]
+}

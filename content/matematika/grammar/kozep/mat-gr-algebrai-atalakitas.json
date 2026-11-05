@@ -1,0 +1,220 @@
+{
+  "schemaVersion": 1,
+  "id": "mat-gr-algebrai-atalakitas",
+  "subject": "matematika",
+  "revision": 1,
+  "level": "kozep",
+  "source": "generated",
+  "topic": "nyelvtan",
+  "title": "Algebrai átalakítások, nevezetes azonosságok",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "grammar",
+  "type": "lesson",
+  "category": "algebrai-atalakitas",
+  "summaryHu": "Az algebrai kifejezések átalakítása (zárójelfelbontás, kiemelés, nevezetes azonosságok, algebrai törtek egyszerűsítése, teljes négyzetté alakítás) az egyenletek, a függvényvizsgálat és a koordinátageometria alapja. A tipikus hibák: (a + b)² = a² + b², a zárójel előtti mínusz figyelmen kívül hagyása és tagok „kiejtése” törtekben.",
+  "rules": [
+    {
+      "title": "Nevezetes azonosságok",
+      "explanation": "(a + b)² = a² + 2ab + b², (a − b)² = a² − 2ab + b², a² − b² = (a + b)(a − b). A középső tag (2ab) nem hagyható el; az összeg négyzete nem a négyzetek összege.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "(x − 4)² = x² − 8x + 16",
+          "hu": "A középső tag 2 · x · (−4) = −8x."
+        },
+        {
+          "en": "x² − 9 = (x + 3)(x − 3)",
+          "hu": "Két négyzet különbsége szorzattá alakítva."
+        }
+      ]
+    },
+    {
+      "title": "Kiemelés, szorzattá alakítás",
+      "explanation": "A közös tényezőt kiemeljük: ab + ac = a(b + c). Szorzattá alakítás után egy szorzat pontosan akkor 0, ha valamelyik tényezője 0 – ezért egyenletmegoldásnál ez a legbiztosabb út.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "6x² − 9x = 3x(2x − 3)",
+          "hu": "A 3x mindkét tagban szerepel."
+        },
+        {
+          "en": "x² − 5x + 6 = (x − 2)(x − 3)",
+          "hu": "Gyöktényezős alak: a gyökök 2 és 3."
+        }
+      ]
+    },
+    {
+      "title": "Zárójel előtti mínusz és szorzó",
+      "explanation": "A zárójel előtti szorzóval a zárójel minden tagját szorozzuk; mínusz előjelnél minden tag előjele megfordul.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "3a − (2a − 5) = 3a − 2a + 5 = a + 5",
+          "hu": "A −5-ből +5 lesz."
+        },
+        {
+          "en": "−2(x − 3) = −2x + 6",
+          "hu": "A −2-vel a −3-at is szorozni kell."
+        }
+      ]
+    },
+    {
+      "title": "Algebrai törtek egyszerűsítése",
+      "explanation": "Csak közös szorzótényezővel egyszerűsíthetünk, összeadandó taggal nem. Előbb szorzattá alakítunk, és kikötjük, hogy a nevező nem 0 (ez az egyszerűsítés után is érvényben marad).",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "(x² − 4)/(x + 2) = (x + 2)(x − 2)/(x + 2) = x − 2, ha x ≠ −2",
+          "hu": "A kikötés az eredeti nevezőből jön."
+        },
+        {
+          "en": "(x + 3)/3 ≠ x",
+          "hu": "A 3 itt összeadandó, nem tényező: nem ejthető ki."
+        }
+      ]
+    },
+    {
+      "title": "Teljes négyzetté alakítás",
+      "explanation": "x² + bx + c = (x + b/2)² − (b/2)² + c. Ebből leolvasható a parabola tengelypontja, a kör középpontja és sugara.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "x² + 6x + 2 = (x + 3)² − 9 + 2 = (x + 3)² − 7",
+          "hu": "A tengelypont (−3; −7)."
+        },
+        {
+          "en": "x² + y² − 4x + 2y = 4 → (x − 2)² + (y + 1)² = 9",
+          "hu": "Kör: K(2; −1), r = 3."
+        }
+      ]
+    }
+  ],
+  "commonMistakes": [
+    {
+      "wrong": "(a + b)² = a² + b²",
+      "right": "(a + b)² = a² + 2ab + b²",
+      "why": "A négyzetre emelés nem tagonként történik: (a + b)(a + b) kifejtésében a két vegyes szorzat 2ab-t ad. Pl. (1 + 2)² = 9, de 1² + 2² = 5."
+    },
+    {
+      "wrong": "−(x − 3) = −x − 3",
+      "right": "−(x − 3) = −x + 3",
+      "why": "A zárójel előtti mínusz minden tag előjelét megfordítja."
+    },
+    {
+      "wrong": "(x + 3)/3 = x",
+      "right": "(x + 3)/3 = x/3 + 1",
+      "why": "Egyszerűsíteni csak szorzótényezővel lehet; a 3 a számlálóban összeadandó, ezért mindkét tagot osztani kell."
+    },
+    {
+      "wrong": "(2x)³ = 2x³",
+      "right": "(2x)³ = 8x³",
+      "why": "A szorzat hatványozásakor minden tényezőt hatványozunk: 2³ · x³ = 8x³."
+    }
+  ],
+  "examTips": [
+    "Másodfokú függvény szélsőértékénél és kör egyenleténél a teljes négyzetté alakítás a leggyorsabb, és a javítás pontot ad rá – írd le a lépést.",
+    "Algebrai törtes feladatnál a kikötés (nevező ≠ 0) külön pontot ér, akkor is, ha az egyszerűsítés után a nevező eltűnik.",
+    "Egy átalakítás helyességét egy próbaszám behelyettesítésével gyorsan ellenőrizheted (pl. x = 1 mindkét alakban ugyanazt adja-e)."
+  ],
+  "practice": [
+    {
+      "id": "1",
+      "kind": "text",
+      "prompt": "Mennyi az x együtthatója az (x − 4)² kifejezés kifejtett alakjában?",
+      "answer": [
+        "−8",
+        "-8"
+      ],
+      "category": "algebrai-atalakitas",
+      "explanation": "−8. (x − 4)² = x² − 2 · 4 · x + 16 = x² − 8x + 16. A középső tag a két tag szorzatának kétszerese, előjellel."
+    },
+    {
+      "id": "2",
+      "kind": "choice",
+      "prompt": "Melyik az x² − 9 szorzattá alakított alakja?",
+      "options": [
+        {
+          "key": "A",
+          "text": "(x − 3)²"
+        },
+        {
+          "key": "B",
+          "text": "(x − 3)(x + 3)"
+        },
+        {
+          "key": "C",
+          "text": "(x − 9)(x + 1)"
+        },
+        {
+          "key": "D",
+          "text": "(x + 3)²"
+        }
+      ],
+      "answer": "B",
+      "category": "algebrai-atalakitas",
+      "explanation": "A helyes: (x − 3)(x + 3). Két négyzet különbsége: a² − b² = (a − b)(a + b), itt a = x, b = 3.",
+      "wrongOptions": {
+        "A": "(x − 3)² = x² − 6x + 9, ebben van egy −6x tag is.",
+        "C": "(x − 9)(x + 1) = x² − 8x − 9.",
+        "D": "(x + 3)² = x² + 6x + 9."
+      }
+    },
+    {
+      "id": "3",
+      "kind": "text",
+      "prompt": "Egyszerűsítsd az (x² − 4)/(x + 2) törtet (x ≠ −2)! Mennyi az egyszerűsített kifejezés értéke x = 10 esetén?",
+      "answer": [
+        "8"
+      ],
+      "category": "algebrai-atalakitas",
+      "explanation": "8. A számláló két négyzet különbsége: (x + 2)(x − 2), így a tört x − 2 (x ≠ −2). x = 10-nél 10 − 2 = 8 (ellenőrzés: 96/12 = 8)."
+    },
+    {
+      "id": "4",
+      "kind": "text",
+      "prompt": "Egyszerűsítsd a 3a − (2a − 5) kifejezést, majd add meg az értékét a = 2 esetén!",
+      "answer": [
+        "7"
+      ],
+      "category": "algebrai-atalakitas",
+      "explanation": "7. 3a − (2a − 5) = 3a − 2a + 5 = a + 5, ami a = 2-nél 7. Ha a zárójel előtti mínuszt elfelejted (a − 5), −3 jönne ki."
+    },
+    {
+      "id": "5",
+      "kind": "choice",
+      "prompt": "Mivel egyenlő (2x)³?",
+      "options": [
+        {
+          "key": "A",
+          "text": "2x³"
+        },
+        {
+          "key": "B",
+          "text": "6x³"
+        },
+        {
+          "key": "C",
+          "text": "8x³"
+        },
+        {
+          "key": "D",
+          "text": "8x"
+        }
+      ],
+      "answer": "C",
+      "category": "algebrai-atalakitas",
+      "explanation": "A helyes: 8x³. Szorzatot tényezőnként hatványozunk: (2x)³ = 2³ · x³ = 8x³.",
+      "wrongOptions": {
+        "A": "A 2-es tényezőt is köbre kell emelni.",
+        "B": "A 2-t nem 3-mal szorozzuk, hanem a harmadik hatványra emeljük: 2³ = 8.",
+        "D": "Az x-et is köbre kell emelni."
+      }
+    }
+  ],
+  "relatedCategories": [
+    "tortek-hatvanyok",
+    "egyenlet-rendezes",
+    "fuggveny-abrazolas"
+  ]
+}

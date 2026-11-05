@@ -1,0 +1,88 @@
+{
+  "schemaVersion": 1,
+  "id": "kem-wr-kozep-magnezium-sosav",
+  "subject": "kemia",
+  "revision": 1,
+  "level": "kozep",
+  "source": "generated",
+  "topic": "szamitasok",
+  "title": "Magnézium oldása sósavban – sztöchiometria és oldatösszetétel",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "writing",
+  "type": "szamitasi",
+  "taskNumber": 1,
+  "situation": "4,86 g magnéziumforgácsot 200 g 10,0 tömegszázalékos sósavba szórunk. A magnézium maradéktalanul feloldódik.\n\na) Írja fel a lejátszódó reakció rendezett egyenletét! (2 pont)\nb) Mekkora térfogatú standardállapotú hidrogéngáz fejlődik? (3 pont)\nc) Melyik kiindulási anyag van feleslegben, és hány gramm marad belőle a reakció után? (4 pont)\nd) Hány tömegszázalék magnézium-kloridot és hány tömegszázalék hidrogén-kloridot tartalmaz a keletkező oldat? (A fejlődő hidrogén teljes mennyisége eltávozik, a víz párolgásától eltekintünk.) (6 pont)\n\nAdatok: Ar(H) = 1,0; Ar(Mg) = 24,3; Ar(Cl) = 35,5; a gázok moláris térfogata standardállapotban (25 °C, 0,1 MPa) Vm = 24,5 dm³/mol. Az eredményeket három értékes jegyre kerekítve adja meg!",
+  "points": [
+    {
+      "id": "p1",
+      "text": "a) A reakció rendezett egyenlete (2 pont)"
+    },
+    {
+      "id": "p2",
+      "text": "b) A fejlődő hidrogéngáz térfogata standardállapotban (3 pont)"
+    },
+    {
+      "id": "p3",
+      "text": "c) A feleslegben lévő anyag megállapítása és a maradék tömege (4 pont)"
+    },
+    {
+      "id": "p4",
+      "text": "d) A keletkező oldat tömege, MgCl₂- és HCl-tartalma tömegszázalékban (6 pont)"
+    }
+  ],
+  "suggestedMinutes": 25,
+  "usefulPhrases": [
+    {
+      "en": "n = m / M",
+      "hu": "Anyagmennyiség a tömegből és a moláris tömegből – minden számítás első lépése."
+    },
+    {
+      "en": "V = n · Vm (Vm = 24,5 dm³/mol)",
+      "hu": "Gáz térfogata standardállapotban (25 °C, 0,1 MPa)."
+    },
+    {
+      "en": "feleslegben van / elfogy",
+      "hu": "Az egyenlet szerinti aránnyal döntsd el, melyik anyag fogy el; a terméket mindig az elfogyó anyagból számold."
+    },
+    {
+      "en": "m(oldat) = m(kiindulási anyagok) − m(távozó gáz)",
+      "hu": "Tömegmegmaradás: a fejlődő gáz kilép az oldatból, a tömegét le kell vonni."
+    },
+    {
+      "en": "w = m(oldott anyag) / m(oldat) · 100 %",
+      "hu": "Tömegszázalék – mindig a teljes oldat tömegére, nem a vízére."
+    },
+    {
+      "en": "Mg + 2 HCl → MgCl₂ + H₂",
+      "hu": "A hidrogénnél negatívabb standardpotenciálú fémek nem oxidáló savból hidrogént fejlesztenek."
+    }
+  ],
+  "checklistExtra": [],
+  "modelAnswer": {
+    "text": "a) A magnézium standardpotenciálja (−2,37 V) negatívabb a hidrogénénél, ezért a sósavból hidrogént fejleszt:\nMg + 2 HCl → MgCl₂ + H₂\n(ionegyenlettel: Mg + 2 H⁺ → Mg²⁺ + H₂)\n\nb) n(Mg) = m / M = 4,86 g / 24,3 g/mol = 0,200 mol.\nAz egyenlet szerint 1 mol Mg-ból 1 mol H₂ keletkezik, így n(H₂) = 0,200 mol.\nV(H₂) = n · Vm = 0,200 mol · 24,5 dm³/mol = 4,90 dm³.\nStandardállapotban 4,90 dm³ hidrogéngáz fejlődik.\n\nc) A sósavban lévő HCl tömege: m(HCl) = 200 g · 0,100 = 20,0 g, anyagmennyisége n(HCl) = 20,0 g / 36,5 g/mol = 0,548 mol.\nA 0,200 mol magnéziumhoz 2 · 0,200 mol = 0,400 mol HCl kell, tehát a hidrogén-klorid van feleslegben (a magnézium el is fogy, ahogy a feladat mondja).\nA maradék HCl: 0,548 mol − 0,400 mol = 0,148 mol, ennek tömege 0,148 mol · 36,5 g/mol = 5,40 g.\nReakció után 5,40 g hidrogén-klorid marad feleslegben.\n\nd) Az oldat tömegét a tömegmegmaradás alapján számolom: a sósav és a magnézium tömegének összegéből le kell vonni az eltávozó hidrogén tömegét.\nm(H₂) = 0,200 mol · 2,0 g/mol = 0,400 g\nm(oldat) = 200 g + 4,86 g − 0,400 g = 204,46 g\nM(MgCl₂) = 24,3 + 2 · 35,5 = 95,3 g/mol; m(MgCl₂) = 0,200 mol · 95,3 g/mol = 19,06 g\nw(MgCl₂) = 19,06 g / 204,46 g · 100 % = 9,32 %\nw(HCl) = 5,40 g / 204,46 g · 100 % = 2,64 %\nA keletkező oldat 9,32 tömegszázalék magnézium-kloridot és 2,64 tömegszázalék hidrogén-kloridot tartalmaz.",
+    "pointsCovered": [
+      {
+        "id": "p1",
+        "quote": "Mg + 2 HCl → MgCl₂ + H₂"
+      },
+      {
+        "id": "p2",
+        "quote": "V(H₂) = n · Vm = 0,200 mol · 24,5 dm³/mol = 4,90 dm³."
+      },
+      {
+        "id": "p3",
+        "quote": "A maradék HCl: 0,548 mol − 0,400 mol = 0,148 mol, ennek tömege 0,148 mol · 36,5 g/mol = 5,40 g."
+      },
+      {
+        "id": "p4",
+        "quote": "w(MgCl₂) = 19,06 g / 204,46 g · 100 % = 9,32 %"
+      }
+    ],
+    "notes": [
+      "Eredmény: mind a négy részeredmény (rendezett egyenlet, 4,90 dm³, 5,40 g HCl-felesleg, 9,32 % és 2,64 %) helyes és három értékes jegyre kerekített, ezért az eredmény-szempont teljes pontszáma jár.",
+      "Indoklás: minden lépésnél leírja a felhasznált összefüggést (n = m/M, V = n · Vm, tömegmegmaradás), és megindokolja, miért a hidrogén-klorid van feleslegben – ez adja a gondolatmenet pontjait.",
+      "Tipikus pontvesztés elkerülve: az oldat tömegéből levonja az eltávozó hidrogént, és a tömegszázalékot a teljes oldat tömegére számolja, nem a vízére; minden részfeladat szöveges válasszal és mértékegységgel zárul."
+    ]
+  }
+}

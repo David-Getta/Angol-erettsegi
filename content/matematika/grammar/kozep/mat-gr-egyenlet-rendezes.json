@@ -1,0 +1,207 @@
+{
+  "schemaVersion": 1,
+  "id": "mat-gr-egyenlet-rendezes",
+  "subject": "matematika",
+  "revision": 1,
+  "level": "kozep",
+  "source": "generated",
+  "topic": "nyelvtan",
+  "title": "Egyenletrendezés, ekvivalens átalakítások",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "grammar",
+  "type": "lesson",
+  "category": "egyenlet-rendezes",
+  "summaryHu": "Egy egyenlet vagy egyenlőtlenség megoldásakor csak olyan lépést szabad tenni, amely a megoldáshalmazt nem változtatja meg (ekvivalens átalakítás), vagy ha nem ilyen a lépés (négyzetre emelés, ismeretlennel szorzás), akkor a végén ellenőrizni kell. A leggyakoribb hibák: gyökvesztés ismeretlennel osztásnál, hamis gyök négyzetre emelés után, és az egyenlőtlenség irányának elfelejtett megfordítása.",
+  "rules": [
+    {
+      "title": "Ekvivalens átalakítások",
+      "explanation": "Az egyenlet mindkét oldalához ugyanazt a számot (kifejezést) hozzáadhatjuk, és mindkét oldalt ugyanazzal a nullától különböző számmal szorozhatjuk vagy oszthatjuk. Ismeretlent tartalmazó kifejezéssel osztani csak akkor szabad, ha az biztosan nem nulla.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "3x + 7 = 22 → 3x = 15 → x = 5",
+          "hu": "Kivonás, majd osztás 3-mal (≠ 0)."
+        },
+        {
+          "en": "x² = 5x → x² − 5x = 0 → x(x − 5) = 0 → x = 0 vagy x = 5",
+          "hu": "Nullára rendezés és szorzattá alakítás: így nem vész el gyök."
+        }
+      ]
+    },
+    {
+      "title": "Egyenlőtlenségek: az irány megfordul",
+      "explanation": "Ha egy egyenlőtlenség mindkét oldalát negatív számmal szorozzuk vagy osztjuk, a reláció iránya megfordul. Ismeretlen kifejezéssel (amelynek előjele nem ismert) nem szorzunk; ilyenkor nullára rendezünk és előjelvizsgálatot végzünk.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "−3x + 4 > 10 → −3x > 6 → x < −2",
+          "hu": "A −3-mal osztásnál a > reláció <-re vált."
+        },
+        {
+          "en": "2(x − 3) ≥ 4x + 2 → −8 ≥ 2x → x ≤ −4",
+          "hu": "Átrendezésnél figyeld, melyik oldalra kerül az ismeretlen."
+        }
+      ]
+    },
+    {
+      "title": "Négyzetre emelés és hamis gyök",
+      "explanation": "A négyzetre emelés nem ekvivalens átalakítás: a ≠ b esetén is lehet a² = b² (pl. 2 és −2). Gyökös egyenletnél ezért a kapott számokat az eredeti egyenletbe vissza kell helyettesíteni, vagy előre ki kell kötni, hogy a gyökkel egyenlő oldal nemnegatív.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "√(x + 6) = x → x + 6 = x² → x = 3 vagy x = −2",
+          "hu": "Ellenőrzés: x = 3 jó (√9 = 3), x = −2 hamis gyök (√4 = 2 ≠ −2)."
+        },
+        {
+          "en": "Kikötés: x ≥ 0, mert √(x + 6) ≥ 0",
+          "hu": "A kikötés előre kiszűri a −2-t."
+        }
+      ]
+    },
+    {
+      "title": "Abszolút érték és értelmezési tartomány",
+      "explanation": "Az |A| = c (c > 0) egyenlet A = c vagy A = −c-re bomlik; |A| ≤ c pedig −c ≤ A ≤ c-re. Törtes egyenletnél a nevező nem lehet 0, logaritmusosnál az argumentum pozitív, gyökösnél a gyök alatti kifejezés nemnegatív: ezeket a megoldás elején ki kell kötni.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "|x − 1| = 4 → x − 1 = 4 vagy x − 1 = −4 → x = 5 vagy x = −3",
+          "hu": "Két eset, mindkettő megoldás."
+        },
+        {
+          "en": "1/(x − 2) = 3: kikötés x ≠ 2",
+          "hu": "A kikötést a végén a kapott gyökkel összevetjük."
+        }
+      ]
+    }
+  ],
+  "commonMistakes": [
+    {
+      "wrong": "x² = 3x → (osztva x-szel) x = 3",
+      "right": "x² − 3x = 0 → x(x − 3) = 0 → x = 0 vagy x = 3",
+      "why": "Az x-szel való osztás csak x ≠ 0 esetén megengedett, így az x = 0 gyök elveszne. Nullára rendezz és alakíts szorzattá!"
+    },
+    {
+      "wrong": "−2x > 6 → x > −3",
+      "right": "−2x > 6 → x < −3",
+      "why": "Negatív számmal osztva az egyenlőtlenség iránya megfordul. Ellenőrzés: x = 0-ra −2 · 0 > 6 hamis, tehát a 0 nem lehet megoldás."
+    },
+    {
+      "wrong": "√(x + 2) = x → x = 2 vagy x = −1",
+      "right": "√(x + 2) = x → x = 2",
+      "why": "A négyzetre emelés hamis gyököt hozhat: x = −1-nél √1 = 1 ≠ −1. Mindig ellenőrizz az eredeti egyenletben!"
+    },
+    {
+      "wrong": "1/x < 2 → 1 < 2x → x > 1/2",
+      "right": "1/x < 2 ⇔ x < 0 vagy x > 1/2",
+      "why": "Ismeretlennel nem szorzunk egyenlőtlenségben, mert az előjele nem ismert: x < 0 esetén az irány megfordulna. Nullára rendezve (1 − 2x)/x < 0, ebből előjelvizsgálattal x < 0 vagy x > 1/2."
+    }
+  ],
+  "examTips": [
+    "Egyenletnél a II. részben a javítási útmutató külön pontot ad a kikötésre (értelmezési tartomány) és az ellenőrzésre – akkor is írd le őket, ha a megoldás „egyértelmű”.",
+    "Ha egy egyenlőtlenség megoldása után kiválasztasz egy próbaszámot és visszahelyettesíted, azonnal kiderül, ha az irány rossz.",
+    "Másodfokú egyenlőtlenségnél ne gyököt vonj (x² > 9 nem azt jelenti, hogy x > 3), hanem a parabola alakjából olvasd le a megoldást: x < −3 vagy x > 3."
+  ],
+  "practice": [
+    {
+      "id": "1",
+      "kind": "text",
+      "prompt": "Hány valós megoldása van az x² = 5x egyenletnek?",
+      "answer": [
+        "2",
+        "2 db"
+      ],
+      "category": "egyenlet-rendezes",
+      "explanation": "2. Nullára rendezve x² − 5x = 0, azaz x(x − 5) = 0, így x = 0 vagy x = 5. Ha x-szel osztanánk, az x = 0 gyök elveszne."
+    },
+    {
+      "id": "2",
+      "kind": "text",
+      "prompt": "Mennyi a −3x + 4 > 10 egyenlőtlenség legnagyobb egész megoldása?",
+      "answer": [
+        "−3",
+        "-3"
+      ],
+      "category": "egyenlet-rendezes",
+      "explanation": "−3. −3x > 6, és −3-mal osztva az irány megfordul: x < −2. A −2 már nem megoldás (szigorú egyenlőtlenség), így a legnagyobb egész a −3."
+    },
+    {
+      "id": "3",
+      "kind": "choice",
+      "prompt": "Mi a √(x + 6) = x egyenlet megoldáshalmaza a valós számok körében?",
+      "options": [
+        {
+          "key": "A",
+          "text": "{3}"
+        },
+        {
+          "key": "B",
+          "text": "{−2}"
+        },
+        {
+          "key": "C",
+          "text": "{−2; 3}"
+        },
+        {
+          "key": "D",
+          "text": "üres halmaz"
+        }
+      ],
+      "answer": "A",
+      "category": "egyenlet-rendezes",
+      "explanation": "A helyes: {3}. Négyzetre emelve x + 6 = x², gyökei 3 és −2. Ellenőrzés: √9 = 3 jó, de x = −2-nél √4 = 2 ≠ −2, ez hamis gyök.",
+      "wrongOptions": {
+        "B": "Az x = −2-nél a bal oldal √4 = 2, a jobb oldal −2: a négyzetgyök nem lehet negatív.",
+        "C": "A négyzetre emelés nem ekvivalens lépés; ellenőrzés nélkül benne maradna a −2 hamis gyök.",
+        "D": "Az x = 3 kielégíti az eredeti egyenletet, tehát van megoldás."
+      }
+    },
+    {
+      "id": "4",
+      "kind": "text",
+      "prompt": "Mennyi az |x − 1| = 4 egyenlet megoldásainak szorzata?",
+      "answer": [
+        "−15",
+        "-15"
+      ],
+      "category": "egyenlet-rendezes",
+      "explanation": "−15. Két eset: x − 1 = 4, azaz x = 5, vagy x − 1 = −4, azaz x = −3. A szorzat 5 · (−3) = −15."
+    },
+    {
+      "id": "5",
+      "kind": "choice",
+      "prompt": "Mi a 2(x − 3) ≥ 4x + 2 egyenlőtlenség megoldása?",
+      "options": [
+        {
+          "key": "A",
+          "text": "x ≤ −4"
+        },
+        {
+          "key": "B",
+          "text": "x ≥ −4"
+        },
+        {
+          "key": "C",
+          "text": "x ≤ 4"
+        },
+        {
+          "key": "D",
+          "text": "x ≥ 4"
+        }
+      ],
+      "answer": "A",
+      "category": "egyenlet-rendezes",
+      "explanation": "A helyes: x ≤ −4. Zárójelbontás: 2x − 6 ≥ 4x + 2, rendezve −8 ≥ 2x, azaz x ≤ −4. Próba: x = −5-re −16 ≥ −18 igaz.",
+      "wrongOptions": {
+        "B": "Ha a −2x ≥ 8 alakból osztasz −2-vel, az irány megfordul: x ≤ −4, nem x ≥ −4.",
+        "C": "Előjelhiba: a −6 − 2 = −8, nem +8.",
+        "D": "Itt az előjel és az irány is hibás; x = 5-re 4 ≥ 22 hamis."
+      }
+    }
+  ],
+  "relatedCategories": [
+    "ellenorzes",
+    "algebrai-atalakitas",
+    "tortek-hatvanyok"
+  ]
+}

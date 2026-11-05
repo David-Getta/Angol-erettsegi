@@ -8,27 +8,69 @@
   "situationHu": "Egy német nyelvű ifjúsági fórumon a zsebpénzről vitatkoznak. Írj 80–100 szavas hozzászólást, és térj ki mindhárom szempontra.",
   "stimulus": "Forum „Jung & Geld“ – Neues Thema von Jule_15: „Bekommt ihr Taschengeld? Wofür gebt ihr es aus? Und findet ihr, dass Eltern für Hilfe im Haushalt bezahlen sollten?“",
   "points": [
-    { "id": "p1", "text": "Schreiben Sie, ob Sie Taschengeld bekommen und wie viel." },
-    { "id": "p2", "text": "Berichten Sie, wofür Sie Ihr Geld ausgeben." },
-    { "id": "p3", "text": "Sagen Sie Ihre Meinung: Sollen Eltern für Hausarbeit bezahlen?" }
+    {
+      "id": "p1",
+      "text": "Schreiben Sie, ob Sie Taschengeld bekommen und wie viel."
+    },
+    {
+      "id": "p2",
+      "text": "Berichten Sie, wofür Sie Ihr Geld ausgeben."
+    },
+    {
+      "id": "p3",
+      "text": "Sagen Sie Ihre Meinung: Sollen Eltern für Hausarbeit bezahlen?"
+    }
   ],
-  "wordLimit": { "min": 80, "max": 100 },
+  "wordLimit": {
+    "min": 80,
+    "max": 100
+  },
   "suggestedMinutes": 25,
   "usefulPhrases": [
-    { "en": "Hallo zusammen,", "hu": "Sziasztok! (fórumon, csoportnak)" },
-    { "en": "Ich bekomme jeden Monat 40 Euro Taschengeld.", "hu": "Havonta 40 euró zsebpénzt kapok." },
-    { "en": "Für mich reicht es meistens.", "hu": "Nekem többnyire elég." },
-    { "en": "Am meisten gebe ich für … aus.", "hu": "A legtöbbet …-ra költöm." },
-    { "en": "Ich spare auf neue Kopfhörer.", "hu": "Új fülhallgatóra gyűjtök." },
-    { "en": "Ich finde nicht, dass …", "hu": "Nem gondolom, hogy …" },
-    { "en": "Wie seht ihr das?", "hu": "Ti hogy látjátok?" }
+    {
+      "en": "Hallo zusammen,",
+      "hu": "Sziasztok! (fórumon, csoportnak)"
+    },
+    {
+      "en": "Ich bekomme jeden Monat 40 Euro Taschengeld.",
+      "hu": "Havonta 40 euró zsebpénzt kapok."
+    },
+    {
+      "en": "Für mich reicht es meistens.",
+      "hu": "Nekem többnyire elég."
+    },
+    {
+      "en": "Am meisten gebe ich für … aus.",
+      "hu": "A legtöbbet …-ra költöm."
+    },
+    {
+      "en": "Ich spare auf neue Kopfhörer.",
+      "hu": "Új fülhallgatóra gyűjtök."
+    },
+    {
+      "en": "Ich finde nicht, dass …",
+      "hu": "Nem gondolom, hogy …"
+    },
+    {
+      "en": "Wie seht ihr das?",
+      "hu": "Ti hogy látjátok?"
+    }
   ],
   "modelAnswer": {
-    "text": "Hallo zusammen,\n\nich bekomme von meinen Eltern jeden Monat 40 Euro Taschengeld. Das ist nicht besonders viel, aber für mich reicht es meistens.\n\nAm meisten gebe ich für Kinokarten und Snacks mit meinen Freunden aus. Ein bisschen spare ich auch, weil ich mir im Frühling neue Kopfhörer kaufen möchte.\n\nIch finde nicht, dass Eltern für Hausarbeit bezahlen sollten. Wir wohnen alle zusammen, also sollte jeder ein bisschen helfen, auch ohne Geld. Wie seht ihr das?\n\nViele Grüße\nBence (16, Győr)",
+    "text": "Hallo zusammen,\n\nich bekomme von meinen Eltern jeden Monat 40 Euro Taschengeld. Das ist nicht besonders viel, aber für mich reicht es meistens.\n\nAm meisten gebe ich für Kinokarten und Snacks mit meinen Freunden aus. Kleidung kaufen mir zum Glück meistens meine Eltern. Ein bisschen spare ich auch, weil ich mir im Frühling neue Kopfhörer kaufen möchte.\n\nIch finde nicht, dass Eltern für Hausarbeit bezahlen sollten. Wir wohnen alle zusammen, also sollte jeder ein bisschen helfen, auch ohne Geld. Wie seht ihr das?\n\nViele Grüße\nBence (16, Győr)",
     "pointsCovered": [
-      { "id": "p1", "quote": "ich bekomme von meinen Eltern jeden Monat 40 Euro Taschengeld." },
-      { "id": "p2", "quote": "Am meisten gebe ich für Kinokarten und Snacks mit meinen Freunden aus." },
-      { "id": "p3", "quote": "Ich finde nicht, dass Eltern für Hausarbeit bezahlen sollten. Wir wohnen alle zusammen, also sollte jeder ein bisschen helfen, auch ohne Geld." }
+      {
+        "id": "p1",
+        "quote": "ich bekomme von meinen Eltern jeden Monat 40 Euro Taschengeld."
+      },
+      {
+        "id": "p2",
+        "quote": "Am meisten gebe ich für Kinokarten und Snacks mit meinen Freunden aus."
+      },
+      {
+        "id": "p3",
+        "quote": "Ich finde nicht, dass Eltern für Hausarbeit bezahlen sollten. Wir wohnen alle zusammen, also sollte jeder ein bisschen helfen, auch ohne Geld."
+      }
     ],
     "notes": [
       "Feladat teljesítése: mindhárom kérdésre konkrét válasz jön (mennyi, mire, vélemény indoklással), a záró kérdés („Wie seht ihr das?”) a fórum műfajához illően bevonja a többieket.",

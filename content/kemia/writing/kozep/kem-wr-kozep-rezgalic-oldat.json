@@ -1,0 +1,88 @@
+{
+  "schemaVersion": 1,
+  "id": "kem-wr-kozep-rezgalic-oldat",
+  "subject": "kemia",
+  "revision": 1,
+  "level": "kozep",
+  "source": "generated",
+  "topic": "anyagi-halmazok",
+  "title": "Rézgálicoldat készítése és reakciója vasporral",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "writing",
+  "type": "szamitasi",
+  "taskNumber": 1,
+  "situation": "25,0 g kristályos réz(II)-szulfátot (rézgálic, CuSO₄ · 5 H₂O) 175 g desztillált vízben oldunk. A kapott oldat sűrűsége 1,08 g/cm³.\n\na) Hány tömegszázalékos az oldat réz(II)-szulfátra (CuSO₄) nézve? (4 pont)\nb) Mekkora az oldat anyagmennyiség-koncentrációja? (4 pont)\nc) Az oldat 50,0 cm³-éhez feleslegben vasport szórunk. Írja fel a lejátszódó reakció egyenletét, és nevezze meg, melyik anyag oxidálódik! (2 pont)\nd) Hány gramm réz válik ki, és hány grammal változik a fémpor tömege, ha a kivált réz a vaspor felületén marad? (5 pont)\n\nAdatok: Ar(H) = 1,0; Ar(O) = 16,0; Ar(S) = 32,1; Ar(Fe) = 55,8; Ar(Cu) = 63,5; standardpotenciálok: E°(Fe²⁺/Fe) = −0,44 V, E°(Cu²⁺/Cu) = +0,34 V. Az eredményeket három értékes jegyre kerekítve adja meg!",
+  "points": [
+    {
+      "id": "p1",
+      "text": "a) Az oldat tömegszázalékos CuSO₄-tartalma (a kristályvíz figyelembevételével) (4 pont)"
+    },
+    {
+      "id": "p2",
+      "text": "b) Az oldat anyagmennyiség-koncentrációja a sűrűség felhasználásával (4 pont)"
+    },
+    {
+      "id": "p3",
+      "text": "c) A vas és a réz(II)-szulfát reakciójának egyenlete, az oxidálódó anyag (2 pont)"
+    },
+    {
+      "id": "p4",
+      "text": "d) A kiváló réz tömege és a fémpor tömegváltozása (5 pont)"
+    }
+  ],
+  "suggestedMinutes": 25,
+  "usefulPhrases": [
+    {
+      "en": "M(CuSO₄ · 5 H₂O) = M(CuSO₄) + 5 · M(H₂O)",
+      "hu": "A kristályvizes só moláris tömegébe a kristályvíz is beletartozik."
+    },
+    {
+      "en": "1 mol CuSO₄ · 5 H₂O → 1 mol CuSO₄",
+      "hu": "A kristályvizes só anyagmennyisége megegyezik a benne lévő vízmentes sóéval."
+    },
+    {
+      "en": "V = m / ρ",
+      "hu": "Az oldat térfogata a tömegéből és a sűrűségéből; a koncentrációhoz dm³-ben kell."
+    },
+    {
+      "en": "c = n / V",
+      "hu": "Anyagmennyiség-koncentráció, mol/dm³; V az OLDAT térfogata."
+    },
+    {
+      "en": "Fe + Cu²⁺ → Fe²⁺ + Cu",
+      "hu": "Fémkiszorítás: a negatívabb standardpotenciálú fém redukálja a pozitívabb fém ionjait."
+    },
+    {
+      "en": "tömegváltozás = m(kivált fém) − m(oldódott fém)",
+      "hu": "Fémlemezes/fémporos feladatoknál a szilárd fázis tömege a két hatás különbségével változik."
+    }
+  ],
+  "checklistExtra": [],
+  "modelAnswer": {
+    "text": "a) A kristályvizes só moláris tömege: M(CuSO₄ · 5 H₂O) = 63,5 + 32,1 + 4 · 16,0 + 5 · 18,0 = 249,6 g/mol, a vízmentes sóé M(CuSO₄) = 159,6 g/mol.\nn(CuSO₄ · 5 H₂O) = 25,0 g / 249,6 g/mol = 0,1002 mol; ugyanennyi a CuSO₄ anyagmennyisége is, mert 1 mol kristályban 1 mol CuSO₄ van.\nm(CuSO₄) = 0,1002 mol · 159,6 g/mol = 15,99 g\nAz oldat tömege: 25,0 g + 175 g = 200 g (a kristályvíz az oldószerhez adódik).\nw(CuSO₄) = 15,99 g / 200 g · 100 % = 7,99 %\nAz oldat 7,99 tömegszázalékos réz(II)-szulfátra nézve.\n\nb) Az oldat térfogata: V = m / ρ = 200 g / 1,08 g/cm³ = 185,2 cm³ = 0,1852 dm³.\nc = n / V = 0,1002 mol / 0,1852 dm³ = 0,541 mol/dm³\nAz oldat koncentrációja 0,541 mol/dm³.\n\nc) A vas standardpotenciálja (−0,44 V) negatívabb, mint a rézé (+0,34 V), ezért a vas kiszorítja a rezet a sójából:\nFe + CuSO₄ → FeSO₄ + Cu (ionegyenlettel: Fe + Cu²⁺ → Fe²⁺ + Cu)\nA vas oxidálódik (oxidációs száma 0-ról +2-re nő), a réz(II)-ion redukálódik.\n\nd) Az 50,0 cm³ oldatban: n(CuSO₄) = c · V = 0,541 mol/dm³ · 0,0500 dm³ = 0,02705 mol.\nA vas feleslegben van, ezért az összes réz(II)-ion redukálódik: n(Cu) = 0,02705 mol, m(Cu) = 0,02705 mol · 63,5 g/mol = 1,72 g.\nKözben ugyanennyi anyagmennyiségű vas oldódik fel: m(Fe) = 0,02705 mol · 55,8 g/mol = 1,51 g.\nA fémpor tömegváltozása: +1,718 g − 1,509 g = +0,208 g.\n1,72 g réz válik ki, és a fémpor tömege 0,208 g-mal nő.",
+    "pointsCovered": [
+      {
+        "id": "p1",
+        "quote": "w(CuSO₄) = 15,99 g / 200 g · 100 % = 7,99 %"
+      },
+      {
+        "id": "p2",
+        "quote": "c = n / V = 0,1002 mol / 0,1852 dm³ = 0,541 mol/dm³"
+      },
+      {
+        "id": "p3",
+        "quote": "Fe + CuSO₄ → FeSO₄ + Cu"
+      },
+      {
+        "id": "p4",
+        "quote": "1,72 g réz válik ki, és a fémpor tömege 0,208 g-mal nő."
+      }
+    ],
+    "notes": [
+      "Eredmény: helyes a tömegszázalék (7,99 %), a koncentráció (0,541 mol/dm³), a kivált réz tömege (1,72 g) és a tömegváltozás (+0,208 g); az egyenlet rendezett, az oxidálódó anyag megnevezve.",
+      "Indoklás: a megoldás kimondja a két kulcsgondolatot – a kristályvíz az oldószerhez adódik, és a fémpor tömegváltozása a kivált réz és az oldódott vas tömegének különbsége –, a kiszorítást pedig a standardpotenciálokkal indokolja.",
+      "Számolás és forma: a részeredményeket négy értékes jeggyel viszi tovább, a végeredményeket hármasra kerekíti, a cm³ → dm³ átváltás kiírva, minden részfeladat mondatos válasszal zárul."
+    ]
+  }
+}

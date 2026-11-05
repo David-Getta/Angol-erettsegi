@@ -1,0 +1,232 @@
+{
+  "schemaVersion": 1,
+  "id": "mat-gr-tortek-hatvanyok",
+  "subject": "matematika",
+  "revision": 1,
+  "level": "kozep",
+  "source": "generated",
+  "topic": "nyelvtan",
+  "title": "Törtek, hatványok, gyökök, logaritmus",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "grammar",
+  "type": "lesson",
+  "category": "tortek-hatvanyok",
+  "summaryHu": "A törtműveletek, a hatványozás, a gyökvonás és a logaritmus azonosságai minden témakörben előkerülnek (egyenletek, sorozatok, kamatos kamat, valószínűség). A leggyakoribb hiba, hogy olyan „azonosságot” alkalmazunk, amely csak szorzásra igaz, összegre nem (√(a + b), lg(a + b), (a + b)²). Ez a lecke a szabályokat és a feltételeiket foglalja össze.",
+  "rules": [
+    {
+      "title": "Törtműveletek",
+      "explanation": "Összeadásnál és kivonásnál közös nevezőre hozunk (a nevezők legkisebb közös többszörösére), és csak a számlálókat vonjuk össze. Szorzásnál számláló a számlálóval, nevező a nevezővel; osztásnál a reciprokkal szorzunk.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "1/2 + 1/3 = 3/6 + 2/6 = 5/6",
+          "hu": "Nem 2/5: a nevezőket nem adjuk össze."
+        },
+        {
+          "en": "(3/4) : (9/8) = (3/4) · (8/9) = 24/36 = 2/3",
+          "hu": "Osztás = szorzás a reciprokkal."
+        }
+      ]
+    },
+    {
+      "title": "A hatványozás azonosságai",
+      "explanation": "Azonos alapú hatványok szorzásakor a kitevők összeadódnak, osztásakor kivonódnak; hatvány hatványozásakor a kitevők szorzódnak. a⁰ = 1 (a ≠ 0), a⁻ⁿ = 1/aⁿ, és pozitív a-ra a^(p/q) a q-adik gyök alatt aᵖ.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "2³ · 2⁴ = 2⁷, (2³)⁴ = 2¹²",
+          "hu": "Szorzásnál összeadjuk, hatványozásnál szorozzuk a kitevőket."
+        },
+        {
+          "en": "27^(2/3) = (∛27)² = 3² = 9",
+          "hu": "Törtkitevő: előbb a gyök, aztán a hatvány (vagy fordítva)."
+        },
+        {
+          "en": "(1/2)⁻³ = 2³ = 8",
+          "hu": "Negatív kitevő: reciprok."
+        }
+      ]
+    },
+    {
+      "title": "Gyökök azonosságai",
+      "explanation": "Nemnegatív a, b esetén √(ab) = √a · √b és √(a/b) = √a/√b (b > 0). Összegre nincs ilyen szabály: √(a + b) ≠ √a + √b. Minden valós a-ra √(a²) = |a|. Gyök alól kihozás: √50 = √(25 · 2) = 5√2.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "√(9 + 16) = √25 = 5, nem 3 + 4 = 7",
+          "hu": "Összeg gyökénél előbb összeadunk."
+        },
+        {
+          "en": "√50 = 5√2, √12 = 2√3",
+          "hu": "A gyök alatti szám legnagyobb négyzetszám osztóját hozzuk ki."
+        }
+      ]
+    },
+    {
+      "title": "A logaritmus definíciója és azonosságai",
+      "explanation": "logₐb az a kitevő, amelyre a-t emelve b-t kapunk (a > 0, a ≠ 1, b > 0). Pozitív x, y esetén logₐ(xy) = logₐx + logₐy, logₐ(x/y) = logₐx − logₐy, logₐ(xᵏ) = k · logₐx. Összeg logaritmusára nincs azonosság.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "lg 4 + lg 25 = lg 100 = 2",
+          "hu": "Szorzat logaritmusa visszafelé."
+        },
+        {
+          "en": "log₂ 32 = 5, mert 2⁵ = 32",
+          "hu": "A definíció közvetlen alkalmazása."
+        }
+      ]
+    },
+    {
+      "title": "Áttérés más alapú logaritmusra",
+      "explanation": "Ha a, c pozitív és 1-től különböző, b > 0, akkor logₐb = log_c b / log_c a. Számológéppel így számolunk ki tetszőleges alapú logaritmust (lg-vel vagy ln-nel).",
+      "emeltOnly": true,
+      "examples": [
+        {
+          "en": "log₃ 20 = lg 20 / lg 3 ≈ 1,301/0,477 ≈ 2,727",
+          "hu": "Ellenőrzés: 3^2,727 ≈ 20."
+        }
+      ]
+    }
+  ],
+  "commonMistakes": [
+    {
+      "wrong": "1/2 + 1/3 = 2/5",
+      "right": "1/2 + 1/3 = 5/6",
+      "why": "Törtek összeadásánál nem adjuk össze a nevezőket: közös nevezőre hozunk (6), és csak a számlálókat adjuk össze."
+    },
+    {
+      "wrong": "2³ · 2⁴ = 2¹²",
+      "right": "2³ · 2⁴ = 2⁷",
+      "why": "Azonos alapú hatványok szorzásakor a kitevők összeadódnak; a 2¹² a (2³)⁴ eredménye lenne."
+    },
+    {
+      "wrong": "√(x² + 9) = x + 3",
+      "right": "√(x² + 9) nem egyszerűsíthető",
+      "why": "Összeg gyökére nincs azonosság; pl. x = 4-nél √25 = 5, de x + 3 = 7."
+    },
+    {
+      "wrong": "lg(a + b) = lg a + lg b",
+      "right": "lg(a · b) = lg a + lg b",
+      "why": "A logaritmus a szorzatot alakítja összeggé, nem az összeget; összeg logaritmusa nem bontható fel."
+    },
+    {
+      "wrong": "(a + b)⁻¹ = a⁻¹ + b⁻¹",
+      "right": "(a + b)⁻¹ = 1/(a + b)",
+      "why": "A negatív kitevő a teljes alap reciprokát jelenti; pl. (1 + 1)⁻¹ = 1/2, de 1⁻¹ + 1⁻¹ = 2."
+    }
+  ],
+  "examTips": [
+    "Az I. részben szinte mindig van egy hatvány- vagy logaritmusfeladat (pl. „Mennyi log₃ 81?”, „Írja fel 2 hatványaként!”) – itt a definíció biztos tudása elég.",
+    "Exponenciális és logaritmusos egyenleteknél (II. rész) írd ki a felhasznált azonosságot, és vizsgáld az értelmezési tartományt (a logaritmus argumentuma pozitív).",
+    "Kamatos kamatnál és mértani sorozatnál a hatványt ne kerekítsd korán: 1,04¹⁰-et a számológép teljes pontosságával vidd tovább."
+  ],
+  "practice": [
+    {
+      "id": "1",
+      "kind": "text",
+      "prompt": "Számítsd ki: (3/4) : (9/8)!",
+      "answer": [
+        "2/3",
+        "0,67",
+        "0.67",
+        "0,667",
+        "0.667"
+      ],
+      "category": "tortek-hatvanyok",
+      "explanation": "2/3. Törttel úgy osztunk, hogy a reciprokával szorzunk: (3/4) · (8/9) = 24/36 = 2/3."
+    },
+    {
+      "id": "2",
+      "kind": "text",
+      "prompt": "Mennyi 27^(2/3) értéke?",
+      "answer": [
+        "9"
+      ],
+      "category": "tortek-hatvanyok",
+      "explanation": "9. A törtkitevő nevezője gyököt jelent: 27^(1/3) = ∛27 = 3, ezt négyzetre emelve 9."
+    },
+    {
+      "id": "3",
+      "kind": "choice",
+      "prompt": "Mennyi lg 4 + lg 25 értéke?",
+      "options": [
+        {
+          "key": "A",
+          "text": "lg 29"
+        },
+        {
+          "key": "B",
+          "text": "2"
+        },
+        {
+          "key": "C",
+          "text": "100"
+        },
+        {
+          "key": "D",
+          "text": "lg 4 · lg 25"
+        }
+      ],
+      "answer": "B",
+      "category": "tortek-hatvanyok",
+      "explanation": "A helyes: 2. A szorzat logaritmusának azonossága szerint lg 4 + lg 25 = lg(4 · 25) = lg 100 = 2.",
+      "wrongOptions": {
+        "A": "A logaritmusok összege a szorzat logaritmusa, nem az összegé: lg 29 ≠ lg 4 + lg 25.",
+        "C": "A 100 a logaritmus argumentuma; lg 100 = 2 a válasz.",
+        "D": "Logaritmusok összegét nem a szorzatuk adja; az összegből a szorzat logaritmusa lesz."
+      }
+    },
+    {
+      "id": "4",
+      "kind": "text",
+      "prompt": "Mennyi (2⁻¹ + 4⁻¹)⁻¹ értéke?",
+      "answer": [
+        "4/3",
+        "1,33",
+        "1.33",
+        "1,333",
+        "1.333"
+      ],
+      "category": "tortek-hatvanyok",
+      "explanation": "4/3. 2⁻¹ = 1/2, 4⁻¹ = 1/4, összegük 3/4, ennek reciproka 4/3. A (2⁻¹)⁻¹ + (4⁻¹)⁻¹ = 6 rossz: a kitevő az egész összegre vonatkozik."
+    },
+    {
+      "id": "5",
+      "kind": "choice",
+      "prompt": "Melyik egyenlő √50-nel?",
+      "options": [
+        {
+          "key": "A",
+          "text": "5√2"
+        },
+        {
+          "key": "B",
+          "text": "25√2"
+        },
+        {
+          "key": "C",
+          "text": "2√5"
+        },
+        {
+          "key": "D",
+          "text": "10√5"
+        }
+      ],
+      "answer": "A",
+      "category": "tortek-hatvanyok",
+      "explanation": "A helyes: 5√2. 50 = 25 · 2, és √(25 · 2) = √25 · √2 = 5√2.",
+      "wrongOptions": {
+        "B": "A 25-öt gyök alól kihozva 5 lesz, nem 25: (25√2)² = 1250.",
+        "C": "(2√5)² = 4 · 5 = 20, nem 50.",
+        "D": "(10√5)² = 500, ez tízszer akkora."
+      }
+    }
+  ],
+  "relatedCategories": [
+    "szamolasi-hiba",
+    "algebrai-atalakitas",
+    "egyenlet-rendezes"
+  ]
+}

@@ -1,0 +1,96 @@
+{
+  "schemaVersion": 1,
+  "id": "kem-wr-kozep-etanol-dimetil-eter",
+  "subject": "kemia",
+  "revision": 1,
+  "level": "kozep",
+  "source": "generated",
+  "topic": "oxigen-nitrogen-vegyuletek",
+  "title": "Két izomer: az etanol és a dimetil-éter",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "writing",
+  "type": "elemzo",
+  "taskNumber": 3,
+  "situation": "Az etanol és a dimetil-éter összegképlete azonos: C₂H₆O. Az etanol forráspontja 78 °C, a dimetil-éteré −24 °C. Az etanol a vízzel korlátlanul elegyedik; a dimetil-éter szobahőmérsékleten gáz, amelyet például aeroszolos palackok hajtógázaként használnak.\n\na) Írja fel a két vegyület konstitúciós (szerkezeti) képletét, nevezze meg funkciós csoportjukat, és adja meg, milyen izoméria áll fenn köztük! (3 pont)\nb) Magyarázza meg a forráspontok nagy különbségét! (3 pont)\nc) Melyik vegyület reagál fémnátriummal? Írja fel az egyenletet! (2 pont)\nd) Írja fel a vegyületek tökéletes égésének egyenletét! Miben különbözik a két vegyület égésének egyenlete? (2 pont)\ne) Miért elegyedik az etanol korlátlanul a vízzel? (2 pont)",
+  "points": [
+    {
+      "id": "p1",
+      "text": "a) Konstitúciós képletek, funkciós csoportok, az izoméria fajtája (3 pont)"
+    },
+    {
+      "id": "p2",
+      "text": "b) A forráspont-különbség magyarázata a molekulák közötti kölcsönhatásokkal (3 pont)"
+    },
+    {
+      "id": "p3",
+      "text": "c) A nátriummal reagáló vegyület és a reakció egyenlete (2 pont)"
+    },
+    {
+      "id": "p4",
+      "text": "d) Az égés egyenlete és a két egyenlet összevetése (2 pont)"
+    },
+    {
+      "id": "p5",
+      "text": "e) Az etanol vízoldhatóságának magyarázata (2 pont)"
+    }
+  ],
+  "suggestedMinutes": 20,
+  "usefulPhrases": [
+    {
+      "en": "konstitúciós izomerek",
+      "hu": "Azonos összegképlet, eltérő kapcsolódási sorrend."
+    },
+    {
+      "en": "hidroxilcsoport (–OH) / étercsoport (C–O–C)",
+      "hu": "Az alkohol és az éter funkciós csoportja."
+    },
+    {
+      "en": "hidrogénkötés",
+      "hu": "F-, O- vagy N-atomhoz kötött H és egy másik molekula nemkötő elektronpárja között – a forráspont kulcsa."
+    },
+    {
+      "en": "diszperziós és dipólus–dipólus kölcsönhatás",
+      "hu": "Gyengébb másodrendű kölcsönhatások, ha nincs hidrogénkötés."
+    },
+    {
+      "en": "2 C₂H₅OH + 2 Na → 2 C₂H₅ONa + H₂",
+      "hu": "Az alkoholok kimutatása nátriummal: hidrogénfejlődés."
+    },
+    {
+      "en": "„hasonló a hasonlóban oldódik”",
+      "hu": "Poláris, hidrogénkötésre képes anyag vízben jól oldódik."
+    }
+  ],
+  "checklistExtra": [],
+  "modelAnswer": {
+    "text": "a) Etanol: CH₃–CH₂–OH; funkciós csoportja a hidroxilcsoport (–OH), az alkoholok közé tartozik. Dimetil-éter: CH₃–O–CH₃; funkciós csoportja az étercsoport (C–O–C kötés). Összegképletük azonos, de az atomok kapcsolódási sorrendje eltér, ezért konstitúciós izomerek (funkcióscsoport-izoméria).\n\nb) Az etanolmolekulák között a hidroxilcsoportok révén hidrogénkötések alakulnak ki: az erősen elektronegatív oxigénatomhoz kapcsolódó hidrogénatom egy másik molekula oxigénjének nemkötő elektronpárjához kötődik. A dimetil-éter molekuláiban nincs oxigénhez kapcsolódó hidrogénatom, ezért molekulái között csak gyengébb dipólus–dipólus és diszperziós kölcsönhatás lép fel. A hidrogénkötések felszakításához több energia kell, ezért az etanol forráspontja (78 °C) sokkal magasabb, mint a dimetil-éteré (−24 °C).\n\nc) Csak az etanol reagál, mert csak neki van hidroxilcsoportja, amelynek hidrogénjét a nátrium hidrogéngázzá redukálja:\n2 CH₃–CH₂–OH + 2 Na → 2 CH₃–CH₂–ONa + H₂\nA termék nátrium-etoxid. A dimetil-éterben nincs –OH csoport, ezért nátriummal nem reagál.\n\nd) Mindkét vegyület tökéletes égésének egyenlete azonos, mert összegképletük azonos:\nC₂H₆O + 3 O₂ → 2 CO₂ + 3 H₂O\nAz egyenletek csak a szerkezeti képletben különböznek (CH₃–CH₂–OH, illetve CH₃–O–CH₃); a felszabaduló égéshő viszont eltér, mert a két molekulában más kötések vannak.\n\ne) Az etanol hidroxilcsoportja hidrogénkötést tud kialakítani a vízmolekulákkal (hidrogénkötés-donor és -akceptor is lehet), a kis apoláris etilcsoport pedig ezt nem akadályozza számottevően, ezért az etanol bármilyen arányban elegyedik a vízzel.",
+    "pointsCovered": [
+      {
+        "id": "p1",
+        "quote": "Összegképletük azonos, de az atomok kapcsolódási sorrendje eltér, ezért konstitúciós izomerek (funkcióscsoport-izoméria)."
+      },
+      {
+        "id": "p2",
+        "quote": "A hidrogénkötések felszakításához több energia kell, ezért az etanol forráspontja (78 °C) sokkal magasabb, mint a dimetil-éteré (−24 °C)."
+      },
+      {
+        "id": "p3",
+        "quote": "2 CH₃–CH₂–OH + 2 Na → 2 CH₃–CH₂–ONa + H₂"
+      },
+      {
+        "id": "p4",
+        "quote": "C₂H₆O + 3 O₂ → 2 CO₂ + 3 H₂O"
+      },
+      {
+        "id": "p5",
+        "quote": "Az etanol hidroxilcsoportja hidrogénkötést tud kialakítani a vízmolekulákkal"
+      }
+    ],
+    "notes": [
+      "Tények: a szerkezeti képletek, a funkciós csoportok és az izoméria neve pontos; a forráspontokat és a nátriumos reakciót helyesen rendeli a két vegyülethez.",
+      "Magyarázat: minden tulajdonságot szerkezettel indokol (hidrogénkötés van – nincs), és megmondja, miért azonos az égés egyenlete, de eltérő az égéshő.",
+      "Szaknyelv: helyes szakkifejezések (konstitúciós izomer, hidrogénkötés-donor/-akceptor, nátrium-etoxid) és rendezett egyenletek."
+    ]
+  }
+}
