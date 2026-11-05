@@ -627,7 +627,7 @@ export const t = {
 
   phrases: {
     title: "Kifejezéstár",
-    intro: "Az írás- és szóbeli feladatkártyák hasznos kifejezései szövegtípusonként. Amit meg akarsz tanulni, vedd fel szókártyának – az ismétlésben magyar → angol irányban is előkerül.",
+    intro: "Az írás- és szóbeli feladatkártyák, valamint az útmutatók hasznos kifejezései szövegtípusonként. Amit meg akarsz tanulni, vedd fel szókártyának – az ismétlésben magyar → angol irányban is előkerül.",
     search: "Keresés angolul vagy magyarul…",
     writing: "Írás",
     speaking: "Szóbeli",

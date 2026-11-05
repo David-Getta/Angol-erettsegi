@@ -1,7 +1,7 @@
 import { and, eq, inArray } from "drizzle-orm";
 import { getDb } from "@/lib/db/client";
 import { cards, tasks } from "@/lib/db/schema";
-import type { Level, SpeakingTask, WritingTask } from "@/lib/content/schema";
+import type { Guide, Level, SpeakingTask, WritingTask } from "@/lib/content/schema";
 import { normalizeAnswer } from "@/lib/scoring/check";
 import { noteKey } from "@/lib/vocab/cards";
 
@@ -37,6 +37,20 @@ export function phraseBank(level: Level): PhraseGroup[] {
       }
     }
     groups.set(key, g);
+  }
+  // the phrases of the writing / speaking guides join the groups of their text / task type (only types this level has)
+  const guides = db.select({ id: tasks.id, content: tasks.content }).from(tasks).where(and(eq(tasks.section, "guide"), eq(tasks.active, true))).all();
+  for (const r of guides) {
+    const gd = r.content as Guide;
+    if (gd.type === "exam") continue;
+    const g = groups.get(`${gd.type}|${gd.target}`);
+    if (!g) continue;
+    for (const p of gd.phrases) {
+      const k = normalizeAnswer(p.en);
+      const cur = g.byKey.get(k);
+      if (cur) cur.count++;
+      else g.byKey.set(k, { en: p.en, hu: p.hu, count: 1, taskIds: [r.id], inCards: known.has(noteKey(p.en)) });
+    }
   }
   return [...groups.values()]
     .map(({ byKey, ...g }) => ({ ...g, phrases: [...byKey.values()].sort((a, b) => b.count - a.count || a.en.localeCompare(b.en)) }))

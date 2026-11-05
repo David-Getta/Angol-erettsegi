@@ -18,6 +18,17 @@ describe("Kifejezéstár", () => {
     }
   });
 
+  it("adds the phrases of the writing and speaking guides to their type's group", async () => {
+    const { loadAllContent } = await import("@/lib/content/load");
+    const guide = loadAllContent()
+      .items.map((i) => i.content!)
+      .find((c) => c.section === "guide" && c.type === "writing" && c.target === "formal-email");
+    if (!guide || guide.section !== "guide") return; // guides are optional content
+    const group = phraseBank("emelt").find((g) => g.section === "writing" && g.type === "formal-email")!;
+    const ens = new Set(group.phrases.map((p) => p.en.toLowerCase()));
+    expect(guide.phrases.some((p) => ens.has(p.en.toLowerCase()))).toBe(true);
+  });
+
   it("marks phrases that are already flashcards", () => {
     const phrase = phraseBank("emelt")[0]!.phrases[0]!;
     expect(phrase.inCards).toBe(false);

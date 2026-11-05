@@ -83,6 +83,17 @@ describe("official exam config is internally consistent", () => {
     for (const c of examConfig.errorCategories().categories) expect(lessons.has(c.id), c.id).toBe(true);
   });
 
+  it("every writing text type and speaking task type in the bank, and every exam part, has a guide", () => {
+    const content = loadAllContent().items.map((i) => i.content!);
+    const guides = new Set(content.filter((c) => c.section === "guide").map((c) => c.id));
+    const need = new Set<string>(["reading", "language-use", "listening", "writing", "speaking"].map((p) => `gd-exam-${p}`));
+    for (const c of content) {
+      if (c.section === "writing") need.add(`gd-writing-${c.type}`);
+      if (c.section === "speaking") need.add(`gd-speaking-${c.type}`);
+    }
+    for (const id of need) expect(guides.has(id), id).toBe(true);
+  });
+
   it("every official config file records when and from where it was verified", () => {
     for (const p of examConfigProvenance()) {
       expect(p.verifiedAt, p.file).toMatch(/^\d{4}-\d{2}-\d{2}$/);
