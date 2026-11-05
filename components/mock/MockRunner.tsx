@@ -190,7 +190,7 @@ export function MockRunner({
           <section key={task.id} className="grid gap-4 lg:grid-cols-[minmax(0,1fr)_minmax(0,1.3fr)]">
             <Card title={`${task.taskNumber}. feladat`}>
               <div className="whitespace-pre-line">{task.situation}</div>
-              {task.stimulus && <blockquote className="mt-3 whitespace-pre-line border-l-4 border-border pl-3 font-reading text-[15px]">{task.stimulus}</blockquote>}
+              {task.stimulus && <blockquote lang="en" className="mt-3 whitespace-pre-line border-l-4 border-border pl-3 font-reading text-[15px]">{task.stimulus}</blockquote>}
               <ul className="mt-3 list-disc space-y-1 pl-5">
                 {task.points.map((p) => (
                   <li key={p.id}>{p.text}</li>

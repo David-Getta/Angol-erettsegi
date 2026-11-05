@@ -122,7 +122,7 @@ export function WritingEditor({
             {task.situation}
           </div>
           {task.situationHu && <p className="mt-2 text-sm text-muted">{task.situationHu}</p>}
-          {task.stimulus && <blockquote className="mt-3 whitespace-pre-line border-l-4 border-border pl-3 font-reading text-[15px]">{task.stimulus}</blockquote>}
+          {task.stimulus && <blockquote lang="en" className="mt-3 whitespace-pre-line border-l-4 border-border pl-3 font-reading text-[15px]">{task.stimulus}</blockquote>}
           <h3 className="mt-4 text-sm font-semibold">{t.writing.points}</h3>
           <ul className="mt-1 list-disc space-y-1 pl-5">
             {task.points.map((p) => (

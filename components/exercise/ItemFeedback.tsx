@@ -54,7 +54,7 @@ export function ItemFeedback({
       {item.evidence && (
         <div className="mt-1">
           <span className="font-medium">{t.task.whereInText} </span>
-          <mark className="font-reading">„{item.evidence}”</mark>
+          <mark lang="en" className="font-reading">„{item.evidence}”</mark>
         </div>
       )}
       {wrongOptions && Object.keys(wrongOptions).length > 0 && (

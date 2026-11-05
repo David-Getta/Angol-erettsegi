@@ -168,7 +168,7 @@ export function FeedbackView({
       </div>
 
       <Card title={t.grading.improved}>
-        <div className="reading-text whitespace-pre-wrap">{feedback.improvedVersion}</div>
+        <div lang="en" className="reading-text whitespace-pre-wrap">{feedback.improvedVersion}</div>
       </Card>
     </div>
   );

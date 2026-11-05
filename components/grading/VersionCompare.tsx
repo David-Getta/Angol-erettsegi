@@ -62,7 +62,7 @@ export function VersionCompare({ versions, criteria }: { versions: VersionInfo[]
             <div className="mb-1 text-xs text-muted">
               {t.writing.version(v.version)} · {t.writing.wordCount(v.wordCount)}
             </div>
-            <div className="whitespace-pre-wrap font-reading text-[15px] leading-relaxed">{v.text}</div>
+            <div lang="en" className="whitespace-pre-wrap font-reading text-[15px] leading-relaxed">{v.text}</div>
           </div>
         ))}
       </div>

@@ -68,7 +68,7 @@ export function ObjectiveTaskView(p: ViewProps) {
     .map((i) => ({ id: i.id, text: i.evidence! }));
 
   const passage = task.passage && !p.hidePassage && (
-    <article className="reading-text" data-testid="passage">
+    <article lang="en" className="reading-text" data-testid="passage">
       {task.passage.title && <h2 className="mb-1 font-sans text-xl font-semibold">{task.passage.title}</h2>}
       {task.passage.subtitle && <p className="mb-3 font-sans text-sm text-muted">{task.passage.subtitle}</p>}
       {task.passage.blocks.map((b, i) => (

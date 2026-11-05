@@ -311,7 +311,7 @@ function SelfPractice({ task, ttsRate }: { task: SpeakingTask; ttsRate: number }
         </div>
       ) : (
         <div className="mt-4 space-y-3">
-          <pre className="max-h-80 overflow-auto whitespace-pre-wrap rounded-md bg-surface-2 p-3 font-reading text-sm">{transcript}</pre>
+          <pre lang="en" className="max-h-80 overflow-auto whitespace-pre-wrap rounded-md bg-surface-2 p-3 font-reading text-sm">{transcript}</pre>
           {Object.keys(clips).length > 0 && (
             <div className="space-y-1 text-sm">
               <div className="text-muted">{t.voice.yourVoice}</div>

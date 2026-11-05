@@ -13,7 +13,7 @@ export function AnnotatedText({ text, corrections, categoryNames }: { text: stri
   const c = open !== null ? corrections[open] : null;
   return (
     <div>
-      <div className="reading-text whitespace-pre-wrap" data-testid="annotated-text">
+      <div lang="en" className="reading-text whitespace-pre-wrap" data-testid="annotated-text">
         {segs.map((s, i) =>
           s.mark === undefined ? (
             <span key={i}>{s.text}</span>

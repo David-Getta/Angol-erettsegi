@@ -165,7 +165,7 @@ export default async function ErrorLogPage({ searchParams }: { searchParams: Pro
                   </div>
                   {e.context && (
                     <div className="mt-1 font-reading text-[15px] text-muted">
-                      {t.errorLog.context}: {e.context}
+                      {t.errorLog.context}: <span lang="en">{e.context}</span>
                     </div>
                   )}
                   <div className="mt-1">

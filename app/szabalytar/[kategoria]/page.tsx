@@ -31,7 +31,7 @@ function Rule({ rule }: { rule: GrammarLesson["rules"][number] }) {
       <ul className="mt-2 space-y-1.5">
         {rule.examples.map((ex, i) => (
           <li key={i} className="rounded-md bg-surface-2 px-3 py-1.5 text-sm">
-            <span className="font-reading text-[15px]">{ex.en}</span>
+            <span lang="en" className="font-reading text-[15px]">{ex.en}</span>
             {ex.hu && <span className="block text-muted">{ex.hu}</span>}
             {ex.note && <span className="block text-xs text-muted">↳ {ex.note}</span>}
           </li>
@@ -115,8 +115,8 @@ export default async function LessonPage({ params }: Props) {
                   <tbody>
                     {lesson.commonMistakes.map((m, i) => (
                       <tr key={i} className="border-t border-border align-top">
-                        <td className="py-1.5 pr-2 font-reading text-bad line-through decoration-bad/50">{m.wrong}</td>
-                        <td className="py-1.5 pr-2 font-reading font-medium text-good">{m.right}</td>
+                        <td lang="en" className="py-1.5 pr-2 font-reading text-bad line-through decoration-bad/50">{m.wrong}</td>
+                        <td lang="en" className="py-1.5 pr-2 font-reading font-medium text-good">{m.right}</td>
                         <td className="py-1.5">{m.why}</td>
                       </tr>
                     ))}

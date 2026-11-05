@@ -240,7 +240,7 @@ export function Transcript({ task, highlight }: { task: ObjectiveTask; highlight
     <details open className="rounded-xl border border-border bg-surface p-4" data-testid="transcript">
       <summary className="cursor-pointer font-semibold">{t.listening.transcript}</summary>
       <p className="mt-1 text-xs text-muted">{t.listening.transcriptHint}</p>
-      <div className="mt-3 space-y-2 font-reading text-[16px] leading-relaxed">
+      <div lang="en" className="mt-3 space-y-2 font-reading text-[16px] leading-relaxed">
         {L.script.map((l, i) => {
           const ranges = ev.map((e) => findLoose(l.text, e.text));
           const segs = segmentText(l.text, ranges);

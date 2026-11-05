@@ -42,7 +42,7 @@ export function PhraseBank({ groups }: { groups: (PhraseGroup & { label: string 
                 return (
                   <li key={p.en} className="flex items-baseline gap-3 py-1.5">
                     <span className="min-w-0 flex-1">
-                      <span className="font-reading text-[15px]">{p.en}</span>
+                      <span lang="en" className="font-reading text-[15px]">{p.en}</span>
                       <span className="block text-muted">{p.hu}</span>
                     </span>
                     {isAdded ? (

@@ -87,7 +87,7 @@ export function SubmissionDetail({ id, kind }: { id: string; kind: "writing" | "
               {t.writing.wordCount(sub.wordCount)}
               {sub.durationSec ? ` · ${Math.round(sub.durationSec / 60)} ${t.common.minutes}` : ""}
             </div>
-            <div className="reading-text whitespace-pre-wrap" data-testid="submitted-text">
+            <div lang="en" className="reading-text whitespace-pre-wrap" data-testid="submitted-text">
               {sub.text}
             </div>
           </Card>

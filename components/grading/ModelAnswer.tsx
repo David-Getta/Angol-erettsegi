@@ -43,7 +43,7 @@ export function ModelAnswer({ task, open = false }: { task: WritingTask; open?: 
       </summary>
       <p className="mt-2 text-sm text-muted">{t.writing.modelAnswerHint}</p>
       <div className="mt-3 grid grid-cols-1 gap-5 lg:grid-cols-[minmax(0,1fr)_minmax(0,0.8fr)]">
-        <div className="reading-text whitespace-pre-wrap rounded-lg border border-border p-3">{highlight(m.text, m.pointsCovered, order)}</div>
+        <div lang="en" className="reading-text whitespace-pre-wrap rounded-lg border border-border p-3">{highlight(m.text, m.pointsCovered, order)}</div>
         <div className="space-y-4 text-sm">
           <div>
             <h3 className="mb-1 font-semibold">{t.writing.modelAnswerPoints}</h3>

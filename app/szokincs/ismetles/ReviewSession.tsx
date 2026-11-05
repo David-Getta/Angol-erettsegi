@@ -92,20 +92,20 @@ export function ReviewSession({ initial, ttsRate }: { initial: ReviewCard[]; tts
   else if (card.type === "hu-en") prompt = <span className="text-3xl font-semibold">{card.back}</span>;
   else if (card.type === "cloze") prompt = (
     <div>
-      <div className="font-reading text-2xl leading-relaxed">{card.cloze ?? card.example}</div>
+      <div lang="en" className="font-reading text-2xl leading-relaxed">{card.cloze ?? card.example}</div>
       <div className="mt-2 text-sm text-muted">({card.back})</div>
     </div>
   );
   else if (card.type === "fix") prompt = (
     <div className="text-left">
       <div className="mb-2 text-sm text-muted">{t.vocab.fixPrompt}</div>
-      {card.context && <div className="mb-2 font-reading text-lg leading-relaxed text-muted">{card.context}</div>}
-      <div className="font-reading text-2xl text-bad line-through decoration-bad/50">{card.example}</div>
+      {card.context && <div lang="en" className="mb-2 font-reading text-lg leading-relaxed text-muted">{card.context}</div>}
+      <div lang="en" className="font-reading text-2xl text-bad line-through decoration-bad/50">{card.example}</div>
     </div>
   );
   else prompt = (
     <div>
-      <div className="font-reading text-2xl">{card.collocationCloze ?? card.collocation}</div>
+      <div lang="en" className="font-reading text-2xl">{card.collocationCloze ?? card.collocation}</div>
       <div className="mt-2 text-sm text-muted">({card.back})</div>
     </div>
   );
@@ -153,7 +153,7 @@ export function ReviewSession({ initial, ttsRate }: { initial: ReviewCard[]; tts
             {card.type === "fix" ? (
               <div className="mt-2 whitespace-pre-line text-left text-sm">{card.back}</div>
             ) : (
-              card.example && <div className="mt-2 font-reading italic text-muted">{card.example}</div>
+              card.example && <div lang="en" className="mt-2 font-reading italic text-muted">{card.example}</div>
             )}
             <button type="button" className="mt-2 text-sm text-muted hover:text-fg" onClick={() => speak(card.front, { rate: ttsRate })}>
               🔊
