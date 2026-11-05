@@ -32,6 +32,7 @@ const groups: { title?: string; items: NavItem[] }[] = [
     title: t.nav.groupExam,
     items: [
       { href: "/probaerettsegi", label: t.nav.mock, icon: "⏱" },
+      { href: "/vizsga", label: t.nav.examInfo, icon: "ⓘ" },
       { href: "/hivatalos", label: t.nav.official, icon: "🏛" },
       { href: "/statisztika", label: t.nav.stats, icon: "📈" },
     ],

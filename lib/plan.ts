@@ -6,6 +6,7 @@ import { examConfig } from "@/lib/exam/config";
 import { categoryStats } from "@/lib/errors/log";
 import { countBankItems, pickMistakes } from "@/lib/targeted";
 import { dueInfo } from "@/lib/vocab/cards";
+import { lessonCategories } from "@/lib/lessons";
 import { usedTaskIds } from "@/lib/tasks";
 import { localDay } from "@/lib/activity";
 import type { PartEstimate } from "@/lib/dashboard";
@@ -120,6 +121,20 @@ export function todayPlan(level: Level, estimates: PartEstimate[], hasDiagnostic
       section: "language-use",
       minutes: 10,
       done: todaySections.has("language-use") && items.every((i) => i.section !== "language-use"),
+    });
+  }
+
+  // the rule behind the most frequent mistake (Szabálytár), once a day
+  const topAny = categoryStats().find((c) => c.last30 >= 3);
+  if (topAny && lessonCategories().has(topAny.category) && !todaySections.has("grammar")) {
+    items.push({
+      key: `lesson-${topAny.category}`,
+      title: `Szabály átismétlése: ${topAny.name}`,
+      reason: `${topAny.last30} hiba az utolsó 30 napban – olvasd át a szabályt és a tipikus hibákat, és oldd meg a mini-gyakorlást.`,
+      href: `/szabalytar/${topAny.category}`,
+      section: "grammar",
+      minutes: 8,
+      done: false,
     });
   }
 
