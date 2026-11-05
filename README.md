@@ -167,3 +167,8 @@ A Playwright saját gépen először: `npx playwright install chromium`.
 
 Adatok: a haladásod a `data/app.db`-ben van (a **Beállítások → Adatok** alatt exportálhatod JSON-ba, visszatöltheted,
 és biztonsági mentést készíthetsz a `data/backups/` mappába). A projekt szabályai: `CLAUDE.md`, a terv és a döntések: `PLAN.md`.
+
+**Biztonsági figyelmeztetések (`npm audit`)**: a jelenleg ismert figyelmeztetések csak fejlesztői eszközöket érintenek
+(a Vitest tesztfuttatót és a drizzle-kit migrációgenerátort), az app futását és az adataidat nem. A javított Vitest 4.1.12-re
+az npm 10 jelenleg nem tud frissíteni (ismert npm-hiba: „Cannot read properties of null (reading 'edgesOut')”), ezért a
+`.npmrc` kikapcsolja az audit-összegzést a telepítéskor; kézzel bármikor lefuttatható: `npm audit`.
