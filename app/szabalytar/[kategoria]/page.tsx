@@ -75,12 +75,10 @@ export default async function LessonPage({ params }: Props) {
         intro={lesson.summaryHu}
         actions={
           <>
-            <>
             <PrintButton />
             <Link href="/szabalytar" className="text-sm text-muted hover:underline">
               ← {t.lessons.title}
             </Link>
-          </>
           </>
         }
       />
