@@ -1,7 +1,8 @@
 import type { ReactNode } from "react";
 import type { ModelAnswer as ModelAnswerT, WritingTask } from "@/lib/content/schema";
-import { wordCount } from "@/lib/content/text";
+import { quotedPhrases, wordCount } from "@/lib/content/text";
 import { t } from "@/lib/i18n/hu";
+import { AddPhraseChips } from "@/components/vocab/AddPhraseChips";
 
 /** Marks the quotes that cover the guiding points inside the model text. */
 function highlight(text: string, covered: ModelAnswerT["pointsCovered"], order: Map<string, number>): ReactNode[] {
@@ -60,6 +61,7 @@ export function ModelAnswer({ task, open = false }: { task: WritingTask; open?: 
                   <li key={i}>{n}</li>
                 ))}
               </ul>
+              <AddPhraseChips phrases={quotedPhrases(m.notes, m.text)} taskId={task.id} sourceType="model-answer" />
             </div>
           )}
         </div>

@@ -550,6 +550,7 @@ export const t = {
     inCards: "✓ a kártyáid között",
     count: (n: number) => `${n} kifejezés`,
     none: "Nincs találat.",
+    toCards: "Kártyára:",
   },
 
   examInfo: {

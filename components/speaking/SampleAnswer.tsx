@@ -1,6 +1,7 @@
 import type { SpeakingTask } from "@/lib/content/schema";
-import { wordCount } from "@/lib/content/text";
+import { quotedPhrases, wordCount } from "@/lib/content/text";
 import { t } from "@/lib/i18n/hu";
+import { AddPhraseChips } from "@/components/vocab/AddPhraseChips";
 
 /** The sample answer of a speaking task: conversation turns or a monologue, with Hungarian notes. */
 export function SampleAnswer({ task, open = false }: { task: SpeakingTask; open?: boolean }) {
@@ -42,6 +43,7 @@ export function SampleAnswer({ task, open = false }: { task: SpeakingTask; open?
                 <li key={i}>{n}</li>
               ))}
             </ul>
+            <AddPhraseChips phrases={quotedPhrases(sa.notes, sa.turns.filter((x) => x.speaker === "candidate").map((x) => x.text).join(" "))} taskId={task.id} sourceType="sample-answer" />
           </div>
         )}
       </div>

@@ -141,3 +141,22 @@ export function itemContext(
   }
   return "";
 }
+
+/**
+ * English phrases quoted „like this” in Hungarian notes. With `sourceText`
+ * only phrases that occur in it are kept (that filters out Hungarian quotes);
+ * elided quotes (…) and very long ones are skipped.
+ */
+export function quotedPhrases(notes: string[], sourceText?: string): string[] {
+  const source = sourceText ? normalizeForSearch(sourceText) : null;
+  const out: string[] = [];
+  for (const n of notes) {
+    for (const m of n.matchAll(/„([^”]{2,60})”/g)) {
+      const p = m[1]!.trim().replace(/[.,;:!?]+$/, "");
+      if (!p || p.includes("…") || p.includes("...") || !/[a-z]/i.test(p) || /[áéíóöőúüű]/i.test(p)) continue;
+      if (source && !source.includes(normalizeForSearch(p))) continue;
+      if (!out.includes(p)) out.push(p);
+    }
+  }
+  return out.slice(0, 8);
+}
