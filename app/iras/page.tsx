@@ -8,7 +8,7 @@ import { examConfig, topicName, taskTypeName } from "@/lib/exam/config";
 import { feladatokCommand } from "@/lib/commands/build";
 import type { WritingTask } from "@/lib/content/schema";
 import { getWriting } from "@/lib/tasks";
-import { GuideLink } from "@/components/guides/GuideLink";
+import { GuideLink, GuideLinks } from "@/components/guides/GuideLink";
 import { t } from "@/lib/i18n/hu";
 import { Badge, Card, PageHeader, SourceBadge, Empty, formatDate, pct } from "@/components/ui";
 import { CommandTip } from "@/components/CommandTip";
@@ -35,6 +35,7 @@ export default function WritingListPage() {
             <ReloadContentButton />
           </>
         } />
+      <GuideLinks type="writing" title={t.guides.byTextType} names={Object.fromEntries(examConfig.taskTypes().writing.map((x) => [x.id, x.name]))} />
       {pending.length > 0 && (
         <CommandTip command="/javitas" message={`${t.dashboard.pendingCount(pending.length)}. ${t.tips.grading}`} testId="javitas-tip">
           <ImportButton variant="secondary" />

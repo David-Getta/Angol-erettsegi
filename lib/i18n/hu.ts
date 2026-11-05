@@ -602,6 +602,8 @@ export const t = {
     why: "Miért?",
     open: (name: string) => `📘 Útmutató: ${name}`,
     strategy: "📘 Megoldási stratégia",
+    byTextType: "Útmutató szövegtípusonként:",
+    byTaskType: "Útmutató feladattípusonként:",
     missing: "Ehhez még nincs útmutató.",
   },
 
