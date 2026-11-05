@@ -46,12 +46,8 @@
       "answer": [
         "1/16",
         "6,25%",
-        "6,25 %",
-        "6.25%",
         "6,25",
-        "6.25",
-        "0,0625",
-        "0.0625"
+        "0,0625"
       ],
       "category": "genetikai-szamitas",
       "explanation": "Helyes: 1/16. Sárga és alacsony csak az rrmm genotípusú utód lehet: P(rr) = 1/4 és P(mm) = 1/4, a két gén független, ezért 1/4 · 1/4 = 1/16.",
@@ -64,12 +60,8 @@
       "answer": [
         "9/16",
         "56,25%",
-        "56,25 %",
-        "56.25%",
         "56,25",
-        "56.25",
-        "0,5625",
-        "0.5625"
+        "0,5625"
       ],
       "category": "genetikai-szamitas",
       "explanation": "Helyes: 9/16. Piros: RR vagy Rr, valószínűsége 3/4; magas: MM vagy Mm, szintén 3/4. A két esemény független: 3/4 · 3/4 = 9/16 (ez a 9 : 3 : 3 : 1 arány első tagja).",
@@ -96,10 +88,8 @@
       "answer": [
         "25",
         "25%",
-        "25 %",
         "1/4",
-        "0,25",
-        "0.25"
+        "0,25"
       ],
       "category": "genetikai-szamitas",
       "explanation": "Helyes: 25%. A heterozigóta szülő négyféle ivarsejtet (RM, Rm, rM, rm) ad egyenlő arányban, a tesztelő csak rm-et; az utódok aránya 1 : 1 : 1 : 1. Sárga és magas az rrMm utód, ez a négy típus egyike: 1/4 = 25%.",
@@ -112,10 +102,8 @@
       "answer": [
         "25",
         "25%",
-        "25 %",
         "1/4",
-        "0,25",
-        "0.25"
+        "0,25"
       ],
       "category": "genetikai-szamitas",
       "explanation": "Helyes: 25%. Az RR × rr keresztezés minden utóda Rr, tehát piros (valószínűség 1). Az Mm × Mm keresztezésben az alacsony (mm) utódok aránya 1/4. Együtt: 1 · 1/4 = 1/4 = 25%.",
@@ -128,10 +116,8 @@
       "answer": [
         "50",
         "50%",
-        "50 %",
         "1/2",
-        "0,5",
-        "0.5"
+        "0,5"
       ],
       "category": "genetikai-szamitas",
       "explanation": "Helyes: 50%. A fiú az apjától az Y, az anyjától az egyik X kromoszómát kapja. Az anya fele valószínűséggel X^d-t ad, ekkor a fiú (X^d Y) színtévesztő, mert Y kromoszómáján nincs ép allél, amely elfedné a recesszívet.",
@@ -144,7 +130,6 @@
       "answer": [
         "0",
         "0%",
-        "0 %",
         "nulla"
       ],
       "category": "genetikai-szamitas",
@@ -158,10 +143,8 @@
       "answer": [
         "50",
         "50%",
-        "50 %",
         "1/2",
-        "0,5",
-        "0.5"
+        "0,5"
       ],
       "category": "genetikai-szamitas",
       "explanation": "Helyes: 50%. A lehetséges utódok egyenlő valószínűséggel: X^D X^d (színlátó, hordozó lány), X^d X^d (színtévesztő lány), X^D Y (színlátó fiú), X^d Y (színtévesztő fiú). A négyből kettő színtévesztő: 2/4 = 50%.",

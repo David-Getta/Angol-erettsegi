@@ -24,7 +24,7 @@
     "id": "0",
     "kind": "text",
     "prompt": "Homozigóta sárga magú (SS) és zöld magú (ss) borsót keresztezünk. Az utódok hány százaléka lesz sárga magú?",
-    "answer": ["100", "100%", "100 %", "mind", "mindegyik", "az összes"],
+    "answer": ["100", "100%", "mind", "mindegyik", "az összes"],
     "maxWords": 3,
     "category": "genetikai-szamitas",
     "explanation": "Helyes: 100%. Az SS szülő csak S, az ss szülő csak s ivarsejtet ad, ezért minden utód Ss genotípusú; mivel a sárga (S) domináns, mindegyik sárga magú lesz."
@@ -34,7 +34,7 @@
       "id": "1",
       "kind": "text",
       "prompt": "Két heterozigóta sárga magú borsót (Ss × Ss) keresztezünk. Mi lesz a fenotípusok aránya az utódok között (sárga : zöld)?",
-      "answer": ["3:1", "3 : 1", "3 sárga : 1 zöld", "3 sárga, 1 zöld", "3/4 sárga, 1/4 zöld", "75% sárga, 25% zöld", "75 : 25", "75:25"],
+      "answer": ["3:1", "3 sárga : 1 zöld", "3 sárga, 1 zöld", "3/4 sárga, 1/4 zöld", "75% sárga, 25% zöld", "75 : 25"],
       "maxWords": 6,
       "category": "genetikai-szamitas",
       "explanation": "Helyes: 3 : 1. Az Ss × Ss keresztezés utódai: 1 SS, 2 Ss, 1 ss (genotípusarány 1 : 2 : 1). Az SS és az Ss egyaránt sárga, csak az ss zöld, ezért a fenotípusarány 3 sárga : 1 zöld."
@@ -43,7 +43,7 @@
       "id": "2",
       "kind": "text",
       "prompt": "Az Ss × Ss keresztezés utódainak hány százaléka heterozigóta?",
-      "answer": ["50", "50%", "50 %", "fél", "1/2", "ötven", "ötven százalék", "a fele"],
+      "answer": ["50", "50%", "fél", "1/2", "ötven", "ötven százalék", "a fele"],
       "maxWords": 3,
       "category": "genetikai-szamitas",
       "explanation": "Helyes: 50%. A keresztezési táblázatban négy egyformán valószínű kombináció van: SS, Ss, sS, ss. Ebből kettő (Ss és sS) heterozigóta, azaz 2/4 = 50%."
@@ -52,7 +52,7 @@
       "id": "3",
       "kind": "text",
       "prompt": "Heterozigóta sárga (Ss) és zöld magú (ss) borsót keresztezünk. Az utódok hány százaléka lesz zöld magú?",
-      "answer": ["50", "50%", "50 %", "fél", "1/2", "ötven", "ötven százalék", "a fele"],
+      "answer": ["50", "50%", "fél", "1/2", "ötven", "ötven százalék", "a fele"],
       "maxWords": 3,
       "category": "genetikai-szamitas",
       "explanation": "Helyes: 50%. Az Ss szülő fele S, fele s ivarsejtet ad, az ss szülő csak s-t. Az utódok fele Ss (sárga), fele ss (zöld), tehát 50% zöld. Ez a tesztelő keresztezés: a recesszív homozigótával való keresztezés megmutatja, hogy a domináns fenotípusú szülő heterozigóta."
@@ -70,7 +70,7 @@
       "id": "5",
       "kind": "text",
       "prompt": "Mekkora a valószínűsége, hogy az előbbi szülők (A0 × B0) következő gyermeke 0-s vércsoportú lesz?",
-      "answer": ["25", "25%", "25 %", "1/4", "0,25", "0.25", "negyed", "egynegyed", "huszonöt százalék"],
+      "answer": ["25", "25%", "1/4", "0,25", "negyed", "egynegyed", "huszonöt százalék"],
       "maxWords": 3,
       "category": "genetikai-szamitas",
       "explanation": "Helyes: 25% (1/4). A gyermek akkor 0-s vércsoportú, ha mindkét szülőtől a 0 allélt kapja: 1/2 · 1/2 = 1/4. Minden gyermeknél újra ugyanez a valószínűség, függetlenül a korábbi testvérek vércsoportjától."

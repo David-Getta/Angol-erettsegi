@@ -1,0 +1,261 @@
+{
+  "schemaVersion": 1,
+  "id": "mag-gr-szerkesztettseg",
+  "subject": "magyar",
+  "revision": 1,
+  "level": "kozep",
+  "source": "generated",
+  "topic": "nyelvtan",
+  "title": "Szerkesztettség, bekezdések, logika",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "grammar",
+  "type": "lesson",
+  "category": "szerkesztettseg",
+  "summaryHu": "A szerkezeti pontok azt értékelik, hogy a dolgozat logikusan épül-e fel: van-e bevezetés, tárgyalás és befejezés, a bekezdések egy-egy gondolati egységet alkotnak-e, arányosak-e a részek, és követhető-e a gondolatmenet. A jól szerkesztett szöveget az olvasó vázlat nélkül is követni tudja. A szerkezeti hibák gyakran a tervezés hiányából fakadnak.",
+  "rules": [
+    {
+      "title": "A háromrészes szerkezet",
+      "explanation": "A bevezetés felkelti a figyelmet, elhelyezi a művet vagy a problémát, és a végén megfogalmazza a tételt. A tárgyalás a tételt bizonyítja, szempontonként, bekezdésekre bontva. A befejezés összegez, visszatér a tételhez, és kitekint (nem hoz új érvet).",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "Bevezetés: keletkezés + tétel; tárgyalás: 3–5 elemző bekezdés; befejezés: összegzés + általános tanulság.",
+          "hu": "A műértelmező dolgozat klasszikus felépítése."
+        }
+      ]
+    },
+    {
+      "title": "A bekezdés mint gondolati egység",
+      "explanation": "Egy bekezdés egy gondolatot fejt ki: tételmondattal kezdődik, majd bizonyít (idézet, példa) és értelmez. Új gondolatnál új bekezdés kezdődik. A túl hosszú, több gondolatot összemosó bekezdés és a sok egymondatos „bekezdés” egyaránt szerkezeti hiba.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "„Az anya válasza a hallgatás.” – egy bekezdés tételmondata, amelyet idézet és értelmezés követ.",
+          "hu": "A rövid tételmondat előre jelzi a bekezdés gondolatát."
+        }
+      ]
+    },
+    {
+      "title": "Átkötések, kohézió",
+      "explanation": "A bekezdéseket átkötő mondatok és kötőszók kapcsolják össze: ellentét (ezzel szemben, viszont), folytatás (ezután, a következő versszakban), következtetés (tehát, így), összegzés (összességében). Az átkötés megmutatja, hogyan viszonyul az új gondolat az előzőhöz.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "„Ez az emelkedés készíti elő a zárlatot.”",
+          "hu": "Átkötő mondat: a bekezdés végén előre utal a következő bekezdés témájára."
+        }
+      ]
+    },
+    {
+      "title": "Arányosság",
+      "explanation": "A részek terjedelme feleljen meg a súlyuknak: a bevezetés és a befejezés rövidebb, a tárgyalás a dolgozat nagyobbik része. Egyik szempont se kapjon aránytalanul sok helyet a többi rovására. Emelt szinten a szóhatár (600–800, illetve 250–450 szó) is az arányos tervezésre kényszerít.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "Egy 650 szavas műértelmezés: kb. 80 szó bevezetés, 480 szó tárgyalás, 90 szó befejezés.",
+          "hu": "Arányos felosztás; a tárgyalás a szöveg kb. háromnegyede."
+        }
+      ]
+    },
+    {
+      "title": "Keretes szerkezet és a cím",
+      "explanation": "A befejezés akkor a legerősebb, ha visszautal a bevezetés vagy a cím képére, kérdésére (keretes szerkezet). Egy jól választott, a tételt sűrítő cím (pl. „Az égig növő anya”) már a szerkezet része.",
+      "emeltOnly": true,
+      "examples": [
+        {
+          "en": "Cím: „Bölcső és sír között” – zárómondat: „A magyar nemzeti líra tehát a bölcső és a sír közötti utat járja be.”",
+          "hu": "A cím és a zárás egymásra felel."
+        }
+      ]
+    }
+  ],
+  "commonMistakes": [
+    {
+      "wrong": "A dolgozat bevezetés nélkül, rögtön az első versszak elemzésével kezdődik.",
+      "right": "Két-három mondatos bevezetés: a mű elhelyezése és a tétel.",
+      "why": "Bevezetés nélkül az olvasó nem tudja, mit bizonyít a dolgozat; ez szerkezeti pontlevonás."
+    },
+    {
+      "wrong": "Egyetlen, másfél oldalas bekezdés.",
+      "right": "Szempontonként külön bekezdés, mindegyik tételmondattal.",
+      "why": "A tagolatlan szöveg gondolatmenete nem követhető."
+    },
+    {
+      "wrong": "A befejezés új érvet hoz be, amelyet már nem fejt ki.",
+      "right": "A befejezés összegzi az eddigieket, és visszatér a tételhez.",
+      "why": "Az új gondolat a befejezésben kifejtetlen marad, és megbontja a szerkezetet."
+    },
+    {
+      "wrong": "A bevezetés fél oldal életrajz, a zárlat egy mondat.",
+      "right": "Rövid, a műhöz kapcsolódó bevezetés és kidolgozott, arányos tárgyalás.",
+      "why": "Az aránytalanság a szerkezeti és a tartalmi pontokat is csökkenti."
+    }
+  ],
+  "examTips": [
+    "Szánj 10–15 percet vázlatra: tétel, bekezdésenként egy kulcsmondat, a befejezés gondolata. A vázlat a szerkezeti pontok biztosítéka.",
+    "Írás közben minden bekezdés első mondatát úgy fogalmazd meg, hogy önmagában is megmutassa a bekezdés gondolatát.",
+    "Átolvasáskor olvasd el csak a bekezdések első mondatait egymás után: ha így is követhető a gondolatmenet, jó a szerkezet."
+  ],
+  "practice": [
+    {
+      "id": "1",
+      "kind": "choice",
+      "prompt": "Mi a bevezetés legfontosabb feladata egy műértelmező dolgozatban?",
+      "options": [
+        {
+          "key": "A",
+          "text": "A mű elhelyezése és a dolgozat tételének megfogalmazása."
+        },
+        {
+          "key": "B",
+          "text": "A költő teljes életrajzának ismertetése."
+        },
+        {
+          "key": "C",
+          "text": "A vers összes költői eszközének felsorolása."
+        },
+        {
+          "key": "D",
+          "text": "Az elemzés végső következtetésének részletes kifejtése."
+        }
+      ],
+      "answer": "A",
+      "category": "szerkesztettseg",
+      "explanation": "Helyes: A. A bevezetés kontextust ad és kimondja a tételt, amelyet a tárgyalás bizonyít.",
+      "wrongOptions": {
+        "B": "A részletes életrajz aránytalanná teszi a bevezetést, és eltér az elemzéstől.",
+        "C": "Az eszközök elemzése a tárgyalás feladata, felsorolásuk ráadásul nem elemzés.",
+        "D": "A részletes következtetés a befejezésbe tartozik."
+      }
+    },
+    {
+      "id": "2",
+      "kind": "choice",
+      "prompt": "Mikor kell új bekezdést kezdeni?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Amikor új gondolat, új szempont következik."
+        },
+        {
+          "key": "B",
+          "text": "Minden harmadik mondat után."
+        },
+        {
+          "key": "C",
+          "text": "Csak a dolgozat legvégén."
+        },
+        {
+          "key": "D",
+          "text": "Minden idézet után."
+        }
+      ],
+      "answer": "A",
+      "category": "szerkesztettseg",
+      "explanation": "Helyes: A. A bekezdés gondolati egység: új gondolat = új bekezdés.",
+      "wrongOptions": {
+        "B": "A bekezdéshatárt a gondolat dönti el, nem a mondatok száma.",
+        "C": "Egyetlen bekezdés tagolatlan, követhetetlen szöveget eredményez.",
+        "D": "Egy bekezdésben több idézet is lehet, ha ugyanazt a gondolatot bizonyítják."
+      }
+    },
+    {
+      "id": "3",
+      "kind": "choice",
+      "prompt": "Melyik mondat átkötő mondat két bekezdés között?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Ez az emelkedés készíti elő a vers zárlatát."
+        },
+        {
+          "key": "B",
+          "text": "József Attila 1905-ben született."
+        },
+        {
+          "key": "C",
+          "text": "A vers négy versszakból áll."
+        },
+        {
+          "key": "D",
+          "text": "Az anya mosónő volt."
+        }
+      ],
+      "answer": "A",
+      "category": "szerkesztettseg",
+      "explanation": "Helyes: A. Összefoglalja az előző bekezdés eredményét (az emelkedés), és előre utal a következő témára (a zárlat).",
+      "wrongOptions": {
+        "B": "Életrajzi adat, nem kapcsol össze két gondolatot.",
+        "C": "Formai tény, átkötő szerep nélkül.",
+        "D": "Tárgyi adat, nem jelzi a gondolatmenet irányát."
+      }
+    },
+    {
+      "id": "4",
+      "kind": "choice",
+      "prompt": "Mi NEM való a befejezésbe?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Egy új, kifejtetlen érv vagy elemzési szempont."
+        },
+        {
+          "key": "B",
+          "text": "A tétel megerősítése."
+        },
+        {
+          "key": "C",
+          "text": "Az eredmények összegzése."
+        },
+        {
+          "key": "D",
+          "text": "Visszautalás a bevezetés képére."
+        }
+      ],
+      "answer": "A",
+      "category": "szerkesztettseg",
+      "explanation": "Helyes: A. A befejezés lezár, nem nyit új gondolatot; egy itt felvetett új érv kifejtetlen maradna.",
+      "wrongOptions": {
+        "B": "A tétel megerősítése a befejezés fontos eleme.",
+        "C": "Az összegzés a befejezés alapfeladata.",
+        "D": "A keretes visszautalás erősíti a szerkezetet."
+      }
+    },
+    {
+      "id": "5",
+      "kind": "choice",
+      "prompt": "Egy körülbelül 650 szavas műértelmező dolgozatnál melyik felosztás a legarányosabb (bevezetés – tárgyalás – befejezés, szóban)?",
+      "options": [
+        {
+          "key": "A",
+          "text": "kb. 80 – 480 – 90"
+        },
+        {
+          "key": "B",
+          "text": "kb. 300 – 250 – 100"
+        },
+        {
+          "key": "C",
+          "text": "kb. 50 – 50 – 550"
+        },
+        {
+          "key": "D",
+          "text": "kb. 200 – 200 – 250"
+        }
+      ],
+      "answer": "A",
+      "category": "szerkesztettseg",
+      "explanation": "Helyes: A. A tárgyalás a dolgozat nagyobbik része (kb. háromnegyede), mert ez bizonyítja a tételt; a bevezetés és a befejezés rövidebb, de kidolgozott.",
+      "wrongOptions": {
+        "B": "A bevezetés aránytalanul hosszú, a tárgyalás rövidebb nála – a dolgozat súlypontja eltolódik.",
+        "C": "A befejezés lenne a leghosszabb rész, ami azt jelzi, hogy ott kezdődik az érdemi kifejtés: szerkezeti hiba.",
+        "D": "A tárgyalás alig hosszabb a bevezetésnél, a befejezés pedig túl hosszú."
+      }
+    }
+  ],
+  "relatedCategories": [
+    "kifejtes-ervek",
+    "feladatmegertes"
+  ]
+}

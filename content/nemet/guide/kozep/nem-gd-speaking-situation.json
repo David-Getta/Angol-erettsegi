@@ -1,5 +1,15 @@
 {
+  "schemaVersion": 1,
+  "id": "nem-gd-speaking-situation",
+  "subject": "nemet",
+  "revision": 1,
+  "level": "kozep",
+  "source": "generated",
+  "topic": "utmutato",
   "title": "Szituációs feladat",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "guide",
   "type": "speaking",
   "target": "situation",
   "summaryHu": "A középszintű szóbeli második feladata: szerepjáték egy hétköznapi helyzetben (vásárlás, reklamáció, gyógyszertár, talált tárgyak irodája, pályaudvar, szálloda …). A vizsgáztató a partnered, a tételen irányító szempontok vannak. A vizsgáztató azt értékeli, teljesíted-e mindegyik kommunikációs célt, reagálsz-e a partner megszólalásaira, és a helyzethez illő, udvarias nyelvet használsz-e.",
@@ -46,30 +56,118 @@
     }
   ],
   "phrases": [
-    { "group": "Kezdés", "en": "Guten Tag! Ich habe ein Problem mit …", "hu": "Jó napot! Gondom van a …-val." },
-    { "group": "Kezdés", "en": "Entschuldigung, können Sie mir helfen?", "hu": "Elnézést, tudna segíteni?" },
-    { "group": "Kezdés", "en": "Ich möchte gern …", "hu": "Szeretnék …" },
-    { "group": "Információkérés", "en": "Können Sie mir bitte sagen, wann / wo / wie viel …?", "hu": "Megmondaná, kérem, mikor / hol / mennyi …?" },
-    { "group": "Információkérés", "en": "Wie oft muss ich das nehmen?", "hu": "Milyen gyakran kell bevennem?" },
-    { "group": "Információkérés", "en": "Was kann ich machen, wenn …?", "hu": "Mit tehetek, ha …?" },
-    { "group": "Információkérés", "en": "Ist das ein Problem?", "hu": "Gond ez?" },
-    { "group": "Kérés, ajánlat, döntés", "en": "Ich hätte gern …", "hu": "Szeretnék / Kérnék …" },
-    { "group": "Kérés, ajánlat, döntés", "en": "Könnten Sie bitte …?", "hu": "…-na, kérem?" },
-    { "group": "Kérés, ajánlat, döntés", "en": "Gibt es eine andere Möglichkeit?", "hu": "Van más lehetőség?" },
-    { "group": "Kérés, ajánlat, döntés", "en": "Dann nehme ich lieber …", "hu": "Akkor inkább … választom." },
-    { "group": "Kérés, ajánlat, döntés", "en": "Das ist eine gute Idee.", "hu": "Ez jó ötlet." },
-    { "group": "Reklamáció", "en": "… funktioniert nicht mehr.", "hu": "… már nem működik." },
-    { "group": "Reklamáció", "en": "Hier ist der Kassenbon.", "hu": "Itt a blokk." },
-    { "group": "Reklamáció", "en": "Ich möchte das umtauschen / mein Geld zurück.", "hu": "Szeretném kicserélni / visszakérni a pénzemet." },
-    { "group": "Lezárás", "en": "Vielen Dank für Ihre Hilfe!", "hu": "Köszönöm szépen a segítségét!" },
-    { "group": "Lezárás", "en": "Auf Wiedersehen! / Auf Wiederhören!", "hu": "Viszontlátásra! / Viszonthallásra! (telefonon)" }
+    {
+      "group": "Kezdés",
+      "en": "Guten Tag! Ich habe ein Problem mit …",
+      "hu": "Jó napot! Gondom van a …-val."
+    },
+    {
+      "group": "Kezdés",
+      "en": "Entschuldigung, können Sie mir helfen?",
+      "hu": "Elnézést, tudna segíteni?"
+    },
+    {
+      "group": "Kezdés",
+      "en": "Ich möchte gern …",
+      "hu": "Szeretnék …"
+    },
+    {
+      "group": "Információkérés",
+      "en": "Können Sie mir bitte sagen, wann / wo / wie viel …?",
+      "hu": "Megmondaná, kérem, mikor / hol / mennyi …?"
+    },
+    {
+      "group": "Információkérés",
+      "en": "Wie oft muss ich das nehmen?",
+      "hu": "Milyen gyakran kell bevennem?"
+    },
+    {
+      "group": "Információkérés",
+      "en": "Was kann ich machen, wenn …?",
+      "hu": "Mit tehetek, ha …?"
+    },
+    {
+      "group": "Információkérés",
+      "en": "Ist das ein Problem?",
+      "hu": "Gond ez?"
+    },
+    {
+      "group": "Kérés, ajánlat, döntés",
+      "en": "Ich hätte gern …",
+      "hu": "Szeretnék / Kérnék …"
+    },
+    {
+      "group": "Kérés, ajánlat, döntés",
+      "en": "Könnten Sie bitte …?",
+      "hu": "…-na, kérem?"
+    },
+    {
+      "group": "Kérés, ajánlat, döntés",
+      "en": "Gibt es eine andere Möglichkeit?",
+      "hu": "Van más lehetőség?"
+    },
+    {
+      "group": "Kérés, ajánlat, döntés",
+      "en": "Dann nehme ich lieber …",
+      "hu": "Akkor inkább … választom."
+    },
+    {
+      "group": "Kérés, ajánlat, döntés",
+      "en": "Das ist eine gute Idee.",
+      "hu": "Ez jó ötlet."
+    },
+    {
+      "group": "Reklamáció",
+      "en": "… funktioniert nicht mehr.",
+      "hu": "… már nem működik."
+    },
+    {
+      "group": "Reklamáció",
+      "en": "Hier ist der Kassenbon.",
+      "hu": "Itt a blokk."
+    },
+    {
+      "group": "Reklamáció",
+      "en": "Ich möchte das umtauschen / mein Geld zurück.",
+      "hu": "Szeretném kicserélni / visszakérni a pénzemet."
+    },
+    {
+      "group": "Lezárás",
+      "en": "Vielen Dank für Ihre Hilfe!",
+      "hu": "Köszönöm szépen a segítségét!"
+    },
+    {
+      "group": "Lezárás",
+      "en": "Auf Wiedersehen! / Auf Wiederhören!",
+      "hu": "Viszontlátásra! / Viszonthallásra! (telefonon)"
+    }
   ],
   "mistakes": [
-    { "wrong": "Ich will Tabletten.", "right": "Ich hätte gern etwas gegen Halsschmerzen, bitte.", "why": "Az „Ich will” udvariatlanul hangzik; a „Ich hätte gern …” / „Ich möchte …” a természetes udvarias kérés." },
-    { "wrong": "Können Sie mir sagen, wann fährt der nächste Zug?", "right": "Können Sie mir sagen, wann der nächste Zug fährt?", "why": "Függő kérdésben az ige a mellékmondat végére kerül." },
-    { "wrong": "Hallo! Hast du Kopfhörer?", "right": "Guten Tag! Haben Sie diese Kopfhörer auch in Schwarz?", "why": "Eladóval, ügyintézővel szemben a „Sie” forma és egy udvarias köszönés illik." },
-    { "wrong": "Az összes szempontot egyetlen hosszú megszólalásban mondom el.", "right": "Szempontonként haladok, és megvárom a vizsgáztató reakcióját.", "why": "A szituáció párbeszéd: a vizsgáztató reakcióira is figyelni és reagálni kell." },
-    { "wrong": "Seit zwei Tagen ich habe Halsschmerzen.", "right": "Seit zwei Tagen habe ich Halsschmerzen.", "why": "Időhatározó után az ige következik; a „seit” mellett jelen idő áll." }
+    {
+      "wrong": "Ich will Tabletten.",
+      "right": "Ich hätte gern etwas gegen Halsschmerzen, bitte.",
+      "why": "Az „Ich will” udvariatlanul hangzik; a „Ich hätte gern …” / „Ich möchte …” a természetes udvarias kérés."
+    },
+    {
+      "wrong": "Können Sie mir sagen, wann fährt der nächste Zug?",
+      "right": "Können Sie mir sagen, wann der nächste Zug fährt?",
+      "why": "Függő kérdésben az ige a mellékmondat végére kerül."
+    },
+    {
+      "wrong": "Hallo! Hast du Kopfhörer?",
+      "right": "Guten Tag! Haben Sie diese Kopfhörer auch in Schwarz?",
+      "why": "Eladóval, ügyintézővel szemben a „Sie” forma és egy udvarias köszönés illik."
+    },
+    {
+      "wrong": "Az összes szempontot egyetlen hosszú megszólalásban mondom el.",
+      "right": "Szempontonként haladok, és megvárom a vizsgáztató reakcióját.",
+      "why": "A szituáció párbeszéd: a vizsgáztató reakcióira is figyelni és reagálni kell."
+    },
+    {
+      "wrong": "Seit zwei Tagen ich habe Halsschmerzen.",
+      "right": "Seit zwei Tagen habe ich Halsschmerzen.",
+      "why": "Időhatározó után az ige következik; a „seit” mellett jelen idő áll."
+    }
   ],
   "checklist": [
     "Köszöntem, és elmondtam, miért jöttem?",

@@ -1,5 +1,15 @@
 {
+  "schemaVersion": 1,
+  "id": "nem-gd-speaking-interview",
+  "subject": "nemet",
+  "revision": 1,
+  "level": "kozep",
+  "source": "generated",
+  "topic": "utmutato",
   "title": "Társalgás",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "guide",
   "type": "speaking",
   "target": "interview",
   "summaryHu": "A szóbeli első pontozott feladata: a vizsgáztató egy rövid, nem pontozott bemelegítés után kérdéseket tesz fel a saját életedről és 2–3 témakörből (család, iskola, szabadidő, lakóhely, utazás, munka …). Emelt szinten általánosabb, elvontabb kérdések is jönnek. A vizsgáztató azt értékeli, megérted-e a kérdéseket, érdemben és kifejtve válaszolsz-e, milyen a szókincsed és a nyelvhelyességed.",
@@ -46,30 +56,118 @@
     }
   ],
   "phrases": [
-    { "group": "Kezdés, időnyerés", "en": "Also, …", "hu": "Szóval, …" },
-    { "group": "Kezdés, időnyerés", "en": "Gute Frage!", "hu": "Jó kérdés!" },
-    { "group": "Kezdés, időnyerés", "en": "Ehrlich gesagt …", "hu": "Őszintén szólva …" },
-    { "group": "Kezdés, időnyerés", "en": "Das kommt darauf an.", "hu": "Attól függ." },
-    { "group": "Szokások, gyakoriság", "en": "Normalerweise …", "hu": "Általában …" },
-    { "group": "Szokások, gyakoriság", "en": "zweimal pro Woche / jeden Tag / ab und zu", "hu": "hetente kétszer / minden nap / néha" },
-    { "group": "Szokások, gyakoriság", "en": "Am liebsten …", "hu": "Legszívesebben …" },
-    { "group": "Indoklás, példa", "en": "…, weil …", "hu": "…, mert … (az ige a végére kerül)" },
-    { "group": "Indoklás, példa", "en": "…, deshalb …", "hu": "…, ezért …" },
-    { "group": "Indoklás, példa", "en": "Zum Beispiel …", "hu": "Például …" },
-    { "group": "Indoklás, példa", "en": "Letzten Sommer habe ich …", "hu": "Tavaly nyáron …" },
-    { "group": "Vélemény (emelt)", "en": "Ich habe den Eindruck, dass …", "hu": "Az a benyomásom, hogy …" },
-    { "group": "Vélemény (emelt)", "en": "Ich bin davon überzeugt, dass …", "hu": "Meggyőződésem, hogy …" },
-    { "group": "Vélemény (emelt)", "en": "Einerseits …, andererseits …", "hu": "Egyrészt …, másrészt …" },
-    { "group": "Vélemény (emelt)", "en": "Ich halte es für wichtig, dass …", "hu": "Fontosnak tartom, hogy …" },
-    { "group": "Visszakérdezés", "en": "Können Sie die Frage bitte wiederholen?", "hu": "Megismételné a kérdést, kérem?" },
-    { "group": "Visszakérdezés", "en": "Meinen Sie …?", "hu": "Arra gondol, hogy …?" }
+    {
+      "group": "Kezdés, időnyerés",
+      "en": "Also, …",
+      "hu": "Szóval, …"
+    },
+    {
+      "group": "Kezdés, időnyerés",
+      "en": "Gute Frage!",
+      "hu": "Jó kérdés!"
+    },
+    {
+      "group": "Kezdés, időnyerés",
+      "en": "Ehrlich gesagt …",
+      "hu": "Őszintén szólva …"
+    },
+    {
+      "group": "Kezdés, időnyerés",
+      "en": "Das kommt darauf an.",
+      "hu": "Attól függ."
+    },
+    {
+      "group": "Szokások, gyakoriság",
+      "en": "Normalerweise …",
+      "hu": "Általában …"
+    },
+    {
+      "group": "Szokások, gyakoriság",
+      "en": "zweimal pro Woche / jeden Tag / ab und zu",
+      "hu": "hetente kétszer / minden nap / néha"
+    },
+    {
+      "group": "Szokások, gyakoriság",
+      "en": "Am liebsten …",
+      "hu": "Legszívesebben …"
+    },
+    {
+      "group": "Indoklás, példa",
+      "en": "…, weil …",
+      "hu": "…, mert … (az ige a végére kerül)"
+    },
+    {
+      "group": "Indoklás, példa",
+      "en": "…, deshalb …",
+      "hu": "…, ezért …"
+    },
+    {
+      "group": "Indoklás, példa",
+      "en": "Zum Beispiel …",
+      "hu": "Például …"
+    },
+    {
+      "group": "Indoklás, példa",
+      "en": "Letzten Sommer habe ich …",
+      "hu": "Tavaly nyáron …"
+    },
+    {
+      "group": "Vélemény (emelt)",
+      "en": "Ich habe den Eindruck, dass …",
+      "hu": "Az a benyomásom, hogy …"
+    },
+    {
+      "group": "Vélemény (emelt)",
+      "en": "Ich bin davon überzeugt, dass …",
+      "hu": "Meggyőződésem, hogy …"
+    },
+    {
+      "group": "Vélemény (emelt)",
+      "en": "Einerseits …, andererseits …",
+      "hu": "Egyrészt …, másrészt …"
+    },
+    {
+      "group": "Vélemény (emelt)",
+      "en": "Ich halte es für wichtig, dass …",
+      "hu": "Fontosnak tartom, hogy …"
+    },
+    {
+      "group": "Visszakérdezés",
+      "en": "Können Sie die Frage bitte wiederholen?",
+      "hu": "Megismételné a kérdést, kérem?"
+    },
+    {
+      "group": "Visszakérdezés",
+      "en": "Meinen Sie …?",
+      "hu": "Arra gondol, hogy …?"
+    }
   ],
   "mistakes": [
-    { "wrong": "Treiben Sie Sport? – Ja.", "right": "Ja, ich spiele zweimal pro Woche Volleyball, weil ich mich danach entspannt fühle.", "why": "Az egyszavas válasz nem teljesíti a feladatot: a vizsgáztató azt értékeli, hogy érdemben, kifejtve válaszolsz-e." },
-    { "wrong": "Ich habe seit fünf Jahren Deutsch gelernt.", "right": "Ich lerne seit fünf Jahren Deutsch.", "why": "Ha a cselekvés most is tart, a „seit” mellett jelen idő áll (mint a magyarban: öt éve tanulok)." },
-    { "wrong": "Ich mag Biologie, weil die Lehrerin erklärt alles gut.", "right": "Ich mag Biologie, weil die Lehrerin alles gut erklärt.", "why": "A „weil” mellékmondatban a ragozott ige a végére kerül – beszédben is." },
-    { "wrong": "Im Sommer ich bin nach Kroatien gefahren.", "right": "Im Sommer bin ich nach Kroatien gefahren.", "why": "Ha a mondat időhatározóval kezdődik, utána az ige jön (ige a második helyen)." },
-    { "wrong": "Ich bin 17 Jahre.", "right": "Ich bin 17 Jahre alt.", "why": "Az életkor kifejezése: „… Jahre alt”." }
+    {
+      "wrong": "Treiben Sie Sport? – Ja.",
+      "right": "Ja, ich spiele zweimal pro Woche Volleyball, weil ich mich danach entspannt fühle.",
+      "why": "Az egyszavas válasz nem teljesíti a feladatot: a vizsgáztató azt értékeli, hogy érdemben, kifejtve válaszolsz-e."
+    },
+    {
+      "wrong": "Ich habe seit fünf Jahren Deutsch gelernt.",
+      "right": "Ich lerne seit fünf Jahren Deutsch.",
+      "why": "Ha a cselekvés most is tart, a „seit” mellett jelen idő áll (mint a magyarban: öt éve tanulok)."
+    },
+    {
+      "wrong": "Ich mag Biologie, weil die Lehrerin erklärt alles gut.",
+      "right": "Ich mag Biologie, weil die Lehrerin alles gut erklärt.",
+      "why": "A „weil” mellékmondatban a ragozott ige a végére kerül – beszédben is."
+    },
+    {
+      "wrong": "Im Sommer ich bin nach Kroatien gefahren.",
+      "right": "Im Sommer bin ich nach Kroatien gefahren.",
+      "why": "Ha a mondat időhatározóval kezdődik, utána az ige jön (ige a második helyen)."
+    },
+    {
+      "wrong": "Ich bin 17 Jahre.",
+      "right": "Ich bin 17 Jahre alt.",
+      "why": "Az életkor kifejezése: „… Jahre alt”."
+    }
   ],
   "checklist": [
     "Minden kérdésre legalább 2–3 mondatban válaszoltam?",

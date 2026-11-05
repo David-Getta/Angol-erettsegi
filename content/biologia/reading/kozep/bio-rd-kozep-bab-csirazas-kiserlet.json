@@ -76,7 +76,7 @@
       "id": "3",
       "kind": "text",
       "prompt": "A babszemek hány százaléka csírázott ki 15 °C-on? (Csak a számot írja be!)",
-      "answer": ["45", "45%", "45 %", "45 százalék", "0,45", "0.45"],
+      "answer": ["45", "45%", "45 százalék", "0,45"],
       "maxWords": 2,
       "category": "okologiai-szamitas",
       "explanation": "Helyes: 45%. 15 °C-on a 20 magból 9 csírázott ki: 9 / 20 = 0,45, azaz 45%."
@@ -85,7 +85,7 @@
       "id": "4",
       "kind": "text",
       "prompt": "A vizsgált hőmérsékletek közül melyiken csírázott ki a legtöbb babszem?",
-      "answer": ["25 °C", "25", "25°C", "25 fok", "25 fokon", "25 °C-on", "25 C"],
+      "answer": ["25 °C", "25", "25 fok", "25 fokon", "25 °C-on", "25 C"],
       "maxWords": 2,
       "category": "abra-adatelemzes",
       "explanation": "Helyes: 25 °C. A táblázat szerint 25 °C-on 18 mag csírázott ki, ez több, mint 15 °C-on (9) és 35 °C-on (11); 5 °C-on egy sem."
