@@ -125,6 +125,7 @@ export const t = {
     timeUp: "Lejárt az idő – a feladatot automatikusan kiértékeltem.",
     glossary: "Szójegyzék",
     addCard: "Szókártyába",
+    addAllCards: (n: number) => `Mindet kártyára (${n})`,
     cardAdded: "Szókártya felvéve",
     cardIncomplete: "Felvéve (hiányos – a /szokincs kiegészíti)",
     clickWordHint: "Kattints bármelyik szóra, hogy szókártyába vedd.",

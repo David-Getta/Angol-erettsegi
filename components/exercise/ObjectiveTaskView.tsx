@@ -1,11 +1,12 @@
 "use client";
 
-import { Fragment, useMemo, type ReactNode } from "react";
+import { Fragment, useMemo, useState, type ReactNode } from "react";
 import type { Block, GlossaryEntry, Item, ObjectiveTask, Option } from "@/lib/content/schema";
 import type { ItemResult } from "@/lib/scoring/check";
 import { findLoose, segmentText, GAP_RE } from "@/lib/content/text";
 import { t } from "@/lib/i18n/hu";
 import { ItemFeedback } from "./ItemFeedback";
+import { btn } from "@/components/ui";
 
 export type ViewProps = {
   task: ObjectiveTask;
@@ -516,23 +517,49 @@ function OptionButton({
   );
 }
 
-export function GlossaryList({ glossary, onAdd }: { glossary: GlossaryEntry[]; onAdd?: (g: GlossaryEntry) => void }) {
+export function GlossaryList({ glossary, onAdd }: { glossary: GlossaryEntry[]; onAdd?: (g: GlossaryEntry) => void | Promise<void> }) {
+  const [added, setAdded] = useState<Set<string>>(new Set());
+  const [busy, setBusy] = useState(false);
   if (!glossary.length) return null;
+  const add = async (g: GlossaryEntry) => {
+    if (!onAdd || added.has(g.term)) return;
+    await onAdd(g);
+    setAdded((s) => new Set(s).add(g.term));
+  };
+  const rest = glossary.filter((g) => !added.has(g.term));
   return (
     <details className="rounded-xl border border-border bg-surface p-3 text-sm">
       <summary className="cursor-pointer font-medium">
         {t.task.glossary} ({glossary.length})
       </summary>
+      {onAdd && rest.length > 1 && (
+        <button
+          type="button"
+          className={`${btn.small} mt-2`}
+          disabled={busy}
+          data-testid="glossary-add-all"
+          onClick={async () => {
+            setBusy(true);
+            for (const g of rest) await add(g);
+            setBusy(false);
+          }}
+        >
+          + {t.task.addAllCards(rest.length)}
+        </button>
+      )}
       <ul className="mt-2 divide-y divide-border">
         {glossary.map((g) => (
           <li key={g.term} className="flex items-center gap-2 py-1">
-            <b>{g.term}</b>
+            <b lang="en">{g.term}</b>
             <span className="text-muted">– {g.meaning}</span>
-            {onAdd && (
-              <button type="button" className="ml-auto text-xs text-accent hover:underline" onClick={() => onAdd(g)}>
-                + {t.task.addCard}
-              </button>
-            )}
+            {onAdd &&
+              (added.has(g.term) ? (
+                <span className="ml-auto text-xs text-good">✓</span>
+              ) : (
+                <button type="button" className="ml-auto text-xs text-accent hover:underline" disabled={busy} onClick={() => void add(g)}>
+                  + {t.task.addCard}
+                </button>
+              ))}
           </li>
         ))}
       </ul>
