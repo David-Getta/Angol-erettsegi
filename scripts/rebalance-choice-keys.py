@@ -11,6 +11,17 @@ dry, show = "--dry" in sys.argv, "--show" in sys.argv
 root, subjects = args[0], args[1:]
 ASSOC_TYPES = {"asszociacio", "negyfele-asszociacio"}
 POSITIONAL = re.compile(r"mindkett|egyik sem|mindegyik|fenti|előző|felsorolt|both|neither|none of|all of|beide|keine der|alle", re.I)
+FIXED = re.compile(r"^(?:Richtig|Falsch|Steht nicht im Text|True|False|Not given|Igaz|Hamis|Nem derül ki|Nincs benne)\b", re.I)
+NUM = re.compile(r"^\s*[-−]?\d+(?:[.,:]\d+)?")
+
+def numerically_ordered(texts):
+    vals = []
+    for t in texts:
+        m = NUM.match(t)
+        if not m:
+            return False
+        vals.append(float(m.group(0).replace(",", ".").replace(":", ".").replace("−", "-")))
+    return vals == sorted(vals)
 LABELS = re.compile(r"(?<![\w])[A-E] (?:ország|állomás|város|minta|kísérlet|személy|pont|tó|terület|régió|település|vállalat|csoport|kémcső|oldat|anyag|egyed|faj|növény|állat|sejt|vegyület|elem|test|tárgy|szakasz|görbe|grafikon|táblázat|land|Person|Stadt)\b|(?<![\w])[A-E]-(?:ban|ben|ból|ből|nál|nél|hoz|hez|ra|re)\b")
 # unambiguous references to an option letter; group 1 = the letter
 STRONG = [
@@ -61,6 +72,12 @@ for s in subjects:
         task_text = " ".join(b.get("text", "") for b in (d.get("passage") or {}).get("blocks", [])) + " " + " ".join(i.get("prompt") or "" for i in items if i)
         task_labels = bool(LABELS.search(task_text))
         changed = False
+        used = {}
+        choice_items = [i for i in items if i and i.get("kind") == "choice"]
+        answers = [i["answer"] for i in choice_items]
+        if len(answers) >= 4 and max(answers.count(k) for k in set(answers)) <= -(-len(answers) // 4) + 1 and len(set(answers)) >= 3:
+            stats["task-already-balanced"] += 1
+            continue
         for it in items:
             if not it or it.get("kind") != "choice":
                 continue
@@ -69,6 +86,8 @@ for s in subjects:
             if keys != list("ABCDE"[: len(keys)]) or len(keys) < 3:
                 stats["skip-keys"] += 1; continue
             opts = " ".join(o["text"] for o in it["options"])
+            if any(FIXED.match(o["text"]) for o in it["options"]) or numerically_ordered([o["text"] for o in it["options"]]):
+                stats["skip-fixed-order"] += 1; continue
             if POSITIONAL.search(opts) or re.search(r"^\s*[A-E]\s*$", "\n".join(o["text"] for o in it["options"]), re.M) or LABELS.search(opts):
                 stats["skip-options"] += 1; continue
             texts = [it.get("explanation", "")] + list((it.get("wrongOptions") or {}).values())
@@ -81,7 +100,10 @@ for s in subjects:
                 stats["skip-ambiguous"] += 1; continue
             free = [k for k in keys if k not in loose]
             h = int(hashlib.sha1(f"{d['id']}:{it['id']}".encode()).hexdigest(), 16)
-            tgt = free[h % len(free)]
+            least = min(used.get(k, 0) for k in free)
+            pool = [k for k in free if used.get(k, 0) == least]
+            tgt = pool[h % len(pool)]
+            used[tgt] = used.get(tgt, 0) + 1
             if tgt == cur:
                 stats["kept"] += 1; continue
             m = {cur: tgt, tgt: cur}
