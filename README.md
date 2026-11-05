@@ -67,6 +67,9 @@ Az írás- és a szóbeli javítás **nem azonnali**: a beadás után két út k
    (egy kattintással szókártyába). A hibák automatikusan a **Hibanaplóba** kerülnek.
 5. **Átírás**: az „Átírás – új változat” gombbal a javítás alapján újraírhatod, és újra beadhatod. A változatok
    pontszáma és szövege egymás mellett látszik.
+6. A javítás alatt megjelenik a **mintamegoldás** (kiemelve, hol teljesíti az irányítási pontokat, és miért kapna
+   maximális pontot). Minden hiba mellett ott a **§ Szabály** link a Szabálytárba és a **＋ Ismétlésbe** gomb, amellyel
+   a hibából „javítsd ki” szókártya lesz.
 
 **B) A Claude appal**
 1. A beadás oldalán kattints a **Prompt másolása** gombra (rubrika + feladat + szöveg + a várt JSON-formátum).
@@ -74,7 +77,15 @@ Az írás- és a szóbeli javítás **nem azonnali**: a beadás után két út k
    Ha a JSON hibás, az app pontosan megírja, mi hiányzik.
 
 **Szóbeli**: az appban felveszed a választ (vagy élőben beszélgetsz a Claude app hangmódjában a **Vizsgáztató prompt
-másolása** gombbal kapott prompttal, és visszamásolod az átiratot), majd ugyanígy adod be javításra.
+másolása** gombbal kapott prompttal, és visszamásolod az átiratot), majd ugyanígy adod be javításra. A saját hangodat is
+visszahallgathatod (a felvétel csak a böngészőben marad), és összevetheted a felolvasott **mintaválasszal**.
+
+## A hibákból tanulás köre
+
+1. Minden rossz válasz és javítás a **Hibanaplóba** kerül, a helyes megoldással és a magyarázattal.
+2. A **Szabálytár** az adott hibakategória szabályát magyarázza el (tipikus magyar hibákkal és mini-gyakorlással).
+3. A **Hibáim újrapróbálása** legkorábban másnap újra feladja az elrontott nyelvhelyességi mondatokat, amíg nem sikerülnek.
+4. A **célzott gyakorlás** a feladatbankból válogat ugyanabból a kategóriából; a javításokból **„javítsd ki” szókártya** is lehet.
 
 ## Claude Code parancsok
 
