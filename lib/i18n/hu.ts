@@ -34,6 +34,7 @@ export const t = {
     errorLog: "Hibanapló",
     lessons: "Szabálytár",
     phrases: "Kifejezéstár",
+    topics: "Témakörök",
     mock: "Próbaérettségi",
     examInfo: "Az érettségiről",
     official: "Hivatalos feladatsorok",
@@ -503,6 +504,21 @@ export const t = {
     notEnoughTargeted: "Ehhez a kategóriához kevés a célzott item. Generálj újakat:",
     incompleteCards: (n: number) => `${n} hiányos szókártyád van. Kiegészítéshez futtasd:`,
     officialPending: (f: string) => `A(z) ${f} mappa még nincs importálva. Futtasd:`,
+  },
+
+  topics: {
+    title: "Témakörök",
+    intro: "A szóbeli vizsga tíz témaköre – mindegyiknél egy helyen a hozzá tartozó feladatok minden vizsgarészből és a szókincs-pakli. A szóbelire témakörönként érdemes készülni.",
+    done: (a: number, b: number) => `${a} / ${b} feladat kész`,
+    deck: "Szókincs-pakli",
+    deckAdded: (a: number, b: number) => `${a} / ${b} szó a kártyáid között`,
+    noDeck: "Ehhez a témakörhöz még nincs pakli ezen a szinten.",
+    noTasks: "Ebben a részben még nincs feladat ehhez a témakörhöz.",
+    best: (p: number) => `legjobb: ${Math.round(p)}%`,
+    todo: "még nem csináltad",
+    generate: "Új feladatok ehhez a témakörhöz (Claude Code):",
+    subtopics: "Altémák",
+    short: { reading: "Olvasás", "language-use": "Nyelvhelyesség", listening: "Hallás", writing: "Írás", speaking: "Szóbeli" } as Record<string, string>,
   },
 
   phrases: {

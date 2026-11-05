@@ -21,6 +21,7 @@ vagy a javítást a Claude appba bemásolt prompttal kérheted. Nincs fiók, nin
 | **Szókincs** | FSRS-alapú ismétlés (angol→magyar, magyar→angol, példamondat-kitöltés, kollokáció), témakörönkénti paklik; a saját hibáid is felvehetők „javítsd ki” kártyának |
 | **Hibanapló** | minden hibád a helyes megoldással és a magyarázattal, kategóriánként, trenddel, „Gyakoroltasd ezt” gombbal |
 | **Szabálytár** | minden hibakategóriához magyar szabálymagyarázat példákkal, a magyarul beszélők tipikus hibái, érettségi-tippek és mini-gyakorlás; a hibanaplóból és minden hibamagyarázatból egy kattintással elérhető |
+| **Témakörök** | a tíz szóbeli témakör mindegyikénél egy helyen a feladatok minden vizsgarészből (kész / még nem) és a szókincs-pakli |
 | **Kifejezéstár** | az írás- és szóbeli kártyák hasznos kifejezései szövegtípusonként, kereshetően, egy kattintással szókártyába |
 | **Az érettségiről** | a vizsga felépítése, időkeretei, pontozása, jegyhatárai és a nyelvvizsga-egyenértékűség egy oldalon, a config fájlokból |
 | **Próbaérettségi** | teljes írásbeli szimuláció hivatalos időkeretekkel és szigorú részenkénti időzítéssel → pontszám, százalék, 12%-os küszöbök, becsült jegy, nyelvvizsga-egyenértékűség |
