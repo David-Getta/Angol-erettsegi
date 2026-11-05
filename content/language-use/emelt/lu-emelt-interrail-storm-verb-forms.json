@@ -8,6 +8,7 @@
   "title": "Stranded in Salzburg",
   "createdAt": "2026-11-05",
   "tags": [],
+  "reservedFor": "diagnostic",
   "section": "language-use",
   "type": "verb-forms",
   "instructions": "Read the text and put the verbs in brackets into the correct form. In some gaps you may need more than one word. There is an example (0) at the beginning.",
@@ -15,33 +16,174 @@
   "passage": {
     "title": "Stranded in Salzburg",
     "blocks": [
-      { "text": "Last summer, my best friend Kata and I [[0]] three weeks travelling around Europe by train. We [[1]] about the trip since we were fourteen, and we had saved every forint we could. Before we left, my parents made me [[2]] to call them every evening, and Dad gave me a long lecture about [[3]] my passport safe." },
-      { "text": "The first few days went smoothly. Then, in Salzburg, everything started to go wrong. Our train to Munich [[4]] because of a storm, and by the time we got back to our hostel, all the beds [[5]]. We were standing in the pouring rain, wondering what to do, when an elderly woman stopped [[6]] us if we needed help. Her name was Ingrid, and she [[7]] a small guesthouse nearby for over thirty years." },
-      { "text": "Ingrid gave us a room for the night and cooked us a wonderful dinner. While we were eating, she asked us what we [[8]] in Salzburg. When we told her about our trip, she laughed and said that if she [[9]] our age, she would do exactly the same." },
-      { "text": "The next morning, the storm had passed, and Ingrid drove us to the station herself. Looking back, I'm glad we [[10]] to find a bed at the hostel that night. If we had, we [[11]] Ingrid. We still write to each other, and this time next year Kata and I [[12]] back to Salzburg to visit her." }
+      {
+        "text": "Last summer, my best friend Kata and I [[0]] three weeks travelling around Europe by train. We [[1]] about the trip since we were fourteen, and we had saved every forint we could. Before we left, my parents made me [[2]] to call them every evening, and Dad gave me a long lecture about [[3]] my passport safe."
+      },
+      {
+        "text": "The first few days went smoothly. Then, in Salzburg, everything started to go wrong. Our train to Munich [[4]] because of a storm, and by the time we got back to our hostel, all the beds [[5]]. We were standing in the pouring rain, wondering what to do, when an elderly woman stopped [[6]] us if we needed help. Her name was Ingrid, and she [[7]] a small guesthouse nearby for over thirty years."
+      },
+      {
+        "text": "Ingrid gave us a room for the night and cooked us a wonderful dinner. While we were eating, she asked us what we [[8]] in Salzburg. When we told her about our trip, she laughed and said that if she [[9]] our age, she would do exactly the same."
+      },
+      {
+        "text": "The next morning, the storm had passed, and Ingrid drove us to the station herself. Looking back, I'm glad we [[10]] to find a bed at the hostel that night. If we had, we [[11]] Ingrid. We still write to each other, and this time next year Kata and I [[12]] back to Salzburg to visit her."
+      }
     ]
   },
   "example": {
     "id": "0",
     "kind": "text",
     "cue": "spend",
-    "answer": ["spent"],
+    "answer": [
+      "spent"
+    ],
     "category": "verb-form",
     "explanation": "Lezárt múltbeli esemény (last summer) → past simple. A „spend” rendhagyó ige: spend – spent – spent."
   },
   "items": [
-    { "id": "1", "kind": "text", "cue": "dream", "answer": ["had been dreaming", "'d been dreaming", "had dreamt", "had dreamed", "'d dreamt", "'d dreamed"], "category": "tense", "explanation": "A történet múlt időben szól, a „since we were fourteen” pedig egy még korábbi kezdőpontot jelöl: a múltbeli utazásig tartó folyamat → past perfect continuous (had been dreaming) vagy past perfect (had dreamt/dreamed). Present perfect nem jó, mert az utazás már elmúlt." },
-    { "id": "2", "kind": "text", "cue": "promise", "answer": ["promise"], "category": "gerund-infinitive", "explanation": "„Make somebody do something” = rávesz, kötelez valakit valamire. A „make” után a tárgy után puszta ige (to nélkül) áll: made me promise." },
-    { "id": "3", "kind": "text", "cue": "keep", "answer": ["keeping"], "category": "gerund-infinitive", "explanation": "Elöljárószó (about) után az ige -ing alakban áll: a lecture about keeping my passport safe." },
-    { "id": "4", "kind": "text", "cue": "cancel", "answer": ["was cancelled", "was canceled", "had been cancelled", "had been canceled", "got cancelled", "got canceled"], "category": "passive", "explanation": "Szenvedő szerkezet: a vonatot törölték (nem a vonat törölt valamit). Múltbeli esemény → past simple passive (was cancelled); a past perfect passive (had been cancelled) is helyes. Brit írásmód: cancelled, amerikai: canceled." },
-    { "id": "5", "kind": "text", "cue": "take", "answer": ["had been taken", "were taken"], "category": "passive", "explanation": "A „by the time we got back” azt jelzi, hogy addigra már elfoglalták az ágyakat → past perfect passive: had been taken. A „were taken” (foglaltak voltak – állapot) is helyes." },
-    { "id": "6", "kind": "text", "cue": "ask", "answer": ["to ask"], "category": "gerund-infinitive", "explanation": "„Stop to do something” = megáll, hogy megtegyen valamit (megállt, hogy megkérdezze). A „stop doing something” azt jelentené, hogy abbahagyta a kérdezést – ez itt értelmetlen." },
-    { "id": "7", "kind": "text", "cue": "run", "answer": ["had been running", "'d been running", "had run", "'d run"], "category": "tense", "explanation": "A múltbeli pillanatig (amikor találkoztak) már harminc éve tartó tevékenység (for over thirty years) → past perfect continuous (had been running) vagy past perfect (had run). A „run a guesthouse” = vendégházat üzemeltet." },
-    { "id": "8", "kind": "text", "cue": "do", "answer": ["were doing"], "category": "reported-speech", "explanation": "Függő kérdés múlt idejű „asked” után: „What are you doing in Salzburg?” → she asked us what we were doing. Az igeidő egy lépéssel visszalép, és a szórend kijelentő (we were doing, nem „were we doing”)." },
-    { "id": "9", "kind": "text", "cue": "be", "answer": ["were", "was"], "category": "conditional", "explanation": "Második (jelenre vonatkozó, nem valós) feltételes mondat függő beszédben: „If I were your age, I would do the same.” → said that if she were/was our age, she would do … A második feltételes alak függő beszédben nem változik. A „were” választékosabb, a „was” köznyelvi." },
-    { "id": "10", "kind": "text", "cue": "not manage", "answer": ["didn't manage", "did not manage"], "category": "tense", "explanation": "Lezárt múltbeli tény (that night) → past simple tagadó alakja: did not / didn't + puszta ige: I'm glad we didn't manage to find a bed." },
-    { "id": "11", "kind": "text", "cue": "never meet", "answer": ["would never have met", "'d never have met", "would have never met"], "category": "conditional", "explanation": "Harmadik feltételes mondat (múltbeli, nem valós helyzet): If we had (found a bed), we would never have met Ingrid. Szerkezet: would + have + 3. alak; a „never” a „would” után áll." },
-    { "id": "12", "kind": "text", "cue": "travel", "answer": ["will be travelling", "'ll be travelling", "will be traveling", "'ll be traveling", "are going to be travelling", "are going to be traveling"], "category": "tense", "explanation": "„This time next year” = jövőre ilyenkor: egy jövőbeli időpontban folyamatban lévő cselekvés → future continuous (will be travelling). Brit írásmód: travelling, amerikai: traveling." }
+    {
+      "id": "1",
+      "kind": "text",
+      "cue": "dream",
+      "answer": [
+        "had been dreaming",
+        "'d been dreaming",
+        "had dreamt",
+        "had dreamed",
+        "'d dreamt",
+        "'d dreamed"
+      ],
+      "category": "tense",
+      "explanation": "A történet múlt időben szól, a „since we were fourteen” pedig egy még korábbi kezdőpontot jelöl: a múltbeli utazásig tartó folyamat → past perfect continuous (had been dreaming) vagy past perfect (had dreamt/dreamed). Present perfect nem jó, mert az utazás már elmúlt."
+    },
+    {
+      "id": "2",
+      "kind": "text",
+      "cue": "promise",
+      "answer": [
+        "promise"
+      ],
+      "category": "gerund-infinitive",
+      "explanation": "„Make somebody do something” = rávesz, kötelez valakit valamire. A „make” után a tárgy után puszta ige (to nélkül) áll: made me promise."
+    },
+    {
+      "id": "3",
+      "kind": "text",
+      "cue": "keep",
+      "answer": [
+        "keeping"
+      ],
+      "category": "gerund-infinitive",
+      "explanation": "Elöljárószó (about) után az ige -ing alakban áll: a lecture about keeping my passport safe."
+    },
+    {
+      "id": "4",
+      "kind": "text",
+      "cue": "cancel",
+      "answer": [
+        "was cancelled",
+        "was canceled",
+        "had been cancelled",
+        "had been canceled",
+        "got cancelled",
+        "got canceled"
+      ],
+      "category": "passive",
+      "explanation": "Szenvedő szerkezet: a vonatot törölték (nem a vonat törölt valamit). Múltbeli esemény → past simple passive (was cancelled); a past perfect passive (had been cancelled) is helyes. Brit írásmód: cancelled, amerikai: canceled."
+    },
+    {
+      "id": "5",
+      "kind": "text",
+      "cue": "take",
+      "answer": [
+        "had been taken",
+        "were taken"
+      ],
+      "category": "passive",
+      "explanation": "A „by the time we got back” azt jelzi, hogy addigra már elfoglalták az ágyakat → past perfect passive: had been taken. A „were taken” (foglaltak voltak – állapot) is helyes."
+    },
+    {
+      "id": "6",
+      "kind": "text",
+      "cue": "ask",
+      "answer": [
+        "to ask"
+      ],
+      "category": "gerund-infinitive",
+      "explanation": "„Stop to do something” = megáll, hogy megtegyen valamit (megállt, hogy megkérdezze). A „stop doing something” azt jelentené, hogy abbahagyta a kérdezést – ez itt értelmetlen."
+    },
+    {
+      "id": "7",
+      "kind": "text",
+      "cue": "run",
+      "answer": [
+        "had been running",
+        "'d been running",
+        "had run",
+        "'d run"
+      ],
+      "category": "tense",
+      "explanation": "A múltbeli pillanatig (amikor találkoztak) már harminc éve tartó tevékenység (for over thirty years) → past perfect continuous (had been running) vagy past perfect (had run). A „run a guesthouse” = vendégházat üzemeltet."
+    },
+    {
+      "id": "8",
+      "kind": "text",
+      "cue": "do",
+      "answer": [
+        "were doing"
+      ],
+      "category": "reported-speech",
+      "explanation": "Függő kérdés múlt idejű „asked” után: „What are you doing in Salzburg?” → she asked us what we were doing. Az igeidő egy lépéssel visszalép, és a szórend kijelentő (we were doing, nem „were we doing”)."
+    },
+    {
+      "id": "9",
+      "kind": "text",
+      "cue": "be",
+      "answer": [
+        "were",
+        "was"
+      ],
+      "category": "conditional",
+      "explanation": "Második (jelenre vonatkozó, nem valós) feltételes mondat függő beszédben: „If I were your age, I would do the same.” → said that if she were/was our age, she would do … A második feltételes alak függő beszédben nem változik. A „were” választékosabb, a „was” köznyelvi."
+    },
+    {
+      "id": "10",
+      "kind": "text",
+      "cue": "not manage",
+      "answer": [
+        "didn't manage",
+        "did not manage"
+      ],
+      "category": "tense",
+      "explanation": "Lezárt múltbeli tény (that night) → past simple tagadó alakja: did not / didn't + puszta ige: I'm glad we didn't manage to find a bed."
+    },
+    {
+      "id": "11",
+      "kind": "text",
+      "cue": "never meet",
+      "answer": [
+        "would never have met",
+        "'d never have met",
+        "would have never met"
+      ],
+      "category": "conditional",
+      "explanation": "Harmadik feltételes mondat (múltbeli, nem valós helyzet): If we had (found a bed), we would never have met Ingrid. Szerkezet: would + have + 3. alak; a „never” a „would” után áll."
+    },
+    {
+      "id": "12",
+      "kind": "text",
+      "cue": "travel",
+      "answer": [
+        "will be travelling",
+        "'ll be travelling",
+        "will be traveling",
+        "'ll be traveling",
+        "are going to be travelling",
+        "are going to be traveling"
+      ],
+      "category": "tense",
+      "explanation": "„This time next year” = jövőre ilyenkor: egy jövőbeli időpontban folyamatban lévő cselekvés → future continuous (will be travelling). Brit írásmód: travelling, amerikai: traveling."
+    }
   ],
   "glossary": [],
   "suggestedMinutes": 12

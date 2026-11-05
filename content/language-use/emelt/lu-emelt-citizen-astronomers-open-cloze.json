@@ -8,6 +8,7 @@
   "title": "Armchair astronomers",
   "createdAt": "2026-11-05",
   "tags": [],
+  "reservedFor": "mock",
   "section": "language-use",
   "type": "open-cloze",
   "instructions": "Read the text and fill in the gaps with ONE suitable word. There is an example (0) at the beginning.",
@@ -15,32 +16,140 @@
   "passage": {
     "title": "Armchair astronomers",
     "blocks": [
-      { "text": "Until a few years ago, hardly anyone would have believed that a schoolteacher with no scientific training [[0]] all could discover a planet from her kitchen table. Yet that is exactly what happened to Maria Lindqvist, a 52-year-old from northern Sweden. She is one of more than two million volunteers [[1]] take part in online 'citizen science' projects, helping researchers to sort through enormous amounts of data." },
-      { "text": "The idea is surprisingly simple. Modern telescopes produce far [[2]] images than professional scientists could ever examine on [[3]] own. Computers are good at spotting obvious patterns, but they still miss many of the unusual details that the human eye picks up almost immediately. [[4]] of relying on software alone, research teams now upload the pictures to websites where anyone can classify them after a short training session." },
-      { "text": "Maria [[5]] been checking images for nearly two years when she noticed a tiny, regular dip in the brightness of a distant star. 'At first I was sure I must [[6]] made a mistake,' she admits. 'I almost didn't report it.' Fortunately, she did. Not [[7]] did the dip turn out to be caused by a planet passing in front of its star, [[8]] it was also the first planet of its kind to be found in that part of the sky." },
-      { "text": "Critics argue that the volunteers' results are not always reliable. Project leaders, however, point out that every image [[9]] checked by at [[10]] ten different people, so a single careless answer makes very [[11]] difference. What is more, many volunteers become so skilled [[12]] they are later invited to co-author scientific papers. Maria's name, for example, now appears on an article in a leading astronomy journal – something she says she still finds hard to believe." }
+      {
+        "text": "Until a few years ago, hardly anyone would have believed that a schoolteacher with no scientific training [[0]] all could discover a planet from her kitchen table. Yet that is exactly what happened to Maria Lindqvist, a 52-year-old from northern Sweden. She is one of more than two million volunteers [[1]] take part in online 'citizen science' projects, helping researchers to sort through enormous amounts of data."
+      },
+      {
+        "text": "The idea is surprisingly simple. Modern telescopes produce far [[2]] images than professional scientists could ever examine on [[3]] own. Computers are good at spotting obvious patterns, but they still miss many of the unusual details that the human eye picks up almost immediately. [[4]] of relying on software alone, research teams now upload the pictures to websites where anyone can classify them after a short training session."
+      },
+      {
+        "text": "Maria [[5]] been checking images for nearly two years when she noticed a tiny, regular dip in the brightness of a distant star. 'At first I was sure I must [[6]] made a mistake,' she admits. 'I almost didn't report it.' Fortunately, she did. Not [[7]] did the dip turn out to be caused by a planet passing in front of its star, [[8]] it was also the first planet of its kind to be found in that part of the sky."
+      },
+      {
+        "text": "Critics argue that the volunteers' results are not always reliable. Project leaders, however, point out that every image [[9]] checked by at [[10]] ten different people, so a single careless answer makes very [[11]] difference. What is more, many volunteers become so skilled [[12]] they are later invited to co-author scientific papers. Maria's name, for example, now appears on an article in a leading astronomy journal – something she says she still finds hard to believe."
+      }
     ]
   },
   "example": {
     "id": "0",
     "kind": "text",
-    "answer": ["at"],
+    "answer": [
+      "at"
+    ],
     "category": "collocation",
     "explanation": "Állandó kifejezés: „no … at all” = semmilyen … sem, egyáltalán nem. A „with no scientific training at all” = mindenféle tudományos képzettség nélkül."
   },
   "items": [
-    { "id": "1", "kind": "text", "answer": ["who", "that"], "category": "relative-clause", "explanation": "Szűkítő (vessző nélküli) vonatkozó mellékmondat, amely személyekre (volunteers) utal: „who” vagy „that”. A „which” csak dologra vagy állatra utalhat." },
-    { "id": "2", "kind": "text", "answer": ["more"], "category": "comparison", "explanation": "Középfokú összehasonlítás „than”-nal: far more images than … (sokkal több képet, mint …). A „far” a középfokot erősíti. A „fewer” logikailag nem illik: a teleszkópok épp túl sok képet készítenek." },
-    { "id": "3", "kind": "text", "answer": ["their"], "category": "pronoun", "explanation": "Állandó kifejezés: „on one's own” = egyedül, segítség nélkül. Az alany a „professional scientists” (többes szám), ezért a birtokos névmás „their”: on their own." },
-    { "id": "4", "kind": "text", "answer": ["Instead"], "category": "linking", "explanation": "„Instead of + -ing” = ahelyett, hogy … Az „of” és a „relying” -ing alak miatt csak az „Instead” illik ide (a „rather” után „than” állna: rather than relying)." },
-    { "id": "5", "kind": "text", "answer": ["had"], "category": "tense", "explanation": "Past perfect continuous (had been + -ing): egy múltbeli pillanatig (when she noticed) már régóta tartó folyamat (for nearly two years). A „been” adott, csak a „had” hiányzik; a „has” azért rossz, mert a viszonyítási pont a múltban van." },
-    { "id": "6", "kind": "text", "answer": ["have"], "category": "modal", "explanation": "Módbeli segédige + have + 3. alak = következtetés a múltra: „I must have made a mistake” = biztosan hibáztam. A „made” 3. alak, ezért a „must” után „have” kell." },
-    { "id": "7", "kind": "text", "answer": ["only"], "category": "word-order", "explanation": "Inverzió: „Not only did …, but … also …”. Ha a mondat a tagadó „Not only” kifejezéssel kezdődik, segédige + alany szórend következik (did the dip turn out)." },
-    { "id": "8", "kind": "text", "answer": ["but"], "category": "linking", "explanation": "A „Not only … but (also) …” (nemcsak …, hanem … is) páros kötőszó második fele a „but”; az „also” már szerepel a mondatban." },
-    { "id": "9", "kind": "text", "answer": ["is", "gets"], "category": "passive", "explanation": "Általános érvényű tényt kifejező jelen idejű szenvedő szerkezet: every image is checked (minden képet ellenőriz legalább tíz ember). Az „every image” egyes szám, ezért „is”; köznyelvi változatként a „gets checked” is elfogadható." },
-    { "id": "10", "kind": "text", "answer": ["least"], "category": "collocation", "explanation": "Állandó kifejezés: „at least” = legalább (at least ten different people = legalább tíz különböző ember)." },
-    { "id": "11", "kind": "text", "answer": ["little"], "category": "quantifier", "explanation": "A „make a difference” kifejezésben a „difference” megszámlálhatatlanként viselkedik, ezért „very little difference” = alig számít. A „few” csak megszámlálható többes számú főnévvel áll (very few people)." },
-    { "id": "12", "kind": "text", "answer": ["that"], "category": "linking", "explanation": "Következményt kifejező szerkezet: „so + melléknév + that …” = olyan …, hogy … (so skilled that they are later invited)." }
+    {
+      "id": "1",
+      "kind": "text",
+      "answer": [
+        "who",
+        "that"
+      ],
+      "category": "relative-clause",
+      "explanation": "Szűkítő (vessző nélküli) vonatkozó mellékmondat, amely személyekre (volunteers) utal: „who” vagy „that”. A „which” csak dologra vagy állatra utalhat."
+    },
+    {
+      "id": "2",
+      "kind": "text",
+      "answer": [
+        "more"
+      ],
+      "category": "comparison",
+      "explanation": "Középfokú összehasonlítás „than”-nal: far more images than … (sokkal több képet, mint …). A „far” a középfokot erősíti. A „fewer” logikailag nem illik: a teleszkópok épp túl sok képet készítenek."
+    },
+    {
+      "id": "3",
+      "kind": "text",
+      "answer": [
+        "their"
+      ],
+      "category": "pronoun",
+      "explanation": "Állandó kifejezés: „on one's own” = egyedül, segítség nélkül. Az alany a „professional scientists” (többes szám), ezért a birtokos névmás „their”: on their own."
+    },
+    {
+      "id": "4",
+      "kind": "text",
+      "answer": [
+        "Instead"
+      ],
+      "category": "linking",
+      "explanation": "„Instead of + -ing” = ahelyett, hogy … Az „of” és a „relying” -ing alak miatt csak az „Instead” illik ide (a „rather” után „than” állna: rather than relying)."
+    },
+    {
+      "id": "5",
+      "kind": "text",
+      "answer": [
+        "had"
+      ],
+      "category": "tense",
+      "explanation": "Past perfect continuous (had been + -ing): egy múltbeli pillanatig (when she noticed) már régóta tartó folyamat (for nearly two years). A „been” adott, csak a „had” hiányzik; a „has” azért rossz, mert a viszonyítási pont a múltban van."
+    },
+    {
+      "id": "6",
+      "kind": "text",
+      "answer": [
+        "have"
+      ],
+      "category": "modal",
+      "explanation": "Módbeli segédige + have + 3. alak = következtetés a múltra: „I must have made a mistake” = biztosan hibáztam. A „made” 3. alak, ezért a „must” után „have” kell."
+    },
+    {
+      "id": "7",
+      "kind": "text",
+      "answer": [
+        "only"
+      ],
+      "category": "word-order",
+      "explanation": "Inverzió: „Not only did …, but … also …”. Ha a mondat a tagadó „Not only” kifejezéssel kezdődik, segédige + alany szórend következik (did the dip turn out)."
+    },
+    {
+      "id": "8",
+      "kind": "text",
+      "answer": [
+        "but"
+      ],
+      "category": "linking",
+      "explanation": "A „Not only … but (also) …” (nemcsak …, hanem … is) páros kötőszó második fele a „but”; az „also” már szerepel a mondatban."
+    },
+    {
+      "id": "9",
+      "kind": "text",
+      "answer": [
+        "is",
+        "gets"
+      ],
+      "category": "passive",
+      "explanation": "Általános érvényű tényt kifejező jelen idejű szenvedő szerkezet: every image is checked (minden képet ellenőriz legalább tíz ember). Az „every image” egyes szám, ezért „is”; köznyelvi változatként a „gets checked” is elfogadható."
+    },
+    {
+      "id": "10",
+      "kind": "text",
+      "answer": [
+        "least"
+      ],
+      "category": "collocation",
+      "explanation": "Állandó kifejezés: „at least” = legalább (at least ten different people = legalább tíz különböző ember)."
+    },
+    {
+      "id": "11",
+      "kind": "text",
+      "answer": [
+        "little"
+      ],
+      "category": "quantifier",
+      "explanation": "A „make a difference” kifejezésben a „difference” megszámlálhatatlanként viselkedik, ezért „very little difference” = alig számít. A „few” csak megszámlálható többes számú főnévvel áll (very few people)."
+    },
+    {
+      "id": "12",
+      "kind": "text",
+      "answer": [
+        "that"
+      ],
+      "category": "linking",
+      "explanation": "Következményt kifejező szerkezet: „so + melléknév + that …” = olyan …, hogy … (so skilled that they are later invited)."
+    }
   ],
   "glossary": [],
   "suggestedMinutes": 12

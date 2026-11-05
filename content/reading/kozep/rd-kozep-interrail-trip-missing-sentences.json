@@ -8,6 +8,7 @@
   "title": "Seven cities in fourteen days",
   "createdAt": "2026-11-05",
   "tags": [],
+  "reservedFor": "mock",
   "section": "reading",
   "type": "missing-sentences",
   "instructions": "Read the blog post about an Interrail trip. Some sentences have been removed from the text. Choose the sentence (A–I) which fits each gap (1–6). There are two extra sentences that you do not need to use. There is an example (0) at the beginning.",
@@ -40,15 +41,42 @@
     ]
   },
   "options": [
-    { "key": "A", "text": "Instead of eating out, we usually made our own meals." },
-    { "key": "B", "text": "My parents were worried because we had never travelled alone before." },
-    { "key": "C", "text": "Ours allowed us to travel on any seven days within one month." },
-    { "key": "D", "text": "We got on so well that we travelled on to Zagreb together." },
-    { "key": "E", "text": "At first, we wanted to visit twelve cities, but we soon realised this was impossible." },
-    { "key": "F", "text": "Réka's suitcase was so heavy that she could hardly carry it." },
-    { "key": "G", "text": "The platform number had changed, but the announcement was only in German." },
-    { "key": "H", "text": "Two days in a city is not enough to see more than the main sights." },
-    { "key": "I", "text": "However, the best part was not the speed but the views." }
+    {
+      "key": "A",
+      "text": "Instead of eating out, we usually made our own meals."
+    },
+    {
+      "key": "B",
+      "text": "My parents were worried because we had never travelled alone before."
+    },
+    {
+      "key": "C",
+      "text": "Ours allowed us to travel on any seven days within one month."
+    },
+    {
+      "key": "D",
+      "text": "We got on so well that we travelled on to Zagreb together."
+    },
+    {
+      "key": "E",
+      "text": "At first, we wanted to visit twelve cities, but we soon realised this was impossible."
+    },
+    {
+      "key": "F",
+      "text": "Réka's suitcase was so heavy that she could hardly carry it."
+    },
+    {
+      "key": "G",
+      "text": "The platform number had changed, but the announcement was only in German."
+    },
+    {
+      "key": "H",
+      "text": "Two days in a city is not enough to see more than the main sights."
+    },
+    {
+      "key": "I",
+      "text": "However, the best part was not the speed but the views."
+    }
   ],
   "example": {
     "id": "0",
@@ -127,17 +155,50 @@
     }
   ],
   "glossary": [
-    { "term": "fixed price", "meaning": "rögzített, fix ár" },
-    { "term": "youth price", "meaning": "ifjúsági ár, kedvezményes ár fiataloknak" },
-    { "term": "route", "meaning": "útvonal" },
-    { "term": "partly", "meaning": "részben" },
-    { "term": "on time", "meaning": "pontosan, időben (nem késik)" },
-    { "term": "platform", "meaning": "vágány, peron" },
-    { "term": "information board", "meaning": "tájékoztató tábla, kijelző" },
-    { "term": "challenge", "meaning": "kihívás" },
-    { "term": "youth hostel", "meaning": "ifjúsági szálló" },
-    { "term": "still in touch", "meaning": "még mindig tartják a kapcsolatot" },
-    { "term": "get to know", "meaning": "megismer" }
+    {
+      "term": "fixed price",
+      "meaning": "rögzített, fix ár"
+    },
+    {
+      "term": "youth price",
+      "meaning": "ifjúsági ár, kedvezményes ár fiataloknak"
+    },
+    {
+      "term": "route",
+      "meaning": "útvonal"
+    },
+    {
+      "term": "partly",
+      "meaning": "részben"
+    },
+    {
+      "term": "on time",
+      "meaning": "pontosan, időben (nem késik)"
+    },
+    {
+      "term": "platform",
+      "meaning": "vágány, peron"
+    },
+    {
+      "term": "information board",
+      "meaning": "tájékoztató tábla, kijelző"
+    },
+    {
+      "term": "challenge",
+      "meaning": "kihívás"
+    },
+    {
+      "term": "youth hostel",
+      "meaning": "ifjúsági szálló"
+    },
+    {
+      "term": "still in touch",
+      "meaning": "még mindig tartják a kapcsolatot"
+    },
+    {
+      "term": "get to know",
+      "meaning": "megismer"
+    }
   ],
   "suggestedMinutes": 12
 }

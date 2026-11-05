@@ -8,6 +8,7 @@
   "title": "The story of a lantern festival",
   "createdAt": "2026-11-05",
   "tags": [],
+  "reservedFor": "mock",
   "section": "listening",
   "type": "table-completion",
   "instructions": "You are going to listen to a museum guide talking about the history of a local lantern festival. Complete the notes (1–10) with the missing information. Write no more than THREE words or a number in each gap. You will hear the recording twice. There is an example (0) at the beginning.",
@@ -15,23 +16,55 @@
   "listening": {
     "format": "monologue",
     "speakers": [
-      { "id": "G", "name": "Aoife (museum guide)", "gender": "female", "accent": "en-IE", "age": "adult" }
+      {
+        "id": "G",
+        "name": "Aoife (museum guide)",
+        "gender": "female",
+        "accent": "en-IE",
+        "age": "adult"
+      }
     ],
     "script": [
-      { "speaker": "G", "text": "Right, if everyone could gather round this glass case here. Lovely. Welcome to the Dunmore Bay Heritage Museum. My name's Aoife, and for the next fifteen minutes or so I'm going to tell you the story of something this town is very proud of: the Lantern Festival. Some of you may even have come for it this weekend." },
-      { "speaker": "G", "text": "So, the very first festival took place in 1953 – no, sorry, I always get that wrong – it was 1952. And it didn't start as a festival at all. In the winter of 1951, the town's lifeboat was badly damaged in a storm, and there was no money to repair it. So a group of fishermen's wives decided to organise a procession along the harbour to collect donations. It was November, it was dark by five o'clock, so people carried lanterns, and that's how the whole thing began." },
-      { "speaker": "G", "text": "Now, the lanterns in this case are replicas, but they're made exactly the way the originals were. Nobody had money for anything fancy, so people used empty jam jars with a candle inside and a piece of wire as a handle. Children painted the glass with whatever colours they could find. About three hundred people took part on that first night, which, for a town of two thousand, was quite something. And they raised enough to repair the boat by the following spring." },
-      { "speaker": "G", "text": "It became a tradition quite quickly. By the 1960s there was music, a craft market, and fishing boats on the water carrying lanterns as well. But in 1979 the festival was cancelled. People often assume it was because of the weather, but actually it was a fire. A lantern fell onto a market stall, and the fire spread to two houses on Quay Street. Luckily nobody was hurt, but the council decided it was simply too dangerous. And for fifteen years – yes, fifteen – there was no festival at all." },
-      { "speaker": "G", "text": "The person who brought it back was a primary school teacher called Bridget Kelly. She wasn't from Dunmore Bay originally – she'd moved here from Cork – and she couldn't believe the town had simply given up on its best tradition. She started a lantern-making club for her pupils, and in 1994 about sixty children walked along the harbour with their lanterns. Their parents followed them, and the year after that, the whole town was back." },
-      { "speaker": "G", "text": "Of course, after what happened in 1979, safety was the big question. So since the revival, no real flames have been allowed in the procession. In the nineties people put battery torches inside their lanterns, and since 2010 every lantern has had to have an LED light. Then about ten years ago another rule came in: every lantern entered in the competition has to be made from recycled materials. Last year's winner was a whale – about four metres long, I think – made almost entirely from plastic bottles that a school class had collected on the beach." },
-      { "speaker": "G", "text": "These days the festival attracts around forty thousand visitors over the weekend, which is more than ten times the population of the town, so if you're thinking of coming back next year, do book your accommodation early. It's always held on the last Saturday in November, in memory of that first procession. And if you'd like to make your own lantern, there's a workshop here in the museum tomorrow morning. It costs eight euros for adults, and children under twelve go free. All the materials are provided – you just need to bring a bit of imagination. Right, any questions?" }
+      {
+        "speaker": "G",
+        "text": "Right, if everyone could gather round this glass case here. Lovely. Welcome to the Dunmore Bay Heritage Museum. My name's Aoife, and for the next fifteen minutes or so I'm going to tell you the story of something this town is very proud of: the Lantern Festival. Some of you may even have come for it this weekend."
+      },
+      {
+        "speaker": "G",
+        "text": "So, the very first festival took place in 1953 – no, sorry, I always get that wrong – it was 1952. And it didn't start as a festival at all. In the winter of 1951, the town's lifeboat was badly damaged in a storm, and there was no money to repair it. So a group of fishermen's wives decided to organise a procession along the harbour to collect donations. It was November, it was dark by five o'clock, so people carried lanterns, and that's how the whole thing began."
+      },
+      {
+        "speaker": "G",
+        "text": "Now, the lanterns in this case are replicas, but they're made exactly the way the originals were. Nobody had money for anything fancy, so people used empty jam jars with a candle inside and a piece of wire as a handle. Children painted the glass with whatever colours they could find. About three hundred people took part on that first night, which, for a town of two thousand, was quite something. And they raised enough to repair the boat by the following spring."
+      },
+      {
+        "speaker": "G",
+        "text": "It became a tradition quite quickly. By the 1960s there was music, a craft market, and fishing boats on the water carrying lanterns as well. But in 1979 the festival was cancelled. People often assume it was because of the weather, but actually it was a fire. A lantern fell onto a market stall, and the fire spread to two houses on Quay Street. Luckily nobody was hurt, but the council decided it was simply too dangerous. And for fifteen years – yes, fifteen – there was no festival at all."
+      },
+      {
+        "speaker": "G",
+        "text": "The person who brought it back was a primary school teacher called Bridget Kelly. She wasn't from Dunmore Bay originally – she'd moved here from Cork – and she couldn't believe the town had simply given up on its best tradition. She started a lantern-making club for her pupils, and in 1994 about sixty children walked along the harbour with their lanterns. Their parents followed them, and the year after that, the whole town was back."
+      },
+      {
+        "speaker": "G",
+        "text": "Of course, after what happened in 1979, safety was the big question. So since the revival, no real flames have been allowed in the procession. In the nineties people put battery torches inside their lanterns, and since 2010 every lantern has had to have an LED light. Then about ten years ago another rule came in: every lantern entered in the competition has to be made from recycled materials. Last year's winner was a whale – about four metres long, I think – made almost entirely from plastic bottles that a school class had collected on the beach."
+      },
+      {
+        "speaker": "G",
+        "text": "These days the festival attracts around forty thousand visitors over the weekend, which is more than ten times the population of the town, so if you're thinking of coming back next year, do book your accommodation early. It's always held on the last Saturday in November, in memory of that first procession. And if you'd like to make your own lantern, there's a workshop here in the museum tomorrow morning. It costs eight euros for adults, and children under twelve go free. All the materials are provided – you just need to bring a bit of imagination. Right, any questions?"
+      }
     ]
   },
   "example": {
     "id": "0",
     "kind": "text",
     "prompt": "Year of the first festival: ______",
-    "answer": ["1952", "nineteen fifty-two", "nineteen fifty two", "in 1952"],
+    "answer": [
+      "1952",
+      "nineteen fifty-two",
+      "nineteen fifty two",
+      "in 1952"
+    ],
     "maxWords": 3,
     "category": "detail",
     "explanation": "A helyes válasz: 1952. Az idegenvezető először 1953-at mond, de rögtön kijavítja magát: „no, sorry … it was 1952”.",
@@ -42,7 +75,12 @@
       "id": "1",
       "kind": "text",
       "prompt": "Purpose of the first procession: to raise money to repair the town's ______",
-      "answer": ["lifeboat", "lifeboats", "life boat", "boat"],
+      "answer": [
+        "lifeboat",
+        "lifeboats",
+        "life boat",
+        "boat"
+      ],
       "maxWords": 3,
       "category": "detail",
       "explanation": "A helyes válasz: lifeboat (mentőcsónak). 1951 telén egy vihar megrongálta a város mentőcsónakját, és nem volt pénz a javításra – ezért gyűjtöttek adományokat a felvonulással.",
@@ -52,7 +90,16 @@
       "id": "2",
       "kind": "text",
       "prompt": "The original lanterns were made from: ______",
-      "answer": ["jam jars", "empty jam jars", "jars", "glass jars", "jam jar", "jamjars", "empty jars", "old jam jars"],
+      "answer": [
+        "jam jars",
+        "empty jam jars",
+        "jars",
+        "glass jars",
+        "jam jar",
+        "jamjars",
+        "empty jars",
+        "old jam jars"
+      ],
       "maxWords": 3,
       "category": "detail",
       "explanation": "A helyes válasz: (empty) jam jars – üres befőttesüvegek, bennük gyertyával, drótból fogantyúval. Senkinek nem volt pénze drágább anyagokra.",
@@ -62,7 +109,12 @@
       "id": "3",
       "kind": "text",
       "prompt": "Number of people in the first procession: about ______",
-      "answer": ["300", "three hundred", "300 people", "three hundred people"],
+      "answer": [
+        "300",
+        "three hundred",
+        "300 people",
+        "three hundred people"
+      ],
       "maxWords": 3,
       "category": "detail",
       "explanation": "A helyes válasz: 300 (three hundred). Csapda: a 2000 a város akkori lakosságának száma, nem a résztvevőké.",
@@ -72,7 +124,11 @@
       "id": "4",
       "kind": "text",
       "prompt": "Reason why the festival was cancelled in 1979: ______",
-      "answer": ["a fire", "fire", "market stall fire"],
+      "answer": [
+        "a fire",
+        "fire",
+        "market stall fire"
+      ],
       "maxWords": 3,
       "category": "detail",
       "explanation": "A helyes válasz: a fire (tűz). Csapda: sokan azt hiszik, az időjárás miatt maradt el, de valójában egy lampion egy piaci standra esett, és a tűz két házra is átterjedt.",
@@ -82,7 +138,10 @@
       "id": "5",
       "kind": "text",
       "prompt": "Length of the break before the festival returned: ______ years",
-      "answer": ["15", "fifteen"],
+      "answer": [
+        "15",
+        "fifteen"
+      ],
       "maxWords": 3,
       "category": "detail",
       "explanation": "A helyes válasz: 15 (fifteen). Az idegenvezető hangsúlyozza is: tizenöt évig egyáltalán nem volt fesztivál (1979 és 1994 között).",
@@ -92,7 +151,13 @@
       "id": "6",
       "kind": "text",
       "prompt": "Surname of the teacher who brought the festival back: ______",
-      "answer": ["Kelly", "Bridget Kelly", "Mrs Kelly", "Mrs. Kelly", "Kelley"],
+      "answer": [
+        "Kelly",
+        "Bridget Kelly",
+        "Mrs Kelly",
+        "Mrs. Kelly",
+        "Kelley"
+      ],
       "maxWords": 3,
       "category": "detail",
       "explanation": "A helyes válasz: Kelly. A fesztivált Bridget Kelly, egy általános iskolai tanítónő élesztette újra, aki Corkból költözött a városba (a Cork tehát nem a neve, hanem ahonnan jött).",
@@ -102,7 +167,12 @@
       "id": "7",
       "kind": "text",
       "prompt": "Year of the first procession after the revival: ______ (about 60 children)",
-      "answer": ["1994", "nineteen ninety-four", "nineteen ninety four", "in 1994"],
+      "answer": [
+        "1994",
+        "nineteen ninety-four",
+        "nineteen ninety four",
+        "in 1994"
+      ],
       "maxWords": 3,
       "category": "detail",
       "explanation": "A helyes válasz: 1994. Ekkor vonult végig kb. hatvan gyerek a kikötőben a lampionjával; a következő évben már az egész város visszatért.",
@@ -112,7 +182,17 @@
       "id": "8",
       "kind": "text",
       "prompt": "Required in every lantern since 2010: ______",
-      "answer": ["an LED light", "LED light", "LED lights", "a LED light", "an LED", "LED", "LEDs", "LED lamp", "an LED lamp"],
+      "answer": [
+        "an LED light",
+        "LED light",
+        "LED lights",
+        "a LED light",
+        "an LED",
+        "LED",
+        "LEDs",
+        "LED lamp",
+        "an LED lamp"
+      ],
       "maxWords": 3,
       "category": "detail",
       "explanation": "A helyes válasz: an LED light (LED-fény). Csapda: a kilencvenes években elemes zseblámpákat tettek a lampionokba, de 2010 óta kötelező a LED.",
@@ -122,7 +202,14 @@
       "id": "9",
       "kind": "text",
       "prompt": "Last year's winning lantern, a whale, was made mainly from: ______",
-      "answer": ["plastic bottles", "bottles", "recycled plastic bottles", "old plastic bottles", "plastic bottle", "used plastic bottles"],
+      "answer": [
+        "plastic bottles",
+        "bottles",
+        "recycled plastic bottles",
+        "old plastic bottles",
+        "plastic bottle",
+        "used plastic bottles"
+      ],
       "maxWords": 3,
       "category": "detail",
       "explanation": "A helyes válasz: plastic bottles (műanyag palackok), amelyeket egy iskolai osztály gyűjtött a strandon. Az „újrahasznosított anyagok” az általános szabály, a kérdés a konkrét anyagra vonatkozik.",
@@ -132,7 +219,17 @@
       "id": "10",
       "kind": "text",
       "prompt": "Number of visitors over the festival weekend today: around ______",
-      "answer": ["40,000", "40000", "40 000", "40.000", "forty thousand", "forty-thousand", "40 thousand", "40,000 visitors", "forty thousand visitors"],
+      "answer": [
+        "40,000",
+        "40000",
+        "40 000",
+        "40.000",
+        "forty thousand",
+        "forty-thousand",
+        "40 thousand",
+        "40,000 visitors",
+        "forty thousand visitors"
+      ],
       "maxWords": 3,
       "category": "detail",
       "explanation": "A helyes válasz: 40,000 (forty thousand). Ez több mint tízszerese a város lakosságának – a „ten times” csak összehasonlítás, nem a válasz.",

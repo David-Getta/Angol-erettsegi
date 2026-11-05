@@ -8,6 +8,7 @@
   "title": "Why not try bouldering?",
   "createdAt": "2026-11-05",
   "tags": [],
+  "reservedFor": "mock",
   "section": "reading",
   "type": "headings",
   "instructions": "Read the article about bouldering. Choose the most suitable heading (A–I) for each paragraph (1–6). There are two extra headings that you do not need to use. There is an example (0) at the beginning.",
@@ -47,15 +48,42 @@
     ]
   },
   "options": [
-    { "key": "A", "text": "Learning to fall correctly" },
-    { "key": "B", "text": "A great way to meet people" },
-    { "key": "C", "text": "Only for very strong people" },
-    { "key": "D", "text": "Short climbs, soft landings" },
-    { "key": "E", "text": "You don't need to spend a lot" },
-    { "key": "F", "text": "A sport that is growing fast" },
-    { "key": "G", "text": "Climbing in the mountains" },
-    { "key": "H", "text": "Use your head, not only your muscles" },
-    { "key": "I", "text": "Easy to see your progress" }
+    {
+      "key": "A",
+      "text": "Learning to fall correctly"
+    },
+    {
+      "key": "B",
+      "text": "A great way to meet people"
+    },
+    {
+      "key": "C",
+      "text": "Only for very strong people"
+    },
+    {
+      "key": "D",
+      "text": "Short climbs, soft landings"
+    },
+    {
+      "key": "E",
+      "text": "You don't need to spend a lot"
+    },
+    {
+      "key": "F",
+      "text": "A sport that is growing fast"
+    },
+    {
+      "key": "G",
+      "text": "Climbing in the mountains"
+    },
+    {
+      "key": "H",
+      "text": "Use your head, not only your muscles"
+    },
+    {
+      "key": "I",
+      "text": "Easy to see your progress"
+    }
   ],
   "example": {
     "id": "0",
@@ -134,18 +162,54 @@
     }
   ],
   "glossary": [
-    { "term": "hold", "meaning": "fogás, kapaszkodó (a mászófalon)" },
-    { "term": "mat", "meaning": "(tornatermi) szivacs, matrac" },
-    { "term": "harness", "meaning": "beülő (mászóheveder)" },
-    { "term": "rent out", "meaning": "bérbe ad, kölcsönöz" },
-    { "term": "fee", "meaning": "díj" },
-    { "term": "sociable", "meaning": "társas, közösségi (emberekkel együtt végzett)" },
-    { "term": "attempt", "meaning": "próbálkozás, kísérlet" },
-    { "term": "solution", "meaning": "megoldás" },
-    { "term": "bend your knees", "meaning": "hajlítsd be a térdedet" },
-    { "term": "progress", "meaning": "fejlődés, haladás" },
-    { "term": "regular", "meaning": "rendszeres" },
-    { "term": "give it a try", "meaning": "kipróbál valamit" }
+    {
+      "term": "hold",
+      "meaning": "fogás, kapaszkodó (a mászófalon)"
+    },
+    {
+      "term": "mat",
+      "meaning": "(tornatermi) szivacs, matrac"
+    },
+    {
+      "term": "harness",
+      "meaning": "beülő (mászóheveder)"
+    },
+    {
+      "term": "rent out",
+      "meaning": "bérbe ad, kölcsönöz"
+    },
+    {
+      "term": "fee",
+      "meaning": "díj"
+    },
+    {
+      "term": "sociable",
+      "meaning": "társas, közösségi (emberekkel együtt végzett)"
+    },
+    {
+      "term": "attempt",
+      "meaning": "próbálkozás, kísérlet"
+    },
+    {
+      "term": "solution",
+      "meaning": "megoldás"
+    },
+    {
+      "term": "bend your knees",
+      "meaning": "hajlítsd be a térdedet"
+    },
+    {
+      "term": "progress",
+      "meaning": "fejlődés, haladás"
+    },
+    {
+      "term": "regular",
+      "meaning": "rendszeres"
+    },
+    {
+      "term": "give it a try",
+      "meaning": "kipróbál valamit"
+    }
   ],
   "suggestedMinutes": 12
 }

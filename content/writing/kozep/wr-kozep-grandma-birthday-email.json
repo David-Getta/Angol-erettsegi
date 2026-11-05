@@ -8,6 +8,7 @@
   "title": "My grandmother's 70th birthday",
   "createdAt": "2026-11-05",
   "tags": [],
+  "reservedFor": "diagnostic",
   "section": "writing",
   "type": "informal-email",
   "taskNumber": 1,
@@ -15,21 +16,57 @@
   "situation": "Last weekend your family had a big party for your grandmother's 70th birthday. Your English friend, Sam, has asked you in an e-mail what you did at the weekend. Write an e-mail to Sam about the party.",
   "situationHu": "A családod a hétvégén a nagymamád 70. születésnapját ünnepelte; írj erről e-mailt angol barátodnak, Samnek.",
   "points": [
-    { "id": "p1", "text": "say where the party was and who came" },
-    { "id": "p2", "text": "describe what you did or ate at the party" },
-    { "id": "p3", "text": "say what present you gave your grandmother and how she liked it" }
+    {
+      "id": "p1",
+      "text": "say where the party was and who came"
+    },
+    {
+      "id": "p2",
+      "text": "describe what you did or ate at the party"
+    },
+    {
+      "id": "p3",
+      "text": "say what present you gave your grandmother and how she liked it"
+    }
   ],
-  "wordLimit": { "min": 50, "max": 80 },
+  "wordLimit": {
+    "min": 50,
+    "max": 80
+  },
   "suggestedMinutes": 20,
   "usefulPhrases": [
-    { "en": "Hi Sam,", "hu": "Szia, Sam!" },
-    { "en": "Thanks for your e-mail.", "hu": "Köszi az e-mailedet." },
-    { "en": "We had a party for my gran's 70th birthday.", "hu": "Bulit tartottunk a nagyim 70. születésnapjára." },
-    { "en": "The whole family was there, even my cousins from …", "hu": "Az egész család ott volt, még az unokatestvéreim is …-ból/-ből." },
-    { "en": "We gave her … as a present.", "hu": "…-t adtunk neki ajándékba." },
-    { "en": "She was really happy / surprised.", "hu": "Nagyon örült / meglepődött." },
-    { "en": "Write back soon!", "hu": "Írj hamar!" },
-    { "en": "Love, / Best wishes,", "hu": "Szeretettel: / Üdv:" }
+    {
+      "en": "Hi Sam,",
+      "hu": "Szia, Sam!"
+    },
+    {
+      "en": "Thanks for your e-mail.",
+      "hu": "Köszi az e-mailedet."
+    },
+    {
+      "en": "We had a party for my gran's 70th birthday.",
+      "hu": "Bulit tartottunk a nagyim 70. születésnapjára."
+    },
+    {
+      "en": "The whole family was there, even my cousins from …",
+      "hu": "Az egész család ott volt, még az unokatestvéreim is …-ból/-ből."
+    },
+    {
+      "en": "We gave her … as a present.",
+      "hu": "…-t adtunk neki ajándékba."
+    },
+    {
+      "en": "She was really happy / surprised.",
+      "hu": "Nagyon örült / meglepődött."
+    },
+    {
+      "en": "Write back soon!",
+      "hu": "Írj hamar!"
+    },
+    {
+      "en": "Love, / Best wishes,",
+      "hu": "Szeretettel: / Üdv:"
+    }
   ],
   "checklistExtra": [
     "Múlt időben (past simple) meséltem el, mi történt a bulin?"

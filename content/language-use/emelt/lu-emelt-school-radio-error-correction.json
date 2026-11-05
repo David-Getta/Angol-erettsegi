@@ -8,6 +8,7 @@
   "title": "On air every Friday",
   "createdAt": "2026-11-05",
   "tags": [],
+  "reservedFor": "mock",
   "section": "language-use",
   "type": "error-correction",
   "instructions": "Read the text below, written by a student for the school magazine. Some lines contain an extra word that should not be there. Write the extra word in the box. If a line is correct, put a tick (✓). There is an example (0) at the beginning.",
@@ -16,23 +17,133 @@
     "id": "0",
     "kind": "text",
     "prompt": "When our school decided to set up its own radio station last the year,",
-    "answer": ["the"],
+    "answer": [
+      "the"
+    ],
     "category": "article",
     "explanation": "A felesleges szó: „the”. A „last year”, „next week”, „this month” típusú időhatározók előtt nem áll névelő: last year."
   },
   "items": [
-    { "id": "1", "kind": "text", "prompt": "very few of students were interested at first. The equipment was old and noisy,", "answer": ["of"], "category": "quantifier", "explanation": "A felesleges szó: „of”. Mennyiségjelző + főnév közvetlenül kapcsolódik: very few students. „Few of” csak névelő, névmás vagy birtokos előtt áll (few of the students, few of them)." },
-    { "id": "2", "kind": "text", "prompt": "the studio was a former storage room without windows, and nobody really knew how to", "answer": ["✓"], "category": "article", "explanation": "A sor helyes. Megszámlálható egyes számú főnév előtt, amikor azt mondjuk, mi volt valami, határozatlan névelő kell: was a former storage room. A „knew how to (use)” szerkezet is helyes." },
-    { "id": "3", "kind": "text", "prompt": "use it the mixing desk properly. Things only changed when Ms Hargreaves, our", "answer": ["it"], "category": "pronoun", "explanation": "A felesleges szó: „it”. A „use” tárgya a „the mixing desk”, ezért mellette nem állhat még egy tárgyas névmás: how to use the mixing desk." },
-    { "id": "4", "kind": "text", "prompt": "physics teacher, offered to run a free training course for us after school. Although", "answer": ["✓"], "category": "gerund-infinitive", "explanation": "A sor helyes. Az „offer” után „to + ige” áll (offered to run), és az „after school” (tanítás után) állandó kifejezés névelő nélkül." },
-    { "id": "5", "kind": "text", "prompt": "she had never been worked in radio herself, she had produced several popular", "answer": ["been"], "category": "passive", "explanation": "A felesleges szó: „been”. A „work” tárgyatlan ige, nincs szenvedő alakja; a past perfect cselekvő alakja: had never worked." },
-    { "id": "6", "kind": "text", "prompt": "podcasts, so she knew exactly what did we needed to learn first. Within a few", "answer": ["did"], "category": "word-order", "explanation": "A felesleges szó: „did”. Függő (beágyazott) kérdésben kijelentő szórend áll, segédige nélkül: she knew exactly what we needed to learn." },
-    { "id": "7", "kind": "text", "prompt": "months, more than thirty students from all year groups had joined the team, and now we", "answer": ["✓"], "category": "tense", "explanation": "A sor helyes. A „within a few months” (néhány hónapon belül) azt jelzi, hogy a múltbeli történet egy pontjára ez már lezárult, ezért a past perfect (had joined) helyes; a „join” után nem kell elöljárószó (join the team)." },
-    { "id": "8", "kind": "text", "prompt": "broadcast a lively two-hour programme every Friday lunchtime, which it includes", "answer": ["it"], "category": "relative-clause", "explanation": "A felesleges szó: „it”. A vonatkozó mellékmondatban a „which” maga az alany, ezért mellette nem állhat még egy alany: which includes music …" },
-    { "id": "9", "kind": "text", "prompt": "music chosen by students, interviews with teachers and short news reports on", "answer": ["✓"], "category": "preposition", "explanation": "A sor helyes. A „chosen by students” rövidített szenvedő szerkezet (= which is chosen by students), az „interviews with” és a „reports on” helyes vonzatok." },
-    { "id": "10", "kind": "text", "prompt": "school events. Last month we have even interviewed the town's new mayor, who was", "answer": ["have"], "category": "tense", "explanation": "A felesleges szó: „have”. Lezárt múltbeli időpont (last month) mellett nem állhat present perfect, csak past simple: Last month we even interviewed the mayor." },
-    { "id": "11", "kind": "text", "prompt": "far more calmer in front of the microphone than any of us had expected.", "answer": ["more"], "category": "comparison", "explanation": "A felesleges szó: „more”. A „calmer” már középfokú alak (-er), ezért nem kell elé „more”: far calmer than any of us had expected. A „far” a középfokot erősíti, az helyes." },
-    { "id": "12", "kind": "text", "prompt": "I used to be terrified of to speaking in public, but now I really love it.", "answer": ["to"], "category": "gerund-infinitive", "explanation": "A felesleges szó: „to”. Az „of” elöljárószó után az ige közvetlenül -ing alakban áll: terrified of speaking in public." }
+    {
+      "id": "1",
+      "kind": "text",
+      "prompt": "very few of students were interested at first. The equipment was old and noisy,",
+      "answer": [
+        "of"
+      ],
+      "category": "quantifier",
+      "explanation": "A felesleges szó: „of”. Mennyiségjelző + főnév közvetlenül kapcsolódik: very few students. „Few of” csak névelő, névmás vagy birtokos előtt áll (few of the students, few of them)."
+    },
+    {
+      "id": "2",
+      "kind": "text",
+      "prompt": "the studio was a former storage room without windows, and nobody really knew how to",
+      "answer": [
+        "✓"
+      ],
+      "category": "article",
+      "explanation": "A sor helyes. Megszámlálható egyes számú főnév előtt, amikor azt mondjuk, mi volt valami, határozatlan névelő kell: was a former storage room. A „knew how to (use)” szerkezet is helyes."
+    },
+    {
+      "id": "3",
+      "kind": "text",
+      "prompt": "use it the mixing desk properly. Things only changed when Ms Hargreaves, our",
+      "answer": [
+        "it"
+      ],
+      "category": "pronoun",
+      "explanation": "A felesleges szó: „it”. A „use” tárgya a „the mixing desk”, ezért mellette nem állhat még egy tárgyas névmás: how to use the mixing desk."
+    },
+    {
+      "id": "4",
+      "kind": "text",
+      "prompt": "physics teacher, offered to run a free training course for us after school. Although",
+      "answer": [
+        "✓"
+      ],
+      "category": "gerund-infinitive",
+      "explanation": "A sor helyes. Az „offer” után „to + ige” áll (offered to run), és az „after school” (tanítás után) állandó kifejezés névelő nélkül."
+    },
+    {
+      "id": "5",
+      "kind": "text",
+      "prompt": "she had never been worked in radio herself, she had produced several popular",
+      "answer": [
+        "been"
+      ],
+      "category": "passive",
+      "explanation": "A felesleges szó: „been”. A „work” tárgyatlan ige, nincs szenvedő alakja; a past perfect cselekvő alakja: had never worked."
+    },
+    {
+      "id": "6",
+      "kind": "text",
+      "prompt": "podcasts, so she knew exactly what did we needed to learn first. Within a few",
+      "answer": [
+        "did"
+      ],
+      "category": "word-order",
+      "explanation": "A felesleges szó: „did”. Függő (beágyazott) kérdésben kijelentő szórend áll, segédige nélkül: she knew exactly what we needed to learn."
+    },
+    {
+      "id": "7",
+      "kind": "text",
+      "prompt": "months, more than thirty students from all year groups had joined the team, and now we",
+      "answer": [
+        "✓"
+      ],
+      "category": "tense",
+      "explanation": "A sor helyes. A „within a few months” (néhány hónapon belül) azt jelzi, hogy a múltbeli történet egy pontjára ez már lezárult, ezért a past perfect (had joined) helyes; a „join” után nem kell elöljárószó (join the team)."
+    },
+    {
+      "id": "8",
+      "kind": "text",
+      "prompt": "broadcast a lively two-hour programme every Friday lunchtime, which it includes",
+      "answer": [
+        "it"
+      ],
+      "category": "relative-clause",
+      "explanation": "A felesleges szó: „it”. A vonatkozó mellékmondatban a „which” maga az alany, ezért mellette nem állhat még egy alany: which includes music …"
+    },
+    {
+      "id": "9",
+      "kind": "text",
+      "prompt": "music chosen by students, interviews with teachers and short news reports on",
+      "answer": [
+        "✓"
+      ],
+      "category": "preposition",
+      "explanation": "A sor helyes. A „chosen by students” rövidített szenvedő szerkezet (= which is chosen by students), az „interviews with” és a „reports on” helyes vonzatok."
+    },
+    {
+      "id": "10",
+      "kind": "text",
+      "prompt": "school events. Last month we have even interviewed the town's new mayor, who was",
+      "answer": [
+        "have"
+      ],
+      "category": "tense",
+      "explanation": "A felesleges szó: „have”. Lezárt múltbeli időpont (last month) mellett nem állhat present perfect, csak past simple: Last month we even interviewed the mayor."
+    },
+    {
+      "id": "11",
+      "kind": "text",
+      "prompt": "far more calmer in front of the microphone than any of us had expected.",
+      "answer": [
+        "more"
+      ],
+      "category": "comparison",
+      "explanation": "A felesleges szó: „more”. A „calmer” már középfokú alak (-er), ezért nem kell elé „more”: far calmer than any of us had expected. A „far” a középfokot erősíti, az helyes."
+    },
+    {
+      "id": "12",
+      "kind": "text",
+      "prompt": "I used to be terrified of to speaking in public, but now I really love it.",
+      "answer": [
+        "to"
+      ],
+      "category": "gerund-infinitive",
+      "explanation": "A felesleges szó: „to”. Az „of” elöljárószó után az ige közvetlenül -ing alakban áll: terrified of speaking in public."
+    }
   ],
   "glossary": [],
   "suggestedMinutes": 12

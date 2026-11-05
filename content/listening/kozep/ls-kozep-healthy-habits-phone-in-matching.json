@@ -8,6 +8,7 @@
   "title": "One healthy habit",
   "createdAt": "2026-11-05",
   "tags": [],
+  "reservedFor": "mock",
   "section": "listening",
   "type": "speaker-matching",
   "instructions": "You are going to listen to a radio phone-in programme. Four listeners (A–D) call in to talk about a healthy habit that has changed their lives. Match the statements (1–8) with the speakers. You can choose a speaker more than once. You will hear the recording twice. There is an example (0) at the beginning.",
@@ -15,37 +16,130 @@
   "listening": {
     "format": "radio",
     "speakers": [
-      { "id": "P", "name": "Jack (presenter)", "gender": "male", "accent": "en-GB", "age": "adult" },
-      { "id": "A", "name": "Megan", "gender": "female", "accent": "en-AU", "age": "young" },
-      { "id": "B", "name": "Tom", "gender": "male", "accent": "en-US", "age": "adult" },
-      { "id": "C", "name": "Siobhan", "gender": "female", "accent": "en-IE", "age": "adult" },
-      { "id": "D", "name": "Raj", "gender": "male", "accent": "en-GB", "age": "older" }
+      {
+        "id": "P",
+        "name": "Jack (presenter)",
+        "gender": "male",
+        "accent": "en-GB",
+        "age": "adult"
+      },
+      {
+        "id": "A",
+        "name": "Megan",
+        "gender": "female",
+        "accent": "en-AU",
+        "age": "young"
+      },
+      {
+        "id": "B",
+        "name": "Tom",
+        "gender": "male",
+        "accent": "en-US",
+        "age": "adult"
+      },
+      {
+        "id": "C",
+        "name": "Siobhan",
+        "gender": "female",
+        "accent": "en-IE",
+        "age": "adult"
+      },
+      {
+        "id": "D",
+        "name": "Raj",
+        "gender": "male",
+        "accent": "en-GB",
+        "age": "older"
+      }
     ],
     "script": [
-      { "speaker": "P", "text": "Good evening and welcome to Healthy Living Live. Tonight we're asking you: what's one healthy habit that has really changed your life? The phone lines are already busy, so let's go straight to our first caller. Megan, you're on the air." },
-      { "speaker": "A", "text": "Hi, Jack! Well, mine is about sleep. I used to look at my phone in bed until one or two in the morning, and I was always tired at school. Sorry, I mean at university. So last year I bought an old-fashioned alarm clock, and now my phone stays in the kitchen at night." },
-      { "speaker": "P", "text": "And has it helped?" },
-      { "speaker": "A", "text": "Oh, completely. I fall asleep much faster, and I actually wake up before the alarm now. My friends think I'm crazy, but I feel great. The first week was really hard, though, I won't lie." },
-      { "speaker": "P", "text": "Thanks, Megan. Next on the line is Tom. Hello, Tom." },
-      { "speaker": "B", "text": "Hey there. So, for me it's breakfast. For years I never ate anything in the morning, just two big cups of coffee. Then I went to the doctor because I kept getting headaches, and she told me to change that. Now I have oatmeal with fruit every day, and only one coffee." },
-      { "speaker": "P", "text": "Did the headaches stop?" },
-      { "speaker": "B", "text": "Pretty much, yeah. And here's the funny part. My twelve-year-old daughter started copying me, so now we sit down and have breakfast together before school. That's my favorite part of the day." },
-      { "speaker": "P", "text": "Lovely. Let's go to Siobhan now. Siobhan, what's your healthy habit?" },
-      { "speaker": "C", "text": "Hello. Mine is walking. I used to drive to work every day, even though it's only twenty-five minutes on foot. Then our car broke down, and we couldn't afford to fix it for a month. So I started walking, and when the car came back, I just kept walking." },
-      { "speaker": "P", "text": "Even when it rains?" },
-      { "speaker": "C", "text": "Even when it rains! I have a good umbrella. I also use an app that counts my steps, and I try to get to ten thousand a day. Some days I don't, but that's OK. I don't get stressed about it." },
-      { "speaker": "P", "text": "Very sensible. And our last caller tonight is Raj. Good evening, Raj." },
-      { "speaker": "D", "text": "Good evening. I'm sixty-eight, so I'm probably your oldest caller tonight! My habit is cooking. For forty years my wife did all the cooking. When she was in hospital for two months last year, I lived on ready meals from the supermarket. My granddaughter was worried, so she came round every Sunday and gave me cooking lessons." },
-      { "speaker": "P", "text": "That's wonderful. What can you make now?" },
-      { "speaker": "D", "text": "Oh, lots of things. Soups, curries, fish. My wife is fine now, don't worry, but I still do most of the cooking. And when my granddaughter visits, I cook for her! My advice to your listeners is this: don't try to change everything at once. Choose one small thing and do it every day." },
-      { "speaker": "P", "text": "Great advice, Raj. Thank you all for calling." }
+      {
+        "speaker": "P",
+        "text": "Good evening and welcome to Healthy Living Live. Tonight we're asking you: what's one healthy habit that has really changed your life? The phone lines are already busy, so let's go straight to our first caller. Megan, you're on the air."
+      },
+      {
+        "speaker": "A",
+        "text": "Hi, Jack! Well, mine is about sleep. I used to look at my phone in bed until one or two in the morning, and I was always tired at school. Sorry, I mean at university. So last year I bought an old-fashioned alarm clock, and now my phone stays in the kitchen at night."
+      },
+      {
+        "speaker": "P",
+        "text": "And has it helped?"
+      },
+      {
+        "speaker": "A",
+        "text": "Oh, completely. I fall asleep much faster, and I actually wake up before the alarm now. My friends think I'm crazy, but I feel great. The first week was really hard, though, I won't lie."
+      },
+      {
+        "speaker": "P",
+        "text": "Thanks, Megan. Next on the line is Tom. Hello, Tom."
+      },
+      {
+        "speaker": "B",
+        "text": "Hey there. So, for me it's breakfast. For years I never ate anything in the morning, just two big cups of coffee. Then I went to the doctor because I kept getting headaches, and she told me to change that. Now I have oatmeal with fruit every day, and only one coffee."
+      },
+      {
+        "speaker": "P",
+        "text": "Did the headaches stop?"
+      },
+      {
+        "speaker": "B",
+        "text": "Pretty much, yeah. And here's the funny part. My twelve-year-old daughter started copying me, so now we sit down and have breakfast together before school. That's my favorite part of the day."
+      },
+      {
+        "speaker": "P",
+        "text": "Lovely. Let's go to Siobhan now. Siobhan, what's your healthy habit?"
+      },
+      {
+        "speaker": "C",
+        "text": "Hello. Mine is walking. I used to drive to work every day, even though it's only twenty-five minutes on foot. Then our car broke down, and we couldn't afford to fix it for a month. So I started walking, and when the car came back, I just kept walking."
+      },
+      {
+        "speaker": "P",
+        "text": "Even when it rains?"
+      },
+      {
+        "speaker": "C",
+        "text": "Even when it rains! I have a good umbrella. I also use an app that counts my steps, and I try to get to ten thousand a day. Some days I don't, but that's OK. I don't get stressed about it."
+      },
+      {
+        "speaker": "P",
+        "text": "Very sensible. And our last caller tonight is Raj. Good evening, Raj."
+      },
+      {
+        "speaker": "D",
+        "text": "Good evening. I'm sixty-eight, so I'm probably your oldest caller tonight! My habit is cooking. For forty years my wife did all the cooking. When she was in hospital for two months last year, I lived on ready meals from the supermarket. My granddaughter was worried, so she came round every Sunday and gave me cooking lessons."
+      },
+      {
+        "speaker": "P",
+        "text": "That's wonderful. What can you make now?"
+      },
+      {
+        "speaker": "D",
+        "text": "Oh, lots of things. Soups, curries, fish. My wife is fine now, don't worry, but I still do most of the cooking. And when my granddaughter visits, I cook for her! My advice to your listeners is this: don't try to change everything at once. Choose one small thing and do it every day."
+      },
+      {
+        "speaker": "P",
+        "text": "Great advice, Raj. Thank you all for calling."
+      }
     ]
   },
   "options": [
-    { "key": "A", "text": "Speaker A – Megan" },
-    { "key": "B", "text": "Speaker B – Tom" },
-    { "key": "C", "text": "Speaker C – Siobhan" },
-    { "key": "D", "text": "Speaker D – Raj" }
+    {
+      "key": "A",
+      "text": "Speaker A – Megan"
+    },
+    {
+      "key": "B",
+      "text": "Speaker B – Tom"
+    },
+    {
+      "key": "C",
+      "text": "Speaker C – Siobhan"
+    },
+    {
+      "key": "D",
+      "text": "Speaker D – Raj"
+    }
   ],
   "optionsReusable": true,
   "example": {

@@ -8,6 +8,7 @@
   "title": "A traffic light you can feel",
   "createdAt": "2026-11-05",
   "tags": [],
+  "reservedFor": "mock",
   "section": "reading",
   "type": "multiple-choice",
   "instructions": "Read the article about a young inventor and answer the questions. Choose the best answer (A, B, C or D) for each question (1–8). There is an example (0) at the beginning.",
@@ -41,10 +42,22 @@
     "kind": "choice",
     "prompt": "What did Arjun notice at the crossing?",
     "options": [
-      { "key": "A", "text": "A blind man could not tell when it was safe to cross." },
-      { "key": "B", "text": "The traffic lights were broken." },
-      { "key": "C", "text": "An older man crossed at a red light." },
-      { "key": "D", "text": "There was too much traffic." }
+      {
+        "key": "A",
+        "text": "A blind man could not tell when it was safe to cross."
+      },
+      {
+        "key": "B",
+        "text": "The traffic lights were broken."
+      },
+      {
+        "key": "C",
+        "text": "An older man crossed at a red light."
+      },
+      {
+        "key": "D",
+        "text": "There was too much traffic."
+      }
     ],
     "answer": "A",
     "category": "detail",
@@ -57,10 +70,22 @@
       "kind": "choice",
       "prompt": "How did the man at the crossing know when to cross?",
       "options": [
-        { "key": "A", "text": "He listened for a sound from the traffic lights." },
-        { "key": "B", "text": "He asked Arjun for help." },
-        { "key": "C", "text": "He followed other people." },
-        { "key": "D", "text": "He used an app on his phone." }
+        {
+          "key": "A",
+          "text": "He listened for a sound from the traffic lights."
+        },
+        {
+          "key": "B",
+          "text": "He asked Arjun for help."
+        },
+        {
+          "key": "C",
+          "text": "He followed other people."
+        },
+        {
+          "key": "D",
+          "text": "He used an app on his phone."
+        }
       ],
       "answer": "C",
       "category": "detail",
@@ -77,10 +102,22 @@
       "kind": "choice",
       "prompt": "Before the project, Arjun",
       "options": [
-        { "key": "A", "text": "had never written a computer program." },
-        { "key": "B", "text": "had some basic programming experience." },
-        { "key": "C", "text": "had already built another app." },
-        { "key": "D", "text": "had studied object recognition at school." }
+        {
+          "key": "A",
+          "text": "had never written a computer program."
+        },
+        {
+          "key": "B",
+          "text": "had some basic programming experience."
+        },
+        {
+          "key": "C",
+          "text": "had already built another app."
+        },
+        {
+          "key": "D",
+          "text": "had studied object recognition at school."
+        }
       ],
       "answer": "B",
       "category": "detail",
@@ -97,10 +134,22 @@
       "kind": "choice",
       "prompt": "What was the problem during the first three months?",
       "options": [
-        { "key": "A", "text": "The app thought other things were traffic lights." },
-        { "key": "B", "text": "Arjun's parents did not let him work on the project." },
-        { "key": "C", "text": "Arjun's phone camera was not good enough." },
-        { "key": "D", "text": "The app only worked at night." }
+        {
+          "key": "A",
+          "text": "The app thought other things were traffic lights."
+        },
+        {
+          "key": "B",
+          "text": "Arjun's parents did not let him work on the project."
+        },
+        {
+          "key": "C",
+          "text": "Arjun's phone camera was not good enough."
+        },
+        {
+          "key": "D",
+          "text": "The app only worked at night."
+        }
       ],
       "answer": "A",
       "category": "detail",
@@ -117,10 +166,22 @@
       "kind": "choice",
       "prompt": "How did Mrs Okafor's idea help?",
       "options": [
-        { "key": "A", "text": "The app had to check only part of the picture." },
-        { "key": "B", "text": "Arjun could use a better camera." },
-        { "key": "C", "text": "The app learnt to recognise cars." },
-        { "key": "D", "text": "Users had to take several photos." }
+        {
+          "key": "A",
+          "text": "The app had to check only part of the picture."
+        },
+        {
+          "key": "B",
+          "text": "Arjun could use a better camera."
+        },
+        {
+          "key": "C",
+          "text": "The app learnt to recognise cars."
+        },
+        {
+          "key": "D",
+          "text": "Users had to take several photos."
+        }
       ],
       "answer": "A",
       "category": "detail",
@@ -137,10 +198,22 @@
       "kind": "choice",
       "prompt": "How does CrossSafe tell the user that the light is green?",
       "options": [
-        { "key": "A", "text": "It vibrates once." },
-        { "key": "B", "text": "It vibrates three times." },
-        { "key": "C", "text": "It makes a loud sound." },
-        { "key": "D", "text": "Its screen turns green." }
+        {
+          "key": "A",
+          "text": "It vibrates once."
+        },
+        {
+          "key": "B",
+          "text": "It vibrates three times."
+        },
+        {
+          "key": "C",
+          "text": "It makes a loud sound."
+        },
+        {
+          "key": "D",
+          "text": "Its screen turns green."
+        }
       ],
       "answer": "B",
       "category": "detail",
@@ -157,10 +230,22 @@
       "kind": "choice",
       "prompt": "What advice did members of the charity give Arjun?",
       "options": [
-        { "key": "A", "text": "The phone should vibrate more strongly." },
-        { "key": "B", "text": "The app should not make loud sounds." },
-        { "key": "C", "text": "The app should be free." },
-        { "key": "D", "text": "Users should not wear headphones." }
+        {
+          "key": "A",
+          "text": "The phone should vibrate more strongly."
+        },
+        {
+          "key": "B",
+          "text": "The app should not make loud sounds."
+        },
+        {
+          "key": "C",
+          "text": "The app should be free."
+        },
+        {
+          "key": "D",
+          "text": "Users should not wear headphones."
+        }
       ],
       "answer": "B",
       "category": "detail",
@@ -177,10 +262,22 @@
       "kind": "choice",
       "prompt": "What do we learn about CrossSafe since the competition?",
       "options": [
-        { "key": "A", "text": "People in other countries use it too." },
-        { "key": "B", "text": "Users now have to pay for it." },
-        { "key": "C", "text": "It can only be used in Leicester." },
-        { "key": "D", "text": "It has won prizes in Brazil and Japan." }
+        {
+          "key": "A",
+          "text": "People in other countries use it too."
+        },
+        {
+          "key": "B",
+          "text": "Users now have to pay for it."
+        },
+        {
+          "key": "C",
+          "text": "It can only be used in Leicester."
+        },
+        {
+          "key": "D",
+          "text": "It has won prizes in Brazil and Japan."
+        }
       ],
       "answer": "A",
       "category": "inference",
@@ -197,10 +294,22 @@
       "kind": "choice",
       "prompt": "What is Arjun's main message at the end of the article?",
       "options": [
-        { "key": "A", "text": "Good inventors need one brilliant idea." },
-        { "key": "B", "text": "Engineering is the most useful subject." },
-        { "key": "C", "text": "Not giving up is the most important part of inventing." },
-        { "key": "D", "text": "Exams are more important than inventions." }
+        {
+          "key": "A",
+          "text": "Good inventors need one brilliant idea."
+        },
+        {
+          "key": "B",
+          "text": "Engineering is the most useful subject."
+        },
+        {
+          "key": "C",
+          "text": "Not giving up is the most important part of inventing."
+        },
+        {
+          "key": "D",
+          "text": "Exams are more important than inventions."
+        }
       ],
       "answer": "C",
       "category": "attitude",
@@ -214,17 +323,50 @@
     }
   ],
   "glossary": [
-    { "term": "crossing", "meaning": "(gyalogos-)átkelőhely" },
-    { "term": "white stick", "meaning": "fehér bot (a vak emberek botja)" },
-    { "term": "recognise", "meaning": "felismer" },
-    { "term": "breakthrough", "meaning": "áttörés, döntő siker" },
-    { "term": "approach", "meaning": "megközelítés, módszer" },
-    { "term": "roughly", "meaning": "nagyjából, körülbelül" },
-    { "term": "vibrate", "meaning": "rezeg" },
-    { "term": "charity", "meaning": "jótékonysági szervezet" },
-    { "term": "download", "meaning": "letölt" },
-    { "term": "engineering", "meaning": "mérnöki tudományok, mérnöki szak" },
-    { "term": "giving up", "meaning": "feladás, abbahagyás (give up = felad)" }
+    {
+      "term": "crossing",
+      "meaning": "(gyalogos-)átkelőhely"
+    },
+    {
+      "term": "white stick",
+      "meaning": "fehér bot (a vak emberek botja)"
+    },
+    {
+      "term": "recognise",
+      "meaning": "felismer"
+    },
+    {
+      "term": "breakthrough",
+      "meaning": "áttörés, döntő siker"
+    },
+    {
+      "term": "approach",
+      "meaning": "megközelítés, módszer"
+    },
+    {
+      "term": "roughly",
+      "meaning": "nagyjából, körülbelül"
+    },
+    {
+      "term": "vibrate",
+      "meaning": "rezeg"
+    },
+    {
+      "term": "charity",
+      "meaning": "jótékonysági szervezet"
+    },
+    {
+      "term": "download",
+      "meaning": "letölt"
+    },
+    {
+      "term": "engineering",
+      "meaning": "mérnöki tudományok, mérnöki szak"
+    },
+    {
+      "term": "giving up",
+      "meaning": "feladás, abbahagyás (give up = felad)"
+    }
   ],
   "suggestedMinutes": 15
 }

@@ -8,6 +8,7 @@
   "title": "Who profits from second-hand clothes?",
   "createdAt": "2026-11-05",
   "tags": [],
+  "reservedFor": "mock",
   "section": "listening",
   "type": "true-false",
   "instructions": "You are going to listen to a radio feature about the market for second-hand clothes. Decide whether statements 1–10 are true (T) or false (F) according to what you hear. You will hear the recording twice. There is an example (0) at the beginning.",
@@ -15,25 +16,88 @@
   "listening": {
     "format": "news",
     "speakers": [
-      { "id": "R", "name": "Emma Lowe (reporter)", "gender": "female", "accent": "en-GB", "age": "adult" },
-      { "id": "C", "name": "Ciaran Doyle (vintage shop owner)", "gender": "male", "accent": "en-IE", "age": "adult" },
-      { "id": "B", "name": "Dr Hannah Brooks (economist)", "gender": "female", "accent": "en-US", "age": "adult" },
-      { "id": "J", "name": "Josh Taylor (student reseller)", "gender": "male", "accent": "en-GB", "age": "young" }
+      {
+        "id": "R",
+        "name": "Emma Lowe (reporter)",
+        "gender": "female",
+        "accent": "en-GB",
+        "age": "adult"
+      },
+      {
+        "id": "C",
+        "name": "Ciaran Doyle (vintage shop owner)",
+        "gender": "male",
+        "accent": "en-IE",
+        "age": "adult"
+      },
+      {
+        "id": "B",
+        "name": "Dr Hannah Brooks (economist)",
+        "gender": "female",
+        "accent": "en-US",
+        "age": "adult"
+      },
+      {
+        "id": "J",
+        "name": "Josh Taylor (student reseller)",
+        "gender": "male",
+        "accent": "en-GB",
+        "age": "young"
+      }
     ],
     "script": [
-      { "speaker": "R", "text": "It used to be something people did quietly, almost with a sense of embarrassment. Today, buying second-hand clothes is big business. According to one industry estimate, the resale market is now growing about three times faster than the market for new clothing. I set out to find out who's actually making money from our old jeans – and who isn't. My first stop is a narrow shop near the station in Leeds, where Ciaran Doyle has been selling vintage clothes for nearly twenty years." },
-      { "speaker": "C", "text": "When I opened, my customers were mostly students and the odd musician looking for a leather jacket. Now I get everybody – teenagers, office workers, pensioners, the lot. Business has never been better, to be honest. But the online platforms have changed the game completely. People check the price of everything on their phones before they buy. I can't ask forty pounds for a jumper if they can see a similar one online for twelve." },
-      { "speaker": "R", "text": "Those platforms are arguably the real winners of the boom. Most of them make their money by taking a commission on each sale, typically somewhere between five and fifteen per cent, and many also charge buyers a small fee for protection in case something goes wrong. Dr Hannah Brooks, an economist who studies consumer behaviour, says the appeal for shoppers isn't only about saving money." },
-      { "speaker": "B", "text": "In our surveys, price is still the number one reason, but it's not the only one. Younger buyers in particular tell us they like the idea that a piece of clothing has a history – that someone else wore it to a concert in 1990, or whatever. And there's a kind of treasure-hunt pleasure in it. You never know what you're going to find. Environmental reasons come up as well, although, interestingly, they're usually mentioned third, not first." },
-      { "speaker": "R", "text": "But Dr Brooks also warns that the picture isn't entirely green." },
-      { "speaker": "B", "text": "There's a risk of what economists call a rebound effect. Some people sell clothes they've hardly worn and use the money to buy even more new things. So instead of replacing new purchases, reselling can actually speed up the whole cycle. In our latest study, roughly one in four regular sellers said they'd been shopping more often since they started selling." },
-      { "speaker": "R", "text": "For some young people, reselling has turned into a serious side job. Nineteen-year-old Josh Taylor started by selling his old trainers to pay for driving lessons." },
-      { "speaker": "J", "text": "At first it was just a bit of pocket money, like, ten pounds here and there. Then I realised I could pick stuff up cheaply at car boot sales and charity shops and sell it on for more. Last summer I was making about three hundred pounds a month. But people think it's easy money, and honestly, it's not. You're photographing everything, writing descriptions, answering messages at midnight, queuing at the post office. If I worked out what I earn per hour, I'd probably be better off stacking shelves in a supermarket." },
-      { "speaker": "R", "text": "And then there's the tax question. In a number of countries, platforms are now required to report users who sell more than a certain number of items a year to the tax authorities. Josh admits that came as a surprise." },
-      { "speaker": "J", "text": "Yeah, I had no idea. I thought it was basically like a garage sale. Now I keep a spreadsheet of everything I buy and sell, just in case." },
-      { "speaker": "R", "text": "Back in Leeds, Ciaran isn't too worried about the competition from teenagers with smartphones." },
-      { "speaker": "C", "text": "Look, an app can't let you try something on, and it can't tell you that the coat you're holding was made in a factory in Manchester in 1975. That's what people come in for – the stories. As long as I can offer that, I think there'll always be room for a shop like mine." },
-      { "speaker": "R", "text": "For Money Talk, this is Emma Lowe in Leeds." }
+      {
+        "speaker": "R",
+        "text": "It used to be something people did quietly, almost with a sense of embarrassment. Today, buying second-hand clothes is big business. According to one industry estimate, the resale market is now growing about three times faster than the market for new clothing. I set out to find out who's actually making money from our old jeans – and who isn't. My first stop is a narrow shop near the station in Leeds, where Ciaran Doyle has been selling vintage clothes for nearly twenty years."
+      },
+      {
+        "speaker": "C",
+        "text": "When I opened, my customers were mostly students and the odd musician looking for a leather jacket. Now I get everybody – teenagers, office workers, pensioners, the lot. Business has never been better, to be honest. But the online platforms have changed the game completely. People check the price of everything on their phones before they buy. I can't ask forty pounds for a jumper if they can see a similar one online for twelve."
+      },
+      {
+        "speaker": "R",
+        "text": "Those platforms are arguably the real winners of the boom. Most of them make their money by taking a commission on each sale, typically somewhere between five and fifteen per cent, and many also charge buyers a small fee for protection in case something goes wrong. Dr Hannah Brooks, an economist who studies consumer behaviour, says the appeal for shoppers isn't only about saving money."
+      },
+      {
+        "speaker": "B",
+        "text": "In our surveys, price is still the number one reason, but it's not the only one. Younger buyers in particular tell us they like the idea that a piece of clothing has a history – that someone else wore it to a concert in 1990, or whatever. And there's a kind of treasure-hunt pleasure in it. You never know what you're going to find. Environmental reasons come up as well, although, interestingly, they're usually mentioned third, not first."
+      },
+      {
+        "speaker": "R",
+        "text": "But Dr Brooks also warns that the picture isn't entirely green."
+      },
+      {
+        "speaker": "B",
+        "text": "There's a risk of what economists call a rebound effect. Some people sell clothes they've hardly worn and use the money to buy even more new things. So instead of replacing new purchases, reselling can actually speed up the whole cycle. In our latest study, roughly one in four regular sellers said they'd been shopping more often since they started selling."
+      },
+      {
+        "speaker": "R",
+        "text": "For some young people, reselling has turned into a serious side job. Nineteen-year-old Josh Taylor started by selling his old trainers to pay for driving lessons."
+      },
+      {
+        "speaker": "J",
+        "text": "At first it was just a bit of pocket money, like, ten pounds here and there. Then I realised I could pick stuff up cheaply at car boot sales and charity shops and sell it on for more. Last summer I was making about three hundred pounds a month. But people think it's easy money, and honestly, it's not. You're photographing everything, writing descriptions, answering messages at midnight, queuing at the post office. If I worked out what I earn per hour, I'd probably be better off stacking shelves in a supermarket."
+      },
+      {
+        "speaker": "R",
+        "text": "And then there's the tax question. In a number of countries, platforms are now required to report users who sell more than a certain number of items a year to the tax authorities. Josh admits that came as a surprise."
+      },
+      {
+        "speaker": "J",
+        "text": "Yeah, I had no idea. I thought it was basically like a garage sale. Now I keep a spreadsheet of everything I buy and sell, just in case."
+      },
+      {
+        "speaker": "R",
+        "text": "Back in Leeds, Ciaran isn't too worried about the competition from teenagers with smartphones."
+      },
+      {
+        "speaker": "C",
+        "text": "Look, an app can't let you try something on, and it can't tell you that the coat you're holding was made in a factory in Manchester in 1975. That's what people come in for – the stories. As long as I can offer that, I think there'll always be room for a shop like mine."
+      },
+      {
+        "speaker": "R",
+        "text": "For Money Talk, this is Emma Lowe in Leeds."
+      }
     ]
   },
   "example": {

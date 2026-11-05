@@ -8,6 +8,7 @@
   "title": "Hiring bikes for a holiday",
   "createdAt": "2026-11-05",
   "tags": [],
+  "reservedFor": "mock",
   "section": "writing",
   "type": "formal-email",
   "taskNumber": 1,
@@ -16,22 +17,61 @@
   "situationHu": "Jövő nyáron a családoddal Angliában nyaraltok, és biciklit szeretnétek bérelni; írj hivatalos e-mailt a kölcsönzőnek a hirdetés alapján.",
   "stimulus": "GREEN WHEELS BIKE HIRE – Keswick, Lake District\nCity bikes, mountain bikes and e-bikes for hire\nby the day or by the week\nHelmets and cycling maps available\nContact us for prices and bookings!",
   "points": [
-    { "id": "p1", "text": "say when you are coming and how long you would like to hire the bikes for" },
-    { "id": "p2", "text": "say how many people need bikes and what kind of bikes you would like" },
-    { "id": "p3", "text": "ask about the price and whether helmets are included" }
+    {
+      "id": "p1",
+      "text": "say when you are coming and how long you would like to hire the bikes for"
+    },
+    {
+      "id": "p2",
+      "text": "say how many people need bikes and what kind of bikes you would like"
+    },
+    {
+      "id": "p3",
+      "text": "ask about the price and whether helmets are included"
+    }
   ],
-  "wordLimit": { "min": 50, "max": 80 },
+  "wordLimit": {
+    "min": 50,
+    "max": 80
+  },
   "suggestedMinutes": 20,
   "usefulPhrases": [
-    { "en": "Dear Sir or Madam,", "hu": "Tisztelt Hölgyem/Uram!" },
-    { "en": "I am writing to ask about hiring bikes.", "hu": "Biciklibérlés ügyében írok." },
-    { "en": "I saw your advertisement on the internet.", "hu": "Láttam a hirdetésüket az interneten." },
-    { "en": "We will be in Keswick from … to …", "hu": "…-tól/-től …-ig leszünk Keswickben." },
-    { "en": "We would like to hire four bikes for a week.", "hu": "Négy biciklit szeretnénk bérelni egy hétre." },
-    { "en": "Could you tell me how much it costs?", "hu": "Meg tudná mondani, mennyibe kerül?" },
-    { "en": "Are helmets included in the price?", "hu": "Benne van az árban a bukósisak?" },
-    { "en": "I look forward to hearing from you.", "hu": "Várom válaszát." },
-    { "en": "Yours faithfully,", "hu": "Tisztelettel: (ha nem tudod a címzett nevét)" }
+    {
+      "en": "Dear Sir or Madam,",
+      "hu": "Tisztelt Hölgyem/Uram!"
+    },
+    {
+      "en": "I am writing to ask about hiring bikes.",
+      "hu": "Biciklibérlés ügyében írok."
+    },
+    {
+      "en": "I saw your advertisement on the internet.",
+      "hu": "Láttam a hirdetésüket az interneten."
+    },
+    {
+      "en": "We will be in Keswick from … to …",
+      "hu": "…-tól/-től …-ig leszünk Keswickben."
+    },
+    {
+      "en": "We would like to hire four bikes for a week.",
+      "hu": "Négy biciklit szeretnénk bérelni egy hétre."
+    },
+    {
+      "en": "Could you tell me how much it costs?",
+      "hu": "Meg tudná mondani, mennyibe kerül?"
+    },
+    {
+      "en": "Are helmets included in the price?",
+      "hu": "Benne van az árban a bukósisak?"
+    },
+    {
+      "en": "I look forward to hearing from you.",
+      "hu": "Várom válaszát."
+    },
+    {
+      "en": "Yours faithfully,",
+      "hu": "Tisztelettel: (ha nem tudod a címzett nevét)"
+    }
   ],
   "checklistExtra": [
     "Kerültem az összevont alakokat (I'm, don't) és a baráti fordulatokat?"

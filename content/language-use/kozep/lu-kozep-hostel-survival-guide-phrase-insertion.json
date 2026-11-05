@@ -8,6 +8,7 @@
   "title": "Your first hostel: a survival guide",
   "createdAt": "2026-11-05",
   "tags": [],
+  "reservedFor": "mock",
   "section": "language-use",
   "type": "phrase-insertion",
   "instructions": "Some parts of sentences have been removed from the text. Choose the most suitable phrase (A–L) for each gap (1–9). There are two extra phrases that you do not need. There is an example (0) at the beginning.",
@@ -15,26 +16,72 @@
   "passage": {
     "title": "Your first hostel: a survival guide",
     "blocks": [
-      { "text": "Hostels are a great choice for young travellers [[0]]. A bed in a shared room usually costs much less than a hotel room, and it is easy to meet people from all over the world. However, if you have never stayed in a hostel before, [[1]]." },
-      { "text": "First of all, book early, [[2]]. The most popular hostels in big cities are often full weeks in advance. Read the reviews carefully and check [[3]] – in some places it is included, but in others you have to pay extra for it." },
-      { "text": "Most hostels have lockers for your things, but you usually need your own padlock, [[4]]. [[5]], never leave your passport or money on your bed." },
-      { "text": "Sharing a room with eight strangers is not always easy. Some people snore, others come back at three in the morning, and [[6]]. That is why earplugs and a sleeping mask are [[7]]." },
-      { "text": "Of course, you should also be a good roommate yourself. Don't switch on the main light [[8]] – use the torch on your phone instead. Finally, don't stay in your room all the time. Spend some time in the common room, or cook your own meals in the shared kitchen. It saves money, and [[9]]." }
+      {
+        "text": "Hostels are a great choice for young travellers [[0]]. A bed in a shared room usually costs much less than a hotel room, and it is easy to meet people from all over the world. However, if you have never stayed in a hostel before, [[1]]."
+      },
+      {
+        "text": "First of all, book early, [[2]]. The most popular hostels in big cities are often full weeks in advance. Read the reviews carefully and check [[3]] – in some places it is included, but in others you have to pay extra for it."
+      },
+      {
+        "text": "Most hostels have lockers for your things, but you usually need your own padlock, [[4]]. [[5]], never leave your passport or money on your bed."
+      },
+      {
+        "text": "Sharing a room with eight strangers is not always easy. Some people snore, others come back at three in the morning, and [[6]]. That is why earplugs and a sleeping mask are [[7]]."
+      },
+      {
+        "text": "Of course, you should also be a good roommate yourself. Don't switch on the main light [[8]] – use the torch on your phone instead. Finally, don't stay in your room all the time. Spend some time in the common room, or cook your own meals in the shared kitchen. It saves money, and [[9]]."
+      }
     ]
   },
   "options": [
-    { "key": "A", "text": "the most useful things you can pack" },
-    { "key": "B", "text": "who want to save money" },
-    { "key": "C", "text": "so remember to pack one" },
-    { "key": "D", "text": "because hotel rooms are always cheaper" },
-    { "key": "E", "text": "there are a few things you should know" },
-    { "key": "F", "text": "when you come back late at night" },
-    { "key": "G", "text": "whether the price includes breakfast" },
-    { "key": "H", "text": "someone's alarm will probably go off at six" },
-    { "key": "I", "text": "which are free in most hostels" },
-    { "key": "J", "text": "especially if you are travelling in July or August" },
-    { "key": "K", "text": "it is one of the easiest ways to make new friends" },
-    { "key": "L", "text": "Even if your roommates seem very friendly" }
+    {
+      "key": "A",
+      "text": "the most useful things you can pack"
+    },
+    {
+      "key": "B",
+      "text": "who want to save money"
+    },
+    {
+      "key": "C",
+      "text": "so remember to pack one"
+    },
+    {
+      "key": "D",
+      "text": "because hotel rooms are always cheaper"
+    },
+    {
+      "key": "E",
+      "text": "there are a few things you should know"
+    },
+    {
+      "key": "F",
+      "text": "when you come back late at night"
+    },
+    {
+      "key": "G",
+      "text": "whether the price includes breakfast"
+    },
+    {
+      "key": "H",
+      "text": "someone's alarm will probably go off at six"
+    },
+    {
+      "key": "I",
+      "text": "which are free in most hostels"
+    },
+    {
+      "key": "J",
+      "text": "especially if you are travelling in July or August"
+    },
+    {
+      "key": "K",
+      "text": "it is one of the easiest ways to make new friends"
+    },
+    {
+      "key": "L",
+      "text": "Even if your roommates seem very friendly"
+    }
   ],
   "example": {
     "id": "0",
@@ -44,15 +91,78 @@
     "explanation": "A „young travellers” (személyek) után vonatkozó mellékmondat illik ide: who want to save money = akik pénzt akarnak spórolni. A következő mondat (much less than a hotel room) is az olcsóságról szól."
   },
   "items": [
-    { "id": "1", "kind": "match", "answer": "E", "category": "conditional", "explanation": "Az „if you have never stayed in a hostel before” mellékmondat után főmondat kell: there are a few things you should know = van néhány dolog, amit tudnod kell. A szöveg további része ezeket a tanácsokat sorolja." },
-    { "id": "2", "kind": "match", "answer": "J", "category": "linking", "explanation": "A „book early” (foglalj korán) tanácsot az „especially if …” (főleg, ha …) pontosítja: nyáron, a főszezonban. A következő mondat (often full weeks in advance) ezt erősíti.", "wrongOptions": { "D": "Ellentmond az első bekezdésnek, amely szerint a hostel sokkal olcsóbb a szállodánál." } },
-    { "id": "3", "kind": "match", "answer": "G", "category": "reported-speech", "explanation": "A „check” után függő kérdés jön: whether … = hogy …-e, egyenes szórenddel (the price includes). A gondolatjel utáni „it is included” a reggelire utal vissza." },
-    { "id": "4", "kind": "match", "answer": "C", "category": "pronoun", "explanation": "Az „one” a lakatra (padlock) utal vissza, a „so” következményt fejez ki: saját lakat kell, tehát ne felejts el egyet becsomagolni.", "wrongOptions": { "I": "A „which are” többes számú, a „padlock” viszont egyes szám; ráadásul ellentmond annak, hogy saját lakatot kell vinni." } },
-    { "id": "5", "kind": "match", "answer": "L", "category": "linking", "explanation": "Az „Even if …” (még akkor is, ha …) mellékmondat a mondat elején áll (nagybetű, utána vessző): még ha a szobatársak nagyon barátságosnak tűnnek is, ne hagyd az ágyon az útleveledet és a pénzedet." },
-    { "id": "6", "kind": "match", "answer": "H", "category": "tense", "explanation": "A felsorolás (Some people snore, others come back …, and …) egy újabb zavaró dologgal folytatódik, teljes tagmondattal: valakinek az ébresztője valószínűleg hatkor megszólal. A „will probably” jövőbeli valószínűséget fejez ki." },
-    { "id": "7", "kind": "match", "answer": "A", "category": "comparison", "explanation": "Az „are” után főnévi szerkezet kell; a felsőfok (the most useful things you can pack) azt fejezi ki, hogy a füldugó és a szemmaszk a leghasznosabb holmi – épp a horkolás és a korai ébresztő miatt." },
-    { "id": "8", "kind": "match", "answer": "F", "category": "linking", "explanation": "Az időhatározói mellékmondat (when you come back late at night) adja meg, mikor ne kapcsold fel a nagy lámpát: amikor késő éjjel érsz vissza, és a többiek már alszanak." },
-    { "id": "9", "kind": "match", "answer": "K", "category": "cohesion", "explanation": "Az „It saves money, and …” után egy újabb előny jön teljes tagmondattal: it is one of the easiest ways to make new friends (one of the + felsőfok + többes számú főnév). A közös konyha és társalgó valóban az ismerkedés helye.", "wrongOptions": { "E": "Ez a rész egy bevezető mondathoz illik (az 1. hiány), nem a közös konyha előnyeinek felsorolásához." } }
+    {
+      "id": "1",
+      "kind": "match",
+      "answer": "E",
+      "category": "conditional",
+      "explanation": "Az „if you have never stayed in a hostel before” mellékmondat után főmondat kell: there are a few things you should know = van néhány dolog, amit tudnod kell. A szöveg további része ezeket a tanácsokat sorolja."
+    },
+    {
+      "id": "2",
+      "kind": "match",
+      "answer": "J",
+      "category": "linking",
+      "explanation": "A „book early” (foglalj korán) tanácsot az „especially if …” (főleg, ha …) pontosítja: nyáron, a főszezonban. A következő mondat (often full weeks in advance) ezt erősíti.",
+      "wrongOptions": {
+        "D": "Ellentmond az első bekezdésnek, amely szerint a hostel sokkal olcsóbb a szállodánál."
+      }
+    },
+    {
+      "id": "3",
+      "kind": "match",
+      "answer": "G",
+      "category": "reported-speech",
+      "explanation": "A „check” után függő kérdés jön: whether … = hogy …-e, egyenes szórenddel (the price includes). A gondolatjel utáni „it is included” a reggelire utal vissza."
+    },
+    {
+      "id": "4",
+      "kind": "match",
+      "answer": "C",
+      "category": "pronoun",
+      "explanation": "Az „one” a lakatra (padlock) utal vissza, a „so” következményt fejez ki: saját lakat kell, tehát ne felejts el egyet becsomagolni.",
+      "wrongOptions": {
+        "I": "A „which are” többes számú, a „padlock” viszont egyes szám; ráadásul ellentmond annak, hogy saját lakatot kell vinni."
+      }
+    },
+    {
+      "id": "5",
+      "kind": "match",
+      "answer": "L",
+      "category": "linking",
+      "explanation": "Az „Even if …” (még akkor is, ha …) mellékmondat a mondat elején áll (nagybetű, utána vessző): még ha a szobatársak nagyon barátságosnak tűnnek is, ne hagyd az ágyon az útleveledet és a pénzedet."
+    },
+    {
+      "id": "6",
+      "kind": "match",
+      "answer": "H",
+      "category": "tense",
+      "explanation": "A felsorolás (Some people snore, others come back …, and …) egy újabb zavaró dologgal folytatódik, teljes tagmondattal: valakinek az ébresztője valószínűleg hatkor megszólal. A „will probably” jövőbeli valószínűséget fejez ki."
+    },
+    {
+      "id": "7",
+      "kind": "match",
+      "answer": "A",
+      "category": "comparison",
+      "explanation": "Az „are” után főnévi szerkezet kell; a felsőfok (the most useful things you can pack) azt fejezi ki, hogy a füldugó és a szemmaszk a leghasznosabb holmi – épp a horkolás és a korai ébresztő miatt."
+    },
+    {
+      "id": "8",
+      "kind": "match",
+      "answer": "F",
+      "category": "linking",
+      "explanation": "Az időhatározói mellékmondat (when you come back late at night) adja meg, mikor ne kapcsold fel a nagy lámpát: amikor késő éjjel érsz vissza, és a többiek már alszanak."
+    },
+    {
+      "id": "9",
+      "kind": "match",
+      "answer": "K",
+      "category": "cohesion",
+      "explanation": "Az „It saves money, and …” után egy újabb előny jön teljes tagmondattal: it is one of the easiest ways to make new friends (one of the + felsőfok + többes számú főnév). A közös konyha és társalgó valóban az ismerkedés helye.",
+      "wrongOptions": {
+        "E": "Ez a rész egy bevezető mondathoz illik (az 1. hiány), nem a közös konyha előnyeinek felsorolásához."
+      }
+    }
   ],
   "glossary": [],
   "suggestedMinutes": 10

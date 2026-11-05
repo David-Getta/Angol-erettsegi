@@ -8,6 +8,7 @@
   "title": "Is tourism destroying the places we love?",
   "createdAt": "2026-11-05",
   "tags": [],
+  "reservedFor": "mock",
   "section": "writing",
   "type": "article",
   "taskNumber": 2,
@@ -15,23 +16,65 @@
   "situation": "A travel magazine for young people is holding a writing competition on the topic \"Is tourism destroying the places we love?\" The best articles will be published on the magazine's website. Write an article for the competition.",
   "situationHu": "Egy ifjúsági utazási magazin cikkíró pályázatot hirdetett arról, hogy a turizmus tönkreteszi-e a kedvelt helyeinket.",
   "points": [
-    { "id": "p1", "text": "describe a popular place you know that is affected by large numbers of tourists" },
-    { "id": "p2", "text": "discuss the benefits that tourism brings to local people" },
-    { "id": "p3", "text": "explain the problems that too many tourists can cause" },
-    { "id": "p4", "text": "suggest how travellers could visit places more responsibly" }
+    {
+      "id": "p1",
+      "text": "describe a popular place you know that is affected by large numbers of tourists"
+    },
+    {
+      "id": "p2",
+      "text": "discuss the benefits that tourism brings to local people"
+    },
+    {
+      "id": "p3",
+      "text": "explain the problems that too many tourists can cause"
+    },
+    {
+      "id": "p4",
+      "text": "suggest how travellers could visit places more responsibly"
+    }
   ],
-  "wordLimit": { "min": 200, "max": 250 },
+  "wordLimit": {
+    "min": 200,
+    "max": 250
+  },
   "suggestedMinutes": 55,
   "usefulPhrases": [
-    { "en": "overtourism / mass tourism", "hu": "túlturizmus / tömegturizmus" },
-    { "en": "a tourist hotspot", "hu": "turisták által elárasztott, felkapott hely" },
-    { "en": "Tourism is a major source of income for …", "hu": "A turizmus jelentős bevételi forrás … számára." },
-    { "en": "rising rents and house prices", "hu": "emelkedő albérlet- és lakásárak" },
-    { "en": "Local residents are being forced out of the city centre.", "hu": "A helyi lakosokat kiszorítják a belvárosból." },
-    { "en": "to travel off-season", "hu": "főszezonon kívül utazni" },
-    { "en": "to support local businesses", "hu": "a helyi vállalkozásokat támogatni" },
-    { "en": "Not only does tourism …, but it also …", "hu": "A turizmus nemcsak …, hanem … is." },
-    { "en": "It is up to us as travellers to …", "hu": "Rajtunk, utazókon múlik, hogy …" }
+    {
+      "en": "overtourism / mass tourism",
+      "hu": "túlturizmus / tömegturizmus"
+    },
+    {
+      "en": "a tourist hotspot",
+      "hu": "turisták által elárasztott, felkapott hely"
+    },
+    {
+      "en": "Tourism is a major source of income for …",
+      "hu": "A turizmus jelentős bevételi forrás … számára."
+    },
+    {
+      "en": "rising rents and house prices",
+      "hu": "emelkedő albérlet- és lakásárak"
+    },
+    {
+      "en": "Local residents are being forced out of the city centre.",
+      "hu": "A helyi lakosokat kiszorítják a belvárosból."
+    },
+    {
+      "en": "to travel off-season",
+      "hu": "főszezonon kívül utazni"
+    },
+    {
+      "en": "to support local businesses",
+      "hu": "a helyi vállalkozásokat támogatni"
+    },
+    {
+      "en": "Not only does tourism …, but it also …",
+      "hu": "A turizmus nemcsak …, hanem … is."
+    },
+    {
+      "en": "It is up to us as travellers to …",
+      "hu": "Rajtunk, utazókon múlik, hogy …"
+    }
   ],
   "checklistExtra": [
     "Adtam a cikknek címet, és a bevezetőben felkeltettem az olvasó érdeklődését?"

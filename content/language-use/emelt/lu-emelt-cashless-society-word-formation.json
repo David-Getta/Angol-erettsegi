@@ -8,6 +8,7 @@
   "title": "Is cash on its way out?",
   "createdAt": "2026-11-05",
   "tags": [],
+  "reservedFor": "mock",
   "section": "language-use",
   "type": "word-formation",
   "instructions": "Read the text and complete the gaps with the correct form of the words given in capitals. There is an example (0) at the beginning.",
@@ -15,33 +16,151 @@
   "passage": {
     "title": "Is cash on its way out?",
     "blocks": [
-      { "text": "In Sweden, paying for a coffee with coins has become something of a [[0]]. Fewer than one in ten purchases is now made in cash, and some shops and cafés have stopped accepting it [[1]]. Supporters of a cashless society point to its [[2]] advantages. Paying by phone is quick and [[3]], and digital payments leave a record, so criminals are finding it [[4]] difficult to hide their money." },
-      { "text": "Critics, however, warn that the change is happening too fast. Many older people feel [[5]] using banking apps, and those who cannot afford a smartphone risk being left behind. There are also serious concerns about [[6]], since every digital payment can be tracked. And when a power cut or a technical [[7]] hits the payment system, shops simply cannot sell anything." },
-      { "text": "Banks argue that handling cash is [[8]] and that keeping cash machines running costs them millions every year. Some economists, though, believe that the total [[9]] of cash would give banks far too much power, making ordinary people [[10]] on private companies for even the smallest transaction." },
-      { "text": "Perhaps this is why the Swedish government has recently made a [[11]] to keeping cash alive: larger banks are now legally required to offer cash services. As one financial expert put it, 'Cash is like a spare tyre. You hope you'll never need it, but you would be [[12]] to throw it away.'" }
+      {
+        "text": "In Sweden, paying for a coffee with coins has become something of a [[0]]. Fewer than one in ten purchases is now made in cash, and some shops and cafés have stopped accepting it [[1]]. Supporters of a cashless society point to its [[2]] advantages. Paying by phone is quick and [[3]], and digital payments leave a record, so criminals are finding it [[4]] difficult to hide their money."
+      },
+      {
+        "text": "Critics, however, warn that the change is happening too fast. Many older people feel [[5]] using banking apps, and those who cannot afford a smartphone risk being left behind. There are also serious concerns about [[6]], since every digital payment can be tracked. And when a power cut or a technical [[7]] hits the payment system, shops simply cannot sell anything."
+      },
+      {
+        "text": "Banks argue that handling cash is [[8]] and that keeping cash machines running costs them millions every year. Some economists, though, believe that the total [[9]] of cash would give banks far too much power, making ordinary people [[10]] on private companies for even the smallest transaction."
+      },
+      {
+        "text": "Perhaps this is why the Swedish government has recently made a [[11]] to keeping cash alive: larger banks are now legally required to offer cash services. As one financial expert put it, 'Cash is like a spare tyre. You hope you'll never need it, but you would be [[12]] to throw it away.'"
+      }
     ]
   },
   "example": {
     "id": "0",
     "kind": "text",
     "cue": "RARE",
-    "answer": ["rarity"],
+    "answer": [
+      "rarity"
+    ],
     "category": "word-formation",
     "explanation": "Az „a” névelő után főnév kell: rare (ritka) → rarity (ritkaság). A „something of a …” = afféle …, már-már … (pl. ritkaságszámba megy)."
   },
   "items": [
-    { "id": "1", "kind": "text", "cue": "COMPLETE", "answer": ["completely"], "category": "word-formation", "explanation": "Az igét (have stopped accepting) határozószó módosítja: complete → completely (teljesen). Határozószó-képző: -ly." },
-    { "id": "2", "kind": "text", "cue": "NUMBER", "answer": ["numerous"], "category": "word-formation", "explanation": "A birtokos névmás (its) és a főnév (advantages) között melléknév kell: number → numerous (számos, sok). Melléknévképző: -ous." },
-    { "id": "3", "kind": "text", "cue": "CONVENIENCE", "answer": ["convenient"], "category": "word-formation", "explanation": "Az „is quick and …” szerkezetben a „quick” mellé egy másik melléknév kell: convenience (kényelem) → convenient (kényelmes, praktikus)." },
-    { "id": "4", "kind": "text", "cue": "INCREASE", "answer": ["increasingly"], "category": "word-formation", "explanation": "A „difficult” melléknevet határozószó módosítja: increase → increasing → increasingly (egyre inkább): increasingly difficult = egyre nehezebb." },
-    { "id": "5", "kind": "text", "cue": "COMFORT", "answer": ["uncomfortable"], "category": "word-formation", "explanation": "A „feel” után melléknév kell, és a szövegkörnyezet (a kritikusok aggodalmai, „risk being left behind”) negatív jelentést kíván: comfort → comfortable → uncomfortable (kellemetlenül érzi magát). Tagadó előképző: un-." },
-    { "id": "6", "kind": "text", "cue": "PRIVATE", "answer": ["privacy"], "category": "word-formation", "explanation": "Az „about” elöljárószó után főnév kell: private → privacy (magánszféra, személyes adatok védelme) – hiszen minden digitális fizetés nyomon követhető." },
-    { "id": "7", "kind": "text", "cue": "FAIL", "answer": ["failure"], "category": "word-formation", "explanation": "Az „a technical …” szerkezetben főnév kell: fail → failure (meghibásodás, hiba). Főnévképző: -ure." },
-    { "id": "8", "kind": "text", "cue": "EXPENSE", "answer": ["expensive"], "category": "word-formation", "explanation": "Az „is” után melléknév kell: expense (költség) → expensive (drága, költséges). Melléknévképző: -ive." },
-    { "id": "9", "kind": "text", "cue": "APPEAR", "answer": ["disappearance"], "category": "word-formation", "explanation": "A „the total …” után főnév kell, és a jelentés „eltűnés”: appear → disappear (eltűnik, tagadó előképző: dis-) → disappearance (főnévképző: -ance)." },
-    { "id": "10", "kind": "text", "cue": "DEPEND", "answer": ["dependent"], "category": "word-formation", "explanation": "A „making ordinary people …” (make somebody + melléknév) szerkezetben melléknév kell: depend → dependent (on) = függő, kiszolgáltatott valakinek. A melléknév helyes írásmódja -ent." },
-    { "id": "11", "kind": "text", "cue": "COMMIT", "answer": ["commitment"], "category": "word-formation", "explanation": "Az „a” névelő után főnév kell: commit → commitment (elkötelezettség, vállalás). Állandó kapcsolat: make a commitment to (doing) something. Főnévképző: -ment." },
-    { "id": "12", "kind": "text", "cue": "WISE", "answer": ["unwise"], "category": "word-formation", "explanation": "A „but” ellentétet jelez: reméled, hogy sosem lesz rá szükséged, DE nem lenne bölcs kidobni. Ezért tagadó előképzős melléknév kell: wise → unwise (meggondolatlan, nem bölcs)." }
+    {
+      "id": "1",
+      "kind": "text",
+      "cue": "COMPLETE",
+      "answer": [
+        "completely"
+      ],
+      "category": "word-formation",
+      "explanation": "Az igét (have stopped accepting) határozószó módosítja: complete → completely (teljesen). Határozószó-képző: -ly."
+    },
+    {
+      "id": "2",
+      "kind": "text",
+      "cue": "NUMBER",
+      "answer": [
+        "numerous"
+      ],
+      "category": "word-formation",
+      "explanation": "A birtokos névmás (its) és a főnév (advantages) között melléknév kell: number → numerous (számos, sok). Melléknévképző: -ous."
+    },
+    {
+      "id": "3",
+      "kind": "text",
+      "cue": "CONVENIENCE",
+      "answer": [
+        "convenient"
+      ],
+      "category": "word-formation",
+      "explanation": "Az „is quick and …” szerkezetben a „quick” mellé egy másik melléknév kell: convenience (kényelem) → convenient (kényelmes, praktikus)."
+    },
+    {
+      "id": "4",
+      "kind": "text",
+      "cue": "INCREASE",
+      "answer": [
+        "increasingly"
+      ],
+      "category": "word-formation",
+      "explanation": "A „difficult” melléknevet határozószó módosítja: increase → increasing → increasingly (egyre inkább): increasingly difficult = egyre nehezebb."
+    },
+    {
+      "id": "5",
+      "kind": "text",
+      "cue": "COMFORT",
+      "answer": [
+        "uncomfortable"
+      ],
+      "category": "word-formation",
+      "explanation": "A „feel” után melléknév kell, és a szövegkörnyezet (a kritikusok aggodalmai, „risk being left behind”) negatív jelentést kíván: comfort → comfortable → uncomfortable (kellemetlenül érzi magát). Tagadó előképző: un-."
+    },
+    {
+      "id": "6",
+      "kind": "text",
+      "cue": "PRIVATE",
+      "answer": [
+        "privacy"
+      ],
+      "category": "word-formation",
+      "explanation": "Az „about” elöljárószó után főnév kell: private → privacy (magánszféra, személyes adatok védelme) – hiszen minden digitális fizetés nyomon követhető."
+    },
+    {
+      "id": "7",
+      "kind": "text",
+      "cue": "FAIL",
+      "answer": [
+        "failure"
+      ],
+      "category": "word-formation",
+      "explanation": "Az „a technical …” szerkezetben főnév kell: fail → failure (meghibásodás, hiba). Főnévképző: -ure."
+    },
+    {
+      "id": "8",
+      "kind": "text",
+      "cue": "EXPENSE",
+      "answer": [
+        "expensive"
+      ],
+      "category": "word-formation",
+      "explanation": "Az „is” után melléknév kell: expense (költség) → expensive (drága, költséges). Melléknévképző: -ive."
+    },
+    {
+      "id": "9",
+      "kind": "text",
+      "cue": "APPEAR",
+      "answer": [
+        "disappearance"
+      ],
+      "category": "word-formation",
+      "explanation": "A „the total …” után főnév kell, és a jelentés „eltűnés”: appear → disappear (eltűnik, tagadó előképző: dis-) → disappearance (főnévképző: -ance)."
+    },
+    {
+      "id": "10",
+      "kind": "text",
+      "cue": "DEPEND",
+      "answer": [
+        "dependent"
+      ],
+      "category": "word-formation",
+      "explanation": "A „making ordinary people …” (make somebody + melléknév) szerkezetben melléknév kell: depend → dependent (on) = függő, kiszolgáltatott valakinek. A melléknév helyes írásmódja -ent."
+    },
+    {
+      "id": "11",
+      "kind": "text",
+      "cue": "COMMIT",
+      "answer": [
+        "commitment"
+      ],
+      "category": "word-formation",
+      "explanation": "Az „a” névelő után főnév kell: commit → commitment (elkötelezettség, vállalás). Állandó kapcsolat: make a commitment to (doing) something. Főnévképző: -ment."
+    },
+    {
+      "id": "12",
+      "kind": "text",
+      "cue": "WISE",
+      "answer": [
+        "unwise"
+      ],
+      "category": "word-formation",
+      "explanation": "A „but” ellentétet jelez: reméled, hogy sosem lesz rá szükséged, DE nem lenne bölcs kidobni. Ezért tagadó előképzős melléknév kell: wise → unwise (meggondolatlan, nem bölcs)."
+    }
   ],
   "glossary": [],
   "suggestedMinutes": 12

@@ -9,6 +9,9 @@ import { saveAttempt } from "@/lib/attempts";
 import { createSubmission } from "@/lib/submissions";
 import { usedTaskIds } from "@/lib/tasks";
 import { estimateParts } from "@/lib/dashboard";
+import { getSettings } from "@/lib/settings";
+import { scriptText, wordCount } from "@/lib/content/text";
+import type { ObjectiveTask } from "@/lib/content/schema";
 
 export type MockKind = "mock" | "diagnostic";
 export type MockPart = { part: PartId; name: string; timeSec: number; taskIds: string[] };
@@ -18,7 +21,7 @@ export type MockPlan = { parts: MockPart[] };
 const DIAGNOSTIC: Record<string, { count: number; minutes: number }> = {
   reading: { count: 1, minutes: 12 },
   "language-use": { count: 1, minutes: 8 },
-  listening: { count: 1, minutes: 8 },
+  listening: { count: 1, minutes: 10 },
   writing: { count: 1, minutes: 15 },
 };
 
@@ -38,6 +41,17 @@ function pick(list: Candidate[], count: number, kind: MockKind, used: Set<string
   const rank = (c: Candidate) => (c.reserved === kind ? 0 : c.reserved === null ? 1 : 2);
   const sorted = [...unused].sort((a, b) => rank(a) - rank(b) || a.id.localeCompare(b.id));
   return sorted.slice(0, count).map((c) => c.id);
+}
+
+/** Estimated length of a listening task: prep + two plays at the TTS rate + pauses. */
+export function listeningSeconds(task: ObjectiveTask | undefined, level: Level): number {
+  if (!task?.listening) return 0;
+  const ls = levelStructure(level).listening;
+  const rate = getSettings().ttsRate;
+  const words = wordCount(scriptText(task));
+  const play = (words / (155 * rate)) * 60 + task.listening.script.length * 0.25;
+  const plays = task.listening.plays ?? ls.plays;
+  return Math.round((task.listening.prepSeconds ?? ls.prepSeconds) + plays * play + plays * (task.listening.pauseSeconds ?? ls.pauseSeconds));
 }
 
 export type PlanCheck = { ok: true; plan: MockPlan } | { ok: false; missing: { part: PartId; name: string; need: number; have: number }[] };
@@ -66,7 +80,12 @@ export function buildPlan(kind: MockKind, level: Level): PlanCheck {
       taskIds = pick(list, need, kind, used);
     }
     if (taskIds.length < need) missing.push({ part: id, name: p.name, need, have: taskIds.length });
-    const timeSec = kind === "diagnostic" ? DIAGNOSTIC[id]!.minutes * 60 : (p.timeMin ?? 30) * 60;
+    let timeSec = kind === "diagnostic" ? DIAGNOSTIC[id]!.minutes * 60 : (p.timeMin ?? 30) * 60;
+    if (id === "listening") {
+      // the recordings are read by TTS: never let the part end before they can be heard twice
+      const audio = taskIds.reduce((n, tid) => n + listeningSeconds(list.find((c) => c.id === tid)?.content as ObjectiveTask, level), 0);
+      timeSec = Math.max(timeSec, audio + 120);
+    }
     parts.push({ part: id, name: p.name, timeSec, taskIds });
   }
   return missing.length ? { ok: false, missing } : { ok: true, plan: { parts } };

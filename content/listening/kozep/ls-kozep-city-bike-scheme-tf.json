@@ -8,6 +8,7 @@
   "title": "A new bike-sharing scheme",
   "createdAt": "2026-11-05",
   "tags": [],
+  "reservedFor": "diagnostic",
   "section": "listening",
   "type": "true-false",
   "instructions": "You are going to listen to a local radio report about a new bike-sharing scheme. Decide if the statements are true (T) or false (F). You will hear the recording twice. There is an example (0) at the beginning.",
@@ -15,23 +16,74 @@
   "listening": {
     "format": "radio",
     "speakers": [
-      { "id": "P", "name": "Presenter", "gender": "female", "accent": "en-GB", "age": "adult" },
-      { "id": "D", "name": "David Moore (city council)", "gender": "male", "accent": "en-GB", "age": "adult" }
+      {
+        "id": "P",
+        "name": "Presenter",
+        "gender": "female",
+        "accent": "en-GB",
+        "age": "adult"
+      },
+      {
+        "id": "D",
+        "name": "David Moore (city council)",
+        "gender": "male",
+        "accent": "en-GB",
+        "age": "adult"
+      }
     ],
     "script": [
-      { "speaker": "P", "text": "Good morning and welcome to City Talk. From next Monday, people in Brookfield will be able to rent bicycles from twenty stations around the town centre. With me in the studio is David Moore from the city council. Good morning, David." },
-      { "speaker": "D", "text": "Good morning. Yes, we're really excited about it. We've been planning the scheme for almost two years, and now the bikes are finally here." },
-      { "speaker": "P", "text": "So how does it work?" },
-      { "speaker": "D", "text": "It's very simple. You download our app, register with your bank card, and then you can unlock any bike by scanning the code on it. The first thirty minutes of every ride are free, and after that it costs one pound for every half hour." },
-      { "speaker": "P", "text": "And can you leave the bike anywhere?" },
-      { "speaker": "D", "text": "No, you have to return it to one of the stations. If you just leave it in the street, you'll have to pay a fine of twenty pounds. But don't worry, the app shows you where the nearest station is and how many free places it has." },
-      { "speaker": "P", "text": "What about people who don't have a smartphone?" },
-      { "speaker": "D", "text": "Good question. They can buy a card at the library or at the tourist information office. The card works exactly like the app." },
-      { "speaker": "P", "text": "Some listeners have asked about safety. Do you provide helmets?" },
-      { "speaker": "D", "text": "We don't, I'm afraid, because it's difficult to keep them clean. But we strongly recommend wearing one, and local bike shops are offering a fifteen percent discount on helmets this month." },
-      { "speaker": "P", "text": "And the bikes themselves – are they electric?" },
-      { "speaker": "D", "text": "At the moment all two hundred bikes are normal ones. But if the scheme is successful, we'd like to add fifty electric bikes next spring, especially for the hilly area near the university." },
-      { "speaker": "P", "text": "David Moore, thank you very much." }
+      {
+        "speaker": "P",
+        "text": "Good morning and welcome to City Talk. From next Monday, people in Brookfield will be able to rent bicycles from twenty stations around the town centre. With me in the studio is David Moore from the city council. Good morning, David."
+      },
+      {
+        "speaker": "D",
+        "text": "Good morning. Yes, we're really excited about it. We've been planning the scheme for almost two years, and now the bikes are finally here."
+      },
+      {
+        "speaker": "P",
+        "text": "So how does it work?"
+      },
+      {
+        "speaker": "D",
+        "text": "It's very simple. You download our app, register with your bank card, and then you can unlock any bike by scanning the code on it. The first thirty minutes of every ride are free, and after that it costs one pound for every half hour."
+      },
+      {
+        "speaker": "P",
+        "text": "And can you leave the bike anywhere?"
+      },
+      {
+        "speaker": "D",
+        "text": "No, you have to return it to one of the stations. If you just leave it in the street, you'll have to pay a fine of twenty pounds. But don't worry, the app shows you where the nearest station is and how many free places it has."
+      },
+      {
+        "speaker": "P",
+        "text": "What about people who don't have a smartphone?"
+      },
+      {
+        "speaker": "D",
+        "text": "Good question. They can buy a card at the library or at the tourist information office. The card works exactly like the app."
+      },
+      {
+        "speaker": "P",
+        "text": "Some listeners have asked about safety. Do you provide helmets?"
+      },
+      {
+        "speaker": "D",
+        "text": "We don't, I'm afraid, because it's difficult to keep them clean. But we strongly recommend wearing one, and local bike shops are offering a fifteen percent discount on helmets this month."
+      },
+      {
+        "speaker": "P",
+        "text": "And the bikes themselves – are they electric?"
+      },
+      {
+        "speaker": "D",
+        "text": "At the moment all two hundred bikes are normal ones. But if the scheme is successful, we'd like to add fifty electric bikes next spring, especially for the hilly area near the university."
+      },
+      {
+        "speaker": "P",
+        "text": "David Moore, thank you very much."
+      }
     ]
   },
   "example": {

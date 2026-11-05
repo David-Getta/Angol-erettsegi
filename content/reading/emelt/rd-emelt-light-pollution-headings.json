@@ -8,6 +8,7 @@
   "title": "Bringing back the dark",
   "createdAt": "2026-11-05",
   "tags": [],
+  "reservedFor": "mock",
   "section": "reading",
   "type": "headings",
   "instructions": "Read the article about light pollution. Choose the most suitable heading (A–I) for each paragraph (1–6). There are two extra headings that you do not need to use. There is an example (0) at the beginning.",
@@ -47,15 +48,42 @@
     ]
   },
   "options": [
-    { "key": "A", "text": "Screens are the real culprit" },
-    { "key": "B", "text": "When being remote pays off" },
-    { "key": "C", "text": "Amateur stargazers reveal a worrying trend" },
-    { "key": "D", "text": "A sight most of us have lost" },
-    { "key": "E", "text": "A green solution with an unexpected side effect" },
-    { "key": "F", "text": "Satellites tell the whole story" },
-    { "key": "G", "text": "Creatures that lose their way" },
-    { "key": "H", "text": "Simple solutions and groundless fears" },
-    { "key": "I", "text": "Is artificial light making us ill?" }
+    {
+      "key": "A",
+      "text": "Screens are the real culprit"
+    },
+    {
+      "key": "B",
+      "text": "When being remote pays off"
+    },
+    {
+      "key": "C",
+      "text": "Amateur stargazers reveal a worrying trend"
+    },
+    {
+      "key": "D",
+      "text": "A sight most of us have lost"
+    },
+    {
+      "key": "E",
+      "text": "A green solution with an unexpected side effect"
+    },
+    {
+      "key": "F",
+      "text": "Satellites tell the whole story"
+    },
+    {
+      "key": "G",
+      "text": "Creatures that lose their way"
+    },
+    {
+      "key": "H",
+      "text": "Simple solutions and groundless fears"
+    },
+    {
+      "key": "I",
+      "text": "Is artificial light making us ill?"
+    }
   ],
   "optionsReusable": false,
   "example": {
@@ -135,18 +163,54 @@
     }
   ],
   "glossary": [
-    { "term": "moors", "meaning": "lápvidék, kopár dombvidék" },
-    { "term": "fall silent", "meaning": "elhallgat, elnémul" },
-    { "term": "faintest", "meaning": "leghalványabb" },
-    { "term": "exhaustion", "meaning": "kimerültség" },
-    { "term": "hatching", "meaning": "(tojásból) kikelés" },
-    { "term": "navigate", "meaning": "tájékozódik, navigál" },
-    { "term": "exposure", "meaning": "kitettség (valaminek a hatásának)" },
-    { "term": "ironically", "meaning": "ironikus módon, paradox módon" },
-    { "term": "scatter", "meaning": "szóródik, szétszóródik" },
-    { "term": "shield", "meaning": "ernyő, takaró lemez" },
-    { "term": "burglaries", "meaning": "betörések" },
-    { "term": "observatory", "meaning": "csillagvizsgáló" }
+    {
+      "term": "moors",
+      "meaning": "lápvidék, kopár dombvidék"
+    },
+    {
+      "term": "fall silent",
+      "meaning": "elhallgat, elnémul"
+    },
+    {
+      "term": "faintest",
+      "meaning": "leghalványabb"
+    },
+    {
+      "term": "exhaustion",
+      "meaning": "kimerültség"
+    },
+    {
+      "term": "hatching",
+      "meaning": "(tojásból) kikelés"
+    },
+    {
+      "term": "navigate",
+      "meaning": "tájékozódik, navigál"
+    },
+    {
+      "term": "exposure",
+      "meaning": "kitettség (valaminek a hatásának)"
+    },
+    {
+      "term": "ironically",
+      "meaning": "ironikus módon, paradox módon"
+    },
+    {
+      "term": "scatter",
+      "meaning": "szóródik, szétszóródik"
+    },
+    {
+      "term": "shield",
+      "meaning": "ernyő, takaró lemez"
+    },
+    {
+      "term": "burglaries",
+      "meaning": "betörések"
+    },
+    {
+      "term": "observatory",
+      "meaning": "csillagvizsgáló"
+    }
   ],
   "suggestedMinutes": 15
 }

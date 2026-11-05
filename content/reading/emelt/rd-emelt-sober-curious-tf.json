@@ -8,6 +8,7 @@
   "title": "Last orders for alcohol?",
   "createdAt": "2026-11-05",
   "tags": [],
+  "reservedFor": "mock",
   "section": "reading",
   "type": "true-false",
   "instructions": "Read the article about young people and alcohol. Decide whether the statements (1–10) are true (T) or false (F) according to the text, or whether the information is not given (NG). There is an example (0) at the beginning.",
@@ -141,17 +142,50 @@
     }
   ],
   "glossary": [
-    { "term": "packed", "meaning": "zsúfolt, tele van" },
-    { "term": "bankrupt", "meaning": "csődbe ment" },
-    { "term": "proportion", "meaning": "arány, hányad" },
-    { "term": "justify", "meaning": "igazol, indokol (költséget)" },
-    { "term": "embarrassing", "meaning": "kínos, ciki" },
-    { "term": "losing control", "meaning": "elveszíti az önuralmát" },
-    { "term": "consumption", "meaning": "fogyasztás" },
-    { "term": "sober curious", "meaning": "„józanságra kíváncsi” – aki tudatosan kevesebbet vagy egyáltalán nem iszik" },
-    { "term": "promote", "meaning": "népszerűsít, reklámoz" },
-    { "term": "rule out", "meaning": "kizár (lehetőséget)" },
-    { "term": "remains to be seen", "meaning": "majd kiderül, egyelőre nem tudni" }
+    {
+      "term": "packed",
+      "meaning": "zsúfolt, tele van"
+    },
+    {
+      "term": "bankrupt",
+      "meaning": "csődbe ment"
+    },
+    {
+      "term": "proportion",
+      "meaning": "arány, hányad"
+    },
+    {
+      "term": "justify",
+      "meaning": "igazol, indokol (költséget)"
+    },
+    {
+      "term": "embarrassing",
+      "meaning": "kínos, ciki"
+    },
+    {
+      "term": "losing control",
+      "meaning": "elveszíti az önuralmát"
+    },
+    {
+      "term": "consumption",
+      "meaning": "fogyasztás"
+    },
+    {
+      "term": "sober curious",
+      "meaning": "„józanságra kíváncsi” – aki tudatosan kevesebbet vagy egyáltalán nem iszik"
+    },
+    {
+      "term": "promote",
+      "meaning": "népszerűsít, reklámoz"
+    },
+    {
+      "term": "rule out",
+      "meaning": "kizár (lehetőséget)"
+    },
+    {
+      "term": "remains to be seen",
+      "meaning": "majd kiderül, egyelőre nem tudni"
+    }
   ],
   "suggestedMinutes": 15
 }

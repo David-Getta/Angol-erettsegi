@@ -8,6 +8,7 @@
   "title": "From the city to the village",
   "createdAt": "2026-11-05",
   "tags": [],
+  "reservedFor": "diagnostic",
   "section": "writing",
   "type": "informal-email",
   "taskNumber": 1,
@@ -16,23 +17,65 @@
   "situationHu": "A családod nemrég városi lakásból egy falusi házba költözött; válaszolj angol barátod, Liam e-mailjére.",
   "stimulus": "Hi,\nYour mum told my mum that you've moved house – is it true? I can't believe you didn't tell me! Why did you move? Do you like living in a village? And how are you getting on with your little brother now that you have to share a room? Tell me everything!\nLiam",
   "points": [
-    { "id": "p1", "text": "explain why your family decided to move" },
-    { "id": "p2", "text": "compare your life in the village with your life in the city" },
-    { "id": "p3", "text": "describe how sharing a room has affected your relationship with your brother" }
+    {
+      "id": "p1",
+      "text": "explain why your family decided to move"
+    },
+    {
+      "id": "p2",
+      "text": "compare your life in the village with your life in the city"
+    },
+    {
+      "id": "p3",
+      "text": "describe how sharing a room has affected your relationship with your brother"
+    }
   ],
-  "wordLimit": { "min": 120, "max": 150 },
+  "wordLimit": {
+    "min": 120,
+    "max": 150
+  },
   "suggestedMinutes": 35,
   "usefulPhrases": [
-    { "en": "Sorry I didn't tell you earlier – it all happened so fast.", "hu": "Bocs, hogy nem szóltam korábban – minden olyan gyorsan történt." },
-    { "en": "My parents had been thinking about moving for ages.", "hu": "A szüleim már régóta gondolkodtak a költözésen." },
-    { "en": "We needed more space and a garden.", "hu": "Több helyre és kertre volt szükségünk." },
-    { "en": "Compared to the city, the village is much quieter.", "hu": "A városhoz képest a falu sokkal csendesebb." },
-    { "en": "The downside is that it takes me an hour to get to school.", "hu": "A hátránya, hogy egy órába telik beérni az iskolába." },
-    { "en": "to get used to something", "hu": "megszokni valamit" },
-    { "en": "We get on each other's nerves.", "hu": "Az idegeire megyünk egymásnak." },
-    { "en": "On the bright side, …", "hu": "A dolog jó oldala, hogy …" },
-    { "en": "Anyway, that's enough about me. How are things with you?", "hu": "Na de elég rólam. Veled mi újság?" },
-    { "en": "All the best, / Take care,", "hu": "Minden jót: / Vigyázz magadra!" }
+    {
+      "en": "Sorry I didn't tell you earlier – it all happened so fast.",
+      "hu": "Bocs, hogy nem szóltam korábban – minden olyan gyorsan történt."
+    },
+    {
+      "en": "My parents had been thinking about moving for ages.",
+      "hu": "A szüleim már régóta gondolkodtak a költözésen."
+    },
+    {
+      "en": "We needed more space and a garden.",
+      "hu": "Több helyre és kertre volt szükségünk."
+    },
+    {
+      "en": "Compared to the city, the village is much quieter.",
+      "hu": "A városhoz képest a falu sokkal csendesebb."
+    },
+    {
+      "en": "The downside is that it takes me an hour to get to school.",
+      "hu": "A hátránya, hogy egy órába telik beérni az iskolába."
+    },
+    {
+      "en": "to get used to something",
+      "hu": "megszokni valamit"
+    },
+    {
+      "en": "We get on each other's nerves.",
+      "hu": "Az idegeire megyünk egymásnak."
+    },
+    {
+      "en": "On the bright side, …",
+      "hu": "A dolog jó oldala, hogy …"
+    },
+    {
+      "en": "Anyway, that's enough about me. How are things with you?",
+      "hu": "Na de elég rólam. Veled mi újság?"
+    },
+    {
+      "en": "All the best, / Take care,",
+      "hu": "Minden jót: / Vigyázz magadra!"
+    }
   ],
   "checklistExtra": [
     "Az összehasonlításnál használtam középfokot és ellentétes kötőszavakat (whereas, while, compared to)?"

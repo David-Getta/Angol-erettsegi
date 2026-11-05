@@ -8,6 +8,7 @@
   "title": "Sixty minutes to escape",
   "createdAt": "2026-11-05",
   "tags": [],
+  "reservedFor": "mock",
   "section": "language-use",
   "type": "multiple-choice-cloze",
   "instructions": "Read the text and decide which answer (A, B, C or D) best fits each gap. There is an example (0) at the beginning.",
@@ -15,19 +16,37 @@
   "passage": {
     "title": "Sixty minutes to escape",
     "blocks": [
-      { "text": "Last Saturday my friends and I tried an escape room [[0]] the first time. If you are not familiar [[1]] escape rooms, here is how they work. A group of two to six players is locked in a room and has to find the key to the door [[2]] sixty minutes. To do this, they need to solve puzzles, find hidden objects and [[3]] secret codes." },
-      { "text": "Our room was called 'The Professor's Laboratory'. The story was that a famous professor [[4]] disappeared and we had to find his secret notebook. At first we were all looking in different places, and nobody was listening [[5]] anybody else. Then Máté, [[6]] is usually very quiet, suggested working in pairs. It was the [[7]] idea of the day!" },
-      { "text": "We found the notebook with only two minutes left, and we were [[8]] happy that we started screaming. [[9]] the high price – 6,000 forints each – we all want to go again. Next month we [[10]] a room called 'Prison Break'. If we [[11]] out in time again, we'll be the escape champions of our class!" }
+      {
+        "text": "Last Saturday my friends and I tried an escape room [[0]] the first time. If you are not familiar [[1]] escape rooms, here is how they work. A group of two to six players is locked in a room and has to find the key to the door [[2]] sixty minutes. To do this, they need to solve puzzles, find hidden objects and [[3]] secret codes."
+      },
+      {
+        "text": "Our room was called 'The Professor's Laboratory'. The story was that a famous professor [[4]] disappeared and we had to find his secret notebook. At first we were all looking in different places, and nobody was listening [[5]] anybody else. Then Máté, [[6]] is usually very quiet, suggested working in pairs. It was the [[7]] idea of the day!"
+      },
+      {
+        "text": "We found the notebook with only two minutes left, and we were [[8]] happy that we started screaming. [[9]] the high price – 6,000 forints each – we all want to go again. Next month we [[10]] a room called 'Prison Break'. If we [[11]] out in time again, we'll be the escape champions of our class!"
+      }
     ]
   },
   "example": {
     "id": "0",
     "kind": "choice",
     "options": [
-      { "key": "A", "text": "for" },
-      { "key": "B", "text": "at" },
-      { "key": "C", "text": "in" },
-      { "key": "D", "text": "on" }
+      {
+        "key": "A",
+        "text": "for"
+      },
+      {
+        "key": "B",
+        "text": "at"
+      },
+      {
+        "key": "C",
+        "text": "in"
+      },
+      {
+        "key": "D",
+        "text": "on"
+      }
     ],
     "answer": "A",
     "category": "preposition",
@@ -43,10 +62,22 @@
       "id": "1",
       "kind": "choice",
       "options": [
-        { "key": "A", "text": "to" },
-        { "key": "B", "text": "with" },
-        { "key": "C", "text": "about" },
-        { "key": "D", "text": "of" }
+        {
+          "key": "A",
+          "text": "to"
+        },
+        {
+          "key": "B",
+          "text": "with"
+        },
+        {
+          "key": "C",
+          "text": "about"
+        },
+        {
+          "key": "D",
+          "text": "of"
+        }
       ],
       "answer": "B",
       "category": "preposition",
@@ -61,10 +92,22 @@
       "id": "2",
       "kind": "choice",
       "options": [
-        { "key": "A", "text": "during" },
-        { "key": "B", "text": "within" },
-        { "key": "C", "text": "since" },
-        { "key": "D", "text": "until" }
+        {
+          "key": "A",
+          "text": "during"
+        },
+        {
+          "key": "B",
+          "text": "within"
+        },
+        {
+          "key": "C",
+          "text": "since"
+        },
+        {
+          "key": "D",
+          "text": "until"
+        }
       ],
       "answer": "B",
       "category": "preposition",
@@ -79,10 +122,22 @@
       "id": "3",
       "kind": "choice",
       "options": [
-        { "key": "A", "text": "break" },
-        { "key": "B", "text": "make" },
-        { "key": "C", "text": "do" },
-        { "key": "D", "text": "take" }
+        {
+          "key": "A",
+          "text": "break"
+        },
+        {
+          "key": "B",
+          "text": "make"
+        },
+        {
+          "key": "C",
+          "text": "do"
+        },
+        {
+          "key": "D",
+          "text": "take"
+        }
       ],
       "answer": "A",
       "category": "collocation",
@@ -97,10 +152,22 @@
       "id": "4",
       "kind": "choice",
       "options": [
-        { "key": "A", "text": "has" },
-        { "key": "B", "text": "had" },
-        { "key": "C", "text": "was" },
-        { "key": "D", "text": "is" }
+        {
+          "key": "A",
+          "text": "has"
+        },
+        {
+          "key": "B",
+          "text": "had"
+        },
+        {
+          "key": "C",
+          "text": "was"
+        },
+        {
+          "key": "D",
+          "text": "is"
+        }
       ],
       "answer": "B",
       "category": "tense",
@@ -115,10 +182,22 @@
       "id": "5",
       "kind": "choice",
       "options": [
-        { "key": "A", "text": "to" },
-        { "key": "B", "text": "at" },
-        { "key": "C", "text": "for" },
-        { "key": "D", "text": "on" }
+        {
+          "key": "A",
+          "text": "to"
+        },
+        {
+          "key": "B",
+          "text": "at"
+        },
+        {
+          "key": "C",
+          "text": "for"
+        },
+        {
+          "key": "D",
+          "text": "on"
+        }
       ],
       "answer": "A",
       "category": "preposition",
@@ -133,10 +212,22 @@
       "id": "6",
       "kind": "choice",
       "options": [
-        { "key": "A", "text": "which" },
-        { "key": "B", "text": "who" },
-        { "key": "C", "text": "whose" },
-        { "key": "D", "text": "what" }
+        {
+          "key": "A",
+          "text": "which"
+        },
+        {
+          "key": "B",
+          "text": "who"
+        },
+        {
+          "key": "C",
+          "text": "whose"
+        },
+        {
+          "key": "D",
+          "text": "what"
+        }
       ],
       "answer": "B",
       "category": "relative-clause",
@@ -151,10 +242,22 @@
       "id": "7",
       "kind": "choice",
       "options": [
-        { "key": "A", "text": "better" },
-        { "key": "B", "text": "best" },
-        { "key": "C", "text": "good" },
-        { "key": "D", "text": "well" }
+        {
+          "key": "A",
+          "text": "better"
+        },
+        {
+          "key": "B",
+          "text": "best"
+        },
+        {
+          "key": "C",
+          "text": "good"
+        },
+        {
+          "key": "D",
+          "text": "well"
+        }
       ],
       "answer": "B",
       "category": "comparison",
@@ -169,10 +272,22 @@
       "id": "8",
       "kind": "choice",
       "options": [
-        { "key": "A", "text": "so" },
-        { "key": "B", "text": "such" },
-        { "key": "C", "text": "too" },
-        { "key": "D", "text": "very" }
+        {
+          "key": "A",
+          "text": "so"
+        },
+        {
+          "key": "B",
+          "text": "such"
+        },
+        {
+          "key": "C",
+          "text": "too"
+        },
+        {
+          "key": "D",
+          "text": "very"
+        }
       ],
       "answer": "A",
       "category": "linking",
@@ -187,10 +302,22 @@
       "id": "9",
       "kind": "choice",
       "options": [
-        { "key": "A", "text": "Although" },
-        { "key": "B", "text": "Despite" },
-        { "key": "C", "text": "However" },
-        { "key": "D", "text": "Because" }
+        {
+          "key": "A",
+          "text": "Although"
+        },
+        {
+          "key": "B",
+          "text": "Despite"
+        },
+        {
+          "key": "C",
+          "text": "However"
+        },
+        {
+          "key": "D",
+          "text": "Because"
+        }
       ],
       "answer": "B",
       "category": "linking",
@@ -205,10 +332,22 @@
       "id": "10",
       "kind": "choice",
       "options": [
-        { "key": "A", "text": "try" },
-        { "key": "B", "text": "are going to try" },
-        { "key": "C", "text": "tried" },
-        { "key": "D", "text": "have tried" }
+        {
+          "key": "A",
+          "text": "try"
+        },
+        {
+          "key": "B",
+          "text": "are going to try"
+        },
+        {
+          "key": "C",
+          "text": "tried"
+        },
+        {
+          "key": "D",
+          "text": "have tried"
+        }
       ],
       "answer": "B",
       "category": "tense",
@@ -223,10 +362,22 @@
       "id": "11",
       "kind": "choice",
       "options": [
-        { "key": "A", "text": "get" },
-        { "key": "B", "text": "will get" },
-        { "key": "C", "text": "got" },
-        { "key": "D", "text": "would get" }
+        {
+          "key": "A",
+          "text": "get"
+        },
+        {
+          "key": "B",
+          "text": "will get"
+        },
+        {
+          "key": "C",
+          "text": "got"
+        },
+        {
+          "key": "D",
+          "text": "would get"
+        }
       ],
       "answer": "A",
       "category": "conditional",

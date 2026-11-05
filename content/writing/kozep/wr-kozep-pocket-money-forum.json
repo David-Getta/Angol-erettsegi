@@ -8,6 +8,7 @@
   "title": "How do you spend your money?",
   "createdAt": "2026-11-05",
   "tags": [],
+  "reservedFor": "mock",
   "section": "writing",
   "type": "forum",
   "taskNumber": 2,
@@ -15,22 +16,61 @@
   "situation": "An international website for teenagers has started a discussion called \"Money, money, money\". Users are asked to share how they get and spend their money. Write a post for the forum.",
   "situationHu": "Egy nemzetközi tinioldal fórumán arról írnak a felhasználók, honnan van pénzük és mire költik; írj bejegyzést.",
   "points": [
-    { "id": "p1", "text": "say where your money comes from (e.g. pocket money, a part-time job)" },
-    { "id": "p2", "text": "describe what you usually spend it on" },
-    { "id": "p3", "text": "explain whether you save money and what for" },
-    { "id": "p4", "text": "give younger teenagers some advice about money" }
+    {
+      "id": "p1",
+      "text": "say where your money comes from (e.g. pocket money, a part-time job)"
+    },
+    {
+      "id": "p2",
+      "text": "describe what you usually spend it on"
+    },
+    {
+      "id": "p3",
+      "text": "explain whether you save money and what for"
+    },
+    {
+      "id": "p4",
+      "text": "give younger teenagers some advice about money"
+    }
   ],
-  "wordLimit": { "min": 100, "max": 120 },
+  "wordLimit": {
+    "min": 100,
+    "max": 120
+  },
   "suggestedMinutes": 40,
   "usefulPhrases": [
-    { "en": "My parents give me … forints a week / a month.", "hu": "A szüleim heti / havi … forintot adnak." },
-    { "en": "to earn money by babysitting / tutoring", "hu": "pénzt keresni gyerekvigyázással / korrepetálással" },
-    { "en": "Most of my money goes on …", "hu": "A pénzem nagy része …-ra/-re megy el." },
-    { "en": "to save up for something", "hu": "félretenni / spórolni valamire" },
-    { "en": "I'm saving up for a new bike.", "hu": "Egy új biciklire spórolok." },
-    { "en": "It's a good idea to … / You should …", "hu": "Érdemes … / … kellene" },
-    { "en": "to spend money on things you don't really need", "hu": "olyan dolgokra költeni, amikre nincs igazán szükség" },
-    { "en": "First of all, … / Finally, …", "hu": "Először is … / Végül …" }
+    {
+      "en": "My parents give me … forints a week / a month.",
+      "hu": "A szüleim heti / havi … forintot adnak."
+    },
+    {
+      "en": "to earn money by babysitting / tutoring",
+      "hu": "pénzt keresni gyerekvigyázással / korrepetálással"
+    },
+    {
+      "en": "Most of my money goes on …",
+      "hu": "A pénzem nagy része …-ra/-re megy el."
+    },
+    {
+      "en": "to save up for something",
+      "hu": "félretenni / spórolni valamire"
+    },
+    {
+      "en": "I'm saving up for a new bike.",
+      "hu": "Egy új biciklire spórolok."
+    },
+    {
+      "en": "It's a good idea to … / You should …",
+      "hu": "Érdemes … / … kellene"
+    },
+    {
+      "en": "to spend money on things you don't really need",
+      "hu": "olyan dolgokra költeni, amikre nincs igazán szükség"
+    },
+    {
+      "en": "First of all, … / Finally, …",
+      "hu": "Először is … / Végül …"
+    }
   ],
   "checklistExtra": []
 }

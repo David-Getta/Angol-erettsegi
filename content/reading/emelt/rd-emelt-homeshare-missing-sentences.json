@@ -8,6 +8,7 @@
   "title": "A room in exchange for company",
   "createdAt": "2026-11-05",
   "tags": [],
+  "reservedFor": "mock",
   "section": "reading",
   "type": "missing-sentences",
   "instructions": "Read the article about a housing scheme that brings students and older people together. Some sentences have been removed from the text. Choose the most suitable sentence (A–J) for each gap (1–7). There are two extra sentences that you do not need to use. There is an example (0) at the beginning.",
@@ -43,16 +44,46 @@
     ]
   },
   "options": [
-    { "key": "A", "text": "In return, the young person agrees to share meals, help with the shopping or simply be around in the evenings." },
-    { "key": "B", "text": "Within a few weeks, however, the two had stopped speaking to each other." },
-    { "key": "C", "text": "Nobody involved claims that it could, on its own, solve either the housing crisis or the problem of loneliness." },
-    { "key": "D", "text": "Everything he saw was either far too expensive or so small that he could touch both walls at once." },
-    { "key": "E", "text": "Yet money is rarely the reason why they stay for a second year." },
-    { "key": "F", "text": "In their view, this shifts responsibility for vulnerable people onto volunteers with no professional training." },
-    { "key": "G", "text": "As a result, most charities now insist that participants pay a small monthly rent." },
-    { "key": "H", "text": "Having another person in the house, even for a few hours a day, seems to make a real difference." },
-    { "key": "I", "text": "Tomás has since qualified and found a job at a local hospital, but he has no plans to move out." },
-    { "key": "J", "text": "The most common cause is not a dramatic conflict but a slow build-up of different expectations." }
+    {
+      "key": "A",
+      "text": "In return, the young person agrees to share meals, help with the shopping or simply be around in the evenings."
+    },
+    {
+      "key": "B",
+      "text": "Within a few weeks, however, the two had stopped speaking to each other."
+    },
+    {
+      "key": "C",
+      "text": "Nobody involved claims that it could, on its own, solve either the housing crisis or the problem of loneliness."
+    },
+    {
+      "key": "D",
+      "text": "Everything he saw was either far too expensive or so small that he could touch both walls at once."
+    },
+    {
+      "key": "E",
+      "text": "Yet money is rarely the reason why they stay for a second year."
+    },
+    {
+      "key": "F",
+      "text": "In their view, this shifts responsibility for vulnerable people onto volunteers with no professional training."
+    },
+    {
+      "key": "G",
+      "text": "As a result, most charities now insist that participants pay a small monthly rent."
+    },
+    {
+      "key": "H",
+      "text": "Having another person in the house, even for a few hours a day, seems to make a real difference."
+    },
+    {
+      "key": "I",
+      "text": "Tomás has since qualified and found a job at a local hospital, but he has no plans to move out."
+    },
+    {
+      "key": "J",
+      "text": "The most common cause is not a dramatic conflict but a slow build-up of different expectations."
+    }
   ],
   "optionsReusable": false,
   "example": {
@@ -143,17 +174,50 @@
     }
   ],
   "glossary": [
-    { "term": "rent-free", "meaning": "lakbér nélkül, ingyen" },
-    { "term": "spacious", "meaning": "tágas" },
-    { "term": "on one condition", "meaning": "egy feltétellel" },
-    { "term": "spare room", "meaning": "üres (vendég)szoba" },
-    { "term": "references", "meaning": "ajánlások, referenciák" },
-    { "term": "priced out", "meaning": "kiszorul (a magas árak miatt)" },
-    { "term": "dementia", "meaning": "demencia, szellemi leépülés" },
-    { "term": "match", "meaning": "párosítás, összeillő pár" },
-    { "term": "host", "meaning": "vendéglátó, szállásadó" },
-    { "term": "rely on", "meaning": "támaszkodik valamire/valakire" },
-    { "term": "obstacle", "meaning": "akadály" }
+    {
+      "term": "rent-free",
+      "meaning": "lakbér nélkül, ingyen"
+    },
+    {
+      "term": "spacious",
+      "meaning": "tágas"
+    },
+    {
+      "term": "on one condition",
+      "meaning": "egy feltétellel"
+    },
+    {
+      "term": "spare room",
+      "meaning": "üres (vendég)szoba"
+    },
+    {
+      "term": "references",
+      "meaning": "ajánlások, referenciák"
+    },
+    {
+      "term": "priced out",
+      "meaning": "kiszorul (a magas árak miatt)"
+    },
+    {
+      "term": "dementia",
+      "meaning": "demencia, szellemi leépülés"
+    },
+    {
+      "term": "match",
+      "meaning": "párosítás, összeillő pár"
+    },
+    {
+      "term": "host",
+      "meaning": "vendéglátó, szállásadó"
+    },
+    {
+      "term": "rely on",
+      "meaning": "támaszkodik valamire/valakire"
+    },
+    {
+      "term": "obstacle",
+      "meaning": "akadály"
+    }
   ],
   "suggestedMinutes": 15
 }

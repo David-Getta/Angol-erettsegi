@@ -8,6 +8,7 @@
   "title": "Thirty-two hours a week",
   "createdAt": "2026-11-05",
   "tags": [],
+  "reservedFor": "mock",
   "section": "language-use",
   "type": "multiple-choice-cloze",
   "instructions": "Read the text and decide which word or phrase (A, B, C or D) best fits each gap. There is an example (0) at the beginning.",
@@ -15,20 +16,40 @@
   "passage": {
     "title": "Thirty-two hours a week",
     "blocks": [
-      { "text": "When the managers of Brightwell, a small marketing agency in Leeds, announced that staff would work only four days a week for the same salary, many employees thought it was too good to be [[0]]. The six-month trial was [[1]] of a national experiment involving more than sixty companies, and its results have just been published." },
-      { "text": "The first few weeks were not easy. Employees had to [[2]] the same amount of work into fewer hours, so meetings were cut [[3]] to thirty minutes, and everyone agreed not to send emails after six o'clock [[4]] it was absolutely necessary." },
-      { "text": "The results surprised even the [[5]] critics of the idea. Productivity, far [[6]] falling, rose slightly, and since the four-day week was introduced, the number of sick days [[7]] by almost two thirds. Several employees said that they felt more [[8]] and much less exhausted at the end of the week." },
-      { "text": "Not everything went smoothly, however. Some team leaders [[9]] that they spent their day off answering urgent calls from clients, and the receptionist pointed out that someone still [[10]] to answer the phone on Fridays. The company solved the problem [[11]] introducing a rota, so staff now take turns to work on Fridays and have a different day off instead. Last month, Brightwell decided to make the four-day week [[12]]. 'We are never going back,' says the director." }
+      {
+        "text": "When the managers of Brightwell, a small marketing agency in Leeds, announced that staff would work only four days a week for the same salary, many employees thought it was too good to be [[0]]. The six-month trial was [[1]] of a national experiment involving more than sixty companies, and its results have just been published."
+      },
+      {
+        "text": "The first few weeks were not easy. Employees had to [[2]] the same amount of work into fewer hours, so meetings were cut [[3]] to thirty minutes, and everyone agreed not to send emails after six o'clock [[4]] it was absolutely necessary."
+      },
+      {
+        "text": "The results surprised even the [[5]] critics of the idea. Productivity, far [[6]] falling, rose slightly, and since the four-day week was introduced, the number of sick days [[7]] by almost two thirds. Several employees said that they felt more [[8]] and much less exhausted at the end of the week."
+      },
+      {
+        "text": "Not everything went smoothly, however. Some team leaders [[9]] that they spent their day off answering urgent calls from clients, and the receptionist pointed out that someone still [[10]] to answer the phone on Fridays. The company solved the problem [[11]] introducing a rota, so staff now take turns to work on Fridays and have a different day off instead. Last month, Brightwell decided to make the four-day week [[12]]. 'We are never going back,' says the director."
+      }
     ]
   },
   "example": {
     "id": "0",
     "kind": "choice",
     "options": [
-      { "key": "A", "text": "true" },
-      { "key": "B", "text": "real" },
-      { "key": "C", "text": "right" },
-      { "key": "D", "text": "certain" }
+      {
+        "key": "A",
+        "text": "true"
+      },
+      {
+        "key": "B",
+        "text": "real"
+      },
+      {
+        "key": "C",
+        "text": "right"
+      },
+      {
+        "key": "D",
+        "text": "certain"
+      }
     ],
     "answer": "A",
     "category": "collocation",
@@ -44,10 +65,22 @@
       "id": "1",
       "kind": "choice",
       "options": [
-        { "key": "A", "text": "part" },
-        { "key": "B", "text": "piece" },
-        { "key": "C", "text": "portion" },
-        { "key": "D", "text": "member" }
+        {
+          "key": "A",
+          "text": "part"
+        },
+        {
+          "key": "B",
+          "text": "piece"
+        },
+        {
+          "key": "C",
+          "text": "portion"
+        },
+        {
+          "key": "D",
+          "text": "member"
+        }
       ],
       "answer": "A",
       "category": "collocation",
@@ -62,10 +95,22 @@
       "id": "2",
       "kind": "choice",
       "options": [
-        { "key": "A", "text": "fit" },
-        { "key": "B", "text": "set" },
-        { "key": "C", "text": "fill" },
-        { "key": "D", "text": "hold" }
+        {
+          "key": "A",
+          "text": "fit"
+        },
+        {
+          "key": "B",
+          "text": "set"
+        },
+        {
+          "key": "C",
+          "text": "fill"
+        },
+        {
+          "key": "D",
+          "text": "hold"
+        }
       ],
       "answer": "A",
       "category": "collocation",
@@ -80,10 +125,22 @@
       "id": "3",
       "kind": "choice",
       "options": [
-        { "key": "A", "text": "down" },
-        { "key": "B", "text": "off" },
-        { "key": "C", "text": "out" },
-        { "key": "D", "text": "up" }
+        {
+          "key": "A",
+          "text": "down"
+        },
+        {
+          "key": "B",
+          "text": "off"
+        },
+        {
+          "key": "C",
+          "text": "out"
+        },
+        {
+          "key": "D",
+          "text": "up"
+        }
       ],
       "answer": "A",
       "category": "phrasal-verb",
@@ -98,10 +155,22 @@
       "id": "4",
       "kind": "choice",
       "options": [
-        { "key": "A", "text": "unless" },
-        { "key": "B", "text": "if" },
-        { "key": "C", "text": "except" },
-        { "key": "D", "text": "otherwise" }
+        {
+          "key": "A",
+          "text": "unless"
+        },
+        {
+          "key": "B",
+          "text": "if"
+        },
+        {
+          "key": "C",
+          "text": "except"
+        },
+        {
+          "key": "D",
+          "text": "otherwise"
+        }
       ],
       "answer": "A",
       "category": "linking",
@@ -116,10 +185,22 @@
       "id": "5",
       "kind": "choice",
       "options": [
-        { "key": "A", "text": "fiercest" },
-        { "key": "B", "text": "heaviest" },
-        { "key": "C", "text": "deepest" },
-        { "key": "D", "text": "widest" }
+        {
+          "key": "A",
+          "text": "fiercest"
+        },
+        {
+          "key": "B",
+          "text": "heaviest"
+        },
+        {
+          "key": "C",
+          "text": "deepest"
+        },
+        {
+          "key": "D",
+          "text": "widest"
+        }
       ],
       "answer": "A",
       "category": "collocation",
@@ -134,10 +215,22 @@
       "id": "6",
       "kind": "choice",
       "options": [
-        { "key": "A", "text": "from" },
-        { "key": "B", "text": "away" },
-        { "key": "C", "text": "off" },
-        { "key": "D", "text": "out" }
+        {
+          "key": "A",
+          "text": "from"
+        },
+        {
+          "key": "B",
+          "text": "away"
+        },
+        {
+          "key": "C",
+          "text": "off"
+        },
+        {
+          "key": "D",
+          "text": "out"
+        }
       ],
       "answer": "A",
       "category": "collocation",
@@ -152,10 +245,22 @@
       "id": "7",
       "kind": "choice",
       "options": [
-        { "key": "A", "text": "has fallen" },
-        { "key": "B", "text": "have fallen" },
-        { "key": "C", "text": "fell" },
-        { "key": "D", "text": "has been fallen" }
+        {
+          "key": "A",
+          "text": "has fallen"
+        },
+        {
+          "key": "B",
+          "text": "have fallen"
+        },
+        {
+          "key": "C",
+          "text": "fell"
+        },
+        {
+          "key": "D",
+          "text": "has been fallen"
+        }
       ],
       "answer": "A",
       "category": "agreement",
@@ -170,10 +275,22 @@
       "id": "8",
       "kind": "choice",
       "options": [
-        { "key": "A", "text": "motivated" },
-        { "key": "B", "text": "motivating" },
-        { "key": "C", "text": "motivation" },
-        { "key": "D", "text": "motive" }
+        {
+          "key": "A",
+          "text": "motivated"
+        },
+        {
+          "key": "B",
+          "text": "motivating"
+        },
+        {
+          "key": "C",
+          "text": "motivation"
+        },
+        {
+          "key": "D",
+          "text": "motive"
+        }
       ],
       "answer": "A",
       "category": "word-formation",
@@ -188,10 +305,22 @@
       "id": "9",
       "kind": "choice",
       "options": [
-        { "key": "A", "text": "complained" },
-        { "key": "B", "text": "accused" },
-        { "key": "C", "text": "blamed" },
-        { "key": "D", "text": "criticised" }
+        {
+          "key": "A",
+          "text": "complained"
+        },
+        {
+          "key": "B",
+          "text": "accused"
+        },
+        {
+          "key": "C",
+          "text": "blamed"
+        },
+        {
+          "key": "D",
+          "text": "criticised"
+        }
       ],
       "answer": "A",
       "category": "word-choice",
@@ -206,10 +335,22 @@
       "id": "10",
       "kind": "choice",
       "options": [
-        { "key": "A", "text": "had" },
-        { "key": "B", "text": "must" },
-        { "key": "C", "text": "should" },
-        { "key": "D", "text": "can" }
+        {
+          "key": "A",
+          "text": "had"
+        },
+        {
+          "key": "B",
+          "text": "must"
+        },
+        {
+          "key": "C",
+          "text": "should"
+        },
+        {
+          "key": "D",
+          "text": "can"
+        }
       ],
       "answer": "A",
       "category": "modal",
@@ -224,10 +365,22 @@
       "id": "11",
       "kind": "choice",
       "options": [
-        { "key": "A", "text": "by" },
-        { "key": "B", "text": "with" },
-        { "key": "C", "text": "through" },
-        { "key": "D", "text": "for" }
+        {
+          "key": "A",
+          "text": "by"
+        },
+        {
+          "key": "B",
+          "text": "with"
+        },
+        {
+          "key": "C",
+          "text": "through"
+        },
+        {
+          "key": "D",
+          "text": "for"
+        }
       ],
       "answer": "A",
       "category": "preposition",
@@ -242,10 +395,22 @@
       "id": "12",
       "kind": "choice",
       "options": [
-        { "key": "A", "text": "permanent" },
-        { "key": "B", "text": "constant" },
-        { "key": "C", "text": "lasting" },
-        { "key": "D", "text": "continuous" }
+        {
+          "key": "A",
+          "text": "permanent"
+        },
+        {
+          "key": "B",
+          "text": "constant"
+        },
+        {
+          "key": "C",
+          "text": "lasting"
+        },
+        {
+          "key": "D",
+          "text": "continuous"
+        }
       ],
       "answer": "A",
       "category": "word-choice",

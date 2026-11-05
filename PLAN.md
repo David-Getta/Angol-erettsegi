@@ -84,3 +84,6 @@ A fázisok után az app mindig futtatható; ami kész, az használható.
 | D18 | Nincs ESLint (a Next 16 kivette a `next lint`-et); a minőségkapu a `tsc --noEmit` strict módban + tesztek | kevesebb függőség |
 | D19 | Hang: Web Speech API; beszélőnként a böngésző angol hangjai közül nem/akcentus szerint választ; ha csak egy hang van, hangmagassággal különít el | ingyenes, offline is működik Chrome-ban (a beszédfelismeréshez internet kell a Chrome-nak) |
 | D20 | Ha a Web Speech beszédfelismerés nem elérhető, a szóbeli választ be is lehet gépelni (`transcriptSource: "typed"`) | Firefox/Safari alatt is használható maradjon |
+| D21 | A próbaérettségi hallási részének ideje legalább a becsült TTS-hanganyag (2 meghallgatás + felkészülés + szünetek) + 2 perc | a felolvasás sebessége gépenként eltér; a rész ne érjen véget, mielőtt a hanganyag kétszer elhangzik |
+| D22 | Szintenként egy teljes szett `reservedFor: "mock"`, egy rövid szett `"diagnostic"` jelölést kapott; a próbaérettségi először a fenntartottakat, majd a többi megoldatlant használja | így gyakorlás közben sem fogy el a próbaérettségi szettje |
+| D23 | Párhuzamosan generált tartalomnál utólag kiszűrtük az azonos szintű, ugyanazt a témát feldolgozó szövegeket (6 nyelvhelyességi szöveg új témát kapott) | „ne ismétlődjenek szövegek és helyzetek” |
