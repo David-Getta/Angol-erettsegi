@@ -85,10 +85,21 @@ export function numberWordsToDigits(s: string): string {
   return out.join(" ");
 }
 
-/** Normalization used when checking an answer: normalizeAnswer + numbers as digits. */
+/** Thousands separators in numbers ("5 000", "5.000", "5,000") are dropped: 5000. */
+export function joinThousands(s: string): string {
+  let prev = "";
+  let out = s;
+  while (out !== prev) {
+    prev = out;
+    out = out.replace(/(\d)[ .,](\d{3})(?!\d)/g, "$1$2");
+  }
+  return out;
+}
+
+/** Normalization used when checking an answer: normalizeAnswer + numbers as digits, thousands separators dropped. */
 export function normalizeForCheck(raw: string): string {
   const s = normalizeAnswer(raw);
-  return s === CORRECT_MARKER ? s : numberWordsToDigits(s);
+  return s === CORRECT_MARKER ? s : joinThousands(numberWordsToDigits(s));
 }
 
 /** Classic Levenshtein distance (small strings only). */

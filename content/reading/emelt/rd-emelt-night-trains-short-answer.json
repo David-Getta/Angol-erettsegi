@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "id": "rd-emelt-night-trains-short-answer",
-  "revision": 1,
+  "revision": 2,
   "level": "emelt",
   "source": "generated",
   "topic": "utazas",
@@ -14,7 +14,7 @@
   "instructionsHu": "Olvasd el az éjszakai vonatokról szóló cikket, és válaszolj a kérdésekre legfeljebb négy szóval. A 0. a példa.",
   "passage": {
     "title": "Sleeping your way across Europe",
-    "subtitle": "Night trains, which almost disappeared fifteen years ago, are making a comeback. Our reporter boarded one to find out why.",
+    "subtitle": "Night trains, which almost disappeared a decade ago, are making a comeback. Our reporter boarded one to find out why.",
     "blocks": [
       {
         "text": "At 7.40 on a Thursday evening, the platform at Amsterdam Centraal is crowded with an unusual mix of passengers: a family with three sleepy children, two businesswomen with laptop bags, a group of students carrying enough snacks for a week. All of them are waiting for the overnight service to Vienna, which will cover more than 1,100 kilometres while they sleep. If everything goes to plan, they will step off the train at half past nine the next morning, in the middle of the city, without having passed through a single security check."
@@ -43,7 +43,10 @@
     "id": "0",
     "kind": "text",
     "prompt": "Which city is the night train travelling to?",
-    "answer": ["Vienna", "to Vienna"],
+    "answer": [
+      "Vienna",
+      "to Vienna"
+    ],
     "maxWords": 4,
     "category": "detail",
     "explanation": "Vienna (Bécs) – az utasok az éjszakai Bécsbe tartó járatra várnak („the overnight service to Vienna”).",
@@ -159,7 +162,13 @@
       "id": "6",
       "kind": "text",
       "prompt": "Which place do the retired couple particularly dislike?",
-      "answer": ["airports", "airport", "the airport", "the airports", "an airport"],
+      "answer": [
+        "airports",
+        "airport",
+        "the airport",
+        "the airports",
+        "an airport"
+      ],
       "maxWords": 4,
       "category": "detail",
       "explanation": "Airports (repülőterek). Az utrechti nyugdíjas házaspár egyszerűen utálja a repülőtereket („they simply hate airports”) – a „particularly dislike” ennek az átfogalmazása.",
@@ -169,7 +178,11 @@
       "id": "7",
       "kind": "text",
       "prompt": "In which country was the train held up for nearly an hour?",
-      "answer": ["Germany", "in Germany", "somewhere in Germany"],
+      "answer": [
+        "Germany",
+        "in Germany",
+        "somewhere in Germany"
+      ],
       "maxWords": 4,
       "category": "detail",
       "explanation": "Germany (Németország). A riporter útján a vonat majdnem egy órát állt valahol Németországban, magyarázat nélkül („held up” = feltartóztatták, késett).",
@@ -179,7 +192,11 @@
       "id": "8",
       "kind": "text",
       "prompt": "Which meal do passengers not have to pay extra for?",
-      "answer": ["breakfast", "a breakfast", "the breakfast"],
+      "answer": [
+        "breakfast",
+        "a breakfast",
+        "the breakfast"
+      ],
       "maxWords": 4,
       "category": "detail",
       "explanation": "Breakfast (reggeli). A reggeli (zsemle, vaj, lekvár, kávé) benne van a jegy árában („is included in the ticket price”), tehát nem kell külön fizetni érte.",
@@ -189,7 +206,10 @@
       "id": "9",
       "kind": "text",
       "prompt": "Which city does Lukas plan to visit next?",
-      "answer": ["Stockholm", "to Stockholm"],
+      "answer": [
+        "Stockholm",
+        "to Stockholm"
+      ],
       "maxWords": 4,
       "category": "detail",
       "explanation": "Stockholm. Lukas már a következő útját tervezi, Stockholmba („his next trip, to Stockholm”).",
@@ -197,17 +217,50 @@
     }
   ],
   "glossary": [
-    { "term": "platform", "meaning": "peron" },
-    { "term": "overnight service", "meaning": "éjszakai járat" },
-    { "term": "sleeper services", "meaning": "hálókocsis járatok" },
-    { "term": "short-haul flight", "meaning": "rövid távú repülőjárat" },
-    { "term": "carriages", "meaning": "vasúti kocsik" },
-    { "term": "couchette", "meaning": "fekvőhelyes (kusett) fülke" },
-    { "term": "on a tight budget", "meaning": "szűkös pénzből, kevés pénzzel" },
-    { "term": "cancel out", "meaning": "semmissé tesz, kiolt (hatást)" },
-    { "term": "drawbacks", "meaning": "hátrányok" },
-    { "term": "shudder", "meaning": "rázkódik, megremeg" },
-    { "term": "outskirts", "meaning": "külváros, peremkerület" }
+    {
+      "term": "platform",
+      "meaning": "peron"
+    },
+    {
+      "term": "overnight service",
+      "meaning": "éjszakai járat"
+    },
+    {
+      "term": "sleeper services",
+      "meaning": "hálókocsis járatok"
+    },
+    {
+      "term": "short-haul flight",
+      "meaning": "rövid távú repülőjárat"
+    },
+    {
+      "term": "carriages",
+      "meaning": "vasúti kocsik"
+    },
+    {
+      "term": "couchette",
+      "meaning": "fekvőhelyes (kusett) fülke"
+    },
+    {
+      "term": "on a tight budget",
+      "meaning": "szűkös pénzből, kevés pénzzel"
+    },
+    {
+      "term": "cancel out",
+      "meaning": "semmissé tesz, kiolt (hatást)"
+    },
+    {
+      "term": "drawbacks",
+      "meaning": "hátrányok"
+    },
+    {
+      "term": "shudder",
+      "meaning": "rázkódik, megremeg"
+    },
+    {
+      "term": "outskirts",
+      "meaning": "külváros, peremkerület"
+    }
   ],
   "suggestedMinutes": 15
 }

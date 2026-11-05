@@ -93,3 +93,13 @@ describe("numbers written in words", () => {
     expect(checkItem({}, item, "241").correct).toBe(false);
   });
 });
+
+describe("thousands separators", () => {
+  it("treats 5 000, 5.000, 5,000 and five thousand as 5000, but keeps decimals and times", async () => {
+    const { normalizeForCheck } = await import("@/lib/scoring/check");
+    for (const x of ["5000", "5 000", "5.000", "5,000", "five thousand", "about 5 000"]) expect(normalizeForCheck(x).replace("about ", "")).toBe("5000");
+    expect(normalizeForCheck("1,250,000")).toBe("1250000");
+    expect(normalizeForCheck("7.30")).toBe("7.30");
+    expect(normalizeForCheck("2.5 km")).toBe("2.5 km");
+  });
+});
