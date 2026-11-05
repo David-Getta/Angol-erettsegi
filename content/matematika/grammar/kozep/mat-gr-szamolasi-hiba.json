@@ -182,23 +182,23 @@
         },
         {
           "key": "B",
-          "text": "30"
+          "text": "300"
         },
         {
           "key": "C",
-          "text": "300"
+          "text": "30"
         },
         {
           "key": "D",
           "text": "3000"
         }
       ],
-      "answer": "C",
+      "answer": "B",
       "category": "szamolasi-hiba",
       "explanation": "A helyes: 300. 0,48 ≈ 0,5 és 612 ≈ 600, így a szorzat ≈ 300 (pontosan 293,76). A becslés megmutatja, ha a tizedesvessző rossz helyre került.",
       "wrongOptions": {
         "A": "A 3 két nagyságrenddel kisebb: ez 0,0048 · 612 lenne.",
-        "B": "A 30 tized akkora: ez 0,048 · 612 lenne.",
+        "C": "A 30 tized akkora: ez 0,048 · 612 lenne.",
         "D": "A 3000 tízszer nagyobb: ez 4,8 · 612 lenne."
       }
     }

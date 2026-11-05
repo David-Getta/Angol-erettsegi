@@ -32,14 +32,26 @@
     "kind": "choice",
     "prompt": "Melyik élőlény termelő a hálózatban?",
     "options": [
-      { "key": "A", "text": "zooplankton" },
-      { "key": "B", "text": "hínár" },
-      { "key": "C", "text": "csiga" },
-      { "key": "D", "text": "ponty" }
+      {
+        "key": "A",
+        "text": "hínár"
+      },
+      {
+        "key": "B",
+        "text": "zooplankton"
+      },
+      {
+        "key": "C",
+        "text": "csiga"
+      },
+      {
+        "key": "D",
+        "text": "ponty"
+      }
     ],
-    "answer": "B",
+    "answer": "A",
     "category": "okologiai-osszefugges",
-    "explanation": "Helyes: B. Termelő az, amely fotoszintézissel maga állítja elő szerves anyagát, és amelyből a leírás szerint csak kiinduló nyíl van: a hínár és a fitoplankton. A zooplankton, a csiga és a ponty fogyasztó."
+    "explanation": "Helyes: A. Termelő az, amely fotoszintézissel maga állítja elő szerves anyagát, és amelyből a leírás szerint csak kiinduló nyíl van: a hínár és a fitoplankton. A zooplankton, a csiga és a ponty fogyasztó."
   },
   "items": [
     {
@@ -47,25 +59,44 @@
       "kind": "choice",
       "prompt": "Melyik élőlény elsődleges fogyasztó (növényevő)?",
       "options": [
-        { "key": "A", "text": "ponty" },
-        { "key": "B", "text": "csuka" },
-        { "key": "C", "text": "csiga" },
-        { "key": "D", "text": "hínár" }
+        {
+          "key": "A",
+          "text": "ponty"
+        },
+        {
+          "key": "B",
+          "text": "csuka"
+        },
+        {
+          "key": "C",
+          "text": "hínár"
+        },
+        {
+          "key": "D",
+          "text": "csiga"
+        }
       ],
-      "answer": "C",
+      "answer": "D",
       "category": "okologiai-osszefugges",
-      "explanation": "Helyes: C. A csiga a hínárt (termelőt) fogyasztja, tehát elsődleges fogyasztó – ugyanúgy, mint a fitoplanktont evő zooplankton.",
+      "explanation": "Helyes: D. A csiga a hínárt (termelőt) fogyasztja, tehát elsődleges fogyasztó – ugyanúgy, mint a fitoplanktont evő zooplankton.",
       "wrongOptions": {
         "A": "A ponty zooplanktont és csigát eszik, tehát másodlagos fogyasztó.",
         "B": "A csuka pontyot eszik, ezért harmadlagos fogyasztó.",
-        "D": "A hínár termelő, nem fogyasztó."
+        "C": "A hínár termelő, nem fogyasztó."
       }
     },
     {
       "id": "2",
       "kind": "text",
       "prompt": "Hány táplálkozási szintből áll a leghosszabb tápláléklánc, amely a fitoplanktontól a szürke gémig vezet?",
-      "answer": ["5", "öt", "5 szint", "öt szint", "ötből", "5 táplálkozási szint"],
+      "answer": [
+        "5",
+        "öt",
+        "5 szint",
+        "öt szint",
+        "ötből",
+        "5 táplálkozási szint"
+      ],
       "maxWords": 3,
       "category": "abra-adatelemzes",
       "explanation": "Helyes: 5. A leghosszabb lánc: fitoplankton → zooplankton → ponty → csuka → szürke gém, azaz termelő, elsődleges, másodlagos, harmadlagos és negyedleges fogyasztó – öt szint."
@@ -82,7 +113,15 @@
       "id": "4",
       "kind": "text",
       "prompt": "A táblázat szerint hány százaléka a másodlagos fogyasztók biomasszája az elsődleges fogyasztókénak?",
-      "answer": ["10", "10%", "tíz", "tíz százalék", "10 százalék", "egytized", "1/10"],
+      "answer": [
+        "10",
+        "10%",
+        "tíz",
+        "tíz százalék",
+        "10 százalék",
+        "egytized",
+        "1/10"
+      ],
       "maxWords": 3,
       "category": "okologiai-szamitas",
       "explanation": "Helyes: 10%. 20 kg / 200 kg = 0,1, azaz 10%. A biomassza szintenként nagyságrenddel csökken, mert az elfogyasztott energia nagy része légzéssel hővé alakul, és nem épül be a következő szint testébe."
@@ -92,10 +131,22 @@
       "kind": "choice",
       "prompt": "Mi a legvalószínűbb következménye annak, ha a tóból a horgászok kifogják az összes csukát?",
       "options": [
-        { "key": "A", "text": "A pontyok egyedszáma csökken." },
-        { "key": "B", "text": "A pontyok egyedszáma nő, ezért a zooplankton és a csiga egyedszáma csökken." },
-        { "key": "C", "text": "A hínár mennyisége erősen csökken." },
-        { "key": "D", "text": "A szürke gém kipusztul, mert elfogy a tápláléka." }
+        {
+          "key": "A",
+          "text": "A pontyok egyedszáma csökken."
+        },
+        {
+          "key": "B",
+          "text": "A pontyok egyedszáma nő, ezért a zooplankton és a csiga egyedszáma csökken."
+        },
+        {
+          "key": "C",
+          "text": "A hínár mennyisége erősen csökken."
+        },
+        {
+          "key": "D",
+          "text": "A szürke gém kipusztul, mert elfogy a tápláléka."
+        }
       ],
       "answer": "B",
       "category": "okologiai-osszefugges",
@@ -118,7 +169,16 @@
       "id": "7",
       "kind": "text",
       "prompt": "Hogyan nevezzük azokat az élőlényeket (pl. baktériumok, gombák), amelyek az elpusztult élőlények szerves anyagát szervetlen anyagokká bontják, és így zárják a tó anyagforgalmát?",
-      "answer": ["lebontók", "lebontó szervezetek", "lebontó", "lebontó élőlények", "szaprofiták", "reducensek", "dekomponálók", "lebontók (reducensek)"],
+      "answer": [
+        "lebontók",
+        "lebontó szervezetek",
+        "lebontó",
+        "lebontó élőlények",
+        "szaprofiták",
+        "reducensek",
+        "dekomponálók",
+        "lebontók (reducensek)"
+      ],
       "maxWords": 3,
       "category": "fogalomhasznalat",
       "explanation": "Helyes: lebontók (reducensek, szaprofiták). Az elhalt szervezetek és az ürülék szerves anyagait baktériumok és gombák bontják szervetlen anyagokká (CO₂, víz, ásványi sók), amelyeket a termelők újra felvehetnek – nélkülük az anyagforgalom nem záródna."

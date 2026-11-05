@@ -17,12 +17,24 @@
     "kind": "choice",
     "prompt": "Mennyi sin 30° értéke?",
     "options": [
-      { "key": "A", "text": "1/2" },
-      { "key": "B", "text": "√2/2" },
-      { "key": "C", "text": "√3/2" },
-      { "key": "D", "text": "1" }
+      {
+        "key": "A",
+        "text": "√2/2"
+      },
+      {
+        "key": "B",
+        "text": "1/2"
+      },
+      {
+        "key": "C",
+        "text": "√3/2"
+      },
+      {
+        "key": "D",
+        "text": "1"
+      }
     ],
-    "answer": "A",
+    "answer": "B",
     "category": "definicio-tetel",
     "explanation": "A 30°-os szög szinusza 1/2: a 30°–60°–90°-os háromszögben a 30°-kal szemközti befogó az átfogó fele. √2/2 a 45°, √3/2 a 60° szinusza."
   },
@@ -32,18 +44,30 @@
       "kind": "choice",
       "prompt": "Mennyi cos 120° értéke?",
       "options": [
-        { "key": "A", "text": "1/2" },
-        { "key": "B", "text": "−1/2" },
-        { "key": "C", "text": "√3/2" },
-        { "key": "D", "text": "−√3/2" }
+        {
+          "key": "A",
+          "text": "1/2"
+        },
+        {
+          "key": "B",
+          "text": "−√3/2"
+        },
+        {
+          "key": "C",
+          "text": "√3/2"
+        },
+        {
+          "key": "D",
+          "text": "−1/2"
+        }
       ],
-      "answer": "B",
+      "answer": "D",
       "category": "definicio-tetel",
       "explanation": "120° a II. síknegyedben van, ott a koszinusz negatív. cos 120° = −cos 60° = −1/2 (az egységkörön a 120°-hoz tartozó pont x-koordinátája).",
       "wrongOptions": {
         "A": "1/2 a cos 60°; 120°-nál az előjel negatív.",
-        "C": "√3/2 a sin 120° (vagy a cos 30°) értéke, nem a koszinusz.",
-        "D": "−√3/2 a cos 150° értéke."
+        "B": "−√3/2 a cos 150° értéke.",
+        "C": "√3/2 a sin 120° (vagy a cos 30°) értéke, nem a koszinusz."
       }
     },
     {
@@ -51,16 +75,28 @@
       "kind": "choice",
       "prompt": "Hány fok a 3π/4 radián?",
       "options": [
-        { "key": "A", "text": "120°" },
-        { "key": "B", "text": "135°" },
-        { "key": "C", "text": "150°" },
-        { "key": "D", "text": "225°" }
+        {
+          "key": "A",
+          "text": "135°"
+        },
+        {
+          "key": "B",
+          "text": "120°"
+        },
+        {
+          "key": "C",
+          "text": "150°"
+        },
+        {
+          "key": "D",
+          "text": "225°"
+        }
       ],
-      "answer": "B",
+      "answer": "A",
       "category": "mertekegyseg-kerekites",
       "explanation": "π radián = 180°, ezért 3π/4 = 3·180°/4 = 135°.",
       "wrongOptions": {
-        "A": "120° = 2π/3 radián.",
+        "B": "120° = 2π/3 radián.",
         "C": "150° = 5π/6 radián.",
         "D": "225° = 5π/4 radián."
       }
@@ -70,16 +106,28 @@
       "kind": "choice",
       "prompt": "Melyik azonosság igaz minden olyan valós x-re, ahol a kifejezések értelmezettek?",
       "options": [
-        { "key": "A", "text": "sin²x + cos²x = 1" },
-        { "key": "B", "text": "sin 2x = 2 sin x" },
-        { "key": "C", "text": "cos 2x = 2 cos x" },
-        { "key": "D", "text": "tg x · ctg x = 0" }
+        {
+          "key": "A",
+          "text": "sin 2x = 2 sin x"
+        },
+        {
+          "key": "B",
+          "text": "sin²x + cos²x = 1"
+        },
+        {
+          "key": "C",
+          "text": "cos 2x = 2 cos x"
+        },
+        {
+          "key": "D",
+          "text": "tg x · ctg x = 0"
+        }
       ],
-      "answer": "A",
+      "answer": "B",
       "category": "definicio-tetel",
       "explanation": "A pitagoraszi azonosság: sin²x + cos²x = 1 minden x-re (az egységkör pontjának koordinátái). A helyes kétszeres szögű képletek: sin 2x = 2 sin x cos x, cos 2x = cos²x − sin²x; tg x · ctg x = 1.",
       "wrongOptions": {
-        "B": "sin 2x = 2 sin x · cos x; pl. x = 90°-nál sin 180° = 0 ≠ 2·1.",
+        "A": "sin 2x = 2 sin x · cos x; pl. x = 90°-nál sin 180° = 0 ≠ 2·1.",
         "C": "cos 2x = cos²x − sin²x = 2cos²x − 1; pl. x = 0-nál cos 0 = 1 ≠ 2.",
         "D": "tg x · ctg x = (sin x/cos x)·(cos x/sin x) = 1, nem 0."
       }
@@ -89,10 +137,22 @@
       "kind": "choice",
       "prompt": "Mennyi az f(x) = 3·sin(2x) függvény periódusa?",
       "options": [
-        { "key": "A", "text": "2π" },
-        { "key": "B", "text": "π" },
-        { "key": "C", "text": "π/2" },
-        { "key": "D", "text": "3π" }
+        {
+          "key": "A",
+          "text": "2π"
+        },
+        {
+          "key": "B",
+          "text": "π"
+        },
+        {
+          "key": "C",
+          "text": "π/2"
+        },
+        {
+          "key": "D",
+          "text": "3π"
+        }
       ],
       "answer": "B",
       "category": "fuggveny-abrazolas",
@@ -108,16 +168,28 @@
       "kind": "choice",
       "prompt": "Egy háromszög két oldala 5 és 8 egység, a közbezárt szögük 60°. Mekkora a harmadik oldal?",
       "options": [
-        { "key": "A", "text": "7" },
-        { "key": "B", "text": "√89" },
-        { "key": "C", "text": "9" },
-        { "key": "D", "text": "√129" }
+        {
+          "key": "A",
+          "text": "√89"
+        },
+        {
+          "key": "B",
+          "text": "7"
+        },
+        {
+          "key": "C",
+          "text": "9"
+        },
+        {
+          "key": "D",
+          "text": "√129"
+        }
       ],
-      "answer": "A",
+      "answer": "B",
       "category": "kepletek",
       "explanation": "Koszinusztétel: c² = a² + b² − 2ab·cos γ = 25 + 64 − 2·5·8·cos 60° = 89 − 80·0,5 = 49, így c = 7.",
       "wrongOptions": {
-        "B": "√89 a Pitagorasz-tétel eredménye lenne, de a szög 60°, nem 90° – a −2ab·cos γ tag nem hagyható el.",
+        "A": "√89 a Pitagorasz-tétel eredménye lenne, de a szög 60°, nem 90° – a −2ab·cos γ tag nem hagyható el.",
         "C": "A 9 semmilyen helyes képletből nem jön ki: 9² = 81, a koszinusztétel szerint viszont c² = 49.",
         "D": "√129 = √(89 + 40): itt a koszinuszos tag előjelét elrontották (+2ab·cos γ)."
       }
@@ -127,18 +199,30 @@
       "kind": "choice",
       "prompt": "Hány megoldása van a sin x = 1/2 egyenletnek a [0; 2π) intervallumon?",
       "options": [
-        { "key": "A", "text": "0" },
-        { "key": "B", "text": "1" },
-        { "key": "C", "text": "2" },
-        { "key": "D", "text": "4" }
+        {
+          "key": "A",
+          "text": "0"
+        },
+        {
+          "key": "B",
+          "text": "1"
+        },
+        {
+          "key": "C",
+          "text": "4"
+        },
+        {
+          "key": "D",
+          "text": "2"
+        }
       ],
-      "answer": "C",
+      "answer": "D",
       "category": "fuggveny-abrazolas",
       "explanation": "Egy teljes perióduson a szinusz minden (−1; 1) közötti értéket pontosan kétszer vesz fel: sin x = 1/2 megoldásai x = π/6 (30°) és x = 5π/6 (150°).",
       "wrongOptions": {
         "A": "1/2 az értékkészletbe ([−1; 1]) esik, tehát van megoldás.",
         "B": "Egyetlen megoldás csak a szélsőértékeknél (sin x = ±1) van egy perióduson belül.",
-        "D": "Négy megoldás két periódus alatt lenne; [0; 2π) egyetlen periódus."
+        "C": "Négy megoldás két periódus alatt lenne; [0; 2π) egyetlen periódus."
       }
     },
     {
@@ -146,16 +230,28 @@
       "kind": "choice",
       "prompt": "Egy derékszögű háromszög befogói a = 6 és b = 8. Mennyi az a oldallal szemközti α szög szinusza?",
       "options": [
-        { "key": "A", "text": "0,6" },
-        { "key": "B", "text": "0,8" },
-        { "key": "C", "text": "0,75" },
-        { "key": "D", "text": "1,33" }
+        {
+          "key": "A",
+          "text": "0,8"
+        },
+        {
+          "key": "B",
+          "text": "0,6"
+        },
+        {
+          "key": "C",
+          "text": "0,75"
+        },
+        {
+          "key": "D",
+          "text": "1,33"
+        }
       ],
-      "answer": "A",
+      "answer": "B",
       "category": "geometria-osszefuggesek",
       "explanation": "Az átfogó c = √(36 + 64) = 10. A szinusz a szöggel szemközti befogó és az átfogó hányadosa: sin α = a/c = 6/10 = 0,6.",
       "wrongOptions": {
-        "B": "0,8 = 8/10 a cos α (a szög melletti befogó per átfogó), illetve sin β.",
+        "A": "0,8 = 8/10 a cos α (a szög melletti befogó per átfogó), illetve sin β.",
         "C": "0,75 = 6/8 a tg α (szemközti per melletti befogó).",
         "D": "1,33 = 8/6 a tg β (vagy ctg α); szinusz nem lehet 1-nél nagyobb."
       }

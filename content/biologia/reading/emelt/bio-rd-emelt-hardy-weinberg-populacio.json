@@ -96,7 +96,7 @@
       "options": [
         {
           "key": "A",
-          "text": "A populáció nagy létszámú."
+          "text": "A domináns allél gyakoribb, mint a recesszív."
         },
         {
           "key": "B",
@@ -108,16 +108,16 @@
         },
         {
           "key": "D",
-          "text": "A domináns allél gyakoribb, mint a recesszív."
+          "text": "A populáció nagy létszámú."
         }
       ],
-      "answer": "D",
+      "answer": "A",
       "category": "evolucios-ervel",
-      "explanation": "Helyes: D. Az egyensúly bármilyen allélgyakoriság mellett fennállhat, a recesszív allél is lehet gyakoribb a dominánsnál (például q = 0,7 mellett is lehet egyensúly). A valódi feltételek: nagy populáció, véletlenszerű párosodás, továbbá mutáció, szelekció és génáramlás hiánya.",
+      "explanation": "Helyes: A. Az egyensúly bármilyen allélgyakoriság mellett fennállhat, a recesszív allél is lehet gyakoribb a dominánsnál (például q = 0,7 mellett is lehet egyensúly). A valódi feltételek: nagy populáció, véletlenszerű párosodás, továbbá mutáció, szelekció és génáramlás hiánya.",
       "wrongOptions": {
-        "A": "Ez feltétel: kis populációban a véletlen (genetikai sodródás) megváltoztatja az allélgyakoriságokat.",
         "B": "Ez feltétel: ha az egyedek választanak (pl. hasonló a hasonlóval párosodik), a genotípus-arányok eltolódnak.",
-        "C": "Ezek mind evolúciós tényezők; ha hatnak, az allélgyakoriság változik, tehát nincs egyensúly."
+        "C": "Ezek mind evolúciós tényezők; ha hatnak, az allélgyakoriság változik, tehát nincs egyensúly.",
+        "D": "Ez feltétel: kis populációban a véletlen (genetikai sodródás) megváltoztatja az allélgyakoriságokat."
       }
     },
     {
@@ -127,11 +127,11 @@
       "options": [
         {
           "key": "A",
-          "text": "természetes szelekció"
+          "text": "genetikai sodródás (palacknyakhatás)"
         },
         {
           "key": "B",
-          "text": "genetikai sodródás (palacknyakhatás)"
+          "text": "természetes szelekció"
         },
         {
           "key": "C",
@@ -142,11 +142,11 @@
           "text": "mutáció"
         }
       ],
-      "answer": "B",
+      "answer": "A",
       "category": "evolucios-ervel",
-      "explanation": "Helyes: B. A tűz véletlenszerűen, a genotípustól függetlenül pusztított; a kis létszámú túlélő csoport allélgyakorisága pusztán a véletlen miatt tér el az eredetitől. Ez a genetikai sodródás egyik formája, a palacknyakhatás.",
+      "explanation": "Helyes: A. A tűz véletlenszerűen, a genotípustól függetlenül pusztított; a kis létszámú túlélő csoport allélgyakorisága pusztán a véletlen miatt tér el az eredetitől. Ez a genetikai sodródás egyik formája, a palacknyakhatás.",
       "wrongOptions": {
-        "A": "Szelekcióról akkor beszélnénk, ha a túlélés a virágszíntől (a genotípustól) függött volna; a feladat szerint nem függött.",
+        "B": "Szelekcióról akkor beszélnénk, ha a túlélés a virágszíntől (a genotípustól) függött volna; a feladat szerint nem függött.",
         "C": "Génáramlás egyedek (vagy pollen) be- vagy kivándorlásával jár, itt ilyen nem történt.",
         "D": "A mutáció új allélt hoz létre, és nagyon ritka; egy tűzvész nem okoz mutációt, és nem is ez változtatta meg a gyakoriságot."
       }
@@ -158,7 +158,7 @@
       "options": [
         {
           "key": "A",
-          "text": "Lassan csökken, de nem tűnik el gyorsan, mert a heterozigótákban rejtve marad."
+          "text": "Nem változik, mert a b allél a heterozigótákban is megvan."
         },
         {
           "key": "B",
@@ -170,16 +170,16 @@
         },
         {
           "key": "D",
-          "text": "Nem változik, mert a b allél a heterozigótákban is megvan."
+          "text": "Lassan csökken, de nem tűnik el gyorsan, mert a heterozigótákban rejtve marad."
         }
       ],
-      "answer": "A",
+      "answer": "D",
       "category": "evolucios-ervel",
-      "explanation": "Helyes: A. A szelekció csak a bb fenotípust sújtja; a heterozigóta (Bb) egyedek bíbor virágúak, így a b allélt rejtve tovább adják. Ahogy q csökken, egyre kisebb része van homozigótában, ezért a szelekció egyre lassabban hat.",
+      "explanation": "Helyes: D. A szelekció csak a bb fenotípust sújtja; a heterozigóta (Bb) egyedek bíbor virágúak, így a b allélt rejtve tovább adják. Ahogy q csökken, egyre kisebb része van homozigótában, ezért a szelekció egyre lassabban hat.",
       "wrongOptions": {
+        "A": "A heterozigóták megléte lassítja, de nem akadályozza meg a csökkenést, mert a bb egyedek kevesebb utódot hagynak.",
         "B": "Egy nemzedék alatt csak akkor tűnhetne el, ha minden b allélt hordozó egyed elpusztulna – a heterozigóták viszont nem szelektálódnak.",
-        "C": "Az allélok terjedését nem a dominancia, hanem a szelekció és a véletlen dönti el; itt a b allél hátrányos.",
-        "D": "A heterozigóták megléte lassítja, de nem akadályozza meg a csökkenést, mert a bb egyedek kevesebb utódot hagynak."
+        "C": "Az allélok terjedését nem a dominancia, hanem a szelekció és a véletlen dönti el; itt a b allél hátrányos."
       }
     },
     {

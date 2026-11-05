@@ -31,7 +31,7 @@
     "options": [
       {
         "key": "A",
-        "text": "a vesetestecskében: a hajszálérgomolyagból a Bowman-tok üregébe szűrődik"
+        "text": "a vesemedencében"
       },
       {
         "key": "B",
@@ -39,16 +39,16 @@
       },
       {
         "key": "C",
-        "text": "a vesemedencében"
+        "text": "a vesetestecskében: a hajszálérgomolyagból a Bowman-tok üregébe szűrődik"
       },
       {
         "key": "D",
         "text": "a húgyhólyag falában"
       }
     ],
-    "answer": "A",
+    "answer": "C",
     "category": "felepites-mukodes",
-    "explanation": "Helyes: A. A vesetestecske hajszálérgomolyagában (glomerulus) a vérnyomás hatására a vérplazma vize és kis molekulájú oldott anyagai átszűrődnek a Bowman-tok üregébe – ez az elsődleges szűrlet."
+    "explanation": "Helyes: C. A vesetestecske hajszálérgomolyagában (glomerulus) a vérnyomás hatására a vérplazma vize és kis molekulájú oldott anyagai átszűrődnek a Bowman-tok üregébe – ez az elsődleges szűrlet."
   },
   "items": [
     {
@@ -62,7 +62,7 @@
         },
         {
           "key": "B",
-          "text": "A fehérjemolekulák túl nagyok, ezért nem jutnak át a vesetestecske szűrőfelületén."
+          "text": "A vér fehérjéi kizárólag a vörösvérsejtekben vannak."
         },
         {
           "key": "C",
@@ -70,16 +70,16 @@
         },
         {
           "key": "D",
-          "text": "A vér fehérjéi kizárólag a vörösvérsejtekben vannak."
+          "text": "A fehérjemolekulák túl nagyok, ezért nem jutnak át a vesetestecske szűrőfelületén."
         }
       ],
-      "answer": "B",
+      "answer": "D",
       "category": "felepites-mukodes",
-      "explanation": "Helyes: B. A szűrés méret szerint válogat: a hajszálérfal és a tok belső lemezének szűrőrétegén a víz, az ionok, a glükóz és a karbamid átjut, a nagy plazmafehérjék (és a vérsejtek) azonban az érben maradnak.",
+      "explanation": "Helyes: D. A szűrés méret szerint válogat: a hajszálérfal és a tok belső lemezének szűrőrétegén a víz, az ionok, a glükóz és a karbamid átjut, a nagy plazmafehérjék (és a vérsejtek) azonban az érben maradnak.",
       "wrongOptions": {
         "A": "Ha a fehérje a szűrletbe jutna és csak később szívódna vissza, a szűrletben (a táblázat 2. oszlopában) mérhető lenne – de ott sincs.",
-        "C": "A plazmafehérjéket (pl. albumin, ellenanyagok) éppen a máj és az immunsejtek termelik, és a vérben fontos szerepük van (kolloid ozmotikus nyomás, immunvédelem).",
-        "D": "A vérplazmában 75 g/l fehérje van (albumin, globulinok, fibrinogén), nem csak a vörösvérsejtekben."
+        "B": "A vérplazmában 75 g/l fehérje van (albumin, globulinok, fibrinogén), nem csak a vörösvérsejtekben.",
+        "C": "A plazmafehérjéket (pl. albumin, ellenanyagok) éppen a máj és az immunsejtek termelik, és a vérben fontos szerepük van (kolloid ozmotikus nyomás, immunvédelem)."
       }
     },
     {
@@ -171,7 +171,7 @@
       "options": [
         {
           "key": "A",
-          "text": "ADH (antidiuretikus hormon)"
+          "text": "inzulin"
         },
         {
           "key": "B",
@@ -179,19 +179,19 @@
         },
         {
           "key": "C",
-          "text": "inzulin"
+          "text": "ADH (antidiuretikus hormon)"
         },
         {
           "key": "D",
           "text": "adrenalin"
         }
       ],
-      "answer": "A",
+      "answer": "C",
       "category": "szabalyozas-folyamat",
-      "explanation": "Helyes: A. Az ADH-t a hipotalamusz termeli, és az agyalapi mirigy hátsó lebenye juttatja a vérbe, ha a vér ozmotikus koncentrációja nő (pl. szomjazáskor). Hatására a gyűjtőcsatornák falába vízcsatornák épülnek be, több víz szívódik vissza, a vizelet kevesebb és töményebb lesz.",
+      "explanation": "Helyes: C. Az ADH-t a hipotalamusz termeli, és az agyalapi mirigy hátsó lebenye juttatja a vérbe, ha a vér ozmotikus koncentrációja nő (pl. szomjazáskor). Hatására a gyűjtőcsatornák falába vízcsatornák épülnek be, több víz szívódik vissza, a vizelet kevesebb és töményebb lesz.",
       "wrongOptions": {
+        "A": "Az inzulin a vércukorszintet csökkenti, a vese vízvisszaszívását nem szabályozza.",
         "B": "Az aldoszteron (mellékvesekéreg-hormon) a nátriumionok visszaszívását és a káliumionok kiválasztását fokozza; a víz csak közvetve követi a nátriumot, a vízáteresztő képességet nem az aldoszteron szabályozza.",
-        "C": "Az inzulin a vércukorszintet csökkenti, a vese vízvisszaszívását nem szabályozza.",
         "D": "Az adrenalin a stresszreakció hormonja (pulzus, vércukor emelése), nem a vízháztartás fő szabályozója."
       }
     },

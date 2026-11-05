@@ -19,7 +19,7 @@
     "options": [
       {
         "key": "A",
-        "text": "Merkúr"
+        "text": "Mars"
       },
       {
         "key": "B",
@@ -27,14 +27,14 @@
       },
       {
         "key": "C",
-        "text": "Mars"
+        "text": "Merkúr"
       },
       {
         "key": "D",
         "text": "Föld"
       }
     ],
-    "answer": "A",
+    "answer": "C",
     "category": "fogalomhasznalat",
     "explanation": "Helyes: Merkúr. A Naptól távolodva a bolygók sorrendje Merkúr, Vénusz, Föld, Mars, Jupiter, Szaturnusz, Uránusz, Neptunusz."
   },
@@ -112,7 +112,7 @@
         },
         {
           "key": "B",
-          "text": "A Föld forgástengelye 66,5°-os szöget zár be a keringési síkkal, és iránya a keringés során nem változik."
+          "text": "A Föld forgási sebessége télen lelassul."
         },
         {
           "key": "C",
@@ -120,16 +120,16 @@
         },
         {
           "key": "D",
-          "text": "A Föld forgási sebessége télen lelassul."
+          "text": "A Föld forgástengelye 66,5°-os szöget zár be a keringési síkkal, és iránya a keringés során nem változik."
         }
       ],
-      "answer": "B",
+      "answer": "D",
       "category": "termeszeti-folyamat",
-      "explanation": "Helyes: B. A ferde és állandó irányú tengely miatt a keringés során hol az északi, hol a déli félgömb kap meredekebb szögben napsugarakat és hosszabb nappalokat – ez okozza az évszakokat.",
+      "explanation": "Helyes: D. A ferde és állandó irányú tengely miatt a keringés során hol az északi, hol a déli félgömb kap meredekebb szögben napsugarakat és hosszabb nappalokat – ez okozza az évszakokat.",
       "wrongOptions": {
         "A": "A Föld–Nap távolság csak kevéssé változik, és a Föld éppen januárban van a legközelebb a Naphoz, amikor az északi félgömbön tél van.",
-        "C": "A Nap sugárzása lényegében állandó; a naptevékenység kb. 11 éves ciklusa nem okoz évszakokat.",
-        "D": "A Föld forgási sebessége az év során gyakorlatilag állandó, nem függ az évszakoktól."
+        "B": "A Föld forgási sebessége az év során gyakorlatilag állandó, nem függ az évszakoktól.",
+        "C": "A Nap sugárzása lényegében állandó; a naptevékenység kb. 11 éves ciklusa nem okoz évszakokat."
       }
     },
     {
@@ -170,7 +170,7 @@
       "options": [
         {
           "key": "A",
-          "text": "1°"
+          "text": "15°"
         },
         {
           "key": "B",
@@ -178,19 +178,19 @@
         },
         {
           "key": "C",
-          "text": "15°"
+          "text": "1°"
         },
         {
           "key": "D",
           "text": "24°"
         }
       ],
-      "answer": "C",
+      "answer": "A",
       "category": "szamitas-foldrajzi",
       "explanation": "Helyes: 15°. A Föld 24 óra alatt fordul 360°-ot, így óránként 360° : 24 = 15°-ot; ezért egy időzóna elméletben 15 hosszúsági fok széles.",
       "wrongOptions": {
-        "A": "1° hosszúságkülönbség csak 4 perc helyiidő-különbséget jelent (60 perc : 15).",
         "B": "10°-os zónákkal 36 zóna lenne, ez nem felel meg a 24 órás forgásnak.",
+        "C": "1° hosszúságkülönbség csak 4 perc helyiidő-különbséget jelent (60 perc : 15).",
         "D": "24 az időzónák száma, nem a szélességük fokban."
       }
     },
@@ -201,11 +201,11 @@
       "options": [
         {
           "key": "A",
-          "text": "Szaturnusz"
+          "text": "Jupiter"
         },
         {
           "key": "B",
-          "text": "Jupiter"
+          "text": "Szaturnusz"
         },
         {
           "key": "C",
@@ -216,11 +216,11 @@
           "text": "Föld"
         }
       ],
-      "answer": "B",
+      "answer": "A",
       "category": "fogalomhasznalat",
       "explanation": "Helyes: Jupiter. A Jupiter a legnagyobb átmérőjű és legnagyobb tömegű bolygó; óriásbolygó, főként hidrogénből és héliumból áll.",
       "wrongOptions": {
-        "A": "A Szaturnusz a második legnagyobb bolygó, gyűrűiről híres.",
+        "B": "A Szaturnusz a második legnagyobb bolygó, gyűrűiről híres.",
         "C": "A Neptunusz a Naptól legtávolabbi bolygó, de kisebb a Jupiternél és a Szaturnusznál is.",
         "D": "A Föld a legnagyobb kőzetbolygó, de az óriásbolygóknál sokkal kisebb."
       }
@@ -232,11 +232,11 @@
       "options": [
         {
           "key": "A",
-          "text": "A Hold (és kisebb mértékben a Nap) tömegvonzása"
+          "text": "Az állandó szelek"
         },
         {
           "key": "B",
-          "text": "Az állandó szelek"
+          "text": "A Hold (és kisebb mértékben a Nap) tömegvonzása"
         },
         {
           "key": "C",
@@ -247,11 +247,11 @@
           "text": "A tengeráramlások"
         }
       ],
-      "answer": "A",
+      "answer": "B",
       "category": "termeszeti-folyamat",
-      "explanation": "Helyes: A. A Hold tömegvonzása a Föld felé eső és a vele átellenes oldalon is vízdagadást hoz létre; a Föld forgása miatt egy hely naponta kb. kétszer kerül dagályba és kétszer apályba.",
+      "explanation": "Helyes: B. A Hold tömegvonzása a Föld felé eső és a vele átellenes oldalon is vízdagadást hoz létre; a Föld forgása miatt egy hely naponta kb. kétszer kerül dagályba és kétszer apályba.",
       "wrongOptions": {
-        "B": "Az állandó szelek hullámokat és felszíni tengeráramlásokat keltenek, de nem okoznak szabályos, napi kétszeri vízszintváltozást.",
+        "A": "Az állandó szelek hullámokat és felszíni tengeráramlásokat keltenek, de nem okoznak szabályos, napi kétszeri vízszintváltozást.",
         "C": "A tengeralatti földrengések szökőárat (cunamit) okoznak, ami egyszeri, nem rendszeres jelenség.",
         "D": "A tengeráramlások vízszintes vízmozgások; nem emelik és süllyesztik szabályos ritmusban a vízszintet."
       }

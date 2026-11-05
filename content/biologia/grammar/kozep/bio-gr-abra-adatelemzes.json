@@ -148,23 +148,23 @@
         },
         {
           "key": "B",
-          "text": "Az egyedszám előbb gyorsulva nő, majd kb. 800 egyednél stabilizálódik (S alakú görbe)."
+          "text": "Az egyedszám csökken."
         },
         {
           "key": "C",
-          "text": "Az egyedszám csökken."
+          "text": "Az egyedszám előbb gyorsulva nő, majd kb. 800 egyednél stabilizálódik (S alakú görbe)."
         },
         {
           "key": "D",
           "text": "Az egyedszám véletlenszerűen ingadozik."
         }
       ],
-      "answer": "B",
+      "answer": "C",
       "category": "abra-adatelemzes",
-      "explanation": "Helyes: B. A leírás szakaszokra bontja a görbét, és megadja a stabil értéket; ez logisztikus (S alakú) növekedés, a 800 az eltartóképesség közelében van.",
+      "explanation": "Helyes: C. A leírás szakaszokra bontja a görbét, és megadja a stabil értéket; ez logisztikus (S alakú) növekedés, a 800 az eltartóképesség közelében van.",
       "wrongOptions": {
         "A": "A 6–10. évben nem nő, ezért a „folyamatosan nő” pontatlan.",
-        "C": "Az adatok szerint nem csökken.",
+        "B": "Az adatok szerint nem csökken.",
         "D": "Az adatok egyértelmű menetet mutatnak, nem véletlen ingadozást."
       }
     },
@@ -192,23 +192,23 @@
         },
         {
           "key": "B",
-          "text": "Az adatok együttjárást mutatnak; az ok-okozati kapcsolat igazolásához további vizsgálat kell."
+          "text": "Az asztma miatt vesznek többen autót."
         },
         {
           "key": "C",
-          "text": "Az asztma miatt vesznek többen autót."
+          "text": "Az adatok együttjárást mutatnak; az ok-okozati kapcsolat igazolásához további vizsgálat kell."
         },
         {
           "key": "D",
           "text": "A két adat között semmilyen kapcsolat nem lehet."
         }
       ],
-      "answer": "B",
+      "answer": "C",
       "category": "abra-adatelemzes",
-      "explanation": "Helyes: B. Két adat együttes növekedése (korreláció) felvet egy lehetséges okot (pl. légszennyezés), de más tényezők (diagnosztika fejlődése, népességnövekedés) is magyarázhatják; ok-okozatot kontrollált vizsgálat igazolhat.",
+      "explanation": "Helyes: C. Két adat együttes növekedése (korreláció) felvet egy lehetséges okot (pl. légszennyezés), de más tényezők (diagnosztika fejlődése, népességnövekedés) is magyarázhatják; ok-okozatot kontrollált vizsgálat igazolhat.",
       "wrongOptions": {
         "A": "Együttjárásból nem következik biztos ok-okozat.",
-        "C": "Fordított ok-okozat – az adatok ezt sem támasztják alá.",
+        "B": "Fordított ok-okozat – az adatok ezt sem támasztják alá.",
         "D": "Az együttjárás utalhat kapcsolatra, ezért nem zárható ki."
       }
     },

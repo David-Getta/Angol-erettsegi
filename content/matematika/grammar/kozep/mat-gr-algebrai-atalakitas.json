@@ -140,23 +140,23 @@
         },
         {
           "key": "B",
-          "text": "(x − 3)(x + 3)"
+          "text": "(x − 9)(x + 1)"
         },
         {
           "key": "C",
-          "text": "(x − 9)(x + 1)"
+          "text": "(x − 3)(x + 3)"
         },
         {
           "key": "D",
           "text": "(x + 3)²"
         }
       ],
-      "answer": "B",
+      "answer": "C",
       "category": "algebrai-atalakitas",
       "explanation": "A helyes: (x − 3)(x + 3). Két négyzet különbsége: a² − b² = (a − b)(a + b), itt a = x, b = 3.",
       "wrongOptions": {
         "A": "(x − 3)² = x² − 6x + 9, ebben van egy −6x tag is.",
-        "C": "(x − 9)(x + 1) = x² − 8x − 9.",
+        "B": "(x − 9)(x + 1) = x² − 8x − 9.",
         "D": "(x + 3)² = x² + 6x + 9."
       }
     },
@@ -195,20 +195,20 @@
         },
         {
           "key": "C",
-          "text": "8x³"
+          "text": "8x"
         },
         {
           "key": "D",
-          "text": "8x"
+          "text": "8x³"
         }
       ],
-      "answer": "C",
+      "answer": "D",
       "category": "algebrai-atalakitas",
       "explanation": "A helyes: 8x³. Szorzatot tényezőnként hatványozunk: (2x)³ = 2³ · x³ = 8x³.",
       "wrongOptions": {
         "A": "A 2-es tényezőt is köbre kell emelni.",
         "B": "A 2-t nem 3-mal szorozzuk, hanem a harmadik hatványra emeljük: 2³ = 8.",
-        "D": "Az x-et is köbre kell emelni."
+        "C": "Az x-et is köbre kell emelni."
       }
     }
   ],

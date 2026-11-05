@@ -117,7 +117,7 @@
       "options": [
         {
           "key": "A",
-          "text": "(1; 2)"
+          "text": "(1; −2)"
         },
         {
           "key": "B",
@@ -125,19 +125,19 @@
         },
         {
           "key": "C",
-          "text": "(1; −2)"
+          "text": "(1; 2)"
         },
         {
           "key": "D",
           "text": "(2; 1)"
         }
       ],
-      "answer": "A",
+      "answer": "C",
       "category": "fuggveny-abrazolas",
       "explanation": "A helyes: (1; 2). Az x² parabolát 1-gyel jobbra (x − 1) és 2-vel felfelé (+2) toltuk, így a tengelypont (1; 2).",
       "wrongOptions": {
+        "A": "A +2 felfelé tol, ezért a második koordináta +2.",
         "B": "Az (x − 1) jobbra tol, nem balra.",
-        "C": "A +2 felfelé tol, ezért a második koordináta +2.",
         "D": "A koordináták sorrendje fel van cserélve: előbb az x (1), aztán az y (2)."
       }
     },
@@ -159,11 +159,11 @@
       "options": [
         {
           "key": "A",
-          "text": "[−1; ∞)"
+          "text": "[3; ∞)"
         },
         {
           "key": "B",
-          "text": "[3; ∞)"
+          "text": "[−1; ∞)"
         },
         {
           "key": "C",
@@ -174,11 +174,11 @@
           "text": "[0; ∞)"
         }
       ],
-      "answer": "A",
+      "answer": "B",
       "category": "fuggveny-abrazolas",
       "explanation": "A helyes: [−1; ∞). |x − 3| ≥ 0 és minden nemnegatív értéket felvesz, így |x − 3| − 1 ≥ −1, és minden −1-nél nem kisebb értéket felvesz (x = 3-nál −1).",
       "wrongOptions": {
-        "B": "A 3 a minimum helye (x), nem az értékkészlet alsó határa.",
+        "A": "A 3 a minimum helye (x), nem az értékkészlet alsó határa.",
         "C": "A függvény sosem kisebb −1-nél, ezért nem vesz fel minden valós értéket.",
         "D": "A [0; ∞) az |x − 3| értékkészlete; a −1 eltolás lefelé viszi."
       }

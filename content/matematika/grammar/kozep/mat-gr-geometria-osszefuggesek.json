@@ -133,7 +133,7 @@
       "options": [
         {
           "key": "A",
-          "text": "40°"
+          "text": "110°"
         },
         {
           "key": "B",
@@ -141,19 +141,19 @@
         },
         {
           "key": "C",
-          "text": "110°"
+          "text": "40°"
         },
         {
           "key": "D",
           "text": "20°"
         }
       ],
-      "answer": "A",
+      "answer": "C",
       "category": "geometria-osszefuggesek",
       "explanation": "A helyes: 40°. Az alapon fekvő két szög egyenlő (70° és 70°), a belső szögek összege 180°, így a szárszög 180° − 140° = 40°.",
       "wrongOptions": {
+        "A": "110° a 70°-os alapszög mellékszöge (külső szög), nem belső szög.",
         "B": "70° az alapszög; ha a szárszög is 70° lenne, a szögek összege 210° lenne.",
-        "C": "110° a 70°-os alapszög mellékszöge (külső szög), nem belső szög.",
         "D": "A 20° = 90° − 70° csak a szárszög fele (az alaphoz tartozó magasság és a szár szöge), nem a teljes szárszög."
       }
     },

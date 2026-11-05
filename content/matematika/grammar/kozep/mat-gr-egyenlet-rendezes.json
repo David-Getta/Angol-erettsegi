@@ -132,7 +132,7 @@
       "options": [
         {
           "key": "A",
-          "text": "{3}"
+          "text": "üres halmaz"
         },
         {
           "key": "B",
@@ -144,16 +144,16 @@
         },
         {
           "key": "D",
-          "text": "üres halmaz"
+          "text": "{3}"
         }
       ],
-      "answer": "A",
+      "answer": "D",
       "category": "egyenlet-rendezes",
       "explanation": "A helyes: {3}. Négyzetre emelve x + 6 = x², gyökei 3 és −2. Ellenőrzés: √9 = 3 jó, de x = −2-nél √4 = 2 ≠ −2, ez hamis gyök.",
       "wrongOptions": {
+        "A": "Az x = 3 kielégíti az eredeti egyenletet, tehát van megoldás.",
         "B": "Az x = −2-nél a bal oldal √4 = 2, a jobb oldal −2: a négyzetgyök nem lehet negatív.",
-        "C": "A négyzetre emelés nem ekvivalens lépés; ellenőrzés nélkül benne maradna a −2 hamis gyök.",
-        "D": "Az x = 3 kielégíti az eredeti egyenletet, tehát van megoldás."
+        "C": "A négyzetre emelés nem ekvivalens lépés; ellenőrzés nélkül benne maradna a −2 hamis gyök."
       }
     },
     {
@@ -174,7 +174,7 @@
       "options": [
         {
           "key": "A",
-          "text": "x ≤ −4"
+          "text": "x ≤ 4"
         },
         {
           "key": "B",
@@ -182,19 +182,19 @@
         },
         {
           "key": "C",
-          "text": "x ≤ 4"
+          "text": "x ≤ −4"
         },
         {
           "key": "D",
           "text": "x ≥ 4"
         }
       ],
-      "answer": "A",
+      "answer": "C",
       "category": "egyenlet-rendezes",
       "explanation": "A helyes: x ≤ −4. Zárójelbontás: 2x − 6 ≥ 4x + 2, rendezve −8 ≥ 2x, azaz x ≤ −4. Próba: x = −5-re −16 ≥ −18 igaz.",
       "wrongOptions": {
+        "A": "Előjelhiba: a −6 − 2 = −8, nem +8.",
         "B": "Ha a −2x ≥ 8 alakból osztasz −2-vel, az irány megfordul: x ≤ −4, nem x ≥ −4.",
-        "C": "Előjelhiba: a −6 − 2 = −8, nem +8.",
         "D": "Itt az előjel és az irány is hibás; x = 5-re 4 ≥ 22 hamis."
       }
     }

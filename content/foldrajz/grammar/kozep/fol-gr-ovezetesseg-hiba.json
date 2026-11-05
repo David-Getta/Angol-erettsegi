@@ -123,7 +123,7 @@
       "options": [
         {
           "key": "A",
-          "text": "mezőségi talaj (csernozjom)"
+          "text": "laterit"
         },
         {
           "key": "B",
@@ -131,19 +131,19 @@
         },
         {
           "key": "C",
-          "text": "laterit"
+          "text": "mezőségi talaj (csernozjom)"
         },
         {
           "key": "D",
           "text": "barna erdőtalaj"
         }
       ],
-      "answer": "A",
+      "answer": "C",
       "category": "ovezetesseg-hiba",
       "explanation": "Helyes: mezőségi talaj. A füvek elhaló gyökérzetéből sok humusz halmozódik fel, a mérsékelt csapadék alig lúgoz ki.",
       "wrongOptions": {
+        "A": "A laterit a forró, nedves övezet vörös, terméketlen talaja.",
         "B": "A podzol a tajga savanyú, kilúgozott talaja.",
-        "C": "A laterit a forró, nedves övezet vörös, terméketlen talaja.",
         "D": "A barna erdőtalaj a lombhullató erdők talaja, csapadékosabb éghajlaton."
       }
     },
@@ -198,7 +198,7 @@
       "options": [
         {
           "key": "A",
-          "text": "A hideg Humboldt-áramlás miatt stabil a levegő, nem alakul ki csapadék."
+          "text": "Mert a nyugati szelek sok esőt hoznak."
         },
         {
           "key": "B",
@@ -206,19 +206,19 @@
         },
         {
           "key": "C",
-          "text": "Mert a nyugati szelek sok esőt hoznak."
+          "text": "A hideg Humboldt-áramlás miatt stabil a levegő, nem alakul ki csapadék."
         },
         {
           "key": "D",
           "text": "Mert a terület a tengerszint alatt van."
         }
       ],
-      "answer": "A",
+      "answer": "C",
       "category": "ovezetesseg-hiba",
-      "explanation": "Helyes: A. A hideg tengeráramlás alulról hűti a levegőt, a légrétegződés stabil, nincs feláramlás – parti sivatag alakul ki.",
+      "explanation": "Helyes: C. A hideg tengeráramlás alulról hűti a levegőt, a légrétegződés stabil, nincs feláramlás – parti sivatag alakul ki.",
       "wrongOptions": {
+        "A": "A sok eső éppen nem sivatagot hozna létre.",
         "B": "Az Atacama a Baktérítő környékén fekszik, nem az Egyenlítőn; az Egyenlítőn csapadékos éghajlat van.",
-        "C": "A sok eső éppen nem sivatagot hozna létre.",
         "D": "Az Atacama nagy része magasan fekszik; a tengerszint alatti fekvés nem okoz sivatagot."
       }
     },
@@ -242,11 +242,11 @@
       "options": [
         {
           "key": "A",
-          "text": "szárazföldi (kontinentális)"
+          "text": "óceáni"
         },
         {
           "key": "B",
-          "text": "óceáni"
+          "text": "szárazföldi (kontinentális)"
         },
         {
           "key": "C",
@@ -257,11 +257,11 @@
           "text": "egyenlítői"
         }
       ],
-      "answer": "A",
+      "answer": "B",
       "category": "ovezetesseg-hiba",
       "explanation": "Helyes: szárazföldi. Az óceántól távol a szárazföld gyorsan melegszik és hűl, a nedves légtömegek nem jutnak el idáig.",
       "wrongOptions": {
-        "B": "Az óceáni éghajlat hőingása kicsi, csapadéka bőséges.",
+        "A": "Az óceáni éghajlat hőingása kicsi, csapadéka bőséges.",
         "C": "A mediterrán éghajlaton a tél enyhe és csapadékos.",
         "D": "Az egyenlítői éghajlaton nincs tél, és egész évben sok csapadék hullik."
       }

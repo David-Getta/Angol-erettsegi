@@ -137,11 +137,11 @@
       "options": [
         {
           "key": "A",
-          "text": "Ha a háromszög derékszögű, akkor a² + b² = c²."
+          "text": "Ha egy háromszög oldalaira a² + b² = c², akkor a háromszög derékszögű."
         },
         {
           "key": "B",
-          "text": "Ha egy háromszög oldalaira a² + b² = c², akkor a háromszög derékszögű."
+          "text": "Ha a háromszög derékszögű, akkor a² + b² = c²."
         },
         {
           "key": "C",
@@ -152,11 +152,11 @@
           "text": "Ha a háromszög derékszögű, akkor a² + b² > c²."
         }
       ],
-      "answer": "B",
+      "answer": "A",
       "category": "definicio-tetel",
-      "explanation": "A helyes: B. A tétel „ha derékszögű, akkor a² + b² = c²”; a megfordításban a feltétel és a következmény helyet cserél.",
+      "explanation": "A helyes: A. A tétel „ha derékszögű, akkor a² + b² = c²”; a megfordításban a feltétel és a következmény helyet cserél.",
       "wrongOptions": {
-        "A": "Ez maga a Pitagorasz-tétel, nem a megfordítása.",
+        "B": "Ez maga a Pitagorasz-tétel, nem a megfordítása.",
         "C": "Ez hamis állítás: nem derékszögű háromszögre nem igaz.",
         "D": "Ez hamis: derékszögű háromszögben pontos egyenlőség áll."
       }
@@ -180,11 +180,11 @@
       "options": [
         {
           "key": "A",
-          "text": "Ha egy szám osztható 3-mal, akkor osztható 6-tal."
+          "text": "Ha egy szám osztható 6-tal, akkor osztható 3-mal."
         },
         {
           "key": "B",
-          "text": "Ha egy szám osztható 6-tal, akkor osztható 3-mal."
+          "text": "Ha egy szám osztható 3-mal, akkor osztható 6-tal."
         },
         {
           "key": "C",
@@ -195,11 +195,11 @@
           "text": "Ha egy szám nem osztható 6-tal, akkor 3-mal sem osztható."
         }
       ],
-      "answer": "B",
+      "answer": "A",
       "category": "definicio-tetel",
-      "explanation": "A helyes: B. Ha 6 | n, akkor n = 6k = 3 · 2k, tehát 3 | n. A többi állítást a 9 cáfolja.",
+      "explanation": "A helyes: A. Ha 6 | n, akkor n = 6k = 3 · 2k, tehát 3 | n. A többi állítást a 9 cáfolja.",
       "wrongOptions": {
-        "A": "Ellenpélda: a 9 osztható 3-mal, de 6-tal nem.",
+        "B": "Ellenpélda: a 9 osztható 3-mal, de 6-tal nem.",
         "C": "Az ekvivalenciához a megfordítás is kellene, ami a 9 miatt hamis.",
         "D": "Ellenpélda: a 9 nem osztható 6-tal, de 3-mal igen."
       }

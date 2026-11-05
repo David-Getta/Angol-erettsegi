@@ -125,11 +125,11 @@
       "options": [
         {
           "key": "A",
-          "text": "1 : 10 000"
+          "text": "1 : 100 000"
         },
         {
           "key": "B",
-          "text": "1 : 100 000"
+          "text": "1 : 10 000"
         },
         {
           "key": "C",
@@ -140,11 +140,11 @@
           "text": "1 : 25 000 000"
         }
       ],
-      "answer": "A",
+      "answer": "B",
       "category": "terkep-olvasas",
       "explanation": "Helyes: 1 : 10 000. Ennél kicsinyítettek a legkevésbé, ez a legrészletesebb térkép.",
       "wrongOptions": {
-        "B": "1 : 100 000 tízszer jobban kicsinyít, mint az 1 : 10 000, tehát kisebb méretarány.",
+        "A": "1 : 100 000 tízszer jobban kicsinyít, mint az 1 : 10 000, tehát kisebb méretarány.",
         "C": "1 : 1 000 000 kis méretarányú, áttekintő térkép.",
         "D": "1 : 25 000 000 a legkisebb méretarány a felsoroltak közül (világtérkép)."
       }
@@ -156,7 +156,7 @@
       "options": [
         {
           "key": "A",
-          "text": "alacsony fekvésű síkságot"
+          "text": "mezőgazdasági területet"
         },
         {
           "key": "B",
@@ -164,19 +164,19 @@
         },
         {
           "key": "C",
-          "text": "mezőgazdasági területet"
+          "text": "alacsony fekvésű síkságot"
         },
         {
           "key": "D",
           "text": "nemzeti parkot"
         }
       ],
-      "answer": "A",
+      "answer": "C",
       "category": "terkep-olvasas",
-      "explanation": "Helyes: A. A domborzati térkép színfokozatai a tengerszint feletti magasságot mutatják, a zöld a legalacsonyabb szárazföldi szint.",
+      "explanation": "Helyes: C. A domborzati térkép színfokozatai a tengerszint feletti magasságot mutatják, a zöld a legalacsonyabb szárazföldi szint.",
       "wrongOptions": {
+        "A": "A földhasználatot gazdasági térkép mutatja.",
         "B": "Az erdőt külön jel ábrázolja, nem a domborzati színezés.",
-        "C": "A földhasználatot gazdasági térkép mutatja.",
         "D": "A nemzeti parkot határvonal vagy külön jel jelzi."
       }
     },
@@ -200,7 +200,7 @@
       "options": [
         {
           "key": "A",
-          "text": "meredek lejtőt"
+          "text": "síkságot"
         },
         {
           "key": "B",
@@ -208,19 +208,19 @@
         },
         {
           "key": "C",
-          "text": "síkságot"
+          "text": "meredek lejtőt"
         },
         {
           "key": "D",
           "text": "tavat"
         }
       ],
-      "answer": "A",
+      "answer": "C",
       "category": "terkep-olvasas",
       "explanation": "Helyes: meredek lejtőt. Kis vízszintes távolságon nagy a magasságkülönbség.",
       "wrongOptions": {
+        "A": "Síkságon a szintvonalak nagyon ritkák vagy hiányoznak.",
         "B": "A lankás lejtőn a szintvonalak ritkák.",
-        "C": "Síkságon a szintvonalak nagyon ritkák vagy hiányoznak.",
         "D": "A tavat kék szín jelöli, nem a szintvonalak sűrűsége."
       }
     },

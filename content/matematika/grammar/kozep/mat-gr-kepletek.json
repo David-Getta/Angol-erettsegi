@@ -135,11 +135,11 @@
       "options": [
         {
           "key": "A",
-          "text": "24π cm²"
+          "text": "15π cm²"
         },
         {
           "key": "B",
-          "text": "15π cm²"
+          "text": "24π cm²"
         },
         {
           "key": "C",
@@ -150,11 +150,11 @@
           "text": "33π cm²"
         }
       ],
-      "answer": "A",
+      "answer": "B",
       "category": "kepletek",
       "explanation": "A helyes: 24π cm². A = alaplap + palást = r²π + rπa = 9π + 15π = 24π cm².",
       "wrongOptions": {
-        "B": "A 15π csak a palást területe, az alaplap hiányzik.",
+        "A": "A 15π csak a palást területe, az alaplap hiányzik.",
         "C": "A 9π csak az alaplap területe.",
         "D": "A 33π-ben az alaplap kétszer szerepel: r²π + rπ(r + a) = 9π + 24π; a palást csak rπa = 15π."
       }

@@ -31,7 +31,7 @@
     "options": [
       {
         "key": "A",
-        "text": "A hajtások ilyenkor csak sejtlégzést végeznek, ezért oxigént vesznek fel."
+        "text": "A mérőműszer sötétben hibásan működik."
       },
       {
         "key": "B",
@@ -43,12 +43,12 @@
       },
       {
         "key": "D",
-        "text": "A mérőműszer sötétben hibásan működik."
+        "text": "A hajtások ilyenkor csak sejtlégzést végeznek, ezért oxigént vesznek fel."
       }
     ],
-    "answer": "A",
+    "answer": "D",
     "category": "abra-adatelemzes",
-    "explanation": "Helyes: A. Fény nélkül nincs fotoszintézis, a sejtlégzés viszont folyamatos, ezért a hajtások oxigént fogyasztanak – a nettó érték negatív, nagysága (2 egység) a sejtlégzés oxigénfogyasztását mutatja."
+    "explanation": "Helyes: D. Fény nélkül nincs fotoszintézis, a sejtlégzés viszont folyamatos, ezért a hajtások oxigént fogyasztanak – a nettó érték negatív, nagysága (2 egység) a sejtlégzés oxigénfogyasztását mutatja."
   },
   "items": [
     {
@@ -90,7 +90,7 @@
         },
         {
           "key": "B",
-          "text": "a szén-dioxid (hidrogén-karbonát) mennyisége"
+          "text": "a sejtlégzés sebessége"
         },
         {
           "key": "C",
@@ -98,16 +98,16 @@
         },
         {
           "key": "D",
-          "text": "a sejtlégzés sebessége"
+          "text": "a szén-dioxid (hidrogén-karbonát) mennyisége"
         }
       ],
-      "answer": "B",
+      "answer": "D",
       "category": "abra-adatelemzes",
-      "explanation": "Helyes: B. 4 felett a fény növelése már nem gyorsítja a folyamatot a kevés hidrogén-karbonátot tartalmazó oldatban, a sok hidrogén-karbonátot tartalmazóban viszont igen – tehát itt a szén-dioxid-ellátás a korlátozó (minimum-) tényező.",
+      "explanation": "Helyes: D. 4 felett a fény növelése már nem gyorsítja a folyamatot a kevés hidrogén-karbonátot tartalmazó oldatban, a sok hidrogén-karbonátot tartalmazóban viszont igen – tehát itt a szén-dioxid-ellátás a korlátozó (minimum-) tényező.",
       "wrongOptions": {
         "A": "Ha a fény lenne a korlátozó tényező, a fényerősség növelésével nőne az oxigénleadás; 4 felett ez ebben az oldatban már nem történik meg.",
-        "C": "A víz oxigéntartalma a termék felhalmozódását jelzi, a kísérlet adatai szerint nem ez határozza meg a sebességet.",
-        "D": "A sejtlégzés a feladat szerint állandó, ezért nem okozhatja, hogy a görbe 4 felett ellaposodik."
+        "B": "A sejtlégzés a feladat szerint állandó, ezért nem okozhatja, hogy a görbe 4 felett ellaposodik.",
+        "C": "A víz oxigéntartalma a termék felhalmozódását jelzi, a kísérlet adatai szerint nem ez határozza meg a sebességet."
       }
     },
     {
@@ -156,7 +156,7 @@
       "options": [
         {
           "key": "A",
-          "text": "ATP-t és NADPH-t"
+          "text": "ADP-t és NADP⁺-t"
         },
         {
           "key": "B",
@@ -168,16 +168,16 @@
         },
         {
           "key": "D",
-          "text": "ADP-t és NADP⁺-t"
+          "text": "ATP-t és NADPH-t"
         }
       ],
-      "answer": "A",
+      "answer": "D",
       "category": "anyagcsere-folyamat",
-      "explanation": "Helyes: A. A fényszakasz kémiai energiát (ATP) és redukálóerőt (NADPH + H⁺) állít elő; a Calvin-ciklus ezek felhasználásával redukálja a megkötött szén-dioxidot szénhidráttá, a keletkező ADP és NADP⁺ pedig visszakerül a fényszakaszba.",
+      "explanation": "Helyes: D. A fényszakasz kémiai energiát (ATP) és redukálóerőt (NADPH + H⁺) állít elő; a Calvin-ciklus ezek felhasználásával redukálja a megkötött szén-dioxidot szénhidráttá, a keletkező ADP és NADP⁺ pedig visszakerül a fényszakaszba.",
       "wrongOptions": {
+        "A": "Az ADP és a NADP⁺ a Calvin-ciklusban keletkezik, és a fényszakasz használja fel újra – fordított irány.",
         "B": "Az oxigén a fényszakasz mellékterméke, a glükóz pedig a sötétszakasz terméke, nem a fényszakaszé.",
-        "C": "A szén-dioxid a környezetből érkezik, a víz a fényszakasz kiindulási anyaga, nem terméke.",
-        "D": "Az ADP és a NADP⁺ a Calvin-ciklusban keletkezik, és a fényszakasz használja fel újra – fordított irány."
+        "C": "A szén-dioxid a környezetből érkezik, a víz a fényszakasz kiindulási anyaga, nem terméke."
       }
     },
     {

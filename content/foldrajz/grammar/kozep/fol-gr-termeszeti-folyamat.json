@@ -112,11 +112,11 @@
       "options": [
         {
           "key": "A",
-          "text": "Mert a szárazföld jobban felmelegszik, és felette alacsonyabb lesz a légnyomás."
+          "text": "Mert a tenger jobban felmelegszik nappal."
         },
         {
           "key": "B",
-          "text": "Mert a tenger jobban felmelegszik nappal."
+          "text": "Mert a szárazföld jobban felmelegszik, és felette alacsonyabb lesz a légnyomás."
         },
         {
           "key": "C",
@@ -127,11 +127,11 @@
           "text": "Mert a Hold vonzása mozgatja a levegőt."
         }
       ],
-      "answer": "A",
+      "answer": "B",
       "category": "termeszeti-folyamat",
-      "explanation": "Helyes: A. A szárazföld kisebb fajhője miatt gyorsabban melegszik, felette a levegő felszáll, alacsony nyomás alakul ki, és a hűvösebb tenger felől oda áramlik a levegő.",
+      "explanation": "Helyes: B. A szárazföld kisebb fajhője miatt gyorsabban melegszik, felette a levegő felszáll, alacsony nyomás alakul ki, és a hűvösebb tenger felől oda áramlik a levegő.",
       "wrongOptions": {
-        "B": "Nappal éppen a szárazföld melegszik gyorsabban; a víz lassan melegszik fel.",
+        "A": "Nappal éppen a szárazföld melegszik gyorsabban; a víz lassan melegszik fel.",
         "C": "A téríti erő eltéríti a szelet, de nem okozza a napi parti szélrendszert.",
         "D": "A Hold a tengerjárást okozza, a szélre nincs számottevő hatása."
       }
@@ -143,7 +143,7 @@
       "options": [
         {
           "key": "A",
-          "text": "Nagy esés, bevágódás, V alakú völgy"
+          "text": "Deltaépítés"
         },
         {
           "key": "B",
@@ -151,19 +151,19 @@
         },
         {
           "key": "C",
-          "text": "Deltaépítés"
+          "text": "Nagy esés, bevágódás, V alakú völgy"
         },
         {
           "key": "D",
           "text": "Morotvatavak képződése"
         }
       ],
-      "answer": "A",
+      "answer": "C",
       "category": "termeszeti-folyamat",
-      "explanation": "Helyes: A. A felső szakaszon nagy az esés és a víz sebessége, ezért a folyó mélyíti a medrét, V alakú völgyet vés.",
+      "explanation": "Helyes: C. A felső szakaszon nagy az esés és a víz sebessége, ezért a folyó mélyíti a medrét, V alakú völgyet vés.",
       "wrongOptions": {
+        "A": "A delta a torkolatnál, a folyó végén épül.",
         "B": "Ez az alsó szakasz jellemzője.",
-        "C": "A delta a torkolatnál, a folyó végén épül.",
         "D": "Morotvató a kanyargó alsó szakaszon, a lefűződött kanyarulatokból keletkezik."
       }
     },
@@ -187,7 +187,7 @@
       "options": [
         {
           "key": "A",
-          "text": "A hideg levegő benyomul a meleg alá, felemeli; zápor, zivatar, majd lehűlés"
+          "text": "Anticiklon alakul ki, derült lesz az idő"
         },
         {
           "key": "B",
@@ -195,19 +195,19 @@
         },
         {
           "key": "C",
-          "text": "Anticiklon alakul ki, derült lesz az idő"
+          "text": "A hideg levegő benyomul a meleg alá, felemeli; zápor, zivatar, majd lehűlés"
         },
         {
           "key": "D",
           "text": "A hőmérséklet tartósan emelkedik"
         }
       ],
-      "answer": "A",
+      "answer": "C",
       "category": "termeszeti-folyamat",
-      "explanation": "Helyes: A. A hidegfront gyors, meredek feláramlást okoz, gomolyfelhők és heves csapadék kíséri, utána hűvösebb, tisztább levegő érkezik.",
+      "explanation": "Helyes: C. A hidegfront gyors, meredek feláramlást okoz, gomolyfelhők és heves csapadék kíséri, utána hűvösebb, tisztább levegő érkezik.",
       "wrongOptions": {
+        "A": "Az anticiklon nem front, hanem magas nyomású légörvény; a front átvonulása után alakulhat ki derült idő, de nem ez a front jellemzője.",
         "B": "Ez a melegfront leírása.",
-        "C": "Az anticiklon nem front, hanem magas nyomású légörvény; a front átvonulása után alakulhat ki derült idő, de nem ez a front jellemzője.",
         "D": "Hidegfront után éppen lehűlés következik."
       }
     },
@@ -230,7 +230,7 @@
       "options": [
         {
           "key": "A",
-          "text": "melegedés → jégolvadás → kisebb fényvisszaverés → további melegedés"
+          "text": "lehűlés → kevesebb párolgás → kevesebb felhő → több napsugárzás → melegedés"
         },
         {
           "key": "B",
@@ -238,19 +238,19 @@
         },
         {
           "key": "C",
-          "text": "lehűlés → kevesebb párolgás → kevesebb felhő → több napsugárzás → melegedés"
+          "text": "melegedés → jégolvadás → kisebb fényvisszaverés → további melegedés"
         },
         {
           "key": "D",
           "text": "erős párolgás → hűlő felszín → gyengülő párolgás"
         }
       ],
-      "answer": "A",
+      "answer": "C",
       "category": "termeszeti-folyamat",
-      "explanation": "Helyes: A. A folyamat eredménye (kevesebb jég, sötétebb felszín) tovább erősíti a kiváltó okot (melegedés) – ez a pozitív visszacsatolás.",
+      "explanation": "Helyes: C. A folyamat eredménye (kevesebb jég, sötétebb felszín) tovább erősíti a kiváltó okot (melegedés) – ez a pozitív visszacsatolás.",
       "wrongOptions": {
+        "A": "A lehűlés végül melegedést okoz, vagyis gyengíti magát: negatív visszacsatolás.",
         "B": "Itt az eredmény (hűlés) gyengíti a kiváltó melegedést: negatív visszacsatolás.",
-        "C": "A lehűlés végül melegedést okoz, vagyis gyengíti magát: negatív visszacsatolás.",
         "D": "A párolgás hűti a felszínt, ami csökkenti a párolgást: önszabályozó, negatív visszacsatolás."
       }
     }

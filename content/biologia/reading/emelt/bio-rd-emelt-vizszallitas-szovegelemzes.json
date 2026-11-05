@@ -102,7 +102,7 @@
       "options": [
         {
           "key": "A",
-          "text": "Tavasszal, lombfakadás előtt, amikor még nincsenek párologtató levelek."
+          "text": "Szárazságban, amikor a gázcserenyílások zárva vannak, és a levelek erősen párologtatnak."
         },
         {
           "key": "B",
@@ -110,19 +110,19 @@
         },
         {
           "key": "C",
-          "text": "Szárazságban, amikor a gázcserenyílások zárva vannak, és a levelek erősen párologtatnak."
+          "text": "Tavasszal, lombfakadás előtt, amikor még nincsenek párologtató levelek."
         },
         {
           "key": "D",
           "text": "Ősszel, a lombhullás után, amikor a levelek párologtatása a legerősebb."
         }
       ],
-      "answer": "A",
+      "answer": "C",
       "category": "szovegertelmezes",
-      "explanation": "Helyes: A. A szöveg példája a szőlő tavaszi könnyezése lombfakadás előtt: ilyenkor még nincs levél, tehát párologtatás sem, ezért a gyökérnyomás hajtja a nedvet felfelé.",
+      "explanation": "Helyes: C. A szöveg példája a szőlő tavaszi könnyezése lombfakadás előtt: ilyenkor még nincs levél, tehát párologtatás sem, ezért a gyökérnyomás hajtja a nedvet felfelé.",
       "wrongOptions": {
+        "A": "Zárt gázcserenyílások mellett a levelek nem párologtatnak erősen – az állítás önellentmondó, és a szöveg sem kapcsolja a gyökérnyomást a szárazsághoz.",
         "B": "Nyáron a párologtatás a fő hajtóerő, a gyökérnyomás ehhez képest elhanyagolható.",
-        "C": "Zárt gázcserenyílások mellett a levelek nem párologtatnak erősen – az állítás önellentmondó, és a szöveg sem kapcsolja a gyökérnyomást a szárazsághoz.",
         "D": "Lombhullás után nincsenek levelek, tehát nem lehet erős párologtatás; a szöveg tavaszi példát hoz."
       }
     },
@@ -187,7 +187,7 @@
       "options": [
         {
           "key": "A",
-          "text": "A hűvösebb, párásabb éjszakai levegőben kevesebb vizet veszít, mégis felveszi a szén-dioxidot."
+          "text": "Nappal a levegő egyáltalán nem tartalmaz szén-dioxidot."
         },
         {
           "key": "B",
@@ -199,16 +199,16 @@
         },
         {
           "key": "D",
-          "text": "Nappal a levegő egyáltalán nem tartalmaz szén-dioxidot."
+          "text": "A hűvösebb, párásabb éjszakai levegőben kevesebb vizet veszít, mégis felveszi a szén-dioxidot."
         }
       ],
-      "answer": "A",
+      "answer": "D",
       "category": "felepites-mukodes",
-      "explanation": "Helyes: A. Éjszaka kisebb a párolgás, ezért a nyitott gázcserenyílásokon kevesebb víz távozik. A szén-dioxidot szerves savakban tárolja, és nappal, zárt nyílások mellett, a fény energiájával építi be cukorba – így a víztakarékosság és a fotoszintézis összeegyeztethető.",
+      "explanation": "Helyes: D. Éjszaka kisebb a párolgás, ezért a nyitott gázcserenyílásokon kevesebb víz távozik. A szén-dioxidot szerves savakban tárolja, és nappal, zárt nyílások mellett, a fény energiájával építi be cukorba – így a víztakarékosság és a fotoszintézis összeegyeztethető.",
       "wrongOptions": {
+        "A": "A levegő szén-dioxid-tartalma nappal is megvan; a nappali zárva tartás oka a vízveszteség elkerülése.",
         "B": "A szöveg szerint a cukor felépítése nappal, a fény energiáját felhasználva történik; éjszaka csak a CO₂ megkötése zajlik.",
-        "C": "A fotoszintézishez szén-dioxid kell, nem oxigén; az oxigént a fotoszintézis termeli.",
-        "D": "A levegő szén-dioxid-tartalma nappal is megvan; a nappali zárva tartás oka a vízveszteség elkerülése."
+        "C": "A fotoszintézishez szén-dioxid kell, nem oxigén; az oxigént a fotoszintézis termeli."
       }
     }
   ],

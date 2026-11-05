@@ -170,7 +170,7 @@
       "options": [
         {
           "key": "A",
-          "text": "3000"
+          "text": "32 000"
         },
         {
           "key": "B",
@@ -178,19 +178,19 @@
         },
         {
           "key": "C",
-          "text": "32 000"
+          "text": "3000"
         },
         {
           "key": "D",
           "text": "64 000"
         }
       ],
-      "answer": "C",
+      "answer": "A",
       "category": "okologiai-szamitas",
-      "explanation": "Helyes: C. 3 óra = 180 perc = 6 kettőződés; 500 · 2⁶ = 500 · 64 = 32 000.",
+      "explanation": "Helyes: A. 3 óra = 180 perc = 6 kettőződés; 500 · 2⁶ = 500 · 64 = 32 000.",
       "wrongOptions": {
-        "A": "Ez 500 · 6 lenne – szorzás hatványozás helyett.",
         "B": "Ez 500 · 12 – hibás művelet.",
+        "C": "Ez 500 · 6 lenne – szorzás hatványozás helyett.",
         "D": "Ez 1000 kiinduló egyedszámmal adódna, nem 500-zal."
       }
     },

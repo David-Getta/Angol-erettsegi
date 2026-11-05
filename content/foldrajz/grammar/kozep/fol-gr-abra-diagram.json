@@ -115,7 +115,7 @@
       "options": [
         {
           "key": "A",
-          "text": "10 százalékpontos, relatíve 25%-os növekedés"
+          "text": "50%-os növekedés"
         },
         {
           "key": "B",
@@ -123,19 +123,19 @@
         },
         {
           "key": "C",
-          "text": "50%-os növekedés"
+          "text": "10 százalékpontos, relatíve 25%-os növekedés"
         },
         {
           "key": "D",
           "text": "25 százalékpontos növekedés"
         }
       ],
-      "answer": "A",
+      "answer": "C",
       "category": "abra-diagram",
-      "explanation": "Helyes: A. A különbség 50 − 40 = 10 százalékpont; a relatív növekedés 10 : 40 = 0,25, azaz 25%.",
+      "explanation": "Helyes: C. A különbség 50 − 40 = 10 százalékpont; a relatív növekedés 10 : 40 = 0,25, azaz 25%.",
       "wrongOptions": {
+        "A": "Az 50% a végső arány, nem a növekedés mértéke.",
         "B": "A 10 a két arány különbsége, ez százalékpont, nem százalék.",
-        "C": "Az 50% a végső arány, nem a növekedés mértéke.",
         "D": "A 25 a relatív növekedés százalékban, nem százalékpont."
       }
     },
@@ -146,7 +146,7 @@
       "options": [
         {
           "key": "A",
-          "text": "urna alakú"
+          "text": "széles alapú, meredeken keskenyedő"
         },
         {
           "key": "B",
@@ -154,19 +154,19 @@
         },
         {
           "key": "C",
-          "text": "széles alapú, meredeken keskenyedő"
+          "text": "urna alakú"
         },
         {
           "key": "D",
           "text": "egyenletesen szélesedő alapú"
         }
       ],
-      "answer": "A",
+      "answer": "C",
       "category": "abra-diagram",
       "explanation": "Helyes: urna alakú. Az alja keskeny (kevés születés), a középső és felső része széles (sok középkorú és idős).",
       "wrongOptions": {
+        "A": "A széles alap és meredek keskenyedés a piramis típus leírása.",
         "B": "A piramis alakú korfa sok születést, fiatal, növő népességet jelez.",
-        "C": "A széles alap és meredek keskenyedés a piramis típus leírása.",
         "D": "A széles alap mindig sok gyermeket jelent, ez nem elöregedő népesség."
       }
     },
@@ -188,7 +188,7 @@
       "options": [
         {
           "key": "A",
-          "text": "Az állomás a déli félgömbön van."
+          "text": "Az állomás az Egyenlítőn van."
         },
         {
           "key": "B",
@@ -196,19 +196,19 @@
         },
         {
           "key": "C",
-          "text": "Az állomás az Egyenlítőn van."
+          "text": "Az állomás a déli félgömbön van."
         },
         {
           "key": "D",
           "text": "Az állomás a hideg övezetben van."
         }
       ],
-      "answer": "A",
+      "answer": "C",
       "category": "abra-diagram",
-      "explanation": "Helyes: A. A déli félgömbön december–február a nyár, ezért ott a január a legmelegebb hónapok egyike.",
+      "explanation": "Helyes: C. A déli félgömbön december–február a nyár, ezért ott a január a legmelegebb hónapok egyike.",
       "wrongOptions": {
+        "A": "Az Egyenlítőn alig van évszakos hőmérséklet-különbség, a legmelegebb hónap nem feltétlenül január.",
         "B": "Az északi félgömbön a január a leghidegebb hónapok egyike.",
-        "C": "Az Egyenlítőn alig van évszakos hőmérséklet-különbség, a legmelegebb hónap nem feltétlenül január.",
         "D": "A legmelegebb hónap időpontja a félgömböt jelzi, nem az övezetet."
       }
     },

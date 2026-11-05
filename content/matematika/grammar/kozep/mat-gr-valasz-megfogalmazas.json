@@ -144,11 +144,11 @@
       "options": [
         {
           "key": "A",
-          "text": "(1; 5]"
+          "text": "[1; 5)"
         },
         {
           "key": "B",
-          "text": "[1; 5)"
+          "text": "(1; 5]"
         },
         {
           "key": "C",
@@ -159,11 +159,11 @@
           "text": "[1; 5]"
         }
       ],
-      "answer": "A",
+      "answer": "B",
       "category": "valasz-megfogalmazas",
       "explanation": "A helyes: (1; 5]. Az 1 nem tartozik a halmazhoz (szigorú <), ezért kerek zárójel; az 5 igen (≤), ezért szögletes.",
       "wrongOptions": {
-        "B": "Fordítva: ez az 1-et tartalmazza, az 5-öt nem.",
+        "A": "Fordítva: ez az 1-et tartalmazza, az 5-öt nem.",
         "C": "Ez az 5-öt sem tartalmazza, pedig x = 5 megengedett.",
         "D": "Ez az 1-et is tartalmazza, pedig x > 1."
       }

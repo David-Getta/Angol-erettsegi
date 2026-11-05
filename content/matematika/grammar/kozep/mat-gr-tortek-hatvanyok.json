@@ -158,23 +158,23 @@
         },
         {
           "key": "B",
-          "text": "2"
+          "text": "100"
         },
         {
           "key": "C",
-          "text": "100"
+          "text": "2"
         },
         {
           "key": "D",
           "text": "lg 4 · lg 25"
         }
       ],
-      "answer": "B",
+      "answer": "C",
       "category": "tortek-hatvanyok",
       "explanation": "A helyes: 2. A szorzat logaritmusának azonossága szerint lg 4 + lg 25 = lg(4 · 25) = lg 100 = 2.",
       "wrongOptions": {
         "A": "A logaritmusok összege a szorzat logaritmusa, nem az összegé: lg 29 ≠ lg 4 + lg 25.",
-        "C": "A 100 a logaritmus argumentuma; lg 100 = 2 a válasz.",
+        "B": "A 100 a logaritmus argumentuma; lg 100 = 2 a válasz.",
         "D": "Logaritmusok összegét nem a szorzatuk adja; az összegből a szorzat logaritmusa lesz."
       }
     },
@@ -199,11 +199,11 @@
       "options": [
         {
           "key": "A",
-          "text": "5√2"
+          "text": "25√2"
         },
         {
           "key": "B",
-          "text": "25√2"
+          "text": "5√2"
         },
         {
           "key": "C",
@@ -214,11 +214,11 @@
           "text": "10√5"
         }
       ],
-      "answer": "A",
+      "answer": "B",
       "category": "tortek-hatvanyok",
       "explanation": "A helyes: 5√2. 50 = 25 · 2, és √(25 · 2) = √25 · √2 = 5√2.",
       "wrongOptions": {
-        "B": "A 25-öt gyök alól kihozva 5 lesz, nem 25: (25√2)² = 1250.",
+        "A": "A 25-öt gyök alól kihozva 5 lesz, nem 25: (25√2)² = 1250.",
         "C": "(2√5)² = 4 · 5 = 20, nem 50.",
         "D": "(10√5)² = 500, ez tízszer akkora."
       }

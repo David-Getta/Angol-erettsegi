@@ -71,7 +71,7 @@
       "options": [
         {
           "key": "A",
-          "text": "A GDP átszámításakor figyelembe veszik az országok eltérő árszínvonalát."
+          "text": "Csak az exportra termelt javak értékét számítják bele."
         },
         {
           "key": "B",
@@ -79,19 +79,19 @@
         },
         {
           "key": "C",
-          "text": "Csak az exportra termelt javak értékét számítják bele."
+          "text": "A GDP átszámításakor figyelembe veszik az országok eltérő árszínvonalát."
         },
         {
           "key": "D",
           "text": "A GDP-t elosztják az ország népességével."
         }
       ],
-      "answer": "A",
+      "answer": "C",
       "category": "fogalomhasznalat",
-      "explanation": "Helyes: A. Az alacsonyabb árszínvonalú országokban ugyanannyi pénzért több terméket lehet venni; a PPP szerinti GDP ezt kiigazítja, így az életszínvonal jobban összehasonlítható.",
+      "explanation": "Helyes: C. Az alacsonyabb árszínvonalú országokban ugyanannyi pénzért több terméket lehet venni; a PPP szerinti GDP ezt kiigazítja, így az életszínvonal jobban összehasonlítható.",
       "wrongOptions": {
+        "A": "A GDP minden végső terméket és szolgáltatást tartalmaz, nem csak az exportot.",
         "B": "A hivatalos árfolyamon számított GDP éppen nem veszi figyelembe az árszínvonal-különbségeket; a PPP ezt javítja.",
-        "C": "A GDP minden végső terméket és szolgáltatást tartalmaz, nem csak az exportot.",
         "D": "A népességgel való osztás az egy főre jutó GDP, ami független attól, hogy árfolyamon vagy PPP-n számolunk."
       }
     },
@@ -134,11 +134,11 @@
       "options": [
         {
           "key": "A",
-          "text": "Nemzetközi Valutaalap (IMF)"
+          "text": "Kereskedelmi Világszervezet (WTO)"
         },
         {
           "key": "B",
-          "text": "Kereskedelmi Világszervezet (WTO)"
+          "text": "Nemzetközi Valutaalap (IMF)"
         },
         {
           "key": "C",
@@ -149,11 +149,11 @@
           "text": "Észak-atlanti Szerződés Szervezete (NATO)"
         }
       ],
-      "answer": "A",
+      "answer": "B",
       "category": "tarsadalmi-folyamat",
       "explanation": "Helyes: IMF. A Nemzetközi Valutaalap (székhelye Washington) rövid távú hiteleket nyújt a fizetésimérleg-válságba került országoknak, cserébe gazdaságpolitikai feltételeket szab.",
       "wrongOptions": {
-        "B": "A WTO a nemzetközi kereskedelem szabályait (vámok, kereskedelmi viták) felügyeli, nem hitelez.",
+        "A": "A WTO a nemzetközi kereskedelem szabályait (vámok, kereskedelmi viták) felügyeli, nem hitelez.",
         "C": "Az OPEC kőolaj-exportáló országok kartellje, a kitermelés és az olajár befolyásolása a célja.",
         "D": "A NATO katonai-védelmi szövetség, nem pénzügyi intézmény."
       }

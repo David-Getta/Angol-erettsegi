@@ -130,11 +130,11 @@
       "options": [
         {
           "key": "A",
-          "text": "a buborékok száma"
+          "text": "a lámpa távolsága (a fényerősség)"
         },
         {
           "key": "B",
-          "text": "a lámpa távolsága (a fényerősség)"
+          "text": "a buborékok száma"
         },
         {
           "key": "C",
@@ -145,11 +145,11 @@
           "text": "a hajtás mérete"
         }
       ],
-      "answer": "B",
+      "answer": "A",
       "category": "kiserlet-ertelmezes",
-      "explanation": "Helyes: B. A kísérletező a lámpa távolságát változtatja, ezzel a fényerősséget; ez a független változó.",
+      "explanation": "Helyes: A. A kísérletező a lámpa távolságát változtatja, ezzel a fényerősséget; ez a független változó.",
       "wrongOptions": {
-        "A": "A buborékok száma a mért, függő változó.",
+        "B": "A buborékok száma a mért, függő változó.",
         "C": "A víz hőmérsékletét állandó értéken kell tartani (a lámpa melegíthet – ez hibaforrás).",
         "D": "A hajtás mérete rögzített tényező; mindig ugyanazt a hajtást kell használni."
       }
@@ -165,7 +165,7 @@
         },
         {
           "key": "B",
-          "text": "keményítőoldat + desztillált víz, 37 °C"
+          "text": "keményítőoldat + nyál, 0 °C"
         },
         {
           "key": "C",
@@ -173,16 +173,16 @@
         },
         {
           "key": "D",
-          "text": "keményítőoldat + nyál, 0 °C"
+          "text": "keményítőoldat + desztillált víz, 37 °C"
         }
       ],
-      "answer": "B",
+      "answer": "D",
       "category": "kiserlet-ertelmezes",
-      "explanation": "Helyes: B. A kontrollban csak a vizsgált tényező (a nyál) hiányzik, minden más azonos; így igazolható, hogy a keményítő nem bomlik el magától.",
+      "explanation": "Helyes: D. A kontrollban csak a vizsgált tényező (a nyál) hiányzik, minden más azonos; így igazolható, hogy a keményítő nem bomlik el magától.",
       "wrongOptions": {
         "A": "Ez maga a kísérleti minta, nem kontroll.",
-        "C": "Keményítő nélkül nincs mit összehasonlítani; két tényező változik.",
-        "D": "Ez egy újabb kísérleti változó (a hőmérséklet hatása), nem a nyál hatásának kontrollja."
+        "B": "Ez egy újabb kísérleti változó (a hőmérséklet hatása), nem a nyál hatásának kontrollja.",
+        "C": "Keményítő nélkül nincs mit összehasonlítani; két tényező változik."
       }
     },
     {
@@ -209,7 +209,7 @@
         },
         {
           "key": "B",
-          "text": "Hogy csökkenjen a véletlen (pl. életképtelen magok) hatása, és megbízhatóbb legyen az eredmény."
+          "text": "Mert a kevés mag nem fér el a csészében."
         },
         {
           "key": "C",
@@ -217,16 +217,16 @@
         },
         {
           "key": "D",
-          "text": "Mert a kevés mag nem fér el a csészében."
+          "text": "Hogy csökkenjen a véletlen (pl. életképtelen magok) hatása, és megbízhatóbb legyen az eredmény."
         }
       ],
-      "answer": "B",
+      "answer": "D",
       "category": "kiserlet-ertelmezes",
-      "explanation": "Helyes: B. Nagyobb mintaszámnál egy-egy eleve életképtelen vagy rendellenes mag kevésbé torzítja az arányt.",
+      "explanation": "Helyes: D. Nagyobb mintaszámnál egy-egy eleve életképtelen vagy rendellenes mag kevésbé torzítja az arányt.",
       "wrongOptions": {
         "A": "A magok száma nem gyorsítja a csírázást.",
-        "C": "A magok nem melegítik érdemben egymást; a hőmérsékletet a termosztát biztosítja.",
-        "D": "A mintaszám a megbízhatóság miatt fontos, nem helykérdés."
+        "B": "A mintaszám a megbízhatóság miatt fontos, nem helykérdés.",
+        "C": "A magok nem melegítik érdemben egymást; a hőmérsékletet a termosztát biztosítja."
       }
     },
     {

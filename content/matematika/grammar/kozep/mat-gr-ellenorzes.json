@@ -121,7 +121,7 @@
       "options": [
         {
           "key": "A",
-          "text": "Az oldalak 5 cm és 8 cm."
+          "text": "Az oldalak 5 cm és 8 cm vagy −8 cm és −5 cm."
         },
         {
           "key": "B",
@@ -129,19 +129,19 @@
         },
         {
           "key": "C",
-          "text": "Az oldalak 5 cm és 8 cm vagy −8 cm és −5 cm."
+          "text": "Az oldalak 5 cm és 8 cm."
         },
         {
           "key": "D",
           "text": "Nincs megoldás."
         }
       ],
-      "answer": "A",
+      "answer": "C",
       "category": "ellenorzes",
-      "explanation": "A helyes: A. A −8 hosszúságként nem lehetséges, ezért csak x = 5 jó, a másik oldal 8 cm. Ellenőrzés: 5 · 8 = 40.",
+      "explanation": "A helyes: C. A −8 hosszúságként nem lehetséges, ezért csak x = 5 jó, a másik oldal 8 cm. Ellenőrzés: 5 · 8 = 40.",
       "wrongOptions": {
+        "A": "A negatív gyököt a feladat feltétele kizárja; a válaszban csak az értelmes megoldás szerepelhet.",
         "B": "Hosszúság nem lehet negatív.",
-        "C": "A negatív gyököt a feladat feltétele kizárja; a válaszban csak az értelmes megoldás szerepelhet.",
         "D": "Az x = 5 minden feltételnek megfelel, tehát van megoldás."
       }
     },
@@ -171,20 +171,20 @@
         },
         {
           "key": "C",
-          "text": "Nem, mert a sorszámra nem egész szám adódik."
+          "text": "Nem, mert a 60 páros."
         },
         {
           "key": "D",
-          "text": "Nem, mert a 60 páros."
+          "text": "Nem, mert a sorszámra nem egész szám adódik."
         }
       ],
-      "answer": "C",
+      "answer": "D",
       "category": "ellenorzes",
-      "explanation": "A helyes: C. 5 + 3(n − 1) = 60-ból n − 1 = 55/3, n ≈ 19,33, ami nem egész; a 19. tag 59, a 20. tag 62.",
+      "explanation": "A helyes: D. 5 + 3(n − 1) = 60-ból n − 1 = 55/3, n ≈ 19,33, ami nem egész; a 19. tag 59, a 20. tag 62.",
       "wrongOptions": {
         "A": "A 19. tag 5 + 18 · 3 = 59, nem 60.",
         "B": "A 20. tag 5 + 19 · 3 = 62.",
-        "D": "A paritás itt nem dönt: a sorozatban vannak páros tagok is (pl. 8, 14)."
+        "C": "A paritás itt nem dönt: a sorozatban vannak páros tagok is (pl. 8, 14)."
       }
     }
   ],

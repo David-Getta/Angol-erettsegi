@@ -1,0 +1,299 @@
+{
+  "schemaVersion": 1,
+  "id": "mag-gr-helyesiras",
+  "subject": "magyar",
+  "revision": 1,
+  "level": "kozep",
+  "source": "generated",
+  "topic": "nyelvtan",
+  "title": "Helyesírás és központozás",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "grammar",
+  "type": "lesson",
+  "category": "helyesiras",
+  "summaryHu": "A magyar helyesírás szabályait a Magyar Tudományos Akadémia szabályzata (AkH., 12. kiadás, 2015) rögzíti. Az írásbeli vizsgán a helyesírási hibákért a teljes dolgozatból legfeljebb 8, az íráskép miatt legfeljebb 2 pont vonható le, a műveltségi feladatlapon pedig külön helyesírási feladat is lehet. A legtöbb hiba néhány visszatérő területen születik: egybe- és különírás, kötőjel, j/ly, tulajdonnevek és vesszőhasználat. A vizsgán helyesírási szótár használható.",
+  "rules": [
+    {
+      "title": "A helyesírás négy alapelve",
+      "explanation": "A magyar helyesírás négy elvre épül. Kiejtés szerinti írásmód: úgy írjuk, ahogy ejtjük (kert, alma). Szóelemző írásmód: a szóelemeket eredeti alakjukban írjuk, akkor is, ha a kiejtés változik (egészség, látja, barátság). Hagyomány szerinti írásmód: a régi írásmódot őrizzük (j/ly; Kossuth, Széchenyi). Egyszerűsítő írásmód: a kétjegyű betűk kettőzésekor csak az első jegyet kettőzzük (hosszú, meggyel), és bizonyos esetekben egyszerűsítünk.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "egészség [egésség], látja [láttya]",
+          "hu": "Szóelemző írásmód: az egész + ség és a lát + ja elemek láthatók maradnak."
+        },
+        {
+          "en": "hosszú (nem: hoszszú), meggyel (meggy + vel)",
+          "hu": "Egyszerűsítő írásmód: a kettőzött sz és gy csak az első betűt kettőzi."
+        }
+      ]
+    },
+    {
+      "title": "Egybeírás és különírás",
+      "explanation": "Az összetett szavakat egybeírjuk, ha a két szó együtt új jelentést hoz létre (nagymama, gyorsvonat, hétfő). Ha a szavak megtartják eredeti jelentésüket és szintagmát alkotnak, külön írjuk (nagy mama = nagy termetű anya; gyors vonat = sebesen haladó vonat). A jelentés dönti el az írásmódot.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "A nagymamám süteményt sütött. – A nagy mamám süteményt sütött.",
+          "hu": "Az első a nagyanyát, a második egy nagy termetű édesanyát jelent."
+        }
+      ]
+    },
+    {
+      "title": "Kötőjel: szótagszámlálás, számnevek, földrajzi nevek",
+      "explanation": "A kettőnél több tagú összetételt, ha hat szótagnál hosszabb, a fő összetételi határon kötőjellel tagoljuk (labdarúgó-mérkőzés, gépjármű-biztosítás). Kétezer fölött az összetett számnevet a hármas számcsoportok határán kötőjellel írjuk (kétezer-huszonhét), kétezerig egybeírjuk (ezerkilencszáznegyvennyolc). A tulajdonnévi előtagból és földrajzi köznévi utótagból álló nevek kötőjelesek (Kárpát-medence, Balaton-felvidék, Duna-part).",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "labdarúgó-mérkőzés",
+          "hu": "3 tag (labda + rúgó + mérkőzés), 7 szótag → kötőjel a fő határon."
+        },
+        {
+          "en": "kétezer-huszonhét, de: ezerkilencszáznegyvennyolc",
+          "hu": "Kétezer fölött kötőjel, alatta egybeírás."
+        }
+      ]
+    },
+    {
+      "title": "Tulajdonnevek és -i képzős származékaik",
+      "explanation": "A tulajdonneveket nagy kezdőbetűvel írjuk. Az egyelemű tulajdonnév -i képzős alakja kisbetűs (Szeged → szegedi, Magyarország → magyarországi). A kötőjeles földrajzi nevek -i képzős alakja megtartja a nagybetűt és a kötőjelet (Kárpát-medence → Kárpát-medencei, Duna-part → Duna-parti).",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "budapesti diák, magyarországi út, Kárpát-medencei népek",
+          "hu": "Egyelemű név: kisbetűs származék; kötőjeles név: megmarad a nagybetű."
+        }
+      ]
+    },
+    {
+      "title": "Vesszőhasználat",
+      "explanation": "Az összetett mondat tagmondatai közé vesszőt teszünk; a mellékmondatot bevezető kötőszó (hogy, mert, ha, amikor) vagy vonatkozó névmás (aki, amely, ami) elé kerül a vessző, utána nem. Vessző választja el a felsorolás tagjait (de az „és” előtt mondatrészek között nem), a megszólítást és az értelmező jelzőt. Alany és állítmány közé nem teszünk vesszőt.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "Tudom, hogy holnap eljössz.",
+          "hu": "A vessző a „hogy” elé kerül."
+        },
+        {
+          "en": "Petőfi Sándor, a márciusi ifjak vezéralakja, 1823-ban született.",
+          "hu": "Az értelmező jelzőt két oldalról vessző fogja közre."
+        }
+      ]
+    },
+    {
+      "title": "Gyakori betűhibák: j/ly, rövid és hosszú hangok",
+      "explanation": "A j és ly írása hagyomány szerinti, ezért a szóképet meg kell tanulni (ly: hely, folyó, gólya, mély, király, pehely, golyó; j: fej, sajt, bója, muszáj, fejsze). Az -ít képző mindig hosszú (tanít, épít, segít), a -ul/-ül határozórag rövid (magyarul, németül), a -ú/-ű melléknévképző hosszú (hosszú lábú, keserű). Figyelj az „egyelőre” (= egyelőre még nem) és az „egyenlőre” (= egyenlő méretűre) jelentéskülönbségére.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "Egyelőre nem tudom. – A deszkákat egyenlőre vágta.",
+          "hu": "Két különböző szó: időhatározó, illetve 'egyenlő méretűre'."
+        }
+      ]
+    }
+  ],
+  "commonMistakes": [
+    {
+      "wrong": "muszály, pehej, gojó",
+      "right": "muszáj, pehely, golyó",
+      "why": "A j/ly írását a hagyomány szabja meg; a kiejtés nem segít, a szóképet meg kell tanulni."
+    },
+    {
+      "wrong": "Tudom hogy, holnap eljössz.",
+      "right": "Tudom, hogy holnap eljössz.",
+      "why": "A vessző a kötőszó elé kerül, nem utána."
+    },
+    {
+      "wrong": "kétezerhuszonhét",
+      "right": "kétezer-huszonhét",
+      "why": "Kétezer fölötti összetett számnevekben a hármas számcsoportok határán kötőjel áll."
+    },
+    {
+      "wrong": "kárpát-medencei, Szegedi egyetem",
+      "right": "Kárpát-medencei, szegedi egyetem",
+      "why": "A kötőjeles földrajzi név származéka nagybetűs marad; az egyelemű név -i képzős alakja kisbetűs."
+    },
+    {
+      "wrong": "Minnél előbb kész leszel, annál jobb.",
+      "right": "Minél előbb kész leszel, annál jobb.",
+      "why": "A „minél” egy n-nel írandó; a kiejtésbeli nyomatékos ejtés nem jelenik meg az írásban."
+    }
+  ],
+  "examTips": [
+    "A dolgozat végén szánj 5–10 percet kizárólag helyesírási átolvasásra: külön figyelj az egybe- és különírásra, a tulajdonnevekre (szerzők, művek címe) és a vesszőkre.",
+    "A művek címét pontosan írd (A walesi bárdok, Az ember tragédiája, Édes Anna) – a címbeli névelő és a nagybetű is a cím része.",
+    "Kétes esetben használd a helyesírási szótárt, vagy fogalmazd át a mondatot úgy, hogy a bizonytalan szó elkerülhető legyen."
+  ],
+  "practice": [
+    {
+      "id": "1",
+      "kind": "choice",
+      "prompt": "Melyik szó van helyesen írva?",
+      "options": [
+        {
+          "key": "A",
+          "text": "pehely"
+        },
+        {
+          "key": "B",
+          "text": "pehej"
+        },
+        {
+          "key": "C",
+          "text": "pelyhej"
+        },
+        {
+          "key": "D",
+          "text": "pehelly"
+        }
+      ],
+      "answer": "A",
+      "category": "helyesiras",
+      "explanation": "Helyes: pehely – ly-nal, a hagyomány szerinti írásmód szerint (vö. pelyhek).",
+      "wrongOptions": {
+        "B": "Kiejtés szerinti alak, de a szót ly-nal írjuk.",
+        "C": "Torzult alak, ilyen szó nincs.",
+        "D": "A kettőzött lly hosszú hangot jelölne, a szóvégen rövid ly áll."
+      }
+    },
+    {
+      "id": "2",
+      "kind": "choice",
+      "prompt": "Melyik mondat központozása helyes?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Petőfi Sándor, a márciusi ifjak vezéralakja, 1823-ban született."
+        },
+        {
+          "key": "B",
+          "text": "Petőfi Sándor a márciusi ifjak vezéralakja, 1823-ban született."
+        },
+        {
+          "key": "C",
+          "text": "Petőfi Sándor, a márciusi ifjak vezéralakja 1823-ban született."
+        },
+        {
+          "key": "D",
+          "text": "Petőfi Sándor, a márciusi ifjak, vezéralakja 1823-ban született."
+        }
+      ],
+      "answer": "A",
+      "category": "helyesiras",
+      "explanation": "Helyes: A. Az értelmező jelzőt (a márciusi ifjak vezéralakja) két oldalról vessző zárja közre.",
+      "wrongOptions": {
+        "B": "Hiányzik a nyitó vessző az értelmező jelző előtt.",
+        "C": "Hiányzik a záró vessző; így úgy tűnik, mintha a vezéralak lenne az alany.",
+        "D": "A vessző az értelmező jelző belsejébe került, széttöri a szerkezetet."
+      }
+    },
+    {
+      "id": "3",
+      "kind": "choice",
+      "prompt": "Melyik alak helyes?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Kárpát-medencei"
+        },
+        {
+          "key": "B",
+          "text": "kárpát-medencei"
+        },
+        {
+          "key": "C",
+          "text": "Kárpát medencei"
+        },
+        {
+          "key": "D",
+          "text": "Kárpátmedencei"
+        }
+      ],
+      "answer": "A",
+      "category": "helyesiras",
+      "explanation": "Helyes: Kárpát-medencei. A kötőjeles földrajzi név -i képzős származéka megtartja a kötőjelet és a nagy kezdőbetűt.",
+      "wrongOptions": {
+        "B": "A tulajdonnévi előtag nagybetűs marad.",
+        "C": "A kötőjel nem maradhat el.",
+        "D": "A két elemet nem írjuk egybe."
+      }
+    },
+    {
+      "id": "4",
+      "kind": "text",
+      "prompt": "Írja le betűvel a 2026-os évszámot!",
+      "answer": [
+        "kétezer-huszonhat"
+      ],
+      "category": "helyesiras",
+      "explanation": "Helyes válasz: kétezer-huszonhat. Kétezer fölött a hármas számcsoportok határán kötőjel áll."
+    },
+    {
+      "id": "5",
+      "kind": "choice",
+      "prompt": "Melyik mondatban helyes az írásmód?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Egyelőre nem tudom, eljövök-e."
+        },
+        {
+          "key": "B",
+          "text": "Egyenlőre nem tudom, eljövök-e."
+        },
+        {
+          "key": "C",
+          "text": "Egyelőre nem tudom eljövök-e."
+        },
+        {
+          "key": "D",
+          "text": "Egyenlőre nem tudom eljövök e."
+        }
+      ],
+      "answer": "A",
+      "category": "helyesiras",
+      "explanation": "Helyes: A. Az „egyelőre” (= most még) a helyes szó, és a mellékmondat elé vessző kell; az -e kérdőszócskát kötőjellel kapcsoljuk.",
+      "wrongOptions": {
+        "B": "Az „egyenlőre” jelentése: egyenlő méretűre – itt nem ez kell.",
+        "C": "Hiányzik a vessző a mellékmondat előtt.",
+        "D": "Rossz szó, hiányzó vessző, és az -e kötőjel nélkül áll."
+      }
+    },
+    {
+      "id": "6",
+      "kind": "choice",
+      "prompt": "Melyik szó írása a szóelemző elvet szemlélteti?",
+      "options": [
+        {
+          "key": "A",
+          "text": "egészség"
+        },
+        {
+          "key": "B",
+          "text": "muszáj"
+        },
+        {
+          "key": "C",
+          "text": "Széchenyi"
+        },
+        {
+          "key": "D",
+          "text": "alma"
+        }
+      ],
+      "answer": "A",
+      "category": "helyesiras",
+      "explanation": "Helyes: egészség. Kiejtése [egésség], de írásban megőrizzük a szóelemeket (egész + ség) – ez a szóelemző írásmód.",
+      "wrongOptions": {
+        "B": "A j/ly írása a hagyomány szerinti elvet szemlélteti.",
+        "C": "A régi családnevek írása szintén a hagyomány szerinti elv.",
+        "D": "Az alma kiejtés szerinti írásmódú szó, nincs eltérés a kiejtés és az írás között."
+      }
+    }
+  ],
+  "relatedCategories": [
+    "mondatszerkesztes",
+    "stilus-hangnem"
+  ]
+}

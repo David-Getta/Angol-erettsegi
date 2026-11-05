@@ -19,11 +19,11 @@
     "options": [
       {
         "key": "A",
-        "text": "4"
+        "text": "6"
       },
       {
         "key": "B",
-        "text": "6"
+        "text": "4"
       },
       {
         "key": "C",
@@ -34,7 +34,7 @@
         "text": "12"
       }
     ],
-    "answer": "B",
+    "answer": "A",
     "category": "definicio-tetel",
     "explanation": "A kockát 6 egybevágó négyzet határolja (elöl, hátul, jobbra, balra, fent, lent). 8 a csúcsainak, 12 az éleinek a száma."
   },
@@ -75,7 +75,7 @@
         },
         {
           "key": "B",
-          "text": "(4/3)·r³π"
+          "text": "2rπ"
         },
         {
           "key": "C",
@@ -83,16 +83,16 @@
         },
         {
           "key": "D",
-          "text": "2rπ"
+          "text": "(4/3)·r³π"
         }
       ],
-      "answer": "B",
+      "answer": "D",
       "category": "kepletek",
       "explanation": "A gömb térfogata V = (4/3)·r³π. A 4r²π a gömb felszíne, az r²π·m a henger térfogata, a 2rπ a kör kerülete.",
       "wrongOptions": {
         "A": "A 4r²π a gömb felszínének képlete (területjellegű, r második hatványával).",
-        "C": "Az r²π·m az egyenes körhenger térfogata.",
-        "D": "A 2rπ a kör kerülete, nem térfogat."
+        "B": "A 2rπ a kör kerülete, nem térfogat.",
+        "C": "Az r²π·m az egyenes körhenger térfogata."
       }
     },
     {
@@ -138,7 +138,7 @@
         },
         {
           "key": "B",
-          "text": "48 cm³"
+          "text": "72 cm³"
         },
         {
           "key": "C",
@@ -146,16 +146,16 @@
         },
         {
           "key": "D",
-          "text": "72 cm³"
+          "text": "48 cm³"
         }
       ],
-      "answer": "B",
+      "answer": "D",
       "category": "kepletek",
       "explanation": "Gúla térfogata V = (alapterület · magasság)/3 = (6²·4)/3 = 144/3 = 48 cm³. A hasonló méretű hasábnak lenne 144 cm³ a térfogata.",
       "wrongOptions": {
         "A": "144 cm³ a 6 × 6 × 4-es hasáb térfogata; a gúlánál osztani kell 3-mal.",
-        "C": "96 = 4·(6·4): ez a 6 × 6 × 4-es hasáb négy oldallapjának (palástjának) területe cm²-ben, nem a gúla térfogata; a térfogathoz az alapterületet (36 cm²) a magassággal szorozzuk és 3-mal osztjuk.",
-        "D": "72 = 144/2: a gúlánál hárommal, nem kettővel kell osztani."
+        "B": "72 = 144/2: a gúlánál hárommal, nem kettővel kell osztani.",
+        "C": "96 = 4·(6·4): ez a 6 × 6 × 4-es hasáb négy oldallapjának (palástjának) területe cm²-ben, nem a gúla térfogata; a térfogathoz az alapterületet (36 cm²) a magassággal szorozzuk és 3-mal osztjuk."
       }
     },
     {

@@ -17,10 +17,22 @@
     "kind": "choice",
     "prompt": "Melyik függvény zérushelye az x = 3?",
     "options": [
-      { "key": "A", "text": "f(x) = x + 3" },
-      { "key": "B", "text": "f(x) = x − 3" },
-      { "key": "C", "text": "f(x) = 3x" },
-      { "key": "D", "text": "f(x) = 3" }
+      {
+        "key": "A",
+        "text": "f(x) = x + 3"
+      },
+      {
+        "key": "B",
+        "text": "f(x) = x − 3"
+      },
+      {
+        "key": "C",
+        "text": "f(x) = 3x"
+      },
+      {
+        "key": "D",
+        "text": "f(x) = 3"
+      }
     ],
     "answer": "B",
     "category": "definicio-tetel",
@@ -32,18 +44,30 @@
       "kind": "choice",
       "prompt": "Hol veszi fel a minimumát az f(x) = (x − 2)² + 5 függvény?",
       "options": [
-        { "key": "A", "text": "x = −2" },
-        { "key": "B", "text": "x = 2" },
-        { "key": "C", "text": "x = 5" },
-        { "key": "D", "text": "x = −5" }
+        {
+          "key": "A",
+          "text": "x = −2"
+        },
+        {
+          "key": "B",
+          "text": "x = −5"
+        },
+        {
+          "key": "C",
+          "text": "x = 5"
+        },
+        {
+          "key": "D",
+          "text": "x = 2"
+        }
       ],
-      "answer": "B",
+      "answer": "D",
       "category": "fuggveny-abrazolas",
       "explanation": "A négyzet értéke legalább 0, és pontosan akkor 0, ha x − 2 = 0, azaz x = 2. Itt a függvényérték 5, ez a minimum értéke; a minimum helye x = 2.",
       "wrongOptions": {
         "A": "Az (x − 2)² alak 2 egységgel jobbra tolja a parabolát, nem balra: a tengelypont x-koordinátája +2.",
-        "C": "Az 5 a minimum értéke (a tengelypont y-koordinátája), nem a helye.",
-        "D": "−5 sem a hely, sem az érték; a +5 felfelé tolást jelent."
+        "B": "−5 sem a hely, sem az érték; a +5 felfelé tolást jelent.",
+        "C": "Az 5 a minimum értéke (a tengelypont y-koordinátája), nem a helye."
       }
     },
     {
@@ -51,10 +75,22 @@
       "kind": "choice",
       "prompt": "Mennyi az f(x) = x² − 4x + 1 függvény minimumának értéke?",
       "options": [
-        { "key": "A", "text": "−3" },
-        { "key": "B", "text": "1" },
-        { "key": "C", "text": "2" },
-        { "key": "D", "text": "−4" }
+        {
+          "key": "A",
+          "text": "−3"
+        },
+        {
+          "key": "B",
+          "text": "1"
+        },
+        {
+          "key": "C",
+          "text": "2"
+        },
+        {
+          "key": "D",
+          "text": "−4"
+        }
       ],
       "answer": "A",
       "category": "algebrai-atalakitas",
@@ -70,18 +106,30 @@
       "kind": "choice",
       "prompt": "Melyik függvény szigorúan monoton csökkenő a teljes értelmezési tartományán?",
       "options": [
-        { "key": "A", "text": "f(x) = 2x + 1" },
-        { "key": "B", "text": "f(x) = x²" },
-        { "key": "C", "text": "f(x) = −3x + 4" },
-        { "key": "D", "text": "f(x) = |x|" }
+        {
+          "key": "A",
+          "text": "f(x) = 2x + 1"
+        },
+        {
+          "key": "B",
+          "text": "f(x) = x²"
+        },
+        {
+          "key": "C",
+          "text": "f(x) = |x|"
+        },
+        {
+          "key": "D",
+          "text": "f(x) = −3x + 4"
+        }
       ],
-      "answer": "C",
+      "answer": "D",
       "category": "fuggveny-abrazolas",
       "explanation": "A lineáris függvény akkor csökkenő, ha a meredeksége negatív: −3x + 4 meredeksége −3 < 0, tehát mindenütt szigorúan monoton csökken. A 2x + 1 növekvő; az x² és az |x| a negatív számokon csökken, a pozitívakon nő.",
       "wrongOptions": {
         "A": "A meredekség 2 > 0, ezért a függvény szigorúan monoton növekvő.",
         "B": "Az x² csak a (−∞; 0] intervallumon csökken, [0; ∞)-on nő – nem monoton az egész számegyenesen.",
-        "D": "Az |x| grafikonja V alakú: negatív x-eken csökken, pozitívakon nő."
+        "C": "Az |x| grafikonja V alakú: negatív x-eken csökken, pozitívakon nő."
       }
     },
     {
@@ -89,16 +137,28 @@
       "kind": "choice",
       "prompt": "Mi az f(x) = √(x − 1) függvény értelmezési tartománya?",
       "options": [
-        { "key": "A", "text": "x ≥ 1" },
-        { "key": "B", "text": "x > 1" },
-        { "key": "C", "text": "x ≤ 1" },
-        { "key": "D", "text": "minden valós szám" }
+        {
+          "key": "A",
+          "text": "x > 1"
+        },
+        {
+          "key": "B",
+          "text": "x ≥ 1"
+        },
+        {
+          "key": "C",
+          "text": "x ≤ 1"
+        },
+        {
+          "key": "D",
+          "text": "minden valós szám"
+        }
       ],
-      "answer": "A",
+      "answer": "B",
       "category": "fuggveny-abrazolas",
       "explanation": "Négyzetgyök alatt nem állhat negatív szám, ezért x − 1 ≥ 0 kell, azaz x ≥ 1. Az 1 maga is beletartozik, mert √0 = 0 értelmezett.",
       "wrongOptions": {
-        "B": "Az x = 1 is megengedett: √(1 − 1) = √0 = 0.",
+        "A": "Az x = 1 is megengedett: √(1 − 1) = √0 = 0.",
         "C": "x < 1 esetén a gyök alatt negatív szám állna, ami a valós számok körében nem értelmezett.",
         "D": "Például x = 0-nál √(−1) nem valós szám."
       }
@@ -108,17 +168,29 @@
       "kind": "choice",
       "prompt": "Melyik ponton megy át az f(x) = 2ˣ függvény grafikonja?",
       "options": [
-        { "key": "A", "text": "(0; 0)" },
-        { "key": "B", "text": "(1; 1)" },
-        { "key": "C", "text": "(0; 1)" },
-        { "key": "D", "text": "(2; 2)" }
+        {
+          "key": "A",
+          "text": "(0; 0)"
+        },
+        {
+          "key": "B",
+          "text": "(0; 1)"
+        },
+        {
+          "key": "C",
+          "text": "(1; 1)"
+        },
+        {
+          "key": "D",
+          "text": "(2; 2)"
+        }
       ],
-      "answer": "C",
+      "answer": "B",
       "category": "fuggveny-abrazolas",
       "explanation": "Behelyettesítve x = 0: 2⁰ = 1, tehát a (0; 1) pont a grafikonon van. Minden aˣ (a > 0) exponenciális függvény átmegy a (0; 1) ponton.",
       "wrongOptions": {
         "A": "2⁰ = 1, nem 0; az exponenciális függvény értéke sehol sem 0.",
-        "B": "2¹ = 2, tehát x = 1-nél a pont (1; 2).",
+        "C": "2¹ = 2, tehát x = 1-nél a pont (1; 2).",
         "D": "2² = 4, tehát x = 2-nél a pont (2; 4)."
       }
     },
@@ -127,16 +199,28 @@
       "kind": "choice",
       "prompt": "Hogyan kapható az f(x) = |x + 3| függvény grafikonja az x ↦ |x| függvény grafikonjából?",
       "options": [
-        { "key": "A", "text": "3 egységgel jobbra tolással" },
-        { "key": "B", "text": "3 egységgel balra tolással" },
-        { "key": "C", "text": "3 egységgel felfelé tolással" },
-        { "key": "D", "text": "3 egységgel lefelé tolással" }
+        {
+          "key": "A",
+          "text": "3 egységgel balra tolással"
+        },
+        {
+          "key": "B",
+          "text": "3 egységgel jobbra tolással"
+        },
+        {
+          "key": "C",
+          "text": "3 egységgel felfelé tolással"
+        },
+        {
+          "key": "D",
+          "text": "3 egységgel lefelé tolással"
+        }
       ],
-      "answer": "B",
+      "answer": "A",
       "category": "fuggveny-abrazolas",
       "explanation": "Az f(x + c) alak az x tengely mentén tol: +3 esetén 3 egységgel balra, mert a csúcs ott van, ahol x + 3 = 0, azaz x = −3. A felfelé-lefelé tolást a függvényhez kívül hozzáadott szám adná (|x| + 3).",
       "wrongOptions": {
-        "A": "Jobbra tolás az |x − 3| lenne (csúcs x = 3-nál).",
+        "B": "Jobbra tolás az |x − 3| lenne (csúcs x = 3-nál).",
         "C": "Felfelé tolás: |x| + 3 (a 3 a függvényértékhez adódik, nem az x-hez).",
         "D": "Lefelé tolás: |x| − 3."
       }
@@ -146,10 +230,22 @@
       "kind": "choice",
       "prompt": "Melyik függvény páros?",
       "options": [
-        { "key": "A", "text": "f(x) = x³" },
-        { "key": "B", "text": "f(x) = x² + 1" },
-        { "key": "C", "text": "f(x) = x + 1" },
-        { "key": "D", "text": "f(x) = 2ˣ" }
+        {
+          "key": "A",
+          "text": "f(x) = x³"
+        },
+        {
+          "key": "B",
+          "text": "f(x) = x² + 1"
+        },
+        {
+          "key": "C",
+          "text": "f(x) = x + 1"
+        },
+        {
+          "key": "D",
+          "text": "f(x) = 2ˣ"
+        }
       ],
       "answer": "B",
       "category": "definicio-tetel",

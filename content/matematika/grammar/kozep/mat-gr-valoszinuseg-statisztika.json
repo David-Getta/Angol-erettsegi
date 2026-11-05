@@ -176,11 +176,11 @@
       "options": [
         {
           "key": "A",
-          "text": "3/8"
+          "text": "1/4"
         },
         {
           "key": "B",
-          "text": "1/4"
+          "text": "3/8"
         },
         {
           "key": "C",
@@ -191,11 +191,11 @@
           "text": "1/8"
         }
       ],
-      "answer": "A",
+      "answer": "B",
       "category": "valoszinuseg-statisztika",
       "explanation": "A helyes: 3/8. Az összes kimenetel 2³ = 8 egyformán valószínű sorozat; pontosan két fej: FFI, FIF, IFF – 3 eset.",
       "wrongOptions": {
-        "B": "Az 1/4 = (1/2)² csak két megadott dobásra igaz, és nem veszi figyelembe a harmadikat és a sorrendeket.",
+        "A": "Az 1/4 = (1/2)² csak két megadott dobásra igaz, és nem veszi figyelembe a harmadikat és a sorrendeket.",
         "C": "A 2/3 a fejek számának aránya a dobásokhoz, nem valószínűség.",
         "D": "Az 1/8 egyetlen adott sorrend (pl. FFI) valószínűsége; három ilyen sorrend van."
       }
