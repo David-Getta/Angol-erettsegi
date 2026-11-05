@@ -112,7 +112,8 @@ export function normalizeForCheck(raw: string, opts: { decimalComma?: boolean } 
     prev = out;
     out = out.replace(/(\d) (\d{3})(?!\d)/g, "$1$2");
   }
-  return out;
+  // spacing around numbers and symbols does not matter: (4; 6) = (4;6), x = 3 = x=3, 20 π = 20π; words keep their spaces
+  return out.replace(/\s+(?=[^\p{L}\s])|(?<=[^\p{L}\s])\s+/gu, "");
 }
 
 /** Classic Levenshtein distance (small strings only). */

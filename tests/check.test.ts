@@ -116,6 +116,11 @@ describe("Hungarian number notation (non-language subjects)", () => {
     const item = { id: "1", kind: "text" as const, answer: ["2,5"], category: "szamolasi-hiba", explanation: "x", points: 1 };
     expect(checkItem({ options: undefined }, item, "2.5", hu).correct).toBe(true);
     expect(checkItem({ options: undefined }, item, "25", hu).correct).toBe(false);
+    // spacing around numbers and symbols does not matter, words keep their spaces
+    expect(normalizeForCheck("(4; 6)", hu)).toBe(normalizeForCheck("(4;6)", hu));
+    expect(normalizeForCheck("x = 3", hu)).toBe(normalizeForCheck("x=3", hu));
+    expect(normalizeForCheck("20 π", hu)).toBe(normalizeForCheck("20π", hu));
+    expect(normalizeForCheck("Kossuth Lajos", hu)).toBe("kossuth lajos");
     // English keeps the comma as a thousands separator
     expect(normalizeForCheck("5,000")).toBe("5000");
   });
