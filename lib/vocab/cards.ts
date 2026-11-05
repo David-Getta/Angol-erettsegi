@@ -128,6 +128,49 @@ export function addWord(input: AddWordInput): { created: number; incomplete: boo
   return { created, incomplete, term: front };
 }
 
+/**
+ * A "fix" card from a correction (error log, grading feedback): the prompt is
+ * the wrong form in its context, the answer the corrected form, the back the
+ * Hungarian explanation. Scheduled with FSRS like every other card.
+ */
+export function addFixCard(input: {
+  original: string;
+  corrected: string;
+  explanation: string;
+  context?: string | null;
+  sourceType: string;
+  sourceId?: string | null;
+  level?: string | null;
+}): { created: number } {
+  const original = input.original.trim();
+  const corrected = input.corrected.trim();
+  if (!corrected || !input.explanation.trim()) return { created: 0 };
+  const now = new Date();
+  const res = getDb()
+    .insert(cards)
+    .values({
+      noteKey: `fix:${noteKey(original)}>${noteKey(corrected)}`.slice(0, 300),
+      front: corrected,
+      back: input.explanation.trim(),
+      example: original,
+      collocation: null,
+      type: "fix",
+      incomplete: false,
+      fsrsState: newFsrsState(now),
+      dueAt: now,
+      isNew: true,
+      topic: null,
+      level: input.level ?? getSettings().level,
+      sourceType: input.sourceType,
+      sourceId: input.sourceId ?? null,
+      context: input.context?.trim() || null,
+      createdAt: now,
+    })
+    .onConflictDoNothing()
+    .run();
+  return { created: res.changes };
+}
+
 export function containsTerm(sentence: string, term: string): boolean {
   return clozeFor(sentence, term) !== null;
 }

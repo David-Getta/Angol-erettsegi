@@ -1,7 +1,7 @@
 "use server";
 
 import { revalidatePath } from "next/cache";
-import { addDeck, addWord, deleteWord, reviewCard, setSuspended, updateWord, importVocabCompletions, clozeFor } from "@/lib/vocab/cards";
+import { addDeck, addFixCard, addWord, deleteWord, reviewCard, setSuspended, updateWord, importVocabCompletions, clozeFor } from "@/lib/vocab/cards";
 import { previewIntervals, type StoredFsrs } from "@/lib/vocab/fsrs";
 
 export async function addDeckAction(deckId: string) {
@@ -38,6 +38,13 @@ export async function reviewCardAction(cardId: number, rating: 1 | 2 | 3 | 4, du
 
 export async function importVocabAction() {
   const r = importVocabCompletions();
+  revalidatePath("/szokincs");
+  return r;
+}
+
+/** Adds a correction (error log row or grading correction) to the FSRS review as a "fix" card. */
+export async function addFixCardAction(input: { original: string; corrected: string; explanation: string; context?: string | null; sourceType: string; sourceId?: string | null }) {
+  const r = addFixCard(input);
   revalidatePath("/szokincs");
   return r;
 }

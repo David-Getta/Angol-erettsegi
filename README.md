@@ -18,7 +18,7 @@ vagy a javítást a Claude appba bemásolt prompttal kérheted. Nincs fiók, nin
 | **Hallott szöveg** | a böngésző olvassa fel a szkripteket beszélőnként külön hanggal, felkészülési idő, kétszeri meghallgatás, utána leirat a válaszok kiemelésével; hivatalos mp3 is lejátszható |
 | **Íráskészség** | feladatkártyák, szerkesztő élő szószámlálóval és időzítővel, önellenőrző lista, beadás javításra, javítás nézet (pontok szempontonként, kiemelt hibák magyarázattal), átírás, változatok összehasonlítása; az első beadás után mintamegoldás megjegyzésekkel |
 | **Szóbeli** | kérdéskártyák, szituációk, képleírás-helyettesítő jelenetek, emelten vitatételek; felolvasás, időzítő, beszédfelismerés; vizsgáztató-prompt a Claude app hangmódjához |
-| **Szókincs** | FSRS-alapú ismétlés (angol→magyar, magyar→angol, példamondat-kitöltés, kollokáció), témakörönkénti paklik |
+| **Szókincs** | FSRS-alapú ismétlés (angol→magyar, magyar→angol, példamondat-kitöltés, kollokáció), témakörönkénti paklik; a saját hibáid is felvehetők „javítsd ki” kártyának |
 | **Hibanapló** | minden hibád a helyes megoldással és a magyarázattal, kategóriánként, trenddel, „Gyakoroltasd ezt” gombbal |
 | **Szabálytár** | minden hibakategóriához magyar szabálymagyarázat példákkal, a magyarul beszélők tipikus hibái, érettségi-tippek és mini-gyakorlás; a hibanaplóból és minden hibamagyarázatból egy kattintással elérhető |
 | **Próbaérettségi** | teljes írásbeli szimuláció hivatalos időkeretekkel és szigorú részenkénti időzítéssel → pontszám, százalék, 12%-os küszöbök, becsült jegy, nyelvvizsga-egyenértékűség |

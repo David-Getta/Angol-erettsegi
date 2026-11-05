@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { categoryStats, recentErrors, weeklyTrend } from "@/lib/errors/log";
 import { pickMistakes } from "@/lib/targeted";
+import { AddFixCardButton } from "@/components/vocab/AddFixCardButton";
 import { countBankItems } from "@/lib/targeted";
 import { examConfig } from "@/lib/exam/config";
 import { getSettings } from "@/lib/settings";
@@ -142,6 +143,16 @@ export default async function ErrorLogPage({ searchParams }: { searchParams: Pro
                     </Link>
                     <span>{t.errorLog.source[e.sourceType] ?? e.sourceType}</span>
                     <span>{formatDate(e.createdAt)}</span>
+                    <span className="ml-auto">
+                      <AddFixCardButton
+                        original={e.original}
+                        corrected={e.corrected}
+                        explanation={e.explanation}
+                        context={e.context}
+                        sourceType="error-log"
+                        sourceId={String(e.id)}
+                      />
+                    </span>
                   </div>
                   {e.context && (
                     <div className="mt-1 font-reading text-[15px] text-muted">

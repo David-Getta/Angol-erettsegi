@@ -5,6 +5,7 @@ import { itemAttempts } from "@/lib/db/schema";
 import { pickMistakes } from "@/lib/targeted";
 import { getLesson, lessonOverview } from "@/lib/lessons";
 import { examConfig } from "@/lib/exam/config";
+import { addFixCard, reviewQueue } from "@/lib/vocab/cards";
 
 const TASK = "lu-emelt-urban-beekeeping-open-cloze";
 
@@ -41,5 +42,24 @@ describe("mistake review", () => {
     for (const o of overview) {
       if (o.lesson) expect(getLesson(o.category.id)?.category).toBe(o.category.id);
     }
+  });
+});
+
+describe("fix cards from corrections", () => {
+  it("adds a correction once and schedules it for review", () => {
+    const input = {
+      original: "I live here since 2020",
+      corrected: "I have lived here since 2020",
+      explanation: "A since + múltbeli kezdőpont mellett Present Perfect kell, mert a helyzet ma is tart.",
+      context: "I live here since 2020 and I love it.",
+      sourceType: "grading",
+      sourceId: "w-test",
+    };
+    expect(addFixCard(input).created).toBe(1);
+    expect(addFixCard(input).created).toBe(0);
+    const card = reviewQueue().find((c) => c.type === "fix");
+    expect(card?.front).toBe("I have lived here since 2020");
+    expect(card?.example).toBe("I live here since 2020");
+    expect(card?.context).toContain("I love it");
   });
 });

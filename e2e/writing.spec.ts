@@ -51,10 +51,17 @@ test("writing: submit → /javitas tip → outbox import → feedback → rewrit
   await expect(page.getByTestId("feedback-view")).toBeVisible();
   await expect(page.getByText("Változatok összehasonlítása")).toBeVisible();
 
-  // a broken paste gives a readable error
-  // (the error log has the corrections)
+  // a correction goes into the FSRS review as a "fix" card
+  await page.getByTestId("add-fix-card").first().click();
+  await expect(page.getByText("Bekerült az ismétlésbe").first()).toBeVisible();
+
+  // the error log has the corrections
   await page.goto("/hibanaplo");
   await expect(page.getByTestId("recent-errors")).toContainText("Teszt: a helyes forma és az oka.");
+
+  // the model answer is visible once the task has a submission
+  await page.goto(`/iras/${TASK}`);
+  await expect(page.getByTestId("model-answer")).toBeVisible();
 });
 
 test("writing: invalid pasted JSON shows what is missing", async ({ page }) => {

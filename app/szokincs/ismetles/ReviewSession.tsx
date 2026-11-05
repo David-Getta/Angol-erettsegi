@@ -15,6 +15,8 @@ export type ReviewCard = {
   back: string;
   example: string | null;
   collocation: string | null;
+  /** fix cards: the sentence the mistake was in. */
+  context?: string | null;
   cloze: string | null;
   collocationCloze: string | null;
   previews: Record<1 | 2 | 3 | 4, string>;
@@ -32,7 +34,8 @@ export function ReviewSession({ initial, ttsRate }: { initial: ReviewCard[]; tts
   const total = initial.length;
 
   const answerTerm = card && card.type !== "en-hu";
-  const typedOk = card && typed.trim() ? normalizeAnswer(typed) === normalizeAnswer(card.front) : null;
+  const accepted = card ? (card.type === "fix" ? card.front.split(" / ") : [card.front]).map(normalizeAnswer) : [];
+  const typedOk = card && typed.trim() ? accepted.includes(normalizeAnswer(typed)) : null;
 
   const rate = useCallback(
     async (r: 1 | 2 | 3 | 4) => {
@@ -93,6 +96,13 @@ export function ReviewSession({ initial, ttsRate }: { initial: ReviewCard[]; tts
       <div className="mt-2 text-sm text-muted">({card.back})</div>
     </div>
   );
+  else if (card.type === "fix") prompt = (
+    <div className="text-left">
+      <div className="mb-2 text-sm text-muted">{t.vocab.fixPrompt}</div>
+      {card.context && <div className="mb-2 font-reading text-lg leading-relaxed text-muted">{card.context}</div>}
+      <div className="font-reading text-2xl text-bad line-through decoration-bad/50">{card.example}</div>
+    </div>
+  );
   else prompt = (
     <div>
       <div className="font-reading text-2xl">{card.collocationCloze ?? card.collocation}</div>
@@ -140,7 +150,11 @@ export function ReviewSession({ initial, ttsRate }: { initial: ReviewCard[]; tts
                 {typedOk !== null && <span className={typedOk ? "text-good" : "text-bad"}>{typedOk ? "✓" : `✗ (${typed})`}</span>}
               </div>
             )}
-            {card.example && <div className="mt-2 font-reading italic text-muted">{card.example}</div>}
+            {card.type === "fix" ? (
+              <div className="mt-2 whitespace-pre-line text-left text-sm">{card.back}</div>
+            ) : (
+              card.example && <div className="mt-2 font-reading italic text-muted">{card.example}</div>
+            )}
             <button type="button" className="mt-2 text-sm text-muted hover:text-fg" onClick={() => speak(card.front, { rate: ttsRate })}>
               🔊
             </button>

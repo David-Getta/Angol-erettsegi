@@ -16,6 +16,7 @@ export default function ReviewPage() {
     back: c.back,
     example: c.example,
     collocation: c.collocation,
+    context: c.context,
     cloze: c.example ? clozeFor(c.example, c.front) : null,
     collocationCloze: c.collocation ? clozeFor(c.collocation, c.front) : null,
     previews: previewIntervals(c.fsrsState as StoredFsrs),

@@ -4,6 +4,7 @@ import Link from "next/link";
 import { useState } from "react";
 import type { Feedback } from "@/lib/exchange/schema";
 import { t } from "@/lib/i18n/hu";
+import { AddFixCardButton } from "@/components/vocab/AddFixCardButton";
 import { addPhrasesAction } from "@/app/actions-grading";
 import { useToast } from "../Toast";
 import { Badge, Card, ProgressBar, btn } from "../ui";
@@ -120,7 +121,8 @@ export function FeedbackView({
                     >
                       [{categoryNames[c.category] ?? c.category}]
                     </Link>
-                    {c.explanation}
+                    {c.explanation}{" "}
+                    <AddFixCardButton original={c.original} corrected={c.corrected} explanation={c.explanation} sourceType="grading" sourceId={submissionId} />
                   </td>
                 </tr>
               ))}
