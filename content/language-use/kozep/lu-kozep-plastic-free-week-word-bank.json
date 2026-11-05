@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "lu-kozep-plastic-free-week-word-bank",
+  "revision": 1,
+  "level": "kozep",
+  "source": "generated",
+  "topic": "kornyezet",
+  "title": "Seven days without plastic",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "language-use",
+  "type": "word-bank-cloze",
+  "instructions": "Read the text and fill in the gaps with words from the list (A–N). Use each word only once. There are three extra words that you do not need. There is an example (0) at the beginning.",
+  "instructionsHu": "Egészítsd ki a szöveget a listában (A–N) megadott szavakkal. Minden szót csak egyszer használhatsz, három szóra nem lesz szükséged. A 0. a példa.",
+  "passage": {
+    "title": "Seven days without plastic",
+    "blocks": [
+      { "text": "Last spring, our school in Szeged [[0]] part in a challenge called Plastic-Free Week. For seven days, students and teachers [[1]] not allowed to bring plastic bottles, bags or wrappers into the building. The idea came from Lili and Márk, two students [[2]] had watched a documentary about plastic in the oceans." },
+      { "text": "At first, most of us thought the challenge would be impossible. Plastic is everywhere: in our lunch boxes, in the canteen and even in our pencil cases! So the organisers came [[3]] with a list of simple tips. Instead of [[4]] water in plastic bottles, we brought metal or glass ones from home. The canteen wrapped sandwiches in paper, and the school shop sold fruit without any packaging." },
+      { "text": "Not everything went smoothly. On Tuesday, the art teacher realised that almost [[5]] the materials for her lesson were made of plastic, so she [[6]] to change her plans at the last minute. In the end, the class painted with colours made from fruit and vegetables. [[7]], by the end of the week there was 70 percent less rubbish in our bins than in a normal week." },
+      { "text": "'Before the challenge, I never really [[8]] about how much plastic I used,' says Lili. 'Now I always carry a cloth bag in my rucksack.' The week was so [[9]] that our head teacher wants to make it a yearly event. Why don't you try it at your school? It's easier [[10]] you think!" }
+    ]
+  },
+  "options": [
+    { "key": "A", "text": "successful" },
+    { "key": "B", "text": "which" },
+    { "key": "C", "text": "thought" },
+    { "key": "D", "text": "up" },
+    { "key": "E", "text": "took" },
+    { "key": "F", "text": "however" },
+    { "key": "G", "text": "all" },
+    { "key": "H", "text": "buying" },
+    { "key": "I", "text": "success" },
+    { "key": "J", "text": "were" },
+    { "key": "K", "text": "than" },
+    { "key": "L", "text": "who" },
+    { "key": "M", "text": "although" },
+    { "key": "N", "text": "had" }
+  ],
+  "example": {
+    "id": "0",
+    "kind": "match",
+    "answer": "E",
+    "category": "collocation",
+    "explanation": "Állandó kifejezés: „take part in something” = részt vesz valamiben. A szöveg múltban játszódik (Last spring), ezért a rendhagyó „take” második alakja kell: took part in."
+  },
+  "items": [
+    { "id": "1", "kind": "match", "answer": "J", "category": "agreement", "explanation": "Szenvedő szerkezet: „be allowed to do something” = szabad valamit csinálni. Az alany (students and teachers) többes számú, és múltról van szó, ezért „were”: were not allowed to bring.", "wrongOptions": { "N": "A „had not allowed to bring” hibás: az „allow” cselekvő alakja után tárgy kellene (had not allowed them to …); itt szenvedő szerkezet kell (were not allowed)." } },
+    { "id": "2", "kind": "match", "answer": "L", "category": "relative-clause", "explanation": "Személyekre (two students) utaló vonatkozó névmás, amely a mellékmondat alanya: two students who had watched a documentary = két diák, akik láttak egy dokumentumfilmet.", "wrongOptions": { "B": "A „which” dologra vagy állatra utal, személyre nem." } },
+    { "id": "3", "kind": "match", "answer": "D", "category": "phrasal-verb", "explanation": "Phrasal verb: „come up with something” = kitalál, előáll valamivel (ötlettel, tervvel): the organisers came up with a list of simple tips = a szervezők összeállítottak egy listát egyszerű tippekből." },
+    { "id": "4", "kind": "match", "answer": "H", "category": "gerund-infinitive", "explanation": "Elöljárószó (instead of) után az ige -ing alakban áll: Instead of buying water in plastic bottles = ahelyett, hogy műanyag palackos vizet vettünk volna." },
+    { "id": "5", "kind": "match", "answer": "G", "category": "quantifier", "explanation": "„Almost all (of) the + többes számú főnév” = majdnem az összes: almost all the materials for her lesson = az órájához szükséges anyagok majdnem mindegyike. Az „all” után állhat „the”." },
+    { "id": "6", "kind": "match", "answer": "N", "category": "modal", "explanation": "„Had to + ige” = kellett (a „have to” múlt ideje): she had to change her plans = meg kellett változtatnia a terveit. A „must”-nak nincs múlt idejű alakja, ezért múltban a „had to” áll.", "wrongOptions": { "C": "A „think” után nem „to + ige” áll (think about something), és a jelentés sem illik: itt kényszerről (kellett) van szó, nem gondolkodásról." } },
+    { "id": "7", "kind": "match", "answer": "F", "category": "linking", "explanation": "Ellentét két mondat között: However, … (azonban). Mondat elején áll, vessző követi: nem ment minden simán, de a hét végére 70 százalékkal kevesebb lett a szemét.", "wrongOptions": { "M": "Az „although” egy mondaton belül köt össze két tagmondatot (Although not everything went smoothly, …); nem állhat utána vessző egy önálló főmondat előtt." } },
+    { "id": "8", "kind": "match", "answer": "C", "category": "verb-form", "explanation": "„Think about something” = gondolkodik valamin. A mondat a múltra vonatkozik (Before the challenge), ezért a rendhagyó „think” 2. alakja kell: I never really thought about …" },
+    { "id": "9", "kind": "match", "answer": "A", "category": "word-formation", "explanation": "A „was so … that” szerkezetben a „so” után melléknév kell: The week was so successful that … = a hét olyan sikeres volt, hogy … (success → successful).", "wrongOptions": { "I": "A „success” főnév (siker); a „was so” után melléknév áll, nem főnév." } },
+    { "id": "10", "kind": "match", "answer": "K", "category": "comparison", "explanation": "Középfokú melléknév (easier) után az összehasonlítás kötőszava „than”: It's easier than you think = könnyebb, mint gondolnád." }
+  ],
+  "glossary": [],
+  "suggestedMinutes": 8
+}
