@@ -34,12 +34,36 @@ vagy a javítást a Claude appba bemásolt prompttal kérheted. Nincs fiók, nin
 
 Kell hozzá: **Node.js 20.9 vagy újabb** (<https://nodejs.org>), és a beszédfelismeréshez **Google Chrome** (vagy Edge).
 
+### 1. Node.js telepítése (egyszer kell)
+
+1. Nyisd meg a <https://nodejs.org/en/download> oldalt, és töltsd le az **LTS** verziót
+   (macOS-en a **macOS Installer (.pkg)**, Windowson a **Windows Installer (.msi)**).
+2. Futtasd a telepítőt (Tovább → Tovább → Telepítés; macOS a jelszavadat kérheti).
+3. **Zárd be teljesen, majd nyisd meg újra** a VS Code-ot (vagy a Terminált) – a már nyitott terminál nem látja az új parancsot.
+4. Ellenőrzés a terminálban:
+   ```bash
+   node -v    # pl. v24.x.x – legalább v20.9
+   npm -v
+   ```
+
+Ha továbbra is `zsh: command not found: npm` a válasz, a telepítés nem fejeződött be, vagy a terminált nem nyitottad újra.
+
+### 2. Az app telepítése és indítása
+
 ```bash
-git clone <a repó címe> angol-erettsegi
-cd angol-erettsegi
-npm run setup      # függőségek, adatbázis (data/app.db), a feladatbank ellenőrzése és betöltése
-npm run dev        # → http://localhost:3000
+cd angol-erettsegi      # a kicsomagolt mappa (VS Code-ban: File → Open Folder, majd Terminal → New Terminal)
+npm run setup           # függőségek, adatbázis (data/app.db), a feladatbank ellenőrzése és betöltése – első alkalommal pár perc
+npm run dev             # → nyisd meg a böngészőben: http://localhost:3000
 ```
+
+Leállítás: a terminálban **Ctrl+C**. Legközelebb elég az `npm run dev`.
+
+**macOS-en dupla kattintással is megy:** a Finderben kattints duplán az `inditas.command` fájlra – első alkalommal telepít,
+utána elindítja az appot és megnyitja a böngészőt. (Ha a macOS nem engedi megnyitni, mert „nem azonosított fejlesztőtől”
+származik: jobb klikk → **Megnyitás** → **Megnyitás**.)
+
+Ha a telepítésnél a macOS a **parancssori fejlesztői eszközök** (Command Line Tools) telepítését kéri, fogadd el,
+várd meg a végét, és futtasd újra az `npm run setup`-ot.
 
 Első indításkor kezdd a **Szintfelmérővel** – ebből áll össze a Mai terv. A **Beállításokban** add meg
 a szintet (közép/emelt), a vizsga dátumát és a célszázalékot.
