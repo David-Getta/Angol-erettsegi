@@ -296,13 +296,13 @@ export const t = {
 
   grading: {
     howTitle: "Hogyan kapod meg a javítást?",
-    way1Title: "1. Claude Code-dal",
+    way1Title: "1. Claude Code-dal a saját gépeden",
     way1: "A projekt mappájában futtasd a Claude Code-ban:",
     way1After: "Ha kész, kattints a „Javítások importálása” gombra (vagy futtasd: npm run import-feedback).",
-    way2Title: "2. A Claude appal",
-    way2: "Másold ki a promptot, illeszd be a Claude appba, és a kapott JSON-t másold vissza ide.",
+    way2Title: "2. A Claude appal vagy egy felhős Claude Code munkamenettel",
+    way2: "Másold ki a promptot, illeszd be a Claude-nak (Claude app, claude.ai, felhős Claude Code), és a kapott JSON-t – akár fájlként kaptad, akár a chatben – másold be az alábbi mezőbe, majd kattints a „Javítás mentése” gombra.",
     copyPrompt: "Prompt másolása",
-    pasteLabel: "A Claude app válasza (JSON)",
+    pasteLabel: "Ide illeszd be a javítást (JSON)",
     pastePlaceholder: "Illeszd be ide a teljes választ – a JSON-t az app megkeresi benne.",
     pasteSave: "Javítás mentése",
     pasteOk: "A javítás elmentve.",
