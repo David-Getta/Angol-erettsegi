@@ -9,6 +9,7 @@
   "scripts": {
     "setup": "npm install && tsx scripts/setup.ts",
     "predev": "tsx scripts/seed.ts --quiet",
+    "postinstall": "node scripts/postinstall.js",
     "dev": "next dev",
     "dev:lan": "tsx scripts/seed.ts --quiet && next dev -H 0.0.0.0",
     "build": "next build",
