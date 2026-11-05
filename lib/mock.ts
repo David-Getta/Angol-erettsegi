@@ -12,6 +12,7 @@ import { estimateParts } from "@/lib/dashboard";
 import { getSettings } from "@/lib/settings";
 import { scriptText, wordCount } from "@/lib/content/text";
 import type { ObjectiveTask } from "@/lib/content/schema";
+import { currentSubject } from "@/lib/exam/config";
 
 export type MockKind = "mock" | "diagnostic";
 export type MockPart = { part: PartId; name: string; timeSec: number; taskIds: string[] };
@@ -31,7 +32,7 @@ function candidates(section: string, level: Level): Candidate[] {
   return getDb()
     .select({ id: tasks.id, reserved: tasks.reservedFor, content: tasks.content })
     .from(tasks)
-    .where(and(eq(tasks.section, section), eq(tasks.level, level), eq(tasks.active, true)))
+    .where(and(eq(tasks.subject, currentSubject()), eq(tasks.section, section), eq(tasks.level, level), eq(tasks.active, true)))
     .all();
 }
 
@@ -116,7 +117,7 @@ export function activeMock(kind: MockKind, level: Level): MockExamRow | undefine
   return getDb()
     .select()
     .from(mockExams)
-    .where(and(eq(mockExams.kind, kind), eq(mockExams.level, level), eq(mockExams.status, "in-progress")))
+    .where(and(eq(mockExams.subject, currentSubject()), eq(mockExams.kind, kind), eq(mockExams.level, level), eq(mockExams.status, "in-progress")))
     .orderBy(desc(mockExams.createdAt))
     .get();
 }
@@ -125,7 +126,7 @@ export function listMocks(kind: MockKind, level?: Level): MockExamRow[] {
   return getDb()
     .select()
     .from(mockExams)
-    .where(level ? and(eq(mockExams.kind, kind), eq(mockExams.level, level)) : eq(mockExams.kind, kind))
+    .where(and(eq(mockExams.subject, currentSubject()), eq(mockExams.kind, kind), level ? eq(mockExams.level, level) : undefined))
     .orderBy(desc(mockExams.createdAt))
     .all();
 }
@@ -137,7 +138,7 @@ export function startMock(kind: MockKind, level: Level): { ok: true; id: number 
   if (!plan.ok) return plan;
   const row = getDb()
     .insert(mockExams)
-    .values({ kind, level, status: "in-progress", plan: plan.plan, currentPart: 0, partStartedAt: null, createdAt: new Date() })
+    .values({ subject: currentSubject(), kind, level, status: "in-progress", plan: plan.plan, currentPart: 0, partStartedAt: null, createdAt: new Date() })
     .returning()
     .get();
   return { ok: true, id: row.id };

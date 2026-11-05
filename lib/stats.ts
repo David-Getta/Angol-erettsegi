@@ -4,6 +4,7 @@ import { attempts, errors, itemAttempts, submissions, tasks } from "@/lib/db/sch
 import type { Level } from "@/lib/content/schema";
 import type { Feedback } from "@/lib/exchange/schema";
 import { localDay, secondsByDay } from "@/lib/activity";
+import { currentSubject } from "@/lib/exam/config";
 
 export type Point = { x: string; y: number };
 export type Series = { id: string; name: string; points: Point[] };
@@ -24,14 +25,14 @@ export function scoreTrend(level: Level, names: Record<string, string>): Series[
   const db = getDb();
   const out: Series[] = [];
   for (const section of ["reading", "language-use", "listening"]) {
-    const rows = db.select().from(attempts).where(and(eq(attempts.section, section), eq(attempts.level, level))).orderBy(asc(attempts.createdAt)).all();
+    const rows = db.select().from(attempts).where(and(eq(attempts.subject, currentSubject()), eq(attempts.section, section), eq(attempts.level, level))).orderBy(asc(attempts.createdAt)).all();
     out.push({ id: section, name: names[section] ?? section, points: dailyAverage(rows.map((r) => ({ day: localDay(r.createdAt), pct: (r.score / (r.maxScore || 1)) * 100 }))) });
   }
   for (const kind of ["writing", "speaking"]) {
     const rows = db
       .select()
       .from(submissions)
-      .where(and(eq(submissions.kind, kind), eq(submissions.level, level), eq(submissions.status, "graded")))
+      .where(and(eq(submissions.subject, currentSubject()), eq(submissions.kind, kind), eq(submissions.level, level), eq(submissions.status, "graded")))
       .orderBy(asc(submissions.gradedAt))
       .all();
     out.push({ id: kind, name: names[kind] ?? kind, points: dailyAverage(rows.map((r) => ({ day: localDay(r.gradedAt ?? r.createdAt), pct: ((r.score ?? 0) / (r.maxScore || 1)) * 100 }))) });
@@ -43,7 +44,7 @@ export type AccuracyRow = { key: string; label: string; correct: number; total: 
 
 export function accuracyByType(level: Level, typeName: (section: string, type: string) => string, sectionName: (s: string) => string): AccuracyRow[] {
   const db = getDb();
-  const rows = db.select({ taskId: attempts.taskId, score: attempts.score, max: attempts.maxScore }).from(attempts).where(eq(attempts.level, level)).all();
+  const rows = db.select({ taskId: attempts.taskId, score: attempts.score, max: attempts.maxScore }).from(attempts).where(and(eq(attempts.subject, currentSubject()), eq(attempts.level, level))).all();
   if (!rows.length) return [];
   const meta = new Map(
     db
@@ -67,7 +68,7 @@ export function accuracyByType(level: Level, typeName: (section: string, type: s
 }
 
 export function accuracyByCategory(names: Record<string, string>): AccuracyRow[] {
-  const rows = getDb().select({ category: itemAttempts.category, correct: itemAttempts.correct }).from(itemAttempts).all();
+  const rows = getDb().select({ category: itemAttempts.category, correct: itemAttempts.correct }).from(itemAttempts).where(eq(itemAttempts.subject, currentSubject())).all();
   const agg = new Map<string, AccuracyRow>();
   for (const r of rows) {
     const a = agg.get(r.category) ?? { key: r.category, label: names[r.category] ?? r.category, correct: 0, total: 0, pct: 0 };
@@ -117,7 +118,7 @@ export function errorsPerWeek(weeks = 12): Point[] {
   start.setHours(0, 0, 0, 0);
   start.setDate(start.getDate() - ((start.getDay() + 6) % 7) - 7 * (weeks - 1));
   const counts = new Map<string, number>();
-  for (const e of getDb().select({ at: errors.createdAt }).from(errors).all()) {
+  for (const e of getDb().select({ at: errors.createdAt }).from(errors).where(eq(errors.subject, currentSubject())).all()) {
     if (e.at < start) continue;
     const d = new Date(e.at);
     d.setHours(0, 0, 0, 0);
@@ -139,7 +140,7 @@ export function writingCriteriaTrend(level: Level, criterionNames: Record<string
   const rows = getDb()
     .select()
     .from(submissions)
-    .where(and(eq(submissions.kind, "writing"), eq(submissions.level, level), eq(submissions.status, "graded")))
+    .where(and(eq(submissions.subject, currentSubject()), eq(submissions.kind, "writing"), eq(submissions.level, level), eq(submissions.status, "graded")))
     .orderBy(asc(submissions.gradedAt))
     .all();
   const series = new Map<string, Series>();

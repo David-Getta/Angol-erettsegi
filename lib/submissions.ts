@@ -18,6 +18,7 @@ import {
 } from "@/lib/exchange/prompts";
 import { FeedbackSchema, describeIssues, extractJson, parseFeedbackText, type Feedback, type SubmissionFile } from "@/lib/exchange/schema";
 import { archiveExchange, listOutbox, readOutboxText, removeInboxFile, writeInboxFile } from "@/lib/exchange/files";
+import { currentSubject } from "@/lib/exam/config";
 
 export type SubmissionMode = "practice" | "exam" | "mock" | "diagnostic";
 
@@ -90,6 +91,7 @@ export function createSubmission(input: CreateSubmissionInput): SubmissionRow {
   const id = newId(input.kind);
   const row: typeof submissions.$inferInsert = {
     id,
+    subject: taskRow.subject,
     kind: input.kind,
     taskId: input.taskId,
     level,
@@ -150,7 +152,7 @@ export function listSubmissions(kind?: "writing" | "speaking", status?: "pending
   return getDb()
     .select()
     .from(submissions)
-    .where(conds.length ? and(...conds) : undefined)
+    .where(and(eq(submissions.subject, currentSubject()), ...conds))
     .orderBy(desc(submissions.createdAt))
     .all();
 }
@@ -220,6 +222,7 @@ export function applyFeedback(fb: Feedback, opts: { gradedBy?: "claude-code" | "
     for (const c of fb.corrections) {
       tx.insert(errors)
         .values({
+          subject: sub.subject,
           category: c.category,
           original: c.original,
           corrected: c.corrected,

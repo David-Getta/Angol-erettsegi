@@ -3,6 +3,7 @@ import { getDb } from "@/lib/db/client";
 import { tasks } from "@/lib/db/schema";
 import type { Level, ObjectiveTask } from "@/lib/content/schema";
 import { wordCount } from "@/lib/content/text";
+import { currentSubject } from "@/lib/exam/config";
 
 /**
  * Diktálás: sentences from the listening scripts of a level (never from tasks
@@ -31,7 +32,7 @@ export function dictationSentences(level: Level, count: number, seed = Date.now(
   const rows = getDb()
     .select({ content: tasks.content })
     .from(tasks)
-    .where(and(eq(tasks.section, "listening"), eq(tasks.level, level), eq(tasks.active, true), isNull(tasks.reservedFor)))
+    .where(and(eq(tasks.subject, currentSubject()), eq(tasks.section, "listening"), eq(tasks.level, level), eq(tasks.active, true), isNull(tasks.reservedFor)))
     .all();
   const pool: DictationSentence[] = [];
   for (const r of rows) {

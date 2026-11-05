@@ -3,6 +3,7 @@ import { getDb } from "@/lib/db/client";
 import { tasks } from "@/lib/db/schema";
 import type { Guide } from "@/lib/content/schema";
 import { getContent } from "@/lib/tasks";
+import { currentSubject } from "@/lib/exam/config";
 
 /** Útmutatók: guides for writing text types, speaking task types and exam parts (content/guide/kozep/gd-<type>-<target>.json). */
 
@@ -13,7 +14,7 @@ export function listGuides(): Guide[] {
   return getDb()
     .select({ content: tasks.content })
     .from(tasks)
-    .where(and(eq(tasks.section, "guide"), eq(tasks.active, true)))
+    .where(and(eq(tasks.subject, currentSubject()), eq(tasks.section, "guide"), eq(tasks.active, true)))
     .all()
     .map((r) => r.content as Guide);
 }

@@ -4,6 +4,7 @@ import { attempts, mockExams, submissions } from "@/lib/db/schema";
 import type { Level } from "@/lib/content/schema";
 import { examConfig, levelStructure, type PartId } from "@/lib/exam/config";
 import { minPointsFor } from "@/lib/scoring/exam";
+import { currentSubject } from "@/lib/exam/config";
 
 export type PartEstimate = {
   part: PartId;
@@ -92,7 +93,7 @@ export function latestDiagnostic(level: Level) {
   const row = getDb()
     .select()
     .from(mockExams)
-    .where(and(eq(mockExams.kind, "diagnostic"), eq(mockExams.level, level), inArray(mockExams.status, ["done", "awaiting-writing"])))
+    .where(and(eq(mockExams.subject, currentSubject()), eq(mockExams.kind, "diagnostic"), eq(mockExams.level, level), inArray(mockExams.status, ["done", "awaiting-writing"])))
     .orderBy(desc(mockExams.createdAt))
     .get();
   return row ?? null;

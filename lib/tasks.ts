@@ -3,6 +3,7 @@ import { getDb } from "@/lib/db/client";
 import { attempts, submissions, tasks, type TaskRow } from "@/lib/db/schema";
 import type { Content, Level, ObjectiveTask, Section, SpeakingTask, VocabDeck, WritingTask } from "@/lib/content/schema";
 import { examConfig } from "@/lib/exam/config";
+import { currentSubject } from "@/lib/exam/config";
 
 export type TaskSummary = {
   id: string;
@@ -41,7 +42,7 @@ export function listTasks(section: Section, level: Level): TaskSummary[] {
   const rows = db
     .select()
     .from(tasks)
-    .where(and(eq(tasks.section, section), eq(tasks.level, level), eq(tasks.active, true)))
+    .where(and(eq(tasks.subject, currentSubject()), eq(tasks.section, section), eq(tasks.level, level), eq(tasks.active, true)))
     .all();
   const ids = rows.map((r) => r.id);
   const stats = new Map<string, { n: number; best: number | null; last: number | null; lastAt: Date | null }>();
@@ -105,8 +106,8 @@ export function listTasks(section: Section, level: Level): TaskSummary[] {
 /** Set of task ids the user has already worked on (attempt or submission). */
 export function usedTaskIds(): Set<string> {
   const db = getDb();
-  const a = db.selectDistinct({ id: attempts.taskId }).from(attempts).all();
-  const s = db.selectDistinct({ id: submissions.taskId }).from(submissions).all();
+  const a = db.selectDistinct({ id: attempts.taskId }).from(attempts).where(eq(attempts.subject, currentSubject())).all();
+  const s = db.selectDistinct({ id: submissions.taskId }).from(submissions).where(eq(submissions.subject, currentSubject())).all();
   return new Set([...a, ...s].map((r) => r.id));
 }
 
@@ -129,7 +130,7 @@ export function contentStock(level?: Level): StockRow[] {
   const rows = db
     .select({ id: tasks.id, section: tasks.section, level: tasks.level, type: tasks.type })
     .from(tasks)
-    .where(level ? and(eq(tasks.active, true), eq(tasks.level, level)) : eq(tasks.active, true))
+    .where(and(eq(tasks.subject, currentSubject()), eq(tasks.active, true), level ? eq(tasks.level, level) : undefined))
     .all();
   const map = new Map<string, StockRow>();
   for (const r of rows) {
@@ -161,7 +162,7 @@ export function countTasks(section: Section, level: Level): number {
   const r = getDb()
     .select({ n: sql<number>`count(*)` })
     .from(tasks)
-    .where(and(eq(tasks.section, section), eq(tasks.level, level), eq(tasks.active, true)))
+    .where(and(eq(tasks.subject, currentSubject()), eq(tasks.section, section), eq(tasks.level, level), eq(tasks.active, true)))
     .get();
   return r?.n ?? 0;
 }

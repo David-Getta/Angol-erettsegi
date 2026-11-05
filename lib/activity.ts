@@ -1,6 +1,7 @@
-import { gte, sql } from "drizzle-orm";
+import { and, eq, gte, sql } from "drizzle-orm";
 import { getDb } from "@/lib/db/client";
 import { activity } from "@/lib/db/schema";
+import { currentSubject } from "@/lib/exam/config";
 
 export function localDay(d: Date = new Date()): string {
   const pad = (n: number) => String(n).padStart(2, "0");
@@ -11,7 +12,7 @@ export function localDay(d: Date = new Date()): string {
 export function logActivity(section: string, seconds: number, at: Date = new Date()): void {
   const s = Math.round(seconds);
   if (s <= 0) return;
-  getDb().insert(activity).values({ day: localDay(at), section, seconds: Math.min(s, 4 * 3600), createdAt: at }).run();
+  getDb().insert(activity).values({ subject: currentSubject(), day: localDay(at), section, seconds: Math.min(s, 4 * 3600), createdAt: at }).run();
 }
 
 export function secondsByDay(sinceDays = 60): Map<string, number> {
@@ -20,7 +21,7 @@ export function secondsByDay(sinceDays = 60): Map<string, number> {
   const rows = getDb()
     .select({ day: activity.day, seconds: sql<number>`sum(${activity.seconds})` })
     .from(activity)
-    .where(gte(activity.day, localDay(since)))
+    .where(and(eq(activity.subject, currentSubject()), gte(activity.day, localDay(since))))
     .groupBy(activity.day)
     .all();
   return new Map(rows.map((r) => [r.day, r.seconds]));

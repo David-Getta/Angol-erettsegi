@@ -10,6 +10,7 @@ import { lessonCategories } from "@/lib/lessons";
 import { usedTaskIds } from "@/lib/tasks";
 import { localDay } from "@/lib/activity";
 import type { PartEstimate } from "@/lib/dashboard";
+import { currentSubject } from "@/lib/exam/config";
 
 export type PlanItem = {
   key: string;
@@ -41,7 +42,7 @@ function pickTask(section: string, level: Level, day: string): { id: string; tit
   const rows = getDb()
     .select({ id: tasks.id, title: tasks.title, reserved: tasks.reservedFor })
     .from(tasks)
-    .where(and(eq(tasks.section, section), eq(tasks.level, level), eq(tasks.active, true)))
+    .where(and(eq(tasks.subject, currentSubject()), eq(tasks.section, section), eq(tasks.level, level), eq(tasks.active, true)))
     .all();
   const fresh = rows.filter((r) => !r.reserved && !used.has(r.id));
   const pool = fresh.length ? fresh : rows.filter((r) => !r.reserved);
@@ -58,7 +59,7 @@ export function todayPlan(level: Level, estimates: PartEstimate[], hasDiagnostic
   const db = getDb();
   const day = localDay();
   const { minTasks, maxTasks } = examConfig.app().dailyPlan;
-  const todaySections = new Set(db.select({ s: activity.section }).from(activity).where(eq(activity.day, day)).all().map((r) => r.s));
+  const todaySections = new Set(db.select({ s: activity.section }).from(activity).where(and(eq(activity.subject, currentSubject()), eq(activity.day, day))).all().map((r) => r.s));
   const items: PlanItem[] = [];
 
   if (!hasDiagnostic) {
@@ -140,12 +141,12 @@ export function todayPlan(level: Level, estimates: PartEstimate[], hasDiagnostic
 
   // writing at least weekly
   const weekAgo = new Date(Date.now() - 7 * 864e5);
-  const recentWriting = db.select({ id: submissions.id }).from(submissions).where(and(eq(submissions.kind, "writing"), gte(submissions.createdAt, weekAgo))).all();
+  const recentWriting = db.select({ id: submissions.id }).from(submissions).where(and(eq(submissions.subject, currentSubject()), eq(submissions.kind, "writing"), gte(submissions.createdAt, weekAgo))).all();
   if (recentWriting.length === 0) {
     const tk = pickTask("writing", level, day);
     if (tk) items.push({ key: "writing", title: `Íráskészség: ${tk.title}`, reason: "Az elmúlt héten nem írtál – az írás hozza a legtöbb pontot.", href: `/iras/${tk.id}`, section: "writing", minutes: 40, done: todaySections.has("writing") });
   }
-  const recentSpeaking = db.select({ id: submissions.id }).from(submissions).where(and(eq(submissions.kind, "speaking"), gte(submissions.createdAt, weekAgo))).all();
+  const recentSpeaking = db.select({ id: submissions.id }).from(submissions).where(and(eq(submissions.subject, currentSubject()), eq(submissions.kind, "speaking"), gte(submissions.createdAt, weekAgo))).all();
   if (recentSpeaking.length === 0 && items.length < maxTasks) {
     const tk = pickTask("speaking", level, day);
     if (tk) items.push({ key: "speaking", title: `Szóbeli: ${tk.title}`, reason: "Heti egy szóbeli gyakorlás ajánlott.", href: `/szobeli/${tk.id}`, section: "speaking", minutes: 15, done: todaySections.has("speaking") });

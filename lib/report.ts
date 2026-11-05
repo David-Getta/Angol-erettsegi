@@ -9,6 +9,7 @@ import { fixedMistakes } from "@/lib/targeted";
 import { secondsByDay, streak } from "@/lib/activity";
 import { getSettings } from "@/lib/settings";
 import { getContent } from "@/lib/tasks";
+import { currentSubject } from "@/lib/exam/config";
 
 /** Haladási jelentés: one printable page of the student's progress (for a teacher or parent). */
 export type ProgressReport = {
@@ -38,7 +39,7 @@ export function progressReport(): ProgressReport {
   const writing = db
     .select()
     .from(submissions)
-    .where(and(eq(submissions.kind, "writing"), eq(submissions.level, level), eq(submissions.status, "graded"), isNotNull(submissions.score)))
+    .where(and(eq(submissions.subject, currentSubject()), eq(submissions.kind, "writing"), eq(submissions.level, level), eq(submissions.status, "graded"), isNotNull(submissions.score)))
     .orderBy(desc(submissions.gradedAt))
     .limit(6)
     .all()
@@ -66,8 +67,14 @@ export function progressReport(): ProgressReport {
       .map((c) => ({ name: c.name, last30: c.last30, total: c.total, improving: c.improving })),
     fixed: { all: fixedMistakes(), last30: fixedMistakes(30) },
     vocab: {
-      cards: db.select({ n: sql<number>`count(*)` }).from(cards).get()?.n ?? 0,
-      reviews30: db.select({ n: sql<number>`count(*)` }).from(reviews).where(gte(reviews.reviewedAt, since)).get()?.n ?? 0,
+      cards: db.select({ n: sql<number>`count(*)` }).from(cards).where(eq(cards.subject, currentSubject())).get()?.n ?? 0,
+      reviews30:
+        db
+          .select({ n: sql<number>`count(*)` })
+          .from(reviews)
+          .innerJoin(cards, eq(cards.id, reviews.cardId))
+          .where(and(eq(cards.subject, currentSubject()), gte(reviews.reviewedAt, since)))
+          .get()?.n ?? 0,
     },
     practice: {
       minutes30: Math.round(recentDays.reduce((n, [, sec]) => n + sec, 0) / 60),

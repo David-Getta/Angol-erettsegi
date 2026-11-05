@@ -10,6 +10,7 @@ import { getSettings, type CardType } from "@/lib/settings";
 import { paths } from "@/lib/paths";
 import { logActivity } from "@/lib/activity";
 import { newFsrsState, review, type StoredFsrs } from "./fsrs";
+import { currentSubject } from "@/lib/exam/config";
 
 export function noteKey(term: string): string {
   return normalizeAnswer(term).replace(/[^\p{L}\p{N}' -]/gu, "").trim();
@@ -42,7 +43,7 @@ export function lookupWord(term: string, preferLevel?: Level): Lookup | null {
   const rows = db
     .select({ section: tasks.section, content: tasks.content, level: tasks.level })
     .from(tasks)
-    .where(and(eq(tasks.active, true), inArray(tasks.section, ["vocabulary", "reading"])))
+    .where(and(eq(tasks.subject, currentSubject()), eq(tasks.active, true), inArray(tasks.section, ["vocabulary", "reading"])))
     .all();
   let best: Lookup | null = null;
   for (const r of rows) {
@@ -63,6 +64,8 @@ export function lookupWord(term: string, preferLevel?: Level): Lookup | null {
 }
 
 export type AddWordInput = {
+  /** Subject of the card (default: the current one). */
+  subject?: string;
   term: string;
   meaning?: string | null;
   example?: string | null;
@@ -103,6 +106,7 @@ export function addWord(input: AddWordInput): { created: number; incomplete: boo
     const res = db
       .insert(cards)
       .values({
+        subject: input.subject ?? currentSubject(),
         noteKey: key,
         front,
         back: meaning,
@@ -134,6 +138,7 @@ export function addWord(input: AddWordInput): { created: number; incomplete: boo
  * Hungarian explanation. Scheduled with FSRS like every other card.
  */
 export function addFixCard(input: {
+  subject?: string;
   original: string;
   corrected: string;
   explanation: string;
@@ -149,6 +154,7 @@ export function addFixCard(input: {
   const res = getDb()
     .insert(cards)
     .values({
+      subject: input.subject ?? currentSubject(),
       noteKey: `fix:${noteKey(original)}>${noteKey(corrected)}`.slice(0, 300),
       front: corrected,
       back: input.explanation.trim(),
@@ -238,9 +244,9 @@ export function deckStatuses(level: Level): DeckStatus[] {
   const decks = db
     .select()
     .from(tasks)
-    .where(and(eq(tasks.section, "vocabulary"), eq(tasks.level, level), eq(tasks.active, true)))
+    .where(and(eq(tasks.subject, currentSubject()), eq(tasks.section, "vocabulary"), eq(tasks.level, level), eq(tasks.active, true)))
     .all();
-  const keys = new Set(db.selectDistinct({ k: cards.noteKey }).from(cards).all().map((r) => r.k));
+  const keys = new Set(db.selectDistinct({ k: cards.noteKey }).from(cards).where(eq(cards.subject, currentSubject())).all().map((r) => r.k));
   return decks
     .map((d) => {
       const deck = d.content as VocabDeck;
@@ -282,13 +288,13 @@ export function dueInfo(now: Date = new Date()): DueInfo {
     db
       .select({ n: sql<number>`count(*)` })
       .from(cards)
-      .where(and(eq(cards.isNew, false), eq(cards.suspended, false), eq(cards.incomplete, false), lte(cards.dueAt, now)))
+      .where(and(eq(cards.subject, currentSubject()), eq(cards.isNew, false), eq(cards.suspended, false), eq(cards.incomplete, false), lte(cards.dueAt, now)))
       .get()?.n ?? 0;
   const newAvailable =
     db
       .select({ n: sql<number>`count(*)` })
       .from(cards)
-      .where(and(eq(cards.isNew, true), eq(cards.suspended, false), eq(cards.incomplete, false)))
+      .where(and(eq(cards.subject, currentSubject()), eq(cards.isNew, true), eq(cards.suspended, false), eq(cards.incomplete, false)))
       .get()?.n ?? 0;
   const newAllowed = Math.max(0, Math.min(newAvailable, s.dailyNewCards - newDone));
   const reviewsAllowed = Math.max(0, Math.min(dueReviews, s.dailyMaxReviews - (reviewed - newDone)));
@@ -302,14 +308,14 @@ export function reviewQueue(now: Date = new Date()): CardRow[] {
   const due = db
     .select()
     .from(cards)
-    .where(and(eq(cards.isNew, false), eq(cards.suspended, false), eq(cards.incomplete, false), lte(cards.dueAt, now)))
+    .where(and(eq(cards.subject, currentSubject()), eq(cards.isNew, false), eq(cards.suspended, false), eq(cards.incomplete, false), lte(cards.dueAt, now)))
     .orderBy(asc(cards.dueAt))
     .limit(info.dueReviews)
     .all();
   const fresh = db
     .select()
     .from(cards)
-    .where(and(eq(cards.isNew, true), eq(cards.suspended, false), eq(cards.incomplete, false)))
+    .where(and(eq(cards.subject, currentSubject()), eq(cards.isNew, true), eq(cards.suspended, false), eq(cards.incomplete, false)))
     .orderBy(asc(cards.createdAt), asc(cards.id))
     .limit(info.newAllowed * 4)
     .all();
@@ -345,7 +351,7 @@ export function listCards(opts: { q?: string; incompleteOnly?: boolean; limit?: 
   return db
     .select()
     .from(cards)
-    .where(conds.length ? and(...conds) : undefined)
+    .where(and(eq(cards.subject, currentSubject()), ...conds))
     .orderBy(desc(cards.createdAt), asc(cards.noteKey))
     .limit(opts.limit ?? 500)
     .all();
@@ -356,7 +362,7 @@ export function incompleteCount(): number {
     getDb()
       .select({ n: sql<number>`count(distinct ${cards.noteKey})` })
       .from(cards)
-      .where(eq(cards.incomplete, true))
+      .where(and(eq(cards.subject, currentSubject()), eq(cards.incomplete, true)))
       .get()?.n ?? 0
   );
 }
@@ -366,7 +372,7 @@ export function updateWord(key: string, patch: { back?: string; example?: string
   const set: Partial<typeof cards.$inferInsert> = { ...patch };
   if (patch.back !== undefined) set.incomplete = !patch.back.trim();
   db.update(cards).set(set).where(eq(cards.noteKey, key)).run();
-  const rows = db.select().from(cards).where(eq(cards.noteKey, key)).all();
+  const rows = db.select().from(cards).where(and(eq(cards.subject, currentSubject()), eq(cards.noteKey, key))).all();
   const first = rows[0];
   if (first && !first.incomplete) {
     // create the card types that became possible (cloze needs an example, collocation needs one)
@@ -391,7 +397,7 @@ export function setSuspended(cardIds: number[], suspended: boolean): void {
 
 export function deleteWord(key: string): void {
   const db = getDb();
-  const ids = db.select({ id: cards.id }).from(cards).where(eq(cards.noteKey, key)).all().map((r) => r.id);
+  const ids = db.select({ id: cards.id }).from(cards).where(and(eq(cards.subject, currentSubject()), eq(cards.noteKey, key))).all().map((r) => r.id);
   if (ids.length) db.delete(reviews).where(inArray(reviews.cardId, ids)).run();
   db.delete(cards).where(eq(cards.noteKey, key)).run();
   writeIncompleteRequests();
@@ -408,7 +414,7 @@ export const vocabExchange = {
 /** exchange/vocab/incomplete.json: the words /szokincs has to complete. */
 export function writeIncompleteRequests(): number {
   const db = getDb();
-  const rows = db.select().from(cards).where(eq(cards.incomplete, true)).all();
+  const rows = db.select().from(cards).where(and(eq(cards.subject, currentSubject()), eq(cards.incomplete, true))).all();
   const byKey = new Map<string, { key: string; term: string; context: string | null; level: string | null; topic: string | null }>();
   for (const r of rows) if (!byKey.has(r.noteKey)) byKey.set(r.noteKey, { key: r.noteKey, term: r.front, context: r.context, level: r.level, topic: r.topic });
   fs.mkdirSync(vocabExchange.dir(), { recursive: true });
@@ -447,7 +453,7 @@ export function importVocabCompletions(): { applied: number; errors: string[] } 
   let applied = 0;
   const db = getDb();
   for (const w of parsed.data.words) {
-    const exists = db.select({ id: cards.id }).from(cards).where(eq(cards.noteKey, w.key)).get();
+    const exists = db.select({ id: cards.id }).from(cards).where(and(eq(cards.subject, currentSubject()), eq(cards.noteKey, w.key))).get();
     if (!exists) continue;
     db.update(cards).set({ front: w.term }).where(eq(cards.noteKey, w.key)).run();
     updateWord(w.key, { back: w.meaning, example: w.example, collocation: w.collocation ?? null });

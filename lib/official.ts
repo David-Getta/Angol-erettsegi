@@ -5,6 +5,7 @@ import { getDb } from "@/lib/db/client";
 import { tasks } from "@/lib/db/schema";
 import { paths } from "@/lib/paths";
 import type { Content } from "@/lib/content/schema";
+import { currentSubject } from "@/lib/exam/config";
 
 export type OfficialFolder = { name: string; files: string[]; importedTasks: number };
 
@@ -19,7 +20,7 @@ export function officialFolders(): OfficialFolder[] {
   const rows = getDb()
     .select({ content: tasks.content })
     .from(tasks)
-    .where(and(eq(tasks.source, "official"), eq(tasks.active, true)))
+    .where(and(eq(tasks.subject, currentSubject()), eq(tasks.source, "official"), eq(tasks.active, true)))
     .all();
   const counts = new Map<string, number>();
   for (const r of rows) {

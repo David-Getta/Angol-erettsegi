@@ -7,6 +7,7 @@ import { examConfig } from "@/lib/exam/config";
 import { logObjectiveErrors } from "@/lib/errors/log";
 import { logActivity } from "@/lib/activity";
 import { getObjective } from "@/lib/tasks";
+import { currentSubject } from "@/lib/exam/config";
 
 export type AttemptMode = "practice" | "exam" | "mock" | "diagnostic";
 
@@ -37,6 +38,7 @@ export function saveAttempt(input: {
   const attempt = db
     .insert(attempts)
     .values({
+      subject: task.subject,
       taskId: task.id,
       section: task.section,
       level: task.level,
@@ -54,6 +56,7 @@ export function saveAttempt(input: {
   for (const r of result.items) {
     db.insert(itemAttempts)
       .values({
+        subject: task.subject,
         taskId: task.id,
         itemId: r.itemId,
         category: r.category,
@@ -78,7 +81,7 @@ export function recentAttempts(section: string, level: string, limit = 20): Atte
   return getDb()
     .select()
     .from(attempts)
-    .where(and(eq(attempts.section, section), eq(attempts.level, level)))
+    .where(and(eq(attempts.subject, currentSubject()), eq(attempts.section, section), eq(attempts.level, level)))
     .orderBy(desc(attempts.createdAt))
     .limit(limit)
     .all();

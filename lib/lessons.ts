@@ -6,6 +6,7 @@ import { checkItem, type ItemResult } from "@/lib/scoring/check";
 import type { GrammarLesson } from "@/lib/content/schema";
 import { getContent } from "@/lib/tasks";
 import { logActivity } from "@/lib/activity";
+import { currentSubject } from "@/lib/exam/config";
 
 /**
  * Szabálytár: one lesson per error category (content/grammar/kozep/gr-<category>.json).
@@ -31,7 +32,7 @@ export function lessonCategories(): Set<string> {
   const rows = getDb()
     .select({ id: tasks.id })
     .from(tasks)
-    .where(and(eq(tasks.section, "grammar"), eq(tasks.active, true)))
+    .where(and(eq(tasks.subject, currentSubject()), eq(tasks.section, "grammar"), eq(tasks.active, true)))
     .all();
   return new Set(rows.map((r) => r.id.replace(/^gr-/, "")));
 }
@@ -52,7 +53,7 @@ export function lessonOverview(): { category: ErrorCategory; lesson: LessonSumma
         total: sql<number>`count(*)`,
         last30: sql<number>`sum(case when ${errors.createdAt} >= ${d30} then 1 else 0 end)`,
       })
-      .from(errors)
+      .from(errors).where(eq(errors.subject, currentSubject()))
       .groupBy(errors.category)
       .all()
       .map((r) => [r.category, { total: r.total, last30: r.last30 ?? 0 }] as const),

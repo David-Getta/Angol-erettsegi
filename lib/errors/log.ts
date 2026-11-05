@@ -5,6 +5,7 @@ import type { ObjectiveTask } from "@/lib/content/schema";
 import { itemContext } from "@/lib/content/text";
 import type { ItemResult } from "@/lib/scoring/check";
 import { examConfig } from "@/lib/exam/config";
+import { currentSubject } from "@/lib/exam/config";
 
 /** Every wrong objective answer goes into the error log with the correct answer and the reason. */
 export function logObjectiveErrors(
@@ -22,6 +23,7 @@ export function logObjectiveErrors(
     const why = item.evidence ? `${item.explanation}\nA szövegben: „${item.evidence}”` : item.explanation;
     db.insert(errors)
       .values({
+        subject: task.subject,
         category: r.category,
         original: r.given || "(nem válaszoltál)",
         corrected: r.expectedLabel,
@@ -43,7 +45,7 @@ export function recentErrors(limit = 50, category?: string): ErrorRow[] {
   return getDb()
     .select()
     .from(errors)
-    .where(category ? eq(errors.category, category) : undefined)
+    .where(and(eq(errors.subject, currentSubject()), category ? eq(errors.category, category) : undefined))
     .orderBy(desc(errors.createdAt))
     .limit(limit)
     .all();
@@ -74,7 +76,7 @@ export function categoryStats(): CategoryStat[] {
       last30: sql<number>`sum(case when ${errors.createdAt} >= ${d30.getTime()} then 1 else 0 end)`,
       prev30: sql<number>`sum(case when ${errors.createdAt} >= ${d60.getTime()} and ${errors.createdAt} < ${d30.getTime()} then 1 else 0 end)`,
     })
-    .from(errors)
+    .from(errors).where(eq(errors.subject, currentSubject()))
     .groupBy(errors.category)
     .all();
   const cats = new Map(examConfig.errorCategories().categories.map((c) => [c.id, c]));
@@ -103,7 +105,7 @@ export function improvingStatus(category: string): { improving: boolean; targete
   const last = getDb()
     .select({ correct: itemAttempts.correct })
     .from(itemAttempts)
-    .where(and(eq(itemAttempts.category, category), eq(itemAttempts.mode, "targeted")))
+    .where(and(eq(itemAttempts.subject, currentSubject()), eq(itemAttempts.category, category), eq(itemAttempts.mode, "targeted")))
     .orderBy(desc(itemAttempts.createdAt))
     .limit(lastN)
     .all();
@@ -122,9 +124,11 @@ export function weeklyTrend(weeks = 8, categoriesFilter?: string[]): { weekStart
     .select({ category: errors.category, createdAt: errors.createdAt })
     .from(errors)
     .where(
-      categoriesFilter?.length
-        ? and(gte(errors.createdAt, start), inArray(errors.category, categoriesFilter))
-        : gte(errors.createdAt, start),
+      and(
+        eq(errors.subject, currentSubject()),
+        gte(errors.createdAt, start),
+        categoriesFilter?.length ? inArray(errors.category, categoriesFilter) : undefined,
+      ),
     )
     .all();
   const out = Array.from({ length: weeks }, (_, i) => {

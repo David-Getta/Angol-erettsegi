@@ -4,6 +4,7 @@ import { cards, tasks } from "@/lib/db/schema";
 import type { Guide, Level, SpeakingTask, WritingTask } from "@/lib/content/schema";
 import { normalizeAnswer } from "@/lib/scoring/check";
 import { noteKey } from "@/lib/vocab/cards";
+import { currentSubject } from "@/lib/exam/config";
 
 /**
  * Kifejezéstár: the useful phrases of every writing and speaking card of a
@@ -18,9 +19,9 @@ export function phraseBank(level: Level): PhraseGroup[] {
   const rows = db
     .select({ id: tasks.id, section: tasks.section, type: tasks.type, content: tasks.content })
     .from(tasks)
-    .where(and(eq(tasks.level, level), eq(tasks.active, true), inArray(tasks.section, ["writing", "speaking"])))
+    .where(and(eq(tasks.subject, currentSubject()), eq(tasks.level, level), eq(tasks.active, true), inArray(tasks.section, ["writing", "speaking"])))
     .all();
-  const known = new Set(db.select({ k: cards.noteKey }).from(cards).all().map((r) => r.k));
+  const known = new Set(db.select({ k: cards.noteKey }).from(cards).where(eq(cards.subject, currentSubject())).all().map((r) => r.k));
   const groups = new Map<string, PhraseGroup & { byKey: Map<string, Phrase> }>();
   for (const r of rows) {
     const c = r.content as WritingTask | SpeakingTask;
@@ -39,7 +40,7 @@ export function phraseBank(level: Level): PhraseGroup[] {
     groups.set(key, g);
   }
   // the phrases of the writing / speaking guides join the groups of their text / task type (only types this level has)
-  const guides = db.select({ id: tasks.id, content: tasks.content }).from(tasks).where(and(eq(tasks.section, "guide"), eq(tasks.active, true))).all();
+  const guides = db.select({ id: tasks.id, content: tasks.content }).from(tasks).where(and(eq(tasks.subject, currentSubject()), eq(tasks.section, "guide"), eq(tasks.active, true))).all();
   for (const r of guides) {
     const gd = r.content as Guide;
     if (gd.type === "exam") continue;

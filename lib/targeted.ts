@@ -8,6 +8,7 @@ import { acceptNearMiss } from "@/lib/attempts";
 import { logActivity } from "@/lib/activity";
 import { getObjective } from "@/lib/tasks";
 import { examConfig } from "@/lib/exam/config";
+import { currentSubject } from "@/lib/exam/config";
 
 /** One item pulled out of its task for targeted practice. */
 export type TargetedItem = {
@@ -39,7 +40,7 @@ export function bankItemsFor(categories: string[], level: Level): TargetedItem[]
   const rows = db
     .select()
     .from(tasks)
-    .where(and(eq(tasks.level, level), eq(tasks.active, true)))
+    .where(and(eq(tasks.subject, currentSubject()), eq(tasks.level, level), eq(tasks.active, true)))
     .all()
     .filter((r) => ["language-use", "reading", "listening"].includes(r.section) && r.categories.some((c) => categories.includes(c)));
   const out: TargetedItem[] = [];
@@ -73,7 +74,7 @@ export function bankItemsFor(categories: string[], level: Level): TargetedItem[]
 export function pickTargeted(categories: string[], level: Level, count: number): TargetedItem[] {
   const db = getDb();
   const pool = bankItemsFor(categories, level).filter((i) => i.section === "language-use" || i.item.kind !== "match");
-  const history = db.select().from(itemAttempts).all();
+  const history = db.select().from(itemAttempts).where(eq(itemAttempts.subject, currentSubject())).all();
   const lastCorrect = new Map<string, boolean>();
   for (const h of history.sort((a, b) => a.createdAt.getTime() - b.createdAt.getTime())) lastCorrect.set(`${h.taskId}:${h.itemId}`, h.correct);
   const wrongBefore = shuffle(pool.filter((p) => lastCorrect.get(p.key) === false));
@@ -88,7 +89,7 @@ export function pickTargeted(categories: string[], level: Level, count: number):
  */
 export function pickMistakes(level: Level, count: number, minAgeHours: number, now = Date.now()): { due: TargetedItem[]; later: number } {
   const db = getDb();
-  const history = db.select().from(itemAttempts).all();
+  const history = db.select().from(itemAttempts).where(eq(itemAttempts.subject, currentSubject())).all();
   const last = new Map<string, { correct: boolean; at: number }>();
   for (const h of history.sort((a, b) => a.createdAt.getTime() - b.createdAt.getTime())) {
     last.set(`${h.taskId}:${h.itemId}`, { correct: h.correct, at: h.createdAt.getTime() });
@@ -104,7 +105,7 @@ export function pickMistakes(level: Level, count: number, minAgeHours: number, n
 
 /** Items answered wrong at some point whose latest attempt is correct (optionally: fixed within the last `sinceDays`). */
 export function fixedMistakes(sinceDays?: number, now = Date.now()): number {
-  const history = getDb().select().from(itemAttempts).all();
+  const history = getDb().select().from(itemAttempts).where(eq(itemAttempts.subject, currentSubject())).all();
   const state = new Map<string, { everWrong: boolean; last: boolean; at: number }>();
   for (const h of history.sort((a, b) => a.createdAt.getTime() - b.createdAt.getTime())) {
     const k = `${h.taskId}:${h.itemId}`;
@@ -130,11 +131,12 @@ export function checkTargetedItem(key: string, given: string) {
   const r = checkItem(task, item, given, { acceptNearMiss: acceptNearMiss(task.section) });
   const db = getDb();
   db.insert(itemAttempts)
-    .values({ taskId: task.id, itemId: item.id, category: item.category, section: task.section, correct: r.correct, answer: given, mode: "targeted", createdAt: new Date() })
+    .values({ subject: task.subject, taskId: task.id, itemId: item.id, category: item.category, section: task.section, correct: r.correct, answer: given, mode: "targeted", createdAt: new Date() })
     .run();
   if (!r.correct) {
     db.insert(errors)
       .values({
+        subject: task.subject,
         category: item.category,
         original: given || "(nem válaszoltál)",
         corrected: r.expectedLabel,
