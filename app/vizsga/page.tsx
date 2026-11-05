@@ -6,6 +6,7 @@ import { getSettings } from "@/lib/settings";
 import type { Level } from "@/lib/content/schema";
 import { Badge, Card, PageHeader } from "@/components/ui";
 import { t } from "@/lib/i18n/hu";
+import { GuideLinks } from "@/components/guides/GuideLink";
 
 export const metadata: Metadata = { title: t.examInfo.title };
 
@@ -124,6 +125,7 @@ export default function ExamInfoPage() {
   return (
     <div>
       <PageHeader title={t.examInfo.title} intro={t.examInfo.intro} />
+      <GuideLinks type="exam" title={t.guides.byPart} names={Object.fromEntries(levelStructure(level).parts.map((p) => [p.id, p.name]))} />
       <div className="grid grid-cols-1 gap-5 lg:grid-cols-[minmax(0,1fr)_320px]">
         <div className="min-w-0">
           <h2 className="mb-3 flex items-center gap-2 text-lg font-semibold">
