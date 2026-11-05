@@ -39,6 +39,17 @@ Argumentum (opcionális): `$ARGUMENTS` – ha megadtak egy beadás-azonosítót,
 5. Futtasd: `npm run validate-feedback` – javíts ki minden hibát, amit kifogásol, és futtasd újra, amíg minden fájl ✓.
    (A „nem található szó szerint” figyelmeztetésnél javítsd az `original` mezőt, hogy pontosan egyezzen a szöveggel.)
 
+## Ha az argumentum nem azonosító, hanem a tanuló beillesztett szövege
+
+Előfordul, hogy a beadás a tanuló saját gépén van (pl. ez egy felhős munkamenet), és az argumentumban maga a szöveg érkezik.
+Ekkor nincs inbox-fájl, és az outboxba írt fájlt az app nem látná. Teendő:
+1. Keresd meg a feladatkártyát a `content/` alatt a szöveg alapján (téma, megszólítás, irányító pontok); ha nem egyértelmű, kérdezz rá.
+2. Építsd fel ugyanazt a javítási promptot, amit az app is használ (`lib/exchange/prompts.ts` → `writingGradingPrompt` / `speakingGradingPrompt`,
+   a szószám a `lib/content/text.ts` `wordCount` függvényével), és javíts a fenti 3. pont szabályai szerint.
+3. Ellenőrizd a JSON-t a `FeedbackSchema`-val, és hogy minden `original` szó szerint szerepel-e a szövegben.
+4. A JSON-t a chatben add át (kódblokkban vagy fájlként): a tanuló az appban a beadás oldalán a **Javítás beillesztése** mezőbe másolja
+   – az app a saját beadás-azonosítóját írja bele, a `submissionId` bármi lehet.
+
 ## Összefoglaló (röviden, magyarul)
 
 Beadásonként: azonosító, feladat címe, pontszám (x / max), a 3 fejlesztendő terület egy-egy szóban.
