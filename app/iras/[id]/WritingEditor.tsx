@@ -165,7 +165,7 @@ export function WritingEditor({
           {savedAt && mode !== "mock" && <span className="text-xs text-muted">{t.writing.draftSaved}</span>}
         </div>
         {exam && <p className="text-xs text-muted">{t.writing.spellcheckOff}</p>}
-        <textarea
+        <textarea lang="en"
           data-testid="writing-editor"
           value={text}
           onChange={(e) => setText(e.target.value)}

@@ -296,7 +296,7 @@ function SelfPractice({ task, ttsRate }: { task: SpeakingTask; ttsRate: number }
           )}
           <label className="block text-sm font-medium">
             {t.speaking.transcript}
-            <textarea
+            <textarea lang="en"
               value={current + (interim ? ` ${interim}` : "")}
               onChange={(e) => setCurrent(e.target.value)}
               rows={5}
@@ -362,7 +362,7 @@ function LivePractice({ task, examinerPrompt }: { task: SpeakingTask; examinerPr
       </details>
       <label className="mt-4 block text-sm font-medium">
         {t.speaking.pasteTranscript}
-        <textarea value={text} onChange={(e) => setText(e.target.value)} rows={8} placeholder={"EXAMINER: …\nCANDIDATE: …"} className="mt-1 w-full rounded-md border border-border bg-surface p-2 font-reading text-[15px]" data-testid="live-transcript" />
+        <textarea lang="en" value={text} onChange={(e) => setText(e.target.value)} rows={8} placeholder={"EXAMINER: …\nCANDIDATE: …"} className="mt-1 w-full rounded-md border border-border bg-surface p-2 font-reading text-[15px]" data-testid="live-transcript" />
       </label>
       {error && <p className="text-sm text-bad">{error}</p>}
       <button

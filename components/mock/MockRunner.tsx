@@ -202,7 +202,7 @@ export function MockRunner({
             </Card>
             <div>
               <div className={`mb-1 text-sm tabular-nums ${wc >= task.wordLimit.min && wc <= task.wordLimit.max ? "text-good" : "text-muted"}`}>{t.writing.wordCount(wc)}</div>
-              <textarea
+              <textarea lang="en"
                 value={texts[task.id] ?? ""}
                 onChange={(e) => setTexts((prev) => ({ ...prev, [task.id]: e.target.value }))}
                 spellCheck={false}
