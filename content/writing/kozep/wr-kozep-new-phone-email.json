@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "id": "wr-kozep-new-phone-email",
-  "revision": 2,
+  "revision": 3,
   "level": "kozep",
   "source": "generated",
   "topic": "tudomany",
@@ -67,5 +67,29 @@
       "hu": "Hamarosan beszélünk! / Vigyázz magadra! (elköszönés)"
     }
   ],
-  "checklistExtra": []
+  "checklistExtra": [],
+  "modelAnswer": {
+    "text": "Hi Jamie,\n\nThanks for your e-mail. You asked about my new phone – well, I love it! The camera is brilliant, especially at night, and the battery lasts all day. It's quite big, but it's light enough to carry in my pocket.\n\nI mostly use it for taking photos and chatting with my friends, but I also listen to music on the bus every morning.\n\nIf I were you, I'd read some reviews online before buying one. And don't forget to check how much storage it has!\n\nSpeak soon,\nMáté",
+    "pointsCovered": [
+      {
+        "id": "p1",
+        "quote": "The camera is brilliant, especially at night, and the battery lasts all day. It's quite big, but it's light enough to carry in my pocket."
+      },
+      {
+        "id": "p2",
+        "quote": "I mostly use it for taking photos and chatting with my friends, but I also listen to music on the bus every morning."
+      },
+      {
+        "id": "p3",
+        "quote": "If I were you, I'd read some reviews online before buying one."
+      }
+    ],
+    "notes": [
+      "Feladat teljesítése: a telefon leírása a feladatban felsorolt mindhárom szempontra kitér (kamera, akkumulátor, méret), utána a használat és egy (sőt két) tanács következik.",
+      "Szókincs: a technikához illő, de nem túl szakmai szavak (battery lasts all day, storage, reviews online), kevés ismétléssel.",
+      "Nyelvhelyesség: a tanács feltételes szerkezettel szól („If I were you, I'd …”), az „enough” helyes szórendje („light enough to …”) és a „before + -ing” is pontos.",
+      "Hangnem: baráti, közvetlen e-mail összevont alakokkal, „You asked about my new phone – well, I love it!” felütéssel és „Speak soon” elköszönéssel.",
+      "Érdemes megtanulni: „the battery lasts all day”, „I mostly use it for + -ing”, „If I were you, I'd …”, „don't forget to check …”."
+    ]
+  }
 }

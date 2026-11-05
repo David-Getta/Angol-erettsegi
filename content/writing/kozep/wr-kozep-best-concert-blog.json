@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "id": "wr-kozep-best-concert-blog",
-  "revision": 2,
+  "revision": 3,
   "level": "kozep",
   "source": "generated",
   "topic": "szabadido",
@@ -67,5 +67,29 @@
       "hu": "Láttátok már őket élőben?"
     }
   ],
-  "checklistExtra": []
+  "checklistExtra": [],
+  "modelAnswer": {
+    "text": "Hi everyone!\n\nLast Saturday my friends and I went to see Northbound, a young Hungarian pop-rock band, live at Budapest Park. It's a huge open-air venue, and it was completely full.\n\nThe best moment of the evening was when they played their most famous song at the end. Everybody was singing along, and the singer even jumped down to dance with the fans in the first row!\n\nI'd definitely recommend this band because their live shows are full of energy and the tickets aren't too expensive. Have you ever seen them live?",
+    "pointsCovered": [
+      {
+        "id": "p1",
+        "quote": "Last Saturday my friends and I went to see Northbound, a young Hungarian pop-rock band, live at Budapest Park."
+      },
+      {
+        "id": "p2",
+        "quote": "The best moment of the evening was when they played their most famous song at the end."
+      },
+      {
+        "id": "p3",
+        "quote": "I'd definitely recommend this band because their live shows are full of energy and the tickets aren't too expensive."
+      }
+    ],
+    "notes": [
+      "Feladat teljesítése: a három szempont három bekezdésben jelenik meg (ki és hol, a legjobb pillanat, ajánlás indoklással), mindegyik konkrét részletekkel.",
+      "Szókincs: a koncerthez illő kifejezések (open-air venue, completely full, singing along, full of energy) változatosak, mégis B1-es szintűek.",
+      "Nyelvhelyesség: a múlt egyszerű és folyamatos idő helyesen váltakozik (played – was singing), a „when” mellékmondat és a „because” indoklás pontos.",
+      "A záró kérdés („Have you ever seen them live?”) megszólítja az olvasókat, ettől lesz a szöveg valódi blogbejegyzés.",
+      "Érdemes megtanulni: „went to see … live”, „The best moment of the evening was when …”, „I'd definitely recommend … because …”."
+    ]
+  }
 }

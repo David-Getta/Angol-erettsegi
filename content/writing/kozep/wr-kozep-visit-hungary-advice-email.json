@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "id": "wr-kozep-visit-hungary-advice-email",
-  "revision": 2,
+  "revision": 3,
   "level": "kozep",
   "source": "generated",
   "topic": "utazas",
@@ -78,5 +78,33 @@
   ],
   "checklistExtra": [
     "Tom mindhárom kérdésére (mikor jöjjön, mit nézzen meg, hogyan utazzon) válaszoltam?"
-  ]
+  ],
+  "modelAnswer": {
+    "text": "Hi Tom,\n\nThanks for your e-mail – that's great news! The best time to come is June, because it's warm but not too hot, and there aren't as many tourists as in August.\n\nYou really should see Budapest, especially the Parliament and the view from Gellért Hill. You should also visit Lake Balaton, which is famous for its beaches.\n\nThe easiest way to get around is by train. Trains are cheap and quite comfortable, and you can buy tickets online.\n\nI live in Székesfehérvár, between Budapest and the lake, so I could show you around. Why don't we spend a weekend at Balaton together?\n\nCan't wait to see you!\nCheers,\nÁdám",
+    "pointsCovered": [
+      {
+        "id": "p1",
+        "quote": "The best time to come is June, because it's warm but not too hot, and there aren't as many tourists as in August."
+      },
+      {
+        "id": "p2",
+        "quote": "You really should see Budapest, especially the Parliament and the view from Gellért Hill. You should also visit Lake Balaton, which is famous for its beaches."
+      },
+      {
+        "id": "p3",
+        "quote": "The easiest way to get around is by train. Trains are cheap and quite comfortable, and you can buy tickets online."
+      },
+      {
+        "id": "p4",
+        "quote": "Why don't we spend a weekend at Balaton together?"
+      }
+    ],
+    "notes": [
+      "Feladat teljesítése: Tom mindhárom kérdésére válaszol (mikor, mit, hogyan), mindkét ajánlott helyhez indoklás tartozik, a záró bekezdésben pedig konkrét közös program szerepel.",
+      "Hangnem: baráti válaszlevél – reagál a hírre („that's great news!”), összevont alakok, „Cheers” elköszönés.",
+      "Szövegalkotás: négy bekezdés a négy szemponthoz; a „because”, „especially”, „also”, „so” és a „which” vonatkozó mellékmondat köti össze a gondolatokat.",
+      "Szókincs és nyelvhelyesség: felsőfok (the best time, the easiest way), hasonlítás (not as many tourists as) és helyes „should” + főnévi igenév.",
+      "Érdemes megtanulni: „The best time to come is … because …”, „It's famous for …”, „The easiest way to get around is by …”, „I could show you around.”"
+    ]
+  }
 }

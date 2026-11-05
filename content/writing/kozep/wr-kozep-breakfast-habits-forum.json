@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "id": "wr-kozep-breakfast-habits-forum",
-  "revision": 2,
+  "revision": 3,
   "level": "kozep",
   "source": "generated",
   "topic": "eletmod",
@@ -67,5 +67,29 @@
       "hu": "És ti hogy vagytok vele?"
     }
   ],
-  "checklistExtra": []
+  "checklistExtra": [],
+  "modelAnswer": {
+    "text": "Hi everyone,\n\nIn my opinion, breakfast really is the most important meal of the day. On school days I have breakfast at about seven. I usually eat a bowl of cereal with milk and drink a cup of tea.\n\nWhen I skip breakfast because I am late, I feel tired and hungry by the second lesson, and I cannot concentrate in class.\n\nThere is one thing I would like to change, though. My cereal contains a lot of sugar, so I want to eat more fruit and wholemeal bread instead.\n\nWhat about you?",
+    "pointsCovered": [
+      {
+        "id": "p1",
+        "quote": "On school days I have breakfast at about seven. I usually eat a bowl of cereal with milk and drink a cup of tea."
+      },
+      {
+        "id": "p2",
+        "quote": "When I skip breakfast because I am late, I feel tired and hungry by the second lesson, and I cannot concentrate in class."
+      },
+      {
+        "id": "p3",
+        "quote": "My cereal contains a lot of sugar, so I want to eat more fruit and wholemeal bread instead."
+      }
+    ],
+    "notes": [
+      "Feladat teljesítése: az első mondat válaszol a fórum kérdésére, utána mindhárom szempont külön bekezdést kap: mit és mikor eszel, mi történik, ha kihagyod, és min változtatnál.",
+      "Hangnem: a félhivatalos fórumhoz illő, semleges stílus – barátságos megszólítás és záró kérdés, de nincs szleng.",
+      "Szókincs: a témához illő kifejezések (to skip breakfast, concentrate in class, wholemeal bread, contains a lot of sugar) pontosak és nem ismétlődnek.",
+      "Nyelvhelyesség: a szokásokat egyszerű jelen idő írja le, gyakoriságot jelző határozókkal (usually, at about seven); a „When …, I feel …” szerkezet pontos.",
+      "Érdemes megtanulni: „In my opinion, …”, „I feel tired and hungry by the second lesson”, „There is one thing I would like to change, though.”"
+    ]
+  }
 }

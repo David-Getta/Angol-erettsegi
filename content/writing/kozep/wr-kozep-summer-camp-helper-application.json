@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "id": "wr-kozep-summer-camp-helper-application",
-  "revision": 2,
+  "revision": 3,
   "level": "kozep",
   "source": "generated",
   "topic": "munka",
@@ -74,5 +74,29 @@
   ],
   "checklistExtra": [
     "A „Dear Ms Hill” megszólítás után „Yours sincerely” elköszönést írtam?"
-  ]
+  ],
+  "modelAnswer": {
+    "text": "Dear Ms Hill,\n\nI am writing to apply for the job of camp helper advertised on our school notice board. I am 17 and I go to secondary school in Veszprém. I have been learning English for eight years, so I can communicate confidently.\n\nI would be a good helper because I often look after my younger cousins. As a handball player, I am also good at organising games and sports.\n\nCould you tell me what the working hours are and where we would stay?\n\nI look forward to hearing from you.\n\nYours sincerely,\nLevente Takács",
+    "pointsCovered": [
+      {
+        "id": "p1",
+        "quote": "I am 17 and I go to secondary school in Veszprém. I have been learning English for eight years, so I can communicate confidently."
+      },
+      {
+        "id": "p2",
+        "quote": "I would be a good helper because I often look after my younger cousins. As a handball player, I am also good at organising games and sports."
+      },
+      {
+        "id": "p3",
+        "quote": "Could you tell me what the working hours are and where we would stay?"
+      }
+    ],
+    "notes": [
+      "Feladat teljesítése: a bemutatkozás mindhárom kért adatot tartalmazza (kor, iskola, angoltudás), a rátermettséget két konkrét példa igazolja, a kérdés a munkaidőre és a szállásra is kitér.",
+      "Hangnem: „Dear Ms Hill” után „Yours sincerely”, összevont alakok nélkül – a jelentkezés udvarias, magabiztos, de nem dicsekvő.",
+      "Szókincs: a hirdetés elvárásaira (gyerekek, játékok, angoltudás) saját, konkrét példákkal válaszol (look after my younger cousins, as a handball player, communicate confidently).",
+      "Nyelvhelyesség: present perfect continuous („I have been learning English for eight years”) és a közvetett kérdés helyes szórendje („what the working hours are”).",
+      "Érdemes megtanulni: „I am writing to apply for the job of …”, „I would be a good helper because …”, „Could you tell me what … are?”."
+    ]
+  }
 }

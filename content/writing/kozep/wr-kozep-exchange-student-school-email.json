@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "id": "wr-kozep-exchange-student-school-email",
-  "revision": 2,
+  "revision": 3,
   "level": "kozep",
   "source": "generated",
   "topic": "iskola",
@@ -77,5 +77,33 @@
   ],
   "checklistExtra": [
     "Mind a négy irányítási pontot külön bekezdésben dolgoztam ki?"
-  ]
+  ],
+  "modelAnswer": {
+    "text": "Hi Olivia,\n\nDon't worry, everybody at my school is really friendly! Lessons start at eight and finish at about two. We have six or seven lessons a day, with a ten-minute break between them.\n\nI'm sure you'll like our English lessons with Mr Kovács because he's very funny and he often lets us talk about films and music.\n\nYou don't have to wear a uniform, so just wear comfortable clothes. Don't forget to bring trainers for PE and a notebook.\n\nHow about going to the swimming pool after school one day? There's also a great ice cream shop nearby.\n\nI can't wait to see you!\nLove,\nLilla",
+    "pointsCovered": [
+      {
+        "id": "p1",
+        "quote": "Lessons start at eight and finish at about two. We have six or seven lessons a day, with a ten-minute break between them."
+      },
+      {
+        "id": "p2",
+        "quote": "I'm sure you'll like our English lessons with Mr Kovács because he's very funny and he often lets us talk about films and music."
+      },
+      {
+        "id": "p3",
+        "quote": "You don't have to wear a uniform, so just wear comfortable clothes. Don't forget to bring trainers for PE and a notebook."
+      },
+      {
+        "id": "p4",
+        "quote": "How about going to the swimming pool after school one day?"
+      }
+    ],
+    "notes": [
+      "Feladat teljesítése: mind a négy szempont külön bekezdésben, konkrét részletekkel (órarend, szünetek, kedvelt tanár indoklással, ruha és felszerelés, közös program).",
+      "Hangnem: a nyitó mondat („Don't worry, …”) válaszol Olivia izgalmára, a levél végig barátságos és bátorító; a „Love,” elköszönés illik a levelezőtársak viszonyához.",
+      "Szövegalkotás: logikus sorrend az iskolai naptól a délutáni programig; a „so”, „because” és „also” kapcsolja össze a gondolatokat.",
+      "Nyelvhelyesség: pontos modális és tiltó szerkezetek (You don't have to …, Don't forget to …), a „let somebody do something” szerkezet helyes.",
+      "Érdemes megtanulni: „I'm sure you'll like … because …”, „You don't have to wear a uniform”, „How about going to … after school?”."
+    ]
+  }
 }

@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "id": "wr-kozep-park-clean-up-invitation",
-  "revision": 2,
+  "revision": 3,
   "level": "kozep",
   "source": "generated",
   "topic": "kornyezet",
@@ -73,5 +73,29 @@
   ],
   "checklistExtra": [
     "Jövő idejű szerkezeteket (will, be going to, present continuous) használtam a tervekhez?"
-  ]
+  ],
+  "modelAnswer": {
+    "text": "Hi Alex,\n\nOur town is organising a clean-up day in Rákóczi Park next Saturday. Would you like to come with me? We're meeting at the main gate of the park at nine o'clock.\n\nThe volunteers are going to pick up litter, clean the playground and plant some new trees. It'll be hard work, but there will be free pizza for lunch!\n\nMake sure you wear old clothes and comfortable shoes, and bring a bottle of water. The organisers will give us gloves and bags.\n\nLet me know if you can come!\nGergő",
+    "pointsCovered": [
+      {
+        "id": "p1",
+        "quote": "We're meeting at the main gate of the park at nine o'clock."
+      },
+      {
+        "id": "p2",
+        "quote": "The volunteers are going to pick up litter, clean the playground and plant some new trees."
+      },
+      {
+        "id": "p3",
+        "quote": "Make sure you wear old clothes and comfortable shoes, and bring a bottle of water."
+      }
+    ],
+    "notes": [
+      "Feladat teljesítése: valódi meghívás („Would you like to come with me?”), pontos időpont és találkozóhely, három konkrét önkéntes feladat, végül ruha és felszerelés.",
+      "Nyelvhelyesség: a jövőre három különböző szerkezet szól, mindegyik a helyén – megbeszélt program: present continuous (We're meeting), terv: going to, jóslat: will.",
+      "Szókincs: a témához illő kifejezések (clean-up day, pick up litter, plant trees, volunteers, organisers) változatosak és pontosak.",
+      "Hangnem: baráti, lelkes meghívó („It'll be hard work, but …”), a „Let me know if you can come!” zárás választ kér.",
+      "Érdemes megtanulni: „Would you like to come with me?”, „We're meeting at … at …”, „Make sure you …”."
+    ]
+  }
 }

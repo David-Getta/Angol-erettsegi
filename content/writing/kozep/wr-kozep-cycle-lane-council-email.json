@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "id": "wr-kozep-cycle-lane-council-email",
-  "revision": 2,
+  "revision": 3,
   "level": "kozep",
   "source": "generated",
   "topic": "kornyezet",
@@ -71,5 +71,29 @@
       "hu": "Tisztelettel: (ha nem tudod a címzett nevét)"
     }
   ],
-  "checklistExtra": []
+  "checklistExtra": [],
+  "modelAnswer": {
+    "text": "Dear Sir or Madam,\n\nI am a Hungarian student living in your town this year, and I am writing about a problem on Mill Road, which I use every day to cycle to school.\n\nThe road is narrow and there is heavy traffic in the mornings. There is no cycle lane, so we have to ride next to lorries, and many drivers go too fast.\n\nMany students would like to go to school by bike because it is cheaper, healthier and better for the environment.\n\nI would like to suggest building a cycle lane or lowering the speed limit to 20 miles per hour. I hope you will consider my suggestion.\n\nYours faithfully,\nDóra Papp",
+    "pointsCovered": [
+      {
+        "id": "p1",
+        "quote": "The road is narrow and there is heavy traffic in the mornings. There is no cycle lane, so we have to ride next to lorries, and many drivers go too fast."
+      },
+      {
+        "id": "p2",
+        "quote": "Many students would like to go to school by bike because it is cheaper, healthier and better for the environment."
+      },
+      {
+        "id": "p3",
+        "quote": "I would like to suggest building a cycle lane or lowering the speed limit to 20 miles per hour."
+      }
+    ],
+    "notes": [
+      "Feladat teljesítése: a bevezetés megmondja, ki ír és miért, majd mindhárom szempont külön bekezdést kap: az út leírása és a veszély oka, a diákok indokai, végül konkrét javaslat.",
+      "Hangnem: a hivatalos levélhez illő „Dear Sir or Madam – Yours faithfully” pár, összevont alakok nélkül; a panasz udvarias és tárgyszerű marad.",
+      "Szövegalkotás: a kapcsolóelemek logikusan vezetnek (so, because, and), a „which I use every day …” vonatkozó mellékmondat összeköti a bevezetést a problémával, a záró mondat pedig udvariasan választ kér.",
+      "Szókincs: pontos közlekedési szavak (heavy traffic, cycle lane, lorries, speed limit) és háromtagú felsorolás (cheaper, healthier and better for the environment).",
+      "Érdemes megtanulni: „I am writing about a problem on …”, „There is no cycle lane, so …”, „I would like to suggest + -ing”, „I hope you will consider my suggestion.”"
+    ]
+  }
 }

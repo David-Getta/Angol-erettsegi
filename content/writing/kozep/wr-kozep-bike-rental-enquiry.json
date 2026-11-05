@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "id": "wr-kozep-bike-rental-enquiry",
-  "revision": 2,
+  "revision": 3,
   "level": "kozep",
   "source": "generated",
   "topic": "utazas",
@@ -75,5 +75,29 @@
   ],
   "checklistExtra": [
     "Kerültem az összevont alakokat (I'm, don't) és a baráti fordulatokat?"
-  ]
+  ],
+  "modelAnswer": {
+    "text": "Dear Sir or Madam,\n\nI saw your advertisement online, and I am writing to ask about hiring bikes. My family and I will be in Keswick from 12 to 19 July, and we would like to hire bikes for the whole week.\n\nWe need four bikes: two e-bikes for my parents and two mountain bikes for my brother and me.\n\nCould you tell me how much this would cost? I would also like to know whether helmets are included in the price.\n\nI look forward to hearing from you.\n\nYours faithfully,\nBence Nagy",
+    "pointsCovered": [
+      {
+        "id": "p1",
+        "quote": "My family and I will be in Keswick from 12 to 19 July, and we would like to hire bikes for the whole week."
+      },
+      {
+        "id": "p2",
+        "quote": "We need four bikes: two e-bikes for my parents and two mountain bikes for my brother and me."
+      },
+      {
+        "id": "p3",
+        "quote": "Could you tell me how much this would cost? I would also like to know whether helmets are included in the price."
+      }
+    ],
+    "notes": [
+      "Feladat teljesítése: pontos dátum és időtartam, a létszám és a kerékpártípusok, majd két külön kérdés (ár, sisak) – minden szempont érdemben szerepel.",
+      "Hangnem: a „Dear Sir or Madam” megszólításhoz a „Yours faithfully” elköszönés tartozik; nincs összevont alak (I am, I would), ez a hivatalos e-mail elvárása.",
+      "Felépítés: bevezetés a levél céljával, egy bekezdés a kerékpárokról, egy a kérdésekről, végül a szokásos záró mondat.",
+      "Nyelvhelyesség: a közvetett kérdések szórendje helyes („how much this would cost”, „whether helmets are included”) – ez gyakori hibaforrás, itt hibátlan.",
+      "Érdemes megtanulni: „I am writing to ask about …”, „We need four bikes: …”, „I would also like to know whether …”, „I look forward to hearing from you.”"
+    ]
+  }
 }
