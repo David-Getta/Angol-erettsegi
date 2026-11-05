@@ -1,0 +1,87 @@
+{
+  "schemaVersion": 1,
+  "id": "fol-wr-emelt-delelesi-magassag-helyi-ido",
+  "subject": "foldrajz",
+  "revision": 1,
+  "level": "emelt",
+  "source": "generated",
+  "topic": "kozmikus-ter",
+  "title": "Delelési magasság és helyi idő: Budapest és Kairó",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "writing",
+  "type": "szamitasos-elemzo",
+  "taskNumber": 3,
+  "situation": "Budapest földrajzi koordinátái kb. é. sz. 47,5° és k. h. 19,0°, Kairóé kb. é. sz. 30,0° és k. h. 31,2°. A Föld forgástengelyének a keringési sík merőlegesével bezárt szöge 23,5°. Budapest téli zónaideje (UTC+1) a k. h. 15°-os hosszúsági kör helyi ideje. (A Nap látszólagos járásának évi egyenetlenségeitől tekintsen el!)\n\nVálaszoljon a kérdésekre! A számítások menetét is írja le!\n\na) Számítsa ki a Nap delelési magasságát Budapesten és Kairóban június 21-én és december 22-én! (3 pont)\nb) Hány perccel jár előbbre a helyi idő Kairóban, mint Budapesten? (2 pont)\nc) Hány órakor delel a Nap Budapesten téli zónaidő szerint? (2 pont)\nd) Magyarázza meg, hogyan befolyásolja a delelési magasság a felszín felmelegedését, és mi ennek a következménye a két város éghajlatára! (3 pont)",
+  "points": [
+    {
+      "id": "p1",
+      "text": "a) A delelési magasság a két városban a két napfordulón (3 pont)"
+    },
+    {
+      "id": "p2",
+      "text": "b) A két város helyi ideje közötti különbség (2 pont)"
+    },
+    {
+      "id": "p3",
+      "text": "c) A budapesti delelés időpontja zónaidő szerint (2 pont)"
+    },
+    {
+      "id": "p4",
+      "text": "d) A delelési magasság és a felmelegedés összefüggése, éghajlati következmény (3 pont)"
+    }
+  ],
+  "suggestedMinutes": 30,
+  "usefulPhrases": [
+    {
+      "en": "delelési magasság = 90° − földrajzi szélesség ± a Nap merőleges delelésének szélessége",
+      "hu": "nyári félgömbön +, téli félgömbön −"
+    },
+    {
+      "en": "Ráktérítő é. sz. 23,5°, Baktérítő d. sz. 23,5°",
+      "hu": "június 21-én, illetve december 22-én itt delel merőlegesen a Nap"
+    },
+    {
+      "en": "1° hosszúságkülönbség = 4 perc helyiidő-különbség",
+      "hu": "keletebbre előbb delel a Nap"
+    },
+    {
+      "en": "zónaidő",
+      "hu": "egy időzóna közös ideje, a zóna középső hosszúsági körének helyi ideje"
+    },
+    {
+      "en": "beesési szög",
+      "hu": "minél meredekebb, annál kisebb felületen oszlik el ugyanannyi sugárzás"
+    },
+    {
+      "en": "a sugarak légkörben megtett útja",
+      "hu": "alacsony napállásnál hosszabb, több sugárzás nyelődik el és szóródik"
+    }
+  ],
+  "modelAnswer": {
+    "text": "a) A delelési magasság = 90° − földrajzi szélesség ± 23,5° (június 21-én az északi félgömbön hozzáadjuk, december 22-én levonjuk). Budapest: június 21-én 90° − 47,5° + 23,5° = 66°, december 22-én 90° − 47,5° − 23,5° = 19°. Kairó: június 21-én 90° − 30,0° + 23,5° = 83,5°, december 22-én 90° − 30,0° − 23,5° = 36,5°. Kairóban tehát mindkét napon 17,5°-kal magasabban delel a Nap, ami pontosan a két szélesség különbsége.\n\nb) A hosszúságkülönbség 31,2° − 19,0° = 12,2°. Mivel a Föld 4 perc alatt fordul 1°-ot, a helyiidő-különbség 12,2 × 4 = 48,8 perc, azaz kb. 49 perc. Kairó keletebbre van, ezért ott jár előbbre az idő, ott delel előbb a Nap.\n\nc) Budapest 19,0° − 15,0° = 4,0°-kal keletebbre van a zónaidőt meghatározó k. h. 15°-os hosszúsági körnél, ezért a Nap Budapesten 4,0 × 4 = 16 perccel korábban delel, mint a 15°-os körön. Ott zónaidő szerint 12:00-kor delel, Budapesten tehát 11:44-kor.\n\nd) Minél magasabban delel a Nap, annál meredekebb szögben érik a sugarak a felszínt, így ugyanaz a sugárnyaláb kisebb felületre jut, és egységnyi felületre több energia esik. Magas napállásnál a sugarak rövidebb utat tesznek meg a légkörben, ezért kevesebb sugárzás nyelődik el és szóródik. Ezért a Kairóban egész évben magasabb delelési magasság erősebb felmelegedést okoz: Kairó a térítői övben forró, sivatagi éghajlatú, enyhe telű város, Budapesten viszont a téli alacsony (19°-os) napállás és a rövid nappalok miatt hideg a tél, így az évszakos különbség is nagyobb.",
+    "pointsCovered": [
+      {
+        "id": "p1",
+        "quote": "A delelési magasság = 90° − földrajzi szélesség ± 23,5° (június 21-én az északi félgömbön hozzáadjuk, december 22-én levonjuk)."
+      },
+      {
+        "id": "p2",
+        "quote": "A hosszúságkülönbség 31,2° − 19,0° = 12,2°."
+      },
+      {
+        "id": "p3",
+        "quote": "Budapest 19,0° − 15,0° = 4,0°-kal keletebbre van a zónaidőt meghatározó k."
+      },
+      {
+        "id": "p4",
+        "quote": "Minél magasabban delel a Nap, annál meredekebb szögben érik a sugarak a felszínt, így ugyanaz a sugárnyaláb kisebb felületre jut, és egységnyi felületre több energia esik."
+      }
+    ],
+    "notes": [
+      "Mind a négy delelési magasságot a helyes képlettel és előjellel számítja ki, és észreveszi az ellenőrzésre alkalmas összefüggést (a különbség = a szélességkülönbség).",
+      "A helyiidő- és a zónaidő-számítás lépései világosak (12,2° × 4 perc; 4,0° × 4 perc = 16 perc → 11:44), az irányokat (keletre előbb delel) helyesen indokolja.",
+      "A d) rész három tényezővel (beesési szög, besugárzott felület, légköri út) magyarázza a felmelegedést, és összekapcsolja az éghajlattal – ez az összefüggések szempont maximumát adja."
+    ]
+  }
+}

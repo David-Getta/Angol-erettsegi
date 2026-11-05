@@ -1,0 +1,115 @@
+{
+  "topic": "utazas",
+  "title": "Ankunft in der Jugendherberge",
+  "type": "true-false",
+  "instructions": "Sie hören ein Gespräch an der Rezeption einer Jugendherberge in Salzburg. Entscheiden Sie, ob die Aussagen (1–8) richtig (T) oder falsch (F) sind. Sie hören den Text zweimal. Am Anfang finden Sie ein Beispiel (0).",
+  "instructionsHu": "Egy beszélgetést hallasz egy salzburgi ifjúsági szálló recepcióján. Döntsd el, igazak (T) vagy hamisak (F) az állítások. A felvételt kétszer hallod.",
+  "listening": {
+    "format": "dialogue",
+    "speakers": [
+      { "id": "R", "name": "Rezeptionistin", "gender": "female", "accent": "de-AT", "age": "adult" },
+      { "id": "D", "name": "Dániel", "gender": "male", "accent": "de-DE", "age": "young" }
+    ],
+    "script": [
+      { "speaker": "R", "text": "Grüß Gott und herzlich willkommen in der Jugendherberge Salzburg! Wie kann ich Ihnen helfen?" },
+      { "speaker": "D", "text": "Guten Abend! Ich habe ein Bett für drei Nächte reserviert. Mein Name ist Dániel Kovács." },
+      { "speaker": "R", "text": "Moment, ich schaue nach … Kovács, ja, hier ist es. Ein Bett im Sechserzimmer, von heute bis Freitag. Darf ich bitte Ihren Ausweis sehen?" },
+      { "speaker": "D", "text": "Ja, natürlich, hier bitte. Ist das Frühstück im Preis inbegriffen?" },
+      { "speaker": "R", "text": "Ja, das Frühstück ist dabei. Frühstück gibt es jeden Tag von sieben bis halb zehn im Speisesaal im Erdgeschoss. Abendessen können Sie auch bei uns bekommen, das kostet aber extra, nämlich neun Euro fünfzig." },
+      { "speaker": "D", "text": "Und brauche ich Bettwäsche? Ich habe leider keinen Schlafsack mitgebracht." },
+      { "speaker": "R", "text": "Kein Problem, die Bettwäsche bekommen Sie hier von mir, die ist schon im Preis. Handtücher kann man für zwei Euro leihen." },
+      { "speaker": "D", "text": "Gut, dann nehme ich ein Handtuch. Gibt es hier auch WLAN?" },
+      { "speaker": "R", "text": "Ja, im ganzen Haus. Das Passwort steht auf Ihrer Zimmerkarte. Ihr Zimmer ist die Nummer 214 im zweiten Stock. Der Aufzug ist gleich da links." },
+      { "speaker": "D", "text": "Danke. Ich möchte morgen die Altstadt besichtigen. Können Sie mir etwas empfehlen?" },
+      { "speaker": "R", "text": "Auf jeden Fall die Festung Hohensalzburg. Mit der Bahn ist man in einer Minute oben, aber ich würde zu Fuß gehen. Das dauert etwa zwanzig Minuten, und die Aussicht ist wunderschön. Und wenn Sie Mozart mögen: Sein Geburtshaus ist in der Getreidegasse, nur zehn Minuten von hier." },
+      { "speaker": "D", "text": "Super. Und wie komme ich am Freitag zum Bahnhof? Mein Zug fährt schon um sieben Uhr." },
+      { "speaker": "R", "text": "Der Bus Nummer zwei fährt direkt vor der Tür ab, normalerweise alle zehn Minuten. Aber so früh am Morgen fährt er nur jede halbe Stunde. Und denken Sie daran: Sie müssen das Zimmer bis zehn Uhr verlassen. Wenn Sie früher gehen, legen Sie den Schlüssel einfach in die Box neben der Eingangstür." },
+      { "speaker": "D", "text": "Alles klar. Vielen Dank!" },
+      { "speaker": "R", "text": "Gern geschehen. Einen schönen Aufenthalt in Salzburg!" }
+    ]
+  },
+  "example": {
+    "id": "0",
+    "kind": "tf",
+    "prompt": "Dániel hat ein Bett für drei Nächte reserviert.",
+    "answer": "T",
+    "category": "detail",
+    "explanation": "Igaz: Dániel rögtön az elején mondja, hogy három éjszakára foglalt ágyat.",
+    "evidence": "Ich habe ein Bett für drei Nächte reserviert."
+  },
+  "items": [
+    {
+      "id": "1",
+      "kind": "tf",
+      "prompt": "Dániel schläft in einem Einzelzimmer.",
+      "answer": "F",
+      "category": "detail",
+      "explanation": "Hamis: egy hatágyas szobában kap ágyat („Sechserzimmer”), nem egyágyasban.",
+      "evidence": "Ein Bett im Sechserzimmer"
+    },
+    {
+      "id": "2",
+      "kind": "tf",
+      "prompt": "Für das Frühstück muss Dániel extra bezahlen.",
+      "answer": "F",
+      "category": "detail",
+      "explanation": "Hamis: a reggeli benne van az árban („das Frühstück ist dabei”); külön csak a vacsoráért kell fizetni.",
+      "evidence": "Ja, das Frühstück ist dabei."
+    },
+    {
+      "id": "3",
+      "kind": "tf",
+      "prompt": "Das Abendessen kostet weniger als zehn Euro.",
+      "answer": "T",
+      "category": "detail",
+      "explanation": "Igaz: a vacsora 9,50 euró („neun Euro fünfzig”), ez kevesebb tíz eurónál.",
+      "evidence": "das kostet aber extra, nämlich neun Euro fünfzig"
+    },
+    {
+      "id": "4",
+      "kind": "tf",
+      "prompt": "Dániel muss für die Bettwäsche bezahlen.",
+      "answer": "F",
+      "category": "true-false-trap",
+      "explanation": "Hamis: az ágynemű benne van az árban („die ist schon im Preis”). Két eurót a törölközőért kell fizetni – ez a csapda.",
+      "evidence": "die ist schon im Preis"
+    },
+    {
+      "id": "5",
+      "kind": "tf",
+      "prompt": "Das WLAN-Passwort steht auf der Zimmerkarte.",
+      "answer": "T",
+      "category": "detail",
+      "explanation": "Igaz: a recepciós szerint a jelszó a szobakártyán található.",
+      "evidence": "Das Passwort steht auf Ihrer Zimmerkarte."
+    },
+    {
+      "id": "6",
+      "kind": "tf",
+      "prompt": "Die Rezeptionistin empfiehlt, mit der Bahn zur Festung zu fahren.",
+      "answer": "F",
+      "category": "true-false-trap",
+      "explanation": "Hamis: a vasúttal egy perc alatt fent lehet lenni, de ő gyalog menne („ich würde zu Fuß gehen”), mert gyönyörű a kilátás.",
+      "evidence": "aber ich würde zu Fuß gehen"
+    },
+    {
+      "id": "7",
+      "kind": "tf",
+      "prompt": "Am frühen Morgen fährt der Bus seltener als sonst.",
+      "answer": "T",
+      "category": "inference",
+      "explanation": "Igaz: általában tízpercenként jár, kora reggel viszont csak félóránként („nur jede halbe Stunde”), tehát ritkábban.",
+      "evidence": "Aber so früh am Morgen fährt er nur jede halbe Stunde."
+    },
+    {
+      "id": "8",
+      "kind": "tf",
+      "prompt": "Wenn Dániel früh abreist, muss er den Schlüssel an der Rezeption abgeben.",
+      "answer": "F",
+      "category": "detail",
+      "explanation": "Hamis: ha korábban indul, a kulcsot egyszerűen a bejárati ajtó melletti dobozba kell tennie, nem a recepción leadni.",
+      "evidence": "legen Sie den Schlüssel einfach in die Box neben der Eingangstür"
+    }
+  ],
+  "suggestedMinutes": 8
+}

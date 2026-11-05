@@ -1,0 +1,109 @@
+{
+  "schemaVersion": 1,
+  "id": "bio-wr-emelt-vese-homeosztazis-essze",
+  "subject": "biologia",
+  "revision": 1,
+  "level": "emelt",
+  "source": "generated",
+  "topic": "ember-szervezet",
+  "title": "A vese szerepe a homeosztázisban – esszé",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "writing",
+  "type": "essze",
+  "taskNumber": 1,
+  "situation": "Írjon esszét „A vese szerepe a belső környezet állandóságának fenntartásában” címmel! Az esszé legyen összefüggő, logikusan felépített szöveg, amely az alábbi szempontok mindegyikére kitér. Rajzot nem kell készítenie, de a folyamatokat a megfelelő szakkifejezésekkel írja le.",
+  "points": [
+    {
+      "id": "p1",
+      "text": "A nefron felépítése és vérellátása (a részek nevével és sorrendjével)."
+    },
+    {
+      "id": "p2",
+      "text": "A szűrés: helye, hajtóereje, az elsődleges szűrlet mennyisége és összetétele (mi jut át és mi nem, miért)."
+    },
+    {
+      "id": "p3",
+      "text": "A visszaszívás és a kiválasztás folyamatai: mely anyagok, a csatorna mely szakaszán, aktív vagy passzív módon."
+    },
+    {
+      "id": "p4",
+      "text": "A vizelet mennyiségének és töménységének hormonális szabályozása (ADH, aldoszteron) – a visszacsatolás típusával."
+    },
+    {
+      "id": "p5",
+      "text": "A vesekárosodás következményei, a művesekezelés elve, és mit tehetünk a vese egészségéért."
+    }
+  ],
+  "suggestedMinutes": 60,
+  "usefulPhrases": [
+    {
+      "en": "nefron",
+      "hu": "a vese működési egysége: vesetestecske + kanyarulatos csatornák + Henle-kacs"
+    },
+    {
+      "en": "glomerulus – Bowman-tok",
+      "hu": "a vesetestecske két része; itt történik a szűrés"
+    },
+    {
+      "en": "elsődleges szűrlet",
+      "hu": "naponta kb. 180 l, a vérplazma fehérjementes szűrlete"
+    },
+    {
+      "en": "aktív transzport / ozmózis",
+      "hu": "energiaigényes szállítás a koncentrációkülönbség ellenében / a víz passzív mozgása"
+    },
+    {
+      "en": "ADH (antidiuretikus hormon)",
+      "hu": "a gyűjtőcsatorna vízvisszaszívását fokozza; kevesebb, töményebb vizelet"
+    },
+    {
+      "en": "aldoszteron",
+      "hu": "a nátriumion-visszaszívást és a káliumion-kiválasztást fokozza"
+    },
+    {
+      "en": "negatív visszacsatolás",
+      "hu": "a válasz megszünteti a kiváltó eltérést (pl. hígabb vér → kevesebb ADH)"
+    },
+    {
+      "en": "dialízis (művese)",
+      "hu": "féligáteresztő hártyán át diffúzióval távolítja el a bomlástermékeket"
+    }
+  ],
+  "checklistExtra": [
+    "Minden szempontra külön bekezdést szántam?",
+    "A szerkezetet összekapcsoltam a működéssel (miért úgy épül fel)?",
+    "Megneveztem a visszacsatolás típusát és leírtam a menetét?"
+  ],
+  "modelAnswer": {
+    "text": "A sejtek csak akkor működnek, ha a testfolyadékok víz- és ionösszetétele, ozmotikus koncentrációja és kémhatása szűk határok között állandó. Ennek a homeosztázisnak egyik legfontosabb szerve a vese, amely naponta kb. 1700 liter vért dolgoz fel, és a felesleges vizet, ionokat és bomlástermékeket vizelet formájában eltávolítja.\n\nA vese működési egysége a nefron; mindkét vesében kb. egymillió van belőle. A nefron a vesetestecskével kezdődik, amely a hajszálérgomolyagból (glomerulus) és az azt körülvevő kettős falú Bowman-tokból áll. Ehhez csatlakozik az elsődleges (proximális) kanyarulatos csatorna, majd a velőállományba lenyúló Henle-kacs, a másodlagos (disztális) kanyarulatos csatorna, végül több nefron közös gyűjtőcsatornába ömlik. A vér a veseartériából az odavezető érecskén át jut a glomerulusba, onnan a szűkebb elvezető érecskén lép ki, és a csatornák körül újabb hajszálérhálózatot alkot, mielőtt a vesevénába gyűlik. Ez a kettős hajszálérhálózat teszi lehetővé előbb a szűrést, majd a visszaszívást.\n\nA szűrés a vesetestecskében történik. Mivel az elvezető érecske szűkebb az odavezetőnél, a glomerulusban nagy a vérnyomás, és ez préseli át a vérplazma vizét és kis molekulájú oldott anyagait a hajszálérfalon és a tok belső lemezén a tok üregébe. Naponta kb. 180 liter elsődleges szűrlet keletkezik, amelynek összetétele a vérplazmáéhoz hasonló: van benne glükóz, aminosav, ionok, karbamid. A vérsejtek és a nagy molekulájú plazmafehérjék azonban nem jutnak át a szűrőn, ezért a szűrlet fehérjementes.\n\nA szűrlet 99%-a visszaszívódik. Az elsődleges kanyarulatos csatornában a glükóz és az aminosavak teljes egészében, nátriumionokhoz kapcsolt aktív transzporttal szívódnak vissza, és itt kerül vissza a víz és a nátrium kb. kétharmada is; a víz passzívan, ozmózissal követi az ionokat. A Henle-kacs felszálló szára aktívan nátrium-kloridot pumpál ki, de a vizet nem engedi át, így a velőállományban nagy ozmotikus koncentráció alakul ki, amely a gyűjtőcsatornából vizet vonz el. A karbamid jórészt a csatornában marad, ezért a vizeletben töményedik. A kiválasztás ellentétes irányú folyamat: a csatorna sejtjei aktívan hidrogénionokat, káliumionokat és egyes idegen anyagokat (pl. gyógyszereket) juttatnak a vérből a csatornába, így a vese a vér pH-ját is szabályozza.\n\nA vizelet mennyiségét és töménységét hormonok finomhangolják. Ha a vér ozmotikus koncentrációja nő (például izzadás vagy kevés ivás után), a hipotalamusz érzékelői ezt észlelik, és több ADH (antidiuretikus hormon) kerül az agyalapi mirigy hátsó lebenyéből a vérbe. Az ADH a gyűjtőcsatornák falát átjárhatóvá teszi a víz számára, ezért több víz szívódik vissza, és kevés, tömény vizelet ürül. A hígabb vér hatására az ADH-elválasztás csökken – ez negatív visszacsatolás. A mellékvesekéreg aldoszteronja a nátriumion visszaszívását és a káliumion kiválasztását fokozza a csatorna utolsó szakaszain; mivel a nátriumot víz követi, nő a vértérfogat és a vérnyomás. Aldoszteron akkor szabadul fel nagyobb mennyiségben, ha a vese csökkent vérnyomást vagy nátriumhiányt érzékel (renin–angiotenzin rendszer).\n\nHa a vese működése tartósan romlik, a vérben felhalmozódik a karbamid és a kreatinin, megemelkedik a káliumszint, a szervezet vizet tart vissza, savasodik, és vérszegénység is kialakulhat, mert a vese termeli a vörösvérsejt-képzést serkentő eritropoetint. Ilyenkor művesekezelésre (dialízisre) van szükség: a beteg vére féligáteresztő hártya mentén áramlik, amelynek túloldalán a normál vérplazmáéhoz hasonló só- és glükózkoncentrációjú dializáló folyadék van, így a kis molekulájú bomlástermékek a koncentrációkülönbség hatására diffúzióval kilépnek a vérből, a hasznos anyagok viszont nem vesznek el. Végleges megoldás a veseátültetés. A vese egészségéért naponta elegendő folyadékot kell inni, mérsékelni kell a sóbevitelt, kerülni a fájdalomcsillapítók rendszeres, felesleges szedését, kezeltetni a húgyúti fertőzéseket, és karban tartani a vérnyomást és a vércukorszintet, mert a magas vérnyomás és a cukorbetegség a krónikus veseelégtelenség leggyakoribb okai.",
+    "pointsCovered": [
+      {
+        "id": "p1",
+        "quote": "A nefron a vesetestecskével kezdődik, amely a hajszálérgomolyagból (glomerulus) és az azt körülvevő kettős falú Bowman-tokból áll."
+      },
+      {
+        "id": "p2",
+        "quote": "Naponta kb. 180 liter elsődleges szűrlet keletkezik"
+      },
+      {
+        "id": "p3",
+        "quote": "Az elsődleges kanyarulatos csatornában a glükóz és az aminosavak teljes egészében, nátriumionokhoz kapcsolt aktív transzporttal szívódnak vissza"
+      },
+      {
+        "id": "p4",
+        "quote": "A hígabb vér hatására az ADH-elválasztás csökken – ez negatív visszacsatolás."
+      },
+      {
+        "id": "p5",
+        "quote": "Ilyenkor művesekezelésre (dialízisre) van szükség"
+      }
+    ],
+    "notes": [
+      "Tartalmi elemek: mind az öt szempont kifejtve, helyes adatokkal (kb. egymillió nefron vesénként, 180 liter szűrlet, 99%-os visszaszívás) és a részek helyes sorrendjével.",
+      "Összefüggések: a szerkezetet a működéssel kapcsolja össze (szűkebb elvezető érecske → nagy nyomás → szűrés; a Henle-kacs ionpumpálása → vízvisszaszívás a gyűjtőcsatornából), és a hormonális szabályozásnál megnevezi a negatív visszacsatolást.",
+      "Felépítés: bevezetés (homeosztázis), szempontonként egy-egy bekezdés, és a végén az egészségtani alkalmazás – a gondolatmenet logikus, a szaknyelv pontos.",
+      "Terjedelem: kb. 550 szó, ami a 60 perces emelt szintű esszébe belefér; a szempontokon túli részletek (eritropoetin, renin–angiotenzin rendszer) csak röviden, a lényeget alátámasztva szerepelnek."
+    ]
+  }
+}

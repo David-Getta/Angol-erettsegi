@@ -1,0 +1,177 @@
+{
+  "schemaVersion": 1,
+  "id": "nem-gr-adjective-declension",
+  "subject": "nemet",
+  "level": "kozep",
+  "source": "generated",
+  "topic": "nyelvtan",
+  "title": "Melléknévragozás",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "grammar",
+  "type": "lesson",
+  "category": "adjective-declension",
+  "summaryHu": "A német melléknév a főnév előtt végződést kap, amely attól függ, milyen névelő áll előtte (határozott, határozatlan vagy semmilyen), és milyen a főnév neme, száma, esete. A magyar jelző nem ragozódik („a piros autóval”), ezért a magyar tanulók vagy elhagyják a végződést (einen neu Laptop), vagy mindenhová -e-t írnak. A nyelvhelyesség rész végződéses feladataiban és az írás nyelvhelyességi szempontjánál ez az egyik leggyakoribb hiba; a fokozás (älter als, am besten) is rendszeresen előkerül.",
+  "rules": [
+    {
+      "title": "Állítmányként és határozóként: nincs végződés",
+      "explanation": "Ha a melléknév a sein, werden, bleiben, finden után áll (állítmány), vagy az igét jellemzi (határozó), nem kap végződést: Der Film ist spannend. Ich finde das Buch interessant. Sie singt schön. Végződést csak akkor kap, ha közvetlenül a főnév előtt áll: ein spannender Film.",
+      "emeltOnly": false,
+      "examples": [
+        { "en": "Die Suppe ist heiß.", "hu": "A leves forró.", "note": "Állítmány: heiß, végződés nélkül." },
+        { "en": "Das ist eine heiße Suppe.", "hu": "Ez egy forró leves.", "note": "Jelző a főnév előtt: heiße." }
+      ]
+    },
+    {
+      "title": "Határozott névelő után (der, dieser, jeder, welcher, alle)",
+      "explanation": "Ha a névelő már mutatja a nemet és az esetet, a melléknév csak -e vagy -en végződést kap. -e: egyes szám Nominativban mindhárom nemben (der neue Lehrer, die neue Lehrerin, das neue Buch) és nőnemű/semleges Akkusativban (die neue Lehrerin, das neue Buch). Minden más esetben -en: hímnemű Akkusativ (den neuen Lehrer), minden Dativ és Genitiv (dem neuen, der neuen, des neuen) és az egész többes szám (die neuen Bücher).",
+      "emeltOnly": false,
+      "examples": [
+        { "en": "Der neue Lehrer ist sehr nett.", "hu": "Az új tanár nagyon kedves." },
+        { "en": "Kennst du den neuen Lehrer?", "hu": "Ismered az új tanárt?", "note": "Hímnemű Akkusativ: -en." },
+        { "en": "Ich spreche mit der neuen Lehrerin.", "hu": "Az új tanárnővel beszélek.", "note": "Dativ: -en." }
+      ]
+    },
+    {
+      "title": "Határozatlan névelő, kein és birtokos névelő után",
+      "explanation": "Ahol az ein-szónak nincs végződése (hímnemű Nominativ: ein; semleges Nominativ és Akkusativ: ein), ott a melléknév mutatja a nemet: -er (ein guter Freund), -es (ein kleines Haus). Nőnemben Nominativban és Akkusativban -e (eine nette Frau). Minden más esetben -en: einen guten Freund, mit einem guten Freund, mit einer netten Frau, meine neuen Schuhe, keine neuen Ideen.",
+      "emeltOnly": false,
+      "examples": [
+        { "en": "Peter ist ein guter Freund.", "hu": "Péter jó barát.", "note": "ein + hímnemű Nominativ → -er." },
+        { "en": "Wir wohnen in einem kleinen Haus.", "hu": "Egy kis házban lakunk.", "note": "Dativ → -en." },
+        { "en": "Ich wünsche mir ein neues Fahrrad.", "hu": "Új biciklit szeretnék.", "note": "ein + semleges Akkusativ → -es." }
+      ]
+    },
+    {
+      "title": "Névelő nélkül",
+      "explanation": "Ha nincs névelő (anyagnév, többes szám, számnév vagy viele/einige/mehrere után), a melléknév veszi át a határozott névelő végződését: guter Kaffee (der), frische Milch (die), kaltes Wasser (das), mit kaltem Wasser (dem), Akkusativban guten Kaffee (den). Többes szám: nette Leute, mit netten Leuten, viele junge Leute, zwei kleine Kinder. Kivétel: hímnemű és semleges Genitivben -en (trotz schlechten Wetters).",
+      "emeltOnly": false,
+      "examples": [
+        { "en": "Bei schönem Wetter fahren wir an den Balaton.", "hu": "Szép időben a Balatonra megyünk.", "note": "Semleges Dativ névelő nélkül → -em." },
+        { "en": "Ich trinke gern heißen Tee.", "hu": "Szívesen iszom forró teát.", "note": "Hímnemű Akkusativ → -en (den)." },
+        { "en": "In der Stadt gibt es viele alte Gebäude.", "hu": "A városban sok régi épület van." }
+      ]
+    },
+    {
+      "title": "Fokozás és összehasonlítás",
+      "explanation": "Középfok: -er (schnell → schneller), felsőfok: am -sten (am schnellsten) vagy jelzőként der/die/das -ste. Sok egy szótagú melléknév Umlautot kap: alt – älter – am ältesten, jung – jünger, groß – größer – am größten, kurz – kürzer, lang – länger, warm – wärmer, kalt – kälter. Rendhagyók: gut – besser – am besten, viel – mehr – am meisten, gern – lieber – am liebsten, hoch – höher – am höchsten, nah – näher – am nächsten. Összehasonlítás: középfok + als (größer als ich), egyenlőség: so … wie (so groß wie ich). Jelzőként a fokozott alak is végződést kap: mein älterer Bruder, der beste Film.",
+      "emeltOnly": false,
+      "examples": [
+        { "en": "Mein Bruder ist zwei Jahre älter als ich.", "hu": "A bátyám két évvel idősebb nálam." },
+        { "en": "Im Winter ist es hier nicht so kalt wie in Finnland.", "hu": "Télen itt nincs olyan hideg, mint Finnországban." },
+        { "en": "Das ist der beste Film, den ich je gesehen habe.", "hu": "Ez a legjobb film, amit valaha láttam." }
+      ]
+    },
+    {
+      "title": "Melléknévből főnév, melléknévi igenév jelzőként",
+      "explanation": "A főnévvé vált melléknév nagybetűs, de melléknévként ragozódik: der Deutsche – ein Deutscher, die Jugendlichen – viele Jugendliche, etwas Neues, nichts Besonderes, alles Gute. A melléknévi igenevek (Partizip I: lachend, Partizip II: gestohlen) jelzőként ugyanúgy végződést kapnak: die lachenden Kinder, das gestohlene Auto.",
+      "emeltOnly": true,
+      "examples": [
+        { "en": "Viele Jugendliche verbringen zu viel Zeit online.", "hu": "Sok fiatal túl sok időt tölt online." },
+        { "en": "Gibt es etwas Neues?", "hu": "Van valami újság?" },
+        { "en": "Die Polizei hat das gestohlene Auto gefunden.", "hu": "A rendőrség megtalálta az ellopott autót." }
+      ]
+    }
+  ],
+  "commonMistakes": [
+    { "wrong": "Ich habe einen neu Laptop gekauft.", "right": "Ich habe einen neuen Laptop gekauft.", "why": "A főnév előtt álló melléknév mindig végződést kap. Hímnemű Akkusativban az einen után -en: einen neuen Laptop." },
+    { "wrong": "Das ist ein gute Buch.", "right": "Das ist ein gutes Buch.", "why": "Az ein semleges Nominativban végződés nélküli, ezért a melléknévnek kell a semleges nemet mutatnia: -es (ein gutes Buch)." },
+    { "wrong": "Die Suppe ist heiße.", "right": "Die Suppe ist heiß.", "why": "Állítmányként (a sein után) a melléknév nem kap végződést. Végződés csak a főnév előtt kell: eine heiße Suppe." },
+    { "wrong": "Wir haben das Gemüse mit kalt Wasser gewaschen.", "right": "Wir haben das Gemüse mit kaltem Wasser gewaschen.", "why": "Névelő nélkül a melléknév veszi át a névelő végződését: mit dem Wasser → mit kaltem Wasser." },
+    { "wrong": "Mein Bruder ist mehr groß als ich.", "right": "Mein Bruder ist größer als ich.", "why": "A németben a középfokot -er képzővel (és gyakran Umlauttal) képezzük, nem mehr-rel: größer, älter, schöner." },
+    { "wrong": "Meine Schwester ist so alt als ich.", "right": "Meine Schwester ist so alt wie ich.", "why": "Egyenlőségnél so … wie áll, különbségnél középfok + als (älter als ich). A magyar „mint” mindkettőt fedi, ezért keverik." }
+  ],
+  "examTips": [
+    "Végződéses feladatnál három kérdést tegyél fel sorban: 1) Milyen névelő áll előtte (der-féle, ein-féle, semmi)? 2) Mi a főnév neme és száma? 3) Milyen esetben áll (ige, elöljáró)? Ebből a táblázat alapján egyértelmű a végződés.",
+    "Gyors szabály: ha a névelő már „megmutatja” a nemet és az esetet (der, dem, den, des, einem, einen), a melléknév -e vagy -en; ha a névelő nem mutatja (ein, kein, mein, vagy nincs névelő), a melléknév kapja a jellegzetes végződést (-er, -es, -em).",
+    "Írásban a fokozott alakokat (besser, am liebsten, mehr, die meisten) gyakran használod véleménykifejtéskor – ezeket tanuld meg biztosan, mert rendhagyók.",
+    "Átolvasáskor keress rá minden melléknév + főnév párra – az elfelejtett végződés könnyen javítható, ha külön figyelsz rá."
+  ],
+  "practice": [
+    {
+      "id": "1",
+      "kind": "choice",
+      "prompt": "Zum Geburtstag wünsche ich mir ein ___ Fahrrad.",
+      "options": [
+        { "key": "A", "text": "neue" },
+        { "key": "B", "text": "neuer" },
+        { "key": "C", "text": "neues" },
+        { "key": "D", "text": "neuen" }
+      ],
+      "answer": "C",
+      "category": "adjective-declension",
+      "explanation": "Helyes: neues. Az das Fahrrad semleges, Akkusativban áll; az ein itt végződés nélküli, ezért a melléknév mutatja a semleges nemet: ein neues Fahrrad.",
+      "wrongOptions": {
+        "A": "Az -e végződés határozott névelő után (das neue Fahrrad) vagy nőnemben (eine neue …) állna.",
+        "B": "Az -er hímnemű Nominativ végződés (ein neuer Laptop); a Fahrrad semleges.",
+        "D": "Az -en hímnemű Akkusativban (einen neuen) vagy Dativban állna; semleges Akkusativban ein … -es kell."
+      }
+    },
+    {
+      "id": "2",
+      "kind": "text",
+      "prompt": "Wir haben gestern einen sehr ___ (interessant) Film gesehen.",
+      "cue": "interessant",
+      "answer": ["interessanten"],
+      "category": "adjective-declension",
+      "explanation": "Helyes: interessanten. A der Film hímnemű, a sehen tárgyaként Akkusativban áll; az einen után a melléknév -en végződést kap."
+    },
+    {
+      "id": "3",
+      "kind": "choice",
+      "prompt": "Mit ___ Kollegen macht die Arbeit viel mehr Spaß.",
+      "options": [
+        { "key": "A", "text": "nette" },
+        { "key": "B", "text": "netten" },
+        { "key": "C", "text": "nettes" },
+        { "key": "D", "text": "netter" }
+      ],
+      "answer": "B",
+      "category": "adjective-declension",
+      "explanation": "Helyes: netten. A mit Dativot vonz, a Kollegen itt többes szám (névelő nélkül). Névelő nélkül a melléknév a névelő végződését veszi át: den → netten (mit netten Kollegen).",
+      "wrongOptions": {
+        "A": "A nette többes számú Nominativ/Akkusativ névelő nélkül (nette Kollegen); a mit után Dativ kell.",
+        "C": "Az -es semleges egyes számú végződés; a Kollegen többes szám.",
+        "D": "Az -er hímnemű Nominativ vagy névelő nélküli nőnemű Dativ/Genitiv; itt többes számú Dativ kell."
+      }
+    },
+    {
+      "id": "4",
+      "kind": "text",
+      "prompt": "Mein Bruder ist zwei Jahre ___ (alt) als ich.",
+      "cue": "alt",
+      "answer": ["älter"],
+      "category": "adjective-declension",
+      "explanation": "Helyes: älter. Az als középfokot kíván; az alt egy szótagú melléknév, középfokban Umlautot kap: alt – älter – am ältesten. Állítmányként nincs végződése."
+    },
+    {
+      "id": "5",
+      "kind": "choice",
+      "prompt": "Das war der ___ Tag meines Lebens!",
+      "options": [
+        { "key": "A", "text": "schönste" },
+        { "key": "B", "text": "schönsten" },
+        { "key": "C", "text": "schöner" },
+        { "key": "D", "text": "schönes" }
+      ],
+      "answer": "A",
+      "category": "adjective-declension",
+      "explanation": "Helyes: schönste. A felsőfokú jelző is végződést kap; a der Tag hímnemű Nominativ, határozott névelő után -e: der schönste Tag.",
+      "wrongOptions": {
+        "B": "Az -en végződés Akkusativban (den schönsten Tag) vagy Dativban állna; itt Nominativ van (das war der …).",
+        "C": "A schöner középfok (vagy ein utáni hímnemű alak); a der … meines Lebens felsőfokot kíván.",
+        "D": "Az -es semleges végződés ein után; a Tag hímnemű, és határozott névelő áll előtte."
+      }
+    },
+    {
+      "id": "6",
+      "kind": "text",
+      "prompt": "Bei ___ (schön) Wetter gehen wir am Wochenende wandern.",
+      "cue": "schön",
+      "answer": ["schönem"],
+      "category": "adjective-declension",
+      "explanation": "Helyes: schönem. A bei Dativot vonz, az das Wetter semleges, és nincs névelő; ilyenkor a melléknév a névelő (dem) végződését kapja: bei schönem Wetter."
+    }
+  ],
+  "relatedCategories": ["article-declension", "case", "plural-gender"]
+}

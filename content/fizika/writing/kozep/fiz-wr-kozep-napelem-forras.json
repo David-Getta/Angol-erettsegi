@@ -1,0 +1,47 @@
+{
+  "schemaVersion": 1,
+  "id": "fiz-wr-kozep-napelem-forras",
+  "subject": "fizika",
+  "revision": 1,
+  "level": "kozep",
+  "source": "generated",
+  "topic": "energia-munka-ho",
+  "title": "Forráselemzés: egy családi ház napelemes rendszere",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "writing",
+  "type": "forraselemzes",
+  "taskNumber": 2,
+  "situation": "Olvasd el a forrást, és válaszolj a kérdésekre!\n\nForrás – Egy napelemes rendszer első éve\nEgy Pest megyei családi ház tetejére tíz napelempanelt szereltek, összesen 19 m² felülettel. A panelek déli tájolásúak, a vízszintessel kb. 35°-os szöget zárnak be. A napelem félvezető anyagában (szilícium) a beérkező fény energiája elektronokat szabadít fel kötött állapotukból, így a panel kivezetései között feszültség jön létre; ezt nevezik belső fényelektromos jelenségnek. Az egyenfeszültséget egy inverter alakítja a hálózatnak megfelelő váltakozó feszültséggé.\nAz első év havi termelése (kWh): január 150, február 230, március 380, április 500, május 580, június 600, július 620, augusztus 560, szeptember 420, október 300, november 160, december 120.\nA helyi mérések szerint a panelek síkjára egy év alatt négyzetméterenként kb. 1300 kWh napsugárzási energia érkezik. A háztartás havi átlagos villamosenergia-fogyasztása 350 kWh.\n\n1. Milyen energiaátalakulás történik a napelemben és az inverterben? (3 pont)\n2. A rendszer decemberben kb. ötször kevesebb energiát termel, mint júliusban. Adj meg legalább két fizikai okot! (4 pont)\n3. Mennyi a rendszer éves termelése? Mely hónapokban termel kevesebbet, mint a háztartás havi átlagos fogyasztása? (3 pont)\n4. Mekkora a napelemes rendszer éves átlagos hatásfoka? (4 pont)\n5. Miért déli tájolásúak és döntöttek a panelek? (3 pont)",
+  "points": [
+    { "id": "p1", "text": "1. Energiaátalakulás a napelemben és az inverterben (3 pont)" },
+    { "id": "p2", "text": "2. A téli és a nyári termelés különbségének fizikai okai (4 pont)" },
+    { "id": "p3", "text": "3. Éves termelés és a fogyasztásnál kevesebbet termelő hónapok (3 pont)" },
+    { "id": "p4", "text": "4. Az éves átlagos hatásfok kiszámítása (4 pont)" },
+    { "id": "p5", "text": "5. A déli tájolás és a dőlésszög magyarázata (3 pont)" }
+  ],
+  "suggestedMinutes": 35,
+  "usefulPhrases": [
+    { "en": "sugárzási energia → elektromos energia", "hu": "A napelem energiaátalakítása; a veszteség hővé alakul." },
+    { "en": "belső fényelektromos jelenség", "hu": "A félvezetőben a foton energiája kötött elektront szabadít fel – a napelem működési elve." },
+    { "en": "η = E_hasznos / E_beérkező", "hu": "A hatásfok a hasznos (termelt) és a beérkező energia hányadosa." },
+    { "en": "a beesési szög koszinusza", "hu": "A felületre jutó sugárzási teljesítmény a merőleges beesésnél a legnagyobb (P ~ cos α)." },
+    { "en": "napmagasság, nappalok hossza", "hu": "Az évszakos különbség két fő oka: a sugarak beesési szöge és a megvilágítás időtartama." },
+    { "en": "a forrás szerint …", "hu": "Így jelöld, ha az adatot a forrásból veszed – a forráselemzésben ez is pontot ér." }
+  ],
+  "modelAnswer": {
+    "text": "1. A napelemben a fény (a napsugárzás) energiája alakul elektromos energiává: a beérkező fotonok a szilícium kötött elektronjait szabaddá teszik, így feszültség jön létre (belső fényelektromos jelenség). A beérkező energia nagyobb része hővé alakul, a panel felmelegszik. Az inverter elektromos energiát alakít elektromos energiává: az egyenfeszültséget a hálózatnak megfelelő 230 V-os, 50 Hz-es váltakozó feszültséggé alakítja, kis hőveszteséggel.\n\n2. A különbség oka: télen a Nap delelési magassága kicsi, a sugarak laposabb szögben érkeznek, ezért egységnyi felületre kisebb sugárzási teljesítmény jut, és a sugarak hosszabb utat tesznek meg a légkörben, ahol jobban gyengülnek. Emellett télen rövidebbek a nappalok (kb. 8–9 óra a nyári 15–16 helyett), tehát kevesebb ideig süt a Nap, és télen gyakoribb a felhős, ködös idő is. A forrás szerint a júliusi és a decemberi termelés aránya 620/120 ≈ 5,2.\n\n3. Az éves termelés a havi értékek összege: 150 + 230 + 380 + 500 + 580 + 600 + 620 + 560 + 420 + 300 + 160 + 120 = 4620 kWh. A 350 kWh-s havi átlagos fogyasztásnál kevesebbet termel januárban (150), februárban (230), októberben (300), novemberben (160) és decemberben (120), vagyis öt hónapban. Éves szinten viszont a termelés (4620 kWh) több, mint a fogyasztás (12 · 350 = 4200 kWh).\n\n4. Egy év alatt a panelekre érkező napenergia E_be = 19 m² · 1300 kWh/m² = 24 700 kWh. A hatásfok η = E_termelt/E_be = 4620 kWh / 24 700 kWh ≈ 0,187, azaz kb. 19 %. Ez a mai szilícium napelemekre jellemző érték.\n\n5. Az északi féltekén a Nap délben, déli irányban áll a legmagasabban, ezért a déli tájolású panelre a nap legnagyobb részében kedvezőbb szögben érkezik a fény. A panelre jutó teljesítmény akkor a legnagyobb, ha a sugarak merőlegesen érik a felületet (a beeső teljesítmény a beesési szög koszinuszával arányos). Hazánkban (kb. 47° szélességen) a Nap delelési magassága az év során kb. 20° és 66° között változik; a kb. 35°-os dőlésszög kompromisszum a nyári magas és a téli alacsony napállás között: egész évben viszonylag kicsi marad a beesési szög (a felület merőlegesétől mérve), így egy év alatt a legtöbb energia gyűjthető össze.",
+    "pointsCovered": [
+      { "id": "p1", "quote": "A napelemben a fény (a napsugárzás) energiája alakul elektromos energiává" },
+      { "id": "p2", "quote": "télen a Nap delelési magassága kicsi, a sugarak laposabb szögben érkeznek" },
+      { "id": "p3", "quote": "150 + 230 + 380 + 500 + 580 + 600 + 620 + 560 + 420 + 300 + 160 + 120 = 4620 kWh" },
+      { "id": "p4", "quote": "η = E_termelt/E_be = 4620 kWh / 24 700 kWh ≈ 0,187, azaz kb. 19 %" },
+      { "id": "p5", "quote": "a beeső teljesítmény a beesési szög koszinuszával arányos" }
+    ],
+    "notes": [
+      "Válaszok: mind az öt kérdésre teljes válasz születik, a forrás adatait (havi termelés, 19 m², 1300 kWh/m², 350 kWh) pontosan használja – ez a válaszok 10 pontja.",
+      "Fizikai indoklás: a téli kisebb termelést nem csak „kevesebb napsütéssel”, hanem a beesési szöggel, a légköri úthosszal és a nappalok hosszával magyarázza, a tájolást pedig a koszinusztényezővel – így teljes az indoklás 4 pontja.",
+      "Szaknyelv: helyesen használja a belső fényelektromos jelenség, a hatásfok, a delelési magasság és a beesési szög fogalmát, a mennyiségeket (kWh, m², %) mértékegységgel adja meg."
+    ]
+  }
+}

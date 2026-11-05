@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 1,
+  "id": "fiz-wr-kozep-auto-fekezes",
+  "subject": "fizika",
+  "revision": 1,
+  "level": "kozep",
+  "source": "generated",
+  "topic": "mozgas-egyensuly",
+  "title": "Számításos feladat: egy autó fékezése",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "writing",
+  "type": "szamitasos",
+  "taskNumber": 1,
+  "situation": "Egy 1200 kg tömegű személyautó egyenes, vízszintes úton 72 km/h sebességgel halad. A vezető fékez, és az autó egyenletesen lassulva 40 m-es úton áll meg. (A fékezés kezdetétől számolj, a vezető reakcióidejét ne vedd figyelembe!)\n\na) Mekkora az autó lassulása? (4 pont)\nb) Mennyi ideig tart a fékezés? (3 pont)\nc) Mekkora a fékezés közben az autóra ható (állandónak tekintett) fékezőerő, és mennyi munkát végez ez az erő a fékút során? (5 pont)\nd) Mekkora lenne a fékút, ha az autó 90 km/h sebességről fékezne ugyanekkora lassulással? Hány százalékkal hosszabb ez a 40 m-nél? (5 pont)\n\nA megoldás menetét, a felhasznált összefüggéseket írd le, és minden eredményt mértékegységgel adj meg!",
+  "points": [
+    { "id": "p1", "text": "a) A lassulás kiszámítása a kezdősebességből és a fékútból (4 pont)" },
+    { "id": "p2", "text": "b) A fékezés időtartama (3 pont)" },
+    { "id": "p3", "text": "c) A fékezőerő Newton II. törvényével és a fékezőerő munkája (5 pont)" },
+    { "id": "p4", "text": "d) A fékút 90 km/h kezdősebességnél és a növekedés százalékban (5 pont)" }
+  ],
+  "suggestedMinutes": 35,
+  "usefulPhrases": [
+    { "en": "72 km/h = 72 : 3,6 m/s = 20 m/s", "hu": "km/h-ból m/s-ba 3,6-tal osztunk – minden számolás előtt váltsd át SI-be!" },
+    { "en": "v² − v₀² = 2·a·s", "hu": "Egyenletesen változó mozgás: idő nélkül köti össze a sebességeket, a gyorsulást és az utat." },
+    { "en": "s = (v₀ + v)/2 · t", "hu": "Az út az átlagsebesség és az idő szorzata – a v–t grafikon alatti terület." },
+    { "en": "F = m·a", "hu": "Newton II. törvénye: az eredő erő a tömeg és a gyorsulás szorzata." },
+    { "en": "W = F·s·cos α", "hu": "A munka: erő × elmozdulás × a közbezárt szög koszinusza (fékezőerőnél α = 180°, a munka negatív)." },
+    { "en": "E_m = ½·m·v²", "hu": "Mozgási energia – ellenőrzéshez: a fékezőerő munkája ennyi energiát alakít hővé." },
+    { "en": "s ~ v₀²", "hu": "Azonos lassulásnál a fékút a kezdősebesség négyzetével arányos." }
+  ],
+  "modelAnswer": {
+    "text": "Adatok: m = 1200 kg, v₀ = 72 km/h = 72 : 3,6 m/s = 20 m/s, v = 0, s = 40 m.\n\na) Egyenletesen lassuló mozgásnál v² − v₀² = 2·a·s. Mivel a végsebesség nulla, a lassulás nagysága a = v₀²/(2·s) = (20 m/s)² / (2 · 40 m) = 400/80 m/s² = 5 m/s².\nAz autó lassulása 5 m/s² (a gyorsulás −5 m/s², a mozgással ellentétes irányú).\n\nb) A sebesség egyenletesen csökken: v = v₀ − a·t, ebből t = v₀/a = 20 m/s / 5 m/s² = 4 s.\nEllenőrzés: s = (v₀ + v)/2 · t = (20 + 0)/2 · 4 = 40 m, ez egyezik a megadott fékúttal.\nA fékezés 4 s-ig tart.\n\nc) Vízszintes irányban az eredő erő a fékezőerő, Newton II. törvénye szerint F = m·a = 1200 kg · 5 m/s² = 6000 N.\nA fékezőerő a mozgással ellentétes irányú, így munkája W = −F·s = −6000 N · 40 m = −240 000 J = −240 kJ.\nEllenőrzés a munkatétellel: a mozgási energia kezdetben ½·m·v₀² = ½ · 1200 · 20² J = 240 000 J, a végén 0, tehát a fékezőerő munkája valóban −240 kJ; ennyi mozgási energia alakul hővé a fékekben.\nA fékezőerő 6000 N = 6 kN, munkája −240 kJ (nagysága 240 kJ).\n\nd) 90 km/h = 90 : 3,6 m/s = 25 m/s. Ugyanekkora lassulással s' = v₀'²/(2·a) = (25 m/s)² / (2 · 5 m/s²) = 625/10 m = 62,5 m.\nA fékút a kezdősebesség négyzetével arányos: s'/s = (25/20)² = 1,25² = 1,5625, vagyis a fékút 56,25 %-kal, kb. 56 %-kal hosszabb.\nVálasz: 90 km/h-ról a fékút 62,5 m lenne, ami kb. 56 %-kal hosszabb a 40 m-nél – a 25 %-kal nagyobb sebesség több mint 50 %-kal növeli a fékutat.",
+    "pointsCovered": [
+      { "id": "p1", "quote": "a = v₀²/(2·s) = (20 m/s)² / (2 · 40 m) = 400/80 m/s² = 5 m/s²" },
+      { "id": "p2", "quote": "t = v₀/a = 20 m/s / 5 m/s² = 4 s" },
+      { "id": "p3", "quote": "F = m·a = 1200 kg · 5 m/s² = 6000 N" },
+      { "id": "p4", "quote": "s' = v₀'²/(2·a) = (25 m/s)² / (2 · 5 m/s²) = 625/10 m = 62,5 m" }
+    ],
+    "notes": [
+      "Eredmény: mind a négy részeredmény helyes (5 m/s², 4 s, 6000 N és 240 kJ, 62,5 m és kb. 56 %), ezért az eredmény-szempontra a teljes 8 pont jár.",
+      "Indoklás: minden lépésnél le van írva a felhasznált összefüggés (v² − v₀² = 2as, v = v₀ − at, Newton II. törvénye, munkatétel), és az átváltás (km/h → m/s) külön sorban szerepel – ez adja a gondolatmenet 4 pontját.",
+      "Ellenőrzés és forma: a b) részt az átlagsebességgel, a c) részt a mozgási energiával ellenőrzi, minden eredménynél van mértékegység és szöveges válasz, a munka előjelét is megindokolja."
+    ]
+  }
+}
