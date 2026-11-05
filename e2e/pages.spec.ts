@@ -23,6 +23,8 @@ const ROUTES = [
   "/vizsga",
   "/hivatalos",
   "/statisztika",
+  "/jelentes",
+  "/utmutatok",
   "/parancsok",
   "/beallitasok",
   "/olvasas/rd-emelt-digital-detox-camps-mc",

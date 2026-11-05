@@ -3,7 +3,8 @@ import { getSettings } from "@/lib/settings";
 import { accuracyByCategory, accuracyByType, errorsPerWeek, scoreTrend, timePerDay, timePerWeek, writingCriteriaTrend } from "@/lib/stats";
 import { examConfig, labelMaps } from "@/lib/exam/config";
 import { t, sectionLabel } from "@/lib/i18n/hu";
-import { Card, PageHeader } from "@/components/ui";
+import Link from "next/link";
+import { Card, PageHeader, btn } from "@/components/ui";
 import { LineChart } from "@/components/charts/LineChart";
 import { BarChart } from "@/components/charts/BarChart";
 import { HBars } from "@/components/charts/HBars";
@@ -25,7 +26,15 @@ export default function StatsPage() {
   const crit = writingCriteriaTrend(s.level, critNames);
   return (
     <div className="space-y-6">
-      <PageHeader title={t.stats.title} intro={t.level[s.level]} />
+      <PageHeader
+        title={t.stats.title}
+        intro={t.level[s.level]}
+        actions={
+          <Link href="/jelentes" className={btn.secondary}>
+            {t.report.open}
+          </Link>
+        }
+      />
       <Card title={t.stats.scoreTrend}>{trend.length ? <LineChart series={trend} /> : <p className="text-sm text-muted">{t.stats.noData}</p>}</Card>
       <div className="grid gap-6 lg:grid-cols-2">
         <Card title={t.stats.byType}>
