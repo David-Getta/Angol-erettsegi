@@ -385,6 +385,7 @@ export const t = {
 
   vocab: {
     title: "Szókincs",
+    titleGeneric: "Fogalmak, képletek",
     intro: "Ismétlés FSRS algoritmussal: a kártyák akkor jönnek elő újra, amikor épp felejtenéd őket.",
     due: "Esedékes",
     new: "Új",
@@ -471,7 +472,7 @@ export const t = {
 
   diagnostic: {
     title: "Szintfelmérő",
-    intro: "Rövid diagnosztikus teszt mind a négy írásbeli részből (kb. 45 perc). Az eredményből becsült szintet és erősség/gyengeség-képet kapsz, erre épül a Mai terv.",
+    intro: "Rövid diagnosztikus teszt az írásbeli részekből (kb. 45 perc). Az eredményből becsült szintet és erősség/gyengeség-képet kapsz, erre épül a Mai terv.",
     start: "Szintfelmérő indítása",
     resume: "Folytatás",
     parts: "Részek",
@@ -647,7 +648,7 @@ export const t = {
 
   topics: {
     title: "Témakörök",
-    intro: "A szóbeli vizsga tíz témaköre – mindegyiknél egy helyen a hozzá tartozó feladatok minden vizsgarészből és a szókincs-pakli. A szóbelire témakörönként érdemes készülni.",
+    intro: "A vizsga hivatalos témakörei – mindegyiknél egy helyen a hozzá tartozó feladatok minden vizsgarészből és a kártyapakli. Témakörönként érdemes készülni.",
     done: (a: number, b: number) => `${a} / ${b} feladat kész`,
     deck: "Szókincs-pakli",
     deckAdded: (a: number, b: number) => `${a} / ${b} szó a kártyáid között`,
@@ -766,7 +767,7 @@ export const t = {
     backups: "Mentések",
     savedOk: "Beállítások mentve.",
     provenance: "A vizsgaadatok forrásai",
-    provenanceHint: "Az időket, pontokat, rubrikákat, jegyhatárokat és a nyelvvizsga-egyenértékűséget a config/exam/ JSON-fájlok tartalmazzák. Ha a hivatalos adat változik, elég ezeket átírni.",
+    provenanceHint: "Az időket, pontokat, rubrikákat, jegyhatárokat (nyelvnél a nyelvvizsga-egyenértékűséget is) a config/subjects/<tantárgy>/ JSON-fájlok tartalmazzák. Ha a hivatalos adat változik, elég ezeket átírni.",
     verifiedAt: (d: string) => `ellenőrizve: ${d}`,
     notVerified: "nincs ellenőrizve",
     sources: "Források",

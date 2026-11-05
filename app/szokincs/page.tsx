@@ -12,7 +12,7 @@ import { ImportButton } from "@/components/grading/ImportButton";
 import { ReloadContentButton } from "@/components/ReloadContentButton";
 import { AddDeckButton, ManualAddForm, CardTable } from "./VocabClient";
 
-export const metadata: Metadata = { title: t.vocab.title };
+export const metadata: Metadata = { title: `${t.vocab.title} / ${t.vocab.titleGeneric}` };
 
 export default async function VocabPage({ searchParams }: { searchParams: Promise<{ q?: string; hianyos?: string }> }) {
   const sp = await searchParams;
@@ -35,7 +35,7 @@ export default async function VocabPage({ searchParams }: { searchParams: Promis
 
   return (
     <div className="space-y-6">
-      <PageHeader title={t.vocab.title} intro={t.vocab.intro} actions={<ReloadContentButton />} />
+      <PageHeader title={examConfig.subject().language ? t.vocab.title : t.vocab.titleGeneric} intro={t.vocab.intro} actions={<ReloadContentButton />} />
       {incomplete > 0 && (
         <CommandTip command="/szokincs" message={`${t.tips.incompleteCards(incomplete)}`} testId="szokincs-tip">
           <ImportButton variant="secondary" />
