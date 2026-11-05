@@ -47,7 +47,8 @@ Ha parancsot módosítasz, a `config/commands.json`-t és a `.claude/commands/<n
 ## Mappaszerkezet
 
 ```
-app/                 oldalak (magyar URL-ek: /olvasas, /nyelvhelyesseg, /hallas, /iras, /szobeli, /szokincs, /hibanaplo, /szabalytar, …)
+app/                 oldalak (magyar URL-ek: /olvasas, /nyelvhelyesseg, /hallas, /iras, /szobeli, /szokincs, /hibanaplo,
+                     /szabalytar, /kifejezesek, /temakorok, /vizsga, /probaerettsegi, …)
   actions*.ts        server actionök (minden írás az adatbázisba ezeken megy át)
 components/          React komponensek (exercise/ = közös feladatlejátszó)
 lib/
@@ -56,7 +57,11 @@ lib/
   exam/config.ts     a config/exam/*.json betöltése és sémái
   exchange/          beadás- és feedback-séma, csere-mappa, promptok
   scoring/           ellenőrzés (alternatív válaszok, elírás), vizsgapont, százalék, jegy, küszöbök
-  vocab/             szókártyák, FSRS
+  vocab/             szókártyák (szó, „javítsd ki” kártya), FSRS
+  lessons.ts         Szabálytár (leckék, mini-gyakorlás ellenőrzése)
+  targeted.ts        célzott gyakorlás, hibák újrapróbálása
+  phrases.ts, topics.ts   Kifejezéstár, témakör-oldalak
+  mock.ts, plan.ts   próbaérettségi / szintfelmérő, Mai terv
   i18n/hu.ts         MINDEN magyar UI-szöveg
 config/
   exam/              hivatalos vizsgaadatok (szerkezet, pontok, rubrikák, témakörök, feladattípusok, jegyhatárok)
