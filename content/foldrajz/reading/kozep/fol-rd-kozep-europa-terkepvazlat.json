@@ -1,0 +1,135 @@
+{
+  "schemaVersion": 1,
+  "id": "fol-rd-kozep-europa-terkepvazlat",
+  "subject": "foldrajz",
+  "revision": 1,
+  "level": "kozep",
+  "source": "generated",
+  "topic": "europa",
+  "title": "Európa térképvázlata: hegységek, félszigetek, vizek",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "reading",
+  "type": "topografia",
+  "instructions": "A térképvázlat Európát ábrázolja (a vázlatot a szöveg írja le). Nevezze meg a számokkal jelölt földrajzi helyeket! A 0. a megoldott példa.",
+  "passage": {
+    "title": "A térképvázlat leírása",
+    "blocks": [
+      { "text": "A térképvázlaton Európa látható. A számok a következő helyeket jelölik:" },
+      { "text": "0 – A Skandináv-félsziget nyugati, fjordos partvidékén húzódó, idős, lepusztult hegység Norvégia és Svédország határán." },
+      { "text": "1 – Közép- és Kelet-Európát 1500 km hosszú ívben átszelő, a Kárpát-medencét körülölelő fiatal lánchegység; legmagasabb csúcsa a Gerlachfalvi-csúcs (2655 m)." },
+      { "text": "2 – Franciaország, Svájc, Olaszország, Ausztria területén húzódó, Európa legmagasabb lánchegysége; legmagasabb csúcsa 4810 m." },
+      { "text": "3 – Az Ibériai-félszigetet Franciaországtól elválasztó, kelet–nyugati irányú hegység." },
+      { "text": "4 – Észak–déli irányban húzódó, idős, lepusztult röghegység, amelyet Európa és Ázsia határának tekintünk." },
+      { "text": "5 – Csizma alakú félsziget a Földközi-tenger középső részén, rajta Olaszország nagy része." },
+      { "text": "6 – Az Északi- és a Balti-tenger közé nyúló félsziget Németországtól északra; Dánia szárazföldi része." },
+      { "text": "7 – A Földközi-tenger legnagyobb szigete a csizma orra előtt; rajta Európa legmagasabb aktív vulkánja." },
+      { "text": "8 – Az Appennini- és a Balkán-félsziget közötti, hosszan elnyúló tenger; partján Velence, Split, Dubrovnik." },
+      { "text": "9 – Az Alpokból (Svájc) induló, Németország nyugati részén át a Németalföldön keresztül az Északi-tengerbe ömlő folyó, Európa legforgalmasabb vízi útja; torkolatánál Rotterdam kikötője." },
+      { "text": "10 – A Brit-szigeteket a kontinenstől (Franciaország) elválasztó tengerszoros, amely alatt vasúti alagút vezet." }
+    ]
+  },
+  "example": {
+    "id": "0",
+    "kind": "text",
+    "prompt": "A térképvázlaton 0-val jelölt hegység neve:",
+    "answer": ["Skandináv-hegység"],
+    "maxWords": 3,
+    "category": "helymeghatarozas",
+    "explanation": "Skandináv-hegység: az óidőben (kaledóniai hegységképződés) gyűrődött, azóta lepusztult hegység; nyugati oldalát a jégkori gleccserek által kivájt fjordok tagolják."
+  },
+  "items": [
+    {
+      "id": "1",
+      "kind": "text",
+      "prompt": "A térképvázlaton 1-es számmal jelölt hegység neve:",
+      "answer": ["Kárpátok"],
+      "maxWords": 3,
+      "category": "helymeghatarozas",
+      "explanation": "Kárpátok: az Alpokkal együtt az Eurázsiai-hegységrendszer tagja, az újidőben (harmadidőszak) gyűrődött fel; íve Pozsonytól a Vaskapuig húzódik, a Magas-Tátrában a Gerlachfalvi-csúcs (2655 m) a legmagasabb pont."
+    },
+    {
+      "id": "2",
+      "kind": "text",
+      "prompt": "A térképvázlaton 2-es számmal jelölt hegység neve:",
+      "answer": ["Alpok"],
+      "maxWords": 3,
+      "category": "helymeghatarozas",
+      "explanation": "Alpok: Európa legmagasabb lánchegysége, az Afrikai- és az Eurázsiai-lemez ütközésével gyűrődött; legmagasabb csúcsa a Mont Blanc (4810 m) a francia–olasz határon."
+    },
+    {
+      "id": "3",
+      "kind": "text",
+      "prompt": "A térképvázlaton 3-as számmal jelölt hegység neve:",
+      "answer": ["Pireneusok"],
+      "maxWords": 3,
+      "category": "helymeghatarozas",
+      "explanation": "Pireneusok: a Vizcayai-öböltől a Földközi-tengerig húzódó fiatal lánchegység Spanyolország és Franciaország határán; a hegységben fekszik Andorra."
+    },
+    {
+      "id": "4",
+      "kind": "text",
+      "prompt": "A térképvázlaton 4-es számmal jelölt hegység neve:",
+      "answer": ["Urál", "Urál-hegység"],
+      "maxWords": 3,
+      "category": "helymeghatarozas",
+      "explanation": "Urál: az óidő végén (variszkuszi hegységképződés) gyűrődött, mára alacsonyra lepusztult röghegység (legmagasabb pontja alig 1900 m); ércekben gazdag, Európa és Ázsia hagyományos határa."
+    },
+    {
+      "id": "5",
+      "kind": "text",
+      "prompt": "A térképvázlaton 5-ös számmal jelölt félsziget neve:",
+      "answer": ["Appennini-félsziget", "Itáliai-félsziget", "Olasz-félsziget"],
+      "maxWords": 3,
+      "category": "helymeghatarozas",
+      "explanation": "Appennini-félsziget: nevét a gerincén végighúzódó Appenninekről kapta; Olaszország szárazföldi része, nyugatról a Tirrén-, keletről az Adriai-tenger határolja."
+    },
+    {
+      "id": "6",
+      "kind": "text",
+      "prompt": "A térképvázlaton 6-os számmal jelölt félsziget neve:",
+      "answer": ["Jylland", "Jylland-félsziget", "Jütland", "Jütland-félsziget"],
+      "maxWords": 3,
+      "category": "helymeghatarozas",
+      "explanation": "Jylland (Jütland): Dánia szárazföldi része, alacsony, jégkori üledékekkel fedett félsziget az Északi-tenger és a Balti-tenger között; Dánia többi része szigeteken (pl. Sjælland, Koppenhágával) fekszik."
+    },
+    {
+      "id": "7",
+      "kind": "text",
+      "prompt": "A térképvázlaton 7-es számmal jelölt sziget neve:",
+      "answer": ["Szicília"],
+      "maxWords": 3,
+      "category": "helymeghatarozas",
+      "explanation": "Szicília: a Földközi-tenger legnagyobb szigete (kb. 25 700 km²), Olaszország része; rajta áll az Etna, Európa legmagasabb aktív vulkánja (kb. 3350 m)."
+    },
+    {
+      "id": "8",
+      "kind": "text",
+      "prompt": "A térképvázlaton 8-as számmal jelölt tenger neve:",
+      "answer": ["Adriai-tenger", "Adria"],
+      "maxWords": 3,
+      "category": "helymeghatarozas",
+      "explanation": "Adriai-tenger: a Földközi-tenger északra benyúló, hosszú öble Olaszország és a Balkán-félsziget között; keleti, horvát partja szigetekkel tagolt (dalmát típusú part)."
+    },
+    {
+      "id": "9",
+      "kind": "text",
+      "prompt": "A térképvázlaton 9-es számmal jelölt folyó neve:",
+      "answer": ["Rajna"],
+      "maxWords": 3,
+      "category": "helymeghatarozas",
+      "explanation": "Rajna: a svájci Alpokban ered, a Bodeni-tavon átfolyva Németország nyugati határfolyója, majd a Ruhr-vidék és Hollandia iparát szolgáló, Európa legforgalmasabb hajózható folyója; torkolatánál Rotterdam, Európa legnagyobb kikötője."
+    },
+    {
+      "id": "10",
+      "kind": "text",
+      "prompt": "A térképvázlaton 10-es számmal jelölt tengerszoros neve:",
+      "answer": ["La Manche", "La Manche csatorna", "La Manche-csatorna", "Csatorna"],
+      "maxWords": 3,
+      "category": "helymeghatarozas",
+      "explanation": "La Manche (angolul English Channel, „a Csatorna”): az Atlanti-óceánt az Északi-tengerrel összekötő szoros Nagy-Britannia és Franciaország között; legszűkebb pontja a Doveri-szoros (kb. 34 km), alatta a Csatorna-alagút."
+    }
+  ],
+  "glossary": [],
+  "suggestedMinutes": 9
+}

@@ -1,0 +1,91 @@
+{
+  "schemaVersion": 1,
+  "id": "kem-rd-emelt-szamitas-rovid-osszetett",
+  "subject": "kemia",
+  "revision": 1,
+  "level": "emelt",
+  "source": "generated",
+  "topic": "szamitasok",
+  "title": "Rövid számítások: gázok, oldatok, sztöchiometria (emelt)",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "reading",
+  "type": "szamitas-rovid",
+  "instructions": "Egy-két lépéses számítások. Csak a végeredményt írd be, mértékegységgel, a feladatban kért pontossággal! Adatok: Ar(H) = 1, Ar(C) = 12, Ar(N) = 14, Ar(O) = 16, Ar(Na) = 23, Ar(Mg) = 24, Ar(S) = 32, Ar(Cl) = 35,5; Vm = 24,5 dm³/mol (standardállapot, 25 °C, 100 kPa). A 0. a példa.",
+  "example": {
+    "id": "0",
+    "kind": "text",
+    "prompt": "Mekkora az anyagmennyisége 2,45 dm³ standardállapotú gáznak?",
+    "answer": ["0,1 mol", "0.1 mol", "0,1", "0.1", "0,100 mol", "0.100 mol"],
+    "maxWords": 2,
+    "category": "anyagmennyiseg",
+    "explanation": "Helyes: 0,1 mol. n = V / Vm = 2,45 dm³ / 24,5 dm³/mol = 0,1 mol – a gáz anyagi minőségétől függetlenül."
+  },
+  "items": [
+    {
+      "id": "1",
+      "kind": "text",
+      "prompt": "Hány dm³ standardállapotú oxigén szükséges 2 mol metán tökéletes elégetéséhez?",
+      "answer": ["98 dm³", "98 dm3", "98", "98 liter", "98 l"],
+      "maxWords": 2,
+      "category": "reakcioegyenlet",
+      "explanation": "Helyes: 98 dm³. CH₄ + 2 O₂ → CO₂ + 2 H₂O; 2 mol metánhoz 4 mol oxigén kell, V = 4 mol · 24,5 dm³/mol = 98 dm³."
+    },
+    {
+      "id": "2",
+      "kind": "text",
+      "prompt": "Mekkora a 20,0 tömeg%-os, 1,14 g/cm³ sűrűségű kénsavoldat anyagmennyiség-koncentrációja (két tizedesjegyre)?",
+      "answer": ["2,33 mol/dm³", "2.33 mol/dm³", "2,33 mol/dm3", "2.33 mol/dm3", "2,33", "2.33", "2,33 M", "2.33 M"],
+      "maxWords": 2,
+      "category": "oldatok-szamitas",
+      "explanation": "Helyes: 2,33 mol/dm³. 1 dm³ = 1000 cm³ oldat tömege 1000 · 1,14 = 1140 g; ebből kénsav 1140 · 0,200 = 228 g; n = 228 g / 98 g/mol = 2,33 mol, ez 1 dm³-ben van, tehát c = 2,33 mol/dm³."
+    },
+    {
+      "id": "3",
+      "kind": "text",
+      "prompt": "Hány gramm szén-dioxid keletkezik 8,0 g metán tökéletes elégetésekor?",
+      "answer": ["22 g", "22", "22 gramm", "22,0 g"],
+      "maxWords": 2,
+      "category": "anyagmennyiseg",
+      "explanation": "Helyes: 22 g. n(CH₄) = 8,0 g / 16 g/mol = 0,50 mol; az egyenlet szerint 1 mol metánból 1 mol CO₂ keletkezik, m(CO₂) = 0,50 mol · 44 g/mol = 22 g."
+    },
+    {
+      "id": "4",
+      "kind": "text",
+      "prompt": "Hány cm³ 2,00 mol/dm³ koncentrációjú sósav semlegesít 0,100 mol nátrium-hidroxidot?",
+      "answer": ["50 cm³", "50 cm3", "50,0 cm³", "50.0 cm³", "0,05 dm³", "0.05 dm³", "0,050 dm³", "50 ml", "50"],
+      "maxWords": 2,
+      "category": "oldatok-szamitas",
+      "explanation": "Helyes: 50 cm³. HCl + NaOH → NaCl + H₂O, 1 : 1 arány, tehát 0,100 mol HCl kell; V = n / c = 0,100 mol / 2,00 mol/dm³ = 0,0500 dm³ = 50,0 cm³."
+    },
+    {
+      "id": "5",
+      "kind": "text",
+      "prompt": "Hány gramm magnézium oldódik fel maradék nélkül 100 cm³ 1,00 mol/dm³ koncentrációjú sósavban?",
+      "answer": ["1,2 g", "1.2 g", "1,2", "1.2", "1,20 g", "1.20 g"],
+      "maxWords": 2,
+      "category": "reakcioegyenlet",
+      "explanation": "Helyes: 1,2 g. n(HCl) = 1,00 mol/dm³ · 0,100 dm³ = 0,100 mol; Mg + 2 HCl → MgCl₂ + H₂ szerint 1 mol Mg 2 mol HCl-dal reagál, n(Mg) = 0,0500 mol; m = 0,0500 mol · 24 g/mol = 1,2 g."
+    },
+    {
+      "id": "6",
+      "kind": "text",
+      "prompt": "Egy gáz sűrűsége standardállapotban 1,14 g/dm³. Mekkora a moláris tömege (egészre kerekítve)?",
+      "answer": ["28 g/mol", "28", "27,9 g/mol", "27.9 g/mol", "27,9", "27.9"],
+      "maxWords": 2,
+      "category": "anyagmennyiseg",
+      "explanation": "Helyes: 28 g/mol. M = ρ · Vm = 1,14 g/dm³ · 24,5 dm³/mol = 27,9 ≈ 28 g/mol – ez lehet pl. nitrogén (N₂), szén-monoxid (CO) vagy etén (C₂H₄)."
+    },
+    {
+      "id": "7",
+      "kind": "text",
+      "prompt": "200 g 10,0 tömeg%-os oldatból 50 g vizet elpárologtatunk. Hány tömeg%-os lesz az oldat (egy tizedesjegyre)?",
+      "answer": ["13,3 %", "13.3 %", "13,3%", "13.3%", "13,3", "13.3", "13,33 %", "13.33 %", "13,33", "13.33"],
+      "maxWords": 2,
+      "category": "oldatok-szamitas",
+      "explanation": "Helyes: 13,3 %. Az oldott anyag tömege nem változik: 200 · 0,100 = 20,0 g; az oldat tömege 200 − 50 = 150 g; w = 20,0/150 · 100 = 13,3 %."
+    }
+  ],
+  "glossary": [],
+  "suggestedMinutes": 12
+}

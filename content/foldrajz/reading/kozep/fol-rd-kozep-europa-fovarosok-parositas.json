@@ -1,0 +1,129 @@
+{
+  "schemaVersion": 1,
+  "id": "fol-rd-kozep-europa-fovarosok-parositas",
+  "subject": "foldrajz",
+  "revision": 1,
+  "level": "kozep",
+  "source": "generated",
+  "topic": "europa",
+  "title": "Európai országok és fővárosaik",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "reading",
+  "type": "parositas",
+  "instructions": "Párosítsa az országokat a fővárosukkal! Írja a főváros betűjelét a kijelölt helyre! Két főváros felesleges. A 0. a megoldott példa.",
+  "options": [
+    { "key": "A", "text": "Bécs" },
+    { "key": "B", "text": "Varsó" },
+    { "key": "C", "text": "Prága" },
+    { "key": "D", "text": "Pozsony" },
+    { "key": "E", "text": "Bukarest" },
+    { "key": "F", "text": "Belgrád" },
+    { "key": "G", "text": "Zágráb" },
+    { "key": "H", "text": "Ljubljana" },
+    { "key": "I", "text": "Kijev" },
+    { "key": "J", "text": "Athén" },
+    { "key": "K", "text": "Szófia" },
+    { "key": "L", "text": "Bern" },
+    { "key": "M", "text": "Tirana" }
+  ],
+  "optionsReusable": false,
+  "example": {
+    "id": "0",
+    "kind": "match",
+    "prompt": "Ausztria – nyugati szomszédunk, fővárosa a Duna partján fekszik, az egykori Habsburg Birodalom központja.",
+    "answer": "A",
+    "category": "orszag-varos",
+    "explanation": "Ausztria fővárosa Bécs (Wien), amely a Duna partján, a Bécsi-medencében fekszik; közel 2 millió lakosával az ország legnagyobb városa."
+  },
+  "items": [
+    {
+      "id": "1",
+      "kind": "match",
+      "prompt": "Lengyelország – fővárosa a Visztula partján fekszik.",
+      "answer": "B",
+      "category": "orszag-varos",
+      "explanation": "Lengyelország fővárosa Varsó (Warszawa), a Visztula (Wisła) partján, az ország középső-keleti részén."
+    },
+    {
+      "id": "2",
+      "kind": "match",
+      "prompt": "Csehország – fővárosa a Moldva (Vltava) partján, a Károly hídról híres.",
+      "answer": "C",
+      "category": "orszag-varos",
+      "explanation": "Csehország fővárosa Prága (Praha), a Moldva partján; történelmi belvárosa a világörökség része."
+    },
+    {
+      "id": "3",
+      "kind": "match",
+      "prompt": "Szlovákia – északi szomszédunk, fővárosa a Duna partján, a magyar és az osztrák határ közelében fekszik.",
+      "answer": "D",
+      "category": "orszag-varos",
+      "explanation": "Szlovákia fővárosa Pozsony (Bratislava), a Duna partján, mindössze kb. 60 km-re Bécstől; az egyetlen főváros, amely két másik országgal (Ausztria, Magyarország) határos."
+    },
+    {
+      "id": "4",
+      "kind": "match",
+      "prompt": "Románia – keleti szomszédunk, fővárosa a Román-alföldön, a Kárpátoktól délre fekszik.",
+      "answer": "E",
+      "category": "orszag-varos",
+      "explanation": "Románia fővárosa Bukarest (București), a Román-alföld déli részén, a Duna és a Déli-Kárpátok között."
+    },
+    {
+      "id": "5",
+      "kind": "match",
+      "prompt": "Szerbia – déli szomszédunk, fővárosa a Száva és a Duna összefolyásánál fekszik.",
+      "answer": "F",
+      "category": "orszag-varos",
+      "explanation": "Szerbia fővárosa Belgrád (Beograd), a Száva dunai torkolatánál; a Balkán-félsziget egyik legrégibb városa.",
+      "wrongOptions": {
+        "G": "Zágráb Horvátország fővárosa, a Száva partján fekszik, de nem a Dunánál."
+      }
+    },
+    {
+      "id": "6",
+      "kind": "match",
+      "prompt": "Horvátország – délnyugati szomszédunk, fővárosa a Száva partján, a Medvednica hegység lábánál fekszik.",
+      "answer": "G",
+      "category": "orszag-varos",
+      "explanation": "Horvátország fővárosa Zágráb (Zagreb), a Száva partján; az ország belső, kontinentális részén fekszik, nem a tengerparton."
+    },
+    {
+      "id": "7",
+      "kind": "match",
+      "prompt": "Szlovénia – alpesi szomszédunk, fővárosa a Ljubljanica folyó partján fekszik.",
+      "answer": "H",
+      "category": "orszag-varos",
+      "explanation": "Szlovénia fővárosa Ljubljana, az ország közepén, az Alpok és a Dinári-hegység között; Európa egyik legkisebb fővárosa (kb. 300 ezer lakos)."
+    },
+    {
+      "id": "8",
+      "kind": "match",
+      "prompt": "Ukrajna – északkeleti szomszédunk, fővárosa a Dnyeper partján fekszik.",
+      "answer": "I",
+      "category": "orszag-varos",
+      "explanation": "Ukrajna fővárosa Kijev (Kyjiv), a Dnyeper partján; az egykori Kijevi Rusz központja."
+    },
+    {
+      "id": "9",
+      "kind": "match",
+      "prompt": "Görögország – a Balkán-félsziget déli részén, fővárosa az Akropoliszról híres.",
+      "answer": "J",
+      "category": "orszag-varos",
+      "explanation": "Görögország fővárosa Athén (Athína), az Attikai-félszigeten, az Égei-tenger partja közelében; az Akropolisz a világörökség része."
+    },
+    {
+      "id": "10",
+      "kind": "match",
+      "prompt": "Bulgária – fővárosa a Vitosa-hegység lábánál, az ország nyugati részén fekszik.",
+      "answer": "K",
+      "category": "orszag-varos",
+      "explanation": "Bulgária fővárosa Szófia (Sofija), a Vitosa-hegység lábánál, az ország nyugati részén.",
+      "wrongOptions": {
+        "M": "Tirana Albánia fővárosa, az Adriai-tenger közelében."
+      }
+    }
+  ],
+  "glossary": [],
+  "suggestedMinutes": 7
+}

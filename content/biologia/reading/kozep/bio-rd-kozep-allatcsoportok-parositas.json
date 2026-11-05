@@ -1,0 +1,129 @@
+{
+  "schemaVersion": 1,
+  "id": "bio-rd-kozep-allatcsoportok-parositas",
+  "subject": "biologia",
+  "revision": 1,
+  "level": "kozep",
+  "source": "generated",
+  "topic": "novenyek-allatok",
+  "title": "Állatcsoportok jellemzői – párosítás",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "reading",
+  "type": "parositas",
+  "instructions": "Párosítsa az állításokat a megfelelő állatcsoporttal (A–G)! Egy betű többször is felhasználható, és lehet olyan csoport, amelyhez egyetlen állítás sem tartozik. A 0. állítás a példa.",
+  "options": [
+    { "key": "A", "text": "halak" },
+    { "key": "B", "text": "kétéltűek" },
+    { "key": "C", "text": "hüllők" },
+    { "key": "D", "text": "madarak" },
+    { "key": "E", "text": "emlősök" },
+    { "key": "F", "text": "ízeltlábúak" },
+    { "key": "G", "text": "gyűrűsférgek" }
+  ],
+  "optionsReusable": true,
+  "example": {
+    "id": "0",
+    "kind": "match",
+    "prompt": "Testüket toll fedi, csontjaik üregesek, levegővel teltek.",
+    "answer": "D",
+    "category": "rendszertan-fajismeret",
+    "explanation": "Helyes: D (madarak). A tollazat kizárólag a madarak jellemzője; a könnyű, üreges csontok a repülést segítik."
+  },
+  "items": [
+    {
+      "id": "1",
+      "kind": "match",
+      "prompt": "Kopoltyúval lélegeznek, testüket pikkelyek fedik, szívük egy pitvarból és egy kamrából áll.",
+      "answer": "A",
+      "category": "rendszertan-fajismeret",
+      "explanation": "Helyes: A (halak). A halak egész életükben kopoltyúval lélegeznek, szívük kétüregű (egy pitvar, egy kamra), és csak oxigénszegény vér folyik át rajta; a vérkörük egyetlen kör.",
+      "wrongOptions": {
+        "B": "A kétéltűeknek csak a lárvája kopoltyús, a kifejlett állat tüdővel és bőrrel lélegzik, szíve háromüregű.",
+        "C": "A hüllők tüdővel lélegeznek, szívük háromüregű (a krokodiloké négy)."
+      }
+    },
+    {
+      "id": "2",
+      "kind": "match",
+      "prompt": "Lárváik kopoltyúval, a kifejlett egyedek tüdővel és nyálkás, csupasz bőrükkel lélegeznek; petéiket vízbe rakják.",
+      "answer": "B",
+      "category": "rendszertan-fajismeret",
+      "explanation": "Helyes: B (kétéltűek). A kétéltűek (pl. a kecskebéka) élete két közeghez kötődik: a lárva (ebihal) a vízben kopoltyúval lélegzik, a kifejlett állat a szárazföldön tüdővel és a bőrén át; a petéknek nincs héja, ezért csak vízben fejlődnek.",
+      "wrongOptions": {
+        "A": "A halaknak nincs tüdejük, kifejlett korukban is kopoltyúval lélegeznek.",
+        "C": "A hüllők szárazra rakják héjas tojásaikat, bőrük száraz, szaruval fedett."
+      }
+    },
+    {
+      "id": "3",
+      "kind": "match",
+      "prompt": "Bőrüket száraz szarupikkelyek fedik, meszes héjú tojásaikat a szárazföldre rakják, testhőmérsékletük a környezettől függ.",
+      "answer": "C",
+      "category": "rendszertan-fajismeret",
+      "explanation": "Helyes: C (hüllők). A szaruval fedett, száraz bőr védi a hüllőket a kiszáradástól, a héjas tojás pedig lehetővé teszi a szárazföldi szaporodást. Változó testhőmérsékletűek, ezért napoznak.",
+      "wrongOptions": {
+        "D": "A madarak is héjas tojást raknak, de tollasak és állandó testhőmérsékletűek.",
+        "B": "A kétéltűek bőre nyálkás, petéiknek nincs héja."
+      }
+    },
+    {
+      "id": "4",
+      "kind": "match",
+      "prompt": "Utódaikat tejjel táplálják, testüket szőr fedi, mellüregüket a hasüregtől rekeszizom választja el.",
+      "answer": "E",
+      "category": "rendszertan-fajismeret",
+      "explanation": "Helyes: E (emlősök). Az emlősök egyedülálló jellemzői a tejmirigy és a szőrzet; a rekeszizom a légzőmozgások fő izma, csak az emlősökben van meg.",
+      "wrongOptions": {
+        "D": "A madarak tojásból kelt fiókáikat nem tejjel, hanem a csőrükkel hozott táplálékkal etetik; tolluk van, nem szőrük."
+      }
+    },
+    {
+      "id": "5",
+      "kind": "match",
+      "prompt": "Kitinből álló külső vázuk van, lábaik ízekből állnak; a csoportba tartoznak a rovarok, a rákok és a pókok.",
+      "answer": "F",
+      "category": "rendszertan-fajismeret",
+      "explanation": "Helyes: F (ízeltlábúak). A kitines külső váz (kültakaró) tartja és védi a testet, de nem nő, ezért az állat időnként vedlik; az ízelt lábak adják a csoport nevét. Ez a legnagyobb fajszámú állatcsoport.",
+      "wrongOptions": {
+        "G": "A gyűrűsférgeknek nincs vázuk és lábuk, testüket bőrizomtömlő mozgatja."
+      }
+    },
+    {
+      "id": "6",
+      "kind": "match",
+      "prompt": "Állandó testhőmérsékletűek, szívük négyüregű, tüdejükhöz légzsákok kapcsolódnak.",
+      "answer": "D",
+      "category": "rendszertan-fajismeret",
+      "explanation": "Helyes: D (madarak). A légzsákok csak a madarakra jellemzők: a tüdőhöz csatlakozó, vékony falú zsákok, amelyek a repülés nagy oxigénigényét kiszolgáló, hatékony légzést tesznek lehetővé. A madarak és az emlősök is állandó testhőmérsékletűek és négyüregű szívűek, de légzsákja csak a madárnak van.",
+      "wrongOptions": {
+        "E": "Az emlősök szíve is négyüregű, és állandó a testhőmérsékletük, de légzsákjuk nincs, légzésüket a rekeszizom segíti.",
+        "C": "A hüllők változó testhőmérsékletűek, szívük háromüregű (a krokodilokat kivéve)."
+      }
+    },
+    {
+      "id": "7",
+      "kind": "match",
+      "prompt": "Testük sok, egyforma szelvényből áll, bőrizomtömlővel mozognak; ide tartozik a földigiliszta.",
+      "answer": "G",
+      "category": "rendszertan-fajismeret",
+      "explanation": "Helyes: G (gyűrűsférgek). A gyűrűsférgek testét külsőleg is látható gyűrűk (szelvények) tagolják, mozgásukat a bőr alatti izomréteg (bőrizomtömlő) és a testüregi folyadék együtt teszi lehetővé. A földigiliszta a talaj szellőzésében és humuszképzésében fontos.",
+      "wrongOptions": {
+        "F": "Az ízeltlábúak teste is szelvényezett, de szelvényeik nem egyformák, és ízelt lábuk, kitinvázuk van."
+      }
+    },
+    {
+      "id": "8",
+      "kind": "match",
+      "prompt": "Hazai képviselőik a fürge gyík és a vízisikló.",
+      "answer": "C",
+      "category": "rendszertan-fajismeret",
+      "explanation": "Helyes: C (hüllők). A fürge gyík és a vízisikló Magyarországon gyakori, védett hüllőfajok; a sikló lábatlan, de hüllő (nem féreg, nem kétéltű).",
+      "wrongOptions": {
+        "B": "A kétéltűek hazai példái a kecskebéka, az erdei béka vagy a foltos szalamandra – a gyík és a sikló nem tartozik ide."
+      }
+    }
+  ],
+  "glossary": [],
+  "suggestedMinutes": 7
+}

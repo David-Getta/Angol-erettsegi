@@ -1,0 +1,118 @@
+{
+  "schemaVersion": 1,
+  "id": "fol-rd-kozep-vilag-vizei",
+  "subject": "foldrajz",
+  "revision": 1,
+  "level": "kozep",
+  "source": "generated",
+  "topic": "kontinensek",
+  "title": "A Föld nagy vizei leírás alapján",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "reading",
+  "type": "topografia",
+  "instructions": "Nevezze meg a leírás alapján a Föld óceánjait, tengereit, folyóit és tavait! Írja a földrajzi nevet a kijelölt helyre! A 0. a megoldott példa.",
+  "example": {
+    "id": "0",
+    "kind": "text",
+    "prompt": "A Föld legnagyobb és legmélyebb óceánja Ázsia, Ausztrália és Amerika között.",
+    "answer": ["Csendes-óceán", "Pacifikus-óceán"],
+    "maxWords": 3,
+    "category": "helymeghatarozas",
+    "explanation": "Csendes-óceán (Pacifikus-óceán): a Föld felszínének mintegy harmadát borítja, itt van a legmélyebb pont, a Mariana-árok (kb. 11 000 m)."
+  },
+  "items": [
+    {
+      "id": "1",
+      "kind": "text",
+      "prompt": "A Föld leghosszabb folyója (kb. 6650 km); Egyiptom éltető vize, deltával ömlik a Földközi-tengerbe.",
+      "answer": ["Nílus"],
+      "maxWords": 3,
+      "category": "helymeghatarozas",
+      "explanation": "Nílus: a Viktória-tó vidékéről (Fehér-Nílus) és az Etióp-magasföldről (Kék-Nílus) érkező folyó a Szaharán át Egyiptomba fut, és deltát épít a Földközi-tengerbe."
+    },
+    {
+      "id": "2",
+      "kind": "text",
+      "prompt": "A Föld legnagyobb vízhozamú és legnagyobb vízgyűjtőjű folyója; Dél-Amerikában, az esőerdőn át az Atlanti-óceánba ömlik.",
+      "answer": ["Amazonas", "Amazon"],
+      "maxWords": 3,
+      "category": "helymeghatarozas",
+      "explanation": "Amazonas: az Andokban ered, és az egyenlítői éghajlat bő csapadéka miatt a Föld legnagyobb vízhozamú folyója (átlagosan kb. 200 000 m³/s)."
+    },
+    {
+      "id": "3",
+      "kind": "text",
+      "prompt": "Európa leghosszabb folyója (kb. 3500 km), Oroszországban, a Kaszpi-tengerbe ömlik.",
+      "answer": ["Volga"],
+      "maxWords": 3,
+      "category": "helymeghatarozas",
+      "explanation": "Volga: a Valdaj-hátságról indul, a Kelet-európai-síkságon át folyik, és deltával ömlik a Kaszpi-tengerbe; nem az óceánba jut, mert a Kaszpi-tenger lefolyástalan."
+    },
+    {
+      "id": "4",
+      "kind": "text",
+      "prompt": "A Föld legnagyobb kiterjedésű (sós vizű) tava Európa és Ázsia határán; lefolyástalan.",
+      "answer": ["Kaszpi-tenger", "Kaszpi-tó", "Kaszpi"],
+      "maxWords": 3,
+      "category": "helymeghatarozas",
+      "explanation": "Kaszpi-tenger: valójában tó, mert nincs összeköttetése az óceánnal; területe kb. 370 000 km², vízszintje a tengerszint alatt van."
+    },
+    {
+      "id": "5",
+      "kind": "text",
+      "prompt": "A Föld legmélyebb (több mint 1600 m) és legnagyobb édesvízkészletű tava, Szibériában.",
+      "answer": ["Bajkál-tó", "Bajkál"],
+      "maxWords": 3,
+      "category": "helymeghatarozas",
+      "explanation": "Bajkál-tó: lemezmozgások nyomán keletkezett árokban (tektonikus medencében) fekszik, ezért ilyen mély (1642 m); a Föld felszíni édesvizének kb. ötödét tárolja."
+    },
+    {
+      "id": "6",
+      "kind": "text",
+      "prompt": "Afrika legnagyobb tava, a Fehér-Nílus forrásvidéke; Uganda, Kenya és Tanzánia osztozik rajta.",
+      "answer": ["Viktória-tó", "Viktória"],
+      "maxWords": 3,
+      "category": "helymeghatarozas",
+      "explanation": "Viktória-tó: a Kelet-afrikai-magasföld sekély medencéjében fekvő, kb. 69 000 km²-es tó, a Föld második legnagyobb édesvizű tava; belőle lép ki a Fehér-Nílus."
+    },
+    {
+      "id": "7",
+      "kind": "text",
+      "prompt": "Európa, Afrika és Ázsia közötti beltenger; a Gibraltári-szoroson át kapcsolódik az Atlanti-óceánhoz.",
+      "answer": ["Földközi-tenger", "Mediterrán-tenger"],
+      "maxWords": 3,
+      "category": "helymeghatarozas",
+      "explanation": "Földközi-tenger: a három kontinens által körülzárt beltenger; a meleg, száraz nyár miatt erősen párolog, sótartalma ezért magasabb az óceánénál; a Szuezi-csatorna köti össze a Vörös-tengerrel."
+    },
+    {
+      "id": "8",
+      "kind": "text",
+      "prompt": "Észak-Európa sekély, alacsony sótartalmú beltengere Svédország, Finnország, a Baltikum és Lengyelország partjainál.",
+      "answer": ["Balti-tenger", "Keleti-tenger"],
+      "maxWords": 3,
+      "category": "helymeghatarozas",
+      "explanation": "Balti-tenger (Keleti-tenger): a sok beömlő folyó és a kis párolgás miatt vize alig sós (brakkvíz); télen északi öblei befagynak; a Dán-szorosokon át kapcsolódik az Északi-tengerhez."
+    },
+    {
+      "id": "9",
+      "kind": "text",
+      "prompt": "Európa második leghosszabb folyója; a Fekete-erdőben ered, hazánkon is átfolyik, és a Fekete-tengerbe ömlik.",
+      "answer": ["Duna"],
+      "maxWords": 3,
+      "category": "helymeghatarozas",
+      "explanation": "Duna: kb. 2850 km hosszú, tíz országot érint; a Volga után Európa második leghosszabb folyója; deltája Románia és Ukrajna területén a Fekete-tengernél."
+    },
+    {
+      "id": "10",
+      "kind": "text",
+      "prompt": "Észak-Amerika leghosszabb folyórendszere; az USA középső részét szeli át, és a Mexikói-öbölbe ömlik.",
+      "answer": ["Mississippi", "Mississippi–Missouri", "Mississippi-Missouri"],
+      "maxWords": 3,
+      "category": "helymeghatarozas",
+      "explanation": "Mississippi (mellékfolyójával, a Missourival együtt kb. 6000 km): az USA legfontosabb vízi útja, a Préri és a Középnyugat vizeit gyűjti össze, és deltával ömlik a Mexikói-öbölbe New Orleansnál."
+    }
+  ],
+  "glossary": [],
+  "suggestedMinutes": 8
+}

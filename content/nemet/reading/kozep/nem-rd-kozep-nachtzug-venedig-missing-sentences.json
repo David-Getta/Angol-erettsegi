@@ -1,0 +1,130 @@
+{
+  "schemaVersion": 1,
+  "id": "nem-rd-kozep-nachtzug-venedig-missing-sentences",
+  "subject": "nemet",
+  "revision": 1,
+  "level": "kozep",
+  "source": "generated",
+  "topic": "utazas",
+  "title": "Mit dem Nachtzug nach Venedig",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "reading",
+  "type": "missing-sentences",
+  "instructions": "Lesen Sie den Reisebericht einer Schülerin. Aus dem Text wurden sieben Sätze entfernt. Setzen Sie die Sätze (A–I) an die richtige Stelle (1–6). Zwei Sätze passen nicht. Am Anfang finden Sie ein Beispiel (0).",
+  "instructionsHu": "Olvasd el egy diáklány úti beszámolóját. A szövegből hét mondatot kivettünk; tedd vissza a mondatokat (A–I) a megfelelő helyre (1–6). Két mondat felesleges. A 0. a példa.",
+  "passage": {
+    "title": "Mit dem Nachtzug nach Venedig",
+    "blocks": [
+      { "text": "Letzten Sommer habe ich mit meiner Freundin Nóra zum ersten Mal eine Reise ohne Eltern gemacht. [[0]] Wir hatten nicht viel Geld, deshalb kam Fliegen nicht in Frage. Nóras Bruder hatte eine Idee: Warum nicht mit dem Nachtzug fahren?" },
+      { "text": "Der Zug fuhr um 20.40 Uhr in Wien ab und sollte am nächsten Morgen um 8.30 Uhr in Venedig ankommen. [[1]] In einem Abteil schlafen sechs Personen, drei übereinander. Ein Platz kostete nur 39 Euro – weniger als ein Hotelzimmer." },
+      { "text": "Als wir einstiegen, saß im Abteil schon ein älteres Ehepaar aus Linz. [[2]] Die beiden fuhren jedes Jahr mit diesem Zug nach Italien und kannten alle Tricks: Ohrstöpsel mitnehmen, die Schuhe nicht ausziehen und das Fenster nie ganz öffnen." },
+      { "text": "Um elf Uhr machte der Schaffner das Licht aus. [[3]] Der Zug ruckelte, bremste und hielt an Bahnhöfen, deren Namen wir nicht lesen konnten. Irgendwann bin ich trotzdem eingeschlafen." },
+      { "text": "Um sechs Uhr wachte ich auf, weil die Sonne durch das Fenster schien. [[4]] Draußen sahen wir Berge, kleine Dörfer und einen See, der im Morgenlicht glänzte. Der Schaffner brachte jedem ein kleines Frühstück: ein Brötchen, Marmelade und einen Kaffee." },
+      { "text": "Der Zug hatte am Ende zwanzig Minuten Verspätung, aber das war uns egal. [[5]] Wir stiegen aus, gingen aus dem Bahnhof und standen direkt am Wasser." },
+      { "text": "Würde ich wieder mit dem Nachtzug fahren? Auf jeden Fall. [[6]] Außerdem ist die Reise selbst schon ein Teil des Urlaubs – und sie ist viel besser für die Umwelt als ein Flug." }
+    ]
+  },
+  "options": [
+    { "key": "A", "text": "Das Ehepaar war sehr freundlich und gab uns gleich einige Ratschläge." },
+    { "key": "B", "text": "Wir wollten unbedingt Venedig sehen." },
+    { "key": "C", "text": "Man spart das Geld für eine Hotelnacht und verliert keinen Urlaubstag." },
+    { "key": "D", "text": "Wir hatten Plätze in einem Liegewagen gebucht." },
+    { "key": "E", "text": "Nóra und ich schliefen sofort ein." },
+    { "key": "F", "text": "Schlafen konnte ich zuerst gar nicht." },
+    { "key": "G", "text": "Ich weckte Nóra, und wir setzten uns ans Fenster." },
+    { "key": "H", "text": "Das Flugticket hatten wir schon gekauft." },
+    { "key": "I", "text": "Wir waren endlich in Venedig!" }
+  ],
+  "example": {
+    "id": "0",
+    "kind": "match",
+    "answer": "B",
+    "category": "text-structure",
+    "explanation": "Az első mondat az utazásról szól, a hiány után a pénzhiány és a repülés kizárása következik; közéjük az úti cél megnevezése illik: „Wir wollten unbedingt Venedig sehen.” (B).",
+    "evidence": "Wir hatten nicht viel Geld, deshalb kam Fliegen nicht in Frage."
+  },
+  "items": [
+    {
+      "id": "1",
+      "kind": "match",
+      "answer": "D",
+      "category": "text-structure",
+      "explanation": "A hiány utáni mondat a fülkéről szól („In einem Abteil schlafen sechs Personen”), ezért előtte kell szerepelnie, hogy fekvőkocsiba foglaltak helyet (D).",
+      "evidence": "In einem Abteil schlafen sechs Personen, drei übereinander.",
+      "wrongOptions": {
+        "H": "A repülőjegy megvásárlása ellentmond az előző bekezdésnek, amely szerint a repülés szóba sem jöhetett."
+      }
+    },
+    {
+      "id": "2",
+      "kind": "match",
+      "answer": "A",
+      "category": "text-structure",
+      "explanation": "Előtte megjelenik az idős házaspár, utána a tanácsaik (füldugó, cipő, ablak) következnek – a kettőt az A mondat köti össze („gab uns gleich einige Ratschläge”).",
+      "evidence": "kannten alle Tricks: Ohrstöpsel mitnehmen, die Schuhe nicht ausziehen und das Fenster nie ganz öffnen",
+      "wrongOptions": {
+        "G": "Nóra felébresztése a reggeli jelenethez tartozik, nem az este beszállásakor történt."
+      }
+    },
+    {
+      "id": "3",
+      "kind": "match",
+      "answer": "F",
+      "category": "text-structure",
+      "explanation": "A lámpaoltás után a vonat rázkódását írja le a szöveg, majd „Irgendwann bin ich trotzdem eingeschlafen” – a „trotzdem” csak akkor logikus, ha előtte az áll, hogy először nem tudott aludni (F).",
+      "evidence": "Irgendwann bin ich trotzdem eingeschlafen.",
+      "wrongOptions": {
+        "E": "Ha azonnal elaludtak volna, nem lenne értelme a „trotzdem” (mégis) szónak és a zötykölődés leírásának."
+      }
+    },
+    {
+      "id": "4",
+      "kind": "match",
+      "answer": "G",
+      "category": "text-structure",
+      "explanation": "Az elbeszélő hatkor felébred, a hiány után már többes számban („Draußen sahen wir Berge”) néznek ki az ablakon – közéjük az illik, hogy felébresztette Nórát, és az ablakhoz ültek (G).",
+      "evidence": "Draußen sahen wir Berge, kleine Dörfer und einen See",
+      "wrongOptions": {
+        "E": "Reggel hatkor nem elaludni, hanem felkelni készültek; az E mondat időben sem illik ide."
+      }
+    },
+    {
+      "id": "5",
+      "kind": "match",
+      "answer": "I",
+      "category": "text-structure",
+      "explanation": "A késés nem számított, mert megérkeztek: „Wir waren endlich in Venedig!” (I) – ezt követi a kiszállás és a víz látványa.",
+      "evidence": "Wir stiegen aus, gingen aus dem Bahnhof und standen direkt am Wasser.",
+      "wrongOptions": {
+        "B": "Az úti cél kívánságát a történet elején mondja ki az elbeszélő, nem a megérkezéskor."
+      }
+    },
+    {
+      "id": "6",
+      "kind": "match",
+      "answer": "C",
+      "category": "text-structure",
+      "explanation": "A kérdésre („Würde ich wieder … fahren?”) adott igen után érv kell; a C a pénz- és időmegtakarítást említi, az „Außerdem” pedig egy további érvet fűz hozzá.",
+      "evidence": "Außerdem ist die Reise selbst schon ein Teil des Urlaubs",
+      "wrongOptions": {
+        "D": "A fekvőkocsi foglalása az utazás előkészítéséhez tartozik, nem a záró értékeléshez."
+      }
+    }
+  ],
+  "glossary": [
+    { "term": "in Frage kommen", "meaning": "szóba jöhet" },
+    { "term": "abfahren", "meaning": "elindul (jármű)" },
+    { "term": "das Abteil", "meaning": "fülke (vonaton)" },
+    { "term": "der Liegewagen", "meaning": "fekvőhelyes kocsi" },
+    { "term": "das Ehepaar", "meaning": "házaspár" },
+    { "term": "der Ohrstöpsel", "meaning": "füldugó" },
+    { "term": "der Schaffner", "meaning": "kalauz" },
+    { "term": "ruckeln", "meaning": "zötykölődik, rázkódik" },
+    { "term": "bremsen", "meaning": "fékez" },
+    { "term": "glänzen", "meaning": "csillog, fénylik" },
+    { "term": "die Verspätung", "meaning": "késés" },
+    { "term": "auf jeden Fall", "meaning": "mindenképpen" }
+  ],
+  "suggestedMinutes": 12
+}

@@ -1,0 +1,144 @@
+{
+  "schemaVersion": 1,
+  "id": "kem-rd-emelt-ammonia-esettanulmany",
+  "subject": "kemia",
+  "revision": 1,
+  "level": "emelt",
+  "source": "generated",
+  "topic": "reakciok",
+  "title": "Az ammóniaszintézis – esettanulmány",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "reading",
+  "type": "esettanulmany",
+  "instructions": "Olvasd el a szöveget, majd válaszolj a kérdésekre! Az igaz–hamis állításoknál I = T, H = F; a feleletválasztós kérdéseknél egy helyes válasz van; a rövid válaszoknál számot vagy szót írj. A 0. a példa.",
+  "passage": {
+    "title": "Az ammóniaszintézis",
+    "blocks": [
+      {
+        "text": "Az ammónia (NH₃) a világ egyik legnagyobb mennyiségben gyártott vegyülete: a nitrogénműtrágyák, a salétromsav és sok műanyag alapanyaga. Ipari előállítása a Haber–Bosch-eljárással történik a levegő nitrogénjéből és földgázból nyert hidrogénből: N₂(g) + 3 H₂(g) ⇌ 2 NH₃(g). A reakció exoterm, a felírt egyenletre vonatkozó reakcióhő ΔrH = −92 kJ/mol, és egyensúlyra vezet."
+      },
+      {
+        "text": "Az egyensúlyi ammóniahányadot a Le Chatelier-elv alapján lehet növelni. Mivel a reakcióban 4 mol gázból 2 mol gáz keletkezik, a nyomás növelése az ammóniaképződés irányába tolja el az egyensúlyt, ezért az üzemekben 20–30 MPa nyomást alkalmaznak. Az exoterm reakciónak az alacsony hőmérséklet kedvezne, ekkor viszont a reakció olyan lassú lenne, hogy gazdaságtalanná válna; ezért kompromisszumként 400–500 °C-on dolgoznak, és vastartalmú katalizátort használnak. A katalizátor az egyensúly helyzetét nem változtatja meg, csak gyorsabban áll be az egyensúly."
+      },
+      {
+        "text": "A reaktorból kilépő gázelegyben egy menetben csak kb. 15 % ammónia van. Az ammóniát lehűtéssel cseppfolyósítják és leválasztják, a nem alakult nitrogént és hidrogént pedig visszavezetik a reaktorba. Az ammóniamolekula trigonális piramis alakú, a nitrogénatomon egy nemkötő elektronpár van, ezért a molekula poláris és vízben kiválóan oldódik; vizes oldata a nemkötő elektronpár protonfelvétele miatt lúgos kémhatású: NH₃ + H₂O ⇌ NH₄⁺ + OH⁻."
+      }
+    ]
+  },
+  "example": {
+    "id": "0",
+    "kind": "tf",
+    "prompt": "Az ammóniaszintézis exoterm reakció.",
+    "answer": "T",
+    "category": "egyensuly-kinetika",
+    "explanation": "Igaz. A szöveg szerint a reakcióhő negatív (ΔrH = −92 kJ/mol), a negatív előjel hőfelszabadulást, exoterm folyamatot jelent."
+  },
+  "items": [
+    {
+      "id": "1",
+      "kind": "choice",
+      "prompt": "Hogyan hat a nyomás növelése az N₂ + 3 H₂ ⇌ 2 NH₃ egyensúlyra?",
+      "options": [
+        { "key": "A", "text": "Az ammóniaképződés irányába tolja el." },
+        { "key": "B", "text": "A kiindulási anyagok irányába tolja el." },
+        { "key": "C", "text": "Nem befolyásolja az egyensúly helyzetét." },
+        { "key": "D", "text": "Csak a reakció sebességét csökkenti." }
+      ],
+      "answer": "A",
+      "category": "egyensuly-kinetika",
+      "explanation": "Helyes: A. A nyomás növelésére a rendszer úgy válaszol, hogy a gázmolekulák számát csökkentő irányba tolódik el: 4 mol gázból 2 mol ammónia keletkezik, ezért nagy nyomáson nő az egyensúlyi ammóniahányad.",
+      "wrongOptions": {
+        "B": "A kiindulási oldalon több mol gáz van (4 mol), a nyomás növelése a kevesebb molekulát tartalmazó oldal, az ammónia felé hat.",
+        "C": "A nyomás csak akkor nem befolyásolná az egyensúlyt, ha a gázmolekulák száma nem változna a reakcióban (pl. H₂ + I₂ ⇌ 2 HI).",
+        "D": "A nyomás növelése a koncentrációkat növeli, a sebességet is növeli, és az egyensúlyt is eltolja."
+      }
+    },
+    {
+      "id": "2",
+      "kind": "choice",
+      "prompt": "Miért alkalmaznak az üzemekben 400–500 °C-ot, bár az exoterm reakciónak az alacsony hőmérséklet kedvezne?",
+      "options": [
+        { "key": "A", "text": "Mert alacsony hőmérsékleten a reakció gazdaságtalanul lassú lenne." },
+        { "key": "B", "text": "Mert magas hőmérsékleten nagyobb az egyensúlyi ammóniahányad." },
+        { "key": "C", "text": "Mert az ammónia csak melegen cseppfolyósítható." },
+        { "key": "D", "text": "Mert a nitrogén csak magas hőmérsékleten oldódik hidrogénben." }
+      ],
+      "answer": "A",
+      "category": "egyensuly-kinetika",
+      "explanation": "Helyes: A. A hőmérséklet két ellentétes hatása közt kell kompromisszumot kötni: alacsony hőmérsékleten kedvezőbb az egyensúly, de kicsi a reakciósebesség. A 400–500 °C és a katalizátor együtt biztosít elfogadható sebességet és hozamot.",
+      "wrongOptions": {
+        "B": "Exoterm reakciónál a hőmérséklet emelése a kiindulási anyagok felé tolja az egyensúlyt, tehát csökkenti az ammóniahányadot.",
+        "C": "Az ammóniát éppen lehűtéssel cseppfolyósítják, a szöveg szerint is.",
+        "D": "Gázok elegyedésének nincs hőmérsékleti korlátja; ez az indok nem szerepel és nem is igaz."
+      }
+    },
+    {
+      "id": "3",
+      "kind": "text",
+      "prompt": "Hány mol hidrogén szükséges 4 mol ammónia előállításához?",
+      "answer": ["6 mol", "6"],
+      "maxWords": 2,
+      "category": "reakcioegyenlet",
+      "explanation": "Helyes: 6 mol. Az egyenlet szerint 3 mol H₂-ből 2 mol NH₃ keletkezik (3 : 2 arány), így 4 mol ammóniához 4 · 3/2 = 6 mol hidrogén kell."
+    },
+    {
+      "id": "4",
+      "kind": "tf",
+      "prompt": "A vaskatalizátor megnöveli az egyensúlyi elegy ammóniatartalmát.",
+      "answer": "F",
+      "category": "egyensuly-kinetika",
+      "explanation": "Hamis. A katalizátor az odaalakulás és a visszaalakulás sebességét egyformán növeli, ezért az egyensúly gyorsabban áll be, de a helyzete (az egyensúlyi összetétel) nem változik – a szöveg is kimondja."
+    },
+    {
+      "id": "5",
+      "kind": "text",
+      "prompt": "Milyen alakú az ammóniamolekula?",
+      "answer": ["trigonális piramis", "piramis", "háromszög alapú piramis", "trigonális piramis alakú", "piramis alakú", "háromoldalú piramis"],
+      "maxWords": 4,
+      "category": "kotes-szerkezet",
+      "explanation": "Helyes: trigonális piramis. A nitrogén körül négy elektronpár (három kötő, egy nemkötő) helyezkedik el tetraéderesen; a három hidrogén és a nitrogén egy háromszög alapú piramist alkot, a nemkötő pár a csúcs felé mutat."
+    },
+    {
+      "id": "6",
+      "kind": "choice",
+      "prompt": "Milyen kémhatású az ammónia vizes oldata, és miért?",
+      "options": [
+        { "key": "A", "text": "Savas, mert a molekula protont ad le." },
+        { "key": "B", "text": "Semleges, mert az ammónia nem reagál a vízzel." },
+        { "key": "C", "text": "Lúgos, mert a nitrogén nemkötő elektronpárja protont vesz fel a vízből, és hidroxidion marad vissza." },
+        { "key": "D", "text": "Lúgos, mert az ammónia hidroxidiont tartalmaz." }
+      ],
+      "answer": "C",
+      "category": "reakciotipus",
+      "explanation": "Helyes: C. Az ammónia Brønsted-bázis: a nitrogén nemkötő elektronpárjával protont köt meg a vízmolekulából, NH₃ + H₂O ⇌ NH₄⁺ + OH⁻, a keletkező hidroxidionok teszik lúgossá az oldatot.",
+      "wrongOptions": {
+        "A": "Az ammónia nem ad le protont, hanem felvesz; nem sav, hanem bázis.",
+        "B": "Az ammónia reagál a vízzel (protolízis), oldata lúgos.",
+        "D": "Az NH₃ molekulában nincs hidroxidion; az OH⁻ a vízből keletkezik a protonátadás során."
+      }
+    },
+    {
+      "id": "7",
+      "kind": "text",
+      "prompt": "Mennyi hő szabadul fel 1 mol ammónia képződésekor (kJ)?",
+      "answer": ["46 kJ", "46", "−46 kJ", "-46 kJ", "−46", "-46"],
+      "maxWords": 2,
+      "category": "egyensuly-kinetika",
+      "explanation": "Helyes: 46 kJ. A megadott ΔrH = −92 kJ/mol a felírt egyenletre, azaz 2 mol ammónia képződésére vonatkozik; 1 mol ammóniára ennek fele, 46 kJ hő szabadul fel (ΔkH(NH₃) = −46 kJ/mol)."
+    },
+    {
+      "id": "8",
+      "kind": "tf",
+      "prompt": "A reaktorból kilépő gáz nagyobb része ammónia.",
+      "answer": "F",
+      "category": "szovegertelmezes",
+      "explanation": "Hamis. A szöveg szerint egy menetben csak kb. 15 % ammónia keletkezik, a gázelegy nagyobb része a nem alakult nitrogén és hidrogén, amelyet visszavezetnek a reaktorba."
+    }
+  ],
+  "glossary": [
+    { "term": "Le Chatelier-elv", "meaning": "a legkisebb kényszer elve: az egyensúlyi rendszer a külső hatást (koncentráció-, nyomás-, hőmérséklet-változás) csökkentő irányba tolódik el" },
+    { "term": "katalizátor", "meaning": "anyag, amely a reakció sebességét növeli, de maga nem használódik el, és az egyensúly helyzetét nem változtatja meg" }
+  ],
+  "suggestedMinutes": 12
+}

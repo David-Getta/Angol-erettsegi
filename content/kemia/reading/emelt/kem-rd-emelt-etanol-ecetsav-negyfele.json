@@ -1,0 +1,185 @@
+{
+  "schemaVersion": 1,
+  "id": "kem-rd-emelt-etanol-ecetsav-negyfele",
+  "subject": "kemia",
+  "revision": 1,
+  "level": "emelt",
+  "source": "generated",
+  "topic": "oxigen-nitrogen-vegyuletek",
+  "title": "Etanol és ecetsav – négyféle asszociáció",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "reading",
+  "type": "negyfele-asszociacio",
+  "instructions": "Négyféle asszociáció. Döntsd el, hogy az állítások melyik anyagra vonatkoznak! A) etanol (C₂H₅OH), B) ecetsav (CH₃COOH), C) mindkettő, D) egyik sem. Írd a megfelelő betűt az állítás mellé! A 0. a példa.",
+  "example": {
+    "id": "0",
+    "kind": "choice",
+    "prompt": "Vizes oldata savas kémhatású.",
+    "options": [
+      { "key": "A", "text": "etanol" },
+      { "key": "B", "text": "ecetsav" },
+      { "key": "C", "text": "mindkettő" },
+      { "key": "D", "text": "egyik sem" }
+    ],
+    "answer": "B",
+    "category": "reakciotipus",
+    "explanation": "Helyes: B. Az ecetsav karboxilcsoportja vízben részben protont ad le (CH₃COOH + H₂O ⇌ CH₃COO⁻ + H₃O⁺), ezért oldata savas. Az etanol hidroxilcsoportja vízben nem disszociál, oldata semleges."
+  },
+  "items": [
+    {
+      "id": "1",
+      "kind": "choice",
+      "prompt": "Vízzel korlátlanul elegyedik.",
+      "options": [
+        { "key": "A", "text": "etanol" },
+        { "key": "B", "text": "ecetsav" },
+        { "key": "C", "text": "mindkettő" },
+        { "key": "D", "text": "egyik sem" }
+      ],
+      "answer": "C",
+      "category": "kotes-szerkezet",
+      "explanation": "Helyes: C. Mindkét molekula kicsi és poláris csoportot (–OH, illetve –COOH) tartalmaz, amely hidrogénkötést alakít ki a vízmolekulákkal, ezért mindkettő bármilyen arányban elegyedik vízzel.",
+      "wrongOptions": {
+        "A": "Az ecetsav is korlátlanul elegyedik vízzel (a háztartási ecet 5–20 %-os vizes oldat, de tömény oldat is készíthető).",
+        "B": "Az etanol is korlátlanul elegyedik vízzel.",
+        "D": "Mindkét anyag jól oldódik vízben a hidrogénkötések miatt."
+      }
+    },
+    {
+      "id": "2",
+      "kind": "choice",
+      "prompt": "Fémnátriummal hidrogéngáz fejlődése közben reagál.",
+      "options": [
+        { "key": "A", "text": "etanol" },
+        { "key": "B", "text": "ecetsav" },
+        { "key": "C", "text": "mindkettő" },
+        { "key": "D", "text": "egyik sem" }
+      ],
+      "answer": "C",
+      "category": "reakcioegyenlet",
+      "explanation": "Helyes: C. Mindkét vegyületben oxigénhez kötött, savas jellegű hidrogén van, amelyet a nátrium kiszorít: 2 C₂H₅OH + 2 Na → 2 C₂H₅ONa + H₂ (nátrium-etoxid), illetve 2 CH₃COOH + 2 Na → 2 CH₃COONa + H₂ (nátrium-acetát). Az ecetsav hevesebben reagál.",
+      "wrongOptions": {
+        "A": "Az ecetsav is reagál nátriummal, sőt hevesebben.",
+        "B": "Az etanol is reagál nátriummal (nátrium-etoxid és hidrogén keletkezik).",
+        "D": "Mindkettőre igaz, mert mindkettőben O–H kötésű, leadható hidrogén van."
+      }
+    },
+    {
+      "id": "3",
+      "kind": "choice",
+      "prompt": "Nátrium-hidroxid-oldattal sót képez.",
+      "options": [
+        { "key": "A", "text": "etanol" },
+        { "key": "B", "text": "ecetsav" },
+        { "key": "C", "text": "mindkettő" },
+        { "key": "D", "text": "egyik sem" }
+      ],
+      "answer": "B",
+      "category": "reakciotipus",
+      "explanation": "Helyes: B. Az ecetsav sav, ezért a lúggal sav–bázis reakcióban sót és vizet ad: CH₃COOH + NaOH → CH₃COONa + H₂O. Az etanol nem elég erős sav ahhoz, hogy a hidroxidionnak protont adjon át, nem reagál NaOH-dal.",
+      "wrongOptions": {
+        "A": "Az etanol nem sav, a NaOH-oldattal nem reagál (csak elegyedik vele).",
+        "C": "Csak az ecetsavra igaz.",
+        "D": "Az ecetsavra igaz: nátrium-acetát keletkezik."
+      }
+    },
+    {
+      "id": "4",
+      "kind": "choice",
+      "prompt": "Enyhe oxidációjával aldehid keletkezik.",
+      "options": [
+        { "key": "A", "text": "etanol" },
+        { "key": "B", "text": "ecetsav" },
+        { "key": "C", "text": "mindkettő" },
+        { "key": "D", "text": "egyik sem" }
+      ],
+      "answer": "A",
+      "category": "reakciotipus",
+      "explanation": "Helyes: A. Az etanol (primer alkohol) enyhe oxidációjakor a hidroxilcsoportos szénatomról két hidrogén távozik, acetaldehid (etanal, CH₃CHO) keletkezik; további oxidációval ecetsav. Az ecetsav már a legmagasabb oxidációs fokú tag, enyhén nem oxidálható tovább.",
+      "wrongOptions": {
+        "B": "Az ecetsav nem oxidálható aldehiddé: az aldehid az ecetsav redukciójával keletkezne, nem oxidációval.",
+        "C": "Csak az etanolra igaz.",
+        "D": "Az etanolra igaz az állítás (etanol → acetaldehid → ecetsav oxidációs sor)."
+      }
+    },
+    {
+      "id": "5",
+      "kind": "choice",
+      "prompt": "Nátrium-hidrogén-karbonát-oldattal pezsgés (gázfejlődés) közben reagál.",
+      "options": [
+        { "key": "A", "text": "etanol" },
+        { "key": "B", "text": "ecetsav" },
+        { "key": "C", "text": "mindkettő" },
+        { "key": "D", "text": "egyik sem" }
+      ],
+      "answer": "B",
+      "category": "reakcioegyenlet",
+      "explanation": "Helyes: B. A szénsavnál erősebb ecetsav a hidrogén-karbonátból szén-dioxidot szabadít fel: CH₃COOH + NaHCO₃ → CH₃COONa + H₂O + CO₂. Ez a karbonsavak jellemző kimutatási reakciója; az etanol nem reagál.",
+      "wrongOptions": {
+        "A": "Az etanol nem sav, nem szabadít fel szén-dioxidot a hidrogén-karbonátból.",
+        "C": "Csak az ecetsavra igaz.",
+        "D": "Az ecetsavra igaz: ez a „szódabikarbóna + ecet” pezsgés."
+      }
+    },
+    {
+      "id": "6",
+      "kind": "choice",
+      "prompt": "Standardállapotban gáz-halmazállapotú.",
+      "options": [
+        { "key": "A", "text": "etanol" },
+        { "key": "B", "text": "ecetsav" },
+        { "key": "C", "text": "mindkettő" },
+        { "key": "D", "text": "egyik sem" }
+      ],
+      "answer": "D",
+      "category": "anyagismeret",
+      "explanation": "Helyes: D. Mindkettő folyadék: az etanol forráspontja 78 °C, az ecetsavé 118 °C (a tiszta ecetsav 17 °C alatt megfagy, ezért „jégecet”). A magas forráspontot a molekulák közti hidrogénkötések okozzák.",
+      "wrongOptions": {
+        "A": "Az etanol folyadék (fp. 78 °C).",
+        "B": "Az ecetsav folyadék (fp. 118 °C).",
+        "C": "Egyikük sem gáz standardállapotban."
+      }
+    },
+    {
+      "id": "7",
+      "kind": "choice",
+      "prompt": "Tömény kénsavval hevítve vízelvonással (eliminációval) etén keletkezik belőle.",
+      "options": [
+        { "key": "A", "text": "etanol" },
+        { "key": "B", "text": "ecetsav" },
+        { "key": "C", "text": "mindkettő" },
+        { "key": "D", "text": "egyik sem" }
+      ],
+      "answer": "A",
+      "category": "reakciotipus",
+      "explanation": "Helyes: A. Az etanolból tömény kénsav jelenlétében, kb. 170 °C-on egy vízmolekula lép ki a szomszédos szénatomokról, és etén (C₂H₄) keletkezik: C₂H₅OH → C₂H₄ + H₂O. Az ecetsavból nem keletkezik etén.",
+      "wrongOptions": {
+        "B": "Az ecetsav kénsavval nem ad etént; a karboxilcsoportból nem lép ki így víz.",
+        "C": "Csak az etanolra igaz.",
+        "D": "Az etanolra igaz: ez az alkoholok eliminációs reakciója."
+      }
+    },
+    {
+      "id": "8",
+      "kind": "choice",
+      "prompt": "Molekulájában oxocsoport (C=O) is található.",
+      "options": [
+        { "key": "A", "text": "etanol" },
+        { "key": "B", "text": "ecetsav" },
+        { "key": "C", "text": "mindkettő" },
+        { "key": "D", "text": "egyik sem" }
+      ],
+      "answer": "B",
+      "category": "szerves-elnevezes",
+      "explanation": "Helyes: B. A karboxilcsoport (–COOH) egy oxocsoportból (C=O) és egy hidroxilcsoportból (–OH) áll, amelyek ugyanahhoz a szénatomhoz kapcsolódnak. Az etanolban csak hidroxilcsoport van, kettős kötés nincs.",
+      "wrongOptions": {
+        "A": "Az etanol funkciós csoportja csak a hidroxilcsoport; nincs benne C=O.",
+        "C": "Csak az ecetsavra igaz.",
+        "D": "Az ecetsav karboxilcsoportjában van oxocsoport."
+      }
+    }
+  ],
+  "glossary": [],
+  "suggestedMinutes": 9
+}
