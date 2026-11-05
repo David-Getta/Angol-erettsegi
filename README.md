@@ -85,6 +85,19 @@ a szintet (közép/emelt), a vizsga dátumát és a célszázalékot.
 - A **beszédfelismerés** (szóbeli) a Web Speech API-t használja, ez **Chrome-ban/Edge-ben** működik
   (a Chrome ehhez internetkapcsolatot használ). Más böngészőben a választ be is gépelheted.
 
+### Frissítés új verzióra (az adataid megtartásával)
+
+A haladásod (`data/app.db`), a biztonsági mentések (`data/backups/`) és a javításra váró beadások (`exchange/`) **nincsenek benne** a
+letöltött ZIP-ben – ezek csak a te gépeden vannak. Ezért frissítéskor **ne töröld a régi mappát**:
+
+1. Állítsd le az appot (a terminálban Ctrl+C).
+2. Csomagold ki az új ZIP-et egy ideiglenes helyre, és a benne lévő `angol-erettsegi` mappa **tartalmát** másold rá a régi mappára
+   (Mac Finderben: kijelölöd a fájlokat → Másolás → a régi mappában Beillesztés → „Cserél”/„Az összes cseréje”). A `data/` és az `exchange/`
+   mappához nem kell nyúlni, azok a helyükön maradnak.
+3. A régi mappában: `npm install`, majd `npm run dev`. Az adatbázis automatikusan frissül (az indításkor biztonsági mentés is készül).
+
+Ha bizonytalan vagy, előbb az app **Beállítások → Adatok → Mentés** gombjával készíts mentést, vagy másold el a `data/` mappát.
+
 ## A javítás menete lépésről lépésre
 
 Az írás- és a szóbeli javítás **nem azonnali**: a beadás után két út közül választhatsz.
