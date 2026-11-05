@@ -2,7 +2,7 @@ import { beforeAll, describe, expect, it } from "vitest";
 import { seedContent } from "@/lib/content/seed";
 import { getDb } from "@/lib/db/client";
 import { itemAttempts } from "@/lib/db/schema";
-import { pickMistakes } from "@/lib/targeted";
+import { fixedMistakes, pickMistakes } from "@/lib/targeted";
 import { getLesson, lessonOverview } from "@/lib/lessons";
 import { examConfig } from "@/lib/exam/config";
 import { addFixCard, reviewQueue } from "@/lib/vocab/cards";
@@ -34,6 +34,10 @@ describe("mistake review", () => {
     expect(later).toBeGreaterThanOrEqual(1);
     // every due item carries its context sentence for the runner
     expect(due.every((d) => d.context.length > 0)).toBe(true);
+    // item 3: wrong, then right → one fixed mistake (30 hours ago, so within 30 days but not within 1 day)
+    expect(fixedMistakes()).toBe(1);
+    expect(fixedMistakes(30)).toBe(1);
+    expect(fixedMistakes(1)).toBe(0);
   });
 
   it("lists every error category in the Szabálytár overview", () => {

@@ -71,3 +71,25 @@ describe("levenshtein", () => {
     expect(levenshtein("", "abc")).toBe(3);
   });
 });
+
+describe("numbers written in words", () => {
+  it("turns number words into digits", async () => {
+    const { numberWordsToDigits } = await import("@/lib/scoring/check");
+    expect(numberWordsToDigits("two hundred and forty")).toBe("240");
+    expect(numberWordsToDigits("a hundred and fifty")).toBe("150");
+    expect(numberWordsToDigits("nine people")).toBe("9 people");
+    expect(numberWordsToDigits("twenty-five euros")).toBe("25 euros");
+    expect(numberWordsToDigits("two thousand and twenty")).toBe("2020");
+    expect(numberWordsToDigits("bread and butter")).toBe("bread and butter");
+    expect(numberWordsToDigits("a lot of time")).toBe("a lot of time");
+    expect(numberWordsToDigits("one-way ticket")).toBe("one-way ticket");
+  });
+
+  it("accepts a number in words when the key has digits and vice versa", async () => {
+    const { checkItem } = await import("@/lib/scoring/check");
+    const item = { id: "1", kind: "text" as const, answer: ["240"], category: "detail", explanation: "x", points: 1 };
+    expect(checkItem({}, item, "two hundred and forty").correct).toBe(true);
+    expect(checkItem({}, { ...item, answer: ["nine people"] }, "9 people").correct).toBe(true);
+    expect(checkItem({}, item, "241").correct).toBe(false);
+  });
+});

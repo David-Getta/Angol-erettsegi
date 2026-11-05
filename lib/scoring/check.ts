@@ -25,6 +25,72 @@ export function normalizeAnswer(raw: string): string {
   return s;
 }
 
+const UNITS: Record<string, number> = {
+  zero: 0, one: 1, two: 2, three: 3, four: 4, five: 5, six: 6, seven: 7, eight: 8, nine: 9, ten: 10,
+  eleven: 11, twelve: 12, thirteen: 13, fourteen: 14, fifteen: 15, sixteen: 16, seventeen: 17, eighteen: 18, nineteen: 19,
+};
+const TENS: Record<string, number> = { twenty: 20, thirty: 30, forty: 40, fifty: 50, sixty: 60, seventy: 70, eighty: 80, ninety: 90 };
+const SCALES: Record<string, number> = { hundred: 100, thousand: 1000, million: 1_000_000 };
+const isNumberPart = (w: string) => w in UNITS || w in TENS || w in SCALES;
+const isNumberToken = (t: string | undefined) => !!t && t.split("-").every(isNumberPart);
+
+/**
+ * Numbers written in words become digits ("two hundred and forty" → "240",
+ * "nine people" → "9 people"), so a short answer is right whichever way the
+ * student writes the number. Expects an already normalized (lower-case) string.
+ */
+export function numberWordsToDigits(s: string): string {
+  const tokens = s.split(" ");
+  const out: string[] = [];
+  let i = 0;
+  while (i < tokens.length) {
+    let j = i;
+    let total = 0;
+    let current = 0;
+    let used = false;
+    let lastWasScale = false;
+    while (j < tokens.length) {
+      const tok = tokens[j]!;
+      if (!used && tok === "a" && tokens[j + 1] && tokens[j + 1]! in SCALES) {
+        current = 1;
+        j++;
+        continue;
+      }
+      if (used && tok === "and" && lastWasScale && isNumberToken(tokens[j + 1])) {
+        j++;
+        continue;
+      }
+      if (!isNumberToken(tok)) break;
+      for (const part of tok.split("-")) {
+        if (part in UNITS) current += UNITS[part]!;
+        else if (part in TENS) current += TENS[part]!;
+        else if (part === "hundred") current = (current || 1) * 100;
+        else {
+          total += (current || 1) * SCALES[part]!;
+          current = 0;
+        }
+        lastWasScale = part in SCALES;
+      }
+      used = true;
+      j++;
+    }
+    if (used) {
+      out.push(String(total + current));
+      i = j;
+    } else {
+      out.push(tokens[i]!);
+      i++;
+    }
+  }
+  return out.join(" ");
+}
+
+/** Normalization used when checking an answer: normalizeAnswer + numbers as digits. */
+export function normalizeForCheck(raw: string): string {
+  const s = normalizeAnswer(raw);
+  return s === CORRECT_MARKER ? s : numberWordsToDigits(s);
+}
+
 /** Classic Levenshtein distance (small strings only). */
 export function levenshtein(a: string, b: string): number {
   if (a === b) return 0;
@@ -86,8 +152,8 @@ export function checkItem(
   const base = { itemId: item.id, given, maxPoints, category: item.category };
 
   if (item.kind === "text") {
-    const g = normalizeAnswer(given);
-    const accepted = item.answer.map(normalizeAnswer);
+    const g = normalizeForCheck(given);
+    const accepted = item.answer.map(normalizeForCheck);
     const expected = item.answer[0]!;
     let correct = g.length > 0 && accepted.includes(g);
     let near = false;

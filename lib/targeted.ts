@@ -102,6 +102,22 @@ export function pickMistakes(level: Level, count: number, minAgeHours: number, n
   return { due: due.slice(0, count), later: pool.length - due.length + Math.max(0, due.length - count) };
 }
 
+/** Items answered wrong at some point whose latest attempt is correct (optionally: fixed within the last `sinceDays`). */
+export function fixedMistakes(sinceDays?: number, now = Date.now()): number {
+  const history = getDb().select().from(itemAttempts).all();
+  const state = new Map<string, { everWrong: boolean; last: boolean; at: number }>();
+  for (const h of history.sort((a, b) => a.createdAt.getTime() - b.createdAt.getTime())) {
+    const k = `${h.taskId}:${h.itemId}`;
+    const cur = state.get(k) ?? { everWrong: false, last: false, at: 0 };
+    if (!h.correct) cur.everWrong = true;
+    cur.last = h.correct;
+    cur.at = h.createdAt.getTime();
+    state.set(k, cur);
+  }
+  const since = sinceDays === undefined ? 0 : now - sinceDays * 864e5;
+  return [...state.values()].filter((v) => v.everWrong && v.last && v.at >= since).length;
+}
+
 export function countBankItems(category: string, level: Level): number {
   return bankItemsFor([category], level).length;
 }

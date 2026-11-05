@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { categoryStats, recentErrors, weeklyTrend } from "@/lib/errors/log";
-import { pickMistakes } from "@/lib/targeted";
+import { fixedMistakes, pickMistakes } from "@/lib/targeted";
 import { AddFixCardButton } from "@/components/vocab/AddFixCardButton";
 import { countBankItems } from "@/lib/targeted";
 import { examConfig } from "@/lib/exam/config";
@@ -23,6 +23,8 @@ export default async function ErrorLogPage({ searchParams }: { searchParams: Pro
   const recent = recentErrors(60, k || undefined);
   const names = Object.fromEntries(examConfig.errorCategories().categories.map((c) => [c.id, c.name]));
   const review = pickMistakes(s.level, app.review.itemsPerRound, app.review.minAgeHours);
+  const fixedAll = fixedMistakes();
+  const fixed30 = fixedMistakes(30);
 
   return (
     <div>
@@ -30,11 +32,18 @@ export default async function ErrorLogPage({ searchParams }: { searchParams: Pro
         title={t.errorLog.title}
         intro={t.errorLog.intro}
         actions={
-          review.due.length > 0 ? (
-            <Link href="/hibanaplo/ujraproba" className={btn.primary} data-testid="review-mistakes">
-              ↻ {t.languageUse.reviewButton(review.due.length)}
-            </Link>
-          ) : null
+          <>
+            {fixedAll > 0 && (
+              <Badge tone="good" title={t.languageUse.fixedHint}>
+                {t.languageUse.fixed(fixedAll, fixed30)}
+              </Badge>
+            )}
+            {review.due.length > 0 && (
+              <Link href="/hibanaplo/ujraproba" className={btn.primary} data-testid="review-mistakes">
+                ↻ {t.languageUse.reviewButton(review.due.length)}
+              </Link>
+            )}
+          </>
         }
       />
       {stats.length === 0 ? (

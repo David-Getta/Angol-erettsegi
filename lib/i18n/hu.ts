@@ -157,6 +157,8 @@ export const t = {
     reviewNone: "Most nincs esedékes hibád. Ügyes!",
     reviewLater: (n: number) => `${n} további mondat később lesz esedékes.`,
     reviewButton: (n: number) => `Hibáim újrapróbálása (${n})`,
+    fixed: (all: number, d30: number) => `✓ ${all} kijavított hiba (az elmúlt 30 napban ${d30})`,
+    fixedHint: "Olyan mondatok, amelyeket egyszer elrontottál, de a legutóbbi próbálkozásra már helyesen oldottál meg.",
     targetedIntro: "A hibanaplód leggyakoribb kategóriáiból válogatott itemek a feladatbankból.",
     targetedPick: "Válassz kategóriát",
     targetedTop: "A leggyakoribb hibáid alapján",

@@ -3,7 +3,7 @@
 import { useCallback, useEffect, useRef, useState } from "react";
 import Link from "next/link";
 import { t } from "@/lib/i18n/hu";
-import { normalizeAnswer } from "@/lib/scoring/check";
+import { normalizeForCheck } from "@/lib/scoring/check";
 import { reviewCardAction } from "@/app/actions-vocab";
 import { speak } from "@/components/speech";
 import { Card, ProgressBar, btn } from "@/components/ui";
@@ -34,8 +34,8 @@ export function ReviewSession({ initial, ttsRate }: { initial: ReviewCard[]; tts
   const total = initial.length;
 
   const answerTerm = card && card.type !== "en-hu";
-  const accepted = card ? (card.type === "fix" ? card.front.split(" / ") : [card.front]).map(normalizeAnswer) : [];
-  const typedOk = card && typed.trim() ? accepted.includes(normalizeAnswer(typed)) : null;
+  const accepted = card ? (card.type === "fix" ? card.front.split(" / ") : [card.front]).map(normalizeForCheck) : [];
+  const typedOk = card && typed.trim() ? accepted.includes(normalizeForCheck(typed)) : null;
 
   const rate = useCallback(
     async (r: 1 | 2 | 3 | 4) => {
