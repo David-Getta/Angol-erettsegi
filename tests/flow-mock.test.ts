@@ -29,7 +29,7 @@ beforeAll(() => {
 describe("mock exam flow", () => {
   it("runs a full written mock and computes parts, percentage, minimum check and grade", async () => {
     const { seedContent } = await import("@/lib/content/seed");
-    const { startMock, getMock, startPart, submitPart, refreshMockResult, secondsLeft, availableSets } = await import("@/lib/mock");
+    const { startMock, getMock, startPart, submitPart, refreshMockResult, secondsLeft, availableSets, mockWeakCategories } = await import("@/lib/mock");
     const { applyPastedFeedback, rubricRefFor, listSubmissions } = await import("@/lib/submissions");
     const { examConfig, levelStructure } = await import("@/lib/exam/config");
     const { getObjective } = await import("@/lib/tasks");
@@ -121,6 +121,11 @@ describe("mock exam flow", () => {
     expect(r.writtenPoints).toBe(written);
     expect(r.writtenPct).toBe(Math.round((written / 120) * 100));
     expect(r.outcome.points).toBe(written + r.oralEstimate.points);
+    // the categories that cost the most are listed (empty language use → its categories are wrong)
+    const weak = mockWeakCategories(id);
+    expect(weak.length).toBeGreaterThan(0);
+    expect(weak[0]!.wrong).toBeGreaterThan(0);
+    expect(weak.every((w, i) => i === 0 || weak[i - 1]!.wrong >= w.wrong)).toBe(true);
     // no unused set remains
     expect(availableSets("emelt")).toBe(0);
   });

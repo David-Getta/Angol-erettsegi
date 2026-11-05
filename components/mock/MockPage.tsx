@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { getMock, refreshMockResult, secondsLeft, type MockKind, type MockPlan, type MockResult } from "@/lib/mock";
+import { getMock, mockWeakCategories, refreshMockResult, secondsLeft, type MockKind, type MockPlan, type MockResult } from "@/lib/mock";
 import { getContent } from "@/lib/tasks";
 import type { Level, ObjectiveTask, WritingTask } from "@/lib/content/schema";
 import { labelMaps, levelStructure } from "@/lib/exam/config";
@@ -57,6 +57,7 @@ export function MockResultView({ kind, level, result, mockId }: { kind: MockKind
   const o = result.outcome;
   const pendingWriting = result.parts.some((p) => p.pending);
   const subs = listSubmissions("writing").filter((s) => s.mockExamId === mockId);
+  const weak = mockWeakCategories(mockId);
   return (
     <div className="space-y-5" data-testid="mock-result">
       {pendingWriting && (
@@ -159,6 +160,27 @@ export function MockResultView({ kind, level, result, mockId }: { kind: MockKind
             {o.failedByMinimum && <p className="mt-2 text-sm text-bad">{t.dashboard.warnPart(o.parts.filter((p) => p.belowMinimum).map((p) => result.parts.find((x) => x.part === p.part)?.name ?? p.part).join(", "))}</p>}
           </Card>
         </div>
+      )}
+      {weak.length > 0 && (
+        <Card title={t.weak.title}>
+          <p className="mb-3 text-sm text-muted">{t.weak.intro}</p>
+          <ul className="divide-y divide-border text-sm" data-testid="weak-categories">
+            {weak.map((w) => (
+              <li key={w.category} className="flex flex-wrap items-center gap-x-3 gap-y-1 py-2">
+                <span className="min-w-0 flex-1 font-medium">{w.name}</span>
+                <span className="text-muted">{t.weak.wrong(w.wrong, w.total)}</span>
+                <Link href={`/szabalytar/${w.category}`} className={btn.small}>
+                  § {t.weak.lesson}
+                </Link>
+                {w.group !== "comprehension" && w.group !== "writing" && (
+                  <Link href={`/nyelvhelyesseg/celzott?k=${w.category}`} className={btn.small}>
+                    ↻ {t.weak.practice}
+                  </Link>
+                )}
+              </li>
+            ))}
+          </ul>
+        </Card>
       )}
       <p className="text-xs text-muted">Szint: {t.level[level]}</p>
     </div>

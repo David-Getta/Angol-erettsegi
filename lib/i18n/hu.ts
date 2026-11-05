@@ -184,6 +184,14 @@ export const t = {
     voices: "Hangok",
   },
 
+  weak: {
+    title: "Ezeken érdemes dolgoznod",
+    intro: "Azok a hibakategóriák, amelyekben ebben a tesztben a legtöbbet hibáztál (feladatok és az írás javítása alapján).",
+    wrong: (n: number, total: number) => (total > n ? `${n} hiba / ${total} item` : `${n} hiba`),
+    lesson: "Szabály",
+    practice: "Célzott gyakorlás",
+  },
+
   sample: {
     title: "Mintaválasz",
     hint: "Előbb próbáld meg magad, és csak utána hasonlítsd össze – a mintaválasz egy lehetséges jó megoldás, nem az egyetlen.",

@@ -1,6 +1,6 @@
-import { and, desc, eq } from "drizzle-orm";
+import { and, desc, eq, inArray } from "drizzle-orm";
 import { getDb } from "@/lib/db/client";
-import { attempts, mockExams, submissions, tasks, type MockExamRow } from "@/lib/db/schema";
+import { attempts, errors, mockExams, submissions, tasks, type MockExamRow } from "@/lib/db/schema";
 import type { Level, WritingTask } from "@/lib/content/schema";
 import { examConfig, levelStructure, part as partDef, type PartId, WRITTEN_PARTS } from "@/lib/exam/config";
 import { convertToExamPoints, examOutcome, totalPercent, type ExamOutcome, type PartScore } from "@/lib/scoring/exam";
@@ -295,4 +295,34 @@ export function refreshMockResult(id: number): MockResult | null {
     .where(eq(mockExams.id, id))
     .run();
   return result;
+}
+
+export type WeakCategory = { category: string; name: string; group: string; wrong: number; total: number };
+
+/**
+ * The error categories that cost the most in one mock exam / diagnostic:
+ * wrong objective items plus the corrections of its graded writing.
+ */
+export function mockWeakCategories(mockId: number, limit = 6): WeakCategory[] {
+  const db = getDb();
+  const cats = new Map(examConfig.errorCategories().categories.map((c) => [c.id, c]));
+  const counts = new Map<string, { wrong: number; total: number }>();
+  const bump = (id: string, wrong: boolean) => {
+    const cur = counts.get(id) ?? { wrong: 0, total: 0 };
+    cur.total++;
+    if (wrong) cur.wrong++;
+    counts.set(id, cur);
+  };
+  for (const a of db.select({ results: attempts.results }).from(attempts).where(eq(attempts.mockExamId, mockId)).all()) {
+    for (const r of (a.results as { category: string; correct: boolean }[]) ?? []) bump(r.category, !r.correct);
+  }
+  const subIds = db.select({ id: submissions.id }).from(submissions).where(eq(submissions.mockExamId, mockId)).all().map((x) => x.id);
+  if (subIds.length) {
+    for (const e of db.select({ category: errors.category }).from(errors).where(inArray(errors.sourceId, subIds)).all()) bump(e.category, true);
+  }
+  return [...counts]
+    .filter(([, v]) => v.wrong > 0)
+    .map(([category, v]) => ({ category, name: cats.get(category)?.name ?? category, group: cats.get(category)?.group ?? "grammar", ...v }))
+    .sort((a, b) => b.wrong - a.wrong || a.name.localeCompare(b.name, "hu"))
+    .slice(0, limit);
 }
