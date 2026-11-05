@@ -1,0 +1,45 @@
+{
+  "schemaVersion": 1,
+  "id": "lu-kozep-hedgehog-highway-missing-words",
+  "revision": 1,
+  "level": "kozep",
+  "source": "generated",
+  "topic": "kornyezet",
+  "title": "A highway for hedgehogs",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "language-use",
+  "type": "missing-words",
+  "instructions": "Some words are missing from the text. In each numbered place (1–10) ONE word is missing. Write the missing word. There is an example (0) at the beginning.",
+  "instructionsHu": "A szövegből szavak maradtak ki: minden számozott helyen EGY szó hiányzik. Írd be a hiányzó szót. A 0. a példa.",
+  "passage": {
+    "title": "A highway for hedgehogs",
+    "blocks": [
+      { "text": "The hedgehog is one of [[0]] most popular wild animals in Hungary, but in many towns hedgehog numbers are falling. One of the biggest problems is fences. A hedgehog needs to travel a long way every night to find enough food, but walls and fences stop it [[1]] moving from one garden to another." },
+      { "text": "Two years ago, the people living in Pipacs Street in Pécs decided to do something about it. Together they cut small holes, about [[2]] size of a CD, at the bottom of their fences. Now the gardens [[3]] connected, and the hedgehogs can move freely along the whole street. The neighbours call it a 'hedgehog highway'." },
+      { "text": "The idea came from Réka Fehér, a biology teacher who lives [[4]] number 14. 'Before we started, I [[5]] seen photos of hedgehog highways in England, and I thought it was [[6]] brilliant idea,' she says. 'It costs nothing, and it only takes ten minutes to make a hole.'" },
+      { "text": "The results [[7]] been fantastic. Last summer the neighbours counted eleven hedgehogs, and several [[8]] them had babies. Other streets in the town are now interested [[9]] the idea, too. If you want to help, Réka has some advice: don't use chemicals in your garden, and never give hedgehogs milk, because it makes [[10]] ill." }
+    ]
+  },
+  "example": {
+    "id": "0",
+    "kind": "text",
+    "answer": ["the"],
+    "category": "article",
+    "explanation": "„one of the + felsőfok + többes számú főnév”: one of the most popular wild animals. Felsőfok előtt mindig határozott névelő áll."
+  },
+  "items": [
+    { "id": "1", "kind": "text", "answer": ["from"], "category": "preposition", "explanation": "„stop somebody / something from doing something” = megakadályoz valamit abban, hogy … A „from” után az ige -ing alakban áll: stop it from moving." },
+    { "id": "2", "kind": "text", "answer": ["the"], "category": "article", "explanation": "„about the size of something” = körülbelül akkora, mint … A „size” után „of” jön, és a méret konkrét, meghatározott (a CD mérete), ezért határozott névelő kell: about the size of a CD." },
+    { "id": "3", "kind": "text", "answer": ["are"], "category": "passive", "explanation": "A kertek nem maguk kötnek össze valamit, hanem össze vannak kötve → be + 3. alak (connected). A „Now” és a mondat folytatása (can move) jelen időt jelez, többes számú alany: are connected." },
+    { "id": "4", "kind": "text", "answer": ["at"], "category": "preposition", "explanation": "Házszám előtt „at” áll: she lives at number 14 (a 14-es számú házban lakik). Az utcanév előtt „in” vagy „on” lehet, de a házszám előtt „at”." },
+    { "id": "5", "kind": "text", "answer": ["had", "'d"], "category": "tense", "explanation": "A „Before we started” múltbeli időpont, és a fotókat még ELŐTTE látta: a múltbeli pont előtti cselekvésre past perfect kell: had seen. A hiányzó szó a „had” segédige (összevonva: I'd)." },
+    { "id": "6", "kind": "text", "answer": ["a"], "category": "article", "explanation": "Egyes számú, megszámlálható főnév (idea) előtt névelő kell, itt határozatlan: a brilliant idea. A magyarban („nagyszerű ötlet”) nincs névelő, ezért könnyű kihagyni; a „brilliant” mássalhangzóval kezdődik, ezért „a”." },
+    { "id": "7", "kind": "text", "answer": ["have"], "category": "tense", "explanation": "Az eredmények a múltban kezdődtek, de a jelenre nézve összegezzük őket: present perfect, többes számú alannyal: The results have been fantastic. A „been” előtt hiányzik a „have” segédige." },
+    { "id": "8", "kind": "text", "answer": ["of"], "category": "quantifier", "explanation": "Mennyiségjelző (several, many, some, most) és névmás (them, us) között kötelező az „of”: several of them = közülük több." },
+    { "id": "9", "kind": "text", "answer": ["in"], "category": "preposition", "explanation": "„be interested in something” = érdeklődik valami iránt. A melléknév vonzata mindig „in” – nem „for” vagy „about”." },
+    { "id": "10", "kind": "text", "answer": ["them", "hedgehogs"], "category": "pronoun", "explanation": "A „make somebody ill” szerkezetben az ige után tárgyesetű névmás kell, amely a sünökre (hedgehogs, többes szám) utal: it makes them ill. A „they” alanyeset, itt hibás; a főnév megismétlése (hedgehogs) is elfogadható, de a névmás a természetesebb." }
+  ],
+  "glossary": [],
+  "suggestedMinutes": 10
+}
