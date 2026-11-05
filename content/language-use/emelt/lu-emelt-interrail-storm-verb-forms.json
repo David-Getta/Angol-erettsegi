@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "id": "lu-emelt-interrail-storm-verb-forms",
-  "revision": 1,
+  "revision": 2,
   "level": "emelt",
   "source": "generated",
   "topic": "utazas",
@@ -130,10 +130,12 @@
       "kind": "text",
       "cue": "do",
       "answer": [
-        "were doing"
+        "were doing",
+        "had been doing",
+        "'d been doing"
       ],
       "category": "reported-speech",
-      "explanation": "Függő kérdés múlt idejű „asked” után: „What are you doing in Salzburg?” → she asked us what we were doing. Az igeidő egy lépéssel visszalép, és a szórend kijelentő (we were doing, nem „were we doing”)."
+      "explanation": "Függő kérdés múlt idejű „asked” után: „What are you doing in Salzburg?” → she asked us what we were doing. Az igeidő egy lépéssel visszalép, és a szórend kijelentő (we were doing, nem „were we doing”). Ha az eredeti kérdés „What have you been doing in Salzburg?” volt, a „had been doing” is helyes."
     },
     {
       "id": "9",
@@ -164,10 +166,12 @@
       "answer": [
         "would never have met",
         "'d never have met",
-        "would have never met"
+        "would have never met",
+        "'d have never met",
+        "might never have met"
       ],
       "category": "conditional",
-      "explanation": "Harmadik feltételes mondat (múltbeli, nem valós helyzet): If we had (found a bed), we would never have met Ingrid. Szerkezet: would + have + 3. alak; a „never” a „would” után áll."
+      "explanation": "Harmadik feltételes mondat (múltbeli, nem valós helyzet): If we had (found a bed), we would never have met Ingrid. Szerkezet: would + have + 3. alak; a „never” a „would” után áll. A „might never have met” (lehet, hogy sosem találkoztunk volna) is helyes."
     },
     {
       "id": "12",
