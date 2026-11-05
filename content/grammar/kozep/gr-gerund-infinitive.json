@@ -1,0 +1,177 @@
+{
+  "schemaVersion": 1,
+  "id": "gr-gerund-infinitive",
+  "level": "kozep",
+  "source": "generated",
+  "topic": "nyelvtan",
+  "title": "-ing vagy főnévi igenév",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "grammar",
+  "type": "lesson",
+  "category": "gerund-infinitive",
+  "summaryHu": "Ha egy ige, melléknév vagy elöljárószó után újabb ige következik, angolul el kell dönteni, hogy -ing alak (gerund), to + ige (főnévi igenév) vagy to nélküli puszta ige kell-e. A magyarban ilyenkor szinte mindig főnévi igenevet vagy hogy-os mellékmondatot használunk („szeretek olvasni”, „kerülte, hogy találkozzanak”), ezért a magyar tanulók hajlamosak mindenhol to + igét írni. A nyelvhelyességi feladatokban (igealakok, feleletválasztós és nyitott kloze) ez az egyik leggyakoribb kérdés, és íráskor is gyakori hiba.",
+  "rules": [
+    {
+      "title": "-ing alak bizonyos igék után és alanyként",
+      "explanation": "Egyes igék után a következő ige mindig -ing alakban áll: enjoy, finish, mind, avoid, suggest, consider, practise, keep (on), give up, carry on, can't stand, can't help, imagine, miss, admit, deny, risk. Az -ing alak főnévként is működik, ezért mondat alanya is lehet (Swimming is good for you).",
+      "emeltOnly": false,
+      "examples": [
+        { "en": "I enjoy cooking for my friends.", "hu": "Szeretek főzni a barátaimnak.", "note": "Nem *enjoy to cook." },
+        { "en": "Would you mind opening the window?", "hu": "Kinyitnád az ablakot?" },
+        { "en": "He suggested going to the cinema.", "hu": "Azt javasolta, hogy menjünk moziba.", "note": "A suggest után nem állhat to + ige." }
+      ]
+    },
+    {
+      "title": "Elöljárószó után mindig -ing",
+      "explanation": "Ha az ige elöljárószó után áll, -ing alakot kap: interested in, good at, afraid of, tired of, keen on, instead of, before, after, without, by (+ -ing = valamilyen módon), thank you for. Vigyázz: néhány kifejezésben a to nem a főnévi igenév jele, hanem elöljárószó, ezért utána is -ing áll: look forward to, be used to, get used to, object to.",
+      "emeltOnly": false,
+      "examples": [
+        { "en": "She's very good at drawing.", "hu": "Nagyon jól rajzol." },
+        { "en": "I'm looking forward to seeing you.", "hu": "Már nagyon várom, hogy találkozzunk.", "note": "A to itt elöljárószó: to seeing, nem *to see." },
+        { "en": "He left without saying goodbye.", "hu": "Elköszönés nélkül ment el." }
+      ]
+    },
+    {
+      "title": "to + ige: igék, melléknevek után és célhatározóként",
+      "explanation": "Más igék után to + ige áll: want, would like, decide, hope, plan, agree, refuse, promise, offer, manage, learn, afford, expect, seem, need, choose, forget (to do). Melléknevek után is to + ige áll (happy to help, easy to understand, too tired to go, old enough to drive). A célt (azért, hogy …) to + igével (vagy in order to-val) fejezzük ki, nem for + -ing alakkal.",
+      "emeltOnly": false,
+      "examples": [
+        { "en": "We decided to stay at home.", "hu": "Úgy döntöttünk, hogy otthon maradunk." },
+        { "en": "I'd like to book a table for four.", "hu": "Szeretnék asztalt foglalni négy főre." },
+        { "en": "She went to the library to study.", "hu": "Elment a könyvtárba tanulni.", "note": "Cél: to study, nem *for studying." }
+      ]
+    },
+    {
+      "title": "Puszta ige (to nélkül)",
+      "explanation": "To nélküli puszta ige áll a módbeli segédigék után (can, must, should, will, might …), a make sb do (rávesz, kényszerít) és a let sb do (enged) után, valamint a had better és a would rather után. A help után mindkét forma helyes: help sb (to) do. Szenvedő szerkezetben a make után már to kell: We were made to wait.",
+      "emeltOnly": false,
+      "examples": [
+        { "en": "My parents let me stay out until eleven.", "hu": "A szüleim megengedik, hogy tizenegyig kint maradjak." },
+        { "en": "The teacher made us rewrite the essay.", "hu": "A tanár újraíratta velünk a fogalmazást." },
+        { "en": "You'd better take an umbrella.", "hu": "Jobb, ha viszel esernyőt." }
+      ]
+    },
+    {
+      "title": "Ha a jelentés megváltozik: remember, forget, stop, try",
+      "explanation": "Néhány ige után mindkét alak állhat, de más jelentéssel. remember/forget + -ing: emlékszik/nem felejti el, hogy valamit megtett (múltbeli emlék); remember/forget + to do: (nem) felejt el megtenni valamit, ami még előtte van. stop + -ing: abbahagy; stop + to do: megáll, hogy csináljon valamit. try + -ing: kipróbál (hátha segít); try + to do: megpróbál, igyekszik (nehéz). A like, love, hate, prefer, start, begin, continue után mindkét alak állhat lényegében azonos jelentéssel, de a would like/would love/would prefer után csak to + ige.",
+      "emeltOnly": false,
+      "examples": [
+        { "en": "I remember meeting her at a party years ago.", "hu": "Emlékszem, hogy évekkel ezelőtt egy buliban találkoztam vele." },
+        { "en": "Remember to lock the door when you leave.", "hu": "Ne felejtsd el bezárni az ajtót, amikor elmész." },
+        { "en": "He stopped smoking two years ago, but on long journeys he still stops to have a coffee.", "hu": "Két éve leszokott a dohányzásról, de hosszú utakon még mindig megáll meginni egy kávét." }
+      ]
+    },
+    {
+      "title": "Összetettebb alakok: being done, having done, to have done",
+      "explanation": "Az -ing alaknak és a főnévi igenévnek is van szenvedő és befejezett formája. Szenvedő: being + V3 (I hate being interrupted), to be + V3 (She expects to be invited). Befejezett, korábbi cselekvésre: having + V3 (He denied having taken the money), to have + V3 (She seems to have forgotten). A befejezett alakot gyakran el lehet hagyni, ha a jelentés egyértelmű (He denied taking the money is helyes).",
+      "emeltOnly": true,
+      "examples": [
+        { "en": "I hate being interrupted when I'm working.", "hu": "Utálom, ha munka közben félbeszakítanak." },
+        { "en": "He denied having taken the money.", "hu": "Tagadta, hogy elvette a pénzt." },
+        { "en": "She seems to have forgotten about our meeting.", "hu": "Úgy tűnik, megfeledkezett a találkozónkról." }
+      ]
+    }
+  ],
+  "commonMistakes": [
+    { "wrong": "I enjoy to swim in the lake.", "right": "I enjoy swimming in the lake.", "why": "Az enjoy után mindig -ing alak áll. A magyar „szeretek úszni” főnévi igeneve miatt kívánkozik a to, de az enjoy (és a finish, avoid, mind, suggest) nem fogad el to + igét." },
+    { "wrong": "I'm looking forward to see you.", "right": "I'm looking forward to seeing you.", "why": "Itt a to elöljárószó (look forward to sth), és elöljárószó után az ige -ing alakban áll. Ugyanígy: be used to doing, get used to doing." },
+    { "wrong": "He made me to apologise.", "right": "He made me apologise.", "why": "A make sb do (rávesz, kényszerít) és a let sb do (enged) után to nélküli puszta ige áll." },
+    { "wrong": "She suggested me to go by train.", "right": "She suggested going by train. / She suggested that I (should) go by train.", "why": "A suggest után nem állhat „személy + to + ige”: -ing alak vagy that-mellékmondat kell. A magyar „azt javasolta, hogy menjek” szerkezetet nem lehet szó szerint átvinni." },
+    { "wrong": "I went to the shop for buying bread.", "right": "I went to the shop to buy bread.", "why": "A célt (azért, hogy …) to + igével fejezzük ki. A for + -ing egy tárgy rendeltetését írja le (a knife for cutting bread), cselekvés célját nem." },
+    { "wrong": "Don't forget locking the door.", "right": "Don't forget to lock the door.", "why": "A forget/remember + to do arra vonatkozik, amit még meg kell tenni; az -ing alak múltbeli emléket fejez ki (I'll never forget meeting him)." }
+  ],
+  "examTips": [
+    "A feleletválasztós kloze-ban gyakran ugyanannak az igének több alakja szerepel (to do / doing / do): nézd meg, mi áll a hiány ELŐTT – ige, melléknév, elöljárószó vagy módbeli segédige –, mert az dönti el az alakot.",
+    "Igealakos feladatban (verb forms) a zárójeles ige előtti szó a kulcs: enjoy, avoid, finish, suggest, mind és minden elöljárószó után -ing; want, decide, hope, manage, refuse, afford után to + ige; make, let, can, should után puszta ige.",
+    "Az igéket a vonzatukkal együtt tanuld, rövid példamondatban (decide to do, avoid doing, look forward to doing) – a szókártyára is így írd fel, mert a vizsgán a szerkezetet kérdezik, nem a jelentést.",
+    "Íráskor a levelek gyakori záró mondata: I look forward to hearing from you (hivatalos) vagy Looking forward to seeing you (baráti). A *to hear alak jól látható nyelvhelyességi hiba éppen a levél végén."
+  ],
+  "practice": [
+    {
+      "id": "1",
+      "kind": "choice",
+      "prompt": "Have you finished ___ your room?",
+      "options": [
+        { "key": "A", "text": "tidy" },
+        { "key": "B", "text": "to tidy" },
+        { "key": "C", "text": "tidying" },
+        { "key": "D", "text": "tidied" }
+      ],
+      "answer": "C",
+      "category": "gerund-infinitive",
+      "explanation": "Helyes: tidying. A finish után a következő ige mindig -ing alakban áll (finish doing sth).",
+      "wrongOptions": {
+        "A": "Puszta ige csak módbeli segédige, make, let stb. után állhat, a finish után nem.",
+        "B": "A finish nem fogad el to + igét.",
+        "D": "A tidied múlt idő vagy V3; két ragozott ige nem állhat így egymás után."
+      }
+    },
+    {
+      "id": "2",
+      "kind": "text",
+      "prompt": "We can't afford ___ (buy) a new car this year.",
+      "cue": "buy",
+      "answer": ["to buy"],
+      "category": "gerund-infinitive",
+      "explanation": "Helyes: to buy. Az afford (megengedheti magának) után to + ige áll: can't afford to do sth."
+    },
+    {
+      "id": "3",
+      "kind": "choice",
+      "prompt": "My parents won't let me ___ to the festival alone.",
+      "options": [
+        { "key": "A", "text": "go" },
+        { "key": "B", "text": "to go" },
+        { "key": "C", "text": "going" },
+        { "key": "D", "text": "gone" }
+      ],
+      "answer": "A",
+      "category": "gerund-infinitive",
+      "explanation": "Helyes: go. A let sb do szerkezetben a személy után to nélküli puszta ige áll.",
+      "wrongOptions": {
+        "B": "A let után nem áll to; a to + ige az allow sb to do szerkezetben lenne helyes.",
+        "C": "A let után nem állhat -ing alak.",
+        "D": "A gone harmadik alak, a let sb után puszta ige kell."
+      }
+    },
+    {
+      "id": "4",
+      "kind": "text",
+      "prompt": "Thank you for ___ (help) me with my homework.",
+      "cue": "help",
+      "answer": ["helping"],
+      "category": "gerund-infinitive",
+      "explanation": "Helyes: helping. A for elöljárószó, és elöljárószó után az ige -ing alakban áll (thank you for doing sth)."
+    },
+    {
+      "id": "5",
+      "kind": "choice",
+      "prompt": "On the way home we stopped ___ some bread at the bakery.",
+      "options": [
+        { "key": "A", "text": "buying" },
+        { "key": "B", "text": "to buy" },
+        { "key": "C", "text": "buy" },
+        { "key": "D", "text": "for buying" }
+      ],
+      "answer": "B",
+      "category": "gerund-infinitive",
+      "explanation": "Helyes: to buy. Megálltunk, HOGY kenyeret vegyünk: a stop + to do célt fejez ki (megáll valamiért).",
+      "wrongOptions": {
+        "A": "A stop + -ing azt jelenti, hogy abbahagy valamit: „abbahagytuk a kenyérvásárlást” – itt értelmetlen.",
+        "C": "A stop után nem állhat to nélküli puszta ige.",
+        "D": "A célt nem for + -ing alakkal, hanem to + igével fejezzük ki."
+      }
+    },
+    {
+      "id": "6",
+      "kind": "text",
+      "prompt": "I'm not used to ___ (get) up so early.",
+      "cue": "get",
+      "answer": ["getting"],
+      "category": "gerund-infinitive",
+      "explanation": "Helyes: getting. A be used to (hozzá van szokva) szerkezetben a to elöljárószó, ezért utána -ing alak áll. (Ne keverd a used to do szerkezettel, amely múltbeli szokást jelent: I used to get up early.)"
+    }
+  ],
+  "relatedCategories": ["verb-form", "preposition", "modal"]
+}

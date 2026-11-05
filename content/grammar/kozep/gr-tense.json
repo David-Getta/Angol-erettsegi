@@ -1,0 +1,177 @@
+{
+  "schemaVersion": 1,
+  "id": "gr-tense",
+  "level": "kozep",
+  "source": "generated",
+  "topic": "nyelvtan",
+  "title": "Igeidők",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "grammar",
+  "type": "lesson",
+  "category": "tense",
+  "summaryHu": "Az igeidő megmutatja, mikor és hogyan zajlik a cselekvés: szokás vagy éppen folyamatban lévő, lezárt múltbeli vagy a jelenhez kapcsolódó, tervezett vagy spontán jövőbeli. A magyarban lényegében csak jelen és múlt idő van, ezért a magyar anyanyelvűek gyakran jelen időt használnak ott, ahol angolul Present Perfect kell („2020 óta itt lakom”), és összekeverik a Past Simple-t a Present Perfecttel. A vizsgán ez az igealakos feladatban (verb forms) és a feleletválasztós kloze-ban közvetlenül pontot ér, az íráskészségnél pedig a „Nyelvhelyesség, helyesírás” szempontnál von le pontot.",
+  "rules": [
+    {
+      "title": "Present Simple vagy Present Continuous",
+      "explanation": "Present Simple (V1, egyes szám 3. személyben -s: works, goes): szokás, ismétlődő cselekvés, állandó helyzet, általános igazság és menetrend. Jellemző szavai: always, usually, often, every day, on Mondays. Present Continuous (am/is/are + V-ing): a beszéd pillanatában vagy mostanában zajló, átmeneti cselekvés (now, at the moment, this week), illetve megbeszélt jövőbeli program. Az állapotot kifejező igék (know, understand, like, love, want, need, believe, belong, seem) általában nem állnak continuous alakban.",
+      "emeltOnly": false,
+      "examples": [
+        { "en": "She usually walks to school, but today she is taking the bus.", "hu": "Általában gyalog megy iskolába, de ma busszal megy.", "note": "usually → szokás; today → átmeneti helyzet." },
+        { "en": "Water boils at 100 degrees Celsius.", "hu": "A víz 100 fokon forr.", "note": "Általános igazság: Present Simple." },
+        { "en": "I don't understand this word.", "hu": "Nem értem ezt a szót.", "note": "Az understand állapotige, ezért nem *I'm not understanding." }
+      ]
+    },
+    {
+      "title": "Past Simple vagy Present Perfect",
+      "explanation": "Past Simple (V2, tagadásban és kérdésben did + V1): lezárt múltbeli cselekvés, amikor az időpont ismert vagy a helyzetből kiderül (yesterday, last year, in 2019, two days ago, when I was a child). Present Perfect (have/has + V3): a múltban történt, de a jelenhez kapcsolódik – élettapasztalat (ever, never), a most látható eredmény, meg nem nevezett időpont (already, yet, just, recently), illetve be nem fejezett időszak (today, this week). Ha a mondatban lezárt múltbeli időpont van (yesterday, ago, last …), Present Perfect nem állhat.",
+      "emeltOnly": false,
+      "examples": [
+        { "en": "I lost my keys yesterday.", "hu": "Tegnap elvesztettem a kulcsaimat.", "note": "yesterday → Past Simple." },
+        { "en": "I've lost my keys, so I can't get into the flat.", "hu": "Elvesztettem a kulcsaimat, ezért nem tudok bejutni a lakásba.", "note": "Az eredmény most is érvényes, időpont nincs: Present Perfect." },
+        { "en": "Have you ever been to London?", "hu": "Voltál már valaha Londonban?", "note": "Élettapasztalat: Present Perfect." }
+      ]
+    },
+    {
+      "title": "Múltban kezdődő, ma is tartó helyzet: for és since",
+      "explanation": "Ha valami a múltban kezdődött és most is tart, angolul Present Perfect (have/has + V3) vagy Present Perfect Continuous (have/has been + V-ing) kell – magyarul ilyenkor jelen időt használunk. for + időtartam (for three years, for a long time), since + kezdőpont (since 2020, since Monday, since I was ten). A How long …? kérdés is ilyen igeidőt kíván. A continuous alak a folyamatot, az időtartamot hangsúlyozza; állapotigéknél (know, have = birtokol, be, like) csak a simple alak lehetséges.",
+      "emeltOnly": false,
+      "examples": [
+        { "en": "We have lived in Debrecen since 2018.", "hu": "2018 óta Debrecenben lakunk.", "note": "Magyarul jelen idő, angolul Present Perfect." },
+        { "en": "She has been learning English for six years.", "hu": "Hat éve tanul angolul." },
+        { "en": "I've known Anna for ages.", "hu": "Régóta ismerem Annát.", "note": "A know állapotige: nem *have been knowing." }
+      ]
+    },
+    {
+      "title": "Történetmesélés: Past Continuous és Past Perfect",
+      "explanation": "Past Continuous (was/were + V-ing): a múlt egy adott pillanatában folyamatban lévő cselekvés, a történet háttere; gyakran egy rövidebb, Past Simple-lel kifejezett esemény szakítja meg (when …). Past Perfect (had + V3): olyan esemény, amely egy másik múltbeli eseménynél korábban történt (already, by the time, before, after, when). Ha a múltbeli események egyszerűen egymás után következnek, mindegyik Past Simple.",
+      "emeltOnly": false,
+      "examples": [
+        { "en": "I was having a shower when the phone rang.", "hu": "Éppen zuhanyoztam, amikor megszólalt a telefon.", "note": "Háttér: was having; közbejövő esemény: rang." },
+        { "en": "When we got to the station, the train had already left.", "hu": "Mire kiértünk az állomásra, a vonat már elment.", "note": "A vonat korábban ment el: Past Perfect." },
+        { "en": "She opened the door, switched on the light and sat down.", "hu": "Kinyitotta az ajtót, felkapcsolta a villanyt és leült.", "note": "Egymást követő események: mindegyik Past Simple." }
+      ]
+    },
+    {
+      "title": "Jövő idő: will, be going to, Present Continuous",
+      "explanation": "will + V1: a beszéd pillanatában hozott döntés, ajánlat, ígéret, illetve véleményen alapuló jóslat (I think …, probably). be going to + V1: már korábban eldöntött szándék, terv, vagy a jelenlegi jelekből következő jóslat. Present Continuous: megbeszélt, időponthoz kötött program. Időhatározói mellékmondatban (when, as soon as, before, after, until) és feltételes mellékmondatban (if, unless) a jövőre is Present Simple-t használunk; a will csak a főmondatban áll.",
+      "emeltOnly": false,
+      "examples": [
+        { "en": "It's cold in here. – I'll close the window.", "hu": "Hideg van itt. – Becsukom az ablakot.", "note": "Azonnali döntés: will." },
+        { "en": "We're going to paint the kitchen next month.", "hu": "Jövő hónapban ki fogjuk festeni a konyhát.", "note": "Előre eldöntött terv: be going to." },
+        { "en": "When I finish school, I'll travel around Europe.", "hu": "Amikor befejezem az iskolát, beutazom Európát.", "note": "A when után Present Simple, nem *when I will finish." }
+      ]
+    },
+    {
+      "title": "Future Continuous, Future Perfect, Past Perfect Continuous",
+      "explanation": "Future Continuous (will be + V-ing): a jövő egy adott pillanatában folyamatban lévő cselekvés (this time tomorrow, at 8 o'clock tonight). Future Perfect (will have + V3): a jövő egy adott pontjáig befejeződő cselekvés, jellemzően by + időpont szerkezettel. Past Perfect Continuous (had been + V-ing): egy múltbeli pillanatig tartó folyamat, amelynek gyakran látható következménye volt.",
+      "emeltOnly": true,
+      "examples": [
+        { "en": "This time tomorrow I'll be sitting in the exam room.", "hu": "Holnap ilyenkor már a vizsgateremben fogok ülni." },
+        { "en": "By June we will have finished the course.", "hu": "Júniusra befejezzük a tanfolyamot.", "note": "by + időpont → Future Perfect." },
+        { "en": "She was exhausted because she had been working all day.", "hu": "Kimerült volt, mert egész nap dolgozott." }
+      ]
+    }
+  ],
+  "commonMistakes": [
+    { "wrong": "I live here since 2020.", "right": "I have lived here since 2020.", "why": "Magyarul jelen időt használunk („2020 óta itt lakom”), angolul a múltban kezdődő és ma is tartó helyzetet Present Perfecttel (have/has + V3) vagy Present Perfect Continuousszal fejezzük ki." },
+    { "wrong": "I have seen this film last week.", "right": "I saw this film last week.", "why": "Ha a mondatban konkrét, lezárt múltbeli időpont van (last week, yesterday, ago, in 2020), csak Past Simple állhat; a Present Perfect nem kapcsolódhat ilyen időhatározóhoz." },
+    { "wrong": "When I will finish school, I will go to university.", "right": "When I finish school, I will go to university.", "why": "Időhatározói mellékmondatban (when, after, before, as soon as, until) és if után a jövőre Present Simple-t használunk; a will csak a főmondatba kerül." },
+    { "wrong": "How long are you learning English?", "right": "How long have you been learning English?", "why": "A „Mióta …?” / „Mennyi ideje …?” kérdés a ma is tartó helyzetre kérdez rá, ezért How long + Present Perfect (Continuous) kell. A jelen idő itt a magyar mondat tükörfordítása." },
+    { "wrong": "I am knowing the answer.", "right": "I know the answer.", "why": "Az állapotot kifejező igék (know, understand, like, want, believe, belong) általában nem állnak -ing-es (continuous) alakban, akkor sem, ha a helyzet éppen most igaz." },
+    { "wrong": "Yesterday I was going to the cinema with my friends and we were watching a comedy.", "right": "Yesterday I went to the cinema with my friends and we watched a comedy.", "why": "Lezárt, egész múltbeli cselekvésekre Past Simple kell. A Past Continuous csak a háttérre, a múlt egy adott pillanatában éppen zajló cselekvésre való; magyarul nincs ilyen különbség, ezért túl gyakran használják." }
+  ],
+  "examTips": [
+    "Igealakos feladatban (verb forms) a zárójeles igét a mondat jelzőszavai alapján tedd a megfelelő időbe: yesterday, ago, last …, in 2019 → Past Simple; since, for, already, yet, ever, never, just → Present Perfect; by the time, before + múlt idő → Past Perfect; when + rövid esemény a múltban → Past Continuous a háttérre.",
+    "Nézd meg az egész szöveg idősíkját, ne csak a mondatot: ha a történet múlt időben szól, a hiányok többsége is múlt idő lesz (Past Simple, Past Continuous, Past Perfect); jelen idő csak párbeszédben vagy általános igazságnál fordul elő.",
+    "A beírt alaknak hibátlannak kell lennie: a jó igeidő rossz alakkal (*has went, *writed) nem ér pontot, és a segédige is a válasz része (had left, was raining, has been working).",
+    "Íráskészségnél egy végig rosszul választott igeidő (pl. jelen idő egy múltbeli élmény elmesélésekor) a „Nyelvhelyesség, helyesírás” szempontban sokat ront. Írás után olvasd át a szöveget külön csak az igék miatt."
+  ],
+  "practice": [
+    {
+      "id": "1",
+      "kind": "choice",
+      "prompt": "I ___ Tom since we were at primary school.",
+      "options": [
+        { "key": "A", "text": "know" },
+        { "key": "B", "text": "knew" },
+        { "key": "C", "text": "have known" },
+        { "key": "D", "text": "have been knowing" }
+      ],
+      "answer": "C",
+      "category": "tense",
+      "explanation": "Helyes: have known. Az ismeretség a múltban kezdődött és ma is tart (since + kezdőpont), ezért Present Perfect kell. A know állapotige, így csak a simple alak lehetséges.",
+      "wrongOptions": {
+        "A": "Jelen idő since-szel – ez a magyar „óta ismerem” tükörfordítása; angolul a ma is tartó helyzethez Present Perfect kell.",
+        "B": "A Past Simple lezárt múltat jelent, de az ismeretség ma is tart.",
+        "D": "A know állapotige, nem állhat continuous (-ing) alakban."
+      }
+    },
+    {
+      "id": "2",
+      "kind": "text",
+      "prompt": "We ___ (visit) my grandparents in Pécs last weekend.",
+      "cue": "visit",
+      "answer": ["visited"],
+      "category": "tense",
+      "explanation": "Helyes: visited. A last weekend lezárt múltbeli időpont, ezért Past Simple kell (szabályos ige: -ed). Present Perfect ilyen időhatározóval nem állhat."
+    },
+    {
+      "id": "3",
+      "kind": "choice",
+      "prompt": "When I ___ home, I'll send you a message.",
+      "options": [
+        { "key": "A", "text": "get" },
+        { "key": "B", "text": "will get" },
+        { "key": "C", "text": "am getting" },
+        { "key": "D", "text": "got" }
+      ],
+      "answer": "A",
+      "category": "tense",
+      "explanation": "Helyes: get. A when kezdetű időhatározói mellékmondatban a jövőre Present Simple-t használunk; a will csak a főmondatban áll (I'll send).",
+      "wrongOptions": {
+        "B": "A when utáni mellékmondatban nem állhat will, akkor sem, ha jövőről van szó.",
+        "C": "A Present Continuous megbeszélt programot fejez ki; itt egy egyszerű időpontot jelöl a mellékmondat, ehhez Present Simple kell.",
+        "D": "Múlt idő, de a mondat a jövőről szól (I'll send)."
+      }
+    },
+    {
+      "id": "4",
+      "kind": "text",
+      "prompt": "I ___ (have) a shower when the doorbell rang.",
+      "cue": "have",
+      "answer": ["was having"],
+      "category": "tense",
+      "explanation": "Helyes: was having. A zuhanyozás folyamatban volt, amikor egy rövid esemény (rang) megszakította: a háttércselekvést Past Continuousszal (was/were + V-ing) fejezzük ki."
+    },
+    {
+      "id": "5",
+      "kind": "choice",
+      "prompt": "You've got a lovely flat! How long ___ here?",
+      "options": [
+        { "key": "A", "text": "do you live" },
+        { "key": "B", "text": "are you living" },
+        { "key": "C", "text": "have you lived" },
+        { "key": "D", "text": "did you live" }
+      ],
+      "answer": "C",
+      "category": "tense",
+      "explanation": "Helyes: have you lived. A How long …? a ma is tartó helyzet időtartamára kérdez („Mióta laksz itt?”), ezért Present Perfect kell.",
+      "wrongOptions": {
+        "A": "Present Simple a „mióta” kérdésben – a magyar jelen idő tükörfordítása, angolul hibás.",
+        "B": "A Present Continuous sem fejezi ki a múltban kezdődő és ma is tartó időtartamot; How long után Present Perfect (Continuous) kell.",
+        "D": "A Past Simple azt jelentené, hogy már nem lakik ott, de a beszélő éppen a lakásában van."
+      }
+    },
+    {
+      "id": "6",
+      "kind": "text",
+      "prompt": "When we got to the cinema, the film ___ (already / start).",
+      "cue": "already / start",
+      "answer": ["had already started"],
+      "category": "tense",
+      "explanation": "Helyes: had already started. A film korábban kezdődött, mint ahogy odaértünk (got): a korábbi múltbeli eseményt Past Perfecttel (had + V3) fejezzük ki. Az already a had és a V3 közé kerül."
+    }
+  ],
+  "relatedCategories": ["verb-form", "auxiliary"]
+}
