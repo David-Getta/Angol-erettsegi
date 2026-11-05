@@ -1,0 +1,48 @@
+{
+  "schemaVersion": 1,
+  "id": "fiz-wr-emelt-feny-termeszete-temakifejtes",
+  "subject": "fizika",
+  "revision": 1,
+  "level": "emelt",
+  "source": "generated",
+  "topic": "hullamok-feny",
+  "title": "Témakifejtés: a fény természete – hullám és részecske",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "writing",
+  "type": "temakifejtes",
+  "taskNumber": 1,
+  "situation": "Fejtse ki összefüggő szövegben, mit tudunk a fény természetéről, az alábbi szempontok szerint! A kifejtés terjedelme kb. 1–1,5 oldal; ahol lehet, írjon fel összefüggéseket, és mondjon kísérleti példákat!\n\n– Newton és Huygens elképzelése a fényről; mit mondott a két elmélet a fény vízbeli sebességéről?\n– A hullámtermészet kísérleti bizonyítékai: interferencia (Young-kísérlet), elhajlás, polarizáció; mit bizonyít a polarizáció?\n– A fény mint elektromágneses hullám: Maxwell elmélete, a fény sebessége, az elektromágneses színkép.\n– A fényelektromos jelenség, amit a hullámelmélet nem tud megmagyarázni; Einstein fotonhipotézise.\n– A kettős természet értelmezése: a foton energiája és lendülete, mikor melyik tulajdonság mutatkozik meg.",
+  "points": [
+    { "id": "p1", "text": "Newton részecske- és Huygens hullámelmélete, a vízbeli fénysebesség kérdése" },
+    { "id": "p2", "text": "Interferencia, elhajlás, polarizáció mint a hullámtermészet bizonyítékai" },
+    { "id": "p3", "text": "A fény mint elektromágneses hullám, a színkép" },
+    { "id": "p4", "text": "A fényelektromos jelenség és Einstein fotonhipotézise" },
+    { "id": "p5", "text": "A kettős természet: a foton energiája és lendülete" }
+  ],
+  "suggestedMinutes": 45,
+  "usefulPhrases": [
+    { "en": "d·sin α = k·λ", "hu": "Erősítés feltétele optikai rácson (és kétréses kísérletben)." },
+    { "en": "c = 1/√(ε₀·μ₀) ≈ 3,0 · 10⁸ m/s", "hu": "Maxwell elméletéből adódó terjedési sebesség – egyezik a fény sebességével." },
+    { "en": "E = h·f = h·c/λ", "hu": "A foton energiája; h = 6,63 · 10⁻³⁴ J·s a Planck-állandó." },
+    { "en": "h·f = W_ki + ½·m·v²_max", "hu": "Einstein fényelektromos egyenlete." },
+    { "en": "p = h/λ", "hu": "A foton lendülete; de Broglie szerint az anyagi részecskék hullámhossza is λ = h/(m·v)." },
+    { "en": "transzverzális hullám", "hu": "A rezgés iránya merőleges a terjedés irányára – ezt bizonyítja a polarizáció." },
+    { "en": "A kísérlet azt mutatja, hogy …", "hu": "Minden állítást kísérleti tapasztalattal támassz alá – ez a tartalmi pont lényege." }
+  ],
+  "modelAnswer": {
+    "text": "A fény természetéről a 17. században két elmélet versengett. Isaac Newton szerint a fény a fényforrásból kirepülő apró részecskék árama; ezzel jól magyarázta az egyenes vonalú terjedést és a visszaverődést. A fénytörés magyarázatához azonban azt kellett feltételeznie, hogy a részecskék a vízben gyorsabban haladnak, mint a levegőben. Christiaan Huygens a fényt hullámnak tekintette: elve szerint a hullámfront minden pontjából elemi hullámok indulnak ki. Ebből a törés úgy következik, hogy a fény a vízben lassabban terjed. A kérdést csak a 19. század közepén döntötte el Foucault mérése: a fény vízben valóban lassabb (c/n ≈ 225 000 km/s), ahogy a hullámelmélet jósolta.\n\nA hullámtermészet legmeggyőzőbb bizonyítéka az interferencia. Thomas Young 1801 körül két keskeny résen bocsátott át fényt, és az ernyőn világos és sötét csíkok váltakozását látta. Ahol a két résből érkező hullámok útkülönbsége a hullámhossz egész számú többszöröse, ott erősítik, ahol fél hullámhossz páratlan többszöröse, ott kioltják egymást. Az optikai rácson az erősítés feltétele d·sin α = k·λ; ebből a fény hullámhossza megmérhető (a látható fény kb. 400–750 nm). A fény az akadályok mögé is behatol (elhajlás), ami szintén hullámjelenség. A polarizáció azt is megmutatja, hogy a fény transzverzális hullám: két polárszűrő egymáshoz képest elforgatva kioltja a fényt, ami longitudinális hullámmal nem történhetne meg.\n\nJames Clerk Maxwell az elektromosság és a mágnesség törvényeit egységes elméletbe foglalta, és megjósolta, hogy a változó elektromos és mágneses mező hullámként terjed a térben. Ennek számított sebessége c = 1/√(ε₀·μ₀) ≈ 3,0 · 10⁸ m/s, éppen a fény mért sebessége; ebből arra következtetett, hogy a fény elektromágneses hullám. Heinrich Hertz 1887–1888-ban kísérletileg is előállított elektromágneses hullámokat. Ma tudjuk, hogy a látható fény az elektromágneses színkép kis része a rádióhullámok, mikrohullámok, infravörös, ultraibolya, röntgen- és gamma-sugárzás között; ezek csak frekvenciában (hullámhosszban) különböznek.\n\nA 19. század végén azonban kiderült, hogy a hullámkép nem mindenre elég. A fényelektromos jelenségben a fémre eső fény elektronokat vált ki, de csak egy határfrekvencia fölött, akármilyen erős is a fény; a kilépő elektronok legnagyobb energiája a frekvenciától függ, nem az intenzitástól, és a kilépés késedelem nélkül megkezdődik. Albert Einstein 1905-ben azzal magyarázta ezt, hogy a fény energiája E = h·f adagokban, fotonokban terjed és nyelődik el. Egy foton egy elektronnak adja át az energiáját: h·f = W_ki + ½·m·v²_max. Erősebb fény több fotont jelent, ezért több elektron lép ki, de nem gyorsabbak.\n\nA fénynek tehát kettős természete van. A foton energiája E = h·f, lendülete p = h/λ; ezt a lendületet mutatja a Compton-szórás is. A terjedés során – interferenciában, elhajlásban – a hullámtulajdonságok, a fény és az anyag kölcsönhatásában (elnyelés, kibocsátás, fotoeffektus) a részecsketulajdonságok mutatkoznak meg. A két leírás nem zárja ki, hanem kiegészíti egymást; de Broglie szerint ráadásul az elektronnak és minden anyagi részecskének is van hullámtermészete.",
+    "pointsCovered": [
+      { "id": "p1", "quote": "a fény vízben valóban lassabb (c/n ≈ 225 000 km/s), ahogy a hullámelmélet jósolta" },
+      { "id": "p2", "quote": "A polarizáció azt is megmutatja, hogy a fény transzverzális hullám" },
+      { "id": "p3", "quote": "ebből arra következtetett, hogy a fény elektromágneses hullám" },
+      { "id": "p4", "quote": "Albert Einstein 1905-ben azzal magyarázta ezt, hogy a fény energiája E = h·f adagokban, fotonokban terjed és nyelődik el" },
+      { "id": "p5", "quote": "A foton energiája E = h·f, lendülete p = h/λ" }
+    ],
+    "notes": [
+      "Tartalom: mind az öt szempont kifejtve, és mindegyikhez kísérlet tartozik (Foucault mérése, Young-kísérlet, polárszűrők, Hertz kísérlete, fotoeffektus), a kulcsképletek (d·sin α = kλ, c = 1/√(ε₀μ₀), E = hf, p = h/λ) helyesek – ez a tartalom 18 pontja.",
+      "A kifejtés módja: a szöveg időrendben halad, és minden bekezdés átkötéssel kapcsolódik az előzőhöz („A 19. század végén azonban kiderült…”), így a gondolatmenet logikus; pontos szakszavak, helyes helyesírás.",
+      "Erősség: nem csak felsorolja a jelenségeket, hanem megmondja, mit bizonyítanak (a polarizáció a transzverzalitást, a fotoeffektus a fény adagos energiáját), és a végén értelmezi a kettős természetet."
+    ]
+  }
+}

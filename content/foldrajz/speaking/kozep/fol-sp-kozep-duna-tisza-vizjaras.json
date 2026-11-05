@@ -1,0 +1,91 @@
+{
+  "schemaVersion": 1,
+  "id": "fol-sp-kozep-duna-tisza-vizjaras",
+  "subject": "foldrajz",
+  "revision": 1,
+  "level": "kozep",
+  "source": "generated",
+  "topic": "vizburok-talaj",
+  "title": "Folyóink vízjárása és az árvizek: a Duna és a Tisza",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "speaking",
+  "type": "termeszetfoldrajz-tetel",
+  "partNumber": 1,
+  "instructionsHu": "Mutassa be a folyók vízjárását befolyásoló tényezőket a Duna és a Tisza példáján! Használja a mellékelt forrásokat és az atlaszt, a topográfiai elemeket mutassa meg a térképen!",
+  "prompts": [
+    "Mitől függ egy folyó vízjárása (a vízgyűjtő éghajlata, domborzata, kőzetei, növényzete)?",
+    "Hasonlítsa össze a Duna és a Tisza vízjárását: mikor vannak árhullámok, és mi okozza őket?",
+    "Mutassa be a folyószabályozás és az árvízvédelem eszközeit és következményeit!",
+    "Topográfia: mutassa meg az atlaszban a Duna és a Tisza forrásvidékét, a Dunakanyart, valamint a Dráva, a Szamos, a Körösök és a Maros folyót!"
+  ],
+  "followUpQuestions": [
+    "Mi a különbség az árvíz és a belvíz között?",
+    "Miért veszélyes, ha a Tisza és a Maros árhulláma egyszerre érkezik Szegedhez?"
+  ],
+  "usefulPhrases": [
+    {
+      "en": "vízjárás",
+      "hu": "a folyó vízállásának és vízhozamának időbeli változása"
+    },
+    {
+      "en": "vízhozam (m³/s)",
+      "hu": "egy keresztmetszeten másodpercenként átfolyó víz mennyisége"
+    },
+    {
+      "en": "jeges ár, zöldár",
+      "hu": "a tavaszi jégtorlaszos árhullám, illetve a kora nyári, esőzésekből és hóolvadásból származó árhullám"
+    },
+    {
+      "en": "hullámtér",
+      "hu": "a folyó és a töltés közötti terület, ahová árvízkor kiléphet a víz"
+    },
+    {
+      "en": "árvízi szükségtározó",
+      "hu": "árvízkor elárasztható, töltésekkel körülvett terület, amely csökkenti az árhullám magasságát"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Vízállás- és vízhozamadatok",
+      "text": "A Duna budapesti átlagos vízhozama kb. 2300 m³/s, a Tiszáé Szegednél kb. 800 m³/s. A Duna budapesti vízállása 2013 júniusában 891 cm-es rekordot ért el, a Tisza szegedi vízállása 2006 áprilisában 1009 cm-rel tetőzött."
+    },
+    {
+      "title": "Térképvázlat (leírás)",
+      "text": "A vázlat a Kárpát-medence vízrajzát mutatja. A Duna az Alpok felől, nyugatról lép be az országba, a Dunakanyarnál dél felé fordul. A Tisza az Északkeleti-Kárpátokban ered; bal oldali mellékfolyói, a Szamos, a Körösök és a Maros a Keleti-Kárpátokból és az Erdélyi-szigethegységből szállítják a vizet. Az Alföldön mindkét folyó esése nagyon kicsi."
+    }
+  ],
+  "keyPoints": [
+    "A vízjárást a vízgyűjtő éghajlata (csapadék, hóolvadás), domborzata (esés), kőzetei (beszivárgás) és növénytakarója határozza meg.",
+    "A Duna vízjárása alpi jellegű: tavaszi jeges ár és kora nyári zöldár (a magashegységi hó- és jégolvadás és a nyári esők miatt).",
+    "A Tiszának kora tavaszi (hóolvadás a Kárpátokban) és kora nyári árhulláma van; a hegyekből gyorsan lezúduló víz a kis esésű alföldi szakaszon lelassul, ezért magas és tartós az árvíz.",
+    "A mellékfolyók árhullámainak egybeesése különösen veszélyes (Tisza–Maros–Körösök).",
+    "A 19. századi folyószabályozás (Széchenyi István, Vásárhelyi Pál): kanyarulatok átvágása, töltések építése.",
+    "Következmények: rövidebb, gyorsabb folyás, a hullámtér feltöltődése, egyre magasabb árvízszintek, az ártéri gazdálkodás megszűnése, belvízproblémák.",
+    "Mai árvízvédelem: töltések erősítése, árvízi szükségtározók, a hullámtér rendezése (Vásárhelyi-terv továbbfejlesztése).",
+    "Topográfia: Duna, Tisza, Dráva, Szamos, Körösök, Maros, Dunakanyar, Budapest, Szeged."
+  ],
+  "speakingSeconds": 420,
+  "prepSeconds": 900,
+  "sampleAnswer": {
+    "turns": [
+      {
+        "speaker": "candidate",
+        "text": "A folyók vízjárását a vízgyűjtő terület éghajlata, domborzata, kőzetei és növénytakarója határozza meg. Ahol sok a csapadék vagy a hó, ott nagyobb a vízhozam; meredek, kopár hegyoldalon gyorsan lefut a víz, erdős, laza kőzetű területen több szivárog be. A Duna vizének nagy része az Alpokból, az Inn és más alpesi mellékfolyók révén érkezik, ezért vízjárása alpi jellegű: tavasszal jeges ár, kora nyáron, amikor a magashegységben olvad a hó és sok eső esik, zöldár vonul le. A forrás szerint Budapesten átlagosan kb. 2300 m³/s víz folyik le, a 2013-as árvíz 891 cm-es rekordot hozott. A Tisza az Északkeleti-Kárpátokban ered, bal oldali mellékfolyói – a Szamos, a Körösök és a Maros, amelyeket most megmutatok a térképen – a Keleti-Kárpátokból és az Erdélyi-szigethegységből érkeznek. Kora tavasszal a hóolvadás, kora nyáron az esőzések okoznak árhullámot. A hegyekből gyorsan lezúduló víz az Alföldön a nagyon kis esés miatt lelassul, ezért az árvíz magas és hosszan tart, különösen akkor, ha a mellékfolyók árhullámai egybeesnek; így tetőzött 2006-ban Szegeden 1009 cm-en. A 19. században Széchenyi István kezdeményezésére, Vásárhelyi Pál tervei alapján szabályozták a Tiszát: átvágták a kanyarulatokat, töltéseket építettek, a folyó kb. harmadával rövidebb lett. Ezzel nagy területek váltak szántóvá, de a víz gyorsabban fut le, a hullámtér feltöltődik, ezért az árvízszintek egyre magasabbak. Ma a töltések erősítése mellett árvízi szükségtározókat építenek, amelyekbe a tetőzéskor kivezetik a vizet."
+      },
+      {
+        "speaker": "examiner",
+        "text": "Mi a különbség az árvíz és a belvíz között?"
+      },
+      {
+        "speaker": "candidate",
+        "text": "Az árvíz a folyóból kilépő víz: a folyó vízszintje a heves esők vagy hóolvadás miatt megemelkedik, és a mederből kilépve elönti a hullámteret vagy a töltés átszakadásakor az ártéri területeket. A belvíz viszont nem a folyóból származik, hanem a helyben összegyűlő csapadék- és talajvíz, amely a sík, mélyen fekvő területeken nem tud lefolyni, és a rossz vízáteresztő talajba sem szivárog be."
+      }
+    ],
+    "notes": [
+      "A felelet a vízjárás tényezőitől halad a két folyó összehasonlításán át a szabályozásig, és a forrás adatait (vízhozam, rekord vízállások) beépíti – így a tartalom és az összefüggések szempontja is teljesül.",
+      "A topográfiai elemeket megnevezi és a térképen meg is mutatja (Alpok, Északkeleti-Kárpátok, Szamos, Körösök, Maros, Szeged), ami a topográfia-szempont maximumához szükséges.",
+      "A szabályozás pozitív és negatív következményeit is említi, ami a kiegyensúlyozott, szakszerű feleletre utal."
+    ]
+  }
+}

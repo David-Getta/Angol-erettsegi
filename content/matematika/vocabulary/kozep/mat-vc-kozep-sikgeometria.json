@@ -1,0 +1,192 @@
+{
+  "schemaVersion": 1,
+  "id": "mat-vc-kozep-sikgeometria",
+  "subject": "matematika",
+  "revision": 1,
+  "level": "kozep",
+  "source": "generated",
+  "topic": "sikgeometria",
+  "title": "Síkgeometria – fogalmak és tételek (közép)",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "vocabulary",
+  "type": "deck",
+  "cards": [
+    {
+      "term": "háromszög belső szögeinek összege",
+      "meaning": "Bármely (síkbeli) háromszög három belső szögének összege 180°.",
+      "example": "A háromszög belső szögeinek összege 180°, ezért ha két szög 50° és 70°, a harmadik 60°.",
+      "collocation": "α + β + γ = 180°"
+    },
+    {
+      "term": "külső szög",
+      "meaning": "A háromszög külső szöge egy belső szög mellékszöge; egyenlő a nem mellette fekvő két belső szög összegével.",
+      "example": "A C csúcsnál lévő külső szög egyenlő az α és a β belső szög összegével.",
+      "collocation": "γ′ = α + β = 180° − γ"
+    },
+    {
+      "term": "háromszög-egyenlőtlenség",
+      "meaning": "Bármely háromszögben bármely két oldal hosszának összege nagyobb a harmadik oldal hosszánál.",
+      "example": "A háromszög-egyenlőtlenség miatt nincs 2 cm, 3 cm és 6 cm oldalú háromszög.",
+      "collocation": "a + b > c"
+    },
+    {
+      "term": "Pitagorasz-tétel",
+      "meaning": "Minden derékszögű háromszögben a befogók hosszának négyzetösszege egyenlő az átfogó hosszának négyzetével; megfordítva: ha a² + b² = c², a háromszög derékszögű.",
+      "example": "A Pitagorasz-tétel szerint a 6 és 8 cm-es befogójú háromszög átfogója 10 cm.",
+      "collocation": "a² + b² = c²"
+    },
+    {
+      "term": "befogó",
+      "meaning": "A derékszögű háromszög két oldala, amely a derékszöget közrefogja.",
+      "example": "A derékszögű háromszög két befogója egymásra merőleges, ezért T = a·b/2."
+    },
+    {
+      "term": "átfogó",
+      "meaning": "A derékszögű háromszög derékszöggel szemközti oldala; ez a leghosszabb oldal.",
+      "example": "Az átfogó a derékszöggel szemben van, és a Thalész-kör átmérője."
+    },
+    {
+      "term": "Thalész-tétel",
+      "meaning": "Ha egy kör átmérőjének két végpontját a körvonal bármely más pontjával összekötjük, derékszögű háromszöget kapunk (a derékszög a körvonalon lévő csúcsnál van); megfordítva: a derékszögű háromszög köré írt körének középpontja az átfogó felezőpontja.",
+      "example": "A Thalész-tétel miatt a félkörbe írt háromszög derékszögű."
+    },
+    {
+      "term": "súlyvonal",
+      "meaning": "A háromszög egy csúcsát a szemközti oldal felezőpontjával összekötő szakasz.",
+      "example": "Egyenlő szárú háromszögben az alaphoz tartozó súlyvonal egyben magasság is."
+    },
+    {
+      "term": "súlypont",
+      "meaning": "A háromszög három súlyvonalának közös pontja; mindegyik súlyvonalat 2 : 1 arányban osztja, a hosszabb rész a csúcs felé esik.",
+      "example": "A súlypont a 12 cm-es súlyvonalat 8 cm-es és 4 cm-es részre osztja.",
+      "collocation": "csúcs–S : S–oldalfelező = 2 : 1"
+    },
+    {
+      "term": "magasságpont",
+      "meaning": "A háromszög három magasságvonalának (a csúcsokból a szemközti oldal egyenesére bocsátott merőlegeseknek) közös pontja.",
+      "example": "Derékszögű háromszögben a magasságpont a derékszögű csúcs."
+    },
+    {
+      "term": "köré írt kör",
+      "meaning": "A háromszög mindhárom csúcsán átmenő kör; középpontja az oldalfelező merőlegesek metszéspontja.",
+      "example": "Tompaszögű háromszög köré írt körének középpontja a háromszögön kívül van.",
+      "collocation": "R = abc/(4T)"
+    },
+    {
+      "term": "beírt kör",
+      "meaning": "A háromszög mindhárom oldalát érintő kör; középpontja a belső szögfelezők metszéspontja.",
+      "example": "A beírt kör sugarát a terület és a félkerület hányadosa adja.",
+      "collocation": "T = r·s"
+    },
+    {
+      "term": "szakaszfelező merőleges",
+      "meaning": "A szakasz felezőpontjában a szakasz egyenesére állított merőleges egyenes; pontjai a szakasz két végpontjától egyenlő távolságra vannak.",
+      "example": "Az AB szakasz szakaszfelező merőlegesének minden pontja egyenlő távol van A-tól és B-től."
+    },
+    {
+      "term": "szögfelező",
+      "meaning": "Az a félegyenes, amely a szöget két egyenlő szögre bontja; pontjai a szög két szárától egyenlő távolságra vannak.",
+      "example": "A belső szögfelezők metszéspontja a beírt kör középpontja."
+    },
+    {
+      "term": "középvonal",
+      "meaning": "A háromszög két oldalának felezőpontját összekötő szakasz; párhuzamos a harmadik oldallal, és hossza annak fele.",
+      "example": "A 10 cm-es oldallal párhuzamos középvonal 5 cm hosszú.",
+      "collocation": "k = c/2"
+    },
+    {
+      "term": "hasonlóság aránya",
+      "meaning": "Két hasonló alakzat megfelelő szakaszainak állandó hányadosa (λ); a területek aránya λ², a térfogatoké λ³.",
+      "example": "Ha a hasonlóság aránya 3, a nagyobb háromszög területe 9-szerese a kisebbének.",
+      "collocation": "T′/T = λ²"
+    },
+    {
+      "term": "paralelogramma",
+      "meaning": "Olyan négyszög, amelynek két-két szemközti oldala párhuzamos; szemközti oldalai és szögei egyenlők, átlói felezik egymást.",
+      "example": "A paralelogramma területe az oldal és a hozzá tartozó magasság szorzata.",
+      "collocation": "T = a·mₐ"
+    },
+    {
+      "term": "rombusz",
+      "meaning": "Olyan négyszög, amelynek minden oldala egyenlő hosszú; átlói merőlegesen felezik egymást.",
+      "example": "A rombusz területe az átlók szorzatának fele.",
+      "collocation": "T = e·f/2"
+    },
+    {
+      "term": "trapéz",
+      "meaning": "Olyan négyszög, amelynek van két párhuzamos oldala (alapok).",
+      "example": "A trapéz területe a két alap átlagának és a magasságnak a szorzata.",
+      "collocation": "T = (a + c)·m/2"
+    },
+    {
+      "term": "deltoid",
+      "meaning": "Olyan négyszög, amelynek egyik átlója szimmetriatengely (két-két szomszédos oldala egyenlő); átlói merőlegesek egymásra.",
+      "example": "A deltoid szimmetriaátlója merőlegesen felezi a másik átlót.",
+      "collocation": "T = e·f/2"
+    },
+    {
+      "term": "sokszög belső szögeinek összege",
+      "meaning": "Az n oldalú konvex sokszög belső szögeinek összege (n − 2)·180°.",
+      "example": "A hatszög belső szögeinek összege 4·180° = 720°.",
+      "collocation": "(n − 2)·180°"
+    },
+    {
+      "term": "sokszög átlóinak száma",
+      "meaning": "Az n oldalú konvex sokszög átlóinak száma n(n − 3)/2, mert minden csúcsból n − 3 átló indul, és minden átlót két csúcsnál számolunk.",
+      "example": "A tízszög átlóinak száma 10·7/2 = 35.",
+      "collocation": "n(n − 3)/2"
+    },
+    {
+      "term": "kör kerülete",
+      "meaning": "Az r sugarú kör kerülete 2rπ (az átmérő π-szerese).",
+      "example": "Az 5 cm sugarú kör kerülete 10π ≈ 31,4 cm.",
+      "collocation": "K = 2rπ"
+    },
+    {
+      "term": "kör területe",
+      "meaning": "Az r sugarú kör területe r²π.",
+      "example": "A 3 cm sugarú kör területe 9π ≈ 28,3 cm².",
+      "collocation": "T = r²π"
+    },
+    {
+      "term": "körív hossza",
+      "meaning": "Az α középponti szögű körív hossza a kerület α/360°-os része.",
+      "example": "A 90°-os körív hossza a kerület negyede.",
+      "collocation": "i = 2rπ·α/360°"
+    },
+    {
+      "term": "körcikk területe",
+      "meaning": "Az α középponti szögű körcikk területe a kör területének α/360°-os része.",
+      "example": "A 60°-os körcikk területe a körlap hatoda.",
+      "collocation": "t = r²π·α/360°"
+    },
+    {
+      "term": "középponti szög",
+      "meaning": "Olyan szög, amelynek csúcsa a kör középpontja, szárai a kör sugarai.",
+      "example": "A szabályos hatszög egy oldalához 60°-os középponti szög tartozik."
+    },
+    {
+      "term": "kerületi szög",
+      "meaning": "Olyan szög, amelynek csúcsa a körvonalon van, szárai a kör húrjai (vagy egyik szára érintő); az azonos ívhez tartozó kerületi szögek egyenlők, és a középponti szög felével egyenlők.",
+      "example": "A 80°-os középponti szöghöz tartozó kerületi szög 40°.",
+      "collocation": "β = α/2"
+    },
+    {
+      "term": "érintő",
+      "meaning": "A körrel pontosan egy közös pontú egyenes; merőleges az érintési pontba húzott sugárra.",
+      "example": "A kör érintője merőleges az érintési pontba húzott sugárra."
+    },
+    {
+      "term": "húr",
+      "meaning": "A kör két pontját összekötő szakasz; a leghosszabb húr az átmérő.",
+      "example": "A húr felezőmerőlegese átmegy a kör középpontján."
+    },
+    {
+      "term": "Héron-képlet",
+      "meaning": "A háromszög területe az oldalakból: T = √(s(s − a)(s − b)(s − c)), ahol s = (a + b + c)/2 a félkerület.",
+      "example": "A Héron-képlet szerint a 13, 14, 15 cm oldalú háromszög területe 84 cm².",
+      "collocation": "T = √(s(s − a)(s − b)(s − c))"
+    }
+  ]
+}

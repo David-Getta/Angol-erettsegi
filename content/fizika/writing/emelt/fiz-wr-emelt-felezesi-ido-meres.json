@@ -1,0 +1,45 @@
+{
+  "schemaVersion": 1,
+  "id": "fiz-wr-emelt-felezesi-ido-meres",
+  "subject": "fizika",
+  "revision": 1,
+  "level": "emelt",
+  "source": "generated",
+  "topic": "atom-magfizika",
+  "title": "Méréselemzés: egy rövid felezési idejű izotóp felezési ideje",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "writing",
+  "type": "mereselemzes",
+  "taskNumber": 3,
+  "situation": "Egy iskolai izotópgenerátorból rövid felezési idejű, gamma-sugárzó izotópot (bárium-137m) tartalmazó oldatot nyertek ki. Az oldatot Geiger–Müller-számláló elé helyezték, és percenként feljegyezték a percenkénti beütésszámot. A mérés előtt, minta nélkül a háttérsugárzás 30 beütés/perc volt.\n\nA mért (bruttó) beütésszámok, beütés/perc:\nt = 0 perc: 2030; t = 1 perc: 1560; t = 2 perc: 1185; t = 3 perc: 920; t = 4 perc: 700; t = 5 perc: 548; t = 6 perc: 418; t = 8 perc: 255; t = 10 perc: 165.\n\na) Miért kell a mért értékekből levonni a háttérsugárzást? Add meg a nettó beütésszámokat! (2 pont)\nb) Határozd meg az izotóp felezési idejét a mérési adatokból! Írd le, milyen módszerrel dolgoztál (pl. a nettó beütésszám feleződési idejéből, vagy a beütésszám logaritmusának ábrázolásával)! (4 pont)\nc) A kapott felezési idővel számolva mekkora nettó beütésszámot várnánk 15 perc múlva? Mit mondhatunk ekkor a mérés megbízhatóságáról? (3 pont)\nd) Milyen hibaforrások befolyásolják a mérést, és hogyan lehetne pontosítani? (3 pont)",
+  "points": [
+    { "id": "p1", "text": "a) A háttérsugárzás levonásának oka és a nettó beütésszámok (2 pont)" },
+    { "id": "p2", "text": "b) A felezési idő meghatározása a mérési adatokból, a módszer leírásával (4 pont)" },
+    { "id": "p3", "text": "c) A várható nettó beütésszám 15 perc múlva és a mérés megbízhatósága (3 pont)" },
+    { "id": "p4", "text": "d) Hibaforrások és a mérés pontosítása (3 pont)" }
+  ],
+  "suggestedMinutes": 35,
+  "usefulPhrases": [
+    { "en": "N_nettó = N_mért − N_háttér", "hu": "A háttérsugárzás a mintától független, ezért minden mért értékből le kell vonni." },
+    { "en": "A = A₀ · 2^(−t/T½)", "hu": "A bomlási törvény: az aktivitás (és a beütésszám) exponenciálisan csökken." },
+    { "en": "ln A = ln A₀ − (ln 2 / T½)·t", "hu": "Logaritmálva egyenest kapunk; a meredekség −ln2/T½, ebből a felezési idő." },
+    { "en": "λ = ln 2 / T½", "hu": "A bomlási állandó és a felezési idő kapcsolata." },
+    { "en": "ΔN ≈ √N", "hu": "A radioaktív bomlás véletlenszerű: N beütés statisztikus bizonytalansága kb. √N." },
+    { "en": "relatív hiba = √N / N = 1/√N", "hu": "Kevés beütésnél a relatív hiba nagy – ezért hosszabb ideig kell számlálni." }
+  ],
+  "modelAnswer": {
+    "text": "a) A Geiger–Müller-számláló a mintától függetlenül is jelez: a talajból, az épületanyagokból és a kozmikus sugárzásból származó háttérsugárzást is beszámolja. Ez minden percben átlagosan ugyanannyi (30 beütés/perc), ezért a minta saját sugárzását a mért és a háttér különbsége adja.\nNettó beütésszámok (beütés/perc): t = 0: 2000; 1: 1530; 2: 1155; 3: 890; 4: 670; 5: 518; 6: 388; 8: 225; 10: 135.\n\nb) Első módszer (feleződés): a nettó beütésszám 2000-ről 1000-re 2 és 3 perc között csökken (1155 → 890). Ugyanígy 1000-ről 500-ra 5 perc körül (518), 500-ról 250-re kb. 7,5 perc körül csökken. Tehát kb. 2,5 percenként feleződik.\nMásodik, pontosabb módszer (logaritmus): a bomlási törvény A = A₀ · 2^(−t/T½), logaritmálva ln A = ln A₀ − (ln 2/T½)·t, vagyis ln A az idő lineáris függvénye. A nettó értékek természetes logaritmusa: 7,60; 7,33; 7,05; 6,79; 6,51; 6,25; 5,96; 5,42; 4,91. Ezek jó közelítéssel egy egyenesre esnek, amelynek meredeksége (7,60 − 4,91)/(0 − 10) perc ≈ −0,27 1/perc (a kiegyenlítő egyenesből −0,271 1/perc).\nA bomlási állandó λ ≈ 0,271 1/perc, így T½ = ln 2/λ = 0,693/0,271 perc ≈ 2,56 perc.\nAz izotóp felezési ideje a mérés szerint kb. 2,6 perc (kb. 150 s), ami jól egyezik a bárium-137m irodalmi értékével (2,55 perc).\n\nc) 15 perc múlva: A = 2000 · 2^(−15/2,56) ≈ 2000 · 2^(−5,86) ≈ 2000 · 0,0172 ≈ 34 beütés/perc nettó beütésszám várható.\nEz ugyanakkora nagyságrendű, mint a 30 beütés/perc háttér, így a mért bruttó érték kb. 64 beütés/perc lenne. A radioaktív bomlás véletlenszerű, a statisztikus ingadozás kb. √N: √64 ≈ 8, ami a 34-es nettó értéknek kb. 25 %-a. A mérés ekkor már nagyon bizonytalan, a felezési idő meghatározásához az első 6–8 perc adatai a megbízhatóak.\n\nd) Hibaforrások: (1) a bomlás statisztikus ingadozása – kis beütésszámnál nagy a relatív hiba (1/√N); (2) a háttérsugárzás maga is ingadozik, és csak egyszer, rövid ideig mérték; (3) a számláló holtideje nagy beütésszámnál kissé csökkenti a mért értéket; (4) egy perces számlálás alatt az aktivitás is változik, így a percenkénti érték valójában átlag; (5) a minta és a számláló helyzete elmozdulhat. Pontosítás: a háttér hosszabb (pl. 10 perces) mérése, a mérés többszöri megismétlése friss mintával, rövidebb időközökben, de nagyobb kezdeti aktivitással vagy közelebbi számlálóval mérve több beütés gyűjtése, rögzített mérési elrendezés, és a felezési idő meghatározása a logaritmikus ábrázolás kiegyenlítő egyeneséből, nem két kiragadott pontból.",
+    "pointsCovered": [
+      { "id": "p1", "quote": "Nettó beütésszámok (beütés/perc): t = 0: 2000; 1: 1530; 2: 1155; 3: 890; 4: 670; 5: 518; 6: 388; 8: 225; 10: 135." },
+      { "id": "p2", "quote": "T½ = ln 2/λ = 0,693/0,271 perc ≈ 2,56 perc" },
+      { "id": "p3", "quote": "A = 2000 · 2^(−15/2,56) ≈ 2000 · 2^(−5,86) ≈ 2000 · 0,0172 ≈ 34 beütés/perc" },
+      { "id": "p4", "quote": "a bomlás statisztikus ingadozása – kis beütésszámnál nagy a relatív hiba (1/√N)" }
+    ],
+    "notes": [
+      "Eredmény: a nettó értékek, a kb. 2,6 perces felezési idő és a 15 percre becsült kb. 34 beütés/perc mind helyes, és a felezési idő két független módszerrel is kijön – ez az eredmény 6 pontja.",
+      "Indoklás: a megoldás megmutatja, miért egyenes a logaritmus az idő függvényében, és a felezési időt a meredekségből számolja; a háttér levonását fizikailag indokolja.",
+      "Méréselemzés: a statisztikus hibát számszerűen (√N) becsüli, és megmondja, mely adatok megbízhatók – ezt az emelt szintű javítási útmutatók külön értékelik."
+    ]
+  }
+}

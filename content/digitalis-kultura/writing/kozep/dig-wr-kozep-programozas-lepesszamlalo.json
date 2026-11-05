@@ -1,0 +1,112 @@
+{
+  "schemaVersion": 1,
+  "id": "dig-wr-kozep-programozas-lepesszamlalo",
+  "subject": "digitalis-kultura",
+  "revision": 1,
+  "level": "kozep",
+  "source": "generated",
+  "topic": "algoritmizalas",
+  "title": "Programozás: heti lépésszám",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "writing",
+  "type": "programozas",
+  "taskNumber": 5,
+  "situation": "Egy okosóra naponta rögzíti a megtett lépések számát. Készítsen programot, amely egy hét adatait dolgozza fel! A program forráskódját lepes néven mentse (pl. lepes.py)!\n\nA képernyőre írás előtt mindig jelenítse meg a feladat sorszámát (pl. „2. feladat”), és az eredményeket a mintának megfelelő szöveggel írja ki!\n\n1. Kérje be a felhasználótól a hét napjainak (hétfőtől vasárnapig) lépésszámát, és tárolja egy listában! A bekérésnél jelenjen meg a nap neve (pl. „Hétfői lépésszám: ”). Feltételezheti, hogy a felhasználó nemnegatív egész számokat ad meg.\n2. Írja ki a heti összes lépésszámot és a napi átlagot két tizedesjegy pontossággal!\n3. Melyik napon lépett a legtöbbet? Írja ki a nap nevét és a lépésszámot! Ha több ilyen nap van, az elsőt adja meg.\n4. Hány napon érte el a 10 000 lépést?\n5. Döntse el, volt-e olyan nap, amikor 3000-nél kevesebbet lépett! Írja ki: „Volt 3000 lépésnél kevesebb nap.” vagy „Nem volt 3000 lépésnél kevesebb nap.”\n6. Írja ki egy sorban, vesszővel elválasztva azoknak a napoknak a nevét, amikor nem érte el a 10 000 lépést!\n\nMinta (a bemenet: 8500, 12000, 2600, 10000, 9400, 15300, 4100):\n2. feladat\nHeti összes lépés: 61900\nNapi átlag: 8842.86\n3. feladat\nA legtöbb lépés napja: szombat (15300 lépés)\n4. feladat\nA 10 000 lépést elérő napok száma: 3\n5. feladat\nVolt 3000 lépésnél kevesebb nap.\n6. feladat\n10 000 alatti napok: hétfő, szerda, péntek, vasárnap",
+  "points": [
+    {
+      "id": "p1",
+      "text": "1. A hét lépésszámának bekérése a nap nevével, tárolás listában (3 pont)"
+    },
+    {
+      "id": "p2",
+      "text": "2. Heti összeg és napi átlag két tizedesjegyre (3 pont)"
+    },
+    {
+      "id": "p3",
+      "text": "3. A legtöbb lépés napja és a lépésszám (az első maximum) (3 pont)"
+    },
+    {
+      "id": "p4",
+      "text": "4. A 10 000 lépést elérő napok száma (2 pont)"
+    },
+    {
+      "id": "p5",
+      "text": "5. Eldöntés: volt-e 3000 alatti nap, a kért szöveggel (2 pont)"
+    },
+    {
+      "id": "p6",
+      "text": "6. A 10 000 alatti napok neve egy sorban, vesszővel elválasztva (2 pont)"
+    }
+  ],
+  "suggestedMinutes": 35,
+  "usefulPhrases": [
+    {
+      "en": "int(input(\"…\"))",
+      "hu": "a beolvasott szöveg egész számmá alakítása – nélküle a + összefűzne"
+    },
+    {
+      "en": "lista.append(x)",
+      "hu": "új elem a lista végére"
+    },
+    {
+      "en": "f\"{ertek:.2f}\"",
+      "hu": "kiírás két tizedesjegyre"
+    },
+    {
+      "en": "for i in range(len(lista)):",
+      "hu": "bejárás index szerint, ha a sorszám (napnév) is kell"
+    },
+    {
+      "en": "if t[i] > t[maxi]: maxi = i",
+      "hu": "maximumkiválasztás; a > az első, a >= az utolsó maximumot adja"
+    },
+    {
+      "en": "while i < n and not feltetel(t[i]): i += 1",
+      "hu": "eldöntés / keresés: megáll az első megfelelő elemnél"
+    },
+    {
+      "en": "\", \".join(nevek)",
+      "hu": "szöveglista összefűzése elválasztóval"
+    },
+    {
+      "en": "print(\"2. feladat\")",
+      "hu": "a feladat sorszámának kiírása – a vizsgán kérik"
+    }
+  ],
+  "checklistExtra": [],
+  "modelAnswer": {
+    "text": "Megoldás Pythonban (a minta bemenettel tesztelve a fenti kimenetet adja):\n\nnapok = [\"hétfő\", \"kedd\", \"szerda\", \"csütörtök\", \"péntek\", \"szombat\", \"vasárnap\"]\n\n# 1. feladat: a 7 napi lépésszám bekérése\nlepesek = []\nfor nap in napok:\n    lepesek.append(int(input(nap.capitalize() + \"i lépésszám: \")))\n\n# 2. feladat: összegzés és átlag\nosszes = 0\nfor db in lepesek:\n    osszes += db\nprint(\"2. feladat\")\nprint(\"Heti összes lépés:\", osszes)\nprint(f\"Napi átlag: {osszes / len(lepesek):.2f}\")\n\n# 3. feladat: maximumkiválasztás (az első legnagyobb)\nmaxi = 0\nfor i in range(1, len(lepesek)):\n    if lepesek[i] > lepesek[maxi]:\n        maxi = i\nprint(\"3. feladat\")\nprint(\"A legtöbb lépés napja:\", napok[maxi], \"(\" + str(lepesek[maxi]) + \" lépés)\")\n\n# 4. feladat: megszámlálás\ndb10 = 0\nfor db in lepesek:\n    if db >= 10000:\n        db10 += 1\nprint(\"4. feladat\")\nprint(\"A 10 000 lépést elérő napok száma:\", db10)\n\n# 5. feladat: eldöntés\ni = 0\nwhile i < len(lepesek) and lepesek[i] >= 3000:\n    i += 1\nprint(\"5. feladat\")\nif i < len(lepesek):\n    print(\"Volt 3000 lépésnél kevesebb nap.\")\nelse:\n    print(\"Nem volt 3000 lépésnél kevesebb nap.\")\n\n# 6. feladat: kiválogatás\nkeves = []\nfor i in range(len(lepesek)):\n    if lepesek[i] < 10000:\n        keves.append(napok[i])\nprint(\"6. feladat\")\nprint(\"10 000 alatti napok:\", \", \".join(keves))\n\nMagyarázat: a napok nevét egy listában tárolom, így ugyanaz az index a nevet és a lépésszámot is megadja. A 2. feladat az összegzés, a 3. a maximumkiválasztás (az indexet jegyzem meg, és a szigorú > miatt az első legnagyobb marad meg), a 4. a megszámlálás, az 5. az eldöntés (a while ciklus megáll az első 3000 alatti napnál), a 6. a kiválogatás tétele; a join() vesszővel és szóközzel fűzi össze a neveket.",
+    "pointsCovered": [
+      {
+        "id": "p1",
+        "quote": "lepesek.append(int(input(nap.capitalize() + \"i lépésszám: \")))"
+      },
+      {
+        "id": "p2",
+        "quote": "print(f\"Napi átlag: {osszes / len(lepesek):.2f}\")"
+      },
+      {
+        "id": "p3",
+        "quote": "if lepesek[i] > lepesek[maxi]:"
+      },
+      {
+        "id": "p4",
+        "quote": "if db >= 10000:"
+      },
+      {
+        "id": "p5",
+        "quote": "while i < len(lepesek) and lepesek[i] >= 3000:"
+      },
+      {
+        "id": "p6",
+        "quote": "print(\"10 000 alatti napok:\", \", \".join(keves))"
+      }
+    ],
+    "notes": [
+      "A követelmények teljesítése: mind a hat részfeladat elkészül, és a mintabemenetre pontosan a mintakimenetet adja (a feladatsorszámokkal együtt).",
+      "Szakszerű módszer: minden részfeladat a megfelelő programozási tétellel készül (összegzés, maximumkiválasztás, megszámlálás, eldöntés, kiválogatás); a napnevek listája miatt nincs hét külön if ág.",
+      "Pontosság: a bemenet int()-tel számmá alakul, az átlag f-stringgel két tizedesre formázódik, határesetek: a pontosan 10 000 lépés is beleszámít (>=), és az egyenlő maximumok közül az első marad meg."
+    ]
+  }
+}

@@ -1,0 +1,195 @@
+{
+  "schemaVersion": 1,
+  "id": "mat-vc-kozep-algebra",
+  "subject": "matematika",
+  "revision": 1,
+  "level": "kozep",
+  "source": "generated",
+  "topic": "algebra",
+  "title": "Hatvány, gyök, logaritmus, azonosságok (közép)",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "vocabulary",
+  "type": "deck",
+  "cards": [
+    {
+      "term": "hatvány",
+      "meaning": "Az aⁿ (n pozitív egész) n darab a tényező szorzata; a az alap, n a kitevő.",
+      "example": "A 2⁵ hatvány értéke 32: öt darab 2-es szorzata.",
+      "collocation": "aⁿ = a·a·…·a"
+    },
+    {
+      "term": "nulladik hatvány",
+      "meaning": "Bármely nullától különböző szám nulladik hatványa 1; a 0⁰ nincs értelmezve.",
+      "example": "A 7⁰ nulladik hatvány értéke 1, nem 0.",
+      "collocation": "a⁰ = 1 (a ≠ 0)"
+    },
+    {
+      "term": "negatív kitevő",
+      "meaning": "a⁻ⁿ = 1/aⁿ, ha a ≠ 0: a negatív kitevő reciprokot jelent, nem negatív számot.",
+      "example": "Negatív kitevő esetén 2⁻³ = 1/8.",
+      "collocation": "a⁻ⁿ = 1/aⁿ"
+    },
+    {
+      "term": "törtkitevő",
+      "meaning": "Pozitív a esetén a^(1/n) = ⁿ√a és a^(p/q) = q-adik gyök alatt aᵖ.",
+      "example": "A törtkitevő miatt 8^(1/3) = ∛8 = 2.",
+      "collocation": "a^(1/n) = ⁿ√a"
+    },
+    {
+      "term": "azonos alapú hatványok szorzata",
+      "meaning": "Azonos alapú hatványokat úgy szorzunk, hogy a közös alapot a kitevők összegére emeljük.",
+      "example": "Az azonos alapú hatványok szorzata: 3²·3⁴ = 3⁶.",
+      "collocation": "aⁿ·aᵏ = aⁿ⁺ᵏ"
+    },
+    {
+      "term": "azonos alapú hatványok hányadosa",
+      "meaning": "Azonos alapú hatványokat (a ≠ 0) úgy osztunk, hogy a kitevőket kivonjuk.",
+      "example": "Az azonos alapú hatványok hányadosa: 5⁷ : 5⁴ = 5³.",
+      "collocation": "aⁿ : aᵏ = aⁿ⁻ᵏ"
+    },
+    {
+      "term": "hatvány hatványa",
+      "meaning": "Hatványt úgy hatványozunk, hogy az alapot a kitevők szorzatára emeljük.",
+      "example": "A hatvány hatványa: (2³)² = 2⁶ = 64.",
+      "collocation": "(aⁿ)ᵏ = aⁿ·ᵏ"
+    },
+    {
+      "term": "szorzat hatványa",
+      "meaning": "Szorzatot tényezőnként hatványozunk; összegre ez nem igaz!",
+      "example": "A szorzat hatványa (2x)³ = 8x³, de (a + b)² ≠ a² + b².",
+      "collocation": "(a·b)ⁿ = aⁿ·bⁿ"
+    },
+    {
+      "term": "négyzetgyök",
+      "meaning": "Egy nemnegatív a szám négyzetgyöke az a nemnegatív szám, amelynek négyzete a.",
+      "example": "A 49 négyzetgyöke 7, nem ±7: a négyzetgyök sosem negatív.",
+      "collocation": "√(a²) = |a|"
+    },
+    {
+      "term": "n-edik gyök",
+      "meaning": "Páratlan n esetén ⁿ√a az a valós szám, amelynek n-edik hatványa a; páros n esetén nemnegatív a-ra az a nemnegatív szám, amelynek n-edik hatványa a.",
+      "example": "A −27 harmadik gyöke −3, mert páratlan n-edik gyök negatív számból is vonható.",
+      "collocation": "(ⁿ√a)ⁿ = a"
+    },
+    {
+      "term": "gyökök szorzata",
+      "meaning": "Nemnegatív számok gyökeinek szorzata a szorzat gyöke.",
+      "example": "A gyökök szorzata: √2·√8 = √16 = 4.",
+      "collocation": "√a·√b = √(ab)"
+    },
+    {
+      "term": "nevező gyöktelenítése",
+      "meaning": "A tört bővítése úgy, hogy a nevezőben ne maradjon gyök.",
+      "example": "A nevező gyöktelenítése után 6/√3 = 6√3/3 = 2√3.",
+      "collocation": "1/√a = √a/a"
+    },
+    {
+      "term": "logaritmus",
+      "meaning": "logₐb az a kitevő, amelyre az a alapot emelve b-t kapunk (a > 0, a ≠ 1, b > 0).",
+      "example": "A logaritmus definíciója szerint log₂ 8 = 3, mert 2³ = 8.",
+      "collocation": "a^(logₐ b) = b"
+    },
+    {
+      "term": "tízes alapú logaritmus",
+      "meaning": "A 10-es alapú logaritmus jele lg: lg b = log₁₀ b.",
+      "example": "A tízes alapú logaritmus értéke: lg 0,01 = −2.",
+      "collocation": "lg b = log₁₀ b"
+    },
+    {
+      "term": "szorzat logaritmusa",
+      "meaning": "Pozitív számok szorzatának logaritmusa a tényezők logaritmusának összege.",
+      "example": "A szorzat logaritmusa: lg 2 + lg 5 = lg 10 = 1.",
+      "collocation": "logₐ(xy) = logₐx + logₐy"
+    },
+    {
+      "term": "hányados logaritmusa",
+      "meaning": "Pozitív számok hányadosának logaritmusa a számláló és a nevező logaritmusának különbsége.",
+      "example": "A hányados logaritmusa: log₃ 54 − log₃ 2 = log₃ 27 = 3.",
+      "collocation": "logₐ(x/y) = logₐx − logₐy"
+    },
+    {
+      "term": "hatvány logaritmusa",
+      "meaning": "Pozitív szám k-adik hatványának logaritmusa a szám logaritmusának k-szorosa.",
+      "example": "A hatvány logaritmusa: lg 1000 = lg 10³ = 3·lg 10 = 3.",
+      "collocation": "logₐ(xᵏ) = k·logₐx"
+    },
+    {
+      "term": "összeg négyzete",
+      "meaning": "Két tag összegének négyzete: az első tag négyzete + a két tag szorzatának kétszerese + a második tag négyzete.",
+      "example": "Az összeg négyzete: (x + 3)² = x² + 6x + 9.",
+      "collocation": "(a + b)² = a² + 2ab + b²"
+    },
+    {
+      "term": "különbség négyzete",
+      "meaning": "Két tag különbségének négyzete: a² − 2ab + b².",
+      "example": "A különbség négyzete: (2x − 1)² = 4x² − 4x + 1.",
+      "collocation": "(a − b)² = a² − 2ab + b²"
+    },
+    {
+      "term": "két négyzet különbsége",
+      "meaning": "Két négyzet különbsége a két alap összegének és különbségének szorzata.",
+      "example": "Két négyzet különbsége: x² − 25 = (x + 5)(x − 5).",
+      "collocation": "a² − b² = (a + b)(a − b)"
+    },
+    {
+      "term": "kiemelés",
+      "meaning": "A közös tényező kiírása a zárójel elé (a disztributivitás fordítottja).",
+      "example": "Kiemeléssel 6x² − 9x = 3x(2x − 3).",
+      "collocation": "ab + ac = a(b + c)"
+    },
+    {
+      "term": "algebrai tört",
+      "meaning": "Olyan tört, amelynek számlálójában vagy nevezőjében változó van; csak ott értelmezett, ahol a nevező nem 0.",
+      "example": "Az (x² − 1)/(x − 1) algebrai tört x ≠ 1 esetén x + 1-gyel egyenlő.",
+      "collocation": "nevező ≠ 0"
+    },
+    {
+      "term": "abszolút érték",
+      "meaning": "|a| = a, ha a ≥ 0, és |a| = −a, ha a < 0; a szám 0-tól való távolsága a számegyenesen.",
+      "example": "A −4 abszolút értéke 4.",
+      "collocation": "|a| ≥ 0"
+    },
+    {
+      "term": "normálalak",
+      "meaning": "A szám a·10ᵏ alakja, ahol 1 ≤ |a| < 10 és k egész.",
+      "example": "A 0,00052 normálalakja 5,2·10⁻⁴.",
+      "collocation": "a·10ᵏ, 1 ≤ |a| < 10"
+    },
+    {
+      "term": "racionális szám",
+      "meaning": "Olyan szám, amely felírható két egész szám hányadosaként (p/q, q ≠ 0); tizedes tört alakja véges vagy végtelen szakaszos.",
+      "example": "A 0,333… racionális szám, mert 1/3-dal egyenlő.",
+      "collocation": "p/q, q ≠ 0"
+    },
+    {
+      "term": "irracionális szám",
+      "meaning": "Olyan valós szám, amely nem írható fel két egész szám hányadosaként; tizedes tört alakja végtelen, nem szakaszos.",
+      "example": "A √2 és a π irracionális szám."
+    },
+    {
+      "term": "számtani közép",
+      "meaning": "Az a és b szám számtani közepe (a + b)/2; n számé az összegük n-ed része.",
+      "example": "A 4 és a 16 számtani közepe 10.",
+      "collocation": "A = (a + b)/2"
+    },
+    {
+      "term": "mértani közép",
+      "meaning": "Két nemnegatív szám mértani közepe a szorzatuk négyzetgyöke; sosem nagyobb a számtani középnél.",
+      "example": "A 4 és a 16 mértani közepe √64 = 8, ami kisebb a számtani közepüknél.",
+      "collocation": "G = √(ab) ≤ (a + b)/2"
+    },
+    {
+      "term": "egyenes arányosság",
+      "meaning": "Két mennyiség egyenesen arányos, ha hányadosuk állandó (y = k·x, k ≠ 0): ahányszorosára nő az egyik, annyiszorosára a másik.",
+      "example": "Egyenes arányosság miatt 3 kg alma ára háromszorosa az 1 kg árának.",
+      "collocation": "y = k·x"
+    },
+    {
+      "term": "fordított arányosság",
+      "meaning": "Két mennyiség fordítottan arányos, ha szorzatuk állandó (x·y = k, k ≠ 0).",
+      "example": "Fordított arányosság: kétszer annyi munkás fele annyi idő alatt végez (azonos teljesítmény mellett).",
+      "collocation": "x·y = k"
+    }
+  ]
+}

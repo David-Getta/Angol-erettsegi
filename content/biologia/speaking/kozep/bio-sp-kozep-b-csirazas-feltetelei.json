@@ -1,0 +1,79 @@
+{
+  "schemaVersion": 1,
+  "id": "bio-sp-kozep-b-csirazas-feltetelei",
+  "subject": "biologia",
+  "revision": 1,
+  "level": "kozep",
+  "source": "generated",
+  "topic": "novenyek-allatok",
+  "title": "A csírázás feltételeinek vizsgálata",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "speaking",
+  "type": "b-tetel",
+  "partNumber": 2,
+  "instructionsHu": "B) altétel – gyakorlati feladat. A forrásban egy csírázási kísérlet elrendezése és eredménye olvasható. Mutasd be a kísérletet, értelmezd az eredményeket, és vond le a következtetést a csírázás feltételeiről!",
+  "prompts": [
+    "A kísérlet elrendezése: mi a különbség az egyes üvegek között, melyik a kontroll?",
+    "Az egyes üvegek eredményének magyarázata.",
+    "A csírázás feltételei és az, hogy miért szükségesek.",
+    "Mi kell a csíranövény további fejlődéséhez? Hogyan vizsgálnád a fény szerepét?"
+  ],
+  "followUpQuestions": [
+    "Miért kellett a 4. üvegben a vizet előbb felforralni?",
+    "Miért csírázik ki a gabona akkor is, ha a talaj sötét?"
+  ],
+  "usefulPhrases": [
+    {
+      "en": "kontroll",
+      "hu": "minden feltétel adott; ehhez hasonlítjuk a többit"
+    },
+    {
+      "en": "duzzadás",
+      "hu": "a száraz mag vízfelvétele, a csírázás első lépése"
+    },
+    {
+      "en": "sejtlégzés",
+      "hu": "oxigén felhasználásával ATP-t termel a tápanyagokból"
+    },
+    {
+      "en": "etiolált növény",
+      "hu": "sötétben nevelt, megnyúlt, sárgás növény"
+    }
+  ],
+  "sources": [
+    {
+      "title": "A kísérlet elrendezése",
+      "text": "Négy befőttesüvegbe 10–10 egészséges, egyforma babszemet tettünk. 1. üveg: száraz vatta, szobahőmérséklet (22 °C). 2. üveg: nedves vatta, szobahőmérséklet. 3. üveg: nedves vatta, hűtőszekrényben (4 °C). 4. üveg: a babszemeket felforralt, majd lehűtött víz alá merítettük, a víz felszínére vékony olajréteget öntöttünk, szobahőmérséklet. Mind a négy üveg sötét szekrényben (a 3. a sötét hűtőben) állt."
+    },
+    {
+      "title": "Eredmény 4 nap után",
+      "text": "1. üveg: egyik mag sem csírázott. 2. üveg: 9 mag csírázott ki. 3. üveg: egyik mag sem csírázott. 4. üveg: a magok megduzzadtak, de nem csíráztak ki."
+    }
+  ],
+  "keyPoints": [
+    "A 2. üveg a kontroll: itt minden feltétel adott; a többi üvegben mindig egy-egy feltétel hiányzik (víz, megfelelő hőmérséklet, oxigén).",
+    "1. üveg: víz nélkül nincs duzzadás, a mag enzimjei nem aktiválódnak, nincs csírázás.",
+    "3. üveg: hidegben az enzimek működése nagyon lelassul – nincs elég energia és építőanyag.",
+    "4. üveg: a forralás kiűzte a vízből a levegőt, az olajréteg megakadályozza az oxigén beoldódását; oxigén nélkül nincs sejtlégzés, nincs elég ATP; a duzzadás viszont megtörtént.",
+    "A csírázás feltételei: víz, megfelelő hőmérséklet, oxigén; a fény a bab csírázásához nem kell (a 2. üveg sötétben is csírázott).",
+    "A csírázáskor a mag tartalék tápanyagait (keményítő, fehérje) enzimek bontják, a sejtlégzés energiát termel a gyököcske és a rügyecske növekedéséhez.",
+    "A csíranövény további fejlődéséhez fény kell a fotoszintézishez és a klorofill képződéséhez; sötétben megnyúlt, sárgás (etiolált) lesz.",
+    "Egy mag nem csírázott a 2. üvegben: életképtelen lehetett – ezért kell több magot használni."
+  ],
+  "speakingSeconds": 420,
+  "prepSeconds": 900,
+  "sampleAnswer": {
+    "turns": [
+      {
+        "speaker": "candidate",
+        "text": "A kísérletben négy üveget hasonlítunk össze. A 2. üveg a kontroll: nedves vattán, szobahőmérsékleten itt minden feltétel adott a csírázáshoz. A többi üvegben mindig pontosan egy tényező hiányzik: az 1.-ben a víz, a 3.-ban a megfelelő hőmérséklet, a 4.-ben az oxigén. Így minden eltérést egyetlen tényezőnek tudunk tulajdonítani. Azért tettünk üvegenként tíz magot, mert egy-egy mag eleve életképtelen is lehet – ezt mutatja, hogy a kontrollban is csak kilenc csírázott ki.\nAz 1. üvegben nem csírázott semmi, mert a csírázás első lépése a duzzadás: a száraz mag vizet vesz fel, és csak ezután aktiválódnak az enzimjei. A 3. üvegben 4 °C-on az enzimek által katalizált folyamatok annyira lelassulnak, hogy a mag nem tudja lebontani a tartalék tápanyagait. A 4. üvegben a magok megduzzadtak, tehát volt víz, de nem csíráztak ki. A forralás kiűzte a vízből az oldott levegőt, az olajréteg pedig megakadályozta, hogy oxigén oldódjon vissza. Oxigén nélkül nincs sejtlégzés, így a mag nem termel elég ATP-t a növekedéshez.\nA következtetés: a csírázáshoz víz, megfelelő hőmérséklet és oxigén szükséges. A csírázó mag a sziklevelekben raktározott keményítőt és fehérjét enzimekkel bontja, a sejtlégzés ezekből termel energiát, és ebből nő a gyököcske és a rügyecske. Fény a bab csírázásához nem kell, hiszen a 2. üveg sötétben is kicsírázott.\nA csíranövény további fejlődéséhez viszont fény is kell: amikor a tartalék tápanyag elfogy, a növénynek fotoszintézissel kell szerves anyagot előállítania, és a klorofill is fény hatására képződik. Ezt úgy vizsgálnám, hogy két nedves vattás üveget tennék szobahőmérsékletre, az egyiket világos helyre, a másikat sötétbe, és két hét múlva összehasonlítanám a csíranövények színét és hosszát. A sötétben nevelt növény várhatóan megnyúlt és sárgás lenne."
+      }
+    ],
+    "notes": [
+      "Gyakorlati feladat: a kísérleti elrendezést a kontroll és az egy-egy hiányzó tényező logikája szerint mutatja be, és megindokolja a tíz mag használatát.",
+      "Értelmezés: mind a négy eredményt biológiai mechanizmussal magyarázza (duzzadás, enzimműködés, sejtlégzés), a következtetés pontos, és a fény szerepét is helyesen elkülöníti a csírázástól.",
+      "Kiegészítés: saját, helyesen megtervezett kísérletet javasol a fény szerepének vizsgálatára (két üveg, egy változó, várható eredmény)."
+    ]
+  }
+}

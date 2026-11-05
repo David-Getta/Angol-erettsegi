@@ -1,0 +1,245 @@
+{
+  "schemaVersion": 1,
+  "id": "nem-ls-kozep-umzug-speaker-matching",
+  "subject": "nemet",
+  "revision": 1,
+  "level": "kozep",
+  "source": "generated",
+  "topic": "szemelyes",
+  "title": "Wir sind umgezogen",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "listening",
+  "type": "speaker-matching",
+  "instructions": "Sie hören fünf junge Leute (A–E), die erzählen, wie ihre Familie umgezogen ist. Welche Aussage (1–10) passt zu welcher Person? Sie können eine Person mehrmals wählen, und zu jeder Person passt mindestens eine Aussage. Sie hören den Text zweimal. Am Anfang finden Sie ein Beispiel (0).",
+  "instructionsHu": "Öt fiatalt hallasz (A–E), akik a családjuk költözéséről mesélnek. Melyik állítás melyik személyre illik? Egy személyt többször is választhatsz, és mindenkire legalább egy állítás illik. A felvételt kétszer hallod.",
+  "listening": {
+    "format": "monologue",
+    "speakers": [
+      {
+        "id": "N",
+        "name": "Sprecher",
+        "gender": "male",
+        "accent": "de-DE",
+        "age": "adult"
+      },
+      {
+        "id": "A",
+        "name": "Lukas",
+        "gender": "male",
+        "accent": "de-DE",
+        "age": "young"
+      },
+      {
+        "id": "B",
+        "name": "Sophie",
+        "gender": "female",
+        "accent": "de-AT",
+        "age": "young"
+      },
+      {
+        "id": "C",
+        "name": "Can",
+        "gender": "male",
+        "accent": "de-DE",
+        "age": "young"
+      },
+      {
+        "id": "D",
+        "name": "Mia",
+        "gender": "female",
+        "accent": "de-DE",
+        "age": "young"
+      },
+      {
+        "id": "E",
+        "name": "Jonas",
+        "gender": "male",
+        "accent": "de-AT",
+        "age": "young"
+      }
+    ],
+    "script": [
+      {
+        "speaker": "N",
+        "text": "Sie hören fünf junge Leute, die erzählen, wie ihre Familie umgezogen ist. Person A: Lukas."
+      },
+      {
+        "speaker": "A",
+        "text": "Wir sind letzten Sommer von Hamburg nach München gezogen, weil mein Vater dort eine neue Stelle bekommen hat. Am Anfang war ich total dagegen. Ich musste meine Fußballmannschaft und meine besten Freunde zurücklassen. Inzwischen spiele ich in einem neuen Verein, und mit zwei Jungs aus der Mannschaft verstehe ich mich richtig gut. Was ich aber immer noch vermisse, ist das Meer. Hier gibt es zwar Seen und Berge, aber das ist einfach nicht dasselbe."
+      },
+      {
+        "speaker": "N",
+        "text": "Person B: Sophie."
+      },
+      {
+        "speaker": "B",
+        "text": "Wir sind innerhalb von Graz umgezogen, nur drei Straßen weiter. Klingt nach wenig Veränderung, oder? Aber für mich war es riesig: Zum ersten Mal habe ich ein eigenes Zimmer! Vorher habe ich mir zwölf Jahre lang ein Zimmer mit meiner kleinen Schwester geteilt. Jetzt kann ich endlich in Ruhe lernen und Musik hören, so laut ich will. Na ja, fast so laut, wie ich will, denn die Wände sind ziemlich dünn."
+      },
+      {
+        "speaker": "N",
+        "text": "Person C: Can."
+      },
+      {
+        "speaker": "C",
+        "text": "Bei uns war der Umzug eine Katastrophe. Die Firma, die wir bezahlt hatten, kam mit fünf Stunden Verspätung, und eine Kiste mit Geschirr ist kaputtgegangen. Meine Mutter hat geweint, weil das Geschirr noch von meiner Oma war. Aber das Gute ist: Unsere neue Wohnung liegt direkt neben meiner Schule. Ich kann jetzt jeden Morgen zwanzig Minuten länger schlafen."
+      },
+      {
+        "speaker": "N",
+        "text": "Person D: Mia."
+      },
+      {
+        "speaker": "D",
+        "text": "Meine Eltern haben sich vor einem Jahr getrennt, deshalb bin ich mit meiner Mutter in eine kleinere Wohnung gezogen. Das war keine leichte Zeit. Mein Vater wohnt jetzt am anderen Ende der Stadt, und ich bin jedes zweite Wochenende bei ihm. Ehrlich gesagt hat es mir geholfen, mein neues Zimmer selbst zu streichen und einzurichten. Es war wie ein neuer Anfang."
+      },
+      {
+        "speaker": "N",
+        "text": "Person E: Jonas."
+      },
+      {
+        "speaker": "E",
+        "text": "Wir sind aus Wien aufs Land gezogen, in ein altes Bauernhaus. Meine Eltern haben schon lange von einem Garten mit Hühnern geträumt. Ich fand die Idee am Anfang gar nicht so schlecht, aber jetzt brauche ich mit dem Bus fast eine Stunde zur Schule, und abends fährt gar kein Bus mehr. Wenn ich meine Freunde in der Stadt treffen will, muss mich immer jemand mit dem Auto abholen. Ich zähle die Tage bis zum Führerschein."
+      }
+    ]
+  },
+  "options": [
+    {
+      "key": "A",
+      "text": "Person A – Lukas"
+    },
+    {
+      "key": "B",
+      "text": "Person B – Sophie"
+    },
+    {
+      "key": "C",
+      "text": "Person C – Can"
+    },
+    {
+      "key": "D",
+      "text": "Person D – Mia"
+    },
+    {
+      "key": "E",
+      "text": "Person E – Jonas"
+    }
+  ],
+  "optionsReusable": true,
+  "example": {
+    "id": "0",
+    "kind": "match",
+    "prompt": "Diese Person hat jetzt einen kürzeren Schulweg.",
+    "answer": "C",
+    "category": "detail",
+    "explanation": "C (Can) a helyes: az új lakás közvetlenül az iskola mellett van, így reggel húsz perccel tovább alhat.",
+    "evidence": "Unsere neue Wohnung liegt direkt neben meiner Schule."
+  },
+  "items": [
+    {
+      "id": "1",
+      "kind": "match",
+      "prompt": "Die Familie dieser Person ist wegen der Arbeit eines Elternteils umgezogen.",
+      "answer": "A",
+      "category": "detail",
+      "explanation": "A (Lukas) a helyes: azért költöztek Münchenbe, mert az apja ott új állást kapott.",
+      "evidence": "weil mein Vater dort eine neue Stelle bekommen hat",
+      "wrongOptions": {
+        "D": "Mia családja a szülők válása miatt költözött, nem munka miatt."
+      }
+    },
+    {
+      "id": "2",
+      "kind": "match",
+      "prompt": "Diese Person hat sich früher ein Zimmer mit einem Geschwisterkind geteilt.",
+      "answer": "B",
+      "category": "detail",
+      "explanation": "B (Sophie) a helyes: tizenkét évig a húgával osztozott egy szobán, most van először saját szobája.",
+      "evidence": "Vorher habe ich mir zwölf Jahre lang ein Zimmer mit meiner kleinen Schwester geteilt."
+    },
+    {
+      "id": "3",
+      "kind": "match",
+      "prompt": "Diese Person ist jetzt weniger selbstständig als früher.",
+      "answer": "E",
+      "category": "inference",
+      "explanation": "E (Jonas) a helyes: este már nem jár busz, ezért ha a városban akar találkozni a barátaival, mindig valakinek autóval kell érte mennie – tehát másoktól függ.",
+      "evidence": "muss mich immer jemand mit dem Auto abholen",
+      "wrongOptions": {
+        "A": "Lukas eleinte ellenezte a költözést, de nem mondja, hogy kevésbé lenne önálló."
+      }
+    },
+    {
+      "id": "4",
+      "kind": "match",
+      "prompt": "Bei dieser Person ist beim Umzug etwas kaputtgegangen.",
+      "answer": "C",
+      "category": "detail",
+      "explanation": "C (Can) a helyes: összetört egy doboz edény, amely még a nagymamájáé volt.",
+      "evidence": "eine Kiste mit Geschirr ist kaputtgegangen"
+    },
+    {
+      "id": "5",
+      "kind": "match",
+      "prompt": "Diese Person vermisst eine Landschaft aus ihrer alten Heimat.",
+      "answer": "A",
+      "category": "detail",
+      "explanation": "A (Lukas) a helyes: még mindig hiányzik neki a tenger; a müncheni tavak és hegyek „nem ugyanazok”.",
+      "evidence": "Was ich aber immer noch vermisse, ist das Meer.",
+      "wrongOptions": {
+        "E": "Jonas a városból költözött vidékre, de nem mond semmit arról, hogy egy tájat hiányolna."
+      }
+    },
+    {
+      "id": "6",
+      "kind": "match",
+      "prompt": "Für diese Person war das Einrichten des eigenen Zimmers ein Neuanfang.",
+      "answer": "D",
+      "category": "detail",
+      "explanation": "D (Mia) a helyes: segített neki, hogy maga festette ki és rendezte be az új szobáját – olyan volt, mint egy új kezdet.",
+      "evidence": "Es war wie ein neuer Anfang.",
+      "wrongOptions": {
+        "B": "Sophie örül a saját szobájának, de nem ő rendezte be, és nem beszél új kezdetről."
+      }
+    },
+    {
+      "id": "7",
+      "kind": "match",
+      "prompt": "Diese Person kann in der neuen Wohnung nicht ganz so laut sein, wie sie möchte.",
+      "answer": "B",
+      "category": "detail",
+      "explanation": "B (Sophie) a helyes: „csaknem” olyan hangosan hallgathat zenét, amilyen hangosan akar, mert a falak elég vékonyak.",
+      "evidence": "die Wände sind ziemlich dünn"
+    },
+    {
+      "id": "8",
+      "kind": "match",
+      "prompt": "Diese Person sieht einen Elternteil nur noch an manchen Wochenenden.",
+      "answer": "D",
+      "category": "detail",
+      "explanation": "D (Mia) a helyes: az apja a város másik végén lakik, és csak minden második hétvégén van nála.",
+      "evidence": "ich bin jedes zweite Wochenende bei ihm"
+    },
+    {
+      "id": "9",
+      "kind": "match",
+      "prompt": "Diese Person hat am neuen Wohnort schon Freunde gefunden.",
+      "answer": "A",
+      "category": "detail",
+      "explanation": "A (Lukas) a helyes: az új egyesületben két fiúval nagyon jól megérti magát.",
+      "evidence": "mit zwei Jungs aus der Mannschaft verstehe ich mich richtig gut",
+      "wrongOptions": {
+        "E": "Jonas a régi barátaival akar találkozni a városban, újakról nem beszél."
+      }
+    },
+    {
+      "id": "10",
+      "kind": "match",
+      "prompt": "Diese Person wartet ungeduldig darauf, selbst Auto fahren zu dürfen.",
+      "answer": "E",
+      "category": "inference",
+      "explanation": "E (Jonas) a helyes: „számolja a napokat a jogosítványig”, vagyis türelmetlenül várja, hogy maga vezethessen.",
+      "evidence": "Ich zähle die Tage bis zum Führerschein."
+    }
+  ],
+  "suggestedMinutes": 8
+}

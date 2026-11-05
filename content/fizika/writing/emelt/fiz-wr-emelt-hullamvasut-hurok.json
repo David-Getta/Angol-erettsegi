@@ -1,0 +1,43 @@
+{
+  "schemaVersion": 1,
+  "id": "fiz-wr-emelt-hullamvasut-hurok",
+  "subject": "fizika",
+  "revision": 1,
+  "level": "emelt",
+  "source": "generated",
+  "topic": "mozgas-egyensuly",
+  "title": "Számításos feladat: hullámvasút függőleges hurokkal",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "writing",
+  "type": "szamitasos",
+  "taskNumber": 2,
+  "situation": "Egy hullámvasút-modellben az utasokkal együtt 400 kg tömegű kocsi nyugalomból indul egy lejtő tetejéről, majd egy függőleges síkú, 8,0 m sugarú kör alakú hurkon halad végig (a kocsi a hurok belső oldalán fut). A súrlódás és a légellenállás elhanyagolható, a kocsit pontszerűnek tekintjük, g = 10 m/s².\n\na) Legalább milyen magasról (a hurok legalsó pontjához mérve) kell a kocsinak indulnia, hogy a hurok tetején se váljon el a pályától? (4 pont)\nb) A kocsi 25 m magasról indul. Mekkora a sebessége a hurok tetején, és mekkora erővel nyomja ott a pálya a kocsit? (4 pont)\nc) Mekkora erővel nyomja a pálya a kocsit a hurok legalsó pontjában ugyanebben az esetben? Hányszorosa ez a kocsi súlyának? (4 pont)",
+  "points": [
+    { "id": "p1", "text": "a) A minimális indulási magasság a hurok tetején érvényes feltételből és az energiamegmaradásból (4 pont)" },
+    { "id": "p2", "text": "b) A sebesség és a pálya nyomóereje a hurok tetején 25 m-es indulásnál (4 pont)" },
+    { "id": "p3", "text": "c) A nyomóerő a hurok alján és aránya a súlyhoz (4 pont)" }
+  ],
+  "suggestedMinutes": 35,
+  "usefulPhrases": [
+    { "en": "m·g·h = ½·m·v² + m·g·h'", "hu": "Mechanikai energia megmaradása súrlódásmentes pályán (a tömeg kiesik)." },
+    { "en": "F_cp = m·v²/r", "hu": "A körpályán tartáshoz szükséges, a középpont felé mutató eredő erő." },
+    { "en": "tetőn: N + m·g = m·v²/r", "hu": "A hurok tetején a pálya nyomóereje és a nehézségi erő is lefelé, a középpont felé mutat." },
+    { "en": "alján: N − m·g = m·v²/r", "hu": "A hurok alján a nyomóerő felfelé (középpont felé), a nehézségi erő lefelé mutat." },
+    { "en": "a pályától való elválás feltétele: N = 0", "hu": "A határesetben csak a nehézségi erő adja a centripetális erőt: v² = g·r." },
+    { "en": "túlterhelés: N/(m·g)", "hu": "Hányszoros „súlyt” érez az utas – a nyomóerő és a valódi súly aránya." }
+  ],
+  "modelAnswer": {
+    "text": "Adatok: m = 400 kg, r = 8,0 m, g = 10 m/s², a hurok teteje 2r = 16 m magasan van a legalsó pontjához képest.\n\na) A hurok tetején a kocsira lefelé (a kör középpontja felé) a nehézségi erő és a pálya N nyomóereje hat, ezek eredője tartja körpályán: N + m·g = m·v²/r. A kocsi akkor nem válik el a pályától, ha N ≥ 0, a határesetben N = 0, így v²_min = g·r = 10 · 8,0 m²/s² = 80 m²/s².\nA mechanikai energia megmarad (súrlódásmentes pálya, a nyomóerő merőleges a pályára, nem végez munkát): m·g·h = m·g·2r + ½·m·v²_min. Ebből h = 2r + v²_min/(2g) = 2r + r/2 = 2,5·r = 2,5 · 8,0 m = 20 m.\nA kocsinak legalább 20 m magasról kell indulnia.\n\nb) Energiamegmaradás a hurok tetejére: m·g·h = m·g·2r + ½·m·v², így v² = 2g·(h − 2r) = 2 · 10 · (25 − 16) m²/s² = 180 m²/s², v = √180 m/s ≈ 13,4 m/s.\nA tetőn N + m·g = m·v²/r, ebből N = m·(v²/r − g) = 400 kg · (180/8,0 − 10) m/s² = 400 · 12,5 N = 5000 N.\nA hurok tetején a kocsi sebessége kb. 13,4 m/s, a pálya 5,0 kN erővel nyomja (lefelé, a középpont felé).\n\nc) A hurok alján (h' = 0): v² = 2g·h = 2 · 10 · 25 m²/s² = 500 m²/s².\nAlul a nyomóerő felfelé, a nehézségi erő lefelé mutat, eredőjük a középpont felé (felfelé) mutató centripetális erő: N − m·g = m·v²/r, így N = m·(v²/r + g) = 400 kg · (500/8,0 + 10) m/s² = 400 · 72,5 N = 29 000 N.\nA kocsi súlya m·g = 4000 N, tehát N/(m·g) = 29 000/4000 = 7,25.\nA hurok alján a pálya 29 kN erővel nyomja a kocsit, ez a súlyának 7,25-szöröse. (Ilyen nagy túlterhelést ember már csak nagyon rövid ideig visel el, ezért a valódi hullámvasutak hurka nem kör, hanem felül szűkülő, csepp alakú.)",
+    "pointsCovered": [
+      { "id": "p1", "quote": "h = 2r + v²_min/(2g) = 2r + r/2 = 2,5·r = 2,5 · 8,0 m = 20 m" },
+      { "id": "p2", "quote": "N = m·(v²/r − g) = 400 kg · (180/8,0 − 10) m/s² = 400 · 12,5 N = 5000 N" },
+      { "id": "p3", "quote": "N/(m·g) = 29 000/4000 = 7,25" }
+    ],
+    "notes": [
+      "Eredmény: a 20 m-es minimális magasság, a 13,4 m/s-os sebesség, az 5,0 kN és a 29 kN-os nyomóerő, valamint a 7,25-ös arány mind helyes – ez az eredmény-szempont 6 pontja.",
+      "Indoklás: a megoldás kimondja, miért marad meg a mechanikai energia (a nyomóerő nem végez munkát), mi a pályától való elválás feltétele (N = 0), és mindkét ponton helyes irányokkal írja fel a dinamika alapegyenletét – ez a 3 indoklási pont.",
+      "Forma: a végeredmények mértékegységgel, szöveges válasszal szerepelnek, a zárójeles megjegyzés pedig fizikailag értelmezi a kapott túlterhelést."
+    ]
+  }
+}

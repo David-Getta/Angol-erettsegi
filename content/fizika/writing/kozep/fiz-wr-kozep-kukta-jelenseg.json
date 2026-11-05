@@ -1,0 +1,47 @@
+{
+  "schemaVersion": 1,
+  "id": "fiz-wr-kozep-kukta-jelenseg",
+  "subject": "fizika",
+  "revision": 1,
+  "level": "kozep",
+  "source": "generated",
+  "topic": "viz-levego-kornyezet",
+  "title": "Jelenségértelmezés: miért főz gyorsabban a kukta?",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "writing",
+  "type": "jelensegertelmezes",
+  "taskNumber": 3,
+  "situation": "A kukta (gyorsfőző) légmentesen záródó fedelű fazék. Melegítéskor a benne keletkező gőz nem tud eltávozni, ezért a fazékban a nyomás a külső légnyomásnál nagyobb lesz. Egy háztartási kukta szelepe kb. 80 kPa túlnyomásnál nyit ki (a belső nyomás ekkor kb. 180 kPa), és ilyenkor a víz kb. 117 °C-on forr. A babot nyitott fazékban kb. 90 percig, kuktában kb. 30 percig kell főzni. A hegymászók arról számolnak be, hogy 4000 m magasan, ahol a légnyomás kb. 62 kPa, a víz már kb. 87 °C-on forr, és a tojást nagyon nehéz megfőzni.\n\n1. Mi a forrás feltétele? Miért forr a víz nyitott edényben, normál légnyomáson 100 °C-on? (3 pont)\n2. Miért főnek meg gyorsabban az ételek a kuktában? (4 pont)\n3. A kukta fedelének átmérője 22 cm. Mekkora erővel nyomja belülről a fedelet a 80 kPa túlnyomás? Miért veszélyes a kuktát a nyomás csökkentése előtt kinyitni? (3 pont)\n4. Miért nehéz megfőzni a tojást 4000 m magasan? (3 pont)\n5. Mi a biztonsági szelep szerepe, és miért nem nő a kuktában a hőmérséklet tovább, ha a szelep már kinyitott? (3 pont)",
+  "points": [
+    { "id": "p1", "text": "1. A forrás feltétele, a 100 °C-os forráspont magyarázata (3 pont)" },
+    { "id": "p2", "text": "2. A gyorsabb főzés oka a kuktában (4 pont)" },
+    { "id": "p3", "text": "3. A fedélre ható erő kiszámítása és a kinyitás veszélye (3 pont)" },
+    { "id": "p4", "text": "4. A forráspont csökkenése nagy magasságban (3 pont)" },
+    { "id": "p5", "text": "5. A biztonsági szelep szerepe (3 pont)" }
+  ],
+  "suggestedMinutes": 35,
+  "usefulPhrases": [
+    { "en": "telített gőz nyomása = külső nyomás", "hu": "A forrás feltétele: a buborékokban a gőz nyomása eléri a folyadékra ható külső nyomást." },
+    { "en": "a forráspont a nyomás növelésével nő", "hu": "Nagyobb külső nyomáson magasabb hőmérséklet kell a forráshoz – a kukta működési elve." },
+    { "en": "F = Δp·A, A = r²·π", "hu": "A túlnyomásból származó erő a fedélre; a kör területét a sugárral számold!" },
+    { "en": "forrás közben a hőmérséklet állandó", "hu": "Forráskor a felvett hő a párolgáshőt fedezi, nem emeli a hőmérsékletet." },
+    { "en": "túlhevített víz, hirtelen forrás", "hu": "Ha a nyomás hirtelen csökken, a forráspont fölé melegített víz egyszerre nagy tömegben felforr." },
+    { "en": "A jelenség oka az, hogy …", "hu": "Jelenségértelmezésnél mindig a fizikai OKOT nevezd meg, ne csak a tapasztalatot írd le." }
+  ],
+  "modelAnswer": {
+    "text": "1. A folyadék akkor forr, amikor a belsejében keletkező gőzbuborékokban a telített gőz nyomása eléri a folyadékra ható külső nyomást; ekkor a buborékok nem nyomódnak össze, hanem felszállnak, és párolgás a folyadék belsejében is történik. A víz telített gőzének nyomása 100 °C-on éppen 101,3 kPa, vagyis a normál légnyomás, ezért nyitott edényben, tengerszinten a víz 100 °C-on forr. Forrás közben a felvett hő a párolgáshőt fedezi, ezért a hőmérséklet nem emelkedik tovább.\n\n2. A kuktában a gőz nem tud eltávozni, a nyomás kb. 180 kPa-ra nő. Nagyobb nyomáson a víz csak magasabb hőmérsékleten forr: a forrás szerint kb. 117 °C-on. Az étel tehát 100 °C helyett kb. 117 °C-os vízben és gőzben fő. Magasabb hőmérsékleten gyorsabb a hőátadás az étel belseje felé, és sokkal gyorsabban mennek végbe a főzéskor lezajló kémiai folyamatok (pl. a fehérjék és a keményítő átalakulása), ezért a bab 90 perc helyett kb. 30 perc alatt megfő. Ráadásul kevesebb gőz távozik, így kevesebb energia is kell.\n\n3. A fedél területe A = r²·π = (0,11 m)² · 3,14 ≈ 0,038 m². A túlnyomásból származó erő F = Δp·A = 80 000 Pa · 0,038 m² ≈ 3000 N, ami kb. 300 kg tömegű test súlyának felel meg. Ha a fedelet ilyenkor kinyitnánk, a nyomás hirtelen a légköri értékre csökkenne. A kb. 117 °C-os víz a 100 °C-os forráspont fölé lenne hevítve, ezért egyszerre hevesen felforrna, és a forró gőz és víz kicsapódna az edényből – súlyos égési sérülést okozva. Ezért kell először a szelepen át kiengedni a gőzt, illetve lehűteni a kuktát.\n\n4. 4000 m magasan a légnyomás csak kb. 62 kPa, és a víz akkor forr, amikor a telített gőz nyomása ezt eléri – ez kb. 87 °C-on következik be. Hiába melegítjük tovább, a nyitott edényben lévő víz hőmérséklete nem emelkedik a forráspont fölé, mert a további hő elpárologtatja a vizet. A tojásfehérje kb. 80 °C körül és afölött szilárdul meg teljesen, 87 °C-on ez sokkal lassabban megy végbe, mint 100 °C-on, ezért a tojás csak nagyon hosszú idő alatt fő meg.\n\n5. A biztonsági (túlnyomás-) szelep megakadályozza, hogy a nyomás veszélyes mértékűre nőjön, és a kukta felrobbanjon. Amikor a túlnyomás eléri a beállított kb. 80 kPa-t, a szelep kinyit, és annyi gőzt enged ki, hogy a nyomás közel állandó maradjon. Állandó nyomáson a víz forráspontja is állandó (kb. 117 °C), és forrás közben a további hő a víz elpárologtatására fordítódik, ezért a hőmérséklet sem nő tovább.",
+    "pointsCovered": [
+      { "id": "p1", "quote": "a telített gőz nyomása eléri a folyadékra ható külső nyomást" },
+      { "id": "p2", "quote": "Nagyobb nyomáson a víz csak magasabb hőmérsékleten forr" },
+      { "id": "p3", "quote": "F = Δp·A = 80 000 Pa · 0,038 m² ≈ 3000 N" },
+      { "id": "p4", "quote": "ez kb. 87 °C-on következik be" },
+      { "id": "p5", "quote": "a szelep kinyit, és annyi gőzt enged ki, hogy a nyomás közel állandó maradjon" }
+    ],
+    "notes": [
+      "Válaszok: mind az öt kérdésre a jelenség fizikai okával felel (a forrás feltétele, a forráspont nyomásfüggése, a túlhevített víz hirtelen forrása), a 3000 N-os erő kiszámítása helyes – ez a válaszok 10 pontja.",
+      "Indoklás: minden állítás egy fizikai összefüggésre épül (telített gőz nyomása, p = F/A, párolgáshő), és a forrás adatait (180 kPa, 117 °C, 62 kPa, 87 °C) a magyarázatba építi – ez adja az indoklás 4 pontját.",
+      "Szaknyelv: pontosan különbözteti meg a túlnyomást és a belső (abszolút) nyomást, a forrást és a párolgást, a hőt és a hőmérsékletet."
+    ]
+  }
+}

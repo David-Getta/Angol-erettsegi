@@ -1,31 +1,97 @@
 {
+  "schemaVersion": 1,
+  "id": "nem-ls-kozep-jugendherberge-salzburg-true-false",
+  "subject": "nemet",
+  "revision": 1,
+  "level": "kozep",
+  "source": "generated",
   "topic": "utazas",
   "title": "Ankunft in der Jugendherberge",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "listening",
   "type": "true-false",
   "instructions": "Sie hören ein Gespräch an der Rezeption einer Jugendherberge in Salzburg. Entscheiden Sie, ob die Aussagen (1–8) richtig (T) oder falsch (F) sind. Sie hören den Text zweimal. Am Anfang finden Sie ein Beispiel (0).",
   "instructionsHu": "Egy beszélgetést hallasz egy salzburgi ifjúsági szálló recepcióján. Döntsd el, igazak (T) vagy hamisak (F) az állítások. A felvételt kétszer hallod.",
   "listening": {
     "format": "dialogue",
     "speakers": [
-      { "id": "R", "name": "Rezeptionistin", "gender": "female", "accent": "de-AT", "age": "adult" },
-      { "id": "D", "name": "Dániel", "gender": "male", "accent": "de-DE", "age": "young" }
+      {
+        "id": "R",
+        "name": "Rezeptionistin",
+        "gender": "female",
+        "accent": "de-AT",
+        "age": "adult"
+      },
+      {
+        "id": "D",
+        "name": "Dániel",
+        "gender": "male",
+        "accent": "de-DE",
+        "age": "young"
+      }
     ],
     "script": [
-      { "speaker": "R", "text": "Grüß Gott und herzlich willkommen in der Jugendherberge Salzburg! Wie kann ich Ihnen helfen?" },
-      { "speaker": "D", "text": "Guten Abend! Ich habe ein Bett für drei Nächte reserviert. Mein Name ist Dániel Kovács." },
-      { "speaker": "R", "text": "Moment, ich schaue nach … Kovács, ja, hier ist es. Ein Bett im Sechserzimmer, von heute bis Freitag. Darf ich bitte Ihren Ausweis sehen?" },
-      { "speaker": "D", "text": "Ja, natürlich, hier bitte. Ist das Frühstück im Preis inbegriffen?" },
-      { "speaker": "R", "text": "Ja, das Frühstück ist dabei. Frühstück gibt es jeden Tag von sieben bis halb zehn im Speisesaal im Erdgeschoss. Abendessen können Sie auch bei uns bekommen, das kostet aber extra, nämlich neun Euro fünfzig." },
-      { "speaker": "D", "text": "Und brauche ich Bettwäsche? Ich habe leider keinen Schlafsack mitgebracht." },
-      { "speaker": "R", "text": "Kein Problem, die Bettwäsche bekommen Sie hier von mir, die ist schon im Preis. Handtücher kann man für zwei Euro leihen." },
-      { "speaker": "D", "text": "Gut, dann nehme ich ein Handtuch. Gibt es hier auch WLAN?" },
-      { "speaker": "R", "text": "Ja, im ganzen Haus. Das Passwort steht auf Ihrer Zimmerkarte. Ihr Zimmer ist die Nummer 214 im zweiten Stock. Der Aufzug ist gleich da links." },
-      { "speaker": "D", "text": "Danke. Ich möchte morgen die Altstadt besichtigen. Können Sie mir etwas empfehlen?" },
-      { "speaker": "R", "text": "Auf jeden Fall die Festung Hohensalzburg. Mit der Bahn ist man in einer Minute oben, aber ich würde zu Fuß gehen. Das dauert etwa zwanzig Minuten, und die Aussicht ist wunderschön. Und wenn Sie Mozart mögen: Sein Geburtshaus ist in der Getreidegasse, nur zehn Minuten von hier." },
-      { "speaker": "D", "text": "Super. Und wie komme ich am Freitag zum Bahnhof? Mein Zug fährt schon um sieben Uhr." },
-      { "speaker": "R", "text": "Der Bus Nummer zwei fährt direkt vor der Tür ab, normalerweise alle zehn Minuten. Aber so früh am Morgen fährt er nur jede halbe Stunde. Und denken Sie daran: Sie müssen das Zimmer bis zehn Uhr verlassen. Wenn Sie früher gehen, legen Sie den Schlüssel einfach in die Box neben der Eingangstür." },
-      { "speaker": "D", "text": "Alles klar. Vielen Dank!" },
-      { "speaker": "R", "text": "Gern geschehen. Einen schönen Aufenthalt in Salzburg!" }
+      {
+        "speaker": "R",
+        "text": "Grüß Gott und herzlich willkommen in der Jugendherberge Salzburg! Wie kann ich Ihnen helfen?"
+      },
+      {
+        "speaker": "D",
+        "text": "Guten Abend! Ich habe ein Bett für drei Nächte reserviert. Mein Name ist Dániel Kovács."
+      },
+      {
+        "speaker": "R",
+        "text": "Moment, ich schaue nach … Kovács, ja, hier ist es. Ein Bett im Sechserzimmer, von heute bis Freitag. Darf ich bitte Ihren Ausweis sehen?"
+      },
+      {
+        "speaker": "D",
+        "text": "Ja, natürlich, hier bitte. Ist das Frühstück im Preis inbegriffen?"
+      },
+      {
+        "speaker": "R",
+        "text": "Ja, das Frühstück ist dabei. Frühstück gibt es jeden Tag von sieben bis halb zehn im Speisesaal im Erdgeschoss. Abendessen können Sie auch bei uns bekommen, das kostet aber extra, nämlich neun Euro fünfzig."
+      },
+      {
+        "speaker": "D",
+        "text": "Und brauche ich Bettwäsche? Ich habe leider keinen Schlafsack mitgebracht."
+      },
+      {
+        "speaker": "R",
+        "text": "Kein Problem, die Bettwäsche bekommen Sie hier von mir, die ist schon im Preis. Handtücher kann man für zwei Euro leihen."
+      },
+      {
+        "speaker": "D",
+        "text": "Gut, dann nehme ich ein Handtuch. Gibt es hier auch WLAN?"
+      },
+      {
+        "speaker": "R",
+        "text": "Ja, im ganzen Haus. Das Passwort steht auf Ihrer Zimmerkarte. Ihr Zimmer ist die Nummer 214 im zweiten Stock. Der Aufzug ist gleich da links."
+      },
+      {
+        "speaker": "D",
+        "text": "Danke. Ich möchte morgen die Altstadt besichtigen. Können Sie mir etwas empfehlen?"
+      },
+      {
+        "speaker": "R",
+        "text": "Auf jeden Fall die Festung Hohensalzburg. Mit der Bahn ist man in einer Minute oben, aber ich würde zu Fuß gehen. Das dauert etwa zwanzig Minuten, und die Aussicht ist wunderschön. Und wenn Sie Mozart mögen: Sein Geburtshaus ist in der Getreidegasse, nur zehn Minuten von hier."
+      },
+      {
+        "speaker": "D",
+        "text": "Super. Und wie komme ich am Freitag zum Bahnhof? Mein Zug fährt schon um sieben Uhr."
+      },
+      {
+        "speaker": "R",
+        "text": "Der Bus Nummer zwei fährt direkt vor der Tür ab, normalerweise alle zehn Minuten. Aber so früh am Morgen fährt er nur jede halbe Stunde. Und denken Sie daran: Sie müssen das Zimmer bis zehn Uhr verlassen. Wenn Sie früher gehen, legen Sie den Schlüssel einfach in die Box neben der Eingangstür."
+      },
+      {
+        "speaker": "D",
+        "text": "Alles klar. Vielen Dank!"
+      },
+      {
+        "speaker": "R",
+        "text": "Gern geschehen. Einen schönen Aufenthalt in Salzburg!"
+      }
     ]
   },
   "example": {

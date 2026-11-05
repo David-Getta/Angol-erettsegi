@@ -1,0 +1,136 @@
+{
+  "schemaVersion": 1,
+  "id": "dig-wr-kozep-prezentacio-robotika",
+  "subject": "digitalis-kultura",
+  "revision": 1,
+  "level": "kozep",
+  "source": "generated",
+  "topic": "prezentacio-grafika",
+  "title": "Prezentáció: a robotikaszakkör bemutatója",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "writing",
+  "type": "prezentacio-weblap",
+  "taskNumber": 2,
+  "situation": "Az iskola robotikaszakköre a nyílt napon rövid bemutatóval mutatkozik be. Készítse el a négydiás bemutatót a leírás szerint!\n\nForrásfájlok:\n• robot.txt – a diák szövege (UTF-8): a 2. dia négy tevékenysége (Robotépítés LEGO- és Arduino-készletekkel; Programozás Pythonban és blokkprogramozással; Felkészülés robotversenyekre; Közös projektek a fizikaszakkörrel), a 3. dia két mondata a versenyrobotról, valamint a két foglalkozás időpontja (kedd 14:30–16:00, 12-es terem; csütörtök 15:00–16:30, 12-es terem).\n• robot.png – a versenyrobot átlátszó hátterű fényképe.\n• logo.png – az iskola logója.\n\nA bemutatót a prezentációkészítő saját formátumában robotika néven mentse (robotika.pptx vagy robotika.odp)!\n\n1. Hozzon létre szélesvásznú (16:9) bemutatót, és mentse robotika néven!\n2. A diamintán (mintadián) állítsa be: a háttér egyszínű világoskék (RGB: 220, 235, 250); minden dia címe Arial (vagy Liberation Sans) betűtípusú, 40 pontos, sötétkék (RGB: 0, 51, 102); a logo.png minden dia jobb alsó sarkában jelenjen meg, arányosan 2 cm magasan.\n3. 1. dia (címdia): cím: „Robotikaszakkör”, alcím: „Kossuth Gimnázium – nyílt nap”.\n4. 2. dia: cím: „Mit csinálunk?”, alatta a négy tevékenység felsorolásként, 28 pontos betűmérettel.\n5. 3. dia: cím: „Versenyrobotunk”; a dia bal felén a robot.png arányosan 9 cm magasra méretezve, a jobb felén a robotról szóló két mondat.\n6. 4. dia: cím: „Csatlakozz!”; háromoszlopos, háromsoros táblázat a foglalkozásokról (fejléc: Nap, Időpont, Terem); a táblázat alatt „Jelentkezés” szövegű hivatkozás a https://kossuth.example/robotika címre.\n7. A 2. dián a felsorolás elemei kattintásra, egyenként jelenjenek meg (Megjelenés animáció).\n8. Minden diaváltásnál Áttűnés áttűnési effektus legyen.\n9. A címdia kivételével minden dián jelenjen meg a diaszám.",
+  "points": [
+    {
+      "id": "p1",
+      "text": "1. Szélesvásznú (16:9) bemutató, mentés robotika néven (1 pont)"
+    },
+    {
+      "id": "p2",
+      "text": "2. Diaminta: világoskék háttér, a címek formátuma, a logó minden dia jobb alsó sarkában (5 pont)"
+    },
+    {
+      "id": "p3",
+      "text": "3. Címdia a megadott címmel és alcímmel (2 pont)"
+    },
+    {
+      "id": "p4",
+      "text": "4. 2. dia: cím és négyelemű felsorolás 28 pt-os betűvel (2 pont)"
+    },
+    {
+      "id": "p5",
+      "text": "5. 3. dia: a kép bal oldalon, arányosan 9 cm magas, mellette a két mondat (3 pont)"
+    },
+    {
+      "id": "p6",
+      "text": "6. 4. dia: 3 × 3-as táblázat fejléccel, alatta működő hivatkozás (3 pont)"
+    },
+    {
+      "id": "p7",
+      "text": "7. A felsorolás elemei kattintásra egyenként jelennek meg (2 pont)"
+    },
+    {
+      "id": "p8",
+      "text": "8. Áttűnés effektus minden diaváltásnál (1 pont)"
+    },
+    {
+      "id": "p9",
+      "text": "9. Diaszám a címdia kivételével minden dián (1 pont)"
+    }
+  ],
+  "suggestedMinutes": 30,
+  "usefulPhrases": [
+    {
+      "en": "Nézet > Diaminta",
+      "hu": "a minden diára érvényes beállítások helye: háttér, címformátum, logó"
+    },
+    {
+      "en": "Háttér formázása > Egyszínű kitöltés > Egyéni RGB",
+      "hu": "pontos háttérszín beállítása a megadott RGB-értékekkel"
+    },
+    {
+      "en": "Méretarány zárolása",
+      "hu": "a kép csak arányosan méreteződik, nem torzul"
+    },
+    {
+      "en": "Elrendezés (Címdia, Cím és tartalom, Két tartalomrész)",
+      "hu": "a dia helyőrzőinek elrendezése – ne szövegdobozokkal rakd össze a diát"
+    },
+    {
+      "en": "Animációk > Megjelenés, Sorozat: Bekezdésenként",
+      "hu": "a felsorolás elemei egyenként, kattintásra jelennek meg"
+    },
+    {
+      "en": "Áttűnések > Alkalmazás mindegyikre",
+      "hu": "ugyanaz az áttűnés minden diára egy lépésben"
+    },
+    {
+      "en": "Beszúrás > Hivatkozás (Ctrl+K)",
+      "hu": "kattintható hivatkozás szövegre vagy képre"
+    },
+    {
+      "en": "Beszúrás > Élőfej és élőláb > Diaszám",
+      "hu": "automatikus diaszám, a címdián kikapcsolható"
+    }
+  ],
+  "checklistExtra": [],
+  "modelAnswer": {
+    "text": "Megoldás lépésről lépésre – Microsoft PowerPoint (zárójelben a LibreOffice Impress eltérő menüi)\n\n1. Új, üres bemutató; Tervezés > Diaméret > Szélesvásznú (16:9) (Impress: Dia > Dia tulajdonságai > Dia > Formátum: Szélesvásznú 16:9). Fájl > Mentés másként: robotika.pptx (Impress: robotika.odp).\n\n2. Diaminta: Nézet > Diaminta, a bal oldali lista legfelső (fő) diáját választom, hogy a beállítás minden elrendezésre érvényes legyen.\n– Háttér: Háttér formázása > Egyszínű kitöltés > Szín > További színek > Egyéni: Vörös 220, Zöld 235, Kék 250 (Impress: Dia > Dia tulajdonságai > Háttér > Szín, Hex: DCEBFA).\n– Címek: a címhelyőrzőt kijelölöm: Arial, 40 pt, betűszín Egyéni RGB 0, 51, 102.\n– Logó: Beszúrás > Képek > logo.png, Alakzat formátuma > Méret: méretarány zárolva, magasság 2 cm, majd a jobb alsó sarokba húzom.\nVégül Diaminta bezárása. Így a háttér, a címformátum és a logó minden dián megjelenik, és diánként nem kell beállítani.\n\n3. Az 1. dia Címdia elrendezésű: cím: Robotikaszakkör, alcím: Kossuth Gimnázium – nyílt nap.\n\n4. Új dia (Cím és tartalom): cím: Mit csinálunk?; a tartalomhelyőrzőbe a robot.txt négy tevékenysége kerül, egy-egy bekezdésben; a helyőrzőt kijelölve betűméret: 28 pt.\n\n5. Új dia (Két tartalomrész elrendezés): cím: Versenyrobotunk. A bal helyőrzőbe Beszúrás > Képek > robot.png; méretarány zárolva, magasság 9 cm. A jobb helyőrzőbe a robotról szóló két mondatot másolom.\n\n6. Új dia (Cím és tartalom): cím: Csatlakozz!; Beszúrás > Táblázat: 3 oszlop, 3 sor; az első sor: Nap | Időpont | Terem, alatta: kedd | 14:30–16:00 | 12-es terem, csütörtök | 15:00–16:30 | 12-es terem. A táblázat alá szövegdobozba írom: Jelentkezés; kijelölöm, Beszúrás > Hivatkozás (Ctrl+K) > Cím: https://kossuth.example/robotika.\n\n7. Animáció: a 2. dián a felsorolás helyőrzőjét kijelölöm, Animációk > Megjelenés; Effektus beállításai > Sorozat: Bekezdésenként; Kezdés: Kattintásra (Impress: Animáció panel > Megjelenés, Szöveg animálása: bekezdésenként).\n\n8. Áttűnés: Áttűnések > Áttűnés > Alkalmazás mindegyikre (Impress: Dia > Diaáttűnés > Áttűnés, Alkalmazás minden diára).\n\n9. Diaszám: Beszúrás > Élőfej és élőláb > Diaszám bekapcsolva, „Ne jelenjen meg a címdián” bekapcsolva > Alkalmazás mindegyikre (Impress: Beszúrás > Élőfej és élőláb > Diaszám, „Nem jelenik meg az első dián”). Diavetítéssel kipróbálom az animációt és a hivatkozást, majd mentek.",
+    "pointsCovered": [
+      {
+        "id": "p1",
+        "quote": "Tervezés > Diaméret > Szélesvásznú (16:9)"
+      },
+      {
+        "id": "p2",
+        "quote": "Nézet > Diaminta, a bal oldali lista legfelső (fő) diáját választom"
+      },
+      {
+        "id": "p3",
+        "quote": "cím: Robotikaszakkör, alcím: Kossuth Gimnázium – nyílt nap"
+      },
+      {
+        "id": "p4",
+        "quote": "a helyőrzőt kijelölve betűméret: 28 pt"
+      },
+      {
+        "id": "p5",
+        "quote": "A bal helyőrzőbe Beszúrás > Képek > robot.png; méretarány zárolva, magasság 9 cm"
+      },
+      {
+        "id": "p6",
+        "quote": "Beszúrás > Hivatkozás (Ctrl+K) > Cím: https://kossuth.example/robotika"
+      },
+      {
+        "id": "p7",
+        "quote": "Animációk > Megjelenés; Effektus beállításai > Sorozat: Bekezdésenként; Kezdés: Kattintásra"
+      },
+      {
+        "id": "p8",
+        "quote": "Áttűnések > Áttűnés > Alkalmazás mindegyikre"
+      },
+      {
+        "id": "p9",
+        "quote": "„Ne jelenjen meg a címdián” bekapcsolva"
+      }
+    ],
+    "notes": [
+      "A követelmények teljesítése: minden dia a leírt elrendezéssel, szöveggel és mérettel készül el, a táblázat fejléces, a hivatkozás a pontos címre mutat.",
+      "Szakszerű módszer: a háttér, a címformátum és a logó a diamintán van beállítva – ha diánként, kézzel készülne, a „módszer” szempont pontjait elveszítenéd, és egy dia könnyen kimaradna.",
+      "Pontosság: a képek a méretarány zárolásával méreteződnek (nem torzulnak), az animáció bekezdésenként fut, a diaszám a címdián nem jelenik meg; a végén diavetítésben minden ki van próbálva."
+    ]
+  }
+}

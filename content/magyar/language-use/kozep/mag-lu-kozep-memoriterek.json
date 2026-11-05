@@ -1,0 +1,91 @@
+{
+  "schemaVersion": 1,
+  "id": "mag-lu-kozep-memoriterek",
+  "subject": "magyar",
+  "revision": 1,
+  "level": "kozep",
+  "source": "generated",
+  "topic": "kotelezo-szerzok",
+  "title": "Memoriterek felismerése",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "language-use",
+  "type": "muveltsegi",
+  "instructions": "Ismerje fel a memoritereket! Minden idézetnél válaszoljon röviden arra, amit a kérdés kér (a mű címe, a szerző neve vagy a hiányzó szó). A 0. sor a példa.",
+  "example": {
+    "id": "0",
+    "kind": "text",
+    "prompt": "„Talpra magyar, hí a haza! / Itt az idő, most vagy soha!” – Mi a vers címe?",
+    "answer": ["Nemzeti dal", "Petőfi Sándor: Nemzeti dal"],
+    "maxWords": 4,
+    "category": "irodalomtorteneti-kontextus",
+    "explanation": "Petőfi Sándor Nemzeti dal című versének kezdősorai; a verset 1848. március 15-én szavalta el a Nemzeti Múzeum előtt (a hagyomány szerint)."
+  },
+  "items": [
+    {
+      "id": "1",
+      "kind": "text",
+      "prompt": "„Hazádnak rendületlenűl / Légy híve, oh magyar” – Ki a vers szerzője?",
+      "answer": ["Vörösmarty Mihály", "Vörösmarty"],
+      "maxWords": 2,
+      "category": "irodalomtorteneti-kontextus",
+      "explanation": "Helyes válasz: Vörösmarty Mihály. A Szózat (1836) kezdősorai. Ne tévessze össze a Himnusszal, amelyet Kölcsey Ferenc írt 1823-ban."
+    },
+    {
+      "id": "2",
+      "kind": "text",
+      "prompt": "„Isten, áldd meg a magyart / Jó kedvvel, bőséggel” – Mi a mű címe?",
+      "answer": ["Himnusz", "Hymnus", "Kölcsey Ferenc: Himnusz", "Kölcsey: Himnusz"],
+      "maxWords": 3,
+      "category": "irodalomtorteneti-kontextus",
+      "explanation": "Helyes válasz: Himnusz (eredeti írásmóddal Hymnus). Kölcsey Ferenc 1823-ban írta, alcíme: „A magyar nép zivataros századaiból”."
+    },
+    {
+      "id": "3",
+      "kind": "text",
+      "prompt": "Egészítse ki a hiányzó szóval! „Szabadság, szerelem! / E kettő kell ___.” (Petőfi Sándor)",
+      "answer": ["nekem"],
+      "maxWords": 1,
+      "category": "irodalomtorteneti-kontextus",
+      "explanation": "Helyes válasz: nekem. Petőfi Szabadság, szerelem! című epigrammájának (1847) második sora: „E kettő kell nekem.” A vers értékrendet állít fel: a szerelemért az életét, a szabadságért a szerelmét is feláldozza."
+    },
+    {
+      "id": "4",
+      "kind": "text",
+      "prompt": "„Már egy hete csak a mamára / gondolok mindig, meg-megállva.” – Ki a vers szerzője?",
+      "answer": ["József Attila"],
+      "maxWords": 2,
+      "category": "irodalomtorteneti-kontextus",
+      "explanation": "Helyes válasz: József Attila. A Mama (1934) kezdősorai; a vers a korán elhunyt édesanya emlékét idézi fel a padlásra teregető anya képében."
+    },
+    {
+      "id": "5",
+      "kind": "text",
+      "prompt": "„Edward király, angol király / Léptet fakó lován” – Melyik ballada kezdete? Írja le a címét!",
+      "answer": ["A walesi bárdok", "walesi bárdok"],
+      "maxWords": 3,
+      "category": "irodalomtorteneti-kontextus",
+      "explanation": "Helyes válasz: A walesi bárdok. Arany János balladája (1857) a zsarnokkal szembeni néma ellenállásról; keletkezése az 1857-es császári látogatáshoz kapcsolódik, amikor Aranyt üdvözlő vers írására kérték fel."
+    },
+    {
+      "id": "6",
+      "kind": "text",
+      "prompt": "„Látjátuk feleim szümtükhel, mik vogymuk” – Melyik nyelvemlék kezdete?",
+      "answer": ["Halotti beszéd", "Halotti beszéd és könyörgés", "a Halotti beszéd"],
+      "maxWords": 4,
+      "category": "irodalomtorteneti-kontextus",
+      "explanation": "Helyes válasz: a Halotti beszéd (és könyörgés). Az első összefüggő magyar nyelvű szövegemlék (1192–1195 körül), a Pray-kódexben maradt fenn. Ne tévessze össze az Ómagyar Mária-siralommal, amely az első magyar nyelvű vers."
+    },
+    {
+      "id": "7",
+      "kind": "text",
+      "prompt": "„Mit nekem te zordon Kárpátoknak / Fenyvesekkel vadregényes tája!” – Mi a vers címe?",
+      "answer": ["Az alföld", "Alföld", "Petőfi Sándor: Az alföld"],
+      "maxWords": 4,
+      "category": "irodalomtorteneti-kontextus",
+      "explanation": "Helyes válasz: Az alföld. Petőfi Sándor tájverse (1844): a romantikus „vadregényes” hegyvidékkel szemben a síkságot, az alföldet vallja otthonának."
+    }
+  ],
+  "glossary": [],
+  "suggestedMinutes": 6
+}

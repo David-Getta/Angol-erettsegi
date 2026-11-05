@@ -1,0 +1,75 @@
+{
+  "schemaVersion": 1,
+  "id": "bio-sp-kozep-a-vedooltasok",
+  "subject": "biologia",
+  "revision": 1,
+  "level": "kozep",
+  "source": "generated",
+  "topic": "szabalyozas",
+  "title": "Védőoltások és közösségi védettség",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "speaking",
+  "type": "a-tetel",
+  "partNumber": 1,
+  "instructionsHu": "A) altétel – életközeli probléma. Az iskolai faliújságra cikket kell írnotok arról, miért fontosak a védőoltások. Fejtsd ki szóban a szempontok szerint, mi a védőoltás biológiai alapja, és miért véd a közösséget is!",
+  "prompts": [
+    "Az immunrendszer válasza egy kórokozóra: antigén, ellenanyag, memóriasejt.",
+    "Az aktív és a passzív immunizálás különbsége, példákkal.",
+    "Az elsődleges és a másodlagos immunválasz különbsége – miért véd az oltás évekig?",
+    "A közösségi (nyáj-) immunitás és az oltási mellékhatások mérlegelése."
+  ],
+  "followUpQuestions": [
+    "Miért kell az influenza elleni oltást évente megismételni?",
+    "Miért nem hat az antibiotikum a kanyaróra?"
+  ],
+  "usefulPhrases": [
+    {
+      "en": "antigén – ellenanyag",
+      "hu": "a felismert idegen molekula és az ellene termelt fehérje"
+    },
+    {
+      "en": "memóriasejt",
+      "hu": "évekig megmaradó limfocita, gyors másodlagos választ indít"
+    },
+    {
+      "en": "aktív / passzív immunizálás",
+      "hu": "saját ellenanyag-termelés / kész ellenanyag"
+    },
+    {
+      "en": "nyájimmunitás",
+      "hu": "a védettek aránya megállítja a terjedést"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Ismeretterjesztő szöveg (részlet)",
+      "text": "A kanyaró az egyik legfertőzőbb emberi betegség: egyetlen beteg védtelen környezetben átlagosan 12–18 embert fertőzhet meg. A járványok megelőzéséhez a népesség kb. 95%-ának védettsége szükséges. Magyarországon a kanyaró elleni oltás a kötelező, életkorhoz kötött védőoltások közé tartozik."
+    }
+  ],
+  "keyPoints": [
+    "Az antigén a kórokozó (vagy anyaga) felszínén lévő, az immunrendszer által idegenként felismert molekula.",
+    "A B-limfocitákból lett plazmasejtek antigénspecifikus ellenanyagot termelnek, a T-limfociták a fertőzött sejteket pusztítják.",
+    "Az immunválasz során memóriasejtek képződnek, amelyek évekig fennmaradnak.",
+    "Az aktív immunizálás (védőoltás) legyengített/elölt kórokozót vagy antigént juttat be; a szervezet maga termel ellenanyagot és memóriasejtet – lassan alakul ki, de tartós.",
+    "A passzív immunizálás kész ellenanyagot ad (pl. tetanusz-, kígyómarás elleni szérum, anyatej, méhlepényen át) – azonnal hat, de rövid ideig.",
+    "A másodlagos immunválasz gyorsabb, erősebb, ezért a beoltott ember fertőzéskor nem betegszik meg (vagy enyhébben).",
+    "Nyájimmunitás: ha a lakosság elég nagy része (kanyarónál kb. 95%) védett, a kórokozó nem tud terjedni, így a nem oltható emberek (csecsemők, immunbetegek) is védettek.",
+    "Az oltás mellékhatásai többnyire enyhék (láz, bőrpír), a betegség szövődményei (kanyarónál agyvelőgyulladás, tüdőgyulladás) sokkal súlyosabbak."
+  ],
+  "speakingSeconds": 480,
+  "prepSeconds": 900,
+  "sampleAnswer": {
+    "turns": [
+      {
+        "speaker": "candidate",
+        "text": "Ha egy kórokozó bejut a szervezetbe, az immunrendszer a felszínén lévő idegen molekulákat, az antigéneket ismeri fel. A falósejtek bekebelezik a kórokozót, és bemutatják az antigént a limfocitáknak. A B-limfociták ezután osztódnak, plazmasejtekké alakulnak, és olyan ellenanyagot termelnek, amely pontosan ehhez az antigénhez kötődik; a T-limfociták pedig a fertőzött sejteket pusztítják. Közben memóriasejtek is képződnek.\nAz első találkozáskor ez az elsődleges immunválasz lassú, napokig tart, ezért közben megbetegszünk. Ha ugyanaz a kórokozó újra bejut, a memóriasejtek miatt a másodlagos válasz sokkal gyorsabb és erősebb, így a kórokozó elpusztul, mielőtt tüneteket okozna.\nA védőoltás ezt használja ki: legyengített vagy elölt kórokozót, illetve annak antigénjét juttatjuk a szervezetbe. Ez aktív immunizálás, mert a szervezet maga termel ellenanyagot és memóriasejteket – a védettség pár hét alatt alakul ki, de évekig tart. A passzív immunizálásnál kész ellenanyagot kap valaki, például tetanuszgyanús sérüléskor szérumot, vagy a csecsemő az anyatejjel. Ez azonnal hat, de néhány hét alatt elfogy.\nAz oltás a közösséget is védi. A forrás szerint a kanyaró annyira fertőző, hogy a népesség kb. 95%-ának védettnek kell lennie. Ha ennyien védettek, a vírus nem talál elég fogékony embert, és a lánc megszakad – így a még nem oltható csecsemők vagy az immunbetegek is védve vannak. Ez a nyájimmunitás.\nAz oltásnak lehet mellékhatása, például láz vagy fájdalom a szúrás helyén, de ezek enyhék és átmenetiek, míg a kanyaró tüdőgyulladást vagy agyvelőgyulladást is okozhat. Ezért a kötelező oltások egyéni és közösségi érdekből is fontosak."
+      }
+    ],
+    "notes": [
+      "Tartalom: pontosan elmagyarázza az immunválasz lépéseit, az elsődleges és másodlagos válasz különbségét, valamint az aktív és passzív immunizálást, példákkal.",
+      "Összefüggések: a forrás adatát (95%) a nyájimmunitás magyarázatára használja, és érvel a kockázatok mérlegelésével – ez az életközeli probléma lényege.",
+      "Felépítés: a jelenségtől (fertőzés) halad az alkalmazásig (oltás, közösség), világos bekezdésekben."
+    ]
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "schemaVersion": 1,
+  "id": "fiz-wr-emelt-indukcio-temakifejtes",
+  "subject": "fizika",
+  "revision": 1,
+  "level": "emelt",
+  "source": "generated",
+  "topic": "elektromossag",
+  "title": "Témakifejtés: az elektromágneses indukció és alkalmazásai",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "writing",
+  "type": "temakifejtes",
+  "taskNumber": 1,
+  "situation": "Fejtse ki összefüggő szövegben az elektromágneses indukció jelenségét és alkalmazásait az alábbi szempontok szerint! A kifejtés terjedelme kb. 1–1,5 oldal; ahol lehet, írjon fel összefüggéseket, és mondjon példákat!\n\n– Faraday kísérletei: mikor jön létre indukált feszültség? A mágneses fluxus fogalma.\n– A mozgási és a nyugalmi indukció; Faraday indukciós törvénye.\n– Lenz törvénye és kapcsolata az energiamegmaradással; az önindukció.\n– Gyakorlati alkalmazások: generátor, transzformátor, indukciós főzőlap (legalább kettő működésének magyarázata).\n– Tudománytörténet: Faraday és Jedlik Ányos szerepe.",
+  "points": [
+    { "id": "p1", "text": "Faraday kísérletei, az indukált feszültség feltétele, a mágneses fluxus fogalma" },
+    { "id": "p2", "text": "Mozgási és nyugalmi indukció, Faraday indukciós törvénye" },
+    { "id": "p3", "text": "Lenz törvénye, kapcsolata az energiamegmaradással; önindukció" },
+    { "id": "p4", "text": "Alkalmazások: generátor, transzformátor, indukciós főzőlap működése" },
+    { "id": "p5", "text": "Tudománytörténet: Faraday és Jedlik Ányos" }
+  ],
+  "suggestedMinutes": 45,
+  "usefulPhrases": [
+    { "en": "Φ = B·A·cos α", "hu": "A mágneses fluxus: indukció × felület × a felület normálisa és B közti szög koszinusza (Wb)." },
+    { "en": "U_i = −N·ΔΦ/Δt", "hu": "Faraday indukciós törvénye; a mínusz előjel Lenz törvényét fejezi ki." },
+    { "en": "U_i = B·l·v", "hu": "Mozgási indukció: a mezőre merőlegesen mozgó vezetőben indukált feszültség." },
+    { "en": "Lenz törvénye", "hu": "Az indukált áram iránya olyan, hogy akadályozza az őt létrehozó változást." },
+    { "en": "U₁/U₂ = N₁/N₂", "hu": "Ideális transzformátor feszültségáttétele; a teljesítmény közel azonos a két oldalon." },
+    { "en": "örvényáram", "hu": "Tömör fémben indukálódó zárt áramok – az indukciós főzőlap és az örvényáramú fék alapja." },
+    { "en": "Először is …, ebből következik, hogy …, végül …", "hu": "Kapcsolóelemek az összefüggő, logikus szöveghez (a kifejtés módja is pontot ér)." }
+  ],
+  "modelAnswer": {
+    "text": "Elektromágneses indukciónak nevezzük azt a jelenséget, amikor a mágneses mező változása elektromos feszültséget hoz létre egy vezetőben. Michael Faraday 1831-ben fedezte fel: ha egy tekercsbe mágnest tolt vagy húzott ki, a tekercshez kapcsolt áramjelző kitért, nyugvó mágnesnél viszont nem. Ugyanezt tapasztalta, amikor egy közös vasmagon lévő másik tekercs áramát be- vagy kikapcsolta. A kísérletekből az következik, hogy a feszültséget nem a mágneses mező jelenléte, hanem a tekercsen áthaladó mágneses fluxus megváltozása kelti. A fluxus Φ = B·A·cos α, ahol B a mágneses indukció, A a vezetőkeret felülete, α a felület normálisa és az indukcióvonalak közti szög; egysége a weber (1 Wb = 1 T·m²).\n\nA fluxus kétféleképpen változhat. Mozgási indukcióról beszélünk, ha a vezető mozog a mágneses mezőben: ekkor a vezető szabad elektronjaira ható Lorentz-erő választja szét a töltéseket, és a mezőre merőlegesen v sebességgel mozgó l hosszúságú rúdban U = B·l·v feszültség indukálódik. Nyugalmi indukció esetén a vezető áll, és a mágneses mező változik (például egy elektromágnes áramát változtatjuk); ilyenkor a változó mágneses mező örvényes elektromos mezőt kelt. Mindkét esetet leírja Faraday indukciós törvénye: U_i = −N·ΔΦ/Δt, vagyis az indukált feszültség a menetszámmal és a fluxusváltozás sebességével arányos.\n\nAz indukált áram irányát Lenz törvénye adja meg: az indukált áram mindig olyan irányú, hogy mágneses hatásával akadályozza az őt létrehozó változást. Ha egy zárt gyűrűhöz mágnest közelítünk, a gyűrű taszítja, ha távolítjuk, vonzza a mágnest. Ez az energiamegmaradás következménye: ha az indukált áram segítené a változást, a mágnes magától gyorsulna, és energia keletkezne a semmiből. Így viszont a mozgatáshoz munkát kell végeznünk, és ez a munka alakul az indukált áram energiájává. Az indukció a tekercs saját áramának változásakor is fellép: ez az önindukció. Bekapcsoláskor az önindukciós feszültség lassítja az áram növekedését, kikapcsoláskor pedig nagy feszültséglökést okozhat, ezért szikrázik a kapcsoló. A tekercs energiája E = ½·L·I², ahol L az induktivitás.\n\nAz indukció a modern villamosenergia-ellátás alapja. A generátorban mágneses mezőben forgatott tekercs fluxusa periodikusan változik, ezért szinuszos váltakozó feszültség indukálódik benne; az erőművek turbinái így alakítják a mechanikai energiát elektromos energiává. A transzformátorban a primer tekercs váltakozó árama a közös vasmagban változó fluxust kelt, amely a szekunder tekercsben feszültséget indukál; ideális esetben U₁/U₂ = N₁/N₂. Ezzel a távvezetékeken nagy feszültségen, kis árammal szállítható az energia, így kisebb a vezetékek hővesztesége (P = I²·R). Az indukciós főzőlap tekercsében nagyfrekvenciás váltakozó áram folyik, amelynek változó mágneses mezeje a fém edény aljában örvényáramokat indukál, és ezek melegítik fel közvetlenül az edényt.\n\nA felfedezés története is tanulságos. Faraday kísérleti munkája mellett a mezők szemléletes, erővonalas leírását is megalkotta, amelyre Maxwell elmélete épült. Jedlik Ányos bencés szerzetes és fizikus már az 1820-as évek végén épített elektromágneses forgógépet, és évekkel Siemens előtt leírta az öngerjesztés (dinamóelv) gondolatát, amely nélkül nem lennének nagy teljesítményű generátorok. Összefoglalva: az elektromágneses indukció kapcsolja össze az elektromos és a mágneses jelenségeket, és ezen alapul az elektromos energia termelése és szállítása.",
+    "pointsCovered": [
+      { "id": "p1", "quote": "a feszültséget nem a mágneses mező jelenléte, hanem a tekercsen áthaladó mágneses fluxus megváltozása kelti" },
+      { "id": "p2", "quote": "Mindkét esetet leírja Faraday indukciós törvénye: U_i = −N·ΔΦ/Δt" },
+      { "id": "p3", "quote": "Ez az energiamegmaradás következménye" },
+      { "id": "p4", "quote": "A transzformátorban a primer tekercs váltakozó árama a közös vasmagban változó fluxust kelt" },
+      { "id": "p5", "quote": "Jedlik Ányos bencés szerzetes és fizikus már az 1820-as évek végén épített elektromágneses forgógépet" }
+    ],
+    "notes": [
+      "Tartalom: mind az öt szempont kifejtve – a fluxus definíciója mértékegységgel, a kétféle indukció mechanizmusa, az indukciós törvény, Lenz törvényének energetikai indoklása, az önindukció és három alkalmazás működése –, ezért a tartalomra a 18 pont jár.",
+      "A kifejtés módja: a szöveg összefüggő, bekezdésenként egy-egy szempontra épül, logikus kapcsolóelemekkel („Ebből az következik…”, „Összefoglalva…”), pontos szaknyelvvel – ez az 5 pontos kifejtési szempont.",
+      "Jó gyakorlat: minden törvény mellett ott a képlet és egy konkrét kísérlet vagy példa, a tudománytörténeti rész pedig nem csak nevet és évszámot, hanem a hozzájárulás lényegét is megadja."
+    ]
+  }
+}
