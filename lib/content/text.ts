@@ -128,7 +128,7 @@ export function itemContext(
     }
     const idx = b.text.indexOf(marker);
     if (idx === -1) continue;
-    const sentences = b.text.split(/(?<=[.!?])\s+(?=[A-Z"“‘(])/);
+    const sentences = b.text.split(/(?<=[.!?]['’”]?)\s+(?=[A-Z"“‘'(])/);
     const hit = sentences.find((s) => s.includes(marker)) ?? b.text;
     const cue = item?.kind === "text" && item.cue ? ` (${item.cue})` : "";
     return hit

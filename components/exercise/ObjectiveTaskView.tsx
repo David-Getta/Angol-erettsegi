@@ -422,7 +422,7 @@ function ItemRow({ item, view, inline, usedMatch }: { item: Item; view: ViewProp
               {item.kind === "text" && item.cue && <span className="ml-1 font-semibold">({item.cue})</span>}
             </div>
           )}
-          {!item.prompt && inline && item.kind === "text" && (
+          {!item.prompt && inline && item.kind === "text" && !isExample && (
             <div className="text-sm text-muted">
               {value ? <span className="font-medium text-fg">{value}</span> : "…"}
               {item.cue && <span className="ml-1">({item.cue})</span>}

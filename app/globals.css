@@ -40,6 +40,13 @@
   --warn: #8a5a00;
   --warn-soft: #fbefd5;
   --mark: #fff1a8;
+  /* chart series (validated reference palette, light steps) */
+  --series-1: #2a78d6;
+  --series-2: #eb6834;
+  --series-3: #1baf7a;
+  --series-4: #eda100;
+  --series-5: #e87ba4;
+  --chart-grid: #e6e3db;
   color-scheme: light;
 }
 
@@ -60,6 +67,12 @@
   --warn: #f2c25b;
   --warn-soft: #3a2f17;
   --mark: #5b4f12;
+  --series-1: #3987e5;
+  --series-2: #d95926;
+  --series-3: #199e70;
+  --series-4: #c98500;
+  --series-5: #d55181;
+  --chart-grid: #2f343b;
   color-scheme: dark;
 }
 

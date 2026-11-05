@@ -25,6 +25,8 @@ export type RunnerProps = {
   /** Exam timer does not start until this is true (listening: after the audio phase starts). */
   startTimer?: boolean;
   wordCards?: boolean;
+  /** Incrementing this number finishes the task (listening: after the last play). */
+  autoFinishSignal?: number;
 };
 
 export function useFocusMode(on: boolean) {
@@ -154,6 +156,11 @@ export function PracticeRunner(props: RunnerProps) {
     await addWordCardAction({ term: g.term, meaning: g.meaning, context: g.example ?? null, taskId: task.id, sourceType: task.section });
     toast(`„${g.term}” – ${t.task.cardAdded}`);
   };
+
+  useEffect(() => {
+    if (props.autoFinishSignal && props.autoFinishSignal > 0) void finish(true);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [props.autoFinishSignal]);
 
   const unanswered = task.items.filter((i) => !(answers[i.id] ?? "").trim()).length;
   const highlight = finished ? task.items.map((i) => i.id) : Object.keys(results).filter((k) => results[k]);
