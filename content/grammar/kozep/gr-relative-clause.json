@@ -1,6 +1,7 @@
 {
   "schemaVersion": 1,
   "id": "gr-relative-clause",
+  "revision": 2,
   "level": "kozep",
   "source": "generated",
   "topic": "nyelvtan",
@@ -138,9 +139,9 @@
       "id": "4",
       "kind": "text",
       "prompt": "This is the restaurant ___ we celebrated my birthday last year.",
-      "answer": ["where"],
+      "answer": ["where", "in which", "at which"],
       "category": "relative-clause",
-      "explanation": "Helyes: where. Helyre (the restaurant) utalunk, és a mellékmondatnak saját alanya van (we), elöljárószó pedig nincs benne, ezért where kell (= in which)."
+      "explanation": "Helyes: where (formálisabban: in which / at which). Helyre (the restaurant) utalunk, a mellékmondatnak saját alanya van (we), és a mellékmondatban nincs elöljárószó, ezért where kell; a which vagy that elöljárószó nélkül itt hibás lenne (elöljárószóval jó: the restaurant which we celebrated my birthday in)."
     },
     {
       "id": "5",

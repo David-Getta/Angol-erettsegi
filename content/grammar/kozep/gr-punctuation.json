@@ -1,6 +1,7 @@
 {
   "schemaVersion": 1,
   "id": "gr-punctuation",
+  "revision": 2,
   "level": "kozep",
   "source": "generated",
   "topic": "nyelvtan",
@@ -47,7 +48,7 @@
       "explanation": "Ha a vonatkozó mellékmondat csak kiegészítő információt ad egy már beazonosított személyről vagy dologról (gyakran tulajdonnévről), vesszők közé tesszük, és ilyenkor that nem használható, csak who, which, whose, where. A vessző a jelentést is megváltoztathatja: vessző nélkül a mellékmondat kiválaszt (több közül azt az egyet), vesszővel csak kiegészít.",
       "emeltOnly": false,
       "examples": [
-        { "en": "My grandmother, who lives in Debrecen, is 85.", "hu": "A nagymamám, aki Debrecenben él, 85 éves.", "note": "Egy ilyen nagymamáról van szó – kiegészítő információ, ezért vesszők és who (nem that)." },
+        { "en": "My grandmother, who lives in Debrecen, is 85.", "hu": "A nagymamám, aki Debrecenben él, 85 éves.", "note": "Egyértelmű, melyik nagymamáról van szó – a mellékmondat csak kiegészítő információ, ezért vesszők és who (nem that)." },
         { "en": "My brother who lives in London is a doctor.", "hu": "A Londonban élő bátyám orvos.", "note": "Vessző nélkül: több fiútestvérem van, és a londoniról beszélek." },
         { "en": "My brother, who lives in London, is a doctor.", "hu": "A bátyám, aki Londonban él, orvos.", "note": "Vesszővel: egy bátyám van, és mellékesen elmondom, hogy Londonban él." }
       ]
@@ -159,7 +160,7 @@
       "prompt": "My grandmother, ___ is 85, still rides her bike to the market every day.",
       "answer": ["who"],
       "category": "punctuation",
-      "explanation": "Helyes: who. A vesszők nem megszorító vonatkozó mellékmondatot jelölnek (a nagymamám – egy van – mellesleg 85 éves). Ilyenkor személyre csak who utalhat; a that vesszők között nem használható."
+      "explanation": "Helyes: who. A vesszők nem megszorító vonatkozó mellékmondatot jelölnek (egyértelmű, melyik nagymamámról van szó, a mellékmondat csak mellékesen hozzáteszi, hogy 85 éves). Ilyenkor személyre csak who utalhat; a that vesszők között nem használható."
     },
     {
       "id": "6",

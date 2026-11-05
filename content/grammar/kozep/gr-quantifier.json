@@ -1,6 +1,7 @@
 {
   "schemaVersion": 1,
   "id": "gr-quantifier",
+  "revision": 2,
   "level": "kozep",
   "source": "generated",
   "topic": "nyelvtan",
@@ -76,7 +77,7 @@
   "commonMistakes": [
     { "wrong": "I don't have much friends.", "right": "I don't have many friends.", "why": "A friends megszámlálható, többes számú főnév, ezért many kell. A much csak megszámlálhatatlan főnévvel áll (much time, much money)." },
     { "wrong": "Every students have a locker.", "right": "Every student has a locker.", "why": "Az every után egyes számú főnév és egyes számú ige áll, bár a „minden diák” jelentése több embert takar. Többes számmal: All students have a locker." },
-    { "wrong": "We have few time, let's hurry.", "right": "We have little time, let's hurry.", "why": "A time (idő) megszámlálhatatlan, ezért little (vagy not much) kell; a few / a few csak megszámlálható, többes számú főnévvel áll." },
+    { "wrong": "We have few time, let's hurry.", "right": "We have little time, let's hurry.", "why": "A time (idő) megszámlálhatatlan, ezért little (vagy not much) kell; a few / few csak megszámlálható, többes számú főnévvel áll." },
     { "wrong": "I didn't buy nothing.", "right": "I didn't buy anything.", "why": "Az angolban egy tagmondatban csak egy tagadás lehet. A magyar „nem vettem semmit” kettős tagadása angolul vagy didn't + anything, vagy állító ige + nothing (I bought nothing)." },
     { "wrong": "Can I have any water, please?", "right": "Can I have some water, please?", "why": "Kérésnél és kínálásnál – amikor igen választ várunk – a kérdő mondatban is some áll." },
     { "wrong": "Most of people use smartphones.", "right": "Most people use smartphones.", "why": "Általános értelemben most + főnév, of nélkül. A most of csak meghatározott csoport előtt áll: most of the people in my class, most of my friends." }

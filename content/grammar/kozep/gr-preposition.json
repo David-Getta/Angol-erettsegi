@@ -1,6 +1,7 @@
 {
   "schemaVersion": 1,
   "id": "gr-preposition",
+  "revision": 2,
   "level": "kozep",
   "source": "generated",
   "topic": "nyelvtan",
@@ -164,7 +165,7 @@
     {
       "id": "6",
       "kind": "text",
-      "prompt": "My grandparents got married ___ 12 June 1975, so their 50th wedding anniversary was last year.",
+      "prompt": "My grandparents got married ___ 12 June 1975, and they celebrated their 50th wedding anniversary in 2025.",
       "answer": ["on"],
       "category": "preposition",
       "explanation": "Helyes: on. Pontos dátum (nap + hónap + év) előtt on áll. Ha csak hónap vagy év lenne, in kellene (in June, in 1975)."
