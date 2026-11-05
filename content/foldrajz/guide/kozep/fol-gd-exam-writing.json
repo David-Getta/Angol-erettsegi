@@ -1,0 +1,125 @@
+{
+  "schemaVersion": 1,
+  "id": "fol-gd-exam-writing",
+  "subject": "foldrajz",
+  "revision": 1,
+  "level": "kozep",
+  "source": "generated",
+  "topic": "utmutato",
+  "title": "Kifejtős, elemző feladatok",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "guide",
+  "type": "exam",
+  "target": "writing",
+  "summaryHu": "A kifejtős feladatokban összefüggő mondatokban kell válaszolnod: folyamatot magyarázni, adatsort vagy forrást elemezni, számítást elvégezni és értelmezni. Az app ezeket a II. feladatlap (középszint), illetve az emelt feladatsor elemző részeiként gyakoroltatja; a pontozás szempontjai: tartalmi helyesség és teljesség, összefüggések és indoklás, szaknyelv és topográfiai pontosság. A javítást a Claude Code (/javitas) vagy a Claude app végzi a rubrika alapján.",
+  "steps": [
+    {
+      "title": "Bontsd részkérdésekre",
+      "explanation": "A feladat a), b), c) … részkérdésekből áll, mindegyik mellett ott a pontszám. Minden részkérdésre külön bekezdésben, a betűjellel kezdve válaszolj.",
+      "tips": [
+        "A pontszám jelzi, hány elemet várnak.",
+        "Ne olvaszd össze a részkérdéseket – a javító részenként pontoz."
+      ]
+    },
+    {
+      "title": "Gyűjtsd ki a forrás adatait",
+      "explanation": "Elemző feladatnál húzd alá a forrás azon adatait, amelyekre a kérdések vonatkoznak, és a válaszban hivatkozz rájuk („a táblázat szerint …”).",
+      "tips": [
+        "Az adatot mindig mértékegységgel idézd.",
+        "Ha a kérdés összehasonlítást kér, számszerűsítsd a különbséget."
+      ]
+    },
+    {
+      "title": "Írj ok–okozati láncot",
+      "explanation": "A magyarázó kérdéseknél a pont a láncszemekért jár: kiváltó ok → folyamat → következmény, „mert” és „ezért” kötőszavakkal.",
+      "tips": [
+        "Egy mondat – egy láncszem.",
+        "Ne állj meg a fogalom megnevezésénél."
+      ]
+    },
+    {
+      "title": "Számításnál írd le a menetet",
+      "explanation": "Képlet, behelyettesítés, eredmény mértékegységgel és kerekítéssel – ezek külön pontot érnek. A végén egy mondatban értelmezd az eredményt.",
+      "tips": [
+        "Ellenőrizd a nagyságrendet."
+      ]
+    },
+    {
+      "title": "Szaknyelv és topográfia",
+      "explanation": "Használd a pontos szakszavakat, és a példákat helyezd el térben (melyik ország, melyik hegység, melyik folyó).",
+      "tips": []
+    }
+  ],
+  "phrases": [
+    {
+      "group": "Bevezetés az adathoz",
+      "en": "A táblázat adatai szerint …",
+      "hu": "forrásra hivatkozás"
+    },
+    {
+      "group": "Ok–okozat",
+      "en": "… mert …, ezért …",
+      "hu": "ok–okozati kapcsolat jelzése"
+    },
+    {
+      "group": "Ok–okozat",
+      "en": "Ennek következménye, hogy …",
+      "hu": "következmény bevezetése"
+    },
+    {
+      "group": "Összehasonlítás",
+      "en": "Míg az A állomáson …, addig a B állomáson …",
+      "hu": "két elem szembeállítása"
+    },
+    {
+      "group": "Számítás",
+      "en": "… = … (képlet), behelyettesítve: …",
+      "hu": "a számítás menetének leírása"
+    },
+    {
+      "group": "Értékelés",
+      "en": "Előnye, hogy …, hátránya viszont …",
+      "hu": "kiegyensúlyozott értékelés"
+    },
+    {
+      "group": "Térbeli elhelyezés",
+      "en": "… a … partján / … lábánál / … között fekszik",
+      "hu": "topográfiai pontosság"
+    },
+    {
+      "group": "Lezárás",
+      "en": "Összességében …",
+      "hu": "rövid összegzés, ha a kérdés értékelést kér"
+    }
+  ],
+  "mistakes": [
+    {
+      "wrong": "Egyetlen bekezdésben, részkérdésekre bontás nélkül válaszolok.",
+      "right": "Minden részkérdésre külön, a betűjellel kezdve.",
+      "why": "A javító részenként pontoz; az összemosott válaszban könnyen elsikkad egy elem."
+    },
+    {
+      "wrong": "Csak megnevezem a jelenséget („Ez a főn.”).",
+      "right": "Megnevezem és meg is magyarázom („A leereszkedő levegő összenyomódik, ezért melegszik …”).",
+      "why": "Az összefüggés-szempont pontjai a magyarázatért járnak."
+    },
+    {
+      "wrong": "A számításnál csak a végeredményt írom le.",
+      "right": "Képlet, behelyettesítés, eredmény mértékegységgel.",
+      "why": "A menet hiánya pontlevonással jár, és hibás eredménynél részpontot sem kaphatsz."
+    }
+  ],
+  "checklist": [
+    "Minden részkérdésre válaszoltam, a betűjellel jelölve.",
+    "A forrás adatait mértékegységgel idéztem.",
+    "A magyarázatokban ok–okozati láncot írtam.",
+    "A számítások menete és mértékegysége szerepel.",
+    "A szakszavak és a földrajzi nevek pontosak."
+  ],
+  "timing": "Középszinten az app becslése szerint kb. 30 perc jut két kifejtős feladatra (feladatonként kb. 15 perc), emelt szinten kb. 80 perc háromra (25 + 25 + 30 perc). Az első 3–4 percben olvasd el a forrást és a kérdéseket, jelöld az adatokat; a végén 2 percben ellenőrizd a részkérdéseket.",
+  "levelNotes": {
+    "kozep": "Középszinten két feladattípus van: összefüggés-magyarázat (1. feladat) és elemző vagy számításos-elemző feladat (2. feladat), egyenként 10 pont az app pontozásában.",
+    "emelt": "Emelt szinten három feladat van: összefüggés-magyarázat, elemző és számításos-elemző feladat, egyenként 10 pont; több a forrás, és többlépéses az okfejtés."
+  }
+}

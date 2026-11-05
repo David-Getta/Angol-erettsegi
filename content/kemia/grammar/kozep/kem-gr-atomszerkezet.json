@@ -1,0 +1,305 @@
+{
+  "schemaVersion": 1,
+  "id": "kem-gr-atomszerkezet",
+  "subject": "kemia",
+  "revision": 1,
+  "level": "kozep",
+  "source": "generated",
+  "topic": "nyelvtan",
+  "title": "Atomszerkezet, periódusos rendszer",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "grammar",
+  "type": "lesson",
+  "category": "atomszerkezet",
+  "summaryHu": "Az atom felépítése (proton, neutron, elektron), az elektronszerkezet felírása és az elem helye a periódusos rendszerben szorosan összefügg: ebből következik az ionok töltése, az elem fémes vagy nemfémes jellege és a periodikusan változó tulajdonságok. A tesztfeladatokban (egyszerű választás, négyféle asszociáció) és a szóbeli A tételekben is rendszeresen pontot ér. A hibák többnyire a tömegszám és a rendszám összekeveréséből, az alhéjak betöltési sorrendjéből és a trendek irányának tévesztéséből adódnak.",
+  "rules": [
+    {
+      "title": "Az atom felépítése: rendszám, tömegszám, izotópok",
+      "explanation": "Az atommagban protonok (töltésük +1) és neutronok (semlegesek) vannak, a mag körül elektronok (töltésük −1). A rendszám (Z) a protonok száma, ez határozza meg az elemet; a semleges atomban az elektronok száma is Z. A tömegszám (A) a protonok és a neutronok számának összege, így a neutronszám N = A − Z. Az izotópok azonos rendszámú, eltérő tömegszámú atomok: kémiai tulajdonságaik gyakorlatilag azonosak, mert elektronszerkezetük azonos.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "³⁵₁₇Cl: Z = 17, A = 35 → 17 proton, 17 elektron, 35 − 17 = 18 neutron",
+          "hu": "A bal alsó index a rendszám, a bal felső a tömegszám."
+        },
+        {
+          "en": "³⁷₁₇Cl: 17 proton, 20 neutron",
+          "hu": "A klór másik izotópja: ugyanannyi proton, két neutronnal több."
+        },
+        {
+          "en": "²⁴₁₂Mg²⁺: 12 proton, 12 neutron, 10 elektron",
+          "hu": "Ionban az elektronszám a töltéssel tér el: kationban kevesebb, anionban több elektron van, mint proton."
+        }
+      ]
+    },
+    {
+      "title": "Elektronszerkezet: héjak, alhéjak, betöltési sorrend",
+      "explanation": "Az elektronok energiaszintek (héjak) szerint helyezkednek el, a héjak alhéjakra (s, p, d, f) oszlanak. Egy atompályán legfeljebb két, ellentétes spinű elektron lehet (Pauli-elv), így az s alhéjon 2, a p-n 6, a d-n 10 elektron fér el. A betöltés az energia szerint növekvő sorrendben történik: 1s, 2s, 2p, 3s, 3p, 4s, 3d, 4p … – a 4s alhéj a 3d előtt töltődik. Az azonos energiájú pályákra az elektronok előbb egyenként, párosítatlanul kerülnek (Hund-szabály).",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "₈O: 1s² 2s² 2p⁴",
+          "hu": "Az oxigénnek két párosítatlan elektronja van a 2p alhéjon."
+        },
+        {
+          "en": "₁₉K: 1s² 2s² 2p⁶ 3s² 3p⁶ 4s¹",
+          "hu": "A kálium utolsó elektronja a 4s alhéjra kerül, nem a 3d-re."
+        },
+        {
+          "en": "₂₆Fe: [Ar] 3d⁶ 4s²",
+          "hu": "Rövidített felírás: a nemesgáz-törzset szögletes zárójel jelöli."
+        }
+      ]
+    },
+    {
+      "title": "A periódusos rendszer és az elektronszerkezet",
+      "explanation": "A periódus száma a betöltött elektronhéjak száma. A főcsoportbeli elemeknél a vegyértékelektronok száma az 1–2. csoportban a csoport száma, a 13–18. csoportban a csoportszám mínusz 10 (pl. 16. csoport → 6 vegyértékelektron). Az s-mező az 1–2., a d-mező a 3–12., a p-mező a 13–18. csoport. A nemesgázok külső héja telített (8, a héliumé 2 elektron).",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "₁₆S: 3. periódus, 16. csoport → 3 héj, 6 vegyértékelektron (3s² 3p⁴)"
+        },
+        {
+          "en": "₂₀Ca: 4. periódus, 2. csoport → 4s²",
+          "hu": "Két elektron leadásával Ca²⁺-ion lesz."
+        }
+      ]
+    },
+    {
+      "title": "Ionképzés, az ionok töltése",
+      "explanation": "A főcsoportbeli atomok ionképzéskor a legközelebbi nemesgáz-szerkezetet érik el: az 1., 2. és 13. csoport fémei 1, 2, illetve 3 elektront adnak le (Na⁺, Mg²⁺, Al³⁺), a 15., 16. és 17. csoport nemfémei 3, 2, illetve 1 elektront vesznek fel (N³⁻, O²⁻, Cl⁻). Az azonos elektronszámú (izoelektronos) ionok közül a nagyobb rendszámú a kisebb, mert ugyanannyi elektront több proton vonz.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "Na → Na⁺ + e⁻; Cl + e⁻ → Cl⁻",
+          "hu": "Mindkét ion nemesgáz-szerkezetű (Na⁺: neon, Cl⁻: argon)."
+        },
+        {
+          "en": "Ionsugár: O²⁻ > F⁻ > Na⁺ > Mg²⁺ > Al³⁺",
+          "hu": "Mind 10 elektronos; a rendszám növekedésével csökken a méret."
+        }
+      ]
+    },
+    {
+      "title": "Periodikus tulajdonságok",
+      "explanation": "A periódusban balról jobbra a magtöltés nő, a héjak száma állandó, ezért az atomsugár csökken, az első ionizációs energia és az elektronegativitás (nagyjából) nő, a fémes jelleg csökken. A csoportban lefelé a héjak száma nő, ezért az atomsugár nő, az ionizációs energia és az elektronegativitás csökken, a fémes jelleg nő. A legnagyobb elektronegativitású elem a fluor (4,0).",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "Atomsugár: Na > Mg > Al > Si",
+          "hu": "A 3. periódusban balról jobbra csökken."
+        },
+        {
+          "en": "Elektronegativitás: F (4,0) > O (3,5) > N (3,0) = Cl (3,0)"
+        },
+        {
+          "en": "Első ionizációs energia: Li > Na > K",
+          "hu": "A csoportban lefelé csökken, ezért a kálium reakcióképesebb a nátriumnál."
+        }
+      ]
+    },
+    {
+      "title": "Ionizációs energiák: rendhagyások és egymást követő értékek",
+      "explanation": "Az első ionizációs energia a periódusban nem egyenletesen nő: a 2. csoport után (Be > B, Mg > Al) és a 15. csoport után (N > O, P > S) csökken, mert a p-alhéj első elektronja, illetve egy párosított p-elektron könnyebben leszakítható. Egy atom egymást követő ionizációs energiái nőnek, és nagy ugrás ott van, ahol már nemesgáz-szerkezetű belső héjból kellene elektront eltávolítani – ebből a vegyértékelektronok száma kiolvasható.",
+      "emeltOnly": true,
+      "examples": [
+        {
+          "en": "Mg: E₁ = 738, E₂ = 1451, E₃ = 7733 kJ/mol",
+          "hu": "A 2. és a 3. ionizációs energia közötti nagy ugrás mutatja, hogy a magnéziumnak 2 vegyértékelektronja van."
+        },
+        {
+          "en": "E₁(N) = 1402 kJ/mol > E₁(O) = 1314 kJ/mol",
+          "hu": "Az oxigénnél a párosított 2p-elektront a pártárs taszítása miatt könnyebb leszakítani."
+        }
+      ]
+    }
+  ],
+  "commonMistakes": [
+    {
+      "wrong": "A ³⁷Cl atomban 37 neutron van.",
+      "right": "A ³⁷Cl atomban 37 − 17 = 20 neutron van.",
+      "why": "A tömegszám a protonok és a neutronok együttes száma; a neutronszámhoz le kell vonni belőle a rendszámot."
+    },
+    {
+      "wrong": "A kálium elektronszerkezete: 1s² 2s² 2p⁶ 3s² 3p⁶ 3d¹.",
+      "right": "1s² 2s² 2p⁶ 3s² 3p⁶ 4s¹",
+      "why": "A 4s alhéj energiája kisebb a 3d-nél, ezért előbb töltődik be; a 3d alhéj betöltése csak a skandiumnál kezdődik."
+    },
+    {
+      "wrong": "A Mg²⁺-ionban 14 elektron van, mert két elektronnal többet kapott.",
+      "right": "A Mg²⁺-ionban 12 − 2 = 10 elektron van.",
+      "why": "A pozitív töltés elektronhiányt jelent: kation képzésekor az atom elektront ad le."
+    },
+    {
+      "wrong": "Az atomsugár a periódusban balról jobbra nő, mert egyre több az elektron.",
+      "right": "Az atomsugár a periódusban balról jobbra csökken.",
+      "why": "A héjak száma a periódusban állandó, a magtöltés viszont nő, ezért a mag erősebben vonzza a külső elektronokat."
+    },
+    {
+      "wrong": "A klór a 7. csoportban van, ezért 7 elektronhéja van.",
+      "right": "A klór a 17. csoportban (régi jelöléssel a VII. főcsoportban) van, 3 elektronhéja és 7 vegyértékelektronja van.",
+      "why": "A héjak számát a periódus, a vegyértékelektronokét a csoport adja meg; a mai periódusos rendszer 1–18-ig számozza a csoportokat."
+    }
+  ],
+  "examTips": [
+    "Ionok elektronszámánál mindig írd fel: protonszám = rendszám, elektronszám = rendszám − töltés (Mg²⁺: 12 − 2 = 10; S²⁻: 16 + 2 = 18).",
+    "Négyféle asszociációs feladatban gyakran két elemet kell összevetni (pl. Na és K): vedd elő a periódusos rendszert, és döntsd el a trend irányát a periódusban vagy a csoportban.",
+    "A szóbeli A tételnél a periódusos rendszer használata külön pontot ér: mutasd meg rajta az elem helyét, és abból vezesd le az elektronszerkezetet és a jellemző ion töltését."
+  ],
+  "practice": [
+    {
+      "id": "1",
+      "kind": "choice",
+      "prompt": "Hány neutront tartalmaz az ⁵⁶₂₆Fe atom?",
+      "options": [
+        {
+          "key": "A",
+          "text": "26"
+        },
+        {
+          "key": "B",
+          "text": "30"
+        },
+        {
+          "key": "C",
+          "text": "56"
+        },
+        {
+          "key": "D",
+          "text": "82"
+        }
+      ],
+      "answer": "B",
+      "category": "atomszerkezet",
+      "explanation": "Helyes: 30. A neutronszám a tömegszám és a rendszám különbsége: 56 − 26 = 30.",
+      "wrongOptions": {
+        "A": "A 26 a rendszám, vagyis a protonok (és a semleges atomban az elektronok) száma.",
+        "C": "Az 56 a tömegszám, a protonok és a neutronok együttes száma.",
+        "D": "A 82 a tömegszám és a rendszám összege – ennek nincs fizikai jelentése."
+      }
+    },
+    {
+      "id": "2",
+      "kind": "text",
+      "prompt": "Hány elektron van a szulfidionban (S²⁻)? Z(S) = 16",
+      "answer": [
+        "18",
+        "18 elektron"
+      ],
+      "category": "atomszerkezet",
+      "explanation": "Helyes: 18. A kénatomnak 16 elektronja van; a −2 töltés két felvett elektront jelent: 16 + 2 = 18 (argonszerkezet).",
+      "maxWords": 2
+    },
+    {
+      "id": "3",
+      "kind": "choice",
+      "prompt": "Melyik elektronszerkezet tartozik az alapállapotú kalciumatomhoz (Z = 20)?",
+      "options": [
+        {
+          "key": "A",
+          "text": "1s² 2s² 2p⁶ 3s² 3p⁶ 4s²"
+        },
+        {
+          "key": "B",
+          "text": "1s² 2s² 2p⁶ 3s² 3p⁶ 3d²"
+        },
+        {
+          "key": "C",
+          "text": "1s² 2s² 2p⁶ 3s² 3p⁸"
+        },
+        {
+          "key": "D",
+          "text": "1s² 2s² 2p⁶ 3s² 3p⁶ 4s¹ 3d¹"
+        }
+      ],
+      "answer": "A",
+      "category": "atomszerkezet",
+      "explanation": "Helyes: A. A 3p alhéj után a kisebb energiájú 4s alhéj töltődik be, így a kalcium utolsó két elektronja a 4s alhéjra kerül.",
+      "wrongOptions": {
+        "B": "A 3d alhéj csak a 4s után töltődik; a kalciumban még nincs d-elektron.",
+        "C": "A p-alhéjon legfeljebb 6 elektron fér el (3 pálya × 2 elektron).",
+        "D": "Ez gerjesztett állapot lenne: alapállapotban a 4s alhéj betelik, mielőtt a 3d-re elektron kerülne."
+      }
+    },
+    {
+      "id": "4",
+      "kind": "choice",
+      "prompt": "Melyik sorrend helyes az atomsugárra?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Na < Mg < Al"
+        },
+        {
+          "key": "B",
+          "text": "K > Na > Li"
+        },
+        {
+          "key": "C",
+          "text": "F > Cl > Br"
+        },
+        {
+          "key": "D",
+          "text": "O > S > Se"
+        }
+      ],
+      "answer": "B",
+      "category": "atomszerkezet",
+      "explanation": "Helyes: K > Na > Li. A csoportban lefelé nő a héjak száma, ezért nő az atomsugár.",
+      "wrongOptions": {
+        "A": "A periódusban balról jobbra az atomsugár csökken, tehát Na > Mg > Al.",
+        "C": "A csoportban lefelé nő az atomsugár: F < Cl < Br.",
+        "D": "A csoportban lefelé nő az atomsugár: O < S < Se."
+      }
+    },
+    {
+      "id": "5",
+      "kind": "text",
+      "prompt": "Hány vegyértékelektronja van a 15. csoportba tartozó foszforatomnak?",
+      "answer": [
+        "5",
+        "öt",
+        "5 vegyértékelektron"
+      ],
+      "category": "atomszerkezet",
+      "explanation": "Helyes: 5. A 13–18. csoport elemeinél a vegyértékelektronok száma a csoportszám mínusz 10: 15 − 10 = 5 (3s² 3p³).",
+      "maxWords": 2
+    },
+    {
+      "id": "6",
+      "kind": "choice",
+      "prompt": "A magnézium egymást követő ionizációs energiái (kJ/mol): 738; 1451; 7733; 10 540. Mit mutat a második és a harmadik érték közötti nagy ugrás? (emelt)",
+      "options": [
+        {
+          "key": "A",
+          "text": "A magnéziumnak 2 vegyértékelektronja van."
+        },
+        {
+          "key": "B",
+          "text": "A magnéziumnak 3 vegyértékelektronja van."
+        },
+        {
+          "key": "C",
+          "text": "A magnézium a 3. periódusban van."
+        },
+        {
+          "key": "D",
+          "text": "A magnézium nemfém."
+        }
+      ],
+      "answer": "A",
+      "category": "atomszerkezet",
+      "explanation": "Helyes: A. A harmadik elektront már a neonszerkezetű belső héjból kellene eltávolítani, ezért ugrik meg az energia – a külső héjon tehát 2 elektron van.",
+      "wrongOptions": {
+        "B": "Ha 3 vegyértékelektron lenne, a nagy ugrás a 3. és a 4. ionizációs energia között jelentkezne.",
+        "C": "A periódusszám igaz, de nem az ionizációs energiák ugrásából, hanem a héjak számából következik.",
+        "D": "A kis első és második ionizációs energia éppen a fémes jellegre utal."
+      }
+    }
+  ],
+  "relatedCategories": [
+    "kotes-szerkezet",
+    "anyagismeret"
+  ]
+}

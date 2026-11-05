@@ -1,0 +1,258 @@
+{
+  "schemaVersion": 1,
+  "id": "tor-gr-forras-sajat-tudas",
+  "subject": "tortenelem",
+  "revision": 1,
+  "level": "kozep",
+  "source": "generated",
+  "topic": "nyelvtan",
+  "title": "Forrás és saját ismeret összekapcsolása (F-elem)",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "grammar",
+  "type": "lesson",
+  "category": "forras-sajat-tudas",
+  "summaryHu": "Az esszék F-szempontja (Ismeretszerzés, a források használata) és a szóbeli forrás-szempontja akkor ad pontot, ha a forrásból kiolvasott megállapításhoz saját ismeretből következtetést fűzöl. A puszta idézet vagy a forrás tartalmának megismétlése még nem F-elem, a forrás nélküli tudás pedig az E-szempontnál (történelmi gondolkodás) számít. Ez a szempont középszinten 3 + 9, emelt szinten 6 + 12 + 12 pontot ér az esszékben, a szóbelin 12 pontot.",
+  "rules": [
+    {
+      "title": "Az F-elem két része",
+      "explanation": "1) Forrásmegállapítás: mit mond vagy mutat a forrás – saját szavaiddal, röviden. 2) Következtetés: mit jelent ez, mi az oka, következménye vagy összefüggése – saját történelmi ismereted alapján. Csak a kettő együtt teljes F-elem.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "„A III. forrás szerint a Lánchídon a nemesek is vámot fizettek, ami a közteherviselés felé tett első lépés volt.”",
+          "hu": "megállapítás (hídvám a nemeseknek is) + következtetés (közteherviselés) = teljes F-elem"
+        },
+        {
+          "en": "„A II. forrás szerint 1924-ben népszövetségi kölcsönt kapott az ország.”",
+          "hu": "csak megállapítás – következtetés nélkül nem teljes F-elem"
+        }
+      ]
+    },
+    {
+      "title": "Jelzőszavak, amelyekkel a javító is látja az F-elemet",
+      "explanation": "A forrásmegállapítást vezesd be a forrás megnevezésével („Az I. forrás szerint…”, „A térképvázlaton látható…”, „Az adatokból kiderül…”), a következtetést pedig egyértelmű kötőszóval („ebből arra következtetek, hogy…”, „ez azt mutatja, hogy…”, „ennek oka az volt, hogy…”).",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "„Az I. forrás szerint… Ebből arra következtetek, hogy…”",
+          "hu": "a két rész jól elkülönül"
+        },
+        {
+          "en": "„Az adatsorból kiderül, hogy… ez azt mutatja, hogy…”",
+          "hu": "adatból levont következtetés"
+        }
+      ]
+    },
+    {
+      "title": "Milyen következtetést fűzhetsz a forráshoz?",
+      "explanation": "A következtetés lehet: az esemény oka vagy következménye; a szerző szándéka; összefüggés egy másik eseménnyel; egy jelenség jellemzője vagy általánosítás. A következtetésnek a forrásból kell kiindulnia, és helyes történelmi ismeretre kell épülnie, nem közhelyre.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "Menekültek száma 1949–1961: kb. 2,7 millió → „ennek megállítására épült 1961-ben a berlini fal”",
+          "hu": "következmény"
+        },
+        {
+          "en": "„Minden tíz falu építsen templomot” → „a törvények a kereszténység megszilárdítását szolgálták”",
+          "hu": "a jelenség célja, jellemzője"
+        }
+      ]
+    },
+    {
+      "title": "Minden forrást használj fel",
+      "explanation": "Az esszé és a szóbeli tétel minden forrását építsd be a gondolatmenetbe, a megfelelő szempontnál – ne a bevezetésben sorold fel őket. Minél több forrásból vonsz le helyes következtetést, annál magasabb az F-pontszám.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "Piszkozat: „I. → ősiség akadályozza a hitelt → eltörlés; II. → érdekegyesítés → parasztság megnyerése; III. → hídvám → közteherviselés”",
+          "hu": "forrásonként egy sor: mit mond → mit következtetek"
+        }
+      ]
+    },
+    {
+      "title": "Források összevetése",
+      "explanation": "Emelt szinten különösen értékes, ha két forrást egymáshoz viszonyítasz: megerősítik vagy cáfolják egymást, más nézőpontot képviselnek, vagy a látszatot és a valóságot mutatják.",
+      "emeltOnly": true,
+      "examples": [
+        {
+          "en": "„Az I. forrás szerint Augustus visszaadta a köztársaságot, a II. forrás érméje viszont az imperator címet és a légiós sast mutatja.”",
+          "hu": "látszat és valóság szembeállítása két forrásból"
+        },
+        {
+          "en": "„Az I. forrás panaszai és a II. forrás rendelkezései egymásnak felelnek meg.”",
+          "hu": "ok (sérelem) és következmény (kiváltságlevél) összekapcsolása"
+        }
+      ]
+    }
+  ],
+  "commonMistakes": [
+    {
+      "wrong": "Az I. forrás szerint „hitelt csak az kaphat, akinek birtokát zálogba lehet adni”.",
+      "right": "Az I. forrás szerint az ősiség miatt nem lehetett zálogba adni a birtokot, ezért Széchenyi az ősiség eltörlését követelte.",
+      "why": "A puszta idézet nem F-elem: hiányzik a saját ismeretből levont következtetés."
+    },
+    {
+      "wrong": "Széchenyi a Lánchidat építtette, mert fontosnak tartotta a hidakat.",
+      "right": "A III. forrás szerint a hídvámot a nemesek is fizették, ami a közteherviselés felé tett első lépés volt.",
+      "why": "A következtetésnek a forrásmegállapításból kell következnie, és történelmi összefüggést kell feltárnia, nem közhelyet."
+    },
+    {
+      "wrong": "A bevezetésben felsorolom a forrásokat, utána a saját tudásomat írom le.",
+      "right": "A forrásokat a kifejtés megfelelő pontján, az adott szemponthoz kapcsolva használom.",
+      "why": "A felsorolás nem értelmezés; a javító azt értékeli, hogyan építed be a forrást a gondolatmenetbe."
+    },
+    {
+      "wrong": "A térképen Morvaország, Szilézia és Lausitz látható.",
+      "right": "A IV. forrás szerint az olmützi békében Morvaország, Szilézia és Lausitz Mátyáshoz került; nyugati hódításaival a császári cím megszerzésére törekedett.",
+      "why": "A térkép leírása önmagában nem F-elem; a hódítás célját vagy következményét is meg kell nevezni."
+    }
+  ],
+  "examTips": [
+    "Esszéírás előtt minden forráshoz írj egy sort a piszkozatba: „mit mond? → mit következtetek?”. Így biztosan minden forrás bekerül, és mindegyikhez lesz következtetés.",
+    "Szóbelin a forrás-szempont 12 pontot ér: minden forrásra hivatkozz név szerint („A II. forrás, a térképvázlat szerint…”), és fűzz hozzá magyarázatot.",
+    "Rövid esszében (közép 3, emelt 6 F-pont) mindkét forrásból építs F-elemet – egy forrás kihagyása már pontvesztés."
+  ],
+  "practice": [
+    {
+      "id": "1",
+      "kind": "choice",
+      "prompt": "Melyik mondat teljes F-elem (forrásmegállapítás + következtetés)?",
+      "options": [
+        {
+          "key": "A",
+          "text": "A II. forrás szerint 1924-ben népszövetségi kölcsönt kapott az ország, ami megfékezte az inflációt."
+        },
+        {
+          "key": "B",
+          "text": "A II. forrás egy adatsor."
+        },
+        {
+          "key": "C",
+          "text": "Bethlen István 1921-ben lett miniszterelnök."
+        },
+        {
+          "key": "D",
+          "text": "A II. forrás szerint 1924-ben népszövetségi kölcsönt kapott az ország."
+        }
+      ],
+      "answer": "A",
+      "category": "forras-sajat-tudas",
+      "explanation": "Helyes: A. Kiolvasott adat (kölcsön 1924) + saját ismeretből levont következmény (az infláció megfékezése) – ez teljes F-elem.",
+      "wrongOptions": {
+        "B": "Ez csak a forrás típusának megnevezése, nincs benne megállapítás és következtetés.",
+        "C": "Helyes saját ismeret, de nem a forrásból származik – az E-szempontnál számít, nem F-elem.",
+        "D": "Csak forrásmegállapítás; hiányzik a következtetés."
+      }
+    },
+    {
+      "id": "2",
+      "kind": "choice",
+      "prompt": "A forrás: „Minden tíz falu építsen egy templomot.” Melyik következtetés helyes?",
+      "options": [
+        {
+          "key": "A",
+          "text": "István törvényei a kereszténység megszilárdítását szolgálták."
+        },
+        {
+          "key": "B",
+          "text": "István ellenezte a falvak gyarapodását."
+        },
+        {
+          "key": "C",
+          "text": "A templomépítést a falvak lakói kezdeményezték."
+        },
+        {
+          "key": "D",
+          "text": "A törvény eltörölte a tizedet."
+        }
+      ],
+      "answer": "A",
+      "category": "forras-sajat-tudas",
+      "explanation": "Helyes: A. A templomhálózat kiépítése a térítést és az egyházszervezetet erősítette; ez illik István egyházpolitikájához.",
+      "wrongOptions": {
+        "B": "A forrás nem a falvak gyarapodásáról szól, hanem a templomépítésről.",
+        "C": "A forrás királyi törvény, vagyis felülről elrendelt kötelezettség.",
+        "D": "István éppen bevezette a tizedet; a forrás nem szól az eltörléséről."
+      }
+    },
+    {
+      "id": "3",
+      "kind": "choice",
+      "prompt": "Melyik kifejezés vezet be következtetést?",
+      "options": [
+        {
+          "key": "A",
+          "text": "„Ebből arra következtetek, hogy…”"
+        },
+        {
+          "key": "B",
+          "text": "„A forrás címe…”"
+        },
+        {
+          "key": "C",
+          "text": "„Az I. forrás egy 1704-es kiáltvány.”"
+        },
+        {
+          "key": "D",
+          "text": "„A forrás szövege így szól:”"
+        }
+      ],
+      "answer": "A",
+      "category": "forras-sajat-tudas",
+      "explanation": "Helyes: A. Ez a fordulat jelzi a javítónak, hogy a forrásmegállapítás után saját következtetés jön.",
+      "wrongOptions": {
+        "B": "A cím megnevezése nem következtetés.",
+        "C": "A forrás típusának és idejének megnevezése, nem következtetés.",
+        "D": "Idézet bevezetése – az idézés önmagában nem F-elem."
+      }
+    },
+    {
+      "id": "4",
+      "kind": "choice",
+      "prompt": "A forrás: 1949 és 1961 között kb. 2,7 millió ember menekült el az NDK-ból nyugatra. Melyik következtetés kapcsolja helyesen saját ismerethez?",
+      "options": [
+        {
+          "key": "A",
+          "text": "A tömeges menekülés megállítására építették fel 1961-ben a berlini falat."
+        },
+        {
+          "key": "B",
+          "text": "Az NDK lakossága 1961-re megduplázódott."
+        },
+        {
+          "key": "C",
+          "text": "A menekültek többsége a Szovjetunióba ment."
+        },
+        {
+          "key": "D",
+          "text": "A menekülés miatt jött létre 1949-ben az NDK."
+        }
+      ],
+      "answer": "A",
+      "category": "forras-sajat-tudas",
+      "explanation": "Helyes: A. A forrás adata (tömeges menekülés) és a saját ismeret (1961. augusztus 13.: a fal felépítése) ok-okozati kapcsolatban áll.",
+      "wrongOptions": {
+        "B": "A menekülés éppen csökkentette a lakosságot.",
+        "C": "A forrás szerint nyugatra menekültek, nem keletre.",
+        "D": "Az NDK 1949-ben jött létre, a menekülés ennek következménye, nem oka."
+      }
+    },
+    {
+      "id": "5",
+      "kind": "text",
+      "prompt": "Egészítsd ki egy szóval: „A II. forrás szerint az ellenállási záradék feljogosította a nemeseket, hogy ellenálljanak a törvényt megszegő királynak; ebből arra következtetek, hogy az oklevél korlátozta a király ___.”",
+      "answer": [
+        "hatalmát",
+        "önkényét",
+        "jogkörét"
+      ],
+      "category": "forras-sajat-tudas",
+      "explanation": "Helyes: hatalmát (önkényét). Az Aranybulla ellenállási záradéka a király hatalmának jogi korlátját jelentette – ez a forrásmegállapításhoz kapcsolt következtetés."
+    }
+  ],
+  "relatedCategories": [
+    "forras-ertelmezes",
+    "ok-okozat"
+  ]
+}

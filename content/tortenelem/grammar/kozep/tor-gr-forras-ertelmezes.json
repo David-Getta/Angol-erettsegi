@@ -1,0 +1,266 @@
+{
+  "schemaVersion": 1,
+  "id": "tor-gr-forras-ertelmezes",
+  "subject": "tortenelem",
+  "revision": 1,
+  "level": "kozep",
+  "source": "generated",
+  "topic": "nyelvtan",
+  "title": "A forrás értelmezése",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "grammar",
+  "type": "lesson",
+  "category": "forras-ertelmezes",
+  "summaryHu": "A forráselemzés az írásbeli I. részének, az esszéknek és a szóbelinek is az alapja. Minden forrásnál tisztázni kell, ki, mikor, milyen céllal és milyen műfajban készítette, és mit állít pontosan. A pontatlan olvasás – a „csak”, a „többség”, a „mintegy” vagy egy tagadás figyelmen kívül hagyása – az igaz–hamis és a feleletválasztós feladatokban a leggyakoribb pontvesztés.",
+  "rules": [
+    {
+      "title": "A forrás típusa: elsődleges vagy másodlagos",
+      "explanation": "Elsődleges (korabeli) forrás az, amely a vizsgált korban keletkezett: oklevél, törvény, levél, napló, röplap, újságcikk, korabeli kép, tárgy, statisztika. Másodlagos forrás (feldolgozás) az utólagos értelmezés: tankönyv, történészi munka, mai térkép. A forrás típusa megmutatja, mit várhatunk tőle: a korabeli forrás a kor nézőpontját, a feldolgozás a későbbi értelmezést tükrözi.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "Egy 1848-as röplap szövege",
+          "hu": "elsődleges, írott forrás – a korabeli szándékot és hangulatot mutatja"
+        },
+        {
+          "en": "Egy történész 1990-es tanulmánya a reformkorról",
+          "hu": "másodlagos forrás (feldolgozás) – utólagos értelmezés"
+        },
+        {
+          "en": "Egy római érme képe és felirata",
+          "hu": "elsődleges, tárgyi és képi forrás – a hatalom önábrázolását mutatja"
+        }
+      ]
+    },
+    {
+      "title": "A keletkezés körülményei: szerző, idő, címzett, szándék",
+      "explanation": "Mielőtt a tartalmat értelmezed, kérdezd meg: ki írta (és milyen helyzetben volt), mikor, kinek szólt, és mit akart elérni vele (tájékoztatás, mozgósítás, panasz, igazolás, propaganda)? A szándék magyarázza, mit hangsúlyoz és mit hallgat el a forrás.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "„Mi, a budapesti egyetemek hallgatói követeljük…” (1956. október 22.)",
+          "hu": "szerző: diákok; műfaj: röplap; címzett: a nyilvánosság; szándék: követelések megfogalmazása és mozgósítás"
+        },
+        {
+          "en": "„Urunk, a király… oly bőkezűen osztogatja a királyi várakat…” (1220 körül)",
+          "hu": "szerző: sérelmet szenvedett szerviens; szándék: panasz – a nézőpont elfogult"
+        }
+      ]
+    },
+    {
+      "title": "Mit állít pontosan a forrás? – szó szerinti olvasás",
+      "explanation": "A „forrás szerint” kérdésekre csak az a válasz helyes, ami a forrásban ténylegesen áll. Figyelj a mennyiséget és bizonyosságot jelző szavakra (csak, minden, többség, mintegy, talán), a tagadásra, a feltételes módra és a kivételekre („azonban”, „kivéve”).",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "„a nemzetiszocialista párt a szavazatok mintegy 44 százalékát szerezte meg”",
+          "hu": "Nem abszolút többség: a 44 % kevesebb a felénél."
+        },
+        {
+          "en": "„A tisztségviselők többségét sorsolással választjuk… a sztratégoszokat azonban szavazással”",
+          "hu": "A „többség” nem „mindenki”: a forrás kivételt is megnevez."
+        }
+      ]
+    },
+    {
+      "title": "Tény és vélemény, a forrás megbízhatósága",
+      "explanation": "A forrásban keveredhet a tény (mi történt) és a szerző véleménye (hogyan ítéli meg). Az elfogult forrás is értékes, de csak annak bizonyítéka, hogy a szerző (vagy csoportja) így látta a helyzetet. Emelt szinten gyakori feladat két forrás nézőpontjának összevetése.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "Panaszlevél: „a nagyurak naponta sértik szabadságunkat”",
+          "hu": "Tény: a szerviensek sérelmeket éltek át; vélemény: ennek mértéke és oka a szerző értékelése."
+        },
+        {
+          "en": "Propagandaplakát",
+          "hu": "a készítő célját mutatja, nem a valóság hű képét – a képi üzenetet értelmezni kell"
+        }
+      ]
+    },
+    {
+      "title": "Képi és tárgyi forrás értelmezése",
+      "explanation": "Képnél, érmén, plakáton írd le, mi látható (szereplők, tárgyak, feliratok, jelképek), majd értelmezd: mit akart üzenni a megrendelő, kinek szólt, mi a kép történelmi összefüggése. A jelképek (korona, sas, kard, kereszt) gyakran a hatalom forrására utalnak.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "Augustus érméje: IMPERATOR felirat, légiós sas",
+          "hu": "a jelképek a hatalom katonai alapjára utalnak – szemben a köztársasági látszattal"
+        },
+        {
+          "en": "Versailles, Tükörterem, 1871: tisztek éltetik a császárt",
+          "hu": "a helyszín és a szereplők az egység katonai jellegét és a franciák megalázását mutatják"
+        }
+      ]
+    }
+  ],
+  "commonMistakes": [
+    {
+      "wrong": "A forrás szerint a sztratégoszokat is sorsolták, hiszen a tisztségviselők többségét sorsolással választották.",
+      "right": "A forrás szerint a tisztségviselők többségét sorsolták, a sztratégoszokat azonban szavazással választották.",
+      "why": "A „többség” nem „mindenki”, és a forrás külön kivételt is megnevez. Az általánosítás a leggyakoribb igaz–hamis hiba."
+    },
+    {
+      "wrong": "A panaszlevél bizonyítja, hogy II. András rossz király volt.",
+      "right": "A panaszlevél azt mutatja, hogy a szerviensek sérelmesnek tartották II. András birtokpolitikáját.",
+      "why": "A forrás a szerző nézőpontját tükrözi; a véleményt nem szabad tényként átvenni, hanem meg kell nevezni, kinek a véleménye."
+    },
+    {
+      "wrong": "Egy 2010-es tankönyv ábrája korabeli forrás a tatárjárásról.",
+      "right": "A tankönyvi ábra másodlagos forrás (feldolgozás); korabeli forrás például Rogerius mester egykorú beszámolója.",
+      "why": "Elsődleges az a forrás, amely a vizsgált korban keletkezett; a mai feldolgozás utólagos értelmezés."
+    },
+    {
+      "wrong": "„A forrás szerint…” kérdésre a saját ismeretemből válaszolok, akkor is, ha a forrás mást mond.",
+      "right": "„A forrás szerint” kérdésnél a választ a forrás szövegében kell megtalálni és arra kell hivatkozni.",
+      "why": "A feladat a forrás értelmezését méri; a saját tudás ott kell, ahol a kérdés kifejezetten kéri (pl. „ismeretei alapján”)."
+    }
+  ],
+  "examTips": [
+    "Az I. részben először a kérdéseket olvasd el, csak utána a forrást: így tudod, mit keress. Húzd alá a kulcsszavakat (évszám, név, tagadás, „csak”, „mintegy”).",
+    "Igaz–hamis feladatnál különítsd el a „forrás szerint” és az „ismeretei alapján” állításokat: az előbbit kizárólag az dönti el, ami a forrásban áll.",
+    "Esszében és szóbelin nevezd meg a forrás típusát és keletkezését („Az I. forrás, egy 1704-es kiáltvány szerint…”) – ez mutatja, hogy értelmezed, nem csak idézed."
+  ],
+  "practice": [
+    {
+      "id": "1",
+      "kind": "choice",
+      "prompt": "Melyik elsődleges (korabeli) forrás az 1848. március 15-i események vizsgálatához?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Petőfi Sándor naplójegyzete 1848. március 15-éről"
+        },
+        {
+          "key": "B",
+          "text": "Egy 2018-as tankönyv fejezete a forradalomról"
+        },
+        {
+          "key": "C",
+          "text": "Egy 1998-ban felavatott emlékmű felirata"
+        },
+        {
+          "key": "D",
+          "text": "Egy történész 1950-ben írt monográfiája"
+        }
+      ],
+      "answer": "A",
+      "category": "forras-ertelmezes",
+      "explanation": "Helyes: A. Petőfi naplójegyzete az események idején keletkezett, a résztvevő nézőpontjából – ezért elsődleges forrás.",
+      "wrongOptions": {
+        "B": "A tankönyv utólagos feldolgozás, másodlagos forrás.",
+        "C": "Az emlékmű az emlékezetet mutatja, nem korabeli forrás az eseményekről.",
+        "D": "A monográfia történészi feldolgozás, másodlagos forrás."
+      }
+    },
+    {
+      "id": "2",
+      "kind": "choice",
+      "prompt": "„A tisztségviselők többségét sorsolással választjuk, a sztratégoszokat azonban szavazással.” Melyik állítás következik a forrásból?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Volt olyan tisztség, amelyet nem sorsoltak."
+        },
+        {
+          "key": "B",
+          "text": "Minden tisztséget sorsolással töltöttek be."
+        },
+        {
+          "key": "C",
+          "text": "A sztratégoszokat sorsolták."
+        },
+        {
+          "key": "D",
+          "text": "Athénban nem tartottak választásokat."
+        }
+      ],
+      "answer": "A",
+      "category": "forras-ertelmezes",
+      "explanation": "Helyes: A. A „többség” és az „azonban” azt jelzi, hogy a sorsolás alól kivétel volt: a sztratégoszokat választották.",
+      "wrongOptions": {
+        "B": "A forrás csak a „többségről” beszél, és kivételt is megnevez.",
+        "C": "A forrás szerint éppen a sztratégoszokat választották szavazással.",
+        "D": "A sztratégoszok megválasztása választás volt, tehát tartottak választást."
+      }
+    },
+    {
+      "id": "3",
+      "kind": "choice",
+      "prompt": "Egy 1956. október 22-i röplap: „Holnap vonuljunk a Bem-szoborhoz!” Mi a forrás elsődleges szándéka?",
+      "options": [
+        {
+          "key": "A",
+          "text": "mozgósítás egy tüntetésre"
+        },
+        {
+          "key": "B",
+          "text": "az események tudományos elemzése"
+        },
+        {
+          "key": "C",
+          "text": "egy törvény hivatalos kihirdetése"
+        },
+        {
+          "key": "D",
+          "text": "egy régi esemény utólagos felidézése"
+        }
+      ],
+      "answer": "A",
+      "category": "forras-ertelmezes",
+      "explanation": "Helyes: A. A röplap felszólító módban, másnapi eseményre hív – a műfaj és a megfogalmazás a mozgósító szándékot mutatja.",
+      "wrongOptions": {
+        "B": "A röplap nem elemző, hanem cselekvésre szólít fel.",
+        "C": "Nem hatóság adta ki, és nem jogszabály.",
+        "D": "A röplap jövőbeli eseményről szól („holnap”), nem visszaemlékezés."
+      }
+    },
+    {
+      "id": "4",
+      "kind": "text",
+      "prompt": "A forrás: „A nemzetiszocialista párt a szavazatok mintegy 44 százalékát szerezte meg.” Abszolút többséget szerzett-e a párt? (igen / nem)",
+      "answer": [
+        "nem",
+        "nem szerzett",
+        "nem szerzett abszolút többséget"
+      ],
+      "category": "forras-ertelmezes",
+      "explanation": "Helyes: nem. Az abszolút többség a szavazatok több mint fele (50 % felett); a 44 % ennél kevesebb. Ezért kellett a nemzetiszocialistáknak szövetséges és a felhatalmazási törvény."
+    },
+    {
+      "id": "5",
+      "kind": "choice",
+      "prompt": "Egy érme előlapján „IMP CAESAR AUGUSTUS” felirat, a hátlapon légiós sas látható. Mire utal leginkább a képi forrás?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Augustus hatalma a hadseregen nyugodott."
+        },
+        {
+          "key": "B",
+          "text": "Augustus a köztársaság visszaállításának híve volt."
+        },
+        {
+          "key": "C",
+          "text": "Augustus kereskedelmi reformot vezetett be."
+        },
+        {
+          "key": "D",
+          "text": "Rómában tilos volt a pénzverés."
+        }
+      ],
+      "answer": "A",
+      "category": "forras-ertelmezes",
+      "explanation": "Helyes: A. Az imperator (győztes hadvezér) cím és a légió jelvénye a katonai hatalmat hangsúlyozza – ez ellentmond Augustus köztársasági önábrázolásának.",
+      "wrongOptions": {
+        "B": "Az érme jelképei nem a köztársasági intézményekre, hanem a hadseregre utalnak.",
+        "C": "A feliratban és a képen semmi nem utal kereskedelmi reformra.",
+        "D": "Maga az érme bizonyítja, hogy volt pénzverés."
+      }
+    }
+  ],
+  "relatedCategories": [
+    "forras-sajat-tudas",
+    "adatleolvasas"
+  ]
+}

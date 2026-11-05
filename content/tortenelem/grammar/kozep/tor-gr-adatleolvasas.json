@@ -1,0 +1,239 @@
+{
+  "schemaVersion": 1,
+  "id": "tor-gr-adatleolvasas",
+  "subject": "tortenelem",
+  "revision": 1,
+  "level": "kozep",
+  "source": "generated",
+  "topic": "nyelvtan",
+  "title": "Adatsor, diagram, térkép leolvasása",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "grammar",
+  "type": "lesson",
+  "category": "adatleolvasas",
+  "summaryHu": "A rövid feladatok között mindig van táblázat, diagram vagy térkép (itt szöveges leírással). A pontvesztés legtöbbször abból adódik, hogy valaki nem nézi meg a mértékegységet, összekeveri az arányt az abszolút számmal, vagy csak a két végpontot hasonlítja össze, és nem veszi észre a közbenső fordulatot. A számításokat érdemes a piszkozatban leírni és ellenőrizni.",
+  "rules": [
+    {
+      "title": "Cím, mértékegység, jelmagyarázat",
+      "explanation": "Először mindig a címet, a mértékegységet (fő, ezer fő, %, km², millió, korona, pengő) és a jelmagyarázatot olvasd el. Az „ezer fő” vagy „millió” egység a számot ezerrel vagy millióval szorozza.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "„Népesség (ezer fő): 1890: 492”",
+          "hu": "= 492 000 fő"
+        },
+        {
+          "en": "„Vasúthálózat (km): 1867: 2 200; 1913: 22 000”",
+          "hu": "a két szám ugyanabban az egységben van, közvetlenül összevethető"
+        }
+      ]
+    },
+    {
+      "title": "Abszolút szám és arány (százalék)",
+      "explanation": "A százalékos arány csökkenése nem jelenti a szám csökkenését, ha közben az egész nő. Mindig nézd meg, a kérdés a számra (hány fő?) vagy az arányra (hány százalék?) kérdez.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "Egy város lakossága 100 000 → 150 000, egy csoport aránya 60 % → 50 %",
+          "hu": "a csoport létszáma 60 000 → 75 000: nőtt, pedig az aránya csökkent (szemléltető példa)"
+        }
+      ]
+    },
+    {
+      "title": "A változás kiszámítása",
+      "explanation": "Különbség: későbbi − korábbi érték. Hányszoros: későbbi : korábbi. Százalékos változás: (későbbi − korábbi) : korábbi × 100. Vigyázz: a tízszeresére növekedés 900 %-os növekedés, a kétszeresére növekedés 100 %-os.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "880 000 − 270 000 = 610 000",
+          "hu": "Budapest lakosságának növekedése 1869 és 1910 között (fő)"
+        },
+        {
+          "en": "22 000 : 2 200 = 10",
+          "hu": "a vasúthálózat tízszeresére nőtt, vagyis 900 %-kal"
+        }
+      ]
+    },
+    {
+      "title": "Trend és fordulópont",
+      "explanation": "Ne csak az első és az utolsó adatot hasonlítsd össze: nézd meg, folyamatos-e a változás, van-e csúcspont, mélypont vagy irányváltás. A fordulópontot történelmi eseményhez kapcsolhatod (háború, válság, reform).",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "Munkanélküliség (USA): 1929: 3 %, 1933: 25 %, 1937: 14 %, 1938: 19 %",
+          "hu": "1933 a mélypont; 1937–38 között újra nő – nem folyamatos a javulás"
+        }
+      ]
+    },
+    {
+      "title": "Térkép és térképvázlat leolvasása",
+      "explanation": "A térképen nézd meg a címet (korszak), az égtájakat, a jelmagyarázatot (vonaltípusok, színek, nyilak), a folyókat és a hegységeket. A nyíl általában hadmozdulatot vagy vándorlást, a szaggatott vonal gyakran korábbi vagy későbbi határt jelöl. A kronológia nélküli atlasz megfelelő térképe segít azonosítani a helyszíneket.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "„a Kárpátok északkeleti részén lévő hágó”",
+          "hu": "Vereckei-hágó – az égtáj és a domborzat együtt azonosítja"
+        },
+        {
+          "en": "„a Duna bal partján fekvő város” (Budapestnél)",
+          "hu": "Pest – a bal part a folyás irányába nézve bal kéz felé esik"
+        }
+      ]
+    }
+  ],
+  "commonMistakes": [
+    {
+      "wrong": "A vasúthálózat 1867 és 1913 között 1000 %-kal nőtt (2 200 km → 22 000 km).",
+      "right": "A vasúthálózat tízszeresére, vagyis 900 %-kal nőtt.",
+      "why": "A növekedés mértéke: (22 000 − 2 200) : 2 200 × 100 = 900 %. A „tízszeres” és a „+1000 %” nem ugyanaz."
+    },
+    {
+      "wrong": "A csoport aránya csökkent, tehát kevesebb tagja élt a városban.",
+      "right": "Az arány csökkenése mellett a létszám nőhetett, ha a teljes népesség gyorsabban nőtt.",
+      "why": "Az arány (százalék) és az abszolút szám (fő) két különböző adat; mindkettőt ki kell számolni, mielőtt döntesz."
+    },
+    {
+      "wrong": "A munkanélküliség 1933 és 1938 között folyamatosan csökkent (25 % → 19 %).",
+      "right": "1937-ig 14 %-ra csökkent, 1938-ban azonban újra 19 %-ra nőtt.",
+      "why": "A két végpont összevetése elfedi a közbenső fordulópontot; minden adatot meg kell nézni."
+    },
+    {
+      "wrong": "„Népesség (ezer fő): 492” → a városnak 492 lakosa volt.",
+      "right": "A városnak 492 000 lakosa volt.",
+      "why": "Az ezres mértékegység figyelmen kívül hagyása ezerszeres hibát okoz."
+    }
+  ],
+  "examTips": [
+    "Számításos kérdésnél írd le a műveletet a piszkozatba, és nézd meg, különbséget, hányadost vagy százalékot kér-e a kérdés; a kerekítésre vonatkozó utasítást is tartsd be.",
+    "Igaz–hamis állításoknál a táblázat minden sorát nézd meg: a „folyamatosan”, „mindig”, „több mint kétszeresére” típusú szavak döntenek.",
+    "Térképes feladatnál vesd össze a vázlatot a kronológia nélküli atlasz azonos korszakot ábrázoló térképével."
+  ],
+  "practice": [
+    {
+      "id": "1",
+      "kind": "text",
+      "prompt": "Budapest lakossága 1869-ben kb. 270 000, 1910-ben kb. 880 000 fő volt. Hány fővel nőtt?",
+      "answer": [
+        "610 000",
+        "610000",
+        "610 ezer",
+        "610 000 fő",
+        "610 ezer fő"
+      ],
+      "category": "adatleolvasas",
+      "explanation": "Helyes: 610 000 fővel. 880 000 − 270 000 = 610 000 (különbség)."
+    },
+    {
+      "id": "2",
+      "kind": "choice",
+      "prompt": "Egy adat 40-ről 100-ra nőtt. Hány százalékos a növekedés?",
+      "options": [
+        {
+          "key": "A",
+          "text": "60 %"
+        },
+        {
+          "key": "B",
+          "text": "150 %"
+        },
+        {
+          "key": "C",
+          "text": "250 %"
+        },
+        {
+          "key": "D",
+          "text": "40 %"
+        }
+      ],
+      "answer": "B",
+      "category": "adatleolvasas",
+      "explanation": "Helyes: 150 %. (100 − 40) : 40 × 100 = 150 %. A változást mindig a kiinduló értékhez viszonyítjuk.",
+      "wrongOptions": {
+        "A": "A 60 az abszolút különbség, nem százalék.",
+        "C": "A 250 % azt mutatja, hogy a végérték a kiinduló érték hány százaléka (100 : 40), nem a növekedést.",
+        "D": "A 40 a kiinduló érték, nem a változás mértéke."
+      }
+    },
+    {
+      "id": "3",
+      "kind": "choice",
+      "prompt": "Munkanélküliségi ráta (USA): 1929: 3 %, 1933: 25 %, 1937: 14 %, 1938: 19 %. Melyik állítás igaz?",
+      "options": [
+        {
+          "key": "A",
+          "text": "1937 és 1938 között a ráta újra emelkedett."
+        },
+        {
+          "key": "B",
+          "text": "A ráta 1929 után folyamatosan csökkent."
+        },
+        {
+          "key": "C",
+          "text": "1933-ban minden második munkavállaló munkanélküli volt."
+        },
+        {
+          "key": "D",
+          "text": "1938-ban alacsonyabb volt a ráta, mint 1937-ben."
+        }
+      ],
+      "answer": "A",
+      "category": "adatleolvasas",
+      "explanation": "Helyes: A. 14 %-ról 19 %-ra nőtt – ez az 1937–38-as új visszaesés.",
+      "wrongOptions": {
+        "B": "1929 és 1933 között drámaian nőtt (3 % → 25 %).",
+        "C": "A 25 % minden negyedik, nem minden második munkavállalót jelent.",
+        "D": "1938-ban 19 %, 1937-ben 14 % volt, tehát magasabb."
+      }
+    },
+    {
+      "id": "4",
+      "kind": "choice",
+      "prompt": "Egy város lakossága 200 000-ről 400 000-re nőtt, egy nemzetiség aránya közben 50 %-ról 40 %-ra csökkent. Mi történt a nemzetiség lélekszámával?",
+      "options": [
+        {
+          "key": "A",
+          "text": "nőtt (100 000-ről 160 000-re)"
+        },
+        {
+          "key": "B",
+          "text": "csökkent"
+        },
+        {
+          "key": "C",
+          "text": "nem változott"
+        },
+        {
+          "key": "D",
+          "text": "az adatokból nem számítható ki"
+        }
+      ],
+      "answer": "A",
+      "category": "adatleolvasas",
+      "explanation": "Helyes: A. 200 000 × 0,5 = 100 000; 400 000 × 0,4 = 160 000 – a létszám nőtt, bár az arány csökkent.",
+      "wrongOptions": {
+        "B": "Csak az arány csökkent, a létszám nőtt (160 000 > 100 000).",
+        "C": "A létszám 60 000 fővel nőtt.",
+        "D": "A teljes népesség és az arány ismeretében a létszám kiszámítható."
+      }
+    },
+    {
+      "id": "5",
+      "kind": "text",
+      "prompt": "A táblázat: „Népesség (ezer fő): 1890: 492”. Hány fő ez?",
+      "answer": [
+        "492 000",
+        "492000",
+        "492 ezer",
+        "492 000 fő",
+        "492 ezer fő"
+      ],
+      "category": "adatleolvasas",
+      "explanation": "Helyes: 492 000 fő. Az „ezer fő” mértékegység miatt a számot ezerrel kell szorozni."
+    }
+  ],
+  "relatedCategories": [
+    "forras-ertelmezes",
+    "topografia"
+  ]
+}

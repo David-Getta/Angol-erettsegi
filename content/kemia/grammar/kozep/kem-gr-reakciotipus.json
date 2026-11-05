@@ -1,0 +1,292 @@
+{
+  "schemaVersion": 1,
+  "id": "kem-gr-reakciotipus",
+  "subject": "kemia",
+  "revision": 1,
+  "level": "kozep",
+  "source": "generated",
+  "topic": "nyelvtan",
+  "title": "Reakciótípusok, sav–bázis, redoxi",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "grammar",
+  "type": "lesson",
+  "category": "reakciotipus",
+  "summaryHu": "A reakciókat többféleképpen csoportosítjuk: a részecskeátmenet szerint (sav–bázis = protonátmenet, redoxi = elektronátmenet), a résztvevők száma szerint (egyesülés, bomlás, cserebomlás), a szerves kémiában szubsztitúció, addíció, elimináció, kondenzáció, hidrolízis. A tesztfeladatok gyakran kérdezik a sav–bázis párokat, az oxidációs számokat, a pH-t és az oldatok kémhatását. A hibák fő forrása, hogy a sav–bázis és a redoxi fogalmakat összemossák, vagy az oxidációs számot rosszul határozzák meg.",
+  "rules": [
+    {
+      "title": "Sav–bázis reakciók a Brønsted-elmélet szerint",
+      "explanation": "Sav az a részecske, amely protont ad le (protondonor), bázis az, amely protont vesz fel (protonakceptor). A protonátadás után a savból a konjugált bázisa, a bázisból a konjugált sava lesz: a reakcióban mindig két sav–bázis pár vesz részt. Ugyanaz a részecske a partnertől függően lehet sav és bázis is (amfoter részecske: H₂O, HCO₃⁻, HSO₄⁻).",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "HCl + H₂O → H₃O⁺ + Cl⁻",
+          "hu": "Párok: HCl/Cl⁻ és H₃O⁺/H₂O; itt a víz bázis."
+        },
+        {
+          "en": "NH₃ + H₂O ⇌ NH₄⁺ + OH⁻",
+          "hu": "Itt a víz sav, az ammónia bázis."
+        }
+      ]
+    },
+    {
+      "title": "Az oldatok kémhatása és a pH",
+      "explanation": "pH = −lg[H₃O⁺]; 25 °C-on [H₃O⁺] · [OH⁻] = 1,0 · 10⁻¹⁴, így pH + pOH = 14. Semleges oldatban pH = 7, savasban pH < 7, lúgosban pH > 7. Erős savnál (HCl, HNO₃) és erős bázisnál (NaOH, KOH) teljes disszociációval számolunk: a 0,01 mol/dm³-es sósav pH-ja 2. Egységnyi pH-változás tízszeres koncentrációváltozást jelent.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "0,001 mol/dm³ NaOH: [OH⁻] = 10⁻³ mol/dm³ → pOH = 3 → pH = 11"
+        },
+        {
+          "en": "0,05 mol/dm³ H₂SO₄ (teljes disszociációt feltételezve): [H₃O⁺] = 0,1 mol/dm³ → pH = 1"
+        }
+      ]
+    },
+    {
+      "title": "Sók hidrolízise",
+      "explanation": "A sók oldatának kémhatása attól függ, milyen erősségű savból és bázisból származnak. Erős sav és erős bázis sója (NaCl, KNO₃): semleges. Gyenge sav és erős bázis sója (Na₂CO₃, CH₃COONa): lúgos, mert az anion bázisként protont vesz fel a víztől. Erős sav és gyenge bázis sója (NH₄Cl): savas, mert a kation protont ad le a víznek.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "CO₃²⁻ + H₂O ⇌ HCO₃⁻ + OH⁻ → lúgos"
+        },
+        {
+          "en": "NH₄⁺ + H₂O ⇌ NH₃ + H₃O⁺ → savas"
+        }
+      ]
+    },
+    {
+      "title": "Redoxireakciók és az oxidációs szám",
+      "explanation": "Oxidáció: elektronleadás, az oxidációs szám nő; redukció: elektronfelvétel, az oxidációs szám csökken. Az oxidálószer redukálódik, a redukálószer oxidálódik. Az oxidációs szám szabályai: elemben 0; egyszerű ionban az ion töltése; vegyületben a hidrogéné általában +1 (fémhidridekben −1), az oxigéné −2 (peroxidokban −1), a fluoré −1; semleges vegyületben az oxidációs számok összege 0, összetett ionban az ion töltése.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "H₂SO₄: 2 · (+1) + x + 4 · (−2) = 0 → x(S) = +6"
+        },
+        {
+          "en": "Cr₂O₇²⁻: 2x + 7 · (−2) = −2 → x(Cr) = +6"
+        },
+        {
+          "en": "H₂O₂: O = −1",
+          "hu": "Peroxidban az oxigén oxidációs száma −1."
+        }
+      ]
+    },
+    {
+      "title": "Szerves reakciótípusok",
+      "explanation": "Szubsztitúció: atom vagy atomcsoport cseréje (alkánok halogénezése fényben, a benzol nitrálása). Addíció: többszörös kötésre kapcsolódás (alkének + Br₂, H₂, HCl, H₂O). Elimináció: kis molekula kilépése és kettős kötés kialakulása (alkoholból víz kilépésével alkén). Kondenzáció: két molekula összekapcsolódása kis molekula kilépésével (észterképződés). Hidrolízis: bontás víz hatására. Makromolekulák képződése: polimerizáció és polikondenzáció.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "CH₄ + Cl₂ → CH₃Cl + HCl (szubsztitúció, fény)"
+        },
+        {
+          "en": "CH₂=CH₂ + HBr → CH₃–CH₂Br (addíció)"
+        },
+        {
+          "en": "CH₃–CH₂–OH → CH₂=CH₂ + H₂O (elimináció, tömény H₂SO₄, hevítés)"
+        }
+      ]
+    },
+    {
+      "title": "A savak és bázisok erőssége",
+      "explanation": "A sav erősségét a savállandó (Ks) jellemzi: minél nagyobb, annál erősebb a sav, és annál gyengébb a konjugált bázisa. Az erősebb sav kiszorítja a gyengébbet a sójából (CaCO₃ + 2 HCl → CaCl₂ + H₂O + CO₂). Gyenge sav oxóniumion-koncentrációja, ha a disszociációfok kicsi: [H₃O⁺] ≈ √(Ks · c).",
+      "emeltOnly": true,
+      "examples": [
+        {
+          "en": "0,10 mol/dm³ ecetsav, Ks = 1,8 · 10⁻⁵: [H₃O⁺] ≈ √(1,8 · 10⁻⁶) = 1,34 · 10⁻³ mol/dm³ → pH ≈ 2,87",
+          "hu": "A másodfokú egyenlet pontos megoldásával pH = 2,88 – a közelítés jó, mert a disszociációfok csak kb. 1,3 %."
+        }
+      ]
+    }
+  ],
+  "commonMistakes": [
+    {
+      "wrong": "Az NH₃ + H₂O ⇌ NH₄⁺ + OH⁻ reakcióban a víz bázis.",
+      "right": "Ebben a reakcióban a víz sav, az ammónia bázis.",
+      "why": "A víz adja le a protont (H₂O → OH⁻), tehát protondonor, azaz sav; az ammónia veszi fel (NH₃ → NH₄⁺)."
+    },
+    {
+      "wrong": "A nátrium-karbonát só, ezért oldata semleges.",
+      "right": "A nátrium-karbonát oldata lúgos.",
+      "why": "Gyenge sav (szénsav) és erős bázis sója: a karbonátion hidrolizál, hidroxidionok keletkeznek."
+    },
+    {
+      "wrong": "Az oxidálószer oxidálódik.",
+      "right": "Az oxidálószer redukálódik (elektront vesz fel), és ezzel a partnerét oxidálja.",
+      "why": "Az elnevezés azt mondja meg, mit tesz a partnerrel, nem azt, mi történik vele."
+    },
+    {
+      "wrong": "A 0,1 mol/dm³ koncentrációjú ecetsav pH-ja 1.",
+      "right": "A pH kb. 2,9.",
+      "why": "Az ecetsav gyenge sav, csak kb. 1 %-a disszociál, ezért [H₃O⁺] sokkal kisebb 0,1 mol/dm³-nél; pH = 1 csak erős savra igaz."
+    },
+    {
+      "wrong": "A kénsavban a kén oxidációs száma +4.",
+      "right": "+6",
+      "why": "2 · (+1) + x + 4 · (−2) = 0 → x = +6; +4 a kén-dioxidban és a kénessavban (H₂SO₃) van."
+    }
+  ],
+  "examTips": [
+    "Sav–bázis pároknál a két tagnak pontosan egy protonban kell különböznie (H₂SO₄/HSO₄⁻, nem H₂SO₄/SO₄²⁻).",
+    "Oxidációs szám meghatározásánál írd fel az egyenletet (összeg = 0, illetve az ion töltése), ne fejben számolj.",
+    "Négyféle asszociációs feladatokban gyakori kérdés, hogy egy reakció sav–bázis vagy redoxi folyamat-e: nézd meg, változik-e valamelyik atom oxidációs száma."
+  ],
+  "practice": [
+    {
+      "id": "1",
+      "kind": "choice",
+      "prompt": "Mi a hidrogén-karbonát-ion (HCO₃⁻) konjugált bázisa?",
+      "options": [
+        {
+          "key": "A",
+          "text": "CO₃²⁻"
+        },
+        {
+          "key": "B",
+          "text": "H₂CO₃"
+        },
+        {
+          "key": "C",
+          "text": "CO₂"
+        },
+        {
+          "key": "D",
+          "text": "OH⁻"
+        }
+      ],
+      "answer": "A",
+      "category": "reakciotipus",
+      "explanation": "Helyes: CO₃²⁻. A konjugált bázis egy protonnal kevesebbet tartalmaz: HCO₃⁻ → CO₃²⁻ + H⁺.",
+      "wrongOptions": {
+        "B": "A H₂CO₃ egy protonnal TÖBBET tartalmaz, ez a HCO₃⁻ konjugált sava.",
+        "C": "A CO₂ nem protonleadás terméke, hanem a szénsav bomlásterméke.",
+        "D": "A hidroxidion a víz konjugált bázisa."
+      }
+    },
+    {
+      "id": "2",
+      "kind": "text",
+      "prompt": "Mekkora a 0,0010 mol/dm³ koncentrációjú sósav pH-ja?",
+      "answer": [
+        "3",
+        "3,0",
+        "3.0",
+        "3,00",
+        "3.00"
+      ],
+      "category": "reakciotipus",
+      "explanation": "Helyes: 3. A sósav erős sav, teljesen disszociál: [H₃O⁺] = 1,0 · 10⁻³ mol/dm³, pH = −lg 10⁻³ = 3.",
+      "maxWords": 1
+    },
+    {
+      "id": "3",
+      "kind": "choice",
+      "prompt": "Melyik só vizes oldata savas kémhatású?",
+      "options": [
+        {
+          "key": "A",
+          "text": "NaCl"
+        },
+        {
+          "key": "B",
+          "text": "NH₄Cl"
+        },
+        {
+          "key": "C",
+          "text": "Na₂CO₃"
+        },
+        {
+          "key": "D",
+          "text": "KNO₃"
+        }
+      ],
+      "answer": "B",
+      "category": "reakciotipus",
+      "explanation": "Helyes: NH₄Cl. Erős sav és gyenge bázis sója: az ammóniumion protont ad át a víznek (NH₄⁺ + H₂O ⇌ NH₃ + H₃O⁺).",
+      "wrongOptions": {
+        "A": "Erős sav és erős bázis sója, nem hidrolizál, oldata semleges.",
+        "C": "A karbonátion hidrolízise miatt oldata lúgos.",
+        "D": "Erős sav és erős bázis sója, oldata semleges."
+      }
+    },
+    {
+      "id": "4",
+      "kind": "text",
+      "prompt": "Mennyi a mangán oxidációs száma a kálium-permanganátban (KMnO₄)?",
+      "answer": [
+        "+7",
+        "7"
+      ],
+      "category": "reakciotipus",
+      "explanation": "Helyes: +7. (+1) + x + 4 · (−2) = 0 → x = +7.",
+      "maxWords": 1
+    },
+    {
+      "id": "5",
+      "kind": "choice",
+      "prompt": "Melyik reakció redoxireakció?",
+      "options": [
+        {
+          "key": "A",
+          "text": "NaOH + HCl → NaCl + H₂O"
+        },
+        {
+          "key": "B",
+          "text": "AgNO₃ + NaCl → AgCl + NaNO₃"
+        },
+        {
+          "key": "C",
+          "text": "Zn + CuSO₄ → ZnSO₄ + Cu"
+        },
+        {
+          "key": "D",
+          "text": "CaCO₃ → CaO + CO₂"
+        }
+      ],
+      "answer": "C",
+      "category": "reakciotipus",
+      "explanation": "Helyes: C. A cink oxidációs száma 0-ról +2-re nő, a rézé +2-ről 0-ra csökken – elektronátmenet történik.",
+      "wrongOptions": {
+        "A": "Közömbösítés (protonátmenet), egyik atom oxidációs száma sem változik.",
+        "B": "Csapadékképződés (ioncsere), az oxidációs számok nem változnak.",
+        "D": "Hőbomlás, de nem redoxireakció: a Ca +2, a C +4, az O −2 marad."
+      }
+    },
+    {
+      "id": "6",
+      "kind": "choice",
+      "prompt": "Milyen reakciótípusba tartozik a CH₂=CH₂ + H₂O → CH₃–CH₂–OH reakció?",
+      "options": [
+        {
+          "key": "A",
+          "text": "szubsztitúció"
+        },
+        {
+          "key": "B",
+          "text": "addíció"
+        },
+        {
+          "key": "C",
+          "text": "elimináció"
+        },
+        {
+          "key": "D",
+          "text": "kondenzáció"
+        }
+      ],
+      "answer": "B",
+      "category": "reakciotipus",
+      "explanation": "Helyes: addíció. A kettős kötés felszakad, és a vízmolekula részei (H és OH) a két szénatomhoz kapcsolódnak; egyetlen termék keletkezik.",
+      "wrongOptions": {
+        "A": "Szubsztitúcióban egy atom vagy csoport kicserélődik, és két termék keletkezik; itt egy termék van.",
+        "C": "Az elimináció ennek a fordítottja: az alkoholból lép ki víz.",
+        "D": "Kondenzációban kis molekula (pl. víz) LÉP KI, itt viszont a víz beépül."
+      }
+    }
+  ],
+  "relatedCategories": [
+    "reakcioegyenlet",
+    "egyensuly-kinetika"
+  ]
+}

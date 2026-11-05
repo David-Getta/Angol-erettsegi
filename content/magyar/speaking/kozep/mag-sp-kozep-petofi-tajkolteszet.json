@@ -1,0 +1,68 @@
+{
+  "schemaVersion": 1,
+  "id": "mag-sp-kozep-petofi-tajkolteszet",
+  "subject": "magyar",
+  "revision": 1,
+  "level": "kozep",
+  "source": "generated",
+  "topic": "kotelezo-szerzok",
+  "title": "Petőfi Sándor tájköltészete",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "speaking",
+  "type": "irodalom-tetel",
+  "partNumber": 1,
+  "instructionsHu": "Mutassa be Petőfi Sándor tájköltészetét! A felelet kiindulópontja Az alföld című vers megadott részlete; ezt értelmezze, és kapcsolja hozzá Petőfi legalább egy másik tájversét, valamint a népiesség programját.",
+  "prompts": [
+    "Petőfi tájverseinek helye az életműben: a népiesség és a romantika",
+    "A részlet értelmezése: a Kárpátok és az alföld szembeállítása, a szabadság élménye, a költői képek",
+    "Kapcsolódás Petőfi egy másik tájverséhez (pl. A Tisza, A puszta, télen, Kiskunság)",
+    "Mit jelent a táj Petőfinél: a szülőföld és az otthon élménye"
+  ],
+  "sources": [
+    {
+      "title": "Petőfi Sándor: Az alföld (részlet, 1844)",
+      "text": "Mit nekem te zordon Kárpátoknak\nFenyvesekkel vadregényes tája!\nTán csodállak, ámde nem szeretlek,\nS képzetem hegyvölgyedet nem járja.\n\nLenn az alföld tengersík vidékin\nOtt vagyok honn, ott az én világom;\nBörtönéből szabadult sas lelkem,\nHa a rónák végtelenjét látom."
+    }
+  ],
+  "keyPoints": [
+    "Petőfi (1823–1849) a népiesség költője: a népi élet, a népdal hangja és a magyar táj a magas költészet rangjára emelkedik.",
+    "Tájversei a szülőföld, az alföld személyes élményéből születnek; a táj nála valóságos, konkrét, nem csupán háttér.",
+    "Az alföld (1844) a romantika kedvelt „vadregényes” hegyvidékével szemben a síkságot vallja otthonának.",
+    "Az „ámde” kötőszó ellentétet teremt: a Kárpátokat csodálja, de nem szereti – a csodálat és a szeretet szembeállítása.",
+    "A „tengersík” összetétel és a „rónák végtelenje” a tágasságot, a „Börtönéből szabadult sas lelkem” metafora a szabadság élményét fejezi ki.",
+    "A vers aposztrophéval (a Kárpátok megszólításával) indul, és személyes vallomássá válik („Ott vagyok honn, ott az én világom”).",
+    "Más tájversek: A Tisza (1847) – a folyó békés és áradó képe; A puszta, télen – a téli puszta kietlensége.",
+    "A táj Petőfinél a szabadság és az otthon jelképe, és összefonódik a hazaszeretettel."
+  ],
+  "speakingSeconds": 600,
+  "prepSeconds": 1200,
+  "usefulPhrases": [
+    { "en": "népiesség", "hu": "a népi élet, nyelv és táj bevonása a műköltészetbe – Petőfi és Arany programja" },
+    { "en": "aposztrophé", "hu": "egy tárgy, táj vagy elvont fogalom megszólítása a versben" },
+    { "en": "A részletben azt figyelhetjük meg, hogy …", "hu": "átvezetés a forrás elemzéséhez" },
+    { "en": "Ez a kép azt fejezi ki, hogy …", "hu": "költői kép értelmezése – ne csak megnevezd az eszközt!" },
+    { "en": "Hasonló gondolat jelenik meg … című versében is.", "hu": "kapcsolódás egy másik műhöz" }
+  ],
+  "sampleAnswer": {
+    "turns": [
+      {
+        "speaker": "candidate",
+        "text": "Petőfi Sándor a 19. század első felének, a reformkornak a költője, aki rövid, alig huszonhat éves élete alatt a magyar líra megújítója lett. Költészetének egyik legfontosabb programja a népiesség: a népi élet, a népdal egyszerű hangja és a magyar táj a magas költészet rangjára emelkedik nála. Tájversei a szülőföld személyes élményéből születnek, a táj nála nem díszlet, hanem a lélek otthona.\n\nA tételhez kapott részlet Az alföld című, 1844-ben írt verséből való. A vers a Kárpátok megszólításával, aposztrophéval indul: „Mit nekem te zordon Kárpátoknak / Fenyvesekkel vadregényes tája!” A „zordon” és a „vadregényes” jelző a romantika kedvelt hegyvidéki tájeszményét idézi, a költő azonban szembefordul vele. A harmadik sorban az „ámde” kötőszó éles ellentétet teremt: „Tán csodállak, ámde nem szeretlek”. A csodálat esztétikai élmény, a szeretet viszont érzelmi kötődés, és Petőfi az utóbbit választja.\n\nA második versszakban megjelenik az alföld: a „tengersík” összetett szó a síkságot a tengerhez hasonlítja, a végtelen tágasságot érzékelteti. A legerősebb kép a „Börtönéből szabadult sas lelkem” metafora: a lélek sasként száll fel, amikor a rónák végtelenjét látja. A sík vidék tehát Petőfinek nem egyhangú, hanem a szabadság élményét adja. A beszélő itt van „honn”, ez az ő világa.\n\nHasonló élmény szólal meg A Tisza című versében is, amelyben a nyugodt folyó képe után a váratlan áradás tör ki, vagy A puszta, télen című költeményben, ahol a téli puszta kietlensége hangulatot és sorsot is kifejez. Összességében Petőfi tájköltészetében a táj a szülőföld, az otthon és a szabadság jelképe, és szorosan összefonódik a hazaszeretettel."
+      },
+      {
+        "speaker": "examiner",
+        "text": "Miben különbözik Petőfi tájszemlélete a romantika jellegzetes tájeszményétől?"
+      },
+      {
+        "speaker": "candidate",
+        "text": "A romantika a fenséges, vad, félelmetes tájat kedvelte, például a hegyeket és a viharos tengert. Petőfi ezzel szemben a hétköznapinak tartott síkságban fedezi fel a szépséget, és a tájat személyes kötődés alapján értékeli: nem az a szép, ami lenyűgöző, hanem ami az övé."
+      }
+    ],
+    "notes": [
+      "Tartalom: a felelet elhelyezi a verset az életműben (népiesség, reformkor), a részletet sorról sorra értelmezi (jelzők, ellentét, metafora), és egy másik tájverssel is összekapcsolja.",
+      "A forrás használata: a vizsgázó pontosan idéz, és minden idézet után megmondja, mit fejez ki a kép – ez a tartalmi pontszám kulcsa.",
+      "Nyelvi minőség: összefüggő, jól tagolt előadás (bevezetés – részletelemzés – kapcsolódás – összegzés), szakszavak (aposztrophé, metafora, népiesség) természetes használatával."
+    ]
+  }
+}

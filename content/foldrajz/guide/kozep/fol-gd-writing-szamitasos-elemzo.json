@@ -1,0 +1,131 @@
+{
+  "schemaVersion": 1,
+  "id": "fol-gd-writing-szamitasos-elemzo",
+  "subject": "foldrajz",
+  "revision": 1,
+  "level": "kozep",
+  "source": "generated",
+  "topic": "utmutato",
+  "title": "Számításos-elemző feladat",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "guide",
+  "type": "writing",
+  "target": "szamitasos-elemzo",
+  "summaryHu": "A számításos-elemző feladatban földrajzi számításokat (méretarány, időzóna, helyi idő, delelési magasság, népsűrűség, népesedési mutatók) kell elvégezned, majd az eredményeket értelmezned. A vizsgáztató a számítás menetét, a mértékegységet és a kerekítést is értékeli, valamint azt, hogy az eredményből helyes földrajzi következtetést vonsz-e le.",
+  "steps": [
+    {
+      "title": "Gyűjtsd ki az adatokat",
+      "explanation": "Írd fel külön az összes megadott adatot mértékegységgel, és jelöld, melyik kérdéshez kell.",
+      "tips": [
+        "Figyelj a nyári/téli időszámításra és a félgömbre."
+      ]
+    },
+    {
+      "title": "Írd fel a képletet",
+      "explanation": "Minden számításnál először a képletet írd le szavakkal vagy jelekkel, utána helyettesíts be.",
+      "tips": [
+        "népsűrűség = népesség : terület",
+        "delelési magasság = 90° − szélesség ± 23,5°"
+      ]
+    },
+    {
+      "title": "Számolj mértékegységekkel",
+      "explanation": "A mértékegységeket a számítás során is írd ki, és váltsd át, ahol kell (cm → km, perc → óra, ‰ → %).",
+      "tips": [
+        "1 km = 100 000 cm; 30 perc = 0,5 óra; 24 ‰ = 2,4%"
+      ]
+    },
+    {
+      "title": "Ellenőrizd és kerekíts",
+      "explanation": "A végeredményt a kért pontosságra kerekítsd, és ellenőrizd a nagyságrendet és az irányt (keletre előbbre jár az idő).",
+      "tips": [
+        "Időzónánál rajzolj számegyenest."
+      ]
+    },
+    {
+      "title": "Értelmezd az eredményt",
+      "explanation": "Egy-két mondatban mondd meg, mit jelent az eredmény földrajzilag (pl. a népesség gyorsan nő, a Nap magasabban delel, ezért erősebb a felmelegedés).",
+      "tips": []
+    }
+  ],
+  "phrases": [
+    {
+      "group": "Képlet",
+      "en": "valós távolság = térképi távolság × méretarányszám",
+      "hu": "méretarány"
+    },
+    {
+      "group": "Képlet",
+      "en": "1° = 4 perc; 15° = 1 óra",
+      "hu": "helyi idő"
+    },
+    {
+      "group": "Képlet",
+      "en": "időkülönbség = a két zóna UTC-eltérésének különbsége",
+      "hu": "zónaidő"
+    },
+    {
+      "group": "Képlet",
+      "en": "delelési magasság = 90° − földrajzi szélesség ± 23,5°",
+      "hu": "napfordulók"
+    },
+    {
+      "group": "Képlet",
+      "en": "természetes szaporodás = születési − halálozási arányszám",
+      "hu": "‰"
+    },
+    {
+      "group": "Képlet",
+      "en": "éves változás = népesség × szaporodás (‰) : 1000",
+      "hu": "fő/év"
+    },
+    {
+      "group": "Képlet",
+      "en": "megkettőződési idő ≈ 70 : szaporodás (%)",
+      "hu": "70-es szabály"
+    },
+    {
+      "group": "Értelmezés",
+      "en": "Az eredmény azt mutatja, hogy …",
+      "hu": "a számítás földrajzi értelmezése"
+    }
+  ],
+  "mistakes": [
+    {
+      "wrong": "Csak a végeredmény: „15:00”.",
+      "right": "„21:00 − 6 óra = 15:00 (New York 6 zónával nyugatabbra van)”.",
+      "why": "A menet hiánya pontlevonás; hibás eredménynél a menetért még járhat részpont."
+    },
+    {
+      "wrong": "„Budapest 12:00, New York (UTC−5) 18:00.”",
+      "right": "„New York 6 órával nyugatabbra van: 12 − 6 = 6:00.”",
+      "why": "Nyugat felé haladva vissza kell számolni."
+    },
+    {
+      "wrong": "„Szaporodás: 24 ‰, tehát 70 : 24 ≈ 3 év alatt kétszereződik.”",
+      "right": "„24 ‰ = 2,4%; 70 : 2,4 ≈ 29 év.”",
+      "why": "A 70-es szabály százalékkal működik; a ‰ és a % keverése tízszeres hibát okoz."
+    }
+  ],
+  "checklist": [
+    "Minden számításnál leírtam a képletet és a behelyettesítést.",
+    "A mértékegységeket átváltottam és kiírtam.",
+    "A kért pontosságra kerekítettem.",
+    "Az időzónás és helyi idős feladatnál ellenőriztem az irányt.",
+    "Az eredményeket földrajzilag értelmeztem."
+  ],
+  "timing": "Középszinten kb. 15 perc: 3 perc az adatok kigyűjtése, 9 perc számolás és értelmezés, 3 perc ellenőrzés. Emelt szinten kb. 30 perc, mert több lépés és értelmezés kell.",
+  "example": {
+    "title": "Minta (emelt, részlet): delelés Budapesten zónaidő szerint",
+    "text": "Budapest 19,0° − 15,0° = 4,0°-kal keletebbre van a zónaidőt meghatározó k. h. 15°-os hosszúsági körnél, ezért a Nap Budapesten 4,0 × 4 = 16 perccel korábban delel. Ott zónaidő szerint 12:00-kor delel, Budapesten tehát 11:44-kor.",
+    "notes": [
+      "A különbség kiszámítása, a szorzás és az irány (keletebbre → korábban) is le van írva.",
+      "Az eredmény pontos időpont, mértékegységgel."
+    ]
+  },
+  "levelNotes": {
+    "kozep": "Középszinten egyszerűbb számítások (méretarány, időzóna, átlagsebesség, népsűrűség, százalékos változás) és rövid értelmezés jellemző.",
+    "emelt": "Emelt szinten delelési magasság, helyi idő és zónaidő együttes számítása, demográfiai mutatók és megkettőződési idő, valamint részletes értelmezés is szerepel."
+  }
+}

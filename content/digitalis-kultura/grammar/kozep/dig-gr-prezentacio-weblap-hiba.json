@@ -1,0 +1,297 @@
+{
+  "schemaVersion": 1,
+  "id": "dig-gr-prezentacio-weblap-hiba",
+  "subject": "digitalis-kultura",
+  "revision": 1,
+  "level": "kozep",
+  "source": "generated",
+  "topic": "nyelvtan",
+  "title": "Prezentáció és weblap elemei",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "grammar",
+  "type": "lesson",
+  "category": "prezentacio-weblap-hiba",
+  "summaryHu": "A vizuális feladatban (bemutató, grafika vagy weblap) a javítók azt nézik, hogy minden kért elem a megfelelő helyen és módon készült-e el: diaminta, elrendezés, animáció, áttűnés, hivatkozás, illetve weblapnál érvényes HTML-szerkezet és külső stíluslap. Pontot ér, ha a közös elemeket (háttér, logó, címformátum) egyszer, a mintán állítod be, és ha a weblap a feltöltés után is működne (relatív hivatkozások, alt szövegek).",
+  "rules": [
+    {
+      "title": "Diaminta és elrendezések",
+      "explanation": "A minden diára érvényes beállítások (háttér, a címek és a szövegek formátuma, logó, élőláb) helye a diaminta (Nézet > Diaminta; Impress: Nézet > Diaminta). A dián belüli elrendezést helyőrzők adják (Címdia, Cím és tartalom, Két tartalomrész); ezekbe kerül a szöveg és a kép, nem külön szövegdobozokba.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "Nézet > Diaminta > a legfelső (fő) dia",
+          "hu": "ami ide kerül, minden elrendezésen megjelenik"
+        },
+        {
+          "en": "Kezdőlap > Elrendezés > Két tartalomrész",
+          "hu": "kép és szöveg egymás mellett"
+        }
+      ]
+    },
+    {
+      "title": "Animáció és áttűnés",
+      "explanation": "Az áttűnés (diaáttűnés) a diák közötti váltás effektusa; az animáció a dián belüli objektum megjelenése, kiemelése vagy eltűnése. Felsorolásnál beállítható, hogy az elemek bekezdésenként, kattintásra jelenjenek meg. A „minden diára” kérésnél az Alkalmazás mindegyikre gombot használd.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "Animációk > Megjelenés; Effektus beállításai: Bekezdésenként",
+          "hu": "a lista elemei egyenként jelennek meg"
+        },
+        {
+          "en": "Áttűnések > Áttűnés > Alkalmazás mindegyikre",
+          "hu": "ugyanaz a diaváltás minden dián"
+        }
+      ]
+    },
+    {
+      "title": "A HTML-dokumentum szerkezete",
+      "explanation": "Egy érvényes HTML5-oldal váza: <!DOCTYPE html>, <html lang=\"hu\">, a <head> részben a <meta charset=\"UTF-8\">, a <title> és a stíluslap csatolása, a <body> részben a látható tartalom. Címsorok: <h1>–<h6>, bekezdés: <p>, lista: <ul>/<ol> és <li>, hivatkozás: <a href=\"…\">, kép: <img src=\"…\" alt=\"…\">, táblázat: <table>, <tr>, <th>, <td>.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "<link rel=\"stylesheet\" href=\"stilus.css\">",
+          "hu": "külső stíluslap csatolása a head részben"
+        },
+        {
+          "en": "<img src=\"kepek/to.jpg\" alt=\"A tó naplementében\">",
+          "hu": "kép relatív útvonallal és helyettesítő szöveggel"
+        },
+        {
+          "en": "<a href=\"#jegyek\">Jegyek</a> … <section id=\"jegyek\">",
+          "hu": "belső hivatkozás az oldal egy részére"
+        }
+      ]
+    },
+    {
+      "title": "CSS: szelektorok és tulajdonságok",
+      "explanation": "A stílusszabály szerkezete: szelektor { tulajdonság: érték; }. Elemszelektor (h1), osztályszelektor (.kiemelt – a HTML-ben class=\"kiemelt\"), azonosító-szelektor (#fejlec – id=\"fejlec\"). Gyakori tulajdonságok: color (szövegszín), background-color (háttérszín), font-family, font-size, font-weight, text-align, width, margin, padding, border.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "h1 { color: #7a2e1d; text-align: center; }",
+          "hu": "a főcím színe és igazítása"
+        },
+        {
+          "en": ".kiemelt { font-weight: bold; background-color: #ffe680; }",
+          "hu": "osztály formázása – több elemre is ráhúzható"
+        }
+      ]
+    },
+    {
+      "title": "Hivatkozások és útvonalak",
+      "explanation": "Relatív útvonal: a hivatkozó fájl helyéhez képest (kepek/foto.jpg, ../index.html) – feltöltés után is működik, ha a mappaszerkezet megmarad. Abszolút helyi útvonal (C:\\Users\\…) a látogatónál nem működik. Külső oldalra teljes URL-lel hivatkozunk (https://…); új lapon nyitáshoz target=\"_blank\".",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "href=\"https://muvhaz.example\" target=\"_blank\"",
+          "hu": "külső oldal új lapon"
+        },
+        {
+          "en": "src=\"../kepek/logo.png\"",
+          "hu": "egy mappával feljebb lévő kepek mappa"
+        }
+      ]
+    },
+    {
+      "title": "Emelt szint: szemantikus elemek és dobozmodell",
+      "explanation": "Emelt szinten elvárt a szemantikus szerkezet (header, nav, main, section, article, figure, figcaption, footer) és a dobozmodell ismerete: a tartalom körül belső margó (padding), szegély (border), külső margó (margin). A tartalom középre igazítása: max-width és margin: 0 auto; vízszintes menü: display: flex.",
+      "emeltOnly": true,
+      "examples": [
+        {
+          "en": "nav ul { display: flex; gap: 20px; list-style: none; }",
+          "hu": "vízszintes menü felsorolásjel nélkül"
+        },
+        {
+          "en": "body { max-width: 960px; margin: 0 auto; }",
+          "hu": "középre igazított, korlátozott szélességű oldal"
+        }
+      ]
+    }
+  ],
+  "commonMistakes": [
+    {
+      "wrong": "A logót minden diára külön beillesztem.",
+      "right": "A logót a diamintára teszem.",
+      "why": "Ha a feladat „minden dián” kéri, a mintán kell beállítani; a diánként beillesztett kép könnyen elcsúszik vagy kimarad, és a módszer pontja elvész."
+    },
+    {
+      "wrong": "A felsorolás elemeinek megjelenését áttűnéssel oldom meg.",
+      "right": "Animációt (pl. Megjelenés) állítok be bekezdésenként.",
+      "why": "Az áttűnés a diák közti váltásra vonatkozik; a dián belüli elemek megjelenése animáció."
+    },
+    {
+      "wrong": "<img src=\"C:\\Users\\Anna\\web\\foto1.jpg\">",
+      "right": "<img src=\"kepek/foto1.jpg\" alt=\"Hajnali köd a folyóparton\">",
+      "why": "Az abszolút helyi útvonal csak a saját gépen működik, és a helyettesítő szöveg (alt) hiánya is pontlevonás."
+    },
+    {
+      "wrong": "<h1 style=\"color: red\">Cím</h1>",
+      "right": "A stilus.css-ben: h1 { color: red; }",
+      "why": "Ha a feladat külső stíluslapot kér, a style attribútumos formázás nem ér pontot, és nehezen módosítható."
+    },
+    {
+      "wrong": "A háttérszínt a color tulajdonsággal állítom be.",
+      "right": "A háttérszín: background-color; a color a szöveg színe.",
+      "why": "A két tulajdonság összekeverése a leggyakoribb CSS-hiba."
+    }
+  ],
+  "examTips": [
+    "Prezentációnál először a diaméretet és a diamintát állítsd be, csak utána készítsd el a diákat; a végén diavetítésben próbáld ki az animációt és a hivatkozásokat.",
+    "Weblapnál a feladat végén nyisd meg az oldalt böngészőben: működnek-e a hivatkozások, megjelennek-e a képek, és nincs-e ékezethiba (charset).",
+    "A javítási útmutató elemenként pontoz: egy kimaradt alt szöveg vagy title csak egy-egy pont, de ha a stíluslap nincs csatolva, az összes CSS-pont elveszhet."
+  ],
+  "practice": [
+    {
+      "kind": "choice",
+      "prompt": "Mi a különbség az animáció és az áttűnés között?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Nincs különbség, a kettő ugyanaz."
+        },
+        {
+          "key": "B",
+          "text": "Az áttűnés a diák közötti váltás effektusa, az animáció egy dián lévő objektum mozgása, megjelenése."
+        },
+        {
+          "key": "C",
+          "text": "Az animáció a diák közötti váltás, az áttűnés a szöveg megjelenése."
+        },
+        {
+          "key": "D",
+          "text": "Áttűnés csak videóra állítható be."
+        }
+      ],
+      "answer": "B",
+      "explanation": "B. Az áttűnést a diára (diaváltásra) állítod be az Áttűnések lapon, az animációt egy objektumra (cím, kép, felsorolás) az Animációk lapon.",
+      "wrongOptions": {
+        "A": "Két külön funkció, külön lapon állítható be.",
+        "C": "Fordítva van: a diaváltás az áttűnés.",
+        "D": "Áttűnés bármely diára beállítható."
+      },
+      "id": "1",
+      "category": "prezentacio-weblap-hiba"
+    },
+    {
+      "kind": "text",
+      "prompt": "Melyik CSS-tulajdonság állítja be egy elem háttérszínét?",
+      "answer": [
+        "background-color",
+        "background"
+      ],
+      "explanation": "background-color (a rövidített background tulajdonság is beállítja). A color a szöveg színe, nem a háttéré.",
+      "id": "2",
+      "category": "prezentacio-weblap-hiba"
+    },
+    {
+      "kind": "choice",
+      "prompt": "A kép a HTML-fájl melletti kepek mappában van, to.jpg néven. Melyik hivatkozás működik a weblap feltöltése után is?",
+      "options": [
+        {
+          "key": "A",
+          "text": "src=\"C:\\web\\kepek\\to.jpg\""
+        },
+        {
+          "key": "B",
+          "text": "src=\"kepek/to.jpg\""
+        },
+        {
+          "key": "C",
+          "text": "src=\"file:///C:/web/kepek/to.jpg\""
+        },
+        {
+          "key": "D",
+          "text": "src=\"to.jpg\""
+        }
+      ],
+      "answer": "B",
+      "explanation": "B – relatív útvonal: a böngésző a HTML-fájl mappájához képest keresi a kepek mappát, ezért a szerveren is működik, ha a mappaszerkezet megmarad.",
+      "wrongOptions": {
+        "A": "Abszolút helyi útvonal: a látogató gépén nincs ilyen fájl.",
+        "C": "Ez is a saját gép fájlrendszerére mutat, a weben nem érhető el.",
+        "D": "A kép nem a HTML-fájl mellett, hanem a kepek mappában van."
+      },
+      "id": "3",
+      "category": "prezentacio-weblap-hiba"
+    },
+    {
+      "kind": "choice",
+      "prompt": "Melyik CSS-szelektor vonatkozik az összes class=\"kiemelt\" elemre?",
+      "options": [
+        {
+          "key": "A",
+          "text": "#kiemelt"
+        },
+        {
+          "key": "B",
+          "text": ".kiemelt"
+        },
+        {
+          "key": "C",
+          "text": "kiemelt"
+        },
+        {
+          "key": "D",
+          "text": "*kiemelt"
+        }
+      ],
+      "answer": "B",
+      "explanation": "B. Az osztályszelektor ponttal kezdődik: .kiemelt { … }. A # az azonosítóra (id) vonatkozik.",
+      "wrongOptions": {
+        "A": "A # az id attribútumú elemet jelöli (id=\"kiemelt\").",
+        "C": "Pont nélkül egy <kiemelt> nevű HTML-elemet keresne, ilyen nincs.",
+        "D": "Ez nem érvényes szelektor."
+      },
+      "id": "4",
+      "category": "prezentacio-weblap-hiba"
+    },
+    {
+      "kind": "text",
+      "prompt": "Melyik attribútummal (és értékkel) érhető el, hogy egy hivatkozás új böngészőlapon nyíljon meg?",
+      "answer": [
+        "target=\"_blank\"",
+        "target=_blank",
+        "target='_blank'"
+      ],
+      "explanation": "target=\"_blank\": <a href=\"https://muvhaz.example\" target=\"_blank\">. Külső oldalaknál gyakran kérik a vizsgán.",
+      "id": "5",
+      "category": "prezentacio-weblap-hiba"
+    },
+    {
+      "kind": "choice",
+      "prompt": "A bemutató minden diáján ugyanott kell megjelennie az iskola logójának. Hol helyezed el?",
+      "options": [
+        {
+          "key": "A",
+          "text": "minden dián külön, másolással"
+        },
+        {
+          "key": "B",
+          "text": "a diamintán"
+        },
+        {
+          "key": "C",
+          "text": "csak az első dián"
+        },
+        {
+          "key": "D",
+          "text": "a jegyzetoldalon"
+        }
+      ],
+      "answer": "B",
+      "explanation": "B – a diamintán. Így minden dián azonos helyen és méretben jelenik meg, és egy helyen módosítható.",
+      "wrongOptions": {
+        "A": "Működhet, de nem szakszerű: a pozíció elcsúszhat, új diánál kimaradhat.",
+        "C": "A feladat minden diára kéri.",
+        "D": "A jegyzetoldal az előadói jegyzeteké, vetítéskor nem látszik."
+      },
+      "id": "6",
+      "category": "prezentacio-weblap-hiba"
+    }
+  ],
+  "relatedCategories": [
+    "formazas",
+    "fajlkezeles"
+  ]
+}

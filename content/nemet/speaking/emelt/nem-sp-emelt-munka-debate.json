@@ -1,6 +1,15 @@
 {
+  "schemaVersion": 1,
+  "id": "nem-sp-emelt-munka-debate",
+  "subject": "nemet",
+  "revision": 1,
+  "level": "emelt",
+  "source": "generated",
   "topic": "munka",
   "title": "Die Vier-Tage-Woche für alle?",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "speaking",
   "type": "debate",
   "partNumber": 2,
   "instructionsHu": "Vitatkozz a vizsgáztatóval az alábbi állításról. A kiosztott álláspontod: az állítás MELLETT érvelsz – ezt a vita során nem változtathatod meg. Fejtsd ki az érveidet, reagálj a vizsgáztató ellenérveire, és próbálj kompromisszumot keresni.",
@@ -28,27 +37,75 @@
     "Wenn man nur vier Tage arbeitet, werden die Tage doch viel länger und anstrengender."
   ],
   "usefulPhrases": [
-    { "en": "Ich finde die Idee sehr überzeugend.", "hu": "Az ötletet nagyon meggyőzőnek tartom." },
-    { "en": "sich erholen", "hu": "kipiheni magát, regenerálódik" },
-    { "en": "Das ist ein berechtigter Einwand.", "hu": "Ez jogos ellenvetés." },
-    { "en": "mit Schichtplänen arbeiten", "hu": "műszakbeosztással dolgozik" },
-    { "en": "Kurzfristig …, langfristig …", "hu": "Rövid távon …, hosszú távon …" },
-    { "en": "von etwas profitieren", "hu": "hasznot húz valamiből" },
-    { "en": "Da haben Sie teilweise recht.", "hu": "Ebben részben igaza van." },
-    { "en": "Mein Vorschlag wäre, …", "hu": "Az lenne a javaslatom, hogy …" }
+    {
+      "en": "Ich finde die Idee sehr überzeugend.",
+      "hu": "Az ötletet nagyon meggyőzőnek tartom."
+    },
+    {
+      "en": "sich erholen",
+      "hu": "kipiheni magát, regenerálódik"
+    },
+    {
+      "en": "Das ist ein berechtigter Einwand.",
+      "hu": "Ez jogos ellenvetés."
+    },
+    {
+      "en": "mit Schichtplänen arbeiten",
+      "hu": "műszakbeosztással dolgozik"
+    },
+    {
+      "en": "Kurzfristig …, langfristig …",
+      "hu": "Rövid távon …, hosszú távon …"
+    },
+    {
+      "en": "von etwas profitieren",
+      "hu": "hasznot húz valamiből"
+    },
+    {
+      "en": "Da haben Sie teilweise recht.",
+      "hu": "Ebben részben igaza van."
+    },
+    {
+      "en": "Mein Vorschlag wäre, …",
+      "hu": "Az lenne a javaslatom, hogy …"
+    }
   ],
   "speakingSeconds": 390,
   "prepSeconds": 60,
   "sampleAnswer": {
     "turns": [
-      { "speaker": "examiner", "text": "Die Aussage lautet: „Die Vier-Tage-Woche sollte für alle Arbeitnehmer eingeführt werden.“ Was meinen Sie?" },
-      { "speaker": "candidate", "text": "Ich finde die Idee sehr überzeugend. Viele Menschen sind heute gestresst und erschöpft, und ein zusätzlicher freier Tag würde ihnen helfen, sich zu erholen. Wer ausgeruht ist, arbeitet konzentrierter und ist seltener krank. In mehreren Ländern gab es sogar Versuche, bei denen die Firmen in vier Tagen genauso viel geschafft haben wie vorher in fünf. Außerdem hätten Eltern mehr Zeit für ihre Kinder." },
-      { "speaker": "examiner", "text": "Aber in Krankenhäusern oder Supermärkten geht das doch gar nicht, oder?" },
-      { "speaker": "candidate", "text": "Das ist ein berechtigter Einwand. In solchen Bereichen kann natürlich nicht das ganze Team am Freitag frei haben. Aber man könnte mit Schichtplänen arbeiten, sodass jeder Mitarbeiter an einem anderen Tag frei hat. Dafür müsste man allerdings mehr Personal einstellen." },
-      { "speaker": "examiner", "text": "Kleine Firmen können sich das doch gar nicht leisten." },
-      { "speaker": "candidate", "text": "Kurzfristig ist das sicher eine Herausforderung. Langfristig glaube ich aber, dass gerade kleine Firmen davon profitieren würden, weil sie für junge Fachkräfte attraktiver würden. Heute finden viele Betriebe kaum noch Leute, und eine Vier-Tage-Woche könnte ein wichtiges Argument sein." },
-      { "speaker": "examiner", "text": "Wenn man nur vier Tage arbeitet, werden die Tage doch viel länger und anstrengender." },
-      { "speaker": "candidate", "text": "Da haben Sie teilweise recht. Vier Tage mit je zehn Stunden wären tatsächlich anstrengend. Deshalb wäre mein Vorschlag, die Wochenarbeitszeit etwas zu verkürzen, zum Beispiel auf 34 oder 35 Stunden. Man könnte die Vier-Tage-Woche ja auch zuerst in einigen Branchen testen und dann entscheiden." }
+      {
+        "speaker": "examiner",
+        "text": "Die Aussage lautet: „Die Vier-Tage-Woche sollte für alle Arbeitnehmer eingeführt werden.“ Was meinen Sie?"
+      },
+      {
+        "speaker": "candidate",
+        "text": "Ich finde die Idee sehr überzeugend. Viele Menschen sind heute gestresst und erschöpft, und ein zusätzlicher freier Tag würde ihnen helfen, sich zu erholen. Wer ausgeruht ist, arbeitet konzentrierter und ist seltener krank. In mehreren Ländern gab es sogar Versuche, bei denen die Firmen in vier Tagen genauso viel geschafft haben wie vorher in fünf. Außerdem hätten Eltern mehr Zeit für ihre Kinder."
+      },
+      {
+        "speaker": "examiner",
+        "text": "Aber in Krankenhäusern oder Supermärkten geht das doch gar nicht, oder?"
+      },
+      {
+        "speaker": "candidate",
+        "text": "Das ist ein berechtigter Einwand. In solchen Bereichen kann natürlich nicht das ganze Team am Freitag frei haben. Aber man könnte mit Schichtplänen arbeiten, sodass jeder Mitarbeiter an einem anderen Tag frei hat. Dafür müsste man allerdings mehr Personal einstellen."
+      },
+      {
+        "speaker": "examiner",
+        "text": "Kleine Firmen können sich das doch gar nicht leisten."
+      },
+      {
+        "speaker": "candidate",
+        "text": "Kurzfristig ist das sicher eine Herausforderung. Langfristig glaube ich aber, dass gerade kleine Firmen davon profitieren würden, weil sie für junge Fachkräfte attraktiver würden. Heute finden viele Betriebe kaum noch Leute, und eine Vier-Tage-Woche könnte ein wichtiges Argument sein."
+      },
+      {
+        "speaker": "examiner",
+        "text": "Wenn man nur vier Tage arbeitet, werden die Tage doch viel länger und anstrengender."
+      },
+      {
+        "speaker": "candidate",
+        "text": "Da haben Sie teilweise recht. Vier Tage mit je zehn Stunden wären tatsächlich anstrengend. Deshalb wäre mein Vorschlag, die Wochenarbeitszeit etwas zu verkürzen, zum Beispiel auf 34 oder 35 Stunden. Man könnte die Vier-Tage-Woche ja auch zuerst in einigen Branchen testen und dann entscheiden."
+      }
     ],
     "notes": [
       "Feladat teljesítése: a vizsgázó a kiosztott álláspont mellett több érvet hoz (pihenés, termelékenység, család), mindhárom ellenvetésre reagál (műszakbeosztás, rövid és hosszú távú hatás, rövidebb heti munkaidő), és kompromisszumos javaslattal zár.",

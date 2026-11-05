@@ -1,0 +1,267 @@
+{
+  "schemaVersion": 1,
+  "id": "dig-gr-fajlkezeles",
+  "subject": "digitalis-kultura",
+  "revision": 1,
+  "level": "kozep",
+  "source": "generated",
+  "topic": "nyelvtan",
+  "title": "Fájlkezelés, mentés, formátum",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "grammar",
+  "type": "lesson",
+  "category": "fajlkezeles",
+  "summaryHu": "A gyakorlati vizsgán minden feladat kiosztott forrásfájlokból indul, és a megoldást a megadott néven és formátumban kell menteni; ami nincs elmentve vagy rossz néven van, azt nem javítják. A fájlkezelési hibák ritkán látványosak, de egy egész feladat pontjait vihetik el: rossz karakterkódolás (ékezethibák), rossz határoló az importnál, rossz formátum (.txt a .docx helyett), vagy a programban rossz fájlnév, útvonal.",
+  "rules": [
+    {
+      "title": "A vizsga fájlkezelési szabályai",
+      "explanation": "A forrásfájlokat a kiosztott mappából nyitod meg, a megoldást a feladatban megadott néven, a program saját formátumában (vagy a kért formátumban) mented a vizsgamappába. Rendszeresen ments (Ctrl+S), és a végén ellenőrizd, hogy minden fájl a helyén van.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "„Mentse a dokumentumot erdei néven a szövegszerkesztő saját formátumában!”",
+          "hu": "erdei.docx (Word) vagy erdei.odt (Writer)"
+        },
+        {
+          "en": "„A lekérdezést 3krimi néven mentse!”",
+          "hu": "a mentett lekérdezés neve pontosan 3krimi"
+        }
+      ]
+    },
+    {
+      "title": "Fájlformátumok és kiterjesztések",
+      "explanation": "Szövegszerkesztő: .docx / .odt; táblázatkezelő: .xlsx / .ods; bemutató: .pptx / .odp; adatbázis: .accdb / .odb; weblap: .html, .css; Python-forráskód: .py; egyszerű szöveg: .txt; tagolt szöveg: .csv, .txt; képek: .jpg, .png, .svg; dokumentumcsere: .pdf.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "bufe.xlsx / bufe.ods",
+          "hu": "táblázatkezelő saját formátuma"
+        },
+        {
+          "en": "lepes.py",
+          "hu": "Python-forrásfájl – a vizsgán ezt adod be"
+        }
+      ]
+    },
+    {
+      "title": "Karakterkódolás",
+      "explanation": "A szövegfájl bájtjait a program a kódolás szerint értelmezi. A vizsgafájlok jellemzően UTF-8 kódolásúak; ha rossz kódolással nyitod meg őket, az ékezetes betűk helyén furcsa jelek („Ăˇ”, „Ă©”) jelennek meg. Importnál, megnyitásnál válaszd az UTF-8 (65001) kódolást; programban add meg: encoding=\"utf-8\".",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "Fájl eredete: 65001: Unicode (UTF-8)",
+          "hu": "Excel szövegimportálás"
+        },
+        {
+          "en": "open(\"adatok.txt\", encoding=\"utf-8\")",
+          "hu": "Python: UTF-8 kódolású fájl olvasása"
+        }
+      ]
+    },
+    {
+      "title": "Tagolt szövegfájl importálása",
+      "explanation": "Táblázatkezelőbe és adatbázisba importáláskor meg kell adni a határolót (tabulátor, pontosvessző, vessző), hogy az első sor mezőneveket tartalmaz-e, és a mezők típusát (szám, dátum, szöveg). Ha minden adat egy oszlopba került, rossz volt a határoló.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "Adatok > Szövegből/CSV-ből: Határoló: Tabulátor",
+          "hu": "táblázatkezelő"
+        },
+        {
+          "en": "Az első sor mezőneveket tartalmaz ✓",
+          "hu": "adatbázis-import"
+        }
+      ]
+    },
+    {
+      "title": "Programból fájlba írás",
+      "explanation": "Pythonban az open() második paramétere a mód: \"r\" olvasás (alapértelmezett), \"w\" írás (a meglévő tartalmat törli), \"a\" hozzáfűzés a végére. A with blokk végén a fájl automatikusan bezárul, így a tartalom biztosan kiíródik. Sorvégjelet (\\n) neked kell kiírnod.",
+      "emeltOnly": true,
+      "examples": [
+        {
+          "en": "with open(\"dij.txt\", \"w\", encoding=\"utf-8\") as f: f.write(sor + \"\\n\")",
+          "hu": "új fájl írása soronként"
+        }
+      ]
+    }
+  ],
+  "commonMistakes": [
+    {
+      "wrong": "A dokumentumot a forrásfájl nevén, .txt formátumban hagyom.",
+      "right": "Fájl > Mentés másként: erdei.docx (a program saját formátumában).",
+      "why": "A .txt nem tárolja a formázást: a mentés után minden stílus, kép, táblázat elvész, így a feladat értékelhetetlen."
+    },
+    {
+      "wrong": "Az ékezetek helyén „Ă©” jelenik meg, de nem foglalkozom vele.",
+      "right": "Újra megnyitom (importálom) a fájlt UTF-8 kódolással.",
+      "why": "Az ékezethibás adat rossz eredményt ad a szűrésnél és a keresésnél is (pl. „Jókai Mór” nem egyezik), és a javító formai hibának veszi."
+    },
+    {
+      "wrong": "A programban open(\"C:\\\\Users\\\\Anna\\\\Asztal\\\\berles.txt\") áll.",
+      "right": "open(\"berles.txt\", encoding=\"utf-8\") – a fájl a program mellett van.",
+      "why": "A javító gépén nincs ilyen útvonal, így a program el sem indul; a vizsgán a forrásfájl a program mappájában van."
+    },
+    {
+      "wrong": "A lekérdezést Lekérdezés1 néven hagyom.",
+      "right": "A feladatban megadott néven (pl. 2regi) mentem.",
+      "why": "A javítók a lekérdezéseket név szerint keresik; a rossz nevű megoldás nem kap pontot."
+    }
+  ],
+  "examTips": [
+    "Az első percben mentsd el a munkát a kért néven és formátumban, és onnantól Ctrl+S-sel ments – áramszünet vagy programösszeomlás esetén is megmarad a munkád.",
+    "Import után ellenőrizd: jók-e az ékezetek, minden adat a saját oszlopába került-e, és a számok számként (jobbra igazítva) jelennek-e meg.",
+    "A programozási feladatnál a beolvasandó fájlt pontosan a megadott néven, relatív útvonallal nyisd meg."
+  ],
+  "practice": [
+    {
+      "kind": "choice",
+      "prompt": "Megnyitod a forras.txt-t, és az „á” helyett „Ăˇ” jelenik meg. Mi a teendő?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Kézzel kijavítom az összes ékezetet."
+        },
+        {
+          "key": "B",
+          "text": "Bezárom, és UTF-8 kódolást választva nyitom meg újra."
+        },
+        {
+          "key": "C",
+          "text": "Másik betűtípust választok."
+        },
+        {
+          "key": "D",
+          "text": "PDF-be mentem, úgy jó lesz."
+        }
+      ],
+      "answer": "B",
+      "explanation": "B. A fájl UTF-8 kódolású, de a program más (pl. Windows-1250) kódolással olvasta be; a helyes kódolással megnyitva az ékezetek helyesek lesznek.",
+      "wrongOptions": {
+        "A": "Időigényes és hibalehetőség; a kódolás kiválasztása egy kattintás.",
+        "C": "A hibás bájtértelmezést a betűtípus nem javítja.",
+        "D": "A mentés formátuma nem javítja meg a rosszul beolvasott karaktereket."
+      },
+      "id": "1",
+      "category": "fajlkezeles"
+    },
+    {
+      "kind": "text",
+      "prompt": "Milyen kiterjesztésű fájlba ment a LibreOffice Calc a saját formátumában?",
+      "answer": [
+        "ods",
+        ".ods"
+      ],
+      "explanation": ".ods (OpenDocument Spreadsheet). Az Excel saját formátuma az .xlsx; a vizsgán a használt program saját formátuma a jó.",
+      "id": "2",
+      "category": "fajlkezeles"
+    },
+    {
+      "kind": "choice",
+      "prompt": "A feladat: „Mentse a dokumentumot erdei néven a szövegszerkesztő saját formátumában!” Melyik fájl felel meg (Wordben)?",
+      "options": [
+        {
+          "key": "A",
+          "text": "erdei.txt"
+        },
+        {
+          "key": "B",
+          "text": "erdei.docx"
+        },
+        {
+          "key": "C",
+          "text": "erdei.pdf"
+        },
+        {
+          "key": "D",
+          "text": "Erdei iskola – végleges.docx"
+        }
+      ],
+      "answer": "B",
+      "explanation": "B – erdei.docx: a megadott név és a Word saját formátuma.",
+      "wrongOptions": {
+        "A": "A .txt nem a szövegszerkesztő saját formátuma, és elveszíti a formázást.",
+        "C": "A PDF exportált formátum, nem szerkeszthető dokumentum.",
+        "D": "A fájlnév nem a megadott."
+      },
+      "id": "3",
+      "category": "fajlkezeles"
+    },
+    {
+      "kind": "choice",
+      "prompt": "A programnak a mellette lévő adatok.txt fájlt kell beolvasnia. Melyik megnyitás helyes?",
+      "options": [
+        {
+          "key": "A",
+          "text": "open(\"C:\\\\vizsga\\\\adatok.txt\")"
+        },
+        {
+          "key": "B",
+          "text": "open(\"adatok.txt\", encoding=\"utf-8\")"
+        },
+        {
+          "key": "C",
+          "text": "open(\"adatok\")"
+        },
+        {
+          "key": "D",
+          "text": "open(\"adatok.txt\", \"w\")"
+        }
+      ],
+      "answer": "B",
+      "explanation": "B. Relatív fájlnév (a program mappájában keresi) és UTF-8 kódolás, olvasási (alapértelmezett \"r\") módban.",
+      "wrongOptions": {
+        "A": "Abszolút útvonal: a javító gépén nem biztos, hogy létezik.",
+        "C": "Hiányzik a kiterjesztés, ilyen nevű fájl nincs.",
+        "D": "A \"w\" mód írásra nyit meg, és törli a fájl tartalmát!"
+      },
+      "id": "4",
+      "category": "fajlkezeles"
+    },
+    {
+      "kind": "text",
+      "prompt": "Melyik módot kell megadni a Python open() függvényének, ha egy meglévő fájl végéhez szeretnél hozzáírni (a tartalma maradjon meg)?",
+      "answer": [
+        "a"
+      ],
+      "explanation": "\"a\" (append, hozzáfűzés). A \"w\" törli a meglévő tartalmat, az \"r\" csak olvasásra nyit.",
+      "id": "5",
+      "category": "fajlkezeles"
+    },
+    {
+      "kind": "choice",
+      "prompt": "Egy CSV-fájl megnyitása után minden adat az A oszlopba került, pontosvesszővel elválasztva. Mi a megoldás?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Kézzel szétmásolom az adatokat."
+        },
+        {
+          "key": "B",
+          "text": "Újra importálom a fájlt, és határolónak a pontosvesszőt választom (vagy az Adatok > Szövegből oszlopok funkciót használom)."
+        },
+        {
+          "key": "C",
+          "text": "A fájlt .xlsx-re nevezem át."
+        },
+        {
+          "key": "D",
+          "text": "A cellákat sortöréssel tördelem."
+        }
+      ],
+      "answer": "B",
+      "explanation": "B. A program más határolót (pl. vesszőt) várt; a helyes határolóval minden mező a saját oszlopába kerül.",
+      "wrongOptions": {
+        "A": "Hibalehetőség és időpazarlás; erre van beépített funkció.",
+        "C": "Az átnevezés nem alakítja át a fájl tartalmát, a program hibát jelez.",
+        "D": "A formázás nem bontja oszlopokra az adatokat."
+      },
+      "id": "6",
+      "category": "fajlkezeles"
+    }
+  ],
+  "relatedCategories": [
+    "formazas",
+    "kimenet-formatum"
+  ]
+}

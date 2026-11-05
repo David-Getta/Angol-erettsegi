@@ -1,0 +1,279 @@
+{
+  "schemaVersion": 1,
+  "id": "dig-gr-adatbazis-lekerdezes",
+  "subject": "digitalis-kultura",
+  "revision": 1,
+  "level": "kozep",
+  "source": "generated",
+  "topic": "nyelvtan",
+  "title": "Lekérdezések, kapcsolatok",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "grammar",
+  "type": "lesson",
+  "category": "adatbazis-lekerdezes",
+  "summaryHu": "Az adatbázis-kezelési feladatban a táblák importálása és összekapcsolása után minden pont lekérdezésekért jár. A javítók a mentett lekérdezések eredményét és szerkezetét nézik: csak a kért mezők jelenjenek meg, a szűrés, a csoportosítás és a rendezés pontos legyen, és a megoldás ne „kézzel kinézett” értékekre épüljön. A vizsgán MS Access vagy LibreOffice Base használható; az SQL lényege mindkettőben ugyanaz.",
+  "rules": [
+    {
+      "title": "A SELECT szerkezete",
+      "explanation": "Kötött sorrend: SELECT mezők FROM táblák [WHERE rekordfeltétel] [GROUP BY csoportosító mezők] [HAVING csoportfeltétel] [ORDER BY rendezés [DESC]]; A számított mező álnevet kaphat: AS db. A DISTINCT az ismétlődő sorokat hagyja el.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "SELECT nev, atlag FROM tanulo WHERE osztaly = '11.A' ORDER BY atlag DESC;",
+          "hu": "szűrés és csökkenő rendezés"
+        },
+        {
+          "en": "SELECT DISTINCT varos FROM iskola;",
+          "hu": "minden város egyszer"
+        }
+      ]
+    },
+    {
+      "title": "Feltételek",
+      "explanation": "Összehasonlítás: =, <>, <, >, <=, >=; tartomány: BETWEEN a AND b (a határokat is beleértve); lista: IN (…); minta: LIKE (szabványos SQL: % tetszőleges, _ egy karakter; Access: * és ?); hiányzó érték: IS NULL / IS NOT NULL. Több feltétel: AND, OR, NOT – az AND erősebb, ezért OR-nál zárójelezz. A szöveget idézőjelbe tesszük.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "WHERE ev BETWEEN 2000 AND 2010 AND (mufaj = 'krimi' OR mufaj = 'regény')",
+          "hu": "zárójelezett VAGY-feltétel"
+        },
+        {
+          "en": "WHERE nev LIKE 'Sz%'",
+          "hu": "Sz-szel kezdődő nevek (Access: LIKE \"Sz*\")"
+        }
+      ]
+    },
+    {
+      "title": "Összesítés és csoportosítás",
+      "explanation": "Összesítő függvények: COUNT(*), COUNT(mező), SUM, AVG, MIN, MAX – a NULL értékeket kihagyják. GROUP BY-nál a SELECT-ben csak a csoportosító mezők és összesítő függvények állhatnak. Csoportokra a HAVING szűr, rekordokra a WHERE.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "SELECT osztaly, COUNT(*) AS db FROM tanulo GROUP BY osztaly HAVING COUNT(*) > 25;",
+          "hu": "a 25-nél nagyobb létszámú osztályok"
+        }
+      ]
+    },
+    {
+      "title": "Táblák összekapcsolása",
+      "explanation": "Belső összekapcsolás: FROM a INNER JOIN b ON a.id = b.a_id – csak a párosítható rekordok. Bal külső összekapcsolás: LEFT JOIN – a bal tábla minden rekordja megjelenik, a párnélküliek jobb oldali mezői NULL-ok. Kapcsolófeltétel nélkül a táblák minden rekordpárja megjelenik (Descartes-szorzat). Az Access a több összekapcsolást zárójelezve várja.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "FROM (vetites INNER JOIN film ON vetites.film_id = film.id) INNER JOIN terem ON vetites.terem_id = terem.id",
+          "hu": "három tábla Access-szintaxissal"
+        },
+        {
+          "en": "FROM film LEFT JOIN vetites ON film.id = vetites.film_id WHERE vetites.id IS NULL",
+          "hu": "a soha nem vetített filmek"
+        }
+      ]
+    },
+    {
+      "title": "Allekérdezések",
+      "explanation": "Egy SELECT a feltételben: WHERE pont = (SELECT MAX(pont) FROM eredmeny) – a maximumhoz tartozó rekordok (holtversenyt is kezel); WHERE id NOT IN (SELECT film_id FROM vetites) – akikhez nem tartozik rekord.",
+      "emeltOnly": true,
+      "examples": [
+        {
+          "en": "SELECT nev FROM tanulo WHERE atlag > (SELECT AVG(atlag) FROM tanulo);",
+          "hu": "az átlag feletti tanulók"
+        }
+      ]
+    },
+    {
+      "title": "Emelt szint: számított mezők és rendszerek közti eltérések",
+      "explanation": "Számított mező: eladott * 100.0 / ferohely – ahol két egész szám osztása egészosztás (pl. SQLite), a 100.0 tizedes eredményt kényszerít; kerekítés: ROUND(x, 1). Access-sajátosságok: LIKE \"*…*\", dátum #2026-11-12# alakban, az ORDER BY-ban nem használható a SELECT álneve (ismételd meg a kifejezést).",
+      "emeltOnly": true,
+      "examples": [
+        {
+          "en": "ROUND(AVG(eladott * 100.0 / ferohely), 1) AS kihasznaltsag",
+          "hu": "százalékos átlag egy tizedesre"
+        }
+      ]
+    }
+  ],
+  "commonMistakes": [
+    {
+      "wrong": "SELECT osztaly, COUNT(*) FROM tanulo WHERE COUNT(*) > 25 GROUP BY osztaly;",
+      "right": "… GROUP BY osztaly HAVING COUNT(*) > 25;",
+      "why": "A WHERE a csoportosítás előtt fut, ott még nincs mit megszámolni; csoportfeltétel csak a HAVING-ben állhat."
+    },
+    {
+      "wrong": "WHERE visszahozas = NULL",
+      "right": "WHERE visszahozas IS NULL",
+      "why": "A NULL-lal való egyenlőségvizsgálat eredménye ismeretlen, így egyetlen rekord sem felel meg."
+    },
+    {
+      "wrong": "SELECT konyv.cim, kolcsonzes.tanulo FROM konyv, kolcsonzes;",
+      "right": "… FROM konyv INNER JOIN kolcsonzes ON konyv.id = kolcsonzes.konyv_id;",
+      "why": "Kapcsolófeltétel nélkül minden könyv minden kölcsönzéssel párosul (pl. 6 · 6 = 36 sor), az eredmény értelmetlen."
+    },
+    {
+      "wrong": "SELECT TOP 1 cim, eladott FROM … ORDER BY eladott DESC;",
+      "right": "WHERE eladott = (SELECT MAX(eladott) FROM vetites)",
+      "why": "A rendezés + kivágás viselkedése rendszerfüggő: a LIMIT 1 holtversenynél csak egy rekordot ad, az Access TOP 1-e viszont az összes holtversenyzőt. Az allekérdezés minden rendszerben pontosan a maximumhoz tartozó rekordokat adja, ezért ez a biztos megoldás."
+    },
+    {
+      "wrong": "WHERE szerzo = Jókai Mór",
+      "right": "WHERE szerzo = 'Jókai Mór'",
+      "why": "A szöveges értéket idézőjelbe kell tenni, különben a rendszer mezőnévnek (vagy paraméternek) tekinti."
+    }
+  ],
+  "examTips": [
+    "Minden lekérdezést futtass le, és nézd meg az eredményt: van-e benne fölösleges mező, megfelel-e a sorok száma a várakozásnak.",
+    "A „hány …?” kérdésekre egyetlen számot adó összesítő lekérdezés a válasz; a „melyik …?” kérdésekre a kért mezőket megjelenítő lista.",
+    "Ha a feladat egy lekérdezés eredményére épít (pl. jelentés), előbb a lekérdezés legyen biztosan jó."
+  ],
+  "practice": [
+    {
+      "kind": "choice",
+      "prompt": "Mi a hiba? SELECT osztaly, COUNT(*) FROM tanulo WHERE COUNT(*) > 25 GROUP BY osztaly;",
+      "options": [
+        {
+          "key": "A",
+          "text": "A COUNT(*) helyett COUNT(osztaly) kell."
+        },
+        {
+          "key": "B",
+          "text": "Az összesítő feltétel nem állhat a WHERE-ben; helyesen: GROUP BY osztaly HAVING COUNT(*) > 25."
+        },
+        {
+          "key": "C",
+          "text": "A GROUP BY-nak a WHERE előtt kell állnia."
+        },
+        {
+          "key": "D",
+          "text": "Nincs benne hiba."
+        }
+      ],
+      "answer": "B",
+      "explanation": "B. A WHERE rekordokra szűr a csoportosítás előtt; a csoportokra vonatkozó, összesítő függvényes feltétel helye a HAVING.",
+      "wrongOptions": {
+        "A": "A COUNT formája itt mindegy, a hiba a feltétel helye.",
+        "C": "A sorrend SELECT – FROM – WHERE – GROUP BY – HAVING; a GROUP BY nem kerülhet a WHERE elé.",
+        "D": "A legtöbb rendszer hibát jelez rá."
+      },
+      "id": "1",
+      "category": "adatbazis-lekerdezes"
+    },
+    {
+      "kind": "text",
+      "prompt": "Egészítsd ki: SELECT nev FROM tanulo WHERE email … ; (azok a tanulók kellenek, akiknek nincs megadva e-mail-címük)",
+      "answer": [
+        "IS NULL"
+      ],
+      "explanation": "IS NULL. Az üres (kitöltetlen) mező értéke NULL, ezt csak az IS NULL operátorral lehet vizsgálni; az = NULL sosem igaz.",
+      "id": "2",
+      "category": "adatbazis-lekerdezes"
+    },
+    {
+      "kind": "choice",
+      "prompt": "Az osztaly táblának 30, a tanulo táblának 200 rekordja van. Hány sort ad a SELECT * FROM osztaly, tanulo; lekérdezés (kapcsolófeltétel nélkül)?",
+      "options": [
+        {
+          "key": "A",
+          "text": "200"
+        },
+        {
+          "key": "B",
+          "text": "230"
+        },
+        {
+          "key": "C",
+          "text": "6000"
+        },
+        {
+          "key": "D",
+          "text": "30"
+        }
+      ],
+      "answer": "C",
+      "explanation": "C – 6000. Kapcsolófeltétel nélkül minden osztály minden tanulóval párosul: 30 · 200 = 6000 sor (Descartes-szorzat).",
+      "wrongOptions": {
+        "A": "Ennyi lenne a helyes INNER JOIN-nal, ha minden tanuló egy létező osztályhoz tartozik.",
+        "B": "Az összekapcsolás nem adja össze a rekordszámokat.",
+        "D": "Ez az osztaly tábla rekordszáma."
+      },
+      "id": "3",
+      "category": "adatbazis-lekerdezes"
+    },
+    {
+      "kind": "choice",
+      "prompt": "Melyik feltétel adja a 2000 és 2010 között – a határokat is beleértve – kiadott könyveket?",
+      "options": [
+        {
+          "key": "A",
+          "text": "WHERE ev BETWEEN 2000 AND 2010"
+        },
+        {
+          "key": "B",
+          "text": "WHERE ev > 2000 AND ev < 2010"
+        },
+        {
+          "key": "C",
+          "text": "WHERE ev BETWEEN 2000 OR 2010"
+        },
+        {
+          "key": "D",
+          "text": "WHERE ev IN (2000, 2010)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "A. A BETWEEN mindkét határt beleérti (ugyanaz, mint ev >= 2000 AND ev <= 2010).",
+      "wrongOptions": {
+        "B": "A szigorú relációk kihagyják a 2000-et és a 2010-et.",
+        "C": "A BETWEEN-hez AND kell; ez szintaktikai hiba.",
+        "D": "Csak a pontosan 2000-ben és 2010-ben kiadott könyveket adja."
+      },
+      "id": "4",
+      "category": "adatbazis-lekerdezes"
+    },
+    {
+      "kind": "text",
+      "prompt": "Milyen összekapcsolást kell használni, hogy azok a filmek is megjelenjenek, amelyeknek nincs vetítésük? (A FROM után a film tábla áll elöl.)",
+      "answer": [
+        "LEFT JOIN",
+        "LEFT OUTER JOIN"
+      ],
+      "explanation": "LEFT JOIN (bal külső összekapcsolás): a film tábla minden rekordja megjelenik; a vetítés nélküli filmeknél a vetites mezői NULL-ok.",
+      "id": "5",
+      "category": "adatbazis-lekerdezes"
+    },
+    {
+      "kind": "choice",
+      "prompt": "Az eladott * 100 / ferohely kifejezés egyes rendszerekben (pl. SQLite) mindig egész számot ad. Hogyan kapsz tizedes törtet?",
+      "options": [
+        {
+          "key": "A",
+          "text": "eladott * 100.0 / ferohely"
+        },
+        {
+          "key": "B",
+          "text": "ROUND(eladott / ferohely)"
+        },
+        {
+          "key": "C",
+          "text": "eladott / ferohely * 100"
+        },
+        {
+          "key": "D",
+          "text": "INT(eladott * 100 / ferohely)"
+        }
+      ],
+      "answer": "A",
+      "explanation": "A. A 100.0 tizedes tört, ezért a szorzat és az osztás is tizedes törttel számol. (Az Access / operátora eleve tizedes törtet ad, de így minden rendszerben jó.)",
+      "wrongOptions": {
+        "B": "Az egészosztás már a ROUND előtt megtörténik, és nincs százalék sem.",
+        "C": "Az eladott / ferohely egészosztásnál 0 (vagy 1), majd ezt szorozza 100-zal.",
+        "D": "Az INT éppen egészre vágja az eredményt."
+      },
+      "id": "6",
+      "category": "adatbazis-lekerdezes"
+    }
+  ],
+  "relatedCategories": [
+    "kepletek-fuggvenyek",
+    "fajlkezeles"
+  ]
+}
