@@ -82,6 +82,10 @@ A fázisok után az app mindig futtatható; ami kész, az használható.
 - [x] Hivatalos vizsgaszerkezet mind a tíz tárgyhoz (forrásokkal; feltételes szóbeli matematikából és digitális kultúrából, írásbeli együtt 12 %, csak gyakorló részek)
 - [x] Kezdő tartalombank minden tárgyhoz (feladatok, kidolgozott feladatok / esszék mintamegoldással, tételek mintafelelettel, fogalomkártyák, Szabálytár-leckék minden hibakategóriához, útmutatók)
 - [x] Tesztek tantárgyanként (config-konzisztencia, lefedettség), e2e a tantárgyváltásra
+- [x] Független ellenőrzés minden új tárgy bankján (kulcsok, számítások, tények, idézetek): rossz kulcs nem volt, tárgyanként 12–44 javítás
+- [x] Helyes válaszok kiegyensúlyozása A–D között (`scripts/rebalance-choice-keys.py`), párosítások újrabetűzése (`scripts/reletter-match-options.py`); a validátor ellenőrzi, hogy a magyarázat a megoldás betűjét nevezi meg
+- [x] Felolvasás: biztonságos hangválasztás (nincs magyar rendszerhangra visszaesés), tantárgyankénti nyelv; a próbaérettségi órája nem ugrál gépeléskor
+- [x] Nem nyelvi tárgyak: tizedesvessző = pont, szóköz a számok körül nem számít, `caseSensitive` itemek (Aa, CO, német főnevek), jelsor a szerkesztőben, a szóbeli tétel forrásai megjelennek
 
 ---
 
