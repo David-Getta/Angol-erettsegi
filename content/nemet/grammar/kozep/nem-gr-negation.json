@@ -1,0 +1,181 @@
+{
+  "schemaVersion": 1,
+  "id": "nem-gr-negation",
+  "subject": "nemet",
+  "level": "kozep",
+  "source": "generated",
+  "topic": "nyelvtan",
+  "title": "Tagadás",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "grammar",
+  "type": "lesson",
+  "category": "negation",
+  "summaryHu": "A németben két fő tagadószó van: a kein a határozatlan névelős vagy névelő nélküli főnevet tagadja (Ich habe keine Zeit), a nicht minden mást (Ich komme nicht. Das ist nicht mein Buch). A magyar „nem” mindkettőt fedi, ezért a magyar tanulók gyakran írnak nicht Zeit-et kein helyett, a nicht-et rossz helyre teszik, és a magyar kettős tagadást („senkit nem láttam”) is átviszik. A nyitott kloze-ban a kein/nicht/nichts/nie gyakori megoldás, írásban és szóbelin pedig a rossz tagadás nyelvhelyességi hiba.",
+  "rules": [
+    {
+      "title": "kein: a főnév tagadása",
+      "explanation": "A kein-t akkor használjuk, ha határozatlan névelős (ein) vagy névelő nélküli főnevet tagadunk: Ich habe ein Auto → Ich habe kein Auto; Ich habe Zeit → Ich habe keine Zeit; Ich habe Geschwister → Ich habe keine Geschwister. A kein úgy ragozódik, mint az ein, többes számban keine.",
+      "emeltOnly": false,
+      "examples": [
+        { "en": "Tut mir leid, ich habe heute keine Zeit.", "hu": "Sajnálom, ma nincs időm." },
+        { "en": "Er trinkt keinen Kaffee.", "hu": "Nem iszik kávét." },
+        { "en": "In unserem Dorf gibt es kein Kino.", "hu": "A falunkban nincs mozi." }
+      ]
+    },
+    {
+      "title": "nicht: minden más tagadása",
+      "explanation": "A nicht tagadja az igét, a melléknevet, a határozószót, valamint a határozott névelős vagy birtokos névelős főnevet és a személynevet: Ich komme nicht. Das ist nicht teuer. Das ist nicht mein Buch. Ich kenne den Mann nicht. Das ist nicht Peter.",
+      "emeltOnly": false,
+      "examples": [
+        { "en": "Ich bin heute nicht müde.", "hu": "Ma nem vagyok fáradt." },
+        { "en": "Das ist nicht meine Tasche.", "hu": "Ez nem az én táskám." },
+        { "en": "Ich verstehe die Frage nicht.", "hu": "Nem értem a kérdést." }
+      ]
+    },
+    {
+      "title": "A nicht helye a mondattagadásban",
+      "explanation": "Ha az egész mondatot tagadjuk, a nicht a mondat vége felé áll: a tárgy és a legtöbb időhatározó után (Ich habe den Film gestern nicht gesehen). De a nicht ELÉ kerül: a második igei rész (Partizip II, főnévi igenév, elváló igekötő: nicht gesehen, nicht kommen, kommt nicht an), a névszói állítmány (nicht müde, nicht Lehrer), a hely- és irányhatározó (nicht in Wien, nicht nach Hause), az elöljárós vonzat (nicht auf dich) és a gern, gut típusú módhatározó (nicht gern).",
+      "emeltOnly": false,
+      "examples": [
+        { "en": "Ich kann heute nicht kommen.", "hu": "Ma nem tudok jönni." },
+        { "en": "Er wohnt nicht mehr in Debrecen.", "hu": "Már nem lakik Debrecenben." },
+        { "en": "Ich schwimme nicht gern.", "hu": "Nem szeretek úszni." }
+      ]
+    },
+    {
+      "title": "Résztagadás: nicht …, sondern …",
+      "explanation": "Ha csak egy mondatrészt tagadunk (és helyesbítünk), a nicht közvetlenül a tagadott rész elé kerül, és gyakran a sondern követi: Ich fahre nicht heute, sondern morgen. Nicht ich habe das gesagt, sondern Peter. Ich habe nicht den Film gesehen, sondern das Theaterstück.",
+      "emeltOnly": false,
+      "examples": [
+        { "en": "Wir fahren nicht mit dem Zug, sondern mit dem Bus.", "hu": "Nem vonattal megyünk, hanem busszal." },
+        { "en": "Das Konzert ist nicht am Samstag, sondern am Sonntag.", "hu": "A koncert nem szombaton, hanem vasárnap van." }
+      ]
+    },
+    {
+      "title": "Egyéb tagadószók – kettős tagadás nélkül",
+      "explanation": "nie / niemals (soha), niemand (senki; Akkusativ: niemanden, Dativ: niemandem), nichts (semmi), nirgends / nirgendwo (sehol), nicht mehr / kein … mehr (már nem), noch nicht / noch kein (még nem). A németben egy mondatban csak egy tagadószó áll: Ich habe niemanden gesehen (nem: nicht niemanden). A magyar „senkit nem láttam” két tagadószót tartalmaz, a német csak egyet.",
+      "emeltOnly": false,
+      "examples": [
+        { "en": "Ich war noch nie in Berlin.", "hu": "Még sosem voltam Berlinben." },
+        { "en": "Im Kühlschrank ist nichts mehr.", "hu": "A hűtőben már nincs semmi." },
+        { "en": "Auf der Party habe ich niemanden gekannt.", "hu": "A buliban senkit sem ismertem." }
+      ]
+    },
+    {
+      "title": "Válasz tagadó kérdésre: doch",
+      "explanation": "Ha tagadó kérdésre igenlően válaszolunk, a ja helyett doch áll (magyarul: de igen): Kommst du nicht mit? – Doch, ich komme mit. Hast du keinen Hunger? – Doch! Ha egyetértünk a tagadással: Nein, ich komme nicht mit.",
+      "emeltOnly": false,
+      "examples": [
+        { "en": "Hast du keine Geschwister? – Doch, ich habe einen Bruder.", "hu": "Nincsenek testvéreid? – De igen, van egy bátyám." },
+        { "en": "Gefällt dir das Kleid nicht? – Doch, sehr!", "hu": "Nem tetszik a ruha? – De, nagyon!" }
+      ]
+    },
+    {
+      "title": "Erősített és kétrészes tagadás",
+      "explanation": "Erősítés: gar nicht, überhaupt nicht, gar kein, überhaupt kein (egyáltalán nem), kein bisschen (egy cseppet sem). Kétrészes: weder … noch (sem … sem): Ich habe weder Zeit noch Geld. A weder … noch mellett nem áll más tagadószó.",
+      "emeltOnly": false,
+      "examples": [
+        { "en": "Der Film war überhaupt nicht spannend.", "hu": "A film egyáltalán nem volt izgalmas." },
+        { "en": "Er spricht weder Englisch noch Deutsch.", "hu": "Sem angolul, sem németül nem beszél." }
+      ]
+    }
+  ],
+  "commonMistakes": [
+    { "wrong": "Ich habe heute nicht Zeit.", "right": "Ich habe heute keine Zeit.", "why": "Névelő nélküli főnevet kein-nel tagadunk: Zeit → keine Zeit. A nicht nem áll névelő nélküli főnév előtt a mondattagadásban." },
+    { "wrong": "Ich bin kein müde.", "right": "Ich bin nicht müde.", "why": "Melléknevet nicht-tel tagadunk. A kein csak főnév előtt áll." },
+    { "wrong": "Ich habe nicht niemanden gesehen.", "right": "Ich habe niemanden gesehen.", "why": "A németben nincs kettős tagadás: a niemand egymagában tagad. A magyar „senkit nem láttam” két tagadószavát nem szabad átvinni." },
+    { "wrong": "Ich nicht komme heute.", "right": "Ich komme heute nicht.", "why": "A nicht nem állhat a ragozott ige előtt a második helyen; mondattagadásnál a mondat vége felé kerül." },
+    { "wrong": "Ich habe nicht den Film gesehen. (= nem láttam a filmet)", "right": "Ich habe den Film nicht gesehen.", "why": "Mondattagadásnál a nicht a tárgy után, a Partizip II előtt áll. A nicht den Film résztagadás lenne (nem a filmet, hanem …), és sondern-t várna." },
+    { "wrong": "Hast du keinen Hunger? – Ja, ich habe großen Hunger.", "right": "Hast du keinen Hunger? – Doch, ich habe großen Hunger.", "why": "Tagadó kérdésre adott igenlő válasz doch (de igen). A ja itt zavaró, mert nem egyértelmű, mire mond igent." }
+  ],
+  "examTips": [
+    "Nyitott kloze-ban, ha a hiány után névelő nélküli főnév vagy melléknév + főnév áll, és a mondat tagadó, a megoldás gyakran kein-alak (keine, keinen, keinem); ha a hiány a mondat végén, a Partizip II vagy főnévi igenév előtt van, valószínűleg nicht.",
+    "Írásban és szóbelin ellenőrizd: kein a főnév előtt (keine Lust, kein Problem), nicht minden más előtt (nicht schlecht, nicht so gut, nicht gern).",
+    "Igaz/hamis feladatokban figyelj a tagadás apró jeleire: nicht mehr (már nem), noch nicht (még nem), kaum (alig), nie (soha) – egyetlen ilyen szó megfordítja az állítás igazságát."
+  ],
+  "practice": [
+    {
+      "id": "1",
+      "kind": "choice",
+      "prompt": "Tut mir leid, ich habe heute ___ Zeit.",
+      "options": [
+        { "key": "A", "text": "nicht" },
+        { "key": "B", "text": "kein" },
+        { "key": "C", "text": "keine" },
+        { "key": "D", "text": "nichts" }
+      ],
+      "answer": "C",
+      "category": "negation",
+      "explanation": "Helyes: keine. Névelő nélküli főnevet (Zeit) kein-nel tagadunk; a die Zeit nőnemű, Akkusativban: keine Zeit.",
+      "wrongOptions": {
+        "A": "A nicht nem tagadja a névelő nélküli főnevet mondattagadásban; főnév előtt kein kell.",
+        "B": "A kein hímnemű/semleges alak; a Zeit nőnemű, ezért keine.",
+        "D": "A nichts jelentése „semmi”, főnév előtt nem áll tagadó névelőként."
+      }
+    },
+    {
+      "id": "2",
+      "kind": "choice",
+      "prompt": "Melyik a helyes mondattagadás? (Nem láttam a filmet.)",
+      "options": [
+        { "key": "A", "text": "Ich habe nicht den Film gesehen." },
+        { "key": "B", "text": "Ich habe den Film nicht gesehen." },
+        { "key": "C", "text": "Ich nicht habe den Film gesehen." },
+        { "key": "D", "text": "Ich habe den Film gesehen nicht." }
+      ],
+      "answer": "B",
+      "category": "negation",
+      "explanation": "Helyes: B. Mondattagadásnál a nicht a tárgy (den Film) után, de a második igei rész (gesehen) előtt áll.",
+      "wrongOptions": {
+        "A": "A nicht den Film résztagadás (nem a filmet láttam, hanem valami mást); sondern nélkül nem a mondatot tagadja.",
+        "C": "A ragozott igének (habe) a második helyen kell állnia; a nicht nem kerülhet elé.",
+        "D": "A Partizip II a mondat legvégén áll; a nicht elé kerül, nem mögé."
+      }
+    },
+    {
+      "id": "3",
+      "kind": "text",
+      "prompt": "Hast du keinen Hunger? – ___, ich habe großen Hunger!",
+      "answer": ["Doch"],
+      "category": "negation",
+      "explanation": "Helyes: Doch. Tagadó kérdésre (keinen Hunger?) adott igenlő válasz a doch (de igen) – a válasz folytatása (ich habe großen Hunger) igenlő."
+    },
+    {
+      "id": "4",
+      "kind": "text",
+      "prompt": "Im Kühlschrank ist ___ mehr. Wir müssen einkaufen gehen.",
+      "answer": ["nichts"],
+      "category": "negation",
+      "explanation": "Helyes: nichts. A hűtőben már nincs semmi (nichts mehr = már semmi), ezért kell bevásárolni. A kein után főnévnek kellene állnia (kein Essen mehr), a nicht pedig itt nem lehet alany."
+    },
+    {
+      "id": "5",
+      "kind": "choice",
+      "prompt": "Auf der Party habe ich ___ gekannt.",
+      "options": [
+        { "key": "A", "text": "nicht niemanden" },
+        { "key": "B", "text": "niemanden" },
+        { "key": "C", "text": "kein niemanden" },
+        { "key": "D", "text": "nicht keinen" }
+      ],
+      "answer": "B",
+      "category": "negation",
+      "explanation": "Helyes: niemanden. A niemand (senki) egymagában tagad, Akkusativban niemanden; a németben nincs kettős tagadás.",
+      "wrongOptions": {
+        "A": "Kettős tagadás (nicht + niemanden) – a magyar „senkit nem” mintája, a németben hibás.",
+        "C": "A kein névelőként főnév előtt áll, és a niemanden mellé nem tehető más tagadószó.",
+        "D": "Kettős tagadás, és a keinen után főnévnek kellene állnia."
+      }
+    },
+    {
+      "id": "6",
+      "kind": "text",
+      "prompt": "Ich fahre heute nicht mit dem Bus, ___ mit dem Fahrrad.",
+      "answer": ["sondern"],
+      "category": "negation",
+      "explanation": "Helyes: sondern. Résztagadás után (nicht mit dem Bus) a helyesbítést (hanem biciklivel) a sondern vezeti be; az aber itt nem helyes, mert az első részt nem kiegészítjük, hanem kicseréljük."
+    }
+  ],
+  "relatedCategories": ["word-order", "article-declension", "conjunction"]
+}

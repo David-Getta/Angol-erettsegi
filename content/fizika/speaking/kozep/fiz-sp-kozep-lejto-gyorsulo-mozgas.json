@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "fiz-sp-kozep-lejto-gyorsulo-mozgas",
+  "subject": "fizika",
+  "revision": 1,
+  "level": "kozep",
+  "source": "generated",
+  "topic": "mozgas-egyensuly",
+  "title": "Az egyenes vonalú egyenletesen változó mozgás – lejtőn guruló golyó",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "speaking",
+  "type": "tetel",
+  "partNumber": 1,
+  "instructionsHu": "Fejtsd ki az egyenes vonalú egyenletesen változó mozgás jellemzőit (fogalmak, összefüggések, grafikonok, példák), majd mutasd be és értelmezd a lejtőn guruló golyóval végzett kísérletet: mérd meg, hogyan függ a megtett út az időtől, és következtess a mozgás jellegére!",
+  "prompts": [
+    "A sebesség és a gyorsulás fogalma, mértékegysége; mikor egyenletesen változó egy mozgás?",
+    "Az út–idő és a sebesség–idő összefüggés (s = a/2·t², v = a·t), a grafikonok jellege",
+    "A szabadesés mint egyenletesen gyorsuló mozgás, a nehézségi gyorsulás",
+    "Galilei lejtős kísérlete: miért lejtőn vizsgálta a gyorsuló mozgást?",
+    "A kísérlet elvégzése, a mérési adatok értékelése, a hibák forrásai"
+  ],
+  "sources": [
+    {
+      "title": "Kísérlet: golyó a lejtőn",
+      "text": "Eszközök: kb. 1,5–2 m hosszú, enyhén (néhány fokos szögben) megdöntött lejtő vagy vályú, acélgolyó, mérőszalag, stopper (vagy telefonos stopper / fénykapu), kréta vagy matrica a jelölésekhez.\nMenet: a golyót a lejtő tetejéről, nyugalomból engedd el. Mérd meg, mennyi idő alatt tesz meg 0,25 m, 0,50 m, 1,00 m és 1,50 m utat! Minden távolságnál legalább háromszor mérj, és vedd az idők átlagát! Számítsd ki a 2s/t² hányadost minden mérésre!\nVárt tapasztalat: négyszeres út megtételéhez kétszeres idő kell; a 2s/t² hányados (a gyorsulás) közelítőleg állandó, vagyis s ~ t²."
+    }
+  ],
+  "keyPoints": [
+    "Egyenletesen változó a mozgás, ha a sebesség egyenlő időközök alatt egyenlő mértékben változik, azaz a gyorsulás állandó.",
+    "A gyorsulás a = Δv/Δt, mértékegysége m/s²; vektormennyiség.",
+    "Nyugalomból induló egyenletesen gyorsuló mozgásnál v = a·t és s = (a/2)·t²; a v–t grafikon origón átmenő egyenes, az s–t grafikon parabola.",
+    "A v–t grafikon meredeksége a gyorsulás, a grafikon alatti terület a megtett út.",
+    "A szabadesés gyorsulása a nehézségi gyorsulás, g ≈ 9,81 m/s² (légellenállás nélkül minden test ugyanúgy esik).",
+    "Galilei a lejtővel „lelassította” a szabadesést, így az idők mérhetővé váltak.",
+    "A kísérletben a 2s/t² hányados közel állandó, tehát s ~ t², a mozgás egyenletesen gyorsuló.",
+    "Hibaforrások: a stopper indítása és megállítása (reakcióidő), a golyó elengedése, a súrlódás; csökkentésük többszöri méréssel és hosszabb úttal."
+  ],
+  "speakingSeconds": 900,
+  "prepSeconds": 1800,
+  "sampleAnswer": {
+    "turns": [
+      {
+        "speaker": "candidate",
+        "text": "A tételem az egyenes vonalú egyenletesen változó mozgás. Egy mozgást akkor nevezünk egyenletesen változónak, ha a test sebessége egyenlő időközök alatt egyenlő mértékben változik, vagyis a gyorsulása állandó. A gyorsulás a sebességváltozás és az eltelt idő hányadosa, a = Δv/Δt, mértékegysége m/s². Ha a test nyugalomból indul, a sebessége v = a·t szerint nő, a megtett út pedig s = a/2 · t², tehát az idő négyzetével arányos. A sebesség–idő grafikon ezért origón átmenő egyenes, amelynek meredeksége a gyorsulás, a grafikon alatti háromszög területe pedig a megtett út. Az út–idő grafikon parabola. Ha a test kezdősebességgel indul, akkor v = v₀ + a·t és s = v₀·t + a/2 · t². Lassuló mozgásnál a gyorsulás a sebességgel ellentétes irányú, ilyen például egy fékező autó.\nA legfontosabb példa a szabadesés: légellenállás nélkül minden test ugyanakkora, g ≈ 9,81 m/s² gyorsulással esik, a tömegétől függetlenül. Ezt Galilei ismerte fel. Mivel a szabadesés túl gyors volt az akkori időméréshez, Galilei lejtőn guruló golyókkal „lelassította” a mozgást: a lejtőn a gyorsulás kisebb, de a mozgás jellege ugyanaz.\nA kísérletben én is ezt vizsgáltam. A golyót nyugalomból engedtem el a lejtő tetejéről, és stopperrel mértem, mennyi idő alatt ér a 0,25 m-es, 0,5 m-es, 1 m-es és 1,5 m-es jelhez; minden távolságnál háromszor mértem, és átlagoltam. Azt tapasztaltam, hogy 0,25 m-hez kb. 1 s, 1 m-hez kb. 2 s kellett, tehát négyszeres úthoz kétszeres idő. A 2s/t² hányados minden mérésnél közel 0,5 m/s² lett, vagyis állandó, ami azt jelenti, hogy az út az idő négyzetével arányos, a mozgás egyenletesen gyorsuló. A legnagyobb hibát a stopper kezelése okozza, mert a reakcióidőm kb. 0,2 s, ezért mértem többször és hosszabb utakon. A súrlódás és a golyó forgása csökkenti a gyorsulást, de az arányosságot nem rontja el."
+      },
+      {
+        "speaker": "examiner",
+        "text": "Hogyan változna a gyorsulás, ha meredekebbre állítanád a lejtőt?"
+      },
+      {
+        "speaker": "candidate",
+        "text": "Nőne, mert a nehézségi erő lejtővel párhuzamos összetevője, m·g·sin α, nagyobb lenne. Súrlódásmentesen csúszó testnél a gyorsulás g·sin α lenne, függőleges lejtőnél pedig visszakapnánk a szabadesést."
+      }
+    ],
+    "notes": [
+      "A felelet a fogalmaktól (gyorsulás, egyenletesen változó mozgás) a képleteken és a grafikonokon át a szabadesésig és Galilei lejtőjéig logikusan épül fel – ez a tartalom és a felépítés pontjait is hozza.",
+      "A kísérletet konkrét adatokkal mutatja be (0,25 m → 1 s, 1 m → 2 s, 2s/t² ≈ 0,5 m/s²), a tapasztalatból helyes következtetést von le (s ~ t²), és megnevezi a hibaforrásokat és csökkentésük módját – ez a kísérleti rész 20 pontjának kulcsa.",
+      "A vizsgáztató kérdésére a lejtőirányú erőösszetevővel (m·g·sin α) felel, ami mutatja, hogy a jelenséget dinamikailag is érti."
+    ]
+  }
+}

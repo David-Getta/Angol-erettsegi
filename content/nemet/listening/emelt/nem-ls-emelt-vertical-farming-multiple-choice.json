@@ -1,32 +1,101 @@
 {
+  "schemaVersion": 1,
+  "id": "nem-ls-emelt-vertical-farming-multiple-choice",
+  "subject": "nemet",
+  "revision": 1,
+  "level": "emelt",
+  "source": "generated",
   "topic": "tudomany",
   "title": "Salat aus dem Hochhaus",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "listening",
   "type": "multiple-choice",
   "instructions": "Sie hören ein Radiointerview mit einem Agrarwissenschaftler über vertikale Landwirtschaft. Wählen Sie die richtige Lösung (A, B, C oder D). Sie hören den Text zweimal. Am Anfang finden Sie ein Beispiel (0).",
   "instructionsHu": "Egy rádióinterjút hallasz egy agrártudóssal a vertikális (függőleges) gazdálkodásról. Válaszd ki a helyes megoldást (A, B, C vagy D). A felvételt kétszer hallod.",
   "listening": {
     "format": "interview",
     "speakers": [
-      { "id": "M", "name": "Moderatorin", "gender": "female", "accent": "de-DE", "age": "adult" },
-      { "id": "J", "name": "Dr. Jan Hellwig", "gender": "male", "accent": "de-DE", "age": "adult" }
+      {
+        "id": "M",
+        "name": "Moderatorin",
+        "gender": "female",
+        "accent": "de-DE",
+        "age": "adult"
+      },
+      {
+        "id": "J",
+        "name": "Dr. Jan Hellwig",
+        "gender": "male",
+        "accent": "de-DE",
+        "age": "adult"
+      }
     ],
     "script": [
-      { "speaker": "M", "text": "Willkommen zu „Wissen kompakt“. Salat, der nie einen Sonnenstrahl gesehen hat, Erdbeeren aus dem zehnten Stock: Was wie Science-Fiction klingt, wird in einigen deutschen Städten gerade Wirklichkeit. Mein Gast ist der Agrarwissenschaftler Dr. Jan Hellwig. Herr Hellwig, was genau ist eigentlich eine vertikale Farm?" },
-      { "speaker": "J", "text": "Im Grunde ist es ein Gewächshaus, das in die Höhe statt in die Breite wächst. Die Pflanzen stehen in Regalen übereinander, oft zehn oder zwölf Etagen hoch, und zwar in geschlossenen Räumen: in alten Lagerhallen, in Bürogebäuden, manchmal sogar in ehemaligen Bunkern. Statt Sonne gibt es LED-Licht, und statt Erde bekommen die Wurzeln eine Nährlösung." },
-      { "speaker": "M", "text": "Das klingt sehr technisch. Was ist der Vorteil?" },
-      { "speaker": "J", "text": "Der größte Vorteil ist der geringe Platzbedarf. Auf einem Quadratmeter Grundfläche kann man ein Vielfaches dessen ernten, was auf einem Acker wächst. Außerdem braucht man bis zu neunzig Prozent weniger Wasser, weil es im Kreislauf geführt wird. Und weil die Räume geschlossen sind, kommen keine Schädlinge hinein. Man kann also ganz auf Pestizide verzichten." },
-      { "speaker": "M", "text": "Das klingt fast zu schön, um wahr zu sein." },
-      { "speaker": "J", "text": "Ja, und da muss ich auch gleich bremsen. Das große Problem ist der Strom. Die Lampen laufen bis zu achtzehn Stunden am Tag, dazu kommen Klimaanlagen und Pumpen. Solange dieser Strom aus Kohle oder Gas kommt, ist die Klimabilanz einer vertikalen Farm oft schlechter als die eines normalen Gewächshauses. Ökologisch sinnvoll wird das Ganze erst mit erneuerbarer Energie." },
-      { "speaker": "M", "text": "Und was wächst dort? Kann ich bald Kartoffeln aus dem Hochhaus kaufen?" },
-      { "speaker": "J", "text": "Eher nicht. Kartoffeln, Getreide oder Mais brauchen viel Platz und bringen pro Kilo wenig Geld. Das lohnt sich nicht. Vertikale Farmen konzentrieren sich auf Pflanzen, die schnell wachsen und teuer verkauft werden können: Salate, Kräuter wie Basilikum, sogenannte Microgreens, manchmal auch Erdbeeren." },
-      { "speaker": "M", "text": "Wer kauft das?" },
-      { "speaker": "J", "text": "Bisher vor allem Restaurants und einige Supermärkte, die mit regionalen Produkten werben. Für sie zählt die Frische: Der Salat wird morgens geerntet und liegt mittags schon im Laden, ohne lange Transportwege aus Spanien oder Italien." },
-      { "speaker": "M", "text": "Einige Firmen in diesem Bereich sind in den letzten Jahren pleitegegangen. Woran liegt das?" },
-      { "speaker": "J", "text": "Vor allem an den stark gestiegenen Energiepreisen. Viele Start-ups hatten mit billigem Strom kalkuliert, und als der Preis stieg, ging die Rechnung nicht mehr auf. Das zeigt, wie empfindlich dieses Geschäftsmodell ist. Ich glaube trotzdem an die Technik, allerdings nicht als Ersatz für die Landwirtschaft, sondern als Ergänzung." },
-      { "speaker": "M", "text": "Wie meinen Sie das?" },
-      { "speaker": "J", "text": "Stellen Sie sich Regionen vor, in denen es kaum fruchtbaren Boden gibt, etwa in der Wüste, oder Stadtstaaten wie Singapur, die fast alle Lebensmittel importieren müssen. Dort kann eine vertikale Farm einen echten Unterschied machen. In Deutschland, wo wir genug Ackerland haben, wird sie dagegen eine Nische bleiben." },
-      { "speaker": "M", "text": "Zum Schluss: Haben Sie selbst schon Salat aus dem Regal gegessen?" },
-      { "speaker": "J", "text": "Fast jeden Tag in der Kantine unseres Instituts, wir bauen ihn nämlich im Keller an. Ehrlich gesagt schmeckt er genauso wie jeder andere Salat. Und das ist vielleicht das größte Kompliment." }
+      {
+        "speaker": "M",
+        "text": "Willkommen zu „Wissen kompakt“. Salat, der nie einen Sonnenstrahl gesehen hat, Erdbeeren aus dem zehnten Stock: Was wie Science-Fiction klingt, wird in einigen deutschen Städten gerade Wirklichkeit. Mein Gast ist der Agrarwissenschaftler Dr. Jan Hellwig. Herr Hellwig, was genau ist eigentlich eine vertikale Farm?"
+      },
+      {
+        "speaker": "J",
+        "text": "Im Grunde ist es ein Gewächshaus, das in die Höhe statt in die Breite wächst. Die Pflanzen stehen in Regalen übereinander, oft zehn oder zwölf Etagen hoch, und zwar in geschlossenen Räumen: in alten Lagerhallen, in Bürogebäuden, manchmal sogar in ehemaligen Bunkern. Statt Sonne gibt es LED-Licht, und statt Erde bekommen die Wurzeln eine Nährlösung."
+      },
+      {
+        "speaker": "M",
+        "text": "Das klingt sehr technisch. Was ist der Vorteil?"
+      },
+      {
+        "speaker": "J",
+        "text": "Der größte Vorteil ist der geringe Platzbedarf. Auf einem Quadratmeter Grundfläche kann man ein Vielfaches dessen ernten, was auf einem Acker wächst. Außerdem braucht man bis zu neunzig Prozent weniger Wasser, weil es im Kreislauf geführt wird. Und weil die Räume geschlossen sind, kommen keine Schädlinge hinein. Man kann also ganz auf Pestizide verzichten."
+      },
+      {
+        "speaker": "M",
+        "text": "Das klingt fast zu schön, um wahr zu sein."
+      },
+      {
+        "speaker": "J",
+        "text": "Ja, und da muss ich auch gleich bremsen. Das große Problem ist der Strom. Die Lampen laufen bis zu achtzehn Stunden am Tag, dazu kommen Klimaanlagen und Pumpen. Solange dieser Strom aus Kohle oder Gas kommt, ist die Klimabilanz einer vertikalen Farm oft schlechter als die eines normalen Gewächshauses. Ökologisch sinnvoll wird das Ganze erst mit erneuerbarer Energie."
+      },
+      {
+        "speaker": "M",
+        "text": "Und was wächst dort? Kann ich bald Kartoffeln aus dem Hochhaus kaufen?"
+      },
+      {
+        "speaker": "J",
+        "text": "Eher nicht. Kartoffeln, Getreide oder Mais brauchen viel Platz und bringen pro Kilo wenig Geld. Das lohnt sich nicht. Vertikale Farmen konzentrieren sich auf Pflanzen, die schnell wachsen und teuer verkauft werden können: Salate, Kräuter wie Basilikum, sogenannte Microgreens, manchmal auch Erdbeeren."
+      },
+      {
+        "speaker": "M",
+        "text": "Wer kauft das?"
+      },
+      {
+        "speaker": "J",
+        "text": "Bisher vor allem Restaurants und einige Supermärkte, die mit regionalen Produkten werben. Für sie zählt die Frische: Der Salat wird morgens geerntet und liegt mittags schon im Laden, ohne lange Transportwege aus Spanien oder Italien."
+      },
+      {
+        "speaker": "M",
+        "text": "Einige Firmen in diesem Bereich sind in den letzten Jahren pleitegegangen. Woran liegt das?"
+      },
+      {
+        "speaker": "J",
+        "text": "Vor allem an den stark gestiegenen Energiepreisen. Viele Start-ups hatten mit billigem Strom kalkuliert, und als der Preis stieg, ging die Rechnung nicht mehr auf. Das zeigt, wie empfindlich dieses Geschäftsmodell ist. Ich glaube trotzdem an die Technik, allerdings nicht als Ersatz für die Landwirtschaft, sondern als Ergänzung."
+      },
+      {
+        "speaker": "M",
+        "text": "Wie meinen Sie das?"
+      },
+      {
+        "speaker": "J",
+        "text": "Stellen Sie sich Regionen vor, in denen es kaum fruchtbaren Boden gibt, etwa in der Wüste, oder Stadtstaaten wie Singapur, die fast alle Lebensmittel importieren müssen. Dort kann eine vertikale Farm einen echten Unterschied machen. In Deutschland, wo wir genug Ackerland haben, wird sie dagegen eine Nische bleiben."
+      },
+      {
+        "speaker": "M",
+        "text": "Zum Schluss: Haben Sie selbst schon Salat aus dem Regal gegessen?"
+      },
+      {
+        "speaker": "J",
+        "text": "Fast jeden Tag in der Kantine unseres Instituts, wir bauen ihn nämlich im Keller an. Ehrlich gesagt schmeckt er genauso wie jeder andere Salat. Und das ist vielleicht das größte Kompliment."
+      }
     ]
   },
   "example": {
@@ -34,10 +103,22 @@
     "kind": "choice",
     "prompt": "Wo befinden sich vertikale Farmen meistens?",
     "options": [
-      { "key": "A", "text": "Auf Feldern am Stadtrand." },
-      { "key": "B", "text": "In geschlossenen Gebäuden." },
-      { "key": "C", "text": "Auf den Dächern von Hochhäusern." },
-      { "key": "D", "text": "In großen Gärten." }
+      {
+        "key": "A",
+        "text": "Auf Feldern am Stadtrand."
+      },
+      {
+        "key": "B",
+        "text": "In geschlossenen Gebäuden."
+      },
+      {
+        "key": "C",
+        "text": "Auf den Dächern von Hochhäusern."
+      },
+      {
+        "key": "D",
+        "text": "In großen Gärten."
+      }
     ],
     "answer": "B",
     "category": "detail",
@@ -50,10 +131,22 @@
       "kind": "choice",
       "prompt": "Was bekommen die Pflanzen statt Erde?",
       "options": [
-        { "key": "A", "text": "Sand aus der Region." },
-        { "key": "B", "text": "LED-Licht." },
-        { "key": "C", "text": "Eine Nährlösung." },
-        { "key": "D", "text": "Kompost aus der Stadt." }
+        {
+          "key": "A",
+          "text": "Sand aus der Region."
+        },
+        {
+          "key": "B",
+          "text": "LED-Licht."
+        },
+        {
+          "key": "C",
+          "text": "Eine Nährlösung."
+        },
+        {
+          "key": "D",
+          "text": "Kompost aus der Stadt."
+        }
       ],
       "answer": "C",
       "category": "detail",
@@ -70,10 +163,22 @@
       "kind": "choice",
       "prompt": "Warum braucht man in vertikalen Farmen keine Pestizide?",
       "options": [
-        { "key": "A", "text": "Weil in die geschlossenen Räume keine Schädlinge gelangen." },
-        { "key": "B", "text": "Weil die Pflanzen genetisch verändert sind." },
-        { "key": "C", "text": "Weil die Pflanzen für Schädlinge zu schnell wachsen." },
-        { "key": "D", "text": "Weil Pestizide in Gebäuden verboten sind." }
+        {
+          "key": "A",
+          "text": "Weil in die geschlossenen Räume keine Schädlinge gelangen."
+        },
+        {
+          "key": "B",
+          "text": "Weil die Pflanzen genetisch verändert sind."
+        },
+        {
+          "key": "C",
+          "text": "Weil die Pflanzen für Schädlinge zu schnell wachsen."
+        },
+        {
+          "key": "D",
+          "text": "Weil Pestizide in Gebäuden verboten sind."
+        }
       ],
       "answer": "A",
       "category": "detail",
@@ -90,10 +195,22 @@
       "kind": "choice",
       "prompt": "Was ist nach Dr. Hellwig das größte Problem vertikaler Farmen?",
       "options": [
-        { "key": "A", "text": "Sie verbrauchen sehr viel Wasser." },
-        { "key": "B", "text": "Sie brauchen zu viel Platz." },
-        { "key": "C", "text": "Ihre Produkte schmecken schlechter." },
-        { "key": "D", "text": "Sie verbrauchen sehr viel Strom." }
+        {
+          "key": "A",
+          "text": "Sie verbrauchen sehr viel Wasser."
+        },
+        {
+          "key": "B",
+          "text": "Sie brauchen zu viel Platz."
+        },
+        {
+          "key": "C",
+          "text": "Ihre Produkte schmecken schlechter."
+        },
+        {
+          "key": "D",
+          "text": "Sie verbrauchen sehr viel Strom."
+        }
       ],
       "answer": "D",
       "category": "detail",
@@ -110,10 +227,22 @@
       "kind": "choice",
       "prompt": "Unter welcher Bedingung ist eine vertikale Farm laut Dr. Hellwig umweltfreundlich?",
       "options": [
-        { "key": "A", "text": "Wenn sie in einem alten Bunker liegt." },
-        { "key": "B", "text": "Wenn sie mit Strom aus erneuerbaren Quellen betrieben wird." },
-        { "key": "C", "text": "Wenn die Lampen höchstens achtzehn Stunden laufen." },
-        { "key": "D", "text": "Wenn sie Kartoffeln und Getreide produziert." }
+        {
+          "key": "A",
+          "text": "Wenn sie in einem alten Bunker liegt."
+        },
+        {
+          "key": "B",
+          "text": "Wenn sie mit Strom aus erneuerbaren Quellen betrieben wird."
+        },
+        {
+          "key": "C",
+          "text": "Wenn die Lampen höchstens achtzehn Stunden laufen."
+        },
+        {
+          "key": "D",
+          "text": "Wenn sie Kartoffeln und Getreide produziert."
+        }
       ],
       "answer": "B",
       "category": "inference",
@@ -130,10 +259,22 @@
       "kind": "choice",
       "prompt": "Warum werden in vertikalen Farmen keine Kartoffeln angebaut?",
       "options": [
-        { "key": "A", "text": "Sie wachsen nicht ohne Erde." },
-        { "key": "B", "text": "Sie brauchen zu viel Licht." },
-        { "key": "C", "text": "Sie brauchen viel Platz und bringen wenig Geld." },
-        { "key": "D", "text": "Die Kunden wollen keine Kartoffeln aus dem Hochhaus." }
+        {
+          "key": "A",
+          "text": "Sie wachsen nicht ohne Erde."
+        },
+        {
+          "key": "B",
+          "text": "Sie brauchen zu viel Licht."
+        },
+        {
+          "key": "C",
+          "text": "Sie brauchen viel Platz und bringen wenig Geld."
+        },
+        {
+          "key": "D",
+          "text": "Die Kunden wollen keine Kartoffeln aus dem Hochhaus."
+        }
       ],
       "answer": "C",
       "category": "detail",
@@ -150,10 +291,22 @@
       "kind": "choice",
       "prompt": "Was ist für Restaurants und Supermärkte der wichtigste Vorteil?",
       "options": [
-        { "key": "A", "text": "Die Produkte sind besonders frisch." },
-        { "key": "B", "text": "Die Produkte sind billiger als importierte." },
-        { "key": "C", "text": "Die Produkte kommen aus Spanien." },
-        { "key": "D", "text": "Die Produkte sind besonders groß." }
+        {
+          "key": "A",
+          "text": "Die Produkte sind besonders frisch."
+        },
+        {
+          "key": "B",
+          "text": "Die Produkte sind billiger als importierte."
+        },
+        {
+          "key": "C",
+          "text": "Die Produkte kommen aus Spanien."
+        },
+        {
+          "key": "D",
+          "text": "Die Produkte sind besonders groß."
+        }
       ],
       "answer": "A",
       "category": "detail",
@@ -170,10 +323,22 @@
       "kind": "choice",
       "prompt": "Warum sind einige Firmen pleitegegangen?",
       "options": [
-        { "key": "A", "text": "Sie haben keine Kunden gefunden." },
-        { "key": "B", "text": "Ihre Technik hat nicht funktioniert." },
-        { "key": "C", "text": "Der Staat hat die Förderung gestoppt." },
-        { "key": "D", "text": "Sie hatten nicht mit so hohen Stromkosten gerechnet." }
+        {
+          "key": "A",
+          "text": "Sie haben keine Kunden gefunden."
+        },
+        {
+          "key": "B",
+          "text": "Ihre Technik hat nicht funktioniert."
+        },
+        {
+          "key": "C",
+          "text": "Der Staat hat die Förderung gestoppt."
+        },
+        {
+          "key": "D",
+          "text": "Sie hatten nicht mit so hohen Stromkosten gerechnet."
+        }
       ],
       "answer": "D",
       "category": "inference",
@@ -190,10 +355,22 @@
       "kind": "choice",
       "prompt": "Wie sieht Dr. Hellwig die Zukunft vertikaler Farmen in Deutschland?",
       "options": [
-        { "key": "A", "text": "Sie werden die normale Landwirtschaft ersetzen." },
-        { "key": "B", "text": "Sie werden nur eine kleine Rolle spielen." },
-        { "key": "C", "text": "Sie werden bald ganz verschwinden." },
-        { "key": "D", "text": "Sie werden vor allem in Wüstenregionen gebaut." }
+        {
+          "key": "A",
+          "text": "Sie werden die normale Landwirtschaft ersetzen."
+        },
+        {
+          "key": "B",
+          "text": "Sie werden nur eine kleine Rolle spielen."
+        },
+        {
+          "key": "C",
+          "text": "Sie werden bald ganz verschwinden."
+        },
+        {
+          "key": "D",
+          "text": "Sie werden vor allem in Wüstenregionen gebaut."
+        }
       ],
       "answer": "B",
       "category": "attitude",

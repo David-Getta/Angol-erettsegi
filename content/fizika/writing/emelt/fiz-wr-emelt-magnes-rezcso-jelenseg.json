@@ -1,0 +1,45 @@
+{
+  "schemaVersion": 1,
+  "id": "fiz-wr-emelt-magnes-rezcso-jelenseg",
+  "subject": "fizika",
+  "revision": 1,
+  "level": "emelt",
+  "source": "generated",
+  "topic": "elektromossag",
+  "title": "Jelenségértelmezés: a rézcsőben lassan eső mágnes",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "writing",
+  "type": "jelensegertelmezes",
+  "taskNumber": 4,
+  "situation": "Egy 1,5 m hosszú, függőlegesen tartott rézcsőbe felülről beejtünk egy kis, erős neodímium mágnest (tömege 20 g). A mágnes a csőben nem ér hozzá a falhoz, mégis kb. 6 s alatt ér le az aljára, miközben egy ugyanakkora, ugyanolyan tömegű, de nem mágneses acélhenger kevesebb mint 0,6 s alatt esik át a csövön. A videofelvétel szerint a mágnes a cső felső része után már gyakorlatilag állandó sebességgel esik. A réz nem mágnesezhető anyag: a mágnes egy rézlemezt nem vonz. (g = 10 m/s²)\n\n1. Miért esik lassan a mágnes a rézcsőben, ha a réz nem vonzza? Magyarázd el a jelenséget! (3 pont)\n2. Miért áll be a mágnes esése rövid idő után állandó sebességre? Mekkora ekkor a mágnesre ható fékezőerő? (3 pont)\n3. Mekkora a mágnes állandó sebessége, és mi lesz a mágnes helyzeti energiájával? Mekkora a fékezés teljesítménye? (4 pont)\n4. Mi változna, ha a rézcsövet hosszában végig felhasítanánk (keskeny rés)? (2 pont)",
+  "points": [
+    { "id": "p1", "text": "1. Az örvényáramok és Lenz törvénye: a lassú esés oka (3 pont)" },
+    { "id": "p2", "text": "2. Az állandó sebesség kialakulása, a fékezőerő nagysága (3 pont)" },
+    { "id": "p3", "text": "3. Az állandó sebesség, az energiaátalakulás és a fékezési teljesítmény (4 pont)" },
+    { "id": "p4", "text": "4. A felhasított cső hatása (2 pont)" }
+  ],
+  "suggestedMinutes": 35,
+  "usefulPhrases": [
+    { "en": "örvényáram", "hu": "A tömör vezetőben a fluxusváltozás hatására körbefolyó indukált áram." },
+    { "en": "Lenz törvénye", "hu": "Az indukált áram akadályozza az őt létrehozó változást – itt a mágnes mozgását fékezi." },
+    { "en": "a fékezőerő a sebességgel nő", "hu": "Gyorsabb mozgás → gyorsabb fluxusváltozás → nagyobb indukált áram → nagyobb fékezőerő." },
+    { "en": "határsebesség: m·g = F_fék", "hu": "Állandó sebességnél az eredő erő nulla." },
+    { "en": "P = F·v", "hu": "A fékezőerő teljesítménye; állandó sebességnél egyenlő a helyzeti energia csökkenésének ütemével." },
+    { "en": "Joule-hő", "hu": "Az örvényáramok a cső ellenállásán hőt fejlesztenek – ide kerül a helyzeti energia." }
+  ],
+  "modelAnswer": {
+    "text": "1. A réz ugyan nem mágnesezhető, de jó elektromos vezető. Ahogy a mágnes esik, a cső minden „gyűrűnyi” szeletén áthaladó mágneses fluxus változik: a mágnes alatt lévő szakaszokon nő, a fölötte lévőkön csökken. A fluxusváltozás Faraday indukciós törvénye szerint feszültséget indukál, és mivel a cső fala zárt vezetőhurkokat alkot, a cső kerülete mentén körbefolyó örvényáramok jönnek létre. Lenz törvénye szerint ezek iránya olyan, hogy akadályozzák az őket létrehozó változást, vagyis a mágnes mozgását: a mágnes alatti áramgyűrű taszítja, a fölötte lévő vonzza a mágnest, tehát mindkettő felfelé, a mozgással ellentétesen hat rá. Az acélhengernél nincs mágneses mező, így nincs fluxusváltozás és fékezés sem: az szinte szabadon esik (1,5 m-en t = √(2h/g) ≈ 0,55 s).\n\n2. Az indukált feszültség és vele az örvényáramok erőssége a fluxusváltozás sebességével, azaz a mágnes sebességével arányos, ezért a fékezőerő a sebességgel nő. Kezdetben a mágnes lassú, a fékezőerő kicsi, a nehézségi erő gyorsítja. Ahogy a sebesség nő, a fékezőerő is nő, amíg el nem éri a nehézségi erőt. Ekkor az eredő erő nulla, és a mágnes állandó (határ)sebességgel esik. Ekkor a fékezőerő F_fék = m·g = 0,020 kg · 10 m/s² = 0,20 N.\n\n3. Mivel a mágnes szinte végig állandó sebességgel esik, v ≈ h/t = 1,5 m / 6 s = 0,25 m/s. A helyzeti energia csökkenése E_h = m·g·h = 0,020 · 10 · 1,5 J = 0,30 J, a mágnes mozgási energiája viszont csak ½·m·v² = ½ · 0,020 · 0,25² J ≈ 6 · 10⁻⁴ J. A helyzeti energia tehát szinte teljes egészében az örvényáramok elektromos energiájává, majd a cső ellenállásán Joule-hővé alakul: a cső (nagyon kicsit) felmelegszik. A fékezés teljesítménye P = F_fék·v = 0,20 N · 0,25 m/s = 0,05 W, ami egyenlő a helyzeti energia csökkenésének ütemével (m·g·v).\n\n4. A hosszanti rés megszakítja a cső kerülete mentén körbefolyó áramok útját, ezért nagy körbefolyó örvényáramok nem alakulhatnak ki; csak a rés két oldalán záródó, gyengébb áramok maradnak. A fékezőerő jóval kisebb lesz, ezért a mágnes nagyobb sebességgel, rövidebb idő alatt esik át a csövön (de még mindig lassabban, mint a szabadon eső acélhenger).",
+    "pointsCovered": [
+      { "id": "p1", "quote": "a cső kerülete mentén körbefolyó örvényáramok jönnek létre" },
+      { "id": "p2", "quote": "F_fék = m·g = 0,020 kg · 10 m/s² = 0,20 N" },
+      { "id": "p3", "quote": "P = F_fék·v = 0,20 N · 0,25 m/s = 0,05 W" },
+      { "id": "p4", "quote": "A hosszanti rés megszakítja a cső kerülete mentén körbefolyó áramok útját" }
+    ],
+    "notes": [
+      "Eredmény: a jelenség oka (örvényáramok + Lenz-törvény), a határsebesség kialakulása, a 0,20 N-os fékezőerő, a 0,25 m/s-os sebesség, a 0,30 J helyzeti energia sorsa és a 0,05 W-os teljesítmény mind helyes.",
+      "Indoklás: minden lépésnél megnevezi a felhasznált törvényt (Faraday, Lenz, Newton I. törvénye a határsebességnél, energiamegmaradás), és az acélhengerrel való összevetést számolással is alátámasztja.",
+      "Értelmezés: az energiamérleget nem csak felírja, hanem értelmezi is (a mozgási energia elhanyagolható, a helyzeti energia hővé alakul), a 4. kérdésnél pedig az áramok útjával érvel – ez az, amit egy jelenségértelmező feladat értékel."
+    ]
+  }
+}

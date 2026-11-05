@@ -1,0 +1,85 @@
+{
+  "schemaVersion": 1,
+  "id": "bio-sp-emelt-a-feherjeszintezis",
+  "subject": "biologia",
+  "revision": 1,
+  "level": "emelt",
+  "source": "generated",
+  "topic": "genetika",
+  "title": "A genetikai információ kifejeződése: a fehérjeszintézis",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "speaking",
+  "type": "a-tetel",
+  "partNumber": 1,
+  "instructionsHu": "A) altétel – elméleti kifejtés. Mutasd be, hogyan valósul meg a DNS-ben tárolt információ a fehérjék szintjén! A kifejtés során fordítsd le a forrásban megadott mRNS-szakaszt, és mutass be egy példát arra, hogyan hat egy mutáció a fehérjére!",
+  "prompts": [
+    "A DNS és az RNS felépítésének különbségei; az RNS-típusok szerepe.",
+    "A transzkripció menete és helye; az eukarióta mRNS érése.",
+    "A genetikai kód tulajdonságai.",
+    "A transzláció menete a riboszómán (a forrás mRNS-szakaszának fordításával).",
+    "A pontmutációk hatása a fehérjére egy példán keresztül."
+  ],
+  "followUpQuestions": [
+    "Miért mondjuk, hogy a genetikai kód majdnem egyetemes, és mi ennek a jelentősége a géntechnológiában?",
+    "Mi a különbség a prokarióta és az eukarióta génkifejeződés között?"
+  ],
+  "usefulPhrases": [
+    {
+      "en": "transzkripció – transzláció",
+      "hu": "átírás (DNS → mRNS) – fordítás (mRNS → fehérje)"
+    },
+    {
+      "en": "kodon – antikodon",
+      "hu": "az mRNS bázishármasa – a tRNS párosodó bázishármasa"
+    },
+    {
+      "en": "intron – exon",
+      "hu": "kivágódó – a kész mRNS-ben maradó szakasz"
+    },
+    {
+      "en": "degenerált kód",
+      "hu": "egy aminosavat több kodon is kódolhat"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Kódszótár-részlet (mRNS-kodonok)",
+      "text": "AUG – metionin (start); GCA – alanin; UUU – fenilalanin; GGA – glicin; GAG – glutaminsav; GUG – valin; UAA, UAG, UGA – stop."
+    },
+    {
+      "title": "Lefordítandó mRNS-szakasz (5'→3')",
+      "text": "AUG GCA UUU GGA UAA"
+    },
+    {
+      "title": "Esettanulmány",
+      "text": "A sarlósejtes vérszegénységben a hemoglobin béta-láncának hatodik aminosavát kódoló szakaszban egyetlen bázis megváltozik: az mRNS-ben GAG helyett GUG kodon áll."
+    }
+  ],
+  "keyPoints": [
+    "A DNS kettős szálú, dezoxiribózt és timint tartalmaz; az RNS egyszálú, ribózt és uracilt tartalmaz.",
+    "mRNS: az információ szállítója; tRNS: aminosavat szállít, antikodonja van; rRNS: a riboszóma alkotója.",
+    "Transzkripció a sejtmagban: az RNS-polimeráz a DNS egyik (értelmes, templát) szálát olvasva a bázispárosodás szabályai szerint mRNS-t szintetizál.",
+    "Eukariótákban az elsődleges átirat érik: az intronok kivágódnak, az exonok összekapcsolódnak, sapka és poli-A farok kerül rá.",
+    "A genetikai kód: bázishármas (triplet), átfedésmentes, vesszőmentes, degenerált (egy aminosavnak több kodonja lehet), egyértelmű, majdnem egyetemes; AUG start, három stopkodon.",
+    "Transzláció a citoplazmában, riboszómán: a tRNS antikodonja a kodonhoz párosodik, az aminosavak között peptidkötés jön létre; a stopkodonnál a lánc leválik.",
+    "A forrás szakaszának fordítása: metionin – alanin – fenilalanin – glicin, majd stop (tetrapeptid).",
+    "Sarlósejtes vérszegénység: GAG → GUG, glutaminsav helyett valin (pontmutáció, aminosavcsere); a hemoglobin oxigénhiányban kicsapódik, a vörösvérsejt sarló alakú lesz.",
+    "Néma mutáció (a degenerált kód miatt nem változik az aminosav), értelmetlen mutáció (stopkodon jön létre, rövidebb fehérje), kereteltolódás (inszerció/deléció)."
+  ],
+  "speakingSeconds": 480,
+  "prepSeconds": 900,
+  "sampleAnswer": {
+    "turns": [
+      {
+        "speaker": "candidate",
+        "text": "A sejt felépítését és működését a fehérjék határozzák meg, a fehérjék aminosav-sorrendjét pedig a DNS bázissorrendje kódolja. A DNS kettős szálú, cukra a dezoxiribóz, bázisai az adenin, guanin, citozin és timin. Az RNS egyszálú, ribózt tartalmaz, és timin helyett uracil van benne. A fehérjeszintézisben háromféle RNS vesz részt: a hírvivő mRNS szállítja az információt, a szállító tRNS hozza az aminosavakat, a riboszomális rRNS pedig a riboszóma alkotója.\nAz első lépés a transzkripció, amely eukariótákban a sejtmagban történik. Az RNS-polimeráz enzim a gén szakaszán szétnyitja a kettős spirált, és az egyik szálat mintaként olvasva a bázispárosodás szabálya szerint – adeninnel szemben uracil, guaninnal szemben citozin – mRNS-t szintetizál. Eukariótákban ez az elsődleges átirat még érik: a nem kódoló szakaszok, az intronok kivágódnak, az exonok összekapcsolódnak, majd az érett mRNS a sejtmagpórusokon át a citoplazmába jut.\nA genetikai kód bázishármasokon, kodonokon alapul. Egy kodon egy aminosavat jelent, a kód egyértelmű, de degenerált, mert egy aminosavnak több kodonja is lehet; átfedés- és vesszőmentes, és szinte minden élőlényben ugyanaz. Az AUG a startkodon, és háromféle stopkodon van.\nA transzláció a riboszómán zajlik. A tRNS-ek egyik végükön a megfelelő aminosavat kötik, a másikon antikodonjuk van, amely a kodonhoz párosodik. A riboszóma kodonról kodonra halad, és a szomszédos aminosavak között peptidkötést hoz létre. A forrás szakasza alapján: AUG metionin, GCA alanin, UUU fenilalanin, GGA glicin, az UAA pedig stop – a termék egy négy aminosavból álló peptid: metionin–alanin–fenilalanin–glicin.\nA mutáció a bázissorrend megváltozása. A sarlósejtes vérszegénységben egyetlen bázis cserélődik: a GAG kodonból GUG lesz, így a béta-lánc hatodik helyén glutaminsav helyett valin áll. Ez a kis változás megváltoztatja a hemoglobin tulajdonságait: oxigénhiányban a molekulák összekapcsolódnak, a vörösvérsejt sarló alakúvá válik, elakad a hajszálerekben, és vérszegénységet okoz. Ha viszont a csere egy aminosavat nem változtat meg – a kód degeneráltsága miatt –, néma mutációról beszélünk; ha stopkodon keletkezik, a fehérje megrövidül és többnyire működésképtelen."
+      }
+    ],
+    "notes": [
+      "Tartalom: a DNS–RNS összevetéstől a transzkripción, az érésen és a kód tulajdonságain át a transzlációig minden lényeges elem pontosan szerepel, helyes szakkifejezésekkel.",
+      "Összefüggések, alkalmazás: a forrás mRNS-szakaszát helyesen fordítja le, és a sarlósejtes vérszegénység példáján megmutatja, hogyan vezet egyetlen bázis cseréje fenotípusos változáshoz; a néma és az értelmetlen mutációt a kód tulajdonságaihoz köti.",
+      "Felépítés: a gondolatmenet a folyamat sorrendjét követi (információtárolás → átírás → kód → fordítás → zavar), önálló, folyamatos előadás."
+    ]
+  }
+}

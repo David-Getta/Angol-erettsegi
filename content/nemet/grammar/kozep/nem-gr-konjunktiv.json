@@ -1,0 +1,184 @@
+{
+  "schemaVersion": 1,
+  "id": "nem-gr-konjunktiv",
+  "subject": "nemet",
+  "level": "kozep",
+  "source": "generated",
+  "topic": "nyelvtan",
+  "title": "Konjunktiv II, feltételes mondat",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "grammar",
+  "type": "lesson",
+  "category": "konjunktiv",
+  "summaryHu": "A Konjunktiv II a német feltételes mód: irreális feltételt (Wenn ich Zeit hätte, …), kívánságot (Wenn ich doch …!), udvarias kérést (Könnten Sie …?) és tanácsot (Du solltest …) fejez ki. A legtöbb igénél würde + főnévi igenév, a sein, haben és a módbeli segédigéknél saját alak (wäre, hätte, könnte) használatos. A magyar „ha” valós és irreális feltételre egyaránt jó, ezért a magyar tanulók keverik a módokat (Wenn ich Geld hätte, kaufe ich …), és a würde-t a wenn-es mellékmondatba is beteszik. Írásban – különösen a kérésnél, javaslatnál és véleménynél – a Konjunktiv II a hangnem és a nyelvi igényesség fontos jele.",
+  "rules": [
+    {
+      "title": "würde + főnévi igenév",
+      "explanation": "A legtöbb igénél a Konjunktiv II jelen ideje a würde (a werden Konjunktiv II alakja) + főnévi igenév a mondat végén. A würde ragozása: ich würde, du würdest, er würde, wir würden, ihr würdet, sie/Sie würden.",
+      "emeltOnly": false,
+      "examples": [
+        { "en": "Ich würde gern einmal nach Japan reisen.", "hu": "Szívesen elutaznék egyszer Japánba." },
+        { "en": "Würdest du mir bitte das Salz geben?", "hu": "Ideadnád, kérlek, a sót?" }
+      ]
+    },
+    {
+      "title": "Saját alakok: wäre, hätte, könnte …",
+      "explanation": "A sein, a haben és a módbeli segédigék saját Konjunktiv II alakot használnak (würde helyett): sein → wäre (wärst, wäre, wären, wärt, wären); haben → hätte (hättest, hätte, hätten, hättet, hätten); können → könnte, müssen → müsste, dürfen → dürfte, sollen → sollte (Umlaut nélkül), wollen → wollte, mögen → möchte; továbbá wissen → wüsste, es gibt → es gäbe. Néhány gyakori erős igének is van saját alakja (käme, ginge, bliebe), de ezek helyett a würde + főnévi igenév is helyes.",
+      "emeltOnly": false,
+      "examples": [
+        { "en": "Es wäre schön, wenn du kommen könntest.", "hu": "Jó lenne, ha el tudnál jönni." },
+        { "en": "Ich hätte gern ein Zimmer für zwei Nächte.", "hu": "Szeretnék egy szobát két éjszakára." },
+        { "en": "Wenn ich das wüsste, würde ich es dir sagen.", "hu": "Ha tudnám, megmondanám neked." }
+      ]
+    },
+    {
+      "title": "Valós és irreális feltétel",
+      "explanation": "Valós (teljesülhető) feltétel: kijelentő mód mindkét tagmondatban – Wenn es morgen regnet, bleiben wir zu Hause. Irreális (nem valós, elképzelt) feltétel a jelenre vagy jövőre: Konjunktiv II mindkét tagmondatban – Wenn ich mehr Geld hätte, würde ich ein Auto kaufen. A wenn-es mellékmondatban a sein/haben/módbeli segédigék saját alakja áll (hätte, wäre, könnte), a würde-t inkább a főmondatban használjuk. Az elöl álló mellékmondat után a főmondat igével kezdődik.",
+      "emeltOnly": false,
+      "examples": [
+        { "en": "Wenn ich Zeit habe, rufe ich dich an.", "hu": "Ha lesz időm, felhívlak.", "note": "Valós feltétel → kijelentő mód." },
+        { "en": "Wenn ich Zeit hätte, würde ich dich besuchen.", "hu": "Ha lenne időm, meglátogatnálak.", "note": "Irreális → Konjunktiv II mindkét részben." },
+        { "en": "Ich an deiner Stelle würde mit dem Lehrer sprechen.", "hu": "A helyedben beszélnék a tanárral." }
+      ]
+    },
+    {
+      "title": "Kívánság: bárcsak …",
+      "explanation": "Nem teljesülő kívánság: Wenn … doch/nur + Konjunktiv II (az ige a végén), vagy wenn nélkül az igével kezdve: Hätte ich doch mehr Zeit! A „bárcsak” jelentést az Ich wünschte, … + Konjunktiv II is kifejezi.",
+      "emeltOnly": false,
+      "examples": [
+        { "en": "Wenn ich doch nur ein bisschen größer wäre!", "hu": "Bárcsak egy kicsit magasabb lennék!" },
+        { "en": "Ich wünschte, es wären schon Ferien.", "hu": "Bárcsak már szünidő lenne!" }
+      ]
+    },
+    {
+      "title": "Udvarias kérés, javaslat, tanács",
+      "explanation": "Kérés: Könnten Sie mir bitte helfen? Würden Sie mir bitte … schicken? Ich hätte gern … Ich würde gern wissen, … Javaslat: Wir könnten am Samstag ins Kino gehen. Wie wäre es mit …? Tanács: Du solltest mehr schlafen. An deiner Stelle würde ich … Hivatalos levélben az Ich wäre Ihnen dankbar, wenn Sie … szerkezet is nagyon hasznos.",
+      "emeltOnly": false,
+      "examples": [
+        { "en": "Könnten Sie mir bitte weitere Informationen schicken?", "hu": "Tudna nekem küldeni további információkat?" },
+        { "en": "Wie wäre es mit einem Picknick am Sonntag?", "hu": "Mit szólnál egy vasárnapi pikniknek?" },
+        { "en": "Du solltest dich bei ihr entschuldigen.", "hu": "Bocsánatot kellene kérned tőle." }
+      ]
+    },
+    {
+      "title": "Múltbeli irreális feltétel: hätte/wäre + Partizip II",
+      "explanation": "Ha a feltétel a múltban nem teljesült: hätte/wäre + Partizip II mindkét tagmondatban (a haben/sein választása olyan, mint a Perfektnél): Wenn ich das gewusst hätte, wäre ich früher gekommen. Módbeli segédigével két főnévi igenév áll: Du hättest mich anrufen sollen (fel kellett volna hívnod). A wenn el is hagyható, ekkor az ige kerül előre: Hätte ich das gewusst, …",
+      "emeltOnly": true,
+      "examples": [
+        { "en": "Wenn wir den Bus nicht verpasst hätten, wären wir pünktlich gewesen.", "hu": "Ha nem késtük volna le a buszt, pontosak lettünk volna." },
+        { "en": "Du hättest mir das früher sagen sollen.", "hu": "Ezt korábban kellett volna mondanod." }
+      ]
+    },
+    {
+      "title": "als ob és a Konjunktiv I a függő beszédben",
+      "explanation": "Az als ob / als (mintha) után Konjunktiv II áll: Er tut so, als ob er krank wäre / als wäre er krank. A sajtónyelvben a mások szavainak közvetítésére Konjunktiv I-et használnak, amelyet felismerni kell: Er sagt, er sei krank. Sie erklärte, sie habe keine Zeit. Der Minister betonte, man werde das Problem lösen.",
+      "emeltOnly": true,
+      "examples": [
+        { "en": "Sie sieht aus, als hätte sie die ganze Nacht nicht geschlafen.", "hu": "Úgy néz ki, mintha egész éjjel nem aludt volna." },
+        { "en": "Der Trainer sagte, die Mannschaft sei gut vorbereitet.", "hu": "Az edző azt mondta, hogy a csapat jól felkészült." }
+      ]
+    }
+  ],
+  "commonMistakes": [
+    { "wrong": "Wenn ich reich wäre, ich würde eine Weltreise machen.", "right": "Wenn ich reich wäre, würde ich eine Weltreise machen.", "why": "Az elöl álló wenn-es mellékmondat a főmondat első helye, ezért utána közvetlenül a ragozott ige (würde) jön, aztán az alany." },
+    { "wrong": "Wenn ich mehr Zeit würde haben, würde ich mehr Sport machen.", "right": "Wenn ich mehr Zeit hätte, würde ich mehr Sport machen.", "why": "A haben Konjunktiv II alakja hätte – a würde haben helyett ezt használjuk, különösen a wenn-es mellékmondatban, ahol a ragozott ige a végén áll." },
+    { "wrong": "Wenn ich mehr Geld hätte, kaufe ich ein Auto.", "right": "Wenn ich mehr Geld hätte, würde ich ein Auto kaufen.", "why": "Irreális feltételnél mindkét tagmondat Konjunktiv II-ben áll. A magyar „ha lenne pénzem, vennék …” mindkét részében feltételes mód van – a németben is." },
+    { "wrong": "Ich würde gern einen Kaffee.", "right": "Ich hätte gern einen Kaffee. / Ich möchte einen Kaffee.", "why": "A würde után mindig főnévi igenév kell (Ich würde gern einen Kaffee trinken). Rendeléskor a hätte gern vagy a möchte a természetes." },
+    { "wrong": "Wenn es morgen regnen würde, bleiben wir zu Hause.", "right": "Wenn es morgen regnet, bleiben wir zu Hause.", "why": "Valós, teljesülhető feltételnél mindkét tagmondat kijelentő módban áll. Ne keverd a módokat: vagy mindkettő Indikativ, vagy (elképzelt helyzetnél) mindkettő Konjunktiv II." },
+    { "wrong": "Wenn ich das gewusst habe, wäre ich gekommen.", "right": "Wenn ich das gewusst hätte, wäre ich gekommen.", "why": "Múltbeli irreális feltételben mindkét tagmondatban a Konjunktiv II múlt ideje áll: hätte/wäre + Partizip II." }
+  ],
+  "examTips": [
+    "Írásban (hivatalos levél) a kérést mindig Konjunktiv II-vel fogalmazd meg: Könnten Sie mir bitte mitteilen, …? Ich wäre Ihnen dankbar, wenn … – ez a hangnem szempontnál is számít.",
+    "Szóbeli vitában és képleírásnál a feltételezés kifejezései (Ich würde sagen, … Es könnte sein, dass … Wenn ich wählen müsste, würde ich …) természetesebbé és igényesebbé teszik a beszédet.",
+    "Igealakok feladatban a wenn-es irreális mellékmondatba a saját alakot írd (hätte, wäre, könnte, müsste), a főmondatba pedig würde + főnévi igenevet – a würde a wenn-es tagmondatban kerülendő.",
+    "Hallás- és olvasásértésnél figyelj a Konjunktiv II-re: a würde/hätte/wäre jelzi, hogy valami NEM valóság, csak terv, kívánság vagy feltételezés – ez igaz/hamis feladatoknál döntő lehet."
+  ],
+  "practice": [
+    {
+      "id": "1",
+      "kind": "choice",
+      "prompt": "Wenn ich mehr Zeit ___, würde ich ein Instrument lernen.",
+      "options": [
+        { "key": "A", "text": "habe" },
+        { "key": "B", "text": "hätte" },
+        { "key": "C", "text": "hatte" },
+        { "key": "D", "text": "würde" }
+      ],
+      "answer": "B",
+      "category": "konjunktiv",
+      "explanation": "Helyes: hätte. Irreális jelen idejű feltétel (ha lenne időm, de nincs): a wenn-es mellékmondatban a haben Konjunktiv II alakja, hätte áll, a főmondatban würde + főnévi igenév.",
+      "wrongOptions": {
+        "A": "A habe kijelentő mód; a főmondat würde-je mutatja, hogy irreális feltételről van szó, ezért a mellékmondat is Konjunktiv II.",
+        "C": "A hatte kijelentő módú Präteritum (volt); Umlaut nélkül nem feltételes mód.",
+        "D": "A würde mellé főnévi igenév kellene (würde … haben), ami a hiányba egy szóként nem fér, és a wenn-es tagmondatban amúgy is a hätte a helyes forma."
+      }
+    },
+    {
+      "id": "2",
+      "kind": "text",
+      "prompt": "An deiner Stelle ___ (werden) ich sofort mit dem Lehrer sprechen.",
+      "cue": "werden",
+      "answer": ["würde"],
+      "category": "konjunktiv",
+      "explanation": "Helyes: würde. Tanácsot adunk egy elképzelt helyzetben (a helyedben …), ezért Konjunktiv II kell: würde + főnévi igenév (sprechen). Az an deiner Stelle az első helyen áll, ezért utána közvetlenül az ige jön."
+    },
+    {
+      "id": "3",
+      "kind": "choice",
+      "prompt": "Im Hotel: „Guten Tag, ich ___ gern ein Doppelzimmer für zwei Nächte.”",
+      "options": [
+        { "key": "A", "text": "würde" },
+        { "key": "B", "text": "hätte" },
+        { "key": "C", "text": "habe" },
+        { "key": "D", "text": "wäre" }
+      ],
+      "answer": "B",
+      "category": "konjunktiv",
+      "explanation": "Helyes: hätte. Az Ich hätte gern … (szeretnék …) a szokásos udvarias kérés, ha valamit kérünk, rendelünk; főnévi igenév nem kell utána.",
+      "wrongOptions": {
+        "A": "A würde után főnévi igenévnek kellene állnia (würde gern … buchen); egymagában a mondat hiányos.",
+        "C": "Az Ich habe gern … azt jelenti, hogy szeretem / kedvelem – nem kérés.",
+        "D": "A wäre a sein alakja (lenne); az Ich wäre gern ein Doppelzimmer értelmetlen („szívesen lennék egy kétágyas szoba”)."
+      }
+    },
+    {
+      "id": "4",
+      "kind": "text",
+      "prompt": "Es ___ (sein) toll, wenn du zu meiner Geburtstagsparty kommen könntest!",
+      "cue": "sein",
+      "answer": ["wäre"],
+      "category": "konjunktiv",
+      "explanation": "Helyes: wäre. Kívánságot, elképzelt helyzetet fejezünk ki (jó lenne, ha …), és a mellékmondatban is Konjunktiv II áll (könntest); a sein Konjunktiv II alakja wäre."
+    },
+    {
+      "id": "5",
+      "kind": "choice",
+      "prompt": "Tanácsot adsz egy barátodnak: „Du siehst müde aus. Du ___ früher ins Bett gehen.”",
+      "options": [
+        { "key": "A", "text": "solltest" },
+        { "key": "B", "text": "sollst" },
+        { "key": "C", "text": "solltet" },
+        { "key": "D", "text": "wolltest" }
+      ],
+      "answer": "A",
+      "category": "konjunktiv",
+      "explanation": "Helyes: solltest. A tanácsot a sollen Konjunktiv II alakja fejezi ki: du solltest (…-nod kellene).",
+      "wrongOptions": {
+        "B": "A du sollst kijelentő mód: valaki más utasítását, elvárását közvetíti (azt mondták, hogy …), nem baráti tanács.",
+        "C": "A solltet az ihr-alak; az alany itt du.",
+        "D": "A wolltest a wollen alakja (akartál / akarnál); tanácsot nem fejez ki."
+      }
+    },
+    {
+      "id": "6",
+      "kind": "text",
+      "prompt": "Wenn ich das gewusst ___ (haben), wäre ich früher gekommen.",
+      "cue": "haben",
+      "answer": ["hätte"],
+      "category": "konjunktiv",
+      "explanation": "Helyes: hätte. Múltbeli irreális feltétel (ha tudtam volna – de nem tudtam): hätte/wäre + Partizip II mindkét tagmondatban. A wissen haben-nel képzi az összetett múltat: gewusst hätte."
+    }
+  ],
+  "relatedCategories": ["modal", "conjunction", "word-order"]
+}

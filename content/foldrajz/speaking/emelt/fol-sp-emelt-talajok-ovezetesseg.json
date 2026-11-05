@@ -1,0 +1,88 @@
+{
+  "schemaVersion": 1,
+  "id": "fol-sp-emelt-talajok-ovezetesseg",
+  "subject": "foldrajz",
+  "revision": 1,
+  "level": "emelt",
+  "source": "generated",
+  "topic": "vizburok-talaj",
+  "title": "A talajok képződése és övezetes elrendeződése",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "speaking",
+  "type": "termeszetfoldrajz-tetel",
+  "partNumber": 1,
+  "instructionsHu": "Mutassa be a talajképződés tényezőit és folyamatát, a legfontosabb övezetes talajtípusokat, valamint Magyarország talajait és a talajpusztulás formáit! Használja a mellékelt forrásokat és az atlaszt!",
+  "prompts": [
+    "Milyen tényezők befolyásolják a talajképződést, és milyen szintekből áll a talaj?",
+    "Hasonlítsa össze a mezőségi talaj, a barna erdőtalaj, a podzol és a laterit képződését és termékenységét!",
+    "Milyen talajtípusok jellemzők Magyarországra, és milyen talajpusztulási folyamatok veszélyeztetik őket?",
+    "Topográfia: mutassa meg Ukrajna csernozjomövét, a Mezőföldet, a Hajdúságot, a Hortobágyot és a Nyírséget!"
+  ],
+  "followUpQuestions": [
+    "Miért alakultak ki szikes talajok a Hortobágyon?",
+    "Miért nem marad termékeny hosszú ideig az esőerdő kiirtása után a talaj?"
+  ],
+  "usefulPhrases": [
+    {
+      "en": "talajképző tényezők",
+      "hu": "alapkőzet, éghajlat, élővilág, domborzat, víz, idő, ember"
+    },
+    {
+      "en": "humusz",
+      "hu": "a talaj elbomlott szerves anyaga; a termékenység legfontosabb forrása"
+    },
+    {
+      "en": "kilúgozás",
+      "hu": "a lefelé szivárgó víz kimossa a tápanyagokat a felső szintből"
+    },
+    {
+      "en": "zonális / azonális talaj",
+      "hu": "az éghajlati övezethez kötődő, illetve attól független (pl. szikes, öntés-) talaj"
+    },
+    {
+      "en": "defláció, erózió",
+      "hu": "a szél, illetve a víz talajpusztító munkája"
+    },
+    {
+      "en": "szikesedés",
+      "hu": "a nátriumsók felhalmozódása a talajban"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Két talajszelvény leírása",
+      "text": "1. szelvény: kb. 1 m vastag, sötétbarna-fekete, morzsalékos, humuszban gazdag felső szint, alatta meszes löszalapkőzet; a környéken füves puszta volt, ma szántó. 2. szelvény: vékony avarréteg alatt 10–15 cm-es hamuszürke, kifakult szint, alatta rozsdabarna felhalmozódási szint; a terület tűlevelű erdővel borított, hideg, csapadékos éghajlatú."
+    },
+    {
+      "title": "Hazai adat",
+      "text": "Magyarország területének nagy része mezőgazdasági terület; az Alföld löszháton és a Mezőföldön kiváló mezőségi talajok vannak, a Hortobágyon szikes talajok, a Nyírségben és a Duna–Tisza közén homoktalajok jellemzők. A szántók jelentős részét víz- és szélerózió veszélyezteti."
+    }
+  ],
+  "keyPoints": [
+    "A talaj a földkéreg legfelső, laza, termékeny rétege; képződését az alapkőzet, az éghajlat, az élővilág, a domborzat, a víz, az idő és az ember befolyásolja.",
+    "Talajszintek: humuszos (A), kilúgozási/felhalmozódási (B), alapkőzet (C); a termékenységet a humusz- és tápanyagtartalom, a szerkezet és a vízgazdálkodás adja.",
+    "Mezőségi talaj (csernozjom): füves puszta, sok humusz, mérsékelt csapadék, alig kilúgozott → a legtermékenyebb (1. szelvény).",
+    "Barna erdőtalaj: lombhullató erdő, közepes humusz, mérsékelt kilúgozás → közepesen termékeny.",
+    "Podzol: tajga, savanyú avar, hideg-csapadékos éghajlat, erős kilúgozás, kifakult szint → terméketlen (2. szelvény).",
+    "Laterit: forró-nedves övezet, erős kémiai mállás és kilúgozás, vas- és alumínium-oxidok → terméketlen, gyorsan kimerül.",
+    "Magyarország: mezőségi talajok (Mezőföld, Hajdúság, Körös–Maros köze), barna erdőtalajok a dombságokon, szikes talajok (Hortobágy), homoktalajok (Nyírség, Duna–Tisza köze), öntéstalajok az ártereken.",
+    "Talajpusztulás: víz- és szélerózió (defláció), szikesedés, savanyodás, tömörödés, szennyezés; védekezés: talajkímélő művelés, erdősávok, teraszozás.",
+    "Topográfia: Ukrajna csernozjomöve, Mezőföld, Hajdúság, Hortobágy, Nyírség."
+  ],
+  "speakingSeconds": 600,
+  "prepSeconds": 900,
+  "sampleAnswer": {
+    "turns": [
+      {
+        "speaker": "candidate",
+        "text": "A talaj a földkéreg legfelső, laza, termékeny rétege, amely az alapkőzet mállásából és az élőlények szerves anyagából képződik. A talajképződést az alapkőzet, az éghajlat, az élővilág, a domborzat, a víz és az idő együtt határozza meg, ma pedig az ember is jelentősen befolyásolja. A talajban szintek különülnek el: felül a humuszos szint, alatta a kilúgozási és felhalmozódási szint, legalul az alapkőzet. Mivel a talaj elsősorban az éghajlattól és a növényzettől függ, a fő talajtípusok övezetesen helyezkednek el. Az első talajszelvény mezőségi talaj, azaz csernozjom: a füves puszták évente elhaló gyökérzetéből sok humusz halmozódik fel, a mérsékelt csapadék alig lúgoz ki, a meszes lösz pedig jó szerkezetet ad, ezért ez a legtermékenyebb talaj. Ilyen Ukrajna csernozjomöve, amelyet most megmutatok az atlaszban. A lombhullató erdők alatt barna erdőtalaj képződik, amely közepes humusztartalmú és mérsékelten kilúgozott. A második szelvény podzol: a tajga savanyú tűlevél-avarja lassan bomlik, a hideg, csapadékos éghajlaton a lefelé szivárgó víz erősen kilúgozza a felső réteget, ezért az hamuszürke és terméketlen. A forró, nedves övezetben laterit képződik, ahol a heves kémiai mállás és kilúgozás után csak vas- és alumínium-oxidok maradnak, ezért az esőerdő kiirtása után a talaj gyorsan kimerül. Magyarországon a Mezőföldön és a Hajdúságon kiváló mezőségi talajok, a dombságokon barna erdőtalajok, a Hortobágyon szikes, a Nyírségben homoktalajok vannak. A talajokat a lejtőkön a víz, a homokvidékeken a szél pusztítja, az Alföldön a szikesedés és a belvíz is gond, ezért talajkímélő művelésre, erdősávokra és ésszerű öntözésre van szükség."
+      }
+    ],
+    "notes": [
+      "A felelet a talajképző tényezőktől és a szintektől indul, majd mindkét forrásbeli szelvényt helyesen azonosítja és megindokolja – ez a forráshasználat és a tartalom maximumát adja.",
+      "A négy övezetes talajtípust az éghajlat–növényzet–talaj összefüggéssel magyarázza, és megkülönbözteti a zonális talajokat az azonálisaktól (szikes, homok).",
+      "A hazai példák és a talajpusztulás formái konkrétak, a topográfiai elemeket a térképen elhelyezi."
+    ]
+  }
+}

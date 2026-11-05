@@ -1,0 +1,148 @@
+{
+  "schemaVersion": 1,
+  "id": "dig-wr-emelt-weblap-fotokiallitas",
+  "subject": "digitalis-kultura",
+  "revision": 1,
+  "level": "emelt",
+  "source": "generated",
+  "topic": "prezentacio-grafika",
+  "title": "Weblapkészítés: fotókiállítás HTML-lel és CSS-sel",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "writing",
+  "type": "prezentacio-weblap",
+  "taskNumber": 1,
+  "situation": "A városi művelődési ház „Fények és árnyékok” címmel fotókiállítást rendez; ehhez kell egyoldalas weblapot készítenie HTML és CSS segítségével.\n\nForrásfájlok:\n• forras.txt (UTF-8) – a weblap szövegei: a cím, a dátumsor („Fotókiállítás a Városi Művelődési Házban, 2027. március 6. – április 18.”), a Program rész három bekezdése, a három kép képaláírása, a jegyárak (Felnőtt: 1800 Ft; Diák, nyugdíjas: 900 Ft; Családi (2 felnőtt + 2 gyerek): 4000 Ft), valamint a művelődési ház honlapjának címe: https://muvhaz.example.\n• a kepek mappában: foto1.jpg, foto2.jpg, foto3.jpg (1200 képpont szélesek).\n\nA weblapot kiallitas.html, a stíluslapot stilus.css néven mentse abba a mappába, amelyben a kepek mappa is van! A formázást a stíluslapon adja meg, ne a HTML-elemek style attribútumában!\n\n1. Készítsen érvényes HTML5-dokumentumot: dokumentumtípus-deklaráció, magyar nyelv (lang), UTF-8 karakterkódolás, a böngésző fülén megjelenő cím: „Fények és árnyékok – fotókiállítás”.\n2. Csatolja a dokumentumhoz a stilus.css külső stíluslapot!\n3. Az oldal fejlécében (header) egyes szintű címsorként jelenjen meg a „Fények és árnyékok” cím, alatta bekezdésben a dátumsor!\n4. A fejléc alatt készítsen menüt számozatlan listával és három belső hivatkozással (Program, Képek, Jegyek), amelyek az oldal megfelelő részére ugranak! Mindhárom rész (section) kezdődjön másodszintű címsorral!\n5. A Képek részben a három kép egy-egy figure elemben jelenjen meg, a képaláírással (figcaption) és a képaláírással azonos helyettesítő szöveggel; a képek 300 képpont szélesen jelenjenek meg!\n6. A Jegyek részben a jegyárakat kétoszlopos táblázatban adja meg fejlécsorral (Jegytípus, Ár); az árak jobbra igazítva jelenjenek meg, a Családi jegy sora kiemelt legyen (a kiemelt osztállyal)!\n7. Az oldal láblécében (footer) a művelődési ház honlapjára mutató hivatkozás új lapon nyíljon meg!\n8. A stíluslapon: az oldal betűtípusa Arial (ha nincs, bármilyen talpatlan betű), háttérszíne #f4f1ea, szövegszíne #333333; a tartalom legfeljebb 960 képpont széles, és vízszintesen középen áll.\n9. A főcím középre igazított, színe #7a2e1d; a menü elemei egymás mellett, felsorolásjel nélkül jelenjenek meg!\n10. A táblázat cellái között ne legyen dupla vonal (összevont szegély), a cellák szegélye 1 képpont vastag #999999 színű folytonos vonal, a cellák belső margója 6 képpont; a kiemelt osztály félkövér betűt és #ffe680 háttérszínt adjon!",
+  "points": [
+    {
+      "id": "p1",
+      "text": "1. HTML5-váz: doctype, lang=\"hu\", UTF-8, a megadott title (3 pont)"
+    },
+    {
+      "id": "p2",
+      "text": "2. A külső stíluslap csatolása (2 pont)"
+    },
+    {
+      "id": "p3",
+      "text": "3. Fejléc h1 címmel és a dátumsor bekezdésével (2 pont)"
+    },
+    {
+      "id": "p4",
+      "text": "4. Menü számozatlan listával, három működő belső hivatkozás, a részek id-vel és h2 címmel (4 pont)"
+    },
+    {
+      "id": "p5",
+      "text": "5. Három kép figure-ben figcaption-nel és alt szöveggel, 300 képpont szélesen (4 pont)"
+    },
+    {
+      "id": "p6",
+      "text": "6. Jegyártáblázat fejlécsorral, jobbra igazított árak, kiemelt sor (4 pont)"
+    },
+    {
+      "id": "p7",
+      "text": "7. Lábléc új lapon nyíló külső hivatkozással (2 pont)"
+    },
+    {
+      "id": "p8",
+      "text": "8. A body formázása: betűtípus, háttér- és szövegszín, legfeljebb 960 px, középre (3 pont)"
+    },
+    {
+      "id": "p9",
+      "text": "9. A főcím igazítása és színe, vízszintes menü felsorolásjel nélkül (3 pont)"
+    },
+    {
+      "id": "p10",
+      "text": "10. Összevont szegélyű táblázat, cellaszegély és -margó, a kiemelt osztály formázása (3 pont)"
+    }
+  ],
+  "suggestedMinutes": 50,
+  "usefulPhrases": [
+    {
+      "en": "<!DOCTYPE html> … <html lang=\"hu\">",
+      "hu": "HTML5-dokumentum, magyar nyelvű tartalom"
+    },
+    {
+      "en": "<meta charset=\"UTF-8\">",
+      "hu": "karakterkódolás – nélküle az ékezetek hibásan jelenhetnek meg"
+    },
+    {
+      "en": "<link rel=\"stylesheet\" href=\"stilus.css\">",
+      "hu": "külső stíluslap csatolása a head részben"
+    },
+    {
+      "en": "<a href=\"#jegyek\"> … <section id=\"jegyek\">",
+      "hu": "belső hivatkozás az oldal egy részére"
+    },
+    {
+      "en": "<figure><img src=\"…\" alt=\"…\"><figcaption>…</figcaption></figure>",
+      "hu": "kép képaláírással és helyettesítő szöveggel"
+    },
+    {
+      "en": "target=\"_blank\"",
+      "hu": "a hivatkozás új lapon nyílik"
+    },
+    {
+      "en": "margin: 0 auto; max-width: 960px;",
+      "hu": "középre igazított, korlátozott szélességű tartalom"
+    },
+    {
+      "en": "display: flex; list-style: none;",
+      "hu": "vízszintes menü felsorolásjel nélkül"
+    },
+    {
+      "en": "border-collapse: collapse;",
+      "hu": "összevont cellaszegélyek, nincs dupla vonal"
+    }
+  ],
+  "checklistExtra": [],
+  "modelAnswer": {
+    "text": "Megoldás – kiallitas.html:\n\n<!DOCTYPE html>\n<html lang=\"hu\">\n<head>\n  <meta charset=\"UTF-8\">\n  <title>Fények és árnyékok – fotókiállítás</title>\n  <link rel=\"stylesheet\" href=\"stilus.css\">\n</head>\n<body>\n  <header>\n    <h1>Fények és árnyékok</h1>\n    <p>Fotókiállítás a Városi Művelődési Házban, 2027. március 6. – április 18.</p>\n  </header>\n  <nav>\n    <ul class=\"menu\">\n      <li><a href=\"#program\">Program</a></li>\n      <li><a href=\"#kepek\">Képek</a></li>\n      <li><a href=\"#jegyek\">Jegyek</a></li>\n    </ul>\n  </nav>\n  <section id=\"program\">\n    <h2>Program</h2>\n    <p>A kiállítást március 6-án 17 órakor nyitjuk meg.</p>\n    <p>Tárlatvezetés minden szombaton 11 órakor.</p>\n    <p>Fotós műhely diákoknak március 20-án.</p>\n  </section>\n  <section id=\"kepek\">\n    <h2>Képek</h2>\n    <div class=\"galeria\">\n      <figure>\n        <img src=\"kepek/foto1.jpg\" alt=\"Hajnali köd a folyóparton\">\n        <figcaption>Hajnali köd a folyóparton</figcaption>\n      </figure>\n      <figure>\n        <img src=\"kepek/foto2.jpg\" alt=\"Árnyékok a régi piactéren\">\n        <figcaption>Árnyékok a régi piactéren</figcaption>\n      </figure>\n      <figure>\n        <img src=\"kepek/foto3.jpg\" alt=\"Fénycsík az erdei ösvényen\">\n        <figcaption>Fénycsík az erdei ösvényen</figcaption>\n      </figure>\n    </div>\n  </section>\n  <section id=\"jegyek\">\n    <h2>Jegyek</h2>\n    <table>\n      <tr><th>Jegytípus</th><th>Ár</th></tr>\n      <tr><td>Felnőtt</td><td class=\"ar\">1800 Ft</td></tr>\n      <tr><td>Diák, nyugdíjas</td><td class=\"ar\">900 Ft</td></tr>\n      <tr class=\"kiemelt\"><td>Családi (2 felnőtt + 2 gyerek)</td><td class=\"ar\">4000 Ft</td></tr>\n    </table>\n  </section>\n  <footer>\n    <p>További információ: <a href=\"https://muvhaz.example\" target=\"_blank\">a művelődési ház honlapja</a></p>\n  </footer>\n</body>\n</html>\n\nstilus.css:\n\nbody {\n  font-family: Arial, sans-serif;\n  background-color: #f4f1ea;\n  color: #333333;\n  max-width: 960px;\n  margin: 0 auto;\n}\nh1 {\n  text-align: center;\n  color: #7a2e1d;\n}\n.menu {\n  display: flex;\n  gap: 20px;\n  list-style: none;\n  padding: 0;\n}\n.galeria {\n  display: flex;\n  gap: 10px;\n}\n.galeria img {\n  width: 300px;\n}\ntable {\n  border-collapse: collapse;\n}\nth, td {\n  border: 1px solid #999999;\n  padding: 6px;\n}\n.ar {\n  text-align: right;\n}\n.kiemelt {\n  font-weight: bold;\n  background-color: #ffe680;\n}\n\nEllenőrzés: a weblapot böngészőben megnyitom; a menü hivatkozásai az id-vel jelölt részekre ugranak (href=\"#program\" → id=\"program\"), a képek a relatív kepek/… útvonalon betöltődnek, a külső hivatkozás új lapon nyílik. A formázás csak a stíluslapon van, így egy helyen módosítható.",
+    "pointsCovered": [
+      {
+        "id": "p1",
+        "quote": "<html lang=\"hu\">"
+      },
+      {
+        "id": "p2",
+        "quote": "<link rel=\"stylesheet\" href=\"stilus.css\">"
+      },
+      {
+        "id": "p3",
+        "quote": "<h1>Fények és árnyékok</h1>"
+      },
+      {
+        "id": "p4",
+        "quote": "<li><a href=\"#program\">Program</a></li>"
+      },
+      {
+        "id": "p5",
+        "quote": "<img src=\"kepek/foto1.jpg\" alt=\"Hajnali köd a folyóparton\">"
+      },
+      {
+        "id": "p6",
+        "quote": "<tr class=\"kiemelt\"><td>Családi (2 felnőtt + 2 gyerek)</td><td class=\"ar\">4000 Ft</td></tr>"
+      },
+      {
+        "id": "p7",
+        "quote": "<a href=\"https://muvhaz.example\" target=\"_blank\">"
+      },
+      {
+        "id": "p8",
+        "quote": "max-width: 960px;"
+      },
+      {
+        "id": "p9",
+        "quote": "list-style: none;"
+      },
+      {
+        "id": "p10",
+        "quote": "border-collapse: collapse;"
+      }
+    ],
+    "notes": [
+      "A követelmények teljesítése: mind a tíz részfeladat megvalósul – érvényes HTML5-váz, szemantikus elemek (header, nav, section, figure, footer), működő belső és külső hivatkozások, a kért CSS-értékek pontosan.",
+      "Szakszerű módszer: a formázás kizárólag a külső stíluslapon van, osztályokkal (.menu, .galeria, .ar, .kiemelt) – a style attribútum vagy a <font>, <center> elemek használata elvinné a „módszer” pontjait.",
+      "Pontosság: a relatív útvonalak (kepek/foto1.jpg, stilus.css) a fájlok mappaszerkezetéhez illeszkednek, minden képnek van alt szövege, a táblázatnak fejlécsora (th)."
+    ]
+  }
+}

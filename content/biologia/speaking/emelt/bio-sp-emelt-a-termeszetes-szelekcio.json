@@ -1,0 +1,79 @@
+{
+  "schemaVersion": 1,
+  "id": "bio-sp-emelt-a-termeszetes-szelekcio",
+  "subject": "biologia",
+  "revision": 1,
+  "level": "emelt",
+  "source": "generated",
+  "topic": "evolucio",
+  "title": "A természetes szelekció és a fajképződés",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "speaking",
+  "type": "a-tetel",
+  "partNumber": 1,
+  "instructionsHu": "A) altétel – elméleti kifejtés. Fejtsd ki a darwini evolúciós elmélet lényegét és a szelekció populációgenetikai értelmezését! Mutasd be a szelekció típusait és a fajképződés módjait, és értelmezd a forrásban leírt példát!",
+  "prompts": [
+    "A darwini elmélet alapgondolatai; a lamarcki magyarázattal való összevetés.",
+    "Az evolúció populációgenetikai értelmezése: allélgyakoriság, evolúciós tényezők.",
+    "A szelekció típusai (stabilizáló, irányító, szétválasztó) példákkal.",
+    "A fajképződés módjai és a szaporodási izoláció formái."
+  ],
+  "followUpQuestions": [
+    "Miért nem tekinthető a mutáció célirányosnak?",
+    "Hogyan befolyásolja a populáció mérete a genetikai sodródás erősségét?"
+  ],
+  "usefulPhrases": [
+    {
+      "en": "természetes szelekció",
+      "hu": "a jobban alkalmazkodott változatok több utódot hagynak"
+    },
+    {
+      "en": "allélgyakoriság",
+      "hu": "egy allél aránya a populáció génkészletében"
+    },
+    {
+      "en": "irányító / stabilizáló / szétválasztó szelekció",
+      "hu": "a szélső / a közép / a két szélső változat előnye"
+    },
+    {
+      "en": "szaporodási izoláció",
+      "hu": "a fajok közötti termékeny kereszteződés gátja"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Esettanulmány: a nyírfaaraszoló",
+      "text": "A nyírfaaraszoló nevű lepke világos, foltos változata a zuzmós fatörzseken jól rejtőzik. A sötét változatot Manchester környékén 1848-ban jegyezték fel először; 1895-re a helyi populáció mintegy 98%-a sötét volt, mert a gyárak kormától a fatörzsek elfeketedtek, és a zuzmók elpusztultak. A légszennyezés csökkenése után, a 20. század második felétől a sötét változat aránya ismét erősen csökkent."
+    },
+    {
+      "title": "Adat",
+      "text": "A sarlósejtes vérszegénység allélja a maláriás területeken gyakoribb: a heterozigóták enyhén vérszegények, de ellenállóbbak a maláriával szemben."
+    }
+  ],
+  "keyPoints": [
+    "Darwin: az élőlények túlszaporodnak, az egyedek örökletesen különböznek, a létért folytatott küzdelemben a jobban alkalmazkodottak több utódot hagynak (természetes szelekció); a változás fokozatos.",
+    "Lamarck szerzett tulajdonságok öröklődésével magyarázott – ez téves, mert a szerzett tulajdonság nem változtatja meg az ivarsejtek DNS-ét.",
+    "Az evolúció egysége a populáció; az evolúció az allélgyakoriságok változása. Evolúciós tényezők: mutáció, szelekció, genetikai sodródás, génáramlás, nem véletlenszerű párosodás.",
+    "A szelekció a fenotípuson keresztül az allélgyakoriságot változtatja; a forrás esetében a madarak ragadozása szelektált.",
+    "Irányító szelekció: a nyírfaaraszoló sötét változatának elterjedése, antibiotikum-rezisztencia; stabilizáló: újszülöttek születési tömege; szétválasztó: két szélső változat előnye (pl. eltérő csőrméretű pintyek).",
+    "Heterozigóta előny (sarlósejtes allél és malária): a szelekció fenntartja a káros allélt is.",
+    "Fajképződés: földrajzi (allopatrikus) – földrajzi elkülönülés, eltérő mutációk és szelekció, végül szaporodási izoláció; azonos területen (szimpatrikus) – pl. poliploidizáció növényeknél.",
+    "Izolációs mechanizmusok: megtermékenyítés előttiek (eltérő élőhely, szaporodási idő, viselkedés, ivarszervek) és utániak (életképtelen vagy terméketlen hibrid, pl. öszvér)."
+  ],
+  "speakingSeconds": 480,
+  "prepSeconds": 900,
+  "sampleAnswer": {
+    "turns": [
+      {
+        "speaker": "candidate",
+        "text": "Darwin elmélete néhány megfigyelésre épül. Az élőlények sokkal több utódot hoznak létre, mint amennyi felnőhet, a populáció egyedei pedig örökletesen különböznek egymástól. A korlátozott erőforrásokért folyó küzdelemben a környezethez jobban alkalmazkodott változatok nagyobb eséllyel maradnak életben és szaporodnak; ez a természetes szelekció, amely nemzedékek során fokozatosan alakítja a fajokat. Lamarck ezzel szemben azt gondolta, hogy az egyed élete során szerzett tulajdonságait örökíti át – ez téves, mert a szerzett változás nem módosítja az ivarsejtek DNS-ét.\nMa az evolúciót a populációk szintjén értelmezzük: az evolúció a populáció allélgyakoriságainak változása. Ezt a mutáció, a szelekció, a genetikai sodródás, a génáramlás és a nem véletlenszerű párosodás okozhatja. A szelekció a fenotípusra hat, de az eredmény az allélgyakoriság változása.\nA forrás példája az irányító szelekció: a koromtól elfeketedett fatörzseken a madarak a világos lepkéket vették könnyebben észre, ezért az 1848-ban még nagyon ritka sötét változat aránya 1895-re kb. 98%-ra nőtt. Amikor a levegő tisztult, a szelekció iránya megfordult, és a világos változat lett gyakoribb – ez mutatja, hogy a szelekció mindig az adott környezethez képest értelmezhető. Irányító szelekció az antibiotikum-rezisztencia terjedése is. A stabilizáló szelekció a középértéket részesíti előnyben, például az újszülöttek születési tömegénél; a szétválasztó szelekció a két szélső változatot, ami a populáció kettéválásához is vezethet. A sarlósejtes allél esete a heterozigóta előny: maláriás vidéken a heterozigóták túlélése a legjobb, ezért az önmagában káros allél fennmarad.\nÚj faj leggyakrabban földrajzi elkülönüléssel keletkezik: a részpopulációk között megszűnik a génáramlás, bennük eltérő mutációk halmozódnak fel, és eltérő szelekció hat, míg végül szaporodási izoláció alakul ki. Növényeknél azonos területen is keletkezhet faj, például a kromoszómaszám megsokszorozódásával. A szaporodási izoláció lehet megtermékenyítés előtti – eltérő élőhely, szaporodási időszak, udvarlás vagy ivarszerv –, és megtermékenyítés utáni, amikor a hibrid életképtelen vagy terméketlen, mint az öszvér."
+      }
+    ],
+    "notes": [
+      "Tartalom: a darwini elmélet elemei, a lamarcki tévedés oka, a populációgenetikai szemlélet, a szelekció három típusa és a fajképződés két módja izolációs mechanizmusokkal együtt szerepel.",
+      "Összefüggések, példák: a forrás esettanulmányát pontosan értelmezi (szelekciós tényező: a madarak; irányváltás a környezet változásával), és a heterozigóta előnyt a második forrás adatára építi.",
+      "Felépítés: elmélet → populációgenetika → szelekciótípusok → fajképződés; a példák mindig az elvet támasztják alá."
+    ]
+  }
+}

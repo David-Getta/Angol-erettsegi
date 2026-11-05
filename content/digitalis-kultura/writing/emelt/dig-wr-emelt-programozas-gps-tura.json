@@ -1,0 +1,136 @@
+{
+  "schemaVersion": 1,
+  "id": "dig-wr-emelt-programozas-gps-tura",
+  "subject": "digitalis-kultura",
+  "revision": 1,
+  "level": "emelt",
+  "source": "generated",
+  "topic": "algoritmizalas",
+  "title": "Programozás: GPS-túra kiértékelése",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "writing",
+  "type": "programozas",
+  "taskNumber": 4,
+  "situation": "Egy túrázó GPS-órája hatpercenként rögzítette a helyzetét. Az adatokat a tura.txt fájl tartalmazza időrendben; minden sorban szóközzel elválasztva: az időpont (óó:pp:mm), a tengerszint feletti magasság (egész, méter) és az előző mérési pont óta megtett távolság (egész, méter; az első sorban 0). A fájl legalább 2 és legfeljebb 2000 sort tartalmaz, a túra egy napon belül zajlott. Például (a fájl eleje):\n08:00:00 245 0\n08:06:00 262 410\n08:12:00 281 430\n08:18:00 300 395\n08:24:00 296 450\n08:30:00 318 420\n08:36:00 335 380\n08:42:00 335 0\n08:48:00 335 0\n08:54:00 340 120\n…\n\nKészítsen programot tura néven! A képernyőre írás előtt mindig jelenítse meg a feladat sorszámát!\n\n1. Olvassa be a tura.txt adatait, és tárolja el őket!\n2. Írja ki a mérési pontok számát és a túra időtartamát óó:pp:mm alakban!\n3. Írja ki a teljes megtett távot kilométerben, két tizedesjegyre!\n4. Írja ki a túra legmagasabb pontjának magasságát és azt az időpontot, amikor először járt ott!\n5. Írja ki az összes szintemelkedést és az összes szintcsökkenést (az egymást követő pontok közti pozitív, illetve negatív magasságkülönbségek összegét)!\n6. Írja ki a túra átlagsebességét km/h-ban, egy tizedesjegyre!\n7. Pihenőnek számít, ha két egymást követő mérési pont között a megtett távolság 0 m; az egymást közvetlenül követő ilyen szakaszok egy pihenőt alkotnak. A pihenő a 0 m-es szakaszok előtti utolsó pontban kezdődik, és az utolsó 0 m-es szakasz végpontjában ér véget. Írja ki minden pihenő kezdetét és hosszát percben!\n8. Határozza meg a leghosszabb – a legtöbb szakaszból álló – folyamatosan emelkedő részt (minden pont magasabban van az előzőnél)! Írja ki a kezdő és a záró időpontját, valamint a szintemelkedést! Több ilyen esetén az elsőt adja meg.\n9. Írja ki a km.txt fájlba, hogy a túrázó az egyes egész kilométereket (1 km, 2 km, …) melyik mérési pontban érte el először! Soronként: „1 km: 08:18:00”.\n\nMinta a teljes, 20 soros mintafájlra (a 10. sortól: 09:00:00 365 410, 09:06:00 392 385, 09:12:00 420 360, 09:18:00 431 300, 09:24:00 410 460, 09:30:00 390 480, 09:36:00 390 0, 09:42:00 371 470, 09:48:00 350 500, 09:54:00 330 520):\n2. feladat\nMérési pontok száma: 20\nA túra időtartama: 01:54:00\n3. feladat\nA teljes táv: 6.49 km\n4. feladat\nA legmagasabb pont: 431 m, időpont: 09:18:00\n5. feladat\nÖsszes szintemelkedés: 190 m, összes szintcsökkenés: 105 m\n6. feladat\nÁtlagsebesség: 3.4 km/h\n7. feladat\nPihenő: 08:36:00-tól 12 percig\nPihenő: 09:30:00-tól 6 percig\n8. feladat\nLeghosszabb emelkedő: 08:48:00-09:18:00, 96 m szintemelkedés",
+  "points": [
+    {
+      "id": "p1",
+      "text": "1. Beolvasás és tárolás (3 pont)"
+    },
+    {
+      "id": "p2",
+      "text": "2. A pontok száma és az időtartam óó:pp:mm alakban (4 pont)"
+    },
+    {
+      "id": "p3",
+      "text": "3. A teljes táv km-ben, két tizedesjegyre (3 pont)"
+    },
+    {
+      "id": "p4",
+      "text": "4. A legmagasabb pont és az első időpontja (4 pont)"
+    },
+    {
+      "id": "p5",
+      "text": "5. Összes szintemelkedés és szintcsökkenés (5 pont)"
+    },
+    {
+      "id": "p6",
+      "text": "6. Átlagsebesség km/h-ban (4 pont)"
+    },
+    {
+      "id": "p7",
+      "text": "7. A pihenők kezdete és hossza (7 pont)"
+    },
+    {
+      "id": "p8",
+      "text": "8. A leghosszabb folyamatosan emelkedő rész (8 pont)"
+    },
+    {
+      "id": "p9",
+      "text": "9. A km.txt fájl elkészítése (7 pont)"
+    }
+  ],
+  "suggestedMinutes": 95,
+  "usefulPhrases": [
+    {
+      "en": "idok, magassag, tav = [], [], []",
+      "hu": "párhuzamos listák: ugyanaz az index ugyanazt a mérést jelenti"
+    },
+    {
+      "en": "o, p, s = map(int, ido.split(\":\"))",
+      "hu": "óó:pp:mm darabolása egész számokra"
+    },
+    {
+      "en": "f\"{x // 3600:02d}:{x % 3600 // 60:02d}:{x % 60:02d}\"",
+      "hu": "másodperc → óó:pp:mm, kétjegyű részekkel"
+    },
+    {
+      "en": "for i in range(1, n): kul = t[i] - t[i - 1]",
+      "hu": "szomszédos elemek különbsége"
+    },
+    {
+      "en": "while i < n and tav[i] == 0: i += 1",
+      "hu": "egy sorozat végének megkeresése"
+    },
+    {
+      "en": "akt_hossz, leg_hossz",
+      "hu": "leghosszabb sorozat: aktuális és rekord hossz, kezdőindex"
+    },
+    {
+      "en": "while halmozott >= kovetkezo_km * 1000:",
+      "hu": "küszöbök átlépése halmozott összegnél (több küszöb is lehet egy lépésben)"
+    },
+    {
+      "en": "f\"{v:.1f}\"",
+      "hu": "egy tizedesjegyre formázott kiírás"
+    }
+  ],
+  "checklistExtra": [],
+  "modelAnswer": {
+    "text": "Megoldás Pythonban (a 20 soros mintafájllal tesztelve a mintakimenetet adja; a km.txt tartalma: 1 km: 08:18:00, 2 km: 08:30:00, 3 km: 09:00:00, 4 km: 09:18:00, 5 km: 09:30:00, 6 km: 09:54:00):\n\n# 1. feladat: beolvasás – három párhuzamos lista\nidok, magassag, tav = [], [], []\nwith open(\"tura.txt\", encoding=\"utf-8\") as f:\n    for sor in f:\n        t = sor.split()\n        idok.append(t[0])\n        magassag.append(int(t[1]))\n        tav.append(int(t[2]))\nn = len(idok)\n\ndef mp(ido):                      # \"óó:pp:mm\" -> másodperc\n    o, p, s = map(int, ido.split(\":\"))\n    return o * 3600 + p * 60 + s\n\ndef ido_szoveg(masodperc):        # másodperc -> \"óó:pp:mm\"\n    return f\"{masodperc // 3600:02d}:{masodperc % 3600 // 60:02d}:{masodperc % 60:02d}\"\n\n# 2. feladat\nido_osszes = mp(idok[-1]) - mp(idok[0])\nprint(\"2. feladat\")\nprint(\"Mérési pontok száma:\", n)\nprint(\"A túra időtartama:\", ido_szoveg(ido_osszes))\n\n# 3. feladat: összegzés\nosszes_m = sum(tav)\nprint(\"3. feladat\")\nprint(f\"A teljes táv: {osszes_m / 1000:.2f} km\")\n\n# 4. feladat: maximumkiválasztás (az első legmagasabb pont)\nmi = 0\nfor i in range(1, n):\n    if magassag[i] > magassag[mi]:\n        mi = i\nprint(\"4. feladat\")\nprint(f\"A legmagasabb pont: {magassag[mi]} m, időpont: {idok[mi]}\")\n\n# 5. feladat: szintemelkedés és szintcsökkenés\nfel = le = 0\nfor i in range(1, n):\n    kul = magassag[i] - magassag[i - 1]\n    if kul > 0:\n        fel += kul\n    else:\n        le -= kul\nprint(\"5. feladat\")\nprint(f\"Összes szintemelkedés: {fel} m, összes szintcsökkenés: {le} m\")\n\n# 6. feladat: átlagsebesség km/h-ban\nprint(\"6. feladat\")\nprint(f\"Átlagsebesség: {osszes_m / 1000 / (ido_osszes / 3600):.1f} km/h\")\n\n# 7. feladat: pihenők (egymást követő 0 m-es szakaszok)\nprint(\"7. feladat\")\ni = 1\nwhile i < n:\n    if tav[i] == 0:\n        kezdet = i - 1               # a pihenő az előző pontban kezdődik\n        while i < n and tav[i] == 0:\n            i += 1\n        veg = i - 1                  # az utolsó 0 m-es szakasz végpontja\n        perc = (mp(idok[veg]) - mp(idok[kezdet])) // 60\n        print(f\"Pihenő: {idok[kezdet]}-tól {perc} percig\")\n    else:\n        i += 1\n\n# 8. feladat: a leghosszabb folyamatosan emelkedő szakasz\nleg_hossz, leg_kezd = 0, 0\nakt_hossz, akt_kezd = 0, 0\nfor i in range(1, n):\n    if magassag[i] > magassag[i - 1]:\n        if akt_hossz == 0:\n            akt_kezd = i - 1\n        akt_hossz += 1\n        if akt_hossz > leg_hossz:\n            leg_hossz, leg_kezd = akt_hossz, akt_kezd\n    else:\n        akt_hossz = 0\nleg_veg = leg_kezd + leg_hossz\nprint(\"8. feladat\")\nprint(f\"Leghosszabb emelkedő: {idok[leg_kezd]}-{idok[leg_veg]}, \"\n      f\"{magassag[leg_veg] - magassag[leg_kezd]} m szintemelkedés\")\n\n# 9. feladat: km.txt – az egyes egész kilométerek elérésének időpontja\nwith open(\"km.txt\", \"w\", encoding=\"utf-8\") as f:\n    halmozott = 0\n    kovetkezo_km = 1\n    for i in range(n):\n        halmozott += tav[i]\n        while halmozott >= kovetkezo_km * 1000:\n            f.write(f\"{kovetkezo_km} km: {idok[i]}\\n\")\n            kovetkezo_km += 1\n\nMagyarázat: az adatokat három párhuzamos listában tárolom (ugyanaz az index ugyanazt a mérési pontot jelenti). Az mp() és az ido_szoveg() függvény oda-vissza alakít a szöveges időpont és a másodperc között, így minden időtartam kivonás. Az 5. feladat a szomszédos elemek különbségét összegzi előjel szerint szétválogatva. A 7. feladatban a külső ciklus megtalálja a pihenő első 0 m-es szakaszát, a belső while a végéig halad – így az egymást követő 0-s szakaszok egy pihenőt adnak. A 8. feladat „leghosszabb sorozat” minta: az aktuális sorozat hosszát és kezdetét számolom, és ha hosszabb a rekordnál, elmentem; a szigorú > miatt az első leghosszabb marad meg. A 9. feladatban a halmozott távot figyelem; a belső while miatt akkor is minden kilométer kiíródik, ha egy szakasz alatt kettőt is átlépne.",
+    "pointsCovered": [
+      {
+        "id": "p1",
+        "quote": "magassag.append(int(t[1]))"
+      },
+      {
+        "id": "p2",
+        "quote": "print(\"A túra időtartama:\", ido_szoveg(ido_osszes))"
+      },
+      {
+        "id": "p3",
+        "quote": "print(f\"A teljes táv: {osszes_m / 1000:.2f} km\")"
+      },
+      {
+        "id": "p4",
+        "quote": "if magassag[i] > magassag[mi]:"
+      },
+      {
+        "id": "p5",
+        "quote": "kul = magassag[i] - magassag[i - 1]"
+      },
+      {
+        "id": "p6",
+        "quote": "print(f\"Átlagsebesség: {osszes_m / 1000 / (ido_osszes / 3600):.1f} km/h\")"
+      },
+      {
+        "id": "p7",
+        "quote": "while i < n and tav[i] == 0:"
+      },
+      {
+        "id": "p8",
+        "quote": "if akt_hossz > leg_hossz:"
+      },
+      {
+        "id": "p9",
+        "quote": "while halmozott >= kovetkezo_km * 1000:"
+      }
+    ],
+    "notes": [
+      "A követelmények teljesítése: mind a kilenc részfeladat a minta szerinti kimenetet adja, a km.txt a kért formátumú; a megoldás nem a mintafájlra van „szabva”, hanem bármely érvényes bemenetre működik (pl. ha egy szakaszon két kilométert is átlép).",
+      "Szakszerű módszer: időátalakító függvények, programozási tételek (összegzés, maximumkiválasztás, megszámlálás), a pihenőknél és az emelkedőknél a sorozatkeresés helyes mintája (kezdet és hossz nyilvántartása).",
+      "Pontosság: a határesetek – az első legmagasabb pont, az első leghosszabb emelkedő, a pihenő kezdőpontja – a leírás szerint kezelve, a kerekítés a kért tizedesjegyre f-stringgel történik."
+    ]
+  }
+}

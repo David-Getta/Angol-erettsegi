@@ -1,0 +1,144 @@
+{
+  "schemaVersion": 1,
+  "id": "dig-wr-emelt-tablazat-felmaraton",
+  "subject": "digitalis-kultura",
+  "revision": 1,
+  "level": "emelt",
+  "source": "generated",
+  "topic": "tablazatkezeles",
+  "title": "Táblázatkezelés: félmaraton eredményei",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "writing",
+  "type": "tablazatkezeles",
+  "taskNumber": 2,
+  "situation": "Egy városi félmaraton (21,0975 km) eredményeit kell feldolgoznia.\n\nForrásfájl: futas.txt (UTF-8, tabulátorral tagolt, az első sor fejléc). A 2–201. sorban 200 futó adatai: A – Rajtszám, B – Név, C – Nem (F vagy N), D – Születési év, E – Célidő (ó:pp:mm alakban, pl. 1:52:31).\n\nTöltse be az adatokat az A1-es cellától, és mentse a munkát felmaraton néven a táblázatkezelő saját formátumában! Minden számítást képlettel végezzen, a másolható képletekben megfelelő hivatkozást használjon!\n\n1. Töltse be és mentse az adatokat! Az L1:M7 tartományba gépelje be a korcsoport-táblázatot: L1: Korhatár, M1: Korcsoport; alatta 0 – U20, 20 – 20–29, 30 – 30–39, 40 – 40–49, 50 – 50–59, 60 – 60+. Az L9 cellába írja: Táv (km), az M9-be: 21,0975.\n2. Az F oszlopban (Életkor) számítsa ki, hány éves lesz a futó 2026-ban!\n3. A G oszlopban (Korcsoport) jelenítse meg a futó korcsoportját az L1:M7 táblázat alapján, keresőfüggvénnyel!\n4. A H oszlopban (Idő (perc)) adja meg a célidőt percben, két tizedesjeggyel megjelenítve!\n5. Az I oszlopban (Tempó) számítsa ki az egy kilométerre jutó időt percben az M9 cella felhasználásával, egy tizedesjeggyel!\n6. A J oszlopban (Helyezés) adja meg a futó helyezését a saját nemén belül (az azonos idejű futók azonos helyezést kapjanak)!\n7. Az O1:P7 tartományban korcsoportonként (O2:O7: a korcsoportok neve hivatkozással) adja meg az átlagos célidőt percben (P2:P7)!\n8. Az L10 cellába írja: 2 órán belül; az M10-ben számítsa ki, hány futó ért célba 2 órán belül!\n9. Feltételes formázással a nemenkénti első három helyezett teljes sora (A–J oszlop) aranysárga hátterű legyen!\n10. Készítsen oszlopdiagramot a korcsoportonkénti átlagos célidőről (O1:P7) „Átlagos célidő korcsoportonként” címmel, a függőleges tengelyen „perc” felirattal!",
+  "points": [
+    {
+      "id": "p1",
+      "text": "1. Betöltés, mentés, a korcsoport-táblázat és a táv beírása (1 pont)"
+    },
+    {
+      "id": "p2",
+      "text": "2. Életkor (1 pont)"
+    },
+    {
+      "id": "p3",
+      "text": "3. Korcsoport keresőfüggvénnyel, közelítő egyezéssel (2 pont)"
+    },
+    {
+      "id": "p4",
+      "text": "4. Célidő percben, két tizedesjeggyel (2 pont)"
+    },
+    {
+      "id": "p5",
+      "text": "5. Tempó abszolút hivatkozással az M9 cellára (1 pont)"
+    },
+    {
+      "id": "p6",
+      "text": "6. Helyezés nemenként, holtverseny kezelésével (3 pont)"
+    },
+    {
+      "id": "p7",
+      "text": "7. Korcsoportonkénti átlagidő feltételes átlaggal (2 pont)"
+    },
+    {
+      "id": "p8",
+      "text": "8. A 2 órán belül célba érők száma (1 pont)"
+    },
+    {
+      "id": "p9",
+      "text": "9. Feltételes formázás képlettel a teljes sorra (1 pont)"
+    },
+    {
+      "id": "p10",
+      "text": "10. Oszlopdiagram címmel és tengelyfelirattal (1 pont)"
+    }
+  ],
+  "suggestedMinutes": 35,
+  "usefulPhrases": [
+    {
+      "en": "=FKERES(F2;$L$2:$M$7;2;IGAZ)  /  =VLOOKUP(…,TRUE)",
+      "hu": "közelítő keresés sávos táblázatban (korcsoport, jegy, kedvezménysáv); az első oszlop növekvő legyen"
+    },
+    {
+      "en": "=E2*24*60",
+      "hu": "időérték (a nap törtrésze) átváltása percre"
+    },
+    {
+      "en": "=ÓRA(E2), PERCEK(E2), MPERC(E2)  /  HOUR, MINUTE, SECOND",
+      "hu": "az időérték részei"
+    },
+    {
+      "en": "=DARABHATÖBB(…;C2;…;\"<\"&H2)+1  /  =COUNTIFS(…)+1",
+      "hu": "helyezés csoporton belül; a \"<\"&H2 összefűzéssel készül a feltétel"
+    },
+    {
+      "en": "=ÁTLAGHA(tartomány;feltétel;átlagtartomány)  /  =AVERAGEIF(…)",
+      "hu": "feltételes átlag"
+    },
+    {
+      "en": "$M$9",
+      "hu": "abszolút hivatkozás egy közös állandóra (táv)"
+    },
+    {
+      "en": "Feltételes formázás > Képlet alapján: =$J2<=3",
+      "hu": "teljes sor kiemelése; a $J rögzíti az oszlopot, a sor változhat"
+    },
+    {
+      "en": "Tengelycímek",
+      "hu": "a diagram tengelyeinek felirata (mértékegység)"
+    }
+  ],
+  "checklistExtra": [],
+  "modelAnswer": {
+    "text": "Megoldás – magyar Excel-függvénynevek, zárójelben az angol (LibreOffice Calc) változat; magyarul pontosvessző, angolul vessző az argumentumok elválasztója.\n\n1. Adatok > Szövegből/CSV-ből > futas.txt (UTF-8, tabulátor). Az E oszlop értékeit a program időként ismeri fel (ó:pp:mm). Mentés: felmaraton.xlsx. Az L1:M7 és az L9:M9 cellákat kézzel töltöm ki.\n\n2. F1: Életkor; F2: =2026-D2, másolás F201-ig.\n\n3. G1: Korcsoport; G2: =FKERES(F2;$L$2:$M$7;2;IGAZ)   (=VLOOKUP(F2,$L$2:$M$7,2,TRUE)). A közelítő egyezés (IGAZ) a legnagyobb, F2-nél nem nagyobb korhatárt találja meg, ezért kell a korhatárokat növekvő sorrendben megadni; a táblázat hivatkozása abszolút, hogy másoláskor ne csússzon el.\n\n4. H1: Idő (perc); H2: =E2*24*60   (=E2*24*60), két tizedesjegyes számformátummal. Az időérték a nap törtrésze, ezért 1440-nel (24 · 60) szorozva percet kapunk. Egyenértékű: =ÓRA(E2)*60+PERCEK(E2)+MPERC(E2)/60   (=HOUR(E2)*60+MINUTE(E2)+SECOND(E2)/60).\n\n5. I1: Tempó; I2: =H2/$M$9, egy tizedesjeggyel.\n\n6. J1: Helyezés; J2: =DARABHATÖBB($C$2:$C$201;C2;$H$2:$H$201;\"<\"&H2)+1   (=COUNTIFS($C$2:$C$201,C2,$H$2:$H$201,\"<\"&H2)+1). Megszámolja az azonos nemű, nála gyorsabb futókat, és hozzáad egyet; az egyenlő idejűek így azonos helyezést kapnak.\n\n7. O1: Korcsoport, P1: Átlagidő (perc); O2: =M2, másolás O7-ig; P2: =ÁTLAGHA($G$2:$G$201;O2;$H$2:$H$201)   (=AVERAGEIF($G$2:$G$201,O2,$H$2:$H$201)), másolás P7-ig, két tizedesjeggyel.\n\n8. L10: 2 órán belül; M10: =DARABTELI(H2:H201;\"<120\")   (=COUNTIF(H2:H201,\"<120\")).\n\n9. A2:J201 kijelölve: Feltételes formázás > Új szabály > Képlet alapján: =$J2<=3, formátum: aranysárga kitöltés. A $J vegyes hivatkozás miatt minden cella a saját sorának J oszlopát vizsgálja.\n\n10. O1:P7 kijelölve: Beszúrás > Oszlopdiagram > Csoportosított oszlop; diagramcím: Átlagos célidő korcsoportonként; Tengelycímek > Elsődleges függőleges: perc. Mentés.",
+    "pointsCovered": [
+      {
+        "id": "p1",
+        "quote": "Mentés: felmaraton.xlsx"
+      },
+      {
+        "id": "p2",
+        "quote": "F2: =2026-D2, másolás F201-ig"
+      },
+      {
+        "id": "p3",
+        "quote": "G2: =FKERES(F2;$L$2:$M$7;2;IGAZ)   (=VLOOKUP(F2,$L$2:$M$7,2,TRUE))"
+      },
+      {
+        "id": "p4",
+        "quote": "H2: =E2*24*60"
+      },
+      {
+        "id": "p5",
+        "quote": "I2: =H2/$M$9"
+      },
+      {
+        "id": "p6",
+        "quote": "J2: =DARABHATÖBB($C$2:$C$201;C2;$H$2:$H$201;\"<\"&H2)+1"
+      },
+      {
+        "id": "p7",
+        "quote": "P2: =ÁTLAGHA($G$2:$G$201;O2;$H$2:$H$201)"
+      },
+      {
+        "id": "p8",
+        "quote": "M10: =DARABTELI(H2:H201;\"<120\")"
+      },
+      {
+        "id": "p9",
+        "quote": "Képlet alapján: =$J2<=3"
+      },
+      {
+        "id": "p10",
+        "quote": "diagramcím: Átlagos célidő korcsoportonként"
+      }
+    ],
+    "notes": [
+      "A követelmények teljesítése: mind a tíz részfeladat képlettel készül, a segédtáblázatok a megadott helyen vannak, így a javítási útmutató szerinti cellákban ellenőrizhetők.",
+      "Szakszerű módszer: közelítő egyezésű FKERES a korcsoportokra (nem egymásba ágyazott HA-k tucatja), DARABHATÖBB a nemenkénti helyezésre, képlet alapú feltételes formázás vegyes hivatkozással – ezek az emelt szint jellegzetes, pontot érő megoldásai.",
+      "Pontosság: az időérték átváltása (·1440) és a holtverseny helyes kezelése; minden másolt képletben a rögzítendő tartomány abszolút."
+    ]
+  }
+}

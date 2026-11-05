@@ -1,0 +1,88 @@
+{
+  "schemaVersion": 1,
+  "id": "fol-sp-emelt-energiagazdalkodas",
+  "subject": "foldrajz",
+  "revision": 1,
+  "level": "emelt",
+  "source": "generated",
+  "topic": "globalis-kihivasok",
+  "title": "Energiagazdálkodás és fenntarthatóság",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "speaking",
+  "type": "tarsadalomfoldrajz-tetel",
+  "partNumber": 2,
+  "instructionsHu": "Mutassa be a világ energiagazdálkodásának szerkezetét, a fosszilis és a megújuló energiaforrások előnyeit és hátrányait, valamint Magyarország energiahelyzetét! Használja a mellékelt forrásokat és az atlaszt!",
+  "prompts": [
+    "Milyen energiahordozókra épül a világ energiafelhasználása, és hol vannak a legfontosabb kőolaj- és földgázkészletek?",
+    "Milyen szerepet játszott az energia a világpolitikában (olajválságok, OPEC, energiabiztonság)?",
+    "Hasonlítsa össze a megújuló és a nem megújuló energiaforrásokat, és mutassa be az energiagazdálkodás környezeti hatásait!",
+    "Topográfia: mutassa meg a Perzsa-öblöt, a Hormuzi-szorost, Szaúd-Arábiát, az Északi-tengert, Nyugat-Szibériát és Paksot!"
+  ],
+  "followUpQuestions": [
+    "Miért nehéz a villamosenergia-rendszert csak nap- és szélenergiára építeni?",
+    "Milyen előnyei és kockázatai vannak Magyarország energiaimport-függőségének?"
+  ],
+  "usefulPhrases": [
+    {
+      "en": "primerenergia",
+      "hu": "a természetben található, átalakítás előtti energiaforrás (szén, kőolaj, napsugárzás …)"
+    },
+    {
+      "en": "megújuló / nem megújuló energiaforrás",
+      "hu": "emberi időléptékben újratermelődő, illetve kimerülő forrás"
+    },
+    {
+      "en": "energiamix",
+      "hu": "az egyes energiaforrások részesedése egy ország vagy a világ felhasználásában"
+    },
+    {
+      "en": "energiabiztonság",
+      "hu": "az energiaellátás folyamatos, kiszámítható biztosítása"
+    },
+    {
+      "en": "diverzifikáció",
+      "hu": "a beszerzési források és útvonalak sokféleségének növelése"
+    },
+    {
+      "en": "OPEC",
+      "hu": "Kőolaj-exportáló Országok Szervezete"
+    }
+  ],
+  "sources": [
+    {
+      "title": "A világ energiafelhasználása (adatsor)",
+      "text": "A világ primerenergia-felhasználásának kb. 80%-át a fosszilis energiahordozók (kőolaj, szén, földgáz) adják; a kőolaj részesedése a legnagyobb, de csökken, a nap- és szélenergia részaránya gyorsan nő. A bizonyított kőolajkészletek jelentős része a Perzsa-öböl térségében és Venezuelában található."
+    },
+    {
+      "title": "Magyarország (leírás)",
+      "text": "Magyarország energiahordozó-szükségletének nagyobb részét importálja, a földgáz és a kőolaj nagy része csővezetéken érkezik. A villamosenergia-termelés kb. 40–45%-át a Paksi Atomerőmű adja; a naperőművek beépített teljesítménye 2018 óta gyorsan nő. A földhő- (geotermikus) adottságok kedvezők."
+    }
+  ],
+  "keyPoints": [
+    "A világ energiafelhasználása folyamatosan nő (népességnövekedés, iparosodás, életszínvonal), a fejlődő országok részesedése emelkedik.",
+    "A fosszilis energiahordozók adják a felhasználás kb. 80%-át; kőolaj: közlekedés, vegyipar; szén: villamosenergia, kohászat; földgáz: fűtés, erőművek.",
+    "Készletek és termelők: Perzsa-öböl (Szaúd-Arábia, Irán, Irak), Venezuela, Oroszország (Nyugat-Szibéria), USA (palaolaj, palagáz), Északi-tenger.",
+    "Energia és világpolitika: 1973-as olajválság (OPEC árfelhajtás), energiafüggőség, a szállítási útvonalak (Hormuzi-szoros) stratégiai jelentősége.",
+    "Nem megújuló források: nagy energiasűrűség, kiépített rendszer, de kimerülnek, szén-dioxid-kibocsátás, légszennyezés; atomenergia: kis kibocsátás, de radioaktív hulladék, balesetveszély.",
+    "Megújulók (nap, szél, víz, biomassza, geotermikus): nincs vagy kicsi a kibocsátás, de időjárásfüggő, tárolás és hálózat kell, területigényes.",
+    "Magyarország: importfüggőség, Paks, gyorsan növő napenergia, kedvező geotermikus adottság; energiahatékonyság és diverzifikáció a cél.",
+    "Fenntarthatóság: kibocsátáscsökkentés, energiatakarékosság, megújulók, energiabiztonság.",
+    "Topográfia: Perzsa-öböl, Hormuzi-szoros, Szaúd-Arábia, Északi-tenger, Nyugat-Szibéria, Paks."
+  ],
+  "speakingSeconds": 600,
+  "prepSeconds": 900,
+  "sampleAnswer": {
+    "turns": [
+      {
+        "speaker": "candidate",
+        "text": "A világ energiafelhasználása az iparosodás óta folyamatosan nő: egyre többen élünk, és a fejlődő országok, főleg Ázsia, egyre több energiát használnak. A forrás szerint a felhasználás kb. 80%-át még mindig a fosszilis energiahordozók adják. A kőolaj elsősorban a közlekedés és a vegyipar alapanyaga, a szenet főként villamosenergia-termelésre és a kohászatban használják, a földgázt fűtésre és erőművekben. A legnagyobb kőolajkészletek a Perzsa-öböl térségében vannak, ezt most megmutatom az atlaszban Szaúd-Arábiával, Iránnal és Irakkal együtt, de jelentős Venezuela, Oroszország nyugat-szibériai mezői és az Északi-tenger is. Az energia a világpolitika eszköze is: 1973-ban az OPEC arab tagállamai csökkentették a kitermelést és embargót hirdettek, az olajár többszörösére nőtt, ami a fejlett országokban gazdasági válságot okozott. Azóta kiemelt kérdés az energiabiztonság, és stratégiai jelentőségű a Hormuzi-szoros, amelyen a tankerek a Perzsa-öbölből kijutnak. A fosszilis források nagy energiasűrűségűek és kiépített rendszerre épülnek, de kimerülnek, égetésük szén-dioxidot bocsát ki és szennyezi a levegőt, ezért a klímaváltozás fő okai. A megújuló források – a nap, a szél, a víz, a biomassza és a földhő – alig bocsátanak ki üvegházgázt, de időjárásfüggők, ezért tárolásra és erős hálózatra van szükség. Magyarország energiahordozóinak nagyobb részét importálja, a földgáz és a kőolaj csővezetéken érkezik. A villamos energia kb. 40–45%-át a Paksi Atomerőmű termeli, amely alig bocsát ki szén-dioxidot, de radioaktív hulladék keletkezik. 2018 óta gyorsan nő a napelemek teljesítménye, és kedvezők a geotermikus adottságaink is. A fenntarthatóság érdekében az energiatakarékosság, a megújulók bővítése és a beszerzési források diverzifikálása a legfontosabb."
+      }
+    ],
+    "notes": [
+      "A felelet a világ energiaszerkezetétől a készletek földrajzán és a világpolitikai összefüggéseken át Magyarország helyzetéig halad, mindkét forrást felhasználja.",
+      "A megújuló és nem megújuló források előnyeit és hátrányait kiegyensúlyozottan, szakszerűen állítja szembe, az atomenergiát külön értékeli.",
+      "A topográfiai elemeket (Perzsa-öböl, Hormuzi-szoros, Szaúd-Arábia, Nyugat-Szibéria, Északi-tenger, Paks) a tartalomhoz kötve, pontosan használja."
+    ]
+  }
+}
