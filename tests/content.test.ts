@@ -172,3 +172,16 @@ describe("guides", () => {
     expect(validateGuide({ ...guide, id: "gd-writing-poem", type: "writing", target: "poem" }).errors.some((e) => e.message.includes("szövegtípus"))).toBe(true);
   });
 });
+
+describe("answer letter in the explanation", () => {
+  it("flags an explanation that names another option as correct", async () => {
+    const { wrongAnswerLetter } = await import("@/lib/content/validate");
+    const keys = ["A", "B", "C", "D"];
+    expect(wrongAnswerLetter("Helyes: C. Mert …", "C", keys)).toBeNull();
+    expect(wrongAnswerLetter("Helyes: B. Mert …", "C", keys)).toBe("B");
+    expect(wrongAnswerLetter("A – kördiagram: …", "B", keys)).toBe("A");
+    expect(wrongAnswerLetter("A forrás szerint …", "B", keys)).toBeNull(); // Hungarian article, not a letter
+    expect(wrongAnswerLetter("Helyes: K > Na > Li", "D", keys)).toBeNull(); // a chemical symbol
+  });
+});
+

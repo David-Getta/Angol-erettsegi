@@ -167,6 +167,23 @@ function checkCommon(ctx: Ctx, c: Content) {
   }
 }
 
+/**
+ * The explanation must name the answer's letter when it names a letter at all: "Helyes: C.", a leading
+ * "C – …" or "C. …". (Shuffling options or a hand edit can leave the old letter behind.)
+ */
+const ANSWER_LETTER_REFS = [
+  /(?:[Hh]elyes(?: válasz)?|[Mm]egoldás|Lösung|[Rr]ichtig(?:e Antwort)?|[Cc]orrect(?: answer)?)\s*:\s*([A-P])(?=[.,;:)]|\s[–-]|\s*$)/g,
+  /^([A-P])(?=[.:)] |\s[–-]\s)/g,
+];
+export function wrongAnswerLetter(explanation: string, answer: string, keys: string[]): string | null {
+  for (const re of ANSWER_LETTER_REFS) {
+    for (const m of explanation.matchAll(re)) {
+      if (keys.includes(m[1]!) && m[1] !== answer) return m[1]!;
+    }
+  }
+  return null;
+}
+
 function itemLabel(item: Item) {
   return item.id === "0" ? "a példa (0)" : `a(z) ${item.id}. item`;
 }
@@ -227,6 +244,11 @@ function checkObjective(ctx: Ctx, t: ObjectiveTask) {
       err(ctx, `${itemLabel(it)}: ebben a részben csak ${f.categoryGroups.join("/")} csoportú kategória lehet, nem "${it.category}" (${cat}).`);
     }
     if (it.explanation.trim().length < 15) warn(ctx, `${itemLabel(it)}: túl rövid a magyarázat – írd le a helyes választ és az okát.`);
+    if (it.kind === "choice" || it.kind === "match") {
+      const keys = it.kind === "choice" ? it.options.map((o) => o.key) : (t.options ?? []).map((o) => o.key);
+      const wrong = wrongAnswerLetter(it.explanation, it.answer, keys);
+      if (wrong) err(ctx, `${itemLabel(it)}: a magyarázat a(z) ${wrong} betűt nevezi meg helyesnek, de a megoldás ${it.answer}.`);
+    }
 
     if (f.evidence && !it.evidence) err(ctx, `${itemLabel(it)}: hiányzik az "evidence" (a szövegrész, ahol a válasz található).`);
     if (it.evidence && source && !sourceNorm.includes(normalizeForSearch(it.evidence))) {
@@ -378,6 +400,8 @@ function checkLesson(ctx: Ctx, l: GrammarLesson) {
     if (!it.prompt?.trim()) err(ctx, `${label}: hiányzik a feladatmondat ("prompt").`);
     if (it.kind === "choice") {
       const keys = it.options.map((o) => o.key);
+      const wrongLetter = wrongAnswerLetter(it.explanation, it.answer, keys);
+      if (wrongLetter) err(ctx, `${label}: a magyarázat a(z) ${wrongLetter} betűt nevezi meg helyesnek, de a megoldás ${it.answer}.`);
       if (new Set(keys).size !== keys.length) err(ctx, `${label}: duplikált opciókulcs.`);
       if (!keys.includes(it.answer)) err(ctx, `${label}: a megoldás ("${it.answer}") nincs az opciók között.`);
       const missing = keys.filter((k) => k !== it.answer && !it.wrongOptions?.[k]);

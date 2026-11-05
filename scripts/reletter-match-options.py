@@ -15,18 +15,31 @@ STRONG = [
     re.compile(r"(?<![\w(])([A-P])\)"),
     re.compile(r"„([A-P])”"),
     re.compile(r"(?<![\w])([A-P])(?= [–-] )"),
+    re.compile(r"^([A-P])(?=[.:)] )"),
 ]
 LOOSE = re.compile(r"(?<![\w„(])(?:[B-P](?![\w])|A(?=\s*[.,;:”)]|$))")
 
-def mask(t):
+def _letter_spans(text):
+    """Positions of every option-letter reference, each counted once even if several patterns match it."""
+    spans = {}
     for p in STRONG:
-        t = p.sub(lambda m: m.group(0).replace(m.group(1), "#"), t)
-    return t
+        for mo in p.finditer(text):
+            spans.setdefault(mo.start(1), mo.end(1))
+    return sorted(spans.items())
 
-def remap(t, m):
-    for p in STRONG:
-        t = p.sub(lambda mo: mo.group(0)[: mo.start(1) - mo.start(0)] + m.get(mo.group(1), mo.group(1)) + mo.group(0)[mo.end(1) - mo.start(0):], t)
-    return t
+def _replace_spans(text, f):
+    out, last = [], 0
+    for a, b in _letter_spans(text):
+        out.append(text[last:a]); out.append(f(text[a:b])); last = b
+    out.append(text[last:])
+    return "".join(out)
+
+def mask(text):
+    return _replace_spans(text, lambda _: "#")
+
+def remap(text, m):
+    # single pass: a letter matched by two patterns ("Helyes: C – …") must not be remapped twice
+    return _replace_spans(text, lambda letter: m.get(letter, letter))
 
 def sort_key(text):
     return unicodedata.normalize("NFKD", text).casefold()
