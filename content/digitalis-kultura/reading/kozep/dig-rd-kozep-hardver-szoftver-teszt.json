@@ -27,20 +27,20 @@
       },
       {
         "key": "C",
-        "text": "billentyűzet"
+        "text": "hangszóró"
       },
       {
         "key": "D",
-        "text": "hangszóró"
+        "text": "billentyűzet"
       }
     ],
-    "answer": "C",
+    "answer": "D",
     "category": "hardver-szoftver-fogalom",
-    "explanation": "C – billentyűzet: rajta keresztül adat jut a számítógépbe. A monitor, a nyomtató és a hangszóró kimeneti (output) periféria.",
+    "explanation": "D – billentyűzet: rajta keresztül adat jut a számítógépbe. A monitor, a nyomtató és a hangszóró kimeneti (output) periféria.",
     "wrongOptions": {
       "A": "A monitor a számítógép által előállított képet jeleníti meg, tehát kimeneti eszköz.",
       "B": "A nyomtató papírra viszi ki az adatot: kimeneti eszköz.",
-      "D": "A hangszóró hangot ad ki: kimeneti eszköz."
+      "C": "A hangszóró hangot ad ki: kimeneti eszköz."
     }
   },
   "items": [
@@ -86,23 +86,23 @@
         },
         {
           "key": "B",
-          "text": "1024"
+          "text": "8"
         },
         {
           "key": "C",
-          "text": "8"
+          "text": "1024"
         },
         {
           "key": "D",
           "text": "1 000 000"
         }
       ],
-      "answer": "B",
+      "answer": "C",
       "category": "hardver-szoftver-fogalom",
-      "explanation": "B – 1024 bájt: a bináris előtagok 2 hatványai (1 KiB = 2¹⁰ B). A decimális kB (kilobájt) az SI szerint 1000 bájt; a köznyelv a kettőt gyakran összekeveri.",
+      "explanation": "C – 1024 bájt: a bináris előtagok 2 hatványai (1 KiB = 2¹⁰ C). A decimális kB (kilobájt) az SI szerint 1000 bájt; a köznyelv a kettőt gyakran összekeveri.",
       "wrongOptions": {
         "A": "1000 bájt az SI-előtagos 1 kB, nem a bináris KiB.",
-        "C": "8 bit egy bájt; ez a bit és a bájt viszonya.",
+        "B": "8 bit egy bájt; ez a bit és a bájt viszonya.",
         "D": "1 000 000 bájt 1 MB (megabájt), nem KiB."
       }
     },
@@ -117,23 +117,23 @@
         },
         {
           "key": "B",
-          "text": "A hardvererőforrások (processzoridő, memória, perifériák) kezelése és a programok futtatása."
+          "text": "A weboldalak HTML-kódjának megírása."
         },
         {
           "key": "C",
-          "text": "A weboldalak HTML-kódjának megírása."
+          "text": "A hardvererőforrások (processzoridő, memória, perifériák) kezelése és a programok futtatása."
         },
         {
           "key": "D",
           "text": "A processzor órajelének előállítása."
         }
       ],
-      "answer": "B",
+      "answer": "C",
       "category": "hardver-szoftver-fogalom",
-      "explanation": "B. Az operációs rendszer közvetít a hardver és a felhasználói programok között: elosztja a processzoridőt és a memóriát, kezeli a fájlrendszert és a perifériákat (illesztőprogramokkal), elindítja a programokat.",
+      "explanation": "C. Az operációs rendszer közvetít a hardver és a felhasználói programok között: elosztja a processzoridőt és a memóriát, kezeli a fájlrendszert és a perifériákat (illesztőprogramokkal), elindítja a programokat.",
       "wrongOptions": {
         "A": "A helyesírás-ellenőrzés a szövegszerkesztő (alkalmazói szoftver) szolgáltatása.",
-        "C": "A HTML-kódot a webfejlesztő írja szövegszerkesztővel vagy fejlesztőkörnyezetben.",
+        "B": "A HTML-kódot a webfejlesztő írja szövegszerkesztővel vagy fejlesztőkörnyezetben.",
         "D": "Az órajelet hardver (órajel-generátor, kvarc) állítja elő."
       }
     },
@@ -144,7 +144,7 @@
       "options": [
         {
           "key": "A",
-          "text": "Másodpercenként 3,2 milliárd órajelciklus."
+          "text": "A processzornak 3,2 magja van."
         },
         {
           "key": "B",
@@ -156,16 +156,16 @@
         },
         {
           "key": "D",
-          "text": "A processzornak 3,2 magja van."
+          "text": "Másodpercenként 3,2 milliárd órajelciklus."
         }
       ],
-      "answer": "A",
+      "answer": "D",
       "category": "hardver-szoftver-fogalom",
-      "explanation": "A. A hertz a másodpercenkénti ciklusok száma, a giga- előtag 10⁹: 3,2 GHz = 3,2 · 10⁹ ciklus másodpercenként. A gyorsaság nem csak ettől függ (magok száma, gyorsítótár, architektúra).",
+      "explanation": "D. A hertz a másodpercenkénti ciklusok száma, a giga- előtag 10⁹: 3,2 GHz = 3,2 · 10⁹ ciklus másodpercenként. A gyorsaság nem csak ettől függ (magok száma, gyorsítótár, architektúra).",
       "wrongOptions": {
+        "A": "A magok száma egész szám, és nem az órajelből derül ki.",
         "B": "A GHz frekvencia (ciklus/másodperc), nem tárolókapacitás; a GB a memória mértékegysége.",
-        "C": "A giga 10⁹ (milliárd), és a hertz másodpercre vonatkozik, nem percre.",
-        "D": "A magok száma egész szám, és nem az órajelből derül ki."
+        "C": "A giga 10⁹ (milliárd), és a hertz másodpercre vonatkozik, nem percre."
       }
     },
     {
@@ -175,11 +175,11 @@
       "options": [
         {
           "key": "A",
-          "text": "HDD (merevlemez)"
+          "text": "SSD"
         },
         {
           "key": "B",
-          "text": "SSD"
+          "text": "HDD (merevlemez)"
         },
         {
           "key": "C",
@@ -190,11 +190,11 @@
           "text": "mágnesszalag"
         }
       ],
-      "answer": "B",
+      "answer": "A",
       "category": "hardver-szoftver-fogalom",
-      "explanation": "B – SSD (Solid State Drive): flash memóriacellákban tárol, nincs forgó lemeze, ezért gyorsabb és ütésállóbb, mint a HDD.",
+      "explanation": "A – SSD (Solid State Drive): flash memóriacellákban tárol, nincs forgó lemeze, ezért gyorsabb és ütésállóbb, mint a HDD.",
       "wrongOptions": {
-        "A": "A HDD forgó mágneslemezeken és mozgó író-olvasó fejjel dolgozik.",
+        "B": "A HDD forgó mágneslemezeken és mozgó író-olvasó fejjel dolgozik.",
         "C": "A DVD optikai tároló, lézerrel olvassák a forgó lemezt.",
         "D": "A mágnesszalagot tekercselve olvassák, mozgó alkatrészekkel."
       }
@@ -237,7 +237,7 @@
       "options": [
         {
           "key": "A",
-          "text": "A program és az adatok ugyanabban a belső memóriában, azonos módon tárolódnak."
+          "text": "A számítógéphez csak egy periféria csatlakozhat."
         },
         {
           "key": "B",
@@ -249,16 +249,16 @@
         },
         {
           "key": "D",
-          "text": "A számítógéphez csak egy periféria csatlakozhat."
+          "text": "A program és az adatok ugyanabban a belső memóriában, azonos módon tárolódnak."
         }
       ],
-      "answer": "A",
+      "answer": "D",
       "category": "hardver-szoftver-fogalom",
       "explanation": "A – a tárolt program elve. Neumann János elvei: kettes számrendszer, teljesen elektronikus működés, soros utasításvégrehajtás, belső memória, amelyben a program és az adat is tárolódik, valamint univerzális (bármilyen feladatra programozható) gép.",
       "wrongOptions": {
+        "A": "Nincs ilyen elv; a gép központi egységből és tetszőleges számú perifériából áll.",
         "B": "A Neumann-elvek egyike éppen a kettes (bináris) számrendszer használata.",
-        "C": "A tárolt program elve szerint a program a belső memóriában van, nem kívülről olvassuk be utasításonként.",
-        "D": "Nincs ilyen elv; a gép központi egységből és tetszőleges számú perifériából áll."
+        "C": "A tárolt program elve szerint a program a belső memóriában van, nem kívülről olvassuk be utasításonként."
       }
     }
   ],

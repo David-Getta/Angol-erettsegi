@@ -29,7 +29,7 @@
   "options": [
     {
       "key": "A",
-      "text": "Vereckei-hágó"
+      "text": "Mohács"
     },
     {
       "key": "B",
@@ -37,32 +37,32 @@
     },
     {
       "key": "C",
-      "text": "Pest"
-    },
-    {
-      "key": "D",
-      "text": "Trau (Trogir)"
-    },
-    {
-      "key": "E",
-      "text": "Mohács"
-    },
-    {
-      "key": "F",
       "text": "Nándorfehérvár"
     },
     {
-      "key": "G",
+      "key": "D",
+      "text": "Pest"
+    },
+    {
+      "key": "E",
       "text": "Pozsony"
+    },
+    {
+      "key": "F",
+      "text": "Trau (Trogir)"
+    },
+    {
+      "key": "G",
+      "text": "Vereckei-hágó"
     }
   ],
   "example": {
     "id": "0",
     "kind": "match",
     "prompt": "0. helyszín",
-    "answer": "A",
+    "answer": "G",
     "category": "topografia",
-    "explanation": "Helyes: A – Vereckei-hágó. Az Északkeleti-Kárpátok legfontosabb átjárója; a honfoglaló magyarok és 1241-ben Batu kán főserege is itt tört be."
+    "explanation": "Helyes: G – Vereckei-hágó. Az Északkeleti-Kárpátok legfontosabb átjárója; a honfoglaló magyarok és 1241-ben Batu kán főserege is itt tört be."
   },
   "items": [
     {
@@ -77,17 +77,17 @@
       "id": "2",
       "kind": "match",
       "prompt": "2. helyszín",
-      "answer": "C",
+      "answer": "D",
       "category": "topografia",
-      "explanation": "Helyes: C – Pest. A Duna bal (keleti) partján fekvő, német polgárok lakta kereskedőváros volt; a muhi vereség után a mongolok feldúlták. (Buda vára csak a tatárjárás után épült fel a jobb parton.)"
+      "explanation": "Helyes: D – Pest. A Duna bal (keleti) partján fekvő, német polgárok lakta kereskedőváros volt; a muhi vereség után a mongolok feldúlták. (Buda vára csak a tatárjárás után épült fel a jobb parton.)"
     },
     {
       "id": "3",
       "kind": "match",
       "prompt": "3. helyszín",
-      "answer": "D",
+      "answer": "F",
       "category": "topografia",
-      "explanation": "Helyes: D – Trau (Trogir). IV. Béla a mongol üldözők elől a dalmát tengerpartra menekült, és Trau városában, a tenger védelmében vészelte át a veszélyt 1242 tavaszán."
+      "explanation": "Helyes: F – Trau (Trogir). IV. Béla a mongol üldözők elől a dalmát tengerpartra menekült, és Trau városában, a tenger védelmében vészelte át a veszélyt 1242 tavaszán."
     },
     {
       "id": "4",
@@ -142,7 +142,7 @@
       "options": [
         {
           "key": "A",
-          "text": "kővárak építésének támogatása"
+          "text": "a kunok végleges kiűzése az országból"
         },
         {
           "key": "B",
@@ -154,16 +154,16 @@
         },
         {
           "key": "D",
-          "text": "a kunok végleges kiűzése az országból"
+          "text": "kővárak építésének támogatása"
         }
       ],
-      "answer": "A",
+      "answer": "D",
       "category": "ok-okozat",
-      "explanation": "Helyes: A. A tatárjárás tapasztalata az volt, hogy a földvárak elestek, a kővárak (pl. Esztergom, Székesfehérvár) ellenálltak. Ezért IV. Béla birtokot adományozott, és engedélyezte, hogy a főurak kővárakat építsenek; ő maga emeltette Buda várát is.",
+      "explanation": "Helyes: D. A tatárjárás tapasztalata az volt, hogy a földvárak elestek, a kővárak (pl. Esztergom, Székesfehérvár) ellenálltak. Ezért IV. Béla birtokot adományozott, és engedélyezte, hogy a főurak kővárakat építsenek; ő maga emeltette Buda várát is.",
       "wrongOptions": {
+        "A": "IV. Béla éppen visszahívta a kunokat a tatárjárás után, mert katonai erejükre számított.",
         "B": "A vármegyerendszer megmaradt; IV. Béla nem szüntette meg a vármegyéket.",
-        "C": "Az Aranybullát II. András adta ki 1222-ben, még a tatárjárás előtt.",
-        "D": "IV. Béla éppen visszahívta a kunokat a tatárjárás után, mert katonai erejükre számított."
+        "C": "Az Aranybullát II. András adta ki 1222-ben, még a tatárjárás előtt."
       }
     }
   ],

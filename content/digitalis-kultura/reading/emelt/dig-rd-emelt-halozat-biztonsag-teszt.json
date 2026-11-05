@@ -23,7 +23,7 @@
       },
       {
         "key": "B",
-        "text": "HTTPS"
+        "text": "SMTP"
       },
       {
         "key": "C",
@@ -31,16 +31,16 @@
       },
       {
         "key": "D",
-        "text": "SMTP"
+        "text": "HTTPS"
       }
     ],
-    "answer": "B",
+    "answer": "D",
     "category": "halozat-biztonsag",
-    "explanation": "B – HTTPS: a HTTP TLS-titkosítással kiegészített változata (alapértelmezett portja a 443).",
+    "explanation": "D – HTTPS: a HTTP TLS-titkosítással kiegészített változata (alapértelmezett portja a 443).",
     "wrongOptions": {
       "A": "A HTTP titkosítatlanul viszi át az adatokat.",
-      "C": "Az FTP fájlátviteli protokoll, alapváltozata titkosítatlan.",
-      "D": "Az SMTP levélküldő protokoll."
+      "B": "Az SMTP levélküldő protokoll.",
+      "C": "Az FTP fájlátviteli protokoll, alapváltozata titkosítatlan."
     }
   },
   "items": [
@@ -51,11 +51,11 @@
       "options": [
         {
           "key": "A",
-          "text": "192.168.11.37"
+          "text": "192.168.10.200"
         },
         {
           "key": "B",
-          "text": "192.168.10.200"
+          "text": "192.168.11.37"
         },
         {
           "key": "C",
@@ -66,11 +66,11 @@
           "text": "10.168.10.37"
         }
       ],
-      "answer": "B",
+      "answer": "A",
       "category": "halozat-biztonsag",
-      "explanation": "B. A 255.255.255.0 maszk szerint az első három bájt (192.168.10) a hálózatot, az utolsó a gépet azonosítja; a 192.168.10.200 hálózati része azonos.",
+      "explanation": "A. A 255.255.255.0 maszk szerint az első három bájt (192.168.10) a hálózatot, az utolsó a gépet azonosítja; a 192.168.10.200 hálózati része azonos.",
       "wrongOptions": {
-        "A": "A harmadik bájt (11) eltér, ez másik alhálózat.",
+        "B": "A harmadik bájt (11) eltér, ez másik alhálózat.",
         "C": "A második bájt (169) eltér.",
         "D": "Az első bájt (10) eltér."
       }
@@ -82,11 +82,11 @@
       "options": [
         {
           "key": "A",
-          "text": "Automatikusan kiosztja a gépeknek az IP-címet és a többi hálózati beállítást (maszk, alapértelmezett átjáró, DNS-szerver)."
+          "text": "A domainneveket IP-címekre fordítja."
         },
         {
           "key": "B",
-          "text": "A domainneveket IP-címekre fordítja."
+          "text": "Automatikusan kiosztja a gépeknek az IP-címet és a többi hálózati beállítást (maszk, alapértelmezett átjáró, DNS-szerver)."
         },
         {
           "key": "C",
@@ -97,11 +97,11 @@
           "text": "Szabályok alapján szűri a be- és kimenő forgalmat."
         }
       ],
-      "answer": "A",
+      "answer": "B",
       "category": "halozat-biztonsag",
-      "explanation": "A. A DHCP (Dynamic Host Configuration Protocol) miatt nem kell minden gépen kézzel beállítani az IP-címet; a szerver bérleti időre ad ki címet a címtartományából.",
+      "explanation": "B. A DHCP (Dynamic Host Configuration Protocol) miatt nem kell minden gépen kézzel beállítani az IP-címet; a szerver bérleti időre ad ki címet a címtartományából.",
       "wrongOptions": {
-        "B": "Ez a DNS feladata.",
+        "A": "Ez a DNS feladata.",
         "C": "Ez a levelezőszerverek (SMTP) dolga.",
         "D": "Ez a tűzfal feladata."
       }
@@ -113,7 +113,7 @@
       "options": [
         {
           "key": "A",
-          "text": "A nyilvános kulccsal titkosított üzenetet csak a hozzá tartozó titkos (privát) kulccsal lehet visszafejteni."
+          "text": "A titkos kulcsot el kell küldeni a partnernek."
         },
         {
           "key": "B",
@@ -121,19 +121,19 @@
         },
         {
           "key": "C",
-          "text": "A titkos kulcsot el kell küldeni a partnernek."
+          "text": "A nyilvános kulccsal titkosított üzenetet csak a hozzá tartozó titkos (privát) kulccsal lehet visszafejteni."
         },
         {
           "key": "D",
           "text": "Digitális aláírásra nem használható."
         }
       ],
-      "answer": "A",
+      "answer": "C",
       "category": "halozat-biztonsag",
-      "explanation": "A. Mindenkinek van egy kulcspárja: a nyilvános kulcsot bárki ismerheti és titkosíthat vele, de visszafejteni csak a tulajdonos privát kulcsával lehet. Fordítva használva (aláírás a privát kulccsal, ellenőrzés a nyilvánossal) a digitális aláírás alapja.",
+      "explanation": "C. Mindenkinek van egy kulcspárja: a nyilvános kulcsot bárki ismerheti és titkosíthat vele, de visszafejteni csak a tulajdonos privát kulcsával lehet. Fordítva használva (aláírás a privát kulccsal, ellenőrzés a nyilvánossal) a digitális aláírás alapja.",
       "wrongOptions": {
+        "A": "A privát kulcs soha nem hagyja el a tulajdonosát; éppen ezért nem kell titkos csatornán kulcsot cserélni.",
         "B": "Ez a szimmetrikus titkosítás jellemzője (pl. AES).",
-        "C": "A privát kulcs soha nem hagyja el a tulajdonosát; éppen ezért nem kell titkos csatornán kulcsot cserélni.",
         "D": "A digitális aláírás éppen aszimmetrikus kulcspárral működik."
       }
     },
@@ -144,7 +144,7 @@
       "options": [
         {
           "key": "A",
-          "text": "SMTP"
+          "text": "POP3"
         },
         {
           "key": "B",
@@ -152,19 +152,19 @@
         },
         {
           "key": "C",
-          "text": "POP3"
+          "text": "SMTP"
         },
         {
           "key": "D",
           "text": "DNS"
         }
       ],
-      "answer": "A",
+      "answer": "C",
       "category": "halozat-biztonsag",
       "explanation": "A – SMTP (Simple Mail Transfer Protocol): a levél küldésére és a szerverek közti továbbítására szolgál. A levelek letöltése, olvasása IMAP-pal vagy POP3-mal történik.",
       "wrongOptions": {
+        "A": "A POP3 a levelek letöltésére szolgál.",
         "B": "Az IMAP a szerveren tárolt levelek olvasására, szinkronizálására szolgál.",
-        "C": "A POP3 a levelek letöltésére szolgál.",
         "D": "A DNS névfeloldást végez."
       }
     },
@@ -206,11 +206,11 @@
       "options": [
         {
           "key": "A",
-          "text": "Rendszeres biztonsági mentés olyan adathordozóra, amely mentés után le van választva a gépről."
+          "text": "A jelszó havonkénti cseréje."
         },
         {
           "key": "B",
-          "text": "A jelszó havonkénti cseréje."
+          "text": "Rendszeres biztonsági mentés olyan adathordozóra, amely mentés után le van választva a gépről."
         },
         {
           "key": "C",
@@ -221,11 +221,11 @@
           "text": "A képernyő zárolása."
         }
       ],
-      "answer": "A",
+      "answer": "B",
       "category": "halozat-biztonsag",
-      "explanation": "A. A zsarolóvírus titkosítja az elérhető fájlokat (a csatlakoztatott meghajtókat is) és váltságdíjat követel; ha van leválasztott (offline) mentés, az adatok fizetés nélkül visszaállíthatók.",
+      "explanation": "B. A zsarolóvírus titkosítja az elérhető fájlokat (a csatlakoztatott meghajtókat is) és váltságdíjat követel; ha van leválasztott (offline) mentés, az adatok fizetés nélkül visszaállíthatók.",
       "wrongOptions": {
-        "B": "A jelszócsere nem védi meg a már megfertőzött gépen lévő fájlokat.",
+        "A": "A jelszócsere nem védi meg a már megfertőzött gépen lévő fájlokat.",
         "C": "Az előzmények törlése adatvédelmi lépés, a fájlokat nem védi.",
         "D": "A képernyőzár a fizikai hozzáférés ellen véd, kártevő ellen nem."
       }
@@ -268,7 +268,7 @@
       "options": [
         {
           "key": "A",
-          "text": "A féreg önállóan, a hálózaton keresztül terjed; a vírus egy másik programhoz vagy fájlhoz kapcsolódva, annak futtatásával terjed."
+          "text": "Nincs különbség, a két szó ugyanazt jelenti."
         },
         {
           "key": "B",
@@ -280,16 +280,16 @@
         },
         {
           "key": "D",
-          "text": "Nincs különbség, a két szó ugyanazt jelenti."
+          "text": "A féreg önállóan, a hálózaton keresztül terjed; a vírus egy másik programhoz vagy fájlhoz kapcsolódva, annak futtatásával terjed."
         }
       ],
-      "answer": "A",
+      "answer": "D",
       "category": "halozat-biztonsag",
-      "explanation": "A. A vírusnak gazdafájl kell, és a felhasználó indítja el (pl. fertőzött mellékletet nyit meg); a féreg önálló program, amely biztonsági réseket kihasználva magától terjed gépről gépre.",
+      "explanation": "D. A vírusnak gazdafájl kell, és a felhasználó indítja el (pl. fertőzött mellékletet nyit meg); a féreg önálló program, amely biztonsági réseket kihasználva magától terjed gépről gépre.",
       "wrongOptions": {
+        "A": "A terjedés módjában különböznek.",
         "B": "Mindkettő bármilyen eszközt fertőzhet, amelyen fut.",
-        "C": "Mindkettő szoftver, és szoftveres kárt okoz; a megkülönböztetés a terjedés módja.",
-        "D": "A terjedés módjában különböznek."
+        "C": "Mindkettő szoftver, és szoftveres kárt okoz; a megkülönböztetés a terjedés módja."
       }
     }
   ],

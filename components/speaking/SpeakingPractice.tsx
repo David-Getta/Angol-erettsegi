@@ -99,7 +99,7 @@ function TaskCard({ task }: { task: SpeakingTask }) {
       {task.prompts.length > 0 && (
         <ul className="mt-4 list-disc pl-5 text-[15px]">
           {task.prompts.map((p) => (
-            <li key={p} className="whitespace-pre-line">
+            <li key={p} className="whitespace-pre-wrap">
               {p}
             </li>
           ))}

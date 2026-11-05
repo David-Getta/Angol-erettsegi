@@ -123,7 +123,7 @@
         },
         {
           "key": "B",
-          "text": "172.16.0.1"
+          "text": "300.1.2.3"
         },
         {
           "key": "C",
@@ -131,15 +131,15 @@
         },
         {
           "key": "D",
-          "text": "300.1.2.3"
+          "text": "172.16.0.1"
         }
       ],
-      "answer": "B",
-      "explanation": "B – 172.16.0.1: négy, 0 és 255 közötti szám, ponttal elválasztva.",
+      "answer": "D",
+      "explanation": "D – 172.16.0.1: négy, 0 és 255 közötti szám, ponttal elválasztva.",
       "wrongOptions": {
         "A": "A 256 nem fér el 8 biten.",
-        "C": "Csak három szám van benne.",
-        "D": "A 300 nagyobb 255-nél."
+        "B": "A 300 nagyobb 255-nél.",
+        "C": "Csak három szám van benne."
       },
       "id": "1",
       "category": "halozat-biztonsag"
@@ -160,7 +160,7 @@
       "options": [
         {
           "key": "A",
-          "text": "A böngészés után nem őrzi meg a saját gépen az előzményeket és a sütiket."
+          "text": "Megvéd a vírusoktól."
         },
         {
           "key": "B",
@@ -168,18 +168,18 @@
         },
         {
           "key": "C",
-          "text": "Megvéd a vírusoktól."
+          "text": "A böngészés után nem őrzi meg a saját gépen az előzményeket és a sütiket."
         },
         {
           "key": "D",
           "text": "Titkosítja az összes forgalmat."
         }
       ],
-      "answer": "A",
-      "explanation": "A. A privát mód csak helyben nem tárol; a szolgáltató, a hálózat üzemeltetője és a weboldal továbbra is látja a forgalmat.",
+      "answer": "C",
+      "explanation": "C. A privát mód csak helyben nem tárol; a szolgáltató, a hálózat üzemeltetője és a weboldal továbbra is látja a forgalmat.",
       "wrongOptions": {
+        "A": "A kártevők ellen nem nyújt védelmet.",
         "B": "Az IP-cím rejtéséhez pl. VPN kellene.",
-        "C": "A kártevők ellen nem nyújt védelmet.",
         "D": "A titkosítást a https adja, nem a privát mód."
       },
       "id": "3",
@@ -195,7 +195,7 @@
         },
         {
           "key": "B",
-          "text": "20 másodperc"
+          "text": "400 másodperc"
         },
         {
           "key": "C",
@@ -203,15 +203,15 @@
         },
         {
           "key": "D",
-          "text": "400 másodperc"
+          "text": "20 másodperc"
         }
       ],
-      "answer": "B",
-      "explanation": "B – 20 s: 50 MB · 8 = 400 Mbit; 400 Mbit / 20 Mbit/s = 20 s.",
+      "answer": "D",
+      "explanation": "D – 20 s: 50 MB · 8 = 400 Mbit; 400 Mbit / 20 Mbit/s = 20 s.",
       "wrongOptions": {
         "A": "Ez a 8-as szorzó nélkül jön ki (50 / 20).",
-        "C": "Ez 150 másodperc, nem jön ki a helyes átváltásból.",
-        "D": "Ez a megabitben kifejezett fájlméret, nem az idő."
+        "B": "Ez a megabitben kifejezett fájlméret, nem az idő.",
+        "C": "Ez 150 másodperc, nem jön ki a helyes átváltásból."
       },
       "id": "4",
       "category": "halozat-biztonsag"
@@ -222,11 +222,11 @@
       "options": [
         {
           "key": "A",
-          "text": "3 példány, 2 különböző adathordozón, 1 másik helyen (pl. felhőben vagy otthonon kívül)"
+          "text": "3 havonta, 2 jelszóval, 1 meghajtóra"
         },
         {
           "key": "B",
-          "text": "3 havonta, 2 jelszóval, 1 meghajtóra"
+          "text": "3 példány, 2 különböző adathordozón, 1 másik helyen (pl. felhőben vagy otthonon kívül)"
         },
         {
           "key": "C",
@@ -237,10 +237,10 @@
           "text": "3 felhasználó, 2 gép, 1 közös mappa"
         }
       ],
-      "answer": "A",
-      "explanation": "A. Így egy meghajtó hibája, egy zsarolóvírus vagy akár egy tűz sem okoz végleges adatvesztést.",
+      "answer": "B",
+      "explanation": "B. Így egy meghajtó hibája, egy zsarolóvírus vagy akár egy tűz sem okoz végleges adatvesztést.",
       "wrongOptions": {
-        "B": "A szabály a példányokról, adathordozókról és helyszínekről szól.",
+        "A": "A szabály a példányokról, adathordozókról és helyszínekről szól.",
         "C": "Több víruskereső egyszerre ütközhet, és nem mentési szabály.",
         "D": "A közös mappa nem biztonsági mentés."
       },

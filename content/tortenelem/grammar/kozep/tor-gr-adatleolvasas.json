@@ -130,11 +130,11 @@
       "options": [
         {
           "key": "A",
-          "text": "60 %"
+          "text": "150 %"
         },
         {
           "key": "B",
-          "text": "150 %"
+          "text": "60 %"
         },
         {
           "key": "C",
@@ -145,11 +145,11 @@
           "text": "40 %"
         }
       ],
-      "answer": "B",
+      "answer": "A",
       "category": "adatleolvasas",
       "explanation": "Helyes: 150 %. (100 − 40) : 40 × 100 = 150 %. A változást mindig a kiinduló értékhez viszonyítjuk.",
       "wrongOptions": {
-        "A": "A 60 az abszolút különbség, nem százalék.",
+        "B": "A 60 az abszolút különbség, nem százalék.",
         "C": "A 250 % azt mutatja, hogy a végérték a kiinduló érték hány százaléka (100 : 40), nem a növekedést.",
         "D": "A 40 a kiinduló érték, nem a változás mértéke."
       }
@@ -192,11 +192,11 @@
       "options": [
         {
           "key": "A",
-          "text": "nőtt (100 000-ről 160 000-re)"
+          "text": "csökkent"
         },
         {
           "key": "B",
-          "text": "csökkent"
+          "text": "nőtt (100 000-ről 160 000-re)"
         },
         {
           "key": "C",
@@ -207,11 +207,11 @@
           "text": "az adatokból nem számítható ki"
         }
       ],
-      "answer": "A",
+      "answer": "B",
       "category": "adatleolvasas",
-      "explanation": "Helyes: A. 200 000 × 0,5 = 100 000; 400 000 × 0,4 = 160 000 – a létszám nőtt, bár az arány csökkent.",
+      "explanation": "Helyes: B. 200 000 × 0,5 = 100 000; 400 000 × 0,4 = 160 000 – a létszám nőtt, bár az arány csökkent.",
       "wrongOptions": {
-        "B": "Csak az arány csökkent, a létszám nőtt (160 000 > 100 000).",
+        "A": "Csak az arány csökkent, a létszám nőtt (160 000 > 100 000).",
         "C": "A létszám 60 000 fővel nőtt.",
         "D": "A teljes népesség és az arány ismeretében a létszám kiszámítható."
       }

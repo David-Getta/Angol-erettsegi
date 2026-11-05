@@ -158,7 +158,7 @@
         },
         {
           "key": "B",
-          "text": "print(\" \".join(str(x) for x in t if x % 2 == 0))"
+          "text": "print(\" \".join(x for x in t if x % 2 == 0))"
         },
         {
           "key": "C",
@@ -166,22 +166,22 @@
         },
         {
           "key": "D",
-          "text": "print(\" \".join(x for x in t if x % 2 == 0))"
+          "text": "print(\" \".join(str(x) for x in t if x % 2 == 0))"
         }
       ],
-      "answer": "B",
-      "explanation": "B. A páros elemeket karakterlánccá alakítja, és szóközzel fűzi össze egyetlen sorba.",
+      "answer": "D",
+      "explanation": "D. A páros elemeket karakterlánccá alakítja, és szóközzel fűzi össze egyetlen sorba.",
       "wrongOptions": {
         "A": "Minden szám külön sorba kerülne (és egy sorba írva szintaktikailag sem helyes).",
-        "C": "A lista Python-alakban, szögletes zárójellel és vesszőkkel jelenne meg.",
-        "D": "A join egész számokat kapna – TypeError."
+        "B": "A join egész számokat kapna – TypeError.",
+        "C": "A lista Python-alakban, szögletes zárójellel és vesszőkkel jelenne meg."
       },
       "id": "4",
       "category": "kimenet-formatum"
     },
     {
       "kind": "text",
-      "prompt": "Mit ír ki a program?\nfor i in range(3):\n    print(i, end=\"-\")",
+      "prompt": "Mit ír ki a program?\nfor i in range(3):\n    print(i, end=\"-\")",
       "answer": [
         "0-1-2-"
       ],
@@ -195,11 +195,11 @@
       "options": [
         {
           "key": "A",
-          "text": "f.write(sor)"
+          "text": "f.write(sor + \"\\n\")"
         },
         {
           "key": "B",
-          "text": "f.write(sor + \"\\n\")"
+          "text": "f.write(sor)"
         },
         {
           "key": "C",
@@ -210,10 +210,10 @@
           "text": "f.write(sor, \"\\n\")"
         }
       ],
-      "answer": "B",
-      "explanation": "B. A write() pontosan azt írja ki, amit kap; a sortörést (\\n) hozzá kell fűzni. (Egyenértékű: print(sor, file=f).)",
+      "answer": "A",
+      "explanation": "A. A write() pontosan azt írja ki, amit kap; a sortörést (\\n) hozzá kell fűzni. (Egyenértékű: print(sor, file=f).)",
       "wrongOptions": {
-        "A": "Sortörés nélkül a sorok egybefolynak.",
+        "B": "Sortörés nélkül a sorok egybefolynak.",
         "C": "A képernyőre ír, nem a fájlba.",
         "D": "A write() egyetlen argumentumot fogad – TypeError."
       },

@@ -26,11 +26,11 @@
   "options": [
     {
       "key": "A",
-      "text": "ősiség"
+      "text": "érdekegyesítés"
     },
     {
       "key": "B",
-      "text": "közteherviselés"
+      "text": "felelős minisztérium"
     },
     {
       "key": "C",
@@ -38,15 +38,15 @@
     },
     {
       "key": "D",
-      "text": "felelős minisztérium"
+      "text": "kiegyezés"
     },
     {
       "key": "E",
-      "text": "népképviselet"
+      "text": "közteherviselés"
     },
     {
       "key": "F",
-      "text": "érdekegyesítés"
+      "text": "népképviselet"
     },
     {
       "key": "G",
@@ -54,25 +54,25 @@
     },
     {
       "key": "H",
-      "text": "kiegyezés"
+      "text": "ősiség"
     }
   ],
   "example": {
     "id": "0",
     "kind": "match",
     "prompt": "A nemesi birtok elidegeníthetetlenségét biztosító, 1351 óta érvényes törvény, amelyet 1848-ban eltöröltek.",
-    "answer": "A",
+    "answer": "H",
     "category": "fogalomhasznalat",
-    "explanation": "Helyes: A – ősiség (aviticitas). Nagy Lajos 1351-es törvénye szerint a nemesi birtok nem adható el végleg, a nemzetség kihalása esetén a királyra száll. Mivel a földet nem lehetett jelzálogként felhasználni, akadályozta a hitelfelvételt – ezért kérte eltörlését már Széchenyi is."
+    "explanation": "Helyes: H – ősiség (aviticitas). Nagy Lajos 1351-es törvénye szerint a nemesi birtok nem adható el végleg, a nemzetség kihalása esetén a királyra száll. Mivel a földet nem lehetett jelzálogként felhasználni, akadályozta a hitelfelvételt – ezért kérte eltörlését már Széchenyi is."
   },
   "items": [
     {
       "id": "1",
       "kind": "match",
       "prompt": "A nemesség adómentességének megszüntetése: minden lakos jövedelme, vagyona arányában adózik.",
-      "answer": "B",
+      "answer": "E",
       "category": "fogalomhasznalat",
-      "explanation": "Helyes: B – közteherviselés. A forrás szerint „a nemesség is adózni fog”; ez a rendi kiváltságok egyik legfontosabbjának megszüntetése és a jogegyenlőség alapja volt."
+      "explanation": "Helyes: E – közteherviselés. A forrás szerint „a nemesség is adózni fog”; ez a rendi kiváltságok egyik legfontosabbjának megszüntetése és a jogegyenlőség alapja volt."
     },
     {
       "id": "2",
@@ -89,19 +89,19 @@
       "id": "3",
       "kind": "match",
       "prompt": "A kormány az országgyűlésnek tartozik felelősséggel, az uralkodó rendeletei csak miniszteri ellenjegyzéssel érvényesek.",
-      "answer": "D",
+      "answer": "B",
       "category": "fogalomhasznalat",
-      "explanation": "Helyes: D – felelős minisztérium (felelős kormány). Ezzel a végrehajtó hatalom a parlamentnek lett alárendelve; az első felelős kormányt Batthyány Lajos alakította meg."
+      "explanation": "Helyes: B – felelős minisztérium (felelős kormány). Ezzel a végrehajtó hatalom a parlamentnek lett alárendelve; az első felelős kormányt Batthyány Lajos alakította meg."
     },
     {
       "id": "4",
       "kind": "match",
       "prompt": "Vagyoni vagy műveltségi cenzushoz kötött választójog alapján megválasztott, a rendi országgyűlést felváltó törvényhozás.",
-      "answer": "E",
+      "answer": "F",
       "category": "fogalomhasznalat",
-      "explanation": "Helyes: E – népképviselet. A forrás szerint Pesten „népképviseleti országgyűlés” ülésezik; a választójogot vagyoni (vagy műveltségi) feltételhez kötötték, a felnőtt férfi lakosság mintegy negyede kapott szavazati jogot.",
+      "explanation": "Helyes: F – népképviselet. A forrás szerint Pesten „népképviseleti országgyűlés” ülésezik; a választójogot vagyoni (vagy műveltségi) feltételhez kötötték, a felnőtt férfi lakosság mintegy negyede kapott szavazati jogot.",
       "wrongOptions": {
-        "F": "Az érdekegyesítés Kossuth reformkori programja volt (a nemesség és a nem nemesek érdekeinek összehangolása); nem a törvényhozás formáját jelenti."
+        "A": "Az érdekegyesítés Kossuth reformkori programja volt (a nemesség és a nem nemesek érdekeinek összehangolása); nem a törvényhozás formáját jelenti."
       }
     },
     {
@@ -124,7 +124,7 @@
       "options": [
         {
           "key": "A",
-          "text": "V. Ferdinánd"
+          "text": "II. József"
         },
         {
           "key": "B",
@@ -136,16 +136,16 @@
         },
         {
           "key": "D",
-          "text": "II. József"
+          "text": "V. Ferdinánd"
         }
       ],
-      "answer": "A",
+      "answer": "D",
       "category": "szemelyek-esemenyek",
       "explanation": "Helyes: V. Ferdinánd. Az uralkodó 1848. április 11-én Pozsonyban szentesítette a törvényeket. Ferenc József csak 1848 decemberében lépett trónra, és nem ismerte el az áprilisi törvényeket.",
       "wrongOptions": {
+        "A": "II. József 1790-ben halt meg; a felvilágosult abszolutizmus uralkodója volt.",
         "B": "Ferenc József 1848. december 2-án került a trónra, az áprilisi törvényeket nem szentesítette, sőt az olmützi alkotmánnyal (1849) semmisnek tekintette.",
-        "C": "I. Ferenc 1835-ben meghalt, a reformkor elején uralkodott.",
-        "D": "II. József 1790-ben halt meg; a felvilágosult abszolutizmus uralkodója volt."
+        "C": "I. Ferenc 1835-ben meghalt, a reformkor elején uralkodott."
       }
     }
   ],

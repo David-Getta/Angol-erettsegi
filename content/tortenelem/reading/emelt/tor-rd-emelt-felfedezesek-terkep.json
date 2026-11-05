@@ -29,81 +29,81 @@
   "options": [
     {
       "key": "A",
-      "text": "Bartolomeu Dias"
+      "text": "Amerigo Vespucci"
     },
     {
       "key": "B",
-      "text": "Vasco da Gama"
+      "text": "Bartolomeu Dias"
     },
     {
       "key": "C",
-      "text": "Kolumbusz Kristóf"
-    },
-    {
-      "key": "D",
-      "text": "Magellán (Fernão de Magalhães)"
-    },
-    {
-      "key": "E",
-      "text": "Hernán Cortés"
-    },
-    {
-      "key": "F",
       "text": "Francisco Pizarro"
     },
     {
+      "key": "D",
+      "text": "Hernán Cortés"
+    },
+    {
+      "key": "E",
+      "text": "Kolumbusz Kristóf"
+    },
+    {
+      "key": "F",
+      "text": "Magellán (Fernão de Magalhães)"
+    },
+    {
       "key": "G",
-      "text": "Amerigo Vespucci"
+      "text": "Vasco da Gama"
     }
   ],
   "example": {
     "id": "0",
     "kind": "match",
     "prompt": "0. útvonal",
-    "answer": "A",
+    "answer": "B",
     "category": "topografia",
-    "explanation": "Helyes: A – Bartolomeu Dias. A portugál hajós 1488-ban elsőként kerülte meg Afrika déli csücskét (Jóreménység foka), de legénysége kérésére visszafordult."
+    "explanation": "Helyes: B – Bartolomeu Dias. A portugál hajós 1488-ban elsőként kerülte meg Afrika déli csücskét (Jóreménység foka), de legénysége kérésére visszafordult."
   },
   "items": [
     {
       "id": "1",
       "kind": "match",
       "prompt": "1. útvonal",
-      "answer": "B",
+      "answer": "G",
       "category": "topografia",
-      "explanation": "Helyes: B – Vasco da Gama. 1497-ben indult Lisszabonból, Dias útvonalát folytatva megkerülte Afrikát, és 1498-ban elérte Calicutot: megnyílt a tengeri út Indiába.",
+      "explanation": "Helyes: G – Vasco da Gama. 1497-ben indult Lisszabonból, Dias útvonalát folytatva megkerülte Afrikát, és 1498-ban elérte Calicutot: megnyílt a tengeri út Indiába.",
       "wrongOptions": {
-        "A": "Dias csak Afrika déli csücskéig jutott, Indiát nem érte el."
+        "B": "Dias csak Afrika déli csücskéig jutott, Indiát nem érte el."
       }
     },
     {
       "id": "2",
       "kind": "match",
       "prompt": "2. útvonal",
-      "answer": "C",
+      "answer": "E",
       "category": "topografia",
-      "explanation": "Helyes: C – Kolumbusz Kristóf. A spanyol királyi pár megbízásából 1492. augusztus 3-án indult Palosból nyugat felé, hogy Indiába jusson; október 12-én a Bahama-szigeteken (Guanahani) ért partot.",
+      "explanation": "Helyes: E – Kolumbusz Kristóf. A spanyol királyi pár megbízásából 1492. augusztus 3-án indult Palosból nyugat felé, hogy Indiába jusson; október 12-én a Bahama-szigeteken (Guanahani) ért partot.",
       "wrongOptions": {
-        "G": "Amerigo Vespucci a 16. század elején Dél-Amerika partjait járta be, és arra a következtetésre jutott, hogy új kontinensről van szó (róla nevezték el Amerikát); a 2. útvonal a Kolumbuszé."
+        "A": "Amerigo Vespucci a 16. század elején Dél-Amerika partjait járta be, és arra a következtetésre jutott, hogy új kontinensről van szó (róla nevezték el Amerikát); a 2. útvonal a Kolumbuszé."
       }
     },
     {
       "id": "3",
       "kind": "match",
       "prompt": "3. útvonal",
-      "answer": "D",
+      "answer": "F",
       "category": "topografia",
-      "explanation": "Helyes: D – Magellán. Spanyol szolgálatban 1519-ben indult, a róla elnevezett szoroson át jutott a Csendes-óceánra; 1521-ben a Fülöp-szigeteken megölték. A Victoria hajó Elcano vezetésével 1522-ben ért vissza: ez volt az első Föld körüli út."
+      "explanation": "Helyes: F – Magellán. Spanyol szolgálatban 1519-ben indult, a róla elnevezett szoroson át jutott a Csendes-óceánra; 1521-ben a Fülöp-szigeteken megölték. A Victoria hajó Elcano vezetésével 1522-ben ért vissza: ez volt az első Föld körüli út."
     },
     {
       "id": "4",
       "kind": "match",
       "prompt": "4. útvonal",
-      "answer": "E",
+      "answer": "D",
       "category": "topografia",
-      "explanation": "Helyes: E – Hernán Cortés. 1519-ben szállt partra Mexikóban, és 1521-re elfoglalta az azték fővárost, Tenochtitlant.",
+      "explanation": "Helyes: D – Hernán Cortés. 1519-ben szállt partra Mexikóban, és 1521-re elfoglalta az azték fővárost, Tenochtitlant.",
       "wrongOptions": {
-        "F": "Francisco Pizarro Dél-Amerikában, az Andokban hódította meg az inka birodalmat (1530-as évek), nem az aztékokat."
+        "C": "Francisco Pizarro Dél-Amerikában, az Andokban hódította meg az inka birodalmat (1530-as évek), nem az aztékokat."
       }
     },
     {
@@ -113,7 +113,7 @@
       "options": [
         {
           "key": "A",
-          "text": "a tordesillasi szerződés"
+          "text": "az augsburgi vallásbéke"
         },
         {
           "key": "B",
@@ -121,19 +121,19 @@
         },
         {
           "key": "C",
-          "text": "az augsburgi vallásbéke"
+          "text": "a tordesillasi szerződés"
         },
         {
           "key": "D",
           "text": "az utrechti béke"
         }
       ],
-      "answer": "A",
+      "answer": "C",
       "category": "szemelyek-esemenyek",
-      "explanation": "Helyes: A. A tordesillasi szerződés (1494) a Zöld-foki-szigetektől nyugatra húzott délkör mentén osztotta fel az érdekszférákat: a vonaltól nyugatra Spanyolországé, keletre Portugáliáé lett a jog – ezért lett Brazília portugál.",
+      "explanation": "Helyes: C. A tordesillasi szerződés (1494) a Zöld-foki-szigetektől nyugatra húzott délkör mentén osztotta fel az érdekszférákat: a vonaltól nyugatra Spanyolországé, keletre Portugáliáé lett a jog – ezért lett Brazília portugál.",
       "wrongOptions": {
+        "A": "Az augsburgi vallásbéke (1555) a Német-római Birodalom vallási megosztottságát rendezte („akié a föld, azé a vallás”).",
         "B": "A vesztfáliai béke (1648) a harmincéves háborút zárta le.",
-        "C": "Az augsburgi vallásbéke (1555) a Német-római Birodalom vallási megosztottságát rendezte („akié a föld, azé a vallás”).",
         "D": "Az utrechti béke (1713) a spanyol örökösödési háborút zárta le."
       }
     },
@@ -144,11 +144,11 @@
       "options": [
         {
           "key": "A",
-          "text": "a kereskedelem súlypontja a Földközi-tenger térségéből az Atlanti-óceán partvidékére helyeződött át"
+          "text": "Velence és Genova kereskedelmi szerepe tartósan megerősödött"
         },
         {
           "key": "B",
-          "text": "Velence és Genova kereskedelmi szerepe tartósan megerősödött"
+          "text": "a kereskedelem súlypontja a Földközi-tenger térségéből az Atlanti-óceán partvidékére helyeződött át"
         },
         {
           "key": "C",
@@ -159,11 +159,11 @@
           "text": "Nyugat-Európában megerősödött a céhes ipar monopóliuma"
         }
       ],
-      "answer": "A",
+      "answer": "B",
       "category": "ok-okozat",
-      "explanation": "Helyes: A. Az új tengeri utak miatt a világkereskedelem központjai Lisszabon, Sevilla, majd Antwerpen és Amszterdam lettek; az itáliai városok közvetítő szerepe hanyatlott.",
+      "explanation": "Helyes: B. Az új tengeri utak miatt a világkereskedelem központjai Lisszabon, Sevilla, majd Antwerpen és Amszterdam lettek; az itáliai városok közvetítő szerepe hanyatlott.",
       "wrongOptions": {
-        "B": "Az itáliai kereskedővárosok éppen veszítettek jelentőségükből, mert a keleti áruk már nem a Földközi-tengeren át érkeztek Európába.",
+        "A": "Az itáliai kereskedővárosok éppen veszítettek jelentőségükből, mert a keleti áruk már nem a Földközi-tengeren át érkeztek Európába.",
         "C": "Az Amerikából beáramló nemesfém miatt a 16. században árforradalom zajlott: az árak jelentősen emelkedtek.",
         "D": "A bővülő piac a manufaktúrák és a kereskedőtőke megerősödésének kedvezett, a céhes keretek inkább gyengültek."
       }

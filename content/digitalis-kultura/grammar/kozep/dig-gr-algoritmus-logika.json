@@ -135,7 +135,7 @@
   "practice": [
     {
       "kind": "text",
-      "prompt": "Mit ír ki a program?\nt = [-5, -2, -9]\nm = 0\nfor x in t:\n    if x > m:\n        m = x\nprint(m)",
+      "prompt": "Mit ír ki a program?\nt = [-5, -2, -9]\nm = 0\nfor x in t:\n    if x > m:\n        m = x\nprint(m)",
       "answer": [
         "0"
       ],
@@ -149,7 +149,7 @@
       "options": [
         {
           "key": "A",
-          "text": "while i < len(t) and t[i] != keresett:"
+          "text": "while t[i] != keresett:"
         },
         {
           "key": "B",
@@ -161,22 +161,22 @@
         },
         {
           "key": "D",
-          "text": "while t[i] != keresett:"
+          "text": "while i < len(t) and t[i] != keresett:"
         }
       ],
-      "answer": "A",
-      "explanation": "A. Az and balról jobbra értékel, és ha az első feltétel hamis, a másodikat már nem vizsgálja (rövidzár); így i = len(t) esetén a t[i] nem fut le.",
+      "answer": "D",
+      "explanation": "D. Az and balról jobbra értékel, és ha az első feltétel hamis, a másodikat már nem vizsgálja (rövidzár); így i = len(t) esetén a t[i] nem fut le.",
       "wrongOptions": {
+        "A": "Ha az elem nincs a listában, a ciklus túlfut, és hibát ad.",
         "B": "Ha i eléri a len(t)-t, előbb a t[i] értékelődik ki → IndexError.",
-        "C": "Az i <= len(t) megengedi az i = len(t) indexet, ami túlmutat a listán.",
-        "D": "Ha az elem nincs a listában, a ciklus túlfut, és hibát ad."
+        "C": "Az i <= len(t) megengedi az i = len(t) indexet, ami túlmutat a listán."
       },
       "id": "2",
       "category": "algoritmus-logika"
     },
     {
       "kind": "text",
-      "prompt": "Mit ír ki a program?\nfor i in range(2, 10, 3):\n    print(i, end=\" \")",
+      "prompt": "Mit ír ki a program?\nfor i in range(2, 10, 3):\n    print(i, end=\" \")",
       "answer": [
         "2 5 8"
       ],
@@ -190,11 +190,11 @@
       "options": [
         {
           "key": "A",
-          "text": "if p >= 50 → elégséges; elif p >= 80 → jeles; else → elégtelen"
+          "text": "if p >= 80 → jeles; elif p >= 50 → elégséges; else → elégtelen"
         },
         {
           "key": "B",
-          "text": "if p >= 80 → jeles; elif p >= 50 → elégséges; else → elégtelen"
+          "text": "if p >= 50 → elégséges; elif p >= 80 → jeles; else → elégtelen"
         },
         {
           "key": "C",
@@ -205,10 +205,10 @@
           "text": "if p >= 80 → jeles; if p >= 50 → elégséges; else → elégtelen"
         }
       ],
-      "answer": "B",
-      "explanation": "B. Az első igaz ág fut le, ezért a szigorúbb (80-as) feltételnek kell elöl állnia; a >= a határt is beleérti.",
+      "answer": "A",
+      "explanation": "A. Az első igaz ág fut le, ezért a szigorúbb (80-as) feltételnek kell elöl állnia; a >= a határt is beleérti.",
       "wrongOptions": {
-        "A": "A 95 pont már az első feltételnél elégséges lesz; a jeles ág sosem fut le.",
+        "B": "A 95 pont már az első feltételnél elégséges lesz; a jeles ág sosem fut le.",
         "C": "A > kizárja a határt: pontosan 80 pont elégséges, 50 pont elégtelen lenne.",
         "D": "Két külön if: a 95 pontra előbb jeles, majd a második if-nél elégséges is kiíródik."
       },
@@ -217,7 +217,7 @@
     },
     {
       "kind": "text",
-      "prompt": "Mit ír ki a program?\ndb = 0\nfor i in range(1, 6):\n    for j in range(1, 6):\n        if i < j:\n            db += 1\nprint(db)",
+      "prompt": "Mit ír ki a program?\ndb = 0\nfor i in range(1, 6):\n    for j in range(1, 6):\n        if i < j:\n            db += 1\nprint(db)",
       "answer": [
         "10"
       ],
@@ -235,22 +235,22 @@
         },
         {
           "key": "B",
-          "text": "eldöntés"
+          "text": "kiválogatás"
         },
         {
           "key": "C",
-          "text": "kiválogatás"
+          "text": "eldöntés"
         },
         {
           "key": "D",
           "text": "maximumkiválasztás"
         }
       ],
-      "answer": "B",
-      "explanation": "B – eldöntés: a kérdés igen/nem válaszú, és az első 3000 alatti napnál meg lehet állni.",
+      "answer": "C",
+      "explanation": "C – eldöntés: a kérdés igen/nem válaszú, és az első 3000 alatti napnál meg lehet állni.",
       "wrongOptions": {
         "A": "Az összegzés egy összeget ad, nem igen/nem választ.",
-        "C": "A kiválogatás az összes ilyen napot összegyűjtené – több, mint amit a kérdés kér.",
+        "B": "A kiválogatás az összes ilyen napot összegyűjtené – több, mint amit a kérdés kér.",
         "D": "A legnagyobb érték nem dönti el a kérdést."
       },
       "id": "6",

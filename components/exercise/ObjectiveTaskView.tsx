@@ -434,7 +434,7 @@ function ItemRow({ item, view, inline, usedMatch }: { item: Item; view: ViewProp
         <div className="min-w-0 flex-1">
           {isExample && <div className="text-xs font-medium uppercase tracking-wide text-muted">{t.task.example}</div>}
           {item.prompt && (
-            <div className="whitespace-pre-line">
+            <div className="whitespace-pre-wrap">
               {item.prompt}
               {item.kind === "text" && item.cue && <span className="ml-1 font-semibold">({item.cue})</span>}
             </div>

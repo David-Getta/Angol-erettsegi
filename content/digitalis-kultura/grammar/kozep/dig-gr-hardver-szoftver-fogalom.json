@@ -131,22 +131,22 @@
         },
         {
           "key": "B",
-          "text": "RAM"
+          "text": "SSD"
         },
         {
           "key": "C",
-          "text": "SSD"
+          "text": "RAM"
         },
         {
           "key": "D",
           "text": "firmware-tár (UEFI)"
         }
       ],
-      "answer": "B",
-      "explanation": "B – RAM: illékony memória, áram nélkül a tartalma elvész.",
+      "answer": "C",
+      "explanation": "C – RAM: illékony memória, áram nélkül a tartalma elvész.",
       "wrongOptions": {
         "A": "A ROM nem illékony, a tartalma megmarad.",
-        "C": "Az SSD háttértár, tartósan tárol.",
+        "B": "Az SSD háttértár, tartósan tárol.",
         "D": "A firmware nem illékony tárban van, különben a gép el sem indulna."
       },
       "id": "1",
@@ -183,7 +183,7 @@
         },
         {
           "key": "B",
-          "text": "illesztőprogram (driver)"
+          "text": "képszerkesztő"
         },
         {
           "key": "C",
@@ -191,15 +191,15 @@
         },
         {
           "key": "D",
-          "text": "képszerkesztő"
+          "text": "illesztőprogram (driver)"
         }
       ],
-      "answer": "B",
-      "explanation": "B. Az illesztőprogram az operációs rendszer és egy hardvereszköz közti kapcsolatot teremti meg, így a rendszerszoftverek közé tartozik.",
+      "answer": "D",
+      "explanation": "D. Az illesztőprogram az operációs rendszer és egy hardvereszköz közti kapcsolatot teremti meg, így a rendszerszoftverek közé tartozik.",
       "wrongOptions": {
         "A": "A böngésző alkalmazói szoftver.",
-        "C": "A táblázatkezelő alkalmazói szoftver.",
-        "D": "A képszerkesztő alkalmazói szoftver."
+        "B": "A képszerkesztő alkalmazói szoftver.",
+        "C": "A táblázatkezelő alkalmazói szoftver."
       },
       "id": "4",
       "category": "hardver-szoftver-fogalom"
@@ -210,7 +210,7 @@
       "options": [
         {
           "key": "A",
-          "text": "Kis méretű, nagyon gyors memória a processzorban (vagy közvetlenül mellette) a gyakran használt adatok és utasítások számára."
+          "text": "Csak olvasható memória az indításhoz."
         },
         {
           "key": "B",
@@ -218,18 +218,18 @@
         },
         {
           "key": "C",
-          "text": "Csak olvasható memória az indításhoz."
+          "text": "Kis méretű, nagyon gyors memória a processzorban (vagy közvetlenül mellette) a gyakran használt adatok és utasítások számára."
         },
         {
           "key": "D",
           "text": "Felhőben tárolt biztonsági másolat."
         }
       ],
-      "answer": "A",
-      "explanation": "A. A gyorsítótár csökkenti, hányszor kell a lassabb RAM-hoz fordulni; több szintje van (L1, L2, L3).",
+      "answer": "C",
+      "explanation": "C. A gyorsítótár csökkenti, hányszor kell a lassabb RAM-hoz fordulni; több szintje van (L1, L2, L3).",
       "wrongOptions": {
+        "A": "Ez a ROM, illetve a firmware tára.",
         "B": "Ez a virtuális memória (lapozófájl).",
-        "C": "Ez a ROM, illetve a firmware tára.",
         "D": "Ez felhőalapú mentés, nem a processzor része."
       },
       "id": "5",

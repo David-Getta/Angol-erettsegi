@@ -26,7 +26,7 @@
     {
       "id": "1",
       "kind": "text",
-      "prompt": "Mit ír ki a program?\ndb = 0\nfor i in range(1, 5):\n    for j in range(i, 5):\n        db += 1\nprint(db)",
+      "prompt": "Mit ír ki a program?\ndb = 0\nfor i in range(1, 5):\n    for j in range(i, 5):\n        db += 1\nprint(db)",
       "answer": [
         "10"
       ],
@@ -36,7 +36,7 @@
     {
       "id": "2",
       "kind": "text",
-      "prompt": "Mit ír ki a program?\ns = \"algoritmus\"\nu = \"\"\nfor k in s:\n    if k in \"aeiou\":\n        u = u + k.upper()\nprint(u)",
+      "prompt": "Mit ír ki a program?\ns = \"algoritmus\"\nu = \"\"\nfor k in s:\n    if k in \"aeiou\":\n        u = u + k.upper()\nprint(u)",
       "answer": [
         "AOIU"
       ],
@@ -47,7 +47,7 @@
     {
       "id": "3",
       "kind": "text",
-      "prompt": "Mit ír ki a program?\nszavak = [\"alma\", \"korte\", \"alma\", \"szilva\", \"alma\", \"korte\"]\ngy = {}\nfor sz in szavak:\n    gy[sz] = gy.get(sz, 0) + 1\nprint(len(gy), gy[\"alma\"])",
+      "prompt": "Mit ír ki a program?\nszavak = [\"alma\", \"korte\", \"alma\", \"szilva\", \"alma\", \"korte\"]\ngy = {}\nfor sz in szavak:\n    gy[sz] = gy.get(sz, 0) + 1\nprint(len(gy), gy[\"alma\"])",
       "answer": [
         "3 3"
       ],
@@ -57,7 +57,7 @@
     {
       "id": "4",
       "kind": "text",
-      "prompt": "Mit ír ki a program?\ndef f(n):\n    if n <= 1:\n        return 1\n    return n * f(n - 2)\n\nprint(f(7))",
+      "prompt": "Mit ír ki a program?\ndef f(n):\n    if n <= 1:\n        return 1\n    return n * f(n - 2)\n\nprint(f(7))",
       "answer": [
         "105"
       ],
@@ -78,7 +78,7 @@
     {
       "id": "6",
       "kind": "text",
-      "prompt": "Mit ír ki a program?\nn = 91\nd = 2\nwhile n % d != 0:\n    d += 1\nprint(d)",
+      "prompt": "Mit ír ki a program?\nn = 91\nd = 2\nwhile n % d != 0:\n    d += 1\nprint(d)",
       "answer": [
         "7"
       ],
@@ -88,7 +88,7 @@
     {
       "id": "7",
       "kind": "text",
-      "prompt": "Mit ír ki a program?\nn = 13\ns = \"\"\nwhile n > 0:\n    s = str(n % 2) + s\n    n = n // 2\nprint(s)",
+      "prompt": "Mit ír ki a program?\nn = 13\ns = \"\"\nwhile n > 0:\n    s = str(n % 2) + s\n    n = n // 2\nprint(s)",
       "answer": [
         "1101"
       ],
@@ -98,7 +98,7 @@
     {
       "id": "8",
       "kind": "text",
-      "prompt": "Mit ír ki a program?\nt = [4, 9, 2, 9, 7]\nmi = 0\nfor i in range(1, len(t)):\n    if t[i] > t[mi]:\n        mi = i\nprint(mi)",
+      "prompt": "Mit ír ki a program?\nt = [4, 9, 2, 9, 7]\nmi = 0\nfor i in range(1, len(t)):\n    if t[i] > t[mi]:\n        mi = i\nprint(mi)",
       "answer": [
         "1"
       ],

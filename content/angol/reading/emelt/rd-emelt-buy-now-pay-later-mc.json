@@ -52,20 +52,20 @@
       },
       {
         "key": "B",
-        "text": "something she did not really need."
+        "text": "clothes for a job interview."
       },
       {
         "key": "C",
-        "text": "clothes for a job interview."
+        "text": "something she did not really need."
       },
       {
         "key": "D",
         "text": "an item that was on sale."
       }
     ],
-    "answer": "B",
+    "answer": "C",
     "category": "detail",
-    "explanation": "B. Egy olyan sportcipőt vett, amire valójában nem volt szüksége („she did not strictly need”).",
+    "explanation": "C. Egy olyan sportcipőt vett, amire valójában nem volt szüksége („she did not strictly need”).",
     "evidence": "she was buying a pair of trainers she did not strictly need"
   },
   "items": [
@@ -76,7 +76,7 @@
       "options": [
         {
           "key": "A",
-          "text": "a way of paying less for the trainers."
+          "text": "a service meant for people on low incomes."
         },
         {
           "key": "B",
@@ -84,20 +84,20 @@
         },
         {
           "key": "C",
-          "text": "a service meant for people on low incomes."
+          "text": "a way of paying less for the trainers."
         },
         {
           "key": "D",
           "text": "something that charged a reasonable rate of interest."
         }
       ],
-      "answer": "A",
+      "answer": "C",
       "category": "attitude",
-      "explanation": "A. Chloe szerint nem kölcsönnek érezte, hanem kedvezménynek („It felt like a discount”) – vagyis úgy tűnt neki, mintha kevesebbet fizetne a cipőért.",
+      "explanation": "C. Chloe szerint nem kölcsönnek érezte, hanem kedvezménynek („It felt like a discount”) – vagyis úgy tűnt neki, mintha kevesebbet fizetne a cipőért.",
       "evidence": "'It didn't feel like borrowing,' the 23-year-old remembers. 'It felt like a discount.'",
       "wrongOptions": {
+        "A": "Arról, hogy kiknek szól a szolgáltatás, Chloe nem mond semmit.",
         "B": "Épp ellenkezőleg: kifejezetten azt mondja, hogy nem érezte kölcsönnek („It didn't feel like borrowing”).",
-        "C": "Arról, hogy kiknek szól a szolgáltatás, Chloe nem mond semmit.",
         "D": "A gomb kamatmentes fizetést kínált („no interest”), tehát nem volt szó kamatról."
       }
     },
@@ -116,21 +116,21 @@
         },
         {
           "key": "C",
-          "text": "She was trying not to think about her debts."
+          "text": "She was paying back only one company."
         },
         {
           "key": "D",
-          "text": "She was paying back only one company."
+          "text": "She was trying not to think about her debts."
         }
       ],
-      "answer": "C",
+      "answer": "D",
       "category": "inference",
-      "explanation": "C. Már meg sem nyitotta a törlesztésekre emlékeztető e-maileket – ebből arra következtethetünk, hogy kerülte, hogy szembenézzen az adósságaival.",
+      "explanation": "D. Már meg sem nyitotta a törlesztésekre emlékeztető e-maileket – ebből arra következtethetünk, hogy kerülte, hogy szembenézzen az adósságaival.",
       "evidence": "had stopped opening the emails that reminded her about them",
       "wrongOptions": {
         "A": "Ekkor még öt különböző cégnek törlesztett („juggling repayments to five different companies”); az alkalmazásokat csak később törölte.",
         "B": "A családtól kért kölcsönről nincs szó; később ingyenes adósságtanácsadás segített neki.",
-        "D": "Nem egy, hanem öt cégnek tartozott."
+        "C": "Nem egy, hanem öt cégnek tartozott."
       }
     },
     {
@@ -172,7 +172,7 @@
       "options": [
         {
           "key": "A",
-          "text": "Customers pay nothing extra if they pay on time."
+          "text": "Shoppers tend to spend more when they are offered BNPL."
         },
         {
           "key": "B",
@@ -184,17 +184,17 @@
         },
         {
           "key": "D",
-          "text": "Shoppers tend to spend more when they are offered BNPL."
+          "text": "Customers pay nothing extra if they pay on time."
         }
       ],
-      "answer": "D",
+      "answer": "A",
       "category": "text-structure",
-      "explanation": "D. A „this effect” az előző bekezdés utolsó gondolatára utal: akinek felajánlják a BNPL-t, többet vásárol, és ritkábban hagyja ott a kosarát. A fogyasztóvédőket épp az aggasztja, hogy az emberek olyat is megvesznek, amit nem engedhetnének meg maguknak.",
+      "explanation": "A. A „this effect” az előző bekezdés utolsó gondolatára utal: akinek felajánlják a BNPL-t, többet vásárol, és ritkábban hagyja ott a kosarát. A fogyasztóvédőket épp az aggasztja, hogy az emberek olyat is megvesznek, amit nem engedhetnének meg maguknak.",
       "evidence": "customers who are offered BNPL tend to buy more and abandon fewer online baskets",
       "wrongOptions": {
-        "A": "Az, hogy időben fizetve nincs többletköltség, a vásárló szempontjából előny, nem aggasztó „hatás”.",
         "B": "A részletfizetés a szolgáltatás működése, nem a „hatása”; a „this effect” a közvetlenül előtte említett következményre utal.",
-        "C": "A kereskedők által fizetett díj az üzleti modell része, nem a vásárlók viselkedésére gyakorolt hatás, ami a fogyasztóvédőket aggasztja."
+        "C": "A kereskedők által fizetett díj az üzleti modell része, nem a vásárlók viselkedésére gyakorolt hatás, ami a fogyasztóvédőket aggasztja.",
+        "D": "Az, hogy időben fizetve nincs többletköltség, a vásárló szempontjából előny, nem aggasztó „hatás”."
       }
     },
     {
@@ -204,11 +204,11 @@
       "options": [
         {
           "key": "A",
-          "text": "it stops customers from borrowing more once they fall behind."
+          "text": "it never charges customers any fees."
         },
         {
           "key": "B",
-          "text": "it never charges customers any fees."
+          "text": "it stops customers from borrowing more once they fall behind."
         },
         {
           "key": "C",
@@ -219,12 +219,12 @@
           "text": "customers can choose how long they take to repay."
         }
       ],
-      "answer": "A",
+      "answer": "B",
       "category": "detail",
-      "explanation": "A. Wren szerint ha valaki elmulaszt egy részletet, addig nem vásárolhat újra, amíg be nem hozza a lemaradását – a hitelkártya ezzel szemben hagyja nőni az adósságot.",
+      "explanation": "B. Wren szerint ha valaki elmulaszt egy részletet, addig nem vásárolhat újra, amíg be nem hozza a lemaradását – a hitelkártya ezzel szemben hagyja nőni az adósságot.",
       "evidence": "If you miss a payment, we stop you from making new purchases until you've caught up.",
       "wrongOptions": {
-        "B": "Késedelmi díjak vannak („Late fees are usually modest”), tehát nem igaz, hogy soha nem kérnek díjat.",
+        "A": "Késedelmi díjak vannak („Late fees are usually modest”), tehát nem igaz, hogy soha nem kérnek díjat.",
         "C": "Wren nem beszél az ügyfelek koráról vagy vagyonáról; a cikk szerint a felhasználók épp aránytalanul fiatalok.",
         "D": "A törlesztési idő rugalmasságáról nincs szó; a részletek általában hat-nyolc hétre oszlanak el."
       }
@@ -240,24 +240,24 @@
         },
         {
           "key": "B",
-          "text": "makes things seem cheaper than they really are."
+          "text": "is more expensive than a traditional loan."
         },
         {
           "key": "C",
-          "text": "is more expensive than a traditional loan."
+          "text": "makes things seem cheaper than they really are."
         },
         {
           "key": "D",
           "text": "is advertised directly to secondary school students."
         }
       ],
-      "answer": "B",
+      "answer": "C",
       "category": "attitude",
-      "explanation": "B. Szerinte nem az egyes kölcsönök a veszélyesek, hanem a lélektani hatás: ha a képernyőn a valódi ár negyede látszik, az agy kisebb számot rögzít – vagyis a dolgok olcsóbbnak tűnnek.",
+      "explanation": "C. Szerinte nem az egyes kölcsönök a veszélyesek, hanem a lélektani hatás: ha a képernyőn a valódi ár negyede látszik, az agy kisebb számot rögzít – vagyis a dolgok olcsóbbnak tűnnek.",
       "evidence": "When the price on the screen is a quarter of the real price, your brain registers a smaller number.",
       "wrongOptions": {
         "A": "Nem mondja, hogy a rendszer bonyolult; épp az a baj, hogy túl egyszerűnek és ártalmatlannak tűnik.",
-        "C": "Nem hasonlítja össze a költségét más hitelekkel; időben fizetve a BNPL nem is kerül többe.",
+        "B": "Nem hasonlítja össze a költségét más hitelekkel; időben fizetve a BNPL nem is kerül többe.",
         "D": "Ő maga tart foglalkozásokat középiskolákban, de arról nincs szó, hogy a BNPL-t ott reklámoznák."
       }
     },
@@ -308,21 +308,21 @@
         },
         {
           "key": "C",
-          "text": "She believes it can be helpful if used sensibly."
+          "text": "She thinks only people with a good income should use it."
         },
         {
           "key": "D",
-          "text": "She thinks only people with a good income should use it."
+          "text": "She believes it can be helpful if used sensibly."
         }
       ],
-      "answer": "C",
+      "answer": "D",
       "category": "attitude",
-      "explanation": "C. Chloe szerint körültekintően használva kifejezetten hasznos („Used carefully, it's actually useful”), csak az a baj, hogy úgy tervezték, hogy ne gondolkodjunk.",
+      "explanation": "D. Chloe szerint körültekintően használva kifejezetten hasznos („Used carefully, it's actually useful”), csak az a baj, hogy úgy tervezték, hogy ne gondolkodjunk.",
       "evidence": "'Used carefully, it's actually useful,' she says.",
       "wrongOptions": {
         "A": "A szöveg kifejezetten azt írja, hogy nem gondolja, hogy be kellene tiltani („She does not think BNPL should be banned”).",
         "B": "Törölte az alkalmazásokat, és ha nem tud azonnal fizetni, inkább vár egy hónapot.",
-        "D": "A jövedelemről nem beszél; a gondolkodás nélküli vásárlást tartja problémának."
+        "C": "A jövedelemről nem beszél; a gondolkodás nélküli vásárlást tartja problémának."
       }
     }
   ],

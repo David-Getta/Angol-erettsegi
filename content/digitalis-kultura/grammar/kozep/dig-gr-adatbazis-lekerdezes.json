@@ -136,7 +136,7 @@
         },
         {
           "key": "B",
-          "text": "Az összesítő feltétel nem állhat a WHERE-ben; helyesen: GROUP BY osztaly HAVING COUNT(*) > 25."
+          "text": "Nincs benne hiba."
         },
         {
           "key": "C",
@@ -144,15 +144,15 @@
         },
         {
           "key": "D",
-          "text": "Nincs benne hiba."
+          "text": "Az összesítő feltétel nem állhat a WHERE-ben; helyesen: GROUP BY osztaly HAVING COUNT(*) > 25."
         }
       ],
-      "answer": "B",
-      "explanation": "B. A WHERE rekordokra szűr a csoportosítás előtt; a csoportokra vonatkozó, összesítő függvényes feltétel helye a HAVING.",
+      "answer": "D",
+      "explanation": "D. A WHERE rekordokra szűr a csoportosítás előtt; a csoportokra vonatkozó, összesítő függvényes feltétel helye a HAVING.",
       "wrongOptions": {
         "A": "A COUNT formája itt mindegy, a hiba a feltétel helye.",
-        "C": "A sorrend SELECT – FROM – WHERE – GROUP BY – HAVING; a GROUP BY nem kerülhet a WHERE elé.",
-        "D": "A legtöbb rendszer hibát jelez rá."
+        "B": "A legtöbb rendszer hibát jelez rá.",
+        "C": "A sorrend SELECT – FROM – WHERE – GROUP BY – HAVING; a GROUP BY nem kerülhet a WHERE elé."
       },
       "id": "1",
       "category": "adatbazis-lekerdezes"
@@ -177,22 +177,22 @@
         },
         {
           "key": "B",
-          "text": "230"
+          "text": "6000"
         },
         {
           "key": "C",
-          "text": "6000"
+          "text": "230"
         },
         {
           "key": "D",
           "text": "30"
         }
       ],
-      "answer": "C",
-      "explanation": "C – 6000. Kapcsolófeltétel nélkül minden osztály minden tanulóval párosul: 30 · 200 = 6000 sor (Descartes-szorzat).",
+      "answer": "B",
+      "explanation": "B – 6000. Kapcsolófeltétel nélkül minden osztály minden tanulóval párosul: 30 · 200 = 6000 sor (Descartes-szorzat).",
       "wrongOptions": {
         "A": "Ennyi lenne a helyes INNER JOIN-nal, ha minden tanuló egy létező osztályhoz tartozik.",
-        "B": "Az összekapcsolás nem adja össze a rekordszámokat.",
+        "C": "Az összekapcsolás nem adja össze a rekordszámokat.",
         "D": "Ez az osztaly tábla rekordszáma."
       },
       "id": "3",
@@ -204,11 +204,11 @@
       "options": [
         {
           "key": "A",
-          "text": "WHERE ev BETWEEN 2000 AND 2010"
+          "text": "WHERE ev > 2000 AND ev < 2010"
         },
         {
           "key": "B",
-          "text": "WHERE ev > 2000 AND ev < 2010"
+          "text": "WHERE ev BETWEEN 2000 AND 2010"
         },
         {
           "key": "C",
@@ -219,10 +219,10 @@
           "text": "WHERE ev IN (2000, 2010)"
         }
       ],
-      "answer": "A",
-      "explanation": "A. A BETWEEN mindkét határt beleérti (ugyanaz, mint ev >= 2000 AND ev <= 2010).",
+      "answer": "B",
+      "explanation": "B. A BETWEEN mindkét határt beleérti (ugyanaz, mint ev >= 2000 AND ev <= 2010).",
       "wrongOptions": {
-        "B": "A szigorú relációk kihagyják a 2000-et és a 2010-et.",
+        "A": "A szigorú relációk kihagyják a 2000-et és a 2010-et.",
         "C": "A BETWEEN-hez AND kell; ez szintaktikai hiba.",
         "D": "Csak a pontosan 2000-ben és 2010-ben kiadott könyveket adja."
       },
@@ -246,7 +246,7 @@
       "options": [
         {
           "key": "A",
-          "text": "eladott * 100.0 / ferohely"
+          "text": "eladott / ferohely * 100"
         },
         {
           "key": "B",
@@ -254,18 +254,18 @@
         },
         {
           "key": "C",
-          "text": "eladott / ferohely * 100"
+          "text": "eladott * 100.0 / ferohely"
         },
         {
           "key": "D",
           "text": "INT(eladott * 100 / ferohely)"
         }
       ],
-      "answer": "A",
-      "explanation": "A. A 100.0 tizedes tört, ezért a szorzat és az osztás is tizedes törttel számol. (Az Access / operátora eleve tizedes törtet ad, de így minden rendszerben jó.)",
+      "answer": "C",
+      "explanation": "C. A 100.0 tizedes tört, ezért a szorzat és az osztás is tizedes törttel számol. (Az Access / operátora eleve tizedes törtet ad, de így minden rendszerben jó.)",
       "wrongOptions": {
+        "A": "Az eladott / ferohely egészosztásnál 0 (vagy 1), majd ezt szorozza 100-zal.",
         "B": "Az egészosztás már a ROUND előtt megtörténik, és nincs százalék sem.",
-        "C": "Az eladott / ferohely egészosztásnál 0 (vagy 1), majd ezt szorozza 100-zal.",
         "D": "Az INT éppen egészre vágja az eredményt."
       },
       "id": "6",

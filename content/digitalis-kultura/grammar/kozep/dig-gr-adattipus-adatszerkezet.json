@@ -160,7 +160,7 @@
         },
         {
           "key": "B",
-          "text": "\"10.A\\n\""
+          "text": "hibaüzenet"
         },
         {
           "key": "C",
@@ -168,15 +168,15 @@
         },
         {
           "key": "D",
-          "text": "hibaüzenet"
+          "text": "\"10.A\\n\""
         }
       ],
-      "answer": "B",
-      "explanation": "B – \"10.A\\n\": a split() nem vágja le a sorvégjelet, az az utolsó mezőben marad. Ezért kell előbb strip(): sor.strip().split(\";\").",
+      "answer": "D",
+      "explanation": "D – \"10.A\\n\": a split() nem vágja le a sorvégjelet, az az utolsó mezőben marad. Ezért kell előbb strip(): sor.strip().split(\";\").",
       "wrongOptions": {
         "A": "Ez strip() után lenne így.",
-        "C": "Ez az adatok[0], az index 0-tól indul.",
-        "D": "A split() nem ad hibát, két elemű listát ad."
+        "B": "A split() nem ad hibát, két elemű listát ad.",
+        "C": "Ez az adatok[0], az index 0-tól indul."
       },
       "id": "3",
       "category": "adattipus-adatszerkezet"

@@ -155,11 +155,11 @@
       "options": [
         {
           "key": "A",
-          "text": "Hiányzik a negyedik argumentum, ezért közelítő egyezéssel keres."
+          "text": "A tartomány nem lehet abszolút hivatkozás."
         },
         {
           "key": "B",
-          "text": "A tartomány nem lehet abszolút hivatkozás."
+          "text": "Hiányzik a negyedik argumentum, ezért közelítő egyezéssel keres."
         },
         {
           "key": "C",
@@ -170,10 +170,10 @@
           "text": "Az FKERES csak számot tud keresni."
         }
       ],
-      "answer": "A",
-      "explanation": "A. A 4. argumentum alapértéke IGAZ (közelítő egyezés); pontos egyezéshez HAMIS (FALSE) kell: =FKERES(A2;$F$2:$G$20;2;HAMIS).",
+      "answer": "B",
+      "explanation": "B. A 4. argumentum alapértéke IGAZ (közelítő egyezés); pontos egyezéshez HAMIS (FALSE) kell: =FKERES(A2;$F$2:$G$20;2;HAMIS).",
       "wrongOptions": {
-        "B": "A keresési tartomány éppen azért abszolút, hogy másoláskor ne mozduljon el.",
+        "A": "A keresési tartomány éppen azért abszolút, hogy másoláskor ne mozduljon el.",
         "C": "Az oszlopszám a visszaadandó oszlop sorszáma a tartományban; itt 2 a jó.",
         "D": "Szöveget is kereshet."
       },
@@ -205,19 +205,19 @@
         },
         {
           "key": "C",
-          "text": "elégséges"
+          "text": "hibaüzenetet"
         },
         {
           "key": "D",
-          "text": "hibaüzenetet"
+          "text": "elégséges"
         }
       ],
-      "answer": "C",
-      "explanation": "C – elégséges. 47 >= 80 hamis, ezért a belső HA fut; 47 >= 60 is hamis, így a belső HA harmadik argumentuma adja az eredményt.",
+      "answer": "D",
+      "explanation": "D – elégséges. 47 >= 80 hamis, ezért a belső HA fut; 47 >= 60 is hamis, így a belső HA harmadik argumentuma adja az eredményt.",
       "wrongOptions": {
         "A": "Ehhez legalább 80 kellene.",
         "B": "Ehhez legalább 60 kellene.",
-        "D": "A képlet szintaktikailag helyes."
+        "C": "A képlet szintaktikailag helyes."
       },
       "id": "4",
       "category": "kepletek-fuggvenyek"

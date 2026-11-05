@@ -26,98 +26,98 @@
   "options": [
     {
       "key": "A",
-      "text": "Nemzeti Kerekasztal"
+      "text": "államosítás"
     },
     {
       "key": "B",
-      "text": "privatizáció"
-    },
-    {
-      "key": "C",
-      "text": "többpártrendszer"
-    },
-    {
-      "key": "D",
-      "text": "köztársaság"
-    },
-    {
-      "key": "E",
-      "text": "NATO"
-    },
-    {
-      "key": "F",
-      "text": "Európai Unió"
-    },
-    {
-      "key": "G",
-      "text": "KGST"
-    },
-    {
-      "key": "H",
       "text": "egypártrendszer"
     },
     {
+      "key": "C",
+      "text": "Európai Unió"
+    },
+    {
+      "key": "D",
+      "text": "KGST"
+    },
+    {
+      "key": "E",
+      "text": "köztársaság"
+    },
+    {
+      "key": "F",
+      "text": "NATO"
+    },
+    {
+      "key": "G",
+      "text": "Nemzeti Kerekasztal"
+    },
+    {
+      "key": "H",
+      "text": "privatizáció"
+    },
+    {
       "key": "I",
-      "text": "államosítás"
+      "text": "többpártrendszer"
     }
   ],
   "example": {
     "id": "0",
     "kind": "match",
     "prompt": "Az ellenzéki szervezetek és az MSZMP 1989-es tárgyalássorozata, amely a békés átmenet feltételeiről (pl. a választási törvényről) állapodott meg.",
-    "answer": "A",
+    "answer": "G",
     "category": "fogalomhasznalat",
-    "explanation": "Helyes: A – Nemzeti Kerekasztal. 1989 nyarán és őszén az ellenzék, az MSZMP és a „harmadik oldal” tárgyalásai készítették elő a szabad választásokat és az alkotmánymódosítást."
+    "explanation": "Helyes: G – Nemzeti Kerekasztal. 1989 nyarán és őszén az ellenzék, az MSZMP és a „harmadik oldal” tárgyalásai készítették elő a szabad választásokat és az alkotmánymódosítást."
   },
   "items": [
     {
       "id": "1",
       "kind": "match",
       "prompt": "Az állami tulajdonú vállalatok magánkézbe adása.",
-      "answer": "B",
+      "answer": "H",
       "category": "fogalomhasznalat",
-      "explanation": "Helyes: B – privatizáció. A forrás szerint „az állami vállalatokat magánkézbe kell adni”; ez a piacgazdaságra való áttérés egyik fő lépése volt.",
+      "explanation": "Helyes: H – privatizáció. A forrás szerint „az állami vállalatokat magánkézbe kell adni”; ez a piacgazdaságra való áttérés egyik fő lépése volt.",
       "wrongOptions": {
-        "I": "Az államosítás ennek az ellentéte: magántulajdon állami tulajdonba vétele (pl. 1948–49-ben)."
+        "A": "Az államosítás ennek az ellentéte: magántulajdon állami tulajdonba vétele (pl. 1948–49-ben)."
       }
     },
     {
       "id": "2",
       "kind": "match",
       "prompt": "Olyan politikai rendszer, amelyben több párt szabadon versenyezhet a választásokon.",
-      "answer": "C",
+      "answer": "I",
       "category": "fogalomhasznalat",
-      "explanation": "Helyes: C – többpártrendszer. A forrás szerint a választók „több párt jelöltjei közül szabadon dönthettek” – ez a többpártrendszer lényege.",
+      "explanation": "Helyes: I – többpártrendszer. A forrás szerint a választók „több párt jelöltjei közül szabadon dönthettek” – ez a többpártrendszer lényege.",
       "wrongOptions": {
-        "H": "Az egypártrendszer az 1990 előtti állapot: csak az állampárt (MSZMP) működhetett legálisan."
+        "B": "Az egypártrendszer az 1990 előtti állapot: csak az állampárt (MSZMP) működhetett legálisan."
       }
     },
     {
       "id": "3",
       "kind": "match",
       "prompt": "Az az államforma, amelyet 1989. október 23-án kikiáltottak, és amelyben az államfő választott elnök.",
-      "answer": "D",
+      "answer": "E",
       "category": "fogalomhasznalat",
-      "explanation": "Helyes: D – köztársaság. Az alkotmánymódosítás után 1989. október 23-án Szűrös Mátyás ideiglenes államfő kikiáltotta a Magyar Köztársaságot (a Népköztársaság helyett)."
+      "explanation": "Helyes: E – köztársaság. Az alkotmánymódosítás után 1989. október 23-án Szűrös Mátyás ideiglenes államfő kikiáltotta a Magyar Köztársaságot (a Népköztársaság helyett)."
     },
     {
       "id": "4",
       "kind": "match",
       "prompt": "Az Egyesült Államok vezette katonai szövetség, amelyhez Magyarország 1999-ben csatlakozott.",
-      "answer": "E",
+      "answer": "F",
       "category": "fogalomhasznalat",
-      "explanation": "Helyes: E – NATO (Észak-atlanti Szerződés Szervezete). Magyarország Csehországgal és Lengyelországgal együtt 1999. március 12-én lett tag.",
+      "explanation": "Helyes: F – NATO (Észak-atlanti Szerződés Szervezete). Magyarország Csehországgal és Lengyelországgal együtt 1999. március 12-én lett tag.",
       "wrongOptions": {
-        "G": "A KGST a szocialista országok gazdasági együttműködési szervezete volt, 1991-ben feloszlott."
+        "D": "A KGST a szocialista országok gazdasági együttműködési szervezete volt, 1991-ben feloszlott."
       }
     },
     {
       "id": "5",
       "kind": "match",
       "prompt": "Az a gazdasági és politikai közösség, amelynek Magyarország 2004. május 1-jén lett a tagja.",
-      "answer": "F",
+      "answer": "C",
       "category": "fogalomhasznalat",
-      "explanation": "Helyes: F – Európai Unió. A forrásban említett „nyugat-európai közösséghez” Magyarország kilenc másik országgal együtt 2004. május 1-jén csatlakozott."
+      "explanation": "Helyes: C – Európai Unió. A forrásban említett „nyugat-európai közösséghez” Magyarország kilenc másik országgal együtt 2004. május 1-jén csatlakozott."
     },
     {
       "id": "6",

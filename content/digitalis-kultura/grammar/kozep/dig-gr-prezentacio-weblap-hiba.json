@@ -148,11 +148,11 @@
       "options": [
         {
           "key": "A",
-          "text": "Nincs különbség, a kettő ugyanaz."
+          "text": "Az áttűnés a diák közötti váltás effektusa, az animáció egy dián lévő objektum mozgása, megjelenése."
         },
         {
           "key": "B",
-          "text": "Az áttűnés a diák közötti váltás effektusa, az animáció egy dián lévő objektum mozgása, megjelenése."
+          "text": "Nincs különbség, a kettő ugyanaz."
         },
         {
           "key": "C",
@@ -163,10 +163,10 @@
           "text": "Áttűnés csak videóra állítható be."
         }
       ],
-      "answer": "B",
-      "explanation": "B. Az áttűnést a diára (diaváltásra) állítod be az Áttűnések lapon, az animációt egy objektumra (cím, kép, felsorolás) az Animációk lapon.",
+      "answer": "A",
+      "explanation": "A. Az áttűnést a diára (diaváltásra) állítod be az Áttűnések lapon, az animációt egy objektumra (cím, kép, felsorolás) az Animációk lapon.",
       "wrongOptions": {
-        "A": "Két külön funkció, külön lapon állítható be.",
+        "B": "Két külön funkció, külön lapon állítható be.",
         "C": "Fordítva van: a diaváltás az áttűnés.",
         "D": "Áttűnés bármely diára beállítható."
       },
@@ -194,22 +194,22 @@
         },
         {
           "key": "B",
-          "text": "src=\"kepek/to.jpg\""
+          "text": "src=\"file:///C:/web/kepek/to.jpg\""
         },
         {
           "key": "C",
-          "text": "src=\"file:///C:/web/kepek/to.jpg\""
+          "text": "src=\"kepek/to.jpg\""
         },
         {
           "key": "D",
           "text": "src=\"to.jpg\""
         }
       ],
-      "answer": "B",
-      "explanation": "B – relatív útvonal: a böngésző a HTML-fájl mappájához képest keresi a kepek mappát, ezért a szerveren is működik, ha a mappaszerkezet megmarad.",
+      "answer": "C",
+      "explanation": "C – relatív útvonal: a böngésző a HTML-fájl mappájához képest keresi a kepek mappát, ezért a szerveren is működik, ha a mappaszerkezet megmarad.",
       "wrongOptions": {
         "A": "Abszolút helyi útvonal: a látogató gépén nincs ilyen fájl.",
-        "C": "Ez is a saját gép fájlrendszerére mutat, a weben nem érhető el.",
+        "B": "Ez is a saját gép fájlrendszerére mutat, a weben nem érhető el.",
         "D": "A kép nem a HTML-fájl mellett, hanem a kepek mappában van."
       },
       "id": "3",
@@ -221,11 +221,11 @@
       "options": [
         {
           "key": "A",
-          "text": "#kiemelt"
+          "text": ".kiemelt"
         },
         {
           "key": "B",
-          "text": ".kiemelt"
+          "text": "#kiemelt"
         },
         {
           "key": "C",
@@ -236,10 +236,10 @@
           "text": "*kiemelt"
         }
       ],
-      "answer": "B",
-      "explanation": "B. Az osztályszelektor ponttal kezdődik: .kiemelt { … }. A # az azonosítóra (id) vonatkozik.",
+      "answer": "A",
+      "explanation": "A. Az osztályszelektor ponttal kezdődik: .kiemelt { … }. A # az azonosítóra (id) vonatkozik.",
       "wrongOptions": {
-        "A": "A # az id attribútumú elemet jelöli (id=\"kiemelt\").",
+        "B": "A # az id attribútumú elemet jelöli (id=\"kiemelt\").",
         "C": "Pont nélkül egy <kiemelt> nevű HTML-elemet keresne, ilyen nincs.",
         "D": "Ez nem érvényes szelektor."
       },
@@ -264,11 +264,11 @@
       "options": [
         {
           "key": "A",
-          "text": "minden dián külön, másolással"
+          "text": "a diamintán"
         },
         {
           "key": "B",
-          "text": "a diamintán"
+          "text": "minden dián külön, másolással"
         },
         {
           "key": "C",
@@ -279,10 +279,10 @@
           "text": "a jegyzetoldalon"
         }
       ],
-      "answer": "B",
-      "explanation": "B – a diamintán. Így minden dián azonos helyen és méretben jelenik meg, és egy helyen módosítható.",
+      "answer": "A",
+      "explanation": "A – a diamintán. Így minden dián azonos helyen és méretben jelenik meg, és egy helyen módosítható.",
       "wrongOptions": {
-        "A": "Működhet, de nem szakszerű: a pozíció elcsúszhat, új diánál kimaradhat.",
+        "B": "Működhet, de nem szakszerű: a pozíció elcsúszhat, új diánál kimaradhat.",
         "C": "A feladat minden diára kéri.",
         "D": "A jegyzetoldal az előadói jegyzeteké, vetítéskor nem látszik."
       },

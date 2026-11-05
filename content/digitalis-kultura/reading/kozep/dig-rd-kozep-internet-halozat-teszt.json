@@ -19,11 +19,11 @@
     "options": [
       {
         "key": "A",
-        "text": "A domainneveket (pl. www.pelda.hu) IP-címekre fordítja."
+        "text": "Titkosítja a weboldalak forgalmát."
       },
       {
         "key": "B",
-        "text": "Titkosítja a weboldalak forgalmát."
+        "text": "A domainneveket (pl. www.pelda.hu) IP-címekre fordítja."
       },
       {
         "key": "C",
@@ -34,11 +34,11 @@
         "text": "Kiszűri a vírusokat."
       }
     ],
-    "answer": "A",
+    "answer": "B",
     "category": "halozat-biztonsag",
-    "explanation": "A. A DNS (Domain Name System) névfeloldást végez: a könnyen megjegyezhető domainnévhez megkeresi a szerver IP-címét, mert a gépek IP-cím alapján kommunikálnak.",
+    "explanation": "B. A DNS (Domain Name System) névfeloldást végez: a könnyen megjegyezhető domainnévhez megkeresi a szerver IP-címét, mert a gépek IP-cím alapján kommunikálnak.",
     "wrongOptions": {
-      "B": "A titkosítást a TLS (a https-ben) végzi.",
+      "A": "A titkosítást a TLS (a https-ben) végzi.",
       "C": "Az e-mailt a levelezőszerverek továbbítják SMTP-vel.",
       "D": "A vírusszűrés a víruskereső program dolga."
     }
@@ -144,7 +144,7 @@
       "options": [
         {
           "key": "A",
-          "text": "útválasztó (router)"
+          "text": "hálózati kártya"
         },
         {
           "key": "B",
@@ -152,19 +152,19 @@
         },
         {
           "key": "C",
-          "text": "hálózati kártya"
+          "text": "útválasztó (router)"
         },
         {
           "key": "D",
           "text": "vezeték nélküli hozzáférési pont"
         }
       ],
-      "answer": "A",
+      "answer": "C",
       "category": "halozat-biztonsag",
       "explanation": "A – útválasztó (router): az IP-címek alapján választja ki a csomag útját a különböző hálózatok között.",
       "wrongOptions": {
+        "A": "A hálózati kártya egy gépet csatlakoztat a hálózathoz, nem hálózatokat köt össze.",
         "B": "A switch egy hálózaton belül, a helyi gépek között továbbítja a kereteket.",
-        "C": "A hálózati kártya egy gépet csatlakoztat a hálózathoz, nem hálózatokat köt össze.",
         "D": "A hozzáférési pont a vezeték nélküli eszközöket kapcsolja a helyi hálózatba."
       }
     },
@@ -183,20 +183,20 @@
         },
         {
           "key": "C",
-          "text": "Titkos másolat (Bcc)"
+          "text": "Tárgy"
         },
         {
           "key": "D",
-          "text": "Tárgy"
+          "text": "Titkos másolat (Bcc)"
         }
       ],
-      "answer": "C",
+      "answer": "D",
       "category": "informacios-tarsadalom-fogalom",
-      "explanation": "C – Titkos másolat (Bcc). Sok, egymást nem ismerő címzettnek így küldünk levelet, hogy ne adjuk ki egymás e-mail-címét (adatvédelem, netikett).",
+      "explanation": "D – Titkos másolat (Bcc). Sok, egymást nem ismerő címzettnek így küldünk levelet, hogy ne adjuk ki egymás e-mail-címét (adatvédelem, netikett).",
       "wrongOptions": {
         "A": "A Címzett mezőben lévő címeket minden címzett látja.",
         "B": "A Másolat (Cc) mező címzettjei is láthatók mindenkinek.",
-        "D": "A Tárgy a levél témája, nem címzett."
+        "C": "A Tárgy a levél témája, nem címzett."
       }
     },
     {
@@ -210,7 +210,7 @@
         },
         {
           "key": "B",
-          "text": "Kati2008"
+          "text": "Sas-Ló_42!Kék-tó"
         },
         {
           "key": "C",
@@ -218,16 +218,16 @@
         },
         {
           "key": "D",
-          "text": "Sas-Ló_42!Kék-tó"
+          "text": "Kati2008"
         }
       ],
-      "answer": "D",
+      "answer": "B",
       "category": "halozat-biztonsag",
-      "explanation": "D. Az erős jelszó hosszú (legalább 12 karakter), kis- és nagybetűt, számot, írásjelet is tartalmaz, és nem személyes adat. A véletlenszerű szavakból összerakott hosszú jelmondat jól megjegyezhető és nehezen törhető.",
+      "explanation": "B. Az erős jelszó hosszú (legalább 12 karakter), kis- és nagybetűt, számot, írásjelet is tartalmaz, és nem személyes adat. A véletlenszerű szavakból összerakott hosszú jelmondat jól megjegyezhető és nehezen törhető.",
       "wrongOptions": {
         "A": "A 123456 a leggyakoribb jelszavak egyike, másodpercek alatt kitalálható.",
-        "B": "Név és évszám: személyes adatokból könnyen kitalálható, és rövid.",
-        "C": "Egyetlen szótári szó, ékezet és szám nélkül – a szótáras támadás azonnal megtalálja."
+        "C": "Egyetlen szótári szó, ékezet és szám nélkül – a szótáras támadás azonnal megtalálja.",
+        "D": "Név és évszám: személyes adatokból könnyen kitalálható, és rövid."
       }
     },
     {
@@ -241,23 +241,23 @@
         },
         {
           "key": "B",
-          "text": "A jelszó mellé egy második, más típusú azonosító is kell, pl. a telefonra érkező kód."
+          "text": "Két különböző felhasználónévvel lehet belépni."
         },
         {
           "key": "C",
-          "text": "Két különböző felhasználónévvel lehet belépni."
+          "text": "A jelszó mellé egy második, más típusú azonosító is kell, pl. a telefonra érkező kód."
         },
         {
           "key": "D",
           "text": "Két böngészőből kell belépni."
         }
       ],
-      "answer": "B",
+      "answer": "C",
       "category": "halozat-biztonsag",
-      "explanation": "B. Két különböző típusú tényező kell: amit tudsz (jelszó) és ami nálad van (telefon, biztonsági kulcs) vagy ami te vagy (ujjlenyomat). Így az ellopott jelszó önmagában nem elég a belépéshez.",
+      "explanation": "C. Két különböző típusú tényező kell: amit tudsz (jelszó) és ami nálad van (telefon, biztonsági kulcs) vagy ami te vagy (ujjlenyomat). Így az ellopott jelszó önmagában nem elég a belépéshez.",
       "wrongOptions": {
         "A": "A jelszó kétszeri beírása ugyanaz a tényező, nem ad plusz védelmet.",
-        "C": "Két felhasználónév nem második azonosítási tényező.",
+        "B": "Két felhasználónév nem második azonosítási tényező.",
         "D": "A böngészők száma nem azonosítási tényező."
       }
     },
@@ -272,7 +272,7 @@
         },
         {
           "key": "B",
-          "text": "125 MB"
+          "text": "12,5 MB"
         },
         {
           "key": "C",
@@ -280,16 +280,16 @@
         },
         {
           "key": "D",
-          "text": "12,5 MB"
+          "text": "125 MB"
         }
       ],
-      "answer": "B",
+      "answer": "D",
       "category": "halozat-biztonsag",
-      "explanation": "B – 125 MB. 100 Mbit/s · 10 s = 1000 Mbit; mivel 1 bájt = 8 bit, 1000 Mbit : 8 = 125 MB. A sávszélességet bitben, a fájlméretet bájtban adják meg.",
+      "explanation": "D – 125 MB. 100 Mbit/s · 10 s = 1000 Mbit; mivel 1 bájt = 8 bit, 1000 Mbit : 8 = 125 MB. A sávszélességet bitben, a fájlméretet bájtban adják meg.",
       "wrongOptions": {
         "A": "Ez 1000 megabit, nem megabájt – elmaradt a 8-cal való osztás.",
-        "C": "Itt 8-cal szoroztak osztás helyett (1000 Mbit · 8).",
-        "D": "Ez 1 másodperc alatti mennyiség (100 : 8 = 12,5 MB), nem 10 másodperc alatti."
+        "B": "Ez 1 másodperc alatti mennyiség (100 : 8 = 12,5 MB), nem 10 másodperc alatti.",
+        "C": "Itt 8-cal szoroztak osztás helyett (1000 Mbit · 8)."
       }
     }
   ],

@@ -23,23 +23,23 @@
       },
       {
         "key": "B",
-        "text": "HAVING"
+        "text": "ORDER BY"
       },
       {
         "key": "C",
-        "text": "ORDER BY"
+        "text": "HAVING"
       },
       {
         "key": "D",
         "text": "FROM"
       }
     ],
-    "answer": "B",
+    "answer": "C",
     "category": "adatbazis-lekerdezes",
-    "explanation": "B – HAVING. A WHERE a csoportosítás ELŐTT, rekordonként szűr, ezért nem tartalmazhat összesítő függvényt; a HAVING a GROUP BY UTÁN a csoportokra: … GROUP BY iskola.nev HAVING COUNT(*) > 5;",
+    "explanation": "C – HAVING. A WHERE a csoportosítás ELŐTT, rekordonként szűr, ezért nem tartalmazhat összesítő függvényt; a HAVING a GROUP BY UTÁN a csoportokra: … GROUP BY iskola.nev HAVING COUNT(*) > 5;",
     "wrongOptions": {
       "A": "A WHERE-ben nem állhat COUNT(), mert a csoportok még nem jöttek létre.",
-      "C": "Az ORDER BY rendez, nem szűr.",
+      "B": "Az ORDER BY rendez, nem szűr.",
       "D": "A FROM a forrástáblákat adja meg."
     }
   },
@@ -86,7 +86,7 @@
         },
         {
           "key": "B",
-          "text": "WHERE pont IS NULL"
+          "text": "WHERE pont = ''"
         },
         {
           "key": "C",
@@ -94,16 +94,16 @@
         },
         {
           "key": "D",
-          "text": "WHERE pont = ''"
+          "text": "WHERE pont IS NULL"
         }
       ],
-      "answer": "B",
+      "answer": "D",
       "category": "adatbazis-lekerdezes",
-      "explanation": "B – IS NULL. A NULL „ismeretlen érték”: vele egyenlőségvizsgálatot végezni nem lehet (a pont = NULL sosem igaz), ezért külön operátor van rá: IS NULL, illetve IS NOT NULL.",
+      "explanation": "D – IS NULL. A NULL „ismeretlen érték”: vele egyenlőségvizsgálatot végezni nem lehet (a pont = NULL sosem igaz), ezért külön operátor van rá: IS NULL, illetve IS NOT NULL.",
       "wrongOptions": {
         "A": "Az = NULL összehasonlítás eredménye ismeretlen, így egyetlen rekordot sem ad vissza.",
-        "C": "A 0 pont létező érték, nem azonos a hiányzó (NULL) értékkel.",
-        "D": "Az üres karakterlánc szöveg, nem NULL; számmezőben nem is értelmes."
+        "B": "Az üres karakterlánc szöveg, nem NULL; számmezőben nem is értelmes.",
+        "C": "A 0 pont létező érték, nem azonos a hiányzó (NULL) értékkel."
       }
     },
     {
@@ -113,11 +113,11 @@
       "options": [
         {
           "key": "A",
-          "text": "12"
+          "text": "80"
         },
         {
           "key": "B",
-          "text": "80"
+          "text": "12"
         },
         {
           "key": "C",
@@ -128,11 +128,11 @@
           "text": "960"
         }
       ],
-      "answer": "B",
+      "answer": "A",
       "category": "adatbazis-lekerdezes",
-      "explanation": "B – 80. Az INNER JOIN minden versenyzőhöz pontosan egy iskolát kapcsol (az iskola_id-je alapján), így versenyzőnként egy sor lesz. A 960 (12 · 80) a kapcsolófeltétel nélküli Descartes-szorzat lenne.",
+      "explanation": "A – 80. Az INNER JOIN minden versenyzőhöz pontosan egy iskolát kapcsol (az iskola_id-je alapján), így versenyzőnként egy sor lesz. A 960 (12 · 80) a kapcsolófeltétel nélküli Descartes-szorzat lenne.",
       "wrongOptions": {
-        "A": "Iskolánként nem egy sor lesz, hanem versenyzőnként; egy iskolához több versenyző is tartozhat.",
+        "B": "Iskolánként nem egy sor lesz, hanem versenyzőnként; egy iskolához több versenyző is tartozhat.",
         "C": "Az összekapcsolás nem adja össze a két tábla sorait.",
         "D": "Ez a kapcsolófeltétel (ON) nélküli keresztszorzat sorainak száma."
       }
@@ -144,7 +144,7 @@
       "options": [
         {
           "key": "A",
-          "text": "SELECT versenyzo_id, SUM(pont) FROM eredmeny GROUP BY versenyzo_id ORDER BY SUM(pont) DESC;"
+          "text": "SELECT versenyzo_id, SUM(pont) FROM eredmeny GROUP BY versenyzo_id ORDER BY SUM(pont);"
         },
         {
           "key": "B",
@@ -156,16 +156,16 @@
         },
         {
           "key": "D",
-          "text": "SELECT versenyzo_id, SUM(pont) FROM eredmeny GROUP BY versenyzo_id ORDER BY SUM(pont);"
+          "text": "SELECT versenyzo_id, SUM(pont) FROM eredmeny GROUP BY versenyzo_id ORDER BY SUM(pont) DESC;"
         }
       ],
-      "answer": "A",
+      "answer": "D",
       "category": "adatbazis-lekerdezes",
-      "explanation": "A. A GROUP BY versenyzo_id versenyzőnként egy csoportot képez, a SUM(pont) csoportonként összead, az ORDER BY … DESC csökkenő sorrendbe tesz. (Az ORDER BY-ban az összesítő kifejezést ismételjük meg, mert az Access a mezőnév álnevét itt nem fogadja el.)",
+      "explanation": "D. A GROUP BY versenyzo_id versenyzőnként egy csoportot képez, a SUM(pont) csoportonként összead, az ORDER BY … DESC csökkenő sorrendbe tesz. (Az ORDER BY-ban az összesítő kifejezést ismételjük meg, mert az Access a mezőnév álnevét itt nem fogadja el.)",
       "wrongOptions": {
+        "A": "DESC nélkül növekvő a sorrend, a leggyengébb kerül előre.",
         "B": "GROUP BY nélkül a SUM az egész táblát egy csoportnak tekinti (vagy hibát ad), versenyzőnkénti összeg nem keletkezik.",
-        "C": "A COUNT a pontszámok darabszámát adja, nem az összegüket.",
-        "D": "DESC nélkül növekvő a sorrend, a leggyengébb kerül előre."
+        "C": "A COUNT a pontszámok darabszámát adja, nem az összegüket."
       }
     },
     {
@@ -175,11 +175,11 @@
       "options": [
         {
           "key": "A",
-          "text": "SELECT nev FROM iskola WHERE id NOT IN (SELECT iskola_id FROM versenyzo);"
+          "text": "SELECT nev FROM iskola WHERE id IN (SELECT iskola_id FROM versenyzo);"
         },
         {
           "key": "B",
-          "text": "SELECT nev FROM iskola WHERE id IN (SELECT iskola_id FROM versenyzo);"
+          "text": "SELECT nev FROM iskola WHERE id NOT IN (SELECT iskola_id FROM versenyzo);"
         },
         {
           "key": "C",
@@ -190,11 +190,11 @@
           "text": "SELECT nev FROM iskola WHERE id <> iskola_id;"
         }
       ],
-      "answer": "A",
+      "answer": "B",
       "category": "adatbazis-lekerdezes",
-      "explanation": "A. Az allekérdezés megadja azoknak az iskoláknak az azonosítóját, ahonnan van versenyző; a NOT IN ezeket kizárja. Ugyanez LEFT JOIN-nal is megoldható: … LEFT JOIN versenyzo ON … WHERE versenyzo.id IS NULL.",
+      "explanation": "B. Az allekérdezés megadja azoknak az iskoláknak az azonosítóját, ahonnan van versenyző; a NOT IN ezeket kizárja. Ugyanez LEFT JOIN-nal is megoldható: … LEFT JOIN versenyzo ON … WHERE versenyzo.id IS NULL.",
       "wrongOptions": {
-        "B": "Az IN éppen azokat az iskolákat adja, ahonnan VAN versenyző.",
+        "A": "Az IN éppen azokat az iskolákat adja, ahonnan VAN versenyző.",
         "C": "INNER JOIN-nál csak az összetartozó párok maradnak meg, így a versenyzo.id sosem NULL – az eredmény üres. LEFT JOIN kellene.",
         "D": "Az iskola táblának nincs iskola_id mezője; a két tábla összekapcsolása így nem végezhető el."
       }
@@ -206,11 +206,11 @@
       "options": [
         {
           "key": "A",
-          "text": "6"
+          "text": "8"
         },
         {
           "key": "B",
-          "text": "8"
+          "text": "6"
         },
         {
           "key": "C",
@@ -221,11 +221,11 @@
           "text": "4,8"
         }
       ],
-      "answer": "B",
+      "answer": "A",
       "category": "adatbazis-lekerdezes",
-      "explanation": "B – 8. Az összesítő függvények (AVG, SUM, COUNT(mező)) a NULL értékeket kihagyják: (10 + 6 + 8) / 3 = 8. Ha a hiányzó pontot 0-nak akarjuk tekinteni, azt külön kell kezelni.",
+      "explanation": "A – 8. Az összesítő függvények (AVG, SUM, COUNT(mező)) a NULL értékeket kihagyják: (10 + 6 + 8) / 3 = 8. Ha a hiányzó pontot 0-nak akarjuk tekinteni, azt külön kell kezelni.",
       "wrongOptions": {
-        "A": "A 6 akkor jönne ki, ha a NULL 0-nak számítana (24 / 4) – de az AVG kihagyja.",
+        "B": "A 6 akkor jönne ki, ha a NULL 0-nak számítana (24 / 4) – de az AVG kihagyja.",
         "C": "A 24 az összeg (SUM), nem az átlag.",
         "D": "A 4,8 a 24 / 5 lenne, de csak három érvényes érték van."
       }
@@ -237,7 +237,7 @@
       "options": [
         {
           "key": "A",
-          "text": "varos LIKE 'Sz%'"
+          "text": "varos LIKE '%Sz'"
         },
         {
           "key": "B",
@@ -245,19 +245,19 @@
         },
         {
           "key": "C",
-          "text": "varos LIKE '%Sz'"
+          "text": "varos LIKE 'Sz%'"
         },
         {
           "key": "D",
           "text": "varos LIKE 'Sz_'"
         }
       ],
-      "answer": "A",
+      "answer": "C",
       "category": "adatbazis-lekerdezes",
-      "explanation": "A. A LIKE mintaillesztést végez: a % tetszőleges számú (akár nulla) karaktert, az _ pontosan egy karaktert helyettesít. Az MS Access ugyanezt a * és ? jellel írja: LIKE \"Sz*\".",
+      "explanation": "C. A LIKE mintaillesztést végez: a % tetszőleges számú (akár nulla) karaktert, az _ pontosan egy karaktert helyettesít. Az MS Access ugyanezt a * és ? jellel írja: LIKE \"Sz*\".",
       "wrongOptions": {
+        "A": "A '%Sz' a „Sz” végű nevekre illeszkedik.",
         "B": "Az = operátor nem értelmezi a % jelet, csak a pontosan „Sz%” nevű várost találná meg.",
-        "C": "A '%Sz' a „Sz” végű nevekre illeszkedik.",
         "D": "Az _ pontosan egy karakter, így csak a háromkarakteres, Sz-szel kezdődő neveket adná."
       }
     }

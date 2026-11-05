@@ -115,11 +115,11 @@
       "options": [
         {
           "key": "A",
-          "text": "Bármilyen felhasználást, akár kereskedelmit is, ha megnevezed a szerzőt, és a módosított művet ugyanilyen licenccel teszed közzé."
+          "text": "Csak a nem kereskedelmi felhasználást."
         },
         {
           "key": "B",
-          "text": "Csak a nem kereskedelmi felhasználást."
+          "text": "Bármilyen felhasználást, akár kereskedelmit is, ha megnevezed a szerzőt, és a módosított művet ugyanilyen licenccel teszed közzé."
         },
         {
           "key": "C",
@@ -130,10 +130,10 @@
           "text": "Bármilyen felhasználást a szerző megnevezése nélkül."
         }
       ],
-      "answer": "A",
-      "explanation": "A. BY: a szerzőt meg kell nevezni; SA (ShareAlike): az átdolgozást azonos licenccel kell terjeszteni. NC nincs benne, tehát a kereskedelmi felhasználás megengedett.",
+      "answer": "B",
+      "explanation": "B. BY: a szerzőt meg kell nevezni; SA (ShareAlike): az átdolgozást azonos licenccel kell terjeszteni. NC nincs benne, tehát a kereskedelmi felhasználás megengedett.",
       "wrongOptions": {
-        "B": "Ez az NC feltétel lenne, ami itt nem szerepel.",
+        "A": "Ez az NC feltétel lenne, ami itt nem szerepel.",
         "C": "Ez az ND feltétel lenne; az SA éppen az átdolgozásra vonatkozik.",
         "D": "A BY miatt a szerző megnevezése kötelező."
       },
@@ -220,7 +220,7 @@
       "options": [
         {
           "key": "A",
-          "text": "Bárki szabadon felhasználhatja, mert lejárt a védelmi idő, vagy a szerző lemondott a vagyoni jogairól."
+          "text": "Ingyenesen letölthető, de nem használható fel."
         },
         {
           "key": "B",
@@ -228,18 +228,18 @@
         },
         {
           "key": "C",
-          "text": "Ingyenesen letölthető, de nem használható fel."
+          "text": "Bárki szabadon felhasználhatja, mert lejárt a védelmi idő, vagy a szerző lemondott a vagyoni jogairól."
         },
         {
           "key": "D",
           "text": "A mű állami tulajdonban van, engedélyt kell kérni."
         }
       ],
-      "answer": "A",
-      "explanation": "A. A közkincs mű engedély nélkül, szabadon felhasználható (a szerző nevét ilyenkor is illik feltüntetni); ilyenek pl. a több mint 70 éve elhunyt szerzők művei.",
+      "answer": "C",
+      "explanation": "C. A közkincs mű engedély nélkül, szabadon felhasználható (a szerző nevét ilyenkor is illik feltüntetni); ilyenek pl. a több mint 70 éve elhunyt szerzők művei.",
       "wrongOptions": {
+        "A": "A közkincs éppen szabadon felhasználható.",
         "B": "A közkincs bárki számára szabadon felhasználható.",
-        "C": "A közkincs éppen szabadon felhasználható.",
         "D": "Nincs szükség engedélyre."
       },
       "id": "5",

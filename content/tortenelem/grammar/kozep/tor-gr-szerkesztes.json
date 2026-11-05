@@ -116,11 +116,11 @@
       "options": [
         {
           "key": "A",
-          "text": "1848. március 15-én"
+          "text": "1848 március 15.-én"
         },
         {
           "key": "B",
-          "text": "1848 március 15.-én"
+          "text": "1848. március 15-én"
         },
         {
           "key": "C",
@@ -131,11 +131,11 @@
           "text": "1848, március 15én"
         }
       ],
-      "answer": "A",
+      "answer": "B",
       "category": "szerkesztes",
-      "explanation": "Helyes: A. Az évszám után pont, a hónap kisbetűs, a napot a toldalék kötőjellel követi.",
+      "explanation": "Helyes: B. Az évszám után pont, a hónap kisbetűs, a napot a toldalék kötőjellel követi.",
       "wrongOptions": {
-        "B": "Az évszám után hiányzik a pont, a nap után felesleges.",
+        "A": "Az évszám után hiányzik a pont, a nap után felesleges.",
         "C": "A hónap neve kisbetűs.",
         "D": "Vessző helyett pont kell, és a toldalékot kötőjellel kell kapcsolni a számhoz."
       }
@@ -147,7 +147,7 @@
       "options": [
         {
           "key": "A",
-          "text": "azonban"
+          "text": "továbbá"
         },
         {
           "key": "B",
@@ -159,16 +159,16 @@
         },
         {
           "key": "D",
-          "text": "továbbá"
+          "text": "azonban"
         }
       ],
-      "answer": "A",
+      "answer": "D",
       "category": "szerkesztes",
       "explanation": "Helyes: azonban. Ellentétes viszonyt jelez, pl. „A reform növelte a vállalatok önállóságát, a tervgazdaság alapjait azonban nem érintette.”",
       "wrongOptions": {
+        "A": "A „továbbá” kiegészítést jelez.",
         "B": "Az „ezért” következményt jelez.",
-        "C": "Az „ezt követően” időbeli sorrendet jelez.",
-        "D": "A „továbbá” kiegészítést jelez."
+        "C": "Az „ezt követően” időbeli sorrendet jelez."
       }
     },
     {
@@ -178,11 +178,11 @@
       "options": [
         {
           "key": "A",
-          "text": "A reformkor (1830–1848) Magyarországon a polgári átalakulásért folytatott küzdelem időszaka volt."
+          "text": "Ebben az esszében a reformkorról fogok írni, mert ez a feladat."
         },
         {
           "key": "B",
-          "text": "Ebben az esszében a reformkorról fogok írni, mert ez a feladat."
+          "text": "A reformkor (1830–1848) Magyarországon a polgári átalakulásért folytatott küzdelem időszaka volt."
         },
         {
           "key": "C",
@@ -193,11 +193,11 @@
           "text": "A reformkor után jött a forradalom, aztán a kiegyezés, aztán az első világháború."
         }
       ],
-      "answer": "A",
+      "answer": "B",
       "category": "szerkesztes",
-      "explanation": "Helyes: A. Elhelyezi a témát időben és térben, és megnevezi a korszak lényegét.",
+      "explanation": "Helyes: B. Elhelyezi a témát időben és térben, és megnevezi a korszak lényegét.",
       "wrongOptions": {
-        "B": "Tartalom nélküli, a feladatot ismétli.",
+        "A": "Tartalom nélküli, a feladatot ismétli.",
         "C": "Értékítélet, nem helyezi el a témát.",
         "D": "Felsorolás, amely túllép a téma időkeretén."
       }
@@ -209,7 +209,7 @@
       "options": [
         {
           "key": "A",
-          "text": "Osztrák–Magyar Monarchia"
+          "text": "Osztrák-magyar Monarchia"
         },
         {
           "key": "B",
@@ -217,19 +217,19 @@
         },
         {
           "key": "C",
-          "text": "Osztrák-magyar Monarchia"
+          "text": "Osztrák–Magyar Monarchia"
         },
         {
           "key": "D",
           "text": "Osztrák Magyar monarchia"
         }
       ],
-      "answer": "A",
+      "answer": "C",
       "category": "szerkesztes",
-      "explanation": "Helyes: A. Az államnév minden tagja nagy kezdőbetűs, a két tag között nagykötőjel áll.",
+      "explanation": "Helyes: C. Az államnév minden tagja nagy kezdőbetűs, a két tag között nagykötőjel áll.",
       "wrongOptions": {
+        "A": "A „Magyar” is nagy kezdőbetűs, és kötőjel helyett nagykötőjel kell.",
         "B": "Az államnév nem írható kisbetűvel.",
-        "C": "A „Magyar” is nagy kezdőbetűs, és kötőjel helyett nagykötőjel kell.",
         "D": "Hiányzik az írásjel a két tag között, és a „Monarchia” is nagybetűs."
       }
     },

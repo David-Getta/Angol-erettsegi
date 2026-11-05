@@ -32,7 +32,7 @@ function Rule({ rule, lang }: { rule: GrammarLesson["rules"][number]; lang: stri
       <ul className="mt-2 space-y-1.5">
         {rule.examples.map((ex, i) => (
           <li key={i} className="rounded-md bg-surface-2 px-3 py-1.5 text-sm">
-            <span lang={lang} className="whitespace-pre-line font-reading text-[15px]">{ex.en}</span>
+            <span lang={lang} className="whitespace-pre-wrap font-reading text-[15px]">{ex.en}</span>
             {ex.hu && <span className="block whitespace-pre-line text-muted">{ex.hu}</span>}
             {ex.note && <span className="block text-xs text-muted">↳ {ex.note}</span>}
           </li>

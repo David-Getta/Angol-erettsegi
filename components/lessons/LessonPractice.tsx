@@ -40,7 +40,7 @@ export function LessonPractice({ category, items }: { category: string; items: L
             <li key={item.id} className="rounded-lg border border-border p-3" data-testid={`lesson-item-${item.id}`}>
               <div className="flex gap-2">
                 <span className="font-semibold text-muted">{item.id}.</span>
-                <p lang={contentLang} className="whitespace-pre-line font-reading text-[15px]">
+                <p lang={contentLang} className="whitespace-pre-wrap font-reading text-[15px]">
                   {item.prompt}
                   {item.kind === "text" && item.cue && !item.prompt?.includes(`(${item.cue})`) && <span className="text-muted"> ({item.cue})</span>}
                 </p>

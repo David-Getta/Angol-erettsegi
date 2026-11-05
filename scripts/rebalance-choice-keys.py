@@ -22,6 +22,8 @@ STRONG = [
     re.compile(r"(?<=\b[aA] )([B-E])(?= (?:opció|válasz|lehetőség))"),
     re.compile(r"(?<![\w])([A-E])(?= (?:opció|lehetőség))"),
     re.compile(r"(?<=\b[Oo]ption )([A-E])(?![\w])"),
+    re.compile(r"^([A-E])(?=[.:)] )"),
+    re.compile(r"(?<![\w])([A-E])(?= [–-] )"),
     re.compile(r"(?<=\b[Aa]ntwort )([A-E])(?![\w])"),
 ]
 # anything else that looks like a bare letter (A only when followed by punctuation – otherwise it is the Hungarian article)
@@ -58,13 +60,16 @@ for s in subjects:
             if POSITIONAL.search(opts) or re.search(r"^\s*[A-E]\s*$", "\n".join(o["text"] for o in it["options"]), re.M) or LABELS.search(opts):
                 stats["skip-options"] += 1; continue
             texts = [it.get("explanation", "")] + list((it.get("wrongOptions") or {}).values())
-            if task_labels and any(LABELS.search(x) or LOOSE.search(mask_strong(x)) for x in texts):
+            if task_labels and any(LABELS.search(x) for x in texts):
                 stats["skip-labels"] += 1; continue
-            if any(LOOSE.search(mask_strong(x)) for x in texts):
-                stats["skip-ambiguous"] += 1; continue
-            h = int(hashlib.sha1(f"{d['id']}:{it['id']}".encode()).hexdigest(), 16)
-            tgt = keys[h % len(keys)]
+            # bare letters that may or may not mean an option (column A, output "B" …): the swap must not touch them
+            loose = {m.group(0) for x in texts for m in LOOSE.finditer(mask_strong(x))}
             cur = it["answer"]
+            if cur in loose:
+                stats["skip-ambiguous"] += 1; continue
+            free = [k for k in keys if k not in loose]
+            h = int(hashlib.sha1(f"{d['id']}:{it['id']}".encode()).hexdigest(), 16)
+            tgt = free[h % len(free)]
             if tgt == cur:
                 stats["kept"] += 1; continue
             m = {cur: tgt, tgt: cur}

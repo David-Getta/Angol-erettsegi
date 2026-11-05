@@ -33,7 +33,7 @@ export function SampleAnswer({ task, open = false }: { task: SpeakingTask; open?
                 <b className="not-italic">{t.sample.examiner}:</b> <span lang={contentLang()}>{turn.text}</span>
               </p>
             ) : (
-              <p key={i} className="reading-text whitespace-pre-line">
+              <p key={i} className="reading-text whitespace-pre-wrap">
                 {dialogue && <b className="font-sans text-sm">{t.sample.candidate}: </b>}
                 <span lang={contentLang()}>{turn.text}</span>
               </p>

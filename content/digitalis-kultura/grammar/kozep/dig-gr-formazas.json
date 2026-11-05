@@ -190,11 +190,11 @@
       "options": [
         {
           "key": "A",
-          "text": "oldaltörést"
+          "text": "szakasztörést (következő oldal)"
         },
         {
           "key": "B",
-          "text": "szakasztörést (következő oldal)"
+          "text": "oldaltörést"
         },
         {
           "key": "C",
@@ -205,10 +205,10 @@
           "text": "kézi sortörést"
         }
       ],
-      "answer": "B",
-      "explanation": "B. A tájolás szakaszonként állítható, ezért a fekvő oldalt két szakasztörés közé teszed, és csak annak a szakasznak az oldalbeállítását módosítod (Writer: eltérő oldalstílus).",
+      "answer": "A",
+      "explanation": "A. A tájolás szakaszonként állítható, ezért a fekvő oldalt két szakasztörés közé teszed, és csak annak a szakasznak az oldalbeállítását módosítod (Writer: eltérő oldalstílus).",
       "wrongOptions": {
-        "A": "Az oldaltörés csak új oldalt kezd, a beállítások közösek maradnak, így az egész dokumentum fekvő lenne.",
+        "B": "Az oldaltörés csak új oldalt kezd, a beállítások közösek maradnak, így az egész dokumentum fekvő lenne.",
         "C": "A hasábtörés a következő hasábba viszi a szöveget.",
         "D": "A kézi sortörés csak új sort kezd ugyanabban a bekezdésben."
       },
@@ -221,11 +221,11 @@
       "options": [
         {
           "key": "A",
-          "text": "szóközöket és pontokat"
+          "text": "jobbra igazító tabulátort pontozott kitöltő karakterrel"
         },
         {
           "key": "B",
-          "text": "jobbra igazító tabulátort pontozott kitöltő karakterrel"
+          "text": "szóközöket és pontokat"
         },
         {
           "key": "C",
@@ -236,10 +236,10 @@
           "text": "sorkizárt igazítást"
         }
       ],
-      "answer": "B",
-      "explanation": "B. A jobbra igazító tabulátor az árat pontosan a megadott pozícióhoz igazítja, a kitöltő karakter pedig automatikusan kirajzolja a pontozást.",
+      "answer": "A",
+      "explanation": "A. A jobbra igazító tabulátor az árat pontosan a megadott pozícióhoz igazítja, a kitöltő karakter pedig automatikusan kirajzolja a pontozást.",
       "wrongOptions": {
-        "A": "A kézzel gépelt pontok és szóközök elcsúsznak, ez nem szakszerű.",
+        "B": "A kézzel gépelt pontok és szóközök elcsúsznak, ez nem szakszerű.",
         "C": "A táblázattal igazítható, de pontozott kitöltést nem ad, és a feladat nem táblázatot kér.",
         "D": "A sorkizárás a szavak közti helyet nyújtja, nem igazít egy pozícióhoz."
       },
@@ -264,11 +264,11 @@
       "options": [
         {
           "key": "A",
-          "text": "6 cm"
+          "text": "8 cm"
         },
         {
           "key": "B",
-          "text": "8 cm"
+          "text": "6 cm"
         },
         {
           "key": "C",
@@ -279,10 +279,10 @@
           "text": "10,7 cm"
         }
       ],
-      "answer": "A",
+      "answer": "B",
       "explanation": "A – 6 cm. Arányos méretezésnél a magasság : szélesség arány nem változik: 8 cm · 1200 / 1600 = 6 cm.",
       "wrongOptions": {
-        "B": "Ez négyzet alakúra torzítaná a képet.",
+        "A": "Ez négyzet alakúra torzítaná a képet.",
         "C": "Ez nem az 1200/1600 = 0,75-ös arányból jön ki.",
         "D": "Ez fordított aránnyal (8 · 1600 / 1200) számolt érték."
       },

@@ -166,7 +166,7 @@
         },
         {
           "key": "B",
-          "text": "erdei.docx"
+          "text": "Erdei iskola – végleges.docx"
         },
         {
           "key": "C",
@@ -174,15 +174,15 @@
         },
         {
           "key": "D",
-          "text": "Erdei iskola – végleges.docx"
+          "text": "erdei.docx"
         }
       ],
-      "answer": "B",
-      "explanation": "B – erdei.docx: a megadott név és a Word saját formátuma.",
+      "answer": "D",
+      "explanation": "D – erdei.docx: a megadott név és a Word saját formátuma.",
       "wrongOptions": {
         "A": "A .txt nem a szövegszerkesztő saját formátuma, és elveszíti a formázást.",
-        "C": "A PDF exportált formátum, nem szerkeszthető dokumentum.",
-        "D": "A fájlnév nem a megadott."
+        "B": "A fájlnév nem a megadott.",
+        "C": "A PDF exportált formátum, nem szerkeszthető dokumentum."
       },
       "id": "3",
       "category": "fajlkezeles"
@@ -197,22 +197,22 @@
         },
         {
           "key": "B",
-          "text": "open(\"adatok.txt\", encoding=\"utf-8\")"
+          "text": "open(\"adatok\")"
         },
         {
           "key": "C",
-          "text": "open(\"adatok\")"
+          "text": "open(\"adatok.txt\", encoding=\"utf-8\")"
         },
         {
           "key": "D",
           "text": "open(\"adatok.txt\", \"w\")"
         }
       ],
-      "answer": "B",
-      "explanation": "B. Relatív fájlnév (a program mappájában keresi) és UTF-8 kódolás, olvasási (alapértelmezett \"r\") módban.",
+      "answer": "C",
+      "explanation": "C. Relatív fájlnév (a program mappájában keresi) és UTF-8 kódolás, olvasási (alapértelmezett \"r\") módban.",
       "wrongOptions": {
         "A": "Abszolút útvonal: a javító gépén nem biztos, hogy létezik.",
-        "C": "Hiányzik a kiterjesztés, ilyen nevű fájl nincs.",
+        "B": "Hiányzik a kiterjesztés, ilyen nevű fájl nincs.",
         "D": "A \"w\" mód írásra nyit meg, és törli a fájl tartalmát!"
       },
       "id": "4",

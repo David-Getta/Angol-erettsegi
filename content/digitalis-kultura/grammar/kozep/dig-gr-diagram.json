@@ -166,11 +166,11 @@
       "options": [
         {
           "key": "A",
-          "text": "kördiagram"
+          "text": "vonaldiagram"
         },
         {
           "key": "B",
-          "text": "vonaldiagram"
+          "text": "kördiagram"
         },
         {
           "key": "C",
@@ -181,10 +181,10 @@
           "text": "területdiagram"
         }
       ],
-      "answer": "A",
+      "answer": "B",
       "explanation": "A – kördiagram: egy egész (az iskola) részekre bontása, a cikkek a részarányt mutatják.",
       "wrongOptions": {
-        "B": "A vonal időbeli változásra való, az évfolyamok nem idősor.",
+        "A": "A vonal időbeli változásra való, az évfolyamok nem idősor.",
         "C": "Két számváltozó kapcsolatához való.",
         "D": "A területdiagram is időbeli változásra való."
       },
@@ -232,22 +232,22 @@
         },
         {
           "key": "B",
-          "text": "pont (XY) diagram"
+          "text": "kördiagram"
         },
         {
           "key": "C",
-          "text": "kördiagram"
+          "text": "pont (XY) diagram"
         },
         {
           "key": "D",
           "text": "vonaldiagram a tanulók neve szerint"
         }
       ],
-      "answer": "B",
-      "explanation": "B – pont (XY) diagram: mindkét tengelyen szám áll, minden tanuló egy pont; az összefüggés (trend) a pontfelhőből látszik.",
+      "answer": "C",
+      "explanation": "C – pont (XY) diagram: mindkét tengelyen szám áll, minden tanuló egy pont; az összefüggés (trend) a pontfelhőből látszik.",
       "wrongOptions": {
         "A": "Az oszlopdiagram kategóriákat hasonlít össze, nem két számváltozó kapcsolatát mutatja.",
-        "C": "Nincs egész, aminek a részeit mutatná.",
+        "B": "Nincs egész, aminek a részeit mutatná.",
         "D": "A nevek sorrendje önkényes, a vonal hamis trendet sugall."
       },
       "id": "4",
@@ -274,22 +274,22 @@
         },
         {
           "key": "B",
-          "text": "A kis különbségeket félrevezetően felnagyítja: oszlopdiagramnál a tengelynek 0-ról kell indulnia."
+          "text": "Kördiagramot kellene használni."
         },
         {
           "key": "C",
-          "text": "Kördiagramot kellene használni."
+          "text": "A kis különbségeket félrevezetően felnagyítja: oszlopdiagramnál a tengelynek 0-ról kell indulnia."
         },
         {
           "key": "D",
           "text": "Az oszlopdiagramnak nem lehet címe."
         }
       ],
-      "answer": "B",
-      "explanation": "B. Az oszlop magassága az értékkel arányos benyomást kelt; ha a tengely nem 0-ról indul, egy 6%-os különbség többszörösnek látszik.",
+      "answer": "C",
+      "explanation": "C. Az oszlop magassága az értékkel arányos benyomást kelt; ha a tengely nem 0-ról indul, egy 6%-os különbség többszörösnek látszik.",
       "wrongOptions": {
         "A": "Éppen ez a torzítás: a különbség valójában kicsi.",
-        "C": "Napi bevételek összehasonlítására az oszlop jó, csak a tengelyt kell javítani.",
+        "B": "Napi bevételek összehasonlítására az oszlop jó, csak a tengelyt kell javítani.",
         "D": "Lehet és kell is címe."
       },
       "id": "6",
