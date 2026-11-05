@@ -96,20 +96,31 @@ export function MockRunner({
     [answers, mockId, part.index, router, storageKey, texts],
   );
 
-  // server-anchored countdown
+  // `submit` changes with every keystroke (it closes over the answers): keep the latest in a ref so the
+  // countdown below is not restarted – restarting it reset the clock to the page-load value while typing
+  const submitRef = useRef(submit);
+  useEffect(() => {
+    submitRef.current = submit;
+  }, [submit]);
+
+  // server-anchored countdown: the deadline is fixed once when the part is shown
+  const deadline = useRef<number | null>(null);
   useEffect(() => {
     if (!part.started || part.secondsLeft === null) return;
-    const end = Date.now() + part.secondsLeft * 1000;
-    const id = setInterval(() => {
-      const s = Math.max(0, Math.round((end - Date.now()) / 1000));
+    if (deadline.current === null) deadline.current = Date.now() + part.secondsLeft * 1000;
+    const end = deadline.current;
+    const tick = () => {
+      const s = Math.max(0, Math.ceil((end - Date.now()) / 1000));
       setLeft(s);
       if (s === 0) {
         clearInterval(id);
-        submit(true);
+        submitRef.current(true);
       }
-    }, 500);
+    };
+    const id = setInterval(tick, 250);
+    tick();
     return () => clearInterval(id);
-  }, [part.started, part.secondsLeft, submit]);
+  }, [part.started, part.secondsLeft]);
 
   const answered = useMemo(() => {
     const totalItems = objective.reduce((n, x) => n + x.items.length, 0);

@@ -23,6 +23,7 @@ export function WritingEditor({
   hideModeSwitch,
   limitSecOverride,
   symbols = [],
+  language = true,
 }: {
   /** URL of the part (e.g. /iras) – submissions open under <base>/beadas/<id>. */
   base: string;
@@ -36,6 +37,8 @@ export function WritingEditor({
   limitSecOverride?: number | null;
   /** Characters offered above the editor (the subject's `symbols`). */
   symbols?: string[];
+  /** Foreign-language subject: e-mail/letter checklist; otherwise a solution/essay checklist. */
+  language?: boolean;
 }) {
   const contentLang = useContentLang();
   const areaRef = useRef<HTMLTextAreaElement>(null);
@@ -86,15 +89,26 @@ export function WritingEditor({
   const wc = useMemo(() => wordCount(text), [text]);
   const { min, max } = task.wordLimit ?? { min: 0, max: Infinity };
   const wcState = wc < min ? "short" : wc > max ? "long" : "ok";
-  const checklist = [
-    { id: "points", label: t.writing.checklistItems.points },
-    { id: "words", label: `${t.writing.checklistItems.words} (${min}–${max})` },
-    { id: "greeting", label: t.writing.checklistItems.greeting },
-    { id: "register", label: t.writing.checklistItems.register },
-    { id: "paragraphs", label: t.writing.checklistItems.paragraphs },
-    { id: "reread", label: t.writing.checklistItems.reread },
-    ...task.checklistExtra.map((c, i) => ({ id: `x${i}`, label: c })),
-  ];
+  const wordsItem = task.wordLimit ? [{ id: "words", label: `${t.writing.checklistItems.words} (${min}–${max})` }] : [];
+  const checklist = language
+    ? [
+        { id: "points", label: t.writing.checklistItems.points },
+        ...wordsItem,
+        { id: "greeting", label: t.writing.checklistItems.greeting },
+        { id: "register", label: t.writing.checklistItems.register },
+        { id: "paragraphs", label: t.writing.checklistItems.paragraphs },
+        { id: "reread", label: t.writing.checklistItems.reread },
+        ...task.checklistExtra.map((c, i) => ({ id: `x${i}`, label: c })),
+      ]
+    : [
+        { id: "points", label: t.writing.checklistGeneric.points },
+        ...wordsItem,
+        { id: "method", label: t.writing.checklistGeneric.method },
+        { id: "answer", label: t.writing.checklistGeneric.answer },
+        { id: "structure", label: t.writing.checklistGeneric.structure },
+        { id: "reread", label: t.writing.checklistGeneric.reread },
+        ...task.checklistExtra.map((c, i) => ({ id: `x${i}`, label: c })),
+      ];
 
   const submit = () => {
     if (!text.trim()) return;
@@ -137,7 +151,7 @@ export function WritingEditor({
             <span className="text-xs text-muted">{mode === "exam" ? t.mode.examHint : t.mode.practiceHint}</span>
           </div>
         )}
-        <Card title={t.writing.situation}>
+        <Card title={language ? t.writing.situation : t.writing.task}>
           <div className="whitespace-pre-line" data-testid="situation">
             {task.situation}
           </div>
@@ -180,9 +194,10 @@ export function WritingEditor({
           {remainingSec !== null ? <TimerDisplay sec={remainingSec} label={t.task.remaining} /> : <TimerDisplay sec={elapsedSec} label={t.task.elapsed} warnBelow={-1} />}
           <span
             data-testid="word-count"
-            className={`rounded-md px-2 py-1 text-sm font-medium tabular-nums ${wcState === "ok" ? "bg-good-soft text-good" : wc === 0 ? "bg-surface-2 text-muted" : "bg-warn-soft text-warn"}`}
+            className={`rounded-md px-2 py-1 text-sm font-medium tabular-nums ${!task.wordLimit || wc === 0 ? "bg-surface-2 text-muted" : wcState === "ok" ? "bg-good-soft text-good" : "bg-warn-soft text-warn"}`}
           >
-            {t.writing.wordCount(wc)} · {wcState === "ok" ? t.writing.inRange : wcState === "short" ? t.writing.tooShort : t.writing.tooLong}
+            {t.writing.wordCount(wc)}
+            {task.wordLimit && <> · {wcState === "ok" ? t.writing.inRange : wcState === "short" ? t.writing.tooShort : t.writing.tooLong}</>}
           </span>
           {savedAt && mode !== "mock" && <span className="text-xs text-muted">{t.writing.draftSaved}</span>}
         </div>
