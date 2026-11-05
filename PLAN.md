@@ -66,6 +66,14 @@ A fázisok után az app mindig futtatható; ami kész, az használható.
 - [x] Több gyakorlófeladat: +4 olvasás és +3 hallás szintenként
 - [x] E2E: próbaérettségi, Szabálytár, minden oldal betöltése hiba nélkül; mobil elrendezés javítása; web manifest
 
+## 13. Továbbfejlesztés (2. kör)
+- [x] Útmutatók (`/utmutatok`): írásbeli szövegtípusok, szóbeli feladattípusok, vizsgarész-stratégiák; linkek a feladatoldalakról
+- [x] Diktálás (`/hallas/diktalas`) a hallási leiratokból, szóról szóra összevetéssel
+- [x] Kinyomtatható haladási jelentés (`/jelentes`), nyomtatási stíluslap
+- [x] Automatikus adatbázis-mentés a dev szerver indulásakor
+- [x] Pontozás: betűvel írt számok és ezres elválasztók elfogadása
+- [x] Független ellenőrzés: minden objektív feladat, a Szabálytár és a szókincs-paklik
+
 ---
 
 ## Döntések
@@ -104,3 +112,7 @@ A fázisok után az app mindig futtatható; ami kész, az használható.
 | D30 | Írásnál a mintamegoldás csak az első beadás után látszik, szóbelinél összecsukva mindig elérhető | írásnál a saját próbálkozás a lényeg; szóbelin a minta a felkészülést segíti |
 | D31 | Hibák újrapróbálása csak nyelvhelyességi itemekre, legkorábban 20 óra múlva (`config/app.json → review`) | ezek önmagukban is megoldhatók; a késleltetés a felidézést gyakoroltatja |
 | D32 | A javításokból „fix” típusú FSRS-kártya lesz, de csak kérésre (gomb) | nem minden javítás érdemes ismétlésre; a tanuló dönti el |
+| D33 | Az útmutatók külön tartalomrész (`guide`), szintfüggetlen fájlok `levelNotes`-szal; a hivatalos számokat (idő, szóhatár, pont) a configból veszik | egy szövegtípus felépítése szinttől független, a különbség a szóhatárban és a nyelvi elvárásban van |
+| D34 | Diktáláshoz csak a nem lefoglalt hallási feladatok leiratai használhatók | a próbaérettségi és a szintfelmérő hanganyaga maradjon ismeretlen |
+| D35 | Válaszellenőrzéskor a betűvel írt számok és az ezres elválasztók normalizálódnak (`normalizeForCheck`); a validátor és a szókártya-kulcsok a korábbi normalizálást használják | így nem kell minden számalakot felsorolni, a meglévő tartalom és kártyák pedig nem változnak |
+| D36 | Automatikus mentés csak akkor, ha van haladási adat, legfeljebb 3 naponta, a legutóbbi 10 automatikus másolat marad; a kézi mentéseket sosem törli | egyfelhasználós lokális app: az adatvesztés a legnagyobb kockázat |
