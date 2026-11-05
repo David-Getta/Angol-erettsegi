@@ -22,5 +22,10 @@ export default function ReviewPage() {
     previews: previewIntervals(c.fsrsState as StoredFsrs),
     isNew: c.isNew,
   }));
-  return <ReviewSession initial={queue} ttsRate={s.ttsRate} />;
+  return (
+    <>
+      <h1 className="sr-only">{t.vocab.review}</h1>
+      <ReviewSession initial={queue} ttsRate={s.ttsRate} />
+    </>
+  );
 }
