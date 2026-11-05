@@ -1,0 +1,153 @@
+{
+  "schemaVersion": 1,
+  "id": "dig-gd-writing-szovegszerkesztes",
+  "subject": "digitalis-kultura",
+  "revision": 1,
+  "level": "kozep",
+  "source": "generated",
+  "topic": "utmutato",
+  "title": "Szövegszerkesztési feladat",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "guide",
+  "type": "writing",
+  "target": "szovegszerkesztes",
+  "summaryHu": "A szövegszerkesztési feladatban egy formázatlan forrásszövegből kell a minta és a leírás szerinti dokumentumot elkészítened: oldalbeállítás, stílusok, kép, táblázat, felsorolás, élőfej és élőláb, lábjegyzet, nem törhető szóköz. A javítók elemenként pontoznak, és külön figyelik, hogy a beépített eszközöket (stílus, tabulátor, térköz, mező) használod-e a kézi pótmegoldások helyett.",
+  "steps": [
+    {
+      "title": "Megnyitás, mentés, rejtett karakterek",
+      "explanation": "Nyisd meg a forrásfájlt a helyes (UTF-8) kódolással, mentsd azonnal a kért néven és formátumban, és kapcsold be a rejtett karakterek megjelenítését (¶). Töröld a forrásban lévő fölösleges üres sorokat, dupla szóközöket, ha a feladat kéri.",
+      "tips": [
+        "Word: Kezdőlap > ¶; Writer: Ctrl+F10.",
+        "A kért fájlnév és formátum (docx/odt) már az első percben legyen meg."
+      ]
+    },
+    {
+      "title": "Globális beállítások: oldal és szövegtörzs",
+      "explanation": "Először az egész dokumentumra érvényes beállításokat végezd el: papírméret, tájolás, margók, majd a Normál (Alapértelmezett bekezdésstílus) stílus betűtípusa, mérete, igazítása, sorköze, térközei.",
+      "tips": [
+        "A térköz pontban, a margó centiméterben értendő.",
+        "A szövegtörzs formázását a stílusban állítsd be, ne kijelöléssel."
+      ]
+    },
+    {
+      "title": "Címek és szerkezet",
+      "explanation": "A címek Címsor 1, 2… stílust kapnak, és a stílust módosítod. A listákat felsorolásként vagy számozásként, a táblázatos adatokat táblázattá alakítva formázod; a tabulátoros igazításhoz tabulátorpozíciót állítasz be.",
+      "tips": [
+        "Szöveg átalakítása táblázattá: Beszúrás > Táblázat (Writer: Táblázat > Átalakítás).",
+        "A felsorolás behúzását a lista behúzásának módosításával állítsd."
+      ]
+    },
+    {
+      "title": "Képek, élőfej, élőláb, lábjegyzet",
+      "explanation": "A képet pontos méretre (méretarány zárolásával), a kért körbefuttatással és pozícióval helyezed el. Az élőfej és az élőláb szövege egyszer kerül be, az oldalszám mező. A lábjegyzetet a beépített funkcióval szúrod be.",
+      "tips": [
+        "A képet ne „szemre” méretezd: a Méret ablakban add meg az értéket.",
+        "A nem törhető szóköz: Ctrl+Shift+Szóköz."
+      ]
+    },
+    {
+      "title": "Végső ellenőrzés",
+      "explanation": "Nyomtatási képben nézd meg a dokumentumot: oldalszám, kép helye, táblázat, oldaltörések. Hasonlítsd össze a mintával és a leírás minden pontjával.",
+      "tips": [
+        "A kész dokumentumot mentsd el újra.",
+        "Ha a feladat oldalszámot kér (pl. két oldal), ellenőrizd."
+      ]
+    }
+  ],
+  "phrases": [
+    {
+      "group": "Oldal",
+      "en": "Elrendezés > Margók > Egyéni margók",
+      "hu": "margók, tájolás, papírméret (Writer: Formátum > Oldalstílus)"
+    },
+    {
+      "group": "Stílus",
+      "en": "Normál stílus > Módosítás",
+      "hu": "a szövegtörzs formátuma egy helyen"
+    },
+    {
+      "group": "Stílus",
+      "en": "Címsor 1 / Címsor 2",
+      "hu": "a címek stílusa – ebből készül a tartalomjegyzék is"
+    },
+    {
+      "group": "Bekezdés",
+      "en": "Térköz előtte / utána, Sorköz",
+      "hu": "a bekezdések közti hely – nem üres sor"
+    },
+    {
+      "group": "Bekezdés",
+      "en": "Tabulátor: balra, jobbra, középre, decimális, kitöltés",
+      "hu": "igazítás egy sorban"
+    },
+    {
+      "group": "Objektum",
+      "en": "Szöveg körbefuttatása: Négyzetes / Szoros / Szövegbe illesztve",
+      "hu": "kép elhelyezése"
+    },
+    {
+      "group": "Objektum",
+      "en": "Szöveg átalakítása táblázattá",
+      "hu": "tabulátoros sorokból táblázat"
+    },
+    {
+      "group": "Oldal",
+      "en": "Beszúrás > Oldalszám; Élőfej, élőláb",
+      "hu": "automatikus oldalszám"
+    },
+    {
+      "group": "Karakter",
+      "en": "Ctrl+Shift+Szóköz",
+      "hu": "nem törhető szóköz"
+    },
+    {
+      "group": "Hivatkozás",
+      "en": "Hivatkozások > Lábjegyzet beszúrása",
+      "hu": "automatikusan számozott lábjegyzet"
+    }
+  ],
+  "mistakes": [
+    {
+      "wrong": "Üres sorokkal választom el a bekezdéseket.",
+      "right": "A Térköz utána értéket állítom be a stílusban.",
+      "why": "A ¶ jelek láthatóvá teszik az üres sorokat; a módszerpontok elvesznek."
+    },
+    {
+      "wrong": "Szóközökkel igazítom a sor végére az árakat.",
+      "right": "Jobbra igazító tabulátort teszek a kért pozícióba.",
+      "why": "A szóközös igazítás elcsúszik, és nem szakszerű."
+    },
+    {
+      "wrong": "Minden címet kijelölve, kézzel formázok.",
+      "right": "Címsor stílust adok, és a stílust módosítom.",
+      "why": "A feladat stílust kér; a kézi formázás nem ér pontot."
+    },
+    {
+      "wrong": "A képet a sarkánál húzom kisebbre.",
+      "right": "A Méret ablakban, a méretarány zárolásával adom meg a pontos szélességet.",
+      "why": "A szemre méretezett kép mérete eltér, és torzulhat."
+    }
+  ],
+  "checklist": [
+    "Mentettem a kért néven és formátumban?",
+    "Az oldalbeállítás (méret, tájolás, margók) a leírás szerinti?",
+    "A szövegtörzs és a címek stílussal vannak formázva?",
+    "A kép mérete, körbefuttatása és helye pontos?",
+    "A táblázat, a felsorolás, az élőfej, az élőláb, a lábjegyzet elkészült?",
+    "Nincs fölösleges üres sor és szóköz (¶ ellenőrzés)?"
+  ],
+  "timing": "Középszinten kb. 40 perc (25 pont): 5 perc megnyitás és globális beállítások, 20 perc szerkezet és objektumok, 10 perc részletek, 5 perc ellenőrzés. Emelt szinten, ha az 1. feladat kiadvány, kb. 50 perc (30 pont).",
+  "example": {
+    "title": "Minta: stílusok beállítása (Word)",
+    "text": "Normál: Times New Roman, 12 pt, sorkizárt, utána 6 pt, sorköz 1,15\nCímsor 1: 20 pt, félkövér, sötétzöld, középre, utána 12 pt\nCímsor 2: 14 pt, félkövér, előtte 12 pt, utána 6 pt",
+    "notes": [
+      "A három stílus beállítása után a teljes dokumentum formázása kész – ezért érdemes ezzel kezdeni.",
+      "Ha a feladat később más értéket kér, egy helyen módosítod."
+    ]
+  },
+  "levelNotes": {
+    "kozep": "Középszinten egy-két oldalas dokumentum: oldalbeállítás, stílusok, egy kép, egy táblázat, felsorolás, élőfej/élőláb, lábjegyzet, nem törhető szóköz a jellemző elemek.",
+    "emelt": "Emelt szinten az 1. feladat lehet hosszabb kiadvány: hasábok, szakaszonként eltérő beállítások, tartalomjegyzék, iniciálé, kereszthivatkozás, eltérő első oldal – itt még fontosabb a stílusok és a szakaszok tudatos használata."
+  }
+}

@@ -1,0 +1,110 @@
+{
+  "schemaVersion": 1,
+  "id": "dig-gd-exam-reading",
+  "subject": "digitalis-kultura",
+  "revision": 1,
+  "level": "kozep",
+  "source": "generated",
+  "topic": "utmutato",
+  "title": "Gyorskérdések (gyakorlás)",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "guide",
+  "type": "exam",
+  "target": "reading",
+  "summaryHu": "A Gyorskérdések nem vizsgarész: a digitális kultúra érettségin nincs elméleti teszt, a tudást a gyakorlati feladatok és a szóbeli mérik. Ez a rész arra való, hogy gyorsan, magyarázattal gyakorold azt, ami a vizsgán pontot ér: táblázatkezelő függvényeket, SQL-kulcsszavakat, programrészletek kimenetét, a hardver, a hálózatok és az információs társadalom fogalmait. Minden hibádat elmagyarázza és a hibanaplóba teszi, így célzottan ismételhetsz.",
+  "steps": [
+    {
+      "title": "Válaszd ki a témát és a típust",
+      "explanation": "Feleletválasztás és igaz–hamis: fogalmak, szabályok; párosítás: fogalom és meghatározás; rövid válasz: függvénynév, SQL-kulcsszó, számrendszer; kód kimenete: rövid Python-programrészlet eredménye. A gyakorlati vizsga előtt a táblázatkezelő, SQL- és kódkimenet-feladatokat, a szóbeli előtt az elméleti témákat érdemes előre venni.",
+      "tips": [
+        "A témakörök a vizsga gyakorlati feladataihoz és a szóbeli tételeihez igazodnak.",
+        "Középszinten az alapfüggvények és alapfogalmak, emelt szinten a kereső- és feltételes függvények, az összetett SQL és a számrendszerek a hangsúlyosak."
+      ]
+    },
+    {
+      "title": "Kódkimenet: kövesd végig a programot papíron",
+      "explanation": "Készíts nyomkövető táblát: oszloponként a változók, soronként a ciklus egy-egy lefutása. Figyelj a range() felső határára (nem tartozik bele), a 0-tól induló indexre, az egészosztásra (//) és a maradékra (%), valamint arra, hogy a print a vesszővel elválasztott értékek közé szóközt tesz.",
+      "tips": [
+        "A választ pontosan úgy írd be, ahogy a program kiírná (pl. „3 1”, „[1, 9, 25]”).",
+        "Ha bizonytalan vagy, a saját gépeden futtasd le a kódot – így tanulsz a legtöbbet."
+      ]
+    },
+    {
+      "title": "Függvények és SQL: a nevet és a szerkezetet is tanuld meg",
+      "explanation": "A rövid válaszoknál a függvény magyar vagy angol neve is elfogadott (SZUM vagy SUM). Tanuld meg az argumentumok sorrendjét is (FKERES: keresett érték; tábla; oszlopszám; HAMIS), mert a gyakorlati vizsgán ezt kell alkalmaznod.",
+      "tips": [
+        "A magyar Excel pontosvesszővel, az angol vesszővel választja el az argumentumokat.",
+        "SQL-nél a záradékok sorrendje kötött: SELECT – FROM – WHERE – GROUP BY – HAVING – ORDER BY."
+      ]
+    },
+    {
+      "title": "Olvasd el a magyarázatot, és ismételj célzottan",
+      "explanation": "Minden hibánál megkapod a helyes választ és az okát. A hibás itemek hibakategóriánként a hibanaplóba kerülnek; a Szabálytárban minden kategóriához lecke és gyakorló feladatok tartoznak.",
+      "tips": [
+        "A célzott gyakorlás csak a gyenge kategóriáidból ad kérdéseket.",
+        "Egy-egy kategória leckéje után próbáld újra a hibás kérdéseket."
+      ]
+    }
+  ],
+  "phrases": [
+    {
+      "group": "Táblázatkezelés",
+      "en": "=SZUM / SUM, =ÁTLAG / AVERAGE, =HA / IF",
+      "hu": "a leggyakoribb függvények magyarul és angolul"
+    },
+    {
+      "group": "Táblázatkezelés",
+      "en": "$A$1, $A1, A$1",
+      "hu": "abszolút és vegyes hivatkozás"
+    },
+    {
+      "group": "SQL",
+      "en": "SELECT … FROM … WHERE … GROUP BY … HAVING … ORDER BY …;",
+      "hu": "a lekérdezés záradékainak sorrendje"
+    },
+    {
+      "group": "Programozás",
+      "en": "range(a, b) → a … b−1",
+      "hu": "a felső határ nem tartozik bele"
+    },
+    {
+      "group": "Programozás",
+      "en": "//, %",
+      "hu": "egészosztás és maradék"
+    },
+    {
+      "group": "Elmélet",
+      "en": "1 bájt = 8 bit; 1 KiB = 1024 B; 1 kB = 1000 B",
+      "hu": "mértékegységek"
+    }
+  ],
+  "mistakes": [
+    {
+      "wrong": "A kódkimenetet fejben, „ránézésre” mondom meg.",
+      "right": "Nyomkövető táblában lépésről lépésre végigkövetem a változók értékét.",
+      "why": "A ciklusok és az elágazások apró részletei (határok, egyenlőség) könnyen elkerülik a figyelmet."
+    },
+    {
+      "wrong": "A rossz válasz után továbblépek a magyarázat elolvasása nélkül.",
+      "right": "Elolvasom a magyarázatot, és a hibakategória leckéjét is átnézem.",
+      "why": "Ugyanaz a félreértés a gyakorlati vizsgán is pontot vinne el."
+    },
+    {
+      "wrong": "A rövid válaszba hosszú mondatot írok.",
+      "right": "Csak a kért függvénynevet, kulcsszót vagy számot írom be.",
+      "why": "Az automatikus ellenőrzés a pontos választ keresi."
+    }
+  ],
+  "checklist": [
+    "A kódkimenetnél végigkövettem a ciklus minden lefutását?",
+    "A választ pontosan a kért formában írtam be (szóköz, zárójel)?",
+    "A hibás kérdések magyarázatát elolvastam?",
+    "Megnéztem a gyenge kategóriáim leckéjét a Szabálytárban?"
+  ],
+  "timing": "Egy feladat 6–8 kérdés, kb. 8–12 perc. Naponta egy-két feladat és a hibák célzott ismétlése többet ér, mint egy hosszú, ritka gyakorlás.",
+  "levelNotes": {
+    "kozep": "Középszinten az alapfüggvényekre (SZUM, ÁTLAG, MAX, MIN, DARABTELI, HA, KEREKÍTÉS), az alap SQL-re (SELECT, WHERE, ORDER BY, COUNT, GROUP BY), az egyszerű ciklusokra és a hardver–hálózat–jog alapfogalmaira koncentrálj.",
+    "emelt": "Emelt szinten jönnek a kereső- és többfeltételes függvények (FKERES, INDEX + HOL.VAN, DARABHATÖBB, SZUMHA), az összekapcsolás, a HAVING és az allekérdezés, a rekurzió, a szótár, valamint a számrendszerek és a titkosítás."
+  }
+}

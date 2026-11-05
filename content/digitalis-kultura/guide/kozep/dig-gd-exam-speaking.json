@@ -1,0 +1,105 @@
+{
+  "schemaVersion": 1,
+  "id": "dig-gd-exam-speaking",
+  "subject": "digitalis-kultura",
+  "revision": 1,
+  "level": "kozep",
+  "source": "generated",
+  "topic": "utmutato",
+  "title": "Szóbeli (tétel)",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "guide",
+  "type": "exam",
+  "target": "speaking",
+  "summaryHu": "A szóbelin egy tételt húzol, amely két részből áll: A) egy elméleti téma összefüggő kifejtése (információs társadalom, hardver–szoftver–hálózat, online kommunikáció, publikálás, multimédia…), B) egy programozási feladat megoldásának bemutatása. Középszinten 15 perc a felelet (kb. 8 + 7 perc), 30 perc a felkészülés, 50 pont – de csak akkor kell szóbelizni, ha a gyakorlati vizsga eredménye 12% és 24,99% közé esik. Emelt szinten a szóbeli mindenkinek kötelező: 20 perc (kb. 10 + 10 perc), 30 perc felkészülés, 30 pont.",
+  "steps": [
+    {
+      "title": "Felkészülés: oszd meg a 30 percet",
+      "explanation": "Kb. 12–15 percet szánj a programozási feladatra (megoldás, kipróbálás, ha van rá lehetőség), a többit az elméleti tétel vázlatára. A vázlat csak címszavakat, sorrendet és példákat tartalmazzon, ne kész szöveget.",
+      "tips": [
+        "Az elméleti vázlatot a tétel kifejtési szempontjai szerint rendezd.",
+        "A programnál jegyezd fel, melyik részfeladathoz melyik tétel kell."
+      ]
+    },
+    {
+      "title": "A) Elméleti téma: felépítés",
+      "explanation": "Kezdd egy-két mondatos bevezetéssel (mi a téma, miért fontos), majd szempontonként haladj: fogalom – működés – példa – összefüggés. Zárásként egy gyakorlati következtetés vagy saját tapasztalat.",
+      "tips": [
+        "Minden fogalomhoz egy konkrét példa (eszköz, program, helyzet).",
+        "Kapcsold össze az elemeket: „ezért”, „ennek következménye”, „ehhez szükséges”."
+      ]
+    },
+    {
+      "title": "B) Programozási feladat: bemutatás",
+      "explanation": "Mondd el a feladatot a saját szavaiddal, az adatszerkezetet, majd részfeladatonként az algoritmust (melyik programozási tétel, kezdőérték, ciklusfeltétel), és mutasd be egy példán, mit ad a program.",
+      "tips": [
+        "A tétel nevét mondd ki: összegzés, megszámlálás, maximumkiválasztás, eldöntés, keresés, kiválogatás.",
+        "A határeseteket (nincs ilyen elem, egyenlő értékek) külön említsd meg."
+      ]
+    },
+    {
+      "title": "Kérdések a vizsgáztatótól",
+      "explanation": "A felelet után vagy közben a vizsgáztató rákérdezhet részletekre. Ilyenkor röviden, pontosan válaszolj; ha nem tudod, mondd el, hogyan gondolkodnál.",
+      "tips": [
+        "Ha elakadsz, a vázlatod következő pontjával folytasd.",
+        "A kérdésre adott jó válasz a kommunikációs szempontban is pontot ér."
+      ]
+    }
+  ],
+  "phrases": [
+    {
+      "group": "Bevezetés",
+      "en": "A tétel témája …, ezen belül … szólok.",
+      "hu": "nyitómondat"
+    },
+    {
+      "group": "Összefüggés",
+      "en": "Ennek az az oka, hogy …",
+      "hu": "ok-okozati kapcsolat"
+    },
+    {
+      "group": "Példa",
+      "en": "Erre jó példa …",
+      "hu": "példa bevezetése"
+    },
+    {
+      "group": "Programozás",
+      "en": "Ehhez a … tételét használom.",
+      "hu": "a programozási tétel megnevezése"
+    },
+    {
+      "group": "Zárás",
+      "en": "Összefoglalva …",
+      "hu": "összegzés"
+    }
+  ],
+  "mistakes": [
+    {
+      "wrong": "Felolvasom a vázlatomat.",
+      "right": "Címszavas vázlatból, szabadon beszélek.",
+      "why": "A rubrika az önálló, érthető előadást értékeli; a felolvasás gyenge kommunikációnak számít."
+    },
+    {
+      "wrong": "A programot csak felolvasom soronként.",
+      "right": "Az algoritmust magyarázom: mit, miért és milyen tétellel csinál.",
+      "why": "A „bemutatás” szempont a működés megértését értékeli, nem a kód ismételgetését."
+    },
+    {
+      "wrong": "Az elméleti tételben fogalmakat sorolok fel példa nélkül.",
+      "right": "Minden fogalomhoz példát és összefüggést mondok.",
+      "why": "A rubrika „példákkal, összefüggésekkel” kifejtést vár."
+    }
+  ],
+  "checklist": [
+    "A vázlatom a kifejtési szempontok sorrendjét követi?",
+    "Minden fogalomhoz van példám?",
+    "A program minden részfeladatánál tudom, melyik tétel kell?",
+    "Kipróbáltam (fejben vagy géppel) a programot egy példán?"
+  ],
+  "timing": "Középszinten kb. 8 perc az elméleti téma és 7 perc a programozási feladat; emelt szinten mindkettő kb. 10 perc. A 30 perces felkészülésből a programozásra kb. 12–15 percet szánj.",
+  "levelNotes": {
+    "kozep": "Középszinten (15 perc, 50 pont: elméleti téma 25, programozás 20, előadásmód 5) a pontos alapfogalmak és egy egyszerű, működő program (bekérés, ciklus, elágazás, tételek) a cél. Csak akkor szóbelizel, ha a gyakorlati eredményed 12% és 24,99% közé esett.",
+    "emelt": "Emelt szinten (20 perc, 30 pont) a szóbeli kötelező. Az elméleti témánál összefüggéseket, számításokat (pl. fájlméret), emelt szintű fogalmakat várnak, a programozásnál hatékony, függvényekre bontott megoldást és szakszerű magyarázatot."
+  }
+}

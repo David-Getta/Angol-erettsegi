@@ -1,0 +1,106 @@
+{
+  "schemaVersion": 1,
+  "id": "dig-gd-exam-writing",
+  "subject": "digitalis-kultura",
+  "revision": 1,
+  "level": "kozep",
+  "source": "generated",
+  "topic": "utmutato",
+  "title": "Gyakorlati vizsga",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "guide",
+  "type": "exam",
+  "target": "writing",
+  "summaryHu": "A digitális kultúra írásbelije számítógépes gyakorlati vizsga: a kiosztott forrásfájlokból kell elkészítened a feladatokat, és a megoldásokat a megadott néven mentened. Középszinten 180 perc, 100 pont, öt feladat: szövegszerkesztés (25), vizuális elemek – prezentáció, grafika vagy weblap (20), táblázatkezelés (25), adatbázis-kezelés (15), algoritmizálás és programozás (15). Emelt szinten 240 perc, 120 pont, négy feladat: kiadvány-, prezentáció- vagy weblapkészítés (30), táblázatkezelés (15), adatbázis-kezelés (30), programozás (45). Az idő a feladatok között szabadon osztható; a gyakorlati vizsgán legalább 12%-ot kell elérni.",
+  "steps": [
+    {
+      "title": "Az első 5–10 perc: áttekintés és mentés",
+      "explanation": "Olvasd át az összes feladatot, nézd meg a forrásfájlokat (kódolás, határoló, képméretek), és döntsd el a sorrendet: azzal kezdd, amiben a legbiztosabb vagy. Minden feladatnál az első lépés a mentés a kért néven és formátumban.",
+      "tips": [
+        "A feladatok függetlenek egymástól: ha egy elakad, lépj tovább.",
+        "A súgó és a programok beépített segítsége használható."
+      ]
+    },
+    {
+      "title": "Részfeladatonként haladj, és ments gyakran",
+      "explanation": "A feladatok számozott részfeladatokból állnak, és mindegyik külön pontot ér; a javítás a javítási útmutató szerint elemenként történik. Ha egy részfeladat nem megy, ugord át, de a többit csináld meg – a részleges megoldás is pontot ér.",
+      "tips": [
+        "Ctrl+S minden részfeladat után.",
+        "A programozásnál a részben működő program is pontot kap – a beadott forráskód számít."
+      ]
+    },
+    {
+      "title": "Szakszerű eszközt használj",
+      "explanation": "A rubrika külön szempontként értékeli a szakszerű módszert: stílus a kézi formázás helyett, képlet és függvény a kézzel beírt érték helyett, lekérdezés a kézi válogatás helyett, ciklus és programozási tétel a „bedrótozott” eredmény helyett.",
+      "tips": [
+        "Táblázatkezelésben egyetlen, lemásolható képlet oszloponként.",
+        "Szövegszerkesztésben rejtett karakterekkel ellenőrizd, nincs-e szóközös igazítás."
+      ]
+    },
+    {
+      "title": "Az utolsó 15 perc: ellenőrzés",
+      "explanation": "Nézd végig: minden fájl a helyén van-e a megadott néven, a dokumentum, a táblázat, az adatbázis megnyitható-e, a program lefut-e a mintaadatokkal és a mintakimenetet adja-e.",
+      "tips": [
+        "A meg nem mentett munka elveszik, a rossz nevű fájlt a javító nem keresi meg.",
+        "Weblapot nyiss meg böngészőben is."
+      ]
+    }
+  ],
+  "phrases": [
+    {
+      "group": "Szövegszerkesztés",
+      "en": "Stílus módosítása, Térköz előtte/utána, Tabulátor",
+      "hu": "formázás szakszerűen"
+    },
+    {
+      "group": "Táblázatkezelés",
+      "en": "=FKERES(…;HAMIS) / =VLOOKUP(…,FALSE)",
+      "hu": "pontos keresés"
+    },
+    {
+      "group": "Adatbázis",
+      "en": "SELECT … FROM … INNER JOIN … ON …",
+      "hu": "táblák összekapcsolása"
+    },
+    {
+      "group": "Programozás",
+      "en": "with open(\"adat.txt\", encoding=\"utf-8\") as f:",
+      "hu": "forrásfájl beolvasása"
+    },
+    {
+      "group": "Fájlkezelés",
+      "en": "Mentés másként: a megadott név, saját formátum",
+      "hu": "a mentés minden feladatnál pontfeltétel"
+    }
+  ],
+  "mistakes": [
+    {
+      "wrong": "A legnehezebb feladatnál elakadok, és arra megy el egy óra.",
+      "right": "Időt szabok minden feladatra, és ha elakadok, továbblépek, a végén visszatérek.",
+      "why": "A pontok sok kis részfeladatban vannak; egy elakadás ne vigye el a többi feladat könnyű pontjait."
+    },
+    {
+      "wrong": "A végén mentek egyszer.",
+      "right": "Az elején a kért néven mentek, és utána folyamatosan.",
+      "why": "Programösszeomlásnál vagy áramszünetnél a nem mentett munka elvész."
+    },
+    {
+      "wrong": "A táblázatba kézzel írom be a kiszámolt eredményeket.",
+      "right": "Minden eredményt képlettel számolok.",
+      "why": "A kézzel beírt eredmény akkor sem ér pontot, ha a szám helyes."
+    }
+  ],
+  "checklist": [
+    "Minden feladat a megadott néven és formátumban el van mentve?",
+    "Minden részfeladatot megcsináltam vagy legalább elkezdtem?",
+    "A képletek másolva is jók (abszolút hivatkozás)?",
+    "A lekérdezések a kért néven, csak a kért mezőkkel futnak?",
+    "A program lefut, és a mintaadatokra a mintakimenetet adja?"
+  ],
+  "timing": "Középszinten (180 perc) a javasolt beosztás: szövegszerkesztés kb. 40, vizuális feladat 30, táblázatkezelés 45, adatbázis 30, programozás 35 perc. Emelt szinten (240 perc): kiadvány/weblap kb. 50, táblázatkezelés 35, adatbázis 60, programozás 95 perc. Hagyj 10–15 percet a végső ellenőrzésre.",
+  "levelNotes": {
+    "kozep": "Középszinten öt rövidebb feladat van; a programozás 15 pont, rövid konzolos program (bekérés, ciklus, elágazás, egyszerű fájlolvasás). A végeredmény: ha a gyakorlati eredményed legalább 25%, az a végső százalék; 12 és 24,99% között szóbelit kell tenned, és a jegy a gyakorlati + szóbeli pontokból (150) adódik. Jegyhatárok: 80% jeles, 60% jó, 40% közepes, 25% elégséges.",
+    "emelt": "Emelt szinten négy nagyobb feladat van; a programozás 45 pont, összetett fájlfeldolgozással, függvényekkel, adatszerkezetekkel és fájlba írással. A szóbeli mindenkinek kötelező (30 pont), így a végeredmény a 150 pontból számol. Jegyhatárok: 60% jeles, 47% jó, 33% közepes, 25% elégséges."
+  }
+}

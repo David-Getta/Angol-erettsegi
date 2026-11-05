@@ -1,0 +1,140 @@
+{
+  "schemaVersion": 1,
+  "id": "dig-gd-writing-adatbazis",
+  "subject": "digitalis-kultura",
+  "revision": 1,
+  "level": "kozep",
+  "source": "generated",
+  "topic": "utmutato",
+  "title": "Adatbázis-kezelési feladat",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "guide",
+  "type": "writing",
+  "target": "adatbazis",
+  "summaryHu": "Az adatbázis-kezelési feladatban szövegfájlokból kell táblákat importálnod, kulcsokat és kapcsolatokat beállítanod, majd a kérdésekre lekérdezéseket készítened és a megadott néven mentened (emelt szinten jelentést is). Középszinten ez a 4. feladat (15 pont), emelt szinten a 3. (30 pont). A javító a mentett lekérdezések eredményét és szerkezetét nézi: csak a kért mezők, pontos szűrés, csoportosítás és rendezés.",
+  "steps": [
+    {
+      "title": "Importálás",
+      "explanation": "Hozd létre az adatbázist a kért néven, és importáld a táblákat: tagolt szöveg, a határoló, az első sor mezőnevei, a kódolás (UTF-8). Állítsd be a mezőtípusokat (szám, dátum, szöveg) és az elsődleges kulcsot.",
+      "tips": [
+        "A táblanevek a leírás szerintiek legyenek.",
+        "A dátum legyen dátum típusú, különben a rendezés szövegként történik."
+      ]
+    },
+    {
+      "title": "Kapcsolatok",
+      "explanation": "A kapcsolatot az elsődleges kulcs és az idegen kulcs között állítsd be (pl. konyv.id – kolcsonzes.konyv_id), egy-a-többhöz típussal, hivatkozási integritással.",
+      "tips": [
+        "A kapcsolat ablakban ellenőrizd az irányt (az „egy” oldal a kulcs)."
+      ]
+    },
+    {
+      "title": "Lekérdezések",
+      "explanation": "Minden kérdéshez egy lekérdezés, a megadott néven. Gondold végig: mely táblák kellenek, mi a feltétel, kell-e csoportosítás, összesítés, rendezés, és pontosan mely mezőket kell megjeleníteni.",
+      "tips": [
+        "Tervező nézetben a nem kért mezők megjelenítését kapcsold ki.",
+        "SQL-nézetben ellenőrizheted a lekérdezés szövegét."
+      ]
+    },
+    {
+      "title": "Jelentés (emelt)",
+      "explanation": "A jelentést a kért lekérdezésre építsd, a megadott csoportosítással, rendezéssel és feliratokkal; a mezőfeliratokat tervező nézetben írd át.",
+      "tips": [
+        "A jelentés neve is a megadott legyen."
+      ]
+    },
+    {
+      "title": "Ellenőrzés",
+      "explanation": "Futtass le minden lekérdezést, és nézd meg az eredményt: értelmes-e a sorok száma, nincs-e fölösleges mező, nincs-e Descartes-szorzat (gyanúsan sok sor).",
+      "tips": [
+        "Egy-két eredményt ellenőrizz a táblák adatai alapján."
+      ]
+    }
+  ],
+  "phrases": [
+    {
+      "group": "Szerkezet",
+      "en": "SELECT … FROM … WHERE … ORDER BY …;",
+      "hu": "alap lekérdezés"
+    },
+    {
+      "group": "Összekapcsolás",
+      "en": "FROM a INNER JOIN b ON a.id = b.a_id",
+      "hu": "két tábla"
+    },
+    {
+      "group": "Összekapcsolás",
+      "en": "FROM a LEFT JOIN b ON … WHERE b.id IS NULL",
+      "hu": "„egyszer sem” típusú kérdés"
+    },
+    {
+      "group": "Csoportosítás",
+      "en": "GROUP BY … HAVING …",
+      "hu": "csoportonkénti összesítés, csoportszűrés"
+    },
+    {
+      "group": "Összesítés",
+      "en": "COUNT(*), SUM(), AVG(), MIN(), MAX()",
+      "hu": "összesítő függvények"
+    },
+    {
+      "group": "Feltétel",
+      "en": "BETWEEN … AND …, IN (…), LIKE, IS NULL",
+      "hu": "speciális feltételek"
+    },
+    {
+      "group": "Allekérdezés",
+      "en": "WHERE x = (SELECT MAX(x) FROM …)",
+      "hu": "a maximumhoz tartozó rekord"
+    },
+    {
+      "group": "Access",
+      "en": "LIKE \"Sz*\", #2026-11-12#",
+      "hu": "Access-sajátosságok (helyettesítő karakter, dátum)"
+    }
+  ],
+  "mistakes": [
+    {
+      "wrong": "A lekérdezést Lekérdezés1 néven hagyom.",
+      "right": "A feladatban megadott néven mentem.",
+      "why": "A javító név alapján keres."
+    },
+    {
+      "wrong": "WHERE mezo = NULL",
+      "right": "WHERE mezo IS NULL",
+      "why": "A NULL-lal való egyenlőség sosem igaz."
+    },
+    {
+      "wrong": "Két táblát kapcsolófeltétel nélkül teszek a lekérdezésbe.",
+      "right": "INNER JOIN … ON kulcs = idegen kulcs (vagy beállított kapcsolat).",
+      "why": "Kapcsolat nélkül minden rekordpár megjelenik."
+    },
+    {
+      "wrong": "A legnagyobb értéket kinézem, és beírom a feltételbe: WHERE eladott = 180.",
+      "right": "WHERE eladott = (SELECT MAX(eladott) FROM vetites)",
+      "why": "A kézzel beírt érték adatváltozáskor hibás, és nem szakszerű."
+    }
+  ],
+  "checklist": [
+    "A táblák a kért néven, helyes mezőtípusokkal és kulcsokkal készültek?",
+    "A kapcsolatok be vannak állítva?",
+    "Minden lekérdezés a megadott néven van mentve?",
+    "Csak a kért mezők jelennek meg?",
+    "A szűrés, a csoportosítás és a rendezés a kérdés szerinti?",
+    "Emelt: a jelentés elkészült a kért feliratokkal?"
+  ],
+  "timing": "Középszinten kb. 30 perc (15 pont): 8 perc import és kapcsolat, 18 perc lekérdezések, 4 perc ellenőrzés. Emelt szinten kb. 60 perc (30 pont): 10 perc import, 40 perc lekérdezések, 10 perc jelentés és ellenőrzés.",
+  "example": {
+    "title": "Minta: csoportosítás és rendezés",
+    "text": "SELECT osztaly, COUNT(*) AS db\nFROM kolcsonzes\nGROUP BY osztaly\nORDER BY COUNT(*) DESC;",
+    "notes": [
+      "Osztályonként egy sor, a kölcsönzések száma szerint csökkenő sorrendben.",
+      "Az ORDER BY-ban az összesítő kifejezés áll, mert az Access az álnevet (db) itt nem fogadja el."
+    ]
+  },
+  "levelNotes": {
+    "kozep": "Középszinten 2 tábla, egyszerű szűrés, rendezés, megszámlálás, egy összekapcsolás és egy csoportosítás a jellemző.",
+    "emelt": "Emelt szinten 3–4 tábla, több összekapcsolás, HAVING, allekérdezés, külső összekapcsolás, számított mezők (pl. százalék), és egy jelentés is."
+  }
+}
