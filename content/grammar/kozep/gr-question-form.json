@@ -1,0 +1,176 @@
+{
+  "schemaVersion": 1,
+  "id": "gr-question-form",
+  "level": "kozep",
+  "source": "generated",
+  "topic": "nyelvtan",
+  "title": "Kérdésképzés",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "grammar",
+  "type": "lesson",
+  "category": "question-form",
+  "summaryHu": "Az angol kérdésben a segédige (do/does/did, be, have, will vagy módbeli segédige) az alany elé kerül; ha az állítmányban nincs segédige, do-t kell betenni. A magyar a kérdést csak hanglejtéssel vagy kérdőszóval jelzi („Hol laksz?”), ezért a magyar anyanyelvűek gyakran kihagyják a do-t, vagy kijelentő szórendet használnak. Külön csapda az alanyra kérdezés (Who called you?), a kérdés végére kerülő elöljárószó és a question tag („ugye?”). A vizsgán a nyitott lyukas szövegben, a szóbeli szituációs feladatban (információkérés) és az íráskészségben (kérdés levélben) egyaránt előkerül.",
+  "rules": [
+    {
+      "title": "Segédige + alany + főige",
+      "explanation": "Ha az állítmányban van segédige (be, have, will, can, should …), kérdésben az kerül az alany elé (Are you …? Have you …? Can she …?). Ha nincs, Present Simple-ben do/does, Past Simple-ben did kell, és a főige szótári alakban (V1) áll: does she live (nem does she lives), did you go (nem did you went). Kérdőszavas kérdésben a sorrend: kérdőszó + segédige + alany + főige.",
+      "emeltOnly": false,
+      "examples": [
+        { "en": "Are you coming to the party?", "hu": "Jössz a buliba?" },
+        { "en": "Have you ever been to Scotland?", "hu": "Voltál már Skóciában?" },
+        { "en": "Where does your sister work?", "hu": "Hol dolgozik a nővéred?", "note": "A -s a does-ra kerül, a work szótári alak." }
+      ]
+    },
+    {
+      "title": "Kérdőszavak",
+      "explanation": "what (mi, mit), which (melyik – adott választékból), who (ki, kit), whose (kié), where, when, why, how; összetett kérdőszavak: how much / how many (mennyi, hány), how often (milyen gyakran), how long (mennyi ideig, mióta), how far (milyen messze), what time (hánykor), what kind of (milyen fajta). A kérdőszó (a hozzá tartozó főnévvel együtt) a mondat elejére kerül, utána jön a segédige.",
+      "emeltOnly": false,
+      "examples": [
+        { "en": "How long have you been learning English?", "hu": "Mióta tanulsz angolul?" },
+        { "en": "Which colour do you prefer, red or blue?", "hu": "Melyik színt szereted jobban, a pirosat vagy a kéket?" },
+        { "en": "How often do you go to the gym?", "hu": "Milyen gyakran jársz edzőterembe?" }
+      ]
+    },
+    {
+      "title": "Alanyra kérdezés: nincs do",
+      "explanation": "Ha a who, what, which vagy how many a mondat alanyára kérdez, a szórend kijelentő marad, és nincs do/does/did: Who called you? (valaki felhívott téged – ki volt az?). Ha a kérdőszó a tárgyra kérdez, kell segédige: Who did you call? (te hívtál fel valakit – kit?).",
+      "emeltOnly": false,
+      "examples": [
+        { "en": "Who wrote this book?", "hu": "Ki írta ezt a könyvet?" },
+        { "en": "What happened at the party?", "hu": "Mi történt a buliban?" },
+        { "en": "Who did you meet at the party?", "hu": "Kivel találkoztál a buliban?", "note": "Tárgyra kérdez (you met somebody), ezért did." }
+      ]
+    },
+    {
+      "title": "Elöljárószó a kérdés végén",
+      "explanation": "A kérdőszóhoz tartozó elöljárószó a beszélt és az általános írott nyelvben a kérdés végére kerül: Who are you talking to? What are you looking at? Where are you from? A választékos „To whom …? / With whom …?” forma csak nagyon hivatalos szövegben gyakori.",
+      "emeltOnly": false,
+      "examples": [
+        { "en": "Who did you go to the cinema with?", "hu": "Kivel mentél moziba?" },
+        { "en": "What are you thinking about?", "hu": "Min gondolkodsz?" },
+        { "en": "What is this tool used for?", "hu": "Mire használják ezt a szerszámot?" }
+      ]
+    },
+    {
+      "title": "Tagadó kérdés és udvarias, közvetett kérdés",
+      "explanation": "Tagadó kérdésben az n't a segédigéhez kapcsolódik, és vele együtt kerül az alany elé: Don't you like it? Isn't she coming? Udvarias, közvetett kérdésnél (Could you tell me …, Do you know …, I was wondering …) a bevezető rész után kijelentő szórend jön, do nélkül: Could you tell me where the post office is? Eldöntendő kérdést itt if vagy whether vezet be.",
+      "emeltOnly": false,
+      "examples": [
+        { "en": "Don't you want to come with us?", "hu": "Nem akarsz velünk jönni?" },
+        { "en": "Do you know what time the shop closes?", "hu": "Tudod, hánykor zár a bolt?" },
+        { "en": "I was wondering if you could help me.", "hu": "Szeretném megkérdezni, tudnál-e segíteni." }
+      ]
+    },
+    {
+      "title": "Question tags – „ugye?”",
+      "explanation": "A question tag a magyar „ugye?” megfelelője. Állító mondat után tagadó, tagadó mondat után állító tag jön; a tag a mondat (első) segédigéjét ismétli – ha nincs, do/does/did-et – és személyes névmást használ. Különleges esetek: I am …, aren't I?; Let's …, shall we?; felszólítás után will you? / could you?; a nobody, never, hardly után állító tag jön (Nobody called, did they?).",
+      "emeltOnly": false,
+      "examples": [
+        { "en": "You're from Pécs, aren't you?", "hu": "Pécsi vagy, ugye?" },
+        { "en": "She didn't call, did she?", "hu": "Ugye nem hívott?" },
+        { "en": "Let's take a break, shall we?", "hu": "Tartsunk szünetet, jó?" }
+      ]
+    }
+  ],
+  "commonMistakes": [
+    { "wrong": "Where you live?", "right": "Where do you live?", "why": "A magyar kérdésben nincs segédige („Hol laksz?”), az angolban viszont kell: ha az állítmányban nincs más segédige, do/does/did kerül az alany elé." },
+    { "wrong": "Does she likes chocolate?", "right": "Does she like chocolate?", "why": "Az egyes szám 3. személyű -s-t (és a múlt időt) a segédige viszi: does / did után a főige szótári alakban (V1) áll." },
+    { "wrong": "Who did call you yesterday?", "right": "Who called you yesterday?", "why": "Ha a who az alanyra kérdez (valaki felhívott), nincs do/did, és a szórend kijelentő marad. A Who did you call? azt kérdezi, kit hívtál fel te." },
+    { "wrong": "What you are doing?", "right": "What are you doing?", "why": "Kérdésben a be (és minden segédige) az alany elé kerül: kérdőszó + segédige + alany + főige." },
+    { "wrong": "Could you tell me where is the station?", "right": "Could you tell me where the station is?", "why": "Udvarias, közvetett kérdésben a bevezető rész (Could you tell me) után kijelentő szórend jön; a kérdő jelleget már a bevezető rész adja." },
+    { "wrong": "You are coming tomorrow, isn't it?", "right": "You are coming tomorrow, aren't you?", "why": "A magyar „ugye?” mindig ugyanaz, az angol question tag viszont a mondat segédigéjét és alanyát ismétli: you are → aren't you, she can → can't she. Az isn't it csak it is-es mondat után áll." }
+  ],
+  "examTips": [
+    "Nyitott lyukas szöveg: a kérdésekben gyakran a segédige hiányzik (Where ___ you go last summer? → did; How long ___ she lived here? → has). Nézd meg a főige alakját: szótári alak → do/does/did; V3 → have/has/had; -ing → be.",
+    "Szóbeli vizsga, szituációs feladat (középszint): neked is kérdezned kell, pl. információt kérni egy utazási irodában vagy egy boltban. Gyakorold a mintákat: What time does … start? How much is / are …? Could you tell me …? Is it possible to …? A helyes kérdésszerkezet a „Nyelvhelyesség” szempontnál feltűnő pozitívum.",
+    "Íráskészség: ha a feladat azt kéri, hogy kérdezz valamire (pl. ask about the price), hivatalos levélben inkább közvetett kérdést írj (I would like to know whether …, Could you tell me how much the course costs?) – és ilyenkor kijelentő szórend kell."
+  ],
+  "practice": [
+    {
+      "id": "1",
+      "kind": "choice",
+      "prompt": "___ your brother play in the school band?",
+      "options": [
+        { "key": "A", "text": "Is" },
+        { "key": "B", "text": "Do" },
+        { "key": "C", "text": "Does" },
+        { "key": "D", "text": "Has" }
+      ],
+      "answer": "C",
+      "category": "question-form",
+      "explanation": "Helyes: Does. Present Simple kérdés, az alany egyes szám 3. személy (your brother = he), a főige szótári alakú (play), ezért does + alany + V1.",
+      "wrongOptions": {
+        "A": "Az is + alany után -ing alak kellene (Is your brother playing …?).",
+        "B": "A do többes számú vagy I/you alannyal áll; a your brother egyes szám 3. személy.",
+        "D": "A has után V3 kellene (Has your brother played …?), a play szótári alak."
+      }
+    },
+    {
+      "id": "2",
+      "kind": "text",
+      "prompt": "Where ___ you go on holiday last summer?",
+      "answer": ["did"],
+      "maxWords": 1,
+      "category": "question-form",
+      "explanation": "Helyes: did. Lezárt múltbeli időpont (last summer) – Past Simple; a kérdésben did kerül az alany elé, a főige pedig szótári alakban marad (go)."
+    },
+    {
+      "id": "3",
+      "kind": "choice",
+      "prompt": "Who ___ you this beautiful necklace? – My grandmother.",
+      "options": [
+        { "key": "A", "text": "did gave" },
+        { "key": "B", "text": "gave" },
+        { "key": "C", "text": "has gave" },
+        { "key": "D", "text": "did you give" }
+      ],
+      "answer": "B",
+      "category": "question-form",
+      "explanation": "Helyes: gave. A who itt az alanyra kérdez (valaki adta neked – ki?), ezért nincs do/did, a szórend kijelentő: Who gave you …?",
+      "wrongOptions": {
+        "A": "A did után szótári alak állna (give), és alanyra kérdezésnél egyébként sem kell did.",
+        "C": "A has után V3 kellene (given); a has gave alak hibás.",
+        "D": "Így két tárgy lenne (you … you): a mondat értelmetlen, és tárgyra kérdezne, pedig a válasz (My grandmother) az alany."
+      }
+    },
+    {
+      "id": "4",
+      "kind": "text",
+      "prompt": "What are you looking ___? – My keys. I can't find them.",
+      "answer": ["for"],
+      "maxWords": 1,
+      "category": "question-form",
+      "explanation": "Helyes: for. A look for = keres; a kérdőszóhoz (What) tartozó elöljárószó a kérdés végére kerül: What are you looking for? = Mit keresel? A look at (néz) nem illik a válaszhoz (nem találom őket)."
+    },
+    {
+      "id": "5",
+      "kind": "choice",
+      "prompt": "Excuse me, could you tell me ___?",
+      "options": [
+        { "key": "A", "text": "where is the nearest bank" },
+        { "key": "B", "text": "where the nearest bank is" },
+        { "key": "C", "text": "where does the nearest bank" },
+        { "key": "D", "text": "the nearest bank where is" }
+      ],
+      "answer": "B",
+      "category": "question-form",
+      "explanation": "Helyes: where the nearest bank is. Közvetett (udvarias) kérdésben a Could you tell me után kijelentő szórend jön: kérdőszó + alany + ige.",
+      "wrongOptions": {
+        "A": "Kérdő szórend: közvetett kérdésben az alany (the nearest bank) az ige (is) előtt áll.",
+        "C": "A be igés mondatban nem kell does, és a mondatból hiányzik az ige.",
+        "D": "A kérdőszónak (where) a mellékmondat elején kell állnia."
+      }
+    },
+    {
+      "id": "6",
+      "kind": "text",
+      "prompt": "You've finished your homework, ___ you?",
+      "answer": ["haven't"],
+      "maxWords": 1,
+      "category": "question-form",
+      "explanation": "Helyes: haven't. Állító mondat után tagadó question tag jön, és a mondat segédigéjét ismétli: You've (= You have) finished → haven't you? A don't you itt hibás, mert a segédige a have."
+    }
+  ],
+  "relatedCategories": ["word-order", "auxiliary", "reported-speech"]
+}

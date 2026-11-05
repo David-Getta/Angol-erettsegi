@@ -1,0 +1,186 @@
+{
+  "schemaVersion": 1,
+  "id": "gr-auxiliary",
+  "level": "kozep",
+  "source": "generated",
+  "topic": "nyelvtan",
+  "title": "Segédigék",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "grammar",
+  "type": "lesson",
+  "category": "auxiliary",
+  "summaryHu": "A segédigék (be, do, have, valamint a will és a módbeli segédigék) képzik az angol igeidőket, a kérdést és a tagadást, és ezekkel adunk rövid választ (Yes, I do.) vagy reagálunk röviden (So do I. / Neither do I.). A magyarban nincs ilyen segédige-rendszer, ezért gyakori, hogy a tanuló rossz segédigét választ (I am agree, Do you ready?), vagy a rövid válaszban rossz igét ismétel. A vizsgán a nyitott lyukas szövegben a segédige az egyik leggyakoribb hiányzó szó, a hibakeresésben (emelt) gyakori felesleges szó, a szóbelin pedig a rövid válaszok és reakciók teszik természetessé a beszédet.",
+  "rules": [
+    {
+      "title": "Melyik segédige melyik szerkezethez?",
+      "explanation": "be: folyamatos igeidők (be + -ing: is reading, was raining) és szenvedő szerkezet (be + V3: was built). have: befejezett igeidők (have + V3: has finished, had left). do: Present és Past Simple kérdése és tagadása (do / does / did + V1). A will, would és a módbeli segédigék (can, must, should …) után V1 áll. A kérdést és a tagadást mindig az első segédigével képezzük (She hasn't been working; Will you be coming?).",
+      "emeltOnly": false,
+      "examples": [
+        { "en": "She isn't working today.", "hu": "Ma nem dolgozik." },
+        { "en": "Have you ever met him?", "hu": "Találkoztál már vele?" },
+        { "en": "We didn't see the beginning of the film.", "hu": "Nem láttuk a film elejét." }
+      ]
+    },
+    {
+      "title": "Főige vagy segédige? – a be és a have",
+      "explanation": "A be önmagában is ige (am, is, are, was, were): kérdés és tagadás do nélkül (Are you ready? I wasn't at home.). A have főigeként (birtoklás; have breakfast, have a shower, have a good time) Present és Past Simple-ben do-val kérdez és tagad: Do you have a car? I didn't have time. Brit beszélt nyelvben birtoklásra gyakori a have got: Have you got a car? I haven't got time.",
+      "emeltOnly": false,
+      "examples": [
+        { "en": "Are you hungry?", "hu": "Éhes vagy?", "note": "Nincs do: a be maga kerül az alany elé." },
+        { "en": "Did you have a good time?", "hu": "Jól érezted magad?" },
+        { "en": "I haven't got any brothers or sisters.", "hu": "Nincs testvérem." }
+      ]
+    },
+    {
+      "title": "Rövid válaszok",
+      "explanation": "Az eldöntendő kérdésre angolul ritkán felelünk csak Yes vagy No szóval: a kérdés segédigéjét ismételjük személyes névmással (Yes, I do. / No, she isn't. / Yes, they have. / No, I can't.). Állító rövid válaszban nincs összevonás (Yes, I am – nem Yes, I'm), tagadóban van (No, I'm not / No, it isn't).",
+      "emeltOnly": false,
+      "examples": [
+        { "en": "Do you like spicy food? – Yes, I do.", "hu": "Szereted a csípős ételeket? – Igen." },
+        { "en": "Is Peter at home? – No, he isn't.", "hu": "Otthon van Peter? – Nincs." },
+        { "en": "Can you swim? – Yes, I can.", "hu": "Tudsz úszni? – Igen, tudok." }
+      ]
+    },
+    {
+      "title": "So do I / Neither do I – én is, én sem",
+      "explanation": "Egyetértő reakció állításra: So + segédige + alany (So do I, So was I, So have I); tagadásra: Neither / Nor + segédige + alany (Neither can I). A segédige a másik mondat igeidejéhez és szerkezetéhez igazodik, és fordított a szórend. Beszélt nyelvben: Me too / Me neither. Ha nem értünk egyet, csak a segédigét használjuk: I do. / I don't. / I can't.",
+      "emeltOnly": false,
+      "examples": [
+        { "en": "I love horror films. – So do I.", "hu": "Imádom a horrorfilmeket. – Én is." },
+        { "en": "I didn't sleep well last night. – Neither did I.", "hu": "Nem aludtam jól az éjjel. – Én sem." },
+        { "en": "I've never been to Italy. – Neither have I.", "hu": "Még sosem voltam Olaszországban. – Én sem." }
+      ]
+    },
+    {
+      "title": "Segédige a főige ismétlése helyett",
+      "explanation": "Hogy ne ismételjük a főigét, a második tagmondatban csak a segédigét hagyjuk meg (a megfelelő igeidőben): She can speak French, but I can't. He said he would help, and he did. Összehasonlításban is: She runs faster than I do.",
+      "emeltOnly": false,
+      "examples": [
+        { "en": "I don't like coffee, but my parents do.", "hu": "Én nem szeretem a kávét, de a szüleim igen." },
+        { "en": "He works harder than I do.", "hu": "Keményebben dolgozik, mint én." },
+        { "en": "I thought I had locked the door, but I hadn't.", "hu": "Azt hittem, bezártam az ajtót, de nem." }
+      ]
+    },
+    {
+      "title": "Nyomatékos do",
+      "explanation": "Állító mondatban a do / does / did + V1 nyomatékot ad (tényleg, igenis), főleg ellentmondásnál vagy hangsúlyozásnál: I did lock the door! Felszólításnál udvarias, szívélyes biztatást fejez ki: Do come in! Do sit down.",
+      "emeltOnly": true,
+      "examples": [
+        { "en": "I did tell you about the meeting – you just forgot.", "hu": "Igenis szóltam neked a megbeszélésről – csak elfelejtetted." },
+        { "en": "She does look tired today.", "hu": "Ma tényleg fáradtnak tűnik." },
+        { "en": "Do help yourself to some cake.", "hu": "Vegyél csak bátran a süteményből!" }
+      ]
+    }
+  ],
+  "commonMistakes": [
+    { "wrong": "I am agree with you.", "right": "I agree with you.", "why": "Az agree ige („egyetért”), nem melléknév, ezért nem kell elé be. Tagadva: I don't agree." },
+    { "wrong": "Do you ready?", "right": "Are you ready?", "why": "A ready melléknév, mellette az állítmány a be ige; kérdésben a be kerül az alany elé, do nem kell." },
+    { "wrong": "I like jazz. – So am I.", "right": "I like jazz. – So do I.", "why": "A segédigének az előző mondathoz kell igazodnia: like (Present Simple) → do. A So am I csak be igés mondatra válaszol (I'm hungry. – So am I.)." },
+    { "wrong": "I don't like fish. – Neither don't I.", "right": "I don't like fish. – Neither do I.", "why": "A neither / nor már tagadó, ezért utána állító segédige áll. A magyar „én sem” miatt sokan kettős tagadást használnak." },
+    { "wrong": "Have you got any pets? – Yes, I've.", "right": "Have you got any pets? – Yes, I have.", "why": "Állító rövid válaszban nem vonjuk össze a segédigét a névmással (Yes, I have / Yes, I am / Yes, she is). Tagadóban lehet: No, I haven't." },
+    { "wrong": "She don't like sport.", "right": "She doesn't like sport.", "why": "Egyes szám 3. személyben (he, she, it) Present Simple-ben does / doesn't kell; a -s a segédigére kerül, a főige V1 marad." }
+  ],
+  "examTips": [
+    "Nyitott lyukas szöveg: ha a hiány kérdésben az alany előtt áll, vagy egy -ing / V3 alak előtt, szinte biztosan segédige kell (is, are, was, has, have, had, does, did). Ellenőrizd az igeidőt és az alany számát (he has / they have, she does / they do).",
+    "Hibakeresés (emelt): gyakori felesleges szó a fölösleges segédige – pl. did alanyra kérdezésnél (Who did told you?) vagy be ige mellett (I am agree). Ha egy sorban két segédige áll egymás mellett, gyanakodj.",
+    "Szóbeli vizsga: a társalgásban ne csak Yes vagy No szóval felelj – a rövid válasz (Yes, I do.) után mondj egy-két mondatot indoklásnak. Párbeszédben a So do I. / Neither do I. / Really? I don't. reakciók természetes, gördülékeny benyomást keltenek."
+  ],
+  "practice": [
+    {
+      "id": "1",
+      "kind": "choice",
+      "prompt": "I'm really tired today. – So ___ I.",
+      "options": [
+        { "key": "A", "text": "do" },
+        { "key": "B", "text": "am" },
+        { "key": "C", "text": "have" },
+        { "key": "D", "text": "was" }
+      ],
+      "answer": "B",
+      "category": "auxiliary",
+      "explanation": "Helyes: am. Az előző mondat igéje a be jelen időben (I'm = I am), ezért a reakció is ezt ismétli: So am I. = Én is.",
+      "wrongOptions": {
+        "A": "A do Present Simple főigés mondatra válaszol (I like … – So do I.); itt az ige a be.",
+        "C": "A have befejezett szerkezetre vagy have got-ra válaszolna (I've finished. – So have I.).",
+        "D": "A was múlt idő, az eredeti mondat viszont jelen idejű (today)."
+      }
+    },
+    {
+      "id": "2",
+      "kind": "text",
+      "prompt": "I haven't seen the new Marvel film yet. – Neither ___ I.",
+      "answer": ["have"],
+      "maxWords": 1,
+      "category": "auxiliary",
+      "explanation": "Helyes: have. Az eredeti mondat Present Perfect (haven't seen), ezért a reakció a have segédigét ismétli. A neither már tagadó, ezért utána állító alak áll (nem haven't)."
+    },
+    {
+      "id": "3",
+      "kind": "choice",
+      "prompt": "___ you have a good time at the party last night?",
+      "options": [
+        { "key": "A", "text": "Were" },
+        { "key": "B", "text": "Had" },
+        { "key": "C", "text": "Did" },
+        { "key": "D", "text": "Have" }
+      ],
+      "answer": "C",
+      "category": "auxiliary",
+      "explanation": "Helyes: Did. A have a good time kifejezésben a have főige, ezért Past Simple-ben (last night) did-del kérdezünk: Did you have …?",
+      "wrongOptions": {
+        "A": "A were után -ing alak kellene (Were you having …?), a have itt szótári alak.",
+        "B": "A have főigeként nem kerülhet az alany elé; Past Simple-ben did kell.",
+        "D": "Jelen idejű segédige, a last night viszont múltbeli időpont; ráadásul a have főigét nem tesszük az alany elé."
+      }
+    },
+    {
+      "id": "4",
+      "kind": "text",
+      "prompt": "Can your brother drive? – No, he ___.",
+      "answer": ["can't", "cannot"],
+      "maxWords": 1,
+      "category": "auxiliary",
+      "explanation": "Helyes: can't. Rövid válaszban a kérdés segédigéjét ismételjük: Can …? – No, he can't. A does not / doesn't itt hibás, mert a kérdés segédigéje a can."
+    },
+    {
+      "id": "5",
+      "kind": "choice",
+      "prompt": "My sister doesn't eat meat, but I ___.",
+      "options": [
+        { "key": "A", "text": "don't" },
+        { "key": "B", "text": "do" },
+        { "key": "C", "text": "am" },
+        { "key": "D", "text": "does" }
+      ],
+      "answer": "B",
+      "category": "auxiliary",
+      "explanation": "Helyes: do. A főige (eat meat) ismétlése helyett csak a segédigét használjuk; a but ellentétet jelez, ezért állító alak kell: but I do (de én eszem).",
+      "wrongOptions": {
+        "A": "A but ellentétet jelez: ha én sem ennék húst, nem but, hanem and … neither kellene.",
+        "C": "Az am a be igét helyettesítené, itt viszont a főige az eat (Present Simple → do).",
+        "D": "A does egyes szám 3. személyű, az alany viszont I."
+      }
+    },
+    {
+      "id": "6",
+      "kind": "choice",
+      "prompt": "'You didn't lock the door!' – 'I ___ lock it – I'm absolutely sure! Someone else must have opened it.'",
+      "options": [
+        { "key": "A", "text": "do" },
+        { "key": "B", "text": "did" },
+        { "key": "C", "text": "have" },
+        { "key": "D", "text": "was" }
+      ],
+      "answer": "B",
+      "category": "auxiliary",
+      "explanation": "Helyes: did. Nyomatékos do (emelt): ellentmondásnál az állító mondatban did + V1 hangsúlyozza, hogy igenis megtörtént: I did lock it! = Igenis bezártam! A vád múlt idejű (didn't lock), ezért did.",
+      "wrongOptions": {
+        "A": "A do jelen idejű nyomatékot adna (szokás), a vád viszont egy múltbeli esetre vonatkozik.",
+        "C": "A have után V3 kellene (have locked), a lock szótári alak.",
+        "D": "A was után -ing vagy V3 kellene; a was lock nem helyes szerkezet."
+      }
+    }
+  ],
+  "relatedCategories": ["question-form", "tense", "verb-form"]
+}

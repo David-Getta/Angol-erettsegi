@@ -73,6 +73,16 @@ describe("official exam config is internally consistent", () => {
     }
   });
 
+  it("every error category has a Szabálytár lesson", () => {
+    const lessons = new Set(
+      loadAllContent()
+        .items.map((i) => i.content)
+        .filter((c) => c?.section === "grammar")
+        .map((c) => (c as { category: string }).category),
+    );
+    for (const c of examConfig.errorCategories().categories) expect(lessons.has(c.id), c.id).toBe(true);
+  });
+
   it("every official config file records when and from where it was verified", () => {
     for (const p of examConfigProvenance()) {
       expect(p.verifiedAt, p.file).toMatch(/^\d{4}-\d{2}-\d{2}$/);
