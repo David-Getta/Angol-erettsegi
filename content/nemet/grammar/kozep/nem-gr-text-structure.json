@@ -18,8 +18,14 @@
       "explanation": "A kivett mondatban vagy a hiány utáni mondatban álló névmás (er, sie, es, ihn, ihm, sie – Plural) egy korábban említett főnévre utal, és annak nyelvtani nemét, számát követi: der Hund → er/ihn/ihm, die Stadt → sie, das Projekt → es, die Kinder → sie/ihnen. A mutató névmások (dieser, diese, das, dies) és a da(r)-szavak (dabei, dafür, deshalb, darüber) is az előző mondatra utalnak. Ellenőrizd, hogy a hiány előtt van-e olyan főnév, amelyre a névmás utalhat.",
       "emeltOnly": false,
       "examples": [
-        { "en": "Lisa hat einen Hund aus dem Tierheim geholt. ___ Jeden Morgen geht sie jetzt mit ihm spazieren.", "note": "A mit ihm hímnemű vagy semleges főnévre utal – a der Hund-ra; a hiányba olyan mondat kell, amely a kutyát nem zavarja meg más főnévvel." },
-        { "en": "Viele Schüler wünschen sich längere Pausen. Diese Idee gefällt auch den Lehrern.", "note": "A Diese Idee az előző mondat egészére utal." }
+        {
+          "en": "Lisa hat einen Hund aus dem Tierheim geholt. ___ Jeden Morgen geht sie jetzt mit ihm spazieren.",
+          "note": "A mit ihm hímnemű vagy semleges főnévre utal – a der Hund-ra; a hiányba olyan mondat kell, amely a kutyát nem zavarja meg más főnévvel."
+        },
+        {
+          "en": "Viele Schüler wünschen sich längere Pausen. Diese Idee gefällt auch den Lehrern.",
+          "note": "A Diese Idee az előző mondat egészére utal."
+        }
       ]
     },
     {
@@ -27,7 +33,10 @@
       "explanation": "A kötőszavak megmutatják, milyen viszonyban van a mondat az előzővel: ellentét (aber, doch, trotzdem, jedoch, dagegen), következmény (deshalb, deswegen, daher, also), kiegészítés (außerdem, auch, zudem), példa (zum Beispiel, so), magyarázat (denn, nämlich). Ha a hiány utáni mondat deshalb-bal kezdődik, a hiányba az ok kell; ha trotzdem-mel, akkor egy olyan állítás, amelynek ellenére történik valami.",
       "emeltOnly": false,
       "examples": [
-        { "en": "Unsere Schule hat seit Kurzem einen Schulgarten. ___ Deshalb gibt es im Sommer frisches Gemüse in der Kantine.", "note": "A deshalb ok-okozati kapcsolatot vár: a hiányba az kell, hogy a kertben zöldséget termesztenek." }
+        {
+          "en": "Unsere Schule hat seit Kurzem einen Schulgarten. ___ Deshalb gibt es im Sommer frisches Gemüse in der Kantine.",
+          "note": "A deshalb ok-okozati kapcsolatot vár: a hiányba az kell, hogy a kertben zöldséget termesztenek."
+        }
       ]
     },
     {
@@ -35,7 +44,10 @@
       "explanation": "Elbeszélő szövegben az időhatározók rendezik a mondatokat: zuerst / zunächst / am Anfang, dann / danach / später, schließlich / am Ende / zuletzt, seitdem. Ha a hiány után am Ende áll, a hiányba egy köztes lépés illik; ha a hiány előtt zuerst áll, a hiányba gyakran a dann-os folytatás.",
       "emeltOnly": false,
       "examples": [
-        { "en": "Zuerst wollte Ben Medizin studieren. ___ Am Ende hat er sich für eine Ausbildung als Koch entschieden.", "note": "Zuerst – ? – Am Ende: a hiányba a fordulópont kell (dann hat er gemerkt …)." }
+        {
+          "en": "Zuerst wollte Ben Medizin studieren. ___ Am Ende hat er sich für eine Ausbildung als Koch entschieden.",
+          "note": "Zuerst – ? – Am Ende: a hiányba a fordulópont kell (dann hat er gemerkt …)."
+        }
       ]
     },
     {
@@ -43,7 +55,10 @@
       "explanation": "A kivett mondatnak nyelvtanilag is illeszkednie kell: egyes vagy többes szám (er vagy sie Plural), igeidő (ha a szöveg Präteritumban mesél, a mondat is abban áll), a megszólítás formája (du vagy Sie). Bekezdéskezdésnél a kezdőmondat gyakran félbemarad, és a folytatás a bekezdésben van – a mondatrész végének szórendje (ige a végén → mellékmondat) is árulkodó.",
       "emeltOnly": false,
       "examples": [
-        { "en": "___ sind sie sofort in den Park gelaufen.", "note": "A hiány után ige áll (sind), tehát a hiányzó rész az első helyet foglalja el: lehet egy határozó (Nach der Schule) vagy egy mellékmondat (Als die Kinder nach Hause kamen,)." }
+        {
+          "en": "___ sind sie sofort in den Park gelaufen.",
+          "note": "A hiány után ige áll (sind), tehát a hiányzó rész az első helyet foglalja el: lehet egy határozó (Nach der Schule) vagy egy mellékmondat (Als die Kinder nach Hause kamen,)."
+        }
       ]
     },
     {
@@ -51,14 +66,29 @@
       "explanation": "A kiválasztott mondattal olvasd el újra a teljes bekezdést: gördülékeny-e, nincs-e ellentmondás vagy ismétlés? A feladatban egy-két felesleges mondat is van – ezek gyakran a témához illenek, de a konkrét hiányhoz nem kapcsolódnak (nincs bennük utalószó, vagy ellentmondanak a folytatásnak).",
       "emeltOnly": false,
       "examples": [
-        { "en": "8 Lücken – 9 Sätze", "note": "Egy mondat kimarad: a témához illik, de egyik hiányba sem kapcsolódik szorosan." }
+        {
+          "en": "8 Lücken – 9 Sätze",
+          "note": "Egy mondat kimarad: a témához illik, de egyik hiányba sem kapcsolódik szorosan."
+        }
       ]
     }
   ],
   "commonMistakes": [
-    { "wrong": "Csak a hiány előtti mondatot nézem meg, és ami tartalmilag illik hozzá, azt választom.", "right": "A hiány előtti ÉS utáni mondatot is megnézem, és azt választom, amelyik mindkettőhöz kapcsolódik (névmás, kötőszó, időrend).", "why": "A hiányzó mondatnak két irányba kell illeszkednie. Sok rossz opció az előző mondathoz illik, de a következőnél ellentmondást vagy értelmetlen utalást okoz." },
-    { "wrong": "A témához illő mondatot választom, a névmásokkal nem foglalkozom.", "right": "Ellenőrzöm, hogy a névmások (er, sie, es, ihm, ihn) nemben és számban arra a főnévre utalnak-e, amelyre kell.", "why": "A németben a névmás nyelvtani neme sokszor egyértelműen eldönti a választ (der Hund → er, die Katzen → sie)." },
-    { "wrong": "Minden mondatot elhelyezek, mert biztosan mindegyik kell valahová.", "right": "Elfogadom, hogy egy-két mondat felesleges, és csak a biztosan illeszkedőket teszem a helyükre.", "why": "A felesleges mondatok a találgatást szűrik ki; ha egyet erőltetve elhelyezel, a helyes mondat helyét foglalod el vele." }
+    {
+      "wrong": "Csak a hiány előtti mondatot nézem meg, és ami tartalmilag illik hozzá, azt választom.",
+      "right": "A hiány előtti ÉS utáni mondatot is megnézem, és azt választom, amelyik mindkettőhöz kapcsolódik (névmás, kötőszó, időrend).",
+      "why": "A hiányzó mondatnak két irányba kell illeszkednie. Sok rossz opció az előző mondathoz illik, de a következőnél ellentmondást vagy értelmetlen utalást okoz."
+    },
+    {
+      "wrong": "A témához illő mondatot választom, a névmásokkal nem foglalkozom.",
+      "right": "Ellenőrzöm, hogy a névmások (er, sie, es, ihm, ihn) nemben és számban arra a főnévre utalnak-e, amelyre kell.",
+      "why": "A németben a névmás nyelvtani neme sokszor egyértelműen eldönti a választ (der Hund → er, die Katzen → sie)."
+    },
+    {
+      "wrong": "Minden mondatot elhelyezek, mert biztosan mindegyik kell valahová.",
+      "right": "Elfogadom, hogy egy-két mondat felesleges, és csak a biztosan illeszkedőket teszem a helyükre.",
+      "why": "A felesleges mondatok a találgatást szűrik ki; ha egyet erőltetve elhelyezel, a helyes mondat helyét foglalod el vele."
+    }
   ],
   "examTips": [
     "Mielőtt a hiányokat nézed, olvasd el a kivett mondatokat, és húzd alá bennük a névmásokat, kötőszavakat és időhatározókat – ezek mutatják, mihez kell kapcsolódniuk.",
@@ -71,18 +101,30 @@
       "kind": "choice",
       "prompt": "Lisa hat letzte Woche einen Hund aus dem Tierheim geholt. ___ Jeden Morgen geht sie jetzt eine halbe Stunde mit ihm spazieren.\n\nWelcher Satz passt in die Lücke?",
       "options": [
-        { "key": "A", "text": "Er heißt Bruno und ist drei Jahre alt." },
-        { "key": "B", "text": "Lisa wohnt in einer großen Stadt." },
-        { "key": "C", "text": "Das Tierheim ist am Wochenende geschlossen." },
-        { "key": "D", "text": "Katzen sind eigentlich ihre Lieblingstiere." }
+        {
+          "key": "A",
+          "text": "Katzen sind eigentlich ihre Lieblingstiere."
+        },
+        {
+          "key": "B",
+          "text": "Lisa wohnt in einer großen Stadt."
+        },
+        {
+          "key": "C",
+          "text": "Das Tierheim ist am Wochenende geschlossen."
+        },
+        {
+          "key": "D",
+          "text": "Er heißt Bruno und ist drei Jahre alt."
+        }
       ],
-      "answer": "A",
+      "answer": "D",
       "category": "text-structure",
-      "explanation": "Helyes: A. Az Er a kutyára utal (der Hund → er), és a következő mondat mit ihm-je is a kutyára vonatkozik – a szövegrész végig a kutyáról szól.",
+      "explanation": "Helyes: D. Az Er a kutyára utal (der Hund → er), és a következő mondat mit ihm-je is a kutyára vonatkozik – a szövegrész végig a kutyáról szól.",
       "wrongOptions": {
+        "A": "A Katzen többes szám; utána a mit ihm nem a macskákra utalhatna (mit ihnen kellene), és a téma is elkanyarodna.",
         "B": "Ha ez állna a hiányban, a mit ihm nem kapcsolódna semmihez közvetlenül előtte; a város említése megszakítja a kutyáról szóló gondolatmenetet.",
-        "C": "Ezután a mit ihm (das Tierheim → ihm) a menhelyre utalna: „a menhellyel sétál” – értelmetlen.",
-        "D": "A Katzen többes szám; utána a mit ihm nem a macskákra utalhatna (mit ihnen kellene), és a téma is elkanyarodna."
+        "C": "Ezután a mit ihm (das Tierheim → ihm) a menhelyre utalna: „a menhellyel sétál” – értelmetlen."
       }
     },
     {
@@ -90,16 +132,28 @@
       "kind": "choice",
       "prompt": "Unsere Schule hat seit Kurzem einen eigenen Schulgarten. ___ Deshalb können wir im Sommer frisches Gemüse in der Schulkantine essen.\n\nWelcher Satz passt in die Lücke?",
       "options": [
-        { "key": "A", "text": "Dort bauen die Schüler Tomaten, Salat und Gurken an." },
-        { "key": "B", "text": "Die Schule wurde im Jahr 1965 gebaut." },
-        { "key": "C", "text": "Viele Schüler essen leider nicht gern Gemüse." },
-        { "key": "D", "text": "Der Garten ist aber noch ganz leer." }
+        {
+          "key": "A",
+          "text": "Die Schule wurde im Jahr 1965 gebaut."
+        },
+        {
+          "key": "B",
+          "text": "Dort bauen die Schüler Tomaten, Salat und Gurken an."
+        },
+        {
+          "key": "C",
+          "text": "Viele Schüler essen leider nicht gern Gemüse."
+        },
+        {
+          "key": "D",
+          "text": "Der Garten ist aber noch ganz leer."
+        }
       ],
-      "answer": "A",
+      "answer": "B",
       "category": "text-structure",
-      "explanation": "Helyes: A. A Dort a kertre utal, és a mondat megadja az okot, amelyre a deshalb épül: a diákok zöldséget termesztenek → ezért van friss zöldség a menzán.",
+      "explanation": "Helyes: B. A Dort a kertre utal, és a mondat megadja az okot, amelyre a deshalb épül: a diákok zöldséget termesztenek → ezért van friss zöldség a menzán.",
       "wrongOptions": {
-        "B": "Az iskola építésének éve nem oka annak, hogy friss zöldség van a menzán – a deshalb nem kapcsolódna hozzá.",
+        "A": "Az iskola építésének éve nem oka annak, hogy friss zöldség van a menzán – a deshalb nem kapcsolódna hozzá.",
         "C": "Ez ellentétet fejezne ki, a deshalb viszont következményt vezet be; a mondatsor logikátlan lenne.",
         "D": "Ha a kert üres, nem lehet belőle zöldség – ez ellentmond a deshalb utáni mondatnak."
       }
@@ -109,10 +163,22 @@
       "kind": "choice",
       "prompt": "Zuerst wollte Ben unbedingt Medizin studieren. ___ Am Ende hat er sich für eine Ausbildung als Koch entschieden.\n\nWelcher Satz passt in die Lücke?",
       "options": [
-        { "key": "A", "text": "Dann hat er aber gemerkt, dass er lieber praktisch arbeiten möchte." },
-        { "key": "B", "text": "Seine Schwester arbeitet als Ärztin in Graz." },
-        { "key": "C", "text": "Kochen ist ein sehr anstrengender Beruf." },
-        { "key": "D", "text": "Deshalb hat er sofort mit dem Medizinstudium angefangen." }
+        {
+          "key": "A",
+          "text": "Dann hat er aber gemerkt, dass er lieber praktisch arbeiten möchte."
+        },
+        {
+          "key": "B",
+          "text": "Seine Schwester arbeitet als Ärztin in Graz."
+        },
+        {
+          "key": "C",
+          "text": "Kochen ist ein sehr anstrengender Beruf."
+        },
+        {
+          "key": "D",
+          "text": "Deshalb hat er sofort mit dem Medizinstudium angefangen."
+        }
       ],
       "answer": "A",
       "category": "text-structure",
@@ -124,5 +190,8 @@
       }
     }
   ],
-  "relatedCategories": ["cohesion", "gist"]
+  "relatedCategories": [
+    "cohesion",
+    "gist"
+  ]
 }

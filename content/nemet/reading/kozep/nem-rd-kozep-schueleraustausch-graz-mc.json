@@ -17,11 +17,21 @@
     "title": "Zwei Wochen in einer anderen Schule",
     "subtitle": "Lilla aus Szeged erzählt von ihrem Schüleraustausch in Graz",
     "blocks": [
-      { "text": "Als unsere Deutschlehrerin im Herbst fragte, wer an einem Schüleraustausch mit einer Schule in Graz teilnehmen möchte, habe ich mich sofort gemeldet. Ich lerne seit fünf Jahren Deutsch, aber ich hatte noch nie länger mit Deutschsprachigen gesprochen. Meine Eltern waren zuerst nicht begeistert, weil ich während des Austauschs zwei Wochen Unterricht in Ungarn verpassen würde. Am Ende haben sie aber Ja gesagt." },
-      { "text": "Im März war es dann so weit. Meine Gastfamilie, die Familie Hofer, holte mich am Bahnhof ab. Ihre Tochter Anna ist genauso alt wie ich und hatte im Januar schon zwei Wochen bei uns in Szeged gewohnt. Deshalb war der Anfang viel leichter, als ich gedacht hatte: Wir kannten uns schon und hatten uns viel zu erzählen." },
-      { "text": "Die Schule in Graz war ganz anders als meine. Der Unterricht begann erst um acht Uhr, und nach der sechsten Stunde war meistens Schluss. Das Mittagessen aßen die Schüler nicht in der Schule, sondern zu Hause oder in einem Café in der Nähe. Was mich am meisten überraschte: In vielen Stunden arbeiteten die Schüler in Gruppen und hielten Präsentationen. Bei uns redet meistens der Lehrer, und wir schreiben mit." },
-      { "text": "Natürlich habe ich nicht alles verstanden. Besonders im Geschichtsunterricht sprach der Lehrer so schnell, dass ich nach zehn Minuten aufgegeben habe. Aber Anna und ihre Freunde haben mir immer geholfen, und niemand hat über meine Fehler gelacht. Am Wochenende sind wir zusammen in die Berge gefahren, und ich habe zum ersten Mal in meinem Leben Schnee auf einem Berggipfel gesehen." },
-      { "text": "Nach zwei Wochen fiel mir der Abschied schwer. Ich habe gemerkt, dass ich jetzt viel freier spreche, auch wenn ich noch Fehler mache. Im Sommer kommt Anna wieder nach Ungarn, und nächstes Jahr möchte ich mich für ein ganzes Schuljahr in Österreich bewerben. Meine Eltern finden die Idee immer noch nicht gut – aber ich bin sicher, ich kann sie überzeugen." }
+      {
+        "text": "Als unsere Deutschlehrerin im Herbst fragte, wer an einem Schüleraustausch mit einer Schule in Graz teilnehmen möchte, habe ich mich sofort gemeldet. Ich lerne seit fünf Jahren Deutsch, aber ich hatte noch nie länger mit Deutschsprachigen gesprochen. Meine Eltern waren zuerst nicht begeistert, weil ich während des Austauschs zwei Wochen Unterricht in Ungarn verpassen würde. Am Ende haben sie aber Ja gesagt."
+      },
+      {
+        "text": "Im März war es dann so weit. Meine Gastfamilie, die Familie Hofer, holte mich am Bahnhof ab. Ihre Tochter Anna ist genauso alt wie ich und hatte im Januar schon zwei Wochen bei uns in Szeged gewohnt. Deshalb war der Anfang viel leichter, als ich gedacht hatte: Wir kannten uns schon und hatten uns viel zu erzählen."
+      },
+      {
+        "text": "Die Schule in Graz war ganz anders als meine. Der Unterricht begann erst um acht Uhr, und nach der sechsten Stunde war meistens Schluss. Das Mittagessen aßen die Schüler nicht in der Schule, sondern zu Hause oder in einem Café in der Nähe. Was mich am meisten überraschte: In vielen Stunden arbeiteten die Schüler in Gruppen und hielten Präsentationen. Bei uns redet meistens der Lehrer, und wir schreiben mit."
+      },
+      {
+        "text": "Natürlich habe ich nicht alles verstanden. Besonders im Geschichtsunterricht sprach der Lehrer so schnell, dass ich nach zehn Minuten aufgegeben habe. Aber Anna und ihre Freunde haben mir immer geholfen, und niemand hat über meine Fehler gelacht. Am Wochenende sind wir zusammen in die Berge gefahren, und ich habe zum ersten Mal in meinem Leben Schnee auf einem Berggipfel gesehen."
+      },
+      {
+        "text": "Nach zwei Wochen fiel mir der Abschied schwer. Ich habe gemerkt, dass ich jetzt viel freier spreche, auch wenn ich noch Fehler mache. Im Sommer kommt Anna wieder nach Ungarn, und nächstes Jahr möchte ich mich für ein ganzes Schuljahr in Österreich bewerben. Meine Eltern finden die Idee immer noch nicht gut – aber ich bin sicher, ich kann sie überzeugen."
+      }
     ]
   },
   "example": {
@@ -29,12 +39,24 @@
     "kind": "choice",
     "prompt": "Warum hat sich Lilla sofort für den Austausch gemeldet?",
     "options": [
-      { "key": "A", "text": "Weil ihre Eltern es wollten." },
-      { "key": "B", "text": "Weil sie noch nie lange mit Deutschsprachigen gesprochen hatte." },
-      { "key": "C", "text": "Weil sie Graz schon kannte." },
-      { "key": "D", "text": "Weil ihre Lehrerin es verlangte." }
+      {
+        "key": "A",
+        "text": "Weil sie noch nie lange mit Deutschsprachigen gesprochen hatte."
+      },
+      {
+        "key": "B",
+        "text": "Weil ihre Eltern es wollten."
+      },
+      {
+        "key": "C",
+        "text": "Weil sie Graz schon kannte."
+      },
+      {
+        "key": "D",
+        "text": "Weil ihre Lehrerin es verlangte."
+      }
     ],
-    "answer": "B",
+    "answer": "A",
     "category": "detail",
     "explanation": "Lilla ötödik éve tanul németül, de még soha nem beszélt hosszabban németül beszélőkkel („ich hatte noch nie länger mit Deutschsprachigen gesprochen”) – ezért jelentkezett.",
     "evidence": "ich hatte noch nie länger mit Deutschsprachigen gesprochen"
@@ -45,10 +67,22 @@
       "kind": "choice",
       "prompt": "Lillas Eltern waren am Anfang nicht begeistert, weil …",
       "options": [
-        { "key": "A", "text": "der Austausch zu teuer war." },
-        { "key": "B", "text": "Lilla zwei Wochen Schule in Ungarn verpassen würde." },
-        { "key": "C", "text": "sie die Gastfamilie nicht kannten." },
-        { "key": "D", "text": "Lilla noch zu jung war." }
+        {
+          "key": "A",
+          "text": "der Austausch zu teuer war."
+        },
+        {
+          "key": "B",
+          "text": "Lilla zwei Wochen Schule in Ungarn verpassen würde."
+        },
+        {
+          "key": "C",
+          "text": "sie die Gastfamilie nicht kannten."
+        },
+        {
+          "key": "D",
+          "text": "Lilla noch zu jung war."
+        }
       ],
       "answer": "B",
       "category": "detail",
@@ -65,19 +99,31 @@
       "kind": "choice",
       "prompt": "Der Anfang in Graz war für Lilla leicht, weil …",
       "options": [
-        { "key": "A", "text": "sie schon oft in Österreich gewesen war." },
-        { "key": "B", "text": "Anna sie schon aus Szeged kannte." },
-        { "key": "C", "text": "die Familie Hofer Ungarisch sprach." },
-        { "key": "D", "text": "sie in einem Hotel wohnte." }
+        {
+          "key": "A",
+          "text": "sie schon oft in Österreich gewesen war."
+        },
+        {
+          "key": "B",
+          "text": "sie in einem Hotel wohnte."
+        },
+        {
+          "key": "C",
+          "text": "die Familie Hofer Ungarisch sprach."
+        },
+        {
+          "key": "D",
+          "text": "Anna sie schon aus Szeged kannte."
+        }
       ],
-      "answer": "B",
+      "answer": "D",
       "category": "detail",
       "explanation": "Anna januárban már két hetet Lilláéknál lakott Szegeden, ezért már ismerték egymást („Wir kannten uns schon”) – ez tette könnyebbé a kezdetet.",
       "evidence": "hatte im Januar schon zwei Wochen bei uns in Szeged gewohnt",
       "wrongOptions": {
         "A": "A szöveg nem mondja, hogy Lilla korábban járt volna Ausztriában; a hegyi havat is először látta.",
-        "C": "A család nyelvtudásáról nincs szó.",
-        "D": "Lilla a vendéglátó családnál lakott, nem szállodában."
+        "B": "Lilla a vendéglátó családnál lakott, nem szállodában.",
+        "C": "A család nyelvtudásáról nincs szó."
       }
     },
     {
@@ -85,10 +131,22 @@
       "kind": "choice",
       "prompt": "Was war in der Grazer Schule anders als in Lillas Schule?",
       "options": [
-        { "key": "A", "text": "Der Unterricht begann früher." },
-        { "key": "B", "text": "Die Schüler aßen in der Schulkantine." },
-        { "key": "C", "text": "Die Schüler arbeiteten oft in Gruppen." },
-        { "key": "D", "text": "Der Unterricht dauerte bis zum Abend." }
+        {
+          "key": "A",
+          "text": "Der Unterricht begann früher."
+        },
+        {
+          "key": "B",
+          "text": "Die Schüler aßen in der Schulkantine."
+        },
+        {
+          "key": "C",
+          "text": "Die Schüler arbeiteten oft in Gruppen."
+        },
+        {
+          "key": "D",
+          "text": "Der Unterricht dauerte bis zum Abend."
+        }
       ],
       "answer": "C",
       "category": "detail",
@@ -105,18 +163,30 @@
       "kind": "choice",
       "prompt": "Im Geschichtsunterricht …",
       "options": [
-        { "key": "A", "text": "hat Lilla besonders viel gelernt." },
-        { "key": "B", "text": "hat der Lehrer langsam gesprochen." },
-        { "key": "C", "text": "hat Lilla nach kurzer Zeit nicht mehr mitgemacht." },
-        { "key": "D", "text": "hat die Klasse über Lilla gelacht." }
+        {
+          "key": "A",
+          "text": "hat Lilla nach kurzer Zeit nicht mehr mitgemacht."
+        },
+        {
+          "key": "B",
+          "text": "hat der Lehrer langsam gesprochen."
+        },
+        {
+          "key": "C",
+          "text": "hat Lilla besonders viel gelernt."
+        },
+        {
+          "key": "D",
+          "text": "hat die Klasse über Lilla gelacht."
+        }
       ],
-      "answer": "C",
+      "answer": "A",
       "category": "inference",
       "explanation": "A tanár olyan gyorsan beszélt, hogy Lilla tíz perc után feladta („nach zehn Minuten aufgegeben habe”), vagyis rövid idő után nem követte tovább az órát.",
       "evidence": "sprach der Lehrer so schnell, dass ich nach zehn Minuten aufgegeben habe",
       "wrongOptions": {
-        "A": "Ezen az órán épp nem értett sokat, nem itt tanult a legtöbbet.",
         "B": "A tanár gyorsan beszélt, nem lassan.",
+        "C": "Ezen az órán épp nem értett sokat, nem itt tanult a legtöbbet.",
         "D": "A szöveg kifejezetten azt mondja, hogy senki nem nevetett a hibáin."
       }
     },
@@ -125,19 +195,31 @@
       "kind": "choice",
       "prompt": "Was hat Lilla am Wochenende zum ersten Mal erlebt?",
       "options": [
-        { "key": "A", "text": "Sie ist Ski gefahren." },
-        { "key": "B", "text": "Sie hat Schnee auf einem Berg gesehen." },
-        { "key": "C", "text": "Sie ist mit dem Zug gefahren." },
-        { "key": "D", "text": "Sie hat eine Präsentation gehalten." }
+        {
+          "key": "A",
+          "text": "Sie ist Ski gefahren."
+        },
+        {
+          "key": "B",
+          "text": "Sie hat eine Präsentation gehalten."
+        },
+        {
+          "key": "C",
+          "text": "Sie ist mit dem Zug gefahren."
+        },
+        {
+          "key": "D",
+          "text": "Sie hat Schnee auf einem Berg gesehen."
+        }
       ],
-      "answer": "B",
+      "answer": "D",
       "category": "detail",
       "explanation": "Életében először látott havat egy hegycsúcson („zum ersten Mal in meinem Leben Schnee auf einem Berggipfel gesehen”).",
       "evidence": "ich habe zum ersten Mal in meinem Leben Schnee auf einem Berggipfel gesehen",
       "wrongOptions": {
         "A": "Síelésről nincs szó, csak arról, hogy a hegyekbe mentek.",
-        "C": "A vonatozást nem említi a szöveg első élményként; a pályaudvarra érkezés nem a hétvégén volt.",
-        "D": "A prezentációkat a grazi diákok tartották, nem Lilla."
+        "B": "A prezentációkat a grazi diákok tartották, nem Lilla.",
+        "C": "A vonatozást nem említi a szöveg első élményként; a pályaudvarra érkezés nem a hétvégén volt."
       }
     },
     {
@@ -145,19 +227,31 @@
       "kind": "choice",
       "prompt": "Was möchte Lilla im nächsten Jahr machen?",
       "options": [
-        { "key": "A", "text": "Anna in Graz besuchen." },
-        { "key": "B", "text": "Ein ganzes Schuljahr in Österreich verbringen." },
-        { "key": "C", "text": "Mit dem Deutschlernen aufhören." },
-        { "key": "D", "text": "Ihre Eltern nach Österreich einladen." }
+        {
+          "key": "A",
+          "text": "Anna in Graz besuchen."
+        },
+        {
+          "key": "B",
+          "text": "Ihre Eltern nach Österreich einladen."
+        },
+        {
+          "key": "C",
+          "text": "Mit dem Deutschlernen aufhören."
+        },
+        {
+          "key": "D",
+          "text": "Ein ganzes Schuljahr in Österreich verbringen."
+        }
       ],
-      "answer": "B",
+      "answer": "D",
       "category": "detail",
       "explanation": "Jövőre egy egész tanévre szeretne jelentkezni Ausztriába („für ein ganzes Schuljahr in Österreich bewerben”).",
       "evidence": "nächstes Jahr möchte ich mich für ein ganzes Schuljahr in Österreich bewerben",
       "wrongOptions": {
         "A": "Nyáron Anna jön Magyarországra; grazi látogatásról nincs szó.",
-        "C": "Épp ellenkezőleg: tovább akar fejlődni németből.",
-        "D": "A szülők meghívásáról nem ír."
+        "B": "A szülők meghívásáról nem ír.",
+        "C": "Épp ellenkezőleg: tovább akar fejlődni németből."
       }
     },
     {
@@ -165,10 +259,22 @@
       "kind": "choice",
       "prompt": "Wie denken Lillas Eltern jetzt über ihre Pläne?",
       "options": [
-        { "key": "A", "text": "Sie sind begeistert." },
-        { "key": "B", "text": "Sie finden die Idee immer noch nicht gut." },
-        { "key": "C", "text": "Sie haben schon zugestimmt." },
-        { "key": "D", "text": "Sie wissen noch nichts davon." }
+        {
+          "key": "A",
+          "text": "Sie sind begeistert."
+        },
+        {
+          "key": "B",
+          "text": "Sie finden die Idee immer noch nicht gut."
+        },
+        {
+          "key": "C",
+          "text": "Sie haben schon zugestimmt."
+        },
+        {
+          "key": "D",
+          "text": "Sie wissen noch nichts davon."
+        }
       ],
       "answer": "B",
       "category": "attitude",
@@ -182,18 +288,54 @@
     }
   ],
   "glossary": [
-    { "term": "teilnehmen an", "meaning": "részt vesz valamiben" },
-    { "term": "melden (sich)", "meaning": "jelentkezik" },
-    { "term": "verpassen", "meaning": "elmulaszt, kihagy" },
-    { "term": "begeistert", "meaning": "lelkes" },
-    { "term": "die Gastfamilie", "meaning": "vendéglátó család" },
-    { "term": "holte ab (abholen)", "meaning": "elhoz, kimegy valakiért" },
-    { "term": "überraschen", "meaning": "meglep" },
-    { "term": "aufgeben", "meaning": "felad (pl. egy próbálkozást)" },
-    { "term": "der Berggipfel", "meaning": "hegycsúcs" },
-    { "term": "der Abschied", "meaning": "búcsú" },
-    { "term": "bewerben (sich)", "meaning": "jelentkezik, pályázik" },
-    { "term": "überzeugen", "meaning": "meggyőz" }
+    {
+      "term": "teilnehmen an",
+      "meaning": "részt vesz valamiben"
+    },
+    {
+      "term": "melden (sich)",
+      "meaning": "jelentkezik"
+    },
+    {
+      "term": "verpassen",
+      "meaning": "elmulaszt, kihagy"
+    },
+    {
+      "term": "begeistert",
+      "meaning": "lelkes"
+    },
+    {
+      "term": "die Gastfamilie",
+      "meaning": "vendéglátó család"
+    },
+    {
+      "term": "holte ab (abholen)",
+      "meaning": "elhoz, kimegy valakiért"
+    },
+    {
+      "term": "überraschen",
+      "meaning": "meglep"
+    },
+    {
+      "term": "aufgeben",
+      "meaning": "felad (pl. egy próbálkozást)"
+    },
+    {
+      "term": "der Berggipfel",
+      "meaning": "hegycsúcs"
+    },
+    {
+      "term": "der Abschied",
+      "meaning": "búcsú"
+    },
+    {
+      "term": "bewerben (sich)",
+      "meaning": "jelentkezik, pályázik"
+    },
+    {
+      "term": "überzeugen",
+      "meaning": "meggyőz"
+    }
   ],
   "suggestedMinutes": 15
 }

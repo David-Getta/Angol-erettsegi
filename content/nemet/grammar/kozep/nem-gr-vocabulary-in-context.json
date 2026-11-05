@@ -18,7 +18,10 @@
       "explanation": "Először döntsd el, milyen szófajú az ismeretlen szó: névelő vagy nagybetű → főnév; a második helyen vagy a mondat végén álló ragozott/igenévi alak → ige; névelő és főnév között, végződéssel → melléknév. Ebből már sokat tudsz: ha főnév, egy dolog vagy fogalom; ha melléknév, tulajdonság; és a mondat többi része megmutatja, milyen irányban keress.",
       "emeltOnly": false,
       "examples": [
-        { "en": "Der Hund hat den ganzen Kuchen verschlungen.", "note": "A verschlungen a mondat végén áll (Partizip II), és a kutya meg a torta kapcsolata alapján: mohón megette, felfalta." }
+        {
+          "en": "Der Hund hat den ganzen Kuchen verschlungen.",
+          "note": "A verschlungen a mondat végén áll (Partizip II), és a kutya meg a torta kapcsolata alapján: mohón megette, felfalta."
+        }
       ]
     },
     {
@@ -26,8 +29,14 @@
       "explanation": "A német összetett szavak tagjai gyakran ismerősek: der Kühlschrank = kühl (hűvös) + Schrank (szekrény) → hűtőszekrény; die Umweltschutzorganisation = Umwelt + Schutz + Organisation → környezetvédelmi szervezet. A képzők is segítenek: -los (-talan), -bar (-ható), un- (nem, ellentét), -ung (főnév igéből), -lich/-ig (melléknév). A jelentést mindig az utolsó tag adja.",
       "emeltOnly": false,
       "examples": [
-        { "en": "Das Wasser im See ist leider nicht trinkbar.", "note": "trink- (iszik) + -bar (-ható) → iható." },
-        { "en": "Die Fahrt war kostenlos.", "note": "Kosten (költség) + -los (-talan) → ingyenes." }
+        {
+          "en": "Das Wasser im See ist leider nicht trinkbar.",
+          "note": "trink- (iszik) + -bar (-ható) → iható."
+        },
+        {
+          "en": "Die Fahrt war kostenlos.",
+          "note": "Kosten (költség) + -los (-talan) → ingyenes."
+        }
       ]
     },
     {
@@ -35,8 +44,14 @@
       "explanation": "A szöveg gyakran maga magyarázza a nehezebb szót: also, das heißt (d. h.), mit anderen Worten, zum Beispiel (z. B.), wie, nämlich. Ellentét is segíthet: nicht …, sondern …; aber; im Gegensatz zu … Olvasd el a szó előtti és utáni mondatot is.",
       "emeltOnly": false,
       "examples": [
-        { "en": "Mein Opa ist sehr sparsam, das heißt, er gibt nur Geld aus, wenn es wirklich nötig ist.", "note": "A das heißt utáni rész magyarázza: sparsam = takarékos." },
-        { "en": "Das Zimmer war nicht geräumig, sondern eng und dunkel.", "note": "Az eng (szűk) ellentéte: geräumig = tágas." }
+        {
+          "en": "Mein Opa ist sehr sparsam, das heißt, er gibt nur Geld aus, wenn es wirklich nötig ist.",
+          "note": "A das heißt utáni rész magyarázza: sparsam = takarékos."
+        },
+        {
+          "en": "Das Zimmer war nicht geräumig, sondern eng und dunkel.",
+          "note": "Az eng (szűk) ellentéte: geräumig = tágas."
+        }
       ]
     },
     {
@@ -44,7 +59,10 @@
       "explanation": "Ha opciók közül kell választani, tedd be mindegyiket az ismeretlen szó helyére, és olvasd el a mondatot (és az előtte-utána álló mondatot) így. Az a jó, amelyik a teljes szövegkörnyezetben értelmes – nem az, amelyik a szó általános jelentéséhez a legközelebb áll.",
       "emeltOnly": false,
       "examples": [
-        { "en": "Nach dem Marathon war ich total erschöpft und wollte nur noch schlafen.", "note": "Próba: glücklich? hungrig? sehr müde? – a nur noch schlafen alapján: erschöpft = kimerült." }
+        {
+          "en": "Nach dem Marathon war ich total erschöpft und wollte nur noch schlafen.",
+          "note": "Próba: glücklich? hungrig? sehr müde? – a nur noch schlafen alapján: erschöpft = kimerült."
+        }
       ]
     },
     {
@@ -52,14 +70,29 @@
       "explanation": "Sok német szó ismerős az angolból vagy a magyarból (die Information, das Projekt, die Technik), és ezek általában ugyanazt jelentik. A hamis barátoknál azonban (bekommen = kap, aktuell = időszerű, eventuell = esetleg, sensibel = érzékeny, das Gift = méreg) a hasonlóság félrevezet. Ha a megszokott jelentés nem illik a mondatba, ellenőrizd a szövegkörnyezettel.",
       "emeltOnly": false,
       "examples": [
-        { "en": "Wir kommen eventuell etwas später, das hängt vom Verkehr ab.", "note": "eventuell ≠ eventually (végül); a das hängt vom Verkehr ab alapján: esetleg, lehet, hogy." }
+        {
+          "en": "Wir kommen eventuell etwas später, das hängt vom Verkehr ab.",
+          "note": "eventuell ≠ eventually (végül); a das hängt vom Verkehr ab alapján: esetleg, lehet, hogy."
+        }
       ]
     }
   ],
   "commonMistakes": [
-    { "wrong": "Megakadok az első ismeretlen szónál, és nem olvasok tovább.", "right": "Továbbolvasok: a következő mondat gyakran megmagyarázza vagy példával illusztrálja a szót.", "why": "A német szövegekben sok a magyarázó fordulat (das heißt, also, zum Beispiel); ha megállsz, éppen a segítséget hagyod ki." },
-    { "wrong": "Az angolból ismerős jelentést választom: eventuell = végül.", "right": "Ellenőrzöm a szövegkörnyezettel: eventuell = esetleg (mert a mondat bizonytalanságot fejez ki).", "why": "A német–angol hamis barátok tipikus csapdák; a vizsgafeladatok szívesen kérdeznek rájuk." },
-    { "wrong": "Egy hosszú összetett szót ismeretlennek tekintek, és kihagyom.", "right": "Szétbontom a tagjaira (Umwelt + schutz + organisation), és a tagokból rakom össze a jelentést.", "why": "A német összetett szavak tagjai többnyire ismert alapszavak; a jelentést az utolsó tag adja, az előtte álló pontosítja." }
+    {
+      "wrong": "Megakadok az első ismeretlen szónál, és nem olvasok tovább.",
+      "right": "Továbbolvasok: a következő mondat gyakran megmagyarázza vagy példával illusztrálja a szót.",
+      "why": "A német szövegekben sok a magyarázó fordulat (das heißt, also, zum Beispiel); ha megállsz, éppen a segítséget hagyod ki."
+    },
+    {
+      "wrong": "Az angolból ismerős jelentést választom: eventuell = végül.",
+      "right": "Ellenőrzöm a szövegkörnyezettel: eventuell = esetleg (mert a mondat bizonytalanságot fejez ki).",
+      "why": "A német–angol hamis barátok tipikus csapdák; a vizsgafeladatok szívesen kérdeznek rájuk."
+    },
+    {
+      "wrong": "Egy hosszú összetett szót ismeretlennek tekintek, és kihagyom.",
+      "right": "Szétbontom a tagjaira (Umwelt + schutz + organisation), és a tagokból rakom össze a jelentést.",
+      "why": "A német összetett szavak tagjai többnyire ismert alapszavak; a jelentést az utolsó tag adja, az előtte álló pontosítja."
+    }
   ],
   "examTips": [
     "Ha egy szó jelentésére kérdeznek, keresd meg a szót a szövegben, és olvasd el a teljes mondatot, valamint az előtte és utána állót is – a jelentést a szövegkörnyezet dönti el.",
@@ -72,19 +105,31 @@
       "kind": "choice",
       "prompt": "Weil die Straßen wegen des Schnees spiegelglatt waren, blieben viele Autofahrer lieber zu Hause. Wer trotzdem fuhr, musste sehr langsam und vorsichtig fahren.\n\nWas bedeutet „spiegelglatt” im Text?",
       "options": [
-        { "key": "A", "text": "sehr schmutzig" },
-        { "key": "B", "text": "sehr rutschig" },
-        { "key": "C", "text": "sehr breit" },
-        { "key": "D", "text": "sehr laut" }
+        {
+          "key": "A",
+          "text": "sehr schmutzig"
+        },
+        {
+          "key": "B",
+          "text": "sehr laut"
+        },
+        {
+          "key": "C",
+          "text": "sehr breit"
+        },
+        {
+          "key": "D",
+          "text": "sehr rutschig"
+        }
       ],
-      "answer": "B",
+      "answer": "D",
       "category": "vocabulary-in-context",
       "evidence": "Wer trotzdem fuhr, musste sehr langsam und vorsichtig fahren.",
-      "explanation": "Helyes: B. A szó tagjai: Spiegel (tükör) + glatt (sima) → tükörsima. A hó miatt az autósok otthon maradtak, akik mégis vezettek, nagyon lassan és óvatosan mentek – az út tehát nagyon csúszós volt.",
+      "explanation": "Helyes: D. A szó tagjai: Spiegel (tükör) + glatt (sima) → tükörsima. A hó miatt az autósok otthon maradtak, akik mégis vezettek, nagyon lassan és óvatosan mentek – az út tehát nagyon csúszós volt.",
       "wrongOptions": {
         "A": "A piszok nem indokolná, hogy az autósok otthon maradjanak és nagyon óvatosan vezessenek; a glatt (sima) sem erre utal.",
-        "C": "A széles út nem lenne ok az otthon maradásra – éppen ellenkezőleg.",
-        "D": "A zajhoz a szövegben semmi nem kapcsolódik, és a glatt (sima) sem utal rá."
+        "B": "A zajhoz a szövegben semmi nem kapcsolódik, és a glatt (sima) sem utal rá.",
+        "C": "A széles út nem lenne ok az otthon maradásra – éppen ellenkezőleg."
       }
     },
     {
@@ -92,10 +137,22 @@
       "kind": "choice",
       "prompt": "Mein Onkel ist ein richtiger Morgenmensch: Er steht jeden Tag um fünf Uhr auf, joggt eine Stunde und ist schon voller Energie, wenn wir anderen noch schlafen.\n\nWas ist ein „Morgenmensch”?",
       "options": [
-        { "key": "A", "text": "Jemand, der morgens gern früh aufsteht und aktiv ist" },
-        { "key": "B", "text": "Jemand, der morgens schlechte Laune hat" },
-        { "key": "C", "text": "Jemand, der nur am Morgen arbeitet" },
-        { "key": "D", "text": "Jemand, der sehr lange schläft" }
+        {
+          "key": "A",
+          "text": "Jemand, der morgens gern früh aufsteht und aktiv ist"
+        },
+        {
+          "key": "B",
+          "text": "Jemand, der morgens schlechte Laune hat"
+        },
+        {
+          "key": "C",
+          "text": "Jemand, der nur am Morgen arbeitet"
+        },
+        {
+          "key": "D",
+          "text": "Jemand, der sehr lange schläft"
+        }
       ],
       "answer": "A",
       "category": "vocabulary-in-context",
@@ -112,21 +169,37 @@
       "kind": "choice",
       "prompt": "Das neue Smartphone ist zwar teuer, aber es ist wasserdicht: Man kann damit sogar im Schwimmbad Fotos machen, ohne dass es kaputtgeht.\n\nWas bedeutet „wasserdicht”?",
       "options": [
-        { "key": "A", "text": "Es braucht viel Wasser." },
-        { "key": "B", "text": "Es lässt kein Wasser hinein." },
-        { "key": "C", "text": "Man darf es nur im Schwimmbad benutzen." },
-        { "key": "D", "text": "Es ist sehr dünn." }
+        {
+          "key": "A",
+          "text": "Es braucht viel Wasser."
+        },
+        {
+          "key": "B",
+          "text": "Man darf es nur im Schwimmbad benutzen."
+        },
+        {
+          "key": "C",
+          "text": "Es lässt kein Wasser hinein."
+        },
+        {
+          "key": "D",
+          "text": "Es ist sehr dünn."
+        }
       ],
-      "answer": "B",
+      "answer": "C",
       "category": "vocabulary-in-context",
       "evidence": "Man kann damit sogar im Schwimmbad Fotos machen, ohne dass es kaputtgeht.",
-      "explanation": "Helyes: B. Wasser (víz) + dicht (zárt, tömített) → vízálló. A kettőspont utáni magyarázat megerősíti: az uszodában is lehet vele fotózni anélkül, hogy tönkremenne – tehát nem enged be vizet.",
+      "explanation": "Helyes: C. Wasser (víz) + dicht (zárt, tömített) → vízálló. A kettőspont utáni magyarázat megerősíti: az uszodában is lehet vele fotózni anélkül, hogy tönkremenne – tehát nem enged be vizet.",
       "wrongOptions": {
         "A": "A telefonnak nincs szüksége vízre; a dicht (zárt) éppen azt jelenti, hogy a víz nem jut be.",
-        "C": "Az uszoda csak példa (sogar = még ott is), nem korlátozás.",
+        "B": "Az uszoda csak példa (sogar = még ott is), nem korlátozás.",
         "D": "A vastagságról a szöveg nem beszél."
       }
     }
   ],
-  "relatedCategories": ["word-formation", "false-friend", "detail"]
+  "relatedCategories": [
+    "word-formation",
+    "false-friend",
+    "detail"
+  ]
 }
