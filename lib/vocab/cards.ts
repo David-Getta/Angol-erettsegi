@@ -393,10 +393,10 @@ export const CompletionsSchema = z.object({
 /** Applies exchange/vocab/completions.json (written by /szokincs) and archives it. */
 export function importVocabCompletions(): { applied: number; errors: string[] } {
   const file = vocabExchange.completions();
-  if (!fs.existsSync(file)) return { applied: 0, errors: [] };
+  if (!fs.existsSync(/*turbopackIgnore: true*/ file)) return { applied: 0, errors: [] };
   let parsed;
   try {
-    parsed = CompletionsSchema.safeParse(JSON.parse(fs.readFileSync(file, "utf8")));
+    parsed = CompletionsSchema.safeParse(JSON.parse(fs.readFileSync(/*turbopackIgnore: true*/ file, "utf8")));
   } catch (e) {
     return { applied: 0, errors: [`Hibás JSON: ${(e as Error).message}`] };
   }

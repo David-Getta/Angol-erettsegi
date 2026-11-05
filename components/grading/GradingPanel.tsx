@@ -3,14 +3,14 @@
 import { useState, useTransition } from "react";
 import { useRouter } from "next/navigation";
 import { t } from "@/lib/i18n/hu";
-import { gradingPromptAction, pasteFeedbackAction } from "@/app/actions-grading";
+import { pasteFeedbackAction } from "@/app/actions-grading";
 import { CommandTip } from "../CommandTip";
 import { CopyButton } from "../CopyButton";
 import { ImportButton } from "./ImportButton";
 import { btn } from "../ui";
 
 /** Both ways of getting feedback for a pending submission. */
-export function GradingPanel({ submissionId }: { submissionId: string }) {
+export function GradingPanel({ submissionId, prompt }: { submissionId: string; prompt: string }) {
   const [text, setText] = useState("");
   const [errors, setErrors] = useState<string[]>([]);
   const [pending, start] = useTransition();
@@ -31,7 +31,7 @@ export function GradingPanel({ submissionId }: { submissionId: string }) {
         <h3 className="font-semibold">{t.grading.way2Title}</h3>
         <p className="mt-1 text-sm text-muted">{t.grading.way2}</p>
         <div className="mt-2">
-          <CopyButton variant="secondary" label={t.grading.copyPrompt} getText={() => gradingPromptAction(submissionId)} testId="copy-prompt" />
+          <CopyButton variant="secondary" label={t.grading.copyPrompt} text={prompt} testId="copy-prompt" />
         </div>
         <label className="mt-3 block text-sm font-medium">
           {t.grading.pasteLabel}

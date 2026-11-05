@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { getSubmission, versionsOf, rubricRefFor } from "@/lib/submissions";
+import { getSubmission, versionsOf, rubricRefFor, gradingPromptFor } from "@/lib/submissions";
 import { getContent } from "@/lib/tasks";
 import type { Level, SpeakingTask, WritingTask } from "@/lib/content/schema";
 import type { Feedback } from "@/lib/exchange/schema";
@@ -89,7 +89,7 @@ export function SubmissionDetail({ id, kind }: { id: string; kind: "writing" | "
               {sub.text}
             </div>
           </Card>
-          <GradingPanel submissionId={sub.id} />
+          <GradingPanel submissionId={sub.id} prompt={gradingPromptFor(sub)} />
         </div>
       ) : (
         <>
