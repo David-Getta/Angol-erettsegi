@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useMemo, useState, useTransition } from "react";
+import { useEffect, useMemo, useRef, useState, useTransition } from "react";
 import { useRouter } from "next/navigation";
 import Link from "next/link";
 import type { WritingTask } from "@/lib/content/schema";
@@ -22,6 +22,7 @@ export function WritingEditor({
   onSubmitted,
   hideModeSwitch,
   limitSecOverride,
+  symbols = [],
 }: {
   /** URL of the part (e.g. /iras) – submissions open under <base>/beadas/<id>. */
   base: string;
@@ -33,8 +34,22 @@ export function WritingEditor({
   onSubmitted?: (id: string) => void;
   hideModeSwitch?: boolean;
   limitSecOverride?: number | null;
+  /** Characters offered above the editor (the subject's `symbols`). */
+  symbols?: string[];
 }) {
   const contentLang = useContentLang();
+  const areaRef = useRef<HTMLTextAreaElement>(null);
+  const insertSymbol = (sym: string) => {
+    const el = areaRef.current;
+    const start = el?.selectionStart ?? text.length;
+    const end = el?.selectionEnd ?? text.length;
+    setText(text.slice(0, start) + sym + text.slice(end));
+    requestAnimationFrame(() => {
+      if (!el) return;
+      el.focus();
+      el.selectionStart = el.selectionEnd = start + sym.length;
+    });
+  };
   const draftKey = `draft:${task.id}:${parent?.id ?? "new"}`;
   const [text, setText] = useState(parent?.text ?? "");
   const [checks, setChecks] = useState<Record<string, boolean>>({});
@@ -172,7 +187,24 @@ export function WritingEditor({
           {savedAt && mode !== "mock" && <span className="text-xs text-muted">{t.writing.draftSaved}</span>}
         </div>
         {exam && <p className="text-xs text-muted">{t.writing.spellcheckOff}</p>}
+        {symbols.length > 0 && (
+          <div className="flex flex-wrap items-center gap-1" data-testid="symbol-bar">
+            <span className="mr-1 text-xs text-muted">{t.writing.symbols}</span>
+            {symbols.map((sym) => (
+              <button
+                key={sym}
+                type="button"
+                onMouseDown={(e) => e.preventDefault()}
+                onClick={() => insertSymbol(sym)}
+                className="min-w-8 rounded-md border border-border bg-surface px-2 py-0.5 font-reading text-[15px] hover:bg-surface-2"
+              >
+                {sym}
+              </button>
+            ))}
+          </div>
+        )}
         <textarea lang={contentLang}
+          ref={areaRef}
           data-testid="writing-editor"
           value={text}
           onChange={(e) => setText(e.target.value)}

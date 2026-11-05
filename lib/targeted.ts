@@ -4,7 +4,7 @@ import { errors, itemAttempts, tasks } from "@/lib/db/schema";
 import type { Item, Level, ObjectiveTask } from "@/lib/content/schema";
 import { itemContext } from "@/lib/content/text";
 import { checkItem } from "@/lib/scoring/check";
-import { acceptNearMiss } from "@/lib/attempts";
+import { checkOptionsFor } from "@/lib/attempts";
 import { logActivity } from "@/lib/activity";
 import { getObjective } from "@/lib/tasks";
 import { examConfig } from "@/lib/exam/config";
@@ -132,7 +132,7 @@ export function checkTargetedItem(key: string, given: string) {
   const task = getObjective(taskId!);
   const item = task?.items.find((i) => i.id === itemId);
   if (!task || !item) throw new Error("Ismeretlen item.");
-  const r = checkItem(task, item, given, { acceptNearMiss: acceptNearMiss(task.section) });
+  const r = checkItem(task, item, given, checkOptionsFor(task));
   const db = getDb();
   db.insert(itemAttempts)
     .values({ subject: task.subject, taskId: task.id, itemId: item.id, category: item.category, section: task.section, correct: r.correct, answer: given, mode: "targeted", createdAt: new Date() })

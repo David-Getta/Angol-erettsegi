@@ -17,6 +17,8 @@ export type RunnerProps = {
   timeLimitSec: number | null;
   categoryNames: Record<string, string>;
   acceptNearMiss: boolean;
+  /** Hungarian number notation for numeric answers (non-language subjects). */
+  decimalComma?: boolean;
   backHref: string;
   /** Rendered above the task (e.g. the listening player). */
   before?: (ctx: { finished: boolean; running: boolean }) => ReactNode;
@@ -69,11 +71,11 @@ export function PracticeRunner(props: RunnerProps) {
       if (!item || locked[id]) return;
       const v = value ?? answers[id] ?? "";
       if (!v.trim()) return;
-      const r = checkItem(task, item, v, { acceptNearMiss: props.acceptNearMiss });
+      const r = checkItem(task, item, v, { acceptNearMiss: props.acceptNearMiss, decimalComma: props.decimalComma });
       setResults((prev) => ({ ...prev, [id]: r }));
       setLocked((prev) => ({ ...prev, [id]: true }));
     },
-    [answers, itemById, locked, props.acceptNearMiss, task],
+    [answers, itemById, locked, props.acceptNearMiss, props.decimalComma, task],
   );
 
   const onAnswer = useCallback(

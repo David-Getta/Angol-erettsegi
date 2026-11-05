@@ -7,7 +7,7 @@ import { examConfig } from "@/lib/exam/config";
 import { logObjectiveErrors } from "@/lib/errors/log";
 import { logActivity } from "@/lib/activity";
 import { getObjective } from "@/lib/tasks";
-import { currentSubject } from "@/lib/exam/config";
+import { currentSubject, isSubject, subject } from "@/lib/exam/config";
 
 export type AttemptMode = "practice" | "exam" | "mock" | "diagnostic";
 
@@ -15,8 +15,17 @@ export function acceptNearMiss(section: string): boolean {
   return (examConfig.app().textAnswers.acceptNearMissIn as string[]).includes(section);
 }
 
+/** Hungarian number notation (decimal comma) everywhere except in the foreign-language subjects. */
+export function decimalComma(subjectId: string = currentSubject()): boolean {
+  return isSubject(subjectId) ? !subject(subjectId).language : false;
+}
+
+export function checkOptionsFor(task: Pick<ObjectiveTask, "section" | "subject">) {
+  return { acceptNearMiss: acceptNearMiss(task.section), decimalComma: decimalComma(task.subject) };
+}
+
 export function scoreObjective(task: ObjectiveTask, answers: Record<string, string>): TaskResult {
-  return scoreTask(task, answers, { acceptNearMiss: acceptNearMiss(task.section) });
+  return scoreTask(task, answers, checkOptionsFor(task));
 }
 
 /**

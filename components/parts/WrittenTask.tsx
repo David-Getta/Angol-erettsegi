@@ -43,6 +43,7 @@ export function WrittenTask({ part, id, sp }: { part: ExamPart; id: string; sp: 
         mode={mode}
         parent={parent && parent.taskId === task.id ? { id: parent.id, text: parent.text, version: parent.version } : null}
         examMinutes={rt?.suggestedMinutes ?? task.suggestedMinutes}
+        symbols={examConfig.subject().symbols}
       />
       {task.modelAnswer && mode === "practice" && (
         <div className="mt-6">

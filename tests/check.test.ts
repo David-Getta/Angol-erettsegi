@@ -103,3 +103,20 @@ describe("thousands separators", () => {
     expect(normalizeForCheck("2.5 km")).toBe("2.5 km");
   });
 });
+
+describe("Hungarian number notation (non-language subjects)", () => {
+  it("treats a decimal comma and a decimal dot as the same, and only spaces as thousands separators", async () => {
+    const { normalizeForCheck, checkItem } = await import("@/lib/scoring/check");
+    const hu = { decimalComma: true };
+    expect(normalizeForCheck("0,5", hu)).toBe(normalizeForCheck("0.5", hu));
+    expect(normalizeForCheck("3,14", hu)).toBe("3.14");
+    expect(normalizeForCheck("1,125", hu)).toBe("1.125");
+    expect(normalizeForCheck("1,125", hu)).not.toBe(normalizeForCheck("1125", hu));
+    expect(normalizeForCheck("1 000 000", hu)).toBe("1000000");
+    const item = { id: "1", kind: "text" as const, answer: ["2,5"], category: "szamolasi-hiba", explanation: "x", points: 1 };
+    expect(checkItem({ options: undefined }, item, "2.5", hu).correct).toBe(true);
+    expect(checkItem({ options: undefined }, item, "25", hu).correct).toBe(false);
+    // English keeps the comma as a thousands separator
+    expect(normalizeForCheck("5,000")).toBe("5000");
+  });
+});

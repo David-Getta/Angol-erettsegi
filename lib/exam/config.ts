@@ -47,6 +47,8 @@ export const SubjectSchema = z.object({
   speechLang: z.string().regex(/^[a-z]{2}-[A-Z]{2}$/).default("hu-HU"),
   /** Language subjects: the name of the language in Hungarian ("angol"), used in card-type labels. */
   languageName: z.string().optional(),
+  /** Characters offered above the answer editor (formulas, Hungarian quotation marks …). */
+  symbols: z.array(z.string().min(1).max(4)).default([]),
   available: z.boolean().default(true),
   defaultLevel: LevelSchema.default("kozep"),
   defaultExamDate: z.string().regex(/^\d{4}-\d{2}-\d{2}$/),

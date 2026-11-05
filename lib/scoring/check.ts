@@ -96,10 +96,23 @@ export function joinThousands(s: string): string {
   return out;
 }
 
-/** Normalization used when checking an answer: normalizeAnswer + numbers as digits, thousands separators dropped. */
-export function normalizeForCheck(raw: string): string {
+/**
+ * Normalization used when checking an answer: normalizeAnswer + numbers as digits, thousands separators dropped.
+ * `decimalComma` (Hungarian notation, non-language subjects): a comma or a dot between digits is a decimal mark
+ * (0,5 = 0.5) and only spaces separate thousands (1 000 000).
+ */
+export function normalizeForCheck(raw: string, opts: { decimalComma?: boolean } = {}): string {
   const s = normalizeAnswer(raw);
-  return s === CORRECT_MARKER ? s : joinThousands(numberWordsToDigits(s));
+  if (s === CORRECT_MARKER) return s;
+  const n = numberWordsToDigits(s);
+  if (!opts.decimalComma) return joinThousands(n);
+  let out = n.replace(/(\d),(\d)/g, "$1.$2");
+  let prev = "";
+  while (out !== prev) {
+    prev = out;
+    out = out.replace(/(\d) (\d{3})(?!\d)/g, "$1$2");
+  }
+  return out;
 }
 
 /** Classic Levenshtein distance (small strings only). */
@@ -144,6 +157,8 @@ export type ItemResult = {
 export type CheckOptions = {
   /** Count near misses (typos) as correct. Default false (exam behaviour). */
   acceptNearMiss?: boolean;
+  /** Hungarian number notation (non-language subjects): 0,5 = 0.5, thousands only with spaces. */
+  decimalComma?: boolean;
 };
 
 function optionLabel(task: Pick<ObjectiveTask, "options">, item: Item, key: string): string {
@@ -163,8 +178,9 @@ export function checkItem(
   const base = { itemId: item.id, given, maxPoints, category: item.category };
 
   if (item.kind === "text") {
-    const g = normalizeForCheck(given);
-    const accepted = item.answer.map(normalizeForCheck);
+    const norm = { decimalComma: opts.decimalComma };
+    const g = normalizeForCheck(given, norm);
+    const accepted = item.answer.map((a) => normalizeForCheck(a, norm));
     const expected = item.answer[0]!;
     let correct = g.length > 0 && accepted.includes(g);
     let near = false;

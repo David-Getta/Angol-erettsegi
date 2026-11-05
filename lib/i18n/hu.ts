@@ -252,6 +252,7 @@ export const t = {
     wordLimit: "Szóhatár",
     register: { informal: "Informális", "semi-formal": "Félhivatalos", formal: "Hivatalos" } as Record<string, string>,
     editorPlaceholder: "Írd ide a szöveged (vagy a megoldásod)…",
+    symbols: "Jelek:",
     wordCount: (n: number) => `${n} szó`,
     tooShort: "kevesebb a szóhatárnál",
     tooLong: "több a szóhatárnál",

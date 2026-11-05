@@ -3,6 +3,7 @@ import { getDb } from "@/lib/db/client";
 import { errors, tasks } from "@/lib/db/schema";
 import { examConfig, type ErrorCategory } from "@/lib/exam/config";
 import { checkItem, type ItemResult } from "@/lib/scoring/check";
+import { decimalComma } from "@/lib/attempts";
 import type { GrammarLesson } from "@/lib/content/schema";
 import { getContent } from "@/lib/tasks";
 import { logActivity } from "@/lib/activity";
@@ -89,5 +90,5 @@ export function checkLessonItem(category: string, itemId: string, answer: string
   const item = lesson?.practice.find((i) => i.id === itemId);
   if (!lesson || !item) return null;
   if (seconds > 0) logActivity("grammar", Math.min(seconds, 600));
-  return checkItem({ options: undefined }, item, answer);
+  return checkItem({ options: undefined }, item, answer, { decimalComma: decimalComma() });
 }

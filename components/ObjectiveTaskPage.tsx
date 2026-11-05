@@ -3,7 +3,7 @@ import { notFound } from "next/navigation";
 import { getTaskRow } from "@/lib/tasks";
 import type { ObjectiveSection, ObjectiveTask } from "@/lib/content/schema";
 import { topicName, taskTypeName, labelMaps, levelStructure, partName } from "@/lib/exam/config";
-import { acceptNearMiss } from "@/lib/attempts";
+import { acceptNearMiss, decimalComma } from "@/lib/attempts";
 import { getSettings } from "@/lib/settings";
 import { t } from "@/lib/i18n/hu";
 import { Badge, SourceBadge, btn } from "./ui";
@@ -24,6 +24,7 @@ export function ObjectiveTaskPage({ id, section, base, mode }: { id: string; sec
     timeLimitSec: examSecondsFor(section, task.level, task.suggestedMinutes),
     categoryNames: labels.categories,
     acceptNearMiss: acceptNearMiss(section),
+    decimalComma: decimalComma(task.subject),
     backHref: base,
     wordCards: section !== "listening",
   };

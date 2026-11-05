@@ -37,7 +37,7 @@ export function ReviewSession({ initial, ttsRate, language = true, speechLang = 
   const total = initial.length;
 
   const answerTerm = card && card.type !== "en-hu";
-  const accepted = card ? (card.type === "fix" ? card.front.split(" / ") : [card.front]).map(normalizeForCheck) : [];
+  const accepted = card ? (card.type === "fix" ? card.front.split(" / ") : [card.front]).map((x) => normalizeForCheck(x)) : [];
   const typedOk = card && typed.trim() ? accepted.includes(normalizeForCheck(typed)) : null;
 
   const rate = useCallback(
