@@ -6,14 +6,15 @@ import { checkItem, type ItemResult } from "@/lib/scoring/check";
 import type { GrammarLesson } from "@/lib/content/schema";
 import { getContent } from "@/lib/tasks";
 import { logActivity } from "@/lib/activity";
-import { currentSubject } from "@/lib/exam/config";
+import { contentIdPrefix, currentSubject } from "@/lib/exam/config";
 
 /**
  * Szabálytár: one lesson per error category (content/grammar/kozep/gr-<category>.json).
  * Lessons are read from the seeded tasks table like every other content file.
  */
 
-export const lessonId = (category: string) => `gr-${category}`;
+/** Lesson id of a category in the current subject (angol: gr-tense, matematika: mat-gr-szamolasi-hiba). */
+export const lessonId = (category: string, subjectId?: string) => `${contentIdPrefix(subjectId)}gr-${category}`;
 
 export type LessonSummary = {
   category: string;
@@ -34,7 +35,8 @@ export function lessonCategories(): Set<string> {
     .from(tasks)
     .where(and(eq(tasks.subject, currentSubject()), eq(tasks.section, "grammar"), eq(tasks.active, true)))
     .all();
-  return new Set(rows.map((r) => r.id.replace(/^gr-/, "")));
+  const prefix = `${contentIdPrefix()}gr-`;
+  return new Set(rows.filter((r) => r.id.startsWith(prefix)).map((r) => r.id.slice(prefix.length)));
 }
 
 export function getLesson(category: string): GrammarLesson | null {

@@ -29,9 +29,9 @@ function LevelInfo({ level }: { level: Level }) {
             <thead className="text-left text-xs text-muted">
               <tr>
                 <th className="pb-1">{t.examInfo.part}</th>
-                <th className="pb-1 text-right">{t.examInfo.time}</th>
-                <th className="pb-1 text-right">{t.examInfo.points}</th>
-                <th className="pb-1 text-right">{t.examInfo.minimum}</th>
+                <th className="pb-1 pl-3 text-right">{t.examInfo.time}</th>
+                <th className="pb-1 pl-3 text-right">{t.examInfo.points}</th>
+                <th className="pb-1 pl-3 text-right">{t.examInfo.minimum}</th>
               </tr>
             </thead>
             <tbody>

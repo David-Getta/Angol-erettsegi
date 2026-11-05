@@ -31,6 +31,8 @@ type SubjectCtx = {
   subject: string;
   cfg: SubjectConfig;
   language: boolean;
+  /** What every id of the subject starts with ("mat-"); empty for angol. */
+  idPrefix: string;
   topics: Set<string>;
   categories: Map<string, string>; // id -> group
   taskTypes: TaskTypes;
@@ -47,6 +49,7 @@ function subjectCtx(id: string): SubjectCtx {
     subject: id,
     cfg,
     language: cfg.info().language,
+    idPrefix: cfg.info().idPrefix ? `${cfg.info().idPrefix}-` : "",
     topics: new Set(cfg.topics().topics.map((t) => t.id)),
     categories: new Map(cfg.errorCategories().categories.map((c) => [c.id, c.group] as const)),
     taskTypes: cfg.taskTypes(),
@@ -150,6 +153,7 @@ function checkPlacement(ctx: Ctx, dir: string, file: string, c: Content) {
 }
 
 function checkCommon(ctx: Ctx, c: Content) {
+  if (ctx.idPrefix && !c.id.startsWith(ctx.idPrefix)) err(ctx, `A(z) ${ctx.subject} tantárgy azonosítói "${ctx.idPrefix}"-vel kezdődnek (pl. ${ctx.idPrefix}rd-kozep-…, ${ctx.idPrefix}gr-<kategória>), ez nem: "${c.id}".`);
   if (c.section !== "grammar" && c.section !== "guide" && !ctx.topics.has(c.topic)) err(ctx, `Ismeretlen témakör: "${c.topic}" (lásd config/subjects/${ctx.subject}/topics.json).`);
   if (c.source === "official" && !c.official) err(ctx, `Hivatalos feladatnál kötelező az "official" mező (év, időszak, szint).`);
   if (c.source === "generated" && c.official) err(ctx, `Generált feladat nem kaphat "official" mezőt.`);
@@ -360,7 +364,7 @@ function checkSpeaking(ctx: Ctx, s: SpeakingTask) {
 function checkLesson(ctx: Ctx, l: GrammarLesson) {
   const group = ctx.categories.get(l.category);
   if (!group) err(ctx, `Ismeretlen hibakategória: "${l.category}" (lásd config/subjects/${ctx.subject}/error-categories.json).`);
-  if (l.id !== `gr-${l.category}`) err(ctx, `A szabálylecke azonosítója "gr-${l.category}" legyen.`);
+  if (l.id !== `${ctx.idPrefix}gr-${l.category}`) err(ctx, `A szabálylecke azonosítója "${ctx.idPrefix}gr-${l.category}" legyen.`);
   if (l.level !== "kozep") err(ctx, `A szabályleckék szintfüggetlenek: level "kozep" legyen, az emelt szabályok "emeltOnly": true jelölést kapnak.`);
   for (const r of l.relatedCategories) if (!ctx.categories.has(r)) err(ctx, `relatedCategories: ismeretlen kategória "${r}".`);
   const language = group !== "comprehension";
@@ -388,7 +392,7 @@ function checkLesson(ctx: Ctx, l: GrammarLesson) {
 const EXAM_PARTS = ["reading", "language-use", "listening", "writing", "speaking"];
 
 function checkGuide(ctx: Ctx, g: Guide) {
-  if (g.id !== `gd-${g.type}-${g.target}`) err(ctx, `Az útmutató azonosítója "gd-${g.type}-${g.target}" legyen.`);
+  if (g.id !== `${ctx.idPrefix}gd-${g.type}-${g.target}`) err(ctx, `Az útmutató azonosítója "${ctx.idPrefix}gd-${g.type}-${g.target}" legyen.`);
   if (g.level !== "kozep") err(ctx, `Az útmutatók szintfüggetlenek: level "kozep" legyen, a szintfüggő tanács a "levelNotes"-ba kerül.`);
   if (g.type === "exam") {
     if (!EXAM_PARTS.includes(g.target)) err(ctx, `Ismeretlen vizsgarész: "${g.target}" (${EXAM_PARTS.join(", ")}).`);

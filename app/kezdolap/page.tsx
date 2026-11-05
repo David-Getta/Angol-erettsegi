@@ -154,10 +154,10 @@ export default function DashboardPage() {
                 </div>
                 <div className="relative mt-1">
                   <ProgressBar value={e.points ?? 0} max={e.maxPoints} tone={e.belowMinimum ? "bad" : e.atRisk ? "warn" : "accent"} marker={e.targetPoints} />
-                  <div className="absolute inset-y-0 w-0.5 bg-bad" style={{ left: `${(e.minPoints / e.maxPoints) * 100}%` }} title={t.dashboard.threshold(e.minPoints)} />
+                  {e.minPoints > 0 && <div className="absolute inset-y-0 w-0.5 bg-bad" style={{ left: `${(e.minPoints / e.maxPoints) * 100}%` }} title={t.dashboard.threshold(e.minPoints)} />}
                 </div>
                 <div className="mt-0.5 flex justify-between text-[11px] text-muted">
-                  <span>{t.dashboard.threshold(e.minPoints)}</span>
+                  <span>{e.minPoints > 0 ? t.dashboard.threshold(e.minPoints) : ""}</span>
                   <span>
                     {t.dashboard.target}: {e.targetPoints}
                   </span>

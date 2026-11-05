@@ -24,6 +24,9 @@ describe("subject registry", () => {
   it("subject ids and exam dates are well formed", () => {
     const ids = subjects().map((s) => s.id);
     expect(new Set(ids).size).toBe(ids.length);
+    const prefixes = subjects().map((s) => s.idPrefix);
+    expect(new Set(prefixes).size, "id prefixes are unique").toBe(prefixes.length);
+    expect(prefixes.filter((p) => p === "").length, "only the original bank has no prefix").toBeLessThanOrEqual(1);
     for (const s of subjects()) expect(s.defaultExamDate).toMatch(/^\d{4}-\d{2}-\d{2}$/);
   });
 });
@@ -171,10 +174,11 @@ for (const subject of configured) {
       it("every writing text type and speaking task type in the bank, and every exam part, has a guide", () => {
         const guides = new Set(content.filter((c) => c.section === "guide").map((c) => c.id));
         const parts = new Set<PartId>([...cfg.structure().levels.kozep.parts, ...cfg.structure().levels.emelt.parts].map((p) => p.id));
-        const need = new Set<string>([...parts].map((p) => `gd-exam-${p}`));
+        const pfx = subject.idPrefix ? `${subject.idPrefix}-` : "";
+        const need = new Set<string>([...parts].map((p) => `${pfx}gd-exam-${p}`));
         for (const c of content) {
-          if (c.section === "writing") need.add(`gd-writing-${c.type}`);
-          if (c.section === "speaking") need.add(`gd-speaking-${c.type}`);
+          if (c.section === "writing") need.add(`${pfx}gd-writing-${c.type}`);
+          if (c.section === "speaking") need.add(`${pfx}gd-speaking-${c.type}`);
         }
         for (const id of need) expect(guides.has(id), id).toBe(true);
       });

@@ -41,6 +41,8 @@ export const SubjectSchema = z.object({
   group: z.enum(["kotelezo", "nyelv", "termeszettudomany", "egyeb"]),
   /** Foreign language: listening with TTS, speech recognition, word cards en-hu style. */
   language: z.boolean().default(false),
+  /** Prefix of every content id of the subject (ids are global database keys); empty for the original English bank. */
+  idPrefix: z.string().regex(/^[a-z0-9]*$/).default(""),
   available: z.boolean().default(true),
   defaultLevel: LevelSchema.default("kozep"),
   defaultExamDate: z.string().regex(/^\d{4}-\d{2}-\d{2}$/),
@@ -319,6 +321,12 @@ let subjectOverride: string | null = null;
 /** The subject the student is working on (settings), or the one set by `withSubject`. */
 export function currentSubject(): string {
   return subjectOverride ?? getSettings().subject;
+}
+
+/** `mat-` for matematika, "" for angol: what every content id of the subject starts with. */
+export function contentIdPrefix(subjectId: string = currentSubject()): string {
+  const p = subject(subjectId).idPrefix;
+  return p ? `${p}-` : "";
 }
 
 /** Runs a synchronous computation as if another subject were current (used by the subject chooser's summaries). */

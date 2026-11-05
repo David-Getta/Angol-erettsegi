@@ -92,7 +92,7 @@ tests/ (Vitest), e2e/ (Playwright)
 
 ## Tartalomséma (röviden – a teljes séma: `lib/content/schema.ts`)
 
-Közös mezők: `schemaVersion: 1`, `id` (= fájlnév), `level` (`kozep`|`emelt`), `source` (`generated`|`official`),
+Közös mezők: `schemaVersion: 1`, `id` (= fájlnév; a tantárgy `idPrefix`-ével kezdődik, pl. `mat-rd-kozep-…`, `mat-gr-<kategória>` – az angolnak nincs előtagja, az azonosítók az adatbázisban globálisak), `level` (`kozep`|`emelt`), `source` (`generated`|`official`),
 `official` (csak hivatalosnál: év, időszak, szint, rész, feladat), `subject` (tantárgy, = a mappa), `topic` (a tantárgy `topics.json`-jának azonosítója),
 `title`, `createdAt`, `tags`, opcionálisan `reservedFor` (`mock`|`diagnostic`).
 
@@ -111,11 +111,11 @@ Közös mezők: `schemaVersion: 1`, `id` (= fájlnév), `level` (`kozep`|`emelt`
   típustól függően `questions`, `situation`, `scenes` (képleírást helyettesítő jelenetleírás), `prompts`, `debate` (tétel, kiosztott álláspont, vizsgáztatói ellenérvek),
   `sampleAnswer` (`turns`: vizsgáztató/vizsgázó megszólalások, `notes` magyarul – a javítási anyagba nem kerül be).
 - **vocabulary**: `type: "deck"`, `cards[]` (`term`, `meaning`, `example` – a szót tartalmazó angol mondat, `collocation`, `pos`).
-- **grammar** (Szabálytár, `/szabalytar`): hibakategóriánként egy lecke, `content/grammar/kozep/gr-<kategória>.json` (szintfüggetlen,
+- **grammar** (Szabálytár, `/szabalytar`): hibakategóriánként egy lecke, `content/<tantárgy>/grammar/kozep/<előtag>gr-<kategória>.json` (szintfüggetlen,
   mindig a `kozep` mappában, `topic: "nyelvtan"`): `summaryHu`, `rules[]` (magyar magyarázat, angol példák fordítással, `emeltOnly`),
   `commonMistakes[]` (rossz → jó → miért, magyar anyanyelvű tanulók tipikus hibái), `examTips[]`, `practice[]` (`choice`/`text` itemek
   magyar magyarázattal), `relatedCategories`. Szövegértési kategóriáknál a lecke megoldási stratégia.
-- **guide** (Útmutatók, `/utmutatok`): `content/guide/kozep/gd-<type>-<target>.json` (szintfüggetlen, `topic: "utmutato"`):
+- **guide** (Útmutatók, `/utmutatok`): `content/<tantárgy>/guide/kozep/<előtag>gd-<type>-<target>.json` (szintfüggetlen, `topic: "utmutato"`):
   `type` `writing` (szövegtípus) | `speaking` (szóbeli feladattípus) | `exam` (vizsgarész); `summaryHu`, `steps[]`, `phrases[]`
   (csoport, angol, magyar), `mistakes[]`, `checklist[]`, `timing`, `example`, `levelNotes`.
 

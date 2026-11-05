@@ -43,8 +43,12 @@ Ha az argumentumok hiányosak vagy érvénytelenek, írd ki a helyes formát egy
 ## 2. Generálás
 
 - Fájl: `content/<tantárgy>/<rész-id>/<szint>/<id>.json`, `"subject": "<tantárgy>"` mezővel; az `id` = fájlnév, formája
-  `<előtag>-<szint>-<rövid-slug>` (más tantárgynál az előtag elé a tantárgy rövidítése: pl. `mat-rd-kozep-…`, `tor-wr-emelt-…`)
-  (előtagok: `rd` olvasás, `lu` nyelvhelyesség, `ls` hallás, `wr` írás, `sp` szóbeli, `vc` szókincs), pl. `lu-emelt-urban-gardens-open-cloze`.
+  `<tantárgy-előtag><típus>-<szint>-<rövid-slug>`: a tantárgy-előtag a `config/subjects.json` `idPrefix` mezője + kötőjel (angolnál nincs,
+  matematikánál `mat-`, történelemnél `tor-`, magyarnál `mag-`, németnél `nem-`, fizikánál `fiz-`, kémiánál `kem-`, biológiánál `bio-`,
+  földrajznál `fol-`, digitális kultúránál `dig-`); a típus: `rd` (reading-hely), `lu` (language-use-hely), `ls` (listening-hely),
+  `wr` írás, `sp` szóbeli, `vc` szókincs/fogalmak, `gr` szabálylecke, `gd` útmutató. Pl. `lu-emelt-urban-gardens-open-cloze`,
+  `mat-rd-kozep-halmazok-logika-1`, `mat-gr-szamolasi-hiba`, `tor-gd-exam-writing`. Az azonosítók az adatbázisban globálisak, a validátor
+  ellenőrzi az előtagot.
   Az id legyen egyedi (ellenőrizd `ls`-sel).
 - Közös mezők: `"schemaVersion": 1`, `"source": "generated"` (**mindig**), `"createdAt": "<mai dátum ÉÉÉÉ-HH-NN>"`, `"revision": 1`, `"tags": []`.
   `official` mezőt generált feladat soha nem kaphat. `reservedFor`-t csak akkor adj, ha a felhasználó kéri.
@@ -85,7 +89,7 @@ Ha az argumentumok hiányosak vagy érvénytelenek, írd ki a helyes formát egy
   `notes`: 3–4 magyar megjegyzés, miért jó és mit érdemes megtanulni belőle).
 
 ### Szabálylecke (`szabaly` → `grammar`)
-- Hibakategóriánként egy lecke: `content/<tantárgy>/grammar/kozep/gr-<hibakategória>.json` (mindig a `kozep` mappában, `"level": "kozep"`;
+- Hibakategóriánként egy lecke: `content/<tantárgy>/grammar/kozep/<tantárgy-előtag>gr-<hibakategória>.json` (mindig a `kozep` mappában, `"level": "kozep"`;
   a csak emelt szinten szükséges szabályok `"emeltOnly": true` jelölést kapnak). Séma: `GrammarLessonSchema`.
 - Ha megadták a hibakategóriát, ahhoz írj (ha már van lecke, bővítsd/javítsd); ha nem, a `darab` számú, még lecke nélküli
   kategóriához (`config/subjects/<tantárgy>/error-categories.json`), a hibanaplóban gyakoribbakat előnyben részesítve.
@@ -97,7 +101,7 @@ Ha az argumentumok hiányosak vagy érvénytelenek, írd ki a helyes formát egy
   a gyakorló itemek rövid angol szöveg + kérdés.
 
 ### Útmutató (`utmutato` → `guide`)
-- Fájl: `content/<tantárgy>/guide/kozep/gd-<type>-<target>.json` (szintfüggetlen; szintfüggő tanács a `levelNotes`-ba). Séma: `GuideSchema`.
+- Fájl: `content/<tantárgy>/guide/kozep/<tantárgy-előtag>gd-<type>-<target>.json` (szintfüggetlen; szintfüggő tanács a `levelNotes`-ba). Séma: `GuideSchema`.
   `type`: `writing` (target = szövegtípus a `task-types.json` writing listájából), `speaking` (target = szóbeli feladattípus)
   vagy `exam` (target = vizsgarész: reading, language-use, listening, writing, speaking).
 - Ha nem adtak meg mást, a `darab` számú, még hiányzó útmutatót írd meg (nézd meg, mi van már a `content/<tantárgy>/guide/kozep/` alatt).

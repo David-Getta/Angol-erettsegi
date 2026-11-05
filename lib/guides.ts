@@ -3,12 +3,13 @@ import { getDb } from "@/lib/db/client";
 import { tasks } from "@/lib/db/schema";
 import type { Guide } from "@/lib/content/schema";
 import { getContent } from "@/lib/tasks";
-import { currentSubject } from "@/lib/exam/config";
+import { contentIdPrefix, currentSubject } from "@/lib/exam/config";
 
 /** Útmutatók: guides for writing text types, speaking task types and exam parts (content/guide/kozep/gd-<type>-<target>.json). */
 
 export type GuideKind = Guide["type"];
-export const guideId = (type: GuideKind, target: string) => `gd-${type}-${target}`;
+/** Guide id in the current subject (angol: gd-exam-reading, matematika: mat-gd-exam-reading). */
+export const guideId = (type: GuideKind, target: string, subjectId?: string) => `${contentIdPrefix(subjectId)}gd-${type}-${target}`;
 
 export function listGuides(): Guide[] {
   return getDb()
