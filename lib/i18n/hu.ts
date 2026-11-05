@@ -604,6 +604,7 @@ export const t = {
     strategy: "📘 Megoldási stratégia",
     byTextType: "Útmutató szövegtípusonként:",
     byTaskType: "Útmutató feladattípusonként:",
+    byPart: "Megoldási stratégia vizsgarészenként:",
     missing: "Ehhez még nincs útmutató.",
   },
 

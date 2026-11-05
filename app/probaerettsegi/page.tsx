@@ -8,6 +8,7 @@ import { t } from "@/lib/i18n/hu";
 import { Badge, Card, PageHeader, btn, formatDate } from "@/components/ui";
 import { CommandTip } from "@/components/CommandTip";
 import { StartMockButton } from "@/components/mock/StartMockButton";
+import { GuideLinks } from "@/components/guides/GuideLink";
 
 export const metadata: Metadata = { title: t.mock.title };
 
@@ -20,6 +21,7 @@ export default function MockLandingPage() {
   return (
     <div className="space-y-6">
       <PageHeader title={t.mock.title} intro={t.mock.intro} />
+      <GuideLinks type="exam" title={t.guides.byPart} names={Object.fromEntries(st.parts.map((p) => [p.id, p.name]))} />
       <Card title={`${t.level[s.level]} – ${st.writtenTotalMin} perc írásbeli`}>
         <ol className="grid gap-2 text-sm sm:grid-cols-4">
           {st.parts
