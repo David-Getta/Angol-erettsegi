@@ -47,7 +47,7 @@ Ha parancsot módosítasz, a `config/commands.json`-t és a `.claude/commands/<n
 ## Mappaszerkezet
 
 ```
-app/                 oldalak (magyar URL-ek: /olvasas, /nyelvhelyesseg, /hallas, /iras, /szobeli, /szokincs, /hibanaplo, …)
+app/                 oldalak (magyar URL-ek: /olvasas, /nyelvhelyesseg, /hallas, /iras, /szobeli, /szokincs, /hibanaplo, /szabalytar, …)
   actions*.ts        server actionök (minden írás az adatbázisba ezeken megy át)
 components/          React komponensek (exercise/ = közös feladatlejátszó)
 lib/
@@ -62,7 +62,7 @@ config/
   exam/              hivatalos vizsgaadatok (szerkezet, pontok, rubrikák, témakörök, feladattípusok, jegyhatárok)
   app.json           app-beállítások (javulási küszöb, készletjelző, becslés)
   commands.json      a Claude Code parancsok leírása
-content/<rész>/<szint>/<id>.json   a tartalombank (rész: reading, language-use, listening, writing, speaking, vocabulary)
+content/<rész>/<szint>/<id>.json   a tartalombank (rész: reading, language-use, listening, writing, speaking, vocabulary, grammar)
 exchange/inbox|outbox|archive|vocab   javítási csere-mappa (git-ignorált)
 data/app.db, data/official/, data/backups/   felhasználói adatok (git-ignorált)
 scripts/             CLI-szkriptek (setup, seed, validate, import)
@@ -92,10 +92,16 @@ Közös mezők: `schemaVersion: 1`, `id` (= fájlnév), `level` (`kozep`|`emelt`
   (hibakategória), `explanation` (magyarul: mi a helyes megoldás és MIÉRT); olvasásnál és hallásnál `evidence`
   (szó szerinti idézet a szövegből/leiratból) és feleletválasztásnál `wrongOptions` (miért rossz a többi opció).
   Olvasásnál kötelező a `glossary` (nehezebb szavak magyar jelentéssel).
-- **writing**: `taskNumber` (1|2), `type`, `register`, `situation`, `points[]` (irányítási szempontok), `wordLimit`, `suggestedMinutes`, `usefulPhrases`.
+- **writing**: `taskNumber` (1|2), `type`, `register`, `situation`, `points[]` (irányítási szempontok), `wordLimit`, `suggestedMinutes`, `usefulPhrases`,
+  `modelAnswer` (mintamegoldás a szóhatáron belül; `pointsCovered`: pontonként szó szerinti idézet; `notes`: magyarul, miért maximális pontos –
+  az első beadás után látszik, a javítási anyagba nem kerül be).
 - **speaking**: `type` (`interview`|`situation`|`picture`|`debate`|`presentation`), `partNumber`, magyar `instructionsHu`,
   típustól függően `questions`, `situation`, `scenes` (képleírást helyettesítő jelenetleírás), `prompts`, `debate` (tétel, kiosztott álláspont, vizsgáztatói ellenérvek).
 - **vocabulary**: `type: "deck"`, `cards[]` (`term`, `meaning`, `example` – a szót tartalmazó angol mondat, `collocation`, `pos`).
+- **grammar** (Szabálytár, `/szabalytar`): hibakategóriánként egy lecke, `content/grammar/kozep/gr-<kategória>.json` (szintfüggetlen,
+  mindig a `kozep` mappában, `topic: "nyelvtan"`): `summaryHu`, `rules[]` (magyar magyarázat, angol példák fordítással, `emeltOnly`),
+  `commonMistakes[]` (rossz → jó → miért, magyar anyanyelvű tanulók tipikus hibái), `examTips[]`, `practice[]` (`choice`/`text` itemek
+  magyar magyarázattal), `relatedCategories`. Szövegértési kategóriáknál a lecke megoldási stratégia.
 
 Hibakategóriák: `config/exam/error-categories.json` (pl. `tense`, `article`, `preposition`, `word-order`, `collocation`,
 `word-formation`, `modal`, `passive`, `conditional`, `reported-speech` …; szövegértéshez `detail`, `gist`, `inference` …).

@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { useState } from "react";
 import type { Feedback } from "@/lib/exchange/schema";
 import { t } from "@/lib/i18n/hu";
@@ -112,7 +113,13 @@ export function FeedbackView({
                   <td className="py-1.5 pr-2 text-bad line-through decoration-bad/50">{c.original}</td>
                   <td className="py-1.5 pr-2 font-medium text-good">{c.corrected}</td>
                   <td className="py-1.5">
-                    <span className="mr-1 text-xs text-muted">[{categoryNames[c.category] ?? c.category}]</span>
+                    <Link
+                      href={`/szabalytar/${c.category}`}
+                      className="mr-1 text-xs text-muted hover:text-accent hover:underline"
+                      title={t.lessons.lessonLinkTitle}
+                    >
+                      [{categoryNames[c.category] ?? c.category}]
+                    </Link>
                     {c.explanation}
                   </td>
                 </tr>

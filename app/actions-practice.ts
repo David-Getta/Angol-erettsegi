@@ -5,6 +5,7 @@ import { saveAttempt, type AttemptMode } from "@/lib/attempts";
 import { addWord } from "@/lib/vocab/cards";
 import { getTaskRow } from "@/lib/tasks";
 import { checkTargetedItem, logTargetedTime } from "@/lib/targeted";
+import { checkLessonItem } from "@/lib/lessons";
 
 export async function saveAttemptAction(input: {
   taskId: string;
@@ -49,4 +50,9 @@ export async function checkTargetedAction(key: string, given: string) {
 export async function logTargetedTimeAction(seconds: number) {
   logTargetedTime(seconds);
   revalidatePath("/hibanaplo");
+}
+
+/** Checks one self-check item of a Szabálytár lesson (scored on the server). */
+export async function checkLessonItemAction(input: { category: string; itemId: string; answer: string; seconds?: number }) {
+  return checkLessonItem(input.category, input.itemId, input.answer, input.seconds ?? 0);
 }

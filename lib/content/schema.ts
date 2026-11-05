@@ -19,7 +19,7 @@ export type Level = z.infer<typeof LevelSchema>;
 export const ObjectiveSectionSchema = z.enum(["reading", "language-use", "listening"]);
 export type ObjectiveSection = z.infer<typeof ObjectiveSectionSchema>;
 
-export const SectionSchema = z.enum(["reading", "language-use", "listening", "writing", "speaking", "vocabulary"]);
+export const SectionSchema = z.enum(["reading", "language-use", "listening", "writing", "speaking", "vocabulary", "grammar"]);
 export type Section = z.infer<typeof SectionSchema>;
 
 const nonEmpty = z.string().trim().min(1, "Nem lehet üres.");
@@ -209,8 +209,20 @@ export const WritingTaskSchema = BaseSchema.extend({
   suggestedMinutes: z.number().positive(),
   usefulPhrases: z.array(PhraseSchema).default([]),
   checklistExtra: z.array(nonEmpty).default([]),
+  /** A model answer at the level, shown after the student's first submission. */
+  modelAnswer: z
+    .object({
+      /** English text within the word limit, covering every guiding point. */
+      text: nonEmpty,
+      /** Which part of the text covers which guiding point (verbatim quote from `text`). */
+      pointsCovered: z.array(z.object({ id: Id, quote: nonEmpty })).default([]),
+      /** Hungarian notes: why this answer gets full marks (structure, register, useful language). */
+      notes: z.array(nonEmpty).default([]),
+    })
+    .optional(),
 });
 export type WritingTask = z.infer<typeof WritingTaskSchema>;
+export type ModelAnswer = NonNullable<WritingTask["modelAnswer"]>;
 
 /* ------------------------------------------------------------------ */
 /* Speaking                                                            */
@@ -277,6 +289,47 @@ export const VocabDeckSchema = BaseSchema.extend({
 export type VocabDeck = z.infer<typeof VocabDeckSchema>;
 
 /* ------------------------------------------------------------------ */
+/* Grammar / strategy lessons (Szabálytár)                              */
+/* ------------------------------------------------------------------ */
+
+export const LessonPracticeItemSchema = z.discriminatedUnion("kind", [ChoiceItemSchema, TextItemSchema]);
+export type LessonPracticeItem = z.infer<typeof LessonPracticeItemSchema>;
+
+/**
+ * One lesson per error category (config/exam/error-categories.json): the rule
+ * in Hungarian with English examples, typical Hungarian-speaker mistakes and a
+ * short self-check. Level independent: stored under content/grammar/kozep/,
+ * rules needed only at emelt are marked `emeltOnly`.
+ */
+export const GrammarLessonSchema = BaseSchema.extend({
+  section: z.literal("grammar"),
+  type: z.literal("lesson"),
+  topic: z.literal("nyelvtan").default("nyelvtan"),
+  /** Error category this lesson explains. */
+  category: Id,
+  /** 2–4 Hungarian sentences: what this is and where it costs points on the exam. */
+  summaryHu: nonEmpty,
+  rules: z
+    .array(
+      z.object({
+        title: nonEmpty,
+        explanation: nonEmpty,
+        emeltOnly: z.boolean().default(false),
+        examples: z.array(z.object({ en: nonEmpty, hu: z.string().optional(), note: z.string().optional() })).min(1),
+      }),
+    )
+    .min(1),
+  /** Typical mistakes of Hungarian learners: wrong → right, and why (Hungarian). */
+  commonMistakes: z.array(z.object({ wrong: nonEmpty, right: nonEmpty, why: nonEmpty })).default([]),
+  /** Hungarian: where it appears on the exam and how to handle it. */
+  examTips: z.array(nonEmpty).default([]),
+  /** Short self-check; every item has a Hungarian explanation of the correct answer and why. */
+  practice: z.array(LessonPracticeItemSchema).default([]),
+  relatedCategories: z.array(Id).default([]),
+});
+export type GrammarLesson = z.infer<typeof GrammarLessonSchema>;
+
+/* ------------------------------------------------------------------ */
 
 export const ContentSchema = z.discriminatedUnion("section", [
   ObjectiveTaskSchema.extend({ section: z.literal("reading") }),
@@ -285,6 +338,7 @@ export const ContentSchema = z.discriminatedUnion("section", [
   WritingTaskSchema,
   SpeakingTaskSchema,
   VocabDeckSchema,
+  GrammarLessonSchema,
 ]);
 export type Content = z.infer<typeof ContentSchema>;
 

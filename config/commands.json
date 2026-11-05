@@ -1,12 +1,41 @@
 {
   "note": "A Parancsok súgóoldal, a helyzetfüggő tippek és a .claude/commands/*.md fájlok innen dolgoznak. Ha itt változtatsz, a parancsfájlt is frissítsd (egy teszt ellenőrzi, hogy minden parancshoz van fájl).",
   "sectionArgs": [
-    { "value": "olvasas", "section": "reading", "label": "Olvasott szöveg értése" },
-    { "value": "nyelvhelyesseg", "section": "language-use", "label": "Nyelvhelyesség" },
-    { "value": "hallas", "section": "listening", "label": "Hallott szöveg értése" },
-    { "value": "iras", "section": "writing", "label": "Íráskészség" },
-    { "value": "szobeli", "section": "speaking", "label": "Szóbeli" },
-    { "value": "szokincs", "section": "vocabulary", "label": "Szókincs (témakörönkénti pakli)" }
+    {
+      "value": "olvasas",
+      "section": "reading",
+      "label": "Olvasott szöveg értése"
+    },
+    {
+      "value": "nyelvhelyesseg",
+      "section": "language-use",
+      "label": "Nyelvhelyesség"
+    },
+    {
+      "value": "hallas",
+      "section": "listening",
+      "label": "Hallott szöveg értése"
+    },
+    {
+      "value": "iras",
+      "section": "writing",
+      "label": "Íráskészség"
+    },
+    {
+      "value": "szobeli",
+      "section": "speaking",
+      "label": "Szóbeli"
+    },
+    {
+      "value": "szokincs",
+      "section": "vocabulary",
+      "label": "Szókincs (témakörönkénti pakli)"
+    },
+    {
+      "value": "szabaly",
+      "section": "grammar",
+      "label": "Szabálytár (szabálylecke egy hibakategóriához)"
+    }
   ],
   "commands": [
     {
@@ -16,16 +45,54 @@
       "summary": "Új, érettségi-szerű feladatokat ír a tartalombankba (content/) a séma szerint, magyar magyarázatokkal és alternatív válaszokkal, majd lefuttatja a validátort.",
       "usage": "/feladatok <rész> <szint> <darab> [témakör] [hibakategória]",
       "params": [
-        { "name": "rész", "required": true, "valuesFrom": "sections", "description": "Melyik vizsgarészhez: olvasas, nyelvhelyesseg, hallas, iras, szobeli vagy szokincs." },
-        { "name": "szint", "required": true, "valuesFrom": "levels", "description": "kozep (A2–B1) vagy emelt (B2)." },
-        { "name": "darab", "required": true, "valuesFrom": "count", "description": "Hány feladatot (szókincsnél: hány paklit / témakört) generáljon. 1–20 között érdemes." },
-        { "name": "témakör", "required": false, "valuesFrom": "topics", "description": "A szóbeli témakörök egyike (azonosító, pl. kornyezet). Ha elhagyod, vegyes témákat választ, a bankban ritkábbakat előnyben részesítve." },
-        { "name": "hibakategória", "required": false, "valuesFrom": "categories", "description": "Csak nyelvhelyességnél: erre a hibakategóriára fókuszáló itemeket ír (pl. tense, article, preposition)." }
+        {
+          "name": "rész",
+          "required": true,
+          "valuesFrom": "sections",
+          "description": "Melyik vizsgarészhez: olvasas, nyelvhelyesseg, hallas, iras, szobeli, szokincs – vagy szabaly (szabálylecke a Szabálytárba egy hibakategóriához)."
+        },
+        {
+          "name": "szint",
+          "required": true,
+          "valuesFrom": "levels",
+          "description": "kozep (A2–B1) vagy emelt (B2)."
+        },
+        {
+          "name": "darab",
+          "required": true,
+          "valuesFrom": "count",
+          "description": "Hány feladatot (szókincsnél: hány paklit / témakört) generáljon. 1–20 között érdemes."
+        },
+        {
+          "name": "témakör",
+          "required": false,
+          "valuesFrom": "topics",
+          "description": "A szóbeli témakörök egyike (azonosító, pl. kornyezet). Ha elhagyod, vegyes témákat választ, a bankban ritkábbakat előnyben részesítve."
+        },
+        {
+          "name": "hibakategória",
+          "required": false,
+          "valuesFrom": "categories",
+          "description": "Nyelvhelyességnél: erre a hibakategóriára fókuszáló itemeket ír (pl. tense, article, preposition). A szabaly résznél kötelező: ehhez a kategóriához ír leckét."
+        }
       ],
       "examples": [
-        { "command": "/feladatok nyelvhelyesseg emelt 10", "description": "10 új emelt szintű nyelvhelyesség-feladat vegyes típusokkal." },
-        { "command": "/feladatok olvasas kozep 4 utazas", "description": "4 középszintű olvasási feladat az Utazás, turizmus témakörből." },
-        { "command": "/feladatok nyelvhelyesseg emelt 6 - tense", "description": "6 feladat, amely az igeidőkre fókuszál (a „-” kihagyja a témakört)." }
+        {
+          "command": "/feladatok nyelvhelyesseg emelt 10",
+          "description": "10 új emelt szintű nyelvhelyesség-feladat vegyes típusokkal."
+        },
+        {
+          "command": "/feladatok olvasas kozep 4 utazas",
+          "description": "4 középszintű olvasási feladat az Utazás, turizmus témakörből."
+        },
+        {
+          "command": "/feladatok nyelvhelyesseg emelt 6 - tense",
+          "description": "6 feladat, amely az igeidőkre fókuszál (a „-” kihagyja a témakört)."
+        },
+        {
+          "command": "/feladatok szabaly kozep 1 - gerund-infinitive",
+          "description": "Szabálylecke (magyarázat, tipikus hibák, mini-gyakorlás) a Szabálytárba az -ing / főnévi igenév témához."
+        }
       ],
       "after": "Kattints a „Tartalom újratöltése” gombra (vagy indítsd újra a dev szervert / futtasd: npm run seed), és az új feladatok megjelennek."
     },
@@ -36,11 +103,22 @@
       "summary": "Feldolgozza az exchange/inbox/ összes javításra váró beadását (írás és szóbeli átirat), a hivatalos rubrika szerint szigorúan pontoz, és a javítást az exchange/outbox/-ba írja.",
       "usage": "/javitas [beadás-azonosító]",
       "params": [
-        { "name": "beadás-azonosító", "required": false, "valuesFrom": "free", "description": "Ha megadod, csak ezt az egy beadást javítja (pl. w-20261105-1432-ab12). Elhagyva mindet." }
+        {
+          "name": "beadás-azonosító",
+          "required": false,
+          "valuesFrom": "free",
+          "description": "Ha megadod, csak ezt az egy beadást javítja (pl. w-20261105-1432-ab12). Elhagyva mindet."
+        }
       ],
       "examples": [
-        { "command": "/javitas", "description": "Minden javításra váró beadás kijavítása." },
-        { "command": "/javitas w-20261105-1432-ab12", "description": "Csak egy konkrét beadás javítása." }
+        {
+          "command": "/javitas",
+          "description": "Minden javításra váró beadás kijavítása."
+        },
+        {
+          "command": "/javitas w-20261105-1432-ab12",
+          "description": "Csak egy konkrét beadás javítása."
+        }
       ],
       "after": "Kattints a „Javítások importálása” gombra (vagy futtasd: npm run import-feedback). A javítás megjelenik a beadásnál, a hibák a hibanaplóba kerülnek."
     },
@@ -51,13 +129,34 @@
       "summary": "Kiegészíti a hiányos szókártyákat (jelentés, példamondat, kollokáció), és kérésre témakörönkénti szókincs-paklit generál a tartalombankba.",
       "usage": "/szokincs [témakör] [szint] [darab]",
       "params": [
-        { "name": "témakör", "required": false, "valuesFrom": "topics", "description": "Ha megadod, ehhez a témakörhöz generál új paklit (kártyákat). Elhagyva csak a hiányos kártyákat egészíti ki." },
-        { "name": "szint", "required": false, "valuesFrom": "levels", "description": "A pakli szintje (kozep / emelt). Alapból a beállított szint." },
-        { "name": "darab", "required": false, "valuesFrom": "count", "description": "Hány szót tartalmazzon az új pakli (alapból 40)." }
+        {
+          "name": "témakör",
+          "required": false,
+          "valuesFrom": "topics",
+          "description": "Ha megadod, ehhez a témakörhöz generál új paklit (kártyákat). Elhagyva csak a hiányos kártyákat egészíti ki."
+        },
+        {
+          "name": "szint",
+          "required": false,
+          "valuesFrom": "levels",
+          "description": "A pakli szintje (kozep / emelt). Alapból a beállított szint."
+        },
+        {
+          "name": "darab",
+          "required": false,
+          "valuesFrom": "count",
+          "description": "Hány szót tartalmazzon az új pakli (alapból 40)."
+        }
       ],
       "examples": [
-        { "command": "/szokincs", "description": "A hiányos szókártyák kiegészítése (amiket szövegből kattintással vettél fel)." },
-        { "command": "/szokincs kornyezet emelt 40", "description": "40 szavas emelt szintű pakli a Környezetünk témakörhöz." }
+        {
+          "command": "/szokincs",
+          "description": "A hiányos szókártyák kiegészítése (amiket szövegből kattintással vettél fel)."
+        },
+        {
+          "command": "/szokincs kornyezet emelt 40",
+          "description": "40 szavas emelt szintű pakli a Környezetünk témakörhöz."
+        }
       ],
       "after": "Hiányos kártyáknál: kattints a Szókincs oldalon a „Kiegészítések betöltése” gombra. Új paklinál: „Tartalom újratöltése”, majd „Pakli felvétele”."
     },
@@ -68,11 +167,22 @@
       "summary": "A data/official/<mappa>/ alá bemásolt hivatalos feladatlapból (PDF), javítási útmutatóból és hanganyagból a tartalombank formátumára alakítja a feladatokat (source: official), majd lefuttatja a validátort.",
       "usage": "/import-hivatalos <mappa>",
       "params": [
-        { "name": "mappa", "required": true, "valuesFrom": "officialFolders", "description": "A data/official/ alatti mappa neve, pl. 2024-majus-emelt." }
+        {
+          "name": "mappa",
+          "required": true,
+          "valuesFrom": "officialFolders",
+          "description": "A data/official/ alatti mappa neve, pl. 2024-majus-emelt."
+        }
       ],
       "examples": [
-        { "command": "/import-hivatalos 2024-majus-emelt", "description": "A 2024. májusi emelt szintű feladatsor importálása." },
-        { "command": "/import-hivatalos 2023-oktober-kozep", "description": "A 2023. októberi középszintű feladatsor importálása." }
+        {
+          "command": "/import-hivatalos 2024-majus-emelt",
+          "description": "A 2024. májusi emelt szintű feladatsor importálása."
+        },
+        {
+          "command": "/import-hivatalos 2023-oktober-kozep",
+          "description": "A 2023. októberi középszintű feladatsor importálása."
+        }
       ],
       "after": "Kattints a „Tartalom újratöltése” gombra. A feladatok „Hivatalos” jelöléssel jelennek meg a modulokban és a próbaérettségiben."
     }

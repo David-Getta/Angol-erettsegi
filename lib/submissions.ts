@@ -124,7 +124,8 @@ export function createSubmission(input: CreateSubmissionInput): SubmissionRow {
       type: taskRow.type,
       topic: taskRow.topic,
       source: taskRow.source as "official" | "generated",
-      card: content as unknown as Record<string, unknown>,
+      // the model answer stays out of the grading material so it cannot anchor the score
+      card: Object.fromEntries(Object.entries(content).filter(([k]) => k !== "modelAnswer")),
     },
     text,
     wordCount: saved.wordCount,

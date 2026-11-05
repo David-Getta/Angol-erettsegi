@@ -64,3 +64,70 @@ describe("validator logic", () => {
     expect(r.errors.some((e) => e.message.includes("Rossz helyen"))).toBe(true);
   });
 });
+
+describe("lessons and model answers", () => {
+  function validateFile(section: string, level: string, c: Record<string, unknown>) {
+    const dir = fs.mkdtempSync(path.join(os.tmpdir(), "content-"));
+    fs.mkdirSync(path.join(dir, section, level), { recursive: true });
+    fs.writeFileSync(path.join(dir, section, level, `${c.id}.json`), JSON.stringify(c));
+    return validateContentDir(dir);
+  }
+  const lesson = {
+    schemaVersion: 1,
+    id: "gr-article",
+    level: "kozep",
+    source: "generated",
+    topic: "nyelvtan",
+    title: "Névelők",
+    createdAt: "2026-11-05",
+    tags: [],
+    section: "grammar",
+    type: "lesson",
+    category: "article",
+    summaryHu: "A névelők használata.",
+    rules: [{ title: "Határozatlan névelő", explanation: "Első említéskor a/an.", examples: [{ en: "I saw a dog.", hu: "Láttam egy kutyát." }] }],
+    commonMistakes: [
+      { wrong: "She is teacher.", right: "She is a teacher.", why: "Foglalkozás előtt kell az a/an." },
+      { wrong: "The life is hard.", right: "Life is hard.", why: "Általános értelemben nincs névelő." },
+      { wrong: "I play the football.", right: "I play football.", why: "Sportágak előtt nincs névelő." },
+    ],
+    practice: [
+      { id: "1", kind: "text", prompt: "She is ___ engineer.", answer: ["an"], category: "article", explanation: "Helyes: an, mert magánhangzóval kezdődik a szó." },
+      {
+        id: "2",
+        kind: "choice",
+        prompt: "___ Danube flows through Budapest.",
+        options: [
+          { key: "A", text: "The" },
+          { key: "B", text: "A" },
+        ],
+        answer: "A",
+        category: "article",
+        explanation: "Helyes: The – folyók neve előtt határozott névelő áll.",
+        wrongOptions: { B: "Egyedi folyónév előtt nem állhat határozatlan névelő." },
+      },
+    ],
+  };
+
+  it("accepts a well-formed lesson and checks its id and items", () => {
+    expect(validateFile("grammar", "kozep", lesson).errors).toEqual([]);
+    const bad = structuredClone(lesson) as typeof lesson & { practice: { answer: unknown; wrongOptions?: unknown }[] };
+    bad.id = "gr-tense";
+    bad.practice[1]!.answer = "C";
+    const r = validateFile("grammar", "kozep", bad);
+    expect(r.errors.some((e) => e.message.includes('"gr-article"'))).toBe(true);
+    expect(r.errors.some((e) => e.message.includes("nincs az opciók között"))).toBe(true);
+  });
+
+  it("requires the model answer to stay within the word limit and to quote the text", () => {
+    const card = JSON.parse(fs.readFileSync(path.join(process.cwd(), "content/writing/kozep/wr-kozep-new-phone-email.json"), "utf8"));
+    card.modelAnswer = {
+      text: "Hi Jamie, my new phone is great.",
+      pointsCovered: card.points.map((p: { id: string }) => ({ id: p.id, quote: "not in the text" })),
+      notes: ["a", "b"],
+    };
+    const r = validateFile("writing", "kozep", card);
+    expect(r.errors.some((e) => e.message.includes("szóhatáron"))).toBe(true);
+    expect(r.errors.some((e) => e.message.includes("nem található szó szerint"))).toBe(true);
+  });
+});

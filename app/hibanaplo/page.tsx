@@ -50,6 +50,9 @@ export default async function ErrorLogPage({ searchParams }: { searchParams: Pro
                         <td className="py-2 pr-2">
                           <Link href={`/hibanaplo?k=${c.category}`} className="font-medium hover:underline">
                             {c.name}
+                          </Link>{" "}
+                          <Link href={`/szabalytar/${c.category}`} className="text-xs text-accent hover:underline" title={t.lessons.lessonLinkTitle} data-testid={`lesson-link-${c.category}`}>
+                            § {t.lessons.lessonLink}
                           </Link>
                           <div className="flex flex-wrap gap-1 pt-0.5">
                             <Badge>{t.errorLog.groups[c.group]}</Badge>
@@ -122,7 +125,9 @@ export default async function ErrorLogPage({ searchParams }: { searchParams: Pro
               {recent.map((e) => (
                 <li key={e.id} className="py-3 text-sm">
                   <div className="flex flex-wrap items-center gap-2 text-xs text-muted">
-                    <Badge>{names[e.category] ?? e.category}</Badge>
+                    <Link href={`/szabalytar/${e.category}`} title={t.lessons.lessonLinkTitle}>
+                      <Badge>{names[e.category] ?? e.category}</Badge>
+                    </Link>
                     <span>{t.errorLog.source[e.sourceType] ?? e.sourceType}</span>
                     <span>{formatDate(e.createdAt)}</span>
                   </div>

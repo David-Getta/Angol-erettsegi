@@ -16,10 +16,11 @@ vagy a javítást a Claude appba bemásolt prompttal kérheted. Nincs fiók, nin
 | **Olvasott szöveg** | érettségi-típusú feladatok, gyakorló és vizsga mód, magyarázat minden kérdéshez (hol van a szövegben, miért rossz a többi opció), szavak felvétele szókártyába kattintással |
 | **Nyelvhelyesség** | lyukas szövegek, szóképzés, igealakok, hibakeresés …; több helyes válasz elfogadva, elírás-jelzés; célzott gyakorlás a hibanaplóból |
 | **Hallott szöveg** | a böngésző olvassa fel a szkripteket beszélőnként külön hanggal, felkészülési idő, kétszeri meghallgatás, utána leirat a válaszok kiemelésével; hivatalos mp3 is lejátszható |
-| **Íráskészség** | feladatkártyák, szerkesztő élő szószámlálóval és időzítővel, önellenőrző lista, beadás javításra, javítás nézet (pontok szempontonként, kiemelt hibák magyarázattal), átírás, változatok összehasonlítása |
+| **Íráskészség** | feladatkártyák, szerkesztő élő szószámlálóval és időzítővel, önellenőrző lista, beadás javításra, javítás nézet (pontok szempontonként, kiemelt hibák magyarázattal), átírás, változatok összehasonlítása; az első beadás után mintamegoldás megjegyzésekkel |
 | **Szóbeli** | kérdéskártyák, szituációk, képleírás-helyettesítő jelenetek, emelten vitatételek; felolvasás, időzítő, beszédfelismerés; vizsgáztató-prompt a Claude app hangmódjához |
 | **Szókincs** | FSRS-alapú ismétlés (angol→magyar, magyar→angol, példamondat-kitöltés, kollokáció), témakörönkénti paklik |
 | **Hibanapló** | minden hibád a helyes megoldással és a magyarázattal, kategóriánként, trenddel, „Gyakoroltasd ezt” gombbal |
+| **Szabálytár** | minden hibakategóriához magyar szabálymagyarázat példákkal, a magyarul beszélők tipikus hibái, érettségi-tippek és mini-gyakorlás; a hibanaplóból és minden hibamagyarázatból egy kattintással elérhető |
 | **Próbaérettségi** | teljes írásbeli szimuláció hivatalos időkeretekkel és szigorú részenkénti időzítéssel → pontszám, százalék, 12%-os küszöbök, becsült jegy, nyelvvizsga-egyenértékűség |
 | **Hivatalos feladatsorok** | a letöltött régi érettségik importálása saját használatra, egyértelmű „Hivatalos” jelöléssel |
 | **Statisztika, Parancsok, Beállítások** | grafikonok; a Claude Code parancsok súgója parancsépítővel; export/import, adatbázis-mentés |

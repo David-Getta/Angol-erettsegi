@@ -18,6 +18,7 @@ export const SECTION_ARG: Record<string, string> = {
   writing: "iras",
   speaking: "szobeli",
   vocabulary: "szokincs",
+  grammar: "szabaly",
 };
 
 export function feladatokCommand(section: string, level: string, count: number, topic?: string | null, category?: string | null): string {

@@ -133,9 +133,9 @@ export function contentStock(level?: Level): StockRow[] {
     .all();
   const map = new Map<string, StockRow>();
   for (const r of rows) {
-    if (r.section === "vocabulary") continue;
+    if (r.section === "vocabulary" || r.section === "grammar") continue;
     const key = `${r.section}|${r.level}|${r.type}`;
-    const sec = r.section as Exclude<Section, "vocabulary">;
+    const sec = r.section as Exclude<Section, "vocabulary" | "grammar">;
     const cur =
       map.get(key) ??
       ({

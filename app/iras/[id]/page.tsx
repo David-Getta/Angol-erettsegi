@@ -2,12 +2,13 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import { getTaskRow } from "@/lib/tasks";
-import { getSubmission } from "@/lib/submissions";
+import { getSubmission, listSubmissions } from "@/lib/submissions";
 import type { WritingTask } from "@/lib/content/schema";
 import { examConfig, topicName, taskTypeName } from "@/lib/exam/config";
 import { t } from "@/lib/i18n/hu";
 import { Badge, SourceBadge } from "@/components/ui";
 import { WritingEditor } from "./WritingEditor";
+import { ModelAnswer } from "@/components/grading/ModelAnswer";
 
 export const metadata: Metadata = { title: t.writing.title };
 
@@ -21,6 +22,7 @@ export default async function WritingTaskPage({ params, searchParams }: { params
   const mode = sp.mode === "exam" ? "exam" : "practice";
   const rubric = examConfig.writingRubric(task.level);
   const rt = rubric.tasks.find((x) => x.taskNumber === task.taskNumber);
+  const attempted = listSubmissions("writing").some((x) => x.taskId === task.id);
   return (
     <div>
       <div className="mb-3 flex flex-wrap items-center gap-2 text-sm">
@@ -39,6 +41,11 @@ export default async function WritingTaskPage({ params, searchParams }: { params
         parent={parent && parent.taskId === task.id ? { id: parent.id, text: parent.text, version: parent.version } : null}
         examMinutes={rt?.suggestedMinutes ?? task.suggestedMinutes}
       />
+      {task.modelAnswer && mode === "practice" && (
+        <div className="mt-6">
+          {attempted ? <ModelAnswer task={task} /> : <p className="text-sm text-muted">ⓘ {t.writing.modelAnswerLocked}</p>}
+        </div>
+      )}
     </div>
   );
 }

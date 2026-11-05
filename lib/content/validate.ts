@@ -8,6 +8,7 @@ import {
   ContentSchema,
   type Content,
   type Item,
+  type GrammarLesson,
   type ObjectiveTask,
   type SpeakingTask,
   type VocabDeck,
@@ -87,6 +88,7 @@ export function validateContentDir(dir: string = paths.content): ValidationRepor
     } else if (c.section === "writing") checkWriting(ctx, c);
     else if (c.section === "speaking") checkSpeaking(ctx, c);
     else if (c.section === "vocabulary") checkVocab(ctx, c);
+    else if (c.section === "grammar") checkLesson(ctx, c);
 
     const kind = `${c.section}/${c.level}`;
     byKind[kind] = (byKind[kind] ?? 0) + 1;
@@ -112,11 +114,11 @@ function checkPlacement(ctx: Ctx, dir: string, file: string, c: Content) {
 }
 
 function checkCommon(ctx: Ctx, c: Content) {
-  if (!ctx.topics.has(c.topic)) err(ctx, `Ismeretlen témakör: "${c.topic}" (lásd config/exam/topics.json).`);
+  if (c.section !== "grammar" && !ctx.topics.has(c.topic)) err(ctx, `Ismeretlen témakör: "${c.topic}" (lásd config/exam/topics.json).`);
   if (c.source === "official" && !c.official) err(ctx, `Hivatalos feladatnál kötelező az "official" mező (év, időszak, szint).`);
   if (c.source === "generated" && c.official) err(ctx, `Generált feladat nem kaphat "official" mezőt.`);
   if (c.source === "official" && c.official && c.official.level !== c.level) err(ctx, `Az official.level nem egyezik a level mezővel.`);
-  if (c.section !== "vocabulary") {
+  if (c.section !== "vocabulary" && c.section !== "grammar") {
     const types = ctx.taskTypes[c.section as keyof Omit<TaskTypes, "meta">];
     const t = types.find((x) => x.id === c.type);
     if (!t) err(ctx, `Ismeretlen feladattípus a(z) ${c.section} részben: "${c.type}" (lásd config/exam/task-types.json).`);
@@ -275,6 +277,19 @@ function checkWriting(ctx: Ctx, w: WritingTask) {
   else if (rt.wordLimit.min !== w.wordLimit.min || rt.wordLimit.max !== w.wordLimit.max) {
     warn(ctx, `A szóhatár (${w.wordLimit.min}–${w.wordLimit.max}) eltér a rubrikától (${rt.wordLimit.min}–${rt.wordLimit.max}).`);
   }
+  const m = w.modelAnswer;
+  if (m) {
+    const wc = wordCount(m.text);
+    if (wc < w.wordLimit.min || wc > w.wordLimit.max) err(ctx, `A mintamegoldás ${wc} szó – a szóhatáron (${w.wordLimit.min}–${w.wordLimit.max}) belül kell lennie.`);
+    const textNorm = normalizeForSearch(m.text);
+    for (const pc of m.pointsCovered) {
+      if (!ids.includes(pc.id)) err(ctx, `A mintamegoldás pointsCovered "${pc.id}" azonosítója nem irányítási pont.`);
+      if (!textNorm.includes(normalizeForSearch(pc.quote))) err(ctx, `A mintamegoldás idézete nem található szó szerint a szövegben: "${pc.quote.slice(0, 60)}…"`);
+    }
+    const missing = ids.filter((id) => !m.pointsCovered.some((pc) => pc.id === id));
+    if (missing.length) err(ctx, `A mintamegoldás nem jelöli, hol teljesíti ezeket a pontokat: ${missing.join(", ")}.`);
+    if (m.notes.length < 2) warn(ctx, `A mintamegoldáshoz legalább 2 magyar megjegyzés kell (miért jó).`);
+  }
 }
 
 function checkSpeaking(ctx: Ctx, s: SpeakingTask) {
@@ -286,6 +301,34 @@ function checkSpeaking(ctx: Ctx, s: SpeakingTask) {
     if (s.level !== "emelt") err(ctx, `Vitafeladat csak emelt szinten van.`);
   }
   if (s.type === "presentation" && s.prompts.length < 1) err(ctx, `Témakifejtéshez legalább 1 "prompts" elem kell.`);
+}
+
+function checkLesson(ctx: Ctx, l: GrammarLesson) {
+  const group = ctx.categories.get(l.category);
+  if (!group) err(ctx, `Ismeretlen hibakategória: "${l.category}" (lásd config/exam/error-categories.json).`);
+  if (l.id !== `gr-${l.category}`) err(ctx, `A szabálylecke azonosítója "gr-${l.category}" legyen.`);
+  if (l.level !== "kozep") err(ctx, `A szabályleckék szintfüggetlenek: level "kozep" legyen, az emelt szabályok "emeltOnly": true jelölést kapnak.`);
+  for (const r of l.relatedCategories) if (!ctx.categories.has(r)) err(ctx, `relatedCategories: ismeretlen kategória "${r}".`);
+  const language = group !== "comprehension";
+  if (language && l.commonMistakes.length < 3) warn(ctx, `Legalább 3 tipikus hiba (commonMistakes) kell.`);
+  if (language && l.practice.length < 5) warn(ctx, `Legalább 5 gyakorló item (practice) kell.`);
+  l.practice.forEach((it, i) => {
+    const label = `practice ${it.id}`;
+    if (it.id !== String(i + 1)) err(ctx, `A gyakorló itemek számozása 1-től folyamatos legyen (a(z) ${i + 1}. helyen "${it.id}").`);
+    if (!ctx.categories.has(it.category)) err(ctx, `${label}: ismeretlen kategória "${it.category}".`);
+    if (it.explanation.trim().length < 15) warn(ctx, `${label}: túl rövid a magyarázat – írd le a helyes választ és az okát.`);
+    if (!it.prompt?.trim()) err(ctx, `${label}: hiányzik a feladatmondat ("prompt").`);
+    if (it.kind === "choice") {
+      const keys = it.options.map((o) => o.key);
+      if (new Set(keys).size !== keys.length) err(ctx, `${label}: duplikált opciókulcs.`);
+      if (!keys.includes(it.answer)) err(ctx, `${label}: a megoldás ("${it.answer}") nincs az opciók között.`);
+      const missing = keys.filter((k) => k !== it.answer && !it.wrongOptions?.[k]);
+      if (missing.length) err(ctx, `${label}: hiányzik a magyarázat, miért rossz: ${missing.join(", ")}.`);
+    } else {
+      const norm = it.answer.map(normalizeAnswer);
+      if (new Set(norm).size !== norm.length) err(ctx, `${label}: ismétlődő elfogadott válasz.`);
+    }
+  });
 }
 
 function checkVocab(ctx: Ctx, d: VocabDeck) {

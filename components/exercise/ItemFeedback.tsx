@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import type { Item } from "@/lib/content/schema";
 import type { ItemResult } from "@/lib/scoring/check";
 import { t } from "@/lib/i18n/hu";
@@ -8,7 +9,18 @@ import { t } from "@/lib/i18n/hu";
  * Feedback for one item: the given answer, the correct answer and WHY it is
  * correct, where it is in the text, and why the other options are wrong.
  */
-export function ItemFeedback({ item, result, categoryName }: { item: Item; result: ItemResult; categoryName?: string }) {
+export function ItemFeedback({
+  item,
+  result,
+  categoryName,
+  lessonLink = true,
+}: {
+  item: Item;
+  result: ItemResult;
+  categoryName?: string;
+  /** Link to the Szabálytár lesson of the item's category. */
+  lessonLink?: boolean;
+}) {
   const wrongOptions = item.kind === "choice" || item.kind === "match" ? item.wrongOptions : undefined;
   return (
     <div
@@ -28,6 +40,11 @@ export function ItemFeedback({ item, result, categoryName }: { item: Item; resul
           {t.task.correctAnswer}: <b data-testid={`correct-${item.id}`}>{result.expectedLabel}</b>
         </span>
         {categoryName && <span className="text-xs text-muted">· {categoryName}</span>}
+        {lessonLink && !result.correct && (
+          <Link href={`/szabalytar/${item.category}`} className="text-xs text-accent hover:underline" title={t.lessons.lessonLinkTitle} target="_blank">
+            § {t.lessons.lessonLink}
+          </Link>
+        )}
       </div>
       {result.near && <div className="mt-1 text-warn">⚠ {result.correct ? t.task.nearAccepted : t.task.near}</div>}
       <div className="mt-1.5">

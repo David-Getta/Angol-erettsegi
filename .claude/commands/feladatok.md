@@ -10,7 +10,8 @@ Argumentumok: `$ARGUMENTS`
 Formátum: `<rész> <szint> <darab> [témakör] [hibakategória]` – a `-` egy kihagyott opcionális paramétert jelent.
 
 - **rész**: `olvasas` → `reading`, `nyelvhelyesseg` → `language-use`, `hallas` → `listening`, `iras` → `writing`,
-  `szobeli` → `speaking`, `szokincs` → `vocabulary` (a megfeleltetés: `config/commands.json` → `sectionArgs`)
+  `szobeli` → `speaking`, `szokincs` → `vocabulary`, `szabaly` → `grammar` (szabálylecke a Szabálytárba)
+  (a megfeleltetés: `config/commands.json` → `sectionArgs`)
 - **szint**: `kozep` vagy `emelt`
 - **darab**: ennyi új fájlt írj (szókincsnél ennyi paklit)
 - **témakör** (opcionális): a `config/exam/topics.json` egyik `id`-je
@@ -64,12 +65,26 @@ Ha az argumentumok hiányosak vagy érvénytelenek, írd ki a helyes formát egy
 - `taskNumber` a rubrika szerinti 1. vagy 2. feladat; a `wordLimit`, `type` és `register` a rubrikával egyezzen.
 - `situation` angolul, valósághű helyzet; `points`: a rubrika szerinti számú irányítási szempont, id-k: `p1`, `p2`, …
 - `usefulPhrases`: 6–10 hasznos kifejezés magyar jelentéssel.
+- `modelAnswer`: mintamegoldás a szinten (közép: magabiztos B1, emelt: B2), a szóhatáron belül, minden irányítási pontra kitérve;
+  `pointsCovered`: pontonként a szöveg szó szerinti idézete; `notes`: 3–5 magyar megjegyzés, miért kapna maximális pontot.
 
 ### Szóbeli (`speaking`)
 - A `config/exam/structure.json` → `oral.parts` szerinti részekhez: `interview` (6–10 kérdés, néhány `followUps`),
   `situation` (helyzet, szerepek, 3–5 cél), `picture` (2 jelenetleírás képek helyett + kérdések), emelten `debate`
   (tétel, kiosztott álláspont, 4–6 vizsgáztatói ellenérv, 3–5 ötlet) és `presentation`, ha a leírás szerint van ilyen rész.
 - `instructionsHu`: a vizsgázónak szóló magyar utasítás; `usefulPhrases`; reális `speakingSeconds`.
+
+### Szabálylecke (`szabaly` → `grammar`)
+- Hibakategóriánként egy lecke: `content/grammar/kozep/gr-<hibakategória>.json` (mindig a `kozep` mappában, `"level": "kozep"`;
+  a csak emelt szinten szükséges szabályok `"emeltOnly": true` jelölést kapnak). Séma: `GrammarLessonSchema`.
+- Ha megadták a hibakategóriát, ahhoz írj (ha már van lecke, bővítsd/javítsd); ha nem, a `darab` számú, még lecke nélküli
+  kategóriához (`config/exam/error-categories.json`), a hibanaplóban gyakoribbakat előnyben részesítve.
+- `summaryHu` (2–4 mondat), `rules` (3–7 szabály magyar magyarázattal, 2–3 angol példával és fordítással), `commonMistakes`
+  (4–6 tipikus **magyar anyanyelvű** tanulói hiba: rossz → jó → miért), `examTips` (hol fordul elő az érettségin, hogyan kezeld),
+  `practice` (6 item: `choice` A–D opcióval és minden rossz opcióhoz `wrongOptions`, illetve `text` `___` hiánnyal és minden
+  elfogadható válasszal; mindegyiknél magyar `explanation`: a helyes megoldás és miért), `relatedCategories`.
+- Szövegértési kategóriáknál (detail, gist, inference …) a lecke stratégia: a szabályok a megoldási lépések, a tipikus hibák a csapdák,
+  a gyakorló itemek rövid angol szöveg + kérdés.
 
 ### Szókincs (`vocabulary`)
 - `type: "deck"`, témakörönként 30–50 kártya, szinthez illő szavak; `example` angol mondat, amely **tartalmazza** a szót;

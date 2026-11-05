@@ -18,6 +18,7 @@ function categoriesOf(c: Content): string[] {
   if (c.section === "reading" || c.section === "language-use" || c.section === "listening") {
     return [...new Set(c.items.map((i) => i.category))];
   }
+  if (c.section === "grammar") return [c.category];
   return [];
 }
 
@@ -25,6 +26,7 @@ function itemCount(c: Content): number {
   if (c.section === "reading" || c.section === "language-use" || c.section === "listening") return c.items.length;
   if (c.section === "vocabulary") return c.cards.length;
   if (c.section === "writing") return c.points.length;
+  if (c.section === "grammar") return c.practice.length;
   return 1;
 }
 
