@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "id": "sp-kozep-szemelyes-interview",
-  "revision": 1,
+  "revision": 2,
   "level": "kozep",
   "source": "generated",
   "topic": "szemelyes",
@@ -91,5 +91,55 @@
     }
   ],
   "speakingSeconds": 210,
-  "prepSeconds": 0
+  "prepSeconds": 0,
+  "sampleAnswer": {
+    "turns": [
+      {
+        "speaker": "examiner",
+        "text": "Could you tell me a little about yourself? Where do you live and who do you live with?"
+      },
+      {
+        "speaker": "candidate",
+        "text": "I live in a house in Győr with my parents, my younger sister and our dog, Morzsi. It's in a quiet street, not far from the river."
+      },
+      {
+        "speaker": "examiner",
+        "text": "How long have you lived there?"
+      },
+      {
+        "speaker": "candidate",
+        "text": "We've lived there for about ten years. Before that we lived in a small flat in the town centre, so we were really happy when we moved to a house with a garden."
+      },
+      {
+        "speaker": "examiner",
+        "text": "How many people are there in your family? Can you describe one of them?"
+      },
+      {
+        "speaker": "candidate",
+        "text": "There are four of us. My dad is tall and quite serious, but he's actually very funny when you get to know him. He works as an engineer, and he loves cooking at the weekend."
+      },
+      {
+        "speaker": "examiner",
+        "text": "What jobs do you do at home to help your parents?"
+      },
+      {
+        "speaker": "candidate",
+        "text": "I usually do the washing-up after dinner, and I walk the dog every morning. At the weekend I also vacuum my room."
+      },
+      {
+        "speaker": "examiner",
+        "text": "Have you got any brothers or sisters? Do you get on well with them?"
+      },
+      {
+        "speaker": "candidate",
+        "text": "I've got a younger sister, Lili, who is twelve. We usually get on well, but we sometimes argue about the bathroom in the morning, because she spends ages in there."
+      }
+    ],
+    "notes": [
+      "Feladat teljesítése: a vizsgázó minden kérdésre kifejtve válaszol, a családtag bemutatásánál külsőt, jellemet és szokást is említ, és apró, személyes részletekkel teszi életszerűvé a válaszokat.",
+      "Szókincs: a család és a házimunka szavai pontosak (do the washing-up, walk the dog, vacuum, get on well, argue about, spend ages).",
+      "Nyelvhelyesség: a „How long …?” kérdésre helyesen befejezett jelen idővel felel (We've lived there for about ten years), a korábbi állapotot egyszerű múlttal írja le, a „who is twelve” vonatkozó mellékmondat is hibátlan.",
+      "Érdemes megtanulni: „There are four of us.”, „he's actually very funny when you get to know him”, „We usually get on well, but …”, „she spends ages in there”."
+    ]
+  }
 }

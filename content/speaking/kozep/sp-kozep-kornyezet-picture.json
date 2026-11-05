@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "id": "sp-kozep-kornyezet-picture",
-  "revision": 1,
+  "revision": 2,
   "level": "kozep",
   "source": "generated",
   "topic": "kornyezet",
@@ -63,5 +63,27 @@
     }
   ],
   "speakingSeconds": 300,
-  "prepSeconds": 30
+  "prepSeconds": 30,
+  "sampleAnswer": {
+    "turns": [
+      {
+        "speaker": "candidate",
+        "text": "In the first picture a teenage boy is riding an electric scooter along a busy city street. Behind him there are tall blocks of flats and a crowded tram stop, and everyone seems to be in a hurry. In the second picture a girl is feeding chickens in the garden of an old village house, while her grandfather is working in the vegetable garden. It looks really quiet and peaceful. In both pictures young people are outdoors, but the two places are completely different. Both places have good and bad sides. In a city there are more jobs and things to do, but it's noisy and the air is often polluted. In a village, life is calmer and healthier, but you need a car to get anywhere. In the future I'd like to live in a city like Győr, at least while I'm young."
+      },
+      {
+        "speaker": "examiner",
+        "text": "Have you ever stayed in the countryside for a longer time? What was it like?"
+      },
+      {
+        "speaker": "candidate",
+        "text": "Yes, I spent two weeks at my grandparents' house near Kecskemét last summer. It was relaxing, but after a week I started to miss my friends."
+      }
+    ],
+    "notes": [
+      "Feladat teljesítése: a vizsgázó mindkét jelenetet leírja, mindkét lakóhely előnyeit és hátrányait is felsorolja, megmondja, hol szeretne élni és miért, a rákérdezésre pedig saját élménnyel felel.",
+      "Szókincs: a városi és vidéki élet szavai változatosak (blocks of flats, tram stop, in a hurry, peaceful, polluted, calmer and healthier).",
+      "Nyelvhelyesség: a „there are” szerkezet, a középfokú melléknevek (calmer, healthier) és a folyamatos jelen a képleírásban helyesek, a „Have you ever …?” kérdésre egyszerű múlttal ad konkrét választ.",
+      "Érdemes megtanulni: „everyone seems to be in a hurry”, „Both places have good and bad sides.”, „you need a car to get anywhere”, „at least while I'm young”."
+    ]
+  }
 }

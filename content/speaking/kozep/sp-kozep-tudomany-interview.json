@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "id": "sp-kozep-tudomany-interview",
-  "revision": 1,
+  "revision": 2,
   "level": "kozep",
   "source": "generated",
   "topic": "tudomany",
@@ -85,5 +85,55 @@
     }
   ],
   "speakingSeconds": 210,
-  "prepSeconds": 0
+  "prepSeconds": 0,
+  "sampleAnswer": {
+    "turns": [
+      {
+        "speaker": "examiner",
+        "text": "What electronic devices do you use every day?"
+      },
+      {
+        "speaker": "candidate",
+        "text": "I use my phone and my laptop every day, and I've also got a smartwatch that counts my steps. I use the laptop mainly for homework."
+      },
+      {
+        "speaker": "examiner",
+        "text": "Which one could you not live without?"
+      },
+      {
+        "speaker": "candidate",
+        "text": "Probably my phone, because I use it for almost everything: chatting, music and even buying bus tickets."
+      },
+      {
+        "speaker": "examiner",
+        "text": "What do you mostly use your phone for?"
+      },
+      {
+        "speaker": "candidate",
+        "text": "Mostly for messaging my friends and listening to music on the way to school. I also practise English vocabulary with an app every evening."
+      },
+      {
+        "speaker": "examiner",
+        "text": "How do your grandparents use technology? Do you help them?"
+      },
+      {
+        "speaker": "candidate",
+        "text": "My grandma only uses her phone to call us and to look at family photos. Last month I showed her how to send voice messages, and now she sends me one almost every day."
+      },
+      {
+        "speaker": "examiner",
+        "text": "What do you do to keep your personal information safe online?"
+      },
+      {
+        "speaker": "candidate",
+        "text": "I use different passwords for my accounts, and my profiles are private, so only my friends can see my photos. I never share my address with people I don't know."
+      }
+    ],
+    "notes": [
+      "Feladat teljesítése: a vizsgázó minden kérdésre kifejtve, saját életéből vett példákkal válaszol (a nagymama hangüzenetei, a szókincstanuló alkalmazás), és a rákérdezésre is indokol.",
+      "Szókincs: a technika témakörének mindennapi szavai pontosak (device, smartwatch, counts my steps, voice messages, passwords, my profiles are private).",
+      "Nyelvhelyesség: a jelen egyszerű idő a szokásokra, az egyszerű múlt az egyszeri eseményre (Last month I showed her …) helyes, a „that counts my steps” vonatkozó mellékmondat és a „show somebody how to …” szerkezet is hibátlan.",
+      "Érdemes megtanulni: „I use it for almost everything”, „on the way to school”, „I showed her how to send voice messages”, „with people I don't know”."
+    ]
+  }
 }

@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "id": "sp-kozep-tudomany-situation",
-  "revision": 1,
+  "revision": 2,
   "level": "kozep",
   "source": "generated",
   "topic": "tudomany",
@@ -56,5 +56,55 @@
     }
   ],
   "speakingSeconds": 240,
-  "prepSeconds": 30
+  "prepSeconds": 30,
+  "sampleAnswer": {
+    "turns": [
+      {
+        "speaker": "examiner",
+        "text": "Oh, hello, dear. I'm sorry to bother you, but my son has sent me this new phone, and I have no idea how to use it."
+      },
+      {
+        "speaker": "candidate",
+        "text": "Hello, Mrs Brown. Don't worry, you're not bothering me at all. What would you like to use the phone for?"
+      },
+      {
+        "speaker": "examiner",
+        "text": "Most of all, I'd like to see my son and my grandchildren in Toronto. Can I do that with this thing?"
+      },
+      {
+        "speaker": "candidate",
+        "text": "Yes, of course, you can make a video call. It's quite easy. First, open this messaging app here. Then find your son's name in your contacts and tap it. Finally, tap the small camera symbol at the top, and wait until he answers."
+      },
+      {
+        "speaker": "examiner",
+        "text": "Oh dear, there are so many buttons. What else could this phone be useful for?"
+      },
+      {
+        "speaker": "candidate",
+        "text": "I'd recommend BudapestGO, the public transport app. It shows you when the next bus or tram is coming, so you don't have to wait at the stop in the cold."
+      },
+      {
+        "speaker": "examiner",
+        "text": "That sounds clever. You're very kind. Could you show me again some other time?"
+      },
+      {
+        "speaker": "candidate",
+        "text": "Of course. How about Thursday afternoon at five? I finish school at four, so I could come round to your flat after that, and we could practise the video call together."
+      },
+      {
+        "speaker": "examiner",
+        "text": "Thursday at five is perfect. Thank you, dear."
+      },
+      {
+        "speaker": "candidate",
+        "text": "You're welcome. And if you have any problems before then, just knock on my door."
+      }
+    ],
+    "notes": [
+      "Kommunikációs cél: a vizsgázó kérdéssel kezdeményez (mire szeretné használni a telefont), egyszerű lépésekben elmagyarázza a videóhívást, indoklással ajánl egy hasznos alkalmazást, végül pontos időpontot egyeztet a gyakorlásra – mind a négy szempont teljesül.",
+      "Szókincs: a technika szavai egyszerűek és pontosak, ami egy idős embernek szóló magyarázatnál pont jó (video call, open this app, contacts, tap, camera symbol).",
+      "Nyelvhelyesség: a lépéseket felszólító mód és sorrendjelzők (First, Then, Finally) teszik világossá, a javaslat (How about …?) és a feltételes mondat (if you have any problems, just knock) is helyes.",
+      "Érdemes megtanulni: „you're not bothering me at all”, „First, … Then, … Finally, …”, „It shows you when the next bus or tram is coming”, „I could come round to your flat”."
+    ]
+  }
 }

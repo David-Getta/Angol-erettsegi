@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "id": "sp-kozep-iskola-situation",
-  "revision": 1,
+  "revision": 2,
   "level": "kozep",
   "source": "generated",
   "topic": "iskola",
@@ -60,5 +60,63 @@
     }
   ],
   "speakingSeconds": 240,
-  "prepSeconds": 30
+  "prepSeconds": 30,
+  "sampleAnswer": {
+    "turns": [
+      {
+        "speaker": "examiner",
+        "text": "Hello, come in. How can I help you?"
+      },
+      {
+        "speaker": "candidate",
+        "text": "Hello. I'm Réka Tóth from group three. To be honest, I'm not very happy with my group, because the lessons are too easy for me."
+      },
+      {
+        "speaker": "examiner",
+        "text": "I see. Can you give me an example of what you're doing in class?"
+      },
+      {
+        "speaker": "candidate",
+        "text": "Well, yesterday we practised the present simple the whole morning, and I learnt that years ago. I've been learning English for nine years, so I'm a bit bored. Would it be possible to move to a higher-level group?"
+      },
+      {
+        "speaker": "examiner",
+        "text": "There's a place in the upper-intermediate group, but their lessons start at half past eight. Is that OK for you?"
+      },
+      {
+        "speaker": "candidate",
+        "text": "Yes, that's no problem. When do the lessons finish? And which room are they in?"
+      },
+      {
+        "speaker": "examiner",
+        "text": "They finish at half past twelve, with a break at ten. They're in room twelve on the first floor. You can start tomorrow."
+      },
+      {
+        "speaker": "candidate",
+        "text": "Perfect, thank you. One more thing: what activities are there in the afternoons?"
+      },
+      {
+        "speaker": "examiner",
+        "text": "We've got beach volleyball, a cooking club and a photography walk around the town."
+      },
+      {
+        "speaker": "candidate",
+        "text": "The photography walk sounds great, because I love taking photos. Can I sign up for it here?"
+      },
+      {
+        "speaker": "examiner",
+        "text": "Of course, I'll put your name down. Is there anything else you'd like to know?"
+      },
+      {
+        "speaker": "candidate",
+        "text": "No, that's all. Thank you very much for your help!"
+      }
+    ],
+    "notes": [
+      "Kommunikációs cél: a vizsgázó sorban teljesíti a négy szempontot – elmondja és példával alátámasztja, miért elégedetlen, udvariasan kéri a csoportváltást, rákérdez az új csoport órarendjére, végül megtudja, milyen délutáni programok vannak, és indoklással választ egyet.",
+      "Szókincs: a helyzethez illő udvarias fordulatokat használ (To be honest, …; Would it be possible to …?; One more thing; Can I sign up for it?).",
+      "Nyelvhelyesség: a kérdések szórendje helyes (When do the lessons finish? Which room are they in?), a befejezett folyamatos jelen a „for” szóval (I've been learning English for nine years) és a múlt idő (practised, learnt) is hibátlan.",
+      "Érdemes megtanulni: „I'm not very happy with my group”, „Would it be possible to move to a higher-level group?”, „One more thing: …”, „Can I sign up for it here?”."
+    ]
+  }
 }

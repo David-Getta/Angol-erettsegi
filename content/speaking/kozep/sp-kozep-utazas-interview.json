@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "id": "sp-kozep-utazas-interview",
-  "revision": 1,
+  "revision": 2,
   "level": "kozep",
   "source": "generated",
   "topic": "utazas",
@@ -86,5 +86,55 @@
     }
   ],
   "speakingSeconds": 210,
-  "prepSeconds": 0
+  "prepSeconds": 0,
+  "sampleAnswer": {
+    "turns": [
+      {
+        "speaker": "examiner",
+        "text": "Do you like using public transport? Why or why not?"
+      },
+      {
+        "speaker": "candidate",
+        "text": "It depends. I take the bus to school every day, and it's cheap and quite reliable. But in the morning it's always crowded, so I often have to stand."
+      },
+      {
+        "speaker": "examiner",
+        "text": "Where did you go on holiday last summer?"
+      },
+      {
+        "speaker": "candidate",
+        "text": "We spent a week in Croatia, near Split. We stayed in a small apartment close to the beach."
+      },
+      {
+        "speaker": "examiner",
+        "text": "What did you do there?"
+      },
+      {
+        "speaker": "candidate",
+        "text": "We swam a lot, of course, and one day we took a boat trip to an island. In the evenings we walked around the old town and had ice cream."
+      },
+      {
+        "speaker": "examiner",
+        "text": "What is your favourite way to travel: by car, by train or by plane?"
+      },
+      {
+        "speaker": "candidate",
+        "text": "I like travelling by train best. You can walk around, read or look out of the window, and you don't have to worry about traffic jams."
+      },
+      {
+        "speaker": "examiner",
+        "text": "Which country would you most like to visit one day? Why?"
+      },
+      {
+        "speaker": "candidate",
+        "text": "I'd love to visit Japan, because the culture is so different from ours. I'm really interested in Japanese food, and I'd like to see the cherry blossom in spring."
+      }
+    ],
+    "notes": [
+      "Feladat teljesítése: a vizsgázó mérlegel (It depends … But …), konkrét nyaralási élményt mesél, és minden véleményét megindokolja, így egyik válasz sem marad egyszavas.",
+      "Szókincs: az utazás és a közlekedés szavai változatosak (reliable, crowded, took a boat trip, traffic jams, cherry blossom).",
+      "Nyelvhelyesség: a múlt nyári élményt következetesen egyszerű múlt írja le (spent, stayed, swam, took), a kívánságot pedig a helyes „I'd love to / I'd like to + igető” szerkezet fejezi ki.",
+      "Érdemes megtanulni: „It depends.”, „it's always crowded, so I often have to stand”, „you don't have to worry about traffic jams”, „the culture is so different from ours”."
+    ]
+  }
 }

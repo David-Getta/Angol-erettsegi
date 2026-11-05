@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "id": "sp-kozep-szabadido-situation",
-  "revision": 1,
+  "revision": 2,
   "level": "kozep",
   "source": "generated",
   "topic": "szabadido",
@@ -61,5 +61,63 @@
     }
   ],
   "speakingSeconds": 240,
-  "prepSeconds": 30
+  "prepSeconds": 30,
+  "sampleAnswer": {
+    "turns": [
+      {
+        "speaker": "examiner",
+        "text": "Good afternoon. Welcome to the Riverside Theatre. How can I help?"
+      },
+      {
+        "speaker": "candidate",
+        "text": "Good afternoon. Are there any tickets left for tonight's show? My friend and I would like two, please."
+      },
+      {
+        "speaker": "examiner",
+        "text": "Yes, we still have some seats."
+      },
+      {
+        "speaker": "candidate",
+        "text": "Great. How much are they? And are there any cheaper tickets for students?"
+      },
+      {
+        "speaker": "examiner",
+        "text": "They're forty-five pounds downstairs and twenty-eight pounds upstairs in the balcony. If you have a student card, you get ten per cent off."
+      },
+      {
+        "speaker": "candidate",
+        "text": "Then we'll take two seats in the balcony, please, because downstairs is too expensive for us. Could we sit in the front row? I think we'd see the whole stage from there."
+      },
+      {
+        "speaker": "examiner",
+        "text": "Yes, there are two seats free in the front row. Anything else?"
+      },
+      {
+        "speaker": "candidate",
+        "text": "What time does the show start, and when does it finish? We have to take the Underground back to our hostel, so we don't want to be too late."
+      },
+      {
+        "speaker": "examiner",
+        "text": "It starts at half past seven and finishes at about ten past ten. So that's two student tickets: fifty pounds forty altogether. How would you like to pay, by card or in cash?"
+      },
+      {
+        "speaker": "candidate",
+        "text": "By card, please. Here you are, and here are our student cards."
+      },
+      {
+        "speaker": "examiner",
+        "text": "Thank you. Here are your tickets. Enjoy the show!"
+      },
+      {
+        "speaker": "candidate",
+        "text": "Thanks a lot. Goodbye!"
+      }
+    ],
+    "notes": [
+      "Kommunikációs cél: a vizsgázó mind az öt szempontot sorban teljesíti – megkérdezi, van-e még jegy, rákérdez az árakra és a diákkedvezményre, indoklással helyet választ, megtudja a kezdés és a befejezés idejét, végül fizet –, a 40 fontos keretet is figyelembe veszi.",
+      "Szókincs: a jegyvásárlás szavai és fordulatai pontosak (tickets left, balcony, front row, student card, by card, the Underground).",
+      "Nyelvhelyesség: a kérdések szórendje hibátlan (Are there any tickets left …? What time does the show start?), az udvarias kérés (Could we sit …?) és a „we'll take …” döntés is helyes.",
+      "Érdemes megtanulni: „Are there any tickets left for tonight's show?”, „Are there any cheaper tickets for students?”, „Then we'll take two seats in the balcony”, „By card, please.”."
+    ]
+  }
 }

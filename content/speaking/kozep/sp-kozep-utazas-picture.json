@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "id": "sp-kozep-utazas-picture",
-  "revision": 1,
+  "revision": 2,
   "level": "kozep",
   "source": "generated",
   "topic": "utazas",
@@ -59,5 +59,27 @@
     }
   ],
   "speakingSeconds": 300,
-  "prepSeconds": 30
+  "prepSeconds": 30,
+  "sampleAnswer": {
+    "turns": [
+      {
+        "speaker": "candidate",
+        "text": "The first picture shows a family with two small children on a crowded sandy beach. The father is putting sun cream on the little boy, and the mother is reading a magazine under an umbrella. In the second picture two young backpackers are hiking on a mountain path. They're carrying big rucksacks, and the girl is checking the map on her phone. They look tired but happy. Both pictures show people on a summer holiday, but in very different ways. Each type of holiday has its advantages. A beach holiday is relaxing and comfortable, so it's perfect for families with small children. A hiking trip is cheaper and more adventurous. I'd prefer the second one, because I love nature and I don't like crowded places. Last summer I went hiking in the Mátra Mountains with my friends, and it was great fun."
+      },
+      {
+        "speaker": "examiner",
+        "text": "How do you prepare for a trip?"
+      },
+      {
+        "speaker": "candidate",
+        "text": "I usually check the weather forecast and make a list of things to pack. For a hiking trip, I also download the maps to my phone, because there's often no signal in the mountains."
+      }
+    ],
+    "notes": [
+      "Feladat teljesítése: a vizsgázó leírja az embereket és a helyeket, mindkét nyaralástípus előnyeit megnevezi, indoklással választ, saját élményt mesél, és a rákérdezésre is részletesen felel.",
+      "Szókincs: az utazás szavai változatosak és pontosak (sun cream, backpackers, rucksacks, adventurous, weather forecast, no signal).",
+      "Nyelvhelyesség: a középfokú melléknevek (cheaper, more adventurous) helyesek, a választást az „I'd prefer …” fejezi ki, a múlt nyári túra egyszerű múltban áll.",
+      "Érdemes megtanulni: „They look tired but happy.”, „Each type of holiday has its advantages.”, „it's perfect for families with small children”, „there's often no signal in the mountains”."
+    ]
+  }
 }

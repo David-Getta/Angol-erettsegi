@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "id": "sp-kozep-munka-situation",
-  "revision": 1,
+  "revision": 2,
   "level": "kozep",
   "source": "generated",
   "topic": "munka",
@@ -60,5 +60,63 @@
     }
   ],
   "speakingSeconds": 240,
-  "prepSeconds": 30
+  "prepSeconds": 30,
+  "sampleAnswer": {
+    "turns": [
+      {
+        "speaker": "examiner",
+        "text": "Hello, Harris Ice Cream, Tom speaking."
+      },
+      {
+        "speaker": "candidate",
+        "text": "Hello, Mr Harris. My name is Eszter Varga, and I'm calling about the summer job you advertised. I'm very interested, because I enjoy working with people, and my family has a holiday home in Siófok."
+      },
+      {
+        "speaker": "examiner",
+        "text": "Oh, great. Have you ever worked with customers before?"
+      },
+      {
+        "speaker": "candidate",
+        "text": "Yes, last summer I worked in a bakery in Veszprém for a month. I served customers and took payments. I also speak English and a little German, which could be useful with tourists."
+      },
+      {
+        "speaker": "examiner",
+        "text": "Well, it's quite hard work, especially at weekends. Is there anything you'd like to know about the job?"
+      },
+      {
+        "speaker": "candidate",
+        "text": "Yes, what would my working hours be? And how much do you pay per hour?"
+      },
+      {
+        "speaker": "examiner",
+        "text": "It's six hours a day, five days a week, either from ten till four or from four till ten. We pay two thousand two hundred forints an hour, plus tips."
+      },
+      {
+        "speaker": "candidate",
+        "text": "That sounds fine. I don't mind working in the evenings or at weekends."
+      },
+      {
+        "speaker": "examiner",
+        "text": "Could you come in for a trial day next week? Which day would suit you?"
+      },
+      {
+        "speaker": "candidate",
+        "text": "Would Tuesday be OK? I could come in the morning and be there at about ten."
+      },
+      {
+        "speaker": "examiner",
+        "text": "Tuesday at ten is perfect. The shop is on the promenade, near the pier."
+      },
+      {
+        "speaker": "candidate",
+        "text": "Great, thank you. See you on Tuesday, Mr Harris. Goodbye!"
+      }
+    ],
+    "notes": [
+      "Kommunikációs cél: a vizsgázó elmondja, miért telefonál és miért érdekli a munka, bemutatja a tapasztalatát és a nyelvtudását, rákérdez a munkaidőre és a fizetésre, végül időpontot egyeztet a próbanapra – mind a négy szempont teljesül.",
+      "Szókincs: az álláskeresés fordulatai természetesek és a helyzethez illők (the summer job you advertised, served customers, took payments, per hour, trial day).",
+      "Nyelvhelyesség: a múltbeli tapasztalatot egyszerű múlt írja le (worked, served, took), a „which could be useful” mellékmondat helyes, az udvarias kérdések (What would my working hours be? Would Tuesday be OK?) szórendje is pontos.",
+      "Érdemes megtanulni: „I'm calling about the summer job you advertised”, „which could be useful with tourists”, „I don't mind working in the evenings”, „Would Tuesday be OK?”."
+    ]
+  }
 }

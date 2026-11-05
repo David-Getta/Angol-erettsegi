@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "id": "sp-kozep-kornyezet-interview",
-  "revision": 1,
+  "revision": 2,
   "level": "kozep",
   "source": "generated",
   "topic": "kornyezet",
@@ -87,5 +87,55 @@
     }
   ],
   "speakingSeconds": 210,
-  "prepSeconds": 0
+  "prepSeconds": 0,
+  "sampleAnswer": {
+    "turns": [
+      {
+        "speaker": "examiner",
+        "text": "Could you describe the place where you live? Is it a flat or a house?"
+      },
+      {
+        "speaker": "candidate",
+        "text": "I live with my parents and my little brother in a third-floor flat in Debrecen. It isn't very big, but it's comfortable, and we've got a small balcony with a view of a park."
+      },
+      {
+        "speaker": "examiner",
+        "text": "What is your favourite room? Why?"
+      },
+      {
+        "speaker": "candidate",
+        "text": "My own room, because that's where I can relax and listen to music. I painted the walls light blue last summer, so it feels really cosy now."
+      },
+      {
+        "speaker": "examiner",
+        "text": "What can young people do in your town in their free time?"
+      },
+      {
+        "speaker": "candidate",
+        "text": "Quite a lot, actually. There's a big swimming pool, a cinema and lots of cafés in the centre. In summer we often cycle in Nagyerdő, which is a huge park with a forest."
+      },
+      {
+        "speaker": "examiner",
+        "text": "What do you and your family do to protect the environment?"
+      },
+      {
+        "speaker": "candidate",
+        "text": "We separate our rubbish, and we take our bottles back to the shop. I also try to save energy, so I always turn off the lights when I leave a room."
+      },
+      {
+        "speaker": "examiner",
+        "text": "What would you change in your town if you could?"
+      },
+      {
+        "speaker": "candidate",
+        "text": "I would plant more trees in the centre, because it gets really hot there in summer. I'd also build more cycle lanes."
+      }
+    ],
+    "notes": [
+      "Feladat teljesítése: a vizsgázó minden kérdésre kifejtve válaszol, konkrét debreceni példákat hoz (Nagyerdő), és indokolja, amit mond (because it gets really hot there in summer).",
+      "Szókincs: a lakóhely és a környezetvédelem szavai változatosak és pontosak (third-floor flat, cosy, separate our rubbish, save energy, cycle lanes).",
+      "Nyelvhelyesség: a leírásban helyesen váltakozik a „there is / there are” és a „have got”, a múltbeli eseményt egyszerű múlt fejezi ki (I painted), az elképzelt változtatást pedig feltételes mód (I would plant, I'd also build).",
+      "Érdemes megtanulni: „with a view of a park”, „Quite a lot, actually.”, „I always turn off the lights when I leave a room”, „it gets really hot there in summer”."
+    ]
+  }
 }

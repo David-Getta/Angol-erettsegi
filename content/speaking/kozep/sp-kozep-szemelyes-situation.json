@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "id": "sp-kozep-szemelyes-situation",
-  "revision": 1,
+  "revision": 2,
   "level": "kozep",
   "source": "generated",
   "topic": "szemelyes",
@@ -61,5 +61,59 @@
     }
   ],
   "speakingSeconds": 240,
-  "prepSeconds": 30
+  "prepSeconds": 30,
+  "sampleAnswer": {
+    "turns": [
+      {
+        "speaker": "examiner",
+        "text": "Hello, come in! Welcome to York. You must be tired. How was your journey?"
+      },
+      {
+        "speaker": "candidate",
+        "text": "Hello, Mrs Parker. Thank you very much for having me. The journey was long but fine: I flew from Budapest to Manchester, and then I took the train here. I slept a bit on the plane, so I'm not too tired."
+      },
+      {
+        "speaker": "examiner",
+        "text": "I'm glad to hear that. Is there anything you'd like to know about how things work in our house?"
+      },
+      {
+        "speaker": "candidate",
+        "text": "Yes, actually. What time do you usually have dinner? And what time do I have to be home in the evening?"
+      },
+      {
+        "speaker": "examiner",
+        "text": "We have dinner at about six, and we'd like you to be home by ten on weekdays."
+      },
+      {
+        "speaker": "candidate",
+        "text": "OK, no problem. Can I help you with anything in the house? For example, I could lay the table or do the washing-up after dinner."
+      },
+      {
+        "speaker": "examiner",
+        "text": "That's very kind of you. Is there anything you don't eat? I'm doing the shopping tomorrow."
+      },
+      {
+        "speaker": "candidate",
+        "text": "Well, I'm allergic to nuts, so I can't eat anything with peanuts or walnuts in it. But I eat everything else, and I'd love to try some typical English dishes."
+      },
+      {
+        "speaker": "examiner",
+        "text": "Don't worry, I'll remember that. We're free on Saturday. Is there anything you'd like to do?"
+      },
+      {
+        "speaker": "candidate",
+        "text": "Maybe we could walk along the old city walls together and then have lunch in a café in the centre?"
+      },
+      {
+        "speaker": "examiner",
+        "text": "That's a lovely idea. Let's do that."
+      }
+    ],
+    "notes": [
+      "Kommunikációs cél: a vizsgázó megköszöni a vendéglátást és beszámol az útjáról, rákérdez a házirendre, felajánlja a segítségét, megemlíti az ételallergiáját, végül programot javasol a hétvégére – mind az öt szempont teljesül, a megadott sorrendben.",
+      "Szókincs: a vendégség udvarias fordulatai a helyzethez illők (Thank you very much for having me; Can I help you with anything?; lay the table; allergic to nuts).",
+      "Nyelvhelyesség: az utazás leírásában az egyszerű múlt helyes (flew, took, slept), a kötelezettséget a „have to” (What time do I have to be home?), a javaslatot a „could” fejezi ki (Maybe we could …?).",
+      "Érdemes megtanulni: „Thank you very much for having me.”, „The journey was long but fine”, „I could lay the table or do the washing-up”, „I'm allergic to nuts”."
+    ]
+  }
 }

@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "id": "sp-kozep-eletmod-picture",
-  "revision": 1,
+  "revision": 2,
   "level": "kozep",
   "source": "generated",
   "topic": "eletmod",
@@ -59,5 +59,27 @@
     }
   ],
   "speakingSeconds": 300,
-  "prepSeconds": 30
+  "prepSeconds": 30,
+  "sampleAnswer": {
+    "turns": [
+      {
+        "speaker": "candidate",
+        "text": "In the first picture I can see a family of four having dinner at the kitchen table. They're eating roast chicken, potatoes and salad, which looks really healthy. Their phones are in a basket, so they're talking, and everyone is laughing. In the second picture a teenage boy is sitting alone in his dark bedroom. He's eating a burger and chips and drinking cola while he's playing a computer game. The main difference is that the first meal is healthy and sociable, while the second one is unhealthy and lonely. Both meals are at home, though. The first picture is more typical of my family, because my mum always says that dinner is for talking, not for phones. But I must admit that I sometimes eat crisps in front of my laptop too."
+      },
+      {
+        "speaker": "examiner",
+        "text": "Can you cook? What can you make?"
+      },
+      {
+        "speaker": "candidate",
+        "text": "Yes, a few simple things. My speciality is chicken paprikash, which my grandma taught me to make. I cooked it for my family last Sunday, and they loved it."
+      }
+    ],
+    "notes": [
+      "Feladat teljesítése: a vizsgázó mindkét jelenetet leírja, megnevezi a fő különbséget és egy hasonlóságot is, majd megindokolja, melyik kép jellemzőbb a családjára, és saját tapasztalattal zárja – minden irányító szempontra kitér.",
+      "Szókincs: az étkezés és a leírás szavai változatosak (roast chicken, sociable, lonely, crisps, speciality), az összehasonlításhoz pedig pontos kifejezéseket használ (The main difference is that …, while …).",
+      "Nyelvhelyesség: a képleírás következetesen folyamatos jelen időben szól (They're eating, he's playing), a saját szokásokat jelen egyszerű, a múlt vasárnapot egyszerű múlt fejezi ki.",
+      "Érdemes megtanulni: „The main difference is that …, while …”, „Both meals are at home, though.”, „is more typical of my family”, „But I must admit that …”."
+    ]
+  }
 }

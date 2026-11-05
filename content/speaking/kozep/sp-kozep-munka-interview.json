@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "id": "sp-kozep-munka-interview",
-  "revision": 1,
+  "revision": 2,
   "level": "kozep",
   "source": "generated",
   "topic": "munka",
@@ -86,5 +86,55 @@
     }
   ],
   "speakingSeconds": 210,
-  "prepSeconds": 0
+  "prepSeconds": 0,
+  "sampleAnswer": {
+    "turns": [
+      {
+        "speaker": "examiner",
+        "text": "What do your parents do? Do they like their jobs?"
+      },
+      {
+        "speaker": "candidate",
+        "text": "My mum is a nurse at the hospital in Pécs, and my dad works as an electrician. My mum loves helping people, but she's often tired because she works night shifts."
+      },
+      {
+        "speaker": "examiner",
+        "text": "Have you ever had a summer job or a part-time job?"
+      },
+      {
+        "speaker": "candidate",
+        "text": "Yes, last summer I worked as a waiter in a restaurant at Lake Balaton for six weeks. It was my first real job, so I was a bit nervous at the beginning."
+      },
+      {
+        "speaker": "examiner",
+        "text": "What did you have to do?"
+      },
+      {
+        "speaker": "candidate",
+        "text": "I had to take orders, carry plates and clear the tables. It was hard work, especially at weekends, but the tips were good."
+      },
+      {
+        "speaker": "examiner",
+        "text": "What job would you like to do in the future?"
+      },
+      {
+        "speaker": "candidate",
+        "text": "I'd like to be a software developer. I've been interested in computers since primary school, and I'm learning programming online at the moment."
+      },
+      {
+        "speaker": "examiner",
+        "text": "What is more important for you in a job: a good salary or interesting work?"
+      },
+      {
+        "speaker": "candidate",
+        "text": "For me, interesting work is more important. If you do something boring every day, you won't be happy, even if you earn a lot of money."
+      }
+    ],
+    "notes": [
+      "Feladat teljesítése: a vizsgázó minden kérdésre érdemben felel, a véleménykérdésnél pedig világosan állást foglal és meg is indokolja (If you do something boring every day …).",
+      "Szókincs: a munka világának pontos kifejezései szerepelnek (works as an electrician, night shifts, take orders, clear the tables, tips, software developer).",
+      "Nyelvhelyesség: a múltbeli munkát egyszerű múlt írja le (I worked, I had to), a máig tartó érdeklődést befejezett jelen (I've been interested … since …), az általános igazságot pedig helyes első feltételes mondat (If you do …, you won't be …).",
+      "Érdemes megtanulni: „she works night shifts”, „It was hard work, especially at weekends”, „I've been interested in computers since primary school”, „even if you earn a lot of money”."
+    ]
+  }
 }

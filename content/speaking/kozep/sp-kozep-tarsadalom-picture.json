@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "id": "sp-kozep-tarsadalom-picture",
-  "revision": 1,
+  "revision": 2,
   "level": "kozep",
   "source": "generated",
   "topic": "tarsadalom",
@@ -59,5 +59,27 @@
     }
   ],
   "speakingSeconds": 300,
-  "prepSeconds": 30
+  "prepSeconds": 30,
+  "sampleAnswer": {
+    "turns": [
+      {
+        "speaker": "candidate",
+        "text": "In the first picture a family is celebrating Christmas Eve in a warm living room. There's a big Christmas tree with presents under it, and the grandfather is opening a present while two children are watching him. On the table there are plates of fish soup and homemade cakes, just like in Hungary. In the second picture some teenagers are having a birthday party at a bowling alley. They're wearing party hats, and one girl is holding a cake with sixteen candles. The first celebration is calm and traditional, while the second one is noisy and modern. In both pictures, though, people are having a good time together. I enjoy family celebrations more, because they're special and we only have them a few times a year."
+      },
+      {
+        "speaker": "examiner",
+        "text": "Do you prefer giving or receiving presents?"
+      },
+      {
+        "speaker": "candidate",
+        "text": "Actually, I prefer giving them. I love choosing something special for my friends and seeing their faces when they open their presents."
+      }
+    ],
+    "notes": [
+      "Feladat teljesítése: a vizsgázó megmondja, hol vannak az emberek és mit ünnepelnek, összeveti a két ünneplést, közös pontot is talál, majd indoklással elmondja, melyiket szereti jobban, és saját szokásához köti (just like in Hungary).",
+      "Szókincs: az ünnepek szavai pontosak és a témához illők (Christmas Eve, presents, homemade cakes, bowling alley, party hats, candles).",
+      "Nyelvhelyesség: a „there is / there are” egyeztetése helyes (There's a big Christmas tree; there are plates of fish soup), a két egyidejű cselekvést a „while” köti össze folyamatos jelen időben.",
+      "Érdemes megtanulni: „just like in Hungary”, „In both pictures, though, …”, „I enjoy family celebrations more, because …”, „seeing their faces when they open their presents”."
+    ]
+  }
 }

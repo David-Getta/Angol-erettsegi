@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "id": "sp-kozep-utazas-situation",
-  "revision": 1,
+  "revision": 2,
   "level": "kozep",
   "source": "generated",
   "topic": "utazas",
@@ -60,5 +60,55 @@
     }
   ],
   "speakingSeconds": 240,
-  "prepSeconds": 30
+  "prepSeconds": 30,
+  "sampleAnswer": {
+    "turns": [
+      {
+        "speaker": "examiner",
+        "text": "Hello. Can I help you?"
+      },
+      {
+        "speaker": "candidate",
+        "text": "Hello, I hope so. I was going to take the twenty to three train to London, but the board says it's been cancelled. My aunt is meeting me at Euston, so I'm a bit worried."
+      },
+      {
+        "speaker": "examiner",
+        "text": "I'm sorry about that. Can I see your ticket, please?"
+      },
+      {
+        "speaker": "candidate",
+        "text": "Yes, of course. Here you are. When does the next train to London leave, and which platform does it go from?"
+      },
+      {
+        "speaker": "examiner",
+        "text": "The next one leaves at a quarter to four from platform six, but it's a slower train. It arrives in London at half past six. Is that all right for you?"
+      },
+      {
+        "speaker": "candidate",
+        "text": "Yes, that's fine. I'll text my aunt and tell her I'll be late. Is my ticket valid on that train, or do I have to pay extra?"
+      },
+      {
+        "speaker": "examiner",
+        "text": "Don't worry, your ticket is valid on any train today because of the cancellation. Is there anything else you need to know?"
+      },
+      {
+        "speaker": "candidate",
+        "text": "Yes, I haven't had lunch yet. Is there anywhere I can get something to eat while I'm waiting?"
+      },
+      {
+        "speaker": "examiner",
+        "text": "There are a few cafés upstairs, and there's a supermarket near the main entrance."
+      },
+      {
+        "speaker": "candidate",
+        "text": "Great, thank you very much for your help. Goodbye!"
+      }
+    ],
+    "notes": [
+      "Kommunikációs cél: a vizsgázó világosan elmondja a problémát, megkérdezi a következő vonat indulását és vágányát, tisztázza, érvényes-e a jegye, végül megtudja, hol ehet valamit – mind a négy szempont teljesül, és a váratlan információra (lassabb vonat) is rugalmasan reagál.",
+      "Szókincs: a vasúti utazás szavai pontosak (the board, cancelled, platform, valid, pay extra, main entrance).",
+      "Nyelvhelyesség: a meghiúsult tervet a „was going to”, a friss hírt a befejezett jelen szenvedő szerkezet (it's been cancelled), a döntést a „will” fejezi ki (I'll text my aunt), a kérdések szórendje is hibátlan.",
+      "Érdemes megtanulni: „I was going to take the twenty to three train”, „the board says it's been cancelled”, „Is my ticket valid on that train, or do I have to pay extra?”, „while I'm waiting”."
+    ]
+  }
 }

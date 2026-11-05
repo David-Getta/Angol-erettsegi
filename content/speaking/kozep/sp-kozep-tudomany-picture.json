@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "id": "sp-kozep-tudomany-picture",
-  "revision": 1,
+  "revision": 2,
   "level": "kozep",
   "source": "generated",
   "topic": "tudomany",
@@ -59,5 +59,27 @@
     }
   ],
   "speakingSeconds": 300,
-  "prepSeconds": 30
+  "prepSeconds": 30,
+  "sampleAnswer": {
+    "turns": [
+      {
+        "speaker": "candidate",
+        "text": "In the first picture a family of four is sitting in their living room on a Sunday evening. The parents are looking at their phones, and the children are using tablets with headphones on. The TV is on, but nobody is watching it, and nobody is talking. In the second picture some children are building a robot at a science centre, and an instructor is showing a girl how to connect the wires. In both pictures people are using technology, but in very different ways. In the first one everyone is alone with their own screen, while in the second one the children are working together and learning something new. I think the second picture shows a better way to use technology, because it's creative and social."
+      },
+      {
+        "speaker": "examiner",
+        "text": "What rules about phones are there in your home or at your school?"
+      },
+      {
+        "speaker": "candidate",
+        "text": "At my school we have to hand in our phones in the morning, and we get them back after the last lesson. At home we never use phones at dinner."
+      }
+    ],
+    "notes": [
+      "Feladat teljesítése: a vizsgázó leírja, mit csinálnak az emberek a technikával, megfogalmazza a hasonlóságot és a különbséget, indoklással értékeli, melyik a jobb használat, a rákérdezésre pedig konkrét iskolai és otthoni szabályokat mond.",
+      "Szókincs: a technika szavai pontosak (tablets, headphones, building a robot, connect the wires, screen, hand in our phones).",
+      "Nyelvhelyesség: a „nobody is watching it” egyes számú igével helyes, a „show somebody how to …” szerkezet és a „have to” a kötelezettségre hibátlan, a különbséget a „while” köti össze.",
+      "Érdemes megtanulni: „The TV is on, but nobody is watching it”, „but in very different ways”, „everyone is alone with their own screen”, „we have to hand in our phones”."
+    ]
+  }
 }

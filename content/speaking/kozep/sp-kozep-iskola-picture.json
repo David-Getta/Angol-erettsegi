@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "id": "sp-kozep-iskola-picture",
-  "revision": 1,
+  "revision": 2,
   "level": "kozep",
   "source": "generated",
   "topic": "iskola",
@@ -59,5 +59,27 @@
     }
   ],
   "speakingSeconds": 300,
-  "prepSeconds": 30
+  "prepSeconds": 30,
+  "sampleAnswer": {
+    "turns": [
+      {
+        "speaker": "candidate",
+        "text": "In the first picture there's a traditional maths lesson. About thirty students are sitting in rows and copying a long problem from the board. The room is quiet, but one boy at the back is looking out of the window, so he's probably bored. The second picture shows a science project in the school garden. Five students are measuring a tree, taking photos and writing notes, and their teacher is laughing with them. The biggest difference is that in the first lesson the teacher does most of the work, while in the second one the students are active and work together. In both pictures the students are learning something, though. I think I learn better in lessons like the second one, because I remember things more easily if I do them myself."
+      },
+      {
+        "speaker": "examiner",
+        "text": "Do you prefer working alone or in a group? Why?"
+      },
+      {
+        "speaker": "candidate",
+        "text": "It depends on the task. For a project, I prefer a group, because we can share the work. But when I'm studying for a test, I like to be alone, because I can concentrate better."
+      }
+    ],
+    "notes": [
+      "Feladat teljesítése: a vizsgázó mindkét órát leírja, megfogalmazza a legfontosabb különbséget, indoklással megmondja, melyik óratípus segíti jobban a tanulásban, és a rákérdezésre árnyaltan, helyzettől függően felel.",
+      "Szókincs: az iskolai tanulás szavai pontosak (sitting in rows, copying from the board, measuring, writing notes, share the work, concentrate).",
+      "Nyelvhelyesség: a képleírásban folyamatos jelen, az általános igazságokban jelen egyszerű idő áll helyesen (the teacher does most of the work), a „more easily” középfok és a feltételes mellékmondat (if I do them myself) is hibátlan.",
+      "Érdemes megtanulni: „so he's probably bored”, „The biggest difference is that …”, „I remember things more easily if I do them myself”, „It depends on the task.”."
+    ]
+  }
 }
