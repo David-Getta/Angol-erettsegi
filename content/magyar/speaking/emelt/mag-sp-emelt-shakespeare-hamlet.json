@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "mag-sp-emelt-shakespeare-hamlet",
+  "subject": "magyar",
+  "revision": 1,
+  "level": "emelt",
+  "source": "generated",
+  "topic": "szinhaz-drama",
+  "title": "Shakespeare: Hamlet – a gondolkodó hős tragédiája",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "speaking",
+  "type": "irodalom-tetel",
+  "partNumber": 1,
+  "instructionsHu": "Mutassa be Shakespeare Hamlet című tragédiáját! Helyezze el a művet a reneszánsz színház világában, mutassa be a konfliktust és a főhős dilemmáját, és értelmezze a megadott monológkezdetet!",
+  "prompts": [
+    "A reneszánsz angol színház és Shakespeare drámaírói pályája",
+    "A tragédia alapkonfliktusa és szerkezete (a bosszú feladata, színlelt őrület, „egérfogó”, katasztrófa)",
+    "Hamlet dilemmája: gondolkodás és cselekvés, a monológ szerepe",
+    "A mű magyar fogadtatása: Arany János fordítása"
+  ],
+  "sources": [
+    {
+      "title": "Shakespeare: Hamlet, III. felvonás 1. szín – a monológ kezdősora (Arany János fordítása, 1867)",
+      "text": "Lenni vagy nem lenni: az itt a kérdés."
+    }
+  ],
+  "keyPoints": [
+    "Shakespeare (1564–1616) az angol reneszánsz drámaírója; darabjait a londoni Globe színházban is játszották, nyitott, díszletszegény színpadon.",
+    "A Hamlet 1600 körül keletkezett, ötfelvonásos tragédia, nagyrészt rímtelen ötös jambusban (blank verse), prózai részekkel.",
+    "Alapkonfliktus: az apja szellemétől Hamlet megtudja, hogy nagybátyja, Claudius megölte az apját, elvette a trónt és feleségül vette anyját, Gertrudot; a szellem bosszút követel.",
+    "Hamlet őrültséget színlel, a vándorszínészekkel eljátszatja a gyilkosságot („egérfogó”), hogy Claudius bűnösségéről meggyőződjön.",
+    "A tragédia vétsége és bukása: Polonius halála, Ophélia megőrülése és halála, Laertes bosszúja, a párbaj, amelyben szinte mindenki meghal; Fortinbras veszi át a hatalmat.",
+    "Hamlet a gondolkodó, kételkedő reneszánsz ember: a cselekvés erkölcsi súlyát mérlegeli, ezért halogat.",
+    "A „Lenni vagy nem lenni” monológ az élet és a halál, a tűrés és a lázadás dilemmáját fogalmazza meg; a monológ a hős belső világának színpadi megjelenítése.",
+    "Arany János 1867-es fordítása a magyar műfordítás csúcsteljesítménye; a sor ma is szállóige."
+  ],
+  "speakingSeconds": 720,
+  "prepSeconds": 1200,
+  "usefulPhrases": [
+    { "en": "monológ", "hu": "a szereplő egyedül, önmagához vagy a közönséghez szóló hosszabb megszólalása – belső vívódás megjelenítése" },
+    { "en": "blank verse (rímtelen ötös jambus)", "hu": "Shakespeare drámáinak versformája" },
+    { "en": "színház a színházban („egérfogó”)", "hu": "a darabban előadott előadás, amely leleplezi Claudiust" },
+    { "en": "tragikus vétség", "hu": "a hős hibája, amely a bukáshoz vezet (Hamletnél a halogatás, Polonius megölése)" },
+    { "en": "reneszánsz ember – kételkedő értelmiségi", "hu": "Hamlet alakjának értelmezési kerete" }
+  ],
+  "sampleAnswer": {
+    "turns": [
+      {
+        "speaker": "candidate",
+        "text": "William Shakespeare az angol reneszánsz legnagyobb drámaírója, aki 1564-től 1616-ig élt. Darabjait a londoni Globe színházban is játszották, egy nyitott, díszletszegény színpadon, ahol a nyelv, a szöveg ereje teremtette meg a helyszínt és a hangulatot. A Hamlet 1600 körül keletkezett, ötfelvonásos tragédia, amelynek nagy része rímtelen ötös jambusban, úgynevezett blank verse-ben íródott.\n\nA dráma alapkonfliktusa egy bosszúfeladat. Hamlet, a dán királyfi apja szellemétől megtudja, hogy nagybátyja, Claudius megmérgezte az apját, elfoglalta a trónt, és feleségül vette Hamlet anyját, Gertrudot. A szellem bosszút követel. Hamlet azonban nem cselekszik azonnal: őrültséget színlel, majd a vándorszínészekkel eljátszatja a gyilkosságot, ez az úgynevezett egérfogó, hogy meggyőződjön Claudius bűnösségéről. A halogatás tragikus következményekkel jár: Hamlet tévedésből megöli Poloniust, Ophélia megőrül és meghal, Laertes bosszút esküszik, és a végső párbajban szinte mindenki életét veszti. A trónt a norvég Fortinbras foglalja el.\n\nHamlet a gondolkodó, kételkedő reneszánsz ember típusa. Nem gyáva, hanem túl sokat lát: tudja, hogy a bosszú is gyilkosság, és a világ, amelyben él, erkölcsileg kizökkent. Ezt a dilemmát fogalmazza meg a harmadik felvonás híres monológja, amely Arany János fordításában így kezdődik: „Lenni vagy nem lenni: az itt a kérdés.” A sor az élet és a halál, a szenvedés eltűrése és a lázadás közötti választást teszi fel, de általánosabban azt is, van-e értelme cselekedni egy romlott világban. A monológ a dráma eszközeivel jeleníti meg a hős belső világát: a néző Hamlet gondolkodásának tanújává válik.\n\nA magyar irodalomban a Hamlet különösen fontos, mert Arany János 1867-ben megjelent fordítása a magyar műfordítás egyik csúcsteljesítménye. A kezdősor ma is szállóige, amelyet sokan úgy idéznek, hogy nem is gondolnak rá: fordítást mondanak."
+      }
+    ],
+    "notes": [
+      "Tartalom: a felelet egyensúlyban tartja a kontextust (reneszánsz színház, versforma), a cselekmény lényegét és az értelmezést; a cselekményt csak a konfliktus megértéséhez szükséges mértékben ismerteti.",
+      "Értelmezés: Hamlet halogatását nem gyengeségként, hanem erkölcsi vívódásként magyarázza; a monológ funkcióját (belső világ színpadi megjelenítése) is megnevezi.",
+      "Nyelvi minőség: szakszavak (blank verse, monológ, színház a színházban) természetes használata, a magyar fordítás megemlítésével kulturális kitekintés."
+    ]
+  }
+}

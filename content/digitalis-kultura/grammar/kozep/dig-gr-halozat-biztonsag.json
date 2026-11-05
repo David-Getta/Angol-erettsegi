@@ -1,0 +1,267 @@
+{
+  "schemaVersion": 1,
+  "id": "dig-gr-halozat-biztonsag",
+  "subject": "digitalis-kultura",
+  "revision": 1,
+  "level": "kozep",
+  "source": "generated",
+  "topic": "nyelvtan",
+  "title": "Hálózatok, internet, adatbiztonság",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "grammar",
+  "type": "lesson",
+  "category": "halozat-biztonsag",
+  "summaryHu": "A hálózatokról és az adatbiztonságról szóló szóbeli tételekben (és a gyorsgyakorlás kérdéseiben) a pontos fogalmak számítanak: milyen eszköz mit csinál, mi az IP-cím és a DNS szerepe, mit véd a https és mit nem, hogyan működik a kétlépcsős azonosítás. A leggyakoribb hibák a bit és a bájt összekeverése a sebességszámításnál, és a túlzó állítások (pl. „a https oldal biztosan megbízható”).",
+  "rules": [
+    {
+      "title": "Hálózattípusok és eszközök",
+      "explanation": "PAN (személyes, pl. Bluetooth), LAN (helyi, épület), WAN (nagy kiterjedésű), internet (hálózatok hálózata). Switch: helyi hálózaton belül továbbít; router: hálózatok között, IP-cím alapján; hozzáférési pont (AP): vezeték nélküli csatlakozás; modem: a szolgáltató vonalához illeszt.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "otthoni „router”: router + switch + Wi-Fi hozzáférési pont (+ modem) egyben",
+          "hu": "kombinált eszköz"
+        }
+      ]
+    },
+    {
+      "title": "Címzés és névfeloldás",
+      "explanation": "IPv4-cím: 32 bit, négy 0–255 közötti szám (192.168.1.10); IPv6: 128 bit. Az alhálózati maszk (pl. 255.255.255.0) mutatja, melyik rész azonosítja a hálózatot. A DHCP automatikusan oszt IP-címet, a DNS a domainnevet fordítja IP-címre.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "192.168.10.37 / 255.255.255.0 → hálózat: 192.168.10",
+          "hu": "azonos alhálózat: 192.168.10.x"
+        },
+        {
+          "en": "www.pelda.hu → DNS → IP-cím",
+          "hu": "névfeloldás"
+        }
+      ]
+    },
+    {
+      "title": "Protokollok",
+      "explanation": "HTTP/HTTPS: weboldalak (a HTTPS TLS-sel titkosít, a szerver tanúsítvánnyal igazolja magát); SMTP: levélküldés; IMAP/POP3: levelek olvasása/letöltése; FTP/SFTP: fájlátvitel; DNS, DHCP. Az adatok csomagokra bontva utaznak.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "https:// + lakat ikon",
+          "hu": "titkosított kapcsolat – de nem garancia az oldal tisztességére"
+        }
+      ]
+    },
+    {
+      "title": "Fenyegetések és védekezés",
+      "explanation": "Adathalászat (hamis üzenet és oldal), kártevők: vírus (gazdafájlhoz kötve), féreg (önállóan terjed), trójai (hasznosnak álcázott), zsarolóvírus (titkosít és váltságdíjat kér), kémprogram. Védekezés: frissítések, víruskereső, tűzfal, gyanús linkek és mellékletek kerülése, erős és egyedi jelszavak, jelszókezelő, kétlépcsős azonosítás, rendszeres mentés (3-2-1 szabály: 3 példány, 2 különböző adathordozón, 1 másik helyen).",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "jelszó + telefonra érkező kód",
+          "hu": "kétlépcsős azonosítás"
+        }
+      ]
+    },
+    {
+      "title": "Sávszélesség és letöltési idő",
+      "explanation": "A sávszélességet bit/s-ban (Mbit/s), a fájlméretet bájtban (MB) adják meg; 1 bájt = 8 bit. Letöltési idő = fájlméret · 8 / sávszélesség (ideális esetben).",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "50 MB · 8 = 400 Mbit; 400 Mbit / 20 Mbit/s = 20 s",
+          "hu": "letöltési idő számítása"
+        }
+      ]
+    },
+    {
+      "title": "Emelt szint: titkosítás és hitelesítés",
+      "explanation": "Szimmetrikus titkosítás (AES): egy közös kulcs; aszimmetrikus (RSA): nyilvános és privát kulcspár; a TLS a kettőt kombinálja. Hash: egyirányú kivonat (ellenőrzőösszeg, jelszótárolás sózott, lassú hash-sel). Digitális aláírás: a hash privát kulccsal aláírva, nyilvános kulccsal ellenőrizhető.",
+      "emeltOnly": true,
+      "examples": [
+        {
+          "en": "nyilvános kulccsal titkosít → csak a privát kulccsal fejthető vissza",
+          "hu": "aszimmetrikus titkosítás"
+        }
+      ]
+    }
+  ],
+  "commonMistakes": [
+    {
+      "wrong": "A https-es oldal biztosan nem csaló oldal.",
+      "right": "A https csak azt garantálja, hogy a kapcsolat titkosított, és a tanúsítvány a címben szereplő domainhez tartozik.",
+      "why": "Adathalász oldalak is kaphatnak tanúsítványt; a domainnevet (pl. elgépelt bankcím) mindig ellenőrizni kell."
+    },
+    {
+      "wrong": "100 Mbit/s-on egy 100 MB-os fájl 1 másodperc alatt jön le.",
+      "right": "100 MB = 800 Mbit, így ideális esetben 8 másodperc.",
+      "why": "A sávszélesség bitben, a fájlméret bájtban értendő; a 8-as szorzó kimaradása a leggyakoribb számolási hiba."
+    },
+    {
+      "wrong": "Minden oldalon ugyanazt az erős jelszót használom.",
+      "right": "Minden szolgáltatáshoz egyedi jelszót használok (jelszókezelővel), és bekapcsolom a kétlépcsős azonosítást.",
+      "why": "Ha egy oldal adatai kiszivárognak, a támadók a jelszót más oldalakon is kipróbálják."
+    },
+    {
+      "wrong": "Az inkognitó (privát) mód névtelenné tesz az interneten.",
+      "right": "A privát mód csak a saját gépen nem tárol előzményt és sütit.",
+      "why": "Az IP-cím, a szolgáltató és a meglátogatott oldal továbbra is látja a forgalmat."
+    }
+  ],
+  "examTips": [
+    "Az elméleti tételben a működést folyamatként is mondd el (pl. weboldal megnyitása: DNS → kapcsolat → kérés → válasz) – ez mutatja az összefüggéseket.",
+    "Számolásnál mindig írd ki a mértékegységet és a bájt–bit átváltást.",
+    "A biztonsági tanácsokat indokold (mi ellen véd), ne csak sorold fel őket."
+  ],
+  "practice": [
+    {
+      "kind": "choice",
+      "prompt": "Melyik érvényes IPv4-cím?",
+      "options": [
+        {
+          "key": "A",
+          "text": "10.20.30.256"
+        },
+        {
+          "key": "B",
+          "text": "172.16.0.1"
+        },
+        {
+          "key": "C",
+          "text": "192.168.1"
+        },
+        {
+          "key": "D",
+          "text": "300.1.2.3"
+        }
+      ],
+      "answer": "B",
+      "explanation": "B – 172.16.0.1: négy, 0 és 255 közötti szám, ponttal elválasztva.",
+      "wrongOptions": {
+        "A": "A 256 nem fér el 8 biten.",
+        "C": "Csak három szám van benne.",
+        "D": "A 300 nagyobb 255-nél."
+      },
+      "id": "1",
+      "category": "halozat-biztonsag"
+    },
+    {
+      "kind": "text",
+      "prompt": "Melyik szolgáltatás (rövidítés) fordítja a domainneveket IP-címekre?",
+      "answer": [
+        "DNS"
+      ],
+      "explanation": "DNS (Domain Name System). Nélküle minden oldalt IP-címmel kellene megnyitnunk.",
+      "id": "2",
+      "category": "halozat-biztonsag"
+    },
+    {
+      "kind": "choice",
+      "prompt": "Mit tesz a böngésző privát (inkognitó) módja?",
+      "options": [
+        {
+          "key": "A",
+          "text": "A böngészés után nem őrzi meg a saját gépen az előzményeket és a sütiket."
+        },
+        {
+          "key": "B",
+          "text": "Elrejti az IP-címet a meglátogatott oldalak elől."
+        },
+        {
+          "key": "C",
+          "text": "Megvéd a vírusoktól."
+        },
+        {
+          "key": "D",
+          "text": "Titkosítja az összes forgalmat."
+        }
+      ],
+      "answer": "A",
+      "explanation": "A. A privát mód csak helyben nem tárol; a szolgáltató, a hálózat üzemeltetője és a weboldal továbbra is látja a forgalmat.",
+      "wrongOptions": {
+        "B": "Az IP-cím rejtéséhez pl. VPN kellene.",
+        "C": "A kártevők ellen nem nyújt védelmet.",
+        "D": "A titkosítást a https adja, nem a privát mód."
+      },
+      "id": "3",
+      "category": "halozat-biztonsag"
+    },
+    {
+      "kind": "choice",
+      "prompt": "Ideális esetben mennyi ideig tart egy 50 MB-os fájl letöltése 20 Mbit/s sebességen?",
+      "options": [
+        {
+          "key": "A",
+          "text": "2,5 másodperc"
+        },
+        {
+          "key": "B",
+          "text": "20 másodperc"
+        },
+        {
+          "key": "C",
+          "text": "2,5 perc"
+        },
+        {
+          "key": "D",
+          "text": "400 másodperc"
+        }
+      ],
+      "answer": "B",
+      "explanation": "B – 20 s: 50 MB · 8 = 400 Mbit; 400 Mbit / 20 Mbit/s = 20 s.",
+      "wrongOptions": {
+        "A": "Ez a 8-as szorzó nélkül jön ki (50 / 20).",
+        "C": "Ez 150 másodperc, nem jön ki a helyes átváltásból.",
+        "D": "Ez a megabitben kifejezett fájlméret, nem az idő."
+      },
+      "id": "4",
+      "category": "halozat-biztonsag"
+    },
+    {
+      "kind": "choice",
+      "prompt": "Mit mond ki a biztonsági mentés 3-2-1 szabálya?",
+      "options": [
+        {
+          "key": "A",
+          "text": "3 példány, 2 különböző adathordozón, 1 másik helyen (pl. felhőben vagy otthonon kívül)"
+        },
+        {
+          "key": "B",
+          "text": "3 havonta, 2 jelszóval, 1 meghajtóra"
+        },
+        {
+          "key": "C",
+          "text": "3 víruskereső, 2 tűzfal, 1 mentés"
+        },
+        {
+          "key": "D",
+          "text": "3 felhasználó, 2 gép, 1 közös mappa"
+        }
+      ],
+      "answer": "A",
+      "explanation": "A. Így egy meghajtó hibája, egy zsarolóvírus vagy akár egy tűz sem okoz végleges adatvesztést.",
+      "wrongOptions": {
+        "B": "A szabály a példányokról, adathordozókról és helyszínekről szól.",
+        "C": "Több víruskereső egyszerre ütközhet, és nem mentési szabály.",
+        "D": "A közös mappa nem biztonsági mentés."
+      },
+      "id": "5",
+      "category": "halozat-biztonsag"
+    },
+    {
+      "kind": "text",
+      "prompt": "Hány bites egy IPv4-cím?",
+      "answer": [
+        "32",
+        "32 bit",
+        "32 bites"
+      ],
+      "explanation": "32 bit: négy 8 bites rész (4 · 8 = 32). Az IPv6-cím 128 bites.",
+      "id": "6",
+      "category": "halozat-biztonsag"
+    }
+  ],
+  "relatedCategories": [
+    "hardver-szoftver-fogalom",
+    "informacios-tarsadalom-fogalom"
+  ]
+}
