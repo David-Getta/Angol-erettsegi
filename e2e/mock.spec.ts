@@ -8,7 +8,7 @@ import { acceptDialogs, feedbackFromInbox, inboxIds, SAMPLE_TEXT, writeOutbox } 
  */
 test("mock exam: four parts → writing graded via the outbox → points, percentage, 12% minimum, grade", async ({ page }) => {
   await acceptDialogs(page);
-  await page.goto("/");
+  await page.goto("/kezdolap");
   await page.getByTestId("level-emelt").click();
 
   await page.goto("/probaerettsegi");

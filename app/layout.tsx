@@ -3,6 +3,8 @@ import "./globals.css";
 import { getSettings } from "@/lib/settings";
 import { t } from "@/lib/i18n/hu";
 import { AppNav } from "@/components/AppNav";
+import { navGroups } from "@/lib/nav";
+import { examConfig } from "@/lib/exam/config";
 import { LevelSwitch } from "@/components/LevelSwitch";
 import { ThemeSwitch } from "@/components/ThemeSwitch";
 import { ToastProvider } from "@/components/Toast";
@@ -27,6 +29,7 @@ const themeScript = `(function(){try{var t=document.documentElement.dataset.them
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   const s = getSettings();
+  const subj = examConfig.subject();
   return (
     <html lang="hu" data-theme={s.theme} className={s.theme === "dark" ? "dark" : undefined} suppressHydrationWarning>
       <head>
@@ -34,7 +37,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       </head>
       <body className="min-h-screen">
         <ToastProvider>
-        <AppNav level={s.level} />
+        <AppNav level={s.level} subject={{ id: subj.id, name: subj.name, icon: subj.icon }} groups={navGroups(s.level)} />
         <div className="app-main lg:ml-60">
           <header className="app-topbar sticky top-0 z-20 flex items-center justify-end gap-3 border-b border-border bg-bg/90 px-4 py-2 backdrop-blur lg:px-8">
             <LevelSwitch level={s.level} />

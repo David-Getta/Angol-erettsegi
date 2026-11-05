@@ -1,4 +1,3 @@
-import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import { getTaskRow } from "@/lib/tasks";
@@ -7,15 +6,14 @@ import type { WritingTask } from "@/lib/content/schema";
 import { examConfig, topicName, taskTypeName } from "@/lib/exam/config";
 import { t } from "@/lib/i18n/hu";
 import { Badge, SourceBadge } from "@/components/ui";
-import { WritingEditor } from "./WritingEditor";
+import { WritingEditor } from "@/components/writing/WritingEditor";
+import type { ExamPart } from "@/lib/exam/config";
 import { GuideLink } from "@/components/guides/GuideLink";
 import { ModelAnswer } from "@/components/grading/ModelAnswer";
 
-export const metadata: Metadata = { title: t.writing.title };
-
-export default async function WritingTaskPage({ params, searchParams }: { params: Promise<{ id: string }>; searchParams: Promise<{ mode?: string; parent?: string }> }) {
-  const { id } = await params;
-  const sp = await searchParams;
+/** One written task (writing editor, submission, model answer). */
+export function WrittenTask({ part, id, sp }: { part: ExamPart; id: string; sp: { mode?: string; parent?: string } }) {
+  const base = `/${part.slug}`;
   const row = getTaskRow(id);
   if (!row || row.section !== "writing") notFound();
   const task = row.content as WritingTask;
@@ -27,8 +25,8 @@ export default async function WritingTaskPage({ params, searchParams }: { params
   return (
     <div>
       <div className="mb-3 flex flex-wrap items-center gap-2 text-sm">
-        <Link href="/iras" className="text-muted hover:underline">
-          ← {t.writing.title}
+        <Link href={base} className="text-muted hover:underline">
+          ← {part.name}
         </Link>
         <SourceBadge source={task.source} />
         <Badge>{task.taskNumber}. feladat</Badge>
@@ -40,6 +38,7 @@ export default async function WritingTaskPage({ params, searchParams }: { params
         <GuideLink type="writing" target={task.type} label={t.guides.open(taskTypeName("writing", task.type))} />
       </div>
       <WritingEditor
+        base={base}
         task={task}
         mode={mode}
         parent={parent && parent.taskId === task.id ? { id: parent.id, text: parent.text, version: parent.version } : null}

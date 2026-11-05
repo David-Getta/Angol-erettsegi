@@ -17,6 +17,8 @@ export const SubmissionFileSchema = z.object({
   id: z.string().regex(/^[a-z0-9-]+$/),
   kind: z.enum(["writing", "speaking"]),
   createdAt: z.string(),
+  /** Subject id (config/subjects.json); the rubric file is under config/subjects/<subject>/. */
+  subject: z.string().default("angol"),
   level: LevelSchema,
   mode: z.enum(["practice", "exam", "mock", "diagnostic"]),
   version: z.number().int().positive(),

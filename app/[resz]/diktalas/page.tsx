@@ -4,11 +4,16 @@ import { getSettings } from "@/lib/settings";
 import { dictationSentences } from "@/lib/dictation";
 import { Card, PageHeader } from "@/components/ui";
 import { t } from "@/lib/i18n/hu";
-import { DictationRunner } from "./DictationRunner";
+import { DictationRunner } from "@/components/listening/DictationRunner";
+import { notFound } from "next/navigation";
+import { resolvePart } from "../parts";
 
 export const metadata: Metadata = { title: t.dictation.title };
 
-export default function DictationPage() {
+export default async function DictationPage({ params }: { params: Promise<{ resz: string }> }) {
+  const { resz } = await params;
+  const part = resolvePart(resz);
+  if (!part.features.audio) notFound();
   const s = getSettings();
   const sentences = dictationSentences(s.level, 8);
   return (
@@ -17,8 +22,8 @@ export default function DictationPage() {
         title={t.dictation.title}
         intro={t.dictation.intro}
         actions={
-          <Link href="/hallas" className="text-sm text-muted hover:underline">
-            ← {t.listening.title}
+          <Link href={`/${part.slug}`} className="text-sm text-muted hover:underline">
+            ← {part.name}
           </Link>
         }
       />

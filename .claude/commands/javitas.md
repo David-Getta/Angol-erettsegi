@@ -16,7 +16,7 @@ Argumentum (opcionális): `$ARGUMENTS` – ha megadtak egy beadás-azonosítót,
 2. Minden beadásnál olvasd el az `exchange/inbox/<id>.json` fájlt:
    - `instructions`: **a teljes javítási utasítás** (rubrika sávleírásokkal, feladat, irányítási pontok, a tanuló szövege, a válasz pontos JSON-formája).
      Ezt kövesd – ugyanez a prompt megy a Claude appba is, ezért a két út eredménye összevethető.
-   - `rubric.file`: a rubrika teljes JSON-ja (pl. `config/exam/writing-rubric-emelt.json`) – nézd meg a sávleírásokat és a szabályokat
+   - `subject`: a tantárgy; `rubric.file`: a rubrika teljes JSON-ja (pl. `config/subjects/angol/writing-rubric-emelt.json`) – nézd meg a sávleírásokat és a szabályokat
      (szóhatár, témától eltérés stb.). Szóbelinél a rubrika `tasks` listájából a feladat típusához (`task.type`) tartozó
      szempontok érvényesek (az inbox-fájl `rubric.id`-je ezt jelöli); a kiejtés (`overall`) átiratból nem ítélhető meg, nem pontozod.
    - `task.card`: a feladatkártya; `previousVersion`: átírásnál az előző változat.
@@ -25,7 +25,7 @@ Argumentum (opcionális): `$ARGUMENTS` – ha megadtak egy beadás-azonosítót,
 3. Javíts **szigorúan és következetesen**:
    - Ne kerekíts felfelé; kétes esetben az alacsonyabb sávot add. Minden szempontnál indokolj, a sávleírásra hivatkozva.
    - Minden hibát vegyél fel a `corrections`-be: `original` = karakterre pontosan a tanuló szövegéből (rövid, egyértelműen megtalálható rész),
-     `corrected` = helyes angol forma, `category` = a `config/exam/error-categories.json` egyik id-je,
+     `corrected` = a helyes forma / megoldás (nyelvnél a célnyelven, más tantárgynál magyarul), `category` = a `config/subjects/<subject>/error-categories.json` egyik id-je,
      `explanation` = **magyarul: mi a hiba, mi a helyes megoldás és miért** (a szabály).
    - `taskPoints`: minden irányítási pont (`p1`, `p2`, …) / szóbeli cél értékelése (`covered` / `partial` / `missing` + magyar megjegyzés).
    - `priorities`: pontosan 3 konkrét fejlesztendő terület magyarul.

@@ -6,13 +6,6 @@ import { deckStatuses, type DeckStatus } from "@/lib/vocab/cards";
 export const TOPIC_SECTIONS = ["reading", "language-use", "listening", "writing", "speaking"] as const;
 export type TopicSection = (typeof TOPIC_SECTIONS)[number];
 
-export const SECTION_PATH: Record<TopicSection, string> = {
-  reading: "/olvasas",
-  "language-use": "/nyelvhelyesseg",
-  listening: "/hallas",
-  writing: "/iras",
-  speaking: "/szobeli",
-};
 
 export type TopicOverview = {
   topic: Topic;

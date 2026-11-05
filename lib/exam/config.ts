@@ -79,6 +79,10 @@ const PartSchema = z.object({
   /** URL segment of the part in this subject (e.g. olvasas, rovid-feladatok). */
   slug: z.string().regex(/^[a-z0-9-]+$/),
   name: z.string(),
+  /** Hungarian one-liner shown under the part's title. */
+  intro: z.string().optional(),
+  /** Icon for the navigation (emoji); defaults by kind. */
+  icon: z.string().optional(),
   nameEn: z.string().optional(),
   written: z.boolean(),
   order: z.number().int(),
@@ -305,9 +309,22 @@ export function isSubject(id: string): boolean {
   return load("subjects.json", SubjectsSchema).subjects.some((x) => x.id === id);
 }
 
-/** The subject the student is working on (settings). */
+let subjectOverride: string | null = null;
+
+/** The subject the student is working on (settings), or the one set by `withSubject`. */
 export function currentSubject(): string {
-  return getSettings().subject;
+  return subjectOverride ?? getSettings().subject;
+}
+
+/** Runs a synchronous computation as if another subject were current (used by the subject chooser's summaries). */
+export function withSubject<T>(id: string, fn: () => T): T {
+  const prev = subjectOverride;
+  subjectOverride = id;
+  try {
+    return fn();
+  } finally {
+    subjectOverride = prev;
+  }
 }
 
 export type SubjectConfig = ReturnType<typeof configFor>;
@@ -408,6 +425,13 @@ export function partBySlug(slug: string, level?: Level): ExamPart | undefined {
 export function partPath(id: string): string {
   const p = findPart(id);
   return p ? `/${p.slug}` : `/${id}`;
+}
+
+/** URL of the targeted-practice page: the first part with the `targeted` feature (defaults to the language-use slot). */
+export function targetedPath(): string {
+  const st = examConfig.structure();
+  const p = [...st.levels.kozep.parts, ...st.levels.emelt.parts].find((x) => x.features.targeted);
+  return p ? `/${p.slug}/celzott` : `/${findPart("language-use")?.slug ?? "nyelvhelyesseg"}/celzott`;
 }
 
 /** The parts of a level with a given kind. */

@@ -1,22 +1,25 @@
 ---
 description: Új érettségi-szerű feladatok generálása a tartalombankba (content/)
-argument-hint: <rész> <szint> <darab> [témakör] [hibakategória]
+argument-hint: <tantárgy> <rész> <szint> <darab> [témakör] [hibakategória]
 ---
 
 # /feladatok – új feladatok a tartalombankba
 
 Argumentumok: `$ARGUMENTS`
 
-Formátum: `<rész> <szint> <darab> [témakör] [hibakategória]` – a `-` egy kihagyott opcionális paramétert jelent.
+Formátum: `<tantárgy> <rész> <szint> <darab> [témakör] [hibakategória]` – a `-` egy kihagyott opcionális paramétert jelent.
 
-- **rész**: `olvasas` → `reading`, `nyelvhelyesseg` → `language-use`, `hallas` → `listening`, `iras` → `writing`,
-  `szobeli` → `speaking`, `szokincs` → `vocabulary`, `szabaly` → `grammar` (szabálylecke a Szabálytárba),
-  `utmutato` → `guide` (útmutató az Útmutatók közé)
-  (a megfeleltetés: `config/commands.json` → `sectionArgs`)
+- **tantárgy**: a `config/subjects.json` egyik `id`-je (`angol`, `magyar`, `matematika`, `tortenelem`, `nemet`, `fizika`, `kemia`,
+  `biologia`, `foldrajz`, `digitalis-kultura`). A tantárgy configja: `config/subjects/<tantárgy>/`, tartalma: `content/<tantárgy>/`.
+- **rész**: a vizsgarész `slug`-ja a tantárgy `config/subjects/<tantárgy>/structure.json` fájljából (`levels.<szint>.parts[].slug`,
+  pl. angolnál `olvasas`, `nyelvhelyesseg`, `hallas`, `iras`, `szobeli`; matematikánál `rovid-feladatok`, `kidolgozott-feladatok`, `szobeli`).
+  A slughoz tartozó `id` (`reading` | `language-use` | `listening` | `writing` | `speaking`) a fájl `section` mezője és a mappa neve,
+  a `kind` (`objective` | `written` | `oral`) mondja meg, melyik séma kell. Különleges értékek: `szokincs` → `vocabulary` (pakli),
+  `szabaly` → `grammar` (szabálylecke a Szabálytárba), `utmutato` → `guide` (útmutató az Útmutatók közé).
 - **szint**: `kozep` vagy `emelt`
 - **darab**: ennyi új fájlt írj (szókincsnél ennyi paklit)
-- **témakör** (opcionális): a `config/exam/topics.json` egyik `id`-je
-- **hibakategória** (opcionális, főleg nyelvhelyességhez): a `config/exam/error-categories.json` egyik `id`-je
+- **témakör** (opcionális): a `config/subjects/<tantárgy>/topics.json` egyik `id`-je
+- **hibakategória** (opcionális, főleg nyelvhelyességhez): a `config/subjects/<tantárgy>/error-categories.json` egyik `id`-je
 
 Ha az argumentumok hiányosak vagy érvénytelenek, írd ki a helyes formát egy példával, és állj meg.
 
@@ -26,18 +29,21 @@ Ha az argumentumok hiányosak vagy érvénytelenek, írd ki a helyes formát egy
 
 1. `CLAUDE.md` – „Tartalomséma” és „Minőségi szabályok a generáláshoz”.
 2. `lib/content/schema.ts` – a pontos séma (a validátor ehhez ellenőriz).
-3. `config/exam/task-types.json` – a rész hivatalos feladattípusai és szintjei (csak ezeket a `type` értékeket használd);
-   `config/exam/structure.json` – `levels.<szint>.textLength` (szöveghossz) és a részek leírása;
-   `config/exam/topics.json`; `config/exam/error-categories.json`; íráshoz `config/exam/writing-rubric-<szint>.json` (szóhatárok, feladattípusok);
-   szóbelihez `config/exam/speaking-rubric-<szint>.json` és `structure.json` → `oral`.
-4. Nézz meg 1–2 meglévő fájlt ugyanebből a részből és szintből formai mintának: `content/<rész>/<szint>/`.
-5. **Leltár**: futtasd `npm run validate-content -- --no-warnings`, és nézd meg a `content/<rész>/<szint>/` fájlok `title`, `topic`, `type`
-   mezőit (pl. `grep -h '"title"\|"topic"\|"type"' content/<rész>/<szint>/*.json`). Ritkábban szereplő témakört és feladattípust válassz,
-   ne ismételj szöveget, helyzetet vagy szereplőt.
+3. A tantárgy configja (`config/subjects/<tantárgy>/`): `task-types.json` – a rész hivatalos feladattípusai és szintjei (csak ezeket a
+   `type` értékeket használd); `structure.json` – a részek (`parts[]`: `id`, `kind`, `features` – pl. `evidence`, `glossary`, `wrongOptions`,
+   `audio`, `categoryGroups` – ezeket a validátor számon kéri), `textLength`, `oral`; `topics.json`; `error-categories.json`;
+   írásbeli feladathoz `writing-rubric-<szint>.json` (szóhatárok, feladatszámok, szempontok); szóbelihez `speaking-rubric-<szint>.json`.
+   A tantárgy nyelv-e (`language` a `config/subjects.json`-ban): nyelvnél a feladatok angolul (ill. a célnyelven), a magyarázatok magyarul;
+   más tantárgynál minden magyarul.
+4. Nézz meg 1–2 meglévő fájlt ugyanebből a részből és szintből formai mintának: `content/<tantárgy>/<rész-id>/<szint>/` (ha a
+   tantárgynál még nincs, az angol megfelelőjét: `content/angol/...`).
+5. **Leltár**: futtasd `npm run validate-content -- --no-warnings`, és nézd meg a `content/<tantárgy>/<rész-id>/<szint>/` fájlok `title`,
+   `topic`, `type` mezőit. Ritkábban szereplő témakört és feladattípust válassz, ne ismételj szöveget, helyzetet vagy szereplőt.
 
 ## 2. Generálás
 
-- Fájl: `content/<rész>/<szint>/<id>.json`, ahol az `id` = fájlnév, formája `<előtag>-<szint>-<rövid-angol-slug>`
+- Fájl: `content/<tantárgy>/<rész-id>/<szint>/<id>.json`, `"subject": "<tantárgy>"` mezővel; az `id` = fájlnév, formája
+  `<előtag>-<szint>-<rövid-slug>` (más tantárgynál az előtag elé a tantárgy rövidítése: pl. `mat-rd-kozep-…`, `tor-wr-emelt-…`)
   (előtagok: `rd` olvasás, `lu` nyelvhelyesség, `ls` hallás, `wr` írás, `sp` szóbeli, `vc` szókincs), pl. `lu-emelt-urban-gardens-open-cloze`.
   Az id legyen egyedi (ellenőrizd `ls`-sel).
 - Közös mezők: `"schemaVersion": 1`, `"source": "generated"` (**mindig**), `"createdAt": "<mai dátum ÉÉÉÉ-HH-NN>"`, `"revision": 1`, `"tags": []`.
@@ -70,7 +76,7 @@ Ha az argumentumok hiányosak vagy érvénytelenek, írd ki a helyes formát egy
   `pointsCovered`: pontonként a szöveg szó szerinti idézete; `notes`: 3–5 magyar megjegyzés, miért kapna maximális pontot.
 
 ### Szóbeli (`speaking`)
-- A `config/exam/structure.json` → `oral.parts` szerinti részekhez: `interview` (6–10 kérdés, néhány `followUps`),
+- A `config/subjects/<tantárgy>/structure.json` → `oral.parts` szerinti részekhez: `interview` (6–10 kérdés, néhány `followUps`),
   `situation` (helyzet, szerepek, 3–5 cél), `picture` (2 jelenetleírás képek helyett + kérdések), emelten `debate`
   (tétel, kiosztott álláspont, 4–6 vizsgáztatói ellenérv, 3–5 ötlet) és `presentation`, ha a leírás szerint van ilyen rész.
 - `instructionsHu`: a vizsgázónak szóló magyar utasítás; `usefulPhrases`; reális `speakingSeconds`.
@@ -79,10 +85,10 @@ Ha az argumentumok hiányosak vagy érvénytelenek, írd ki a helyes formát egy
   `notes`: 3–4 magyar megjegyzés, miért jó és mit érdemes megtanulni belőle).
 
 ### Szabálylecke (`szabaly` → `grammar`)
-- Hibakategóriánként egy lecke: `content/grammar/kozep/gr-<hibakategória>.json` (mindig a `kozep` mappában, `"level": "kozep"`;
+- Hibakategóriánként egy lecke: `content/<tantárgy>/grammar/kozep/gr-<hibakategória>.json` (mindig a `kozep` mappában, `"level": "kozep"`;
   a csak emelt szinten szükséges szabályok `"emeltOnly": true` jelölést kapnak). Séma: `GrammarLessonSchema`.
 - Ha megadták a hibakategóriát, ahhoz írj (ha már van lecke, bővítsd/javítsd); ha nem, a `darab` számú, még lecke nélküli
-  kategóriához (`config/exam/error-categories.json`), a hibanaplóban gyakoribbakat előnyben részesítve.
+  kategóriához (`config/subjects/<tantárgy>/error-categories.json`), a hibanaplóban gyakoribbakat előnyben részesítve.
 - `summaryHu` (2–4 mondat), `rules` (3–7 szabály magyar magyarázattal, 2–3 angol példával és fordítással), `commonMistakes`
   (4–6 tipikus **magyar anyanyelvű** tanulói hiba: rossz → jó → miért), `examTips` (hol fordul elő az érettségin, hogyan kezeld),
   `practice` (6 item: `choice` A–D opcióval és minden rossz opcióhoz `wrongOptions`, illetve `text` `___` hiánnyal és minden
@@ -91,13 +97,13 @@ Ha az argumentumok hiányosak vagy érvénytelenek, írd ki a helyes formát egy
   a gyakorló itemek rövid angol szöveg + kérdés.
 
 ### Útmutató (`utmutato` → `guide`)
-- Fájl: `content/guide/kozep/gd-<type>-<target>.json` (szintfüggetlen; szintfüggő tanács a `levelNotes`-ba). Séma: `GuideSchema`.
+- Fájl: `content/<tantárgy>/guide/kozep/gd-<type>-<target>.json` (szintfüggetlen; szintfüggő tanács a `levelNotes`-ba). Séma: `GuideSchema`.
   `type`: `writing` (target = szövegtípus a `task-types.json` writing listájából), `speaking` (target = szóbeli feladattípus)
   vagy `exam` (target = vizsgarész: reading, language-use, listening, writing, speaking).
-- Ha nem adtak meg mást, a `darab` számú, még hiányzó útmutatót írd meg (nézd meg, mi van már a `content/guide/kozep/` alatt).
+- Ha nem adtak meg mást, a `darab` számú, még hiányzó útmutatót írd meg (nézd meg, mi van már a `content/<tantárgy>/guide/kozep/` alatt).
 - `summaryHu`, `steps` (4–7 lépés: felépítés bekezdésenként / a feladat menete / megoldási sorrend), `phrases` (írás és szóbeli:
   15–30 kifejezés csoportokban, magyar jelentéssel), `mistakes` (4–6 tipikus magyar tanulói hiba), `checklist` (5–8 kérdés),
-  `timing` (a `structure.json` időkeretei alapján), rövid `example`. Hivatalos adatot (idő, pont, szóhatár) csak a `config/exam/`-ból vegyél.
+  `timing` (a `structure.json` időkeretei alapján), rövid `example`. Hivatalos adatot (idő, pont, szóhatár) csak a `config/subjects/<tantárgy>/`-ból vegyél.
 
 ### Szókincs (`vocabulary`)
 - `type: "deck"`, témakörönként 30–50 kártya, szinthez illő szavak; `example` angol mondat, amely **tartalmazza** a szót;

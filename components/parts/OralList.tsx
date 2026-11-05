@@ -1,10 +1,9 @@
-import type { Metadata } from "next";
 import Link from "next/link";
 import { getSettings } from "@/lib/settings";
 import { listTasks, contentStock } from "@/lib/tasks";
 import { listSubmissions } from "@/lib/submissions";
 import { pendingInbox } from "@/lib/exchange/files";
-import { examConfig, levelStructure } from "@/lib/exam/config";
+import { examConfig, levelStructure, taskTypeName } from "@/lib/exam/config";
 import { feladatokCommand } from "@/lib/commands/build";
 import type { SpeakingTask } from "@/lib/content/schema";
 import { getSpeaking } from "@/lib/tasks";
@@ -15,24 +14,26 @@ import { CommandTip } from "@/components/CommandTip";
 import { ImportButton } from "@/components/grading/ImportButton";
 import { ReloadContentButton } from "@/components/ReloadContentButton";
 
-export const metadata: Metadata = { title: t.speaking.title };
+import type { ExamPart } from "@/lib/exam/config";
 
-export default async function SpeakingPage({ searchParams }: { searchParams: Promise<{ tema?: string }> }) {
-  const { tema } = await searchParams;
+/** List page of the oral part (speaking tasks / tételek), filterable by topic. */
+export function OralList({ part, tema }: { part: ExamPart; tema?: string }) {
   const s = getSettings();
+  const base = `/${part.slug}`;
   const topics = examConfig.topics().topics;
   const oral = levelStructure(s.level).oral;
   const tasks = listTasks("speaking", s.level).filter((x) => !tema || x.topic === tema);
   const subs = listSubmissions("speaking").filter((x) => x.level === s.level);
-  const pending = pendingInbox().filter((id) => id.startsWith("s-"));
+  const mine = new Set(subs.map((x) => x.id));
+  const pending = pendingInbox().filter((id) => mine.has(id));
   const stock = contentStock(s.level).filter((r) => r.section === "speaking");
   const titles = new Map(listTasks("speaking", s.level).map((x) => [x.id, x.title]));
 
   return (
     <div>
-      <PageHeader title={t.speaking.title} intro={t.speaking.intro} actions={
+      <PageHeader title={part.name} intro={part.intro ?? t.speaking.intro} actions={
           <>
-            <GuideLink type="exam" target="speaking" label={t.guides.strategy} />
+            <GuideLink type="exam" target={part.id} label={t.guides.strategy} />
             <ReloadContentButton />
           </>
         } />
@@ -43,10 +44,10 @@ export default async function SpeakingPage({ searchParams }: { searchParams: Pro
         </CommandTip>
       )}
       {stock.reduce((n, r) => n + r.unused, 0) <= examConfig.app().lowStock.threshold && (
-        <CommandTip command={feladatokCommand("speaking", s.level, 6, tema)} message={t.tips.lowStock(t.section.speaking)} dismissKey={`low-speaking-${s.level}`} />
+        <CommandTip command={feladatokCommand(examConfig.subject().id, part.slug, s.level, 6, tema)} message={t.tips.lowStock(part.name)} dismissKey={`low-speaking-${s.level}`} />
       )}
       {oral && (
-      <Card className="mb-6" title={`Szóbeli felépítése (${t.level[s.level]}, kb. ${oral.durationMin} perc)`}>
+      <Card className="mb-6" title={`${part.name} felépítése (${t.level[s.level]}, kb. ${oral.durationMin} perc)`}>
         <ol className="grid gap-2 text-sm sm:grid-cols-3">
           {oral.parts.map((p) => (
             <li key={p.number} className="rounded-lg bg-surface-2/60 p-3">
@@ -61,18 +62,18 @@ export default async function SpeakingPage({ searchParams }: { searchParams: Pro
       </Card>
       )}
       <div className="mb-4 flex flex-wrap gap-1.5 text-sm">
-        <Link href="/szobeli" className={!tema ? btn.primary : btn.small}>
+        <Link href={base} className={!tema ? btn.primary : btn.small}>
           {t.common.all}
         </Link>
         {topics.map((tp) => (
-          <Link key={tp.id} href={`/szobeli?tema=${tp.id}`} className={tema === tp.id ? btn.primary : btn.small}>
+          <Link key={tp.id} href={`${base}?tema=${tp.id}`} className={tema === tp.id ? btn.primary : btn.small}>
             {tp.number}. {tp.name}
           </Link>
         ))}
       </div>
       <div className="grid gap-6 lg:grid-cols-[minmax(0,2fr)_minmax(0,1fr)]">
         <div className="space-y-6">
-          {(oral?.parts ?? [{ number: 1, name: t.speaking.title, description: "" }]).map((p) => {
+          {(oral?.parts ?? [{ number: 1, name: part.name, description: "" }]).map((p) => {
             const list = tasks.filter((x) => (getSpeaking(x.id) as SpeakingTask | null)?.partNumber === p.number);
             if (!list.length) return null;
             return (
@@ -83,10 +84,10 @@ export default async function SpeakingPage({ searchParams }: { searchParams: Pro
                 <ul className="grid gap-3 sm:grid-cols-2">
                   {list.map((x) => (
                     <li key={x.id}>
-                      <Link href={`/szobeli/${x.id}`} className="block h-full rounded-xl border border-border bg-surface p-4 hover:border-accent" data-testid={`task-${x.id}`}>
+                      <Link href={`${base}/${x.id}`} className="block h-full rounded-xl border border-border bg-surface p-4 hover:border-accent" data-testid={`task-${x.id}`}>
                         <div className="flex flex-wrap gap-1.5">
                           <SourceBadge source={x.source} />
-                          <Badge>{t.speaking.types[x.type] ?? x.type}</Badge>
+                          <Badge>{taskTypeName("speaking", x.type)}</Badge>
                           <Badge>{topics.find((tp) => tp.id === x.topic)?.name ?? x.topic}</Badge>
                         </div>
                         <div className="mt-2 font-medium">{x.title}</div>
@@ -106,7 +107,7 @@ export default async function SpeakingPage({ searchParams }: { searchParams: Pro
             <ul className="divide-y divide-border text-sm">
               {subs.slice(0, 30).map((x) => (
                 <li key={x.id} className="py-2">
-                  <Link href={`/szobeli/beadas/${x.id}`} className="block hover:underline">
+                  <Link href={`${base}/beadas/${x.id}`} className="block hover:underline">
                     <div className="font-medium">{titles.get(x.taskId) ?? x.taskId}</div>
                     <div className="flex flex-wrap items-center gap-2 text-xs text-muted">
                       <span>{formatDate(x.createdAt)}</span>

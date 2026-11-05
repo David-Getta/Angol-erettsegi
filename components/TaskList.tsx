@@ -1,9 +1,9 @@
 import Link from "next/link";
 import type { Level, ObjectiveSection } from "@/lib/content/schema";
 import { listTasks, contentStock } from "@/lib/tasks";
-import { examConfig, topicName, taskTypeName } from "@/lib/exam/config";
+import { examConfig, topicName, taskTypeName, partName } from "@/lib/exam/config";
 import { feladatokCommand } from "@/lib/commands/build";
-import { t, sectionLabel } from "@/lib/i18n/hu";
+import { t } from "@/lib/i18n/hu";
 import { Badge, Empty, SourceBadge, pct, btn } from "./ui";
 import { CommandTip } from "./CommandTip";
 
@@ -25,8 +25,8 @@ export function TaskList({ section, level, base, showReserved }: { section: Obje
     <div className="space-y-6">
       {(totalUnused <= app.lowStock.threshold || low.length > 0) && (
         <CommandTip
-          command={feladatokCommand(section, level, app.lowStock.suggestCount)}
-          message={t.tips.lowStock(low.length ? low.map((r) => r.typeName).join(", ") : sectionLabel(section))}
+          command={feladatokCommand(examConfig.subject().id, base.slice(1), level, app.lowStock.suggestCount)}
+          message={t.tips.lowStock(low.length ? low.map((r) => r.typeName).join(", ") : partName(section))}
           dismissKey={`low-${section}-${level}-${totalUnused}`}
         />
       )}

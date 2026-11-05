@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 import { getSettings } from "@/lib/settings";
 import { accuracyByCategory, accuracyByType, errorsPerWeek, scoreTrend, timePerDay, timePerWeek, writingCriteriaTrend } from "@/lib/stats";
-import { examConfig, labelMaps } from "@/lib/exam/config";
-import { t, sectionLabel } from "@/lib/i18n/hu";
+import { examConfig, labelMaps, levelStructure } from "@/lib/exam/config";
+import { t } from "@/lib/i18n/hu";
 import Link from "next/link";
 import { Card, PageHeader, btn } from "@/components/ui";
 import { LineChart } from "@/components/charts/LineChart";
@@ -14,9 +14,9 @@ export const metadata: Metadata = { title: t.stats.title };
 export default function StatsPage() {
   const s = getSettings();
   const labels = labelMaps();
-  const names: Record<string, string> = { reading: t.section.reading, "language-use": t.section["language-use"], listening: t.section.listening, writing: t.section.writing, speaking: t.section.speaking };
+  const names: Record<string, string> = Object.fromEntries(levelStructure(s.level).parts.map((p) => [p.id, p.name]));
   const trend = scoreTrend(s.level, names);
-  const byType = accuracyByType(s.level, (sec, ty) => labels.taskTypes[`${sec}:${ty}`] ?? ty, sectionLabel);
+  const byType = accuracyByType(s.level, (sec, ty) => labels.taskTypes[`${sec}:${ty}`] ?? ty, (sec) => names[sec] ?? sec);
   const byCat = accuracyByCategory(labels.categories);
   const days = timePerDay(30);
   const weeks = timePerWeek(12);

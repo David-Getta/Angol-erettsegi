@@ -3,6 +3,7 @@ import Link from "next/link";
 import { getSettings } from "@/lib/settings";
 import { activeMock, buildPlan, listMocks, type MockResult } from "@/lib/mock";
 import { feladatokCommand } from "@/lib/commands/build";
+import { partPath, examConfig } from "@/lib/exam/config";
 import { t } from "@/lib/i18n/hu";
 import { Badge, Card, PageHeader, btn, formatDate } from "@/components/ui";
 import { CommandTip } from "@/components/CommandTip";
@@ -36,7 +37,7 @@ export default function DiagnosticLanding() {
           <>
             <p className="text-sm text-bad">{t.diagnostic.notEnough}</p>
             {plan.missing.map((m) => (
-              <CommandTip key={m.part} command={feladatokCommand(m.part, s.level, 2)} message={t.mock.notEnough(m.name)} />
+              <CommandTip key={m.part} command={feladatokCommand(examConfig.subject().id, partPath(m.part).slice(1), s.level, 2)} message={t.mock.notEnough(m.name)} />
             ))}
           </>
         )}

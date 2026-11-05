@@ -8,12 +8,19 @@ import { buildCommand } from "@/lib/commands/build";
 import { t } from "@/lib/i18n/hu";
 import { Badge, Card, PageHeader } from "@/components/ui";
 import { CommandTip } from "@/components/CommandTip";
-import { TargetedRunner } from "./TargetedRunner";
+import { TargetedRunner } from "@/components/exercise/TargetedRunner";
+import { notFound } from "next/navigation";
+import { resolvePart } from "../parts";
 
 export const metadata: Metadata = { title: t.languageUse.targeted };
 
-export default async function TargetedPage({ searchParams }: { searchParams: Promise<{ k?: string }> }) {
+export default async function TargetedPage({ params, searchParams }: { params: Promise<{ resz: string }>; searchParams: Promise<{ k?: string }> }) {
+  const { resz } = await params;
   const { k } = await searchParams;
+  const part = resolvePart(resz);
+  if (!part.features.targeted) notFound();
+  const base = `/${part.slug}`;
+  const groups = part.features.categoryGroups;
   const s = getSettings();
   const app = examConfig.app();
   const cats = examConfig.errorCategories().categories;
@@ -28,14 +35,14 @@ export default async function TargetedPage({ searchParams }: { searchParams: Pro
         <Card title={t.languageUse.targetedPick}>
           <ul className="grid gap-2 sm:grid-cols-2 lg:grid-cols-3">
             {cats
-              .filter((c) => c.group === "grammar" || c.group === "vocabulary")
+              .filter((c) => groups.length === 0 || groups.includes(c.group))
               .map((c) => {
                 const n = countBankItems(c.id, s.level);
                 const errs = stats.get(c.id)?.total ?? 0;
                 return (
                   <li key={c.id}>
                     <Link
-                      href={`/nyelvhelyesseg/celzott?k=${c.id}`}
+                      href={`${base}/celzott?k=${c.id}`}
                       className={`flex items-center justify-between gap-2 rounded-lg border border-border bg-surface px-3 py-2 text-sm hover:border-accent ${n === 0 ? "opacity-60" : ""}`}
                     >
                       <span>{c.name}</span>
@@ -69,7 +76,7 @@ export default async function TargetedPage({ searchParams }: { searchParams: Pro
       {lowCats.map((c) => (
         <CommandTip
           key={c}
-          command={buildCommand("feladatok", ["nyelvhelyesseg", s.level, 10, null, c])}
+          command={buildCommand("feladatok", [examConfig.subject().id, part.slug, s.level, 10, null, c])}
           message={`${names[c]}: ${t.tips.notEnoughTargeted}`}
           dismissKey={`targeted-${c}-${s.level}`}
         />
@@ -79,7 +86,7 @@ export default async function TargetedPage({ searchParams }: { searchParams: Pro
           <p className="text-sm text-muted">{t.languageUse.targetedNone}</p>
         </Card>
       ) : (
-        <TargetedRunner items={items} categoryNames={names} />
+        <TargetedRunner items={items} categoryNames={names} section={part.id} />
       )}
     </div>
   );

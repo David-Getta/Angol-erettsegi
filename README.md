@@ -126,7 +126,7 @@ megtalálhatók parancsépítővel és Másolás gombokkal (forrás: `config/com
 | `/import-hivatalos <mappa>` | a `data/official/<mappa>/` hivatalos feladatsorát a bank formátumára alakítja | `/import-hivatalos 2024-majus-emelt` |
 
 `<rész>`: `olvasas`, `nyelvhelyesseg`, `hallas`, `iras`, `szobeli`, `szokincs` · `<szint>`: `kozep`, `emelt` ·
-a témakör- és hibakategória-azonosítók a `config/exam/topics.json` és `config/exam/error-categories.json` fájlokban vannak
+a témakör- és hibakategória-azonosítók a `config/subjects/<tantárgy>/topics.json` és `error-categories.json` fájlokban vannak
 (a `-` egy kihagyott paramétert jelent). Generálás után az appban: **Tartalom újratöltése** (vagy `npm run seed`, vagy a dev szerver újraindítása).
 
 ## Hivatalos feladatsorok importálása
@@ -151,7 +151,7 @@ generált feladat soha nem jelenik meg hivatalosként.
 ## A vizsga adatai
 
 A hivatalos adatok (feladattípusok, időbeosztás, pontszámok, értékelési szempontok, jegyhatárok, nyelvvizsga-egyenértékűség,
-szóbeli témakörök) a `config/exam/` JSON-fájljaiban vannak, forrásmegjelöléssel – nem a kódban. Ha a vizsgaleírás változik,
+szóbeli témakörök) a `config/subjects/<tantárgy>/` JSON-fájljaiban vannak, forrásmegjelöléssel – nem a kódban. Ha a vizsgaleírás változik,
 elég ezeket a fájlokat frissíteni.
 
 ## Fejlesztés

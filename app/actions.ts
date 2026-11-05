@@ -1,9 +1,19 @@
 "use server";
 
 import { revalidatePath } from "next/cache";
+import { redirect } from "next/navigation";
+import { isSubject } from "@/lib/exam/config";
 import { updateSettings, SettingsSchema, type Settings } from "@/lib/settings";
 import { seedContent } from "@/lib/content/seed";
 import type { Level } from "@/lib/content/schema";
+
+export async function setSubjectAction(formData: FormData) {
+  const id = String(formData.get("subject") ?? "");
+  if (!isSubject(id)) return;
+  updateSettings({ subject: id });
+  revalidatePath("/", "layout");
+  redirect("/kezdolap");
+}
 
 export async function setLevelAction(level: Level) {
   updateSettings({ level });

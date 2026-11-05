@@ -2,10 +2,10 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { getTaskRow } from "@/lib/tasks";
 import type { ObjectiveSection, ObjectiveTask } from "@/lib/content/schema";
-import { topicName, taskTypeName, labelMaps, levelStructure } from "@/lib/exam/config";
+import { topicName, taskTypeName, labelMaps, levelStructure, partName } from "@/lib/exam/config";
 import { acceptNearMiss } from "@/lib/attempts";
 import { getSettings } from "@/lib/settings";
-import { t, sectionLabel } from "@/lib/i18n/hu";
+import { t } from "@/lib/i18n/hu";
 import { Badge, SourceBadge, btn } from "./ui";
 import { examSecondsFor } from "./TaskList";
 import { PracticeRunner } from "./exercise/PracticeRunner";
@@ -31,7 +31,7 @@ export function ObjectiveTaskPage({ id, section, base, mode }: { id: string; sec
     <div>
       <div className="mb-3 flex flex-wrap items-center gap-2 text-sm">
         <Link href={base} className="text-muted hover:underline">
-          ← {sectionLabel(section)}
+          ← {partName(section)}
         </Link>
         <SourceBadge source={task.source} />
         <Badge>{taskTypeName(section, task.type)}</Badge>

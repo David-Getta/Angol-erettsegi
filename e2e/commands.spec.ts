@@ -10,11 +10,12 @@ test("the Commands page lists all four commands with working copy buttons and a 
   await expect(copy).toContainText("Másolva");
   expect(await page.evaluate(() => navigator.clipboard.readText())).toBe("/javitas");
 
-  // builder: optional category, skipped topic → "-"
-  await page.getByTestId("builder-feladatok-0").selectOption("nyelvhelyesseg");
-  await page.getByTestId("builder-feladatok-1").selectOption("emelt");
-  await page.getByTestId("builder-feladatok-4").selectOption("tense");
-  await expect(page.getByTestId("built-feladatok")).toHaveText("/feladatok nyelvhelyesseg emelt 5 - tense");
+  // builder: subject, part slug, optional category, skipped topic → "-"
+  await page.getByTestId("builder-feladatok-0").selectOption("angol");
+  await page.getByTestId("builder-feladatok-1").selectOption("nyelvhelyesseg");
+  await page.getByTestId("builder-feladatok-2").selectOption("emelt");
+  await page.getByTestId("builder-feladatok-5").selectOption("tense");
+  await expect(page.getByTestId("built-feladatok")).toHaveText("/feladatok angol nyelvhelyesseg emelt 5 - tense");
   await page.getByTestId("copy-built-feladatok").click();
-  expect(await page.evaluate(() => navigator.clipboard.readText())).toBe("/feladatok nyelvhelyesseg emelt 5 - tense");
+  expect(await page.evaluate(() => navigator.clipboard.readText())).toBe("/feladatok angol nyelvhelyesseg emelt 5 - tense");
 });

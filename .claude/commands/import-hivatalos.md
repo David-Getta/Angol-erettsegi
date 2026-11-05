@@ -15,8 +15,8 @@ Argumentum: `$ARGUMENTS` – a `data/official/` alatti mappa neve (pl. `2024-maj
    hallás + írás), javítási-értékelési útmutató PDF, hanganyag (mp3). Ha hiányzik a feladatlap vagy az útmutató, írd ki, mi hiányzik, és állj meg.
 2. A mappanévből (vagy a feladatlapról) állapítsd meg: év, időszak (`majus` / `oktober` / `februar`), szint (`kozep` / `emelt`).
 3. Olvasd ki a PDF-ek szövegét (pl. `pdftotext -layout <fájl> -`, ha elérhető, különben a Read eszközzel oldalanként).
-4. Olvasd el: `CLAUDE.md` „Tartalomséma”, `lib/content/schema.ts`, `config/exam/task-types.json`, `config/exam/topics.json`,
-   `config/exam/error-categories.json`, és egy meglévő generált fájlt mintának.
+4. Olvasd el: `CLAUDE.md` „Tartalomséma”, `lib/content/schema.ts`, `config/subjects/<tantárgy>/task-types.json`, `config/subjects/<tantárgy>/topics.json`,
+   `config/subjects/<tantárgy>/error-categories.json`, és egy meglévő generált fájlt mintának.
 5. Ellenőrizd, nincs-e már importálva: `grep -l '"folder": "<mappa>"' -r content/` – ha igen, csak a hiányzó feladatokat írd meg.
 
 ## 2. Átalakítás – feladatonként egy fájl

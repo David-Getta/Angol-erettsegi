@@ -2,8 +2,23 @@
  * Every Hungarian UI string lives here. Components import `t` and never hard-code text.
  */
 export const t = {
-  appName: "Angol érettségi",
+  appName: "Érettségi felkészítő",
   appTagline: "Felkészítő – lokális, API nélkül",
+
+  subjects: {
+    title: "Melyik tantárgyat tanulod?",
+    intro: "Válassz tantárgyat – mindegyiknél ugyanazt a felületet kapod: feladatok magyarázattal, javítás, hibanapló, szabálytár, próbaérettségi.",
+    switch: "Tantárgy váltása",
+    open: "Belépés",
+    continue: "Folytatás",
+    groups: { kotelezo: "Kötelező tárgyak", nyelv: "Idegen nyelvek", termeszettudomany: "Természettudományok", egyeb: "További választható tárgyak" } as Record<string, string>,
+    days: (n: number) => (n > 0 ? `${n} nap a vizsgáig` : n === 0 ? "ma van a vizsga" : "a vizsga lezajlott"),
+    tasks: (n: number) => `${n} feladat a bankban`,
+    noContent: "Még nincs tartalom – a /feladatok paranccsal generálható.",
+    estimate: (p: number, m: number) => `becslés: ${p} / ${m} pont`,
+    noEstimate: "még nincs eredmény",
+    level: "Szint",
+  },
 
   level: {
     kozep: "Középszint",
@@ -24,6 +39,7 @@ export const t = {
 
   nav: {
     dashboard: "Kezdőlap",
+    subjects: "Tantárgyak",
     diagnostic: "Szintfelmérő",
     reading: "Olvasott szöveg",
     languageUse: "Nyelvhelyesség",
@@ -31,6 +47,8 @@ export const t = {
     writing: "Íráskészség",
     speaking: "Szóbeli",
     vocabulary: "Szókincs",
+    concepts: "Fogalmak, képletek",
+    keyTerms: "Kulcskifejezések",
     errorLog: "Hibanapló",
     lessons: "Szabálytár",
     phrases: "Kifejezéstár",
@@ -376,6 +394,7 @@ export const t = {
     rate: { 1: "Nem tudtam", 2: "Nehéz", 3: "Jó", 4: "Könnyű" } as Record<number, string>,
     rateKeys: "1–4: értékelés · Szóköz: válasz",
     types: { "en-hu": "angol → magyar", "hu-en": "magyar → angol", cloze: "példamondat-kitöltés", collocation: "kollokáció", fix: "javítsd ki" } as Record<string, string>,
+    typesGeneric: { "en-hu": "fogalom → magyarázat", "hu-en": "magyarázat → fogalom", cloze: "mondatkiegészítés", collocation: "szókapcsolat / képlet", fix: "javítsd ki" } as Record<string, string>,
     fixPrompt: "Javítsd ki a hibát:",
     fixAdd: "＋ Ismétlésbe",
     fixAdded: "Bekerült az ismétlésbe",

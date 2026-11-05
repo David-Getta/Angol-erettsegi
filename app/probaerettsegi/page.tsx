@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { getSettings } from "@/lib/settings";
 import { activeMock, availableSets, listMocks, type MockResult } from "@/lib/mock";
-import { levelStructure } from "@/lib/exam/config";
+import { levelStructure, partPath, examConfig } from "@/lib/exam/config";
 import { feladatokCommand } from "@/lib/commands/build";
 import { t } from "@/lib/i18n/hu";
 import { Badge, Card, PageHeader, btn, formatDate } from "@/components/ui";
@@ -61,7 +61,7 @@ export default function MockLandingPage() {
             {t.level.emelt}: <b data-testid="sets-emelt">{t.mock.sets(sets.emelt)}</b>
           </span>
         </div>
-        {sets[s.level] < 2 && <CommandTip command={feladatokCommand("reading", s.level, 4)} message={t.tips.lowStock(t.mock.title)} dismissKey={`mock-sets-${s.level}-${sets[s.level]}`} />}
+        {sets[s.level] < 2 && <CommandTip command={feladatokCommand(examConfig.subject().id, partPath("reading").slice(1), s.level, 4)} message={t.tips.lowStock(t.mock.title)} dismissKey={`mock-sets-${s.level}-${sets[s.level]}`} />}
       </Card>
       <Card title={t.mock.history}>
         {history.length === 0 ? (

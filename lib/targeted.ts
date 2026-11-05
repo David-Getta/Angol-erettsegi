@@ -43,14 +43,18 @@ export function bankItemsFor(categories: string[], level: Level): TargetedItem[]
     .where(and(eq(tasks.subject, currentSubject()), eq(tasks.level, level), eq(tasks.active, true)))
     .all()
     .filter((r) => ["language-use", "reading", "listening"].includes(r.section) && r.categories.some((c) => categories.includes(c)));
+  const parts = [...examConfig.structure().levels.kozep.parts, ...examConfig.structure().levels.emelt.parts];
+  const targetedParts = new Set(parts.filter((p) => p.features.targeted).map((p) => p.id));
+  const audioParts = new Set(parts.filter((p) => p.features.audio).map((p) => p.id));
   const out: TargetedItem[] = [];
   for (const r of rows) {
     const t = r.content as ObjectiveTask;
     // reading/listening items need the whole text; only standalone-able items are used
     for (const item of t.items) {
       if (!categories.includes(item.category)) continue;
-      if (t.section !== "language-use" && !item.prompt) continue;
-      if (t.section === "listening") continue;
+      // reading/listening items need the whole text; only standalone items (with a prompt) and parts without audio are used
+      if (!targetedParts.has(t.section) && !item.prompt) continue;
+      if (audioParts.has(t.section)) continue;
       out.push({
         key: `${t.id}:${item.id}`,
         taskId: t.id,
@@ -153,6 +157,6 @@ export function checkTargetedItem(key: string, given: string) {
   return { result: r, explanation: item.explanation, evidence: item.evidence ?? null, wrongOptions: "wrongOptions" in item ? item.wrongOptions ?? null : null };
 }
 
-export function logTargetedTime(seconds: number) {
-  logActivity("language-use", seconds);
+export function logTargetedTime(seconds: number, section = "language-use") {
+  logActivity(section, seconds);
 }

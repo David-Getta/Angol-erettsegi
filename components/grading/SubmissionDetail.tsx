@@ -17,7 +17,7 @@ import { ModelAnswer } from "./ModelAnswer";
 import { SampleAnswer } from "../speaking/SampleAnswer";
 
 /** Shared page body for /iras/beadas/[id] and /szobeli/beadas/[id]. */
-export function SubmissionDetail({ id, kind }: { id: string; kind: "writing" | "speaking" }) {
+export function SubmissionDetail({ id, kind, base, partName }: { id: string; kind: "writing" | "speaking"; base: string; partName: string }) {
   const sub = getSubmission(id);
   if (!sub || sub.kind !== kind) notFound();
   const task = getContent(sub.taskId) as WritingTask | SpeakingTask | null;
@@ -26,7 +26,6 @@ export function SubmissionDetail({ id, kind }: { id: string; kind: "writing" | "
   const labels = labelMaps();
   const versions = versionsOf(sub.rootId);
   const fb = sub.feedback as Feedback | null;
-  const base = kind === "writing" ? "/iras" : "/szobeli";
 
   const pointLabels: Record<string, string> = {};
   if (task && kind === "writing") for (const p of (task as WritingTask).points) pointLabels[p.id] = p.text;
@@ -60,7 +59,7 @@ export function SubmissionDetail({ id, kind }: { id: string; kind: "writing" | "
     <div className="space-y-5">
       <div className="flex flex-wrap items-center gap-2 text-sm">
         <Link href={base} className="text-muted hover:underline">
-          ← {kind === "writing" ? t.writing.title : t.speaking.title}
+          ← {partName}
         </Link>
         {task && <SourceBadge source={task.source} />}
         <Badge>{t.writing.version(sub.version)}</Badge>
@@ -106,12 +105,12 @@ export function SubmissionDetail({ id, kind }: { id: string; kind: "writing" | "
           />
           <div className="flex flex-wrap gap-2">
             {kind === "writing" && (
-              <Link href={`/iras/${sub.taskId}?parent=${sub.id}`} className={btn.primary} data-testid="rewrite">
+              <Link href={`${base}/${sub.taskId}?parent=${sub.id}`} className={btn.primary} data-testid="rewrite">
                 ✎ {t.writing.rewrite}
               </Link>
             )}
             {kind === "speaking" && (
-              <Link href={`/szobeli/${sub.taskId}`} className={btn.primary}>
+              <Link href={`${base}/${sub.taskId}`} className={btn.primary}>
                 ↻ {t.task.tryAgain}
               </Link>
             )}

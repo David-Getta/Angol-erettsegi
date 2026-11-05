@@ -9,7 +9,7 @@ import { checkTargetedAction, logTargetedTimeAction } from "@/app/actions-practi
 import { ItemFeedback } from "@/components/exercise/ItemFeedback";
 import { Card, ProgressBar, btn } from "@/components/ui";
 
-export function TargetedRunner({ items, categoryNames }: { items: TargetedItem[]; categoryNames: Record<string, string> }) {
+export function TargetedRunner({ items, categoryNames, section = "language-use" }: { items: TargetedItem[]; categoryNames: Record<string, string>; section?: string }) {
   const [idx, setIdx] = useState(0);
   const [answer, setAnswer] = useState("");
   const [result, setResult] = useState<ItemResult | null>(null);
@@ -25,7 +25,7 @@ export function TargetedRunner({ items, categoryNames }: { items: TargetedItem[]
     inputRef.current?.focus();
   }, [idx]);
   useEffect(() => {
-    if (done) void logTargetedTimeAction((Date.now() - started.current) / 1000);
+    if (done) void logTargetedTimeAction((Date.now() - started.current) / 1000, section);
   }, [done]);
 
   const check = async (value: string) => {

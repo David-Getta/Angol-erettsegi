@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { getSettings } from "@/lib/settings";
-import { examConfigProvenance, levelStructure } from "@/lib/exam/config";
+import { examConfig, examConfigProvenance, levelStructure } from "@/lib/exam/config";
 import { listBackups } from "@/lib/backup";
 import { t } from "@/lib/i18n/hu";
 import { Card, PageHeader } from "@/components/ui";
@@ -15,7 +15,7 @@ export default function SettingsPage() {
   return (
     <div>
       <PageHeader title={t.settings.title} />
-      <SettingsForm settings={s} totals={totals} backups={backups} />
+      <SettingsForm settings={s} totals={totals} backups={backups} language={examConfig.subject().language} />
       <Card className="mt-6" title={t.settings.provenance}>
         <p className="mb-4 text-sm text-muted">{t.settings.provenanceHint}</p>
         <div className="space-y-4">

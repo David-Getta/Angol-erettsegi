@@ -25,7 +25,12 @@ function examinerTurns(task: SpeakingTask): string[] {
   return [first, ...task.followUpQuestions];
 }
 
-export function SpeakingPractice({ task, examinerPrompt, ttsRate }: { task: SpeakingTask; examinerPrompt: string; ttsRate: number }) {
+/**
+ * Practice of one oral task. `language`: a foreign-language subject – the
+ * questions are read aloud and dictated in English; for other subjects the
+ * recogniser and the TTS use Hungarian.
+ */
+export function SpeakingPractice({ task, examinerPrompt, ttsRate, base, language = true }: { task: SpeakingTask; examinerPrompt: string; ttsRate: number; base: string; language?: boolean }) {
   const [tab, setTab] = useState<"self" | "live">("self");
   return (
     <div className="grid grid-cols-1 gap-5 lg:grid-cols-[minmax(0,1fr)_minmax(0,1.2fr)]">
@@ -39,7 +44,7 @@ export function SpeakingPractice({ task, examinerPrompt, ttsRate }: { task: Spea
             💬 {t.speaking.live}
           </button>
         </div>
-        {tab === "self" ? <SelfPractice task={task} ttsRate={ttsRate} /> : <LivePractice task={task} examinerPrompt={examinerPrompt} />}
+        {tab === "self" ? <SelfPractice task={task} ttsRate={ttsRate} base={base} language={language} /> : <LivePractice task={task} examinerPrompt={examinerPrompt} base={base} />}
       </div>
     </div>
   );
@@ -148,7 +153,8 @@ function TaskCard({ task }: { task: SpeakingTask }) {
   );
 }
 
-function SelfPractice({ task, ttsRate }: { task: SpeakingTask; ttsRate: number }) {
+function SelfPractice({ task, ttsRate, base: basePath, language }: { task: SpeakingTask; ttsRate: number; base: string; language: boolean }) {
+  const lang = language ? "en-GB" : "hu-HU";
   const turnsQ = examinerTurns(task);
   const [step, setStep] = useState(0);
   const [turns, setTurns] = useState<Turn[]>([]);
@@ -213,6 +219,7 @@ function SelfPractice({ task, ttsRate }: { task: SpeakingTask; ttsRate: number }
     const base = current;
     if (asr) {
       dictation.current = startDictation({
+        lang,
         onText: (fin, int) => {
           setCurrent(`${base} ${fin}`.trim());
           setInterim(int);
@@ -234,7 +241,7 @@ function SelfPractice({ task, ttsRate }: { task: SpeakingTask; ttsRate: number }
     setSeconds(0);
     setStep((s) => s + 1);
     const nq = turnsQ[step + 1];
-    if (nq) void speak(nq, { rate: ttsRate });
+    if (nq) void speak(nq, { rate: ttsRate, accent: lang });
   };
 
   const transcript = [...turns, ...(current.trim() ? [{ q: question, a: current.trim() }] : [])]
@@ -252,7 +259,7 @@ function SelfPractice({ task, ttsRate }: { task: SpeakingTask; ttsRate: number }
         durationSec: totalStart.current ? (Date.now() - totalStart.current) / 1000 : 0,
         transcriptSource: usedAsr ? "app-asr" : "typed",
       });
-      if (r.ok) router.push(`/szobeli/beadas/${r.id}`);
+      if (r.ok) router.push(`${basePath}/beadas/${r.id}`);
     });
 
   const finished = step >= turnsQ.length;
@@ -268,7 +275,7 @@ function SelfPractice({ task, ttsRate }: { task: SpeakingTask; ttsRate: number }
           </div>
           <div className="rounded-lg bg-surface-2 p-3 text-lg">{question}</div>
           <div className="flex flex-wrap items-center gap-2">
-            <button type="button" className={btn.secondary} onClick={() => speak(question ?? "", { rate: ttsRate })}>
+            <button type="button" className={btn.secondary} onClick={() => speak(question ?? "", { rate: ttsRate, accent: lang })}>
               🔊 {t.speaking.readQuestion}
             </button>
             {(asr || (canRecord && keepVoice)) && (
@@ -345,7 +352,7 @@ function SelfPractice({ task, ttsRate }: { task: SpeakingTask; ttsRate: number }
   );
 }
 
-function LivePractice({ task, examinerPrompt }: { task: SpeakingTask; examinerPrompt: string }) {
+function LivePractice({ task, examinerPrompt, base: basePath }: { task: SpeakingTask; examinerPrompt: string; base: string }) {
   const [text, setText] = useState("");
   const [error, setError] = useState<string | null>(null);
   const [pending, start] = useTransition();
@@ -372,7 +379,7 @@ function LivePractice({ task, examinerPrompt }: { task: SpeakingTask; examinerPr
         onClick={() =>
           start(async () => {
             const r = await createSubmissionAction({ kind: "speaking", taskId: task.id, text, mode: "practice", durationSec: 0, transcriptSource: "claude-voice" });
-            if (r.ok) router.push(`/szobeli/beadas/${r.id}`);
+            if (r.ok) router.push(`${basePath}/beadas/${r.id}`);
             else setError(r.error);
           })
         }

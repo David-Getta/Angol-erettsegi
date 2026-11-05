@@ -6,53 +6,15 @@ import { useState } from "react";
 import { t } from "@/lib/i18n/hu";
 import type { Level } from "@/lib/content/schema";
 
-type NavItem = { href: string; label: string; icon: string };
+export type NavItem = { href: string; label: string; icon: string };
+export type NavGroup = { title?: string; items: NavItem[] };
+export type NavSubject = { id: string; name: string; icon: string };
 
-const groups: { title?: string; items: NavItem[] }[] = [
-  {
-    items: [
-      { href: "/", label: t.nav.dashboard, icon: "⌂" },
-      { href: "/szintfelmero", label: t.nav.diagnostic, icon: "◎" },
-    ],
-  },
-  {
-    title: t.nav.groupPractice,
-    items: [
-      { href: "/olvasas", label: t.nav.reading, icon: "📖" },
-      { href: "/nyelvhelyesseg", label: t.nav.languageUse, icon: "✎" },
-      { href: "/hallas", label: t.nav.listening, icon: "🎧" },
-      { href: "/iras", label: t.nav.writing, icon: "✍" },
-      { href: "/szobeli", label: t.nav.speaking, icon: "🗣" },
-      { href: "/szokincs", label: t.nav.vocabulary, icon: "🗂" },
-      { href: "/hibanaplo", label: t.nav.errorLog, icon: "⚑" },
-      { href: "/utmutatok", label: t.nav.guides, icon: "📘" },
-      { href: "/szabalytar", label: t.nav.lessons, icon: "§" },
-      { href: "/kifejezesek", label: t.nav.phrases, icon: "❝" },
-      { href: "/temakorok", label: t.nav.topics, icon: "◇" },
-    ],
-  },
-  {
-    title: t.nav.groupExam,
-    items: [
-      { href: "/probaerettsegi", label: t.nav.mock, icon: "⏱" },
-      { href: "/vizsga", label: t.nav.examInfo, icon: "ⓘ" },
-      { href: "/hivatalos", label: t.nav.official, icon: "🏛" },
-      { href: "/statisztika", label: t.nav.stats, icon: "📈" },
-    ],
-  },
-  {
-    title: t.nav.groupTools,
-    items: [
-      { href: "/parancsok", label: t.nav.commands, icon: "⌘" },
-      { href: "/beallitasok", label: t.nav.settings, icon: "⚙" },
-    ],
-  },
-];
-
-export function AppNav({ level }: { level: Level }) {
+/** Side navigation: the current subject's parts come from its config (the layout builds the groups on the server). */
+export function AppNav({ level, subject, groups }: { level: Level; subject: NavSubject; groups: NavGroup[] }) {
   const pathname = usePathname();
   const [open, setOpen] = useState(false);
-  const isActive = (href: string) => (href === "/" ? pathname === "/" : pathname.startsWith(href));
+  const isActive = (href: string) => (href === "/kezdolap" ? pathname === "/kezdolap" : pathname.startsWith(href));
 
   return (
     <>
@@ -72,11 +34,16 @@ export function AppNav({ level }: { level: Level }) {
           open ? "translate-x-0" : "-translate-x-full"
         }`}
       >
-        <Link href="/" className="mb-4 block px-2" onClick={() => setOpen(false)}>
-          <div className="text-lg font-semibold">{t.appName}</div>
+        <Link href="/kezdolap" className="mb-1 block px-2" onClick={() => setOpen(false)}>
+          <div className="text-lg font-semibold">
+            <span aria-hidden>{subject.icon}</span> {subject.name}
+          </div>
           <div className="text-xs text-muted">
             {t.level[level]} · {t.appTagline}
           </div>
+        </Link>
+        <Link href="/" className="mb-4 block px-2 text-xs text-accent hover:underline" onClick={() => setOpen(false)} data-testid="switch-subject">
+          ⇄ {t.subjects.switch}
         </Link>
         {groups.map((g, i) => (
           <div key={i} className="mb-3">

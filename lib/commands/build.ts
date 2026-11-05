@@ -10,18 +10,22 @@ export function buildCommand(name: string, values: Array<string | number | null 
   return [`/${name}`, ...args].join(" ");
 }
 
-/** Section value used in /feladatok for an app section id. */
-export const SECTION_ARG: Record<string, string> = {
-  reading: "olvasas",
-  "language-use": "nyelvhelyesseg",
-  listening: "hallas",
-  writing: "iras",
-  speaking: "szobeli",
+/** The non-part section words of /feladatok (parts use the subject's URL slug, e.g. olvasas, rovid-feladatok). */
+export const SPECIAL_SECTION_ARG: Record<string, string> = {
   vocabulary: "szokincs",
   grammar: "szabaly",
   guide: "utmutato",
 };
 
-export function feladatokCommand(section: string, level: string, count: number, topic?: string | null, category?: string | null): string {
-  return buildCommand("feladatok", [SECTION_ARG[section] ?? section, level, count, topic ?? null, category ?? null]);
+/**
+ * `/feladatok <tantárgy> <rész> <szint> <darab> [témakör] [hibakategória]`.
+ * `section` is the part's URL slug (or szokincs / szabaly / utmutato).
+ */
+export function feladatokCommand(subject: string, section: string, level: string, count: number, topic?: string | null, category?: string | null): string {
+  return buildCommand("feladatok", [subject, SPECIAL_SECTION_ARG[section] ?? section, level, count, topic ?? null, category ?? null]);
+}
+
+/** `/szokincs <tantárgy> [témakör] [szint] [darab]` */
+export function szokincsCommand(subject: string, topic?: string | null, level?: string | null, count?: number | null): string {
+  return buildCommand("szokincs", [subject, topic ?? null, level ?? null, count ?? null]);
 }

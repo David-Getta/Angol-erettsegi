@@ -12,13 +12,14 @@ import {
   speakingGoalIds,
   speakingGradingPrompt,
   speakingRubricRef,
+  type PromptSubject,
   writingGradingPrompt,
   writingRubricRef,
   type RubricRef,
 } from "@/lib/exchange/prompts";
 import { FeedbackSchema, describeIssues, extractJson, parseFeedbackText, type Feedback, type SubmissionFile } from "@/lib/exchange/schema";
 import { archiveExchange, listOutbox, readOutboxText, removeInboxFile, writeInboxFile } from "@/lib/exchange/files";
-import { currentSubject } from "@/lib/exam/config";
+import { configFor, currentSubject, subject } from "@/lib/exam/config";
 
 export type SubmissionMode = "practice" | "exam" | "mock" | "diagnostic";
 
@@ -30,17 +31,24 @@ function newId(kind: "writing" | "speaking"): string {
 }
 
 /** The rubric for a task: writing by task number, speaking by task type (interview, situation, debate …). */
-export function rubricRefFor(kind: "writing" | "speaking", level: Level, task: { taskNumber?: number; type?: string } | null): RubricRef {
+export function rubricRefFor(kind: "writing" | "speaking", level: Level, task: { taskNumber?: number; type?: string } | null, subjectId: string = currentSubject()): RubricRef {
+  const cfg = configFor(subjectId);
   return kind === "writing"
-    ? writingRubricRef(examConfig.writingRubric(level), task?.taskNumber ?? 1)
-    : speakingRubricRef(examConfig.speakingRubric(level), task?.type ?? "interview");
+    ? writingRubricRef(cfg.writingRubric(level), task?.taskNumber ?? 1, subjectId)
+    : speakingRubricRef(cfg.speakingRubric(level), task?.type ?? "interview", subjectId);
+}
+
+function promptSubject(id: string): PromptSubject {
+  const s = subject(id);
+  return { id: s.id, name: s.name, language: s.language };
 }
 
 /** Builds the grading prompt for a stored submission (used for inbox files and the copy button). */
 export function gradingPromptFor(sub: SubmissionRow): string {
   const task = getContent(sub.taskId);
   if (!task) throw new Error(`Ismeretlen feladat: ${sub.taskId}`);
-  const categories = examConfig.errorCategories().categories;
+  const cfg = configFor(sub.subject);
+  const categories = cfg.errorCategories().categories;
   const level = sub.level as Level;
   if (sub.kind === "writing") {
     const parent = sub.parentId ? getSubmission(sub.parentId) : null;
@@ -48,10 +56,11 @@ export function gradingPromptFor(sub: SubmissionRow): string {
       submissionId: sub.id,
       level,
       task: task as WritingTask,
-      rubric: examConfig.writingRubric(level),
+      rubric: cfg.writingRubric(level),
       text: sub.text,
       wordCount: sub.wordCount,
       categories,
+      subject: promptSubject(sub.subject),
       previous: parent ? { text: parent.text, score: parent.score, maxScore: parent.maxScore } : null,
     });
   }
@@ -59,11 +68,12 @@ export function gradingPromptFor(sub: SubmissionRow): string {
     submissionId: sub.id,
     level,
     task: task as SpeakingTask,
-    rubric: examConfig.speakingRubric(level),
+    rubric: cfg.speakingRubric(level),
     text: sub.text,
     wordCount: sub.wordCount,
     transcriptSource: sub.transcriptSource,
     categories,
+    subject: promptSubject(sub.subject),
   });
 }
 
@@ -87,7 +97,7 @@ export function createSubmission(input: CreateSubmissionInput): SubmissionRow {
   const parent = input.parentId ? getSubmission(input.parentId) : null;
   const level = taskRow.level as Level;
   const content = taskRow.content as WritingTask | SpeakingTask;
-  const ref = rubricRefFor(input.kind, level, content);
+  const ref = rubricRefFor(input.kind, level, content, taskRow.subject);
   const id = newId(input.kind);
   const row: typeof submissions.$inferInsert = {
     id,
@@ -119,6 +129,7 @@ export function createSubmission(input: CreateSubmissionInput): SubmissionRow {
     mode: input.mode,
     version: saved.version,
     parentId: saved.parentId,
+    subject: taskRow.subject,
     rubric: { file: ref.file, id: ref.id, taskNumber: ref.taskNumber },
     task: {
       id: taskRow.id,
@@ -181,7 +192,7 @@ export function applyFeedback(fb: Feedback, opts: { gradedBy?: "claude-code" | "
   if (!sub) return { ok: false, errors: [`Nincs ilyen beadás: ${fb.submissionId}`] };
   if (sub.kind !== fb.kind) return { ok: false, errors: [`A javítás típusa (${fb.kind}) nem egyezik a beadáséval (${sub.kind}).`] };
   const task = getContent(sub.taskId) as WritingTask | SpeakingTask | null;
-  const ref = rubricRefFor(sub.kind as "writing" | "speaking", sub.level as Level, task);
+  const ref = rubricRefFor(sub.kind as "writing" | "speaking", sub.level as Level, task, sub.subject);
   const problems: string[] = [];
   const warnings: string[] = [];
   if (fb.rubricId !== ref.id) problems.push(`A rubricId "${fb.rubricId}", de ennél a beadásnál "${ref.id}" kell.`);
@@ -191,7 +202,7 @@ export function applyFeedback(fb: Feedback, opts: { gradedBy?: "claude-code" | "
     else if (got.max !== c.max) problems.push(`A(z) "${c.id}" szempont maximuma ${c.max}, nem ${got.max}.`);
   }
   for (const c of fb.criteria) if (!ref.criteria.some((x) => x.id === c.id)) problems.push(`Ismeretlen szempont: "${c.id}".`);
-  const cats = new Set(examConfig.errorCategories().categories.map((c) => c.id));
+  const cats = new Set(configFor(sub.subject).errorCategories().categories.map((c) => c.id));
   fb.corrections.forEach((c, i) => {
     if (!cats.has(c.category)) problems.push(`corrections → ${i + 1}. elem: ismeretlen hibakategória "${c.category}".`);
     if (!sub.text.toLowerCase().includes(c.original.trim().toLowerCase())) {

@@ -3,7 +3,7 @@ import { notFound } from "next/navigation";
 import { getMock, mockWeakCategories, refreshMockResult, secondsLeft, type MockKind, type MockPlan, type MockResult } from "@/lib/mock";
 import { getContent } from "@/lib/tasks";
 import type { Level, ObjectiveTask, WritingTask } from "@/lib/content/schema";
-import { labelMaps, levelStructure } from "@/lib/exam/config";
+import { labelMaps, levelStructure, partPath, targetedPath } from "@/lib/exam/config";
 import { getSettings } from "@/lib/settings";
 import { listSubmissions } from "@/lib/submissions";
 import { t } from "@/lib/i18n/hu";
@@ -65,7 +65,7 @@ export function MockResultView({ kind, level, result, mockId }: { kind: MockKind
           <div className="flex flex-wrap items-center gap-3">
             <ImportButton />
             {subs.map((s) => (
-              <Link key={s.id} href={`/iras/beadas/${s.id}`} className={btn.small}>
+              <Link key={s.id} href={`${partPath("writing")}/beadas/${s.id}`} className={btn.small}>
                 ✍ {s.id}
               </Link>
             ))}
@@ -173,7 +173,7 @@ export function MockResultView({ kind, level, result, mockId }: { kind: MockKind
                   § {t.weak.lesson}
                 </Link>
                 {w.group !== "comprehension" && w.group !== "writing" && (
-                  <Link href={`/nyelvhelyesseg/celzott?k=${w.category}`} className={btn.small}>
+                  <Link href={`${targetedPath()}?k=${w.category}`} className={btn.small}>
                     ↻ {t.weak.practice}
                   </Link>
                 )}

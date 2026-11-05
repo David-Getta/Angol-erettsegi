@@ -8,11 +8,12 @@ import { CopyButton } from "@/components/CopyButton";
 import { Card } from "@/components/ui";
 
 type Opt = { value: string; label: string };
-export type BuilderValues = { sections: Opt[]; levels: Opt[]; topics: Opt[]; categories: Opt[]; officialFolders: Opt[] };
+export type BuilderValues = { subjects: Opt[]; defaultSubject: string; sections: Opt[]; levels: Opt[]; topics: Opt[]; categories: Opt[]; officialFolders: Opt[] };
 
 export function CommandCard({ def, values, defaultLevel }: { def: CommandDef; values: BuilderValues; defaultLevel: string }) {
   const initial = def.params.map((p) => {
     if (p.valuesFrom === "levels" && p.required) return defaultLevel;
+    if (p.valuesFrom === "subjects") return values.defaultSubject;
     if (p.valuesFrom === "sections" && p.required) return values.sections[0]?.value ?? "";
     if (p.valuesFrom === "count" && p.required) return "5";
     if (p.valuesFrom === "officialFolders" && p.required) return values.officialFolders[0]?.value ?? "";
@@ -58,7 +59,9 @@ export function CommandCard({ def, values, defaultLevel }: { def: CommandDef; va
             <div className="mt-2 flex flex-wrap gap-3">
               {def.params.map((p, i) => {
                 const opts =
-                  p.valuesFrom === "sections"
+                  p.valuesFrom === "subjects"
+                    ? values.subjects
+                    : p.valuesFrom === "sections"
                     ? values.sections
                     : p.valuesFrom === "levels"
                       ? values.levels

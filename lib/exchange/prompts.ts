@@ -7,15 +7,21 @@ import type { ErrorCategory, RubricCriterion, SpeakingRubric, SpeakingRubricTask
  * button and followed by /javitas, so the three paths cannot drift apart.
  */
 
-const LEVEL_NAME: Record<Level, string> = { kozep: "középszint (A2–B1)", emelt: "emelt szint (B2)" };
+/** What the prompts need to know about the subject. */
+export type PromptSubject = { id: string; name: string; language: boolean };
+
+function levelName(level: Level, language: boolean): string {
+  if (language) return level === "emelt" ? "emelt szint (B2)" : "középszint (A2–B1)";
+  return level === "emelt" ? "emelt szint" : "középszint";
+}
 
 export type RubricRef = { id: string; file: string; taskNumber: number | null; criteria: RubricCriterion[]; rules: string[] };
 
-export function writingRubricRef(rubric: WritingRubric, taskNumber: number): RubricRef {
+export function writingRubricRef(rubric: WritingRubric, taskNumber: number, subjectId: string): RubricRef {
   const task = rubric.tasks.find((t) => t.taskNumber === taskNumber) ?? rubric.tasks[0]!;
   return {
     id: `${rubric.id}-task${task.taskNumber}`,
-    file: `config/exam/writing-rubric-${rubric.level}.json`,
+    file: `config/subjects/${subjectId}/writing-rubric-${rubric.level}.json`,
     taskNumber: task.taskNumber,
     criteria: task.criteria,
     rules: [...task.rules, ...rubric.generalRules],
@@ -26,11 +32,11 @@ export function speakingRubricTask(rubric: SpeakingRubric, type: string): Speaki
   return rubric.tasks.find((t) => t.types.includes(type)) ?? rubric.tasks[0]!;
 }
 
-export function speakingRubricRef(rubric: SpeakingRubric, type: string): RubricRef {
+export function speakingRubricRef(rubric: SpeakingRubric, type: string, subjectId: string): RubricRef {
   const task = speakingRubricTask(rubric, type);
   return {
     id: `${rubric.id}-${task.id}`,
-    file: `config/exam/speaking-rubric-${rubric.level}.json`,
+    file: `config/subjects/${subjectId}/speaking-rubric-${rubric.level}.json`,
     taskNumber: task.partNumber,
     criteria: task.criteria,
     rules: [
@@ -56,7 +62,8 @@ function categoriesText(cats: ErrorCategory[]): string {
     .join(", ");
 }
 
-function feedbackTemplate(submissionId: string, kind: "writing" | "speaking", ref: RubricRef, pointIds: string[]) {
+function feedbackTemplate(submissionId: string, kind: "writing" | "speaking", ref: RubricRef, pointIds: string[], language: boolean) {
+  const L = language ? "angol" : "";
   return JSON.stringify(
     {
       schemaVersion: 1,
@@ -72,14 +79,14 @@ function feedbackTemplate(submissionId: string, kind: "writing" | "speaking", re
       corrections: [
         {
           original: "pontosan a szövegből másolt hibás rész",
-          corrected: "a helyes angol forma",
+          corrected: language ? "a helyes angol forma" : "a helyes megoldás / megfogalmazás",
           category: "tense",
           explanation: "Magyarul: mi a hiba, mi a helyes megoldás, és miért (a szabály).",
         },
       ],
       priorities: ["1. legfontosabb fejlesztendő terület", "2. …", "3. …"],
-      improvedVersion: "A tanuló saját szövege egy szinttel jobb nyelvezettel (angolul).",
-      usefulPhrases: [{ en: "angol kifejezés", hu: "magyar jelentés", example: "példamondat" }],
+      improvedVersion: language ? "A tanuló saját szövege egy szinttel jobb nyelvezettel (angolul)." : "A tanuló saját megoldása kijavítva és pontosabban megfogalmazva.",
+      usefulPhrases: [{ en: language ? "angol kifejezés" : "szakkifejezés / fogalom", hu: language ? "magyar jelentés" : "rövid magyarázat", example: language ? "példamondat" : "példa a használatára" }],
       summary: "Rövid összegzés magyarul.",
     },
     null,
@@ -87,15 +94,15 @@ function feedbackTemplate(submissionId: string, kind: "writing" | "speaking", re
   );
 }
 
-const COMMON_RULES = (cats: ErrorCategory[]) => `JAVÍTÁSI SZABÁLYOK
+const COMMON_RULES = (cats: ErrorCategory[], language: boolean) => `JAVÍTÁSI SZABÁLYOK
 - Szigorú és következetes pontozás a rubrika alapján. Ne kerekíts felfelé; kétes esetben az alacsonyabb sávot add. Minden szempontnál indokolj, a sávleírásra hivatkozva.
-- Minden hibát javíts: az "original" mezőbe karakterre pontosan a tanuló szövegéből másold a hibás részt (elég rövid legyen ahhoz, hogy egyértelműen megtalálható legyen), a "corrected" mezőbe a helyes angol formát.
-- Az "explanation" magyarul írja le, mi a hiba, mi lenne a helyes megoldás, és MIÉRT (a nyelvtani szabály vagy szóhasználati ok). Ne csak annyit, hogy "helyesen: …".
+- Minden hibát javíts: az "original" mezőbe karakterre pontosan a tanuló szövegéből másold a hibás részt (elég rövid legyen ahhoz, hogy egyértelműen megtalálható legyen), a "corrected" mezőbe ${language ? "a helyes angol formát" : "a helyes megoldást, adatot vagy megfogalmazást"}.
+- Az "explanation" magyarul írja le, mi a hiba, mi lenne a helyes megoldás, és MIÉRT (${language ? "a nyelvtani szabály vagy szóhasználati ok" : "a szabály, tétel, összefüggés vagy tény"}). Ne csak annyit, hogy "helyesen: …".
 - A "category" értéke ezek közül egy: ${categoriesText(cats)}.
 - A "priorities" pontosan 3 elem: a 3 legfontosabb fejlesztendő terület, konkrét tanáccsal, magyarul.
-- Az "improvedVersion" a tanuló SAJÁT szövege egy szinttel jobb nyelvezettel (angolul) – ugyanazok a gondolatok, nem egy teljesen új szöveg.
-- A "usefulPhrases" 5–10 hasznos angol kifejezés magyar jelentéssel, ami ehhez a feladathoz jól jött volna.
-- A magyarázatok, indoklások és az összefoglaló magyarul, a javított változatok angolul.
+- Az "improvedVersion" ${language ? "a tanuló SAJÁT szövege egy szinttel jobb nyelvezettel (angolul)" : "a tanuló SAJÁT megoldása kijavítva, a hiányzó lépésekkel és pontosabb megfogalmazással"} – ugyanazok a gondolatok, nem egy teljesen új szöveg.
+- A "usefulPhrases" 5–10 ${language ? "hasznos angol kifejezés magyar jelentéssel" : "kulcsfogalom, szakkifejezés vagy képlet rövid magyarázattal"}, ami ehhez a feladathoz jól jött volna.
+- A magyarázatok, indoklások és az összefoglaló magyarul${language ? ", a javított változatok angolul" : ""}.
 - A "totalScore" a szempontpontok összege, a "maxScore" a maximumok összege.`;
 
 export function writingGradingPrompt(args: {
@@ -106,16 +113,18 @@ export function writingGradingPrompt(args: {
   text: string;
   wordCount: number;
   categories: ErrorCategory[];
+  subject: PromptSubject;
   previous?: { text: string; score: number | null; maxScore: number | null } | null;
 }): string {
-  const ref = writingRubricRef(args.rubric, args.task.taskNumber);
+  const ref = writingRubricRef(args.rubric, args.task.taskNumber, args.subject.id);
   const t = args.task;
-  return `Te egy szigorú, tapasztalt angol érettségi vizsgáztató vagy (Magyarország, ${LEVEL_NAME[args.level]}). Javítsd ki a tanuló írásbeli munkáját a hivatalos értékelési szempontok szerint.
+  const language = args.subject.language;
+  return `Te egy szigorú, tapasztalt ${args.subject.name.toLowerCase()} érettségi vizsgáztató vagy (Magyarország, ${levelName(args.level, language)}). Javítsd ki a tanuló írásbeli munkáját a hivatalos értékelési szempontok szerint.
 
-FELADAT (${args.level === "emelt" ? "emelt" : "közép"}szint, ${t.taskNumber}. írásfeladat, típus: ${t.type})
+FELADAT (${args.level === "emelt" ? "emelt" : "közép"}szint, ${t.taskNumber}. feladat, típus: ${t.type})
 ${t.situation}
 ${t.stimulus ? `\nKiinduló szöveg:\n${t.stimulus}\n` : ""}
-Irányítási szempontok (mindegyikre ki kell térni):
+${language ? "Irányítási szempontok" : "Részkérdések / szempontok"} (mindegyikre ki kell térni):
 ${t.points.map((p) => `- [${p.id}] ${p.text}`).join("\n")}
 ${t.wordLimit ? `Szóhatár: ${t.wordLimit.min}–${t.wordLimit.max} szó. ` : ""}${t.register ? `Hangnem: ${t.register}.` : ""}
 
@@ -123,8 +132,8 @@ ${t.wordLimit ? `Szóhatár: ${t.wordLimit.min}–${t.wordLimit.max} szó. ` : "
 ${rubricText(ref)}
 ${ref.rules.length ? `\nKülön szabályok:\n${ref.rules.map((r) => `- ${r}`).join("\n")}` : ""}
 
-${COMMON_RULES(args.categories)}
-- A "taskPoints" minden irányítási pontot tartalmazzon (id: ${t.points.map((p) => p.id).join(", ")}).
+${COMMON_RULES(args.categories, language)}
+- A "taskPoints" minden ${language ? "irányítási pontot" : "részkérdést / szempontot"} tartalmazzon (id: ${t.points.map((p) => p.id).join(", ")}).
 ${args.previous ? `\nEZ EGY ÁTÍRT VÁLTOZAT. Az előző változat (${args.previous.score ?? "?"}/${args.previous.maxScore ?? "?"} pont):\n"""\n${args.previous.text}\n"""\nAz összefoglalóban írd le, miben javult és miben nem.\n` : ""}
 A TANULÓ SZÖVEGE (${args.wordCount} szó a program számlálása szerint):
 """
@@ -132,7 +141,7 @@ ${args.text}
 """
 
 VÁLASZ FORMÁTUMA: kizárólag egyetlen JSON-objektum, ebben a szerkezetben (a példaértékeket cseréld le):
-${feedbackTemplate(args.submissionId, "writing", ref, t.points.map((p) => p.id))}`;
+${feedbackTemplate(args.submissionId, "writing", ref, t.points.map((p) => p.id), language)}`;
 }
 
 export function speakingGradingPrompt(args: {
@@ -144,11 +153,13 @@ export function speakingGradingPrompt(args: {
   wordCount: number;
   transcriptSource: string | null;
   categories: ErrorCategory[];
+  subject: PromptSubject;
 }): string {
-  const ref = speakingRubricRef(args.rubric, args.task.type);
+  const ref = speakingRubricRef(args.rubric, args.task.type, args.subject.id);
   const t = args.task;
+  const language = args.subject.language;
   const goalIds = speakingGoalIds(t);
-  return `Te egy szigorú, tapasztalt angol érettségi vizsgáztató vagy (Magyarország, ${LEVEL_NAME[args.level]}, szóbeli vizsga). Értékeld a tanuló szóbeli válaszának átiratát.
+  return `Te egy szigorú, tapasztalt ${args.subject.name.toLowerCase()} érettségi vizsgáztató vagy (Magyarország, ${levelName(args.level, language)}, szóbeli vizsga). Értékeld a tanuló szóbeli feleletének átiratát.
 
 FELADAT (${t.partNumber}. vizsgarész, típus: ${t.type}, témakör: ${t.topic})
 ${speakingTaskText(t)}
@@ -159,9 +170,9 @@ FONTOS: ez ${args.transcriptSource === "app-asr" ? "a böngésző beszédfelisme
 ${rubricText(ref)}
 ${ref.rules.length ? `\nKülön szabályok:\n${ref.rules.map((r) => `- ${r}`).join("\n")}` : ""}
 
-${COMMON_RULES(args.categories)}
+${COMMON_RULES(args.categories, language)}
 - A "taskPoints" a feladat céljait/szempontjait értékelje (id: ${goalIds.join(", ")}).
-- Az "improvedVersion" a tanuló válasza egy szinttel jobb, természetes beszélt angolsággal.
+- Az "improvedVersion" a tanuló felelete egy szinttel jobb${language ? ", természetes beszélt angolsággal" : ": a hiányzó tartalmi elemekkel kiegészítve, szakszerűbben megfogalmazva"}.${t.keyPoints.length ? `\n- Egy teljes felelet tartalmazza: ${t.keyPoints.map((k) => `„${k}”`).join("; ")} – ezek hiánya a feladatteljesítés pontját csökkenti.` : ""}
 
 AZ ÁTIRAT (${args.wordCount} szó):
 """
@@ -169,7 +180,7 @@ ${args.text}
 """
 
 VÁLASZ FORMÁTUMA: kizárólag egyetlen JSON-objektum, ebben a szerkezetben (a példaértékeket cseréld le):
-${feedbackTemplate(args.submissionId, "speaking", ref, goalIds)}`;
+${feedbackTemplate(args.submissionId, "speaking", ref, goalIds, language)}`;
 }
 
 export function speakingGoalIds(t: SpeakingTask): string[] {
@@ -200,13 +211,15 @@ export function speakingTaskText(t: SpeakingTask): string {
       `A vizsgázó kiosztott álláspontja: ${t.debate.candidatePosition === "for" ? "MELLETTE érvel" : "ELLENE érvel"}`,
     );
   }
+  if (t.sources.length) lines.push("Források:", ...t.sources.map((s, i) => `- ${s.title ? `${s.title}: ` : `${i + 1}. forrás: `}${s.text}`));
   if (t.followUpQuestions.length) lines.push("További kérdések:", ...t.followUpQuestions.map((q) => `- ${q}`));
   return lines.join("\n");
 }
 
 /** Prompt for a live spoken exam with the Claude app's voice mode. */
-export function examinerPrompt(args: { level: Level; task: SpeakingTask; topicName: string; oralPartName: string }): string {
+export function examinerPrompt(args: { level: Level; task: SpeakingTask; topicName: string; oralPartName: string; subject: PromptSubject }): string {
   const t = args.task;
+  if (!args.subject.language) return examinerPromptHu(args);
   const debateRules = t.debate
     ? `
 VITA SZABÁLYAI (emelt szint)
@@ -235,4 +248,27 @@ HOW TO BEHAVE
 EXAMINER: ...
 CANDIDATE: ...
 I will paste this transcript into my practice app for grading.`;
+}
+
+/** Live oral practice prompt for a non-language subject (the whole exam is in Hungarian). */
+function examinerPromptHu(args: { level: Level; task: SpeakingTask; topicName: string; oralPartName: string; subject: PromptSubject }): string {
+  const t = args.task;
+  return `Te a magyar érettségi ${args.subject.name.toLowerCase()} szóbeli vizsgájának vizsgáztatója vagy (${args.level === "emelt" ? "emelt szint" : "középszint"}). Hangmódban gyakorló szóbeli vizsgát tartunk. Maradj végig a vizsgáztató szerepében, magyarul beszélj.
+
+Vizsgarész: ${args.oralPartName}
+Témakör: ${args.topicName}
+Feladattípus: ${t.type}
+
+TÉTEL / FELADAT
+${speakingTaskText(t)}
+${t.keyPoints.length ? `\nEgy teljes felelet tartalmazza (ezt ne áruld el, csak figyeld): ${t.keyPoints.join("; ")}` : ""}
+
+HOGYAN VISELKEDJ
+- Előbb hagyd, hogy a vizsgázó összefüggően kifejtse a tételt (ne szakítsd félbe), utána tegyél fel 2–4 rávezető vagy elmélyítő kérdést, egyszerre egyet.
+- Ha valami hiányzik vagy pontatlan, kérdezz rá úgy, ahogy egy vizsgáztató tenné; ne javíts és ne adj visszajelzést, amíg nem mondom, hogy „vége”.
+- A felelet kb. ${Math.round(t.speakingSeconds / 60)}–${Math.round(t.speakingSeconds / 60) + 2} percig tartson, utána zárd le, ahogy a vizsgán.
+- Amikor azt mondom, hogy „vége”, írd ki a teljes beszélgetés átiratát ebben a formában, semmi mást:
+EXAMINER: ...
+CANDIDATE: ...
+Ezt az átiratot a gyakorló appba másolom javításra.`;
 }

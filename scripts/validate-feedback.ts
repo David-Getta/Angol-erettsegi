@@ -8,13 +8,12 @@ import path from "node:path";
 import { paths } from "@/lib/paths";
 import { parseFeedbackText } from "@/lib/exchange/schema";
 import { readInboxFile } from "@/lib/exchange/files";
-import { examConfig } from "@/lib/exam/config";
+import { configFor } from "@/lib/exam/config";
 import { writingRubricRef, speakingRubricRef } from "@/lib/exchange/prompts";
 import { CompletionsSchema, containsTerm, vocabExchange } from "@/lib/vocab/cards";
 
 const only = process.argv.slice(2);
 const files = fs.existsSync(paths.outbox) ? fs.readdirSync(paths.outbox).filter((f) => f.endsWith(".json")) : [];
-const cats = new Set(examConfig.errorCategories().categories.map((c) => c.id));
 let bad = 0;
 
 for (const f of files) {
@@ -30,10 +29,12 @@ for (const f of files) {
     const sub = readInboxFile(id);
     if (!sub) warnings.push("Nincs hozzá beadás az exchange/inbox/-ban (már importálva?).");
     else {
+      const cfg = configFor(sub.subject);
+      const cats = new Set(cfg.errorCategories().categories.map((c) => c.id));
       const ref =
         sub.kind === "writing"
-          ? writingRubricRef(examConfig.writingRubric(sub.level), sub.rubric.taskNumber ?? 1)
-          : speakingRubricRef(examConfig.speakingRubric(sub.level), sub.task.type);
+          ? writingRubricRef(cfg.writingRubric(sub.level), sub.rubric.taskNumber ?? 1, sub.subject)
+          : speakingRubricRef(cfg.speakingRubric(sub.level), sub.task.type, sub.subject);
       if (fb.rubricId !== ref.id) problems.push(`rubricId: "${ref.id}" kell, nem "${fb.rubricId}".`);
       for (const c of ref.criteria) {
         const got = fb.criteria.find((x) => x.id === c.id);

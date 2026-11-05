@@ -51,7 +51,7 @@ describe("official exam config is internally consistent", () => {
       const r = examConfig.speakingRubric(level);
       expect(r.examMaxPoints).toBe(levelStructure(level).parts.find((p) => p.id === "speaking")!.maxPoints);
       for (const task of speaking.filter((s) => s.level === level)) {
-        const ref = speakingRubricRef(r, task.type);
+        const ref = speakingRubricRef(r, task.type, "angol");
         expect(r.tasks.some((t) => t.types.includes(task.type)), `${level}/${task.type}`).toBe(true);
         expect(ref.taskNumber).toBe(task.partNumber);
       }

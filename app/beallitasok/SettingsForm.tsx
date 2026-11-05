@@ -15,8 +15,11 @@ export function SettingsForm({
   settings,
   totals,
   backups,
+  language = true,
 }: {
   settings: Settings;
+  /** Foreign-language subject: card type labels and voice settings refer to English. */
+  language?: boolean;
   totals: Record<"kozep" | "emelt", number>;
   backups: { name: string; size: number; at: string }[];
 }) {
@@ -99,7 +102,7 @@ export function SettingsForm({
                   setS({ ...s, cardTypes: e.target.checked ? [...s.cardTypes, ct] : s.cardTypes.filter((x) => x !== ct).length ? s.cardTypes.filter((x) => x !== ct) : s.cardTypes })
                 }
               />
-              {t.vocab.types[ct]}
+              {(language ? t.vocab.types : t.vocab.typesGeneric)[ct]}
             </label>
           ))}
         </fieldset>

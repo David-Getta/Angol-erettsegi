@@ -6,7 +6,7 @@ import { paths } from "@/lib/paths";
 export const CommandParamSchema = z.object({
   name: z.string(),
   required: z.boolean(),
-  valuesFrom: z.enum(["sections", "levels", "count", "topics", "categories", "officialFolders", "free"]),
+  valuesFrom: z.enum(["subjects", "sections", "levels", "count", "topics", "categories", "officialFolders", "free"]),
   description: z.string(),
 });
 

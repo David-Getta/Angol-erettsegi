@@ -17,9 +17,15 @@ export function hasTts(): boolean {
   return typeof window !== "undefined" && "speechSynthesis" in window;
 }
 
-export function englishVoices(): SpeechSynthesisVoice[] {
+/** Voices of a language ("en", "hu", "de" …); English by default. */
+export function voicesFor(lang = "en"): SpeechSynthesisVoice[] {
   if (!hasTts()) return [];
-  return window.speechSynthesis.getVoices().filter((v) => v.lang.toLowerCase().startsWith("en"));
+  const prefix = lang.slice(0, 2).toLowerCase();
+  return window.speechSynthesis.getVoices().filter((v) => v.lang.toLowerCase().startsWith(prefix));
+}
+
+export function englishVoices(): SpeechSynthesisVoice[] {
+  return voicesFor("en");
 }
 
 export function voiceGender(v: SpeechSynthesisVoice): Gender | null {
@@ -41,7 +47,8 @@ export function voicesReady(timeoutMs = 1500): Promise<SpeechSynthesisVoice[]> {
 }
 
 export function pickVoice(opts: { gender?: Gender; accent?: string; voiceURI?: string | null; avoid?: Set<string> }): SpeechSynthesisVoice | null {
-  const voices = englishVoices();
+  // the accent ("en-GB", "hu-HU", "de-DE") decides the language of the voice
+  const voices = voicesFor(opts.accent ?? "en");
   if (!voices.length) return null;
   if (opts.voiceURI) {
     const v = voices.find((x) => x.voiceURI === opts.voiceURI);

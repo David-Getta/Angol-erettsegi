@@ -54,7 +54,7 @@ components/          React komponensek (exercise/ = közös feladatlejátszó)
 lib/
   content/           tartalomsémák (schema.ts), betöltés, validátor, seedelés, szöveg-segédfüggvények
   db/                Drizzle séma és kapcsolat
-  exam/config.ts     a config/exam/*.json betöltése és sémái
+  exam/config.ts     a config/subjects.json és a config/subjects/<tantárgy>/*.json betöltése és sémái (examConfig = az aktuális tantárgy, configFor(id) = bármelyik)
   exchange/          beadás- és feedback-séma, csere-mappa, promptok
   scoring/           ellenőrzés (alternatív válaszok, elírás), vizsgapont, százalék, jegy, küszöbök
   vocab/             szókártyák (szó, „javítsd ki” kártya), FSRS
@@ -78,7 +78,7 @@ tests/ (Vitest), e2e/ (Playwright)
 ## Konvenciók
 
 - Kód és kommentek angolul; a UI szövegei kizárólag a `lib/i18n/hu.ts`-ben.
-- Hivatalos vizsgaadat (idő, pont, rubrika, jegyhatár, egyenértékűség, témakör) **soha nincs a kódban**, csak a `config/exam/*.json`-ban, forrással.
+- Hivatalos vizsgaadat (idő, pont, rubrika, jegyhatár, egyenértékűség, témakör) **soha nincs a kódban**, csak a `config/subjects/<tantárgy>/*.json`-ban, forrással.
 - Adatbázis-írás csak a `lib/` függvényein keresztül, server actionből vagy szkriptből. A pontszámot mindig a szerver számolja újra.
 - Sémaváltozás: `lib/db/schema.ts` → `npm run db:generate` → a migráció commitolandó.
 - Kliens komponens nem importálhat Node-modult (`lib/db`, `lib/exam/config`, `fs`); a konfigurációt a szerver komponens adja át propként.
@@ -87,10 +87,10 @@ tests/ (Vitest), e2e/ (Playwright)
 ## Tartalomséma (röviden – a teljes séma: `lib/content/schema.ts`)
 
 Közös mezők: `schemaVersion: 1`, `id` (= fájlnév), `level` (`kozep`|`emelt`), `source` (`generated`|`official`),
-`official` (csak hivatalosnál: év, időszak, szint, rész, feladat), `topic` (a `config/exam/topics.json` azonosítója),
+`official` (csak hivatalosnál: év, időszak, szint, rész, feladat), `subject` (tantárgy, = a mappa), `topic` (a tantárgy `topics.json`-jának azonosítója),
 `title`, `createdAt`, `tags`, opcionálisan `reservedFor` (`mock`|`diagnostic`).
 
-- **reading / language-use / listening** (`ObjectiveTask`): `type` (a `config/exam/task-types.json`-ból), angol `instructions`,
+- **reading / language-use / listening** (`ObjectiveTask`): `type` (a `config/subjects/<tantárgy>/task-types.json`-ból), angol `instructions`,
   `passage.blocks[]` (a hiányok helye a szövegben `[[n]]`, hiányzó címnél/bekezdéskezdésnél `gap: "n"`), hallásnál `listening`
   (beszélők hanggal, leirat soronként), közös opciólista `options` (címek, mondatok, beszélők), **kötelező példa** `example` (id `"0"`),
   `items[]` (id 1..n). Item fajták: `choice` (saját A–D opciók), `match` (közös opciólistából), `tf` (`T`/`F`/`NG`), `text`
@@ -113,7 +113,7 @@ Közös mezők: `schemaVersion: 1`, `id` (= fájlnév), `level` (`kozep`|`emelt`
   `type` `writing` (szövegtípus) | `speaking` (szóbeli feladattípus) | `exam` (vizsgarész); `summaryHu`, `steps[]`, `phrases[]`
   (csoport, angol, magyar), `mistakes[]`, `checklist[]`, `timing`, `example`, `levelNotes`.
 
-Hibakategóriák: `config/exam/error-categories.json` (pl. `tense`, `article`, `preposition`, `word-order`, `collocation`,
+Hibakategóriák: `config/subjects/<tantárgy>/error-categories.json` (pl. `tense`, `article`, `preposition`, `word-order`, `collocation`,
 `word-formation`, `modal`, `passive`, `conditional`, `reported-speech` …; szövegértéshez `detail`, `gist`, `inference` …).
 
 ## Minőségi szabályok a generáláshoz
@@ -121,12 +121,12 @@ Hibakategóriák: `config/exam/error-categories.json` (pl. `tense`, `article`, `
 - Minden objektív itemnél ellenőrizd újra a kulcsot: egyértelmű-e, nincs-e más helyes válasz, amit nem soroltál fel alternatívaként.
 - Hibáknál mindig legyen leírva **a helyes megoldás és az, hogy miért** az (magyarul, a szabállyal).
 - Változatos témák a hivatalos témakörökből; generálás előtt nézd meg, mi van már a bankban (ne ismétlődjenek szövegek, helyzetek).
-- Hiteles szint: középszint A2–B1, emelt B2. Szöveghossz: `config/exam/structure.json` → `textLength`.
+- Hiteles szint: középszint A2–B1, emelt B2. Szöveghossz: `config/subjects/<tantárgy>/structure.json` → `textLength`.
 - Generált tartalom mindig `source: "generated"`. Generált feladat soha nem lehet hivatalosként jelölve.
 
 ## Szabályok a javításhoz (`/javitas`)
 
-- Szigorú, következetes pontozás a rubrika (`config/exam/writing-rubric-*.json`, `speaking-rubric-*.json`) alapján; ne kerekíts felfelé,
+- Szigorú, következetes pontozás a rubrika (`config/subjects/<tantárgy>/writing-rubric-*.json`, `speaking-rubric-*.json`) alapján; ne kerekíts felfelé,
   kétes esetben az alacsonyabb sáv; minden szempontnál indoklás.
 - Minden hibát a hibakategóriákkal címkézz; a magyarázatok magyarul (mi a hiba, mi a helyes, miért), a javított változatok angolul.
 - A feedback formátuma: `lib/exchange/schema.ts` → `FeedbackSchema`. Ellenőrzés: `npm run validate-feedback`.

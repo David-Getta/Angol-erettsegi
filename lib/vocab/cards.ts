@@ -10,7 +10,7 @@ import { getSettings, type CardType } from "@/lib/settings";
 import { paths } from "@/lib/paths";
 import { logActivity } from "@/lib/activity";
 import { newFsrsState, review, type StoredFsrs } from "./fsrs";
-import { currentSubject } from "@/lib/exam/config";
+import { currentSubject, withSubject } from "@/lib/exam/config";
 
 export function noteKey(term: string): string {
   return normalizeAnswer(term).replace(/[^\p{L}\p{N}' -]/gu, "").trim();
@@ -399,7 +399,7 @@ export function deleteWord(key: string): void {
   const db = getDb();
   const ids = db.select({ id: cards.id }).from(cards).where(and(eq(cards.subject, currentSubject()), eq(cards.noteKey, key))).all().map((r) => r.id);
   if (ids.length) db.delete(reviews).where(inArray(reviews.cardId, ids)).run();
-  db.delete(cards).where(eq(cards.noteKey, key)).run();
+  db.delete(cards).where(and(eq(cards.subject, currentSubject()), eq(cards.noteKey, key))).run();
   writeIncompleteRequests();
 }
 
@@ -414,9 +414,13 @@ export const vocabExchange = {
 /** exchange/vocab/incomplete.json: the words /szokincs has to complete. */
 export function writeIncompleteRequests(): number {
   const db = getDb();
-  const rows = db.select().from(cards).where(and(eq(cards.subject, currentSubject()), eq(cards.incomplete, true))).all();
-  const byKey = new Map<string, { key: string; term: string; context: string | null; level: string | null; topic: string | null }>();
-  for (const r of rows) if (!byKey.has(r.noteKey)) byKey.set(r.noteKey, { key: r.noteKey, term: r.front, context: r.context, level: r.level, topic: r.topic });
+  // every subject's incomplete cards go into one request file; /szokincs <tantárgy> picks its own
+  const rows = db.select().from(cards).where(eq(cards.incomplete, true)).all();
+  const byKey = new Map<string, { key: string; subject: string; term: string; context: string | null; level: string | null; topic: string | null }>();
+  for (const r of rows) {
+    const k = `${r.subject}|${r.noteKey}`;
+    if (!byKey.has(k)) byKey.set(k, { key: r.noteKey, subject: r.subject, term: r.front, context: r.context, level: r.level, topic: r.topic });
+  }
   fs.mkdirSync(vocabExchange.dir(), { recursive: true });
   fs.writeFileSync(
     vocabExchange.requests(),
@@ -431,6 +435,8 @@ export const CompletionsSchema = z.object({
   words: z.array(
     z.object({
       key: z.string().min(1),
+      /** Subject of the card (default: the current one). */
+      subject: z.string().optional(),
       term: z.string().min(1),
       meaning: z.string().trim().min(1),
       example: z.string().trim().min(1),
@@ -453,10 +459,11 @@ export function importVocabCompletions(): { applied: number; errors: string[] } 
   let applied = 0;
   const db = getDb();
   for (const w of parsed.data.words) {
-    const exists = db.select({ id: cards.id }).from(cards).where(and(eq(cards.subject, currentSubject()), eq(cards.noteKey, w.key))).get();
+    const subj = w.subject ?? currentSubject();
+    const exists = db.select({ id: cards.id }).from(cards).where(and(eq(cards.subject, subj), eq(cards.noteKey, w.key))).get();
     if (!exists) continue;
-    db.update(cards).set({ front: w.term }).where(eq(cards.noteKey, w.key)).run();
-    updateWord(w.key, { back: w.meaning, example: w.example, collocation: w.collocation ?? null });
+    db.update(cards).set({ front: w.term }).where(and(eq(cards.subject, subj), eq(cards.noteKey, w.key))).run();
+    withSubject(subj, () => updateWord(w.key, { back: w.meaning, example: w.example, collocation: w.collocation ?? null }));
     applied++;
   }
   fs.mkdirSync(paths.archive, { recursive: true });

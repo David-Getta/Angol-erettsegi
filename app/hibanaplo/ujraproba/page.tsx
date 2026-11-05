@@ -5,7 +5,7 @@ import { pickMistakes } from "@/lib/targeted";
 import { examConfig } from "@/lib/exam/config";
 import { t } from "@/lib/i18n/hu";
 import { Card, PageHeader } from "@/components/ui";
-import { TargetedRunner } from "@/app/nyelvhelyesseg/celzott/TargetedRunner";
+import { TargetedRunner } from "@/components/exercise/TargetedRunner";
 
 export const metadata: Metadata = { title: t.languageUse.review };
 

@@ -145,7 +145,8 @@ export const SpeakerSchema = z.object({
   id: z.string().regex(/^[A-Z0-9]{1,3}$/),
   name: nonEmpty,
   gender: z.enum(["female", "male"]),
-  accent: z.enum(["en-GB", "en-US", "en-AU", "en-IE", "en-CA", "en-IN"]).default("en-GB"),
+  /** BCP-47 tag of the voice (en-GB, en-US, de-DE, hu-HU …). */
+  accent: z.string().regex(/^[a-z]{2}-[A-Z]{2}$/).default("en-GB"),
   age: z.enum(["young", "adult", "older"]).default("adult"),
 });
 

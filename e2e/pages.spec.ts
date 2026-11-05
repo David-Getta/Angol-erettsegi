@@ -3,6 +3,7 @@ import { test, expect } from "@playwright/test";
 /** Every page renders (200, a heading) without console errors such as hydration mismatches. */
 const ROUTES = [
   "/",
+  "/kezdolap",
   "/szintfelmero",
   "/olvasas",
   "/nyelvhelyesseg",

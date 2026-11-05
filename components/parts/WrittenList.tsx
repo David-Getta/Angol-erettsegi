@@ -1,4 +1,3 @@
-import type { Metadata } from "next";
 import Link from "next/link";
 import { getSettings } from "@/lib/settings";
 import { listTasks, contentStock } from "@/lib/tasks";
@@ -15,23 +14,26 @@ import { CommandTip } from "@/components/CommandTip";
 import { ImportButton } from "@/components/grading/ImportButton";
 import { ReloadContentButton } from "@/components/ReloadContentButton";
 
-export const metadata: Metadata = { title: t.writing.title };
+import type { ExamPart } from "@/lib/exam/config";
 
-export default function WritingListPage() {
+/** List page of a written-task part (e.g. Íráskészség, Esszé, Kidolgozott feladatok). */
+export function WrittenList({ part }: { part: ExamPart }) {
   const s = getSettings();
+  const base = `/${part.slug}`;
   const tasks = listTasks("writing", s.level);
   const rubric = examConfig.writingRubric(s.level);
   const subs = listSubmissions("writing").filter((x) => x.level === s.level);
-  const pending = pendingInbox().filter((id) => id.startsWith("w-"));
+  const mine = new Set(subs.map((x) => x.id));
+  const pending = pendingInbox().filter((id) => mine.has(id));
   const stock = contentStock(s.level).filter((r) => r.section === "writing");
   const lowStock = stock.length === 0 || stock.reduce((n, r) => n + r.unused, 0) <= examConfig.app().lowStock.threshold;
   const taskTitle = new Map(tasks.map((x) => [x.id, x.title]));
 
   return (
     <div>
-      <PageHeader title={t.writing.title} intro={t.writing.intro} actions={
+      <PageHeader title={part.name} intro={part.intro ?? t.writing.intro} actions={
           <>
-            <GuideLink type="exam" target="writing" label={t.guides.strategy} />
+            <GuideLink type="exam" target={part.id} label={t.guides.strategy} />
             <ReloadContentButton />
           </>
         } />
@@ -43,9 +45,9 @@ export default function WritingListPage() {
       )}
       {lowStock && (
         <CommandTip
-          command={feladatokCommand("writing", s.level, examConfig.app().lowStock.suggestCount)}
-          message={t.tips.lowStock(t.section.writing)}
-          dismissKey={`low-writing-${s.level}`}
+          command={feladatokCommand(examConfig.subject().id, part.slug, s.level, examConfig.app().lowStock.suggestCount)}
+          message={t.tips.lowStock(part.name)}
+          dismissKey={`low-${part.id}-${s.level}`}
         />
       )}
 
@@ -67,7 +69,7 @@ export default function WritingListPage() {
                   <ul className="grid gap-3 sm:grid-cols-2">
                     {list.map((x) => (
                       <li key={x.id}>
-                        <Link href={`/iras/${x.id}`} className="block h-full rounded-xl border border-border bg-surface p-4 hover:border-accent" data-testid={`task-${x.id}`}>
+                        <Link href={`${base}/${x.id}`} className="block h-full rounded-xl border border-border bg-surface p-4 hover:border-accent" data-testid={`task-${x.id}`}>
                           <div className="flex flex-wrap gap-1.5">
                             <SourceBadge source={x.source} />
                             <Badge>{taskTypeName("writing", x.type)}</Badge>
@@ -99,7 +101,7 @@ export default function WritingListPage() {
             <ul className="divide-y divide-border text-sm">
               {subs.slice(0, 30).map((x) => (
                 <li key={x.id} className="py-2">
-                  <Link href={`/iras/beadas/${x.id}`} className="block hover:underline">
+                  <Link href={`${base}/beadas/${x.id}`} className="block hover:underline">
                     <div className="font-medium">{taskTitle.get(x.taskId) ?? x.taskId}</div>
                     <div className="flex flex-wrap items-center gap-2 text-xs text-muted">
                       <span>{t.writing.version(x.version)}</span>

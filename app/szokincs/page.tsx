@@ -3,8 +3,9 @@ import Link from "next/link";
 import { getSettings } from "@/lib/settings";
 import { deckStatuses, dueInfo, importVocabCompletions, incompleteCount, listCards, todayCounts } from "@/lib/vocab/cards";
 import { topicName } from "@/lib/exam/config";
-import { buildCommand } from "@/lib/commands/build";
+import { szokincsCommand } from "@/lib/commands/build";
 import { t } from "@/lib/i18n/hu";
+import { examConfig } from "@/lib/exam/config";
 import { Card, PageHeader, Stat, btn, SourceBadge, ProgressBar } from "@/components/ui";
 import { CommandTip } from "@/components/CommandTip";
 import { ImportButton } from "@/components/grading/ImportButton";
@@ -59,7 +60,7 @@ export default async function VocabPage({ searchParams }: { searchParams: Promis
 
       <Card title={t.vocab.decks}>
         {decks.length === 0 ? (
-          <CommandTip command={buildCommand("szokincs", ["kornyezet", s.level, 40])} message="Ezen a szinten még nincs pakli. Generálj egyet:" />
+          <CommandTip command={szokincsCommand(examConfig.subject().id, examConfig.topics().topics[0]?.id ?? null, s.level, 40)} message="Ezen a szinten még nincs pakli. Generálj egyet:" />
         ) : (
           <ul className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
             {decks.map((d) => (
@@ -100,7 +101,7 @@ export default async function VocabPage({ searchParams }: { searchParams: Promis
           </form>
         }
       >
-        <CardTable words={[...words.values()]} />
+        <CardTable words={[...words.values()]} language={examConfig.subject().language} />
       </Card>
     </div>
   );

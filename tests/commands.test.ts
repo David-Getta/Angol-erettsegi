@@ -33,9 +33,10 @@ describe("Claude Code commands", () => {
 
 describe("buildCommand", () => {
   it("drops trailing empty optionals and marks skipped middle ones", () => {
-    expect(buildCommand("feladatok", ["nyelvhelyesseg", "emelt", 10, "", ""])).toBe("/feladatok nyelvhelyesseg emelt 10");
-    expect(buildCommand("feladatok", ["nyelvhelyesseg", "emelt", 6, "", "tense"])).toBe("/feladatok nyelvhelyesseg emelt 6 - tense");
-    expect(feladatokCommand("reading", "kozep", 4, "utazas")).toBe("/feladatok olvasas kozep 4 utazas");
+    expect(buildCommand("feladatok", ["angol", "nyelvhelyesseg", "emelt", 10, "", ""])).toBe("/feladatok angol nyelvhelyesseg emelt 10");
+    expect(buildCommand("feladatok", ["angol", "nyelvhelyesseg", "emelt", 6, "", "tense"])).toBe("/feladatok angol nyelvhelyesseg emelt 6 - tense");
+    expect(feladatokCommand("angol", "olvasas", "kozep", 4, "utazas")).toBe("/feladatok angol olvasas kozep 4 utazas");
+    expect(feladatokCommand("matematika", "grammar", "kozep", 1, null, "szamolas")).toBe("/feladatok matematika szabaly kozep 1 - szamolas");
     expect(buildCommand("javitas", [])).toBe("/javitas");
   });
 });

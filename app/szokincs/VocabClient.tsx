@@ -64,7 +64,8 @@ export function ManualAddForm() {
 
 type Word = { key: string; front: string; back: string; example: string | null; collocation: string | null; incomplete: boolean; ids: number[]; suspended: boolean; types: string[]; due: string };
 
-export function CardTable({ words }: { words: Word[] }) {
+export function CardTable({ words, language = true }: { words: Word[]; language?: boolean }) {
+  const typeLabels = language ? t.vocab.types : t.vocab.typesGeneric;
   const [edit, setEdit] = useState<string | null>(null);
   const [draft, setDraft] = useState({ back: "", example: "" });
   const router = useRouter();
@@ -122,7 +123,7 @@ export function CardTable({ words }: { words: Word[] }) {
                   </button>
                 )}
               </td>
-              <td className="py-2 pr-2 text-xs text-muted">{w.types.map((x) => t.vocab.types[x] ?? x).join(", ")}</td>
+              <td className="py-2 pr-2 text-xs text-muted">{w.types.map((x) => typeLabels[x] ?? x).join(", ")}</td>
               <td className="whitespace-nowrap py-2 text-right">
                 <button
                   type="button"

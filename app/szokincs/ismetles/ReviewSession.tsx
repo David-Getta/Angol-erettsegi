@@ -23,7 +23,10 @@ export type ReviewCard = {
   isNew: boolean;
 };
 
-export function ReviewSession({ initial, ttsRate }: { initial: ReviewCard[]; ttsRate: number }) {
+export function ReviewSession({ initial, ttsRate, language = true }: { initial: ReviewCard[]; ttsRate: number; language?: boolean }) {
+  const typeLabels = language ? t.vocab.types : t.vocab.typesGeneric;
+  const lang = language ? "en" : "hu";
+  const accent = language ? "en-GB" : "hu-HU";
   const [queue, setQueue] = useState(initial);
   const [shown, setShown] = useState(false);
   const [typed, setTyped] = useState("");
@@ -64,7 +67,7 @@ export function ReviewSession({ initial, ttsRate }: { initial: ReviewCard[]; tts
       if ((e.key === " " || e.key === "Enter") && !shown) {
         e.preventDefault();
         setShown(true);
-        if (card) speak(card.front, { rate: ttsRate });
+        if (card) speak(card.front, { rate: ttsRate, accent });
       } else if (shown && /^[1-4]$/.test(e.key)) {
         e.preventDefault();
         void rate(Number(e.key) as 1 | 2 | 3 | 4);
@@ -92,20 +95,20 @@ export function ReviewSession({ initial, ttsRate }: { initial: ReviewCard[]; tts
   else if (card.type === "hu-en") prompt = <span className="text-3xl font-semibold">{card.back}</span>;
   else if (card.type === "cloze") prompt = (
     <div>
-      <div lang="en" className="font-reading text-2xl leading-relaxed">{card.cloze ?? card.example}</div>
+      <div lang={lang} className="font-reading text-2xl leading-relaxed">{card.cloze ?? card.example}</div>
       <div className="mt-2 text-sm text-muted">({card.back})</div>
     </div>
   );
   else if (card.type === "fix") prompt = (
     <div className="text-left">
       <div className="mb-2 text-sm text-muted">{t.vocab.fixPrompt}</div>
-      {card.context && <div lang="en" className="mb-2 font-reading text-lg leading-relaxed text-muted">{card.context}</div>}
-      <div lang="en" className="font-reading text-2xl text-bad line-through decoration-bad/50">{card.example}</div>
+      {card.context && <div lang={lang} className="mb-2 font-reading text-lg leading-relaxed text-muted">{card.context}</div>}
+      <div lang={lang} className="font-reading text-2xl text-bad line-through decoration-bad/50">{card.example}</div>
     </div>
   );
   else prompt = (
     <div>
-      <div lang="en" className="font-reading text-2xl">{card.collocationCloze ?? card.collocation}</div>
+      <div lang={lang} className="font-reading text-2xl">{card.collocationCloze ?? card.collocation}</div>
       <div className="mt-2 text-sm text-muted">({card.back})</div>
     </div>
   );
@@ -123,7 +126,7 @@ export function ReviewSession({ initial, ttsRate }: { initial: ReviewCard[]; tts
       </div>
       <Card>
         <div className="mb-3 flex justify-between text-xs text-muted">
-          <span>{t.vocab.types[card.type]}</span>
+          <span>{typeLabels[card.type]}</span>
           {card.isNew && <span>{t.vocab.new}</span>}
         </div>
         <div className="min-h-28 text-center" data-testid="review-prompt">
@@ -153,9 +156,9 @@ export function ReviewSession({ initial, ttsRate }: { initial: ReviewCard[]; tts
             {card.type === "fix" ? (
               <div className="mt-2 whitespace-pre-line text-left text-sm">{card.back}</div>
             ) : (
-              card.example && <div lang="en" className="mt-2 font-reading italic text-muted">{card.example}</div>
+              card.example && <div lang={lang} className="mt-2 font-reading italic text-muted">{card.example}</div>
             )}
-            <button type="button" className="mt-2 text-sm text-muted hover:text-fg" onClick={() => speak(card.front, { rate: ttsRate })}>
+            <button type="button" className="mt-2 text-sm text-muted hover:text-fg" onClick={() => speak(card.front, { rate: ttsRate, accent })}>
               🔊
             </button>
             <div className="mt-4 grid grid-cols-4 gap-2">
@@ -183,7 +186,7 @@ export function ReviewSession({ initial, ttsRate }: { initial: ReviewCard[]; tts
               className={btn.primary}
               onClick={() => {
                 setShown(true);
-                speak(card.front, { rate: ttsRate });
+                speak(card.front, { rate: ttsRate, accent });
               }}
               data-testid="show-answer"
             >

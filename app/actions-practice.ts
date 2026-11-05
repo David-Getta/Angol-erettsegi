@@ -48,8 +48,8 @@ export async function checkTargetedAction(key: string, given: string) {
   return checkTargetedItem(key, given);
 }
 
-export async function logTargetedTimeAction(seconds: number) {
-  logTargetedTime(seconds);
+export async function logTargetedTimeAction(seconds: number, section = "language-use") {
+  logTargetedTime(seconds, section);
   revalidatePath("/hibanaplo");
 }
 

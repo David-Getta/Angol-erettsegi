@@ -1,11 +1,11 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { examConfig } from "@/lib/exam/config";
+import { examConfig, targetedPath } from "@/lib/exam/config";
 import { getLesson } from "@/lib/lessons";
 import { getSettings } from "@/lib/settings";
 import { countBankItems } from "@/lib/targeted";
-import { buildCommand } from "@/lib/commands/build";
+import { feladatokCommand } from "@/lib/commands/build";
 import type { GrammarLesson } from "@/lib/content/schema";
 import { Badge, Card, LinkButton, PageHeader } from "@/components/ui";
 import { CommandTip } from "@/components/CommandTip";
@@ -57,7 +57,7 @@ export default async function LessonPage({ params }: Props) {
         <PageHeader title={cat.name} intro={cat.description} />
         <Card>
           <p className="mb-3">{t.lessons.noLesson}</p>
-          <CommandTip command={buildCommand("feladatok", ["szabaly", "kozep", 1, null, cat.id])} message={t.lessons.generateHint} />
+          <CommandTip command={feladatokCommand(examConfig.subject().id, "szabaly", "kozep", 1, null, cat.id)} message={t.lessons.generateHint} />
         </Card>
       </div>
     );
@@ -149,7 +149,7 @@ export default async function LessonPage({ params }: Props) {
           <Card>
             <div className="flex flex-col gap-2">
               {language && bank > 0 && (
-                <LinkButton href={`/nyelvhelyesseg/celzott?k=${cat.id}`} variant="secondary">
+                <LinkButton href={`${targetedPath()}?k=${cat.id}`} variant="secondary">
                   {t.lessons.practiceMore}
                 </LinkButton>
               )}

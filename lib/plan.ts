@@ -2,7 +2,7 @@ import { and, eq, gte } from "drizzle-orm";
 import { getDb } from "@/lib/db/client";
 import { activity, submissions, tasks } from "@/lib/db/schema";
 import type { Level } from "@/lib/content/schema";
-import { examConfig } from "@/lib/exam/config";
+import { examConfig, partPath, targetedPath } from "@/lib/exam/config";
 import { categoryStats } from "@/lib/errors/log";
 import { countBankItems, pickMistakes } from "@/lib/targeted";
 import { dueInfo } from "@/lib/vocab/cards";
@@ -22,13 +22,6 @@ export type PlanItem = {
   done: boolean;
 };
 
-const SECTION_HREF: Record<string, string> = {
-  reading: "/olvasas",
-  "language-use": "/nyelvhelyesseg",
-  listening: "/hallas",
-  writing: "/iras",
-  speaking: "/szobeli",
-};
 
 function hash(s: string): number {
   let h = 2166136261;
@@ -104,7 +97,7 @@ export function todayPlan(level: Level, estimates: PartEstimate[], hasDiagnostic
       key: `part-${e.part}`,
       title: `${e.name}: ${tk.title}`,
       reason: e.pct === null ? "Ebből a részből még nincs eredményed." : `Becslés: ${Math.round(e.pct)}% – az egyik leggyengébb részed.`,
-      href: `${SECTION_HREF[e.part]}/${tk.id}`,
+      href: `${partPath(e.part)}/${tk.id}`,
       section: e.part,
       minutes: 15,
       done: todaySections.has(e.part),
@@ -118,7 +111,7 @@ export function todayPlan(level: Level, estimates: PartEstimate[], hasDiagnostic
       key: `cat-${top.category}`,
       title: `Célzott gyakorlás: ${top.name}`,
       reason: `${top.last30} hiba az utolsó 30 napban.`,
-      href: `/nyelvhelyesseg/celzott?k=${top.category}`,
+      href: `${targetedPath()}?k=${top.category}`,
       section: "language-use",
       minutes: 10,
       done: todaySections.has("language-use") && items.every((i) => i.section !== "language-use"),
@@ -144,19 +137,19 @@ export function todayPlan(level: Level, estimates: PartEstimate[], hasDiagnostic
   const recentWriting = db.select({ id: submissions.id }).from(submissions).where(and(eq(submissions.subject, currentSubject()), eq(submissions.kind, "writing"), gte(submissions.createdAt, weekAgo))).all();
   if (recentWriting.length === 0) {
     const tk = pickTask("writing", level, day);
-    if (tk) items.push({ key: "writing", title: `Íráskészség: ${tk.title}`, reason: "Az elmúlt héten nem írtál – az írás hozza a legtöbb pontot.", href: `/iras/${tk.id}`, section: "writing", minutes: 40, done: todaySections.has("writing") });
+    if (tk) items.push({ key: "writing", title: `Íráskészség: ${tk.title}`, reason: "Az elmúlt héten nem írtál – az írás hozza a legtöbb pontot.", href: `${partPath("writing")}/${tk.id}`, section: "writing", minutes: 40, done: todaySections.has("writing") });
   }
   const recentSpeaking = db.select({ id: submissions.id }).from(submissions).where(and(eq(submissions.subject, currentSubject()), eq(submissions.kind, "speaking"), gte(submissions.createdAt, weekAgo))).all();
   if (recentSpeaking.length === 0 && items.length < maxTasks) {
     const tk = pickTask("speaking", level, day);
-    if (tk) items.push({ key: "speaking", title: `Szóbeli: ${tk.title}`, reason: "Heti egy szóbeli gyakorlás ajánlott.", href: `/szobeli/${tk.id}`, section: "speaking", minutes: 15, done: todaySections.has("speaking") });
+    if (tk) items.push({ key: "speaking", title: `Szóbeli: ${tk.title}`, reason: "Heti egy szóbeli gyakorlás ajánlott.", href: `${partPath("speaking")}/${tk.id}`, section: "speaking", minutes: 15, done: todaySections.has("speaking") });
   }
 
   // fill up to the minimum with the remaining written parts
   for (const e of ranked.slice(2)) {
     if (items.length >= minTasks) break;
     const tk = pickTask(e.part, level, day);
-    if (tk) items.push({ key: `part-${e.part}`, title: `${e.name}: ${tk.title}`, reason: "Kiegészítő gyakorlás.", href: `${SECTION_HREF[e.part]}/${tk.id}`, section: e.part, minutes: 15, done: todaySections.has(e.part) });
+    if (tk) items.push({ key: `part-${e.part}`, title: `${e.name}: ${tk.title}`, reason: "Kiegészítő gyakorlás.", href: `${partPath(e.part)}/${tk.id}`, section: e.part, minutes: 15, done: todaySections.has(e.part) });
   }
   return items.slice(0, maxTasks);
 }

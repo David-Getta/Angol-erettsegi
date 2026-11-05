@@ -5,7 +5,7 @@ const TASK = "wr-emelt-gap-year-forum";
 
 test("writing: submit → /javitas tip → outbox import → feedback → rewrite → paste path → error log", async ({ page }) => {
   await acceptDialogs(page);
-  await page.goto("/");
+  await page.goto("/kezdolap");
   await page.getByTestId("level-emelt").click();
 
   await page.goto(`/iras/${TASK}`);

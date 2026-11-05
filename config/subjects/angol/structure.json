@@ -63,7 +63,9 @@
             "evidence": true,
             "glossary": true,
             "wrongOptions": true
-          }
+          },
+          "intro": "Érettségi-szerű olvasási feladatok. Gyakorlás módban minden válasz után megkapod a magyarázatot.",
+          "icon": "📖"
         },
         {
           "id": "language-use",
@@ -86,7 +88,9 @@
               "vocabulary",
               "writing"
             ]
-          }
+          },
+          "intro": "Lyukas szövegek, szóképzés, igealakok és hibakeresés. Több helyes válasz is elfogadott; kis- és nagybetű, felesleges szóköz nem számít.",
+          "icon": "✎"
         },
         {
           "id": "listening",
@@ -106,7 +110,9 @@
             "evidence": true,
             "wrongOptions": true,
             "audio": true
-          }
+          },
+          "intro": "A szkripteket a böngésző olvassa fel (Web Speech API). Mint a vizsgán: felkészülési idő, majd kétszeri meghallgatás.",
+          "icon": "🎧"
         },
         {
           "id": "writing",
@@ -122,7 +128,9 @@
           "notes": [
             "Csak ebben a részben használható nyomtatott szótár."
           ],
-          "features": {}
+          "features": {},
+          "intro": "Feladatkártyák a hivatalos feladattípusok szerint. Beadás után a javítást a Claude Code (/javitas) vagy a Claude app végzi.",
+          "icon": "✍"
         },
         {
           "id": "speaking",
@@ -136,7 +144,9 @@
           "notes": [
             "A bemelegítő beszélgetés nem kap pontot."
           ],
-          "features": {}
+          "features": {},
+          "intro": "Témakörönként kérdéskártyák, szituációk, képleírás-helyettesítő jelenetek és (emelten) vitatételek.",
+          "icon": "🗣"
         }
       ],
       "breaks": [
@@ -213,7 +223,9 @@
             "evidence": true,
             "glossary": true,
             "wrongOptions": true
-          }
+          },
+          "intro": "Érettségi-szerű olvasási feladatok. Gyakorlás módban minden válasz után megkapod a magyarázatot.",
+          "icon": "📖"
         },
         {
           "id": "language-use",
@@ -236,7 +248,9 @@
               "vocabulary",
               "writing"
             ]
-          }
+          },
+          "intro": "Lyukas szövegek, szóképzés, igealakok és hibakeresés. Több helyes válasz is elfogadott; kis- és nagybetű, felesleges szóköz nem számít.",
+          "icon": "✎"
         },
         {
           "id": "listening",
@@ -256,7 +270,9 @@
             "evidence": true,
             "wrongOptions": true,
             "audio": true
-          }
+          },
+          "intro": "A szkripteket a böngésző olvassa fel (Web Speech API). Mint a vizsgán: felkészülési idő, majd kétszeri meghallgatás.",
+          "icon": "🎧"
         },
         {
           "id": "writing",
@@ -272,7 +288,9 @@
           "notes": [
             "Csak ebben a részben használható nyomtatott szótár."
           ],
-          "features": {}
+          "features": {},
+          "intro": "Feladatkártyák a hivatalos feladattípusok szerint. Beadás után a javítást a Claude Code (/javitas) vagy a Claude app végzi.",
+          "icon": "✍"
         },
         {
           "id": "speaking",
@@ -286,7 +304,9 @@
           "notes": [
             "A bemelegítő beszélgetés nem kap pontot."
           ],
-          "features": {}
+          "features": {},
+          "intro": "Témakörönként kérdéskártyák, szituációk, képleírás-helyettesítő jelenetek és (emelten) vitatételek.",
+          "icon": "🗣"
         }
       ],
       "breaks": [

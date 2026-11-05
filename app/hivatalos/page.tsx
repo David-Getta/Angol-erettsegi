@@ -6,14 +6,14 @@ import { tasks } from "@/lib/db/schema";
 import { officialFolders } from "@/lib/official";
 import { buildCommand } from "@/lib/commands/build";
 import type { Content } from "@/lib/content/schema";
-import { t, sectionLabel } from "@/lib/i18n/hu";
+import { t } from "@/lib/i18n/hu";
+import { partName, partPath } from "@/lib/exam/config";
 import { Badge, Card, PageHeader, Empty } from "@/components/ui";
 import { CommandTip } from "@/components/CommandTip";
 import { ReloadContentButton } from "@/components/ReloadContentButton";
 
 export const metadata: Metadata = { title: t.official.title };
 
-const HREF: Record<string, string> = { reading: "/olvasas", "language-use": "/nyelvhelyesseg", listening: "/hallas", writing: "/iras", speaking: "/szobeli" };
 
 export default function OfficialPage() {
   const folders = officialFolders();
@@ -61,8 +61,8 @@ export default function OfficialPage() {
               return (
                 <li key={r.id} className="flex flex-wrap items-center gap-2 py-2">
                   <Badge tone="accent">🏛 {c.official?.year} {c.official?.session} {t.level[r.level as "kozep" | "emelt"]}</Badge>
-                  <span className="text-muted">{sectionLabel(r.section)}</span>
-                  <Link href={`${HREF[r.section] ?? "/"}/${r.id}`} className="font-medium hover:underline">
+                  <span className="text-muted">{partName(r.section)}</span>
+                  <Link href={`${partPath(r.section)}/${r.id}`} className="font-medium hover:underline">
                     {r.title}
                   </Link>
                 </li>

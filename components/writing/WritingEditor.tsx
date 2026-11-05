@@ -12,6 +12,7 @@ import { useFocusMode } from "@/components/exercise/PracticeRunner";
 import { Card, btn } from "@/components/ui";
 
 export function WritingEditor({
+  base,
   task,
   mode,
   parent,
@@ -21,6 +22,8 @@ export function WritingEditor({
   hideModeSwitch,
   limitSecOverride,
 }: {
+  /** URL of the part (e.g. /iras) – submissions open under <base>/beadas/<id>. */
+  base: string;
   task: WritingTask;
   mode: "practice" | "exam" | "mock";
   parent: { id: string; text: string; version: number } | null;
@@ -99,7 +102,7 @@ export function WritingEditor({
         /* ignore */
       }
       if (onSubmitted) onSubmitted(r.id);
-      else router.push(`/iras/beadas/${r.id}`);
+      else router.push(`${base}/beadas/${r.id}`);
     });
   };
 
@@ -108,10 +111,10 @@ export function WritingEditor({
       <div className="space-y-4">
         {!hideModeSwitch && (
           <div className="flex flex-wrap items-center gap-2 text-sm">
-            <Link href={`/iras/${task.id}${parent ? `?parent=${parent.id}` : ""}`} className={mode === "practice" ? btn.primary : btn.secondary}>
+            <Link href={`${base}/${task.id}${parent ? `?parent=${parent.id}` : ""}`} className={mode === "practice" ? btn.primary : btn.secondary}>
               {t.mode.practice}
             </Link>
-            <Link href={`/iras/${task.id}?mode=exam${parent ? `&parent=${parent.id}` : ""}`} className={mode === "exam" ? btn.primary : btn.secondary}>
+            <Link href={`${base}/${task.id}?mode=exam${parent ? `&parent=${parent.id}` : ""}`} className={mode === "exam" ? btn.primary : btn.secondary}>
               {t.mode.exam}
             </Link>
             <span className="text-xs text-muted">{mode === "exam" ? t.mode.examHint : t.mode.practiceHint}</span>

@@ -2,11 +2,12 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { categoryStats, recentErrors, weeklyTrend } from "@/lib/errors/log";
 import { fixedMistakes, pickMistakes } from "@/lib/targeted";
+import { targetedPath } from "@/lib/exam/config";
 import { AddFixCardButton } from "@/components/vocab/AddFixCardButton";
 import { countBankItems } from "@/lib/targeted";
 import { examConfig } from "@/lib/exam/config";
 import { getSettings } from "@/lib/settings";
-import { buildCommand } from "@/lib/commands/build";
+import { feladatokCommand } from "@/lib/commands/build";
 import { t } from "@/lib/i18n/hu";
 import { Badge, Card, Empty, PageHeader, btn, formatDate } from "@/components/ui";
 import { CommandTip } from "@/components/CommandTip";
@@ -105,7 +106,7 @@ export default async function ErrorLogPage({ searchParams }: { searchParams: Pro
                         </td>
                         <td className="py-2 text-right">
                           {enough ? (
-                            <Link href={`/nyelvhelyesseg/celzott?k=${c.category}`} className={btn.small} data-testid={`practice-${c.category}`}>
+                            <Link href={`${targetedPath()}?k=${c.category}`} className={btn.small} data-testid={`practice-${c.category}`}>
                               ▶ {t.errorLog.practice}
                             </Link>
                           ) : (
@@ -126,7 +127,7 @@ export default async function ErrorLogPage({ searchParams }: { searchParams: Pro
               .map((c) => (
                 <CommandTip
                   key={c.category}
-                  command={buildCommand("feladatok", ["nyelvhelyesseg", s.level, 10, null, c.category])}
+                  command={feladatokCommand(examConfig.subject().id, targetedPath().split("/")[1]!, s.level, 10, null, c.category)}
                   message={`${c.name}: ${t.tips.notEnoughTargeted}`}
                   dismissKey={`targeted-${c.category}-${s.level}`}
                 />
