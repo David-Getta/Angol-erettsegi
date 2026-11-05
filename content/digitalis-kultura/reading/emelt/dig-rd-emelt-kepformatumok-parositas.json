@@ -109,7 +109,7 @@
       "prompt": "Egy képpont színének tárolására használt bitek száma; 24 bitnél kb. 16,7 millió szín.",
       "answer": "G",
       "category": "prezentacio-weblap-hiba",
-      "explanation": "G – színmélység. n biten 2ⁿ szín ábrázolható: 24 bit = 2²⁴ = 16 777 216 szín. A fájlméret (tömörítés nélkül) = szélesség · magasság · színmélység."
+      "explanation": "G – színmélység. n biten 2ⁿ szín ábrázolható: 24 bit = 2²⁴ = 16 777 216 szín. A fájlméret (tömörítés nélkül) = szélesség · magasság · színmélység bit, ezt 8-cal osztva kapjuk a bájtokat."
     },
     {
       "id": "7",

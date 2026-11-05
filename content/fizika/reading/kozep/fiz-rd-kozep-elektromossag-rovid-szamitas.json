@@ -35,7 +35,7 @@
       "id": "2",
       "kind": "text",
       "prompt": "Ugyanezt a 4 Ω-os és 6 Ω-os ellenállást most párhuzamosan kapcsoljuk. Mekkora az eredő ellenállás?",
-      "answer": ["2,4 Ω", "2.4 Ω", "2,4 ohm", "2.4 ohm", "2,4", "2.4"],
+      "answer": ["2,4 Ω", "2,4 ohm", "2,4"],
       "maxWords": 2,
       "category": "kepletek",
       "explanation": "Helyes: 2,4 Ω. Párhuzamos kapcsolásnál 1/R_e = 1/4 + 1/6 = 3/12 + 2/12 = 5/12, tehát R_e = 12/5 = 2,4 Ω. Két ellenállásnál használható az R_e = R₁·R₂/(R₁ + R₂) = 24/10 = 2,4 Ω alak is. Az eredő kisebb a kisebb ellenállásnál is."
@@ -44,7 +44,7 @@
       "id": "3",
       "kind": "text",
       "prompt": "Egy vasaló 230 V-on 1150 W teljesítménnyel működik. Mekkora áram folyik rajta?",
-      "answer": ["5 A", "5 amper", "5", "5,0 A", "5.0 A"],
+      "answer": ["5 A", "5 amper", "5", "5,0 A"],
       "maxWords": 2,
       "category": "kepletek",
       "explanation": "Helyes: 5 A. P = U·I, ebből I = P/U = 1150 W / 230 V = 5 A."
@@ -53,7 +53,7 @@
       "id": "4",
       "kind": "text",
       "prompt": "Egy 100 W-os izzó összesen 50 órát világít. Hány kilowattóra energiát használ el?",
-      "answer": ["5 kWh", "5", "5,0 kWh", "5.0 kWh"],
+      "answer": ["5 kWh", "5", "5,0 kWh"],
       "maxWords": 2,
       "category": "mertekegyseg",
       "explanation": "Helyes: 5 kWh. 100 W = 0,1 kW; E = P·t = 0,1 kW · 50 h = 5 kWh. (A villanyszámlán ezt az egységet használják; 1 kWh = 3,6 MJ.)"
@@ -62,7 +62,7 @@
       "id": "5",
       "kind": "text",
       "prompt": "Egy vezető keresztmetszetén 2 perc alatt 36 C töltés halad át. Mekkora az áramerősség?",
-      "answer": ["0,3 A", "0.3 A", "0,3", "0.3", "300 mA", "0,30 A", "0.30 A"],
+      "answer": ["0,3 A", "0,3", "300 mA", "0,30 A"],
       "maxWords": 2,
       "category": "mertekegyseg",
       "explanation": "Helyes: 0,3 A. Az időt másodpercre kell váltani: 2 perc = 120 s. I = Q/t = 36 C / 120 s = 0,3 A (= 300 mA). Gyakori hiba a 36/2 = 18 A, ami a perc másodpercre váltásának kihagyásából ered."
@@ -71,10 +71,10 @@
       "id": "6",
       "kind": "text",
       "prompt": "Egy 12 V-os akkumulátor 3 A erősségű áramot ad 10 percen keresztül. Mennyi elektromos energiát ad le ez alatt? (Add meg joule-ban!)",
-      "answer": ["21600 J", "21 600 J", "21600", "21 600", "21,6 kJ", "21.6 kJ"],
+      "answer": ["21 600 J", "21600", "21,6 kJ", "22 000 J", "22000", "22 kJ", "2,2·10⁴ J"],
       "maxWords": 3,
       "category": "szamolas",
-      "explanation": "Helyes: 21 600 J = 21,6 kJ. A teljesítmény P = U·I = 12 V · 3 A = 36 W; az idő 10 perc = 600 s; az energia E = P·t = 36 W · 600 s = 21 600 J."
+      "explanation": "Helyes: 21 600 J = 21,6 kJ, két értékes jegyre kerekítve 22 000 J = 2,2 · 10⁴ J (mindkét alak elfogadott). A teljesítmény P = U·I = 12 V · 3 A = 36 W; az idő 10 perc = 600 s; az energia E = P·t = 36 W · 600 s = 21 600 J."
     }
   ],
   "glossary": [],

@@ -14,15 +14,15 @@
   "instructions": "Párosítsd a felfedezéseket, eredményeket azzal a tudóssal, akinek a nevéhez fűződnek! Minden nevet legfeljebb egyszer használhatsz, és két név kimarad. A 0. sor a megoldott példa.",
   "options": [
     { "key": "A", "text": "Henri Becquerel" },
-    { "key": "B", "text": "Isaac Newton" },
-    { "key": "C", "text": "Galileo Galilei" },
-    { "key": "D", "text": "Michael Faraday" },
-    { "key": "E", "text": "Ernest Rutherford" },
-    { "key": "F", "text": "Eötvös Loránd" },
-    { "key": "G", "text": "Albert Einstein" },
+    { "key": "B", "text": "Marie Curie" },
+    { "key": "C", "text": "Albert Einstein" },
+    { "key": "D", "text": "Eötvös Loránd" },
+    { "key": "E", "text": "Michael Faraday" },
+    { "key": "F", "text": "Galileo Galilei" },
+    { "key": "G", "text": "Jedlik Ányos" },
     { "key": "H", "text": "James Clerk Maxwell" },
-    { "key": "I", "text": "Jedlik Ányos" },
-    { "key": "J", "text": "Marie Curie" }
+    { "key": "I", "text": "Isaac Newton" },
+    { "key": "J", "text": "Ernest Rutherford" }
   ],
   "example": {
     "id": "0",
@@ -37,57 +37,57 @@
       "id": "1",
       "kind": "match",
       "prompt": "Megfogalmazta a mechanika három alaptörvényét és az egyetemes tömegvonzás törvényét (Principia, 1687).",
-      "answer": "B",
+      "answer": "I",
       "category": "fogalmak",
-      "explanation": "Helyes: B – Isaac Newton. A Philosophiae Naturalis Principia Mathematica (1687) tartalmazza a tehetetlenség, az erő és gyorsulás (F = m·a), valamint a hatás–ellenhatás törvényét és a gravitációs törvényt, amellyel a bolygómozgást is megmagyarázta."
+      "explanation": "Helyes: I – Isaac Newton. A Philosophiae Naturalis Principia Mathematica (1687) tartalmazza a tehetetlenség, az erő és gyorsulás (F = m·a), valamint a hatás–ellenhatás törvényét és a gravitációs törvényt, amellyel a bolygómozgást is megmagyarázta."
     },
     {
       "id": "2",
       "kind": "match",
       "prompt": "Saját készítésű távcsövével felfedezte a Jupiter négy legnagyobb holdját (1610), és lejtőn végzett kísérletekkel vizsgálta a gyorsuló mozgást.",
-      "answer": "C",
+      "answer": "F",
       "category": "fogalmak",
-      "explanation": "Helyes: C – Galileo Galilei. 1610-ben fedezte fel a Jupiter négy nagy (ma „Galilei-holdaknak” nevezett) holdját, ami a heliocentrikus világkép mellett szólt; a lejtős kísérleteiből arra jutott, hogy a megtett út az idő négyzetével arányos."
+      "explanation": "Helyes: F – Galileo Galilei. 1610-ben fedezte fel a Jupiter négy nagy (ma „Galilei-holdaknak” nevezett) holdját, ami a heliocentrikus világkép mellett szólt; a lejtős kísérleteiből arra jutott, hogy a megtett út az idő négyzetével arányos."
     },
     {
       "id": "3",
       "kind": "match",
       "prompt": "Felfedezte az elektromágneses indukciót: a változó mágneses mező áramot kelt a zárt vezetőben (1831).",
-      "answer": "D",
+      "answer": "E",
       "category": "fogalmak",
-      "explanation": "Helyes: D – Michael Faraday. 1831-ben mutatta ki, hogy egy tekercsben áram indukálódik, ha a rajta áthaladó mágneses mező változik (pl. mágnest mozgatunk benne). Ezen alapul a generátor és a transzformátor működése."
+      "explanation": "Helyes: E – Michael Faraday. 1831-ben mutatta ki, hogy egy tekercsben áram indukálódik, ha a rajta áthaladó mágneses mező változik (pl. mágnest mozgatunk benne). Ezen alapul a generátor és a transzformátor működése."
     },
     {
       "id": "4",
       "kind": "match",
       "prompt": "Munkatársai aranyfóliás szórási kísérletének eredménye alapján megalkotta az atom magmodelljét: az atom tömegének szinte egésze egy parányi, pozitív töltésű magban van (1911).",
-      "answer": "E",
+      "answer": "J",
       "category": "fogalmak",
-      "explanation": "Helyes: E – Ernest Rutherford. Geiger és Marsden kísérletében az alfa-részecskék többsége akadálytalanul átment a vékony aranyfólián, de néhány nagy szögben visszapattant. Rutherford ebből arra következtetett, hogy a pozitív töltés és a tömeg egy kicsi atommagban koncentrálódik."
+      "explanation": "Helyes: J – Ernest Rutherford. Geiger és Marsden kísérletében az alfa-részecskék többsége akadálytalanul átment a vékony aranyfólián, de néhány nagy szögben visszapattant. Rutherford ebből arra következtetett, hogy a pozitív töltés és a tömeg egy kicsi atommagban koncentrálódik."
     },
     {
       "id": "5",
       "kind": "match",
       "prompt": "Torziós ingájával rendkívüli pontossággal kimutatta, hogy a testek súlyos és tehetetlen tömege arányos (egyenlő).",
-      "answer": "F",
+      "answer": "D",
       "category": "fogalmak",
-      "explanation": "Helyes: F – Eötvös Loránd. Az Eötvös-ingával végzett mérései szerint a tehetetlen és a súlyos tömeg aránya minden anyagra ugyanaz (legalább százmilliomod résznyi pontossággal); ez az általános relativitáselmélet egyik kísérleti alapja lett. Az ingát geofizikai kutatásra (pl. kőolaj keresésére) is használták."
+      "explanation": "Helyes: D – Eötvös Loránd. Az Eötvös-ingával végzett mérései szerint a tehetetlen és a súlyos tömeg aránya minden anyagra ugyanaz (legalább százmilliomod résznyi pontossággal); ez az általános relativitáselmélet egyik kísérleti alapja lett. Az ingát geofizikai kutatásra (pl. kőolaj keresésére) is használták."
     },
     {
       "id": "6",
       "kind": "match",
       "prompt": "A fény kvantumos (foton-) természetével magyarázta a fényelektromos jelenséget (1905), ezért kapott Nobel-díjat.",
-      "answer": "G",
+      "answer": "C",
       "category": "fogalmak",
-      "explanation": "Helyes: G – Albert Einstein. 1905-ös cikkében feltételezte, hogy a fény h·f energiájú adagokban (fotonokban) nyelődik el; így megmagyarázta, miért függ a kilépő elektronok energiája a fény frekvenciájától és nem az erősségétől. Az 1921-es Nobel-díjat ezért kapta, nem a relativitáselméletért."
+      "explanation": "Helyes: C – Albert Einstein. 1905-ös cikkében feltételezte, hogy a fény h·f energiájú adagokban (fotonokban) nyelődik el; így megmagyarázta, miért függ a kilépő elektronok energiája a fény frekvenciájától és nem az erősségétől. Az 1921-es Nobel-díjat ezért kapta, nem a relativitáselméletért."
     },
     {
       "id": "7",
       "kind": "match",
       "prompt": "Megépítette az egyik első elektromágneses forgógépet („villamdelejes forgony”), és Siemenst megelőzve leírta a dinamóelvet (öngerjesztés).",
-      "answer": "I",
+      "answer": "G",
       "category": "fogalmak",
-      "explanation": "Helyes: I – Jedlik Ányos. A bencés tanár-fizikus az 1820-as évek végén épített elektromágneses forgógépet, és évekkel Werner von Siemens 1866-os dinamója előtt leírta az öngerjesztés elvét. Nevéhez fűződik a szódavízgyártás hazai elterjesztése is."
+      "explanation": "Helyes: G – Jedlik Ányos. A bencés tanár-fizikus az 1820-as évek végén épített elektromágneses forgógépet, és évekkel Werner von Siemens 1866-os dinamója előtt leírta az öngerjesztés elvét. Nevéhez fűződik a szódavízgyártás hazai elterjesztése is."
     }
   ],
   "glossary": [],

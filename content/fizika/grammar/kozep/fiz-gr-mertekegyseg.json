@@ -121,7 +121,7 @@
     }
   ],
   "examTips": [
-    "Minden végeredmény mellé írj mértékegységet – a számításos feladatok javítási útmutatója a „Válasz, mértékegység” szempontra külön pontot ad.",
+    "Minden végeredmény mellé írj mértékegységet – a hiányzó mértékegység pontlevonással jár, és a számításos feladat értékelésében a „Válasz, mértékegység” szempont külön pontot ér.",
     "Teszt: a rossz válaszok között szinte mindig ott van az átváltás nélküli eredmény (pl. 1000-szer vagy 3,6-szer nagyobb) – ha ilyet kapsz, nézd meg újra az egységeket.",
     "A függvénytáblázat első oldalain megtalálod a prefixumokat és az átváltásokat – vizsga közben is használd."
   ],
@@ -256,9 +256,7 @@
       "prompt": "Egy foton energiája 2,0 eV. Mennyi ez joule-ban? (Normálalakban, pl. 1,6 · 10⁻¹⁹ J alakban add meg!)",
       "answer": [
         "3,2 · 10⁻¹⁹ J",
-        "3,2·10⁻¹⁹ J",
         "3,2 · 10^-19 J",
-        "3.2 · 10⁻¹⁹ J",
         "3,2e-19 J",
         "3,2 · 10⁻¹⁹",
         "3,2e-19"

@@ -11,7 +11,7 @@
   "tags": [],
   "section": "reading",
   "type": "igaz-hamis",
-  "instructions": "Döntsd el az állításokról, hogy igazak (I) vagy hamisak (H)! A 0. állítás a megoldott példa. Ahol szükséges, g = 10 m/s², a víz sűrűsége 1000 kg/m³.",
+  "instructions": "Döntsd el az állításokról, hogy igazak vagy hamisak! A 0. állítás a megoldott példa. Ahol szükséges, g = 10 m/s², a víz sűrűsége 1000 kg/m³.",
   "example": {
     "id": "0",
     "kind": "tf",
@@ -75,7 +75,7 @@
       "prompt": "A gyorsabban áramló levegőben (vagy folyadékban) nagyobb a nyomás, mint a lassabban áramlóban.",
       "answer": "F",
       "category": "torvenyek",
-      "explanation": "Hamis. Bernoulli törvénye szerint ugyanabban az áramlásban ahol nagyobb a sebesség, ott KISEBB a (sztatikus) nyomás. Ezért húzza be a függönyt a nyitott ablakon kívül elsüvítő szél, és ezért emelkedik a kéménybe szívott füst."
+      "explanation": "Hamis. Bernoulli törvénye szerint ugyanabban az áramlásban ahol nagyobb a sebesség, ott KISEBB a (sztatikus) nyomás. Ezért szívja KI a függönyt a nyitott ablakon az ablak előtt elsüvítő szél (kint kisebb a nyomás, mint a szobában), és ezért erősebb a kémény huzata, ha szél fúj el a kéménytető fölött."
     },
     {
       "id": "8",

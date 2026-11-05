@@ -50,6 +50,7 @@
       "answer": [
         "B"
       ],
+      "caseSensitive": true,
       "category": "algoritmus-logika",
       "explanation": "Kimenet: B. Az első feltétel hamis, mert az and miatt mindkét részének igaznak kellene lennie, de 15 % 2 = 1, tehát a 15 nem páros. Az elif feltétele (15 > 10) igaz, így a B ág fut le, az else már nem."
     },
@@ -100,6 +101,7 @@
       "answer": [
         "Buda"
       ],
+      "caseSensitive": true,
       "category": "adattipus-adatszerkezet",
       "explanation": "Kimenet: Buda. A szeletelés [0:4] a 0., 1., 2. és 3. indexű karaktert adja (B, u, d, a); a záró index (4) már nem tartozik bele."
     }

@@ -46,7 +46,7 @@
     },
     {
       "title": "Összesítés és csoportosítás",
-      "explanation": "Összesítő függvények: COUNT(*), COUNT(mező), SUM, AVG, MIN, MAX – a NULL értékeket kihagyják. GROUP BY-nál a SELECT-ben csak a csoportosító mezők és összesítő függvények állhatnak. Csoportokra a HAVING szűr, rekordokra a WHERE.",
+      "explanation": "Összesítő függvények: COUNT(*), COUNT(mező), SUM, AVG, MIN, MAX – a COUNT(*) minden rekordot megszámol, a többi a NULL értékeket kihagyja. GROUP BY-nál a SELECT-ben csak a csoportosító mezők és összesítő függvények állhatnak. Csoportokra a HAVING szűr, rekordokra a WHERE.",
       "emeltOnly": false,
       "examples": [
         {

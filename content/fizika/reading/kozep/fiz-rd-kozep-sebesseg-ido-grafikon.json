@@ -11,7 +11,7 @@
   "tags": [],
   "section": "reading",
   "type": "abraelemzes",
-  "instructions": "Olvasd el a grafikon szöveges leírását, és válaszolj a kérdésekre! A feleletválasztós kérdéseknél egy helyes válasz van; a számszerű választ a kért egységben, az igaz–hamis állításoknál I vagy H jelöléssel add meg. A 0. kérdés a megoldott példa.",
+  "instructions": "Olvasd el a grafikon szöveges leírását, és válaszolj a kérdésekre! A feleletválasztós kérdéseknél egy helyes válasz van; a számszerű választ a kért egységben, az igaz–hamis állításoknál az Igaz vagy a Hamis lehetőséget jelöld. A 0. kérdés a megoldott példa.",
   "passage": {
     "title": "Egy villamos sebesség–idő grafikonja",
     "blocks": [
@@ -183,13 +183,9 @@
       "prompt": "Mekkora a villamos átlagsebessége a teljes, 48 s-os mozgás során? (m/s-ban, két értékes jegyre kerekítve)",
       "answer": [
         "9,8 m/s",
-        "9.8 m/s",
         "9,8",
-        "9.8",
         "9,75 m/s",
-        "9.75 m/s",
-        "9,75",
-        "9.75"
+        "9,75"
       ],
       "maxWords": 2,
       "category": "szamolas",

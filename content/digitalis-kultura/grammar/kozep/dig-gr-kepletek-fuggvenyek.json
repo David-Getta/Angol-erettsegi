@@ -12,7 +12,7 @@
   "section": "grammar",
   "type": "lesson",
   "category": "kepletek-fuggvenyek",
-  "summaryHu": "A táblázatkezelési feladat pontjainak többsége képletekért jár: a javítók azt nézik, hogy minden eredmény képlettel készült-e (nem kézzel beírt szám), a képlet másolható-e (helyes relatív, abszolút, vegyes hivatkozás), és a feladathoz illő függvényt használtad-e. Magyar Excelben a függvények magyar nevűek és pontosvessző választja el az argumentumokat (=SZUM(A1:A5)), angol Excelben és LibreOffice Calcban angol nevek és (Calcban beállítástól függően) vessző vagy pontosvessző.",
+  "summaryHu": "A táblázatkezelési feladat pontjainak többsége képletekért jár: a javítók azt nézik, hogy minden eredmény képlettel készült-e (nem kézzel beírt szám), a képlet másolható-e (helyes relatív, abszolút, vegyes hivatkozás), és a feladathoz illő függvényt használtad-e. Magyar Excelben (és a magyar felületű LibreOffice Calcban) a függvények magyar nevűek és pontosvessző választja el az argumentumokat (=SZUM(A1:A5)); angol nyelvű Excelben angol nevek és vessző (angol felületű Calcban angol nevek, beállítástól függően vessző vagy pontosvessző).",
   "rules": [
     {
       "title": "A képlet és a hivatkozások",
@@ -257,8 +257,7 @@
       "kind": "text",
       "prompt": "Egészítsd ki a feltételt úgy, hogy az =DARABTELI(H2:H200; … ) a H2 cella értékénél kisebb számokat számolja meg! Írd be a hiányzó argumentumot!",
       "answer": [
-        "\"<\"&H2",
-        "\"<\" & H2"
+        "\"<\"&H2"
       ],
       "explanation": "\"<\"&H2. Az & összefűzi a relációs jelet a cella értékével (pl. \"<118,5\"); ha a H2 az idézőjelen belül állna, szövegként értelmezné.",
       "id": "6",
