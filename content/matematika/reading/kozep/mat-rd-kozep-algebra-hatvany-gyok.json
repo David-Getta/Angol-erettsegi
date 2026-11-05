@@ -1,0 +1,83 @@
+{
+  "schemaVersion": 1,
+  "id": "mat-rd-kozep-algebra-hatvany-gyok",
+  "subject": "matematika",
+  "revision": 1,
+  "level": "kozep",
+  "source": "generated",
+  "topic": "algebra",
+  "title": "Hatvány, gyök, logaritmus, százalék",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "reading",
+  "type": "rovid-szamitas",
+  "instructions": "Számítsd ki a kifejezések értékét, és csak az eredményt írd be (tört vagy tizedes tört alakban). A 0. feladat kidolgozott példa.",
+  "example": {
+    "id": "0",
+    "kind": "text",
+    "prompt": "Mennyi 2⁵ · 2³ értéke?",
+    "answer": ["256"],
+    "category": "tortek-hatvanyok",
+    "explanation": "Azonos alapú hatványok szorzásakor a kitevők összeadódnak: 2⁵·2³ = 2⁸ = 256."
+  },
+  "items": [
+    {
+      "id": "1",
+      "kind": "text",
+      "prompt": "Mennyi (2/3)⁻² értéke?",
+      "answer": ["9/4", "2,25", "2.25"],
+      "category": "tortek-hatvanyok",
+      "explanation": "Negatív kitevő: az alap reciprokát emeljük a pozitív kitevőre: (2/3)⁻² = (3/2)² = 9/4 = 2,25."
+    },
+    {
+      "id": "2",
+      "kind": "text",
+      "prompt": "Mennyi lg 1000 értéke?",
+      "answer": ["3"],
+      "category": "definicio-tetel",
+      "explanation": "Az lg a 10-es alapú logaritmus: lg 1000 az a kitevő, amelyre 10-et emelve 1000-et kapunk. 10³ = 1000, tehát lg 1000 = 3."
+    },
+    {
+      "id": "3",
+      "kind": "text",
+      "prompt": "Mennyi √50 · √2 értéke?",
+      "answer": ["10"],
+      "category": "tortek-hatvanyok",
+      "explanation": "Gyökök szorzata a szorzat gyöke: √50·√2 = √100 = 10. Másképp: √50 = 5√2, így 5√2·√2 = 5·2 = 10."
+    },
+    {
+      "id": "4",
+      "kind": "text",
+      "prompt": "Mennyi log₂ 32 értéke?",
+      "answer": ["5"],
+      "category": "definicio-tetel",
+      "explanation": "A logaritmus definíciója szerint log₂ 32 az a kitevő, amelyre 2-t emelve 32-t kapunk. 2⁵ = 32, ezért log₂ 32 = 5."
+    },
+    {
+      "id": "5",
+      "kind": "text",
+      "prompt": "Mennyi (−3)² − 3² + 2⁰ értéke?",
+      "answer": ["1"],
+      "category": "szamolasi-hiba",
+      "explanation": "(−3)² = 9, mert negatív szám négyzete pozitív; 3² = 9; bármely nem nulla szám nulladik hatványa 1, így 2⁰ = 1. Összesen: 9 − 9 + 1 = 1."
+    },
+    {
+      "id": "6",
+      "kind": "text",
+      "prompt": "Írd fel tizedes tört alakban a 10⁻² számot!",
+      "answer": ["0,01", "0.01", "1/100"],
+      "category": "tortek-hatvanyok",
+      "explanation": "10⁻² = 1/10² = 1/100 = 0,01. A negatív kitevő reciprokot jelent, nem negatív számot."
+    },
+    {
+      "id": "7",
+      "kind": "text",
+      "prompt": "Egy szám háromszorosának a 20%-a 12. Melyik ez a szám?",
+      "answer": ["20"],
+      "category": "szoveges-ertelmezes",
+      "explanation": "Legyen a szám x. A háromszorosának 20%-a: 0,2·3x = 0,6x. 0,6x = 12, innen x = 20. Ellenőrzés: 3·20 = 60, ennek 20%-a 12."
+    }
+  ],
+  "glossary": [],
+  "suggestedMinutes": 12
+}

@@ -1,0 +1,91 @@
+{
+  "schemaVersion": 1,
+  "id": "mat-rd-kozep-sikgeometria-igaz-hamis",
+  "subject": "matematika",
+  "revision": 1,
+  "level": "kozep",
+  "source": "generated",
+  "topic": "sikgeometria",
+  "title": "Síkgeometriai állítások – igaz vagy hamis?",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "reading",
+  "type": "igaz-hamis",
+  "instructions": "Döntsd el minden állításról, hogy igaz (T) vagy hamis (F)! A magyarázatban az indoklást is megtalálod. A 0. állítás a példa.",
+  "example": {
+    "id": "0",
+    "kind": "tf",
+    "prompt": "Minden négyzet téglalap.",
+    "answer": "T",
+    "category": "definicio-tetel",
+    "explanation": "Igaz. A téglalap olyan négyszög, amelynek minden szöge derékszög; a négyzetnek minden szöge derékszög (és minden oldala egyenlő), tehát a négyzet speciális téglalap."
+  },
+  "items": [
+    {
+      "id": "1",
+      "kind": "tf",
+      "prompt": "Minden rombusz négyzet.",
+      "answer": "F",
+      "category": "definicio-tetel",
+      "explanation": "Hamis. A rombusz olyan négyszög, amelynek minden oldala egyenlő, de a szögei nem feltétlenül derékszögek. Csak a derékszögű rombusz négyzet – fordítva igaz: minden négyzet rombusz."
+    },
+    {
+      "id": "2",
+      "kind": "tf",
+      "prompt": "Bármely háromszög belső szögeinek összege 180°.",
+      "answer": "T",
+      "category": "definicio-tetel",
+      "explanation": "Igaz. Ez a háromszög belső szögeinek összegéről szóló tétel: α + β + γ = 180° minden (síkbeli) háromszögre."
+    },
+    {
+      "id": "3",
+      "kind": "tf",
+      "prompt": "Ha egy háromszög két oldala 3 cm és 4 cm, akkor a harmadik oldala csak 5 cm lehet.",
+      "answer": "F",
+      "category": "geometria-osszefuggesek",
+      "explanation": "Hamis. A háromszög-egyenlőtlenség szerint a harmadik oldal bármely érték lehet 4 − 3 = 1 cm és 4 + 3 = 7 cm között (1 < c < 7). Az 5 cm csak akkor kötelező, ha a háromszög derékszögű is."
+    },
+    {
+      "id": "4",
+      "kind": "tf",
+      "prompt": "A kör kerülete az átmérőjének π-szerese.",
+      "answer": "T",
+      "category": "kepletek",
+      "explanation": "Igaz. K = 2rπ = dπ, ahol d = 2r az átmérő. A π éppen a kerület és az átmérő hányadosa."
+    },
+    {
+      "id": "5",
+      "kind": "tf",
+      "prompt": "A szabályos hatszög egy belső szöge 120°.",
+      "answer": "T",
+      "category": "kepletek",
+      "explanation": "Igaz. Az n oldalú sokszög belső szögeinek összege (n − 2)·180°, hatszögnél 4·180° = 720°; szabályos hatszögnél ezt 6 egyenlő szög adja: 720° : 6 = 120°."
+    },
+    {
+      "id": "6",
+      "kind": "tf",
+      "prompt": "A deltoid átlói felezik egymást.",
+      "answer": "F",
+      "category": "definicio-tetel",
+      "explanation": "Hamis. A deltoid átlói merőlegesek egymásra, és a szimmetriaátló felezi a másik átlót, de a másik átló általában nem felezi a szimmetriaátlót. Az átlók egymást felezése a paralelogrammák tulajdonsága (a rombusz, amely deltoid is, kivétel)."
+    },
+    {
+      "id": "7",
+      "kind": "tf",
+      "prompt": "Thalész tétele szerint ha egy kör átmérőjének két végpontját a körvonal bármely más pontjával összekötjük, derékszögű háromszöget kapunk.",
+      "answer": "T",
+      "category": "definicio-tetel",
+      "explanation": "Igaz. Ez Thalész tétele: az átmérő a körvonal bármely más pontjából derékszögben látszik, a derékszög a körvonalon lévő pontnál van."
+    },
+    {
+      "id": "8",
+      "kind": "tf",
+      "prompt": "A háromszög köré írt körének középpontja mindig a háromszög belsejében van.",
+      "answer": "F",
+      "category": "geometria-osszefuggesek",
+      "explanation": "Hamis. A köré írt kör középpontja az oldalfelező merőlegesek metszéspontja: hegyesszögű háromszögnél belül, derékszögűnél az átfogó felezőpontjában, tompaszögű háromszögnél a háromszögön kívül van."
+    }
+  ],
+  "glossary": [],
+  "suggestedMinutes": 8
+}

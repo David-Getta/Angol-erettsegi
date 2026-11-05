@@ -1,0 +1,83 @@
+{
+  "schemaVersion": 1,
+  "id": "mat-rd-kozep-szamelmelet-oszthatosag",
+  "subject": "matematika",
+  "revision": 1,
+  "level": "kozep",
+  "source": "generated",
+  "topic": "szamelmelet",
+  "title": "Oszthatóság, prímek, számrendszerek",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "reading",
+  "type": "rovid-szamitas",
+  "instructions": "Oldd meg a rövid feladatokat, és csak az eredményt írd be (számként). A 0. feladat kidolgozott példa.",
+  "example": {
+    "id": "0",
+    "kind": "text",
+    "prompt": "Mennyi 36 és 48 legnagyobb közös osztója?",
+    "answer": ["12"],
+    "category": "definicio-tetel",
+    "explanation": "36 = 2²·3², 48 = 2⁴·3. A legnagyobb közös osztó a közös prímtényezők kisebb kitevőjű hatványainak szorzata: 2²·3 = 12."
+  },
+  "items": [
+    {
+      "id": "1",
+      "kind": "text",
+      "prompt": "Hány pozitív osztója van a 36-nak?",
+      "answer": ["9", "9 db"],
+      "category": "kepletek",
+      "explanation": "36 = 2²·3². Az osztók száma a kitevők eggyel növelt értékeinek szorzata: (2+1)·(2+1) = 9. Felsorolva: 1, 2, 3, 4, 6, 9, 12, 18, 36."
+    },
+    {
+      "id": "2",
+      "kind": "text",
+      "prompt": "Mennyi 12 és 18 legkisebb közös többszöröse?",
+      "answer": ["36"],
+      "category": "szamolasi-hiba",
+      "explanation": "12 = 2²·3, 18 = 2·3². A legkisebb közös többszörösben minden prím a nagyobb kitevővel szerepel: 2²·3² = 36. Ellenőrzés: 36 = 3·12 = 2·18."
+    },
+    {
+      "id": "3",
+      "kind": "text",
+      "prompt": "Hány prímszám van 20 és 40 között?",
+      "answer": ["4", "4 db"],
+      "category": "definicio-tetel",
+      "explanation": "Prímszám az, amelynek pontosan két pozitív osztója van (1 és önmaga). 20 és 40 között ilyen: 23, 29, 31, 37 – négy prím. A többi páratlan összetett: 21 = 3·7, 25 = 5², 27 = 3³, 33 = 3·11, 35 = 5·7, 39 = 3·13."
+    },
+    {
+      "id": "4",
+      "kind": "text",
+      "prompt": "Írd át tízes számrendszerbe a kettes számrendszerben felírt 1011 számot!",
+      "answer": ["11"],
+      "category": "szamolasi-hiba",
+      "explanation": "A kettes számrendszer helyiértékei jobbról: 1, 2, 4, 8. 1011₂ = 1·8 + 0·4 + 1·2 + 1·1 = 11."
+    },
+    {
+      "id": "5",
+      "kind": "text",
+      "prompt": "Melyik a legkisebb pozitív egész szám, amely 3-mal osztva 2, 5-tel osztva 3 maradékot ad?",
+      "answer": ["8"],
+      "category": "szoveges-ertelmezes",
+      "explanation": "Az 5-tel osztva 3 maradékot adó számok: 3, 8, 13, 18, … Ezek közül a 3 hárommal osztva 0 maradékot ad, a 8 viszont 2-t (8 = 2·3 + 2). Tehát a keresett szám a 8."
+    },
+    {
+      "id": "6",
+      "kind": "text",
+      "prompt": "Hány olyan pozitív egész szám van 1-től 100-ig, amely osztható 6-tal?",
+      "answer": ["16", "16 db"],
+      "category": "ellenorzes",
+      "explanation": "A 6 többszörösei: 6, 12, …, 96. 100 : 6 = 16,67…, tehát 16 többszörös fér el 100-ig (6·16 = 96 ≤ 100, de 6·17 = 102 > 100)."
+    },
+    {
+      "id": "7",
+      "kind": "text",
+      "prompt": "Bontsd prímtényezőkre a 2025-öt! Mennyi a felbontásban szereplő kitevők összege?",
+      "answer": ["6"],
+      "category": "definicio-tetel",
+      "explanation": "2025 = 5·405 = 5·5·81 = 5²·3⁴. A kitevők összege 4 + 2 = 6."
+    }
+  ],
+  "glossary": [],
+  "suggestedMinutes": 12
+}

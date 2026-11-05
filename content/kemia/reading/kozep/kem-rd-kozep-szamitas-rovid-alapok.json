@@ -1,0 +1,91 @@
+{
+  "schemaVersion": 1,
+  "id": "kem-rd-kozep-szamitas-rovid-alapok",
+  "subject": "kemia",
+  "revision": 1,
+  "level": "kozep",
+  "source": "generated",
+  "topic": "szamitasok",
+  "title": "Rövid számítások: anyagmennyiség, oldatok, gázok",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "reading",
+  "type": "szamitas-rovid",
+  "instructions": "Egy-két lépéses számítások. Csak a végeredményt írd be, mértékegységgel! Adatok: Ar(H) = 1, Ar(C) = 12, Ar(O) = 16, Ar(Na) = 23, Ar(S) = 32, Ar(Cl) = 35,5; a gázok moláris térfogata standardállapotban (25 °C, 100 kPa) Vm = 24,5 dm³/mol; NA = 6 · 10²³ 1/mol. A 0. a példa.",
+  "example": {
+    "id": "0",
+    "kind": "text",
+    "prompt": "Mekkora a víz (H₂O) moláris tömege?",
+    "answer": ["18 g/mol", "18"],
+    "maxWords": 2,
+    "category": "anyagmennyiseg",
+    "explanation": "Helyes: 18 g/mol. A moláris tömeg az atomok relatív atomtömegeinek összege g/mol egységben: 2 · 1 + 16 = 18 g/mol."
+  },
+  "items": [
+    {
+      "id": "1",
+      "kind": "text",
+      "prompt": "Hány mol anyagmennyiségű 88 g szén-dioxid (CO₂)?",
+      "answer": ["2 mol", "2"],
+      "maxWords": 2,
+      "category": "anyagmennyiseg",
+      "explanation": "Helyes: 2 mol. M(CO₂) = 12 + 2 · 16 = 44 g/mol; n = m / M = 88 g / 44 g/mol = 2 mol."
+    },
+    {
+      "id": "2",
+      "kind": "text",
+      "prompt": "Mekkora a térfogata 0,5 mol oxigéngáznak standardállapotban?",
+      "answer": ["12,25 dm³", "12.25 dm³", "12,25 dm3", "12.25 dm3", "12,25", "12.25", "12,25 liter", "12,25 l", "12.25 l"],
+      "maxWords": 2,
+      "category": "anyagmennyiseg",
+      "explanation": "Helyes: 12,25 dm³. V = n · Vm = 0,5 mol · 24,5 dm³/mol = 12,25 dm³. A moláris térfogat minden gázra azonos ugyanazon a hőmérsékleten és nyomáson."
+    },
+    {
+      "id": "3",
+      "kind": "text",
+      "prompt": "Hány gramm nátrium-klorid van 200 g 5 tömegszázalékos konyhasóoldatban?",
+      "answer": ["10 g", "10", "10 gramm"],
+      "maxWords": 2,
+      "category": "oldatok-szamitas",
+      "explanation": "Helyes: 10 g. A tömegszázalék az oldat tömegére vonatkozik: m(NaCl) = 200 g · 0,05 = 10 g (és 190 g a víz)."
+    },
+    {
+      "id": "4",
+      "kind": "text",
+      "prompt": "Mekkora 3 · 10²³ darab szén-dioxid-molekula tömege?",
+      "answer": ["22 g", "22", "22 gramm"],
+      "maxWords": 2,
+      "category": "anyagmennyiseg",
+      "explanation": "Helyes: 22 g. n = N / NA = 3 · 10²³ / 6 · 10²³ = 0,5 mol; m = n · M = 0,5 mol · 44 g/mol = 22 g."
+    },
+    {
+      "id": "5",
+      "kind": "text",
+      "prompt": "Hány mol oldott anyag van egy 2 mol/dm³ koncentrációjú oldat 250 cm³-ében?",
+      "answer": ["0,5 mol", "0.5 mol", "0,5", "0.5", "0,50 mol", "0.50 mol"],
+      "maxWords": 2,
+      "category": "oldatok-szamitas",
+      "explanation": "Helyes: 0,5 mol. 250 cm³ = 0,25 dm³; n = c · V = 2 mol/dm³ · 0,25 dm³ = 0,5 mol. A térfogatot mindig dm³-ben kell behelyettesíteni."
+    },
+    {
+      "id": "6",
+      "kind": "text",
+      "prompt": "Mekkora a kénsav (H₂SO₄) moláris tömege?",
+      "answer": ["98 g/mol", "98"],
+      "maxWords": 2,
+      "category": "anyagmennyiseg",
+      "explanation": "Helyes: 98 g/mol. M = 2 · 1 + 32 + 4 · 16 = 2 + 32 + 64 = 98 g/mol."
+    },
+    {
+      "id": "7",
+      "kind": "text",
+      "prompt": "Hány mol hidrogén-klorid keletkezik 1 mol hidrogéngáz és elegendő klórgáz reakciójában? (H₂ + Cl₂ → 2 HCl)",
+      "answer": ["2 mol", "2"],
+      "maxWords": 2,
+      "category": "reakcioegyenlet",
+      "explanation": "Helyes: 2 mol. Az egyenlet szerint 1 mol H₂-ből 2 mol HCl keletkezik (az együtthatók aránya 1 : 2), tehát a hidrogén-klorid anyagmennyisége a hidrogénének kétszerese."
+    }
+  ],
+  "glossary": [],
+  "suggestedMinutes": 10
+}

@@ -1,0 +1,112 @@
+{
+  "schemaVersion": 1,
+  "id": "mat-rd-kozep-tergeometria-fogalom",
+  "subject": "matematika",
+  "revision": 1,
+  "level": "kozep",
+  "source": "generated",
+  "topic": "tergeometria",
+  "title": "Testek: fogalmak, felszín, térfogat",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "reading",
+  "type": "fogalom",
+  "instructions": "Fogalmak és rövid számítások a térgeometriából. A feleletválasztós kérdéseknél a betűjelet, a többinél az eredményt írd be (mértékegységgel vagy anélkül). A 0. feladat a példa.",
+  "example": {
+    "id": "0",
+    "kind": "choice",
+    "prompt": "Hány lapja van a kockának?",
+    "options": [
+      { "key": "A", "text": "4" },
+      { "key": "B", "text": "6" },
+      { "key": "C", "text": "8" },
+      { "key": "D", "text": "12" }
+    ],
+    "answer": "B",
+    "category": "definicio-tetel",
+    "explanation": "A kockát 6 egybevágó négyzet határolja (elöl, hátul, jobbra, balra, fent, lent). 8 a csúcsainak, 12 az éleinek a száma."
+  },
+  "items": [
+    {
+      "id": "1",
+      "kind": "text",
+      "prompt": "Hogyan nevezzük azt a szabályos testet, amelyet 4 egybevágó szabályos háromszög határol?",
+      "answer": ["tetraéder", "szabályos tetraéder", "tetraeder", "szabalyos tetraeder"],
+      "category": "definicio-tetel",
+      "maxWords": 2,
+      "explanation": "Ez a szabályos tetraéder: 4 lapja szabályos háromszög, 4 csúcsa és 6 éle van. A tetraéder általában háromszög alapú gúla."
+    },
+    {
+      "id": "2",
+      "kind": "text",
+      "prompt": "Hány éle van egy kockának?",
+      "answer": ["12", "12 db"],
+      "category": "definicio-tetel",
+      "explanation": "A kockának 12 éle van: 4 az alaplapon, 4 a fedőlapon és 4 oldalél köti össze őket. (Euler-összefüggés: csúcsok + lapok = élek + 2, azaz 8 + 6 = 12 + 2.)"
+    },
+    {
+      "id": "3",
+      "kind": "choice",
+      "prompt": "Melyik képlet adja az r sugarú gömb térfogatát?",
+      "options": [
+        { "key": "A", "text": "4r²π" },
+        { "key": "B", "text": "(4/3)·r³π" },
+        { "key": "C", "text": "r²π·m" },
+        { "key": "D", "text": "2rπ" }
+      ],
+      "answer": "B",
+      "category": "kepletek",
+      "explanation": "A gömb térfogata V = (4/3)·r³π. A 4r²π a gömb felszíne, az r²π·m a henger térfogata, a 2rπ a kör kerülete.",
+      "wrongOptions": {
+        "A": "A 4r²π a gömb felszínének képlete (területjellegű, r második hatványával).",
+        "C": "Az r²π·m az egyenes körhenger térfogata.",
+        "D": "A 2rπ a kör kerülete, nem térfogat."
+      }
+    },
+    {
+      "id": "4",
+      "kind": "text",
+      "prompt": "Egy kocka éle 3 cm. Mennyi a térfogata?",
+      "answer": ["27", "27 cm³", "27 cm3", "27 cm^3", "27 köbcentiméter"],
+      "category": "kepletek",
+      "explanation": "A kocka térfogata V = a³ = 3³ = 27 cm³. A felszíne 6a² = 54 cm² lenne – ne keverd a két képletet."
+    },
+    {
+      "id": "5",
+      "kind": "text",
+      "prompt": "Egy egyenes körhenger alapkörének sugara 2 cm, magassága 5 cm. Mennyi a térfogata? (Add meg π-vel kifejezve vagy egész cm³-re kerekítve!)",
+      "answer": ["20π", "20 π", "20pi", "20 pi", "20π cm³", "63", "63 cm³", "62,83", "62.83", "62,8", "62.8"],
+      "category": "kepletek",
+      "explanation": "V = r²π·m = 2²·π·5 = 20π ≈ 62,83 ≈ 63 cm³. Az alapkör területe (4π cm²) szorozva a magassággal."
+    },
+    {
+      "id": "6",
+      "kind": "choice",
+      "prompt": "Egy négyzet alapú egyenes gúla alapéle 6 cm, magassága 4 cm. Mennyi a térfogata?",
+      "options": [
+        { "key": "A", "text": "144 cm³" },
+        { "key": "B", "text": "48 cm³" },
+        { "key": "C", "text": "96 cm³" },
+        { "key": "D", "text": "72 cm³" }
+      ],
+      "answer": "B",
+      "category": "kepletek",
+      "explanation": "Gúla térfogata V = (alapterület · magasság)/3 = (6²·4)/3 = 144/3 = 48 cm³. A hasonló méretű hasábnak lenne 144 cm³ a térfogata.",
+      "wrongOptions": {
+        "A": "144 cm³ a 6 × 6 × 4-es hasáb térfogata; a gúlánál osztani kell 3-mal.",
+        "C": "96 = 24·4: itt az alapterület felét (mintha háromszög lenne) vették, és nem osztottak 3-mal.",
+        "D": "72 = 144/2: a gúlánál hárommal, nem kettővel kell osztani."
+      }
+    },
+    {
+      "id": "7",
+      "kind": "text",
+      "prompt": "Egy kocka felszíne 54 cm². Mekkora az éle?",
+      "answer": ["3", "3 cm"],
+      "category": "egyenlet-rendezes",
+      "explanation": "A kocka felszíne 6a². 6a² = 54 → a² = 9 → a = 3 cm (a hossz pozitív, a −3 nem megoldás)."
+    }
+  ],
+  "glossary": [],
+  "suggestedMinutes": 9
+}

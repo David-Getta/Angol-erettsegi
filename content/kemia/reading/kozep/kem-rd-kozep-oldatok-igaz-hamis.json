@@ -1,0 +1,91 @@
+{
+  "schemaVersion": 1,
+  "id": "kem-rd-kozep-oldatok-igaz-hamis",
+  "subject": "kemia",
+  "revision": 1,
+  "level": "kozep",
+  "source": "generated",
+  "topic": "anyagi-halmazok",
+  "title": "Oldatok és kristályrácsok – igaz–hamis",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "reading",
+  "type": "igaz-hamis",
+  "instructions": "Döntsd el az állításokról, hogy igazak (I) vagy hamisak (H)! Az appban az I = T (igaz), a H = F (hamis). A 0. a példa.",
+  "example": {
+    "id": "0",
+    "kind": "tf",
+    "prompt": "A konyhasó vizes oldata vezeti az elektromos áramot.",
+    "answer": "T",
+    "category": "kotes-szerkezet",
+    "explanation": "Igaz. A nátrium-klorid ionrácsos vegyület; vízben oldva a rács felbomlik, a szabadon mozgó Na⁺- és Cl⁻-ionok vezetik az áramot (elektrolit)."
+  },
+  "items": [
+    {
+      "id": "1",
+      "kind": "tf",
+      "prompt": "A telített oldat adott hőmérsékleten az oldott anyagból több anyagot már nem képes feloldani.",
+      "answer": "T",
+      "category": "anyagismeret",
+      "explanation": "Igaz. A telített oldatban az oldott anyag koncentrációja az adott hőmérsékleten lehetséges legnagyobb érték (az oldhatóság); ha további anyagot adunk hozzá, az oldatlanul marad, oldódás és kiválás egyensúlyban van."
+    },
+    {
+      "id": "2",
+      "kind": "tf",
+      "prompt": "A jód vízben jól, benzinben rosszul oldódik.",
+      "answer": "F",
+      "category": "kotes-szerkezet",
+      "explanation": "Hamis. Fordítva igaz: a jód apoláris molekulákból áll, ezért az apoláris benzinben oldódik jól (lila oldat), a poláris vízben csak nagyon kis mértékben („hasonló a hasonlóban oldódik”)."
+    },
+    {
+      "id": "3",
+      "kind": "tf",
+      "prompt": "Az oldódás mindig hőtermelő (exoterm) folyamat.",
+      "answer": "F",
+      "category": "egyensuly-kinetika",
+      "explanation": "Hamis. Az oldáshő a rács felbontásához szükséges energia és a hidratáció során felszabaduló energia különbsége, ezért lehet pozitív is: például a kálium-nitrát vagy az ammónium-nitrát oldódása endoterm, az oldat lehűl. A NaOH vagy a tömény kénsav oldódása exoterm."
+    },
+    {
+      "id": "4",
+      "kind": "tf",
+      "prompt": "A gázok vízben való oldhatósága a hőmérséklet emelésével csökken.",
+      "answer": "T",
+      "category": "anyagismeret",
+      "explanation": "Igaz. A gázok oldódása exoterm, ezért melegítéskor az egyensúly a gáz távozása felé tolódik: a meleg vízből a szén-dioxid vagy az oxigén kiszökik (ezért „áll meg” a langyos szénsavas üdítő)."
+    },
+    {
+      "id": "5",
+      "kind": "tf",
+      "prompt": "Egy 10 tömegszázalékos oldat 100 g-jában 10 g oldott anyag és 90 g oldószer van.",
+      "answer": "T",
+      "category": "oldatok-szamitas",
+      "explanation": "Igaz. A tömegszázalék az oldott anyag tömegének és az oldat teljes tömegének aránya százalékban: 10 g / 100 g = 10 %, az oldószer tömege a különbség, 100 − 10 = 90 g."
+    },
+    {
+      "id": "6",
+      "kind": "tf",
+      "prompt": "Az ionrácsos vegyületek olvadáspontja általában alacsony.",
+      "answer": "F",
+      "category": "kotes-szerkezet",
+      "explanation": "Hamis. Az ionrácsban az ellentétes töltésű ionokat erős elektrosztatikus vonzás (ionkötés) tartja össze, ennek felbontásához sok energia kell, ezért az ionvegyületek olvadáspontja magas (NaCl: 801 °C). Alacsony olvadáspont a molekularácsos anyagokra jellemző."
+    },
+    {
+      "id": "7",
+      "kind": "tf",
+      "prompt": "A grafit vezeti az elektromos áramot, a gyémánt nem.",
+      "answer": "T",
+      "category": "kotes-szerkezet",
+      "explanation": "Igaz. A grafitban minden szénatom csak három másikhoz kötődik, a negyedik vegyértékelektron a rétegek mentén delokalizált, ezért a grafit vezető. A gyémántban minden szénatom négy kovalens kötést alakít ki, nincs szabadon mozgó elektron, ezért szigetelő."
+    },
+    {
+      "id": "8",
+      "kind": "tf",
+      "prompt": "A desztillált víz jól vezeti az elektromos áramot.",
+      "answer": "F",
+      "category": "anyagismeret",
+      "explanation": "Hamis. A tiszta víz molekulákból áll, csak elhanyagolhatóan kis mértékben disszociál ionokra (25 °C-on 10⁻⁷ mol/dm³ H⁺ és OH⁻), ezért gyakorlatilag nem vezeti az áramot. A csapvíz az oldott sók ionjai miatt vezet."
+    }
+  ],
+  "glossary": [],
+  "suggestedMinutes": 7
+}
