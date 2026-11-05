@@ -210,6 +210,8 @@ export const AppConfigSchema = z.object({
   review: z
     .object({ minAgeHours: z.number().nonnegative(), itemsPerRound: z.number().int().positive(), planMinDue: z.number().int().positive() })
     .default({ minAgeHours: 20, itemsPerRound: 15, planMinDue: 3 }),
+  /** Automatic database backup when the dev server starts: at most every `everyDays`, keeping the newest `keep` automatic copies. */
+  backup: z.object({ everyDays: z.number().positive(), keep: z.number().int().positive() }).default({ everyDays: 3, keep: 10 }),
 });
 export type AppConfig = z.infer<typeof AppConfigSchema>;
 

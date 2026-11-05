@@ -27,6 +27,7 @@ function itemCount(c: Content): number {
   if (c.section === "vocabulary") return c.cards.length;
   if (c.section === "writing") return c.points.length;
   if (c.section === "grammar") return c.practice.length;
+  if (c.section === "guide") return c.steps.length;
   return 1;
 }
 

@@ -9,6 +9,7 @@ import {
   type Content,
   type Item,
   type GrammarLesson,
+  type Guide,
   type ObjectiveTask,
   type SpeakingTask,
   type VocabDeck,
@@ -89,6 +90,7 @@ export function validateContentDir(dir: string = paths.content): ValidationRepor
     else if (c.section === "speaking") checkSpeaking(ctx, c);
     else if (c.section === "vocabulary") checkVocab(ctx, c);
     else if (c.section === "grammar") checkLesson(ctx, c);
+    else if (c.section === "guide") checkGuide(ctx, c);
 
     const kind = `${c.section}/${c.level}`;
     byKind[kind] = (byKind[kind] ?? 0) + 1;
@@ -114,11 +116,11 @@ function checkPlacement(ctx: Ctx, dir: string, file: string, c: Content) {
 }
 
 function checkCommon(ctx: Ctx, c: Content) {
-  if (c.section !== "grammar" && !ctx.topics.has(c.topic)) err(ctx, `Ismeretlen témakör: "${c.topic}" (lásd config/exam/topics.json).`);
+  if (c.section !== "grammar" && c.section !== "guide" && !ctx.topics.has(c.topic)) err(ctx, `Ismeretlen témakör: "${c.topic}" (lásd config/exam/topics.json).`);
   if (c.source === "official" && !c.official) err(ctx, `Hivatalos feladatnál kötelező az "official" mező (év, időszak, szint).`);
   if (c.source === "generated" && c.official) err(ctx, `Generált feladat nem kaphat "official" mezőt.`);
   if (c.source === "official" && c.official && c.official.level !== c.level) err(ctx, `Az official.level nem egyezik a level mezővel.`);
-  if (c.section !== "vocabulary" && c.section !== "grammar") {
+  if (c.section !== "vocabulary" && c.section !== "grammar" && c.section !== "guide") {
     const types = ctx.taskTypes[c.section as keyof Omit<TaskTypes, "meta">];
     const t = types.find((x) => x.id === c.type);
     if (!t) err(ctx, `Ismeretlen feladattípus a(z) ${c.section} részben: "${c.type}" (lásd config/exam/task-types.json).`);
@@ -338,6 +340,22 @@ function checkLesson(ctx: Ctx, l: GrammarLesson) {
       if (new Set(norm).size !== norm.length) err(ctx, `${label}: ismétlődő elfogadott válasz.`);
     }
   });
+}
+
+const EXAM_PARTS = ["reading", "language-use", "listening", "writing", "speaking"];
+
+function checkGuide(ctx: Ctx, g: Guide) {
+  if (g.id !== `gd-${g.type}-${g.target}`) err(ctx, `Az útmutató azonosítója "gd-${g.type}-${g.target}" legyen.`);
+  if (g.level !== "kozep") err(ctx, `Az útmutatók szintfüggetlenek: level "kozep" legyen, a szintfüggő tanács a "levelNotes"-ba kerül.`);
+  if (g.type === "exam") {
+    if (!EXAM_PARTS.includes(g.target)) err(ctx, `Ismeretlen vizsgarész: "${g.target}" (${EXAM_PARTS.join(", ")}).`);
+  } else {
+    const types = ctx.taskTypes[g.type];
+    if (!types.some((x) => x.id === g.target)) err(ctx, `Ismeretlen ${g.type === "writing" ? "szövegtípus" : "szóbeli feladattípus"}: "${g.target}" (lásd config/exam/task-types.json).`);
+    if (g.phrases.length < 8) warn(ctx, `Legalább 8 hasznos kifejezés (phrases) kell.`);
+  }
+  if (g.checklist.length < 3) warn(ctx, `Legalább 3 ellenőrző pont (checklist) kell.`);
+  if (g.mistakes.length < 3) warn(ctx, `Legalább 3 tipikus hiba (mistakes) kell.`);
 }
 
 function checkVocab(ctx: Ctx, d: VocabDeck) {

@@ -19,7 +19,7 @@ export type Level = z.infer<typeof LevelSchema>;
 export const ObjectiveSectionSchema = z.enum(["reading", "language-use", "listening"]);
 export type ObjectiveSection = z.infer<typeof ObjectiveSectionSchema>;
 
-export const SectionSchema = z.enum(["reading", "language-use", "listening", "writing", "speaking", "vocabulary", "grammar"]);
+export const SectionSchema = z.enum(["reading", "language-use", "listening", "writing", "speaking", "vocabulary", "grammar", "guide"]);
 export type Section = z.infer<typeof SectionSchema>;
 
 const nonEmpty = z.string().trim().min(1, "Nem lehet üres.");
@@ -340,6 +340,39 @@ export const GrammarLessonSchema = BaseSchema.extend({
 export type GrammarLesson = z.infer<typeof GrammarLessonSchema>;
 
 /* ------------------------------------------------------------------ */
+/* Guides (Útmutatók): writing text types, speaking task types, exam parts */
+/* ------------------------------------------------------------------ */
+
+/**
+ * How to write a text type / handle a speaking task / approach an exam part.
+ * Level independent (content/guide/kozep/gd-<type>-<target>.json); level
+ * specific advice goes into `levelNotes`.
+ */
+export const GuideSchema = BaseSchema.extend({
+  section: z.literal("guide"),
+  /** writing: target = writing text type; speaking: target = speaking task type; exam: target = exam part id. */
+  type: z.enum(["writing", "speaking", "exam"]),
+  target: Id,
+  topic: z.literal("utmutato").default("utmutato"),
+  /** 2–4 Hungarian sentences: what this is and what the examiner looks for. */
+  summaryHu: nonEmpty,
+  /** The structure / procedure step by step (Hungarian). */
+  steps: z.array(z.object({ title: nonEmpty, explanation: nonEmpty, tips: z.array(nonEmpty).default([]) })).min(2),
+  /** Ready-made English phrases with Hungarian meaning, grouped (e.g. "Megszólítás", "Érvelés"). */
+  phrases: z.array(z.object({ group: nonEmpty, en: nonEmpty, hu: nonEmpty })).default([]),
+  /** Typical mistakes: wrong → right → why (Hungarian). */
+  mistakes: z.array(z.object({ wrong: nonEmpty, right: nonEmpty, why: nonEmpty })).default([]),
+  /** Self-check list before handing in / at the end (Hungarian). */
+  checklist: z.array(nonEmpty).default([]),
+  /** Time management advice (Hungarian). */
+  timing: z.string().optional(),
+  /** Short annotated example (English text, Hungarian notes). */
+  example: z.object({ title: z.string().optional(), text: nonEmpty, notes: z.array(nonEmpty).default([]) }).optional(),
+  levelNotes: z.object({ kozep: z.string().optional(), emelt: z.string().optional() }).default({}),
+});
+export type Guide = z.infer<typeof GuideSchema>;
+
+/* ------------------------------------------------------------------ */
 
 export const ContentSchema = z.discriminatedUnion("section", [
   ObjectiveTaskSchema.extend({ section: z.literal("reading") }),
@@ -349,6 +382,7 @@ export const ContentSchema = z.discriminatedUnion("section", [
   SpeakingTaskSchema,
   VocabDeckSchema,
   GrammarLessonSchema,
+  GuideSchema,
 ]);
 export type Content = z.infer<typeof ContentSchema>;
 

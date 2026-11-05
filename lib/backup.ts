@@ -58,11 +58,11 @@ export function importData(json: unknown): { tables: number; rows: number } {
   return { tables: Object.keys(TABLES).length, rows };
 }
 
-export async function backupDatabase(): Promise<string> {
+export async function backupDatabase(prefix = "app"): Promise<string> {
   fs.mkdirSync(paths.backups, { recursive: true });
   const d = new Date();
   const pad = (n: number) => String(n).padStart(2, "0");
-  const name = `app-${d.getFullYear()}${pad(d.getMonth() + 1)}${pad(d.getDate())}-${pad(d.getHours())}${pad(d.getMinutes())}${pad(d.getSeconds())}.db`;
+  const name = `${prefix}-${d.getFullYear()}${pad(d.getMonth() + 1)}${pad(d.getDate())}-${pad(d.getHours())}${pad(d.getMinutes())}${pad(d.getSeconds())}.db`;
   const target = path.join(paths.backups, name);
   await getSqlite().backup(target);
   return rel(target);
@@ -78,4 +78,26 @@ export function listBackups(): { name: string; size: number; at: Date }[] {
       return { name: f, size: st.size, at: st.mtime };
     })
     .sort((a, b) => b.at.getTime() - a.at.getTime());
+}
+
+/**
+ * Automatic backup (called when the dev server starts): if there is progress
+ * in the database and the newest backup is older than `everyDays`, a copy
+ * named auto-….db is made; only the newest `keep` automatic copies are kept.
+ * Manual backups (app-….db) are never deleted.
+ */
+export async function autoBackup(opts: { everyDays: number; keep: number }, now = Date.now()): Promise<string | null> {
+  if (!fs.existsSync(paths.db)) return null;
+  const db = getDb();
+  const progress =
+    db.select({ id: s.attempts.id }).from(s.attempts).limit(1).all().length +
+    db.select({ id: s.submissions.id }).from(s.submissions).limit(1).all().length +
+    db.select({ id: s.cards.id }).from(s.cards).limit(1).all().length;
+  if (progress === 0) return null;
+  const newest = listBackups()[0];
+  if (newest && now - newest.at.getTime() < opts.everyDays * 864e5) return null;
+  const created = await backupDatabase("auto");
+  const autos = listBackups().filter((b) => b.name.startsWith("auto-"));
+  for (const old of autos.slice(opts.keep)) fs.rmSync(path.join(paths.backups, old.name), { force: true });
+  return created;
 }

@@ -13,6 +13,7 @@ export const SECTION_FOLDERS = {
   speaking: "speaking",
   vocabulary: "vocabulary",
   grammar: "grammar",
+  guide: "guide",
 } as const;
 
 export type RawFile = { file: string; relPath: string; text: string; hash: string };

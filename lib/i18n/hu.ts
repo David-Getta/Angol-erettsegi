@@ -649,7 +649,7 @@ export const t = {
     importConfirm: "Biztosan visszatöltöd? A jelenlegi haladási adatok felülíródnak.",
     importDone: "Az adatok visszatöltve.",
     backup: "Adatbázis biztonsági mentése",
-    backupHint: "Másolatot készít a data/app.db-ről a data/backups/ mappába.",
+    backupHint: "Másolatot készít a data/app.db-ről a data/backups/ mappába. A dev szerver indulásakor pár naponta automatikus mentés is készül (auto-….db, a legutóbbi 10 marad meg; beállítás: config/app.json → backup).",
     backupDone: (f: string) => `Mentés kész: ${f}`,
     backups: "Mentések",
     savedOk: "Beállítások mentve.",
