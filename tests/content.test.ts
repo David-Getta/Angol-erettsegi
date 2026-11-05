@@ -131,3 +131,42 @@ describe("lessons and model answers", () => {
     expect(r.errors.some((e) => e.message.includes("nem található szó szerint"))).toBe(true);
   });
 });
+
+describe("guides", () => {
+  function validateGuide(c: Record<string, unknown>) {
+    const dir = fs.mkdtempSync(path.join(os.tmpdir(), "content-"));
+    fs.mkdirSync(path.join(dir, "guide", "kozep"), { recursive: true });
+    fs.writeFileSync(path.join(dir, "guide", "kozep", `${c.id}.json`), JSON.stringify(c));
+    return validateContentDir(dir);
+  }
+  const guide = {
+    schemaVersion: 1,
+    id: "gd-exam-reading",
+    level: "kozep",
+    source: "generated",
+    topic: "utmutato",
+    title: "Olvasott szöveg értése",
+    createdAt: "2026-11-05",
+    tags: [],
+    section: "guide",
+    type: "exam",
+    target: "reading",
+    summaryHu: "Stratégia.",
+    steps: [
+      { title: "Olvasd el az utasítást", explanation: "És a példát." },
+      { title: "Fusd át a szöveget", explanation: "A fő gondolatért." },
+    ],
+    mistakes: [
+      { wrong: "a", right: "b", why: "c" },
+      { wrong: "a", right: "b", why: "c" },
+      { wrong: "a", right: "b", why: "c" },
+    ],
+    checklist: ["x", "y", "z"],
+  };
+
+  it("accepts a guide and rejects a wrong id or an unknown target", () => {
+    expect(validateGuide(guide).errors).toEqual([]);
+    expect(validateGuide({ ...guide, id: "gd-exam-listening" }).errors.some((e) => e.message.includes('"gd-exam-reading"'))).toBe(true);
+    expect(validateGuide({ ...guide, id: "gd-writing-poem", type: "writing", target: "poem" }).errors.some((e) => e.message.includes("szövegtípus"))).toBe(true);
+  });
+});

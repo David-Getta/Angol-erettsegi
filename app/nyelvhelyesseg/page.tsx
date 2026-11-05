@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { getSettings } from "@/lib/settings";
 import { categoryStats } from "@/lib/errors/log";
+import { GuideLink } from "@/components/guides/GuideLink";
 import { t } from "@/lib/i18n/hu";
 import { Card, PageHeader, btn } from "@/components/ui";
 import { TaskList } from "@/components/TaskList";
@@ -17,7 +18,12 @@ export default async function LanguageUsePage({ searchParams }: { searchParams: 
     .slice(0, 4);
   return (
     <div>
-      <PageHeader title={t.languageUse.title} intro={t.languageUse.intro} actions={<ReloadContentButton />} />
+      <PageHeader title={t.languageUse.title} intro={t.languageUse.intro} actions={
+          <>
+            <GuideLink type="exam" target="language-use" label={t.guides.strategy} />
+            <ReloadContentButton />
+          </>
+        } />
       <Card title={t.languageUse.targeted} className="mb-6">
         <p className="text-sm text-muted">{t.languageUse.targetedIntro}</p>
         <div className="mt-3 flex flex-wrap gap-2">

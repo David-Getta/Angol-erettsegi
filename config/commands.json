@@ -35,6 +35,11 @@
       "value": "szabaly",
       "section": "grammar",
       "label": "Szabálytár (szabálylecke egy hibakategóriához)"
+    },
+    {
+      "value": "utmutato",
+      "section": "guide",
+      "label": "Útmutató (szövegtípus, szóbeli feladattípus vagy vizsgarész)"
     }
   ],
   "commands": [
@@ -49,7 +54,7 @@
           "name": "rész",
           "required": true,
           "valuesFrom": "sections",
-          "description": "Melyik vizsgarészhez: olvasas, nyelvhelyesseg, hallas, iras, szobeli, szokincs – vagy szabaly (szabálylecke a Szabálytárba egy hibakategóriához)."
+          "description": "Melyik vizsgarészhez: olvasas, nyelvhelyesseg, hallas, iras, szobeli, szokincs – vagy szabaly (szabálylecke egy hibakategóriához), utmutato (útmutató egy szövegtípushoz, szóbeli feladattípushoz vagy vizsgarészhez)."
         },
         {
           "name": "szint",
@@ -92,6 +97,10 @@
         {
           "command": "/feladatok szabaly kozep 1 - gerund-infinitive",
           "description": "Szabálylecke (magyarázat, tipikus hibák, mini-gyakorlás) a Szabálytárba az -ing / főnévi igenév témához."
+        },
+        {
+          "command": "/feladatok utmutato kozep 1 - -",
+          "description": "A még hiányzó útmutatók egyike (szövegtípus / szóbeli feladattípus / vizsgarész) az Útmutatók közé."
         }
       ],
       "after": "Kattints a „Tartalom újratöltése” gombra (vagy indítsd újra a dev szervert / futtasd: npm run seed), és az új feladatok megjelennek."

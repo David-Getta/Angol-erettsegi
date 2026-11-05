@@ -8,6 +8,7 @@ import { examConfig, topicName, taskTypeName } from "@/lib/exam/config";
 import { t } from "@/lib/i18n/hu";
 import { Badge, SourceBadge } from "@/components/ui";
 import { WritingEditor } from "./WritingEditor";
+import { GuideLink } from "@/components/guides/GuideLink";
 import { ModelAnswer } from "@/components/grading/ModelAnswer";
 
 export const metadata: Metadata = { title: t.writing.title };
@@ -34,7 +35,10 @@ export default async function WritingTaskPage({ params, searchParams }: { params
         <Badge>{taskTypeName("writing", task.type)}</Badge>
         <Badge>{topicName(task.topic)}</Badge>
       </div>
-      <h1 className="mb-4 text-2xl font-semibold">{task.title}</h1>
+      <div className="mb-4 flex flex-wrap items-center justify-between gap-3">
+        <h1 className="text-2xl font-semibold">{task.title}</h1>
+        <GuideLink type="writing" target={task.type} label={t.guides.open(taskTypeName("writing", task.type))} />
+      </div>
       <WritingEditor
         task={task}
         mode={mode}

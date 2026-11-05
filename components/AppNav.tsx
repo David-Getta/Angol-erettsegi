@@ -25,6 +25,7 @@ const groups: { title?: string; items: NavItem[] }[] = [
       { href: "/szobeli", label: t.nav.speaking, icon: "🗣" },
       { href: "/szokincs", label: t.nav.vocabulary, icon: "🗂" },
       { href: "/hibanaplo", label: t.nav.errorLog, icon: "⚑" },
+      { href: "/utmutatok", label: t.nav.guides, icon: "📘" },
       { href: "/szabalytar", label: t.nav.lessons, icon: "§" },
       { href: "/kifejezesek", label: t.nav.phrases, icon: "❝" },
       { href: "/temakorok", label: t.nav.topics, icon: "◇" },

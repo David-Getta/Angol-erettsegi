@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { getSettings } from "@/lib/settings";
+import { GuideLink } from "@/components/guides/GuideLink";
 import { t } from "@/lib/i18n/hu";
 import { PageHeader } from "@/components/ui";
 import { TaskList } from "@/components/TaskList";
@@ -12,7 +13,12 @@ export default async function Page({ searchParams }: { searchParams: Promise<{ f
   const s = getSettings();
   return (
     <div>
-      <PageHeader title={t.reading.title} intro={t.reading.intro} actions={<ReloadContentButton />} />
+      <PageHeader title={t.reading.title} intro={t.reading.intro} actions={
+          <>
+            <GuideLink type="exam" target="reading" label={t.guides.strategy} />
+            <ReloadContentButton />
+          </>
+        } />
       <TaskList section="reading" level={s.level} base="/olvasas" showReserved={!!sp.foglalt} />
     </div>
   );

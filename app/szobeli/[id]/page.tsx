@@ -9,6 +9,7 @@ import { getSettings } from "@/lib/settings";
 import { t } from "@/lib/i18n/hu";
 import { Badge, SourceBadge } from "@/components/ui";
 import { SpeakingPractice } from "./SpeakingPractice";
+import { GuideLink } from "@/components/guides/GuideLink";
 import { SampleAnswer } from "@/components/speaking/SampleAnswer";
 
 export const metadata: Metadata = { title: t.speaking.title };
@@ -34,7 +35,10 @@ export default async function SpeakingTaskPage({ params }: { params: Promise<{ i
         <Badge>{t.speaking.types[task.type]}</Badge>
         <Badge>{topicName(task.topic)}</Badge>
       </div>
-      <h1 className="mb-4 text-2xl font-semibold">{task.title}</h1>
+      <div className="mb-4 flex flex-wrap items-center justify-between gap-3">
+        <h1 className="text-2xl font-semibold">{task.title}</h1>
+        <GuideLink type="speaking" target={task.type} label={t.guides.open(t.speaking.types[task.type] ?? task.type)} />
+      </div>
       <SpeakingPractice task={task} examinerPrompt={prompt} ttsRate={s.ttsRate} />
       {task.sampleAnswer && (
         <div className="mt-6">

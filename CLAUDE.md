@@ -48,7 +48,7 @@ Ha parancsot módosítasz, a `config/commands.json`-t és a `.claude/commands/<n
 
 ```
 app/                 oldalak (magyar URL-ek: /olvasas, /nyelvhelyesseg, /hallas, /iras, /szobeli, /szokincs, /hibanaplo,
-                     /szabalytar, /kifejezesek, /temakorok, /vizsga, /probaerettsegi, …)
+                     /szabalytar, /utmutatok, /kifejezesek, /temakorok, /vizsga, /probaerettsegi, …)
   actions*.ts        server actionök (minden írás az adatbázisba ezeken megy át)
 components/          React komponensek (exercise/ = közös feladatlejátszó)
 lib/
@@ -59,6 +59,7 @@ lib/
   scoring/           ellenőrzés (alternatív válaszok, elírás), vizsgapont, százalék, jegy, küszöbök
   vocab/             szókártyák (szó, „javítsd ki” kártya), FSRS
   lessons.ts         Szabálytár (leckék, mini-gyakorlás ellenőrzése)
+  guides.ts          Útmutatók
   targeted.ts        célzott gyakorlás, hibák újrapróbálása
   phrases.ts, topics.ts   Kifejezéstár, témakör-oldalak
   mock.ts, plan.ts   próbaérettségi / szintfelmérő, Mai terv
@@ -67,7 +68,7 @@ config/
   exam/              hivatalos vizsgaadatok (szerkezet, pontok, rubrikák, témakörök, feladattípusok, jegyhatárok)
   app.json           app-beállítások (javulási küszöb, készletjelző, becslés)
   commands.json      a Claude Code parancsok leírása
-content/<rész>/<szint>/<id>.json   a tartalombank (rész: reading, language-use, listening, writing, speaking, vocabulary, grammar)
+content/<rész>/<szint>/<id>.json   a tartalombank (rész: reading, language-use, listening, writing, speaking, vocabulary, grammar, guide)
 exchange/inbox|outbox|archive|vocab   javítási csere-mappa (git-ignorált)
 data/app.db, data/official/, data/backups/   felhasználói adatok (git-ignorált)
 scripts/             CLI-szkriptek (setup, seed, validate, import)
@@ -108,6 +109,9 @@ Közös mezők: `schemaVersion: 1`, `id` (= fájlnév), `level` (`kozep`|`emelt`
   mindig a `kozep` mappában, `topic: "nyelvtan"`): `summaryHu`, `rules[]` (magyar magyarázat, angol példák fordítással, `emeltOnly`),
   `commonMistakes[]` (rossz → jó → miért, magyar anyanyelvű tanulók tipikus hibái), `examTips[]`, `practice[]` (`choice`/`text` itemek
   magyar magyarázattal), `relatedCategories`. Szövegértési kategóriáknál a lecke megoldási stratégia.
+- **guide** (Útmutatók, `/utmutatok`): `content/guide/kozep/gd-<type>-<target>.json` (szintfüggetlen, `topic: "utmutato"`):
+  `type` `writing` (szövegtípus) | `speaking` (szóbeli feladattípus) | `exam` (vizsgarész); `summaryHu`, `steps[]`, `phrases[]`
+  (csoport, angol, magyar), `mistakes[]`, `checklist[]`, `timing`, `example`, `levelNotes`.
 
 Hibakategóriák: `config/exam/error-categories.json` (pl. `tense`, `article`, `preposition`, `word-order`, `collocation`,
 `word-formation`, `modal`, `passive`, `conditional`, `reported-speech` …; szövegértéshez `detail`, `gist`, `inference` …).

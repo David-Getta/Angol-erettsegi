@@ -8,6 +8,7 @@ import { examConfig, levelStructure } from "@/lib/exam/config";
 import { feladatokCommand } from "@/lib/commands/build";
 import type { SpeakingTask } from "@/lib/content/schema";
 import { getSpeaking } from "@/lib/tasks";
+import { GuideLink } from "@/components/guides/GuideLink";
 import { t } from "@/lib/i18n/hu";
 import { Badge, Card, PageHeader, SourceBadge, formatDate, btn } from "@/components/ui";
 import { CommandTip } from "@/components/CommandTip";
@@ -29,7 +30,12 @@ export default async function SpeakingPage({ searchParams }: { searchParams: Pro
 
   return (
     <div>
-      <PageHeader title={t.speaking.title} intro={t.speaking.intro} actions={<ReloadContentButton />} />
+      <PageHeader title={t.speaking.title} intro={t.speaking.intro} actions={
+          <>
+            <GuideLink type="exam" target="speaking" label={t.guides.strategy} />
+            <ReloadContentButton />
+          </>
+        } />
       {pending.length > 0 && (
         <CommandTip command="/javitas" message={`${t.dashboard.pendingCount(pending.length)}. ${t.tips.grading}`} testId="javitas-tip">
           <ImportButton variant="secondary" />

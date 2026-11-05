@@ -10,7 +10,8 @@ Argumentumok: `$ARGUMENTS`
 Formátum: `<rész> <szint> <darab> [témakör] [hibakategória]` – a `-` egy kihagyott opcionális paramétert jelent.
 
 - **rész**: `olvasas` → `reading`, `nyelvhelyesseg` → `language-use`, `hallas` → `listening`, `iras` → `writing`,
-  `szobeli` → `speaking`, `szokincs` → `vocabulary`, `szabaly` → `grammar` (szabálylecke a Szabálytárba)
+  `szobeli` → `speaking`, `szokincs` → `vocabulary`, `szabaly` → `grammar` (szabálylecke a Szabálytárba),
+  `utmutato` → `guide` (útmutató az Útmutatók közé)
   (a megfeleltetés: `config/commands.json` → `sectionArgs`)
 - **szint**: `kozep` vagy `emelt`
 - **darab**: ennyi új fájlt írj (szókincsnél ennyi paklit)
@@ -88,6 +89,15 @@ Ha az argumentumok hiányosak vagy érvénytelenek, írd ki a helyes formát egy
   elfogadható válasszal; mindegyiknél magyar `explanation`: a helyes megoldás és miért), `relatedCategories`.
 - Szövegértési kategóriáknál (detail, gist, inference …) a lecke stratégia: a szabályok a megoldási lépések, a tipikus hibák a csapdák,
   a gyakorló itemek rövid angol szöveg + kérdés.
+
+### Útmutató (`utmutato` → `guide`)
+- Fájl: `content/guide/kozep/gd-<type>-<target>.json` (szintfüggetlen; szintfüggő tanács a `levelNotes`-ba). Séma: `GuideSchema`.
+  `type`: `writing` (target = szövegtípus a `task-types.json` writing listájából), `speaking` (target = szóbeli feladattípus)
+  vagy `exam` (target = vizsgarész: reading, language-use, listening, writing, speaking).
+- Ha nem adtak meg mást, a `darab` számú, még hiányzó útmutatót írd meg (nézd meg, mi van már a `content/guide/kozep/` alatt).
+- `summaryHu`, `steps` (4–7 lépés: felépítés bekezdésenként / a feladat menete / megoldási sorrend), `phrases` (írás és szóbeli:
+  15–30 kifejezés csoportokban, magyar jelentéssel), `mistakes` (4–6 tipikus magyar tanulói hiba), `checklist` (5–8 kérdés),
+  `timing` (a `structure.json` időkeretei alapján), rövid `example`. Hivatalos adatot (idő, pont, szóhatár) csak a `config/exam/`-ból vegyél.
 
 ### Szókincs (`vocabulary`)
 - `type: "deck"`, témakörönként 30–50 kártya, szinthez illő szavak; `example` angol mondat, amely **tartalmazza** a szót;
