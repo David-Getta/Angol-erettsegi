@@ -11,6 +11,7 @@ import { Badge, Card, LinkButton, PageHeader } from "@/components/ui";
 import { CommandTip } from "@/components/CommandTip";
 import { LessonPractice } from "@/components/lessons/LessonPractice";
 import { t } from "@/lib/i18n/hu";
+import { PrintButton } from "@/components/PrintButton";
 
 type Props = { params: Promise<{ kategoria: string }> };
 
@@ -74,9 +75,12 @@ export default async function LessonPage({ params }: Props) {
         intro={lesson.summaryHu}
         actions={
           <>
+            <>
+            <PrintButton />
             <Link href="/szabalytar" className="text-sm text-muted hover:underline">
               ← {t.lessons.title}
             </Link>
+          </>
           </>
         }
       />

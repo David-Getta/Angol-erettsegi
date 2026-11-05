@@ -51,6 +51,7 @@ export const t = {
   theme: { label: "Téma", system: "Rendszer", light: "Világos", dark: "Sötét" },
 
   common: {
+    print: "Nyomtatás",
     save: "Mentés",
     saved: "Mentve",
     cancel: "Mégse",

@@ -131,3 +131,43 @@ kbd {
 .no-spell {
   -webkit-text-decoration-skip: none;
 }
+
+/* Printing a task, a lesson or a guide: content only, light colours, no controls. */
+@media print {
+  :root,
+  :root.dark {
+    --bg: #ffffff;
+    --surface: #ffffff;
+    --surface-2: #f3f3f3;
+    --fg: #000000;
+    --muted: #444444;
+    --border: #bbbbbb;
+  }
+  .app-nav,
+  .app-topbar,
+  button,
+  [data-print-hide],
+  [data-testid="command-tip"] {
+    display: none !important;
+  }
+  .app-main {
+    margin-left: 0 !important;
+  }
+  main {
+    max-width: none !important;
+    padding: 0 !important;
+  }
+  section,
+  li,
+  tr,
+  .reading-text {
+    break-inside: avoid;
+  }
+  .shadow-sm {
+    box-shadow: none !important;
+  }
+  a {
+    color: inherit !important;
+    text-decoration: none !important;
+  }
+}

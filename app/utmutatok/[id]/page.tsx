@@ -8,6 +8,7 @@ import { Badge, Card, PageHeader } from "@/components/ui";
 import { GuidePhrases } from "@/components/guides/GuidePhrases";
 import { Checklist } from "@/components/guides/Checklist";
 import { sectionLabel, t } from "@/lib/i18n/hu";
+import { PrintButton } from "@/components/PrintButton";
 
 type Props = { params: Promise<{ id: string }> };
 
@@ -32,9 +33,12 @@ export default async function GuidePage({ params }: Props) {
         title={g.title}
         intro={g.summaryHu}
         actions={
-          <Link href="/utmutatok" className="text-sm text-muted hover:underline">
+          <>
+            <PrintButton />
+            <Link href="/utmutatok" className="text-sm text-muted hover:underline">
             ← {t.guides.title}
           </Link>
+          </>
         }
       />
       <div className="mb-4 flex flex-wrap gap-2">
