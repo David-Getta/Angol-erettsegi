@@ -1,0 +1,298 @@
+{
+  "schemaVersion": 1,
+  "id": "dig-rd-kozep-internet-halozat-teszt",
+  "subject": "digitalis-kultura",
+  "revision": 1,
+  "level": "kozep",
+  "source": "generated",
+  "topic": "halozatok",
+  "title": "Internet, hálózat, biztonság",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "reading",
+  "type": "feleletvalasztas",
+  "instructions": "Válassza ki a helyes választ (A–D)! Minden kérdésre pontosan egy helyes válasz van. A 0. a példa.",
+  "example": {
+    "id": "0",
+    "kind": "choice",
+    "prompt": "Mi a DNS feladata?",
+    "options": [
+      {
+        "key": "A",
+        "text": "A domainneveket (pl. www.pelda.hu) IP-címekre fordítja."
+      },
+      {
+        "key": "B",
+        "text": "Titkosítja a weboldalak forgalmát."
+      },
+      {
+        "key": "C",
+        "text": "Továbbítja az e-maileket."
+      },
+      {
+        "key": "D",
+        "text": "Kiszűri a vírusokat."
+      }
+    ],
+    "answer": "A",
+    "category": "halozat-biztonsag",
+    "explanation": "A. A DNS (Domain Name System) névfeloldást végez: a könnyen megjegyezhető domainnévhez megkeresi a szerver IP-címét, mert a gépek IP-cím alapján kommunikálnak.",
+    "wrongOptions": {
+      "B": "A titkosítást a TLS (a https-ben) végzi.",
+      "C": "Az e-mailt a levelezőszerverek továbbítják SMTP-vel.",
+      "D": "A vírusszűrés a víruskereső program dolga."
+    }
+  },
+  "items": [
+    {
+      "id": "1",
+      "kind": "choice",
+      "prompt": "Mit jelent a böngésző címsorában a https:// előtag?",
+      "options": [
+        {
+          "key": "A",
+          "text": "A kapcsolat titkosított, és a szerver tanúsítvánnyal igazolja, hogy a címben szereplő domainhez tartozik."
+        },
+        {
+          "key": "B",
+          "text": "Az oldal biztosan nem csaló."
+        },
+        {
+          "key": "C",
+          "text": "A kapcsolat gyorsabb, mint a http."
+        },
+        {
+          "key": "D",
+          "text": "Az oldal magyar nyelvű."
+        }
+      ],
+      "answer": "A",
+      "category": "halozat-biztonsag",
+      "explanation": "A. A https a http titkosított (TLS-sel védett) változata: kívülálló nem olvashatja és nem módosíthatja a forgalmat. Csaló oldal is szerezhet tanúsítványt, ezért a https önmagában nem garancia arra, hogy az oldal megbízható.",
+      "wrongOptions": {
+        "B": "Adathalász oldalnak is lehet érvényes tanúsítványa; a https csak a kapcsolatot védi.",
+        "C": "A https nem a sebességről szól, hanem a titkosításról és a szerver hitelesítéséről.",
+        "D": "Az előtag protokollt jelöl, a nyelvhez nincs köze."
+      }
+    },
+    {
+      "id": "2",
+      "kind": "choice",
+      "prompt": "Melyik érvényes IPv4-cím?",
+      "options": [
+        {
+          "key": "A",
+          "text": "192.168.1.300"
+        },
+        {
+          "key": "B",
+          "text": "10.0.0.15"
+        },
+        {
+          "key": "C",
+          "text": "256.1.1.1"
+        },
+        {
+          "key": "D",
+          "text": "172.16.1"
+        }
+      ],
+      "answer": "B",
+      "category": "halozat-biztonsag",
+      "explanation": "B – 10.0.0.15. Az IPv4-cím négy, ponttal elválasztott, 0 és 255 közötti számból áll (4 × 8 bit = 32 bit).",
+      "wrongOptions": {
+        "A": "A 300 nagyobb 255-nél, 8 biten nem ábrázolható.",
+        "C": "A 256 nagyobb 255-nél.",
+        "D": "Csak három szám van benne, négy kellene."
+      }
+    },
+    {
+      "id": "3",
+      "kind": "choice",
+      "prompt": "Melyik hálózattípus köti össze egy iskolaépület számítógépeit?",
+      "options": [
+        {
+          "key": "A",
+          "text": "LAN (helyi hálózat)"
+        },
+        {
+          "key": "B",
+          "text": "WAN (nagy kiterjedésű hálózat)"
+        },
+        {
+          "key": "C",
+          "text": "PAN (személyes hálózat)"
+        },
+        {
+          "key": "D",
+          "text": "az internet gerinchálózata"
+        }
+      ],
+      "answer": "A",
+      "category": "halozat-biztonsag",
+      "explanation": "A – LAN (Local Area Network): egy épületre, intézményre kiterjedő helyi hálózat. A WAN városokat, országokat köt össze, a PAN egy ember eszközeit (pl. telefon és fülhallgató Bluetooth-on).",
+      "wrongOptions": {
+        "B": "A WAN nagy földrajzi területet fed le, nem egy épületet.",
+        "C": "A PAN néhány méteres, egy személy eszközeiből álló hálózat.",
+        "D": "A gerinchálózat a szolgáltatók és országok közti nagy kapacitású összeköttetés."
+      }
+    },
+    {
+      "id": "4",
+      "kind": "choice",
+      "prompt": "Melyik eszköz köti össze a helyi hálózatot az internettel, és dönti el, merre továbbítsa az adatcsomagokat a hálózatok között?",
+      "options": [
+        {
+          "key": "A",
+          "text": "útválasztó (router)"
+        },
+        {
+          "key": "B",
+          "text": "kapcsoló (switch)"
+        },
+        {
+          "key": "C",
+          "text": "hálózati kártya"
+        },
+        {
+          "key": "D",
+          "text": "vezeték nélküli hozzáférési pont"
+        }
+      ],
+      "answer": "A",
+      "category": "halozat-biztonsag",
+      "explanation": "A – útválasztó (router): az IP-címek alapján választja ki a csomag útját a különböző hálózatok között.",
+      "wrongOptions": {
+        "B": "A switch egy hálózaton belül, a helyi gépek között továbbítja a kereteket.",
+        "C": "A hálózati kártya egy gépet csatlakoztat a hálózathoz, nem hálózatokat köt össze.",
+        "D": "A hozzáférési pont a vezeték nélküli eszközöket kapcsolja a helyi hálózatba."
+      }
+    },
+    {
+      "id": "5",
+      "kind": "choice",
+      "prompt": "E-mail küldésekor melyik mezőbe írjuk azokat a címzetteket, akiknek a címét a többi címzett nem láthatja?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Címzett (To)"
+        },
+        {
+          "key": "B",
+          "text": "Másolat (Cc)"
+        },
+        {
+          "key": "C",
+          "text": "Titkos másolat (Bcc)"
+        },
+        {
+          "key": "D",
+          "text": "Tárgy"
+        }
+      ],
+      "answer": "C",
+      "category": "informacios-tarsadalom-fogalom",
+      "explanation": "C – Titkos másolat (Bcc). Sok, egymást nem ismerő címzettnek így küldünk levelet, hogy ne adjuk ki egymás e-mail-címét (adatvédelem, netikett).",
+      "wrongOptions": {
+        "A": "A Címzett mezőben lévő címeket minden címzett látja.",
+        "B": "A Másolat (Cc) mező címzettjei is láthatók mindenkinek.",
+        "D": "A Tárgy a levél témája, nem címzett."
+      }
+    },
+    {
+      "id": "6",
+      "kind": "choice",
+      "prompt": "Melyik a legerősebb jelszó?",
+      "options": [
+        {
+          "key": "A",
+          "text": "123456"
+        },
+        {
+          "key": "B",
+          "text": "Kati2008"
+        },
+        {
+          "key": "C",
+          "text": "jelszo"
+        },
+        {
+          "key": "D",
+          "text": "Sas-Ló_42!Kék-tó"
+        }
+      ],
+      "answer": "D",
+      "category": "halozat-biztonsag",
+      "explanation": "D. Az erős jelszó hosszú (legalább 12 karakter), kis- és nagybetűt, számot, írásjelet is tartalmaz, és nem személyes adat. A véletlenszerű szavakból összerakott hosszú jelmondat jól megjegyezhető és nehezen törhető.",
+      "wrongOptions": {
+        "A": "A 123456 a leggyakoribb jelszavak egyike, másodpercek alatt kitalálható.",
+        "B": "Név és évszám: személyes adatokból könnyen kitalálható, és rövid.",
+        "C": "Egyetlen szótári szó, ékezet és szám nélkül – a szótáras támadás azonnal megtalálja."
+      }
+    },
+    {
+      "id": "7",
+      "kind": "choice",
+      "prompt": "Mit jelent a kétlépcsős (kétfaktoros) azonosítás?",
+      "options": [
+        {
+          "key": "A",
+          "text": "A jelszót kétszer kell beírni."
+        },
+        {
+          "key": "B",
+          "text": "A jelszó mellé egy második, más típusú azonosító is kell, pl. a telefonra érkező kód."
+        },
+        {
+          "key": "C",
+          "text": "Két különböző felhasználónévvel lehet belépni."
+        },
+        {
+          "key": "D",
+          "text": "Két böngészőből kell belépni."
+        }
+      ],
+      "answer": "B",
+      "category": "halozat-biztonsag",
+      "explanation": "B. Két különböző típusú tényező kell: amit tudsz (jelszó) és ami nálad van (telefon, biztonsági kulcs) vagy ami te vagy (ujjlenyomat). Így az ellopott jelszó önmagában nem elég a belépéshez.",
+      "wrongOptions": {
+        "A": "A jelszó kétszeri beírása ugyanaz a tényező, nem ad plusz védelmet.",
+        "C": "Két felhasználónév nem második azonosítási tényező.",
+        "D": "A böngészők száma nem azonosítási tényező."
+      }
+    },
+    {
+      "id": "8",
+      "kind": "choice",
+      "prompt": "Ideális esetben mennyi adatot tölt le 10 másodperc alatt egy 100 Mbit/s sebességű internetkapcsolat?",
+      "options": [
+        {
+          "key": "A",
+          "text": "1000 MB"
+        },
+        {
+          "key": "B",
+          "text": "125 MB"
+        },
+        {
+          "key": "C",
+          "text": "8000 MB"
+        },
+        {
+          "key": "D",
+          "text": "12,5 MB"
+        }
+      ],
+      "answer": "B",
+      "category": "halozat-biztonsag",
+      "explanation": "B – 125 MB. 100 Mbit/s · 10 s = 1000 Mbit; mivel 1 bájt = 8 bit, 1000 Mbit : 8 = 125 MB. A sávszélességet bitben, a fájlméretet bájtban adják meg.",
+      "wrongOptions": {
+        "A": "Ez 1000 megabit, nem megabájt – elmaradt a 8-cal való osztás.",
+        "C": "Itt 8-cal szoroztak osztás helyett (1000 Mbit · 8).",
+        "D": "Ez 1 másodperc alatti mennyiség (100 : 8 = 12,5 MB), nem 10 másodperc alatti."
+      }
+    }
+  ],
+  "glossary": [],
+  "suggestedMinutes": 8
+}

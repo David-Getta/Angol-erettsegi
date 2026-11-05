@@ -1,0 +1,185 @@
+{
+  "schemaVersion": 1,
+  "id": "fiz-rd-emelt-mechanika-teszt",
+  "subject": "fizika",
+  "revision": 1,
+  "level": "emelt",
+  "source": "generated",
+  "topic": "mozgas-egyensuly",
+  "title": "Hajítás, körmozgás, ütközés, rezgés – feleletválasztós teszt",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "reading",
+  "type": "feleletvalasztas",
+  "instructions": "Minden kérdésnél egyetlen helyes válasz van. Jelöld meg a helyes válasz betűjelét! A 0. kérdés a megoldott példa. A légellenállás elhanyagolható, g = 10 m/s².",
+  "example": {
+    "id": "0",
+    "kind": "choice",
+    "prompt": "Egy követ vízszintesen elhajítunk. Melyik mennyisége állandó a repülés közben?",
+    "options": [
+      { "key": "A", "text": "A sebessége nagysága." },
+      { "key": "B", "text": "A sebességének vízszintes összetevője." },
+      { "key": "C", "text": "A sebességének függőleges összetevője." },
+      { "key": "D", "text": "A mozgási energiája." }
+    ],
+    "answer": "B",
+    "category": "vektor-irany",
+    "explanation": "Helyes: B. Vízszintes irányban nem hat erő, ezért a vízszintes sebességösszetevő állandó (egyenletes mozgás); függőlegesen a nehézségi erő miatt szabadesés történik, a függőleges összetevő egyenletesen nő. Így a sebesség nagysága és a mozgási energia is nő."
+  },
+  "items": [
+    {
+      "id": "1",
+      "kind": "choice",
+      "prompt": "Egy labdát 20 m/s kezdősebességgel, a vízszintessel 30°-os szöget bezáróan rúgnak el. Mekkora a sebessége a pálya legmagasabb pontján?",
+      "options": [
+        { "key": "A", "text": "0 m/s" },
+        { "key": "B", "text": "10 m/s" },
+        { "key": "C", "text": "17,3 m/s" },
+        { "key": "D", "text": "20 m/s" }
+      ],
+      "answer": "C",
+      "category": "vektor-irany",
+      "explanation": "Helyes: C. A legmagasabb pontban a függőleges sebességösszetevő nulla, de a vízszintes összetevő a teljes repülés alatt állandó: vₓ = v₀·cos 30° = 20 m/s · 0,866 ≈ 17,3 m/s. Ez a pálya csúcsán mért sebesség.",
+      "wrongOptions": {
+        "A": "Csak a FÜGGŐLEGES összetevő nulla a csúcson; a vízszintes összetevő megmarad, így a labda nem áll meg.",
+        "B": "10 m/s = v₀·sin 30°, ez a kezdősebesség függőleges összetevője, ami a csúcsra éppen eltűnik.",
+        "D": "20 m/s a kezdősebesség; emelkedés közben a függőleges összetevő csökken, ezért a csúcson kisebb a sebesség."
+      }
+    },
+    {
+      "id": "2",
+      "kind": "choice",
+      "prompt": "Egy autó 50 m sugarú, vízszintes kanyarban 20 m/s állandó nagyságú sebességgel halad. Legalább mekkora tapadási súrlódási együttható szükséges a kerekek és az út között, hogy ne csússzon ki?",
+      "options": [
+        { "key": "A", "text": "0,04" },
+        { "key": "B", "text": "0,4" },
+        { "key": "C", "text": "0,8" },
+        { "key": "D", "text": "1,25" }
+      ],
+      "answer": "C",
+      "category": "kepletek",
+      "explanation": "Helyes: C. A körpályán tartó centripetális erőt a tapadási súrlódás adja: m·v²/r ≤ μ·m·g, ebből μ ≥ v²/(r·g) = (20 m/s)² / (50 m · 10 m/s²) = 400/500 = 0,8.",
+      "wrongOptions": {
+        "A": "0,04 = v/(r·g): a sebességet nem emelte négyzetre, pedig a centripetális gyorsulás v²/r.",
+        "B": "0,4 = v²/(2·r·g): a fékút képletének (v²/2a) hatására feleslegesen osztott 2-vel.",
+        "D": "1,25 a fordított hányados (r·g/v²); a szükséges együttható a centripetális és a nehézségi gyorsulás aránya."
+      }
+    },
+    {
+      "id": "3",
+      "kind": "choice",
+      "prompt": "Egy 2 kg tömegű, 3 m/s sebességű kocsi nekiütközik egy álló, 1 kg tömegű kocsinak, és a két kocsi összekapcsolódva együtt halad tovább. Mennyi mechanikai energia alakul át más energiafajtává (pl. belső energiává) az ütközés során?",
+      "options": [
+        { "key": "A", "text": "0 J" },
+        { "key": "B", "text": "3 J" },
+        { "key": "C", "text": "6 J" },
+        { "key": "D", "text": "9 J" }
+      ],
+      "answer": "B",
+      "category": "torvenyek",
+      "explanation": "Helyes: B. A lendület megmarad: 2 kg · 3 m/s = 3 kg · u, így u = 2 m/s. A mozgási energia előtte ½·2·3² = 9 J, utána ½·3·2² = 6 J, tehát 9 J − 6 J = 3 J alakul át (tökéletesen rugalmatlan ütközés).",
+      "wrongOptions": {
+        "A": "Csak rugalmas ütközésnél marad meg a mozgási energia; összetapadáskor a lendület megmarad, de az energia egy része belső energiává alakul.",
+        "C": "6 J az ütközés UTÁNI mozgási energia, nem a veszteség.",
+        "D": "9 J a teljes kezdeti mozgási energia; a kocsik tovább mozognak, így nem alakul át az egész."
+      }
+    },
+    {
+      "id": "4",
+      "kind": "choice",
+      "prompt": "Két műhold körpályán kering a Föld körül. A második pályasugara (a Föld középpontjától mérve) négyszerese az elsőének. Hányszorosa a második műhold keringési ideje az elsőének?",
+      "options": [
+        { "key": "A", "text": "2-szerese" },
+        { "key": "B", "text": "4-szerese" },
+        { "key": "C", "text": "8-szorosa" },
+        { "key": "D", "text": "16-szorosa" }
+      ],
+      "answer": "C",
+      "category": "torvenyek",
+      "explanation": "Helyes: C. Kepler III. törvénye (vagy a gravitációs erő = centripetális erő feltétel) szerint T² ~ r³, azaz T ~ r^(3/2). Ha r négyszeres, T = 4^(3/2) = (√4)³ = 2³ = 8-szoros.",
+      "wrongOptions": {
+        "A": "2 = √4: a keringési SEBESSÉG változik a sugár négyzetgyökével (v ~ 1/√r, a felére csökken), nem a keringési idő.",
+        "B": "A keringési idő nem egyenesen arányos a sugárral; a hosszabb pályán ráadásul lassabban is halad a műhold.",
+        "D": "16 = 4²: a T² ~ r³ helyett T ~ r²-tel számolt."
+      }
+    },
+    {
+      "id": "5",
+      "kind": "choice",
+      "prompt": "Egy 4 m hosszú, 200 N súlyú homogén gerendát a két végén alátámasztunk. Egy 600 N súlyú ember a bal végétől 1 m-re áll rajta. Mekkora erővel nyomja a gerenda a bal oldali alátámasztást?",
+      "options": [
+        { "key": "A", "text": "250 N" },
+        { "key": "B", "text": "400 N" },
+        { "key": "C", "text": "550 N" },
+        { "key": "D", "text": "800 N" }
+      ],
+      "answer": "C",
+      "category": "kepletek",
+      "explanation": "Helyes: C. A jobb oldali alátámasztásra felírt forgatónyomatékok egyensúlya: F_bal · 4 m = 200 N · 2 m + 600 N · 3 m = 2200 N·m, így F_bal = 550 N. Ellenőrzés: a két támasztóerő összege 800 N, tehát F_jobb = 250 N; az ember a bal véghez van közelebb, ezért ott nagyobb az erő.",
+      "wrongOptions": {
+        "A": "250 N a JOBB oldali alátámasztásra jutó erő; az ember a bal véghez közelebb áll, ezért a bal oldalra jut több.",
+        "B": "400 N az összes súly fele – ez csak akkor lenne igaz, ha az ember a gerenda közepén állna.",
+        "D": "800 N a teljes súly; ezen a két alátámasztás osztozik."
+      }
+    },
+    {
+      "id": "6",
+      "kind": "choice",
+      "prompt": "Egy 200 N/m rugóállandójú rugóra 0,5 kg tömegű testet akasztunk, és rezgésbe hozzuk. Mekkora a rezgésidő?",
+      "options": [
+        { "key": "A", "text": "0,05 s" },
+        { "key": "B", "text": "0,16 s" },
+        { "key": "C", "text": "0,31 s" },
+        { "key": "D", "text": "3,2 s" }
+      ],
+      "answer": "C",
+      "category": "kepletek",
+      "explanation": "Helyes: C. A rugós rezgő rezgésideje T = 2π·√(m/D) = 2π · √(0,5 kg / 200 N/m) = 2π · 0,05 s ≈ 0,314 s ≈ 0,31 s. (A rezgésidő független a kitéréstől és – függőleges rugónál is – a g értékétől.)",
+      "wrongOptions": {
+        "A": "0,05 s csak √(m/D); kimaradt a 2π szorzó.",
+        "B": "0,16 s = π·√(m/D), ez a FÉL rezgésidő (egyik szélső helyzetből a másikba).",
+        "D": "3,2 a rezgés frekvenciája hertzben (f = 1/T ≈ 3,2 Hz), nem a rezgésidő."
+      }
+    },
+    {
+      "id": "7",
+      "kind": "choice",
+      "prompt": "Egy test 30°-os hajlásszögű lejtőn csúszik lefelé. A csúszási súrlódási együttható 0,2. Mekkora a test gyorsulása?",
+      "options": [
+        { "key": "A", "text": "1,7 m/s²" },
+        { "key": "B", "text": "3,3 m/s²" },
+        { "key": "C", "text": "5,0 m/s²" },
+        { "key": "D", "text": "6,7 m/s²" }
+      ],
+      "answer": "B",
+      "category": "vektor-irany",
+      "explanation": "Helyes: B. A lejtő irányában a nehézségi erő m·g·sin α összetevője gyorsít, a súrlódás μ·m·g·cos α fékez: a = g·(sin α − μ·cos α) = 10 · (0,5 − 0,2 · 0,866) ≈ 10 · 0,327 ≈ 3,3 m/s².",
+      "wrongOptions": {
+        "A": "1,7 m/s² = μ·g·cos α, ez csak a súrlódás okozta lassulás, a lejtőirányú gyorsító összetevő kimaradt.",
+        "C": "5,0 m/s² = g·sin α a súrlódásmentes lejtőn lenne a gyorsulás; a súrlódás ezt csökkenti.",
+        "D": "6,7 m/s² = g·(sin α + μ·cos α): a súrlódást hozzáadta, pedig a súrlódás a mozgással ELLENTÉTES irányú, tehát fékez."
+      }
+    },
+    {
+      "id": "8",
+      "kind": "choice",
+      "prompt": "Egy fonálinga lengésideje a Földön 2,0 s. Mekkora lenne ugyanennek az ingának a lengésideje a Holdon, ahol a nehézségi gyorsulás a földi érték hatoda?",
+      "options": [
+        { "key": "A", "text": "0,33 s" },
+        { "key": "B", "text": "2,0 s" },
+        { "key": "C", "text": "4,9 s" },
+        { "key": "D", "text": "12 s" }
+      ],
+      "answer": "C",
+      "category": "torvenyek",
+      "explanation": "Helyes: C. A fonálinga lengésideje (kis kitérésnél) T = 2π·√(l/g). Ha g a hatodára csökken, T √6 ≈ 2,45-szörösére nő: 2,0 s · 2,45 ≈ 4,9 s.",
+      "wrongOptions": {
+        "A": "0,33 s = 2,0/6: a lengésidő nem g-vel arányos, és nem is csökken – kisebb g mellett lassabban leng az inga.",
+        "B": "A lengésidő a tömegtől független, de a g-től függ; a Holdon kisebb g miatt nagyobb.",
+        "D": "12 s = 2,0 · 6: a lengésidő nem g-vel, hanem √g-vel fordítottan arányos, ezért csak √6-szoros lesz."
+      }
+    }
+  ],
+  "glossary": [],
+  "suggestedMinutes": 18
+}

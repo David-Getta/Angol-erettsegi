@@ -1,0 +1,298 @@
+{
+  "schemaVersion": 1,
+  "id": "dig-rd-emelt-halozat-biztonsag-teszt",
+  "subject": "digitalis-kultura",
+  "revision": 1,
+  "level": "emelt",
+  "source": "generated",
+  "topic": "halozatok",
+  "title": "Hálózati címzés, protokollok, titkosítás",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "reading",
+  "type": "feleletvalasztas",
+  "instructions": "Válassza ki a helyes választ (A–D)! Minden kérdésre pontosan egy helyes válasz van. A 0. a példa.",
+  "example": {
+    "id": "0",
+    "kind": "choice",
+    "prompt": "Melyik protokoll biztosítja a weboldalak titkosított átvitelét?",
+    "options": [
+      {
+        "key": "A",
+        "text": "HTTP"
+      },
+      {
+        "key": "B",
+        "text": "HTTPS"
+      },
+      {
+        "key": "C",
+        "text": "FTP"
+      },
+      {
+        "key": "D",
+        "text": "SMTP"
+      }
+    ],
+    "answer": "B",
+    "category": "halozat-biztonsag",
+    "explanation": "B – HTTPS: a HTTP TLS-titkosítással kiegészített változata (alapértelmezett portja a 443).",
+    "wrongOptions": {
+      "A": "A HTTP titkosítatlanul viszi át az adatokat.",
+      "C": "Az FTP fájlátviteli protokoll, alapváltozata titkosítatlan.",
+      "D": "Az SMTP levélküldő protokoll."
+    }
+  },
+  "items": [
+    {
+      "id": "1",
+      "kind": "choice",
+      "prompt": "Egy gép IP-címe 192.168.10.37, alhálózati maszkja 255.255.255.0. Melyik cím van vele azonos alhálózatban?",
+      "options": [
+        {
+          "key": "A",
+          "text": "192.168.11.37"
+        },
+        {
+          "key": "B",
+          "text": "192.168.10.200"
+        },
+        {
+          "key": "C",
+          "text": "192.169.10.37"
+        },
+        {
+          "key": "D",
+          "text": "10.168.10.37"
+        }
+      ],
+      "answer": "B",
+      "category": "halozat-biztonsag",
+      "explanation": "B. A 255.255.255.0 maszk szerint az első három bájt (192.168.10) a hálózatot, az utolsó a gépet azonosítja; a 192.168.10.200 hálózati része azonos.",
+      "wrongOptions": {
+        "A": "A harmadik bájt (11) eltér, ez másik alhálózat.",
+        "C": "A második bájt (169) eltér.",
+        "D": "Az első bájt (10) eltér."
+      }
+    },
+    {
+      "id": "2",
+      "kind": "choice",
+      "prompt": "Mi a DHCP-szerver feladata?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Automatikusan kiosztja a gépeknek az IP-címet és a többi hálózati beállítást (maszk, alapértelmezett átjáró, DNS-szerver)."
+        },
+        {
+          "key": "B",
+          "text": "A domainneveket IP-címekre fordítja."
+        },
+        {
+          "key": "C",
+          "text": "Továbbítja az e-maileket a levelezőszerverek között."
+        },
+        {
+          "key": "D",
+          "text": "Szabályok alapján szűri a be- és kimenő forgalmat."
+        }
+      ],
+      "answer": "A",
+      "category": "halozat-biztonsag",
+      "explanation": "A. A DHCP (Dynamic Host Configuration Protocol) miatt nem kell minden gépen kézzel beállítani az IP-címet; a szerver bérleti időre ad ki címet a címtartományából.",
+      "wrongOptions": {
+        "B": "Ez a DNS feladata.",
+        "C": "Ez a levelezőszerverek (SMTP) dolga.",
+        "D": "Ez a tűzfal feladata."
+      }
+    },
+    {
+      "id": "3",
+      "kind": "choice",
+      "prompt": "Melyik állítás igaz a nyilvános kulcsú (aszimmetrikus) titkosításra?",
+      "options": [
+        {
+          "key": "A",
+          "text": "A nyilvános kulccsal titkosított üzenetet csak a hozzá tartozó titkos (privát) kulccsal lehet visszafejteni."
+        },
+        {
+          "key": "B",
+          "text": "A feladó és a címzett ugyanazt a titkos kulcsot használja."
+        },
+        {
+          "key": "C",
+          "text": "A titkos kulcsot el kell küldeni a partnernek."
+        },
+        {
+          "key": "D",
+          "text": "Digitális aláírásra nem használható."
+        }
+      ],
+      "answer": "A",
+      "category": "halozat-biztonsag",
+      "explanation": "A. Mindenkinek van egy kulcspárja: a nyilvános kulcsot bárki ismerheti és titkosíthat vele, de visszafejteni csak a tulajdonos privát kulcsával lehet. Fordítva használva (aláírás a privát kulccsal, ellenőrzés a nyilvánossal) a digitális aláírás alapja.",
+      "wrongOptions": {
+        "B": "Ez a szimmetrikus titkosítás jellemzője (pl. AES).",
+        "C": "A privát kulcs soha nem hagyja el a tulajdonosát; éppen ezért nem kell titkos csatornán kulcsot cserélni.",
+        "D": "A digitális aláírás éppen aszimmetrikus kulcspárral működik."
+      }
+    },
+    {
+      "id": "4",
+      "kind": "choice",
+      "prompt": "Melyik protokollal küldi el a levelezőprogram a megírt e-mailt a levelezőszervernek?",
+      "options": [
+        {
+          "key": "A",
+          "text": "SMTP"
+        },
+        {
+          "key": "B",
+          "text": "IMAP"
+        },
+        {
+          "key": "C",
+          "text": "POP3"
+        },
+        {
+          "key": "D",
+          "text": "DNS"
+        }
+      ],
+      "answer": "A",
+      "category": "halozat-biztonsag",
+      "explanation": "A – SMTP (Simple Mail Transfer Protocol): a levél küldésére és a szerverek közti továbbítására szolgál. A levelek letöltése, olvasása IMAP-pal vagy POP3-mal történik.",
+      "wrongOptions": {
+        "B": "Az IMAP a szerveren tárolt levelek olvasására, szinkronizálására szolgál.",
+        "C": "A POP3 a levelek letöltésére szolgál.",
+        "D": "A DNS névfeloldást végez."
+      }
+    },
+    {
+      "id": "5",
+      "kind": "choice",
+      "prompt": "Hány bites egy IPv4-, illetve egy IPv6-cím?",
+      "options": [
+        {
+          "key": "A",
+          "text": "32 és 128"
+        },
+        {
+          "key": "B",
+          "text": "32 és 64"
+        },
+        {
+          "key": "C",
+          "text": "64 és 128"
+        },
+        {
+          "key": "D",
+          "text": "16 és 32"
+        }
+      ],
+      "answer": "A",
+      "category": "halozat-biztonsag",
+      "explanation": "A. Az IPv4 32 bites (kb. 4,3 milliárd cím, ami kevés), az IPv6 128 bites, hexadecimálisan írják, pl. 2001:db8::1.",
+      "wrongOptions": {
+        "B": "Az IPv6 128 bites, nem 64.",
+        "C": "Az IPv4 32 bites, nem 64.",
+        "D": "Mindkét érték kevés: az IPv4 négy 8 bites részből áll (32 bit)."
+      }
+    },
+    {
+      "id": "6",
+      "kind": "choice",
+      "prompt": "Melyik védekezés a leghatékonyabb a zsarolóvírus (ransomware) okozta adatvesztés ellen?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Rendszeres biztonsági mentés olyan adathordozóra, amely mentés után le van választva a gépről."
+        },
+        {
+          "key": "B",
+          "text": "A jelszó havonkénti cseréje."
+        },
+        {
+          "key": "C",
+          "text": "A böngészési előzmények törlése."
+        },
+        {
+          "key": "D",
+          "text": "A képernyő zárolása."
+        }
+      ],
+      "answer": "A",
+      "category": "halozat-biztonsag",
+      "explanation": "A. A zsarolóvírus titkosítja az elérhető fájlokat (a csatlakoztatott meghajtókat is) és váltságdíjat követel; ha van leválasztott (offline) mentés, az adatok fizetés nélkül visszaállíthatók.",
+      "wrongOptions": {
+        "B": "A jelszócsere nem védi meg a már megfertőzött gépen lévő fájlokat.",
+        "C": "Az előzmények törlése adatvédelmi lépés, a fájlokat nem védi.",
+        "D": "A képernyőzár a fizikai hozzáférés ellen véd, kártevő ellen nem."
+      }
+    },
+    {
+      "id": "7",
+      "kind": "choice",
+      "prompt": "Ideális esetben mennyi ideig tart egy 2,5 GB-os (2,5 · 10⁹ bájtos) fájl letöltése egy 50 Mbit/s-os kapcsolaton?",
+      "options": [
+        {
+          "key": "A",
+          "text": "50 másodperc"
+        },
+        {
+          "key": "B",
+          "text": "400 másodperc (6 perc 40 mp)"
+        },
+        {
+          "key": "C",
+          "text": "3200 másodperc"
+        },
+        {
+          "key": "D",
+          "text": "6,25 másodperc"
+        }
+      ],
+      "answer": "B",
+      "category": "halozat-biztonsag",
+      "explanation": "B. 2,5 · 10⁹ bájt · 8 = 2 · 10¹⁰ bit; 2 · 10¹⁰ / (50 · 10⁶ bit/s) = 400 s = 6 perc 40 mp. A kulcs a bájt → bit átváltás (·8).",
+      "wrongOptions": {
+        "A": "Ez a 8-as szorzó nélkül jön ki (2,5 · 10⁹ / 50 · 10⁶ = 50): a bájtot bitnek vették.",
+        "C": "Ez a helyes eredmény még egyszer 8-cal szorozva (400 · 8): az átváltást kétszer végezték el.",
+        "D": "Itt 8-cal osztottak szorzás helyett (50 / 8 = 6,25)."
+      }
+    },
+    {
+      "id": "8",
+      "kind": "choice",
+      "prompt": "Mi a különbség a számítógépes vírus és a féreg (worm) között?",
+      "options": [
+        {
+          "key": "A",
+          "text": "A féreg önállóan, a hálózaton keresztül terjed; a vírus egy másik programhoz vagy fájlhoz kapcsolódva, annak futtatásával terjed."
+        },
+        {
+          "key": "B",
+          "text": "A vírus csak mobiltelefont, a féreg csak számítógépet fertőz."
+        },
+        {
+          "key": "C",
+          "text": "A féreg csak a hardvert, a vírus csak a szoftvert károsítja."
+        },
+        {
+          "key": "D",
+          "text": "Nincs különbség, a két szó ugyanazt jelenti."
+        }
+      ],
+      "answer": "A",
+      "category": "halozat-biztonsag",
+      "explanation": "A. A vírusnak gazdafájl kell, és a felhasználó indítja el (pl. fertőzött mellékletet nyit meg); a féreg önálló program, amely biztonsági réseket kihasználva magától terjed gépről gépre.",
+      "wrongOptions": {
+        "B": "Mindkettő bármilyen eszközt fertőzhet, amelyen fut.",
+        "C": "Mindkettő szoftver, és szoftveres kárt okoz; a megkülönböztetés a terjedés módja.",
+        "D": "A terjedés módjában különböznek."
+      }
+    }
+  ],
+  "glossary": [],
+  "suggestedMinutes": 10
+}

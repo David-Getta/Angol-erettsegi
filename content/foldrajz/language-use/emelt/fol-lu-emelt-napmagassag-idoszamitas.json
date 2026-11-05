@@ -1,0 +1,126 @@
+{
+  "schemaVersion": 1,
+  "id": "fol-lu-emelt-napmagassag-idoszamitas",
+  "subject": "foldrajz",
+  "revision": 1,
+  "level": "emelt",
+  "source": "generated",
+  "topic": "kozmikus-ter",
+  "title": "Delelési magasság, helyi idő, időzónák – számítások",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "language-use",
+  "type": "szamitas-rovid",
+  "instructions": "Végezze el a számításokat! Írja az eredményt a kijelölt helyre (fokban, órában vagy percben)! A Föld tengelyferdeségéből adódó szög 23,5°. A 0. a megoldott példa.",
+  "example": {
+    "id": "0",
+    "kind": "text",
+    "prompt": "Mekkora a Nap delelési magassága az Egyenlítőn március 21-én?",
+    "answer": [
+      "90°",
+      "90",
+      "90 fok"
+    ],
+    "category": "szamitas-foldrajzi",
+    "explanation": "90°: a napéjegyenlőségek napján a Nap az Egyenlítő felett delel merőlegesen (delelési magasság = 90° − 0° = 90°)."
+  },
+  "items": [
+    {
+      "id": "1",
+      "kind": "text",
+      "prompt": "Mekkora a Nap delelési magassága Budapesten (é. sz. 47,5°) június 21-én?",
+      "answer": [
+        "66°",
+        "66",
+        "66 fok"
+      ],
+      "category": "szamitas-foldrajzi",
+      "explanation": "66°: június 21-én a Nap a Ráktérítő (é. sz. 23,5°) felett delel merőlegesen. Delelési magasság = 90° − 47,5° + 23,5° = 66°."
+    },
+    {
+      "id": "2",
+      "kind": "text",
+      "prompt": "Mekkora a Nap delelési magassága Budapesten (é. sz. 47,5°) december 22-én?",
+      "answer": [
+        "19°",
+        "19",
+        "19 fok"
+      ],
+      "category": "szamitas-foldrajzi",
+      "explanation": "19°: december 22-én a Nap a Baktérítő (d. sz. 23,5°) felett delel merőlegesen, így 90° − 47,5° − 23,5° = 19°."
+    },
+    {
+      "id": "3",
+      "kind": "text",
+      "prompt": "Egy helyen a tavaszi napéjegyenlőség napján a Nap 40°-os magasságban delel a déli égbolton. Melyik szélességi körön fekszik a hely?",
+      "answer": [
+        "é. sz. 50°",
+        "é.sz. 50°",
+        "50° é. sz.",
+        "északi szélesség 50°",
+        "50° északi szélesség",
+        "50°",
+        "50"
+      ],
+      "category": "szamitas-foldrajzi",
+      "explanation": "É. sz. 50°: napéjegyenlőségkor delelési magasság = 90° − földrajzi szélesség, így a szélesség 90° − 40° = 50°. Mivel a Nap délen delel, a hely az északi félgömbön van."
+    },
+    {
+      "id": "4",
+      "kind": "text",
+      "prompt": "Budapest földrajzi hosszúsága kb. 19,0° K, Debrecené kb. 21,6° K. Hány perccel jár előbbre a helyi idő Debrecenben, mint Budapesten?",
+      "answer": [
+        "10,4 perc",
+        "10,4",
+        "10.4",
+        "10.4 perc",
+        "10 perc 24 másodperc"
+      ],
+      "category": "szamitas-foldrajzi",
+      "explanation": "10,4 perccel: a hosszúságkülönbség 21,6° − 19,0° = 2,6°; 1° = 4 perc, így 2,6 × 4 = 10,4 perc. Debrecen keletebbre van, ott előbb delel a Nap."
+    },
+    {
+      "id": "5",
+      "kind": "text",
+      "prompt": "Egy hajón helyi idő szerint 12 órakor delel a Nap, amikor a greenwichi idő (UTC) szerint 16 óra van. Melyik hosszúsági körön jár a hajó?",
+      "answer": [
+        "ny. h. 60°",
+        "ny.h. 60°",
+        "60° ny. h.",
+        "nyugati hosszúság 60°",
+        "60° nyugati hosszúság",
+        "60° Ny",
+        "60° W"
+      ],
+      "category": "szamitas-foldrajzi",
+      "explanation": "Ny. h. 60°: a különbség 16 − 12 = 4 óra; 4 × 15° = 60°. Greenwichben később van, tehát a hajó Greenwichtől nyugatra jár."
+    },
+    {
+      "id": "6",
+      "kind": "text",
+      "prompt": "Egy repülőgép Tokióból (UTC+9) helyi idő szerint 18 órakor indul, és 12 órás repülés után érkezik Budapestre (nyári időszámítás, UTC+2). Hány órakor érkezik budapesti idő szerint?",
+      "answer": [
+        "23 óra",
+        "23",
+        "23:00",
+        "23.00"
+      ],
+      "category": "szamitas-foldrajzi",
+      "explanation": "23 órakor: az érkezés tokiói idő szerint 18 + 12 = 30, azaz másnap 6 óra. Budapest 9 − 2 = 7 órával jár Tokió mögött: 6 − 7 = −1, vagyis budapesti idő szerint még az indulás napján 23 óra."
+    },
+    {
+      "id": "7",
+      "kind": "text",
+      "prompt": "Egy hajó május 10-én délben nyugatról keletre (Ázsia felől Amerika felé) halad át a dátumválasztó vonalon. Milyen dátum lesz a vonal túloldalán?",
+      "answer": [
+        "május 9.",
+        "május 9-e",
+        "máj. 9."
+      ],
+      "category": "szamitas-foldrajzi",
+      "explanation": "Május 9.: a dátumválasztó vonalon kelet felé (Amerika felé) haladva egy nappal vissza kell lépni a naptárban, nyugat felé haladva egy napot előre. Így május 10-ből május 9. lesz.",
+      "maxWords": 2
+    }
+  ],
+  "suggestedMinutes": 12
+}

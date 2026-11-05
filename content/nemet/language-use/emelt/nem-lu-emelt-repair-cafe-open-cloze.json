@@ -1,0 +1,111 @@
+{
+  "topic": "kornyezet",
+  "title": "Reparieren statt wegwerfen",
+  "type": "open-cloze",
+  "instructions": "Lesen Sie den Text und ergänzen Sie die Lücken (1–12) mit jeweils EINEM passenden Wort. Am Anfang finden Sie ein Beispiel (0).",
+  "instructionsHu": "Egészítsd ki a szöveget egy-egy odaillő szóval. A 0. a példa.",
+  "passage": {
+    "title": "Reparieren statt wegwerfen",
+    "subtitle": "Zu Besuch in einem Leipziger Repair-Café",
+    "blocks": [
+      { "text": "Jeden ersten Samstag im Monat verwandelt sich das Gemeindezentrum im Leipziger Stadtteil Plagwitz in eine Werkstatt. Auf langen Tischen liegen Toaster, Lampen, Kopfhörer und Jeans mit Löchern – Dinge, [[0]] ihre Besitzer eigentlich schon aufgegeben hatten. Ehrenamtliche Elektriker, Schneiderinnen und Fahrradmechaniker helfen dabei, sie wieder in Ordnung [[1]] bringen." },
+      { "text": "Das Prinzip ist einfach: Die Besucher reparieren ihre Geräte nicht allein, sondern gemeinsam mit den Helfern. „Wir wollen nicht nur Dinge retten, sondern den Leuten auch zeigen, [[2]] viel sie selbst können“, erklärt die Organisatorin Ute Behrens. Bezahlen muss niemand etwas, aber die meisten Gäste werfen am Ende ein paar Euro in [[3]] Spendenkasse. Die Idee stammt [[4]] den Niederlanden, wo 2009 das erste Repair-Café eröffnet wurde. Heute gibt es allein in Deutschland mehr [[5]] tausend solcher Initiativen." },
+      { "text": "Dass sie so beliebt sind, hat viel mit Frust zu tun. Viele Geräte sind heute so gebaut, dass man sie kaum öffnen kann, und Ersatzteile sind entweder teuer [[6]] gar nicht erhältlich. Oft ist ein neues Gerät billiger als die Reparatur [[7]] alten. Die Europäische Union hat inzwischen Regeln beschlossen, [[8]] denen Hersteller Ersatzteile über viele Jahre anbieten müssen. Ute Behrens begrüßt das, glaubt aber [[9]], dass Gesetze allein das Problem lösen. „Solange wir alle zwei Jahre ein neues Handy kaufen, [[10]] sich wenig ändern“, sagt sie." },
+      { "text": "Der Erfolg gibt ihr trotzdem Hoffnung: Etwa zwei Drittel der Geräte, die ins Café gebracht werden, verlassen es repariert. Und manche Besucher kommen gar nicht wegen eines kaputten Toasters, [[11]] weil sie lernen wollen, wie man einen Reißverschluss austauscht. [[12]] Ende eines solchen Nachmittags sind oft nicht nur die Dinge repariert, sondern auch das Vertrauen in die eigenen Fähigkeiten." }
+    ]
+  },
+  "example": {
+    "id": "0",
+    "kind": "text",
+    "answer": ["die", "welche"],
+    "category": "conjunction",
+    "explanation": "Vonatkozó névmás a „Dinge” (többes szám) szóra, a mellékmondatban tárgy (a tulajdonosok feladták őket): tárgyeset többes szám → die (welche)."
+  },
+  "items": [
+    {
+      "id": "1",
+      "kind": "text",
+      "answer": ["zu"],
+      "category": "infinitive",
+      "explanation": "A „helfen dabei, …” után a főnévi igenév „zu”-val áll: dabei helfen, sie wieder in Ordnung zu bringen. Elöljárós határozószó (dabei) után mindig zu-s főnévi igenév következik."
+    },
+    {
+      "id": "2",
+      "kind": "text",
+      "answer": ["wie"],
+      "category": "conjunction",
+      "explanation": "Függő kérdés: zeigen, wie viel sie selbst können = megmutatni, mennyi mindenre képesek maguk is. A „wie viel” kérdőszó vezeti be a mellékmondatot, az ige a végén áll."
+    },
+    {
+      "id": "3",
+      "kind": "text",
+      "answer": ["die", "eine", "ihre"],
+      "category": "case",
+      "explanation": "A „werfen in” irányt fejez ki (hová?), ezért a váltakozó elöljárószó után tárgyeset áll: die Spendenkasse → in die Spendenkasse. A határozatlan „eine” és az „ihre” is nyelvtanilag helyes."
+    },
+    {
+      "id": "4",
+      "kind": "text",
+      "answer": ["aus"],
+      "category": "preposition",
+      "explanation": "Származás: stammen aus + részes eset (a Niederlande többes számú: aus den Niederlanden). Országnévnél, honnan? kérdésre „aus” felel."
+    },
+    {
+      "id": "5",
+      "kind": "text",
+      "answer": ["als"],
+      "category": "adjective-declension",
+      "explanation": "Középfok után az összehasonlítás „als”-szal történik: mehr als tausend = több mint ezer. A „wie” csak egyenlőségnél áll (so viel wie)."
+    },
+    {
+      "id": "6",
+      "kind": "text",
+      "answer": ["oder"],
+      "category": "conjunction",
+      "explanation": "Párkötőszó: entweder … oder … = vagy …, vagy … . Az alkatrészek vagy drágák, vagy egyáltalán nem kaphatók."
+    },
+    {
+      "id": "7",
+      "kind": "text",
+      "answer": ["des"],
+      "category": "article-declension",
+      "explanation": "Birtokos eset: die Reparatur des alten (Geräts) = a régi (készülék) javítása. A „Gerät” semlegesnemű, birtokos esetben a névelő „des”, a melléknév „-en” végződést kap (alten)."
+    },
+    {
+      "id": "8",
+      "kind": "text",
+      "answer": ["nach", "laut", "gemäß"],
+      "category": "preposition",
+      "explanation": "„Regeln, nach denen …” = szabályok, amelyek szerint … . A „nach” (szerint) részes esetet vonz, ezért áll utána a „denen” vonatkozó névmás. A „laut denen” és a „gemäß denen” is helyes, de ritkább."
+    },
+    {
+      "id": "9",
+      "kind": "text",
+      "answer": ["nicht"],
+      "category": "negation",
+      "explanation": "Az egész állítást tagadja: glaubt aber nicht, dass … = de nem hiszi, hogy … . Igét / tagmondatot a „nicht” tagad, nem a „kein”."
+    },
+    {
+      "id": "10",
+      "kind": "text",
+      "answer": ["wird", "kann"],
+      "category": "tense",
+      "explanation": "Jövőre vonatkozó következtetés: Solange …, wird sich wenig ändern (Futur I: werden + főnévi igenév). A „kann sich wenig ändern” is értelmes. A főmondat itt a mellékmondat után áll, ezért az ige az első helyre kerül."
+    },
+    {
+      "id": "11",
+      "kind": "text",
+      "answer": ["sondern"],
+      "category": "conjunction",
+      "explanation": "A tagadás („gar nicht wegen eines kaputten Toasters”) után a helyesbítést a „sondern” (hanem) vezeti be: nicht wegen …, sondern weil … ."
+    },
+    {
+      "id": "12",
+      "kind": "text",
+      "answer": ["Am", "Gegen"],
+      "category": "preposition",
+      "explanation": "Időhatározó: am Ende (an + dem) eines solchen Nachmittags = egy ilyen délután végén. A „gegen Ende” (a vége felé) is helyes."
+    }
+  ],
+  "suggestedMinutes": 12
+}

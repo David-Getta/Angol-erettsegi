@@ -1,0 +1,93 @@
+{
+  "schemaVersion": 1,
+  "id": "mat-sp-kozep-masodfoku-egyenlet",
+  "subject": "matematika",
+  "revision": 1,
+  "level": "kozep",
+  "source": "generated",
+  "topic": "egyenletek",
+  "title": "Tétel: a másodfokú egyenlet és megoldása",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "speaking",
+  "type": "tetel",
+  "partNumber": 1,
+  "instructionsHu": "Középszintű szóbeli tétel (30 perc felkészülés, kb. 15 perc felelet). Először válaszolj a három elméleti kérdésre (definíció, tétel kimondása a feltételekkel), majd oldd meg és magyarázd el a három feladatot: mondd ki, melyik összefüggést használod és miért, és fogalmazd meg a választ.",
+  "prompts": [
+    "1. elméleti kérdés: Mit nevezünk másodfokú egyenletnek? Mi a diszkrimináns, és mit mond a gyökök számáról?",
+    "2. elméleti kérdés: Mondja ki a másodfokú egyenlet megoldóképletét!",
+    "3. elméleti kérdés: Mondja ki a gyökök és az együtthatók közötti összefüggéseket (Viète-formulák), és írja fel a gyöktényezős alakot!",
+    "1. feladat: másodfokú egyenlet megoldása megoldóképlettel",
+    "2. feladat: paraméteres egyenlet – mikor nincs valós gyök",
+    "3. feladat: szöveges feladat (téglalap oldalai) másodfokú egyenlettel"
+  ],
+  "followUpQuestions": [
+    "Mit jelent a gyöktényezős alak az első feladat egyenletére?",
+    "Mi történik, ha p = 9?"
+  ],
+  "usefulPhrases": [
+    {
+      "en": "ax² + bx + c = 0, a ≠ 0",
+      "hu": "A másodfokú egyenlet általános (nullára rendezett) alakja."
+    },
+    {
+      "en": "D = b² − 4ac",
+      "hu": "Diszkrimináns: előjele dönti el a valós gyökök számát."
+    },
+    {
+      "en": "x₁ + x₂ = −b/a; x₁·x₂ = c/a",
+      "hu": "Viète-formulák: ellenőrzésre és szöveges feladatok felírására is jók."
+    },
+    {
+      "en": "a(x − x₁)(x − x₂)",
+      "hu": "Gyöktényezős alak: a másodfokú kifejezés szorzattá alakítása."
+    }
+  ],
+  "sources": [
+    {
+      "title": "1. feladat",
+      "text": "Oldja meg a valós számok halmazán a 2x² − 3x − 2 = 0 egyenletet!"
+    },
+    {
+      "title": "2. feladat",
+      "text": "Milyen p valós szám esetén nincs valós gyöke az x² + 6x + p = 0 egyenletnek?"
+    },
+    {
+      "title": "3. feladat",
+      "text": "Egy téglalap kerülete 26 cm, területe 40 cm². Mekkorák a téglalap oldalai?"
+    }
+  ],
+  "keyPoints": [
+    "Másodfokú egyenlet: ax² + bx + c = 0 alakra hozható, ahol a ≠ 0.",
+    "Diszkrimináns: D = b² − 4ac; D > 0: két különböző valós gyök, D = 0: egy (kétszeres) gyök, D < 0: nincs valós gyök.",
+    "Megoldóképlet: x₁,₂ = (−b ± √(b² − 4ac))/(2a), ha D ≥ 0.",
+    "Viète-formulák: x₁ + x₂ = −b/a, x₁·x₂ = c/a; gyöktényezős alak: a(x − x₁)(x − x₂).",
+    "1. feladat: D = 25, gyökök x = 2 és x = −1/2.",
+    "2. feladat: D = 36 − 4p < 0, azaz p > 9.",
+    "3. feladat: a + b = 13, ab = 40, az oldalak 5 cm és 8 cm.",
+    "Minden feladatnál ellenőrzés és szöveges válasz."
+  ],
+  "speakingSeconds": 900,
+  "prepSeconds": 1800,
+  "sampleAnswer": {
+    "turns": [
+      {
+        "speaker": "candidate",
+        "text": "Az első elméleti kérdés: másodfokú egyenletnek nevezzük azokat az egyenleteket, amelyek ekvivalens átalakításokkal ax² + bx + c = 0 alakra hozhatók, ahol a, b, c valós számok és a ≠ 0 – ha a = 0 lenne, az egyenlet elsőfokú lenne. A diszkrimináns a D = b² − 4ac szám. Ha D > 0, az egyenletnek két különböző valós gyöke van, ha D = 0, egy valós gyöke van (ezt kétszeres gyöknek is mondjuk), ha D < 0, akkor nincs valós gyöke, mert negatív számnak nincs valós négyzetgyöke.\nA második kérdés: a megoldóképlet szerint, ha D ≥ 0, akkor a gyökök x₁,₂ = (−b ± √(b² − 4ac))/(2a).\nA harmadik kérdés: ha az egyenletnek vannak valós gyökei, x₁ és x₂, akkor a Viète-formulák szerint x₁ + x₂ = −b/a és x₁·x₂ = c/a. A gyöktényezős alak: ax² + bx + c = a(x − x₁)(x − x₂).\n\nAz első feladatban a 2x² − 3x − 2 = 0 egyenletnél a = 2, b = −3, c = −2. A diszkrimináns D = 9 − 4·2·(−2) = 9 + 16 = 25, ez pozitív, tehát két valós gyök van. A megoldóképlettel x = (3 ± 5)/4, így x₁ = 2 és x₂ = −2/4 = −1/2. Ellenőrzés a Viète-formulákkal: a gyökök összege 2 − 1/2 = 3/2 = −b/a, a szorzatuk −1 = c/a, tehát jók a gyökök. A megoldások: x = 2 és x = −1/2.\n\nA második feladatban az x² + 6x + p = 0 egyenletnek akkor nincs valós gyöke, ha a diszkrimináns negatív: D = 36 − 4p < 0. Ebből 36 < 4p, azaz p > 9. Például p = 10-nél D = −4, valóban nincs gyök, p = 9-nél pedig D = 0, ott még van egy gyök, x = −3. Válasz: p > 9 esetén nincs valós gyök.\n\nA harmadik feladatban legyenek a téglalap oldalai a és b. A kerület 2(a + b) = 26, tehát a + b = 13, a terület ab = 40. A Viète-formulák szerint a és b az x² − 13x + 40 = 0 egyenlet gyökei. D = 169 − 160 = 9, így x = (13 ± 3)/2, azaz 8 és 5. Ellenőrzés: 2·(8 + 5) = 26 és 8·5 = 40. A téglalap oldalai 5 cm és 8 cm."
+      },
+      {
+        "speaker": "examiner",
+        "text": "Mit jelent a gyöktényezős alak az első feladat egyenletére?"
+      },
+      {
+        "speaker": "candidate",
+        "text": "Az első feladat gyökei 2 és −1/2, és a = 2, ezért 2x² − 3x − 2 = 2(x − 2)(x + 1/2) = (x − 2)(2x + 1). Ebből látszik, hogy a kifejezés x = 2-nél és x = −1/2-nél nulla, és így szorzattá alakítva egyszerűsíteni is lehet vele, például törtes kifejezésekben."
+      }
+    ],
+    "notes": [
+      "Elmélet: a definícióban szerepel az a ≠ 0 feltétel, a diszkrimináns három esete indoklással (negatív számnak nincs valós gyöke), a megoldóképlet a D ≥ 0 feltétellel, a Viète-formulák és a gyöktényezős alak – ez a 15 pontos részt teljesen lefedi.",
+      "Feladatok: mindhárom feladatnál kimondja, melyik összefüggést használja, ellenőriz (Viète-formulák, behelyettesítés, határeset p = 9), és szöveges választ ad mértékegységgel.",
+      "Kommunikáció: a felelet követi a tétel sorrendjét, a jelöléseket (a, b, c, D, x₁, x₂) pontosan használja, és a vizsgáztató kérdésére a tanult fogalommal (gyöktényezős alak) válaszol."
+    ]
+  }
+}

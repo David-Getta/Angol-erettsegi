@@ -1,0 +1,212 @@
+{
+  "schemaVersion": 1,
+  "id": "bio-rd-emelt-fotoszintezis-fenyintenzitas",
+  "subject": "biologia",
+  "revision": 1,
+  "level": "emelt",
+  "source": "generated",
+  "topic": "sejtbiologia",
+  "title": "A fotoszintézis és a fényerősség – grafikonelemzés",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "reading",
+  "type": "abraelemzes",
+  "instructions": "Tanulmányozza a kísérlet és a grafikon szöveges leírását, majd válaszoljon a kérdésekre! A feleletválasztós kérdéseknél a helyes válasz betűjelét, az igaz–hamis állításoknál I (T) vagy H (F) betűt, a többi kérdésnél a kért számot vagy fogalmat írja be. A 0. kérdés a példa.",
+  "passage": {
+    "title": "Az átokhínár oxigénleadása különböző fényerősségen",
+    "blocks": [
+      {
+        "text": "Egy kísérletben átokhínár (Elodea) egyforma tömegű hajtásait vízzel teli, átlátszó edényekben különböző erősségű fénnyel világították meg, és mérték a hajtások nettó oxigénleadását (a fotoszintézis során termelt és a sejtlégzés során elfogyasztott oxigén különbségét). Két mérési sorozatot végeztek: az egyikben a víz kevés, a másikban sok oldott hidrogén-karbonátot (a vízinövények szén-dioxid-forrását) tartalmazott. A hőmérséklet mindkét sorozatban állandó, 25 °C volt."
+      },
+      {
+        "heading": "A grafikon leírása",
+        "text": "A vízszintes tengelyen a fényerősség (relatív egység, 0–10), a függőleges tengelyen a nettó oxigénleadás (relatív egység) látható. Teljes sötétségben (0 fényerősségnél) mindkét görbe −2 értékről indul. Mindkét görbe 1-es fényerősségnél metszi a vízszintes tengelyt, és 4-es fényerősségig a két görbe együtt, egyenletesen emelkedik 6-os értékig. A kevés hidrogén-karbonátot tartalmazó oldatban a görbe 4-es fényerősség felett vízszintessé válik, és 6-os értéken marad. A sok hidrogén-karbonátot tartalmazó oldatban a görbe ugyanolyan meredeken tovább emelkedik, 7-es fényerősségnél eléri a 12-es értéket, és afelett vízszintes marad. A sejtlégzés oxigénfogyasztása a fényerősségtől függetlenül állandó."
+      }
+    ]
+  },
+  "example": {
+    "id": "0",
+    "kind": "choice",
+    "prompt": "Mit jelez, hogy teljes sötétségben a nettó oxigénleadás negatív (−2)?",
+    "options": [
+      {
+        "key": "A",
+        "text": "A hajtások ilyenkor csak sejtlégzést végeznek, ezért oxigént vesznek fel."
+      },
+      {
+        "key": "B",
+        "text": "A hajtások sötétben is fotoszintetizálnak, csak lassabban."
+      },
+      {
+        "key": "C",
+        "text": "Sötétben a hajtások szén-dioxidot vesznek fel a vízből."
+      },
+      {
+        "key": "D",
+        "text": "A mérőműszer sötétben hibásan működik."
+      }
+    ],
+    "answer": "A",
+    "category": "abra-adatelemzes",
+    "explanation": "Helyes: A. Fény nélkül nincs fotoszintézis, a sejtlégzés viszont folyamatos, ezért a hajtások oxigént fogyasztanak – a nettó érték negatív, nagysága (2 egység) a sejtlégzés oxigénfogyasztását mutatja."
+  },
+  "items": [
+    {
+      "id": "1",
+      "kind": "text",
+      "prompt": "Mekkora fényerősségnél egyenlő a fotoszintézis oxigéntermelése a sejtlégzés oxigénfogyasztásával (fénykompenzációs pont)? Adja meg a relatív egységben kifejezett értéket!",
+      "answer": [
+        "1",
+        "1-es",
+        "1 egység",
+        "1 relatív egység",
+        "1-es fényerősségnél"
+      ],
+      "category": "abra-adatelemzes",
+      "explanation": "Helyes: 1. A görbék 1-es fényerősségnél metszik a vízszintes tengelyt, ahol a nettó oxigénleadás 0: ekkor a fotoszintézis éppen annyi oxigént termel, amennyit a sejtlégzés felhasznál (kompenzációs pont).",
+      "maxWords": 3
+    },
+    {
+      "id": "2",
+      "kind": "text",
+      "prompt": "Mekkora a hajtások teljes (bruttó) oxigéntermelése a sok hidrogén-karbonátot tartalmazó oldatban 7-es fényerősségnél? (Relatív egységben)",
+      "answer": [
+        "14",
+        "14 egység",
+        "14 relatív egység"
+      ],
+      "category": "okologiai-szamitas",
+      "explanation": "Helyes: 14. A bruttó termelés = nettó oxigénleadás + a légzés oxigénfogyasztása = 12 + 2 = 14 egység; a légzés értékét a sötétben mért −2 adja meg, és ez a feladat szerint fényben is állandó.",
+      "maxWords": 3
+    },
+    {
+      "id": "3",
+      "kind": "choice",
+      "prompt": "Melyik tényező korlátozza a fotoszintézis sebességét a kevés hidrogén-karbonátot tartalmazó oldatban 4-es fényerősség felett?",
+      "options": [
+        {
+          "key": "A",
+          "text": "a fényerősség"
+        },
+        {
+          "key": "B",
+          "text": "a szén-dioxid (hidrogén-karbonát) mennyisége"
+        },
+        {
+          "key": "C",
+          "text": "a víz oxigéntartalma"
+        },
+        {
+          "key": "D",
+          "text": "a sejtlégzés sebessége"
+        }
+      ],
+      "answer": "B",
+      "category": "abra-adatelemzes",
+      "explanation": "Helyes: B. 4 felett a fény növelése már nem gyorsítja a folyamatot a kevés hidrogén-karbonátot tartalmazó oldatban, a sok hidrogén-karbonátot tartalmazóban viszont igen – tehát itt a szén-dioxid-ellátás a korlátozó (minimum-) tényező.",
+      "wrongOptions": {
+        "A": "Ha a fény lenne a korlátozó tényező, a fényerősség növelésével nőne az oxigénleadás; 4 felett ez ebben az oldatban már nem történik meg.",
+        "C": "A víz oxigéntartalma a termék felhalmozódását jelzi, a kísérlet adatai szerint nem ez határozza meg a sebességet.",
+        "D": "A sejtlégzés a feladat szerint állandó, ezért nem okozhatja, hogy a görbe 4 felett ellaposodik."
+      }
+    },
+    {
+      "id": "4",
+      "kind": "tf",
+      "prompt": "3-as fényerősségnél a két oldatban azonos a nettó oxigénleadás, ami azt mutatja, hogy ebben a tartományban a fényerősség a korlátozó tényező.",
+      "answer": "T",
+      "category": "abra-adatelemzes",
+      "explanation": "Igaz. 4-es fényerősségig a két görbe együtt halad: hiába van az egyik oldatban több szén-dioxid, ez nem gyorsítja a folyamatot, mert a sebességet a kevés fény határozza meg (a fényszakasz nem termel elég ATP-t és NADPH-t)."
+    },
+    {
+      "id": "5",
+      "kind": "choice",
+      "prompt": "Melyik állítás igaz a mért oxigén keletkezésére?",
+      "options": [
+        {
+          "key": "A",
+          "text": "A fényszakaszban, a színtest tilakoidmembránjain keletkezik a víz bontásából."
+        },
+        {
+          "key": "B",
+          "text": "A Calvin-ciklusban, a színtest sztrómájában keletkezik a szén-dioxid bontásából."
+        },
+        {
+          "key": "C",
+          "text": "A mitokondriumban keletkezik a sejtlégzés során."
+        },
+        {
+          "key": "D",
+          "text": "A fényszakaszban keletkezik a szén-dioxid bontásából."
+        }
+      ],
+      "answer": "A",
+      "category": "anyagcsere-folyamat",
+      "explanation": "Helyes: A. A fotoszintézis fényszakaszában a fényenergia hatására a víz bomlik (fotolízis); a vízből elektronok és protonok kerülnek az elektronszállító láncba, az oxigén pedig melléktermékként felszabadul. Ez a tilakoidok membránján zajlik.",
+      "wrongOptions": {
+        "B": "A Calvin-ciklusban a szén-dioxid megkötése és redukciója történik, oxigén nem keletkezik; a CO₂ oxigénje a szerves anyagba és a vízbe kerül.",
+        "C": "A mitokondriumban a sejtlégzés oxigént fogyaszt, nem termel.",
+        "D": "Az oxigén a vízből származik, nem a szén-dioxidból – ezt izotópos jelöléssel (¹⁸O) bizonyították."
+      }
+    },
+    {
+      "id": "6",
+      "kind": "choice",
+      "prompt": "Melyik két anyagot szolgáltatja a fényszakasz a szén-dioxid megkötéséhez és redukciójához?",
+      "options": [
+        {
+          "key": "A",
+          "text": "ATP-t és NADPH-t"
+        },
+        {
+          "key": "B",
+          "text": "oxigént és glükózt"
+        },
+        {
+          "key": "C",
+          "text": "szén-dioxidot és vizet"
+        },
+        {
+          "key": "D",
+          "text": "ADP-t és NADP⁺-t"
+        }
+      ],
+      "answer": "A",
+      "category": "anyagcsere-folyamat",
+      "explanation": "Helyes: A. A fényszakasz kémiai energiát (ATP) és redukálóerőt (NADPH + H⁺) állít elő; a Calvin-ciklus ezek felhasználásával redukálja a megkötött szén-dioxidot szénhidráttá, a keletkező ADP és NADP⁺ pedig visszakerül a fényszakaszba.",
+      "wrongOptions": {
+        "B": "Az oxigén a fényszakasz mellékterméke, a glükóz pedig a sötétszakasz terméke, nem a fényszakaszé.",
+        "C": "A szén-dioxid a környezetből érkezik, a víz a fényszakasz kiindulási anyaga, nem terméke.",
+        "D": "Az ADP és a NADP⁺ a Calvin-ciklusban keletkezik, és a fényszakasz használja fel újra – fordított irány."
+      }
+    },
+    {
+      "id": "7",
+      "kind": "tf",
+      "prompt": "Ha a sok hidrogén-karbonátot tartalmazó oldattal végzett mérést 25 °C helyett 10 °C-on ismételnék meg, a görbe telítési értéke (12) várhatóan változatlan maradna, mert a fotoszintézis nem függ a hőmérséklettől.",
+      "answer": "F",
+      "category": "kiserlet-ertelmezes",
+      "explanation": "Hamis. A szén-dioxid megkötését és redukcióját (Calvin-ciklus) enzimek katalizálják, amelyek működése hidegben lelassul; ezért erős fényben, elegendő szén-dioxid mellett a hőmérséklet válik korlátozó tényezővé, és a telítési érték csökken."
+    },
+    {
+      "id": "8",
+      "kind": "text",
+      "prompt": "Melyik öt szénatomos vegyülethez kötődik a szén-dioxid a Calvin-ciklus első lépésében?",
+      "answer": [
+        "ribulóz-difoszfát",
+        "ribulóz-1,5-difoszfát",
+        "ribulóz-biszfoszfát",
+        "ribulóz-1,5-biszfoszfát",
+        "RuDP",
+        "RuBP",
+        "ribulóz-difoszfáthoz",
+        "ribulóz-biszfoszfáthoz"
+      ],
+      "category": "anyagcsere-folyamat",
+      "explanation": "Helyes: ribulóz-difoszfát (ribulóz-1,5-biszfoszfát). Az öt szénatomos cukorfoszfát a szén-dioxiddal egy instabil hat szénatomos vegyületet képez, amely azonnal két három szénatomos glicerinsav-foszfátra bomlik; ezt redukálja a sejt ATP és NADPH felhasználásával.",
+      "maxWords": 2
+    }
+  ],
+  "glossary": [],
+  "suggestedMinutes": 12
+}

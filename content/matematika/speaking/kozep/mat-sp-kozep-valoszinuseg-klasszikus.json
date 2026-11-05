@@ -1,0 +1,92 @@
+{
+  "schemaVersion": 1,
+  "id": "mat-sp-kozep-valoszinuseg-klasszikus",
+  "subject": "matematika",
+  "revision": 1,
+  "level": "kozep",
+  "source": "generated",
+  "topic": "valoszinuseg",
+  "title": "Tétel: a klasszikus valószínűségi modell",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "speaking",
+  "type": "tetel",
+  "partNumber": 1,
+  "instructionsHu": "Középszintű szóbeli tétel (30 perc felkészülés, kb. 15 perc felelet). Először válaszolj a három elméleti kérdésre (definíció, tétel kimondása a feltételekkel), majd oldd meg és magyarázd el a három feladatot: mondd ki, melyik összefüggést használod és miért, és fogalmazd meg a választ.",
+  "prompts": [
+    "1. elméleti kérdés: Mit nevezünk biztos és lehetetlen eseménynek? Mi egy esemény komplementere (ellentett eseménye)?",
+    "2. elméleti kérdés: Mondja ki a klasszikus valószínűségi modellt! Mikor alkalmazható?",
+    "3. elméleti kérdés: Mikor kizáró két esemény? Hogyan számolható két kizáró esemény összegének és egy esemény komplementerének valószínűsége?",
+    "1. feladat: két kockával dobott számok összege",
+    "2. feladat: kártyahúzás – „vagy” esemény",
+    "3. feladat: visszatevéses húzás – „legalább egy” esemény komplementerrel"
+  ],
+  "followUpQuestions": [
+    "Miért nem 11 a két kockánál az elemi események száma?"
+  ],
+  "usefulPhrases": [
+    {
+      "en": "P(A) = k/n",
+      "hu": "Klasszikus modell: kedvező esetek száma osztva az összes eset számával."
+    },
+    {
+      "en": "P(Ā) = 1 − P(A)",
+      "hu": "Komplementer: „legalább egy” típusú kérdéseknél ez a gyorsabb út."
+    },
+    {
+      "en": "P(A + B) = P(A) + P(B) − P(A·B)",
+      "hu": "„Vagy” esemény valószínűsége; kizáró eseményeknél a kivonandó 0."
+    },
+    {
+      "en": "rendezett párok",
+      "hu": "Két kockánál az (1; 6) és a (6; 1) két külön elemi esemény – így lesz 36 egyformán valószínű eset."
+    }
+  ],
+  "sources": [
+    {
+      "title": "1. feladat",
+      "text": "Két szabályos dobókockával dobunk. Mennyi a valószínűsége, hogy a dobott számok összege 8?"
+    },
+    {
+      "title": "2. feladat",
+      "text": "Egy 32 lapos magyar kártyacsomagból (4 szín: piros, zöld, tök, makk; mindegyikből 8 lap, köztük 1 ász) egy lapot húzunk. Mennyi a valószínűsége, hogy a lap piros vagy ász?"
+    },
+    {
+      "title": "3. feladat",
+      "text": "Egy dobozban 4 fehér és 6 fekete golyó van. Kihúzunk egy golyót, visszatesszük, majd újra húzunk. Mennyi a valószínűsége, hogy legalább az egyik kihúzott golyó fehér?"
+    }
+  ],
+  "keyPoints": [
+    "Biztos esemény: mindig bekövetkezik, valószínűsége 1; lehetetlen esemény: soha nem következik be, valószínűsége 0.",
+    "Az A esemény komplementere (Ā) pontosan akkor következik be, ha A nem; P(Ā) = 1 − P(A).",
+    "Klasszikus modell: véges sok, egyformán valószínű elemi esemény esetén P(A) = kedvező esetek száma / összes eset száma.",
+    "Kizáró események: nem következhetnek be egyszerre; ekkor P(A + B) = P(A) + P(B).",
+    "Nem kizáró eseményekre P(A + B) = P(A) + P(B) − P(A·B).",
+    "1. feladat: 5/36 (rendezett párok!).",
+    "2. feladat: (8 + 4 − 1)/32 = 11/32.",
+    "3. feladat: 1 − 36/100 = 64/100 = 0,64."
+  ],
+  "speakingSeconds": 900,
+  "prepSeconds": 1800,
+  "sampleAnswer": {
+    "turns": [
+      {
+        "speaker": "candidate",
+        "text": "Az első elméleti kérdés: biztos eseménynek azt az eseményt nevezzük, amely a kísérlet során mindig bekövetkezik, például kockadobásnál az, hogy 7-nél kisebb számot dobunk; a valószínűsége 1. A lehetetlen esemény soha nem következik be, például az, hogy 7-est dobunk; a valószínűsége 0. Egy A esemény komplementere vagy ellentett eseménye az Ā esemény, amely pontosan akkor következik be, amikor A nem.\nA második kérdés: a klasszikus valószínűségi modell akkor alkalmazható, ha a kísérletnek véges sok kimenetele van, és ezek egyformán valószínűek. Ekkor egy A esemény valószínűsége a kedvező elemi események számának és az összes elemi esemény számának hányadosa: P(A) = k/n.\nA harmadik kérdés: két esemény kizáró, ha nem következhetnek be egyszerre. Kizáró események összegének valószínűsége a valószínűségek összege: P(A + B) = P(A) + P(B). Ha nem kizárók, a közös részt le kell vonni: P(A + B) = P(A) + P(B) − P(A·B). A komplementer valószínűsége P(Ā) = 1 − P(A), mert A és Ā kizárók, és együtt a biztos eseményt adják.\n\nAz első feladatban két kockával dobunk. Az elemi események a rendezett számpárok, ezekből 6·6 = 36 van, és mind egyformán valószínű. Az összeg 8 a (2; 6), (3; 5), (4; 4), (5; 3), (6; 2) esetekben, ez 5 kedvező eset. A valószínűség 5/36, körülbelül 0,139.\n\nA második feladatban 32 lap közül egyet húzunk, minden lap egyformán valószínű. Piros lap 8 van, ász 4. A piros ász mindkettőbe beletartozik, ezért nem kizáró eseményekről van szó, a közös részt egyszer le kell vonni: 8 + 4 − 1 = 11 kedvező eset. A valószínűség 11/32, körülbelül 0,344.\n\nA harmadik feladatban visszatevéssel húzunk kétszer, így minden húzásnál 10 golyó közül választunk, összesen 10·10 = 100 egyformán valószínű rendezett pár van. A „legalább egy fehér” esemény komplementere az, hogy mindkét golyó fekete: ennek 6·6 = 36 esete van, valószínűsége 36/100. Ezért a keresett valószínűség 1 − 36/100 = 64/100 = 0,64. A legalább egy fehér golyó húzásának valószínűsége 0,64."
+      },
+      {
+        "speaker": "examiner",
+        "text": "Miért nem 11 a két kockánál az elemi események száma, ha az összeg 2 és 12 között lehet?"
+      },
+      {
+        "speaker": "candidate",
+        "text": "Mert a 11 lehetséges összeg nem egyformán valószínű: a 2-es összeg csak az (1; 1) párból jön ki, a 7-es hat párból. A klasszikus modellhez egyformán valószínű kimenetelek kellenek, ezek a 36 rendezett pár."
+      }
+    ],
+    "notes": [
+      "Elmélet: a felelet a biztos, a lehetetlen és a komplementer eseményt példával mutatja be, a klasszikus modellnél kimondja a feltételt (véges sok, egyformán valószínű kimenetel), és a kizáró / nem kizáró eseményekre is megadja a képletet.",
+      "Feladatok: az 1. feladatban rendezett párokkal számol, a 2.-ban észreveszi, hogy a piros ász közös eset, a 3.-ban a komplementerrel dolgozik – a középszintű javítási útmutató pontosan ezekért a lépésekért ad pontot.",
+      "Kommunikáció: minden eredményt tört és tizedes tört alakban is kimond; a vizsgáztató kérdésére a modell feltételével (egyformán valószínű kimenetelek) válaszol."
+    ]
+  }
+}

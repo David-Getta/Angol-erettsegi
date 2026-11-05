@@ -1,0 +1,186 @@
+{
+  "schemaVersion": 1,
+  "id": "nem-lu-kozep-kochkurs-word-bank",
+  "subject": "nemet",
+  "revision": 1,
+  "level": "kozep",
+  "source": "generated",
+  "topic": "eletmod",
+  "title": "Kochen lernen im Jugendzentrum",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "language-use",
+  "type": "word-bank-cloze",
+  "instructions": "Lesen Sie den Text und ergänzen Sie die Lücken (1–10) mit den Wörtern aus der Liste (A–N). Jedes Wort darf nur einmal verwendet werden. Drei Wörter passen nicht. Am Anfang finden Sie ein Beispiel (0).",
+  "instructionsHu": "Egészítsd ki a szöveget a listában (A–N) megadott szavakkal. Minden szót csak egyszer használhatsz, három szóra nem lesz szükséged. A 0. a példa.",
+  "passage": {
+    "title": "Kochen lernen im Jugendzentrum",
+    "blocks": [
+      {
+        "text": "Seit einem halben Jahr gibt es im Jugendzentrum Nord jeden Mittwoch einen Kochkurs [[0]] Jugendliche zwischen 14 und 18 Jahren. Die Idee hatte die Sozialarbeiterin Miriam Sommer. „Viele Jugendliche essen fast nur Fertiggerichte oder Fast Food“, erzählt sie. „Nicht, [[1]] sie das lieben, sondern weil sie nie gelernt haben, selbst zu kochen.“"
+      },
+      {
+        "text": "Der Kurs ist kostenlos, nur für die Zutaten zahlt [[2]] zwei Euro pro Abend. Am Anfang kamen nur fünf Teilnehmer, inzwischen sind es [[3]] als zwanzig. Jede Woche steht ein anderes Gericht auf dem Plan: mal Gemüsesuppe, mal selbst gemachte Pizza, mal ein Curry. Alle Rezepte sind einfach und [[4]]: Man braucht keine teuren Geräte, und die Zutaten bekommt man in jedem Supermarkt."
+      },
+      {
+        "text": "Zuerst lernen die Teilnehmer, wie man Gemüse richtig [[5]]. Danach kochen sie in kleinen Gruppen, und am Ende [[6]] alle zusammen an einem langen Tisch. Für viele ist das der schönste Teil des Abends, [[7]] zu Hause isst kaum noch jemand gemeinsam."
+      },
+      {
+        "text": "Der 16-jährige Emre war am Anfang skeptisch. Jetzt kocht er [[8]] zu Hause für seine Familie. „Meine kleine Schwester findet meine Spaghetti besser als die von Mama“, erzählt er und lacht. Im Herbst [[9]] es auch einen Kurs für Fortgeschrittene geben. Miriam Sommer sucht dafür noch Helfer, [[10]] gern kochen und ein paar Stunden Zeit haben."
+      }
+    ]
+  },
+  "options": [
+    {
+      "key": "A",
+      "text": "sogar"
+    },
+    {
+      "key": "B",
+      "text": "teuer"
+    },
+    {
+      "key": "C",
+      "text": "weil"
+    },
+    {
+      "key": "D",
+      "text": "sitzen"
+    },
+    {
+      "key": "E",
+      "text": "man"
+    },
+    {
+      "key": "F",
+      "text": "soll"
+    },
+    {
+      "key": "G",
+      "text": "obwohl"
+    },
+    {
+      "key": "H",
+      "text": "mehr"
+    },
+    {
+      "key": "I",
+      "text": "die"
+    },
+    {
+      "key": "J",
+      "text": "günstig"
+    },
+    {
+      "key": "K",
+      "text": "für"
+    },
+    {
+      "key": "L",
+      "text": "sitzt"
+    },
+    {
+      "key": "M",
+      "text": "schneidet"
+    },
+    {
+      "key": "N",
+      "text": "denn"
+    }
+  ],
+  "example": {
+    "id": "0",
+    "kind": "match",
+    "answer": "K",
+    "category": "preposition",
+    "explanation": "Valakinek szóló tanfolyam: ein Kochkurs für Jugendliche (für + tárgyeset)."
+  },
+  "items": [
+    {
+      "id": "1",
+      "kind": "match",
+      "answer": "C",
+      "category": "conjunction",
+      "explanation": "A „nicht, weil …, sondern weil …” szerkezet: nem azért, mert …, hanem azért, mert … . A „weil” mellékmondatot vezet be, ezért az ige a végén áll (lieben).",
+      "wrongOptions": {
+        "G": "Az „obwohl” (bár) értelmileg nem illik: nem az a gondolat, hogy „nem bár szeretik”, hanem az okot tagadja a mondat."
+      }
+    },
+    {
+      "id": "2",
+      "kind": "match",
+      "answer": "E",
+      "category": "reflexive-pronoun",
+      "explanation": "Általános alany kell: zahlt man zwei Euro = két eurót kell fizetni (fizet az ember). A „man” után az ige egyes szám 3. személyű (zahlt).",
+      "wrongOptions": {
+        "I": "A „die” névelő vagy vonatkozó névmás, alanyként itt nem állhat egyedül a „zahlt” mellett."
+      }
+    },
+    {
+      "id": "3",
+      "kind": "match",
+      "answer": "H",
+      "category": "adjective-declension",
+      "explanation": "Középfok + „als”: mehr als zwanzig = több mint húsz. A „viel” középfoka a „mehr”, utána az összehasonlítás „als”-szal jön."
+    },
+    {
+      "id": "4",
+      "kind": "match",
+      "answer": "J",
+      "category": "vocabulary-range",
+      "explanation": "A recept egyszerű és olcsó (günstig): a kettőspont utáni rész ezt magyarázza – nem kell drága eszköz, és minden boltban kapni hozzávalót.",
+      "wrongOptions": {
+        "B": "A „teuer” (drága) ellentmond a folytatásnak: „Man braucht keine teuren Geräte”."
+      }
+    },
+    {
+      "id": "5",
+      "kind": "match",
+      "answer": "M",
+      "category": "verb-conjugation",
+      "explanation": "A „wie man Gemüse richtig schneidet” mellékmondatban az alany „man”, ezért egyes szám 3. személyű igealak kell, és az ige a mellékmondat végére kerül: schneidet."
+    },
+    {
+      "id": "6",
+      "kind": "match",
+      "answer": "D",
+      "category": "verb-conjugation",
+      "explanation": "Az alany az „alle” (mindenki, többes szám), ezért többes számú igealak kell: am Ende sitzen alle zusammen an einem langen Tisch.",
+      "wrongOptions": {
+        "L": "A „sitzt” egyes szám 3. személy (er/sie/es sitzt), az „alle” többes számú alannyal nem egyeztethető."
+      }
+    },
+    {
+      "id": "7",
+      "kind": "match",
+      "answer": "N",
+      "category": "conjunction",
+      "explanation": "A hiány után egyenes szórend áll (zu Hause isst kaum noch jemand …), az ige a második helyen van – ezt csak a „denn” (mert) engedi, amely nem változtatja meg a szórendet.",
+      "wrongOptions": {
+        "C": "A „weil” után az ige a mellékmondat végére kerülne: weil zu Hause kaum noch jemand gemeinsam isst."
+      }
+    },
+    {
+      "id": "8",
+      "kind": "match",
+      "answer": "A",
+      "category": "vocabulary-range",
+      "explanation": "Emre eleinte szkeptikus volt, most pedig MÉG otthon is főz a családjának: a „sogar” (sőt, még … is) a meglepő fordulatot hangsúlyozza."
+    },
+    {
+      "id": "9",
+      "kind": "match",
+      "answer": "F",
+      "category": "modal",
+      "explanation": "Tervezett jövőbeli esemény: Im Herbst soll es auch einen Kurs … geben = ősszel állítólag / a tervek szerint lesz haladó tanfolyam is. A „soll” után főnévi igenév áll a mondat végén (geben)."
+    },
+    {
+      "id": "10",
+      "kind": "match",
+      "answer": "I",
+      "category": "conjunction",
+      "explanation": "Vonatkozó névmás a „Helfer” (többes szám) szóra, a mellékmondatban alany: Helfer, die gern kochen = segítők, akik szívesen főznek."
+    }
+  ],
+  "suggestedMinutes": 10
+}

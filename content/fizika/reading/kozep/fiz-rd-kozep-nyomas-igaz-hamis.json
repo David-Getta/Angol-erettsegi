@@ -1,0 +1,99 @@
+{
+  "schemaVersion": 1,
+  "id": "fiz-rd-kozep-nyomas-igaz-hamis",
+  "subject": "fizika",
+  "revision": 1,
+  "level": "kozep",
+  "source": "generated",
+  "topic": "viz-levego-kornyezet",
+  "title": "Nyomás, úszás, légkör – igaz vagy hamis?",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "reading",
+  "type": "igaz-hamis",
+  "instructions": "Döntsd el az állításokról, hogy igazak (I) vagy hamisak (H)! A 0. állítás a megoldott példa. Ahol szükséges, g = 10 m/s², a víz sűrűsége 1000 kg/m³.",
+  "example": {
+    "id": "0",
+    "kind": "tf",
+    "prompt": "A nyomás a felületre merőlegesen ható nyomóerő és a nyomott felület nagyságának hányadosa.",
+    "answer": "T",
+    "category": "fogalmak",
+    "explanation": "Igaz. A nyomás definíciója p = F/A, ahol F a felületre merőleges nyomóerő, A a felület nagysága. Mértékegysége a pascal: 1 Pa = 1 N/m²."
+  },
+  "items": [
+    {
+      "id": "1",
+      "kind": "tf",
+      "prompt": "A nyugvó folyadék hidrosztatikai nyomása egy adott pontban a folyadékoszlop magasságától és a folyadék sűrűségétől függ, az edény alakjától nem.",
+      "answer": "T",
+      "category": "torvenyek",
+      "explanation": "Igaz. A hidrosztatikai nyomás p = ρ·g·h, ahol h a pont mélysége a folyadékfelszín alatt. Az edény alakja és a benne lévő folyadék összes mennyisége nem számít (hidrosztatikai paradoxon): egy keskeny cső és egy széles medence alján azonos mélységben ugyanakkora a nyomás."
+    },
+    {
+      "id": "2",
+      "kind": "tf",
+      "prompt": "Egy 10 m mély tó fenekén a víz hidrosztatikai nyomása kb. 10 kPa.",
+      "answer": "F",
+      "category": "szamolas",
+      "explanation": "Hamis. p = ρ·g·h = 1000 kg/m³ · 10 m/s² · 10 m = 100 000 Pa = 100 kPa, ami kb. a légköri nyomással egyenlő. A 10 kPa egy nagyságrenddel kisebb; ennyi csak 1 m mélyen lenne."
+    },
+    {
+      "id": "3",
+      "kind": "tf",
+      "prompt": "A folyadékba merülő testre ható felhajtóerő egyenlő a test által kiszorított folyadék súlyával.",
+      "answer": "T",
+      "category": "torvenyek",
+      "explanation": "Igaz. Ez Arkhimédész törvénye: F_fel = ρ_folyadék · g · V_bemerülő. A felhajtóerő a test alsó és felső lapjára ható hidrosztatikai nyomás különbségéből származik, és a test bemerülő térfogatától, valamint a folyadék sűrűségétől függ – a test anyagától nem."
+    },
+    {
+      "id": "4",
+      "kind": "tf",
+      "prompt": "Egy tömör test akkor úszik a víz felszínén, ha a sűrűsége nagyobb a víz sűrűségénél.",
+      "answer": "F",
+      "category": "torvenyek",
+      "explanation": "Hamis. Fordítva: a test akkor úszik, ha az (átlag)sűrűsége KISEBB a vízénél, mert ekkor már részben bemerülve akkora vizet szorít ki, amelynek súlya egyenlő a test súlyával. A víznél sűrűbb tömör test elmerül (az acélhajó azért úszik, mert a benne lévő levegővel együtt az átlagsűrűsége kisebb a vízénél)."
+    },
+    {
+      "id": "5",
+      "kind": "tf",
+      "prompt": "A légnyomás a tengerszint feletti magasság növekedésével csökken.",
+      "answer": "T",
+      "category": "jelenseg-magyarazat",
+      "explanation": "Igaz. A légnyomást a fölöttünk lévő levegőoszlop súlya okozza; feljebb kevesebb levegő van fölöttünk, és a levegő ott ritkább is. Kb. 5,5 km magasan a légnyomás már csak a tengerszinti érték fele."
+    },
+    {
+      "id": "6",
+      "kind": "tf",
+      "prompt": "A víz sűrűsége kb. 4 °C-on a legnagyobb, ezért télen a befagyott tó fenekén kb. 4 °C-os víz van, a tó pedig felülről lefelé fagy be.",
+      "answer": "T",
+      "category": "jelenseg-magyarazat",
+      "explanation": "Igaz. A víz rendellenesen tágul: 0 és 4 °C között melegítve összehúzódik, 4 °C-on a legsűrűbb. A 4 °C-os, legsűrűbb víz lesüllyed a tó aljára, a hidegebb víz felül marad és ott fagy meg; a jég sűrűsége is kisebb a vízénél, ezért a felszínen úszik és szigeteli az alatta lévő vizet. Így a halak a tó alján áttelelhetnek."
+    },
+    {
+      "id": "7",
+      "kind": "tf",
+      "prompt": "A gyorsabban áramló levegőben (vagy folyadékban) nagyobb a nyomás, mint a lassabban áramlóban.",
+      "answer": "F",
+      "category": "torvenyek",
+      "explanation": "Hamis. Bernoulli törvénye szerint ugyanabban az áramlásban ahol nagyobb a sebesség, ott KISEBB a (sztatikus) nyomás. Ezért húzza be a függönyt a nyitott ablakon kívül elsüvítő szél, és ezért emelkedik a kéménybe szívott füst."
+    },
+    {
+      "id": "8",
+      "kind": "tf",
+      "prompt": "Az üvegházhatás lényege, hogy a légkör egyes gázai (pl. a vízgőz és a szén-dioxid) elnyelik a földfelszín által kisugárzott infravörös sugárzás egy részét, és annak egy részét visszasugározzák a felszín felé.",
+      "answer": "T",
+      "category": "jelenseg-magyarazat",
+      "explanation": "Igaz. A napfény nagy része (látható fény) átjut a légkörön és felmelegíti a felszínt; a felszín infravörös sugárzást bocsát ki, amelyet az üvegházhatású gázok elnyelnek és részben visszasugároznak. Ettől a felszín átlaghőmérséklete kb. +15 °C, üvegházhatás nélkül kb. −18 °C lenne."
+    },
+    {
+      "id": "9",
+      "kind": "tf",
+      "prompt": "A víz forráspontja független a külső nyomástól: a víz mindig 100 °C-on forr.",
+      "answer": "F",
+      "category": "fogalmak",
+      "explanation": "Hamis. A víz akkor forr, amikor a telített gőzének nyomása eléri a külső nyomást. 100 °C-on csak normál légnyomáson (101,3 kPa) forr; magas hegyen, kisebb nyomáson alacsonyabb (pl. 4000 m-en kb. 87 °C), a kuktában, nagyobb nyomáson magasabb (kb. 120 °C) a forráspont."
+    }
+  ],
+  "glossary": [],
+  "suggestedMinutes": 10
+}

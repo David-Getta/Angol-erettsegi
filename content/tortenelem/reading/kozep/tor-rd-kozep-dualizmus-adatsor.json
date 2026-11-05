@@ -1,0 +1,175 @@
+{
+  "schemaVersion": 1,
+  "id": "tor-rd-kozep-dualizmus-adatsor",
+  "subject": "tortenelem",
+  "revision": 1,
+  "level": "kozep",
+  "source": "generated",
+  "topic": "ujkor",
+  "title": "Gazdasági fejlődés a dualizmus korában",
+  "createdAt": "2026-11-05",
+  "tags": [
+    "magyar"
+  ],
+  "section": "reading",
+  "type": "adatsor",
+  "instructions": "A feladat a dualizmus kori gazdasági és városi fejlődéssel kapcsolatos. Válaszoljon a kérdésekre a források és ismeretei segítségével! A számításos kérdéseknél kerek számot írjon! A 0. a megoldott példa.",
+  "passage": {
+    "title": "A dualizmus kori fejlődés",
+    "sourceNote": "Az I. forrás adatai kerekített értékek. A II. forrás a gyakorlás céljára írt, korhű stílusú szöveg.",
+    "blocks": [
+      {
+        "heading": "I. forrás – Adatok (kerekítve)",
+        "text": "A Magyar Királyság vasúthálózatának hossza: 1867-ben kb. 2 200 km, 1913-ban kb. 22 000 km.\nBudapest lakossága (1869-ben Pest, Buda és Óbuda együtt): 1869-ben kb. 270 000 fő, 1890-ben kb. 492 000 fő, 1910-ben kb. 880 000 fő."
+      },
+      {
+        "heading": "II. forrás – Egy vidéki újság tudósítójának leveléből, 1896",
+        "text": "„A főváros alig ismerhető rá: a honfoglalás ezredik évfordulóját ünnepli az ország. Az Andrássy út alatt villamos földalatti vasút szállítja az utasokat a Városligetbe, ahol a kiállításon a magyar ipar és mezőgazdaság legszebb termékeit mutatják be. Angyalföldön és Kőbányán gyárkémények füstölnek, a pesti nagymalmok lisztje pedig fél Európába eljut.”"
+      }
+    ]
+  },
+  "example": {
+    "id": "0",
+    "kind": "text",
+    "prompt": "Hányszorosára nőtt a vasúthálózat hossza 1867 és 1913 között? (Kerek szám.)",
+    "answer": [
+      "10",
+      "tízszeresére",
+      "tízszeres",
+      "10-szeresére",
+      "10-szeres",
+      "kb. 10"
+    ],
+    "category": "adatleolvasas",
+    "explanation": "Helyes: tízszeresére. 22 000 km : 2 200 km = 10. A vasútépítés a dualizmus korának egyik legnagyobb beruházása volt.",
+    "maxWords": 2
+  },
+  "items": [
+    {
+      "id": "1",
+      "kind": "text",
+      "prompt": "Hány fővel nőtt Budapest lakossága 1869 és 1910 között? (Kerek szám.)",
+      "answer": [
+        "610 000",
+        "610000",
+        "610 000 fő",
+        "610 ezer",
+        "610 ezer fő",
+        "kb. 610 000"
+      ],
+      "category": "adatleolvasas",
+      "explanation": "Helyes: kb. 610 000 fővel. 880 000 − 270 000 = 610 000. A gyors növekedés oka főként a vidékről (és a monarchia más részeiből) érkező bevándorlás volt, amelyet az ipar munkaerőigénye vonzott.",
+      "maxWords": 3
+    },
+    {
+      "id": "2",
+      "kind": "tf",
+      "prompt": "Az adatok szerint Budapest lakossága 1869 és 1910 között több mint háromszorosára nőtt.",
+      "answer": "T",
+      "category": "adatleolvasas",
+      "explanation": "Igaz. 880 000 : 270 000 ≈ 3,26, tehát a lakosság valóban több mint háromszorosára nőtt."
+    },
+    {
+      "id": "3",
+      "kind": "tf",
+      "prompt": "Az adatok szerint Budapest lakossága 1890-ben már meghaladta a félmillió főt.",
+      "answer": "F",
+      "category": "adatleolvasas",
+      "explanation": "Hamis. 1890-ben kb. 492 000 lakos élt a fővárosban, ez kevesebb, mint 500 000 – a félmilliót csak az 1890-es években lépte át."
+    },
+    {
+      "id": "4",
+      "kind": "choice",
+      "prompt": "Melyik évben egyesült Pest, Buda és Óbuda Budapest néven?",
+      "options": [
+        {
+          "key": "A",
+          "text": "1867"
+        },
+        {
+          "key": "B",
+          "text": "1873"
+        },
+        {
+          "key": "C",
+          "text": "1896"
+        },
+        {
+          "key": "D",
+          "text": "1849"
+        }
+      ],
+      "answer": "B",
+      "category": "evszam-kronologia",
+      "explanation": "Helyes: 1873. A kiegyezés utáni országgyűlés törvénye alapján 1873-ban egyesült a három város; ezért az I. forrás 1869-es adata még a három település együttes lakosságát mutatja.",
+      "wrongOptions": {
+        "A": "1867 a kiegyezés éve; a városegyesítés néhány évvel később történt.",
+        "C": "1896 a millennium éve (a II. forrás ideje); ekkor Budapest már több mint két évtizede egységes város volt.",
+        "D": "1849-ben a szabadságharc idején a három város még külön település volt; ekkor adták át a Lánchidat."
+      }
+    },
+    {
+      "id": "5",
+      "kind": "choice",
+      "prompt": "Mi volt a II. forrásban említett 1896-os ünnepségsorozat alkalma?",
+      "options": [
+        {
+          "key": "A",
+          "text": "a honfoglalás ezeréves évfordulója"
+        },
+        {
+          "key": "B",
+          "text": "a kiegyezés harmincadik évfordulója"
+        },
+        {
+          "key": "C",
+          "text": "az 1848-as forradalom ötvenedik évfordulója"
+        },
+        {
+          "key": "D",
+          "text": "Szent István halálának kilencszázadik évfordulója"
+        }
+      ],
+      "answer": "A",
+      "category": "forras-ertelmezes",
+      "explanation": "Helyes: A. A forrás szerint az ország „a honfoglalás ezredik évfordulóját” ünnepli; a millenniumi ünnepségek (1896) alkalmából épült meg a földalatti vasút és rendezték meg a városligeti kiállítást.",
+      "wrongOptions": {
+        "B": "A kiegyezés 1867-ben volt, 1896-ban csak a 29. évfordulója lett volna; a forrás a honfoglalást nevezi meg.",
+        "C": "1848 ötvenedik évfordulója 1898-ban volt.",
+        "D": "Szent István 1038-ban halt meg; a 900. évforduló 1938-ra esett."
+      }
+    },
+    {
+      "id": "6",
+      "kind": "choice",
+      "prompt": "Melyik tényező segítette leginkább a dualizmus kori gazdasági fellendülést?",
+      "options": [
+        {
+          "key": "A",
+          "text": "a kiegyezés utáni politikai stabilitás, a közös vámterület és a beáramló külföldi tőke"
+        },
+        {
+          "key": "B",
+          "text": "a jobbágyfelszabadítás elhalasztása a 20. századra"
+        },
+        {
+          "key": "C",
+          "text": "Magyarország kilépése az Osztrák–Magyar Monarchiából"
+        },
+        {
+          "key": "D",
+          "text": "a céhrendszer visszaállítása"
+        }
+      ],
+      "answer": "A",
+      "category": "ok-okozat",
+      "explanation": "Helyes: A. A kiegyezés (1867) után a stabil politikai helyzet, a Monarchia nagy közös piaca és vámterülete, valamint a főként osztrák, német és francia tőkebefektetések tették lehetővé a vasútépítést, a malomipar és a gépgyártás fejlődését.",
+      "wrongOptions": {
+        "B": "A jobbágyfelszabadítást az 1848-as áprilisi törvények kimondták, a neoabszolutizmus idején végre is hajtották; nem halasztották el.",
+        "C": "Magyarország 1918-ig a Monarchia része maradt; éppen a közös piac segítette a fejlődést.",
+        "D": "A céhrendszert az 1872-es ipartörvény megszüntette, ami a szabad vállalkozást segítette."
+      }
+    }
+  ],
+  "suggestedMinutes": 8
+}

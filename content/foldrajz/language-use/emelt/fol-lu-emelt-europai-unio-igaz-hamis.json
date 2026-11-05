@@ -1,0 +1,90 @@
+{
+  "schemaVersion": 1,
+  "id": "fol-lu-emelt-europai-unio-igaz-hamis",
+  "subject": "foldrajz",
+  "revision": 1,
+  "level": "emelt",
+  "source": "generated",
+  "topic": "europa",
+  "title": "Az Európai Unió – igaz vagy hamis?",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "language-use",
+  "type": "igaz-hamis",
+  "instructions": "Döntse el, hogy igazak (I) vagy hamisak (H) az alábbi állítások az Európai Unióról! A 0. a megoldott példa.",
+  "example": {
+    "id": "0",
+    "kind": "tf",
+    "prompt": "Az Európai Unió elődjét, az Európai Gazdasági Közösséget 1957-ben a római szerződéssel hat ország alapította.",
+    "answer": "T",
+    "category": "tarsadalmi-folyamat",
+    "explanation": "Igaz: 1957-ben Franciaország, az NSZK, Olaszország, Belgium, Hollandia és Luxemburg írta alá a római szerződést, ezzel jött létre az Európai Gazdasági Közösség (közös piac)."
+  },
+  "items": [
+    {
+      "id": "1",
+      "kind": "tf",
+      "prompt": "Magyarország 2004-ben lett az Európai Unió tagja.",
+      "answer": "T",
+      "category": "tarsadalmi-folyamat",
+      "explanation": "Igaz: 2004. május 1-jén tíz ország csatlakozott, köztük Magyarország, Lengyelország, Csehország, Szlovákia, Szlovénia és a balti államok."
+    },
+    {
+      "id": "2",
+      "kind": "tf",
+      "prompt": "Az Egyesült Királyság 2020-ban kilépett az Európai Unióból.",
+      "answer": "T",
+      "category": "tarsadalmi-folyamat",
+      "explanation": "Igaz: a 2016-os népszavazás után az Egyesült Királyság 2020. január 31-én lépett ki az EU-ból (brexit); azóta 27 tagállam van."
+    },
+    {
+      "id": "3",
+      "kind": "tf",
+      "prompt": "Az Európai Unió minden tagállama az eurót használja fizetőeszközként.",
+      "answer": "F",
+      "category": "tarsadalmi-folyamat",
+      "explanation": "Hamis: több tagállam saját valutát használ, például Magyarország (forint), Lengyelország (złoty), Csehország (korona), Svédország és Dánia (korona)."
+    },
+    {
+      "id": "4",
+      "kind": "tf",
+      "prompt": "Az Európai Parlament plenáris üléseinek egyik helyszíne Strasbourg.",
+      "answer": "T",
+      "category": "orszag-varos",
+      "explanation": "Igaz: az Európai Parlament hivatalos székhelye Strasbourg, ahol a havi plenáris ülések zajlanak; bizottságai Brüsszelben üléseznek, titkársága Luxembourgban van."
+    },
+    {
+      "id": "5",
+      "kind": "tf",
+      "prompt": "Az Európai Központi Bank székhelye Brüsszel.",
+      "answer": "F",
+      "category": "orszag-varos",
+      "explanation": "Hamis: az Európai Központi Bank székhelye Frankfurt am Main (Németország); Brüsszelben az Európai Bizottság és az Európai Unió Tanácsa működik."
+    },
+    {
+      "id": "6",
+      "kind": "tf",
+      "prompt": "A schengeni övezet tagállamai között a belső határokon általában nincs állandó személyellenőrzés.",
+      "answer": "T",
+      "category": "tarsadalmi-folyamat",
+      "explanation": "Igaz: a schengeni egyezmény lényege a belső határellenőrzés megszüntetése és a közös külső határvédelem; ideiglenesen egyes országok visszaállíthatnak ellenőrzést."
+    },
+    {
+      "id": "7",
+      "kind": "tf",
+      "prompt": "Svájc és Norvégia az Európai Unió tagja.",
+      "answer": "F",
+      "category": "orszag-varos",
+      "explanation": "Hamis: egyik sem EU-tag (népszavazásokon utasították el a csatlakozást), de mindkettő tagja a schengeni övezetnek és az EFTA-nak, és szorosan kapcsolódik az egységes piachoz."
+    },
+    {
+      "id": "8",
+      "kind": "tf",
+      "prompt": "Az EU közös agrárpolitikája (KAP) a közös költségvetés egyik legnagyobb kiadási tétele.",
+      "answer": "T",
+      "category": "tarsadalmi-folyamat",
+      "explanation": "Igaz: a mezőgazdasági termelők támogatására és a vidékfejlesztésre fordított kiadás a költségvetés kb. harmada; régebben ennél is nagyobb arányt képviselt."
+    }
+  ],
+  "suggestedMinutes": 6
+}

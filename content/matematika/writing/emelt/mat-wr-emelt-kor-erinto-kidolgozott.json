@@ -1,0 +1,90 @@
+{
+  "schemaVersion": 1,
+  "id": "mat-wr-emelt-kor-erinto-kidolgozott",
+  "subject": "matematika",
+  "revision": 1,
+  "level": "emelt",
+  "source": "generated",
+  "topic": "koordinatageometria",
+  "title": "II. rész: kör, érintő és húr a koordináta-rendszerben",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "writing",
+  "type": "kidolgozott",
+  "taskNumber": 1,
+  "situation": "Adott a k: x² + y² − 4x − 6y − 12 = 0 egyenletű kör és az e: y = x + 6 egyenletű egyenes.\n\na) Határozza meg a kör középpontjának koordinátáit és a sugarát! (3 pont)\nb) Igazolja, hogy a P(5; 7) pont illeszkedik a körre, és írja fel a kör P pontbeli érintőjének egyenletét! (4 pont)\nc) A b) részben kapott érintő az x tengelyt az X, az y tengelyt az Y pontban metszi. Számítsa ki az OXY háromszög területét (O az origó)! (4 pont)\nd) Határozza meg az e egyenes és a k kör metszéspontjainak koordinátáit és a keletkező húr hosszát! (5 pont)",
+  "points": [
+    {
+      "id": "p1",
+      "text": "a) Teljes négyzetté alakítás, a középpont és a sugár (3 pont)"
+    },
+    {
+      "id": "p2",
+      "text": "b) P illeszkedésének ellenőrzése, az érintő normálvektora (a KP sugárvektor), az érintő egyenlete (4 pont)"
+    },
+    {
+      "id": "p3",
+      "text": "c) Az érintő tengelymetszetei és a derékszögű OXY háromszög területe (4 pont)"
+    },
+    {
+      "id": "p4",
+      "text": "d) Az egyenletrendszer megoldása behelyettesítéssel, a két metszéspont, ellenőrzés és a húr hossza (5 pont)"
+    }
+  ],
+  "suggestedMinutes": 35,
+  "usefulPhrases": [
+    {
+      "en": "(x − u)² + (y − v)² = r²",
+      "hu": "A K(u; v) középpontú, r sugarú kör egyenlete; teljes négyzetté alakítással kapjuk meg."
+    },
+    {
+      "en": "x² − 4x = (x − 2)² − 4",
+      "hu": "Teljes négyzetté kiegészítés: a lineáris tag együtthatójának felét emeljük négyzetre."
+    },
+    {
+      "en": "Az érintő merőleges az érintési pontba húzott sugárra.",
+      "hu": "Ezért a KP vektor az érintő normálvektora."
+    },
+    {
+      "en": "A·x + B·y = A·x₀ + B·y₀",
+      "hu": "Az (x₀; y₀) ponton átmenő, n(A; B) normálvektorú egyenes egyenlete."
+    },
+    {
+      "en": "közös pont ⇔ az egyenletrendszer megoldása",
+      "hu": "Kör és egyenes metszéspontjait a két egyenlet közös megoldásai adják."
+    },
+    {
+      "en": "d = √((x₂ − x₁)² + (y₂ − y₁)²)",
+      "hu": "Két pont távolsága – a húr hossza a két metszéspont távolsága."
+    }
+  ],
+  "checklistExtra": [
+    "Ellenőriztem behelyettesítéssel, hogy a kapott pontok rajta vannak a körön?"
+  ],
+  "modelAnswer": {
+    "text": "a) Teljes négyzetté alakítunk: x² − 4x = (x − 2)² − 4 és y² − 6y = (y − 3)² − 9. Így az egyenlet (x − 2)² − 4 + (y − 3)² − 9 − 12 = 0, azaz (x − 2)² + (y − 3)² = 25.\nEz a K(2; 3) középpontú, √25 = 5 egység sugarú kör egyenlete.\nA kör középpontja K(2; 3), sugara 5.\n\nb) P koordinátáit behelyettesítve: (5 − 2)² + (7 − 3)² = 9 + 16 = 25, tehát P rajta van a körön.\nA kör érintője merőleges az érintési pontba húzott sugárra, ezért a KP = (5 − 2; 7 − 3) = (3; 4) vektor az érintő normálvektora. A P(5; 7) ponton átmenő, n(3; 4) normálvektorú egyenes egyenlete 3x + 4y = 3·5 + 4·7, vagyis\naz érintő egyenlete: 3x + 4y = 43.\n\nc) Az X pontban y = 0: 3x = 43, x = 43/3, tehát X(43/3; 0). Az Y pontban x = 0: 4y = 43, y = 43/4, tehát Y(0; 43/4).\nAz OXY háromszög derékszögű (a derékszög az O csúcsnál van, mert a két tengely merőleges), befogói OX = 43/3 és OY = 43/4, így a területe\nT = (43/3)·(43/4)/2 = 1849/24 ≈ 77,04 területegység.\nAz OXY háromszög területe 1849/24 ≈ 77,04 területegység.\n\nd) A metszéspontok koordinátái mindkét egyenletet kielégítik. Az y = x + 6 kifejezést a kör egyenletébe helyettesítjük:\nx² + (x + 6)² − 4x − 6(x + 6) − 12 = 0\nx² + x² + 12x + 36 − 4x − 6x − 36 − 12 = 0\n2x² + 2x − 12 = 0, azaz x² + x − 6 = 0.\nA megoldóképlettel x = (−1 ± √(1 + 24))/2 = (−1 ± 5)/2, így x₁ = 2 és x₂ = −3; a hozzájuk tartozó y értékek y₁ = 2 + 6 = 8 és y₂ = −3 + 6 = 3.\nA metszéspontok: M₁(2; 8) és M₂(−3; 3). Ellenőrzés: (2 − 2)² + (8 − 3)² = 25 és (−3 − 2)² + (3 − 3)² = 25.\nA húr hossza: M₁M₂ = √((2 − (−3))² + (8 − 3)²) = √(25 + 25) = √50 = 5√2 ≈ 7,07 egység.\nAz e egyenes a kört az M₁(2; 8) és az M₂(−3; 3) pontban metszi, a húr hossza 5√2 ≈ 7,07 egység.",
+    "pointsCovered": [
+      {
+        "id": "p1",
+        "quote": "A kör középpontja K(2; 3), sugara 5."
+      },
+      {
+        "id": "p2",
+        "quote": "az érintő egyenlete: 3x + 4y = 43."
+      },
+      {
+        "id": "p3",
+        "quote": "T = (43/3)·(43/4)/2 = 1849/24 ≈ 77,04 területegység."
+      },
+      {
+        "id": "p4",
+        "quote": "A húr hossza: M₁M₂ = √((2 − (−3))² + (8 − 3)²) = √(25 + 25) = √50 = 5√2 ≈ 7,07 egység."
+      }
+    ],
+    "notes": [
+      "Eredmény: a középpont és a sugár (K(2; 3), r = 5), az érintő (3x + 4y = 43), a terület (1849/24 ≈ 77,04) és a metszéspontok, húrhossz ((2; 8), (−3; 3), 5√2) mind helyes, pontos és közelítő alakban is.",
+      "Indoklás: a b) részben kimondja a felhasznált tételt (az érintő merőleges az érintési pontba húzott sugárra), és ebből vezeti le a normálvektort; a c) részben megindokolja, miért derékszögű a háromszög.",
+      "Ellenőrzés: P illeszkedését és mindkét metszéspontot visszahelyettesítéssel ellenőrzi – ez a forma-szempont pontjához és a számolási hibák kiszűréséhez is kell."
+    ]
+  }
+}

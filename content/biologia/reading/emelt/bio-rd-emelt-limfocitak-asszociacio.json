@@ -1,0 +1,324 @@
+{
+  "schemaVersion": 1,
+  "id": "bio-rd-emelt-limfocitak-asszociacio",
+  "subject": "biologia",
+  "revision": 1,
+  "level": "emelt",
+  "source": "generated",
+  "topic": "szabalyozas",
+  "title": "B- és T-limfociták – asszociáció",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "reading",
+  "type": "asszociacio",
+  "instructions": "Döntse el az alábbi állításokról, hogy kire igazak! Írja a megfelelő betűt az állítás mellé: A) csak a B-limfocitákra igaz, B) csak a T-limfocitákra igaz, C) mindkettőre igaz, D) egyikre sem igaz. A 0. állítás a példa.",
+  "example": {
+    "id": "0",
+    "kind": "choice",
+    "prompt": "A vörös csontvelő őssejtjeiből származnak.",
+    "options": [
+      {
+        "key": "A",
+        "text": "csak a B-limfocitákra igaz"
+      },
+      {
+        "key": "B",
+        "text": "csak a T-limfocitákra igaz"
+      },
+      {
+        "key": "C",
+        "text": "mindkettőre igaz"
+      },
+      {
+        "key": "D",
+        "text": "egyikre sem igaz"
+      }
+    ],
+    "answer": "C",
+    "category": "felepites-mukodes",
+    "explanation": "Helyes: C. Minden vérsejt, így a B- és a T-limfociták is, a vörös csontvelő vérképző őssejtjeiből keletkezik; a különbség az érésük helyében van (B: csontvelő, T: csecsemőmirigy)."
+  },
+  "items": [
+    {
+      "id": "1",
+      "kind": "choice",
+      "prompt": "A csecsemőmirigyben (tímuszban) érnek éretté, ahol kiválogatódnak azok a sejtek, amelyek a szervezet saját anyagait támadnák.",
+      "options": [
+        {
+          "key": "A",
+          "text": "csak a B-limfocitákra igaz"
+        },
+        {
+          "key": "B",
+          "text": "csak a T-limfocitákra igaz"
+        },
+        {
+          "key": "C",
+          "text": "mindkettőre igaz"
+        },
+        {
+          "key": "D",
+          "text": "egyikre sem igaz"
+        }
+      ],
+      "answer": "B",
+      "category": "felepites-mukodes",
+      "explanation": "Helyes: B. A T-limfociták előalakjai a csontvelőből a csecsemőmirigybe vándorolnak; ott érnek, és ott pusztulnak el azok, amelyek a saját molekulákat felismernék. A B-limfociták a csontvelőben érnek.",
+      "wrongOptions": {
+        "A": "A B-limfociták a csontvelőben érnek, nem a csecsemőmirigyben.",
+        "C": "Csak a T-limfociták érnek a csecsemőmirigyben.",
+        "D": "A T-limfocitákra igaz (a T betű is a tímuszra utal)."
+      }
+    },
+    {
+      "id": "2",
+      "kind": "choice",
+      "prompt": "Aktiválódásuk után plazmasejtekké alakulnak, amelyek nagy mennyiségű ellenanyagot (antitestet) termelnek.",
+      "options": [
+        {
+          "key": "A",
+          "text": "csak a B-limfocitákra igaz"
+        },
+        {
+          "key": "B",
+          "text": "csak a T-limfocitákra igaz"
+        },
+        {
+          "key": "C",
+          "text": "mindkettőre igaz"
+        },
+        {
+          "key": "D",
+          "text": "egyikre sem igaz"
+        }
+      ],
+      "answer": "A",
+      "category": "felepites-mukodes",
+      "explanation": "Helyes: A. Az antigénnel találkozó (és segítő T-sejtektől jelet kapó) B-limfocita osztódni kezd, utódai plazmasejtekké alakulnak, amelyek ellenanyagot választanak ki a vérbe és a testnedvekbe – ez a humorális immunválasz.",
+      "wrongOptions": {
+        "B": "A T-limfociták nem termelnek ellenanyagot; a sejtes immunválaszt végzik (ölősejtek, segítő sejtek).",
+        "C": "Ellenanyagot csak a B-limfocitákból lett plazmasejtek termelnek.",
+        "D": "A B-limfocitákra igaz, tehát nem lehet „egyik sem”."
+      }
+    },
+    {
+      "id": "3",
+      "kind": "choice",
+      "prompt": "Sejthártyájukon olyan receptorok vannak, amelyek egyetlen meghatározott antigént (antigénrészletet) ismernek fel.",
+      "options": [
+        {
+          "key": "A",
+          "text": "csak a B-limfocitákra igaz"
+        },
+        {
+          "key": "B",
+          "text": "csak a T-limfocitákra igaz"
+        },
+        {
+          "key": "C",
+          "text": "mindkettőre igaz"
+        },
+        {
+          "key": "D",
+          "text": "egyikre sem igaz"
+        }
+      ],
+      "answer": "C",
+      "category": "fogalomhasznalat",
+      "explanation": "Helyes: C. Mindkét limfocitatípus antigénspecifikus: minden B- és T-sejt-klón egyféle receptort hordoz, amely csak egy bizonyos antigénrészlethez illeszkedik. Ezért adaptív (szerzett) az immunválaszuk.",
+      "wrongOptions": {
+        "A": "A T-limfocitáknak is antigénspecifikus receptoraik vannak.",
+        "B": "A B-limfociták sejthártyáján is van antigénfelismerő receptor (a hártyához kötött ellenanyag).",
+        "D": "Mindkettőre igaz – az antigénspecifikus felismerés a limfociták alapvető tulajdonsága."
+      }
+    },
+    {
+      "id": "4",
+      "kind": "choice",
+      "prompt": "Közülük kerülnek ki azok az ölősejtek (citotoxikus sejtek), amelyek a vírussal fertőzött és a daganatos sejteket közvetlenül elpusztítják.",
+      "options": [
+        {
+          "key": "A",
+          "text": "csak a B-limfocitákra igaz"
+        },
+        {
+          "key": "B",
+          "text": "csak a T-limfocitákra igaz"
+        },
+        {
+          "key": "C",
+          "text": "mindkettőre igaz"
+        },
+        {
+          "key": "D",
+          "text": "egyikre sem igaz"
+        }
+      ],
+      "answer": "B",
+      "category": "felepites-mukodes",
+      "explanation": "Helyes: B. A citotoxikus (ölő) T-limfociták felismerik a sejtfelszínen bemutatott idegen (vírus- vagy daganat-) antigént, és a sejtet elpusztítják – ez a sejtes immunválasz lényege.",
+      "wrongOptions": {
+        "A": "A B-limfociták nem ölnek közvetlenül, hanem ellenanyagot termelnek (plazmasejtként).",
+        "C": "Közvetlen sejtölésre csak a T-limfociták egy csoportja képes.",
+        "D": "A T-limfocitákra igaz."
+      }
+    },
+    {
+      "id": "5",
+      "kind": "choice",
+      "prompt": "Az elsődleges immunválasz során belőlük hosszú életű memóriasejtek is képződnek.",
+      "options": [
+        {
+          "key": "A",
+          "text": "csak a B-limfocitákra igaz"
+        },
+        {
+          "key": "B",
+          "text": "csak a T-limfocitákra igaz"
+        },
+        {
+          "key": "C",
+          "text": "mindkettőre igaz"
+        },
+        {
+          "key": "D",
+          "text": "egyikre sem igaz"
+        }
+      ],
+      "answer": "C",
+      "category": "szabalyozas-folyamat",
+      "explanation": "Helyes: C. B- és T-memóriasejtek is keletkeznek; ezek évekig fennmaradnak, és ugyanazzal az antigénnel való újabb találkozáskor gyorsabb, erősebb másodlagos választ indítanak. Ezen alapul a védőoltások hatása.",
+      "wrongOptions": {
+        "A": "T-memóriasejtek is képződnek, nem csak B-memóriasejtek.",
+        "B": "B-memóriasejtek is képződnek, ezek felelnek a gyors ellenanyag-termelésért a második fertőzéskor.",
+        "D": "Mindkettőre igaz – a memória az adaptív immunitás jellemzője."
+      }
+    },
+    {
+      "id": "6",
+      "kind": "choice",
+      "prompt": "Fagocitózissal bekebelezik és lizoszómáik enzimjeivel lebontják a baktériumokat.",
+      "options": [
+        {
+          "key": "A",
+          "text": "csak a B-limfocitákra igaz"
+        },
+        {
+          "key": "B",
+          "text": "csak a T-limfocitákra igaz"
+        },
+        {
+          "key": "C",
+          "text": "mindkettőre igaz"
+        },
+        {
+          "key": "D",
+          "text": "egyikre sem igaz"
+        }
+      ],
+      "answer": "D",
+      "category": "felepites-mukodes",
+      "explanation": "Helyes: D. A bekebelezést a falósejtek – a neutrofil granulociták és a makrofágok – végzik; ez a veleszületett (nem specifikus) védelem része. A limfociták nem fagocitálnak.",
+      "wrongOptions": {
+        "A": "A B-limfocita felismeri az antigént, de baktériumot nem kebelez be és nem bont le.",
+        "B": "A T-limfociták nem fagocitálnak, hanem jelzőmolekulákkal irányítanak, illetve fertőzött sejteket ölnek.",
+        "C": "A fagocitózis a granulociták és makrofágok feladata, egyik limfocitáé sem."
+      }
+    },
+    {
+      "id": "7",
+      "kind": "choice",
+      "prompt": "A HIV elsősorban ezek egyik csoportját, a segítő (helper) sejteket fertőzi meg.",
+      "options": [
+        {
+          "key": "A",
+          "text": "csak a B-limfocitákra igaz"
+        },
+        {
+          "key": "B",
+          "text": "csak a T-limfocitákra igaz"
+        },
+        {
+          "key": "C",
+          "text": "mindkettőre igaz"
+        },
+        {
+          "key": "D",
+          "text": "egyikre sem igaz"
+        }
+      ],
+      "answer": "B",
+      "category": "szabalyozas-folyamat",
+      "explanation": "Helyes: B. A HIV a segítő T-limfociták felszíni receptorához (CD4) kötődik, és ezeket a sejteket pusztítja. Mivel a segítő T-sejtek irányítják a B-sejtek és az ölő T-sejtek aktiválását, számuk csökkenése az egész immunrendszert legyengíti (AIDS).",
+      "wrongOptions": {
+        "A": "A HIV fő célsejtjei nem a B-limfociták; a B-sejtek működése csak közvetve romlik, mert nem kapnak segítséget.",
+        "C": "A segítő sejtek a T-limfociták közé tartoznak.",
+        "D": "A T-limfocitákra igaz."
+      }
+    },
+    {
+      "id": "8",
+      "kind": "choice",
+      "prompt": "Allergiás reakcióban hisztamint szabadítanak fel, ami értágulatot, duzzanatot és viszketést okoz.",
+      "options": [
+        {
+          "key": "A",
+          "text": "csak a B-limfocitákra igaz"
+        },
+        {
+          "key": "B",
+          "text": "csak a T-limfocitákra igaz"
+        },
+        {
+          "key": "C",
+          "text": "mindkettőre igaz"
+        },
+        {
+          "key": "D",
+          "text": "egyikre sem igaz"
+        }
+      ],
+      "answer": "D",
+      "category": "szabalyozas-folyamat",
+      "explanation": "Helyes: D. A hisztamint a hízósejtek és a bazofil granulociták szabadítják fel, amikor felszínükön az allergénhez kötődő ellenanyag (IgE) jelet ad. A B-limfociták az IgE-t termelik, de hisztamint nem.",
+      "wrongOptions": {
+        "A": "A B-limfociták (plazmasejtek) az allergiás ellenanyagot termelik, de nem ők szabadítják fel a hisztamint.",
+        "B": "A T-limfociták nem hisztamintermelő sejtek.",
+        "C": "Egyik limfocita sem szabadít fel hisztamint; ez a hízósejtek feladata."
+      }
+    },
+    {
+      "id": "9",
+      "kind": "choice",
+      "prompt": "Megtalálhatók a nyirokcsomókban, a lépben és a mandulákban.",
+      "options": [
+        {
+          "key": "A",
+          "text": "csak a B-limfocitákra igaz"
+        },
+        {
+          "key": "B",
+          "text": "csak a T-limfocitákra igaz"
+        },
+        {
+          "key": "C",
+          "text": "mindkettőre igaz"
+        },
+        {
+          "key": "D",
+          "text": "egyikre sem igaz"
+        }
+      ],
+      "answer": "C",
+      "category": "felepites-mukodes",
+      "explanation": "Helyes: C. A nyirokszervekben (nyirokcsomók, lép, mandulák, a bélfal nyirokszövete) B- és T-limfociták is nagy számban vannak – itt találkoznak a nyirokkal és a vérrel odaszállított antigénekkel. Fertőzéskor ezért duzzadnak meg a nyirokcsomók.",
+      "wrongOptions": {
+        "A": "A T-limfociták is megtalálhatók a nyirokszervekben.",
+        "B": "A B-limfociták is megtalálhatók a nyirokszervekben (pl. a nyirokcsomók tüszőiben).",
+        "D": "Mindkettőre igaz."
+      }
+    }
+  ],
+  "glossary": [],
+  "suggestedMinutes": 10
+}

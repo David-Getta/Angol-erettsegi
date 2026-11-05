@@ -1,0 +1,87 @@
+{
+  "schemaVersion": 1,
+  "id": "mat-wr-emelt-oszthatosag-indukcio-bizonyitas",
+  "subject": "matematika",
+  "revision": 1,
+  "level": "emelt",
+  "source": "generated",
+  "topic": "halmazok-logika",
+  "title": "II. rész: bizonyítások – oszthatóság, teljes indukció, indirekt bizonyítás",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "writing",
+  "type": "bizonyitas",
+  "taskNumber": 1,
+  "situation": "a) Bizonyítsa be, hogy bármely n egész szám esetén az n³ − n szám osztható 6-tal! (5 pont)\nb) Bizonyítsa be teljes indukcióval, hogy minden n pozitív egész számra\n1·2 + 2·3 + 3·4 + … + n·(n + 1) = n(n + 1)(n + 2)/3. (5 pont)\nc) Bizonyítsa be, hogy √3 irracionális szám! (6 pont)\n\nA bizonyítás minden lépését indokolja, a felhasznált tételeket, módszereket nevezze meg!",
+  "points": [
+    {
+      "id": "p1",
+      "text": "a) n³ − n szorzattá alakítása három egymást követő egész szám szorzatára, a 2-vel és a 3-mal való oszthatóság indoklása, a 6-tal való oszthatóság (5 pont)"
+    },
+    {
+      "id": "p2",
+      "text": "b) A teljes indukció: kezdőlépés (n = 1), indukciós feltevés, öröklődés (k → k + 1) algebrai átalakítással, következtetés (5 pont)"
+    },
+    {
+      "id": "p3",
+      "text": "c) Indirekt bizonyítás: a feltevés (√3 = p/q, egyszerűsíthetetlen tört), a 3-mal való oszthatóság levezetése p-re és q-ra, az ellentmondás és a következtetés (6 pont)"
+    }
+  ],
+  "suggestedMinutes": 35,
+  "usefulPhrases": [
+    {
+      "en": "n³ − n = (n − 1)·n·(n + 1)",
+      "hu": "Szorzattá alakítás kiemeléssel és az a² − b² = (a − b)(a + b) azonossággal."
+    },
+    {
+      "en": "k egymást követő egész közül pontosan egy osztható k-val",
+      "hu": "Ezért három szomszédos egész szorzata 3-mal, kettőé 2-vel osztható."
+    },
+    {
+      "en": "ha a | m és b | m, valamint (a; b) = 1, akkor a·b | m",
+      "hu": "Relatív prím osztók szorzata is osztó – csak relatív prímekre igaz!"
+    },
+    {
+      "en": "kezdőlépés – indukciós feltevés – öröklődés",
+      "hu": "A teljes indukció három kötelező lépése; mindhármat le kell írni."
+    },
+    {
+      "en": "Tegyük fel, hogy az állítás tagadása igaz …",
+      "hu": "Az indirekt bizonyítás nyitómondata; a végén ki kell mondani az ellentmondást."
+    },
+    {
+      "en": "ha p prím és p | a·b, akkor p | a vagy p | b",
+      "hu": "Prímszám alaptulajdonsága: p² 3-mal oszthatóságából p 3-mal oszthatósága."
+    },
+    {
+      "en": "∎ (q.e.d.)",
+      "hu": "A bizonyítás végének jelzése; előtte fogalmazd meg, mit láttál be."
+    }
+  ],
+  "checklistExtra": [
+    "Kimondtam a bizonyítandó állítást és a végén azt, hogy beláttam?",
+    "Megneveztem minden felhasznált tételt (pl. relatív prímek, prímszám tulajdonsága)?"
+  ],
+  "modelAnswer": {
+    "text": "a) Szorzattá alakítunk (kiemelés, majd az a² − b² = (a − b)(a + b) azonosság): n³ − n = n(n² − 1) = (n − 1)·n·(n + 1). Ez három egymást követő egész szám szorzata.\nKét egymást követő egész szám közül az egyik páros, ezért a szorzat osztható 2-vel. Három egymást követő egész szám 3-mal osztva különböző maradékot ad, így a 0, 1, 2 maradék mindegyike pontosan egyszer fordul elő: az egyik tényező osztható 3-mal, ezért a szorzat is osztható 3-mal.\nMivel a 2 és a 3 relatív prímek, és mindkettő osztja a szorzatot, a szorzatuk is osztja: a szorzat osztható 2·3 = 6-tal. Tehát n³ − n minden n egész számra osztható 6-tal. ∎\n\nb) Kezdőlépés (n = 1): a bal oldal 1·2 = 2, a jobb oldal 1·2·3/3 = 2, az állítás igaz.\nIndukciós feltevés: tegyük fel, hogy valamely k pozitív egészre igaz az állítás: 1·2 + 2·3 + … + k(k + 1) = k(k + 1)(k + 2)/3.\nÖröklődés: belátjuk, hogy ekkor k + 1-re is igaz, azaz 1·2 + … + k(k + 1) + (k + 1)(k + 2) = (k + 1)(k + 2)(k + 3)/3.\nA bal oldal első k tagjának összegére az indukciós feltevést alkalmazzuk, majd kiemeljük az (k + 1)(k + 2) tényezőt:\nk(k + 1)(k + 2)/3 + (k + 1)(k + 2) = (k + 1)(k + 2)·(k/3 + 1) = (k + 1)(k + 2)(k + 3)/3,\nami éppen a jobb oldal. Az állítás tehát n = 1-re igaz, és ha valamely k-ra igaz, akkor k + 1-re is; a teljes indukció elve szerint így minden n pozitív egész számra igaz. ∎\n\nc) Indirekt bizonyítást alkalmazunk. Tegyük fel, hogy √3 racionális, azaz √3 = p/q, ahol p és q pozitív egészek, és a tört tovább nem egyszerűsíthető (p és q relatív prímek).\nNégyzetre emelve 3 = p²/q², azaz p² = 3q². Így p² osztható 3-mal. Mivel a 3 prímszám, és osztja a p·p szorzatot, osztja valamelyik tényezőt is, tehát p osztható 3-mal: p = 3m (m pozitív egész).\nBehelyettesítve 9m² = 3q², azaz q² = 3m². Ugyanezzel az érveléssel q² és így q is osztható 3-mal.\nTehát p és q is osztható 3-mal, ami ellentmond annak, hogy a p/q tört nem egyszerűsíthető. Az ellentmondás azt mutatja, hogy a kiinduló feltevés hamis volt, vagyis √3 irracionális. ∎",
+    "pointsCovered": [
+      {
+        "id": "p1",
+        "quote": "Mivel a 2 és a 3 relatív prímek, és mindkettő osztja a szorzatot, a szorzatuk is osztja: a szorzat osztható 2·3 = 6-tal."
+      },
+      {
+        "id": "p2",
+        "quote": "k(k + 1)(k + 2)/3 + (k + 1)(k + 2) = (k + 1)(k + 2)·(k/3 + 1) = (k + 1)(k + 2)(k + 3)/3"
+      },
+      {
+        "id": "p3",
+        "quote": "Tehát p és q is osztható 3-mal, ami ellentmond annak, hogy a p/q tört nem egyszerűsíthető."
+      }
+    ],
+    "notes": [
+      "Indoklás: minden lépés mögött ott a megnevezett tétel vagy elv (nevezetes azonosság, maradékos osztás, relatív prím osztók szorzata, prímszám alaptulajdonsága, teljes indukció elve) – bizonyítási feladatnál enélkül nem jár teljes pont.",
+      "Szerkezet: a b) részben a kezdőlépés, az indukciós feltevés és az öröklődés külön jelölve szerepel, a c) részben a feltevés, az ellentmondás és a következtetés is ki van mondva.",
+      "Pontosság: az a) részben szerepel, hogy a 2 és a 3 relatív prímek – enélkül a 6-tal való oszthatóság nem következne (pl. 2 és 4 osztója a 4-nek, de 8 nem); a c) részben a „nem egyszerűsíthető” feltétel adja az ellentmondást."
+    ]
+  }
+}

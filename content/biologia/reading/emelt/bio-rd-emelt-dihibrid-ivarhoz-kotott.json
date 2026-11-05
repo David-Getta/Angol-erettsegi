@@ -1,0 +1,173 @@
+{
+  "schemaVersion": 1,
+  "id": "bio-rd-emelt-dihibrid-ivarhoz-kotott",
+  "subject": "biologia",
+  "revision": 1,
+  "level": "emelt",
+  "source": "generated",
+  "topic": "genetika",
+  "title": "Független és ivarhoz kötött öröklődés – rövid számítás",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "reading",
+  "type": "szamitas-rovid",
+  "instructions": "Oldja meg az alábbi genetikai feladatokat a leírt öröklésmenetek alapján! Csak a végeredményt (számot, törtet vagy százalékot) írja be. A 0. feladat a példa.",
+  "passage": {
+    "blocks": [
+      {
+        "heading": "Paradicsom",
+        "text": "A paradicsom termésének piros színe (R allél) domináns a sárga színnel (r) szemben, a magas szár (M allél) domináns az alacsony szárral (m) szemben. A két gén különböző kromoszómapáron található, ezért egymástól függetlenül öröklődik."
+      },
+      {
+        "heading": "Színtévesztés",
+        "text": "Az emberben a vörös–zöld színtévesztést recesszív allél okozza, amely az X kromoszómán található; az Y kromoszómán ennek a génnek nincs megfelelője. Jelölés: X^D = ép (színlátó) allél, X^d = színtévesztést okozó allél."
+      }
+    ]
+  },
+  "example": {
+    "id": "0",
+    "kind": "text",
+    "prompt": "Hányféle, genetikailag különböző ivarsejtet képezhet egy RrMm genotípusú paradicsomnövény?",
+    "answer": [
+      "4",
+      "négy",
+      "4-féle",
+      "négyféle"
+    ],
+    "category": "genetikai-szamitas",
+    "explanation": "Helyes: 4. A független öröklődés miatt a meiózisban a két génpár allélei egymástól függetlenül kerülnek az ivarsejtekbe: RM, Rm, rM és rm – egyenként 1/4 valószínűséggel.",
+    "maxWords": 2
+  },
+  "items": [
+    {
+      "id": "1",
+      "kind": "text",
+      "prompt": "Két RrMm genotípusú növényt keresztezünk. Az utódok hányad része lesz sárga termésű és alacsony szárú?",
+      "answer": [
+        "1/16",
+        "6,25%",
+        "6,25 %",
+        "6.25%",
+        "6,25",
+        "6.25",
+        "0,0625",
+        "0.0625"
+      ],
+      "category": "genetikai-szamitas",
+      "explanation": "Helyes: 1/16. Sárga és alacsony csak az rrmm genotípusú utód lehet: P(rr) = 1/4 és P(mm) = 1/4, a két gén független, ezért 1/4 · 1/4 = 1/16.",
+      "maxWords": 2
+    },
+    {
+      "id": "2",
+      "kind": "text",
+      "prompt": "Ugyanebben a keresztezésben (RrMm × RrMm) az utódok hányad része lesz piros termésű és magas szárú?",
+      "answer": [
+        "9/16",
+        "56,25%",
+        "56,25 %",
+        "56.25%",
+        "56,25",
+        "56.25",
+        "0,5625",
+        "0.5625"
+      ],
+      "category": "genetikai-szamitas",
+      "explanation": "Helyes: 9/16. Piros: RR vagy Rr, valószínűsége 3/4; magas: MM vagy Mm, szintén 3/4. A két esemény független: 3/4 · 3/4 = 9/16 (ez a 9 : 3 : 3 : 1 arány első tagja).",
+      "maxWords": 2
+    },
+    {
+      "id": "3",
+      "kind": "text",
+      "prompt": "Hányféle különböző genotípusú utód jöhet létre az RrMm × RrMm keresztezésben?",
+      "answer": [
+        "9",
+        "kilenc",
+        "9-féle",
+        "kilencféle"
+      ],
+      "category": "genetikai-szamitas",
+      "explanation": "Helyes: 9. Az Rr × Rr keresztezésből háromféle genotípus (RR, Rr, rr), az Mm × Mm keresztezésből szintén háromféle (MM, Mm, mm) jöhet létre; ezek minden kombinációja lehetséges: 3 · 3 = 9.",
+      "maxWords": 2
+    },
+    {
+      "id": "4",
+      "kind": "text",
+      "prompt": "RrMm genotípusú növényt rrmm genotípusúval keresztezünk (tesztelő keresztezés). Az utódok hány százaléka lesz sárga termésű és magas szárú?",
+      "answer": [
+        "25",
+        "25%",
+        "25 %",
+        "1/4",
+        "0,25",
+        "0.25"
+      ],
+      "category": "genetikai-szamitas",
+      "explanation": "Helyes: 25%. A heterozigóta szülő négyféle ivarsejtet (RM, Rm, rM, rm) ad egyenlő arányban, a tesztelő csak rm-et; az utódok aránya 1 : 1 : 1 : 1. Sárga és magas az rrMm utód, ez a négy típus egyike: 1/4 = 25%.",
+      "maxWords": 2
+    },
+    {
+      "id": "5",
+      "kind": "text",
+      "prompt": "Egy RRMm és egy rrMm genotípusú növényt keresztezünk. Az utódok hány százaléka lesz piros termésű és alacsony szárú?",
+      "answer": [
+        "25",
+        "25%",
+        "25 %",
+        "1/4",
+        "0,25",
+        "0.25"
+      ],
+      "category": "genetikai-szamitas",
+      "explanation": "Helyes: 25%. Az RR × rr keresztezés minden utóda Rr, tehát piros (valószínűség 1). Az Mm × Mm keresztezésben az alacsony (mm) utódok aránya 1/4. Együtt: 1 · 1/4 = 1/4 = 25%.",
+      "maxWords": 2
+    },
+    {
+      "id": "6",
+      "kind": "text",
+      "prompt": "Egy színlátó, hordozó nő (X^D X^d) és egy színlátó férfi (X^D Y) fiúgyermekeinek hány százaléka lesz várhatóan színtévesztő?",
+      "answer": [
+        "50",
+        "50%",
+        "50 %",
+        "1/2",
+        "0,5",
+        "0.5"
+      ],
+      "category": "genetikai-szamitas",
+      "explanation": "Helyes: 50%. A fiú az apjától az Y, az anyjától az egyik X kromoszómát kapja. Az anya fele valószínűséggel X^d-t ad, ekkor a fiú (X^d Y) színtévesztő, mert Y kromoszómáján nincs ép allél, amely elfedné a recesszívet.",
+      "maxWords": 2
+    },
+    {
+      "id": "7",
+      "kind": "text",
+      "prompt": "Mekkora a valószínűsége, hogy ugyanennek a párnak (X^D X^d × X^D Y) a következő gyermeke színtévesztő lány lesz?",
+      "answer": [
+        "0",
+        "0%",
+        "0 %",
+        "nulla"
+      ],
+      "category": "genetikai-szamitas",
+      "explanation": "Helyes: 0. A lány az apjától mindig az apa X kromoszómáját kapja, ez pedig X^D (az apa színlátó). Ezért minden lány legalább egy ép allélt hordoz, és színlátó lesz (fele részük hordozó).",
+      "maxWords": 2
+    },
+    {
+      "id": "8",
+      "kind": "text",
+      "prompt": "Egy hordozó nő (X^D X^d) és egy színtévesztő férfi (X^d Y) gyermekeinek – nemtől függetlenül – hány százaléka lesz várhatóan színtévesztő?",
+      "answer": [
+        "50",
+        "50%",
+        "50 %",
+        "1/2",
+        "0,5",
+        "0.5"
+      ],
+      "category": "genetikai-szamitas",
+      "explanation": "Helyes: 50%. A lehetséges utódok egyenlő valószínűséggel: X^D X^d (színlátó, hordozó lány), X^d X^d (színtévesztő lány), X^D Y (színlátó fiú), X^d Y (színtévesztő fiú). A négyből kettő színtévesztő: 2/4 = 50%.",
+      "maxWords": 2
+    }
+  ],
+  "glossary": [],
+  "suggestedMinutes": 12
+}

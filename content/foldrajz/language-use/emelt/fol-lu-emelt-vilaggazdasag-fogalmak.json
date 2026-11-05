@@ -1,0 +1,176 @@
+{
+  "schemaVersion": 1,
+  "id": "fol-lu-emelt-vilaggazdasag-fogalmak",
+  "subject": "foldrajz",
+  "revision": 1,
+  "level": "emelt",
+  "source": "generated",
+  "topic": "vilaggazdasag",
+  "title": "Világgazdasági és pénzügyi fogalmak",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "language-use",
+  "type": "fogalom-meghatarozas",
+  "instructions": "Nevezze meg a meghatározásokhoz tartozó fogalmakat, illetve válassza ki a helyes választ! A 0. a megoldott példa.",
+  "example": {
+    "id": "0",
+    "kind": "text",
+    "prompt": "Egy ország területén egy év alatt előállított végső termékek és szolgáltatások összértéke.",
+    "answer": [
+      "GDP",
+      "bruttó hazai termék"
+    ],
+    "category": "fogalomhasznalat",
+    "explanation": "GDP (bruttó hazai termék): területi elvű mutató – mindent beszámít, amit az ország területén állítanak elő, akár hazai, akár külföldi tulajdonú vállalat termeli.",
+    "maxWords": 3
+  },
+  "items": [
+    {
+      "id": "1",
+      "kind": "text",
+      "prompt": "A GDP-ből levonják a külföldre kifizetett, és hozzáadják a külföldről kapott jövedelmeket; az ország lakóinak jövedelmét mutatja.",
+      "answer": [
+        "GNI",
+        "bruttó nemzeti jövedelem",
+        "GNP",
+        "bruttó nemzeti termék"
+      ],
+      "category": "fogalomhasznalat",
+      "explanation": "GNI (bruttó nemzeti jövedelem, korábban GNP): tulajdonosi elvű mutató. Ahol sok a külföldi tulajdonú vállalat és a profit kiáramlik (pl. Magyarország), ott a GNI kisebb a GDP-nél.",
+      "maxWords": 3
+    },
+    {
+      "id": "2",
+      "kind": "text",
+      "prompt": "Az árszínvonal általános és tartós emelkedése, a pénz vásárlóerejének csökkenése.",
+      "answer": [
+        "infláció",
+        "pénzromlás"
+      ],
+      "category": "fogalomhasznalat",
+      "explanation": "Infláció: ha az árak általában és tartósan emelkednek, ugyanannyi pénzért kevesebbet lehet venni. Ellentéte a defláció (tartós árcsökkenés).",
+      "maxWords": 2
+    },
+    {
+      "id": "3",
+      "kind": "text",
+      "prompt": "Két ország pénzének egymáshoz viszonyított értéke, átváltási aránya.",
+      "answer": [
+        "árfolyam",
+        "valutaárfolyam",
+        "devizaárfolyam"
+      ],
+      "category": "fogalomhasznalat",
+      "explanation": "Árfolyam: megmutatja, egy valuta egységéért mennyit kell fizetni egy másik valutában (pl. hány forint egy euró). A forint gyengülése az exportnak kedvez, az importot drágítja.",
+      "maxWords": 2
+    },
+    {
+      "id": "4",
+      "kind": "choice",
+      "prompt": "Mi a vásárlóerő-paritáson (PPP) számított GDP lényege?",
+      "options": [
+        {
+          "key": "A",
+          "text": "A GDP átszámításakor figyelembe veszik az országok eltérő árszínvonalát."
+        },
+        {
+          "key": "B",
+          "text": "A GDP-t mindig a hivatalos dollárárfolyamon számítják át."
+        },
+        {
+          "key": "C",
+          "text": "Csak az exportra termelt javak értékét számítják bele."
+        },
+        {
+          "key": "D",
+          "text": "A GDP-t elosztják az ország népességével."
+        }
+      ],
+      "answer": "A",
+      "category": "fogalomhasznalat",
+      "explanation": "Helyes: A. Az alacsonyabb árszínvonalú országokban ugyanannyi pénzért több terméket lehet venni; a PPP szerinti GDP ezt kiigazítja, így az életszínvonal jobban összehasonlítható.",
+      "wrongOptions": {
+        "B": "A hivatalos árfolyamon számított GDP éppen nem veszi figyelembe az árszínvonal-különbségeket; a PPP ezt javítja.",
+        "C": "A GDP minden végső terméket és szolgáltatást tartalmaz, nem csak az exportot.",
+        "D": "A népességgel való osztás az egy főre jutó GDP, ami független attól, hogy árfolyamon vagy PPP-n számolunk."
+      }
+    },
+    {
+      "id": "5",
+      "kind": "text",
+      "prompt": "Az a helyzet, amikor egy ország kivitelének (exportjának) értéke meghaladja behozatalának (importjának) értékét.",
+      "answer": [
+        "aktív külkereskedelmi mérleg",
+        "külkereskedelmi többlet",
+        "aktív kereskedelmi mérleg",
+        "pozitív külkereskedelmi mérleg",
+        "kereskedelmi többlet"
+      ],
+      "category": "fogalomhasznalat",
+      "explanation": "Aktív külkereskedelmi mérleg (többlet): export > import. Ha az import nagyobb, passzív a mérleg (hiány).",
+      "maxWords": 3
+    },
+    {
+      "id": "6",
+      "kind": "text",
+      "prompt": "Több országban leányvállalatokkal működő, a világpiacra termelő nagyvállalat.",
+      "answer": [
+        "multinacionális vállalat",
+        "transznacionális vállalat",
+        "multinacionális cég",
+        "multi",
+        "transznacionális társaság",
+        "TNC",
+        "MNC"
+      ],
+      "category": "fogalomhasznalat",
+      "explanation": "Multinacionális (transznacionális) vállalat: központja egy országban van, de termelő és értékesítő egységei sok országban; a globalizáció legfontosabb szereplői (pl. az autóipar nagy cégei).",
+      "maxWords": 3
+    },
+    {
+      "id": "7",
+      "kind": "choice",
+      "prompt": "Melyik intézmény fő feladata a fizetési nehézségekkel küzdő országok átmeneti hitelezése és a nemzetközi pénzügyi stabilitás őrzése?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Nemzetközi Valutaalap (IMF)"
+        },
+        {
+          "key": "B",
+          "text": "Kereskedelmi Világszervezet (WTO)"
+        },
+        {
+          "key": "C",
+          "text": "Kőolaj-exportáló Országok Szervezete (OPEC)"
+        },
+        {
+          "key": "D",
+          "text": "Észak-atlanti Szerződés Szervezete (NATO)"
+        }
+      ],
+      "answer": "A",
+      "category": "tarsadalmi-folyamat",
+      "explanation": "Helyes: IMF. A Nemzetközi Valutaalap (székhelye Washington) rövid távú hiteleket nyújt a fizetésimérleg-válságba került országoknak, cserébe gazdaságpolitikai feltételeket szab.",
+      "wrongOptions": {
+        "B": "A WTO a nemzetközi kereskedelem szabályait (vámok, kereskedelmi viták) felügyeli, nem hitelez.",
+        "C": "Az OPEC kőolaj-exportáló országok kartellje, a kitermelés és az olajár befolyásolása a célja.",
+        "D": "A NATO katonai-védelmi szövetség, nem pénzügyi intézmény."
+      }
+    },
+    {
+      "id": "8",
+      "kind": "text",
+      "prompt": "Szabályozott piac, ahol részvényekkel, kötvényekkel és más értékpapírokkal kereskednek, és az árak a kereslet és a kínálat szerint alakulnak.",
+      "answer": [
+        "tőzsde",
+        "értéktőzsde",
+        "értékpapírtőzsde"
+      ],
+      "category": "fogalomhasznalat",
+      "explanation": "Tőzsde (értéktőzsde): a legnagyobbak New Yorkban, Londonban, Tokióban működnek; a részvényárfolyamok a vállalatok és a gazdaság várható teljesítményét tükrözik.",
+      "maxWords": 2
+    }
+  ],
+  "suggestedMinutes": 8
+}

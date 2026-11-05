@@ -1,0 +1,139 @@
+{
+  "schemaVersion": 1,
+  "id": "dig-rd-kozep-tablazat-fuggvenyek",
+  "subject": "digitalis-kultura",
+  "revision": 1,
+  "level": "kozep",
+  "source": "generated",
+  "topic": "tablazatkezeles",
+  "title": "Táblázatkezelő függvények és hivatkozások",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "reading",
+  "type": "rovid-valasz",
+  "instructions": "Írja be a kérdésre válaszoló függvény nevét vagy a kért képletet! A függvénynek a magyar és az angol nevét is megadhatja (pl. SZUM vagy SUM). A 0. a példa.",
+  "example": {
+    "id": "0",
+    "kind": "text",
+    "prompt": "Melyik függvény adja meg egy tartomány legnagyobb értékét?",
+    "answer": [
+      "MAX",
+      "MAX()",
+      "=MAX()"
+    ],
+    "category": "kepletek-fuggvenyek",
+    "explanation": "MAX (angolul is MAX): a megadott tartomány legnagyobb számértékét adja, pl. =MAX(B2:B20). A legkisebb értéket a MIN függvény adja.",
+    "maxWords": 2
+  },
+  "items": [
+    {
+      "id": "1",
+      "kind": "text",
+      "prompt": "Melyik függvénnyel adhatjuk össze egy tartomány összes számát?",
+      "answer": [
+        "SZUM",
+        "SUM",
+        "SZUM()",
+        "SUM()"
+      ],
+      "category": "kepletek-fuggvenyek",
+      "explanation": "SZUM (angolul SUM), pl. =SZUM(C2:C31) / =SUM(C2:C31). Az összeadást nem kézzel (=C2+C3+…) írjuk, mert a függvény hosszabb tartománynál is áttekinthető és nem marad ki cella.",
+      "maxWords": 2
+    },
+    {
+      "id": "2",
+      "kind": "text",
+      "prompt": "Melyik függvény számítja ki a számok számtani átlagát?",
+      "answer": [
+        "ÁTLAG",
+        "AVERAGE",
+        "ÁTLAG()",
+        "AVERAGE()"
+      ],
+      "category": "kepletek-fuggvenyek",
+      "explanation": "ÁTLAG (angolul AVERAGE): a tartomány számainak összege osztva a számok darabszámával, pl. =ÁTLAG(D2:D16) / =AVERAGE(D2:D16). Az üres és a szöveges cellákat nem számolja bele.",
+      "maxWords": 2
+    },
+    {
+      "id": "3",
+      "kind": "text",
+      "prompt": "Melyik függvény számolja meg, hány cella felel meg egy feltételnek (pl. hány tanuló kapott 5-öst)?",
+      "answer": [
+        "DARABTELI",
+        "COUNTIF",
+        "DARABTELI()",
+        "COUNTIF()"
+      ],
+      "category": "kepletek-fuggvenyek",
+      "explanation": "DARABTELI (angolul COUNTIF): =DARABTELI(E2:E30;5) / =COUNTIF(E2:E30,5). A DARAB csak a számokat tartalmazó cellákat számolja feltétel nélkül, a SZUMHA pedig összead, nem számol.",
+      "maxWords": 2
+    },
+    {
+      "id": "4",
+      "kind": "text",
+      "prompt": "Melyik függvénnyel írathatjuk ki egy feltételtől függően vagy az „átment”, vagy a „bukott” szöveget?",
+      "answer": [
+        "HA",
+        "IF",
+        "HA()",
+        "IF()"
+      ],
+      "category": "kepletek-fuggvenyek",
+      "explanation": "HA (angolul IF): =HA(B2>=25;\"átment\";\"bukott\") / =IF(B2>=25,\"átment\",\"bukott\"). Az első argumentum a feltétel, a második az érték, ha igaz, a harmadik, ha hamis. A magyar Excel pontosvesszővel, az angol vesszővel választja el az argumentumokat.",
+      "maxWords": 2
+    },
+    {
+      "id": "5",
+      "kind": "text",
+      "prompt": "A C2 cellában a =B2*$F$1 képlet áll. Mi lesz a képlet a C3 cellában, ha a C2 tartalmát egy cellával lejjebb másoljuk?",
+      "answer": [
+        "=B3*$F$1",
+        "B3*$F$1"
+      ],
+      "category": "kepletek-fuggvenyek",
+      "explanation": "=B3*$F$1. Lefelé másoláskor a relatív hivatkozás sorszáma eggyel nő (B2 → B3), a $ jellel rögzített $F$1 abszolút hivatkozás viszont nem változik – ezért használunk abszolút hivatkozást egy közös szorzóra (pl. árfolyam, áfakulcs).",
+      "maxWords": 2
+    },
+    {
+      "id": "6",
+      "kind": "text",
+      "prompt": "Hogyan írjuk az A1 cellára mutató hivatkozást, ha másoláskor sem az oszlopa, sem a sora nem változhat?",
+      "answer": [
+        "$A$1"
+      ],
+      "category": "kepletek-fuggvenyek",
+      "explanation": "$A$1 (abszolút hivatkozás): a $ az oszlop- és a sorazonosítót is rögzíti. A $A1 csak az oszlopot, az A$1 csak a sort rögzíti (vegyes hivatkozás). Szerkesztés közben az F4 billentyűvel lehet váltogatni a változatokat.",
+      "maxWords": 1
+    },
+    {
+      "id": "7",
+      "kind": "text",
+      "prompt": "Melyik függvény kerekít egy számot megadott számú tizedesjegyre (pl. két tizedesjegyre)?",
+      "answer": [
+        "KEREKÍTÉS",
+        "ROUND",
+        "KEREKÍTÉS()",
+        "ROUND()"
+      ],
+      "category": "kepletek-fuggvenyek",
+      "explanation": "KEREKÍTÉS (angolul ROUND): =KEREKÍTÉS(A2;2) / =ROUND(A2,2). Ez valóban megváltoztatja az értéket; a cellaformátummal beállított tizedesjegy csak a megjelenítést módosítja, a számolás a pontos értékkel folyik.",
+      "maxWords": 2
+    },
+    {
+      "id": "8",
+      "kind": "text",
+      "prompt": "Melyik függvény adja meg, hány SZÁMOT tartalmazó cella van egy tartományban?",
+      "answer": [
+        "DARAB",
+        "COUNT",
+        "DARAB()",
+        "COUNT()"
+      ],
+      "category": "kepletek-fuggvenyek",
+      "explanation": "DARAB (angolul COUNT): csak a számot (dátumot) tartalmazó cellákat számolja. A DARAB2 (COUNTA) minden nem üres cellát megszámol, a szövegeseket is; a DARABÜRES (COUNTBLANK) az üreseket.",
+      "maxWords": 2
+    }
+  ],
+  "glossary": [],
+  "suggestedMinutes": 8
+}

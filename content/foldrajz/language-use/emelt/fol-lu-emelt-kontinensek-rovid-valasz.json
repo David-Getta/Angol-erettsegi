@@ -1,0 +1,151 @@
+{
+  "schemaVersion": 1,
+  "id": "fol-lu-emelt-kontinensek-rovid-valasz",
+  "subject": "foldrajz",
+  "revision": 1,
+  "level": "emelt",
+  "source": "generated",
+  "topic": "kontinensek",
+  "title": "Európán kívüli országok és tájak – rövid válaszok",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "language-use",
+  "type": "rovid-valasz",
+  "instructions": "Válaszoljon röviden a kérdésekre (egy-két szó), illetve válassza ki a helyes választ! A 0. a megoldott példa.",
+  "example": {
+    "id": "0",
+    "kind": "text",
+    "prompt": "Melyik országban működik a Három-szoros-gát, a Föld legnagyobb teljesítményű vízerőműve?",
+    "answer": [
+      "Kína",
+      "Kínai Népköztársaság"
+    ],
+    "category": "orszag-varos",
+    "explanation": "Kína: a Jangce folyón épült Három-szoros-gát (2012 óta teljes kapacitással) a legnagyobb teljesítményű vízerőmű; árvízvédelmi és hajózási célokat is szolgál.",
+    "maxWords": 3
+  },
+  "items": [
+    {
+      "id": "1",
+      "kind": "text",
+      "prompt": "Melyik hideg tengeráramlás járul hozzá az Atacama-sivatag szárazságához Peru és Chile partjainál?",
+      "answer": [
+        "Humboldt-áramlás",
+        "Humboldt-áramlat",
+        "Peru-áramlás",
+        "Perui-áramlás",
+        "Humboldt"
+      ],
+      "category": "termeszeti-folyamat",
+      "explanation": "Humboldt-áramlás (Peru-áramlás): a hideg víz alulról hűti a levegőt, ezért stabil a légrétegződés, nem alakul ki feláramlás és csapadék – az Atacama a Föld egyik legszárazabb sivataga.",
+      "maxWords": 2
+    },
+    {
+      "id": "2",
+      "kind": "text",
+      "prompt": "Melyik ország termeli a világon a legtöbb kávét?",
+      "answer": [
+        "Brazília"
+      ],
+      "category": "orszag-varos",
+      "explanation": "Brazília: a Brazil-felföld délkeleti részének (São Paulo, Minas Gerais) trópusi éghajlata és termékeny vörös talaja kedvez a kávéültetvényeknek; a világ kávétermelésének kb. harmadát adja.",
+      "maxWords": 1
+    },
+    {
+      "id": "3",
+      "kind": "text",
+      "prompt": "Hogyan nevezik az USA középnyugati, kukorica- és szójatermesztésre, valamint sertéstartásra szakosodott mezőgazdasági övezetét?",
+      "answer": [
+        "kukoricaöv",
+        "kukorica-öv",
+        "Corn Belt",
+        "kukoricaövezet"
+      ],
+      "category": "tarsadalmi-folyamat",
+      "explanation": "Kukoricaöv (Corn Belt): a Nagy-tavaktól délre, a Préri keleti részén; a mezőségi talaj és a nyári csapadék kedvez a kukoricának, amelyet nagyrészt takarmányként használnak fel.",
+      "maxWords": 2
+    },
+    {
+      "id": "4",
+      "kind": "text",
+      "prompt": "Melyik ország a Föld legnépesebb országa 2023 óta?",
+      "answer": [
+        "India"
+      ],
+      "category": "orszag-varos",
+      "explanation": "India: az ENSZ becslése szerint 2023-ban India népessége (kb. 1,43 milliárd fő) meghaladta Kínáét; Kína népessége már csökken, Indiáé még nő.",
+      "maxWords": 1
+    },
+    {
+      "id": "5",
+      "kind": "text",
+      "prompt": "Melyik afrikai ország fővárosa Abuja?",
+      "answer": [
+        "Nigéria"
+      ],
+      "category": "orszag-varos",
+      "explanation": "Nigéria: 1991-ben a túlzsúfolt, tengerparti Lagosból az ország belsejében, tervezett városként épült Abujába költözött a főváros.",
+      "maxWords": 1
+    },
+    {
+      "id": "6",
+      "kind": "text",
+      "prompt": "Melyik folyók közös deltavidékén fekszik Banglades nagy része?",
+      "answer": [
+        "Gangesz–Brahmaputra",
+        "Gangesz és Brahmaputra",
+        "Gangesz és a Brahmaputra",
+        "Gangesz",
+        "Brahmaputra"
+      ],
+      "category": "helymeghatarozas",
+      "explanation": "A Gangesz és a Brahmaputra: a Föld legnagyobb deltáját építik; a monszun idején rendszeresek az áradások, a tengerszint emelkedése és a ciklonok különösen veszélyeztetik.",
+      "maxWords": 4
+    },
+    {
+      "id": "7",
+      "kind": "text",
+      "prompt": "Melyik japán szigeten fekszik Tokió, Oszaka és Nagoja is?",
+      "answer": [
+        "Honsú",
+        "Honshu",
+        "Hondo"
+      ],
+      "category": "helymeghatarozas",
+      "explanation": "Honsú: Japán legnagyobb és legnépesebb szigete; csendes-óceáni partvidékén húzódik a Tokió–Nagoja–Oszaka városi-ipari öv (megalopolisz).",
+      "maxWords": 1
+    },
+    {
+      "id": "8",
+      "kind": "choice",
+      "prompt": "Melyik ország tartozik a gyors, exportorientált iparosításáról ismert „ázsiai kistigrisek” közé?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Dél-Korea"
+        },
+        {
+          "key": "B",
+          "text": "Mongólia"
+        },
+        {
+          "key": "C",
+          "text": "Afganisztán"
+        },
+        {
+          "key": "D",
+          "text": "Laosz"
+        }
+      ],
+      "answer": "A",
+      "category": "tarsadalmi-folyamat",
+      "explanation": "Helyes: Dél-Korea. Tajvannal, Hongkonggal és Szingapúrral együtt az 1960-as évektől olcsó munkaerőre és exportra épülő iparosítással zárkózott fel; ma fejlett, csúcstechnológiai ipar jellemzi (elektronika, hajó- és autógyártás).",
+      "wrongOptions": {
+        "B": "Mongólia szárazföld belsejében fekvő, ritkán lakott, bányászatra és pásztorkodásra épülő gazdaság.",
+        "C": "Afganisztán a Föld egyik legszegényebb, háborúk sújtotta, mezőgazdasági országa.",
+        "D": "Laosz tengerparttal nem rendelkező, főként mezőgazdasági délkelet-ázsiai ország, nem tartozik a kistigrisek közé."
+      }
+    }
+  ],
+  "suggestedMinutes": 8
+}

@@ -1,0 +1,91 @@
+{
+  "schemaVersion": 1,
+  "id": "dig-rd-emelt-weblap-publikalas-igaz-hamis",
+  "subject": "digitalis-kultura",
+  "revision": 1,
+  "level": "emelt",
+  "source": "generated",
+  "topic": "online-kommunikacio",
+  "title": "Weblapkészítés és online publikálás",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "reading",
+  "type": "igaz-hamis",
+  "instructions": "Döntse el, hogy az állítás igaz (T) vagy hamis (F)! A 0. a példa.",
+  "example": {
+    "id": "0",
+    "kind": "tf",
+    "prompt": "A HTML <img> elemének alt attribútuma adja meg a kép helyett megjelenő, illetve a képernyőolvasó által felolvasott helyettesítő szöveget.",
+    "answer": "T",
+    "category": "prezentacio-weblap-hiba",
+    "explanation": "Igaz. Az alt szöveg akkor jelenik meg, ha a kép nem töltődik be, és a látássérült felhasználók képernyőolvasója is ezt olvassa fel – ezért a vizsgán is kérik."
+  },
+  "items": [
+    {
+      "id": "1",
+      "kind": "tf",
+      "prompt": "A CSS color tulajdonsága az elem háttérszínét állítja be.",
+      "answer": "F",
+      "category": "prezentacio-weblap-hiba",
+      "explanation": "Hamis. A color a szöveg (előtér) színe; a háttérszínt a background-color tulajdonság állítja be, pl. body { background-color: #f4f1ea; }."
+    },
+    {
+      "id": "2",
+      "kind": "tf",
+      "prompt": "Relatív hivatkozásnál (pl. src=\"kepek/to.jpg\") az elérési utat a hivatkozó HTML-fájl mappájától kell érteni.",
+      "answer": "T",
+      "category": "prezentacio-weblap-hiba",
+      "explanation": "Igaz. A kepek/to.jpg a HTML-fájl mellett lévő kepek mappában lévő képet jelenti. Ezért kell a weblapot a képekkel együtt, ugyanabban a mappaszerkezetben feltölteni."
+    },
+    {
+      "id": "3",
+      "kind": "tf",
+      "prompt": "A HTML <br> eleme új bekezdést kezd.",
+      "answer": "F",
+      "category": "prezentacio-weblap-hiba",
+      "explanation": "Hamis. A <br> csak sortörés a bekezdésen belül; bekezdést a <p>…</p> elem hoz létre (amelyhez térköz is tartozik)."
+    },
+    {
+      "id": "4",
+      "kind": "tf",
+      "prompt": "A CSS-ben az osztályszelektor ponttal (pl. .kiemelt), az azonosító-szelektor kettőskereszttel (pl. #fejlec) kezdődik.",
+      "answer": "T",
+      "category": "prezentacio-weblap-hiba",
+      "explanation": "Igaz. Az osztály (class) több elemhez is hozzárendelhető, az azonosító (id) egy oldalon csak egyszer szerepelhet. A HTML-ben: class=\"kiemelt\", id=\"fejlec\"."
+    },
+    {
+      "id": "5",
+      "kind": "tf",
+      "prompt": "A <title> elem tartalma az oldal törzsében, a legnagyobb betűmérettel jelenik meg.",
+      "answer": "F",
+      "category": "prezentacio-weblap-hiba",
+      "explanation": "Hamis. A <title> a <head> részben van, és a böngésző fülén, a könyvjelzőkben és a keresőtalálatoknál jelenik meg. Az oldalon belüli fő címsor a <h1>."
+    },
+    {
+      "id": "6",
+      "kind": "tf",
+      "prompt": "Egy 1920 × 1080 képpontos, 24 bites színmélységű kép tömörítés nélkül kb. 6 MB helyet foglal.",
+      "answer": "T",
+      "category": "prezentacio-weblap-hiba",
+      "explanation": "Igaz. 1920 · 1080 = 2 073 600 képpont, mindegyik 24 bit = 3 bájt: 2 073 600 · 3 = 6 220 800 bájt ≈ 6,2 MB. Ezért tömörítjük (JPEG, PNG) a képeket weblapra."
+    },
+    {
+      "id": "7",
+      "kind": "tf",
+      "prompt": "A saját gépen lévő képre mutató, C:\\ kezdetű (abszolút helyi) hivatkozás a feltöltött weblap látogatóinál is működik.",
+      "answer": "F",
+      "category": "prezentacio-weblap-hiba",
+      "explanation": "Hamis. A C:\\ útvonal a látogató saját gépén keresné a fájlt, ahol az nincs meg. A weblapon relatív hivatkozásokat (pl. kepek/foto.jpg) vagy teljes webcímet (https://…) kell használni."
+    },
+    {
+      "id": "8",
+      "kind": "tf",
+      "prompt": "Videó streamelésekor a lejátszás elkezdődik, mielőtt a teljes fájl letöltődne.",
+      "answer": "T",
+      "category": "informacios-tarsadalom-fogalom",
+      "explanation": "Igaz. A streamelés folyamatosan, kis darabokban továbbítja az adatot, a lejátszó pufferel. A sávszélességhez igazodó minőség (adaptív streamelés) miatt lassabb kapcsolaton is akadás nélkül nézhető."
+    }
+  ],
+  "glossary": [],
+  "suggestedMinutes": 8
+}

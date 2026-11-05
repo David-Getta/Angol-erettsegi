@@ -1,0 +1,99 @@
+{
+  "schemaVersion": 1,
+  "id": "bio-rd-emelt-betegsegek-igaz-hamis",
+  "subject": "biologia",
+  "revision": 1,
+  "level": "emelt",
+  "source": "generated",
+  "topic": "egeszsegtan",
+  "title": "Népbetegségek és megelőzésük – igaz vagy hamis?",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "reading",
+  "type": "igaz-hamis",
+  "instructions": "Döntse el az alábbi állításokról, hogy igazak vagy hamisak! Jelölje az igaz állításokat I (T), a hamisakat H (F) betűvel! A 0. állítás a példa.",
+  "example": {
+    "id": "0",
+    "kind": "tf",
+    "prompt": "Az 1-es típusú cukorbetegségben a hasnyálmirigy inzulintermelő béta-sejtjei autoimmun folyamat következtében elpusztulnak, ezért a betegnek inzulint kell pótolnia.",
+    "answer": "T",
+    "category": "szabalyozas-folyamat",
+    "explanation": "Igaz. Az 1-es típusú cukorbetegségben a saját immunrendszer támadja meg a Langerhans-szigetek béta-sejtjeit; inzulin nélkül a sejtek nem veszik fel a glükózt, ezért a kezelés az inzulin pótlása."
+  },
+  "items": [
+    {
+      "id": "1",
+      "kind": "tf",
+      "prompt": "A 2-es típusú cukorbetegség kialakulásában a sejtek csökkent inzulinérzékenységének (inzulinrezisztenciának) van fő szerepe, amelyet a túlsúly és a mozgásszegény életmód elősegít.",
+      "answer": "T",
+      "category": "szabalyozas-folyamat",
+      "explanation": "Igaz. 2-es típusban a hasnyálmirigy (legalábbis kezdetben) termel inzulint, de a célsejtek kevésbé reagálnak rá. A testsúly csökkentése, a rendszeres mozgás és az étrend javítása javítja az inzulinérzékenységet, ezért a megelőzés és a kezelés alapja az életmódváltás."
+    },
+    {
+      "id": "2",
+      "kind": "tf",
+      "prompt": "Kezeletlen cukorbetegségben a vér glükózszintje kórosan alacsony, ezért a beteg vizelete nem tartalmaz glükózt.",
+      "answer": "F",
+      "category": "szabalyozas-folyamat",
+      "explanation": "Hamis. Kezeletlen cukorbetegségben a vércukorszint kórosan magas; ha meghaladja a vese visszaszívó kapacitását (kb. 10 mmol/l), glükóz jelenik meg a vizeletben, és a glükóz ozmotikusan vizet is visz magával (sok vizelet, szomjúság)."
+    },
+    {
+      "id": "3",
+      "kind": "tf",
+      "prompt": "Az érelmeszesedés (ateroszklerózis) során az artériák belső falában koleszterintartalmú lerakódások (plakkok) képződnek, amelyek szűkítik az ér üregét.",
+      "answer": "T",
+      "category": "felepites-mukodes",
+      "explanation": "Igaz. A plakkok miatt az érfal rugalmatlanná válik, az ér szűkül, a plakk felszínén vérrög képződhet. Kockázati tényezői a dohányzás, a magas vérnyomás, a magas LDL-koleszterinszint, a cukorbetegség, a túlsúly és a mozgásszegénység."
+    },
+    {
+      "id": "4",
+      "kind": "tf",
+      "prompt": "A szívinfarktust a szív vitorlás billentyűinek elzáródása okozza.",
+      "answer": "F",
+      "category": "felepites-mukodes",
+      "explanation": "Hamis. Szívinfarktusban a szívizmot ellátó koszorúerek egyik ága (többnyire plakkon kialakult vérrög miatt) elzáródik, és az általa ellátott szívizomrész oxigénhiány miatt elhal. A billentyűk a vér egyirányú áramlását biztosítják, betegségük más kórkép."
+    },
+    {
+      "id": "5",
+      "kind": "tf",
+      "prompt": "A tartósan magas vérnyomás növeli a stroke (agyi érkatasztrófa) és a szívelégtelenség kockázatát.",
+      "answer": "T",
+      "category": "felepites-mukodes",
+      "explanation": "Igaz. A magas nyomás károsítja az érfalat (gyorsítja az érelmeszesedést, agyi érrepedéshez vezethet), és fokozott munkára kényszeríti a bal kamrát. Ezért kell rendszeresen mérni a vérnyomást, és csökkenteni a sóbevitelt, a testsúlyt és a stresszt."
+    },
+    {
+      "id": "6",
+      "kind": "tf",
+      "prompt": "A rosszindulatú daganat sejtjeinek legfőbb ismérve, hogy elvesztik osztódóképességüket.",
+      "answer": "F",
+      "category": "fogalomhasznalat",
+      "explanation": "Hamis. A daganatsejtek éppen szabályozatlanul, korlátlanul osztódnak, mert a sejtciklust szabályozó gének (pl. tumorszupresszor gének) mutálódtak. A rosszindulatú daganat ráadásul beszűrődik a környező szövetekbe, és áttétet (metasztázist) képezhet."
+    },
+    {
+      "id": "7",
+      "kind": "tf",
+      "prompt": "A humán papillomavírus (HPV) elleni védőoltás csökkenti a méhnyakrák kialakulásának kockázatát.",
+      "answer": "T",
+      "category": "fogalomhasznalat",
+      "explanation": "Igaz. A méhnyakrák nagy részét egyes HPV-típusok tartós fertőzése indítja el; az oltás ezek ellen véd, ezért a serdülőkori HPV-oltás az egyik leghatékonyabb daganatmegelőző eszköz (a rendszeres nőgyógyászati szűrés mellett)."
+    },
+    {
+      "id": "8",
+      "kind": "tf",
+      "prompt": "A védőoltás passzív immunizálás, mert a beoltott ember kész ellenanyagot kap.",
+      "answer": "F",
+      "category": "szabalyozas-folyamat",
+      "explanation": "Hamis. A védőoltás aktív immunizálás: legyengített vagy elölt kórokozót, annak részét vagy az antigén kódját juttatják a szervezetbe, amely saját ellenanyagot és memóriasejteket termel – a védelem évekig tart. Kész ellenanyagot (szérumot) a passzív immunizáláskor adnak, ennek hatása gyors, de rövid."
+    },
+    {
+      "id": "9",
+      "kind": "tf",
+      "prompt": "A dohányfüst kátránya rákkeltő anyagokat tartalmaz, szén-monoxidja pedig a hemoglobinhoz kötődve csökkenti a vér oxigénszállító képességét.",
+      "answer": "T",
+      "category": "felepites-mukodes",
+      "explanation": "Igaz. A szén-monoxid az oxigénnél sokkal erősebben kötődik a hemoglobinhoz, így kevesebb oxigén jut a szövetekhez; a kátrány rákkeltő vegyületei a tüdő-, gége- és szájüregi daganatok fő okai, a nikotin pedig érszűkítő és függőséget okoz."
+    }
+  ],
+  "glossary": [],
+  "suggestedMinutes": 8
+}

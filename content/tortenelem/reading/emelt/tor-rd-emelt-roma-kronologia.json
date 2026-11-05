@@ -1,0 +1,167 @@
+{
+  "schemaVersion": 1,
+  "id": "tor-rd-emelt-roma-kronologia",
+  "subject": "tortenelem",
+  "revision": 1,
+  "level": "emelt",
+  "source": "generated",
+  "topic": "okor",
+  "title": "A római köztársaság válsága és a principatus",
+  "createdAt": "2026-11-05",
+  "tags": [
+    "egyetemes"
+  ],
+  "section": "reading",
+  "type": "kronologia",
+  "instructions": "A feladat a római köztársaság történetével kapcsolatos. Olvassa el a forrást, majd rendelje az eseményekhez a megfelelő évszámot! Írja az évszám betűjelét az esemény mellé! Egy évszám csak egyszer használható, kettő felesleges. Ezután válaszoljon a kérdésekre a forrás és ismeretei segítségével! A 0. a megoldott példa.",
+  "passage": {
+    "title": "Egy római történetíró művének stílusában",
+    "sourceNote": "A források a gyakorlás céljára írt, a kor stílusát követő szövegek, illetve leírások – nem hiteles korabeli dokumentumok.",
+    "blocks": [
+      {
+        "text": "„Tiberius Sempronius Gracchus néptribunus ekkor azt javasolta, hogy senki ne birtokolhasson az állami földből ötszáz iugerumnál többet, a fölösleget pedig osszák szét a nincstelen polgárok között. Úgy érvelt: ha a parasztok elvesztik földjeiket, nem lesz, aki a légiókban szolgáljon, hiszen vagyontalan polgárt nem soroznak be. A nagybirtokosok, akik az állami földeket rabszolgákkal műveltették, felháborodtak. A népgyűlés napján a szenátorok egy csoportja a Capitoliumon agyonverte a tribunust és sok hívét; ez volt az első polgárvér, amelyet Rómában politikai viszály miatt ontottak.”"
+      }
+    ]
+  },
+  "options": [
+    {
+      "key": "A",
+      "text": "Kr. e. 753"
+    },
+    {
+      "key": "B",
+      "text": "Kr. e. 509"
+    },
+    {
+      "key": "C",
+      "text": "Kr. e. 264"
+    },
+    {
+      "key": "D",
+      "text": "Kr. e. 133"
+    },
+    {
+      "key": "E",
+      "text": "Kr. e. 44"
+    },
+    {
+      "key": "F",
+      "text": "Kr. e. 27"
+    },
+    {
+      "key": "G",
+      "text": "Kr. u. 476"
+    }
+  ],
+  "example": {
+    "id": "0",
+    "kind": "match",
+    "prompt": "Róma alapítása a hagyomány szerint",
+    "answer": "A",
+    "category": "evszam-kronologia",
+    "explanation": "Helyes: A – Kr. e. 753. A római hagyomány ettől az évtől („ab urbe condita”) számolta az éveket; a régészet szerint a település ennél fokozatosabban alakult ki."
+  },
+  "items": [
+    {
+      "id": "1",
+      "kind": "match",
+      "prompt": "Az utolsó király elűzése, a köztársaság kezdete a hagyomány szerint",
+      "answer": "B",
+      "category": "evszam-kronologia",
+      "explanation": "Helyes: B – Kr. e. 509. A hagyomány szerint ekkor űzték el Tarquinius Superbust; a királyság helyére az évente választott két consullal működő köztársaság lépett."
+    },
+    {
+      "id": "2",
+      "kind": "match",
+      "prompt": "A forrásban leírt földtörvény-javaslat és a néptribunus halála",
+      "answer": "D",
+      "category": "evszam-kronologia",
+      "explanation": "Helyes: D – Kr. e. 133. Tiberius Gracchus néptribunusként ebben az évben terjesztette elő földtörvényét, és ugyanebben az évben ölték meg; öccse, Caius Gracchus Kr. e. 123–122-ben folytatta a reformokat.",
+      "wrongOptions": {
+        "C": "Kr. e. 264 az első pun háború kezdete; a földkérdés a hódító háborúk (a pun háborúk) következménye volt, de a reformjavaslat később született."
+      }
+    },
+    {
+      "id": "3",
+      "kind": "match",
+      "prompt": "Julius Caesar meggyilkolása",
+      "answer": "E",
+      "category": "evszam-kronologia",
+      "explanation": "Helyes: E – Kr. e. 44. Március idusán (15.) a köztársaságpárti összeesküvők (Brutus, Cassius) a szenátus ülésén megölték az örökös diktátorrá lett Caesart."
+    },
+    {
+      "id": "4",
+      "kind": "match",
+      "prompt": "Octavianus megkapja az Augustus címet, a principatus kezdete",
+      "answer": "F",
+      "category": "evszam-kronologia",
+      "explanation": "Helyes: F – Kr. e. 27. Az actiumi győzelem (Kr. e. 31) után Octavianus látszólag „visszaadta” a köztársaságot, a szenátus pedig az Augustus címmel ruházta fel – ezt tekintjük a principatus kezdetének.",
+      "wrongOptions": {
+        "G": "Kr. u. 476 a Nyugatrómai Birodalom bukásának éve, amikor Odoaker letette az utolsó császárt, Romulus Augustulust."
+      }
+    },
+    {
+      "id": "5",
+      "kind": "choice",
+      "prompt": "Mi volt a forrás szerint Tiberius Gracchus javaslatának legfontosabb célja?",
+      "options": [
+        {
+          "key": "A",
+          "text": "a hadsereg utánpótlásának biztosítása a kisbirtokos parasztság helyreállításával"
+        },
+        {
+          "key": "B",
+          "text": "a patríciusok politikai kiváltságainak bővítése"
+        },
+        {
+          "key": "C",
+          "text": "a rabszolgák felszabadítása és földhöz juttatása"
+        },
+        {
+          "key": "D",
+          "text": "a provinciák önkormányzatának megszüntetése"
+        }
+      ],
+      "answer": "A",
+      "category": "forras-sajat-tudas",
+      "explanation": "Helyes: A. A forrás szerint vagyontalan polgárt nem soroztak be, ezért a földjüket vesztett parasztok tömegével kiestek a hadkötelesek közül. A hódító háborúk alatt a parasztok tönkrementek, földjeik a rabszolgákkal dolgoztató nagybirtokosokhoz kerültek; a földosztás a földműves katonaréteget akarta helyreállítani.",
+      "wrongOptions": {
+        "B": "A javaslat éppen a nagybirtokos szenátori réteg érdekeit sértette, nem a patríciusok kiváltságait bővítette.",
+        "C": "A földet a forrás szerint „nincstelen polgárok” kapták volna; a rabszolgák felszabadítása nem volt a terv része.",
+        "D": "A forrás nem a provinciákról szól, hanem az itáliai állami földről (ager publicus)."
+      }
+    },
+    {
+      "id": "6",
+      "kind": "choice",
+      "prompt": "Melyik reform oldotta meg végül a hadsereg utánpótlásának problémáját a Gracchusok kudarca után?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Marius hadseregreformja, amely a vagyontalanokat is besorozta zsoldért"
+        },
+        {
+          "key": "B",
+          "text": "Sulla diktatúrája, amely visszaállította a néptribunusok jogait"
+        },
+        {
+          "key": "C",
+          "text": "Caesar galliai hadjárata, amely rabszolgákból toborzott légiókat"
+        },
+        {
+          "key": "D",
+          "text": "Augustus rendelete, amely eltörölte a hadkötelezettséget"
+        }
+      ],
+      "answer": "A",
+      "category": "ok-okozat",
+      "explanation": "Helyes: A. Marius (Kr. e. 107-től consul) a vagyoni cenzustól függetlenül toborzott katonákat, akik zsoldot, felszerelést, leszereléskor földet kaptak. A hivatásos hadsereg így hadvezéréhez kötődött – ez a polgárháborúk és végül a köztársaság bukásának egyik oka lett.",
+      "wrongOptions": {
+        "B": "Sulla éppen korlátozta a néptribunusok jogait, és nem a sorozás problémáját oldotta meg; ő már a Marius-féle hadsereggel vonult Róma ellen.",
+        "C": "Caesar légiói római polgárokból álló hivatásos katonák voltak (a Marius-féle rendszerben), nem rabszolgák.",
+        "D": "Augustus állandó, hivatásos hadsereget tartott fenn, de ez a Marius-féle reformra épült; a probléma megoldása nem tőle ered."
+      }
+    }
+  ],
+  "suggestedMinutes": 8
+}

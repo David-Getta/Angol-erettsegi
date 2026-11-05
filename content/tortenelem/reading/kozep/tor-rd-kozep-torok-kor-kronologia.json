@@ -1,0 +1,148 @@
+{
+  "schemaVersion": 1,
+  "id": "tor-rd-kozep-torok-kor-kronologia",
+  "subject": "tortenelem",
+  "revision": 1,
+  "level": "kozep",
+  "source": "generated",
+  "topic": "kora-ujkor",
+  "title": "A török kor Magyarországon – kronológia",
+  "createdAt": "2026-11-05",
+  "tags": [
+    "magyar"
+  ],
+  "section": "reading",
+  "type": "kronologia",
+  "instructions": "A feladat a török kori Magyarország eseményeivel kapcsolatos. Olvassa el a forrást, majd rendelje az eseményekhez a megfelelő évszámot! Írja az évszám betűjelét az esemény mellé! Egy évszám csak egyszer használható, kettő felesleges. Végül válaszoljon a kérdésre! A 0. a megoldott példa.",
+  "passage": {
+    "title": "Egy budai polgár krónikájából (16. század)",
+    "sourceNote": "A források a gyakorlás céljára írt, a kor stílusát követő szövegek, illetve leírások – nem hiteles korabeli dokumentumok.",
+    "blocks": [
+      {
+        "text": "„A szultán serege nyáron Buda alá érkezett, hogy a várost a német király hadától megvédje, ahogyan mondta. Augusztus végén, éppen a mohácsi gyásznap évfordulóján, a szultán a csecsemő királyfit és anyját, Izabella királynét sátrába hívatta. Míg a királyfi a sátorban volt, a janicsárok csellel bejutottak a várba, és elfoglalták azt. A szultán ezután kijelentette, hogy Budát magának tartja meg; a királyfinak és anyjának a Tiszán túli részeket és Erdélyt hagyta, hogy azokat az ő oltalma alatt bírják.”"
+      }
+    ]
+  },
+  "options": [
+    {
+      "key": "A",
+      "text": "1526"
+    },
+    {
+      "key": "B",
+      "text": "1541"
+    },
+    {
+      "key": "C",
+      "text": "1552"
+    },
+    {
+      "key": "D",
+      "text": "1566"
+    },
+    {
+      "key": "E",
+      "text": "1606"
+    },
+    {
+      "key": "F",
+      "text": "1683"
+    },
+    {
+      "key": "G",
+      "text": "1686"
+    },
+    {
+      "key": "H",
+      "text": "1699"
+    }
+  ],
+  "example": {
+    "id": "0",
+    "kind": "match",
+    "prompt": "A mohácsi csata",
+    "answer": "A",
+    "category": "evszam-kronologia",
+    "explanation": "Helyes: A – 1526. Augusztus 29-én a Szulejmán vezette oszmán sereg Mohácsnál legyőzte II. Lajos seregét; a király menekülés közben meghalt."
+  },
+  "items": [
+    {
+      "id": "1",
+      "kind": "match",
+      "prompt": "A forrásban leírt esemény: Buda török kézre kerül",
+      "answer": "B",
+      "category": "evszam-kronologia",
+      "explanation": "Helyes: B – 1541. A forrás szerint a vár a mohácsi csata évfordulóján (augusztus 29.) került cselvetéssel török kézre; ezzel az ország három részre szakadt.",
+      "wrongOptions": {
+        "A": "1526 a mohácsi csata éve; a forrás szerint Buda az évfordulón, tehát egy későbbi évben esett el."
+      }
+    },
+    {
+      "id": "2",
+      "kind": "match",
+      "prompt": "Eger sikeres védelme Dobó István vezetésével",
+      "answer": "C",
+      "category": "evszam-kronologia",
+      "explanation": "Helyes: C – 1552. Ebben az évben a török elfoglalta Temesvárt és Drégelyt, de Eger Dobó István vezetésével kiállta az ostromot."
+    },
+    {
+      "id": "3",
+      "kind": "match",
+      "prompt": "Szigetvár eleste, Zrínyi Miklós hősi halála",
+      "answer": "D",
+      "category": "evszam-kronologia",
+      "explanation": "Helyes: D – 1566. Szigetvár ostroma alatt halt meg I. Szulejmán szultán is; Zrínyi Miklós a vár elestekor kitörés közben esett el."
+    },
+    {
+      "id": "4",
+      "kind": "match",
+      "prompt": "Buda visszafoglalása a Szent Liga seregei által",
+      "answer": "G",
+      "category": "evszam-kronologia",
+      "explanation": "Helyes: G – 1686. A Bécs sikeres védelme (1683) után létrejött Szent Liga seregei 1686 szeptemberében visszafoglalták Budát, 145 év török uralom után.",
+      "wrongOptions": {
+        "F": "1683 Bécs második török ostromának és a kahlenbergi csatának az éve; ez indította el a felszabadító háborút, de Buda csak később került vissza."
+      }
+    },
+    {
+      "id": "5",
+      "kind": "match",
+      "prompt": "A karlócai béke: a török kiűzésének lezárása (a Temesköz kivételével)",
+      "answer": "H",
+      "category": "evszam-kronologia",
+      "explanation": "Helyes: H – 1699. A zentai győzelem (1697) után kötött karlócai békében a Porta lemondott Magyarország nagy részéről és Erdélyről; a Temesköz csak 1718-ban került vissza."
+    },
+    {
+      "id": "6",
+      "kind": "choice",
+      "prompt": "Melyik államalakulat jött létre a forrásban említett, a királyfinak hagyott területekből?",
+      "options": [
+        {
+          "key": "A",
+          "text": "az Erdélyi Fejedelemség"
+        },
+        {
+          "key": "B",
+          "text": "a Királyi Magyarország"
+        },
+        {
+          "key": "C",
+          "text": "a Hódoltság"
+        },
+        {
+          "key": "D",
+          "text": "Havasalföld"
+        }
+      ],
+      "answer": "A",
+      "category": "forras-sajat-tudas",
+      "explanation": "Helyes: A. A forrás szerint a királyfi (János Zsigmond) és Izabella a Tiszán túli részeket és Erdélyt kapta a szultán oltalma alatt; ebből alakult ki 1570-re az Erdélyi Fejedelemség, amely a Porta hűbéres állama volt.",
+      "wrongOptions": {
+        "B": "A Királyi Magyarország a Habsburg uralkodók (I. Ferdinánd) alatt álló nyugati és északi országrész volt, nem a szultán oltalma alatt.",
+        "C": "A Hódoltság a közvetlen török uralom alatti terület volt (Budával együtt), nem a királyfinak hagyott rész.",
+        "D": "Havasalföld román fejedelemség a Kárpátokon túl, nem a Magyar Királyság része."
+      }
+    }
+  ],
+  "suggestedMinutes": 7
+}

@@ -1,0 +1,214 @@
+{
+  "schemaVersion": 1,
+  "id": "bio-rd-emelt-vese-szurlet-abraelemzes",
+  "subject": "biologia",
+  "revision": 1,
+  "level": "emelt",
+  "source": "generated",
+  "topic": "ember-szervezet",
+  "title": "A vese működése – táblázatelemzés",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "reading",
+  "type": "abraelemzes",
+  "instructions": "Tanulmányozza a táblázat adatait, majd válaszoljon a kérdésekre! A feleletválasztós kérdéseknél a helyes válasz betűjelét, az igaz–hamis állításoknál I (T) vagy H (F) betűt, a számítást igénylő kérdéseknél csak a végeredményt írja be. A 0. kérdés a példa.",
+  "passage": {
+    "title": "Mit szűr ki és mit tart meg a vese?",
+    "blocks": [
+      {
+        "text": "Egy egészséges felnőtt vesében naponta kb. 180 liter elsődleges szűrlet képződik, a naponta ürülő vizelet mennyisége viszont csak kb. 1,5 liter. A táblázat néhány anyag koncentrációját mutatja a vérplazmában, az elsődleges szűrletben és a vizeletben."
+      },
+      {
+        "heading": "Táblázat: koncentráció (g/liter)",
+        "text": "Fehérjék: vérplazma 75; elsődleges szűrlet 0 (gyakorlatilag nincs); vizelet 0. Glükóz: vérplazma 1,0; elsődleges szűrlet 1,0; vizelet 0. Karbamid: vérplazma 0,3; elsődleges szűrlet 0,3; vizelet 20. Nátriumion: vérplazma 3,2; elsődleges szűrlet 3,2; vizelet 3,5."
+      }
+    ]
+  },
+  "example": {
+    "id": "0",
+    "kind": "choice",
+    "prompt": "Hol képződik az elsődleges szűrlet?",
+    "options": [
+      {
+        "key": "A",
+        "text": "a vesetestecskében: a hajszálérgomolyagból a Bowman-tok üregébe szűrődik"
+      },
+      {
+        "key": "B",
+        "text": "a gyűjtőcsatornákban"
+      },
+      {
+        "key": "C",
+        "text": "a vesemedencében"
+      },
+      {
+        "key": "D",
+        "text": "a húgyhólyag falában"
+      }
+    ],
+    "answer": "A",
+    "category": "felepites-mukodes",
+    "explanation": "Helyes: A. A vesetestecske hajszálérgomolyagában (glomerulus) a vérnyomás hatására a vérplazma vize és kis molekulájú oldott anyagai átszűrődnek a Bowman-tok üregébe – ez az elsődleges szűrlet."
+  },
+  "items": [
+    {
+      "id": "1",
+      "kind": "choice",
+      "prompt": "Mi az oka annak, hogy az elsődleges szűrletben gyakorlatilag nincs fehérje?",
+      "options": [
+        {
+          "key": "A",
+          "text": "A fehérjéket a vesecsatornák teljesen visszaszívják."
+        },
+        {
+          "key": "B",
+          "text": "A fehérjemolekulák túl nagyok, ezért nem jutnak át a vesetestecske szűrőfelületén."
+        },
+        {
+          "key": "C",
+          "text": "A máj a vesébe jutás előtt minden plazmafehérjét lebont."
+        },
+        {
+          "key": "D",
+          "text": "A vér fehérjéi kizárólag a vörösvérsejtekben vannak."
+        }
+      ],
+      "answer": "B",
+      "category": "felepites-mukodes",
+      "explanation": "Helyes: B. A szűrés méret szerint válogat: a hajszálérfal és a tok belső lemezének szűrőrétegén a víz, az ionok, a glükóz és a karbamid átjut, a nagy plazmafehérjék (és a vérsejtek) azonban az érben maradnak.",
+      "wrongOptions": {
+        "A": "Ha a fehérje a szűrletbe jutna és csak később szívódna vissza, a szűrletben (a táblázat 2. oszlopában) mérhető lenne – de ott sincs.",
+        "C": "A plazmafehérjéket (pl. albumin, ellenanyagok) éppen a máj és az immunsejtek termelik, és a vérben fontos szerepük van (kolloid ozmotikus nyomás, immunvédelem).",
+        "D": "A vérplazmában 75 g/l fehérje van (albumin, globulinok, fibrinogén), nem csak a vörösvérsejtekben."
+      }
+    },
+    {
+      "id": "2",
+      "kind": "text",
+      "prompt": "Az elsődleges szűrlet vizének hány százaléka szívódik vissza naponta? (Egy tizedesjegyre kerekítve)",
+      "answer": [
+        "99,2",
+        "99,2%",
+        "99,2 %",
+        "99.2",
+        "99.2%",
+        "99,17",
+        "99,17%",
+        "99.17"
+      ],
+      "category": "okologiai-szamitas",
+      "explanation": "Helyes: kb. 99,2%. Visszaszívódik 180 − 1,5 = 178,5 liter; 178,5 / 180 ≈ 0,992, azaz 99,2%. (A vizeletként ürülő 1,5 liter a szűrlet kb. 0,8%-a.)",
+      "maxWords": 2
+    },
+    {
+      "id": "3",
+      "kind": "text",
+      "prompt": "Hányszorosára nő a karbamid koncentrációja a szűrletből a vizeletbe jutva? (Egészre kerekítve)",
+      "answer": [
+        "67",
+        "67-szeres",
+        "67-szeresére",
+        "kb. 67",
+        "66,7",
+        "66.7"
+      ],
+      "category": "okologiai-szamitas",
+      "explanation": "Helyes: kb. 67-szeresére. 20 g/l / 0,3 g/l ≈ 66,7. A karbamid nagy része nem szívódik vissza, a víz 99%-a viszont igen – ezért a karbamid a vizeletben erősen betöményedik.",
+      "maxWords": 3
+    },
+    {
+      "id": "4",
+      "kind": "text",
+      "prompt": "Hány gramm glükóz kerül naponta az elsődleges szűrletbe?",
+      "answer": [
+        "180",
+        "180 g",
+        "180 gramm",
+        "180g"
+      ],
+      "category": "okologiai-szamitas",
+      "explanation": "Helyes: 180 g. 180 liter szűrlet · 1,0 g/l = 180 g glükóz naponta – ez mind visszaszívódik, hiszen a vizeletben nincs glükóz.",
+      "maxWords": 2
+    },
+    {
+      "id": "5",
+      "kind": "choice",
+      "prompt": "Mi történik egészséges emberben a szűrletbe került glükózzal?",
+      "options": [
+        {
+          "key": "A",
+          "text": "A vesecsatorna kezdeti (proximális) szakaszában aktív transzporttal teljesen visszaszívódik."
+        },
+        {
+          "key": "B",
+          "text": "A gyűjtőcsatornában passzív diffúzióval szívódik vissza."
+        },
+        {
+          "key": "C",
+          "text": "A vizelettel ürül, mert a vese nem tudja visszaszívni."
+        },
+        {
+          "key": "D",
+          "text": "A húgyhólyagban szívódik vissza a vérbe."
+        }
+      ],
+      "answer": "A",
+      "category": "felepites-mukodes",
+      "explanation": "Helyes: A. A glükóz a vesecsatorna első, kanyarulatos szakaszában nátriumionokkal együtt, energiát igénylő (aktív) szállítással jut vissza a vérbe; egészséges vércukorszint mellett a visszaszívás teljes.",
+      "wrongOptions": {
+        "B": "A glükóz visszaszívása nem a gyűjtőcsatornában, és nem passzívan történik: a koncentrációkülönbség ellenében is zajlik, ezért energiaigényes.",
+        "C": "A táblázat szerint a vizeletben nincs glükóz, tehát visszaszívódik.",
+        "D": "A húgyhólyag csak tárolja a vizeletet; a fala nem szív vissza anyagokat."
+      }
+    },
+    {
+      "id": "6",
+      "kind": "tf",
+      "prompt": "Ha a vérplazma glükózkoncentrációja tartósan meghaladja a visszaszívás kapacitását (például kezeletlen cukorbetegségben), glükóz jelenik meg a vizeletben.",
+      "answer": "T",
+      "category": "szabalyozas-folyamat",
+      "explanation": "Igaz. A visszaszívó szállítófehérjék száma véges; ha a szűrletben túl sok a glükóz (kb. 10 mmol/l, azaz 1,8 g/l vércukorszint felett), a többlet a vizelettel ürül. A glükóz ozmotikusan vizet is visz magával, ezért a beteg sokat vizel és szomjas."
+    },
+    {
+      "id": "7",
+      "kind": "choice",
+      "prompt": "Melyik hormon növeli a gyűjtőcsatornák vízáteresztő képességét, és így csökkenti a vizelet mennyiségét?",
+      "options": [
+        {
+          "key": "A",
+          "text": "ADH (antidiuretikus hormon)"
+        },
+        {
+          "key": "B",
+          "text": "aldoszteron"
+        },
+        {
+          "key": "C",
+          "text": "inzulin"
+        },
+        {
+          "key": "D",
+          "text": "adrenalin"
+        }
+      ],
+      "answer": "A",
+      "category": "szabalyozas-folyamat",
+      "explanation": "Helyes: A. Az ADH-t a hipotalamusz termeli, és az agyalapi mirigy hátsó lebenye juttatja a vérbe, ha a vér ozmotikus koncentrációja nő (pl. szomjazáskor). Hatására a gyűjtőcsatornák falába vízcsatornák épülnek be, több víz szívódik vissza, a vizelet kevesebb és töményebb lesz.",
+      "wrongOptions": {
+        "B": "Az aldoszteron (mellékvesekéreg-hormon) a nátriumionok visszaszívását és a káliumionok kiválasztását fokozza; a víz csak közvetve követi a nátriumot, a vízáteresztő képességet nem az aldoszteron szabályozza.",
+        "C": "Az inzulin a vércukorszintet csökkenti, a vese vízvisszaszívását nem szabályozza.",
+        "D": "Az adrenalin a stresszreakció hormonja (pulzus, vércukor emelése), nem a vízháztartás fő szabályozója."
+      }
+    },
+    {
+      "id": "8",
+      "kind": "tf",
+      "prompt": "Mivel a vizelet nátriumion-koncentrációja (3,5 g/l) nagyobb, mint a szűrleté (3,2 g/l), a nátriumionok a vesében nem szívódnak vissza.",
+      "answer": "F",
+      "category": "abra-adatelemzes",
+      "explanation": "Hamis. A koncentráció csak azért hasonló, mert a víz 99%-a is visszaszívódik. A mennyiségeket kell összevetni: naponta 180 l · 3,2 g/l = 576 g nátriumion kerül a szűrletbe, a vizelettel csak 1,5 l · 3,5 g/l ≈ 5,3 g ürül – tehát több mint 99%-a visszaszívódik."
+    }
+  ],
+  "glossary": [],
+  "suggestedMinutes": 12
+}

@@ -1,0 +1,138 @@
+{
+  "schemaVersion": 1,
+  "id": "nem-lu-kozep-schulflohmarkt-open-cloze",
+  "subject": "nemet",
+  "revision": 1,
+  "level": "kozep",
+  "source": "generated",
+  "topic": "iskola",
+  "title": "Unser erster Schulflohmarkt",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "language-use",
+  "type": "open-cloze",
+  "instructions": "Lesen Sie den Text und ergänzen Sie die Lücken (1–10) mit jeweils EINEM passenden Wort. Am Anfang finden Sie ein Beispiel (0).",
+  "instructionsHu": "Egészítsd ki a szöveget egy-egy odaillő szóval. A 0. a példa.",
+  "passage": {
+    "title": "Unser erster Schulflohmarkt",
+    "blocks": [
+      {
+        "text": "Im letzten Frühling hat unser Gymnasium zum ersten Mal einen Flohmarkt organisiert. Die Idee kam [[0]] der Klasse 10a: Die Schülerinnen und Schüler wollten Geld für ein Tierheim sammeln, [[1]] im Winter fast [[2]] Geld mehr für Futter und Medikamente hatte."
+      },
+      {
+        "text": "Zwei Wochen vor [[3]] Flohmarkt haben wir in allen Klassen Plakate aufgehängt und alle gebeten, alte Sachen in die Schule [[4]] bringen. Am Ende standen über hundert Kisten [[5]] Büchern, Kleidung, Spielzeug und Geschirr in der Turnhalle."
+      },
+      {
+        "text": "Der große Tag war ein Samstag im Mai. Schon um neun Uhr, eine Stunde [[6]] der Eröffnung, warteten die ersten Besucher vor der Tür. Besonders beliebt waren die alten Schallplatten, [[7]] unser Musiklehrer mitgebracht hatte. Viele Gäste kauften nicht nur etwas, [[8]] tranken auch Kaffee und aßen Kuchen."
+      },
+      {
+        "text": "Insgesamt haben wir 1.850 Euro eingenommen. Eine Woche später haben wir das Geld dem Tierheim übergeben, und die Leiterin hat [[9]] herzlich bei uns bedankt. Die Schulleitung war von der Aktion begeistert. Deshalb findet der Flohmarkt ab jetzt jedes Jahr im Mai [[10]]."
+      }
+    ]
+  },
+  "example": {
+    "id": "0",
+    "kind": "text",
+    "answer": [
+      "aus",
+      "von"
+    ],
+    "category": "preposition",
+    "explanation": "Az ötlet a 10.a osztálytól származott: „kommen aus/von” + részes eset (der Klasse). Mindkét elöljárószó helyes."
+  },
+  "items": [
+    {
+      "id": "1",
+      "kind": "text",
+      "answer": [
+        "das",
+        "welches"
+      ],
+      "category": "conjunction",
+      "explanation": "Vonatkozó névmás kell, amely az „ein Tierheim” (semlegesnemű) szóra utal, és a mellékmondat alanya (alanyeset): das (vagy választékosan: welches). A mellékmondatban az ige a végén áll: … das … hatte."
+    },
+    {
+      "id": "2",
+      "kind": "text",
+      "answer": [
+        "kein"
+      ],
+      "category": "negation",
+      "explanation": "Főnevet (Geld) a „kein” tagad, nem a „nicht”: fast kein Geld mehr = szinte már semmi pénz. A „Geld” itt névelő nélküli, semlegesnemű, tárgyeset → kein."
+    },
+    {
+      "id": "3",
+      "kind": "text",
+      "answer": [
+        "dem"
+      ],
+      "category": "case",
+      "explanation": "Időbeli „vor” (valami előtt) után részes eset áll: der Flohmarkt → vor dem Flohmarkt. Itt nem lehet „den”, mert nem irányról van szó."
+    },
+    {
+      "id": "4",
+      "kind": "text",
+      "answer": [
+        "zu"
+      ],
+      "category": "infinitive",
+      "explanation": "A „bitten” (megkér) után a főnévi igenév „zu”-val áll: alle gebeten, alte Sachen in die Schule zu bringen. Csak a módbeli segédigék (pl. müssen, können) után nincs „zu”."
+    },
+    {
+      "id": "5",
+      "kind": "text",
+      "answer": [
+        "mit"
+      ],
+      "category": "preposition",
+      "explanation": "„Kisten mit Büchern” = könyvekkel teli dobozok, a tartalmat a „mit” + részes eset fejezi ki (mit Büchern, -n végződés a többes számú részes esetben)."
+    },
+    {
+      "id": "6",
+      "kind": "text",
+      "answer": [
+        "vor"
+      ],
+      "category": "preposition",
+      "explanation": "Az első látogatók már kilenckor vártak, egy órával a megnyitó ELŐTT: eine Stunde vor der Eröffnung (vor + részes eset). A „nach” nem illik, hiszen még az ajtó előtt vártak."
+    },
+    {
+      "id": "7",
+      "kind": "text",
+      "answer": [
+        "die",
+        "welche"
+      ],
+      "category": "conjunction",
+      "explanation": "Vonatkozó névmás a „die Schallplatten” (többes szám) szóra; a mellékmondatban tárgy (a tanár hozta be őket), ezért tárgyeset többes szám: die (welche)."
+    },
+    {
+      "id": "8",
+      "kind": "text",
+      "answer": [
+        "sondern"
+      ],
+      "category": "conjunction",
+      "explanation": "Állandó párkötőszó: nicht nur …, sondern auch … = nemcsak …, hanem … is. A tagadás után „sondern” áll, nem „aber”."
+    },
+    {
+      "id": "9",
+      "kind": "text",
+      "answer": [
+        "sich"
+      ],
+      "category": "reflexive-pronoun",
+      "explanation": "A „sich bedanken” (megköszön) visszaható ige: die Leiterin hat sich bei uns bedankt. Harmadik személyben a visszaható névmás „sich”."
+    },
+    {
+      "id": "10",
+      "kind": "text",
+      "answer": [
+        "statt"
+      ],
+      "category": "verb-conjugation",
+      "explanation": "A „stattfinden” (megrendezik, lezajlik) elváló igekötős ige: főmondatban az igekötő a mondat végére kerül: Der Flohmarkt findet … jedes Jahr im Mai statt."
+    }
+  ],
+  "suggestedMinutes": 10
+}
