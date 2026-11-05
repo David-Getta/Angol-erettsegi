@@ -100,7 +100,7 @@
     {
       "wrong": "A programban open(\"C:\\\\Users\\\\Anna\\\\Asztal\\\\berles.txt\") áll.",
       "right": "open(\"berles.txt\", encoding=\"utf-8\") – a fájl a program mellett van.",
-      "why": "A javító gépén nincs ilyen útvonal, így a program el sem indul; a vizsgán a forrásfájl a program mappájában van."
+      "why": "A javító gépén nincs ilyen útvonal, így a program a megnyitásnál hibával leáll (FileNotFoundError); a vizsgán a forrásfájl a program mappájában van."
     },
     {
       "wrong": "A lekérdezést Lekérdezés1 néven hagyom.",

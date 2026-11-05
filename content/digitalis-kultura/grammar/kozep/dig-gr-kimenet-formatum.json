@@ -181,11 +181,11 @@
     },
     {
       "kind": "text",
-      "prompt": "Mit ír ki a program?\nfor i in range(3):\n    print(i, end=\";\")",
+      "prompt": "Mit ír ki a program?\nfor i in range(3):\n    print(i, end=\"-\")",
       "answer": [
-        "0;1;2;"
+        "0-1-2-"
       ],
-      "explanation": "Kimenet: 0;1;2; – az end=\";\" miatt minden szám után pontosvessző áll, és nincs sortörés; a végén is ott a pontosvessző.",
+      "explanation": "Kimenet: 0-1-2- – az end=\"-\" miatt minden szám után kötőjel áll, és nincs sortörés; a végén is ott a kötőjel.",
       "id": "5",
       "category": "kimenet-formatum"
     },
