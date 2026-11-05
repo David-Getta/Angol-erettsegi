@@ -6,6 +6,8 @@ import { fixedMistakes, pickMistakes } from "@/lib/targeted";
 import { getLesson, lessonOverview } from "@/lib/lessons";
 import { examConfig } from "@/lib/exam/config";
 import { addFixCard, reviewQueue } from "@/lib/vocab/cards";
+import { errorsPerWeek } from "@/lib/stats";
+import { errors } from "@/lib/db/schema";
 
 const TASK = "lu-emelt-urban-beekeeping-open-cloze";
 
@@ -65,5 +67,18 @@ describe("fix cards from corrections", () => {
     expect(card?.front).toBe("I have lived here since 2020");
     expect(card?.example).toBe("I live here since 2020");
     expect(card?.context).toContain("I love it");
+  });
+});
+
+describe("errors per week", () => {
+  it("counts this week's errors in the last bucket", () => {
+    const before = errorsPerWeek(4);
+    expect(before).toHaveLength(4);
+    getDb()
+      .insert(errors)
+      .values({ category: "tense", original: "a", corrected: "b", explanation: "c", context: null, sourceType: "writing", sourceId: "x", taskId: null, itemId: null, createdAt: new Date() })
+      .run();
+    const after = errorsPerWeek(4);
+    expect(after[3]!.y).toBe(before[3]!.y + 1);
   });
 });

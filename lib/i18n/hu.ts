@@ -509,6 +509,7 @@ export const t = {
     perDay: "naponta (utolsó 30 nap)",
     perWeek: "hetente",
     writingCriteria: "Íráskészség – szempontonkénti pontok",
+    errorsPerWeek: "A hibanaplóba került hibák hetente",
     noData: "Még nincs elég adat.",
     accuracy: "pontosság",
     attempts: "próbálkozás",

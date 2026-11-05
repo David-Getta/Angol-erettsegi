@@ -1,6 +1,6 @@
 import { and, asc, eq, inArray } from "drizzle-orm";
 import { getDb } from "@/lib/db/client";
-import { attempts, itemAttempts, submissions, tasks } from "@/lib/db/schema";
+import { attempts, errors, itemAttempts, submissions, tasks } from "@/lib/db/schema";
 import type { Level } from "@/lib/content/schema";
 import type { Feedback } from "@/lib/exchange/schema";
 import { localDay, secondsByDay } from "@/lib/activity";
@@ -107,6 +107,29 @@ export function timePerWeek(weeks = 12): Point[] {
       d.setDate(d.getDate() + 1);
     }
     out.push({ x: label, y: Math.round(sum / 60) });
+  }
+  return out;
+}
+
+/** Errors logged per week (Monday-based), last `weeks` weeks. */
+export function errorsPerWeek(weeks = 12): Point[] {
+  const start = new Date();
+  start.setHours(0, 0, 0, 0);
+  start.setDate(start.getDate() - ((start.getDay() + 6) % 7) - 7 * (weeks - 1));
+  const counts = new Map<string, number>();
+  for (const e of getDb().select({ at: errors.createdAt }).from(errors).all()) {
+    if (e.at < start) continue;
+    const d = new Date(e.at);
+    d.setHours(0, 0, 0, 0);
+    d.setDate(d.getDate() - ((d.getDay() + 6) % 7));
+    const k = localDay(d);
+    counts.set(k, (counts.get(k) ?? 0) + 1);
+  }
+  const out: Point[] = [];
+  for (let w = 0; w < weeks; w++) {
+    const d = new Date(start);
+    d.setDate(d.getDate() + 7 * w);
+    out.push({ x: localDay(d), y: counts.get(localDay(d)) ?? 0 });
   }
   return out;
 }
