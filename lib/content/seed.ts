@@ -49,6 +49,7 @@ export function seedContent(dir: string = paths.content): SeedReport {
       seen.add(c.id);
       const row = {
         id: c.id,
+        subject: c.subject,
         section: c.section,
         type: c.type,
         level: c.level,

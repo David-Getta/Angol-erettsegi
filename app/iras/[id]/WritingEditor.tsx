@@ -64,7 +64,7 @@ export function WritingEditor({
   }, [draftKey, text]);
 
   const wc = useMemo(() => wordCount(text), [text]);
-  const { min, max } = task.wordLimit;
+  const { min, max } = task.wordLimit ?? { min: 0, max: Infinity };
   const wcState = wc < min ? "short" : wc > max ? "long" : "ok";
   const checklist = [
     { id: "points", label: t.writing.checklistItems.points },
@@ -130,7 +130,9 @@ export function WritingEditor({
             ))}
           </ul>
           <div className="mt-3 text-sm text-muted">
-            {t.writing.wordLimit}: {min}–{max} {t.common.words} · {t.writing.register[task.register]} · {t.writing.suggested(task.suggestedMinutes)}
+            {task.wordLimit && `${t.writing.wordLimit}: ${min}–${max} ${t.common.words} · `}
+            {task.register && `${t.writing.register[task.register] ?? task.register} · `}
+            {t.writing.suggested(task.suggestedMinutes)}
           </div>
           <p className="mt-2 text-xs text-muted">{t.writing.modelHint}</p>
         </Card>

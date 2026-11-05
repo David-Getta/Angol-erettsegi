@@ -53,8 +53,8 @@ export function ObjectiveTaskPage({ id, section, base, mode }: { id: string; sec
           {...common}
           ttsRate={s.ttsRate}
           voices={{ female: s.ttsVoiceFemale, male: s.ttsVoiceMale }}
-          prepSeconds={levelStructure(task.level).listening.prepSeconds}
-          pauseSeconds={levelStructure(task.level).listening.pauseSeconds}
+          prepSeconds={levelStructure(task.level).listening?.prepSeconds ?? 60}
+          pauseSeconds={levelStructure(task.level).listening?.pauseSeconds ?? 30}
         />
       ) : (
         <PracticeRunner key={mode} {...common} />

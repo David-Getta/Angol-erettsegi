@@ -45,6 +45,7 @@ export default async function SpeakingPage({ searchParams }: { searchParams: Pro
       {stock.reduce((n, r) => n + r.unused, 0) <= examConfig.app().lowStock.threshold && (
         <CommandTip command={feladatokCommand("speaking", s.level, 6, tema)} message={t.tips.lowStock(t.section.speaking)} dismissKey={`low-speaking-${s.level}`} />
       )}
+      {oral && (
       <Card className="mb-6" title={`Szóbeli felépítése (${t.level[s.level]}, kb. ${oral.durationMin} perc)`}>
         <ol className="grid gap-2 text-sm sm:grid-cols-3">
           {oral.parts.map((p) => (
@@ -58,6 +59,7 @@ export default async function SpeakingPage({ searchParams }: { searchParams: Pro
           ))}
         </ol>
       </Card>
+      )}
       <div className="mb-4 flex flex-wrap gap-1.5 text-sm">
         <Link href="/szobeli" className={!tema ? btn.primary : btn.small}>
           {t.common.all}
@@ -70,7 +72,7 @@ export default async function SpeakingPage({ searchParams }: { searchParams: Pro
       </div>
       <div className="grid gap-6 lg:grid-cols-[minmax(0,2fr)_minmax(0,1fr)]">
         <div className="space-y-6">
-          {oral.parts.map((p) => {
+          {(oral?.parts ?? [{ number: 1, name: t.speaking.title, description: "" }]).map((p) => {
             const list = tasks.filter((x) => (getSpeaking(x.id) as SpeakingTask | null)?.partNumber === p.number);
             if (!list.length) return null;
             return (

@@ -1,0 +1,178 @@
+{
+  "schemaVersion": 1,
+  "id": "gr-quantifier",
+  "subject": "angol",
+  "revision": 2,
+  "level": "kozep",
+  "source": "generated",
+  "topic": "nyelvtan",
+  "title": "Mennyiségjelzők",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "grammar",
+  "type": "lesson",
+  "category": "quantifier",
+  "summaryHu": "A mennyiségjelzők (much, many, a few, little, some, any, each, every, both, either, neither …) választása attól függ, megszámlálható-e a főnév, állító, tagadó vagy kérdő-e a mondat, és két vagy több dologról beszélünk-e. A magyar „sok”, „kevés”, „minden”, „egyik sem” minden esetre ugyanaz a szó, ezért a magyar anyanyelvűek gyakran keverik a much/many, a (little)/(a) few és az every/each/all alakokat, és kettős tagadást használnak. A vizsgán a nyitott és a feleletválasztós lyukas szövegben gyakran éppen ezek a hiányzó szavak, az íráskészségben pedig az egyeztetés (every student has) a „Nyelvhelyesség, helyesírás” szempontnál számít.",
+  "rules": [
+    {
+      "title": "much, many, a lot of",
+      "explanation": "A many megszámlálható, többes számú főnévvel áll (many books), a much megszámlálhatatlannal (much time, much money). Állító mondatban a természetesebb a lot of / lots of (mindkét fajtával); a much és a many főleg tagadó és kérdő mondatban gyakori, valamint a too, so, as után (too much, so many, as many as). Kérdés: How much …? / How many …?",
+      "emeltOnly": false,
+      "examples": [
+        { "en": "We haven't got much time.", "hu": "Nincs sok időnk." },
+        { "en": "How many people came to the concert?", "hu": "Hányan jöttek el a koncertre?" },
+        { "en": "There's a lot of traffic in the city centre.", "hu": "Nagy a forgalom a belvárosban." }
+      ]
+    },
+    {
+      "title": "a few / few, a little / little",
+      "explanation": "Az a few (néhány, pár) és az a little (egy kevés, egy kis) pozitív: van belőle, ha nem is sok. A névelő nélküli few és little negatív: alig, túl kevés. A few / a few megszámlálható többes számú főnévvel, a little / a little megszámlálhatatlan főnévvel áll. Beszélt nyelvben a negatív jelentésre gyakoribb a not many / not much.",
+      "emeltOnly": false,
+      "examples": [
+        { "en": "I have a few friends in London, so I won't be lonely.", "hu": "Van néhány barátom Londonban, úgyhogy nem leszek magányos." },
+        { "en": "Few people understood the joke.", "hu": "Kevesen értették a viccet.", "note": "Negatív: alig valaki." },
+        { "en": "Could I have a little milk in my tea?", "hu": "Kérhetnék egy kevés tejet a teámba?" }
+      ]
+    },
+    {
+      "title": "some, any, no",
+      "explanation": "A some állító mondatban áll, valamint kínálásnál és kérésnél, amikor igen választ várunk (Would you like some cake? Can I have some water?). Az any tagadó és kérdő mondatban áll, illetve állító mondatban „bármelyik, akármelyik” jelentésben (You can take any bus). A no = not any, állító igével áll (There's no milk = There isn't any milk). Ugyanez igaz az összetételekre: something / anything / nothing, somebody / anybody / nobody, somewhere / anywhere / nowhere.",
+      "emeltOnly": false,
+      "examples": [
+        { "en": "There isn't any bread left.", "hu": "Nem maradt kenyér." },
+        { "en": "Would you like some tea?", "hu": "Kérsz egy kis teát?" },
+        { "en": "I didn't see anybody. / I saw nobody.", "hu": "Nem láttam senkit.", "note": "Egy mondatban csak egy tagadás lehet." }
+      ]
+    },
+    {
+      "title": "every, each, all, most",
+      "explanation": "Az every és az each után egyes számú főnév és egyes számú ige áll (Every student has …). Az every a csoport egészére gondol (kivétel nélkül mind), és csak kettőnél több dologra használjuk; az each egyenként, külön-külön nézi a tagokat, és kettőre is használható (each hand). Az each of-fal (each of us) és önállóan is állhat (They each got a present); az every csak every one of formában. Az all után többes szám vagy megszámlálhatatlan főnév jön (all students, all the time, all the money). A most (a legtöbb) általános értelemben of nélkül áll (most people), meghatározott csoport előtt viszont most of the / my / these … (most of my friends); ugyanígy: some of, many of, all of, none of + the / birtokos névmás.",
+      "emeltOnly": false,
+      "examples": [
+        { "en": "Every student has to take the exam.", "hu": "Minden diáknak le kell tennie a vizsgát." },
+        { "en": "Each of the rooms has its own bathroom.", "hu": "Mindegyik szobának saját fürdőszobája van." },
+        { "en": "All the shops were closed on Sunday.", "hu": "Vasárnap minden bolt zárva volt." }
+      ]
+    },
+    {
+      "title": "both, either, neither",
+      "explanation": "Két dologra vagy személyre: both (mindkettő, többes számú igével), either (bármelyik a kettő közül; tagadó mondatban: egyik sem), neither (egyik sem, állító igével). Párban: both … and, either … or, neither … nor. A neither of + többes számú főnév után a választékos nyelvben egyes számú ige áll (Neither of them is …), beszélt nyelvben a többes szám is előfordul. Kettőnél több dologra none (egyik sem) és any (bármelyik) a megfelelő.",
+      "emeltOnly": false,
+      "examples": [
+        { "en": "Both my parents work in a hospital.", "hu": "Mindkét szülőm kórházban dolgozik." },
+        { "en": "You can have either tea or coffee.", "hu": "Kérhetsz teát vagy kávét (a kettő közül az egyiket)." },
+        { "en": "Neither of my brothers likes football.", "hu": "Egyik bátyám sem szereti a focit." }
+      ]
+    },
+    {
+      "title": "Választékos mennyiségjelzők: a large number of, a great deal of, plenty of",
+      "explanation": "Hivatalos írásban a lot of helyett változatosabbak: a large number of + megszámlálható többes szám (többes számú igével: A large number of students have …), a great deal of / a large amount of + megszámlálhatatlan főnév, plenty of (bőven elég) mindkét fajtával. A number of (több, számos) többes számú igét kap, a the number of (… száma) egyes számút.",
+      "emeltOnly": true,
+      "examples": [
+        { "en": "A large number of students have applied for the course.", "hu": "Nagyon sok diák jelentkezett a tanfolyamra." },
+        { "en": "The project took a great deal of time and effort.", "hu": "A projekt rengeteg időt és energiát igényelt." },
+        { "en": "The number of tourists has doubled since 2015.", "hu": "A turisták száma 2015 óta megduplázódott.", "note": "the number of + egyes számú ige (has)." }
+      ]
+    }
+  ],
+  "commonMistakes": [
+    { "wrong": "I don't have much friends.", "right": "I don't have many friends.", "why": "A friends megszámlálható, többes számú főnév, ezért many kell. A much csak megszámlálhatatlan főnévvel áll (much time, much money)." },
+    { "wrong": "Every students have a locker.", "right": "Every student has a locker.", "why": "Az every után egyes számú főnév és egyes számú ige áll, bár a „minden diák” jelentése több embert takar. Többes számmal: All students have a locker." },
+    { "wrong": "We have few time, let's hurry.", "right": "We have little time, let's hurry.", "why": "A time (idő) megszámlálhatatlan, ezért little (vagy not much) kell; a few / few csak megszámlálható, többes számú főnévvel áll." },
+    { "wrong": "I didn't buy nothing.", "right": "I didn't buy anything.", "why": "Az angolban egy tagmondatban csak egy tagadás lehet. A magyar „nem vettem semmit” kettős tagadása angolul vagy didn't + anything, vagy állító ige + nothing (I bought nothing)." },
+    { "wrong": "Can I have any water, please?", "right": "Can I have some water, please?", "why": "Kérésnél és kínálásnál – amikor igen választ várunk – a kérdő mondatban is some áll." },
+    { "wrong": "Most of people use smartphones.", "right": "Most people use smartphones.", "why": "Általános értelemben most + főnév, of nélkül. A most of csak meghatározott csoport előtt áll: most of the people in my class, most of my friends." }
+  ],
+  "examTips": [
+    "Nyitott lyukas szöveg: a much, many, few, little, any, some, each, every, both, either, neither, none gyakori hiányzó szó. Mindig nézd meg a hiány utáni főnevet (megszámlálható-e, egyes vagy többes számú) és az igét (állító vagy tagadó, egyes vagy többes szám).",
+    "Feleletválasztós lyukas szöveg: az a few / few és az a little / little közti választásnál a mondat logikája dönt: ha a helyzet szerint ez elég (so, luckily), a few / a little; ha hiányt jelez (but, unfortunately, only), few / little.",
+    "Íráskészség: figyelj az egyeztetésre (There are a lot of people, There is a lot of noise, Every student has …), és hivatalos szövegben használj változatosabb kifejezéseket a lot of helyett (a large number of, a great deal of, plenty of)."
+  ],
+  "practice": [
+    {
+      "id": "1",
+      "kind": "choice",
+      "prompt": "There aren't ___ tourists in the town in November.",
+      "options": [
+        { "key": "A", "text": "much" },
+        { "key": "B", "text": "many" },
+        { "key": "C", "text": "a little" },
+        { "key": "D", "text": "few" }
+      ],
+      "answer": "B",
+      "category": "quantifier",
+      "explanation": "Helyes: many. A tourists megszámlálható, többes számú főnév, a mondat tagadó: not many = nem sok.",
+      "wrongOptions": {
+        "A": "A much megszámlálhatatlan főnévvel áll, a tourists viszont megszámlálható.",
+        "C": "Az a little megszámlálhatatlan főnévvel áll, és állító jelentésű.",
+        "D": "A few már önmagában negatív (alig), a tagadó igével együtt (aren't few) kettős tagadás lenne."
+      }
+    },
+    {
+      "id": "2",
+      "kind": "text",
+      "prompt": "How ___ money do you spend on clothes every month?",
+      "answer": ["much"],
+      "maxWords": 1,
+      "category": "quantifier",
+      "explanation": "Helyes: much. A money megszámlálhatatlan főnév, ezért How much …? (mennyi?). A How many … csak megszámlálható többes számmal áll (How many euros …?)."
+    },
+    {
+      "id": "3",
+      "kind": "choice",
+      "prompt": "Luckily, I had ___ money left, so I could buy a sandwich.",
+      "options": [
+        { "key": "A", "text": "few" },
+        { "key": "B", "text": "a few" },
+        { "key": "C", "text": "little" },
+        { "key": "D", "text": "a little" }
+      ],
+      "answer": "D",
+      "category": "quantifier",
+      "explanation": "Helyes: a little. A money megszámlálhatatlan, és a mondat pozitív (Luckily, so I could buy): volt egy kevés pénzem, ami elég volt. Az a little = egy kevés.",
+      "wrongOptions": {
+        "A": "A few megszámlálható többes számmal áll, és negatív jelentésű.",
+        "B": "Az a few megszámlálható többes számú főnévvel áll, a money viszont megszámlálhatatlan.",
+        "C": "A little névelő nélkül negatív (alig volt pénzem), ez ellentmond a Luckily és a so I could buy jelentésének."
+      }
+    },
+    {
+      "id": "4",
+      "kind": "text",
+      "prompt": "We've got ___ bread at all, so I'll go to the baker's.",
+      "answer": ["no"],
+      "maxWords": 1,
+      "category": "quantifier",
+      "explanation": "Helyes: no. Az ige állító (We've got), az at all pedig teljes hiányt jelez, ezért no = not any. Az any csak tagadó igével állhatna (We haven't got any bread)."
+    },
+    {
+      "id": "5",
+      "kind": "choice",
+      "prompt": "___ of my parents can speak German, so they usually ask me to translate.",
+      "options": [
+        { "key": "A", "text": "Both" },
+        { "key": "B", "text": "Either" },
+        { "key": "C", "text": "Neither" },
+        { "key": "D", "text": "None" }
+      ],
+      "answer": "C",
+      "category": "quantifier",
+      "explanation": "Helyes: Neither. Két személyről van szó (my parents), és egyikük sem beszél németül – ezért kérnek meg engem a fordításra. A neither állító igével áll (can speak).",
+      "wrongOptions": {
+        "A": "A both (mindkettő) ellentmondana a mondat második felének: ha mindketten tudnának németül, nem kellene fordítanom.",
+        "B": "Az either állító mondatban „bármelyik a kettő közül” jelentésű, ez itt értelmetlen.",
+        "D": "A none kettőnél több dologra használatos; két személynél neither a helyes."
+      }
+    },
+    {
+      "id": "6",
+      "kind": "text",
+      "prompt": "___ room in the hotel has a balcony and a sea view.",
+      "answer": ["Every", "Each"],
+      "maxWords": 1,
+      "category": "quantifier",
+      "explanation": "Helyes: Every vagy Each. Egyes számú főnév (room) és egyes számú ige (has) áll utána. Az All itt nem jó, mert után többes szám kellene (All the rooms have …)."
+    }
+  ],
+  "relatedCategories": ["plural", "agreement", "article"]
+}

@@ -33,7 +33,7 @@ export function MockPage({ id, kind }: { id: number; kind: MockKind }) {
         objective={contents.filter((c) => c.section !== "writing") as ObjectiveTask[]}
         writing={contents.filter((c) => c.section === "writing") as WritingTask[]}
         categoryNames={labelMaps().categories}
-        tts={{ rate: s.ttsRate, female: s.ttsVoiceFemale, male: s.ttsVoiceMale, prepSeconds: ls.prepSeconds, pauseSeconds: ls.pauseSeconds }}
+        tts={{ rate: s.ttsRate, female: s.ttsVoiceFemale, male: s.ttsVoiceMale, prepSeconds: ls?.prepSeconds ?? 60, pauseSeconds: ls?.pauseSeconds ?? 30 }}
       />
     );
   }

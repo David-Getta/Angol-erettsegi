@@ -14,14 +14,14 @@ describe("content bank", () => {
 
 describe("validator logic", () => {
   const base = JSON.parse(
-    fs.readFileSync(path.join(process.cwd(), "content/language-use/emelt/lu-emelt-urban-beekeeping-open-cloze.json"), "utf8"),
+    fs.readFileSync(path.join(process.cwd(), "content/angol/language-use/emelt/lu-emelt-urban-beekeeping-open-cloze.json"), "utf8"),
   );
   function validate(mutate: (c: typeof base) => void) {
     const dir = fs.mkdtempSync(path.join(os.tmpdir(), "content-"));
     const c = structuredClone(base);
     mutate(c);
-    fs.mkdirSync(path.join(dir, "language-use", "emelt"), { recursive: true });
-    fs.writeFileSync(path.join(dir, "language-use", "emelt", `${c.id}.json`), JSON.stringify(c));
+    fs.mkdirSync(path.join(dir, "angol", "language-use", "emelt"), { recursive: true });
+    fs.writeFileSync(path.join(dir, "angol", "language-use", "emelt", `${c.id}.json`), JSON.stringify(c));
     return validateContentDir(dir);
   }
   it("accepts the sample", () => {
@@ -68,13 +68,14 @@ describe("validator logic", () => {
 describe("lessons and model answers", () => {
   function validateFile(section: string, level: string, c: Record<string, unknown>) {
     const dir = fs.mkdtempSync(path.join(os.tmpdir(), "content-"));
-    fs.mkdirSync(path.join(dir, section, level), { recursive: true });
-    fs.writeFileSync(path.join(dir, section, level, `${c.id}.json`), JSON.stringify(c));
+    fs.mkdirSync(path.join(dir, "angol", section, level), { recursive: true });
+    fs.writeFileSync(path.join(dir, "angol", section, level, `${c.id}.json`), JSON.stringify(c));
     return validateContentDir(dir);
   }
   const lesson = {
     schemaVersion: 1,
     id: "gr-article",
+    subject: "angol",
     level: "kozep",
     source: "generated",
     topic: "nyelvtan",
@@ -120,7 +121,7 @@ describe("lessons and model answers", () => {
   });
 
   it("requires the model answer to stay within the word limit and to quote the text", () => {
-    const card = JSON.parse(fs.readFileSync(path.join(process.cwd(), "content/writing/kozep/wr-kozep-new-phone-email.json"), "utf8"));
+    const card = JSON.parse(fs.readFileSync(path.join(process.cwd(), "content/angol/writing/kozep/wr-kozep-new-phone-email.json"), "utf8"));
     card.modelAnswer = {
       text: "Hi Jamie, my new phone is great.",
       pointsCovered: card.points.map((p: { id: string }) => ({ id: p.id, quote: "not in the text" })),
@@ -135,13 +136,14 @@ describe("lessons and model answers", () => {
 describe("guides", () => {
   function validateGuide(c: Record<string, unknown>) {
     const dir = fs.mkdtempSync(path.join(os.tmpdir(), "content-"));
-    fs.mkdirSync(path.join(dir, "guide", "kozep"), { recursive: true });
-    fs.writeFileSync(path.join(dir, "guide", "kozep", `${c.id}.json`), JSON.stringify(c));
+    fs.mkdirSync(path.join(dir, "angol", "guide", "kozep"), { recursive: true });
+    fs.writeFileSync(path.join(dir, "angol", "guide", "kozep", `${c.id}.json`), JSON.stringify(c));
     return validateContentDir(dir);
   }
   const guide = {
     schemaVersion: 1,
     id: "gd-exam-reading",
+    subject: "angol",
     level: "kozep",
     source: "generated",
     topic: "utmutato",

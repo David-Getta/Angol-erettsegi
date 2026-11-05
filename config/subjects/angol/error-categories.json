@@ -1,0 +1,226 @@
+{
+  "groups": [
+    {
+      "id": "grammar",
+      "name": "Nyelvtan"
+    },
+    {
+      "id": "vocabulary",
+      "name": "Szókincs"
+    },
+    {
+      "id": "writing",
+      "name": "Írás"
+    },
+    {
+      "id": "comprehension",
+      "name": "Szövegértés"
+    }
+  ],
+  "categories": [
+    {
+      "id": "tense",
+      "name": "Igeidők",
+      "group": "grammar",
+      "description": "Az igeidő megválasztása és képzése (present perfect, past simple, future forms, continuous …)."
+    },
+    {
+      "id": "verb-form",
+      "name": "Igealakok",
+      "group": "grammar",
+      "description": "Az ige alakja: rendhagyó igék, -s végződés, segédigés szerkezetek, -ing / -ed alakok."
+    },
+    {
+      "id": "gerund-infinitive",
+      "name": "-ing vagy főnévi igenév",
+      "group": "grammar",
+      "description": "Mikor kell -ing alak, mikor to + ige vagy puszta ige (enjoy doing, decide to do, make sb do)."
+    },
+    {
+      "id": "article",
+      "name": "Névelők",
+      "group": "grammar",
+      "description": "a/an, the, vagy névelő nélkül."
+    },
+    {
+      "id": "preposition",
+      "name": "Elöljárószók",
+      "group": "grammar",
+      "description": "Elöljárószók helyhez, időhöz, igékhez, melléknevekhez kötve (interested in, depend on, at the weekend)."
+    },
+    {
+      "id": "word-order",
+      "name": "Szórend",
+      "group": "grammar",
+      "description": "Mondatrészek sorrendje, kérdő és függő kérdő mondat, határozószók helye."
+    },
+    {
+      "id": "agreement",
+      "name": "Egyeztetés",
+      "group": "grammar",
+      "description": "Alany–állítmány egyeztetés, egyes/többes szám (people are, everyone has)."
+    },
+    {
+      "id": "plural",
+      "name": "Többes szám, megszámlálhatóság",
+      "group": "grammar",
+      "description": "Megszámlálható és megszámlálhatatlan főnevek, rendhagyó többes szám (information, advice, children)."
+    },
+    {
+      "id": "pronoun",
+      "name": "Névmások",
+      "group": "grammar",
+      "description": "Személyes, birtokos, visszaható, mutató névmások (its/it's, themselves)."
+    },
+    {
+      "id": "relative-clause",
+      "name": "Vonatkozó mellékmondatok",
+      "group": "grammar",
+      "description": "who, which, that, whose, where; vesszőhasználat a mellékmondatnál."
+    },
+    {
+      "id": "modal",
+      "name": "Módbeli segédigék",
+      "group": "grammar",
+      "description": "can, could, must, have to, should, might, needn't – és múlt idejű alakjaik (should have done)."
+    },
+    {
+      "id": "passive",
+      "name": "Szenvedő szerkezet",
+      "group": "grammar",
+      "description": "be + harmadik alak minden igeidőben; have something done."
+    },
+    {
+      "id": "conditional",
+      "name": "Feltételes mondatok",
+      "group": "grammar",
+      "description": "Zero, first, second, third és vegyes feltételes mondatok; wish / if only."
+    },
+    {
+      "id": "reported-speech",
+      "name": "Függő beszéd",
+      "group": "grammar",
+      "description": "Igeidő-egyeztetés, idő- és helyhatározók változása, függő kérdések."
+    },
+    {
+      "id": "comparison",
+      "name": "Fokozás, összehasonlítás",
+      "group": "grammar",
+      "description": "Melléknevek és határozószók fokozása, as … as, the more … the more."
+    },
+    {
+      "id": "quantifier",
+      "name": "Mennyiségjelzők",
+      "group": "grammar",
+      "description": "much/many, few/little, some/any, each/every, both/either/neither."
+    },
+    {
+      "id": "linking",
+      "name": "Kötőszavak",
+      "group": "grammar",
+      "description": "although, despite, however, unless, so that, in order to – jelentés és mondatszerkezet."
+    },
+    {
+      "id": "question-form",
+      "name": "Kérdésképzés",
+      "group": "grammar",
+      "description": "Segédige és szórend kérdésben, question tags, alanykérdés."
+    },
+    {
+      "id": "auxiliary",
+      "name": "Segédigék",
+      "group": "grammar",
+      "description": "do/be/have segédige, rövid válaszok, so/neither do I."
+    },
+    {
+      "id": "word-formation",
+      "name": "Szóképzés",
+      "group": "vocabulary",
+      "description": "Képzők és előképzők: főnév, melléknév, ige, határozószó képzése (-tion, -ness, un-, -ful)."
+    },
+    {
+      "id": "collocation",
+      "name": "Kollokációk",
+      "group": "vocabulary",
+      "description": "Állandó szókapcsolatok (make a decision, do homework, heavy rain)."
+    },
+    {
+      "id": "phrasal-verb",
+      "name": "Elöljárós és határozós igék",
+      "group": "vocabulary",
+      "description": "Phrasal verbs (look after, give up, turn down)."
+    },
+    {
+      "id": "word-choice",
+      "name": "Szóhasználat",
+      "group": "vocabulary",
+      "description": "Rossz vagy pontatlan szóválasztás, hamis barátok (actual, eventually, sympathetic)."
+    },
+    {
+      "id": "spelling",
+      "name": "Helyesírás",
+      "group": "writing",
+      "description": "Betűhibák, kis/nagybetű (nyelvek, napok, nemzetiségek), egybe-/különírás."
+    },
+    {
+      "id": "punctuation",
+      "name": "Központozás",
+      "group": "writing",
+      "description": "Vessző, pont, aposztróf; levélformák központozása."
+    },
+    {
+      "id": "register",
+      "name": "Hangnem",
+      "group": "writing",
+      "description": "A helyzethez illő formális/informális nyelvhasználat, megszólítás, elköszönés, összevonások."
+    },
+    {
+      "id": "cohesion",
+      "name": "Szövegkohézió",
+      "group": "writing",
+      "description": "Bekezdések, gondolatok összekapcsolása, utalószavak, ismétlések elkerülése."
+    },
+    {
+      "id": "detail",
+      "name": "Részletek megértése",
+      "group": "comprehension",
+      "description": "Konkrét információ (név, szám, ok, időpont) kikeresése a szövegből."
+    },
+    {
+      "id": "gist",
+      "name": "Fő gondolat",
+      "group": "comprehension",
+      "description": "A bekezdés vagy a szöveg fő mondanivalójának megértése (pl. címillesztésnél)."
+    },
+    {
+      "id": "inference",
+      "name": "Következtetés",
+      "group": "comprehension",
+      "description": "Ki nem mondott, de a szövegből következő információ, a szerző/beszélő szándéka."
+    },
+    {
+      "id": "vocabulary-in-context",
+      "name": "Szó jelentése a szövegben",
+      "group": "comprehension",
+      "description": "Ismeretlen szó vagy kifejezés jelentésének kikövetkeztetése a szövegkörnyezetből."
+    },
+    {
+      "id": "text-structure",
+      "name": "Szövegszerkezet",
+      "group": "comprehension",
+      "description": "Hiányzó mondat/bekezdés visszahelyezése: utalószavak, logikai kapcsolatok."
+    },
+    {
+      "id": "attitude",
+      "name": "Vélemény, hozzáállás",
+      "group": "comprehension",
+      "description": "A beszélő vagy a szerző véleménye, érzései, hozzáállása."
+    },
+    {
+      "id": "true-false-trap",
+      "name": "Igaz / hamis / nem derül ki",
+      "group": "comprehension",
+      "description": "Az állítás és a szöveg pontos összevetése – különösen a „nem derül ki” eset."
+    }
+  ]
+}

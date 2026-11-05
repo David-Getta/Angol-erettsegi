@@ -117,7 +117,7 @@ ${t.situation}
 ${t.stimulus ? `\nKiinduló szöveg:\n${t.stimulus}\n` : ""}
 Irányítási szempontok (mindegyikre ki kell térni):
 ${t.points.map((p) => `- [${p.id}] ${p.text}`).join("\n")}
-Szóhatár: ${t.wordLimit.min}–${t.wordLimit.max} szó. Hangnem: ${t.register}.
+${t.wordLimit ? `Szóhatár: ${t.wordLimit.min}–${t.wordLimit.max} szó. ` : ""}${t.register ? `Hangnem: ${t.register}.` : ""}
 
 ÉRTÉKELÉSI SZEMPONTOK (rubrika: ${ref.id})
 ${rubricText(ref)}

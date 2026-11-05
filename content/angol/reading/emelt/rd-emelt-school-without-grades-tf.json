@@ -1,0 +1,196 @@
+{
+  "schemaVersion": 1,
+  "id": "rd-emelt-school-without-grades-tf",
+  "subject": "angol",
+  "revision": 1,
+  "level": "emelt",
+  "source": "generated",
+  "topic": "iskola",
+  "title": "Life without marks",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "reservedFor": "diagnostic",
+  "section": "reading",
+  "type": "true-false",
+  "instructions": "Read the article about a school that stopped giving grades. Decide whether the statements (1–10) are true (T) or false (F) according to the text, or whether the information is not given (NG). There is an example (0) at the beginning.",
+  "instructionsHu": "Olvasd el a cikket egy iskoláról, amely megszüntette az osztályzatokat. Döntsd el, hogy az állítások igazak (T), hamisak (F), vagy a szövegből nem derül ki (NG). A 0. a példa.",
+  "passage": {
+    "title": "Life without marks",
+    "subtitle": "Three years ago, a secondary school in Scotland stopped giving its students grades for everyday work. Was it a brave experiment or a mistake?",
+    "blocks": [
+      {
+        "text": "When Fiona Gallagher became head teacher of Ardmore High School, she noticed something that troubled her. Whenever teachers handed back a piece of marked homework, students looked at the grade at the top of the page and ignored everything else. 'Teachers were spending hours writing careful comments,' she says. 'And the students weren't reading a single word of them.'"
+      },
+      {
+        "text": "Her solution was radical. From the following September, students in the first three years at Ardmore no longer received grades or percentages for homework, class tests or projects. Instead, every piece of work came back with written comments: what had been done well, what needed improving and one specific task to try next time. Grades were not abolished entirely – students still sit the national exams at sixteen, and the school produces a short report for parents twice a year – but they disappeared from everyday classroom life."
+      },
+      {
+        "text": "The idea is not new. Educational researchers have argued for decades that grades can discourage learning, particularly among weaker students, who quickly come to see themselves as 'a C student' and stop trying. A well-known study from the 1980s found that pupils who received only comments improved more than those who received only grades – and, more surprisingly, more than those who received both. When a grade and a comment appear together, the researchers concluded, the grade wins."
+      },
+      {
+        "text": "Not everyone at Ardmore welcomed the change. Several parents complained that they no longer knew how their children were doing, and a petition calling for grades to be brought back collected nearly two hundred signatures. Some teachers were unhappy too. 'Writing proper comments takes much longer than putting a number at the top of the page,' admits maths teacher Graham Doyle. 'In the first term, I was marking until eleven o'clock most nights.' The school has since reduced the amount of homework it sets, partly to make the workload manageable."
+      },
+      {
+        "text": "Students' reactions were mixed at first. Some of the most successful ones found the new system frustrating, because they had lost a simple way of proving how good they were. 'I used to love getting an A,' says fifteen-year-old Isla. 'Without it, I wasn't sure if I was still doing well.' Others, however, felt relieved. Callum, who had always struggled with writing, says he used to throw his English homework in the bin without looking at it. 'Now I actually read what the teacher says, because it tells me what to do, not just how bad I am.'"
+      },
+      {
+        "text": "Three years on, the results are encouraging, if not spectacular. The proportion of students who say they enjoy school has risen, and teachers report that students now ask more questions about how to improve. Exam results at sixteen have stayed roughly the same – which Ms Gallagher sees as a success, since critics had predicted that they would fall. An independent evaluation by a nearby university is due to be published next year."
+      },
+      {
+        "text": "Ms Gallagher is careful not to claim too much. 'We haven't discovered a miracle,' she says. 'Some students still ask me what their grade would have been, and I understand why. But we've changed the question they ask. They used to want to know what they got. Now, more often, they want to know what to do next.'"
+      }
+    ]
+  },
+  "example": {
+    "id": "0",
+    "kind": "tf",
+    "prompt": "Before the change, students paid more attention to their grades than to their teachers' comments.",
+    "answer": "T",
+    "category": "detail",
+    "explanation": "Igaz (T): a diákok csak a lap tetején lévő jegyet nézték meg, minden mást figyelmen kívül hagytak.",
+    "evidence": "students looked at the grade at the top of the page and ignored everything else"
+  },
+  "items": [
+    {
+      "id": "1",
+      "kind": "tf",
+      "prompt": "Students at Ardmore no longer take national exams.",
+      "answer": "F",
+      "category": "true-false-trap",
+      "explanation": "Hamis (F): az osztályzatokat nem törölték el teljesen – a diákok tizenhat évesen továbbra is leteszik az országos vizsgákat („still sit the national exams at sixteen”).",
+      "evidence": "students still sit the national exams at sixteen"
+    },
+    {
+      "id": "2",
+      "kind": "tf",
+      "prompt": "Parents still receive some information about their children's progress during the school year.",
+      "answer": "T",
+      "category": "detail",
+      "explanation": "Igaz (T): az iskola évente kétszer rövid jelentést küld a szülőknek („a short report for parents twice a year”).",
+      "evidence": "the school produces a short report for parents twice a year"
+    },
+    {
+      "id": "3",
+      "kind": "tf",
+      "prompt": "Fiona Gallagher took the idea from a study she had read as a university student.",
+      "answer": "NG",
+      "category": "true-false-trap",
+      "explanation": "Nem derül ki (NG): a szöveg szerint az ötlet nem új, és létezik egy ismert 1980-as évekbeli kutatás, de arról nincs szó, hogy Gallagher honnan vette az ötletet, vagy olvasta-e a kutatást egyetemistaként.",
+      "evidence": "The idea is not new."
+    },
+    {
+      "id": "4",
+      "kind": "tf",
+      "prompt": "According to the 1980s study, students made the most progress when they received both a grade and a comment.",
+      "answer": "F",
+      "category": "detail",
+      "explanation": "Hamis (F): azok fejlődtek a legtöbbet, akik csak szöveges értékelést kaptak – többet, mint akik csak jegyet, és meglepő módon többet, mint akik mindkettőt. Ha együtt van a kettő, „a jegy győz”.",
+      "evidence": "pupils who received only comments improved more than those who received only grades – and, more surprisingly, more than those who received both"
+    },
+    {
+      "id": "5",
+      "kind": "tf",
+      "prompt": "More than half of the school's parents signed a petition against the change.",
+      "answer": "NG",
+      "category": "true-false-trap",
+      "explanation": "Nem derül ki (NG): a petíció közel kétszáz aláírást gyűjtött, de nem tudjuk, hány szülő van összesen, sőt azt sem, hogy csak szülők írták-e alá – így nem lehet eldönteni, hogy ez több-e a felüknél.",
+      "evidence": "a petition calling for grades to be brought back collected nearly two hundred signatures"
+    },
+    {
+      "id": "6",
+      "kind": "tf",
+      "prompt": "At first, Graham Doyle found that the new system took up much more of his time.",
+      "answer": "T",
+      "category": "detail",
+      "explanation": "Igaz (T): szerinte a rendes szöveges értékelés sokkal tovább tart, mint egy jegy beírása, és az első félévben a legtöbb este tizenegyig javított.",
+      "evidence": "'In the first term, I was marking until eleven o'clock most nights.'"
+    },
+    {
+      "id": "7",
+      "kind": "tf",
+      "prompt": "Students at Ardmore are now given more homework than before.",
+      "answer": "F",
+      "category": "detail",
+      "explanation": "Hamis (F): az iskola épp csökkentette a házi feladat mennyiségét („has since reduced the amount of homework”), részben azért, hogy a tanárok munkaterhe kezelhető legyen.",
+      "evidence": "The school has since reduced the amount of homework it sets"
+    },
+    {
+      "id": "8",
+      "kind": "tf",
+      "prompt": "Isla's results have become worse since grades were removed.",
+      "answer": "NG",
+      "category": "true-false-trap",
+      "explanation": "Nem derül ki (NG): Isla csak annyit mond, hogy jegyek nélkül nem volt biztos benne, hogy még mindig jól teljesít – azt nem, hogy ténylegesen romlottak-e az eredményei.",
+      "evidence": "'Without it, I wasn't sure if I was still doing well.'"
+    },
+    {
+      "id": "9",
+      "kind": "tf",
+      "prompt": "Callum now pays attention to his teacher's feedback.",
+      "answer": "T",
+      "category": "detail",
+      "explanation": "Igaz (T): korábban megnézés nélkül kidobta az angol házi feladatát, most viszont elolvassa, amit a tanár ír, mert megmondja, mit tegyen.",
+      "evidence": "'Now I actually read what the teacher says, because it tells me what to do, not just how bad I am.'"
+    },
+    {
+      "id": "10",
+      "kind": "tf",
+      "prompt": "The school's exam results at sixteen have improved significantly since the change.",
+      "answer": "F",
+      "category": "true-false-trap",
+      "explanation": "Hamis (F): a tizenhat éves kori vizsgaeredmények nagyjából ugyanazok maradtak („have stayed roughly the same”); Gallagher azért tartja ezt sikernek, mert a kritikusok romlást jósoltak.",
+      "evidence": "Exam results at sixteen have stayed roughly the same"
+    }
+  ],
+  "glossary": [
+    {
+      "term": "head teacher",
+      "meaning": "iskolaigazgató"
+    },
+    {
+      "term": "troubled",
+      "meaning": "nyugtalanított, aggasztott"
+    },
+    {
+      "term": "radical",
+      "meaning": "gyökeres, radikális"
+    },
+    {
+      "term": "abolished",
+      "meaning": "eltörölték, megszüntették"
+    },
+    {
+      "term": "sit an exam",
+      "meaning": "vizsgát tesz, vizsgázik"
+    },
+    {
+      "term": "discourage",
+      "meaning": "elbátortalanít, elvesz a kedvétől"
+    },
+    {
+      "term": "petition",
+      "meaning": "petíció, aláírásgyűjtés"
+    },
+    {
+      "term": "workload",
+      "meaning": "munkateher"
+    },
+    {
+      "term": "frustrating",
+      "meaning": "frusztráló, bosszantó"
+    },
+    {
+      "term": "relieved",
+      "meaning": "megkönnyebbült"
+    },
+    {
+      "term": "evaluation",
+      "meaning": "értékelés, kiértékelés"
+    },
+    {
+      "term": "is due to",
+      "meaning": "várhatóan, a tervek szerint (meg fog történni)"
+    }
+  ],
+  "suggestedMinutes": 15
+}

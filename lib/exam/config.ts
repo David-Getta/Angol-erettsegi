@@ -3,10 +3,13 @@ import path from "node:path";
 import { z } from "zod";
 import { paths } from "@/lib/paths";
 import { LevelSchema, type Level } from "@/lib/content/schema";
+import { getSettings } from "@/lib/settings";
 
 /**
- * Loaders for config/exam/*.json and config/app.json. Official exam facts live
- * only in these files, never in the code.
+ * Loaders for config/subjects.json, config/subjects/<subject>/*.json and
+ * config/app.json. Official exam facts live only in these files, never in the
+ * code. `examConfig` reads the config of the subject the student is working
+ * on (settings.subject); `configFor(subject)` reads any subject's config.
  */
 
 const SourceSchema = z.object({ title: z.string(), url: z.string() });
@@ -16,9 +19,35 @@ const MetaSchema = z.object({
   notes: z.array(z.string()).default([]),
 });
 
+/**
+ * Exam part slots. Every subject maps its own parts onto these five ids (the
+ * names, URL slugs and features come from the subject's structure.json):
+ * three objective slots (reading, language-use, listening), one written-task
+ * slot (writing) and one oral slot (speaking). A subject uses any subset.
+ */
 export const PartIdSchema = z.enum(["reading", "language-use", "listening", "writing", "speaking"]);
 export type PartId = z.infer<typeof PartIdSchema>;
 export const WRITTEN_PARTS: PartId[] = ["reading", "language-use", "listening", "writing"];
+export const OBJECTIVE_PARTS: PartId[] = ["reading", "language-use", "listening"];
+export const PartKindSchema = z.enum(["objective", "written", "oral"]);
+export type PartKind = z.infer<typeof PartKindSchema>;
+
+export const SubjectSchema = z.object({
+  id: z.string().regex(/^[a-z0-9-]+$/),
+  name: z.string(),
+  short: z.string(),
+  icon: z.string(),
+  color: z.string().optional(),
+  group: z.enum(["kotelezo", "nyelv", "termeszettudomany", "egyeb"]),
+  /** Foreign language: listening with TTS, speech recognition, word cards en-hu style. */
+  language: z.boolean().default(false),
+  available: z.boolean().default(true),
+  defaultLevel: LevelSchema.default("kozep"),
+  defaultExamDate: z.string().regex(/^\d{4}-\d{2}-\d{2}$/),
+  description: z.string(),
+});
+export type Subject = z.infer<typeof SubjectSchema>;
+export const SubjectsSchema = z.object({ meta: MetaSchema, subjects: z.array(SubjectSchema).min(1) });
 
 const ConversionSchema = z.object({
   method: z.enum(["proportional", "table", "identity"]).default("proportional"),
@@ -27,10 +56,30 @@ const ConversionSchema = z.object({
   table: z.array(z.object({ raw: z.number(), points: z.number() })).optional(),
 });
 
+/** What the validator and the UI expect from the tasks of a part. */
+const PartFeaturesSchema = z.object({
+  /** Items must quote the passage / script (reading, listening). */
+  evidence: z.boolean().default(false),
+  /** A glossary is required (reading of a language). */
+  glossary: z.boolean().default(false),
+  /** Choice items must explain why the wrong options are wrong. */
+  wrongOptions: z.boolean().default(false),
+  /** Tasks carry a listening script read by TTS. */
+  audio: z.boolean().default(false),
+  /** Items can be practised on their own (targeted practice, mistake review). */
+  targeted: z.boolean().default(false),
+  /** Allowed error-category groups for the items (empty = any). */
+  categoryGroups: z.array(z.string()).default([]),
+});
+export type PartFeatures = z.infer<typeof PartFeaturesSchema>;
+
 const PartSchema = z.object({
   id: PartIdSchema,
+  kind: PartKindSchema,
+  /** URL segment of the part in this subject (e.g. olvasas, rovid-feladatok). */
+  slug: z.string().regex(/^[a-z0-9-]+$/),
   name: z.string(),
-  nameEn: z.string(),
+  nameEn: z.string().optional(),
   written: z.boolean(),
   order: z.number().int(),
   timeMin: z.number().positive().optional(),
@@ -40,6 +89,7 @@ const PartSchema = z.object({
   mockTaskCount: z.number().int().positive().optional(),
   conversion: ConversionSchema.default({ method: "proportional" }),
   notes: z.array(z.string()).default([]),
+  features: PartFeaturesSchema.default({ evidence: false, glossary: false, wrongOptions: false, audio: false, targeted: false, categoryGroups: [] }),
 });
 export type ExamPart = z.infer<typeof PartSchema>;
 
@@ -48,14 +98,17 @@ const LevelStructureSchema = z.object({
   cefr: z.string(),
   writtenTotalMin: z.number().positive(),
   totalPoints: z.number().positive(),
-  parts: z.array(PartSchema).min(5),
+  parts: z.array(PartSchema).min(1),
   breaks: z.array(z.object({ afterPart: PartIdSchema, minutes: z.number(), note: z.string().optional() })).default([]),
-  listening: z.object({ plays: z.number().int(), prepSeconds: z.number().int(), pauseSeconds: z.number().int() }),
-  oral: z.object({
-    durationMin: z.string(),
-    prepMin: z.string().optional(),
-    parts: z.array(z.object({ number: z.number().int(), name: z.string(), description: z.string(), minutes: z.string().optional() })),
-  }),
+  listening: z.object({ plays: z.number().int(), prepSeconds: z.number().int(), pauseSeconds: z.number().int() }).optional(),
+  oral: z
+    .object({
+      durationMin: z.string(),
+      prepMin: z.string().optional(),
+      parts: z.array(z.object({ number: z.number().int(), name: z.string(), description: z.string(), minutes: z.string().optional() })),
+      note: z.string().optional(),
+    })
+    .optional(),
   textLength: z
     .record(z.string(), z.object({ min: z.number().int(), max: z.number().int() }))
     .default({}),
@@ -78,16 +131,18 @@ export const GradingSchema = z.object({
     LevelSchema,
     z.array(z.object({ grade: z.number().int().min(1).max(5), name: z.string(), minPct: z.number() })),
   ),
-  languageExamEquivalence: z.array(
-    z.object({
-      level: LevelSchema,
-      minPct: z.number(),
-      maxPct: z.number().optional(),
-      cefr: z.string(),
-      label: z.string(),
-    }),
-  ),
-  languageExamNote: z.string(),
+  languageExamEquivalence: z
+    .array(
+      z.object({
+        level: LevelSchema,
+        minPct: z.number(),
+        maxPct: z.number().optional(),
+        cefr: z.string(),
+        label: z.string(),
+      }),
+    )
+    .default([]),
+  languageExamNote: z.string().default(""),
   percentRounding: z.enum(["round", "floor"]).default("round"),
 });
 export type Grading = z.infer<typeof GradingSchema>;
@@ -106,9 +161,11 @@ export type RubricCriterion = z.infer<typeof CriterionSchema>;
 const RubricTaskSchema = z.object({
   taskNumber: z.number().int(),
   name: z.string(),
-  textTypes: z.array(z.string()),
-  wordLimit: z.object({ min: z.number().int(), max: z.number().int() }),
-  guidingPoints: z.string(),
+  /** Content task types (config task-types.json → writing) this rubric task covers. */
+  textTypes: z.array(z.string()).default([]),
+  /** Word limit of the text (languages, essays); absent for e.g. maths solutions. */
+  wordLimit: z.object({ min: z.number().int(), max: z.number().int() }).optional(),
+  guidingPoints: z.string().default(""),
   suggestedMinutes: z.number().optional(),
   maxRaw: z.number().positive(),
   criteria: z.array(CriterionSchema).min(1),
@@ -179,20 +236,23 @@ export type TaskType = z.infer<typeof TaskTypeSchema>;
 
 export const TaskTypesSchema = z.object({
   meta: MetaSchema,
-  reading: z.array(TaskTypeSchema),
-  "language-use": z.array(TaskTypeSchema),
-  listening: z.array(TaskTypeSchema),
-  writing: z.array(TaskTypeSchema),
-  speaking: z.array(TaskTypeSchema),
+  reading: z.array(TaskTypeSchema).default([]),
+  "language-use": z.array(TaskTypeSchema).default([]),
+  listening: z.array(TaskTypeSchema).default([]),
+  writing: z.array(TaskTypeSchema).default([]),
+  speaking: z.array(TaskTypeSchema).default([]),
 });
 export type TaskTypes = z.infer<typeof TaskTypesSchema>;
 
 export const ErrorCategoriesSchema = z.object({
+  meta: MetaSchema.optional(),
+  /** Group ids with Hungarian names; the English subject uses grammar / vocabulary / writing / comprehension. */
+  groups: z.array(z.object({ id: z.string(), name: z.string() })).default([]),
   categories: z.array(
     z.object({
       id: z.string(),
       name: z.string(),
-      group: z.enum(["grammar", "vocabulary", "writing", "comprehension"]),
+      group: z.string(),
       description: z.string(),
     }),
   ),
@@ -205,7 +265,7 @@ export const AppConfigSchema = z.object({
   estimate: z.object({ recentAttempts: z.number().int().positive(), decay: z.number().positive().max(1) }),
   targeted: z.object({ itemsPerRound: z.number().int().positive(), minBankItems: z.number().int().positive() }),
   dailyPlan: z.object({ minTasks: z.number().int(), maxTasks: z.number().int() }),
-  textAnswers: z.object({ acceptNearMissIn: z.array(z.enum(["reading", "language-use", "listening"])).default([]) }),
+  textAnswers: z.object({ acceptNearMissIn: z.array(PartIdSchema).default([]) }),
   /** Re-asking language-use items the student got wrong: not before minAgeHours after the mistake. */
   review: z
     .object({ minAgeHours: z.number().nonnegative(), itemsPerRound: z.number().int().positive(), planMinDue: z.number().int().positive() })
@@ -231,32 +291,80 @@ function load<T>(file: string, schema: z.ZodType<T>): T {
   return parsed.data;
 }
 
+export function subjects(): Subject[] {
+  return load("subjects.json", SubjectsSchema).subjects.filter((x) => x.available);
+}
+
+export function subject(id: string): Subject {
+  const s = load("subjects.json", SubjectsSchema).subjects.find((x) => x.id === id);
+  if (!s) throw new Error(`Ismeretlen tantárgy: ${id}`);
+  return s;
+}
+
+export function isSubject(id: string): boolean {
+  return load("subjects.json", SubjectsSchema).subjects.some((x) => x.id === id);
+}
+
+/** The subject the student is working on (settings). */
+export function currentSubject(): string {
+  return getSettings().subject;
+}
+
+export type SubjectConfig = ReturnType<typeof configFor>;
+
+/** The exam config of one subject (used by the validator, the seed and the commands for any subject). */
+export function configFor(subjectId: string) {
+  const dir = `subjects/${subjectId}`;
+  return {
+    id: subjectId,
+    info: () => subject(subjectId),
+    structure: () => load(`${dir}/structure.json`, StructureSchema),
+    grading: () => load(`${dir}/grading.json`, GradingSchema),
+    writingRubric: (level: Level) => load(`${dir}/writing-rubric-${level}.json`, WritingRubricSchema),
+    speakingRubric: (level: Level) => load(`${dir}/speaking-rubric-${level}.json`, SpeakingRubricSchema),
+    topics: () => load(`${dir}/topics.json`, TopicsSchema),
+    taskTypes: () => load(`${dir}/task-types.json`, TaskTypesSchema),
+    errorCategories: () => load(`${dir}/error-categories.json`, ErrorCategoriesSchema),
+    hasRubric: (kind: "writing" | "speaking", level: Level) => fs.existsSync(path.join(paths.config, `${dir}/${kind}-rubric-${level}.json`)),
+  };
+}
+
+/** The config of the current subject (server side: it reads the settings). */
 export const examConfig = {
-  structure: () => load("exam/structure.json", StructureSchema),
-  grading: () => load("exam/grading.json", GradingSchema),
-  writingRubric: (level: Level) => load(`exam/writing-rubric-${level}.json`, WritingRubricSchema),
-  speakingRubric: (level: Level) => load(`exam/speaking-rubric-${level}.json`, SpeakingRubricSchema),
-  topics: () => load("exam/topics.json", TopicsSchema),
-  taskTypes: () => load("exam/task-types.json", TaskTypesSchema),
-  errorCategories: () => load("exam/error-categories.json", ErrorCategoriesSchema),
+  subject: () => subject(currentSubject()),
+  structure: () => configFor(currentSubject()).structure(),
+  grading: () => configFor(currentSubject()).grading(),
+  writingRubric: (level: Level) => configFor(currentSubject()).writingRubric(level),
+  speakingRubric: (level: Level) => configFor(currentSubject()).speakingRubric(level),
+  topics: () => configFor(currentSubject()).topics(),
+  taskTypes: () => configFor(currentSubject()).taskTypes(),
+  errorCategories: () => configFor(currentSubject()).errorCategories(),
   app: () => load("app.json", AppConfigSchema),
 };
 
 export type ConfigProvenance = { file: string; verifiedAt: string | null; notes: string[]; sources: { title: string; url: string }[] };
 
-/** Where each official exam config file comes from (shown on the settings page). */
-export function examConfigProvenance(): ConfigProvenance[] {
-  const entries: [string, { meta: z.infer<typeof MetaSchema> }][] = [
-    ["exam/structure.json", examConfig.structure()],
-    ["exam/grading.json", examConfig.grading()],
-    ["exam/writing-rubric-kozep.json", examConfig.writingRubric("kozep")],
-    ["exam/writing-rubric-emelt.json", examConfig.writingRubric("emelt")],
-    ["exam/speaking-rubric-kozep.json", examConfig.speakingRubric("kozep")],
-    ["exam/speaking-rubric-emelt.json", examConfig.speakingRubric("emelt")],
-    ["exam/topics.json", examConfig.topics()],
-    ["exam/task-types.json", examConfig.taskTypes()],
+/** Where each official exam config file of a subject comes from (shown on the settings page). */
+export function examConfigProvenance(subjectId: string = currentSubject()): ConfigProvenance[] {
+  const c = configFor(subjectId);
+  const entries: [string, { meta?: z.infer<typeof MetaSchema> } | null][] = [
+    ["structure.json", c.structure()],
+    ["grading.json", c.grading()],
+    ["topics.json", c.topics()],
+    ["task-types.json", c.taskTypes()],
   ];
-  return entries.map(([file, c]) => ({ file: `config/${file}`, verifiedAt: c.meta.verifiedAt ?? null, notes: c.meta.notes, sources: c.meta.sources }));
+  for (const level of ["kozep", "emelt"] as const) {
+    if (c.hasRubric("writing", level)) entries.push([`writing-rubric-${level}.json`, c.writingRubric(level)]);
+    if (c.hasRubric("speaking", level)) entries.push([`speaking-rubric-${level}.json`, c.speakingRubric(level)]);
+  }
+  return entries
+    .filter((e): e is [string, { meta?: z.infer<typeof MetaSchema> }] => e[1] !== null)
+    .map(([file, cfg]) => ({
+      file: `config/subjects/${subjectId}/${file}`,
+      verifiedAt: cfg.meta?.verifiedAt ?? null,
+      notes: cfg.meta?.notes ?? [],
+      sources: cfg.meta?.sources ?? [],
+    }));
 }
 
 export function levelStructure(level: Level): LevelStructure {
@@ -267,6 +375,49 @@ export function part(level: Level, id: PartId): ExamPart {
   const p = levelStructure(level).parts.find((x) => x.id === id);
   if (!p) throw new Error(`Ismeretlen vizsgarész: ${id}`);
   return p;
+}
+
+/** The part with this id in the current subject (any level), or undefined if the subject does not use the slot. */
+export function findPart(id: string, level?: Level): ExamPart | undefined {
+  const st = examConfig.structure();
+  const levels = level ? [st.levels[level]] : [st.levels.kozep, st.levels.emelt];
+  for (const l of levels) {
+    const p = l.parts.find((x) => x.id === id);
+    if (p) return p;
+  }
+  return undefined;
+}
+
+/** Hungarian name of a part / section id in the current subject (falls back to the id). */
+export function partName(id: string, level?: Level): string {
+  return findPart(id, level)?.name ?? id;
+}
+
+/** The part behind a URL slug in the current subject. */
+export function partBySlug(slug: string, level?: Level): ExamPart | undefined {
+  const st = examConfig.structure();
+  const levels = level ? [st.levels[level]] : [st.levels.kozep, st.levels.emelt];
+  for (const l of levels) {
+    const p = l.parts.find((x) => x.slug === slug);
+    if (p) return p;
+  }
+  return undefined;
+}
+
+/** URL path of a part in the current subject. */
+export function partPath(id: string): string {
+  const p = findPart(id);
+  return p ? `/${p.slug}` : `/${id}`;
+}
+
+/** The parts of a level with a given kind. */
+export function partsOfKind(level: Level, kind: PartKind): ExamPart[] {
+  return levelStructure(level).parts.filter((p) => p.kind === kind);
+}
+
+/** Name of an error-category group of the current subject. */
+export function categoryGroupName(id: string): string {
+  return examConfig.errorCategories().groups.find((g) => g.id === id)?.name ?? id;
 }
 
 export function topicName(id: string): string {

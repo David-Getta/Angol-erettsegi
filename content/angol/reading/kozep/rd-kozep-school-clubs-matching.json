@@ -1,0 +1,184 @@
+{
+  "schemaVersion": 1,
+  "id": "rd-kozep-school-clubs-matching",
+  "subject": "angol",
+  "revision": 1,
+  "level": "kozep",
+  "source": "generated",
+  "topic": "iskola",
+  "title": "Join a club this term!",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "reading",
+  "type": "matching",
+  "instructions": "Read the descriptions of five after-school clubs (A–E). Which club do the statements (1–9) refer to? Write the correct letter. You can use the letters more than once. There is an example (0) at the beginning.",
+  "instructionsHu": "Olvasd el öt iskolai szakkör leírását (A–E), és döntsd el, melyik szakkörre vonatkoznak az állítások (1–9). Egy betűt többször is használhatsz. A 0. a példa.",
+  "passage": {
+    "title": "Join a club this term!",
+    "subtitle": "After-school clubs at our school – sign up at the school office by 30 September",
+    "blocks": [
+      {
+        "heading": "A – Robotics Club",
+        "text": "Do you like building things and solving problems? In the Robotics Club, you work in teams of three to build and program small robots. No experience is needed – older members will teach you the basics. We meet every Tuesday from 3.30 to 5 pm in the computer room. In March, we take part in an international competition in Vienna, and the school pays for the trip. Please note: places are limited to 18 students, so sign up early!"
+      },
+      {
+        "heading": "B – Drama Club",
+        "text": "If you love acting – or if you are shy and want to become more confident – the Drama Club is for you. We play drama games, write short scenes and, at the end of the year, put on a full play for parents and friends. Not everyone has to be on stage: we also need people to help with lights, music and costumes. We meet on Wednesdays and Fridays after the last lesson in the school hall."
+      },
+      {
+        "heading": "C – Eco Club",
+        "text": "The Eco Club wants to make our school greener. Last year, we started a recycling system in every classroom and planted thirty trees behind the sports field. This year, we are going to build a vegetable garden, and the vegetables we grow will be used in the school canteen. We meet every Monday at lunchtime, so you don't have to stay after school. Bring your own sandwiches!"
+      },
+      {
+        "heading": "D – Debate Club",
+        "text": "Do you enjoy arguing with your friends? Then turn it into a skill! In the Debate Club, you will learn how to speak in public, find strong arguments and listen to the other side. All our debates are in English, so the club is also great practice for your language exams. We meet on Thursdays from 4 to 5.30 pm. Members must come to at least three meetings a month."
+      },
+      {
+        "heading": "E – Photography Club",
+        "text": "You don't need an expensive camera to take great photos – a phone is enough. In our club, you will learn about light, composition and editing. Once a month we go on a photo walk around the town, usually on a Saturday morning. The best photos are shown at an exhibition in the school library in May. Membership costs 2,000 forints a term, which pays for printing the photos."
+      }
+    ]
+  },
+  "options": [
+    { "key": "A", "text": "Robotics Club" },
+    { "key": "B", "text": "Drama Club" },
+    { "key": "C", "text": "Eco Club" },
+    { "key": "D", "text": "Debate Club" },
+    { "key": "E", "text": "Photography Club" }
+  ],
+  "optionsReusable": true,
+  "example": {
+    "id": "0",
+    "kind": "match",
+    "prompt": "This club meets during the lunch break.",
+    "answer": "C",
+    "category": "detail",
+    "explanation": "Az Eco Club hétfőnként ebédidőben találkozik („at lunchtime”), ezért nem kell iskola után maradni – C.",
+    "evidence": "We meet every Monday at lunchtime"
+  },
+  "items": [
+    {
+      "id": "1",
+      "kind": "match",
+      "prompt": "Members can travel to another city for a competition.",
+      "answer": "A",
+      "category": "detail",
+      "explanation": "A Robotics Club márciusban egy nemzetközi versenyen vesz részt Bécsben, és az utat az iskola fizeti – A.",
+      "evidence": "In March, we take part in an international competition in Vienna",
+      "wrongOptions": {
+        "E": "A fotósok is elmennek fotósétára, de csak a saját városban („around the town”), és nem versenyre."
+      }
+    },
+    {
+      "id": "2",
+      "kind": "match",
+      "prompt": "Some members help with the show instead of acting.",
+      "answer": "B",
+      "category": "detail",
+      "explanation": "A Drama Clubban nem kell mindenkinek színpadra állnia: kellenek emberek a fényekhez, a zenéhez és a jelmezekhez is – B.",
+      "evidence": "Not everyone has to be on stage: we also need people to help with lights, music and costumes.",
+      "wrongOptions": {
+        "D": "A vitakörben nyilvánosan kell beszélni, de ott nincs színdarab, és nincs szó segítőkről, akik nem szerepelnek."
+      }
+    },
+    {
+      "id": "3",
+      "kind": "match",
+      "prompt": "It can help you prepare for your English exams.",
+      "answer": "D",
+      "category": "detail",
+      "explanation": "A Debate Club minden vitája angol nyelvű, ezért jó gyakorlás a nyelvvizsgákra – D.",
+      "evidence": "All our debates are in English, so the club is also great practice for your language exams.",
+      "wrongOptions": {
+        "B": "A színjátszókörben is beszélnek, de a szöveg nem említ angol nyelvet vagy nyelvvizsgát."
+      }
+    },
+    {
+      "id": "4",
+      "kind": "match",
+      "prompt": "Members have to pay a fee.",
+      "answer": "E",
+      "category": "detail",
+      "explanation": "A Photography Club tagsága félévente 2000 forint, ebből fizetik a fényképek nyomtatását – E.",
+      "evidence": "Membership costs 2,000 forints a term",
+      "wrongOptions": {
+        "A": "A Robotics Clubnál pénzről csak annyi szó esik, hogy a bécsi utat az iskola fizeti – a tagoknak nem kell fizetniük."
+      }
+    },
+    {
+      "id": "5",
+      "kind": "match",
+      "prompt": "Only a limited number of students can join.",
+      "answer": "A",
+      "category": "detail",
+      "explanation": "A Robotics Clubban legfeljebb 18 diák lehet („places are limited to 18 students”), ezért érdemes korán jelentkezni – A.",
+      "evidence": "places are limited to 18 students",
+      "wrongOptions": {
+        "D": "A Debate Clubnál a minimális részvétel van megszabva (legalább három alkalom havonta), nem a létszám."
+      }
+    },
+    {
+      "id": "6",
+      "kind": "match",
+      "prompt": "The club meets twice a week.",
+      "answer": "B",
+      "category": "detail",
+      "explanation": "A Drama Club szerdán és pénteken is találkozik, vagyis hetente kétszer – B. A többi szakkör hetente egyszer (vagy havonta) tart foglalkozást.",
+      "evidence": "We meet on Wednesdays and Fridays after the last lesson in the school hall.",
+      "wrongOptions": {
+        "D": "A Debate Club csak csütörtökönként találkozik; a „három alkalom havonta” a kötelező minimum, nem heti két alkalom."
+      }
+    },
+    {
+      "id": "7",
+      "kind": "match",
+      "prompt": "Food grown by the members will be eaten at school.",
+      "answer": "C",
+      "category": "detail",
+      "explanation": "Az Eco Club zöldségeskertet épít, és a megtermelt zöldségeket az iskolai menzán használják fel – C.",
+      "evidence": "the vegetables we grow will be used in the school canteen",
+      "wrongOptions": {
+        "E": "A Photography Club munkáit (a legjobb fotókat) is az iskolában mutatják be, de ezek nem élelmiszerek; megtermelt ételről csak az Eco Club ír."
+      }
+    },
+    {
+      "id": "8",
+      "kind": "match",
+      "prompt": "Some activities take place at the weekend.",
+      "answer": "E",
+      "category": "detail",
+      "explanation": "A Photography Club havonta fotósétára megy, általában szombat délelőtt – ez hétvége, tehát E.",
+      "evidence": "usually on a Saturday morning",
+      "wrongOptions": {
+        "A": "A bécsi verseny időpontjáról csak annyit tudunk, hogy márciusban van – azt nem, hogy hétvégén."
+      }
+    },
+    {
+      "id": "9",
+      "kind": "match",
+      "prompt": "There is a minimum number of meetings that members must attend.",
+      "answer": "D",
+      "category": "detail",
+      "explanation": "A Debate Club tagjainak havonta legalább három foglalkozáson részt kell venniük – D.",
+      "evidence": "Members must come to at least three meetings a month.",
+      "wrongOptions": {
+        "A": "A Robotics Clubnál a létszám korlátozott (18 fő), de kötelező részvételi minimumról nincs szó."
+      }
+    }
+  ],
+  "glossary": [
+    { "term": "solving problems", "meaning": "problémamegoldás" },
+    { "term": "sign up", "meaning": "jelentkezik, feliratkozik" },
+    { "term": "shy", "meaning": "félénk, szégyenlős" },
+    { "term": "confident", "meaning": "magabiztos" },
+    { "term": "put on a play", "meaning": "színdarabot előad" },
+    { "term": "costumes", "meaning": "jelmezek" },
+    { "term": "recycling", "meaning": "szelektív gyűjtés, újrahasznosítás" },
+    { "term": "canteen", "meaning": "(iskolai) menza, ebédlő" },
+    { "term": "arguing", "meaning": "vitatkozás (argue = vitatkozik, érvel)" },
+    { "term": "in public", "meaning": "nyilvánosan, közönség előtt" },
+    { "term": "exhibition", "meaning": "kiállítás" },
+    { "term": "membership", "meaning": "tagság, tagdíj" }
+  ],
+  "suggestedMinutes": 12
+}

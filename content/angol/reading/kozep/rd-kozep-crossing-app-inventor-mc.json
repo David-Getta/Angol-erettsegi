@@ -1,0 +1,373 @@
+{
+  "schemaVersion": 1,
+  "id": "rd-kozep-crossing-app-inventor-mc",
+  "subject": "angol",
+  "revision": 1,
+  "level": "kozep",
+  "source": "generated",
+  "topic": "tudomany",
+  "title": "A traffic light you can feel",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "reservedFor": "mock",
+  "section": "reading",
+  "type": "multiple-choice",
+  "instructions": "Read the article about a young inventor and answer the questions. Choose the best answer (A, B, C or D) for each question (1–8). There is an example (0) at the beginning.",
+  "instructionsHu": "Olvasd el a cikket egy fiatal feltalálóról, és válaszd ki a legjobb választ (A, B, C vagy D) minden kérdésre (1–8). A 0. a példa.",
+  "passage": {
+    "title": "A traffic light you can feel",
+    "subtitle": "How a school project became an app used by thousands of people",
+    "blocks": [
+      {
+        "text": "Two years ago, Arjun Mehta, then 15, was waiting at a busy crossing in Leicester when he noticed an older man with a white stick standing next to him. The traffic lights at that crossing didn't make any sound, so the man had no way of knowing when it was safe to cross. 'He just waited until other people started walking,' Arjun remembers. 'I thought: there must be a better way.'"
+      },
+      {
+        "text": "At home, Arjun started reading about how computers can recognise objects in pictures. He had already done some simple programming in his computer science lessons, but this was much more difficult. 'For about three months, nothing worked,' he says. 'My app thought that red cars and shop signs were traffic lights.' He spent most of his free time on the project, often until late at night, which his parents were not very happy about."
+      },
+      {
+        "text": "The breakthrough came when his computer science teacher, Mrs Okafor, suggested a different approach. Instead of teaching the app to find traffic lights anywhere in the picture, Arjun asked users to point the phone roughly in the right direction first. The app then only had to look at a small part of the image. Suddenly, it was right more than nine times out of ten."
+      },
+      {
+        "text": "The finished app, called CrossSafe, is very simple to use. The user holds up the phone at a crossing, and it vibrates once for a red light and three times for a green one. It can also say 'wait' or 'cross' through headphones. Arjun tested the app with the help of a local charity for blind people, whose members gave him a lot of useful advice. For example, they told him that loud sounds from the phone were a bad idea, because blind people need to hear the traffic."
+      },
+      {
+        "text": "Last spring, CrossSafe won first prize in a national competition for young scientists. Since then, more than 20,000 people have downloaded it, and Arjun has received messages from users as far away as Brazil and Japan. The app is free, and he says he wants to keep it that way."
+      },
+      {
+        "text": "Arjun is now preparing for his final exams and hopes to study engineering at university. 'People think inventing is about having one brilliant idea,' he says. 'Actually, it's mostly about not giving up when things go wrong.'"
+      }
+    ]
+  },
+  "example": {
+    "id": "0",
+    "kind": "choice",
+    "prompt": "What did Arjun notice at the crossing?",
+    "options": [
+      {
+        "key": "A",
+        "text": "A blind man could not tell when it was safe to cross."
+      },
+      {
+        "key": "B",
+        "text": "The traffic lights were broken."
+      },
+      {
+        "key": "C",
+        "text": "An older man crossed at a red light."
+      },
+      {
+        "key": "D",
+        "text": "There was too much traffic."
+      }
+    ],
+    "answer": "A",
+    "category": "detail",
+    "explanation": "A fehér botos (vak) férfi nem tudhatta, mikor biztonságos átmenni, mert a lámpa nem adott hangjelzést – ez az A.",
+    "evidence": "the man had no way of knowing when it was safe to cross"
+  },
+  "items": [
+    {
+      "id": "1",
+      "kind": "choice",
+      "prompt": "How did the man at the crossing know when to cross?",
+      "options": [
+        {
+          "key": "A",
+          "text": "He listened for a sound from the traffic lights."
+        },
+        {
+          "key": "B",
+          "text": "He asked Arjun for help."
+        },
+        {
+          "key": "C",
+          "text": "He followed other people."
+        },
+        {
+          "key": "D",
+          "text": "He used an app on his phone."
+        }
+      ],
+      "answer": "C",
+      "category": "detail",
+      "explanation": "Arjun szerint a férfi egyszerűen megvárta, amíg mások elindultak – vagyis a többi embert követte. Ez a C.",
+      "evidence": "He just waited until other people started walking",
+      "wrongOptions": {
+        "A": "A lámpa éppen nem adott ki semmilyen hangot („didn't make any sound”).",
+        "B": "Nincs szó arról, hogy Arjuntól segítséget kért volna.",
+        "D": "Ekkor még nem létezett az alkalmazás – épp ez a jelenet adta Arjunnak az ötletet."
+      }
+    },
+    {
+      "id": "2",
+      "kind": "choice",
+      "prompt": "Before the project, Arjun",
+      "options": [
+        {
+          "key": "A",
+          "text": "had never written a computer program."
+        },
+        {
+          "key": "B",
+          "text": "had some basic programming experience."
+        },
+        {
+          "key": "C",
+          "text": "had already built another app."
+        },
+        {
+          "key": "D",
+          "text": "had studied object recognition at school."
+        }
+      ],
+      "answer": "B",
+      "category": "detail",
+      "explanation": "Informatikaórán már programozott egyszerű dolgokat („some simple programming”), vagyis volt némi alapszintű tapasztalata. Ez a B.",
+      "evidence": "He had already done some simple programming in his computer science lessons",
+      "wrongOptions": {
+        "A": "Már programozott korábban, ha csak egyszerű dolgokat is.",
+        "C": "Arról nincs szó, hogy korábban már készített volna alkalmazást.",
+        "D": "A tárgyfelismerésről otthon kezdett olvasni, nem az iskolában tanulta."
+      }
+    },
+    {
+      "id": "3",
+      "kind": "choice",
+      "prompt": "What was the problem during the first three months?",
+      "options": [
+        {
+          "key": "A",
+          "text": "The app thought other things were traffic lights."
+        },
+        {
+          "key": "B",
+          "text": "Arjun's parents did not let him work on the project."
+        },
+        {
+          "key": "C",
+          "text": "Arjun's phone camera was not good enough."
+        },
+        {
+          "key": "D",
+          "text": "The app only worked at night."
+        }
+      ],
+      "answer": "A",
+      "category": "detail",
+      "explanation": "Az alkalmazás a piros autókat és a bolti cégéreket is közlekedési lámpának nézte – tehát más dolgokat tévesztett össze a lámpával. Ez az A.",
+      "evidence": "My app thought that red cars and shop signs were traffic lights.",
+      "wrongOptions": {
+        "B": "Csapda: a szülei nem örültek, hogy késő estig dolgozik („not very happy”), de nem tiltották meg neki.",
+        "C": "A telefon kamerájáról nem esik szó.",
+        "D": "Az éjszaka csak annyiban szerepel, hogy Arjun gyakran késő estig dolgozott."
+      }
+    },
+    {
+      "id": "4",
+      "kind": "choice",
+      "prompt": "How did Mrs Okafor's idea help?",
+      "options": [
+        {
+          "key": "A",
+          "text": "The app had to check only part of the picture."
+        },
+        {
+          "key": "B",
+          "text": "Arjun could use a better camera."
+        },
+        {
+          "key": "C",
+          "text": "The app learnt to recognise cars."
+        },
+        {
+          "key": "D",
+          "text": "Users had to take several photos."
+        }
+      ],
+      "answer": "A",
+      "category": "detail",
+      "explanation": "A tanárnő ötlete után a felhasználó először nagyjából a jó irányba tartja a telefont, így az alkalmazásnak csak a kép egy kis részét kell vizsgálnia. Ez az A.",
+      "evidence": "The app then only had to look at a small part of the image.",
+      "wrongOptions": {
+        "B": "Jobb kameráról nincs szó; a megoldás egy új módszer volt (different approach).",
+        "C": "Az autók felismerése nem volt cél – épp az volt a hiba, hogy az autókat lámpának nézte.",
+        "D": "Több fénykép készítéséről nincs szó; a telefont csak a megfelelő irányba kell tartani."
+      }
+    },
+    {
+      "id": "5",
+      "kind": "choice",
+      "prompt": "How does CrossSafe tell the user that the light is green?",
+      "options": [
+        {
+          "key": "A",
+          "text": "It vibrates once."
+        },
+        {
+          "key": "B",
+          "text": "It vibrates three times."
+        },
+        {
+          "key": "C",
+          "text": "It makes a loud sound."
+        },
+        {
+          "key": "D",
+          "text": "Its screen turns green."
+        }
+      ],
+      "answer": "B",
+      "category": "detail",
+      "explanation": "Pirosnál egyszer, zöldnél háromszor rezeg a telefon – ez a B.",
+      "evidence": "it vibrates once for a red light and three times for a green one",
+      "wrongOptions": {
+        "A": "Egyszer a piros lámpánál rezeg, nem a zöldnél.",
+        "C": "A hangos jelzést a vakok szervezete kifejezetten rossz ötletnek tartotta; a „wait/cross” szöveget fülhallgatón mondja.",
+        "D": "A képernyő színéről nincs szó – vak felhasználóknak ez nem is segítene."
+      }
+    },
+    {
+      "id": "6",
+      "kind": "choice",
+      "prompt": "What advice did members of the charity give Arjun?",
+      "options": [
+        {
+          "key": "A",
+          "text": "The phone should vibrate more strongly."
+        },
+        {
+          "key": "B",
+          "text": "The app should not make loud sounds."
+        },
+        {
+          "key": "C",
+          "text": "The app should be free."
+        },
+        {
+          "key": "D",
+          "text": "Users should not wear headphones."
+        }
+      ],
+      "answer": "B",
+      "category": "detail",
+      "explanation": "Azt mondták neki, hogy a telefon hangos hangjai rossz ötlet, mert a vakoknak hallaniuk kell a forgalmat. Ez a B.",
+      "evidence": "they told him that loud sounds from the phone were a bad idea, because blind people need to hear the traffic",
+      "wrongOptions": {
+        "A": "A rezgés erősségéről nem adtak tanácsot.",
+        "C": "Az ingyenesség Arjun saját döntése („he says he wants to keep it that way”), nem a szervezet tanácsa.",
+        "D": "A fülhallgatót a szöveg az alkalmazás egyik funkciójaként említi, nem tiltották."
+      }
+    },
+    {
+      "id": "7",
+      "kind": "choice",
+      "prompt": "What do we learn about CrossSafe since the competition?",
+      "options": [
+        {
+          "key": "A",
+          "text": "People in other countries use it too."
+        },
+        {
+          "key": "B",
+          "text": "Users now have to pay for it."
+        },
+        {
+          "key": "C",
+          "text": "It can only be used in Leicester."
+        },
+        {
+          "key": "D",
+          "text": "It has won prizes in Brazil and Japan."
+        }
+      ],
+      "answer": "A",
+      "category": "inference",
+      "explanation": "Arjun még Brazíliából és Japánból is kapott üzeneteket felhasználóktól – tehát más országokban is használják. Ez az A.",
+      "evidence": "Arjun has received messages from users as far away as Brazil and Japan",
+      "wrongOptions": {
+        "B": "Az alkalmazás ingyenes, és Arjun az is akarja hagyni.",
+        "C": "Más országokból is vannak felhasználói, tehát nem csak Leicesterben használható.",
+        "D": "Brazíliából és Japánból üzeneteket kapott, nem díjakat; díjat egy (brit) országos versenyen nyert."
+      }
+    },
+    {
+      "id": "8",
+      "kind": "choice",
+      "prompt": "What is Arjun's main message at the end of the article?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Good inventors need one brilliant idea."
+        },
+        {
+          "key": "B",
+          "text": "Engineering is the most useful subject."
+        },
+        {
+          "key": "C",
+          "text": "Not giving up is the most important part of inventing."
+        },
+        {
+          "key": "D",
+          "text": "Exams are more important than inventions."
+        }
+      ],
+      "answer": "C",
+      "category": "attitude",
+      "explanation": "Szerinte a feltalálás főleg arról szól, hogy nem adjuk fel, amikor valami rosszul megy – ez a C.",
+      "evidence": "Actually, it's mostly about not giving up when things go wrong.",
+      "wrongOptions": {
+        "A": "Ezt az emberek gondolják („People think…”), Arjun épp ezzel vitatkozik („Actually…”).",
+        "B": "Mérnöki pályára készül, de nem mondja, hogy ez a leghasznosabb tantárgy.",
+        "D": "Most a vizsgáira készül, de nem hasonlítja össze a vizsgák és a találmányok fontosságát."
+      }
+    }
+  ],
+  "glossary": [
+    {
+      "term": "crossing",
+      "meaning": "(gyalogos-)átkelőhely"
+    },
+    {
+      "term": "white stick",
+      "meaning": "fehér bot (a vak emberek botja)"
+    },
+    {
+      "term": "recognise",
+      "meaning": "felismer"
+    },
+    {
+      "term": "breakthrough",
+      "meaning": "áttörés, döntő siker"
+    },
+    {
+      "term": "approach",
+      "meaning": "megközelítés, módszer"
+    },
+    {
+      "term": "roughly",
+      "meaning": "nagyjából, körülbelül"
+    },
+    {
+      "term": "vibrate",
+      "meaning": "rezeg"
+    },
+    {
+      "term": "charity",
+      "meaning": "jótékonysági szervezet"
+    },
+    {
+      "term": "download",
+      "meaning": "letölt"
+    },
+    {
+      "term": "engineering",
+      "meaning": "mérnöki tudományok, mérnöki szak"
+    },
+    {
+      "term": "giving up",
+      "meaning": "feladás, abbahagyás (give up = felad)"
+    }
+  ],
+  "suggestedMinutes": 15
+}

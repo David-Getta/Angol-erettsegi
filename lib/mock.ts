@@ -46,7 +46,7 @@ function pick(list: Candidate[], count: number, kind: MockKind, used: Set<string
 /** Estimated length of a listening task: prep + two plays at the TTS rate + pauses. */
 export function listeningSeconds(task: ObjectiveTask | undefined, level: Level): number {
   if (!task?.listening) return 0;
-  const ls = levelStructure(level).listening;
+  const ls = levelStructure(level).listening ?? { plays: 2, prepSeconds: 60, pauseSeconds: 30 };
   const rate = getSettings().ttsRate;
   const words = wordCount(scriptText(task));
   const play = (words / (155 * rate)) * 60 + task.listening.script.length * 0.25;

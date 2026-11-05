@@ -1,0 +1,318 @@
+{
+  "schemaVersion": 1,
+  "id": "ls-emelt-volunteering-abroad-short-answer",
+  "subject": "angol",
+  "revision": 2,
+  "level": "emelt",
+  "source": "generated",
+  "topic": "tarsadalom",
+  "title": "A year volunteering in Guatemala",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "reservedFor": "diagnostic",
+  "section": "listening",
+  "type": "short-answer",
+  "instructions": "You are going to listen to a radio interview with a young woman who spent a year volunteering abroad. Answer questions 1–10 in no more than FOUR words. You will hear the recording twice. There is an example (0) at the beginning.",
+  "instructionsHu": "Egy rádióinterjút hallasz egy fiatal nővel, aki egy évet önkénteskedett külföldön. Válaszolj az 1–10. kérdésre legfeljebb NÉGY szóval. A felvételt kétszer hallod; a 0. a példa.",
+  "listening": {
+    "format": "interview",
+    "speakers": [
+      {
+        "id": "I",
+        "name": "Daniel Price (presenter)",
+        "gender": "male",
+        "accent": "en-GB",
+        "age": "adult"
+      },
+      {
+        "id": "K",
+        "name": "Kirsty Webb (volunteer)",
+        "gender": "female",
+        "accent": "en-AU",
+        "age": "young"
+      }
+    ],
+    "script": [
+      {
+        "speaker": "I",
+        "text": "My guest today is Kirsty Webb, a twenty-four-year-old from Brisbane who spent most of last year volunteering in a small town in the highlands of Guatemala. Kirsty, welcome. How did that come about?"
+      },
+      {
+        "speaker": "K",
+        "text": "Thanks. Well, it wasn't exactly planned. I'd just finished my degree in social work, and I was meant to start a job at a hospital, but the start date got pushed back by six months. A friend of mine had volunteered with a small organisation there, and she said, why don't you go? So I did. I was supposed to stay for six months, and I ended up staying for eleven."
+      },
+      {
+        "speaker": "I",
+        "text": "And what did the work involve?"
+      },
+      {
+        "speaker": "K",
+        "text": "The organisation runs an after-school programme for kids whose parents work long hours, mostly picking coffee on the farms around the town. I helped with homework, ran a reading club, that kind of thing. But, honestly, for the first few weeks I wasn't much use at all. My Spanish was terrible. I'd done a three-week course before I left, and I thought that would be enough. It wasn't. The kids found it hilarious – they'd correct me all the time."
+      },
+      {
+        "speaker": "I",
+        "text": "That must have been frustrating."
+      },
+      {
+        "speaker": "K",
+        "text": "It was, but in a way it was the best thing that could have happened, because it turned everything upside down. I'd come thinking I was there to teach, and suddenly I was the one being taught. It made me a lot more patient – and a lot less sure of myself, which, looking back, was quite healthy."
+      },
+      {
+        "speaker": "I",
+        "text": "Some people are quite critical of volunteering abroad, aren't they? They call it voluntourism."
+      },
+      {
+        "speaker": "K",
+        "text": "Yeah, and a lot of that criticism is fair. There are programmes where you pay thousands of dollars to spend two weeks painting a school that was painted by the last group, and the group before that. That's more about the volunteers' photos than about the community. What I liked about our organisation was that it was run entirely by local people. The director, Rosa, used to say: we don't need you to save us, we need you to turn up on time and listen."
+      },
+      {
+        "speaker": "I",
+        "text": "What was the hardest part of the year?"
+      },
+      {
+        "speaker": "K",
+        "text": "Strangely, it wasn't the work, or the cold showers, or even the food, although I did lose about five kilos in the first two months. It was being so far away when my grandmother got ill. I couldn't just jump on a plane – the nearest airport was a six-hour bus ride away – well, five and a half if the roads were good. I spent a lot of evenings on the phone to my mum, feeling pretty useless."
+      },
+      {
+        "speaker": "I",
+        "text": "And now you're back home. Has the experience changed what you want to do?"
+      },
+      {
+        "speaker": "K",
+        "text": "Completely. I did take the hospital job in the end, but I've just applied for a master's in international development. And I've started volunteering here in Brisbane, at a centre that supports newly arrived migrants. A lot of them are from Latin America, so, finally, my Spanish is actually useful! I think the biggest lesson for me was that you don't have to go to the other side of the world to make a difference."
+      },
+      {
+        "speaker": "I",
+        "text": "Kirsty Webb, thank you."
+      }
+    ]
+  },
+  "example": {
+    "id": "0",
+    "kind": "text",
+    "prompt": "What had Kirsty studied at university?",
+    "answer": [
+      "social work",
+      "social work degree",
+      "a social work degree"
+    ],
+    "maxWords": 4,
+    "category": "detail",
+    "explanation": "A helyes válasz: social work (szociális munka). Kirsty azt mondja, épp befejezte a szociális munkás diplomáját.",
+    "evidence": "I'd just finished my degree in social work"
+  },
+  "items": [
+    {
+      "id": "1",
+      "kind": "text",
+      "prompt": "How long did Kirsty stay in Guatemala in the end?",
+      "answer": [
+        "eleven months",
+        "11 months",
+        "eleven",
+        "11",
+        "for eleven months",
+        "for 11 months",
+        "almost a year",
+        "nearly a year"
+      ],
+      "maxWords": 4,
+      "category": "detail",
+      "explanation": "A helyes válasz: eleven months (11 hónap). Csapda: hat hónapra tervezte, de végül tizenegy hónapig maradt („ended up staying for eleven”).",
+      "evidence": "I was supposed to stay for six months, and I ended up staying for eleven."
+    },
+    {
+      "id": "2",
+      "kind": "text",
+      "prompt": "What work do most of the children's parents do?",
+      "answer": [
+        "picking coffee",
+        "coffee picking",
+        "they pick coffee",
+        "pick coffee",
+        "farm work",
+        "work on coffee farms",
+        "working on coffee farms",
+        "on coffee farms",
+        "coffee farming",
+        "farming",
+        "they work on farms",
+        "coffee farm work",
+        "picking coffee on farms"
+      ],
+      "maxWords": 4,
+      "category": "detail",
+      "explanation": "A helyes válasz: picking coffee (kávészedés). A szülők többsége hosszú órákat dolgozik, főleg a város körüli farmokon szednek kávét.",
+      "evidence": "mostly picking coffee on the farms around the town"
+    },
+    {
+      "id": "3",
+      "kind": "text",
+      "prompt": "Why was Kirsty not very useful in the first few weeks?",
+      "answer": [
+        "her Spanish was terrible",
+        "her Spanish was bad",
+        "her Spanish was poor",
+        "terrible Spanish",
+        "bad Spanish",
+        "poor Spanish",
+        "her terrible Spanish",
+        "her bad Spanish",
+        "her poor Spanish",
+        "her Spanish",
+        "weak Spanish",
+        "she couldn't speak Spanish",
+        "she spoke little Spanish",
+        "couldn't speak Spanish well",
+        "the language barrier",
+        "language problems",
+        "her Spanish wasn't good",
+        "her Spanish was weak",
+        "Spanish wasn't good enough"
+      ],
+      "maxWords": 4,
+      "category": "detail",
+      "explanation": "A helyes válasz: her Spanish was terrible (nagyon gyenge volt a spanyolja). A háromhetes nyelvtanfolyam nem volt elég, a gyerekek folyton kijavították.",
+      "evidence": "My Spanish was terrible."
+    },
+    {
+      "id": "4",
+      "kind": "text",
+      "prompt": "Apart from becoming less sure of herself, how did the experience change Kirsty?",
+      "answer": [
+        "more patient",
+        "she became more patient",
+        "a lot more patient",
+        "much more patient",
+        "patience",
+        "more patience",
+        "she became patient",
+        "she learnt patience",
+        "she learned patience"
+      ],
+      "maxWords": 4,
+      "category": "detail",
+      "explanation": "A helyes válasz: she became more patient (türelmesebb lett). Azt mondja: „It made me a lot more patient” – a kérdés a másik változást (kevésbé magabiztos lett) már kizárja.",
+      "evidence": "It made me a lot more patient"
+    },
+    {
+      "id": "5",
+      "kind": "text",
+      "prompt": "According to Kirsty, who mainly benefits from some short, expensive programmes?",
+      "answer": [
+        "the volunteers",
+        "volunteers",
+        "the volunteers themselves",
+        "volunteers themselves",
+        "the volunteer",
+        "the volunteer themselves"
+      ],
+      "maxWords": 4,
+      "category": "inference",
+      "explanation": "A helyes válasz: the volunteers (maguk az önkéntesek). Szerinte az ilyen kéthetes, drága programok inkább az önkéntesek fotóiról szólnak, mint a közösségről – vagyis inkább az önkénteseknek jók.",
+      "evidence": "That's more about the volunteers' photos than about the community."
+    },
+    {
+      "id": "6",
+      "kind": "text",
+      "prompt": "What kind of people ran the organisation Kirsty worked for?",
+      "answer": [
+        "local people",
+        "locals",
+        "the locals",
+        "local residents",
+        "only local people",
+        "local people only",
+        "people from the town",
+        "local Guatemalans",
+        "Guatemalans",
+        "people from the area"
+      ],
+      "maxWords": 4,
+      "category": "detail",
+      "explanation": "A helyes válasz: local people (helyiek). Kirstynek az tetszett a szervezetben, hogy teljes egészében helyi emberek vezették („run entirely by local people”).",
+      "evidence": "it was run entirely by local people"
+    },
+    {
+      "id": "7",
+      "kind": "text",
+      "prompt": "Apart from listening, what did the director say volunteers needed to do?",
+      "answer": [
+        "turn up on time",
+        "be on time",
+        "arrive on time",
+        "come on time",
+        "show up on time",
+        "be punctual",
+        "get there on time"
+      ],
+      "maxWords": 4,
+      "category": "detail",
+      "explanation": "A helyes válasz: turn up on time (pontosan megérkezni). Rosa szerint nem megmentőkre van szükségük, hanem olyanokra, akik időben megjelennek és odafigyelnek.",
+      "evidence": "we need you to turn up on time and listen"
+    },
+    {
+      "id": "8",
+      "kind": "text",
+      "prompt": "What was the hardest part of the year for Kirsty?",
+      "answer": [
+        "being far away",
+        "being so far away",
+        "being far from home",
+        "being away from home",
+        "distance from home",
+        "the distance from home",
+        "her grandmother's illness",
+        "her grandmother being ill",
+        "her grandmother getting ill",
+        "her grandmother got ill",
+        "her grandma's illness",
+        "her sick grandmother",
+        "her grandmother was ill",
+        "being far from family"
+      ],
+      "maxWords": 4,
+      "category": "detail",
+      "explanation": "A helyes válasz: being far away (from home) when her grandmother got ill – az volt a legnehezebb, hogy nagyon messze volt, amikor a nagymamája megbetegedett. Csapda: nem a munka, a hideg zuhany vagy az étel volt a legnehezebb.",
+      "evidence": "It was being so far away when my grandmother got ill."
+    },
+    {
+      "id": "9",
+      "kind": "text",
+      "prompt": "What subject has Kirsty applied to study?",
+      "answer": [
+        "international development",
+        "international development studies",
+        "master's in international development",
+        "masters in international development"
+      ],
+      "maxWords": 4,
+      "category": "detail",
+      "explanation": "A helyes válasz: international development (nemzetközi fejlesztés). Végül elvállalta a kórházi munkát, de most jelentkezett egy mesterképzésre ebből a szakterületből.",
+      "evidence": "I've just applied for a master's in international development"
+    },
+    {
+      "id": "10",
+      "kind": "text",
+      "prompt": "Who does the centre where Kirsty volunteers now help?",
+      "answer": [
+        "newly arrived migrants",
+        "new migrants",
+        "migrants",
+        "recent migrants",
+        "newly arrived immigrants",
+        "new immigrants",
+        "immigrants",
+        "recent immigrants",
+        "newcomers",
+        "new arrivals"
+      ],
+      "maxWords": 4,
+      "category": "detail",
+      "explanation": "A helyes válasz: newly arrived migrants (újonnan érkezett bevándorlók). Brisbane-ben egy olyan központban önkénteskedik, amely az újonnan érkezett migránsokat segíti – sokan Latin-Amerikából jönnek, így végre hasznát veszi a spanyolnak.",
+      "evidence": "at a centre that supports newly arrived migrants"
+    }
+  ],
+  "glossary": [],
+  "suggestedMinutes": 10
+}

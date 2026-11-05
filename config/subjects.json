@@ -1,0 +1,20 @@
+{
+  "meta": {
+    "notes": [
+      "Az érettségi vizsgatárgyak, amelyekhez az app felkészítőt ad. Minden tantárgy saját configot kap a config/subjects/<id>/ mappában (szerkezet, pontozás, témakörök, feladattípusok, hibakategóriák, rubrikák) és saját tartalombankot a content/<id>/ alatt.",
+      "A vizsganapok a 2027. tavaszi vizsgaidőszak szokásos sorrendje alapján becsültek (hétfő magyar, kedd matematika, szerda történelem, csütörtök angol, péntek német, utána a többi tárgy) – a hivatalos vizsganaptár megjelenése után a Beállításokban pontosítandó."
+    ]
+  },
+  "subjects": [
+    { "id": "magyar", "name": "Magyar nyelv és irodalom", "short": "Magyar", "icon": "📚", "group": "kotelezo", "defaultLevel": "kozep", "defaultExamDate": "2027-05-03", "description": "Szövegértés, érvelés és gyakorlati szövegalkotás, műértelmezés, szóbeli tételek irodalomból és nyelvtanból." },
+    { "id": "matematika", "name": "Matematika", "short": "Matek", "icon": "📐", "group": "kotelezo", "defaultLevel": "kozep", "defaultExamDate": "2027-05-04", "description": "Rövid feladatok, kidolgozott feladatok lépésenkénti megoldással, képletek és tételek." },
+    { "id": "tortenelem", "name": "Történelem", "short": "Töri", "icon": "🏛️", "group": "kotelezo", "defaultLevel": "kozep", "defaultExamDate": "2027-05-05", "description": "Rövid választ igénylő feladatok forrásokkal, esszék, szóbeli tételek, évszámok és fogalmak." },
+    { "id": "angol", "name": "Angol nyelv", "short": "Angol", "icon": "🇬🇧", "group": "nyelv", "language": true, "defaultLevel": "emelt", "defaultExamDate": "2027-05-06", "description": "Olvasott és hallott szöveg értése, nyelvhelyesség, íráskészség, szóbeli; szókincs és szabálytár." },
+    { "id": "nemet", "name": "Német nyelv", "short": "Német", "icon": "🇩🇪", "group": "nyelv", "language": true, "defaultLevel": "kozep", "defaultExamDate": "2027-05-07", "description": "Ugyanaz a felépítés, mint az angolnál: olvasás, nyelvhelyesség, hallás, írás, szóbeli." },
+    { "id": "fizika", "name": "Fizika", "short": "Fizika", "icon": "⚛️", "group": "termeszettudomany", "defaultLevel": "kozep", "defaultExamDate": "2027-05-18", "description": "Feleletválasztós teszt, számításos és kifejtős feladatok, mérések, szóbeli tételek." },
+    { "id": "kemia", "name": "Kémia", "short": "Kémia", "icon": "🧪", "group": "termeszettudomany", "defaultLevel": "kozep", "defaultExamDate": "2027-05-13", "description": "Teszt, számítási és elméleti feladatok, kísérletek, szóbeli tételek." },
+    { "id": "biologia", "name": "Biológia", "short": "Bio", "icon": "🧬", "group": "termeszettudomany", "defaultLevel": "kozep", "defaultExamDate": "2027-05-12", "description": "Feladatlap ábrákkal és szövegekkel, rövid kifejtős kérdések, szóbeli tételek." },
+    { "id": "foldrajz", "name": "Földrajz", "short": "Földrajz", "icon": "🌍", "group": "termeszettudomany", "defaultLevel": "kozep", "defaultExamDate": "2027-05-14", "description": "Topográfia, természet- és társadalomföldrajzi feladatok, szóbeli tételek." },
+    { "id": "digitalis-kultura", "name": "Digitális kultúra (informatika)", "short": "Digitális", "icon": "💻", "group": "egyeb", "defaultLevel": "kozep", "defaultExamDate": "2027-05-17", "description": "Elméleti kérdések, gyakorlati feladatok leírása, szóbeli tételek." }
+  ]
+}

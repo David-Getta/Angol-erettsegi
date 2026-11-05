@@ -1,0 +1,183 @@
+{
+  "schemaVersion": 1,
+  "id": "gr-reported-speech",
+  "subject": "angol",
+  "level": "kozep",
+  "source": "generated",
+  "topic": "nyelvtan",
+  "title": "Függő beszéd",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "grammar",
+  "type": "lesson",
+  "category": "reported-speech",
+  "summaryHu": "Függő beszédben valaki más szavait adjuk vissza saját szavainkkal. Ha a bevezető ige múlt idejű (said, told, asked), az angol általában „visszalépteti” az igeidőket, és a nézőponthoz igazítja a névmásokat, idő- és helyhatározókat – a magyar ezt nem teszi („Azt mondta, hogy fáradt.”). A függő kérdésben ráadásul kijelentő szórend kell, ami a magyar anyanyelvűeknek szokatlan. A vizsgán az igealakos feladatban és a lyukas szövegekben jelenik meg, az íráskészségben pedig akkor, ha valaki levelére, hirdetésére reagálunk („You said that…”).",
+  "rules": [
+    {
+      "title": "Az igeidők visszaléptetése (backshift)",
+      "explanation": "Ha a bevezető ige múlt időben áll (said, told, explained, asked), az eredeti igeidő egy lépéssel a múlt felé tolódik: Present Simple → Past Simple; Present Continuous → Past Continuous; Present Perfect → Past Perfect; Past Simple → Past Perfect (ez beszélt nyelvben gyakran elmarad); will → would; can → could; may → might; must → had to (vagy must marad). Ha a bevezető ige jelen időben áll (says, has told), nincs visszaléptetés.",
+      "emeltOnly": false,
+      "examples": [
+        { "en": "'I'm tired.' → She said (that) she was tired.", "hu": "Azt mondta, hogy fáradt.", "note": "A magyarban marad a jelen idő, angolul am → was." },
+        { "en": "'I have lost my key.' → He said he had lost his key.", "hu": "Azt mondta, hogy elvesztette a kulcsát." },
+        { "en": "'We will help you.' → They promised they would help us.", "hu": "Megígérték, hogy segítenek nekünk." }
+      ]
+    },
+    {
+      "title": "Mikor maradhat el a visszaléptetés?",
+      "explanation": "Ha az állítás a beszámoló pillanatában is igaz, vagy általános igazság, megtarthatjuk az eredeti igeidőt (She said she lives in Debrecen – ma is ott lakik). Ez választható lehetőség: a visszaléptetett forma ilyenkor is helyes. A would, could, should, might, ought to és had better sosem változik.",
+      "emeltOnly": false,
+      "examples": [
+        { "en": "Our teacher told us that the Earth goes round the Sun.", "hu": "A tanárunk azt mondta, hogy a Föld a Nap körül kering.", "note": "Általános igazság: a went is helyes lenne." },
+        { "en": "'You should rest.' → The doctor said I should rest.", "hu": "Az orvos azt mondta, hogy pihennem kellene.", "note": "A should nem változik." }
+      ]
+    },
+    {
+      "title": "Névmások, idő- és helyhatározók",
+      "explanation": "A nézőpont változásával a névmások (I → he/she, my → his/her, we → they) és – ha a beszéd máskor vagy máshol hangzott el – az idő- és helyhatározók is változnak: now → then; today → that day; tonight → that night; yesterday → the day before / the previous day; tomorrow → the next day / the following day; last week → the week before; next week → the following week; ago → before; here → there; this → that.",
+      "emeltOnly": false,
+      "examples": [
+        { "en": "'I'll see you tomorrow.' → She said she would see me the next day.", "hu": "Azt mondta, hogy másnap találkozunk." },
+        { "en": "'I bought this phone two days ago.' → He said he had bought that phone two days before.", "hu": "Azt mondta, hogy két nappal korábban vette azt a telefont." }
+      ]
+    },
+    {
+      "title": "say vagy tell?",
+      "explanation": "A tell után mindig áll a személy, akinek mondunk valamit, elöljárószó nélkül: tell somebody (that)…. A say után nem áll közvetlenül személy; ha megnevezzük, to kell: say something to somebody. Állandó kapcsolatok: tell the truth, tell a lie, tell a story, tell a joke; say hello, say goodbye, say sorry, say yes/no.",
+      "emeltOnly": false,
+      "examples": [
+        { "en": "She told me (that) she was busy.", "hu": "Azt mondta nekem, hogy elfoglalt." },
+        { "en": "She said (that) she was busy.", "hu": "Azt mondta, hogy elfoglalt." },
+        { "en": "He said goodbye to everyone and left.", "hu": "Mindenkitől elköszönt, és elment." }
+      ]
+    },
+    {
+      "title": "Függő kérdés: kijelentő szórend, if/whether",
+      "explanation": "Függő kérdésben nincs fordított szórend és nincs do/does/did segédige: az alany az ige előtt áll, és a mondat végén nincs kérdőjel. A kérdőszavas kérdést a kérdőszó vezeti be (where, what, why …), az eldöntendő kérdést if vagy whether („-e”). Ugyanez a szórend kell az udvarias, közvetett kérdésekben is: Could you tell me where the station is?",
+      "emeltOnly": false,
+      "examples": [
+        { "en": "'Where do you live?' → She asked me where I lived.", "hu": "Megkérdezte, hol lakom." },
+        { "en": "'Are you coming?' → He asked if I was coming.", "hu": "Megkérdezte, hogy jövök-e." },
+        { "en": "Could you tell me what time the museum opens?", "hu": "Meg tudná mondani, hánykor nyit a múzeum?" }
+      ]
+    },
+    {
+      "title": "Felszólítás, kérés, tanács: ige + személy + (not) to + V1",
+      "explanation": "Felszólítást, kérést, tanácsot főnévi igenévvel adunk vissza: tell / ask / advise / remind / warn / order somebody (not) to do something. Tagadásnál a not a to elé kerül. A felszólító mód (Close…, Don't…) függő beszédben nem marad meg.",
+      "emeltOnly": false,
+      "examples": [
+        { "en": "'Close the door, please.' → She asked me to close the door.", "hu": "Megkért, hogy csukjam be az ajtót." },
+        { "en": "'Don't be late.' → My mum told me not to be late.", "hu": "Anyukám azt mondta, hogy ne késsek el." }
+      ]
+    },
+    {
+      "title": "Árnyalt bevezető igék: suggest, admit, deny, offer, refuse, apologise",
+      "explanation": "A pontosabb bevezető igéknek saját szerkezetük van: suggest + -ing, vagy suggest that + alany + (should) + V1 (soha nem suggest somebody to do); admit / deny + -ing; offer / refuse / promise / agree / threaten + to + V1; apologise for + -ing; accuse somebody of + -ing; insist on + -ing.",
+      "emeltOnly": true,
+      "examples": [
+        { "en": "'Let's take a taxi.' → He suggested taking a taxi. / He suggested that we (should) take a taxi.", "hu": "Azt javasolta, hogy menjünk taxival." },
+        { "en": "'I didn't take the money.' → She denied taking the money.", "hu": "Tagadta, hogy elvette a pénzt." },
+        { "en": "'I'm sorry I'm late.' → He apologised for being late.", "hu": "Bocsánatot kért, hogy elkésett." }
+      ]
+    }
+  ],
+  "commonMistakes": [
+    { "wrong": "She asked me where do I live.", "right": "She asked me where I lived.", "why": "Függő kérdésben kijelentő szórend kell (alany + ige), do/does/did nélkül. Múlt idejű bevezető ige után az igeidő is visszalép: live → lived." },
+    { "wrong": "He said me that he was ill.", "right": "He told me that he was ill.", "why": "A say után nem állhat közvetlenül személy. Ha megnevezed, kinek mondta, tell kell (tell somebody), vagy say to somebody." },
+    { "wrong": "Yesterday Tom said he will come to the party.", "right": "Yesterday Tom said he would come to the party.", "why": "Múlt idejű bevezető ige után a will would-ra változik. A magyar ilyenkor megtartja az eredeti időt („azt mondta, hogy eljön”), az angol viszont egyezteti az igeidőt." },
+    { "wrong": "The teacher told us don't use our phones.", "right": "The teacher told us not to use our phones.", "why": "Tiltást a tell/ask + személy + not to + V1 szerkezettel adunk vissza; a felszólító mód (don't) függő beszédben nem marad meg." },
+    { "wrong": "He asked me that I liked jazz.", "right": "He asked me if I liked jazz.", "why": "Eldöntendő kérdést függő beszédben if vagy whether vezet be, nem that. A magyar „hogy szeretem-e” mondatban a -e kérdőszócska felel meg az if-nek." },
+    { "wrong": "My friend suggested me to go by train.", "right": "My friend suggested going by train.", "why": "A suggest után nem állhat személy + to + V1. Helyesen: suggest + -ing, vagy suggest that + alany + (should) + V1: My friend suggested that I (should) go by train." }
+  ],
+  "examTips": [
+    "Igealakok: ha a mondatban said, told, asked, explained vagy wanted to know áll, ellenőrizd, kell-e visszaléptetni az igeidőt (is → was, will → would, has done → had done), és figyelj a then, the next day, the day before típusú határozókra – ezek jelzik, hogy a beszéd a múltban hangzott el.",
+    "Nyitott lyukas szöveg: gyakori hiányzó szó az if, whether, that, told, asked, illetve tiltásnál a not (told us not to…). Ha a hiány után személy jön (___ me that…), told kell, nem said.",
+    "Íráskészség: ha valaki levelére vagy hirdetésére válaszolsz, a függő beszéd természetes (You said you were looking for…, You asked me what I thought about…). Hivatalos e-mailben a közvetett kérdés (Could you tell me when the course starts?) udvariasabb – itt a rossz szórend és a say/tell keverése a „Nyelvhelyesség, helyesírás” szempontnál von le pontot."
+  ],
+  "practice": [
+    {
+      "id": "1",
+      "kind": "choice",
+      "prompt": "Tom asked me ___.",
+      "options": [
+        { "key": "A", "text": "where was the station" },
+        { "key": "B", "text": "where the station was" },
+        { "key": "C", "text": "where is the station" },
+        { "key": "D", "text": "the station was where" }
+      ],
+      "answer": "B",
+      "category": "reported-speech",
+      "explanation": "Helyes: where the station was. Függő kérdésben kijelentő szórend kell: kérdőszó + alany + ige. A múlt idejű bevezető ige (asked) miatt az is → was.",
+      "wrongOptions": {
+        "A": "Fordított (kérdő) szórend: függő kérdésben az alany (the station) az ige előtt áll.",
+        "C": "Kérdő szórend és jelen idő is – ez egyenes kérdés lenne, nem függő.",
+        "D": "A kérdőszónak (where) a mellékmondat elején kell állnia."
+      }
+    },
+    {
+      "id": "2",
+      "kind": "text",
+      "prompt": "'I will call you tomorrow.' → Anna promised that she ___ me the next day.",
+      "answer": ["would call", "'d call"],
+      "category": "reported-speech",
+      "explanation": "Helyes: would call. Múlt idejű bevezető ige (promised) után a will → would. A the next day is jelzi, hogy a beszéd a múltban hangzott el, ezért a will call itt hibás."
+    },
+    {
+      "id": "3",
+      "kind": "text",
+      "prompt": "'Don't touch the paintings.' → The guide told us ___ touch the paintings.",
+      "answer": ["not to"],
+      "maxWords": 2,
+      "category": "reported-speech",
+      "explanation": "Helyes: not to. Tiltás függő beszédben: tell + személy + not to + V1. A not a to elé kerül; a don't felszólító alak itt nem maradhat meg."
+    },
+    {
+      "id": "4",
+      "kind": "choice",
+      "prompt": "She ___ me that the concert had been cancelled.",
+      "options": [
+        { "key": "A", "text": "said" },
+        { "key": "B", "text": "told" },
+        { "key": "C", "text": "asked" },
+        { "key": "D", "text": "spoke" }
+      ],
+      "answer": "B",
+      "category": "reported-speech",
+      "explanation": "Helyes: told. Utána közvetlenül személy (me) áll, és ez kijelentés, nem kérdés: tell somebody that…",
+      "wrongOptions": {
+        "A": "A say után nem állhat közvetlenül személy (said me hibás; helyesen said to me vagy said that).",
+        "C": "Az ask kérdést vezet be (if/whether, kérdőszó), nem that-tel kezdődő kijelentést.",
+        "D": "A speak nem vezet be függő beszédet, és tárgyként nem állhat utána that-mellékmondat."
+      }
+    },
+    {
+      "id": "5",
+      "kind": "text",
+      "prompt": "'Do you like sushi?' → He asked me ___ I liked sushi.",
+      "answer": ["if", "whether"],
+      "maxWords": 1,
+      "category": "reported-speech",
+      "explanation": "Helyes: if vagy whether. Eldöntendő (igen/nem) kérdést függő beszédben if vagy whether vezet be – ez felel meg a magyar „-e” kérdőszócskának („megkérdezte, szeretem-e a sushit”)."
+    },
+    {
+      "id": "6",
+      "kind": "choice",
+      "prompt": "'Let's go for a walk,' said Peter. → Peter suggested ___ for a walk.",
+      "options": [
+        { "key": "A", "text": "us to go" },
+        { "key": "B", "text": "going" },
+        { "key": "C", "text": "to go" },
+        { "key": "D", "text": "for us going" }
+      ],
+      "answer": "B",
+      "category": "reported-speech",
+      "explanation": "Helyes: going. A suggest után -ing alak áll (suggest doing), vagy that-mellékmondat (suggested that we should go). Ez emelt szinten gyakori bevezető ige.",
+      "wrongOptions": {
+        "A": "A suggest után nem állhat személy + to + V1 (suggest somebody to do hibás).",
+        "C": "A suggest után nem állhat to + V1.",
+        "D": "A suggest után nem kell elöljárószó; a for us going nem helyes szerkezet."
+      }
+    }
+  ],
+  "relatedCategories": ["tense", "word-order", "question-form"]
+}

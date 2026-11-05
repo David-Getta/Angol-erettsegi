@@ -1,0 +1,380 @@
+{
+  "schemaVersion": 1,
+  "id": "rd-emelt-buy-now-pay-later-mc",
+  "subject": "angol",
+  "revision": 1,
+  "level": "emelt",
+  "source": "generated",
+  "topic": "gazdasag",
+  "title": "Tap now, worry later",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "reservedFor": "mock",
+  "section": "reading",
+  "type": "multiple-choice",
+  "instructions": "Read the article about 'buy now, pay later' services and answer the questions. Choose the best answer (A, B, C or D). There is an example (0) at the beginning.",
+  "instructionsHu": "Olvasd el a „vásárolj most, fizess később” szolgáltatásokról szóló cikket, és válaszd ki a legjobb választ (A, B, C vagy D). A 0. a példa.",
+  "passage": {
+    "title": "Tap now, worry later",
+    "subtitle": "'Buy now, pay later' services have made shopping easier than ever for young people. Some of them are now paying the price.",
+    "blocks": [
+      {
+        "text": "The first time Chloe Barrett used a 'buy now, pay later' service, she was buying a pair of trainers she did not strictly need. At the online checkout, instead of the full price of £120, a friendly button offered her four payments of £30, with nothing to pay today and no interest. 'It didn't feel like borrowing,' the 23-year-old remembers. 'It felt like a discount.' Eighteen months later, she was juggling repayments to five different companies and had stopped opening the emails that reminded her about them."
+      },
+      {
+        "text": "Chloe's story is far from unusual. Buy now, pay later – or BNPL, as the industry calls it – has grown at remarkable speed over the past decade, and its users are disproportionately young. The services work by splitting the cost of a purchase into a few instalments, usually spread over six to eight weeks. As long as every payment is made on time, the customer pays nothing extra. The companies make most of their money not from shoppers but from retailers, who pay a fee on each sale because customers who are offered BNPL tend to buy more and abandon fewer online baskets."
+      },
+      {
+        "text": "It is precisely this effect that worries consumer groups. A survey by one debt charity found that almost half of BNPL users under 30 had bought something they would not otherwise have been able to afford, and around one in five had missed at least one payment. Late fees are usually modest – a few pounds at a time – but they add up quickly when a person is using several providers at once. And because, until recently, many of these loans did not appear on credit reports, no single company could see the whole picture."
+      },
+      {
+        "text": "Industry representatives reject the idea that they are encouraging young people to get into debt. 'Compared with a credit card, our product is far safer,' argues Daniel Wren, a spokesperson for one of the larger providers. 'If you miss a payment, we stop you from making new purchases until you've caught up. A credit card company would simply let the debt grow and charge you interest on it.' He points out that the vast majority of customers repay in full and on time."
+      },
+      {
+        "text": "Financial educators accept that point but argue that it misses the real problem. 'The danger isn't any single loan – it's the psychology,' says Amara Nwosu, who runs money-management workshops in secondary schools. 'When the price on the screen is a quarter of the real price, your brain registers a smaller number. People who would never borrow £400 for a coat happily commit to four payments of £100.' In her workshops, she asks students to calculate what they have already promised to pay over the next two months. 'Most of them are genuinely shocked,' she says."
+      },
+      {
+        "text": "Governments have been slow to react, partly because the services did not fit neatly into existing rules. Several countries are now introducing regulations that will require providers to check whether customers can afford their repayments, and to share information with credit agencies. Critics say these changes are long overdue; some providers privately welcome them, arguing that clear rules will make the industry look more respectable."
+      },
+      {
+        "text": "As for Chloe, she eventually paid off what she owed with the help of a free debt advice service and deleted the apps from her phone. She does not think BNPL should be banned. 'Used carefully, it's actually useful,' she says. 'The problem is that it's designed to make you stop thinking. Now, if I can't pay for something today, I wait a month. If I still want it then, I buy it.'"
+      }
+    ]
+  },
+  "example": {
+    "id": "0",
+    "kind": "choice",
+    "prompt": "When Chloe first used a BNPL service, she was buying",
+    "options": [
+      {
+        "key": "A",
+        "text": "a present for a friend."
+      },
+      {
+        "key": "B",
+        "text": "something she did not really need."
+      },
+      {
+        "key": "C",
+        "text": "clothes for a job interview."
+      },
+      {
+        "key": "D",
+        "text": "an item that was on sale."
+      }
+    ],
+    "answer": "B",
+    "category": "detail",
+    "explanation": "B. Egy olyan sportcipőt vett, amire valójában nem volt szüksége („she did not strictly need”).",
+    "evidence": "she was buying a pair of trainers she did not strictly need"
+  },
+  "items": [
+    {
+      "id": "1",
+      "kind": "choice",
+      "prompt": "At first, Chloe saw the option of paying in four parts as",
+      "options": [
+        {
+          "key": "A",
+          "text": "a way of paying less for the trainers."
+        },
+        {
+          "key": "B",
+          "text": "a risky form of borrowing."
+        },
+        {
+          "key": "C",
+          "text": "a service meant for people on low incomes."
+        },
+        {
+          "key": "D",
+          "text": "something that charged a reasonable rate of interest."
+        }
+      ],
+      "answer": "A",
+      "category": "attitude",
+      "explanation": "A. Chloe szerint nem kölcsönnek érezte, hanem kedvezménynek („It felt like a discount”) – vagyis úgy tűnt neki, mintha kevesebbet fizetne a cipőért.",
+      "evidence": "'It didn't feel like borrowing,' the 23-year-old remembers. 'It felt like a discount.'",
+      "wrongOptions": {
+        "B": "Épp ellenkezőleg: kifejezetten azt mondja, hogy nem érezte kölcsönnek („It didn't feel like borrowing”).",
+        "C": "Arról, hogy kiknek szól a szolgáltatás, Chloe nem mond semmit.",
+        "D": "A gomb kamatmentes fizetést kínált („no interest”), tehát nem volt szó kamatról."
+      }
+    },
+    {
+      "id": "2",
+      "kind": "choice",
+      "prompt": "What does the writer suggest about Chloe eighteen months later?",
+      "options": [
+        {
+          "key": "A",
+          "text": "She had stopped using BNPL services."
+        },
+        {
+          "key": "B",
+          "text": "She had asked her family to lend her money."
+        },
+        {
+          "key": "C",
+          "text": "She was trying not to think about her debts."
+        },
+        {
+          "key": "D",
+          "text": "She was paying back only one company."
+        }
+      ],
+      "answer": "C",
+      "category": "inference",
+      "explanation": "C. Már meg sem nyitotta a törlesztésekre emlékeztető e-maileket – ebből arra következtethetünk, hogy kerülte, hogy szembenézzen az adósságaival.",
+      "evidence": "had stopped opening the emails that reminded her about them",
+      "wrongOptions": {
+        "A": "Ekkor még öt különböző cégnek törlesztett („juggling repayments to five different companies”); az alkalmazásokat csak később törölte.",
+        "B": "A családtól kért kölcsönről nincs szó; később ingyenes adósságtanácsadás segített neki.",
+        "D": "Nem egy, hanem öt cégnek tartozott."
+      }
+    },
+    {
+      "id": "3",
+      "kind": "choice",
+      "prompt": "According to the article, BNPL companies earn most of their income from",
+      "options": [
+        {
+          "key": "A",
+          "text": "late fees paid by customers."
+        },
+        {
+          "key": "B",
+          "text": "interest on long-term loans."
+        },
+        {
+          "key": "C",
+          "text": "payments made by shops."
+        },
+        {
+          "key": "D",
+          "text": "selling information about customers."
+        }
+      ],
+      "answer": "C",
+      "category": "detail",
+      "explanation": "C. A cégek bevételük nagy részét nem a vásárlóktól, hanem a kereskedőktől kapják, akik minden eladás után díjat fizetnek nekik („retailers, who pay a fee on each sale”).",
+      "evidence": "The companies make most of their money not from shoppers but from retailers, who pay a fee on each sale",
+      "wrongOptions": {
+        "A": "Késedelmi díjak léteznek, de a szöveg szerint ezek kicsik („modest”), és a bevétel nagyobbik része nem a vásárlóktól származik.",
+        "B": "A törlesztés néhány hét alatt, kamat nélkül történik, tehát nem hosszú lejáratú kamatozó hitelről van szó.",
+        "D": "Az adatok eladását a szöveg nem említi; adatmegosztás csak az új szabályozásnál, a hitelirodák felé kerül szóba."
+      }
+    },
+    {
+      "id": "4",
+      "kind": "choice",
+      "prompt": "What does 'this effect' at the beginning of paragraph 3 refer to?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Customers pay nothing extra if they pay on time."
+        },
+        {
+          "key": "B",
+          "text": "Payments are spread over several weeks."
+        },
+        {
+          "key": "C",
+          "text": "Retailers have to pay a fee for every sale."
+        },
+        {
+          "key": "D",
+          "text": "Shoppers tend to spend more when they are offered BNPL."
+        }
+      ],
+      "answer": "D",
+      "category": "text-structure",
+      "explanation": "D. A „this effect” az előző bekezdés utolsó gondolatára utal: akinek felajánlják a BNPL-t, többet vásárol, és ritkábban hagyja ott a kosarát. A fogyasztóvédőket épp az aggasztja, hogy az emberek olyat is megvesznek, amit nem engedhetnének meg maguknak.",
+      "evidence": "customers who are offered BNPL tend to buy more and abandon fewer online baskets",
+      "wrongOptions": {
+        "A": "Az, hogy időben fizetve nincs többletköltség, a vásárló szempontjából előny, nem aggasztó „hatás”.",
+        "B": "A részletfizetés a szolgáltatás működése, nem a „hatása”; a „this effect” a közvetlenül előtte említett következményre utal.",
+        "C": "A kereskedők által fizetett díj az üzleti modell része, nem a vásárlók viselkedésére gyakorolt hatás, ami a fogyasztóvédőket aggasztja."
+      }
+    },
+    {
+      "id": "5",
+      "kind": "choice",
+      "prompt": "Daniel Wren believes that BNPL is safer than a credit card because",
+      "options": [
+        {
+          "key": "A",
+          "text": "it stops customers from borrowing more once they fall behind."
+        },
+        {
+          "key": "B",
+          "text": "it never charges customers any fees."
+        },
+        {
+          "key": "C",
+          "text": "its customers are mostly older and wealthier."
+        },
+        {
+          "key": "D",
+          "text": "customers can choose how long they take to repay."
+        }
+      ],
+      "answer": "A",
+      "category": "detail",
+      "explanation": "A. Wren szerint ha valaki elmulaszt egy részletet, addig nem vásárolhat újra, amíg be nem hozza a lemaradását – a hitelkártya ezzel szemben hagyja nőni az adósságot.",
+      "evidence": "If you miss a payment, we stop you from making new purchases until you've caught up.",
+      "wrongOptions": {
+        "B": "Késedelmi díjak vannak („Late fees are usually modest”), tehát nem igaz, hogy soha nem kérnek díjat.",
+        "C": "Wren nem beszél az ügyfelek koráról vagy vagyonáról; a cikk szerint a felhasználók épp aránytalanul fiatalok.",
+        "D": "A törlesztési idő rugalmasságáról nincs szó; a részletek általában hat-nyolc hétre oszlanak el."
+      }
+    },
+    {
+      "id": "6",
+      "kind": "choice",
+      "prompt": "Amara Nwosu's main concern is that BNPL",
+      "options": [
+        {
+          "key": "A",
+          "text": "is too complicated for teenagers to understand."
+        },
+        {
+          "key": "B",
+          "text": "makes things seem cheaper than they really are."
+        },
+        {
+          "key": "C",
+          "text": "is more expensive than a traditional loan."
+        },
+        {
+          "key": "D",
+          "text": "is advertised directly to secondary school students."
+        }
+      ],
+      "answer": "B",
+      "category": "attitude",
+      "explanation": "B. Szerinte nem az egyes kölcsönök a veszélyesek, hanem a lélektani hatás: ha a képernyőn a valódi ár negyede látszik, az agy kisebb számot rögzít – vagyis a dolgok olcsóbbnak tűnnek.",
+      "evidence": "When the price on the screen is a quarter of the real price, your brain registers a smaller number.",
+      "wrongOptions": {
+        "A": "Nem mondja, hogy a rendszer bonyolult; épp az a baj, hogy túl egyszerűnek és ártalmatlannak tűnik.",
+        "C": "Nem hasonlítja össze a költségét más hitelekkel; időben fizetve a BNPL nem is kerül többe.",
+        "D": "Ő maga tart foglalkozásokat középiskolákban, de arról nincs szó, hogy a BNPL-t ott reklámoznák."
+      }
+    },
+    {
+      "id": "7",
+      "kind": "choice",
+      "prompt": "How have some BNPL providers reacted to the new regulations?",
+      "options": [
+        {
+          "key": "A",
+          "text": "They have campaigned against them in public."
+        },
+        {
+          "key": "B",
+          "text": "They are planning to leave the countries concerned."
+        },
+        {
+          "key": "C",
+          "text": "They complain that the rules have come too late."
+        },
+        {
+          "key": "D",
+          "text": "They are quietly in favour of them because of the effect on their image."
+        }
+      ],
+      "answer": "D",
+      "category": "inference",
+      "explanation": "D. Egyes szolgáltatók „privately welcome them” – négyszemközt üdvözlik a szabályokat, mert szerintük tekintélyesebbnek tűnik majd tőlük az ágazat („look more respectable”).",
+      "evidence": "some providers privately welcome them, arguing that clear rules will make the industry look more respectable",
+      "wrongOptions": {
+        "A": "Nyilvános tiltakozásról nincs szó; épp ellenkezőleg, néhányan üdvözlik a szabályokat.",
+        "B": "Arról, hogy kivonulnának az országokból, nem ír a szöveg.",
+        "C": "Azt, hogy a változások régóta esedékesek („long overdue”), a kritikusok mondják, nem a szolgáltatók."
+      }
+    },
+    {
+      "id": "8",
+      "kind": "choice",
+      "prompt": "What is Chloe's attitude to BNPL now?",
+      "options": [
+        {
+          "key": "A",
+          "text": "She thinks it should be made illegal."
+        },
+        {
+          "key": "B",
+          "text": "She still uses it for most of her purchases."
+        },
+        {
+          "key": "C",
+          "text": "She believes it can be helpful if used sensibly."
+        },
+        {
+          "key": "D",
+          "text": "She thinks only people with a good income should use it."
+        }
+      ],
+      "answer": "C",
+      "category": "attitude",
+      "explanation": "C. Chloe szerint körültekintően használva kifejezetten hasznos („Used carefully, it's actually useful”), csak az a baj, hogy úgy tervezték, hogy ne gondolkodjunk.",
+      "evidence": "'Used carefully, it's actually useful,' she says.",
+      "wrongOptions": {
+        "A": "A szöveg kifejezetten azt írja, hogy nem gondolja, hogy be kellene tiltani („She does not think BNPL should be banned”).",
+        "B": "Törölte az alkalmazásokat, és ha nem tud azonnal fizetni, inkább vár egy hónapot.",
+        "D": "A jövedelemről nem beszél; a gondolkodás nélküli vásárlást tartja problémának."
+      }
+    }
+  ],
+  "glossary": [
+    {
+      "term": "checkout",
+      "meaning": "pénztár (webáruházban: fizetési oldal)"
+    },
+    {
+      "term": "juggle",
+      "meaning": "zsonglőrködik, egyszerre több dologgal bajlódik"
+    },
+    {
+      "term": "disproportionately",
+      "meaning": "aránytalanul (nagy mértékben)"
+    },
+    {
+      "term": "instalments",
+      "meaning": "részletek (részletfizetésnél)"
+    },
+    {
+      "term": "retailers",
+      "meaning": "kiskereskedők, üzletek"
+    },
+    {
+      "term": "abandon",
+      "meaning": "otthagy, felad (pl. a kosarat)"
+    },
+    {
+      "term": "afford",
+      "meaning": "megengedheti magának (anyagilag)"
+    },
+    {
+      "term": "modest",
+      "meaning": "szerény, csekély"
+    },
+    {
+      "term": "credit reports",
+      "meaning": "hiteljelentés, hitelminősítési adatlap"
+    },
+    {
+      "term": "spokesperson",
+      "meaning": "szóvivő"
+    },
+    {
+      "term": "overdue",
+      "meaning": "régóta esedékes"
+    },
+    {
+      "term": "respectable",
+      "meaning": "tekintélyes, tisztességes"
+    }
+  ],
+  "suggestedMinutes": 18
+}

@@ -38,7 +38,7 @@ function LevelInfo({ level }: { level: Level }) {
                     {p.name}
                     {p.notes.length > 0 && <span className="block text-xs text-muted">{p.notes.join(" ")}</span>}
                   </td>
-                  <td className="py-1.5 text-right tabular-nums">{p.timeMin ? `${p.timeMin} ${t.examInfo.minutes}` : s.oral.durationMin ? `~${s.oral.durationMin} ${t.examInfo.minutes}` : "–"}</td>
+                  <td className="py-1.5 text-right tabular-nums">{p.timeMin ? `${p.timeMin} ${t.examInfo.minutes}` : s.oral?.durationMin ? `~${s.oral.durationMin} ${t.examInfo.minutes}` : "–"}</td>
                   <td className="py-1.5 text-right tabular-nums">{p.maxPoints}</td>
                   <td className="py-1.5 text-right tabular-nums">{minPointsFor(p.maxPoints, grading)}</td>
                 </tr>
@@ -55,6 +55,7 @@ function LevelInfo({ level }: { level: Level }) {
         {brk && <p className="mt-2 text-sm text-muted">{t.examInfo.break(brk.minutes)}</p>}
       </Card>
 
+      {s.oral && (
       <Card title={t.examInfo.oral(s.oral.durationMin)}>
         <ol className="space-y-2 text-sm">
           {s.oral.parts.map((p) => (
@@ -75,6 +76,7 @@ function LevelInfo({ level }: { level: Level }) {
           </ul>
         )}
       </Card>
+      )}
 
       <Card title={t.examInfo.writing}>
         <div className="grid gap-4 md:grid-cols-2">
@@ -84,7 +86,7 @@ function LevelInfo({ level }: { level: Level }) {
                 {t.examInfo.task(task.taskNumber)}: {task.name}
               </h3>
               <p className="text-sm text-muted">
-                {t.examInfo.words(task.wordLimit.min, task.wordLimit.max)} · {task.guidingPoints} irányító szempont · {task.maxRaw} pont
+                {task.wordLimit && `${t.examInfo.words(task.wordLimit.min, task.wordLimit.max)} · `}{task.guidingPoints && `${task.guidingPoints} irányító szempont · `}{task.maxRaw} pont
               </p>
               <table className="mt-2 w-full text-sm">
                 <tbody>

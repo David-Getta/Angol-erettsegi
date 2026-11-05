@@ -1,0 +1,232 @@
+{
+  "schemaVersion": 1,
+  "id": "rd-emelt-van-life-mc",
+  "subject": "angol",
+  "revision": 1,
+  "level": "emelt",
+  "source": "generated",
+  "topic": "eletmod",
+  "title": "Home is where you park it",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "reading",
+  "type": "multiple-choice",
+  "instructions": "Read the article about young people who live in vans and answer the questions. Choose the best answer (A, B, C or D). There is an example (0) at the beginning.",
+  "instructionsHu": "Olvasd el a lakóautóban élő fiatalokról szóló cikket, és válaszd ki a legjobb választ (A, B, C vagy D). A 0. a példa.",
+  "passage": {
+    "title": "Home is where you park it",
+    "subtitle": "Thousands of young Europeans have swapped their flats for vans. Is it freedom, or just a prettier way of being broke?",
+    "blocks": [
+      {
+        "text": "Hannah Reid does not need an alarm clock. Every morning the sun comes through the thin curtains of the converted delivery van she shares with her partner, Luis, and their dog, Biscuit, and every morning the view outside is different: a beach in Brittany, a lake in the Alps, a car park behind a supermarket in northern Spain. Two years ago, the 26-year-old was working as a graphic designer in Glasgow and spending almost half her salary on rent for a flat she 'only ever really saw in the dark'. Today the couple's entire home measures six square metres."
+      },
+      {
+        "text": "Hannah and Luis belong to a movement that has grown rapidly since the pandemic, when working from home became normal and many young people began to ask why they were paying so much to live in cities they no longer needed to be in. Sales of second-hand vans have risen sharply in several European countries, and a whole industry has developed around the lifestyle, from workshops that turn old vans into tiny homes to apps that show where you can park overnight. On social media, the hashtag #vanlife has been used more than ten million times, usually under photos of sunsets, surfboards and suspiciously tidy kitchens."
+      },
+      {
+        "text": "Those photos, Hannah admits, tell only half the story. 'Nobody posts a picture of themselves emptying the toilet, or driving round a supermarket car park at eleven at night because a farmer has just told them to move on,' she says. As the number of vans has grown, finding somewhere legal to sleep has become harder: several popular coastal towns in Portugal and Spain have banned overnight parking, and fines can reach several hundred euros. Winter brings its own problems. Last January the couple woke up to find their water tank frozen solid, and spent two weeks in a friend's spare room in Lyon."
+      },
+      {
+        "text": "So why do they carry on? For Luis, a software tester who works three days a week on a laptop connected to a mobile hotspot, the answer is time. With no rent to pay, the couple need far less money, so they can afford to work less. 'In Glasgow we had money but no time. Now we have time but not much money, and I've realised I prefer it this way,' he says. Hannah, who now works as a freelance designer, says the biggest change has been in how she thinks about possessions. 'When everything you own has to fit in a cupboard the size of a suitcase, you stop buying things. After a while, you also stop missing them.'"
+      },
+      {
+        "text": "Dr Clara Montes, a sociologist at the University of Lisbon who has interviewed more than a hundred people living in vehicles, is less romantic about the trend. She points out that for every couple like Hannah and Luis, who chose this way of life, there are people sleeping in vans because they simply cannot afford anything else. 'Calling it vanlife makes it sound like a hobby,' she says. 'For some people it is a choice; for others it is the last step before homelessness. We should be careful not to confuse the two.' She also notes that those who seem to enjoy the lifestyle most tend to have a safety net: savings, a family home to go back to, or skills that allow them to earn money from anywhere."
+      },
+      {
+        "text": "Hannah does not disagree. 'We're lucky, and I know it,' she says. 'If one of us got seriously ill, we'd move back into my parents' house the next day.' The couple do not see the van as a permanent home. They plan to spend one more year on the road and then, perhaps, buy a small house somewhere with cheap property and a decent internet connection. 'People ask us if we've given up on normal life,' Luis says. 'I think we're just taking a long break from it, so that we can work out which parts of it we actually want.'"
+      }
+    ]
+  },
+  "example": {
+    "id": "0",
+    "kind": "choice",
+    "prompt": "What was Hannah's main problem with her life in Glasgow?",
+    "options": [
+      { "key": "A", "text": "She did not enjoy working as a designer." },
+      { "key": "B", "text": "She paid a lot for a home she spent little time in." },
+      { "key": "C", "text": "She lived too far from the sea." },
+      { "key": "D", "text": "She could not find a flat she liked." }
+    ],
+    "answer": "B",
+    "category": "detail",
+    "explanation": "B. A fizetése majdnem felét lakbérre költötte egy olyan lakásért, amelyet saját bevallása szerint „csak sötétben látott” – vagyis sokat fizetett egy otthonért, ahol alig volt.",
+    "evidence": "spending almost half her salary on rent for a flat she 'only ever really saw in the dark'"
+  },
+  "items": [
+    {
+      "id": "1",
+      "kind": "choice",
+      "prompt": "According to the article, van life became more popular after the pandemic because",
+      "options": [
+        { "key": "A", "text": "second-hand vans became much cheaper." },
+        { "key": "B", "text": "cities introduced apps that show where to park." },
+        { "key": "C", "text": "many people no longer needed to live near their workplace." },
+        { "key": "D", "text": "surfing became fashionable among young people." }
+      ],
+      "answer": "C",
+      "category": "detail",
+      "explanation": "C. Az otthoni munka általánossá vált, és sok fiatal elgondolkodott, miért fizet ennyit, hogy olyan városban lakjon, ahol már nem kell lennie – vagyis már nem kellett a munkahelye közelében élnie.",
+      "evidence": "when working from home became normal and many young people began to ask why they were paying so much to live in cities they no longer needed to be in",
+      "wrongOptions": {
+        "A": "A szöveg szerint a használt furgonok eladásai nőttek meg („Sales … have risen sharply”); az áruk csökkenéséről nincs szó.",
+        "B": "Az appokat nem a városok vezették be, és nem az okai a trendnek, hanem az életmód körül kialakult iparág részei.",
+        "D": "A szörfdeszkák csak a közösségi médiás fotókon szerepelnek; a szörfözés divatja nem ok."
+      }
+    },
+    {
+      "id": "2",
+      "kind": "choice",
+      "prompt": "By mentioning 'suspiciously tidy kitchens', the writer suggests that",
+      "options": [
+        { "key": "A", "text": "the pictures online may not show what van life is really like." },
+        { "key": "B", "text": "people who live in vans are especially well organised." },
+        { "key": "C", "text": "cooking in a small van can be unhealthy." },
+        { "key": "D", "text": "most people who post such photos are professional photographers." }
+      ],
+      "answer": "A",
+      "category": "attitude",
+      "explanation": "A. A „suspiciously” (gyanúsan) szó iróniát jelez: a konyhák túl rendezettnek tűnnek ahhoz, hogy valódiak legyenek, vagyis a képek szépítik a valóságot. Ezt a következő bekezdés is megerősíti: „Those photos … tell only half the story”.",
+      "evidence": "usually under photos of sunsets, surfboards and suspiciously tidy kitchens",
+      "wrongOptions": {
+        "B": "Épp ellenkezőleg: a „suspiciously” azt jelzi, hogy az író kételkedik abban, hogy a rend valódi.",
+        "C": "Az egészségről vagy a főzésről nincs szó a szövegben.",
+        "D": "Arról, hogy kik készítik a fotókat, a szöveg nem mond semmit."
+      }
+    },
+    {
+      "id": "3",
+      "kind": "choice",
+      "prompt": "Why has it become harder to find a place to spend the night?",
+      "options": [
+        { "key": "A", "text": "Farmers now charge van owners for parking on their land." },
+        { "key": "B", "text": "Supermarkets have closed their car parks at night." },
+        { "key": "C", "text": "Fines for parking in the wrong place have doubled." },
+        { "key": "D", "text": "Some towns have responded to the growing number of vans by banning overnight parking." }
+      ],
+      "answer": "D",
+      "category": "detail",
+      "explanation": "D. A furgonok számának növekedésével nehezebb lett legális alvóhelyet találni, mert több népszerű portugál és spanyol tengerparti város betiltotta az éjszakai parkolást.",
+      "evidence": "As the number of vans has grown, finding somewhere legal to sleep has become harder: several popular coastal towns in Portugal and Spain have banned overnight parking",
+      "wrongOptions": {
+        "A": "A gazda csak elküldte őket („told them to move on”), pénzt nem kért.",
+        "B": "A szupermarket parkolójában épp éjjel tizenegykor köröznek, tehát nincs szó bezárásról.",
+        "C": "A bírság elérheti a több száz eurót, de arról, hogy megduplázódott volna, nincs szó."
+      }
+    },
+    {
+      "id": "4",
+      "kind": "choice",
+      "prompt": "For Luis, the main advantage of living in a van is that",
+      "options": [
+        { "key": "A", "text": "he earns more than he did in Glasgow." },
+        { "key": "B", "text": "his lower costs allow him to spend less time working." },
+        { "key": "C", "text": "he no longer needs to work at all." },
+        { "key": "D", "text": "he has a better internet connection than before." }
+      ],
+      "answer": "B",
+      "category": "detail",
+      "explanation": "B. Luisnak az idő a legfontosabb: mivel nem kell lakbért fizetniük, sokkal kevesebb pénz kell nekik, így megengedhetik maguknak, hogy kevesebbet dolgozzanak (heti három napot).",
+      "evidence": "With no rent to pay, the couple need far less money, so they can afford to work less.",
+      "wrongOptions": {
+        "A": "Épp fordítva: Glasgow-ban volt pénzük, most „not much money”.",
+        "C": "Továbbra is dolgozik, heti három napot („works three days a week”).",
+        "D": "Mobil hotspotról dolgozik, de arról, hogy jobb lenne az internetkapcsolata, nincs szó."
+      }
+    },
+    {
+      "id": "5",
+      "kind": "choice",
+      "prompt": "What does Hannah mean when she says 'you also stop missing them'?",
+      "options": [
+        { "key": "A", "text": "She regrets having sold most of her belongings." },
+        { "key": "B", "text": "She keeps her old possessions at her parents' house." },
+        { "key": "C", "text": "She cannot afford to buy anything new." },
+        { "key": "D", "text": "After some time, she no longer feels the need for many possessions." }
+      ],
+      "answer": "D",
+      "category": "vocabulary-in-context",
+      "explanation": "D. A „them” a tárgyakra utal (possessions, things). Mivel minden holmijüknek egy bőrönd méretű szekrénybe kell beférnie, abbahagyja a vásárlást, és egy idő után már nem is hiányoznak neki a tárgyak – nincs szüksége rájuk.",
+      "evidence": "After a while, you also stop missing them.",
+      "wrongOptions": {
+        "A": "Épp ellenkezőleg: nem bánja, hiszen a tárgyak már nem hiányoznak neki.",
+        "B": "A szülői házat csak betegség esetére említi, a régi holmiját nem ott tárolja (erről nincs szó).",
+        "C": "Azért nem vásárol, mert nincs hely, nem azért, mert nincs rá pénze."
+      }
+    },
+    {
+      "id": "6",
+      "kind": "choice",
+      "prompt": "What is Dr Montes's main concern?",
+      "options": [
+        { "key": "A", "text": "If van life is treated as a hobby, people who live in vehicles out of necessity may be overlooked." },
+        { "key": "B", "text": "Social media makes van life look more dangerous than it is." },
+        { "key": "C", "text": "Young people with savings should not be allowed to live in vans." },
+        { "key": "D", "text": "Too few studies have been carried out on people who live in vehicles." }
+      ],
+      "answer": "A",
+      "category": "attitude",
+      "explanation": "A. Szerinte a „vanlife” elnevezés hobbinak tünteti fel az életmódot, pedig egyeseknek ez kényszer, a hajléktalanság előtti utolsó lépés – ezért nem szabad összekeverni a kettőt, különben a rászorulók helyzete elsikkad.",
+      "evidence": "For some people it is a choice; for others it is the last step before homelessness.",
+      "wrongOptions": {
+        "B": "A közösségi média szépíti, nem veszélyesebbnek mutatja az életmódot – és ezt nem is Dr Montes mondja.",
+        "C": "Nem tiltaná meg senkinek; csak megjegyzi, hogy akiknek van tartalékuk, azok élvezik a legjobban.",
+        "D": "Ő maga több mint száz embert kérdezett meg; a kutatások hiányára nem panaszkodik."
+      }
+    },
+    {
+      "id": "7",
+      "kind": "choice",
+      "prompt": "Hannah's comment about her parents' house shows that she",
+      "options": [
+        { "key": "A", "text": "plans to move back home in the near future." },
+        { "key": "B", "text": "is worried about her health." },
+        { "key": "C", "text": "realises that she has the kind of safety net Dr Montes describes." },
+        { "key": "D", "text": "thinks her parents disapprove of her lifestyle." }
+      ],
+      "answer": "C",
+      "category": "inference",
+      "explanation": "C. Hannah elismeri, hogy szerencsések („We're lucky, and I know it”), és baj esetén másnap visszaköltözhetnének a szülei házába – ez pontosan az a védőháló („a family home to go back to”), amelyről Dr Montes beszél.",
+      "evidence": "If one of us got seriously ill, we'd move back into my parents' house the next day.",
+      "wrongOptions": {
+        "A": "Csak súlyos betegség esetén költöznének vissza; a tervük az, hogy még egy évet utaznak, aztán esetleg saját kis házat vesznek.",
+        "B": "Feltételes mondatról van szó („If one of us got seriously ill”); nem mondja, hogy aggódna az egészsége miatt.",
+        "D": "A szülők véleményéről nincs szó; épp ellenkezőleg, számíthatnak rájuk."
+      }
+    },
+    {
+      "id": "8",
+      "kind": "choice",
+      "prompt": "What does Luis's final comment suggest about the couple?",
+      "options": [
+        { "key": "A", "text": "They have given up on ordinary life for good." },
+        { "key": "B", "text": "They are using their time on the road to find out what they really want from a settled life." },
+        { "key": "C", "text": "They are tired of travelling and want to settle down immediately." },
+        { "key": "D", "text": "They want to persuade other people to try van life." }
+      ],
+      "answer": "B",
+      "category": "inference",
+      "explanation": "B. Luis szerint nem adták fel a „normális” életet, csak hosszú szünetet tartanak belőle, hogy kiderítsék, mely részeit akarják valójában – vagyis az utazás arra jó, hogy eldöntsék, milyen letelepedett életet szeretnének.",
+      "evidence": "I think we're just taking a long break from it, so that we can work out which parts of it we actually want.",
+      "wrongOptions": {
+        "A": "Épp ezt cáfolja: csak szünetet tartanak („taking a long break”), és később házat vennének.",
+        "C": "Még egy évet szeretnének úton lenni, tehát nem azonnal akarnak letelepedni, és fáradtságról sem beszél.",
+        "D": "Arról, hogy másokat meggyőznének, nincs szó a szövegben."
+      }
+    }
+  ],
+  "glossary": [
+    { "term": "converted", "meaning": "átalakított, átépített" },
+    { "term": "measure", "meaning": "(valamekkora) méretű – measures six square metres: hat négyzetméteres" },
+    { "term": "suspiciously", "meaning": "gyanúsan" },
+    { "term": "move on", "meaning": "továbbáll; (tell sb to move on) elküld valakit" },
+    { "term": "frozen solid", "meaning": "teljesen befagyott" },
+    { "term": "carry on", "meaning": "folytatja, csinálja tovább" },
+    { "term": "afford", "meaning": "megengedheti magának (anyagilag)" },
+    { "term": "freelance", "meaning": "szabadúszó" },
+    { "term": "possessions", "meaning": "(személyes) holmi, vagyontárgyak" },
+    { "term": "homelessness", "meaning": "hajléktalanság" },
+    { "term": "safety net", "meaning": "védőháló, (anyagi) tartalék" },
+    { "term": "decent", "meaning": "rendes, megfelelő (minőségű)" }
+  ],
+  "suggestedMinutes": 18
+}

@@ -58,7 +58,7 @@ export default function WritingListPage() {
                 <h2 className="mb-2 text-lg font-semibold">
                   {rt.taskNumber}. feladat – {rt.name}{" "}
                   <span className="text-sm font-normal text-muted">
-                    ({rt.wordLimit.min}–{rt.wordLimit.max} {t.common.words})
+                    {rt.wordLimit && `(${rt.wordLimit.min}–${rt.wordLimit.max} ${t.common.words})`}
                   </span>
                 </h2>
                 {list.length === 0 ? (

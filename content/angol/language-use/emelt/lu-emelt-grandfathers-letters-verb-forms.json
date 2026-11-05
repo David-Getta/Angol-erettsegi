@@ -1,0 +1,49 @@
+{
+  "schemaVersion": 1,
+  "id": "lu-emelt-grandfathers-letters-verb-forms",
+  "subject": "angol",
+  "revision": 2,
+  "level": "emelt",
+  "source": "generated",
+  "topic": "szemelyes",
+  "title": "The box in the attic",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "language-use",
+  "type": "verb-forms",
+  "instructions": "Read the text and put the verbs in brackets into the correct form. In some gaps you may need more than one word. There is an example (0) at the beginning.",
+  "instructionsHu": "Tedd a zárójelben megadott igéket a megfelelő alakba. Egyes helyekre több szó is kellhet. A 0. a példa.",
+  "passage": {
+    "title": "The box in the attic",
+    "blocks": [
+      { "text": "Last summer, while my parents [[0]] out the attic, they came across an old shoebox full of letters. Nobody in the family [[1]] it before, and Mum was about [[2]] it away when I noticed my grandfather's name on one of the envelopes. 'I really should [[3]] what was inside first,' she admitted later." },
+      { "text": "It turned out that the letters [[4]] by Grandpa in the 1960s, when he was working as a sailor. I had always thought of him as a quiet man who avoided [[5]] about his feelings, so reading them felt strange. In one of them, he told my grandmother that he [[6]] the days until he could see her again." },
+      { "text": "When I showed the letters to Grandpa, he went silent for a moment. 'I [[7]] these for more than fifty years,' he finally said. 'I wish your grandmother [[8]] here to see them.' She died when I was six, so I hardly remember her." },
+      { "text": "Since then, Grandpa and I [[9]] every Sunday afternoon to read a few letters together, and he tells me the stories behind them. If I [[10]] his name on that envelope, I would probably still know almost nothing about his life. Now I'm working on turning the letters into a small book. If everything goes to plan, I [[11]] it by the time Grandpa celebrates his ninetieth birthday next spring, and I'm going to have it [[12]] so that every grandchild can get a copy." }
+    ]
+  },
+  "example": {
+    "id": "0",
+    "kind": "text",
+    "cue": "clear",
+    "answer": ["were clearing", "cleared"],
+    "category": "tense",
+    "explanation": "A „while” után a háttérben zajló, folyamatban lévő múltbeli cselekvést past continuousszal fejezzük ki: while my parents were clearing out the attic (miközben pakoltak), they came across … (rövid, közbejövő esemény: past simple). A past simple („while my parents cleared out the attic”) is elfogadható."
+  },
+  "items": [
+    { "id": "1", "kind": "text", "cue": "see", "answer": ["had seen", "had ever seen"], "category": "tense", "explanation": "Past perfect: a múltbeli eseménynél (amikor megtalálták a dobozt) korábbi időszakra vonatkozik, a „before” jelzi: Nobody had seen it before. A „nobody” egyes számú, de a „had” minden számban azonos." },
+    { "id": "2", "kind": "text", "cue": "throw", "answer": ["to throw"], "category": "gerund-infinitive", "explanation": "„Be about to do something” = épp azon van, hogy megtegyen valamit (mindjárt kidobta volna). A szerkezetben mindig „to + ige” áll." },
+    { "id": "3", "kind": "text", "cue": "check", "answer": ["have checked", "'ve checked"], "category": "modal", "explanation": "„Should have + 3. alak” = meg kellett volna tenni (de nem tette meg) – utólagos bírálat, megbánás a múltra: I should have checked." },
+    { "id": "4", "kind": "text", "cue": "write", "answer": ["had been written", "were written"], "category": "passive", "explanation": "Szenvedő szerkezet, mert a leveleket írták (by Grandpa = a cselekvő). Múltbeli időpont (in the 1960s) és a „turned out” utáni korábbi esemény miatt past perfect passive (had been written) vagy past simple passive (were written) is helyes." },
+    { "id": "5", "kind": "text", "cue": "talk", "answer": ["talking"], "category": "gerund-infinitive", "explanation": "Az „avoid” ige után -ing alak áll: avoid doing something (kerüli, hogy …). „Avoided to talk” hibás." },
+    { "id": "6", "kind": "text", "cue": "count", "answer": ["was counting", "had been counting", "'d been counting"], "category": "reported-speech", "explanation": "Függő beszéd múlt idejű „told” után: az eredeti „I'm counting the days” (present continuous) → was counting; ha az eredeti „I've been counting the days” volt → had been counting. Mindkettő helyes." },
+    { "id": "7", "kind": "text", "cue": "not read", "answer": ["haven't read", "have not read", "'ve not read"], "category": "tense", "explanation": "Egyenes beszéd, a jelenig tartó időszak (for more than fifty years) → present perfect: I haven't read these for more than fifty years (több mint ötven éve nem olvastam)." },
+    { "id": "8", "kind": "text", "cue": "be", "answer": ["were", "was", "could be"], "category": "conditional", "explanation": "„I wish + past simple” = jelenre vonatkozó, nem teljesülő kívánság (bárcsak itt lenne most). A „be” igénél a „were” a választékos, a „was” a köznyelvi alak; a „could be” is helyes." },
+    { "id": "9", "kind": "text", "cue": "meet", "answer": ["have been meeting", "'ve been meeting", "have met", "'ve met"], "category": "tense", "explanation": "„Since then” = azóta, a múltban kezdődött és most is tartó ismétlődő cselekvés → present perfect continuous (have been meeting) vagy present perfect (have met). A „Grandpa and I” többes számú alany, ezért „have”." },
+    { "id": "10", "kind": "text", "cue": "not notice", "answer": ["hadn't noticed", "had not noticed"], "category": "conditional", "explanation": "Vegyes feltételes mondat: múltbeli, nem valós feltétel (If + past perfect: if I hadn't noticed) jelenbeli következménnyel (I would still know almost nothing – most sem tudnék semmit)." },
+    { "id": "11", "kind": "text", "cue": "finish", "answer": ["will have finished", "'ll have finished", "shall have finished", "should have finished", "should've finished"], "category": "tense", "explanation": "Future perfect (will have + 3. alak): egy jövőbeli időpontra (by the time … next spring) már befejezett cselekvés. Első személyben a választékos „shall have finished” és a „should have finished” (jó eséllyel addigra befejezem) is helyes." },
+    { "id": "12", "kind": "text", "cue": "print", "answer": ["printed"], "category": "passive", "explanation": "„Have something done” szerkezet: másvalakivel csináltatunk meg valamit (kinyomtattatom a könyvet). Az ige 3. alakban áll: have it printed." }
+  ],
+  "glossary": [],
+  "suggestedMinutes": 12
+}

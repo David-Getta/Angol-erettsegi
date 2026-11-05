@@ -1,0 +1,405 @@
+{
+  "schemaVersion": 1,
+  "id": "ls-emelt-sleep-and-screens-mc",
+  "subject": "angol",
+  "revision": 2,
+  "level": "emelt",
+  "source": "generated",
+  "topic": "tudomany",
+  "title": "Screens, sleep and teenagers",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "listening",
+  "type": "multiple-choice",
+  "instructions": "You are going to listen to a radio interview with a researcher who studies sleep. For questions 1–8, choose the answer (A, B, C or D) which fits best according to what you hear. You will hear the recording twice. There is an example (0) at the beginning.",
+  "instructionsHu": "Egy rádióinterjút hallasz egy alváskutatóval. Az 1–8. kérdésnél válaszd ki a hallottak alapján legjobban illő választ (A, B, C vagy D). A felvételt kétszer hallod; a 0. a példa.",
+  "listening": {
+    "format": "interview",
+    "speakers": [
+      {
+        "id": "H",
+        "name": "Mark Ellison (presenter)",
+        "gender": "male",
+        "accent": "en-US",
+        "age": "adult"
+      },
+      {
+        "id": "R",
+        "name": "Dr Fiona Marsh (sleep researcher)",
+        "gender": "female",
+        "accent": "en-GB",
+        "age": "adult"
+      }
+    ],
+    "script": [
+      {
+        "speaker": "H",
+        "text": "Welcome back to Science Matters. Now, most of us have been told at some point that we really shouldn't look at our phones before bed. But is that actually true? My guest today is Dr Fiona Marsh, who leads a sleep research team at a university in the north of England. Fiona, thanks for coming in."
+      },
+      {
+        "speaker": "R",
+        "text": "Thanks for having me. And, well, I should say straight away that the answer is a bit more complicated than the headlines suggest."
+      },
+      {
+        "speaker": "H",
+        "text": "Complicated in what way?"
+      },
+      {
+        "speaker": "R",
+        "text": "For years the main suspect was blue light. The idea was that the light from screens tricks the brain into thinking it's still daytime, so you produce less melatonin, which is the hormone that makes you feel sleepy. And that does happen – in the lab, with very bright screens. But when we followed about four hundred teenagers in their own homes, the effect of the light itself turned out to be surprisingly small. We're talking about a delay of maybe five or ten minutes. So it isn't nothing, but it's hardly the whole story."
+      },
+      {
+        "speaker": "H",
+        "text": "So what is the whole story, then?"
+      },
+      {
+        "speaker": "R",
+        "text": "What really seems to matter is what people are doing on the screen. Scrolling through social media or messaging friends keeps your mind switched on – you're waiting for replies, you're comparing yourself to other people, sometimes you're getting a bit upset. Watching a calm nature documentary, on the other hand, made very little difference. Gaming was somewhere in between, actually. Fast, competitive games were worse than, say, a puzzle game, but neither was as bad as social media."
+      },
+      {
+        "speaker": "H",
+        "text": "Interesting. And I suppose the other problem is simply that people stay up later."
+      },
+      {
+        "speaker": "R",
+        "text": "Exactly, and that's what we call bedtime procrastination. It's not that the phone stops you from falling asleep once you've put it down – it's that you don't put it down. One of our participants, a sixteen-year-old girl, told us she'd get into bed at ten, start watching short videos, and the next time she looked at the clock it was half past twelve. She wasn't anxious or wide awake. She was just completely absorbed. And, to be honest, I recognise that in myself too."
+      },
+      {
+        "speaker": "H",
+        "text": "So should parents be taking phones away at night?"
+      },
+      {
+        "speaker": "R",
+        "text": "Hmm, I'd be careful there. When parents simply confiscated phones, we often saw the opposite of what they wanted. Teenagers felt they were being treated like small children, there were arguments, and quite a few of them just switched to a laptop or an old phone they'd hidden in a drawer."
+      },
+      {
+        "speaker": "H",
+        "text": "So what does work?"
+      },
+      {
+        "speaker": "R",
+        "text": "Well, some families wrote the rules on the fridge, others installed apps that lock the phone at a certain time, and a few parents even paid their kids to switch off – that didn't last long! Those things helped a little. But what really made the difference was when the rules applied to everyone – when Mum and Dad put their phones away at the same time as the kids. Teenagers are very quick to spot hypocrisy."
+      },
+      {
+        "speaker": "H",
+        "text": "What about night mode, the setting that turns your screen orange in the evening?"
+      },
+      {
+        "speaker": "R",
+        "text": "Ah, night mode. I don't want to sound dismissive, because it certainly doesn't do any harm. But I think it gives people a false sense of security. They think, right, my screen's orange, I'm fine, and then they carry on scrolling for another hour. So it fixes the smaller problem and ignores the bigger one."
+      },
+      {
+        "speaker": "H",
+        "text": "So what would you actually recommend to, let's say, a student with exams coming up?"
+      },
+      {
+        "speaker": "R",
+        "text": "Three things, really. First, try to get up at roughly the same time every day, even at weekends. That's probably more important than the time you go to bed. Second, stop revising at least an hour before you turn the lights off – your brain needs time to slow down. And third, if you can't sleep, don't lie there staring at the ceiling for an hour. Get up, read something on paper, and go back to bed when you feel sleepy."
+      },
+      {
+        "speaker": "H",
+        "text": "And was there anything in the research that surprised you personally?"
+      },
+      {
+        "speaker": "R",
+        "text": "Yes, actually. I expected the teenagers to be quite defensive about their phones. But a lot of them told us they'd love to use them less at night. They just didn't want to be the only one in their group who wasn't replying. So in a way it's a social problem rather than a technological one. If a whole group of friends agrees to go quiet after eleven, it suddenly becomes much easier for everyone."
+      },
+      {
+        "speaker": "H",
+        "text": "Dr Fiona Marsh, thank you very much."
+      }
+    ]
+  },
+  "example": {
+    "id": "0",
+    "kind": "choice",
+    "prompt": "At the start of the interview, Dr Marsh says that",
+    "options": [
+      {
+        "key": "A",
+        "text": "phones have no effect on sleep at all."
+      },
+      {
+        "key": "B",
+        "text": "the issue is more complex than the media suggest."
+      },
+      {
+        "key": "C",
+        "text": "the headlines about sleep are completely wrong."
+      },
+      {
+        "key": "D",
+        "text": "she has only just started researching the topic."
+      }
+    ],
+    "answer": "B",
+    "category": "gist",
+    "explanation": "B a helyes: Dr Marsh rögtön az elején azt mondja, hogy a válasz bonyolultabb, mint ahogy a sajtó („the headlines”) sugallja – ez a „more complex than the media suggest” átfogalmazása.",
+    "evidence": "the answer is a bit more complicated than the headlines suggest",
+    "wrongOptions": {
+      "A": "Nem mondja, hogy semmilyen hatása nincs – csak azt, hogy bonyolultabb a kérdés.",
+      "C": "Nem állítja, hogy a hírek teljesen tévesek, csak hogy leegyszerűsítik a dolgot.",
+      "D": "Erről nincs szó; egy kutatócsoportot vezet, tehát nem kezdő a témában."
+    }
+  },
+  "items": [
+    {
+      "id": "1",
+      "kind": "choice",
+      "prompt": "What did Dr Marsh's team find out about the blue light from screens?",
+      "options": [
+        {
+          "key": "A",
+          "text": "It makes the body produce more melatonin."
+        },
+        {
+          "key": "B",
+          "text": "It keeps teenagers awake for about an hour."
+        },
+        {
+          "key": "C",
+          "text": "In everyday conditions, its effect is fairly minor."
+        },
+        {
+          "key": "D",
+          "text": "It can only be studied in a laboratory."
+        }
+      ],
+      "answer": "C",
+      "category": "detail",
+      "explanation": "C a helyes: amikor otthoni körülmények között vizsgálták a tinédzsereket, a kék fény hatása „meglepően kicsi” volt (kb. 5–10 perc késés). A „surprisingly small” = „fairly minor”, az „in their own homes” = „in everyday conditions”.",
+      "evidence": "the effect of the light itself turned out to be surprisingly small",
+      "wrongOptions": {
+        "A": "Fordítva: a képernyő fénye miatt KEVESEBB melatonin termelődik („you produce less melatonin”).",
+        "B": "Nem egy óra, hanem csak kb. öt-tíz perc késésről beszél („a delay of maybe five or ten minutes”).",
+        "D": "Éppen hogy otthon is vizsgálták, négyszáz tinédzsert követve („in their own homes”)."
+      }
+    },
+    {
+      "id": "2",
+      "kind": "choice",
+      "prompt": "According to Dr Marsh, which of these activities is most likely to keep people awake?",
+      "options": [
+        {
+          "key": "A",
+          "text": "chatting with friends online"
+        },
+        {
+          "key": "B",
+          "text": "watching a relaxing documentary"
+        },
+        {
+          "key": "C",
+          "text": "playing a fast competitive game"
+        },
+        {
+          "key": "D",
+          "text": "doing a puzzle on the phone"
+        }
+      ],
+      "answer": "A",
+      "category": "detail",
+      "explanation": "A a helyes: a közösségi média görgetése és az üzenetváltás a barátokkal „bekapcsolva tartja” az agyat (válaszra vársz, összehasonlítod magad másokkal). A játékokról azt mondja, hogy egyik sem olyan rossz, mint a közösségi média.",
+      "evidence": "Scrolling through social media or messaging friends keeps your mind switched on",
+      "wrongOptions": {
+        "B": "A nyugodt természetfilm alig számított („made very little difference”).",
+        "C": "A gyors versengős játékok „somewhere in between” vannak, és „neither was as bad as social media” – tehát nem ez a legrosszabb.",
+        "D": "A kirakós játék még a versengős játékoknál is kevésbé zavarta az alvást."
+      }
+    },
+    {
+      "id": "3",
+      "kind": "choice",
+      "prompt": "What does Dr Marsh mean by 'bedtime procrastination'?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Phones make it physically harder to fall asleep."
+        },
+        {
+          "key": "B",
+          "text": "Teenagers are often sent to bed too early by their parents."
+        },
+        {
+          "key": "C",
+          "text": "Worrying at night stops people from relaxing."
+        },
+        {
+          "key": "D",
+          "text": "People lose track of time and put off going to sleep."
+        }
+      ],
+      "answer": "D",
+      "category": "vocabulary-in-context",
+      "explanation": "D a helyes: a probléma nem az, hogy a telefon letétele után nem tudsz elaludni, hanem hogy nem teszed le („you don't put it down”). A példa: a lány tízkor lefeküdt, és észre sem vette, hogy fél egy lett – vagyis elveszíti az időérzékét és halogatja az alvást.",
+      "evidence": "it's that you don't put it down",
+      "wrongOptions": {
+        "A": "Kifejezetten tagadja: „It's not that the phone stops you from falling asleep once you've put it down”.",
+        "B": "A szülők lefekvési szabályairól itt nincs szó.",
+        "C": "A lány „wasn't anxious or wide awake” – nem aggódott, csak teljesen belefeledkezett."
+      }
+    },
+    {
+      "id": "4",
+      "kind": "choice",
+      "prompt": "What is Dr Marsh's view of parents simply taking phones away at night?",
+      "options": [
+        {
+          "key": "A",
+          "text": "It is the most effective solution for younger teenagers."
+        },
+        {
+          "key": "B",
+          "text": "It often fails to achieve what parents hope for."
+        },
+        {
+          "key": "C",
+          "text": "It works as long as laptops are taken away too."
+        },
+        {
+          "key": "D",
+          "text": "It is harmless but has little effect."
+        }
+      ],
+      "answer": "B",
+      "category": "attitude",
+      "explanation": "B a helyes: óvatosságra int („I'd be careful there”), és azt mondja, hogy a telefonok elkobzásakor gyakran az ellenkezője történt annak, amit a szülők akartak – vagyis gyakran nem éri el a célját.",
+      "evidence": "When parents simply confiscated phones, we often saw the opposite of what they wanted.",
+      "wrongOptions": {
+        "A": "Egyáltalán nem tartja a leghatékonyabbnak; éppen óv tőle.",
+        "C": "A laptopot csak annak példájaként említi, hogy a tinik más eszközre váltottak – nem javasolja, hogy azt is vegyék el.",
+        "D": "Nem ártalmatlan: veszekedések lettek belőle, és a tinik gyerekként kezelve érezték magukat."
+      }
+    },
+    {
+      "id": "5",
+      "kind": "choice",
+      "prompt": "According to Dr Marsh, family rules about phones work best when",
+      "options": [
+        {
+          "key": "A",
+          "text": "they are written down and put somewhere visible."
+        },
+        {
+          "key": "B",
+          "text": "an app locks the phone automatically."
+        },
+        {
+          "key": "C",
+          "text": "teenagers are paid to follow them."
+        },
+        {
+          "key": "D",
+          "text": "parents keep to the same rules as their children."
+        }
+      ],
+      "answer": "D",
+      "category": "detail",
+      "explanation": "D a helyes: az igazi különbséget az jelentette, amikor a szabályok mindenkire vonatkoztak, vagyis a szülők is ugyanakkor tették el a telefonjukat, mint a gyerekek. A tinédzserek gyorsan észreveszik a képmutatást.",
+      "evidence": "what really made the difference was when the rules applied to everyone",
+      "wrongOptions": {
+        "A": "A hűtőre írt szabályok csak „helped a little” – nem ez volt a döntő.",
+        "B": "A telefont lezáró appok szintén csak kicsit segítettek.",
+        "C": "A pénzzel jutalmazás nem tartott sokáig („that didn't last long”)."
+      }
+    },
+    {
+      "id": "6",
+      "kind": "choice",
+      "prompt": "What is Dr Marsh's opinion of night mode?",
+      "options": [
+        {
+          "key": "A",
+          "text": "It may make people less careful about their screen habits."
+        },
+        {
+          "key": "B",
+          "text": "It may damage people's eyesight."
+        },
+        {
+          "key": "C",
+          "text": "It is useless and people should switch it off."
+        },
+        {
+          "key": "D",
+          "text": "It deals with the main cause of poor sleep."
+        }
+      ],
+      "answer": "A",
+      "category": "attitude",
+      "explanation": "A a helyes: szerinte az éjszakai mód hamis biztonságérzetet ad („false sense of security”) – az emberek azt hiszik, rendben vannak, és még egy órát görgetnek. Vagyis kevésbé figyelnek a szokásaikra.",
+      "evidence": "I think it gives people a false sense of security",
+      "wrongOptions": {
+        "B": "Azt mondja, „it certainly doesn't do any harm” – nem árt.",
+        "C": "Nem akar lekezelőnek tűnni („I don't want to sound dismissive”), és nem mondja, hogy ki kellene kapcsolni.",
+        "D": "Fordítva: a kisebbik problémát oldja meg, a nagyobbat figyelmen kívül hagyja."
+      }
+    },
+    {
+      "id": "7",
+      "kind": "choice",
+      "prompt": "What does Dr Marsh say about getting up at the same time every day?",
+      "options": [
+        {
+          "key": "A",
+          "text": "It matters less than having a regular bedtime."
+        },
+        {
+          "key": "B",
+          "text": "It is only necessary during exam periods."
+        },
+        {
+          "key": "C",
+          "text": "It is probably more important than when you go to bed."
+        },
+        {
+          "key": "D",
+          "text": "It is fine to get up later at weekends to catch up."
+        }
+      ],
+      "answer": "C",
+      "category": "detail",
+      "explanation": "C a helyes: az első tanácsa, hogy minden nap nagyjából ugyanakkor kelj, és ez „valószínűleg fontosabb, mint az, hogy mikor fekszel le”.",
+      "evidence": "That's probably more important than the time you go to bed.",
+      "wrongOptions": {
+        "A": "Pont fordítva: a felkelés ideje fontosabb a lefekvésnél.",
+        "B": "„every day” – nem csak vizsgaidőszakban.",
+        "D": "Kifejezetten azt mondja: „even at weekends”, tehát hétvégén is ugyanakkor kell kelni."
+      }
+    },
+    {
+      "id": "8",
+      "kind": "choice",
+      "prompt": "What surprised Dr Marsh about the teenagers in the study?",
+      "options": [
+        {
+          "key": "A",
+          "text": "They were very defensive about their phone use."
+        },
+        {
+          "key": "B",
+          "text": "Many of them wished they used their phones less at night."
+        },
+        {
+          "key": "C",
+          "text": "They had found clever technological solutions."
+        },
+        {
+          "key": "D",
+          "text": "Most of their friendship groups stopped messaging after eleven."
+        }
+      ],
+      "answer": "B",
+      "category": "inference",
+      "explanation": "B a helyes: arra számított, hogy a tinik védekezni fognak, ehelyett sokan azt mondták, szívesen használnák kevesebbet a telefont éjjel – csak nem akartak az egyetlenek lenni a csoportban, aki nem válaszol.",
+      "evidence": "a lot of them told us they'd love to use them less at night",
+      "wrongOptions": {
+        "A": "Ezt várta („I expected the teenagers to be quite defensive”), de nem így lett – ezért volt meglepő.",
+        "C": "Szerinte ez inkább társas, mint technológiai probléma; a telefont lezáró appokat a családok használták, és a tinik ügyes technikai megoldásairól nincs szó.",
+        "D": "A tizenegy órai elcsendesedés csak egy feltételezett ötlet („If a whole group of friends agrees…”), nem ezt tapasztalták."
+      }
+    }
+  ],
+  "glossary": [],
+  "suggestedMinutes": 10
+}

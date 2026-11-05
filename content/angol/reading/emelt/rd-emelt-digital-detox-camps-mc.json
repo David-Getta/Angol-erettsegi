@@ -1,0 +1,198 @@
+{
+  "schemaVersion": 1,
+  "id": "rd-emelt-digital-detox-camps-mc",
+  "subject": "angol",
+  "revision": 1,
+  "level": "emelt",
+  "source": "generated",
+  "topic": "tudomany",
+  "title": "Switching off to switch on",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "reading",
+  "type": "multiple-choice",
+  "instructions": "Read the article about digital detox camps and answer the questions. Choose the best answer (A, B, C or D). There is an example (0) at the beginning.",
+  "instructionsHu": "Olvasd el a cikket, és válaszd ki a legjobb választ (A, B, C vagy D). A 0. a példa.",
+  "passage": {
+    "title": "Switching off to switch on",
+    "subtitle": "Why thousands of young people are paying to spend a week without their phones",
+    "blocks": [
+      { "text": "When Lena Fischer, a 19-year-old student from Munich, handed in her phone at the gate of a summer camp in the Bavarian Alps, she felt, in her own words, 'as if someone had taken away my left hand'. For the first two days she kept reaching into her pocket out of habit. By the end of the week, however, she was the one encouraging newcomers to leave their devices in the locked box by the entrance." },
+      { "text": "Lena is one of a growing number of young Europeans who choose to spend part of their holidays at so-called digital detox camps. The idea is simple: participants give up their smartphones, tablets and laptops for five to ten days and fill their time with hiking, cooking, music and long conversations. What is surprising is not that such camps exist, but who attends them. Organisers originally expected stressed office workers in their forties; instead, more than half of the guests are under twenty-five." },
+      { "text": "Psychologist Dr Amira Haddad, who has studied the camps for three years, believes the reason is not that young people dislike technology. 'Most of them are perfectly happy with their phones,' she explains. 'What they find exhausting is the feeling that they must always be available. At the camp, nobody expects an immediate answer, so they can finally relax.' According to her research, participants sleep on average 40 minutes longer by the third night, although she warns that the effect tends to disappear within a month of returning home." },
+      { "text": "Not everyone is convinced. Tech journalist Mark Ellison calls the camps 'an expensive way of doing something you could do for free in your own bedroom'. A week at a typical camp costs between 400 and 900 euros, and critics point out that the people who most need a break from their screens are often those who cannot afford one. Some organisers have responded by offering cheaper weekend programmes and scholarships for students." },
+      { "text": "Perhaps the most lasting change is a small one. Many former participants report that they now keep their phones out of the bedroom, or switch off notifications for most apps. Lena has gone a step further: she and her flatmates have introduced a 'phone basket' at dinner. 'At first it felt silly,' she admits. 'Now it's the best part of the day.'" }
+    ]
+  },
+  "example": {
+    "id": "0",
+    "kind": "choice",
+    "prompt": "How did Lena feel when she handed in her phone?",
+    "options": [
+      { "key": "A", "text": "Relieved." },
+      { "key": "B", "text": "As if she had lost part of her body." },
+      { "key": "C", "text": "Angry with the organisers." },
+      { "key": "D", "text": "Curious about the camp." }
+    ],
+    "answer": "B",
+    "category": "detail",
+    "explanation": "Azt mondja: „as if someone had taken away my left hand” – mintha elvették volna a bal kezét.",
+    "evidence": "as if someone had taken away my left hand"
+  },
+  "items": [
+    {
+      "id": "1",
+      "kind": "choice",
+      "prompt": "By the end of the week, Lena",
+      "options": [
+        { "key": "A", "text": "still reached for her phone out of habit." },
+        { "key": "B", "text": "wanted to leave the camp early." },
+        { "key": "C", "text": "persuaded new guests to give up their devices." },
+        { "key": "D", "text": "was allowed to use her phone again." }
+      ],
+      "answer": "C",
+      "category": "detail",
+      "explanation": "A hét végére ő bátorította az újonnan érkezőket, hogy tegyék be a készüléküket a lezárt dobozba – ez a C (persuaded new guests to give up their devices).",
+      "evidence": "she was the one encouraging newcomers to leave their devices in the locked box by the entrance",
+      "wrongOptions": {
+        "A": "Ez csak az első két napra igaz („For the first two days”), a hét végére nem.",
+        "B": "A szöveg sehol nem említi, hogy el akart volna menni.",
+        "D": "Nem kapta vissza a telefonját; arról van szó, hogy másokat biztatott a leadásra."
+      }
+    },
+    {
+      "id": "2",
+      "kind": "choice",
+      "prompt": "What surprised the organisers of the camps?",
+      "options": [
+        { "key": "A", "text": "The age of most participants." },
+        { "key": "B", "text": "How many office workers came." },
+        { "key": "C", "text": "That the camps became popular so quickly." },
+        { "key": "D", "text": "That guests preferred cooking to hiking." }
+      ],
+      "answer": "A",
+      "category": "inference",
+      "explanation": "A szervezők negyvenes irodai dolgozókra számítottak, de a vendégek több mint fele 25 év alatti – tehát a résztvevők életkora volt meglepő.",
+      "evidence": "Organisers originally expected stressed office workers in their forties; instead, more than half of the guests are under twenty-five.",
+      "wrongOptions": {
+        "B": "Épp fordítva: irodai dolgozókat vártak, de nem ők jöttek többségben.",
+        "C": "A gyors népszerűségről nem esik szó, csak arról, hogy egyre többen járnak oda.",
+        "D": "A programok fel vannak sorolva, de arról nincs szó, melyiket szeretik jobban."
+      }
+    },
+    {
+      "id": "3",
+      "kind": "choice",
+      "prompt": "According to Dr Haddad, young people go to the camps because",
+      "options": [
+        { "key": "A", "text": "they do not like modern technology." },
+        { "key": "B", "text": "they feel pressure to be reachable all the time." },
+        { "key": "C", "text": "their parents send them there." },
+        { "key": "D", "text": "they want to sleep more." }
+      ],
+      "answer": "B",
+      "category": "detail",
+      "explanation": "Szerinte az a fárasztó, hogy úgy érzik, mindig elérhetőnek kell lenniük („must always be available”) – ez a B.",
+      "evidence": "What they find exhausting is the feeling that they must always be available.",
+      "wrongOptions": {
+        "A": "Kifejezetten azt mondja, hogy nem a technológiát nem szeretik: „Most of them are perfectly happy with their phones”.",
+        "C": "A szülőkről nincs szó a szövegben.",
+        "D": "A hosszabb alvás a tábor eredménye, nem az oka annak, hogy elmennek."
+      }
+    },
+    {
+      "id": "4",
+      "kind": "choice",
+      "prompt": "What does Dr Haddad say about the effect on sleep?",
+      "options": [
+        { "key": "A", "text": "It starts on the first night." },
+        { "key": "B", "text": "It lasts for several months." },
+        { "key": "C", "text": "It usually does not last long after the camp." },
+        { "key": "D", "text": "It is only noticeable in older guests." }
+      ],
+      "answer": "C",
+      "category": "detail",
+      "explanation": "Figyelmeztet, hogy a hatás a hazatérés után egy hónapon belül általában eltűnik („tends to disappear within a month”) – tehát nem tart sokáig.",
+      "evidence": "the effect tends to disappear within a month of returning home",
+      "wrongOptions": {
+        "A": "A harmadik éjszakára alszanak többet („by the third night”), nem az elsőre.",
+        "B": "Épp ellenkezőleg: egy hónapon belül megszűnik.",
+        "D": "Az életkor szerinti különbségről nincs szó."
+      }
+    },
+    {
+      "id": "5",
+      "kind": "choice",
+      "prompt": "Mark Ellison's main criticism is that the camps",
+      "options": [
+        { "key": "A", "text": "do not really help people relax." },
+        { "key": "B", "text": "charge a lot for something people could do at home." },
+        { "key": "C", "text": "are badly organised." },
+        { "key": "D", "text": "are too short to be useful." }
+      ],
+      "answer": "B",
+      "category": "attitude",
+      "explanation": "Szerinte drága módja annak, amit ingyen is meg lehetne csinálni a saját hálószobánkban („an expensive way of doing something you could do for free in your own bedroom”).",
+      "evidence": "an expensive way of doing something you could do for free in your own bedroom",
+      "wrongOptions": {
+        "A": "Nem vitatja, hogy segítenek pihenni, csak a költséget kifogásolja.",
+        "C": "A szervezésről nem mond semmit.",
+        "D": "A tábor hosszát nem kritizálja."
+      }
+    },
+    {
+      "id": "6",
+      "kind": "choice",
+      "prompt": "How have some organisers reacted to the criticism?",
+      "options": [
+        { "key": "A", "text": "They have made their camps longer." },
+        { "key": "B", "text": "They have stopped accepting students." },
+        { "key": "C", "text": "They have introduced cheaper options and financial support." },
+        { "key": "D", "text": "They have allowed phones for emergencies." }
+      ],
+      "answer": "C",
+      "category": "detail",
+      "explanation": "Olcsóbb hétvégi programokat és diákösztöndíjakat kínálnak – ez a C (cheaper options and financial support).",
+      "evidence": "offering cheaper weekend programmes and scholarships for students",
+      "wrongOptions": {
+        "A": "Rövidebb (hétvégi) programokat vezettek be, nem hosszabbakat.",
+        "B": "Épp a diákoknak adnak ösztöndíjat.",
+        "D": "A telefonhasználat engedélyezéséről nincs szó."
+      }
+    },
+    {
+      "id": "7",
+      "kind": "choice",
+      "prompt": "What is the main point of the last paragraph?",
+      "options": [
+        { "key": "A", "text": "Most participants give up their phones completely." },
+        { "key": "B", "text": "The camps often lead to small but lasting changes in habits." },
+        { "key": "C", "text": "Lena now works for a digital detox camp." },
+        { "key": "D", "text": "Phones should be banned during family meals." }
+      ],
+      "answer": "B",
+      "category": "gist",
+      "explanation": "A bekezdés szerint a legtartósabb változás egy apró szokás (a telefon kitiltása a hálószobából, értesítések kikapcsolása, telefonkosár vacsoránál) – ez a B.",
+      "evidence": "Perhaps the most lasting change is a small one.",
+      "wrongOptions": {
+        "A": "Nem mondanak le teljesen a telefonról, csak bizonyos helyzetekben teszik le.",
+        "C": "Lena munkájáról nincs szó.",
+        "D": "Ez általános szabályként túlzás; a szöveg csak Lena saját szokásáról szól."
+      }
+    }
+  ],
+  "glossary": [
+    { "term": "hand in", "meaning": "lead, átad" },
+    { "term": "out of habit", "meaning": "megszokásból" },
+    { "term": "newcomer", "meaning": "újonnan érkező" },
+    { "term": "so-called", "meaning": "úgynevezett" },
+    { "term": "exhausting", "meaning": "kimerítő" },
+    { "term": "available", "meaning": "elérhető" },
+    { "term": "tend to", "meaning": "hajlamos valamire, általában úgy van, hogy" },
+    { "term": "afford", "meaning": "megengedheti magának (anyagilag)" },
+    { "term": "scholarship", "meaning": "ösztöndíj" },
+    { "term": "flatmate", "meaning": "lakótárs" },
+    { "term": "admit", "meaning": "beismer, elismer" }
+  ],
+  "suggestedMinutes": 18
+}

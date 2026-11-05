@@ -1,0 +1,136 @@
+{
+  "schemaVersion": 1,
+  "id": "ls-kozep-family-photo-day-sentence-completion",
+  "subject": "angol",
+  "revision": 1,
+  "level": "kozep",
+  "source": "generated",
+  "topic": "szemelyes",
+  "title": "Our family Photo Day",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "listening",
+  "type": "sentence-completion",
+  "instructions": "You are going to listen to a podcast in which a young woman, Grace, talks about a family tradition. Complete the sentences with information from the recording. Write no more than three words or a number in each gap. You will hear the recording twice. There is an example (0) at the beginning.",
+  "instructionsHu": "Egy podcastban Grace egy családi hagyományról mesél. Egészítsd ki a mondatokat a hallottak alapján (legfeljebb három szó vagy egy szám). A felvételt kétszer hallod. A 0. a példa.",
+  "listening": {
+    "format": "monologue",
+    "speakers": [
+      { "id": "G", "name": "Grace (podcast host)", "gender": "female", "accent": "en-US", "age": "young" }
+    ],
+    "script": [
+      { "speaker": "G", "text": "Hi everyone, and welcome back to Family Matters, the podcast about the little things that make families special. Today I want to tell you about my own family's tradition. We call it Photo Day." },
+      { "speaker": "G", "text": "It all started with my grandpa. In nineteen eighty-eight he bought his first good camera, and he wanted to try it out. So he took my grandma, my mom and my two uncles down to the lake near their house, and he took a photo of them under a big old tree. The next year he did the same thing, and then the year after that. And, well, we've never stopped." },
+      { "speaker": "G", "text": "Photo Day is always on the second Saturday in June. It doesn't matter where you live or how busy you are, you come. Last year my cousin Daniel flew all the way from Canada just for one afternoon by the lake." },
+      { "speaker": "G", "text": "There are a few rules, and everybody has to follow them. The most important one is that everyone has to wear something yellow. It's my grandma's favorite color. Some people just wear yellow socks, but my uncle Pete always wears this terrible yellow hat. Another rule is that the youngest person in the family decides where everybody stands. This year that was my little cousin Ruby. She's four, so it took a long time!" },
+      { "speaker": "G", "text": "People often ask me which photo is my favorite. I think it's the one from two thousand and nine. It rained all day, and I mean really rained. My grandpa didn't want to cancel, so there are thirteen of us under the tree, all holding umbrellas and laughing. I was only two, so I don't remember it, but I love that picture." },
+      { "speaker": "G", "text": "After the photo, we have a big picnic. Everyone brings one dish, and my grandma always makes her famous lemon cake. Then we look at the old photos together. They're all in frames in the hallway at my grandparents' house, one for every year, so the hallway is getting pretty full now!" },
+      { "speaker": "G", "text": "This year there were thirty-one people in the photo. Thirty-one! My grandparents can't believe it. And next year is going to be extra special, because my grandma turns eighty. I'm secretly making a photo book with the pictures from every Photo Day, and I'm going to give it to her at the picnic. So please, if you know my grandma, don't tell her!" },
+      { "speaker": "G", "text": "Do you have a family tradition? Send me a message, and maybe I'll talk about it in a future episode. See you next week!" }
+    ]
+  },
+  "example": {
+    "id": "0",
+    "kind": "text",
+    "prompt": "Grace's family calls their tradition ______.",
+    "answer": ["Photo Day", "the Photo Day"],
+    "maxWords": 3,
+    "category": "detail",
+    "explanation": "Grace rögtön az elején megmondja a hagyomány nevét: „We call it Photo Day.”",
+    "evidence": "We call it Photo Day."
+  },
+  "items": [
+    {
+      "id": "1",
+      "kind": "text",
+      "prompt": "The tradition was started by Grace's ______.",
+      "answer": ["grandpa", "grandfather", "granddad", "grandad", "granddaddy", "gramps"],
+      "maxWords": 3,
+      "category": "detail",
+      "explanation": "A helyes válasz: grandpa (nagyapa). „It all started with my grandpa” – a nagyapja kezdte, amikor kipróbálta az új fényképezőgépét.",
+      "evidence": "It all started with my grandpa."
+    },
+    {
+      "id": "2",
+      "kind": "text",
+      "prompt": "Grace's grandpa bought his first good camera in ______.",
+      "answer": ["1988", "nineteen eighty-eight", "nineteen eighty eight"],
+      "maxWords": 3,
+      "category": "detail",
+      "explanation": "A helyes válasz: 1988 (nineteen eighty-eight). Ekkor vette az első jó fényképezőgépét, és ekkor készült az első fotó a tónál.",
+      "evidence": "In nineteen eighty-eight he bought his first good camera"
+    },
+    {
+      "id": "3",
+      "kind": "text",
+      "prompt": "Photo Day is always on the second ______ in June.",
+      "answer": ["Saturday"],
+      "maxWords": 3,
+      "category": "detail",
+      "explanation": "A helyes válasz: Saturday (szombat). A Photo Day mindig június második szombatján van.",
+      "evidence": "Photo Day is always on the second Saturday in June."
+    },
+    {
+      "id": "4",
+      "kind": "text",
+      "prompt": "Everyone in the photo has to wear something ______.",
+      "answer": ["yellow"],
+      "maxWords": 3,
+      "category": "detail",
+      "explanation": "A helyes válasz: yellow (sárga). Ez a legfontosabb szabály, mert a sárga a nagymama kedvenc színe.",
+      "evidence": "everyone has to wear something yellow"
+    },
+    {
+      "id": "5",
+      "kind": "text",
+      "prompt": "The ______ person in the family decides where everybody stands.",
+      "answer": ["youngest"],
+      "maxWords": 3,
+      "category": "detail",
+      "explanation": "A helyes válasz: youngest (a legfiatalabb). A második szabály szerint a család legfiatalabb tagja dönti el, ki hová áll – idén a négyéves Ruby.",
+      "evidence": "the youngest person in the family decides where everybody stands"
+    },
+    {
+      "id": "6",
+      "kind": "text",
+      "prompt": "In Grace's favourite photo, everybody is holding ______.",
+      "answer": ["umbrellas", "an umbrella", "umbrella", "their umbrellas"],
+      "maxWords": 3,
+      "category": "detail",
+      "explanation": "A helyes válasz: umbrellas (esernyők). A 2009-es képen egész nap esett, ezért mind a tizenhárman esernyővel állnak a fa alatt, és nevetnek.",
+      "evidence": "all holding umbrellas and laughing"
+    },
+    {
+      "id": "7",
+      "kind": "text",
+      "prompt": "All the old photos hang in the ______ of the grandparents' house.",
+      "answer": ["hallway", "hall"],
+      "maxWords": 3,
+      "category": "detail",
+      "explanation": "A helyes válasz: hallway (előszoba, folyosó). A régi képek bekeretezve a nagyszülők házának előszobájában lógnak, évente egy.",
+      "evidence": "They're all in frames in the hallway at my grandparents' house"
+    },
+    {
+      "id": "8",
+      "kind": "text",
+      "prompt": "This year, there were ______ people in the photo.",
+      "answer": ["31", "thirty-one", "thirty one"],
+      "maxWords": 3,
+      "category": "detail",
+      "explanation": "A helyes válasz: 31 (thirty-one). Grace kétszer is elmondja, hogy idén harmincegyen voltak a képen. Csapda: a 13 a 2009-es esős fotón szereplők száma.",
+      "evidence": "This year there were thirty-one people in the photo."
+    },
+    {
+      "id": "9",
+      "kind": "text",
+      "prompt": "Because her grandma turns eighty next year, Grace is secretly making a ______.",
+      "answer": ["photo book", "photobook", "photo-book", "book", "book of photos", "photo album", "book of pictures"],
+      "maxWords": 3,
+      "category": "detail",
+      "explanation": "A helyes válasz: photo book (fotókönyv). Az összes Photo Day képeiből titokban fotókönyvet készít, és a jövő évi pikniken adja oda a nagymamájának.",
+      "evidence": "I'm secretly making a photo book with the pictures from every Photo Day"
+    }
+  ],
+  "glossary": [],
+  "suggestedMinutes": 8
+}

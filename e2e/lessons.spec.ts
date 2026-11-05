@@ -2,7 +2,7 @@ import fs from "node:fs";
 import path from "node:path";
 import { test, expect } from "@playwright/test";
 
-const lesson = JSON.parse(fs.readFileSync(path.join(process.cwd(), "content/grammar/kozep/gr-tense.json"), "utf8"));
+const lesson = JSON.parse(fs.readFileSync(path.join(process.cwd(), "content/angol/grammar/kozep/gr-tense.json"), "utf8"));
 
 test("Szabálytár: list → lesson → self-check with the explanation of the correct answer", async ({ page }) => {
   await page.goto("/szabalytar");

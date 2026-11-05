@@ -1,0 +1,160 @@
+{
+  "schemaVersion": 1,
+  "id": "rd-kozep-wind-turbine-technician-missing-sentences",
+  "subject": "angol",
+  "revision": 1,
+  "level": "kozep",
+  "source": "generated",
+  "topic": "munka",
+  "title": "My office is 100 metres up",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "reading",
+  "type": "missing-sentences",
+  "instructions": "Read the article in which a young woman talks about her job. Some sentences have been removed from the text. Choose the sentence (A–J) which fits each gap (1–7). There are two extra sentences that you do not need to use. There is an example (0) at the beginning.",
+  "instructionsHu": "Olvasd el a cikket, amelyben egy fiatal nő a munkájáról mesél. Néhány mondatot kivettek a szövegből: válaszd ki, melyik mondat (A–J) illik az egyes helyekre (1–7). Két mondat felesleges. A 0. a példa.",
+  "passage": {
+    "title": "My office is 100 metres up",
+    "subtitle": "Megan Doyle, 26, looks after wind turbines off the coast of Scotland",
+    "blocks": [
+      {
+        "text": "People often ask me if I'm afraid of heights. The honest answer is: a little, yes. [[0]] After four years as a wind turbine technician, climbing a 100-metre tower is simply part of my working day."
+      },
+      {
+        "text": "I never planned to do this job. At school I loved physics, but I knew I didn't want to sit in an office all day. [[1]] I applied the same evening, and two months later I started a three-year apprenticeship in Aberdeen."
+      },
+      {
+        "text": "Most of the turbines I work on are not on land but out at sea, about twenty kilometres from the coast. We travel there by boat, which takes around an hour. [[2]] Luckily, I got used to the waves after a few weeks, and now I usually sleep on the way."
+      },
+      {
+        "text": "When we arrive, we step from the boat onto a ladder at the bottom of the tower. Inside, there is a small lift, but it doesn't always work. [[3]] It takes about twenty minutes, and believe me, you don't need a gym after that!"
+      },
+      {
+        "text": "At the top, we check that every part of the machine is working properly. We change the oil, tighten bolts and replace broken parts. [[4]] Safety always comes first, so we work in pairs and wear a harness that is attached to the turbine all the time."
+      },
+      {
+        "text": "The weather decides everything in this job. If the wind is too strong or the waves are too high, the boat can't take us out. [[5]] In winter, this can happen for several days in a row, and then we stay in the office, write reports and plan our next trips."
+      },
+      {
+        "text": "What do I like most about my job? The view, definitely. On a clear day, I can see the mountains on one side and nothing but sea on the other. [[6]] I also love the feeling that my work helps the planet: one turbine can produce enough electricity for about 3,000 homes."
+      },
+      {
+        "text": "The job is well paid, even for beginners, and every year there are more jobs like mine. [[7]] My advice to girls who are good at science is simple: don't let anyone tell you that this is a job for men."
+      }
+    ]
+  },
+  "options": [
+    { "key": "A", "text": "At the beginning, I was seasick almost every time." },
+    { "key": "B", "text": "It is also too dangerous to climb when the ladders are covered in ice." },
+    { "key": "C", "text": "Still, only about one in ten technicians in my company is a woman." },
+    { "key": "D", "text": "But I think a bit of fear is actually useful, because it makes you more careful." },
+    { "key": "E", "text": "Some of the new parts are heavier than I am, so we lift them up with a small crane." },
+    { "key": "F", "text": "My parents wanted me to become a doctor, like my mother." },
+    { "key": "G", "text": "Then one day I saw an advertisement for apprentices on an energy company's website." },
+    { "key": "H", "text": "Unfortunately, there is not much to see from the top." },
+    { "key": "I", "text": "Once, I even saw a group of dolphins swimming around the tower below me." },
+    { "key": "J", "text": "On those days, we have to climb the ladder all the way to the top." }
+  ],
+  "example": {
+    "id": "0",
+    "kind": "match",
+    "answer": "D",
+    "category": "text-structure",
+    "explanation": "D. Az előző mondatban Megan bevallja, hogy egy kicsit fél a magasságtól; a D mondat „But” kötőszóval ellentétet fűz hozzá: szerinte egy kis félelem hasznos, mert óvatosabbá tesz. Utána jön, hogy négy év után a mászás már a munkanap része.",
+    "evidence": "The honest answer is: a little, yes."
+  },
+  "items": [
+    {
+      "id": "1",
+      "kind": "match",
+      "answer": "G",
+      "category": "text-structure",
+      "explanation": "G. A hiány után ez áll: „I applied the same evening” – jelentkezni csak valamire lehet, ezért előtte kell lennie egy hirdetésnek. A G mondat szerint Megan egy energiacég honlapján tanulókat (apprentices) kereső hirdetést látott; ehhez kapcsolódik a „three-year apprenticeship” (hároméves szakmai képzés) is.",
+      "evidence": "I applied the same evening",
+      "wrongOptions": {
+        "F": "Csábító, mert az iskoláról és a pályaválasztásról szól, de a szülők kívánsága után nem lenne értelme az „I applied the same evening” folytatásnak – nem derülne ki, hová jelentkezett."
+      }
+    },
+    {
+      "id": "2",
+      "kind": "match",
+      "answer": "A",
+      "category": "text-structure",
+      "explanation": "A. Az előző mondat szerint hajóval mennek ki a turbinákhoz, a következő pedig így kezdődik: „Luckily, I got used to the waves” – vagyis előtte valamilyen gondnak kell lennie a hullámokkal. Az A mondat (eleinte szinte mindig tengeribeteg volt) pont ezt a problémát adja meg.",
+      "evidence": "Luckily, I got used to the waves after a few weeks",
+      "wrongOptions": {
+        "I": "Csábító, mert a tengerről szól, de a delfineket a toronynál látta, nem a hajóúton, és utánuk a „Luckily, I got used to the waves” mondat nem kapcsolódna semmilyen problémához."
+      }
+    },
+    {
+      "id": "3",
+      "kind": "match",
+      "answer": "J",
+      "category": "text-structure",
+      "explanation": "J. Az előző mondat szerint a lift nem mindig működik; a J mondat „On those days” kifejezése ezekre a napokra utal vissza: ilyenkor a létrán kell felmászni egészen a tetejéig. A következő mondat („It takes about twenty minutes… you don't need a gym”) a mászás hosszáról és fárasztó voltáról szól.",
+      "evidence": "Inside, there is a small lift, but it doesn't always work.",
+      "wrongOptions": {
+        "E": "Csábító, mert itt is emelésről van szó (lift – crane), de a nehéz alkatrészek darus emelése a fenti karbantartáshoz tartozik, és utána a „you don't need a gym after that” mondatnak nem lenne értelme."
+      }
+    },
+    {
+      "id": "4",
+      "kind": "match",
+      "answer": "E",
+      "category": "text-structure",
+      "explanation": "E. Az előző mondat felsorolja, mit csinálnak fent: olajat cserélnek, csavarokat húznak meg és kicserélik a törött alkatrészeket (replace broken parts). Az E mondat „Some of the new parts” kifejezése ezekre az új alkatrészekre utal: némelyik nehezebb Megannél, ezért kis daruval emelik fel őket.",
+      "evidence": "We change the oil, tighten bolts and replace broken parts.",
+      "wrongOptions": {
+        "H": "Csábító, mert a torony tetejéről szól, de ellentmond a 7. bekezdésnek, ahol Megan azt mondja, hogy a kilátást szereti a legjobban."
+      }
+    },
+    {
+      "id": "5",
+      "kind": "match",
+      "answer": "B",
+      "category": "text-structure",
+      "explanation": "B. A bekezdés arról szól, mikor nem tudnak dolgozni az időjárás miatt: erős szélben vagy nagy hullámzásnál a hajó nem viszi ki őket. A B mondat egy újabb ilyen akadályt tesz hozzá (also): jeges létrán túl veszélyes mászni. A jég főleg télen gond, ezért illik utána az „In winter, this can happen…” mondat.",
+      "evidence": "If the wind is too strong or the waves are too high, the boat can't take us out.",
+      "wrongOptions": {
+        "J": "Csábító, mert mászásról szól, de az „On those days” a lift elromlására utal (4. bekezdés); itt a rossz idő miatt egyáltalán ki sem mennek a turbinához, tehát mászni sem kell."
+      }
+    },
+    {
+      "id": "6",
+      "kind": "match",
+      "answer": "I",
+      "category": "text-structure",
+      "explanation": "I. Az előző mondat a kilátásról szól: az egyik oldalon hegyek, a másikon csak tenger. Az I mondat ezt egy élménnyel folytatja (even – sőt): egyszer delfineket is látott lent a torony körül úszni. Utána az „I also love…” mondat újabb dolgot sorol fel, amit szeret a munkájában.",
+      "evidence": "nothing but sea on the other",
+      "wrongOptions": {
+        "H": "Csábító, mert a kilátásról szól, de ellentmond a bekezdésnek: Megan éppen azt mondja, hogy a kilátást szereti a legjobban („The view, definitely.”)."
+      }
+    },
+    {
+      "id": "7",
+      "kind": "match",
+      "answer": "C",
+      "category": "text-structure",
+      "explanation": "C. Az előző mondat pozitív: jól fizet a munka, és egyre több ilyen állás van. A C mondat „Still” (mégis, ennek ellenére) szava ezzel állít szembe valamit: a cégnél csak minden tizedik technikus nő. Erre épül a következő mondat tanácsa a lányoknak: ne higgyék el, hogy ez férfimunka.",
+      "evidence": "don't let anyone tell you that this is a job for men",
+      "wrongOptions": {
+        "F": "A szülők kívánsága (orvos legyen) a pályaválasztás elejéhez tartozna, és nem magyarázza, miért ad Megan tanácsot éppen a lányoknak, és miért mondja, hogy ez nem férfimunka."
+      }
+    }
+  ],
+  "glossary": [
+    { "term": "afraid of heights", "meaning": "fél a magasságtól, tériszonya van" },
+    { "term": "wind turbine", "meaning": "szélturbina, szélerőmű" },
+    { "term": "apprenticeship", "meaning": "szakmai tanulóidő, munka melletti szakképzés" },
+    { "term": "coast", "meaning": "(tenger)part" },
+    { "term": "got used to", "meaning": "hozzászokott valamihez" },
+    { "term": "ladder", "meaning": "létra" },
+    { "term": "tighten bolts", "meaning": "csavarokat meghúz" },
+    { "term": "harness", "meaning": "biztosítóhám, beülő" },
+    { "term": "in pairs", "meaning": "párban, kettesével" },
+    { "term": "in a row", "meaning": "egymás után, egyhuzamban" },
+    { "term": "nothing but", "meaning": "semmi más, csak" },
+    { "term": "well paid", "meaning": "jól fizetett" }
+  ],
+  "suggestedMinutes": 12
+}

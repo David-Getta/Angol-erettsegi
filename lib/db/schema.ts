@@ -28,6 +28,7 @@ export const tasks = sqliteTable(
   "tasks",
   {
     id: text("id").primaryKey(),
+    subject: text("subject").notNull().default("angol"), // config/subjects.json id
     section: text("section").notNull(), // reading | language-use | listening | writing | speaking | vocabulary
     type: text("type").notNull(),
     level: text("level").notNull(), // kozep | emelt
@@ -46,13 +47,14 @@ export const tasks = sqliteTable(
     createdAt: createdAt(),
     updatedAt: integer("updated_at", { mode: "timestamp_ms" }).notNull().$defaultFn(() => new Date()),
   },
-  (t) => [index("tasks_section_level").on(t.section, t.level)],
+  (t) => [index("tasks_section_level").on(t.section, t.level), index("tasks_subject").on(t.subject)],
 );
 
 export const attempts = sqliteTable(
   "attempts",
   {
     id: integer("id").primaryKey({ autoIncrement: true }),
+    subject: text("subject").notNull().default("angol"), // config/subjects.json id
     taskId: text("task_id").notNull(),
     section: text("section").notNull(),
     level: text("level").notNull(),
@@ -73,6 +75,7 @@ export const itemAttempts = sqliteTable(
   "item_attempts",
   {
     id: integer("id").primaryKey({ autoIncrement: true }),
+    subject: text("subject").notNull().default("angol"), // config/subjects.json id
     taskId: text("task_id").notNull(),
     itemId: text("item_id").notNull(),
     category: text("category").notNull(),
@@ -89,6 +92,7 @@ export const submissions = sqliteTable(
   "submissions",
   {
     id: text("id").primaryKey(),
+    subject: text("subject").notNull().default("angol"), // config/subjects.json id
     kind: text("kind").notNull(), // writing | speaking
     taskId: text("task_id").notNull(),
     level: text("level").notNull(),
@@ -116,6 +120,7 @@ export const errors = sqliteTable(
   "errors",
   {
     id: integer("id").primaryKey({ autoIncrement: true }),
+    subject: text("subject").notNull().default("angol"), // config/subjects.json id
     category: text("category").notNull(),
     original: text("original").notNull(),
     corrected: text("corrected").notNull(),
@@ -134,6 +139,7 @@ export const cards = sqliteTable(
   "cards",
   {
     id: integer("id").primaryKey({ autoIncrement: true }),
+    subject: text("subject").notNull().default("angol"), // config/subjects.json id
     noteKey: text("note_key").notNull(), // normalized term; all card types of one word share it
     front: text("front").notNull(), // English term
     back: text("back").notNull().default(""), // Hungarian meaning
@@ -152,7 +158,7 @@ export const cards = sqliteTable(
     context: text("context"),
     createdAt: createdAt(),
   },
-  (t) => [uniqueIndex("cards_note_type").on(t.noteKey, t.type), index("cards_due").on(t.dueAt)],
+  (t) => [uniqueIndex("cards_subject_note_type").on(t.subject, t.noteKey, t.type), index("cards_due").on(t.dueAt)],
 );
 
 export const reviews = sqliteTable("reviews", {
@@ -167,6 +173,7 @@ export const reviews = sqliteTable("reviews", {
 /** Full written mock exams and diagnostic tests share this table (kind). */
 export const mockExams = sqliteTable("mock_exams", {
   id: integer("id").primaryKey({ autoIncrement: true }),
+    subject: text("subject").notNull().default("angol"), // config/subjects.json id
   kind: text("kind").notNull().default("mock"), // mock | diagnostic
   level: text("level").notNull(),
   status: text("status").notNull(), // in-progress | awaiting-writing | done | abandoned
@@ -185,6 +192,7 @@ export const activity = sqliteTable(
   "activity",
   {
     id: integer("id").primaryKey({ autoIncrement: true }),
+    subject: text("subject").notNull().default("angol"), // config/subjects.json id
     day: text("day").notNull(), // YYYY-MM-DD local date
     section: text("section").notNull(),
     seconds: integer("seconds").notNull(),

@@ -1,0 +1,190 @@
+{
+  "schemaVersion": 1,
+  "id": "ls-kozep-school-weather-balloon-tf",
+  "subject": "angol",
+  "revision": 1,
+  "level": "kozep",
+  "source": "generated",
+  "topic": "tudomany",
+  "title": "A weather balloon from school",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "listening",
+  "type": "true-false",
+  "instructions": "You are going to listen to a radio interview with a student whose school science club sent a weather balloon high into the sky. Decide if the statements are true (T) or false (F). You will hear the recording twice. There is an example (0) at the beginning.",
+  "instructionsHu": "Egy rádióinterjút hallasz egy diákkal, akinek az iskolai tudományos szakköre időjárási ballont küldött a magasba. Döntsd el, igazak (T) vagy hamisak (F) az állítások. A felvételt kétszer hallod. A 0. a példa.",
+  "listening": {
+    "format": "interview",
+    "speakers": [
+      {
+        "id": "S",
+        "name": "Sophie (presenter)",
+        "gender": "female",
+        "accent": "en-GB",
+        "age": "adult"
+      },
+      {
+        "id": "R",
+        "name": "Ryan Patel (student)",
+        "gender": "male",
+        "accent": "en-GB",
+        "age": "young"
+      }
+    ],
+    "script": [
+      {
+        "speaker": "S",
+        "text": "Hello and welcome to Science Corner, the show where young people tell us about their science projects. My guest today is Ryan Patel. He's seventeen, and last month his school science club sent a weather balloon right up to the edge of space. Hi, Ryan."
+      },
+      {
+        "speaker": "R",
+        "text": "Hi, Sophie. Thanks for having me."
+      },
+      {
+        "speaker": "S",
+        "text": "So, whose idea was it?"
+      },
+      {
+        "speaker": "R",
+        "text": "Well, it was actually our physics teacher, Mrs Lowe. She saw a video online of another school doing it, and she showed it to us at a club meeting. We all thought, okay, we have to try this. There are twelve of us in the club, and everybody wanted to help."
+      },
+      {
+        "speaker": "S",
+        "text": "What exactly did you send up?"
+      },
+      {
+        "speaker": "R",
+        "text": "There's the balloon, which is filled with helium, and under it there's a small box made of polystyrene. You know, the light white material they use to keep food cold. Inside the box we put a little camera, a GPS tracker and a thermometer. The whole box weighed less than a kilo, which was really important."
+      },
+      {
+        "speaker": "S",
+        "text": "And how high did it go?"
+      },
+      {
+        "speaker": "R",
+        "text": "Thirty-one kilometres! That's about three times higher than a passenger plane flies. Up there the air is so thin that the balloon gets bigger and bigger, until in the end it just bursts. Then a small parachute opens and the box comes back down."
+      },
+      {
+        "speaker": "S",
+        "text": "It must be cold up there."
+      },
+      {
+        "speaker": "R",
+        "text": "Oh, freezing. The lowest temperature we recorded was minus fifty-six degrees. We were a bit worried about the camera, but it worked perfectly the whole time. And the pictures are amazing. You can actually see that the Earth is curved, and the sky above it is completely black."
+      },
+      {
+        "speaker": "S",
+        "text": "Where did the box land?"
+      },
+      {
+        "speaker": "R",
+        "text": "That was the most exciting part. We launched it from the school field. The flight lasted about two and a half hours, and the wind carried the box nearly ninety kilometres to the east. We followed the GPS signal in two cars, and in the end we found it in the middle of a field full of cows. The farmer was really surprised to see us, but he was very friendly. He even asked for copies of the photos!"
+      },
+      {
+        "speaker": "S",
+        "text": "Was the project expensive?"
+      },
+      {
+        "speaker": "R",
+        "text": "Not as much as you'd think. Everything cost about four hundred pounds, and we paid for it with a cake sale and a quiz night at school. Oh, and before the launch we had to get permission from the air traffic control people, so that the balloon wouldn't cause any problems for planes. That took almost six weeks."
+      },
+      {
+        "speaker": "S",
+        "text": "So what's next for the club?"
+      },
+      {
+        "speaker": "R",
+        "text": "Next spring we want to send up a second balloon with a small experiment on board. We're going to take some seeds up there and see if they still grow when they come back down."
+      },
+      {
+        "speaker": "S",
+        "text": "Ryan Patel, thank you very much, and good luck with the next launch!"
+      }
+    ]
+  },
+  "example": {
+    "id": "0",
+    "kind": "tf",
+    "prompt": "The idea for the project came from a teacher.",
+    "answer": "T",
+    "category": "detail",
+    "explanation": "Igaz: Ryan elmondja, hogy az ötlet a fizikatanáruktól, Mrs Lowe-tól származik, aki egy videót látott egy másik iskola ballonjáról.",
+    "evidence": "it was actually our physics teacher, Mrs Lowe"
+  },
+  "items": [
+    {
+      "id": "1",
+      "kind": "tf",
+      "prompt": "Only some members of the science club wanted to take part.",
+      "answer": "F",
+      "category": "detail",
+      "explanation": "Hamis: a szakkörnek tizenkét tagja van, és mindenki segíteni akart („everybody wanted to help”), nem csak néhányan.",
+      "evidence": "There are twelve of us in the club, and everybody wanted to help."
+    },
+    {
+      "id": "2",
+      "kind": "tf",
+      "prompt": "The box under the balloon was heavier than one kilo.",
+      "answer": "F",
+      "category": "detail",
+      "explanation": "Hamis: a doboz egy kilónál kevesebbet nyomott („less than a kilo”), és Ryan szerint ez nagyon fontos is volt.",
+      "evidence": "The whole box weighed less than a kilo"
+    },
+    {
+      "id": "3",
+      "kind": "tf",
+      "prompt": "The balloon went higher than passenger planes fly.",
+      "answer": "T",
+      "category": "detail",
+      "explanation": "Igaz: a ballon 31 km magasra jutott, ami Ryan szerint nagyjából háromszor magasabb, mint ahol az utasszállító gépek repülnek.",
+      "evidence": "That's about three times higher than a passenger plane flies."
+    },
+    {
+      "id": "4",
+      "kind": "tf",
+      "prompt": "The camera did not work well in the cold.",
+      "answer": "F",
+      "category": "true-false-trap",
+      "explanation": "Hamis: bár aggódtak a kamera miatt („We were a bit worried”), az végig tökéletesen működött („it worked perfectly the whole time”). Csapda: az aggódás még nem jelenti, hogy baj is volt.",
+      "evidence": "We were a bit worried about the camera, but it worked perfectly the whole time."
+    },
+    {
+      "id": "5",
+      "kind": "tf",
+      "prompt": "The box came down not far from the school.",
+      "answer": "F",
+      "category": "inference",
+      "explanation": "Hamis: a ballont az iskola sportpályájáról engedték fel, de a szél majdnem kilencven kilométerre vitte a dobozt keletre, ezért két autóval kellett utánamenniük – ez messze van az iskolától.",
+      "evidence": "the wind carried the box nearly ninety kilometres to the east"
+    },
+    {
+      "id": "6",
+      "kind": "tf",
+      "prompt": "The farmer wanted copies of the pictures.",
+      "answer": "T",
+      "category": "detail",
+      "explanation": "Igaz: a gazda meglepődött, de barátságos volt, és még a fotók másolatát is elkérte („asked for copies of the photos”).",
+      "evidence": "He even asked for copies of the photos!"
+    },
+    {
+      "id": "7",
+      "kind": "tf",
+      "prompt": "The club paid for the project with money from school events.",
+      "answer": "T",
+      "category": "detail",
+      "explanation": "Igaz: a kb. négyszáz fontos költséget egy iskolai süteményvásárból és egy kvízestből fedezték.",
+      "evidence": "we paid for it with a cake sale and a quiz night at school"
+    },
+    {
+      "id": "8",
+      "kind": "tf",
+      "prompt": "With the next balloon, the club wants to find out if seeds can still grow after the flight.",
+      "answer": "T",
+      "category": "detail",
+      "explanation": "Igaz: jövő tavasszal magokat küldenek fel, és megnézik, hogy a repülés után is kinőnek-e még („see if they still grow”).",
+      "evidence": "We're going to take some seeds up there and see if they still grow when they come back down."
+    }
+  ],
+  "glossary": [],
+  "suggestedMinutes": 8
+}

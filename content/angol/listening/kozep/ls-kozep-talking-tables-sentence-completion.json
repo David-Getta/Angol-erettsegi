@@ -1,0 +1,235 @@
+{
+  "schemaVersion": 1,
+  "id": "ls-kozep-talking-tables-sentence-completion",
+  "subject": "angol",
+  "revision": 1,
+  "level": "kozep",
+  "source": "generated",
+  "topic": "tarsadalom",
+  "title": "Talking Tables against loneliness",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "listening",
+  "type": "sentence-completion",
+  "instructions": "You are going to listen to a radio interview with a café owner about a project that helps people feel less lonely. Complete the sentences with information from the recording. Write no more than three words or a number in each gap. You will hear the recording twice. There is an example (0) at the beginning.",
+  "instructionsHu": "Egy rádióinterjút hallasz egy kávézótulajdonossal egy kezdeményezésről, amely segít, hogy az emberek kevésbé legyenek magányosak. Egészítsd ki a mondatokat a hallottak alapján (legfeljebb három szó vagy egy szám). A felvételt kétszer hallod. A 0. a példa.",
+  "listening": {
+    "format": "interview",
+    "speakers": [
+      {
+        "id": "M",
+        "name": "Marcus Bell (presenter)",
+        "gender": "male",
+        "accent": "en-US",
+        "age": "adult"
+      },
+      {
+        "id": "L",
+        "name": "Linda Park (café owner)",
+        "gender": "female",
+        "accent": "en-US",
+        "age": "adult"
+      }
+    ],
+    "script": [
+      {
+        "speaker": "M",
+        "text": "Good afternoon, this is Marcus Bell, and you're listening to Hometown Hour. These days, more and more people say they feel lonely, even in busy towns and cities. My guest today has found a very simple way to help. Linda Park owns the Corner Cup café on Maple Street, and she has started something called Talking Tables. Welcome, Linda."
+      },
+      {
+        "speaker": "L",
+        "text": "Thanks, Marcus. It's great to be here."
+      },
+      {
+        "speaker": "M",
+        "text": "So, what exactly is a Talking Table?"
+      },
+      {
+        "speaker": "L",
+        "text": "Well, it's really just a normal table in the café, but it has a little sign on it that says: Sit here if you'd like a chat. If you sit there, it means you're happy for other people to join you and start a conversation. Nobody has to talk, of course, but most people do."
+      },
+      {
+        "speaker": "M",
+        "text": "And where did the idea come from?"
+      },
+      {
+        "speaker": "L",
+        "text": "From my dad, actually. After my mom died, he lived on his own, and one day he told me that sometimes he didn't speak to anyone for a whole week. That really shocked me. I thought, there must be lots of people like him in our neighborhood, so why not give them a place to meet?"
+      },
+      {
+        "speaker": "M",
+        "text": "When did you start?"
+      },
+      {
+        "speaker": "L",
+        "text": "About two years ago, in the fall. At first we had just one table, the one by the window. Now we've got three, and on Saturday mornings they're often all full."
+      },
+      {
+        "speaker": "M",
+        "text": "Who comes to sit at the tables?"
+      },
+      {
+        "speaker": "L",
+        "text": "Oh, all kinds of people. Lots of older people, yes, but also students who've just moved to town, young moms with their babies, people who work from home. Last month a man told me he came here from Brazil a year ago and didn't know a single person. Now he plays chess every Tuesday with a retired teacher he met at one of the tables."
+      },
+      {
+        "speaker": "M",
+        "text": "That's lovely. Do people have to pay anything extra to sit there?"
+      },
+      {
+        "speaker": "L",
+        "text": "No, not at all. They just buy a coffee as usual. And if someone can't afford one, there's a board by the door where customers can pay for a coffee for a stranger. We call it a waiting coffee, because it's waiting for the next person who needs it."
+      },
+      {
+        "speaker": "M",
+        "text": "Have there been any problems?"
+      },
+      {
+        "speaker": "L",
+        "text": "Not really. The only thing is that some people stay for hours! But honestly, I don't mind. The café feels much friendlier now, and my staff love it too."
+      },
+      {
+        "speaker": "M",
+        "text": "Would you like other places to try the idea?"
+      },
+      {
+        "speaker": "L",
+        "text": "Definitely. Two other cafés in town have already copied it, and next month the public library is going to put a Talking Table in its reading room. My dream is to have one in every neighborhood."
+      },
+      {
+        "speaker": "M",
+        "text": "Linda Park, thank you so much for coming in."
+      },
+      {
+        "speaker": "L",
+        "text": "Thank you, Marcus. And if anyone listening feels lonely, please come and say hello!"
+      }
+    ]
+  },
+  "example": {
+    "id": "0",
+    "kind": "text",
+    "prompt": "Linda's café is on ______.",
+    "answer": [
+      "Maple Street",
+      "Maple St"
+    ],
+    "maxWords": 3,
+    "category": "detail",
+    "explanation": "A helyes válasz: Maple Street. A műsorvezető bemutatja Lindát: az ő kávézója a Corner Cup a Maple Streeten.",
+    "evidence": "Linda Park owns the Corner Cup café on Maple Street"
+  },
+  "items": [
+    {
+      "id": "1",
+      "kind": "text",
+      "prompt": "The idea for Talking Tables came from Linda's ______.",
+      "answer": [
+        "dad",
+        "father",
+        "daddy"
+      ],
+      "maxWords": 3,
+      "category": "detail",
+      "explanation": "A helyes válasz: dad (apa). Arra a kérdésre, honnan jött az ötlet, Linda azt feleli: „From my dad, actually.” Csapda: az anyja (mom) meghalt, tőle nem származhat az ötlet.",
+      "evidence": "From my dad, actually."
+    },
+    {
+      "id": "2",
+      "kind": "text",
+      "prompt": "After Linda's mother died, her father sometimes didn't speak to anybody for a ______.",
+      "answer": [
+        "whole week",
+        "week",
+        "full week",
+        "entire week"
+      ],
+      "maxWords": 3,
+      "category": "detail",
+      "explanation": "A helyes válasz: whole week (egy egész hét). Az apja egyedül élt, és elmondta Lindának, hogy néha egy teljes hétig senkivel sem beszélt – ez döbbentette meg Lindát.",
+      "evidence": "sometimes he didn't speak to anyone for a whole week"
+    },
+    {
+      "id": "3",
+      "kind": "text",
+      "prompt": "Today there are ______ Talking Tables in the café.",
+      "answer": [
+        "three",
+        "3"
+      ],
+      "maxWords": 3,
+      "category": "detail",
+      "explanation": "A helyes válasz: three (három). Csapda: az elején csak egy asztal volt (az ablak mellett), de most már három van („Now we've got three”).",
+      "evidence": "Now we've got three"
+    },
+    {
+      "id": "4",
+      "kind": "text",
+      "prompt": "A man from Brazil now plays ______ every Tuesday with someone he met at a Talking Table.",
+      "answer": [
+        "chess",
+        "chess games"
+      ],
+      "maxWords": 3,
+      "category": "detail",
+      "explanation": "A helyes válasz: chess (sakk). A brazil férfi senkit sem ismert a városban, most pedig minden kedden sakkozik egy nyugdíjas tanárral, akivel az asztalnál ismerkedett meg.",
+      "evidence": "Now he plays chess every Tuesday with a retired teacher he met at one of the tables."
+    },
+    {
+      "id": "5",
+      "kind": "text",
+      "prompt": "A coffee that one customer pays for so that a stranger can have it is called a ______.",
+      "answer": [
+        "waiting coffee",
+        "a waiting coffee"
+      ],
+      "maxWords": 3,
+      "category": "detail",
+      "explanation": "A helyes válasz: waiting coffee („váró kávé”). Az ajtó melletti táblán ki lehet fizetni egy kávét egy idegennek; azért hívják így, mert a következő rászorulóra vár.",
+      "evidence": "We call it a waiting coffee"
+    },
+    {
+      "id": "6",
+      "kind": "text",
+      "prompt": "The only problem is that some people stay for ______.",
+      "answer": [
+        "hours",
+        "many hours",
+        "hours and hours"
+      ],
+      "maxWords": 3,
+      "category": "detail",
+      "explanation": "A helyes válasz: hours (órákig). Linda szerint az egyetlen „gond”, hogy egyesek órákig ott maradnak – de őt ez nem zavarja.",
+      "evidence": "The only thing is that some people stay for hours!"
+    },
+    {
+      "id": "7",
+      "kind": "text",
+      "prompt": "Next month, the public library will put a Talking Table in its ______.",
+      "answer": [
+        "reading room",
+        "the reading room",
+        "reading-room"
+      ],
+      "maxWords": 3,
+      "category": "detail",
+      "explanation": "A helyes válasz: reading room (olvasóterem). Két kávézó már átvette az ötletet, a városi könyvtár pedig jövő hónapban az olvasótermébe tesz egy Talking Table-t.",
+      "evidence": "next month the public library is going to put a Talking Table in its reading room"
+    },
+    {
+      "id": "8",
+      "kind": "text",
+      "prompt": "One day, Linda would like to see a Talking Table in every ______.",
+      "answer": [
+        "neighborhood",
+        "neighbourhood"
+      ],
+      "maxWords": 3,
+      "category": "attitude",
+      "explanation": "A helyes válasz: neighborhood (városrész, környék; brit írásmóddal neighbourhood). Linda álma, hogy minden környéken legyen egy ilyen asztal („My dream is…”).",
+      "evidence": "My dream is to have one in every neighborhood."
+    }
+  ],
+  "glossary": [],
+  "suggestedMinutes": 8
+}

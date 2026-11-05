@@ -42,6 +42,8 @@ export const OfficialRefSchema = z.object({
 const BaseSchema = z.object({
   schemaVersion: z.literal(SCHEMA_VERSION),
   id: Id,
+  /** Subject id (config/subjects.json); the file lives under content/<subject>/. */
+  subject: Id,
   revision: z.number().int().positive().default(1),
   level: LevelSchema,
   source: z.enum(["official", "generated"]),
@@ -196,16 +198,18 @@ export const WritingTaskSchema = BaseSchema.extend({
   section: z.literal("writing"),
   type: Id, // informal-email, formal-email, blog, forum, article ...
   /** Which writing task of the exam this card belongs to (determines rubric and word limit). */
-  taskNumber: z.union([z.literal(1), z.literal(2)]),
-  register: z.enum(["informal", "semi-formal", "formal"]),
+  taskNumber: z.number().int().min(1).max(10),
+  /** Register of the text (languages); free text for other subjects (e.g. "formális esszé"). */
+  register: z.string().optional(),
   /** The situation as on the exam (English). */
   situation: nonEmpty,
   situationHu: z.string().optional(),
   /** Optional stimulus text (an ad, a post, an e-mail you reply to ...). */
   stimulus: z.string().optional(),
-  /** The guiding points (irányítási szempontok) – all must be covered. */
-  points: z.array(z.object({ id: Id, text: nonEmpty })).min(2),
-  wordLimit: z.object({ min: z.number().int().positive(), max: z.number().int().positive() }),
+  /** The guiding points (irányítási szempontok) / sub-questions – all must be covered. */
+  points: z.array(z.object({ id: Id, text: nonEmpty })).min(1),
+  /** Word limit (languages, essays); absent for e.g. maths solutions. */
+  wordLimit: z.object({ min: z.number().int().positive(), max: z.number().int().positive() }).optional(),
   suggestedMinutes: z.number().positive(),
   usefulPhrases: z.array(PhraseSchema).default([]),
   checklistExtra: z.array(nonEmpty).default([]),
@@ -230,8 +234,9 @@ export type ModelAnswer = NonNullable<WritingTask["modelAnswer"]>;
 
 export const SpeakingTaskSchema = BaseSchema.extend({
   section: z.literal("speaking"),
-  type: z.enum(["interview", "situation", "picture", "debate", "presentation"]),
-  /** Exam part this task practises (1-3), see config/exam/structure.json. */
+  /** Oral task type (config task-types.json → speaking); the language types are interview, situation, picture, debate, presentation. */
+  type: Id,
+  /** Exam part this task practises (1-3), see the subject's structure.json → oral. */
   partNumber: z.number().int().min(1).max(3),
   instructionsHu: nonEmpty,
   /** interview: questions the examiner asks. */
@@ -261,6 +266,10 @@ export const SpeakingTaskSchema = BaseSchema.extend({
     .optional(),
   followUpQuestions: z.array(nonEmpty).default([]),
   usefulPhrases: z.array(PhraseSchema).default([]),
+  /** Sources handed to the candidate with the topic (texts, data, a described picture or diagram). */
+  sources: z.array(z.object({ title: z.string().optional(), text: nonEmpty })).default([]),
+  /** What a complete answer must contain (for the grader; Hungarian). */
+  keyPoints: z.array(nonEmpty).default([]),
   /** Speaking time for the candidate (seconds) in practice mode. */
   speakingSeconds: z.number().int().positive(),
   prepSeconds: z.number().int().nonnegative().default(0),

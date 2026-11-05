@@ -7,9 +7,9 @@ import { beforeAll, describe, expect, it } from "vitest";
 const contentDir = fs.mkdtempSync(path.join(os.tmpdir(), "mock-content-"));
 process.env.APP_CONTENT_DIR = contentDir;
 
-const real = (p: string) => JSON.parse(fs.readFileSync(path.join(process.cwd(), "content", p), "utf8"));
+const real = (p: string) => JSON.parse(fs.readFileSync(path.join(process.cwd(), "content", "angol", p), "utf8"));
 function put(section: string, level: string, obj: Record<string, unknown>) {
-  const dir = path.join(contentDir, section, level);
+  const dir = path.join(contentDir, "angol", section, level);
   fs.mkdirSync(dir, { recursive: true });
   fs.writeFileSync(path.join(dir, `${obj.id}.json`), JSON.stringify(obj));
 }

@@ -1,0 +1,216 @@
+{
+  "schemaVersion": 1,
+  "id": "rd-kozep-bouldering-headings",
+  "subject": "angol",
+  "revision": 1,
+  "level": "kozep",
+  "source": "generated",
+  "topic": "szabadido",
+  "title": "Why not try bouldering?",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "reservedFor": "mock",
+  "section": "reading",
+  "type": "headings",
+  "instructions": "Read the article about bouldering. Choose the most suitable heading (A–I) for each paragraph (1–6). There are two extra headings that you do not need to use. There is an example (0) at the beginning.",
+  "instructionsHu": "Olvasd el a cikket a boulderingről, és válaszd ki minden bekezdéshez (1–6) a legmegfelelőbb címet (A–I). Két cím felesleges. A 0. a példa.",
+  "passage": {
+    "title": "Why not try bouldering?",
+    "subtitle": "A climbing sport for people who have never climbed before",
+    "blocks": [
+      {
+        "gap": "0",
+        "text": "Bouldering is a kind of rock climbing, but there are no ropes and the walls are not very high – usually about four metres. Instead of climbing to the top of a tall wall, you try to solve short 'problems': routes of five to ten holds that you have to climb in the right order. If you fall, you land on a thick, soft mat."
+      },
+      {
+        "gap": "1",
+        "text": "One of the best things about bouldering is that you don't need much money to start. You don't have to buy ropes or a harness, and most climbing centres rent out special shoes for a small fee. A single visit usually costs about the same as a cinema ticket, and many centres have cheaper prices for students on weekday mornings."
+      },
+      {
+        "gap": "2",
+        "text": "Bouldering is also very sociable. Because the walls are low, climbers sit on the mats between their attempts and chat. People often help each other: someone who has just finished a problem may show a beginner where to put their feet. 'I came alone the first time,' says 17-year-old Dóra, 'but after an hour I was talking to five people I had never met before.'"
+      },
+      {
+        "gap": "3",
+        "text": "Although it looks like a sport for strong arms, bouldering is really about thinking. Before you start, you have to plan your moves, a bit like in a game of chess. Many climbers stand in front of a problem for minutes, moving their hands in the air. Often the solution is not to pull harder but to change the position of your body."
+      },
+      {
+        "gap": "4",
+        "text": "Of course, falling is part of the sport, so you need to learn how to do it safely. On your first visit, an instructor will show you how to land: bend your knees, roll onto your back and never put out your arms to stop yourself. You should also always check that nobody is sitting or walking under you before you start a climb."
+      },
+      {
+        "gap": "5",
+        "text": "Climbing centres mark each problem with a colour that shows how difficult it is. Beginners usually start with yellow or green problems, and the hardest ones are black. Because there are so many levels, you can see your progress very quickly. Most people can move up a colour after just a few weeks of regular climbing."
+      },
+      {
+        "gap": "6",
+        "text": "Bouldering has become much more popular since climbing became an Olympic sport in 2021. New climbing centres are opening in many Hungarian towns, and some schools now take students bouldering in PE lessons. So if you are looking for a new hobby for the winter, why not give it a try?"
+      }
+    ]
+  },
+  "options": [
+    {
+      "key": "A",
+      "text": "Learning to fall correctly"
+    },
+    {
+      "key": "B",
+      "text": "A great way to meet people"
+    },
+    {
+      "key": "C",
+      "text": "Only for very strong people"
+    },
+    {
+      "key": "D",
+      "text": "Short climbs, soft landings"
+    },
+    {
+      "key": "E",
+      "text": "You don't need to spend a lot"
+    },
+    {
+      "key": "F",
+      "text": "A sport that is growing fast"
+    },
+    {
+      "key": "G",
+      "text": "Climbing in the mountains"
+    },
+    {
+      "key": "H",
+      "text": "Use your head, not only your muscles"
+    },
+    {
+      "key": "I",
+      "text": "Easy to see your progress"
+    }
+  ],
+  "example": {
+    "id": "0",
+    "kind": "match",
+    "answer": "D",
+    "category": "gist",
+    "explanation": "A bekezdés azt mutatja be, mi a bouldering: alacsony falak (kb. négy méter), rövid útvonalak, és ha leesel, puha matracra érkezel – ezért a D (Short climbs, soft landings) illik hozzá.",
+    "evidence": "If you fall, you land on a thick, soft mat."
+  },
+  "items": [
+    {
+      "id": "1",
+      "kind": "match",
+      "answer": "E",
+      "category": "gist",
+      "explanation": "A bekezdés arról szól, hogy kevés pénzből el lehet kezdeni: nem kell kötelet vagy beülőt venni, a cipőt olcsón lehet bérelni, egy belépő annyi, mint egy mozijegy. Ezért E (You don't need to spend a lot).",
+      "evidence": "you don't need much money to start",
+      "wrongOptions": {
+        "G": "A bekezdés nem a hegyekben való mászásról szól, hanem a mászótermek alacsony költségeiről."
+      }
+    },
+    {
+      "id": "2",
+      "kind": "match",
+      "answer": "B",
+      "category": "gist",
+      "explanation": "A bekezdés fő gondolata, hogy a bouldering közösségi sport: a mászók beszélgetnek, segítenek egymásnak, Dóra egy óra alatt öt új emberrel ismerkedett meg. Ezért B (A great way to meet people).",
+      "evidence": "Bouldering is also very sociable.",
+      "wrongOptions": {
+        "I": "Arról is szó van, hogy valaki megmutatja a kezdőnek, hova tegye a lábát, de ez a segítőkészségről szól, nem a saját fejlődés láthatóságáról."
+      }
+    },
+    {
+      "id": "3",
+      "kind": "match",
+      "answer": "H",
+      "category": "gist",
+      "explanation": "A bekezdés szerint a bouldering valójában gondolkodásról szól: meg kell tervezni a mozdulatokat, mint a sakkban, és gyakran nem erősebben kell húzni, hanem a test helyzetén kell változtatni. Ezért H (Use your head, not only your muscles).",
+      "evidence": "bouldering is really about thinking",
+      "wrongOptions": {
+        "C": "Csábító, mert a bekezdés megemlíti az erős karokat, de épp azt mondja, hogy csak úgy tűnik („Although it looks like…”), valójában nem az erő a lényeg."
+      }
+    },
+    {
+      "id": "4",
+      "kind": "match",
+      "answer": "A",
+      "category": "gist",
+      "explanation": "A bekezdés azt írja le, hogyan kell biztonságosan esni: hajlított térd, hátra gurulás, a karokat nem szabad kinyújtani. Ezért A (Learning to fall correctly).",
+      "evidence": "you need to learn how to do it safely",
+      "wrongOptions": {
+        "D": "A puha érkezés a példabekezdés címe, és az általánosságban mutatja be a sportot; ez a bekezdés konkrétan az esés helyes technikájának megtanulásáról szól."
+      }
+    },
+    {
+      "id": "5",
+      "kind": "match",
+      "answer": "I",
+      "category": "gist",
+      "explanation": "A színek jelzik az útvonalak nehézségét, és mivel sok szint van, gyorsan látszik a fejlődés – néhány hét után eggyel nehezebb színre lehet lépni. Ezért I (Easy to see your progress).",
+      "evidence": "you can see your progress very quickly",
+      "wrongOptions": {
+        "F": "A „growing” itt csábító lehet, de ez a bekezdés a mászó saját fejlődéséről szól, nem a sport népszerűségének növekedéséről (az a 6. bekezdés)."
+      }
+    },
+    {
+      "id": "6",
+      "kind": "match",
+      "answer": "F",
+      "category": "gist",
+      "explanation": "A bekezdés szerint a sport sokkal népszerűbb lett, mióta olimpiai sportág, sok magyar városban nyílnak új termek, és iskolák is viszik a diákokat. Ezért F (A sport that is growing fast).",
+      "evidence": "Bouldering has become much more popular",
+      "wrongOptions": {
+        "G": "A szöveg végig mászótermekről (climbing centres) szól, a hegyekben való mászásról sehol nincs szó."
+      }
+    }
+  ],
+  "glossary": [
+    {
+      "term": "hold",
+      "meaning": "fogás, kapaszkodó (a mászófalon)"
+    },
+    {
+      "term": "mat",
+      "meaning": "(tornatermi) szivacs, matrac"
+    },
+    {
+      "term": "harness",
+      "meaning": "beülő (mászóheveder)"
+    },
+    {
+      "term": "rent out",
+      "meaning": "bérbe ad, kölcsönöz"
+    },
+    {
+      "term": "fee",
+      "meaning": "díj"
+    },
+    {
+      "term": "sociable",
+      "meaning": "társas, közösségi (emberekkel együtt végzett)"
+    },
+    {
+      "term": "attempt",
+      "meaning": "próbálkozás, kísérlet"
+    },
+    {
+      "term": "solution",
+      "meaning": "megoldás"
+    },
+    {
+      "term": "bend your knees",
+      "meaning": "hajlítsd be a térdedet"
+    },
+    {
+      "term": "progress",
+      "meaning": "fejlődés, haladás"
+    },
+    {
+      "term": "regular",
+      "meaning": "rendszeres"
+    },
+    {
+      "term": "give it a try",
+      "meaning": "kipróbál valamit"
+    }
+  ],
+  "suggestedMinutes": 12
+}

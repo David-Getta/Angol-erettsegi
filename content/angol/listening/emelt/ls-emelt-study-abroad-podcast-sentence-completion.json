@@ -1,0 +1,160 @@
+{
+  "schemaVersion": 1,
+  "id": "ls-emelt-study-abroad-podcast-sentence-completion",
+  "subject": "angol",
+  "revision": 1,
+  "level": "emelt",
+  "source": "generated",
+  "topic": "iskola",
+  "title": "Studying abroad or staying at home?",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "listening",
+  "type": "sentence-completion",
+  "instructions": "You are going to listen to two friends discussing studying abroad and studying at home on their podcast. Complete sentences 1–10 with no more than THREE words or a number. You will hear the recording twice. There is an example (0) at the beginning.",
+  "instructionsHu": "Két barát podcastját hallod arról, hogy külföldön vagy otthon érdemes-e továbbtanulni. Egészítsd ki az 1–10. mondatot legfeljebb HÁROM szóval vagy egy számmal. A felvételt kétszer hallod; a 0. a példa.",
+  "listening": {
+    "format": "conversation",
+    "speakers": [
+      { "id": "R", "name": "Ryan", "gender": "male", "accent": "en-IE", "age": "young" },
+      { "id": "E", "name": "Ellie", "gender": "female", "accent": "en-IE", "age": "young" }
+    ],
+    "script": [
+      { "speaker": "R", "text": "Hi everyone, and welcome back to Campus Confidential, the podcast where two old school friends try to work out what we're doing with our lives. I'm Ryan." },
+      { "speaker": "E", "text": "And I'm Ellie. Today's topic is one we get asked about all the time: should you go abroad to study, or stay at home? Which is quite fitting, because the two of us did exactly the opposite things." },
+      { "speaker": "R", "text": "We did. So, for anyone new, I stayed here in Dublin, I'm in my second year of history – well, history and politics, technically – and I still live with my parents, which is, well, a choice." },
+      { "speaker": "E", "text": "And I'm in my second year of psychology in Maastricht, in the Netherlands. All my courses are in English, which a lot of people don't realise is pretty common over there now." },
+      { "speaker": "R", "text": "So, Ellie, the first thing everyone asks: is it more expensive?" },
+      { "speaker": "E", "text": "Honestly? It depends. My tuition fees are actually a bit lower than they'd be at home, which really surprised my parents. But the rent is a killer. I pay about six hundred euros a month for a tiny room, and I share a kitchen with seven other people. So overall I'd say it works out roughly the same, maybe slightly more." },
+      { "speaker": "R", "text": "Whereas I pay nothing for rent, but I pay in other ways. My mum still asks me what time I'll be home. I'm twenty!" },
+      { "speaker": "E", "text": "Okay, but seriously, that's a big advantage. You can actually save some money." },
+      { "speaker": "R", "text": "True, and I have. But the bigger issue for me is that I sometimes feel I'm missing out. My social life is basically the same people I went to school with. Which is lovely – you're one of them – but I haven't really been pushed out of my comfort zone." },
+      { "speaker": "E", "text": "That's funny, because I had the opposite problem. For the first two months I was really lonely. Everyone seemed to have found their group already, and I was sitting in my room watching Irish TV on my laptop. What saved me was joining the rowing club. I'd never rowed in my life, but it meant getting up at six with the same twelve people three times a week, and you can't not become friends after that." },
+      { "speaker": "R", "text": "And what about the actual studying? Is it very different?" },
+      { "speaker": "E", "text": "Very. We hardly have any big lectures. It's mostly small groups of twelve or fifteen students, and you're expected to have done the reading and to argue about it. At first I found that terrifying, because at school we mostly just sat and took notes. Now I think it's the best thing about the course. You simply can't hide." },
+      { "speaker": "R", "text": "Mine's the complete opposite. Most of my classes are lectures with about three hundred people, and I could get through a whole term without a lecturer knowing my name. Which suits me, to be honest. I like getting on with things on my own." },
+      { "speaker": "E", "text": "One thing I didn't expect is how much my feelings about home would change. In first year I was homesick and flew back every few weeks, which is not cheap. Now I go back maybe twice a year, and when I'm in Dublin I actually miss Maastricht. It's weird. I sort of feel like a visitor in both places." },
+      { "speaker": "R", "text": "And do you think going abroad will help you get a job?" },
+      { "speaker": "E", "text": "I think so, but not for the reason people assume. Everyone thinks it's about the language, but most people there speak English anyway, and my Dutch is still embarrassingly bad. It's more that I've had to sort out everything myself – a bank account, a doctor, a broken heater in February. Employers like hearing that you can cope on your own." },
+      { "speaker": "R", "text": "That's fair. Although I've had a part-time job at a museum since first year, and I'd argue that counts for something too. You don't have to leave the country to grow up." },
+      { "speaker": "E", "text": "Totally. So, final advice?" },
+      { "speaker": "R", "text": "Mine would be: don't stay at home just because it's the easy option. If you stay, stay for a reason. Ellie?" },
+      { "speaker": "E", "text": "And mine is: don't go abroad expecting it to fix everything. You take yourself with you, as my granny always says. But if you're curious, and a bit stubborn, go for it." },
+      { "speaker": "R", "text": "Brilliant. That's all for this week. See you next time on Campus Confidential." }
+    ]
+  },
+  "example": {
+    "id": "0",
+    "kind": "text",
+    "prompt": "Ellie is studying ______ in the Netherlands.",
+    "answer": ["psychology"],
+    "maxWords": 3,
+    "category": "detail",
+    "explanation": "A helyes válasz: psychology. Ellie pszichológiát tanul másodévesként Maastrichtban.",
+    "evidence": "I'm in my second year of psychology in Maastricht"
+  },
+  "items": [
+    {
+      "id": "1",
+      "kind": "text",
+      "prompt": "Ellie's parents were surprised that her ______ are lower than they would be in Ireland.",
+      "answer": ["tuition fees", "fees", "tuition", "course fees", "university fees", "tuition costs", "study fees"],
+      "maxWords": 3,
+      "category": "detail",
+      "explanation": "A helyes válasz: tuition fees (tandíj). A tandíja kicsit alacsonyabb, mint otthon lenne, ami meglepte a szüleit – a lakbér viszont drága.",
+      "evidence": "My tuition fees are actually a bit lower than they'd be at home, which really surprised my parents."
+    },
+    {
+      "id": "2",
+      "kind": "text",
+      "prompt": "Ellie pays about ______ a month for her room.",
+      "answer": ["600 euros", "six hundred euros", "€600", "€ 600", "600", "six hundred", "600 EUR", "600 euro", "six hundred euro"],
+      "maxWords": 3,
+      "category": "detail",
+      "explanation": "A helyes válasz: 600 euros (six hundred euros). Csapda: a „seven” azoknak a száma, akikkel a konyhán osztozik, nem az ár.",
+      "evidence": "I pay about six hundred euros a month for a tiny room"
+    },
+    {
+      "id": "3",
+      "kind": "text",
+      "prompt": "Most of the people Ryan spends his free time with are friends from ______.",
+      "answer": ["school", "his school", "secondary school", "his old school", "his secondary school", "high school"],
+      "maxWords": 3,
+      "category": "detail",
+      "explanation": "A helyes válasz: school. Ryan társasági élete lényegében ugyanazokból áll, akikkel együtt járt iskolába („the same people I went to school with”).",
+      "evidence": "My social life is basically the same people I went to school with."
+    },
+    {
+      "id": "4",
+      "kind": "text",
+      "prompt": "Ellie stopped feeling lonely after she joined the ______.",
+      "answer": ["rowing club", "rowing team", "university rowing club", "rowing society"],
+      "maxWords": 3,
+      "category": "detail",
+      "explanation": "A helyes válasz: rowing club (evezősklub). Az első két hónapban magányos volt, de az evezősklub „megmentette”: heti háromszor ugyanazzal a tizenkét emberrel edzett, így összebarátkoztak.",
+      "evidence": "What saved me was joining the rowing club."
+    },
+    {
+      "id": "5",
+      "kind": "text",
+      "prompt": "Ellie now likes her small-group classes because in them students simply cannot ______.",
+      "answer": ["hide", "hide away"],
+      "maxWords": 3,
+      "category": "inference",
+      "explanation": "A helyes válasz: hide (elbújni). Eleinte ijesztőnek találta, hogy fel kell készülni és vitatkozni kell, de most ezt tartja a legjobbnak: kis csoportban nem lehet elbújni.",
+      "evidence": "You simply can't hide."
+    },
+    {
+      "id": "6",
+      "kind": "text",
+      "prompt": "Most of Ryan's classes are lectures with about ______ students.",
+      "answer": ["300", "three hundred", "300 students", "three hundred students", "300 people", "three hundred people"],
+      "maxWords": 3,
+      "category": "detail",
+      "explanation": "A helyes válasz: 300 (three hundred). Csapda: a 12–15 fős csoportok Ellie egyetemére vonatkoznak, Ryan előadásain kb. háromszázan vannak.",
+      "evidence": "Most of my classes are lectures with about three hundred people"
+    },
+    {
+      "id": "7",
+      "kind": "text",
+      "prompt": "Ellie says that she now feels like a ______ in both Dublin and Maastricht.",
+      "answer": ["visitor", "a visitor", "guest", "a guest", "outsider", "an outsider"],
+      "maxWords": 3,
+      "category": "vocabulary-in-context",
+      "explanation": "A helyes válasz: visitor (látogató). Ma már Dublinban hiányzik neki Maastricht, és úgy érzi, mindkét helyen csak látogató.",
+      "evidence": "I sort of feel like a visitor in both places."
+    },
+    {
+      "id": "8",
+      "kind": "text",
+      "prompt": "Ellie admits that her ______ is still very poor.",
+      "answer": ["Dutch", "Dutch language", "knowledge of Dutch", "spoken Dutch"],
+      "maxWords": 3,
+      "category": "detail",
+      "explanation": "A helyes válasz: Dutch (holland nyelvtudása). Azt mondja, a hollandja még mindig „embarrassingly bad” (kínosan gyenge); az angol nem jó válasz, mert ott mindenki beszél angolul.",
+      "evidence": "my Dutch is still embarrassingly bad"
+    },
+    {
+      "id": "9",
+      "kind": "text",
+      "prompt": "Ryan argues that you do not have to go abroad in order to ______.",
+      "answer": ["grow up", "mature", "become mature", "become an adult", "become more mature"],
+      "maxWords": 3,
+      "category": "inference",
+      "explanation": "A helyes válasz: grow up (felnőni). Ryan szerint a részmunkaidős munkája is számít, és nem kell elhagyni az országot ahhoz, hogy felnőj – a „leave the country” = „go abroad”.",
+      "evidence": "You don't have to leave the country to grow up."
+    },
+    {
+      "id": "10",
+      "kind": "text",
+      "prompt": "Ryan's advice is not to stay at home just because it is ______.",
+      "answer": ["the easy option", "easy", "easier", "the easier option", "an easy option", "the easiest option", "easiest"],
+      "maxWords": 3,
+      "category": "detail",
+      "explanation": "A helyes válasz: the easy option (a kényelmes megoldás). Ryan azt tanácsolja, hogy ne csak azért maradj otthon, mert az a könnyebb – ha maradsz, legyen rá okod.",
+      "evidence": "don't stay at home just because it's the easy option"
+    }
+  ],
+  "glossary": [],
+  "suggestedMinutes": 9
+}

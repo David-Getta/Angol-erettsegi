@@ -20,7 +20,7 @@ export default async function SpeakingTaskPage({ params }: { params: Promise<{ i
   if (!row || row.section !== "speaking") notFound();
   const task = row.content as SpeakingTask;
   const s = getSettings();
-  const part = levelStructure(task.level).oral.parts.find((p) => p.number === task.partNumber);
+  const part = levelStructure(task.level).oral?.parts.find((p) => p.number === task.partNumber);
   const prompt = examinerPrompt({ level: task.level, task, topicName: topicName(task.topic), oralPartName: part ? `${part.number}. ${part.name}` : String(task.partNumber) });
   return (
     <div>

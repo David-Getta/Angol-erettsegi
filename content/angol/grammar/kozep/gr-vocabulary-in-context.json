@@ -1,0 +1,143 @@
+{
+  "schemaVersion": 1,
+  "id": "gr-vocabulary-in-context",
+  "subject": "angol",
+  "revision": 2,
+  "level": "kozep",
+  "source": "generated",
+  "topic": "nyelvtan",
+  "title": "Szó jelentése a szövegben",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "grammar",
+  "type": "lesson",
+  "category": "vocabulary-in-context",
+  "summaryHu": "A vizsgaszövegekben mindig lesznek ismeretlen szavak, és szótárt csak az íráskészség részben használhatsz. Ezért fontos, hogy a szövegkörnyezetből ki tudd következtetni egy szó jelentését: a szófajából és a mondatbeli szerepéből, a szó részeiből (képzők, előképzők), a közeli magyarázatból, példából vagy ellentétből. Ez néha közvetlenül is kérdés („What does the word … mean in paragraph 2?”), de minden olvasás- és hallásfeladatban segít, hogy ne akadj el egy ismeretlen szón.",
+  "rules": [
+    {
+      "title": "Szófaj és szerep a mondatban",
+      "explanation": "Először azt döntsd el, milyen szófajú az ismeretlen szó: ige (alany után áll, -ed / -ing végződése van), főnév (névelő vagy melléknév után), melléknév (főnév előtt vagy a be után), határozószó (gyakran -ly). Ezután a mondat többi része – ki, mit, hol, hogyan – általában leszűkíti a jelentést.",
+      "emeltOnly": false,
+      "examples": [
+        { "en": "The hikers trudged up the muddy path for hours.", "note": "A trudged ige (alany után, -ed), mozgást jelent (up the path), sáros úton, órákig → nehézkesen, fáradtan gyalogoltak, vánszorogtak." }
+      ]
+    },
+    {
+      "title": "Magyarázat, példa vagy szinonima a közelben",
+      "explanation": "Az írók gyakran maguk magyarázzák meg a nehezebb szót: gondolatjel vagy kettőspont után, that is (to say), in other words, or, such as, for example szerkezettel, vagy úgy, hogy a következő mondat egy példát hoz rá.",
+      "emeltOnly": false,
+      "examples": [
+        { "en": "He was a frugal man – he never spent money on anything he did not really need.", "note": "A gondolatjel utáni rész magyarázza: frugal = takarékos." },
+        { "en": "The city has introduced several eco-friendly measures, such as free bike rental and electric buses.", "note": "A such as utáni példák mutatják, hogy a measures itt intézkedéseket jelent." }
+      ]
+    },
+    {
+      "title": "Ellentét és hasonlítás jelzői",
+      "explanation": "Az unlike, but, although, while, whereas, instead of, rather than szavak jelzik, hogy az ismeretlen szó egy ismert szó ellentéte; a like, similarly, just as pedig azt, hogy hasonló hozzá. Ha az egyik oldalt érted, a másikat ki tudod következtetni.",
+      "emeltOnly": false,
+      "examples": [
+        { "en": "Unlike her talkative brother, Emma is rather reticent and rarely shares her feelings.", "note": "Unlike → ellentét a talkative (beszédes) szóval, és a rarely shares her feelings is ezt erősíti → reticent = szűkszavú, zárkózott." }
+      ]
+    },
+    {
+      "title": "Szóelemek: előképző, képző, ismert tő",
+      "explanation": "Bontsd részeire a szót. Előképzők: un-, in-, im-, dis- (nem, ellentét), re- (újra, vissza), mis- (rosszul), over- (túl), pre- (elő-). Képzők: -able / -ible (-ható, -hető), -less (-talan, -telen), -ful (-ós, -és, teli), -ness / -ity / -tion (főnévképzők), -ise / -ize / -en (igeképzők). Óvatosan: a szóelemzés csak tipp, a mondatban mindig ellenőrizd.",
+      "emeltOnly": false,
+      "examples": [
+        { "en": "The instructions were completely incomprehensible.", "note": "in- (nem) + comprehens (comprehend = megért) + -ible (-ható) → érthetetlen." },
+        { "en": "The old factory has been redeveloped into flats.", "note": "re- (újra) + develop (fejleszt) → átépítették, lakásokká alakították át." }
+      ]
+    },
+    {
+      "title": "Ismert szó, más jelentés – és a hamis barátok",
+      "explanation": "Ha egy ismert szó jelentése nem illik a mondatba, valószínűleg más jelentésben vagy más szófajként áll ott. Ugyanígy légy óvatos a magyarhoz vagy egy nemzetközi szóhoz hasonló angol szavakkal (hamis barátok): actual = tényleges (nem aktuális), eventually = végül (nem esetleg), sympathetic = együttérző (nem szimpatikus), novel (melléknév) = új, újszerű.",
+      "emeltOnly": false,
+      "examples": [
+        { "en": "He had to pay a £60 fine for parking in the wrong place.", "note": "A fine itt főnév: bírság – nem a „jó, rendben” melléknév." },
+        { "en": "After three hours of waiting, we eventually got on the plane.", "note": "eventually = végül, hosszú idő után – nem esetleg." }
+      ]
+    },
+    {
+      "title": "Ellenőrzés: helyettesítsd be a tippedet",
+      "explanation": "Ha van egy tipped (vagy négy válaszlehetőséged), helyettesítsd be a szó helyére, és olvasd el a mondatot a folytatással együtt. Az a jó, amellyel a mondat és a szövegrész logikája (ok, következmény, ellentét) is értelmes marad, és nyelvtanilag is illik (pl. ugyanaz az elöljárószó állhat utána).",
+      "emeltOnly": false,
+      "examples": [
+        { "en": "Heavy rain hampered the search, so the rescue team could only work for a few hours a day.", "note": "Behelyettesítve: made difficult (megnehezítette) illik, mert a so … only folytatás korlátozást mutat. A helped vagy started nem illik a logikához." }
+      ]
+    }
+  ],
+  "commonMistakes": [
+    { "wrong": "Megállok egy ismeretlen szónál, és addig nem olvasok tovább, amíg rá nem jövök a jelentésére.", "right": "Továbbolvasok. Ha a feladathoz nem kell a szó, figyelmen kívül hagyom; ha kell, a környezetéből következtetek.", "why": "A szöveg sok ismeretlen szó nélkül is érthető. Egy szón leragadva időt veszítesz, a folytatás pedig gyakran éppen megmagyarázza a szót." },
+    { "wrong": "A szó hasonlít egy magyar vagy nemzetközi szóra, tehát azt jelenti: sympathetic = szimpatikus, actual = aktuális.", "right": "Ellenőrzöm a mondatban: sympathetic = együttérző, actual = tényleges, valódi.", "why": "A hamis barátok hasonló alakúak, de mást jelentenek. Ha a „magyaros” jelentés nem illik a mondat logikájába, a szó valószínűleg hamis barát." },
+    { "wrong": "A szó leggyakoribb jelentését választom: a novel idea = regényötlet.", "right": "Megnézem a szófaját: a novel itt melléknév a főnév előtt → a novel idea = újszerű ötlet.", "why": "Sok angol szó több szófajú és több jelentésű. A mondatbeli szerep (főnév előtt melléknév) eldönti, melyik jelentés jön szóba." },
+    { "wrong": "Szóelemzéssel döntök, a mondatot nem nézem meg: priceless = price + -less = ára nincs, tehát ingyenes.", "right": "A mondatban (The museum was given a priceless painting.) a priceless = felbecsülhetetlen értékű.", "why": "Az előképzők és képzők sokszor segítenek, de nem mindig: a -less általában hiányt jelent, a priceless viszont azt, hogy valami olyan értékes, hogy nem lehet árat szabni neki. Mindig a szövegkörnyezet dönt." }
+  ],
+  "examTips": [
+    "Olvasás és hallás: a vizsgán nincs szótár. Gyakorláskor ezért ne nézz meg azonnal minden szót – előbb írd le a tippedet, és csak utána ellenőrizd a szójegyzékben (glossary).",
+    "Ha a kérdés egy szó jelentésére kérdez (What does „X” in paragraph 2 mean?), mind a négy opciót helyettesítsd be a mondatba. Gyakran több opció is a szó egyik szótári jelentése, de csak egy illik ebbe a mondatba.",
+    "Címillesztésnél és a hiányzó mondatos feladatnál sem kell minden szót érteni: elég a mondat logikája és a kulcsszavak. Ne a legnehezebb szóra koncentrálj, hanem arra, amit értesz."
+  ],
+  "practice": [
+    {
+      "id": "1",
+      "kind": "choice",
+      "prompt": "After the storm, the village was in chaos. Trees had fallen across the roads, and many houses had no electricity. It took the volunteers three days to restore order.\n\nWhat does \"restore\" mean in the text?",
+      "options": [
+        { "key": "A", "text": "to destroy" },
+        { "key": "B", "text": "to bring back" },
+        { "key": "C", "text": "to store again" },
+        { "key": "D", "text": "to describe" }
+      ],
+      "answer": "B",
+      "category": "vocabulary-in-context",
+      "evidence": "the village was in chaos … It took the volunteers three days to restore order.",
+      "explanation": "Helyes: B. A falu káoszban volt, és az önkénteseknek három nap kellett, hogy a rendet visszaállítsák – restore order = helyreállítja a rendet. Behelyettesítve csak a bring back (visszahoz, helyreállít) ad értelmes mondatot.",
+      "wrongOptions": {
+        "A": "Az önkéntesek segítenek, nem rombolnak; a destroy order a mondat logikájával ellentétes.",
+        "C": "Szóelemzési csapda: re- + store, de a restore nem jelent „újra tárolást”, és az order (rend) nem tárolható.",
+        "D": "A rendet nem leírni kellett, hanem visszaállítani; a describe a mondatba helyettesítve értelmetlen."
+      }
+    },
+    {
+      "id": "2",
+      "kind": "choice",
+      "prompt": "Unlike his outgoing sister, Ben is quite timid. At parties he usually stays in a corner and only talks to people he already knows.\n\nWhat does \"timid\" mean?",
+      "options": [
+        { "key": "A", "text": "shy" },
+        { "key": "B", "text": "rude" },
+        { "key": "C", "text": "funny" },
+        { "key": "D", "text": "lazy" }
+      ],
+      "answer": "A",
+      "category": "vocabulary-in-context",
+      "evidence": "Unlike his outgoing sister … he usually stays in a corner and only talks to people he already knows",
+      "explanation": "Helyes: A. Az Unlike ellentétet jelez a nyitott, társaságkedvelő (outgoing) nővérrel, és a következő mondat példát is hoz: a sarokban marad, csak az ismerőseivel beszélget. A timid tehát félénk, visszahúzódó.",
+      "wrongOptions": {
+        "B": "A durvaságra semmi nem utal; ráadásul nem az outgoing ellentéte.",
+        "C": "A vicces nem ellentéte az outgoing szónak, és a sarokban álldogálás sem erre utal.",
+        "D": "A lustaságnak nincs köze ahhoz, hogy valaki csak az ismerőseivel beszélget."
+      }
+    },
+    {
+      "id": "3",
+      "kind": "choice",
+      "prompt": "The new law aims to deter young drivers from speeding. Anyone caught driving too fast in their first year will lose their licence immediately.\n\nWhat does \"deter\" mean here?",
+      "options": [
+        { "key": "A", "text": "to encourage" },
+        { "key": "B", "text": "to teach" },
+        { "key": "C", "text": "to discourage" },
+        { "key": "D", "text": "to punish" }
+      ],
+      "answer": "C",
+      "category": "vocabulary-in-context",
+      "evidence": "The new law aims to deter young drivers from speeding. Anyone caught driving too fast in their first year will lose their licence immediately.",
+      "explanation": "Helyes: C. A szigorú büntetés (azonnal elveszik a jogosítványt) célja, hogy a fiatal sofőrök ne gyorshajtsanak: deter sb from doing sth = elrettent valakit valamitől. A szerkezet is segít: a discourage sb from doing sth ugyanígy from + -ing szerkezetű.",
+      "wrongOptions": {
+        "A": "Ellentétes jelentés: a törvény nem bátorítja a gyorshajtást, hanem el akarja venni tőle a kedvet.",
+        "B": "A *teach sb from doing sth nem helyes szerkezet, és a szöveg büntetésről szól, nem tanításról.",
+        "D": "A büntetés csak az eszköz (lose their licence); a deter a célt jelenti: hogy el se kövessék. A *punish sb from doing sth ráadásul nem helyes szerkezet."
+      }
+    }
+  ],
+  "relatedCategories": ["word-formation", "word-choice", "inference"]
+}

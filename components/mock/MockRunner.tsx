@@ -196,12 +196,14 @@ export function MockRunner({
                   <li key={p.id}>{p.text}</li>
                 ))}
               </ul>
-              <div className="mt-2 text-sm text-muted">
-                {t.writing.wordLimit}: {task.wordLimit.min}–{task.wordLimit.max} {t.common.words}
-              </div>
+              {task.wordLimit && (
+                <div className="mt-2 text-sm text-muted">
+                  {t.writing.wordLimit}: {task.wordLimit.min}–{task.wordLimit.max} {t.common.words}
+                </div>
+              )}
             </Card>
             <div>
-              <div className={`mb-1 text-sm tabular-nums ${wc >= task.wordLimit.min && wc <= task.wordLimit.max ? "text-good" : "text-muted"}`}>{t.writing.wordCount(wc)}</div>
+              <div className={`mb-1 text-sm tabular-nums ${task.wordLimit && wc >= task.wordLimit.min && wc <= task.wordLimit.max ? "text-good" : "text-muted"}`}>{t.writing.wordCount(wc)}</div>
               <textarea lang="en"
                 value={texts[task.id] ?? ""}
                 onChange={(e) => setTexts((prev) => ({ ...prev, [task.id]: e.target.value }))}
