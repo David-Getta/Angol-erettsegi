@@ -1,0 +1,166 @@
+{
+  "schemaVersion": 1,
+  "id": "fiz-rd-kozep-feny-hang-teszt",
+  "subject": "fizika",
+  "revision": 1,
+  "level": "kozep",
+  "source": "generated",
+  "topic": "hullamok-feny",
+  "title": "Hang, fény, hullámok – feleletválasztós teszt",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "reading",
+  "type": "feleletvalasztas",
+  "instructions": "Minden kérdésnél egyetlen helyes válasz van. Jelöld meg a helyes válasz betűjelét! A 0. kérdés a megoldott példa.",
+  "example": {
+    "id": "0",
+    "kind": "choice",
+    "prompt": "Mekkora a hang terjedési sebessége levegőben, szobahőmérsékleten, közelítőleg?",
+    "options": [
+      { "key": "A", "text": "3 m/s" },
+      { "key": "B", "text": "340 m/s" },
+      { "key": "C", "text": "3400 m/s" },
+      { "key": "D", "text": "300 000 km/s" }
+    ],
+    "answer": "B",
+    "category": "fogalmak",
+    "explanation": "Helyes: B. A hang levegőben kb. 340 m/s sebességgel terjed (20 °C-on ≈ 343 m/s). A 300 000 km/s a fény vákuumbeli sebessége. Ezért látjuk a villámot előbb, mint ahogy a dörgést halljuk: 1 km-t a hang kb. 3 s alatt tesz meg."
+  },
+  "items": [
+    {
+      "id": "1",
+      "kind": "choice",
+      "prompt": "Egy hullám frekvenciája 50 Hz, hullámhossza 4 m. Mekkora a terjedési sebessége?",
+      "options": [
+        { "key": "A", "text": "12,5 m/s" },
+        { "key": "B", "text": "200 m/s" },
+        { "key": "C", "text": "0,08 m/s" },
+        { "key": "D", "text": "54 m/s" }
+      ],
+      "answer": "B",
+      "category": "kepletek",
+      "explanation": "Helyes: B. A hullám terjedési sebessége a hullámhossz és a frekvencia szorzata: c = λ·f = 4 m · 50 Hz = 200 m/s (1 Hz = 1/s, így az egység m/s).",
+      "wrongOptions": {
+        "A": "A frekvenciát osztotta a hullámhosszal (50/4); a sebesség a kettő SZORZATA.",
+        "C": "Fordított hányados (4/50); a képlet c = λ·f.",
+        "D": "Összeadta a két számot, de különböző mennyiségek összege értelmetlen."
+      }
+    },
+    {
+      "id": "2",
+      "kind": "choice",
+      "prompt": "Mi a lényeges különbség a hang és a fény terjedése között?",
+      "options": [
+        { "key": "A", "text": "A hang transzverzális, a fény longitudinális hullám." },
+        { "key": "B", "text": "A hang terjedéséhez közeg kell, a fény vákuumban is terjed." },
+        { "key": "C", "text": "A fény terjedéséhez közeg kell, a hang vákuumban is terjed." },
+        { "key": "D", "text": "Mindkettő mechanikai hullám, csak a sebességük különbözik." }
+      ],
+      "answer": "B",
+      "category": "fogalmak",
+      "explanation": "Helyes: B. A hang mechanikai (longitudinális) hullám: a közeg részecskéinek sűrűsödése-ritkulása terjed, ezért vákuumban nincs hang. A fény elektromágneses hullám, amelyhez nem kell közeg – ezért jut el hozzánk a Nap fénye az űrön át.",
+      "wrongOptions": {
+        "A": "Fordítva: a hang levegőben longitudinális, a fény transzverzális (elektromágneses) hullám.",
+        "C": "Éppen fordítva: a hangnak kell közeg, a fénynek nem.",
+        "D": "A fény nem mechanikai hullám, hanem elektromágneses; az űrben is terjed."
+      }
+    },
+    {
+      "id": "3",
+      "kind": "choice",
+      "prompt": "Fénysugár lép levegőből vízbe, a beesési merőlegestől eltérő irányban. Mi történik vele a határfelületen?",
+      "options": [
+        { "key": "A", "text": "A beesési merőlegeshez törik (a törési szög kisebb a beesési szögnél), mert a vízben kisebb a fény sebessége." },
+        { "key": "B", "text": "A beesési merőlegestől törik, mert a vízben nagyobb a fény sebessége." },
+        { "key": "C", "text": "Nem törik meg, csak lelassul." },
+        { "key": "D", "text": "Teljes visszaverődést szenved." }
+      ],
+      "answer": "A",
+      "category": "torvenyek",
+      "explanation": "Helyes: A. Optikailag sűrűbb közegbe (nagyobb törésmutató, kisebb fénysebesség) lépve a fény a beesési merőlegeshez törik: sin α / sin β = n = c₁/c₂ > 1, tehát β < α. A víz törésmutatója kb. 1,33.",
+      "wrongOptions": {
+        "B": "A vízben a fény LASSABBAN terjed (kb. 225 000 km/s), és a merőlegeshez törik, nem attól.",
+        "C": "A sebességváltozás miatt a terjedési irány is változik, ha a fény nem merőlegesen esik be.",
+        "D": "Teljes visszaverődés csak optikailag sűrűbb közegből ritkábba lépve, a határszögnél nagyobb beesési szögnél lehet – levegőből vízbe lépve soha."
+      }
+    },
+    {
+      "id": "4",
+      "kind": "choice",
+      "prompt": "Egy gyűjtőlencse fókusztávolsága 20 cm. A tárgy 60 cm-re van a lencsétől. Milyen távol keletkezik a kép a lencsétől?",
+      "options": [
+        { "key": "A", "text": "15 cm" },
+        { "key": "B", "text": "30 cm" },
+        { "key": "C", "text": "40 cm" },
+        { "key": "D", "text": "60 cm" }
+      ],
+      "answer": "B",
+      "category": "kepletek",
+      "explanation": "Helyes: B. A leképezési törvény: 1/f = 1/t + 1/k, ebből 1/k = 1/20 − 1/60 = 3/60 − 1/60 = 2/60 = 1/30, tehát k = 30 cm. A tárgy a kétszeres fókusztávolságon kívül van, ezért a kép valódi, fordított és kicsinyített (N = k/t = 0,5).",
+      "wrongOptions": {
+        "A": "15 cm = 1/(1/20 + 1/60) – ÖSSZEADTA a reciprokokat, pedig a képtávolság reciprokát kivonással kapjuk.",
+        "C": "40 cm a tárgytávolság és a fókusztávolság különbsége, ez nem a leképezési törvény.",
+        "D": "60 cm-re csak akkor lenne a kép, ha a tárgy a kétszeres fókusztávolságban (40 cm) volna."
+      }
+    },
+    {
+      "id": "5",
+      "kind": "choice",
+      "prompt": "Melyik elektromágneses sugárzásnak a legnagyobb a frekvenciája?",
+      "options": [
+        { "key": "A", "text": "A rádióhullámnak." },
+        { "key": "B", "text": "Az infravörös sugárzásnak." },
+        { "key": "C", "text": "A látható fénynek." },
+        { "key": "D", "text": "A röntgensugárzásnak." }
+      ],
+      "answer": "D",
+      "category": "fogalmak",
+      "explanation": "Helyes: D. Az elektromágneses színkép növekvő frekvencia (csökkenő hullámhossz) szerint: rádióhullám – mikrohullám – infravörös – látható fény – ultraibolya – röntgen – gamma. A röntgensugárzás frekvenciája (≈10¹⁷–10¹⁹ Hz) sok nagyságrenddel nagyobb a látható fényénél (≈10¹⁴–10¹⁵ Hz).",
+      "wrongOptions": {
+        "A": "A rádióhullámok a legkisebb frekvenciájú, legnagyobb hullámhosszú tartomány.",
+        "B": "Az infravörös a látható fénynél is kisebb frekvenciájú („vörösön túli”).",
+        "C": "A látható fény középen van: az ultraibolya, a röntgen és a gamma frekvenciája nagyobb."
+      }
+    },
+    {
+      "id": "6",
+      "kind": "choice",
+      "prompt": "Mitől függ egy hang magassága?",
+      "options": [
+        { "key": "A", "text": "A hanghullám amplitúdójától." },
+        { "key": "B", "text": "A hanghullám frekvenciájától." },
+        { "key": "C", "text": "A hangforrás méretétől." },
+        { "key": "D", "text": "A hang terjedési sebességétől." }
+      ],
+      "answer": "B",
+      "category": "fogalmak",
+      "explanation": "Helyes: B. A hangmagasságot a frekvencia határozza meg: a nagyobb frekvenciájú hang magasabb (az emberi hallás kb. 20 Hz–20 kHz). Az amplitúdó a hangerősséget adja, a hangszín a felhangok összetételétől függ.",
+      "wrongOptions": {
+        "A": "Az amplitúdó a hang ERŐSSÉGÉT (hangosságát) határozza meg.",
+        "C": "A méret csak közvetve számít (egy nagyobb húr mélyebben szól), a fizikai mennyiség a frekvencia.",
+        "D": "A terjedési sebesség a közegtől függ, és adott közegben minden frekvenciára azonos."
+      }
+    },
+    {
+      "id": "7",
+      "kind": "choice",
+      "prompt": "A fehér fény üvegprizmán áthaladva színekre bomlik. Mi ennek az oka?",
+      "options": [
+        { "key": "A", "text": "A prizma elnyeli a fény egy részét." },
+        { "key": "B", "text": "Az üveg törésmutatója a különböző színű (frekvenciájú) fényekre eltérő, ezért azok különböző szögben törnek meg." },
+        { "key": "C", "text": "A prizma visszaveri a fényt a felületén." },
+        { "key": "D", "text": "A fény interferál a prizma lapjain." }
+      ],
+      "answer": "B",
+      "category": "jelenseg-magyarazat",
+      "explanation": "Helyes: B. Ez a diszperzió (színszórás): az üvegben a fény sebessége, így törésmutatója is függ a frekvenciától. A kék (ibolya) fény törésmutatója nagyobb, ezért erősebben törik meg, mint a vörös; a prizma két ferde lapja a különbséget felnagyítja, és megjelenik a színkép.",
+      "wrongOptions": {
+        "A": "Az elnyelés gyengítené a fényt, de nem bontaná színekre.",
+        "C": "A visszaverődés szöge minden színre azonos, ezért nem okoz színekre bomlást.",
+        "D": "Interferencia-színeket vékony rétegek (szappanhártya) adnak; a prizmában a fénytörés frekvenciafüggése a magyarázat."
+      }
+    }
+  ],
+  "glossary": [],
+  "suggestedMinutes": 12
+}

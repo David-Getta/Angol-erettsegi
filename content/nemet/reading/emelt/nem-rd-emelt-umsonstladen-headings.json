@@ -1,0 +1,134 @@
+{
+  "schemaVersion": 1,
+  "id": "nem-rd-emelt-umsonstladen-headings",
+  "subject": "nemet",
+  "revision": 1,
+  "level": "emelt",
+  "source": "generated",
+  "topic": "tarsadalom",
+  "title": "Nimm, was du brauchst",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "reading",
+  "type": "headings",
+  "instructions": "Lesen Sie die Reportage über einen besonderen Laden in Hamburg. Ordnen Sie den Absätzen (1–6) die passenden Überschriften (A–I) zu. Zwei Überschriften bleiben übrig. Am Anfang finden Sie ein Beispiel (0).",
+  "instructionsHu": "Olvasd el a riportot egy különleges hamburgi boltról, és párosítsd a bekezdésekhez (1–6) a megfelelő címet (A–I). Két cím felesleges. A 0. a példa.",
+  "passage": {
+    "title": "Nimm, was du brauchst",
+    "subtitle": "In einem Hamburger Laden gibt es alles – außer einer Kasse",
+    "blocks": [
+      { "gap": "0", "text": "In der Hamburger Hafenstraße gibt es einen Laden, in dem es keine Kasse gibt. Wer hereinkommt, darf bis zu fünf Dinge mitnehmen, ohne einen Cent zu bezahlen: Kleidung, Bücher, Geschirr, Spielzeug, manchmal sogar ein Fahrrad. Der „Umsonstladen Altona“ existiert seit elf Jahren und wird ausschließlich von Ehrenamtlichen betrieben." },
+      { "gap": "1", "text": "Die Idee ist einfach: Was der eine nicht mehr braucht, kann für den anderen wertvoll sein. In deutschen Haushalten lagern Millionen funktionierender Geräte, die nie mehr benutzt werden, und jedes Jahr werden Hunderttausende Tonnen tragbarer Kleidung weggeworfen. „Wir wollen, dass diese Dinge weiter benutzt werden, statt im Müll zu landen“, sagt Mitgründerin Helga Brandt, 67." },
+      { "gap": "2", "text": "Wer den Laden betritt, trifft auf ein überraschend gemischtes Publikum. Studierende suchen Möbel für die erste Wohnung, Rentner bringen die Bücher ihrer verstorbenen Partner, junge Familien tauschen Kinderkleidung, aus der der Nachwuchs herausgewachsen ist. „Niemand muss hier beweisen, dass er arm ist“, betont Brandt. „Es geht nicht um Wohltätigkeit, sondern um einen anderen Umgang mit Dingen.“" },
+      { "gap": "3", "text": "Trotzdem gibt es Regeln. Fünf Teile pro Besuch und Person – mehr nicht, damit niemand den Laden leerräumt und die Sachen weiterverkauft. Elektrogeräte werden vor der Abgabe von einem ehrenamtlichen Elektriker geprüft. Und wer etwas bringt, sollte sich eine Frage stellen: Würde ich das selbst noch benutzen? „Wir sind kein Ersatz für den Sperrmüll“, sagt Brandt trocken." },
+      { "gap": "4", "text": "Die größte Herausforderung ist nicht der Mangel an Spenden, sondern das Gegenteil. Besonders nach Weihnachten und im Frühjahr stapeln sich die Kisten bis zur Decke. Dann müssen die etwa zwanzig Freiwilligen sortieren, was wirklich brauchbar ist, und den Rest zu Recyclinghöfen bringen. Allein für Textilien, die niemand mehr haben will, fallen jedes Jahr mehrere Hundert Euro Entsorgungskosten an." },
+      { "gap": "5", "text": "Finanziert wird der Laden über eine Spendenbox am Eingang und über Zuschüsse des Bezirks, der die Miete für die achtzig Quadratmeter zum Teil übernimmt. Reich wird hier niemand – im Gegenteil: Die Freiwilligen investieren jede Woche mehrere Stunden ihrer Zeit. Warum? „Weil man hier jeden Tag erlebt, dass Menschen einander helfen, ohne etwas dafür zu erwarten“, sagt der 23-jährige Student Malik, der seit zwei Jahren mitarbeitet." },
+      { "gap": "6", "text": "Inzwischen gibt es in Deutschland mehr als 200 ähnliche Läden, und jede Woche kommen Anfragen von Menschen, die in ihrer Stadt einen gründen möchten. Brandt gibt ihnen immer denselben Rat: „Fangt klein an, sucht euch einen Raum, den ihr bezahlen könnt, und erwartet nicht, dass alle sofort begreifen, was ihr tut. Die meisten Leute glauben am Anfang, dass es einen Haken gibt. Es gibt keinen.“" }
+    ]
+  },
+  "options": [
+    { "key": "A", "text": "Was erlaubt ist – und was nicht" },
+    { "key": "B", "text": "Gegen die Wegwerfgesellschaft" },
+    { "key": "C", "text": "Rat für Nachahmer" },
+    { "key": "D", "text": "Woher das Geld kommt – und warum die Helfer bleiben" },
+    { "key": "E", "text": "Einkaufen ohne Kasse" },
+    { "key": "F", "text": "Kritik aus der Nachbarschaft" },
+    { "key": "G", "text": "Kein Laden nur für Arme" },
+    { "key": "H", "text": "Immer weniger Spenden" },
+    { "key": "I", "text": "Zu viel des Guten" }
+  ],
+  "example": {
+    "id": "0",
+    "kind": "match",
+    "answer": "E",
+    "category": "gist",
+    "explanation": "A bekezdés a boltot mutatja be, ahol nincs kassza, és fizetés nélkül lehet elvinni öt tárgyat – ezért E (Einkaufen ohne Kasse).",
+    "evidence": "einen Laden, in dem es keine Kasse gibt"
+  },
+  "items": [
+    {
+      "id": "1",
+      "kind": "match",
+      "answer": "B",
+      "category": "gist",
+      "explanation": "A bekezdés arról szól, hogy milliónyi működő készülék és több százezer tonna ruha megy a szemétbe, és a bolt ezt akarja megakadályozni – ez az eldobó társadalom elleni fellépés (B).",
+      "evidence": "Wir wollen, dass diese Dinge weiter benutzt werden, statt im Müll zu landen",
+      "wrongOptions": {
+        "H": "Itt nem az adományok csökkenéséről, hanem a feleslegesen kidobott dolgokról van szó."
+      }
+    },
+    {
+      "id": "2",
+      "kind": "match",
+      "answer": "G",
+      "category": "gist",
+      "explanation": "Vegyes közönség jár ide (egyetemisták, nyugdíjasok, családok), és senkinek nem kell bizonyítania, hogy szegény – a bolt nem jótékonyság, hanem más viszony a tárgyakhoz (G).",
+      "evidence": "Niemand muss hier beweisen, dass er arm ist",
+      "wrongOptions": {
+        "E": "A kassza nélküli vásárlást már az első bekezdés bemutatta; itt a közönség a téma."
+      }
+    },
+    {
+      "id": "3",
+      "kind": "match",
+      "answer": "A",
+      "category": "gist",
+      "explanation": "A bekezdés a szabályokat sorolja: öt darab fejenként, az elektromos készülékeket ellenőrzik, lomot nem fogadnak – mi szabad és mi nem (A).",
+      "evidence": "Trotzdem gibt es Regeln.",
+      "wrongOptions": {
+        "I": "A túl sok adomány problémája a következő bekezdés témája, itt a szabályokról van szó."
+      }
+    },
+    {
+      "id": "4",
+      "kind": "match",
+      "answer": "I",
+      "category": "gist",
+      "explanation": "A legnagyobb kihívás nem az adományok hiánya, hanem a túl sok adomány: a dobozok a plafonig állnak, és a selejt elszállítása pénzbe kerül – „Zu viel des Guten” (I).",
+      "evidence": "Die größte Herausforderung ist nicht der Mangel an Spenden, sondern das Gegenteil.",
+      "wrongOptions": {
+        "H": "Épp fordítva: nem kevesebb, hanem túl sok adomány érkezik – a cím ellentétes a bekezdés tartalmával."
+      }
+    },
+    {
+      "id": "5",
+      "kind": "match",
+      "answer": "D",
+      "category": "gist",
+      "explanation": "A bekezdés a finanszírozásról (adománydoboz, kerületi támogatás) és arról szól, miért dolgoznak itt az önkéntesek – ez a D.",
+      "evidence": "Finanziert wird der Laden über eine Spendenbox am Eingang und über Zuschüsse des Bezirks",
+      "wrongOptions": {
+        "G": "A közönség összetételéről a 2. bekezdés szólt; itt a pénz és az önkéntesek motivációja a téma."
+      }
+    },
+    {
+      "id": "6",
+      "kind": "match",
+      "answer": "C",
+      "category": "gist",
+      "explanation": "Sokan szeretnének hasonló boltot nyitni, és Brandt tanácsokat ad nekik (kezdjetek kicsiben, megfizethető helyiség) – tanács a követőknek (C).",
+      "evidence": "Brandt gibt ihnen immer denselben Rat",
+      "wrongOptions": {
+        "F": "A szomszédok kritikájáról sehol nincs szó a szövegben; a felesleges cím."
+      }
+    }
+  ],
+  "glossary": [
+    { "term": "ausschließlich", "meaning": "kizárólag" },
+    { "term": "ehrenamtlich", "meaning": "önkéntes (fizetés nélküli)" },
+    { "term": "betreiben", "meaning": "működtet, üzemeltet" },
+    { "term": "lagern", "meaning": "tárol, hever (raktárban)" },
+    { "term": "der Nachwuchs", "meaning": "utódok, gyerekek (átvitt: utánpótlás)" },
+    { "term": "die Wohltätigkeit", "meaning": "jótékonyság" },
+    { "term": "der Umgang mit", "meaning": "bánásmód, viszonyulás valamihez" },
+    { "term": "leerräumen", "meaning": "kiürít, kipakol" },
+    { "term": "der Sperrmüll", "meaning": "lomtalanítás, lom" },
+    { "term": "die Herausforderung", "meaning": "kihívás" },
+    { "term": "stapeln (sich)", "meaning": "halmozódik, tornyosul" },
+    { "term": "die Entsorgungskosten", "meaning": "hulladékkezelés költségei" },
+    { "term": "der Zuschuss", "meaning": "támogatás, hozzájárulás" },
+    { "term": "begreifen", "meaning": "felfog, megért" },
+    { "term": "einen Haken haben", "meaning": "van benne valami csapda / bökkenő" }
+  ],
+  "suggestedMinutes": 15
+}

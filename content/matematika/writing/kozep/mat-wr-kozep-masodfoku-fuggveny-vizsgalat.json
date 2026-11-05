@@ -1,0 +1,45 @@
+{
+  "schemaVersion": 1,
+  "id": "mat-wr-kozep-masodfoku-fuggveny-vizsgalat",
+  "subject": "matematika",
+  "revision": 1,
+  "level": "kozep",
+  "source": "generated",
+  "topic": "fuggvenyek",
+  "title": "II/A: másodfokú függvény zérushelyei, minimuma, egyenlőtlenség",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "writing",
+  "type": "kidolgozott",
+  "taskNumber": 1,
+  "situation": "Adott az f: ℝ → ℝ, f(x) = x² − 6x + 5 függvény.\n\na) Határozza meg a függvény zérushelyeit! (3 pont)\nb) Adja meg a függvény minimumhelyét, minimumának értékét és az értékkészletét! (5 pont)\nc) Oldja meg a valós számok halmazán az x² − 6x + 5 < 0 egyenlőtlenséget! (4 pont)\n\nMinden lépést indokoljon!",
+  "points": [
+    { "id": "p1", "text": "a) A zérushelyek meghatározása (megoldóképlettel vagy szorzattá alakítással) (3 pont)" },
+    { "id": "p2", "text": "b) Minimumhely, minimum értéke (teljes négyzetté alakítással vagy a zérushelyek felezésével) és az értékkészlet (5 pont)" },
+    { "id": "p3", "text": "c) Az egyenlőtlenség megoldása a parabola állásának indoklásával, a megoldáshalmaz megadása (4 pont)" }
+  ],
+  "suggestedMinutes": 20,
+  "usefulPhrases": [
+    { "en": "zérushely: f(x) = 0", "hu": "A zérushelyeket az x² − 6x + 5 = 0 egyenlet megoldásai adják." },
+    { "en": "x = (−b ± √(b² − 4ac))/(2a)", "hu": "Másodfokú egyenlet megoldóképlete." },
+    { "en": "x² − 6x + 5 = (x − 3)² − 4", "hu": "Teljes négyzetté alakítás: leolvasható a tengelypont (3; −4)." },
+    { "en": "a > 0 → felfelé nyíló parabola, minimuma van", "hu": "Az x² együtthatójának előjele dönti el, hogy minimum vagy maximum van." },
+    { "en": "A minimumhely a két zérushely számtani közepe.", "hu": "A parabola szimmetrikus a tengelyére: (1 + 5)/2 = 3." },
+    { "en": "értékkészlet: [minimum; ∞)", "hu": "Felfelé nyíló parabolánál a függvényértékek a minimumtól felfelé mindent felvesznek." },
+    { "en": "f(x) < 0 a két zérushely között", "hu": "Felfelé nyíló parabola a zérushelyek között negatív, azokon kívül pozitív." }
+  ],
+  "checklistExtra": [],
+  "modelAnswer": {
+    "text": "a) A zérushelyek az x² − 6x + 5 = 0 egyenlet megoldásai. A megoldóképlettel: x = (6 ± √(36 − 20))/2 = (6 ± 4)/2, azaz x₁ = 1 és x₂ = 5. (Ellenőrzés: szorzatuk 5, összegük 6, így x² − 6x + 5 = (x − 1)(x − 5).)\nA függvény zérushelyei: x = 1 és x = 5.\n\nb) Teljes négyzetté alakítva: f(x) = x² − 6x + 5 = (x − 3)² − 9 + 5 = (x − 3)² − 4. A négyzet értéke legalább 0, és pontosan x = 3-nál 0, ezért a függvény minimumhelye x = 3, a minimum értéke f(3) = −4. Ez egyezik azzal, hogy a parabola tengelye a zérushelyek felezőpontjában, (1 + 5)/2 = 3-nál van. Mivel az x² együtthatója pozitív (1 > 0), a parabola felfelé nyílik, tehát a −4 valóban minimum, és a függvény minden −4-nél nagyobb értéket is felvesz.\nAz értékkészlet: [−4; ∞), azaz f(x) ≥ −4.\n\nc) Az x² − 6x + 5 < 0 egyenlőtlenség azt kérdezi, hol negatív a függvény. A felfelé nyíló parabola a két zérushelye között van az x tengely alatt, azokon kívül fölötte. Ezért a megoldás: 1 < x < 5.\nEllenőrzés: x = 3-nál f(3) = −4 < 0 valóban teljesül, x = 0-nál f(0) = 5 > 0 nem.\nAz egyenlőtlenség megoldáshalmaza az (1; 5) nyílt intervallum.",
+    "pointsCovered": [
+      { "id": "p1", "quote": "x = (6 ± √(36 − 20))/2 = (6 ± 4)/2, azaz x₁ = 1 és x₂ = 5." },
+      { "id": "p2", "quote": "a függvény minimumhelye x = 3, a minimum értéke f(3) = −4." },
+      { "id": "p3", "quote": "A felfelé nyíló parabola a két zérushelye között van az x tengely alatt, azokon kívül fölötte. Ezért a megoldás: 1 < x < 5." }
+    ],
+    "notes": [
+      "Eredmény: a zérushelyek (1 és 5), a minimumhely és -érték (3; −4), az értékkészlet [−4; ∞) és az egyenlőtlenség megoldása (1 < x < 5) mind helyes.",
+      "Indoklás: minden lépés mögött ott a szabály – megoldóképlet, teljes négyzetté alakítás, a parabola nyílásának iránya az a együttható előjeléből; az egyenlőtlenségnél a parabola állásával indokol, nem csak kimondja az eredményt.",
+      "Ellenőrzés és válasz: a Viète-formulákkal ellenőrzi a gyököket, próbával az egyenlőtlenséget, és minden részfeladat végén külön mondatban megfogalmazza a választ."
+    ]
+  }
+}

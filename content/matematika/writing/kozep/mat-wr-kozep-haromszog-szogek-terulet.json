@@ -1,0 +1,44 @@
+{
+  "schemaVersion": 1,
+  "id": "mat-wr-kozep-haromszog-szogek-terulet",
+  "subject": "matematika",
+  "revision": 1,
+  "level": "kozep",
+  "source": "generated",
+  "topic": "trigonometria",
+  "title": "II/A: háromszög szöge, területe, köré írt köre",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "writing",
+  "type": "kidolgozott",
+  "taskNumber": 1,
+  "situation": "Egy háromszög oldalainak hossza: a = 7 cm, b = 8 cm, c = 9 cm.\n\na) Számítsa ki a háromszög legnagyobb szögét! (4 pont)\nb) Számítsa ki a háromszög területét! (4 pont)\nc) Mekkora a háromszög köré írt körének sugara? (4 pont)\n\nAz eredményeket egy tizedesjegyre, a sugarat két tizedesjegyre kerekítve adja meg! A megoldás menetét, a felhasznált összefüggéseket írja le!",
+  "points": [
+    { "id": "p1", "text": "a) A legnagyobb szög kiszámítása koszinusztétellel, egy tizedesjegyre kerekítve (4 pont)" },
+    { "id": "p2", "text": "b) A háromszög területe (trigonometrikus területképlettel vagy Héron-képlettel), egy tizedesjegyre (4 pont)" },
+    { "id": "p3", "text": "c) A köré írt kör sugara (szinusztétel vagy R = abc/(4T)), két tizedesjegyre (4 pont)" }
+  ],
+  "suggestedMinutes": 20,
+  "usefulPhrases": [
+    { "en": "A legnagyobb szög a legnagyobb oldallal szemben van.", "hu": "Ezért a c = 9 cm-rel szemközti γ szöget kell kiszámítani." },
+    { "en": "c² = a² + b² − 2ab·cos γ", "hu": "Koszinusztétel: három oldalból szöget számolunk, cos γ-t kifejezve." },
+    { "en": "T = (a·b·sin γ)/2", "hu": "Trigonometrikus területképlet: két oldal és a közbezárt szög." },
+    { "en": "T = √(s(s−a)(s−b)(s−c)), s = (a+b+c)/2", "hu": "Héron-képlet: a terület csak az oldalakból – jó ellenőrzés." },
+    { "en": "c/sin γ = 2R", "hu": "Szinusztétel kibővített alakja: a köré írt kör sugara." },
+    { "en": "R = abc/(4T)", "hu": "A köré írt kör sugara a három oldalból és a területből." }
+  ],
+  "checklistExtra": [],
+  "modelAnswer": {
+    "text": "a) A háromszögben a legnagyobb szög a legnagyobb oldallal, azaz a c = 9 cm-es oldallal szemben van; ez a γ szög. A koszinusztétel szerint c² = a² + b² − 2ab·cos γ, ebből\ncos γ = (a² + b² − c²)/(2ab) = (49 + 64 − 81)/(2·7·8) = 32/112 = 2/7 ≈ 0,2857.\nMivel cos γ > 0, a szög hegyesszög: γ = arccos(2/7) ≈ 73,4°.\nA háromszög legnagyobb szöge tehát kb. 73,4°.\n\nb) A területet két oldal és a közbezárt szög ismeretében a trigonometrikus területképlettel számolom: T = (a·b·sin γ)/2 = (7·8·sin 73,4°)/2 ≈ 28·0,9583 ≈ 26,8 cm².\nEllenőrzés a Héron-képlettel: s = (7 + 8 + 9)/2 = 12, T = √(12·(12−7)·(12−8)·(12−9)) = √(12·5·4·3) = √720 ≈ 26,83 cm². A két eredmény egyezik.\nA háromszög területe kb. 26,8 cm².\n\nc) A szinusztétel kibővített alakja szerint c/sin γ = 2R, így R = c/(2·sin γ) = 9/(2·0,9583) ≈ 9/1,9166 ≈ 4,70 cm.\nEllenőrzés az R = abc/(4T) képlettel: R = (7·8·9)/(4·26,83) = 504/107,3 ≈ 4,70 cm.\nA köré írt kör sugara kb. 4,70 cm.",
+    "pointsCovered": [
+      { "id": "p1", "quote": "cos γ = (a² + b² − c²)/(2ab) = (49 + 64 − 81)/(2·7·8) = 32/112 = 2/7 ≈ 0,2857." },
+      { "id": "p2", "quote": "T = (a·b·sin γ)/2 = (7·8·sin 73,4°)/2 ≈ 28·0,9583 ≈ 26,8 cm²." },
+      { "id": "p3", "quote": "R = c/(2·sin γ) = 9/(2·0,9583) ≈ 9/1,9166 ≈ 4,70 cm." }
+    ],
+    "notes": [
+      "Eredmény: mindhárom részfeladat helyes és a kért pontossággal kerekített (73,4°, 26,8 cm², 4,70 cm), ezért az eredmény-szempontra teljes pont jár.",
+      "Indoklás: a megoldás megnevezi a felhasznált tételt (koszinusztétel, trigonometrikus területképlet, szinusztétel kibővített alakja), és megindokolja, miért a γ a legnagyobb szög – ez a gondolatmenet pontjait biztosítja.",
+      "Számolás és ellenőrzés: a köztes értékek (cos γ = 2/7, sin γ ≈ 0,9583) pontosan szerepelnek, a b) és c) rész második módszerrel ellenőrzött; mindenhol van mértékegység és szöveges válasz."
+    ]
+  }
+}

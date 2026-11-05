@@ -1,0 +1,129 @@
+{
+  "schemaVersion": 1,
+  "id": "fol-rd-emelt-vilagvarosok-parositas",
+  "subject": "foldrajz",
+  "revision": 1,
+  "level": "emelt",
+  "source": "generated",
+  "topic": "nepesseg-telepules",
+  "title": "Világvárosok felismerése leírás alapján",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "reading",
+  "type": "parositas",
+  "instructions": "Párosítsa a leírásokat a városokkal! Írja a város betűjelét a kijelölt helyre! Két város felesleges. A 0. a megoldott példa.",
+  "options": [
+    { "key": "A", "text": "Tokió" },
+    { "key": "B", "text": "New York" },
+    { "key": "C", "text": "São Paulo" },
+    { "key": "D", "text": "Mumbai" },
+    { "key": "E", "text": "Sanghaj" },
+    { "key": "F", "text": "Kairó" },
+    { "key": "G", "text": "Los Angeles" },
+    { "key": "H", "text": "Buenos Aires" },
+    { "key": "I", "text": "Lagos" },
+    { "key": "J", "text": "Sydney" },
+    { "key": "K", "text": "Isztambul" },
+    { "key": "L", "text": "Mexikóváros" },
+    { "key": "M", "text": "Dzsakarta" }
+  ],
+  "optionsReusable": false,
+  "example": {
+    "id": "0",
+    "kind": "match",
+    "prompt": "Japán fővárosa, a Föld legnépesebb agglomerációja (kb. 37 millió fő) a Honsú sziget keleti partján.",
+    "answer": "A",
+    "category": "orszag-varos",
+    "explanation": "Tokió: Japán fővárosa és a világ legnépesebb városi agglomerációja; a Kanto-síkságon fekszik, Jokohamával összenőve."
+  },
+  "items": [
+    {
+      "id": "1",
+      "kind": "match",
+      "prompt": "Az USA legnépesebb városa, a világ egyik pénzügyi központja (Wall Street), az ENSZ székhelye.",
+      "answer": "B",
+      "category": "orszag-varos",
+      "explanation": "New York: a Hudson torkolatánál fekvő világváros; a tőzsde (Wall Street) és az ENSZ központja, de nem fővárosa sem az USA-nak, sem New York államnak.",
+      "wrongOptions": {
+        "G": "Los Angeles a nyugati parton fekszik, és nem az ENSZ székhelye."
+      }
+    },
+    {
+      "id": "2",
+      "kind": "match",
+      "prompt": "Brazília legnépesebb városa és ipari-pénzügyi központja a Brazil-felföld délkeleti részén; nem a tengerparton fekszik.",
+      "answer": "C",
+      "category": "orszag-varos",
+      "explanation": "São Paulo: Dél-Amerika legnépesebb agglomerációja (kb. 22 millió fő), Brazília gazdasági motorja; a főváros Brasília, a korábbi főváros Rio de Janeiro."
+    },
+    {
+      "id": "3",
+      "kind": "match",
+      "prompt": "India pénzügyi központja és filmiparának (Bollywood) fellegvára az Arab-tenger partján.",
+      "answer": "D",
+      "category": "orszag-varos",
+      "explanation": "Mumbai (korábban Bombay): India legnépesebb városa, kikötő az Arab-tenger partján; itt működik az indiai tőzsde és a hindi nyelvű filmipar központja."
+    },
+    {
+      "id": "4",
+      "kind": "match",
+      "prompt": "Kína legnagyobb városa és a világ legforgalmasabb konténerkikötője a Jangce torkolatvidékén.",
+      "answer": "E",
+      "category": "orszag-varos",
+      "explanation": "Sanghaj: a Jangce deltájánál fekvő, több mint 24 milliós kikötőváros; Kína gazdasági nyitásának (különleges gazdasági övezetek, Pudong) egyik központja."
+    },
+    {
+      "id": "5",
+      "kind": "match",
+      "prompt": "Egyiptom fővárosa a Nílus-delta csúcsánál, az arab világ legnépesebb városa; a közelében állnak a gízai piramisok.",
+      "answer": "F",
+      "category": "orszag-varos",
+      "explanation": "Kairó: a Nílus partján, a delta kezdeténél fekvő főváros; agglomerációja több mint 20 millió fős, Afrika egyik legnépesebb városa."
+    },
+    {
+      "id": "6",
+      "kind": "match",
+      "prompt": "Az USA második legnépesebb városa a Csendes-óceán partján; a filmipar (Hollywood) és a szórakoztatóipar központja.",
+      "answer": "G",
+      "category": "orszag-varos",
+      "explanation": "Los Angeles: Kalifornia legnagyobb városa, hatalmas kiterjedésű, szétterülő agglomeráció; Hollywood, repülőgépgyártás, kikötő (Long Beach)."
+    },
+    {
+      "id": "7",
+      "kind": "match",
+      "prompt": "Argentína fővárosa a La Plata (Río de la Plata) torkolatánál; az ország lakosságának harmada az agglomerációjában él.",
+      "answer": "H",
+      "category": "orszag-varos",
+      "explanation": "Buenos Aires: a Pampa szélén, a La Plata partján fekvő kikötőváros; Argentína gazdasági és kulturális központja, az agglomeráció kb. 15 millió fős."
+    },
+    {
+      "id": "8",
+      "kind": "match",
+      "prompt": "Nigéria legnépesebb városa, egykori fővárosa és gazdasági központja a Guineai-öböl partján; Afrika egyik leggyorsabban növekvő megavárosa.",
+      "answer": "I",
+      "category": "orszag-varos",
+      "explanation": "Lagos: 1991-ig Nigéria fővárosa (azóta Abuja); robbanásszerűen növekvő kikötőváros, ahol a betelepülők nagy része nyomornegyedekben él."
+    },
+    {
+      "id": "9",
+      "kind": "match",
+      "prompt": "Ausztrália legrégebbi és legismertebb nagyvárosa, operaházáról híres kikötő a kontinens délkeleti partján.",
+      "answer": "J",
+      "category": "orszag-varos",
+      "explanation": "Sydney: 1788-ban alapított brit telep helyén nőtt világváros a Csendes-óceán partján; Ausztrália fővárosa azonban Canberra."
+    },
+    {
+      "id": "10",
+      "kind": "match",
+      "prompt": "Törökország legnépesebb városa, két kontinensen, a Boszporusz két partján fekszik; az egykori Konstantinápoly.",
+      "answer": "K",
+      "category": "orszag-varos",
+      "explanation": "Isztambul: Európa és Ázsia határán, a Boszporusz partján fekvő, 15 milliós város; Törökország gazdasági központja, a főváros azonban Ankara.",
+      "wrongOptions": {
+        "M": "Dzsakarta Indonézia fővárosa Jáva szigetén, egyetlen kontinensen fekszik."
+      }
+    }
+  ],
+  "glossary": [],
+  "suggestedMinutes": 8
+}

@@ -17,18 +17,33 @@
     "title": "Seit drei Jahren ohne Auto",
     "subtitle": "Familie Brandt aus Freiburg hat ihr Auto verkauft – und vermisst es nicht",
     "blocks": [
-      { "text": "Als das alte Auto der Familie Brandt vor drei Jahren kaputtging, stand eine Entscheidung an: ein neues kaufen oder es ohne Auto versuchen? „Wir haben ausgerechnet, dass uns das Auto jeden Monat etwa 400 Euro gekostet hat“, erzählt Vater Thomas Brandt. „Dafür kann man sehr viele Zugfahrkarten kaufen.“ Die Familie beschloss, es ein Jahr lang zu probieren." },
-      { "text": "Heute fahren die Brandts fast alles mit dem Fahrrad. Die Mutter, Sabine, braucht zwanzig Minuten zu ihrer Arbeit im Krankenhaus, der Vater fährt mit der Straßenbahn ins Büro. Die beiden Kinder, Lea (15) und Paul (12), radeln jeden Morgen zur Schule. Nur bei starkem Regen nehmen sie den Bus." },
-      { "text": "Für den Wocheneinkauf hat die Familie einen Fahrradanhänger gekauft, in den zwei große Kisten passen. „Am Anfang haben die Nachbarn gelacht“, sagt Sabine. „Jetzt fragen sie, wo man so einen Anhänger bekommt.“ Schwere Dinge wie Getränke lassen sich die Brandts einmal im Monat von einem Supermarkt liefern." },
-      { "text": "Am schwierigsten ist es im Urlaub. Letzten Sommer fuhr die Familie mit dem Zug nach Kroatien – mit vier Rucksäcken und den Fahrrädern. Die Fahrt dauerte zwölf Stunden. „Das war anstrengend“, gibt Thomas zu, „aber die Kinder haben es als Abenteuer gesehen.“ Wenn sie wirklich einmal ein Auto brauchen, zum Beispiel für den Besuch bei der Großmutter auf dem Land, mieten sie eines für ein Wochenende. Das passiert etwa viermal im Jahr." },
-      { "text": "Was hat sich sonst verändert? „Wir sind alle fitter geworden“, sagt Sabine, „und wir sehen unsere Stadt mit anderen Augen. Mit dem Fahrrad entdeckt man kleine Straßen und Läden, an denen man im Auto einfach vorbeifährt.“ Lea findet es manchmal unpraktisch, wenn sie abends von einer Party nach Hause muss. Trotzdem möchte auch sie kein Auto zurück: „Das Geld, das wir sparen, geben wir für Reisen aus. Das ist mir viel wichtiger.“" }
+      {
+        "text": "Als das alte Auto der Familie Brandt vor drei Jahren kaputtging, stand eine Entscheidung an: ein neues kaufen oder es ohne Auto versuchen? „Wir haben ausgerechnet, dass uns das Auto jeden Monat etwa 400 Euro gekostet hat“, erzählt Vater Thomas Brandt. „Dafür kann man sehr viele Zugfahrkarten kaufen.“ Die Familie beschloss, es ein Jahr lang zu probieren."
+      },
+      {
+        "text": "Heute fahren die Brandts fast alles mit dem Fahrrad. Die Mutter, Sabine, braucht zwanzig Minuten zu ihrer Arbeit im Krankenhaus, der Vater fährt mit der Straßenbahn ins Büro. Die beiden Kinder, Lea (15) und Paul (12), radeln jeden Morgen zur Schule. Nur bei starkem Regen nehmen sie den Bus."
+      },
+      {
+        "text": "Für den Wocheneinkauf hat die Familie einen Fahrradanhänger gekauft, in den zwei große Kisten passen. „Am Anfang haben die Nachbarn gelacht“, sagt Sabine. „Jetzt fragen sie, wo man so einen Anhänger bekommt.“ Schwere Dinge wie Getränke lassen sich die Brandts einmal im Monat von einem Supermarkt liefern."
+      },
+      {
+        "text": "Am schwierigsten ist es im Urlaub. Letzten Sommer fuhr die Familie mit dem Zug nach Kroatien – mit vier Rucksäcken und den Fahrrädern. Die Fahrt dauerte zwölf Stunden. „Das war anstrengend“, gibt Thomas zu, „aber die Kinder haben es als Abenteuer gesehen.“ Wenn sie wirklich einmal ein Auto brauchen, zum Beispiel für den Besuch bei der Großmutter auf dem Land, mieten sie eines für ein Wochenende. Das passiert etwa viermal im Jahr."
+      },
+      {
+        "text": "Was hat sich sonst verändert? „Wir sind alle fitter geworden“, sagt Sabine, „und wir sehen unsere Stadt mit anderen Augen. Mit dem Fahrrad entdeckt man kleine Straßen und Läden, an denen man im Auto einfach vorbeifährt.“ Lea findet es manchmal unpraktisch, wenn sie abends von einer Party nach Hause muss. Trotzdem möchte auch sie kein Auto zurück: „Das Geld, das wir sparen, geben wir für Reisen aus. Das ist mir viel wichtiger.“"
+      }
     ]
   },
   "example": {
     "id": "0",
     "kind": "text",
     "prompt": "Seit wann lebt die Familie ohne Auto?",
-    "answer": ["seit drei Jahren", "drei Jahre", "seit 3 Jahren", "3 Jahre", "seit drei jahren"],
+    "answer": [
+      "seit drei Jahren",
+      "drei Jahre",
+      "seit 3 Jahren",
+      "3 Jahre"
+    ],
     "maxWords": 4,
     "category": "detail",
     "explanation": "A cím és az első bekezdés szerint három éve („vor drei Jahren”) ment tönkre az autó, azóta élnek nélküle.",
@@ -39,7 +54,19 @@
       "id": "1",
       "kind": "text",
       "prompt": "Wie viel hat das Auto die Familie pro Monat gekostet?",
-      "answer": ["etwa 400 Euro", "400 Euro", "400", "ca. 400 Euro", "circa 400 Euro", "ungefähr 400 Euro", "400 €", "etwa 400 €", "rund 400 Euro", "vierhundert Euro", "etwa vierhundert Euro"],
+      "answer": [
+        "etwa 400 Euro",
+        "400 Euro",
+        "400",
+        "ca. 400 Euro",
+        "circa 400 Euro",
+        "ungefähr 400 Euro",
+        "400 €",
+        "etwa 400 €",
+        "rund 400 Euro",
+        "vierhundert Euro",
+        "etwa vierhundert Euro"
+      ],
       "maxWords": 4,
       "category": "detail",
       "explanation": "Az apa kiszámolta, hogy az autó havonta körülbelül 400 euróba került („jeden Monat etwa 400 Euro gekostet hat”).",
@@ -49,7 +76,12 @@
       "id": "2",
       "kind": "text",
       "prompt": "Wo arbeitet Sabine Brandt?",
-      "answer": ["im Krankenhaus", "Krankenhaus", "in einem Krankenhaus", "in dem Krankenhaus"],
+      "answer": [
+        "im Krankenhaus",
+        "Krankenhaus",
+        "in einem Krankenhaus",
+        "in dem Krankenhaus"
+      ],
       "maxWords": 4,
       "category": "detail",
       "explanation": "Sabine húsz perc alatt ér a kórházi munkahelyére („zu ihrer Arbeit im Krankenhaus”).",
@@ -59,7 +91,14 @@
       "id": "3",
       "kind": "text",
       "prompt": "Wie kommt Thomas Brandt zur Arbeit?",
-      "answer": ["mit der Straßenbahn", "Straßenbahn", "mit der Tram", "Tram", "mit der Strassenbahn", "Strassenbahn"],
+      "answer": [
+        "mit der Straßenbahn",
+        "Straßenbahn",
+        "mit der Tram",
+        "Tram",
+        "mit der Strassenbahn",
+        "Strassenbahn"
+      ],
       "maxWords": 4,
       "category": "detail",
       "explanation": "Az apa villamossal jár az irodába („fährt mit der Straßenbahn ins Büro”).",
@@ -69,7 +108,13 @@
       "id": "4",
       "kind": "text",
       "prompt": "Wann fahren die Kinder mit dem Bus zur Schule?",
-      "answer": ["bei starkem Regen", "bei Regen", "wenn es stark regnet", "wenn es regnet", "nur bei starkem Regen", "bei starkem regen"],
+      "answer": [
+        "bei starkem Regen",
+        "bei Regen",
+        "wenn es stark regnet",
+        "wenn es regnet",
+        "nur bei starkem Regen"
+      ],
       "maxWords": 4,
       "category": "detail",
       "explanation": "A gyerekek csak erős esőben buszoznak („Nur bei starkem Regen nehmen sie den Bus”), egyébként kerékpárral mennek.",
@@ -79,7 +124,17 @@
       "id": "5",
       "kind": "text",
       "prompt": "Wofür hat die Familie den Fahrradanhänger gekauft?",
-      "answer": ["für den Wocheneinkauf", "Wocheneinkauf", "für den Einkauf", "für Einkäufe", "für die Einkäufe", "zum Einkaufen", "Einkaufen", "für den Wochen-Einkauf", "für den wöchentlichen Einkauf"],
+      "answer": [
+        "für den Wocheneinkauf",
+        "Wocheneinkauf",
+        "für den Einkauf",
+        "für Einkäufe",
+        "für die Einkäufe",
+        "zum Einkaufen",
+        "Einkaufen",
+        "für den Wochen-Einkauf",
+        "für den wöchentlichen Einkauf"
+      ],
       "maxWords": 4,
       "category": "detail",
       "explanation": "A heti bevásárláshoz vettek kerékpár-utánfutót („Für den Wocheneinkauf hat die Familie einen Fahrradanhänger gekauft”).",
@@ -89,7 +144,14 @@
       "id": "6",
       "kind": "text",
       "prompt": "Was lässt sich die Familie vom Supermarkt liefern?",
-      "answer": ["schwere Dinge", "Getränke", "schwere Dinge wie Getränke", "schwere Sachen", "die Getränke", "schwere Dinge (Getränke)"],
+      "answer": [
+        "schwere Dinge",
+        "Getränke",
+        "schwere Dinge wie Getränke",
+        "schwere Sachen",
+        "die Getränke",
+        "schwere Dinge (Getränke)"
+      ],
       "maxWords": 4,
       "category": "detail",
       "explanation": "A nehéz dolgokat, például az italokat havonta egyszer házhoz szállíttatják („Schwere Dinge wie Getränke lassen sich die Brandts … liefern”).",
@@ -99,7 +161,12 @@
       "id": "7",
       "kind": "text",
       "prompt": "Wie lange dauerte die Zugfahrt nach Kroatien?",
-      "answer": ["zwölf Stunden", "12 Stunden", "zwoelf Stunden", "12 std", "12 Std."],
+      "answer": [
+        "zwölf Stunden",
+        "12 Stunden",
+        "zwoelf Stunden",
+        "12 std"
+      ],
       "maxWords": 4,
       "category": "detail",
       "explanation": "A horvátországi vonatút tizenkét órát tartott („Die Fahrt dauerte zwölf Stunden”).",
@@ -109,7 +176,21 @@
       "id": "8",
       "kind": "text",
       "prompt": "Wie oft mietet die Familie ein Auto?",
-      "answer": ["etwa viermal im Jahr", "viermal im Jahr", "viermal pro Jahr", "4-mal im Jahr", "vier Mal im Jahr", "ca. viermal im Jahr", "4 Mal im Jahr", "4 mal im Jahr", "viermal jährlich", "etwa viermal pro Jahr", "etwa vier Mal jährlich", "ungefähr viermal im Jahr", "4x im Jahr", "etwa 4 Mal"],
+      "answer": [
+        "etwa viermal im Jahr",
+        "viermal im Jahr",
+        "viermal pro Jahr",
+        "4-mal im Jahr",
+        "vier Mal im Jahr",
+        "ca. viermal im Jahr",
+        "4 Mal im Jahr",
+        "viermal jährlich",
+        "etwa viermal pro Jahr",
+        "etwa vier Mal jährlich",
+        "ungefähr viermal im Jahr",
+        "4x im Jahr",
+        "etwa 4 Mal"
+      ],
       "maxWords": 4,
       "category": "detail",
       "explanation": "Körülbelül évente négyszer bérelnek autót egy hétvégére („Das passiert etwa viermal im Jahr”).",
@@ -119,7 +200,13 @@
       "id": "9",
       "kind": "text",
       "prompt": "Wofür gibt die Familie das gesparte Geld aus?",
-      "answer": ["für Reisen", "Reisen", "für reisen", "fürs Reisen", "für das Reisen", "für Urlaubsreisen"],
+      "answer": [
+        "für Reisen",
+        "Reisen",
+        "fürs Reisen",
+        "für das Reisen",
+        "für Urlaubsreisen"
+      ],
       "maxWords": 4,
       "category": "detail",
       "explanation": "Lea szerint a megspórolt pénzt utazásokra költik („geben wir für Reisen aus”), és ez neki fontosabb az autónál.",
@@ -127,18 +214,54 @@
     }
   ],
   "glossary": [
-    { "term": "kaputtgehen", "meaning": "elromlik, tönkremegy" },
-    { "term": "ausrechnen", "meaning": "kiszámol" },
-    { "term": "beschließen", "meaning": "elhatároz, eldönt" },
-    { "term": "radeln", "meaning": "kerékpározik, bringázik" },
-    { "term": "der Fahrradanhänger", "meaning": "kerékpár-utánfutó" },
-    { "term": "liefern", "meaning": "szállít, kiszállít" },
-    { "term": "anstrengend", "meaning": "fárasztó, megterhelő" },
-    { "term": "zugeben", "meaning": "beismer, elismer" },
-    { "term": "mieten", "meaning": "bérel, kölcsönöz (pénzért)" },
-    { "term": "entdecken", "meaning": "felfedez" },
-    { "term": "unpraktisch", "meaning": "nem praktikus, kényelmetlen" },
-    { "term": "vermissen", "meaning": "hiányol (valakit/valamit)" }
+    {
+      "term": "kaputtgehen",
+      "meaning": "elromlik, tönkremegy"
+    },
+    {
+      "term": "ausrechnen",
+      "meaning": "kiszámol"
+    },
+    {
+      "term": "beschließen",
+      "meaning": "elhatároz, eldönt"
+    },
+    {
+      "term": "radeln",
+      "meaning": "kerékpározik, bringázik"
+    },
+    {
+      "term": "der Fahrradanhänger",
+      "meaning": "kerékpár-utánfutó"
+    },
+    {
+      "term": "liefern",
+      "meaning": "szállít, kiszállít"
+    },
+    {
+      "term": "anstrengend",
+      "meaning": "fárasztó, megterhelő"
+    },
+    {
+      "term": "zugeben",
+      "meaning": "beismer, elismer"
+    },
+    {
+      "term": "mieten",
+      "meaning": "bérel, kölcsönöz (pénzért)"
+    },
+    {
+      "term": "entdecken",
+      "meaning": "felfedez"
+    },
+    {
+      "term": "unpraktisch",
+      "meaning": "nem praktikus, kényelmetlen"
+    },
+    {
+      "term": "vermissen",
+      "meaning": "hiányol (valakit/valamit)"
+    }
   ],
   "suggestedMinutes": 15
 }

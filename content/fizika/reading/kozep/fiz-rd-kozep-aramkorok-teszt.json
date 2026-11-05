@@ -1,0 +1,185 @@
+{
+  "schemaVersion": 1,
+  "id": "fiz-rd-kozep-aramkorok-teszt",
+  "subject": "fizika",
+  "revision": 1,
+  "level": "kozep",
+  "source": "generated",
+  "topic": "elektromossag",
+  "title": "Áramkörök, mágnesesség – feleletválasztós teszt",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "reading",
+  "type": "feleletvalasztas",
+  "instructions": "Minden kérdésnél egyetlen helyes válasz van. Jelöld meg a helyes válasz betűjelét! A 0. kérdés a megoldott példa.",
+  "example": {
+    "id": "0",
+    "kind": "choice",
+    "prompt": "Egy fogyasztón 12 V feszültség hatására 2 A erősségű áram folyik. Mekkora a fogyasztó ellenállása?",
+    "options": [
+      { "key": "A", "text": "6 Ω" },
+      { "key": "B", "text": "24 Ω" },
+      { "key": "C", "text": "0,17 Ω" },
+      { "key": "D", "text": "10 Ω" }
+    ],
+    "answer": "A",
+    "category": "kepletek",
+    "explanation": "Helyes: A. Ohm törvénye szerint R = U/I = 12 V / 2 A = 6 Ω. A 24 Ω a szorzatuk, a 0,17 Ω a fordított hányados (I/U) lenne."
+  },
+  "items": [
+    {
+      "id": "1",
+      "kind": "choice",
+      "prompt": "Mi az elektromos áramerősség meghatározása?",
+      "options": [
+        { "key": "A", "text": "Az egységnyi töltésre jutó elektromos energia." },
+        { "key": "B", "text": "A vezető keresztmetszetén egységnyi idő alatt átáramló töltés." },
+        { "key": "C", "text": "A vezetőben lévő szabad elektronok száma." },
+        { "key": "D", "text": "Az egységnyi idő alatt végzett elektromos munka." }
+      ],
+      "answer": "B",
+      "category": "fogalmak",
+      "explanation": "Helyes: B. Az áramerősség a keresztmetszeten átáramló töltés és az idő hányadosa: I = Q/t, egysége az amper (1 A = 1 C/s). Az A válasz a feszültség, a D a teljesítmény meghatározása.",
+      "wrongOptions": {
+        "A": "Ez a feszültség (U = W/Q) meghatározása, egysége a volt.",
+        "C": "Az elektronok száma önmagában nem áram: az áram a töltések rendezett ÁRAMLÁSA, időegység alatt.",
+        "D": "Ez a teljesítmény (P = W/t) meghatározása, egysége a watt."
+      }
+    },
+    {
+      "id": "2",
+      "kind": "choice",
+      "prompt": "Két egyforma, 100 Ω-os ellenállást párhuzamosan kapcsolunk. Mekkora az eredő ellenállás?",
+      "options": [
+        { "key": "A", "text": "200 Ω" },
+        { "key": "B", "text": "100 Ω" },
+        { "key": "C", "text": "50 Ω" },
+        { "key": "D", "text": "25 Ω" }
+      ],
+      "answer": "C",
+      "category": "kepletek",
+      "explanation": "Helyes: C. Párhuzamos kapcsolásnál 1/R_e = 1/R₁ + 1/R₂ = 1/100 + 1/100 = 2/100, tehát R_e = 50 Ω. Két egyforma ellenállás párhuzamos eredője mindig a fele az egyiknek, mert az áram két egyenlő ágra oszlik.",
+      "wrongOptions": {
+        "A": "200 Ω a SOROS kapcsolás eredője (R₁ + R₂).",
+        "B": "Párhuzamos kapcsolásnál az eredő mindig kisebb a legkisebb ellenállásnál is.",
+        "D": "25 Ω-ot négy darab 100 Ω-os párhuzamos kapcsolása adna."
+      }
+    },
+    {
+      "id": "3",
+      "kind": "choice",
+      "prompt": "Egy 60 W-os izzó 230 V-os hálózaton működik. Mekkora áram folyik rajta?",
+      "options": [
+        { "key": "A", "text": "0,26 A" },
+        { "key": "B", "text": "3,8 A" },
+        { "key": "C", "text": "13 800 A" },
+        { "key": "D", "text": "2,6 A" }
+      ],
+      "answer": "A",
+      "category": "kepletek",
+      "explanation": "Helyes: A. Az elektromos teljesítmény P = U·I, ebből I = P/U = 60 W / 230 V ≈ 0,26 A.",
+      "wrongOptions": {
+        "B": "Fordított hányados (230/60); az áramot a teljesítmény osztva a feszültséggel adja.",
+        "C": "A teljesítményt és a feszültséget összeszorozta; a P = U·I képletből osztani kell.",
+        "D": "Egy nagyságrenddel elcsúszott: 60/230 = 0,26, nem 2,6."
+      }
+    },
+    {
+      "id": "4",
+      "kind": "choice",
+      "prompt": "Soros kapcsolásban melyik mennyiség azonos minden fogyasztón?",
+      "options": [
+        { "key": "A", "text": "A feszültség." },
+        { "key": "B", "text": "Az áramerősség." },
+        { "key": "C", "text": "A teljesítmény." },
+        { "key": "D", "text": "Az ellenállás." }
+      ],
+      "answer": "B",
+      "category": "torvenyek",
+      "explanation": "Helyes: B. Soros kapcsolásban az áramnak egyetlen útja van, ezért minden fogyasztón ugyanaz az áram folyik. A feszültség az ellenállások arányában oszlik meg (U = I·R), így a nagyobb ellenálláson nagyobb a feszültség és a teljesítmény is.",
+      "wrongOptions": {
+        "A": "A feszültség a soros ágban megoszlik az ellenállások arányában; a feszültség a PÁRHUZAMOS kapcsolásban közös.",
+        "C": "A teljesítmény P = I²·R, tehát a nagyobb ellenállású fogyasztón nagyobb.",
+        "D": "Az ellenállás a fogyasztó saját tulajdonsága, bármilyen értékű fogyasztókat sorba lehet kapcsolni."
+      }
+    },
+    {
+      "id": "5",
+      "kind": "choice",
+      "prompt": "Melyik tényező NEM befolyásolja egy fémhuzal ellenállását?",
+      "options": [
+        { "key": "A", "text": "A huzal hossza." },
+        { "key": "B", "text": "A huzal keresztmetszete." },
+        { "key": "C", "text": "A huzal anyaga." },
+        { "key": "D", "text": "A huzalon átfolyó áram iránya." }
+      ],
+      "answer": "D",
+      "category": "fogalmak",
+      "explanation": "Helyes: D. A vezető ellenállása R = ρ·l/A: egyenesen arányos a hosszal (l), fordítottan arányos a keresztmetszettel (A), és függ az anyagtól (ρ fajlagos ellenállás) – valamint a hőmérséklettől. Az áram iránya fémes vezetőnél nem változtatja meg az ellenállást.",
+      "wrongOptions": {
+        "A": "A hosszabb huzalnak arányosan nagyobb az ellenállása.",
+        "B": "A vastagabb (nagyobb keresztmetszetű) huzal ellenállása kisebb.",
+        "C": "Az anyag fajlagos ellenállása (pl. réz vs. vas) alapvetően meghatározza az ellenállást."
+      }
+    },
+    {
+      "id": "6",
+      "kind": "choice",
+      "prompt": "Mikor keletkezik indukált feszültség egy zárt tekercsben?",
+      "options": [
+        { "key": "A", "text": "Ha a tekercs állandó mágneses mezőben nyugalomban van." },
+        { "key": "B", "text": "Ha a tekercset átjáró mágneses fluxus (indukcióvonalak száma) változik." },
+        { "key": "C", "text": "Csak akkor, ha a tekercsen egyenáram folyik." },
+        { "key": "D", "text": "Ha a tekercs felmelegszik." }
+      ],
+      "answer": "B",
+      "category": "torvenyek",
+      "explanation": "Helyes: B. Faraday indukciós törvénye: indukált feszültség akkor jön létre, ha a tekercsen áthaladó mágneses fluxus időben változik – például mágnest mozgatunk a tekercsben, vagy a tekercset forgatjuk a mezőben. Az indukált feszültség a fluxusváltozás gyorsaságával arányos.",
+      "wrongOptions": {
+        "A": "Nyugvó tekercs állandó mezőben: a fluxus nem változik, ezért nincs indukció.",
+        "C": "Az indukcióhoz nem kell áramot vezetni a tekercsbe; éppen a fluxusváltozás hozza létre a feszültséget.",
+        "D": "A melegedés nem változtatja a fluxust, így nem indukál feszültséget."
+      }
+    },
+    {
+      "id": "7",
+      "kind": "choice",
+      "prompt": "Egy transzformátor primer tekercse 1000 menetes, szekunder tekercse 50 menetes. A primer oldalra 230 V váltakozó feszültséget kapcsolunk. Mekkora a szekunder feszültség (ideális transzformátor)?",
+      "options": [
+        { "key": "A", "text": "4600 V" },
+        { "key": "B", "text": "11,5 V" },
+        { "key": "C", "text": "46 V" },
+        { "key": "D", "text": "230 V" }
+      ],
+      "answer": "B",
+      "category": "kepletek",
+      "explanation": "Helyes: B. A feszültségek aránya a menetszámok arányával egyezik: U₂/U₁ = N₂/N₁, így U₂ = 230 V · 50/1000 = 11,5 V. Kevesebb menet a szekunder oldalon: lefelé transzformál.",
+      "wrongOptions": {
+        "A": "Fordított arány (230·1000/50): ez felfelé transzformálás lenne, de a szekunder menetszám kisebb.",
+        "C": "Számolási hiba: 230 · 0,05 = 11,5, nem 46.",
+        "D": "Csak egyenlő menetszámoknál maradna változatlan a feszültség."
+      }
+    },
+    {
+      "id": "8",
+      "kind": "choice",
+      "prompt": "Egy 2000 W-os hősugárzó 3 órát működik. Mennyi elektromos energiát fogyaszt kilowattórában?",
+      "options": [
+        { "key": "A", "text": "2 kWh" },
+        { "key": "B", "text": "6 kWh" },
+        { "key": "C", "text": "600 kWh" },
+        { "key": "D", "text": "6000 kWh" }
+      ],
+      "answer": "B",
+      "category": "mertekegyseg",
+      "explanation": "Helyes: B. 2000 W = 2 kW; az energia E = P·t = 2 kW · 3 h = 6 kWh. (Joule-ban: 2000 W · 10 800 s = 21,6 MJ, és 1 kWh = 3,6 MJ.)",
+      "wrongOptions": {
+        "A": "2 kW a teljesítmény, az energiához az idővel is szorozni kell.",
+        "C": "Rossz átváltás: a 2000 W-ot kW-ra kell váltani (2 kW), mielőtt az órával szorozzuk.",
+        "D": "6000 Wh = 6 kWh; az eredmény wattórában lett megadva kWh helyett."
+      }
+    }
+  ],
+  "glossary": [],
+  "suggestedMinutes": 14
+}
