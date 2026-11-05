@@ -147,14 +147,14 @@
       "kind": "text",
       "prompt": "Mekkora annak az oldatnak a pH-ja, amelyben [H₃O⁺] = 1,0 · 10⁻⁵ mol/dm³?",
       "answer": [
-        "5",
+        "5,00",
+        "5.00",
         "5,0",
         "5.0",
-        "5,00",
-        "5.00"
+        "5"
       ],
       "category": "szamolas-mertekegyseg",
-      "explanation": "Helyes: 5,0. pH = −lg(1,0 · 10⁻⁵) = 5,0.",
+      "explanation": "Helyes: 5,00 (elfogadható az 5 is). pH = −lg(1,0 · 10⁻⁵) = 5,00 – a két értékes jegyű koncentrációhoz két tizedesjegyű pH tartozik.",
       "maxWords": 1
     },
     {
