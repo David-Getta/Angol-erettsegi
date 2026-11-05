@@ -17,10 +17,22 @@
     "kind": "choice",
     "prompt": "Mekkora a hang terjedési sebessége levegőben, szobahőmérsékleten, közelítőleg?",
     "options": [
-      { "key": "A", "text": "3 m/s" },
-      { "key": "B", "text": "340 m/s" },
-      { "key": "C", "text": "3400 m/s" },
-      { "key": "D", "text": "300 000 km/s" }
+      {
+        "key": "A",
+        "text": "3 m/s"
+      },
+      {
+        "key": "B",
+        "text": "340 m/s"
+      },
+      {
+        "key": "C",
+        "text": "3400 m/s"
+      },
+      {
+        "key": "D",
+        "text": "300 000 km/s"
+      }
     ],
     "answer": "B",
     "category": "fogalmak",
@@ -32,10 +44,22 @@
       "kind": "choice",
       "prompt": "Egy hullám frekvenciája 50 Hz, hullámhossza 4 m. Mekkora a terjedési sebessége?",
       "options": [
-        { "key": "A", "text": "12,5 m/s" },
-        { "key": "B", "text": "200 m/s" },
-        { "key": "C", "text": "0,08 m/s" },
-        { "key": "D", "text": "54 m/s" }
+        {
+          "key": "A",
+          "text": "12,5 m/s"
+        },
+        {
+          "key": "B",
+          "text": "200 m/s"
+        },
+        {
+          "key": "C",
+          "text": "0,08 m/s"
+        },
+        {
+          "key": "D",
+          "text": "54 m/s"
+        }
       ],
       "answer": "B",
       "category": "kepletek",
@@ -51,10 +75,22 @@
       "kind": "choice",
       "prompt": "Mi a lényeges különbség a hang és a fény terjedése között?",
       "options": [
-        { "key": "A", "text": "A hang transzverzális, a fény longitudinális hullám." },
-        { "key": "B", "text": "A hang terjedéséhez közeg kell, a fény vákuumban is terjed." },
-        { "key": "C", "text": "A fény terjedéséhez közeg kell, a hang vákuumban is terjed." },
-        { "key": "D", "text": "Mindkettő mechanikai hullám, csak a sebességük különbözik." }
+        {
+          "key": "A",
+          "text": "A hang transzverzális, a fény longitudinális hullám."
+        },
+        {
+          "key": "B",
+          "text": "A hang terjedéséhez közeg kell, a fény vákuumban is terjed."
+        },
+        {
+          "key": "C",
+          "text": "A fény terjedéséhez közeg kell, a hang vákuumban is terjed."
+        },
+        {
+          "key": "D",
+          "text": "Mindkettő mechanikai hullám, csak a sebességük különbözik."
+        }
       ],
       "answer": "B",
       "category": "fogalmak",
@@ -70,10 +106,22 @@
       "kind": "choice",
       "prompt": "Fénysugár lép levegőből vízbe, a beesési merőlegestől eltérő irányban. Mi történik vele a határfelületen?",
       "options": [
-        { "key": "A", "text": "A beesési merőlegeshez törik (a törési szög kisebb a beesési szögnél), mert a vízben kisebb a fény sebessége." },
-        { "key": "B", "text": "A beesési merőlegestől törik, mert a vízben nagyobb a fény sebessége." },
-        { "key": "C", "text": "Nem törik meg, csak lelassul." },
-        { "key": "D", "text": "Teljes visszaverődést szenved." }
+        {
+          "key": "A",
+          "text": "A beesési merőlegeshez törik (a törési szög kisebb a beesési szögnél), mert a vízben kisebb a fény sebessége."
+        },
+        {
+          "key": "B",
+          "text": "A beesési merőlegestől törik, mert a vízben nagyobb a fény sebessége."
+        },
+        {
+          "key": "C",
+          "text": "Nem törik meg, csak lelassul."
+        },
+        {
+          "key": "D",
+          "text": "Teljes visszaverődést szenved."
+        }
       ],
       "answer": "A",
       "category": "torvenyek",
@@ -89,10 +137,22 @@
       "kind": "choice",
       "prompt": "Egy gyűjtőlencse fókusztávolsága 20 cm. A tárgy 60 cm-re van a lencsétől. Milyen távol keletkezik a kép a lencsétől?",
       "options": [
-        { "key": "A", "text": "15 cm" },
-        { "key": "B", "text": "30 cm" },
-        { "key": "C", "text": "40 cm" },
-        { "key": "D", "text": "60 cm" }
+        {
+          "key": "A",
+          "text": "15 cm"
+        },
+        {
+          "key": "B",
+          "text": "30 cm"
+        },
+        {
+          "key": "C",
+          "text": "40 cm"
+        },
+        {
+          "key": "D",
+          "text": "60 cm"
+        }
       ],
       "answer": "B",
       "category": "kepletek",
@@ -100,7 +160,7 @@
       "wrongOptions": {
         "A": "15 cm = 1/(1/20 + 1/60) – ÖSSZEADTA a reciprokokat, pedig a képtávolság reciprokát kivonással kapjuk.",
         "C": "40 cm a tárgytávolság és a fókusztávolság különbsége, ez nem a leképezési törvény.",
-        "D": "60 cm-re csak akkor lenne a kép, ha a tárgy a kétszeres fókusztávolságban (40 cm) volna."
+        "D": "60 cm-re akkor keletkezne a kép, ha a tárgy 30 cm-re volna (1/20 − 1/30 = 1/60). A tárgy- és a képtávolság csak t = 2f = 40 cm-nél egyenlő; itt t = 60 cm > 2f, ezért a kép közelebb, 2f-en belül keletkezik."
       }
     },
     {
@@ -108,10 +168,22 @@
       "kind": "choice",
       "prompt": "Melyik elektromágneses sugárzásnak a legnagyobb a frekvenciája?",
       "options": [
-        { "key": "A", "text": "A rádióhullámnak." },
-        { "key": "B", "text": "Az infravörös sugárzásnak." },
-        { "key": "C", "text": "A látható fénynek." },
-        { "key": "D", "text": "A röntgensugárzásnak." }
+        {
+          "key": "A",
+          "text": "A rádióhullámnak."
+        },
+        {
+          "key": "B",
+          "text": "Az infravörös sugárzásnak."
+        },
+        {
+          "key": "C",
+          "text": "A látható fénynek."
+        },
+        {
+          "key": "D",
+          "text": "A röntgensugárzásnak."
+        }
       ],
       "answer": "D",
       "category": "fogalmak",
@@ -127,10 +199,22 @@
       "kind": "choice",
       "prompt": "Mitől függ egy hang magassága?",
       "options": [
-        { "key": "A", "text": "A hanghullám amplitúdójától." },
-        { "key": "B", "text": "A hanghullám frekvenciájától." },
-        { "key": "C", "text": "A hangforrás méretétől." },
-        { "key": "D", "text": "A hang terjedési sebességétől." }
+        {
+          "key": "A",
+          "text": "A hanghullám amplitúdójától."
+        },
+        {
+          "key": "B",
+          "text": "A hanghullám frekvenciájától."
+        },
+        {
+          "key": "C",
+          "text": "A hangforrás méretétől."
+        },
+        {
+          "key": "D",
+          "text": "A hang terjedési sebességétől."
+        }
       ],
       "answer": "B",
       "category": "fogalmak",
@@ -146,10 +230,22 @@
       "kind": "choice",
       "prompt": "A fehér fény üvegprizmán áthaladva színekre bomlik. Mi ennek az oka?",
       "options": [
-        { "key": "A", "text": "A prizma elnyeli a fény egy részét." },
-        { "key": "B", "text": "Az üveg törésmutatója a különböző színű (frekvenciájú) fényekre eltérő, ezért azok különböző szögben törnek meg." },
-        { "key": "C", "text": "A prizma visszaveri a fényt a felületén." },
-        { "key": "D", "text": "A fény interferál a prizma lapjain." }
+        {
+          "key": "A",
+          "text": "A prizma elnyeli a fény egy részét."
+        },
+        {
+          "key": "B",
+          "text": "Az üveg törésmutatója a különböző színű (frekvenciájú) fényekre eltérő, ezért azok különböző szögben törnek meg."
+        },
+        {
+          "key": "C",
+          "text": "A prizma visszaveri a fényt a felületén."
+        },
+        {
+          "key": "D",
+          "text": "A fény interferál a prizma lapjain."
+        }
       ],
       "answer": "B",
       "category": "jelenseg-magyarazat",

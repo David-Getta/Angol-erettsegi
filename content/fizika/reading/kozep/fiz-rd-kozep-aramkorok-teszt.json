@@ -17,10 +17,22 @@
     "kind": "choice",
     "prompt": "Egy fogyasztón 12 V feszültség hatására 2 A erősségű áram folyik. Mekkora a fogyasztó ellenállása?",
     "options": [
-      { "key": "A", "text": "6 Ω" },
-      { "key": "B", "text": "24 Ω" },
-      { "key": "C", "text": "0,17 Ω" },
-      { "key": "D", "text": "10 Ω" }
+      {
+        "key": "A",
+        "text": "6 Ω"
+      },
+      {
+        "key": "B",
+        "text": "24 Ω"
+      },
+      {
+        "key": "C",
+        "text": "0,17 Ω"
+      },
+      {
+        "key": "D",
+        "text": "10 Ω"
+      }
     ],
     "answer": "A",
     "category": "kepletek",
@@ -32,10 +44,22 @@
       "kind": "choice",
       "prompt": "Mi az elektromos áramerősség meghatározása?",
       "options": [
-        { "key": "A", "text": "Az egységnyi töltésre jutó elektromos energia." },
-        { "key": "B", "text": "A vezető keresztmetszetén egységnyi idő alatt átáramló töltés." },
-        { "key": "C", "text": "A vezetőben lévő szabad elektronok száma." },
-        { "key": "D", "text": "Az egységnyi idő alatt végzett elektromos munka." }
+        {
+          "key": "A",
+          "text": "Az egységnyi töltésre jutó elektromos energia."
+        },
+        {
+          "key": "B",
+          "text": "A vezető keresztmetszetén egységnyi idő alatt átáramló töltés."
+        },
+        {
+          "key": "C",
+          "text": "A vezetőben lévő szabad elektronok száma."
+        },
+        {
+          "key": "D",
+          "text": "Az egységnyi idő alatt végzett elektromos munka."
+        }
       ],
       "answer": "B",
       "category": "fogalmak",
@@ -51,10 +75,22 @@
       "kind": "choice",
       "prompt": "Két egyforma, 100 Ω-os ellenállást párhuzamosan kapcsolunk. Mekkora az eredő ellenállás?",
       "options": [
-        { "key": "A", "text": "200 Ω" },
-        { "key": "B", "text": "100 Ω" },
-        { "key": "C", "text": "50 Ω" },
-        { "key": "D", "text": "25 Ω" }
+        {
+          "key": "A",
+          "text": "200 Ω"
+        },
+        {
+          "key": "B",
+          "text": "100 Ω"
+        },
+        {
+          "key": "C",
+          "text": "50 Ω"
+        },
+        {
+          "key": "D",
+          "text": "25 Ω"
+        }
       ],
       "answer": "C",
       "category": "kepletek",
@@ -70,10 +106,22 @@
       "kind": "choice",
       "prompt": "Egy 60 W-os izzó 230 V-os hálózaton működik. Mekkora áram folyik rajta?",
       "options": [
-        { "key": "A", "text": "0,26 A" },
-        { "key": "B", "text": "3,8 A" },
-        { "key": "C", "text": "13 800 A" },
-        { "key": "D", "text": "2,6 A" }
+        {
+          "key": "A",
+          "text": "0,26 A"
+        },
+        {
+          "key": "B",
+          "text": "3,8 A"
+        },
+        {
+          "key": "C",
+          "text": "13 800 A"
+        },
+        {
+          "key": "D",
+          "text": "2,6 A"
+        }
       ],
       "answer": "A",
       "category": "kepletek",
@@ -89,10 +137,22 @@
       "kind": "choice",
       "prompt": "Soros kapcsolásban melyik mennyiség azonos minden fogyasztón?",
       "options": [
-        { "key": "A", "text": "A feszültség." },
-        { "key": "B", "text": "Az áramerősség." },
-        { "key": "C", "text": "A teljesítmény." },
-        { "key": "D", "text": "Az ellenállás." }
+        {
+          "key": "A",
+          "text": "A feszültség."
+        },
+        {
+          "key": "B",
+          "text": "Az áramerősség."
+        },
+        {
+          "key": "C",
+          "text": "A teljesítmény."
+        },
+        {
+          "key": "D",
+          "text": "Az ellenállás."
+        }
       ],
       "answer": "B",
       "category": "torvenyek",
@@ -108,10 +168,22 @@
       "kind": "choice",
       "prompt": "Melyik tényező NEM befolyásolja egy fémhuzal ellenállását?",
       "options": [
-        { "key": "A", "text": "A huzal hossza." },
-        { "key": "B", "text": "A huzal keresztmetszete." },
-        { "key": "C", "text": "A huzal anyaga." },
-        { "key": "D", "text": "A huzalon átfolyó áram iránya." }
+        {
+          "key": "A",
+          "text": "A huzal hossza."
+        },
+        {
+          "key": "B",
+          "text": "A huzal keresztmetszete."
+        },
+        {
+          "key": "C",
+          "text": "A huzal anyaga."
+        },
+        {
+          "key": "D",
+          "text": "A huzalon átfolyó áram iránya."
+        }
       ],
       "answer": "D",
       "category": "fogalmak",
@@ -127,10 +199,22 @@
       "kind": "choice",
       "prompt": "Mikor keletkezik indukált feszültség egy zárt tekercsben?",
       "options": [
-        { "key": "A", "text": "Ha a tekercs állandó mágneses mezőben nyugalomban van." },
-        { "key": "B", "text": "Ha a tekercset átjáró mágneses fluxus (indukcióvonalak száma) változik." },
-        { "key": "C", "text": "Csak akkor, ha a tekercsen egyenáram folyik." },
-        { "key": "D", "text": "Ha a tekercs felmelegszik." }
+        {
+          "key": "A",
+          "text": "Ha a tekercs állandó mágneses mezőben nyugalomban van."
+        },
+        {
+          "key": "B",
+          "text": "Ha a tekercset átjáró mágneses fluxus (indukcióvonalak száma) változik."
+        },
+        {
+          "key": "C",
+          "text": "Csak akkor, ha a tekercsen egyenáram folyik."
+        },
+        {
+          "key": "D",
+          "text": "Ha a tekercs felmelegszik."
+        }
       ],
       "answer": "B",
       "category": "torvenyek",
@@ -146,17 +230,29 @@
       "kind": "choice",
       "prompt": "Egy transzformátor primer tekercse 1000 menetes, szekunder tekercse 50 menetes. A primer oldalra 230 V váltakozó feszültséget kapcsolunk. Mekkora a szekunder feszültség (ideális transzformátor)?",
       "options": [
-        { "key": "A", "text": "4600 V" },
-        { "key": "B", "text": "11,5 V" },
-        { "key": "C", "text": "46 V" },
-        { "key": "D", "text": "230 V" }
+        {
+          "key": "A",
+          "text": "4600 V"
+        },
+        {
+          "key": "B",
+          "text": "11,5 V"
+        },
+        {
+          "key": "C",
+          "text": "46 V"
+        },
+        {
+          "key": "D",
+          "text": "230 V"
+        }
       ],
       "answer": "B",
       "category": "kepletek",
       "explanation": "Helyes: B. A feszültségek aránya a menetszámok arányával egyezik: U₂/U₁ = N₂/N₁, így U₂ = 230 V · 50/1000 = 11,5 V. Kevesebb menet a szekunder oldalon: lefelé transzformál.",
       "wrongOptions": {
         "A": "Fordított arány (230·1000/50): ez felfelé transzformálás lenne, de a szekunder menetszám kisebb.",
-        "C": "Számolási hiba: 230 · 0,05 = 11,5, nem 46.",
+        "C": "46 V = 230/5 – rossz arányt használt: a menetszámok aránya N₁/N₂ = 1000/50 = 20, tehát a feszültség a huszadára csökken.",
         "D": "Csak egyenlő menetszámoknál maradna változatlan a feszültség."
       }
     },
@@ -165,10 +261,22 @@
       "kind": "choice",
       "prompt": "Egy 2000 W-os hősugárzó 3 órát működik. Mennyi elektromos energiát fogyaszt kilowattórában?",
       "options": [
-        { "key": "A", "text": "2 kWh" },
-        { "key": "B", "text": "6 kWh" },
-        { "key": "C", "text": "600 kWh" },
-        { "key": "D", "text": "6000 kWh" }
+        {
+          "key": "A",
+          "text": "2 kWh"
+        },
+        {
+          "key": "B",
+          "text": "6 kWh"
+        },
+        {
+          "key": "C",
+          "text": "600 kWh"
+        },
+        {
+          "key": "D",
+          "text": "6000 kWh"
+        }
       ],
       "answer": "B",
       "category": "mertekegyseg",

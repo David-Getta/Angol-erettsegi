@@ -15,8 +15,12 @@
   "passage": {
     "title": "Egy villamos sebesség–idő grafikonja",
     "blocks": [
-      { "text": "Egy villamos két megálló közötti mozgásáról sebesség–idő grafikon készült. A vízszintes tengelyen az idő szerepel másodpercben (0-tól 48 s-ig), a függőleges tengelyen a sebesség m/s-ban." },
-      { "text": "A grafikon három egyenes szakaszból áll. Az első szakasz: 0 s-tól 10 s-ig a sebesség az origóból kiinduló egyenes mentén 0-ról 12 m/s-ra nő. A második szakasz: 10 s-tól 40 s-ig a sebesség vízszintes egyenes mentén állandó, 12 m/s. A harmadik szakasz: 40 s-tól 48 s-ig a sebesség egyenes mentén 12 m/s-ról 0-ra csökken; a villamos a 48. másodpercben megáll a következő megállóban." }
+      {
+        "text": "Egy villamos két megálló közötti mozgásáról sebesség–idő grafikon készült. A vízszintes tengelyen az idő szerepel másodpercben (0-tól 48 s-ig), a függőleges tengelyen a sebesség m/s-ban."
+      },
+      {
+        "text": "A grafikon három egyenes szakaszból áll. Az első szakasz: 0 s-tól 10 s-ig a sebesség az origóból kiinduló egyenes mentén 0-ról 12 m/s-ra nő. A második szakasz: 10 s-tól 40 s-ig a sebesség vízszintes egyenes mentén állandó, 12 m/s. A harmadik szakasz: 40 s-tól 48 s-ig a sebesség egyenes mentén 12 m/s-ról 0-ra csökken; a villamos a 48. másodpercben megáll a következő megállóban."
+      }
     ]
   },
   "example": {
@@ -24,10 +28,22 @@
     "kind": "choice",
     "prompt": "Milyen mozgást végez a villamos a 10 s és 40 s közötti időszakban?",
     "options": [
-      { "key": "A", "text": "Egyenletesen gyorsuló mozgást." },
-      { "key": "B", "text": "Egyenes vonalú egyenletes mozgást." },
-      { "key": "C", "text": "Egyenletesen lassuló mozgást." },
-      { "key": "D", "text": "Áll." }
+      {
+        "key": "A",
+        "text": "Egyenletesen gyorsuló mozgást."
+      },
+      {
+        "key": "B",
+        "text": "Egyenes vonalú egyenletes mozgást."
+      },
+      {
+        "key": "C",
+        "text": "Egyenletesen lassuló mozgást."
+      },
+      {
+        "key": "D",
+        "text": "Áll."
+      }
     ],
     "answer": "B",
     "category": "grafikon",
@@ -39,10 +55,22 @@
       "kind": "choice",
       "prompt": "Mekkora a villamos gyorsulása az első 10 másodpercben?",
       "options": [
-        { "key": "A", "text": "0,83 m/s²" },
-        { "key": "B", "text": "1,2 m/s²" },
-        { "key": "C", "text": "12 m/s²" },
-        { "key": "D", "text": "120 m/s²" }
+        {
+          "key": "A",
+          "text": "0,83 m/s²"
+        },
+        {
+          "key": "B",
+          "text": "1,2 m/s²"
+        },
+        {
+          "key": "C",
+          "text": "12 m/s²"
+        },
+        {
+          "key": "D",
+          "text": "120 m/s²"
+        }
       ],
       "answer": "B",
       "category": "grafikon",
@@ -57,7 +85,11 @@
       "id": "2",
       "kind": "text",
       "prompt": "Mekkora utat tesz meg a villamos a 10 s és 40 s közötti időszakban? (Add meg méterben!)",
-      "answer": ["360 m", "360", "360 méter"],
+      "answer": [
+        "360 m",
+        "360",
+        "360 méter"
+      ],
       "maxWords": 2,
       "category": "szamolas",
       "explanation": "Helyes: 360 m. Egyenletes mozgásnál s = v·t = 12 m/s · (40 − 10) s = 12 · 30 = 360 m. Ez a v–t grafikon alatti téglalap területe."
@@ -67,18 +99,30 @@
       "kind": "choice",
       "prompt": "Mekkora a villamos lassulásának (gyorsulásának) nagysága a fékezés közben?",
       "options": [
-        { "key": "A", "text": "0,67 m/s²" },
-        { "key": "B", "text": "1,5 m/s²" },
-        { "key": "C", "text": "2,4 m/s²" },
-        { "key": "D", "text": "8 m/s²" }
+        {
+          "key": "A",
+          "text": "0,25 m/s²"
+        },
+        {
+          "key": "B",
+          "text": "0,67 m/s²"
+        },
+        {
+          "key": "C",
+          "text": "1,5 m/s²"
+        },
+        {
+          "key": "D",
+          "text": "8 m/s²"
+        }
       ],
-      "answer": "B",
+      "answer": "C",
       "category": "grafikon",
-      "explanation": "Helyes: B. A fékezés 40 s-tól 48 s-ig, azaz 8 s alatt történik, a sebesség 12 m/s-ról 0-ra csökken: a = Δv/Δt = −12 m/s / 8 s = −1,5 m/s². A negatív előjel a lassulást jelzi, nagysága 1,5 m/s².",
+      "explanation": "Helyes: C. A fékezés 40 s-tól 48 s-ig, azaz 8 s alatt történik, a sebesség 12 m/s-ról 0-ra csökken: a = Δv/Δt = −12 m/s / 8 s = −1,5 m/s². A negatív előjel a lassulást jelzi, a nagysága 1,5 m/s².",
       "wrongOptions": {
-        "A": "Fordított hányados (8/12).",
-        "C": "A 48 s-ot osztotta volna 20-szal – a fékezés csak 8 s-ig tart (40-től 48-ig), nem a teljes időt kell nézni.",
-        "D": "8 s a fékezés ideje, nem a gyorsulás."
+        "A": "12/48 = 0,25 – a teljes, 48 s-os mozgásidővel osztott, pedig a sebesség csak a fékezés 8 másodperce alatt csökken 12 m/s-ról 0-ra.",
+        "B": "Fordított hányados (8/12): a gyorsulás a sebességváltozás osztva az idővel, nem fordítva.",
+        "D": "8 s a fékezés IDŐTARTAMA, nem a gyorsulás; a gyorsuláshoz a 12 m/s-os változást el kell osztani ezzel."
       }
     },
     {
@@ -93,7 +137,11 @@
       "id": "5",
       "kind": "text",
       "prompt": "Mekkora a villamos által a 48 s alatt megtett teljes út? (Add meg méterben!)",
-      "answer": ["468 m", "468", "468 méter"],
+      "answer": [
+        "468 m",
+        "468",
+        "468 méter"
+      ],
       "maxWords": 2,
       "category": "szamolas",
       "explanation": "Helyes: 468 m. A három szakasz útja: gyorsítás ½·10·12 = 60 m, egyenletes szakasz 12·30 = 360 m, fékezés ½·8·12 = 48 m. Összesen 60 + 360 + 48 = 468 m – ez a teljes grafikon alatti terület (trapéz)."
@@ -103,10 +151,22 @@
       "kind": "choice",
       "prompt": "Mit jelent fizikailag a sebesség–idő grafikon alatti terület?",
       "options": [
-        { "key": "A", "text": "A gyorsulást." },
-        { "key": "B", "text": "A megtett utat." },
-        { "key": "C", "text": "Az átlagsebességet." },
-        { "key": "D", "text": "A mozgási energiát." }
+        {
+          "key": "A",
+          "text": "A gyorsulást."
+        },
+        {
+          "key": "B",
+          "text": "A megtett utat."
+        },
+        {
+          "key": "C",
+          "text": "Az átlagsebességet."
+        },
+        {
+          "key": "D",
+          "text": "A mozgási energiát."
+        }
       ],
       "answer": "B",
       "category": "grafikon",
@@ -121,7 +181,16 @@
       "id": "7",
       "kind": "text",
       "prompt": "Mekkora a villamos átlagsebessége a teljes, 48 s-os mozgás során? (m/s-ban, két értékes jegyre kerekítve)",
-      "answer": ["9,8 m/s", "9.8 m/s", "9,8", "9.8", "9,75 m/s", "9.75 m/s", "9,75", "9.75"],
+      "answer": [
+        "9,8 m/s",
+        "9.8 m/s",
+        "9,8",
+        "9.8",
+        "9,75 m/s",
+        "9.75 m/s",
+        "9,75",
+        "9.75"
+      ],
       "maxWords": 2,
       "category": "szamolas",
       "explanation": "Helyes: kb. 9,8 m/s. Az átlagsebesség a teljes út és a teljes idő hányadosa: v_átl = 468 m / 48 s = 9,75 m/s ≈ 9,8 m/s. Kisebb a 12 m/s-os legnagyobb sebességnél, mert a gyorsítás és a fékezés alatt a villamos lassabban haladt."
