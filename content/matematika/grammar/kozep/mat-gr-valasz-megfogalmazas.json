@@ -1,0 +1,219 @@
+{
+  "schemaVersion": 1,
+  "id": "mat-gr-valasz-megfogalmazas",
+  "subject": "matematika",
+  "revision": 1,
+  "level": "kozep",
+  "source": "generated",
+  "topic": "nyelvtan",
+  "title": "A válasz megfogalmazása",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "grammar",
+  "type": "lesson",
+  "category": "valasz-megfogalmazas",
+  "summaryHu": "A helyes számolás után is elveszhet pont, ha a válasz nem arra felel, amit a feladat kérdez (pl. x értéke a téglalap oldalai helyett), ha hiányzik a mértékegység, vagy ha két különböző megoldás marad a lapon jelölés nélkül. A válasz legyen teljes mondat, a kért alakban és pontossággal.",
+  "rules": [
+    {
+      "title": "A kérdésre válaszolj",
+      "explanation": "A végén olvasd el újra a kérdést, és mondatban válaszolj rá: amit kérdeznek (darabszám, hossz, valószínűség, időpont), azt add meg, mértékegységgel. A segédváltozó (x) értéke önmagában nem válasz.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "„x = 14” → „Péter 17 éves.”",
+          "hu": "Ha x a testvér kora és Péter 3 évvel idősebb."
+        },
+        {
+          "en": "„A számla egyenlege a 11. év végén haladja meg először a 4 000 000 Ft-ot.”",
+          "hu": "Az „n > 10,56” még nem válasz."
+        }
+      ]
+    },
+    {
+      "title": "A kért alak és pontosság",
+      "explanation": "Ha a feladat százalékot, törtet, egész számot, adott tizedesjegyet vagy intervallumot kér, abban az alakban válaszolj. A valószínűség 0 és 1 közötti szám vagy százalék – ha százalékot kérnek, váltsd át.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "P = 0,35 → százalékban 35%",
+          "hu": "A 0,35% hibás: az százszor kisebb."
+        },
+        {
+          "en": "1 < x ≤ 5 → intervallummal (1; 5]",
+          "hu": "A nyitott végpontot kerek, a zártat szögletes zárójel jelöli."
+        }
+      ]
+    },
+    {
+      "title": "Egyértelmű végeredmény",
+      "explanation": "Ha több megoldási kísérlet van a lapon, a rossz egyértelműen legyen áthúzva: jelöletlen esetben nem te döntöd el, melyiket értékelik, és lehet, hogy éppen a rosszat. Több megoldásnál (pl. két gyök) írd le, melyik felel meg a feltételeknek.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "„x = 2 vagy x = −3; a feladat pozitív számot kér, ezért a válasz 2.”",
+          "hu": "A kizárás oka is szerepel."
+        }
+      ]
+    },
+    {
+      "title": "II/B: jelöld, melyik feladatot hagyod ki",
+      "explanation": "Középszinten a II/B három feladatából kettőt értékelnek; emelt szinten öt feladatból négyet. A kihagyott feladat sorszámát a kijelölt helyen jelölni kell, különben az utolsó (középszinten a 18., emelten a 9.) feladat nem kerül értékelésre.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "„A 17. feladatot nem kérem értékelni.”",
+          "hu": "A jelölés hiányában az utolsó feladat esik ki."
+        }
+      ]
+    }
+  ],
+  "commonMistakes": [
+    {
+      "wrong": "Válasz: x = 5",
+      "right": "A téglalap oldalai 5 cm és 8 cm.",
+      "why": "A feladat a téglalap oldalait kérdezi; az x csak segédváltozó. A szöveges válasz mértékegységgel külön pontot ér."
+    },
+    {
+      "wrong": "A valószínűség 0,35%.",
+      "right": "A valószínűség 0,35, azaz 35%.",
+      "why": "0,35 = 35/100 = 35%; a 0,35% százszor kisebb érték lenne."
+    },
+    {
+      "wrong": "Két különböző végeredmény a lapon, egyik sincs áthúzva.",
+      "right": "A rossz megoldás egyértelműen áthúzva, a végeredmény kiemelve.",
+      "why": "A javító nem választhat a javadra a megoldások közül; jelöletlen esetben a javítási szabály dönti el, melyik számít, és ez lehet éppen a rossz."
+    },
+    {
+      "wrong": "Megoldáshalmaz: 1 < x ≤ 5 → [1; 5]",
+      "right": "(1; 5]",
+      "why": "A szigorú egyenlőtlenségnél a végpont nem tartozik a halmazhoz, ezért nyitott (kerek) zárójel kell."
+    }
+  ],
+  "examTips": [
+    "A rubrika „Válasz, mértékegység, ellenőrzés” szempontja feladatonként 1–2 pont: a szöveges válasz mértékegységgel szinte ingyen pont.",
+    "Az I. részben pontosan abban az alakban add meg az eredményt, amit kérnek (pl. „Adja meg a megoldáshalmazt intervallummal!”) – más alak akkor is pontvesztés, ha a szám helyes.",
+    "A II/B-ben a kihagyott feladat jelölése nélkül egy megoldott feladatod is értékelés nélkül maradhat."
+  ],
+  "practice": [
+    {
+      "id": "1",
+      "kind": "choice",
+      "prompt": "Egy feladatban x a fiatalabb testvér kora, Péter 3 évvel idősebb nála, és a megoldás x = 14. Melyik a helyes válasz a „Hány éves Péter?” kérdésre?",
+      "options": [
+        {
+          "key": "A",
+          "text": "x = 14"
+        },
+        {
+          "key": "B",
+          "text": "Péter 17 éves."
+        },
+        {
+          "key": "C",
+          "text": "14 év"
+        },
+        {
+          "key": "D",
+          "text": "x + 3"
+        }
+      ],
+      "answer": "B",
+      "category": "valasz-megfogalmazas",
+      "explanation": "A helyes: „Péter 17 éves.” A kérdés Péter korára vonatkozik, ami x + 3 = 17, és teljes mondatban kell válaszolni.",
+      "wrongOptions": {
+        "A": "Az x = 14 a testvér kora, nem válasz a kérdésre.",
+        "C": "A 14 év a fiatalabb testvéré.",
+        "D": "Az x + 3 kifejezés, nem szám; ki kell számolni az értékét."
+      }
+    },
+    {
+      "id": "2",
+      "kind": "text",
+      "prompt": "Egy esemény valószínűsége 0,35. Add meg százalékban!",
+      "answer": [
+        "35%",
+        "35"
+      ],
+      "category": "valasz-megfogalmazas",
+      "explanation": "35%. A százalék a század része: 0,35 = 35/100 = 35%."
+    },
+    {
+      "id": "3",
+      "kind": "choice",
+      "prompt": "Melyik intervallum jelöli az 1 < x ≤ 5 feltételnek megfelelő valós számok halmazát?",
+      "options": [
+        {
+          "key": "A",
+          "text": "(1; 5]"
+        },
+        {
+          "key": "B",
+          "text": "[1; 5)"
+        },
+        {
+          "key": "C",
+          "text": "(1; 5)"
+        },
+        {
+          "key": "D",
+          "text": "[1; 5]"
+        }
+      ],
+      "answer": "A",
+      "category": "valasz-megfogalmazas",
+      "explanation": "A helyes: (1; 5]. Az 1 nem tartozik a halmazhoz (szigorú <), ezért kerek zárójel; az 5 igen (≤), ezért szögletes.",
+      "wrongOptions": {
+        "B": "Fordítva: ez az 1-et tartalmazza, az 5-öt nem.",
+        "C": "Ez az 5-öt sem tartalmazza, pedig x = 5 megengedett.",
+        "D": "Ez az 1-et is tartalmazza, pedig x > 1."
+      }
+    },
+    {
+      "id": "4",
+      "kind": "text",
+      "prompt": "Egy egyenlet gyökei x = 2 és x = −3, a feladat pozitív számot keres. Mi a feladat válasza?",
+      "answer": [
+        "2",
+        "x = 2"
+      ],
+      "category": "valasz-megfogalmazas",
+      "explanation": "2. A −3 negatív, ezért nem felel meg a feladat feltételének; a válaszban csak a 2 szerepelhet, a kizárás indoklásával."
+    },
+    {
+      "id": "5",
+      "kind": "choice",
+      "prompt": "Mit tegyél, ha egy részfeladatra két különböző megoldást írtál, és tudod, melyik a jó?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Hagyd mindkettőt, a javító választ."
+        },
+        {
+          "key": "B",
+          "text": "Húzd át egyértelműen azt, amelyiket nem kéred értékelni."
+        },
+        {
+          "key": "C",
+          "text": "Írd mellé, hogy „valamelyik jó”."
+        },
+        {
+          "key": "D",
+          "text": "Karikázd be mindkettőt."
+        }
+      ],
+      "answer": "B",
+      "category": "valasz-megfogalmazas",
+      "explanation": "A helyes: B. A javító csak az egyértelműen megjelölt megoldást tekinti a tiédnek; két jelöletlen megoldás közül nem a jobbat választja ki helyetted.",
+      "wrongOptions": {
+        "A": "A javító nem választ a javadra; jelöletlen esetben a szabály szerinti megoldást értékeli, ami lehet a rossz.",
+        "C": "Ez nem egyértelmű jelölés, ugyanaz a helyzet, mint két jelöletlen megoldásnál.",
+        "D": "Két bekarikázott megoldás sem egyértelmű."
+      }
+    }
+  ],
+  "relatedCategories": [
+    "indoklas-hianya",
+    "mertekegyseg-kerekites",
+    "szoveges-ertelmezes"
+  ]
+}

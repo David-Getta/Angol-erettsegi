@@ -1,0 +1,96 @@
+{
+  "schemaVersion": 1,
+  "id": "kem-wr-emelt-polietilen-pvc-pet",
+  "subject": "kemia",
+  "revision": 1,
+  "level": "emelt",
+  "source": "generated",
+  "topic": "biomolekulak-muanyagok",
+  "title": "Polietilén, PVC és PET – szerkezet, előállítás, környezet",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "writing",
+  "type": "elemzo",
+  "taskNumber": 4,
+  "situation": "A háztartási hulladékban három gyakori műanyag fordul elő: a polietilén (PE, például bevásárlószatyor), a poli(vinil-klorid) (PVC, például csövek, padlóburkolat) és a poli(etilén-tereftalát) (PET, üdítőitalos palack).\n\na) Nevezze meg a három polimer monomerjét (monomerjeit), és adja meg, milyen reakciótípussal (polimerizáció vagy polikondenzáció) keletkeznek! (3 pont)\nb) Írja fel a PVC képződésének egyenletét! (2 pont)\nc) Miért nem szabad a PVC-hulladékot a háztartásban elégetni? Adja meg annak a gáznak a képletét, amely égésekor savas, maró gázként felszabadul! (2 pont)\nd) A PE és a PET hőre lágyuló műanyag. Mit jelent ez szerkezeti szempontból, és mi a jelentősége az újrahasznosításban? (2 pont)\ne) Miért nem bomlik le a polietilén a természetben évtizedek alatt sem, és miért nem oldódik vízben? (2 pont)",
+  "points": [
+    {
+      "id": "p1",
+      "text": "a) A monomerek és a képződés reakciótípusa mindhárom polimerre (3 pont)"
+    },
+    {
+      "id": "p2",
+      "text": "b) A PVC képződésének egyenlete (2 pont)"
+    },
+    {
+      "id": "p3",
+      "text": "c) A PVC égetésének veszélye, a felszabaduló gáz képlete (2 pont)"
+    },
+    {
+      "id": "p4",
+      "text": "d) A hőre lágyuló jelleg szerkezeti magyarázata és jelentősége az újrahasznosításban (2 pont)"
+    },
+    {
+      "id": "p5",
+      "text": "e) A polietilén lebomlásának és vízoldhatatlanságának magyarázata (2 pont)"
+    }
+  ],
+  "suggestedMinutes": 30,
+  "usefulPhrases": [
+    {
+      "en": "addíciós polimerizáció",
+      "hu": "Telítetlen monomerek összekapcsolódása melléktermék nélkül (PE, PVC, PS)."
+    },
+    {
+      "en": "polikondenzáció",
+      "hu": "Kétfunkciós monomerek összekapcsolódása kis molekula (víz) kilépésével (PET, nejlon)."
+    },
+    {
+      "en": "n CH₂=CHCl → [–CH₂–CHCl–]ₙ",
+      "hu": "A PVC képződése – a polimer képletében az ismétlődő egység szögletes zárójelben."
+    },
+    {
+      "en": "hőre lágyuló ↔ hőre keményedő",
+      "hu": "Lineáris láncok másodrendű kötésekkel ↔ térhálós (keresztkötéses) szerkezet."
+    },
+    {
+      "en": "HCl, dioxinok",
+      "hu": "A klórtartalmú műanyagok égetésének veszélyes termékei."
+    },
+    {
+      "en": "biológiailag nem lebomló",
+      "hu": "A telített szénhidrogénláncot a lebontó szervezetek enzimjei nem bontják."
+    }
+  ],
+  "checklistExtra": [],
+  "modelAnswer": {
+    "text": "a) A polietilén monomerje az etén (CH₂=CH₂), a PVC-é a vinil-klorid (klóretén, CH₂=CHCl); mindkettő addíciós polimerizációval keletkezik: a kettős kötés felnyílik, és a monomerek melléktermék nélkül kapcsolódnak össze. A PET két monomerből, a tereftálsavból (benzol-1,4-dikarbonsav) és az etilénglikolból (etán-1,2-diol) polikondenzációval keletkezik: az észterkötések kialakulásakor víz lép ki, ezért a PET poliészter.\n\nb) n CH₂=CHCl → [–CH₂–CHCl–]ₙ\n\nc) A PVC égésekor a klórtartalomból hidrogén-klorid (HCl) gáz keletkezik, amely a levegő nedvességével sósavat képez: maró, a légutakat károsítja, és savas esőt okoz. Alacsony hőmérsékletű, tökéletlen égéskor ráadásul rendkívül mérgező klórtartalmú szerves vegyületek (például dioxinok) is képződhetnek, ezért a PVC csak füstgáztisztítással felszerelt égetőműben semmisíthető meg.\n\nd) A hőre lágyuló műanyagok lineáris vagy kevéssé elágazó láncokból állnak, a láncok között nincsenek keresztkötések, csak másodrendű kölcsönhatások. Melegítéskor ezek gyengülnek, a láncok elmozdulhatnak egymáshoz képest, az anyag meglágyul, lehűlve pedig újra megszilárdul. Ezért a hulladék megolvasztva újraformázható: a PET-palackokból például szál vagy új palack készülhet.\n\ne) A polietilén telített szénhidrogénláncból áll, amelyben csak erős, gyakorlatilag apoláris C–C és C–H kötések vannak; ezeket a mikroorganizmusok enzimjei nem tudják bontani, és a polietilén reakciókészsége az alkánokéhoz hasonlóan kicsi. Mivel apoláris, nem alakul ki számottevő kölcsönhatás közte és a poláris vízmolekulák között, ezért vízben nem oldódik.",
+    "pointsCovered": [
+      {
+        "id": "p1",
+        "quote": "A PET két monomerből, a tereftálsavból (benzol-1,4-dikarbonsav) és az etilénglikolból (etán-1,2-diol) polikondenzációval keletkezik"
+      },
+      {
+        "id": "p2",
+        "quote": "n CH₂=CHCl → [–CH₂–CHCl–]ₙ"
+      },
+      {
+        "id": "p3",
+        "quote": "A PVC égésekor a klórtartalomból hidrogén-klorid (HCl) gáz keletkezik"
+      },
+      {
+        "id": "p4",
+        "quote": "A hőre lágyuló műanyagok lineáris vagy kevéssé elágazó láncokból állnak, a láncok között nincsenek keresztkötések, csak másodrendű kölcsönhatások."
+      },
+      {
+        "id": "p5",
+        "quote": "Mivel apoláris, nem alakul ki számottevő kölcsönhatás közte és a poláris vízmolekulák között, ezért vízben nem oldódik."
+      }
+    ],
+    "notes": [
+      "Tények: mindhárom polimer monomerje és képződési típusa helyes (két addíciós polimer, egy poliészter), a PVC égésterméke pontosan megnevezve.",
+      "Magyarázat: a hőre lágyuló jelleget és a lebomlás hiányát szerkezettel (lineáris láncok, apoláris C–C és C–H kötések) magyarázza, és a környezeti következményt is levezeti.",
+      "Szaknyelv: monomer, addíciós polimerizáció, polikondenzáció, keresztkötés, poliészter; a polimer képlete szabályos (ismétlődő egység, n index)."
+    ]
+  }
+}

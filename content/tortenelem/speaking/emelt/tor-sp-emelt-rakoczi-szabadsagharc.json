@@ -1,0 +1,96 @@
+{
+  "schemaVersion": 1,
+  "id": "tor-sp-emelt-rakoczi-szabadsagharc",
+  "subject": "tortenelem",
+  "revision": 1,
+  "level": "emelt",
+  "source": "generated",
+  "topic": "kora-ujkor",
+  "title": "II. Rákóczi Ferenc szabadságharca",
+  "createdAt": "2026-11-05",
+  "tags": [
+    "magyar"
+  ],
+  "section": "speaking",
+  "type": "tetel",
+  "partNumber": 1,
+  "instructionsHu": "Elemezze a források segítségével a Rákóczi-szabadságharc okait, a rendi állam kiépítését, a katonai fordulat és a bukás okait, valamint a szatmári béke jelentőségét! A felkészülési idő 30 perc; használhatja a kronológia nélküli történelmi atlaszt. A felelet során a forrásokat elemezze, kapcsolja össze saját ismereteivel, és tárja fel az okokat és a következményeket!",
+  "prompts": [
+    "A szabadságharc okai (I. forrás)",
+    "A felkelés kibontakozása és a rendi állam (II. forrás)",
+    "A katonai fordulat és a bukás okai",
+    "A szatmári béke és jelentősége (III. forrás)"
+  ],
+  "followUpQuestions": [
+    "Miért nevezhetjük a szatmári békét kompromisszumnak?"
+  ],
+  "usefulPhrases": [
+    {
+      "en": "Neoacquistica Commissio",
+      "hu": "Újszerzeményi Bizottság: a töröktől visszafoglalt birtokok jogcímét vizsgálta, fegyverváltságot követelt"
+    },
+    {
+      "en": "konföderáció",
+      "hu": "a rendek szövetsége (Szécsény, 1705)"
+    },
+    {
+      "en": "vezérlő fejedelem",
+      "hu": "Rákóczi címe a konföderáció élén"
+    },
+    {
+      "en": "trónfosztás (detronizáció)",
+      "hu": "az uralkodóház megfosztása a tróntól (Ónod, 1707)"
+    },
+    {
+      "en": "közkegyelem (amnesztia)",
+      "hu": "a felkelők büntetlensége a hűségeskü fejében"
+    }
+  ],
+  "sources": [
+    {
+      "title": "I. forrás – Egy kiáltvány stílusában, 1704 (a gyakorlás céljára írt szöveg)",
+      "text": "„Felújulnak a dicső magyar nemzet sebei: az idegen katonaság beszállásolása, az elviselhetetlen adók, a vallás üldözése és a törvénytelen ítéletek. Fegyvert ragadtunk Istennel, a hazáért és a szabadságért.”"
+    },
+    {
+      "title": "II. forrás – Leírás",
+      "text": "1705-ben a szécsényi országgyűlés a rendek konföderációját hozta létre, élén a vezérlő fejedelemmel; 1707-ben az ónodi országgyűlés kimondta a Habsburg-ház trónfosztását. 1708-ban a kuruc sereg Trencsénnél súlyos vereséget szenvedett."
+    },
+    {
+      "title": "III. forrás – A szatmári béke (1711) főbb pontjai (összefoglalás)",
+      "text": "Általános közkegyelem mindazoknak, akik hűséget esküsznek az uralkodónak; a rendi alkotmány és a korábbi törvények szerinti vallásszabadság megmarad; Rákóczi visszakaphatja birtokait, ha hűséget esküszik."
+    }
+  ],
+  "keyPoints": [
+    "Okok: a török kiűzése után a Habsburg-abszolutizmus – Neoacquistica Commissio (fegyverváltság), magas adók, katonai beszállásolás, ellenreformáció.",
+    "1703: a tiszaháti felkelés, Rákóczi hazatérése Lengyelországból; a kurucok gyors sikerei a nemesség, a hajdúk és a jobbágyok összefogásával.",
+    "Nemzetközi háttér: spanyol örökösödési háború, francia szövetség; 1704: a höchstädti francia–bajor vereség.",
+    "1705 Szécsény: konföderáció, Rákóczi vezérlő fejedelem; 1707 Ónod: a Habsburg-ház trónfosztása.",
+    "Bukás okai: 1708 Trencsén, a francia segítség elmaradása, a rézpénz elértéktelenedése, pestisjárvány, a jobbágykatonák helyzetének rendezetlensége.",
+    "1711 szatmári béke (Károlyi Sándor – Pálffy János): közkegyelem, a rendi alkotmány megőrzése; Rákóczi nem fogadta el, emigrált (Rodostó).",
+    "Jelentőség: kompromisszum – Magyarország a Habsburg Monarchia része marad, de megőrzi rendi önállóságát."
+  ],
+  "speakingSeconds": 900,
+  "prepSeconds": 1800,
+  "sampleAnswer": {
+    "turns": [
+      {
+        "speaker": "candidate",
+        "text": "A tételem II. Rákóczi Ferenc szabadságharca, amely 1703 és 1711 között zajlott a Habsburg uralom alatt álló Magyar Királyságban és Erdélyben.\n\nAz I. forrás a felkelés okait sorolja fel: a katonaság beszállásolását, az elviselhetetlen adókat, a vallásüldözést és a törvénytelen ítéleteket. Ezekből arra következtetek, hogy a török kiűzése után a Habsburg-udvar abszolutista módon kormányozta az országot, és a társadalom szinte minden rétegét sértette. A Neoacquistica Commissio fegyverváltságot követelt a visszafoglalt birtokokért, a protestánsokat az ellenreformáció sújtotta. Ez magyarázza, hogy a felkelést a tiszaháti jobbágyok kezdték, és később a nemesség is csatlakozott.\n\nA nemzetközi helyzet kedvezett, mert a spanyol örökösödési háborúban a Habsburgok Franciaországgal harcoltak. Rákóczi ezért XIV. Lajos szövetségére épített. Az 1704-es höchstädti francia–bajor vereség azonban meghiúsította a kuruc és a francia sereg egyesülését.\n\nA II. forrás szerint 1705-ben Szécsényben a rendek konföderációt hoztak létre, Rákóczi vezérlő fejedelem lett. Ez a rendi állam kiépítését jelentette. 1707-ben Ónodon kimondták a Habsburg-ház trónfosztását, így a megegyezés lehetősége beszűkült, és a remélt külföldi elismerés sem érkezett meg.\n\nA fordulópont az 1708-as trencséni vereség volt. A bukás oka emellett a francia segítség elmaradása, a rézpénz elértéktelenedése és a pestisjárvány. A jobbágykatonák terheit sem sikerült rendezni, ezért a hadsereg morálja romlott.\n\nA III. forrás szerint az 1711-es szatmári béke közkegyelmet adott, és megőrizte a rendi alkotmányt és a vallásszabadságot. Ebből látszik, hogy a béke kompromisszum volt: a Habsburgok elismerték a rendi jogokat, a rendek pedig a Habsburg uralkodót. Rákóczi nem fogadta el a békét, emigrált, és Rodostóban halt meg. A szatmári béke hosszú időre meghatározta a magyar rendek és a Habsburgok viszonyát."
+      },
+      {
+        "speaker": "examiner",
+        "text": "Miért nevezhetjük a szatmári békét kompromisszumnak?"
+      },
+      {
+        "speaker": "candidate",
+        "text": "Mert egyik fél sem érte el teljesen a célját. A Habsburgok nem tudták beolvasztani az országot a birodalomba, és elismerték a rendi alkotmányt; a rendek viszont lemondtak a függetlenségről, és elfogadták a Habsburg-ház örökös uralmát. Ez a megegyezés készítette elő az 1723-as Pragmatica Sanctio elfogadását is."
+      }
+    ],
+    "notes": [
+      "Tájékozódás: pontos dátumok (1703, 1704, 1705, 1707, 1708, 1711) és helyszínek (Tiszahát, Höchstädt, Szécsény, Ónod, Trencsén, Szatmár, Rodostó); az emelt szint elvárja a nemzetközi összefüggést is (spanyol örökösödési háború).",
+      "Forráshasználat: mindhárom forrás állításához következtetés kapcsolódik (a sérelmek az abszolutizmus jelei; a trónfosztás beszűkíti a megegyezést; a béke kompromisszum).",
+      "Történelmi gondolkodás: több okot rangsorol (belső sérelmek, nemzetközi helyzet), a bukás okait is több szempontból (katonai, gazdasági, társadalmi) mutatja be, és a hosszú távú következményt (Pragmatica Sanctio) is jelzi.",
+      "Kommunikáció: szakkifejezések (abszolutizmus, ellenreformáció, konföderáció, vezérlő fejedelem, trónfosztás, közkegyelem), világos, szempontokra tagolt felelet."
+    ]
+  }
+}

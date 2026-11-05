@@ -17,10 +17,22 @@
     "kind": "choice",
     "prompt": "egészség – kiejtve: [egésség]. Milyen hangtani jelenség érvényesül?",
     "options": [
-      { "key": "A", "text": "teljes hasonulás" },
-      { "key": "B", "text": "részleges hasonulás zöngésség szerint" },
-      { "key": "C", "text": "összeolvadás" },
-      { "key": "D", "text": "mássalhangzó-kiesés" }
+      {
+        "key": "A",
+        "text": "teljes hasonulás"
+      },
+      {
+        "key": "B",
+        "text": "részleges hasonulás zöngésség szerint"
+      },
+      {
+        "key": "C",
+        "text": "összeolvadás"
+      },
+      {
+        "key": "D",
+        "text": "mássalhangzó-kiesés"
+      }
     ],
     "answer": "A",
     "category": "nyelvtani-fogalom",
@@ -32,10 +44,22 @@
       "kind": "choice",
       "prompt": "dobta – kiejtve: [dopta]. Milyen hangtani jelenség érvényesül?",
       "options": [
-        { "key": "A", "text": "teljes hasonulás" },
-        { "key": "B", "text": "részleges hasonulás zöngésség szerint" },
-        { "key": "C", "text": "részleges hasonulás a képzés helye szerint" },
-        { "key": "D", "text": "összeolvadás" }
+        {
+          "key": "A",
+          "text": "teljes hasonulás"
+        },
+        {
+          "key": "B",
+          "text": "részleges hasonulás zöngésség szerint"
+        },
+        {
+          "key": "C",
+          "text": "részleges hasonulás a képzés helye szerint"
+        },
+        {
+          "key": "D",
+          "text": "összeolvadás"
+        }
       ],
       "answer": "B",
       "category": "nyelvtani-fogalom",
@@ -51,10 +75,22 @@
       "kind": "choice",
       "prompt": "színpad – kiejtve: [szímpad]. Milyen hangtani jelenség érvényesül?",
       "options": [
-        { "key": "A", "text": "részleges hasonulás zöngésség szerint" },
-        { "key": "B", "text": "részleges hasonulás a képzés helye szerint" },
-        { "key": "C", "text": "mássalhangzó-rövidülés" },
-        { "key": "D", "text": "teljes hasonulás" }
+        {
+          "key": "A",
+          "text": "részleges hasonulás zöngésség szerint"
+        },
+        {
+          "key": "B",
+          "text": "részleges hasonulás a képzés helye szerint"
+        },
+        {
+          "key": "C",
+          "text": "mássalhangzó-rövidülés"
+        },
+        {
+          "key": "D",
+          "text": "teljes hasonulás"
+        }
       ],
       "answer": "B",
       "category": "nyelvtani-fogalom",
@@ -70,10 +106,22 @@
       "kind": "choice",
       "prompt": "barátság – kiejtve: [baráccság]. Milyen hangtani jelenség érvényesül?",
       "options": [
-        { "key": "A", "text": "összeolvadás" },
-        { "key": "B", "text": "teljes hasonulás" },
-        { "key": "C", "text": "mássalhangzó-kiesés" },
-        { "key": "D", "text": "magánhangzó-rövidülés" }
+        {
+          "key": "A",
+          "text": "összeolvadás"
+        },
+        {
+          "key": "B",
+          "text": "teljes hasonulás"
+        },
+        {
+          "key": "C",
+          "text": "mássalhangzó-kiesés"
+        },
+        {
+          "key": "D",
+          "text": "magánhangzó-rövidülés"
+        }
       ],
       "answer": "A",
       "category": "nyelvtani-fogalom",
@@ -89,10 +137,22 @@
       "kind": "choice",
       "prompt": "jobbra – kiejtve: [jobra]. Milyen hangtani jelenség érvényesül?",
       "options": [
-        { "key": "A", "text": "mássalhangzó-rövidülés" },
-        { "key": "B", "text": "összeolvadás" },
-        { "key": "C", "text": "részleges hasonulás zöngésség szerint" },
-        { "key": "D", "text": "mássalhangzó-nyúlás" }
+        {
+          "key": "A",
+          "text": "mássalhangzó-rövidülés"
+        },
+        {
+          "key": "B",
+          "text": "összeolvadás"
+        },
+        {
+          "key": "C",
+          "text": "részleges hasonulás zöngésség szerint"
+        },
+        {
+          "key": "D",
+          "text": "mássalhangzó-nyúlás"
+        }
       ],
       "answer": "A",
       "category": "nyelvtani-fogalom",
@@ -100,7 +160,7 @@
       "wrongOptions": {
         "B": "Nem keletkezik új hang a b és az r találkozásából.",
         "C": "A b zöngés marad, mert az r is zöngés.",
-        "D": "Nyúlásnál a hang hosszabbodna (pl. ide → [iddeg] népies alak); itt rövidülés történik."
+        "D": "Nyúlásnál a hang meghosszabbodna (ahogy a magánhangzó-nyúlásnál: alma → almát); itt éppen az ellenkezője, rövidülés történik."
       }
     },
     {
@@ -108,10 +168,22 @@
       "kind": "choice",
       "prompt": "mondta – kiejtve: [monta]. Milyen hangtani jelenség érvényesül?",
       "options": [
-        { "key": "A", "text": "mássalhangzó-kiesés" },
-        { "key": "B", "text": "teljes hasonulás" },
-        { "key": "C", "text": "összeolvadás" },
-        { "key": "D", "text": "részleges hasonulás a képzés helye szerint" }
+        {
+          "key": "A",
+          "text": "mássalhangzó-kiesés"
+        },
+        {
+          "key": "B",
+          "text": "teljes hasonulás"
+        },
+        {
+          "key": "C",
+          "text": "összeolvadás"
+        },
+        {
+          "key": "D",
+          "text": "részleges hasonulás a képzés helye szerint"
+        }
       ],
       "answer": "A",
       "category": "nyelvtani-fogalom",
@@ -127,10 +199,22 @@
       "kind": "choice",
       "prompt": "MÁV (Magyar Államvasutak). Milyen szóalkotási móddal keletkezett?",
       "options": [
-        { "key": "A", "text": "betűszó (rövidítéses szóalkotás)" },
-        { "key": "B", "text": "szóösszetétel" },
-        { "key": "C", "text": "szóképzés" },
-        { "key": "D", "text": "szóelvonás" }
+        {
+          "key": "A",
+          "text": "betűszó (rövidítéses szóalkotás)"
+        },
+        {
+          "key": "B",
+          "text": "szóösszetétel"
+        },
+        {
+          "key": "C",
+          "text": "szóképzés"
+        },
+        {
+          "key": "D",
+          "text": "szóelvonás"
+        }
       ],
       "answer": "A",
       "category": "nyelvtani-fogalom",
@@ -146,10 +230,22 @@
       "kind": "choice",
       "prompt": "naplemente – Milyen összetett szó? (Segítség: a nap lemegy.)",
       "options": [
-        { "key": "A", "text": "alanyos alárendelő összetétel" },
-        { "key": "B", "text": "tárgyas alárendelő összetétel" },
-        { "key": "C", "text": "birtokos jelzős alárendelő összetétel" },
-        { "key": "D", "text": "mellérendelő összetétel" }
+        {
+          "key": "A",
+          "text": "alanyos alárendelő összetétel"
+        },
+        {
+          "key": "B",
+          "text": "tárgyas alárendelő összetétel"
+        },
+        {
+          "key": "C",
+          "text": "birtokos jelzős alárendelő összetétel"
+        },
+        {
+          "key": "D",
+          "text": "mellérendelő összetétel"
+        }
       ],
       "answer": "A",
       "category": "nyelvtani-fogalom",
@@ -165,10 +261,22 @@
       "kind": "choice",
       "prompt": "hegyoldal – Milyen összetett szó?",
       "options": [
-        { "key": "A", "text": "birtokos jelzős alárendelő összetétel" },
-        { "key": "B", "text": "minőségjelzős alárendelő összetétel" },
-        { "key": "C", "text": "határozós alárendelő összetétel" },
-        { "key": "D", "text": "ikerszó" }
+        {
+          "key": "A",
+          "text": "birtokos jelzős alárendelő összetétel"
+        },
+        {
+          "key": "B",
+          "text": "minőségjelzős alárendelő összetétel"
+        },
+        {
+          "key": "C",
+          "text": "határozós alárendelő összetétel"
+        },
+        {
+          "key": "D",
+          "text": "ikerszó"
+        }
       ],
       "answer": "A",
       "category": "nyelvtani-fogalom",

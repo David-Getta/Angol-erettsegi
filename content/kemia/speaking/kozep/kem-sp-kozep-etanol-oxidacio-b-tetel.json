@@ -1,0 +1,80 @@
+{
+  "schemaVersion": 1,
+  "id": "kem-sp-kozep-etanol-oxidacio-b-tetel",
+  "subject": "kemia",
+  "revision": 1,
+  "level": "kozep",
+  "source": "generated",
+  "topic": "oxigen-nitrogen-vegyuletek",
+  "title": "Az etanol oxidációja izzó rézdróttal",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "speaking",
+  "type": "b-tetel",
+  "partNumber": 2,
+  "instructionsHu": "Értelmezze a leírt kísérletet! Ismertesse a tapasztalatokat, nevezze meg a keletkező anyagokat, írja fel a reakciók egyenletét, és határozza meg, mi oxidálódik és mi redukálódik!",
+  "prompts": [
+    "Miért feketedik meg a rézdrót a lángban?",
+    "Mi történik a fekete drót felületével az etanolban?",
+    "Milyen szerves termék keletkezik, és miről ismerhető fel?",
+    "Írja fel a reakciók egyenletét, és nevezze meg az oxidálószert és a redukálószert!"
+  ],
+  "followUpQuestions": [
+    "Mit tapasztalnánk, ha etanol helyett propán-2-olt használnánk? Mi lenne a termék?"
+  ],
+  "usefulPhrases": [
+    {
+      "en": "2 Cu + O₂ → 2 CuO",
+      "hu": "A réz felületi oxidációja a lángban – fekete bevonat."
+    },
+    {
+      "en": "CH₃–CH₂–OH + CuO → CH₃–CHO + Cu + H₂O",
+      "hu": "Az etanol enyhe oxidációja acetaldehiddé."
+    },
+    {
+      "en": "primer alkohol → aldehid",
+      "hu": "Szekunder → keton, tercier → nem oxidálódik enyhe körülmények között."
+    },
+    {
+      "en": "oxidációs szám változása",
+      "hu": "C: −1 → +1 (oxidáció); Cu: +2 → 0 (redukció)."
+    },
+    {
+      "en": "redukálószer / oxidálószer",
+      "hu": "Etanol / réz(II)-oxid."
+    },
+    {
+      "en": "legyezgetve szagoljuk",
+      "hu": "Mérgező, illékony anyag szagának biztonságos vizsgálata."
+    }
+  ],
+  "sources": [
+    {
+      "title": "A kísérlet leírása",
+      "text": "Egy rézdrót végét spirál alakúra tekerjük, és gázlángban izzásig hevítjük. A lángból kivéve a drót felülete megfeketedik. A még forró drótot egy kevés etanolt tartalmazó kémcsőbe mártjuk. A kísérletet többször megismételjük, majd óvatosan, legyezgetve megszagoljuk a kémcső tartalmát."
+    }
+  ],
+  "keyPoints": [
+    "Az izzó réz a levegő oxigénjével fekete réz(II)-oxiddá oxidálódik: 2 Cu + O₂ → 2 CuO.",
+    "Az etanolba mártott fekete drót felülete vörösen csillogóvá válik: a réz(II)-oxid fémrézzé redukálódik.",
+    "Az etanol enyhe oxidációjának terméke az acetaldehid (etanal), jellegzetes, szúrós, almára emlékeztető szagú.",
+    "CH₃–CH₂–OH + CuO → CH₃–CHO + Cu + H₂O",
+    "Az etanol primer alkohol, ezért enyhe oxidációval aldehid keletkezik (szekunder alkoholból keton).",
+    "A hidroxilcsoportot hordozó szénatom oxidációs száma −1-ről +1-re nő; a rézé +2-ről 0-ra csökken."
+  ],
+  "speakingSeconds": 330,
+  "prepSeconds": 450,
+  "sampleAnswer": {
+    "turns": [
+      {
+        "speaker": "candidate",
+        "text": "A rézdrót a gázlángban izzásig hevítve a felületén megfeketedik. Ennek oka, hogy a forró réz a levegő oxigénjével reakcióba lép, és fekete réz(II)-oxid képződik a felületén: 2 Cu + O₂ → 2 CuO.\nAmikor a még forró, fekete drótot az etanolba mártjuk, felülete pillanatok alatt újra vörösesbarnán csillogó lesz, a kémcsőből pedig szúrós, almára emlékeztető szag érezhető. Ez azt mutatja, hogy a réz(II)-oxid fémrézzé redukálódott, az etanol pedig oxidálódott. Az etanol enyhe oxidációjának terméke az acetaldehid, más néven etanal:\nCH₃–CH₂–OH + CuO → CH₃–CHO + Cu + H₂O\nAz etanol primer alkohol, mert a hidroxilcsoportja olyan szénatomhoz kapcsolódik, amelyhez csak egy másik szénatom kötődik. A primer alkoholok enyhe oxidációjakor aldehid keletkezik, a szekunder alkoholokból keton, a tercier alkoholok pedig ilyen körülmények között nem oxidálódnak.\nA reakcióban a hidroxilcsoportot hordozó szénatom oxidációs száma −1-ről +1-re nő, tehát az etanol a redukálószer; a réz oxidációs száma +2-ről 0-ra csökken, vagyis a réz(II)-oxid az oxidálószer. A folyamat a drót ismételt hevítésével újra és újra elvégezhető: a réz a folyamat végén változatlanul visszamarad, az etanolt végső soron a levegő oxigénje oxidálja, a réz tehát katalizátorként viselkedik. Az acetaldehid tovább oxidálva ecetsavvá alakulhat. Az acetaldehid mérgező, ezért a szagát csak óvatosan, legyezgetve szabad megvizsgálni."
+      }
+    ],
+    "notes": [
+      "Tapasztalat: mindkét színváltozást (vörös → fekete a lángban, fekete → vörös az etanolban) és a szagot leírja.",
+      "Magyarázat: mindkét lépést rendezett egyenlettel magyarázza, oxidációs számokkal megnevezi az oxidálószert és a redukálószert, és a primer alkohol fogalmával indokolja, miért aldehid a termék.",
+      "Szaknyelv és biztonság: primer/szekunder/tercier alkohol, enyhe oxidáció, katalizátor; a biztonságos szagvizsgálatot (legyezgetés) is megemlíti."
+    ]
+  }
+}

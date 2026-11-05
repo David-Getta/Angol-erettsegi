@@ -1,6 +1,15 @@
 {
+  "schemaVersion": 1,
+  "id": "nem-wr-kozep-sprachkurs-wien-formal-email",
+  "subject": "nemet",
+  "revision": 1,
+  "level": "kozep",
+  "source": "generated",
   "topic": "iskola",
   "title": "Anfrage an eine Sprachschule",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "writing",
   "type": "formal-email",
   "taskNumber": 2,
   "register": "formal",
@@ -8,31 +17,85 @@
   "situationHu": "Egy bécsi nyelviskola hirdetését olvastad. Nyáron szeretnél részt venni egy tanfolyamon, ezért e-mailt írsz az iskolának. Írj 100–120 szót, és térj ki mind a négy szempontra.",
   "stimulus": "Sommer-Sprachkurse in Wien für Jugendliche (14–18 Jahre) • Kurse von 2 oder 4 Wochen • 20 Unterrichtsstunden pro Woche • abwechslungsreiches Freizeitprogramm • Unterkunft auf Wunsch • Sprachschule Danubia",
   "points": [
-    { "id": "p1", "text": "Stellen Sie sich kurz vor und schreiben Sie, warum Sie schreiben." },
-    { "id": "p2", "text": "Fragen Sie nach der Unterkunft." },
-    { "id": "p3", "text": "Erkundigen Sie sich nach dem Freizeitprogramm." },
-    { "id": "p4", "text": "Fragen Sie nach den Kosten und der Anmeldung." }
+    {
+      "id": "p1",
+      "text": "Stellen Sie sich kurz vor und schreiben Sie, warum Sie schreiben."
+    },
+    {
+      "id": "p2",
+      "text": "Fragen Sie nach der Unterkunft."
+    },
+    {
+      "id": "p3",
+      "text": "Erkundigen Sie sich nach dem Freizeitprogramm."
+    },
+    {
+      "id": "p4",
+      "text": "Fragen Sie nach den Kosten und der Anmeldung."
+    }
   ],
-  "wordLimit": { "min": 100, "max": 120 },
+  "wordLimit": {
+    "min": 100,
+    "max": 120
+  },
   "suggestedMinutes": 35,
   "usefulPhrases": [
-    { "en": "Sehr geehrte Damen und Herren,", "hu": "Tisztelt Hölgyeim és Uraim! (ha nem ismered a címzett nevét)" },
-    { "en": "Ich habe Ihre Anzeige im Internet gelesen.", "hu": "Olvastam a hirdetésüket az interneten." },
-    { "en": "Ich interessiere mich für einen vierwöchigen Kurs.", "hu": "Egy négyhetes tanfolyam érdekel." },
-    { "en": "Ich möchte fragen, ob es möglich ist, …", "hu": "Szeretném megkérdezni, lehetséges-e, hogy …" },
-    { "en": "Außerdem würde mich interessieren, …", "hu": "Ezenkívül érdekelne, hogy …" },
-    { "en": "Wie viel kostet der Kurs mit Unterkunft?", "hu": "Mennyibe kerül a tanfolyam szállással?" },
-    { "en": "Bis wann muss ich mich anmelden?", "hu": "Meddig kell jelentkeznem?" },
-    { "en": "Ich freue mich auf Ihre Antwort.", "hu": "Várom a válaszukat." },
-    { "en": "Mit freundlichen Grüßen", "hu": "Üdvözlettel (hivatalos elköszönés)" }
+    {
+      "en": "Sehr geehrte Damen und Herren,",
+      "hu": "Tisztelt Hölgyeim és Uraim! (ha nem ismered a címzett nevét)"
+    },
+    {
+      "en": "Ich habe Ihre Anzeige im Internet gelesen.",
+      "hu": "Olvastam a hirdetésüket az interneten."
+    },
+    {
+      "en": "Ich interessiere mich für einen vierwöchigen Kurs.",
+      "hu": "Egy négyhetes tanfolyam érdekel."
+    },
+    {
+      "en": "Ich möchte fragen, ob es möglich ist, …",
+      "hu": "Szeretném megkérdezni, lehetséges-e, hogy …"
+    },
+    {
+      "en": "Außerdem würde mich interessieren, …",
+      "hu": "Ezenkívül érdekelne, hogy …"
+    },
+    {
+      "en": "Wie viel kostet der Kurs mit Unterkunft?",
+      "hu": "Mennyibe kerül a tanfolyam szállással?"
+    },
+    {
+      "en": "Bis wann muss ich mich anmelden?",
+      "hu": "Meddig kell jelentkeznem?"
+    },
+    {
+      "en": "Ich freue mich auf Ihre Antwort.",
+      "hu": "Várom a válaszukat."
+    },
+    {
+      "en": "Mit freundlichen Grüßen",
+      "hu": "Üdvözlettel (hivatalos elköszönés)"
+    }
   ],
   "modelAnswer": {
     "text": "Sehr geehrte Damen und Herren,\n\nich heiße Réka Szabó, bin 17 Jahre alt und lerne seit vier Jahren Deutsch an einem Gymnasium in Debrecen. Ich habe Ihre Anzeige im Internet gelesen und interessiere mich für einen vierwöchigen Kurs im Juli.\n\nZuerst möchte ich fragen, ob es möglich ist, bei einer Gastfamilie zu wohnen. Ich würde nämlich gern so viel wie möglich Deutsch sprechen.\n\nAußerdem würde mich interessieren, welche Ausflüge und Aktivitäten das Freizeitprogramm anbietet.\n\nZum Schluss habe ich noch eine Frage zu den Kosten: Wie viel kostet der Kurs mit Unterkunft, und bis wann muss ich mich anmelden?\n\nIch freue mich auf Ihre Antwort.\n\nMit freundlichen Grüßen\nRéka Szabó",
     "pointsCovered": [
-      { "id": "p1", "quote": "ich heiße Réka Szabó, bin 17 Jahre alt und lerne seit vier Jahren Deutsch an einem Gymnasium in Debrecen. Ich habe Ihre Anzeige im Internet gelesen und interessiere mich für einen vierwöchigen Kurs im Juli." },
-      { "id": "p2", "quote": "Zuerst möchte ich fragen, ob es möglich ist, bei einer Gastfamilie zu wohnen." },
-      { "id": "p3", "quote": "Außerdem würde mich interessieren, welche Ausflüge und Aktivitäten das Freizeitprogramm anbietet." },
-      { "id": "p4", "quote": "Wie viel kostet der Kurs mit Unterkunft, und bis wann muss ich mich anmelden?" }
+      {
+        "id": "p1",
+        "quote": "ich heiße Réka Szabó, bin 17 Jahre alt und lerne seit vier Jahren Deutsch an einem Gymnasium in Debrecen. Ich habe Ihre Anzeige im Internet gelesen und interessiere mich für einen vierwöchigen Kurs im Juli."
+      },
+      {
+        "id": "p2",
+        "quote": "Zuerst möchte ich fragen, ob es möglich ist, bei einer Gastfamilie zu wohnen."
+      },
+      {
+        "id": "p3",
+        "quote": "Außerdem würde mich interessieren, welche Ausflüge und Aktivitäten das Freizeitprogramm anbietet."
+      },
+      {
+        "id": "p4",
+        "quote": "Wie viel kostet der Kurs mit Unterkunft, und bis wann muss ich mich anmelden?"
+      }
     ],
     "notes": [
       "Feladat teljesítése: mind a négy szempont külön bekezdést kap; a kérdések konkrétak (vendégcsalád, kirándulások, ár szállással, jelentkezési határidő), és a bemutatkozás megmondja, miért ír.",

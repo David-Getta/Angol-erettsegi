@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "fiz-sp-emelt-fonalinga-g-meres",
+  "subject": "fizika",
+  "revision": 1,
+  "level": "emelt",
+  "source": "generated",
+  "topic": "mozgas-egyensuly",
+  "title": "Harmonikus rezgőmozgás, fonálinga – a nehézségi gyorsulás mérése",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "speaking",
+  "type": "tetel",
+  "partNumber": 1,
+  "instructionsHu": "Fejtsd ki a harmonikus rezgőmozgás kinematikáját és dinamikáját (kitérés, sebesség, gyorsulás, visszatérítő erő, rezgésidő, energia), a fonálinga mozgását és a rezonanciát! Ezután végezd el a mérést: határozd meg a nehézségi gyorsulást fonálingával, legalább négy különböző ingahosszal, és becsüld meg a mérés hibáját!",
+  "prompts": [
+    "A harmonikus rezgőmozgás és az egyenletes körmozgás kapcsolata; kitérés, sebesség és gyorsulás az idő függvényében",
+    "A rezgés dinamikai feltétele (F = −D·x), a rugós rezgő rezgésideje; energiaviszonyok",
+    "A fonálinga: mikor harmonikus a mozgása, lengésidő-képlet, mitől nem függ a lengésidő",
+    "Csillapított és kényszerrezgés, rezonancia – példák",
+    "A g mérése: a mérés menete, a T²–l grafikon, hibaforrások és hibabecslés"
+  ],
+  "sources": [
+    {
+      "title": "Mérés: g meghatározása fonálingával",
+      "text": "Eszközök: állvány, nyújthatatlan fonál, kis méretű, nagy sűrűségű ingatest (fémgolyó), mérőszalag, stopper.\nMenet: állítsd be az ingahosszt (a felfüggesztési ponttól a golyó középpontjáig) rendre kb. 0,4; 0,6; 0,8 és 1,0 m-re! Térítsd ki az ingát legfeljebb kb. 5–8°-kal, és mérd meg 10 teljes lengés idejét, minden hossznál legalább kétszer! Számítsd ki a lengésidőt, ábrázold T²-et l függvényében, és a meredekségből határozd meg g értékét!\nVárt tapasztalat: T² egyenesen arányos l-lel; a meredekség 4π²/g ≈ 4,0 s²/m, így g ≈ 9,8 m/s²."
+    }
+  ],
+  "keyPoints": [
+    "A harmonikus rezgés az egyenletes körmozgás vetülete: x = A·sin(ωt), v = A·ω·cos(ωt), a = −A·ω²·sin(ωt) = −ω²·x.",
+    "Harmonikus rezgés akkor jön létre, ha a visszatérítő erő arányos a kitéréssel és ellentétes irányú: F = −D·x; rugós rezgőnél T = 2π·√(m/D).",
+    "A rezgés energiája ½·D·A² állandó (csillapítás nélkül): a rugalmas és a mozgási energia periodikusan alakul egymásba.",
+    "A fonálinga kis kitérésnél jó közelítéssel harmonikus; lengésideje T = 2π·√(l/g), nem függ a tömegtől és (kis kitérésnél) az amplitúdótól.",
+    "Rezonancia: ha a kényszerítő frekvencia közel van a sajátfrekvenciához, az amplitúdó nagyon nagy lesz (hinta, hidak, hangszerek rezonátora).",
+    "A mérésben T² ~ l, a meredekségből g = 4π²/meredekség; így a felfüggesztési pont bizonytalansága sem torzítja a g értékét.",
+    "Hibaforrások: időmérés (reakcióidő → 10 lengés mérése), ingahossz mérése a golyó középpontjáig, nagy kitérés, légellenállás; a relatív hiba Δg/g = Δl/l + 2·ΔT/T."
+  ],
+  "speakingSeconds": 1200,
+  "prepSeconds": 1800,
+  "sampleAnswer": {
+    "turns": [
+      {
+        "speaker": "candidate",
+        "text": "A tételem a harmonikus rezgőmozgás és a fonálinga. Harmonikus rezgőmozgásnak azt nevezzük, amikor a test kitérése az idő szinuszos függvénye. Ezt legjobban az egyenletes körmozgás vetületeként érthetjük meg: ha egy pont A sugarú körön ω szögsebességgel kering, az árnyéka egy egyenesen x = A·sin(ωt) szerint mozog. A sebesség v = A·ω·cos(ωt), a gyorsulás a = −A·ω²·sin(ωt) = −ω²·x, tehát a gyorsulás mindig a kitéréssel arányos és vele ellentétes irányú. Newton II. törvénye szerint ehhez F = −D·x visszatérítő erő kell, ahol D = m·ω². Ebből a rugós rezgő rezgésideje T = 2π·√(m/D). Csillapítás nélkül a rezgés energiája, ½·D·A², állandó: a szélső helyzetben csak rugalmas energia van, az egyensúlyi helyzeten áthaladva csak mozgási.\nA fonálinga kis kitérésnél jó közelítéssel harmonikus, mert a nehézségi erő érintő irányú összetevője, m·g·sin φ, kis szögnél a kitéréssel arányos. A lengésidő T = 2π·√(l/g): független a tömegtől, és kis kitérésnél az amplitúdótól is – ezt már Galilei észrevette, ezen alapul az ingaóra. A valódi rezgések csillapodnak; ha periodikus erővel gerjesztjük őket, kényszerrezgés jön létre, és ha a gerjesztés frekvenciája a sajátfrekvenciához közeli, rezonancia lép fel, nagy amplitúdóval, ahogy a hintát is a sajátütemében lökjük.\nA mérésben a fonálinga hosszát a felfüggesztési ponttól a golyó közepéig mértem, és 0,40; 0,60; 0,80 és 1,00 m-es hosszaknál 10 lengés idejét mértem, kis, kb. 5°-os kitéréssel. A tíz lengés ideje 12,7 s; 15,5 s; 18,0 s és 20,1 s volt, a lengésidők tehát 1,27; 1,55; 1,80 és 2,01 s. A T² értékek 1,61; 2,40; 3,24 és 4,04 s². Ezek az ingahosszal egyenesen arányosak, a T²–l grafikon közel origón átmenő egyenes, kb. 4,0 s²/m meredekséggel. A 4π²·l/T² értékek 9,79; 9,86; 9,75 és 9,77 m/s², az átlaguk 9,79 m/s². Hibabecslés: a hosszat kb. 2 mm, a 10 lengés idejét kb. 0,2 s pontossággal mértem, így 1 m-es ingánál a relatív hiba Δg/g ≈ Δl/l + 2·ΔT/T ≈ 0,002 + 2 · 0,01 ≈ 2 %. A mérés eredménye tehát g = (9,8 ± 0,2) m/s², ami egyezik az irodalmi 9,81 m/s²-es értékkel."
+      },
+      {
+        "speaker": "examiner",
+        "text": "Miért mértél tíz lengést egy helyett?"
+      },
+      {
+        "speaker": "candidate",
+        "text": "Mert a stopper indításának és megállításának hibája, kb. 0,2 s, nem függ attól, hány lengést mérek. Tíz lengésnél ez a hiba a mért időnek csak tized annyi része, így a lengésidő relatív hibája tizedére csökken."
+      }
+    ],
+    "notes": [
+      "A tartalmi rész a kinematikától (vetület, x–v–a) a dinamikán (F = −Dx) és az energián át a fonálingáig és a rezonanciáig a teljes témát lefedi, a képletek mellett az érvényességi feltételt (kis kitérés) is kimondja.",
+      "A mérés szakszerű: négy ingahossz, 10 lengés mérése, T² számítása, a T²–l grafikon meredeksége, az eredmény hibával (9,8 ± 0,2 m/s²) – ez az emelt szóbeli mérési részének (20 pont) elvárása.",
+      "A hibabecslést a relatív hibák összegzésével, számszerűen végzi el, és a vizsgáztató kérdésére a 10 lengés mérésének okát is pontosan megindokolja."
+    ]
+  }
+}

@@ -1,0 +1,96 @@
+{
+  "schemaVersion": 1,
+  "id": "kem-wr-emelt-rezszulfat-elektrolizis-ph",
+  "subject": "kemia",
+  "revision": 1,
+  "level": "emelt",
+  "source": "generated",
+  "topic": "sav-bazis-redoxi",
+  "title": "Réz(II)-szulfát-oldat elektrolízise és az oldat pH-ja",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "writing",
+  "type": "szamitasi",
+  "taskNumber": 2,
+  "situation": "500 cm³ 0,200 mol/dm³ koncentrációjú réz(II)-szulfát-oldatot grafitelektródok között 2,00 A erősségű árammal 60,0 percig elektrolizálunk. Az áramkihasználás 100 %-os.\n\na) Írja fel a katódon és az anódon lejátszódó folyamat egyenletét, valamint a bruttó egyenletet! (3 pont)\nb) Hány gramm réz válik ki a katódon? (3 pont)\nc) Mekkora térfogatú standardállapotú gáz fejlődik az anódon? (2 pont)\nd) Mekkora lesz az oldat pH-ja az elektrolízis végén? (4 pont)\ne) A kiindulási réz(II)-ionok hány százaléka marad az oldatban? (3 pont)\n\nFeltételezések: az oldat térfogata nem változik, a keletkező kénsav mindkét lépésben teljesen disszociál, a réz(II)-ionok hidrolízisétől eltekintünk.\nAdatok: Ar(Cu) = 63,5; F = 96 500 C/mol; Vm = 24,5 dm³/mol (standardállapot).",
+  "points": [
+    {
+      "id": "p1",
+      "text": "a) Katód- és anódfolyamat, bruttó egyenlet (3 pont)"
+    },
+    {
+      "id": "p2",
+      "text": "b) A kivált réz tömege a Faraday-törvénnyel (3 pont)"
+    },
+    {
+      "id": "p3",
+      "text": "c) Az anódon fejlődő oxigén térfogata (2 pont)"
+    },
+    {
+      "id": "p4",
+      "text": "d) Az oldat pH-ja az elektrolízis végén (4 pont)"
+    },
+    {
+      "id": "p5",
+      "text": "e) Az oldatban maradó réz(II)-ionok aránya (3 pont)"
+    }
+  ],
+  "suggestedMinutes": 40,
+  "usefulPhrases": [
+    {
+      "en": "Q = I · t (t másodpercben)",
+      "hu": "Az áthaladt töltés: 60,0 perc = 3600 s."
+    },
+    {
+      "en": "n(e⁻) = Q / F, F = 96 500 C/mol",
+      "hu": "Faraday-törvény: az elektronok anyagmennyisége."
+    },
+    {
+      "en": "n(anyag) = n(e⁻) / z",
+      "hu": "Cu²⁺ → Cu: z = 2; O₂ képződésénél 4 elektron/molekula."
+    },
+    {
+      "en": "2 H₂O → O₂ + 4 H⁺ + 4 e⁻",
+      "hu": "Oxoanionos (SO₄²⁻, NO₃⁻) oldatban indifferens anódon a víz oxidálódik."
+    },
+    {
+      "en": "pH = −lg[H⁺]",
+      "hu": "Erős savnál (teljes disszociáció) a H⁺-koncentráció közvetlenül a sav anyagmennyiségéből."
+    },
+    {
+      "en": "indifferens (grafit, platina) elektród",
+      "hu": "Az elektród anyaga nem vesz részt a reakcióban."
+    }
+  ],
+  "checklistExtra": [],
+  "modelAnswer": {
+    "text": "a) A grafitelektród nem vesz részt a folyamatban (indifferens elektród).\nKatód (redukció): Cu²⁺ + 2 e⁻ → Cu\nAnód (oxidáció): a szulfátion nem oxidálódik, helyette a víz: 2 H₂O → O₂ + 4 H⁺ + 4 e⁻\nBruttó egyenlet: 2 CuSO₄ + 2 H₂O → 2 Cu + O₂ + 2 H₂SO₄ (ionosan: 2 Cu²⁺ + 2 H₂O → 2 Cu + O₂ + 4 H⁺)\n\nb) Az áthaladt töltés: Q = I · t = 2,00 A · 3600 s = 7200 C.\nAz elektronok anyagmennyisége: n(e⁻) = Q / F = 7200 C / 96 500 C/mol = 0,07461 mol.\nn(Cu) = n(e⁻) / 2 = 0,03731 mol → m(Cu) = 0,03731 mol · 63,5 g/mol = 2,37 g.\nA katódon 2,37 g réz válik ki.\n\nc) Az anódon oxigén fejlődik: n(O₂) = n(e⁻) / 4 = 0,01865 mol → V(O₂) = 0,01865 mol · 24,5 dm³/mol = 0,457 dm³.\nAz anódon 0,457 dm³ (457 cm³) standardállapotú oxigéngáz fejlődik.\n\nd) Az anódfolyamat szerint minden átadott elektronra egy H⁺ keletkezik: n(H⁺) = n(e⁻) = 0,07461 mol.\n[H⁺] = 0,07461 mol / 0,500 dm³ = 0,1492 mol/dm³\npH = −lg 0,1492 = 0,83\nAz elektrolízis végén az oldat pH-ja 0,83.\n\ne) A kiindulási réz(II)-ionok anyagmennyisége: n = 0,200 mol/dm³ · 0,500 dm³ = 0,100 mol; ebből 0,03731 mol vált ki, maradt 0,06269 mol.\n0,06269 mol / 0,100 mol · 100 % = 62,7 %\nA réz(II)-ionok 62,7 %-a marad az oldatban; a réz(II)-ionok tehát nem fogytak el, a katódfolyamat az egész idő alatt a rézleválás volt.",
+    "pointsCovered": [
+      {
+        "id": "p1",
+        "quote": "Anód (oxidáció): a szulfátion nem oxidálódik, helyette a víz: 2 H₂O → O₂ + 4 H⁺ + 4 e⁻"
+      },
+      {
+        "id": "p2",
+        "quote": "n(Cu) = n(e⁻) / 2 = 0,03731 mol → m(Cu) = 0,03731 mol · 63,5 g/mol = 2,37 g."
+      },
+      {
+        "id": "p3",
+        "quote": "V(O₂) = 0,01865 mol · 24,5 dm³/mol = 0,457 dm³"
+      },
+      {
+        "id": "p4",
+        "quote": "pH = −lg 0,1492 = 0,83"
+      },
+      {
+        "id": "p5",
+        "quote": "0,06269 mol / 0,100 mol · 100 % = 62,7 %"
+      }
+    ],
+    "notes": [
+      "Eredmény: mind az öt részeredmény helyes (2,37 g Cu, 0,457 dm³ O₂, pH = 0,83, 62,7 %), az elektródfolyamatok és a bruttó egyenlet rendezettek, a töltések egyeznek.",
+      "Indoklás: megnevezi, miért a víz oxidálódik az anódon, és a pH-t az anódfolyamat sztöchiometriájából (1 e⁻ → 1 H⁺) vezeti le; az e) rész ellenőrzésként igazolja, hogy a réz(II)-ionok nem fogytak el, tehát a katódfolyamat végig ugyanaz volt.",
+      "Számolás: a perc → másodperc átváltás kiírva, a részeredményeket négy értékes jeggyel viszi tovább, a pH-t két tizedesjegyre adja meg; minden részfeladat szöveges válasszal zárul."
+    ]
+  }
+}

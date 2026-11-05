@@ -1,0 +1,96 @@
+{
+  "schemaVersion": 1,
+  "id": "nem-wr-emelt-hostel-beschwerde-formal-email",
+  "subject": "nemet",
+  "revision": 1,
+  "level": "emelt",
+  "source": "generated",
+  "topic": "utazas",
+  "title": "Beschwerde an ein Hostel",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "writing",
+  "type": "formal-email",
+  "taskNumber": 1,
+  "register": "formal",
+  "situation": "Sie haben mit zwei Freundinnen drei Nächte in einem Hostel in Hamburg verbracht und waren sehr unzufrieden. Schreiben Sie eine Beschwerde-E-Mail an das Hostel. Schreiben Sie 120–150 Wörter und gehen Sie auf alle drei Punkte ein.",
+  "situationHu": "Két barátnőddel három éjszakát töltöttél egy hamburgi hostelben, és nagyon elégedetlen voltál. Írj panaszlevelet a szállásnak 120–150 szóban, és térj ki mindhárom szempontra.",
+  "stimulus": "Aus der Internetseite des Hostels: „Hostel Am Hafen – ruhige Zimmer mit eigenem Bad, kostenloses WLAN in allen Zimmern, nur fünf Minuten zu den Landungsbrücken.“",
+  "points": [
+    {
+      "id": "p1",
+      "text": "Schreiben Sie, wer Sie sind und wann Sie dort übernachtet haben."
+    },
+    {
+      "id": "p2",
+      "text": "Beschreiben Sie, welche Probleme es gab und warum Sie enttäuscht sind."
+    },
+    {
+      "id": "p3",
+      "text": "Schreiben Sie, was Sie vom Hostel erwarten."
+    }
+  ],
+  "wordLimit": {
+    "min": 120,
+    "max": 150
+  },
+  "suggestedMinutes": 35,
+  "usefulPhrases": [
+    {
+      "en": "Leider muss ich mich über … beschweren.",
+      "hu": "Sajnos panaszt kell tennem … miatt."
+    },
+    {
+      "en": "Auf Ihrer Internetseite wird … angeboten.",
+      "hu": "A honlapjukon … szerepel / kínálnak."
+    },
+    {
+      "en": "Wir bekamen jedoch …",
+      "hu": "Mi azonban … kaptunk."
+    },
+    {
+      "en": "obwohl wir das an der Rezeption gemeldet hatten",
+      "hu": "pedig jeleztük a recepción"
+    },
+    {
+      "en": "eine Leistung, die wir nicht erhalten haben",
+      "hu": "olyan szolgáltatás, amelyet nem kaptunk meg"
+    },
+    {
+      "en": "Ich erwarte, dass Sie uns … zurückerstatten.",
+      "hu": "Elvárom, hogy visszatérítsék nekünk a …-t."
+    },
+    {
+      "en": "die Angelegenheit regeln",
+      "hu": "rendezi az ügyet"
+    },
+    {
+      "en": "Ich bitte Sie, mir bis … mitzuteilen, …",
+      "hu": "Kérem, … -ig tudassák velem, …"
+    }
+  ],
+  "modelAnswer": {
+    "text": "Sehr geehrte Damen und Herren,\n\nvom 12. bis 15. August habe ich mit zwei Freundinnen in Ihrem Hostel „Am Hafen“ übernachtet. Leider muss ich mich über unseren Aufenthalt beschweren.\n\nAuf Ihrer Internetseite werden ruhige Zimmer mit eigenem Bad angeboten. Wir bekamen jedoch ein Zimmer direkt über der Bar, in der bis zwei Uhr nachts laute Musik lief. Außerdem funktionierte die Dusche während unseres gesamten Aufenthalts nicht, obwohl wir das an der Rezeption dreimal gemeldet hatten. Auch das versprochene WLAN war in unserem Zimmer nicht verfügbar.\n\nDa wir für Leistungen bezahlt haben, die wir nicht erhalten haben, erwarte ich, dass Sie uns mindestens die Hälfte des Zimmerpreises, also 135 Euro, zurückerstatten. Ich bitte Sie, mir bis Ende des Monats mitzuteilen, wie Sie die Angelegenheit regeln möchten.\n\nMit freundlichen Grüßen\nLilla Horváth",
+    "pointsCovered": [
+      {
+        "id": "p1",
+        "quote": "vom 12. bis 15. August habe ich mit zwei Freundinnen in Ihrem Hostel „Am Hafen“ übernachtet."
+      },
+      {
+        "id": "p2",
+        "quote": "Wir bekamen jedoch ein Zimmer direkt über der Bar, in der bis zwei Uhr nachts laute Musik lief. Außerdem funktionierte die Dusche während unseres gesamten Aufenthalts nicht, obwohl wir das an der Rezeption dreimal gemeldet hatten."
+      },
+      {
+        "id": "p3",
+        "quote": "erwarte ich, dass Sie uns mindestens die Hälfte des Zimmerpreises, also 135 Euro, zurückerstatten."
+      }
+    ],
+    "notes": [
+      "Feladat teljesítése: pontos adatok (dátum, szállás neve), három konkrét panasz, amely a hirdetés ígéreteire épül (csend, saját fürdő, WLAN), és egyértelmű, számszerű elvárás határidővel.",
+      "Hangnem: határozott, de udvarias hivatalos levél – nincs sértő vagy túlzó kifejezés, a magázás következetes, „Sehr geehrte Damen und Herren,” / „Mit freundlichen Grüßen”.",
+      "Nyelvi változatosság (B2): szenvedő szerkezet (werden … angeboten), vonatkozó mellékmondat elöljáróval (in der … lief), „obwohl” + Plusquamperfekt, okhatározói „Da …” mellékmondat, birtokos eset (während unseres gesamten Aufenthalts, die Hälfte des Zimmerpreises).",
+      "Szövegalkotás: a „jedoch”, „Außerdem”, „Auch” és „Da …” kötőelemek logikusan építik fel a panaszt a tényektől az elvárásig.",
+      "Érdemes megtanulni: „Leider muss ich mich über … beschweren”, „obwohl wir das … gemeldet hatten”, „Ich bitte Sie, mir bis … mitzuteilen”, „die Angelegenheit regeln”."
+    ]
+  }
+}

@@ -1,0 +1,88 @@
+{
+  "schemaVersion": 1,
+  "id": "kem-wr-emelt-alkohol-kepletmeghatarozas",
+  "subject": "kemia",
+  "revision": 1,
+  "level": "emelt",
+  "source": "generated",
+  "topic": "oxigen-nitrogen-vegyuletek",
+  "title": "Ismeretlen alkohol képletének meghatározása égetéssel",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "writing",
+  "type": "szamitasi",
+  "taskNumber": 1,
+  "situation": "Egy szén, hidrogén és oxigén alkotta, szobahőmérsékleten folyékony szerves vegyület 1,48 g-ját tökéletesen elégetve 3,52 g szén-dioxid és 1,80 g víz keletkezett. A vegyület gőzének hidrogéngázra vonatkoztatott relatív sűrűsége azonos hőmérsékleten és nyomáson 37,0.\n\na) Határozza meg a vegyület tapasztalati képletét! (4 pont)\nb) Határozza meg a vegyület molekulaképletét! (2 pont)\nc) A vegyület fémnátriummal hidrogéngázt fejleszt, réz(II)-oxiddal hevítve pedig ketonná oxidálódik. Adja meg a vegyület nevét és konstitúciós képletét, és írja fel a réz(II)-oxiddal lejátszódó reakció egyenletét! (4 pont)\nd) Hány cm³ standardállapotú hidrogéngáz fejlődik 1,48 g vegyületből fölös mennyiségű nátriummal? (2 pont)\n\nAdatok: Ar(H) = 1,0; Ar(C) = 12,0; Ar(O) = 16,0; Vm = 24,5 dm³/mol (standardállapot).",
+  "points": [
+    {
+      "id": "p1",
+      "text": "a) A tapasztalati képlet meghatározása az égéstermékekből, az oxigén tömege különbségként (4 pont)"
+    },
+    {
+      "id": "p2",
+      "text": "b) A moláris tömeg a relatív sűrűségből, a molekulaképlet (2 pont)"
+    },
+    {
+      "id": "p3",
+      "text": "c) A vegyület azonosítása (név, konstitúciós képlet) és az oxidáció egyenlete (4 pont)"
+    },
+    {
+      "id": "p4",
+      "text": "d) A nátriummal fejlődő hidrogén térfogata (2 pont)"
+    }
+  ],
+  "suggestedMinutes": 30,
+  "usefulPhrases": [
+    {
+      "en": "n(C) = n(CO₂); n(H) = 2 · n(H₂O)",
+      "hu": "Égetéses elemanalízis: minden szén CO₂-ba, minden hidrogén vízbe kerül."
+    },
+    {
+      "en": "m(O) = m(minta) − m(C) − m(H)",
+      "hu": "A vegyület oxigéntartalmát különbségként kapjuk."
+    },
+    {
+      "en": "M = ρrel · M(viszonyító gáz)",
+      "hu": "Relatív sűrűségből a moláris tömeg (Avogadro-törvény)."
+    },
+    {
+      "en": "CₙH₂ₙ₊₂O",
+      "hu": "Telített egyértékű alkoholok és éterek általános képlete."
+    },
+    {
+      "en": "primer → aldehid, szekunder → keton, tercier → nem oxidálódik",
+      "hu": "Az alkoholok enyhe oxidációja (CuO) – az izomer azonosításának kulcsa."
+    },
+    {
+      "en": "2 ROH + 2 Na → 2 RONa + H₂",
+      "hu": "Két mol alkoholból egy mol hidrogén fejlődik."
+    }
+  ],
+  "checklistExtra": [],
+  "modelAnswer": {
+    "text": "a) A szén teljes mennyisége a szén-dioxidba, a hidrogéné a vízbe kerül:\nn(C) = n(CO₂) = 3,52 g / 44,0 g/mol = 0,0800 mol → m(C) = 0,0800 mol · 12,0 g/mol = 0,960 g\nn(H) = 2 · n(H₂O) = 2 · 1,80 g / 18,0 g/mol = 0,200 mol → m(H) = 0,200 mol · 1,0 g/mol = 0,200 g\nAz oxigén tömegét a különbségből kapjuk (az égéshez felhasznált oxigén nem számít bele): m(O) = 1,48 g − 0,960 g − 0,200 g = 0,320 g → n(O) = 0,320 g / 16,0 g/mol = 0,0200 mol\nAz anyagmennyiség-arány: n(C) : n(H) : n(O) = 0,0800 : 0,200 : 0,0200 = 4 : 10 : 1\nA vegyület tapasztalati képlete: C₄H₁₀O.\n\nb) A relatív sűrűségből a moláris tömeg: M = 37,0 · M(H₂) = 37,0 · 2,0 g/mol = 74,0 g/mol.\nA tapasztalati képlet moláris tömege M(C₄H₁₀O) = 4 · 12,0 + 10 · 1,0 + 16,0 = 74,0 g/mol, tehát a molekulaképlet megegyezik a tapasztalati képlettel: C₄H₁₀O.\n\nc) A nátriummal való hidrogénfejlődés hidroxilcsoportra utal; a C₄H₁₀O a CₙH₂ₙ₊₂O általános képletnek felel meg, tehát a vegyület telített, nyílt láncú, egyértékű alkohol. A ketonná oxidálódás azt mutatja, hogy szekunder alkohol; a négy szénatomos alkoholok közül egyetlen szekunder van: a bután-2-ol.\nKonstitúciós képlete: CH₃–CH(OH)–CH₂–CH₃\nOxidációja réz(II)-oxiddal: CH₃–CH(OH)–CH₂–CH₃ + CuO → CH₃–CO–CH₂–CH₃ + Cu + H₂O\nA termék a butanon (etil-metil-keton), a fekete réz(II)-oxid pedig vörös fémrézzé redukálódik.\n\nd) 2 C₄H₉OH + 2 Na → 2 C₄H₉ONa + H₂\nn(alkohol) = 1,48 g / 74,0 g/mol = 0,0200 mol → n(H₂) = 0,0200 mol / 2 = 0,0100 mol\nV(H₂) = 0,0100 mol · 24,5 dm³/mol = 0,245 dm³ = 245 cm³\nFölös nátriummal 245 cm³ standardállapotú hidrogéngáz fejlődik.",
+    "pointsCovered": [
+      {
+        "id": "p1",
+        "quote": "n(C) : n(H) : n(O) = 0,0800 : 0,200 : 0,0200 = 4 : 10 : 1"
+      },
+      {
+        "id": "p2",
+        "quote": "M = 37,0 · M(H₂) = 37,0 · 2,0 g/mol = 74,0 g/mol"
+      },
+      {
+        "id": "p3",
+        "quote": "CH₃–CH(OH)–CH₂–CH₃ + CuO → CH₃–CO–CH₂–CH₃ + Cu + H₂O"
+      },
+      {
+        "id": "p4",
+        "quote": "V(H₂) = 0,0100 mol · 24,5 dm³/mol = 0,245 dm³ = 245 cm³"
+      }
+    ],
+    "notes": [
+      "Eredmény: helyes a tapasztalati és a molekulaképlet (C₄H₁₀O), a vegyület azonosítása (bután-2-ol) és a hidrogén térfogata (245 cm³).",
+      "Indoklás: kimondja az elemanalízis elvét, az oxigént különbségként számolja, és a két kísérleti adatból (Na → –OH; CuO → keton) logikusan zárja ki a többi C₄H₁₀O-izomert – ez az emelt szintű gondolatmenet lényege.",
+      "Forma: mértékegységek végig kiírva, a dm³ → cm³ átváltás jelölve, minden részfeladat mondatos válasszal zárul; az egyenletek rendezettek."
+    ]
+  }
+}

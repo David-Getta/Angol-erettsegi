@@ -1,0 +1,95 @@
+{
+  "schemaVersion": 1,
+  "id": "tor-sp-kozep-gorog-perzsa-haboruk",
+  "subject": "tortenelem",
+  "revision": 1,
+  "level": "kozep",
+  "source": "generated",
+  "topic": "okor",
+  "title": "A görög–perzsa háborúk",
+  "createdAt": "2026-11-05",
+  "tags": [
+    "egyetemes"
+  ],
+  "section": "speaking",
+  "type": "tetel",
+  "partNumber": 1,
+  "instructionsHu": "Mutassa be a források segítségével a görög–perzsa háborúk okait, főbb csatáit, a görög győzelem okait és a háború következményeit! A felkészülési idő 30 perc; használhatja a kronológia nélküli történelmi atlaszt. A felelet során a forrásokra hivatkozzon, és fűzzön hozzájuk saját ismeretet!",
+  "prompts": [
+    "A háború okai és résztvevői",
+    "A főbb csaták (I., II. forrás, atlasz)",
+    "A görög győzelem okai",
+    "A háború következményei, Athén felemelkedése (III. forrás)"
+  ],
+  "followUpQuestions": [
+    "Hogyan vezetett a déloszi szövetség a peloponnészoszi háborúhoz?"
+  ],
+  "usefulPhrases": [
+    {
+      "en": "hoplita",
+      "hu": "nehézfegyverzetű görög gyalogos katona"
+    },
+    {
+      "en": "falanx",
+      "hu": "a hopliták zárt, többsoros harcrendje"
+    },
+    {
+      "en": "triérész",
+      "hu": "háromevezősoros görög hadihajó"
+    },
+    {
+      "en": "déloszi szövetség",
+      "hu": "Athén vezette görög tengeri szövetség (Kr. e. 478/477)"
+    },
+    {
+      "en": "hegemónia",
+      "hu": "egy állam vezető, uralkodó szerepe egy szövetségen belül"
+    }
+  ],
+  "sources": [
+    {
+      "title": "I. forrás – Egy görög történetíró stílusában (a gyakorlás céljára írt szöveg)",
+      "text": "„Az athéniak Marathónnál nem várták meg, hogy a perzsák lovassága felálljon: futva rohantak az ellenségre, és a hajókig szorították őket. Ezen a napon a kis város legyőzte a nagy birodalom seregét.”"
+    },
+    {
+      "title": "II. forrás – Térképvázlat leírása",
+      "text": "A térkép a Kr. e. 480-as perzsa hadjárat útvonalát mutatja: a sereg Kis-Ázsiából hajóhídon kel át a Hellészpontoszon, Trákián és Thesszálián át dél felé vonul; a Thermopülai-szorosnál szárazföldi, az Artemiszion-foknál tengeri ütközet; Athén elfoglalása; tengeri csata a Szalamisz-szigetnél."
+    },
+    {
+      "title": "III. forrás – Leírás",
+      "text": "A háború után, Kr. e. 478/477-ben Athén vezetésével létrejött a déloszi szövetség; a tagok hajókat vagy pénzt adtak a közös flottára, a szövetségi kincstárat később Athénba vitték."
+    }
+  ],
+  "keyPoints": [
+    "Ok: a Perzsa Birodalom terjeszkedése; a kis-ázsiai görög városok (Milétosz) felkelése Kr. e. 499–494 között, amelyet Athén is támogatott.",
+    "Kr. e. 490: marathóni csata, Miltiadész vezetésével a hoplita falanx győzelme.",
+    "Kr. e. 480: Thermopülai (Leonidász és a spártaiak), Szalamisz (Themisztoklész, az athéni flotta győzelme).",
+    "Kr. e. 479: plataiai szárazföldi győzelem.",
+    "A győzelem okai: a hoplita falanx, az athéni triérészek, a terep kihasználása, a szabadságukat védő polgárok.",
+    "Következmény: déloszi szövetség, athéni tengeri hatalom; a flottában evező szegény polgárok súlya nő – a demokrácia kiteljesedése."
+  ],
+  "speakingSeconds": 600,
+  "prepSeconds": 1800,
+  "sampleAnswer": {
+    "turns": [
+      {
+        "speaker": "candidate",
+        "text": "A tételem a görög–perzsa háborúk. A Kr. e. 6. században a Perzsa Birodalom meghódította a kis-ázsiai görög városokat. Kr. e. 499-ben Milétosz vezetésével ezek fellázadtak, és Athén hajókat küldött a segítségükre. A felkelés leverése után a perzsa király meg akarta büntetni Athént, ez lett a háború oka.\n\nAz I. forrás a Kr. e. 490-es marathóni csatát írja le. A forrás szerint az athéniak futva rohantak a perzsákra, mielőtt a lovasság felállt volna. Ebből arra következtetek, hogy a nehézfegyverzetű hopliták zárt falanxa közelharcban erősebb volt a perzsa íjászoknál; a győzelmet Miltiadész vezette.\n\nA II. forrás térképe szerint Kr. e. 480-ban Xerxész hatalmas serege a Hellészpontoszon át, észak felől támadt. A Thermopülai-szorosban Leonidász spártai király kis sereggel feltartóztatta, de végül elesett, a perzsák elfoglalták Athént. A döntő ütközet Szalamisznál volt, ahol Themisztoklész flottája a szűk tengerszorosban legyőzte a perzsa hajóhadat. Kr. e. 479-ben Plataiainál a szárazföldön is győztek a görögök.\n\nA győzelem oka a hoplita harcmodor, az athéni flotta, a terep kihasználása, és az, hogy a görögök a szabadságukat védték.\n\nA III. forrás szerint a háború után Athén vezetésével létrejött a déloszi szövetség. A kincstár Athénba kerülése azt mutatja, hogy a szövetség Athén tengeri birodalmává vált. Mivel a flottában a szegény polgárok eveztek, nőtt a politikai súlyuk, ez segítette a demokrácia kiteljesedését Periklész korában."
+      },
+      {
+        "speaker": "examiner",
+        "text": "Hogyan vezetett a déloszi szövetség a peloponnészoszi háborúhoz?"
+      },
+      {
+        "speaker": "candidate",
+        "text": "Athén megerősödése és a szövetségesek feletti uralma aggasztotta Spártát és a peloponnészoszi szövetséget. A két hatalom versengése Kr. e. 431-ben háborúhoz vezetett, amelyet végül Spárta nyert meg Kr. e. 404-ben."
+      }
+    ],
+    "notes": [
+      "Tájékozódás: évszámok (Kr. e. 499, 490, 480, 479, 478/477) és helyszínek (Milétosz, Marathón, Hellészpontosz, Thermopülai, Szalamisz, Plataiai) pontosan szerepelnek.",
+      "Forráshasználat: mindhárom forráshoz következtetés kapcsolódik (a falanx fölénye; a térkép alapján a hadjárat útja; a kincstár áthelyezése Athén hegemóniáját mutatja).",
+      "Történelmi gondolkodás: a háború okát (felkelés, Athén segítsége) és következményeit (déloszi szövetség, a thészek politikai súlya, demokrácia) is feltárja, a kiegészítő kérdésnél a hosszú távú következményt is.",
+      "Kommunikáció: szakkifejezések (hoplita, falanx, triérész, déloszi szövetség, hegemónia), logikus, időrendi szerkezet."
+    ]
+  }
+}

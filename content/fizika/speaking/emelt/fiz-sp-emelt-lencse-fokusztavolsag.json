@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "fiz-sp-emelt-lencse-fokusztavolsag",
+  "subject": "fizika",
+  "revision": 1,
+  "level": "emelt",
+  "source": "generated",
+  "topic": "hullamok-feny",
+  "title": "Lencsék képalkotása – a gyűjtőlencse fókusztávolságának mérése",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "speaking",
+  "type": "tetel",
+  "partNumber": 1,
+  "instructionsHu": "Fejtsd ki a vékony lencsék képalkotását (nevezetes sugármenetek, leképezési törvény, nagyítás, dioptria, a kép jellege a tárgytávolságtól függően) és optikai eszközökben való alkalmazásukat! Ezután mérd meg egy gyűjtőlencse fókusztávolságát a tárgy- és képtávolság mérésével, legalább három tárgytávolságnál, és becsüld meg a mérés hibáját!",
+  "prompts": [
+    "A gyűjtő- és a szórólencse, a fókuszpont, a fókusztávolság és a dioptria",
+    "A nevezetes sugármenetek és a képszerkesztés; valódi és látszólagos kép",
+    "A leképezési törvény (1/f = 1/t + 1/k) és a nagyítás (N = k/t); a kép jellege a tárgytávolság függvényében",
+    "Alkalmazások: az emberi szem és a szemüveg, fényképezőgép, vetítő, nagyító",
+    "A fókusztávolság mérése, a hibaforrások és a hibabecslés"
+  ],
+  "sources": [
+    {
+      "title": "Mérés: gyűjtőlencse fókusztávolsága",
+      "text": "Eszközök: optikai pad mérőskálával, ismeretlen fókusztávolságú gyűjtőlencse tartóban, tárgyként megvilágított ábra (pl. „F” betű egy lámpa előtt), fehér ernyő.\nMenet: állítsd a tárgyat a lencsétől rendre kb. 15, 20 és 30 cm-re! Mindegyik esetben mozgasd az ernyőt addig, amíg rajta éles kép jelenik meg, és olvasd le a képtávolságot! Az élesség határait (ahol a kép éppen elmosódni kezd) is jegyezd fel! Számítsd ki minden mérésre f = t·k/(t + k) értékét!\nVárt tapasztalat: valódi, fordított állású kép; t ≈ 2f esetén a kép a tárggyal azonos nagyságú. A számított f értékek egyeznek (kb. 10 cm)."
+    }
+  ],
+  "keyPoints": [
+    "A gyűjtőlencse az optikai tengellyel párhuzamos sugarakat a fókuszpontban gyűjti össze; a szórólencse után a sugarak meghosszabbítása megy át a fókuszon. A dioptria D = 1/f (f méterben).",
+    "Nevezetes sugarak: a tengellyel párhuzamos sugár a fókuszon át, a fókuszon átmenő a tengellyel párhuzamosan, az optikai középponton átmenő irányváltozás nélkül halad.",
+    "Leképezési törvény: 1/f = 1/t + 1/k; nagyítás N = K/T = k/t; látszólagos képnél k negatív.",
+    "Gyűjtőlencsénél t > 2f: kicsinyített valódi kép (fényképezőgép, szem); f < t < 2f: nagyított valódi kép (vetítő); t < f: nagyított, egyenes állású látszólagos kép (nagyító).",
+    "A szem lencséje akkomodációval változtatja a fókusztávolságát; rövidlátásnál szórólencse, távollátásnál gyűjtőlencse korrigál.",
+    "A mérés eredménye f = t·k/(t + k) értékeinek átlaga; a fő hibaforrás az éles kép helyének bizonytalansága (élességi tartomány)."
+  ],
+  "speakingSeconds": 1200,
+  "prepSeconds": 1800,
+  "sampleAnswer": {
+    "turns": [
+      {
+        "speaker": "candidate",
+        "text": "A tételem a lencsék képalkotása. A lencse két, legalább egyik oldalán gömbfelülettel határolt átlátszó test, amelyben a fény kétszer törik meg. A gyűjtőlencse közepe vastagabb; az optikai tengellyel párhuzamosan érkező sugarakat a fókuszpontban gyűjti össze. A szórólencse közepe vékonyabb, a párhuzamos sugarakat széttartóvá teszi, és a megtört sugarak meghosszabbításai mennek át a fókuszponton. A fókusztávolság reciproka a dioptria: D = 1/f, például egy 10 cm-es gyűjtőlencse +10 dioptriás.\nA kép szerkesztéséhez három nevezetes sugarat használunk: a tengellyel párhuzamos sugár a túloldali fókuszon át halad tovább, a fókuszon át érkező sugár a tengellyel párhuzamosan lép ki, az optikai középponton átmenő sugár pedig irányváltozás nélkül halad át. A tárgytávolság, a képtávolság és a fókusztávolság kapcsolatát a leképezési törvény adja: 1/f = 1/t + 1/k, a nagyítás N = k/t. Ha a tárgy a kétszeres fókusztávolságon kívül van, a kép valódi, fordított és kicsinyített – így működik a fényképezőgép és a szemünk. Ha a tárgy f és 2f között van, a kép valódi, fordított és nagyított, mint a vetítőnél. Ha a tárgy a fókuszon belül van, látszólagos, egyenes állású, nagyított képet kapunk: ez a nagyító. A szemünk lencséje akkomodációval változtatja a fókusztávolságát; a rövidlátó szem a távoli tárgyak képét a retina elé vetíti, ezt szórólencsével, a távollátást gyűjtőlencsével korrigálják.\nA mérésben az optikai padon 15, 20 és 30 cm-es tárgytávolságnál kerestem meg az éles képet. A képtávolság 30,2 cm, 19,8 cm és 15,1 cm volt. Ebből f = t·k/(t + k) szerint 10,0 cm, 9,95 cm és 10,0 cm adódott, az átlag kb. 10,0 cm, vagyis a lencse kb. +10 dioptriás. 20 cm-nél a kép a tárggyal azonos nagyságú volt, ami egyezik azzal, hogy t = 2f esetén k = 2f és N = 1. A legnagyobb bizonytalanságot az éles kép helyének megtalálása okozta: az ernyőt kb. ±0,5 cm-es tartományban mozgatva a kép élesnek tűnt. Ezt figyelembe véve f bizonytalansága kb. ±0,2 cm, tehát f = (10,0 ± 0,2) cm."
+      },
+      {
+        "speaker": "examiner",
+        "text": "Miért nem tudtál a 8 cm-es tárgytávolságnál képet fogni az ernyőn?"
+      },
+      {
+        "speaker": "candidate",
+        "text": "Mert 8 cm kisebb a 10 cm-es fókusztávolságnál, ilyenkor a lencse után a sugarak széttartanak, és csak a meghosszabbításuk metszi egymást. Ez látszólagos kép, a tárgy oldalán, 1/k = 1/10 − 1/8 alapján k = −40 cm-nél; ernyőn nem fogható fel, csak a lencsén át nézve látható, ötszörös nagyítással."
+      }
+    ],
+    "notes": [
+      "A tartalmi rész lefedi a lencsetípusokat, a dioptriát, a nevezetes sugármeneteket, a leképezési törvényt és a kép jellegét mindhárom tárgytávolság-tartományban, alkalmazásokkal (fényképezőgép, vetítő, nagyító, szem és szemüveg).",
+      "A mérés kiértékelése teljes: három mérési pont, f kiszámítása mindegyikből, átlag, független ellenőrzés (t = 2f-nél N = 1), és az élességi tartományból számszerű hibabecslés.",
+      "A vizsgáztató kérdésére a leképezési törvénnyel számszerűen is megindokolja a látszólagos képet (k = −40 cm, N = 5), ami a törvény biztos alkalmazását mutatja."
+    ]
+  }
+}

@@ -1,0 +1,219 @@
+{
+  "schemaVersion": 1,
+  "id": "fiz-vc-kozep-mozgas-egyensuly",
+  "subject": "fizika",
+  "revision": 1,
+  "level": "kozep",
+  "source": "generated",
+  "topic": "mozgas-egyensuly",
+  "title": "Mechanika – alapfogalmak és törvények",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "vocabulary",
+  "type": "deck",
+  "cards": [
+    {
+      "term": "elmozdulás",
+      "meaning": "A kezdőpontból a végpontba mutató vektor; nagysága nem feltétlenül egyenlő a megtett úttal.",
+      "pos": "n",
+      "example": "Egy kört megtevő futó elmozdulása nulla, a megtett útja viszont 400 m.",
+      "collocation": "Δr (m)"
+    },
+    {
+      "term": "pálya",
+      "meaning": "Az a vonal, amelyen a test a mozgása során végighalad.",
+      "pos": "n",
+      "example": "A vízszintesen elhajított kő pályája parabola."
+    },
+    {
+      "term": "átlagsebesség",
+      "meaning": "A teljes megtett út és a megtételéhez szükséges teljes idő hányadosa.",
+      "pos": "n",
+      "example": "Az átlagsebesség 60 km/h, ha 2 óra alatt 120 km-t tettünk meg, bárhogy is változott közben a tempó.",
+      "collocation": "v_átl = s_össz / t_össz"
+    },
+    {
+      "term": "pillanatnyi sebesség",
+      "meaning": "A test sebessége egy adott időpillanatban: nagyon rövid idő alatti elmozdulás és az idő hányadosa; iránya a pálya érintője.",
+      "pos": "n",
+      "example": "Az autó sebességmérője a pillanatnyi sebességet mutatja."
+    },
+    {
+      "term": "gyorsulás",
+      "meaning": "A sebességváltozás és a közben eltelt idő hányadosa; vektormennyiség.",
+      "pos": "n",
+      "example": "A szabadon eső test gyorsulása kb. 9,81 m/s², függetlenül a tömegétől.",
+      "collocation": "a = Δv/Δt (m/s²)"
+    },
+    {
+      "term": "egyenletes mozgás",
+      "meaning": "Egyenes vonalú mozgás, amelyben a test egyenlő időközök alatt egyenlő utakat tesz meg; sebessége állandó.",
+      "pos": "n",
+      "example": "Egyenletes mozgásnál az út–idő grafikon origón átmenő egyenes.",
+      "collocation": "s = v·t"
+    },
+    {
+      "term": "egyenletesen gyorsuló mozgás",
+      "meaning": "Mozgás állandó gyorsulással: a sebesség egyenlő időközök alatt egyenlő mértékben nő.",
+      "pos": "n",
+      "example": "Az egyenletesen gyorsuló mozgás útja nyugalomból indulva az idő négyzetével arányos.",
+      "collocation": "s = (a/2)·t², v = a·t"
+    },
+    {
+      "term": "szabadesés",
+      "meaning": "Kezdősebesség nélküli esés kizárólag a nehézségi erő hatására (légellenállás nélkül).",
+      "pos": "n",
+      "example": "Szabadesésnél a test sebessége másodpercenként kb. 10 m/s-mal nő.",
+      "collocation": "h = (g/2)·t²"
+    },
+    {
+      "term": "nehézségi gyorsulás",
+      "meaning": "Az a gyorsulás, amellyel a testek a Föld felszíne közelében légellenállás nélkül esnek.",
+      "pos": "n",
+      "example": "A nehézségi gyorsulás értéke Magyarországon kb. 9,81 m/s².",
+      "collocation": "g ≈ 9,81 m/s²"
+    },
+    {
+      "term": "tehetetlenség",
+      "meaning": "A testek azon tulajdonsága, hogy megtartják mozgásállapotukat, amíg más test nem hat rájuk.",
+      "pos": "n",
+      "example": "A tehetetlenség miatt dőlünk előre, amikor a busz hirtelen fékez."
+    },
+    {
+      "term": "tömeg",
+      "meaning": "A test tehetetlenségének (és gravitációs vonzásának) mértéke; skalár alapmennyiség, mértékegysége a kilogramm.",
+      "pos": "n",
+      "example": "Az űrhajós tömege a Holdon is 70 kg, csak a súlya kisebb.",
+      "collocation": "m (kg)"
+    },
+    {
+      "term": "erő",
+      "meaning": "Két test kölcsönhatásának mértéke, amely a test mozgásállapotát vagy alakját megváltoztatja; vektormennyiség.",
+      "pos": "n",
+      "example": "Az erő mértékegysége a newton: 1 N az az erő, amely 1 kg tömegű testet 1 m/s² gyorsulással gyorsít.",
+      "collocation": "F (N)"
+    },
+    {
+      "term": "eredő erő",
+      "meaning": "Az a vektor, amely a testre ható összes erő együttes hatását helyettesíti (az erők vektori összege).",
+      "pos": "n",
+      "example": "Ha az eredő erő nulla, a test nyugalomban marad vagy egyenletesen mozog.",
+      "collocation": "ΣF"
+    },
+    {
+      "term": "Newton I. törvénye",
+      "meaning": "A tehetetlenség törvénye: minden test megtartja nyugalmi állapotát vagy egyenes vonalú egyenletes mozgását, amíg más test nem hat rá.",
+      "pos": "n",
+      "example": "Newton I. törvénye szerint a súrlódás nélküli jégen meglökött korong egyenletesen csúszna tovább."
+    },
+    {
+      "term": "Newton II. törvénye",
+      "meaning": "A dinamika alaptörvénye: a test gyorsulása egyenesen arányos a rá ható eredő erővel és fordítottan a tömegével.",
+      "pos": "n",
+      "example": "Newton II. törvénye alapján 6 N eredő erő egy 2 kg-os testet 3 m/s²-tel gyorsít.",
+      "collocation": "F = m·a"
+    },
+    {
+      "term": "Newton III. törvénye",
+      "meaning": "A hatás–ellenhatás törvénye: két test kölcsönhatásában az erők egyenlő nagyságúak, ellentétes irányúak, és két különböző testre hatnak.",
+      "pos": "n",
+      "example": "Newton III. törvénye magyarázza, miért lök hátra a puska elsütéskor."
+    },
+    {
+      "term": "súly",
+      "meaning": "Az az erő, amellyel a test az alátámasztást nyomja vagy a felfüggesztést húzza; nyugalomban egyenlő a nehézségi erővel.",
+      "pos": "n",
+      "example": "Egy 50 kg-os diák súlya a Földön kb. 500 N.",
+      "collocation": "G = m·g (nyugalomban)"
+    },
+    {
+      "term": "súrlódási erő",
+      "meaning": "Az érintkező felületek között fellépő, a relatív elmozdulást (vagy annak megindulását) akadályozó erő.",
+      "pos": "n",
+      "example": "A csúszási súrlódási erő arányos a felületeket összenyomó erővel.",
+      "collocation": "F_s = μ·F_ny"
+    },
+    {
+      "term": "rugalmas erő",
+      "meaning": "Az alakváltozást szenvedett rugalmas test által kifejtett, az alakváltozással arányos erő.",
+      "pos": "n",
+      "example": "A rugalmas erő a rugó megnyúlásával arányos, és a nyújtással ellentétes irányú.",
+      "collocation": "F = −D·Δl"
+    },
+    {
+      "term": "lendület",
+      "meaning": "A test tömegének és sebességének szorzata; vektormennyiség, iránya a sebességé (más néven impulzus).",
+      "pos": "n",
+      "example": "A 0,5 kg-os, 10 m/s-mal repülő labda lendülete 5 kg·m/s.",
+      "collocation": "I = m·v (kg·m/s)"
+    },
+    {
+      "term": "lendületmegmaradás",
+      "meaning": "Zárt rendszerben (külső erők nélkül) a testek lendületének vektori összege állandó.",
+      "pos": "n",
+      "example": "A lendületmegmaradás miatt hátrál a csónak, amikor kiugrunk belőle.",
+      "collocation": "Σm·v = állandó"
+    },
+    {
+      "term": "egyenletes körmozgás",
+      "meaning": "Körpályán állandó nagyságú sebességgel végzett mozgás; a sebesség iránya folyamatosan változik.",
+      "pos": "n",
+      "example": "Az egyenletes körmozgásnál a gyorsulás mindig a kör középpontja felé mutat.",
+      "collocation": "v = 2πr/T"
+    },
+    {
+      "term": "centripetális erő",
+      "meaning": "A körpályán tartáshoz szükséges, a kör középpontja felé mutató eredő erő.",
+      "pos": "n",
+      "example": "A kanyarodó autónál a centripetális erőt a kerekekre ható tapadási súrlódás adja.",
+      "collocation": "F_cp = m·v²/r"
+    },
+    {
+      "term": "periódusidő",
+      "meaning": "Az egy teljes kör (rezgés, fordulat) megtételéhez szükséges idő.",
+      "pos": "n",
+      "example": "A Föld tengely körüli forgásának periódusideje kb. 24 óra.",
+      "collocation": "T (s), f = 1/T"
+    },
+    {
+      "term": "forgatónyomaték",
+      "meaning": "Az erő forgató hatásának mértéke: az erő és az erőkar (a forgástengely és az erő hatásvonala távolságának) szorzata.",
+      "pos": "n",
+      "example": "A hosszabb csavarkulccsal ugyanakkora erővel nagyobb forgatónyomatékot fejtünk ki.",
+      "collocation": "M = F·k (N·m)"
+    },
+    {
+      "term": "egyensúly feltétele",
+      "meaning": "Merev test akkor van egyensúlyban, ha a rá ható erők eredője és a forgatónyomatékok összege is nulla.",
+      "pos": "n",
+      "example": "Az emelő egyensúly feltétele, hogy a két oldalon egyenlő legyen a forgatónyomaték.",
+      "collocation": "ΣF = 0, ΣM = 0"
+    },
+    {
+      "term": "tömegközéppont",
+      "meaning": "Az a pont, amelyben a test tömegét koncentráltnak képzelhetjük; homogén szimmetrikus testnél a szimmetria középpontja.",
+      "pos": "n",
+      "example": "Az alátámasztott test akkor stabil, ha a tömegközéppont függőlegese az alátámasztási felületen belül esik."
+    },
+    {
+      "term": "egyszerű gép",
+      "meaning": "Erő nagyságát vagy irányát megváltoztató eszköz (emelő, csiga, lejtő, ék, csavar); munkát nem takarít meg.",
+      "pos": "n",
+      "example": "Az egyszerű gép, például a lejtő, kisebb erővel, de hosszabb úton emeli a terhet."
+    },
+    {
+      "term": "gravitációs erő",
+      "meaning": "Bármely két test között ható vonzóerő, amely a tömegek szorzatával arányos és a távolság négyzetével fordítottan arányos.",
+      "pos": "n",
+      "example": "A Holdat a Föld gravitációs ereje tartja körpályán.",
+      "collocation": "F = γ·m₁·m₂/r²"
+    },
+    {
+      "term": "harmonikus rezgőmozgás",
+      "meaning": "Olyan rezgés, amelynél a kitérés az idő szinuszos függvénye; a visszatérítő erő arányos a kitéréssel.",
+      "pos": "n",
+      "example": "A rugóra akasztott test kis kitérésnél harmonikus rezgőmozgást végez.",
+      "collocation": "T = 2π·√(m/D)"
+    }
+  ]
+}

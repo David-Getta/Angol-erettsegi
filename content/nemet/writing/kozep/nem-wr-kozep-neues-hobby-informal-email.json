@@ -1,6 +1,15 @@
 {
+  "schemaVersion": 1,
+  "id": "nem-wr-kozep-neues-hobby-informal-email",
+  "subject": "nemet",
+  "revision": 1,
+  "level": "kozep",
+  "source": "generated",
   "topic": "szabadido",
   "title": "Mein neues Hobby",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "writing",
   "type": "informal-email",
   "taskNumber": 1,
   "register": "informal",
@@ -8,28 +17,73 @@
   "situationHu": "A német levelezőtársad, Lisa e-mailt írt neked az új hobbidról. Válaszolj neki 80–100 szóban, és térj ki mindhárom szempontra.",
   "stimulus": "Hallo! Du hast in deiner letzten Nachricht geschrieben, dass du ein neues Hobby hast. Erzähl mal! Was machst du genau, und warum gefällt es dir so? Im Sommer komme ich ja für eine Woche nach Ungarn – vielleicht können wir dann etwas zusammen unternehmen? Liebe Grüße, Lisa",
   "points": [
-    { "id": "p1", "text": "Schreiben Sie, welches Hobby Sie haben und wie Sie dazu gekommen sind." },
-    { "id": "p2", "text": "Erklären Sie, warum Ihnen das Hobby gefällt." },
-    { "id": "p3", "text": "Machen Sie einen Vorschlag, was Sie im Sommer zusammen machen können." }
+    {
+      "id": "p1",
+      "text": "Schreiben Sie, welches Hobby Sie haben und wie Sie dazu gekommen sind."
+    },
+    {
+      "id": "p2",
+      "text": "Erklären Sie, warum Ihnen das Hobby gefällt."
+    },
+    {
+      "id": "p3",
+      "text": "Machen Sie einen Vorschlag, was Sie im Sommer zusammen machen können."
+    }
   ],
-  "wordLimit": { "min": 80, "max": 100 },
+  "wordLimit": {
+    "min": 80,
+    "max": 100
+  },
   "suggestedMinutes": 25,
   "usefulPhrases": [
-    { "en": "Danke für deine Nachricht!", "hu": "Köszi az üzenetedet!" },
-    { "en": "Seit Oktober gehe ich zweimal pro Woche …", "hu": "Október óta hetente kétszer járok …" },
-    { "en": "Mein Cousin hat mich einmal mitgenommen.", "hu": "Az unokatestvérem egyszer elvitt magával." },
-    { "en": "Ich bin total begeistert.", "hu": "Teljesen lelkes vagyok." },
-    { "en": "Es gefällt mir, weil …", "hu": "Azért tetszik, mert … (weil után az ige a végére kerül)" },
-    { "en": "Wenn du im Sommer kommst, gehen wir doch zusammen …", "hu": "Ha nyáron jössz, menjünk el együtt …" },
-    { "en": "Du brauchst keine Erfahrung.", "hu": "Nem kell hozzá tapasztalat." },
-    { "en": "Bis bald und liebe Grüße", "hu": "Hamarosan jelentkezz, sok szeretettel (baráti elköszönés)" }
+    {
+      "en": "Danke für deine Nachricht!",
+      "hu": "Köszi az üzenetedet!"
+    },
+    {
+      "en": "Seit Oktober gehe ich zweimal pro Woche …",
+      "hu": "Október óta hetente kétszer járok …"
+    },
+    {
+      "en": "Mein Cousin hat mich einmal mitgenommen.",
+      "hu": "Az unokatestvérem egyszer elvitt magával."
+    },
+    {
+      "en": "Ich bin total begeistert.",
+      "hu": "Teljesen lelkes vagyok."
+    },
+    {
+      "en": "Es gefällt mir, weil …",
+      "hu": "Azért tetszik, mert … (weil után az ige a végére kerül)"
+    },
+    {
+      "en": "Wenn du im Sommer kommst, gehen wir doch zusammen …",
+      "hu": "Ha nyáron jössz, menjünk el együtt …"
+    },
+    {
+      "en": "Du brauchst keine Erfahrung.",
+      "hu": "Nem kell hozzá tapasztalat."
+    },
+    {
+      "en": "Bis bald und liebe Grüße",
+      "hu": "Hamarosan jelentkezz, sok szeretettel (baráti elköszönés)"
+    }
   ],
   "modelAnswer": {
     "text": "Liebe Lisa,\n\ndanke für deine Nachricht! Seit Oktober gehe ich zweimal pro Woche in eine Kletterhalle in der Nähe unserer Schule. Mein Cousin hat mich einmal mitgenommen, und seitdem bin ich total begeistert.\n\nKlettern gefällt mir, weil man Kraft und Konzentration braucht. Nach einem langen Schultag kann ich dort alles vergessen. Außerdem habe ich in der Halle viele nette Leute kennengelernt.\n\nWenn du im Sommer kommst, gehen wir doch zusammen klettern! Du brauchst keine Erfahrung, denn die Trainer erklären alles.\n\nBis bald und liebe Grüße\nAnna",
     "pointsCovered": [
-      { "id": "p1", "quote": "Seit Oktober gehe ich zweimal pro Woche in eine Kletterhalle in der Nähe unserer Schule. Mein Cousin hat mich einmal mitgenommen, und seitdem bin ich total begeistert." },
-      { "id": "p2", "quote": "Klettern gefällt mir, weil man Kraft und Konzentration braucht." },
-      { "id": "p3", "quote": "Wenn du im Sommer kommst, gehen wir doch zusammen klettern!" }
+      {
+        "id": "p1",
+        "quote": "Seit Oktober gehe ich zweimal pro Woche in eine Kletterhalle in der Nähe unserer Schule. Mein Cousin hat mich einmal mitgenommen, und seitdem bin ich total begeistert."
+      },
+      {
+        "id": "p2",
+        "quote": "Klettern gefällt mir, weil man Kraft und Konzentration braucht."
+      },
+      {
+        "id": "p3",
+        "quote": "Wenn du im Sommer kommst, gehen wir doch zusammen klettern!"
+      }
     ],
     "notes": [
       "Feladat teljesítése: mindhárom szempont külön bekezdést kap – mi a hobbi és hogyan kezdődött, miért tetszik (két indok), végül konkrét javaslat a nyárra.",

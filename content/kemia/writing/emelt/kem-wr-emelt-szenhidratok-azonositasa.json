@@ -1,0 +1,96 @@
+{
+  "schemaVersion": 1,
+  "id": "kem-wr-emelt-szenhidratok-azonositasa",
+  "subject": "kemia",
+  "revision": 1,
+  "level": "emelt",
+  "source": "generated",
+  "topic": "biomolekulak-muanyagok",
+  "title": "Glükóz, szacharóz és keményítő megkülönböztetése",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "writing",
+  "type": "kiserletelemzo",
+  "taskNumber": 3,
+  "situation": "Három számozott kémcsőben, ismeretlen sorrendben glükóz-, szacharóz- és keményítőoldat van. Mindhárom oldat egy-egy részletéhez jód-kálium-jodid-oldatot (Lugol-oldatot) cseppentünk, egy másik részletükhöz frissen összeöntött Fehling-reagenst (Fehling I. + Fehling II.) adunk, és vízfürdőn melegítjük. Végül a szacharózoldat egy részletét kevés híg sósavval néhány percig forraljuk, lehűtés után nátrium-hidroxid-oldattal közömbösítjük, és ezzel is elvégezzük a Fehling-próbát.\n\na) Mit tapasztalunk a Lugol-oldat hozzáadásakor? Mi a jelenség oka? (2 pont)\nb) Mit tapasztalunk a Fehling-próba során a három oldatnál? (2 pont)\nc) Magyarázza meg a molekulaszerkezet alapján, miért adja a glükóz a Fehling-próbát, és miért nem adja a szacharóz! (3 pont)\nd) Írja fel a glükóz és a Fehling-reagens reakciójának egyszerűsített egyenletét, a glükózt R–CHO képlettel jelölve! (2 pont)\ne) Mit tapasztalunk a savval forralt szacharózoldat Fehling-próbájánál? Magyarázza meg, és írja fel a lejátszódó hidrolízis egyenletét! (3 pont)",
+  "points": [
+    {
+      "id": "p1",
+      "text": "a) A Lugol-próba tapasztalata és oka (2 pont)"
+    },
+    {
+      "id": "p2",
+      "text": "b) A Fehling-próba tapasztalata a három oldatnál (2 pont)"
+    },
+    {
+      "id": "p3",
+      "text": "c) A glükóz redukáló és a szacharóz nem redukáló jellegének szerkezeti magyarázata (3 pont)"
+    },
+    {
+      "id": "p4",
+      "text": "d) A Fehling-reakció egyszerűsített egyenlete (2 pont)"
+    },
+    {
+      "id": "p5",
+      "text": "e) A savas hidrolízis utáni Fehling-próba: tapasztalat, magyarázat, egyenlet (3 pont)"
+    }
+  ],
+  "suggestedMinutes": 30,
+  "usefulPhrases": [
+    {
+      "en": "Lugol-oldat + keményítő → sötétkék",
+      "hu": "A keményítő kimutatása: jód–amilóz zárványvegyület."
+    },
+    {
+      "en": "Fehling-próba: kék → téglavörös csapadék (Cu₂O)",
+      "hu": "Az aldehidcsoport (redukáló cukrok) kimutatása lúgos közegben, melegítéssel."
+    },
+    {
+      "en": "glikozidos hidroxilcsoport",
+      "hu": "A gyűrűs cukor 1. (fruktóznál 2.) szénatomjának OH-csoportja; ha szabad, a gyűrű felnyílhat."
+    },
+    {
+      "en": "redukáló / nem redukáló cukor",
+      "hu": "Glükóz, fruktóz, maltóz redukáló; szacharóz nem redukáló."
+    },
+    {
+      "en": "C₁₂H₂₂O₁₁ + H₂O → glükóz + fruktóz",
+      "hu": "A szacharóz savas hidrolízise (invertcukor)."
+    },
+    {
+      "en": "közömbösítés a próba előtt",
+      "hu": "A Fehling-reagens lúgos közegben hat, a savat előbb semlegesíteni kell."
+    }
+  ],
+  "checklistExtra": [],
+  "modelAnswer": {
+    "text": "a) Csak a keményítőoldat színeződik sötétkékre (kékes-ibolyára); a glükóz- és a szacharózoldatban a Lugol-oldat sárgásbarna színe megmarad. A jódmolekulák a keményítő amilóz-komponensének csavarvonalas (hélix) láncába épülnek be, és kék színű zárványvegyület keletkezik.\n\nb) A glükózoldatnál a kék színű reagensből téglavörös csapadék (réz(I)-oxid, Cu₂O) válik ki. A szacharóz- és a keményítőoldatnál nincs változás, a reagens kék színű marad.\n\nc) A glükóz vizes oldatában a gyűrűs (α- és β-) formák egyensúlyban vannak a kis mennyiségű nyílt láncú formával, amely aldehidcsoportot (formilcsoportot) tartalmaz. Ez az aldehidcsoport redukálja a réz(II)-ionokat, miközben maga karboxilcsoporttá (lúgos közegben karboxilátionná) oxidálódik. A szacharózban a glükóz- és a fruktózegység a glikozidos hidroxilcsoportjaival kapcsolódik össze (α-1,β-2-glikozidkötés), ezért egyik gyűrű sem tud felnyílni, nincs szabad glikozidos hidroxilcsoport, így aldehidcsoport sem alakulhat ki: a szacharóz nem redukáló cukor.\n\nd) R–CHO + 2 Cu(OH)₂ → R–COOH + Cu₂O + 2 H₂O\n(lúgos közegben ionosan: R–CHO + 2 Cu²⁺ + 5 OH⁻ → R–COO⁻ + Cu₂O + 3 H₂O)\n\ne) A savval forralt, majd közömbösített szacharózoldat a Fehling-próbánál téglavörös csapadékot ad. A sav katalizálja a szacharóz hidrolízisét: a glikozidkötés felhasad, és glükóz, valamint fruktóz keletkezik, a glükóz (és lúgos közegben a fruktóz is) pedig redukálja a Fehling-reagenst:\nC₁₂H₂₂O₁₁ + H₂O → C₆H₁₂O₆ (glükóz) + C₆H₁₂O₆ (fruktóz)\nA közömbösítésre azért van szükség, mert a Fehling-próba lúgos közegben működik; a sav elfogyasztaná a reagens lúgját.",
+    "pointsCovered": [
+      {
+        "id": "p1",
+        "quote": "Csak a keményítőoldat színeződik sötétkékre (kékes-ibolyára)"
+      },
+      {
+        "id": "p2",
+        "quote": "A glükózoldatnál a kék színű reagensből téglavörös csapadék (réz(I)-oxid, Cu₂O) válik ki."
+      },
+      {
+        "id": "p3",
+        "quote": "nincs szabad glikozidos hidroxilcsoport, így aldehidcsoport sem alakulhat ki: a szacharóz nem redukáló cukor."
+      },
+      {
+        "id": "p4",
+        "quote": "R–CHO + 2 Cu(OH)₂ → R–COOH + Cu₂O + 2 H₂O"
+      },
+      {
+        "id": "p5",
+        "quote": "C₁₂H₂₂O₁₁ + H₂O → C₆H₁₂O₆ (glükóz) + C₆H₁₂O₆ (fruktóz)"
+      }
+    ],
+    "notes": [
+      "Tapasztalatok: mindhárom próbánál mindhárom oldat eredményét megadja (a változás hiányát is), pontos színekkel és a csapadék nevével.",
+      "Magyarázat: részecskeszinten indokol (nyílt láncú forma, aldehidcsoport, glikozidos OH-csoportok összekapcsolódása), rendezett egyenletet ír, és megindokolja a közömbösítés szükségességét is.",
+      "Szaknyelv: formilcsoport, glikozidkötés, redukáló cukor, zárványvegyület – az emelt szintű szakszókincs pontos."
+    ]
+  }
+}

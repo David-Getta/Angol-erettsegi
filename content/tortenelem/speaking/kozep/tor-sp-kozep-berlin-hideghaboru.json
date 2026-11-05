@@ -1,0 +1,96 @@
+{
+  "schemaVersion": 1,
+  "id": "tor-sp-kozep-berlin-hideghaboru",
+  "subject": "tortenelem",
+  "revision": 1,
+  "level": "kozep",
+  "source": "generated",
+  "topic": "hideghaboru",
+  "title": "Berlin a hidegháborúban",
+  "createdAt": "2026-11-05",
+  "tags": [
+    "egyetemes"
+  ],
+  "section": "speaking",
+  "type": "tetel",
+  "partNumber": 1,
+  "instructionsHu": "Mutassa be a források segítségével Németország és Berlin megosztását, a berlini válságokat, a berlini fal felépítésének okait és a fal leomlásának következményeit! A felkészülési idő 30 perc; használhatja a kronológia nélküli történelmi atlaszt. A felelet során a forrásokra hivatkozzon, és fűzzön hozzájuk saját ismeretet!",
+  "prompts": [
+    "Németország és Berlin megosztása a háború után",
+    "Az első berlini válság (1948–49) és következményei (I. forrás)",
+    "A berlini fal felépítésének okai (II., III. forrás)",
+    "A fal leomlása és Németország egyesítése"
+  ],
+  "followUpQuestions": [
+    "Miért volt fontos Magyarország szerepe 1989-ben?"
+  ],
+  "usefulPhrases": [
+    {
+      "en": "megszállási övezet",
+      "hu": "a győztes nagyhatalmak által igazgatott terület Németországban 1945 után"
+    },
+    {
+      "en": "blokád",
+      "hu": "egy terület elzárása a külvilágtól (Berlin, 1948–49)"
+    },
+    {
+      "en": "légihíd",
+      "hu": "egy elzárt terület ellátása repülőgépekkel"
+    },
+    {
+      "en": "vasfüggöny",
+      "hu": "a kelet és nyugat közötti határzár és megosztottság jelképe"
+    },
+    {
+      "en": "újraegyesítés",
+      "hu": "a két német állam egyesülése 1990. október 3-án"
+    }
+  ],
+  "sources": [
+    {
+      "title": "I. forrás – Leírás és adat a berlini légihídról",
+      "text": "1948 júniusától 1949 májusáig a nyugati szövetségesek repülőgépekkel látták el Nyugat-Berlint, mert a szovjet hatóságok lezárták a városba vezető szárazföldi utakat; ezalatt több mint kétmillió tonna árut szállítottak."
+    },
+    {
+      "title": "II. forrás – Egy berlini lakos visszaemlékezése (a gyakorlás céljára írt szöveg)",
+      "text": "„1961. augusztus 13-án reggel szögesdrót és katonák zárták el az utcánkat. A nagynéném a túloldalon lakott; évekig csak messziről integethettünk egymásnak.”"
+    },
+    {
+      "title": "III. forrás – Adat",
+      "text": "1949 és 1961 között mintegy 2,7 millió ember menekült el a Német Demokratikus Köztársaságból nyugatra, nagyrészt Nyugat-Berlinen keresztül."
+    }
+  ],
+  "keyPoints": [
+    "A potsdami konferencia (1945) után Németország négy megszállási övezetre, Berlin négy szektorra oszlott.",
+    "1948: a nyugati övezetekben bevezetett pénzreformra válaszul szovjet blokád; a nyugatiak légihíddal látták el Nyugat-Berlint.",
+    "1949: létrejött az NSZK (május) és az NDK (október); megalakult a NATO.",
+    "1961. augusztus 13.: a berlini fal felépítése a tömeges menekülés megállítására.",
+    "A fal a vasfüggöny és a hidegháborús megosztottság jelképe lett.",
+    "1989: a magyar határnyitás (szeptember) után november 9-én leomlott a fal.",
+    "1990. október 3.: Németország újraegyesítése."
+  ],
+  "speakingSeconds": 600,
+  "prepSeconds": 1800,
+  "sampleAnswer": {
+    "turns": [
+      {
+        "speaker": "candidate",
+        "text": "A tételem Berlin a hidegháborúban. A második világháború után a győztes nagyhatalmak a potsdami konferencián Németországot négy megszállási övezetre osztották, és a szovjet övezet közepén fekvő Berlint is négy szektorra bontották.\n\nA nyugati övezetekben 1948-ban új pénzt vezettek be, erre Sztálin lezárta a Nyugat-Berlinbe vezető szárazföldi utakat. Az I. forrás szerint a nyugatiak közel egy évig repülőgépekkel látták el a várost, és több mint kétmillió tonna árut szállítottak. Ebből arra következtetek, hogy az Egyesült Államok bármi áron meg akarta tartani Nyugat-Berlint, mert a feladása a feltartóztatás politikájának kudarcát jelentette volna. A blokád nem érte el célját, 1949-ben létrejött a nyugati NSZK és a keleti NDK, és megalakult a NATO is.\n\nA III. forrás szerint 1949 és 1961 között mintegy 2,7 millió ember menekült el az NDK-ból. Ez azt mutatja, hogy a keletnémet állam elvesztette a fiatal, képzett munkaerőt, és a lakosság egy része elutasította a szocialista rendszert. A menekülés megállítására 1961. augusztus 13-án felhúzták a berlini falat. A II. forrás szerint a fal családokat választott el egymástól. A fal a vasfüggöny jelképe lett, a menekülni próbálók közül sokakat lelőttek.\n\nA nyolcvanas évek végén a Szovjetunió Gorbacsov alatt már nem védte erővel a kelet-európai rendszereket. 1989 szeptemberében Magyarország megnyitotta határát a keletnémet menekültek előtt, és november 9-én leomlott a berlini fal. 1990. október 3-án Németország újraegyesült, ami a hidegháború végét jelképezte."
+      },
+      {
+        "speaker": "examiner",
+        "text": "Miért volt fontos Magyarország szerepe 1989-ben?"
+      },
+      {
+        "speaker": "candidate",
+        "text": "Mert a magyar kormány 1989. szeptember 11-én engedte át az osztrák határon a keletnémet menekülteket. Ezzel rés nyílt a vasfüggönyön, a menekülés tömegessé vált, és ez gyorsította az NDK rendszerének összeomlását."
+      }
+    ],
+    "notes": [
+      "Tájékozódás: a felelet minden fordulópontot dátummal jelöl (1945, 1948–49, 1961. augusztus 13., 1989. november 9., 1990. október 3.), és a térbeli helyzetet (Berlin a szovjet övezet közepén) is értelmezi.",
+      "Forráshasználat: mindhárom forráshoz következtetés kapcsolódik (a légihíd az USA elkötelezettségét mutatja; a menekültek száma a rendszer elutasítását és a munkaerő-veszteséget; a visszaemlékezés a fal emberi következményeit).",
+      "Történelmi gondolkodás: okokat (pénzreform, menekültáradat, Gorbacsov politikája) és következményeket (két német állam, NATO, újraegyesítés) is feltár.",
+      "Kommunikáció: szakkifejezések (megszállási övezet, blokád, légihíd, feltartóztatás, vasfüggöny), időrendben tagolt felelet."
+    ]
+  }
+}

@@ -1,0 +1,183 @@
+{
+  "schemaVersion": 1,
+  "id": "nem-gr-false-friend",
+  "subject": "nemet",
+  "level": "kozep",
+  "source": "generated",
+  "topic": "nyelvtan",
+  "title": "Hamis barátok, jelentéskeverés",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "grammar",
+  "type": "lesson",
+  "category": "false-friend",
+  "summaryHu": "Hamis barátnak azokat a szavakat nevezzük, amelyek egy másik nyelv szavára hasonlítanak, de mást jelentenek. Mivel a legtöbb magyar diák az angolt is tanulja, a német–angol párok a legveszélyesebbek (bekommen = kap, nem become; wo = hol, nem who; will = akar, nem jövő idő), de vannak német–magyar csapdák is (Kollegium = tantestület, nem kollégium). Gyakori hibaforrás az is, ha egy magyar szónak több német felel meg (tud: können / wissen / kennen). Szövegértésben a félreértett szó rossz válaszhoz vezet, írásban és szóbelin pedig jelentéshiba.",
+  "rules": [
+    {
+      "title": "Német–angol hamis barátok",
+      "explanation": "bekommen = kap (become = werden); das Gift = méreg (gift = das Geschenk); also = tehát, szóval (also = auch); der Rat = tanács (rat = die Ratte); der Chef = főnök (chef = der Koch); das Handy = mobiltelefon; bald = hamarosan (bald = kopasz: glatzköpfig); spenden = adományoz (spend = ausgeben / verbringen); sensibel = érzékeny (sensible = vernünftig); aktuell = jelenlegi, időszerű (actually = eigentlich, tatsächlich); eventuell = esetleg (eventually = schließlich, am Ende).",
+      "emeltOnly": false,
+      "examples": [
+        { "en": "Zum Geburtstag habe ich ein Fahrrad bekommen.", "hu": "Születésnapomra biciklit kaptam." },
+        { "en": "Mein Bruder möchte Koch werden.", "hu": "A bátyám szakács szeretne lenni.", "note": "become = werden, chef = Koch." },
+        { "en": "Es regnet, also bleiben wir zu Hause.", "hu": "Esik, tehát otthon maradunk." }
+      ]
+    },
+    {
+      "title": "wer, wo, wie, wann – és a will",
+      "explanation": "wer = ki (angol who); wo = hol (angol where); wohin = hová; woher = honnan; wann = mikor (angol when); wie = hogyan, milyen; was = mi. A will a wollen alakja: akar (Ich will … = akarok). A jövő időt a werden fejezi ki (Ich werde … = …-ni fogok), az angol will hatására ezt gyakran keverik.",
+      "emeltOnly": false,
+      "examples": [
+        { "en": "Wer kommt heute Abend? – Und wo treffen wir uns?", "hu": "Ki jön ma este? – És hol találkozunk?" },
+        { "en": "Ich will Ärztin werden.", "hu": "Orvos akarok lenni.", "note": "will = akar, werden = válik valamivé." },
+        { "en": "Morgen werde ich 18.", "hu": "Holnap leszek 18 éves." }
+      ]
+    },
+    {
+      "title": "Német–magyar csapdák",
+      "explanation": "das Kollegium = tantestület (a kollégium: das Internat, das Schülerwohnheim, egyetemen das Studentenwohnheim); die Note = osztályzat, illetve kotta (nem jegyzet: die Notiz); das Lokal = vendéglő, kocsma (nem éjszakai lokál); der Termin = megbeszélt időpont (pl. orvosnál), nem határidő (die Frist; leadási határidő: der Abgabetermin); die Pension = panzió vagy (köztisztviselői) nyugdíj – a „nyugdíj” általános szava die Rente.",
+      "emeltOnly": false,
+      "examples": [
+        { "en": "Während der Woche wohne ich im Internat.", "hu": "Hét közben kollégiumban lakom." },
+        { "en": "Ich habe morgen um zehn einen Termin beim Zahnarzt.", "hu": "Holnap tízkor időpontom van a fogorvoshoz." },
+        { "en": "In Mathe habe ich eine gute Note bekommen.", "hu": "Matekból jó jegyet kaptam." }
+      ]
+    },
+    {
+      "title": "Egy magyar szó – több német",
+      "explanation": "tud: können (képesség: Ich kann schwimmen; nyelvtudás: Ich kann Deutsch), wissen (tényt, információt: Ich weiß, wo er wohnt), kennen (ismer személyt, helyet, dolgot: Ich kenne ihn). tanul: lernen (tanul, megtanul), studieren (egyetemen tanul). tanít: unterrichten, beibringen (valakinek valamit). él/lakik: leben (él), wohnen (lakik valahol). kér: bitten um (kér valamit valakitől), fragen (kérdez), bestellen (rendel). jegy: die Note (osztályzat), die Fahrkarte (menetjegy), die Eintrittskarte (belépő).",
+      "emeltOnly": false,
+      "examples": [
+        { "en": "Weißt du, wann der Film beginnt?", "hu": "Tudod, mikor kezdődik a film?", "note": "Információ → wissen." },
+        { "en": "Kennst du ein gutes Restaurant in der Nähe?", "hu": "Ismersz egy jó éttermet a közelben?" },
+        { "en": "Meine Tante hat mir das Schwimmen beigebracht.", "hu": "A nagynéném tanított meg úszni." }
+      ]
+    },
+    {
+      "title": "Hasonló alakú német szavak",
+      "explanation": "lernen (tanul) – lehren (tanít, választékos); leihen (kölcsönad / kölcsönkér: jemandem etwas leihen, sich etwas leihen) – ausleihen (kölcsönkér, kivesz könyvtárból); mieten (bérel) – vermieten (bérbe ad); schon (már) – schön (szép); Stadt (város) – Staat (állam) – statt (helyett); seit (óta) – seid (sein: ihr seid); wen (kit) – wenn (ha, amikor); das (névelő) – dass (hogy).",
+      "emeltOnly": false,
+      "examples": [
+        { "en": "Kannst du mir dein Fahrrad leihen?", "hu": "Kölcsönadod a biciklidet?" },
+        { "en": "Wir haben im Sommer eine Ferienwohnung gemietet.", "hu": "Nyáron béreltünk egy nyaralót." }
+      ]
+    },
+    {
+      "title": "Rokon értelmű szavak pontos használata",
+      "explanation": "sagen (mond valamit), sprechen (beszél, nyelvet beszél, beszél valakivel), reden (beszélget, beszél – inkább hétköznapi), erzählen (elmesél, elbeszél); sehen (lát), schauen / gucken (néz – beszélt nyelv), ansehen (megnéz); ändern (megváltoztat), sich ändern (megváltozik), wechseln (cserél: Geld wechseln, die Schule wechseln); treffen (találkozik ismerőssel), kennenlernen (megismerkedik), begegnen (véletlenül összefut).",
+      "emeltOnly": true,
+      "examples": [
+        { "en": "Erzähl mal, wie war dein Urlaub?", "hu": "Meséld el, milyen volt a nyaralásod!" },
+        { "en": "Ich habe sie auf einem Sprachkurs kennengelernt.", "hu": "Egy nyelvtanfolyamon ismerkedtem meg vele." }
+      ]
+    }
+  ],
+  "commonMistakes": [
+    { "wrong": "Ich möchte später Arzt bekommen.", "right": "Ich möchte später Arzt werden.", "why": "A bekommen jelentése „kap”; a „válik valamivé, lesz valami” jelentést a werden fejezi ki (angolul become)." },
+    { "wrong": "Morgen will ich 18 Jahre alt.", "right": "Morgen werde ich 18 Jahre alt.", "why": "A will a wollen (akar) alakja. A jövőt és a „lesz” jelentést a werden fejezi ki; az angol will hatására keverik." },
+    { "wrong": "Wo hat das gesagt?", "right": "Wer hat das gesagt?", "why": "A wer jelentése „ki”, a wo jelentése „hol”. Az angol who – where alakja éppen fordítva csal." },
+    { "wrong": "Kennst du, wann der Zug fährt?", "right": "Weißt du, wann der Zug fährt?", "why": "Információt, tényt (mikor, hol, hogy …) a wissen-nel tudunk; a kennen személyt, helyet, dolgot jelent (ismer)." },
+    { "wrong": "Ich wohne unter der Woche im Kollegium.", "right": "Ich wohne unter der Woche im Internat / im Schülerwohnheim.", "why": "A német Kollegium tantestületet jelent. A középiskolai kollégium das Internat vagy das Schülerwohnheim, az egyetemi das Studentenwohnheim." },
+    { "wrong": "Meine Tante hat mich Schwimmen gelernt.", "right": "Meine Tante hat mir das Schwimmen beigebracht.", "why": "A lernen jelentése „tanul”, nem „tanít”. Tanítani valakinek valamit: jemandem etwas beibringen (vagy unterrichten)." }
+  ],
+  "examTips": [
+    "Szövegértésnél ne a hasonló angol szó alapján fordíts: ha egy szó gyanúsan „angolos” (bekommen, also, Gift, eventuell), ellenőrizd a szövegkörnyezettel, hogy illik-e a jelentés.",
+    "Feleletválasztós lyukas szövegben gyakori csapda a wissen/kennen/können és a werden/bekommen/wollen hármas – mindig a szerkezet alapján dönts (wissen + mellékmondat, kennen + főnév, können + főnévi igenév).",
+    "Írásban kerüld a bizonytalan szavakat: ha nem vagy biztos egy hasonló alakú szó jelentésében, fogalmazz egyszerűbben – a jelentéshiba többet ront, mint egy egyszerűbb szó."
+  ],
+  "practice": [
+    {
+      "id": "1",
+      "kind": "choice",
+      "prompt": "Was hast du von deinen Eltern zum Geburtstag ___?",
+      "options": [
+        { "key": "A", "text": "bekommen" },
+        { "key": "B", "text": "geworden" },
+        { "key": "C", "text": "gegeben" },
+        { "key": "D", "text": "gekommen" }
+      ],
+      "answer": "A",
+      "category": "false-friend",
+      "explanation": "Helyes: bekommen. A szüleidtől (von deinen Eltern) kapott ajándékról kérdezünk: bekommen = kap. Partizip II-je ge- nélküli, mert a be- nem elváló igekötő.",
+      "wrongOptions": {
+        "B": "A geworden a werden (válik valamivé) Partizip II-je, és sein-nel képzi a Perfektet – itt nincs értelme.",
+        "C": "A gegeben jelentése „adott”; a von deinen Eltern (a szüleidtől) a kapott ajándékra utal.",
+        "D": "A gekommen a kommen (jön) Partizip II-je, sein-nel áll, és jelentésben sem illik ide."
+      }
+    },
+    {
+      "id": "2",
+      "kind": "text",
+      "prompt": "___ wohnst du? – In Szeged, in der Nähe der Universität.",
+      "answer": ["Wo"],
+      "category": "false-friend",
+      "explanation": "Helyes: Wo. A válasz helyet ad meg (Szegeden), ezért a kérdőszó wo (hol). Vigyázat: a wer jelentése „ki” – az angol where/who alakja éppen fordítva csal."
+    },
+    {
+      "id": "3",
+      "kind": "choice",
+      "prompt": "Entschuldigung, ___ Sie, wie spät es ist?",
+      "options": [
+        { "key": "A", "text": "kennen" },
+        { "key": "B", "text": "wissen" },
+        { "key": "C", "text": "können" },
+        { "key": "D", "text": "verstehen" }
+      ],
+      "answer": "B",
+      "category": "false-friend",
+      "explanation": "Helyes: wissen. Információt, tényt kérdezünk (mennyi az idő), amelyet mellékmondat követ – ezt a wissen fejezi ki: Wissen Sie, wie spät es ist?",
+      "wrongOptions": {
+        "A": "A kennen személyt, helyet, dolgot jelent (ismer), mellékmondattal nem áll.",
+        "C": "A können képességet jelent, és főnévi igenév állna utána (Können Sie mir sagen, …?).",
+        "D": "A verstehen jelentése „megért” – értelmetlen a kérdésben."
+      }
+    },
+    {
+      "id": "4",
+      "kind": "text",
+      "prompt": "Mein Bruder liebt Autos – er möchte später Automechaniker ___.",
+      "answer": ["werden"],
+      "category": "false-friend",
+      "explanation": "Helyes: werden. A „valami lesz, valamivé válik” jelentést a werden fejezi ki (a möchte után főnévi igenévként). A bekommen jelentése „kap” – az angol become hamis barátja."
+    },
+    {
+      "id": "5",
+      "kind": "choice",
+      "prompt": "Meine Mutter ___ an einer Grundschule Mathematik und Musik.",
+      "options": [
+        { "key": "A", "text": "lernt" },
+        { "key": "B", "text": "unterrichtet" },
+        { "key": "C", "text": "studiert" },
+        { "key": "D", "text": "erfährt" }
+      ],
+      "answer": "B",
+      "category": "false-friend",
+      "explanation": "Helyes: unterrichtet. Az anya tanár, aki egy általános iskolában tanít: unterrichten = tanít (egy tantárgyat).",
+      "wrongOptions": {
+        "A": "A lernen jelentése „tanul”; a tanár nem tanulja, hanem tanítja a tárgyat.",
+        "C": "A studieren egyetemi tanulmányokat jelent, nem tanítást.",
+        "D": "Az erfahren jelentése „megtud” (a fahren igekötős alakja), nem „tanít”."
+      }
+    },
+    {
+      "id": "6",
+      "kind": "choice",
+      "prompt": "Meine Freundin hat mir einen guten ___ gegeben: Ich soll vor der Prüfung genug schlafen.",
+      "options": [
+        { "key": "A", "text": "Rat" },
+        { "key": "B", "text": "Gift" },
+        { "key": "C", "text": "Chef" },
+        { "key": "D", "text": "Geschenk" }
+      ],
+      "answer": "A",
+      "category": "false-friend",
+      "explanation": "Helyes: Rat. A kettőspont utáni rész egy tanács (sokat aludjak a vizsga előtt): der Rat = tanács, einen Rat geben = tanácsot ad.",
+      "wrongOptions": {
+        "B": "Das Gift = méreg (nem ajándék, mint az angol gift), és semleges nemű, így einen guten amúgy sem illik hozzá.",
+        "C": "Der Chef = főnök; főnököt nem „adnak”, és az utána következő tanácshoz sem illik.",
+        "D": "Das Geschenk semleges (ein gutes Geschenk lenne), és a kettőspont utáni rész nem ajándék, hanem tanács."
+      }
+    }
+  ],
+  "relatedCategories": ["vocabulary-range", "collocation", "spelling"]
+}

@@ -1,0 +1,244 @@
+{
+  "schemaVersion": 1,
+  "id": "mat-gr-indoklas-hianya",
+  "subject": "matematika",
+  "revision": 1,
+  "level": "kozep",
+  "source": "generated",
+  "topic": "nyelvtan",
+  "title": "Indoklás és a lépések leírása",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "grammar",
+  "type": "lesson",
+  "category": "indoklas-hianya",
+  "summaryHu": "A II. részben a pontok jelentős része a gondolatmenetért jár: a javítási útmutató gondolati egységekre bontja a megoldást, és csak a leírt lépésekért ad pontot. Az indoklás nélküli végeredmény, a „látszik az ábrán” vagy a néhány példával „bizonyítás” pontot veszít. Ez a lecke azt mutatja meg, mit és hogyan írj le.",
+  "rules": [
+    {
+      "title": "A gondolatmenet leírása",
+      "explanation": "Írd le, mit számolsz és miért: melyik összefüggést használod, mit jelöl a változó, honnan jön egy szám. Elég rövid mondat: „A Pitagorasz-tétel szerint …”, „Mivel a sorrend nem számít, kombinációval …”.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "„Legyen x a kisebbik szám. A feltétel szerint x(x + 3) = 40.”",
+          "hu": "A jelölés bevezetése és a modell felírása külön pontot ér."
+        },
+        {
+          "en": "„A koszinusztétel szerint c² = a² + b² − 2ab · cos γ.”",
+          "hu": "A tétel megnevezése az indoklás része."
+        }
+      ]
+    },
+    {
+      "title": "Tétel megnevezése a feltételekkel",
+      "explanation": "Ha egy tételt használsz, nevezd meg, és győződj meg róla, hogy a feltételei teljesülnek (pl. derékszögű-e a háromszög, kizárók-e az események, független-e a két húzás).",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "„7² + 24² = 625 = 25², ezért a Pitagorasz-tétel megfordítása szerint a háromszög derékszögű.”",
+          "hu": "Nem elég, hogy „úgy néz ki”."
+        },
+        {
+          "en": "„A két húzás visszatevéses, ezért független: P = 0,4 · 0,4.”",
+          "hu": "A szorzási szabály feltételét is kimondjuk."
+        }
+      ]
+    },
+    {
+      "title": "Szélsőérték, monotonitás indoklása",
+      "explanation": "Szélsőértéknél ne csak leolvasd az eredményt: teljes négyzetté alakítással vagy (emelt szinten) a derivált előjelváltásával indokold, hogy valóban minimum vagy maximum van.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "x² − 6x + 10 = (x − 3)² + 1 ≥ 1, egyenlőség x = 3-nál → minimum 1",
+          "hu": "Az egyenlőtlenség maga az indoklás."
+        }
+      ]
+    },
+    {
+      "title": "Bizonyítás: általános érvelés, nem példák",
+      "explanation": "Egy általános állítást példákkal nem lehet bizonyítani, csak cáfolni (egy ellenpélda elég). Bizonyításnál általános jelöléssel dolgozz (n, k), mondd ki a felhasznált tételeket, és a végén fogalmazd meg, mit láttál be.",
+      "emeltOnly": true,
+      "examples": [
+        {
+          "en": "„n(n + 1): két szomszédos egész közül az egyik páros, ezért a szorzat páros.” ∎",
+          "hu": "Minden n-re érvényes érvelés."
+        },
+        {
+          "en": "Teljes indukció: kezdőlépés, indukciós feltevés, öröklődés",
+          "hu": "Mindhárom lépést le kell írni."
+        }
+      ]
+    }
+  ],
+  "commonMistakes": [
+    {
+      "wrong": "Csak a végeredmény: „x = 5”",
+      "right": "„A téglalap oldalai x és x + 3, a terület x(x + 3) = 40, ebből x² + 3x − 40 = 0, x = 5 (a −8 nem lehet hossz). Az oldalak 5 cm és 8 cm.”",
+      "why": "A II. részben a modell felírása, az egyenlet megoldása és a válasz külön pontot ér; a puszta eredményre a pontok töredéke jár."
+    },
+    {
+      "wrong": "„Az ábráról látszik, hogy derékszögű.”",
+      "right": "„Mivel 6² + 8² = 10², a Pitagorasz-tétel megfordítása szerint derékszögű.”",
+      "why": "Az ábra nem méretarányos és nem bizonyíték; a tulajdonságot számolással vagy tétellel kell igazolni."
+    },
+    {
+      "wrong": "„2 · 3 = 6 és 4 · 5 = 20 páros, tehát két szomszédos egész szorzata mindig páros.”",
+      "right": "„n és n + 1 közül az egyik páros, ezért n(n + 1) páros.”",
+      "why": "Példák nem bizonyítanak általános állítást; minden n-re érvényes érvelés kell."
+    },
+    {
+      "wrong": "„A függvény minimuma −4.” (indoklás nélkül)",
+      "right": "„(x − 3)² − 4 ≥ −4, mert (x − 3)² ≥ 0; egyenlőség x = 3-nál, tehát a minimum −4.”",
+      "why": "A szélsőérték puszta kimondása kevesebb pontot ér, mint a teljes négyzetes alakból vagy deriválttal levezetett eredmény."
+    }
+  ],
+  "examTips": [
+    "A rubrika „A megoldás menete, indoklás” szempontja középszinten 3–4, emelt szinten 4 pont feladatonként – ezt csak leírt gondolatmenettel lehet megszerezni.",
+    "Emelt szinten a bizonyítási feladatnál a felhasznált tételek megnevezése nélkül nem jár teljes pont.",
+    "Ha számológéppel számolsz, a beírt kifejezést (pl. 312 000 · (1,04⁵ − 1)/0,04) akkor is írd le, ha csak az eredményt nézed meg."
+  ],
+  "practice": [
+    {
+      "id": "1",
+      "kind": "choice",
+      "prompt": "Melyik a teljes értékű indoklás arra, hogy a 7, 24 és 25 egység oldalú háromszög derékszögű?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Úgy néz ki az ábrán."
+        },
+        {
+          "key": "B",
+          "text": "7² + 24² = 49 + 576 = 625 = 25², ezért a Pitagorasz-tétel megfordítása szerint derékszögű."
+        },
+        {
+          "key": "C",
+          "text": "7 + 24 > 25, tehát létezik."
+        },
+        {
+          "key": "D",
+          "text": "A 25 a leghosszabb oldal."
+        }
+      ],
+      "answer": "B",
+      "category": "indoklas-hianya",
+      "explanation": "A helyes: B. A számolás megmutatja, hogy az oldalakra teljesül a² + b² = c², és a megnevezett tétel (a Pitagorasz-tétel megfordítása) ebből adja a derékszöget.",
+      "wrongOptions": {
+        "A": "Az ábra nem bizonyíték, és a vizsgán nem is méretarányos.",
+        "C": "A háromszög-egyenlőtlenség csak azt mutatja, hogy létezik a háromszög, azt nem, hogy derékszögű.",
+        "D": "A leghosszabb oldal csak azt mondja meg, hol lehetne a derékszög, de nem bizonyítja, hogy van."
+      }
+    },
+    {
+      "id": "2",
+      "kind": "choice",
+      "prompt": "Melyik helyes bizonyítása annak, hogy két egymást követő egész szám szorzata páros?",
+      "options": [
+        {
+          "key": "A",
+          "text": "2 · 3 = 6 és 5 · 6 = 30 páros, tehát igaz."
+        },
+        {
+          "key": "B",
+          "text": "Az n és n + 1 közül az egyik páros, ezért az n(n + 1) szorzat páros."
+        },
+        {
+          "key": "C",
+          "text": "Mert minden szorzat páros."
+        },
+        {
+          "key": "D",
+          "text": "n(n + 1) = n² + n, és két páratlan szám összege páros."
+        }
+      ],
+      "answer": "B",
+      "category": "indoklas-hianya",
+      "explanation": "A helyes: B. Ez minden egész n-re érvényes: két szomszédos egész közül pontosan az egyik páros, és ha egy tényező páros, a szorzat is az.",
+      "wrongOptions": {
+        "A": "Két példa nem bizonyítja az összes esetet.",
+        "C": "Hamis állítás: 3 · 5 = 15 páratlan.",
+        "D": "Az n² és az n csak páratlan n esetén páratlan; páros n-re ez az érvelés nem működik, tehát hiányos."
+      }
+    },
+    {
+      "id": "3",
+      "kind": "choice",
+      "prompt": "Egy „Hányféleképpen …?” kérdésnél mi kell a II. részben a teljes pontszámhoz?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Csak a végeredmény."
+        },
+        {
+          "key": "B",
+          "text": "A gondolatmenet (pl. miért számít vagy nem számít a sorrend), a számolás és a szöveges válasz."
+        },
+        {
+          "key": "C",
+          "text": "Csak a használt képlet neve."
+        },
+        {
+          "key": "D",
+          "text": "Csak egy ábra."
+        }
+      ],
+      "answer": "B",
+      "category": "indoklas-hianya",
+      "explanation": "A helyes: B. A javítás a modell indoklásáért (sorrend, ismétlés), a helyes számolásért és a válaszért külön ad pontot.",
+      "wrongOptions": {
+        "A": "A puszta végeredmény a gondolatmenet pontjait elveszíti.",
+        "C": "A képlet neve indoklás nélkül nem mutatja meg, miért az a megfelelő modell, és a számolás is hiányzik.",
+        "D": "Egy ábra segíthet, de számolást és választ nem helyettesít."
+      }
+    },
+    {
+      "id": "4",
+      "kind": "text",
+      "prompt": "Hány ellenpélda elég ahhoz, hogy egy „minden … esetén igaz” állítást megcáfoljunk?",
+      "answer": [
+        "1",
+        "egy",
+        "1 db"
+      ],
+      "category": "indoklas-hianya",
+      "explanation": "1. Egy általános állítás akkor hamis, ha van legalább egy eset, amikor nem teljesül; egyetlen ellenpélda elég. Bizonyítani viszont csak általános érveléssel lehet."
+    },
+    {
+      "id": "5",
+      "kind": "choice",
+      "prompt": "Egy megoldásban ez áll: „Az f(x) = x² − 6x + 10 függvény minimuma 1.” Mi hiányzik a teljes pontos indokláshoz?",
+      "options": [
+        {
+          "key": "A",
+          "text": "A teljes négyzetté alakítás: (x − 3)² + 1 ≥ 1, egyenlőség x = 3-nál."
+        },
+        {
+          "key": "B",
+          "text": "Egy ábra."
+        },
+        {
+          "key": "C",
+          "text": "A diszkrimináns kiszámítása."
+        },
+        {
+          "key": "D",
+          "text": "Semmi, ez elég."
+        }
+      ],
+      "answer": "A",
+      "category": "indoklas-hianya",
+      "explanation": "A helyes: A. A teljes négyzetes alakból látszik, hogy a függvényérték sosem kisebb 1-nél, és x = 3-nál pontosan 1 – ez a minimum igazolása.",
+      "wrongOptions": {
+        "B": "Az ábra szemléltet, de nem indokol; a vizsgán a vázlatról leolvasott érték nem bizonyíték.",
+        "C": "A diszkrimináns (36 − 40 < 0) csak azt mutatja, hogy nincs zérushely, a minimumot nem.",
+        "D": "Indoklás nélküli állításra a gondolatmenet pontja nem jár."
+      }
+    }
+  ],
+  "relatedCategories": [
+    "valasz-megfogalmazas",
+    "definicio-tetel",
+    "ellenorzes"
+  ]
+}

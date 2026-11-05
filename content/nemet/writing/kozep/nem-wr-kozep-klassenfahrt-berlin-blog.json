@@ -1,36 +1,96 @@
 {
+  "schemaVersion": 1,
+  "id": "nem-wr-kozep-klassenfahrt-berlin-blog",
+  "subject": "nemet",
+  "revision": 1,
+  "level": "kozep",
+  "source": "generated",
   "topic": "utazas",
   "title": "Unsere Klassenfahrt nach Berlin",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "writing",
   "type": "blog",
   "taskNumber": 2,
   "register": "informal",
   "situation": "Sie waren mit Ihrer Klasse auf Klassenfahrt in Berlin. Sie schreiben einen Blog auf Deutsch und berichten Ihren Leserinnen und Lesern darüber. Schreiben Sie 100–120 Wörter und gehen Sie auf alle vier Punkte ein.",
   "situationHu": "Az osztályoddal Berlinben voltál osztálykiránduláson. Németül blogot írsz, és beszámolsz róla az olvasóidnak. Írj 100–120 szót, és térj ki mind a négy szempontra.",
   "points": [
-    { "id": "p1", "text": "Schreiben Sie, wie lange Sie dort waren und wo Sie gewohnt haben." },
-    { "id": "p2", "text": "Berichten Sie, was Sie gemacht und gesehen haben." },
-    { "id": "p3", "text": "Schreiben Sie, was Ihnen am besten und was Ihnen nicht so gut gefallen hat." },
-    { "id": "p4", "text": "Geben Sie Ihren Leserinnen und Lesern einen Tipp für eine Reise nach Berlin." }
+    {
+      "id": "p1",
+      "text": "Schreiben Sie, wie lange Sie dort waren und wo Sie gewohnt haben."
+    },
+    {
+      "id": "p2",
+      "text": "Berichten Sie, was Sie gemacht und gesehen haben."
+    },
+    {
+      "id": "p3",
+      "text": "Schreiben Sie, was Ihnen am besten und was Ihnen nicht so gut gefallen hat."
+    },
+    {
+      "id": "p4",
+      "text": "Geben Sie Ihren Leserinnen und Lesern einen Tipp für eine Reise nach Berlin."
+    }
   ],
-  "wordLimit": { "min": 100, "max": 120 },
+  "wordLimit": {
+    "min": 100,
+    "max": 120
+  },
   "suggestedMinutes": 35,
   "usefulPhrases": [
-    { "en": "Hallo, liebe Leserinnen und Leser!", "hu": "Sziasztok, kedves olvasók! (blogos megszólítás)" },
-    { "en": "Letzte Woche war ich mit meiner Klasse fünf Tage in Berlin.", "hu": "Múlt héten öt napig Berlinben voltam az osztályommal." },
-    { "en": "Wir haben in einer Jugendherberge gewohnt.", "hu": "Egy ifjúsági szállóban laktunk." },
-    { "en": "Wir haben … besichtigt.", "hu": "Megnéztük a …-t (látnivalót)." },
-    { "en": "eine Bootsfahrt machen", "hu": "hajókirándulást tesz" },
-    { "en": "Am besten hat mir … gefallen, weil …", "hu": "A … tetszett a legjobban, mert …" },
-    { "en": "Weniger schön war …", "hu": "Kevésbé volt jó …" },
-    { "en": "Nehmt unbedingt bequeme Schuhe mit!", "hu": "Feltétlenül vigyetek kényelmes cipőt!" }
+    {
+      "en": "Hallo, liebe Leserinnen und Leser!",
+      "hu": "Sziasztok, kedves olvasók! (blogos megszólítás)"
+    },
+    {
+      "en": "Letzte Woche war ich mit meiner Klasse fünf Tage in Berlin.",
+      "hu": "Múlt héten öt napig Berlinben voltam az osztályommal."
+    },
+    {
+      "en": "Wir haben in einer Jugendherberge gewohnt.",
+      "hu": "Egy ifjúsági szállóban laktunk."
+    },
+    {
+      "en": "Wir haben … besichtigt.",
+      "hu": "Megnéztük a …-t (látnivalót)."
+    },
+    {
+      "en": "eine Bootsfahrt machen",
+      "hu": "hajókirándulást tesz"
+    },
+    {
+      "en": "Am besten hat mir … gefallen, weil …",
+      "hu": "A … tetszett a legjobban, mert …"
+    },
+    {
+      "en": "Weniger schön war …",
+      "hu": "Kevésbé volt jó …"
+    },
+    {
+      "en": "Nehmt unbedingt bequeme Schuhe mit!",
+      "hu": "Feltétlenül vigyetek kényelmes cipőt!"
+    }
   ],
   "modelAnswer": {
-    "text": "Hallo, liebe Leserinnen und Leser!\n\nLetzte Woche war ich mit meiner Klasse fünf Tage in Berlin. Wir sind mit dem Zug gefahren und haben in einer Jugendherberge in der Nähe vom Alexanderplatz gewohnt.\n\nJeden Tag hatten wir ein volles Programm: Wir haben das Brandenburger Tor, den Reichstag und die East Side Gallery besichtigt und eine Bootsfahrt auf der Spree gemacht.\n\nAm besten hat mir die East Side Gallery gefallen, weil die Bilder auf der alten Mauer so bunt und interessant sind. Weniger schön war das Wetter, denn es hat fast jeden Tag geregnet.\n\nWenn ihr einmal nach Berlin fahrt, nehmt unbedingt bequeme Schuhe mit. Man läuft dort nämlich sehr viel!\n\nEure Dóra",
+    "text": "Hallo, liebe Leserinnen und Leser!\n\nLetzte Woche war ich mit meiner Klasse fünf Tage in Berlin. Wir sind mit dem Zug gefahren und haben in einer Jugendherberge in der Nähe des Alexanderplatzes gewohnt.\n\nJeden Tag hatten wir ein volles Programm: Wir haben das Brandenburger Tor, den Reichstag und die East Side Gallery besichtigt und eine Bootsfahrt auf der Spree gemacht.\n\nAm besten hat mir die East Side Gallery gefallen, weil die Bilder auf der alten Mauer so bunt und interessant sind. Weniger schön war das Wetter, denn es hat fast jeden Tag geregnet.\n\nWenn ihr einmal nach Berlin fahrt, nehmt unbedingt bequeme Schuhe mit. Man läuft dort nämlich sehr viel!\n\nEure Dóra",
     "pointsCovered": [
-      { "id": "p1", "quote": "Letzte Woche war ich mit meiner Klasse fünf Tage in Berlin. Wir sind mit dem Zug gefahren und haben in einer Jugendherberge in der Nähe vom Alexanderplatz gewohnt." },
-      { "id": "p2", "quote": "Wir haben das Brandenburger Tor, den Reichstag und die East Side Gallery besichtigt und eine Bootsfahrt auf der Spree gemacht." },
-      { "id": "p3", "quote": "Am besten hat mir die East Side Gallery gefallen, weil die Bilder auf der alten Mauer so bunt und interessant sind. Weniger schön war das Wetter, denn es hat fast jeden Tag geregnet." },
-      { "id": "p4", "quote": "Wenn ihr einmal nach Berlin fahrt, nehmt unbedingt bequeme Schuhe mit." }
+      {
+        "id": "p1",
+        "quote": "Letzte Woche war ich mit meiner Klasse fünf Tage in Berlin. Wir sind mit dem Zug gefahren und haben in einer Jugendherberge in der Nähe des Alexanderplatzes gewohnt."
+      },
+      {
+        "id": "p2",
+        "quote": "Wir haben das Brandenburger Tor, den Reichstag und die East Side Gallery besichtigt und eine Bootsfahrt auf der Spree gemacht."
+      },
+      {
+        "id": "p3",
+        "quote": "Am besten hat mir die East Side Gallery gefallen, weil die Bilder auf der alten Mauer so bunt und interessant sind. Weniger schön war das Wetter, denn es hat fast jeden Tag geregnet."
+      },
+      {
+        "id": "p4",
+        "quote": "Wenn ihr einmal nach Berlin fahrt, nehmt unbedingt bequeme Schuhe mit."
+      }
     ],
     "notes": [
       "Feladat teljesítése: minden szempontra tartalmas válasz jön – mennyi ideig és hol laktak, konkrét programok, egy pozitív és egy negatív élmény indoklással, végül gyakorlati tipp.",

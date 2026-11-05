@@ -1,0 +1,187 @@
+{
+  "schemaVersion": 1,
+  "id": "mat-gr-geometria-osszefuggesek",
+  "subject": "matematika",
+  "revision": 1,
+  "level": "kozep",
+  "source": "generated",
+  "topic": "nyelvtan",
+  "title": "Geometriai összefüggések felismerése, ábra",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "grammar",
+  "type": "lesson",
+  "category": "geometria-osszefuggesek",
+  "summaryHu": "Geometriai feladatban a pontok többsége azon múlik, hogy felismered-e a megfelelő összefüggést: derékszögű háromszöget (Pitagorasz, szögfüggvények), hasonlóságot, Thalész-kört, kerületi és középponti szöget, párhuzamos egyenesek szögeit. Ehhez szinte mindig kell egy jó, jelölésekkel ellátott ábra.",
+  "rules": [
+    {
+      "title": "Ábra és jelölések",
+      "explanation": "Készíts vázlatot, írd rá az adatokat és a keresett mennyiséget; jelöld a derékszögeket és az egyenlő szakaszokat. A javítási útmutató gyakran pontot ad a helyes ábráért vagy az összefüggés felírásáért.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "Egyenlő szárú háromszögben behúzzuk az alaphoz tartozó magasságot",
+          "hu": "Két egybevágó derékszögű háromszög keletkezik: alkalmazható a Pitagorasz-tétel."
+        },
+        {
+          "en": "Gúlánál a testmagasság, az oldallap magassága és az alapél fele derékszögű háromszöget alkot",
+          "hu": "Térben is síkbeli derékszögű háromszöget keresünk."
+        }
+      ]
+    },
+    {
+      "title": "Szögek: párhuzamosok, háromszög, sokszög",
+      "explanation": "Párhuzamos egyeneseket metsző egyenesnél az egyállású és a váltószögek egyenlők, a társszögek összege 180°. A háromszög belső szögeinek összege 180°, külső szöge a két nem mellette fekvő belső szög összege; egyenlő szárú háromszögben az alapon fekvő szögek egyenlők.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "Egyenlő szárú háromszög alapszöge 70° → szárszög 180° − 2 · 70° = 40°",
+          "hu": "Az alapon fekvő két szög egyenlő."
+        },
+        {
+          "en": "n oldalú konvex sokszög belső szögeinek összege (n − 2) · 180°",
+          "hu": "Hatszögnél 720°."
+        }
+      ]
+    },
+    {
+      "title": "Hasonlóság",
+      "explanation": "Két háromszög hasonló, ha szögeik páronként egyenlők (vagy oldalaik aránya megegyezik). A megfelelő szakaszok aránya λ, a területeké λ², a térfogatoké λ³. Árnyékos, párhuzamos szelős feladatok mögött hasonlóság áll.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "Pózna 2 m, árnyéka 1,5 m; fa árnyéka 9 m → a fa 2 · 9/1,5 = 12 m",
+          "hu": "Ugyanakkor a napsugarak párhuzamosak: hasonló derékszögű háromszögek."
+        },
+        {
+          "en": "Arány 1 : 3 → területarány 1 : 9",
+          "hu": "5 cm²-es kis háromszöghöz 45 cm²-es nagy tartozik."
+        }
+      ]
+    },
+    {
+      "title": "Kör: Thalész, kerületi és középponti szög, érintő",
+      "explanation": "Az átmérő fölötti kerületi szög derékszög (Thalész). Az azonos ívhez tartozó kerületi szög a középponti szög fele. Az érintő merőleges az érintési pontba húzott sugárra.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "120°-os középponti szög → 60°-os kerületi szög",
+          "hu": "Ugyanazon az íven."
+        },
+        {
+          "en": "10 cm átmérőjű körbe írt derékszögű háromszög átfogója 10 cm",
+          "hu": "Thalész tétele miatt az átfogó az átmérő."
+        }
+      ]
+    }
+  ],
+  "commonMistakes": [
+    {
+      "wrong": "Ha a hasonlóság aránya 3, a terület is háromszoros.",
+      "right": "A terület kilencszeres (3²).",
+      "why": "A területek aránya a hasonlóság arányának négyzete, mert a terület két hosszúság szorzata."
+    },
+    {
+      "wrong": "A kerületi szög egyenlő a középponti szöggel.",
+      "right": "A kerületi szög az azonos ívhez tartozó középponti szög fele.",
+      "why": "Ez a kerületi és középponti szögek tétele; pl. 80°-os középponti szöghöz 40°-os kerületi szög tartozik."
+    },
+    {
+      "wrong": "A háromszög magassága felezi az oldalt.",
+      "right": "Csak egyenlő szárú háromszögben felezi az alaphoz tartozó magasság az alapot.",
+      "why": "Általános háromszögben a magasság talppontja és az oldalfelező pont különbözik; ne olvass le az ábráról olyat, ami nem adott."
+    },
+    {
+      "wrong": "Minden négyszög átlói felezik egymást.",
+      "right": "A paralelogrammák (és csak azok) átlói felezik egymást.",
+      "why": "Például a deltoid vagy a trapéz átlói általában nem felezik egymást; egy összefüggést csak akkor használj, ha a feltételei teljesülnek."
+    }
+  ],
+  "examTips": [
+    "Térgeometriai feladatnál mindig keress síkmetszetet (derékszögű háromszöget); a javítás a segédháromszög felismeréséért is pontot ad.",
+    "Szöveges geometriai feladatnál (pl. árnyék, létra, rámpa) az első lépés a vázlat: a modell felállításáért külön pont jár.",
+    "Ne mérj az ábrán – a vizsgán az ábra nem méretarányos; csak a megadott adatokból és tételekből számolj."
+  ],
+  "practice": [
+    {
+      "id": "1",
+      "kind": "text",
+      "prompt": "Egy körben egy ívhez tartozó középponti szög 120°. Mekkora az ugyanehhez az ívhez tartozó kerületi szög (fokban)?",
+      "answer": [
+        "60",
+        "60°"
+      ],
+      "category": "geometria-osszefuggesek",
+      "explanation": "60°. A kerületi szög az azonos ívhez tartozó középponti szög fele: 120° : 2 = 60°."
+    },
+    {
+      "id": "2",
+      "kind": "text",
+      "prompt": "Két hasonló háromszög hasonlóságának aránya 1 : 3. A kisebbik területe 5 cm². Mekkora a nagyobbik területe (cm²)?",
+      "answer": [
+        "45",
+        "45 cm²",
+        "45 cm2"
+      ],
+      "category": "geometria-osszefuggesek",
+      "explanation": "45 cm². A területek aránya a hasonlóság arányának négyzete: 1 : 9, így 5 · 9 = 45 cm². A 15 cm² hibás, az a lineáris arány lenne."
+    },
+    {
+      "id": "3",
+      "kind": "choice",
+      "prompt": "Egy egyenlő szárú háromszög alapon fekvő szöge 70°. Mekkora a szárak által bezárt szög?",
+      "options": [
+        {
+          "key": "A",
+          "text": "40°"
+        },
+        {
+          "key": "B",
+          "text": "70°"
+        },
+        {
+          "key": "C",
+          "text": "110°"
+        },
+        {
+          "key": "D",
+          "text": "20°"
+        }
+      ],
+      "answer": "A",
+      "category": "geometria-osszefuggesek",
+      "explanation": "A helyes: 40°. Az alapon fekvő két szög egyenlő (70° és 70°), a belső szögek összege 180°, így a szárszög 180° − 140° = 40°.",
+      "wrongOptions": {
+        "B": "70° az alapszög; ha a szárszög is 70° lenne, a szögek összege 210° lenne.",
+        "C": "110° a 70°-os alapszög mellékszöge (külső szög), nem belső szög.",
+        "D": "A 20° = 90° − 70° csak a szárszög fele (az alaphoz tartozó magasság és a szár szöge), nem a teljes szárszög."
+      }
+    },
+    {
+      "id": "4",
+      "kind": "text",
+      "prompt": "Egy 10 cm átmérőjű körbe írt háromszög egyik oldala a kör átmérője, egy másik oldala 6 cm. Milyen hosszú a harmadik oldal (cm)?",
+      "answer": [
+        "8",
+        "8 cm"
+      ],
+      "category": "geometria-osszefuggesek",
+      "explanation": "8 cm. Thalész tétele szerint az átmérő fölötti háromszög derékszögű, átfogója a 10 cm-es átmérő. Pitagorasz-tétellel: √(10² − 6²) = √64 = 8 cm."
+    },
+    {
+      "id": "5",
+      "kind": "text",
+      "prompt": "Egy 2 m magas pózna árnyéka 1,5 m, ugyanekkor egy fa árnyéka 9 m. Milyen magas a fa (m)?",
+      "answer": [
+        "12",
+        "12 m"
+      ],
+      "category": "geometria-osszefuggesek",
+      "explanation": "12 m. A napsugarak párhuzamosak, így a pózna és a fa árnyékával hasonló derékszögű háromszöget alkot: x/9 = 2/1,5, x = 12 m."
+    }
+  ],
+  "relatedCategories": [
+    "kepletek",
+    "definicio-tetel"
+  ]
+}
