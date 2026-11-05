@@ -1,0 +1,81 @@
+{
+  "schemaVersion": 1,
+  "id": "dig-sp-kozep-jelszo-ellenorzo",
+  "subject": "digitalis-kultura",
+  "revision": 1,
+  "level": "kozep",
+  "source": "generated",
+  "topic": "algoritmizalas",
+  "title": "Programozási feladat: jelszóellenőrző",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "speaking",
+  "type": "programozasi-tetel",
+  "partNumber": 2,
+  "instructionsHu": "Programozási feladat: írjon programot, amely bekér egy jelszót, és eldönti, megfelel-e a szabályoknak: legalább 8 karakter hosszú, van benne számjegy és van benne nagybetű! Ha nem felel meg, írja ki, mi hiányzik belőle! Mutassa be és magyarázza el a megoldását, és mondjon példát egy megfelelő és egy nem megfelelő jelszóra!",
+  "prompts": [
+    "A jelszó bekérése, a hossz vizsgálata",
+    "A karakterek bejárása, logikai változók (van-e számjegy, nagybetű)",
+    "A hiányzó feltételek összegyűjtése és kiírása",
+    "Tesztelés megfelelő és nem megfelelő jelszóval"
+  ],
+  "followUpQuestions": [
+    "Hogyan bővítené a programot, hogy írásjelet is megköveteljen?",
+    "Miért jobb listába gyűjteni a hibákat, mint rögtön kiírni őket?"
+  ],
+  "usefulPhrases": [
+    {
+      "en": "len(s)",
+      "hu": "a karakterlánc hossza"
+    },
+    {
+      "en": "for k in s:",
+      "hu": "a szöveg bejárása karakterenként"
+    },
+    {
+      "en": "k.isdigit(), k.isupper()",
+      "hu": "számjegy-e, illetve nagybetű-e a karakter"
+    },
+    {
+      "en": "logikai (bool) változó",
+      "hu": "True/False érték egy feltétel teljesülésének jelzésére"
+    },
+    {
+      "en": "eldöntés tétele",
+      "hu": "van-e legalább egy, a feltételnek megfelelő elem"
+    },
+    {
+      "en": "\", \".join(lista)",
+      "hu": "a lista elemeinek összefűzése elválasztóval"
+    }
+  ],
+  "sources": [
+    {
+      "title": "A feladat",
+      "text": "Kérjen be egy jelszót! Döntse el, hogy legalább 8 karakter hosszú-e, van-e benne számjegy és nagybetű! Ha mindhárom teljesül, írja ki: „A jelszó megfelel.”, különben sorolja fel, mi hiányzik!"
+    }
+  ],
+  "keyPoints": [
+    "A hossz a len() függvénnyel vizsgálható.",
+    "A karakterlánc bejárása for ciklussal; a k.isdigit() és a k.isupper() metódus dönti el a karakter fajtáját.",
+    "Két logikai (bool) változó False kezdőértékkel: ha egyszer is talál számjegyet vagy nagybetűt, True lesz (eldöntés tétele).",
+    "A hiányzó feltételek egy listába gyűlnek, a join() vesszővel fűzi össze őket.",
+    "Tesztelés: „alma12” → hiányzik a 8 karakter és a nagybetű; „Kertiszek9” → megfelel.",
+    "Az isupper() az ékezetes nagybetűket (pl. Á, Ő) is nagybetűnek ismeri fel."
+  ],
+  "speakingSeconds": 420,
+  "prepSeconds": 900,
+  "sampleAnswer": {
+    "turns": [
+      {
+        "speaker": "candidate",
+        "text": "A feladat három feltétel vizsgálata; a hosszat egyszerűen megkapom, a másik kettőhöz végig kell nézni a jelszó karaktereit.\n\njelszo = input(\"Jelszó: \")\n\nvan_szam = False\nvan_nagy = False\nfor k in jelszo:\n    if k.isdigit():\n        van_szam = True\n    if k.isupper():\n        van_nagy = True\n\nhibak = []\nif len(jelszo) < 8:\n    hibak.append(\"legalább 8 karakter\")\nif not van_szam:\n    hibak.append(\"számjegy\")\nif not van_nagy:\n    hibak.append(\"nagybetű\")\n\nif len(hibak) == 0:\n    print(\"A jelszó megfelel.\")\nelse:\n    print(\"Hiányzik:\", \", \".join(hibak))\n\nElőször bekérem a jelszót. Ezután két logikai változót veszek fel, van_szam és van_nagy, mindkettő kezdőértéke hamis. A for ciklus karakterenként végigmegy a szövegen: ha a karakter számjegy, vagyis az isdigit() igazat ad, a van_szam igaz lesz, ha nagybetű, akkor a van_nagy. Ez az eldöntés tétele: elég egyetlen ilyen karakter ahhoz, hogy a válasz igen legyen. Az isupper() az ékezetes nagybetűket is felismeri. Ezután egy hibak nevű listába gyűjtöm, mi hiányzik: ha a hossz kisebb nyolcnál, ha nincs számjegy vagy nincs nagybetű. A végén, ha a lista üres, kiírom, hogy a jelszó megfelel, különben a join() függvénnyel vesszővel elválasztva felsorolom a hiányzó elemeket. Azért gyűjtöm listába a hibákat, mert így egyetlen, áttekinthető üzenetet kap a felhasználó. Teszteltem is: az alma12 jelszóra azt írja ki, hogy hiányzik a legalább 8 karakter és a nagybetű, a Kertiszek9 pedig megfelel, mert tíz karakter, van benne nagy K és egy 9-es."
+      }
+    ],
+    "notes": [
+      "A megoldás minden feltételt helyesen vizsgál, és a hiányzó elemeket egy üzenetben sorolja fel; két tesztesettel (rossz és jó jelszó) igazolja a működést.",
+      "A magyarázat megnevezi a felhasznált eszközöket (logikai változó, eldöntés tétele, isdigit/isupper, join) és indokolja a tervezési döntést (a hibák listába gyűjtése).",
+      "Kiegészítő kérdésre jó válasz: írásjelhez egy harmadik logikai változó kell, pl. if not k.isalnum(): van_jel = True."
+    ]
+  }
+}

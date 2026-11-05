@@ -1,0 +1,83 @@
+{
+  "schemaVersion": 1,
+  "id": "dig-sp-emelt-operacios-rendszerek",
+  "subject": "digitalis-kultura",
+  "revision": 1,
+  "level": "emelt",
+  "source": "generated",
+  "topic": "hardver-szoftver",
+  "title": "Az operációs rendszer feladatai és felépítése",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "speaking",
+  "type": "elmeleti-tetel",
+  "partNumber": 1,
+  "instructionsHu": "Mutassa be az operációs rendszer szerepét és fő feladatait (folyamat-, memória-, fájl- és perifériakezelés, felhasználókezelés)! Hasonlítson össze néhány operációs rendszert, és válaszoljon a tételkártya kérdésére!",
+  "prompts": [
+    "Az operációs rendszer fogalma, helye a hardver és az alkalmazások között; a kernel; a rendszerindítás",
+    "Folyamatkezelés: ütemezés, időosztás, több mag",
+    "Memóriakezelés: védelem, virtuális memória",
+    "Fájlrendszer: könyvtárszerkezet, elérési út, fájlrendszertípusok; perifériakezelés illesztőprogramokkal",
+    "Felhasználók és jogosultságok; operációs rendszerek típusai és licencei"
+  ],
+  "followUpQuestions": [
+    "Miért lassul le a gép, ha kevés a RAM?",
+    "Miért nem lehet egy 6 GB-os videót FAT32-es pendrive-ra másolni?"
+  ],
+  "usefulPhrases": [
+    {
+      "en": "kernel",
+      "hu": "az operációs rendszer magja, közvetlenül kezeli a hardvert"
+    },
+    {
+      "en": "folyamat (process)",
+      "hu": "egy futó program a saját memóriaterületével"
+    },
+    {
+      "en": "ütemező, időosztás",
+      "hu": "a processzoridő elosztása a folyamatok között rövid időszeletekben"
+    },
+    {
+      "en": "virtuális memória, lapozás",
+      "hu": "a háttértár egy része a RAM kiegészítéseként"
+    },
+    {
+      "en": "fájlrendszer (NTFS, FAT32, ext4)",
+      "hu": "a fájlok háttértáron való szervezésének módja"
+    },
+    {
+      "en": "illesztőprogram (driver)",
+      "hu": "az OS és egy hardvereszköz közti „fordító”"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Tételkártya",
+      "text": "A feladatkezelőben (Windows) vagy a top paranccsal (Linux) látható, hogy egyszerre több mint kétszáz folyamat fut, pedig a processzornak csak 8 magja van. Hogyan lehetséges ez?"
+    }
+  ],
+  "keyPoints": [
+    "Az operációs rendszer a hardver és a felhasználói programok közti rendszerszoftver: erőforrásokat oszt el, szolgáltatásokat nyújt a programoknak, és felhasználói felületet ad; magja a kernel.",
+    "Rendszerindítás: a firmware (UEFI/BIOS) ellenőrzi a hardvert, elindítja a rendszerbetöltőt, az betölti a kernelt.",
+    "Folyamatkezelés: az ütemező időszeletekben váltogatja a futó folyamatokat (időosztás); a váltás olyan gyors, hogy párhuzamosnak tűnik; valódi párhuzamosság csak a magok számáig van; a legtöbb folyamat ráadásul éppen várakozik.",
+    "Memóriakezelés: minden folyamat saját, védett címtartományt kap; a virtuális memória a háttértár egy részét is használja, ha kevés a RAM (lapozás).",
+    "Fájlkezelés: hierarchikus könyvtárszerkezet, elérési út (C:\\Users\\… vagy /home/…), fájlrendszerek (NTFS, FAT32 – legfeljebb 4 GiB-os fájlok, exFAT, ext4).",
+    "Perifériakezelés illesztőprogramokkal (driverekkel); felhasználói fiókok és hozzáférési jogosultságok (olvasás, írás, futtatás), rendszergazda.",
+    "Típusok: asztali (Windows, macOS, Linux), mobil (Android, iOS), szerver; licenc szerint zárt (kereskedelmi) vagy nyílt forráskódú (Linux)."
+  ],
+  "speakingSeconds": 600,
+  "prepSeconds": 900,
+  "sampleAnswer": {
+    "turns": [
+      {
+        "speaker": "candidate",
+        "text": "Az operációs rendszer olyan rendszerszoftver, amely a hardver és a felhasználói programok között helyezkedik el: elosztja az erőforrásokat, szolgáltatásokat nyújt a programoknak, és felületet ad a felhasználónak. A magja a kernel, amely közvetlenül kezeli a hardvert. Bekapcsoláskor a firmware, vagyis az UEFI ellenőrzi az eszközöket, elindítja a rendszerbetöltőt, az pedig betölti a kernelt.\n\nAz egyik fő feladat a folyamatkezelés. Ez válaszol a tételkártya kérdésére is: a nyolc mag egyszerre valóban csak nyolc folyamatot tud futtatni, de az ütemező nagyon rövid, néhány ezredmásodperces időszeletekben váltogatja a folyamatokat. Ez az időosztás, és olyan gyors, hogy számunkra párhuzamosnak tűnik. Ráadásul a kétszáz folyamat nagy része éppen vár valamire, például egy billentyűleütésre vagy hálózati adatra, és ilyenkor nem kér processzoridőt.\n\nA memóriakezelésnél minden folyamat saját, védett memóriaterületet kap, így egy hibás program nem írhatja felül a többit. Ha kevés a RAM, a virtuális memória a háttértár egy részét is használja; ez lapozással jár, és mivel a háttértár sokkal lassabb, a gép lelassul.\n\nA fájlkezelés hierarchikus könyvtárszerkezetet ad, a fájlokat elérési úttal azonosítjuk, például C:\\Users\\Anna\\dokumentum.docx vagy /home/anna/dokumentum.odt. A fájlrendszerek eltérnek: a FAT32 egyszerű, de legfeljebb 4 GiB-os fájlokat kezel, az NTFS és a Linux ext4 jogosultságokat és naplózást is tud. A perifériákat az illesztőprogramok, a driverek teszik elérhetővé. Fontos még a felhasználókezelés: fiókok, jelszavak, olvasási, írási, futtatási jogok, és a rendszergazda, aki programot telepíthet.\n\nTípus szerint vannak asztali rendszerek, mint a Windows, a macOS és a Linux, mobil rendszerek, mint az Android és az iOS, és szerveroperációs rendszerek. Licenc szerint a Windows és a macOS zárt, kereskedelmi, a Linux nyílt forráskódú; az Android is Linux-kernelre épül."
+      }
+    ],
+    "notes": [
+      "Tartalom: minden fő feladatot konkrét példával mutat be (időszelet, védett memória, elérési út, FAT32 korlátja, jogosultságok), és a tételkártya kérdésére az ütemezés és a várakozó folyamatok kettős magyarázatát adja.",
+      "Összefüggések: a virtuális memóriánál megmagyarázza a lassulás okát (háttértár sebessége), a fájlrendszereknél a gyakorlati következményt – emelt szinten ezek a pontos, összefüggő kifejtés jelei.",
+      "Felépítés: az általános fogalomtól (kernel, indulás) halad a feladatokon át az összehasonlításig."
+    ]
+  }
+}

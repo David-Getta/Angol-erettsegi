@@ -1,0 +1,82 @@
+{
+  "schemaVersion": 1,
+  "id": "dig-sp-emelt-binaris-kereses",
+  "subject": "digitalis-kultura",
+  "revision": 1,
+  "level": "emelt",
+  "source": "generated",
+  "topic": "algoritmizalas",
+  "title": "Programozási feladat: bináris keresés",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "speaking",
+  "type": "programozasi-tetel",
+  "partNumber": 2,
+  "instructionsHu": "Programozási feladat: írjon függvényt, amely egy növekvően rendezett listában bináris (felezéses) kereséssel megkeres egy értéket, és visszaadja az indexét (vagy −1-et, ha nincs benne) és a vizsgálati lépések számát! Próbálja ki a [3, 8, 12, 17, 23, 31, 42, 56, 64, 77, 85, 91] listán a 64-gyel és a 20-szal! Hasonlítsa össze a lineáris kereséssel!",
+  "prompts": [
+    "Az algoritmus feltétele: rendezett adatok",
+    "Alsó és felső határ, középső elem, a tartomány felezése",
+    "A ciklus megállási feltétele, a „nincs benne” eset",
+    "A két próba lépésről lépésre",
+    "Lépésszám: log₂ n a lineáris keresés n lépésével szemben"
+  ],
+  "followUpQuestions": [
+    "Mi történne, ha az also = kozep + 1 helyett also = kozep állna?",
+    "Mikor éri meg előbb rendezni, aztán binárisan keresni?"
+  ],
+  "usefulPhrases": [
+    {
+      "en": "bináris (felezéses) keresés",
+      "hu": "rendezett adatokban minden lépésben felezi a keresési tartományt"
+    },
+    {
+      "en": "also, felso, kozep",
+      "hu": "a vizsgált tartomány határai és középső indexe"
+    },
+    {
+      "en": "(also + felso) // 2",
+      "hu": "a középső index egészosztással"
+    },
+    {
+      "en": "return kozep, lepes",
+      "hu": "két érték visszaadása (rendezett pár)"
+    },
+    {
+      "en": "lineáris keresés",
+      "hu": "elemenként végignézi a listát, rendezetlen adatokon is működik"
+    },
+    {
+      "en": "logaritmikus lépésszám (log₂ n)",
+      "hu": "az adatok megduplázása csak egy lépéssel növeli a keresést"
+    }
+  ],
+  "sources": [
+    {
+      "title": "A feladat",
+      "text": "Rendezett lista: [3, 8, 12, 17, 23, 31, 42, 56, 64, 77, 85, 91]. Írjon binaris_kereses(t, keresett) függvényt, amely visszaadja a keresett elem indexét (vagy −1-et) és a lépések számát! Keresse meg a 64-et és a 20-at!"
+    }
+  ],
+  "keyPoints": [
+    "A bináris keresés csak rendezett listán működik.",
+    "Két határ (also, felso) jelöli a még lehetséges részt; mindig a középső elemet (also + felso) // 2 vizsgálja.",
+    "Ha a középső kisebb a keresettnél, also = kozep + 1, ha nagyobb, felso = kozep − 1; a ±1 nélkül végtelen ciklus lehet.",
+    "A ciklus addig fut, amíg also <= felso; ha a tartomány kiürül, az elem nincs a listában (−1).",
+    "64: középső a 31 (5-ös index) → jobbra; középső a 64 (8-as index) → 2 lépés; 20: 31, 12, 17, 23 után kiürül → −1, 4 lépés.",
+    "Lépésszám: legfeljebb kb. log₂ n + 1 (12 elemnél 4, egymilliónál 20), a lineáris keresésnél legrosszabb esetben n."
+  ],
+  "speakingSeconds": 600,
+  "prepSeconds": 900,
+  "sampleAnswer": {
+    "turns": [
+      {
+        "speaker": "candidate",
+        "text": "A bináris keresés a rendezett adatok előnyét használja ki: minden lépésben megfelezi azt a részt, ahol a keresett elem lehet.\n\ndef binaris_kereses(t, keresett):\n    also, felso = 0, len(t) - 1\n    lepes = 0\n    while also <= felso:\n        lepes += 1\n        kozep = (also + felso) // 2\n        if t[kozep] == keresett:\n            return kozep, lepes\n        elif t[kozep] < keresett:\n            also = kozep + 1\n        else:\n            felso = kozep - 1\n    return -1, lepes\n\nszamok = [3, 8, 12, 17, 23, 31, 42, 56, 64, 77, 85, 91]\nprint(binaris_kereses(szamok, 64))\nprint(binaris_kereses(szamok, 20))\n\nA függvény két határt tart nyilván: kezdetben az also az első, a felso az utolsó index. Amíg az also nem nagyobb a felsőnél, van még vizsgálandó rész: kiszámolom a középső indexet egészosztással, és összehasonlítom a középső elemet a keresettel. Ha egyenlő, visszaadom az indexet és a lépések számát. Ha a középső kisebb, a keresett csak tőle jobbra lehet, ezért az also a középső utáni index lesz; ha nagyobb, a felso a középső előtti. A plusz-mínusz egy azért fontos, mert nélküle a tartomány nem szűkülne, és végtelen ciklus lehetne. Ha a ciklus véget ér, a tartomány kiürült, tehát az elem nincs a listában, ilyenkor −1-et adok vissza. A 64 keresésekor először a 31 a középső elem, ez kisebb, így jobbra megyek; a következő középső már a 64, a 8-as indexen, tehát 2 lépés kellett. A 20-nál a 31, a 12, a 17 és a 23 következik, utána a tartomány kiürül, 4 lépés után −1 az eredmény. A lineáris keresés legrosszabb esetben minden elemet megnéz, a bináris keresés viszont legfeljebb kettes alapú logaritmus n, plusz egy lépést tesz: egymillió elemnél körülbelül húszat egymillió helyett. Cserébe az adatoknak rendezettnek kell lenniük, ezért akkor éri meg, ha sokszor keresünk ugyanabban az adathalmazban."
+      }
+    ],
+    "notes": [
+      "A megoldás helyes, a „nincs benne” esetet is kezeli, és a két próbát lépésről lépésre végigvezeti (64: 2 lépés, 20: 4 lépés, −1).",
+      "A magyarázat kitér a kritikus részletre (a ±1 a határok módosításánál, különben végtelen ciklus) – a vizsgáztató tipikusan ezt kérdezi.",
+      "Összefüggések: logaritmikus és lineáris lépésszám összevetése konkrét számmal, és annak indoklása, mikor éri meg rendezni."
+    ]
+  }
+}

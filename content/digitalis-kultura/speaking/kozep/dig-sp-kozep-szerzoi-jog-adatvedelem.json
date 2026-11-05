@@ -1,0 +1,82 @@
+{
+  "schemaVersion": 1,
+  "id": "dig-sp-kozep-szerzoi-jog-adatvedelem",
+  "subject": "digitalis-kultura",
+  "revision": 1,
+  "level": "kozep",
+  "source": "generated",
+  "topic": "informacios-tarsadalom",
+  "title": "Szerzői jog, licencek és a személyes adatok védelme",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "speaking",
+  "type": "elmeleti-tetel",
+  "partNumber": 1,
+  "instructionsHu": "Mutassa be a szerzői jog és a szoftverlicencek alapjait, valamint a személyes adatok védelmének szabályait! A tételkártya esete alapján magyarázza el, mire kell figyelni, ha mások műveit használjuk és az interneten publikálunk!",
+  "prompts": [
+    "A szerzői jog alapjai: mi védett, mikortól, meddig; idézés és forrásmegjelölés",
+    "Szoftverlicencek: kereskedelmi, shareware, freeware, nyílt forráskódú; Creative Commons licencek",
+    "Személyes adat, különleges adat; a GDPR legfontosabb elvei és az érintett jogai",
+    "Digitális lábnyom, közösségi média, mások képmásának közzététele",
+    "A tételkártya esetének megoldása"
+  ],
+  "followUpQuestions": [
+    "Mi a különbség a freeware és a nyílt forráskódú szoftver között?",
+    "Milyen jogai vannak, ha egy cég jogosulatlanul kezeli az adatait?"
+  ],
+  "usefulPhrases": [
+    {
+      "en": "szerzői jog",
+      "hu": "a mű alkotóját automatikusan megillető jogok összessége"
+    },
+    {
+      "en": "licenc",
+      "hu": "felhasználási engedély és annak feltételei"
+    },
+    {
+      "en": "nyílt forráskódú szoftver",
+      "hu": "forráskódja megismerhető, módosítható és a licenc szerint terjeszthető"
+    },
+    {
+      "en": "Creative Commons (CC BY, NC, ND, SA)",
+      "hu": "szabványos, a szerző által választott felhasználási feltételek"
+    },
+    {
+      "en": "GDPR",
+      "hu": "az EU általános adatvédelmi rendelete"
+    },
+    {
+      "en": "digitális lábnyom",
+      "hu": "az online tevékenységünk után maradó, nehezen törölhető nyomok"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Tételkártya",
+      "text": "Egy diák az iskolai prezentációjához egy internetről letöltött fotót és egy népszerű zeneszám részletét használná, majd a bemutatót – osztálytársairól készült képekkel együtt – egy videómegosztóra is feltöltené. Mire kell figyelnie?"
+    }
+  ],
+  "keyPoints": [
+    "A szerzői jog a művet (szöveg, kép, zene, szoftver, film) a létrehozásától automatikusan védi, regisztráció nélkül; Magyarországon a szerző halálától számított 70 évig.",
+    "Idézni a cél által indokolt terjedelemben, a szerző és a forrás megjelölésével lehet; a megjelölés nélküli átvétel plágium.",
+    "Licencek: kereskedelmi (fizetős, felhasználási jogot adunk el), shareware (próbaváltozat), freeware (ingyenes, de zárt forrású), nyílt forráskódú (a forráskód megismerhető, módosítható, pl. GPL); a Creative Commons jelölések: BY – szerző megnevezése, NC – nem kereskedelmi, ND – nem módosítható, SA – azonos licenccel terjeszthető.",
+    "Személyes adat minden, ami alapján egy ember azonosítható (név, cím, fénykép, IP-cím); a GDPR szerint kezeléséhez jogalap kell, célhoz kötött és a lehető legkevesebb adatra korlátozódik.",
+    "Az érintett jogai: tájékoztatás, hozzáférés, helyesbítés, törlés (elfeledtetés), tiltakozás, adathordozhatóság.",
+    "Mások felismerhető képének közzétételéhez az ő hozzájárulásuk kell; a feltöltött tartalom nehezen törölhető (digitális lábnyom)."
+  ],
+  "speakingSeconds": 480,
+  "prepSeconds": 900,
+  "sampleAnswer": {
+    "turns": [
+      {
+        "speaker": "candidate",
+        "text": "A szerzői jog a szellemi alkotásokat védi: a szöveget, a fényképet, a zenét, a filmet és a számítógépes programot is. A védelem a mű létrehozásával automatikusan keletkezik, nem kell hozzá regisztráció, és Magyarországon a szerző halála után még 70 évig tart. Más művéből idézni lehet, de csak a cél által indokolt terjedelemben és a szerző és a forrás megjelölésével, különben plágiumot követünk el.\n\nA szoftvereknél a licenc határozza meg, mit tehetünk a programmal. A kereskedelmi szoftverért fizetünk, a shareware egy ideig vagy korlátozottan ingyen kipróbálható, a freeware ingyenes, de a forráskódja általában zárt. A nyílt forráskódú szoftver forráskódja megismerhető és módosítható, ilyen például a Linux vagy a LibreOffice. Képeknél, zenéknél gyakoriak a Creative Commons licencek: a BY azt jelenti, hogy a szerzőt meg kell nevezni, az NC tiltja a kereskedelmi célú felhasználást, az ND a módosítást, az SA pedig azt kéri, hogy azonos licenccel terjesszük tovább.\n\nA személyes adat minden olyan információ, amely alapján valaki azonosítható, például a név, a lakcím, a fénykép vagy akár az IP-cím. Az EU adatvédelmi rendelete, a GDPR szerint ezeket csak jogalappal, például hozzájárulással, meghatározott célra és a szükséges mértékben szabad kezelni. Az érintettnek joga van tájékoztatást kérni, az adatait helyesbíttetni vagy töröltetni.\n\nA tételkártyán szereplő diák az iskolai órán a fotót forrásmegjelöléssel használhatja, de ha a bemutatót nyilvánosan feltölti, ahhoz már a licencnek is meg kell engednie a felhasználást, ezért érdemes CC licencű képet keresni. A zeneszám részlete miatt a videómegosztó le is tilthatja a videót. Az osztálytársai felismerhető képét csak az ő hozzájárulásukkal teheti közzé, és gondolnia kell arra, hogy amit feltölt, az a digitális lábnyomuk része lesz."
+      }
+    ],
+    "notes": [
+      "Tartalom: a szerzői jog, a licencek és az adatvédelem mindhárom pillére megjelenik, pontos tényekkel (automatikus védelem, 70 év, CC-elemek jelentése, GDPR-elvek).",
+      "Összefüggések: a tételkártya esetét a fogalmak alkalmazásával oldja meg, és megkülönbözteti az iskolai felhasználást a nyilvános közzétételtől – ez az a gondolkodás, amit a szóbelin értékelnek.",
+      "Szaknyelv: a freeware és a nyílt forráskód különbségét pontosan megfogalmazza; ezt a vizsgáztatók gyakran rákérdező kérdésként is felteszik."
+    ]
+  }
+}

@@ -1,0 +1,92 @@
+{
+  "schemaVersion": 1,
+  "id": "dig-sp-kozep-szamitogep-felepitese",
+  "subject": "digitalis-kultura",
+  "revision": 1,
+  "level": "kozep",
+  "source": "generated",
+  "topic": "hardver-szoftver",
+  "title": "A számítógép felépítése és a Neumann-elvek",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "speaking",
+  "type": "elmeleti-tetel",
+  "partNumber": 1,
+  "instructionsHu": "Mutassa be a számítógép felépítését és működésének alapelveit! Térjen ki a Neumann-elvekre, a központi egység és a perifériák szerepére, a memória és a háttértár különbségére, és értelmezze a tételkártyán szereplő laptophirdetés adatait!",
+  "prompts": [
+    "A Neumann-elvek és jelentőségük",
+    "A központi egység: processzor (vezérlőegység, aritmetikai-logikai egység), operatív memória (RAM), ROM",
+    "Perifériák: bemeneti, kimeneti és ki-bemeneti eszközök példákkal",
+    "Memória és háttértár összehasonlítása (sebesség, kapacitás, tartósság)",
+    "A hirdetés adatainak értelmezése: magok, órajel, RAM, SSD, mértékegységek"
+  ],
+  "followUpQuestions": [
+    "Miért gyorsabb egy SSD, mint egy HDD?",
+    "Mi történik a RAM tartalmával, ha áramszünet van?",
+    "Mi a különbség a GB és a GiB között?"
+  ],
+  "usefulPhrases": [
+    {
+      "en": "Neumann-elvek",
+      "hu": "a mai számítógépek működésének alapelvei (Neumann János, 1945)"
+    },
+    {
+      "en": "tárolt program elve",
+      "hu": "a program és az adat ugyanabban a belső memóriában van"
+    },
+    {
+      "en": "processzor (CPU), ALU, vezérlőegység",
+      "hu": "a műveletvégző és az irányító rész"
+    },
+    {
+      "en": "operatív memória (RAM)",
+      "hu": "a futó programok gyors, illékony tára"
+    },
+    {
+      "en": "háttértár (SSD, HDD)",
+      "hu": "tartós, nagy kapacitású adattárolás"
+    },
+    {
+      "en": "periféria",
+      "hu": "a központi egységhez csatlakozó be- vagy kimeneti eszköz"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Tételkártya – laptophirdetés",
+      "text": "„4 magos processzor, 3,2 GHz; 16 GB RAM; 512 GB SSD; 15,6 colos Full HD (1920 × 1080) kijelző; Wi-Fi 6, USB-C.” Egy ismerőse ezt a laptopot vásárolná meg. Magyarázza el neki, mit jelentenek ezek az adatok!"
+    }
+  ],
+  "keyPoints": [
+    "Neumann-elvek: kettes számrendszer, teljesen elektronikus működés, soros utasításvégrehajtás, belső memória, tárolt program (a program és az adat ugyanabban a memóriában, azonos módon), univerzális gép.",
+    "A processzor (CPU) hajtja végre az utasításokat: a vezérlőegység irányít, az aritmetikai-logikai egység (ALU) számol; a sebességet az órajel (GHz) és a magok száma is befolyásolja.",
+    "A RAM gyors, írható-olvasható, de illékony operatív memória: itt vannak a futó programok és adataik; a ROM (firmware, pl. UEFI) csak olvasható, az indításhoz kell.",
+    "A háttértár (SSD, HDD, pendrive) nagy kapacitású és tartós, de lassabb; kikapcsoláskor is megőrzi az adatokat.",
+    "Perifériák: bemeneti (billentyűzet, egér, mikrofon, szkenner), kimeneti (monitor, nyomtató, hangszóró), ki-bemeneti (érintőképernyő, hálózati kártya, háttértár).",
+    "Mértékegységek: 1 bájt = 8 bit; a kB, MB, GB 1000-es, a KiB, MiB, GiB 1024-es váltószámú; a GHz másodpercenkénti milliárd ciklust jelent.",
+    "A hirdetés értelmezése: 4 mag a párhuzamos munkához, 16 GB RAM sok program egyidejű futtatásához, 512 GB SSD gyors, tartós tárolás, Full HD = 1920 × 1080 képpont."
+  ],
+  "speakingSeconds": 480,
+  "prepSeconds": 900,
+  "sampleAnswer": {
+    "turns": [
+      {
+        "speaker": "candidate",
+        "text": "A mai számítógépek működése a Neumann-elveken alapul, amelyeket Neumann János fogalmazott meg 1945-ben. Ezek szerint a gép kettes számrendszerben, teljesen elektronikusan dolgozik, az utasításokat egymás után, sorban hajtja végre, és van belső memóriája, amelyben a program és az adatok is azonos módon tárolódnak – ez a tárolt program elve. A gép univerzális: más programmal más feladatot old meg.\n\nA központi egység legfontosabb része a processzor. Ebben a vezérlőegység értelmezi és irányítja az utasítások végrehajtását, az aritmetikai-logikai egység pedig a számításokat és az összehasonlításokat végzi. A futó programok és adataik az operatív memóriában, a RAM-ban vannak; ez gyors, de kikapcsoláskor elveszíti a tartalmát. A ROM-ban, illetve a firmware-ben vannak az indításhoz szükséges programok. Tartós tárolásra a háttértárakat használjuk: az SSD flash memóriával, mozgó alkatrész nélkül működik, a HDD forgó mágneslemezekkel; mindkettő lassabb a RAM-nál, de nagyobb és tartós.\n\nA perifériák közül bemeneti eszköz a billentyűzet, az egér vagy a mikrofon, kimeneti a monitor, a nyomtató és a hangszóró, ki-bemeneti például az érintőképernyő vagy a hálózati kártya.\n\nA hirdetés szerint a laptop processzora négymagos, tehát egyszerre négy feladatot tud valóban párhuzamosan végezni, és a 3,2 GHz azt jelenti, hogy másodpercenként 3,2 milliárd órajelciklus van. A 16 GB RAM elég ahhoz, hogy sok program fusson egyszerre lassulás nélkül. Az 512 GB SSD a háttértár; itt fontos tudni, hogy a gyártók 1000-es váltószámmal számolnak, ezért az operációs rendszer kb. 476 GiB-ot mutat. A Full HD kijelző 1920 × 1080 képpontos."
+      },
+      {
+        "speaker": "examiner",
+        "text": "Miért gyorsabb egy SSD, mint egy HDD?"
+      },
+      {
+        "speaker": "candidate",
+        "text": "Mert az SSD-ben nincs mozgó alkatrész: az adatot közvetlenül, elektronikusan éri el a flash memóriacellákból. A HDD-nél meg kell várni, amíg a forgó lemez a megfelelő helyre fordul, és az író-olvasó fej odaáll, ez sokkal több időt vesz igénybe, főleg sok kis fájl olvasásakor."
+      }
+    ],
+    "notes": [
+      "Tartalmi teljesség: mind az öt kifejtési szempontot érinti, a Neumann-elveket hiánytalanul felsorolja, és minden fogalomhoz példát mond.",
+      "Szaknyelv és összefüggések: pontos szakkifejezéseket használ (vezérlőegység, ALU, illékony memória, firmware), és a fogalmakat a hirdetés konkrét adataival kapcsolja össze – ez emeli ki a jó feleletet a puszta felsorolásból.",
+      "Az 512 GB ≈ 476 GiB számítás (512 · 10⁹ / 1024³) jól mutatja, hogy a mértékegységek különbségét érti, nem csak bemagolta."
+    ]
+  }
+}
