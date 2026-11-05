@@ -1,0 +1,121 @@
+{
+  "schemaVersion": 1,
+  "id": "mat-gd-writing-osszetett",
+  "subject": "matematika",
+  "revision": 1,
+  "level": "kozep",
+  "source": "generated",
+  "topic": "utmutato",
+  "title": "Összetett, szöveges feladat (II/B jellegű)",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "guide",
+  "type": "writing",
+  "target": "osszetett",
+  "summaryHu": "Az összetett feladat hosszabb, életszerű szövegű feladat (pl. kirándulás, medence, megtakarítás), amelynek 3–4 részkérdése több témakört kapcsol össze: százalék, kombinatorika, valószínűség, térgeometria, sorozatok. Középszinten a II/B-ben 17 pontos, emelt szinten 16 pontos. A legtöbb pontot a helyes modell felállítása és a lépések indoklása hozza.",
+  "steps": [
+    {
+      "title": "A szöveg feldolgozása",
+      "explanation": "Olvasd el a teljes szöveget, húzd alá az adatokat és a kulcsszavakat (pl. „20%-kal több”, „visszatevés nélkül”, „legalább”, „ezer forintra kerekítve”). Minden részkérdésnél írd ki, mely adatok kellenek hozzá.",
+      "tips": [
+        "Az adatok mértékegységét egységesítsd (m és cm, perc és óra).",
+        "Figyeld, melyik részkérdés használja egy korábbi eredményét."
+      ]
+    },
+    {
+      "title": "A modell felállítása",
+      "explanation": "Döntsd el, melyik matematikai modell illik a helyzethez: százalék (szorzó), sorozat (számtani vagy mértani), kombinatorika (számít-e a sorrend), valószínűség (klasszikus modell, komplementer), geometria (melyik test, mely felületek).",
+      "tips": [
+        "Mondd ki a modellt egy mondatban: „Az egyenleg mértani sorozat összege, mert …”",
+        "Ábrát készíts térgeometriai helyzetnél."
+      ]
+    },
+    {
+      "title": "Megoldás és részeredmények",
+      "explanation": "Lépésenként számolj, a részeredményeket mértékegységgel írd le. Ha egy részkérdést nem tudsz megoldani, a következőt a feladat adataival (vagy egy feltételezett részeredménnyel) akkor is próbáld meg.",
+      "tips": [
+        "A helyes gondolatmenettel, hibás részeredménnyel továbbszámolva is pont jár.",
+        "Számológépes lépésnél írd le a beírt kifejezést."
+      ]
+    },
+    {
+      "title": "Valóságellenőrzés és válasz",
+      "explanation": "Nézd meg, van-e értelme az eredménynek a helyzetben (egész darabszám, reális nagyságrend, kerekítés iránya), majd válaszolj a kérdésre teljes mondatban.",
+      "tips": [
+        "Buszból, csempéből felfelé kerekítünk.",
+        "A kért kerekítést (pl. ezer forintra) pontosan tartsd be."
+      ]
+    }
+  ],
+  "phrases": [
+    {
+      "group": "Modell",
+      "en": "A … mértani sorozatot alkot, mert …",
+      "hu": "Sorozatmodell indoklása (pl. évente ugyanannyiszorosára nő)."
+    },
+    {
+      "group": "Modell",
+      "en": "Mivel a sorrend nem számít, kombinációt használunk.",
+      "hu": "Kombinatorikai modell indoklása."
+    },
+    {
+      "group": "Modell",
+      "en": "A két esemény egymást kizárja, ezért a valószínűségek összeadódnak.",
+      "hu": "Valószínűségek összeadásának feltétele."
+    },
+    {
+      "group": "Modell",
+      "en": "Visszatevés nélkül húzunk, ezért a második húzásnál … elem marad.",
+      "hu": "A mintavétel típusának kezelése."
+    },
+    {
+      "group": "Százalék",
+      "en": "10%-kal több = 1,1-szeres",
+      "hu": "Százalékos változás szorzóval."
+    },
+    {
+      "group": "Mértékegység",
+      "en": "1 m³ = 1000 liter",
+      "hu": "Térfogat átváltása literre."
+    },
+    {
+      "group": "Kerekítés",
+      "en": "Ezer forintra kerekítve: …",
+      "hu": "A kért kerekítés jelzése a válaszban."
+    },
+    {
+      "group": "Válasz",
+      "en": "Egy tanuló számára a kirándulás 19 800 Ft-ba kerül.",
+      "hu": "Teljes mondatos válasz mértékegységgel."
+    }
+  ],
+  "mistakes": [
+    {
+      "wrong": "A medence felszínébe a víz felszínét (fedőlapot) is beleszámolom.",
+      "right": "Csak az aljat és a négy oldalfalat számolom.",
+      "why": "A csempézendő felület a helyzettől függ: a nyitott medence tetején nincs csempe; a modellt a szöveghez kell igazítani."
+    },
+    {
+      "wrong": "„Pontosan egyikük nyer” esetén csak az egyik sorrendet számolom.",
+      "right": "Mindkét sorrendet (nyer–nem nyer, nem nyer–nyer) összeadom.",
+      "why": "A két sorrend két, egymást kizáró eset; az egyik elhagyása a valószínűség felét adja."
+    },
+    {
+      "wrong": "A 20%-os csökkentés után az eredeti árat a csökkentett ár 120%-ának veszem.",
+      "right": "A csökkentett ár az eredeti 80%-a: eredeti = csökkentett / 0,8.",
+      "why": "A százalék mindig ahhoz viszonyít, amiből a változás kiindul."
+    }
+  ],
+  "checklist": [
+    "Minden részkérdésnél leírtam, melyik modellt használom és miért?",
+    "Az adatok mértékegysége egységes, és a végeredmény a kért mértékegységben van?",
+    "A kért kerekítést betartottam, és a kerekítés iránya illik a helyzethez?",
+    "Van-e értelme az eredménynek (egész darabszám, reális nagyság)?",
+    "Minden részkérdés teljes mondatos válasszal zárul?"
+  ],
+  "timing": "Középszinten egy II/B feladatra kb. 35 perc jut (a rubrika szerint); a kiválasztásra szánj 5 percet. Emelt szinten egy feladatra kb. 35 perc; a hosszú szövegű feladatnál az első 5 percet a szöveg feldolgozására és a modell megtervezésére fordítsd.",
+  "levelNotes": {
+    "kozep": "Középszinten a II/B három feladatából (16–18.) kettőt kell megoldani, 17–17 pontért, 3–4 részkérdéssel; a kihagyott feladat sorszámát jelölni kell. Gyakori témák: százalékszámítás, statisztika (diagram), kombinatorika, valószínűség, térgeometria, sorozatok.",
+    "emelt": "Emelt szinten az összetett feladatok a II. rész 16 pontos feladatai: hosszabb modellezés (pl. pénzügyi számítás, optimalizálás deriválttal, binomiális eloszlás), ahol a modell indoklása és a feltételek vizsgálata is elvárt."
+  }
+}

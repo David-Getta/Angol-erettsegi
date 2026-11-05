@@ -1,0 +1,78 @@
+{
+  "schemaVersion": 1,
+  "id": "kem-sp-emelt-benzol-a-tetel",
+  "subject": "kemia",
+  "revision": 1,
+  "level": "emelt",
+  "source": "generated",
+  "topic": "szenhidrogenek",
+  "title": "Az aromás szénhidrogének – a benzol",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "speaking",
+  "type": "a-tetel",
+  "partNumber": 1,
+  "instructionsHu": "Mutassa be a benzol molekulaszerkezetét és az aromás jelleg feltételeit! A szerkezet alapján magyarázza meg a benzol jellemző reakcióit (szubsztitúció, addíció, égés), és hasonlítsa össze az alkénekével! Ismertesse a benzol fizikai tulajdonságait, élettani hatását és néhány fontos benzolszármazékot!",
+  "prompts": [
+    "A benzol szerkezete: delokalizált π-elektronrendszer, síkalkat, kötéshossz; az aromás jelleg",
+    "Fizikai tulajdonságok és élettani hatás",
+    "Szubsztitúciós reakciók: brómozás, nitrálás (katalizátor, egyenlet)",
+    "Addíció és égés; összevetés az alkénekkel",
+    "Benzolszármazékok: toluol, fenol, sztirol, nitrobenzol – felhasználás"
+  ],
+  "followUpQuestions": [
+    "Miért nem színteleníti el a benzol a brómos vizet, ha a Kekulé-képletben kettős kötések vannak?"
+  ],
+  "usefulPhrases": [
+    {
+      "en": "delokalizált π-elektronrendszer",
+      "hu": "A hat p-elektron az egész gyűrűre kiterjed – ettől egyformák a kötések."
+    },
+    {
+      "en": "4n + 2 π-elektron",
+      "hu": "Az aromás jelleg feltétele (benzol: n = 1, 6 elektron)."
+    },
+    {
+      "en": "elektrofil szubsztitúció",
+      "hu": "A benzol jellemző reakciótípusa (brómozás, nitrálás)."
+    },
+    {
+      "en": "FeBr₃ katalizátor",
+      "hu": "A benzol brómozásához szükséges."
+    },
+    {
+      "en": "nitrálóelegy: tömény HNO₃ + tömény H₂SO₄",
+      "hu": "A nitrobenzol előállítása."
+    },
+    {
+      "en": "kormozó láng",
+      "hu": "A nagy széntartalmú vegyületek égésének jellemzője."
+    }
+  ],
+  "sources": [],
+  "keyPoints": [
+    "A benzol (C₆H₆) szabályos hatszög alakú, síkalkatú molekula; minden szénatom sp² hibridállapotú, a kötésszögek 120°-osak.",
+    "A hat szénatom hat p-elektronja gyűrű alakú, delokalizált π-elektronrendszert alkot; a hat C–C kötés egyforma hosszú (139 pm), az egyes és a kettős kötés hossza közötti érték.",
+    "Aromás jelleg: gyűrűs, síkalkatú, konjugált rendszer 4n + 2 (benzolnál 6) delokalizált π-elektronnal; ez különleges stabilitást ad.",
+    "A benzol szubsztitúcióra hajlamos, mert így az aromás rendszer megmarad: C₆H₆ + Br₂ → C₆H₅Br + HBr (FeBr₃ katalizátor).",
+    "Nitrálás: C₆H₆ + HNO₃ → C₆H₅NO₂ + H₂O (tömény kénsav jelenlétében).",
+    "A benzol nem színteleníti el a brómos vizet (szemben az alkénekkel); addícióra csak erélyes körülmények között képes: C₆H₆ + 3 H₂ → C₆H₁₂.",
+    "Színtelen, jellegzetes szagú, vízzel nem elegyedő, a víznél kisebb sűrűségű folyadék; kormozó lánggal ég; rákkeltő.",
+    "Fontos származékok: toluol (oldószer), fenol (műgyanták), sztirol (polisztirol), nitrobenzol (anilingyártás)."
+  ],
+  "speakingSeconds": 480,
+  "prepSeconds": 900,
+  "sampleAnswer": {
+    "turns": [
+      {
+        "speaker": "candidate",
+        "text": "A benzol összegképlete C₆H₆. Molekulája szabályos hatszög alakú és síkalkatú: mind a hat szénatom sp² hibridállapotú, és három σ-kötést létesít – két szomszédos szénatommal és egy hidrogénatommal –, ezért a kötésszögek 120°-osak. Minden szénatomon marad egy, a gyűrű síkjára merőleges p-pálya; ezek átfedéséből a gyűrű síkja alatt és fölött hat elektronból álló delokalizált π-elektronrendszer jön létre. Ezt bizonyítja, hogy mind a hat szén-szén kötés egyforma hosszú, 139 pm, ami az egyes és a kettős kötés hossza közé esik. A Kekulé-féle, váltakozó kettős kötéses képlet tehát csak közelítés. Az aromás jelleg feltétele a gyűrűs, síkalkatú, konjugált szerkezet és a 4n + 2 számú delokalizált π-elektron; a benzolban n = 1, vagyis hat elektron. Az aromás rendszer különösen stabil.\nA benzol színtelen, jellegzetes szagú, a víznél kisebb sűrűségű folyadék, amely a vízzel nem elegyedik, mert apoláris; jó oldószer. Gőze mérgező, tartós hatása rákkeltő, ezért az iskolai kísérletekben helyette például toluolt használunk.\nA stabil aromás rendszer miatt a benzolra a szubsztitúció jellemző, mert így az aromás elektronrendszer megmarad. Vas(III)-bromid katalizátor jelenlétében brómmal brómbenzol keletkezik: C₆H₆ + Br₂ → C₆H₅Br + HBr. Tömény salétromsav és tömény kénsav elegyével nitrobenzol képződik: C₆H₆ + HNO₃ → C₆H₅NO₂ + H₂O. Az alkénekkel ellentétben a benzol a brómos vizet nem színteleníti el. Addícióra csak erélyes körülmények között hajlamos: nikkelkatalizátorral, nagy nyomáson hidrogénnel ciklohexán lesz belőle: C₆H₆ + 3 H₂ → C₆H₁₂. Levegőn erősen kormozó lánggal ég, mert nagy a széntartalma: 2 C₆H₆ + 15 O₂ → 12 CO₂ + 6 H₂O.\nFontos származékai a toluol, amely oldószer és a trotil alapanyaga, a fenol, amelyből műgyanták készülnek, a sztirol, a polisztirol monomerje, és a nitrobenzol, amelyből anilint gyártanak."
+      }
+    ],
+    "notes": [
+      "Tartalom: a szerkezet (sp², delokalizált π-rendszer, 139 pm), az aromás jelleg feltétele, a fizikai tulajdonságok, a reakciók és a származékok mind szerepelnek.",
+      "Összefüggések: a szubsztitúcióra való hajlamot az aromás rendszer stabilitásával indokolja, és kísérleti megfigyeléssel (brómos víz) veti össze az alkénekkel; öt rendezett egyenletet ír, katalizátorral és körülményekkel.",
+      "Szaknyelv: hibridállapot, delokalizáció, Hückel-szabály (4n + 2), szubsztitúció – az emelt szint elvárásainak megfelelő pontosság."
+    ]
+  }
+}

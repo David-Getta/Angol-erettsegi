@@ -1,0 +1,240 @@
+{
+  "schemaVersion": 1,
+  "id": "fol-gr-helymeghatarozas",
+  "subject": "foldrajz",
+  "revision": 1,
+  "level": "kozep",
+  "source": "generated",
+  "topic": "nyelvtan",
+  "title": "Helyek, tájak azonosítása",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "grammar",
+  "type": "lesson",
+  "category": "helymeghatarozas",
+  "summaryHu": "A topográfiai feladatokban egy leírás vagy térképvázlat alapján kell felismerni és pontosan megnevezni egy tájat, hegységet, vizet vagy települést. Pontot csak a felismerhető, egyértelmű, más tájjal nem összetéveszthető névért kapsz. A legtöbb pont azon múlik, hogy a leírás kulcsjellemzőiből (magasság, kőzet, ásványkincs, szomszédos táj vagy folyó) szűkíted-e a lehetőségeket.",
+  "rules": [
+    {
+      "title": "Az azonosítás lépései: tágról szűkre",
+      "explanation": "Először döntsd el, melyik kontinensen, országban, nagytájon vagy (kontinens → nagytáj → középtáj), majd keresd meg a leírás egyedi ismertetőjegyét. Egy jó leírásban mindig van legalább egy olyan adat, amely csak egy helyre igaz (legmagasabb pont, jellegzetes kőzet, híres barlang, szomszédos város).",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "„Az Északi-középhegység vulkáni tagja, itt van a Kékes.” → Mátra",
+          "hu": "A Kékes (1014 m) az ország legmagasabb pontja, csak a Mátrában van."
+        },
+        {
+          "en": "„Bauxit- és mangánérc-lelőhelyek, déli lábánál Veszprém.” → Bakony",
+          "hu": "A bauxit és a veszprémi elhelyezkedés együtt egyértelmű."
+        }
+      ]
+    },
+    {
+      "title": "Kulcsjellemzők, amelyek egyértelművé tesznek egy tájat",
+      "explanation": "Tanuld meg a tájakat a legjellemzőbb adataikkal együtt: kőzet (mészkő → karszt, bazalt → tanúhegy, andezit → vulkáni hegység), ásványkincs, legmagasabb pont, nemzeti park, folyó, központ. A vizsgán ezek a „horgok” szerepelnek a leírásban.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "Baradla-barlang → Aggteleki-karszt",
+          "hu": "Mészkő, karsztosodás, világörökség."
+        },
+        {
+          "en": "Írott-kő (882 m) → Kőszegi-hegység, Alpokalja",
+          "hu": "A Dunántúl legmagasabb pontja."
+        },
+        {
+          "en": "Futóhomok, almatermesztés, Nyíregyháza → Nyírség",
+          "hu": "Az Alföld északkeleti része."
+        }
+      ]
+    },
+    {
+      "title": "A földrajzi nevek helyes alakja",
+      "explanation": "A tulajdonnevet és a földrajzi köznevet (hegység, medence, tó, sziget, alföld) általában kötőjel kapcsolja: Kárpát-medence, Velencei-tó, Margit-sziget, Kelet-európai-síkság. Két tájnevet nagykötőjel köt össze: Duna–Tisza köze. Ha egy név a köznév nélkül is használatos (Bakony, Mátra), a köznév el is maradhat. Ügyelj arra, hogy a név egyértelmű legyen: a Duna és a Mosoni-Duna, a Fehér-Nílus és a Kék-Nílus két különböző víz.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "Kárpát-medence, Velencei-tó, Északi-középhegység",
+          "hu": "Kötőjeles földrajzi nevek."
+        },
+        {
+          "en": "Duna–Tisza köze",
+          "hu": "Két folyónévből alkotott tájnév nagykötőjellel."
+        }
+      ]
+    },
+    {
+      "title": "Térképvázlat olvasása viszonyítási pontokkal",
+      "explanation": "A vázlaton a számozott helyet a környező, biztosan felismerhető elemekhez (folyók, partvonal, határok, fővárosok) viszonyítva azonosítsd. Kérdezd meg magadtól: melyik folyó mellett, melyik hegységtől milyen irányban, a határtól milyen messze van.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "„A Tisza és a Maros összefolyásánál, a déli országhatár közelében” → Szeged",
+          "hu": "A két folyó és a határ együtt egyértelművé teszi a helyet."
+        }
+      ]
+    },
+    {
+      "title": "Helymeghatározás földrajzi koordinátákkal",
+      "explanation": "Emelt szinten előfordul, hogy fokhálózati adatok alapján kell azonosítani egy helyet. Jegyezz meg néhány viszonyítási pontot: Budapest kb. é. sz. 47,5°, k. h. 19°; az Egyenlítő 0°, a térítők 23,5°, a sarkkörök 66,5°; a 0° hosszúsági kör Greenwichen (London) halad át.",
+      "emeltOnly": true,
+      "examples": [
+        {
+          "en": "é. sz. 47,5°, k. h. 19° → Budapest"
+        },
+        {
+          "en": "é. sz. 30°, k. h. 31° → Kairó",
+          "hu": "A Nílus-delta csúcsánál."
+        }
+      ]
+    }
+  ],
+  "commonMistakes": [
+    {
+      "wrong": "A Mátra hazánk legnagyobb átlagmagasságú hegysége.",
+      "right": "A Bükk a legnagyobb átlagmagasságú hegységünk; a Mátrában van a legmagasabb pont (Kékes).",
+      "why": "A legmagasabb pont és a legnagyobb átlagmagasság két külön ismertetőjegy; gyakran éppen ezzel tesztelik, hogy tényleg ismered-e a két hegységet."
+    },
+    {
+      "wrong": "A Mecsek a Dunántúli-középhegység része.",
+      "right": "A Mecsek a Dunántúli-dombság szigetszerű hegysége.",
+      "why": "A Dunántúli-középhegység a Keszthelyi-hegységtől a Visegrádi-hegységig húzódik (Bakony, Vértes, Gerecse, Pilis); a Mecsek ettől délre, a dombság közepén emelkedik."
+    },
+    {
+      "wrong": "Győr az Alföldön fekszik.",
+      "right": "Győr a Kisalföldön fekszik.",
+      "why": "Az Alföld (Nagyalföld) és a Kisalföld két külön nagytáj; a Kisalföld az ország északnyugati részén, a Rába és a Mosoni-Duna vidékén van."
+    },
+    {
+      "wrong": "Közép-Európa legnagyobb tava a Fertő.",
+      "right": "Közép-Európa legnagyobb tava a Balaton; a Fertő Közép-Európa legnyugatibb sztyepptava.",
+      "why": "A két tó jellemzőit gyakran felcserélik: a Fertő sekély, nádas, Ausztriával közös sztyepptó, a Balaton kb. 600 km²-es."
+    },
+    {
+      "wrong": "A Nyírség a Duna–Tisza közén van.",
+      "right": "A Nyírség az Alföld északkeleti részén, a Duna–Tisza köze a két folyó között fekszik.",
+      "why": "Mindkettő futóhomokos táj, ezért a kőzet önmagában nem elég – a központ (Nyíregyháza, illetve Kecskemét) dönti el."
+    }
+  ],
+  "examTips": [
+    "Középszinten az I. feladatlap (20 perc, 20 pont) segédeszköz nélkül készül: atlasz nélkül kell tudnod a hazai és a legfontosabb világtopográfiai neveket.",
+    "Ha két név is szóba jöhet, olvasd újra a leírást, és keresd azt az adatot, amely csak az egyikre igaz – a vizsgaleírások szándékosan tartalmaznak egy ilyen „döntő” elemet.",
+    "A szóbeli vizsgán a topográfiai elemet az atlaszban meg is kell mutatnod: gyakorolj úgy, hogy minden tanult nevet kikeresel a térképen."
+  ],
+  "practice": [
+    {
+      "id": "1",
+      "kind": "text",
+      "prompt": "Melyik hegységben emelkedik a Kékes, hazánk legmagasabb pontja?",
+      "answer": [
+        "Mátra",
+        "Mátra-hegység"
+      ],
+      "category": "helymeghatarozas",
+      "explanation": "Mátra: az Északi-középhegység andezites vulkáni hegysége, itt van a Kékes (1014 m).",
+      "maxWords": 2
+    },
+    {
+      "id": "2",
+      "kind": "choice",
+      "prompt": "Melyik nagytájhoz tartozik a Mecsek?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Dunántúli-dombság"
+        },
+        {
+          "key": "B",
+          "text": "Dunántúli-középhegység"
+        },
+        {
+          "key": "C",
+          "text": "Északi-középhegység"
+        },
+        {
+          "key": "D",
+          "text": "Alpokalja"
+        }
+      ],
+      "answer": "A",
+      "category": "helymeghatarozas",
+      "explanation": "Helyes: Dunántúli-dombság. A Mecsek a dombság közepén emelkedő szigetszerű hegység, déli lábánál Pécs.",
+      "wrongOptions": {
+        "B": "A Dunántúli-középhegységhez a Bakony, a Vértes, a Gerecse, a Pilis tartozik, a Mecsek nem.",
+        "C": "Az Északi-középhegység a Dunától keletre, az ország északi részén van (Börzsöny, Mátra, Bükk).",
+        "D": "Az Alpokalja az ország nyugati határán van (Kőszegi- és Soproni-hegység)."
+      }
+    },
+    {
+      "id": "3",
+      "kind": "text",
+      "prompt": "Melyik tájon fekszik Nyíregyháza?",
+      "answer": [
+        "Nyírség"
+      ],
+      "category": "helymeghatarozas",
+      "explanation": "Nyírség: az Alföld északkeleti részének futóhomokos tája, központja Nyíregyháza.",
+      "maxWords": 1
+    },
+    {
+      "id": "4",
+      "kind": "choice",
+      "prompt": "Melyik az az észak–déli irányú, erősen lepusztult hegység, amelyet Európa és Ázsia hagyományos határának tekintünk?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Urál"
+        },
+        {
+          "key": "B",
+          "text": "Kaukázus"
+        },
+        {
+          "key": "C",
+          "text": "Kárpátok"
+        },
+        {
+          "key": "D",
+          "text": "Skandináv-hegység"
+        }
+      ],
+      "answer": "A",
+      "category": "helymeghatarozas",
+      "explanation": "Helyes: Urál. Az óidőben gyűrődött, mára alacsonyra lepusztult röghegység észak–déli irányban húzódik Oroszországban.",
+      "wrongOptions": {
+        "B": "A Kaukázus kelet–nyugati irányú, fiatal, magas lánchegység a Fekete- és a Kaszpi-tenger között.",
+        "C": "A Kárpátok a Kárpát-medencét körülölelő ívben húzódik, nem kontinenshatár.",
+        "D": "A Skandináv-hegység a Skandináv-félszigeten, Norvégia és Svédország határán van."
+      }
+    },
+    {
+      "id": "5",
+      "kind": "text",
+      "prompt": "Melyik folyó torkolatvidékén fekszik Rotterdam, Európa legnagyobb kikötője?",
+      "answer": [
+        "Rajna",
+        "Rajna–Maas",
+        "Rajna és Maas",
+        "Rajna és a Maas"
+      ],
+      "category": "helymeghatarozas",
+      "explanation": "Rajna: Rotterdam a Rajna (és a Maas) torkolatvidékén épült; a Rajna Európa legforgalmasabb vízi útja.",
+      "maxWords": 4
+    },
+    {
+      "id": "6",
+      "kind": "text",
+      "prompt": "Melyik főváros fekszik az é. sz. 47,5° és a k. h. 19° metszéspontja közelében?",
+      "answer": [
+        "Budapest"
+      ],
+      "category": "helymeghatarozas",
+      "explanation": "Budapest: koordinátái kb. é. sz. 47,5°, k. h. 19° – ezt érdemes viszonyítási pontként megjegyezni.",
+      "maxWords": 1
+    }
+  ],
+  "relatedCategories": [
+    "orszag-varos",
+    "terkep-olvasas"
+  ]
+}

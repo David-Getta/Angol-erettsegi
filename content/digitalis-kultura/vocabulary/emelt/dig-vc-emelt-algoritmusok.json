@@ -1,0 +1,214 @@
+{
+  "schemaVersion": 1,
+  "id": "dig-vc-emelt-algoritmusok",
+  "subject": "digitalis-kultura",
+  "revision": 1,
+  "level": "emelt",
+  "source": "generated",
+  "topic": "algoritmizalas",
+  "title": "Algoritmusok és programozás – fogalmak",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "vocabulary",
+  "type": "deck",
+  "cards": [
+    {
+      "term": "algoritmus",
+      "meaning": "Véges számú, egyértelmű lépésből álló utasítássorozat, amely egy feladatcsoport bármely bemenetére véges idő alatt megoldást ad.",
+      "example": "Az algoritmus minden lépésének egyértelműnek kell lennie.",
+      "pos": "n"
+    },
+    {
+      "term": "mondatszerű leírás (pszeudokód)",
+      "meaning": "Az algoritmus programozási nyelvtől független, a természetes nyelvhez közeli, de kötött szerkezetű leírása.",
+      "example": "A mondatszerű leírás ciklusai a „Ciklus amíg … Ciklus vége” szerkezettel írhatók le.",
+      "pos": "n"
+    },
+    {
+      "term": "folyamatábra",
+      "meaning": "Az algoritmus grafikus ábrázolása szabványos jelekkel (téglalap: utasítás, rombusz: döntés, nyilak: végrehajtási sorrend).",
+      "example": "A folyamatábra rombusza egy feltételt jelöl, két kimenettel.",
+      "pos": "n"
+    },
+    {
+      "term": "szekvencia",
+      "meaning": "Egymás után, a leírás sorrendjében végrehajtott utasítások.",
+      "example": "A szekvencia a legegyszerűbb vezérlési szerkezet.",
+      "pos": "n"
+    },
+    {
+      "term": "elágazás (szelekció)",
+      "meaning": "Vezérlési szerkezet, amelyben egy feltételtől függ, melyik utasításcsoport hajtódik végre (if / elif / else).",
+      "example": "Az elágazás dönti el, hogy a program „átment” vagy „bukott” szöveget ír ki.",
+      "pos": "n"
+    },
+    {
+      "term": "ciklus (iteráció)",
+      "meaning": "Vezérlési szerkezet, amely egy utasításcsoportot (ciklusmagot) többször ismétel.",
+      "example": "A ciklus addig ismétli a bekérést, amíg a felhasználó helyes értéket nem ad.",
+      "pos": "n"
+    },
+    {
+      "term": "elöltesztelő ciklus",
+      "meaning": "A feltételt a ciklusmag előtt vizsgáló ciklus; ha a feltétel kezdetben hamis, a mag egyszer sem fut le (Pythonban: while).",
+      "example": "Az elöltesztelő ciklus magja akár egyszer sem fut le.",
+      "pos": "n"
+    },
+    {
+      "term": "hátultesztelő ciklus",
+      "meaning": "A feltételt a ciklusmag után vizsgáló ciklus, ezért a mag legalább egyszer lefut; Pythonban while True és break segítségével valósítható meg.",
+      "example": "Bevitel ellenőrzésére a hátultesztelő ciklus jó, mert egyszer biztosan be kell kérni az adatot.",
+      "pos": "n"
+    },
+    {
+      "term": "számlálós ciklus",
+      "meaning": "Előre ismert számú ismétlést végző ciklus (Pythonban: for i in range(…)).",
+      "example": "A számlálós ciklus range(1, 11) esetén tízszer fut le.",
+      "pos": "n"
+    },
+    {
+      "term": "változó",
+      "meaning": "Névvel azonosított tárolóhely a memóriában, amelynek értéke a program futása során változhat.",
+      "example": "A db változó a megszámolt elemek számát tárolja.",
+      "pos": "n"
+    },
+    {
+      "term": "adattípus",
+      "meaning": "Meghatározza, milyen értékeket tárolhat egy változó és milyen műveletek végezhetők vele (pl. int, float, str, bool, list).",
+      "example": "Az input() mindig str adattípusú értéket ad vissza.",
+      "pos": "n"
+    },
+    {
+      "term": "típuskonverzió",
+      "meaning": "Egy érték átalakítása másik adattípusra, pl. int(\"12\") → 12, str(3.5) → \"3.5\".",
+      "example": "Típuskonverzió nélkül a \"3\" + \"4\" összefűzés eredménye \"34\" lenne.",
+      "pos": "n"
+    },
+    {
+      "term": "lista (tömb)",
+      "meaning": "Azonos szerepű elemek indexszel elérhető, sorrendet megőrző gyűjteménye; Pythonban a lista mérete változhat.",
+      "example": "A lista első elemét a t[0] kifejezés adja.",
+      "pos": "n"
+    },
+    {
+      "term": "index",
+      "meaning": "Az elem sorszáma a listában vagy a karakterláncban; Pythonban 0-tól indul, a negatív index hátulról számol.",
+      "example": "Az utolsó elem indexe len(t) - 1, vagy egyszerűbben -1.",
+      "pos": "n"
+    },
+    {
+      "term": "karakterlánc (string)",
+      "meaning": "Karakterek sorozata; Pythonban nem módosítható (immutable), indexelhető és szeletelhető.",
+      "example": "A karakterlánc hosszát a len() függvény adja.",
+      "pos": "n"
+    },
+    {
+      "term": "szótár (asszociatív tömb)",
+      "meaning": "Kulcs–érték párok gyűjteménye, amelyben az értéket a kulcs alapján érjük el (Pythonban: dict).",
+      "example": "A szótár kulcsa a szó, értéke az előfordulások száma.",
+      "pos": "n"
+    },
+    {
+      "term": "rekord (struktúra)",
+      "meaning": "Különböző típusú, összetartozó adatok egysége (pl. név, pont, idő); Pythonban osztállyal, szótárral vagy listával valósítható meg.",
+      "example": "Minden versenyző adatai egy rekord, amelyet listában tárolunk.",
+      "pos": "n"
+    },
+    {
+      "term": "függvény",
+      "meaning": "Névvel ellátott, paraméterezhető programrész, amely egy részfeladatot old meg és értéket adhat vissza.",
+      "example": "A percben() függvény az időpontot percre váltja.",
+      "pos": "n"
+    },
+    {
+      "term": "paraméter",
+      "meaning": "A függvény bemenete: a függvény fejében megadott változó, amely híváskor a megadott értéket (argumentumot) kapja.",
+      "example": "A prim(n) függvény paramétere az n.",
+      "pos": "n"
+    },
+    {
+      "term": "visszatérési érték",
+      "meaning": "Az az érték, amelyet a függvény a return utasítással ad vissza a hívás helyére.",
+      "example": "A prim() visszatérési értéke True vagy False.",
+      "pos": "n"
+    },
+    {
+      "term": "rekurzió",
+      "meaning": "Az a megoldás, amikor egy függvény önmagát hívja egy kisebb részfeladatra; kell hozzá báziseset, amely megállítja.",
+      "example": "A faktoriális rekurzióval: f(n) = n · f(n − 1), báziseset f(0) = 1.",
+      "pos": "n"
+    },
+    {
+      "term": "összegzés tétele",
+      "meaning": "Programozási tétel: egy sorozat elemeinek összege (vagy szorzata) egy kezdőértékről induló, elemenként frissített változóval.",
+      "example": "Az összegzés tételében az osszeg változó 0-ról indul.",
+      "pos": "n"
+    },
+    {
+      "term": "megszámlálás tétele",
+      "meaning": "Programozási tétel: hány elem felel meg egy feltételnek – a számláló 0-ról indul, és a feltétel teljesülésekor nő.",
+      "example": "A megszámlálás tételével kapjuk meg a fagyos napok számát.",
+      "pos": "n"
+    },
+    {
+      "term": "maximumkiválasztás tétele",
+      "meaning": "Programozási tétel: a legnagyobb elem (vagy indexe) meghatározása; a kezdőérték az első elem, és minden nagyobb elemnél frissül.",
+      "example": "A maximumkiválasztás tételében a > az első, a >= az utolsó legnagyobb elemet adja.",
+      "pos": "n"
+    },
+    {
+      "term": "eldöntés tétele",
+      "meaning": "Programozási tétel: van-e a sorozatban adott tulajdonságú elem; az első ilyen elemnél megállhat.",
+      "example": "Az eldöntés tétele szerint elég egyetlen 3000 alatti napot találni a „volt ilyen” válaszhoz.",
+      "pos": "n"
+    },
+    {
+      "term": "keresés tétele (lineáris keresés)",
+      "meaning": "Programozási tétel: van-e adott tulajdonságú elem, és ha igen, hányadik; elemenként halad az első találatig.",
+      "example": "A lineáris keresés rendezetlen listában is működik.",
+      "pos": "n"
+    },
+    {
+      "term": "kiválogatás tétele",
+      "meaning": "Programozási tétel: a feltételnek megfelelő elemek (vagy indexeik) összegyűjtése egy új sorozatba.",
+      "example": "A kiválogatás tételével gyűjtjük ki a 10 000 lépés alatti napokat.",
+      "pos": "n"
+    },
+    {
+      "term": "bináris keresés",
+      "meaning": "Rendezett sorozatban a középső elem vizsgálatával minden lépésben felezi a keresési tartományt; legfeljebb kb. log₂ n + 1 lépés.",
+      "example": "A bináris keresés egymillió elemben legfeljebb kb. húsz lépésben dönt.",
+      "pos": "n"
+    },
+    {
+      "term": "rendezés",
+      "meaning": "A sorozat elemeinek növekvő vagy csökkenő sorrendbe állítása (pl. buborék-, beillesztéses, közvetlen kiválasztásos rendezés; Pythonban sort(), sorted()).",
+      "example": "A buborékrendezés a szomszédos elemeket cseréli, ha rossz sorrendben vannak.",
+      "pos": "n"
+    },
+    {
+      "term": "időbonyolultság",
+      "meaning": "Az algoritmus lépésszámának növekedése a bemenet méretével (pl. lineáris keresés: n, bináris keresés: log n, buborékrendezés: n²).",
+      "example": "Az időbonyolultság miatt nagy adathalmazon a bináris keresés sokkal gyorsabb.",
+      "pos": "n"
+    },
+    {
+      "term": "szintaktikai hiba",
+      "meaning": "A program nyelvi szabályainak megsértése (pl. hiányzó kettőspont, rossz behúzás); a program el sem indul.",
+      "example": "A hiányzó kettőspont az if után szintaktikai hiba.",
+      "pos": "n"
+    },
+    {
+      "term": "szemantikai (logikai) hiba",
+      "meaning": "A program lefut, de rossz eredményt ad, mert az algoritmus hibás (pl. rossz kezdőérték, < helyett <=).",
+      "example": "A szemantikai hiba alattomos: a program lefut, csak rossz eredményt ad.",
+      "pos": "n"
+    },
+    {
+      "term": "határeset",
+      "meaning": "A bemenet szélső értéke (üres lista, egyetlen elem, egyenlő értékek, határon lévő szám), amellyel a programot külön tesztelni kell.",
+      "example": "Határeset, ha a bérlés pontosan 30 percig tartott.",
+      "pos": "n"
+    }
+  ]
+}

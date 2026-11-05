@@ -1,0 +1,258 @@
+{
+  "schemaVersion": 1,
+  "id": "fol-gr-tarsadalmi-folyamat",
+  "subject": "foldrajz",
+  "revision": 1,
+  "level": "kozep",
+  "source": "generated",
+  "topic": "nyelvtan",
+  "title": "Társadalmi-gazdasági folyamatok",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "grammar",
+  "type": "lesson",
+  "category": "tarsadalmi-folyamat",
+  "summaryHu": "A népesedés, az urbanizáció, a gazdasági szerkezetváltás és a globalizáció folyamatai egymással összefüggnek; a vizsgán azt kell megmutatnod, hogy érted az okokat, a szakaszokat és a következményeket. A leggyakoribb hiba, hogy a válasz csak leír („nő a népesség”), de nem magyaráz („mert a halálozás csökkent, a születésszám még magas”). Ezek a kérdések a rövid feladatokban, az elemző feladatokban és a szóbeli társadalomföldrajzi tételben jelennek meg.",
+  "rules": [
+    {
+      "title": "Népesedés: a demográfiai átmenet logikája",
+      "explanation": "A fejlődés során előbb a halálozás csökken (orvoslás, higiénia, élelmezés), a születésszám csak később – a kettő közötti időszak a népességrobbanás. A születésszám csökkenésének okai: városi életmód, a nők iskolázottsága és munkavállalása, a gyermeknevelés költsége, nyugdíjrendszer, fogamzásgátlás.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "Niger: magas születés, csökkenő halálozás → gyors növekedés (2. szakasz)"
+        },
+        {
+          "en": "Japán, Magyarország: alacsony születés, elöregedés → fogyás"
+        }
+      ]
+    },
+    {
+      "title": "Az urbanizáció szakaszai",
+      "explanation": "A városfejlődés jellemző sorrendje a fejlett országokban: (1) városrobbanás – a vidékről a városokba áramlás; (2) szuburbanizáció – kiköltözés az elővárosokba; (3) dezurbanizáció – a nagyvárosi térség népessége csökken; (4) reurbanizáció – a megújított belvárosok újra vonzóvá válnak. A fejlődő országokban ma a gyors, gyakran túlurbanizációval járó városrobbanás zajlik.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "Budapest: 1990-es évektől erős szuburbanizáció (Budaörs, Gödöllő)"
+        },
+        {
+          "en": "Lagos, Dakka: túlurbanizáció, nyomornegyedek"
+        }
+      ]
+    },
+    {
+      "title": "Gazdasági szerkezetváltás",
+      "explanation": "A fejlődés során a foglalkoztatás és a GDP súlypontja a primer szektorból (mezőgazdaság) a szekunder (ipar), majd a tercier (szolgáltatás) és a kvaterner (tudásalapú) szektor felé tolódik. A szerkezetváltás nem az ipar eltűnése, hanem átalakulása: a hagyományos nehézipar visszaszorul, a csúcstechnológia és a szolgáltatások nőnek.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "Ruhr-vidék: szén- és acélipar → szolgáltatás, logisztika, egyetemek"
+        }
+      ]
+    },
+    {
+      "title": "Globalizáció és nemzetközi munkamegosztás",
+      "explanation": "A szállítás és a kommunikáció olcsóbbá válása miatt a multinacionális vállalatok a termelés egyes lépéseit oda telepítik, ahol az a legolcsóbb (munkaerő, adó, nyersanyag), a kutatást és az irányítást pedig a centrumtérségekben tartják. Ebből centrum–félperiféria–periféria tagolódás következik.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "Autóipar: tervezés Németországban, összeszerelés Magyarországon, alkatrészek Ázsiából"
+        }
+      ]
+    },
+    {
+      "title": "Telepítő tényezők változása",
+      "explanation": "Az ipar helyét a 19. században a nyersanyag és az energia (szén) határozta meg, a 20. században a munkaerő, a közlekedés és a piac, ma a képzett munkaerő, a kutatási háttér és az infrastruktúra. Ez magyarázza a régi iparvidékek hanyatlását és a tudásközpontok felemelkedését.",
+      "emeltOnly": true,
+      "examples": [
+        {
+          "en": "Manchester, Ruhr-vidék: szénre települt ipar; Szilícium-völgy: egyetemekre települt csúcstechnológia"
+        }
+      ]
+    }
+  ],
+  "commonMistakes": [
+    {
+      "wrong": "A népességrobbanás oka, hogy több gyermek születik.",
+      "right": "A népességrobbanás oka, hogy a halálozás gyorsan csökken, a születésszám pedig még magas marad.",
+      "why": "A születési arányszám a robbanás idején nem nő meg, hanem változatlanul magas – a különbséget a csökkenő halálozás okozza."
+    },
+    {
+      "wrong": "A fejlődő országok nagyvárosaiban a szuburbanizáció a jellemző.",
+      "right": "A fejlődő országokban a városrobbanás, gyakran túlurbanizáció a jellemző.",
+      "why": "A szuburbanizáció a fejlett, jómódú társadalmak folyamata; a fejlődő országokban a vidékről érkezők tömege nyomornegyedekbe költözik."
+    },
+    {
+      "wrong": "A szerkezetváltás azt jelenti, hogy megszűnik az ipar.",
+      "right": "A szerkezetváltás során a gazdaság súlypontja a szolgáltatások felé tolódik, az ipar átalakul.",
+      "why": "Az ipar abszolút teljesítménye nőhet is, csak a foglalkoztatásban és a GDP-ben kisebb lesz a részaránya."
+    },
+    {
+      "wrong": "Ha nő a GDP, minden lakos gazdagabb lesz.",
+      "right": "A GDP növekedése nem jelenti automatikusan az egy főre jutó jövedelem és az életszínvonal növekedését.",
+      "why": "Ha a népesség gyorsabban nő, mint a GDP, az egy főre jutó érték csökkenhet; a jövedelem elosztása is egyenlőtlen lehet."
+    }
+  ],
+  "examTips": [
+    "Az elemző feladatokban mindig kösd össze az adatot az okkal: „a 65 év felettiek aránya 13%-ról 21%-ra nőtt, mert …”.",
+    "A szóbeli társadalomföldrajzi tételben legalább egy konkrét országot vagy várost hozz példának, és mutasd meg az atlaszban.",
+    "Ha a kérdés következményt kér, válaszd szét a gazdasági és a társadalmi következményeket."
+  ],
+  "practice": [
+    {
+      "id": "1",
+      "kind": "choice",
+      "prompt": "Melyik a szuburbanizáció következménye?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Nő a naponta ingázók száma."
+        },
+        {
+          "key": "B",
+          "text": "Nő a belváros népessége."
+        },
+        {
+          "key": "C",
+          "text": "Csökken az elővárosok népessége."
+        },
+        {
+          "key": "D",
+          "text": "Megszűnnek a forgalmi dugók."
+        }
+      ],
+      "answer": "A",
+      "category": "tarsadalmi-folyamat",
+      "explanation": "Helyes: A. A kiköltözők munkahelye többnyire a városban marad, ezért naponta ingáznak, ami terheli a bevezető utakat.",
+      "wrongOptions": {
+        "B": "Szuburbanizációkor éppen a város népessége csökken, a környéké nő.",
+        "C": "Az elővárosok népessége nő, oda költöznek az emberek.",
+        "D": "Az ingázás miatt a dugók inkább súlyosbodnak."
+      }
+    },
+    {
+      "id": "2",
+      "kind": "choice",
+      "prompt": "Mi a népességrobbanás közvetlen oka?",
+      "options": [
+        {
+          "key": "A",
+          "text": "A halálozás csökkenése magas születésszám mellett"
+        },
+        {
+          "key": "B",
+          "text": "A születésszám hirtelen megugrása"
+        },
+        {
+          "key": "C",
+          "text": "A tömeges bevándorlás"
+        },
+        {
+          "key": "D",
+          "text": "A várható élettartam csökkenése"
+        }
+      ],
+      "answer": "A",
+      "category": "tarsadalmi-folyamat",
+      "explanation": "Helyes: A. A demográfiai átmenet második szakaszában a halálozás gyorsan csökken, a születésszám még magas – a különbség gyors növekedést okoz.",
+      "wrongOptions": {
+        "B": "A születési arányszám ilyenkor nem nő, hanem magas szinten marad.",
+        "C": "A népességrobbanás a természetes szaporodás következménye, nem a vándorlásé.",
+        "D": "A várható élettartam éppen nő ebben a szakaszban."
+      }
+    },
+    {
+      "id": "3",
+      "kind": "text",
+      "prompt": "Hogyan nevezzük a gazdaság azon ágát, amely a kutatás-fejlesztést, az informatikát és a tanácsadást foglalja magában?",
+      "answer": [
+        "kvaterner szektor",
+        "kvaterner",
+        "negyedik szektor",
+        "IV. szektor"
+      ],
+      "category": "tarsadalmi-folyamat",
+      "explanation": "Kvaterner szektor: a tudásintenzív szolgáltatások ága; a fejlett gazdaságokban és a világvárosokban a legerősebb.",
+      "maxWords": 2
+    },
+    {
+      "id": "4",
+      "kind": "choice",
+      "prompt": "Miért hanyatlott a Ruhr-vidék nehézipara a 20. század második felében?",
+      "options": [
+        {
+          "key": "A",
+          "text": "A szénbányászat drágává vált, olcsóbb import szén és kőolaj jelent meg, és acélválság alakult ki."
+        },
+        {
+          "key": "B",
+          "text": "A terület elnéptelenedett az éghajlatváltozás miatt."
+        },
+        {
+          "key": "C",
+          "text": "A Rajna hajózhatatlanná vált."
+        },
+        {
+          "key": "D",
+          "text": "A vidéket a második világháború után Franciaországhoz csatolták."
+        }
+      ],
+      "answer": "A",
+      "category": "tarsadalmi-folyamat",
+      "explanation": "Helyes: A. A mélyre kerülő szén kitermelése drága lett, a kőolaj és az import szén olcsóbb volt, a világpiaci acéltúlkínálat pedig a kohászatot sújtotta – ezért szerkezetváltásra volt szükség.",
+      "wrongOptions": {
+        "B": "A Ruhr-vidék ma is Németország egyik legsűrűbben lakott térsége.",
+        "C": "A Rajna ma is Európa legforgalmasabb vízi útja.",
+        "D": "A Ruhr-vidék Németország része maradt; a háború utáni Ruhr-ellenőrzés nem csatolás volt, és nem ez okozta a hanyatlást."
+      }
+    },
+    {
+      "id": "5",
+      "kind": "choice",
+      "prompt": "Melyik foglalkoztatási szerkezet jellemző egy fejlett, posztindusztriális országra?",
+      "options": [
+        {
+          "key": "A",
+          "text": "primer 2%, szekunder 25%, tercier 73%"
+        },
+        {
+          "key": "B",
+          "text": "primer 45%, szekunder 20%, tercier 35%"
+        },
+        {
+          "key": "C",
+          "text": "primer 20%, szekunder 50%, tercier 30%"
+        },
+        {
+          "key": "D",
+          "text": "primer 60%, szekunder 10%, tercier 30%"
+        }
+      ],
+      "answer": "A",
+      "category": "tarsadalmi-folyamat",
+      "explanation": "Helyes: A. A fejlett országokban a mezőgazdaság aránya néhány százalék, a szolgáltatások adják a foglalkoztatás nagy részét.",
+      "wrongOptions": {
+        "B": "A magas mezőgazdasági arány fejlődő országra jellemző.",
+        "C": "Az ipar túlsúlya az iparosodó, ipari társadalom szakaszára jellemző (pl. a 20. század közepi Európa).",
+        "D": "A 60%-os mezőgazdasági foglalkoztatás a legkevésbé fejlett országok jellemzője."
+      }
+    },
+    {
+      "id": "6",
+      "kind": "text",
+      "prompt": "Hogyan nevezzük a leromlott belvárosi negyedek felújítását, amely után jobb módú lakók költöznek be, és kiszorul az eredeti lakosság?",
+      "answer": [
+        "dzsentrifikáció",
+        "gentrifikáció",
+        "dzsentrifikálódás"
+      ],
+      "category": "tarsadalmi-folyamat",
+      "explanation": "Dzsentrifikáció: a felújítás felértékeli a negyedet, az ingatlanárak és a bérleti díjak nőnek, ezért az eredeti, szegényebb lakók kiszorulnak.",
+      "maxWords": 1
+    }
+  ],
+  "relatedCategories": [
+    "fogalomhasznalat",
+    "abra-diagram"
+  ]
+}

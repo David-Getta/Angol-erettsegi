@@ -1,0 +1,285 @@
+{
+  "schemaVersion": 1,
+  "id": "bio-gr-anyagcsere-folyamat",
+  "subject": "biologia",
+  "revision": 1,
+  "level": "kozep",
+  "source": "generated",
+  "topic": "nyelvtan",
+  "title": "Anyagcsere-folyamatok: fotoszintézis, sejtlégzés, erjedés",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "grammar",
+  "type": "lesson",
+  "category": "anyagcsere-folyamat",
+  "summaryHu": "A fotoszintézis, a sejtlégzés és az erjedés kiindulási anyagai, termékei, helye és energiamérlege szinte minden feladatlapon szerepel – feleletválasztásban, ábraelemzésben és kísérletelemzésben is. A legtöbb hiba abból adódik, hogy a folyamatok helyét, a szakaszokat vagy a termékeket felcseréljük, illetve hogy a növényi légzésről hamis képünk van.",
+  "rules": [
+    {
+      "title": "A fotoszintézis",
+      "explanation": "A zöld színtestekben a fényenergia felhasználásával szén-dioxidból és vízből szerves anyag (glükóz) keletkezik, oxigén szabadul fel: 6 CO₂ + 6 H₂O → C₆H₁₂O₆ + 6 O₂. A fényszakaszban (tilakoidok) a víz bomlik, oxigén szabadul fel, ATP és NADPH keletkezik; a sötétszakaszban, más néven Calvin-ciklusban (sztróma) a szén-dioxid megkötése és redukciója zajlik ATP és NADPH felhasználásával.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "A felszabaduló oxigén a vízből származik, nem a szén-dioxidból.",
+          "hu": "Izotópos jelöléssel igazolták."
+        },
+        {
+          "en": "A sötétszakasz nappal zajlik, csak közvetlenül nem igényel fényt.",
+          "hu": "A „sötét” név félrevezető."
+        }
+      ]
+    },
+    {
+      "title": "A sejtlégzés (biológiai oxidáció)",
+      "explanation": "A glükóz oxigén jelenlétében szén-dioxidra és vízre bomlik, energia szabadul fel, amelynek egy része ATP-ben raktározódik: C₆H₁₂O₆ + 6 O₂ → 6 CO₂ + 6 H₂O. Szakaszai: glikolízis (citoplazma, glükóz → 2 piroszőlősav, kevés ATP), citromsavciklus (mitokondrium belső tere, CO₂ keletkezik, redukált koenzimek képződnek), terminális oxidáció (mitokondrium belső membránja: a hidrogén oxigénnel vízzé egyesül, itt képződik az ATP nagy része).",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "Egy glükózból a sejtlégzés során nagyságrendileg 30–38 ATP keletkezik, erjedéskor csak 2.",
+          "hu": "Az oxigén jelenléte sokszoros energiahozamot jelent."
+        },
+        {
+          "en": "Minden élő sejt – a növényi is – folyamatosan végez sejtlégzést.",
+          "hu": "Nem csak éjjel."
+        }
+      ]
+    },
+    {
+      "title": "Erjedés",
+      "explanation": "Oxigénhiányban a glikolízis után a piroszőlősav nem kerül a mitokondriumba, hanem a citoplazmában alakul tovább: alkoholos erjedésben etanol és CO₂ (élesztő), tejsavas erjedésben tejsav (tejsavbaktériumok, oxigénhiányos izomsejt) keletkezik. Az erjedés célja a glikolízishez szükséges koenzim (NAD⁺) visszanyerése; energiahozama glükózonként 2 ATP.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "A kenyértészta az élesztő alkoholos erjedésekor keletkező szén-dioxidtól kel meg.",
+          "hu": "Alkoholos erjedés."
+        },
+        {
+          "en": "Erős terheléskor az izomban tejsav halmozódik fel.",
+          "hu": "Tejsavas erjedés emberben."
+        }
+      ]
+    },
+    {
+      "title": "A fotoszintézis és a sejtlégzés kapcsolata",
+      "explanation": "A két folyamat egymás fordítottja a bruttó egyenlet szintjén: a fotoszintézis termékei (glükóz, O₂) a sejtlégzés kiindulási anyagai, és viszont. A növény nettó oxigéntermelése a fotoszintézis és a légzés különbsége: sötétben negatív, a kompenzációs pontnál nulla, erős fényben pozitív.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "Fénykompenzációs pont: az a fényerősség, amelynél a fotoszintézis oxigéntermelése éppen egyenlő a légzés oxigénfogyasztásával.",
+          "hu": "Grafikonelemzésben gyakori."
+        },
+        {
+          "en": "Egy zárt üvegbura alatt a növény sötétben csökkenti, fényben növeli a levegő oxigéntartalmát.",
+          "hu": "Nettó mérleg."
+        }
+      ]
+    },
+    {
+      "title": "Szabályozó és korlátozó tényezők",
+      "explanation": "A fotoszintézis sebességét a fényerősség, a szén-dioxid-koncentráció és a hőmérséklet szabja meg; mindig az aktuálisan legkedvezőtlenebb tényező a korlátozó (limitáló). Az enzimfolyamatokat a hőmérséklet és a pH is befolyásolja, az optimum fölött a fehérjék denaturálódnak.",
+      "emeltOnly": true,
+      "examples": [
+        {
+          "en": "Erős fényben, kevés CO₂ mellett a CO₂ a korlátozó tényező: hiába nő a fény, nem gyorsul a folyamat.",
+          "hu": "A görbe ellaposodik."
+        },
+        {
+          "en": "Az üvegházakban a CO₂-koncentráció növelésével nő a termés.",
+          "hu": "Gyakorlati alkalmazás."
+        }
+      ]
+    }
+  ],
+  "commonMistakes": [
+    {
+      "wrong": "A növények nappal fotoszintetizálnak, éjjel légzést végeznek.",
+      "right": "A növények éjjel-nappal végeznek sejtlégzést, nappal emellett fotoszintetizálnak is.",
+      "why": "Nappal a fotoszintézis oxigéntermelése elfedi a légzés oxigénfogyasztását, de a légzés nem áll le."
+    },
+    {
+      "wrong": "A fotoszintézis oxigénje a szén-dioxidból származik.",
+      "right": "Az oxigén a víz bontásából (fotolízis) származik.",
+      "why": "A szén-dioxid szene és oxigénje a szerves anyagba és vízbe épül be."
+    },
+    {
+      "wrong": "A sejtlégzés a tüdőben történik.",
+      "right": "A sejtlégzés minden sejtben, főleg a mitokondriumokban zajlik; a tüdőben gázcsere történik.",
+      "why": "A „légzés” szó kétféle jelentését kell megkülönböztetni."
+    },
+    {
+      "wrong": "Az erjedés során több energia keletkezik, mert gyorsabb.",
+      "right": "Az erjedés glükózonként csak 2 ATP-t ad, a sejtlégzés nagyságrendileg 30–38-at.",
+      "why": "Az erjedés termékei (alkohol, tejsav) még sok energiát tartalmaznak."
+    },
+    {
+      "wrong": "A glikolízis a mitokondriumban zajlik.",
+      "right": "A glikolízis a citoplazmában zajlik, a citromsavciklus és a terminális oxidáció a mitokondriumban.",
+      "why": "A glikolízis oxigént nem igényel, ezért az erjedésnek is része."
+    }
+  ],
+  "examTips": [
+    "Táblázatos kérdésnél (hely, kiindulási anyag, termék, energia) készíts magadnak összehasonlító táblázatot a három folyamatról – a feladatlap gyakran ezt kérdezi asszociációs formában.",
+    "Grafikonelemzésnél a nettó és a bruttó értéket különítsd el: a sötétben mért oxigénfogyasztás a légzés mértéke, ezt kell hozzáadni a nettó értékhez.",
+    "Kísérletelemzésnél (pl. élesztős erjedés, átokhínár buborékszámlálás) mindig nevezd meg, melyik gáz keletkezik, és mivel mutatható ki (CO₂: meszes víz zavarosodása; O₂: parázsló gyújtópálca fellángolása)."
+  ],
+  "practice": [
+    {
+      "id": "1",
+      "kind": "choice",
+      "prompt": "Hol keletkezik a sejtlégzés során az ATP legnagyobb része?",
+      "options": [
+        {
+          "key": "A",
+          "text": "a citoplazmában, a glikolízis során"
+        },
+        {
+          "key": "B",
+          "text": "a mitokondrium belső membránján, a terminális oxidáció során"
+        },
+        {
+          "key": "C",
+          "text": "a színtest tilakoidjain"
+        },
+        {
+          "key": "D",
+          "text": "a riboszómákon"
+        }
+      ],
+      "answer": "B",
+      "category": "anyagcsere-folyamat",
+      "explanation": "Helyes: B. A terminális oxidációban (elektronszállító lánc és ATP-szintáz) a mitokondrium belső membránján képződik az ATP nagy része; itt egyesül a hidrogén az oxigénnel vízzé.",
+      "wrongOptions": {
+        "A": "A glikolízis glükózonként csak 2 ATP-t termel (nettó).",
+        "C": "A tilakoidokon a fotoszintézis fényszakasza termel ATP-t, nem a sejtlégzés.",
+        "D": "A riboszóma a fehérjeszintézis helye, ATP-t nem termel, hanem felhasznál."
+      }
+    },
+    {
+      "id": "2",
+      "kind": "choice",
+      "prompt": "Melyik folyamat termel szén-dioxidot?",
+      "options": [
+        {
+          "key": "A",
+          "text": "a fotoszintézis fényszakasza"
+        },
+        {
+          "key": "B",
+          "text": "a tejsavas erjedés"
+        },
+        {
+          "key": "C",
+          "text": "az alkoholos erjedés"
+        },
+        {
+          "key": "D",
+          "text": "a Calvin-ciklus"
+        }
+      ],
+      "answer": "C",
+      "category": "anyagcsere-folyamat",
+      "explanation": "Helyes: C. Alkoholos erjedésben a piroszőlősavból etanol és szén-dioxid keletkezik – ez keleszti a tésztát és habzik a mustban.",
+      "wrongOptions": {
+        "A": "A fényszakaszban oxigén, ATP és NADPH keletkezik, CO₂ nem.",
+        "B": "A tejsavas erjedés egyetlen terméke a tejsav, CO₂ nem keletkezik.",
+        "D": "A Calvin-ciklus szén-dioxidot köt meg, nem termel."
+      }
+    },
+    {
+      "id": "3",
+      "kind": "text",
+      "prompt": "Honnan származik a fotoszintézis során felszabaduló oxigén? (Egy szó)",
+      "answer": [
+        "víz",
+        "vízből",
+        "a vízből",
+        "H2O",
+        "H₂O"
+      ],
+      "category": "anyagcsere-folyamat",
+      "explanation": "Helyes: a vízből. A fényszakaszban a fényenergia hatására a víz bomlik (fotolízis); a vízből származó elektronok az elektronszállító láncba kerülnek, az oxigén melléktermékként felszabadul.",
+      "maxWords": 2
+    },
+    {
+      "id": "4",
+      "kind": "choice",
+      "prompt": "Egy növényt sötét, zárt üvegbura alá teszünk. Hogyan változik a bura levegőjének összetétele?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Nő az oxigén- és csökken a szén-dioxid-tartalom."
+        },
+        {
+          "key": "B",
+          "text": "Csökken az oxigén- és nő a szén-dioxid-tartalom."
+        },
+        {
+          "key": "C",
+          "text": "Nem változik, mert sötétben a növény semmilyen anyagcserét nem végez."
+        },
+        {
+          "key": "D",
+          "text": "Nő az oxigén- és a szén-dioxid-tartalom is."
+        }
+      ],
+      "answer": "B",
+      "category": "anyagcsere-folyamat",
+      "explanation": "Helyes: B. Sötétben nincs fotoszintézis, de a sejtlégzés folyik: a növény oxigént fogyaszt és szén-dioxidot termel.",
+      "wrongOptions": {
+        "A": "Ez fényben, a kompenzációs pont fölött igaz, sötétben nem.",
+        "C": "A sejtlégzés sötétben is folyamatos.",
+        "D": "Ugyanaz a folyamat nem növelheti mindkét gáz mennyiségét; sötétben az oxigén fogy."
+      }
+    },
+    {
+      "id": "5",
+      "kind": "text",
+      "prompt": "Hány ATP-molekula (nettó) képződik egy glükózmolekula erjedésekor?",
+      "answer": [
+        "2",
+        "kettő",
+        "2 ATP",
+        "két"
+      ],
+      "category": "anyagcsere-folyamat",
+      "explanation": "Helyes: 2. Az erjedés energiát csak a glikolízisből nyer (nettó 2 ATP glükózonként); a további lépések csak a NAD⁺ visszanyerését szolgálják, ATP-t nem termelnek.",
+      "maxWords": 2
+    },
+    {
+      "id": "6",
+      "kind": "choice",
+      "prompt": "Melyik a fotoszintézis bruttó egyenlete?",
+      "options": [
+        {
+          "key": "A",
+          "text": "C₆H₁₂O₆ + 6 O₂ → 6 CO₂ + 6 H₂O"
+        },
+        {
+          "key": "B",
+          "text": "6 CO₂ + 6 H₂O → C₆H₁₂O₆ + 6 O₂"
+        },
+        {
+          "key": "C",
+          "text": "C₆H₁₂O₆ → 2 C₂H₅OH + 2 CO₂"
+        },
+        {
+          "key": "D",
+          "text": "6 CO₂ + 6 O₂ → C₆H₁₂O₆ + 6 H₂O"
+        }
+      ],
+      "answer": "B",
+      "category": "anyagcsere-folyamat",
+      "explanation": "Helyes: B. Szén-dioxidból és vízből fényenergia felhasználásával glükóz és oxigén keletkezik.",
+      "wrongOptions": {
+        "A": "Ez a sejtlégzés bruttó egyenlete (a fotoszintézis fordítottja).",
+        "C": "Ez az alkoholos erjedés egyenlete.",
+        "D": "Hibás egyenlet: a fotoszintézis kiindulási anyaga víz, nem oxigén, és oxigén keletkezik."
+      }
+    }
+  ],
+  "relatedCategories": [
+    "kiserlet-ertelmezes",
+    "abra-adatelemzes",
+    "felepites-mukodes"
+  ]
+}

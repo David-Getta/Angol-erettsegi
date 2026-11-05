@@ -1,0 +1,80 @@
+{
+  "schemaVersion": 1,
+  "id": "kem-sp-emelt-ph-kozombosites-c-tetel",
+  "subject": "kemia",
+  "revision": 1,
+  "level": "emelt",
+  "source": "generated",
+  "topic": "sav-bazis-redoxi",
+  "title": "Lúg és sav összeöntése – pH-számítás",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "speaking",
+  "type": "c-tetel",
+  "partNumber": 3,
+  "instructionsHu": "Oldja meg a forrásban megadott problémát, és szóban indokolja a lépéseket! Használja a vízionszorzatot és a pH definícióját!",
+  "prompts": [
+    "A NaOH-oldat koncentrációja a pH-ból",
+    "A közömbösítési reakció és az anyagmennyiségek összevetése",
+    "A keletkező oldat pH-ja",
+    "A semlegesítéshez szükséges savtérfogat"
+  ],
+  "followUpQuestions": [
+    "Mekkora lenne a pH, ha 60,0 cm³ sósavat öntenénk a lúghoz?"
+  ],
+  "usefulPhrases": [
+    {
+      "en": "pH + pOH = 14 (25 °C)",
+      "hu": "A vízionszorzatból következik."
+    },
+    {
+      "en": "erős sav / erős bázis: teljes disszociáció",
+      "hu": "A koncentráció egyenlő az ionkoncentrációval."
+    },
+    {
+      "en": "H⁺ + OH⁻ → H₂O",
+      "hu": "Közömbösítés – az anyagmennyiségeket vonjuk ki, nem a pH-kat."
+    },
+    {
+      "en": "a térfogatok összeadódnak",
+      "hu": "A felesleget a teljes térfogatra kell elosztani."
+    },
+    {
+      "en": "n = c · V",
+      "hu": "A mol/dm³ és a dm³ szorzata."
+    },
+    {
+      "en": "a pH logaritmikus",
+      "hu": "Tízszeres koncentrációváltozás = 1 pH-egység."
+    }
+  ],
+  "sources": [
+    {
+      "title": "A probléma",
+      "text": "Egy 100 cm³ térfogatú, 12,00 pH-jú nátrium-hidroxid-oldathoz 40,0 cm³ 0,0200 mol/dm³ koncentrációjú sósavat öntünk.\na) Mekkora a kiindulási NaOH-oldat koncentrációja?\nb) Mekkora lesz a keletkező oldat pH-ja?\nc) Hány cm³ sósavat kellett volna hozzáönteni a semlegesítéshez, és mekkora lenne akkor a pH?\n(A térfogatok összeadódnak; 25 °C, Kv = 1,0 · 10⁻¹⁴.)"
+    }
+  ],
+  "keyPoints": [
+    "pH = 12,00 → pOH = 2,00 → [OH⁻] = 1,00 · 10⁻² mol/dm³; a NaOH erős bázis, teljesen disszociál, így c(NaOH) = 0,0100 mol/dm³.",
+    "n(OH⁻) = 0,0100 mol/dm³ · 0,100 dm³ = 1,00 · 10⁻³ mol; n(H⁺) = 0,0200 mol/dm³ · 0,0400 dm³ = 8,00 · 10⁻⁴ mol.",
+    "H⁺ + OH⁻ → H₂O; a lúg van feleslegben: 2,00 · 10⁻⁴ mol OH⁻ marad.",
+    "A térfogat 140 cm³: [OH⁻] = 2,00 · 10⁻⁴ mol / 0,140 dm³ = 1,43 · 10⁻³ mol/dm³.",
+    "pOH = 2,85 → pH = 11,15.",
+    "A semlegesítéshez 1,00 · 10⁻³ mol HCl, azaz 50,0 cm³ sósav kell; ekkor pH = 7,00 (erős sav és erős bázis sója nem hidrolizál)."
+  ],
+  "speakingSeconds": 330,
+  "prepSeconds": 450,
+  "sampleAnswer": {
+    "turns": [
+      {
+        "speaker": "candidate",
+        "text": "Először a nátrium-hidroxid-oldat koncentrációját határozom meg. A pH 12,00, így 25 °C-on a pOH = 14,00 − 12,00 = 2,00, tehát a hidroxidion-koncentráció 1,00 · 10⁻² mol/dm³. A nátrium-hidroxid erős bázis, vizes oldatban teljesen disszociál, ezért a koncentrációja is 0,0100 mol/dm³.\nEzután kiszámolom, mennyi hidroxidion és mennyi oxóniumion találkozik. A lúgban n(OH⁻) = 0,0100 mol/dm³ · 0,100 dm³ = 1,00 · 10⁻³ mol. A sósav is erős sav, teljesen disszociál: n(H⁺) = 0,0200 mol/dm³ · 0,0400 dm³ = 8,00 · 10⁻⁴ mol. A közömbösítés egyenlete: H⁺ + OH⁻ → H₂O, a két ion 1 : 1 arányban reagál. Mivel kevesebb a sav, a lúg van feleslegben: 1,00 · 10⁻³ − 8,00 · 10⁻⁴ = 2,00 · 10⁻⁴ mol hidroxidion marad.\nAz oldatok térfogata összeadódik, így a keletkező oldat térfogata 140 cm³, azaz 0,140 dm³. A hidroxidion-koncentráció: 2,00 · 10⁻⁴ mol / 0,140 dm³ = 1,43 · 10⁻³ mol/dm³. Ebből pOH = −lg(1,43 · 10⁻³) = 2,85, a pH pedig 14,00 − 2,85 = 11,15. Az oldat tehát még lúgos, és a pH egy egységnél kevesebbet csökkent, mert a pH logaritmikus skála: a hidroxidion-koncentráció csak közel a hetedére csökkent.\nA semlegesítéshez annyi sav kell, amennyi a teljes 1,00 · 10⁻³ mol hidroxidiont közömbösíti, vagyis 1,00 · 10⁻³ mol HCl. Ennek térfogata V = n / c = 1,00 · 10⁻³ mol / 0,0200 mol/dm³ = 0,0500 dm³, azaz 50,0 cm³. Ekkor az oldat pH-ja 7,00, mert erős sav és erős bázis sója, nátrium-klorid keletkezik, amely nem hidrolizál."
+      }
+    ],
+    "notes": [
+      "Megoldás: mindhárom kérdésre helyes eredményt ad (0,0100 mol/dm³; pH = 11,15; 50,0 cm³ és pH = 7,00).",
+      "Indoklás: minden lépést kémiailag megindokol – teljes disszociáció, 1 : 1 közömbösítés, a térfogatok összeadódása, a hidrolízis hiánya –, ez adja az indoklás pontjait.",
+      "Szaknyelv és ellenőrzés: pontos jelölések (pOH, Kv, mol/dm³), és a logaritmikus skálával ellenőrzi, hogy az eredmény reális."
+    ]
+  }
+}

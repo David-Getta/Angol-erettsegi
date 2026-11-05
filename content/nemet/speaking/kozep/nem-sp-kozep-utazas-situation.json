@@ -1,0 +1,57 @@
+{
+  "topic": "utazas",
+  "title": "Im Fundbüro",
+  "type": "situation",
+  "partNumber": 2,
+  "instructionsHu": "Az osztályoddal Münchenben vagy, és a villamoson felejtetted a hátizsákodat. Menj el a talált tárgyak irodájába, és intézd el az ügyet. Minden pontot teljesíts.",
+  "situation": {
+    "context": "Sie sind mit Ihrer Klasse für ein paar Tage in München. Heute Vormittag haben Sie Ihren Rucksack in der Straßenbahn vergessen. Sie gehen ins Fundbüro.",
+    "candidateRole": "Sie sind ein Schüler / eine Schülerin, der / die seinen / ihren Rucksack verloren hat.",
+    "examinerRole": "Der Prüfer / Die Prüferin arbeitet im Fundbüro.",
+    "goals": [
+      "Erklären Sie, was passiert ist (wann und in welcher Linie).",
+      "Beschreiben Sie den Rucksack und sagen Sie, was darin war.",
+      "Sagen Sie, wie man Sie erreichen kann und wie lange Sie noch in München sind.",
+      "Fragen Sie, was Sie tun können, wenn der Rucksack nicht gefunden wird."
+    ],
+    "examinerOpening": "Guten Tag! Was kann ich für Sie tun?"
+  },
+  "followUpQuestions": [
+    "Das tut mir leid. Wie sieht der Rucksack denn aus?",
+    "Und war noch etwas Wichtiges drin, zum Beispiel Schlüssel oder ein Ausweis?",
+    "Heute ist leider noch kein solcher Rucksack abgegeben worden. Wie können wir Sie erreichen?"
+  ],
+  "usefulPhrases": [
+    { "en": "Ich habe meinen Rucksack in der Straßenbahn vergessen.", "hu": "A villamoson felejtettem a hátizsákomat." },
+    { "en": "Das war so gegen zehn Uhr in der Linie 19.", "hu": "Úgy tíz óra körül volt a 19-es vonalon." },
+    { "en": "Er ist dunkelblau und ziemlich groß.", "hu": "Sötétkék és elég nagy." },
+    { "en": "Drin waren meine Jacke und mein Schülerausweis.", "hu": "Benne volt a kabátom és a diákigazolványom." },
+    { "en": "Am besten erreichen Sie mich auf dem Handy.", "hu": "A legjobban mobilon érhet el." },
+    { "en": "Was kann ich machen, wenn …?", "hu": "Mit tehetek, ha …?" },
+    { "en": "Vielen Dank für Ihre Hilfe!", "hu": "Köszönöm szépen a segítségét!" }
+  ],
+  "speakingSeconds": 240,
+  "prepSeconds": 30,
+  "sampleAnswer": {
+    "turns": [
+      { "speaker": "examiner", "text": "Guten Tag! Was kann ich für Sie tun?" },
+      { "speaker": "candidate", "text": "Guten Tag! Ich habe heute Vormittag meinen Rucksack in der Straßenbahn vergessen. Das war so gegen zehn Uhr in der Linie 19, kurz vor dem Hauptbahnhof." },
+      { "speaker": "examiner", "text": "Das tut mir leid. Wie sieht der Rucksack denn aus?" },
+      { "speaker": "candidate", "text": "Er ist dunkelblau und ziemlich groß, und vorne hat er ein rotes Logo. Drin waren meine Jacke, eine Wasserflasche und mein Deutschbuch. Zum Glück hatte ich mein Handy und mein Geld in der Hosentasche." },
+      { "speaker": "examiner", "text": "Und war noch etwas Wichtiges drin, zum Beispiel Schlüssel oder ein Ausweis?" },
+      { "speaker": "candidate", "text": "Ja, leider auch mein Schülerausweis. Der ist für mich wichtig, weil ich damit in Museen weniger bezahle." },
+      { "speaker": "examiner", "text": "Heute ist leider noch kein solcher Rucksack abgegeben worden. Wie können wir Sie erreichen?" },
+      { "speaker": "candidate", "text": "Ich bin noch bis Freitag in München und wohne in der Jugendherberge. Am besten erreichen Sie mich auf dem Handy. Ich schreibe Ihnen meine Nummer und meine E-Mail-Adresse auf." },
+      { "speaker": "examiner", "text": "Danke, ich notiere alles." },
+      { "speaker": "candidate", "text": "Und was kann ich machen, wenn der Rucksack bis Freitag nicht gefunden wird?" },
+      { "speaker": "examiner", "text": "Dann können Sie im Internet eine Verlustmeldung ausfüllen. Wenn er später auftaucht, schicken wir ihn nach Ungarn. Sie bezahlen nur das Porto." },
+      { "speaker": "candidate", "text": "Das ist sehr nett. Vielen Dank für Ihre Hilfe! Auf Wiedersehen." }
+    ],
+    "notes": [
+      "Kommunikációs cél: mind a négy szempont sorban teljesül – mi történt (mikor, melyik vonalon), a hátizsák leírása és tartalma, elérhetőség és a maradás ideje, végül mi a teendő, ha nem kerül elő.",
+      "Szókincs: a helyzethez illő, pontos szavak (Linie 19, Hosentasche, Schülerausweis, Verlustmeldung, Porto) és udvarias fordulatok (Am besten erreichen Sie mich …, Vielen Dank für Ihre Hilfe!).",
+      "Nyelvhelyesség: a múlt idő helyes (habe … vergessen, hatte), a „weil” és a „wenn” mellékmondatban az ige a végén áll, a hátizsák (der Rucksack) helyett következetesen hímnemű névmás áll (er, Der ist …).",
+      "Érdemes megtanulni: „Das war so gegen zehn Uhr …”, „Zum Glück hatte ich …”, „Am besten erreichen Sie mich …”, „Was kann ich machen, wenn …?”."
+    ]
+  }
+}

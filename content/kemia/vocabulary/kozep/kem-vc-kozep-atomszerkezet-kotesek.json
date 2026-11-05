@@ -1,0 +1,172 @@
+{
+  "schemaVersion": 1,
+  "id": "kem-vc-kozep-atomszerkezet-kotesek",
+  "subject": "kemia",
+  "revision": 1,
+  "level": "kozep",
+  "source": "generated",
+  "topic": "atomszerkezet-kotesek",
+  "title": "Fogalmak: atomszerkezet és kémiai kötések (közép)",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "vocabulary",
+  "type": "deck",
+  "cards": [
+    {
+      "term": "rendszám",
+      "meaning": "Az atommagban lévő protonok száma; meghatározza, melyik elemről van szó, és megegyezik a semleges atom elektronjainak számával.",
+      "example": "A nátrium rendszáma 11, tehát atommagjában 11 proton van.",
+      "collocation": "Z"
+    },
+    {
+      "term": "tömegszám",
+      "meaning": "Az atommagban lévő protonok és neutronok számának összege.",
+      "example": "A ¹²C izotóp tömegszáma 12: magját 6 proton és 6 neutron alkotja.",
+      "collocation": "A = Z + N"
+    },
+    {
+      "term": "izotóp",
+      "meaning": "Azonos rendszámú, de eltérő neutronszámú (így eltérő tömegszámú) atomok; kémiai tulajdonságaik gyakorlatilag azonosak.",
+      "example": "A hidrogén izotópjai a prócium, a deutérium és a trícium."
+    },
+    {
+      "term": "relatív atomtömeg",
+      "meaning": "Az elem atomjainak (izotópjaik természetes gyakoriságával súlyozott) átlagos tömege a ¹²C-atom tömegének 1/12 részéhez viszonyítva; mértékegység nélküli szám.",
+      "example": "A klór relatív atomtömege 35,5, mert a ³⁵Cl és a ³⁷Cl izotóp keveréke.",
+      "collocation": "Ar"
+    },
+    {
+      "term": "elektronhéj",
+      "meaning": "Az atommag körüli, azonos főkvantumszámú elektronok összessége; a periódus száma megadja a betöltött héjak számát.",
+      "example": "Az alumíniumatom három elektronhéján 2, 8 és 3 elektron van."
+    },
+    {
+      "term": "atompálya",
+      "meaning": "Az atomon belül az a térrész, ahol az elektron nagy valószínűséggel tartózkodik; egy pályán legfeljebb két, ellentétes spinű elektron lehet.",
+      "example": "A 2p alhéj három atompályáján összesen hat elektron fér el."
+    },
+    {
+      "term": "elektronszerkezet",
+      "meaning": "Az elektronok elrendeződése a héjakon és alhéjakon, az energia szerinti betöltési sorrendben.",
+      "example": "A nátrium elektronszerkezete 1s² 2s² 2p⁶ 3s¹.",
+      "collocation": "1s, 2s, 2p, 3s, 3p, 4s, 3d …"
+    },
+    {
+      "term": "vegyértékelektron",
+      "meaning": "Az atom legkülső héján lévő (átmenetifémeknél a külső s- és a d-alhéjon lévő) elektronok, amelyek a kötések kialakításában részt vesznek.",
+      "example": "Az oxigénatomnak hat vegyértékelektronja van, ezért két elektron felvételével éri el a nemesgáz-szerkezetet."
+    },
+    {
+      "term": "nemesgáz-szerkezet",
+      "meaning": "Stabilis elektronszerkezet, amelyben a külső héj 8 (héliumnál 2) elektront tartalmaz; az atomok ionképzéskor vagy kötés kialakításakor erre törekszenek.",
+      "example": "A Na⁺-ion nemesgáz-szerkezetű: elektronszerkezete megegyezik a neonéval."
+    },
+    {
+      "term": "periódus",
+      "meaning": "A periódusos rendszer vízszintes sora; sorszáma megegyezik az alapállapotú atom elektronhéjainak számával.",
+      "example": "A kén a 3. periódusban van, tehát atomjának három elektronhéja van."
+    },
+    {
+      "term": "csoport",
+      "meaning": "A periódusos rendszer függőleges oszlopa (1–18); az azonos csoportba tartozó elemek vegyértékelektron-szerkezete és ezért kémiai viselkedése hasonló.",
+      "example": "A halogének a 17. csoport elemei, külső héjukon hét elektron van."
+    },
+    {
+      "term": "ionizációs energia",
+      "meaning": "Az az energia, amely 1 mol gáz-halmazállapotú, alapállapotú atomból a legkönnyebben leszakítható elektron eltávolításához szükséges.",
+      "example": "Az első ionizációs energia a periódusban balról jobbra nagyjából nő, a csoportban lefelé csökken.",
+      "collocation": "kJ/mol"
+    },
+    {
+      "term": "elektronegativitás",
+      "meaning": "Az atom elektronvonzó képessége a kötésben lévő elektronpárra; a legnagyobb a fluoré (4,0).",
+      "example": "Az oxigén elektronegativitása (3,5) nagyobb a hidrogénénél (2,1), ezért az O–H kötés poláris.",
+      "collocation": "EN"
+    },
+    {
+      "term": "kation",
+      "meaning": "Pozitív töltésű ion; elektronleadással keletkezik.",
+      "example": "A fémek atomjai elektronleadással kationokká alakulnak, például Ca → Ca²⁺ + 2 e⁻."
+    },
+    {
+      "term": "anion",
+      "meaning": "Negatív töltésű ion; elektronfelvétellel keletkezik, vagy összetett ion (pl. SO₄²⁻).",
+      "example": "A klóratom egy elektron felvételével kloridionná, vagyis anionná alakul."
+    },
+    {
+      "term": "ionkötés",
+      "meaning": "Ellentétes töltésű ionok között ható elektrosztatikus vonzás; nagy elektronegativitás-különbségű atomok (jellemzően fém és nemfém) között alakul ki.",
+      "example": "A nátrium-kloridban ionkötés tartja össze a Na⁺- és a Cl⁻-ionokat."
+    },
+    {
+      "term": "kovalens kötés",
+      "meaning": "Két atom között közös elektronpár(ok) által létrejövő elsőrendű kötés.",
+      "example": "A hidrogénmolekulában a két atomot egy kovalens kötés, egy közös elektronpár kapcsolja össze."
+    },
+    {
+      "term": "poláris kovalens kötés",
+      "meaning": "Különböző elektronegativitású atomok közötti kovalens kötés, amelyben a kötő elektronpár a nagyobb elektronegativitású atom felé tolódik.",
+      "example": "A hidrogén-klorid molekulájában poláris kovalens kötés van, a klór részleges negatív töltésű."
+    },
+    {
+      "term": "fémes kötés",
+      "meaning": "A fémrácsban a pozitív atomtörzseket a közös, delokalizált elektronok (elektrongáz) tartják össze.",
+      "example": "A fémes kötés delokalizált elektronjai miatt vezetik a fémek jól az elektromos áramot."
+    },
+    {
+      "term": "nemkötő elektronpár",
+      "meaning": "A vegyértékhéjon lévő, kötésben részt nem vevő elektronpár; befolyásolja a molekula alakját.",
+      "example": "Az ammónia nitrogénatomján egy nemkötő elektronpár van, ezért a molekula piramis alakú."
+    },
+    {
+      "term": "kötésszög",
+      "meaning": "A központi atomhoz kapcsolódó két atom kötésirányának egymással bezárt szöge.",
+      "example": "A vízmolekula kötésszöge 104,5°, kisebb a tetraéderes 109,5°-nál."
+    },
+    {
+      "term": "dipólusmolekula",
+      "meaning": "Olyan molekula, amelyben a pozitív és a negatív töltés súlypontja nem esik egybe (poláris molekula).",
+      "example": "A víz dipólusmolekula, mert kötései polárisak, és alakja nem szimmetrikus."
+    },
+    {
+      "term": "apoláris molekula",
+      "meaning": "Olyan molekula, amelyben a töltések súlypontja egybeesik: apoláris kötésekből áll, vagy szimmetrikus alakja miatt a kötések polaritása kioltja egymást.",
+      "example": "A szén-dioxid apoláris molekula, mert lineáris alakja miatt a két poláris kötés hatása kioltja egymást."
+    },
+    {
+      "term": "hidrogénkötés",
+      "meaning": "Másodrendű kötés egy F-, O- vagy N-atomhoz kapcsolódó hidrogénatom és egy másik molekula F-, O- vagy N-atomjának nemkötő elektronpárja között.",
+      "example": "A víz magas forráspontját a molekulák közötti hidrogénkötés okozza."
+    },
+    {
+      "term": "diszperziós kölcsönhatás",
+      "meaning": "Minden molekula között fellépő gyenge másodrendű kölcsönhatás, amely pillanatnyi dipólusokból származik; a molekulamérettel nő.",
+      "example": "A metán molekulái között csak diszperziós kölcsönhatás van, ezért alacsony a forráspontja."
+    },
+    {
+      "term": "ionrács",
+      "meaning": "Kristályrács, amelynek rácspontjaiban ellentétes töltésű ionok vannak; magas olvadáspont, szilárdan nem, olvadékban és oldatban vezeti az áramot.",
+      "example": "A nátrium-klorid ionrácsos vegyület, ezért magas, 801 °C az olvadáspontja."
+    },
+    {
+      "term": "atomrács",
+      "meaning": "Kristályrács, amelyben az atomokat kovalens kötések hálózata kapcsolja össze; nagyon kemény, igen magas olvadáspontú anyagok.",
+      "example": "A gyémánt atomrácsában minden szénatom négy másikhoz kapcsolódik."
+    },
+    {
+      "term": "molekularács",
+      "meaning": "Kristályrács, amelynek rácspontjaiban molekulák vannak, amelyeket másodrendű kötések tartanak össze; alacsony olvadáspont, puha anyagok.",
+      "example": "A jód molekularácsos anyag, ezért melegítéskor könnyen szublimál."
+    },
+    {
+      "term": "fémrács",
+      "meaning": "A fémek kristályrácsa: atomtörzsek és delokalizált elektronok; jó elektromos és hővezetés, fémes fény, alakíthatóság.",
+      "example": "A réz fémrácsa miatt jól alakítható, és kiválóan vezeti az áramot."
+    },
+    {
+      "term": "allotróp módosulat",
+      "meaning": "Ugyanazon elem eltérő szerkezetű, ezért eltérő tulajdonságú formái.",
+      "example": "A gyémánt és a grafit a szén két allotróp módosulata; az oxigén és az ózon az oxigéné."
+    }
+  ]
+}

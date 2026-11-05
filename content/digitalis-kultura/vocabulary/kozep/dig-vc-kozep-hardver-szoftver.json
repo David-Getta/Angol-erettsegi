@@ -1,0 +1,200 @@
+{
+  "schemaVersion": 1,
+  "id": "dig-vc-kozep-hardver-szoftver",
+  "subject": "digitalis-kultura",
+  "revision": 1,
+  "level": "kozep",
+  "source": "generated",
+  "topic": "hardver-szoftver",
+  "title": "Hardver, szoftver, operációs rendszer – alapfogalmak",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "vocabulary",
+  "type": "deck",
+  "cards": [
+    {
+      "term": "hardver",
+      "meaning": "A számítógép fizikai, kézzel fogható részeinek összessége (alaplap, processzor, memória, háttértár, perifériák).",
+      "example": "A hardver része a processzor, a memória és a billentyűzet is.",
+      "pos": "n"
+    },
+    {
+      "term": "szoftver",
+      "meaning": "A számítógépen futó programok, a hozzájuk tartozó adatok és dokumentáció összessége.",
+      "example": "Szoftver nélkül a hardver semmilyen feladatot nem tudna elvégezni.",
+      "pos": "n"
+    },
+    {
+      "term": "processzor (CPU)",
+      "meaning": "Központi feldolgozó egység: értelmezi és végrehajtja a program utasításait; részei a vezérlőegység és az aritmetikai-logikai egység (ALU).",
+      "example": "A processzor másodpercenként több milliárd utasítást hajt végre.",
+      "pos": "n",
+      "collocation": "4 magos, 3,2 GHz-es processzor"
+    },
+    {
+      "term": "órajel",
+      "meaning": "A processzor működését ütemező jel frekvenciája; hertzben (Hz) mérjük, ma jellemzően gigahertzben (1 GHz = 10⁹ ciklus másodpercenként).",
+      "example": "A 3,2 GHz-es órajel másodpercenként 3,2 milliárd ciklust jelent.",
+      "pos": "n"
+    },
+    {
+      "term": "processzormag",
+      "meaning": "A processzoron belüli önálló végrehajtó egység; több mag egyszerre több utasítássorozatot tud valóban párhuzamosan végrehajtani.",
+      "example": "A négy processzormag egyszerre négy feladaton dolgozhat.",
+      "pos": "n"
+    },
+    {
+      "term": "operatív memória (RAM)",
+      "meaning": "Gyors, írható-olvasható, illékony memória: a futó programok és az általuk használt adatok helye; kikapcsoláskor a tartalma elvész.",
+      "example": "Ha kevés az operatív memória, a gép lelassul, mert a háttértárra kell lapoznia.",
+      "pos": "n",
+      "collocation": "16 GB RAM"
+    },
+    {
+      "term": "ROM",
+      "meaning": "Csak olvasható memória (Read Only Memory); tartalma kikapcsoláskor is megmarad, ilyenben van például a gép indításához szükséges firmware.",
+      "example": "A ROM tartalmát a felhasználó a szokásos használat során nem módosítja.",
+      "pos": "n"
+    },
+    {
+      "term": "firmware (UEFI, BIOS)",
+      "meaning": "Az alaplapon tárolt, a hardverhez szorosan kötődő program; bekapcsoláskor ellenőrzi az eszközöket, és elindítja az operációs rendszer betöltését.",
+      "example": "A firmware beállításaiban adható meg, melyik háttértárról induljon a gép.",
+      "pos": "n"
+    },
+    {
+      "term": "háttértár",
+      "meaning": "Nagy kapacitású, tartós adattároló (SSD, HDD, pendrive, memóriakártya); kikapcsoláskor is megőrzi az adatokat, de lassabb a RAM-nál.",
+      "example": "A dokumentumokat a háttértárra mentjük, hogy kikapcsolás után is megmaradjanak.",
+      "pos": "n"
+    },
+    {
+      "term": "SSD",
+      "meaning": "Flash memóriával működő háttértár (Solid State Drive); nincs mozgó alkatrésze, ezért gyors, csendes és ütésálló.",
+      "example": "Az SSD-ről a rendszer néhány másodperc alatt elindul.",
+      "pos": "n"
+    },
+    {
+      "term": "HDD (merevlemez)",
+      "meaning": "Forgó mágneslemezeken és mozgó író-olvasó fejjel tároló háttértár; olcsóbb és nagyobb kapacitású, de lassabb az SSD-nél.",
+      "example": "A régi HDD-n a sok kis fájl másolása sokáig tart.",
+      "pos": "n"
+    },
+    {
+      "term": "periféria",
+      "meaning": "A központi egységhez csatlakozó külső eszköz; lehet bemeneti, kimeneti vagy ki-bemeneti.",
+      "example": "A nyomtató és az egér is periféria.",
+      "pos": "n"
+    },
+    {
+      "term": "bemeneti eszköz",
+      "meaning": "Adatot juttat a számítógépbe (billentyűzet, egér, mikrofon, szkenner, webkamera).",
+      "example": "A szkenner bemeneti eszköz, mert a papíron lévő képet a gépbe juttatja.",
+      "pos": "n"
+    },
+    {
+      "term": "kimeneti eszköz",
+      "meaning": "A számítógép által előállított adatot jeleníti meg vagy viszi ki (monitor, nyomtató, hangszóró, projektor).",
+      "example": "A projektor kimeneti eszköz: a gép képét vetíti ki.",
+      "pos": "n"
+    },
+    {
+      "term": "alaplap",
+      "meaning": "A számítógép fő áramköri lapja: összeköti a processzort, a memóriát, a háttértárakat és a bővítőkártyákat.",
+      "example": "Az alaplap foglalatába illesztik a processzort és a memóriamodulokat.",
+      "pos": "n"
+    },
+    {
+      "term": "bit",
+      "meaning": "Az információ legkisebb egysége: két állapot (0 vagy 1) egyike.",
+      "example": "Egy bit csak 0 vagy 1 értéket tárolhat.",
+      "pos": "n"
+    },
+    {
+      "term": "bájt",
+      "meaning": "8 bitből álló adategység; egy bájton 256 (2⁸) különböző érték ábrázolható.",
+      "example": "Az ASCII-karakterek egy bájtot foglalnak el.",
+      "pos": "n",
+      "collocation": "1 bájt = 8 bit"
+    },
+    {
+      "term": "kibibájt (KiB)",
+      "meaning": "1024 bájt (2¹⁰ B); a bináris előtagok (KiB, MiB, GiB) 1024-es, az SI-előtagok (kB, MB, GB) 1000-es váltószámot jelentenek.",
+      "example": "Egy 4 kibibájtos fájl 4096 bájtot foglal.",
+      "pos": "n",
+      "collocation": "1 KiB = 1024 B, 1 kB = 1000 B"
+    },
+    {
+      "term": "operációs rendszer",
+      "meaning": "A hardvert kezelő és a programok futását lehetővé tevő rendszerszoftver: kezeli a processzoridőt, a memóriát, a fájlokat, a perifériákat és a felhasználókat.",
+      "example": "A Windows, a Linux és az Android is operációs rendszer.",
+      "pos": "n"
+    },
+    {
+      "term": "illesztőprogram (driver)",
+      "meaning": "Olyan program, amelyen keresztül az operációs rendszer egy adott hardvereszközt kezelni tud.",
+      "example": "Az új nyomtatóhoz telepíteni kellett az illesztőprogramot.",
+      "pos": "n"
+    },
+    {
+      "term": "alkalmazói szoftver",
+      "meaning": "A felhasználó konkrét feladatát megoldó program (szövegszerkesztő, táblázatkezelő, böngésző, játék).",
+      "example": "A táblázatkezelő alkalmazói szoftver.",
+      "pos": "n"
+    },
+    {
+      "term": "rendszerszoftver",
+      "meaning": "A számítógép működtetését szolgáló szoftver: operációs rendszer, illesztőprogramok, segédprogramok.",
+      "example": "A rendszerszoftver teremti meg az alkalmazások futásának feltételeit.",
+      "pos": "n"
+    },
+    {
+      "term": "fájlrendszer",
+      "meaning": "A fájlok háttértáron való szervezésének és nyilvántartásának módja (pl. NTFS, FAT32, exFAT, ext4).",
+      "example": "A FAT32 fájlrendszer legfeljebb 4 GiB-os fájlokat tud tárolni.",
+      "pos": "n"
+    },
+    {
+      "term": "elérési út",
+      "meaning": "A fájl helyét megadó leírás a könyvtárszerkezetben, pl. C:\\Users\\Anna\\cikk.docx vagy /home/anna/cikk.odt.",
+      "example": "A program a teljes elérési út alapján találja meg a fájlt.",
+      "pos": "n"
+    },
+    {
+      "term": "kiterjesztés",
+      "meaning": "A fájlnév pont utáni része, amely a fájl típusára utal (pl. .docx, .xlsx, .py, .jpg).",
+      "example": "A .py kiterjesztés Python-forráskódot jelöl.",
+      "pos": "n"
+    },
+    {
+      "term": "Neumann-elvek",
+      "meaning": "A mai számítógépek működési alapelvei: kettes számrendszer, elektronikus működés, soros utasításvégrehajtás, belső memória, tárolt program, univerzális gép.",
+      "example": "A Neumann-elvek szerint a program és az adat ugyanabban a memóriában tárolódik.",
+      "pos": "n"
+    },
+    {
+      "term": "tárolt program elve",
+      "meaning": "Neumann-elv: a program a belső memóriában, az adatokkal azonos módon tárolódik, így a gép programcserével más feladatra használható.",
+      "example": "A tárolt program elve miatt elég új programot betölteni, nem kell a gépet átépíteni.",
+      "pos": "n"
+    },
+    {
+      "term": "képernyőfelbontás",
+      "meaning": "A kijelzőn megjeleníthető képpontok száma vízszintesen és függőlegesen (pl. Full HD: 1920 × 1080).",
+      "example": "A Full HD képernyőfelbontás 1920 × 1080 képpont.",
+      "pos": "n"
+    },
+    {
+      "term": "tömörítés",
+      "meaning": "Az adat tárolásához szükséges hely csökkentése; lehet veszteségmentes (ZIP, PNG) vagy veszteséges (JPEG, MP3).",
+      "example": "A ZIP-tömörítés után a fájl eredeti tartalma pontosan visszaállítható.",
+      "pos": "n"
+    },
+    {
+      "term": "biztonsági mentés",
+      "meaning": "Az adatok másolatának rendszeres elkészítése másik adathordozóra vagy a felhőbe, hogy adatvesztés esetén visszaállíthatók legyenek.",
+      "example": "A biztonsági mentést érdemes leválasztott külső meghajtóra is elkészíteni.",
+      "pos": "n"
+    }
+  ]
+}

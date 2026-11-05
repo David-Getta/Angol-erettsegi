@@ -1,0 +1,262 @@
+{
+  "schemaVersion": 1,
+  "id": "fol-gr-termeszeti-folyamat",
+  "subject": "foldrajz",
+  "revision": 1,
+  "level": "kozep",
+  "source": "generated",
+  "topic": "nyelvtan",
+  "title": "Természetföldrajzi folyamatok",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "grammar",
+  "type": "lesson",
+  "category": "termeszeti-folyamat",
+  "summaryHu": "A természetföldrajzi folyamatok (légköri jelenségek, lemeztektonika, felszínformálás, vízkörforgás) magyarázatánál a vizsgáztató ok–okozati láncot vár: mi indítja el a folyamatot, milyen lépésekben zajlik, és mi lesz az eredménye. A pontokat lépésenként adják, ezért a kihagyott láncszem pontvesztés. Ez a kategória a rövid feladatok, a kifejtős összefüggés-magyarázat és a szóbeli természetföldrajzi tétel legfontosabb része.",
+  "rules": [
+    {
+      "title": "A magyarázat szerkezete: ok → folyamat → következmény",
+      "explanation": "Minden természeti jelenséget három lépésben írj le: (1) a kiváltó ok (energia, nyomáskülönbség, lemezmozgás), (2) a folyamat menete, (3) az eredmény (felszínforma, időjárás, éghajlat). A „mert” és „ezért” kötőszavak mutatják, hogy összefüggést írsz le, nem felsorolást.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "A szárazföld nappal jobban felmelegszik → felette alacsonyabb a légnyomás → a tenger felől fúj a szél (tengeri szél).",
+          "hu": "Nappali parti szélrendszer."
+        }
+      ]
+    },
+    {
+      "title": "Felemelkedő levegő hűl, leszálló levegő melegszik",
+      "explanation": "A felemelkedő levegő kitágul és adiabatikusan lehűl (telítetlenül kb. 1 °C/100 m, telítetten kb. 0,5 °C/100 m), ezért felhő és csapadék képződik; a leszálló levegő összenyomódik, melegszik és szárazodik. Ez magyarázza a zenitális esőt, a domborzati csapadékot, a térítői sivatagokat és a főnt.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "Egyenlítő: feláramlás → csapadék; térítők: leszálló légáramlás → sivatag"
+        },
+        {
+          "en": "Hegység szél felőli oldala: csapadék; szélárnyékos oldal: főn, esőárnyék"
+        }
+      ]
+    },
+    {
+      "title": "Frontok és légörvények",
+      "explanation": "Hidegfrontnál a hideg levegő benyomul a meleg alá és meredeken felemeli – heves zápor, zivatar, majd lehűlés; melegfrontnál a meleg levegő lassan felsiklik a hidegre – tartós, csendes eső, felmelegedés. A ciklonban a levegő felszáll (felhős, csapadékos), az anticiklonban leszáll (derült, száraz).",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "Nyári hidegfront: zivatar, jégeső, utána felfrissülés"
+        }
+      ]
+    },
+    {
+      "title": "Belső és külső erők a felszínformálásban",
+      "explanation": "A belső erők (lemezmozgás, gyűrődés, vetődés, vulkánosság) a felszín magasságkülönbségeit hozzák létre, a külső erők (mállás, víz, szél, jég munkája) lepusztítják és feltöltik. A folyó felső szakaszán nagy az esés, bevágódik (V alakú völgy), az alsó szakaszon kicsi az esés, kanyarog és hordalékot rak le (ártér, morotvató, delta).",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "Felső szakasz: bevágódás, V-völgy; alsó szakasz: feltöltés, kanyarulatok, delta"
+        },
+        {
+          "en": "Jég: U alakú völgy, moréna; szél: homokbucka, lösz"
+        }
+      ]
+    },
+    {
+      "title": "Visszacsatolások a természeti rendszerekben",
+      "explanation": "Pozitív visszacsatolásnál a folyamat eredménye erősíti magát a folyamatot (jégolvadás → sötétebb felszín → több elnyelt sugárzás → további melegedés), negatív visszacsatolásnál gyengíti (melegedés → több felhő → kevesebb napsugárzás). Emelt szinten az éghajlatváltozás magyarázatánál gyakran kérdezik.",
+      "emeltOnly": true,
+      "examples": [
+        {
+          "en": "Sarkvidéki jégolvadás – pozitív visszacsatolás"
+        }
+      ]
+    }
+  ],
+  "commonMistakes": [
+    {
+      "wrong": "A felemelkedő meleg levegő felfelé tovább melegszik.",
+      "right": "A felemelkedő levegő kitágul és lehűl.",
+      "why": "A felszállás során csökken a légnyomás, a levegő tágul, és a tágulás energiáját belső energiájából fedezi – ezért hűl le, és ezért képződik felhő."
+    },
+    {
+      "wrong": "Az évszakokat az okozza, hogy a Föld nyáron közelebb van a Naphoz.",
+      "right": "Az évszakokat a tengelyferdeség és a Nap körüli keringés együtt okozza.",
+      "why": "A Föld januárban van a legközelebb a Naphoz, mégis ekkor van tél az északi félgömbön; a napsugarak beesési szöge és a nappalok hossza a döntő."
+    },
+    {
+      "wrong": "A tengerparton nappal a szárazföld felől fúj a szél.",
+      "right": "Nappal a tenger felől fúj (tengeri szél), éjjel a szárazföld felől (parti szél).",
+      "why": "Nappal a szárazföld melegszik fel jobban, felette alacsony a nyomás, ezért oda áramlik a levegő a hűvösebb tenger felől; éjjel fordított a helyzet."
+    },
+    {
+      "wrong": "A folyó a felső szakaszán épít, az alsó szakaszán bevágódik.",
+      "right": "A felső szakaszon bevágódik, az alsó szakaszon feltölt.",
+      "why": "A felső szakaszon nagy az esés és a sebesség, a víz energiája a mélyítésre elég; az alsó szakaszon lelassul, és lerakja a hordalékot."
+    },
+    {
+      "wrong": "A hidegfront tartós, csendes esőt hoz.",
+      "right": "A hidegfront heves záport, zivatart hoz; a tartós, csendes eső a melegfrontra jellemző.",
+      "why": "A hideg levegő meredeken emeli fel a meleg levegőt, ezért gyors, heves feláramlás és zivatarfelhő alakul ki."
+    }
+  ],
+  "examTips": [
+    "A kifejtős összefüggés-magyarázatban a pontozás lépésenként történik: minden láncszemet (ok, folyamat, eredmény) írj le külön mondatban.",
+    "A rövid feladatokban gyakori az igaz–hamis állítás, amely egy ok–okozati kapcsolatot fordít meg (pl. melegszik ↔ hűl) – olvasd el kétszer az állítást.",
+    "A szóbeli tételben a folyamatot egy konkrét helyhez kösd (pl. főn – Alpok, monszun – India), és mutasd meg a térképen."
+  ],
+  "practice": [
+    {
+      "id": "1",
+      "kind": "choice",
+      "prompt": "Miért fúj nappal a tenger felől a szél a tengerparton?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Mert a szárazföld jobban felmelegszik, és felette alacsonyabb lesz a légnyomás."
+        },
+        {
+          "key": "B",
+          "text": "Mert a tenger jobban felmelegszik nappal."
+        },
+        {
+          "key": "C",
+          "text": "Mert a Föld forgása mindig a tenger felől tereli a levegőt."
+        },
+        {
+          "key": "D",
+          "text": "Mert a Hold vonzása mozgatja a levegőt."
+        }
+      ],
+      "answer": "A",
+      "category": "termeszeti-folyamat",
+      "explanation": "Helyes: A. A szárazföld kisebb fajhője miatt gyorsabban melegszik, felette a levegő felszáll, alacsony nyomás alakul ki, és a hűvösebb tenger felől oda áramlik a levegő.",
+      "wrongOptions": {
+        "B": "Nappal éppen a szárazföld melegszik gyorsabban; a víz lassan melegszik fel.",
+        "C": "A téríti erő eltéríti a szelet, de nem okozza a napi parti szélrendszert.",
+        "D": "A Hold a tengerjárást okozza, a szélre nincs számottevő hatása."
+      }
+    },
+    {
+      "id": "2",
+      "kind": "choice",
+      "prompt": "Mi jellemző a folyó felső szakaszára?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Nagy esés, bevágódás, V alakú völgy"
+        },
+        {
+          "key": "B",
+          "text": "Kis esés, kanyargás, feltöltés"
+        },
+        {
+          "key": "C",
+          "text": "Deltaépítés"
+        },
+        {
+          "key": "D",
+          "text": "Morotvatavak képződése"
+        }
+      ],
+      "answer": "A",
+      "category": "termeszeti-folyamat",
+      "explanation": "Helyes: A. A felső szakaszon nagy az esés és a víz sebessége, ezért a folyó mélyíti a medrét, V alakú völgyet vés.",
+      "wrongOptions": {
+        "B": "Ez az alsó szakasz jellemzője.",
+        "C": "A delta a torkolatnál, a folyó végén épül.",
+        "D": "Morotvató a kanyargó alsó szakaszon, a lefűződött kanyarulatokból keletkezik."
+      }
+    },
+    {
+      "id": "3",
+      "kind": "text",
+      "prompt": "Hogyan nevezzük a felemelkedő levegő tágulás miatti, hőcsere nélküli lehűlését?",
+      "answer": [
+        "adiabatikus hűlés",
+        "adiabatikus lehűlés",
+        "adiabatikus"
+      ],
+      "category": "termeszeti-folyamat",
+      "explanation": "Adiabatikus hűlés: a levegő a környezetével nem cserél hőt, a tágulás miatt hűl le (telítetlenül kb. 1 °C/100 m).",
+      "maxWords": 2
+    },
+    {
+      "id": "4",
+      "kind": "choice",
+      "prompt": "Mi történik egy hidegfront átvonulásakor?",
+      "options": [
+        {
+          "key": "A",
+          "text": "A hideg levegő benyomul a meleg alá, felemeli; zápor, zivatar, majd lehűlés"
+        },
+        {
+          "key": "B",
+          "text": "A meleg levegő lassan felsiklik a hidegre; tartós, csendes eső"
+        },
+        {
+          "key": "C",
+          "text": "Anticiklon alakul ki, derült lesz az idő"
+        },
+        {
+          "key": "D",
+          "text": "A hőmérséklet tartósan emelkedik"
+        }
+      ],
+      "answer": "A",
+      "category": "termeszeti-folyamat",
+      "explanation": "Helyes: A. A hidegfront gyors, meredek feláramlást okoz, gomolyfelhők és heves csapadék kíséri, utána hűvösebb, tisztább levegő érkezik.",
+      "wrongOptions": {
+        "B": "Ez a melegfront leírása.",
+        "C": "Az anticiklon nem front, hanem magas nyomású légörvény; a front átvonulása után alakulhat ki derült idő, de nem ez a front jellemzője.",
+        "D": "Hidegfront után éppen lehűlés következik."
+      }
+    },
+    {
+      "id": "5",
+      "kind": "text",
+      "prompt": "Hogyan nevezzük a gleccser által szállított és lerakott kőzettörmeléket?",
+      "answer": [
+        "moréna",
+        "morénák"
+      ],
+      "category": "termeszeti-folyamat",
+      "explanation": "Moréna: a jég által lepusztított, szállított és az olvadáskor lerakott, osztályozatlan kőzettörmelék (oldal-, közép-, homlok- és fenékmoréna).",
+      "maxWords": 1
+    },
+    {
+      "id": "6",
+      "kind": "choice",
+      "prompt": "Melyik folyamat pozitív visszacsatolás?",
+      "options": [
+        {
+          "key": "A",
+          "text": "melegedés → jégolvadás → kisebb fényvisszaverés → további melegedés"
+        },
+        {
+          "key": "B",
+          "text": "melegedés → több felhő → kevesebb napsugárzás → hűlés"
+        },
+        {
+          "key": "C",
+          "text": "lehűlés → kevesebb párolgás → kevesebb felhő → több napsugárzás → melegedés"
+        },
+        {
+          "key": "D",
+          "text": "erős párolgás → hűlő felszín → gyengülő párolgás"
+        }
+      ],
+      "answer": "A",
+      "category": "termeszeti-folyamat",
+      "explanation": "Helyes: A. A folyamat eredménye (kevesebb jég, sötétebb felszín) tovább erősíti a kiváltó okot (melegedés) – ez a pozitív visszacsatolás.",
+      "wrongOptions": {
+        "B": "Itt az eredmény (hűlés) gyengíti a kiváltó melegedést: negatív visszacsatolás.",
+        "C": "A lehűlés végül melegedést okoz, vagyis gyengíti magát: negatív visszacsatolás.",
+        "D": "A párolgás hűti a felszínt, ami csökkenti a párolgást: önszabályozó, negatív visszacsatolás."
+      }
+    }
+  ],
+  "relatedCategories": [
+    "ovezetesseg-hiba",
+    "fogalomhasznalat"
+  ]
+}

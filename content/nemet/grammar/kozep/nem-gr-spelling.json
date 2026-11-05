@@ -1,0 +1,172 @@
+{
+  "schemaVersion": 1,
+  "id": "nem-gr-spelling",
+  "subject": "nemet",
+  "level": "kozep",
+  "source": "generated",
+  "topic": "nyelvtan",
+  "title": "Helyesírás",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "grammar",
+  "type": "lesson",
+  "category": "spelling",
+  "summaryHu": "A német helyesírás legfontosabb szabálya, hogy minden főnevet nagy kezdőbetűvel írunk – a mondat közepén is. A magyar tanulók ezt gyakran elfelejtik, és a magyar fonetikus írás hatására a német hosszú és rövid magánhangzók jelölését (ie, h, mássalhangzó-kettőzés), az ß/ss-t és az Umlautot is hibázzák. Az írásbeli értékelésben a helyesírási hibák a nyelvhelyesség szempontnál számítanak; ha sok van belőlük, vagy megnehezítik a megértést, a pontszám jelentősen csökken. A szóképzési és nyitott kloze-feladatban a hibásan írt szó is rossz válasznak számíthat.",
+  "rules": [
+    {
+      "title": "Főnevek és főnévi szerepű szavak nagybetűvel",
+      "explanation": "Minden főnév nagybetűs, a mondat bármely pontján: der Hund, die Schule, das Wochenende. Nagybetűs a főnévvé vált ige és melléknév is, ha névelő, elöljáró + névelő, illetve etwas, nichts, viel, wenig, alles áll előtte: das Lernen, beim Kochen, zum Schwimmen, etwas Schönes, nichts Neues, alles Gute, viel Spaß. A nem főnévi szófajok (igék, melléknevek, névmások) kisbetűsek.",
+      "emeltOnly": false,
+      "examples": [
+        { "en": "Am Wochenende haben wir einen Ausflug in die Berge gemacht.", "hu": "Hétvégén kirándultunk a hegyekbe." },
+        { "en": "Beim Lesen höre ich gern Musik.", "hu": "Olvasás közben szívesen hallgatok zenét.", "note": "beim + főnévi igenév → nagybetű." },
+        { "en": "Ich wünsche dir alles Gute zum Geburtstag!", "hu": "Boldog születésnapot kívánok!" }
+      ]
+    },
+    {
+      "title": "Megszólítás: Sie nagybetűvel, du kisbetűvel",
+      "explanation": "A magázó Sie és minden alakja nagybetűs: Sie, Ihnen, Ihr, Ihre (Können Sie mir helfen? Vielen Dank für Ihre Antwort). A tegező du, dich, dir, dein, ihr, euch, euer általában kisbetűs; levélben nagybetűvel is írhatók (Du, Dein), de a szövegen belül következetesen. A sich mindig kisbetűs, magázásban is.",
+      "emeltOnly": false,
+      "examples": [
+        { "en": "Sehr geehrte Frau Weber, vielen Dank für Ihre schnelle Antwort.", "hu": "Tisztelt Weber asszony! Köszönöm gyors válaszát." },
+        { "en": "Liebe Anna, wie geht es dir?", "hu": "Kedves Anna! Hogy vagy?" }
+      ]
+    },
+    {
+      "title": "Nyelvek, nemzetiségek, napok, napszakok",
+      "explanation": "A nemzetiséget jelölő melléknév kisbetűs: ein ungarisches Gericht, die deutsche Sprache. A nyelv neve főnévként nagybetűs: Ich lerne Deutsch, auf Deutsch, Sprichst du Ungarisch? A nemzetiség főnévként nagybetűs: der Ungar, die Ungarin, die Österreicher. A napok főnévként nagybetűsek (der Montag, am Montag), határozószóként kisbetűsek (montags = hétfőnként, abends). A heute, gestern, morgen utáni napszak nagybetűs: heute Abend, gestern Nachmittag, morgen früh.",
+      "emeltOnly": false,
+      "examples": [
+        { "en": "Ich spreche gut Englisch und ein bisschen Deutsch.", "hu": "Jól beszélek angolul és egy kicsit németül." },
+        { "en": "Wir essen gern ungarische Gerichte.", "hu": "Szívesen eszünk magyar ételeket." },
+        { "en": "Montags habe ich Training, aber heute Abend habe ich Zeit.", "hu": "Hétfőnként edzésem van, de ma este ráérek." }
+      ]
+    },
+    {
+      "title": "ß vagy ss, das vagy dass",
+      "explanation": "ß áll hosszú magánhangzó és kettőshangzó (ei, au, eu) után: die Straße, der Fuß, groß, heißen, weiß, draußen. ss áll rövid magánhangzó után: die Klasse, essen, wissen, der Fluss, muss, dass. (Svájcban az ß helyett mindig ss-t írnak.) das = névelő vagy névmás (helyettesíthető a dieses/welches/dies szóval), dass = kötőszó (hogy): Ich hoffe, dass das Wetter schön wird.",
+      "emeltOnly": false,
+      "examples": [
+        { "en": "Wir wohnen in einer großen Straße.", "hu": "Egy nagy utcában lakunk.", "note": "Hosszú o, a után: ß." },
+        { "en": "Ich weiß, dass du das Buch schon gelesen hast.", "hu": "Tudom, hogy már olvastad a könyvet.", "note": "dass = hogy; das = a (névelő)." }
+      ]
+    },
+    {
+      "title": "Hosszú és rövid magánhangzók, Umlaut",
+      "explanation": "A hosszú i-t legtöbbször ie jelöli (spielen, viel, der Brief, lieben), a hosszú magánhangzót sokszor néma h (fahren, die Uhr, der Lehrer, wohnen) vagy kettőzött betű (das Meer, der Tee, das Boot). Rövid magánhangzó után a mássalhangzó gyakran kettőződik (kommen, die Sonne, bitte, der Mittag, wann). Az Umlaut (ä, ö, ü) jelentést különböztet meg: schon (már) – schön (szép), zahlen (fizet) – zählen (számol), die Mutter – die Mütter. A magyar fonetikus írás hatására gyakori hibák: fil (viel), komen (kommen), shön (schön).",
+      "emeltOnly": false,
+      "examples": [
+        { "en": "Ich spiele viel Fußball.", "hu": "Sokat focizom.", "note": "ie a hosszú i-hez, ß a hosszú u után." },
+        { "en": "Kommst du mit? Das Wetter ist schön!", "hu": "Jössz? Szép az idő!" }
+      ]
+    },
+    {
+      "title": "Egybe- és különírás",
+      "explanation": "Az összetett főneveket egybeírjuk, akármilyen hosszúak (die Hausaufgabe, das Fußballspiel, die Geburtstagsparty); kötőjel csak az áttekinthetőség kedvéért vagy rövidítéssel kell (die U-Bahn, der E-Mail-Kontakt). Az elváló igekötős igék főnévi igenévként és mellékmondat végén egybeírandók (anrufen, …, wenn ich dich anrufe). Különírjuk: Rad fahren, Auto fahren, spazieren gehen, zu Hause (otthon), nach Hause (haza). A kennenlernen különírva is helyes (kennen lernen).",
+      "emeltOnly": false,
+      "examples": [
+        { "en": "Kannst du mich heute Abend anrufen?", "hu": "Fel tudsz hívni ma este?" },
+        { "en": "Nach dem Essen gehen wir spazieren.", "hu": "Evés után sétálni megyünk." }
+      ]
+    }
+  ],
+  "commonMistakes": [
+    { "wrong": "Ich habe am wochenende einen ausflug gemacht.", "right": "Ich habe am Wochenende einen Ausflug gemacht.", "why": "A németben minden főnév nagy kezdőbetűs, a mondat közepén is – a magyarban ilyen szabály nincs, ezért könnyű elfelejteni." },
+    { "wrong": "Ich spreche gut englisch und ein bisschen deutsch.", "right": "Ich spreche gut Englisch und ein bisschen Deutsch.", "why": "A nyelv neve (Englisch, Deutsch, Ungarisch) a sprechen, lernen, können után főnév, ezért nagybetűs. Csak a melléknév kisbetűs (die deutsche Sprache)." },
+    { "wrong": "Wir kochen oft Ungarische Gerichte.", "right": "Wir kochen oft ungarische Gerichte.", "why": "A nemzetiséget jelölő melléknév a főnév előtt kisbetűs: ungarisch, deutsch, österreichisch." },
+    { "wrong": "Ich hoffe, das Sie mir helfen können.", "right": "Ich hoffe, dass Sie mir helfen können.", "why": "A „hogy” kötőszó dass (ss-sel). A das névelő vagy névmás. Próba: ha dieses/welches-szel helyettesíthető, das; ha nem, dass." },
+    { "wrong": "Vielen Dank für ihre Antwort. (hivatalos levélben)", "right": "Vielen Dank für Ihre Antwort.", "why": "A magázó alak minden formája nagybetűs (Sie, Ihnen, Ihr, Ihre). Kisbetűvel az ihre azt jelenti: az ő (nő) / az ő (többes) válaszuk." },
+    { "wrong": "Ich wohne in der Hauptstrase.", "right": "Ich wohne in der Hauptstraße.", "why": "Hosszú magánhangzó (a) után ß áll: Straße, groß, Fuß. A magyar fonetikus írás alapján egy s-sel szokták írni." }
+  ],
+  "examTips": [
+    "Írás után végezz külön nagybetű-ellenőrzést: húzd alá a szövegben az összes főnevet, és nézd meg, nagybetűvel kezdődik-e mindegyik. Ez 2–3 perc, és sok pontlevonást megelőz.",
+    "Hivatalos levélben ellenőrizd a Sie-alakok nagybetűjét (Sie, Ihnen, Ihr, Ihre) – ez a hangnem és a nyelvhelyesség szempontnál is számít.",
+    "A dass/das, a viel/fiel és a schon/schön a leggyakoribb helyesírási csapdák: írásban ezekre külön figyelj, mert jelentéskülönbséget hordoznak."
+  ],
+  "practice": [
+    {
+      "id": "1",
+      "kind": "choice",
+      "prompt": "Melyik mondat helyesen írt?",
+      "options": [
+        { "key": "A", "text": "Ich lerne seit drei Jahren deutsch." },
+        { "key": "B", "text": "Ich lerne seit drei Jahren Deutsch." },
+        { "key": "C", "text": "Ich Lerne seit drei Jahren Deutsch." },
+        { "key": "D", "text": "ich lerne seit drei jahren Deutsch." }
+      ],
+      "answer": "B",
+      "category": "spelling",
+      "explanation": "Helyes: B. A mondat eleje (Ich), a főnév (Jahren) és a nyelv neve (Deutsch) nagybetűs, az ige (lerne) kisbetűs.",
+      "wrongOptions": {
+        "A": "A nyelv neve a lernen után főnév, ezért nagybetűs: Deutsch.",
+        "C": "Az ige (lerne) a mondat közepén kisbetűs; csak a főnevek nagybetűsek.",
+        "D": "A mondat eleje (Ich) és a főnév (Jahren) is nagybetűs."
+      }
+    },
+    {
+      "id": "2",
+      "kind": "text",
+      "prompt": "Ich hoffe, ___ du bald wieder gesund bist.",
+      "answer": ["dass"],
+      "category": "spelling",
+      "explanation": "Helyes: dass. A „hogy” jelentésű kötőszó dass (ss-sel), mellékmondatot vezet be. A das névelő vagy névmás lenne (próba: nem helyettesíthető dieses/welches-szel)."
+    },
+    {
+      "id": "3",
+      "kind": "choice",
+      "prompt": "Sehr geehrte Frau Weber, vielen Dank für ___ schnelle Antwort.",
+      "options": [
+        { "key": "A", "text": "ihre" },
+        { "key": "B", "text": "Ihre" },
+        { "key": "C", "text": "Ihren" },
+        { "key": "D", "text": "deine" }
+      ],
+      "answer": "B",
+      "category": "spelling",
+      "explanation": "Helyes: Ihre. Hivatalos levélben magázunk, és a magázó birtokos névelő nagybetűs: Ihre. A die Antwort nőnemű, a für után Akkusativban áll → Ihre.",
+      "wrongOptions": {
+        "A": "Kisbetűvel az ihre harmadik személyű birtokos (az ő válasza), nem magázó forma.",
+        "C": "Az Ihren hímnemű Akkusativ vagy többes számú Dativ; az Antwort nőnemű Akkusativban áll: Ihre.",
+        "D": "A deine tegező forma; a Sehr geehrte Frau Weber megszólítás után magázni kell."
+      }
+    },
+    {
+      "id": "4",
+      "kind": "text",
+      "prompt": "Mein Bruder ___ (müssen) heute bis acht Uhr arbeiten.",
+      "cue": "müssen",
+      "answer": ["muss"],
+      "category": "spelling",
+      "explanation": "Helyes: muss. Az er-alak rag nélküli (er muss), és mivel az u rövid, ss-sel írjuk. A muß írásmód az 1996 előtti, ma már hibás helyesírás."
+    },
+    {
+      "id": "5",
+      "kind": "choice",
+      "prompt": "Ich wünsche dir alles ___ zum Geburtstag!",
+      "options": [
+        { "key": "A", "text": "gute" },
+        { "key": "B", "text": "Gute" },
+        { "key": "C", "text": "Guten" },
+        { "key": "D", "text": "gutes" }
+      ],
+      "answer": "B",
+      "category": "spelling",
+      "explanation": "Helyes: Gute. Az alles után álló melléknév főnévvé válik, ezért nagybetűs, és -e végződést kap: alles Gute.",
+      "wrongOptions": {
+        "A": "Az alles után főnévi szerepben áll, ezért nagybetűvel kell írni.",
+        "C": "Az alles után a főnévvé vált melléknév -e végződést kap (mint a das Gute); az -en végződés itt hibás.",
+        "D": "Kisbetűs, és a végződés is rossz: az -es végződés az etwas után áll (etwas Gutes), az alles után -e (alles Gute)."
+      }
+    },
+    {
+      "id": "6",
+      "kind": "text",
+      "prompt": "Wie ___ (heißen) deine neue Mitschülerin?",
+      "cue": "heißen",
+      "answer": ["heißt"],
+      "category": "spelling",
+      "explanation": "Helyes: heißt. A kettőshangzó (ei) után ß áll; az er/sie-alak (deine Mitschülerin) -t ragot kap: heiß- + -t = heißt."
+    }
+  ],
+  "relatedCategories": ["punctuation", "register", "word-formation"]
+}

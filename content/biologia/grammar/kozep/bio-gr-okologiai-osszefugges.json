@@ -1,0 +1,252 @@
+{
+  "schemaVersion": 1,
+  "id": "bio-gr-okologiai-osszefugges",
+  "subject": "biologia",
+  "revision": 1,
+  "level": "kozep",
+  "source": "generated",
+  "topic": "nyelvtan",
+  "title": "Ökológiai összefüggések",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "grammar",
+  "type": "lesson",
+  "category": "okologiai-osszefugges",
+  "summaryHu": "Az ökológiai feladatok táplálékláncokat, táplálékhálózatokat, anyagkörforgást és energiaáramlást, környezeti tényezőket és populációs kölcsönhatásokat kérdeznek. A hibák többsége abból fakad, hogy a nyilak irányát, az energia és az anyag útját vagy egy változás továbbterjedő hatását rosszul gondoljuk végig. Ez a feladatlap ábraelemzéseiben és a szóbeli környezetvédelmi tételekben is központi.",
+  "rules": [
+    {
+      "title": "A tápláléklánc és a nyilak iránya",
+      "explanation": "A nyíl az elfogyasztott élőlénytől a fogyasztó felé mutat, mert az anyag és az energia ebbe az irányba halad. Szintek: termelő → elsődleges fogyasztó (növényevő) → másodlagos fogyasztó (ragadozó) → harmadlagos fogyasztó. A lebontók minden szint elhalt anyagát feldolgozzák.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "fű → sáska → gyík → vércse",
+          "hu": "A vércse harmadlagos fogyasztó."
+        },
+        {
+          "en": "Egy táplálékhálózatban ugyanaz a faj több szinten is állhat (pl. a róka egeret és bogarat is eszik).",
+          "hu": "Hálózat ≠ lánc."
+        }
+      ]
+    },
+    {
+      "title": "Az anyag körforog, az energia áramlik",
+      "explanation": "A szén, a nitrogén, a víz és az ásványi anyagok a termelők, fogyasztók, lebontók és az élettelen környezet között körforognak. Az energia viszont egy irányba áramlik: napfényként lép be, és minden szinten egy része (légzéssel) hővé alakulva elhagyja a rendszert – ezért az ökoszisztémának folyamatos napenergia-bevitel kell.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "Az elhalt levél szene a lebontók légzésével CO₂-ként visszajut a légkörbe, onnan a fotoszintézissel újra a növénybe.",
+          "hu": "Anyagkörforgás."
+        },
+        {
+          "en": "Az energiapiramis mindig felfelé keskenyedik; átlagosan kb. 10% jut a következő szintre.",
+          "hu": "Energiaáramlás."
+        }
+      ]
+    },
+    {
+      "title": "Környezeti tényezők, tűrőképesség, limitáló tényező",
+      "explanation": "Minden fajnak minden környezeti tényezőre van optimuma és tűréshatára. A szűk tűrésű fajok jó bioindikátorok. Mindig a legkedvezőtlenebb tényező korlátozza az élőlény működését (minimumtényező).",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "A zuzmók eltűnése a városban a levegő kén-dioxid-szennyezettségét jelzi.",
+          "hu": "Bioindikátor."
+        },
+        {
+          "en": "A tavak algái számára gyakran a foszfát a limitáló tényező; ha bemosódik, algavirágzás lesz.",
+          "hu": "Limitáló tényező."
+        }
+      ]
+    },
+    {
+      "title": "Populációk kölcsönhatásai",
+      "explanation": "Versengés (−/−), zsákmányszerzés és élősködés (+/−), kölcsönös előnyös kapcsolat, mutualizmus (+/+), asztalközösség, kommenzalizmus (+/0). A ragadozó és a zsákmány egyedszáma egymást követve ingadozik: a zsákmány számának csúcsát késve követi a ragadozóé.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "A gyökérgümő-baktériumok nitrogént kötnek a pillangós növénynek, cserébe szerves anyagot kapnak.",
+          "hu": "Mutualizmus (+/+)."
+        },
+        {
+          "en": "A róka és a mezei nyúl egyedszáma ciklikusan ingadozik.",
+          "hu": "Ragadozó–zsákmány."
+        }
+      ]
+    },
+    {
+      "title": "Továbbterjedő hatások (kaszkád)",
+      "explanation": "Egy faj eltűnése vagy elszaporodása a táplálékhálózatban több szinten át terjed: ha a csúcsragadozó eltűnik, a zsákmány elszaporodik, és túlfogyasztja a saját táplálékát. A következmény iránya szintenként váltakozik.",
+      "emeltOnly": true,
+      "examples": [
+        {
+          "en": "Ha egy tóból kifogják a csukákat, nő a pontyok száma, csökken a zooplankton, és elszaporodnak az algák.",
+          "hu": "Szintenként váltakozó irány."
+        },
+        {
+          "en": "A farkasok visszatelepítése után a szarvasok kevesebbet legeltek a folyóparti fákon, és a part növényzete egyes helyeken regenerálódott.",
+          "hu": "Kaszkádhatás a természetben."
+        }
+      ]
+    }
+  ],
+  "commonMistakes": [
+    {
+      "wrong": "Az energia körforog az ökoszisztémában, mint a szén.",
+      "right": "Az anyag körforog, az energia egy irányba áramlik, és hőként távozik.",
+      "why": "A légzés során felszabaduló hő nem hasznosítható újra a termelők számára."
+    },
+    {
+      "wrong": "vércse → gyík → sáska → fű",
+      "right": "fű → sáska → gyík → vércse",
+      "why": "A nyíl az anyag és az energia útját mutatja: a megevett élőlénytől a fogyasztó felé."
+    },
+    {
+      "wrong": "A lebontók a tápláléklánc csúcsán állnak.",
+      "right": "A lebontók minden szint elhalt szerves anyagát bontják; nem a lánc végén, hanem mellette, az anyagkörforgás zárásában van szerepük.",
+      "why": "A lebontás szervetlen anyagot ad vissza a termelőknek."
+    },
+    {
+      "wrong": "Ha eltávolítjuk a ragadozót, csak a zsákmány egyedszáma változik.",
+      "right": "A zsákmány elszaporodik, ezért a táplálékául szolgáló élőlények száma csökken, a hatás továbbterjed.",
+      "why": "A táplálékhálózat tagjai összefüggenek, egy változás több szinten is érvényesül."
+    },
+    {
+      "wrong": "A zsákmány és a ragadozó egyedszámának csúcsa egyszerre van.",
+      "right": "A ragadozó egyedszámának csúcsa késve követi a zsákmányét.",
+      "why": "A ragadozók szaporodásához idő kell, csak bőséges táplálék után nő a számuk."
+    }
+  ],
+  "examTips": [
+    "Táplálékhálózatos ábránál először jelöld meg a termelőket (amelyekből csak kiinduló nyíl van), majd szintenként haladj; a leghosszabb lánc szintszámát a termelőtől számold.",
+    "„Mi történik, ha…” kérdésnél a választ lépésenként írd le (A csökken → B nő → C csökken), mert a pontozás a gondolatmenet minden lépését értékeli.",
+    "Asszociációs feladatnál a kapcsolattípusokat a +/−/0 jelöléssel gyorsan azonosíthatod."
+  ],
+  "practice": [
+    {
+      "id": "1",
+      "kind": "choice",
+      "prompt": "Melyik állítás helyes az ökoszisztéma energiaáramlására?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Az energia a lebontók révén visszajut a termelőkhöz."
+        },
+        {
+          "key": "B",
+          "text": "Az energia egy irányba áramlik, és minden szinten egy része hővé alakul."
+        },
+        {
+          "key": "C",
+          "text": "A felsőbb táplálkozási szinteken több energia van, mint az alsóbbakon."
+        },
+        {
+          "key": "D",
+          "text": "A termelők a hőenergiát is hasznosítják a fotoszintézishez."
+        }
+      ],
+      "answer": "B",
+      "category": "okologiai-osszefugges",
+      "explanation": "Helyes: B. Az energia napfényként lép be, a táplálkozási szinteken áthaladva fokozatosan hővé alakul, és elhagyja a rendszert – nem körforog.",
+      "wrongOptions": {
+        "A": "A lebontók az anyagot juttatják vissza (szervetlen formában), az energiát nem; a lebontás során felszabaduló energia hővé alakul.",
+        "C": "Fordítva: a felsőbb szinteken egyre kevesebb energia van (energiapiramis).",
+        "D": "A fotoszintézis a fény energiáját hasznosítja, a hőt nem."
+      }
+    },
+    {
+      "id": "2",
+      "kind": "choice",
+      "prompt": "Egy rét táplálékhálózatából eltűnnek a ragadozó madarak. Mi a legvalószínűbb első következmény?",
+      "options": [
+        {
+          "key": "A",
+          "text": "A rágcsálók egyedszáma nő."
+        },
+        {
+          "key": "B",
+          "text": "A fű mennyisége nő."
+        },
+        {
+          "key": "C",
+          "text": "A rágcsálók egyedszáma csökken."
+        },
+        {
+          "key": "D",
+          "text": "A lebontók eltűnnek."
+        }
+      ],
+      "answer": "A",
+      "category": "okologiai-osszefugges",
+      "explanation": "Helyes: A. A ragadozó madarak a rágcsálók fogyasztói; ha eltűnnek, a rágcsálók elszaporodnak (később a túllegelés miatt a növényzet csökkenhet).",
+      "wrongOptions": {
+        "B": "A rágcsálók elszaporodása miatt a fű mennyisége inkább csökken.",
+        "C": "A ragadozó eltűnése a zsákmány számát növeli, nem csökkenti.",
+        "D": "A lebontók minden szint elhalt anyagát bontják, a ragadozó madarak hiánya nem szünteti meg őket."
+      }
+    },
+    {
+      "id": "3",
+      "kind": "text",
+      "prompt": "Hogyan nevezzük azt a kölcsönhatást, amely mindkét fél számára előnyös (pl. a zuzmót alkotó gomba és alga kapcsolata)?",
+      "answer": [
+        "mutualizmus",
+        "szimbiózis",
+        "kölcsönös előnyös kapcsolat",
+        "kölcsönösség"
+      ],
+      "category": "okologiai-osszefugges",
+      "explanation": "Helyes: mutualizmus (szimbiózis). A zuzmóban az alga fotoszintézissel szerves anyagot ad, a gomba vizet és ásványi anyagot biztosít, és védi az algát a kiszáradástól.",
+      "maxWords": 3
+    },
+    {
+      "id": "4",
+      "kind": "choice",
+      "prompt": "Melyik a helyesen felírt tápláléklánc?",
+      "options": [
+        {
+          "key": "A",
+          "text": "rétisas → ponty → zooplankton → fitoplankton"
+        },
+        {
+          "key": "B",
+          "text": "fitoplankton → zooplankton → ponty → rétisas"
+        },
+        {
+          "key": "C",
+          "text": "zooplankton → fitoplankton → ponty → rétisas"
+        },
+        {
+          "key": "D",
+          "text": "fitoplankton → ponty → zooplankton → rétisas"
+        }
+      ],
+      "answer": "B",
+      "category": "okologiai-osszefugges",
+      "explanation": "Helyes: B. A nyíl a megevett élőlénytől a fogyasztó felé mutat: a fitoplanktont a zooplankton, azt a ponty, a pontyot a rétisas eszi.",
+      "wrongOptions": {
+        "A": "A nyilak iránya fordított.",
+        "C": "A zooplankton fogyasztó, nem lehet a lánc elején a termelő előtt.",
+        "D": "A ponty nem a fitoplankton és a zooplankton közé tartozik; a zooplankton eszi a fitoplanktont."
+      }
+    },
+    {
+      "id": "5",
+      "kind": "text",
+      "prompt": "Hogyan nevezzük azt a környezeti tényezőt, amely az optimumtól legjobban eltérve korlátozza az élőlény működését?",
+      "answer": [
+        "limitáló tényező",
+        "minimumtényező",
+        "korlátozó tényező",
+        "limitáló faktor"
+      ],
+      "category": "okologiai-osszefugges",
+      "explanation": "Helyes: limitáló (korlátozó, minimum-) tényező. Hiába kedvező a többi tényező, a működést a legkedvezőtlenebb szabja meg – pl. tápanyagszegény tóban a foszfát.",
+      "maxWords": 3
+    }
+  ],
+  "relatedCategories": [
+    "okologiai-szamitas",
+    "abra-adatelemzes"
+  ]
+}

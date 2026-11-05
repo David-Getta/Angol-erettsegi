@@ -1,0 +1,274 @@
+{
+  "schemaVersion": 1,
+  "id": "fol-gr-orszag-varos",
+  "subject": "foldrajz",
+  "revision": 1,
+  "level": "kozep",
+  "source": "generated",
+  "topic": "nyelvtan",
+  "title": "Országok, városok, régiók",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "grammar",
+  "type": "lesson",
+  "category": "orszag-varos",
+  "summaryHu": "Ebben a kategóriában az országok, fővárosok, megyeszékhelyek, gazdasági központok és régiók pontos ismeretéről van szó. A leggyakoribb hiba, hogy valaki egy ország legismertebb vagy legnagyobb városát nevezi meg fővárosként, illetve összekeveri a hasonló nevű vagy szomszédos régiókat. A topográfiai feladatokban és a szóbeli tételek topográfiai elemeinél is pontot ér.",
+  "rules": [
+    {
+      "title": "A főváros nem mindig a legnagyobb város",
+      "explanation": "Több országban a főváros kisebb, mint a legnagyobb, gazdasági központ szerepű város – gyakran azért, mert tervezett fővárost hoztak létre, vagy kompromisszummal választották ki. Ezeket külön meg kell tanulni.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "Ausztrália – Canberra (nem Sydney)"
+        },
+        {
+          "en": "Brazília – Brasília (nem São Paulo vagy Rio de Janeiro)"
+        },
+        {
+          "en": "Törökország – Ankara (nem Isztambul)"
+        },
+        {
+          "en": "Kanada – Ottawa (nem Toronto)"
+        },
+        {
+          "en": "Nigéria – Abuja (nem Lagos)"
+        },
+        {
+          "en": "Svájc – Bern (nem Zürich)",
+          "hu": "Bern hivatalosan „szövetségi város”."
+        }
+      ]
+    },
+    {
+      "title": "Magyarország vármegyéi és székhelyeik",
+      "explanation": "Magyarországon 19 vármegye és a főváros van. A székhely legtöbbször a vármegye legnagyobb városa, de van kivétel: Komárom-Esztergom vármegye székhelye Tatabánya. Pest vármegye székhelye Budapest, bár a főváros nem része a vármegyének.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "Bács-Kiskun – Kecskemét; Borsod-Abaúj-Zemplén – Miskolc; Csongrád-Csanád – Szeged"
+        },
+        {
+          "en": "Hajdú-Bihar – Debrecen; Szabolcs-Szatmár-Bereg – Nyíregyháza; Jász-Nagykun-Szolnok – Szolnok"
+        },
+        {
+          "en": "Komárom-Esztergom – Tatabánya; Zala – Zalaegerszeg; Vas – Szombathely; Győr-Moson-Sopron – Győr"
+        }
+      ]
+    },
+    {
+      "title": "Régiók, országcsoportok",
+      "explanation": "Sok feladat országcsoportok nevével dolgozik. Tudnod kell, mely országok tartoznak egy-egy csoportba.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "Benelux-államok: Belgium, Hollandia, Luxemburg"
+        },
+        {
+          "en": "Baltikum: Észtország, Lettország, Litvánia",
+          "hu": "Finnország nem balti állam."
+        },
+        {
+          "en": "Skandinávia (szűkebb értelemben): Norvégia, Svédország, Dánia",
+          "hu": "Finnországgal és Izlanddal együtt: északi országok."
+        },
+        {
+          "en": "Magreb: Marokkó, Algéria, Tunézia"
+        }
+      ]
+    },
+    {
+      "title": "Magyarország szomszédai",
+      "explanation": "Magyarországnak hét szomszédja van: Ausztria, Szlovákia, Ukrajna, Románia, Szerbia, Horvátország és Szlovénia. Csehország és Lengyelország nem határos velünk.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "Leghosszabb közös határ: Szlovákia"
+        }
+      ]
+    },
+    {
+      "title": "Gazdasági központok és iparvidékek",
+      "explanation": "Emelt szinten a városokat a funkciójuk alapján is azonosítani kell: pénzügyi központ, kikötő, iparvidék központja, tudásközpont.",
+      "emeltOnly": true,
+      "examples": [
+        {
+          "en": "Ruhr-vidék: Essen, Dortmund, Duisburg",
+          "hu": "Egykori szén- és acélipari vidék Németországban."
+        },
+        {
+          "en": "Szilícium-völgy: San José, San Francisco környéke",
+          "hu": "A csúcstechnológia központja Kaliforniában."
+        },
+        {
+          "en": "Pénzügyi világközpontok: New York, London, Tokió, Szingapúr, Hongkong"
+        }
+      ]
+    }
+  ],
+  "commonMistakes": [
+    {
+      "wrong": "Ausztrália fővárosa Sydney.",
+      "right": "Ausztrália fővárosa Canberra.",
+      "why": "Sydney a legnagyobb és legismertebb város, de a fővárost Sydney és Melbourne vetélkedése miatt tervezett városként, a kettő között építették fel."
+    },
+    {
+      "wrong": "Törökország fővárosa Isztambul.",
+      "right": "Törökország fővárosa Ankara.",
+      "why": "Isztambul a legnépesebb város és gazdasági központ, de 1923 óta Ankara a főváros."
+    },
+    {
+      "wrong": "Komárom-Esztergom vármegye székhelye Esztergom.",
+      "right": "Komárom-Esztergom vármegye székhelye Tatabánya.",
+      "why": "A vármegye neve nem a székhelyet jelöli: Tatabánya a 20. századi bányászat révén vált a vármegye központjává."
+    },
+    {
+      "wrong": "Finnország a Baltikum része.",
+      "right": "A Baltikum Észtország, Lettország és Litvánia.",
+      "why": "Finnország a Balti-tenger partján fekszik, de nem tartozik a balti államok közé; az északi országok egyike."
+    },
+    {
+      "wrong": "Csehország Magyarország szomszédja.",
+      "right": "Csehország nem határos Magyarországgal; északi szomszédunk Szlovákia.",
+      "why": "Csehszlovákia 1993-as szétválása óta Csehország és Magyarország között Szlovákia fekszik."
+    }
+  ],
+  "examTips": [
+    "A topográfiai feladatlapon a város nevét pontosan kell leírni; a hasonló nevű helyek (pl. Szombathely – Székesfehérvár) keverése pontvesztés.",
+    "A szóbeli társadalomföldrajzi tételben a példaként említett országot és várost az atlaszban meg is kell mutatni – ez a topográfia-szempont része.",
+    "Ha a leírásban „egykori főváros” szerepel (Lagos, Rio de Janeiro, Almati), az a jelenlegi fővárostól eltérő várost jelöl."
+  ],
+  "practice": [
+    {
+      "id": "1",
+      "kind": "choice",
+      "prompt": "Mi Ausztrália fővárosa?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Canberra"
+        },
+        {
+          "key": "B",
+          "text": "Sydney"
+        },
+        {
+          "key": "C",
+          "text": "Melbourne"
+        },
+        {
+          "key": "D",
+          "text": "Perth"
+        }
+      ],
+      "answer": "A",
+      "category": "orszag-varos",
+      "explanation": "Helyes: Canberra, a tervezett szövetségi főváros a délkeleti országrészben.",
+      "wrongOptions": {
+        "B": "Sydney a legnagyobb város és kikötő, de nem főváros.",
+        "C": "Melbourne a második legnagyobb város, 1927-ig átmenetileg a parlament székhelye volt.",
+        "D": "Perth a nyugati part legnagyobb városa."
+      }
+    },
+    {
+      "id": "2",
+      "kind": "text",
+      "prompt": "Melyik város Komárom-Esztergom vármegye székhelye?",
+      "answer": [
+        "Tatabánya"
+      ],
+      "category": "orszag-varos",
+      "explanation": "Tatabánya: a vármegye székhelye, nem Komárom és nem Esztergom.",
+      "maxWords": 1
+    },
+    {
+      "id": "3",
+      "kind": "text",
+      "prompt": "Melyik ország fővárosa Ankara?",
+      "answer": [
+        "Törökország",
+        "Török Köztársaság"
+      ],
+      "category": "orszag-varos",
+      "explanation": "Törökország: 1923 óta Ankara a főváros, Isztambul a legnépesebb város.",
+      "maxWords": 2
+    },
+    {
+      "id": "4",
+      "kind": "choice",
+      "prompt": "Melyik ország NEM tartozik a Baltikumhoz?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Finnország"
+        },
+        {
+          "key": "B",
+          "text": "Észtország"
+        },
+        {
+          "key": "C",
+          "text": "Lettország"
+        },
+        {
+          "key": "D",
+          "text": "Litvánia"
+        }
+      ],
+      "answer": "A",
+      "category": "orszag-varos",
+      "explanation": "Helyes: Finnország. A Baltikum a három balti állam: Észtország, Lettország és Litvánia.",
+      "wrongOptions": {
+        "B": "Észtország a legészakibb balti állam, fővárosa Tallinn.",
+        "C": "Lettország a középső balti állam, fővárosa Riga.",
+        "D": "Litvánia a legdélibb balti állam, fővárosa Vilnius."
+      }
+    },
+    {
+      "id": "5",
+      "kind": "text",
+      "prompt": "Melyik ország fővárosa Ottawa?",
+      "answer": [
+        "Kanada"
+      ],
+      "category": "orszag-varos",
+      "explanation": "Kanada: Ottawa a főváros, bár Toronto és Montréal is nagyobb nála.",
+      "maxWords": 1
+    },
+    {
+      "id": "6",
+      "kind": "choice",
+      "prompt": "Melyik ország NEM szomszédos Magyarországgal?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Csehország"
+        },
+        {
+          "key": "B",
+          "text": "Szlovénia"
+        },
+        {
+          "key": "C",
+          "text": "Ukrajna"
+        },
+        {
+          "key": "D",
+          "text": "Szerbia"
+        }
+      ],
+      "answer": "A",
+      "category": "orszag-varos",
+      "explanation": "Helyes: Csehország. Hét szomszédunk: Ausztria, Szlovákia, Ukrajna, Románia, Szerbia, Horvátország, Szlovénia.",
+      "wrongOptions": {
+        "B": "Szlovénia délnyugati szomszédunk, a határ az Őrség és a Muravidék között húzódik.",
+        "C": "Ukrajna északkeleti szomszédunk (Kárpátalja).",
+        "D": "Szerbia déli szomszédunk (Vajdaság)."
+      }
+    }
+  ],
+  "relatedCategories": [
+    "helymeghatarozas",
+    "tarsadalmi-folyamat"
+  ]
+}

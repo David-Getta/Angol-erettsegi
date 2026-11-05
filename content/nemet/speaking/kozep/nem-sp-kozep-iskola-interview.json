@@ -1,0 +1,51 @@
+{
+  "topic": "iskola",
+  "title": "Schule und Lernen",
+  "type": "interview",
+  "partNumber": 1,
+  "instructionsHu": "A vizsgáztató az iskoládról, a tantárgyakról és a tanulási szokásaidról kérdez. Válaszolj több mondatban, és indokold a véleményedet.",
+  "questions": [
+    { "q": "In welche Schule gehen Sie, und wie kommen Sie dorthin?", "followUps": [] },
+    { "q": "Was ist Ihr Lieblingsfach? Warum?", "followUps": [] },
+    { "q": "Welches Fach mögen Sie nicht so gern?", "followUps": [] },
+    { "q": "Wie sieht ein typischer Schultag bei Ihnen aus?", "followUps": [] },
+    { "q": "Wie lernen Sie für Prüfungen?", "followUps": [] },
+    { "q": "Was machen Sie in den Pausen?", "followUps": [] },
+    { "q": "Gibt es an Ihrer Schule AGs oder Klubs?", "followUps": ["Machen Sie bei einer AG mit?"] },
+    { "q": "Was finden Sie an Ihrer Schule gut, und was würden Sie ändern?", "followUps": [] },
+    { "q": "Warum lernen Sie Deutsch?", "followUps": [] },
+    { "q": "Was möchten Sie nach dem Abitur machen?", "followUps": [] }
+  ],
+  "usefulPhrases": [
+    { "en": "Ich gehe in die elfte Klasse.", "hu": "Tizenegyedikes vagyok." },
+    { "en": "Ich fahre jeden Morgen zwanzig Minuten mit dem Bus.", "hu": "Minden reggel húsz percet buszozom." },
+    { "en": "Mein Lieblingsfach ist Biologie.", "hu": "A kedvenc tantárgyam a biológia." },
+    { "en": "Wir machen oft Experimente im Labor.", "hu": "Gyakran kísérletezünk a laborban." },
+    { "en": "Ich wiederhole den Stoff jeden Tag ein bisschen.", "hu": "Minden nap átismétlek egy keveset az anyagból." },
+    { "en": "Wir fragen uns gegenseitig ab.", "hu": "Kikérdezzük egymást." },
+    { "en": "Ändern würde ich den Stundenplan.", "hu": "Az órarenden változtatnék." },
+    { "en": "Einerseits …, andererseits …", "hu": "Egyrészt …, másrészt …" }
+  ],
+  "speakingSeconds": 210,
+  "prepSeconds": 0,
+  "sampleAnswer": {
+    "turns": [
+      { "speaker": "examiner", "text": "In welche Schule gehen Sie, und wie kommen Sie dorthin?" },
+      { "speaker": "candidate", "text": "Ich gehe in ein Gymnasium in Pécs, in die elfte Klasse. Die Schule ist ziemlich weit von unserer Wohnung entfernt, deshalb fahre ich jeden Morgen zwanzig Minuten mit dem Bus. Wenn das Wetter schön ist, nehme ich manchmal das Fahrrad." },
+      { "speaker": "examiner", "text": "Was ist Ihr Lieblingsfach? Warum?" },
+      { "speaker": "candidate", "text": "Mein Lieblingsfach ist Biologie. Unsere Lehrerin erklärt alles sehr interessant, und wir machen oft Experimente im Labor. Ich möchte später vielleicht Medizin studieren, deshalb ist Biologie für mich besonders wichtig." },
+      { "speaker": "examiner", "text": "Wie lernen Sie für Prüfungen?" },
+      { "speaker": "candidate", "text": "Normalerweise fange ich eine Woche vorher an. Ich schreibe die wichtigsten Informationen auf Karteikarten und wiederhole sie jeden Tag ein bisschen. Vor großen Prüfungen lerne ich mit meiner Freundin zusammen, weil wir uns gegenseitig abfragen können." },
+      { "speaker": "examiner", "text": "Was finden Sie an Ihrer Schule gut, und was würden Sie ändern?" },
+      { "speaker": "candidate", "text": "Gut finde ich, dass es viele AGs gibt, zum Beispiel einen Theaterklub und eine Schulband. Ändern würde ich den Stundenplan. Wir haben manchmal acht Stunden am Tag, und das ist wirklich zu viel." },
+      { "speaker": "examiner", "text": "Warum lernen Sie Deutsch?" },
+      { "speaker": "candidate", "text": "Einerseits, weil meine Tante in Österreich wohnt und ich sie oft besuche. Andererseits ist Deutsch in Ungarn sehr nützlich, denn hier gibt es viele deutsche Firmen." }
+    ],
+    "notes": [
+      "Feladat teljesítése: a vizsgázó nem áll meg az egyszavas válasznál – minden válaszban van indok (weil, deshalb, denn) vagy konkrét példa (Karteikarten, Theaterklub, acht Stunden am Tag).",
+      "Szókincs: az iskolai szókincs pontos (in die elfte Klasse gehen, Lieblingsfach, Experimente im Labor, Karteikarten, sich gegenseitig abfragen, AG, Stundenplan).",
+      "Nyelvhelyesség: a „weil” után mellékmondati, a „denn” után egyenes szórend áll; a „Gut finde ich, dass …” és az „Ändern würde ich …” kiemelő szórend természetes és változatos.",
+      "Érdemes megtanulni: „Normalerweise fange ich eine Woche vorher an”, „weil wir uns gegenseitig abfragen können”, „Ändern würde ich …”, „Einerseits …, andererseits …”."
+    ]
+  }
+}

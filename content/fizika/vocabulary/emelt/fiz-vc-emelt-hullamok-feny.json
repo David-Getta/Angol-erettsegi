@@ -1,0 +1,185 @@
+{
+  "schemaVersion": 1,
+  "id": "fiz-vc-emelt-hullamok-feny",
+  "subject": "fizika",
+  "revision": 1,
+  "level": "emelt",
+  "source": "generated",
+  "topic": "hullamok-feny",
+  "title": "Rezgések, hullámok, optika – fogalmak",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "vocabulary",
+  "type": "deck",
+  "cards": [
+    {
+      "term": "rezgésidő",
+      "meaning": "Egy teljes rezgés megtételéhez szükséges idő.",
+      "pos": "n",
+      "example": "A fonálinga rezgésideje kis kitérésnél nem függ az amplitúdótól.",
+      "collocation": "T = 1/f"
+    },
+    {
+      "term": "frekvencia",
+      "meaning": "Az időegység alatt megtett rezgések száma; egysége a hertz.",
+      "pos": "n",
+      "example": "A hálózati váltakozó áram frekvenciája 50 Hz.",
+      "collocation": "f = 1/T (Hz)"
+    },
+    {
+      "term": "amplitúdó",
+      "meaning": "A rezgő test legnagyobb kitérése az egyensúlyi helyzettől.",
+      "pos": "n",
+      "example": "A hang erőssége a hanghullám amplitúdójától függ.",
+      "collocation": "A"
+    },
+    {
+      "term": "csillapított rezgés",
+      "meaning": "Rezgés, amelynek amplitúdója a súrlódás, közegellenállás miatt fokozatosan csökken.",
+      "pos": "n",
+      "example": "A csillapított rezgés energiája hővé alakul."
+    },
+    {
+      "term": "rezonancia",
+      "meaning": "Kényszerrezgésnél az amplitúdó erős megnövekedése, amikor a gerjesztő frekvencia közel van a sajátfrekvenciához.",
+      "pos": "n",
+      "example": "A rezonancia miatt rezeg erősen a busz ablaka egy adott motorfordulatnál."
+    },
+    {
+      "term": "transzverzális hullám",
+      "meaning": "Olyan hullám, amelyben a rezgés iránya merőleges a terjedés irányára (pl. húron, elektromágneses hullám).",
+      "pos": "n",
+      "example": "A fény transzverzális hullám, ezt a polarizáció bizonyítja."
+    },
+    {
+      "term": "longitudinális hullám",
+      "meaning": "Olyan hullám, amelyben a részecskék a terjedés irányában rezegnek; sűrűsödések és ritkulások terjednek.",
+      "pos": "n",
+      "example": "A hang levegőben longitudinális hullámként terjed."
+    },
+    {
+      "term": "hullámhossz",
+      "meaning": "Két szomszédos, azonos fázisban rezgő pont távolsága; egy periódusidő alatt megtett út.",
+      "pos": "n",
+      "example": "A látható fény hullámhossza kb. 400 és 750 nm között van.",
+      "collocation": "λ = c/f"
+    },
+    {
+      "term": "terjedési sebesség",
+      "meaning": "A hullám (a rezgésállapot) haladásának sebessége; a közegtől függ.",
+      "pos": "n",
+      "example": "A hang terjedési sebessége levegőben kb. 340 m/s, vízben kb. 1500 m/s.",
+      "collocation": "c = λ·f"
+    },
+    {
+      "term": "interferencia",
+      "meaning": "Két vagy több koherens hullám találkozásakor létrejövő erősítés és gyengítés (kioltás).",
+      "pos": "n",
+      "example": "Az interferencia hozza létre a szappanbuborék színeit.",
+      "collocation": "Δs = k·λ (erősítés)"
+    },
+    {
+      "term": "koherens hullámok",
+      "meaning": "Azonos frekvenciájú, állandó fáziskülönbségű hullámok, amelyek tartós interferenciaképet adnak.",
+      "pos": "adj",
+      "example": "Young kísérletében a két rést ugyanaz a fényforrás világítja meg, ezért a két hullám koherens."
+    },
+    {
+      "term": "elhajlás",
+      "meaning": "A hullám akadály vagy rés mögötti „árnyéktérbe” való behatolása; akkor jelentős, ha a rés mérete a hullámhossz nagyságrendjébe esik.",
+      "pos": "n",
+      "example": "A hang elhajlása miatt halljuk a sarok mögül is a beszédet."
+    },
+    {
+      "term": "optikai rács",
+      "meaning": "Sok, egyenlő távolságú párhuzamos résből álló eszköz, amely a fényt hullámhossz szerint bontja fel.",
+      "pos": "n",
+      "example": "Az optikai rács segítségével a fény hullámhossza pontosan megmérhető.",
+      "collocation": "d·sin α = k·λ"
+    },
+    {
+      "term": "állóhullám",
+      "meaning": "Két ellentétes irányban haladó azonos hullám interferenciájából létrejövő, helyben maradó csomópontokkal és duzzadóhelyekkel jellemzett hullám.",
+      "pos": "n",
+      "example": "A gitárhúron kialakuló állóhullám alaphangjánál a húr hossza fél hullámhossz.",
+      "collocation": "L = k·λ/2"
+    },
+    {
+      "term": "Doppler-jelenség",
+      "meaning": "A forrás és a megfigyelő egymáshoz képesti mozgásakor az észlelt frekvencia megváltozik.",
+      "pos": "n",
+      "example": "A Doppler-jelenség miatt hallatszik magasabbnak a közeledő mentőautó szirénája."
+    },
+    {
+      "term": "polarizáció",
+      "meaning": "Transzverzális hullámnál a rezgés irányának kitüntetett síkra korlátozása (pl. polárszűrővel).",
+      "pos": "n",
+      "example": "A napszemüveg polarizációs szűrője csökkenti a vízfelszínről visszavert csillogást."
+    },
+    {
+      "term": "törésmutató",
+      "meaning": "Két közegben mért fénysebesség hányadosa; a fénytörés mértékét határozza meg.",
+      "pos": "n",
+      "example": "A víz törésmutatója kb. 1,33, az üvegé kb. 1,5.",
+      "collocation": "n = c₁/c₂ = sin α / sin β"
+    },
+    {
+      "term": "teljes visszaverődés",
+      "meaning": "Optikailag sűrűbb közegből ritkábba lépő fény teljes visszaverődése, ha a beesési szög nagyobb a határszögnél.",
+      "pos": "n",
+      "example": "Az optikai szálban a fény teljes visszaverődéssel halad végig.",
+      "collocation": "sin α_h = 1/n"
+    },
+    {
+      "term": "diszperzió",
+      "meaning": "A törésmutató hullámhossz- (frekvencia-) függése, amely miatt a fehér fény színeire bomlik.",
+      "pos": "n",
+      "example": "A szivárvány a vízcseppekben lejátszódó diszperzió és visszaverődés eredménye."
+    },
+    {
+      "term": "fókusztávolság",
+      "meaning": "A lencse optikai középpontja és fókuszpontja közötti távolság.",
+      "pos": "n",
+      "example": "A 10 cm fókusztávolságú gyűjtőlencse +10 dioptriás.",
+      "collocation": "D = 1/f"
+    },
+    {
+      "term": "leképezési törvény",
+      "meaning": "A vékony lencse (gömbtükör) tárgytávolsága, képtávolsága és fókusztávolsága közötti összefüggés.",
+      "pos": "n",
+      "example": "A leképezési törvény szerint a 2f távolságban lévő tárgy képe is 2f távolságban keletkezik.",
+      "collocation": "1/f = 1/t + 1/k"
+    },
+    {
+      "term": "látszólagos kép",
+      "meaning": "Olyan kép, amelyet a fénysugarak meghosszabbításai hoznak létre; ernyőn nem fogható fel.",
+      "pos": "n",
+      "example": "A síktükör és a nagyító látszólagos képet ad."
+    },
+    {
+      "term": "elektromágneses hullám",
+      "meaning": "Egymást keltő, változó elektromos és mágneses mező térbeli terjedése; vákuumban fénysebességgel halad.",
+      "pos": "n",
+      "example": "Az elektromágneses hullámok létezését Maxwell jósolta meg, és Hertz mutatta ki kísérletileg.",
+      "collocation": "c = 1/√(ε₀·μ₀)"
+    },
+    {
+      "term": "elektromágneses színkép",
+      "meaning": "Az elektromágneses hullámok frekvencia szerinti sorrendje: rádió-, mikro-, infravörös, látható, ultraibolya, röntgen-, gamma-sugárzás.",
+      "pos": "n",
+      "example": "Az elektromágneses színkép tartományai csak frekvenciában és hullámhosszban különböznek."
+    },
+    {
+      "term": "hőmérsékleti sugárzás",
+      "meaning": "Minden test által a hőmérsékletétől függően kibocsátott elektromágneses sugárzás; melegebb test rövidebb hullámhosszon sugároz legerősebben.",
+      "pos": "n",
+      "example": "A hőkamera a testek hőmérsékleti sugárzását érzékeli az infravörös tartományban."
+    },
+    {
+      "term": "moduláció",
+      "meaning": "Az információ ráültetése a vivőhullámra az amplitúdó (AM) vagy a frekvencia (FM) változtatásával.",
+      "pos": "n",
+      "example": "Az FM rádióban a moduláció a vivőhullám frekvenciáját változtatja."
+    }
+  ]
+}

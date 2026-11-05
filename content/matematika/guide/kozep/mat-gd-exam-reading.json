@@ -1,0 +1,114 @@
+{
+  "schemaVersion": 1,
+  "id": "mat-gd-exam-reading",
+  "subject": "matematika",
+  "revision": 1,
+  "level": "kozep",
+  "source": "generated",
+  "topic": "utmutato",
+  "title": "I. rész – Rövid feladatok",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "guide",
+  "type": "exam",
+  "target": "reading",
+  "summaryHu": "Az írásbeli első része rövid, eredményközlő feladatokból áll: középszinten 12 feladat 45 perc alatt, összesen 30 pont (2–4 pont feladatonként); emelt szinten az I. rész 4 kidolgozandó feladat, 51 pont. Középszinten jellemzően csak az eredményt kell beírni a kijelölt helyre, ezért a pontos, ellenőrzött végeredmény és a kért alak a döntő. Függvénytáblázat és szöveget nem tároló számológép használható.",
+  "steps": [
+    {
+      "title": "Áttekintés",
+      "explanation": "Fuss végig az összes feladaton, és kezdd azokkal, amelyeket biztosan tudsz (definíció, egyszerű számítás). Egy rövid feladatnál nem érdemes 5 percnél tovább elakadni.",
+      "tips": [
+        "Jelöld meg a margón, melyikhez kell visszatérni.",
+        "A könnyű feladatok gyors pontjai felszabadítják a gondolkodási időt."
+      ]
+    },
+    {
+      "title": "Mit kérdeznek pontosan?",
+      "explanation": "Húzd alá a kérdés kulcsszavát és a kért alakot: helyet vagy értéket, darabszámot vagy valószínűséget, intervallumot, adott tizedesjegyre kerekítést, mértékegységet.",
+      "tips": [
+        "„Adja meg a megoldáshalmazt!” → az összes megoldás kell.",
+        "„Két tizedesjegyre kerekítve” → pontosan két tizedesjegy."
+      ]
+    },
+    {
+      "title": "Számolás a piszkozatban",
+      "explanation": "Röviden írd le a számolást a feladat melletti helyre: középszinten bizonyos rövid feladatoknál a gondolatmenetért is jár részpont, és így te is ellenőrizni tudod.",
+      "tips": [
+        "A részeredményt ne kerekítsd korán.",
+        "Számológépnél figyelj a zárójelekre és a fok/radián módra."
+      ]
+    },
+    {
+      "title": "Ellenőrzés és a válasz beírása",
+      "explanation": "Helyettesítsd vissza az eredményt, vagy becsüld meg a nagyságrendet; aztán írd be a kijelölt helyre, egyértelműen, mértékegységgel, a kért alakban.",
+      "tips": [
+        "Egy elírt előjel itt a teljes pontot elviheti.",
+        "Ha javítasz, a régi eredményt egyértelműen húzd át."
+      ]
+    }
+  ],
+  "phrases": [
+    {
+      "group": "A kérdés kulcsszavai",
+      "en": "Adja meg …",
+      "hu": "Csak az eredményt kell beírni, indoklás nélkül (de a számolás a piszkozatban segít)."
+    },
+    {
+      "group": "A kérdés kulcsszavai",
+      "en": "Indokolja válaszát!",
+      "hu": "Ilyenkor egy mondatos indoklás vagy számolás is kell a pontért."
+    },
+    {
+      "group": "A kért alak",
+      "en": "egy tizedesjegyre kerekítve",
+      "hu": "A végeredmény pontosan egy tizedesjeggyel; a részeredményeket ne kerekítsd."
+    },
+    {
+      "group": "A kért alak",
+      "en": "intervallum: (a; b], [a; b)",
+      "hu": "Kerek zárójel: a végpont nem tartozik a halmazhoz; szögletes: hozzátartozik."
+    },
+    {
+      "group": "Ellenőrzés",
+      "en": "visszahelyettesítés",
+      "hu": "Egyenletnél a kapott gyököt az eredeti egyenletbe helyettesítsd."
+    }
+  ],
+  "mistakes": [
+    {
+      "wrong": "A minimum helyét írom be, pedig a minimum értékét kérdezték.",
+      "right": "Elolvasom újra a kérdést, és azt adom meg, amit kérnek (érték).",
+      "why": "A hely (x) és az érték (f(x)) két külön kérdés; a rossz mennyiség nulla pontot ér."
+    },
+    {
+      "wrong": "Egy nehéz feladaton 10 percet töltök az elején.",
+      "right": "Átugrom, és a végén térek vissza rá.",
+      "why": "45 perc alatt 12 feladat: átlagosan kb. 3,5 perc jut egyre; egy elakadás a könnyű feladatok idejét veszi el."
+    },
+    {
+      "wrong": "A végeredményt mértékegység nélkül vagy más alakban írom be.",
+      "right": "A kért alakban és mértékegységgel válaszolok.",
+      "why": "A rövid feladatoknál a forma is a válasz része: más pontosság vagy hiányzó mértékegység pontvesztés."
+    }
+  ],
+  "checklist": [
+    "Minden feladatnál azt adtam meg, amit kérdeztek (hely / érték, darab / valószínűség)?",
+    "A kért alakban és pontossággal írtam be az eredményt (tört, tizedes tört, intervallum, kerekítés)?",
+    "Van mértékegység ott, ahol kell?",
+    "Visszahelyettesítéssel vagy becsléssel ellenőriztem az eredményeket?",
+    "A javított eredményeknél egyértelmű, melyik a végső?"
+  ],
+  "timing": "Középszinten 45 perc jut az I. részre: kb. 25–30 perc az első kidolgozásra, 10 perc a nehezebbekre, 5 perc ellenőrzésre. Emelt szinten a 240 perc szabadon osztható; az I. rész négy feladatára általában 80–100 perc elég.",
+  "example": {
+    "title": "Minta: rövid feladat a kért alakkal",
+    "text": "Feladat: Adja meg az x² − 7x + 10 ≤ 0 egyenlőtlenség megoldáshalmazát! Megoldás (piszkozat): gyökök 2 és 5, felfelé nyíló parabola, a gyökök között nem pozitív. Beírt válasz: [2; 5].",
+    "notes": [
+      "A kérdés megoldáshalmazt kér, ezért intervallum a válasz, nem a két gyök.",
+      "A ≤ miatt a végpontok is a halmazhoz tartoznak: szögletes zárójel."
+    ]
+  },
+  "levelNotes": {
+    "kozep": "Középszinten 12 rövid feladat (2–4 pont), 45 perc, 30 pont. A témák szinte minden témakört lefednek: halmazok, százalék, egyenlet, függvény, sorozat, geometria, statisztika, valószínűség. Itt a definíciók és a képletek biztos tudása gyors pontot hoz.",
+    "emelt": "Emelt szinten az I. rész 4 kidolgozandó feladat (51 pont), részkérdésekkel. Az app ezeknél a részkérdések eredményét ellenőrzi; a vizsgán a teljes, indokolt megoldás kell, ezért a kidolgozást a II. résznél is gyakorold."
+  }
+}

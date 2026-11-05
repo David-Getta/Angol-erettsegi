@@ -1,0 +1,274 @@
+{
+  "schemaVersion": 1,
+  "id": "fol-gr-ovezetesseg-hiba",
+  "subject": "foldrajz",
+  "revision": 1,
+  "level": "kozep",
+  "source": "generated",
+  "topic": "nyelvtan",
+  "title": "Övezetesség, éghajlati típusok",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "grammar",
+  "type": "lesson",
+  "category": "ovezetesseg-hiba",
+  "summaryHu": "A földrajzi övezetesség lényege, hogy az éghajlat, a természetes növénytakaró, a talaj és a mezőgazdaság egymással összefüggve, övezetesen helyezkedik el. A vizsgán gyakran egy klímadiagramból vagy leírásból kell azonosítani az éghajlati típust, majd hozzá kell rendelni a növényzetet és a talajt. A hibák többsége abból fakad, hogy valaki egy elemet (pl. a talajt) rossz övhöz köt.",
+  "rules": [
+    {
+      "title": "Az övezetek rendszere",
+      "explanation": "A forró övezet (a térítők között) egyenlítői, átmeneti (szavanna) és térítői (sivatagi) övre, valamint monszunvidékre tagolódik. A mérsékelt övezetben meleg mérsékelt (mediterrán), valódi mérsékelt (óceáni, mérsékelten szárazföldi, szárazföldi) és hideg mérsékelt (tajga) öv van. A hideg övezet a sarkköri (tundra) és a sarki öv.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "Forró övezet: esőerdő – szavanna – sivatag"
+        },
+        {
+          "en": "Mérsékelt övezet: keménylombú erdő – lombhullató erdő – füves puszta – tajga"
+        }
+      ]
+    },
+    {
+      "title": "Éghajlat → növényzet → talaj lánc",
+      "explanation": "Az éghajlat (hőmérséklet, csapadék, a száraz évszak hossza) határozza meg a természetes növényzetet, a növényzet és az éghajlat együtt a talajt. Ezt a láncot mindig végig kell gondolni.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "egyenlítői éghajlat → esőerdő → laterit (vörös, kilúgozott, terméketlen)"
+        },
+        {
+          "en": "mérsékelten szárazföldi, csapadékosabb rész → lombhullató erdő → barna erdőtalaj"
+        },
+        {
+          "en": "szárazföldi, kevés csapadék → füves puszta → mezőségi talaj (csernozjom)"
+        },
+        {
+          "en": "hideg mérsékelt → tajga → podzol"
+        }
+      ]
+    },
+    {
+      "title": "Éghajlati típus azonosítása klímadiagramból",
+      "explanation": "Lépések: (1) félgömb – mikor van a legmelegebb hónap; (2) övezet – a leghidegebb hónap hőmérséklete (forró övezetben minden hónap 18–20 °C felett); (3) a csapadék mennyisége és évi eloszlása (egész évben, nyári vagy téli maximum, száraz évszak); (4) hőingás (kicsi: óceáni, nagy: szárazföldi).",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "Enyhe, csapadékos tél, forró, száraz nyár → mediterrán"
+        },
+        {
+          "en": "Kis hőingás, egész évben csapadék, őszi-téli maximum → óceáni"
+        }
+      ]
+    },
+    {
+      "title": "Függőleges övezetesség",
+      "explanation": "A magassággal a hőmérséklet átlagosan 100 méterenként kb. 0,5–0,6 °C-kal csökken, ezért a hegységekben a vízszintes övezetekhez hasonló magassági övek követik egymást (pl. lombhullató erdő → tűlevelű erdő → havasi rét → örök hó). Minél közelebb van a hegység az Egyenlítőhöz, annál több öv alakulhat ki.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "Alpok: tölgyes–bükkös → fenyves → havasi rét → gleccserek"
+        },
+        {
+          "en": "Kilimandzsáró: esőerdőtől a gleccserekig"
+        }
+      ]
+    },
+    {
+      "title": "Övezetességet megtörő (azonális) tényezők",
+      "explanation": "Az övezetes rendet módosítja a hideg és a meleg tengeráramlás, a domborzat (esőárnyék), az óceántól való távolság és a monszun. A hideg tengeráramlások mentén parti sivatagok alakulnak ki (Atacama, Namíb), a meleg Észak-atlanti-áramlás enyhíti Észak-Európa telét.",
+      "emeltOnly": true,
+      "examples": [
+        {
+          "en": "Atacama: Humboldt-áramlás; Namíb: Benguela-áramlás"
+        }
+      ]
+    }
+  ],
+  "commonMistakes": [
+    {
+      "wrong": "A szavannán egész évben sok csapadék hullik.",
+      "right": "A szavannán esős és száraz évszak váltakozik.",
+      "why": "Az egész évben csapadékos az egyenlítői öv; a szavanna esős évszaka a magas napálláshoz, a száraz a passzát uralmához kötődik."
+    },
+    {
+      "wrong": "A mediterrán éghajlaton nyáron esik a legtöbb csapadék.",
+      "right": "A mediterrán éghajlaton télen esik a legtöbb csapadék, a nyár száraz.",
+      "why": "Nyáron a térítői magas nyomás uralja a térséget, télen a nyugati szelek ciklonjai hozzák az esőt."
+    },
+    {
+      "wrong": "A podzol a füves puszták talaja.",
+      "right": "A füves puszták talaja a mezőségi talaj (csernozjom); a podzol a tajga talaja.",
+      "why": "A podzol kilúgozott, savanyú, terméketlen; a csernozjom humuszban gazdag, a legtermékenyebb."
+    },
+    {
+      "wrong": "A tajga a hideg övezetben van.",
+      "right": "A tajga a mérsékelt övezet hideg mérsékelt övében van.",
+      "why": "A hideg övezetben (sarkköri öv) a nyár túl rövid és hűvös a fák számára; ott tundra van."
+    },
+    {
+      "wrong": "Az esőerdő talaja nagyon termékeny, hiszen dús rajta a növényzet.",
+      "right": "Az esőerdő talaja (laterit) terméketlen; a tápanyag a növényzetben van.",
+      "why": "A bő csapadék kilúgozza a talajt, a lehulló szerves anyag gyorsan lebomlik és visszakerül a növényekbe – irtás után a talaj gyorsan kimerül."
+    }
+  ],
+  "examTips": [
+    "A klímadiagramos feladatban először a félgömböt és a leghidegebb hónapot nézd meg – ez két-három típust azonnal kizár.",
+    "Az övezetesség a kifejtős feladatokban és a szóbeli természetföldrajzi tételben is előkerül: mindig kösd össze az éghajlatot, a növényzetet és a talajt.",
+    "A típus megnevezésénél a pontos nevet írd (pl. „mérsékelten szárazföldi”, nem csak „mérsékelt”)."
+  ],
+  "practice": [
+    {
+      "id": "1",
+      "kind": "choice",
+      "prompt": "Melyik talaj alakul ki a füves puszták (sztyepp) alatt?",
+      "options": [
+        {
+          "key": "A",
+          "text": "mezőségi talaj (csernozjom)"
+        },
+        {
+          "key": "B",
+          "text": "podzol"
+        },
+        {
+          "key": "C",
+          "text": "laterit"
+        },
+        {
+          "key": "D",
+          "text": "barna erdőtalaj"
+        }
+      ],
+      "answer": "A",
+      "category": "ovezetesseg-hiba",
+      "explanation": "Helyes: mezőségi talaj. A füvek elhaló gyökérzetéből sok humusz halmozódik fel, a mérsékelt csapadék alig lúgoz ki.",
+      "wrongOptions": {
+        "B": "A podzol a tajga savanyú, kilúgozott talaja.",
+        "C": "A laterit a forró, nedves övezet vörös, terméketlen talaja.",
+        "D": "A barna erdőtalaj a lombhullató erdők talaja, csapadékosabb éghajlaton."
+      }
+    },
+    {
+      "id": "2",
+      "kind": "choice",
+      "prompt": "Egy állomáson minden hónap 25 °C körüli, évente 2500 mm csapadék hullik, minden hónapban sok. Melyik éghajlat?",
+      "options": [
+        {
+          "key": "A",
+          "text": "egyenlítői"
+        },
+        {
+          "key": "B",
+          "text": "szavanna"
+        },
+        {
+          "key": "C",
+          "text": "mediterrán"
+        },
+        {
+          "key": "D",
+          "text": "óceáni"
+        }
+      ],
+      "answer": "A",
+      "category": "ovezetesseg-hiba",
+      "explanation": "Helyes: egyenlítői. Egész évben magas hőmérséklet és egész évben bőséges csapadék, száraz évszak nélkül.",
+      "wrongOptions": {
+        "B": "A szavannán van száraz évszak.",
+        "C": "A mediterrán éghajlaton a tél enyhe, de 10 °C körüli, a nyár száraz.",
+        "D": "Az óceáni éghajlat a mérsékelt övezetben van, a nyár is csak mérsékelten meleg."
+      }
+    },
+    {
+      "id": "3",
+      "kind": "text",
+      "prompt": "Melyik természetes növénytakaró jellemző a hideg mérsékelt övre?",
+      "answer": [
+        "tajga",
+        "tűlevelű erdő",
+        "tajga (tűlevelű erdő)"
+      ],
+      "category": "ovezetesseg-hiba",
+      "explanation": "Tajga (tűlevelű erdő): a hosszú, hideg telű, rövid nyarú hideg mérsékelt öv erdője; alatta podzol képződik.",
+      "maxWords": 3
+    },
+    {
+      "id": "4",
+      "kind": "choice",
+      "prompt": "Miért alakult ki sivatag Chile és Peru partvidékén (Atacama)?",
+      "options": [
+        {
+          "key": "A",
+          "text": "A hideg Humboldt-áramlás miatt stabil a levegő, nem alakul ki csapadék."
+        },
+        {
+          "key": "B",
+          "text": "Mert az Egyenlítőn fekszik."
+        },
+        {
+          "key": "C",
+          "text": "Mert a nyugati szelek sok esőt hoznak."
+        },
+        {
+          "key": "D",
+          "text": "Mert a terület a tengerszint alatt van."
+        }
+      ],
+      "answer": "A",
+      "category": "ovezetesseg-hiba",
+      "explanation": "Helyes: A. A hideg tengeráramlás alulról hűti a levegőt, a légrétegződés stabil, nincs feláramlás – parti sivatag alakul ki.",
+      "wrongOptions": {
+        "B": "Az Atacama a Baktérítő környékén fekszik, nem az Egyenlítőn; az Egyenlítőn csapadékos éghajlat van.",
+        "C": "A sok eső éppen nem sivatagot hozna létre.",
+        "D": "Az Atacama nagy része magasan fekszik; a tengerszint alatti fekvés nem okoz sivatagot."
+      }
+    },
+    {
+      "id": "5",
+      "kind": "text",
+      "prompt": "Hogyan nevezzük azt a jelenséget, hogy a hegységekben a magassággal változnak a növényzeti övek?",
+      "answer": [
+        "függőleges övezetesség",
+        "vertikális övezetesség",
+        "magassági övezetesség"
+      ],
+      "category": "ovezetesseg-hiba",
+      "explanation": "Függőleges (vertikális) övezetesség: mivel 100 méterenként kb. 0,5–0,6 °C-kal csökken a hőmérséklet, a magassággal más-más növényzeti öv következik.",
+      "maxWords": 2
+    },
+    {
+      "id": "6",
+      "kind": "choice",
+      "prompt": "Melyik éghajlati típusra jellemző a nagy évi hőingás, a hideg tél és a kevés, főként nyári csapadék?",
+      "options": [
+        {
+          "key": "A",
+          "text": "szárazföldi (kontinentális)"
+        },
+        {
+          "key": "B",
+          "text": "óceáni"
+        },
+        {
+          "key": "C",
+          "text": "mediterrán"
+        },
+        {
+          "key": "D",
+          "text": "egyenlítői"
+        }
+      ],
+      "answer": "A",
+      "category": "ovezetesseg-hiba",
+      "explanation": "Helyes: szárazföldi. Az óceántól távol a szárazföld gyorsan melegszik és hűl, a nedves légtömegek nem jutnak el idáig.",
+      "wrongOptions": {
+        "B": "Az óceáni éghajlat hőingása kicsi, csapadéka bőséges.",
+        "C": "A mediterrán éghajlaton a tél enyhe és csapadékos.",
+        "D": "Az egyenlítői éghajlaton nincs tél, és egész évben sok csapadék hullik."
+      }
+    }
+  ],
+  "relatedCategories": [
+    "termeszeti-folyamat",
+    "abra-diagram"
+  ]
+}

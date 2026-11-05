@@ -1,0 +1,202 @@
+{
+  "schemaVersion": 1,
+  "id": "dig-vc-emelt-adatbazis",
+  "subject": "digitalis-kultura",
+  "revision": 1,
+  "level": "emelt",
+  "source": "generated",
+  "topic": "adatbazis",
+  "title": "Adatbázis-kezelés – fogalmak és SQL",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "vocabulary",
+  "type": "deck",
+  "cards": [
+    {
+      "term": "adatbázis",
+      "meaning": "Logikailag összetartozó, szervezetten tárolt adatok gyűjteménye, amelyet adatbázis-kezelő rendszer kezel.",
+      "example": "Az iskola adatbázisa a tanulók, a tantárgyak és a jegyek adatait tárolja.",
+      "pos": "n"
+    },
+    {
+      "term": "adatbázis-kezelő rendszer",
+      "meaning": "Az adatbázis létrehozását, lekérdezését, módosítását és védelmét biztosító szoftver (pl. MS Access, LibreOffice Base, MySQL, SQLite).",
+      "example": "Az adatbázis-kezelő rendszer gondoskodik arról, hogy több felhasználó egyszerre is dolgozhasson.",
+      "pos": "n"
+    },
+    {
+      "term": "tábla (reláció)",
+      "meaning": "Sorokból (rekordokból) és oszlopokból (mezőkből) álló adatszerkezet a relációs adatbázisban.",
+      "example": "A tanulo tábla minden sora egy tanuló adatait tartalmazza.",
+      "pos": "n"
+    },
+    {
+      "term": "rekord",
+      "meaning": "A tábla egy sora: egy egyed (pl. egy tanuló) összes adata.",
+      "example": "Az új tanuló felvételekor egy új rekord kerül a táblába.",
+      "pos": "n"
+    },
+    {
+      "term": "mező (attribútum)",
+      "meaning": "A tábla egy oszlopa: az egyedek egy tulajdonsága, meghatározott adattípussal.",
+      "example": "A szuletesi_datum mező dátum típusú.",
+      "pos": "n"
+    },
+    {
+      "term": "elsődleges kulcs",
+      "meaning": "Az a mező vagy mezőcsoport, amelynek értéke a tábla minden rekordjánál különböző és nem üres, így egyértelműen azonosítja a rekordot.",
+      "example": "Az elsődleges kulcs általában egy azonosító szám, mert a név ismétlődhet.",
+      "pos": "n",
+      "collocation": "PRIMARY KEY"
+    },
+    {
+      "term": "idegen kulcs",
+      "meaning": "Olyan mező, amely egy másik tábla elsődleges kulcsára hivatkozik, és így kapcsolja össze a két táblát.",
+      "example": "A kolcsonzes tábla konyv_id mezője idegen kulcs, amely a konyv tábla azonosítójára mutat.",
+      "pos": "n",
+      "collocation": "FOREIGN KEY"
+    },
+    {
+      "term": "összetett kulcs",
+      "meaning": "Több mezőből álló elsődleges kulcs, ahol csak a mezők együttese egyedi.",
+      "example": "Az eredmeny táblában a tanuló és a feladat azonosítója együtt alkot összetett kulcsot.",
+      "pos": "n"
+    },
+    {
+      "term": "egy-a-többhöz kapcsolat",
+      "meaning": "Kapcsolattípus, amelyben az egyik tábla egy rekordjához a másik tábla több rekordja tartozhat (pl. egy osztályba több tanuló jár).",
+      "example": "Az osztály és a tanuló között egy-a-többhöz kapcsolat van.",
+      "pos": "n",
+      "collocation": "1:N"
+    },
+    {
+      "term": "több-a-többhöz kapcsolat",
+      "meaning": "Kapcsolattípus, amelyben mindkét oldal egy rekordjához a másik oldal több rekordja tartozhat; relációs adatbázisban kapcsolótáblával valósítjuk meg.",
+      "example": "A tanulók és a szakkörök közti több-a-többhöz kapcsolatot egy kapcsolótábla tárolja.",
+      "pos": "n",
+      "collocation": "N:M"
+    },
+    {
+      "term": "hivatkozási integritás",
+      "meaning": "Szabály, amely szerint az idegen kulcs csak létező elsődleges kulcsra mutathat; nem lehet például nem létező könyvet kölcsönözni.",
+      "example": "A hivatkozási integritás miatt nem törölhető az a könyv, amelyhez kölcsönzés tartozik.",
+      "pos": "n"
+    },
+    {
+      "term": "redundancia",
+      "meaning": "Ugyanannak az adatnak a felesleges, többszöri tárolása; helypazarló, és ellentmondásokhoz (anomáliákhoz) vezethet.",
+      "example": "A redundancia miatt a szerző nevét minden kölcsönzésnél újra el kellett tárolni.",
+      "pos": "n"
+    },
+    {
+      "term": "anomália",
+      "meaning": "Rossz tervezésből fakadó hiba: beszúrási (nem vihető fel adat más adat nélkül), módosítási (több helyen kell javítani) vagy törlési (törléskor más adat is elvész).",
+      "example": "A módosítási anomália miatt a tanár új telefonszámát tíz sorban kellett átírni.",
+      "pos": "n"
+    },
+    {
+      "term": "normalizálás",
+      "meaning": "A táblák szerkezetének átalakítása a redundancia és az anomáliák megszüntetésére, a normálformák lépésein keresztül.",
+      "example": "A normalizálás után a szerzők adatai külön táblába kerültek.",
+      "pos": "n"
+    },
+    {
+      "term": "első normálforma (1NF)",
+      "meaning": "A tábla minden mezője atomi (egyetlen, tovább nem bontandó értéket tartalmaz), nincsenek ismétlődő mezőcsoportok, és van elsődleges kulcs.",
+      "example": "Az első normálforma sérül, ha egy mezőben vesszővel elválasztva több telefonszám áll.",
+      "pos": "n"
+    },
+    {
+      "term": "második normálforma (2NF)",
+      "meaning": "1NF, és minden nem kulcs mező a teljes elsődleges kulcstól függ, nem csak annak egy részétől (összetett kulcsnál számít).",
+      "example": "A második normálforma miatt a feladat címe nem maradhat az eredmény táblában, mert csak a feladat azonosítójától függ.",
+      "pos": "n"
+    },
+    {
+      "term": "harmadik normálforma (3NF)",
+      "meaning": "2NF, és nincs tranzitív függés: egyetlen nem kulcs mező sem függ egy másik nem kulcs mezőtől.",
+      "example": "A harmadik normálforma szerint az irányítószámtól függő városnév külön táblába való.",
+      "pos": "n"
+    },
+    {
+      "term": "funkcionális függőség",
+      "meaning": "A → B: az A mező(k) értéke egyértelműen meghatározza a B mező értékét.",
+      "example": "A tanuló azonosítója és a neve között funkcionális függőség van: az azonosító meghatározza a nevet.",
+      "pos": "n"
+    },
+    {
+      "term": "SELECT",
+      "meaning": "SQL-utasítás adatok lekérdezésére: SELECT mezők FROM tábla [WHERE feltétel] [GROUP BY …] [HAVING …] [ORDER BY …];",
+      "example": "A SELECT után soroljuk fel a megjelenítendő mezőket.",
+      "pos": "n",
+      "collocation": "SELECT … FROM …"
+    },
+    {
+      "term": "WHERE",
+      "meaning": "SQL-záradék a rekordok szűrésére a csoportosítás előtt; összesítő függvényt nem tartalmazhat.",
+      "example": "A WHERE osztaly = '11.A' feltétel csak a 11.A tanulóit hagyja meg.",
+      "pos": "n"
+    },
+    {
+      "term": "GROUP BY",
+      "meaning": "SQL-záradék: az azonos értékű rekordokat csoportokba vonja össze, az összesítő függvények csoportonként számolnak.",
+      "example": "A GROUP BY osztaly osztályonként egy sort ad.",
+      "pos": "n"
+    },
+    {
+      "term": "HAVING",
+      "meaning": "SQL-záradék a csoportok szűrésére összesített érték alapján (a GROUP BY után).",
+      "example": "A HAVING COUNT(*) > 20 csak a húsznál több tanulós osztályokat hagyja meg.",
+      "pos": "n"
+    },
+    {
+      "term": "INNER JOIN",
+      "meaning": "Belső összekapcsolás: csak azok a rekordpárok jelennek meg, amelyeknél a kapcsolófeltétel teljesül.",
+      "example": "Az INNER JOIN kihagyja azokat a könyveket, amelyeket még senki sem kölcsönzött ki.",
+      "pos": "n",
+      "collocation": "… INNER JOIN … ON a.id = b.a_id"
+    },
+    {
+      "term": "LEFT JOIN",
+      "meaning": "Bal oldali külső összekapcsolás: a bal oldali tábla minden rekordja megjelenik, a jobb oldali mezők NULL-ok, ha nincs párjuk.",
+      "example": "LEFT JOIN-nal és IS NULL feltétellel kereshetők meg a soha ki nem kölcsönzött könyvek.",
+      "pos": "n"
+    },
+    {
+      "term": "allekérdezés",
+      "meaning": "Egy másik lekérdezésbe ágyazott SELECT, pl. a feltételben: WHERE pont = (SELECT MAX(pont) FROM eredmeny).",
+      "example": "Az allekérdezés megadja a legnagyobb pontszámot, a külső lekérdezés pedig azt, kié.",
+      "pos": "n"
+    },
+    {
+      "term": "NULL",
+      "meaning": "Hiányzó vagy ismeretlen érték; nem azonos a 0-val vagy az üres szöveggel; IS NULL / IS NOT NULL operátorral vizsgáljuk.",
+      "example": "A NULL értéket az összesítő függvények figyelmen kívül hagyják.",
+      "pos": "n"
+    },
+    {
+      "term": "összesítő függvény",
+      "meaning": "Rekordok csoportjából egyetlen értéket számoló SQL-függvény: COUNT, SUM, AVG, MIN, MAX.",
+      "example": "Az AVG összesítő függvény a pontszámok átlagát adja.",
+      "pos": "n"
+    },
+    {
+      "term": "DISTINCT",
+      "meaning": "SQL-kulcsszó: az eredményből elhagyja az ismétlődő sorokat; COUNT(DISTINCT mező) a különböző értékek számát adja.",
+      "example": "A SELECT DISTINCT varos minden várost csak egyszer listáz.",
+      "pos": "n"
+    },
+    {
+      "term": "jelentés",
+      "meaning": "Az adatbázis-kezelő nyomtatható, csoportosított és formázott kimutatása egy táblából vagy lekérdezésből.",
+      "example": "A jelentés osztályonként csoportosítva mutatja a tanulók átlagát.",
+      "pos": "n"
+    },
+    {
+      "term": "űrlap",
+      "meaning": "Adatbevitelre és -megjelenítésre szolgáló felhasználói felület az adatbázis-kezelőben.",
+      "example": "Az űrlap segítségével a könyvtáros kényelmesen rögzíti az új kölcsönzéseket.",
+      "pos": "n"
+    }
+  ]
+}

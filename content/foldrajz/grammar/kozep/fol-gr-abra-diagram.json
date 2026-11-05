@@ -1,0 +1,237 @@
+{
+  "schemaVersion": 1,
+  "id": "fol-gr-abra-diagram",
+  "subject": "foldrajz",
+  "revision": 1,
+  "level": "kozep",
+  "source": "generated",
+  "topic": "nyelvtan",
+  "title": "Ábra, diagram, táblázat leolvasása",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "grammar",
+  "type": "lesson",
+  "category": "abra-diagram",
+  "summaryHu": "Az ábra- és adatelemző feladatokban a pontvesztés legtöbbször nem tudáshiányból, hanem figyelmetlen leolvasásból fakad: rossz tengely, elfelejtett mértékegység, a százalék és a százalékpont összekeverése. A vizsgán a diagramot szövegben leírva vagy rajzon kapod; mindkét esetben ugyanazok a szabályok érvényesek. Ezek a feladatok a rövid feladatokban és az elemző kifejtős feladatban is előfordulnak.",
+  "rules": [
+    {
+      "title": "Először a keret: cím, tengelyek, mértékegység, jelmagyarázat",
+      "explanation": "Mielőtt egy értéket leolvasol, nézd meg, mit ábrázol a diagram, mi van a tengelyeken, milyen mértékegységben (°C, mm, ‰, %, millió fő), és mit jelentenek a színek, vonalak. Klímadiagramon a vonal a hőmérséklet (bal tengely), az oszlop a csapadék (jobb tengely).",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "Klímadiagram: vonal = havi középhőmérséklet, oszlop = havi csapadékösszeg"
+        }
+      ]
+    },
+    {
+      "title": "Abszolút érték, arány, változás",
+      "explanation": "Különböztesd meg az abszolút értéket (fő, tonna, km²), az arányt (%) és a változást. A változás lehet abszolút (mennyivel nőtt) és relatív (hány százalékkal nőtt). Ha egy arány százalékban adott, a különbség százalékpont.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "5% → 8%: 3 százalékpontos növekedés, ami (8 − 5) : 5 = 60%-os relatív növekedés"
+        },
+        {
+          "en": "Egy ország mezőgazdasági aránya csökkenhet, miközben a termelés mennyisége nő."
+        }
+      ]
+    },
+    {
+      "title": "Trend leírása",
+      "explanation": "Egy idősor leírásánál add meg az irányt (nő, csökken, stagnál), a mértéket (mennyivel, hányszorosára) és a fordulópontot (mikor változott meg a tendencia). Ne állíts okot, ha az ábra nem mutatja – az okot külön, ismereteid alapján magyarázd.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "„1980 és 2022 között a népesség 10,7 millióról 9,6 millióra, kb. 10%-kal csökkent; a csökkenés 1980 körül kezdődött.”"
+        }
+      ]
+    },
+    {
+      "title": "Korfa olvasása",
+      "explanation": "A korfán a függőleges tengely a korcsoport, a vízszintes a létszám vagy arány; bal oldalon általában a férfiak, jobb oldalon a nők. A széles alap sok születést, a széles felső rész sok időst jelent. Alakjai: piramis (gyorsan növő), harang (stagnáló), urna (fogyó, elöregedő népesség).",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "Széles alap, keskeny csúcs → fiatal, gyorsan növő népesség (pl. Niger)"
+        }
+      ]
+    },
+    {
+      "title": "Összetett ábrák és eltérő skálák",
+      "explanation": "Emelt szinten előfordulnak kettős tengelyű vagy logaritmikus skálájú diagramok, illetve több adatsor egy ábrán. Mindig ellenőrizd, melyik adatsorhoz melyik tengely tartozik, és logaritmikus skálán az egyenlő távolságok szorzást (pl. tízszereződést) jelentenek.",
+      "emeltOnly": true,
+      "examples": [
+        {
+          "en": "Logaritmikus skálán 10 → 100 → 1000 egyenlő távolságra van egymástól"
+        }
+      ]
+    }
+  ],
+  "commonMistakes": [
+    {
+      "wrong": "A munkanélküliség 5%-ról 8%-ra nőtt, ez 3%-os növekedés.",
+      "right": "Ez 3 százalékpontos, relatíve 60%-os növekedés.",
+      "why": "Két százalékos érték különbsége százalékpont; a százalékos változást a kiinduló értékhez kell viszonyítani."
+    },
+    {
+      "wrong": "A klímadiagramon a júliusi oszlop a hőmérsékletet mutatja.",
+      "right": "Az oszlop a csapadékot, a vonal a hőmérsékletet mutatja.",
+      "why": "A két adatsor más tengelyhez és mértékegységhez tartozik; ha felcseréled, minden további válasz hibás lesz."
+    },
+    {
+      "wrong": "A mezőgazdaság aránya a GDP-ben csökkent, tehát kevesebb élelmiszert termelnek.",
+      "right": "Az arány csökkenése mellett a termelés abszolút mennyisége nőhet is.",
+      "why": "Ha a többi ágazat gyorsabban nő, a mezőgazdaság aránya akkor is csökken, ha a termelése nő."
+    },
+    {
+      "wrong": "Az adatokból látszik, hogy a népesség a háború miatt csökkent.",
+      "right": "Az adatok a csökkenést mutatják; az okot ismereteid alapján kell megindokolni.",
+      "why": "Az ábra csak tényt közöl; ha okot írsz, azt külön, magyarázatként jelöld, és csak akkor, ha a kérdés kéri."
+    }
+  ],
+  "examTips": [
+    "Az elemző feladatban az első kérdés gyakran egyszerű leolvasás – itt a mértékegység elhagyása a leggyakoribb pontvesztés.",
+    "Ha a feladat összehasonlítást kér, mindkét adatot nevezd meg és számszerűsítsd a különbséget (pl. „B hőingása 25 °C-kal nagyobb”).",
+    "Számolás után ellenőrizd a nagyságrendet: egy város népsűrűsége nem lehet 0,5 fő/km², egy hőingás nem lehet 80 °C."
+  ],
+  "practice": [
+    {
+      "id": "1",
+      "kind": "text",
+      "prompt": "Egy klímadiagramon a júliusi középhőmérséklet 22 °C, a januári −2 °C. Mekkora az évi közepes hőingás?",
+      "answer": [
+        "24 °C",
+        "24",
+        "24°C",
+        "24 fok"
+      ],
+      "category": "abra-diagram",
+      "explanation": "24 °C: hőingás = legmelegebb − leghidegebb hónap = 22 °C − (−2 °C) = 24 °C; a negatív szám kivonásakor az értékek összeadódnak."
+    },
+    {
+      "id": "2",
+      "kind": "choice",
+      "prompt": "A városi népesség aránya 40%-ról 50%-ra nőtt. Melyik állítás helyes?",
+      "options": [
+        {
+          "key": "A",
+          "text": "10 százalékpontos, relatíve 25%-os növekedés"
+        },
+        {
+          "key": "B",
+          "text": "10%-os növekedés"
+        },
+        {
+          "key": "C",
+          "text": "50%-os növekedés"
+        },
+        {
+          "key": "D",
+          "text": "25 százalékpontos növekedés"
+        }
+      ],
+      "answer": "A",
+      "category": "abra-diagram",
+      "explanation": "Helyes: A. A különbség 50 − 40 = 10 százalékpont; a relatív növekedés 10 : 40 = 0,25, azaz 25%.",
+      "wrongOptions": {
+        "B": "A 10 a két arány különbsége, ez százalékpont, nem százalék.",
+        "C": "Az 50% a végső arány, nem a növekedés mértéke.",
+        "D": "A 25 a relatív növekedés százalékban, nem százalékpont."
+      }
+    },
+    {
+      "id": "3",
+      "kind": "choice",
+      "prompt": "Melyik korfa jellemző egy elöregedő, fogyó népességre?",
+      "options": [
+        {
+          "key": "A",
+          "text": "urna alakú"
+        },
+        {
+          "key": "B",
+          "text": "piramis alakú"
+        },
+        {
+          "key": "C",
+          "text": "széles alapú, meredeken keskenyedő"
+        },
+        {
+          "key": "D",
+          "text": "egyenletesen szélesedő alapú"
+        }
+      ],
+      "answer": "A",
+      "category": "abra-diagram",
+      "explanation": "Helyes: urna alakú. Az alja keskeny (kevés születés), a középső és felső része széles (sok középkorú és idős).",
+      "wrongOptions": {
+        "B": "A piramis alakú korfa sok születést, fiatal, növő népességet jelez.",
+        "C": "A széles alap és meredek keskenyedés a piramis típus leírása.",
+        "D": "A széles alap mindig sok gyermeket jelent, ez nem elöregedő népesség."
+      }
+    },
+    {
+      "id": "4",
+      "kind": "text",
+      "prompt": "Egy ország népessége 20 millióról 25 millióra nőtt. Hány százalékkal nőtt?",
+      "answer": [
+        "25%",
+        "25 %",
+        "25"
+      ],
+      "category": "abra-diagram",
+      "explanation": "25%: a növekedés 5 millió fő; 5 : 20 = 0,25, azaz 25%. A változást mindig a kiinduló értékhez viszonyítjuk."
+    },
+    {
+      "id": "5",
+      "kind": "choice",
+      "prompt": "Egy klímadiagramon a legmelegebb hónap január. Mire következtethetsz?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Az állomás a déli félgömbön van."
+        },
+        {
+          "key": "B",
+          "text": "Az állomás az északi félgömbön van."
+        },
+        {
+          "key": "C",
+          "text": "Az állomás az Egyenlítőn van."
+        },
+        {
+          "key": "D",
+          "text": "Az állomás a hideg övezetben van."
+        }
+      ],
+      "answer": "A",
+      "category": "abra-diagram",
+      "explanation": "Helyes: A. A déli félgömbön december–február a nyár, ezért ott a január a legmelegebb hónapok egyike.",
+      "wrongOptions": {
+        "B": "Az északi félgömbön a január a leghidegebb hónapok egyike.",
+        "C": "Az Egyenlítőn alig van évszakos hőmérséklet-különbség, a legmelegebb hónap nem feltétlenül január.",
+        "D": "A legmelegebb hónap időpontja a félgömböt jelzi, nem az övezetet."
+      }
+    },
+    {
+      "id": "6",
+      "kind": "text",
+      "prompt": "Egy táblázat szerint egy ország születési arányszáma 12 ‰, halálozási arányszáma 15 ‰. Mekkora a természetes szaporodás?",
+      "answer": [
+        "−3 ‰",
+        "-3 ‰",
+        "−3",
+        "-3",
+        "-3‰",
+        "−3‰"
+      ],
+      "category": "abra-diagram",
+      "explanation": "−3 ‰: 12 ‰ − 15 ‰ = −3 ‰, vagyis természetes fogyás; az előjel része a válasznak."
+    }
+  ],
+  "relatedCategories": [
+    "szamitas-foldrajzi",
+    "szovegertelmezes"
+  ]
+}

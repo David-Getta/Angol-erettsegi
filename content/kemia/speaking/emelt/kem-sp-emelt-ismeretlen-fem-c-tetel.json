@@ -1,0 +1,84 @@
+{
+  "schemaVersion": 1,
+  "id": "kem-sp-emelt-ismeretlen-fem-c-tetel",
+  "subject": "kemia",
+  "revision": 1,
+  "level": "emelt",
+  "source": "generated",
+  "topic": "szamitasok",
+  "title": "Melyik fém? – azonosítás gázfejlődés alapján",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "speaking",
+  "type": "c-tetel",
+  "partNumber": 3,
+  "instructionsHu": "Oldja meg a forrásban megadott problémát, és szóban indokolja a lépéseket! Használja a periódusos rendszert és a megadott standardpotenciálokat!",
+  "prompts": [
+    "A fejlődő hidrogén és a fém anyagmennyisége az egyenlet alapján",
+    "A moláris tömeg kiszámítása, a fém azonosítása; a lúgos oldódás mint megerősítés",
+    "Kiszorítási reakciók a standardpotenciálok alapján",
+    "A fém reakciója nátrium-hidroxid-oldattal"
+  ],
+  "followUpQuestions": [
+    "Hogyan változna az eredmény, ha a fém vegyületeiben +3-as oxidációs számú lenne?"
+  ],
+  "usefulPhrases": [
+    {
+      "en": "M + 2 HCl → MCl₂ + H₂",
+      "hu": "+2-es fém oldódása: n(fém) = n(H₂)."
+    },
+    {
+      "en": "M = m / n",
+      "hu": "Ismeretlen elem azonosítása moláris tömegből."
+    },
+    {
+      "en": "a negatívabb potenciálú fém redukálja a pozitívabb fém ionjait",
+      "hu": "Kiszorítási reakciók iránya."
+    },
+    {
+      "en": "amfoter fémek: Al, Zn",
+      "hu": "Savban és lúgban is hidrogénfejlődés közben oldódnak."
+    },
+    {
+      "en": "Na₂[Zn(OH)₄]",
+      "hu": "Nátrium-tetrahidroxo-cinkát – a cink lúgos oldódásának terméke."
+    },
+    {
+      "en": "ellenőrzés más adattal",
+      "hu": "Problémamegoldásnál minden megadott információt használj fel."
+    }
+  ],
+  "sources": [
+    {
+      "title": "A probléma",
+      "text": "Egy 1,30 g tömegű, ezüstösen szürke fémdarabot fölös mennyiségű híg sósavban oldunk; a fém vegyületeiben kizárólag +2-es oxidációs számú. A reakcióban 490 cm³ standardállapotú hidrogéngáz fejlődik. A fém nátrium-hidroxid-oldatban is oldódik hidrogénfejlődés közben.\na) Melyik fémről van szó?\nb) Leválasztja-e ez a fém a rezet réz(II)-szulfát-oldatból, illetve az ólmot ólom(II)-nitrát-oldatból?\nc) Írja fel a fém és a nátrium-hidroxid-oldat reakciójának egyenletét!\n(Vm = 24,5 dm³/mol)"
+    },
+    {
+      "title": "Standardpotenciálok",
+      "text": "Mg²⁺/Mg: −2,37 V; Zn²⁺/Zn: −0,76 V; Fe²⁺/Fe: −0,44 V; Pb²⁺/Pb: −0,13 V; Cu²⁺/Cu: +0,34 V."
+    }
+  ],
+  "keyPoints": [
+    "M + 2 HCl → MCl₂ + H₂: a fém és a hidrogén anyagmennyisége 1 : 1 arányú.",
+    "n(H₂) = 0,490 dm³ / 24,5 dm³/mol = 0,0200 mol = n(fém).",
+    "M = 1,30 g / 0,0200 mol = 65,0 g/mol → a fém a cink (Ar = 65,4).",
+    "A lúgos oldódás megerősíti az eredményt: a cink amfoter, a magnézium és a vas lúgban nem oldódik.",
+    "A cink standardpotenciálja (−0,76 V) negatívabb a rézénél (+0,34 V) és az ólomnál (−0,13 V), ezért mindkét fémet leválasztja: Zn + Cu²⁺ → Zn²⁺ + Cu; Zn + Pb²⁺ → Zn²⁺ + Pb.",
+    "Zn + 2 NaOH + 2 H₂O → Na₂[Zn(OH)₄] + H₂ (nátrium-tetrahidroxo-cinkát)."
+  ],
+  "speakingSeconds": 330,
+  "prepSeconds": 450,
+  "sampleAnswer": {
+    "turns": [
+      {
+        "speaker": "candidate",
+        "text": "A fém vegyületeiben +2-es oxidációs számú, ezért a sósavval való reakció általános egyenlete: M + 2 HCl → MCl₂ + H₂. Az egyenlet szerint egy mol fémből egy mol hidrogén keletkezik.\nA fejlődő hidrogén anyagmennyisége: n(H₂) = V / Vm = 0,490 dm³ / 24,5 dm³/mol = 0,0200 mol. Ugyanennyi, 0,0200 mol fém oldódott fel. A fém moláris tömege tehát M = m / n = 1,30 g / 0,0200 mol = 65,0 g/mol. A periódusos rendszerben ehhez a cink áll a legközelebb, relatív atomtömege 65,4, és valóban +2-es oxidációs számú ionokat, Zn²⁺-ionokat képez. Az, hogy a fém nátrium-hidroxid-oldatban is oldódik, megerősíti az eredményt, mert a cink amfoter fém, míg a vas vagy a magnézium lúgban nem oldódik. A sósavas reakció tehát: Zn + 2 HCl → ZnCl₂ + H₂.\nA kiszorítási reakciók irányát a standardpotenciálok döntik el: egy fém azoknak a fémeknek az ionjait képes redukálni, amelyek redoxirendszerének standardpotenciálja pozitívabb az övénél. A cink standardpotenciálja −0,76 V, ami negatívabb a rézénél (+0,34 V) és az ólomé (−0,13 V) is. Ezért a cink mindkét oldatból leválasztja a fémet. Réz(II)-szulfát-oldatban vörösbarna rézbevonat keletkezik, és az oldat kék színe halványul: Zn + Cu²⁺ → Zn²⁺ + Cu. Ólom(II)-nitrát-oldatban szürke, csillogó ólomkristályok, úgynevezett ólomfa nő a cinken: Zn + Pb²⁺ → Zn²⁺ + Pb.\nLúgban a cink komplex ion képződése közben oldódik, és hidrogén fejlődik: Zn + 2 NaOH + 2 H₂O → Na₂[Zn(OH)₄] + H₂. A termék nátrium-tetrahidroxo-cinkát. A cink tehát savban és lúgban is oldódik, ugyanúgy, mint az alumínium."
+      }
+    ],
+    "notes": [
+      "Megoldás: a moláris tömeget (65,0 g/mol) helyesen számolja, a fémet azonosítja, a kiszorítási kérdésekre helyes választ ad, és rendezett egyenleteket ír (a lúgos oldódásé is helyes).",
+      "Indoklás: a +2-es oxidációs számból vezeti le az 1 : 1 arányt, a második kísérleti adatot (lúgos oldódás) ellenőrzésre használja, a kiszorítást a standardpotenciálok összevetésével indokolja.",
+      "Segédeszköz és szaknyelv: a periódusos rendszerből veszi az atomtömeget, a standardpotenciál-táblázatot szakszerűen használja; amfoter, komplex ion, redukál – pontos fogalmak."
+    ]
+  }
+}
