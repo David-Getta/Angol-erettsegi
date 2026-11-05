@@ -1,0 +1,293 @@
+{
+  "schemaVersion": 1,
+  "id": "bio-rd-kozep-evolucio-feleletvalasztas",
+  "subject": "biologia",
+  "revision": 1,
+  "level": "kozep",
+  "source": "generated",
+  "topic": "evolucio",
+  "title": "Az evolúció mechanizmusai – feleletválasztás",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "reading",
+  "type": "feleletvalasztas",
+  "instructions": "Válassza ki az egyetlen helyes választ, és írja a betűjelét a kérdés mellé! A 0. kérdés a példa.",
+  "example": {
+    "id": "0",
+    "kind": "choice",
+    "prompt": "Ki írta „A fajok eredete” című művet (1859), amelyben a természetes szelekció elméletét kifejtette?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Jean-Baptiste Lamarck"
+      },
+      {
+        "key": "B",
+        "text": "Charles Darwin"
+      },
+      {
+        "key": "C",
+        "text": "Gregor Mendel"
+      },
+      {
+        "key": "D",
+        "text": "Carl Linné"
+      }
+    ],
+    "answer": "B",
+    "category": "evolucios-ervel",
+    "explanation": "Helyes: B. Charles Darwin 1859-ben megjelent könyvében fejtette ki, hogy a fajok változnak, közös ősöktől származnak, és a változás fő mozgatója a természetes szelekció (vele egy időben Alfred Russel Wallace is hasonló következtetésre jutott)."
+  },
+  "items": [
+    {
+      "id": "1",
+      "kind": "choice",
+      "prompt": "Melyik magyarázat felel meg a darwini evolúciós elméletnek a zsiráf hosszú nyakával kapcsolatban?",
+      "options": [
+        {
+          "key": "A",
+          "text": "A zsiráfok sokat nyújtózkodtak a magas ágak felé, és a megnyúlt nyakat átörökítették utódaikra."
+        },
+        {
+          "key": "B",
+          "text": "A populációban eleve voltak hosszabb és rövidebb nyakú egyedek; a hosszabb nyakúak több táplálékhoz jutottak, több utódot hagytak, így nemzedékről nemzedékre nőtt az arányuk."
+        },
+        {
+          "key": "C",
+          "text": "A zsiráfok azért lettek hosszú nyakúak, mert szükségük volt rá, hogy elérjék a leveleket."
+        },
+        {
+          "key": "D",
+          "text": "Egyetlen nagy mutáció egyetlen nemzedék alatt létrehozta a mai, hosszú nyakú zsiráfot."
+        }
+      ],
+      "answer": "B",
+      "category": "evolucios-ervel",
+      "explanation": "Helyes: B. Darwin szerint a populáció egyedei örökletesen különböznek egymástól; a környezethez jobban alkalmazkodott változatok nagyobb eséllyel élnek túl és szaporodnak (természetes szelekció), ezért a következő nemzedékekben gyakoribbá válnak.",
+      "wrongOptions": {
+        "A": "Ez Lamarck elképzelése: az egyed élete során szerzett tulajdonság (a nyújtózkodástól megnyúlt nyak) nem öröklődik, mert nem változtatja meg az ivarsejtek örökítőanyagát.",
+        "C": "Célirányos (teleologikus) magyarázat: az evolúciónak nincs célja, a „szükséglet” nem hoz létre örökletes változást.",
+        "D": "Az összetett tulajdonságok sok kis örökletes változás fokozatos szelekciójával alakulnak ki, nem egyetlen ugrással."
+      }
+    },
+    {
+      "id": "2",
+      "kind": "choice",
+      "prompt": "Melyik szervpár homológ, vagyis közös eredetű (felépítésük azonos alaptervre épül, de működésük eltérhet)?",
+      "options": [
+        {
+          "key": "A",
+          "text": "a madár szárnya és a lepke szárnya"
+        },
+        {
+          "key": "B",
+          "text": "az ember karja és a bálna mellső úszója"
+        },
+        {
+          "key": "C",
+          "text": "a cápa úszója és a delfin úszója"
+        },
+        {
+          "key": "D",
+          "text": "a vakond ásólába és a lótücsök ásólába"
+        }
+      ],
+      "answer": "B",
+      "category": "evolucios-ervel",
+      "explanation": "Helyes: B. Az ember karjában és a bálna mellső úszójában ugyanazok a csontok találhatók (felkarcsont, singcsont, orsócsont, kéztőcsontok, ujjpercek), mert mindkettő az emlősök közös ősének mellső végtagjából alakult ki – ez a közös leszármazás bizonyítéka.",
+      "wrongOptions": {
+        "A": "Hasonló funkció (repülés), de teljesen eltérő eredet és felépítés (csontváz kontra kitin): analóg szervek.",
+        "C": "A cápa hal, a delfin emlős; úszóik hasonlósága a vízi életmódhoz való alkalmazkodás eredménye, nem közös eredeté: analóg szervek.",
+        "D": "A vakond gerinces, a lótücsök ízeltlábú; az ásóláb hasonlósága azonos életmódból fakad: analóg szervek."
+      }
+    },
+    {
+      "id": "3",
+      "kind": "choice",
+      "prompt": "Mi az evolúció során öröklődő változatosság elsődleges forrása?",
+      "options": [
+        {
+          "key": "A",
+          "text": "a mutációk (és az ivaros szaporodás során a génkombinációk)"
+        },
+        {
+          "key": "B",
+          "text": "az izmok rendszeres edzése"
+        },
+        {
+          "key": "C",
+          "text": "a szervek gyakori használata vagy nem használata"
+        },
+        {
+          "key": "D",
+          "text": "a környezet közvetlen, az egyed testét alakító hatása"
+        }
+      ],
+      "answer": "A",
+      "category": "evolucios-ervel",
+      "explanation": "Helyes: A. Új allélok mutációval keletkeznek; az ivaros szaporodás (meiózis, megtermékenyítés) ezeket új kombinációkba rendezi. A természetes szelekció ezen az örökletes változatosságon dolgozik.",
+      "wrongOptions": {
+        "B": "Az edzés hatása (nagyobb izomzat) szerzett tulajdonság, nem változtatja meg a DNS-t, ezért nem öröklődik.",
+        "C": "A használat–nem használat elve Lamarck tévesnek bizonyult elképzelése; a szerzett tulajdonság nem öröklődik.",
+        "D": "A környezet okozta testi változás (módosulás) nem öröklődik; a környezet a szelekción keresztül hat, nem az örökítőanyag célzott megváltoztatásával."
+      }
+    },
+    {
+      "id": "4",
+      "kind": "choice",
+      "prompt": "Miért terjednek el a kórházakban az antibiotikum-rezisztens baktériumtörzsek?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Az antibiotikum minden baktériumban rezisztenciát okozó mutációt idéz elő."
+        },
+        {
+          "key": "B",
+          "text": "A már meglévő rezisztens változatok túlélik a kezelést, és elszaporodnak, mert az antibiotikum az érzékeny baktériumokat elpusztítja."
+        },
+        {
+          "key": "C",
+          "text": "A baktériumok az ismételt kezelések során megtanulják elviselni a gyógyszert."
+        },
+        {
+          "key": "D",
+          "text": "A rezisztenciát a beteg szervezete adja át a baktériumoknak."
+        }
+      ],
+      "answer": "B",
+      "category": "evolucios-ervel",
+      "explanation": "Helyes: B. A rezisztenciát okozó mutáció véletlenszerűen, a kezeléstől függetlenül jelenik meg néhány baktériumban. Az antibiotikum szelekciós tényező: az érzékeny sejtek elpusztulnak, a rezisztensek túlélnek és szaporodnak – ezért a felesleges vagy félbehagyott antibiotikum-szedés gyorsítja a folyamatot.",
+      "wrongOptions": {
+        "A": "A mutáció véletlenszerű, nem az antibiotikum „hozza létre” célzottan; az antibiotikum csak kiválogatja a már meglévő változatokat.",
+        "C": "A baktériumok nem „tanulnak”; a populáció azért változik, mert az érzékeny egyedek elpusztulnak.",
+        "D": "Az ember szervezete nem ad át rezisztenciagént a baktériumoknak; a rezisztencia a baktériumok örökítőanyagában van."
+      }
+    },
+    {
+      "id": "5",
+      "kind": "choice",
+      "prompt": "Melyik meghatározás illik a fajra (biológiai fajfogalom szerint)?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Egy adott területen együtt élő, különböző élőlények összessége."
+        },
+        {
+          "key": "B",
+          "text": "Azok az egyedek, amelyek természetes körülmények között egymással szaporodni képesek, és termékeny utódokat hoznak létre."
+        },
+        {
+          "key": "C",
+          "text": "Az azonos táplálékot fogyasztó állatok csoportja."
+        },
+        {
+          "key": "D",
+          "text": "Egy adott területen, egy időben élő, azonos fajú egyedek csoportja."
+        }
+      ],
+      "answer": "B",
+      "category": "fogalomhasznalat",
+      "explanation": "Helyes: B. A biológiai fajfogalom a szaporodási közösségre épül: egy faj egyedei egymással szaporodva termékeny utódokat hozhatnak létre, más fajokkal szemben pedig szaporodási izoláció választja el őket (a ló és a szamár utódja, az öszvér, terméketlen).",
+      "wrongOptions": {
+        "A": "Ez az életközösség (biocönózis) meghatározása, amely sok faj populációiból áll.",
+        "C": "Az azonos táplálék azonos táplálkozási szintet vagy hasonló ökológiai igényt jelent, nem fajt.",
+        "D": "Ez a populáció meghatározása: egy faj egy adott területen élő egyedeinek csoportja; egy faj több populációból is állhat."
+      }
+    },
+    {
+      "id": "6",
+      "kind": "choice",
+      "prompt": "Melyik nyújt közvetlen bizonyítékot a régen élt élőlények testfelépítésére?",
+      "options": [
+        {
+          "key": "A",
+          "text": "az ősmaradványok (fosszíliák)"
+        },
+        {
+          "key": "B",
+          "text": "a ma élő fajok egyedszámának változása"
+        },
+        {
+          "key": "C",
+          "text": "a ma élő fajok földrajzi elterjedése"
+        },
+        {
+          "key": "D",
+          "text": "az egyedek életük során szerzett tulajdonságai"
+        }
+      ],
+      "answer": "A",
+      "category": "evolucios-ervel",
+      "explanation": "Helyes: A. Az ősmaradványok (megkövesedett csontok, lenyomatok, borostyánba zárt rovarok) a régen élt szervezetek testét vagy nyomait őrzik meg; a különböző korú kőzetrétegekben talált maradványok sorrendje mutatja az élővilág változását.",
+      "wrongOptions": {
+        "B": "A mai egyedszámok a jelenlegi populációkról szólnak, a múltban élt élőlények felépítéséről nem adnak közvetlen információt.",
+        "C": "A földrajzi elterjedés közvetett bizonyíték az evolúcióra, de a régi élőlények testét nem mutatja meg.",
+        "D": "A szerzett tulajdonságok nem öröklődnek, és nem is a múltról szólnak."
+      }
+    },
+    {
+      "id": "7",
+      "kind": "choice",
+      "prompt": "Melyik tulajdonság jelent meg a legkorábban az emberfélék evolúciója során?",
+      "options": [
+        {
+          "key": "A",
+          "text": "a két lábon járás"
+        },
+        {
+          "key": "B",
+          "text": "a mai emberéhez hasonló, kb. 1300–1400 cm³-es agytérfogat"
+        },
+        {
+          "key": "C",
+          "text": "a tűz használata"
+        },
+        {
+          "key": "D",
+          "text": "a barlangfestmények készítése"
+        }
+      ],
+      "answer": "A",
+      "category": "evolucios-ervel",
+      "explanation": "Helyes: A. Az ősmaradványok szerint a két lábon járás (pl. az Australopithecusoknál, több mint 3 millió éve) jóval megelőzte az agytérfogat nagymértékű növekedését; a tűzhasználat és a művészet sokkal később, a Homo nemzetségben jelent meg.",
+      "wrongOptions": {
+        "B": "A nagy agytérfogat későn, a Homo nemzetség evolúciója során alakult ki; a korai, két lábon járó emberfélék agya alig volt nagyobb a csimpánzénál.",
+        "C": "A tűzhasználat nyomai a Homo erectus idejéből származnak, jóval a két lábon járás megjelenése utánról.",
+        "D": "A barlangfestmények a mai ember (Homo sapiens) alkotásai, az emberi evolúció legkésőbbi szakaszából."
+      }
+    },
+    {
+      "id": "8",
+      "kind": "choice",
+      "prompt": "Melyik folyamat vezethet legvalószínűbben új faj kialakulásához?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Egy populációt földrajzi akadály (pl. hegység, tengerszoros) két részre választ, és a két rész között hosszú ideig nincs génáramlás."
+        },
+        {
+          "key": "B",
+          "text": "Egy állat egész élete során rendszeresen edzi az izmait."
+        },
+        {
+          "key": "C",
+          "text": "Egy populáció egyedei hosszú ideig szabadon kereszteződnek egymással."
+        },
+        {
+          "key": "D",
+          "text": "Egyetlen egyed testmérete a bőséges táplálék miatt megnő."
+        }
+      ],
+      "answer": "A",
+      "category": "evolucios-ervel",
+      "explanation": "Helyes: A. Földrajzi elkülönülés esetén a két részpopulációban eltérő mutációk jelennek meg, és a különböző környezet eltérő irányú szelekciót okoz; hosszú idő után annyira eltérhetnek, hogy már nem tudnak egymással termékeny utódot létrehozni – két faj lett belőlük.",
+      "wrongOptions": {
+        "B": "Az edzés eredménye szerzett tulajdonság, nem öröklődik, ezért nem vezet új fajhoz.",
+        "C": "A szabad kereszteződés (génáramlás) éppen összemossa a különbségeket, és egyben tartja a fajt.",
+        "D": "Egyetlen egyed nem lehet új faj; a táplálék okozta méretnövekedés ráadásul nem öröklődik."
+      }
+    }
+  ],
+  "glossary": [],
+  "suggestedMinutes": 8
+}

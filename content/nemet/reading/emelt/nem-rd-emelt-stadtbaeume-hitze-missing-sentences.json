@@ -1,0 +1,122 @@
+{
+  "topic": "kornyezet",
+  "title": "Schatten gesucht",
+  "type": "missing-sentences",
+  "instructions": "Lesen Sie den Artikel darüber, wie sich Städte auf heiße Sommer vorbereiten. Aus dem Text wurden acht Sätze entfernt. Setzen Sie die Sätze (A–J) an die richtige Stelle (1–7). Zwei Sätze passen nicht. Am Anfang finden Sie ein Beispiel (0).",
+  "instructionsHu": "Olvasd el a cikket arról, hogyan készülnek a városok a forró nyarakra. Helyezd vissza a kivett mondatokat (A–J) a helyükre (1–7). Két mondat felesleges. A 0. a példa.",
+  "passage": {
+    "title": "Schatten gesucht",
+    "subtitle": "Wie deutsche Städte sich auf immer heißere Sommer vorbereiten",
+    "blocks": [
+      { "text": "Als im vergangenen Juli das Thermometer in der Kölner Innenstadt auf 39 Grad stieg, war der Platz vor dem Hauptbahnhof fast menschenleer. [[0]] Wer konnte, flüchtete in klimatisierte Geschäfte oder in die wenigen Parks der Innenstadt. Dort war es, wie Messungen später zeigten, bis zu acht Grad kühler als auf den asphaltierten Straßen ringsum." },
+      { "text": "Das Phänomen hat einen Namen: städtische Wärmeinsel. Beton, Asphalt und Glas nehmen tagsüber Sonnenenergie auf und geben sie nur langsam wieder ab. [[1]] Für ältere Menschen, kleine Kinder und chronisch Kranke ist das gefährlich, denn der Körper kann sich in solchen Nächten kaum erholen. Nach Schätzungen von Gesundheitsexperten sterben in Deutschland in besonders heißen Sommern mehrere Tausend Menschen an den Folgen der Hitze." },
+      { "text": "Das wirksamste Mittel gegen die Hitze ist überraschend einfach: Bäume. Ein großer Baum verdunstet an einem Sommertag mehrere Hundert Liter Wasser und kühlt so seine Umgebung wie eine natürliche Klimaanlage. [[2]] Stadtplaner sprechen deshalb inzwischen von „grüner Infrastruktur“ – und meinen damit, dass Bäume für eine Stadt genauso wichtig sind wie Straßen oder Wasserleitungen." },
+      { "text": "Doch gerade die Stadtbäume leiden selbst unter dem Klimawandel. [[3]] Viele Arten, die seit Jahrhunderten die Alleen deutscher Städte prägen, kommen mit langen Trockenperioden nicht zurecht. In manchen Großstädten mussten in den vergangenen Jahren Tausende Bäume gefällt werden, weil sie vertrocknet oder von Schädlingen befallen waren." },
+      { "text": "Einige Städte experimentieren deshalb mit sogenannten Klimabäumen. In einem Versuchsprojekt in Süddeutschland werden seit einigen Jahren Baumarten aus Südosteuropa getestet, etwa die Silberlinde oder die Zerr-Eiche. [[4]] Die ersten Ergebnisse sind vielversprechend, doch Fachleute warnen davor, nur auf fremde Arten zu setzen: Viele einheimische Insekten und Vögel sind an sie nicht angepasst." },
+      { "text": "Ein zweiter Ansatz heißt „Schwammstadt“. [[5]] Regenwasser soll nicht mehr möglichst schnell in die Kanalisation fließen, sondern im Boden gespeichert werden – in Grünflächen, in Mulden neben der Straße oder in unterirdischen Speichern. Dort steht es den Bäumen in Trockenzeiten zur Verfügung. Gleichzeitig schützt das System vor Überschwemmungen, wenn nach einem Gewitter in kurzer Zeit große Mengen Regen fallen." },
+      { "text": "All das kostet Geld und vor allem Platz – und Platz ist in Innenstädten knapp. [[6]] Wo ein neuer Baum gepflanzt werden soll, fallen außerdem oft Parkplätze weg, und das sorgt regelmäßig für Streit. In einer norddeutschen Großstadt protestierten im vergangenen Jahr Ladenbesitzer gegen ein Projekt, bei dem eine Einkaufsstraße 40 neue Bäume bekommen sollte – auf Kosten von 60 Parkplätzen. Sie fürchteten, dass ihre Kunden ausbleiben würden." },
+      { "text": "Ein Jahr später ist der Streit vergessen. [[7]] Die Umsätze der Geschäfte sind sogar leicht gestiegen, weil die Menschen im Schatten länger bummeln. „Wir haben die Bäume unterschätzt“, gibt ein Buchhändler zu, der damals selbst Unterschriften gegen das Projekt gesammelt hatte." }
+    ]
+  },
+  "options": [
+    { "key": "A", "text": "Ihre Wurzeln haben unter Straßen und Gehwegen wenig Platz, und in heißen Sommern bekommen sie oft nicht genug Wasser." },
+    { "key": "B", "text": "Die Idee dahinter: Die Stadt soll Wasser aufsaugen wie ein Schwamm und es langsam wieder abgeben." },
+    { "key": "C", "text": "Deshalb kühlt die Luft in der Innenstadt oft auch nach Sonnenuntergang kaum ab." },
+    { "key": "D", "text": "Die Steinplatten hatten sich so stark aufgeheizt, dass man die Hitze durch die Schuhsohlen spürte." },
+    { "key": "E", "text": "Viele Bewohner haben sich deshalb eine eigene Klimaanlage gekauft." },
+    { "key": "F", "text": "Außerdem spenden seine Blätter Schatten, sodass sich der Boden darunter gar nicht erst so stark erwärmt." },
+    { "key": "G", "text": "Die Straße ist im Sommer deutlich kühler, und in den neuen Beeten blühen Blumen, wo früher Autos standen." },
+    { "key": "H", "text": "Sie stammen aus Regionen, in denen heiße, trockene Sommer schon lange normal sind." },
+    { "key": "I", "text": "Die Stadt hat das Projekt deshalb schließlich aufgegeben." },
+    { "key": "J", "text": "Unter vielen Straßen liegen Leitungen für Strom, Gas und Internet, über denen keine Bäume wachsen dürfen." }
+  ],
+  "example": {
+    "id": "0",
+    "kind": "match",
+    "answer": "D",
+    "category": "text-structure",
+    "explanation": "D a helyes: a kihalt tér után a forró kőlapok magyarázzák, miért nem maradt ott senki, és a következő mondat („Wer konnte, flüchtete …”) erre reagál.",
+    "evidence": "war der Platz vor dem Hauptbahnhof fast menschenleer"
+  },
+  "items": [
+    {
+      "id": "1",
+      "kind": "match",
+      "answer": "C",
+      "category": "text-structure",
+      "explanation": "C a helyes: az előző mondat szerint a beton és az aszfalt csak lassan adja le a hőt – ezért („Deshalb”) napnyugta után sem hűl le a levegő. A következő mondat „in solchen Nächten” kifejezése ezekre a meleg éjszakákra utal vissza.",
+      "evidence": "denn der Körper kann sich in solchen Nächten kaum erholen",
+      "wrongOptions": { "E": "A saját klíma vásárlása nem magyarázza, mire utal a következő mondatban a „das ist gefährlich” és az „in solchen Nächten”." }
+    },
+    {
+      "id": "2",
+      "kind": "match",
+      "answer": "F",
+      "category": "text-structure",
+      "explanation": "F a helyes: a „seine Blätter” egyes számú hímnemű/semlegesnemű főnévre utal vissza (ein großer Baum), az „Außerdem” pedig a párologtatás mellé egy második hűtő hatást (árnyék) tesz.",
+      "evidence": "Ein großer Baum verdunstet an einem Sommertag mehrere Hundert Liter Wasser",
+      "wrongOptions": { "H": "A „Sie stammen aus Regionen …” többes számú, idegen fafajokra utal, ezek pedig csak később, a Klimabäume bekezdésben kerülnek elő." }
+    },
+    {
+      "id": "3",
+      "kind": "match",
+      "answer": "A",
+      "category": "text-structure",
+      "explanation": "A a helyes: az előző mondat szerint a városi fák maguk is szenvednek; az A mondat megmondja, miért (kevés hely a gyökereknek, kevés víz). Az „Ihre Wurzeln” a „Stadtbäume” szóra utal vissza.",
+      "evidence": "Doch gerade die Stadtbäume leiden selbst unter dem Klimawandel.",
+      "wrongOptions": { "J": "A vezetékekről szóló mondat a helyhiányról szól, nem arról, hogyan szenvednek a fák a klímaváltozástól; a 6. helyre illik." }
+    },
+    {
+      "id": "4",
+      "kind": "match",
+      "answer": "H",
+      "category": "text-structure",
+      "explanation": "H a helyes: a „Sie” a délkelet-európai fafajokra (Silberlinde, Zerr-Eiche) utal, és megmagyarázza, miért bírják a meleget – erre épül a „Die ersten Ergebnisse sind vielversprechend”.",
+      "evidence": "werden seit einigen Jahren Baumarten aus Südosteuropa getestet",
+      "wrongOptions": { "A": "Az A mondat a meglévő városi fák problémáiról szól, nem az új fajok származásáról." }
+    },
+    {
+      "id": "5",
+      "kind": "match",
+      "answer": "B",
+      "category": "text-structure",
+      "explanation": "B a helyes: a „Schwammstadt” (szivacsváros) szót a B mondat magyarázza meg („wie ein Schwamm”), a következő mondat pedig részletezi, hogyan tárolják az esővizet.",
+      "evidence": "Ein zweiter Ansatz heißt „Schwammstadt“."
+    },
+    {
+      "id": "6",
+      "kind": "match",
+      "answer": "J",
+      "category": "text-structure",
+      "explanation": "J a helyes: a „Platz ist in Innenstädten knapp” állítást a föld alatti vezetékek példája támasztja alá; a következő mondat „außerdem” szava egy újabb helyproblémát (parkolóhelyek) tesz mellé.",
+      "evidence": "und Platz ist in Innenstädten knapp",
+      "wrongOptions": { "I": "„Das Projekt” itt még nem került szóba, és a szöveg végén kiderül, hogy a fákat el is ültették – a projektet tehát nem adták fel." }
+    },
+    {
+      "id": "7",
+      "kind": "match",
+      "answer": "G",
+      "category": "text-structure",
+      "explanation": "G a helyes: a vita elmúlt, mert az utca hűvösebb lett és virágok nyílnak az egykori parkolóhelyeken; a következő mondat „sogar” szava erre a pozitív eredményre tesz rá még egyet (nőtt a forgalom).",
+      "evidence": "Ein Jahr später ist der Streit vergessen.",
+      "wrongOptions": { "I": "Ha a város feladta volna a projektet, nem lehetne árnyék, amelyben az emberek tovább sétálgatnak, és a könyvkereskedő sem mondaná, hogy alábecsülték a fákat." }
+    }
+  ],
+  "glossary": [
+    { "term": "die Wärmeinsel", "meaning": "hősziget (a városközpont melegebb a környezeténél)" },
+    { "term": "verdunsten", "meaning": "elpárologtat, elpárolog" },
+    { "term": "prägen", "meaning": "meghatároz, jellegzetessé tesz" },
+    { "term": "zurechtkommen mit", "meaning": "megbirkózik valamivel" },
+    { "term": "gefällt werden (fällen)", "meaning": "kivágják (fát)" },
+    { "term": "Schädlinge", "meaning": "kártevők" },
+    { "term": "vielversprechend", "meaning": "ígéretes" },
+    { "term": "einheimisch", "meaning": "őshonos, helyi" },
+    { "term": "die Kanalisation", "meaning": "csatornahálózat" },
+    { "term": "die Überschwemmung", "meaning": "elárasztás, árvíz" },
+    { "term": "knapp", "meaning": "szűkös, kevés" },
+    { "term": "ausbleiben", "meaning": "elmarad, nem jön (pl. vevő)" },
+    { "term": "bummeln", "meaning": "nézelődve sétálgat" },
+    { "term": "unterschätzen", "meaning": "alábecsül" }
+  ],
+  "suggestedMinutes": 16
+}
