@@ -1,0 +1,140 @@
+{
+  "schemaVersion": 1,
+  "id": "lu-emelt-board-game-cafes-word-bank",
+  "revision": 1,
+  "level": "emelt",
+  "source": "generated",
+  "topic": "szabadido",
+  "title": "Back to the board",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "language-use",
+  "type": "word-bank-cloze",
+  "instructions": "Read the text and fill in the gaps with words from the list (A–O). Use each word only once. There are three words that you do not need to use. There is an example (0) at the beginning.",
+  "instructionsHu": "Töltsd ki a hiányokat a listában (A–O) szereplő szavakkal. Minden szót csak egyszer használhatsz, és három szóra nem lesz szükséged. A 0. a példa.",
+  "passage": {
+    "title": "Back to the board",
+    "blocks": [
+      { "text": "Ten years ago, the idea of spending a Saturday night playing board games would have [[0]] most teenagers as hopelessly old-fashioned. Today, board game cafés are opening in cities all over Europe, and many of them are fully booked every weekend. In Budapest alone there are now more than twenty, [[1]] of which also organise evening tournaments. The concept is simple: customers pay a small entrance fee, choose from a library of several hundred games and stay as long as they like. Friendly staff members, [[2]] job is to explain the rules, can recommend a game to suit almost any group." },
+      { "text": "So why has such a traditional hobby made a comeback? [[3]] being surrounded by screens all day – or perhaps because of it – many young people say they miss real, face-to-face contact. 'When we play online, we [[4]] ever talk to each other properly,' explains Dóra, 18, a regular at one café. 'Here we laugh, argue and make up again – it's a completely different experience. I'd [[5]] spend my pocket money here than at the cinema.'" },
+      { "text": "Game designers deserve some of the credit, too. [[6]] older games often depended mainly on luck, modern ones reward strategy, teamwork and negotiation. Some take only twenty minutes to play; others can [[7]] an entire afternoon. A great [[8]] of effort also goes into the artwork, which is why many games are beautiful enough to display on a shelf." },
+      { "text": "Running a café is not always easy, though. Games get damaged, pieces go [[9]], and some customers order just one drink in four hours. [[10]] a café also serves food, it can struggle to pay its rent. Still, most owners say they would not [[11]] their job for anything. 'We've seen friendships begin over a game of cards here,' says one. 'You can't put a price on that.'" }
+    ]
+  },
+  "options": [
+    { "key": "A", "text": "whose" },
+    { "key": "B", "text": "hardly" },
+    { "key": "C", "text": "struck" },
+    { "key": "D", "text": "last" },
+    { "key": "E", "text": "however" },
+    { "key": "F", "text": "most" },
+    { "key": "G", "text": "unless" },
+    { "key": "H", "text": "swap" },
+    { "key": "I", "text": "spent" },
+    { "key": "J", "text": "despite" },
+    { "key": "K", "text": "missing" },
+    { "key": "L", "text": "rather" },
+    { "key": "M", "text": "much" },
+    { "key": "N", "text": "whereas" },
+    { "key": "O", "text": "deal" }
+  ],
+  "example": {
+    "id": "0",
+    "kind": "match",
+    "answer": "C",
+    "category": "collocation",
+    "explanation": "„Strike somebody as (being) something” = valakinek valamilyennek tűnik: tíz éve a társasjáték a legtöbb tinédzser szemében reménytelenül régimódinak tűnt volna. A „would have” után 3. alak kell: struck."
+  },
+  "items": [
+    {
+      "id": "1",
+      "kind": "match",
+      "answer": "F",
+      "category": "relative-clause",
+      "explanation": "„Most of which” = amelyek többsége. Mennyiségjelző + of + which vonatkozó szerkezet, amely a vessző előtti „more than twenty” (kávézó) szóra utal.",
+      "wrongOptions": { "M": "A „much” megszámlálhatatlan főnévre utal; a kávézók megszámlálhatók (twenty), ezért „much of which” itt hibás." }
+    },
+    {
+      "id": "2",
+      "kind": "match",
+      "answer": "A",
+      "category": "relative-clause",
+      "explanation": "Birtokos vonatkozó névmás: „whose job is to explain the rules” = akiknek az a dolguk, hogy elmagyarázzák a szabályokat. A „whose” után közvetlenül főnév (job) következik.",
+      "wrongOptions": { "F": "A „most” nem vezet be vonatkozó mellékmondatot; a „job” főnév előtt birtokos vonatkozó névmás (whose) kell." }
+    },
+    {
+      "id": "3",
+      "kind": "match",
+      "answer": "J",
+      "category": "linking",
+      "explanation": "„Despite + -ing” = annak ellenére, hogy … (Despite being surrounded by screens). A „despite” után főnév vagy -ing alak áll, mellékmondat nem.",
+      "wrongOptions": { "E": "A „however” nem állhat -ing alak előtt kötőszóként; jelentése „azonban”, és a mondatot vesszővel választja el." }
+    },
+    {
+      "id": "4",
+      "kind": "match",
+      "answer": "B",
+      "category": "word-choice",
+      "explanation": "„Hardly ever” = szinte soha. A „hardly” önmagában tagadó értelmű, ezért mellette nem kell „not”.",
+      "wrongOptions": { "M": "„Much ever” nem létező kapcsolat; az „ever” előtt gyakorisági értelemben „hardly” állhat." }
+    },
+    {
+      "id": "5",
+      "kind": "match",
+      "answer": "L",
+      "category": "modal",
+      "explanation": "„Would rather do something than (do) something else” = inkább … mint … (I'd rather spend my money here than at the cinema). A „would rather” után puszta ige áll, a szerkezetet „than” folytatja.",
+      "wrongOptions": { "B": "„I'd hardly spend” nyelvtanilag lehetséges kezdet, de a mondat végén álló „than” csak a „would rather … than” szerkezettel működik." }
+    },
+    {
+      "id": "6",
+      "kind": "match",
+      "answer": "N",
+      "category": "linking",
+      "explanation": "„Whereas” = míg, ezzel szemben: két tagmondat ellentétét fejezi ki (a régi játékok a szerencsén múltak, a modernek a stratégiát jutalmazzák).",
+      "wrongOptions": { "G": "Az „unless” (hacsak nem) feltételt fejez ki, itt viszont két tény szembeállítása kell." }
+    },
+    {
+      "id": "7",
+      "kind": "match",
+      "answer": "D",
+      "category": "word-choice",
+      "explanation": "„Last” igeként = tart (időben): others can last an entire afternoon = mások egy egész délutánig tartanak. A „can” után puszta ige kell.",
+      "wrongOptions": { "I": "A „can” után puszta ige áll, a „spent” múlt idejű alak; ráadásul a játék nem „tölt”, hanem „tart” valameddig." }
+    },
+    {
+      "id": "8",
+      "kind": "match",
+      "answer": "O",
+      "category": "quantifier",
+      "explanation": "„A great deal of + megszámlálhatatlan főnév” = rengeteg (a great deal of effort = rengeteg munka, energia).",
+      "wrongOptions": { "M": "„A great much” nem létezik; a „much” nem állhat névelő és melléknév után." }
+    },
+    {
+      "id": "9",
+      "kind": "match",
+      "answer": "K",
+      "category": "collocation",
+      "explanation": "Állandó kifejezés: „go missing” = elvész, eltűnik (pieces go missing = elvesznek a bábuk, darabok). A „go” itt állapotváltozást jelöl, mint a „go wrong”.",
+      "wrongOptions": { "I": "A „go spent” nem kifejezés; a „spent” a „spend” (költ, tölt) múlt idejű alakja." }
+    },
+    {
+      "id": "10",
+      "kind": "match",
+      "answer": "G",
+      "category": "linking",
+      "explanation": "„Unless” = hacsak nem (= if … not): ha egy kávézó nem árul ételt is, nehezen tudja kifizetni a bérleti díjat.",
+      "wrongOptions": { "N": "A „whereas” két tényt állít szembe; itt feltételre van szükség (ha nem árul ételt …)." }
+    },
+    {
+      "id": "11",
+      "kind": "match",
+      "answer": "H",
+      "category": "collocation",
+      "explanation": "„Swap something for something” = elcserél valamit valamire: would not swap their job for anything = semmiért sem cserélnék el a munkájukat. A „would not” után puszta ige kell.",
+      "wrongOptions": { "I": "A „would not” után puszta ige kell, és a „spend … for anything” nem fejezi ki a cserét." }
+    }
+  ],
+  "glossary": [],
+  "suggestedMinutes": 12
+}

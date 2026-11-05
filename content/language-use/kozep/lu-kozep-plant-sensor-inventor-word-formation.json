@@ -1,0 +1,47 @@
+{
+  "schemaVersion": 1,
+  "id": "lu-kozep-plant-sensor-inventor-word-formation",
+  "revision": 1,
+  "level": "kozep",
+  "source": "generated",
+  "topic": "tudomany",
+  "title": "The plant that sends text messages",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "language-use",
+  "type": "word-formation",
+  "instructions": "Read the text and use the words in brackets to form a word that fits in each gap. There is an example (0) at the beginning.",
+  "instructionsHu": "A zárójelben megadott szavakból képezz olyan szót, amely illik az egyes hiányokba. A 0. a példa.",
+  "passage": {
+    "title": "The plant that sends text messages",
+    "blocks": [
+      { "text": "When 17-year-old Bálint Kovács entered a national science competition last spring, he never expected to win. His [[0]] is simple but clever: a small sensor that sends a message to your phone when your plants need water." },
+      { "text": "The idea came from his grandmother, who is a little [[1]]. 'Her plants kept dying because she always forgot to water them, so I wanted to find a [[2]],' Bálint explains. The sensor is especially [[3]] for people who travel a lot or simply have a busy life." },
+      { "text": "Building it was not easy. 'There were lots of [[4]],' he admits. 'The first version beeped all night, so it was really [[5]]. My parents weren't very happy!' After six months of hard work, the sensor finally worked. Even professional [[6]] were impressed, and the judges said his project was the most [[7]] in the competition." },
+      { "text": "The sensor costs less than 3,000 forints to produce, which makes it [[8]] for most families. Bálint, who wants to study [[9]] at university, is now talking to a company about selling it. [[10]], it will be in the shops next year. 'Thanks to the sensor, my grandmother's plants have never been [[11]],' he laughs." }
+    ]
+  },
+  "example": {
+    "id": "0",
+    "kind": "text",
+    "cue": "INVENT",
+    "answer": ["invention"],
+    "category": "word-formation",
+    "explanation": "A „His” birtokos névmás után főnév kell: INVENT → invention (találmány), az -ion képzővel."
+  },
+  "items": [
+    { "id": "1", "kind": "text", "cue": "FORGET", "answer": ["forgetful"], "category": "word-formation", "explanation": "A „who is a little” után melléknév kell: FORGET → forgetful (feledékeny), a -ful képzővel." },
+    { "id": "2", "kind": "text", "cue": "SOLVE", "answer": ["solution"], "category": "word-formation", "explanation": "Az „a” névelő után főnév áll: SOLVE → solution (megoldás). Figyelj a helyesírásra: solve → solution (a v eltűnik)." },
+    { "id": "3", "kind": "text", "cue": "USE", "answer": ["useful"], "category": "word-formation", "explanation": "A „The sensor is especially” után melléknév kell, és a jelentés pozitív: USE → useful (hasznos). A „useless” (haszontalan) ellentmondana a szövegnek." },
+    { "id": "4", "kind": "text", "cue": "DIFFICULT", "answer": ["difficulties"], "category": "word-formation", "explanation": "A „lots of” után (megszámlálható) többes számú főnév kell: DIFFICULT → difficulty → difficulties (y → ies)." },
+    { "id": "5", "kind": "text", "cue": "NOISE", "answer": ["noisy"], "category": "word-formation", "explanation": "A „so it was really” után melléknév kell: NOISE → noisy (zajos) – az -e elmarad, és -y képzőt kap." },
+    { "id": "6", "kind": "text", "cue": "SCIENCE", "answer": ["scientists"], "category": "word-formation", "explanation": "A „professional” melléknév után személyt jelölő főnév kell, többes számban (were): SCIENCE → scientist → scientists (tudósok)." },
+    { "id": "7", "kind": "text", "cue": "ORIGIN", "answer": ["original"], "category": "word-formation", "explanation": "A „the most” után melléknév áll (felsőfok): ORIGIN → original (eredeti, ötletes), az -al képzővel." },
+    { "id": "8", "kind": "text", "cue": "AFFORD", "answer": ["affordable"], "category": "word-formation", "explanation": "A „makes it …” után melléknév kell: AFFORD → affordable (megfizethető), az -able képzővel. Az olcsó ár (kevesebb mint 3000 forint) ezt támasztja alá." },
+    { "id": "9", "kind": "text", "cue": "ENGINEER", "answer": ["engineering"], "category": "word-formation", "explanation": "A „study” után tantárgy, szakterület neve kell: ENGINEER → engineering (mérnöki tudományok). Az „engineer” személyt (mérnököt) jelöl." },
+    { "id": "10", "kind": "text", "cue": "HOPE", "answer": ["Hopefully"], "category": "word-formation", "explanation": "A mondat elején, vesszővel elválasztva az egész mondatot módosító határozószó áll: HOPE → hopefully (remélhetőleg)." },
+    { "id": "11", "kind": "text", "cue": "HEALTH", "answer": ["healthier"], "category": "comparison", "explanation": "A „have never been …” = még soha nem voltak ilyen … – ez középfokot kíván: HEALTH → healthy (melléknév) → healthier (y → i + -er)." }
+  ],
+  "glossary": [],
+  "suggestedMinutes": 10
+}

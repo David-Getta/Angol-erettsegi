@@ -1,0 +1,47 @@
+{
+  "schemaVersion": 1,
+  "id": "lu-kozep-amateur-theatre-missing-words",
+  "revision": 1,
+  "level": "kozep",
+  "source": "generated",
+  "topic": "szabadido",
+  "title": "On stage after school",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "language-use",
+  "type": "missing-words",
+  "instructions": "Some words are missing from the text. In each numbered place (1–12) ONE word is missing. Write the missing word. There is an example (0) at the beginning.",
+  "instructionsHu": "A szövegből szavak maradtak ki: minden számozott helyen EGY szó hiányzik. Írd be a hiányzó szót. A 0. a példa.",
+  "passage": {
+    "title": "On stage after school",
+    "blocks": [
+      { "text": "I [[0]] always been shy, so when my friend Petra asked me to come with [[1]] to a rehearsal of our town's amateur theatre group, I almost said no. In the end I went, and it was one of [[2]] best decisions of my life." },
+      { "text": "The group meets [[3]] Tuesday and Thursday evenings in the old cinema. There are about twenty members – the youngest is fifteen and the oldest is seventy-two. Nobody is [[4]] professional actor: there is a nurse, a bus driver, two teachers and several students like me." },
+      { "text": "At my first rehearsal, the director asked me [[5]] read a few lines. I was so nervous [[6]] my hands were shaking, but everyone was very kind and patient. Since then, I [[7]] taken part in three plays. Last spring we performed a comedy which [[8]] written by one of the members, and more than three hundred people came to watch it. The local newspaper even wrote [[9]] article about the show." },
+      { "text": "Acting has changed me a lot. I am no longer afraid [[10]] speaking in public, and I find it much easier [[11]] talk to new people. If you are looking [[12]] a hobby that is fun and helps you grow, I can only recommend it!" }
+    ]
+  },
+  "example": {
+    "id": "0",
+    "kind": "text",
+    "answer": ["have", "'ve"],
+    "category": "auxiliary",
+    "explanation": "Present perfect: have + 3. alak (been). A „have” segédige hiányzik; az „always” a segédige és a főige között áll: I have always been shy."
+  },
+  "items": [
+    { "id": "1", "kind": "text", "answer": ["her"], "category": "pronoun", "explanation": "A „with” elöljárószó után tárgyesetű személyes névmás kell, és Petrára (nő) utal: come with her." },
+    { "id": "2", "kind": "text", "answer": ["the"], "category": "article", "explanation": "„one of the + felsőfok + többes számú főnév”: one of the best decisions. Felsőfok előtt határozott névelő áll." },
+    { "id": "3", "kind": "text", "answer": ["on"], "category": "preposition", "explanation": "A hét napjai előtt „on” áll: on Tuesday and Thursday evenings (napszakkal együtt is: on Monday morning)." },
+    { "id": "4", "kind": "text", "answer": ["a"], "category": "article", "explanation": "Foglalkozás előtt egyes számban határozatlan névelő kell: a professional actor. Mivel a „professional” mássalhangzóval kezdődik, „a” (nem „an”)." },
+    { "id": "5", "kind": "text", "answer": ["to"], "category": "gerund-infinitive", "explanation": "„ask somebody to do something” = megkér valakit, hogy tegyen meg valamit: the director asked me to read a few lines." },
+    { "id": "6", "kind": "text", "answer": ["that"], "category": "linking", "explanation": "„so + melléknév + that + tagmondat” = annyira …, hogy …: I was so nervous that my hands were shaking." },
+    { "id": "7", "kind": "text", "answer": ["have", "'ve"], "category": "auxiliary", "explanation": "A „Since then” a múltban kezdődő és a jelenig tartó időszakot jelöl, ezért present perfect kell; hiányzik a „have” segédige: I have taken part in three plays." },
+    { "id": "8", "kind": "text", "answer": ["was"], "category": "passive", "explanation": "A darabot megírta valaki (by one of the members) → szenvedő szerkezet múlt időben: was + 3. alak (was written)." },
+    { "id": "9", "kind": "text", "answer": ["an"], "category": "article", "explanation": "Első említés, egyes számú megszámlálható főnév → határozatlan névelő; magánhangzóval kezdődő szó (article) előtt „an” áll: an article." },
+    { "id": "10", "kind": "text", "answer": ["of"], "category": "preposition", "explanation": "„be afraid of something / doing something” = fél valamitől. Az „of” után az ige -ing alakban áll: afraid of speaking in public." },
+    { "id": "11", "kind": "text", "answer": ["to"], "category": "gerund-infinitive", "explanation": "„find it easy / easier to do something” = könnyűnek találja megtenni valamit: I find it much easier to talk to new people." },
+    { "id": "12", "kind": "text", "answer": ["for"], "category": "phrasal-verb", "explanation": "„look for something” = keres valamit: If you are looking for a hobby … A „look at” jelentése ’néz’, itt nem az kell." }
+  ],
+  "glossary": [],
+  "suggestedMinutes": 10
+}

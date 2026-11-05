@@ -1,0 +1,243 @@
+{
+  "schemaVersion": 1,
+  "id": "lu-kozep-escape-room-mc-cloze",
+  "revision": 1,
+  "level": "kozep",
+  "source": "generated",
+  "topic": "szabadido",
+  "title": "Sixty minutes to escape",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "language-use",
+  "type": "multiple-choice-cloze",
+  "instructions": "Read the text and decide which answer (A, B, C or D) best fits each gap. There is an example (0) at the beginning.",
+  "instructionsHu": "Válaszd ki, melyik megoldás (A, B, C vagy D) illik az egyes hiányokba. A 0. a példa.",
+  "passage": {
+    "title": "Sixty minutes to escape",
+    "blocks": [
+      { "text": "Last Saturday my friends and I tried an escape room [[0]] the first time. If you are not familiar [[1]] escape rooms, here is how they work. A group of two to six players is locked in a room and has to find the key to the door [[2]] sixty minutes. To do this, they need to solve puzzles, find hidden objects and [[3]] secret codes." },
+      { "text": "Our room was called 'The Professor's Laboratory'. The story was that a famous professor [[4]] disappeared and we had to find his secret notebook. At first we were all looking in different places, and nobody was listening [[5]] anybody else. Then Máté, [[6]] is usually very quiet, suggested working in pairs. It was the [[7]] idea of the day!" },
+      { "text": "We found the notebook with only two minutes left, and we were [[8]] happy that we started screaming. [[9]] the high price – 6,000 forints each – we all want to go again. Next month we [[10]] a room called 'Prison Break'. If we [[11]] out in time again, we'll be the escape champions of our class!" }
+    ]
+  },
+  "example": {
+    "id": "0",
+    "kind": "choice",
+    "options": [
+      { "key": "A", "text": "for" },
+      { "key": "B", "text": "at" },
+      { "key": "C", "text": "in" },
+      { "key": "D", "text": "on" }
+    ],
+    "answer": "A",
+    "category": "preposition",
+    "explanation": "Állandó kifejezés: „for the first time” = először, első alkalommal.",
+    "wrongOptions": {
+      "B": "Az „at the first time” hibás.",
+      "C": "Az „in the first time” hibás.",
+      "D": "Az „on the first time” hibás."
+    }
+  },
+  "items": [
+    {
+      "id": "1",
+      "kind": "choice",
+      "options": [
+        { "key": "A", "text": "to" },
+        { "key": "B", "text": "with" },
+        { "key": "C", "text": "about" },
+        { "key": "D", "text": "of" }
+      ],
+      "answer": "B",
+      "category": "preposition",
+      "explanation": "„be familiar with something” = ismer valamit, tisztában van valamivel. A „familiar” után ebben a jelentésben „with” áll.",
+      "wrongOptions": {
+        "A": "A „familiar to somebody” jelentése ’ismerős valakinek’ (pl. His face is familiar to me) – itt nem ez a szerkezet kell.",
+        "C": "A „familiar about” hibás.",
+        "D": "A „familiar of” hibás."
+      }
+    },
+    {
+      "id": "2",
+      "kind": "choice",
+      "options": [
+        { "key": "A", "text": "during" },
+        { "key": "B", "text": "within" },
+        { "key": "C", "text": "since" },
+        { "key": "D", "text": "until" }
+      ],
+      "answer": "B",
+      "category": "preposition",
+      "explanation": "„within sixty minutes” = hatvan percen belül. A „within” azt fejezi ki, hogy egy időtartam lejárta előtt kell megtenni valamit.",
+      "wrongOptions": {
+        "A": "A „during” után esemény vagy időszak neve áll (during the game), határidőt nem fejez ki; a „during sixty minutes” tipikus magyaros hiba.",
+        "C": "A „since” időpont előtt áll (since 6 o'clock), és present perfecttel használjuk.",
+        "D": "Az „until” időpont előtt áll (until 6 o'clock), időtartammal nem."
+      }
+    },
+    {
+      "id": "3",
+      "kind": "choice",
+      "options": [
+        { "key": "A", "text": "break" },
+        { "key": "B", "text": "make" },
+        { "key": "C", "text": "do" },
+        { "key": "D", "text": "take" }
+      ],
+      "answer": "A",
+      "category": "collocation",
+      "explanation": "Kollokáció: „break a code” = feltör, megfejt egy kódot.",
+      "wrongOptions": {
+        "B": "A „make a code” jelentése ’kódot készít’, nem megfejt.",
+        "C": "A „do a code” nem helyes szókapcsolat.",
+        "D": "A „take a code” nem helyes szókapcsolat."
+      }
+    },
+    {
+      "id": "4",
+      "kind": "choice",
+      "options": [
+        { "key": "A", "text": "has" },
+        { "key": "B", "text": "had" },
+        { "key": "C", "text": "was" },
+        { "key": "D", "text": "is" }
+      ],
+      "answer": "B",
+      "category": "tense",
+      "explanation": "A múltbeli történet („The story was that …”) idején a professzor eltűnése már korábban megtörtént, ezért past perfect: had disappeared.",
+      "wrongOptions": {
+        "A": "A „has disappeared” jelen idejű nézőpont; a múltbeli elbeszélésben past perfect kell.",
+        "C": "A „disappear” nem állhat szenvedő szerkezetben, a „was disappeared” hibás.",
+        "D": "Az „is disappeared” hibás szerkezet, és az idő sem egyezik."
+      }
+    },
+    {
+      "id": "5",
+      "kind": "choice",
+      "options": [
+        { "key": "A", "text": "to" },
+        { "key": "B", "text": "at" },
+        { "key": "C", "text": "for" },
+        { "key": "D", "text": "on" }
+      ],
+      "answer": "A",
+      "category": "preposition",
+      "explanation": "„listen to somebody” = hallgat valakit / valakire. A „listen” után, ha van tárgya, mindig „to” áll.",
+      "wrongOptions": {
+        "B": "Az „at” a „look at”-hoz tartozik, a „listen at” hibás.",
+        "C": "A „listen for” jelentése ’fülel, vár egy hangra’ – itt nem ez a jelentés.",
+        "D": "A „listen on” hibás."
+      }
+    },
+    {
+      "id": "6",
+      "kind": "choice",
+      "options": [
+        { "key": "A", "text": "which" },
+        { "key": "B", "text": "who" },
+        { "key": "C", "text": "whose" },
+        { "key": "D", "text": "what" }
+      ],
+      "answer": "B",
+      "category": "relative-clause",
+      "explanation": "Személyre (Máté) utaló, vesszők közé tett vonatkozó mellékmondatban „who” áll, és ő a mellékmondat alanya (who is usually very quiet).",
+      "wrongOptions": {
+        "A": "A „which” dologra vagy állatra utal, személyre nem.",
+        "C": "A „whose” birtokos (akinek a …), utána főnév állna.",
+        "D": "A „what” nem lehet vonatkozó névmás egy főnév után."
+      }
+    },
+    {
+      "id": "7",
+      "kind": "choice",
+      "options": [
+        { "key": "A", "text": "better" },
+        { "key": "B", "text": "best" },
+        { "key": "C", "text": "good" },
+        { "key": "D", "text": "well" }
+      ],
+      "answer": "B",
+      "category": "comparison",
+      "explanation": "„the + felsőfok + of …”: the best idea of the day = a nap legjobb ötlete. A „good” rendhagyó: good – better – best.",
+      "wrongOptions": {
+        "A": "A „better” középfok; a „the … of the day” felsőfokot kíván.",
+        "C": "Alapfokkal a „the good idea of the day” nem helyes.",
+        "D": "A „well” határozószó, főnév (idea) előtt nem állhat."
+      }
+    },
+    {
+      "id": "8",
+      "kind": "choice",
+      "options": [
+        { "key": "A", "text": "so" },
+        { "key": "B", "text": "such" },
+        { "key": "C", "text": "too" },
+        { "key": "D", "text": "very" }
+      ],
+      "answer": "A",
+      "category": "linking",
+      "explanation": "„so + melléknév + that + tagmondat” = annyira …, hogy …: so happy that we started screaming.",
+      "wrongOptions": {
+        "B": "A „such” után főnév kell (such a happy moment that …), melléknév egyedül nem.",
+        "C": "A „too” után nem állhat „that”-mondat (too + melléknév + to + ige lenne a szerkezet).",
+        "D": "A „very” után nem kapcsolhatunk „that”-mellékmondatot."
+      }
+    },
+    {
+      "id": "9",
+      "kind": "choice",
+      "options": [
+        { "key": "A", "text": "Although" },
+        { "key": "B", "text": "Despite" },
+        { "key": "C", "text": "However" },
+        { "key": "D", "text": "Because" }
+      ],
+      "answer": "B",
+      "category": "linking",
+      "explanation": "„Despite + főnév / főnévi szerkezet” = annak ellenére, hogy … A „the high price” főnévi szerkezet, nincs benne ige, ezért Despite.",
+      "wrongOptions": {
+        "A": "Az „Although” után teljes tagmondat kellene (Although the price is high, …).",
+        "C": "A „However” (azonban) nem köt főnévi szerkezetet a mondathoz, és jelentésben sem illik.",
+        "D": "A „Because” után tagmondat kellene (because of + főnév lenne helyes), és jelentésben sem illik: nem az ár miatt akarnak újra menni."
+      }
+    },
+    {
+      "id": "10",
+      "kind": "choice",
+      "options": [
+        { "key": "A", "text": "try" },
+        { "key": "B", "text": "are going to try" },
+        { "key": "C", "text": "tried" },
+        { "key": "D", "text": "have tried" }
+      ],
+      "answer": "B",
+      "category": "tense",
+      "explanation": "Előre eltervezett jövőbeli szándék: be going to + ige. Next month we are going to try a room called …",
+      "wrongOptions": {
+        "A": "A present simple (we try) nem fejez ki ilyen jövőbeli tervet.",
+        "C": "A „tried” múlt idő, de a „next month” jövőre utal.",
+        "D": "A present perfect nem állhat a „next month” időhatározóval."
+      }
+    },
+    {
+      "id": "11",
+      "kind": "choice",
+      "options": [
+        { "key": "A", "text": "get" },
+        { "key": "B", "text": "will get" },
+        { "key": "C", "text": "got" },
+        { "key": "D", "text": "would get" }
+      ],
+      "answer": "A",
+      "category": "conditional",
+      "explanation": "Első (valós) feltételes mondat: If + present simple, … will + ige. If we get out in time again, we'll be the champions.",
+      "wrongOptions": {
+        "B": "Az if-mellékmondatba nem kerül „will”.",
+        "C": "A „got” második feltételes mondatba illene, de a főmondatban „will” ('ll) áll.",
+        "D": "Az if-mellékmondatba nem kerül „would”."
+      }
+    }
+  ],
+  "glossary": [],
+  "suggestedMinutes": 10
+}
