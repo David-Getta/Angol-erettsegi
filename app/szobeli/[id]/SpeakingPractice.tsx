@@ -7,7 +7,7 @@ import { t } from "@/lib/i18n/hu";
 import { createSubmissionAction } from "@/app/actions-grading";
 import { CopyButton } from "@/components/CopyButton";
 import { Card, btn, Badge } from "@/components/ui";
-import { hasAsr, speak, startDictation, stopSpeaking } from "@/components/speech";
+import { speak, startDictation, stopSpeaking, useSpeechSupport } from "@/components/speech";
 import { fmtClock } from "@/components/useTimer";
 
 type Turn = { q: string | null; a: string };
@@ -162,7 +162,7 @@ function SelfPractice({ task, ttsRate }: { task: SpeakingTask; ttsRate: number }
   const dictation = useRef<{ stop: () => void } | null>(null);
   const totalStart = useRef<number | null>(null);
   const router = useRouter();
-  const asr = typeof window !== "undefined" && hasAsr();
+  const { asr } = useSpeechSupport();
 
   useEffect(() => {
     if (!recording) return;

@@ -5,7 +5,7 @@ import type { ObjectiveTask } from "@/lib/content/schema";
 import { findLoose, segmentText } from "@/lib/content/text";
 import { t } from "@/lib/i18n/hu";
 import { PracticeRunner, type RunnerProps } from "../exercise/PracticeRunner";
-import { hasTts, pickVoice, speak, stopSpeaking, voicesReady, type Gender } from "../speech";
+import { pickVoice, speak, stopSpeaking, useSpeechSupport, voicesReady, type Gender } from "../speech";
 import { fmtClock } from "../useTimer";
 import { btn } from "../ui";
 
@@ -75,7 +75,7 @@ export function ListeningPlayer({
   const audioSrc = official
     ? `/api/official-audio?folder=${encodeURIComponent(task.official!.folder!)}&file=${encodeURIComponent((L.audioFile ?? task.official!.audioFile)!)}`
     : null;
-  const tts = hasTts();
+  const { tts } = useSpeechSupport();
 
   useEffect(() => () => {
     cancelled.current = true;

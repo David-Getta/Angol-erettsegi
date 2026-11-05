@@ -1,5 +1,7 @@
 "use client";
 
+import { useEffect, useState } from "react";
+
 /**
  * Browser speech helpers: text-to-speech for listening tasks and questions,
  * speech recognition for oral practice. Free, local Web Speech API – no
@@ -186,4 +188,13 @@ export function startDictation(opts: { lang?: string; onText: (finalText: string
       }
     },
   };
+}
+
+/** Browser capability flags, read after mount so server and client render the same HTML. */
+export function useSpeechSupport(): { tts: boolean; asr: boolean; ready: boolean } {
+  const [s, setS] = useState({ tts: true, asr: true, ready: false });
+  useEffect(() => {
+    setS({ tts: hasTts(), asr: hasAsr(), ready: true });
+  }, []);
+  return s;
 }

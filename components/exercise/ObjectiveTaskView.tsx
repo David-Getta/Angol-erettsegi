@@ -375,7 +375,7 @@ function ItemRow({ item, view, inline, usedMatch }: { item: Item; view: ViewProp
         ))}
       </div>
     );
-  } else if (!inline) {
+  } else if (!inline && !isExample) {
     control = (
       <div className="mt-1.5 flex items-center gap-2">
         <input
@@ -394,8 +394,22 @@ function ItemRow({ item, view, inline, usedMatch }: { item: Item; view: ViewProp
             }
           }}
           className={`w-full rounded-md border px-2 py-1.5 ${statusCls(r)}`}
-          placeholder={item.maxWords ? `max. ${item.maxWords} ${t.common.words}` : ""}
+          placeholder={task.type === "error-correction" ? t.task.errorLineHint : item.maxWords ? `max. ${item.maxWords} ${t.common.words}` : ""}
         />
+        {task.type === "error-correction" && !locked && (
+          <button
+            type="button"
+            title={t.task.lineCorrect}
+            data-testid={`tick-${item.id}`}
+            onClick={(e) => {
+              e.stopPropagation();
+              view.onAnswer(item.id, "✓");
+            }}
+            className="rounded-md border border-border bg-surface px-3 py-1.5 font-semibold hover:bg-surface-2"
+          >
+            ✓
+          </button>
+        )}
       </div>
     );
   }

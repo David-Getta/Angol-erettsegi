@@ -133,6 +133,8 @@ export const t = {
     remaining: "Hátralévő idő",
     elapsed: "Eltelt idő",
     keyboard: "1–9: opció · Enter: ellenőrzés · N: következő",
+    errorLineHint: "a felesleges szó – vagy ✓, ha a sor helyes",
+    lineCorrect: "A sor helyes",
   },
 
   reading: {
