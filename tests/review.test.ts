@@ -4,7 +4,7 @@ import { getDb } from "@/lib/db/client";
 import { itemAttempts } from "@/lib/db/schema";
 import { fixedMistakes, pickMistakes } from "@/lib/targeted";
 import { getLesson, lessonOverview } from "@/lib/lessons";
-import { examConfig } from "@/lib/exam/config";
+import { examConfig, withSubject } from "@/lib/exam/config";
 import { addFixCard, reviewQueue } from "@/lib/vocab/cards";
 import { errorsPerWeek } from "@/lib/stats";
 import { errors } from "@/lib/db/schema";
@@ -40,6 +40,18 @@ describe("mistake review", () => {
     expect(fixedMistakes()).toBe(1);
     expect(fixedMistakes(30)).toBe(1);
     expect(fixedMistakes(1)).toBe(0);
+  });
+
+  it("re-asks wrong items of the subject's targeted part in other subjects too (maths short tasks)", () => {
+    const MAT = "mat-rd-kozep-szamelmelet-oszthatosag";
+    getDb()
+      .insert(itemAttempts)
+      .values({ subject: "matematika", taskId: MAT, itemId: "1", category: "kepletek", section: "reading", correct: false, answer: "8", mode: "practice", createdAt: new Date(Date.now() - 48 * 3600e3) })
+      .run();
+    const due = withSubject("matematika", () => pickMistakes("kozep", 10, 20).due.map((d) => d.key));
+    expect(due).toContain(`${MAT}:1`);
+    // the English list is not affected
+    expect(pickMistakes("emelt", 10, 20).due.map((d) => d.key)).not.toContain(`${MAT}:1`);
   });
 
   it("lists every error category in the Szabálytár overview", () => {

@@ -75,9 +75,16 @@ export function bankItemsFor(categories: string[], level: Level): TargetedItem[]
  * Picks items for a targeted round: items answered wrong before come first,
  * then never-seen items, then the rest.
  */
+/** Parts of the current subject whose items can be practised on their own (`features.targeted`). */
+export function targetedParts(): Set<string> {
+  const st = examConfig.structure();
+  return new Set([...st.levels.kozep.parts, ...st.levels.emelt.parts].filter((p) => p.features.targeted).map((p) => p.id));
+}
+
 export function pickTargeted(categories: string[], level: Level, count: number): TargetedItem[] {
   const db = getDb();
-  const pool = bankItemsFor(categories, level).filter((i) => i.section === "language-use" || i.item.kind !== "match");
+  const targeted = targetedParts();
+  const pool = bankItemsFor(categories, level).filter((i) => targeted.has(i.section) || i.item.kind !== "match");
   const history = db.select().from(itemAttempts).where(eq(itemAttempts.subject, currentSubject())).all();
   const lastCorrect = new Map<string, boolean>();
   for (const h of history.sort((a, b) => a.createdAt.getTime() - b.createdAt.getTime())) lastCorrect.set(`${h.taskId}:${h.itemId}`, h.correct);
@@ -88,7 +95,7 @@ export function pickTargeted(categories: string[], level: Level, count: number):
 }
 
 /**
- * Language-use items whose LAST attempt was wrong and is at least `minAgeHours`
+ * Items of the targeted parts (language use; maths short tasks …) whose LAST attempt was wrong and is at least `minAgeHours`
  * old – re-asked until the student gets them right (then they leave the list).
  */
 export function pickMistakes(level: Level, count: number, minAgeHours: number, now = Date.now()): { due: TargetedItem[]; later: number } {
@@ -101,7 +108,8 @@ export function pickMistakes(level: Level, count: number, minAgeHours: number, n
   const wrongKeys = new Set([...last].filter(([, v]) => !v.correct).map(([k]) => k));
   if (wrongKeys.size === 0) return { due: [], later: 0 };
   const categories = examConfig.errorCategories().categories.map((c) => c.id);
-  const pool = bankItemsFor(categories, level).filter((i) => i.section === "language-use" && wrongKeys.has(i.key));
+  const targeted = targetedParts();
+  const pool = bankItemsFor(categories, level).filter((i) => targeted.has(i.section) && wrongKeys.has(i.key));
   const cutoff = now - minAgeHours * 3600e3;
   const due = pool.filter((i) => last.get(i.key)!.at <= cutoff).sort((a, b) => last.get(a.key)!.at - last.get(b.key)!.at);
   return { due: due.slice(0, count), later: pool.length - due.length + Math.max(0, due.length - count) };
@@ -157,6 +165,6 @@ export function checkTargetedItem(key: string, given: string) {
   return { result: r, explanation: item.explanation, evidence: item.evidence ?? null, wrongOptions: "wrongOptions" in item ? item.wrongOptions ?? null : null };
 }
 
-export function logTargetedTime(seconds: number, section = "language-use") {
+export function logTargetedTime(seconds: number, section = [...targetedParts()][0] ?? "language-use") {
   logActivity(section, seconds);
 }
