@@ -1,0 +1,53 @@
+{
+  "meta": { "sources": [], "notes": ["IDEIGLENES – ellenőrzés alatt"] },
+  "levels": {
+    "kozep": {
+      "name": "Középszint",
+      "cefr": "A2–B1",
+      "writtenTotalMin": 180,
+      "totalPoints": 150,
+      "parts": [
+        { "id": "reading", "name": "Olvasott szöveg értése", "nameEn": "Reading comprehension", "written": true, "order": 1, "timeMin": 60, "maxPoints": 33, "mockTaskCount": 4 },
+        { "id": "language-use", "name": "Nyelvhelyesség", "nameEn": "Use of English", "written": true, "order": 2, "timeMin": 30, "maxPoints": 18, "mockTaskCount": 3 },
+        { "id": "listening", "name": "Hallott szöveg értése", "nameEn": "Listening comprehension", "written": true, "order": 3, "timeMin": 30, "maxPoints": 33, "mockTaskCount": 3 },
+        { "id": "writing", "name": "Íráskészség", "nameEn": "Writing", "written": true, "order": 4, "timeMin": 60, "maxPoints": 33, "mockTaskCount": 2 },
+        { "id": "speaking", "name": "Szóbeli", "nameEn": "Speaking", "written": false, "order": 5, "maxPoints": 33 }
+      ],
+      "breaks": [{ "afterPart": "language-use", "minutes": 15 }],
+      "listening": { "plays": 2, "prepSeconds": 60, "pauseSeconds": 30 },
+      "oral": {
+        "durationMin": "15",
+        "parts": [
+          { "number": 1, "name": "Bemelegítő beszélgetés", "description": "Kérdések a vizsgázóról és a témakörökről.", "minutes": "3–4" },
+          { "number": 2, "name": "Szituációs feladat", "description": "Szerepjáték egy hétköznapi helyzetben.", "minutes": "4–5" },
+          { "number": 3, "name": "Önálló témakifejtés", "description": "Képek alapján.", "minutes": "5–6" }
+        ]
+      },
+      "textLength": { "reading": { "min": 250, "max": 500 }, "language-use": { "min": 120, "max": 280 }, "listening": { "min": 250, "max": 550 } }
+    },
+    "emelt": {
+      "name": "Emelt szint",
+      "cefr": "B2",
+      "writtenTotalMin": 240,
+      "totalPoints": 150,
+      "parts": [
+        { "id": "reading", "name": "Olvasott szöveg értése", "nameEn": "Reading comprehension", "written": true, "order": 1, "timeMin": 70, "maxPoints": 30, "mockTaskCount": 4 },
+        { "id": "language-use", "name": "Nyelvhelyesség", "nameEn": "Use of English", "written": true, "order": 2, "timeMin": 50, "maxPoints": 30, "mockTaskCount": 4 },
+        { "id": "listening", "name": "Hallott szöveg értése", "nameEn": "Listening comprehension", "written": true, "order": 3, "timeMin": 30, "maxPoints": 30, "mockTaskCount": 3 },
+        { "id": "writing", "name": "Íráskészség", "nameEn": "Writing", "written": true, "order": 4, "timeMin": 90, "maxPoints": 30, "mockTaskCount": 2 },
+        { "id": "speaking", "name": "Szóbeli", "nameEn": "Speaking", "written": false, "order": 5, "maxPoints": 30 }
+      ],
+      "breaks": [{ "afterPart": "language-use", "minutes": 15 }],
+      "listening": { "plays": 2, "prepSeconds": 60, "pauseSeconds": 30 },
+      "oral": {
+        "durationMin": "20",
+        "parts": [
+          { "number": 1, "name": "Bemelegítő beszélgetés", "description": "Kérdések a vizsgázóról és a témakörökről.", "minutes": "5" },
+          { "number": 2, "name": "Vita", "description": "Érvelés a kiosztott álláspont mellett.", "minutes": "6–7" },
+          { "number": 3, "name": "Önálló témakifejtés", "description": "Állítás vagy kép alapján.", "minutes": "6–7" }
+        ]
+      },
+      "textLength": { "reading": { "min": 450, "max": 850 }, "language-use": { "min": 180, "max": 380 }, "listening": { "min": 400, "max": 800 } }
+    }
+  }
+}

@@ -1,0 +1,121 @@
+{
+  "meta": {
+    "sources": [],
+    "notes": [
+      "IDEIGLENES – ellenőrzés alatt"
+    ]
+  },
+  "id": "writing-emelt",
+  "level": "emelt",
+  "examMaxPoints": 30,
+  "tasks": [
+    {
+      "taskNumber": 1,
+      "name": "Irányított fogalmazás",
+      "textTypes": [
+        "informal-email",
+        "formal-email",
+        "blog",
+        "forum"
+      ],
+      "wordLimit": {
+        "min": 120,
+        "max": 150
+      },
+      "guidingPoints": "3",
+      "suggestedMinutes": 35,
+      "maxRaw": 15,
+      "criteria": [
+        {
+          "id": "task",
+          "name": "Feladat teljesítése",
+          "max": 5,
+          "description": "…",
+          "bands": []
+        },
+        {
+          "id": "organisation",
+          "name": "Szövegalkotás",
+          "max": 3,
+          "description": "…",
+          "bands": []
+        },
+        {
+          "id": "vocab",
+          "name": "Szókincs, kifejezésmód",
+          "max": 3,
+          "description": "…",
+          "bands": []
+        },
+        {
+          "id": "grammar",
+          "name": "Nyelvtan, helyesírás",
+          "max": 4,
+          "description": "…",
+          "bands": []
+        }
+      ],
+      "rules": []
+    },
+    {
+      "taskNumber": 2,
+      "name": "Érvelő szöveg",
+      "textTypes": [
+        "article",
+        "opinion",
+        "forum",
+        "blog",
+        "formal-email"
+      ],
+      "wordLimit": {
+        "min": 200,
+        "max": 250
+      },
+      "guidingPoints": "4",
+      "suggestedMinutes": 55,
+      "maxRaw": 25,
+      "criteria": [
+        {
+          "id": "task",
+          "name": "Feladat teljesítése",
+          "max": 5,
+          "description": "…",
+          "bands": []
+        },
+        {
+          "id": "organisation",
+          "name": "Szövegalkotás",
+          "max": 5,
+          "description": "…",
+          "bands": []
+        },
+        {
+          "id": "vocab",
+          "name": "Szókincs, kifejezésmód",
+          "max": 5,
+          "description": "…",
+          "bands": []
+        },
+        {
+          "id": "grammar",
+          "name": "Nyelvtan, helyesírás",
+          "max": 5,
+          "description": "…",
+          "bands": []
+        },
+        {
+          "id": "register",
+          "name": "Hangnem",
+          "max": 5,
+          "description": "…",
+          "bands": []
+        }
+      ],
+      "rules": []
+    }
+  ],
+  "conversion": {
+    "method": "proportional"
+  },
+  "generalRules": []
+}

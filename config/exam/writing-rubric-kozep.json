@@ -1,0 +1,99 @@
+{
+  "meta": {
+    "sources": [],
+    "notes": [
+      "IDEIGLENES – ellenőrzés alatt"
+    ]
+  },
+  "id": "writing-kozep",
+  "level": "kozep",
+  "examMaxPoints": 33,
+  "tasks": [
+    {
+      "taskNumber": 1,
+      "name": "Rövidebb irányított szöveg",
+      "textTypes": [
+        "informal-email",
+        "formal-email",
+        "blog",
+        "forum"
+      ],
+      "wordLimit": {
+        "min": 50,
+        "max": 80
+      },
+      "guidingPoints": "3",
+      "suggestedMinutes": 20,
+      "maxRaw": 10,
+      "criteria": [
+        {
+          "id": "task",
+          "name": "Feladat teljesítése",
+          "max": 4,
+          "description": "Kitér-e minden irányítási pontra, megfelel-e a szövegfajtának.",
+          "bands": []
+        },
+        {
+          "id": "vocab-grammar",
+          "name": "Szókincs és nyelvhelyesség",
+          "max": 6,
+          "description": "Szókincs és nyelvtani helyesség.",
+          "bands": []
+        }
+      ],
+      "rules": []
+    },
+    {
+      "taskNumber": 2,
+      "name": "Hosszabb irányított szöveg",
+      "textTypes": [
+        "informal-email",
+        "formal-email",
+        "blog",
+        "forum"
+      ],
+      "wordLimit": {
+        "min": 100,
+        "max": 120
+      },
+      "guidingPoints": "3–4",
+      "suggestedMinutes": 40,
+      "maxRaw": 20,
+      "criteria": [
+        {
+          "id": "task",
+          "name": "Feladat teljesítése",
+          "max": 5,
+          "description": "…",
+          "bands": []
+        },
+        {
+          "id": "organisation",
+          "name": "Szövegalkotás",
+          "max": 5,
+          "description": "…",
+          "bands": []
+        },
+        {
+          "id": "vocab",
+          "name": "Szókincs, kifejezésmód",
+          "max": 5,
+          "description": "…",
+          "bands": []
+        },
+        {
+          "id": "grammar",
+          "name": "Nyelvtan, helyesírás",
+          "max": 5,
+          "description": "…",
+          "bands": []
+        }
+      ],
+      "rules": []
+    }
+  ],
+  "conversion": {
+    "method": "proportional"
+  },
+  "generalRules": []
+}
