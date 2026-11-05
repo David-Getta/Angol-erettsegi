@@ -179,15 +179,20 @@ export function checkItem(
   const base = { itemId: item.id, given, maxPoints, category: item.category };
 
   if (item.kind === "text") {
-    const norm = { decimalComma: opts.decimalComma, caseSensitive: item.caseSensitive };
-    const g = normalizeForCheck(given, norm);
-    const accepted = item.answer.map((a) => normalizeForCheck(a, norm));
+    // caseSensitive: answers that contain a capital (Aa, CO, die Freiheit) must match exactly; all-lowercase answers (cink) in any case
+    const exactCase = (a: string) => !!item.caseSensitive && a !== a.toLowerCase();
+    const g = normalizeForCheck(given, { decimalComma: opts.decimalComma });
+    const gCase = normalizeForCheck(given, { decimalComma: opts.decimalComma, caseSensitive: true });
+    const accepted = item.answer.map((a) => normalizeForCheck(a, { decimalComma: opts.decimalComma, caseSensitive: exactCase(a) }));
     const expected = item.answer[0]!;
-    let correct = g.length > 0 && accepted.includes(g);
+    let correct = g.length > 0 && item.answer.some((a, i) => (exactCase(a) ? gCase : g) === accepted[i]);
     let near = false;
     if (!correct && g.length > 0 && g !== CORRECT_MARKER) {
-      near = accepted.some((a) => a !== CORRECT_MARKER && levenshtein(g, a) <= typoThreshold(a));
-      if (near && opts.acceptNearMiss) correct = true;
+      const lower = accepted.map((a) => a.toLowerCase());
+      near = lower.some((a) => a !== CORRECT_MARKER && levenshtein(g, a) <= typoThreshold(a));
+      // a wrong capital in a case-sensitive answer is shown as a near miss but never accepted
+      const caseOnly = lower.some((a, i) => exactCase(item.answer[i]!) && a === g);
+      if (near && opts.acceptNearMiss && !caseOnly) correct = true;
     }
     return {
       ...base,

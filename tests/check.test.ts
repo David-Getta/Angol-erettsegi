@@ -136,6 +136,14 @@ describe("case-sensitive items (genotypes, chemical symbols, German nouns)", () 
     expect(checkItem({ options: undefined }, geno, "AA").correct).toBe(false);
     const co = { ...base, answer: ["Co"], caseSensitive: true };
     expect(checkItem({ options: undefined }, co, "CO").correct).toBe(false);
+    // in a case-sensitive item an all-lowercase answer is still accepted in any case
+    const zn = { ...base, answer: ["Zn", "cink"], caseSensitive: true };
+    expect(checkItem({ options: undefined }, zn, "Cink").correct).toBe(true);
+    expect(checkItem({ options: undefined }, zn, "zn").correct).toBe(false);
+    // even where typos are tolerated, a wrong capital is only flagged
+    const r = checkItem({ options: undefined }, zn, "zn", { acceptNearMiss: true });
+    expect(r.correct).toBe(false);
+    expect(r.near).toBe(true);
     const city = { ...base, answer: ["Budapest"] };
     expect(checkItem({ options: undefined }, city, "budapest").correct).toBe(true);
   });

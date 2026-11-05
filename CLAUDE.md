@@ -100,7 +100,7 @@ Közös mezők: `schemaVersion: 1`, `id` (= fájlnév; a tantárgy `idPrefix`-é
   `passage.blocks[]` (a hiányok helye a szövegben `[[n]]`, hiányzó címnél/bekezdéskezdésnél `gap: "n"`), hallásnál `listening`
   (beszélők hanggal, leirat soronként), közös opciólista `options` (címek, mondatok, beszélők), **kötelező példa** `example` (id `"0"`),
   `items[]` (id 1..n). Item fajták: `choice` (saját A–D opciók), `match` (közös opciólistából), `tf` (`T`/`F`/`NG`), `text`
-  (elfogadott válaszok listája, `cue` a szóképzéshez/igéhez, `maxWords`; `caseSensitive: true`, ha a kis-/nagybetű számít – genotípus Aa, vegyjel Co/CO, német főnév; nem nyelvi tárgyaknál a tizedesvessző = pont, a számok és jelek körüli szóköz nem számít). **Minden itemnél kötelező:** `category`
+  (elfogadott válaszok listája, `cue` a szóképzéshez/igéhez, `maxWords`; `caseSensitive: true`, ha a kis-/nagybetű számít – genotípus Aa, vegyjel Co/CO, német főnév; ilyenkor a nagybetűt tartalmazó válaszok pontosan, a csupa kisbetűsek bármilyen írásmóddal egyeznek; nem nyelvi tárgyaknál a tizedesvessző = pont, a számok és jelek körüli szóköz nem számít). **Minden itemnél kötelező:** `category`
   (hibakategória), `explanation` (magyarul: mi a helyes megoldás és MIÉRT); olvasásnál és hallásnál `evidence`
   (szó szerinti idézet a szövegből/leiratból) és feleletválasztásnál `wrongOptions` (miért rossz a többi opció).
   Olvasásnál kötelező a `glossary` (nehezebb szavak magyar jelentéssel).
