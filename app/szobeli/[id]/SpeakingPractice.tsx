@@ -7,7 +7,7 @@ import { t } from "@/lib/i18n/hu";
 import { createSubmissionAction } from "@/app/actions-grading";
 import { CopyButton } from "@/components/CopyButton";
 import { Card, btn, Badge } from "@/components/ui";
-import { speak, startDictation, stopSpeaking, useSpeechSupport } from "@/components/speech";
+import { hasRecorder, speak, startAudioRecording, startDictation, stopSpeaking, useSpeechSupport } from "@/components/speech";
 import { fmtClock } from "@/components/useTimer";
 
 type Turn = { q: string | null; a: string };
@@ -162,7 +162,30 @@ function SelfPractice({ task, ttsRate }: { task: SpeakingTask; ttsRate: number }
   const dictation = useRef<{ stop: () => void } | null>(null);
   const totalStart = useRef<number | null>(null);
   const router = useRouter();
-  const { asr } = useSpeechSupport();
+  const { asr, ready } = useSpeechSupport();
+  const [keepVoice, setKeepVoice] = useState(true);
+  const [clips, setClips] = useState<Record<number, string>>({});
+  const audio = useRef<{ stop: () => Promise<string | null> } | null>(null);
+  const canRecord = ready && hasRecorder();
+
+  const allUrls = useRef<string[]>([]);
+  const stopAudio = async (turn: number) => {
+    const a = audio.current;
+    audio.current = null;
+    const url = a ? await a.stop() : null;
+    if (url) {
+      allUrls.current.push(url);
+      setClips((c) => ({ ...c, [turn]: url }));
+    }
+  };
+  // blob URLs are freed only when the page is left
+  useEffect(
+    () => () => {
+      void audio.current?.stop();
+      allUrls.current.forEach((u) => URL.revokeObjectURL(u));
+    },
+    [],
+  );
 
   useEffect(() => {
     if (!recording) return;
@@ -180,25 +203,30 @@ function SelfPractice({ task, ttsRate }: { task: SpeakingTask; ttsRate: number }
       dictation.current = null;
       setRecording(false);
       setInterim("");
+      void stopAudio(step);
       return;
     }
+    if (keepVoice && canRecord) void startAudioRecording().then((a) => (audio.current = a));
     stopSpeaking();
     totalStart.current ??= Date.now();
     setAsrError(null);
     const base = current;
-    dictation.current = startDictation({
-      onText: (fin, int) => {
-        setCurrent(`${base} ${fin}`.trim());
-        setInterim(int);
-      },
-      onError: (e) => setAsrError(e),
-    });
-    setUsedAsr(true);
+    if (asr) {
+      dictation.current = startDictation({
+        onText: (fin, int) => {
+          setCurrent(`${base} ${fin}`.trim());
+          setInterim(int);
+        },
+        onError: (e) => setAsrError(e),
+      });
+      setUsedAsr(true);
+    }
     setRecording(true);
   };
 
   const nextTurn = () => {
     dictation.current?.stop();
+    void stopAudio(step);
     setRecording(false);
     setTurns((ts) => [...ts, { q: question, a: current.trim() }]);
     setCurrent("");
@@ -243,7 +271,7 @@ function SelfPractice({ task, ttsRate }: { task: SpeakingTask; ttsRate: number }
             <button type="button" className={btn.secondary} onClick={() => speak(question ?? "", { rate: ttsRate })}>
               🔊 {t.speaking.readQuestion}
             </button>
-            {asr && (
+            {(asr || (canRecord && keepVoice)) && (
               <button type="button" className={recording ? btn.danger : btn.primary} onClick={toggle} data-testid="record">
                 {recording ? `■ ${t.speaking.stopRecord}` : `● ${t.speaking.record}`}
               </button>
@@ -254,6 +282,18 @@ function SelfPractice({ task, ttsRate }: { task: SpeakingTask; ttsRate: number }
             {recording && <span className="animate-pulse text-sm text-bad">● {t.speaking.recording}</span>}
           </div>
           {asrError && <p className="text-sm text-bad">⚠ {asrError}</p>}
+          {canRecord && (
+            <label className="flex items-center gap-2 text-sm" title={t.voice.keepHint}>
+              <input type="checkbox" checked={keepVoice} onChange={(e) => setKeepVoice(e.target.checked)} disabled={recording} />
+              {t.voice.keep}
+            </label>
+          )}
+          {clips[step] && !recording && (
+            <div className="flex items-center gap-2 text-sm">
+              <span className="text-muted">{t.voice.yourVoice}:</span>
+              <audio controls src={clips[step]} className="h-8" data-testid="voice-clip" />
+            </div>
+          )}
           <label className="block text-sm font-medium">
             {t.speaking.transcript}
             <textarea
@@ -272,6 +312,17 @@ function SelfPractice({ task, ttsRate }: { task: SpeakingTask; ttsRate: number }
       ) : (
         <div className="mt-4 space-y-3">
           <pre className="max-h-80 overflow-auto whitespace-pre-wrap rounded-md bg-surface-2 p-3 font-reading text-sm">{transcript}</pre>
+          {Object.keys(clips).length > 0 && (
+            <div className="space-y-1 text-sm">
+              <div className="text-muted">{t.voice.yourVoice}</div>
+              {Object.entries(clips).map(([i, url]) => (
+                <div key={i} className="flex items-center gap-2">
+                  <span className="w-6 text-right text-muted">{Number(i) + 1}.</span>
+                  <audio controls src={url} className="h-8" />
+                </div>
+              ))}
+            </div>
+          )}
           <div className="flex gap-2">
             <button type="button" className={btn.primary} onClick={submit} disabled={pending || !transcript.trim()} data-testid="submit-speaking">
               {t.speaking.submit}
@@ -282,6 +333,7 @@ function SelfPractice({ task, ttsRate }: { task: SpeakingTask; ttsRate: number }
               onClick={() => {
                 setTurns([]);
                 setStep(0);
+                setClips({});
               }}
             >
               {t.common.restart}

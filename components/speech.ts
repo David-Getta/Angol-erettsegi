@@ -198,3 +198,39 @@ export function useSpeechSupport(): { tts: boolean; asr: boolean; ready: boolean
   }, []);
   return s;
 }
+
+/* ---------------- own voice recording (local only) ---------------- */
+
+export function hasRecorder(): boolean {
+  return typeof window !== "undefined" && typeof window.MediaRecorder !== "undefined" && !!navigator.mediaDevices?.getUserMedia;
+}
+
+/**
+ * Records the microphone into an in-memory blob URL so the student can listen
+ * back to their own pronunciation. Nothing is uploaded or stored.
+ */
+export async function startAudioRecording(): Promise<{ stop: () => Promise<string | null> } | null> {
+  if (!hasRecorder()) return null;
+  try {
+    const stream = await navigator.mediaDevices.getUserMedia({ audio: true });
+    const rec = new MediaRecorder(stream);
+    const chunks: Blob[] = [];
+    rec.ondataavailable = (e) => {
+      if (e.data.size > 0) chunks.push(e.data);
+    };
+    rec.start();
+    return {
+      stop: () =>
+        new Promise((resolve) => {
+          rec.onstop = () => {
+            stream.getTracks().forEach((tr) => tr.stop());
+            resolve(chunks.length ? URL.createObjectURL(new Blob(chunks, { type: rec.mimeType || "audio/webm" })) : null);
+          };
+          if (rec.state !== "inactive") rec.stop();
+          else resolve(null);
+        }),
+    };
+  } catch {
+    return null;
+  }
+}

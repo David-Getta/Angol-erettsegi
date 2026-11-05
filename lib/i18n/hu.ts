@@ -194,6 +194,14 @@ export const t = {
     practice: "Célzott gyakorlás",
   },
 
+  voice: {
+    keep: "A hangomat is rögzítse (visszahallgatáshoz)",
+    keepHint: "A felvétel csak a böngésződben marad, sehova nem kerül fel. A kiejtést (3 pont a vizsgán) így magad ellenőrizheted.",
+    yourVoice: "A hangod",
+    listenSample: "🔊 A mintaválasz felolvasása",
+    stopSample: "■ Állj",
+  },
+
   sample: {
     title: "Mintaválasz",
     hint: "Előbb próbáld meg magad, és csak utána hasonlítsd össze – a mintaválasz egy lehetséges jó megoldás, nem az egyetlen.",
