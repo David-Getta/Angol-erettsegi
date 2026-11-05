@@ -1,0 +1,288 @@
+{
+  "schemaVersion": 1,
+  "id": "kem-gr-szovegertelmezes",
+  "subject": "kemia",
+  "revision": 1,
+  "level": "kozep",
+  "source": "generated",
+  "topic": "nyelvtan",
+  "title": "Feladat és adatok értelmezése",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "grammar",
+  "type": "lesson",
+  "category": "szovegertelmezes",
+  "summaryHu": "Az esettanulmányok, a táblázat- és grafikonelemzés, valamint a hosszabb számítási feladatok pontjainak jelentős része azon múlik, hogy pontosan megérted-e, mit kérdez a feladat, és melyik adatot honnan kell venni. Gyakori hiba, hogy a vizsgázó a tanult tudásából válaszol a szöveg helyett, félreolvassa a táblázat mértékegységét, vagy nem arra felel, amit kérdeztek (pl. ionegyenlet helyett molekulaegyenletet ír). Ez a lecke stratégiát ad a feladatszöveg és az adatok értelmezéséhez.",
+  "rules": [
+    {
+      "title": "A kérdés kulcsszavai",
+      "explanation": "Húzd alá a kérdés műveleti szavát és a kért formát: „nevezze meg” (név kell), „írja fel a képletét”, „ionegyenlettel”, „indokolja” (mert …), „hasonlítsa össze” (mindkét anyagra, ugyanazon szempont szerint), „számítsa ki … tömegszázalékban / két tizedesjegyre”. A tagadó kérdéseknél („melyik NEM …”) külön figyelj.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "„Írja fel a reakció ionegyenletét!” → Ag⁺ + Cl⁻ → AgCl",
+          "hu": "Nem AgNO₃ + NaCl → AgCl + NaNO₃."
+        },
+        {
+          "en": "„Nevezze meg a keletkező gázt!” → szén-dioxid",
+          "hu": "A név a kérdés; a képlet mellé írható, de a név kell."
+        }
+      ]
+    },
+    {
+      "title": "Esettanulmány: a szöveg az elsődleges forrás",
+      "explanation": "Esettanulmánynál a válasz a szövegben van, vagy a szöveg és a tanult alapismeretek összekapcsolásából következik. Olvasd el először a kérdéseket, aztán a szöveget, és jelöld meg, melyik bekezdés melyik kérdéshez tartozik. Ha a szöveg konkrét adatot ad (egy anyag forráspontját, egy eljárás hőmérsékletét), azt használd, akkor is, ha mást tanultál.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "Ha a szöveg szerint „a reakciót 450 °C-on, vaskatalizátorral végzik”, a „milyen körülmények között?” kérdésre ezt kell megadni."
+        }
+      ]
+    },
+    {
+      "title": "Táblázat és grafikon",
+      "explanation": "Nézd meg a fejlécet és a mértékegységet (g/100 g víz? mol/dm³? kJ/mol?), a tengelyfeliratokat és a skálát. Olvasd le pontosan az értéket, és ha két adatot hasonlítasz össze, ugyanabból az oszlopból vagy sorból vedd. A trendet pontosan fogalmazd meg: „a hőmérséklet növelésével a KNO₃ oldhatósága erősen nő, a NaCl-é alig változik”.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "„Oldhatóság (g/100 g víz) 20 °C-on: KNO₃ 31,6; NaCl 36,0” → 20 °C-on a NaCl oldhatóbb.",
+          "hu": "60 °C-on viszont már a KNO₃ (kb. 110 g / 100 g víz)."
+        }
+      ]
+    },
+    {
+      "title": "Számítási feladat: adatlista és cél",
+      "explanation": "Írd ki az adatokat a mértékegységükkel, és írd le, mi a kérdés (pl. „w(MgCl₂) = ? a VÉGSŐ oldatban”). Nézd meg, minden adatot felhasználtál-e – egy kimaradt adat (sűrűség, kristályvíz, felesleg) gyakran a hiba jele. Ha a feladatnak több része van (a, b, c …), a későbbi részek gyakran az előzők eredményére épülnek.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "Adatok: m(Mg) = 4,86 g; m(sósav) = 200 g; w = 10,0 % → kérdés: V(H₂) = ?; mi van feleslegben? w(MgCl₂) = ?"
+        }
+      ]
+    },
+    {
+      "title": "A válasz formája",
+      "explanation": "A válasz feleljen a kérdésre: ha „hány gramm?”, akkor grammban; ha „hány százalék?”, akkor százalékban; ha „melyik?”, akkor nevezd meg az anyagot. Egy kérdésre egy válasz: ha két ellentmondó választ írsz, a javító nem választ helyetted, és nem ad pontot. Négyféle asszociációnál és igaz–hamis feladatnál egyetlen betű vagy jel a válasz.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "„Melyik anyag van feleslegben?” → „A hidrogén-klorid van feleslegben, 5,40 g marad belőle.”"
+        }
+      ]
+    },
+    {
+      "title": "Többlépéses adatelemzés",
+      "explanation": "Emelt szinten a feladat gyakran rejtett információt tartalmaz: „a fém vegyületeiben +2-es oxidációs számú” → M + 2 HCl → MCl₂ + H₂; „ketonná oxidálható” → szekunder alkohol; „a gázelegy hidrogénre vonatkoztatott sűrűsége 13,6” → átlagos moláris tömege 27,2 g/mol. Gyűjtsd ki ezeket a kulcsmondatokat, és írd melléjük, milyen kémiai következtetést jelentenek.",
+      "emeltOnly": true,
+      "examples": [
+        {
+          "en": "„A vegyület nátriummal hidrogént fejleszt, de a brómos vizet nem színteleníti el.” → hidroxilcsoport van benne, C=C kettős kötés nincs."
+        }
+      ]
+    }
+  ],
+  "commonMistakes": [
+    {
+      "wrong": "Kérdés: Nevezze meg a csapadékot! Válasz: AgCl",
+      "right": "Ezüst-klorid (AgCl)",
+      "why": "A „nevezze meg” a nevet kéri; a képlet önmagában kevés lehet, a név és a képlet együtt biztos."
+    },
+    {
+      "wrong": "Kérdés: Hasonlítsa össze a két anyag forráspontját! Válasz: Az etanol forráspontja 78 °C.",
+      "right": "Az etanol forráspontja (78 °C) jóval magasabb, mint a dimetil-éteré (−24 °C), mert az etanolmolekulák között hidrogénkötések vannak.",
+      "why": "Összehasonlításnál mindkét anyagról és a viszonyukról is állítást kell tenni, indoklással."
+    },
+    {
+      "wrong": "A táblázatban 31,6 szerepel, tehát a telített oldat 31,6 %-os.",
+      "right": "31,6 g / 100 g víz → w = 31,6 / 131,6 · 100 % = 24,0 %",
+      "why": "A fejléc szerint az adat 100 g VÍZRE vonatkozik, nem 100 g oldatra; a mértékegység félreolvasása az egyik leggyakoribb hiba."
+    },
+    {
+      "wrong": "Az esettanulmány kérdésére a tankönyvi definíciót írja le, a szöveg adatát nem használja.",
+      "right": "A válaszban a szöveg konkrét adata (pl. „450 °C, 20 MPa”) szerepel, és ha kell, a tanult összefüggés is.",
+      "why": "Az esettanulmány azt méri, hogy értelmezed-e a szöveg információit; a javítási útmutató a szövegből vett választ várja."
+    }
+  ],
+  "examTips": [
+    "Mielőtt válaszolsz, fogalmazd meg magadnak egy félmondatban, mit kér a kérdés; a válasz végén ellenőrizd, hogy erre feleltél-e.",
+    "Négyféle asszociációs feladatnál minden állítást mindkét anyagra külön ellenőrizz (A-ra igaz? B-re igaz?), és csak utána válassz: A, B, mindkettő, egyik sem.",
+    "Ha egy számítási feladat valamelyik adatát nem használtad fel, olvasd el újra a feladatot – valószínűleg kimaradt egy lépés (sűrűség, felesleg, kristályvíz)."
+  ],
+  "practice": [
+    {
+      "id": "1",
+      "kind": "choice",
+      "prompt": "A feladat: „Írja fel a reakció ionegyenletét!” (ezüst-nitrát-oldat + nátrium-klorid-oldat). Melyik válasz ér pontot?",
+      "options": [
+        {
+          "key": "A",
+          "text": "AgNO₃ + NaCl → AgCl + NaNO₃"
+        },
+        {
+          "key": "B",
+          "text": "Ag⁺ + Cl⁻ → AgCl"
+        },
+        {
+          "key": "C",
+          "text": "Ag⁺ + NO₃⁻ + Na⁺ + Cl⁻ → AgCl + NaNO₃"
+        },
+        {
+          "key": "D",
+          "text": "ezüst-klorid csapadék"
+        }
+      ],
+      "answer": "B",
+      "category": "szovegertelmezes",
+      "explanation": "Helyes: B. Az ionegyenlet csak a ténylegesen átalakuló ionokat tartalmazza; a Na⁺ és a NO₃⁻ néző ion.",
+      "wrongOptions": {
+        "A": "Ez molekulaegyenlet, nem ionegyenlet.",
+        "C": "A néző ionokat nem írjuk fel, és a NaNO₃ az oldatban ionjaira disszociálva marad.",
+        "D": "Ez a tapasztalat leírása, nem egyenlet."
+      }
+    },
+    {
+      "id": "2",
+      "kind": "choice",
+      "prompt": "A táblázat fejléce: „Oldhatóság, g/100 g víz”. A KCl-nál 20 °C-on 34,0 áll. Hány tömegszázalékos a telített oldat?",
+      "options": [
+        {
+          "key": "A",
+          "text": "34,0 %"
+        },
+        {
+          "key": "B",
+          "text": "25,4 %"
+        },
+        {
+          "key": "C",
+          "text": "66,0 %"
+        },
+        {
+          "key": "D",
+          "text": "51,5 %"
+        }
+      ],
+      "answer": "B",
+      "category": "szovegertelmezes",
+      "explanation": "Helyes: 25,4 %. Az adat 100 g vízre vonatkozik: w = 34,0 / 134,0 · 100 % = 25,4 %.",
+      "wrongOptions": {
+        "A": "Ez csak akkor lenne igaz, ha az adat 100 g oldatra vonatkozna.",
+        "C": "A 66,0 a 100 − 34,0 különbség, ennek nincs jelentése.",
+        "D": "Az 51,5 a 34,0 / 66,0 hányados – rossz viszonyítás."
+      }
+    },
+    {
+      "id": "3",
+      "kind": "choice",
+      "prompt": "„Melyik állítás NEM igaz a nátrium-kloridra?”",
+      "options": [
+        {
+          "key": "A",
+          "text": "ionrácsos"
+        },
+        {
+          "key": "B",
+          "text": "vizes oldata semleges"
+        },
+        {
+          "key": "C",
+          "text": "olvadéka vezeti az áramot"
+        },
+        {
+          "key": "D",
+          "text": "szilárd állapotban jól vezeti az áramot"
+        }
+      ],
+      "answer": "D",
+      "category": "szovegertelmezes",
+      "explanation": "Helyes: D – ez a hamis állítás, tehát ez a válasz. Szilárd állapotban az ionok helyhez kötöttek, a NaCl nem vezet.",
+      "wrongOptions": {
+        "A": "Igaz állítás (Na⁺- és Cl⁻-ionok), ezért a „NEM igaz” kérdésre nem ez a válasz.",
+        "B": "Igaz: erős sav és erős bázis sója, nem hidrolizál.",
+        "C": "Igaz: olvadékban az ionok elmozdulhatnak."
+      }
+    },
+    {
+      "id": "4",
+      "kind": "text",
+      "prompt": "A feladat szerint egy fém vegyületeiben +3-as oxidációs számú. Hány mol hidrogén fejlődik 2,0 mol fémből fölös sósavval?",
+      "answer": [
+        "3",
+        "3 mol",
+        "3,0 mol",
+        "3.0 mol",
+        "3,0",
+        "3.0"
+      ],
+      "category": "szovegertelmezes",
+      "explanation": "Helyes: 3 mol. 2 M + 6 HCl → 2 MCl₃ + 3 H₂ – a +3-as oxidációs szám miatt 1 mol fém 3 mol elektront ad le, ami 1,5 mol H₂-nek felel meg.",
+      "maxWords": 2
+    },
+    {
+      "id": "5",
+      "kind": "choice",
+      "prompt": "Egy esettanulmány szerint „a kénsavgyártásban a kén-dioxid oxidációját 450 °C-on, vanádium(V)-oxid katalizátorral végzik”. Mi a jó válasz arra a kérdésre, hogy milyen anyagot használnak katalizátorként?",
+      "options": [
+        {
+          "key": "A",
+          "text": "platinát"
+        },
+        {
+          "key": "B",
+          "text": "vanádium(V)-oxidot"
+        },
+        {
+          "key": "C",
+          "text": "vasat"
+        },
+        {
+          "key": "D",
+          "text": "nem használnak katalizátort"
+        }
+      ],
+      "answer": "B",
+      "category": "szovegertelmezes",
+      "explanation": "Helyes: vanádium(V)-oxidot (V₂O₅) – a szöveg ezt adja meg.",
+      "wrongOptions": {
+        "A": "Régen valóban platinát is használtak, de a kérdés a szövegben leírt eljárásra vonatkozik.",
+        "C": "Vaskatalizátort az ammóniaszintézisben használnak.",
+        "D": "A szöveg kifejezetten katalizátort említ."
+      }
+    },
+    {
+      "id": "6",
+      "kind": "choice",
+      "prompt": "„Egy C₄H₁₀O összegképletű vegyület nátriummal hidrogént fejleszt, és enyhe oxidációval ketonná alakul.” Melyik vegyületről van szó? (emelt)",
+      "options": [
+        {
+          "key": "A",
+          "text": "bután-1-ol"
+        },
+        {
+          "key": "B",
+          "text": "bután-2-ol"
+        },
+        {
+          "key": "C",
+          "text": "2-metilpropán-2-ol"
+        },
+        {
+          "key": "D",
+          "text": "dietil-éter"
+        }
+      ],
+      "answer": "B",
+      "category": "szovegertelmezes",
+      "explanation": "Helyes: bután-2-ol. A nátriummal való reakció hidroxilcsoportot jelez, a ketonná oxidálódás szekunder alkoholt – a C₄-alkoholok közül ez az egyetlen szekunder.",
+      "wrongOptions": {
+        "A": "Primer alkohol, enyhe oxidációval aldehid (butanal) lesz belőle.",
+        "C": "Tercier alkohol, enyhe körülmények között nem oxidálódik.",
+        "D": "Az éterben nincs hidroxilcsoport, nátriummal nem reagál."
+      }
+    }
+  ],
+  "relatedCategories": [
+    "kiserlet-tapasztalat",
+    "szamolas-mertekegyseg"
+  ]
+}

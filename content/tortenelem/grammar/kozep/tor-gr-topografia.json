@@ -1,0 +1,275 @@
+{
+  "schemaVersion": 1,
+  "id": "tor-gr-topografia",
+  "subject": "tortenelem",
+  "revision": 1,
+  "level": "kozep",
+  "source": "generated",
+  "topic": "nyelvtan",
+  "title": "Topográfia",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "grammar",
+  "type": "lesson",
+  "category": "topografia",
+  "summaryHu": "A topográfia a helyszínek, a határok és a területváltozások ismerete. Az írásbeliben térképes feladatok kérdeznek rá, az esszékben és a szóbelin a tájékozódás (T) szempontja: a témát térben is el kell helyezni (ország, régió, a csata vagy a tárgyalás helye). A kronológia nélküli atlasz segít, de a fontos helyeket és a térbeli összefüggéseket ismerni kell.",
+  "rules": [
+    {
+      "title": "Alapok: égtájak, folyók, hegységek",
+      "explanation": "A helyszíneket legtöbbször egy földrajzi támponthoz viszonyítva írják le: folyópart, hegység, tengerpart, égtáj. A folyó bal partja a folyás irányába nézve bal kéz felé esik.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "„a Duna bal partján fekvő kereskedőváros” (a középső Duna-szakaszon)",
+          "hu": "Pest"
+        },
+        {
+          "en": "„a Kárpátok északkeleti hágója”",
+          "hu": "Vereckei-hágó"
+        }
+      ]
+    },
+    {
+      "title": "A magyar történelem kulcshelyszínei",
+      "explanation": "Ezeket a helyeket a térképen is meg kell tudnod mutatni.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "Esztergom, Székesfehérvár, Buda, Pozsony",
+          "hu": "királyi székhelyek, koronázóváros; Pozsony 1536-tól 1848-ig az országgyűlések fő helyszíne"
+        },
+        {
+          "en": "Muhi, Nándorfehérvár, Mohács, Eger, Szigetvár",
+          "hu": "csaták és ostromok (1241, 1456, 1526, 1552, 1566)"
+        },
+        {
+          "en": "Pákozd, Isaszeg, Debrecen, Világos, Arad",
+          "hu": "az 1848–49-es szabadságharc helyszínei"
+        },
+        {
+          "en": "Trianon, Don-kanyar, Recsk",
+          "hu": "20. századi sorsfordulók: béke (1920), katasztrófa (1943), internálótábor (1950–53)"
+        }
+      ]
+    },
+    {
+      "title": "Az egyetemes történelem kulcshelyszínei",
+      "explanation": "Az egyetemes történelmi esszékben és feladatokban gyakran előforduló helyek.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "Athén, Spárta, Marathón, Szalamisz, Róma, Konstantinápoly",
+          "hu": "ókor és középkor"
+        },
+        {
+          "en": "Wittenberg, Lisszabon, Versailles",
+          "hu": "reformáció, felfedezések, abszolutizmus"
+        },
+        {
+          "en": "Verdun, Sztálingrád, Normandia, Jalta, Berlin",
+          "hu": "a világháborúk és a hidegháború helyszínei"
+        }
+      ]
+    },
+    {
+      "title": "Területváltozások",
+      "explanation": "A három részre szakadt ország (1541–1699): Királyi Magyarország nyugaton és északon (központja Pozsony), a Hódoltság az ország közepén (Buda, Alföld, Dél-Dunántúl), az Erdélyi Fejedelemség keleten. A trianoni béke (1920) után az ország területének mintegy kétharmada idegen uralom alá került: a Felvidék és Kárpátalja Csehszlovákiához, Erdély és a Partium Romániához, a Délvidék a Szerb–Horvát–Szlovén Királysághoz, a nyugati határsáv Ausztriához, kisebb északi területek Lengyelországhoz; Fiume később, 1924-ben Olaszországhoz került.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "„a Tiszán túli részek és Erdély” (1541)",
+          "hu": "az Erdélyi Fejedelemség kialakulásának területe"
+        },
+        {
+          "en": "Észak-Erdély (1940)",
+          "hu": "a második bécsi döntéssel visszacsatolt terület"
+        }
+      ]
+    },
+    {
+      "title": "A földrajz mint magyarázat",
+      "explanation": "A térbeli helyzet gyakran ok-okozati magyarázatot ad: Berlin a szovjet övezet közepén feküdt, ezért lehetett elzárni (1948); a felfedezések után az atlanti partvidék kikötői gazdagodtak meg; a Kárpát-medence természetes határai védelmet adtak.",
+      "emeltOnly": true,
+      "examples": [
+        {
+          "en": "Nyugat-Berlin a szovjet zóna belsejében",
+          "hu": "a blokád és a légihíd földrajzi magyarázata"
+        },
+        {
+          "en": "Lisszabon, Sevilla, Antwerpen a 16. században",
+          "hu": "a kereskedelem súlypontja az Atlanti-óceánhoz került"
+        }
+      ]
+    }
+  ],
+  "commonMistakes": [
+    {
+      "wrong": "Pest a Duna jobb partján fekszik.",
+      "right": "Pest a Duna bal partján, Buda a jobb partján fekszik.",
+      "why": "A folyó bal partja a folyás irányába nézve bal kéz felé esik; a Duna délre folyik, így a keleti part a bal part."
+    },
+    {
+      "wrong": "A Hódoltság a Dunántúl nyugati részére terjedt ki.",
+      "right": "A Hódoltság az ország középső részét foglalta el (Buda, Alföld, Dél-Dunántúl); a nyugati és északi sáv a Királyi Magyarországé volt.",
+      "why": "A térképet a három rész elhelyezkedése alapján kell olvasni: nyugat – Habsburg, közép – török, kelet – Erdély."
+    },
+    {
+      "wrong": "Trianon után Erdély Csehszlovákiához került.",
+      "right": "Trianon után Erdély Romániához került; a Felvidék és Kárpátalja lett Csehszlovákiáé.",
+      "why": "Az elcsatolt területeket az utódállamokkal együtt kell megtanulni."
+    },
+    {
+      "wrong": "A honfoglaló magyarok nyugat felől, Bécs irányából érkeztek.",
+      "right": "A honfoglalók keletről, a Vereckei-hágón és az erdélyi szorosokon át érkeztek.",
+      "why": "Etelköz (a Dnyeper és az Al-Duna vidéke) a Kárpátoktól keletre feküdt."
+    }
+  ],
+  "examTips": [
+    "Térképes feladatnál a leírás minden szava számít („északkeleti hágó”, „dalmát tengerpart”, „bal part”); azonosítsd a helyet az atlaszban is.",
+    "Esszében a T-szempont térbeli elemét is teljesítsd: nevezd meg az országot, a régiót és a fontos helyszíneket (csata, béke, székhely)."
+  ],
+  "practice": [
+    {
+      "id": "1",
+      "kind": "choice",
+      "prompt": "Melyik államhoz került Trianonban Erdély?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Romániához"
+        },
+        {
+          "key": "B",
+          "text": "Csehszlovákiához"
+        },
+        {
+          "key": "C",
+          "text": "Ausztriához"
+        },
+        {
+          "key": "D",
+          "text": "a Szerb–Horvát–Szlovén Királysághoz"
+        }
+      ],
+      "answer": "A",
+      "category": "topografia",
+      "explanation": "Helyes: Romániához. Az 1920-as béke Erdélyt és a Partiumot Romániának ítélte.",
+      "wrongOptions": {
+        "B": "Csehszlovákia a Felvidéket és Kárpátalját kapta.",
+        "C": "Ausztria a nyugati határsávot (Burgenland) kapta.",
+        "D": "A délszláv állam a Délvidéket (Bácska, Bánát nyugati része, Baranya egy része) kapta."
+      }
+    },
+    {
+      "id": "2",
+      "kind": "choice",
+      "prompt": "Hol volt 1848-ig a magyar rendi országgyűlések szokásos helyszíne?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Pozsony"
+        },
+        {
+          "key": "B",
+          "text": "Pest"
+        },
+        {
+          "key": "C",
+          "text": "Debrecen"
+        },
+        {
+          "key": "D",
+          "text": "Székesfehérvár"
+        }
+      ],
+      "answer": "A",
+      "category": "topografia",
+      "explanation": "Helyes: Pozsony. A török hódítás után a Királyi Magyarország központja lett; 1848-ban a népképviseleti országgyűlés Pestre költözött.",
+      "wrongOptions": {
+        "B": "Pest 1848-tól lett az országgyűlés székhelye.",
+        "C": "Debrecenben 1849-ben ülésezett az országgyűlés (trónfosztás), de ez kivétel volt.",
+        "D": "Székesfehérvár a középkorban koronázó- és temetkezési hely volt, nem az újkori országgyűlések helye."
+      }
+    },
+    {
+      "id": "3",
+      "kind": "text",
+      "prompt": "Melyik hágón át érkezett a hagyomány szerint a honfoglaló magyarok főserege?",
+      "answer": [
+        "Vereckei-hágó",
+        "Vereckei hágó",
+        "Verecke",
+        "Vereckei-hágón",
+        "Vereckei hágón"
+      ],
+      "category": "topografia",
+      "explanation": "Helyes: a Vereckei-hágón. Az Északkeleti-Kárpátok átjárója; a honfoglalás emlékhelye is itt áll."
+    },
+    {
+      "id": "4",
+      "kind": "choice",
+      "prompt": "Melyik város NEM a Hódoltság területén feküdt 1600 körül?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Pozsony"
+        },
+        {
+          "key": "B",
+          "text": "Buda"
+        },
+        {
+          "key": "C",
+          "text": "Pécs"
+        },
+        {
+          "key": "D",
+          "text": "Szeged"
+        }
+      ],
+      "answer": "A",
+      "category": "topografia",
+      "explanation": "Helyes: Pozsony. A Királyi Magyarország központja volt, ahol az országgyűlések üléseztek és a koronázásokat tartották.",
+      "wrongOptions": {
+        "B": "Buda 1541-től 1686-ig török uralom alatt állt, a budai vilajet központja volt.",
+        "C": "Pécs 1543-tól 1686-ig török kézen volt.",
+        "D": "Szeged 1543-tól 1686-ig a Hódoltság része volt."
+      }
+    },
+    {
+      "id": "5",
+      "kind": "choice",
+      "prompt": "Mi történt Normandiában 1944. június 6-án?",
+      "options": [
+        {
+          "key": "A",
+          "text": "a nyugati szövetségesek partraszállása"
+        },
+        {
+          "key": "B",
+          "text": "a francia–porosz háború döntő csatája"
+        },
+        {
+          "key": "C",
+          "text": "az első világháború leghosszabb csatája"
+        },
+        {
+          "key": "D",
+          "text": "a sztálingrádi csata kezdete"
+        }
+      ],
+      "answer": "A",
+      "category": "topografia",
+      "explanation": "Helyes: A. Normandiában szálltak partra a nyugati szövetségesek, ezzel megnyílt a második front.",
+      "wrongOptions": {
+        "B": "A francia–porosz háború döntő csatája Sedannál volt (1870).",
+        "C": "A leghosszabb nyugati csata Verdunnél zajlott (1916).",
+        "D": "A sztálingrádi csata a Volgánál zajlott (1942–43)."
+      }
+    }
+  ],
+  "relatedCategories": [
+    "adatleolvasas",
+    "evszam-kronologia"
+  ]
+}

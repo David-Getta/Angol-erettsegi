@@ -1,0 +1,258 @@
+{
+  "schemaVersion": 1,
+  "id": "kem-gr-oldatok-szamitas",
+  "subject": "kemia",
+  "revision": 1,
+  "level": "kozep",
+  "source": "generated",
+  "topic": "nyelvtan",
+  "title": "Oldatok: tömeg- és anyagmennyiség-koncentráció",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "grammar",
+  "type": "lesson",
+  "category": "oldatok-szamitas",
+  "summaryHu": "Az oldatokkal kapcsolatos számítások – tömegszázalék, anyagmennyiség-koncentráció, hígítás, keverés, oldhatóság – minden érettségi számítási részben szerepelnek. A legtöbb hiba abból adódik, hogy az oldott anyag tömegét a víz tömegéhez viszonyítják az oldat tömege helyett, összekeverik a térfogatot és a tömeget (kimarad a sűrűség), vagy a térfogatot cm³-ben hagyják a mol/dm³-es képletben.",
+  "rules": [
+    {
+      "title": "Tömegszázalék",
+      "explanation": "w = m(oldott anyag) / m(oldat) · 100 %, ahol m(oldat) = m(oldott anyag) + m(oldószer). Ha az oldatnak a térfogata adott, a tömegét a sűrűségből számoljuk: m = ρ · V.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "20 g só + 180 g víz → 20 / 200 · 100 % = 10,0 %",
+          "hu": "Nem 20/180!"
+        },
+        {
+          "en": "250 cm³ 20,0 %-os, 1,10 g/cm³ sűrűségű oldat: m = 275 g, benne 55,0 g oldott anyag"
+        }
+      ]
+    },
+    {
+      "title": "Anyagmennyiség-koncentráció",
+      "explanation": "c = n(oldott anyag) / V(oldat), mértékegysége mol/dm³. A térfogat az OLDAT térfogata (nem az oldószeré), dm³-ben. Átváltás a tömegszázalék és a koncentráció között a sűrűséggel: vegyél 1,00 dm³ oldatot, számold ki a tömegét (ρ · V), az oldott anyag tömegét (w · m) és anyagmennyiségét (m / M).",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "0,500 mol NaCl 250 cm³ oldatban: c = 0,500 mol / 0,250 dm³ = 2,00 mol/dm³"
+        },
+        {
+          "en": "36,5 %-os sósav, ρ = 1,18 g/cm³: 1,00 dm³ = 1180 g → 430,7 g HCl → 11,8 mol → c = 11,8 mol/dm³"
+        }
+      ]
+    },
+    {
+      "title": "Hígítás és töményítés",
+      "explanation": "Hígításkor az oldott anyag mennyisége nem változik: c₁ · V₁ = c₂ · V₂, illetve tömegekkel m₁ · w₁ = m₂ · w₂. Bepárláskor az oldószer tömege csökken, az oldott anyagé állandó. Keveréskor a tömegek mindig összeadódnak, a térfogatok nem feltétlenül.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "100 cm³ 2,0 mol/dm³-es oldat → 500 cm³: c₂ = 2,0 · 100 / 500 = 0,40 mol/dm³"
+        },
+        {
+          "en": "200 g 15 %-os oldatból 100 g vizet elpárologtatunk: 30 g / 100 g → 30 %"
+        }
+      ]
+    },
+    {
+      "title": "Oldatok keverése (keverési egyenlet)",
+      "explanation": "Két azonos anyagú oldat keverésekor: m₁ · w₁ + m₂ · w₂ = (m₁ + m₂) · w₃. A tiszta oldószerre w = 0 %, a tiszta oldott anyagra w = 100 %. Koncentrációkkal: c₁V₁ + c₂V₂ = c₃V₃, ha a térfogatok összeadódnak.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "100 g 10 %-os + 300 g 30 %-os oldat → (10 + 90) / 400 = 25,0 %"
+        },
+        {
+          "en": "Hány g víz kell 200 g 25 %-os oldathoz, hogy 10 %-os legyen? 200 · 25 = (200 + x) · 10 → x = 300 g"
+        }
+      ]
+    },
+    {
+      "title": "Oldhatóság, telített oldat",
+      "explanation": "Az oldhatóságot gyakran 100 g vízre vonatkoztatva adják meg (g oldott anyag / 100 g víz) adott hőmérsékleten. A telített oldat tömegszázaléka: w = S / (100 + S) · 100 %. Lehűtéskor a csökkenő oldhatóság miatt kristályok válnak ki; kristályvizes sónál a kiváló kristály vizet is elvisz az oldatból.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "KNO₃ oldhatósága 20 °C-on 31,6 g / 100 g víz → w = 31,6 / 131,6 · 100 % = 24,0 %"
+        }
+      ]
+    },
+    {
+      "title": "Kristálykiválás kristályvizes sóból",
+      "explanation": "Ha lehűtéskor kristályvizes só válik ki, írj fel két mérleget: a vízmentes só tömegére és az oldat tömegére. Ha x g kristályvizes só válik ki, abban x · M(vízmentes só) / M(kristályvizes só) gramm vízmentes só van. A visszamaradó oldat az alacsonyabb hőmérsékleten telített.",
+      "emeltOnly": true,
+      "examples": [
+        {
+          "en": "x g CuSO₄ · 5 H₂O-ban 0,639x g CuSO₄ van (159,6 / 249,6 = 0,639)"
+        }
+      ]
+    }
+  ],
+  "commonMistakes": [
+    {
+      "wrong": "25 g cukor + 100 g víz: 25 %-os oldat.",
+      "right": "25 / 125 · 100 % = 20,0 %-os oldat.",
+      "why": "A tömegszázalék az oldat teljes tömegére vonatkozik (oldott anyag + oldószer)."
+    },
+    {
+      "wrong": "c = 0,1 mol / 250 cm³ = 0,0004 mol/dm³",
+      "right": "c = 0,1 mol / 0,250 dm³ = 0,4 mol/dm³",
+      "why": "A koncentráció mértékegysége mol/dm³, ezért a térfogatot dm³-be kell átváltani (250 cm³ = 0,250 dm³)."
+    },
+    {
+      "wrong": "100 cm³ 20 %-os, 1,10 g/cm³ sűrűségű oldatban 20 g oldott anyag van.",
+      "right": "Az oldat tömege 110 g, benne 22 g oldott anyag van.",
+      "why": "A tömegszázalék tömegre vonatkozik; térfogatból előbb a sűrűséggel tömeget kell számolni."
+    },
+    {
+      "wrong": "10 %-os és 30 %-os oldat keveréke mindig 20 %-os.",
+      "right": "Csak akkor 20 %-os, ha azonos tömegű oldatokat keverünk.",
+      "why": "A keverési egyenletben a tömegek súlyozzák a százalékokat: m₁w₁ + m₂w₂ = (m₁ + m₂)w₃."
+    },
+    {
+      "wrong": "1 dm³ vízben 0,5 mol NaCl-ot oldunk → c = 0,5 mol/dm³.",
+      "right": "A koncentrációhoz az oldat térfogata kell, ami nem pontosan 1 dm³.",
+      "why": "A c = n / V képletben az oldat térfogata szerepel; pontos oldatot mérőlombikban, jelre töltve készítünk."
+    }
+  ],
+  "examTips": [
+    "Írd fel külön: m(oldott anyag), m(oldószer), m(oldat), V(oldat) – a legtöbb hiba abból ered, hogy ezeket összekeverjük.",
+    "Ha a feladat sűrűséget ad, az szinte mindig a térfogat ↔ tömeg átváltáshoz kell; ha nem használtad fel, gyanakodj.",
+    "Kémiai reakcióval járó oldatfeladatnál (pl. fém + sav) a végső oldat tömegéből vond le a távozó gáz és a kiváló csapadék tömegét."
+  ],
+  "practice": [
+    {
+      "id": "1",
+      "kind": "text",
+      "prompt": "Hány gramm NaOH kell 250 g 8,0 tömegszázalékos oldat készítéséhez?",
+      "answer": [
+        "20 g",
+        "20",
+        "20,0 g",
+        "20.0 g",
+        "20 gramm"
+      ],
+      "category": "oldatok-szamitas",
+      "explanation": "Helyes: 20 g. m = 250 g · 0,080 = 20 g NaOH (és 230 g víz).",
+      "maxWords": 2
+    },
+    {
+      "id": "2",
+      "kind": "text",
+      "prompt": "Mekkora annak az oldatnak a koncentrációja, amelynek 500 cm³-ében 0,25 mol glükóz van? (mol/dm³)",
+      "answer": [
+        "0,50 mol/dm³",
+        "0,5 mol/dm³",
+        "0.50 mol/dm³",
+        "0.5 mol/dm³",
+        "0,50",
+        "0,5",
+        "0.50",
+        "0.5"
+      ],
+      "category": "oldatok-szamitas",
+      "explanation": "Helyes: 0,50 mol/dm³. c = n / V = 0,25 mol / 0,500 dm³ = 0,50 mol/dm³.",
+      "maxWords": 2
+    },
+    {
+      "id": "3",
+      "kind": "choice",
+      "prompt": "Hány cm³-re kell hígítani 50,0 cm³ 2,00 mol/dm³-es sósavat, hogy 0,500 mol/dm³-es legyen?",
+      "options": [
+        {
+          "key": "A",
+          "text": "100 cm³"
+        },
+        {
+          "key": "B",
+          "text": "200 cm³"
+        },
+        {
+          "key": "C",
+          "text": "250 cm³"
+        },
+        {
+          "key": "D",
+          "text": "150 cm³"
+        }
+      ],
+      "answer": "B",
+      "category": "oldatok-szamitas",
+      "explanation": "Helyes: 200 cm³. c₁V₁ = c₂V₂ → V₂ = 2,00 · 50,0 / 0,500 = 200 cm³ (tehát 150 cm³ vizet kell hozzáadni).",
+      "wrongOptions": {
+        "A": "100 cm³-ben a koncentráció 1,00 mol/dm³ lenne.",
+        "C": "250 cm³-ben a koncentráció 0,400 mol/dm³ lenne.",
+        "D": "150 cm³ a hozzáadandó víz térfogata, nem a végső térfogat."
+      }
+    },
+    {
+      "id": "4",
+      "kind": "choice",
+      "prompt": "Hány tömegszázalékos lesz az oldat, ha 150 g 20 %-os és 50 g 40 %-os sóoldatot összekeverünk?",
+      "options": [
+        {
+          "key": "A",
+          "text": "25 %"
+        },
+        {
+          "key": "B",
+          "text": "30 %"
+        },
+        {
+          "key": "C",
+          "text": "60 %"
+        },
+        {
+          "key": "D",
+          "text": "27,5 %"
+        }
+      ],
+      "answer": "A",
+      "category": "oldatok-szamitas",
+      "explanation": "Helyes: 25 %. (150 g · 0,20 + 50 g · 0,40) / 200 g = (30 g + 20 g) / 200 g = 0,25.",
+      "wrongOptions": {
+        "B": "A 30 % a két százalék számtani átlaga; ez csak egyenlő tömegű oldatoknál lenne helyes.",
+        "C": "A tömegszázalékok nem adódnak össze.",
+        "D": "Számolási hiba: a súlyozott átlag 50 g oldott anyag / 200 g oldat = 25 %."
+      }
+    },
+    {
+      "id": "5",
+      "kind": "text",
+      "prompt": "A nátrium-klorid oldhatósága 20 °C-on 36,0 g / 100 g víz. Hány tömegszázalékos a telített oldat? (egy tizedesjegyre)",
+      "answer": [
+        "26,5 %",
+        "26,5%",
+        "26,5",
+        "26.5 %",
+        "26.5%",
+        "26.5"
+      ],
+      "category": "oldatok-szamitas",
+      "explanation": "Helyes: 26,5 %. w = 36,0 / (100 + 36,0) · 100 % = 26,5 %.",
+      "maxWords": 2
+    },
+    {
+      "id": "6",
+      "kind": "text",
+      "prompt": "Mekkora a 20,0 tömegszázalékos, 1,22 g/cm³ sűrűségű NaOH-oldat koncentrációja? M(NaOH) = 40,0 g/mol (mol/dm³-ben) (emelt)",
+      "answer": [
+        "6,10 mol/dm³",
+        "6,1 mol/dm³",
+        "6.10 mol/dm³",
+        "6.1 mol/dm³",
+        "6,10",
+        "6,1",
+        "6.10",
+        "6.1"
+      ],
+      "category": "oldatok-szamitas",
+      "explanation": "Helyes: 6,10 mol/dm³. 1,00 dm³ oldat tömege 1220 g, ebben 244 g NaOH van, ami 6,10 mol, tehát c = 6,10 mol/dm³.",
+      "maxWords": 2
+    }
+  ],
+  "relatedCategories": [
+    "anyagmennyiseg",
+    "szamolas-mertekegyseg"
+  ]
+}

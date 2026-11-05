@@ -1,0 +1,260 @@
+{
+  "schemaVersion": 1,
+  "id": "tor-gr-fogalomhasznalat",
+  "subject": "tortenelem",
+  "revision": 1,
+  "level": "kozep",
+  "source": "generated",
+  "topic": "nyelvtan",
+  "title": "Történelmi fogalmak",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "grammar",
+  "type": "lesson",
+  "category": "fogalomhasznalat",
+  "summaryHu": "A fogalmak pontos ismerete a rövid feladatokban (fogalom megnevezése, párosítás) és az esszék K-szempontjában (szakszavak helyes használata) is pontot ér. Egy fogalmat akkor tudsz, ha meg tudod határozni, el tudod helyezni korszakban, és tudsz rá példát. A legtöbb hiba a rokon fogalmak összekeveréséből adódik (rendiség – abszolutizmus, köztársaság – demokrácia, örökváltság – jobbágyfelszabadítás).",
+  "rules": [
+    {
+      "title": "Fogalom = meghatározás + korszak + példa",
+      "explanation": "Tanuld meg a fogalmakat hármas egységben: mit jelent (a lényeges ismertetőjegyek), mikor és hol jellemző, és mi egy jellegzetes példa rá.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "abszolutizmus",
+          "hu": "az uralkodó a rendek kikapcsolásával, állandó hadsereg és hivatalnokság segítségével kormányoz – 17–18. század, pl. XIV. Lajos Franciaországa"
+        },
+        {
+          "en": "ősiség",
+          "hu": "a nemesi birtok elidegeníthetetlensége – 1351–1848, Magyarország"
+        }
+      ]
+    },
+    {
+      "title": "Monarchiák: rendi, abszolút, alkotmányos",
+      "explanation": "Rendi monarchia: az uralkodó a kiváltságos rendekkel (rendi gyűlés) osztja meg a hatalmat. Abszolút monarchia: az uralkodó korlátlan, a rendi gyűlést nem hívja össze. Alkotmányos monarchia: az uralkodó hatalmát alkotmány és választott parlament korlátozza.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "Magyarország a 15. században",
+          "hu": "rendi monarchia (országgyűlés, rendek)"
+        },
+        {
+          "en": "Anglia 1689 után",
+          "hu": "alkotmányos monarchia (Jognyilatkozat)"
+        }
+      ]
+    },
+    {
+      "title": "Államforma és politikai rendszer: köztársaság ≠ demokrácia",
+      "explanation": "A köztársaság államforma: az államfő nem örökletes uralkodó, hanem választott. A demokrácia politikai rendszer: a hatalom forrása a nép, szabad választás, többpártrendszer, jogállam. Egy köztársaság lehet diktatúra, egy monarchia lehet demokrácia.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "Magyar Népköztársaság (1949–1989)",
+          "hu": "köztársaság volt, de egypárti diktatúra"
+        },
+        {
+          "en": "Nagy-Britannia",
+          "hu": "monarchia, mégis parlamentáris demokrácia"
+        }
+      ]
+    },
+    {
+      "title": "Nemzet, nacionalizmus, nemzetállam",
+      "explanation": "A modern nemzet közös nyelvre, kultúrára, történelmi tudatra épülő közösség, amely a 18–19. században alakult ki. A nacionalizmus a nemzet érdekeit elsődlegesnek tartó eszme. A nemzetállam olyan állam, amelynek lakói nagyrészt egy nemzethez tartoznak; ezzel szemben a soknemzetiségű birodalomban több nemzet él.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "Németország 1871 után",
+          "hu": "nemzetállam (nemzetiségi kisebbségekkel)"
+        },
+        {
+          "en": "Osztrák–Magyar Monarchia",
+          "hu": "soknemzetiségű birodalom"
+        }
+      ]
+    },
+    {
+      "title": "Diktatúrák: tekintélyelvű és totalitárius",
+      "explanation": "A tekintélyelvű rendszer korlátozza a politikai szabadságot, de meghagy bizonyos parlamentáris kereteket és magánszférát. A totalitárius diktatúra egyetlen párt és ideológia nevében a társadalom minden területét ellenőrzi, terrorral és propagandával (náci Németország, sztálini Szovjetunió).",
+      "emeltOnly": true,
+      "examples": [
+        {
+          "en": "Horthy-korszak (1920-as évek)",
+          "hu": "korlátozott parlamentarizmus, tekintélyelvű vonásokkal"
+        },
+        {
+          "en": "Rákosi-korszak",
+          "hu": "totalitárius diktatúra a szovjet minta szerint"
+        }
+      ]
+    }
+  ],
+  "commonMistakes": [
+    {
+      "wrong": "Az athéni demokráciában mindenki szavazhatott.",
+      "right": "Az athéni demokráciában a felnőtt férfi polgárok szavazhattak; a nők, a rabszolgák és a metoikoszok nem.",
+      "why": "A fogalom korabeli tartalmát kell használni: az ókori demokrácia nem azonos a mai általános választójoggal."
+    },
+    {
+      "wrong": "XIV. Lajos rendi monarchiát épített ki, mert erős király volt.",
+      "right": "XIV. Lajos abszolút monarchiát épített ki: a rendi gyűlést nem hívta össze, állandó hadseregre és hivatalnokokra támaszkodott.",
+      "why": "A rendi monarchiában az uralkodó megosztja a hatalmat a rendekkel, az abszolutizmusban kikapcsolja őket."
+    },
+    {
+      "wrong": "A Rákosi-rendszer köztársaság volt, tehát demokratikus.",
+      "right": "A Magyar Népköztársaság államformája köztársaság volt, politikai rendszere azonban egypárti diktatúra.",
+      "why": "Az államforma (köztársaság) és a politikai rendszer (demokrácia vagy diktatúra) két külön kérdés."
+    },
+    {
+      "wrong": "A kiegyezés után Magyarország teljesen független nemzetállam lett.",
+      "right": "A kiegyezés után Magyarország belügyeiben önálló lett, de a közös ügyek (külügy, hadügy, ezek pénzügye) révén a Monarchia része maradt.",
+      "why": "A dualizmus nem függetlenség, és a soknemzetiségű ország nem volt nemzetállam."
+    }
+  ],
+  "examTips": [
+    "Fogalmas feladatban a meghatározás kulcsszavaira figyelj („kártalanítással”, „önkéntes”, „kötelező”, „örökletes”), mert a zavaró opciók gyakran csak egy elemben térnek el.",
+    "Esszében a K-szempont (szaknyelv) pontot ér: használd a fogalmat pontosan, és ha szükséges, egy tagmondatban meg is magyarázhatod („a közteherviselés, vagyis a nemesek adózása…”)."
+  ],
+  "practice": [
+    {
+      "id": "1",
+      "kind": "choice",
+      "prompt": "Melyik meghatározás illik az abszolutizmusra?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Az uralkodó a rendek kikapcsolásával, állandó hadseregre és hivatalnokságra támaszkodva kormányoz."
+        },
+        {
+          "key": "B",
+          "text": "Az uralkodó a rendi gyűléssel közösen hozza a törvényeket."
+        },
+        {
+          "key": "C",
+          "text": "Az uralkodó hatalmát alkotmány és felelős kormány korlátozza."
+        },
+        {
+          "key": "D",
+          "text": "Az államfőt a nép választja meg meghatározott időre."
+        }
+      ],
+      "answer": "A",
+      "category": "fogalomhasznalat",
+      "explanation": "Helyes: A. Ez az abszolút monarchia lényege (pl. XIV. Lajos).",
+      "wrongOptions": {
+        "B": "Ez a rendi monarchia jellemzője.",
+        "C": "Ez az alkotmányos monarchia jellemzője.",
+        "D": "Ez a köztársaság (választott államfő) jellemzője."
+      }
+    },
+    {
+      "id": "2",
+      "kind": "choice",
+      "prompt": "Melyik állítás igaz?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Egy köztársaság is lehet diktatúra."
+        },
+        {
+          "key": "B",
+          "text": "Minden monarchia diktatúra."
+        },
+        {
+          "key": "C",
+          "text": "A köztársaság és a demokrácia ugyanazt jelenti."
+        },
+        {
+          "key": "D",
+          "text": "Demokrácia csak köztársaságban lehet."
+        }
+      ],
+      "answer": "A",
+      "category": "fogalomhasznalat",
+      "explanation": "Helyes: A. Az államforma és a politikai rendszer független egymástól: pl. a Magyar Népköztársaság köztársaság volt, de egypárti diktatúra.",
+      "wrongOptions": {
+        "B": "Az alkotmányos monarchiák (pl. Nagy-Britannia) demokratikusak lehetnek.",
+        "C": "A köztársaság államforma, a demokrácia politikai rendszer.",
+        "D": "A parlamentáris monarchiák is demokráciák lehetnek."
+      }
+    },
+    {
+      "id": "3",
+      "kind": "choice",
+      "prompt": "Mi különbözteti meg az 1848-as jobbágyfelszabadítást az 1840-es önkéntes örökváltságtól?",
+      "options": [
+        {
+          "key": "A",
+          "text": "1848-ban kötelező volt, és a földesurakat az állam kártalanította."
+        },
+        {
+          "key": "B",
+          "text": "1840-ben az állam fizette meg a megváltást."
+        },
+        {
+          "key": "C",
+          "text": "1848-ban a jobbágyoknak kellett megfizetniük a földesurat."
+        },
+        {
+          "key": "D",
+          "text": "A kettő ugyanazt jelenti."
+        }
+      ],
+      "answer": "A",
+      "category": "fogalomhasznalat",
+      "explanation": "Helyes: A. Az örökváltságnál a jobbágy maga fizetett, és csak a földesúrral kötött megegyezés alapján; 1848-ban a felszabadítás kötelező volt, és a kárpótlást az állam vállalta.",
+      "wrongOptions": {
+        "B": "1840-ben a jobbágy fizetett, nem az állam.",
+        "C": "1848-ban az állam vállalta a kármentesítést, nem a jobbágy.",
+        "D": "Az önkéntesség és a fizető fél tekintetében alapvetően különböznek."
+      }
+    },
+    {
+      "id": "4",
+      "kind": "text",
+      "prompt": "Hogyan nevezzük azt az elvet, hogy az állami hatalom forrása a nép? (egy szó)",
+      "answer": [
+        "népszuverenitás",
+        "népfelség"
+      ],
+      "category": "fogalomhasznalat",
+      "explanation": "Helyes: népszuverenitás (népfelség). Rousseau fogalmazta meg; a francia forradalom és a modern alkotmányok alapelve lett."
+    },
+    {
+      "id": "5",
+      "kind": "choice",
+      "prompt": "Melyik volt nemzetállam 1871 után?",
+      "options": [
+        {
+          "key": "A",
+          "text": "a Német Császárság"
+        },
+        {
+          "key": "B",
+          "text": "az Osztrák–Magyar Monarchia"
+        },
+        {
+          "key": "C",
+          "text": "az Oszmán Birodalom"
+        },
+        {
+          "key": "D",
+          "text": "az Orosz Birodalom"
+        }
+      ],
+      "answer": "A",
+      "category": "fogalomhasznalat",
+      "explanation": "Helyes: A. Az egyesítéssel a német nemzet nagy része egy államba került – a nemzetállam mintája (kisebb nemzetiségi kisebbségekkel).",
+      "wrongOptions": {
+        "B": "A Monarchia soknemzetiségű birodalom volt (németek, magyarok, csehek, lengyelek, horvátok, románok stb.).",
+        "C": "Az Oszmán Birodalom soknemzetiségű, vallási alapon szervezett birodalom volt.",
+        "D": "Az Orosz Birodalom is soknemzetiségű birodalom volt."
+      }
+    }
+  ],
+  "relatedCategories": [
+    "szaknyelv",
+    "szemelyek-esemenyek"
+  ]
+}

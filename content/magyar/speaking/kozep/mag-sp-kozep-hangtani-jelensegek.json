@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "id": "mag-sp-kozep-hangtani-jelensegek",
+  "subject": "magyar",
+  "revision": 1,
+  "level": "kozep",
+  "source": "generated",
+  "topic": "nyelvi-szintek",
+  "title": "A mássalhangzók találkozásának törvényei",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "speaking",
+  "type": "nyelvtan-tetel",
+  "partNumber": 2,
+  "instructionsHu": "Mutassa be a mássalhangzó-törvényeket (hasonulás, összeolvadás, rövidülés, kiesés)! Gyűjtsön példákat a megadott szövegből, és magyarázza meg, miért nem jelöljük ezeket a változásokat írásban!",
+  "prompts": [
+    "A mássalhangzók csoportosítása: zöngés–zöngétlen párok, a képzés helye",
+    "A mássalhangzó-törvények: részleges és teljes hasonulás, összeolvadás, rövidülés, kiesés",
+    "Példák a megadott szövegből",
+    "A kiejtés és az írás viszonya: a szóelemző elv"
+  ],
+  "sources": [
+    {
+      "title": "Szöveg az elemzéshez",
+      "text": "A barátságos szomszéd átdobta a kerítésen a labdát, és odakiáltott: – Egészségetekre a vacsorához! Holnap a színpadon látjuk egymást, ugye? Anna jobbra fordult, és mosolyogva intett neki."
+    }
+  ],
+  "keyPoints": [
+    "A mássalhangzók zöngés–zöngétlen párokat alkotnak (b–p, d–t, g–k, z–sz, zs–s, v–f, dz–c, dzs–cs, gy–ty).",
+    "Részleges hasonulás zöngésség szerint: a zöngés és a zöngétlen mássalhangzó egymás mellett igazodik (átdobta [áddopta]: t → d, b → p).",
+    "Részleges hasonulás a képzés helye szerint: n + ajakhang → m (színpadon [szímpadon]).",
+    "Teljes hasonulás: az egyik hang azonossá válik a másikkal (egészség [egésség]).",
+    "Összeolvadás: két hangból egy harmadik, hosszú hang lesz (barátságos [baráccságos], látjuk [láttyuk]).",
+    "Mássalhangzó-rövidülés: hosszú mássalhangzó másik mássalhangzó mellett röviden hangzik (jobbra [jobra]).",
+    "Mássalhangzó-kiesés: három mássalhangzó torlódásakor a középső kieshet (pl. mondta [monta]).",
+    "A változásokat írásban nem jelöljük, mert a szóelemző elv szerint a szóelemek (tő, toldalék) eredeti alakját megőrizzük (egész + ség, lát + juk)."
+  ],
+  "speakingSeconds": 300,
+  "prepSeconds": 600,
+  "usefulPhrases": [
+    { "en": "zöngés – zöngétlen pár", "hu": "a hangszalagok rezgése szerint megkülönböztetett mássalhangzópárok" },
+    { "en": "hátraható hasonulás", "hu": "a második hang hat az elsőre (a magyarban ez a gyakoribb)" },
+    { "en": "szóelemző írásmód", "hu": "az írás a szóelemeket mutatja, nem a tényleges kiejtést" },
+    { "en": "Kiejtve: [ … ], írva: …", "hu": "a példák bemutatásának módja" }
+  ],
+  "sampleAnswer": {
+    "turns": [
+      {
+        "speaker": "candidate",
+        "text": "A beszédben a mássalhangzók nem elszigetelten hangzanak el, hanem egymás mellett, és ilyenkor hatnak egymásra. A mássalhangzókat többek között a zöngésség szerint csoportosíthatjuk: a legtöbb zöngés hangnak van zöngétlen párja, például a b–p, d–t, g–k, z–sz. A képzés helye szerint pedig megkülönböztetünk például ajakhangokat, mint a p, b, m.\n\nA leggyakoribb változás a hasonulás. Részleges hasonulásnál a hang csak egy tulajdonságában igazodik a szomszédjához. A zöngésség szerinti hasonulásra a szövegben az „átdobta” a példa: kiejtve [áddopta], vagyis a t a zöngés d előtt zöngéssé, a b pedig a zöngétlen t előtt zöngétlenné válik. A képzés helye szerinti hasonulásra a „színpadon” szót hozom: kiejtve [szímpadon], az n a p ajakhang előtt m-mé alakul. Teljes hasonulásnál az egyik hang azonossá válik a másikkal: az „egészségetekre” szót [egésségetekre] alakban ejtjük.\n\nÖsszeolvadásnál két hangból egy harmadik, hosszú hang keletkezik. Ilyen a „barátságos”, kiejtve [baráccságos], ahol a t és az s cs-vé olvad, és a „látjuk”, kiejtve [láttyuk], ahol a t és a j ty-vé válik. Mássalhangzó-rövidülés figyelhető meg a „jobbra” szóban: a hosszú bb az r előtt röviden hangzik. Végül a mássalhangzó-kiesésre a szövegben nincs példa, de ilyen a „mondta” szó, amelyet [monta] alakban ejtünk.\n\nEzeket a változásokat írásban nem jelöljük, mert a magyar helyesírás egyik alapelve a szóelemző írásmód: a szótövet és a toldalékot eredeti alakjukban írjuk, hogy a szó szerkezete felismerhető maradjon, például egész plusz ség, lát plusz juk."
+      }
+    ],
+    "notes": [
+      "Tartalom: minden mássalhangzó-törvényt definiál, és a szövegből vett példával szemléltet; ahol a szövegben nincs példa, saját példát hoz, és ezt jelzi is.",
+      "A helyesírási kitekintés (szóelemző elv) megmutatja, hogy a vizsgázó érti a hangtan és az írás összefüggését.",
+      "Nyelvi minőség: pontos szakszavak, a kiejtett alakok világos jelölése, logikus haladás a részleges hasonulástól a kiesésig."
+    ]
+  }
+}

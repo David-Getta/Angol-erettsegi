@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "mag-sp-kozep-kommunikacio",
+  "subject": "magyar",
+  "revision": 1,
+  "level": "kozep",
+  "source": "generated",
+  "topic": "kommunikacio",
+  "title": "A kommunikáció tényezői és funkciói",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "speaking",
+  "type": "nyelvtan-tetel",
+  "partNumber": 2,
+  "instructionsHu": "Mutassa be a kommunikációs folyamat tényezőit és a nyelvi funkciókat! Fejtse ki az elméletet, majd elemezze a megadott üzenetváltást: nevezze meg benne a tényezőket és a funkciókat!",
+  "prompts": [
+    "A kommunikációs folyamat tényezői (Roman Jakobson modellje alapján)",
+    "A nyelv funkciói, és melyik tényezőhöz kapcsolódnak",
+    "A megadott üzenetváltás elemzése: tényezők, funkciók, a digitális írásbeliség sajátosságai"
+  ],
+  "sources": [
+    {
+      "title": "Üzenetváltás két osztálytárs között (este 21:40)",
+      "text": "Peti: Szia! Holnap nem tudok menni a próbára, beteg vagyok :( Megmondanád Kovács tanárnőnek? Köszi!!!\nAnna: Szia! Persze, megmondom. Jobbulást! Majd elküldöm, mit vettünk."
+    }
+  ],
+  "keyPoints": [
+    "A kommunikáció tényezői: adó (feladó), vevő (címzett), üzenet (közlemény), csatorna, kód, valóság (kontextus, beszédhelyzet).",
+    "A nyelvi funkciók (Jakobson): ismeretközlő (az üzenet tárgyára, a valóságra irányul), érzelemkifejező (az adóra), felhívó (a vevőre), kapcsolattartó (a csatornára), metanyelvi (a kódra), esztétikai/poétikai (magára az üzenetre).",
+    "Egy közlésben általában több funkció is jelen van, de az egyik uralkodó.",
+    "A szövegben az adó Peti, a vevő Anna (a válaszban szerepcsere történik); a csatorna írásos, digitális (SMS / üzenetküldő); a kód a magyar nyelv kiegészítve emotikonnal.",
+    "Ismeretközlő funkció: „Holnap nem tudok menni a próbára, beteg vagyok”.",
+    "Felhívó funkció: „Megmondanád Kovács tanárnőnek?” – udvarias kérés feltételes módban, kérdő formában.",
+    "Érzelemkifejező: a „:(” emotikon, a halmozott felkiáltójelek és a „Jobbulást!”.",
+    "Kapcsolattartó: „Szia!”, „Köszi!!!” – a kapcsolat megnyitása, fenntartása.",
+    "A digitális írásbeliségben az emotikonok és az írásjelek pótolják a hanghordozást, a mimikát (nem nyelvi jelek)."
+  ],
+  "speakingSeconds": 300,
+  "prepSeconds": 600,
+  "usefulPhrases": [
+    { "en": "adó – vevő – üzenet – csatorna – kód – valóság", "hu": "a hat tényező sorrendben, Jakobson nyomán" },
+    { "en": "ismeretközlő, érzelemkifejező, felhívó, kapcsolattartó, metanyelvi, esztétikai funkció", "hu": "a hat nyelvi funkció" },
+    { "en": "uralkodó (domináns) funkció", "hu": "a közlés fő célja – a többi funkció mellette is jelen lehet" },
+    { "en": "nem nyelvi jelek", "hu": "mimika, gesztus, hanghordozás; írásban az emotikonok pótolják őket" },
+    { "en": "A megadott szövegben … példa erre a … funkcióra.", "hu": "elmélet és szöveg összekapcsolása" }
+  ],
+  "sampleAnswer": {
+    "turns": [
+      {
+        "speaker": "candidate",
+        "text": "A kommunikáció információcsere, amelynek során az adó egy üzenetet juttat el a vevőhöz. Roman Jakobson modellje szerint a folyamatnak hat tényezője van. Az adó az, aki az üzenetet létrehozza, a vevő az, akinek szól. Az üzenet vagy közlemény maga a tartalom, a csatorna az a fizikai közeg, amelyen keresztül eljut a vevőhöz, például a levegő a beszédnél vagy a képernyő egy üzenetnél. A kód a jelrendszer, amelyet mindkét félnek ismernie kell, nálunk a magyar nyelv. A valóság vagy kontextus pedig az a helyzet és az a világ, amelyről és amelyben az üzenet szól.\n\nJakobson mindegyik tényezőhöz egy nyelvi funkciót rendelt. Az ismeretközlő funkció a valóságra irányul, az érzelemkifejező az adóra, a felhívó a vevőre, a kapcsolattartó a csatornára, a metanyelvi a kódra, az esztétikai pedig magára az üzenetre. Egy közlésben általában több funkció is jelen van, de az egyik uralkodó.\n\nA megadott üzenetváltásban először Peti az adó és Anna a vevő, a válasznál szerepcsere történik. A csatorna írásos, digitális, a kód a magyar nyelv, amelyet az emotikon egészít ki. A „Holnap nem tudok menni a próbára, beteg vagyok” mondat ismeretközlő. A „Megmondanád Kovács tanárnőnek?” felhívó funkciójú, de a feltételes mód és a kérdő forma udvariassá teszi a kérést. A szomorú arcot jelölő emotikon, a három felkiáltójel és Anna „Jobbulást!” kívánsága érzelemkifejező, a „Szia!” és a „Köszi!!!” pedig kapcsolattartó elem. Érdekes, hogy az írott üzenetben az emotikonok és az írásjelek pótolják azt, amit élőszóban a hanghordozás és a mimika fejezne ki."
+      }
+    ],
+    "notes": [
+      "Tartalom: a felelet mind a hat tényezőt és mind a hat funkciót megnevezi és összekapcsolja, majd a szöveg minden fontos elemét besorolja.",
+      "Forráshasználat: a vizsgázó konkrét idézetekkel bizonyít, és észreveszi a finomabb jelenségeket is (szerepcsere, udvarias feltételes mód, az emotikon mint nem nyelvi jel).",
+      "Nyelvi minőség: szakszerű, tömör, logikusan tagolt (elmélet – szövegelemzés) előadás."
+    ]
+  }
+}

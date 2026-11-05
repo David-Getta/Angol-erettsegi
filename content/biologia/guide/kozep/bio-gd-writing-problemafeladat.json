@@ -1,0 +1,132 @@
+{
+  "schemaVersion": 1,
+  "id": "bio-gd-writing-problemafeladat",
+  "subject": "biologia",
+  "revision": 1,
+  "level": "kozep",
+  "source": "generated",
+  "topic": "utmutato",
+  "title": "Problémafeladat (emelt szint)",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "guide",
+  "type": "writing",
+  "target": "problemafeladat",
+  "summaryHu": "A problémafeladat az emelt szintű II. rész esszé helyett választható feladata: egy gyakorlati vagy kutatási problémához (pl. útsó és csírázás, enzimaktivitás, szennyezés hatása) kell hipotézist megfogalmazni, kísérletet tervezni, megadott adatokat elemezni és következtetést levonni. A 20 pontból az összefüggések, a hipotézis, a kísérlettervezés és a következtetés minősége (5 pont) mellett a tartalmi elemek (12) és a felépítés, szaknyelv (3) is számít.",
+  "steps": [
+    {
+      "title": "A probléma pontos megfogalmazása",
+      "explanation": "Olvasd el a helyzetleírást és a rendelkezésre álló eszközöket. Fogalmazd meg egy mondatban, mi a kérdés: melyik tényező hatását kell vizsgálni, és min mérjük a hatást.",
+      "tips": [
+        "Az eszközlista megmutatja, milyen mérés lehetséges."
+      ]
+    },
+    {
+      "title": "Hipotézis",
+      "explanation": "A hipotézis ellenőrizhető állítás: tényező + a hatás iránya + mért eredmény.",
+      "tips": [
+        "„A sókoncentráció növekedése csökkenti a retekmagok csírázási arányát.”",
+        "Kerüld a kérdő formát és a bizonytalan („valahogy hat”) megfogalmazást."
+      ]
+    },
+    {
+      "title": "Kísérletterv",
+      "explanation": "Add meg: független változó (értékekkel), függő változó (hogyan méred), állandó tényezők (felsorolva), kontroll, ismétlés és mintaszám, a mérés ideje, a várható eredmény.",
+      "tips": [
+        "Egyszerre csak egy tényezőt változtass.",
+        "Párhuzamos mintákkal (legalább 3) és nagyobb mintaszámmal dolgozz."
+      ]
+    },
+    {
+      "title": "Adatelemzés",
+      "explanation": "A megadott adatokból számolj (arány, százalék, átlag), írd le az összefüggést, és vesd össze a hipotézissel.",
+      "tips": [
+        "Írd le a műveletet is: 14/25 = 56%.",
+        "Jelöld, ha a változás nem egyenletes (pl. küszöb felett gyorsul)."
+      ]
+    },
+    {
+      "title": "Magyarázat, következtetés, hibaforrás",
+      "explanation": "Magyarázd meg biológiailag az eredményt, vond le a következtetést (óvatosan, a vizsgált körülményekre), nevezz meg hibaforrásokat, és tegyél gyakorlati javaslatot.",
+      "tips": [
+        "A laboratóriumi eredményt ne vidd át egy az egyben a természetes környezetre – mondd meg, miért."
+      ]
+    }
+  ],
+  "phrases": [
+    {
+      "group": "Hipotézis",
+      "en": "Feltételezem, hogy a … növekedése csökkenti / növeli a …",
+      "hu": "ellenőrizhető hipotézis"
+    },
+    {
+      "group": "Változók",
+      "en": "Független változó: … (értékei: …); függő változó: …",
+      "hu": "a változók megadása"
+    },
+    {
+      "group": "Állandó tényezők",
+      "en": "Minden más feltételt azonos értéken tartok: …",
+      "hu": "rögzített tényezők felsorolása"
+    },
+    {
+      "group": "Kontroll",
+      "en": "Kontrollként … (a vizsgált tényező nélkül) mintát állítok be.",
+      "hu": "a kontroll leírása"
+    },
+    {
+      "group": "Ismétlés",
+      "en": "Minden beállítást háromszor ismétlek, és átlagot számolok.",
+      "hu": "megbízhatóság növelése"
+    },
+    {
+      "group": "Várható eredmény",
+      "en": "Ha a hipotézis helyes, akkor …",
+      "hu": "előrejelzés"
+    },
+    {
+      "group": "Következtetés",
+      "en": "Az adatok alátámasztják a hipotézist, mert …",
+      "hu": "következtetés"
+    },
+    {
+      "group": "Hibaforrás",
+      "en": "Hibaforrás lehet …, amelyet … csökkenthetünk.",
+      "hu": "hibaforrás és javítás"
+    }
+  ],
+  "mistakes": [
+    {
+      "wrong": "Hipotézis: „Megvizsgálom, hogy a só hat-e a csírázásra.”",
+      "right": "„A sókoncentráció növekedése csökkenti a csírázási arányt.”",
+      "why": "A hipotézis állítás, irányt is tartalmaz; a vizsgálat célja nem hipotézis."
+    },
+    {
+      "wrong": "A kísérlettervből hiányzik a kontroll és az ismétlés.",
+      "right": "A tervben szerepel a kontroll (0 g/l) és a párhuzamos minták.",
+      "why": "A kísérlettervezés pontjai ezekre is vonatkoznak."
+    },
+    {
+      "wrong": "Két tényezőt változtat egyszerre (sókoncentráció és hőmérséklet).",
+      "right": "Csak a sókoncentrációt változtatja, a hőmérséklet állandó.",
+      "why": "Különben nem tudni, melyik tényező okozta az eltérést."
+    },
+    {
+      "wrong": "A következtetés: „A só minden növényt elpusztít.”",
+      "right": "„A vizsgált koncentrációkban a só csökkentette a retek csírázását.”",
+      "why": "A következtetés nem lehet általánosabb a vizsgálatnál."
+    }
+  ],
+  "checklist": [
+    "A hipotézisem ellenőrizhető (tényező + irány + mért eredmény)?",
+    "Megadtam a független és a függő változót, az állandó tényezőket, a kontrollt és az ismétlést?",
+    "Az adatokból számoltam, és leírtam a műveletet?",
+    "A magyarázatom biológiailag helyes és teljes?",
+    "Van következtetés, hibaforrás és gyakorlati javaslat?"
+  ],
+  "timing": "Kb. 60 perc: 8–10 perc a probléma és az adatok értelmezése, 40–45 perc írás szempontonként, 5 perc ellenőrzés.",
+  "levelNotes": {
+    "kozep": "Középszinten nincs problémafeladat, de a kísérletelemzés és a szóbeli B tétel ugyanezt a gondolkodást (változók, kontroll, következtetés) kéri egyszerűbb formában.",
+    "emelt": "Emelt szinten a problémafeladat jó választás, ha a kísérlettervezés és az adatelemzés erősséged; a négy témakörből bármelyikből jöhet (pl. növényélettani kísérlet, egészségtani vizsgálat, környezetszennyezés hatása)."
+  }
+}
