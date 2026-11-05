@@ -54,7 +54,7 @@ export function SpeakingPractice({ task, examinerPrompt, ttsRate, base, language
 function TaskCard({ task }: { task: SpeakingTask }) {
   return (
     <Card>
-      <p className="text-sm">{task.instructionsHu}</p>
+      <p className="whitespace-pre-line text-sm">{task.instructionsHu}</p>
       {task.questions.length > 0 && (
         <>
           <h3 className="mt-4 text-sm font-semibold">{t.speaking.questions}</h3>
@@ -99,9 +99,24 @@ function TaskCard({ task }: { task: SpeakingTask }) {
       {task.prompts.length > 0 && (
         <ul className="mt-4 list-disc pl-5 text-[15px]">
           {task.prompts.map((p) => (
-            <li key={p}>{p}</li>
+            <li key={p} className="whitespace-pre-line">
+              {p}
+            </li>
           ))}
         </ul>
+      )}
+      {task.sources.length > 0 && (
+        <div className="mt-4" data-testid="oral-sources">
+          <h3 className="text-sm font-semibold">{t.speaking.sources}</h3>
+          <div className="mt-1 grid gap-2">
+            {task.sources.map((s, i) => (
+              <div key={i} className="rounded-lg border border-border bg-surface-2/50 p-3">
+                {s.title && <div className="mb-1 text-sm font-semibold">{s.title}</div>}
+                <div className="whitespace-pre-wrap font-reading text-[15px] leading-relaxed">{s.text}</div>
+              </div>
+            ))}
+          </div>
+        </div>
       )}
       {task.debate && (
         <div className="mt-4 space-y-2">

@@ -233,6 +233,7 @@ export const t = {
     examiner: "Vizsgáztató",
     candidate: "Vizsgázó",
     why: "Miért jó?",
+    keyPoints: "Ami egy teljes feleletből nem hiányozhat",
     words: (n: number) => `a vizsgázó ${n} szót mond`,
   },
 
@@ -355,6 +356,7 @@ export const t = {
     examinerArgs: "A vizsgáztató ellenérvei (lehetséges)",
     yourIdeas: "Ötletek az érveléshez",
     scenes: "Képek (leírás)",
+    sources: "A tételhez kapott anyag (források, adatok, kísérlet, feladatok)",
     questions: "Kérdések",
     goals: "Teendőid",
     followUps: "További kérdések",

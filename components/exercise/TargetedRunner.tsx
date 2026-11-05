@@ -96,7 +96,7 @@ export function TargetedRunner({ items, categoryNames, section = "language-use" 
           {categoryNames[it.category]} · {cur!.taskTitle}
         </div>
         <div className="mt-1 text-sm text-muted">{cur!.instructions}</div>
-        <div lang={contentLang} className="mt-3 font-reading text-lg leading-relaxed" data-testid="targeted-context">
+        <div lang={contentLang} className="mt-3 whitespace-pre-line font-reading text-lg leading-relaxed" data-testid="targeted-context">
           {cur!.context}
         </div>
         <div className="mt-4">

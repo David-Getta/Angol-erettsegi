@@ -40,8 +40,18 @@ export function SampleAnswer({ task, open = false }: { task: SpeakingTask; open?
             ),
           )}
         </div>
-        {sa.notes.length > 0 && (
+        {(sa.notes.length > 0 || task.keyPoints.length > 0) && (
           <div className="text-sm">
+            {task.keyPoints.length > 0 && (
+              <div className="mb-4" data-testid="key-points">
+                <h3 className="mb-1 font-semibold">{t.sample.keyPoints}</h3>
+                <ul className="list-disc space-y-1 pl-5">
+                  {task.keyPoints.map((k, i) => (
+                    <li key={i}>{k}</li>
+                  ))}
+                </ul>
+              </div>
+            )}
             <h3 className="mb-1 font-semibold">{t.sample.why}</h3>
             <ul className="list-disc space-y-1 pl-5">
               {sa.notes.map((n, i) => (
