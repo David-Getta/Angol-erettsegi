@@ -1,0 +1,153 @@
+{
+  "schemaVersion": 1,
+  "id": "mag-lu-emelt-korszakok-mufajok",
+  "subject": "magyar",
+  "revision": 1,
+  "level": "emelt",
+  "source": "generated",
+  "topic": "valaszthato-szerzok",
+  "title": "Korszakok, stílusirányzatok, műfajok",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "language-use",
+  "type": "muveltsegi",
+  "instructions": "Oldja meg az irodalomtörténeti és műfajelméleti feladatokat! Válassza ki a helyes választ, döntse el az állítások igazságát (igaz/hamis), illetve írja be a kért nevet. A 0. sor a példa.",
+  "example": {
+    "id": "0",
+    "kind": "choice",
+    "prompt": "Melyik stílusirányzathoz sorolja az irodalomtörténet elsősorban Ady Endre Új versek (1906) című kötetét?",
+    "options": [
+      { "key": "A", "text": "romantika" },
+      { "key": "B", "text": "szimbolizmus" },
+      { "key": "C", "text": "realizmus" },
+      { "key": "D", "text": "klasszicizmus" }
+    ],
+    "answer": "B",
+    "category": "irodalomtorteneti-kontextus",
+    "explanation": "Szimbolizmus: az Új versek képei (Ugar, Ős Kaján, hajó, Párizs) nem egyértelmű jelentésű jelképek, a hangulat és a sejtetés fontosabb a közvetlen kimondásnál."
+  },
+  "items": [
+    {
+      "id": "1",
+      "kind": "text",
+      "prompt": "Ki írta az Ágis tragédiája című drámát, amelynek 1772-es megjelenésétől a magyar felvilágosodás kezdetét számítjuk? Írja le a szerző nevét!",
+      "answer": ["Bessenyei György", "Bessenyei"],
+      "maxWords": 2,
+      "category": "irodalomtorteneti-kontextus",
+      "explanation": "Helyes válasz: Bessenyei György. Az Ágis tragédiája 1772-ben jelent meg Bécsben; a magyar irodalomtörténet ezt az évet tekinti a felvilágosodás kezdetének. Bessenyei a bécsi magyar testőrírók egyike volt."
+    },
+    {
+      "id": "2",
+      "kind": "choice",
+      "prompt": "Melyik műfajra illik Gyulai Pál nevezetes meghatározása: „tragédia dalban elbeszélve”?",
+      "options": [
+        { "key": "A", "text": "óda" },
+        { "key": "B", "text": "elégia" },
+        { "key": "C", "text": "ballada" },
+        { "key": "D", "text": "rapszódia" }
+      ],
+      "answer": "C",
+      "category": "muertelmezes-eszkozok",
+      "explanation": "Helyes: ballada. A ballada a líra, az epika és a dráma határán álló műfaj: tragikus történetet beszél el dalszerű formában, sűrítve, sokszor kihagyásos szerkesztéssel – ezt fejezi ki Gyulai Pál meghatározása.",
+      "wrongOptions": {
+        "A": "Az óda emelkedett hangú, magasztaló lírai műfaj; nem elbeszélő.",
+        "B": "Az elégia a veszteség, az elmúlás miatti fájdalmas-melankolikus lírai műfaj, nem tragikus történet elbeszélése.",
+        "D": "A rapszódia szenvedélyes, szertelen, csapongó gondolatmenetű lírai műfaj (pl. Vörösmarty: A vén cigány)."
+      }
+    },
+    {
+      "id": "3",
+      "kind": "choice",
+      "prompt": "Mi a disztichon?",
+      "options": [
+        { "key": "A", "text": "Két hexameterből álló sorpár." },
+        { "key": "B", "text": "Egy hexameterből és egy pentameterből álló sorpár." },
+        { "key": "C", "text": "Két felező tizenkettesből álló, páros rímű sorpár." },
+        { "key": "D", "text": "Négy jambikus sorból álló versszak." }
+      ],
+      "answer": "B",
+      "category": "muertelmezes-eszkozok",
+      "explanation": "Helyes: B. A disztichon időmértékes sorpár: egy hexameter és egy pentameter. Az epigramma és az elégia klasszikus formája (pl. Janus Pannonius epigrammái).",
+      "wrongOptions": {
+        "A": "A hexameterek sora az eposzok versformája (pl. Iliász), de két hexameter nem alkot disztichont.",
+        "C": "A felező tizenkettes ütemhangsúlyos sor (pl. Toldi); a disztichon időmértékes.",
+        "D": "A jambikus versszak nem azonos a disztichonnal, amely két sorból áll."
+      }
+    },
+    {
+      "id": "4",
+      "kind": "choice",
+      "prompt": "Melyik stíluskorszak alkotása Zrínyi Miklós Szigeti veszedelem című eposza (1651)?",
+      "options": [
+        { "key": "A", "text": "reneszánsz" },
+        { "key": "B", "text": "barokk" },
+        { "key": "C", "text": "felvilágosodás" },
+        { "key": "D", "text": "romantika" }
+      ],
+      "answer": "B",
+      "category": "irodalomtorteneti-kontextus",
+      "explanation": "Helyes: barokk. A Szigeti veszedelem a magyar barokk eposz főműve: a keresztény hősiesség, a mennyei beavatkozás és a monumentalitás a korszak jellemzői; az Adriai tengernek Syrenaia című kötetben jelent meg 1651-ben.",
+      "wrongOptions": {
+        "A": "A reneszánsz magyar irodalom fő alakjai Janus Pannonius és Balassi Bálint (15–16. század); Zrínyi a 17. század közepén alkotott.",
+        "C": "A magyar felvilágosodás 1772-vel kezdődik, több mint egy évszázaddal később.",
+        "D": "A romantika a 19. század első felének irányzata."
+      }
+    },
+    {
+      "id": "5",
+      "kind": "tf",
+      "prompt": "Igaz vagy hamis? A Nyugat című folyóirat első száma 1908-ban jelent meg.",
+      "answer": "T",
+      "category": "irodalomtorteneti-kontextus",
+      "explanation": "Igaz: a Nyugat 1908. január 1-jén indult, és 1941-ig, Babits Mihály haláláig működött. A 20. század első felének legfontosabb irodalmi folyóirata volt."
+    },
+    {
+      "id": "6",
+      "kind": "tf",
+      "prompt": "Igaz vagy hamis? Madách Imre Az ember tragédiája című drámai költeményének első és utolsó színében az Úr is szerepel.",
+      "answer": "T",
+      "category": "irodalomtorteneti-kontextus",
+      "explanation": "Igaz: az első szín a mennyben játszódik (a teremtés után az Úr és Lucifer szembenállása), az utolsó, 15. színben pedig az Úr mondja a záró sort: „Mondottam, ember: küzdj és bízva bízzál!”"
+    },
+    {
+      "id": "7",
+      "kind": "choice",
+      "prompt": "Melyik mű NEM Mikszáth Kálmán alkotása?",
+      "options": [
+        { "key": "A", "text": "Beszterce ostroma" },
+        { "key": "B", "text": "A jó palócok" },
+        { "key": "C", "text": "Különös házasság" },
+        { "key": "D", "text": "Egy magyar nábob" }
+      ],
+      "answer": "D",
+      "category": "irodalomtorteneti-kontextus",
+      "explanation": "Helyes: D. Az Egy magyar nábob Jókai Mór regénye (Kárpáthy János története); a másik három Mikszáth műve.",
+      "wrongOptions": {
+        "A": "A Beszterce ostroma Mikszáth regénye (Pongrácz István gróf, a „középkorban élő” különc).",
+        "B": "A jó palócok Mikszáth novelláskötete (1882), amely ismertté tette a szerzőt.",
+        "C": "A Különös házasság Mikszáth regénye (Dőry Mária és Buttler János kényszerházassága)."
+      }
+    },
+    {
+      "id": "8",
+      "kind": "choice",
+      "prompt": "Melyik szerző műveiben szerepel Esti Kornél, az író „hasonmása”?",
+      "options": [
+        { "key": "A", "text": "Kosztolányi Dezső" },
+        { "key": "B", "text": "Krúdy Gyula" },
+        { "key": "C", "text": "Karinthy Frigyes" },
+        { "key": "D", "text": "Babits Mihály" }
+      ],
+      "answer": "A",
+      "category": "irodalomtorteneti-kontextus",
+      "explanation": "Helyes: Kosztolányi Dezső. Esti Kornél az író alteregója, az Esti Kornél (1933) című novellaciklus főhőse; a szerző kalandvágyó, szabad „másik énje”.",
+      "wrongOptions": {
+        "B": "Krúdy visszatérő hőse Szindbád, nem Esti Kornél.",
+        "C": "Karinthy fő művei közé az Így írtok ti és a Tanár úr kérem tartozik; Esti Kornél nem az ő alakja.",
+        "D": "Babits a Nyugat költője és szerkesztője volt, de Esti Kornél nem az ő szereplője."
+      }
+    }
+  ],
+  "glossary": [],
+  "suggestedMinutes": 7
+}

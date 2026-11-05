@@ -2,6 +2,170 @@
   "schemaVersion": 1,
   "id": "nem-gr-verb-rection",
   "subject": "nemet",
-  "level": "vocabulary",
-  "source": "generated"
+  "level": "kozep",
+  "source": "generated",
+  "topic": "nyelvtan",
+  "title": "Igevonzatok",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "grammar",
+  "type": "lesson",
+  "category": "verb-rection",
+  "summaryHu": "Sok német ige, melléknév és főnév állandó elöljárót vonz meghatározott esettel (warten auf + Akk., Angst haben vor + Dat., sich interessieren für + Akk.). Ezeket egységként kell megtanulni, mert sem a magyar rag, sem az angol elöljáró nem segít: a magyar „-tól fél” alapján von-t, az angol wait for alapján für-t szoktak írni. A nyitott kloze-ban az elöljáró, a feleletválasztós lyukas szövegben a vonzat esete gyakori kérdés, írásban pedig a vonzatos igék (sich freuen auf, sich bedanken für, sich beschweren über) szinte minden levélben előfordulnak.",
+  "rules": [
+    {
+      "title": "A leggyakoribb vonzatos igék",
+      "explanation": "Akkusativval: warten auf (vár valakire/valamire), sich freuen auf (vár valamit, örül a jövőbeli dolognak), sich freuen über (örül valaminek, ami van/volt), denken an (gondol valakire/valamire), sich erinnern an (emlékszik), sich gewöhnen an (hozzászokik), sich interessieren für (érdeklődik), sich bedanken für (megköszön), sich kümmern um (gondoskodik), bitten um (kér valamit), sich ärgern über (bosszankodik), sprechen über (beszél valamiről), sich beschweren über (panaszkodik). Dativval: teilnehmen an (részt vesz), Angst haben vor (fél valamitől), träumen von (álmodik), sprechen mit (beszél valakivel), fragen nach (kérdez valami felől), sich beschäftigen mit (foglalkozik), abhängen von (függ valamitől), bestehen aus (áll valamiből), gratulieren zu (gratulál valamihez), helfen bei (segít valamiben).",
+      "emeltOnly": false,
+      "examples": [
+        { "en": "Ich warte schon seit zwanzig Minuten auf den Bus.", "hu": "Már húsz perce várok a buszra." },
+        { "en": "Meine Schwester hat Angst vor Spinnen.", "hu": "A húgom fél a pókoktól." },
+        { "en": "Nächste Woche nehme ich an einem Schreibwettbewerb teil.", "hu": "Jövő héten részt veszek egy írásversenyen." }
+      ]
+    },
+    {
+      "title": "Az eset is a vonzat része",
+      "explanation": "Ha a vonzat váltakozó elöljáró (an, auf, über, vor, in), az esetet nem a hol?/hová? kérdés, hanem maga az ige dönti el – ezért az esettel együtt tanuld. Ökölszabály: az auf és az über vonzatként szinte mindig Akkusativot kíván (warten auf den Bus, sich ärgern über den Lärm), a vor mindig Dativot (Angst vor dem Hund, warnen vor der Gefahr), az an-nál meg kell tanulni (denken an + Akk., de teilnehmen an + Dat.).",
+      "emeltOnly": false,
+      "examples": [
+        { "en": "Ich denke oft an meinen Opa.", "hu": "Gyakran gondolok a nagypapámra.", "note": "denken an + Akkusativ." },
+        { "en": "Wir haben am Projekt teilgenommen.", "hu": "Részt vettünk a projektben.", "note": "teilnehmen an + Dativ." }
+      ]
+    },
+    {
+      "title": "Ugyanaz az ige, más elöljáró – más jelentés",
+      "explanation": "sich freuen auf + Akk. = előre örül, alig vár valamit (jövő); sich freuen über + Akk. = örül valaminek, ami már megvan vagy megtörtént. sprechen mit = beszél valakivel; sprechen über / von = beszél valamiről. denken an = gondol valakire/valamire; denken über = vélekedik valamiről (Was denkst du über …?).",
+      "emeltOnly": false,
+      "examples": [
+        { "en": "Ich freue mich schon auf die Sommerferien.", "hu": "Már alig várom a nyári szünetet." },
+        { "en": "Ich habe mich sehr über dein Geschenk gefreut.", "hu": "Nagyon örültem az ajándékodnak." },
+        { "en": "Was denkst du über das neue Handyverbot an unserer Schule?", "hu": "Mit gondolsz az iskolánk új mobiltilalmáról?" }
+      ]
+    },
+    {
+      "title": "Kérdés és visszautalás: worauf? – darauf, auf wen? – auf ihn",
+      "explanation": "Dologra kérdezve wo(r)- + elöljáró (Worauf wartest du? Wofür interessierst du dich? Woran denkst du?), visszautalva da(r)- + elöljáró (Ich warte darauf. Ich interessiere mich dafür). Az -r- akkor kell, ha az elöljáró magánhangzóval kezdődik (worüber, darauf). Személyre kérdezve és utalva: elöljáró + kérdő/személyes névmás (Auf wen wartest du? – Auf meine Freundin. Ich warte auf sie).",
+      "emeltOnly": false,
+      "examples": [
+        { "en": "Wofür interessierst du dich? – Für Fotografie. Und du? – Ich interessiere mich auch dafür.", "hu": "Mi érdekel? – A fotózás. És téged? – Engem is az." },
+        { "en": "Mit wem hast du gesprochen? – Mit meinem Lehrer.", "hu": "Kivel beszéltél? – A tanárommal." }
+      ]
+    },
+    {
+      "title": "Vonzat + mellékmondat vagy főnévi igenév",
+      "explanation": "Ha a vonzat helyén egész tagmondat áll, a főmondatban a da(r)- + elöljáró utalószó jelzi előre: Ich freue mich darauf, dich bald zu sehen. Ich warte darauf, dass du anrufst. Ich habe Angst davor, die Prüfung nicht zu bestehen. Az utalószó egyes igéknél elhagyható, de írásban a jelenléte igényesebb.",
+      "emeltOnly": true,
+      "examples": [
+        { "en": "Ich bedanke mich dafür, dass Sie mir so schnell geantwortet haben.", "hu": "Köszönöm, hogy ilyen gyorsan válaszolt." },
+        { "en": "Es hängt davon ab, ob wir genug Geld haben.", "hu": "Attól függ, van-e elég pénzünk." }
+      ]
+    },
+    {
+      "title": "Melléknevek és főnevek vonzata",
+      "explanation": "Melléknevek: stolz auf + Akk. (büszke), zufrieden mit (elégedett), interessiert an + Dat. (érdeklődő), verantwortlich für (felelős), bekannt für (híres valamiről), abhängig von (függő), bereit zu (kész valamire), verliebt in + Akk. (szerelmes). Főnevek: Angst vor + Dat., Interesse an + Dat., Lust auf + Akk. (kedv valamihez), Freude an + Dat., Bitte um, Frage nach.",
+      "emeltOnly": false,
+      "examples": [
+        { "en": "Meine Eltern sind stolz auf mich.", "hu": "A szüleim büszkék rám." },
+        { "en": "Hast du Lust auf eine Pizza?", "hu": "Van kedved egy pizzához?" },
+        { "en": "Ich bin mit meinen Noten zufrieden.", "hu": "Elégedett vagyok a jegyeimmel." }
+      ]
+    }
+  ],
+  "commonMistakes": [
+    { "wrong": "Ich warte für dich vor dem Kino.", "right": "Ich warte auf dich vor dem Kino.", "why": "A warten vonzata auf + Akkusativ. A für az angol wait for tükörfordítása." },
+    { "wrong": "Ich habe Angst von Hunden.", "right": "Ich habe Angst vor Hunden.", "why": "Az Angst haben vonzata vor + Dativ. A von a magyar „-tól fél” ragjának tükörfordítása." },
+    { "wrong": "Ich interessiere mich an Geschichte.", "right": "Ich interessiere mich für Geschichte.", "why": "A sich interessieren vonzata für + Akkusativ. Az an a melléknévi szerkezethez tartozik: Ich bin an Geschichte interessiert." },
+    { "wrong": "Ich nehme in einem Sprachkurs teil.", "right": "Ich nehme an einem Sprachkurs teil.", "why": "A teilnehmen vonzata an + Dativ (a magyar „tanfolyamon vesz részt” alapján szokták in-nel mondani)." },
+    { "wrong": "Ich denke oft auf dich.", "right": "Ich denke oft an dich.", "why": "A denken vonzata an + Akkusativ. A magyar „rád gondolok” (-ra) alapján könnyű tévesen auf-ot írni." },
+    { "wrong": "Ich freue mich auf dein Geschenk, das ich gestern bekommen habe.", "right": "Ich freue mich über dein Geschenk, das ich gestern bekommen habe.", "why": "Ami már megvan vagy megtörtént, annak über-rel örülünk; a sich freuen auf jövőbeli eseményre vonatkozik (alig várja)." }
+  ],
+  "examTips": [
+    "A vonzatos igéket mindig egységként tanuld: ige + elöljáró + eset + példa (warten auf + A: auf den Bus). Egy saját lista a leggyorsabb segítség a nyitott kloze-hoz.",
+    "Nyitott kloze-ban, ha az ige vonzatos (warten, denken, sich interessieren, teilnehmen …), a hiányzó szó gyakran az elöljáró vagy a darauf/dafür típusú utalószó.",
+    "Írásban a levél gyakori fordulatai vonzatos igék: Ich bedanke mich für …, Ich freue mich auf …, Ich interessiere mich für …, Ich möchte mich über … beschweren, Ich habe an … teilgenommen. Ezeket hibátlanul érdemes begyakorolni."
+  ],
+  "practice": [
+    {
+      "id": "1",
+      "kind": "choice",
+      "prompt": "Ich freue mich schon ___ die Sommerferien am Balaton.",
+      "options": [
+        { "key": "A", "text": "über" },
+        { "key": "B", "text": "auf" },
+        { "key": "C", "text": "an" },
+        { "key": "D", "text": "für" }
+      ],
+      "answer": "B",
+      "category": "verb-rection",
+      "explanation": "Helyes: auf. A schon és a jövőbeli nyári szünet azt mutatja, hogy előre örülünk valaminek (alig várjuk) – ez a sich freuen auf + Akkusativ.",
+      "wrongOptions": {
+        "A": "A sich freuen über arra vonatkozik, aminek már most vagy utólag örülünk (pl. ajándék); a nyári szünet még csak lesz.",
+        "C": "A sich freuen nem áll an elöljáróval (a Freude an etwas haben főnévi szerkezet).",
+        "D": "A für nem vonzata a sich freuen-nek; ez angol hatás (happy for)."
+      }
+    },
+    {
+      "id": "2",
+      "kind": "text",
+      "prompt": "Hast du Angst ___ großen Hunden?",
+      "answer": ["vor"],
+      "category": "verb-rection",
+      "explanation": "Helyes: vor. Az Angst haben vonzata vor + Dativ (großen Hunden – többes számú Dativ). Nem von, bár a magyarban „-tól” félünk."
+    },
+    {
+      "id": "3",
+      "kind": "choice",
+      "prompt": "Meine Cousine interessiert sich sehr ___ Mode und Design.",
+      "options": [
+        { "key": "A", "text": "an" },
+        { "key": "B", "text": "für" },
+        { "key": "C", "text": "über" },
+        { "key": "D", "text": "mit" }
+      ],
+      "answer": "B",
+      "category": "verb-rection",
+      "explanation": "Helyes: für. A sich interessieren vonzata für + Akkusativ.",
+      "wrongOptions": {
+        "A": "Az an a melléknévi szerkezet vonzata (interessiert sein an + Dativ), a visszaható igéé nem.",
+        "C": "Az über nem vonzata a sich interessieren-nek.",
+        "D": "A mit nem vonzata a sich interessieren-nek (a sich beschäftigen mit vonzata)."
+      }
+    },
+    {
+      "id": "4",
+      "kind": "text",
+      "prompt": "Ich denke oft ___ meine Kindheit in Debrecen.",
+      "answer": ["an"],
+      "category": "verb-rection",
+      "explanation": "Helyes: an. A denken (gondol valakire/valamire) vonzata an + Akkusativ (meine Kindheit). A magyar „-ra” rag alapján könnyű tévesen auf-ot írni."
+    },
+    {
+      "id": "5",
+      "kind": "choice",
+      "prompt": "___ wartest du denn? – Auf den Bus nach Szentendre.",
+      "options": [
+        { "key": "A", "text": "Wo" },
+        { "key": "B", "text": "Worauf" },
+        { "key": "C", "text": "Wofür" },
+        { "key": "D", "text": "Woran" }
+      ],
+      "answer": "B",
+      "category": "verb-rection",
+      "explanation": "Helyes: Worauf. A warten vonzata auf; dologra kérdezve wo(r)- + elöljáró: worauf (az -r- az auf magánhangzója miatt kell).",
+      "wrongOptions": {
+        "A": "A wo helyre kérdez (hol?), a vonzatot nem tartalmazza.",
+        "C": "A wofür a für vonzatú igékre kérdez (Wofür interessierst du dich?).",
+        "D": "A woran az an vonzatú igékre kérdez (Woran denkst du?)."
+      }
+    },
+    {
+      "id": "6",
+      "kind": "text",
+      "prompt": "Gestern habe ich mich sehr ___ den Lärm meiner Nachbarn geärgert.",
+      "answer": ["über"],
+      "category": "verb-rection",
+      "explanation": "Helyes: über. A sich ärgern (bosszankodik valami miatt) vonzata über + Akkusativ (den Lärm)."
+    }
+  ],
+  "relatedCategories": ["preposition", "case", "collocation"]
 }
