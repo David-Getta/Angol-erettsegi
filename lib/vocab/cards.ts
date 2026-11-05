@@ -197,21 +197,25 @@ const IRREGULAR: Record<string, string[]> = {
 };
 
 /** Example sentence with the term blanked out (tolerates simple inflection and common irregular forms). */
+/** Placeholders that are not in the example sentence in this form (English sth / sb, German sich / etw. / jdn.). */
+const PLACEHOLDERS = /(?<![\p{L}])(sth|sb|someone|something|one's|sich|etw\.?|etwas|jdn\.?|jdm\.?|jds\.?|jemanden|jemandem)(?![\p{L}])/giu;
+
 export function clozeFor(sentence: string, term: string): string | null {
-  const words = term
-    .replace(/\b(sth|sb|someone|something|one's)\b/gi, "")
-    .trim()
-    .split(/\s+/)
-    .filter(Boolean);
+  let words = term.replace(PLACEHOLDERS, "").trim().split(/\s+/).filter(Boolean);
+  // a German noun with its article: the article changes with the case (der → den / dem / des), so only the noun is gapped
+  if (words.length > 1 && /^(der|die|das)$/i.test(words[0]!)) words = words.slice(1);
   if (!words.length) return null;
   const esc = (w: string) => w.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
   const alt = (w: string) => {
     const lw = w.toLowerCase();
-    const stem = lw.length > 4 ? lw.slice(0, lw.length - (/[ey]$/.test(lw) ? 1 : 0)) : lw;
-    const forms = [`${esc(stem)}[a-z]*`, ...(IRREGULAR[lw] ?? []).map(esc)];
+    let stem = lw;
+    if (lw.length > 5 && /en$/.test(lw)) stem = lw.slice(0, -2); // German infinitive: fahren → fahr…, übernachten → übernacht…
+    else if (lw.length > 4 && /[ey]$/.test(lw)) stem = lw.slice(0, -1); // English: decide → decid…, carry → carr…
+    const forms = [`${esc(stem)}\\p{L}*`, ...(IRREGULAR[lw] ?? []).map(esc)];
     return `(?:${forms.join("|")})`;
   };
-  const re = new RegExp(`\\b${words.map(alt).join("\\s+(?:\\w+\\s+)?")}\\b`, "i");
+  // Unicode-aware word boundaries (ä, ö, ü, ß, Hungarian accents); up to one word may stand between the parts
+  const re = new RegExp(`(?<![\\p{L}\\p{N}])${words.map(alt).join("\\s+(?:[\\p{L}\\p{N}]+\\s+)?")}(?![\\p{L}\\p{N}])`, "iu");
   if (!re.test(sentence)) return null;
   return sentence.replace(re, (m) => "_".repeat(Math.min(14, Math.max(5, m.length))));
 }

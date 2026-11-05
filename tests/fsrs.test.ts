@@ -31,5 +31,12 @@ describe("cloze cards", () => {
     expect(clozeFor("She has already made a decision.", "make a decision")).toMatch(/She has already _+\.?/);
     expect(clozeFor("The children were playing outside.", "play")).toContain("_");
     expect(clozeFor("Nothing here.", "decision")).toBeNull();
+    // German: umlauts, conjugated verbs, reflexive verbs, nouns with their article
+    expect(clozeFor("Wir übernachten in einer Jugendherberge.", "übernachten")).toBe("Wir ___________ in einer Jugendherberge.");
+    expect(clozeFor("Er übernachtete bei seinem Freund.", "übernachten")).toContain("_");
+    expect(clozeFor("Ich interessiere mich für Musik.", "sich interessieren für")).toContain("_");
+    expect(clozeFor("Ich warte am Bahnhof auf dich.", "der Bahnhof")).toBe("Ich warte am _______ auf dich.");
+    // Hungarian concept cards: suffixed forms
+    expect(clozeFor("A fotoszintézisnek két szakasza van.", "fotoszintézis")).toContain("_");
   });
 });
