@@ -3,9 +3,11 @@
 import { useState, useTransition } from "react";
 import { addWordCardAction } from "@/app/actions-practice";
 import { t } from "@/lib/i18n/hu";
+import { useContentLang } from "@/components/ContentLang";
 
 /** Phrase groups of a guide, each phrase one click away from the flashcards. */
 export function GuidePhrases({ phrases, guideId }: { phrases: { group: string; en: string; hu: string }[]; guideId: string }) {
+  const contentLang = useContentLang();
   const [added, setAdded] = useState<Set<string>>(new Set());
   const [pending, start] = useTransition();
   const groups = [...new Set(phrases.map((p) => p.group))];
@@ -20,7 +22,7 @@ export function GuidePhrases({ phrases, guideId }: { phrases: { group: string; e
               .map((p) => (
                 <li key={p.en} className="flex items-baseline gap-3 py-1.5">
                   <span className="min-w-0 flex-1">
-                    <span lang="en" className="font-reading text-[15px]">
+                    <span lang={contentLang} className="font-reading text-[15px]">
                       {p.en}
                     </span>
                     <span className="block text-muted">{p.hu}</span>

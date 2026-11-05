@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { categoryStats, recentErrors, weeklyTrend } from "@/lib/errors/log";
 import { fixedMistakes, pickMistakes } from "@/lib/targeted";
-import { targetedPath } from "@/lib/exam/config";
+import { targetedPath, contentLang } from "@/lib/exam/config";
 import { AddFixCardButton } from "@/components/vocab/AddFixCardButton";
 import { countBankItems } from "@/lib/targeted";
 import { examConfig } from "@/lib/exam/config";
@@ -166,7 +166,7 @@ export default async function ErrorLogPage({ searchParams }: { searchParams: Pro
                   </div>
                   {e.context && (
                     <div className="mt-1 font-reading text-[15px] text-muted">
-                      {t.errorLog.context}: <span lang="en">{e.context}</span>
+                      {t.errorLog.context}: <span lang={contentLang()}>{e.context}</span>
                     </div>
                   )}
                   <div className="mt-1">

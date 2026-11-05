@@ -4,7 +4,7 @@ import { getSubmission, versionsOf, rubricRefFor, gradingPromptFor } from "@/lib
 import { getContent } from "@/lib/tasks";
 import type { Level, SpeakingTask, WritingTask } from "@/lib/content/schema";
 import type { Feedback } from "@/lib/exchange/schema";
-import { examConfig, labelMaps } from "@/lib/exam/config";
+import { examConfig, labelMaps, contentLang } from "@/lib/exam/config";
 import { singleTaskExamPoints } from "@/lib/scoring/writing";
 import { speakingGoalIds } from "@/lib/exchange/prompts";
 import { t } from "@/lib/i18n/hu";
@@ -86,7 +86,7 @@ export function SubmissionDetail({ id, kind, base, partName }: { id: string; kin
               {t.writing.wordCount(sub.wordCount)}
               {sub.durationSec ? ` · ${Math.round(sub.durationSec / 60)} ${t.common.minutes}` : ""}
             </div>
-            <div lang="en" className="reading-text whitespace-pre-wrap" data-testid="submitted-text">
+            <div lang={contentLang()} className="reading-text whitespace-pre-wrap" data-testid="submitted-text">
               {sub.text}
             </div>
           </Card>

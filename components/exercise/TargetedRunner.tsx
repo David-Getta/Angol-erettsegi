@@ -8,8 +8,10 @@ import { t } from "@/lib/i18n/hu";
 import { checkTargetedAction, logTargetedTimeAction } from "@/app/actions-practice";
 import { ItemFeedback } from "@/components/exercise/ItemFeedback";
 import { Card, ProgressBar, btn } from "@/components/ui";
+import { useContentLang } from "@/components/ContentLang";
 
 export function TargetedRunner({ items, categoryNames, section = "language-use" }: { items: TargetedItem[]; categoryNames: Record<string, string>; section?: string }) {
+  const contentLang = useContentLang();
   const [idx, setIdx] = useState(0);
   const [answer, setAnswer] = useState("");
   const [result, setResult] = useState<ItemResult | null>(null);
@@ -94,7 +96,7 @@ export function TargetedRunner({ items, categoryNames, section = "language-use" 
           {categoryNames[it.category]} · {cur!.taskTitle}
         </div>
         <div className="mt-1 text-sm text-muted">{cur!.instructions}</div>
-        <div lang="en" className="mt-3 font-reading text-lg leading-relaxed" data-testid="targeted-context">
+        <div lang={contentLang} className="mt-3 font-reading text-lg leading-relaxed" data-testid="targeted-context">
           {cur!.context}
         </div>
         <div className="mt-4">

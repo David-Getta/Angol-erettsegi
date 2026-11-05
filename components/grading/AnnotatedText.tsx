@@ -4,16 +4,18 @@ import { useState } from "react";
 import type { Correction } from "@/lib/exchange/schema";
 import { locateAll, segmentText } from "@/lib/content/text";
 import { t } from "@/lib/i18n/hu";
+import { useContentLang } from "@/components/ContentLang";
 
 /** The student's text with every correction highlighted; click/hover shows the fix and the reason. */
 export function AnnotatedText({ text, corrections, categoryNames }: { text: string; corrections: Correction[]; categoryNames: Record<string, string> }) {
+  const contentLang = useContentLang();
   const [open, setOpen] = useState<number | null>(null);
   const ranges = locateAll(text, corrections.map((c) => c.original));
   const segs = segmentText(text, ranges);
   const c = open !== null ? corrections[open] : null;
   return (
     <div>
-      <div lang="en" className="reading-text whitespace-pre-wrap" data-testid="annotated-text">
+      <div lang={contentLang} className="reading-text whitespace-pre-wrap" data-testid="annotated-text">
         {segs.map((s, i) =>
           s.mark === undefined ? (
             <span key={i}>{s.text}</span>

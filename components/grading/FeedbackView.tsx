@@ -9,6 +9,7 @@ import { addPhrasesAction } from "@/app/actions-grading";
 import { useToast } from "../Toast";
 import { Badge, Card, ProgressBar, btn } from "../ui";
 import { AnnotatedText } from "./AnnotatedText";
+import { useContentLang } from "@/components/ContentLang";
 
 export type CriterionInfo = { id: string; name: string; max: number };
 
@@ -29,6 +30,7 @@ export function FeedbackView({
   categoryNames: Record<string, string>;
   examPoints?: { points: number; max: number; note: string } | null;
 }) {
+  const contentLang = useContentLang();
   const toast = useToast();
   const [added, setAdded] = useState<Set<string>>(new Set());
   const addPhrases = async (list: Feedback["usefulPhrases"]) => {
@@ -168,7 +170,7 @@ export function FeedbackView({
       </div>
 
       <Card title={t.grading.improved}>
-        <div lang="en" className="reading-text whitespace-pre-wrap">{feedback.improvedVersion}</div>
+        <div lang={contentLang} className="reading-text whitespace-pre-wrap">{feedback.improvedVersion}</div>
       </Card>
     </div>
   );

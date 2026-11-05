@@ -7,9 +7,11 @@ import { checkLessonItemAction } from "@/app/actions-practice";
 import { ItemFeedback } from "@/components/exercise/ItemFeedback";
 import { btn } from "@/components/ui";
 import { t } from "@/lib/i18n/hu";
+import { useContentLang } from "@/components/ContentLang";
 
 /** Self-check of a Szabálytár lesson: one item at a time, checked on the server, with the explanation shown right away. */
 export function LessonPractice({ category, items }: { category: string; items: LessonPracticeItem[] }) {
+  const contentLang = useContentLang();
   const [answers, setAnswers] = useState<Record<string, string>>({});
   const [results, setResults] = useState<Record<string, ItemResult>>({});
   const [pending, start] = useTransition();
@@ -38,7 +40,7 @@ export function LessonPractice({ category, items }: { category: string; items: L
             <li key={item.id} className="rounded-lg border border-border p-3" data-testid={`lesson-item-${item.id}`}>
               <div className="flex gap-2">
                 <span className="font-semibold text-muted">{item.id}.</span>
-                <p lang="en" className="whitespace-pre-line font-reading text-[15px]">
+                <p lang={contentLang} className="whitespace-pre-line font-reading text-[15px]">
                   {item.prompt}
                   {item.kind === "text" && item.cue && !item.prompt?.includes(`(${item.cue})`) && <span className="text-muted"> ({item.cue})</span>}
                 </p>

@@ -9,6 +9,7 @@ import { CopyButton } from "@/components/CopyButton";
 import { Card, btn, Badge } from "@/components/ui";
 import { hasRecorder, speak, startAudioRecording, startDictation, stopSpeaking, useSpeechSupport } from "@/components/speech";
 import { fmtClock } from "@/components/useTimer";
+import { useContentLang } from "@/components/ContentLang";
 
 type Turn = { q: string | null; a: string };
 
@@ -154,6 +155,7 @@ function TaskCard({ task }: { task: SpeakingTask }) {
 }
 
 function SelfPractice({ task, ttsRate, base: basePath, language, speechLang }: { task: SpeakingTask; ttsRate: number; base: string; language: boolean; speechLang: string }) {
+  const contentLang = useContentLang();
   const lang = speechLang;
   const turnsQ = examinerTurns(task);
   const [step, setStep] = useState(0);
@@ -303,7 +305,7 @@ function SelfPractice({ task, ttsRate, base: basePath, language, speechLang }: {
           )}
           <label className="block text-sm font-medium">
             {t.speaking.transcript}
-            <textarea lang="en"
+            <textarea lang={contentLang}
               value={current + (interim ? ` ${interim}` : "")}
               onChange={(e) => setCurrent(e.target.value)}
               rows={5}
@@ -318,7 +320,7 @@ function SelfPractice({ task, ttsRate, base: basePath, language, speechLang }: {
         </div>
       ) : (
         <div className="mt-4 space-y-3">
-          <pre lang="en" className="max-h-80 overflow-auto whitespace-pre-wrap rounded-md bg-surface-2 p-3 font-reading text-sm">{transcript}</pre>
+          <pre lang={contentLang} className="max-h-80 overflow-auto whitespace-pre-wrap rounded-md bg-surface-2 p-3 font-reading text-sm">{transcript}</pre>
           {Object.keys(clips).length > 0 && (
             <div className="space-y-1 text-sm">
               <div className="text-muted">{t.voice.yourVoice}</div>
@@ -353,6 +355,7 @@ function SelfPractice({ task, ttsRate, base: basePath, language, speechLang }: {
 }
 
 function LivePractice({ task, examinerPrompt, base: basePath }: { task: SpeakingTask; examinerPrompt: string; base: string }) {
+  const contentLang = useContentLang();
   const [text, setText] = useState("");
   const [error, setError] = useState<string | null>(null);
   const [pending, start] = useTransition();
@@ -369,7 +372,7 @@ function LivePractice({ task, examinerPrompt, base: basePath }: { task: Speaking
       </details>
       <label className="mt-4 block text-sm font-medium">
         {t.speaking.pasteTranscript}
-        <textarea lang="en" value={text} onChange={(e) => setText(e.target.value)} rows={8} placeholder={"EXAMINER: …\nCANDIDATE: …"} className="mt-1 w-full rounded-md border border-border bg-surface p-2 font-reading text-[15px]" data-testid="live-transcript" />
+        <textarea lang={contentLang} value={text} onChange={(e) => setText(e.target.value)} rows={8} placeholder={"EXAMINER: …\nCANDIDATE: …"} className="mt-1 w-full rounded-md border border-border bg-surface p-2 font-reading text-[15px]" data-testid="live-transcript" />
       </label>
       {error && <p className="text-sm text-bad">{error}</p>}
       <button

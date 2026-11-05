@@ -5,12 +5,14 @@ import type { PhraseGroup } from "@/lib/phrases";
 import { addWordCardAction } from "@/app/actions-practice";
 import { Card } from "@/components/ui";
 import { t } from "@/lib/i18n/hu";
+import { useContentLang } from "@/components/ContentLang";
 
 function norm(s: string) {
   return s.toLowerCase().normalize("NFD").replace(/\p{Diacritic}/gu, "");
 }
 
 export function PhraseBank({ groups }: { groups: (PhraseGroup & { label: string })[] }) {
+  const contentLang = useContentLang();
   const [q, setQ] = useState("");
   const [added, setAdded] = useState<Set<string>>(new Set());
   const [pending, start] = useTransition();
@@ -42,7 +44,7 @@ export function PhraseBank({ groups }: { groups: (PhraseGroup & { label: string 
                 return (
                   <li key={p.en} className="flex items-baseline gap-3 py-1.5">
                     <span className="min-w-0 flex-1">
-                      <span lang="en" className="font-reading text-[15px]">{p.en}</span>
+                      <span lang={contentLang} className="font-reading text-[15px]">{p.en}</span>
                       <span className="block text-muted">{p.hu}</span>
                     </span>
                     {isAdded ? (

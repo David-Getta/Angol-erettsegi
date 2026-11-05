@@ -1,7 +1,7 @@
 import type { SpeakingTask } from "@/lib/content/schema";
 import { quotedPhrases, wordCount } from "@/lib/content/text";
 import { t } from "@/lib/i18n/hu";
-import { examConfig } from "@/lib/exam/config";
+import { examConfig, contentLang } from "@/lib/exam/config";
 import { AddPhraseChips } from "@/components/vocab/AddPhraseChips";
 import { SpeakSampleButton } from "./SpeakSampleButton";
 
@@ -30,12 +30,12 @@ export function SampleAnswer({ task, open = false }: { task: SpeakingTask; open?
           {sa.turns.map((turn, i) =>
             turn.speaker === "examiner" ? (
               <p key={i} className="text-sm italic text-muted">
-                <b className="not-italic">{t.sample.examiner}:</b> <span lang="en">{turn.text}</span>
+                <b className="not-italic">{t.sample.examiner}:</b> <span lang={contentLang()}>{turn.text}</span>
               </p>
             ) : (
               <p key={i} className="reading-text whitespace-pre-line">
                 {dialogue && <b className="font-sans text-sm">{t.sample.candidate}: </b>}
-                <span lang="en">{turn.text}</span>
+                <span lang={contentLang()}>{turn.text}</span>
               </p>
             ),
           )}

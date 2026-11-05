@@ -3,11 +3,13 @@
 import { useState } from "react";
 import { t } from "@/lib/i18n/hu";
 import { Badge, Card } from "../ui";
+import { useContentLang } from "@/components/ContentLang";
 
 export type VersionInfo = { id: string; version: number; text: string; score: number | null; maxScore: number | null; wordCount: number; criteria: Record<string, number> };
 
 /** Two versions of a rewrite chain side by side, with the per-criterion scores. */
 export function VersionCompare({ versions, criteria }: { versions: VersionInfo[]; criteria: { id: string; name: string; max: number }[] }) {
+  const contentLang = useContentLang();
   const [a, setA] = useState(versions.length - 2);
   const [b, setB] = useState(versions.length - 1);
   if (versions.length < 2) return null;
@@ -62,7 +64,7 @@ export function VersionCompare({ versions, criteria }: { versions: VersionInfo[]
             <div className="mb-1 text-xs text-muted">
               {t.writing.version(v.version)} · {t.writing.wordCount(v.wordCount)}
             </div>
-            <div lang="en" className="whitespace-pre-wrap font-reading text-[15px] leading-relaxed">{v.text}</div>
+            <div lang={contentLang} className="whitespace-pre-wrap font-reading text-[15px] leading-relaxed">{v.text}</div>
           </div>
         ))}
       </div>

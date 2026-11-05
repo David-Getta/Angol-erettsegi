@@ -8,8 +8,10 @@ import { logDictationTimeAction } from "@/app/actions-practice";
 import { speak, stopSpeaking, useSpeechSupport } from "@/components/speech";
 import { Card, ProgressBar, btn } from "@/components/ui";
 import { t } from "@/lib/i18n/hu";
+import { useContentLang } from "@/components/ContentLang";
 
 export function DictationRunner({ sentences, rate }: { sentences: DictationSentence[]; rate: number }) {
+  const contentLang = useContentLang();
   const [idx, setIdx] = useState(0);
   const [typed, setTyped] = useState("");
   const [result, setResult] = useState<ReturnType<typeof compareWords> | null>(null);
@@ -77,7 +79,7 @@ export function DictationRunner({ sentences, rate }: { sentences: DictationSente
           </button>
         </div>
         <textarea
-          lang="en"
+          lang={contentLang}
           value={typed}
           onChange={(e) => setTyped(e.target.value)}
           disabled={!!result}
@@ -106,7 +108,7 @@ export function DictationRunner({ sentences, rate }: { sentences: DictationSente
         ) : (
           <div className="mt-3 space-y-2" data-testid="dictation-result">
             <p className="font-medium">{t.dictation.score(result.correct, result.total)}</p>
-            <p lang="en" className="font-reading text-[17px] leading-relaxed">
+            <p lang={contentLang} className="font-reading text-[17px] leading-relaxed">
               {result.tokens.map((tok, i) => (
                 <span key={i}>
                   {tok.status === "ok" && <span className="text-good">{tok.word}</span>}
@@ -123,7 +125,7 @@ export function DictationRunner({ sentences, rate }: { sentences: DictationSente
             <p className="text-xs text-muted">{t.dictation.legend}</p>
             <p className="text-sm">
               <span className="text-muted">{t.dictation.original}: </span>
-              <span lang="en" className="font-reading">
+              <span lang={contentLang} className="font-reading">
                 {s.text}
               </span>
             </p>

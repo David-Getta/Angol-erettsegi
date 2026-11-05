@@ -11,6 +11,7 @@ import { ListeningPlayer } from "../listening/ListeningRunner";
 import { useFocusMode } from "../exercise/PracticeRunner";
 import { TimerDisplay, fmtClock } from "../useTimer";
 import { Card, btn } from "../ui";
+import { useContentLang } from "@/components/ContentLang";
 
 export type RunnerPart = { index: number; total: number; part: string; name: string; timeSec: number; started: boolean; secondsLeft: number | null };
 
@@ -31,6 +32,7 @@ export function MockRunner({
   categoryNames: Record<string, string>;
   tts: { rate: number; female: string | null; male: string | null; prepSeconds: number; pauseSeconds: number };
 }) {
+  const contentLang = useContentLang();
   const router = useRouter();
   const [pending, start] = useTransition();
   const storageKey = `mock:${mockId}:${part.index}`;
@@ -190,7 +192,7 @@ export function MockRunner({
           <section key={task.id} className="grid gap-4 lg:grid-cols-[minmax(0,1fr)_minmax(0,1.3fr)]">
             <Card title={`${task.taskNumber}. feladat`}>
               <div className="whitespace-pre-line">{task.situation}</div>
-              {task.stimulus && <blockquote lang="en" className="mt-3 whitespace-pre-line border-l-4 border-border pl-3 font-reading text-[15px]">{task.stimulus}</blockquote>}
+              {task.stimulus && <blockquote lang={contentLang} className="mt-3 whitespace-pre-line border-l-4 border-border pl-3 font-reading text-[15px]">{task.stimulus}</blockquote>}
               <ul className="mt-3 list-disc space-y-1 pl-5">
                 {task.points.map((p) => (
                   <li key={p.id}>{p.text}</li>
@@ -204,7 +206,7 @@ export function MockRunner({
             </Card>
             <div>
               <div className={`mb-1 text-sm tabular-nums ${task.wordLimit && wc >= task.wordLimit.min && wc <= task.wordLimit.max ? "text-good" : "text-muted"}`}>{t.writing.wordCount(wc)}</div>
-              <textarea lang="en"
+              <textarea lang={contentLang}
                 value={texts[task.id] ?? ""}
                 onChange={(e) => setTexts((prev) => ({ ...prev, [task.id]: e.target.value }))}
                 spellCheck={false}

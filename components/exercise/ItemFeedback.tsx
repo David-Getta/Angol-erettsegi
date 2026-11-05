@@ -4,6 +4,7 @@ import Link from "next/link";
 import type { Item } from "@/lib/content/schema";
 import type { ItemResult } from "@/lib/scoring/check";
 import { t } from "@/lib/i18n/hu";
+import { useContentLang } from "@/components/ContentLang";
 
 /**
  * Feedback for one item: the given answer, the correct answer and WHY it is
@@ -21,6 +22,7 @@ export function ItemFeedback({
   /** Link to the Szabálytár lesson of the item's category. */
   lessonLink?: boolean;
 }) {
+  const contentLang = useContentLang();
   const wrongOptions = item.kind === "choice" || item.kind === "match" ? item.wrongOptions : undefined;
   return (
     <div
@@ -54,7 +56,7 @@ export function ItemFeedback({
       {item.evidence && (
         <div className="mt-1">
           <span className="font-medium">{t.task.whereInText} </span>
-          <mark lang="en" className="font-reading">„{item.evidence}”</mark>
+          <mark lang={contentLang} className="font-reading">„{item.evidence}”</mark>
         </div>
       )}
       {wrongOptions && Object.keys(wrongOptions).length > 0 && (

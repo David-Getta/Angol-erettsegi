@@ -7,6 +7,7 @@ import { findLoose, segmentText, GAP_RE } from "@/lib/content/text";
 import { t } from "@/lib/i18n/hu";
 import { ItemFeedback } from "./ItemFeedback";
 import { btn } from "@/components/ui";
+import { useContentLang } from "@/components/ContentLang";
 
 export type ViewProps = {
   task: ObjectiveTask;
@@ -42,6 +43,7 @@ export function itemKeys(task: ObjectiveTask, item: Item): string[] {
 }
 
 export function ObjectiveTaskView(p: ViewProps) {
+  const contentLang = useContentLang();
   const { task } = p;
   const allItems = useMemo(() => [task.example, ...task.items], [task]);
   const byId = useMemo(() => new Map(allItems.map((i) => [i.id, i])), [allItems]);
@@ -69,7 +71,7 @@ export function ObjectiveTaskView(p: ViewProps) {
     .map((i) => ({ id: i.id, text: i.evidence! }));
 
   const passage = task.passage && !p.hidePassage && (
-    <article lang="en" className="reading-text" data-testid="passage">
+    <article lang={contentLang} className="reading-text" data-testid="passage">
       {task.passage.title && <h2 className="mb-1 font-sans text-xl font-semibold">{task.passage.title}</h2>}
       {task.passage.subtitle && <p className="mb-3 font-sans text-sm text-muted">{task.passage.subtitle}</p>}
       {task.passage.blocks.map((b, i) => (
@@ -518,6 +520,7 @@ function OptionButton({
 }
 
 export function GlossaryList({ glossary, onAdd }: { glossary: GlossaryEntry[]; onAdd?: (g: GlossaryEntry) => void | Promise<void> }) {
+  const contentLang = useContentLang();
   const [added, setAdded] = useState<Set<string>>(new Set());
   const [busy, setBusy] = useState(false);
   if (!glossary.length) return null;
@@ -550,7 +553,7 @@ export function GlossaryList({ glossary, onAdd }: { glossary: GlossaryEntry[]; o
       <ul className="mt-2 divide-y divide-border">
         {glossary.map((g) => (
           <li key={g.term} className="flex items-center gap-2 py-1">
-            <b lang="en">{g.term}</b>
+            <b lang={contentLang}>{g.term}</b>
             <span className="text-muted">– {g.meaning}</span>
             {onAdd &&
               (added.has(g.term) ? (

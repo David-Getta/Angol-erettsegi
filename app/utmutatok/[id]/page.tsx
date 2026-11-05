@@ -3,7 +3,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { getGuide } from "@/lib/guides";
 import { getSettings } from "@/lib/settings";
-import { taskTypeName } from "@/lib/exam/config";
+import { taskTypeName, contentLang } from "@/lib/exam/config";
 import { Badge, Card, PageHeader } from "@/components/ui";
 import { GuidePhrases } from "@/components/guides/GuidePhrases";
 import { Checklist } from "@/components/guides/Checklist";
@@ -86,7 +86,7 @@ export default async function GuidePage({ params }: Props) {
 
           {g.example && (
             <Card title={g.example.title ? `${t.guides.example}: ${g.example.title}` : t.guides.example}>
-              <div lang="en" className="reading-text whitespace-pre-wrap rounded-lg border border-border p-3">
+              <div lang={contentLang()} className="reading-text whitespace-pre-wrap rounded-lg border border-border p-3">
                 {g.example.text}
               </div>
               {g.example.notes.length > 0 && (
@@ -113,10 +113,10 @@ export default async function GuidePage({ params }: Props) {
                   <tbody>
                     {g.mistakes.map((m, i) => (
                       <tr key={i} className="border-t border-border align-top">
-                        <td lang="en" className="py-1.5 pr-2 font-reading text-bad line-through decoration-bad/50">
+                        <td lang={contentLang()} className="py-1.5 pr-2 font-reading text-bad line-through decoration-bad/50">
                           {m.wrong}
                         </td>
-                        <td lang="en" className="py-1.5 pr-2 font-reading font-medium text-good">
+                        <td lang={contentLang()} className="py-1.5 pr-2 font-reading font-medium text-good">
                           {m.right}
                         </td>
                         <td className="py-1.5">{m.why}</td>

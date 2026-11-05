@@ -10,6 +10,7 @@ import { createSubmissionAction } from "@/app/actions-grading";
 import { useTimer, TimerDisplay } from "@/components/useTimer";
 import { useFocusMode } from "@/components/exercise/PracticeRunner";
 import { Card, btn } from "@/components/ui";
+import { useContentLang } from "@/components/ContentLang";
 
 export function WritingEditor({
   base,
@@ -33,6 +34,7 @@ export function WritingEditor({
   hideModeSwitch?: boolean;
   limitSecOverride?: number | null;
 }) {
+  const contentLang = useContentLang();
   const draftKey = `draft:${task.id}:${parent?.id ?? "new"}`;
   const [text, setText] = useState(parent?.text ?? "");
   const [checks, setChecks] = useState<Record<string, boolean>>({});
@@ -125,7 +127,7 @@ export function WritingEditor({
             {task.situation}
           </div>
           {task.situationHu && <p className="mt-2 text-sm text-muted">{task.situationHu}</p>}
-          {task.stimulus && <blockquote lang="en" className="mt-3 whitespace-pre-line border-l-4 border-border pl-3 font-reading text-[15px]">{task.stimulus}</blockquote>}
+          {task.stimulus && <blockquote lang={contentLang} className="mt-3 whitespace-pre-line border-l-4 border-border pl-3 font-reading text-[15px]">{task.stimulus}</blockquote>}
           <h3 className="mt-4 text-sm font-semibold">{t.writing.points}</h3>
           <ul className="mt-1 list-disc space-y-1 pl-5">
             {task.points.map((p) => (
@@ -170,7 +172,7 @@ export function WritingEditor({
           {savedAt && mode !== "mock" && <span className="text-xs text-muted">{t.writing.draftSaved}</span>}
         </div>
         {exam && <p className="text-xs text-muted">{t.writing.spellcheckOff}</p>}
-        <textarea lang="en"
+        <textarea lang={contentLang}
           data-testid="writing-editor"
           value={text}
           onChange={(e) => setText(e.target.value)}

@@ -327,6 +327,11 @@ export function currentSubject(): string {
   return subjectOverride ?? getSettings().subject;
 }
 
+/** Language of the current subject's study material ("en", "de", "hu") for `lang` attributes. */
+export function contentLang(): string {
+  return subject(currentSubject()).speechLang.slice(0, 2);
+}
+
 /** `mat-` for matematika, "" for angol: what every content id of the subject starts with. */
 export function contentIdPrefix(subjectId: string = currentSubject()): string {
   const p = subject(subjectId).idPrefix;
