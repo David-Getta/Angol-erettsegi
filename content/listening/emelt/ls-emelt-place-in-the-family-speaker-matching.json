@@ -1,0 +1,165 @@
+{
+  "schemaVersion": 1,
+  "id": "ls-emelt-place-in-the-family-speaker-matching",
+  "revision": 1,
+  "level": "emelt",
+  "source": "generated",
+  "topic": "szemelyes",
+  "title": "My place in the family",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "listening",
+  "type": "speaker-matching",
+  "instructions": "You are going to hear seven young people talking about their place in their family. For speakers 1–6, choose from the list (A–I) the statement that best matches what each speaker says. Use each letter only once. There are two extra letters which you do not need to use. You will hear the recording twice. There is an example (0) at the beginning.",
+  "instructionsHu": "Hét fiatalt hallasz, akik arról beszélnek, milyen helyet foglalnak el a családjukban. Az 1–6. beszélőhöz válaszd ki a listából (A–I) azt az állítást, amely a legjobban illik ahhoz, amit mond. Minden betűt csak egyszer használhatsz; két betűre nem lesz szükséged. A felvételt kétszer hallod; a 0. a példa.",
+  "listening": {
+    "format": "monologue",
+    "speakers": [
+      { "id": "N", "name": "Narrator", "gender": "male", "accent": "en-GB", "age": "adult" },
+      { "id": "S0", "name": "Rebecca", "gender": "female", "accent": "en-GB", "age": "young" },
+      { "id": "S1", "name": "Charlie", "gender": "male", "accent": "en-GB", "age": "young" },
+      { "id": "S2", "name": "Mei", "gender": "female", "accent": "en-US", "age": "young" },
+      { "id": "S3", "name": "Nathan", "gender": "male", "accent": "en-AU", "age": "young" },
+      { "id": "S4", "name": "Holly", "gender": "female", "accent": "en-IE", "age": "young" },
+      { "id": "S5", "name": "Amira", "gender": "female", "accent": "en-CA", "age": "young" },
+      { "id": "S6", "name": "Rohan", "gender": "male", "accent": "en-IN", "age": "young" }
+    ],
+    "script": [
+      { "speaker": "N", "text": "Speaker 0." },
+      {
+        "speaker": "S0",
+        "text": "I'm the eldest of three, and I always say my parents practised on me. When I was fifteen, I had to be home by ten o'clock, no exceptions, and they wanted to know exactly where I was and who I was with. My brother's fifteen now, and last weekend he came in after midnight and Dad just asked him if he'd had a nice time! I'm not bitter about it, honestly. I think they were just nervous because they'd never had a teenager before. But I do remind them of it quite a lot."
+      },
+      { "speaker": "N", "text": "Speaker 1." },
+      {
+        "speaker": "S1",
+        "text": "I'm the youngest of four, and my brothers and sister never let me forget it. They had to wait until they were fourteen to get a mobile phone – I got mine at ten. They weren't allowed to go to concerts on their own until they were seventeen, and I went to my first festival at fifteen. People assume the youngest has to fight to be noticed, but honestly, by the time I came along, my parents were too tired to argue about anything. My sister calls me 'the lucky one', and, well, she's got a point."
+      },
+      { "speaker": "N", "text": "Speaker 2." },
+      {
+        "speaker": "S2",
+        "text": "Being an only child, I spent a lot of time by myself, especially as both my parents worked long hours. Some people imagine that must have been sad, but I really don't remember it that way. I'd come home from school, make myself a snack and then spend hours drawing comics or building strange machines out of cardboard boxes. I never had to fight with anyone over the TV, or for my parents' attention, come to that. Even now, if a train's delayed or a friend's running late, I never get bored. There's always something going on in my head."
+      },
+      { "speaker": "N", "text": "Speaker 3." },
+      {
+        "speaker": "S3",
+        "text": "I'm the middle one of three. My older sister, Laura, was the kind of student teachers dream about – top marks, captain of every team, the lot. So when I started at the same secondary school, every single teacher said, 'Oh, you're Laura's brother!', and you could see them expecting the same from me. I was more into music than maths, and I really hated always being measured against her. Mum and Dad never did that, to be fair – it was only at school. It was never Laura's fault, and we've always got on fine, but I was very relieved when she finished school and I could just be me."
+      },
+      { "speaker": "N", "text": "Speaker 4." },
+      {
+        "speaker": "S4",
+        "text": "My brother Sean and I are only eighteen months apart, and until last year we shared a bedroom. We argued about absolutely everything – the light, the window, whose turn it was to tidy up. I used to count the days until he moved out. Then he got a place at university in Glasgow, and the first week he was gone, the house felt so quiet it was almost spooky. Now we video-call every Sunday, and when he came home at Christmas, I actually hugged him at the station. Mum nearly fainted."
+      },
+      { "speaker": "N", "text": "Speaker 5." },
+      {
+        "speaker": "S5",
+        "text": "Until I was twelve, it was just me and my mum. Then she married Greg, and suddenly two stepsisters, aged six and eight, moved into our flat. One weekend I was an only child, and the next I was the eldest of three, and everybody expected me to set a good example. Mum did ask me to help with the girls now and then – walking them to school, that kind of thing – but it's not as if I had to become a second parent. It took a couple of years, but now I'd honestly be lost without them."
+      },
+      { "speaker": "N", "text": "Speaker 6." },
+      {
+        "speaker": "S6",
+        "text": "Everyone in my family works in medicine. My mother's a surgeon, my grandfather was a family doctor for forty years, and my older brother's in his third year at medical school. So I think everyone just assumed I'd be next. Nobody ever actually pushed me, to be fair – it was more that I'd never seen any other option. But when I was sixteen, I did a week's work experience in a restaurant kitchen, and I just loved the noise and the pressure. I applied to catering college instead of staying on for my A levels, and I've never regretted it. My grandfather was the first to come and eat at the restaurant where I work now."
+      }
+    ]
+  },
+  "options": [
+    { "key": "A", "text": "My parents were stricter with me than with my younger siblings." },
+    { "key": "B", "text": "I only started to appreciate a sibling once we no longer lived under the same roof." },
+    { "key": "C", "text": "I had to grow up quickly because of a difficult situation at home." },
+    { "key": "D", "text": "Spending a lot of time on my own taught me to keep myself occupied." },
+    { "key": "E", "text": "I was given freedoms much earlier than my brothers and sisters had been." },
+    { "key": "F", "text": "I decided not to follow in my relatives' footsteps." },
+    { "key": "G", "text": "I resented constantly being compared with a sibling." },
+    { "key": "H", "text": "I often felt I had to compete for my parents' attention." },
+    { "key": "I", "text": "A change in the family suddenly gave me a completely different role." }
+  ],
+  "optionsReusable": false,
+  "example": {
+    "id": "0",
+    "kind": "match",
+    "prompt": "Speaker 0",
+    "answer": "A",
+    "category": "gist",
+    "explanation": "A helyes: Rebeccának 15 évesen tízre otthon kellett lennie, és a szülei mindent tudni akartak, míg a most 15 éves öccse éjfél után jön haza, és az apja csak megkérdezi, jól érezte-e magát – vele tehát szigorúbbak voltak.",
+    "evidence": "When I was fifteen, I had to be home by ten o'clock, no exceptions"
+  },
+  "items": [
+    {
+      "id": "1",
+      "kind": "match",
+      "prompt": "Speaker 1",
+      "answer": "E",
+      "category": "detail",
+      "explanation": "E a helyes: Charlie a legkisebb a négy gyerek közül; a testvérei 14 évesen kaptak mobilt, ő 10 évesen, ők 17 évesen mehettek egyedül koncertre, ő már 15 évesen fesztiválra ment – vagyis sokkal korábban kapott meg bizonyos szabadságokat.",
+      "evidence": "They had to wait until they were fourteen to get a mobile phone – I got mine at ten.",
+      "wrongOptions": {
+        "H": "Charlie kifejezetten tagadja ezt: sokan azt hiszik, a legkisebbnek küzdenie kell a figyelemért, de nála a szülők már túl fáradtak voltak bármin vitatkozni („People assume … but honestly …”).",
+        "A": "Fordítva igaz: nem vele, hanem a testvéreivel voltak szigorúbbak a szülők."
+      }
+    },
+    {
+      "id": "2",
+      "kind": "match",
+      "prompt": "Speaker 2",
+      "answer": "D",
+      "category": "gist",
+      "explanation": "D a helyes: Mei egyke, sokat volt egyedül, mert a szülei sokat dolgoztak; ilyenkor képregényt rajzolt, kartondobozokból gépeket épített, és ma sem unatkozik soha – megtanulta lekötni magát.",
+      "evidence": "Even now, if a train's delayed or a friend's running late, I never get bored.",
+      "wrongOptions": {
+        "H": "Mei azt mondja, sosem kellett harcolnia a szülei figyelméért („I never had to fight … for my parents' attention”).",
+        "C": "Bár sokat volt egyedül, nem beszél nehéz otthoni helyzetről: szerinte ez nem volt szomorú („I really don't remember it that way”)."
+      }
+    },
+    {
+      "id": "3",
+      "kind": "match",
+      "prompt": "Speaker 3",
+      "answer": "G",
+      "category": "attitude",
+      "explanation": "G a helyes: Nathan nővére kitűnő tanuló volt, így az iskolában minden tanár „Laura öccseként” kezelte és ugyanazt várta tőle; Nathan nagyon utálta, hogy mindig hozzá mérik („I really hated always being measured against her”).",
+      "evidence": "I really hated always being measured against her",
+      "wrongOptions": {
+        "B": "Nathan nem csak később kezdte értékelni a nővérét: azt mondja, mindig jól kijöttek egymással („we've always got on fine”), és Laura nem is költözött el – csak befejezte az iskolát.",
+        "H": "A szülei nem hasonlítgatták („Mum and Dad never did that”), és a szülői figyelemért való versengésről nem beszél."
+      }
+    },
+    {
+      "id": "4",
+      "kind": "match",
+      "prompt": "Speaker 4",
+      "answer": "B",
+      "category": "inference",
+      "explanation": "B a helyes: Holly és a bátyja, Sean, mindenen veszekedtek, amíg egy szobában laktak, és Holly a napokat számolta, hogy elköltözzön. Amikor Sean egyetemre ment Glasgow-ba, a ház ijesztően csendes lett; most minden vasárnap videóznak, és karácsonykor megölelte az állomáson – csak a különköltözés után kezdte értékelni.",
+      "evidence": "the first week he was gone, the house felt so quiet it was almost spooky",
+      "wrongOptions": {
+        "I": "Sean elköltözése változás volt a családban, de Holly nem mondja, hogy ettől más szerepe lett otthon – a testvérükhöz fűződő viszonya változott meg."
+      }
+    },
+    {
+      "id": "5",
+      "kind": "match",
+      "prompt": "Speaker 5",
+      "answer": "I",
+      "category": "gist",
+      "explanation": "I a helyes: Amira 12 éves koráig egyke volt, aztán az anyja férjhez ment, és két mostohatestvér költözött hozzájuk; az egyik hétvégén még egyke volt, a következőn már a legidősebb a három közül, akitől példamutatást vártak – egyik napról a másikra teljesen új szerepet kapott.",
+      "evidence": "One weekend I was an only child, and the next I was the eldest of three",
+      "wrongOptions": {
+        "C": "Amira néha segített a kislányokkal, de kifejezetten tagadja, hogy „második szülővé” kellett volna válnia („it's not as if I had to become a second parent”), és az anyja házassága sem nehéz helyzet volt."
+      }
+    },
+    {
+      "id": "6",
+      "kind": "match",
+      "prompt": "Speaker 6",
+      "answer": "F",
+      "category": "inference",
+      "explanation": "F a helyes: Rohan családjában mindenki orvos (anyja sebész, nagyapja háziorvos volt, bátyja orvostanhallgató), és mindenki azt hitte, ő is az lesz; ő viszont egy éttermi konyhai gyakorlat után a szakácsképzőt választotta – tudatosan nem a család nyomdokain haladt.",
+      "evidence": "I applied to catering college instead of staying on for my A levels",
+      "wrongOptions": {
+        "G": "Rohan megemlíti az orvostanhallgató bátyját, de nem mondja, hogy hozzá hasonlították volna; sőt, senki nem erőltette, hogy orvos legyen („Nobody ever actually pushed me”)."
+      }
+    }
+  ],
+  "glossary": [],
+  "suggestedMinutes": 9
+}

@@ -1,0 +1,180 @@
+{
+  "schemaVersion": 1,
+  "id": "ls-emelt-social-run-clubs-tf",
+  "revision": 1,
+  "level": "emelt",
+  "source": "generated",
+  "topic": "eletmod",
+  "title": "Run clubs: the new way to make friends?",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "listening",
+  "type": "true-false",
+  "instructions": "You are going to listen to a radio feature about a social running club. Decide whether statements 1–9 are true (T) or false (F) according to what you hear. You will hear the recording twice. There is an example (0) at the beginning.",
+  "instructionsHu": "Egy rádióriportot hallasz egy közösségi futóklubról. Döntsd el, hogy az 1–9. állítás a hallottak alapján igaz (T) vagy hamis (F). A felvételt kétszer hallod; a 0. a példa.",
+  "listening": {
+    "format": "radio",
+    "speakers": [
+      { "id": "N", "name": "Nadia Khan (reporter)", "gender": "female", "accent": "en-GB", "age": "adult" },
+      { "id": "M", "name": "Marcus Bell (club founder)", "gender": "male", "accent": "en-GB", "age": "adult" },
+      { "id": "G", "name": "Megan Reilly (club member)", "gender": "female", "accent": "en-IE", "age": "young" },
+      { "id": "R", "name": "Dr Ruth Okafor (psychologist)", "gender": "female", "accent": "en-GB", "age": "older" }
+    ],
+    "script": [
+      {
+        "speaker": "N",
+        "text": "It's half past six on a Thursday evening, and the path along the river in Leeds is suddenly full of people in brightly coloured running gear. There are about two hundred of them, most in their twenties and thirties, and they're not here to break any records. This is the Riverside Social Run Club, and I'm standing next to its founder, Marcus Bell. Marcus, how did all this start?"
+      },
+      {
+        "speaker": "M",
+        "text": "Well, I moved to Leeds for a job about three years ago, and I didn't know a single person here. Everyone at work was older and had families, so they went straight home at five. I'd always run on my own, so I thought, why not put a post online and see if anyone wants to come with me? Six people turned up the first week – and to be fair, two of them were my flatmates, who I'd more or less forced to come."
+      },
+      {
+        "speaker": "N",
+        "text": "And now there are two hundred of you."
+      },
+      {
+        "speaker": "M",
+        "text": "On a good night, yeah. It grew mostly by word of mouth – people bringing a friend, who then brought another friend – and then the local paper wrote a piece about us, and it just exploded. The important thing is, it's not a race. We run five kilometres, and we've got two groups: a faster one and a, let's say, chattier one. And there's always a volunteer at the very back, going at the pace of the slowest person, so nobody ever finishes alone. That rule has never changed."
+      },
+      {
+        "speaker": "N",
+        "text": "What happens after the run?"
+      },
+      {
+        "speaker": "M",
+        "text": "That's the bit people really come for, if I'm honest. Most of us go to a café round the corner that stays open late for us on Thursdays. And we've had, I think, four couples who met here and are still together. So, you know, the dating apps should be worried."
+      },
+      {
+        "speaker": "N",
+        "text": "I hear you've had offers of sponsorship."
+      },
+      {
+        "speaker": "M",
+        "text": "Twice, from sportswear brands. And look, the money would've been nice – we could've bought proper lights for the winter. But the club's free, and I want it to stay free and simple. The moment there's a logo on everything, people start feeling they need the right trainers and the right watch to belong here. I'd much rather people turned up in an old T-shirt."
+      },
+      {
+        "speaker": "N",
+        "text": "One of the regulars is Megan Reilly, who's been coming for about a year."
+      },
+      {
+        "speaker": "G",
+        "text": "I'd never been sporty. At school I used to hide in the changing rooms to get out of PE. But I'd just come out of a long relationship, most of my friends had moved away, and I was spending every evening scrolling on my phone. A colleague dragged me along. The first time, I had to walk about half of it, and the guy at the back just walked with me and chatted about football the whole way. I didn't feel embarrassed at all. Now I run the whole thing – slowly, but I do."
+      },
+      {
+        "speaker": "N",
+        "text": "Dr Ruth Okafor is a social psychologist who studies loneliness. She isn't surprised by the club's success."
+      },
+      {
+        "speaker": "R",
+        "text": "What's interesting is that surveys now regularly find that people in their twenties report feeling lonely more often than people over sixty-five. A lot of the places where young adults used to meet – clubs, churches, even offices, now that so many people work from home – have become less important in their lives. Run clubs fill some of that gap. And there's something about running side by side that helps. You're not sitting opposite someone, staring at each other across a table. You're both looking ahead, you're a bit out of breath, and people find it surprisingly easy to talk."
+      },
+      {
+        "speaker": "N",
+        "text": "So should everyone who feels lonely join one?"
+      },
+      {
+        "speaker": "R",
+        "text": "I wouldn't go that far. For someone who's very anxious, or who has a difficult relationship with their body, a crowd of two hundred fit-looking people can be terrifying, however friendly they are. Run clubs are great, but they're one answer to loneliness, not the answer. Walking groups, choirs, volunteering – the principle is the same: doing something together, regularly, with the same people."
+      },
+      {
+        "speaker": "N",
+        "text": "Back at the river, the chattier group is just setting off – laughing, talking, and, at the very back, walking. For Weekend Life, I'm Nadia Khan."
+      }
+    ]
+  },
+  "example": {
+    "id": "0",
+    "kind": "tf",
+    "prompt": "Marcus had no friends in Leeds when he first arrived there.",
+    "answer": "T",
+    "category": "detail",
+    "explanation": "Igaz: Marcus egy állás miatt költözött Leedsbe, és egyetlen embert sem ismert ott („I didn't know a single person here”).",
+    "evidence": "I moved to Leeds for a job about three years ago, and I didn't know a single person here."
+  },
+  "items": [
+    {
+      "id": "1",
+      "kind": "tf",
+      "prompt": "Marcus had never met any of the people who came to the first run.",
+      "answer": "F",
+      "category": "detail",
+      "explanation": "Hamis: az első alkalommal hat ember jött el, de közülük kettő Marcus lakótársa volt, akiket ő maga „kényszerített” rá, hogy eljöjjenek – őket tehát már ismerte.",
+      "evidence": "two of them were my flatmates, who I'd more or less forced to come"
+    },
+    {
+      "id": "2",
+      "kind": "tf",
+      "prompt": "The club grew mainly because people recommended it to each other.",
+      "answer": "T",
+      "category": "vocabulary-in-context",
+      "explanation": "Igaz: a klub főleg szájhagyomány útján nőtt („mostly by word of mouth”) – az emberek elhozták a barátaikat, akik újabb barátokat hoztak. Az újságcikk csak később jött, és nem ez volt a fő ok („mostly”).",
+      "evidence": "It grew mostly by word of mouth"
+    },
+    {
+      "id": "3",
+      "kind": "tf",
+      "prompt": "The slowest runners sometimes have to complete the route on their own.",
+      "answer": "F",
+      "category": "detail",
+      "explanation": "Hamis: mindig van egy önkéntes a sor végén, aki a leglassabb futó tempójában halad, így soha senki nem ér célba egyedül („nobody ever finishes alone”).",
+      "evidence": "so nobody ever finishes alone"
+    },
+    {
+      "id": "4",
+      "kind": "tf",
+      "prompt": "Marcus believes that for many members the time after the run is the main attraction.",
+      "answer": "T",
+      "category": "inference",
+      "explanation": "Igaz: a futás utáni közös kávézásról Marcus azt mondja, „That's the bit people really come for” – vagyis az emberek valójában főleg ezért jönnek, nem magáért a futásért.",
+      "evidence": "That's the bit people really come for, if I'm honest."
+    },
+    {
+      "id": "5",
+      "kind": "tf",
+      "prompt": "Marcus refused sponsorship partly because it might make some people feel they did not fit in.",
+      "answer": "T",
+      "category": "inference",
+      "explanation": "Igaz: Marcus szerint ha mindenen ott a logó, az emberek úgy érzik, a megfelelő cipő és óra kell ahhoz, hogy közéjük tartozzanak („to belong here”) – ezért mondott nemet mindkét szponzori ajánlatra, pedig a pénzből világítást vehettek volna.",
+      "evidence": "people start feeling they need the right trainers and the right watch to belong here"
+    },
+    {
+      "id": "6",
+      "kind": "tf",
+      "prompt": "Megan felt awkward when she had to walk during her first run.",
+      "answer": "F",
+      "category": "attitude",
+      "explanation": "Hamis: Megan az első alkalommal a táv kb. felét gyalogolta, de a sor végén haladó önkéntes végig vele sétált és beszélgetett, így egyáltalán nem érezte kínosan magát („I didn't feel embarrassed at all”).",
+      "evidence": "I didn't feel embarrassed at all."
+    },
+    {
+      "id": "7",
+      "kind": "tf",
+      "prompt": "According to Dr Okafor, people in their twenties feel lonely less often than the over-65s.",
+      "answer": "F",
+      "category": "detail",
+      "explanation": "Hamis: épp fordítva – a felmérések szerint a húszas éveikben járók GYAKRABBAN számolnak be magányról, mint a 65 év felettiek („more often than”).",
+      "evidence": "people in their twenties report feeling lonely more often than people over sixty-five"
+    },
+    {
+      "id": "8",
+      "kind": "tf",
+      "prompt": "Dr Okafor thinks people talk more easily when they do not have to face each other.",
+      "answer": "T",
+      "category": "inference",
+      "explanation": "Igaz: Dr Okafor szerint az egymás mellett futás segít – nem ülnek szemben egymással, nem bámulják egymást az asztal fölött, hanem mindketten előre néznek, és így meglepően könnyű beszélgetni.",
+      "evidence": "You're not sitting opposite someone, staring at each other across a table."
+    },
+    {
+      "id": "9",
+      "kind": "tf",
+      "prompt": "Dr Okafor recommends run clubs to anyone who feels lonely.",
+      "answer": "F",
+      "category": "attitude",
+      "explanation": "Hamis: a kérdésre, hogy minden magányos embernek csatlakoznia kellene-e, azt feleli: „I wouldn't go that far” – a nagyon szorongó embereknek egy kétszázfős, fittnek látszó tömeg ijesztő lehet. Szerinte a futóklub csak az egyik megoldás, nem AZ egyetlen.",
+      "evidence": "I wouldn't go that far."
+    }
+  ],
+  "glossary": [],
+  "suggestedMinutes": 9
+}
