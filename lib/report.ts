@@ -31,7 +31,7 @@ export function progressReport(): ProgressReport {
   const s = getSettings();
   const level = s.level;
   const db = getDb();
-  const estimates = estimateParts(level, s.targetPct);
+  const estimates = estimateParts(level, s.targetPct).filter((e) => e.maxPoints > 0);
   const known = estimates.filter((e) => e.points !== null);
   const mocks = listMocks("mock", level).filter((m) => m.status === "done" || m.status === "awaiting-writing");
   const last = mocks[0];

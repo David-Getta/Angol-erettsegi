@@ -16,6 +16,8 @@ test("subject chooser: matematika has its own parts, exam info and conditional o
   await expect(page.getByTestId("subject-matematika")).toBeVisible();
   await page.getByTestId("subject-matematika").click();
   await page.waitForURL(/\/kezdolap/);
+  await page.getByTestId("level-kozep").click();
+  await expect(page.getByTestId("app-nav")).toContainText("Középszint");
 
   // navigation shows the maths parts, not the English ones
   const nav = page.getByTestId("app-nav");
@@ -43,7 +45,9 @@ test("subject chooser: switching back to angol restores the English pages", asyn
   await page.getByTestId("subject-tortenelem").click();
   await page.waitForURL(/\/kezdolap/);
   await expect(page.getByTestId("app-nav")).toContainText("Esszék");
-  await page.goto("/");
+  // the top bar always has a way back to the subject list
+  await page.getByTestId("topbar-subjects").click();
+  await page.waitForURL((u) => u.pathname === "/");
   await page.getByTestId("subject-angol").click();
   await page.waitForURL(/\/kezdolap/);
   await expect(page.getByTestId("app-nav")).toContainText("Nyelvhelyesség");

@@ -9,6 +9,7 @@ export const t = {
     title: "Melyik tantárgyat tanulod?",
     intro: "Válassz tantárgyat – mindegyiknél ugyanazt a felületet kapod: feladatok magyarázattal, javítás, hibanapló, szabálytár, próbaérettségi.",
     switch: "Tantárgy váltása",
+    allSubjects: "Tantárgyak",
     open: "Belépés",
     continue: "Folytatás",
     groups: { kotelezo: "Kötelező tárgyak", nyelv: "Idegen nyelvek", termeszettudomany: "Természettudományok", egyeb: "További választható tárgyak" } as Record<string, string>,
@@ -25,6 +26,7 @@ export const t = {
     emelt: "Emelt szint",
     short: { kozep: "Közép", emelt: "Emelt" },
     switchLabel: "Szint",
+    switchHint: "A szintváltás minden tantárgyra érvényes",
   },
 
   section: {

@@ -50,13 +50,16 @@ const SUBJECT_KEYS = Object.keys(SubjectSettingsSchema.shape) as (keyof SubjectS
 type SubjectDefaults = { id: string; defaultLevel?: Level; defaultExamDate?: string };
 
 /** Minimal read of config/subjects.json (the full loader lives in lib/exam/config and reads the settings itself). */
-function subjectDefaults(id: string): SubjectDefaults {
+function allSubjectDefaults(): SubjectDefaults[] {
   try {
-    const raw = JSON.parse(fs.readFileSync(path.join(paths.config, "subjects.json"), "utf8")) as { subjects: SubjectDefaults[] };
-    return raw.subjects.find((s) => s.id === id) ?? { id };
+    return (JSON.parse(fs.readFileSync(path.join(paths.config, "subjects.json"), "utf8")) as { subjects: SubjectDefaults[] }).subjects;
   } catch {
-    return { id };
+    return [];
   }
+}
+
+function subjectDefaults(id: string): SubjectDefaults {
+  return allSubjectDefaults().find((s) => s.id === id) ?? { id };
 }
 
 function withSubject(stored: StoredSettings): Settings {
@@ -112,12 +115,12 @@ export function updateSettings(patch: Partial<Settings>): Settings {
     if ((SUBJECT_KEYS as string[]).includes(k)) (ownPatch as Record<string, unknown>)[k] = v;
     else appPatch[k] = v;
   }
-  const next = StoredSettingsSchema.parse({
-    ...stored,
-    ...appPatch,
-    subject: subjectId,
-    subjects: { ...stored.subjects, [subjectId]: SubjectSettingsSchema.partial().parse({ ...(stored.subjects[subjectId] ?? {}), ...ownPatch }) },
-  });
+  const subjects = { ...stored.subjects, [subjectId]: SubjectSettingsSchema.partial().parse({ ...(stored.subjects[subjectId] ?? {}), ...ownPatch }) };
+  // the level switch applies to every subject at once (the student sits all exams at the chosen level by default)
+  if (patch.level) {
+    for (const s of allSubjectDefaults()) subjects[s.id] = SubjectSettingsSchema.partial().parse({ ...(subjects[s.id] ?? {}), level: patch.level });
+  }
+  const next = StoredSettingsSchema.parse({ ...stored, ...appPatch, subject: subjectId, subjects });
   write(next);
   return withSubject(next);
 }

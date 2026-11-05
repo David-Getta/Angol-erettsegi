@@ -9,6 +9,7 @@ import { LevelSwitch } from "@/components/LevelSwitch";
 import { ThemeSwitch } from "@/components/ThemeSwitch";
 import { ToastProvider } from "@/components/Toast";
 import { ContentLangProvider } from "@/components/ContentLang";
+import Link from "next/link";
 
 export const dynamic = "force-dynamic";
 
@@ -41,9 +42,21 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <ContentLangProvider lang={subj.speechLang.slice(0, 2)}>
         <AppNav level={s.level} subject={{ id: subj.id, name: subj.name, icon: subj.icon }} groups={navGroups(s.level)} />
         <div className="app-main lg:ml-60">
-          <header className="app-topbar sticky top-0 z-20 flex items-center justify-end gap-3 border-b border-border bg-bg/90 px-4 py-2 backdrop-blur lg:px-8">
-            <LevelSwitch level={s.level} />
-            <ThemeSwitch theme={s.theme} />
+          <header className="app-topbar sticky top-0 z-20 flex items-center justify-between gap-2 border-b border-border bg-bg/90 px-4 py-2 backdrop-blur lg:px-8">
+            <Link
+              href="/"
+              className="ml-24 inline-flex items-center gap-1.5 whitespace-nowrap rounded-md border border-border bg-surface px-2 py-1 text-sm font-medium hover:bg-surface-2 sm:px-3 lg:ml-0"
+              data-testid="topbar-subjects"
+            >
+              ← {t.subjects.allSubjects}
+              <span className="hidden text-muted sm:inline">
+                · {subj.icon} {subj.short}
+              </span>
+            </Link>
+            <div className="flex items-center gap-2 sm:gap-3">
+              <LevelSwitch level={s.level} />
+              <ThemeSwitch theme={s.theme} />
+            </div>
           </header>
           <main className="mx-auto max-w-6xl px-4 pb-24 pt-6 lg:px-8">{children}</main>
         </div>

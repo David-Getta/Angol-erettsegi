@@ -22,7 +22,7 @@ export function ThemeSwitch({ theme }: { theme: Theme }) {
       type="button"
       title={`${t.theme.label}: ${t.theme[theme]}`}
       aria-label={`${t.theme.label}: ${t.theme[theme]}`}
-      className="rounded-md border border-border bg-surface px-2.5 py-1 text-sm hover:bg-surface-2"
+      className="rounded-md border border-border bg-surface px-2 py-1 text-sm sm:px-2.5 hover:bg-surface-2"
       onClick={() => {
         apply(next);
         start(async () => {

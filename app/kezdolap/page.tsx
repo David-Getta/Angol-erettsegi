@@ -20,7 +20,8 @@ export default function DashboardPage() {
   const s = getSettings();
   const structure = levelStructure(s.level);
   const days = daysUntil(s.examDate);
-  const est = estimateParts(s.level, s.targetPct);
+  // practice-only parts (0 exam points, e.g. digitális kultúra Gyorskérdések) are not part of the estimate
+  const est = estimateParts(s.level, s.targetPct).filter((e) => e.maxPoints > 0);
   const known = est.filter((e) => e.points !== null);
   const totalEst = known.reduce((n, e) => n + (e.points ?? 0), 0);
   const diag = latestDiagnostic(s.level);

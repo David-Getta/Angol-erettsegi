@@ -2,7 +2,7 @@ import { and, eq, gte } from "drizzle-orm";
 import { getDb } from "@/lib/db/client";
 import { activity, submissions, tasks } from "@/lib/db/schema";
 import type { Level } from "@/lib/content/schema";
-import { examConfig, partPath, targetedPath } from "@/lib/exam/config";
+import { examConfig, partName, partPath, targetedPath } from "@/lib/exam/config";
 import { categoryStats } from "@/lib/errors/log";
 import { countBankItems, pickMistakes } from "@/lib/targeted";
 import { dueInfo } from "@/lib/vocab/cards";
@@ -137,12 +137,12 @@ export function todayPlan(level: Level, estimates: PartEstimate[], hasDiagnostic
   const recentWriting = db.select({ id: submissions.id }).from(submissions).where(and(eq(submissions.subject, currentSubject()), eq(submissions.kind, "writing"), gte(submissions.createdAt, weekAgo))).all();
   if (recentWriting.length === 0) {
     const tk = pickTask("writing", level, day);
-    if (tk) items.push({ key: "writing", title: `Íráskészség: ${tk.title}`, reason: "Az elmúlt héten nem írtál – az írás hozza a legtöbb pontot.", href: `${partPath("writing")}/${tk.id}`, section: "writing", minutes: 40, done: todaySections.has("writing") });
+    if (tk) items.push({ key: "writing", title: `${partName("writing", level)}: ${tk.title}`, reason: examConfig.subject().language ? "Az elmúlt héten nem írtál – az írás hozza a legtöbb pontot." : "Az elmúlt héten nem adtál be kidolgozott feladatot – ez a rész hozza a legtöbb pontot.", href: `${partPath("writing")}/${tk.id}`, section: "writing", minutes: 40, done: todaySections.has("writing") });
   }
   const recentSpeaking = db.select({ id: submissions.id }).from(submissions).where(and(eq(submissions.subject, currentSubject()), eq(submissions.kind, "speaking"), gte(submissions.createdAt, weekAgo))).all();
   if (recentSpeaking.length === 0 && items.length < maxTasks) {
     const tk = pickTask("speaking", level, day);
-    if (tk) items.push({ key: "speaking", title: `Szóbeli: ${tk.title}`, reason: "Heti egy szóbeli gyakorlás ajánlott.", href: `${partPath("speaking")}/${tk.id}`, section: "speaking", minutes: 15, done: todaySections.has("speaking") });
+    if (tk) items.push({ key: "speaking", title: `${partName("speaking", level)}: ${tk.title}`, reason: "Heti egy szóbeli gyakorlás ajánlott.", href: `${partPath("speaking")}/${tk.id}`, section: "speaking", minutes: 15, done: todaySections.has("speaking") });
   }
 
   // fill up to the minimum with the remaining written parts
