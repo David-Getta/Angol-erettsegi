@@ -125,3 +125,19 @@ describe("Hungarian number notation (non-language subjects)", () => {
     expect(normalizeForCheck("5,000")).toBe("5000");
   });
 });
+
+describe("case-sensitive items (genotypes, chemical symbols, German nouns)", () => {
+  it("compares with case only when the item asks for it", async () => {
+    const { checkItem } = await import("@/lib/scoring/check");
+    const base = { id: "1", kind: "text" as const, category: "x", explanation: "x", points: 1 };
+    const geno = { ...base, answer: ["Aa"], caseSensitive: true };
+    expect(checkItem({ options: undefined }, geno, "Aa").correct).toBe(true);
+    expect(checkItem({ options: undefined }, geno, "aa").correct).toBe(false);
+    expect(checkItem({ options: undefined }, geno, "AA").correct).toBe(false);
+    const co = { ...base, answer: ["Co"], caseSensitive: true };
+    expect(checkItem({ options: undefined }, co, "CO").correct).toBe(false);
+    const city = { ...base, answer: ["Budapest"] };
+    expect(checkItem({ options: undefined }, city, "budapest").correct).toBe(true);
+  });
+});
+

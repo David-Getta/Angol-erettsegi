@@ -9,15 +9,15 @@ const CORRECT_MARKER_ALIASES = new Set(["✓", "✔", "√", "ok", "correct", "h
  * whitespace, typographic apostrophes and quotes, and trailing sentence
  * punctuation do not count.
  */
-export function normalizeAnswer(raw: string): string {
+export function normalizeAnswer(raw: string, keepCase = false): string {
   let s = raw
     .normalize("NFC")
     .replace(/[‘’ʼ`´]/g, "'")
     .replace(/[“”„]/g, '"')
     .replace(/[‐-–]/g, "-")
     .replace(/\s+/g, " ")
-    .trim()
-    .toLowerCase();
+    .trim();
+  if (!keepCase) s = s.toLowerCase();
   s = s.replace(/\s*-\s*/g, "-");
   s = s.replace(/[.!?,;:]+$/g, "").trim();
   s = s.replace(/^["']+|["']+$/g, "").trim();
@@ -101,8 +101,8 @@ export function joinThousands(s: string): string {
  * `decimalComma` (Hungarian notation, non-language subjects): a comma or a dot between digits is a decimal mark
  * (0,5 = 0.5) and only spaces separate thousands (1 000 000).
  */
-export function normalizeForCheck(raw: string, opts: { decimalComma?: boolean } = {}): string {
-  const s = normalizeAnswer(raw);
+export function normalizeForCheck(raw: string, opts: { decimalComma?: boolean; caseSensitive?: boolean } = {}): string {
+  const s = normalizeAnswer(raw, opts.caseSensitive);
   if (s === CORRECT_MARKER) return s;
   const n = numberWordsToDigits(s);
   if (!opts.decimalComma) return joinThousands(n);
@@ -179,7 +179,7 @@ export function checkItem(
   const base = { itemId: item.id, given, maxPoints, category: item.category };
 
   if (item.kind === "text") {
-    const norm = { decimalComma: opts.decimalComma };
+    const norm = { decimalComma: opts.decimalComma, caseSensitive: item.caseSensitive };
     const g = normalizeForCheck(given, norm);
     const accepted = item.answer.map((a) => normalizeForCheck(a, norm));
     const expected = item.answer[0]!;

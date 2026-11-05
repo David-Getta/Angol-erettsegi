@@ -259,7 +259,7 @@ function checkObjective(ctx: Ctx, t: ObjectiveTask) {
         }
       }
     } else if (it.kind === "text") {
-      const norm = it.answer.map(normalizeAnswer);
+      const norm = it.answer.map((a) => normalizeAnswer(a, it.caseSensitive));
       if (new Set(norm).size !== norm.length) err(ctx, `${itemLabel(it)}: ismétlődő elfogadott válasz (kis/nagybetűtől és szóköztől eltekintve azonos).`);
       if (it.maxWords) {
         for (const a of it.answer) {
@@ -383,7 +383,7 @@ function checkLesson(ctx: Ctx, l: GrammarLesson) {
       const missing = keys.filter((k) => k !== it.answer && !it.wrongOptions?.[k]);
       if (missing.length) err(ctx, `${label}: hiányzik a magyarázat, miért rossz: ${missing.join(", ")}.`);
     } else {
-      const norm = it.answer.map(normalizeAnswer);
+      const norm = it.answer.map((a) => normalizeAnswer(a, it.caseSensitive));
       if (new Set(norm).size !== norm.length) err(ctx, `${label}: ismétlődő elfogadott válasz.`);
     }
   });

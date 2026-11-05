@@ -108,6 +108,8 @@ export const TextItemSchema = ItemBase.extend({
   /** Word to transform / verb in brackets (word formation, verb forms). */
   cue: z.string().optional(),
   maxWords: z.number().int().positive().optional(),
+  /** Upper/lower case matters (genotypes Aa, chemical symbols Co / CO, German nouns): checked case-sensitively. */
+  caseSensitive: z.boolean().optional(),
 });
 
 export const ItemSchema = z.discriminatedUnion("kind", [ChoiceItemSchema, MatchItemSchema, TfItemSchema, TextItemSchema]);
