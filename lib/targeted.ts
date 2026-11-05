@@ -7,6 +7,7 @@ import { checkItem } from "@/lib/scoring/check";
 import { acceptNearMiss } from "@/lib/attempts";
 import { logActivity } from "@/lib/activity";
 import { getObjective } from "@/lib/tasks";
+import { examConfig } from "@/lib/exam/config";
 
 /** One item pulled out of its task for targeted practice. */
 export type TargetedItem = {
@@ -79,6 +80,26 @@ export function pickTargeted(categories: string[], level: Level, count: number):
   const unseen = shuffle(pool.filter((p) => !lastCorrect.has(p.key)));
   const rest = shuffle(pool.filter((p) => lastCorrect.get(p.key) === true));
   return [...wrongBefore, ...unseen, ...rest].slice(0, count);
+}
+
+/**
+ * Language-use items whose LAST attempt was wrong and is at least `minAgeHours`
+ * old – re-asked until the student gets them right (then they leave the list).
+ */
+export function pickMistakes(level: Level, count: number, minAgeHours: number, now = Date.now()): { due: TargetedItem[]; later: number } {
+  const db = getDb();
+  const history = db.select().from(itemAttempts).all();
+  const last = new Map<string, { correct: boolean; at: number }>();
+  for (const h of history.sort((a, b) => a.createdAt.getTime() - b.createdAt.getTime())) {
+    last.set(`${h.taskId}:${h.itemId}`, { correct: h.correct, at: h.createdAt.getTime() });
+  }
+  const wrongKeys = new Set([...last].filter(([, v]) => !v.correct).map(([k]) => k));
+  if (wrongKeys.size === 0) return { due: [], later: 0 };
+  const categories = examConfig.errorCategories().categories.map((c) => c.id);
+  const pool = bankItemsFor(categories, level).filter((i) => i.section === "language-use" && wrongKeys.has(i.key));
+  const cutoff = now - minAgeHours * 3600e3;
+  const due = pool.filter((i) => last.get(i.key)!.at <= cutoff).sort((a, b) => last.get(a.key)!.at - last.get(b.key)!.at);
+  return { due: due.slice(0, count), later: pool.length - due.length + Math.max(0, due.length - count) };
 }
 
 export function countBankItems(category: string, level: Level): number {

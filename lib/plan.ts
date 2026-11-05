@@ -4,7 +4,7 @@ import { activity, submissions, tasks } from "@/lib/db/schema";
 import type { Level } from "@/lib/content/schema";
 import { examConfig } from "@/lib/exam/config";
 import { categoryStats } from "@/lib/errors/log";
-import { countBankItems } from "@/lib/targeted";
+import { countBankItems, pickMistakes } from "@/lib/targeted";
 import { dueInfo } from "@/lib/vocab/cards";
 import { usedTaskIds } from "@/lib/tasks";
 import { localDay } from "@/lib/activity";
@@ -73,6 +73,21 @@ export function todayPlan(level: Level, estimates: PartEstimate[], hasDiagnostic
       href: "/szokincs/ismetles",
       section: "vocabulary",
       minutes: Math.max(5, Math.round(due.total * 0.25)),
+      done: false,
+    });
+  }
+
+  // language-use items answered wrong earlier and due again
+  const { review } = examConfig.app();
+  const mistakes = pickMistakes(level, review.itemsPerRound, review.minAgeHours);
+  if (mistakes.due.length >= review.planMinDue) {
+    items.push({
+      key: "mistakes",
+      title: `Hibáim újrapróbálása (${mistakes.due.length})`,
+      reason: "Korábban elrontott mondatok – amíg nem sikerül, újra előkerülnek.",
+      href: "/hibanaplo/ujraproba",
+      section: "language-use",
+      minutes: Math.max(5, Math.round(mistakes.due.length * 0.7)),
       done: false,
     });
   }

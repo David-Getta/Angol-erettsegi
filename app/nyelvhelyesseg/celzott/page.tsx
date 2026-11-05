@@ -57,7 +57,15 @@ export default async function TargetedPage({ searchParams }: { searchParams: Pro
   const lowCats = selected.filter((c) => countBankItems(c, s.level) < app.targeted.minBankItems);
   return (
     <div>
-      <PageHeader title={`${t.languageUse.targeted}: ${selected.map((c) => names[c]).join(", ")}`} intro={t.languageUse.targetedIntro} />
+      <PageHeader
+        title={`${t.languageUse.targeted}: ${selected.map((c) => names[c]).join(", ")}`}
+        intro={t.languageUse.targetedIntro}
+        actions={selected.map((c) => (
+          <Link key={c} href={`/szabalytar/${c}`} className="text-sm text-accent hover:underline" title={t.lessons.lessonLinkTitle}>
+            § {t.lessons.lessonLink}: {names[c]}
+          </Link>
+        ))}
+      />
       {lowCats.map((c) => (
         <CommandTip
           key={c}

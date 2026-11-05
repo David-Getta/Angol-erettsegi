@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { categoryStats, recentErrors, weeklyTrend } from "@/lib/errors/log";
+import { pickMistakes } from "@/lib/targeted";
 import { countBankItems } from "@/lib/targeted";
 import { examConfig } from "@/lib/exam/config";
 import { getSettings } from "@/lib/settings";
@@ -20,10 +21,21 @@ export default async function ErrorLogPage({ searchParams }: { searchParams: Pro
   const trend = weeklyTrend(8);
   const recent = recentErrors(60, k || undefined);
   const names = Object.fromEntries(examConfig.errorCategories().categories.map((c) => [c.id, c.name]));
+  const review = pickMistakes(s.level, app.review.itemsPerRound, app.review.minAgeHours);
 
   return (
     <div>
-      <PageHeader title={t.errorLog.title} intro={t.errorLog.intro} />
+      <PageHeader
+        title={t.errorLog.title}
+        intro={t.errorLog.intro}
+        actions={
+          review.due.length > 0 ? (
+            <Link href="/hibanaplo/ujraproba" className={btn.primary} data-testid="review-mistakes">
+              ↻ {t.languageUse.reviewButton(review.due.length)}
+            </Link>
+          ) : null
+        }
+      />
       {stats.length === 0 ? (
         <Empty>{t.errorLog.empty}</Empty>
       ) : (

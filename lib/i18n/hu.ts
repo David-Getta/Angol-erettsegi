@@ -147,6 +147,12 @@ export const t = {
     title: "Nyelvhelyesség",
     intro: "Lyukas szövegek, szóképzés, igealakok és hibakeresés. Több helyes válasz is elfogadott; kis- és nagybetű, felesleges szóköz nem számít.",
     targeted: "Célzott gyakorlás",
+    review: "Hibáim újrapróbálása",
+    reviewIntro:
+      "A nyelvhelyességi mondatok, amelyeket korábban elrontottál – legkorábban másnap újra megkapod őket, és addig maradnak a listán, amíg helyesen nem válaszolsz.",
+    reviewNone: "Most nincs esedékes hibád. Ügyes!",
+    reviewLater: (n: number) => `${n} további mondat később lesz esedékes.`,
+    reviewButton: (n: number) => `Hibáim újrapróbálása (${n})`,
     targetedIntro: "A hibanaplód leggyakoribb kategóriáiból válogatott itemek a feladatbankból.",
     targetedPick: "Válassz kategóriát",
     targetedTop: "A leggyakoribb hibáid alapján",

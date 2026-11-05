@@ -206,6 +206,10 @@ export const AppConfigSchema = z.object({
   targeted: z.object({ itemsPerRound: z.number().int().positive(), minBankItems: z.number().int().positive() }),
   dailyPlan: z.object({ minTasks: z.number().int(), maxTasks: z.number().int() }),
   textAnswers: z.object({ acceptNearMissIn: z.array(z.enum(["reading", "language-use", "listening"])).default([]) }),
+  /** Re-asking language-use items the student got wrong: not before minAgeHours after the mistake. */
+  review: z
+    .object({ minAgeHours: z.number().nonnegative(), itemsPerRound: z.number().int().positive(), planMinDue: z.number().int().positive() })
+    .default({ minAgeHours: 20, itemsPerRound: 15, planMinDue: 3 }),
 });
 export type AppConfig = z.infer<typeof AppConfigSchema>;
 
