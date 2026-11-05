@@ -264,6 +264,16 @@ export const SpeakingTaskSchema = BaseSchema.extend({
   /** Speaking time for the candidate (seconds) in practice mode. */
   speakingSeconds: z.number().int().positive(),
   prepSeconds: z.number().int().nonnegative().default(0),
+  /**
+   * A sample answer at the level: turns of a conversation (interview, situation,
+   * debate) or a monologue (picture, presentation), with Hungarian notes.
+   */
+  sampleAnswer: z
+    .object({
+      turns: z.array(z.object({ speaker: z.enum(["examiner", "candidate"]), text: nonEmpty })).min(1),
+      notes: z.array(nonEmpty).default([]),
+    })
+    .optional(),
 });
 export type SpeakingTask = z.infer<typeof SpeakingTaskSchema>;
 

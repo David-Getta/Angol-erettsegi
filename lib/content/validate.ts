@@ -301,6 +301,15 @@ function checkSpeaking(ctx: Ctx, s: SpeakingTask) {
     if (s.level !== "emelt") err(ctx, `Vitafeladat csak emelt szinten van.`);
   }
   if (s.type === "presentation" && s.prompts.length < 1) err(ctx, `Témakifejtéshez legalább 1 "prompts" elem kell.`);
+  const sa = s.sampleAnswer;
+  if (sa) {
+    const cand = sa.turns.filter((x) => x.speaker === "candidate");
+    const words = wordCount(cand.map((x) => x.text).join(" "));
+    if (cand.length === 0) err(ctx, `A mintaválaszban nincs vizsgázói megszólalás.`);
+    const min = s.level === "emelt" ? 120 : 80;
+    if (words < min) warn(ctx, `A mintaválasz vizsgázói része rövid (${words} szó, legalább ${min} ajánlott).`);
+    if (sa.notes.length < 2) warn(ctx, `A mintaválaszhoz legalább 2 magyar megjegyzés kell (miért jó).`);
+  }
 }
 
 function checkLesson(ctx: Ctx, l: GrammarLesson) {

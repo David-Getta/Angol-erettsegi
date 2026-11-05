@@ -181,6 +181,15 @@ export const t = {
     voices: "Hangok",
   },
 
+  sample: {
+    title: "Mintaválasz",
+    hint: "Előbb próbáld meg magad, és csak utána hasonlítsd össze – a mintaválasz egy lehetséges jó megoldás, nem az egyetlen.",
+    examiner: "Vizsgáztató",
+    candidate: "Vizsgázó",
+    why: "Miért jó?",
+    words: (n: number) => `a vizsgázó ${n} szót mond`,
+  },
+
   writing: {
     title: "Íráskészség",
     modelAnswer: "Mintamegoldás",

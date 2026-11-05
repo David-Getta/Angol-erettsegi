@@ -14,6 +14,7 @@ import { FeedbackView } from "./FeedbackView";
 import { VersionCompare, type VersionInfo } from "./VersionCompare";
 import { DeleteSubmissionButton } from "./DeleteSubmissionButton";
 import { ModelAnswer } from "./ModelAnswer";
+import { SampleAnswer } from "../speaking/SampleAnswer";
 
 /** Shared page body for /iras/beadas/[id] and /szobeli/beadas/[id]. */
 export function SubmissionDetail({ id, kind }: { id: string; kind: "writing" | "speaking" }) {
@@ -119,6 +120,7 @@ export function SubmissionDetail({ id, kind }: { id: string; kind: "writing" | "
       )}
 
       {kind === "writing" && task && sub.status === "graded" && <ModelAnswer task={task as WritingTask} />}
+      {kind === "speaking" && task && sub.status === "graded" && <SampleAnswer task={task as SpeakingTask} />}
 
       {versions.length > 1 && <VersionCompare versions={versionInfos} criteria={ref.criteria.map((c) => ({ id: c.id, name: c.name, max: c.max }))} />}
       <div className="pt-4">

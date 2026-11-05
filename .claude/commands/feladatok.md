@@ -73,6 +73,9 @@ Ha az argumentumok hiányosak vagy érvénytelenek, írd ki a helyes formát egy
   `situation` (helyzet, szerepek, 3–5 cél), `picture` (2 jelenetleírás képek helyett + kérdések), emelten `debate`
   (tétel, kiosztott álláspont, 4–6 vizsgáztatói ellenérv, 3–5 ötlet) és `presentation`, ha a leírás szerint van ilyen rész.
 - `instructionsHu`: a vizsgázónak szóló magyar utasítás; `usefulPhrases`; reális `speakingSeconds`.
+- `sampleAnswer`: mintaválasz a szinten (`turns`: vizsgáztató/vizsgázó megszólalások – interjúnál 4–5 kérdés-válasz, szituációnál
+  a teljes szerepjáték minden céllal, képnél monológ összehasonlítással és véleménnyel, vitánál érvek és válasz az ellenérvekre;
+  `notes`: 3–4 magyar megjegyzés, miért jó és mit érdemes megtanulni belőle).
 
 ### Szabálylecke (`szabaly` → `grammar`)
 - Hibakategóriánként egy lecke: `content/grammar/kozep/gr-<hibakategória>.json` (mindig a `kozep` mappában, `"level": "kozep"`;

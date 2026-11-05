@@ -96,7 +96,8 @@ Közös mezők: `schemaVersion: 1`, `id` (= fájlnév), `level` (`kozep`|`emelt`
   `modelAnswer` (mintamegoldás a szóhatáron belül; `pointsCovered`: pontonként szó szerinti idézet; `notes`: magyarul, miért maximális pontos –
   az első beadás után látszik, a javítási anyagba nem kerül be).
 - **speaking**: `type` (`interview`|`situation`|`picture`|`debate`|`presentation`), `partNumber`, magyar `instructionsHu`,
-  típustól függően `questions`, `situation`, `scenes` (képleírást helyettesítő jelenetleírás), `prompts`, `debate` (tétel, kiosztott álláspont, vizsgáztatói ellenérvek).
+  típustól függően `questions`, `situation`, `scenes` (képleírást helyettesítő jelenetleírás), `prompts`, `debate` (tétel, kiosztott álláspont, vizsgáztatói ellenérvek),
+  `sampleAnswer` (`turns`: vizsgáztató/vizsgázó megszólalások, `notes` magyarul – a javítási anyagba nem kerül be).
 - **vocabulary**: `type: "deck"`, `cards[]` (`term`, `meaning`, `example` – a szót tartalmazó angol mondat, `collocation`, `pos`).
 - **grammar** (Szabálytár, `/szabalytar`): hibakategóriánként egy lecke, `content/grammar/kozep/gr-<kategória>.json` (szintfüggetlen,
   mindig a `kozep` mappában, `topic: "nyelvtan"`): `summaryHu`, `rules[]` (magyar magyarázat, angol példák fordítással, `emeltOnly`),

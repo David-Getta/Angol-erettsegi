@@ -9,6 +9,7 @@ import { getSettings } from "@/lib/settings";
 import { t } from "@/lib/i18n/hu";
 import { Badge, SourceBadge } from "@/components/ui";
 import { SpeakingPractice } from "./SpeakingPractice";
+import { SampleAnswer } from "@/components/speaking/SampleAnswer";
 
 export const metadata: Metadata = { title: t.speaking.title };
 
@@ -35,6 +36,11 @@ export default async function SpeakingTaskPage({ params }: { params: Promise<{ i
       </div>
       <h1 className="mb-4 text-2xl font-semibold">{task.title}</h1>
       <SpeakingPractice task={task} examinerPrompt={prompt} ttsRate={s.ttsRate} />
+      {task.sampleAnswer && (
+        <div className="mt-6">
+          <SampleAnswer task={task} />
+        </div>
+      )}
     </div>
   );
 }
