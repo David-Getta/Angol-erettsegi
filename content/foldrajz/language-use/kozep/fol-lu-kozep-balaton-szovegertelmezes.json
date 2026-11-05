@@ -1,0 +1,163 @@
+{
+  "schemaVersion": 1,
+  "id": "fol-lu-kozep-balaton-szovegertelmezes",
+  "subject": "foldrajz",
+  "revision": 1,
+  "level": "kozep",
+  "source": "generated",
+  "topic": "magyarorszag",
+  "title": "A Balaton – szövegértelmezés",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "language-use",
+  "type": "szovegertelmezes",
+  "instructions": "Olvassa el a szöveget, majd válaszoljon a kérdésekre a szöveg és földrajzi ismeretei alapján! A 0. a megoldott példa.",
+  "passage": {
+    "title": "A Balaton",
+    "blocks": [
+      {
+        "text": "A Balaton Közép-Európa legnagyobb tava: hossza kb. 77 km, felszíne kb. 600 km², átlagos mélysége azonban csak 3 méter körül van. A tavat főként a Zala táplálja, amely a Kis-Balaton nádasain és tározóin át ér a tóba; ezek a vizes élőhelyek kiszűrik a hordalék és a tápanyagok egy részét. A tó vize a Sió-csatornán át folyik le a Duna felé, a vízszintet a siófoki zsilip szabályozza."
+      },
+      {
+        "text": "A sekély víz nyáron gyorsan felmelegszik, ami a fürdőzőknek kedvez, de a sok tápanyag és a meleg víz együtt az algák elszaporodását is okozhatja. Az 1970-es és 1980-as években a mezőgazdasági műtrágya és a tisztítatlan szennyvíz miatt romlott a vízminőség, ezért szennyvíztisztítókat építettek, és létrehozták a Kis-Balaton Vízvédelmi Rendszert."
+      },
+      {
+        "text": "Az északi partot vulkáni tanúhegyek (például a Badacsony és a Szent György-hegy) és borvidékek kísérik, a déli part lapos, homokos, ezért itt alakultak ki a legnagyobb üdülőtelepek. A térség idegenforgalma erősen szezonális: a vendégéjszakák nagy része a nyári hónapokra esik."
+      }
+    ]
+  },
+  "example": {
+    "id": "0",
+    "kind": "text",
+    "prompt": "Melyik vízfolyás táplálja leginkább a Balatont a szöveg szerint?",
+    "answer": [
+      "Zala",
+      "Zala folyó"
+    ],
+    "category": "szovegertelmezes",
+    "explanation": "Zala: a szöveg szerint a tavat „főként a Zala táplálja”, amely a Kis-Balatonon keresztül ér a tóba.",
+    "maxWords": 2
+  },
+  "items": [
+    {
+      "id": "1",
+      "kind": "choice",
+      "prompt": "Miért a déli parton alakultak ki a legnagyobb üdülőtelepek?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Mert a part lapos és homokos, a víz sekély."
+        },
+        {
+          "key": "B",
+          "text": "Mert vulkáni tanúhegyek kísérik."
+        },
+        {
+          "key": "C",
+          "text": "Mert itt torkollik a Zala."
+        },
+        {
+          "key": "D",
+          "text": "Mert itt a legmélyebb a tó."
+        }
+      ],
+      "answer": "A",
+      "category": "szovegertelmezes",
+      "explanation": "Helyes: A. A szöveg szerint „a déli part lapos, homokos, ezért itt alakultak ki a legnagyobb üdülőtelepek”; a sekély, gyorsan felmelegedő víz a fürdőzésnek kedvez.",
+      "wrongOptions": {
+        "B": "A tanúhegyek az északi partot kísérik, nem a délit.",
+        "C": "A Zala a tó nyugati végén, a Kis-Balatonon át ömlik be, nem a déli üdülőpartokon.",
+        "D": "A tó átlagosan csak kb. 3 m mély; a déli part éppen sekélysége miatt kedvelt."
+      }
+    },
+    {
+      "id": "2",
+      "kind": "text",
+      "prompt": "Milyen mesterséges vízfolyáson át folyik le a tó vize a Duna felé?",
+      "answer": [
+        "Sió-csatorna",
+        "Sió",
+        "Sió csatorna"
+      ],
+      "category": "szovegertelmezes",
+      "explanation": "Sió-csatorna: a szöveg szerint a tó vize „a Sió-csatornán át folyik le a Duna felé”, a vízszintet a siófoki zsilip szabályozza.",
+      "maxWords": 2
+    },
+    {
+      "id": "3",
+      "kind": "tf",
+      "prompt": "A szöveg szerint a Kis-Balaton vizes élőhelyei a tóba jutó tápanyagok egy részét visszatartják.",
+      "answer": "T",
+      "category": "szovegertelmezes",
+      "explanation": "Igaz: a szöveg szerint a Kis-Balaton nádasai és tározói „kiszűrik a hordalék és a tápanyagok egy részét”."
+    },
+    {
+      "id": "4",
+      "kind": "text",
+      "prompt": "Mi a neve annak a folyamatnak, amikor a víz tápanyagokban feldúsul, és emiatt elszaporodnak az algák?",
+      "answer": [
+        "eutrofizáció",
+        "eutrofizálódás",
+        "eutrofikáció"
+      ],
+      "category": "fogalomhasznalat",
+      "explanation": "Eutrofizáció: a műtrágyából és szennyvízből származó nitrogén- és foszforvegyületek feldúsulnak, a meleg, sekély vízben elszaporodnak az algák, a víz oxigénhiányossá válhat.",
+      "maxWords": 2
+    },
+    {
+      "id": "5",
+      "kind": "choice",
+      "prompt": "Milyen eredetűek a Badacsony és a Szent György-hegy?",
+      "options": [
+        {
+          "key": "A",
+          "text": "vulkáni (bazalt tanúhegyek)"
+        },
+        {
+          "key": "B",
+          "text": "gleccser által felhalmozott hegyek"
+        },
+        {
+          "key": "C",
+          "text": "szél által összehordott homokdombok"
+        },
+        {
+          "key": "D",
+          "text": "korallzátonyok maradványai"
+        }
+      ],
+      "answer": "A",
+      "category": "szovegertelmezes",
+      "explanation": "Helyes: A. A szöveg „vulkáni tanúhegyekről” ír; ezek a harmadidőszak végi bazaltvulkánosság maradványai, a keményebb bazaltsapka védte meg őket a lepusztulástól.",
+      "wrongOptions": {
+        "B": "A Kárpát-medencében nem voltak a hegységeket formáló gleccserek; a tanúhegyek vulkáni eredetűek.",
+        "C": "A szél homokdombokat az Alföldön (pl. Nyírség) halmozott fel, a tanúhegyek vulkáni kőzetből állnak.",
+        "D": "Korallzátonyokból mészkő lesz; a Badacsony bazaltból, vulkáni kőzetből épül fel."
+      }
+    },
+    {
+      "id": "6",
+      "kind": "tf",
+      "prompt": "A szöveg szerint a balatoni idegenforgalom egyenletesen oszlik el az év során.",
+      "answer": "F",
+      "category": "szovegertelmezes",
+      "explanation": "Hamis: a szöveg szerint az idegenforgalom „erősen szezonális: a vendégéjszakák nagy része a nyári hónapokra esik”."
+    },
+    {
+      "id": "7",
+      "kind": "text",
+      "prompt": "Számítsa ki a szöveg adataiból, kb. hány km³ víz van a tóban (felszín × átlagos mélység)!",
+      "answer": [
+        "1,8 km³",
+        "1,8",
+        "1.8",
+        "1.8 km³",
+        "1,8 km3",
+        "1,8 milliárd m³"
+      ],
+      "category": "szamitas-foldrajzi",
+      "explanation": "Kb. 1,8 km³: a mértékegységeket egyeztetni kell: 3 m = 0,003 km, így 600 km² × 0,003 km = 1,8 km³ (= 1,8 milliárd m³)."
+    }
+  ],
+  "suggestedMinutes": 8
+}

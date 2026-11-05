@@ -1,0 +1,172 @@
+{
+  "schemaVersion": 1,
+  "id": "fol-lu-kozep-klimadiagram-elemzes",
+  "subject": "foldrajz",
+  "revision": 1,
+  "level": "kozep",
+  "source": "generated",
+  "topic": "levegoburok",
+  "title": "Egy éghajlati állomás klímadiagramja",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "language-use",
+  "type": "abraelemzes",
+  "instructions": "Az alábbi leírás egy éghajlati állomás klímadiagramjának adatait közli. Válaszoljon a kérdésekre a leírás alapján! A számításoknál írja le a mértékegységet is. A 0. a megoldott példa.",
+  "passage": {
+    "title": "Egy éghajlati állomás klímadiagramja (szöveges leírás)",
+    "blocks": [
+      {
+        "text": "A klímadiagram egy tengerparti éghajlati állomás sokéves átlagadatait ábrázolja. A vonaldiagram a havi középhőmérsékletet, az oszlopdiagram a havi csapadékösszeget mutatja."
+      },
+      {
+        "heading": "Havi középhőmérséklet (°C)",
+        "text": "január 10, február 11, március 13, április 16, május 21, június 25, július 28, augusztus 28, szeptember 24, október 19, november 15, december 12."
+      },
+      {
+        "heading": "Havi csapadékösszeg (mm)",
+        "text": "január 55, február 45, március 40, április 25, május 20, június 8, július 5, augusztus 6, szeptember 16, október 50, november 60, december 70."
+      }
+    ]
+  },
+  "example": {
+    "id": "0",
+    "kind": "text",
+    "prompt": "Mekkora a leghidegebb hónap középhőmérséklete?",
+    "answer": [
+      "10 °C",
+      "10",
+      "10°C",
+      "10 fok"
+    ],
+    "category": "abra-diagram",
+    "explanation": "10 °C: a havi középhőmérsékletek közül a januári (10 °C) a legalacsonyabb."
+  },
+  "items": [
+    {
+      "id": "1",
+      "kind": "text",
+      "prompt": "Mekkora az állomás évi közepes hőingása?",
+      "answer": [
+        "18 °C",
+        "18",
+        "18°C",
+        "18 fok"
+      ],
+      "category": "abra-diagram",
+      "explanation": "18 °C: az évi közepes hőingás a legmelegebb és a leghidegebb hónap középhőmérsékletének különbsége: 28 °C (július, augusztus) − 10 °C (január) = 18 °C."
+    },
+    {
+      "id": "2",
+      "kind": "text",
+      "prompt": "Mennyi az évi csapadékösszeg?",
+      "answer": [
+        "400 mm",
+        "400",
+        "400mm"
+      ],
+      "category": "abra-diagram",
+      "explanation": "400 mm: a tizenkét havi csapadékérték összege 55 + 45 + 40 + 25 + 20 + 8 + 5 + 6 + 16 + 50 + 60 + 70 = 400 mm."
+    },
+    {
+      "id": "3",
+      "kind": "text",
+      "prompt": "Melyik hónap a legcsapadékosabb?",
+      "answer": [
+        "december",
+        "dec"
+      ],
+      "category": "abra-diagram",
+      "explanation": "December: 70 mm-rel ebben a hónapban hullik a legtöbb csapadék; a csapadékmaximum tehát télen van.",
+      "maxWords": 1
+    },
+    {
+      "id": "4",
+      "kind": "choice",
+      "prompt": "Melyik éghajlati típusba sorolható az állomás?",
+      "options": [
+        {
+          "key": "A",
+          "text": "mediterrán (meleg mérsékelt, száraz nyarú) éghajlat"
+        },
+        {
+          "key": "B",
+          "text": "óceáni éghajlat"
+        },
+        {
+          "key": "C",
+          "text": "szavannaéghajlat"
+        },
+        {
+          "key": "D",
+          "text": "kontinentális éghajlat"
+        }
+      ],
+      "answer": "A",
+      "category": "ovezetesseg-hiba",
+      "explanation": "Helyes: mediterrán. Enyhe (10 °C feletti) tél, forró (28 °C) nyár, kevés évi csapadék (400 mm) téli csapadékmaximummal és száraz nyárral – ez a mediterrán éghajlat ismertetőjegye.",
+      "wrongOptions": {
+        "B": "Az óceáni éghajlat hőingása kicsi (kb. 10 °C), a nyár mérsékelten meleg, és minden hónapban bőséges csapadék hullik – itt nyáron szinte nincs csapadék.",
+        "C": "A szavannaéghajlat a forró övezetben van: minden hónap 20 °C fölötti, és az esős évszak a nyári (magas napállású) félévre esik, nem télre.",
+        "D": "A kontinentális éghajlaton hideg, 0 °C alatti a tél, a csapadékmaximum pedig nyáron van – itt a tél enyhe és csapadékos."
+      }
+    },
+    {
+      "id": "5",
+      "kind": "choice",
+      "prompt": "Melyik félgömbön fekszik az állomás?",
+      "options": [
+        {
+          "key": "A",
+          "text": "az északi félgömbön"
+        },
+        {
+          "key": "B",
+          "text": "a déli félgömbön"
+        },
+        {
+          "key": "C",
+          "text": "az adatokból nem dönthető el"
+        }
+      ],
+      "answer": "A",
+      "category": "abra-diagram",
+      "explanation": "Helyes: az északi félgömbön. A legmelegebb hónapok a július és az augusztus, a leghidegebb a január; a déli félgömbön ez éppen fordítva lenne.",
+      "wrongOptions": {
+        "B": "A déli félgömbön januárban van nyár, itt viszont a január a leghidegebb hónap.",
+        "C": "A hőmérséklet évi menete eldönti a kérdést: a júliusi nyár az északi félgömbre jellemző."
+      }
+    },
+    {
+      "id": "6",
+      "kind": "tf",
+      "prompt": "A leírás szerint az évi csapadék nagyobb része az október–márciusi (téli) félévben hullik.",
+      "answer": "T",
+      "category": "abra-diagram",
+      "explanation": "Igaz: október–március összesen 50 + 60 + 70 + 55 + 45 + 40 = 320 mm, ez a 400 mm-es évi összeg 80%-a."
+    },
+    {
+      "id": "7",
+      "kind": "text",
+      "prompt": "Mekkora az évi középhőmérséklet? Egy tizedesjegyre kerekítve adja meg!",
+      "answer": [
+        "18,5 °C",
+        "18,5",
+        "18.5",
+        "18.5 °C",
+        "18,5°C",
+        "18,5 fok"
+      ],
+      "category": "szamitas-foldrajzi",
+      "explanation": "18,5 °C: a havi középhőmérsékletek összege 222 °C, ezt elosztjuk a hónapok számával: 222 : 12 = 18,5 °C."
+    },
+    {
+      "id": "8",
+      "kind": "tf",
+      "prompt": "A száraz nyarat az okozza, hogy nyáron a térítői magasnyomású öv északabbra húzódik, és az állomás fölött leszálló, száraz levegő uralkodik.",
+      "answer": "T",
+      "category": "termeszeti-folyamat",
+      "explanation": "Igaz: a Nap látszólagos vándorlását követve nyáron a térítői (szubtrópusi) magasnyomású öv a mediterrán térség fölé tolódik; a leszálló légáramlásban nem képződik felhő, ezért száraz a nyár. Télen a nyugati szelek ciklonjai hoznak esőt."
+    }
+  ],
+  "suggestedMinutes": 8
+}

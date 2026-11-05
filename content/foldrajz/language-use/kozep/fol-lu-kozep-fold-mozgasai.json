@@ -1,0 +1,261 @@
+{
+  "schemaVersion": 1,
+  "id": "fol-lu-kozep-fold-mozgasai",
+  "subject": "foldrajz",
+  "revision": 1,
+  "level": "kozep",
+  "source": "generated",
+  "topic": "kozmikus-ter",
+  "title": "A Föld mozgásai és a Naprendszer – feleletválasztás",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "language-use",
+  "type": "feleletvalasztas",
+  "instructions": "Válassza ki a helyes választ! Írja a betűjelét a kijelölt helyre! Minden kérdésre egy helyes válasz van. A 0. a megoldott példa.",
+  "example": {
+    "id": "0",
+    "kind": "choice",
+    "prompt": "Melyik bolygó kering a Naphoz legközelebb?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Merkúr"
+      },
+      {
+        "key": "B",
+        "text": "Vénusz"
+      },
+      {
+        "key": "C",
+        "text": "Mars"
+      },
+      {
+        "key": "D",
+        "text": "Föld"
+      }
+    ],
+    "answer": "A",
+    "category": "fogalomhasznalat",
+    "explanation": "Helyes: Merkúr. A Naptól távolodva a bolygók sorrendje Merkúr, Vénusz, Föld, Mars, Jupiter, Szaturnusz, Uránusz, Neptunusz."
+  },
+  "items": [
+    {
+      "id": "1",
+      "kind": "choice",
+      "prompt": "Minek a közvetlen következménye a nappalok és az éjszakák váltakozása?",
+      "options": [
+        {
+          "key": "A",
+          "text": "A Föld tengely körüli forgásának"
+        },
+        {
+          "key": "B",
+          "text": "A Föld Nap körüli keringésének"
+        },
+        {
+          "key": "C",
+          "text": "A Hold Föld körüli keringésének"
+        },
+        {
+          "key": "D",
+          "text": "A tengelyferdeségnek"
+        }
+      ],
+      "answer": "A",
+      "category": "termeszeti-folyamat",
+      "explanation": "Helyes: A. A Föld kb. 24 óra alatt fordul meg a tengelye körül nyugatról keletre, ezért egy adott pont felváltva a Nap felé néző (nappal) és az árnyékos (éjszaka) oldalra kerül.",
+      "wrongOptions": {
+        "B": "A Nap körüli keringés egy évig tart; ennek (a tengelyferdeséggel együtt) az évszakok váltakozása a következménye, nem a napi váltakozás.",
+        "C": "A Hold keringése a holdfázisokat és a fogyatkozásokat okozza, a nappal és az éjszaka váltakozására nincs hatása.",
+        "D": "A tengelyferdeség a nappalok hosszának évszakos változását okozza, de maga a váltakozás a forgás miatt van."
+      }
+    },
+    {
+      "id": "2",
+      "kind": "choice",
+      "prompt": "Melyik napon delel a Nap merőlegesen (90°-os szögben) a Ráktérítő felett?",
+      "options": [
+        {
+          "key": "A",
+          "text": "március 21."
+        },
+        {
+          "key": "B",
+          "text": "június 21."
+        },
+        {
+          "key": "C",
+          "text": "szeptember 23."
+        },
+        {
+          "key": "D",
+          "text": "december 22."
+        }
+      ],
+      "answer": "B",
+      "category": "termeszeti-folyamat",
+      "explanation": "Helyes: június 21. A nyári napfordulókor az északi félgömb hajlik leginkább a Nap felé, ezért a Nap az északi szélesség 23,5°-án, a Ráktérítő felett delel merőlegesen.",
+      "wrongOptions": {
+        "A": "Március 21-én (tavaszi napéjegyenlőség) a Nap az Egyenlítő felett delel merőlegesen.",
+        "C": "Szeptember 23-án (őszi napéjegyenlőség) is az Egyenlítő felett delel merőlegesen a Nap.",
+        "D": "December 22-én (téli napforduló) a Baktérítő, azaz a déli szélesség 23,5° felett delel merőlegesen."
+      }
+    },
+    {
+      "id": "3",
+      "kind": "choice",
+      "prompt": "Mi az évszakok váltakozásának oka?",
+      "options": [
+        {
+          "key": "A",
+          "text": "A Föld és a Nap távolsága az év során jelentősen változik."
+        },
+        {
+          "key": "B",
+          "text": "A Föld forgástengelye 66,5°-os szöget zár be a keringési síkkal, és iránya a keringés során nem változik."
+        },
+        {
+          "key": "C",
+          "text": "A Nap sugárzásának erőssége évente kétszer megnő."
+        },
+        {
+          "key": "D",
+          "text": "A Föld forgási sebessége télen lelassul."
+        }
+      ],
+      "answer": "B",
+      "category": "termeszeti-folyamat",
+      "explanation": "Helyes: B. A ferde és állandó irányú tengely miatt a keringés során hol az északi, hol a déli félgömb kap meredekebb szögben napsugarakat és hosszabb nappalokat – ez okozza az évszakokat.",
+      "wrongOptions": {
+        "A": "A Föld–Nap távolság csak kevéssé változik, és a Föld éppen januárban van a legközelebb a Naphoz, amikor az északi félgömbön tél van.",
+        "C": "A Nap sugárzása lényegében állandó; a naptevékenység kb. 11 éves ciklusa nem okoz évszakokat.",
+        "D": "A Föld forgási sebessége az év során gyakorlatilag állandó, nem függ az évszakoktól."
+      }
+    },
+    {
+      "id": "4",
+      "kind": "choice",
+      "prompt": "Június 21-én melyik az a legdélebbi szélességi kör, ahol a Nap 24 órán át nem nyugszik le?",
+      "options": [
+        {
+          "key": "A",
+          "text": "a Ráktérítő"
+        },
+        {
+          "key": "B",
+          "text": "az Egyenlítő"
+        },
+        {
+          "key": "C",
+          "text": "az Északi-sarkkör"
+        },
+        {
+          "key": "D",
+          "text": "a Déli-sarkkör"
+        }
+      ],
+      "answer": "C",
+      "category": "termeszeti-folyamat",
+      "explanation": "Helyes: az Északi-sarkkör (é. sz. 66,5°). A nyári napfordulókor az északi félgömb a Nap felé hajlik, így az Északi-sarkkörtől a sarkpontig a Nap egész nap a látóhatár felett marad (éjféli nap).",
+      "wrongOptions": {
+        "A": "A Ráktérítőn ekkor a Nap merőlegesen delel, de a nappal csak kb. 13,5 órás, a Nap le is nyugszik.",
+        "B": "Az Egyenlítőn egész évben kb. 12 órás a nappal és az éjszaka.",
+        "D": "A Déli-sarkkörön június 21-én éppen fordított a helyzet: a Nap egész nap nem kel fel (sarki éjszaka)."
+      }
+    },
+    {
+      "id": "5",
+      "kind": "choice",
+      "prompt": "Hány hosszúsági fokonként követik egymást az elméleti egyórás időzónák?",
+      "options": [
+        {
+          "key": "A",
+          "text": "1°"
+        },
+        {
+          "key": "B",
+          "text": "10°"
+        },
+        {
+          "key": "C",
+          "text": "15°"
+        },
+        {
+          "key": "D",
+          "text": "24°"
+        }
+      ],
+      "answer": "C",
+      "category": "szamitas-foldrajzi",
+      "explanation": "Helyes: 15°. A Föld 24 óra alatt fordul 360°-ot, így óránként 360° : 24 = 15°-ot; ezért egy időzóna elméletben 15 hosszúsági fok széles.",
+      "wrongOptions": {
+        "A": "1° hosszúságkülönbség csak 4 perc helyiidő-különbséget jelent (60 perc : 15).",
+        "B": "10°-os zónákkal 36 zóna lenne, ez nem felel meg a 24 órás forgásnak.",
+        "D": "24 az időzónák száma, nem a szélességük fokban."
+      }
+    },
+    {
+      "id": "6",
+      "kind": "choice",
+      "prompt": "Melyik a Naprendszer legnagyobb bolygója?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Szaturnusz"
+        },
+        {
+          "key": "B",
+          "text": "Jupiter"
+        },
+        {
+          "key": "C",
+          "text": "Neptunusz"
+        },
+        {
+          "key": "D",
+          "text": "Föld"
+        }
+      ],
+      "answer": "B",
+      "category": "fogalomhasznalat",
+      "explanation": "Helyes: Jupiter. A Jupiter a legnagyobb átmérőjű és legnagyobb tömegű bolygó; óriásbolygó, főként hidrogénből és héliumból áll.",
+      "wrongOptions": {
+        "A": "A Szaturnusz a második legnagyobb bolygó, gyűrűiről híres.",
+        "C": "A Neptunusz a Naptól legtávolabbi bolygó, de kisebb a Jupiternél és a Szaturnusznál is.",
+        "D": "A Föld a legnagyobb kőzetbolygó, de az óriásbolygóknál sokkal kisebb."
+      }
+    },
+    {
+      "id": "7",
+      "kind": "choice",
+      "prompt": "Mi okozza elsősorban a tengerjárást (az árapályt)?",
+      "options": [
+        {
+          "key": "A",
+          "text": "A Hold (és kisebb mértékben a Nap) tömegvonzása"
+        },
+        {
+          "key": "B",
+          "text": "Az állandó szelek"
+        },
+        {
+          "key": "C",
+          "text": "A tengeralatti földrengések"
+        },
+        {
+          "key": "D",
+          "text": "A tengeráramlások"
+        }
+      ],
+      "answer": "A",
+      "category": "termeszeti-folyamat",
+      "explanation": "Helyes: A. A Hold tömegvonzása a Föld felé eső és a vele átellenes oldalon is vízdagadást hoz létre; a Föld forgása miatt egy hely naponta kb. kétszer kerül dagályba és kétszer apályba.",
+      "wrongOptions": {
+        "B": "Az állandó szelek hullámokat és felszíni tengeráramlásokat keltenek, de nem okoznak szabályos, napi kétszeri vízszintváltozást.",
+        "C": "A tengeralatti földrengések szökőárat (cunamit) okoznak, ami egyszeri, nem rendszeres jelenség.",
+        "D": "A tengeráramlások vízszintes vízmozgások; nem emelik és süllyesztik szabályos ritmusban a vízszintet."
+      }
+    }
+  ],
+  "suggestedMinutes": 7
+}

@@ -1,0 +1,115 @@
+{
+  "schemaVersion": 1,
+  "id": "mat-rd-kozep-koordinatageometria-egyenes",
+  "subject": "matematika",
+  "revision": 1,
+  "level": "kozep",
+  "source": "generated",
+  "topic": "koordinatageometria",
+  "title": "Pontok, egyenesek, kör a koordináta-rendszerben",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "reading",
+  "type": "rovid-szamitas",
+  "instructions": "Adott az A(−4; 9) és a B(8; −7) pont (0–2. feladat), valamint az e: y = 2x − 3 egyenes (3–5. feladat). Csak a kérdezett számot írd be! A 0. feladat kidolgozott példa.",
+  "example": {
+    "id": "0",
+    "kind": "text",
+    "prompt": "Mekkora az AB szakasz hossza?",
+    "answer": [
+      "20",
+      "20 egység"
+    ],
+    "category": "kepletek",
+    "explanation": "Két pont távolsága: AB = √((8 − (−4))² + (−7 − 9)²) = √(12² + 16²) = √(144 + 256) = √400 = 20."
+  },
+  "items": [
+    {
+      "id": "1",
+      "kind": "text",
+      "prompt": "Az AB szakasz felezőpontja F(2; y). Mennyi y?",
+      "answer": [
+        "1",
+        "y = 1"
+      ],
+      "category": "kepletek",
+      "explanation": "A felezőpont koordinátái a végpontok koordinátáinak átlagai: x = (−4 + 8)/2 = 2, y = (9 + (−7))/2 = 1. Tehát F(2; 1)."
+    },
+    {
+      "id": "2",
+      "kind": "text",
+      "prompt": "Mennyi az AB egyenes meredeksége?",
+      "answer": [
+        "−4/3",
+        "-4/3",
+        "−1,33",
+        "-1,33",
+        "−1.33",
+        "-1.33"
+      ],
+      "category": "kepletek",
+      "explanation": "m = (y₂ − y₁)/(x₂ − x₁) = (−7 − 9)/(8 − (−4)) = −16/12 = −4/3 ≈ −1,33. Negatív, mert balról jobbra haladva az egyenes csökken."
+    },
+    {
+      "id": "3",
+      "kind": "text",
+      "prompt": "Hol metszi az e: y = 2x − 3 egyenes az y tengelyt? Add meg a metszéspont második (y) koordinátáját!",
+      "answer": [
+        "−3",
+        "-3"
+      ],
+      "category": "fuggveny-abrazolas",
+      "explanation": "Az y tengelyen x = 0, így y = 2·0 − 3 = −3. Az y = mx + b alakban a b éppen az y tengelymetszet."
+    },
+    {
+      "id": "4",
+      "kind": "text",
+      "prompt": "Mennyi az e egyenesre merőleges egyenesek meredeksége?",
+      "answer": [
+        "−1/2",
+        "-1/2",
+        "−0,5",
+        "-0,5",
+        "−0.5",
+        "-0.5"
+      ],
+      "category": "geometria-osszefuggesek",
+      "explanation": "Merőleges egyenesek meredekségének szorzata −1: m·2 = −1, így m = −1/2. A meredekség reciprokának ellentettje kell, nem csak a reciproka (1/2) és nem csak az ellentettje (−2)."
+    },
+    {
+      "id": "5",
+      "kind": "text",
+      "prompt": "Az e egyenesen lévő P pont első koordinátája 5. Mennyi a második koordinátája?",
+      "answer": [
+        "7",
+        "y = 7"
+      ],
+      "category": "szamolasi-hiba",
+      "explanation": "A pont rajta van az egyenesen, ezért koordinátái kielégítik az egyenletet: y = 2·5 − 3 = 7, tehát P(5; 7)."
+    },
+    {
+      "id": "6",
+      "kind": "text",
+      "prompt": "Mekkora az (x − 2)² + (y + 1)² = 49 egyenletű kör sugara?",
+      "answer": [
+        "7",
+        "r = 7"
+      ],
+      "category": "kepletek",
+      "explanation": "A kör egyenlete (x − u)² + (y − v)² = r² alakú, itt r² = 49, így r = 7 (a középpont K(2; −1)). Gyakori hiba a 49-et sugárnak venni."
+    },
+    {
+      "id": "7",
+      "kind": "text",
+      "prompt": "Milyen hosszú az a(3; 4) vektor?",
+      "answer": [
+        "5",
+        "5 egység"
+      ],
+      "category": "kepletek",
+      "explanation": "Vektor hossza a koordinátákból Pitagorasz-tétellel: |a| = √(3² + 4²) = √25 = 5."
+    }
+  ],
+  "glossary": [],
+  "suggestedMinutes": 12
+}

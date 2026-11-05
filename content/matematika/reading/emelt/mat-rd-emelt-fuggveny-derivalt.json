@@ -1,0 +1,92 @@
+{
+  "schemaVersion": 1,
+  "id": "mat-rd-emelt-fuggveny-derivalt",
+  "subject": "matematika",
+  "revision": 1,
+  "level": "emelt",
+  "source": "generated",
+  "topic": "fuggvenyek",
+  "title": "Harmadfokú függvény vizsgálata deriválttal",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "reading",
+  "type": "rovid-szamitas",
+  "instructions": "Adott az f: ℝ → ℝ, f(x) = x³ − 6x² + 9x + 1 függvény. Az I. rész kidolgozandó feladatainak mintájára a feladat részkérdésekből áll (a–f); mindegyiknél csak a kért számot írd be. A 0. kérdés a kidolgozott példa.",
+  "example": {
+    "id": "0",
+    "kind": "text",
+    "prompt": "Mennyi f(2) értéke?",
+    "answer": [
+      "3"
+    ],
+    "category": "szamolasi-hiba",
+    "explanation": "Behelyettesítve: f(2) = 8 − 6·4 + 9·2 + 1 = 8 − 24 + 18 + 1 = 3."
+  },
+  "items": [
+    {
+      "id": "1",
+      "kind": "text",
+      "prompt": "a) Mennyi f′(0), azaz a grafikon x = 0 abszcisszájú pontjához húzott érintő meredeksége?",
+      "answer": [
+        "9",
+        "f′(0) = 9"
+      ],
+      "category": "kepletek",
+      "explanation": "Tagonként deriválva (xⁿ deriváltja n·xⁿ⁻¹, a konstansé 0): f′(x) = 3x² − 12x + 9, így f′(0) = 9. Az érintő meredeksége a derivált értéke az érintési pontban."
+    },
+    {
+      "id": "2",
+      "kind": "text",
+      "prompt": "b) Melyik helyen van f-nek helyi maximuma?",
+      "answer": [
+        "1",
+        "x = 1"
+      ],
+      "category": "fuggveny-abrazolas",
+      "explanation": "f′(x) = 3x² − 12x + 9 = 3(x − 1)(x − 3), zérushelyei 1 és 3. Az x = 1-nél f′ pozitívból negatívba vált (f nő, majd csökken), ezért ott helyi maximum van; x = 3-nál negatívból pozitívba vált, ott minimum."
+    },
+    {
+      "id": "3",
+      "kind": "text",
+      "prompt": "c) Mennyi f helyi minimumának értéke?",
+      "answer": [
+        "1"
+      ],
+      "category": "szamolasi-hiba",
+      "explanation": "A helyi minimum helye x = 3 (ott f′ előjele −-ból +-ba vált), értéke f(3) = 27 − 54 + 27 + 1 = 1. A kérdés az értékre vonatkozik, nem a helyre (3)."
+    },
+    {
+      "id": "4",
+      "kind": "text",
+      "prompt": "d) Melyik helyen van f-nek inflexiós pontja?",
+      "answer": [
+        "2",
+        "x = 2"
+      ],
+      "category": "definicio-tetel",
+      "explanation": "Az inflexiós pontban a második derivált előjelet vált: f″(x) = 6x − 12, ez x = 2-nél 0, előtte negatív (konkáv), utána pozitív (konvex). Harmadfokú függvénynél az inflexiós pont a két szélsőértékhely felezőpontja: (1 + 3)/2 = 2."
+    },
+    {
+      "id": "5",
+      "kind": "text",
+      "prompt": "e) Mennyi f legnagyobb értéke a [0; 4] zárt intervallumon?",
+      "answer": [
+        "5"
+      ],
+      "category": "ellenorzes",
+      "explanation": "Zárt intervallumon a helyi szélsőértékek mellett a végpontokat is meg kell vizsgálni: f(0) = 1, f(1) = 5, f(3) = 1, f(4) = 64 − 96 + 36 + 1 = 5. A legnagyobb érték 5 (x = 1-nél és x = 4-nél is felveszi)."
+    },
+    {
+      "id": "6",
+      "kind": "text",
+      "prompt": "f) Mennyi a ∫₀² f(x) dx határozott integrál értéke?",
+      "answer": [
+        "8"
+      ],
+      "category": "kepletek",
+      "explanation": "Egy primitív függvény: F(x) = x⁴/4 − 2x³ + 9x²/2 + x. A Newton–Leibniz-formula szerint ∫₀² f(x) dx = F(2) − F(0) = (4 − 16 + 18 + 2) − 0 = 8."
+    }
+  ],
+  "glossary": [],
+  "suggestedMinutes": 20
+}

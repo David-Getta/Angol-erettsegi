@@ -1,0 +1,108 @@
+{
+  "schemaVersion": 1,
+  "id": "mat-rd-kozep-egyenletek-alap",
+  "subject": "matematika",
+  "revision": 1,
+  "level": "kozep",
+  "source": "generated",
+  "topic": "egyenletek",
+  "title": "Egyenletek, egyenlőtlenségek, egyenletrendszer",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "reading",
+  "type": "rovid-szamitas",
+  "instructions": "Oldd meg az egyenleteket és egyenlőtlenségeket a valós számok halmazán, és csak a kérdezett számot írd be! A 0. feladat kidolgozott példa.",
+  "example": {
+    "id": "0",
+    "kind": "text",
+    "prompt": "Oldd meg: 3x + 7 = 22.",
+    "answer": [
+      "5",
+      "x = 5"
+    ],
+    "category": "egyenlet-rendezes",
+    "explanation": "Mindkét oldalból 7-et kivonva 3x = 15, majd 3-mal osztva x = 5. Ellenőrzés: 3·5 + 7 = 22."
+  },
+  "items": [
+    {
+      "id": "1",
+      "kind": "text",
+      "prompt": "Oldd meg: 5(x − 2) = 2x + 8.",
+      "answer": [
+        "6",
+        "x = 6"
+      ],
+      "category": "algebrai-atalakitas",
+      "explanation": "A zárójelet felbontva 5x − 10 = 2x + 8 (az 5-tel a −2-t is szorozni kell!). Rendezve 3x = 18, így x = 6. Ellenőrzés: 5·4 = 20 és 2·6 + 8 = 20."
+    },
+    {
+      "id": "2",
+      "kind": "text",
+      "prompt": "Oldd meg: x/3 + x/4 = 14.",
+      "answer": [
+        "24",
+        "x = 24"
+      ],
+      "category": "tortek-hatvanyok",
+      "explanation": "A nevezők legkisebb közös többszöröse 12; az egyenletet 12-vel szorozva 4x + 3x = 168, azaz 7x = 168, x = 24. Ellenőrzés: 8 + 6 = 14."
+    },
+    {
+      "id": "3",
+      "kind": "text",
+      "prompt": "Add meg az x² − 7x + 10 = 0 egyenlet nagyobbik gyökét!",
+      "answer": [
+        "5",
+        "x = 5"
+      ],
+      "category": "kepletek",
+      "explanation": "Megoldóképlettel: x = (7 ± √(49 − 40))/2 = (7 ± 3)/2, a gyökök 2 és 5; a nagyobbik az 5. (Viète-formulák: a gyökök összege 7, szorzata 10 – ez is a 2 és az 5.)"
+    },
+    {
+      "id": "4",
+      "kind": "text",
+      "prompt": "Hány valós gyöke van az x² + 2x + 5 = 0 egyenletnek?",
+      "answer": [
+        "0",
+        "nincs",
+        "0 db"
+      ],
+      "category": "definicio-tetel",
+      "explanation": "A diszkrimináns D = b² − 4ac = 4 − 20 = −16 < 0, ezért az egyenletnek nincs valós gyöke (0 darab). Pozitív D-nél két, D = 0-nál egy valós gyök van."
+    },
+    {
+      "id": "5",
+      "kind": "text",
+      "prompt": "Mennyi a −3x + 6 ≥ 0 egyenlőtlenség legnagyobb megoldása?",
+      "answer": [
+        "2",
+        "x = 2"
+      ],
+      "category": "egyenlet-rendezes",
+      "explanation": "−3x ≥ −6; negatív számmal osztva az egyenlőtlenség iránya megfordul: x ≤ 2. A megoldáshalmaz legnagyobb eleme tehát a 2 (az egyenlőség megengedett)."
+    },
+    {
+      "id": "6",
+      "kind": "text",
+      "prompt": "Oldd meg az egyenletrendszert: 2x + y = 11 és x − y = 1. Mennyi y értéke?",
+      "answer": [
+        "3",
+        "y = 3"
+      ],
+      "category": "egyenlet-rendezes",
+      "explanation": "A két egyenletet összeadva 3x = 12, x = 4; ezt a második egyenletbe írva 4 − y = 1, y = 3. Ellenőrzés: 2·4 + 3 = 11."
+    },
+    {
+      "id": "7",
+      "kind": "text",
+      "prompt": "Egy kabát árát 20%-kal csökkentették, így 9600 Ft lett. Mennyi volt az eredeti ár (Ft)?",
+      "answer": [
+        "12000",
+        "12000 Ft"
+      ],
+      "category": "szoveges-ertelmezes",
+      "explanation": "A csökkentett ár az eredeti 80%-a: 0,8·x = 9600, így x = 9600 : 0,8 = 12 000 Ft. Hibás a 9600·1,2 = 11 520, mert a 20% az eredeti árra vonatkozik, nem a csökkentettre."
+    }
+  ],
+  "glossary": [],
+  "suggestedMinutes": 12
+}

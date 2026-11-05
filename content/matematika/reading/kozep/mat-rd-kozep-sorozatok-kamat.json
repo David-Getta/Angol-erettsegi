@@ -1,0 +1,103 @@
+{
+  "schemaVersion": 1,
+  "id": "mat-rd-kozep-sorozatok-kamat",
+  "subject": "matematika",
+  "revision": 1,
+  "level": "kozep",
+  "source": "generated",
+  "topic": "sorozatok",
+  "title": "Számtani és mértani sorozat, kamatos kamat",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "reading",
+  "type": "rovid-szamitas",
+  "instructions": "Számítsd ki a kért értékeket, és csak az eredményt írd be! Pénzösszeget egész forintra kerekítve adj meg. A 0. feladat kidolgozott példa.",
+  "example": {
+    "id": "0",
+    "kind": "text",
+    "prompt": "Egy számtani sorozat első tagja 4, differenciája 3. Mennyi a sorozat 10. tagja?",
+    "answer": [
+      "31",
+      "a10 = 31"
+    ],
+    "category": "kepletek",
+    "explanation": "aₙ = a₁ + (n − 1)·d, így a₁₀ = 4 + 9·3 = 31. A 10. tagig 9-szer kell hozzáadni a differenciát, nem 10-szer."
+  },
+  "items": [
+    {
+      "id": "1",
+      "kind": "text",
+      "prompt": "Mennyi ennek a sorozatnak (a₁ = 4, d = 3) az első 10 tagjának összege?",
+      "answer": [
+        "175"
+      ],
+      "category": "kepletek",
+      "explanation": "Sₙ = (a₁ + aₙ)·n/2 = (4 + 31)·10/2 = 175. Másik képlettel: Sₙ = (2a₁ + (n − 1)d)·n/2 = (8 + 27)·5 = 175."
+    },
+    {
+      "id": "2",
+      "kind": "text",
+      "prompt": "Egy számtani sorozat 2. tagja 7, 5. tagja 16. Mennyi a differenciája?",
+      "answer": [
+        "3",
+        "d = 3"
+      ],
+      "category": "kepletek",
+      "explanation": "A 2. tagtól az 5. tagig háromszor adjuk hozzá a differenciát: a₅ = a₂ + 3d, azaz 16 = 7 + 3d, ebből d = 3."
+    },
+    {
+      "id": "3",
+      "kind": "text",
+      "prompt": "Egy mértani sorozat első tagja 5, hányadosa 2. Mennyi a 6. tagja?",
+      "answer": [
+        "160"
+      ],
+      "category": "kepletek",
+      "explanation": "bₙ = b₁·qⁿ⁻¹, így b₆ = 5·2⁵ = 5·32 = 160. Gyakori hiba 5·2⁶ = 320-at számolni: a kitevő n − 1."
+    },
+    {
+      "id": "4",
+      "kind": "text",
+      "prompt": "Egy mértani sorozat első tagja 81, hányadosa 1/3. Mennyi a 4. tagja?",
+      "answer": [
+        "3"
+      ],
+      "category": "tortek-hatvanyok",
+      "explanation": "b₄ = 81·(1/3)³ = 81·1/27 = 3. Tagonként: 81, 27, 9, 3 – minden tag az előző harmada."
+    },
+    {
+      "id": "5",
+      "kind": "text",
+      "prompt": "Mennyi az 1 + 2 + 4 + 8 + … + 512 összeg (a 2 hatványai 2⁰-tól 2⁹-ig)?",
+      "answer": [
+        "1023"
+      ],
+      "category": "kepletek",
+      "explanation": "Ez egy mértani sorozat első 10 tagjának összege (b₁ = 1, q = 2): S₁₀ = 1·(2¹⁰ − 1)/(2 − 1) = 1024 − 1 = 1023. Vigyázz: 512 = 2⁹, de ez már a 10. tag."
+    },
+    {
+      "id": "6",
+      "kind": "text",
+      "prompt": "200 000 Ft-ot 3 évre bankba teszünk évi 5%-os kamatos kamatra. Mennyi lesz a betét 3 év múlva (Ft)?",
+      "answer": [
+        "231525",
+        "231525 Ft"
+      ],
+      "category": "kepletek",
+      "explanation": "Kamatos kamatnál a betét évente 1,05-szörösére nő: 200 000·1,05³ = 200 000·1,157625 = 231 525 Ft. A 3·5% = 15% (230 000 Ft) az egyszerű kamat lenne, az kevesebb."
+    },
+    {
+      "id": "7",
+      "kind": "text",
+      "prompt": "Egy autó értéke évente 10%-kal csökken. Ma 4 000 000 Ft-ot ér. Mennyit ér 2 év múlva (Ft)?",
+      "answer": [
+        "3240000",
+        "3240000 Ft"
+      ],
+      "category": "szoveges-ertelmezes",
+      "explanation": "Évente az előző érték 90%-a marad: 4 000 000·0,9² = 4 000 000·0,81 = 3 240 000 Ft. Nem 20%-os a csökkenés összesen, mert a második évben már a kisebb érték 10%-a vész el."
+    }
+  ],
+  "glossary": [],
+  "suggestedMinutes": 12
+}

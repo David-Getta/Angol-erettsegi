@@ -1,0 +1,124 @@
+{
+  "schemaVersion": 1,
+  "id": "fol-lu-kozep-nepesseg-fogalmak",
+  "subject": "foldrajz",
+  "revision": 1,
+  "level": "kozep",
+  "source": "generated",
+  "topic": "nepesseg-telepules",
+  "title": "Népesség- és településföldrajzi fogalmak",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "language-use",
+  "type": "fogalom-meghatarozas",
+  "instructions": "Nevezze meg a meghatározásokhoz tartozó földrajzi fogalmakat! Írja a fogalmat a kijelölt helyre! A 0. a megoldott példa.",
+  "example": {
+    "id": "0",
+    "kind": "text",
+    "prompt": "Az ezer lakosra jutó élveszületések száma egy év alatt.",
+    "answer": [
+      "születési arányszám",
+      "élveszületési arányszám",
+      "születési ráta",
+      "natalitás"
+    ],
+    "category": "fogalomhasznalat",
+    "explanation": "Születési arányszám: az egy év alatti élveszületések száma ezer lakosra vetítve, mértékegysége ‰ (ezrelék).",
+    "maxWords": 3
+  },
+  "items": [
+    {
+      "id": "1",
+      "kind": "text",
+      "prompt": "A születési és a halálozási arányszám különbsége; értéke lehet pozitív vagy negatív.",
+      "answer": [
+        "természetes szaporodás",
+        "természetes fogyás",
+        "természetes szaporulat",
+        "természetes népszaporulat",
+        "természetes szaporodási arányszám"
+      ],
+      "category": "fogalomhasznalat",
+      "explanation": "Természetes szaporodás (vagy fogyás): születési arányszám − halálozási arányszám, ‰-ben. Negatív érték (pl. Magyarországon) természetes fogyást jelent. A vándorlást nem tartalmazza.",
+      "maxWords": 3
+    },
+    {
+      "id": "2",
+      "kind": "text",
+      "prompt": "A városi népesség arányának növekedése, a városok számának és kiterjedésének gyarapodása.",
+      "answer": [
+        "urbanizáció",
+        "városodás"
+      ],
+      "category": "fogalomhasznalat",
+      "explanation": "Urbanizáció (városodás): a népesség egyre nagyobb része él városokban; a Föld népességének ma már több mint fele városlakó.",
+      "maxWords": 2
+    },
+    {
+      "id": "3",
+      "kind": "text",
+      "prompt": "A nagyvárosból a környező településekre irányuló kiköltözés, amely miatt a város környékének népessége gyorsan nő.",
+      "answer": [
+        "szuburbanizáció",
+        "szuburbanizálódás"
+      ],
+      "category": "fogalomhasznalat",
+      "explanation": "Szuburbanizáció: a jobb módú családok a zsúfolt városból a zöldövezeti elővárosokba költöznek, de munkahelyük többnyire a városban marad (ingázás) – Budapest környékén az 1990-es évektől erős.",
+      "maxWords": 2
+    },
+    {
+      "id": "4",
+      "kind": "text",
+      "prompt": "Egy nagyvárosból és a vele szoros (munkaerő-, közlekedési, ellátási) kapcsolatban álló, összenövő környező településekből álló településegyüttes.",
+      "answer": [
+        "agglomeráció",
+        "városi agglomeráció"
+      ],
+      "category": "fogalomhasznalat",
+      "explanation": "Agglomeráció: a központi város és a vele összenőtt, naponta ingázók által hozzá kapcsolt települések együttese (pl. a budapesti agglomeráció).",
+      "maxWords": 2
+    },
+    {
+      "id": "5",
+      "kind": "text",
+      "prompt": "A népesség kor és nem szerinti összetételét ábrázoló diagram.",
+      "answer": [
+        "korfa",
+        "népességpiramis",
+        "korfa diagram"
+      ],
+      "category": "fogalomhasznalat",
+      "explanation": "Korfa: a függőleges tengelyen a korcsoportok, a vízszintesen a férfiak (bal oldalt) és a nők (jobb oldalt) száma vagy aránya; alakjából (piramis, harang, urna) a népesedési helyzetre következtethetünk.",
+      "maxWords": 2
+    },
+    {
+      "id": "6",
+      "kind": "text",
+      "prompt": "Az a folyamat, amikor a népességen belül tartósan nő az idősek (65 év felettiek) aránya, a gyermekeké pedig csökken.",
+      "answer": [
+        "elöregedés",
+        "népesség elöregedése",
+        "a népesség elöregedése",
+        "öregedés"
+      ],
+      "category": "fogalomhasznalat",
+      "explanation": "Elöregedés: alacsony születésszám és hosszabb várható élettartam együtt okozza; a korfa urna alakúvá válik (pl. Japán, Olaszország, Magyarország).",
+      "maxWords": 3
+    },
+    {
+      "id": "7",
+      "kind": "text",
+      "prompt": "A születési és a halálozási arányszám változását a gazdasági-társadalmi fejlődéssel összekapcsoló, szakaszokra bontott modell.",
+      "answer": [
+        "demográfiai átmenet",
+        "demográfiai átmenet modellje",
+        "demográfiai ciklus",
+        "népesedési ciklus"
+      ],
+      "category": "fogalomhasznalat",
+      "explanation": "Demográfiai átmenet: előbb a halálozás csökken (népességrobbanás), később a születésszám is; a végén mindkettő alacsony, a népesség stagnál vagy fogy.",
+      "maxWords": 3
+    }
+  ],
+  "suggestedMinutes": 6
+}

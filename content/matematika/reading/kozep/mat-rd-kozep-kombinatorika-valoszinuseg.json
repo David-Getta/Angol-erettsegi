@@ -1,0 +1,118 @@
+{
+  "schemaVersion": 1,
+  "id": "mat-rd-kozep-kombinatorika-valoszinuseg",
+  "subject": "matematika",
+  "revision": 1,
+  "level": "kozep",
+  "source": "generated",
+  "topic": "valoszinuseg",
+  "title": "Sorrendek, kiválasztások, klasszikus valószínűség",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "reading",
+  "type": "rovid-szamitas",
+  "instructions": "Oldd meg a rövid feladatokat! A valószínűséget közönséges törtként (pl. 1/6) vagy tizedes törtként add meg. A 0. feladat kidolgozott példa.",
+  "example": {
+    "id": "0",
+    "kind": "text",
+    "prompt": "Hányféle sorrendben állhat sorba 4 tanuló?",
+    "answer": [
+      "24",
+      "24 féle"
+    ],
+    "category": "kepletek",
+    "explanation": "4 különböző elem sorrendjeinek száma (ismétlés nélküli permutáció): 4! = 4·3·2·1 = 24."
+  },
+  "items": [
+    {
+      "id": "1",
+      "kind": "text",
+      "prompt": "Egy szabályos dobókockával egyszer dobunk. Mennyi a valószínűsége, hogy 4-nél nagyobb számot dobunk?",
+      "answer": [
+        "1/3",
+        "2/6",
+        "0,33",
+        "0.33",
+        "0,333",
+        "0.333"
+      ],
+      "category": "valoszinuseg-statisztika",
+      "explanation": "Kedvező esetek: 5 és 6, ez 2 eset a 6 egyformán valószínűből. P = 2/6 = 1/3. A 4 nem nagyobb 4-nél, ezért nem kedvező."
+    },
+    {
+      "id": "2",
+      "kind": "text",
+      "prompt": "Egy dobozban 3 piros, 5 kék és 2 zöld golyó van. Egyet véletlenszerűen kihúzunk. Mennyi a valószínűsége, hogy a golyó nem kék?",
+      "answer": [
+        "1/2",
+        "5/10",
+        "0,5",
+        "0.5"
+      ],
+      "category": "valoszinuseg-statisztika",
+      "explanation": "Összesen 10 golyó van, ebből nem kék 3 + 2 = 5. P = 5/10 = 1/2. Komplementerrel: 1 − 5/10 = 1/2."
+    },
+    {
+      "id": "3",
+      "kind": "text",
+      "prompt": "Hány kétjegyű szám képezhető az 1, 2, 3, 4, 5 számjegyekből, ha egy számjegy egy számban csak egyszer szerepelhet?",
+      "answer": [
+        "20",
+        "20 db"
+      ],
+      "category": "kepletek",
+      "explanation": "Az első helyre 5, a második helyre a maradék 4 számjegy közül választhatunk: 5·4 = 20. A sorrend számít (12 ≠ 21), ezért nem kombinációt (10) számolunk."
+    },
+    {
+      "id": "4",
+      "kind": "text",
+      "prompt": "Egy 8 fős társaságban mindenki mindenkivel pontosan egyszer koccint. Hány koccintás történik?",
+      "answer": [
+        "28",
+        "28 db"
+      ],
+      "category": "kepletek",
+      "explanation": "Minden koccintás két ember kiválasztása, a sorrend nem számít: C(8; 2) = 8·7/2 = 28. Gráffal: a 8 csúcsú teljes gráf éleinek száma 8·7/2. A 8·7 = 56 minden koccintást kétszer számolna."
+    },
+    {
+      "id": "5",
+      "kind": "text",
+      "prompt": "Két szabályos pénzérmét feldobunk. Mennyi a valószínűsége, hogy mindkettő fej?",
+      "answer": [
+        "1/4",
+        "0,25",
+        "0.25"
+      ],
+      "category": "valoszinuseg-statisztika",
+      "explanation": "Az egyenlően valószínű kimenetelek: FF, FI, IF, II – 4 eset, ebből 1 kedvező. P = 1/4. (A két dobás független, 1/2·1/2 = 1/4.)"
+    },
+    {
+      "id": "6",
+      "kind": "text",
+      "prompt": "Egy 25 fős osztályból hányféleképpen választható ki egy osztálytitkár és egy helyettese (két különböző tanuló)?",
+      "answer": [
+        "600",
+        "600 féle"
+      ],
+      "category": "szoveges-ertelmezes",
+      "explanation": "A tisztségek különbözőek, ezért a sorrend számít: titkár 25-féle, helyettes a maradék 24 közül: 25·24 = 600. Ha két egyforma tisztség lenne, C(25; 2) = 300 lenne a válasz."
+    },
+    {
+      "id": "7",
+      "kind": "text",
+      "prompt": "Egy szabályos kockával kétszer dobunk. Mennyi a valószínűsége, hogy a dobott számok összege 10?",
+      "answer": [
+        "1/12",
+        "3/36",
+        "0,083",
+        "0.083",
+        "0,0833",
+        "0.0833"
+      ],
+      "category": "valoszinuseg-statisztika",
+      "explanation": "Összes eset 6·6 = 36. Kedvező (rendezett) párok: (4; 6), (5; 5), (6; 4) – 3 eset. P = 3/36 = 1/12 ≈ 0,083. A (4; 6) és a (6; 4) két külön eset."
+    }
+  ],
+  "glossary": [],
+  "suggestedMinutes": 12
+}

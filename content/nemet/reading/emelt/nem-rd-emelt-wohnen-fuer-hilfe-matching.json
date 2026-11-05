@@ -1,0 +1,251 @@
+{
+  "schemaVersion": 1,
+  "id": "nem-rd-emelt-wohnen-fuer-hilfe-matching",
+  "subject": "nemet",
+  "revision": 1,
+  "level": "emelt",
+  "source": "generated",
+  "topic": "szemelyes",
+  "title": "Ein Zimmer gegen ein paar Stunden Hilfe",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "reading",
+  "type": "matching",
+  "instructions": "Lesen Sie, was vier Personen über das Projekt „Wohnen für Hilfe“ erzählen. Zu welcher Person (A–D) passen die Aussagen (1–10)? Die Personen können mehrmals gewählt werden. Am Anfang finden Sie ein Beispiel (0).",
+  "instructionsHu": "Olvasd el, mit mesél négy ember a „Wohnen für Hilfe” (lakhatás segítségért cserébe) programról. Melyik személyre (A–D) illenek az állítások? Egy személyt többször is választhatsz. A 0. a példa.",
+  "passage": {
+    "title": "Ein Zimmer gegen ein paar Stunden Hilfe",
+    "subtitle": "Beim Projekt „Wohnen für Hilfe“ ziehen Studierende bei älteren Menschen ein. Statt Miete zu zahlen, helfen sie im Alltag. Vier Beteiligte erzählen.",
+    "blocks": [
+      {
+        "heading": "A – Marlene Hoffmann, 81, Rentnerin",
+        "text": "Nach dem Tod meines Mannes war das Haus plötzlich viel zu groß und viel zu still. Meine Tochter wohnt in Hamburg und wollte, dass ich in ein Seniorenheim ziehe, aber dazu war ich noch nicht bereit. Über eine Anzeige in der Zeitung habe ich von dem Projekt erfahren. Seit einem Jahr wohnt jetzt Arjun bei mir, ein Informatikstudent aus Indien. Er mäht den Rasen, trägt die Getränkekisten in den Keller und hat mir beigebracht, mit meiner Enkelin per Video zu telefonieren. Miete zahlt er keine, nur seinen Anteil an Strom und Wasser. Am meisten freue ich mich auf den Sonntagabend: Dann kocht er indisch, und ich backe einen Kuchen. Manchmal ist mir sein Essen zu scharf, aber das sage ich ihm nicht."
+      },
+      {
+        "heading": "B – Felix Brandner, 23, Lehramtsstudent",
+        "text": "Ehrlich gesagt war mein Motiv am Anfang rein finanziell. Ein WG-Zimmer kostet in meiner Stadt inzwischen über 500 Euro, und das konnte ich mir neben dem Studium einfach nicht leisten. Jetzt wohne ich bei einem Ehepaar, beide über achtzig, und helfe pro Monat etwa 30 Stunden. Die Faustregel lautet: eine Stunde Hilfe pro Quadratmeter Wohnfläche. Ich gehe einkaufen, begleite Herrn Lindner zum Arzt und repariere, was kaputtgeht. Was ich unterschätzt habe: Man ist nicht einfach Untermieter, man wird Teil eines Haushalts. Wenn ich abends spät nach Hause komme, wartet Frau Lindner manchmal im Wohnzimmer auf mich. Das ist rührend, aber auch ein bisschen anstrengend. Wir haben deshalb vereinbart, dass ich kurz schreibe, wenn es später wird."
+      },
+      {
+        "heading": "C – Sabine Wolters, 52, Koordinatorin des Projekts",
+        "text": "Ich bringe die Wohnpartner zusammen, und das ist ein bisschen wie Partnervermittlung. Bevor jemand einzieht, besuche ich beide Seiten und frage sehr genau nach: Raucht jemand? Wie wichtig ist Ordnung? Wer steht früh auf? Danach schließen wir einen schriftlichen Vertrag, in dem genau steht, welche Aufgaben übernommen werden. Pflege gehört übrigens ausdrücklich nicht dazu – die Studierenden sind keine Krankenpfleger. Von etwa 120 Wohnpartnerschaften in den letzten fünf Jahren wurden nur acht vorzeitig beendet, meistens weil die ältere Person ins Krankenhaus oder ins Heim musste. Mein größtes Problem ist ein ganz anderes: Es melden sich dreimal so viele Studierende wie Seniorinnen und Senioren."
+      },
+      {
+        "heading": "D – Paula Krüger, 20, Studentin der Sozialen Arbeit",
+        "text": "Meine Großeltern leben in Polen, ich sehe sie höchstens zweimal im Jahr. Vielleicht habe ich mich deshalb bei Herrn Oswald so schnell zu Hause gefühlt. Er ist 88, war früher Schiffsingenieur und erzählt die besten Geschichten. Ich putze einmal pro Woche, gieße die Pflanzen und lese ihm die Zeitung vor, weil seine Augen schlechter werden. Am Anfang hatten meine Eltern Bedenken: Sie hatten Angst, dass ich zu viel Verantwortung übernehme und mein Studium darunter leidet. Inzwischen haben sie Herrn Oswald kennengelernt und laden ihn sogar zu Weihnachten ein. Für mich ist das kein Deal mehr, sondern eine Freundschaft. Wenn ich nächstes Jahr für ein Praktikum nach Leipzig gehe, wird mir der Abschied sehr schwerfallen."
+      }
+    ]
+  },
+  "options": [
+    {
+      "key": "A",
+      "text": "Marlene Hoffmann"
+    },
+    {
+      "key": "B",
+      "text": "Felix Brandner"
+    },
+    {
+      "key": "C",
+      "text": "Sabine Wolters"
+    },
+    {
+      "key": "D",
+      "text": "Paula Krüger"
+    }
+  ],
+  "optionsReusable": true,
+  "example": {
+    "id": "0",
+    "kind": "match",
+    "prompt": "Diese Person hat aus der Zeitung von dem Projekt erfahren.",
+    "answer": "A",
+    "category": "detail",
+    "explanation": "A (Marlene Hoffmann) a helyes: egy újsághirdetésből hallott a programról.",
+    "evidence": "Über eine Anzeige in der Zeitung habe ich von dem Projekt erfahren."
+  },
+  "items": [
+    {
+      "id": "1",
+      "kind": "match",
+      "prompt": "Diese Person hat sich vor allem aus Geldgründen für das Projekt entschieden.",
+      "answer": "B",
+      "category": "detail",
+      "explanation": "B (Felix) a helyes: bevallja, hogy kezdetben csak pénzügyi oka volt („rein finanziell”), mert nem tudta volna kifizetni egy 500 eurós albérleti szobát.",
+      "evidence": "Ehrlich gesagt war mein Motiv am Anfang rein finanziell.",
+      "wrongOptions": {
+        "A": "Marlene azt mondja, hogy Arjun nem fizet lakbért – de ez Arjun előnye, nem Marlene indítéka; őt a magány és a túl nagy ház vezette."
+      }
+    },
+    {
+      "id": "2",
+      "kind": "match",
+      "prompt": "Diese Person erklärt, welche Aufgaben die jungen Leute nicht übernehmen müssen.",
+      "answer": "C",
+      "category": "detail",
+      "explanation": "C (Sabine Wolters) a helyes: kifejezetten kimondja, hogy az ápolás nem tartozik a feladatok közé („Pflege gehört … ausdrücklich nicht dazu”).",
+      "evidence": "Pflege gehört übrigens ausdrücklich nicht dazu",
+      "wrongOptions": {
+        "B": "Felix azt sorolja fel, mit csinál (bevásárol, orvoshoz kísér, javít), nem azt, mit nem kell csinálnia."
+      }
+    },
+    {
+      "id": "3",
+      "kind": "match",
+      "prompt": "Diese Person hat dank des Mitbewohners leichter Kontakt zu ihrer Familie.",
+      "answer": "A",
+      "category": "inference",
+      "explanation": "A (Marlene) a helyes: Arjun megtanította videóhívást indítani az unokájával, így könnyebben tartja a kapcsolatot a családjával.",
+      "evidence": "hat mir beigebracht, mit meiner Enkelin per Video zu telefonieren",
+      "wrongOptions": {
+        "D": "Paula a saját nagyszüleit ritkán látja, de nem mondja, hogy Herr Oswald segítene neki kapcsolatot tartani velük."
+      }
+    },
+    {
+      "id": "4",
+      "kind": "match",
+      "prompt": "Diese Person findet die Fürsorge ihrer Mitbewohner manchmal etwas zu viel.",
+      "answer": "B",
+      "category": "attitude",
+      "explanation": "B (Felix) a helyes: Frau Lindner néha megvárja este – ezt megindítónak, de kissé fárasztónak is tartja („rührend, aber auch ein bisschen anstrengend”).",
+      "evidence": "Das ist rührend, aber auch ein bisschen anstrengend.",
+      "wrongOptions": {
+        "A": "Marlene csak azt jegyzi meg, hogy néha túl csípős Arjun főztje – ez nem a gondoskodásra vonatkozik."
+      }
+    },
+    {
+      "id": "5",
+      "kind": "match",
+      "prompt": "Diese Person erwähnt, dass Angehörige befürchteten, die Ausbildung könnte unter dem Projekt leiden.",
+      "answer": "D",
+      "category": "detail",
+      "explanation": "D (Paula) a helyes: a szülei attól tartottak, hogy túl sok felelősséget vállal, és a tanulmányai ezt megsínylik („mein Studium darunter leidet”).",
+      "evidence": "Sie hatten Angst, dass ich zu viel Verantwortung übernehme und mein Studium darunter leidet.",
+      "wrongOptions": {
+        "A": "Marlene lánya azt akarta, hogy idősotthonba költözzön – ez nem a programmal kapcsolatos aggodalom, és nem tanulmányokról szól."
+      }
+    },
+    {
+      "id": "6",
+      "kind": "match",
+      "prompt": "Diese Person nennt eine Regel, nach der sich der Umfang der Hilfe richtet.",
+      "answer": "B",
+      "category": "detail",
+      "explanation": "B (Felix) a helyes: az ökölszabály szerint a lakótér minden négyzetméteréért havonta egy óra segítség jár („eine Stunde Hilfe pro Quadratmeter Wohnfläche”).",
+      "evidence": "Die Faustregel lautet: eine Stunde Hilfe pro Quadratmeter Wohnfläche.",
+      "wrongOptions": {
+        "C": "Sabine a szerződést említi, amelyben a feladatok állnak, de a segítség mennyiségére vonatkozó szabályt nem mondja ki."
+      }
+    },
+    {
+      "id": "7",
+      "kind": "match",
+      "prompt": "Für diese Person ist das Hauptproblem, dass es zu wenige Wohnangebote gibt.",
+      "answer": "C",
+      "category": "inference",
+      "explanation": "C (Sabine) a helyes: háromszor annyi diák jelentkezik, mint idős ember – vagyis kevés a felajánlott lakás/szoba a jelentkezőkhöz képest.",
+      "evidence": "Es melden sich dreimal so viele Studierende wie Seniorinnen und Senioren.",
+      "wrongOptions": {
+        "B": "Felix a drága albérleti szobákról beszél, de ez az ő indítéka volt, nem a program fő problémája."
+      }
+    },
+    {
+      "id": "8",
+      "kind": "match",
+      "prompt": "Diese Person hat mit dem Wohnpartner ein festes gemeinsames Ritual am Wochenende.",
+      "answer": "A",
+      "category": "detail",
+      "explanation": "A (Marlene) a helyes: vasárnap esténként Arjun indiai ételt főz, ő pedig süteményt süt – ez visszatérő közös hétvégi program.",
+      "evidence": "Am meisten freue ich mich auf den Sonntagabend: Dann kocht er indisch, und ich backe einen Kuchen.",
+      "wrongOptions": {
+        "D": "Paula hetente egyszer takarít, és a szülei karácsonyra hívják meg Herr Oswaldot – egyik sem közös hétvégi szokás."
+      }
+    },
+    {
+      "id": "9",
+      "kind": "match",
+      "prompt": "Diese Person wird die Wohnpartnerschaft bald wegen ihrer Ausbildung beenden.",
+      "answer": "D",
+      "category": "detail",
+      "explanation": "D (Paula) a helyes: jövőre szakmai gyakorlatra Lipcsébe megy, és nehéz lesz a búcsú.",
+      "evidence": "Wenn ich nächstes Jahr für ein Praktikum nach Leipzig gehe, wird mir der Abschied sehr schwerfallen.",
+      "wrongOptions": {
+        "C": "Sabine arról beszél, hogy néhány kapcsolat idő előtt véget ért, de ez nem róla szól, és többnyire kórház vagy otthon volt az ok."
+      }
+    },
+    {
+      "id": "10",
+      "kind": "match",
+      "prompt": "Diese Person berichtet, dass nur wenige Wohnpartnerschaften früher als geplant endeten.",
+      "answer": "C",
+      "category": "detail",
+      "explanation": "C (Sabine) a helyes: kb. 120 lakótársi kapcsolatból csak nyolc ért véget idő előtt („vorzeitig beendet”).",
+      "evidence": "Von etwa 120 Wohnpartnerschaften in den letzten fünf Jahren wurden nur acht vorzeitig beendet",
+      "wrongOptions": {
+        "D": "Paula kapcsolata a gyakorlat miatt ér majd véget, de ő nem beszél arról, hány kapcsolat szakadt meg korábban."
+      }
+    }
+  ],
+  "glossary": [
+    {
+      "term": "das Seniorenheim",
+      "meaning": "idősek otthona"
+    },
+    {
+      "term": "mäht den Rasen (den Rasen mähen)",
+      "meaning": "füvet nyír"
+    },
+    {
+      "term": "beigebracht (beibringen)",
+      "meaning": "megtanít valakit valamire"
+    },
+    {
+      "term": "der Anteil",
+      "meaning": "rész, hányad"
+    },
+    {
+      "term": "sich etwas leisten",
+      "meaning": "megengedheti magának (anyagilag)"
+    },
+    {
+      "term": "die Faustregel",
+      "meaning": "ökölszabály, hüvelykujjszabály"
+    },
+    {
+      "term": "der Untermieter",
+      "meaning": "albérlő"
+    },
+    {
+      "term": "rührend",
+      "meaning": "megható"
+    },
+    {
+      "term": "vereinbaren",
+      "meaning": "megállapodik"
+    },
+    {
+      "term": "die Partnervermittlung",
+      "meaning": "társkereső iroda, párkereső szolgáltatás"
+    },
+    {
+      "term": "die Pflege",
+      "meaning": "(beteg)ápolás, gondozás"
+    },
+    {
+      "term": "vorzeitig",
+      "meaning": "idő előtt"
+    },
+    {
+      "term": "Bedenken haben",
+      "meaning": "aggályai vannak"
+    },
+    {
+      "term": "gießen",
+      "meaning": "(virágot) öntöz"
+    },
+    {
+      "term": "der Abschied",
+      "meaning": "búcsú"
+    }
+  ],
+  "suggestedMinutes": 16
+}

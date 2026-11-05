@@ -1,6 +1,15 @@
 {
+  "schemaVersion": 1,
+  "id": "nem-rd-emelt-spaeter-schulbeginn-true-false",
+  "subject": "nemet",
+  "revision": 1,
+  "level": "emelt",
+  "source": "generated",
   "topic": "tudomany",
   "title": "Warum Jugendliche morgens nicht wach werden",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "reading",
   "type": "true-false",
   "instructions": "Lesen Sie den Artikel über einen späteren Schulbeginn. Entscheiden Sie, ob die Aussagen (1–10) dem Text nach richtig (T) oder falsch (F) sind oder ob der Text dazu keine Information enthält (NG). Am Anfang finden Sie ein Beispiel (0).",
   "instructionsHu": "Olvasd el a cikket a későbbi iskolakezdésről, és döntsd el, hogy az állítások igazak (T), hamisak (F), vagy a szövegből nem derülnek ki (NG). A 0. a példa.",
@@ -8,12 +17,24 @@
     "title": "Warum Jugendliche morgens nicht wach werden",
     "subtitle": "Schlafforscher fordern einen späteren Schulbeginn – ein Gymnasium in Ravensburg hat es ausprobiert",
     "blocks": [
-      { "text": "Es ist kurz nach neun Uhr morgens, und in der Klasse 11b eines Gymnasiums in Ravensburg herrscht eine ungewöhnliche Stimmung: Niemand gähnt, niemand hat den Kopf auf den Tisch gelegt. Das liegt nicht an einem besonders spannenden Stundenplan, sondern an einer einfachen Änderung. Seit zwei Jahren beginnt der Unterricht für die Oberstufe hier nicht mehr um 7.45 Uhr, sondern erst um 8.50 Uhr. Die Schule ist damit eine von wenigen in Deutschland, die die Empfehlungen der Schlafforschung ernst nehmen." },
-      { "text": "Dass Jugendliche morgens schwer aus dem Bett kommen, ist keine Frage von Faulheit. In der Pubertät verschiebt sich die innere Uhr: Das Schlafhormon Melatonin wird abends bis zu zwei Stunden später ausgeschüttet als bei Kindern oder Erwachsenen. Wer mit sechzehn um 22 Uhr ins Bett geht, liegt deshalb oft noch lange wach. Muss er trotzdem um sechs Uhr aufstehen, fehlt ihm am Ende der Woche so viel Schlaf wie nach einer durchwachten Nacht. „Wir zwingen Teenager jeden Tag, gegen ihre Biologie zu leben“, sagt die Chronobiologin Dr. Katrin Falk. Erst etwa mit Anfang zwanzig stelle sich die innere Uhr langsam wieder um." },
-      { "text": "Falk hat das Ravensburger Modell wissenschaftlich begleitet. Ihr Team hat über 300 Schülerinnen und Schüler ein Jahr lang Schlaftagebücher führen lassen, und ein Teil von ihnen trug zusätzlich ein Armband, das die Schlafdauer misst. Das Ergebnis überraschte selbst die Forscher: Die Jugendlichen gingen nach der Umstellung nicht etwa später ins Bett, wie viele Eltern befürchtet hatten, sondern schliefen im Durchschnitt 45 Minuten länger. Sie fühlten sich in den ersten Stunden konzentrierter und gaben seltener an, im Unterricht müde zu sein." },
-      { "text": "Bessere Noten bringt der spätere Beginn allerdings nicht automatisch. In Mathematik und in den Sprachen hätten sich die Leistungen kaum verändert, räumt Falk ein. „Das wäre auch zu viel verlangt. Schlaf ist kein Zaubermittel, aber er ist die Voraussetzung dafür, dass Lernen überhaupt funktioniert.“ Deutlich gesunken sei dagegen die Zahl der Schüler, die zu spät kamen oder sich krankmeldeten." },
-      { "text": "Nicht alle sind begeistert. Weil der Unterricht später endet, bleibt nachmittags weniger Zeit für Sport, Musik und Nebenjobs. Der örtliche Fußballverein musste das Training seiner A-Jugend um eine halbe Stunde nach hinten verschieben. Auch manche Lehrkräfte klagen: Wer eigene Kinder an einer Grundschule hat, die weiterhin um acht beginnt, muss den Morgen nun anders organisieren. Und für die Busunternehmen bedeutete die Umstellung, dass sie neue Fahrpläne erstellen mussten. Die ersten Monate seien „ziemlich chaotisch“ gewesen, erinnert sich der Schulleiter." },
-      { "text": "Trotzdem will in Ravensburg kaum jemand zurück. Bei einer Umfrage stimmten 83 Prozent der Oberstufenschüler und knapp zwei Drittel der Eltern für das neue Modell. Ob es sich auch an anderen Schulen durchsetzt, ist offen. Das Kultusministerium beobachtet das Projekt mit Interesse, will aber keine landesweite Regel vorschreiben. Die Entscheidung liegt also weiterhin bei den Schulen selbst – und bei der Frage, wie viel Veränderung Eltern, Lehrer und Busfahrer mitzumachen bereit sind." }
+      {
+        "text": "Es ist kurz nach neun Uhr morgens, und in der Klasse 11b eines Gymnasiums in Ravensburg herrscht eine ungewöhnliche Stimmung: Niemand gähnt, niemand hat den Kopf auf den Tisch gelegt. Das liegt nicht an einem besonders spannenden Stundenplan, sondern an einer einfachen Änderung. Seit zwei Jahren beginnt der Unterricht für die Oberstufe hier nicht mehr um 7.45 Uhr, sondern erst um 8.50 Uhr. Die Schule ist damit eine von wenigen in Deutschland, die die Empfehlungen der Schlafforschung ernst nehmen."
+      },
+      {
+        "text": "Dass Jugendliche morgens schwer aus dem Bett kommen, ist keine Frage von Faulheit. In der Pubertät verschiebt sich die innere Uhr: Das Schlafhormon Melatonin wird abends bis zu zwei Stunden später ausgeschüttet als bei Kindern oder Erwachsenen. Wer mit sechzehn um 22 Uhr ins Bett geht, liegt deshalb oft noch lange wach. Muss er trotzdem um sechs Uhr aufstehen, fehlt ihm am Ende der Woche so viel Schlaf wie nach einer durchwachten Nacht. „Wir zwingen Teenager jeden Tag, gegen ihre Biologie zu leben“, sagt die Chronobiologin Dr. Katrin Falk. Erst etwa mit Anfang zwanzig stelle sich die innere Uhr langsam wieder um."
+      },
+      {
+        "text": "Falk hat das Ravensburger Modell wissenschaftlich begleitet. Ihr Team hat über 300 Schülerinnen und Schüler ein Jahr lang Schlaftagebücher führen lassen, und ein Teil von ihnen trug zusätzlich ein Armband, das die Schlafdauer misst. Das Ergebnis überraschte selbst die Forscher: Die Jugendlichen gingen nach der Umstellung nicht etwa später ins Bett, wie viele Eltern befürchtet hatten, sondern schliefen im Durchschnitt 45 Minuten länger. Sie fühlten sich in den ersten Stunden konzentrierter und gaben seltener an, im Unterricht müde zu sein."
+      },
+      {
+        "text": "Bessere Noten bringt der spätere Beginn allerdings nicht automatisch. In Mathematik und in den Sprachen hätten sich die Leistungen kaum verändert, räumt Falk ein. „Das wäre auch zu viel verlangt. Schlaf ist kein Zaubermittel, aber er ist die Voraussetzung dafür, dass Lernen überhaupt funktioniert.“ Deutlich gesunken sei dagegen die Zahl der Schüler, die zu spät kamen oder sich krankmeldeten."
+      },
+      {
+        "text": "Nicht alle sind begeistert. Weil der Unterricht später endet, bleibt nachmittags weniger Zeit für Sport, Musik und Nebenjobs. Der örtliche Fußballverein musste das Training seiner A-Jugend um eine halbe Stunde nach hinten verschieben. Auch manche Lehrkräfte klagen: Wer eigene Kinder an einer Grundschule hat, die weiterhin um acht beginnt, muss den Morgen nun anders organisieren. Und für die Busunternehmen bedeutete die Umstellung, dass sie neue Fahrpläne erstellen mussten. Die ersten Monate seien „ziemlich chaotisch“ gewesen, erinnert sich der Schulleiter."
+      },
+      {
+        "text": "Trotzdem will in Ravensburg kaum jemand zurück. Bei einer Umfrage stimmten 83 Prozent der Oberstufenschüler und knapp zwei Drittel der Eltern für das neue Modell. Ob es sich auch an anderen Schulen durchsetzt, ist offen. Das Kultusministerium beobachtet das Projekt mit Interesse, will aber keine landesweite Regel vorschreiben. Die Entscheidung liegt also weiterhin bei den Schulen selbst – und bei der Frage, wie viel Veränderung Eltern, Lehrer und Busfahrer mitzumachen bereit sind."
+      }
     ]
   },
   "example": {
@@ -118,20 +139,62 @@
     }
   ],
   "glossary": [
-    { "term": "gähnt (gähnen)", "meaning": "ásít" },
-    { "term": "die Oberstufe", "meaning": "a gimnázium felső évfolyamai (kb. 11–13. osztály)" },
-    { "term": "die Faulheit", "meaning": "lustaság" },
-    { "term": "verschiebt sich (sich verschieben)", "meaning": "eltolódik" },
-    { "term": "ausgeschüttet werden", "meaning": "kiválasztódik, felszabadul (hormon)" },
-    { "term": "durchwachte Nacht", "meaning": "átvirrasztott éjszaka" },
-    { "term": "begleiten", "meaning": "(itt:) tudományosan nyomon követ" },
-    { "term": "befürchten", "meaning": "tart valamitől, attól fél, hogy …" },
-    { "term": "räumt ein (einräumen)", "meaning": "elismer, beismer" },
-    { "term": "die Voraussetzung", "meaning": "előfeltétel" },
-    { "term": "sich krankmelden", "meaning": "betegséget jelent, betegszabadságot kér" },
-    { "term": "nach hinten verschieben", "meaning": "későbbre tesz, elhalaszt" },
-    { "term": "sich durchsetzen", "meaning": "elterjed, általánossá válik" },
-    { "term": "vorschreiben", "meaning": "előír, kötelezővé tesz" }
+    {
+      "term": "gähnt (gähnen)",
+      "meaning": "ásít"
+    },
+    {
+      "term": "die Oberstufe",
+      "meaning": "a gimnázium felső évfolyamai (kb. 11–13. osztály)"
+    },
+    {
+      "term": "die Faulheit",
+      "meaning": "lustaság"
+    },
+    {
+      "term": "verschiebt sich (sich verschieben)",
+      "meaning": "eltolódik"
+    },
+    {
+      "term": "ausgeschüttet werden",
+      "meaning": "kiválasztódik, felszabadul (hormon)"
+    },
+    {
+      "term": "durchwachte Nacht",
+      "meaning": "átvirrasztott éjszaka"
+    },
+    {
+      "term": "begleiten",
+      "meaning": "(itt:) tudományosan nyomon követ"
+    },
+    {
+      "term": "befürchten",
+      "meaning": "tart valamitől, attól fél, hogy …"
+    },
+    {
+      "term": "räumt ein (einräumen)",
+      "meaning": "elismer, beismer"
+    },
+    {
+      "term": "die Voraussetzung",
+      "meaning": "előfeltétel"
+    },
+    {
+      "term": "sich krankmelden",
+      "meaning": "betegséget jelent, betegszabadságot kér"
+    },
+    {
+      "term": "nach hinten verschieben",
+      "meaning": "későbbre tesz, elhalaszt"
+    },
+    {
+      "term": "sich durchsetzen",
+      "meaning": "elterjed, általánossá válik"
+    },
+    {
+      "term": "vorschreiben",
+      "meaning": "előír, kötelezővé tesz"
+    }
   ],
   "suggestedMinutes": 16
 }

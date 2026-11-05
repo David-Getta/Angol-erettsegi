@@ -1,0 +1,124 @@
+{
+  "schemaVersion": 1,
+  "id": "fol-lu-kozep-talaj-vizburok-parositas",
+  "subject": "foldrajz",
+  "revision": 1,
+  "level": "kozep",
+  "source": "generated",
+  "topic": "vizburok-talaj",
+  "title": "Felszín alatti vizek és talajtípusok – párosítás",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "language-use",
+  "type": "parositas",
+  "instructions": "Párosítsa a leírásokat a fogalmakkal! Írja a fogalom betűjelét a kijelölt helyre! Minden betű legfeljebb egyszer használható, két fogalom felesleges. A 0. a megoldott példa.",
+  "options": [
+    {
+      "key": "A",
+      "text": "barna erdőtalaj"
+    },
+    {
+      "key": "B",
+      "text": "karsztvíz"
+    },
+    {
+      "key": "C",
+      "text": "talajvíz"
+    },
+    {
+      "key": "D",
+      "text": "csernozjom (mezőségi talaj)"
+    },
+    {
+      "key": "E",
+      "text": "belvíz"
+    },
+    {
+      "key": "F",
+      "text": "laterit (vörösföld)"
+    },
+    {
+      "key": "G",
+      "text": "artézi víz"
+    },
+    {
+      "key": "H",
+      "text": "szikes talaj"
+    },
+    {
+      "key": "I",
+      "text": "podzol"
+    },
+    {
+      "key": "J",
+      "text": "hévíz (termálvíz)"
+    }
+  ],
+  "example": {
+    "id": "0",
+    "kind": "match",
+    "prompt": "Az első vízzáró réteg fölött, a felszínhez legközelebb található felszín alatti víz; szintje a csapadéktól függően ingadozik.",
+    "answer": "C",
+    "category": "fogalomhasznalat",
+    "explanation": "C – talajvíz: az első vízzáró réteg fölötti, a felszínhez legközelebbi felszín alatti víz; szintje esős időszakban emelkedik, aszálykor süllyed."
+  },
+  "items": [
+    {
+      "id": "1",
+      "kind": "match",
+      "prompt": "Két vízzáró réteg közé zárt, nyomás alatt álló víz, amely a kút fúrásakor magától a felszínre tör.",
+      "answer": "G",
+      "category": "fogalomhasznalat",
+      "explanation": "G – artézi víz: a medence peremén beszivárgó víz két vízzáró réteg között a mélybe jut és nyomás alá kerül, ezért a fúrt kútból magától feltör (az Alföld artézi kútjai)."
+    },
+    {
+      "id": "2",
+      "kind": "match",
+      "prompt": "A mészkőhegységek repedéseiben és járataiban tárolódó víz; a cseppkőbarlangok és sok bővizű forrás vize.",
+      "answer": "B",
+      "category": "fogalomhasznalat",
+      "explanation": "B – karsztvíz: a mészkő repedésein beszivárgó, a kőzetet oldó víz; a Bükk, a Dunántúli-középhegység és az Aggteleki-karszt fontos ivóvízkészlete."
+    },
+    {
+      "id": "3",
+      "kind": "match",
+      "prompt": "A mélyből feltörő, legalább 30 °C-os víz; hazánkban a vékony földkéreg és a nagy földi hőáram miatt gyakori.",
+      "answer": "J",
+      "category": "fogalomhasznalat",
+      "explanation": "J – hévíz (termálvíz): a 30 °C-nál melegebb felszín alatti víz. A Kárpát-medencében a földkéreg vékony, ezért a kőzetek hőmérséklete gyorsan nő a mélységgel – innen a sok gyógy- és termálfürdő."
+    },
+    {
+      "id": "4",
+      "kind": "match",
+      "prompt": "Síkvidéken hóolvadás vagy tartós esőzés után a mélyedésekben megjelenő, el nem folyó víz; a magas talajvízszint és a rossz vízáteresztő talaj okozza.",
+      "answer": "E",
+      "category": "fogalomhasznalat",
+      "explanation": "E – belvíz: nem a folyóból kilépő víz (az az árvíz), hanem a helyben összegyűlő csapadék- és talajvíz, amely a sík terepen nem tud lefolyni és a vízzáró talajba nem tud beszivárogni."
+    },
+    {
+      "id": "5",
+      "kind": "match",
+      "prompt": "Füves puszták (sztyepp) alatt kialakult, vastag, sötét színű, humuszban gazdag talaj; a legtermékenyebb talajtípus.",
+      "answer": "D",
+      "category": "ovezetesseg-hiba",
+      "explanation": "D – csernozjom (mezőségi talaj): a füvek évente elhaló gyökérzetéből sok humusz halmozódik fel, a mérsékelt csapadék nem mossa ki a tápanyagokat – ezért a legjobb termőtalaj (Ukrajna, Alföld)."
+    },
+    {
+      "id": "6",
+      "kind": "match",
+      "prompt": "A hideg mérsékelt övezet tűlevelű erdői (tajga) alatt képződő savanyú, erősen kilúgozott, terméketlen talaj.",
+      "answer": "I",
+      "category": "ovezetesseg-hiba",
+      "explanation": "I – podzol: a hideg, csapadékos éghajlaton lassú a lebomlás, a savanyú tűlevél-avarból származó víz kilúgozza a felső réteget, amely kifakult, hamuszürke lesz."
+    },
+    {
+      "id": "7",
+      "kind": "match",
+      "prompt": "A forró, csapadékos övezetben a vas- és alumínium-oxidok feldúsulásával keletkező vörös, terméketlen talaj; kiszáradva téglakeményre szilárdul.",
+      "answer": "F",
+      "category": "ovezetesseg-hiba",
+      "explanation": "F – laterit (vörösföld): a meleg, nedves éghajlaton erős a kémiai mállás és a kilúgozás, a tápanyagok kimosódnak, a vas- és alumínium-oxidok visszamaradnak – ezért vörös és terméketlen."
+    }
+  ],
+  "suggestedMinutes": 6
+}
