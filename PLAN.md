@@ -4,59 +4,59 @@ Minden fázis végén: `npm run check` (typecheck + Vitest + tartalomvalidátor)
 A fázisok után az app mindig futtatható; ami kész, az használható.
 
 ## 1. Alap
-- [ ] Projektváz: Next.js 16, TypeScript strict, Tailwind 4, Vitest, Playwright
-- [ ] SQLite + Drizzle séma, első migráció (`drizzle/0000_init.sql`), automatikus migrálás induláskor
-- [ ] Beállítások (szint, vizsgadátum, cél, szókártya-limitek, felolvasás, téma) + globális szintválasztó
-- [ ] Tartalomsémák (`lib/content/schema.ts`) és validátor (`npm run validate-content`)
+- [x] Projektváz: Next.js 16, TypeScript strict, Tailwind 4, Vitest, Playwright
+- [x] SQLite + Drizzle séma, első migráció (`drizzle/0000_init.sql`), automatikus migrálás induláskor
+- [x] Beállítások (szint, vizsgadátum, cél, szókártya-limitek, felolvasás, téma) + globális szintválasztó
+- [x] Tartalomsémák (`lib/content/schema.ts`) és validátor (`npm run validate-content`)
 - [ ] Vizsga-config (`config/exam/*.json`) az Oktatási Hivatal aktuális leírásával ellenőrizve
-- [ ] Navigáció, sötét/világos téma, üres dashboard
+- [x] Navigáció, sötét/világos téma, üres dashboard
 - Ellenőrzés: `npm run setup && npm run dev`, a szintváltó működik, `npm run validate-content` lefut
 
 ## 2. Claude Code parancsok + kezdő tartalom
-- [ ] `.claude/commands/{feladatok,javitas,szokincs,import-hivatalos}.md`
-- [ ] `config/commands.json`, „Parancsok” oldal parancsépítővel, Másolás gombok
-- [ ] Helyzetfüggő tipp-komponens (`components/CommandTip.tsx`)
+- [x] `.claude/commands/{feladatok,javitas,szokincs,import-hivatalos}.md`
+- [x] `config/commands.json`, „Parancsok” oldal parancsépítővel, Másolás gombok
+- [x] Helyzetfüggő tipp-komponens (`components/CommandTip.tsx`)
 - [ ] Kezdő tartalombank szintenként, validálva, seedelve
 - Ellenőrzés: a Parancsok oldalon mind a 4 parancs másolható; teszt: minden parancshoz van fájl
 
 ## 3. Íráskészség + hibanapló
-- [ ] Feladatkártyák, szerkesztő élő szószámlálóval, időzítővel, vizsga módban kikapcsolt helyesírás-ellenőrzéssel
-- [ ] Önellenőrző lista, beadás → `exchange/inbox/<id>.json`
-- [ ] Javítás: `/javitas` → outbox → „Javítások importálása” / `npm run import-feedback`; vagy prompt másolása → beillesztés
-- [ ] Javítás nézet (kiemelt hibák, szempontonkénti pontok), átírási kör, változatok egymás mellett
-- [ ] Hibanapló: kategóriák, trend, legutóbbi hibák, „Gyakoroltasd ezt”
+- [x] Feladatkártyák, szerkesztő élő szószámlálóval, időzítővel, vizsga módban kikapcsolt helyesírás-ellenőrzéssel
+- [x] Önellenőrző lista, beadás → `exchange/inbox/<id>.json`
+- [x] Javítás: `/javitas` → outbox → „Javítások importálása” / `npm run import-feedback`; vagy prompt másolása → beillesztés
+- [x] Javítás nézet (kiemelt hibák, szempontonkénti pontok), átírási kör, változatok egymás mellett
+- [x] Hibanapló: kategóriák, trend, legutóbbi hibák, „Gyakoroltasd ezt”
 - Ellenőrzés: beadás → javítás → import → átírás → hibanapló végigvihető (Playwright)
 
 ## 4. Nyelvhelyesség
-- [ ] Lyukas szöveg (nyitott, feleletválasztós), szóképzés, igealakok, kimaradt szavak, hibakeresés, mondatrész-beillesztés
-- [ ] Ellenőrzés alternatív megoldásokkal, kis/nagybetű és szóköz nélkül, elírás-jelzés
-- [ ] Célzott gyakorlás a hibanapló kategóriáiból
+- [x] Lyukas szöveg (nyitott, feleletválasztós), szóképzés, igealakok, kimaradt szavak, hibakeresés, mondatrész-beillesztés
+- [x] Ellenőrzés alternatív megoldásokkal, kis/nagybetű és szóköz nélkül, elírás-jelzés
+- [x] Célzott gyakorlás a hibanapló kategóriáiból
 
 ## 5. Szókincs
-- [ ] FSRS (`ts-fsrs` 5), kártyák szövegből, javításból, paklikból; 4 kártyatípus; napi limit; ismétlő felület
+- [x] FSRS (`ts-fsrs` 5), kártyák szövegből, javításból, paklikból; 4 kártyatípus; napi limit; ismétlő felület
 
 ## 6. Olvasott szöveg értése
-- [ ] Feladattípusok, gyakorlás/vizsga mód, kattintható szavak, szójegyzék
+- [x] Feladattípusok, gyakorlás/vizsga mód, kattintható szavak, szójegyzék
 
 ## 7. Hallott szöveg értése
-- [ ] TTS-lejátszás beszélőnkénti hanggal, felkészülési idő, kétszeri meghallgatás, leirat kiemeléssel, hivatalos mp3
+- [x] TTS-lejátszás beszélőnkénti hanggal, felkészülési idő, kétszeri meghallgatás, leirat kiemeléssel, hivatalos mp3
 
 ## 8. Szóbeli
-- [ ] Kérdéskártyák, szituációk, jelenetleírások, vita; felolvasás, időzítő, beszédfelismerés; vizsgáztató-prompt; beadás javításra
+- [x] Kérdéskártyák, szituációk, jelenetleírások, vita; felolvasás, időzítő, beszédfelismerés; vizsgáztató-prompt; beadás javításra
 
 ## 9. Dashboard, szintfelmérő, Mai terv, statisztika
-- [ ] Visszaszámláló, becsült pontszám + 12%-os küszöb + cél, Mai terv, streak, heti idő, készletjelző, javításra vár
-- [ ] Szintfelmérő (CEFR-becslés, erősségek/gyengeségek)
-- [ ] Statisztika
+- [x] Visszaszámláló, becsült pontszám + 12%-os küszöb + cél, Mai terv, streak, heti idő, készletjelző, javításra vár
+- [x] Szintfelmérő (CEFR-becslés, erősségek/gyengeségek)
+- [x] Statisztika
 
 ## 10. Próbaérettségi + hivatalos feladatsorok
-- [ ] Teljes írásbeli szimuláció részenkénti szigorú időzítéssel, eredmény (pont, %, küszöbök, jegy, nyelvvizsga)
-- [ ] `data/official/` kezelése, `/import-hivatalos`, hivatalos/generált jelölés
+- [x] Teljes írásbeli szimuláció részenkénti szigorú időzítéssel, eredmény (pont, %, küszöbök, jegy, nyelvvizsga)
+- [x] `data/official/` kezelése, `/import-hivatalos`, hivatalos/generált jelölés
 
 ## 11. Csiszolás
-- [ ] Export/import JSON, adatbázis-mentés
-- [ ] Playwright-tesztek a fő folyamatokra
-- [ ] README magyarul
+- [x] Export/import JSON, adatbázis-mentés
+- [x] Playwright-tesztek a fő folyamatokra
+- [x] README magyarul
 
 ---
 
