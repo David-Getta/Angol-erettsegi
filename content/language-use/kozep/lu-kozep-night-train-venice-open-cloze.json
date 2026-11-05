@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 1,
+  "id": "lu-kozep-night-train-venice-open-cloze",
+  "revision": 1,
+  "level": "kozep",
+  "source": "generated",
+  "topic": "utazas",
+  "title": "By night train to Venice",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "language-use",
+  "type": "open-cloze",
+  "instructions": "Read the text and fill in the gaps with ONE suitable word. There is an example (0) at the beginning.",
+  "instructionsHu": "Egészítsd ki a szöveget egy-egy odaillő szóval. A 0. a példa.",
+  "passage": {
+    "title": "By night train to Venice",
+    "blocks": [
+      { "text": "Last summer my friend Bence and I decided to travel to Venice [[0]] night train. Neither of us had ever been on a night train [[1]], so we were really excited. We booked a small compartment with two beds, [[2]] was much cheaper than a hotel room. The train left Budapest at seven o'clock [[3]] the evening, and the next morning we woke up in Italy." },
+      { "text": "The journey wasn't perfect, though. The beds were very narrow and the air conditioning didn't work, so it was [[4]] hot that I couldn't sleep for hours. Bence, on the [[5]] hand, slept like a baby." },
+      { "text": "Venice was even more beautiful [[6]] we had expected. There are no cars there [[7]] all, so we walked everywhere and crossed dozens of small bridges. We didn't take a gondola ride [[8]] it cost eighty euros, but we ate the best ice cream of our lives." },
+      { "text": "[[9]] we got home, everyone asked us why we hadn't flown. The flight would have been quicker, of course, but for us the journey was part [[10]] the adventure. Next summer we want to take the night train to Paris, and this time I won't forget [[11]] pack my earplugs!" }
+    ]
+  },
+  "example": {
+    "id": "0",
+    "kind": "text",
+    "answer": ["by"],
+    "category": "preposition",
+    "explanation": "Közlekedési eszköz névelő nélkül a „by” elöljárószóval áll: by train, by bus, by night train."
+  },
+  "items": [
+    { "id": "1", "kind": "text", "answer": ["before"], "category": "tense", "explanation": "„had never/ever … before” = azelőtt még soha. A past perfect (had been) egy múltbeli pont előtti időre utal, a mondat végi „before” jelentése ’azelőtt’." },
+    { "id": "2", "kind": "text", "answer": ["which"], "category": "relative-clause", "explanation": "Vessző után, dologra (a lefoglalt fülkére) utaló nem szűkítő vonatkozó mellékmondatban „which” áll. Vessző után „that” nem lehet, a „what” pedig nem vonatkozó névmás." },
+    { "id": "3", "kind": "text", "answer": ["in"], "category": "preposition", "explanation": "Napszakok előtt „in the” áll: in the morning, in the afternoon, in the evening (de: at night)." },
+    { "id": "4", "kind": "text", "answer": ["so"], "category": "linking", "explanation": "„so + melléknév + that …” = olyan …, hogy … A „such” után főnév kellene (such a hot night), a „too” után pedig nem állhat „that”-mondat." },
+    { "id": "5", "kind": "text", "answer": ["other"], "category": "collocation", "explanation": "Állandó kifejezés: „on the other hand” = másrészt, viszont. Ellentétet fejez ki: én nem tudtam aludni, Bence viszont aludt, mint a bunda." },
+    { "id": "6", "kind": "text", "answer": ["than"], "category": "comparison", "explanation": "Középfok (more beautiful) után „than” áll: even more beautiful than we had expected." },
+    { "id": "7", "kind": "text", "answer": ["at"], "category": "collocation", "explanation": "„no … at all” / „not … at all” = egyáltalán nincs / egyáltalán nem. Állandó szókapcsolat: There are no cars there at all." },
+    { "id": "8", "kind": "text", "answer": ["because", "as", "since"], "category": "linking", "explanation": "Okot kifejező kötőszó kell teljes tagmondat előtt: because (vagy as, since) it cost eighty euros = mert nyolcvan euróba került. A „because of” után főnév állna, nem tagmondat." },
+    { "id": "9", "kind": "text", "answer": ["When", "After", "Once"], "category": "linking", "explanation": "Múltbeli időhatározói mellékmondat: When / After / Once we got home = amikor / miután hazaértünk." },
+    { "id": "10", "kind": "text", "answer": ["of"], "category": "preposition", "explanation": "„part of something” = valaminek a része. A „part” után „of” áll: part of the adventure." },
+    { "id": "11", "kind": "text", "answer": ["to"], "category": "gerund-infinitive", "explanation": "„forget to do something” = elfelejt megtenni valamit (még elvégzendő teendő). Ilyenkor a „forget” után to + ige jön: I won't forget to pack my earplugs." }
+  ],
+  "glossary": [],
+  "suggestedMinutes": 10
+}
