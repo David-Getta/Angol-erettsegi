@@ -556,6 +556,7 @@ export const t = {
     again: "Új kör",
     noTts: "A böngésződ nem tud felolvasni – Chrome vagy Edge kell hozzá.",
     none: "Ezen a szinten még nincs elég hallási leirat a diktáláshoz.",
+    keys: "Enter: ellenőrzés · Ctrl + Szóköz: újra lejátszás · Shift + Enter: új sor",
   },
 
   report: {

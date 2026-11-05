@@ -88,7 +88,17 @@ export function DictationRunner({ sentences, rate }: { sentences: DictationSente
           placeholder={t.dictation.type}
           className="mt-3 w-full rounded-md border border-border bg-surface p-3 font-reading text-[17px]"
           data-testid="dictation-input"
+          onKeyDown={(e) => {
+            if (e.key === " " && e.ctrlKey) {
+              e.preventDefault();
+              play(false);
+            } else if (e.key === "Enter" && !e.shiftKey && typed.trim()) {
+              e.preventDefault();
+              check();
+            }
+          }}
         />
+        <p className="mt-1 text-xs text-muted">{t.dictation.keys}</p>
         {!result ? (
           <button type="button" className={`${btn.primary} mt-2`} disabled={!typed.trim()} onClick={check} data-testid="dictation-check">
             {t.dictation.check}
@@ -118,7 +128,7 @@ export function DictationRunner({ sentences, rate }: { sentences: DictationSente
               </span>
             </p>
             <p className="text-xs text-muted">{t.dictation.from(s.taskTitle)}</p>
-            <button type="button" className={btn.primary} onClick={next} data-testid="dictation-next">
+            <button type="button" className={btn.primary} onClick={next} data-testid="dictation-next" autoFocus>
               {t.dictation.next}
             </button>
           </div>
