@@ -1,0 +1,136 @@
+{
+  "schemaVersion": 1,
+  "id": "ls-kozep-summer-camp-announcement-short-answer",
+  "revision": 1,
+  "level": "kozep",
+  "source": "generated",
+  "topic": "iskola",
+  "title": "The summer adventure camp",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "listening",
+  "type": "short-answer",
+  "instructions": "You are going to listen to a teacher giving students information about the school's summer adventure camp. Answer the questions in no more than three words or a number. You will hear the recording twice. There is an example (0) at the beginning.",
+  "instructionsHu": "Egy tanár az iskolai nyári kalandtáborról ad tájékoztatást. Válaszolj a kérdésekre legfeljebb három szóval vagy egy számmal. A felvételt kétszer hallod. A 0. a példa.",
+  "listening": {
+    "format": "announcement",
+    "speakers": [
+      { "id": "T", "name": "Ms Mitchell (teacher)", "gender": "female", "accent": "en-AU", "age": "adult" }
+    ],
+    "script": [
+      { "speaker": "T", "text": "Good morning, everyone. This is Ms Mitchell with some information about this year's summer adventure camp for students in Years Nine and Ten. Please listen carefully, because there's a lot to remember." },
+      { "speaker": "T", "text": "The camp will be at Redwater Outdoor Centre, which is in the hills about ninety minutes from here. It starts on Monday the twentieth of July and finishes on Friday the twenty-fourth, so that's five days and four nights. We have places for forty students, and last year all the places went in two days, so don't wait too long." },
+      { "speaker": "T", "text": "On the first day, the coach will leave from the school car park at half past eight. Please be there by eight o'clock at the latest, because we can't wait for anyone who is late. We'll be back on Friday at about four in the afternoon." },
+      { "speaker": "T", "text": "Now, the activities. Every morning you'll do something on the water, like canoeing or sailing. In the afternoon there's rock climbing, mountain biking or archery, and you can choose two of these when you sign up. On Wednesday evening there's a night walk in the forest, and on the last night we'll have a talent show, so start practising your songs and jokes!" },
+      { "speaker": "T", "text": "This year the school is paying for part of the trip, so the camp only costs ninety-five pounds. That includes all the activities, the coach and three meals a day." },
+      { "speaker": "T", "text": "What do you need to bring? Warm clothes, strong shoes and, um, a sleeping bag. The centre gives you pillows, but not sleeping bags, so please don't forget yours. You'll also need some old trainers that can get wet." },
+      { "speaker": "T", "text": "One more important thing. Mobile phones are not allowed during the day. You can use them for one hour after dinner to call home, and the rest of the time they stay with the teachers." },
+      { "speaker": "T", "text": "If you have any allergies or you need a special diet, please speak to Mr Patel, the school nurse, before the end of May. He'll talk to the kitchen at the centre." },
+      { "speaker": "T", "text": "You can get the forms from the school office. Your parents have to sign the form, and you need to bring it back by next Friday. Thank you, and I hope to see lots of you at Redwater!" }
+    ]
+  },
+  "example": {
+    "id": "0",
+    "kind": "text",
+    "prompt": "How long is the camp?",
+    "answer": ["five days", "5 days", "five", "5"],
+    "maxWords": 3,
+    "category": "detail",
+    "explanation": "A tábor július 20-tól 24-ig tart, a tanár ki is mondja: „five days and four nights” – tehát öt nap.",
+    "evidence": "so that's five days and four nights"
+  },
+  "items": [
+    {
+      "id": "1",
+      "kind": "text",
+      "prompt": "How many students can go to the camp?",
+      "answer": ["40", "forty", "40 students", "forty students"],
+      "maxWords": 3,
+      "category": "detail",
+      "explanation": "A helyes válasz: 40 (forty). A tanár szerint negyven helyük van („We have places for forty students”).",
+      "evidence": "We have places for forty students"
+    },
+    {
+      "id": "2",
+      "kind": "text",
+      "prompt": "By what time must students be at the school car park on the first day?",
+      "answer": ["8 o'clock", "eight o'clock", "8.00", "8:00", "8", "eight", "8 am", "8am", "8 a.m.", "8.00 am", "8:00 am", "eight am", "by 8", "by eight", "by 8 o'clock", "by eight o'clock", "by 8.00", "by 8:00"],
+      "maxWords": 3,
+      "category": "detail",
+      "explanation": "A helyes válasz: 8 óra (eight o'clock). Csapda: a busz fél kilenckor indul, de a diákoknak legkésőbb nyolcra ott kell lenniük („be there by eight o'clock at the latest”).",
+      "evidence": "Please be there by eight o'clock at the latest"
+    },
+    {
+      "id": "3",
+      "kind": "text",
+      "prompt": "How many afternoon activities can each student choose?",
+      "answer": ["2", "two", "two activities", "2 activities"],
+      "maxWords": 3,
+      "category": "detail",
+      "explanation": "A helyes válasz: kettő (two). A három délutáni program (sziklamászás, hegyi kerékpározás, íjászat) közül jelentkezéskor kettőt lehet választani.",
+      "evidence": "you can choose two of these when you sign up"
+    },
+    {
+      "id": "4",
+      "kind": "text",
+      "prompt": "What will happen on the last night of the camp?",
+      "answer": ["a talent show", "talent show", "the talent show", "a talent contest", "talent contest"],
+      "maxWords": 3,
+      "category": "detail",
+      "explanation": "A helyes válasz: tehetségkutató műsor (a talent show). Csapda: az éjszakai erdei túra szerdán este lesz, az utolsó estén a „talent show” következik.",
+      "evidence": "on the last night we'll have a talent show"
+    },
+    {
+      "id": "5",
+      "kind": "text",
+      "prompt": "How much does the camp cost?",
+      "answer": ["£95", "95", "95 pounds", "ninety-five pounds", "ninety five pounds", "ninety-five", "ninety five", "£95.00", "95£", "95 GBP"],
+      "maxWords": 3,
+      "category": "detail",
+      "explanation": "A helyes válasz: 95 font (ninety-five pounds). Azért ilyen olcsó, mert idén az iskola a költség egy részét állja; ebben benne van minden program, a busz és napi háromszori étkezés.",
+      "evidence": "the camp only costs ninety-five pounds"
+    },
+    {
+      "id": "6",
+      "kind": "text",
+      "prompt": "What must students bring because the centre does not give it to them?",
+      "answer": ["a sleeping bag", "sleeping bag", "sleeping bags", "their sleeping bag", "a sleeping-bag", "sleeping-bag"],
+      "maxWords": 3,
+      "category": "detail",
+      "explanation": "A helyes válasz: hálózsák (a sleeping bag). A központ párnát ad, de hálózsákot nem („pillows, but not sleeping bags”), ezért azt mindenkinek hoznia kell.",
+      "evidence": "The centre gives you pillows, but not sleeping bags, so please don't forget yours."
+    },
+    {
+      "id": "7",
+      "kind": "text",
+      "prompt": "When can students use their mobile phones?",
+      "answer": ["after dinner", "after the dinner", "after their dinner"],
+      "maxWords": 3,
+      "category": "detail",
+      "explanation": "A helyes válasz: vacsora után (after dinner). Napközben tilos a telefon, csak vacsora után egy órán át lehet használni, hogy hazatelefonáljanak.",
+      "evidence": "You can use them for one hour after dinner to call home"
+    },
+    {
+      "id": "8",
+      "kind": "text",
+      "prompt": "Who should students talk to if they have an allergy?",
+      "answer": ["Mr Patel", "Mr. Patel", "Patel", "the school nurse", "school nurse", "the nurse", "nurse"],
+      "maxWords": 3,
+      "category": "detail",
+      "explanation": "A helyes válasz: Mr Patel, az iskolai ápoló (the school nurse). Neki kell szólni május végéig, ő beszél majd a központ konyhájával.",
+      "evidence": "please speak to Mr Patel, the school nurse, before the end of May"
+    },
+    {
+      "id": "9",
+      "kind": "text",
+      "prompt": "Who has to sign the form?",
+      "answer": ["parents", "the parents", "their parents", "your parents", "a parent", "their parent", "parent"],
+      "maxWords": 3,
+      "category": "detail",
+      "explanation": "A helyes válasz: a szülők (parents). A jelentkezési lapot a szülőknek kell aláírniuk, és jövő péntekig vissza kell hozni.",
+      "evidence": "Your parents have to sign the form"
+    }
+  ],
+  "glossary": [],
+  "suggestedMinutes": 8
+}

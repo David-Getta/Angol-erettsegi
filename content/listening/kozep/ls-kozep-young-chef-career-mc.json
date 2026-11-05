@@ -1,0 +1,203 @@
+{
+  "schemaVersion": 1,
+  "id": "ls-kozep-young-chef-career-mc",
+  "revision": 1,
+  "level": "kozep",
+  "source": "generated",
+  "topic": "munka",
+  "title": "A young chef's story",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "listening",
+  "type": "multiple-choice",
+  "instructions": "You are going to listen to a radio interview with Aoife Brennan, a young chef. For questions 1–7, choose the correct answer. You will hear the recording twice. There is an example (0) at the beginning.",
+  "instructionsHu": "Rádióinterjút hallasz Aoife Brennannel, egy fiatal szakáccsal. Válaszd ki a helyes választ. A felvételt kétszer hallod. A 0. a példa.",
+  "listening": {
+    "format": "interview",
+    "speakers": [
+      { "id": "B", "name": "Ben (presenter)", "gender": "male", "accent": "en-GB", "age": "adult" },
+      { "id": "A", "name": "Aoife Brennan", "gender": "female", "accent": "en-IE", "age": "young" }
+    ],
+    "script": [
+      { "speaker": "B", "text": "Welcome back to Future Jobs, the programme about careers for young people. My guest today is Aoife Brennan. She's only twenty-three, but she's already the pastry chef at one of the busiest restaurants in Dublin. Welcome, Aoife." },
+      { "speaker": "A", "text": "Thanks, Ben. It's lovely to be here." },
+      { "speaker": "B", "text": "So, when did you first start cooking?" },
+      { "speaker": "A", "text": "I was about twelve, I think. People always expect me to say that my grandmother taught me, but actually, no. Both my parents worked late, so I started making dinner for my little brother. At first it was just pasta, you know, but I got better and better." },
+      { "speaker": "B", "text": "And did you go straight to cookery school after you finished school?" },
+      { "speaker": "A", "text": "No, I didn't. My parents wanted me to get a proper degree, so I started a business course at university. But I left after one term. I spent every lecture writing recipes in my notebook, so I knew it wasn't right for me. The next September I started a two-year course at a catering college." },
+      { "speaker": "B", "text": "What was your first job in a kitchen like?" },
+      { "speaker": "A", "text": "Hard! Everyone thinks the worst part is the heat, or the head chef shouting at you. But honestly, the heat wasn't a problem, and my boss was really kind. For me, the most difficult thing was the hours. I often finished at midnight and then started again at ten the next morning. I had no free time at all." },
+      { "speaker": "B", "text": "And what do you do now, in your current job?" },
+      { "speaker": "A", "text": "Well, I'm in charge of all the desserts. I make the cakes, the ice cream, everything sweet. And every three months, I sit down with the head chef and we plan a new menu together." },
+      { "speaker": "B", "text": "What do you enjoy most about it?" },
+      { "speaker": "A", "text": "Hmm, good question. I love being creative, of course. But the best moment is when a waiter comes back into the kitchen and says a customer wants to know the recipe. That makes the long day worth it." },
+      { "speaker": "B", "text": "Lots of our listeners are thinking about becoming chefs. What would you say to them?" },
+      { "speaker": "A", "text": "Before you spend money on a course, get a part-time job in a restaurant kitchen. Even washing dishes is fine. You'll see very quickly if you really like that world. Some people love it, and some people leave after a week." },
+      { "speaker": "B", "text": "And what about the future? Do you dream of opening your own restaurant?" },
+      { "speaker": "A", "text": "Everyone asks me that! Maybe one day, but not yet. First I want to spend a year working in Japan. Their desserts are so different from ours, and I'd love to learn from Japanese chefs." },
+      { "speaker": "B", "text": "Aoife Brennan, thank you very much, and good luck." }
+    ]
+  },
+  "example": {
+    "id": "0",
+    "kind": "choice",
+    "prompt": "What is Aoife's job?",
+    "options": [
+      { "key": "A", "text": "She is a waitress in Dublin." },
+      { "key": "B", "text": "She makes desserts in a restaurant." },
+      { "key": "C", "text": "She has her own restaurant." },
+      { "key": "D", "text": "She teaches at a catering college." }
+    ],
+    "answer": "B",
+    "category": "detail",
+    "explanation": "A helyes válasz a B: a műsorvezető szerint Aoife „pastry chef” (cukrász) egy dublini étteremben – később ő maga is elmondja, hogy minden desszertért ő felel.",
+    "evidence": "she's already the pastry chef at one of the busiest restaurants in Dublin",
+    "wrongOptions": {
+      "A": "Felszolgálóról (waiter) csak akkor esik szó, amikor a vendég kérését viszi a konyhára – Aoife nem pincérnő.",
+      "C": "Saját étterme nincs; erről azt mondja: „Maybe one day, but not yet.”",
+      "D": "A vendéglátóipari főiskolán ő maga tanult, nem tanít ott."
+    }
+  },
+  "items": [
+    {
+      "id": "1",
+      "kind": "choice",
+      "prompt": "Why did Aoife start cooking when she was about twelve?",
+      "options": [
+        { "key": "A", "text": "Her grandmother taught her." },
+        { "key": "B", "text": "Her parents came home late, so she cooked for her brother." },
+        { "key": "C", "text": "She wanted to learn how to make pasta." },
+        { "key": "D", "text": "She saw a cooking programme on TV." }
+      ],
+      "answer": "B",
+      "category": "detail",
+      "explanation": "A helyes válasz a B: a szülei későig dolgoztak, ezért ő kezdett vacsorát főzni az öccsének („I started making dinner for my little brother”).",
+      "evidence": "Both my parents worked late, so I started making dinner for my little brother.",
+      "wrongOptions": {
+        "A": "Csapda: Aoife épp azt mondja, hogy mindenki ezt várja, de „actually, no” – nem a nagymamája tanította.",
+        "C": "A tészta csak az első egyszerű étel volt, amit főzött („At first it was just pasta”), nem ez volt az oka a főzésnek.",
+        "D": "Főzőműsorról egyáltalán nem beszél."
+      }
+    },
+    {
+      "id": "2",
+      "kind": "choice",
+      "prompt": "What did Aoife do first after she finished school?",
+      "options": [
+        { "key": "A", "text": "She started a course at a catering college." },
+        { "key": "B", "text": "She studied business for a short time." },
+        { "key": "C", "text": "She worked in a restaurant for a year." },
+        { "key": "D", "text": "She wrote a recipe book." }
+      ],
+      "answer": "B",
+      "category": "detail",
+      "explanation": "A helyes válasz a B: először üzleti szakra ment az egyetemre, de egy félév után otthagyta („I left after one term”), csak utána kezdte a főiskolát.",
+      "evidence": "I started a business course at university. But I left after one term.",
+      "wrongOptions": {
+        "A": "A vendéglátóipari főiskola csak a következő szeptemberben jött – a kérdésre („No, I didn't”) azt feleli, hogy nem egyből oda ment.",
+        "C": "Arról, hogy az iskola után egy évig étteremben dolgozott volna, nem beszél.",
+        "D": "A recepteket csak a jegyzetfüzetébe írta az előadásokon – könyvet nem írt."
+      }
+    },
+    {
+      "id": "3",
+      "kind": "choice",
+      "prompt": "What was the most difficult thing about Aoife's first job in a kitchen?",
+      "options": [
+        { "key": "A", "text": "The heat in the kitchen." },
+        { "key": "B", "text": "Her boss." },
+        { "key": "C", "text": "The working hours." },
+        { "key": "D", "text": "The low pay." }
+      ],
+      "answer": "C",
+      "category": "detail",
+      "explanation": "A helyes válasz a C: Aoife szerint a legnehezebb a munkaidő volt – éjfélkor végzett, és másnap tízkor már újra kezdett.",
+      "evidence": "For me, the most difficult thing was the hours.",
+      "wrongOptions": {
+        "A": "Csapda: a hőséget mások szerint ez a legrosszabb, de neki „the heat wasn't a problem”.",
+        "B": "A főnöke kifejezetten kedves volt („my boss was really kind”).",
+        "D": "A fizetésről egyáltalán nem beszél."
+      }
+    },
+    {
+      "id": "4",
+      "kind": "choice",
+      "prompt": "What is Aoife responsible for in her job now?",
+      "options": [
+        { "key": "A", "text": "Planning the menu on her own." },
+        { "key": "B", "text": "All the sweet dishes." },
+        { "key": "C", "text": "Washing the dishes." },
+        { "key": "D", "text": "Training new waiters." }
+      ],
+      "answer": "B",
+      "category": "detail",
+      "explanation": "A helyes válasz a B: „I'm in charge of all the desserts” – ő felel minden édességért (sütemények, fagylalt).",
+      "evidence": "I'm in charge of all the desserts.",
+      "wrongOptions": {
+        "A": "Az étlapot nem egyedül, hanem a főszakáccsal együtt tervezi háromhavonta („we plan a new menu together”).",
+        "C": "A mosogatás csak a fiataloknak adott tanácsban kerül elő, nem a saját munkája.",
+        "D": "Pincérek betanításáról nem esik szó."
+      }
+    },
+    {
+      "id": "5",
+      "kind": "choice",
+      "prompt": "For Aoife, the best moment in her job is when",
+      "options": [
+        { "key": "A", "text": "she can create something new." },
+        { "key": "B", "text": "a customer asks for one of her recipes." },
+        { "key": "C", "text": "the long day is finally over." },
+        { "key": "D", "text": "the head chef says her desserts are good." }
+      ],
+      "answer": "B",
+      "category": "detail",
+      "explanation": "A helyes válasz a B: „the best moment” az, amikor a pincér visszajön a konyhába, és elmondja, hogy egy vendég tudni szeretné a receptet.",
+      "evidence": "But the best moment is when a waiter comes back into the kitchen and says a customer wants to know the recipe.",
+      "wrongOptions": {
+        "A": "Csapda: szereti a kreativitást („I love being creative, of course”), de a „But” után mondja el, mi a legjobb pillanat.",
+        "C": "A hosszú napot csak azért említi, mert a vendég kérése miatt megéri („makes the long day worth it”) – nem a nap vége a legjobb.",
+        "D": "A főszakács dicséretéről nem beszél."
+      }
+    },
+    {
+      "id": "6",
+      "kind": "choice",
+      "prompt": "What advice does Aoife give to young people who want to become chefs?",
+      "options": [
+        { "key": "A", "text": "Start a cookery course as soon as possible." },
+        { "key": "B", "text": "First get a part-time job in a restaurant kitchen." },
+        { "key": "C", "text": "Never accept a job washing dishes." },
+        { "key": "D", "text": "Study business before you start cooking." }
+      ],
+      "answer": "B",
+      "category": "detail",
+      "explanation": "A helyes válasz a B: azt tanácsolja, hogy mielőtt pénzt költenek egy tanfolyamra, vállaljanak részmunkaidős munkát egy éttermi konyhán, így gyorsan kiderül, tetszik-e nekik.",
+      "evidence": "Before you spend money on a course, get a part-time job in a restaurant kitchen.",
+      "wrongOptions": {
+        "A": "Épp az ellenkezőjét mondja: a tanfolyam ELŐTT érdemes kipróbálni a konyhai munkát.",
+        "C": "Azt mondja, a mosogatás is megfelel („Even washing dishes is fine”).",
+        "D": "Az üzleti tanulmányok neki sem váltak be – ezt nem javasolja másoknak."
+      }
+    },
+    {
+      "id": "7",
+      "kind": "choice",
+      "prompt": "What does Aoife want to do next?",
+      "options": [
+        { "key": "A", "text": "Open her own restaurant." },
+        { "key": "B", "text": "Work in Japan for a year." },
+        { "key": "C", "text": "Write a book about Japanese desserts." }
+      ],
+      "answer": "B",
+      "category": "detail",
+      "explanation": "A helyes válasz a B: „First I want to spend a year working in Japan” – először egy évet Japánban szeretne dolgozni, hogy japán szakácsoktól tanuljon.",
+      "evidence": "First I want to spend a year working in Japan.",
+      "wrongOptions": {
+        "A": "A saját étteremről azt mondja: „Maybe one day, but not yet” – tehát most még nem ez a terve.",
+        "C": "Japán desszertekről szóló könyvről nem esik szó; tanulni szeretne a japán szakácsoktól."
+      }
+    }
+  ],
+  "glossary": [],
+  "suggestedMinutes": 8
+}

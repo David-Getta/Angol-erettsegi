@@ -1,0 +1,205 @@
+{
+  "schemaVersion": 1,
+  "id": "ls-kozep-weekend-trip-plans-mc",
+  "revision": 1,
+  "level": "kozep",
+  "source": "generated",
+  "topic": "utazas",
+  "title": "Planning a weekend away",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "listening",
+  "type": "multiple-choice",
+  "instructions": "You are going to listen to three friends, Lucy, Sam and Nadia, planning a weekend trip after their exams. For questions 1–7, choose the correct answer. You will hear the recording twice. There is an example (0) at the beginning.",
+  "instructionsHu": "Három barát (Lucy, Sam és Nadia) a vizsgák utáni hétvégi kirándulást tervezi. Válaszd ki a helyes választ. A felvételt kétszer hallod. A 0. a példa.",
+  "listening": {
+    "format": "dialogue",
+    "speakers": [
+      { "id": "L", "name": "Lucy", "gender": "female", "accent": "en-GB", "age": "young" },
+      { "id": "S", "name": "Sam", "gender": "male", "accent": "en-AU", "age": "young" },
+      { "id": "N", "name": "Nadia", "gender": "female", "accent": "en-US", "age": "young" }
+    ],
+    "script": [
+      { "speaker": "L", "text": "Right, so our last exam is on the fourteenth, and I really think we should celebrate. How about going away for the weekend, just the three of us?" },
+      { "speaker": "S", "text": "Yeah, great idea. I definitely need a break after all that studying. Where do you want to go?" },
+      { "speaker": "L", "text": "Well, I was thinking of Port Ellery. It's by the sea, and it's only two hours away." },
+      { "speaker": "N", "text": "Oh, I went there last summer with my family. I loved it, actually, I'd happily go again. But wait, isn't there a big music festival there that weekend?" },
+      { "speaker": "S", "text": "Hang on, let me check. Yes, you're right. And look, almost every hotel and hostel in town is fully booked. The only room left costs two hundred pounds a night!" },
+      { "speaker": "L", "text": "Two hundred? No way. OK, forget the seaside. What about Glenmoor? There's the lake, and the hills, and it's not too far either." },
+      { "speaker": "N", "text": "Glenmoor sounds lovely. So how do we get there? Sam, didn't you say your brother could lend us his car?" },
+      { "speaker": "S", "text": "He did, but, um, actually, he needs it himself that weekend. Sorry. So it's the train or the coach." },
+      { "speaker": "L", "text": "The train's quicker, but it's forty pounds return. The coach is only eighteen." },
+      { "speaker": "N", "text": "Eighteen pounds? Let's take the coach, then. I don't mind an extra hour if we save that much money." },
+      { "speaker": "S", "text": "Fine by me. What time does it leave?" },
+      { "speaker": "L", "text": "Let me see. There's one at seven fifteen. Oh no, sorry, that's only on weekdays. On Saturdays the first coach is at eight fifteen." },
+      { "speaker": "S", "text": "Eight fifteen is perfect. I'm not getting up at six on a Saturday!" },
+      { "speaker": "N", "text": "And where are we going to sleep? Please don't say a tent." },
+      { "speaker": "L", "text": "Why not? Camping is fun! It's cheap, and there's a campsite right next to the lake." },
+      { "speaker": "N", "text": "It might be fun in August, but in June it can be really cold at night. And I haven't got a sleeping bag." },
+      { "speaker": "S", "text": "There's a youth hostel in the village. They've got a room for three for twenty-five pounds each, and breakfast is included." },
+      { "speaker": "L", "text": "OK, OK, the hostel. You win." },
+      { "speaker": "N", "text": "Great. Now, what are we going to do on Saturday? I've seen photos of people kayaking on the lake. I'd love to try that." },
+      { "speaker": "S", "text": "I wanted to climb Glenmoor Hill, but we could do that on Sunday morning, before the coach home. So kayaking on Saturday afternoon, and the walk on Sunday?" },
+      { "speaker": "L", "text": "Perfect. The castle is closed for repairs this year anyway, so we don't need time for that." },
+      { "speaker": "N", "text": "So who's booking what? I can book the coach tickets online tonight." },
+      { "speaker": "S", "text": "Then I'll phone the hostel tomorrow morning. They don't take online bookings, apparently." },
+      { "speaker": "L", "text": "And I'll look for a cheap place to have dinner on Saturday night. Oh, and one more thing. Don't forget to pack a waterproof jacket. It rains a lot in the hills, even in summer." },
+      { "speaker": "S", "text": "What about towels? Do we need to bring them?" },
+      { "speaker": "L", "text": "No, the hostel gives you towels. Just bring a jacket." }
+    ]
+  },
+  "example": {
+    "id": "0",
+    "kind": "choice",
+    "prompt": "Why do the friends want to go away for the weekend?",
+    "options": [
+      { "key": "A", "text": "To celebrate the end of their exams." },
+      { "key": "B", "text": "To visit Nadia's family." },
+      { "key": "C", "text": "To go to a music festival." },
+      { "key": "D", "text": "To study together in a quiet place." }
+    ],
+    "answer": "A",
+    "category": "detail",
+    "explanation": "A helyes válasz az A: Lucy azt mondja, hogy az utolsó vizsgájuk 14-én van, és ezt meg kellene ünnepelniük („we should celebrate”).",
+    "evidence": "our last exam is on the fourteenth, and I really think we should celebrate",
+    "wrongOptions": {
+      "B": "Nadia családja csak annyiban kerül elő, hogy vele járt tavaly Port Elleryben – nem őket akarják meglátogatni.",
+      "C": "A zenei fesztivál éppen az oka annak, hogy NEM mennek Port Elleryre.",
+      "D": "Sam épp azt mondja, hogy a sok tanulás után pihenésre van szüksége – nem tanulni mennek."
+    }
+  },
+  "items": [
+    {
+      "id": "1",
+      "kind": "choice",
+      "prompt": "Why do they decide not to go to Port Ellery?",
+      "options": [
+        { "key": "A", "text": "Nadia has already been there." },
+        { "key": "B", "text": "It is too far away." },
+        { "key": "C", "text": "There are almost no rooms and they are very expensive." },
+        { "key": "D", "text": "The weather will be bad that weekend." }
+      ],
+      "answer": "C",
+      "category": "detail",
+      "explanation": "A helyes válasz a C: a fesztivál miatt szinte minden szálloda és hostel tele van, az egyetlen szabad szoba pedig 200 font egy éjszakára – ezért mondja Lucy, hogy „No way”.",
+      "evidence": "almost every hotel and hostel in town is fully booked. The only room left costs two hundred pounds a night!",
+      "wrongOptions": {
+        "A": "Nadia valóban járt már ott, de azt mondja, szívesen menne újra („I'd happily go again”) – ez nem ok a lemondásra.",
+        "B": "Lucy szerint Port Ellery csak két órányira van („only two hours away”), tehát nem túl messze.",
+        "D": "Az időjárásról Port Ellery kapcsán nem esik szó; az eső csak a hegyek kapcsán kerül elő a végén."
+      }
+    },
+    {
+      "id": "2",
+      "kind": "choice",
+      "prompt": "How are they going to travel to Glenmoor?",
+      "options": [
+        { "key": "A", "text": "In Sam's brother's car." },
+        { "key": "B", "text": "By train." },
+        { "key": "C", "text": "By coach." }
+      ],
+      "answer": "C",
+      "category": "detail",
+      "explanation": "A helyes válasz a C: a vonat 40 font, a busz csak 18, ezért Nadia azt javasolja, menjenek busszal („Let's take the coach, then”), és Sam is beleegyezik („Fine by me”).",
+      "evidence": "Let's take the coach, then.",
+      "wrongOptions": {
+        "A": "Sam önjavítással visszavonja: a bátyjának azon a hétvégén saját magának kell az autó („he needs it himself that weekend”).",
+        "B": "A vonat gyorsabb lenne, de drágább (40 font), ezért nem azt választják."
+      }
+    },
+    {
+      "id": "3",
+      "kind": "choice",
+      "prompt": "What time does their coach leave on Saturday?",
+      "options": [
+        { "key": "A", "text": "At 6.00." },
+        { "key": "B", "text": "At 7.15." },
+        { "key": "C", "text": "At 8.15." }
+      ],
+      "answer": "C",
+      "category": "detail",
+      "explanation": "A helyes válasz a C: Lucy kijavítja magát – szombaton az első busz negyed kilenckor (eight fifteen) indul, és Sam szerint ez tökéletes.",
+      "evidence": "On Saturdays the first coach is at eight fifteen.",
+      "wrongOptions": {
+        "A": "A hat óra csak Sam tréfás megjegyzésében szerepel: szombaton nem akar hatkor kelni – ez nem indulási idő.",
+        "B": "A 7.15-ös busz csak hétköznap jár („that's only on weekdays”), Lucy ezt rögtön javítja."
+      }
+    },
+    {
+      "id": "4",
+      "kind": "choice",
+      "prompt": "Where are they going to stay?",
+      "options": [
+        { "key": "A", "text": "At a campsite next to the lake." },
+        { "key": "B", "text": "In a youth hostel in the village." },
+        { "key": "C", "text": "In a hotel in Glenmoor." }
+      ],
+      "answer": "B",
+      "category": "detail",
+      "explanation": "A helyes válasz a B: Sam a faluban lévő ifjúsági szállót javasolja, és Lucy végül elfogadja: „OK, OK, the hostel. You win.”",
+      "evidence": "OK, OK, the hostel. You win.",
+      "wrongOptions": {
+        "A": "Lucy szeretett volna sátorozni a tó melletti kempingben, de Nadia ellenezte (hideg éjszakák, nincs hálózsákja), és Lucy végül feladja.",
+        "C": "Szállodákról csak Port Ellery kapcsán beszélnek; Glenmoorban szállodát nem is említenek."
+      }
+    },
+    {
+      "id": "5",
+      "kind": "choice",
+      "prompt": "What will they do on Saturday afternoon?",
+      "options": [
+        { "key": "A", "text": "Climb Glenmoor Hill." },
+        { "key": "B", "text": "Go kayaking on the lake." },
+        { "key": "C", "text": "Visit the castle." }
+      ],
+      "answer": "B",
+      "category": "detail",
+      "explanation": "A helyes válasz a B: Sam összefoglalja a tervet – szombat délután kajakozás, a túra pedig vasárnap („So kayaking on Saturday afternoon”), Lucy pedig rábólint.",
+      "evidence": "So kayaking on Saturday afternoon, and the walk on Sunday?",
+      "wrongOptions": {
+        "A": "A hegymászást (Glenmoor Hill) vasárnap reggelre teszik át, a hazaút előttre.",
+        "C": "A vár idén felújítás miatt zárva van („closed for repairs”), így oda nem mennek."
+      }
+    },
+    {
+      "id": "6",
+      "kind": "choice",
+      "prompt": "What is Nadia going to organise?",
+      "options": [
+        { "key": "A", "text": "The room at the hostel." },
+        { "key": "B", "text": "The coach tickets." },
+        { "key": "C", "text": "A place to have dinner." }
+      ],
+      "answer": "B",
+      "category": "detail",
+      "explanation": "A helyes válasz a B: Nadia azt mondja, ma este online megveszi a buszjegyeket („I can book the coach tickets online tonight”).",
+      "evidence": "I can book the coach tickets online tonight.",
+      "wrongOptions": {
+        "A": "A hostelt Sam hívja fel holnap reggel, mert ott nem lehet online foglalni.",
+        "C": "Vacsorahelyet Lucy keres szombat estére, nem Nadia."
+      }
+    },
+    {
+      "id": "7",
+      "kind": "choice",
+      "prompt": "What does Lucy tell the others to pack?",
+      "options": [
+        { "key": "A", "text": "A sleeping bag." },
+        { "key": "B", "text": "A towel." },
+        { "key": "C", "text": "A waterproof jacket." },
+        { "key": "D", "text": "A tent." }
+      ],
+      "answer": "C",
+      "category": "detail",
+      "explanation": "A helyes válasz a C: Lucy figyelmeztet, hogy ne felejtsenek el vízálló kabátot pakolni, mert a hegyekben nyáron is sokat esik.",
+      "evidence": "Don't forget to pack a waterproof jacket.",
+      "wrongOptions": {
+        "A": "Hálózsák csak a sátorozásnál került szóba (Nadiának nincs is); a hostelben nincs rá szükség.",
+        "B": "Törölközőt nem kell vinni, mert a hostel ad („the hostel gives you towels”).",
+        "D": "Sátor nem kell, mert végül a hostelben alszanak."
+      }
+    }
+  ],
+  "glossary": [],
+  "suggestedMinutes": 8
+}
