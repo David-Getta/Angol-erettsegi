@@ -1,0 +1,146 @@
+{
+  "meta": {
+    "verifiedAt": "2026-11-05",
+    "sources": [
+      {
+        "title": "Oktatási Hivatal: Fizika – részletes érettségi vizsgakövetelmény és vizsgaleírás (2024-től érvényes, Nat2020)",
+        "url": "https://www.oktatas.hu/pub_bin/dload/kozoktatas/erettsegi/vizsgakovetelmenyek2024/fizika_2024_e.pdf"
+      },
+      {
+        "title": "Eduline (2026. 05. 19.): Minden, amit a keddi fizikaérettségiről tudni kell (közép 150 perc: 20 feleletválasztós × 2 pont + 4-ből 3 összetett feladat; szóbeli 60 pont, kísérlet)",
+        "url": "https://eduline.hu/erettsegi-felveteli/20260519_fizikaerettsegi-2026-minden-fontos-tudnivalo"
+      },
+      {
+        "title": "Fizikatanárok: Emelt szintű fizika javítási-értékelési útmutató, 2024. május (E2412) – pontösszesítő: I. 30, II. 18 + 5, III. 47",
+        "url": "https://www.fizikatanarok.hu/media/uploads/Fizika_erettsegi/Emelt/e_fiz_24maj_ut.pdf"
+      },
+      {
+        "title": "Eduline (2024. 12. 23.): Itt vannak a 2025-ös emelt szintű fizika érettségi témakörei és mérési feladatai",
+        "url": "https://eduline.hu/erettsegi-felveteli/20241223_emelt-szintu-fizika-erettsegi-szobeli-temakorok-meresi-feladatok-2025"
+      },
+      {
+        "title": "Vidra Gábor: Fizika Nat2020-as érettségi követelmények – témakörök és súlyok",
+        "url": "https://www.vidra-gabor.hu/kovetelmenyek.php"
+      },
+      {
+        "title": "Eduline (2019. 05. 20.): Ilyen lesz a szóbeli érettségi fizikából (tartalom 45 + felépítés 5 emelten)",
+        "url": "https://eduline.hu/erettsegi-felveteli/20190520_fizikaerettsegi-szobeli-kozep-es-emelt-szinten"
+      },
+      {
+        "title": "Eduline (2026. 03. 14.): Érettségi 2026 – pontozási és osztályozási szabályok (közép 80/60/40/25 %, emelt 60/47/33/25 %, vizsgarészenként 12 %)",
+        "url": "https://eduline.hu/erettsegi-felveteli/20260314_erettsegi-2026-pontozas-osztalyozas"
+      }
+    ],
+    "notes": [
+      "60 pont ellenőrzött; a bontás (tartalom 35, kísérlet 20, felépítés 5) az app becslése az emelt 45 + 5 analógiájára és a mintatételek kísérleti részpontjai alapján.",
+      "Az ellenőrzés hírportál-cikkek (Eduline, Telex) és a hivatalos dokumentumok keresőben indexelt szövege alapján történt; az OH oldalát a futtató környezet hálózata nem engedte közvetlenül megnyitni – a hivatalos vizsgaleírással érdemes összevetni."
+    ]
+  },
+  "id": "speaking-kozep",
+  "level": "kozep",
+  "examMaxPoints": 60,
+  "tasks": [
+    {
+      "id": "tetel",
+      "partNumber": 1,
+      "name": "Tétel",
+      "types": [
+        "tetel"
+      ],
+      "criteria": [
+        {
+          "id": "tartalom",
+          "name": "A téma kifejtése: tartalom",
+          "description": "Jelenségek, törvények, mennyiségek és összefüggések helyes, teljes, példákkal illusztrált kifejtése.",
+          "max": 35,
+          "bands": [
+            {
+              "points": "35",
+              "descriptor": "Maradéktalanul teljesül: Jelenségek, törvények, mennyiségek és összefüggések helyes, teljes, példákkal illusztrált kifejtése."
+            },
+            {
+              "points": "25–34",
+              "descriptor": "Kisebb hiányosságokkal vagy pontatlanságokkal teljesül; a lényeg helyes."
+            },
+            {
+              "points": "15–24",
+              "descriptor": "Részben teljesül: több elem hiányzik, pontatlan vagy indoklás nélküli."
+            },
+            {
+              "points": "1–13",
+              "descriptor": "Alig teljesül: csak néhány helyes, odaillő elem van."
+            },
+            {
+              "points": "0",
+              "descriptor": "Nem teljesül, vagy nem értékelhető."
+            }
+          ]
+        },
+        {
+          "id": "kiserlet",
+          "name": "Kísérlet / mérés bemutatása és értelmezése",
+          "description": "A kísérlet összeállítása és elvégzése (vagy leírása), a tapasztalat rögzítése, fizikai magyarázata.",
+          "max": 20,
+          "bands": [
+            {
+              "points": "20",
+              "descriptor": "Maradéktalanul teljesül: A kísérlet összeállítása és elvégzése (vagy leírása), a tapasztalat rögzítése, fizikai magyarázata."
+            },
+            {
+              "points": "15–19",
+              "descriptor": "Kisebb hiányosságokkal vagy pontatlanságokkal teljesül; a lényeg helyes."
+            },
+            {
+              "points": "9–13",
+              "descriptor": "Részben teljesül: több elem hiányzik, pontatlan vagy indoklás nélküli."
+            },
+            {
+              "points": "1–7",
+              "descriptor": "Alig teljesül: csak néhány helyes, odaillő elem van."
+            },
+            {
+              "points": "0",
+              "descriptor": "Nem teljesül, vagy nem értékelhető."
+            }
+          ]
+        },
+        {
+          "id": "felepites",
+          "name": "A felelet felépítése, önálló kifejtés",
+          "description": "Logikus, önálló, szakszerű előadás.",
+          "max": 5,
+          "bands": [
+            {
+              "points": "5",
+              "descriptor": "Maradéktalanul teljesül: Logikus, önálló, szakszerű előadás."
+            },
+            {
+              "points": "4",
+              "descriptor": "Kisebb hiányosságokkal vagy pontatlanságokkal teljesül; a lényeg helyes."
+            },
+            {
+              "points": "3",
+              "descriptor": "Részben teljesül: több elem hiányzik, pontatlan vagy indoklás nélküli."
+            },
+            {
+              "points": "2",
+              "descriptor": "Alig teljesül: csak néhány helyes, odaillő elem van."
+            },
+            {
+              "points": "0",
+              "descriptor": "Nem teljesül, vagy nem értékelhető."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "overall": [],
+  "conversion": {
+    "method": "identity"
+  },
+  "officialScoring": [
+    "Szóbeli: 15 perc felelet, 30 perc felkészülés, 60 pont; tétel = téma + kísérlet."
+  ],
+  "generalRules": []
+}

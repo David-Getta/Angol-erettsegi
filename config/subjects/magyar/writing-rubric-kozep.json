@@ -1,0 +1,157 @@
+{
+  "meta": {
+    "verifiedAt": "2026-11-05",
+    "sources": [
+      {
+        "title": "Oktatási Hivatal: Magyar nyelv és irodalom – részletes érettségi vizsgakövetelmény és vizsgaleírás (2024-től érvényes, Nat2020)",
+        "url": "https://www.oktatas.hu/pub_bin/dload/kozoktatas/erettsegi/vizsgakovetelmenyek2024/magyar_nyelv_es_irodalom_2024_e.pdf"
+      },
+      {
+        "title": "Eduline (2024. 05. 06.): Kezdődik a magyarérettségi – változások, pontozás, időkeret (240 perc = 90 + 150; szövegértés 40 + irodalmi feladatlap 20; II. feladatlap 40; helyesírás −8, íráskép −2)",
+        "url": "https://eduline.hu/erettsegi-felveteli/20240506_kezdodik-a-magyarerettsegi-valtozasok-pontozas-idokeret-minden-fontos-tudnivalo"
+      },
+      {
+        "title": "Eduline (2025. 04. 08.): Milyen részekből áll és hogyan pontozzák a középszintű magyarérettségit? (tartalmi minőség 30 + nyelvi minőség 10)",
+        "url": "https://eduline.hu/erettsegi_felveteli/20250408_Milyen_reszekbol_all_es_hogyan_pontozzak_a_magyarerettsegit"
+      },
+      {
+        "title": "Eduline (2025. 11. 06.): Így pontozzák a magyar nyelv és irodalom szóbelit (irodalom 25 + nyelvtan 15 + nyelvi minőség 10)",
+        "url": "https://eduline.hu/erettsegi-felveteli/20251106_oszi-erettsegi-2025-magyar-nyelv-es-irodalom-pontozas-ertekelesi-kriteriumok"
+      },
+      {
+        "title": "Eduline (2024. 04. 11.): Vizsgarészek, pontozás, segédeszközök – minden a 2024-es magyarérettségiről (emelt: szövegértési és nyelvi-irodalmi műveltségi feladatsor 40, műértelmező 40, reflektáló 20)",
+        "url": "https://eduline.hu/erettsegi-felveteli/20240411_Minden-amit-a-2024es-magyarerettsegirol-tudnotok-kell"
+      },
+      {
+        "title": "Eduline (2026. 04. 30.): Ady, Arany vagy Babits? – a 2026-os középszintű magyarérettségi kötelező szerzői",
+        "url": "https://eduline.hu/erettsegi-felveteli/20260430_magyar-nyelv-es-irodalom-erettsegi-2026-kozepszint-irok-koltok-lista"
+      },
+      {
+        "title": "ELTE Anyanyelv-pedagógia (2024): tanulmány a 2024-es magyar javítási-értékelési útmutatóról (szerkezet 5 + nyelvi igényesség 5)",
+        "url": "https://ojs.elte.hu/anyanyelv-pedagogia/article/download/11840/10505/32588"
+      },
+      {
+        "title": "Eduline (2026. 03. 14.): Érettségi 2026 – pontozási és osztályozási szabályok (közép 80/60/40/25 %, emelt 60/47/33/25 %, vizsgarészenként 12 %)",
+        "url": "https://eduline.hu/erettsegi-felveteli/20260314_erettsegi-2026-pontozas-osztalyozas"
+      }
+    ],
+    "notes": [
+      "Ellenőrzött: 40 pont = tartalmi minőség 30 + nyelvi minőség 10 (szövegszerkezet 5 + nyelvi igényesség 5); a helyesírásért legfeljebb 8, az írásképért legfeljebb 2 pont levonás a teljes írásbeliből. A sávleírások az app összefoglalói.",
+      "Az ellenőrzés hírportál-cikkek (Eduline, Telex) és a hivatalos dokumentumok keresőben indexelt szövege alapján történt; az OH oldalát a futtató környezet hálózata nem engedte közvetlenül megnyitni – a hivatalos vizsgaleírással érdemes összevetni."
+    ]
+  },
+  "id": "writing-kozep",
+  "level": "kozep",
+  "examMaxPoints": 40,
+  "tasks": [
+    {
+      "taskNumber": 1,
+      "name": "Műértelmezés vagy témakifejtő esszé",
+      "textTypes": [
+        "muertelmezes",
+        "temakifejto-essze"
+      ],
+      "guidingPoints": "szempontok a feladatban",
+      "suggestedMinutes": 150,
+      "maxRaw": 40,
+      "criteria": [
+        {
+          "id": "tartalom",
+          "name": "Tartalmi minőség",
+          "description": "A műértelmező / témakifejtő szöveg tartalmi követelményei: a feladat értelmezése, a mű/téma értő, elemző kifejtése, tárgyi tudás, irodalmi és kulturális kontextus, önálló gondolatok, a szempontok követése.",
+          "max": 30,
+          "bands": [
+            {
+              "points": "30",
+              "descriptor": "A feladatot pontosan értelmezi; elemző, árnyalt, tárgyi tudással és példákkal alátámasztott kifejtés; önálló, releváns gondolatok."
+            },
+            {
+              "points": "22–29",
+              "descriptor": "Értő kifejtés kisebb hiányokkal; a példák és a kontextus többnyire megvannak."
+            },
+            {
+              "points": "13–20",
+              "descriptor": "Részben kifejtett, helyenként felszínes vagy tartalomismertetésbe csúszó szöveg; kevés példa."
+            },
+            {
+              "points": "1–11",
+              "descriptor": "Vázlatos, több tárgyi tévedés vagy a feladattól eltérés."
+            },
+            {
+              "points": "0",
+              "descriptor": "Nem a feladatot oldja meg, vagy nem értékelhető."
+            }
+          ]
+        },
+        {
+          "id": "szerkezet",
+          "name": "Szövegszerkezet",
+          "description": "Logikus felépítés, bevezetés–kifejtés–befejezés, bekezdések, a gondolatmenet követhetősége, arányosság.",
+          "max": 5,
+          "bands": [
+            {
+              "points": "5",
+              "descriptor": "Maradéktalanul teljesül: Logikus felépítés, bevezetés–kifejtés–befejezés, bekezdések, a gondolatmenet követhetősége, arányosság."
+            },
+            {
+              "points": "4",
+              "descriptor": "Kisebb hiányosságokkal vagy pontatlanságokkal teljesül; a lényeg helyes."
+            },
+            {
+              "points": "3",
+              "descriptor": "Részben teljesül: több elem hiányzik, pontatlan vagy indoklás nélküli."
+            },
+            {
+              "points": "2",
+              "descriptor": "Alig teljesül: csak néhány helyes, odaillő elem van."
+            },
+            {
+              "points": "0",
+              "descriptor": "Nem teljesül, vagy nem értékelhető."
+            }
+          ]
+        },
+        {
+          "id": "nyelv",
+          "name": "Nyelvi igényesség (stílus, nyelvhelyesség)",
+          "description": "Választékos, a műfajhoz illő stílus, pontos szóhasználat, szakkifejezések, nyelvhelyesség, mondatszerkesztés.",
+          "max": 5,
+          "bands": [
+            {
+              "points": "5",
+              "descriptor": "Maradéktalanul teljesül: Választékos, a műfajhoz illő stílus, pontos szóhasználat, szakkifejezések, nyelvhelyesség, mondatszerkesztés."
+            },
+            {
+              "points": "4",
+              "descriptor": "Kisebb hiányosságokkal vagy pontatlanságokkal teljesül; a lényeg helyes."
+            },
+            {
+              "points": "3",
+              "descriptor": "Részben teljesül: több elem hiányzik, pontatlan vagy indoklás nélküli."
+            },
+            {
+              "points": "2",
+              "descriptor": "Alig teljesül: csak néhány helyes, odaillő elem van."
+            },
+            {
+              "points": "0",
+              "descriptor": "Nem teljesül, vagy nem értékelhető."
+            }
+          ]
+        }
+      ],
+      "rules": [
+        "Csak az egyik feladat (mű értelmezése vagy témakifejtő esszé) értékelhető; jelöld, melyiket választottad.",
+        "Helyesírási hibákért legfeljebb 8, az írásképért legfeljebb 2 pont levonás jár a teljes dolgozatból – a javítás ezt szövegesen jelzi.",
+        "A puszta tartalomismertetés nem elemzés: a tartalmi pontok az értelmezésért, az eszközök és a kontextus feltárásáért járnak."
+      ]
+    }
+  ],
+  "conversion": {
+    "method": "identity"
+  },
+  "generalRules": [
+    "Helyesírási szótár használható.",
+    "A szöveg terjedelmére nincs előírt szóhatár, de a kifejtettség és az arányos szerkezet a tartalmi és szerkezeti pontok része."
+  ]
+}

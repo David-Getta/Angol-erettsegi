@@ -1,0 +1,213 @@
+{
+  "meta": {
+    "verifiedAt": "2026-11-05",
+    "sources": [
+      {
+        "title": "Oktatási Hivatal: Biológia – részletes érettségi vizsgakövetelmény és vizsgaleírás (2024-től érvényes, Nat2020)",
+        "url": "https://www.oktatas.hu/pub_bin/dload/kozoktatas/erettsegi/vizsgakovetelmenyek2024/biologia_2024_e.pdf"
+      },
+      {
+        "title": "Eduline (2024. 05. 13.): Minden, amit a keddi biológiaérettségiről tudni kell (közép 150 perc, 100 pont, 6–12 feladat; szóbeli A 25 + B 20 + 5; emelt 240 perc 80 + 20 pont)",
+        "url": "https://eduline.hu/erettsegi-felveteli/20240513_biologiaerettsegi-biologia-erettsegi-2024-minden-tudnivalo"
+      },
+      {
+        "title": "Eduline (2025. 05. 12.): Milyen segédeszközt lehet használni a biológiaérettségin? (csak számológép)",
+        "url": "https://eduline.hu/erettsegi-felveteli/20250512_biologiaerettsegi-segedeszkozok-szamologep"
+      },
+      {
+        "title": "emeltbiosz.hu: Az érettségi menetéről – szóbeli pontozás (közép 25 + 20 + 5, emelt 20 + 25 + 5)",
+        "url": "https://emeltbiosz.hu/erettsegi/"
+      },
+      {
+        "title": "Gergely Tibor: A 2024-től érvényes biológia érettségi követelményrendszer változásai (hat Nat2020 témakör)",
+        "url": "http://www.gergelytibor.hu/kovetelmenyek_valtozasai.pdf"
+      },
+      {
+        "title": "Eduline (2023. 12. 22.): Itt vannak a 2024-es emelt szintű biológiaérettségi témakörei",
+        "url": "https://eduline.hu/erettsegi-felveteli/20231222_emelt-szintu-biologiaerettsegi-temakorok-2024"
+      },
+      {
+        "title": "Eduline (2026. 03. 14.): Érettségi 2026 – pontozási és osztályozási szabályok (közép 80/60/40/25 %, emelt 60/47/33/25 %, vizsgarészenként 12 %)",
+        "url": "https://eduline.hu/erettsegi-felveteli/20260314_erettsegi-2026-pontozas-osztalyozas"
+      }
+    ],
+    "notes": [
+      "Ellenőrzött bontás: A 25, B 20, a felelet felépítése és nyelvi kifejezőkészség 5.",
+      "Az ellenőrzés hírportál-cikkek (Eduline, Telex) és a hivatalos dokumentumok keresőben indexelt szövege alapján történt; az OH oldalát a futtató környezet hálózata nem engedte közvetlenül megnyitni – a hivatalos vizsgaleírással érdemes összevetni."
+    ]
+  },
+  "id": "speaking-kozep",
+  "level": "kozep",
+  "examMaxPoints": 50,
+  "tasks": [
+    {
+      "id": "a-tetel",
+      "partNumber": 1,
+      "name": "A) altétel",
+      "types": [
+        "a-tetel"
+      ],
+      "criteria": [
+        {
+          "id": "tartalom",
+          "name": "Tartalmi pontosság, teljesség",
+          "description": "A probléma biológiai háttere, a lényeges elemek helyesen és teljesen.",
+          "max": 18,
+          "bands": [
+            {
+              "points": "18",
+              "descriptor": "Maradéktalanul teljesül: A probléma biológiai háttere, a lényeges elemek helyesen és teljesen."
+            },
+            {
+              "points": "13–17",
+              "descriptor": "Kisebb hiányosságokkal vagy pontatlanságokkal teljesül; a lényeg helyes."
+            },
+            {
+              "points": "8–12",
+              "descriptor": "Részben teljesül: több elem hiányzik, pontatlan vagy indoklás nélküli."
+            },
+            {
+              "points": "1–7",
+              "descriptor": "Alig teljesül: csak néhány helyes, odaillő elem van."
+            },
+            {
+              "points": "0",
+              "descriptor": "Nem teljesül, vagy nem értékelhető."
+            }
+          ]
+        },
+        {
+          "id": "osszefugges",
+          "name": "Összefüggések, példák, alkalmazás",
+          "description": "Ok–okozati összefüggések, gyakorlati példák, egészség- és környezettudatos következtetések.",
+          "max": 7,
+          "bands": [
+            {
+              "points": "7",
+              "descriptor": "Maradéktalanul teljesül: Ok–okozati összefüggések, gyakorlati példák, egészség- és környezettudatos következtetések."
+            },
+            {
+              "points": "5–6",
+              "descriptor": "Kisebb hiányosságokkal vagy pontatlanságokkal teljesül; a lényeg helyes."
+            },
+            {
+              "points": "3–4",
+              "descriptor": "Részben teljesül: több elem hiányzik, pontatlan vagy indoklás nélküli."
+            },
+            {
+              "points": "1–2",
+              "descriptor": "Alig teljesül: csak néhány helyes, odaillő elem van."
+            },
+            {
+              "points": "0",
+              "descriptor": "Nem teljesül, vagy nem értékelhető."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "b-tetel",
+      "partNumber": 2,
+      "name": "B) altétel",
+      "types": [
+        "b-tetel"
+      ],
+      "criteria": [
+        {
+          "id": "gyakorlat",
+          "name": "A gyakorlati feladat elvégzése / bemutatása",
+          "description": "Laborgyakorlat, fajismeret, ábraelemzés vagy projekt szakszerű bemutatása.",
+          "max": 13,
+          "bands": [
+            {
+              "points": "13",
+              "descriptor": "Maradéktalanul teljesül: Laborgyakorlat, fajismeret, ábraelemzés vagy projekt szakszerű bemutatása."
+            },
+            {
+              "points": "10–12",
+              "descriptor": "Kisebb hiányosságokkal vagy pontatlanságokkal teljesül; a lényeg helyes."
+            },
+            {
+              "points": "6–9",
+              "descriptor": "Részben teljesül: több elem hiányzik, pontatlan vagy indoklás nélküli."
+            },
+            {
+              "points": "1–5",
+              "descriptor": "Alig teljesül: csak néhány helyes, odaillő elem van."
+            },
+            {
+              "points": "0",
+              "descriptor": "Nem teljesül, vagy nem értékelhető."
+            }
+          ]
+        },
+        {
+          "id": "ertelmezes",
+          "name": "Értelmezés, következtetés",
+          "description": "A megfigyelés / adatok biológiai értelmezése, következtetések.",
+          "max": 7,
+          "bands": [
+            {
+              "points": "7",
+              "descriptor": "Maradéktalanul teljesül: A megfigyelés / adatok biológiai értelmezése, következtetések."
+            },
+            {
+              "points": "5–6",
+              "descriptor": "Kisebb hiányosságokkal vagy pontatlanságokkal teljesül; a lényeg helyes."
+            },
+            {
+              "points": "3–4",
+              "descriptor": "Részben teljesül: több elem hiányzik, pontatlan vagy indoklás nélküli."
+            },
+            {
+              "points": "1–2",
+              "descriptor": "Alig teljesül: csak néhány helyes, odaillő elem van."
+            },
+            {
+              "points": "0",
+              "descriptor": "Nem teljesül, vagy nem értékelhető."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "overall": [
+    {
+      "id": "felepites",
+      "name": "A felelet felépítése, nyelvi kifejezőkészség",
+      "description": "Logikus, önálló, szakszerű előadás.",
+      "max": 5,
+      "bands": [
+        {
+          "points": "5",
+          "descriptor": "Maradéktalanul teljesül: Logikus, önálló, szakszerű előadás."
+        },
+        {
+          "points": "4",
+          "descriptor": "Kisebb hiányosságokkal vagy pontatlanságokkal teljesül; a lényeg helyes."
+        },
+        {
+          "points": "3",
+          "descriptor": "Részben teljesül: több elem hiányzik, pontatlan vagy indoklás nélküli."
+        },
+        {
+          "points": "2",
+          "descriptor": "Alig teljesül: csak néhány helyes, odaillő elem van."
+        },
+        {
+          "points": "0",
+          "descriptor": "Nem teljesül, vagy nem értékelhető."
+        }
+      ]
+    }
+  ],
+  "conversion": {
+    "method": "identity"
+  },
+  "officialScoring": [
+    "Szóbeli: 15 perc, 30 perc felkészülés, 50 pont = A 25 + B 20 + 5; 20 tétel, a címeket 60 nappal a vizsga előtt közzé kell tenni."
+  ],
+  "generalRules": []
+}

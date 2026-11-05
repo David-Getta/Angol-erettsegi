@@ -1,0 +1,220 @@
+{
+  "meta": {
+    "verifiedAt": "2026-11-05",
+    "sources": [
+      {
+        "title": "Oktatási Hivatal: Matematika – részletes érettségi vizsgakövetelmény és vizsgaleírás (2024-től érvényes, Nat2020)",
+        "url": "https://www.oktatas.hu/pub_bin/dload/kozoktatas/erettsegi/vizsgakovetelmenyek2024/matematika_2024_e.pdf"
+      },
+      {
+        "title": "Eduline (2025. 04. 28.): Így pontozzák a középszintű matekérettségit (I. rész 45 perc/30 pont, II/A 3 feladat, II/B 3×17 pont – 2 választandó)",
+        "url": "https://eduline.hu/erettsegi-felveteli/20250428_Matekerettsegi-2025-pontozas-feladatok"
+      },
+      {
+        "title": "Eduline (2024. 05. 14.): Mikor kell szóban is érettségizni matekból? (12–24,99 % között; 50 pont = 15 + 30 + 5)",
+        "url": "https://eduline.hu/erettsegi-felveteli/20240514_szobeli-kozepszintu-matekerettsegi-mikor"
+      },
+      {
+        "title": "Eduline (2025. 06. 02.): Hány percesek és hány pontosak a szóbeli érettségik közép- és emelt szinten? (emelt matek szóbeli 20 perc, 35 pont)",
+        "url": "https://eduline.hu/erettsegi-felveteli/20250602_hany-perc-hany-pont-szobeli-erettsegi-kozep-emelt-szint"
+      },
+      {
+        "title": "Eduline (2022. 05. 02.): Itt van minden, amit az emelt matekérettségiről tudnotok kell (240 perc, I. rész 4 feladat 51 pont, II. rész 5-ből 4 × 16 pont)",
+        "url": "https://eduline.hu/erettsegi-felveteli/20220502_emelt-matek-osszefoglalo"
+      },
+      {
+        "title": "Eduline (2019. 11. 12.): Véget értek az emelt szintű szóbelik – így pontozzák (emelt matek szóbeli 35 pont bontása)",
+        "url": "https://eduline.hu/erettsegi-felveteli/20191112_oszi-erettsegi-szobelik-pontozas"
+      },
+      {
+        "title": "Eduline (2024. 03. 27.): Grafikonon mutatjuk, hogyan változnak a matekérettségi témaköreinek arányai (Nat2020 témakörök és súlyok)",
+        "url": "https://eduline.hu/erettsegi-felveteli/20240327_matekerettsegi-temakorok-valtozasok-2024"
+      },
+      {
+        "title": "Oktatási Hivatal: Középszintű matematika javítási-értékelési útmutató, 2025. október – általános javítási elvek (tükörmásolat)",
+        "url": "https://www.mateking.hu/sites/mp/files/uploads/k_mat_25okt_ut.pdf"
+      },
+      {
+        "title": "Eduline (2026. 03. 14.): Érettségi 2026 – pontozási és osztályozási szabályok (közép 80/60/40/25 %, emelt 60/47/33/25 %, vizsgarészenként 12 %)",
+        "url": "https://eduline.hu/erettsegi-felveteli/20260314_erettsegi-2026-pontozas-osztalyozas"
+      }
+    ],
+    "notes": [
+      "Ellenőrzött (2024 óta, Nat2020): közép írásbeli 180 perc, 100 pont (I. rész 45 perc / 30 pont, II. rész 135 perc / 70 pont: II/A 3 feladat, II/B 3-ból 2 × 17 pont); közép szóbeli 15 perc, 50 pont, csak 12–24,99 %-os írásbeli után; emelt írásbeli 240 perc, 115 pont (I. rész 4 feladat 51 pont, II. rész 5-ből 4 × 16 pont); emelt szóbeli 20 perc, 35 pont; felkészülés 30 perc.",
+      "App-modell: emelt szinten az I. rész feladatait az app rövid, eredménnyel ellenőrizhető feladatokként gyakoroltatja; az emelt I./II. rész percbeosztása a 240 perc javasolt felosztása (a vizsgán szabadon osztható).",
+      "App-paraméter, nem hivatalos adat: mockTaskCount (hány feladat kerül egy próbaérettségibe), az írásbeli részek közti percbeosztás ott, ahol a vizsgán egyben kapják az időt, a textLength és a részek intro szövege.",
+      "Az ellenőrzés hírportál-cikkek (Eduline, Telex) és a hivatalos dokumentumok keresőben indexelt szövege alapján történt; az OH oldalát a futtató környezet hálózata nem engedte közvetlenül megnyitni – a hivatalos vizsgaleírással érdemes összevetni."
+    ]
+  },
+  "levels": {
+    "kozep": {
+      "name": "Középszint",
+      "cefr": "",
+      "writtenTotalMin": 180,
+      "totalPoints": 150,
+      "parts": [
+        {
+          "id": "reading",
+          "kind": "objective",
+          "slug": "rovid-feladatok",
+          "name": "I. rész – Rövid feladatok",
+          "written": true,
+          "order": 1,
+          "timeMin": 45,
+          "maxPoints": 30,
+          "mockTaskCount": 3,
+          "notes": [
+            "12 rövid feladat, 2–4 pont; függvénytáblázat és szöveget nem tároló számológép használható."
+          ],
+          "features": {
+            "targeted": true
+          },
+          "intro": "Rövid feladatok a vizsga I. részéhez: csak az eredményt kell beírni (szám, mértékegységgel vagy a megadott formában). Minden feladat után magyarázat: mi a helyes megoldás és miért.",
+          "icon": "🔢"
+        },
+        {
+          "id": "writing",
+          "kind": "written",
+          "slug": "kidolgozott-feladatok",
+          "name": "II. rész – Kidolgozott feladatok",
+          "written": true,
+          "order": 2,
+          "timeMin": 135,
+          "maxPoints": 70,
+          "mockTaskCount": 2,
+          "notes": [
+            "II/A: 3 kötelező feladat (9–12 pont); II/B: 3 feladatból 2 választandó (17–17 pont) – jelöld, melyiket hagyod ki, különben az utolsó esik ki."
+          ],
+          "features": {},
+          "intro": "Kidolgozott feladatok: a megoldás menetét, indoklással írod le (szövegként, képletekkel). A javítást a Claude Code (/javitas) vagy a Claude app végzi a hivatalos javítási elvek szerint: részpontok, a gondolatmenet és a számolás külön.",
+          "icon": "📝"
+        },
+        {
+          "id": "speaking",
+          "kind": "oral",
+          "slug": "szobeli",
+          "name": "Szóbeli (tétel)",
+          "written": false,
+          "order": 3,
+          "maxPoints": 50,
+          "notes": [
+            "Csak akkor kell szóbelizni, ha az írásbeli eredménye 12 % és 25 % között van."
+          ],
+          "conditional": {
+            "ifWrittenPctBelow": 25,
+            "note": "Középszinten a szóbelit csak az teszi le, akinek az írásbelije eléri a 12 %-ot, de nem éri el a 25 %-ot; egyébként az írásbeli százaléka a végeredmény."
+          },
+          "features": {},
+          "intro": "Szóbeli tételek: definíciók, tételek és a hozzájuk tartozó feladatok. A választ beszéddel (felismerés) vagy gépeléssel adod meg.",
+          "icon": "🗣"
+        }
+      ],
+      "breaks": [],
+      "oral": {
+        "durationMin": "15",
+        "prepMin": "30",
+        "parts": [
+          {
+            "number": 1,
+            "name": "Elméleti kérdések",
+            "description": "A tételhez tartozó három elméleti kérdés (definíció, tétel kimondása, összefüggés) – 15 pont.",
+            "minutes": "5"
+          },
+          {
+            "number": 2,
+            "name": "Feladatok",
+            "description": "Három, a tétel témaköréhez tartozó alapfeladat megoldása és magyarázata – 30 pont.",
+            "minutes": "8–9"
+          },
+          {
+            "number": 3,
+            "name": "Kommunikáció",
+            "description": "Matematikai nyelvhasználat, a gondolatmenet világos előadása – 5 pont.",
+            "minutes": "–"
+          }
+        ],
+        "note": "Csak az tesz szóbelit, akinek az írásbelije 12 % és 24,99 % közé esik; 12 % alatti felelet esetén póttétel, felezett ponttal."
+      },
+      "textLength": {}
+    },
+    "emelt": {
+      "name": "Emelt szint",
+      "cefr": "",
+      "writtenTotalMin": 240,
+      "totalPoints": 150,
+      "parts": [
+        {
+          "id": "reading",
+          "kind": "objective",
+          "slug": "rovid-feladatok",
+          "name": "I. rész – Feladatok (eredménnyel)",
+          "written": true,
+          "order": 1,
+          "timeMin": 90,
+          "maxPoints": 51,
+          "mockTaskCount": 4,
+          "notes": [
+            "A vizsgán az I. rész 4 kidolgozandó feladat (51 pont); az app itt a részfeladatok eredményét kéri és ellenőrzi, a teljes kidolgozást a II. résznél gyakorolhatod."
+          ],
+          "features": {
+            "targeted": true
+          },
+          "intro": "Rövid feladatok a vizsga I. részéhez: csak az eredményt kell beírni (szám, mértékegységgel vagy a megadott formában). Minden feladat után magyarázat: mi a helyes megoldás és miért.",
+          "icon": "🔢"
+        },
+        {
+          "id": "writing",
+          "kind": "written",
+          "slug": "kidolgozott-feladatok",
+          "name": "II. rész – Kidolgozott feladatok",
+          "written": true,
+          "order": 2,
+          "timeMin": 150,
+          "maxPoints": 64,
+          "mockTaskCount": 1,
+          "notes": [
+            "5 feladatból 4-et kell megoldani (16–16 pont); a 240 perc szabadon osztható a két rész között."
+          ],
+          "features": {},
+          "intro": "Kidolgozott feladatok: a megoldás menetét, indoklással írod le (szövegként, képletekkel). A javítást a Claude Code (/javitas) vagy a Claude app végzi a hivatalos javítási elvek szerint: részpontok, a gondolatmenet és a számolás külön.",
+          "icon": "📝"
+        },
+        {
+          "id": "speaking",
+          "kind": "oral",
+          "slug": "szobeli",
+          "name": "Szóbeli (tétel)",
+          "written": false,
+          "order": 3,
+          "maxPoints": 35,
+          "notes": [
+            "Emelt szinten a szóbeli mindenkinek kötelező; a tételcímeket az OH évente közzéteszi."
+          ],
+          "features": {},
+          "intro": "Szóbeli tételek: definíciók, tételek és a hozzájuk tartozó feladatok. A választ beszéddel (felismerés) vagy gépeléssel adod meg.",
+          "icon": "🗣"
+        }
+      ],
+      "breaks": [],
+      "oral": {
+        "durationMin": "20",
+        "prepMin": "30",
+        "parts": [
+          {
+            "number": 1,
+            "name": "A tétel kifejtése",
+            "description": "Definíciók, tételek (legalább egy bizonyítással), a tétel felépítése és tartalma, alkalmazások – a 25 évente közzétett tételcím egyike.",
+            "minutes": "12–15"
+          },
+          {
+            "number": 2,
+            "name": "Feladat",
+            "description": "A tételhez tartozó feladat megoldása és magyarázata.",
+            "minutes": "5–8"
+          }
+        ]
+      },
+      "textLength": {}
+    }
+  }
+}

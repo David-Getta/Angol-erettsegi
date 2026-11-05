@@ -1,0 +1,235 @@
+{
+  "meta": {
+    "verifiedAt": "2026-11-05",
+    "sources": [
+      {
+        "title": "Oktatási Hivatal: Földrajz – részletes érettségi vizsgakövetelmény és vizsgaleírás (2024-től érvényes, Nat2020)",
+        "url": "https://www.oktatas.hu/pub_bin/dload/kozoktatas/erettsegi/vizsgakovetelmenyek2024/foldrajz_2024_e.pdf"
+      },
+      {
+        "title": "Eduline (2025. 05. 13.): Ezeket kell tudni a csütörtöki földrajzérettségiről – segédeszközök, pontozás (közép írásbeli 90 pont: topográfia 20 perc 20 pont + 100 perc 70 pont)",
+        "url": "https://eduline.hu/erettsegi-felveteli/20250513_minden-a-csoturtoki-foldrjazerettsegirol-segedeszkozok-pontozas-eddig-irhatjatok"
+      },
+      {
+        "title": "Eduline (2024. 05. 15.): Minden, amit a csütörtöki földrajzérettségiről tudni érdemes",
+        "url": "https://eduline.hu/erettsegi-felveteli/20240515_foldrajzerettsegi-tudnivalok-segedeszkozok-egy-helyen"
+      },
+      {
+        "title": "Oktatási Hivatal, Új Köznevelés (2022): Érettségi változások – Földrajz (20/70/90 pont, szóbeli A/B változat, 60 pont)",
+        "url": "https://www.oktatas.hu/pub_bin/dload/kozoktatas/uj_kozneveles/2022_2/UKN_2202_06_Erettsegi_valtozasok_Foldrajz.pdf"
+      },
+      {
+        "title": "GeoMetodika (2021): Megőrizve megújítani – a földrajz érettségi vizsga új vonásai (írásbeli 100 → 90 pont)",
+        "url": "https://geometodika.hu/megorizve-megujitani-a-foldrajz-erettsegi-vizsga-uj-vonasai/"
+      },
+      {
+        "title": "Eduline (2024. 12. 13.): Itt vannak a 2025-ös emelt szintű földrajzérettségi témakörei",
+        "url": "https://eduline.hu/erettsegi-felveteli/20241213_emelt-szintu-foldrajzerettsegi-tetelek-temakorok-2025"
+      },
+      {
+        "title": "Eduline (2026. 03. 14.): Érettségi 2026 – pontozási és osztályozási szabályok (közép 80/60/40/25 %, emelt 60/47/33/25 %, vizsgarészenként 12 %)",
+        "url": "https://eduline.hu/erettsegi-felveteli/20260314_erettsegi-2026-pontozas-osztalyozas"
+      }
+    ],
+    "notes": [
+      "Az ellenőrzés hírportál-cikkek (Eduline, Telex) és a hivatalos dokumentumok keresőben indexelt szövege alapján történt; az OH oldalát a futtató környezet hálózata nem engedte közvetlenül megnyitni – a hivatalos vizsgaleírással érdemes összevetni."
+    ]
+  },
+  "reading": [
+    {
+      "id": "topografia",
+      "name": "Topográfiai azonosítás",
+      "nameEn": "Topography",
+      "levels": [
+        "kozep",
+        "emelt"
+      ],
+      "description": "Hely, táj, ország, város, víz felismerése leírás vagy térképvázlat-leírás alapján.",
+      "itemKinds": [
+        "text",
+        "match",
+        "choice"
+      ]
+    },
+    {
+      "id": "parositas",
+      "name": "Párosítás",
+      "nameEn": "Matching",
+      "levels": [
+        "kozep",
+        "emelt"
+      ],
+      "description": "Helyek és jellemzők, fogalmak és példák párosítása.",
+      "itemKinds": [
+        "match"
+      ]
+    }
+  ],
+  "language-use": [
+    {
+      "id": "feleletvalasztas",
+      "name": "Feleletválasztós teszt",
+      "nameEn": "Multiple choice",
+      "levels": [
+        "kozep",
+        "emelt"
+      ],
+      "description": "Egy helyes válasz kiválasztása 3–5 lehetőség közül.",
+      "itemKinds": [
+        "choice"
+      ]
+    },
+    {
+      "id": "igaz-hamis",
+      "name": "Igaz–hamis állítások",
+      "nameEn": "True/false",
+      "levels": [
+        "kozep",
+        "emelt"
+      ],
+      "description": "Állítások eldöntése (igaz / hamis), indoklással a magyarázatban.",
+      "itemKinds": [
+        "tf"
+      ]
+    },
+    {
+      "id": "parositas",
+      "name": "Párosítás",
+      "nameEn": "Matching",
+      "levels": [
+        "kozep",
+        "emelt"
+      ],
+      "description": "Fogalmak, példák, ábrarészek párosítása közös opciólistából.",
+      "itemKinds": [
+        "match"
+      ]
+    },
+    {
+      "id": "rovid-valasz",
+      "name": "Rövid választ igénylő feladat",
+      "nameEn": "Short answer",
+      "levels": [
+        "kozep",
+        "emelt"
+      ],
+      "description": "Egy-két szavas vagy számszerű válasz (fogalom, érték, név).",
+      "itemKinds": [
+        "text",
+        "choice"
+      ]
+    },
+    {
+      "id": "abraelemzes",
+      "name": "Ábra-, táblázat- vagy grafikonelemzés",
+      "nameEn": "Data / diagram analysis",
+      "levels": [
+        "kozep",
+        "emelt"
+      ],
+      "description": "Szövegben leírt ábra, adatsor vagy táblázat alapján kérdések.",
+      "itemKinds": [
+        "text",
+        "choice",
+        "tf"
+      ]
+    },
+    {
+      "id": "szamitas-rovid",
+      "name": "Rövid számítás",
+      "nameEn": "Short calculation",
+      "levels": [
+        "kozep",
+        "emelt"
+      ],
+      "description": "Egy-két lépéses számítás, csak az eredményt kell beírni (mértékegységgel).",
+      "itemKinds": [
+        "text"
+      ]
+    },
+    {
+      "id": "fogalom-meghatarozas",
+      "name": "Fogalom-meghatározás, kiegészítés",
+      "nameEn": "Definitions",
+      "levels": [
+        "kozep",
+        "emelt"
+      ],
+      "description": "Fogalom megnevezése leírásból, mondat kiegészítése.",
+      "itemKinds": [
+        "text",
+        "choice"
+      ]
+    },
+    {
+      "id": "szovegertelmezes",
+      "name": "Szövegértelmezés",
+      "nameEn": "Text interpretation",
+      "levels": [
+        "kozep",
+        "emelt"
+      ],
+      "description": "Rövid földrajzi szöveg alapján kérdések.",
+      "itemKinds": [
+        "text",
+        "choice",
+        "tf"
+      ]
+    }
+  ],
+  "listening": [],
+  "writing": [
+    {
+      "id": "osszefugges-magyarazat",
+      "name": "Összefüggés-magyarázat",
+      "nameEn": "Explaining relationships",
+      "levels": [
+        "kozep",
+        "emelt"
+      ],
+      "description": "Folyamat, ok–okozati összefüggés leírása mondatokban."
+    },
+    {
+      "id": "elemzo",
+      "name": "Elemző feladat",
+      "nameEn": "Analysis",
+      "levels": [
+        "kozep",
+        "emelt"
+      ],
+      "description": "Adatsor, diagram, ábra vagy szöveg elemzése kérdések mentén."
+    },
+    {
+      "id": "szamitasos-elemzo",
+      "name": "Számításos-elemző feladat",
+      "nameEn": "Calculation and analysis",
+      "levels": [
+        "kozep",
+        "emelt"
+      ],
+      "description": "Időzóna, méretarány, népesedési vagy gazdasági mutatók számítása és értelmezése."
+    }
+  ],
+  "speaking": [
+    {
+      "id": "termeszetfoldrajz-tetel",
+      "name": "Természetföldrajzi feladat",
+      "nameEn": "Physical geography topic",
+      "levels": [
+        "kozep",
+        "emelt"
+      ],
+      "description": "Természetföldrajzi téma kifejtése térképhasználattal."
+    },
+    {
+      "id": "tarsadalomfoldrajz-tetel",
+      "name": "Társadalomföldrajzi feladat",
+      "nameEn": "Human geography topic",
+      "levels": [
+        "kozep",
+        "emelt"
+      ],
+      "description": "Társadalom-/gazdaságföldrajzi téma kifejtése regionális példával."
+    }
+  ]
+}

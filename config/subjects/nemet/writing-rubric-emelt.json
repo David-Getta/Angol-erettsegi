@@ -1,0 +1,310 @@
+{
+  "meta": {
+    "verifiedAt": "2026-11-05",
+    "sources": [
+      {
+        "title": "Eduline (2024. 05. 10.): Itt van minden, amit a pénteki németérettségiről tudni érdemes (közép 60/30/30/60 perc, 33/18/33/33 pont + szóbeli 33; emelt 4 × 30 + 30)",
+        "url": "https://eduline.hu/erettsegi-felveteli/20240510_Itt-van-minden-amit-a-penteki-nemeterettsegirol-tudni-erdemes-erettsegi-2024"
+      },
+      {
+        "title": "Oktatási Hivatal: Élő idegen nyelv – közös vizsgaleírás (a német ugyanazt a szerkezetet követi, mint az angol)",
+        "url": "https://www.oktatas.hu/pub_bin/dload/kozoktatas/erettsegi/vizsgakovetelmenyek2017/elo_idegen_nyelv_vl.pdf"
+      }
+    ],
+    "notes": [
+      "A német érettségi az élő idegen nyelv közös vizsgaleírását követi: a szerkezet, a pontszámok, a rubrikák és a témakörök azonosak az angollal (ellenőrizve: Eduline 2024. 05. 10.). A sávleírások a nyelvtől függetlenek.",
+      "Ellenőrzött: a két feladat szóhatára és irányító szempontjainak száma, a szempontok és maximális pontjaik (1. feladat 4+2+3+3+3 = 15, 2. feladat 4+5+3+3 = 15, együtt 30 vizsgapont), a terjedelmi szabályok és a 0 pontos feladatteljesítés szabálya.",
+      "Az ellenőrzés a hivatalos útmutatók keresőben indexelt szövegéből és Eduline-cikkekből történt; a PDF-eket a futtató környezet hálózata nem engedte közvetlenül megnyitni. A 2. feladat táblázatában a 2024-es és a 2025–2026-os útmutatók között eltérést jeleztek a források (a 2. feladatnál nincs külön hangnem-szempont, a szövegalkotás 5 pont); az app a 2025–2026-os változatot követi.",
+      "A sávleírások (bands) az app rövid összefoglalói a hivatalos értékelési skála alapján, nem szó szerinti idézetek. Hivatalos feladatsor importálásakor a hozzá tartozó útmutató az irányadó."
+    ]
+  },
+  "id": "writing-emelt",
+  "level": "emelt",
+  "examMaxPoints": 30,
+  "tasks": [
+    {
+      "taskNumber": 1,
+      "name": "Irányított fogalmazás",
+      "textTypes": [
+        "informal-email",
+        "formal-email",
+        "blog",
+        "forum"
+      ],
+      "wordLimit": {
+        "min": 120,
+        "max": 150
+      },
+      "guidingPoints": "3",
+      "suggestedMinutes": 35,
+      "maxRaw": 15,
+      "criteria": [
+        {
+          "id": "task",
+          "name": "A feladat teljesítése, a megadott szempontok követése",
+          "description": "Mindhárom irányító szempontot érdemben kifejti-e, a szövegfajta és a kommunikációs cél teljesül-e, betartja-e a terjedelmet.",
+          "max": 4,
+          "bands": [
+            {
+              "points": "4",
+              "descriptor": "Mindhárom szempontot érdemben, részletesen kifejti; a cél és a szövegfajta maradéktalanul teljesül."
+            },
+            {
+              "points": "3",
+              "descriptor": "Minden szempontra kitér, de egy kevésbé kidolgozott."
+            },
+            {
+              "points": "2",
+              "descriptor": "Egy szempont hiányzik vagy több csak felszínes."
+            },
+            {
+              "points": "1",
+              "descriptor": "Csak egy szempontot teljesít érdemben."
+            },
+            {
+              "points": "0",
+              "descriptor": "Nem a feladatot oldja meg, vagy 60 szónál rövidebb – ilyenkor a feladat összesen 0 pont."
+            }
+          ]
+        },
+        {
+          "id": "register",
+          "name": "Hangnem, az olvasóban keltett benyomás",
+          "description": "A hangnem és a stílus illik-e a szövegfajtához, a címzetthez és a célhoz (formális/informális regiszter végig következetesen).",
+          "max": 2,
+          "bands": [
+            {
+              "points": "2",
+              "descriptor": "A hangnem végig illik a szövegfajtához és az író–olvasó viszonyhoz, a kívánt hatást kelti."
+            },
+            {
+              "points": "1",
+              "descriptor": "A hangnem nem következetes, vagy helyenként nem illik."
+            },
+            {
+              "points": "0",
+              "descriptor": "A hangnem nem felel meg a helyzetnek."
+            }
+          ]
+        },
+        {
+          "id": "organisation",
+          "name": "Szövegalkotás",
+          "description": "Logikus felépítés, bekezdések, változatos és pontos kapcsolóelemek, a gondolatmenet követhetősége.",
+          "max": 3,
+          "bands": [
+            {
+              "points": "3",
+              "descriptor": "Logikus, jól tagolt szöveg, változatos és pontos kapcsolóelemek."
+            },
+            {
+              "points": "2",
+              "descriptor": "Alapvetően logikus, de a kapcsolóelemek egyszerűek vagy a tagolás hiányos."
+            },
+            {
+              "points": "1",
+              "descriptor": "Nehezen követhető, kevéssé összefüggő szöveg."
+            },
+            {
+              "points": "0",
+              "descriptor": "Összefüggéstelen, nem követhető szöveg."
+            }
+          ]
+        },
+        {
+          "id": "vocab",
+          "name": "Szókincs, kifejezésmód",
+          "description": "B2-es szintnek megfelelő, változatos, pontos és a regiszterhez illő szókincs, természetes kollokációk.",
+          "max": 3,
+          "bands": [
+            {
+              "points": "3",
+              "descriptor": "Gazdag, pontos, a helyzethez illő szókincs, természetes kifejezések."
+            },
+            {
+              "points": "2",
+              "descriptor": "Megfelelő, de helyenként egyszerű vagy pontatlan szókincs."
+            },
+            {
+              "points": "1",
+              "descriptor": "Szegényes vagy gyakran pontatlan szókincs."
+            },
+            {
+              "points": "0",
+              "descriptor": "A szókincs nem elegendő a feladathoz."
+            }
+          ]
+        },
+        {
+          "id": "grammar",
+          "name": "Nyelvhelyesség, helyesírás",
+          "description": "B2-es szintnek megfelelő, változatos szerkezetek pontos használata, helyesírás; a hibák súlya a szöveg hosszához mérten.",
+          "max": 3,
+          "bands": [
+            {
+              "points": "3",
+              "descriptor": "Változatos szerkezetek, csak elvétve hiba, ami nem zavarja a megértést."
+            },
+            {
+              "points": "2",
+              "descriptor": "Több hiba, de a szöveg első olvasásra érthető."
+            },
+            {
+              "points": "1",
+              "descriptor": "Sok hiba, a megértés helyenként nehéz."
+            },
+            {
+              "points": "0",
+              "descriptor": "A hibák miatt a szöveg nagyrészt nem érthető."
+            }
+          ]
+        }
+      ],
+      "rules": [
+        "Ha a szöveg 60 szónál rövidebb, a feladat teljesítése 0 pont (és így a feladat összesen 0 pont).",
+        "Ha a szöveg 225 szónál hosszabb, a feladat teljesítéséből 1 pontot le kell vonni."
+      ]
+    },
+    {
+      "taskNumber": 2,
+      "name": "Érvelő szöveg",
+      "textTypes": [
+        "article",
+        "opinion",
+        "forum",
+        "blog",
+        "formal-email"
+      ],
+      "wordLimit": {
+        "min": 200,
+        "max": 250
+      },
+      "guidingPoints": "4",
+      "suggestedMinutes": 55,
+      "maxRaw": 15,
+      "criteria": [
+        {
+          "id": "task",
+          "name": "A feladat teljesítése, a megadott szempontok követése",
+          "description": "Mind a négy irányító szempontot érdemben kifejti-e, érvel-e (állásfoglalás, indoklás, példák), a szövegfajta és a cél teljesül-e, betartja-e a terjedelmet.",
+          "max": 4,
+          "bands": [
+            {
+              "points": "4",
+              "descriptor": "Mind a négy szempontot érdemben, érvekkel és példákkal kifejti; a szövegfajta és a cél teljesül."
+            },
+            {
+              "points": "3",
+              "descriptor": "Minden szempontra kitér, de egy-kettő kevésbé kidolgozott."
+            },
+            {
+              "points": "2",
+              "descriptor": "Egy szempont hiányzik, vagy az érvelés több helyen felszínes."
+            },
+            {
+              "points": "1",
+              "descriptor": "A szempontok többsége hiányzik vagy csak említés szintjén szerepel."
+            },
+            {
+              "points": "0",
+              "descriptor": "Nem a feladatot oldja meg, vagy 100 szónál rövidebb – ilyenkor a feladat összesen 0 pont."
+            }
+          ]
+        },
+        {
+          "id": "organisation",
+          "name": "Szövegalkotás",
+          "description": "Az érvelő szöveg felépítése (bevezetés, kifejtés, lezárás), bekezdések, a gondolatmenet logikája, változatos kohéziós eszközök, a szövegfajtához illő hangnem.",
+          "max": 5,
+          "bands": [
+            {
+              "points": "5",
+              "descriptor": "Világos, logikus érvelés, jól tagolt bekezdések, változatos és pontos kapcsolóelemek; a szövegfajtához illő stílus."
+            },
+            {
+              "points": "4",
+              "descriptor": "Logikus és tagolt, kisebb hiányosságokkal a kapcsolóelemekben vagy az átvezetésekben."
+            },
+            {
+              "points": "3",
+              "descriptor": "Alapvetően követhető, de a felépítés vagy az érvek összekapcsolása egyszerű, ismétlődő."
+            },
+            {
+              "points": "2",
+              "descriptor": "A gondolatmenet helyenként nehezen követhető, a tagolás hiányos."
+            },
+            {
+              "points": "1",
+              "descriptor": "Kevéssé összefüggő, tagolatlan szöveg."
+            },
+            {
+              "points": "0",
+              "descriptor": "Összefüggéstelen, nem követhető szöveg."
+            }
+          ]
+        },
+        {
+          "id": "vocab",
+          "name": "Szókincs, kifejezésmód",
+          "description": "B2-es szintnek megfelelő, változatos, pontos szókincs, az érveléshez illő kifejezések.",
+          "max": 3,
+          "bands": [
+            {
+              "points": "3",
+              "descriptor": "Gazdag, pontos szókincs, természetes kifejezések az érveléshez."
+            },
+            {
+              "points": "2",
+              "descriptor": "Megfelelő, de helyenként egyszerű, ismétlődő vagy pontatlan."
+            },
+            {
+              "points": "1",
+              "descriptor": "Szegényes vagy gyakran pontatlan szókincs."
+            },
+            {
+              "points": "0",
+              "descriptor": "A szókincs nem elegendő a feladathoz."
+            }
+          ]
+        },
+        {
+          "id": "grammar",
+          "name": "Nyelvhelyesség, helyesírás",
+          "description": "B2-es szintnek megfelelő, változatos szerkezetek pontos használata, helyesírás; a hibák súlya a szöveg hosszához mérten.",
+          "max": 3,
+          "bands": [
+            {
+              "points": "3",
+              "descriptor": "Változatos szerkezetek, csak elvétve hiba, ami nem zavarja a megértést."
+            },
+            {
+              "points": "2",
+              "descriptor": "Több hiba, de a szöveg első olvasásra érthető."
+            },
+            {
+              "points": "1",
+              "descriptor": "Sok hiba, a megértés helyenként nehéz."
+            },
+            {
+              "points": "0",
+              "descriptor": "A hibák miatt a szöveg nagyrészt nem érthető."
+            }
+          ]
+        }
+      ],
+      "rules": [
+        "Ha a szöveg 100 szónál rövidebb, a feladat teljesítése 0 pont (és így a feladat összesen 0 pont).",
+        "Ha a szöveg 375 szónál hosszabb, a feladat teljesítéséből 1 pontot le kell vonni."
+      ]
+    }
+  ],
+  "conversion": {
+    "method": "identity"
+  },
+  "generalRules": [
+    "Ha a dolgozat a feladat teljesítése szempontra 0 pontot kap, a többi szempont alapján nem értékelhető, a feladat összpontszáma 0.",
+    "A két feladat nyers pontja összeadva maga a vizsgapont (15 + 15 = 30), nincs átváltás.",
+    "A nyelvtani és helyesírási hibák súlyozása a szöveg hosszához igazodik.",
+    "Az íráskészség részben (és csak ott) nyomtatott szótár használható."
+  ]
+}

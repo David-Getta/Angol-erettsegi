@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { examConfig, levelStructure, WRITTEN_PARTS } from "@/lib/exam/config";
+import { configFor, examConfig, levelStructure, oralPart, writtenParts } from "@/lib/exam/config";
 import { minPointsFor } from "@/lib/scoring/exam";
 import { getSettings } from "@/lib/settings";
 import type { Level } from "@/lib/content/schema";
@@ -13,10 +13,13 @@ export const metadata: Metadata = { title: t.examInfo.title };
 function LevelInfo({ level }: { level: Level }) {
   const s = levelStructure(level);
   const grading = examConfig.grading();
-  const writing = examConfig.writingRubric(level);
-  const speaking = examConfig.speakingRubric(level);
-  const written = s.parts.filter((p) => WRITTEN_PARTS.includes(p.id));
-  const oralPart = s.parts.find((p) => p.id === "speaking");
+  const cfg = configFor(examConfig.subject().id);
+  const writing = cfg.hasRubric("writing", level) ? examConfig.writingRubric(level) : null;
+  const speaking = cfg.hasRubric("speaking", level) ? examConfig.speakingRubric(level) : null;
+  const written = writtenParts(level).filter((p) => p.maxPoints > 0);
+  const practiceOnly = writtenParts(level).filter((p) => p.maxPoints === 0);
+  const oral = oralPart(level);
+  const writtenApplies = grading.minPartAppliesTo.includes("written");
   const brk = s.breaks[0];
   return (
     <div className="space-y-5">
@@ -32,17 +35,27 @@ function LevelInfo({ level }: { level: Level }) {
               </tr>
             </thead>
             <tbody>
-              {[...written, ...(oralPart ? [oralPart] : [])].map((p) => (
+              {[...written, ...(oral ? [oral] : [])].map((p) => (
                 <tr key={p.id} className="border-t border-border">
                   <td className="py-1.5">
                     {p.name}
+                    {p.conditional && <Badge tone="accent">{t.examInfo.conditionalOral}</Badge>}
                     {p.notes.length > 0 && <span className="block text-xs text-muted">{p.notes.join(" ")}</span>}
+                    {p.conditional && <span className="block text-xs text-muted">{p.conditional.note}</span>}
                   </td>
                   <td className="py-1.5 text-right tabular-nums">{p.timeMin ? `${p.timeMin} ${t.examInfo.minutes}` : s.oral?.durationMin ? `~${s.oral.durationMin} ${t.examInfo.minutes}` : "–"}</td>
                   <td className="py-1.5 text-right tabular-nums">{p.maxPoints}</td>
-                  <td className="py-1.5 text-right tabular-nums">{minPointsFor(p.maxPoints, grading)}</td>
+                  <td className="py-1.5 text-right tabular-nums">{(grading.minPartAppliesTo as string[]).includes(p.id) ? minPointsFor(p.maxPoints, grading) : "–"}</td>
                 </tr>
               ))}
+              {writtenApplies && written.length > 1 && (
+                <tr className="border-t border-border text-muted">
+                  <td className="py-1.5">{t.mock.writtenTogether}</td>
+                  <td />
+                  <td className="py-1.5 text-right tabular-nums">{written.reduce((n, p) => n + p.maxPoints, 0)}</td>
+                  <td className="py-1.5 text-right tabular-nums">{minPointsFor(written.reduce((n, p) => n + p.maxPoints, 0), grading)}</td>
+                </tr>
+              )}
               <tr className="border-t border-border font-semibold">
                 <td className="py-1.5">{t.examInfo.total}</td>
                 <td />
@@ -53,6 +66,7 @@ function LevelInfo({ level }: { level: Level }) {
           </table>
         </div>
         {brk && <p className="mt-2 text-sm text-muted">{t.examInfo.break(brk.minutes)}</p>}
+        {practiceOnly.length > 0 && <p className="mt-2 text-sm text-muted">{t.examInfo.practiceOnly(practiceOnly.map((p) => p.name).join(", "))}</p>}
       </Card>
 
       {s.oral && (
@@ -68,7 +82,7 @@ function LevelInfo({ level }: { level: Level }) {
             </li>
           ))}
         </ol>
-        {speaking.officialScoring.length > 0 && (
+        {speaking && speaking.officialScoring.length > 0 && (
           <ul className="mt-3 list-disc space-y-1 pl-5 text-sm text-muted">
             {speaking.officialScoring.map((x) => (
               <li key={x}>{x}</li>
@@ -78,7 +92,8 @@ function LevelInfo({ level }: { level: Level }) {
       </Card>
       )}
 
-      <Card title={t.examInfo.writing}>
+      {writing && (
+      <Card title={written.find((p) => p.kind === "written")?.name ? `${written.find((p) => p.kind === "written")!.name} – pontozás` : t.examInfo.writing}>
         <div className="grid gap-4 md:grid-cols-2">
           {writing.tasks.map((task) => (
             <div key={task.taskNumber}>
@@ -116,6 +131,7 @@ function LevelInfo({ level }: { level: Level }) {
           </ul>
         )}
       </Card>
+      )}
     </div>
   );
 }
@@ -126,17 +142,17 @@ export default function ExamInfoPage() {
   const other: Level = level === "emelt" ? "kozep" : "emelt";
   return (
     <div>
-      <PageHeader title={t.examInfo.title} intro={t.examInfo.intro} />
+      <PageHeader title={t.examInfo.title} intro={t.examInfo.intro(examConfig.subject().name)} />
       <GuideLinks type="exam" title={t.guides.byPart} names={Object.fromEntries(levelStructure(level).parts.map((p) => [p.id, p.name]))} />
       <div className="grid grid-cols-1 gap-5 lg:grid-cols-[minmax(0,1fr)_320px]">
         <div className="min-w-0">
           <h2 className="mb-3 flex items-center gap-2 text-lg font-semibold">
-            {levelStructure(level).name} <Badge tone="accent">{levelStructure(level).cefr}</Badge>
+            {levelStructure(level).name} {levelStructure(level).cefr && <Badge tone="accent">{levelStructure(level).cefr}</Badge>}
           </h2>
           <LevelInfo level={level} />
           <details className="mt-6">
             <summary className="cursor-pointer text-lg font-semibold">
-              {levelStructure(other).name} <span className="text-sm font-normal text-muted">({levelStructure(other).cefr})</span>
+              {levelStructure(other).name} {levelStructure(other).cefr && <span className="text-sm font-normal text-muted">({levelStructure(other).cefr})</span>}
             </summary>
             <div className="mt-3">
               <LevelInfo level={other} />
@@ -163,9 +179,11 @@ export default function ExamInfoPage() {
               </div>
             ))}
           </Card>
-          <Card title={t.examInfo.langExam}>
-            <p className="text-sm">{grading.languageExamNote}</p>
-          </Card>
+          {grading.languageExamNote && (
+            <Card title={t.examInfo.langExam}>
+              <p className="text-sm">{grading.languageExamNote}</p>
+            </Card>
+          )}
           <Card title={t.examInfo.rules}>
             <p className="text-sm">{grading.minPartNote}</p>
           </Card>

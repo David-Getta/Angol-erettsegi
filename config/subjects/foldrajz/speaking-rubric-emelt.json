@@ -1,0 +1,213 @@
+{
+  "meta": {
+    "verifiedAt": "2026-11-05",
+    "sources": [
+      {
+        "title": "Oktatási Hivatal: Földrajz – részletes érettségi vizsgakövetelmény és vizsgaleírás (2024-től érvényes, Nat2020)",
+        "url": "https://www.oktatas.hu/pub_bin/dload/kozoktatas/erettsegi/vizsgakovetelmenyek2024/foldrajz_2024_e.pdf"
+      },
+      {
+        "title": "Eduline (2025. 05. 13.): Ezeket kell tudni a csütörtöki földrajzérettségiről – segédeszközök, pontozás (közép írásbeli 90 pont: topográfia 20 perc 20 pont + 100 perc 70 pont)",
+        "url": "https://eduline.hu/erettsegi-felveteli/20250513_minden-a-csoturtoki-foldrjazerettsegirol-segedeszkozok-pontozas-eddig-irhatjatok"
+      },
+      {
+        "title": "Eduline (2024. 05. 15.): Minden, amit a csütörtöki földrajzérettségiről tudni érdemes",
+        "url": "https://eduline.hu/erettsegi-felveteli/20240515_foldrajzerettsegi-tudnivalok-segedeszkozok-egy-helyen"
+      },
+      {
+        "title": "Oktatási Hivatal, Új Köznevelés (2022): Érettségi változások – Földrajz (20/70/90 pont, szóbeli A/B változat, 60 pont)",
+        "url": "https://www.oktatas.hu/pub_bin/dload/kozoktatas/uj_kozneveles/2022_2/UKN_2202_06_Erettsegi_valtozasok_Foldrajz.pdf"
+      },
+      {
+        "title": "GeoMetodika (2021): Megőrizve megújítani – a földrajz érettségi vizsga új vonásai (írásbeli 100 → 90 pont)",
+        "url": "https://geometodika.hu/megorizve-megujitani-a-foldrajz-erettsegi-vizsga-uj-vonasai/"
+      },
+      {
+        "title": "Eduline (2024. 12. 13.): Itt vannak a 2025-ös emelt szintű földrajzérettségi témakörei",
+        "url": "https://eduline.hu/erettsegi-felveteli/20241213_emelt-szintu-foldrajzerettsegi-tetelek-temakorok-2025"
+      },
+      {
+        "title": "Eduline (2026. 03. 14.): Érettségi 2026 – pontozási és osztályozási szabályok (közép 80/60/40/25 %, emelt 60/47/33/25 %, vizsgarészenként 12 %)",
+        "url": "https://eduline.hu/erettsegi-felveteli/20260314_erettsegi-2026-pontozas-osztalyozas"
+      }
+    ],
+    "notes": [
+      "50 pont ellenőrzött; a bontás (22 + 22 + 6) az app becslése.",
+      "Az ellenőrzés hírportál-cikkek (Eduline, Telex) és a hivatalos dokumentumok keresőben indexelt szövege alapján történt; az OH oldalát a futtató környezet hálózata nem engedte közvetlenül megnyitni – a hivatalos vizsgaleírással érdemes összevetni."
+    ]
+  },
+  "id": "speaking-emelt",
+  "level": "emelt",
+  "examMaxPoints": 50,
+  "tasks": [
+    {
+      "id": "termeszet",
+      "partNumber": 1,
+      "name": "Természetföldrajzi feladat",
+      "types": [
+        "termeszetfoldrajz-tetel"
+      ],
+      "criteria": [
+        {
+          "id": "tartalom",
+          "name": "Tartalom, összefüggések",
+          "description": "A természetföldrajzi téma folyamatai, összefüggései helyesen és teljesen.",
+          "max": 15,
+          "bands": [
+            {
+              "points": "15",
+              "descriptor": "Maradéktalanul teljesül: A természetföldrajzi téma folyamatai, összefüggései helyesen és teljesen."
+            },
+            {
+              "points": "11–14",
+              "descriptor": "Kisebb hiányosságokkal vagy pontatlanságokkal teljesül; a lényeg helyes."
+            },
+            {
+              "points": "7–10",
+              "descriptor": "Részben teljesül: több elem hiányzik, pontatlan vagy indoklás nélküli."
+            },
+            {
+              "points": "1–5",
+              "descriptor": "Alig teljesül: csak néhány helyes, odaillő elem van."
+            },
+            {
+              "points": "0",
+              "descriptor": "Nem teljesül, vagy nem értékelhető."
+            }
+          ]
+        },
+        {
+          "id": "topografia",
+          "name": "Topográfia, térképhasználat",
+          "description": "A téma térbeli elhelyezése, az atlasz szakszerű használata.",
+          "max": 7,
+          "bands": [
+            {
+              "points": "7",
+              "descriptor": "Maradéktalanul teljesül: A téma térbeli elhelyezése, az atlasz szakszerű használata."
+            },
+            {
+              "points": "5–6",
+              "descriptor": "Kisebb hiányosságokkal vagy pontatlanságokkal teljesül; a lényeg helyes."
+            },
+            {
+              "points": "3–4",
+              "descriptor": "Részben teljesül: több elem hiányzik, pontatlan vagy indoklás nélküli."
+            },
+            {
+              "points": "1–2",
+              "descriptor": "Alig teljesül: csak néhány helyes, odaillő elem van."
+            },
+            {
+              "points": "0",
+              "descriptor": "Nem teljesül, vagy nem értékelhető."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "tarsadalom",
+      "partNumber": 2,
+      "name": "Társadalomföldrajzi feladat",
+      "types": [
+        "tarsadalomfoldrajz-tetel"
+      ],
+      "criteria": [
+        {
+          "id": "tartalom",
+          "name": "Tartalom, összefüggések",
+          "description": "A társadalom-/gazdaságföldrajzi téma folyamatai, összefüggései, példái.",
+          "max": 15,
+          "bands": [
+            {
+              "points": "15",
+              "descriptor": "Maradéktalanul teljesül: A társadalom-/gazdaságföldrajzi téma folyamatai, összefüggései, példái."
+            },
+            {
+              "points": "11–14",
+              "descriptor": "Kisebb hiányosságokkal vagy pontatlanságokkal teljesül; a lényeg helyes."
+            },
+            {
+              "points": "7–10",
+              "descriptor": "Részben teljesül: több elem hiányzik, pontatlan vagy indoklás nélküli."
+            },
+            {
+              "points": "1–5",
+              "descriptor": "Alig teljesül: csak néhány helyes, odaillő elem van."
+            },
+            {
+              "points": "0",
+              "descriptor": "Nem teljesül, vagy nem értékelhető."
+            }
+          ]
+        },
+        {
+          "id": "topografia",
+          "name": "Topográfia, térképhasználat",
+          "description": "A téma térbeli elhelyezése, az atlasz szakszerű használata.",
+          "max": 7,
+          "bands": [
+            {
+              "points": "7",
+              "descriptor": "Maradéktalanul teljesül: A téma térbeli elhelyezése, az atlasz szakszerű használata."
+            },
+            {
+              "points": "5–6",
+              "descriptor": "Kisebb hiányosságokkal vagy pontatlanságokkal teljesül; a lényeg helyes."
+            },
+            {
+              "points": "3–4",
+              "descriptor": "Részben teljesül: több elem hiányzik, pontatlan vagy indoklás nélküli."
+            },
+            {
+              "points": "1–2",
+              "descriptor": "Alig teljesül: csak néhány helyes, odaillő elem van."
+            },
+            {
+              "points": "0",
+              "descriptor": "Nem teljesül, vagy nem értékelhető."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "overall": [
+    {
+      "id": "felepites",
+      "name": "A felelet felépítése, szaknyelv",
+      "description": "Logikus, önálló előadás, pontos szaknyelv.",
+      "max": 6,
+      "bands": [
+        {
+          "points": "6",
+          "descriptor": "Maradéktalanul teljesül: Logikus, önálló előadás, pontos szaknyelv."
+        },
+        {
+          "points": "5",
+          "descriptor": "Kisebb hiányosságokkal vagy pontatlanságokkal teljesül; a lényeg helyes."
+        },
+        {
+          "points": "3–4",
+          "descriptor": "Részben teljesül: több elem hiányzik, pontatlan vagy indoklás nélküli."
+        },
+        {
+          "points": "1–2",
+          "descriptor": "Alig teljesül: csak néhány helyes, odaillő elem van."
+        },
+        {
+          "points": "0",
+          "descriptor": "Nem teljesül, vagy nem értékelhető."
+        }
+      ]
+    }
+  ],
+  "conversion": {
+    "method": "identity"
+  },
+  "officialScoring": [
+    "Emelt szóbeli: 20 perc, 50 pont, központi tételsor; atlasz használható."
+  ],
+  "generalRules": []
+}

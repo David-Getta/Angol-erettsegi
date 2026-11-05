@@ -1,0 +1,291 @@
+{
+  "meta": {
+    "verifiedAt": "2026-11-05",
+    "sources": [
+      {
+        "title": "Oktatási Hivatal: Kémia – részletes érettségi vizsgakövetelmény és vizsgaleírás (2024-től érvényes, Nat2020)",
+        "url": "https://www.oktatas.hu/pub_bin/dload/kozoktatas/erettsegi/vizsgakovetelmenyek2024/kemia_2024_e.pdf"
+      },
+      {
+        "title": "Eduline (2025. 05. 14.): Minden, amit a kémiaérettségiről tudni kell – pontozás, témakörök (közép 150 perc, 100 pont; emelt 240 perc)",
+        "url": "https://eduline.hu/erettsegi-felveteli/20250514_kemiaerettsegi-minden-amit-tudni-kell-pontozas-temakorok"
+      },
+      {
+        "title": "Eduline (2024. 05. 14.): Minden, amit a csütörtöki kémiaérettségiről tudni kell",
+        "url": "https://eduline.hu/erettsegi-felveteli/20240514_kemia-erettsegi-kozepszint-emelt-szint-tudnivalok"
+      },
+      {
+        "title": "kemiaerettsegi.hu: Szóbeli vizsgarész (közép: A téma 25 + B kísérlet 15 + szaknyelv 5 + segédeszközök 5)",
+        "url": "https://kemiaerettsegi.hu/szobeli.html"
+      },
+      {
+        "title": "kemiaerettsegi.hu: Középszintű javítási-értékelési útmutató, 2024. május (K2412)",
+        "url": "https://kemiaerettsegi.hu/dl/mo2024maj.pdf"
+      },
+      {
+        "title": "Eduline (2024. 04. 11.): Ilyenek lesznek az idei emelt kémia érettségi szóbeli A és C feladatainak témakörei",
+        "url": "https://eduline.hu/erettsegi-felveteli/20240411_erettsegi-2024-emelt-kemia-szobeli-feladatkorok"
+      },
+      {
+        "title": "Eduline (2026. 03. 14.): Érettségi 2026 – pontozási és osztályozási szabályok (közép 80/60/40/25 %, emelt 60/47/33/25 %, vizsgarészenként 12 %)",
+        "url": "https://eduline.hu/erettsegi-felveteli/20260314_erettsegi-2026-pontozas-osztalyozas"
+      }
+    ],
+    "notes": [
+      "Ellenőrzött: A 25 + B 10 + C 10 + nyelvezet és segédeszközök 5; a 3 + 2 bontás 2018-as Eduline-cikkből.",
+      "Az ellenőrzés hírportál-cikkek (Eduline, Telex) és a hivatalos dokumentumok keresőben indexelt szövege alapján történt; az OH oldalát a futtató környezet hálózata nem engedte közvetlenül megnyitni – a hivatalos vizsgaleírással érdemes összevetni."
+    ]
+  },
+  "id": "speaking-emelt",
+  "level": "emelt",
+  "examMaxPoints": 50,
+  "tasks": [
+    {
+      "id": "a-tetel",
+      "partNumber": 1,
+      "name": "A) Témakifejtés",
+      "types": [
+        "a-tetel"
+      ],
+      "criteria": [
+        {
+          "id": "tartalom",
+          "name": "Tartalmi pontosság, teljesség",
+          "description": "A téma lényeges elemei helyesen és teljesen.",
+          "max": 18,
+          "bands": [
+            {
+              "points": "18",
+              "descriptor": "Maradéktalanul teljesül: A téma lényeges elemei helyesen és teljesen."
+            },
+            {
+              "points": "13–17",
+              "descriptor": "Kisebb hiányosságokkal vagy pontatlanságokkal teljesül; a lényeg helyes."
+            },
+            {
+              "points": "8–12",
+              "descriptor": "Részben teljesül: több elem hiányzik, pontatlan vagy indoklás nélküli."
+            },
+            {
+              "points": "1–7",
+              "descriptor": "Alig teljesül: csak néhány helyes, odaillő elem van."
+            },
+            {
+              "points": "0",
+              "descriptor": "Nem teljesül, vagy nem értékelhető."
+            }
+          ]
+        },
+        {
+          "id": "osszefugges",
+          "name": "Összefüggések, példák, egyenletek",
+          "description": "Szerkezet–tulajdonság összefüggések, példák, egyenletek.",
+          "max": 7,
+          "bands": [
+            {
+              "points": "7",
+              "descriptor": "Maradéktalanul teljesül: Szerkezet–tulajdonság összefüggések, példák, egyenletek."
+            },
+            {
+              "points": "5–6",
+              "descriptor": "Kisebb hiányosságokkal vagy pontatlanságokkal teljesül; a lényeg helyes."
+            },
+            {
+              "points": "3–4",
+              "descriptor": "Részben teljesül: több elem hiányzik, pontatlan vagy indoklás nélküli."
+            },
+            {
+              "points": "1–2",
+              "descriptor": "Alig teljesül: csak néhány helyes, odaillő elem van."
+            },
+            {
+              "points": "0",
+              "descriptor": "Nem teljesül, vagy nem értékelhető."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "b-tetel",
+      "partNumber": 2,
+      "name": "B) Kísérlet",
+      "types": [
+        "b-tetel"
+      ],
+      "criteria": [
+        {
+          "id": "tapasztalat",
+          "name": "Kivitelezés, tapasztalat",
+          "description": "A kísérlet szakszerű menete, a tapasztalat helyes leírása.",
+          "max": 5,
+          "bands": [
+            {
+              "points": "5",
+              "descriptor": "Maradéktalanul teljesül: A kísérlet szakszerű menete, a tapasztalat helyes leírása."
+            },
+            {
+              "points": "4",
+              "descriptor": "Kisebb hiányosságokkal vagy pontatlanságokkal teljesül; a lényeg helyes."
+            },
+            {
+              "points": "3",
+              "descriptor": "Részben teljesül: több elem hiányzik, pontatlan vagy indoklás nélküli."
+            },
+            {
+              "points": "2",
+              "descriptor": "Alig teljesül: csak néhány helyes, odaillő elem van."
+            },
+            {
+              "points": "0",
+              "descriptor": "Nem teljesül, vagy nem értékelhető."
+            }
+          ]
+        },
+        {
+          "id": "magyarazat",
+          "name": "Magyarázat, egyenlet",
+          "description": "A tapasztalat kémiai magyarázata egyenlettel.",
+          "max": 5,
+          "bands": [
+            {
+              "points": "5",
+              "descriptor": "Maradéktalanul teljesül: A tapasztalat kémiai magyarázata egyenlettel."
+            },
+            {
+              "points": "4",
+              "descriptor": "Kisebb hiányosságokkal vagy pontatlanságokkal teljesül; a lényeg helyes."
+            },
+            {
+              "points": "3",
+              "descriptor": "Részben teljesül: több elem hiányzik, pontatlan vagy indoklás nélküli."
+            },
+            {
+              "points": "2",
+              "descriptor": "Alig teljesül: csak néhány helyes, odaillő elem van."
+            },
+            {
+              "points": "0",
+              "descriptor": "Nem teljesül, vagy nem értékelhető."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "c-tetel",
+      "partNumber": 3,
+      "name": "C) Problémamegoldó feladat",
+      "types": [
+        "c-tetel"
+      ],
+      "criteria": [
+        {
+          "id": "megoldas",
+          "name": "A probléma megoldása",
+          "description": "Helyes gondolatmenet és eredmény.",
+          "max": 7,
+          "bands": [
+            {
+              "points": "7",
+              "descriptor": "Maradéktalanul teljesül: Helyes gondolatmenet és eredmény."
+            },
+            {
+              "points": "5–6",
+              "descriptor": "Kisebb hiányosságokkal vagy pontatlanságokkal teljesül; a lényeg helyes."
+            },
+            {
+              "points": "3–4",
+              "descriptor": "Részben teljesül: több elem hiányzik, pontatlan vagy indoklás nélküli."
+            },
+            {
+              "points": "1–2",
+              "descriptor": "Alig teljesül: csak néhány helyes, odaillő elem van."
+            },
+            {
+              "points": "0",
+              "descriptor": "Nem teljesül, vagy nem értékelhető."
+            }
+          ]
+        },
+        {
+          "id": "indoklas",
+          "name": "Indoklás",
+          "description": "A lépések kémiai indoklása.",
+          "max": 3,
+          "bands": [
+            {
+              "points": "3",
+              "descriptor": "Maradéktalanul teljesül: A lépések kémiai indoklása."
+            },
+            {
+              "points": "2",
+              "descriptor": "Részben teljesül: több elem hiányzik, pontatlan vagy indoklás nélküli."
+            },
+            {
+              "points": "1",
+              "descriptor": "Alig teljesül: csak néhány helyes, odaillő elem van."
+            },
+            {
+              "points": "0",
+              "descriptor": "Nem teljesül, vagy nem értékelhető."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "overall": [
+    {
+      "id": "szaknyelv",
+      "name": "Szakmai nyelvezet",
+      "description": "Pontos szakkifejezések és jelölések.",
+      "max": 3,
+      "bands": [
+        {
+          "points": "3",
+          "descriptor": "Maradéktalanul teljesül: Pontos szakkifejezések és jelölések."
+        },
+        {
+          "points": "2",
+          "descriptor": "Részben teljesül: több elem hiányzik, pontatlan vagy indoklás nélküli."
+        },
+        {
+          "points": "1",
+          "descriptor": "Alig teljesül: csak néhány helyes, odaillő elem van."
+        },
+        {
+          "points": "0",
+          "descriptor": "Nem teljesül, vagy nem értékelhető."
+        }
+      ]
+    },
+    {
+      "id": "segedeszkoz",
+      "name": "Segédeszközök használata",
+      "description": "Periódusos rendszer, modellek szakszerű használata.",
+      "max": 2,
+      "bands": [
+        {
+          "points": "2",
+          "descriptor": "Maradéktalanul teljesül: Periódusos rendszer, modellek szakszerű használata."
+        },
+        {
+          "points": "1",
+          "descriptor": "Részben teljesül: több elem hiányzik, pontatlan vagy indoklás nélküli."
+        },
+        {
+          "points": "0",
+          "descriptor": "Nem teljesül, vagy nem értékelhető."
+        }
+      ]
+    }
+  ],
+  "conversion": {
+    "method": "identity"
+  },
+  "officialScoring": [
+    "Emelt szóbeli: 20 perc, 50 pont = A 25 + B 10 + C 10 + 5; központi tételsor, a kísérletet a bizottság előtt kell elvégezni."
+  ],
+  "generalRules": []
+}

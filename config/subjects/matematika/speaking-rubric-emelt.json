@@ -1,0 +1,227 @@
+{
+  "meta": {
+    "verifiedAt": "2026-11-05",
+    "sources": [
+      {
+        "title": "Oktatási Hivatal: Matematika – részletes érettségi vizsgakövetelmény és vizsgaleírás (2024-től érvényes, Nat2020)",
+        "url": "https://www.oktatas.hu/pub_bin/dload/kozoktatas/erettsegi/vizsgakovetelmenyek2024/matematika_2024_e.pdf"
+      },
+      {
+        "title": "Eduline (2025. 04. 28.): Így pontozzák a középszintű matekérettségit (I. rész 45 perc/30 pont, II/A 3 feladat, II/B 3×17 pont – 2 választandó)",
+        "url": "https://eduline.hu/erettsegi-felveteli/20250428_Matekerettsegi-2025-pontozas-feladatok"
+      },
+      {
+        "title": "Eduline (2024. 05. 14.): Mikor kell szóban is érettségizni matekból? (12–24,99 % között; 50 pont = 15 + 30 + 5)",
+        "url": "https://eduline.hu/erettsegi-felveteli/20240514_szobeli-kozepszintu-matekerettsegi-mikor"
+      },
+      {
+        "title": "Eduline (2025. 06. 02.): Hány percesek és hány pontosak a szóbeli érettségik közép- és emelt szinten? (emelt matek szóbeli 20 perc, 35 pont)",
+        "url": "https://eduline.hu/erettsegi-felveteli/20250602_hany-perc-hany-pont-szobeli-erettsegi-kozep-emelt-szint"
+      },
+      {
+        "title": "Eduline (2022. 05. 02.): Itt van minden, amit az emelt matekérettségiről tudnotok kell (240 perc, I. rész 4 feladat 51 pont, II. rész 5-ből 4 × 16 pont)",
+        "url": "https://eduline.hu/erettsegi-felveteli/20220502_emelt-matek-osszefoglalo"
+      },
+      {
+        "title": "Eduline (2019. 11. 12.): Véget értek az emelt szintű szóbelik – így pontozzák (emelt matek szóbeli 35 pont bontása)",
+        "url": "https://eduline.hu/erettsegi-felveteli/20191112_oszi-erettsegi-szobelik-pontozas"
+      },
+      {
+        "title": "Eduline (2024. 03. 27.): Grafikonon mutatjuk, hogyan változnak a matekérettségi témaköreinek arányai (Nat2020 témakörök és súlyok)",
+        "url": "https://eduline.hu/erettsegi-felveteli/20240327_matekerettsegi-temakorok-valtozasok-2024"
+      },
+      {
+        "title": "Oktatási Hivatal: Középszintű matematika javítási-értékelési útmutató, 2025. október – általános javítási elvek (tükörmásolat)",
+        "url": "https://www.mateking.hu/sites/mp/files/uploads/k_mat_25okt_ut.pdf"
+      },
+      {
+        "title": "Eduline (2026. 03. 14.): Érettségi 2026 – pontozási és osztályozási szabályok (közép 80/60/40/25 %, emelt 60/47/33/25 %, vizsgarészenként 12 %)",
+        "url": "https://eduline.hu/erettsegi-felveteli/20260314_erettsegi-2026-pontozas-osztalyozas"
+      }
+    ],
+    "notes": [
+      "35 pont (Eduline 2025); a bontás (felépítés/tartalom 10, definíció 2, tétel és bizonyítás 6, feladat 8, alkalmazás 4, nyelvhasználat 5) az Eduline 2019-es összefoglalójából származik – a Nat2020 szerinti hivatalos szóbeli értékelési útmutatóval érdemes összevetni.",
+      "Az ellenőrzés hírportál-cikkek (Eduline, Telex) és a hivatalos dokumentumok keresőben indexelt szövege alapján történt; az OH oldalát a futtató környezet hálózata nem engedte közvetlenül megnyitni – a hivatalos vizsgaleírással érdemes összevetni."
+    ]
+  },
+  "id": "speaking-emelt",
+  "level": "emelt",
+  "examMaxPoints": 35,
+  "tasks": [
+    {
+      "id": "tetel",
+      "partNumber": 1,
+      "name": "Tétel",
+      "types": [
+        "tetel"
+      ],
+      "criteria": [
+        {
+          "id": "felepites",
+          "name": "A tétel felépítése, tartalma",
+          "description": "A tételcím minden lényeges elemét (fogalmak, összefüggések, példák) logikus rendben, teljesen fejti ki.",
+          "max": 10,
+          "bands": [
+            {
+              "points": "10",
+              "descriptor": "Maradéktalanul teljesül: A tételcím minden lényeges elemét (fogalmak, összefüggések, példák) logikus rendben, teljesen fejti ki."
+            },
+            {
+              "points": "8–9",
+              "descriptor": "Kisebb hiányosságokkal vagy pontatlanságokkal teljesül; a lényeg helyes."
+            },
+            {
+              "points": "5–6",
+              "descriptor": "Részben teljesül: több elem hiányzik, pontatlan vagy indoklás nélküli."
+            },
+            {
+              "points": "1–3",
+              "descriptor": "Alig teljesül: csak néhány helyes, odaillő elem van."
+            },
+            {
+              "points": "0",
+              "descriptor": "Nem teljesül, vagy nem értékelhető."
+            }
+          ]
+        },
+        {
+          "id": "definicio",
+          "name": "Definíció",
+          "description": "A kért definíció pontos kimondása.",
+          "max": 2,
+          "bands": [
+            {
+              "points": "2",
+              "descriptor": "Maradéktalanul teljesül: A kért definíció pontos kimondása."
+            },
+            {
+              "points": "1",
+              "descriptor": "Részben teljesül: több elem hiányzik, pontatlan vagy indoklás nélküli."
+            },
+            {
+              "points": "0",
+              "descriptor": "Nem teljesül, vagy nem értékelhető."
+            }
+          ]
+        },
+        {
+          "id": "tetel-bizonyitas",
+          "name": "Tétel kimondása és bizonyítása",
+          "description": "A tétel pontos kimondása a feltételekkel, és teljes, indokolt bizonyítás.",
+          "max": 6,
+          "bands": [
+            {
+              "points": "6",
+              "descriptor": "Maradéktalanul teljesül: A tétel pontos kimondása a feltételekkel, és teljes, indokolt bizonyítás."
+            },
+            {
+              "points": "5",
+              "descriptor": "Kisebb hiányosságokkal vagy pontatlanságokkal teljesül; a lényeg helyes."
+            },
+            {
+              "points": "3–4",
+              "descriptor": "Részben teljesül: több elem hiányzik, pontatlan vagy indoklás nélküli."
+            },
+            {
+              "points": "1–2",
+              "descriptor": "Alig teljesül: csak néhány helyes, odaillő elem van."
+            },
+            {
+              "points": "0",
+              "descriptor": "Nem teljesül, vagy nem értékelhető."
+            }
+          ]
+        },
+        {
+          "id": "feladat",
+          "name": "Feladat megoldása",
+          "description": "A tételhez tartozó feladat helyes, indokolt megoldása.",
+          "max": 8,
+          "bands": [
+            {
+              "points": "8",
+              "descriptor": "Maradéktalanul teljesül: A tételhez tartozó feladat helyes, indokolt megoldása."
+            },
+            {
+              "points": "6–7",
+              "descriptor": "Kisebb hiányosságokkal vagy pontatlanságokkal teljesül; a lényeg helyes."
+            },
+            {
+              "points": "4–5",
+              "descriptor": "Részben teljesül: több elem hiányzik, pontatlan vagy indoklás nélküli."
+            },
+            {
+              "points": "1–3",
+              "descriptor": "Alig teljesül: csak néhány helyes, odaillő elem van."
+            },
+            {
+              "points": "0",
+              "descriptor": "Nem teljesül, vagy nem értékelhető."
+            }
+          ]
+        },
+        {
+          "id": "alkalmazas",
+          "name": "Alkalmazások",
+          "description": "A tétel alkalmazásai, kapcsolata más témakörökkel, gyakorlati példák.",
+          "max": 4,
+          "bands": [
+            {
+              "points": "4",
+              "descriptor": "Maradéktalanul teljesül: A tétel alkalmazásai, kapcsolata más témakörökkel, gyakorlati példák."
+            },
+            {
+              "points": "3",
+              "descriptor": "Kisebb hiányosságokkal vagy pontatlanságokkal teljesül; a lényeg helyes."
+            },
+            {
+              "points": "2",
+              "descriptor": "Részben teljesül: több elem hiányzik, pontatlan vagy indoklás nélküli."
+            },
+            {
+              "points": "0",
+              "descriptor": "Nem teljesül, vagy nem értékelhető."
+            }
+          ]
+        },
+        {
+          "id": "nyelvhasznalat",
+          "name": "Matematikai nyelvhasználat, kommunikáció",
+          "description": "Pontos szaknyelv, jelölések, érthető, önálló előadás.",
+          "max": 5,
+          "bands": [
+            {
+              "points": "5",
+              "descriptor": "Maradéktalanul teljesül: Pontos szaknyelv, jelölések, érthető, önálló előadás."
+            },
+            {
+              "points": "4",
+              "descriptor": "Kisebb hiányosságokkal vagy pontatlanságokkal teljesül; a lényeg helyes."
+            },
+            {
+              "points": "3",
+              "descriptor": "Részben teljesül: több elem hiányzik, pontatlan vagy indoklás nélküli."
+            },
+            {
+              "points": "2",
+              "descriptor": "Alig teljesül: csak néhány helyes, odaillő elem van."
+            },
+            {
+              "points": "0",
+              "descriptor": "Nem teljesül, vagy nem értékelhető."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "overall": [],
+  "conversion": {
+    "method": "identity"
+  },
+  "officialScoring": [
+    "Emelt szinten a szóbeli mindenkinek kötelező: 20 perc felelet, 30 perc felkészülés, 35 pont.",
+    "A tételcímeket (25) az OH minden évben előre közzéteszi."
+  ],
+  "generalRules": []
+}

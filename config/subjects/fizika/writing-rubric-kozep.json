@@ -1,0 +1,336 @@
+{
+  "meta": {
+    "verifiedAt": "2026-11-05",
+    "sources": [
+      {
+        "title": "Oktatási Hivatal: Fizika – részletes érettségi vizsgakövetelmény és vizsgaleírás (2024-től érvényes, Nat2020)",
+        "url": "https://www.oktatas.hu/pub_bin/dload/kozoktatas/erettsegi/vizsgakovetelmenyek2024/fizika_2024_e.pdf"
+      },
+      {
+        "title": "Eduline (2026. 05. 19.): Minden, amit a keddi fizikaérettségiről tudni kell (közép 150 perc: 20 feleletválasztós × 2 pont + 4-ből 3 összetett feladat; szóbeli 60 pont, kísérlet)",
+        "url": "https://eduline.hu/erettsegi-felveteli/20260519_fizikaerettsegi-2026-minden-fontos-tudnivalo"
+      },
+      {
+        "title": "Fizikatanárok: Emelt szintű fizika javítási-értékelési útmutató, 2024. május (E2412) – pontösszesítő: I. 30, II. 18 + 5, III. 47",
+        "url": "https://www.fizikatanarok.hu/media/uploads/Fizika_erettsegi/Emelt/e_fiz_24maj_ut.pdf"
+      },
+      {
+        "title": "Eduline (2024. 12. 23.): Itt vannak a 2025-ös emelt szintű fizika érettségi témakörei és mérési feladatai",
+        "url": "https://eduline.hu/erettsegi-felveteli/20241223_emelt-szintu-fizika-erettsegi-szobeli-temakorok-meresi-feladatok-2025"
+      },
+      {
+        "title": "Vidra Gábor: Fizika Nat2020-as érettségi követelmények – témakörök és súlyok",
+        "url": "https://www.vidra-gabor.hu/kovetelmenyek.php"
+      },
+      {
+        "title": "Eduline (2019. 05. 20.): Ilyen lesz a szóbeli érettségi fizikából (tartalom 45 + felépítés 5 emelten)",
+        "url": "https://eduline.hu/erettsegi-felveteli/20190520_fizikaerettsegi-szobeli-kozep-es-emelt-szinten"
+      },
+      {
+        "title": "Eduline (2026. 03. 14.): Érettségi 2026 – pontozási és osztályozási szabályok (közép 80/60/40/25 %, emelt 60/47/33/25 %, vizsgarészenként 12 %)",
+        "url": "https://eduline.hu/erettsegi-felveteli/20260314_erettsegi-2026-pontozas-osztalyozas"
+      }
+    ],
+    "notes": [
+      "A három összetett feladat pontszáma (17 / 17 / 16 = 50) az app felosztása; a hivatalos útmutató feladatonként ad részpontozást.",
+      "Az ellenőrzés hírportál-cikkek (Eduline, Telex) és a hivatalos dokumentumok keresőben indexelt szövege alapján történt; az OH oldalát a futtató környezet hálózata nem engedte közvetlenül megnyitni – a hivatalos vizsgaleírással érdemes összevetni."
+    ]
+  },
+  "id": "writing-kozep",
+  "level": "kozep",
+  "examMaxPoints": 50,
+  "tasks": [
+    {
+      "taskNumber": 1,
+      "name": "Számításos feladat",
+      "textTypes": [
+        "szamitasos"
+      ],
+      "guidingPoints": "3–4 részfeladat",
+      "suggestedMinutes": 35,
+      "maxRaw": 17,
+      "criteria": [
+        {
+          "id": "eredmeny",
+          "name": "Helyes megoldás, részeredmények",
+          "description": "A végeredmény és a részfeladatok eredménye helyes; a hibás részeredményt tovább vivő, egyébként jó gondolatmenet részpontot kap.",
+          "max": 8,
+          "bands": [
+            {
+              "points": "8",
+              "descriptor": "Minden részfeladat eredménye helyes."
+            },
+            {
+              "points": "6–7",
+              "descriptor": "A részfeladatok többsége helyes, egy számolási hiba miatt téves végeredmény."
+            },
+            {
+              "points": "4–5",
+              "descriptor": "A részfeladatok fele helyes, vagy a gondolatmenet jó, de több eredmény hibás."
+            },
+            {
+              "points": "1–3",
+              "descriptor": "Csak egy-két részeredmény helyes."
+            },
+            {
+              "points": "0",
+              "descriptor": "Nincs helyes (rész)eredmény."
+            }
+          ]
+        },
+        {
+          "id": "indoklas",
+          "name": "A megoldás menete, indoklás",
+          "description": "A lépések követhetők és indokoltak: a felhasznált összefüggés, tétel vagy képlet leírva, a lépések logikusan egymásra épülnek.",
+          "max": 4,
+          "bands": [
+            {
+              "points": "4",
+              "descriptor": "Minden lépés leírva és indokolva, a felhasznált összefüggések megnevezve."
+            },
+            {
+              "points": "3",
+              "descriptor": "A gondolatmenet követhető, egy-két indoklás hiányzik."
+            },
+            {
+              "points": "2",
+              "descriptor": "A lépések csak részben követhetők, több indoklás hiányzik."
+            },
+            {
+              "points": "0",
+              "descriptor": "Nincs értékelhető gondolatmenet."
+            }
+          ]
+        },
+        {
+          "id": "szamolas",
+          "name": "Számolási pontosság, átalakítások",
+          "description": "Számolások, algebrai átalakítások, egységátváltások hibátlanok; a kerekítés a feladat szerint történik.",
+          "max": 3,
+          "bands": [
+            {
+              "points": "3",
+              "descriptor": "Hibátlan számolás és átalakítás."
+            },
+            {
+              "points": "2",
+              "descriptor": "Több számolási hiba, de a módszer helyes."
+            },
+            {
+              "points": "1",
+              "descriptor": "Sok hiba, az eredmények emiatt rosszak."
+            },
+            {
+              "points": "0",
+              "descriptor": "A számolások használhatatlanok."
+            }
+          ]
+        },
+        {
+          "id": "forma",
+          "name": "Válasz, mértékegység, ellenőrzés",
+          "description": "A kérdésre szöveges válasz született, mértékegységgel; ahol kell, ellenőrzés vagy az értelmezési tartomány vizsgálata.",
+          "max": 2,
+          "bands": [
+            {
+              "points": "2",
+              "descriptor": "Szöveges válasz, mértékegység és (ahol kell) ellenőrzés mind megvan."
+            },
+            {
+              "points": "1",
+              "descriptor": "Hiányzik a válasz és az ellenőrzés is."
+            },
+            {
+              "points": "0",
+              "descriptor": "Nincs válasz."
+            }
+          ]
+        }
+      ],
+      "rules": []
+    },
+    {
+      "taskNumber": 2,
+      "name": "Forráselemzés",
+      "textTypes": [
+        "forraselemzes"
+      ],
+      "guidingPoints": "4–6 kérdés",
+      "suggestedMinutes": 35,
+      "maxRaw": 17,
+      "criteria": [
+        {
+          "id": "valaszok",
+          "name": "A kérdésekre adott válaszok helyessége",
+          "description": "A forrás (szöveg, ábra, grafikon, táblázat) alapján feltett kérdések helyes, teljes megválaszolása.",
+          "max": 10,
+          "bands": [
+            {
+              "points": "10",
+              "descriptor": "Maradéktalanul teljesül: A forrás (szöveg, ábra, grafikon, táblázat) alapján feltett kérdések helyes, teljes megválaszolása."
+            },
+            {
+              "points": "8–9",
+              "descriptor": "Kisebb hiányosságokkal vagy pontatlanságokkal teljesül; a lényeg helyes."
+            },
+            {
+              "points": "5–6",
+              "descriptor": "Részben teljesül: több elem hiányzik, pontatlan vagy indoklás nélküli."
+            },
+            {
+              "points": "1–3",
+              "descriptor": "Alig teljesül: csak néhány helyes, odaillő elem van."
+            },
+            {
+              "points": "0",
+              "descriptor": "Nem teljesül, vagy nem értékelhető."
+            }
+          ]
+        },
+        {
+          "id": "indoklas",
+          "name": "Fizikai indoklás, összefüggések",
+          "description": "A válaszokat fizikai törvényekkel, összefüggésekkel indokolja; a forrás adatait helyesen használja.",
+          "max": 4,
+          "bands": [
+            {
+              "points": "4",
+              "descriptor": "Maradéktalanul teljesül: A válaszokat fizikai törvényekkel, összefüggésekkel indokolja; a forrás adatait helyesen használja."
+            },
+            {
+              "points": "3",
+              "descriptor": "Kisebb hiányosságokkal vagy pontatlanságokkal teljesül; a lényeg helyes."
+            },
+            {
+              "points": "2",
+              "descriptor": "Részben teljesül: több elem hiányzik, pontatlan vagy indoklás nélküli."
+            },
+            {
+              "points": "0",
+              "descriptor": "Nem teljesül, vagy nem értékelhető."
+            }
+          ]
+        },
+        {
+          "id": "szaknyelv",
+          "name": "Szaknyelv, mennyiségek, mértékegységek",
+          "description": "Pontos szakkifejezések, helyes mennyiségek és mértékegységek.",
+          "max": 3,
+          "bands": [
+            {
+              "points": "3",
+              "descriptor": "Maradéktalanul teljesül: Pontos szakkifejezések, helyes mennyiségek és mértékegységek."
+            },
+            {
+              "points": "2",
+              "descriptor": "Részben teljesül: több elem hiányzik, pontatlan vagy indoklás nélküli."
+            },
+            {
+              "points": "1",
+              "descriptor": "Alig teljesül: csak néhány helyes, odaillő elem van."
+            },
+            {
+              "points": "0",
+              "descriptor": "Nem teljesül, vagy nem értékelhető."
+            }
+          ]
+        }
+      ],
+      "rules": []
+    },
+    {
+      "taskNumber": 3,
+      "name": "Jelenségértelmezés vagy méréselemzés",
+      "textTypes": [
+        "jelensegertelmezes",
+        "mereselemzes"
+      ],
+      "guidingPoints": "3–5 kérdés",
+      "suggestedMinutes": 35,
+      "maxRaw": 16,
+      "criteria": [
+        {
+          "id": "valaszok",
+          "name": "A kérdésekre adott válaszok helyessége",
+          "description": "A forrás (szöveg, ábra, grafikon, táblázat) alapján feltett kérdések helyes, teljes megválaszolása.",
+          "max": 10,
+          "bands": [
+            {
+              "points": "10",
+              "descriptor": "Maradéktalanul teljesül: A forrás (szöveg, ábra, grafikon, táblázat) alapján feltett kérdések helyes, teljes megválaszolása."
+            },
+            {
+              "points": "8–9",
+              "descriptor": "Kisebb hiányosságokkal vagy pontatlanságokkal teljesül; a lényeg helyes."
+            },
+            {
+              "points": "5–6",
+              "descriptor": "Részben teljesül: több elem hiányzik, pontatlan vagy indoklás nélküli."
+            },
+            {
+              "points": "1–3",
+              "descriptor": "Alig teljesül: csak néhány helyes, odaillő elem van."
+            },
+            {
+              "points": "0",
+              "descriptor": "Nem teljesül, vagy nem értékelhető."
+            }
+          ]
+        },
+        {
+          "id": "indoklas",
+          "name": "Fizikai indoklás, összefüggések",
+          "description": "A válaszokat fizikai törvényekkel, összefüggésekkel indokolja; a forrás adatait helyesen használja.",
+          "max": 4,
+          "bands": [
+            {
+              "points": "4",
+              "descriptor": "Maradéktalanul teljesül: A válaszokat fizikai törvényekkel, összefüggésekkel indokolja; a forrás adatait helyesen használja."
+            },
+            {
+              "points": "3",
+              "descriptor": "Kisebb hiányosságokkal vagy pontatlanságokkal teljesül; a lényeg helyes."
+            },
+            {
+              "points": "2",
+              "descriptor": "Részben teljesül: több elem hiányzik, pontatlan vagy indoklás nélküli."
+            },
+            {
+              "points": "0",
+              "descriptor": "Nem teljesül, vagy nem értékelhető."
+            }
+          ]
+        },
+        {
+          "id": "szaknyelv",
+          "name": "Szaknyelv, mennyiségek, mértékegységek",
+          "description": "Pontos szakkifejezések, helyes mennyiségek és mértékegységek.",
+          "max": 2,
+          "bands": [
+            {
+              "points": "2",
+              "descriptor": "Maradéktalanul teljesül: Pontos szakkifejezések, helyes mennyiségek és mértékegységek."
+            },
+            {
+              "points": "1",
+              "descriptor": "Részben teljesül: több elem hiányzik, pontatlan vagy indoklás nélküli."
+            },
+            {
+              "points": "0",
+              "descriptor": "Nem teljesül, vagy nem értékelhető."
+            }
+          ]
+        }
+      ],
+      "rules": []
+    }
+  ],
+  "conversion": {
+    "method": "identity"
+  },
+  "generalRules": [
+    "Számolási hiba csak az adott lépés pontját viszi el; hibás részeredménnyel helyesen tovább számolva a további pontok járnak.",
+    "A mértékegység hiánya és a fizikailag értelmetlen eredmény (ellenőrzés nélkül) pontlevonást jelent.",
+    "Függvénytáblázat és szöveget nem tároló számológép használható."
+  ]
+}

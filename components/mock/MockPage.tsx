@@ -3,7 +3,7 @@ import { notFound } from "next/navigation";
 import { getMock, mockWeakCategories, refreshMockResult, secondsLeft, type MockKind, type MockPlan, type MockResult } from "@/lib/mock";
 import { getContent } from "@/lib/tasks";
 import type { Level, ObjectiveTask, WritingTask } from "@/lib/content/schema";
-import { labelMaps, levelStructure, partPath, targetedPath } from "@/lib/exam/config";
+import { examConfig, labelMaps, levelStructure, partPath, targetedPath } from "@/lib/exam/config";
 import { getSettings } from "@/lib/settings";
 import { listSubmissions } from "@/lib/submissions";
 import { t } from "@/lib/i18n/hu";
@@ -54,6 +54,7 @@ export function MockPage({ id, kind }: { id: number; kind: MockKind }) {
 }
 
 export function MockResultView({ kind, level, result, mockId }: { kind: MockKind; level: Level; result: MockResult; mockId: number }) {
+  const languageExam = examConfig.grading().languageExamEquivalence.length > 0;
   const o = result.outcome;
   const pendingWriting = result.parts.some((p) => p.pending);
   const subs = listSubmissions("writing").filter((s) => s.mockExamId === mockId);
@@ -117,16 +118,31 @@ export function MockResultView({ kind, level, result, mockId }: { kind: MockKind
                 </tr>
               );
             })}
-            {kind === "mock" && (
+            {kind === "mock" && result.oralEstimate && !result.oralSkipped && (
               <tr className="border-t border-border text-muted">
                 <td className="py-2">
-                  {t.mock.oralEstimate} <span className="text-xs">({result.oralEstimate.source === "speaking" ? "szóbeli javításaid alapján" : "az írásbeli arányával"})</span>
+                  {t.mock.oralEstimate} <span className="text-xs">({result.oralEstimate.source === "speaking" ? t.mock.oralFromSpeaking : t.mock.oralFromWritten})</span>
                 </td>
                 <td />
                 <td className="py-2 text-right tabular-nums">
                   ≈ {result.oralEstimate.points} / {o.parts.find((x) => x.part === "speaking")?.maxPoints}
                 </td>
                 <td />
+              </tr>
+            )}
+            {kind === "mock" && result.oralSkipped && (
+              <tr className="border-t border-border text-muted">
+                <td className="py-2" colSpan={4}>{t.mock.oralSkipped}</td>
+              </tr>
+            )}
+            {o.written && (
+              <tr className="border-t border-border">
+                <td className="py-2 font-medium">{t.mock.writtenTogether}</td>
+                <td />
+                <td className="py-2 text-right font-semibold tabular-nums">{o.written.complete ? `${o.written.points} / ${o.written.maxPoints}` : "–"}</td>
+                <td className="py-2 pl-4">
+                  {!o.written.complete ? <span className="text-muted">–</span> : o.written.belowMinimum ? <Badge tone="bad">✗ {t.mock.below} (min. {o.written.minPoints})</Badge> : <Badge tone="good">✓ {t.mock.ok} (min. {o.written.minPoints})</Badge>}
+                </td>
               </tr>
             )}
           </tbody>
@@ -146,18 +162,26 @@ export function MockResultView({ kind, level, result, mockId }: { kind: MockKind
             <div className="text-3xl font-semibold tabular-nums" data-testid="total-pct">
               {o.points} / {o.maxPoints} · {o.pct}%
             </div>
-            <p className="mt-1 text-xs text-muted">{t.mock.oralEstimateHint}</p>
+            <p className="mt-1 text-xs text-muted">{result.oralSkipped ? t.mock.oralSkippedHint : t.mock.oralEstimateHint}</p>
           </Card>
           <Card>
             <div className="text-xs uppercase tracking-wide text-muted">{t.mock.grade}</div>
             <div className="text-3xl font-semibold" data-testid="grade">
               {result.complete ? `${o.grade.grade} (${o.grade.name})` : "–"}
             </div>
-            <div className="mt-2 text-sm">
-              <b>{t.mock.langExam}:</b>{" "}
-              {!result.complete ? "–" : o.languageExam ? <span data-testid="lang-exam">{o.languageExam.label}</span> : <span className="text-muted">{t.mock.langExamNone}</span>}
-            </div>
-            {o.failedByMinimum && <p className="mt-2 text-sm text-bad">{t.dashboard.warnPart(o.parts.filter((p) => p.belowMinimum).map((p) => result.parts.find((x) => x.part === p.part)?.name ?? p.part).join(", "))}</p>}
+            {languageExam && (
+              <div className="mt-2 text-sm">
+                <b>{t.mock.langExam}:</b>{" "}
+                {!result.complete ? "–" : o.languageExam ? <span data-testid="lang-exam">{o.languageExam.label}</span> : <span className="text-muted">{t.mock.langExamNone}</span>}
+              </div>
+            )}
+            {o.failedByMinimum && (
+              <p className="mt-2 text-sm text-bad">
+                {t.dashboard.warnPart(
+                  [...o.parts.filter((p) => p.belowMinimum).map((p) => result.parts.find((x) => x.part === p.part)?.name ?? p.part), ...(o.written?.belowMinimum ? [t.mock.writtenTogether] : [])].join(", "),
+                )}
+              </p>
+            )}
           </Card>
         </div>
       )}

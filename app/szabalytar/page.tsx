@@ -1,15 +1,17 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { lessonOverview } from "@/lib/lessons";
+import { examConfig } from "@/lib/exam/config";
 import { Badge, Card, PageHeader } from "@/components/ui";
 import { t } from "@/lib/i18n/hu";
 
 export const metadata: Metadata = { title: t.lessons.title };
 
-const GROUP_ORDER = ["grammar", "vocabulary", "writing", "comprehension"] as const;
-
 export default function LessonsPage() {
   const all = lessonOverview();
+  const cfgGroups = examConfig.errorCategories().groups;
+  const groupIds = cfgGroups.length ? cfgGroups.map((g) => g.id) : [...new Set(all.map((x) => x.category.group))];
+  const groupName = (g: string) => cfgGroups.find((x) => x.id === g)?.name ?? t.lessons.groups[g] ?? g;
   const top = all
     .filter((x) => x.lesson && x.errors30 > 0)
     .sort((a, b) => b.errors30 - a.errors30)
@@ -33,14 +35,14 @@ export default function LessonsPage() {
       )}
 
       <div className="space-y-6">
-        {GROUP_ORDER.map((g) => {
+        {groupIds.map((g) => {
           const items = all
             .filter((x) => x.category.group === g)
             .sort((a, b) => b.errors30 - a.errors30 || b.errorsTotal - a.errorsTotal || a.category.name.localeCompare(b.category.name, "hu"));
           if (!items.length) return null;
           return (
             <section key={g}>
-              <h2 className="mb-2 text-lg font-semibold">{t.lessons.groups[g]}</h2>
+              <h2 className="mb-2 text-lg font-semibold">{groupName(g)}</h2>
               <ul className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3" data-testid={`lesson-group-${g}`}>
                 {items.map((x) => (
                   <li key={x.category.id}>

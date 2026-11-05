@@ -1,0 +1,141 @@
+{
+  "meta": {
+    "verifiedAt": "2026-11-05",
+    "sources": [
+      {
+        "title": "Oktatási Hivatal: Matematika – részletes érettségi vizsgakövetelmény és vizsgaleírás (2024-től érvényes, Nat2020)",
+        "url": "https://www.oktatas.hu/pub_bin/dload/kozoktatas/erettsegi/vizsgakovetelmenyek2024/matematika_2024_e.pdf"
+      },
+      {
+        "title": "Eduline (2025. 04. 28.): Így pontozzák a középszintű matekérettségit (I. rész 45 perc/30 pont, II/A 3 feladat, II/B 3×17 pont – 2 választandó)",
+        "url": "https://eduline.hu/erettsegi-felveteli/20250428_Matekerettsegi-2025-pontozas-feladatok"
+      },
+      {
+        "title": "Eduline (2024. 05. 14.): Mikor kell szóban is érettségizni matekból? (12–24,99 % között; 50 pont = 15 + 30 + 5)",
+        "url": "https://eduline.hu/erettsegi-felveteli/20240514_szobeli-kozepszintu-matekerettsegi-mikor"
+      },
+      {
+        "title": "Eduline (2025. 06. 02.): Hány percesek és hány pontosak a szóbeli érettségik közép- és emelt szinten? (emelt matek szóbeli 20 perc, 35 pont)",
+        "url": "https://eduline.hu/erettsegi-felveteli/20250602_hany-perc-hany-pont-szobeli-erettsegi-kozep-emelt-szint"
+      },
+      {
+        "title": "Eduline (2022. 05. 02.): Itt van minden, amit az emelt matekérettségiről tudnotok kell (240 perc, I. rész 4 feladat 51 pont, II. rész 5-ből 4 × 16 pont)",
+        "url": "https://eduline.hu/erettsegi-felveteli/20220502_emelt-matek-osszefoglalo"
+      },
+      {
+        "title": "Eduline (2019. 11. 12.): Véget értek az emelt szintű szóbelik – így pontozzák (emelt matek szóbeli 35 pont bontása)",
+        "url": "https://eduline.hu/erettsegi-felveteli/20191112_oszi-erettsegi-szobelik-pontozas"
+      },
+      {
+        "title": "Eduline (2024. 03. 27.): Grafikonon mutatjuk, hogyan változnak a matekérettségi témaköreinek arányai (Nat2020 témakörök és súlyok)",
+        "url": "https://eduline.hu/erettsegi-felveteli/20240327_matekerettsegi-temakorok-valtozasok-2024"
+      },
+      {
+        "title": "Oktatási Hivatal: Középszintű matematika javítási-értékelési útmutató, 2025. október – általános javítási elvek (tükörmásolat)",
+        "url": "https://www.mateking.hu/sites/mp/files/uploads/k_mat_25okt_ut.pdf"
+      },
+      {
+        "title": "Eduline (2026. 03. 14.): Érettségi 2026 – pontozási és osztályozási szabályok (közép 80/60/40/25 %, emelt 60/47/33/25 %, vizsgarészenként 12 %)",
+        "url": "https://eduline.hu/erettsegi-felveteli/20260314_erettsegi-2026-pontozas-osztalyozas"
+      }
+    ],
+    "notes": [
+      "A Nat2020 vizsgakövetelmény öt fő témaköre (Gondolkodási módszerek, halmazok, logika, kombinatorika, gráfok 20 %; Számelmélet, algebra 25 %; Függvények, az analízis elemei 15 %; Geometria, koordinátageometria, trigonometria 25 %; Valószínűség-számítás, statisztika 15 %) az appban finomabb bontásban szerepel, hogy a gyakorlás célzottabb legyen.",
+      "2024-től középszintre került: pénzügyi számítások, kvartilis és dobozdiagram, geometriai valószínűség, számrendszerek; kikerült: trigonometrikus függvények ábrázolása, skaláris szorzat, egyes bizonyítások (csak emelt szóbelin).",
+      "Az ellenőrzés hírportál-cikkek (Eduline, Telex) és a hivatalos dokumentumok keresőben indexelt szövege alapján történt; az OH oldalát a futtató környezet hálózata nem engedte közvetlenül megnyitni – a hivatalos vizsgaleírással érdemes összevetni."
+    ]
+  },
+  "topics": [
+    {
+      "id": "halmazok-logika",
+      "number": 1,
+      "name": "Halmazok, logika, bizonyítási módszerek",
+      "nameEn": "Sets, logic, proof",
+      "subtopics": []
+    },
+    {
+      "id": "kombinatorika-grafok",
+      "number": 2,
+      "name": "Kombinatorika, gráfok",
+      "nameEn": "Combinatorics, graphs",
+      "subtopics": []
+    },
+    {
+      "id": "szamelmelet",
+      "number": 3,
+      "name": "Számelmélet, számrendszerek",
+      "nameEn": "Number theory, numeral systems",
+      "subtopics": []
+    },
+    {
+      "id": "algebra",
+      "number": 4,
+      "name": "Algebrai kifejezések, hatvány, gyök, logaritmus",
+      "nameEn": "Algebra, powers, roots, logarithms",
+      "subtopics": []
+    },
+    {
+      "id": "egyenletek",
+      "number": 5,
+      "name": "Egyenletek, egyenlőtlenségek, egyenletrendszerek",
+      "nameEn": "Equations and inequalities",
+      "subtopics": []
+    },
+    {
+      "id": "fuggvenyek",
+      "number": 6,
+      "name": "Függvények és tulajdonságaik",
+      "nameEn": "Functions",
+      "subtopics": []
+    },
+    {
+      "id": "sorozatok",
+      "number": 7,
+      "name": "Sorozatok, pénzügyi számítások",
+      "nameEn": "Sequences, financial maths",
+      "subtopics": []
+    },
+    {
+      "id": "sikgeometria",
+      "number": 8,
+      "name": "Síkgeometria: háromszögek, sokszögek, kör",
+      "nameEn": "Plane geometry",
+      "subtopics": []
+    },
+    {
+      "id": "trigonometria",
+      "number": 9,
+      "name": "Trigonometria",
+      "nameEn": "Trigonometry",
+      "subtopics": []
+    },
+    {
+      "id": "koordinatageometria",
+      "number": 10,
+      "name": "Koordinátageometria, vektorok",
+      "nameEn": "Coordinate geometry, vectors",
+      "subtopics": []
+    },
+    {
+      "id": "tergeometria",
+      "number": 11,
+      "name": "Térgeometria: felszín, térfogat",
+      "nameEn": "Solid geometry",
+      "subtopics": []
+    },
+    {
+      "id": "valoszinuseg",
+      "number": 12,
+      "name": "Valószínűség-számítás",
+      "nameEn": "Probability",
+      "subtopics": []
+    },
+    {
+      "id": "statisztika",
+      "number": 13,
+      "name": "Statisztika",
+      "nameEn": "Statistics",
+      "subtopics": []
+    }
+  ]
+}

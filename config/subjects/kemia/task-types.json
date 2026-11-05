@@ -1,0 +1,214 @@
+{
+  "meta": {
+    "verifiedAt": "2026-11-05",
+    "sources": [
+      {
+        "title": "Oktatási Hivatal: Kémia – részletes érettségi vizsgakövetelmény és vizsgaleírás (2024-től érvényes, Nat2020)",
+        "url": "https://www.oktatas.hu/pub_bin/dload/kozoktatas/erettsegi/vizsgakovetelmenyek2024/kemia_2024_e.pdf"
+      },
+      {
+        "title": "Eduline (2025. 05. 14.): Minden, amit a kémiaérettségiről tudni kell – pontozás, témakörök (közép 150 perc, 100 pont; emelt 240 perc)",
+        "url": "https://eduline.hu/erettsegi-felveteli/20250514_kemiaerettsegi-minden-amit-tudni-kell-pontozas-temakorok"
+      },
+      {
+        "title": "Eduline (2024. 05. 14.): Minden, amit a csütörtöki kémiaérettségiről tudni kell",
+        "url": "https://eduline.hu/erettsegi-felveteli/20240514_kemia-erettsegi-kozepszint-emelt-szint-tudnivalok"
+      },
+      {
+        "title": "kemiaerettsegi.hu: Szóbeli vizsgarész (közép: A téma 25 + B kísérlet 15 + szaknyelv 5 + segédeszközök 5)",
+        "url": "https://kemiaerettsegi.hu/szobeli.html"
+      },
+      {
+        "title": "kemiaerettsegi.hu: Középszintű javítási-értékelési útmutató, 2024. május (K2412)",
+        "url": "https://kemiaerettsegi.hu/dl/mo2024maj.pdf"
+      },
+      {
+        "title": "Eduline (2024. 04. 11.): Ilyenek lesznek az idei emelt kémia érettségi szóbeli A és C feladatainak témakörei",
+        "url": "https://eduline.hu/erettsegi-felveteli/20240411_erettsegi-2024-emelt-kemia-szobeli-feladatkorok"
+      },
+      {
+        "title": "Eduline (2026. 03. 14.): Érettségi 2026 – pontozási és osztályozási szabályok (közép 80/60/40/25 %, emelt 60/47/33/25 %, vizsgarészenként 12 %)",
+        "url": "https://eduline.hu/erettsegi-felveteli/20260314_erettsegi-2026-pontozas-osztalyozas"
+      }
+    ],
+    "notes": [
+      "Az ellenőrzés hírportál-cikkek (Eduline, Telex) és a hivatalos dokumentumok keresőben indexelt szövege alapján történt; az OH oldalát a futtató környezet hálózata nem engedte közvetlenül megnyitni – a hivatalos vizsgaleírással érdemes összevetni."
+    ]
+  },
+  "reading": [
+    {
+      "id": "feleletvalasztas",
+      "name": "Feleletválasztós teszt",
+      "nameEn": "Multiple choice",
+      "levels": [
+        "kozep",
+        "emelt"
+      ],
+      "description": "Egy helyes válasz kiválasztása 3–5 lehetőség közül.",
+      "itemKinds": [
+        "choice"
+      ]
+    },
+    {
+      "id": "igaz-hamis",
+      "name": "Igaz–hamis állítások",
+      "nameEn": "True/false",
+      "levels": [
+        "kozep",
+        "emelt"
+      ],
+      "description": "Állítások eldöntése (igaz / hamis), indoklással a magyarázatban.",
+      "itemKinds": [
+        "tf"
+      ]
+    },
+    {
+      "id": "parositas",
+      "name": "Párosítás",
+      "nameEn": "Matching",
+      "levels": [
+        "kozep",
+        "emelt"
+      ],
+      "description": "Fogalmak, példák, ábrarészek párosítása közös opciólistából.",
+      "itemKinds": [
+        "match"
+      ]
+    },
+    {
+      "id": "rovid-valasz",
+      "name": "Rövid választ igénylő feladat",
+      "nameEn": "Short answer",
+      "levels": [
+        "kozep",
+        "emelt"
+      ],
+      "description": "Egy-két szavas vagy számszerű válasz (fogalom, érték, név).",
+      "itemKinds": [
+        "text",
+        "choice"
+      ]
+    },
+    {
+      "id": "abraelemzes",
+      "name": "Ábra-, táblázat- vagy grafikonelemzés",
+      "nameEn": "Data / diagram analysis",
+      "levels": [
+        "kozep",
+        "emelt"
+      ],
+      "description": "Szövegben leírt ábra, adatsor vagy táblázat alapján kérdések.",
+      "itemKinds": [
+        "text",
+        "choice",
+        "tf"
+      ]
+    },
+    {
+      "id": "szamitas-rovid",
+      "name": "Rövid számítás",
+      "nameEn": "Short calculation",
+      "levels": [
+        "kozep",
+        "emelt"
+      ],
+      "description": "Egy-két lépéses számítás, csak az eredményt kell beírni (mértékegységgel).",
+      "itemKinds": [
+        "text"
+      ]
+    },
+    {
+      "id": "negyfele-asszociacio",
+      "name": "Négyféle asszociáció",
+      "nameEn": "Four-way association",
+      "levels": [
+        "kozep",
+        "emelt"
+      ],
+      "description": "Állítások besorolása: A, B, mindkettő, egyik sem.",
+      "itemKinds": [
+        "choice"
+      ]
+    },
+    {
+      "id": "esettanulmany",
+      "name": "Esettanulmány",
+      "nameEn": "Case study",
+      "levels": [
+        "kozep",
+        "emelt"
+      ],
+      "description": "Rövid szöveg (anyag, eljárás, jelenség) alapján kérdések.",
+      "itemKinds": [
+        "text",
+        "choice",
+        "tf"
+      ]
+    }
+  ],
+  "language-use": [],
+  "listening": [],
+  "writing": [
+    {
+      "id": "szamitasi",
+      "name": "Számítási feladat",
+      "nameEn": "Calculation",
+      "levels": [
+        "kozep",
+        "emelt"
+      ],
+      "description": "Anyagmennyiség, oldatok, gázok, sztöchiometria, termokémia, pH, elektrokémia."
+    },
+    {
+      "id": "kiserletelemzo",
+      "name": "Kísérletelemző feladat",
+      "nameEn": "Experiment analysis",
+      "levels": [
+        "kozep",
+        "emelt"
+      ],
+      "description": "Leírt kísérlet tapasztalatai, magyarázata, egyenletei."
+    },
+    {
+      "id": "elemzo",
+      "name": "Elemző, anyagismereti feladat",
+      "nameEn": "Analytical task",
+      "levels": [
+        "kozep",
+        "emelt"
+      ],
+      "description": "Anyagok összehasonlítása, szerkezet–tulajdonság összefüggések kifejtése."
+    }
+  ],
+  "speaking": [
+    {
+      "id": "a-tetel",
+      "name": "A) Elméleti téma",
+      "nameEn": "Theory topic",
+      "levels": [
+        "kozep",
+        "emelt"
+      ],
+      "description": "Általános, szervetlen vagy szerves kémiai téma kifejtése."
+    },
+    {
+      "id": "b-tetel",
+      "name": "B) Kísérlet",
+      "nameEn": "Experiment",
+      "levels": [
+        "kozep",
+        "emelt"
+      ],
+      "description": "Kísérlet elvégzése / leírt kísérlet értelmezése."
+    },
+    {
+      "id": "c-tetel",
+      "name": "C) Problémamegoldó feladat",
+      "nameEn": "Problem solving",
+      "levels": [
+        "emelt"
+      ],
+      "description": "Elemző, problémamegoldó feladat (emelt)."
+    }
+  ]
+}

@@ -2,7 +2,7 @@ import { and, desc, eq, inArray } from "drizzle-orm";
 import { getDb } from "@/lib/db/client";
 import { attempts, errors, mockExams, submissions, tasks, type MockExamRow } from "@/lib/db/schema";
 import type { Level, WritingTask } from "@/lib/content/schema";
-import { examConfig, levelStructure, part as partDef, type PartId, WRITTEN_PARTS } from "@/lib/exam/config";
+import { examConfig, levelStructure, oralPart, part as partDef, type PartId, writtenParts } from "@/lib/exam/config";
 import { convertToExamPoints, examOutcome, totalPercent, type ExamOutcome, type PartScore } from "@/lib/scoring/exam";
 import { writingPartPoints } from "@/lib/scoring/writing";
 import { saveAttempt } from "@/lib/attempts";
@@ -59,29 +59,30 @@ export type PlanCheck = { ok: true; plan: MockPlan } | { ok: false; missing: { p
 
 export function buildPlan(kind: MockKind, level: Level): PlanCheck {
   const used = usedTaskIds();
-  const st = levelStructure(level);
   const missing: { part: PartId; name: string; need: number; have: number }[] = [];
   const parts: MockPart[] = [];
-  for (const id of WRITTEN_PARTS) {
-    const p = st.parts.find((x) => x.id === id)!;
+  for (const p of writtenParts(level).filter((x) => x.maxPoints > 0)) {
+    const id = p.id;
     const list = candidates(id, level);
     let taskIds: string[];
     let need: number;
     if (id === "writing") {
+      // one task card per rubric task (e.g. the two writing tasks of a language exam, II/A and II/B of maths)
+      const numbers = examConfig.writingRubric(level).tasks.map((t) => t.taskNumber);
       const byNumber = (n: number) => list.filter((c) => (c.content as WritingTask).taskNumber === n);
       if (kind === "diagnostic") {
         need = 1;
-        taskIds = pick(byNumber(1), 1, kind, used);
+        taskIds = pick(byNumber(numbers[0] ?? 1), 1, kind, used);
       } else {
-        need = 2;
-        taskIds = [...pick(byNumber(1), 1, kind, used), ...pick(byNumber(2), 1, kind, used)];
+        need = numbers.length;
+        taskIds = numbers.flatMap((n) => pick(byNumber(n), 1, kind, used));
       }
     } else {
-      need = kind === "diagnostic" ? DIAGNOSTIC[id]!.count : p.mockTaskCount ?? 3;
+      need = kind === "diagnostic" ? (DIAGNOSTIC[id]?.count ?? 1) : p.mockTaskCount ?? 3;
       taskIds = pick(list, need, kind, used);
     }
     if (taskIds.length < need) missing.push({ part: id, name: p.name, need, have: taskIds.length });
-    let timeSec = kind === "diagnostic" ? DIAGNOSTIC[id]!.minutes * 60 : (p.timeMin ?? 30) * 60;
+    let timeSec = kind === "diagnostic" ? (DIAGNOSTIC[id]?.minutes ?? 12) * 60 : (p.timeMin ?? 30) * 60;
     if (id === "listening") {
       // the recordings are read by TTS: never let the part end before they can be heard twice
       const audio = taskIds.reduce((n, tid) => n + listeningSeconds(list.find((c) => c.id === tid)?.content as ObjectiveTask, level), 0);
@@ -95,15 +96,14 @@ export function buildPlan(kind: MockKind, level: Level): PlanCheck {
 /** Number of complete, still unused sets per level (for the mock exam landing page). */
 export function availableSets(level: Level): number {
   const used = usedTaskIds();
-  const st = levelStructure(level);
   let sets = Infinity;
-  for (const id of WRITTEN_PARTS) {
-    const p = st.parts.find((x) => x.id === id)!;
+  for (const p of writtenParts(level).filter((x) => x.maxPoints > 0)) {
+    const id = p.id;
     const list = candidates(id, level).filter((c) => !used.has(c.id));
     if (id === "writing") {
-      const n1 = list.filter((c) => (c.content as WritingTask).taskNumber === 1).length;
-      const n2 = list.filter((c) => (c.content as WritingTask).taskNumber === 2).length;
-      sets = Math.min(sets, n1, n2);
+      for (const n of examConfig.writingRubric(level).tasks.map((t) => t.taskNumber)) {
+        sets = Math.min(sets, list.filter((c) => (c.content as WritingTask).taskNumber === n).length);
+      }
     } else sets = Math.min(sets, Math.floor(list.length / (p.mockTaskCount ?? 3)));
   }
   return sets === Infinity ? 0 : sets;
@@ -208,7 +208,9 @@ export type MockResult = {
   writtenPct: number;
   complete: boolean;
   outcome: ExamOutcome;
-  oralEstimate: { points: number; source: "speaking" | "written" };
+  oralEstimate: { points: number; source: "speaking" | "written" } | null;
+  /** The oral is conditional and the written result is above its threshold: the exam ends with the written parts. */
+  oralSkipped?: boolean;
   cefr?: string;
   strengths?: string[];
   weaknesses?: string[];
@@ -264,28 +266,31 @@ export function refreshMockResult(id: number): MockResult | null {
     }
   }
 
-  const writtenMax = st.parts.filter((p) => p.written).reduce((n, p) => n + p.maxPoints, 0);
+  const writtenMax = st.parts.filter((p) => p.written && p.maxPoints > 0).reduce((n, p) => n + p.maxPoints, 0);
   const writtenPoints = parts.reduce((n, p) => n + (p.points ?? 0), 0);
   const writtenPct = totalPercent(writtenPoints, writtenMax, grading.percentRounding);
   const complete = parts.every((p) => p.points !== null);
 
   // oral estimate: recent graded speaking, otherwise the written percentage
-  const speakingDef = partDef(level, "speaking");
-  const sp = estimateParts(level, 0).find((e) => e.part === "speaking");
-  const oralEstimate =
-    sp && sp.points !== null
+  const speakingDef = oralPart(level);
+  const sp = speakingDef ? estimateParts(level, 0).find((e) => e.part === speakingDef.id) : undefined;
+  const oralEstimate = speakingDef
+    ? sp && sp.points !== null
       ? { points: Math.round(sp.points), source: "speaking" as const }
-      : { points: Math.round((writtenPct / 100) * speakingDef.maxPoints), source: "written" as const };
+      : { points: Math.round((writtenPct / 100) * speakingDef.maxPoints), source: "written" as const }
+    : null;
+  // a conditional oral (matematika középszint) is only taken below the threshold: above it the written result is the final one
+  const oralSkipped = !!speakingDef?.conditional && complete && writtenPct >= speakingDef.conditional.ifWrittenPctBelow;
   const scores: PartScore[] = [
     ...parts.map((p) => ({ part: p.part, points: p.points, maxPoints: p.maxPoints })),
-    { part: "speaking", points: oralEstimate.points, maxPoints: speakingDef.maxPoints },
+    ...(speakingDef && oralEstimate && !oralSkipped ? [{ part: speakingDef.id, points: oralEstimate.points, maxPoints: speakingDef.maxPoints }] : []),
   ];
-  const outcome = examOutcome(level, scores, st, grading);
-  const result: MockResult = { parts, writtenPoints, writtenMax, writtenPct, complete, outcome, oralEstimate };
+  const outcome = examOutcome(level, scores, oralSkipped ? { totalPoints: writtenMax } : st, grading);
+  const result: MockResult = { parts, writtenPoints, writtenMax, writtenPct, complete, outcome, oralEstimate, oralSkipped };
   if (kind === "diagnostic") {
     const known = parts.filter((p) => p.pct !== null);
     const avg = known.length ? known.reduce((n, p) => n + p.pct!, 0) / known.length : 0;
-    result.cefr = cefrFor(level, avg);
+    if (st.cefr) result.cefr = cefrFor(level, avg);
     const sorted = [...known].sort((a, b) => b.pct! - a.pct!);
     result.strengths = sorted.filter((p) => p.pct! >= avg).map((p) => p.name);
     result.weaknesses = sorted.filter((p) => p.pct! < avg).map((p) => p.name).reverse();

@@ -1,0 +1,242 @@
+{
+  "meta": {
+    "verifiedAt": "2026-11-05",
+    "sources": [
+      {
+        "title": "Oktatási Hivatal: Földrajz – részletes érettségi vizsgakövetelmény és vizsgaleírás (2024-től érvényes, Nat2020)",
+        "url": "https://www.oktatas.hu/pub_bin/dload/kozoktatas/erettsegi/vizsgakovetelmenyek2024/foldrajz_2024_e.pdf"
+      },
+      {
+        "title": "Eduline (2025. 05. 13.): Ezeket kell tudni a csütörtöki földrajzérettségiről – segédeszközök, pontozás (közép írásbeli 90 pont: topográfia 20 perc 20 pont + 100 perc 70 pont)",
+        "url": "https://eduline.hu/erettsegi-felveteli/20250513_minden-a-csoturtoki-foldrjazerettsegirol-segedeszkozok-pontozas-eddig-irhatjatok"
+      },
+      {
+        "title": "Eduline (2024. 05. 15.): Minden, amit a csütörtöki földrajzérettségiről tudni érdemes",
+        "url": "https://eduline.hu/erettsegi-felveteli/20240515_foldrajzerettsegi-tudnivalok-segedeszkozok-egy-helyen"
+      },
+      {
+        "title": "Oktatási Hivatal, Új Köznevelés (2022): Érettségi változások – Földrajz (20/70/90 pont, szóbeli A/B változat, 60 pont)",
+        "url": "https://www.oktatas.hu/pub_bin/dload/kozoktatas/uj_kozneveles/2022_2/UKN_2202_06_Erettsegi_valtozasok_Foldrajz.pdf"
+      },
+      {
+        "title": "GeoMetodika (2021): Megőrizve megújítani – a földrajz érettségi vizsga új vonásai (írásbeli 100 → 90 pont)",
+        "url": "https://geometodika.hu/megorizve-megujitani-a-foldrajz-erettsegi-vizsga-uj-vonasai/"
+      },
+      {
+        "title": "Eduline (2024. 12. 13.): Itt vannak a 2025-ös emelt szintű földrajzérettségi témakörei",
+        "url": "https://eduline.hu/erettsegi-felveteli/20241213_emelt-szintu-foldrajzerettsegi-tetelek-temakorok-2025"
+      },
+      {
+        "title": "Eduline (2026. 03. 14.): Érettségi 2026 – pontozási és osztályozási szabályok (közép 80/60/40/25 %, emelt 60/47/33/25 %, vizsgarészenként 12 %)",
+        "url": "https://eduline.hu/erettsegi-felveteli/20260314_erettsegi-2026-pontozas-osztalyozas"
+      }
+    ],
+    "notes": [
+      "Ellenőrzött (2024 óta, Nat2020): közép írásbeli 120 perc, 90 pont (I. topográfia 20 perc 20 pont segédeszköz nélkül; II. 100 perc 70 pont atlasszal); közép szóbeli 15 perc, 60 pont (OH 2022-es táblázat: 20/70/90/60, A/B változat); emelt írásbeli 240 perc, 100 pont egy feladatsorban, atlasz nélkül; emelt szóbeli 20 perc, 50 pont, központi tételsor.",
+      "Nem teljesen ellenőrzött: a közép szóbeli 60 pontja csak az OH 2022-es változásleírásából és közvetett hírekből (régi rendszer 100 + 50); a két szóbeli feladat egyenlő súlyú.",
+      "App-modell: a II. feladatlap zárt kérdéseit és a mondatokban megválaszolandó, elemző részeit az app két részként gyakoroltatja; az 50/20 (emelt 15/55/30) pont- és a percfelosztás az app becslése.",
+      "App-paraméter, nem hivatalos adat: mockTaskCount (hány feladat kerül egy próbaérettségibe), az írásbeli részek közti percbeosztás ott, ahol a vizsgán egyben kapják az időt, a textLength és a részek intro szövege.",
+      "Az ellenőrzés hírportál-cikkek (Eduline, Telex) és a hivatalos dokumentumok keresőben indexelt szövege alapján történt; az OH oldalát a futtató környezet hálózata nem engedte közvetlenül megnyitni – a hivatalos vizsgaleírással érdemes összevetni."
+    ]
+  },
+  "levels": {
+    "kozep": {
+      "name": "Középszint",
+      "cefr": "",
+      "writtenTotalMin": 120,
+      "totalPoints": 150,
+      "parts": [
+        {
+          "id": "reading",
+          "kind": "objective",
+          "slug": "topografia",
+          "name": "I. feladatlap – Topográfia",
+          "written": true,
+          "order": 1,
+          "timeMin": 20,
+          "maxPoints": 20,
+          "mockTaskCount": 2,
+          "notes": [
+            "Semmilyen segédeszköz nem használható; a lap beszedése után kezdődik a II. feladatlap."
+          ],
+          "features": {
+            "targeted": true
+          },
+          "intro": "Topográfiai feladatok: helyek, tájak, országok, városok, vizek azonosítása leírás alapján – segédeszköz nélkül, mint a vizsga I. feladatlapján.",
+          "icon": "🗺"
+        },
+        {
+          "id": "language-use",
+          "kind": "objective",
+          "slug": "rovid-feladatok",
+          "name": "II. feladatlap – Rövid feladatok",
+          "written": true,
+          "order": 2,
+          "timeMin": 70,
+          "maxPoints": 50,
+          "mockTaskCount": 3,
+          "notes": [
+            "A II. feladatlap (100 perc, 70 pont) zárt és rövid nyílt végű feladatai; atlasz, számológép, vonalzó, körző használható."
+          ],
+          "features": {
+            "wrongOptions": true,
+            "targeted": true
+          },
+          "intro": "Rövid feladatok a II. feladatlaphoz: feleletválasztás, igaz–hamis, párosítás, fogalmak, ábra- és adatelemzés, számítás. Minden kérdés után magyarázat.",
+          "icon": "☑"
+        },
+        {
+          "id": "writing",
+          "kind": "written",
+          "slug": "kifejtos",
+          "name": "II. feladatlap – Kifejtős feladatok",
+          "written": true,
+          "order": 3,
+          "timeMin": 30,
+          "maxPoints": 20,
+          "mockTaskCount": 2,
+          "notes": [
+            "Az app a II. feladatlap mondatokban megválaszolandó, elemző részeit külön gyakoroltatja; az 50/20 pont- és a percfelosztás az app becslése."
+          ],
+          "features": {},
+          "intro": "Kifejtős, elemző feladatok: összefüggések magyarázata, folyamatok leírása, adatok elemzése mondatokban; a javítást a Claude Code (/javitas) vagy a Claude app végzi.",
+          "icon": "📝"
+        },
+        {
+          "id": "speaking",
+          "kind": "oral",
+          "slug": "szobeli",
+          "name": "Szóbeli (tétel)",
+          "written": false,
+          "order": 4,
+          "maxPoints": 60,
+          "notes": [
+            "A változat: természet- és társadalomföldrajzi feladat; B változat: projektmunka + mindennapi földrajzi feladat. Atlaszt a vizsgaszervező biztosít."
+          ],
+          "features": {},
+          "intro": "Szóbeli tételek: természetföldrajzi és társadalomföldrajzi feladat topográfiai elemmel, térképhasználattal.",
+          "icon": "🗣"
+        }
+      ],
+      "breaks": [],
+      "oral": {
+        "durationMin": "15",
+        "prepMin": "30",
+        "parts": [
+          {
+            "number": 1,
+            "name": "Természetföldrajzi feladat",
+            "description": "Egy természetföldrajzi téma kifejtése topográfiai elemmel, az atlasz használatával.",
+            "minutes": "7"
+          },
+          {
+            "number": 2,
+            "name": "Társadalomföldrajzi feladat",
+            "description": "Egy társadalom- vagy gazdaságföldrajzi téma kifejtése (B változatban: projektmunka + mindennapi földrajzi feladat).",
+            "minutes": "8"
+          }
+        ]
+      },
+      "textLength": {}
+    },
+    "emelt": {
+      "name": "Emelt szint",
+      "cefr": "",
+      "writtenTotalMin": 240,
+      "totalPoints": 150,
+      "parts": [
+        {
+          "id": "reading",
+          "kind": "objective",
+          "slug": "topografia",
+          "name": "Topográfiai feladatok",
+          "written": true,
+          "order": 1,
+          "timeMin": 30,
+          "maxPoints": 15,
+          "mockTaskCount": 2,
+          "notes": [
+            "Emelt szinten egy feladatsor van (240 perc, 100 pont), atlasz nem használható; a részek az app felosztása."
+          ],
+          "features": {
+            "targeted": true
+          },
+          "intro": "Topográfiai feladatok: helyek, tájak, országok, városok, vizek azonosítása leírás alapján – segédeszköz nélkül, mint a vizsga I. feladatlapján.",
+          "icon": "🗺"
+        },
+        {
+          "id": "language-use",
+          "kind": "objective",
+          "slug": "rovid-feladatok",
+          "name": "Rövid feladatok",
+          "written": true,
+          "order": 2,
+          "timeMin": 130,
+          "maxPoints": 55,
+          "mockTaskCount": 3,
+          "notes": [
+            "Zárt és nyílt végű, számításos és elemző feladatok; számológép és vonalzó használható."
+          ],
+          "features": {
+            "wrongOptions": true,
+            "targeted": true
+          },
+          "intro": "Rövid feladatok a II. feladatlaphoz: feleletválasztás, igaz–hamis, párosítás, fogalmak, ábra- és adatelemzés, számítás. Minden kérdés után magyarázat.",
+          "icon": "☑"
+        },
+        {
+          "id": "writing",
+          "kind": "written",
+          "slug": "kifejtos",
+          "name": "Elemző, kifejtős feladatok",
+          "written": true,
+          "order": 3,
+          "timeMin": 80,
+          "maxPoints": 30,
+          "mockTaskCount": 3,
+          "notes": [
+            "Összefüggés-magyarázat, elemzés, számításos-elemző feladatok; a pontfelosztás az app becslése."
+          ],
+          "features": {},
+          "intro": "Kifejtős, elemző feladatok: összefüggések magyarázata, folyamatok leírása, adatok elemzése mondatokban; a javítást a Claude Code (/javitas) vagy a Claude app végzi.",
+          "icon": "📝"
+        },
+        {
+          "id": "speaking",
+          "kind": "oral",
+          "slug": "szobeli",
+          "name": "Szóbeli (tétel)",
+          "written": false,
+          "order": 4,
+          "maxPoints": 50,
+          "notes": [
+            "Központi tételsor (OH, december); tétel = természet- + társadalomföldrajzi feladat regionális témával; atlasz használható."
+          ],
+          "features": {},
+          "intro": "Szóbeli tételek: természetföldrajzi és társadalomföldrajzi feladat topográfiai elemmel, térképhasználattal.",
+          "icon": "🗣"
+        }
+      ],
+      "breaks": [],
+      "oral": {
+        "durationMin": "20",
+        "prepMin": "30",
+        "parts": [
+          {
+            "number": 1,
+            "name": "Természetföldrajzi feladat",
+            "description": "Természetföldrajzi téma kifejtése, térképhasználattal.",
+            "minutes": "10"
+          },
+          {
+            "number": 2,
+            "name": "Társadalomföldrajzi feladat",
+            "description": "Társadalom-/gazdaságföldrajzi téma regionális példával.",
+            "minutes": "10"
+          }
+        ]
+      },
+      "textLength": {}
+    }
+  }
+}

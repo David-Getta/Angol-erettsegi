@@ -120,7 +120,7 @@ describe("mock exam flow", () => {
     const written = r.parts.reduce((n, p) => n + (p.points ?? 0), 0);
     expect(r.writtenPoints).toBe(written);
     expect(r.writtenPct).toBe(Math.round((written / 120) * 100));
-    expect(r.outcome.points).toBe(written + r.oralEstimate.points);
+    expect(r.outcome.points).toBe(written + r.oralEstimate!.points);
     // the categories that cost the most are listed (empty language use → its categories are wrong)
     const weak = mockWeakCategories(id);
     expect(weak.length).toBeGreaterThan(0);

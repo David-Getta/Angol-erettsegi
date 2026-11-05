@@ -87,19 +87,23 @@ const PartSchema = z.object({
   written: z.boolean(),
   order: z.number().int(),
   timeMin: z.number().positive().optional(),
-  maxPoints: z.number().positive(),
+  /** 0 = practice-only part that is not part of the exam (it is left out of the mock exam and the totals). */
+  maxPoints: z.number().nonnegative(),
   taskCount: z.object({ min: z.number().int(), max: z.number().int() }).optional(),
   /** Number of tasks a full mock exam uses for this part. */
   mockTaskCount: z.number().int().positive().optional(),
   conversion: ConversionSchema.default({ method: "proportional" }),
   notes: z.array(z.string()).default([]),
+  /** Oral part that is only taken when the written result is below a percentage (matematika középszint). */
+  conditional: z.object({ ifWrittenPctBelow: z.number(), note: z.string() }).optional(),
   features: PartFeaturesSchema.default({ evidence: false, glossary: false, wrongOptions: false, audio: false, targeted: false, categoryGroups: [] }),
 });
 export type ExamPart = z.infer<typeof PartSchema>;
 
 const LevelStructureSchema = z.object({
   name: z.string(),
-  cefr: z.string(),
+  /** Language subjects: the CEFR level of the exam (shown as a badge); empty for other subjects. */
+  cefr: z.string().default(""),
   writtenTotalMin: z.number().positive(),
   totalPoints: z.number().positive(),
   parts: z.array(PartSchema).min(1),
@@ -128,7 +132,8 @@ export type LevelStructure = z.infer<typeof LevelStructureSchema>;
 export const GradingSchema = z.object({
   meta: MetaSchema,
   minPartPercent: z.number().min(0).max(100),
-  minPartAppliesTo: z.array(PartIdSchema),
+  /** Parts that must each reach the minimum; "written" = the written parts together (one vizsgarész, as in most subjects). */
+  minPartAppliesTo: z.array(z.union([PartIdSchema, z.literal("written")])),
   minPartNote: z.string(),
   /** Grade boundaries, highest grade first. */
   gradeBoundaries: z.record(
@@ -432,6 +437,16 @@ export function targetedPath(): string {
   const st = examConfig.structure();
   const p = [...st.levels.kozep.parts, ...st.levels.emelt.parts].find((x) => x.features.targeted);
   return p ? `/${p.slug}/celzott` : `/${findPart("language-use")?.slug ?? "nyelvhelyesseg"}/celzott`;
+}
+
+/** The written parts of a level, in exam order. */
+export function writtenParts(level: Level): ExamPart[] {
+  return levelStructure(level).parts.filter((p) => p.written).sort((a, b) => a.order - b.order);
+}
+
+/** The oral part of a level, if the subject has one. */
+export function oralPart(level: Level): ExamPart | undefined {
+  return levelStructure(level).parts.find((p) => p.kind === "oral");
 }
 
 /** The parts of a level with a given kind. */

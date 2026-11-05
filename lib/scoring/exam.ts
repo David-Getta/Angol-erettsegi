@@ -48,7 +48,7 @@ export function minPointsFor(maxPoints: number, grading: Pick<Grading, "minPartP
 
 export function checkParts(scores: PartScore[], grading: Pick<Grading, "minPartPercent" | "minPartAppliesTo">): PartCheck[] {
   return scores.map((s) => {
-    const applies = grading.minPartAppliesTo.includes(s.part);
+    const applies = (grading.minPartAppliesTo as string[]).includes(s.part);
     const minPoints = applies ? minPointsFor(s.maxPoints, grading) : 0;
     const pct = s.points === null ? null : (s.points / s.maxPoints) * 100;
     const belowMinimum = applies && s.points !== null && s.points < minPoints;
@@ -77,8 +77,26 @@ export function languageExamFor(level: Level, pct: number, grading: Pick<Grading
   );
 }
 
+/** The written parts together as one vizsgarész (subjects where the 12% applies to the whole written exam). */
+export type WrittenCheck = { points: number; maxPoints: number; pct: number; minPoints: number; belowMinimum: boolean; complete: boolean };
+
+const WRITTEN: string[] = ["reading", "language-use", "listening", "writing"];
+
+export function checkWritten(scores: PartScore[], grading: Pick<Grading, "minPartPercent" | "minPartAppliesTo">): WrittenCheck | null {
+  if (!(grading.minPartAppliesTo as string[]).includes("written")) return null;
+  const written = scores.filter((s) => WRITTEN.includes(s.part));
+  if (!written.length) return null;
+  const maxPoints = written.reduce((n, s) => n + s.maxPoints, 0);
+  const points = written.reduce((n, s) => n + (s.points ?? 0), 0);
+  const complete = written.every((s) => s.points !== null);
+  const minPoints = minPointsFor(maxPoints, grading);
+  return { points, maxPoints, pct: maxPoints ? (points / maxPoints) * 100 : 0, minPoints, belowMinimum: complete && points < minPoints, complete };
+}
+
 export type ExamOutcome = {
   parts: PartCheck[];
+  /** Set when the minimum applies to the written parts together. */
+  written: WrittenCheck | null;
   points: number;
   maxPoints: number;
   pct: number;
@@ -101,11 +119,12 @@ export function examOutcome(
   grading: Grading,
 ): ExamOutcome {
   const parts = checkParts(scores, grading);
+  const written = checkWritten(scores, grading);
   const points = parts.reduce((s, p) => s + (p.points ?? 0), 0);
   const maxPoints = structure.totalPoints;
   const pct = totalPercent(points, maxPoints, grading.percentRounding);
   const complete = parts.every((p) => p.points !== null);
-  const failedByMinimum = parts.some((p) => p.belowMinimum);
+  const failedByMinimum = parts.some((p) => p.belowMinimum) || (written?.belowMinimum ?? false);
   const passedMinimums = complete && !failedByMinimum;
   const lowest = [...(grading.gradeBoundaries[level] ?? [])].sort((a, b) => a.minPct - b.minPct)[0] ?? {
     grade: 1,
@@ -114,5 +133,5 @@ export function examOutcome(
   };
   const grade = failedByMinimum ? lowest : gradeFor(level, pct, grading);
   const languageExam = complete && !failedByMinimum ? languageExamFor(level, pct, grading) : null;
-  return { parts, points, maxPoints, pct, complete, passedMinimums, grade, failedByMinimum, languageExam };
+  return { parts, written, points, maxPoints, pct, complete, passedMinimums, grade, failedByMinimum, languageExam };
 }

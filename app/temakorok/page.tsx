@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { getSettings } from "@/lib/settings";
 import { topicOverviews, TOPIC_SECTIONS } from "@/lib/topics";
+import { partName } from "@/lib/exam/config";
 import { PageHeader, ProgressBar } from "@/components/ui";
 import { t } from "@/lib/i18n/hu";
 
@@ -26,7 +27,7 @@ export default function TopicsPage() {
               <div className="mt-2 flex flex-wrap gap-x-3 gap-y-0.5 text-xs text-muted">
                 {TOPIC_SECTIONS.map((s) => (
                   <span key={s}>
-                    {t.topics.short[s]}: {x.tasks[s].length}
+                    {partName(s)}: {x.tasks[s].length}
                   </span>
                 ))}
                 {x.deck && <span>🗂 {x.deck.added}/{x.deck.size}</span>}

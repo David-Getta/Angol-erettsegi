@@ -1,0 +1,215 @@
+{
+  "meta": {
+    "verifiedAt": "2026-11-05",
+    "sources": [
+      {
+        "title": "Oktatási Hivatal: Kémia – részletes érettségi vizsgakövetelmény és vizsgaleírás (2024-től érvényes, Nat2020)",
+        "url": "https://www.oktatas.hu/pub_bin/dload/kozoktatas/erettsegi/vizsgakovetelmenyek2024/kemia_2024_e.pdf"
+      },
+      {
+        "title": "Eduline (2025. 05. 14.): Minden, amit a kémiaérettségiről tudni kell – pontozás, témakörök (közép 150 perc, 100 pont; emelt 240 perc)",
+        "url": "https://eduline.hu/erettsegi-felveteli/20250514_kemiaerettsegi-minden-amit-tudni-kell-pontozas-temakorok"
+      },
+      {
+        "title": "Eduline (2024. 05. 14.): Minden, amit a csütörtöki kémiaérettségiről tudni kell",
+        "url": "https://eduline.hu/erettsegi-felveteli/20240514_kemia-erettsegi-kozepszint-emelt-szint-tudnivalok"
+      },
+      {
+        "title": "kemiaerettsegi.hu: Szóbeli vizsgarész (közép: A téma 25 + B kísérlet 15 + szaknyelv 5 + segédeszközök 5)",
+        "url": "https://kemiaerettsegi.hu/szobeli.html"
+      },
+      {
+        "title": "kemiaerettsegi.hu: Középszintű javítási-értékelési útmutató, 2024. május (K2412)",
+        "url": "https://kemiaerettsegi.hu/dl/mo2024maj.pdf"
+      },
+      {
+        "title": "Eduline (2024. 04. 11.): Ilyenek lesznek az idei emelt kémia érettségi szóbeli A és C feladatainak témakörei",
+        "url": "https://eduline.hu/erettsegi-felveteli/20240411_erettsegi-2024-emelt-kemia-szobeli-feladatkorok"
+      },
+      {
+        "title": "Eduline (2026. 03. 14.): Érettségi 2026 – pontozási és osztályozási szabályok (közép 80/60/40/25 %, emelt 60/47/33/25 %, vizsgarészenként 12 %)",
+        "url": "https://eduline.hu/erettsegi-felveteli/20260314_erettsegi-2026-pontozas-osztalyozas"
+      }
+    ],
+    "notes": [
+      "Ellenőrzött (2024 óta, Nat2020): közép írásbeli 150 perc (korábban 120), 100 pont, kb. 8–9 feladat; közép szóbeli 15 perc, 50 pont (A téma 25 + B kísérlet 15 + szaknyelv 5 + segédeszközök 5); emelt írásbeli 240 perc, 100 pont, legalább 4 számítási feladat; emelt szóbeli 20 perc, 50 pont (A 25 + B kísérlet 10 + C problémamegoldás 10 + nyelvezet és segédeszközök 5).",
+      "App-modell: a vizsgán egy vegyes feladatlap van; az app a zárt kérdéseket (teszt) és a kidolgozandó feladatokat (számítás, kísérletelemzés) két részként gyakoroltatja, a pontok (60/40, emelt 50/50) és a percek az app felosztása.",
+      "App-paraméter, nem hivatalos adat: mockTaskCount (hány feladat kerül egy próbaérettségibe), az írásbeli részek közti percbeosztás ott, ahol a vizsgán egyben kapják az időt, a textLength és a részek intro szövege.",
+      "Az ellenőrzés hírportál-cikkek (Eduline, Telex) és a hivatalos dokumentumok keresőben indexelt szövege alapján történt; az OH oldalát a futtató környezet hálózata nem engedte közvetlenül megnyitni – a hivatalos vizsgaleírással érdemes összevetni."
+    ]
+  },
+  "levels": {
+    "kozep": {
+      "name": "Középszint",
+      "cefr": "",
+      "writtenTotalMin": 150,
+      "totalPoints": 150,
+      "parts": [
+        {
+          "id": "reading",
+          "kind": "objective",
+          "slug": "teszt",
+          "name": "Teszt- és elemző feladatok",
+          "written": true,
+          "order": 1,
+          "timeMin": 80,
+          "maxPoints": 60,
+          "mockTaskCount": 3,
+          "notes": [
+            "A vizsgán egy feladatlap (kb. 8–9 feladat, 150 perc, 100 pont); az app a zárt kérdéseket és a számítási/kifejtős feladatokat külön gyakoroltatja. Függvénytáblázat (periódusos rendszerrel) és számológép használható."
+          ],
+          "features": {
+            "wrongOptions": true,
+            "targeted": true
+          },
+          "intro": "Teszt- és elemző feladatok: egyszerű választás, négyféle asszociáció, igaz–hamis, táblázatos és esettanulmány-kérdések. Minden kérdés után magyarázat.",
+          "icon": "☑"
+        },
+        {
+          "id": "writing",
+          "kind": "written",
+          "slug": "szamitas-elemzes",
+          "name": "Számítási és kísérletelemző feladatok",
+          "written": true,
+          "order": 2,
+          "timeMin": 70,
+          "maxPoints": 40,
+          "mockTaskCount": 3,
+          "notes": [
+            "A számítási feladatok aránya a vizsgán 20–40 %; egy feladat legfeljebb az összpontszám 20 %-a."
+          ],
+          "features": {},
+          "intro": "Számítási, kísérletelemző és elemző feladatok: a megoldást indoklással, egyenletekkel írod le; a javítást a Claude Code (/javitas) vagy a Claude app végzi.",
+          "icon": "⚗"
+        },
+        {
+          "id": "speaking",
+          "kind": "oral",
+          "slug": "szobeli",
+          "name": "Szóbeli (tétel + kísérlet)",
+          "written": false,
+          "order": 3,
+          "maxPoints": 50,
+          "notes": [
+            "Legalább 20 tétel; a B) kísérlet projektmunkával kiváltható."
+          ],
+          "features": {},
+          "intro": "Szóbeli tételek: elméleti téma kifejtése, kísérlet értelmezése (emelten problémamegoldó feladat is).",
+          "icon": "🗣"
+        }
+      ],
+      "breaks": [],
+      "oral": {
+        "durationMin": "15",
+        "prepMin": "30",
+        "parts": [
+          {
+            "number": 1,
+            "name": "A) Elméleti téma",
+            "description": "Általános, szervetlen vagy szerves kémiai téma kifejtése – 25 pont.",
+            "minutes": "8–9"
+          },
+          {
+            "number": 2,
+            "name": "B) Kísérlet",
+            "description": "Kísérlet elvégzése vagy leírt kísérlet értelmezése: tapasztalat, magyarázat, egyenlet – 15 pont.",
+            "minutes": "5–6"
+          },
+          {
+            "number": 3,
+            "name": "Szaknyelv és segédeszközök",
+            "description": "Szakmai nyelvezet, mértékegységek, jelrendszer (5) és a periódusos rendszer, modellek szakszerű használata (5).",
+            "minutes": "–"
+          }
+        ]
+      },
+      "textLength": {}
+    },
+    "emelt": {
+      "name": "Emelt szint",
+      "cefr": "",
+      "writtenTotalMin": 240,
+      "totalPoints": 150,
+      "parts": [
+        {
+          "id": "reading",
+          "kind": "objective",
+          "slug": "teszt",
+          "name": "Teszt- és elemző feladatok",
+          "written": true,
+          "order": 1,
+          "timeMin": 100,
+          "maxPoints": 50,
+          "mockTaskCount": 3,
+          "notes": [
+            "Egy feladatlap, 240 perc, 100 pont; az elméleti feladatok (egyszerű választás, négyféle asszociáció, táblázatos, esettanulmány) kb. 50–60 pont."
+          ],
+          "features": {
+            "wrongOptions": true,
+            "targeted": true
+          },
+          "intro": "Teszt- és elemző feladatok: egyszerű választás, négyféle asszociáció, igaz–hamis, táblázatos és esettanulmány-kérdések. Minden kérdés után magyarázat.",
+          "icon": "☑"
+        },
+        {
+          "id": "writing",
+          "kind": "written",
+          "slug": "szamitas-elemzes",
+          "name": "Számítási és elemző feladatok",
+          "written": true,
+          "order": 2,
+          "timeMin": 140,
+          "maxPoints": 50,
+          "mockTaskCount": 4,
+          "notes": [
+            "Legalább 4 számítási feladat (kb. 40–50 pont) + kísérletelemző és elemző feladatok."
+          ],
+          "features": {},
+          "intro": "Számítási, kísérletelemző és elemző feladatok: a megoldást indoklással, egyenletekkel írod le; a javítást a Claude Code (/javitas) vagy a Claude app végzi.",
+          "icon": "⚗"
+        },
+        {
+          "id": "speaking",
+          "kind": "oral",
+          "slug": "szobeli",
+          "name": "Szóbeli (tétel + kísérlet + probléma)",
+          "written": false,
+          "order": 3,
+          "maxPoints": 50,
+          "notes": [
+            "Központi tételsor; a kísérletet a felelet előtt, a bizottság előtt kell elvégezni."
+          ],
+          "features": {},
+          "intro": "Szóbeli tételek: elméleti téma kifejtése, kísérlet értelmezése (emelten problémamegoldó feladat is).",
+          "icon": "🗣"
+        }
+      ],
+      "breaks": [],
+      "oral": {
+        "durationMin": "20",
+        "prepMin": "30",
+        "parts": [
+          {
+            "number": 1,
+            "name": "A) Témakifejtés",
+            "description": "Az OH által közzétett témakörök egyikének kifejtése – 25 pont.",
+            "minutes": "8–9"
+          },
+          {
+            "number": 2,
+            "name": "B) Kísérlet",
+            "description": "Kísérlet elvégzése és értelmezése – 10 pont.",
+            "minutes": "5"
+          },
+          {
+            "number": 3,
+            "name": "C) Problémamegoldó feladat",
+            "description": "Elemző, problémamegoldó feladat – 10 pont; + szakmai nyelvezet 3, segédeszközök 2.",
+            "minutes": "5–6"
+          }
+        ]
+      },
+      "textLength": {}
+    }
+  }
+}

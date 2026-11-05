@@ -21,7 +21,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return { title: `${cat?.name ?? kategoria} – ${t.lessons.title}` };
 }
 
-function Rule({ rule }: { rule: GrammarLesson["rules"][number] }) {
+function Rule({ rule, lang }: { rule: GrammarLesson["rules"][number]; lang: string }) {
   return (
     <div className="border-t border-border pt-3 first:border-t-0 first:pt-0">
       <h3 className="flex flex-wrap items-center gap-2 font-semibold">
@@ -32,7 +32,7 @@ function Rule({ rule }: { rule: GrammarLesson["rules"][number] }) {
       <ul className="mt-2 space-y-1.5">
         {rule.examples.map((ex, i) => (
           <li key={i} className="rounded-md bg-surface-2 px-3 py-1.5 text-sm">
-            <span lang="en" className="font-reading text-[15px]">{ex.en}</span>
+            <span lang={lang} className="font-reading text-[15px]">{ex.en}</span>
             {ex.hu && <span className="block text-muted">{ex.hu}</span>}
             {ex.note && <span className="block text-xs text-muted">↳ {ex.note}</span>}
           </li>
@@ -65,8 +65,8 @@ export default async function LessonPage({ params }: Props) {
 
   const baseRules = lesson.rules.filter((r) => !r.emeltOnly);
   const emeltRules = lesson.rules.filter((r) => r.emeltOnly);
-  const language = cat.group !== "comprehension";
-  const bank = language ? countBankItems(cat.id, level) : 0;
+  const lang = examConfig.subject().language ? "en" : "hu";
+  const bank = countBankItems(cat.id, level);
 
   return (
     <div>
@@ -88,7 +88,7 @@ export default async function LessonPage({ params }: Props) {
           <Card title={t.lessons.rules}>
             <div className="space-y-4" data-testid="lesson-rules">
               {baseRules.map((r, i) => (
-                <Rule key={i} rule={r} />
+                <Rule key={i} rule={r} lang={lang} />
               ))}
             </div>
             {emeltRules.length > 0 && (
@@ -96,7 +96,7 @@ export default async function LessonPage({ params }: Props) {
                 <summary className="cursor-pointer font-medium">{t.lessons.emeltRules}</summary>
                 <div className="mt-3 space-y-4">
                   {emeltRules.map((r, i) => (
-                    <Rule key={i} rule={r} />
+                    <Rule key={i} rule={r} lang={lang} />
                   ))}
                 </div>
               </details>
@@ -117,8 +117,8 @@ export default async function LessonPage({ params }: Props) {
                   <tbody>
                     {lesson.commonMistakes.map((m, i) => (
                       <tr key={i} className="border-t border-border align-top">
-                        <td lang="en" className="py-1.5 pr-2 font-reading text-bad line-through decoration-bad/50">{m.wrong}</td>
-                        <td lang="en" className="py-1.5 pr-2 font-reading font-medium text-good">{m.right}</td>
+                        <td lang={lang} className="py-1.5 pr-2 font-reading text-bad line-through decoration-bad/50">{m.wrong}</td>
+                        <td lang={lang} className="py-1.5 pr-2 font-reading font-medium text-good">{m.right}</td>
                         <td className="py-1.5">{m.why}</td>
                       </tr>
                     ))}
@@ -148,7 +148,7 @@ export default async function LessonPage({ params }: Props) {
           )}
           <Card>
             <div className="flex flex-col gap-2">
-              {language && bank > 0 && (
+              {bank > 0 && (
                 <LinkButton href={`${targetedPath()}?k=${cat.id}`} variant="secondary">
                   {t.lessons.practiceMore}
                 </LinkButton>

@@ -1,0 +1,145 @@
+{
+  "meta": {
+    "verifiedAt": "2026-11-05",
+    "sources": [
+      {
+        "title": "Oktatási Hivatal: Biológia – részletes érettségi vizsgakövetelmény és vizsgaleírás (2024-től érvényes, Nat2020)",
+        "url": "https://www.oktatas.hu/pub_bin/dload/kozoktatas/erettsegi/vizsgakovetelmenyek2024/biologia_2024_e.pdf"
+      },
+      {
+        "title": "Eduline (2024. 05. 13.): Minden, amit a keddi biológiaérettségiről tudni kell (közép 150 perc, 100 pont, 6–12 feladat; szóbeli A 25 + B 20 + 5; emelt 240 perc 80 + 20 pont)",
+        "url": "https://eduline.hu/erettsegi-felveteli/20240513_biologiaerettsegi-biologia-erettsegi-2024-minden-tudnivalo"
+      },
+      {
+        "title": "Eduline (2025. 05. 12.): Milyen segédeszközt lehet használni a biológiaérettségin? (csak számológép)",
+        "url": "https://eduline.hu/erettsegi-felveteli/20250512_biologiaerettsegi-segedeszkozok-szamologep"
+      },
+      {
+        "title": "emeltbiosz.hu: Az érettségi menetéről – szóbeli pontozás (közép 25 + 20 + 5, emelt 20 + 25 + 5)",
+        "url": "https://emeltbiosz.hu/erettsegi/"
+      },
+      {
+        "title": "Gergely Tibor: A 2024-től érvényes biológia érettségi követelményrendszer változásai (hat Nat2020 témakör)",
+        "url": "http://www.gergelytibor.hu/kovetelmenyek_valtozasai.pdf"
+      },
+      {
+        "title": "Eduline (2023. 12. 22.): Itt vannak a 2024-es emelt szintű biológiaérettségi témakörei",
+        "url": "https://eduline.hu/erettsegi-felveteli/20231222_emelt-szintu-biologiaerettsegi-temakorok-2024"
+      },
+      {
+        "title": "Eduline (2026. 03. 14.): Érettségi 2026 – pontozási és osztályozási szabályok (közép 80/60/40/25 %, emelt 60/47/33/25 %, vizsgarészenként 12 %)",
+        "url": "https://eduline.hu/erettsegi-felveteli/20260314_erettsegi-2026-pontozas-osztalyozas"
+      }
+    ],
+    "notes": [
+      "Ellenőrzött: a II. rész (esszé vagy problémafeladat) 20 pont; a szempontok bontása az app összefoglalója.",
+      "Az ellenőrzés hírportál-cikkek (Eduline, Telex) és a hivatalos dokumentumok keresőben indexelt szövege alapján történt; az OH oldalát a futtató környezet hálózata nem engedte közvetlenül megnyitni – a hivatalos vizsgaleírással érdemes összevetni."
+    ]
+  },
+  "id": "writing-emelt",
+  "level": "emelt",
+  "examMaxPoints": 20,
+  "tasks": [
+    {
+      "taskNumber": 1,
+      "name": "Esszé vagy problémafeladat",
+      "textTypes": [
+        "essze",
+        "problemafeladat"
+      ],
+      "guidingPoints": "4–6 szempont",
+      "suggestedMinutes": 60,
+      "maxRaw": 20,
+      "criteria": [
+        {
+          "id": "tartalom",
+          "name": "Tartalmi elemek",
+          "description": "A szempontok szerinti biológiai tartalom helyes és teljes.",
+          "max": 12,
+          "bands": [
+            {
+              "points": "12",
+              "descriptor": "Minden szempont teljes, pontos."
+            },
+            {
+              "points": "9–11",
+              "descriptor": "A szempontok többsége kifejtve, kisebb hiányokkal."
+            },
+            {
+              "points": "5–8",
+              "descriptor": "A szempontok fele kifejtve vagy több pontatlanság."
+            },
+            {
+              "points": "1–4",
+              "descriptor": "Csak egy-két szempont, felszínesen."
+            },
+            {
+              "points": "0",
+              "descriptor": "Nem a témáról szól."
+            }
+          ]
+        },
+        {
+          "id": "osszefugges",
+          "name": "Összefüggések, problémamegoldás",
+          "description": "Ok–okozati összefüggések, hipotézis, kísérlettervezés, következtetés.",
+          "max": 5,
+          "bands": [
+            {
+              "points": "5",
+              "descriptor": "Maradéktalanul teljesül: Ok–okozati összefüggések, hipotézis, kísérlettervezés, következtetés."
+            },
+            {
+              "points": "4",
+              "descriptor": "Kisebb hiányosságokkal vagy pontatlanságokkal teljesül; a lényeg helyes."
+            },
+            {
+              "points": "3",
+              "descriptor": "Részben teljesül: több elem hiányzik, pontatlan vagy indoklás nélküli."
+            },
+            {
+              "points": "2",
+              "descriptor": "Alig teljesül: csak néhány helyes, odaillő elem van."
+            },
+            {
+              "points": "0",
+              "descriptor": "Nem teljesül, vagy nem értékelhető."
+            }
+          ]
+        },
+        {
+          "id": "szerkezet",
+          "name": "Felépítés, szaknyelv",
+          "description": "Logikus felépítés, szakszerű nyelv, érthető megfogalmazás.",
+          "max": 3,
+          "bands": [
+            {
+              "points": "3",
+              "descriptor": "Maradéktalanul teljesül: Logikus felépítés, szakszerű nyelv, érthető megfogalmazás."
+            },
+            {
+              "points": "2",
+              "descriptor": "Részben teljesül: több elem hiányzik, pontatlan vagy indoklás nélküli."
+            },
+            {
+              "points": "1",
+              "descriptor": "Alig teljesül: csak néhány helyes, odaillő elem van."
+            },
+            {
+              "points": "0",
+              "descriptor": "Nem teljesül, vagy nem értékelhető."
+            }
+          ]
+        }
+      ],
+      "rules": []
+    }
+  ],
+  "conversion": {
+    "method": "identity"
+  },
+  "generalRules": [
+    "Csak az egyik (esszé vagy problémafeladat) értékelhető; ha mindkettőt megírja, az elsőt javítják.",
+    "Hibás állítás tartalmi pontot nem kaphat, de nem von le a helyes elemekből."
+  ]
+}
