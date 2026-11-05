@@ -19,7 +19,7 @@
     "options": [
       {
         "key": "A",
-        "text": "teljes hasonulás"
+        "text": "mássalhangzó-kiesés"
       },
       {
         "key": "B",
@@ -31,10 +31,10 @@
       },
       {
         "key": "D",
-        "text": "mássalhangzó-kiesés"
+        "text": "teljes hasonulás"
       }
     ],
-    "answer": "A",
+    "answer": "D",
     "category": "nyelvtani-fogalom",
     "explanation": "Teljes hasonulás: az sz a következő s hatására teljesen s-sé alakul ([ss]). Írásban nem jelöljük, mert a szóelemző elv érvényesül (egész + ség)."
   },
@@ -77,11 +77,11 @@
       "options": [
         {
           "key": "A",
-          "text": "részleges hasonulás zöngésség szerint"
+          "text": "részleges hasonulás a képzés helye szerint"
         },
         {
           "key": "B",
-          "text": "részleges hasonulás a képzés helye szerint"
+          "text": "részleges hasonulás zöngésség szerint"
         },
         {
           "key": "C",
@@ -92,11 +92,11 @@
           "text": "teljes hasonulás"
         }
       ],
-      "answer": "B",
+      "answer": "A",
       "category": "nyelvtani-fogalom",
       "explanation": "Helyes: részleges hasonulás a képzés helye szerint. Az n a p ajakhang előtt ajakkal képzett m-mé válik; a hang képzésének helye igazodik a következő hangéhoz.",
       "wrongOptions": {
-        "A": "Az n és az m egyaránt zöngés, a zöngésség nem változik.",
+        "B": "Az n és az m egyaránt zöngés, a zöngésség nem változik.",
         "C": "Rövidülés hosszú mássalhangzónál történik (pl. jobbra → [jobra]); itt nincs hosszú hang.",
         "D": "A teljes hasonulásnál az n p-vé válna; itt csak a képzés helye igazodik."
       }
@@ -108,7 +108,7 @@
       "options": [
         {
           "key": "A",
-          "text": "összeolvadás"
+          "text": "mássalhangzó-kiesés"
         },
         {
           "key": "B",
@@ -116,19 +116,19 @@
         },
         {
           "key": "C",
-          "text": "mássalhangzó-kiesés"
+          "text": "összeolvadás"
         },
         {
           "key": "D",
           "text": "magánhangzó-rövidülés"
         }
       ],
-      "answer": "A",
+      "answer": "C",
       "category": "nyelvtani-fogalom",
       "explanation": "Helyes: összeolvadás. A t és az s egy harmadik, hosszú hanggá, [cs]-vé olvad össze; a két eredeti hang egyike sem marad meg.",
       "wrongOptions": {
-        "B": "Teljes hasonulásnál az egyik hang a másikkal azonossá válna (pl. [barássság]); itt egy új hang keletkezik.",
-        "C": "Egyik hang sem esik ki nyomtalanul; a kettőből új, hosszú hang lesz.",
+        "A": "Egyik hang sem esik ki nyomtalanul; a kettőből új, hosszú hang lesz.",
+        "B": "Teljes hasonulásnál az egyik hang a másikkal azonossá válna (pl. [barásság]); itt egy új hang keletkezik.",
         "D": "A jelenség mássalhangzókat érint, nem magánhangzót."
       }
     },
@@ -139,7 +139,7 @@
       "options": [
         {
           "key": "A",
-          "text": "mássalhangzó-rövidülés"
+          "text": "részleges hasonulás zöngésség szerint"
         },
         {
           "key": "B",
@@ -147,19 +147,19 @@
         },
         {
           "key": "C",
-          "text": "részleges hasonulás zöngésség szerint"
+          "text": "mássalhangzó-rövidülés"
         },
         {
           "key": "D",
           "text": "mássalhangzó-nyúlás"
         }
       ],
-      "answer": "A",
+      "answer": "C",
       "category": "nyelvtani-fogalom",
       "explanation": "Helyes: mássalhangzó-rövidülés. A hosszú bb egy másik mássalhangzó (r) mellett rövid b-ként hangzik; írásban a szóelemzés miatt megtartjuk a kettőzést (jobb + ra).",
       "wrongOptions": {
+        "A": "A b zöngés marad, mert az r is zöngés.",
         "B": "Nem keletkezik új hang a b és az r találkozásából.",
-        "C": "A b zöngés marad, mert az r is zöngés.",
         "D": "Nyúlásnál a hang meghosszabbodna (ahogy a magánhangzó-nyúlásnál: alma → almát); itt éppen az ellenkezője, rövidülés történik."
       }
     },
@@ -170,7 +170,7 @@
       "options": [
         {
           "key": "A",
-          "text": "mássalhangzó-kiesés"
+          "text": "részleges hasonulás a képzés helye szerint"
         },
         {
           "key": "B",
@@ -182,16 +182,16 @@
         },
         {
           "key": "D",
-          "text": "részleges hasonulás a képzés helye szerint"
+          "text": "mássalhangzó-kiesés"
         }
       ],
-      "answer": "A",
+      "answer": "D",
       "category": "nyelvtani-fogalom",
       "explanation": "Helyes: mássalhangzó-kiesés. Három mássalhangzó (n, d, t) torlódásakor a középső, a d kiesik a kiejtésből; írásban megtartjuk (mond + ta).",
       "wrongOptions": {
+        "A": "Az n képzési helye nem változik.",
         "B": "Teljes hasonulásnál a d t-vé válna ([montta]); itt a d nyomtalanul eltűnik.",
-        "C": "Nem keletkezik új, harmadik hang.",
-        "D": "Az n képzési helye nem változik."
+        "C": "Nem keletkezik új, harmadik hang."
       }
     },
     {
@@ -201,11 +201,11 @@
       "options": [
         {
           "key": "A",
-          "text": "betűszó (rövidítéses szóalkotás)"
+          "text": "szóösszetétel"
         },
         {
           "key": "B",
-          "text": "szóösszetétel"
+          "text": "betűszó (rövidítéses szóalkotás)"
         },
         {
           "key": "C",
@@ -216,11 +216,11 @@
           "text": "szóelvonás"
         }
       ],
-      "answer": "A",
+      "answer": "B",
       "category": "nyelvtani-fogalom",
       "explanation": "Helyes: betűszó. A többszavas név szavainak kezdőbetűiből alakult (Magyar ÁllamVasutak), és önálló szóként ragozzuk (a MÁV-nál).",
       "wrongOptions": {
-        "B": "Szóösszetételnél két vagy több önálló szó kapcsolódik egybe (pl. vasútállomás); itt csak kezdőbetűk maradtak.",
+        "A": "Szóösszetételnél két vagy több önálló szó kapcsolódik egybe (pl. vasútállomás); itt csak kezdőbetűk maradtak.",
         "C": "Szóképzésnél képző járul a tőhöz (pl. vasutas); itt nincs képző.",
         "D": "Szóelvonásnál egy szó végéről vélt képzőt hagyunk el; ez itt nem történt."
       }
@@ -263,7 +263,7 @@
       "options": [
         {
           "key": "A",
-          "text": "birtokos jelzős alárendelő összetétel"
+          "text": "ikerszó"
         },
         {
           "key": "B",
@@ -275,16 +275,16 @@
         },
         {
           "key": "D",
-          "text": "ikerszó"
+          "text": "birtokos jelzős alárendelő összetétel"
         }
       ],
-      "answer": "A",
+      "answer": "D",
       "category": "nyelvtani-fogalom",
       "explanation": "Helyes: birtokos jelzős alárendelő összetétel. Felbontva: a hegy oldala – az előtag a birtokos, az utótag a birtok.",
       "wrongOptions": {
+        "A": "Az ikerszó két hasonló hangalakú tagból áll (pl. dimbes-dombos, csiki-csuki).",
         "B": "Minőségjelzős összetételnél az előtag tulajdonságot jelöl (pl. vasajtó, nagyváros).",
-        "C": "Határozós összetételnél az előtag határozó (pl. partra száll → partraszállás).",
-        "D": "Az ikerszó két hasonló hangalakú tagból áll (pl. dimbes-dombos, csiki-csuki)."
+        "C": "Határozós összetételnél az előtag határozó (pl. partra száll → partraszállás)."
       }
     }
   ],

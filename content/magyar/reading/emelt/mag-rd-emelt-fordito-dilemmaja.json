@@ -65,7 +65,7 @@
       "options": [
         {
           "key": "A",
-          "text": "Mert a mondás magyar változata elveszíti a szójátékot, így maga a példa bizonyítja, hogy a fordítás veszteséggel jár."
+          "text": "Mert a szerző szerint a szójátékokat nem kell lefordítani."
         },
         {
           "key": "B",
@@ -77,17 +77,17 @@
         },
         {
           "key": "D",
-          "text": "Mert a szerző szerint a szójátékokat nem kell lefordítani."
+          "text": "Mert a mondás magyar változata elveszíti a szójátékot, így maga a példa bizonyítja, hogy a fordítás veszteséggel jár."
         }
       ],
-      "answer": "A",
+      "answer": "D",
       "category": "kovetkeztetes",
-      "explanation": "Helyes: A. A szerző szerint a „fordító, áruló” csak a jelentést adja vissza, a szójátékot nem, és hozzáteszi: „Aligha lehetne szemléletesebb példát találni arra, amiről a mondás szól”. A példa tehát a saját tartalmát igazolja: minden fordítás veszteséggel jár.",
+      "explanation": "Helyes: D. A szerző szerint a „fordító, áruló” csak a jelentést adja vissza, a szójátékot nem, és hozzáteszi: „Aligha lehetne szemléletesebb példát találni arra, amiről a mondás szól”. A példa tehát a saját tartalmát igazolja: minden fordítás veszteséggel jár.",
       "evidence": "Aligha lehetne szemléletesebb példát találni arra, amiről a mondás szól: minden fordítás veszteséggel jár.",
       "wrongOptions": {
+        "A": "A 7. bekezdés szerint, ha a fordító egy szójátékot nem tud visszaadni, „egy másikat teremt” – vagyis a szójátékkal igenis foglalkozni kell.",
         "B": "Túlzó általánosítás: a szerző csak egy szójáték visszaadhatatlanságáról beszél, és az esszé egésze a fordítás értelme mellett érvel.",
-        "C": "A szöveg kifejezetten olasz mondásként vezeti be; magyar eredetről szó sincs.",
-        "D": "A 7. bekezdés szerint, ha a fordító egy szójátékot nem tud visszaadni, „egy másikat teremt” – vagyis a szójátékkal igenis foglalkozni kell."
+        "C": "A szöveg kifejezetten olasz mondásként vezeti be; magyar eredetről szó sincs."
       }
     },
     {
@@ -125,7 +125,7 @@
     {
       "id": "3",
       "kind": "text",
-      "prompt": "Milyen nyelvtani sajátossága miatt kell döntenie annak, aki egy magyar szöveget angolra vagy németre fordít? Válaszoljon a szöveg kifejezésével (legfeljebb 4 szó)!",
+      "prompt": "Milyen nyelvtani sajátossága miatt kell döntenie annak, aki egy magyar szöveget angolra vagy németre fordít? Válaszoljon a szöveg kifejezésével (legfeljebb 5 szó)!",
       "answer": [
         "nincs nyelvtani nem",
         "nincs nyelvtani neme",
@@ -168,11 +168,11 @@
       "options": [
         {
           "key": "A",
-          "text": "Ha a fordítás annyira otthonossá válik az új nyelvben, hogy elfelejtjük, hogy fordítás."
+          "text": "Ha a fordító szóról szóra megőrzi az eredeti szórendjét."
         },
         {
           "key": "B",
-          "text": "Ha a fordító szóról szóra megőrzi az eredeti szórendjét."
+          "text": "Ha a fordítás annyira otthonossá válik az új nyelvben, hogy elfelejtjük, hogy fordítás."
         },
         {
           "key": "C",
@@ -183,12 +183,12 @@
           "text": "Ha a fordító neve híresebb lesz a szerzőénél."
         }
       ],
-      "answer": "A",
+      "answer": "B",
       "category": "lenyegkiemeles",
-      "explanation": "Helyes: A. Arany Hamlet-sora kapcsán írja a szerző: „Ez a fordítás legnagyobb sikere: amikor annyira otthonossá válik, hogy elfelejtjük, honnan érkezett.”",
+      "explanation": "Helyes: B. Arany Hamlet-sora kapcsán írja a szerző: „Ez a fordítás legnagyobb sikere: amikor annyira otthonossá válik, hogy elfelejtjük, honnan érkezett.”",
       "evidence": "Ez a fordítás legnagyobb sikere: amikor annyira otthonossá válik, hogy elfelejtjük, honnan érkezett.",
       "wrongOptions": {
-        "B": "A szóról szóra haladó fordítást a 2. bekezdés nehézkesnek nevezi; a szerző nem ezt tartja a legnagyobb sikernek.",
+        "A": "A szóról szóra haladó fordítást a 2. bekezdés nehézkesnek nevezi; a szerző nem ezt tartja a legnagyobb sikernek.",
         "C": "A fordítás terjedelméről a szöveg nem beszél.",
         "D": "A fordító hírnevéről nincs szó; a siker mércéje az, hogy a szöveg természetessé válik az új nyelvben."
       }
@@ -200,7 +200,7 @@
       "options": [
         {
           "key": "A",
-          "text": "Nemcsak közvetítették a világirodalmat, hanem alakították is a magyar költői nyelvet."
+          "text": "Háttérbe szorították a költők saját műveit, ezért károsak voltak."
         },
         {
           "key": "B",
@@ -208,20 +208,20 @@
         },
         {
           "key": "C",
-          "text": "Háttérbe szorították a költők saját műveit, ezért károsak voltak."
+          "text": "Nemcsak közvetítették a világirodalmat, hanem alakították is a magyar költői nyelvet."
         },
         {
           "key": "D",
           "text": "Kizárólag olasz műveket ültettek át magyarra."
         }
       ],
-      "answer": "A",
+      "answer": "C",
       "category": "lenyegkiemeles",
-      "explanation": "Helyes: A. Az 5. bekezdés szerint „Ezek a fordítások nem pusztán közvetítettek: alakították a magyar költői nyelvet is”, mert az új formák, képek és hangnemek általuk váltak a magyar irodalom eszközeivé.",
+      "explanation": "Helyes: C. Az 5. bekezdés szerint „Ezek a fordítások nem pusztán közvetítettek: alakították a magyar költői nyelvet is”, mert az új formák, képek és hangnemek általuk váltak a magyar irodalom eszközeivé.",
       "evidence": "Ezek a fordítások nem pusztán közvetítettek: alakították a magyar költői nyelvet is.",
       "wrongOptions": {
+        "A": "A szerző éppen pozitívan ítéli meg a fordításokat; Babits Dante-fordítását a modern magyar líra csúcsteljesítményének nevezi.",
         "B": "A megélhetésről a szöveg nem szól; a fordításokat irodalmi teljesítményként értékeli.",
-        "C": "A szerző éppen pozitívan ítéli meg a fordításokat; Babits Dante-fordítását a modern magyar líra csúcsteljesítményének nevezi.",
         "D": "A szöveg Dantén kívül Shakespeare-t (angol) is említi Arany kapcsán; nem csak olasz művekről van szó."
       }
     },
@@ -232,7 +232,7 @@
       "options": [
         {
           "key": "A",
-          "text": "Egy ellenvetést részben elfogad, majd korlátoz: a gépi fordítás a gyakorlati szövegeknél használható, az irodalminál nem pótolja az embert."
+          "text": "Egy személyes élményt mesél el a gépi fordítás kipróbálásáról."
         },
         {
           "key": "B",
@@ -244,17 +244,17 @@
         },
         {
           "key": "D",
-          "text": "Egy személyes élményt mesél el a gépi fordítás kipróbálásáról."
+          "text": "Egy ellenvetést részben elfogad, majd korlátoz: a gépi fordítás a gyakorlati szövegeknél használható, az irodalminál nem pótolja az embert."
         }
       ],
-      "answer": "A",
+      "answer": "D",
       "category": "szovegszerkezet",
-      "explanation": "Helyes: A. A bekezdés az ellenvetéssel indul, a „Valóban” szóval elismeri a gépi fordítás hasznát a használati utasításoknál, menetrendeknél, majd az „azonban” fordulattal megmutatja a határait az irodalmi szövegnél. Ez a megengedő–cáfoló érvelés.",
+      "explanation": "Helyes: D. A bekezdés az ellenvetéssel indul, a „Valóban” szóval elismeri a gépi fordítás hasznát a használati utasításoknál, menetrendeknél, majd az „azonban” fordulattal megmutatja a határait az irodalmi szövegnél. Ez a megengedő–cáfoló érvelés.",
       "evidence": "Az irodalmi szövegnél azonban éppen az a lényeg, ami a gépi fordításból kimarad",
       "wrongOptions": {
+        "A": "A bekezdés általános érvelés, személyes élményt nem tartalmaz.",
         "B": "Nem utasítja el teljesen: elismeri, hogy a gépi fordítás eredménye „sokszor egészen használható”.",
-        "C": "Épp ellenkezőleg: az irodalmi szövegnél a gép szerinte nem adja vissza a lényeget.",
-        "D": "A bekezdés általános érvelés, személyes élményt nem tartalmaz."
+        "C": "Épp ellenkezőleg: az irodalmi szövegnél a gép szerinte nem adja vissza a lényeget."
       }
     },
     {

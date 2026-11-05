@@ -79,7 +79,7 @@
     {
       "wrong": "Szerintem a memoriter fontos.",
       "right": "Úgy gondolom, a memoriter fontos, mert a kívülről tudott vers a sajátunkká válik: a Szózat sorai évekkel később is jelentést kaphatnak.",
-      "why": "Az indoklás és a példa nélküli vélemény nem érv; a rubrika szerint a puszta vélemény nem kap tartalmi pontot."
+      "why": "Az indoklás és a példa nélküli vélemény nem érv; a puszta vélemény alig ér tartalmi pontot."
     },
     {
       "wrong": "Hosszú, egy egész versszaknyi idézet értelmezés nélkül.",
@@ -89,7 +89,7 @@
     {
       "wrong": "Az ellenvéleményt a dolgozat egyáltalán nem említi.",
       "right": "Egy bekezdés az ellenérvről, majd annak gyengítése.",
-      "why": "Az ellenérv mérlegelése nélkül az érvelés egyoldalú, és a tartalmi pontszám a felső sávba nem kerülhet."
+      "why": "Az ellenérv mérlegelése nélkül az érvelés egyoldalú, és a tartalmi pontszám nehezen kerülhet a felső sávba."
     }
   ],
   "examTips": [
@@ -105,7 +105,7 @@
       "options": [
         {
           "key": "A",
-          "text": "Az olvasás empátiára tanít, mert a regényben más szemével látunk: aki elolvasta az Édes Annát, érzékenyebb a kiszolgáltatottságra."
+          "text": "Az Édes Anna Kosztolányi regénye."
         },
         {
           "key": "B",
@@ -117,16 +117,16 @@
         },
         {
           "key": "D",
-          "text": "Az Édes Anna Kosztolányi regénye."
+          "text": "Az olvasás empátiára tanít, mert a regényben más szemével látunk: aki elolvasta az Édes Annát, érzékenyebb a kiszolgáltatottságra."
         }
       ],
-      "answer": "A",
+      "answer": "D",
       "category": "kifejtes-ervek",
-      "explanation": "Helyes: A. Tartalmaz állítást (empátiára tanít), indoklást (más szemével látunk) és példát (Édes Anna).",
+      "explanation": "Helyes: D. Tartalmaz állítást (empátiára tanít), indoklást (más szemével látunk) és példát (Édes Anna).",
       "wrongOptions": {
+        "A": "Tárgyi adat, de nem érv.",
         "B": "Csak állítás, indoklás és példa nélkül.",
-        "C": "Tényközlés, amely nem bizonyít semmilyen állítást.",
-        "D": "Tárgyi adat, de nem érv."
+        "C": "Tényközlés, amely nem bizonyít semmilyen állítást."
       }
     },
     {
@@ -136,27 +136,27 @@
       "options": [
         {
           "key": "A",
-          "text": "A „még” szócska árulkodó: a felnőtt beszélő már nem tudja ilyen nyíltan kimutatni az érzéseit."
+          "text": "A versben ez áll: „Én még őszinte ember voltam, / ordítottam, toporzékoltam.”"
         },
         {
           "key": "B",
-          "text": "„Én még őszinte ember voltam.” Ez egy idézet a versből."
+          "text": "„Én még őszinte ember voltam” – ez egy idézet a versből."
         },
         {
           "key": "C",
-          "text": "A versben ez áll: „Én még őszinte ember voltam, ordítottam, toporzékoltam.”"
+          "text": "A „még” szócska árulkodó: a felnőtt beszélő már nem tudja ilyen nyíltan kimutatni az érzéseit."
         },
         {
           "key": "D",
           "text": "Az idézet szerint a gyerek őszinte volt."
         }
       ],
-      "answer": "A",
+      "answer": "C",
       "category": "kifejtes-ervek",
-      "explanation": "Helyes: A. Rövid idézet, amelyet azonnal értelmezés követ – ez mutatja a gondolkodást.",
+      "explanation": "Helyes: C. Rövid idézet, amelyet azonnal értelmezés követ – ez mutatja a gondolkodást.",
       "wrongOptions": {
+        "A": "Hosszabb idézet értelmezés nélkül.",
         "B": "Az idézet után nincs értelmezés, csak a nyilvánvaló megállapítás.",
-        "C": "Hosszabb idézet értelmezés nélkül.",
         "D": "Tartalmi összefoglalás, amely nem mondja meg, mi a jelentősége."
       }
     },
@@ -167,11 +167,11 @@
       "options": [
         {
           "key": "A",
-          "text": "A „lehúz, altat, befed” igei halmozás fokozást teremt: a lírai én fokozatosan elmerül a tájban."
+          "text": "A versben halmozás, fokozás és megszemélyesítés található."
         },
         {
           "key": "B",
-          "text": "A versben halmozás, fokozás és megszemélyesítés található."
+          "text": "A „lehúz, altat, befed” igei halmozás fokozást teremt: a lírai én fokozatosan elmerül a tájban."
         },
         {
           "key": "C",
@@ -182,11 +182,11 @@
           "text": "A vers szimbolista."
         }
       ],
-      "answer": "A",
+      "answer": "B",
       "category": "kifejtes-ervek",
-      "explanation": "Helyes: A. Megnevezi az eszközt, a helyét és a hatását (a lírai én elmerülése).",
+      "explanation": "Helyes: B. Megnevezi az eszközt, a helyét és a hatását (a lírai én elmerülése).",
       "wrongOptions": {
-        "B": "Felsorolás, hely és hatás nélkül.",
+        "A": "Felsorolás, hely és hatás nélkül.",
         "C": "Általánosság, nincs konkrétum.",
         "D": "Besorolás indoklás nélkül."
       }
@@ -229,11 +229,11 @@
       "options": [
         {
           "key": "A",
-          "text": "A korszakra vonatkozó ismeretet egy szövegsajátosság magyarázatára használja (pl. a szimbólum többértelműsége a szimbolizmus jellemzője)."
+          "text": "Egy bekezdésben leírja a költő teljes életrajzát."
         },
         {
           "key": "B",
-          "text": "Egy bekezdésben leírja a költő teljes életrajzát."
+          "text": "A korszakra vonatkozó ismeretet egy szövegsajátosság magyarázatára használja (pl. a szimbólum többértelműsége a szimbolizmus jellemzője)."
         },
         {
           "key": "C",
@@ -244,11 +244,11 @@
           "text": "Nem említ semmilyen kontextust, hogy ne térjen el a témától."
         }
       ],
-      "answer": "A",
+      "answer": "B",
       "category": "kifejtes-ervek",
-      "explanation": "Helyes: A. A kontextus akkor ér pontot, ha az értelmezést szolgálja, és egy konkrét szövegvonással kapcsolódik.",
+      "explanation": "Helyes: B. A kontextus akkor ér pontot, ha az értelmezést szolgálja, és egy konkrét szövegvonással kapcsolódik.",
       "wrongOptions": {
-        "B": "Az életrajz önmagáért nem elemzés; csak az értelmezéshez szükséges adatokat érdemes beépíteni.",
+        "A": "Az életrajz önmagáért nem elemzés; csak az értelmezéshez szükséges adatokat érdemes beépíteni.",
         "C": "A felsorolás nem kapcsolódik a mű értelmezéséhez.",
         "D": "Emelt szinten a kontextus elvárt; a hiánya a tartalmi pontszámot rontja."
       }

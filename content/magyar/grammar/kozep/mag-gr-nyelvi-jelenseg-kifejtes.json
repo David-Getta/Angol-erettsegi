@@ -136,11 +136,11 @@
       "options": [
         {
           "key": "A",
-          "text": "Ómagyar Mária-siralom"
+          "text": "Halotti beszéd és könyörgés"
         },
         {
           "key": "B",
-          "text": "Halotti beszéd és könyörgés"
+          "text": "Ómagyar Mária-siralom"
         },
         {
           "key": "C",
@@ -151,11 +151,11 @@
           "text": "Szózat"
         }
       ],
-      "answer": "A",
+      "answer": "B",
       "category": "nyelvi-jelenseg-kifejtes",
       "explanation": "Helyes: az Ómagyar Mária-siralom (1300 körül), amely a Leuveni kódexben maradt fenn.",
       "wrongOptions": {
-        "B": "A Halotti beszéd prózai szöveg: az első összefüggő magyar nyelvű szövegemlék.",
+        "A": "A Halotti beszéd prózai szöveg: az első összefüggő magyar nyelvű szövegemlék.",
         "C": "A Tihanyi alapítólevél latin oklevél magyar szórványokkal.",
         "D": "A Szózat Vörösmarty 1836-os verse, nem nyelvemlék."
       }
@@ -167,7 +167,7 @@
       "options": [
         {
           "key": "A",
-          "text": "szaknyelv"
+          "text": "argó"
         },
         {
           "key": "B",
@@ -179,16 +179,16 @@
         },
         {
           "key": "D",
-          "text": "argó"
+          "text": "szaknyelv"
         }
       ],
-      "answer": "A",
+      "answer": "D",
       "category": "nyelvi-jelenseg-kifejtes",
       "explanation": "Helyes: szaknyelv (orvosi). Pontos, egyértelmű szakkifejezéseket (alsó végtag, terhelésre fokozódó) és tömör, névszói szerkezetet használ.",
       "wrongOptions": {
+        "A": "Az argó a társadalom peremén élő csoportok titkos nyelve; itt nem erről van szó.",
         "B": "A szleng kötetlen, divatszavas, érzelmi színezetű; ez a mondat tárgyilagos.",
-        "C": "A nyelvjárás területi változat, jellegzetes hangtani vagy szókincsbeli eltérésekkel; itt ilyen nincs.",
-        "D": "Az argó a társadalom peremén élő csoportok titkos nyelve; itt nem erről van szó."
+        "C": "A nyelvjárás területi változat, jellegzetes hangtani vagy szókincsbeli eltérésekkel; itt ilyen nincs."
       }
     },
     {
@@ -198,7 +198,7 @@
       "options": [
         {
           "key": "A",
-          "text": "1526–1772"
+          "text": "1772-től napjainkig"
         },
         {
           "key": "B",
@@ -206,19 +206,19 @@
         },
         {
           "key": "C",
-          "text": "1772-től napjainkig"
+          "text": "1526–1772"
         },
         {
           "key": "D",
           "text": "a honfoglalásig"
         }
       ],
-      "answer": "A",
+      "answer": "C",
       "category": "nyelvi-jelenseg-kifejtes",
       "explanation": "Helyes: 1526–1772, a mohácsi csatától a felvilágosodás kezdetéig.",
       "wrongOptions": {
+        "A": "Ez az újmagyar kor (a legújabb időszakkal együtt).",
         "B": "Ez az ómagyar kor.",
-        "C": "Ez az újmagyar kor (a legújabb időszakkal együtt).",
         "D": "Ez az ősmagyar kor."
       }
     },

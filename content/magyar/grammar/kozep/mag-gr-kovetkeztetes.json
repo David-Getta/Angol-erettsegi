@@ -20,7 +20,7 @@
       "emeltOnly": false,
       "examples": [
         {
-          "en": "Szöveg: „Valakinek át kellett adnia a szobáját. Ez a valaki én voltam.” Következtetés: a nagymama a beszélő régi szobájába költözött.",
+          "en": "Szöveg: „Amikor nagymama hozzánk költözött, valakinek át kellett adnia neki a szobáját. Ez a valaki én voltam.” Következtetés: a nagymama a beszélő régi szobájába költözött.",
           "hu": "Nincs kimondva, de a két mondatból és a helyzetből logikusan adódik."
         }
       ]
@@ -60,7 +60,7 @@
     },
     {
       "title": "Irónia és rejtett jelentés",
-      "explanation": "Ironikus a megfogalmazás, ha a szerző mást ért rajta, mint amit szó szerint mond – gyakran az ellenkezőjét. Jelei: túlzó dicséret, idézőjelbe tett kifejezés, a „látszólag”, „mintha”, „tűnik” szavak. A „Ezek a döntések magánügynek tűnnek, pedig…” típusú mondat azt jelzi, hogy a látszat csal.",
+      "explanation": "Ironikus a megfogalmazás, ha a szerző mást ért rajta, mint amit szó szerint mond – gyakran az ellenkezőjét. Jelei: túlzó dicséret, idézőjelbe tett kifejezés, a „látszólag”, „mintha”, „tűnik” szavak. Az „Ezek a döntések magánügynek tűnnek, pedig…” típusú mondat azt jelzi, hogy a látszat csal.",
       "emeltOnly": true,
       "examples": [
         {
@@ -105,11 +105,11 @@
       "options": [
         {
           "key": "A",
-          "text": "Sam régi szobájában most a nagymama lakik."
+          "text": "Sam apja új irodát bérelt."
         },
         {
           "key": "B",
-          "text": "Sam apja új irodát bérelt."
+          "text": "Sam régi szobájában most a nagymama lakik."
         },
         {
           "key": "C",
@@ -120,11 +120,11 @@
           "text": "A nagymama a kis helyiségben lakik."
         }
       ],
-      "answer": "A",
+      "answer": "B",
       "category": "kovetkeztetes",
-      "explanation": "Helyes: A. A szöveg szerint a szobát a nagymama „kapta meg”, Sam pedig máshová költözött – ebből következik, hogy a régi szobában a nagymama lakik.",
+      "explanation": "Helyes: B. A szöveg szerint a szobát a nagymama „kapta meg”, Sam pedig máshová költözött – ebből következik, hogy a régi szobában a nagymama lakik.",
       "wrongOptions": {
-        "B": "Az apa irodájáról csak annyit tudunk, hogy ott állt az íróasztala; új irodáról nincs szó.",
+        "A": "Az apa irodájáról csak annyit tudunk, hogy ott állt az íróasztala; új irodáról nincs szó.",
         "C": "Sam érzéseiről a mondat nem árul el semmit – ez saját feltételezés.",
         "D": "Fordítva: a kis helyiségbe Sam költözött."
       }
@@ -136,7 +136,7 @@
       "options": [
         {
           "key": "A",
-          "text": "Óv az egyoldalú következtetéstől, és jelzi, hogy a digitális olvasásnak előnyei is vannak."
+          "text": "Visszavonja a korábbi kutatási eredményeket."
         },
         {
           "key": "B",
@@ -148,16 +148,16 @@
         },
         {
           "key": "D",
-          "text": "Visszavonja a korábbi kutatási eredményeket."
+          "text": "Óv az egyoldalú következtetéstől, és jelzi, hogy a digitális olvasásnak előnyei is vannak."
         }
       ],
-      "answer": "A",
+      "answer": "D",
       "category": "kovetkeztetes",
-      "explanation": "Helyes: A. Az „azonban” fordulatot jelez, a „hiba volna arra következtetni” pedig az egyoldalú ítélet ellen figyelmeztet; a folytatásban a szerző a képernyő előnyeit sorolja.",
+      "explanation": "Helyes: D. Az „azonban” fordulatot jelez, a „hiba volna arra következtetni” pedig az egyoldalú ítélet ellen figyelmeztet; a folytatásban a szerző a képernyő előnyeit sorolja.",
       "wrongOptions": {
+        "A": "A kutatási eredményeket nem vonja vissza, csak árnyalja a belőlük levonható következtetést.",
         "B": "A szerző nem mondja, hogy jobb, csak azt, hogy nem „eleve rosszabb”.",
-        "C": "Túlzás: a szerző korábban a papír előnyeit is elismerte.",
-        "D": "A kutatási eredményeket nem vonja vissza, csak árnyalja a belőlük levonható következtetést."
+        "C": "Túlzás: a szerző korábban a papír előnyeit is elismerte."
       }
     },
     {
@@ -198,7 +198,7 @@
       "options": [
         {
           "key": "A",
-          "text": "Az unatkozó gyerekek többsége rövid idő után magától is talál elfoglaltságot."
+          "text": "A gyerekeknek mindig felnőtt segítség kell a játékhoz."
         },
         {
           "key": "B",
@@ -206,19 +206,19 @@
         },
         {
           "key": "C",
-          "text": "A gyerekeknek mindig felnőtt segítség kell a játékhoz."
+          "text": "Az unatkozó gyerekek többsége rövid idő után magától is talál elfoglaltságot."
         },
         {
           "key": "D",
           "text": "A gyerekek nem szoktak unatkozni."
         }
       ],
-      "answer": "A",
+      "answer": "C",
       "category": "kovetkeztetes",
-      "explanation": "Helyes: A. A „néhány perc tanácstalanság után” és a „többsége kitalál valamit” együtt pontosan ezt mondja – a „többsége” szó miatt nem mindenkire igaz.",
+      "explanation": "Helyes: C. A „néhány perc tanácstalanság után” és a „többsége kitalál valamit” együtt pontosan ezt mondja – a „többsége” szó miatt nem mindenkire igaz.",
       "wrongOptions": {
+        "A": "Épp ellenkezőleg: a gyerekek magukban találnak elfoglaltságot.",
         "B": "A „néhány perc tanácstalanság” szerint nem azonnal, és a „többsége” szerint nem minden gyerek.",
-        "C": "Épp ellenkezőleg: a gyerekek magukban találnak elfoglaltságot.",
         "D": "A mondat éppen az unatkozó gyerekről szól."
       }
     },
@@ -239,7 +239,7 @@
       "options": [
         {
           "key": "A",
-          "text": "A mesék visszatérő szerkezete értéket jelent, mert biztonságot nyújt."
+          "text": "A meséket nem szabad ismételni."
         },
         {
           "key": "B",
@@ -251,16 +251,16 @@
         },
         {
           "key": "D",
-          "text": "A meséket nem szabad ismételni."
+          "text": "A mesék visszatérő szerkezete értéket jelent, mert biztonságot nyújt."
         }
       ],
-      "answer": "A",
+      "answer": "D",
       "category": "kovetkeztetes",
-      "explanation": "Helyes: A. Az „Éppen ellenkezőleg” fordulat a cáfolt nézet (a képzelet szegénysége) után a szerző saját, pozitív értékelését vezeti be.",
+      "explanation": "Helyes: D. Az „Éppen ellenkezőleg” fordulat a cáfolt nézet (a képzelet szegénysége) után a szerző saját, pozitív értékelését vezeti be.",
       "wrongOptions": {
+        "A": "Ilyen tiltásról nincs szó.",
         "B": "Ezt a nézetet a szerző éppen cáfolja.",
-        "C": "A szerző tagadja, hogy az ismétlődés a képzelet szegénysége volna.",
-        "D": "Ilyen tiltásról nincs szó."
+        "C": "A szerző tagadja, hogy az ismétlődés a képzelet szegénysége volna."
       }
     }
   ],

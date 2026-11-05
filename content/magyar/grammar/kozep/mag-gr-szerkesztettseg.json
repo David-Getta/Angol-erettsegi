@@ -105,7 +105,7 @@
       "options": [
         {
           "key": "A",
-          "text": "A mű elhelyezése és a dolgozat tételének megfogalmazása."
+          "text": "A vers összes költői eszközének felsorolása."
         },
         {
           "key": "B",
@@ -113,19 +113,19 @@
         },
         {
           "key": "C",
-          "text": "A vers összes költői eszközének felsorolása."
+          "text": "A mű elhelyezése és a dolgozat tételének megfogalmazása."
         },
         {
           "key": "D",
           "text": "Az elemzés végső következtetésének részletes kifejtése."
         }
       ],
-      "answer": "A",
+      "answer": "C",
       "category": "szerkesztettseg",
-      "explanation": "Helyes: A. A bevezetés kontextust ad és kimondja a tételt, amelyet a tárgyalás bizonyít.",
+      "explanation": "Helyes: C. A bevezetés kontextust ad és kimondja a tételt, amelyet a tárgyalás bizonyít.",
       "wrongOptions": {
+        "A": "Az eszközök elemzése a tárgyalás feladata, felsorolásuk ráadásul nem elemzés.",
         "B": "A részletes életrajz aránytalanná teszi a bevezetést, és eltér az elemzéstől.",
-        "C": "Az eszközök elemzése a tárgyalás feladata, felsorolásuk ráadásul nem elemzés.",
         "D": "A részletes következtetés a befejezésbe tartozik."
       }
     },
@@ -136,11 +136,11 @@
       "options": [
         {
           "key": "A",
-          "text": "Amikor új gondolat, új szempont következik."
+          "text": "Minden harmadik mondat után."
         },
         {
           "key": "B",
-          "text": "Minden harmadik mondat után."
+          "text": "Amikor új gondolat, új szempont következik."
         },
         {
           "key": "C",
@@ -151,11 +151,11 @@
           "text": "Minden idézet után."
         }
       ],
-      "answer": "A",
+      "answer": "B",
       "category": "szerkesztettseg",
-      "explanation": "Helyes: A. A bekezdés gondolati egység: új gondolat = új bekezdés.",
+      "explanation": "Helyes: B. A bekezdés gondolati egység: új gondolat = új bekezdés.",
       "wrongOptions": {
-        "B": "A bekezdéshatárt a gondolat dönti el, nem a mondatok száma.",
+        "A": "A bekezdéshatárt a gondolat dönti el, nem a mondatok száma.",
         "C": "Egyetlen bekezdés tagolatlan, követhetetlen szöveget eredményez.",
         "D": "Egy bekezdésben több idézet is lehet, ha ugyanazt a gondolatot bizonyítják."
       }
@@ -167,7 +167,7 @@
       "options": [
         {
           "key": "A",
-          "text": "Ez az emelkedés készíti elő a vers zárlatát."
+          "text": "Az anya mosónő volt."
         },
         {
           "key": "B",
@@ -179,16 +179,16 @@
         },
         {
           "key": "D",
-          "text": "Az anya mosónő volt."
+          "text": "Ez az emelkedés készíti elő a vers zárlatát."
         }
       ],
-      "answer": "A",
+      "answer": "D",
       "category": "szerkesztettseg",
-      "explanation": "Helyes: A. Összefoglalja az előző bekezdés eredményét (az emelkedés), és előre utal a következő témára (a zárlat).",
+      "explanation": "Helyes: D. Összefoglalja az előző bekezdés eredményét (az emelkedés), és előre utal a következő témára (a zárlat).",
       "wrongOptions": {
+        "A": "Tárgyi adat, nem jelzi a gondolatmenet irányát.",
         "B": "Életrajzi adat, nem kapcsol össze két gondolatot.",
-        "C": "Formai tény, átkötő szerep nélkül.",
-        "D": "Tárgyi adat, nem jelzi a gondolatmenet irányát."
+        "C": "Formai tény, átkötő szerep nélkül."
       }
     },
     {

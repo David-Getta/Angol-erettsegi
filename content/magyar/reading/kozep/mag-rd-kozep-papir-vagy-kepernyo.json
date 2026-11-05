@@ -69,11 +69,11 @@
       "options": [
         {
           "key": "A",
-          "text": "Az ismeretterjesztő szövegeknél."
+          "text": "Az elbeszélő szövegeknél, vagyis a történeteknél."
         },
         {
           "key": "B",
-          "text": "Az elbeszélő szövegeknél, vagyis a történeteknél."
+          "text": "Az ismeretterjesztő szövegeknél."
         },
         {
           "key": "C",
@@ -84,12 +84,12 @@
           "text": "Minden szövegtípusnál azonos volt az eredmény."
         }
       ],
-      "answer": "B",
+      "answer": "A",
       "category": "informacio-visszakereses",
-      "explanation": "Helyes: B. A szöveg szerint „Az elbeszélő szövegeknél, vagyis a történeteknél viszont alig volt különbség.” A kérdésben a NEM szó a döntő: a különbség hiányát kell megtalálni.",
+      "explanation": "Helyes: A. A szöveg szerint „Az elbeszélő szövegeknél, vagyis a történeteknél viszont alig volt különbség.” A kérdésben a NEM szó a döntő: a különbség hiányát kell megtalálni.",
       "evidence": "Az elbeszélő szövegeknél, vagyis a történeteknél viszont alig volt különbség.",
       "wrongOptions": {
-        "A": "Éppen az ismeretterjesztő, magyarázó szövegeknél teljesítettek jobban a papíron olvasók, ott tehát volt különbség.",
+        "B": "Éppen az ismeretterjesztő, magyarázó szövegeknél teljesítettek jobban a papíron olvasók, ott tehát volt különbség.",
         "C": "A magyarázó szövegek az ismeretterjesztőkkel együtt szerepelnek: ezeknél a papír előnyét mutatta ki az elemzés.",
         "D": "A szöveg két szövegtípust megkülönböztet, és csak az egyiknél nem talált érdemi eltérést; az eredmény tehát nem volt mindenütt azonos."
       }
@@ -157,7 +157,7 @@
       "options": [
         {
           "key": "A",
-          "text": "A nyomtatott könyvben a szöveg helye és a könyv tapintható terjedelme segíti a tájékozódást."
+          "text": "A könyvek fontos mondatai mindig a bal oldal alján vannak."
         },
         {
           "key": "B",
@@ -165,20 +165,20 @@
         },
         {
           "key": "C",
-          "text": "A könyvek fontos mondatai mindig a bal oldal alján vannak."
+          "text": "A nyomtatott könyvben a szöveg helye és a könyv tapintható terjedelme segíti a tájékozódást."
         },
         {
           "key": "D",
           "text": "A digitális szöveg rövidebb, mint a nyomtatott."
         }
       ],
-      "answer": "A",
+      "answer": "C",
       "category": "lenyegkiemeles",
-      "explanation": "Helyes: A. A bekezdés tételmondata: „A papír melletti másik érv a tájékozódás.” A további mondatok ezt fejtik ki (emlékszünk a mondat helyére, a kezünk érzi a terjedelmet, a képernyőn ezek a támpontok elmosódnak).",
+      "explanation": "Helyes: C. A bekezdés tételmondata: „A papír melletti másik érv a tájékozódás.” A további mondatok ezt fejtik ki (emlékszünk a mondat helyére, a kezünk érzi a terjedelmet, a képernyőn ezek a támpontok elmosódnak).",
       "evidence": "A papír melletti másik érv a tájékozódás.",
       "wrongOptions": {
+        "A": "A bal oldal alja csak egy példa arra, hogy emlékszünk egy mondat helyére; nem általános szabály, és nem a bekezdés fő gondolata.",
         "B": "A betűk nagyítása az 5. bekezdésben, a képernyő előnyei között szerepel, nem a 4. bekezdés gondolata.",
-        "C": "A bal oldal alja csak egy példa arra, hogy emlékszünk egy mondat helyére; nem általános szabály, és nem a bekezdés fő gondolata.",
         "D": "A szöveg nem állítja, hogy a digitális szöveg rövidebb; a képernyős szöveget „végtelen szalagnak” nevezi, vagyis a tagolatlanságát emeli ki."
       }
     },
@@ -198,7 +198,7 @@
       "options": [
         {
           "key": "A",
-          "text": "Árnyalja a korábbiakat: bemutatja a digitális olvasás előnyeit, hogy ne lehessen egyoldalú következtetést levonni."
+          "text": "A szerző személyes élményét meséli el."
         },
         {
           "key": "B",
@@ -210,17 +210,17 @@
         },
         {
           "key": "D",
-          "text": "A szerző személyes élményét meséli el."
+          "text": "Árnyalja a korábbiakat: bemutatja a digitális olvasás előnyeit, hogy ne lehessen egyoldalú következtetést levonni."
         }
       ],
-      "answer": "A",
+      "answer": "D",
       "category": "szovegszerkezet",
-      "explanation": "Helyes: A. Az 5. bekezdés az „azonban” kötőszóval fordulatot jelez: „Mindebből azonban hiba volna arra következtetni, hogy a digitális olvasás eleve rosszabb.” Ezután a képernyő előnyeit sorolja, vagyis ellenpontozza és árnyalja a papír mellett szóló érveket.",
+      "explanation": "Helyes: D. Az 5. bekezdés az „azonban” kötőszóval fordulatot jelez: „Mindebből azonban hiba volna arra következtetni, hogy a digitális olvasás eleve rosszabb.” Ezután a képernyő előnyeit sorolja, vagyis ellenpontozza és árnyalja a papír mellett szóló érveket.",
       "evidence": "Mindebből azonban hiba volna arra következtetni, hogy a digitális olvasás eleve rosszabb.",
       "wrongOptions": {
+        "A": "A bekezdés általános megállapításokat tesz (kínál, kikereshetjük, felnagyíthatjuk), személyes történetet nem mesél el.",
         "B": "A kutatásról a 2. bekezdés szól, és ott sem a módszerről, hanem az eredményekről; az 5. bekezdés nem tér vissza rá.",
-        "C": "A „könyvtár” szó csak hasonlatként szerepel (egész könyvtárat vihetünk magunkkal); a bekezdés témája a digitális olvasás előnyei, nem a könyvtárak jövője.",
-        "D": "A bekezdés általános megállapításokat tesz (kínál, kikereshetjük, felnagyíthatjuk), személyes történetet nem mesél el."
+        "C": "A „könyvtár” szó csak képletes kifejezésben szerepel (egész könyvtárat vihetünk magunkkal); a bekezdés témája a digitális olvasás előnyei, nem a könyvtárak jövője."
       }
     },
     {
@@ -230,11 +230,11 @@
       "options": [
         {
           "key": "A",
-          "text": "Publicisztika: véleményt kifejtő, tanácsot adó cikk."
+          "text": "Tudományos szakcikk módszertani leírással és hivatkozásokkal."
         },
         {
           "key": "B",
-          "text": "Tudományos szakcikk módszertani leírással és hivatkozásokkal."
+          "text": "Publicisztika: véleményt kifejtő, tanácsot adó cikk."
         },
         {
           "key": "C",
@@ -245,12 +245,12 @@
           "text": "Hivatalos levél."
         }
       ],
-      "answer": "A",
+      "answer": "B",
       "category": "szovegszerkezet",
-      "explanation": "Helyes: A. A szöveg egy hétköznapi kérdésből indul, kutatási eredményekre hivatkozik, de a végén saját álláspontot fogalmaz meg és tanácsot ad az olvasónak („A kérdés tehát nem az, hogy papír vagy képernyő, hanem az, hogy tudatosan választunk-e.”) – ez a publicisztika jellemzője.",
+      "explanation": "Helyes: B. A szöveg egy hétköznapi kérdésből indul, kutatási eredményekre hivatkozik, de a végén saját álláspontot fogalmaz meg és tanácsot ad az olvasónak („A kérdés tehát nem az, hogy papír vagy képernyő, hanem az, hogy tudatosan választunk-e.”) – ez a publicisztika jellemzője.",
       "evidence": "A kérdés tehát nem az, hogy papír vagy képernyő, hanem az, hogy tudatosan választunk-e.",
       "wrongOptions": {
-        "B": "Tudományos szakcikkben pontos hivatkozások, módszertani leírás, adatok szerepelnének; itt a kutatás csak egy-két mondatban, közérthetően jelenik meg, a hangnem pedig személyes, tanácsadó.",
+        "A": "Tudományos szakcikkben pontos hivatkozások, módszertani leírás, adatok szerepelnének; itt a kutatás csak egy-két mondatban, közérthetően jelenik meg, a hangnem pedig személyes, tanácsadó.",
         "C": "A novella fikciós elbeszélés szereplőkkel és cselekménnyel; ez a szöveg érvel és tájékoztat, nem történetet mesél.",
         "D": "Hivatalos levélnek megszólítása, címzettje, hivatalos ügye volna; ez a szöveg a nagyközönséghez szól."
       }

@@ -13,22 +13,52 @@
   "type": "muveltsegi",
   "instructions": "Párosítsa a világirodalmi műveket a szerzőjükkel! Minden műhöz írja be a szerző betűjelét. Egy szerző csak egyszer használható, két szerző fölösleges. A 0. sor a példa.",
   "options": [
-    { "key": "A", "text": "William Shakespeare" },
-    { "key": "B", "text": "Szophoklész" },
-    { "key": "C", "text": "Molière" },
-    { "key": "D", "text": "Johann Wolfgang von Goethe" },
-    { "key": "E", "text": "Fjodor Mihajlovics Dosztojevszkij" },
-    { "key": "F", "text": "Gustave Flaubert" },
-    { "key": "G", "text": "Franz Kafka" },
-    { "key": "H", "text": "Anton Pavlovics Csehov" },
-    { "key": "I", "text": "Lev Nyikolajevics Tolsztoj" },
-    { "key": "J", "text": "Henrik Ibsen" }
+    {
+      "key": "A",
+      "text": "Anton Pavlovics Csehov"
+    },
+    {
+      "key": "B",
+      "text": "Fjodor Mihajlovics Dosztojevszkij"
+    },
+    {
+      "key": "C",
+      "text": "Franz Kafka"
+    },
+    {
+      "key": "D",
+      "text": "Gustave Flaubert"
+    },
+    {
+      "key": "E",
+      "text": "Henrik Ibsen"
+    },
+    {
+      "key": "F",
+      "text": "Johann Wolfgang von Goethe"
+    },
+    {
+      "key": "G",
+      "text": "Lev Nyikolajevics Tolsztoj"
+    },
+    {
+      "key": "H",
+      "text": "Molière"
+    },
+    {
+      "key": "I",
+      "text": "Szophoklész"
+    },
+    {
+      "key": "J",
+      "text": "William Shakespeare"
+    }
   ],
   "example": {
     "id": "0",
     "kind": "match",
     "prompt": "Hamlet, dán királyfi (tragédia)",
-    "answer": "A",
+    "answer": "J",
     "category": "irodalomtorteneti-kontextus",
     "explanation": "Shakespeare tragédiája (1600 körül); magyarul legismertebb fordítása Arany Jánosé (1867)."
   },
@@ -37,7 +67,7 @@
       "id": "1",
       "kind": "match",
       "prompt": "Antigoné (tragédia)",
-      "answer": "B",
+      "answer": "I",
       "category": "irodalomtorteneti-kontextus",
       "explanation": "Helyes: Szophoklész. Az ókori görög tragédia (i. e. 5. század) Antigoné és Kreón konfliktusáról szól: az isteni (íratlan) és az emberi (állami) törvény ütközése."
     },
@@ -45,7 +75,7 @@
       "id": "2",
       "kind": "match",
       "prompt": "Tartuffe (vígjáték)",
-      "answer": "C",
+      "answer": "H",
       "category": "irodalomtorteneti-kontextus",
       "explanation": "Helyes: Molière. A francia klasszicista vígjáték az álszent Tartuffe-öt és a hiszékeny Orgont állítja középpontba; bemutatását az egyházi körök sokáig akadályozták."
     },
@@ -53,7 +83,7 @@
       "id": "3",
       "kind": "match",
       "prompt": "Faust (drámai költemény)",
-      "answer": "D",
+      "answer": "F",
       "category": "irodalomtorteneti-kontextus",
       "explanation": "Helyes: Goethe. A Faust két részből áll (az első 1808-ban, a második 1832-ben, a szerző halála után jelent meg); a tudós Faust és Mefisztó fogadása az emberi lét értelmének kérdését veti fel – Madách Az ember tragédiájának egyik előképe."
     },
@@ -61,7 +91,7 @@
       "id": "4",
       "kind": "match",
       "prompt": "Bűn és bűnhődés (regény)",
-      "answer": "E",
+      "answer": "B",
       "category": "irodalomtorteneti-kontextus",
       "explanation": "Helyes: Dosztojevszkij. Az 1866-os regény Raszkolnyikov gyilkosságát és lelki vívódását követi; a lélektani realizmus és az eszmeregény jellemzi. Gyakori tévesztés Tolsztojjal, akinek fő művei a Háború és béke, az Anna Karenina és az Ivan Iljics halála."
     },
@@ -69,7 +99,7 @@
       "id": "5",
       "kind": "match",
       "prompt": "Bovaryné (regény)",
-      "answer": "F",
+      "answer": "D",
       "category": "irodalomtorteneti-kontextus",
       "explanation": "Helyes: Flaubert. A francia realista regény Emma Bovary álmai és a vidéki valóság közötti szakadékot mutatja be; az elbeszélő személytelenségéről és stílusbeli pontosságáról híres."
     },
@@ -77,7 +107,7 @@
       "id": "6",
       "kind": "match",
       "prompt": "Az átváltozás (kisregény)",
-      "answer": "G",
+      "answer": "C",
       "category": "irodalomtorteneti-kontextus",
       "explanation": "Helyes: Kafka. Az 1915-ben megjelent mű főhőse, Gregor Samsa egy reggel féreggé változva ébred; az abszurd helyzetet az elbeszélés tárgyilagos hangon kezeli – a modern próza egyik alapműve."
     },
@@ -85,7 +115,7 @@
       "id": "7",
       "kind": "match",
       "prompt": "Sirály (dráma)",
-      "answer": "H",
+      "answer": "A",
       "category": "irodalomtorteneti-kontextus",
       "explanation": "Helyes: Csehov. Az orosz drámaíró „komédiának” nevezett darabja (1896) a művészi ambíciók és a beteljesületlen szerelmek drámája; a kevés külső cselekmény és a hangulat a modern dráma felé mutat. Ibsen, akivel gyakran tévesztik, a norvég társadalmi dráma mestere (Nóra, A vadkacsa)."
     }

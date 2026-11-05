@@ -66,7 +66,7 @@
       "options": [
         {
           "key": "A",
-          "text": "Feszültséget kelt, és előre utal a szöveg egy későbbi részére, ahol a manx nyelv újjáéledéséről lesz szó."
+          "text": "Cáfolja, hogy Ned Maddrell lett volna az utolsó anyanyelvi beszélő."
         },
         {
           "key": "B",
@@ -74,20 +74,20 @@
         },
         {
           "key": "C",
-          "text": "Cáfolja, hogy Ned Maddrell lett volna az utolsó anyanyelvi beszélő."
+          "text": "Feszültséget kelt, és előre utal a szöveg egy későbbi részére, ahol a manx nyelv újjáéledéséről lesz szó."
         },
         {
           "key": "D",
           "text": "Bejelenti, hogy a szöveg a Man-sziget történetéről fog szólni."
         }
       ],
-      "answer": "A",
+      "answer": "C",
       "category": "szovegszerkezet",
-      "explanation": "Helyes: A. A két mondat előreutalás (anticipáció): a szerző felcsigázza az olvasót, és a 6. bekezdésben valóban visszatér a manxhoz („És a manx?”), amelyet ma újra tanítanak. Ez keretes szerkezetet is teremt.",
+      "explanation": "Helyes: C. A két mondat előreutalás (anticipáció): a szerző felcsigázza az olvasót, és a 6. bekezdésben valóban visszatér a manxhoz („És a manx?”), amelyet ma újra tanítanak. A manx története így összeköti a szöveg elejét a későbbi gondolatmenettel.",
       "evidence": "A történet azonban nem ért véget. Erre még visszatérünk.",
       "wrongOptions": {
+        "A": "A szöveg nem vitatja, hogy Maddrell volt az utolsó anyanyelvi beszélő; a „nem ért véget” az újjáélesztésre utal.",
         "B": "A két mondat nem összegez semmit, csak előrejelez; a szöveg összegzése a zárásban található.",
-        "C": "A szöveg nem vitatja, hogy Maddrell volt az utolsó anyanyelvi beszélő; a „nem ért véget” az újjáélesztésre utal.",
         "D": "A szöveg témája a nyelvek eltűnése és megmaradása általában; a Man-sziget csak egy keretet adó példa."
       }
     },
@@ -143,11 +143,11 @@
       "options": [
         {
           "key": "A",
-          "text": "A nagyszülők anyanyelvként beszélik a nyelvet, a szülők értik, de alig használják, a gyerekek már csak néhány szót ismernek."
+          "text": "A nagyszülők nem értik a nyelvet, a szülők tanulják, a gyerekek anyanyelvként beszélik."
         },
         {
           "key": "B",
-          "text": "A nagyszülők nem értik a nyelvet, a szülők tanulják, a gyerekek anyanyelvként beszélik."
+          "text": "A nagyszülők anyanyelvként beszélik a nyelvet, a szülők értik, de alig használják, a gyerekek már csak néhány szót ismernek."
         },
         {
           "key": "C",
@@ -158,12 +158,12 @@
           "text": "A gyerekek tanítják a nyelvre a szüleiket."
         }
       ],
-      "answer": "A",
+      "answer": "B",
       "category": "informacio-visszakereses",
-      "explanation": "Helyes: A. A szöveg szerint „a nagyszülők még anyanyelvükként beszélik a nyelvet, a szülők értik, de alig használják, a gyerekek pedig már csak néhány szót ismernek belőle”.",
+      "explanation": "Helyes: B. A szöveg szerint „a nagyszülők még anyanyelvükként beszélik a nyelvet, a szülők értik, de alig használják, a gyerekek pedig már csak néhány szót ismernek belőle”.",
       "evidence": "a nagyszülők még anyanyelvükként beszélik a nyelvet, a szülők értik, de alig használják",
       "wrongOptions": {
-        "B": "Fordított sorrend: ez inkább az újjáélesztés helyzetére emlékeztet, a nyelvcserére nem.",
+        "A": "Fordított sorrend: ez inkább az újjáélesztés helyzetére emlékeztet, a nyelvcserére nem.",
         "C": "A három nemzedék éppen különböző mértékben ismeri a nyelvet – ez a nyelvcsere lényege.",
         "D": "Erről a szöveg nem beszél; a gyerekek tudnak a legkevésbé a közösség nyelvén."
       }
@@ -240,7 +240,7 @@
       "options": [
         {
           "key": "A",
-          "text": "Hogy a sok egyéni, családi döntés együtt egy nyelv sorsáról dönt, tehát közösségi jelentősége van."
+          "text": "Hogy a szórványban élő családok már nem beszélnek magyarul."
         },
         {
           "key": "B",
@@ -252,17 +252,17 @@
         },
         {
           "key": "D",
-          "text": "Hogy a szórványban élő családok már nem beszélnek magyarul."
+          "text": "Hogy a sok egyéni, családi döntés együtt egy nyelv sorsáról dönt, tehát közösségi jelentősége van."
         }
       ],
-      "answer": "A",
+      "answer": "D",
       "category": "kovetkeztetes",
-      "explanation": "Helyes: A. A „tűnnek” ige jelzi, hogy a látszat csal: a mondat folytatása szerint ezek a döntések „együtt döntik el, hogy egy nyelv száz év múlva is szól-e majd”.",
+      "explanation": "Helyes: D. A „tűnnek” ige jelzi, hogy a látszat csal: a mondat folytatása szerint ezek a döntések „együtt döntik el, hogy egy nyelv száz év múlva is szól-e majd”.",
       "evidence": "Ezek a döntések magánügynek tűnnek, pedig együtt döntik el, hogy egy nyelv száz év múlva is szól-e majd.",
       "wrongOptions": {
+        "A": "A szöveg szerint ezek a családok még döntenek a nyelvről – vagyis van választásuk, beszélik a magyart.",
         "B": "A „pedig” kötőszó éppen azt jelzi, hogy a döntések nem csak magánügyek.",
-        "C": "Állami előírásról a szöveg nem beszél; a szerző a családok saját döntésének súlyát hangsúlyozza.",
-        "D": "A szöveg szerint ezek a családok még döntenek a nyelvről – vagyis van választásuk, beszélik a magyart."
+        "C": "Állami előírásról a szöveg nem beszél; a szerző a családok saját döntésének súlyát hangsúlyozza."
       }
     },
     {
@@ -272,11 +272,11 @@
       "options": [
         {
           "key": "A",
-          "text": "Hasonlattal és az azt kiegészítő ellentéttel: a nyelvek is törékenyek, mint a természet, de a kihalt nyelvből – a kihalt élőlénnyel ellentétben – nem marad kövület."
+          "text": "Alliterációval: a mondatok azonos hanggal kezdődnek."
         },
         {
           "key": "B",
-          "text": "Alliterációval: a mondatok azonos hanggal kezdődnek."
+          "text": "Hasonlattal és az azt kiegészítő ellentéttel: a nyelvek is törékenyek, mint a természet, de a kihalt nyelvből – a kihalt élőlénnyel ellentétben – nem marad kövület."
         },
         {
           "key": "C",
@@ -287,12 +287,12 @@
           "text": "Iróniával: valójában a nyelvek eltűnését kívánja."
         }
       ],
-      "answer": "A",
+      "answer": "B",
       "category": "kovetkeztetes",
-      "explanation": "Helyes: A. A „törékeny, mint a természeté” hasonlat (mint kötőszó), a „A különbség csak annyi” fordulat pedig ellentétet állít: a kihalt fajról kövület tanúskodik, a kihalt nyelv hangjáról nem. Ez a zárókép a nyelvhalál visszafordíthatatlanságát érzékelteti.",
+      "explanation": "Helyes: B. A „törékeny, mint a természeté” hasonlat (mint kötőszó), az „A különbség csak annyi” fordulat pedig ellentétet állít: a kihalt fajról kövület tanúskodik, a kihalt nyelv hangjáról nem. Ez a zárókép a nyelvhalál visszafordíthatatlanságát érzékelteti.",
       "evidence": "A nyelvek sokfélesége törékeny, mint a természeté.",
       "wrongOptions": {
-        "B": "A mondatok nem azonos hanggal kezdődnek; alliteráció nem jellemzi a bekezdést.",
+        "A": "A mondatok nem azonos hanggal kezdődnek; alliteráció nem jellemzi a bekezdést.",
         "C": "Különböző érzékterületek összekapcsolása (pl. „sárga hang”) nem szerepel a bekezdésben.",
         "D": "A szerző komolyan aggódik a nyelvekért; az egész szöveg a megőrzésük mellett érvel, irónia nincs benne."
       }

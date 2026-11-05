@@ -105,11 +105,11 @@
       "options": [
         {
           "key": "A",
-          "text": "szótő + képző + jel + rag"
+          "text": "szótő + rag + jel + képző"
         },
         {
           "key": "B",
-          "text": "szótő + rag + jel + képző"
+          "text": "szótő + képző + jel + rag"
         },
         {
           "key": "C",
@@ -120,11 +120,11 @@
           "text": "szótő + jel + képző + rag"
         }
       ],
-      "answer": "A",
+      "answer": "B",
       "category": "nyelvtani-fogalom",
-      "explanation": "Helyes: A. Például tanul + ó + k + nak: a képző a tőhöz kapcsolódik, utána a jel, végül a rag.",
+      "explanation": "Helyes: B. Például tanul + ó + k + nak: a képző a tőhöz kapcsolódik, utána a jel, végül a rag.",
       "wrongOptions": {
-        "B": "A rag mindig a szó végén áll, utána nem következhet más toldalék.",
+        "A": "A rag mindig a szó végén áll, utána nem következhet más toldalék.",
         "C": "A képző nem előzheti meg a tövet (az igekötő nem képző).",
         "D": "A képző a jel előtt áll (tanuló + k, nem tanul + k + ó)."
       }
@@ -136,7 +136,7 @@
       "options": [
         {
           "key": "A",
-          "text": "beálló melléknévi igenév"
+          "text": "főnévi igenév"
         },
         {
           "key": "B",
@@ -148,16 +148,16 @@
         },
         {
           "key": "D",
-          "text": "főnévi igenév"
+          "text": "beálló melléknévi igenév"
         }
       ],
-      "answer": "A",
+      "answer": "D",
       "category": "nyelvtani-fogalom",
       "explanation": "Helyes: beálló melléknévi igenév. Az -andó/-endő képző jövőben elvégzendő cselekvést jelöl, és a főnév előtt jelzőként áll.",
       "wrongOptions": {
+        "A": "A főnévi igenév képzője -ni (megírni).",
         "B": "A folyamatos melléknévi igenév képzője -ó/-ő (megíró).",
-        "C": "A határozói igenév képzője -va/-ve (megírva).",
-        "D": "A főnévi igenév képzője -ni (megírni)."
+        "C": "A határozói igenév képzője -va/-ve (megírva)."
       }
     },
     {
@@ -167,7 +167,7 @@
       "options": [
         {
           "key": "A",
-          "text": "időhatározó"
+          "text": "tárgy"
         },
         {
           "key": "B",
@@ -175,19 +175,19 @@
         },
         {
           "key": "C",
-          "text": "tárgy"
+          "text": "időhatározó"
         },
         {
           "key": "D",
           "text": "mennyiségjelző"
         }
       ],
-      "answer": "A",
+      "answer": "C",
       "category": "nyelvtani-fogalom",
       "explanation": "Helyes: időhatározó. A mikor? meddig? kérdésre felel, és az állítmányt bővíti.",
       "wrongOptions": {
+        "A": "A tárgy a mit? kérdésre felel, és -t raggal jelölt; az „ugat” itt tárgyatlan.",
         "B": "A helyhatározó a hol? kérdésre felel.",
-        "C": "A tárgy a mit? kérdésre felel, és -t raggal jelölt; az „ugat” itt tárgyatlan.",
         "D": "Az „egész” itt az „éjjel” szót bővíti, de az egész szerkezet az ige időhatározója."
       }
     },
@@ -229,7 +229,7 @@
       "options": [
         {
           "key": "A",
-          "text": "A többjelentésű szó jelentései összefüggnek, az azonos alakú szavak jelentései között nincs kapcsolat."
+          "text": "Az azonos alakú szavakat másképp írjuk."
         },
         {
           "key": "B",
@@ -241,16 +241,16 @@
         },
         {
           "key": "D",
-          "text": "Az azonos alakú szavakat másképp írjuk."
+          "text": "A többjelentésű szó jelentései összefüggnek, az azonos alakú szavak jelentései között nincs kapcsolat."
         }
       ],
-      "answer": "A",
+      "answer": "D",
       "category": "nyelvtani-fogalom",
-      "explanation": "Helyes: A. A toll jelentései összefüggnek (poliszémia), az ég (égbolt – lángol) jelentései nem (homonímia).",
+      "explanation": "Helyes: D. A toll jelentései összefüggnek (poliszémia), az ég (égbolt – lángol) jelentései nem (homonímia).",
       "wrongOptions": {
+        "A": "Az azonos alakú szavak hangalakja és írása is azonos.",
         "B": "A két jelenség megkülönböztetése a jelentéskapcsolaton alapul.",
-        "C": "A szófajnak nincs köze a besoroláshoz.",
-        "D": "Az azonos alakú szavak hangalakja és írása is azonos."
+        "C": "A szófajnak nincs köze a besoroláshoz."
       }
     },
     {

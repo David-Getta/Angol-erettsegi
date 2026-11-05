@@ -83,7 +83,7 @@
     },
     {
       "title": "Gyakori betűhibák: j/ly, rövid és hosszú hangok",
-      "explanation": "A j és ly írása hagyomány szerinti, ezért a szóképet meg kell tanulni (ly: hely, folyó, gólya, mély, király, pehely, golyó; j: fej, sajt, bója, muszáj, fejsze). Az -ít képző mindig hosszú (tanít, épít, segít), a -ul/-ül határozórag rövid (magyarul, németül), a -ú/-ű melléknévképző hosszú (hosszú lábú, keserű). Figyelj az „egyelőre” (= egyelőre még nem) és az „egyenlőre” (= egyenlő méretűre) jelentéskülönbségére.",
+      "explanation": "A j és ly írása hagyomány szerinti, ezért a szóképet meg kell tanulni (ly: hely, folyó, gólya, mély, király, pehely, golyó; j: fej, sajt, bója, muszáj, fejsze). Az -ít képző mindig hosszú (tanít, épít, segít), a -ul/-ül határozórag rövid (magyarul, németül), a -ú/-ű melléknévképző hosszú (hosszú lábú, kék szemű). Figyelj az „egyelőre” (= most még, átmenetileg) és az „egyenlőre” (= egyenlő méretűre) jelentéskülönbségére.",
       "emeltOnly": false,
       "examples": [
         {
@@ -133,7 +133,7 @@
       "options": [
         {
           "key": "A",
-          "text": "pehely"
+          "text": "pelyhej"
         },
         {
           "key": "B",
@@ -141,19 +141,19 @@
         },
         {
           "key": "C",
-          "text": "pelyhej"
+          "text": "pehely"
         },
         {
           "key": "D",
           "text": "pehelly"
         }
       ],
-      "answer": "A",
+      "answer": "C",
       "category": "helyesiras",
       "explanation": "Helyes: pehely – ly-nal, a hagyomány szerinti írásmód szerint (vö. pelyhek).",
       "wrongOptions": {
+        "A": "Torzult alak, ilyen szó nincs.",
         "B": "Kiejtés szerinti alak, de a szót ly-nal írjuk.",
-        "C": "Torzult alak, ilyen szó nincs.",
         "D": "A kettőzött lly hosszú hangot jelölne, a szóvégen rövid ly áll."
       }
     },
@@ -195,7 +195,7 @@
       "options": [
         {
           "key": "A",
-          "text": "Kárpát-medencei"
+          "text": "Kárpátmedencei"
         },
         {
           "key": "B",
@@ -207,16 +207,16 @@
         },
         {
           "key": "D",
-          "text": "Kárpátmedencei"
+          "text": "Kárpát-medencei"
         }
       ],
-      "answer": "A",
+      "answer": "D",
       "category": "helyesiras",
       "explanation": "Helyes: Kárpát-medencei. A kötőjeles földrajzi név -i képzős származéka megtartja a kötőjelet és a nagy kezdőbetűt.",
       "wrongOptions": {
+        "A": "A két elemet nem írjuk egybe.",
         "B": "A tulajdonnévi előtag nagybetűs marad.",
-        "C": "A kötőjel nem maradhat el.",
-        "D": "A két elemet nem írjuk egybe."
+        "C": "A kötőjel nem maradhat el."
       }
     },
     {
@@ -236,11 +236,11 @@
       "options": [
         {
           "key": "A",
-          "text": "Egyelőre nem tudom, eljövök-e."
+          "text": "Egyenlőre nem tudom, eljövök-e."
         },
         {
           "key": "B",
-          "text": "Egyenlőre nem tudom, eljövök-e."
+          "text": "Egyelőre nem tudom, eljövök-e."
         },
         {
           "key": "C",
@@ -251,11 +251,11 @@
           "text": "Egyenlőre nem tudom eljövök e."
         }
       ],
-      "answer": "A",
+      "answer": "B",
       "category": "helyesiras",
-      "explanation": "Helyes: A. Az „egyelőre” (= most még) a helyes szó, és a mellékmondat elé vessző kell; az -e kérdőszócskát kötőjellel kapcsoljuk.",
+      "explanation": "Helyes: B. Az „egyelőre” (= most még) a helyes szó, és a mellékmondat elé vessző kell; az -e kérdőszócskát kötőjellel kapcsoljuk.",
       "wrongOptions": {
-        "B": "Az „egyenlőre” jelentése: egyenlő méretűre – itt nem ez kell.",
+        "A": "Az „egyenlőre” jelentése: egyenlő méretűre – itt nem ez kell.",
         "C": "Hiányzik a vessző a mellékmondat előtt.",
         "D": "Rossz szó, hiányzó vessző, és az -e kötőjel nélkül áll."
       }

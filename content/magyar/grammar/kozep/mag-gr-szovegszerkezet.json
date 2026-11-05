@@ -136,11 +136,11 @@
       "options": [
         {
           "key": "A",
-          "text": "glossza"
+          "text": "vezércikk"
         },
         {
           "key": "B",
-          "text": "vezércikk"
+          "text": "glossza"
         },
         {
           "key": "C",
@@ -151,11 +151,11 @@
           "text": "hír"
         }
       ],
-      "answer": "A",
+      "answer": "B",
       "category": "szovegszerkezet",
       "explanation": "Helyes: glossza. Rövid, ironikus, gyakran egy aktuális hírre reagáló, csattanóval záruló publicisztikai műfaj.",
       "wrongOptions": {
-        "B": "A vezércikk hosszabb, a lap hivatalos álláspontját fejti ki, nem feltétlenül ironikus.",
+        "A": "A vezércikk hosszabb, a lap hivatalos álláspontját fejti ki, nem feltétlenül ironikus.",
         "C": "A riport helyszíni tapasztalatokra épülő, hosszabb tényfeltáró műfaj.",
         "D": "A hír tényeket közöl, véleményt és iróniát nem tartalmaz."
       }
@@ -167,7 +167,7 @@
       "options": [
         {
           "key": "A",
-          "text": "megengedés: a szerző egy ellenvetést mutat be, mielőtt pontosítja álláspontját"
+          "text": "példa: a szerző egy konkrét esetet mesél el"
         },
         {
           "key": "B",
@@ -175,19 +175,19 @@
         },
         {
           "key": "C",
-          "text": "példa: a szerző egy konkrét esetet mesél el"
+          "text": "megengedés: a szerző egy ellenvetést mutat be, mielőtt pontosítja álláspontját"
         },
         {
           "key": "D",
           "text": "bevezetés: a szerző megnevezi a témát"
         }
       ],
-      "answer": "A",
+      "answer": "C",
       "category": "szovegszerkezet",
-      "explanation": "Helyes: A. A „Persze” megengedő szó, és a mondat az ellenoldal érveit vezeti be („mit felhozni … ellen”).",
+      "explanation": "Helyes: C. A „Persze” megengedő szó, és a mondat az ellenoldal érveit vezeti be („mit felhozni … ellen”).",
       "wrongOptions": {
+        "A": "Példát a „például”, „gondoljunk csak” jelezne.",
         "B": "Összegzést a „tehát”, „vagyis”, „összességében” vezetne be.",
-        "C": "Példát a „például”, „gondoljunk csak” jelezne.",
         "D": "A témát a szöveg eleje nevezi meg; ez a mondat már a gondolatmenet közepén áll."
       }
     },
@@ -198,7 +198,7 @@
       "options": [
         {
           "key": "A",
-          "text": "keretes szerkezet"
+          "text": "kérdés–felelet sorozat"
         },
         {
           "key": "B",
@@ -210,16 +210,16 @@
         },
         {
           "key": "D",
-          "text": "kérdés–felelet sorozat"
+          "text": "keretes szerkezet"
         }
       ],
-      "answer": "A",
+      "answer": "D",
       "category": "szovegszerkezet",
       "explanation": "Helyes: keretes szerkezet. A zárás visszatér a bevezetés témájához és képéhez, így a szöveg kerek egésszé válik.",
       "wrongOptions": {
+        "A": "Csak a kezdő mondat kérdés; a szöveg nem kérdések és válaszok sorozata.",
         "B": "Időrendi szerkezet eseménysorra épül, ez az esszé gondolati.",
-        "C": "Nincs két párhuzamos szereplő.",
-        "D": "Csak a kezdő mondat kérdés; a szöveg nem kérdések és válaszok sorozata."
+        "C": "Nincs két párhuzamos szereplő."
       }
     },
     {
@@ -239,7 +239,7 @@
       "options": [
         {
           "key": "A",
-          "text": "előreutalás: a téma a szöveg későbbi részében folytatódik"
+          "text": "a szöveg befejezését"
         },
         {
           "key": "B",
@@ -247,19 +247,19 @@
         },
         {
           "key": "C",
-          "text": "a szöveg befejezését"
+          "text": "előreutalás: a téma a szöveg későbbi részében folytatódik"
         },
         {
           "key": "D",
           "text": "a szerző bizonytalanságát"
         }
       ],
-      "answer": "A",
+      "answer": "C",
       "category": "szovegszerkezet",
       "explanation": "Helyes: előreutalás. A szerző jelzi, hogy egy megkezdett szálat később folytat – ez felkelti az olvasó kíváncsiságát, és összeköti a szöveg részeit.",
       "wrongOptions": {
+        "A": "A szöveg elején áll, és éppen a folytatást ígéri.",
         "B": "A „még visszatérünk” a jövőre, a szöveg későbbi részére vonatkozik, nem a címre.",
-        "C": "A szöveg elején áll, és éppen a folytatást ígéri.",
         "D": "Nem bizonytalanságot, hanem tudatos szerkesztést fejez ki."
       }
     }

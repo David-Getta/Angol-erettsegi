@@ -38,7 +38,7 @@
     },
     {
       "title": "Igealakok: suksükölés, nákolás, ikes ragozás",
-      "explanation": "Suksükölésnek nevezzük, amikor a t végű igék kijelentő módú alakja helyett felszólító módú alakot használnak (helyes: Ő is látja, mi is tudjuk; helytelen: Ő is lássa). Nákolás a feltételes mód egyes szám 1. személyű -nék helyett a -nák használata (helyes: Én is innék egy kávét; helytelen: innák). Igényes írásban az ikes igék egyes szám 1. személyű alakja: eszem, iszom, alszom.",
+      "explanation": "Suksükölésnek nevezzük, amikor a t végű igék kijelentő módú alakja helyett felszólító módú alakot használnak (helyes: Ő is látja, mi is szeretjük; helytelen: Ő is lássa, mi is szeressük). Nákolás a feltételes mód egyes szám 1. személyű -nék helyett a -nák használata (helyes: Én is innék egy kávét; helytelen: innák). Igényes írásban az ikes igék egyes szám 1. személyű alakja: eszem, iszom, alszom.",
       "emeltOnly": false,
       "examples": [
         {
@@ -88,7 +88,7 @@
     {
       "wrong": "Én is szívesen olvasnák egy jó könyvet.",
       "right": "Én is szívesen olvasnék egy jó könyvet.",
-      "why": "Nákolás: egyes szám 1. személyben a feltételes mód alanyi ragozású alakja -nék/-nák helyett -nék (olvasnék)."
+      "why": "Nákolás: egyes szám 1. személyben a feltételes mód alanyi ragozású alakja mély hangrendű igénél is -nék (olvasnék), nem -nák."
     },
     {
       "wrong": "Ő is lássa, hogy ez így nem jó.",
@@ -114,11 +114,11 @@
       "options": [
         {
           "key": "A",
-          "text": "Bementem a boltba kenyérért."
+          "text": "Bementem a boltban kenyérért."
         },
         {
           "key": "B",
-          "text": "Bementem a boltban kenyérért."
+          "text": "Bementem a boltba kenyérért."
         },
         {
           "key": "C",
@@ -129,11 +129,11 @@
           "text": "Bementem a bolthoz kenyérért."
         }
       ],
-      "answer": "A",
+      "answer": "B",
       "category": "mondatszerkesztes",
-      "explanation": "Helyes: A. A „bemegy” ige a hová? kérdésre felelő -ba/-be ragot kívánja.",
+      "explanation": "Helyes: B. A „bemegy” ige a hová? kérdésre felelő -ba/-be ragot kívánja.",
       "wrongOptions": {
-        "B": "A -ban a hol? kérdésre felel (a boltban voltam), mozgásnál hibás.",
+        "A": "A -ban a hol? kérdésre felel (a boltban voltam), mozgásnál hibás.",
         "C": "A -nál/-nél helyzetet jelöl valami mellett, a „bemegy” igéhez nem illik.",
         "D": "A -hoz/-hez a közelítés iránya (a bolthoz ment), de a „be” igekötő belső térbe irányuló mozgást jelöl."
       }
@@ -145,7 +145,7 @@
       "options": [
         {
           "key": "A",
-          "text": "Én is innék egy pohár vizet."
+          "text": "Én is ivnék egy pohár vizet."
         },
         {
           "key": "B",
@@ -153,19 +153,19 @@
         },
         {
           "key": "C",
-          "text": "Én is ivnék egy pohár vizet."
+          "text": "Én is innék egy pohár vizet."
         },
         {
           "key": "D",
           "text": "Én is innám egy pohár vizet."
         }
       ],
-      "answer": "A",
+      "answer": "C",
       "category": "mondatszerkesztes",
-      "explanation": "Helyes: A. A feltételes mód egyes szám 1. személyű alanyi ragozású alakja: innék.",
+      "explanation": "Helyes: C. A feltételes mód egyes szám 1. személyű alanyi ragozású alakja: innék.",
       "wrongOptions": {
+        "A": "Az „iszik” ige feltételes módja nem „ivnék”.",
         "B": "Nákolás: az „innák” többes szám 3. személyű alak (ők innák meg).",
-        "C": "Az „iszik” ige feltételes módja nem „ivnék”.",
         "D": "Az „innám” tárgyas ragozású alak, határozatlan tárgy (egy pohár vizet) mellett az alanyi ragozás a helyes."
       }
     },
@@ -176,7 +176,7 @@
       "options": [
         {
           "key": "A",
-          "text": "Ő is látja, hogy késésben vagyunk."
+          "text": "Ő is láttya, hogy késésben vagyunk."
         },
         {
           "key": "B",
@@ -188,16 +188,16 @@
         },
         {
           "key": "D",
-          "text": "Ő is láttya, hogy késésben vagyunk."
+          "text": "Ő is látja, hogy késésben vagyunk."
         }
       ],
-      "answer": "A",
+      "answer": "D",
       "category": "mondatszerkesztes",
-      "explanation": "Helyes: A. Kijelentő módban a „látja” alak a helyes; a kiejtés [láttya], de a szóelemző írásmód szerint „látja”.",
+      "explanation": "Helyes: D. Kijelentő módban a „látja” alak a helyes; a kiejtés [láttya], de a szóelemző írásmód szerint „látja”.",
       "wrongOptions": {
+        "A": "A kiejtett alakot írja le; a helyes írásmód „látja”.",
         "B": "Suksükölés: a „lássa” felszólító módú alak, kijelentő mondatban hibás.",
-        "C": "Helyesírási hiba: kiejtés szerinti, torzított alak.",
-        "D": "A kiejtett alakot írja le; a helyes írásmód „látja”."
+        "C": "Helyesírási hiba: kiejtés szerinti, torzított alak."
       }
     },
     {
@@ -238,11 +238,11 @@
       "options": [
         {
           "key": "A",
-          "text": "amelyet"
+          "text": "amit"
         },
         {
           "key": "B",
-          "text": "amit"
+          "text": "amelyet"
         },
         {
           "key": "C",
@@ -253,11 +253,11 @@
           "text": "amelyik"
         }
       ],
-      "answer": "A",
+      "answer": "B",
       "category": "mondatszerkesztes",
       "explanation": "Helyes: amelyet. Főnévi előzményre (vers) a választékos norma az „amely” névmást ajánlja.",
       "wrongOptions": {
-        "B": "Az „ami” az az, minden, valami típusú előzményre vagy egész tagmondatra utal; főnév után a beszélt nyelvben gyakori, de írásban az „amely” ajánlott.",
+        "A": "Az „ami” az az, minden, valami típusú előzményre vagy egész tagmondatra utal; főnév után a beszélt nyelvben gyakori, de írásban az „amely” ajánlott.",
         "C": "Az „aki” személyre utal, a vers nem személy.",
         "D": "Az „amelyik” több közül való kiválasztást hangsúlyoz; itt nincs választás, egyszerű vonatkozás van."
       }

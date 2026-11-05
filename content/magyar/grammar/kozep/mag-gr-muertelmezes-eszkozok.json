@@ -113,7 +113,7 @@
       "options": [
         {
           "key": "A",
-          "text": "metafora"
+          "text": "szinesztézia"
         },
         {
           "key": "B",
@@ -125,16 +125,16 @@
         },
         {
           "key": "D",
-          "text": "szinesztézia"
+          "text": "metafora"
         }
       ],
-      "answer": "A",
+      "answer": "D",
       "category": "muertelmezes-eszkozok",
       "explanation": "Helyes: metafora. A lelket a sassal azonosítja hasonlító szó nélkül; a kép a szabadság, a szárnyalás élményét fejezi ki.",
       "wrongOptions": {
+        "A": "Nincs benne különböző érzékterületek keveredése.",
         "B": "Hasonlathoz hasonlító szó (mint, akár) kellene.",
-        "C": "A metonímia érintkezésen alapul, itt hasonlóságon alapuló azonosítás van.",
-        "D": "Nincs benne különböző érzékterületek keveredése."
+        "C": "A metonímia érintkezésen alapul, itt hasonlóságon alapuló azonosítás van."
       }
     },
     {
@@ -144,7 +144,7 @@
       "options": [
         {
           "key": "A",
-          "text": "paradoxon"
+          "text": "anafora"
         },
         {
           "key": "B",
@@ -152,19 +152,19 @@
         },
         {
           "key": "C",
-          "text": "anafora"
+          "text": "paradoxon"
         },
         {
           "key": "D",
           "text": "költői kérdés"
         }
       ],
-      "answer": "A",
+      "answer": "C",
       "category": "muertelmezes-eszkozok",
       "explanation": "Helyes: paradoxon. A tiszta (bűntelen) szív és a bűn (betörés, ölés) összekapcsolása látszólagos ellentmondás, amely a kitaszított helyzet igazságát fejezi ki.",
       "wrongOptions": {
+        "A": "Nincs sorkezdő ismétlés.",
         "B": "Nincsenek azonos kezdőhangú szavak egymás mellett.",
-        "C": "Nincs sorkezdő ismétlés.",
         "D": "A sor kijelentés, nem kérdés."
       }
     },
@@ -175,11 +175,11 @@
       "options": [
         {
           "key": "A",
-          "text": "Tizenkét szótagos, két hatszótagos ütemre bomló ütemhangsúlyos sor."
+          "text": "Hat verslábból álló időmértékes sor."
         },
         {
           "key": "B",
-          "text": "Hat verslábból álló időmértékes sor."
+          "text": "Tizenkét szótagos, két hat szótagos ütemre bomló ütemhangsúlyos sor."
         },
         {
           "key": "C",
@@ -190,11 +190,11 @@
           "text": "Egy hexameterből és egy pentameterből álló sorpár."
         }
       ],
-      "answer": "A",
+      "answer": "B",
       "category": "muertelmezes-eszkozok",
-      "explanation": "Helyes: A. A felező tizenkettes (6 | 6) a magyar ütemhangsúlyos verselés jellegzetes sorfajtája, pl. Arany Toldijában.",
+      "explanation": "Helyes: B. A felező tizenkettes (6 | 6) a magyar ütemhangsúlyos verselés jellegzetes sorfajtája, pl. Arany Toldijában.",
       "wrongOptions": {
-        "B": "Ez a hexameter, időmértékes sor.",
+        "A": "Ez a hexameter, időmértékes sor.",
         "C": "A felező tizenkettes egy sor, nem versszak.",
         "D": "Ez a disztichon."
       }
@@ -237,11 +237,11 @@
       "options": [
         {
           "key": "A",
-          "text": "A „lehúz, altat, befed” igei halmozás fokozást teremt: a lírai én fokozatosan elmerül a tájban."
+          "text": "A versben halmozás van."
         },
         {
           "key": "B",
-          "text": "A versben halmozás van."
+          "text": "A „lehúz, altat, befed” igei halmozás fokozást teremt: a lírai én fokozatosan elmerül a tájban."
         },
         {
           "key": "C",
@@ -252,11 +252,11 @@
           "text": "A harmadik versszakban fokozás található."
         }
       ],
-      "answer": "A",
+      "answer": "B",
       "category": "muertelmezes-eszkozok",
-      "explanation": "Helyes: A. Megnevezi az eszközt, idézi a helyét, és megmondja a funkcióját.",
+      "explanation": "Helyes: B. Megnevezi az eszközt, idézi a helyét, és megmondja a funkcióját.",
       "wrongOptions": {
-        "B": "Csak megnevezés, hely és funkció nélkül.",
+        "A": "Csak megnevezés, hely és funkció nélkül.",
         "C": "Általánosság, nem elemzés.",
         "D": "Hely megadása funkció nélkül (ráadásul pontatlan: a fokozás az utolsó versszakban van)."
       }

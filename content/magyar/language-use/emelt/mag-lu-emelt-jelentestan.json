@@ -13,22 +13,52 @@
   "type": "nyelvi-feladat",
   "instructions": "Milyen jelentéstani jelenséget szemléltetnek a példák? Írja be a megfelelő fogalom betűjelét! Minden betűjel csak egyszer használható, két fogalom fölösleges. A 0. sor a példa.",
   "options": [
-    { "key": "A", "text": "azonos alakú szavak (homonímák)" },
-    { "key": "B", "text": "többjelentésű szó (poliszémia)" },
-    { "key": "C", "text": "rokon értelmű szavak (szinonimák)" },
-    { "key": "D", "text": "ellentétes jelentésű szavak (antonimák)" },
-    { "key": "E", "text": "hangutánzó szavak" },
-    { "key": "F", "text": "hangfestő szavak" },
-    { "key": "G", "text": "metonímia (érintkezésen alapuló jelentésátvitel)" },
-    { "key": "H", "text": "alakváltozatok" },
-    { "key": "I", "text": "hasonló alakú szavak (paronímák)" },
-    { "key": "J", "text": "szinesztézia" }
+    {
+      "key": "A",
+      "text": "alakváltozatok"
+    },
+    {
+      "key": "B",
+      "text": "azonos alakú szavak (homonímák)"
+    },
+    {
+      "key": "C",
+      "text": "ellentétes jelentésű szavak (antonimák)"
+    },
+    {
+      "key": "D",
+      "text": "hangfestő szavak"
+    },
+    {
+      "key": "E",
+      "text": "hangutánzó szavak"
+    },
+    {
+      "key": "F",
+      "text": "hasonló alakú szavak (paronímák)"
+    },
+    {
+      "key": "G",
+      "text": "metonímia (érintkezésen alapuló jelentésátvitel)"
+    },
+    {
+      "key": "H",
+      "text": "rokon értelmű szavak (szinonimák)"
+    },
+    {
+      "key": "I",
+      "text": "szinesztézia"
+    },
+    {
+      "key": "J",
+      "text": "többjelentésű szó (poliszémia)"
+    }
   ],
   "example": {
     "id": "0",
     "kind": "match",
     "prompt": "ég (= égbolt) – ég (= lángol)",
-    "answer": "A",
+    "answer": "B",
     "category": "nyelvtani-fogalom",
     "explanation": "Azonos alakú szavak: a hangalak egyezik, de a jelentések között nincs kapcsolat, sőt itt a szófaj is eltér (főnév – ige)."
   },
@@ -37,7 +67,7 @@
       "id": "1",
       "kind": "match",
       "prompt": "toll (= a madár tolla) – toll (= íróeszköz)",
-      "answer": "B",
+      "answer": "J",
       "category": "nyelvtani-fogalom",
       "explanation": "Helyes: többjelentésű szó. A jelentések összefüggnek: régen madártollal írtak, innen ered az íróeszköz jelentés. Ha a jelentések között van kapcsolat, poliszémiáról beszélünk, ha nincs, homonímiáról."
     },
@@ -45,7 +75,7 @@
       "id": "2",
       "kind": "match",
       "prompt": "bátor – merész – vakmerő",
-      "answer": "C",
+      "answer": "H",
       "category": "nyelvtani-fogalom",
       "explanation": "Helyes: rokon értelmű szavak. Jelentésük nagyrészt egyezik, de árnyalatnyi különbségek vannak (a vakmerő már a felelőtlenség felé hajlik); szinonimasort alkotnak."
     },
@@ -53,9 +83,9 @@
       "id": "3",
       "kind": "match",
       "prompt": "meleg – hideg; felnőtt – gyerek",
-      "answer": "D",
+      "answer": "C",
       "category": "nyelvtani-fogalom",
-      "explanation": "Helyes: ellentétes jelentésű szavak. A párok tagjai ugyanazon a szempont szerint ellentétesek (hőmérséklet, életkor)."
+      "explanation": "Helyes: ellentétes jelentésű szavak. A párok tagjai ugyanazon szempont szerint ellentétesek (hőmérséklet, életkor)."
     },
     {
       "id": "4",
@@ -68,8 +98,8 @@
     {
       "id": "5",
       "kind": "match",
-      "prompt": "kacsázik, totyog, cammog",
-      "answer": "F",
+      "prompt": "tipeg, totyog, cammog",
+      "answer": "D",
       "category": "nyelvtani-fogalom",
       "explanation": "Helyes: hangfestő szavak. Nem hangot utánoznak, hanem mozgást, látványt jelenítenek meg a hangzásukkal. A hangutánzó szavaktól az különbözteti meg őket, hogy a jelölt jelenség nem hangjelenség."
     },
@@ -85,7 +115,7 @@
       "id": "7",
       "kind": "match",
       "prompt": "fel – föl; seprű – söprű",
-      "answer": "H",
+      "answer": "A",
       "category": "nyelvtani-fogalom",
       "explanation": "Helyes: alakváltozatok. Ugyanannak a szónak kissé eltérő hangalakú változatai, jelentésük azonos. A paronímák ezzel szemben hasonló alakú, de eltérő jelentésű szavak (pl. egyelőre – egyenlőre)."
     }
