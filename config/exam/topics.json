@@ -1,15 +1,91 @@
 {
-  "meta": { "sources": [], "notes": ["IDEIGLENES – ellenőrzés alatt"] },
+  "meta": {
+    "verifiedAt": "2026-11-05",
+    "sources": [
+      {
+        "title": "Oktatási Hivatal: Élő idegen nyelv, vizsgaleírás és témakörök (2017-es vizsgakövetelmények)",
+        "url": "https://www.oktatas.hu/pub_bin/dload/kozoktatas/erettsegi/vizsgakovetelmenyek2017/elo_idegen_nyelv_vl.pdf"
+      },
+      {
+        "title": "Eduline: Ilyen lesz az idei szóbeli angolérettségi – témakörök (a gazdaság témakör emelt szinten)",
+        "url": "https://eduline.hu/erettsegi-felveteli/angolerettsegi_szobeli_ZKRBZG"
+      }
+    ],
+    "notes": [
+      "A tíz témakör neve a 2017-es vizsgakövetelményekből származik; a Nat2020 szerinti (2024 óta érvényes) teljes listát nem sikerült közvetlenül ellenőrizni – a hivatalos szóbeli témakörlista megjelenésekor érdemes összevetni.",
+      "Az azonosítók (id) az app belső kulcsai, a tartalomfájlok ezekre hivatkoznak – átnevezéskor a content/ fájlokat is frissíteni kell."
+    ]
+  },
   "topics": [
-    { "id": "szemelyes", "number": 1, "name": "Személyes vonatkozások, család", "nameEn": "Personal background, family", "subtopics": [] },
-    { "id": "tarsadalom", "number": 2, "name": "Ember és társadalom", "nameEn": "People and society", "subtopics": [] },
-    { "id": "kornyezet", "number": 3, "name": "Környezetünk", "nameEn": "Our environment", "subtopics": [] },
-    { "id": "iskola", "number": 4, "name": "Az iskola", "nameEn": "School", "subtopics": [] },
-    { "id": "munka", "number": 5, "name": "A munka világa", "nameEn": "The world of work", "subtopics": [] },
-    { "id": "eletmod", "number": 6, "name": "Életmód", "nameEn": "Lifestyle", "subtopics": [] },
-    { "id": "szabadido", "number": 7, "name": "Szabadidő, művelődés, szórakozás", "nameEn": "Free time, culture, entertainment", "subtopics": [] },
-    { "id": "utazas", "number": 8, "name": "Utazás, turizmus", "nameEn": "Travel, tourism", "subtopics": [] },
-    { "id": "tudomany", "number": 9, "name": "Tudomány és technika", "nameEn": "Science and technology", "subtopics": [] },
-    { "id": "gazdasag", "number": 10, "name": "Gazdaság és pénzügyek", "nameEn": "Economy and finance", "subtopics": [] }
+    {
+      "id": "szemelyes",
+      "number": 1,
+      "name": "Személyes vonatkozások, család",
+      "nameEn": "Personal background, family",
+      "subtopics": []
+    },
+    {
+      "id": "tarsadalom",
+      "number": 2,
+      "name": "Ember és társadalom",
+      "nameEn": "People and society",
+      "subtopics": []
+    },
+    {
+      "id": "kornyezet",
+      "number": 3,
+      "name": "Környezetünk",
+      "nameEn": "Our environment",
+      "subtopics": []
+    },
+    {
+      "id": "iskola",
+      "number": 4,
+      "name": "Az iskola",
+      "nameEn": "School",
+      "subtopics": []
+    },
+    {
+      "id": "munka",
+      "number": 5,
+      "name": "A munka világa",
+      "nameEn": "The world of work",
+      "subtopics": []
+    },
+    {
+      "id": "eletmod",
+      "number": 6,
+      "name": "Életmód",
+      "nameEn": "Lifestyle",
+      "subtopics": []
+    },
+    {
+      "id": "szabadido",
+      "number": 7,
+      "name": "Szabadidő, művelődés, szórakozás",
+      "nameEn": "Free time, culture, entertainment",
+      "subtopics": []
+    },
+    {
+      "id": "utazas",
+      "number": 8,
+      "name": "Utazás, turizmus",
+      "nameEn": "Travel, tourism",
+      "subtopics": []
+    },
+    {
+      "id": "tudomany",
+      "number": 9,
+      "name": "Tudomány és technika",
+      "nameEn": "Science and technology",
+      "subtopics": []
+    },
+    {
+      "id": "gazdasag",
+      "number": 10,
+      "name": "Gazdaság és pénzügyek",
+      "nameEn": "Economy and finance",
+      "subtopics": []
+    }
   ]
 }

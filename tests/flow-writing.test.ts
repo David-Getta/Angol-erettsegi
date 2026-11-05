@@ -13,7 +13,7 @@ In Hungary most students goes to university straight after school. I think a gap
 However, there are risks too. All things considered, I would take a gap year.`;
 
 function feedbackFor(id: string, taskNumber: number, total?: number) {
-  const ref = rubricRefFor("writing", "emelt", taskNumber);
+  const ref = rubricRefFor("writing", "emelt", { taskNumber });
   const criteria = ref.criteria.map((c, i) => ({ id: c.id, score: Math.min(c.max, i + 1), max: c.max, justification: "Indoklás." }));
   return {
     schemaVersion: 1,

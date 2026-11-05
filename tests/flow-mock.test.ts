@@ -90,7 +90,7 @@ describe("mock exam flow", () => {
     expect(subs).toHaveLength(2);
     for (const s of subs) {
       const tn = s.taskId.endsWith("t1") ? 1 : 2;
-      const ref = rubricRefFor("writing", "emelt", tn);
+      const ref = rubricRefFor("writing", "emelt", { taskNumber: tn });
       const criteria = ref.criteria.map((c) => ({ id: c.id, score: Math.floor(c.max / 2), max: c.max, justification: "x" }));
       const fb = {
         schemaVersion: 1, submissionId: s.id, kind: "writing", rubricId: ref.id, criteria,
@@ -105,7 +105,7 @@ describe("mock exam flow", () => {
     const rubric = examConfig.writingRubric("emelt");
     const wScores = subs.map((s) => {
       const tn = s.taskId.endsWith("t1") ? 1 : 2;
-      return { taskNumber: tn, score: rubricRefFor("writing", "emelt", tn).criteria.reduce((n, c) => n + Math.floor(c.max / 2), 0) };
+      return { taskNumber: tn, score: rubricRefFor("writing", "emelt", { taskNumber: tn }).criteria.reduce((n, c) => n + Math.floor(c.max / 2), 0) };
     });
     expect(r.parts.find((p) => p.part === "writing")!.points).toBe(writingPartPoints(rubric, wScores));
 

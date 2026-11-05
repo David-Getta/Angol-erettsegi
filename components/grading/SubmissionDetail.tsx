@@ -20,7 +20,7 @@ export function SubmissionDetail({ id, kind }: { id: string; kind: "writing" | "
   if (!sub || sub.kind !== kind) notFound();
   const task = getContent(sub.taskId) as WritingTask | SpeakingTask | null;
   const level = sub.level as Level;
-  const ref = rubricRefFor(kind, level, kind === "writing" ? (task as WritingTask | null)?.taskNumber ?? 1 : null);
+  const ref = rubricRefFor(kind, level, task);
   const labels = labelMaps();
   const versions = versionsOf(sub.rootId);
   const fb = sub.feedback as Feedback | null;

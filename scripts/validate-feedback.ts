@@ -33,7 +33,7 @@ for (const f of files) {
       const ref =
         sub.kind === "writing"
           ? writingRubricRef(examConfig.writingRubric(sub.level), sub.rubric.taskNumber ?? 1)
-          : speakingRubricRef(examConfig.speakingRubric(sub.level));
+          : speakingRubricRef(examConfig.speakingRubric(sub.level), sub.task.type);
       if (fb.rubricId !== ref.id) problems.push(`rubricId: "${ref.id}" kell, nem "${fb.rubricId}".`);
       for (const c of ref.criteria) {
         const got = fb.criteria.find((x) => x.id === c.id);

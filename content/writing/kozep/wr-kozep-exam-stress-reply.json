@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "id": "wr-kozep-exam-stress-reply",
-  "revision": 1,
+  "revision": 2,
   "level": "kozep",
   "source": "generated",
   "topic": "eletmod",
@@ -16,24 +16,69 @@
   "situationHu": "Angol barátnőd, Emma, a vizsgák miatti stresszről panaszkodik; válaszolj neki, és adj tanácsokat.",
   "stimulus": "Hi,\nSorry I haven't written for ages. I've got so many exams at the moment and I'm really stressed. I can't sleep well, I'm always tired and I never have time to see my friends. How do you deal with stress before exams? Have you got any tips?\nLove,\nEmma",
   "points": [
-    { "id": "p1", "text": "say how you feel about Emma's problem and whether you have had similar experiences" },
-    { "id": "p2", "text": "describe what you do to relax before exams" },
-    { "id": "p3", "text": "give her two pieces of advice about sleep and free time" },
-    { "id": "p4", "text": "suggest something you could do together after her exams" }
+    {
+      "id": "p1",
+      "text": "say how you feel about Emma's problem and whether you have had similar experiences"
+    },
+    {
+      "id": "p2",
+      "text": "describe what you do to relax before exams"
+    },
+    {
+      "id": "p3",
+      "text": "give her two pieces of advice about sleep and free time"
+    },
+    {
+      "id": "p4",
+      "text": "suggest something you could do together after her exams"
+    }
   ],
-  "wordLimit": { "min": 100, "max": 120 },
-  "suggestedMinutes": 40,
+  "wordLimit": {
+    "min": 100,
+    "max": 120
+  },
+  "suggestedMinutes": 35,
   "usefulPhrases": [
-    { "en": "Hi Emma,", "hu": "Szia, Emma!" },
-    { "en": "I'm sorry to hear that you're so stressed.", "hu": "Sajnálom, hogy ennyire stresszes vagy." },
-    { "en": "I know exactly how you feel.", "hu": "Pontosan tudom, mit érzel." },
-    { "en": "When I'm stressed, I usually …", "hu": "Amikor stresszes vagyok, általában …" },
-    { "en": "to go for a run / to listen to music", "hu": "futni menni / zenét hallgatni" },
-    { "en": "You should try to … / Why don't you …?", "hu": "Próbáld meg … / Miért nem …?" },
-    { "en": "to go to bed earlier", "hu": "korábban lefeküdni" },
-    { "en": "to take a short break every hour", "hu": "óránként rövid szünetet tartani" },
-    { "en": "Good luck with your exams!", "hu": "Sok sikert a vizsgáidhoz!" },
-    { "en": "Lots of love,", "hu": "Sok szeretettel:" }
+    {
+      "en": "Hi Emma,",
+      "hu": "Szia, Emma!"
+    },
+    {
+      "en": "I'm sorry to hear that you're so stressed.",
+      "hu": "Sajnálom, hogy ennyire stresszes vagy."
+    },
+    {
+      "en": "I know exactly how you feel.",
+      "hu": "Pontosan tudom, mit érzel."
+    },
+    {
+      "en": "When I'm stressed, I usually …",
+      "hu": "Amikor stresszes vagyok, általában …"
+    },
+    {
+      "en": "to go for a run / to listen to music",
+      "hu": "futni menni / zenét hallgatni"
+    },
+    {
+      "en": "You should try to … / Why don't you …?",
+      "hu": "Próbáld meg … / Miért nem …?"
+    },
+    {
+      "en": "to go to bed earlier",
+      "hu": "korábban lefeküdni"
+    },
+    {
+      "en": "to take a short break every hour",
+      "hu": "óránként rövid szünetet tartani"
+    },
+    {
+      "en": "Good luck with your exams!",
+      "hu": "Sok sikert a vizsgáidhoz!"
+    },
+    {
+      "en": "Lots of love,",
+      "hu": "Sok szeretettel:"
+    }
   ],
   "checklistExtra": [
     "Tanácsadásnál változatos szerkezeteket használtam (should, why don't you, it's a good idea to)?"

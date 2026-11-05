@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "id": "wr-kozep-best-concert-blog",
-  "revision": 1,
+  "revision": 2,
   "level": "kozep",
   "source": "generated",
   "topic": "szabadido",
@@ -15,21 +15,57 @@
   "situation": "Last weekend you went to a concert with some friends. You write a blog in English about music and the things you do in your free time. Write a post about the concert.",
   "situationHu": "A hétvégén koncerten voltál a barátaiddal; írj róla bejegyzést az angol nyelvű blogodba.",
   "points": [
-    { "id": "p1", "text": "say who played and where the concert was" },
-    { "id": "p2", "text": "describe the best moment of the evening" },
-    { "id": "p3", "text": "say whether you would recommend this band or singer and why" }
+    {
+      "id": "p1",
+      "text": "say who played and where the concert was"
+    },
+    {
+      "id": "p2",
+      "text": "describe the best moment of the evening"
+    },
+    {
+      "id": "p3",
+      "text": "say whether you would recommend this band or singer and why"
+    }
   ],
-  "wordLimit": { "min": 50, "max": 80 },
-  "suggestedMinutes": 20,
+  "wordLimit": {
+    "min": 80,
+    "max": 100
+  },
+  "suggestedMinutes": 25,
   "usefulPhrases": [
-    { "en": "Hi everyone!", "hu": "Sziasztok!" },
-    { "en": "Last Saturday I went to see … live.", "hu": "Múlt szombaton élőben láttam …-t." },
-    { "en": "The concert was held at … in …", "hu": "A koncertet …-ban/-ben tartották." },
-    { "en": "The atmosphere was amazing.", "hu": "Fantasztikus volt a hangulat." },
-    { "en": "The best moment was when …", "hu": "A legjobb pillanat az volt, amikor …" },
-    { "en": "Everybody was singing along.", "hu": "Mindenki együtt énekelt." },
-    { "en": "I'd definitely recommend them because …", "hu": "Mindenképpen ajánlom őket, mert …" },
-    { "en": "Have you ever seen them live?", "hu": "Láttátok már őket élőben?" }
+    {
+      "en": "Hi everyone!",
+      "hu": "Sziasztok!"
+    },
+    {
+      "en": "Last Saturday I went to see … live.",
+      "hu": "Múlt szombaton élőben láttam …-t."
+    },
+    {
+      "en": "The concert was held at … in …",
+      "hu": "A koncertet …-ban/-ben tartották."
+    },
+    {
+      "en": "The atmosphere was amazing.",
+      "hu": "Fantasztikus volt a hangulat."
+    },
+    {
+      "en": "The best moment was when …",
+      "hu": "A legjobb pillanat az volt, amikor …"
+    },
+    {
+      "en": "Everybody was singing along.",
+      "hu": "Mindenki együtt énekelt."
+    },
+    {
+      "en": "I'd definitely recommend them because …",
+      "hu": "Mindenképpen ajánlom őket, mert …"
+    },
+    {
+      "en": "Have you ever seen them live?",
+      "hu": "Láttátok már őket élőben?"
+    }
   ],
   "checklistExtra": []
 }

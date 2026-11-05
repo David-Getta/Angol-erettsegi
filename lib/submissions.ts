@@ -28,10 +28,11 @@ function newId(kind: "writing" | "speaking"): string {
   return `${kind === "writing" ? "w" : "s"}-${stamp}-${crypto.randomBytes(2).toString("hex")}`;
 }
 
-export function rubricRefFor(kind: "writing" | "speaking", level: Level, taskNumber: number | null): RubricRef {
+/** The rubric for a task: writing by task number, speaking by task type (interview, situation, debate …). */
+export function rubricRefFor(kind: "writing" | "speaking", level: Level, task: { taskNumber?: number; type?: string } | null): RubricRef {
   return kind === "writing"
-    ? writingRubricRef(examConfig.writingRubric(level), taskNumber ?? 1)
-    : speakingRubricRef(examConfig.speakingRubric(level));
+    ? writingRubricRef(examConfig.writingRubric(level), task?.taskNumber ?? 1)
+    : speakingRubricRef(examConfig.speakingRubric(level), task?.type ?? "interview");
 }
 
 /** Builds the grading prompt for a stored submission (used for inbox files and the copy button). */
@@ -85,8 +86,7 @@ export function createSubmission(input: CreateSubmissionInput): SubmissionRow {
   const parent = input.parentId ? getSubmission(input.parentId) : null;
   const level = taskRow.level as Level;
   const content = taskRow.content as WritingTask | SpeakingTask;
-  const taskNumber = input.kind === "writing" ? (content as WritingTask).taskNumber : null;
-  const ref = rubricRefFor(input.kind, level, taskNumber);
+  const ref = rubricRefFor(input.kind, level, content);
   const id = newId(input.kind);
   const row: typeof submissions.$inferInsert = {
     id,
@@ -178,7 +178,7 @@ export function applyFeedback(fb: Feedback, opts: { gradedBy?: "claude-code" | "
   if (!sub) return { ok: false, errors: [`Nincs ilyen beadás: ${fb.submissionId}`] };
   if (sub.kind !== fb.kind) return { ok: false, errors: [`A javítás típusa (${fb.kind}) nem egyezik a beadáséval (${sub.kind}).`] };
   const task = getContent(sub.taskId) as WritingTask | SpeakingTask | null;
-  const ref = rubricRefFor(sub.kind as "writing" | "speaking", sub.level as Level, sub.kind === "writing" ? (task as WritingTask)?.taskNumber ?? 1 : null);
+  const ref = rubricRefFor(sub.kind as "writing" | "speaking", sub.level as Level, task);
   const problems: string[] = [];
   const warnings: string[] = [];
   if (fb.rubricId !== ref.id) problems.push(`A rubricId "${fb.rubricId}", de ennél a beadásnál "${ref.id}" kell.`);

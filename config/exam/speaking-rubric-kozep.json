@@ -1,43 +1,183 @@
 {
   "meta": {
-    "sources": [],
+    "verifiedAt": "2026-11-05",
+    "sources": [
+      {
+        "title": "Eduline (2019. 06. 05.): Ilyen lesz a szóbeli érettségi angolból: pontok és feladatrészek (társalgás, szituációs feladat, önálló témakifejtés 4+3+3 pont, kiejtés 3 pont)",
+        "url": "https://eduline.hu/erettsegi_felveteli/20190605_szobeli_erettsegi_idegen_nyelvbol"
+      },
+      {
+        "title": "Eduline (2026. 05. 31.): Közelegnek a szóbeli érettségik – idegen nyelv: középszint 15 perc, 33 pont",
+        "url": "https://eduline.hu/erettsegi-felveteli/20260531_szobeli-erettsegi-2026-mire-kell-figyelni-pontszamitas"
+      },
+      {
+        "title": "Oktatási Hivatal: Élő idegen nyelv, vizsgaleírás (2017-es vizsgakövetelmények)",
+        "url": "https://www.oktatas.hu/pub_bin/dload/kozoktatas/erettsegi/vizsgakovetelmenyek2017/elo_idegen_nyelv_vl.pdf"
+      }
+    ],
     "notes": [
-      "IDEIGLENES – ellenőrzés alatt"
+      "Ellenőrzött: 33 pont, 15 perc; a bemelegítő beszélgetést nem pontozzák; három pontozott feladat (társalgás, szituációs feladat, önálló témakifejtés), feladatonként 4 + 3 + 3 pont, a teljes vizsga alapján kiejtés, beszédtempó, hanglejtés 3 pont (3 × 10 + 3 = 33).",
+      "A feladatonkénti bontás forrása Eduline-cikk; a Nat2020 szerinti (2024 óta érvényes) hivatalos szóbeli értékelési útmutatót nem lehetett közvetlenül megnyitni, ezért hivatalos dokumentum alapján érdemes még egyszer ellenőrizni.",
+      "Az app egy-egy gyakorló feladatot értékel (10 pontból). A kiejtést írott átiratból nem lehet megítélni, ezért ezt a szempontot az app nem pontozza; a vizsgapont-becslés a feladatpontok arányából készül."
     ]
   },
   "id": "speaking-kozep",
   "level": "kozep",
   "examMaxPoints": 33,
-  "criteria": [
+  "tasks": [
     {
-      "id": "content",
-      "name": "Tartalom, feladat teljesítése",
-      "max": 5,
-      "description": "…",
-      "bands": []
+      "id": "conversation",
+      "partNumber": 1,
+      "name": "Társalgás",
+      "types": ["interview"],
+      "criteria": [
+        {
+          "id": "task",
+          "name": "A témakörökben való jártasság, a kérdések megértése és megválaszolása",
+          "description": "Megérti-e a kérdéseket, érdemben, kifejtve válaszol-e (nem csak egy-két szóval), fenntartja-e a beszélgetést.",
+          "max": 4,
+          "bands": [
+            { "points": "4", "descriptor": "Minden kérdésre érdemben, részletesen, indoklással válaszol; a beszélgetés természetesen halad." },
+            { "points": "3", "descriptor": "A kérdésekre megfelelően válaszol, de egyes válaszok rövidek." },
+            { "points": "2", "descriptor": "A válaszok gyakran rövidek vagy felszínesek, segítségre szorul." },
+            { "points": "1", "descriptor": "Csak néhány kérdésre tud érdemben válaszolni." },
+            { "points": "0", "descriptor": "Nem tud érdemben válaszolni." }
+          ]
+        },
+        {
+          "id": "vocabulary",
+          "name": "Szókincs, kifejezésmód",
+          "description": "A témához illő, változatos, pontos szókincs.",
+          "max": 3,
+          "bands": [
+            { "points": "3", "descriptor": "A témához illő, változatos szókincs." },
+            { "points": "2", "descriptor": "Megfelelő, de egyszerű vagy ismétlődő szókincs." },
+            { "points": "1", "descriptor": "Szegényes szókincs, gyakori szókeresés." },
+            { "points": "0", "descriptor": "A szókincs nem elegendő." }
+          ]
+        },
+        {
+          "id": "grammar",
+          "name": "Nyelvhelyesség",
+          "description": "Nyelvtani pontosság, a szinthez illő szerkezetek; a hibák mennyire zavarják a megértést.",
+          "max": 3,
+          "bands": [
+            { "points": "3", "descriptor": "Kevés hiba, ezek nem zavarják a megértést." },
+            { "points": "2", "descriptor": "Több hiba, de a mondanivaló érthető." },
+            { "points": "1", "descriptor": "Sok hiba, a megértés helyenként nehéz." },
+            { "points": "0", "descriptor": "A hibák miatt nagyrészt nem érthető." }
+          ]
+        }
+      ]
     },
     {
-      "id": "vocabulary",
-      "name": "Szókincs, kifejezésmód",
-      "max": 5,
-      "description": "…",
-      "bands": []
+      "id": "situation",
+      "partNumber": 2,
+      "name": "Szituációs feladat",
+      "types": ["situation"],
+      "criteria": [
+        {
+          "id": "task",
+          "name": "A kommunikációs cél elérése, a szerep vállalása",
+          "description": "Eléri-e a szituáció minden célját (az irányító szempontokat), kezdeményez-e, reagál-e a vizsgáztatóra a szerepnek megfelelően.",
+          "max": 4,
+          "bands": [
+            { "points": "4", "descriptor": "Minden kommunikációs célt elér, kezdeményez és rugalmasan reagál." },
+            { "points": "3", "descriptor": "A célok többségét eléri, kisebb segítséggel." },
+            { "points": "2", "descriptor": "A célok egy részét éri el, gyakran segítségre szorul." },
+            { "points": "1", "descriptor": "Csak egy célt ér el, a szerepet alig vállalja." },
+            { "points": "0", "descriptor": "Nem oldja meg a feladatot." }
+          ]
+        },
+        {
+          "id": "vocabulary",
+          "name": "Szókincs, kifejezésmód",
+          "description": "A helyzethez illő szókincs és kommunikációs fordulatok (kérés, javaslat, egyeztetés, udvariassági formák).",
+          "max": 3,
+          "bands": [
+            { "points": "3", "descriptor": "A helyzethez illő szókincs és fordulatok." },
+            { "points": "2", "descriptor": "Megfelelő, de egyszerű vagy ismétlődő kifejezések." },
+            { "points": "1", "descriptor": "Szegényes szókincs, gyakori szókeresés." },
+            { "points": "0", "descriptor": "A szókincs nem elegendő." }
+          ]
+        },
+        {
+          "id": "grammar",
+          "name": "Nyelvhelyesség",
+          "description": "Nyelvtani pontosság (kérdések, módbeli segédigék, igeidők); a hibák mennyire zavarják a megértést.",
+          "max": 3,
+          "bands": [
+            { "points": "3", "descriptor": "Kevés hiba, ezek nem zavarják a megértést." },
+            { "points": "2", "descriptor": "Több hiba, de a mondanivaló érthető." },
+            { "points": "1", "descriptor": "Sok hiba, a megértés helyenként nehéz." },
+            { "points": "0", "descriptor": "A hibák miatt nagyrészt nem érthető." }
+          ]
+        }
+      ]
     },
     {
-      "id": "grammar",
-      "name": "Nyelvhelyesség",
-      "max": 5,
-      "description": "…",
-      "bands": []
-    },
+      "id": "monologue",
+      "partNumber": 3,
+      "name": "Önálló témakifejtés",
+      "types": ["picture", "presentation"],
+      "criteria": [
+        {
+          "id": "task",
+          "name": "Összefüggő témakifejtés",
+          "description": "Összefüggően, a képek és az irányító szempontok alapján fejti-e ki a témát (hasonlóságok, különbségek, saját vélemény és tapasztalat), segítség nélkül.",
+          "max": 4,
+          "bands": [
+            { "points": "4", "descriptor": "Összefüggően, minden szempontra kitérve fejti ki a témát, összehasonlít és véleményt mond." },
+            { "points": "3", "descriptor": "Összefüggően beszél, de egy szempont kevésbé kidolgozott." },
+            { "points": "2", "descriptor": "A kifejtés szakadozott, egyes szempontok hiányoznak." },
+            { "points": "1", "descriptor": "Csak néhány mondatot mond, sok segítséggel." },
+            { "points": "0", "descriptor": "Nem tudja kifejteni a témát." }
+          ]
+        },
+        {
+          "id": "vocabulary",
+          "name": "Szókincs, kifejezésmód",
+          "description": "A témához illő, változatos szókincs, a leíráshoz és összehasonlításhoz szükséges kifejezések.",
+          "max": 3,
+          "bands": [
+            { "points": "3", "descriptor": "A témához illő, változatos szókincs." },
+            { "points": "2", "descriptor": "Megfelelő, de egyszerű vagy ismétlődő szókincs." },
+            { "points": "1", "descriptor": "Szegényes szókincs, gyakori szókeresés." },
+            { "points": "0", "descriptor": "A szókincs nem elegendő." }
+          ]
+        },
+        {
+          "id": "grammar",
+          "name": "Nyelvhelyesség",
+          "description": "Nyelvtani pontosság; a hibák mennyire zavarják a megértést.",
+          "max": 3,
+          "bands": [
+            { "points": "3", "descriptor": "Kevés hiba, ezek nem zavarják a megértést." },
+            { "points": "2", "descriptor": "Több hiba, de a mondanivaló érthető." },
+            { "points": "1", "descriptor": "Sok hiba, a megértés helyenként nehéz." },
+            { "points": "0", "descriptor": "A hibák miatt nagyrészt nem érthető." }
+          ]
+        }
+      ]
+    }
+  ],
+  "overall": [
     {
-      "id": "communication",
-      "name": "Kommunikatív hatékonyság, folyékonyság",
-      "max": 5,
-      "description": "…",
+      "id": "pronunciation",
+      "name": "Kiejtés, beszédtempó, hanglejtés",
+      "description": "A teljes szóbeli vizsga alapján adott pont. Írott átiratból nem értékelhető, ezért az app nem pontozza.",
+      "max": 3,
       "bands": []
     }
   ],
-  "officialScoring": [],
-  "generalRules": []
+  "conversion": { "method": "identity" },
+  "officialScoring": [
+    "A bemelegítő beszélgetés nem kap pontot.",
+    "Társalgás 10 pont, szituációs feladat 10 pont, önálló témakifejtés 10 pont (mindegyik: feladatteljesítés 4, szókincs 3, nyelvhelyesség 3).",
+    "Kiejtés, beszédtempó, hanglejtés a teljes vizsga alapján 3 pont. Összesen 33 pont."
+  ],
+  "generalRules": [
+    "A feladatokat egymástól függetlenül kell értékelni.",
+    "Akcentus vagy lassabb tempó önmagában nem hiba, ha a beszéd érthető."
+  ]
 }

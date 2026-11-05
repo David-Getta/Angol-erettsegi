@@ -8,7 +8,7 @@ A fázisok után az app mindig futtatható; ami kész, az használható.
 - [x] SQLite + Drizzle séma, első migráció (`drizzle/0000_init.sql`), automatikus migrálás induláskor
 - [x] Beállítások (szint, vizsgadátum, cél, szókártya-limitek, felolvasás, téma) + globális szintválasztó
 - [x] Tartalomsémák (`lib/content/schema.ts`) és validátor (`npm run validate-content`)
-- [ ] Vizsga-config (`config/exam/*.json`) az Oktatási Hivatal aktuális leírásával ellenőrizve
+- [x] Vizsga-config (`config/exam/*.json`) az Oktatási Hivatal aktuális leírásával ellenőrizve (forrásokkal, `meta.verifiedAt`; a nyitott pontokat a fájlok `meta.notes` mezője jelöli)
 - [x] Navigáció, sötét/világos téma, üres dashboard
 - Ellenőrzés: `npm run setup && npm run dev`, a szintváltó működik, `npm run validate-content` lefut
 
@@ -16,7 +16,7 @@ A fázisok után az app mindig futtatható; ami kész, az használható.
 - [x] `.claude/commands/{feladatok,javitas,szokincs,import-hivatalos}.md`
 - [x] `config/commands.json`, „Parancsok” oldal parancsépítővel, Másolás gombok
 - [x] Helyzetfüggő tipp-komponens (`components/CommandTip.tsx`)
-- [ ] Kezdő tartalombank szintenként, validálva, seedelve
+- [x] Kezdő tartalombank szintenként, validálva, seedelve (167 fájl)
 - Ellenőrzés: a Parancsok oldalon mind a 4 parancs másolható; teszt: minden parancshoz van fájl
 
 ## 3. Íráskészség + hibanapló
@@ -87,3 +87,7 @@ A fázisok után az app mindig futtatható; ami kész, az használható.
 | D21 | A próbaérettségi hallási részének ideje legalább a becsült TTS-hanganyag (2 meghallgatás + felkészülés + szünetek) + 2 perc | a felolvasás sebessége gépenként eltér; a rész ne érjen véget, mielőtt a hanganyag kétszer elhangzik |
 | D22 | Szintenként egy teljes szett `reservedFor: "mock"`, egy rövid szett `"diagnostic"` jelölést kapott; a próbaérettségi először a fenntartottakat, majd a többi megoldatlant használja | így gyakorlás közben sem fogy el a próbaérettségi szettje |
 | D23 | Párhuzamosan generált tartalomnál utólag kiszűrtük az azonos szintű, ugyanazt a témát feldolgozó szövegeket (6 nyelvhelyességi szöveg új témát kapott) | „ne ismétlődjenek szövegek és helyzetek” |
+| D24 | A hivatalos vizsgaadatokat a 2024–2026-os OH javítási-értékelési útmutatók (Nat2020) keresőben indexelt szövegéből és Eduline-cikkekből ellenőriztük; minden config fájl `meta.sources`/`verifiedAt`/`notes` mezőt kapott, a Beállítások oldal megmutatja | a futtató környezet hálózata nem engedte az OH-oldalak és PDF-ek közvetlen letöltését; ami így sem igazolható, az a `notes`-ban „NEM ellenőrzött” jelölést kapott |
+| D25 | Íráskészség: a szempontok és pontok a hivatalos táblázat szerint (közép 11 + 22, emelt 15 + 15 nyers pont = vizsgapont, `conversion: identity`); a középszintű 1. feladat szóhatára 80–100 szó lett (a 7 kártya is) | a korábbi ideiglenes 50–80 szó és 10 + 20 pont nem felelt meg a hivatalos útmutatónak |
+| D26 | Szóbeli: feladattípusonkénti rubrika (`tasks[].types`), feladatonként 4 + 3 + 3 pont; a kiejtést (3 pont, `overall`) az app nem pontozza, mert átiratból nem ítélhető meg; emelten a feladatonkénti hivatalos bontás nem volt ellenőrizhető, ezért a középszintű szerkezet arányosan 30 pontra számolva | a gyakorló feladat egy-egy vizsgafeladatnak felel meg, így a pontozás a hivatalos szerkezetet követi |
+| D27 | Emelt szinten az elégséges határa 25% (2024 óta), a középszinttel azonos | a 2026-os pontozási szabályok szerint |

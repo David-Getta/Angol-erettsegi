@@ -1,5 +1,5 @@
 import type { Level, SpeakingTask, WritingTask } from "@/lib/content/schema";
-import type { ErrorCategory, RubricCriterion, SpeakingRubric, WritingRubric } from "@/lib/exam/config";
+import type { ErrorCategory, RubricCriterion, SpeakingRubric, SpeakingRubricTask, WritingRubric } from "@/lib/exam/config";
 
 /**
  * Prompt texts for grading and for the live examiner. The same grading text is
@@ -22,13 +22,21 @@ export function writingRubricRef(rubric: WritingRubric, taskNumber: number): Rub
   };
 }
 
-export function speakingRubricRef(rubric: SpeakingRubric): RubricRef {
+export function speakingRubricTask(rubric: SpeakingRubric, type: string): SpeakingRubricTask {
+  return rubric.tasks.find((t) => t.types.includes(type)) ?? rubric.tasks[0]!;
+}
+
+export function speakingRubricRef(rubric: SpeakingRubric, type: string): RubricRef {
+  const task = speakingRubricTask(rubric, type);
   return {
-    id: rubric.id,
+    id: `${rubric.id}-${task.id}`,
     file: `config/exam/speaking-rubric-${rubric.level}.json`,
-    taskNumber: null,
-    criteria: rubric.criteria,
-    rules: rubric.generalRules,
+    taskNumber: task.partNumber,
+    criteria: task.criteria,
+    rules: [
+      ...rubric.generalRules,
+      ...rubric.overall.map((c) => `${c.name} (${c.max} pont) – ${c.description}`),
+    ],
   };
 }
 
@@ -137,7 +145,7 @@ export function speakingGradingPrompt(args: {
   transcriptSource: string | null;
   categories: ErrorCategory[];
 }): string {
-  const ref = speakingRubricRef(args.rubric);
+  const ref = speakingRubricRef(args.rubric, args.task.type);
   const t = args.task;
   const goalIds = speakingGoalIds(t);
   return `Te egy szigorú, tapasztalt angol érettségi vizsgáztató vagy (Magyarország, ${LEVEL_NAME[args.level]}, szóbeli vizsga). Értékeld a tanuló szóbeli válaszának átiratát.

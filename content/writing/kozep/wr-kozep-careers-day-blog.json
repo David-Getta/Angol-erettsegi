@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "id": "wr-kozep-careers-day-blog",
-  "revision": 1,
+  "revision": 2,
   "level": "kozep",
   "source": "generated",
   "topic": "munka",
@@ -15,21 +15,57 @@
   "situation": "Last week your school organised a careers day, and you spent a whole day at a workplace to see what a job is really like. You write a blog in English for your friends from abroad. Write a post about your day.",
   "situationHu": "A pályaorientációs napon egy egész napot töltöttél egy munkahelyen; írj róla bejegyzést az angol nyelvű blogodba.",
   "points": [
-    { "id": "p1", "text": "say where you spent the day and what job you learnt about" },
-    { "id": "p2", "text": "describe what the people there did and what you helped with" },
-    { "id": "p3", "text": "say whether you would like to do this job in the future and why" }
+    {
+      "id": "p1",
+      "text": "say where you spent the day and what job you learnt about"
+    },
+    {
+      "id": "p2",
+      "text": "describe what the people there did and what you helped with"
+    },
+    {
+      "id": "p3",
+      "text": "say whether you would like to do this job in the future and why"
+    }
   ],
-  "wordLimit": { "min": 100, "max": 120 },
-  "suggestedMinutes": 40,
+  "wordLimit": {
+    "min": 100,
+    "max": 120
+  },
+  "suggestedMinutes": 35,
   "usefulPhrases": [
-    { "en": "a careers day", "hu": "pályaorientációs nap" },
-    { "en": "I spent the day at … with …", "hu": "A napot …-ban/-ben töltöttem …-val/-vel." },
-    { "en": "My aunt works as a vet.", "hu": "A nagynéném állatorvosként dolgozik." },
-    { "en": "I was allowed to help with …", "hu": "Segíthettem a(z) …-ban/-ben." },
-    { "en": "It was harder / more interesting than I expected.", "hu": "Nehezebb / érdekesebb volt, mint amire számítottam." },
-    { "en": "to work long hours / to work in a team", "hu": "sokat dolgozni / csapatban dolgozni" },
-    { "en": "I'd love to be a … one day because …", "hu": "Egyszer szívesen lennék …, mert …" },
-    { "en": "It's not for me because …", "hu": "Ez nem nekem való, mert …" }
+    {
+      "en": "a careers day",
+      "hu": "pályaorientációs nap"
+    },
+    {
+      "en": "I spent the day at … with …",
+      "hu": "A napot …-ban/-ben töltöttem …-val/-vel."
+    },
+    {
+      "en": "My aunt works as a vet.",
+      "hu": "A nagynéném állatorvosként dolgozik."
+    },
+    {
+      "en": "I was allowed to help with …",
+      "hu": "Segíthettem a(z) …-ban/-ben."
+    },
+    {
+      "en": "It was harder / more interesting than I expected.",
+      "hu": "Nehezebb / érdekesebb volt, mint amire számítottam."
+    },
+    {
+      "en": "to work long hours / to work in a team",
+      "hu": "sokat dolgozni / csapatban dolgozni"
+    },
+    {
+      "en": "I'd love to be a … one day because …",
+      "hu": "Egyszer szívesen lennék …, mert …"
+    },
+    {
+      "en": "It's not for me because …",
+      "hu": "Ez nem nekem való, mert …"
+    }
   ],
   "checklistExtra": []
 }

@@ -127,13 +127,26 @@ export const WritingRubricSchema = z.object({
 });
 export type WritingRubric = z.infer<typeof WritingRubricSchema>;
 
+const SpeakingRubricTaskSchema = z.object({
+  id: z.string(),
+  partNumber: z.number().int(),
+  name: z.string(),
+  /** Speaking task types (content `type`) graded with these criteria. */
+  types: z.array(z.string()).min(1),
+  criteria: z.array(CriterionSchema).min(1),
+});
+export type SpeakingRubricTask = z.infer<typeof SpeakingRubricTaskSchema>;
+
 export const SpeakingRubricSchema = z.object({
   meta: MetaSchema,
   id: z.string(),
   level: LevelSchema,
   examMaxPoints: z.number().positive(),
-  /** Criteria used for app feedback on a single practice answer. */
-  criteria: z.array(CriterionSchema).min(1),
+  /** Per exam task: the criteria used for one practice answer of that type. */
+  tasks: z.array(SpeakingRubricTaskSchema).min(1),
+  /** Criteria given for the whole oral exam (e.g. pronunciation) – not graded from a transcript. */
+  overall: z.array(CriterionSchema).default([]),
+  conversion: ConversionSchema.default({ method: "proportional" }),
   /** Official exam scoring, for information. */
   officialScoring: z.array(z.string()).default([]),
   generalRules: z.array(z.string()).default([]),
@@ -222,6 +235,23 @@ export const examConfig = {
   errorCategories: () => load("exam/error-categories.json", ErrorCategoriesSchema),
   app: () => load("app.json", AppConfigSchema),
 };
+
+export type ConfigProvenance = { file: string; verifiedAt: string | null; notes: string[]; sources: { title: string; url: string }[] };
+
+/** Where each official exam config file comes from (shown on the settings page). */
+export function examConfigProvenance(): ConfigProvenance[] {
+  const entries: [string, { meta: z.infer<typeof MetaSchema> }][] = [
+    ["exam/structure.json", examConfig.structure()],
+    ["exam/grading.json", examConfig.grading()],
+    ["exam/writing-rubric-kozep.json", examConfig.writingRubric("kozep")],
+    ["exam/writing-rubric-emelt.json", examConfig.writingRubric("emelt")],
+    ["exam/speaking-rubric-kozep.json", examConfig.speakingRubric("kozep")],
+    ["exam/speaking-rubric-emelt.json", examConfig.speakingRubric("emelt")],
+    ["exam/topics.json", examConfig.topics()],
+    ["exam/task-types.json", examConfig.taskTypes()],
+  ];
+  return entries.map(([file, c]) => ({ file: `config/${file}`, verifiedAt: c.meta.verifiedAt ?? null, notes: c.meta.notes, sources: c.meta.sources }));
+}
 
 export function levelStructure(level: Level): LevelStructure {
   return examConfig.structure().levels[level];

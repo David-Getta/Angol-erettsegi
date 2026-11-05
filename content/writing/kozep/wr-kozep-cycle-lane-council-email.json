@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "id": "wr-kozep-cycle-lane-council-email",
-  "revision": 1,
+  "revision": 2,
   "level": "kozep",
   "source": "generated",
   "topic": "kornyezet",
@@ -15,22 +15,61 @@
   "situation": "You are spending a year in a small town in England with your family because of your mother's job. Every day you cycle to school, but the road is busy and dangerous. Write an e-mail to the local council.",
   "situationHu": "Egy évig Angliában élsz a családoddal; az iskolába vezető út biciklivel veszélyes, ezért írj hivatalos e-mailt a helyi önkormányzatnak.",
   "points": [
-    { "id": "p1", "text": "describe the road and explain why it is dangerous for cyclists" },
-    { "id": "p2", "text": "explain why many students would like to go to school by bike" },
-    { "id": "p3", "text": "suggest what the council could do to make the road safer" }
+    {
+      "id": "p1",
+      "text": "describe the road and explain why it is dangerous for cyclists"
+    },
+    {
+      "id": "p2",
+      "text": "explain why many students would like to go to school by bike"
+    },
+    {
+      "id": "p3",
+      "text": "suggest what the council could do to make the road safer"
+    }
   ],
-  "wordLimit": { "min": 100, "max": 120 },
-  "suggestedMinutes": 40,
+  "wordLimit": {
+    "min": 100,
+    "max": 120
+  },
+  "suggestedMinutes": 35,
   "usefulPhrases": [
-    { "en": "Dear Sir or Madam,", "hu": "Tisztelt Hölgyem/Uram!" },
-    { "en": "I am writing to tell you about a problem on … Road.", "hu": "Azért írok, hogy egy, a … Roadon lévő problémáról tájékoztassam Önöket." },
-    { "en": "There is heavy traffic in the mornings.", "hu": "Reggelente nagy a forgalom." },
-    { "en": "There is no cycle lane, so we have to ride next to lorries.", "hu": "Nincs kerékpársáv, ezért teherautók mellett kell tekernünk." },
-    { "en": "Cycling is cheaper, healthier and better for the environment.", "hu": "A biciklizés olcsóbb, egészségesebb és jobb a környezetnek." },
-    { "en": "I would like to suggest that …", "hu": "Azt javasolnám, hogy …" },
-    { "en": "Would it be possible to …?", "hu": "Lehetséges volna …?" },
-    { "en": "I hope you will consider my suggestion.", "hu": "Remélem, megfontolják a javaslatomat." },
-    { "en": "Yours faithfully,", "hu": "Tisztelettel: (ha nem tudod a címzett nevét)" }
+    {
+      "en": "Dear Sir or Madam,",
+      "hu": "Tisztelt Hölgyem/Uram!"
+    },
+    {
+      "en": "I am writing to tell you about a problem on … Road.",
+      "hu": "Azért írok, hogy egy, a … Roadon lévő problémáról tájékoztassam Önöket."
+    },
+    {
+      "en": "There is heavy traffic in the mornings.",
+      "hu": "Reggelente nagy a forgalom."
+    },
+    {
+      "en": "There is no cycle lane, so we have to ride next to lorries.",
+      "hu": "Nincs kerékpársáv, ezért teherautók mellett kell tekernünk."
+    },
+    {
+      "en": "Cycling is cheaper, healthier and better for the environment.",
+      "hu": "A biciklizés olcsóbb, egészségesebb és jobb a környezetnek."
+    },
+    {
+      "en": "I would like to suggest that …",
+      "hu": "Azt javasolnám, hogy …"
+    },
+    {
+      "en": "Would it be possible to …?",
+      "hu": "Lehetséges volna …?"
+    },
+    {
+      "en": "I hope you will consider my suggestion.",
+      "hu": "Remélem, megfontolják a javaslatomat."
+    },
+    {
+      "en": "Yours faithfully,",
+      "hu": "Tisztelettel: (ha nem tudod a címzett nevét)"
+    }
   ],
   "checklistExtra": []
 }

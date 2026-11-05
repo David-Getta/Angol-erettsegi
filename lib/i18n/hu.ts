@@ -506,6 +506,11 @@ export const t = {
     backupDone: (f: string) => `Mentés kész: ${f}`,
     backups: "Mentések",
     savedOk: "Beállítások mentve.",
+    provenance: "A vizsgaadatok forrásai",
+    provenanceHint: "Az időket, pontokat, rubrikákat, jegyhatárokat és a nyelvvizsga-egyenértékűséget a config/exam/ JSON-fájlok tartalmazzák. Ha a hivatalos adat változik, elég ezeket átírni.",
+    verifiedAt: (d: string) => `ellenőrizve: ${d}`,
+    notVerified: "nincs ellenőrizve",
+    sources: "Források",
   },
 };
 

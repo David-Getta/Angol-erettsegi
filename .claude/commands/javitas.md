@@ -17,7 +17,8 @@ Argumentum (opcionális): `$ARGUMENTS` – ha megadtak egy beadás-azonosítót,
    - `instructions`: **a teljes javítási utasítás** (rubrika sávleírásokkal, feladat, irányítási pontok, a tanuló szövege, a válasz pontos JSON-formája).
      Ezt kövesd – ugyanez a prompt megy a Claude appba is, ezért a két út eredménye összevethető.
    - `rubric.file`: a rubrika teljes JSON-ja (pl. `config/exam/writing-rubric-emelt.json`) – nézd meg a sávleírásokat és a szabályokat
-     (szóhatár, témától eltérés stb.).
+     (szóhatár, témától eltérés stb.). Szóbelinél a rubrika `tasks` listájából a feladat típusához (`task.type`) tartozó
+     szempontok érvényesek (az inbox-fájl `rubric.id`-je ezt jelöli); a kiejtés (`overall`) átiratból nem ítélhető meg, nem pontozod.
    - `task.card`: a feladatkártya; `previousVersion`: átírásnál az előző változat.
    - `kind: "speaking"` esetén `transcriptSource: "app-asr"`: a böngésző beszédfelismerőjének átirata – a központozás, kis/nagybetű és
      a félrehallott szavak nem a tanuló hibái.
