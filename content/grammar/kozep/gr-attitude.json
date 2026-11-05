@@ -1,0 +1,133 @@
+{
+  "schemaVersion": 1,
+  "id": "gr-attitude",
+  "level": "kozep",
+  "source": "generated",
+  "topic": "nyelvtan",
+  "title": "Vélemény, hozzáállás",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "grammar",
+  "type": "lesson",
+  "category": "attitude",
+  "summaryHu": "Az attitűdkérdések azt kérdezik, mit gondol vagy mit érez a szerző vagy a beszélő: lelkes, kritikus, bizonytalan, csalódott, ironikus? Ezt ritkán mondják ki egyenesen (I think it's bad); sokkal inkább a szóválasztás (értékelő melléknevek és határozószók), a tompító és erősítő fordulatok, hallásnál pedig a hanglejtés árulja el. A magyar diák gyakran a témát vagy az első benyomást veszi véleménynek, és nem veszi észre a „de”-t, az iróniát vagy az udvarias kritikát. Gyakori a feleletválasztós és a beszélő-hozzárendelős hallásfeladatokban, valamint az olvasás feleletválasztós kérdéseiben.",
+  "rules": [
+    {
+      "title": "Értékelő szavak: melléknevek, határozószók, igék",
+      "explanation": "A vélemény legfontosabb jelei az értékelő szavak: melléknevek (brilliant, impressive, disappointing, pointless), mondatmódosító határozószók (fortunately, surprisingly, sadly, admittedly, frankly), érzelmet kifejező igék és szerkezetek (I'm glad, I regret, I can't stand, I'm not keen on). Olvasáskor húzd alá őket – ezekből áll össze a szerző hozzáállása.",
+      "emeltOnly": false,
+      "examples": [
+        { "en": "Surprisingly, the cheapest phone in the test turned out to be the most reliable.", "note": "Surprisingly → a szerző nem erre számított; a most reliable pozitív értékelés." },
+        { "en": "Admittedly, the museum is quite small, but every room is worth seeing.", "note": "Admittedly = el kell ismerni: a szerző elismer egy hátrányt, de a fő véleménye pozitív (worth seeing)." }
+      ]
+    },
+    {
+      "title": "A fordulat utáni rész dönt",
+      "explanation": "Ha a beszélő előnyöket és hátrányokat is említ, a végső véleménye általában a fordulószó (but, however, still, although, on the whole) után áll. Ne az első félmondat alapján dönts.",
+      "emeltOnly": false,
+      "examples": [
+        { "en": "The hotel was beautiful and the staff were friendly, but I wouldn't go back – the noise from the street made it impossible to sleep.", "note": "Az összkép negatív: a but után áll a döntő vélemény (nem menne vissza)." },
+        { "en": "It's expensive and it takes ages to get there. Still, it's the best place to eat in town.", "note": "A Still után a végső, pozitív értékelés áll." }
+      ]
+    },
+    {
+      "title": "Tompítás és udvarias kritika",
+      "explanation": "Az angol beszélők gyakran tompítva fogalmazzák meg a kritikát vagy a bizonytalanságot: not exactly, not really, a bit, rather, I suppose, I'm not sure, I wouldn't say …, It could have been better. Ezek mögött valódi (bár enyhe) kritika vagy fenntartás van – ne olvasd őket semlegesnek, de túl erősnek se.",
+      "emeltOnly": false,
+      "examples": [
+        { "en": "The film wasn't exactly a masterpiece, but it was fine for a rainy Sunday.", "note": "Not exactly a masterpiece = udvarias kritika: közepesnek tartja – nem rossznak és nem nagyszerűnek." },
+        { "en": "I suppose the new timetable is all right, if you don't mind getting up at six.", "note": "I suppose + feltétel: kelletlen, fenntartásos elfogadás, nem lelkesedés." }
+      ]
+    },
+    {
+      "title": "Irónia: pozitív szó, negatív helyzet",
+      "explanation": "Ha egy lelkes szó (great, brilliant, wonderful, perfect, just what I needed) olyan helyzetben hangzik el, amely egyértelműen rossz, a beszélő ironikus: valójában bosszús vagy csalódott. Hallásnál a hanglejtés (lapos, fáradt vagy túlzó hang) is jelzi.",
+      "emeltOnly": false,
+      "examples": [
+        { "en": "Oh, wonderful. The printer's broken again, just before my deadline.", "note": "A wonderful itt bosszúságot fejez ki – a helyzet (elromlott nyomtató, határidő) mutatja." }
+      ]
+    },
+    {
+      "title": "Kié a vélemény?",
+      "explanation": "A szövegekben gyakran több vélemény is elhangzik: a szerzőé, és azoké, akiket idéz vagy említ (Some people say …, Critics claim …, My parents think …, According to …). A kérdés mindig egy konkrét személy véleményére vonatkozik – ne keverd össze a szerző álláspontját azzal, amit cáfolni akar.",
+      "emeltOnly": false,
+      "examples": [
+        { "en": "Many critics called the novel slow and boring. I couldn't put it down.", "note": "A kritikusok véleménye negatív, a szerzőé pozitív (I couldn't put it down = nem tudtam letenni)." }
+      ]
+    }
+  ],
+  "commonMistakes": [
+    { "wrong": "A beszélő sokat beszél a városa problémáiról, tehát negatívan látja a városát.", "right": "Megnézem a végső értékelést: „Still, I wouldn't want to live anywhere else.” – összességében pozitív.", "why": "A terjedelem nem egyenlő a véleménnyel. Valaki hosszan sorolhat hátrányokat, mégis pozitív lehet a végső álláspontja – a fordulat (still, but, on the whole) utáni rész dönt." },
+    { "wrong": "Elhangzik a great szó, tehát a beszélő elégedett.", "right": "Megnézem a helyzetet és a hangnemet: ha valami rossz történt (pl. elromlott valami), a great ironikus.", "why": "Az irónia a pozitív szót negatív jelentésben használja. A szó önmagában nem bizonyíték, a helyzet dönt." },
+    { "wrong": "Azt az opciót választom, amely a szerző által idézett véleményt tükrözi: Critics say the novel is boring.", "right": "Szétválasztom, kié a vélemény: a kérdés a szerzőre vonatkozik, ő pedig nem tudta letenni a könyvet → pozitív.", "why": "A szerzők gyakran idéznek mások véleményét, hogy aztán ellentmondjanak neki. Ha nem figyelsz, kié a vélemény, épp az ellenkezőjét jelölöd meg." },
+    { "wrong": "A beszélő elégedetlen, ezért a legerősebb negatív szót választom: furious.", "right": "A vélemény erősségét is figyelem: „It was a bit disappointing” → slightly disappointed, nem furious.", "why": "A válaszlehetőségek gyakran nem az irányban, hanem az erősségben különböznek. A tompított kritika (a bit, rather, not really) nem felel meg a dühnek vagy a felháborodásnak." }
+  ],
+  "examTips": [
+    "Hallásnál (feleletválasztás, beszélő-hozzárendelés) a hanglejtés is bizonyíték: a lelkes, a bizonytalan és az ironikus beszélő másképp hangzik. Első meghallgatáskor a beszélő összbenyomására figyelj, másodikra a döntő mondatra.",
+    "A „What is the writer's attitude to …?” kérdésnél előbb döntsd el az irányt (pozitív / negatív / vegyes / semleges), utána az erősségét. Így két-három opciót gyorsan kizárhatsz.",
+    "Gyűjts listát a véleményt jelző szavakról (fortunately, admittedly, frankly, to be honest, I must say, I'm not convinced, it's not worth …), és olvasáskor húzd alá őket. A szóbelin és a fogalmazásban is jól jönnek a saját véleményed kifejezésére."
+  ],
+  "practice": [
+    {
+      "id": "1",
+      "kind": "choice",
+      "prompt": "Everyone told me the new pizza place was the best in town, so I was really looking forward to it. The pizza was fine, I suppose, but I've had better at half the price.\n\nWhat is the writer's opinion of the pizza place?",
+      "options": [
+        { "key": "A", "text": "It is the best in town." },
+        { "key": "B", "text": "It is not as good as people say." },
+        { "key": "C", "text": "It is terrible." },
+        { "key": "D", "text": "It is cheap and good." }
+      ],
+      "answer": "B",
+      "category": "attitude",
+      "evidence": "The pizza was fine, I suppose, but I've had better at half the price.",
+      "explanation": "Helyes: B. A fine, I suppose kelletlen, tompított értékelés, a but után pedig a lényeg: evett már jobbat feleannyiért. Vagyis a hely nem olyan jó, mint ahogy mondták (Everyone told me … the best in town).",
+      "wrongOptions": {
+        "A": "Ez a többiek véleménye (Everyone told me), nem a szerzőé – a szerző csalódott.",
+        "C": "Túl erős: a szerző szerint a pizza „rendben volt” (fine), tehát nem szörnyű, csak nem kiemelkedő.",
+        "D": "Ellentmond a szövegnek: feleannyiért evett jobbat, vagyis ez a hely drága az értékéhez képest."
+      }
+    },
+    {
+      "id": "2",
+      "kind": "choice",
+      "prompt": "\"Oh, brilliant,\" said Kate, looking out of the window. \"We've been planning this picnic for two weeks, and now it's pouring with rain.\"\n\nHow does Kate feel?",
+      "options": [
+        { "key": "A", "text": "Excited" },
+        { "key": "B", "text": "Relieved" },
+        { "key": "C", "text": "Annoyed" },
+        { "key": "D", "text": "Pleased with the weather" }
+      ],
+      "answer": "C",
+      "category": "attitude",
+      "evidence": "We've been planning this picnic for two weeks, and now it's pouring with rain.",
+      "explanation": "Helyes: C. A brilliant itt ironikus: két hete tervezik a pikniket, és most zuhog az eső. A pozitív szó negatív helyzetben bosszúságot fejez ki.",
+      "wrongOptions": {
+        "A": "A brilliant szó szerinti jelentésére épülő csapda; a helyzet (elmarad a piknik) nem izgalmas öröm, hanem bosszúság.",
+        "B": "A megkönnyebbülés akkor illene, ha nem akart volna elmenni a piknikre – de két hete tervezték.",
+        "D": "Az irónia félreértése: a zuhogó eső tönkreteszi a pikniket, Kate nem örül neki."
+      }
+    },
+    {
+      "id": "3",
+      "kind": "choice",
+      "prompt": "Some people say that working from home makes people lazy. I don't think that's true. Since I started working from home, I've actually finished my projects faster, although I do miss chatting with my colleagues.\n\nWhat is the writer's attitude to working from home?",
+      "options": [
+        { "key": "A", "text": "Completely negative" },
+        { "key": "B", "text": "Mainly positive, with one small disadvantage" },
+        { "key": "C", "text": "Neutral – the writer has no clear opinion" },
+        { "key": "D", "text": "The writer thinks it makes people lazy." }
+      ],
+      "answer": "B",
+      "category": "attitude",
+      "evidence": "I don't think that's true. Since I started working from home, I've actually finished my projects faster, although I do miss chatting with my colleagues.",
+      "explanation": "Helyes: B. A szerző cáfolja, hogy az otthoni munka lustává tesz, és pozitív tapasztalatot hoz (gyorsabban végez). Az although után egy kisebb hátrányt is elismer: hiányoznak a kollégák. Az összkép tehát főleg pozitív, egy kis fenntartással.",
+      "wrongOptions": {
+        "A": "Túl erős és rossz irányú: a szerző fő tapasztalata pozitív, csak egy apró hátrányt említ.",
+        "C": "A szerzőnek világos véleménye van: I don't think that's true, és saját pozitív példát hoz.",
+        "D": "Ez a Some people véleménye, amelyet a szerző kifejezetten cáfol."
+      }
+    }
+  ],
+  "relatedCategories": ["inference", "gist"]
+}

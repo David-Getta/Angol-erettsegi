@@ -1,0 +1,181 @@
+{
+  "schemaVersion": 1,
+  "id": "gr-cohesion",
+  "level": "kozep",
+  "source": "generated",
+  "topic": "nyelvtan",
+  "title": "Szövegkohézió",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "grammar",
+  "type": "lesson",
+  "category": "cohesion",
+  "summaryHu": "A kohézió azt jelenti, hogy a mondatok és a bekezdések összefüggő, könnyen követhető szöveget alkotnak: logikus sorrend, bekezdésekre tagolás, kötőszavak és utalószavak (this, these, it, such), ismétlés helyett névmás vagy szinonima. Magyar diákoknál gyakori a tagolatlan „szövegtömb”, a mindig ugyanazzal a két kötőszóval (and, but) összefűzött mondatsor, a rossz szerkezettel használt kötőszó (*Despite it was raining) és a magyar „egyrészt … másrészt” tükörfordítása. Az íráskészség „Szövegalkotás” szempontja ezt értékeli: középszinten a 2. feladatnál 4 pont, emelt szinten az 1. feladatnál 3, a 2. feladatnál 5 pont.",
+  "rules": [
+    {
+      "title": "Bekezdések: egy bekezdés – egy gondolat",
+      "explanation": "Tagold a szöveget: a megszólítás után rövid nyitó bekezdés (miért írsz), utána irányító szempontonként egy-egy bekezdés, végül záró bekezdés (kérés, összegzés, a válasz várása). Az új bekezdést üres sorral jelöld. A bekezdés első mondata jelezze, miről szól (topic sentence), így az olvasó rögtön látja, melyik szemponthoz ér.",
+      "emeltOnly": false,
+      "examples": [
+        { "en": "As for accommodation, I would prefer to stay with a host family.", "hu": "Ami a szállást illeti, szívesebben laknék egy vendégcsaládnál.", "note": "Az As for … új szempontot vezet be – jó bekezdéskezdés." },
+        { "en": "Another reason why I love living here is the people.", "hu": "Egy másik ok, amiért szeretek itt élni, az emberek.", "note": "Another reason … – a bekezdés első mondata összeköti az előző bekezdéssel és megnevezi a témát." }
+      ]
+    },
+    {
+      "title": "Kötőszavak és kapcsolóelemek jelentés szerint",
+      "explanation": "Válassz kötőszót a logikai kapcsolat szerint, és ne ismételd folyton ugyanazt. Hozzáadás: and, also, too, as well, in addition, what is more, moreover. Ellentét: but, however, although, while, whereas, on the other hand. Ok: because, as, since, because of / due to + főnév. Következmény: so, therefore, as a result. Cél: to + ige, in order to, so that. Időrend, sorrend: first(ly), then, after that, finally. Példa: for example, for instance, such as. Összegzés: all in all, to sum up, in conclusion.",
+      "emeltOnly": false,
+      "examples": [
+        { "en": "The flat is small. What is more, it is very far from the city centre.", "hu": "A lakás kicsi. Ráadásul nagyon messze van a belvárostól.", "note": "What is more: újabb (itt negatív) érv hozzáadása." },
+        { "en": "I left early so that I wouldn't miss the bus.", "hu": "Korán elindultam, hogy ne késsem le a buszt.", "note": "so that + tagmondat: célt fejez ki." },
+        { "en": "Some students prefer online lessons, whereas others learn better in a classroom.", "hu": "Egyes diákok az online órákat szeretik jobban, mások viszont tanteremben tanulnak jobban.", "note": "whereas: két ellentétes dolog szembeállítása." }
+      ]
+    },
+    {
+      "title": "Mi jöhet a kapcsolóelem után? – a szerkezet is számít",
+      "explanation": "A hasonló jelentésű kapcsolóelemek után más-más szerkezet áll. Although, even though, because, while, as + teljes tagmondat (alany + ige): Although it was cold, … Despite, in spite of, because of, due to + főnév vagy -ing: Despite the cold, … / Despite feeling tired, … However, therefore, moreover, nevertheless: határozószók, ezért új mondatot (vagy pontosvessző utáni tagmondatot) vezetnek be, utánuk vessző áll: It was cold. However, we went out. Ha egy kapcsolóelem szerkezetében bizonytalan vagy, használj egy biztosat – a rosszul használt kötőszó a nyelvhelyességből is levon.",
+      "emeltOnly": false,
+      "examples": [
+        { "en": "Although it was raining, we went to the beach.", "hu": "Bár esett az eső, lementünk a strandra.", "note": "Although + tagmondat (it was raining)." },
+        { "en": "Despite the rain, we went to the beach.", "hu": "Az eső ellenére lementünk a strandra.", "note": "Despite + főnév (the rain); despite után nincs of." },
+        { "en": "It was raining. However, we went to the beach.", "hu": "Esett az eső. Ennek ellenére lementünk a strandra.", "note": "However: új mondat, utána vessző." }
+      ]
+    },
+    {
+      "title": "Utalószavak: névmások, this / these / such",
+      "explanation": "Ismétlés helyett utalj vissza a már említett dolgokra: it, they, them, his, her, this, that, these, those, one / ones, such + főnév. A this (vagy this + főnév) gyakran egy egész előző gondolatra utal: Many students work in the summer. This helps them … Ügyelj rá, hogy egyértelmű legyen, mire utalsz – ha két főnév is szóba jöhet, inkább ismételd meg a főnevet, vagy írd this problem, this idea formában. Emelt szinten: the former (az előbbi), the latter (az utóbbi).",
+      "emeltOnly": false,
+      "examples": [
+        { "en": "I bought a new phone last week. It has a brilliant camera.", "hu": "Múlt héten vettem egy új telefont. Nagyszerű kamerája van.", "note": "It = a new phone." },
+        { "en": "Prices in the city centre keep rising. This means that many young people cannot afford to live there.", "hu": "A belvárosi árak egyre nőnek. Emiatt sok fiatal nem engedheti meg magának, hogy ott lakjon.", "note": "This = az egész előző mondat (az árak emelkedése)." },
+        { "en": "I don't like printed maps; I prefer digital ones.", "hu": "Nem szeretem a nyomtatott térképeket, jobban kedvelem a digitálisakat.", "note": "ones = maps – nem kell megismételni a főnevet." }
+      ]
+    },
+    {
+      "title": "Ismétlés helyett szinonima vagy általánosító szó",
+      "explanation": "Ne ismételd ugyanazt a főnevet mondatról mondatra: a festival → the event, it; my grandmother → she; the problem → this issue, the situation. Az általánosító főnevek (situation, issue, idea, experience, change) jól összefoglalnak egy előző gondolatot. A kulcsszót azonban nem kell mindenáron lecserélni: a pontatlan szinonima rosszabb, mint egy ismétlés.",
+      "emeltOnly": false,
+      "examples": [
+        { "en": "The festival was great. It had excellent music, and the event was also surprisingly cheap.", "hu": "A fesztivál nagyszerű volt. Kiváló zenék voltak, és a rendezvény meglepően olcsó is volt.", "note": "festival → it → the event: nincs háromszoros ismétlés." },
+        { "en": "Our school banned phones in lessons last year. At first, many students were angry about this change.", "hu": "Tavaly az iskolánk betiltotta a telefonokat az órákon. Eleinte sok diák dühös volt emiatt a változás miatt.", "note": "this change összefoglalja az előző mondatot." }
+      ]
+    },
+    {
+      "title": "Az érvelő szöveg felépítése",
+      "explanation": "Az emelt szintű érvelő szöveg (és a véleménykifejtő fórum- vagy olvasói levél) jól követhető vázra épül. Bevezetés: a téma és az álláspontod (In my view, … / I strongly believe that …). Kifejtés: bekezdésenként egy érv, indoklással és példával (Firstly, … For instance, …; Secondly, …). Ellenérv és cáfolata: Some people argue that …; however, … / It is true that …, but …. Lezárás: összegzés, az álláspont megerősítése (To sum up, … / All things considered, …). A bekezdések első mondata mindig jelezze, hol tart az érvelés.",
+      "emeltOnly": true,
+      "examples": [
+        { "en": "Some people argue that homework is a waste of time. However, I believe that regular practice at home is essential.", "hu": "Egyesek szerint a házi feladat időpocsékolás. Én azonban úgy gondolom, hogy a rendszeres otthoni gyakorlás elengedhetetlen.", "note": "Ellenvélemény bemutatása, majd fordulat a saját álláspont felé." },
+        { "en": "All things considered, the advantages of studying abroad clearly outweigh the disadvantages.", "hu": "Mindent egybevetve a külföldi tanulás előnyei egyértelműen felülmúlják a hátrányait.", "note": "Záró bekezdés: összegzés és állásfoglalás." }
+      ]
+    }
+  ],
+  "commonMistakes": [
+    { "wrong": "Despite it was raining, we went to the beach.", "right": "Although it was raining, we went to the beach. / Despite the rain, we went to the beach.", "why": "A despite (és az in spite of) után főnév vagy -ing alak áll, nem teljes tagmondat. Tagmondat előtt although vagy even though kell." },
+    { "wrong": "Because of I was ill, I missed the concert.", "right": "Because I was ill, I missed the concert. / Because of my illness, I missed the concert.", "why": "A because után tagmondat (alany + ige), a because of után főnév áll. A magyar „mert” mindkettőnek megfelel, ezért könnyű összekeverni." },
+    { "wrong": "On the one hand, city life is exciting, on the other hand, there are a lot of things to do.", "right": "City life is exciting. What is more, there are a lot of things to do. / On the one hand, city life is exciting; on the other hand, it can be very stressful.", "why": "A magyar „egyrészt …, másrészt …” két egy irányba mutató érvet is összeköthet. Az angol on the one hand … on the other hand viszont mindig két ellentétes szempontot állít szembe; azonos irányú érveknél Firstly … Secondly … vagy What is more kell." },
+    { "wrong": "I like my school. And I like my teachers. And my class is nice.", "right": "I like my school because the teachers are kind. What is more, my classmates are really friendly.", "why": "Az and-del kezdett rövid mondatok sora nem nyelvtani hiba, de egyhangú, gyermekies hatású, és a szövegalkotás pontszámát rontja. Változatos kapcsolóelemekkel (because, what is more, however) kösd össze a gondolatokat." },
+    { "wrong": "The festival was great. The festival had good music and the festival was cheap.", "right": "The festival was great. It had good music, and the tickets were cheap.", "why": "Ugyanannak a főnévnek az ismétlése helyett használj névmást (it) vagy más szót (the event, the tickets). Az ismétlés a szókincs és a szövegalkotás szempontnál is levon." }
+  ],
+  "examTips": [
+    "Íráskészség, „Szövegalkotás” szempont: a vizsgáztató azt nézi, logikus-e a felépítés, vannak-e bekezdések, és változatosak-e a kapcsolóelemek. Írás előtt készíts egyperces vázlatot: irányító szempontonként egy bekezdés, mindegyikhez egy kezdőmondat.",
+    "Gyűjts minden logikai kapcsolathoz 2–3 kötőszót (ellentét: however, although, while; következmény: so, therefore, as a result; hozzáadás: also, what is more, in addition), és egy szövegben ne ismételd ugyanazt. Csak olyat használj, amelynek a szerkezetét biztosan tudod.",
+    "Ugyanezek a kötő- és utalószavak kellenek a nyelvhelyesség nyílt kloze-feladatában (although, unless, which, such) és az olvasás hiányzó mondatos feladatában (this, these, however). Ha írásban tudatosan használod őket, olvasáskor is könnyebben észreveszed, mi kapcsolódik mihez."
+  ],
+  "practice": [
+    {
+      "id": "1",
+      "kind": "text",
+      "prompt": "___ the heavy rain, the match was not cancelled. (Write one word.)",
+      "answer": ["despite", "notwithstanding"],
+      "maxWords": 1,
+      "category": "cohesion",
+      "explanation": "Helyes: Despite (három szóban ugyanez: in spite of; nagyon formálisan: notwithstanding). A két tény ellentétes (esett, mégsem mondták le), és a hiány után főnév áll (the heavy rain), nem tagmondat – ezért nem although, hanem despite kell."
+    },
+    {
+      "id": "2",
+      "kind": "choice",
+      "prompt": "The tickets were very expensive. ___, we decided to go to the concert.",
+      "options": [
+        { "key": "A", "text": "Although" },
+        { "key": "B", "text": "However" },
+        { "key": "C", "text": "Despite" },
+        { "key": "D", "text": "Because" }
+      ],
+      "answer": "B",
+      "category": "cohesion",
+      "explanation": "Helyes: However. Ellentétet fejez ki (drága volt, mégis elmentünk), és határozószóként új mondatot vezet be, utána vesszővel – pontosan ez a helyzet a hiánynál.",
+      "wrongOptions": {
+        "A": "Az although kötőszó, két tagmondatot köt össze egy mondaton belül (Although the tickets were expensive, we …); nem állhat egyedül vesszővel egy új mondat elején.",
+        "C": "A despite után főnév vagy -ing kell (Despite the price, …), nem állhat önmagában vesszővel.",
+        "D": "A because okot fejez ki, itt pedig ellentét van; ráadásul nem állhat egyedül vesszővel a mondat elején."
+      }
+    },
+    {
+      "id": "3",
+      "kind": "text",
+      "prompt": "I'm saving money ___ that I can buy a new bike in the spring.",
+      "answer": ["so", "in order"],
+      "category": "cohesion",
+      "explanation": "Helyes: so (so that = azért, hogy). Célt fejezünk ki, és utána tagmondat jön (I can buy …). A formálisabb in order that is helyes, de ritkább."
+    },
+    {
+      "id": "4",
+      "kind": "choice",
+      "prompt": "Many young people do voluntary work in the summer. ___ helps them to gain useful experience.",
+      "options": [
+        { "key": "A", "text": "These" },
+        { "key": "B", "text": "This" },
+        { "key": "C", "text": "Such" },
+        { "key": "D", "text": "Those" }
+      ],
+      "answer": "B",
+      "category": "cohesion",
+      "explanation": "Helyes: This. Az egész előző gondolatra utal (az, hogy önkéntes munkát végeznek), és egyes számú igével áll (helps). Ilyen összefoglaló visszautalásra a this a leggyakoribb.",
+      "wrongOptions": {
+        "A": "A these többes számú, ezért *These helps nyelvtanilag hibás; és nincs olyan többes számú főnév, amelyre itt utalni akarunk.",
+        "C": "A such főnév előtt áll (such work, such experience); önállóan alanyként itt nem használható.",
+        "D": "A those többes számú és távolra mutat; *Those helps hibás, és nem az előző gondolatra utal."
+      }
+    },
+    {
+      "id": "5",
+      "kind": "choice",
+      "prompt": "Which version avoids unnecessary repetition best?",
+      "options": [
+        { "key": "A", "text": "My grandmother is 80. My grandmother still works in the garden every day." },
+        { "key": "B", "text": "My grandmother is 80, but she still works in the garden every day." },
+        { "key": "C", "text": "My grandmother is 80, but my grandmother still works in her garden every day." },
+        { "key": "D", "text": "My grandmother, she is 80, but she still works in the garden every day." }
+      ],
+      "answer": "B",
+      "category": "cohesion",
+      "explanation": "Helyes: B. A but kifejezi az ellentétet (80 éves, mégis dolgozik), a she pedig ismétlés nélkül utal vissza a nagymamára.",
+      "wrongOptions": {
+        "A": "A főnév fölöslegesen ismétlődik, és hiányzik a két mondat közötti kapcsolat (az ellentét).",
+        "C": "Van kötőszó, de a my grandmother ismétlése fölösleges; she kellene.",
+        "D": "Kettős alany (My grandmother, she …) – beszélt nyelvi, írásban hibás szerkezet."
+      }
+    },
+    {
+      "id": "6",
+      "kind": "choice",
+      "prompt": "Which sentence uses 'on the other hand' correctly?",
+      "options": [
+        { "key": "A", "text": "Our town has a great sports centre. On the other hand, it also has two swimming pools." },
+        { "key": "B", "text": "Our town is safe and clean. On the other hand, there is not much to do in the evening." },
+        { "key": "C", "text": "I love cycling. On the other hand, I cycle to school every day." },
+        { "key": "D", "text": "The bus is cheap. On the other hand, it is also fast." }
+      ],
+      "answer": "B",
+      "category": "cohesion",
+      "explanation": "Helyes: B. Az on the other hand (másfelől, viszont) ellentétes szempontot vezet be: a város előnyei (biztonságos, tiszta) után egy hátrány jön (esténként nincs mit csinálni).",
+      "wrongOptions": {
+        "A": "A két mondat ugyanabba az irányba mutat (két előny), ezért kiegészítő kapcsolóelem kell: What is more / In addition.",
+        "C": "A második mondat alátámasztja az elsőt, nem ellentétes vele; In fact vagy For example illene.",
+        "D": "Két előny (olcsó és gyors) – a magyar „egyrészt … másrészt” tükörfordítása. Helyesen: The bus is cheap. What is more, it is fast."
+      }
+    }
+  ],
+  "relatedCategories": ["linking", "pronoun", "punctuation"]
+}

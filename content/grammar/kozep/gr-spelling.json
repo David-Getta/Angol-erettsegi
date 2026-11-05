@@ -1,0 +1,185 @@
+{
+  "schemaVersion": 1,
+  "id": "gr-spelling",
+  "level": "kozep",
+  "source": "generated",
+  "topic": "nyelvtan",
+  "title": "Helyesírás",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "grammar",
+  "type": "lesson",
+  "category": "spelling",
+  "summaryHu": "Az angol helyesírás nem fonetikus: sok szót másképp írunk, mint ahogy kiejtjük, ezért a magyar diák gyakran „hallás után” írja le a szavakat (*beatiful, *wich, *becouse). Sok hiba a kis- és nagybetűből adódik: angolul a nyelvek, nemzetiségek, napok és hónapok nevét nagybetűvel írjuk, magyarul nem. Az íráskészség részben a helyesírás a „Nyelvhelyesség, helyesírás” szempontba számít, a nyelvhelyesség-feladatokban (szóképzés, igealakok, nyílt kloze) pedig a betűhibás szó rossz válasznak számít.",
+  "rules": [
+    {
+      "title": "Nagybetű: nyelvek, nemzetiségek, napok, hónapok, ünnepek és az I",
+      "explanation": "Angolul nagybetűvel kezdjük a nyelvek és nemzetiségek nevét, valamint az ezekből képzett mellékneveket (English, Hungarian, a French film), a hét napjait és a hónapokat (Monday, July), az ünnepeket (Christmas, Easter), és mindig nagybetűs az I (én) névmás, a mondat közepén is. Az évszakokat viszont kisbetűvel írjuk (summer, winter), és a tantárgyak is kisbetűsek (maths, history, biology) – kivéve a nyelveket, mert azok nyelvnevek (English, German).",
+      "emeltOnly": false,
+      "examples": [
+        { "en": "I have maths and English on Tuesdays.", "hu": "Keddenként matekom és angolom van.", "note": "maths kisbetű, English nagybetű (nyelv), Tuesdays nagybetű (nap)." },
+        { "en": "In Hungary we open our presents on Christmas Eve.", "hu": "Magyarországon szenteste bontjuk ki az ajándékokat." },
+        { "en": "We usually go camping in the summer, in July or August.", "hu": "Nyáron, júliusban vagy augusztusban szoktunk kempingezni.", "note": "summer kisbetű (évszak), July és August nagybetű (hónap)." }
+      ]
+    },
+    {
+      "title": "Néma -e elhagyása és mássalhangzó-kettőzés a végződések előtt",
+      "explanation": "Néma -e-re végződő szavaknál a magánhangzóval kezdődő végződés (-ing, -ed, -er, -est) előtt elhagyjuk az e-t: make → making, write → writing, nice → nicer (de: see → seeing, be → being, mert ott az e nem néma). Egy szótagú, egy magánhangzó + egy mássalhangzó végű szavaknál ugyanezen végződések előtt a végső mássalhangzót megkettőzzük: stop → stopped, swim → swimming, big → bigger. Többtagú szónál csak akkor kettőzünk, ha a hangsúly az utolsó szótagon van: preFER → preferred, beGIN → beginning, de: VISit → visited, LISten → listening. A brit angol az egy magánhangzó + l végű szavaknál az l-t a hangsúlytól függetlenül kettőzi (travel → travelling, cancel → cancelled; de: feel → feeling). A w, x, y betűt soha nem kettőzzük: fix → fixed, play → played.",
+      "emeltOnly": false,
+      "examples": [
+        { "en": "We stopped at a café and I'm planning to go back there.", "hu": "Megálltunk egy kávézóban, és azt tervezem, hogy visszamegyek oda.", "note": "stop → stopped, plan → planning: egy magánhangzó + egy mássalhangzó → kettőzés." },
+        { "en": "She is writing a letter and making a cake at the same time.", "hu": "Egyszerre ír levelet és süt tortát.", "note": "write → writing, make → making: a néma -e kiesik." },
+        { "en": "My cousin visited us, and we travelled around the country together.", "hu": "Az unokatestvérem meglátogatott minket, és együtt bejártuk az országot.", "note": "VISit: a hangsúly nem az utolsó szótagon van → visited; travel → travelled (brit -ll-)." }
+      ]
+    },
+    {
+      "title": "Az -y végű szavak: mikor lesz belőle -i-?",
+      "explanation": "Mássalhangzó + y végű szavaknál a y i-re változik az -s/-es, -ed, -er, -est, -ly, -ness és -ful előtt: study → studies, studied; happy → happier, happily, happiness; city → cities; beauty → beautiful. Magánhangzó + y esetén a y marad: play → plays, played; enjoy → enjoyed; day → days. Az -ing előtt a y mindig megmarad, hogy ne legyen két i egymás mellett: study → studying, try → trying. Gyakori kivételek: say → said, pay → paid, day → daily.",
+      "emeltOnly": false,
+      "examples": [
+        { "en": "My sister studies medicine, and she is studying for an exam right now.", "hu": "A nővérem orvosnak tanul, és éppen vizsgára készül.", "note": "studies (y → i + es), de studying (az -ing előtt a y marad)." },
+        { "en": "They played in the park and enjoyed the sunny day.", "hu": "A parkban játszottak, és élvezték a napsütéses napot.", "note": "Magánhangzó + y: played, enjoyed – nincs változás." },
+        { "en": "The children looked very happy, and I was happier than ever.", "hu": "A gyerekek nagyon boldognak tűntek, én pedig boldogabb voltam, mint valaha." }
+      ]
+    },
+    {
+      "title": "Gyakran elírt szavak, amelyeket meg kell tanulni",
+      "explanation": "Sok szónál a kiejtés nem segít, ezért ezeket egyszerűen be kell vésni. Az érettségi fogalmazásokban a leggyakoribb hibák: because, beautiful, which, friend, believe, receive, different, interesting, necessary, accommodation, embarrassed, definitely, separate, until, tomorrow, government, environment, Wednesday, February, really. Az ie/ei kérdésben segít az „i before e, except after c” szabály (believe, friend, piece – de receive, ceiling), de vannak kivételei (their, weird, science), ezért bizonytalan esetben inkább a szótár döntsön.",
+      "emeltOnly": false,
+      "examples": [
+        { "en": "It was a beautiful day, which I will never forget.", "hu": "Gyönyörű nap volt, amelyet sosem fogok elfelejteni.", "note": "beau-ti-ful (eau betűkkel), which (wh-, a h néma)." },
+        { "en": "I believe my friend received the parcel on Wednesday.", "hu": "Azt hiszem, a barátom szerdán megkapta a csomagot.", "note": "believe, friend: ie; received: c után ei; Wednesday: a d néma." },
+        { "en": "It is definitely necessary to book accommodation in advance.", "hu": "Mindenképpen szükséges előre szállást foglalni.", "note": "definitely (nem *definately), necessary (egy c, két s), accommodation (két c, két m)." }
+      ]
+    },
+    {
+      "title": "Egybe- és különírás",
+      "explanation": "Néhány gyakori kifejezést mindig különírunk: a lot (nem *alot), in front of, at least, each other, of course, all right (az alright informális változat), thank you. Egybe írjuk: today, tonight, tomorrow, cannot, nowadays, everyone, maybe. Ahol mindkét forma létezik, a jelentés más: maybe (= talán, határozószó) ↔ may be (= lehet, módbeli segédige + be); everyone (= mindenki) ↔ every one (= mindegyik, egyenként); sometimes (= néha) ↔ some time (= egy ideig, valamikor).",
+      "emeltOnly": false,
+      "examples": [
+        { "en": "Maybe it will rain tomorrow, so it may be better to stay at home.", "hu": "Holnap talán esni fog, ezért lehet, hogy jobb otthon maradni.", "note": "Maybe egy szó (talán); may be két szó (lehet, hogy … van)." },
+        { "en": "We had a lot of fun and helped each other a lot.", "hu": "Nagyon jól szórakoztunk, és sokat segítettünk egymásnak.", "note": "a lot és each other mindig két szó." },
+        { "en": "Everyone liked the cakes, and every one of them was sold.", "hu": "Mindenkinek ízlettek a sütik, és mindegyiket eladtuk." }
+      ]
+    },
+    {
+      "title": "Azonos vagy hasonló hangzású szavak",
+      "explanation": "Ezeket a párokat a kiejtés alapján nem lehet megkülönböztetni, csak a jelentés alapján: their (az ő …-juk) – there (ott; there is/are = van) – they're (= they are); your (a te …-d) – you're (= you are); its (annak a …-ja, birtokos) – it's (= it is / it has); to (-ba, -hoz; főnévi igenév) – too (is; túl) – two (kettő); then (aztán) – than (mint, összehasonlításban); quite (elég, eléggé) – quiet (csendes); lose (elveszít) – loose (laza, bő); where (hol) – were (voltak) – wear (visel).",
+      "emeltOnly": false,
+      "examples": [
+        { "en": "They're visiting their grandparents, who live over there.", "hu": "Meglátogatják a nagyszüleiket, akik ott laknak.", "note": "they're = they are; their = birtokos; there = ott." },
+        { "en": "My brother is taller than me, and he is quite quiet.", "hu": "Az öcsém magasabb nálam, és elég csendes.", "note": "than = mint; quite = elég; quiet = csendes." },
+        { "en": "It's a small town, but its castle is famous.", "hu": "Kis város, de a vára híres.", "note": "It's = It is; its = birtokos (a város vára)." }
+      ]
+    },
+    {
+      "title": "Brit és amerikai helyesírás: légy következetes",
+      "explanation": "Mindkét változat elfogadott, de egy szövegen belül ne keverd őket. A leggyakoribb különbségek: colour/color, favourite/favorite, centre/center, theatre/theater, travelling/traveling, programme/program (tévéműsor, képzési program), organise/organize – a brit angolban az -ize alak is helyes. Ha brit angolt tanultál, maradj annál végig.",
+      "emeltOnly": false,
+      "examples": [
+        { "en": "My favourite colour is blue, and the theatre is in the city centre.", "hu": "A kedvenc színem a kék, és a színház a városközpontban van.", "note": "Következetesen brit alakok: favourite, colour, theatre, centre." },
+        { "en": "My favorite color is blue, and the theater is in the city center.", "hu": "Ugyanez amerikai helyesírással.", "note": "Ez is helyes – csak ne keverd a kettőt egy szövegben." }
+      ]
+    }
+  ],
+  "commonMistakes": [
+    { "wrong": "I study english and german at school.", "right": "I study English and German at school.", "why": "A nyelvek nevét angolul mindig nagybetűvel írjuk, akkor is, ha tantárgyként szerepelnek. A magyar kisbetűs szokás (angol, német) itt nem érvényes." },
+    { "wrong": "We are leaving on monday, 3 june.", "right": "We are leaving on Monday, 3 June.", "why": "A hét napjai és a hónapok neve angolul nagybetűs (magyarul kisbetűs: hétfő, június)." },
+    { "wrong": "My friends and i went to the cinema.", "right": "My friends and I went to the cinema.", "why": "Az I (én) névmás angolul mindig nagybetű, a mondat közepén is." },
+    { "wrong": "It was a beatiful day, wich I will never forget.", "right": "It was a beautiful day, which I will never forget.", "why": "Hallás után írt szavak: a beautiful-ban eau betűk adják a „bjú” hangot, a which-ben a h néma, de írásban ott van. Ezeket a szavakat meg kell tanulni." },
+    { "wrong": "We had alot of fun and I realy enjoyed it.", "right": "We had a lot of fun and I really enjoyed it.", "why": "A lot két szó. A really a real melléknév + -ly képző, ezért két l van benne: a tő l-je és a képző l-je is megmarad." },
+    { "wrong": "Their are many interesting places in the city.", "right": "There are many interesting places in the city.", "why": "A „van/vannak” jelentésű szerkezet there is / there are. A their birtokos névmás (az ő …-juk), a they're pedig a they are összevonása." }
+  ],
+  "examTips": [
+    "Íráskészség: a helyesírás a „Nyelvhelyesség, helyesírás” szempontba számít. Egy-egy elírás kis súlyú, de a sok apró hiba összeadódik, és lejjebb viheti a sávot. Az íráskészség részben (és csak ott) használhatsz nyomtatott szótárt – a bizonytalan szavakat nézd meg benne.",
+    "Nyelvhelyesség (szóképzés, igealakok, nyílt kloze): a betűhibás szó rossz válasznak számít, akkor is, ha a nyelvtan jó (pl. *stoped, *studing, *happyness). Beírás előtt gondold végig a végződésszabályokat: néma -e elhagyása, kettőzés, y → i.",
+    "A fogalmazás végén szánj 2–3 percet egy külön helyesírási átolvasásra: nagybetűk (I, nyelvek, napok, hónapok), a saját gyakran elírt szavaid (because, which, beautiful, a lot), valamint a their/there/they're, your/you're és its/it's párok."
+  ],
+  "practice": [
+    {
+      "id": "1",
+      "kind": "choice",
+      "prompt": "Which sentence is written correctly?",
+      "options": [
+        { "key": "A", "text": "I have english on monday and tuesday." },
+        { "key": "B", "text": "I have English on Monday and Tuesday." },
+        { "key": "C", "text": "I have English on monday and tuesday." },
+        { "key": "D", "text": "I have english on Monday and Tuesday." }
+      ],
+      "answer": "B",
+      "category": "spelling",
+      "explanation": "Helyes: B. Angolul a nyelvek (English) és a hét napjai (Monday, Tuesday) is nagybetűvel kezdődnek, akkor is, ha az English tantárgyat jelent.",
+      "wrongOptions": {
+        "A": "Sem a nyelv (english), sem a napok (monday, tuesday) nincsenek nagybetűvel – ez a magyar szokás átvétele.",
+        "C": "A nyelv neve jó, de a napok nevét is nagybetűvel kell írni (Monday, Tuesday).",
+        "D": "A napok jók, de az English nyelvnév, ezért tantárgyként is nagybetűs."
+      }
+    },
+    {
+      "id": "2",
+      "kind": "text",
+      "prompt": "Yesterday we ___ (stop) at a small café for lunch.",
+      "cue": "stop",
+      "answer": ["stopped"],
+      "category": "spelling",
+      "explanation": "Helyes: stopped. A yesterday miatt Past Simple kell. A stop egy szótagú, egy magánhangzó + egy mássalhangzó végű ige, ezért az -ed előtt a p megkettőződik (stop → stopped, nem *stoped)."
+    },
+    {
+      "id": "3",
+      "kind": "text",
+      "prompt": "Last year my parents ___ (try) three different diets, but none of them worked.",
+      "cue": "try",
+      "answer": ["tried"],
+      "category": "spelling",
+      "explanation": "Helyes: tried. A last year miatt Past Simple kell. A try mássalhangzó + y végű, ezért az -ed előtt a y i-re változik (try → tried, nem *tryed). Vö.: play → played, mert ott magánhangzó áll a y előtt."
+    },
+    {
+      "id": "4",
+      "kind": "choice",
+      "prompt": "We had ___ of fun at the party.",
+      "options": [
+        { "key": "A", "text": "alot" },
+        { "key": "B", "text": "a lot" },
+        { "key": "C", "text": "allot" },
+        { "key": "D", "text": "a lots" }
+      ],
+      "answer": "B",
+      "category": "spelling",
+      "explanation": "Helyes: a lot. A „sok” jelentésű a lot (of) mindig két szó: névelő + főnév.",
+      "wrongOptions": {
+        "A": "Az *alot nem létező szó – tipikus elírás, a lot-ot mindig külön írjuk.",
+        "C": "Az allot létező ige (kioszt, juttat), de itt nem illik a mondatba.",
+        "D": "A lot itt nem kap többes számú -s-t; a *a lots nyelvtanilag is hibás (az a névelő egyes számot jelöl). Helyesen: a lot of fun vagy lots of fun."
+      }
+    },
+    {
+      "id": "5",
+      "kind": "choice",
+      "prompt": "My neighbours are lovely, but ___ dog barks all night.",
+      "options": [
+        { "key": "A", "text": "there" },
+        { "key": "B", "text": "their" },
+        { "key": "C", "text": "they're" },
+        { "key": "D", "text": "theyre" }
+      ],
+      "answer": "B",
+      "category": "spelling",
+      "explanation": "Helyes: their. Birtoklást fejezünk ki (a szomszédok kutyája), ezért a their birtokos névmás kell: their dog = az ő kutyájuk.",
+      "wrongOptions": {
+        "A": "A there jelentése „ott” (vagy there is/are = van), nem birtokos.",
+        "C": "A they're a they are összevonása: *they are dog értelmetlen.",
+        "D": "A *theyre nem létező alak; az összevonásban aposztróf kell (they're), és itt amúgy sem összevonás kell."
+      }
+    },
+    {
+      "id": "6",
+      "kind": "text",
+      "prompt": "I'm ___ (write) an email to my English teacher at the moment.",
+      "cue": "write",
+      "answer": ["writing"],
+      "category": "spelling",
+      "explanation": "Helyes: writing. Az at the moment miatt Present Continuous (I'm + -ing). A write néma -e-re végződik, ezért az -ing előtt az e kiesik, a t pedig nem kettőződik (nem *writeing, nem *writting)."
+    }
+  ],
+  "relatedCategories": ["punctuation", "word-formation", "verb-form"]
+}

@@ -1,0 +1,193 @@
+{
+  "schemaVersion": 1,
+  "id": "gr-register",
+  "level": "kozep",
+  "source": "generated",
+  "topic": "nyelvtan",
+  "title": "Hangnem: formális és informális stílus",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "grammar",
+  "type": "lesson",
+  "category": "register",
+  "summaryHu": "A hangnem (register) azt jelenti, hogy a stílus illik-e a szövegfajtához és a címzetthez: barátnak közvetlenül, összevonásokkal és laza fordulatokkal írunk, hivatalos címzettnek (iskola, cég, szálloda, szerkesztőség) udvariasan, teljes alakokkal és közvetett kérésekkel. A magyar diákok gyakori hibája, hogy egy levélen belül keverik a kettőt (Dear Sir or Madam … Bye!), vagy hivatalos levélben túl közvetlenek (I want …, Send me …). Középszinten a 2. feladatnál, emelt szinten az 1. feladatnál külön 2 pontos szempont a „Hangnem, az olvasóban keltett benyomás”, az emelt 2. feladatnál pedig a szövegalkotás pontszámába számít.",
+  "rules": [
+    {
+      "title": "Megszólítás és elköszönés: a kettő illeszkedjen egymáshoz",
+      "explanation": "Informális (barát, rokon, ismerős): Hi Tom, / Dear Tom, → Love, / Best wishes, / See you soon, / Take care,. Formális, ha nem tudod a címzett nevét: Dear Sir or Madam, → Yours faithfully, (brit szokás). Formális, ha tudod a nevét: Dear Mr Smith, / Dear Ms Green, → Yours sincerely, vagy Kind regards, / Best regards,. A megszólításban a Mr, Mrs, Ms, Dr után csak a vezetéknév áll (Dear Mr Smith, nem *Dear Mr John Smith és nem *Dear Mr John). Ha nem tudod, férjnél van-e egy nő, a Ms a biztos és udvarias választás. Hivatalos levél végén a teljes nevedet írd alá.",
+      "emeltOnly": false,
+      "examples": [
+        { "en": "Dear Ms Taylor, … Yours sincerely, Anna Kovács", "hu": "Tisztelt Taylor asszony! … Tisztelettel: Kovács Anna", "note": "Ismert név → Yours sincerely, teljes név aláírásként." },
+        { "en": "Dear Sir or Madam, … Yours faithfully, Anna Kovács", "hu": "Tisztelt Hölgyem/Uram! … Tisztelettel: Kovács Anna", "note": "Ismeretlen címzett → Yours faithfully." },
+        { "en": "Hi Jack, … See you soon, Anna", "hu": "Szia Jack! … Hamarosan találkozunk! Anna", "note": "Baráti levél: keresztnév, laza elköszönés." }
+      ]
+    },
+    {
+      "title": "Összevonások, rövidítések, írásjelek",
+      "explanation": "Informális szövegben természetesek az összevonások (I'm, don't, can't, it's, I'd love to) és a felkiáltójel is (Can't wait!). Formális levélben a teljes alak a biztos választás (I am writing, I would like, I do not), és ott a felkiáltójelet kerüld. A chat-nyelvet (u, pls, thx, gonna, wanna, lol) semmilyen érettségi szövegben ne használd – baráti e-mailben sem, mert nem a nyelvi szintedet mutatja.",
+      "emeltOnly": false,
+      "examples": [
+        { "en": "I'm so happy you're coming! Can't wait to see you!", "hu": "Nagyon örülök, hogy jössz! Alig várom, hogy lássalak!", "note": "Informális: összevonások, felkiáltójel." },
+        { "en": "I am writing to apply for the position of camp assistant.", "hu": "A táborsegítői állásra szeretnék jelentkezni.", "note": "Formális: teljes alakok (I am), semleges írásjelek." }
+      ]
+    },
+    {
+      "title": "Kérések és kérdések: formálisan közvetetten",
+      "explanation": "Formális levélben a kérést és a kérdést udvariasan, közvetett formában fogalmazzuk meg: Could you please …?, I would be grateful if you could …, I would like to know …, Could you tell me whether …?, I was wondering whether …. A függő kérdésben kijelentő szórend van (Could you tell me when the course starts?, nem *when does the course start). Informálisan elég a közvetlen forma: Can you …?, Let me know …, Do you fancy …?, Why don't we …?. Az I want … formális kérésben túl követelőzőnek hat; helyette I would like ….",
+      "emeltOnly": false,
+      "examples": [
+        { "en": "I would be grateful if you could send me more information about the prices.", "hu": "Hálás lennék, ha további tájékoztatást küldene az árakról.", "note": "Formális kérés: I would be grateful if you could + ige." },
+        { "en": "Could you tell me whether the price includes meals?", "hu": "Meg tudná mondani, hogy az ár tartalmazza-e az étkezést?", "note": "Függő kérdés: whether + kijelentő szórend." },
+        { "en": "Can you send me some photos? Let me know what you think!", "hu": "Küldesz pár fotót? Írd meg, mit gondolsz!", "note": "Informális: közvetlen kérés." }
+      ]
+    },
+    {
+      "title": "Formális és informális szópárok",
+      "explanation": "Sok gyakori szónak van formálisabb megfelelője: get → receive / obtain, ask for → request, buy → purchase, help → assist, need → require, tell → inform, start → begin, want → would like, kids → children, sorry → I apologise, but → however, also → in addition, a lot of → a great number of / a great deal of. A phrasal verbek többsége semleges vagy informális; formális levélben gyakran van egyszavas megfelelőjük (find out → discover, put off → postpone, go up → increase). Ne vidd túlzásba: a ritka, körmönfont szó is erőltetett lehet, és a hiba a szókincsből is levon.",
+      "emeltOnly": false,
+      "examples": [
+        { "en": "I have not received a reply to my email of 3 May.", "hu": "Nem kaptam választ május 3-i e-mailemre.", "note": "receive a formálisabb get helyett." },
+        { "en": "Unfortunately, the concert had to be postponed.", "hu": "Sajnos a koncertet el kellett halasztani.", "note": "postpone a put off formálisabb megfelelője." },
+        { "en": "Sorry, I can't come – something's come up!", "hu": "Bocsi, nem tudok menni – közbejött valami!", "note": "Informális: sorry, összevonások, phrasal verb (come up)." }
+      ]
+    },
+    {
+      "title": "Nyitó és záró fordulatok",
+      "explanation": "Formális nyitás: I am writing to enquire about / to complain about / to apply for …, I am writing in response to your advertisement …. Formális zárás: I look forward to hearing from you (a to itt elöljárószó, ezért -ing követi); Thank you in advance for your help; Please do not hesitate to contact me if you need any further information. Informális nyitás: Thanks for your email – it was great to hear from you!; Sorry I haven't written for ages. Informális zárás: Write back soon!; Say hello to your family!; Can't wait to see you!",
+      "emeltOnly": false,
+      "examples": [
+        { "en": "I am writing to complain about the service I received in your shop last Saturday.", "hu": "Azért írok, hogy panaszt tegyek a múlt szombaton az üzletükben tapasztalt kiszolgálás miatt." },
+        { "en": "I look forward to hearing from you.", "hu": "Várom válaszát.", "note": "to + -ing: hearing, nem *hear." },
+        { "en": "Thanks for your email – it was great to hear from you!", "hu": "Köszi az e-mailt, nagyon jó volt hallani felőled!" }
+      ]
+    },
+    {
+      "title": "Panasz és kritika: határozottan, de udvariasan",
+      "explanation": "Panaszlevélben a hangnem legyen határozott, de udvarias és tárgyilagos: írd le a tényeket, és tompítsd az érzelmi kifejezéseket. Hasznos fordulatok: I was very disappointed with …; Unfortunately, …; I am afraid that …; I would therefore like to ask for a refund / an explanation; I hope you will be able to solve this problem. Kerüld a sértő, túlzó, felkiáltójeles megfogalmazást (*Your hotel was a disaster!!!), és a felszólítást (*Give me my money back.).",
+      "emeltOnly": false,
+      "examples": [
+        { "en": "I was very disappointed with the cleanliness of my room.", "hu": "Nagyon csalódott voltam a szobám tisztasága miatt." },
+        { "en": "I am afraid that some members of staff were rather impolite.", "hu": "Attól tartok, a személyzet néhány tagja meglehetősen udvariatlan volt.", "note": "I am afraid, rather: tompított, de egyértelmű kritika." },
+        { "en": "I would therefore like to ask for a partial refund.", "hu": "Ezért szeretnék részleges visszatérítést kérni." }
+      ]
+    },
+    {
+      "title": "Blog, fórum, cikk: személyes, de nem chat",
+      "explanation": "A blog- és fórumbejegyzés hangneme közvetlen és személyes: E/1-ben írsz, megszólíthatod az olvasót (Have you ever …?, What do you think?), és használhatsz összevonásokat. Mégis írott szöveg: legyen tagolt, és kerüld a chat-nyelvet. A cikk (csak emelt szinten) félig formális: figyelemfelkeltő cím és nyitás (kérdés, meglepő tény), az olvasóközönséghez szóló, de nem bizalmaskodó hang.",
+      "emeltOnly": false,
+      "examples": [
+        { "en": "Have you ever tried to go a whole week without your phone? I did – and here's what happened.", "hu": "Próbáltál már egy egész hetet telefon nélkül kibírni? Én igen – és ez történt.", "note": "Blog/cikk nyitás: kérdés az olvasóhoz, személyes hang." },
+        { "en": "I completely agree with Mark, but I think he's forgotten one important thing.", "hu": "Teljesen egyetértek Markkal, de szerintem elfelejtett egy fontos dolgot.", "note": "Fórum: közvetlen reagálás egy másik hozzászólóra." }
+      ]
+    }
+  ],
+  "commonMistakes": [
+    { "wrong": "Dear Sir or Madam, … Bye, Anna", "right": "Dear Sir or Madam, … Yours faithfully, Anna Kovács", "why": "A megszólítás és az elköszönés hangneme legyen azonos. Ismeretlen hivatalos címzettnél Yours faithfully a szokásos zárás, a név pedig teljes név. A hangnemváltás a levél végén is pontot vihet." },
+    { "wrong": "Dear Mr John Smith,", "right": "Dear Mr Smith,", "why": "A Mr, Mrs, Ms, Dr után angolul csak a vezetéknév áll. A teljes név (vagy a Mr + keresztnév) a megszólításban hibásnak hat." },
+    { "wrong": "I want to know the price of the course.", "right": "I would like to know the price of the course. / Could you tell me how much the course costs?", "why": "A magyar „szeretném tudni” angolul I would like to know; az I want hivatalos levélben követelőzőnek, udvariatlannak hat." },
+    { "wrong": "I look forward to hear from you.", "right": "I look forward to hearing from you.", "why": "A look forward to szerkezetben a to elöljárószó, nem a főnévi igenév jele, ezért utána -ing alak áll." },
+    { "wrong": "Dear Peter, I am writing to inform you that I have received your letter.", "right": "Hi Peter, Thanks for your email – it was great to hear from you!", "why": "Barátnak írt levélben ez a hivatalos nyitás túl merev és távolságtartó. Informális levélben közvetlen, személyes nyitás kell." },
+    { "wrong": "Your hotel was awful and your staff were rude!!!", "right": "I was very disappointed with your hotel, and I am afraid some members of staff were rather impolite.", "why": "Panaszlevélben is udvarias, tárgyilagos hangnem kell: a sértő, túlzó, felkiáltójeles mondat rossz benyomást kelt az olvasóban, ezt a hangnem szempont értékeli." }
+  ],
+  "examTips": [
+    "Írás előtt olvasd el figyelmesen a feladatot, és döntsd el: ki a címzett (barát, ismeretlen ügyintéző, iskolaújság olvasói) és mi a cél (kérés, panasz, jelentkezés, beszámoló, vélemény). Ebből következik a hangnem – és azt a megszólítástól az elköszönésig végig tartsd.",
+    "Középszinten a 2. (hosszabb) feladatnál, emelt szinten az 1. feladatnál a hangnem külön 2 pontos szempont: ha a hangnem nem következetes, vagy helyenként nem illik a helyzethez (pl. hivatalos levélben Hi!, Bye!, chat-rövidítések), már pontot veszíthetsz. Az emelt 2. feladatnál (érvelő szöveg) a hangnem a szövegalkotás pontszámába számít.",
+    "Tanulj meg egy formális és egy informális levélvázat (megszólítás – nyitó mondat – záró mondat – elköszönés), 2–3 változatban. A vizsgán így csak a tartalomra kell figyelned, a keret biztos pont.",
+    "A középszintű szóbeli szituációs feladatban ugyanezek az udvarias formák kellenek hivatalos helyzetben (szálloda, bolt, ügyfélszolgálat): Could I …?, Would it be possible to …?, I'd like to …."
+  ],
+  "practice": [
+    {
+      "id": "1",
+      "kind": "choice",
+      "prompt": "You are writing to a language school for the first time. You don't know who will read your email. Which is the best opening?",
+      "options": [
+        { "key": "A", "text": "Hi there!" },
+        { "key": "B", "text": "Dear Sir or Madam," },
+        { "key": "C", "text": "Dear Language School!" },
+        { "key": "D", "text": "Hello my friend," }
+      ],
+      "answer": "B",
+      "category": "register",
+      "explanation": "Helyes: Dear Sir or Madam, – ismeretlen hivatalos címzettnek ez a szokásos formális megszólítás (a végén Yours faithfully illik hozzá).",
+      "wrongOptions": {
+        "A": "A Hi there! informális, ismeretlen hivatalos címzettnek túl közvetlen, és a felkiáltójel sem illik a megszólításba.",
+        "C": "Intézményt nem szólítunk meg így, és a felkiáltójel is magyaros; ha nem tudod a nevet, Dear Sir or Madam a helyes.",
+        "D": "Barátságos, bizalmaskodó megszólítás – ismeretlen ügyintézőnek teljesen helytelen a hangneme."
+      }
+    },
+    {
+      "id": "2",
+      "kind": "choice",
+      "prompt": "Which sentence is the most appropriate in a formal email to a hotel?",
+      "options": [
+        { "key": "A", "text": "Can u tell me the price?" },
+        { "key": "B", "text": "I was wondering whether you have any rooms available from 12 to 14 July." },
+        { "key": "C", "text": "Tell me if you have any free rooms." },
+        { "key": "D", "text": "Got any free rooms in July?" }
+      ],
+      "answer": "B",
+      "category": "register",
+      "explanation": "Helyes: B. Az I was wondering whether … udvarias, közvetett kérdés, és kijelentő szórend követi (you have …) – pontosan ez illik egy hivatalos érdeklődéshez.",
+      "wrongOptions": {
+        "A": "Chat-rövidítés (u = you) és túl közvetlen kérdés – hivatalos levélben elfogadhatatlan.",
+        "C": "Felszólító mód: hivatalos címzettnek udvariatlan, parancsoló hangnemű.",
+        "D": "Kihagyásos, beszélt nyelvi forma (Got any …? = Have you got any …?) – barátok közötti hangnem."
+      }
+    },
+    {
+      "id": "3",
+      "kind": "text",
+      "prompt": "I would be grateful ___ you could send me a brochure about your courses.",
+      "answer": ["if"],
+      "category": "register",
+      "explanation": "Helyes: if. Az I would be grateful if you could + ige állandó formális kérő szerkezet (Hálás lennék, ha …). A could itt udvarias kérést fejez ki."
+    },
+    {
+      "id": "4",
+      "kind": "choice",
+      "prompt": "Which sentence is the most appropriate in a formal email of complaint?",
+      "options": [
+        { "key": "A", "text": "Your hotel was a total disaster!!!" },
+        { "key": "B", "text": "I was extremely disappointed with the cleanliness of my room." },
+        { "key": "C", "text": "Honestly, the room was kind of gross." },
+        { "key": "D", "text": "You must give me my money back now." }
+      ],
+      "answer": "B",
+      "category": "register",
+      "explanation": "Helyes: B. Határozott, de udvarias és tárgyilagos: megnevezi a problémát (a szoba tisztasága), és formális szókincset használ (extremely disappointed, cleanliness).",
+      "wrongOptions": {
+        "A": "Túlzó, érzelmi megfogalmazás sok felkiáltójellel – sértő hangnem, rossz benyomást kelt.",
+        "C": "Beszélt nyelvi, informális szavak (honestly, kind of, gross) – nem illik hivatalos levélbe.",
+        "D": "Parancsoló, fenyegető hangnem. Udvariasan: I would therefore like to ask for a refund."
+      }
+    },
+    {
+      "id": "5",
+      "kind": "choice",
+      "prompt": "You are writing an email to your English friend. Which sentence sounds the most natural?",
+      "options": [
+        { "key": "A", "text": "I am writing to inform you that I have passed my driving test." },
+        { "key": "B", "text": "Guess what? I've passed my driving test!" },
+        { "key": "C", "text": "I would like to inform you about the result of my driving test." },
+        { "key": "D", "text": "Please be informed that I have passed my driving test." }
+      ],
+      "answer": "B",
+      "category": "register",
+      "explanation": "Helyes: B. Baráti levélben közvetlen, lelkes hang illik: kérdés az olvasóhoz (Guess what?), összevonás (I've), felkiáltójel.",
+      "wrongOptions": {
+        "A": "Hivatalos levélnyitó fordulat (I am writing to inform you) – barátnak túl merev.",
+        "C": "Az I would like to inform you hivatalos stílus, egy baráti hírközléshez nem illik.",
+        "D": "Hivatali, személytelen fordulat (Please be informed) – barátnak kifejezetten furcsa."
+      }
+    },
+    {
+      "id": "6",
+      "kind": "text",
+      "prompt": "Dear Sir or Madam, … I look forward to hearing from you. Yours ___, Anna Kovács",
+      "answer": ["faithfully"],
+      "category": "register",
+      "explanation": "Helyes: faithfully. Ha a levél Dear Sir or Madam megszólítással kezdődik (nem tudod a címzett nevét), a brit szokás szerint Yours faithfully a zárás. Ha a nevét tudod (Dear Ms Green), akkor Yours sincerely."
+    }
+  ],
+  "relatedCategories": ["word-choice", "word-order", "cohesion"]
+}
