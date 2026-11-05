@@ -1,0 +1,166 @@
+{
+  "schemaVersion": 1,
+  "id": "bio-rd-kozep-verkeringes-feleletvalasztas",
+  "subject": "biologia",
+  "revision": 1,
+  "level": "kozep",
+  "source": "generated",
+  "topic": "ember-szervezet",
+  "title": "A vér és a vérkeringés – feleletválasztás",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "reading",
+  "type": "feleletvalasztas",
+  "instructions": "Válassza ki az egyetlen helyes választ, és írja a betűjelét a kérdés mellé! A 0. kérdés a példa.",
+  "example": {
+    "id": "0",
+    "kind": "choice",
+    "prompt": "Melyik ér szállít oxigéndús vért a szívbe?",
+    "options": [
+      { "key": "A", "text": "tüdőartéria" },
+      { "key": "B", "text": "tüdővéna" },
+      { "key": "C", "text": "aorta" },
+      { "key": "D", "text": "felső üres véna" }
+    ],
+    "answer": "B",
+    "category": "felepites-mukodes",
+    "explanation": "Helyes: B. A tüdővénák a tüdőből hozzák az oxigénnel feldúsult vért a bal pitvarba. Ez az a kivételes véna, amely oxigéndús vért szállít – a vénákat nem a vér oxigéntartalma, hanem a szív felé tartó irány alapján nevezzük."
+  },
+  "items": [
+    {
+      "id": "1",
+      "kind": "choice",
+      "prompt": "A szív melyik üregéből indul ki az aorta (főverőér)?",
+      "options": [
+        { "key": "A", "text": "jobb pitvar" },
+        { "key": "B", "text": "jobb kamra" },
+        { "key": "C", "text": "bal pitvar" },
+        { "key": "D", "text": "bal kamra" }
+      ],
+      "answer": "D",
+      "category": "felepites-mukodes",
+      "explanation": "Helyes: D. A nagy vérkör a bal kamrából indul: a bal kamra vastag izomzata nagy nyomással pumpálja az oxigéndús vért az aortába, onnan a test minden részébe.",
+      "wrongOptions": {
+        "A": "A jobb pitvarba a testből érkezik az oxigénszegény vér az üres vénákon át; innen nem indul artéria.",
+        "B": "A jobb kamrából a tüdőartéria indul (kis vérkör), nem az aorta.",
+        "C": "A bal pitvarba a tüdővénák érkeznek; a pitvarok fogadják a vért, nem pumpálják artériába."
+      }
+    },
+    {
+      "id": "2",
+      "kind": "choice",
+      "prompt": "Melyik vérsejt fő feladata az oxigén szállítása?",
+      "options": [
+        { "key": "A", "text": "vörösvérsejt" },
+        { "key": "B", "text": "falósejt (granulocita)" },
+        { "key": "C", "text": "vérlemezke" },
+        { "key": "D", "text": "nyiroksejt (limfocita)" }
+      ],
+      "answer": "A",
+      "category": "felepites-mukodes",
+      "explanation": "Helyes: A. A vörösvérsejtek hemoglobint tartalmaznak, amelynek vasionja megköti az oxigént a tüdőben, és leadja a szövetekben. Sejtmag nélküli, bikonkáv alakjuk nagy felületet biztosít a gázcseréhez.",
+      "wrongOptions": {
+        "B": "A falósejtek fehérvérsejtek: kórokozókat kebeleznek be, nem szállítanak oxigént.",
+        "C": "A vérlemezkék a véralvadásban vesznek részt.",
+        "D": "A limfociták a fehérvérsejtek egy fajtája, az immunválaszban (antitest-termelés) vesznek részt."
+      }
+    },
+    {
+      "id": "3",
+      "kind": "choice",
+      "prompt": "Mi a vérlemezkék (trombociták) fő szerepe?",
+      "options": [
+        { "key": "A", "text": "oxigénszállítás" },
+        { "key": "B", "text": "véralvadás elindítása" },
+        { "key": "C", "text": "ellenanyag-termelés" },
+        { "key": "D", "text": "hormontermelés" }
+      ],
+      "answer": "B",
+      "category": "felepites-mukodes",
+      "explanation": "Helyes: B. Érsérülésnél a vérlemezkék a sérült falhoz tapadnak, összecsapzódnak, és olyan anyagokat szabadítanak fel, amelyek elindítják a véralvadást (a fibrinogén oldhatatlan fibrinhálóvá alakul).",
+      "wrongOptions": {
+        "A": "Az oxigént a vörösvérsejtek hemoglobinja szállítja.",
+        "C": "Ellenanyagot a limfociták (B-sejtek, plazmasejtek) termelnek.",
+        "D": "Hormonokat a belső elválasztású mirigyek termelnek, nem a vérlemezkék."
+      }
+    },
+    {
+      "id": "4",
+      "kind": "choice",
+      "prompt": "Melyik állítás igaz a vénákra (gyűjtőerekre)?",
+      "options": [
+        { "key": "A", "text": "Mindig oxigéndús vért szállítanak." },
+        { "key": "B", "text": "Faluk vastag, erősen izmos, mert nagy nyomást kell kibírniuk." },
+        { "key": "C", "text": "A nagyobb vénákban billentyűk gátolják a vér visszaáramlását." },
+        { "key": "D", "text": "Bennük a legnagyobb a vérnyomás." }
+      ],
+      "answer": "C",
+      "category": "felepites-mukodes",
+      "explanation": "Helyes: C. A vénákban a vérnyomás alacsony, ezért a végtagok vénáiban zsebes billentyűk akadályozzák meg, hogy a vér a gravitáció hatására visszafolyjon; a vér áramlását a környező vázizmok összehúzódása („izompumpa”) is segíti.",
+      "wrongOptions": {
+        "A": "A vénák többsége oxigénszegény vért szállít a szív felé; csak a tüdővénák visznek oxigéndús vért.",
+        "B": "A vastag, izmos fal az artériák jellemzője; a vénák fala vékonyabb, tágulékonyabb.",
+        "D": "A legnagyobb nyomás az aortában és a nagy artériákban van, a vénákban a legkisebb."
+      }
+    },
+    {
+      "id": "5",
+      "kind": "choice",
+      "prompt": "Hol történik az anyagkicserélődés (pl. oxigén leadása, szén-dioxid felvétele) a vér és a szövetek között?",
+      "options": [
+        { "key": "A", "text": "az artériákban" },
+        { "key": "B", "text": "a vénákban" },
+        { "key": "C", "text": "a hajszálerekben" },
+        { "key": "D", "text": "a szív kamráiban" }
+      ],
+      "answer": "C",
+      "category": "felepites-mukodes",
+      "explanation": "Helyes: C. A hajszálerek (kapillárisok) fala egyetlen sejtrétegből áll, bennük a vér lassan áramlik, és összfelületük óriási – ezért itt zajlik a diffúzióval történő anyagkicserélődés a vér és a szövetek között.",
+      "wrongOptions": {
+        "A": "Az artériák vastag fala nem alkalmas anyagátadásra; ezek a vért szállítják a szervek felé.",
+        "B": "A vénák a vért a szív felé vezetik, faluk több rétegű, anyagkicserélődés bennük nem történik.",
+        "D": "A szív kamrái pumpálnak; a szívfal saját ellátását a koszorúerek hajszálerei végzik, nem az üregek."
+      }
+    },
+    {
+      "id": "6",
+      "kind": "choice",
+      "prompt": "Hol képződik a szív ritmusát megszabó ingerület egészséges embernél?",
+      "options": [
+        { "key": "A", "text": "a szinuszcsomóban, a jobb pitvar falában" },
+        { "key": "B", "text": "a bal kamra izomzatában" },
+        { "key": "C", "text": "a koszorúerekben" },
+        { "key": "D", "text": "a vitorlás billentyűkben" }
+      ],
+      "answer": "A",
+      "category": "szabalyozas-folyamat",
+      "explanation": "Helyes: A. A szív saját ingerképző és ingerületvezető rendszere van; a ritmust a jobb pitvar falában lévő szinuszcsomó adja (ezért „szinuszritmus”). Az idegrendszer csak gyorsítja vagy lassítja (szimpatikus, paraszimpatikus hatás).",
+      "wrongOptions": {
+        "B": "A kamraizomzat végrehajtja az összehúzódást, de az ingerület nem itt keletkezik, hanem ide vezetődik.",
+        "C": "A koszorúerek a szívizom vérellátását biztosítják, nem képeznek ingerületet.",
+        "D": "A billentyűk a vér egyirányú áramlását biztosítják, ingerképzésben nem vesznek részt."
+      }
+    },
+    {
+      "id": "7",
+      "kind": "choice",
+      "prompt": "Mennyi egy egészséges felnőtt nyugalmi pulzusszáma körülbelül?",
+      "options": [
+        { "key": "A", "text": "20–30/perc" },
+        { "key": "B", "text": "60–80/perc" },
+        { "key": "C", "text": "120–150/perc" },
+        { "key": "D", "text": "200/perc felett" }
+      ],
+      "answer": "B",
+      "category": "fogalomhasznalat",
+      "explanation": "Helyes: B. Felnőtt ember nyugalmi pulzusa percenként kb. 60–80 (edzett sportolóknál lehet 50 alatt is). A pulzus a szívösszehúzódások által keltett nyomáshullám az artériákban, ezért száma megegyezik a szívverések számával.",
+      "wrongOptions": {
+        "A": "20–30/perc kórosan alacsony, ilyenkor a szervek vérellátása nem lenne elegendő.",
+        "C": "120–150/perc terhelés alatti vagy lázas állapotban jellemző, nyugalomban kóros lenne.",
+        "D": "200/perc feletti pulzus egészséges felnőttnél nyugalomban nem fordul elő, maximális terhelésnél sem éri el mindenki."
+      }
+    }
+  ],
+  "glossary": [],
+  "suggestedMinutes": 8
+}
