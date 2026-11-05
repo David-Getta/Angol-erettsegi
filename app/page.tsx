@@ -11,6 +11,7 @@ import { feladatokCommand } from "@/lib/commands/build";
 import { importVocabCompletions, incompleteCount } from "@/lib/vocab/cards";
 import { t, sectionLabel } from "@/lib/i18n/hu";
 import { Badge, Card, PageHeader, ProgressBar, Stat, btn, formatDate, formatDuration } from "@/components/ui";
+import { HowTo } from "@/components/dashboard/HowTo";
 import { CommandTip } from "@/components/CommandTip";
 import { ImportButton } from "@/components/grading/ImportButton";
 
@@ -72,6 +73,8 @@ export default function DashboardPage() {
           />
         </Card>
       </div>
+
+      {!s.onboardingDone && <HowTo />}
 
       {pending.length > 0 && (
         <CommandTip command="/javitas" message={`${t.dashboard.pendingCount(pending.length)}. ${t.tips.grading}`} testId="javitas-tip">

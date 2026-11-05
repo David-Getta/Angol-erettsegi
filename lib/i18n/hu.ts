@@ -404,6 +404,16 @@ export const t = {
     warnPart: (name: string) => `Figyelem: a(z) „${name}” részben veszélyben a 12%-os minimum!`,
     startDiagnostic: "Szintfelmérő indítása",
     welcome: "Üdv! Kezdd a szintfelmérővel – ebből áll össze a Mai terv.",
+    howTo: "Hogyan használd?",
+    howToHide: "Értem, elrejtem",
+    howToSteps: [
+      { text: "Töltsd ki a szintfelmérőt (kb. 45 perc) – ebből készül a személyre szabott Mai terv.", href: "/szintfelmero" },
+      { text: "Naponta 30–45 perc: a Mai terv feladatai és a szókártyák ismétlése.", href: "/szokincs/ismetles" },
+      { text: "Minden hibád a Hibanaplóba kerül: olvasd el a szabályát a Szabálytárban, és próbáld újra a hibáidat.", href: "/szabalytar" },
+      { text: "Hetente 1–2 írásfeladat: beadás után Claude Code-ban /javitas, majd az átírás és a mintamegoldás.", href: "/iras" },
+      { text: "A szóbelire témakörönként készülj: kérdések, szituációk, mintaválaszok, kifejezések.", href: "/temakorok" },
+      { text: "Havonta egy teljes próbaérettségi a hivatalos időkeretekkel.", href: "/probaerettsegi" },
+    ],
     cefr: "Becsült szint",
   },
 
