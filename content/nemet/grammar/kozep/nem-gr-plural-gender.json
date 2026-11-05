@@ -33,7 +33,7 @@
     },
     {
       "title": "Többesszám-típusok",
-      "explanation": "-e, gyakran Umlauttal: der Tag – die Tage, der Stuhl – die Stühle, die Stadt – die Städte. -er, mindig Umlauttal, ha lehet: das Kind – die Kinder, das Buch – die Bücher, das Haus – die Häuser. -(e)n (a nőnemű főnevek többsége): die Frau – die Frauen, die Schule – die Schulen, die Zeitung – die Zeitungen. -s (idegen szavak, magánhangzóra végződők): das Handy – die Handys, das Auto – die Autos, das Kino – die Kinos. Végződés nélkül (az -er, -el, -en végű hím- és semleges nemű szavak), néha Umlauttal: der Lehrer – die Lehrer, das Zimmer – die Zimmer, der Vater – die Väter, die Mutter – die Mütter. Többes számban a névelő mindig die.",
+      "explanation": "-e, gyakran Umlauttal: der Tag – die Tage, der Stuhl – die Stühle, die Stadt – die Städte. -er, mindig Umlauttal, ha lehet: das Kind – die Kinder, das Buch – die Bücher, das Haus – die Häuser. -(e)n (a nőnemű főnevek többsége): die Frau – die Frauen, die Schule – die Schulen, die Zeitung – die Zeitungen. -s (idegen szavak, magánhangzóra végződők): das Handy – die Handys, das Auto – die Autos, das Kino – die Kinos. Végződés nélkül (az -er, -el, -en végű hím- és semleges nemű szavak), néha Umlauttal: der Lehrer – die Lehrer, das Zimmer – die Zimmer, der Vater – die Väter; a nőneműek közül csak a die Mutter – die Mütter és a die Tochter – die Töchter. Többes számban a névelő mindig die.",
       "emeltOnly": false,
       "examples": [
         { "en": "In unserer Stadt gibt es drei Kinos und zwei Museen.", "hu": "A városunkban három mozi és két múzeum van.", "note": "das Museum – die Museen." },
@@ -118,6 +118,7 @@
       "prompt": "In unserer Stadt gibt es drei große ___ (Kino).",
       "cue": "Kino",
       "answer": ["Kinos"],
+      "caseSensitive": true,
       "category": "plural-gender",
       "explanation": "Helyes: Kinos. Számnév után többes szám áll; a magánhangzóra végződő das Kino többes száma -s: die Kinos."
     },
@@ -146,6 +147,7 @@
       "prompt": "Meine beiden ___ (Großmutter) wohnen auf dem Land.",
       "cue": "Großmutter",
       "answer": ["Großmütter"],
+      "caseSensitive": true,
       "category": "plural-gender",
       "explanation": "Helyes: Großmütter. A beiden (mindkét) és a wohnen többes számot kíván; az összetett szó többes száma az utolsó tagé: die Mutter – die Mütter (végződés nélkül, Umlauttal) → die Großmütter."
     },
@@ -174,6 +176,7 @@
       "prompt": "Der Lehrer gibt ___ (die Kinder) die Hefte zurück.",
       "cue": "die Kinder",
       "answer": ["den Kindern"],
+      "caseSensitive": true,
       "category": "plural-gender",
       "explanation": "Helyes: den Kindern. Kinek adja vissza? → Dativ. Többes számú Dativban a névelő den, és a főnév -n végződést kap: die Kinder → den Kindern."
     }
