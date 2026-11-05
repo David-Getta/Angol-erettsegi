@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "id": "sp-emelt-iskola-interview",
-  "revision": 1,
+  "revision": 2,
   "level": "emelt",
   "source": "generated",
   "topic": "iskola",
@@ -89,5 +89,55 @@
     }
   ],
   "speakingSeconds": 300,
-  "prepSeconds": 0
+  "prepSeconds": 0,
+  "sampleAnswer": {
+    "turns": [
+      {
+        "speaker": "examiner",
+        "text": "What do you think are the strengths and weaknesses of your school?"
+      },
+      {
+        "speaker": "candidate",
+        "text": "The biggest strength is definitely the teachers – most of them are really committed, and the language teaching is excellent. The main weakness is the building. It's over a hundred years old, so the classrooms are cramped and the gym is far too small for eight hundred students."
+      },
+      {
+        "speaker": "examiner",
+        "text": "What makes a good teacher, in your opinion?"
+      },
+      {
+        "speaker": "candidate",
+        "text": "Someone who is strict but fair, and who can explain the same thing in several different ways. Patience matters a lot, too, because not everyone understands a new topic straight away."
+      },
+      {
+        "speaker": "examiner",
+        "text": "Can you think of a teacher who inspired you?"
+      },
+      {
+        "speaker": "candidate",
+        "text": "Yes, my history teacher. Instead of making us memorise dates, she had us debate historical decisions, and that's actually how I became interested in law."
+      },
+      {
+        "speaker": "examiner",
+        "text": "Do you think Hungarian students get too much homework? Why or why not?"
+      },
+      {
+        "speaker": "candidate",
+        "text": "Sometimes, yes. The problem isn't one particular subject, but the fact that teachers don't coordinate, so on some days we get homework in five subjects at once. A shared online calendar for homework and tests would solve a lot of this."
+      },
+      {
+        "speaker": "examiner",
+        "text": "If you could change one thing in the Hungarian school system, what would it be?"
+      },
+      {
+        "speaker": "candidate",
+        "text": "I'd cut down on the amount we have to learn by heart and focus more on practical skills, like critical thinking or financial literacy. At the moment we cram so many facts that we forget them a week after the test."
+      }
+    ],
+    "notes": [
+      "Feladat teljesítése: a válaszok kifejtettek és kiegyensúlyozottak (erősség és gyengeség is), konkrét példákkal (százéves épület, a történelemtanár vitái), a rendszerszintű kérdésre pedig indokolt, konkrét javaslatot tesz.",
+      "Nyelvhelyesség: változatos szerkezetek hiba nélkül – műveltető szerkezet (she had us debate), 'Instead of + -ing', feltételes mód (I'd cut down on …, would solve) és 'so … that' következményes mondat.",
+      "Szókincs: pontos, az iskolai témához illő kifejezések (committed, cramped, coordinate, financial literacy) teszik B2-essé a választ.",
+      "Érdemes megtanulni: „strict but fair”, „straight away”, „learn by heart”, „would solve a lot of this”."
+    ]
+  }
 }

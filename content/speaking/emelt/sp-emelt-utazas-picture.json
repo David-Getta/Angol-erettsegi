@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "id": "sp-emelt-utazas-picture",
-  "revision": 1,
+  "revision": 2,
   "level": "emelt",
   "source": "generated",
   "topic": "utazas",
@@ -62,5 +62,27 @@
     }
   ],
   "speakingSeconds": 360,
-  "prepSeconds": 60
+  "prepSeconds": 60,
+  "sampleAnswer": {
+    "turns": [
+      {
+        "speaker": "candidate",
+        "text": "Both pictures are about holidays, but they show two completely different types of tourism. The first one shows a famous old town by the sea on a hot August afternoon. The narrow streets are packed with tourists, there's a huge cruise ship in the harbour, and people are taking selfies in front of a historic church. A local woman with heavy shopping bags is trying to get through the crowd, and she looks really annoyed. The second picture shows a family on a small eco-farm in the Hungarian hills. They're picking apples with the farmer, and there's a guesthouse with solar panels in the background, but no other tourists.\nMass tourism brings money, but it can make life really difficult for local residents: rents go up, the streets are crowded and traditional shops are replaced by souvenir shops. Rural tourism, on the other hand, seems much more sustainable, as it supports local farmers and doesn't overwhelm the place. I think tourism could become more sustainable if people travelled outside the peak season and chose less famous destinations."
+      },
+      {
+        "speaker": "examiner",
+        "text": "Should popular cities limit the number of tourists? How could they do it?"
+      },
+      {
+        "speaker": "candidate",
+        "text": "I think they should, at least in the most crowded places. Venice, for example, has introduced an entrance fee for day-trippers, and cities could also limit the number of cruise ships. It might sound harsh, but otherwise local people will simply move away."
+      }
+    ],
+    "notes": [
+      "Összefüggő témakifejtés: a vizsgázó mindkét jelenetet leírja, kifejti a tömegturizmus helyiekre gyakorolt hatását, összeveti a falusi turizmussal, és konkrét javaslatot tesz a fenntarthatóbb utazásra; a visszakérdezésre valós példával (velencei belépődíj) felel.",
+      "Szókincs: a turizmus pontos, gazdag szókincse (cruise ship, local residents, peak season, rural tourism, day-trippers, overwhelm) és jó kötőszavak (on the other hand, as, otherwise).",
+      "Nyelvhelyesség: változatos és hibátlan szerkezetek – második feltételes mondat (could become … if people travelled …), szenvedő szerkezet (are replaced by), Present Perfect (has introduced) és az 'It might sound harsh, but …' fordulat.",
+      "Érdemes megtanulni: „are packed with tourists”, „doesn't overwhelm the place”, „outside the peak season”, „It might sound harsh, but”."
+    ]
+  }
 }

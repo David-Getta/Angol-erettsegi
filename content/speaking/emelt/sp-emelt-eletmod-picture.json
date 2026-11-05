@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "id": "sp-emelt-eletmod-picture",
-  "revision": 1,
+  "revision": 2,
   "level": "emelt",
   "source": "generated",
   "topic": "eletmod",
@@ -62,5 +62,27 @@
     }
   ],
   "speakingSeconds": 360,
-  "prepSeconds": 60
+  "prepSeconds": 60,
+  "sampleAnswer": {
+    "turns": [
+      {
+        "speaker": "candidate",
+        "text": "Both pictures show people keeping fit, but in very different ways. In the first one, a young man is lifting weights in a modern gym while his friend films him, probably for social media. Behind them, people are running on treadmills, and everyone seems to be in their own world, staring at a screen. The 'No pain, no gain' poster suggests that the atmosphere is quite competitive. The second picture, on the other hand, shows a group of retired people doing gentle exercises in a park by a river. They're following a woman in her seventies, and they all look relaxed and happy.\nThe main difference, I think, is motivation. The young man seems to care mostly about how he looks and how many likes he'll get, whereas the older people exercise to stay healthy and to be together. Social media definitely puts pressure on teenagers – I know classmates who feel bad about their bodies after watching fitness influencers. Personally, I believe the key to staying healthy throughout your life is finding an activity you enjoy, because then you'll keep doing it."
+      },
+      {
+        "speaker": "examiner",
+        "text": "Why do some people give up exercising after a few weeks?"
+      },
+      {
+        "speaker": "candidate",
+        "text": "Mostly because they set unrealistic goals. They expect to look like a model after a month, and when that doesn't happen, they lose interest. I made the same mistake with running, so now I just aim for three short runs a week."
+      }
+    ],
+    "notes": [
+      "Összefüggő témakifejtés: a vizsgázó mindkét jelenetet leírja, majd egy fő szempont (a motiváció) mentén összehasonlítja őket, kitér a közösségi média testképre gyakorolt hatására és az egészséges élet kulcsára, végül a visszakérdezésre saját tapasztalattal felel.",
+      "Szókincs: világos felépítés (leírás – különbség – vélemény), jó kötőszavak (on the other hand, whereas, Personally) és a téma pontos szavai (lifting weights, treadmills, gentle exercises, unrealistic goals).",
+      "Nyelvhelyesség: Present Continuous a képleíráshoz, 'seem to', 'suggests that', a 'because then you'll keep doing it' és Past Simple a személyes példánál – változatos és hibátlan.",
+      "Érdemes megtanulni: „everyone seems to be in their own world”, „The main difference, I think, is motivation”, „feel bad about their bodies”, „set unrealistic goals”."
+    ]
+  }
 }

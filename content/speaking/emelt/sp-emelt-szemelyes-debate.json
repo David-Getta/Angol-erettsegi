@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "id": "sp-emelt-szemelyes-debate",
-  "revision": 1,
+  "revision": 2,
   "level": "emelt",
   "source": "generated",
   "topic": "szemelyes",
@@ -67,5 +67,47 @@
     }
   ],
   "speakingSeconds": 390,
-  "prepSeconds": 60
+  "prepSeconds": 60,
+  "sampleAnswer": {
+    "turns": [
+      {
+        "speaker": "examiner",
+        "text": "Let's discuss this statement: 'Teenagers should be paid for doing household chores.' What's your view?"
+      },
+      {
+        "speaker": "candidate",
+        "text": "I'm against it. Helping at home is simply part of being a member of a family – it's not a job. My parents don't get paid for cooking dinner or doing the washing, so why should I get money for tidying my own room? I'm also afraid that paying for chores teaches children to help only when there's a reward."
+      },
+      {
+        "speaker": "examiner",
+        "text": "But if parents pay for chores, teenagers learn that work has value. Isn't that a good lesson?"
+      },
+      {
+        "speaker": "candidate",
+        "text": "It's an important lesson, I agree, but there are better ways to learn it. Teenagers can learn to manage money through regular pocket money, or by getting a real summer job, where they also learn to deal with a boss and deadlines."
+      },
+      {
+        "speaker": "examiner",
+        "text": "Adults are paid for their work. Why should teenagers work for free?"
+      },
+      {
+        "speaker": "candidate",
+        "text": "Because the family isn't a company. If everything had a price, home would start to feel like a business, and it could easily lead to arguments between siblings about who earns more. Besides, teenagers aren't working for free: their parents give them food, a home and a lot more."
+      },
+      {
+        "speaker": "examiner",
+        "text": "What would you suggest instead to motivate teenagers to help at home?"
+      },
+      {
+        "speaker": "candidate",
+        "text": "I think responsibility works better than money. In our family, for example, each of us is in charge of something, and we agree on it together. I suppose a small reward is acceptable for really big extra jobs, like painting the fence, but everyday chores should just be part of family life."
+      }
+    ],
+    "notes": [
+      "Feladat teljesítése: az álláspont (a fizetés ellen) végig egyértelmű, a vizsgázó saját családjából hoz példát, mindhárom ellenvetésre reagál (elismeri, hogy a munka értékét fontos megtanulni, de jobb módot javasol), a végén pedig részleges engedménnyel (nagyobb extra munkák) kompromisszumot keres.",
+      "Szókincs: a családi élet és a pénz pontos szavai (household chores, pocket money, siblings, in charge of) és természetes vitafordulatok (It's an important lesson, I agree, but …; Besides; I suppose …).",
+      "Nyelvhelyesség: változatos és hibátlan szerkezetek – második feltételes mondat (If everything had a price, home would start to feel …), szenvedő szerkezet (don't get paid), 'teach sb to', a 'why should I …?' kérdés és a 'could easily lead to'.",
+      "Érdemes megtanulni: „it's not a job”, „there are better ways to learn it”, „the family isn't a company”, „is in charge of something”."
+    ]
+  }
 }
