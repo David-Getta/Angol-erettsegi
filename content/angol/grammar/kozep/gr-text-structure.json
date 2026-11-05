@@ -18,7 +18,10 @@
       "explanation": "Karikázd be az opciókban a visszautaló szavakat: he, she, it, they, this, these, those, such, there, then, the same, another, also. Mindegyiknek kell lennie egy előzményének a hiány ELŐTT: egy személynek, dolognak, helynek, időpontnak. Ügyelj a számra is: a These / They többes számú előzményt kíván, a This / It egyes számút vagy egy egész gondolatot.",
       "emeltOnly": false,
       "examples": [
-        { "en": "Text before the gap: \"…the children made over a hundred clay pots.\"\nMissing sentence: \"These were later sold at the local market.\"", "note": "A These többes számú dologra utal (clay pots). Ha a hiány előtt nincs ilyen, a mondat nem odavaló." }
+        {
+          "en": "Text before the gap: \"…the children made over a hundred clay pots.\"\nMissing sentence: \"These were later sold at the local market.\"",
+          "note": "A These többes számú dologra utal (clay pots). Ha a hiány előtt nincs ilyen, a mondat nem odavaló."
+        }
       ]
     },
     {
@@ -26,8 +29,14 @@
       "explanation": "A hiány utáni mondat is visszautalhat valamire, aminek a hiányzó mondatban kell szerepelnie. Ha a következő mondat She-vel, This-szel, But-tal vagy For example-lel kezdődik, a hiányzó mondatnak kell előkészítenie: bemutatni a személyt, kimondani az állítást, amire a példa jön, vagy azt, amivel a But szembeállít.",
       "emeltOnly": false,
       "examples": [
-        { "en": "\"…the competition was won by a girl from a small village. [GAP] She was only seventeen at the time.\"", "note": "A She előzménye lehet a girl; ilyenkor a hiányzó mondatban nem jelenhet meg új szereplő, aki miatt a She kétértelművé válna." },
-        { "en": "\"[GAP] For example, many students in our class walk or cycle to school every day.\"", "note": "A For example előtt egy általános állításnak kell állnia (pl. Most of us live close to the school.), amelyre ez a mondat konkrét példa." }
+        {
+          "en": "\"…the competition was won by a girl from a small village. [GAP] She was only seventeen at the time.\"",
+          "note": "A She előzménye lehet a girl; ilyenkor a hiányzó mondatban nem jelenhet meg új szereplő, aki miatt a She kétértelművé válna."
+        },
+        {
+          "en": "\"[GAP] For example, many students in our class walk or cycle to school every day.\"",
+          "note": "A For example előtt egy általános állításnak kell állnia (pl. Most of us live close to the school.), amelyre ez a mondat konkrét példa."
+        }
       ]
     },
     {
@@ -35,7 +44,10 @@
       "explanation": "Ha a beillesztendő mondat kötőszóval kezdődik, az megmondja, milyen kapcsolatnak kell lennie az előző mondattal. However, But, Yet, On the other hand → ellentét; Also, What is more, In addition → ugyanolyan irányú kiegészítés; As a result, So, Therefore → következmény; For example, For instance → példa; Finally, In the end → sorrend vége, lezárás.",
       "emeltOnly": false,
       "examples": [
-        { "en": "Text before the gap: \"The tickets were cheap and the weather was perfect.\"\nOption: \"However, the concert itself was a disappointment.\"", "note": "A However ellentétet vezet be: a jó előzmények (olcsó jegy, szép idő) után valami rossznak kell jönnie – itt illik." }
+        {
+          "en": "Text before the gap: \"The tickets were cheap and the weather was perfect.\"\nOption: \"However, the concert itself was a disappointment.\"",
+          "note": "A However ellentétet vezet be: a jó előzmények (olcsó jegy, szép idő) után valami rossznak kell jönnie – itt illik."
+        }
       ]
     },
     {
@@ -43,7 +55,10 @@
       "explanation": "Az időhatározók (At first, Later, Two years later, Today, In the end) és az igeidők (Past Perfect = korábbi esemény, Present Perfect = máig tartó) megmutatják a sorrendet. A szövegek gyakran az általános állítástól haladnak a konkrét példák felé; egy példa nem állhat az előtt az állítás előtt, amelyet illusztrál.",
       "emeltOnly": false,
       "examples": [
-        { "en": "\"When Péter arrived in Dublin, he spoke almost no English. [GAP] Ten years later, he was teaching Hungarian to Irish students at a university.\"", "note": "A hiányba a kezdeti időszakról szóló mondat illik (pl. At first, he washed dishes in a restaurant and went to evening classes.), mert a Ten years later mondat már tíz évvel későbbre ugrik." }
+        {
+          "en": "\"When Péter arrived in Dublin, he spoke almost no English. [GAP] Ten years later, he was teaching Hungarian to Irish students at a university.\"",
+          "note": "A hiányba a kezdeti időszakról szóló mondat illik (pl. At first, he washed dishes in a restaurant and went to evening classes.), mert a Ten years later mondat már tíz évvel későbbre ugrik."
+        }
       ]
     },
     {
@@ -51,15 +66,34 @@
       "explanation": "A jó mondat előre és hátra is kapcsolódik: folytatja az előző gondolatot, és előkészíti a következőt. Ha mindent beillesztettél, olvasd végig az egész szöveget: ahol a gondolatmenet „ugrik” vagy egy névmás nem talál előzményt, ott hiba van. A felesleges mondat (általában egy-kettő) témájában illik, de valamelyik utalása vagy logikája nem stimmel.",
       "emeltOnly": false,
       "examples": [
-        { "en": "\"Max hated mornings. [GAP] So when his new job started at 6 a.m., he was not sure he could do it.\"\nMissing sentence: \"He had never got up before nine in his life.\"", "note": "Előre kapcsolódik (hated mornings), hátra is (So … not sure he could do it). Mindkét irányban stimmel – ez a jó mondat jele." }
+        {
+          "en": "\"Max hated mornings. [GAP] So when his new job started at 6 a.m., he was not sure he could do it.\"\nMissing sentence: \"He had never got up before nine in his life.\"",
+          "note": "Előre kapcsolódik (hated mornings), hátra is (So … not sure he could do it). Mindkét irányban stimmel – ez a jó mondat jele."
+        }
       ]
     }
   ],
   "commonMistakes": [
-    { "wrong": "A téma egyezik (mindkettő a kutyákról szól), tehát ez a mondat kerül ide.", "right": "Ellenőrzöm, hogy a mondat utalásai (this, they, however) illenek-e a hiány előtti és utáni mondathoz.", "why": "A felesleges mondatok szándékosan a szöveg témájához tartoznak. Az dönt, hogy a nyelvi kapcsolódások (névmások, kötőszavak, logika) stimmelnek-e." },
-    { "wrong": "Csak a hiány előtti mondatot nézem meg.", "right": "A hiány utáni mondatot is: ha She, This, But vagy For example kezdetű, a hiányzó mondatnak kell előkészítenie.", "why": "A beillesztett mondat két szomszédja közé kerül, ezért mindkettővel összhangban kell lennie. Sok feladatban éppen a hiány utáni mondat dönt." },
-    { "wrong": "Az első hiánynál elakadok, és addig nem lépek tovább, amíg meg nem oldom.", "right": "A biztos helyekkel kezdem, a nehezeket a végére hagyom, és a megmaradt mondatokból választok.", "why": "Minden mondat csak egyszer használható. A biztos párok kizárásos alapon leszűkítik a lehetőségeket a nehezebb hiányoknál." },
-    { "wrong": "A However-rel kezdődő mondatot egy hasonló irányú gondolat után illesztem be.", "right": "However előtt ellentétes tartalomnak kell állnia: pozitív után negatív, elvárás után meglepő fordulat.", "why": "A kötőszó jelentése kötelező: ha a logikai kapcsolat nem ellentét, a However-es mondat nem oda tartozik, akármennyire illik a témája." }
+    {
+      "wrong": "A téma egyezik (mindkettő a kutyákról szól), tehát ez a mondat kerül ide.",
+      "right": "Ellenőrzöm, hogy a mondat utalásai (this, they, however) illenek-e a hiány előtti és utáni mondathoz.",
+      "why": "A felesleges mondatok szándékosan a szöveg témájához tartoznak. Az dönt, hogy a nyelvi kapcsolódások (névmások, kötőszavak, logika) stimmelnek-e."
+    },
+    {
+      "wrong": "Csak a hiány előtti mondatot nézem meg.",
+      "right": "A hiány utáni mondatot is: ha She, This, But vagy For example kezdetű, a hiányzó mondatnak kell előkészítenie.",
+      "why": "A beillesztett mondat két szomszédja közé kerül, ezért mindkettővel összhangban kell lennie. Sok feladatban éppen a hiány utáni mondat dönt."
+    },
+    {
+      "wrong": "Az első hiánynál elakadok, és addig nem lépek tovább, amíg meg nem oldom.",
+      "right": "A biztos helyekkel kezdem, a nehezeket a végére hagyom, és a megmaradt mondatokból választok.",
+      "why": "Minden mondat csak egyszer használható. A biztos párok kizárásos alapon leszűkítik a lehetőségeket a nehezebb hiányoknál."
+    },
+    {
+      "wrong": "A However-rel kezdődő mondatot egy hasonló irányú gondolat után illesztem be.",
+      "right": "However előtt ellentétes tartalomnak kell állnia: pozitív után negatív, elvárás után meglepő fordulat.",
+      "why": "A kötőszó jelentése kötelező: ha a logikai kapcsolat nem ellentét, a However-es mondat nem oda tartozik, akármennyire illik a témája."
+    }
   ],
   "examTips": [
     "Hiányzó mondatok (olvasás): beillesztés előtt minden opcióban karikázd be az utalószavakat és a kötőszavakat. Ezek a „horgok”, amelyekkel a mondat a szöveghez kapcsolódik – keresd meg mindegyiknek a párját a szövegben.",
@@ -72,19 +106,31 @@
       "kind": "choice",
       "prompt": "Our school started a recycling project last year. [GAP] As a result, the amount of rubbish we produce has fallen by almost half.\n\nWhich sentence fits the gap?",
       "options": [
-        { "key": "A", "text": "However, nobody was interested in it." },
-        { "key": "B", "text": "Every classroom now has separate bins for paper, plastic and glass." },
-        { "key": "C", "text": "Rubbish is a big problem in many cities." },
-        { "key": "D", "text": "This is why the project was stopped." }
+        {
+          "key": "A",
+          "text": "However, nobody was interested in it."
+        },
+        {
+          "key": "B",
+          "text": "This is why the project was stopped."
+        },
+        {
+          "key": "C",
+          "text": "Rubbish is a big problem in many cities."
+        },
+        {
+          "key": "D",
+          "text": "Every classroom now has separate bins for paper, plastic and glass."
+        }
       ],
-      "answer": "B",
+      "answer": "D",
       "category": "text-structure",
       "evidence": "As a result, the amount of rubbish we produce has fallen by almost half.",
-      "explanation": "Helyes: B. Az As a result következményt vezet be, ezért a hiányba az okának kell kerülnie: a szelektív kukák bevezetése (a projekt konkrét lépése) magyarázza, miért csökkent felére a szemét.",
+      "explanation": "Helyes: D. Az As a result következményt vezet be, ezért a hiányba az okának kell kerülnie: a szelektív kukák bevezetése (a projekt konkrét lépése) magyarázza, miért csökkent felére a szemét.",
       "wrongOptions": {
         "A": "Ha senkit nem érdekelt volna, nem csökkent volna a szemét – ellentmond az As a result utáni eredménynek.",
-        "C": "Általános állítás a városokról; nem a projekt része, és nem lehet az oka az iskolai szemét csökkenésének.",
-        "D": "Ha leállították volna a projektet, nem lenne eredménye; ráadásul a This-nek nincs mire utalnia, ami a leállítást indokolná."
+        "B": "Ha leállították volna a projektet, nem lenne eredménye; ráadásul a This-nek nincs mire utalnia, ami a leállítást indokolná.",
+        "C": "Általános állítás a városokról; nem a projekt része, és nem lehet az oka az iskolai szemét csökkenésének."
       }
     },
     {
@@ -92,10 +138,22 @@
       "kind": "choice",
       "prompt": "In 1923, a young woman opened a tiny bakery in the centre of Szeged. [GAP] Today, her great-grandchildren run twelve shops across the country.\n\nWhich sentence fits the gap?",
       "options": [
-        { "key": "A", "text": "At first, she sold only three kinds of bread." },
-        { "key": "B", "text": "They also sell cakes and sandwiches." },
-        { "key": "C", "text": "Today, it is closed on Sundays." },
-        { "key": "D", "text": "He had learnt baking from his father." }
+        {
+          "key": "A",
+          "text": "At first, she sold only three kinds of bread."
+        },
+        {
+          "key": "B",
+          "text": "They also sell cakes and sandwiches."
+        },
+        {
+          "key": "C",
+          "text": "Today, it is closed on Sundays."
+        },
+        {
+          "key": "D",
+          "text": "He had learnt baking from his father."
+        }
       ],
       "answer": "A",
       "category": "text-structure",
@@ -112,10 +170,22 @@
       "kind": "choice",
       "prompt": "Many people think that playing video games is a waste of time. [GAP] For example, some games help players improve their memory and problem-solving skills.\n\nWhich sentence fits the gap?",
       "options": [
-        { "key": "A", "text": "Research, however, suggests that they can have some benefits." },
-        { "key": "B", "text": "That is why parents should ban them." },
-        { "key": "C", "text": "Video games are also very expensive." },
-        { "key": "D", "text": "For example, teenagers often play for hours every day." }
+        {
+          "key": "A",
+          "text": "Research, however, suggests that they can have some benefits."
+        },
+        {
+          "key": "B",
+          "text": "That is why parents should ban them."
+        },
+        {
+          "key": "C",
+          "text": "Video games are also very expensive."
+        },
+        {
+          "key": "D",
+          "text": "For example, teenagers often play for hours every day."
+        }
       ],
       "answer": "A",
       "category": "text-structure",
@@ -128,5 +198,9 @@
       }
     }
   ],
-  "relatedCategories": ["cohesion", "gist", "linking"]
+  "relatedCategories": [
+    "cohesion",
+    "gist",
+    "linking"
+  ]
 }

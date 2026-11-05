@@ -21,6 +21,8 @@ STRONG = [
     re.compile(r"(?<=\b(?:az|Az) )([A-E])(?= (?:opció|válasz|lehetőség))"),
     re.compile(r"(?<=\b[aA] )([B-E])(?= (?:opció|válasz|lehetőség))"),
     re.compile(r"(?<![\w])([A-E])(?= (?:opció|lehetőség))"),
+    re.compile(r"(?<=\b[Oo]ption )([A-E])(?![\w])"),
+    re.compile(r"(?<=\b[Aa]ntwort )([A-E])(?![\w])"),
 ]
 # anything else that looks like a bare letter (A only when followed by punctuation – otherwise it is the Hungarian article)
 LOOSE = re.compile(r"(?<![\w„(])(?:[B-E](?![\w])|A(?=\s*[.,;:”)]|$))")

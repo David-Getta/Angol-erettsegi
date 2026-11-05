@@ -16,28 +16,48 @@
   "passage": {
     "title": "A week in a Finnish school",
     "blocks": [
-      { "text": "Last October, twelve students from our school [[0]] to Finland on a school exchange. We stayed with local families and spent five days [[1]] lessons at an upper secondary school in Tampere. The first thing I noticed was that the school day is much [[2]] relaxed than in Hungary. Lessons are 75 minutes long, but there is a fifteen-minute break after every lesson, and nobody [[3]] a school uniform. Students call their teachers [[4]] their first names, which felt strange to me at first." },
-      { "text": "Another big difference is lunch. In Finland, school meals [[5]] free for every student since 1948. The food was healthy and surprisingly tasty – much better than I [[6]]." },
-      { "text": "What surprised me most was that Finnish students get very [[7]] homework. 'We think it is more important [[8]] enough sleep and free time,' explained my host sister, Aino. I was also impressed by the school library, [[9]] students can borrow not only books but also musical instruments and sports equipment." },
-      { "text": "I really enjoyed the exchange, and I hope Aino [[10]] visit us in Budapest next spring. If I [[11]] the chance, I would go back to Tampere tomorrow." }
+      {
+        "text": "Last October, twelve students from our school [[0]] to Finland on a school exchange. We stayed with local families and spent five days [[1]] lessons at an upper secondary school in Tampere. The first thing I noticed was that the school day is much [[2]] relaxed than in Hungary. Lessons are 75 minutes long, but there is a fifteen-minute break after every lesson, and nobody [[3]] a school uniform. Students call their teachers [[4]] their first names, which felt strange to me at first."
+      },
+      {
+        "text": "Another big difference is lunch. In Finland, school meals [[5]] free for every student since 1948. The food was healthy and surprisingly tasty – much better than I [[6]]."
+      },
+      {
+        "text": "What surprised me most was that Finnish students get very [[7]] homework. 'We think it is more important [[8]] enough sleep and free time,' explained my host sister, Aino. I was also impressed by the school library, [[9]] students can borrow not only books but also musical instruments and sports equipment."
+      },
+      {
+        "text": "I really enjoyed the exchange, and I hope Aino [[10]] visit us in Budapest next spring. If I [[11]] the chance, I would go back to Tampere tomorrow."
+      }
     ]
   },
   "example": {
     "id": "0",
     "kind": "choice",
     "options": [
-      { "key": "A", "text": "went" },
-      { "key": "B", "text": "have gone" },
-      { "key": "C", "text": "go" },
-      { "key": "D", "text": "were going" }
+      {
+        "key": "A",
+        "text": "were going"
+      },
+      {
+        "key": "B",
+        "text": "have gone"
+      },
+      {
+        "key": "C",
+        "text": "go"
+      },
+      {
+        "key": "D",
+        "text": "went"
+      }
     ],
-    "answer": "A",
+    "answer": "D",
     "category": "tense",
     "explanation": "A „Last October” lezárt múltbeli időpont, ezért past simple kell: went.",
     "wrongOptions": {
+      "A": "A past continuous folyamatban lévő cselekvést jelöl; itt egyszeri, lezárt eseményről van szó.",
       "B": "A present perfect (have gone) nem állhat konkrét múltbeli időponttal (last October).",
-      "C": "Jelen idő, de az utazás a múltban történt.",
-      "D": "A past continuous folyamatban lévő cselekvést jelöl; itt egyszeri, lezárt eseményről van szó."
+      "C": "Jelen idő, de az utazás a múltban történt."
     }
   },
   "items": [
@@ -45,28 +65,52 @@
       "id": "1",
       "kind": "choice",
       "options": [
-        { "key": "A", "text": "attending" },
-        { "key": "B", "text": "to attend" },
-        { "key": "C", "text": "attend" },
-        { "key": "D", "text": "attended" }
+        {
+          "key": "A",
+          "text": "attended"
+        },
+        {
+          "key": "B",
+          "text": "to attend"
+        },
+        {
+          "key": "C",
+          "text": "attend"
+        },
+        {
+          "key": "D",
+          "text": "attending"
+        }
       ],
-      "answer": "A",
+      "answer": "D",
       "category": "gerund-infinitive",
       "explanation": "„spend time + -ing”: a „spend (five days)” után az ige -ing alakban áll: spent five days attending lessons = öt napig órákra jártunk.",
       "wrongOptions": {
+        "A": "A múlt idejű alak (attended) nem lehet a „spend” kiegészítője.",
         "B": "A „spend time” után nem állhat to + ige.",
-        "C": "Puszta igealak nem állhat a „spend five days” után.",
-        "D": "A múlt idejű alak (attended) nem lehet a „spend” kiegészítője."
+        "C": "Puszta igealak nem állhat a „spend five days” után."
       }
     },
     {
       "id": "2",
       "kind": "choice",
       "options": [
-        { "key": "A", "text": "more" },
-        { "key": "B", "text": "most" },
-        { "key": "C", "text": "very" },
-        { "key": "D", "text": "much" }
+        {
+          "key": "A",
+          "text": "more"
+        },
+        {
+          "key": "B",
+          "text": "most"
+        },
+        {
+          "key": "C",
+          "text": "very"
+        },
+        {
+          "key": "D",
+          "text": "much"
+        }
       ],
       "answer": "A",
       "category": "comparison",
@@ -81,16 +125,28 @@
       "id": "3",
       "kind": "choice",
       "options": [
-        { "key": "A", "text": "wear" },
-        { "key": "B", "text": "wears" },
-        { "key": "C", "text": "wearing" },
-        { "key": "D", "text": "are wearing" }
+        {
+          "key": "A",
+          "text": "wears"
+        },
+        {
+          "key": "B",
+          "text": "wear"
+        },
+        {
+          "key": "C",
+          "text": "wearing"
+        },
+        {
+          "key": "D",
+          "text": "are wearing"
+        }
       ],
-      "answer": "B",
+      "answer": "A",
       "category": "agreement",
       "explanation": "A „nobody” egyes számú alany, ezért jelen időben -s jár az igéhez: nobody wears. Általános tényről van szó, ezért present simple.",
       "wrongOptions": {
-        "A": "A „wear” alak nem egyes szám harmadik személyű; a „nobody” után -s kell.",
+        "B": "A „wear” alak nem egyes szám harmadik személyű; a „nobody” után -s kell.",
         "C": "Az -ing alak segédige nélkül nem lehet állítmány.",
         "D": "Az „are” többes számú, a „nobody” viszont egyes számú alany, ráadásul általános tényről van szó."
       }
@@ -99,16 +155,28 @@
       "id": "4",
       "kind": "choice",
       "options": [
-        { "key": "A", "text": "with" },
-        { "key": "B", "text": "by" },
-        { "key": "C", "text": "on" },
-        { "key": "D", "text": "in" }
+        {
+          "key": "A",
+          "text": "by"
+        },
+        {
+          "key": "B",
+          "text": "with"
+        },
+        {
+          "key": "C",
+          "text": "on"
+        },
+        {
+          "key": "D",
+          "text": "in"
+        }
       ],
-      "answer": "B",
+      "answer": "A",
       "category": "preposition",
       "explanation": "„call somebody by their first name” = keresztnevén szólít valakit. Ebben a szerkezetben a „by” elöljárószó áll.",
       "wrongOptions": {
-        "A": "A „call somebody with their name” tükörfordítás, angolul hibás.",
+        "B": "A „call somebody with their name” tükörfordítás, angolul hibás.",
         "C": "Az „on” nem kapcsolódik ehhez a szerkezethez.",
         "D": "Az „in their first names” értelmetlen ebben a szerkezetben."
       }
@@ -117,17 +185,29 @@
       "id": "5",
       "kind": "choice",
       "options": [
-        { "key": "A", "text": "are" },
-        { "key": "B", "text": "were" },
-        { "key": "C", "text": "have been" },
-        { "key": "D", "text": "had been" }
+        {
+          "key": "A",
+          "text": "have been"
+        },
+        {
+          "key": "B",
+          "text": "were"
+        },
+        {
+          "key": "C",
+          "text": "are"
+        },
+        {
+          "key": "D",
+          "text": "had been"
+        }
       ],
-      "answer": "C",
+      "answer": "A",
       "category": "tense",
       "explanation": "A „since 1948” azt mutatja, hogy a helyzet a múltban kezdődött és ma is tart, ezért present perfect kell: have been free since 1948.",
       "wrongOptions": {
-        "A": "A present simple nem áll „since” + időpont szerkezettel.",
         "B": "A past simple lezárt múltat jelentene, de az ingyenes ebéd ma is érvényes.",
+        "C": "A present simple nem áll „since” + időpont szerkezettel.",
         "D": "A past perfect egy másik múltbeli időpont előtti időre utalna; itt a jelenig tartó helyzetről van szó."
       }
     },
@@ -135,28 +215,52 @@
       "id": "6",
       "kind": "choice",
       "options": [
-        { "key": "A", "text": "expect" },
-        { "key": "B", "text": "had expected" },
-        { "key": "C", "text": "have expected" },
-        { "key": "D", "text": "am expecting" }
+        {
+          "key": "A",
+          "text": "expect"
+        },
+        {
+          "key": "B",
+          "text": "am expecting"
+        },
+        {
+          "key": "C",
+          "text": "have expected"
+        },
+        {
+          "key": "D",
+          "text": "had expected"
+        }
       ],
-      "answer": "B",
+      "answer": "D",
       "category": "tense",
       "explanation": "A várakozás az étkezés (múlt) ELŐTT volt, ezért past perfect: much better than I had expected = sokkal jobb volt, mint amire számítottam.",
       "wrongOptions": {
         "A": "Jelen idő, de a mondat egy múltbeli élményről szól.",
-        "C": "A present perfect a jelenhez kapcsol, nem illik a múltbeli elbeszéléshez.",
-        "D": "A present continuous itt értelmetlen: nem most várja, hogy milyen lesz az étel."
+        "B": "A present continuous itt értelmetlen: nem most várja, hogy milyen lesz az étel.",
+        "C": "A present perfect a jelenhez kapcsol, nem illik a múltbeli elbeszéléshez."
       }
     },
     {
       "id": "7",
       "kind": "choice",
       "options": [
-        { "key": "A", "text": "little" },
-        { "key": "B", "text": "few" },
-        { "key": "C", "text": "much" },
-        { "key": "D", "text": "many" }
+        {
+          "key": "A",
+          "text": "little"
+        },
+        {
+          "key": "B",
+          "text": "few"
+        },
+        {
+          "key": "C",
+          "text": "much"
+        },
+        {
+          "key": "D",
+          "text": "many"
+        }
       ],
       "answer": "A",
       "category": "quantifier",
@@ -171,17 +275,29 @@
       "id": "8",
       "kind": "choice",
       "options": [
-        { "key": "A", "text": "have" },
-        { "key": "B", "text": "having" },
-        { "key": "C", "text": "to have" },
-        { "key": "D", "text": "had" }
+        {
+          "key": "A",
+          "text": "have"
+        },
+        {
+          "key": "B",
+          "text": "to have"
+        },
+        {
+          "key": "C",
+          "text": "having"
+        },
+        {
+          "key": "D",
+          "text": "had"
+        }
       ],
-      "answer": "C",
+      "answer": "B",
       "category": "gerund-infinitive",
       "explanation": "„it is important to do something” = fontos megtenni valamit. Az „it is + melléknév” után főnévi igenév (to + ige) áll: it is more important to have enough sleep.",
       "wrongOptions": {
         "A": "Puszta igealak nem állhat az „it is important” után.",
-        "B": "Az -ing alak itt nem helyes, ebben a szerkezetben to + ige kell.",
+        "C": "Az -ing alak itt nem helyes, ebben a szerkezetben to + ige kell.",
         "D": "Múlt idejű alak nem állhat az „important” után."
       }
     },
@@ -189,16 +305,28 @@
       "id": "9",
       "kind": "choice",
       "options": [
-        { "key": "A", "text": "which" },
-        { "key": "B", "text": "where" },
-        { "key": "C", "text": "that" },
-        { "key": "D", "text": "who" }
+        {
+          "key": "A",
+          "text": "where"
+        },
+        {
+          "key": "B",
+          "text": "which"
+        },
+        {
+          "key": "C",
+          "text": "that"
+        },
+        {
+          "key": "D",
+          "text": "who"
+        }
       ],
-      "answer": "B",
+      "answer": "A",
       "category": "relative-clause",
       "explanation": "Helyre (the school library) utaló vonatkozó névmás: where (ahol). A mellékmondat teljes (students can borrow … books), nincs benne hiányzó alany vagy tárgy, ezért nem „which”.",
       "wrongOptions": {
-        "A": "A „which” akkor kellene, ha a könyvtár lenne a mellékmondat alanya vagy tárgya; itt a helyet jelöli (ahol).",
+        "B": "A „which” akkor kellene, ha a könyvtár lenne a mellékmondat alanya vagy tárgya; itt a helyet jelöli (ahol).",
         "C": "A „that” vessző után nem állhat, és itt helyhatározó (where) kell.",
         "D": "A „who” csak személyre utalhat."
       }
@@ -207,17 +335,29 @@
       "id": "10",
       "kind": "choice",
       "options": [
-        { "key": "A", "text": "will" },
-        { "key": "B", "text": "would" },
-        { "key": "C", "text": "is" },
-        { "key": "D", "text": "has" }
+        {
+          "key": "A",
+          "text": "is"
+        },
+        {
+          "key": "B",
+          "text": "would"
+        },
+        {
+          "key": "C",
+          "text": "will"
+        },
+        {
+          "key": "D",
+          "text": "has"
+        }
       ],
-      "answer": "A",
+      "answer": "C",
       "category": "tense",
       "explanation": "A „hope” után a jövőbeli eseményt „will + ige” fejezi ki: I hope Aino will visit us next spring.",
       "wrongOptions": {
+        "A": "Az „is visit” hibás szerkezet.",
         "B": "A „would” feltételes mód; jelen idejű „hope” után a jövőre „will” kell.",
-        "C": "Az „is visit” hibás szerkezet.",
         "D": "A „has visit” hibás szerkezet (a present perfecthez 3. alak kellene, és jövőről van szó)."
       }
     },
@@ -225,10 +365,22 @@
       "id": "11",
       "kind": "choice",
       "options": [
-        { "key": "A", "text": "have" },
-        { "key": "B", "text": "had" },
-        { "key": "C", "text": "will have" },
-        { "key": "D", "text": "would have" }
+        {
+          "key": "A",
+          "text": "have"
+        },
+        {
+          "key": "B",
+          "text": "had"
+        },
+        {
+          "key": "C",
+          "text": "will have"
+        },
+        {
+          "key": "D",
+          "text": "would have"
+        }
       ],
       "answer": "B",
       "category": "conditional",

@@ -18,8 +18,14 @@
       "explanation": "Mielőtt a szöveget olvasnád (vagy a felvétel elindulna), olvasd el a kérdést, húzd alá a kulcsszavakat, és döntsd el, milyen fajta információt keresel: számot, dátumot, nevet, helyet, okot. Figyelj a kérdés minden megszorítására (melyik nap, ki, eredetileg vagy végül, hány ember összesen) – ezek döntik el, melyik adat a jó.",
       "emeltOnly": false,
       "examples": [
-        { "en": "Question: When does the museum close on Sundays?", "note": "Kulcsszavak: close, Sundays → záróidőt keresel, és csak a vasárnapit. A nyitás és a hétköznapi záróra a csapda." },
-        { "en": "Question: How many people work at the shelter now?", "note": "now → a jelenlegi létszám kell, nem az, hogy hányan kezdték el." }
+        {
+          "en": "Question: When does the museum close on Sundays?",
+          "note": "Kulcsszavak: close, Sundays → záróidőt keresel, és csak a vasárnapit. A nyitás és a hétköznapi záróra a csapda."
+        },
+        {
+          "en": "Question: How many people work at the shelter now?",
+          "note": "now → a jelenlegi létszám kell, nem az, hogy hányan kezdték el."
+        }
       ]
     },
     {
@@ -27,8 +33,14 @@
       "explanation": "A feladatírók szinte mindig átfogalmazzák a szöveg információját: a kérdés szavai helyett a szövegben szinonima, körülírás vagy más szerkezet áll. Ha egy kérdésszót szó szerint megtalálsz, az nem bizonyíték – ellenőrizd, hogy a mondat valóban arra válaszol-e.",
       "emeltOnly": false,
       "examples": [
-        { "en": "Question: How did Mark get to the festival?\nText: \"…so in the end Mark's uncle gave him a lift.\"", "note": "A kérdés get to szava nincs a szövegben; a válasz a gave him a lift (= elvitte autóval): by car." },
-        { "en": "Question: Why was the trip cancelled?\nText: \"Not enough people signed up, so the organisers called the whole thing off.\"", "note": "cancelled = called off; az ok a so előtt áll: kevés jelentkező." }
+        {
+          "en": "Question: How did Mark get to the festival?\nText: \"…so in the end Mark's uncle gave him a lift.\"",
+          "note": "A kérdés get to szava nincs a szövegben; a válasz a gave him a lift (= elvitte autóval): by car."
+        },
+        {
+          "en": "Question: Why was the trip cancelled?\nText: \"Not enough people signed up, so the organisers called the whole thing off.\"",
+          "note": "cancelled = called off; az ok a so előtt áll: kevés jelentkező."
+        }
       ]
     },
     {
@@ -36,8 +48,14 @@
       "explanation": "A megtalált adatnál ne állj meg az első számnál vagy névnél. A mondat folytatása gyakran módosítja: but, however, actually, in the end, except, unless, not until. Hallásnál különösen gyakori, hogy a beszélő javítja magát (Sorry, I mean …, No, wait …) – a végleges adat számít.",
       "emeltOnly": false,
       "examples": [
-        { "en": "The concert was supposed to start at 8, but because of the storm it was put back to half past nine.", "note": "Két időpont: az eredeti (8) és a tényleges (9.30). Ha a kérdés az, mikor kezdődött a koncert, a 9.30 a jó." },
-        { "en": "Meet at the station at ten – oh no, sorry, the train's at ten, so let's say quarter to.", "note": "Javítás: a találkozó 9.45-kor van, nem 10-kor." }
+        {
+          "en": "The concert was supposed to start at 8, but because of the storm it was put back to half past nine.",
+          "note": "Két időpont: az eredeti (8) és a tényleges (9.30). Ha a kérdés az, mikor kezdődött a koncert, a 9.30 a jó."
+        },
+        {
+          "en": "Meet at the station at ten – oh no, sorry, the train's at ten, so let's say quarter to.",
+          "note": "Javítás: a találkozó 9.45-kor van, nem 10-kor."
+        }
       ]
     },
     {
@@ -45,8 +63,14 @@
       "explanation": "A számoknál figyelj a mértékegységre, a pénznemre és a hasonló hangzású számokra (fifteen – fifty, thirteen – thirty). Előfordul, hogy egyszerű számolás kell (kedvezmény, időtartam), vagy a kérdés másik adatot kér, mint ami a szövegben elsőként szerepel. Írd le a teljes választ: £8, nem csak 8; 2 hours, nem csak 2.",
       "emeltOnly": false,
       "examples": [
-        { "en": "Tickets cost £12, but students get a third off.", "note": "Ha a kérdés a diákjegy árára kérdez: £8 (12 – 4). A £12 a csapda." },
-        { "en": "The race is fifteen kilometres long, and about fifty runners took part.", "note": "fifteen (15) és fifty (50): hallásnál a hangsúly segít – fifTEEN, FIFty." }
+        {
+          "en": "Tickets cost £12, but students get a third off.",
+          "note": "Ha a kérdés a diákjegy árára kérdez: £8 (12 – 4). A £12 a csapda."
+        },
+        {
+          "en": "The race is fifteen kilometres long, and about fifty runners took part.",
+          "note": "fifteen (15) és fifty (50): hallásnál a hangsúly segít – fifTEEN, FIFty."
+        }
       ]
     },
     {
@@ -54,15 +78,34 @@
       "explanation": "A rövid válaszos és táblázatkitöltős feladatnál nem kell teljes mondat: írd le a lényeges szavakat, lehetőleg a szöveg szavaival, de úgy, hogy illeszkedjenek a kérdéshez. Tartsd be a szókorlátot (pl. max. 3 words): a túl hosszú válasz rossznak számíthat, és ha felesleges, téves információt is beleírsz, az elronthatja a választ.",
       "emeltOnly": false,
       "examples": [
-        { "en": "Question: What did the volunteers collect? (max. 3 words)\nText: \"…the volunteers spent the whole weekend collecting plastic bottles from the riverbank.\"", "note": "Jó válasz: plastic bottles. Nem kell: the volunteers spent the whole weekend collecting …" }
+        {
+          "en": "Question: What did the volunteers collect? (max. 3 words)\nText: \"…the volunteers spent the whole weekend collecting plastic bottles from the riverbank.\"",
+          "note": "Jó válasz: plastic bottles. Nem kell: the volunteers spent the whole weekend collecting …"
+        }
       ]
     }
   ],
   "commonMistakes": [
-    { "wrong": "Az első időpontot írom be, ami a mondatban szerepel: 8 o'clock.", "right": "Végigolvasom a mondatot: a koncertet 9.30-ra tették át, a kérdés a tényleges kezdésre vonatkozik → 9.30.", "why": "A szövegek szándékosan több hasonló adatot tartalmaznak. Az a jó, amelyik a kérdés minden részére illik (melyik nap, ki, eredetileg vagy végül)." },
-    { "wrong": "A kérdés szavát keresem szó szerint, és abból a mondatból válaszolok, ahol megtalálom.", "right": "A kérdés jelentését keresem: ugyanaz más szavakkal is állhat (cancelled → called off, by car → gave him a lift).", "why": "A feladatírók átfogalmazzák az információt; a szó szerinti egyezés gyakran éppen egy rossz mondatnál van, csapdaként." },
-    { "wrong": "Hallásnál lemaradtam egy adatról, ezért azon gondolkodom, és közben a következő kérdés válasza is elmegy.", "right": "Továbblépek a következő kérdésre, és a második meghallgatáskor pótolom a hiányzó adatot.", "why": "A hallás részben minden felvételt kétszer hallasz. Ha egy kérdésen leragadsz, a következőket is elveszítheted; a második meghallgatás éppen a pótlásra és az ellenőrzésre való." },
-    { "wrong": "Válasz: Because the volunteers spent the whole weekend collecting plastic bottles from the riverbank.", "right": "Válasz: plastic bottles", "why": "Rövid válasznál csak a kért információ kell, a szókorláton belül. A hosszú, kimásolt mondat túllépheti a korlátot, és nem mutatja, hogy megértetted, mi a válasz." }
+    {
+      "wrong": "Az első időpontot írom be, ami a mondatban szerepel: 8 o'clock.",
+      "right": "Végigolvasom a mondatot: a koncertet 9.30-ra tették át, a kérdés a tényleges kezdésre vonatkozik → 9.30.",
+      "why": "A szövegek szándékosan több hasonló adatot tartalmaznak. Az a jó, amelyik a kérdés minden részére illik (melyik nap, ki, eredetileg vagy végül)."
+    },
+    {
+      "wrong": "A kérdés szavát keresem szó szerint, és abból a mondatból válaszolok, ahol megtalálom.",
+      "right": "A kérdés jelentését keresem: ugyanaz más szavakkal is állhat (cancelled → called off, by car → gave him a lift).",
+      "why": "A feladatírók átfogalmazzák az információt; a szó szerinti egyezés gyakran éppen egy rossz mondatnál van, csapdaként."
+    },
+    {
+      "wrong": "Hallásnál lemaradtam egy adatról, ezért azon gondolkodom, és közben a következő kérdés válasza is elmegy.",
+      "right": "Továbblépek a következő kérdésre, és a második meghallgatáskor pótolom a hiányzó adatot.",
+      "why": "A hallás részben minden felvételt kétszer hallasz. Ha egy kérdésen leragadsz, a következőket is elveszítheted; a második meghallgatás éppen a pótlásra és az ellenőrzésre való."
+    },
+    {
+      "wrong": "Válasz: Because the volunteers spent the whole weekend collecting plastic bottles from the riverbank.",
+      "right": "Válasz: plastic bottles",
+      "why": "Rövid válasznál csak a kért információ kell, a szókorláton belül. A hosszú, kimásolt mondat túllépheti a korlátot, és nem mutatja, hogy megértetted, mi a válasz."
+    }
   ],
   "examTips": [
     "Rövid válasz és táblázatkitöltés (olvasás és hallás): a kérdések többnyire a szöveg sorrendjét követik. Ha megtaláltad a 3. válasz helyét, a 4.-et utána keresd.",
@@ -75,18 +118,30 @@
       "kind": "choice",
       "prompt": "The school trip to Vienna was originally planned for 14 March. However, because several students had exams that week, the organisers moved it a week later, to 21 March. Students must pay the remaining €40 by 7 March.\n\nWhen will the trip take place?",
       "options": [
-        { "key": "A", "text": "On 7 March" },
-        { "key": "B", "text": "On 14 March" },
-        { "key": "C", "text": "On 21 March" },
-        { "key": "D", "text": "It has not been decided yet." }
+        {
+          "key": "A",
+          "text": "On 21 March"
+        },
+        {
+          "key": "B",
+          "text": "On 14 March"
+        },
+        {
+          "key": "C",
+          "text": "On 7 March"
+        },
+        {
+          "key": "D",
+          "text": "It has not been decided yet."
+        }
       ],
-      "answer": "C",
+      "answer": "A",
       "category": "detail",
       "evidence": "the organisers moved it a week later, to 21 March",
-      "explanation": "Helyes: C. Az eredeti időpontot (14 March) a However után módosítják: a kirándulást egy héttel későbbre, március 21-re tették át.",
+      "explanation": "Helyes: A. Az eredeti időpontot (14 March) a However után módosítják: a kirándulást egy héttel későbbre, március 21-re tették át.",
       "wrongOptions": {
-        "A": "Március 7. a befizetési határidő (pay … by 7 March), nem a kirándulás napja.",
         "B": "Március 14. az eredeti terv volt (originally planned), de a vizsgák miatt áttették.",
+        "C": "Március 7. a befizetési határidő (pay … by 7 March), nem a kirándulás napja.",
         "D": "Az új időpont egyértelműen meg van adva (to 21 March), tehát el van döntve."
       }
     },
@@ -95,19 +150,31 @@
       "kind": "choice",
       "prompt": "Lily used to cycle to work, but since her office moved to the other side of the city, she takes the tram. On rainy days her brother sometimes gives her a lift, although he usually leaves home too early for her.\n\nHow does Lily normally get to work now?",
       "options": [
-        { "key": "A", "text": "By bike" },
-        { "key": "B", "text": "By tram" },
-        { "key": "C", "text": "By car with her brother" },
-        { "key": "D", "text": "On foot" }
+        {
+          "key": "A",
+          "text": "By bike"
+        },
+        {
+          "key": "B",
+          "text": "On foot"
+        },
+        {
+          "key": "C",
+          "text": "By car with her brother"
+        },
+        {
+          "key": "D",
+          "text": "By tram"
+        }
       ],
-      "answer": "B",
+      "answer": "D",
       "category": "detail",
       "evidence": "since her office moved to the other side of the city, she takes the tram",
-      "explanation": "Helyes: B. A kérdés a jelenlegi, szokásos közlekedésre vonatkozik (normally, now): mióta az irodája átköltözött, villamossal jár (she takes the tram).",
+      "explanation": "Helyes: D. A kérdés a jelenlegi, szokásos közlekedésre vonatkozik (normally, now): mióta az irodája átköltözött, villamossal jár (she takes the tram).",
       "wrongOptions": {
         "A": "A used to cycle azt jelenti, hogy régen biciklivel járt – ma már nem.",
-        "C": "A bátyja csak néha, esős napokon viszi el (sometimes), ez nem a szokásos mód.",
-        "D": "A gyaloglás a szövegben egyáltalán nem szerepel."
+        "B": "A gyaloglás a szövegben egyáltalán nem szerepel.",
+        "C": "A bátyja csak néha, esős napokon viszi el (sometimes), ez nem a szokásos mód."
       }
     },
     {
@@ -115,21 +182,36 @@
       "kind": "choice",
       "prompt": "The café is open from 8 a.m. to 6 p.m. on weekdays and from 9 a.m. to 2 p.m. on Saturdays. On Sundays it is closed, except in December, when it opens from 10 a.m. to 4 p.m.\n\nWhen can you visit the café on a Sunday in December?",
       "options": [
-        { "key": "A", "text": "You can't – it is closed on Sundays." },
-        { "key": "B", "text": "Between 8 a.m. and 6 p.m." },
-        { "key": "C", "text": "Between 9 a.m. and 2 p.m." },
-        { "key": "D", "text": "Between 10 a.m. and 4 p.m." }
+        {
+          "key": "A",
+          "text": "Between 10 a.m. and 4 p.m."
+        },
+        {
+          "key": "B",
+          "text": "Between 8 a.m. and 6 p.m."
+        },
+        {
+          "key": "C",
+          "text": "Between 9 a.m. and 2 p.m."
+        },
+        {
+          "key": "D",
+          "text": "You can't – it is closed on Sundays."
+        }
       ],
-      "answer": "D",
+      "answer": "A",
       "category": "detail",
       "evidence": "On Sundays it is closed, except in December, when it opens from 10 a.m. to 4 p.m.",
-      "explanation": "Helyes: D. Vasárnap általában zárva van, de az except in December kivételt tesz: decemberben vasárnap is nyitva tart, 10-től 16 óráig. A kivételt csak az veszi észre, aki végigolvassa a mondatot.",
+      "explanation": "Helyes: A. Vasárnap általában zárva van, de az except in December kivételt tesz: decemberben vasárnap is nyitva tart, 10-től 16 óráig. A kivételt csak az veszi észre, aki végigolvassa a mondatot.",
       "wrongOptions": {
-        "A": "Ez a mondat első felére igaz (On Sundays it is closed), de az except in December decemberre kivételt tesz.",
         "B": "Ez a hétköznapi nyitvatartás (on weekdays).",
-        "C": "Ez a szombati nyitvatartás (on Saturdays)."
+        "C": "Ez a szombati nyitvatartás (on Saturdays).",
+        "D": "Ez a mondat első felére igaz (On Sundays it is closed), de az except in December decemberre kivételt tesz."
       }
     }
   ],
-  "relatedCategories": ["true-false-trap", "vocabulary-in-context"]
+  "relatedCategories": [
+    "true-false-trap",
+    "vocabulary-in-context"
+  ]
 }

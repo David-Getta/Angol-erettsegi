@@ -19,7 +19,10 @@
       "explanation": "Minden következtetéses válasznál keresd meg azt a szövegrészt (vagy több apró jelet), amelyre a válasz épül. A válaszlehetőség szavai általában nincsenek a szövegben, de a jelentésük a leírt tényekből, cselekvésekből, reakciókból egyértelműen következik.",
       "emeltOnly": false,
       "examples": [
-        { "en": "Tom looked at the clock for the third time and sighed. The bus was already twenty minutes late.", "note": "Következtetés: Tom türelmetlen (impatient). Az impatient szó nincs a szövegben, de a jelek egyértelműek: harmadszor néz az órára, sóhajt, késik a busz." }
+        {
+          "en": "Tom looked at the clock for the third time and sighed. The bus was already twenty minutes late.",
+          "note": "Következtetés: Tom türelmetlen (impatient). Az impatient szó nincs a szövegben, de a jelek egyértelműek: harmadszor néz az órára, sóhajt, késik a busz."
+        }
       ]
     },
     {
@@ -27,8 +30,14 @@
       "explanation": "Ha a kérdés az, hol vagy milyen helyzetben játszódik egy jelenet, vagy milyen kapcsolatban áll két ember, gyűjtsd össze a témához kötődő szavakat és a megszólítás módját. Egy-egy szó kevés, de több jel együtt már egyértelmű.",
       "emeltOnly": false,
       "examples": [
-        { "en": "Could you put your bag on the belt, please? And take your laptop out – it needs to go in a separate tray.", "note": "belt, tray, a laptop külön → reptéri biztonsági ellenőrzés. A hely nincs megnevezve, a szókincs árulja el." },
-        { "en": "\"Have you finished your homework, young man? Because you're not going anywhere until you have.\"", "note": "young man, házi feladat, tiltás → szülő beszél a fiához (vagy tanár a diákjához)." }
+        {
+          "en": "Could you put your bag on the belt, please? And take your laptop out – it needs to go in a separate tray.",
+          "note": "belt, tray, a laptop külön → reptéri biztonsági ellenőrzés. A hely nincs megnevezve, a szókincs árulja el."
+        },
+        {
+          "en": "\"Have you finished your homework, young man? Because you're not going anywhere until you have.\"",
+          "note": "young man, házi feladat, tiltás → szülő beszél a fiához (vagy tanár a diákjához)."
+        }
       ]
     },
     {
@@ -36,7 +45,10 @@
       "explanation": "Az a jó válasz, amelyet a szöveg a legjobban alátámaszt – nem az, ami „az életben valószínű”, és nem az, ami a legérdekesebb. Ha egy opcióhoz hozzá kell képzelned valamit, amit a szöveg nem mond, az valószínűleg csapda.",
       "emeltOnly": false,
       "examples": [
-        { "en": "Sarah hasn't spoken to her sister since the wedding.", "note": "Ebből csak az következik, hogy az esküvő óta rossz a kapcsolatuk, vagy valami történt köztük. Hogy veszekedtek-e, és min, vagy hogy ki a hibás, azt a szöveg nem mondja – ez már kitalálás." }
+        {
+          "en": "Sarah hasn't spoken to her sister since the wedding.",
+          "note": "Ebből csak az következik, hogy az esküvő óta rossz a kapcsolatuk, vagy valami történt köztük. Hogy veszekedtek-e, és min, vagy hogy ki a hibás, azt a szöveg nem mondja – ez már kitalálás."
+        }
       ]
     },
     {
@@ -44,8 +56,14 @@
       "explanation": "A „Why does the speaker say …?” / „What is the writer's purpose in paragraph 3?” kérdéseknél azt kell kitalálni, mit akar elérni a beszélő: tanácsot ad, figyelmeztet, kér, panaszkodik, meggyőz, bocsánatot kér. A mondat formája (kérdés, feltételes mondat) gyakran mást sejtet, mint a valódi szándék.",
       "emeltOnly": false,
       "examples": [
-        { "en": "If I were you, I'd book early – last year tickets were gone in a day.", "note": "Szándék: tanácsot ad és figyelmeztet (foglalj időben). Nem panaszkodik a tavalyi jegyekre." },
-        { "en": "Do you know how late it is?", "note": "Formailag kérdés, de a szándék szemrehányás vagy figyelmeztetés (túl késő van), nem az idő megkérdezése." }
+        {
+          "en": "If I were you, I'd book early – last year tickets were gone in a day.",
+          "note": "Szándék: tanácsot ad és figyelmeztet (foglalj időben). Nem panaszkodik a tavalyi jegyekre."
+        },
+        {
+          "en": "Do you know how late it is?",
+          "note": "Formailag kérdés, de a szándék szemrehányás vagy figyelmeztetés (túl késő van), nem az idő megkérdezése."
+        }
       ]
     },
     {
@@ -53,15 +71,34 @@
       "explanation": "Figyelj arra, mennyire biztos a szöveg: probably, it seems, apparently, might, I doubt, there is no evidence that. Ha a szöveg csak valószínűsít, a túl biztos opció (will definitely, always, everyone) rossz – és fordítva: ha a szöveg biztos, a bizonytalan opció nem pontos.",
       "emeltOnly": false,
       "examples": [
-        { "en": "The museum will probably reopen in spring, although no date has been confirmed.", "note": "Ebből nem következik, hogy The museum will reopen on 1 April – a szöveg szerint csak valószínű, és nincs dátum." }
+        {
+          "en": "The museum will probably reopen in spring, although no date has been confirmed.",
+          "note": "Ebből nem következik, hogy The museum will reopen on 1 April – a szöveg szerint csak valószínű, és nincs dátum."
+        }
       ]
     }
   ],
   "commonMistakes": [
-    { "wrong": "A válaszlehetőség szavát keresem a szövegben, és ha nem találom, kizárom.", "right": "Megnézem, hogy a szöveg tényeiből következik-e az opció – a következtetéses kérdés jó válasza általában más szavakkal fogalmaz.", "why": "Következtetésnél éppen az a lényeg, hogy a válasz nincs kimondva. A szó szerint egyező opció sokszor csapda, a jó válasz pedig a jelentésből következik." },
-    { "wrong": "Ez az életben így szokott lenni, ezért ezt választom.", "right": "Csak azt fogadom el, amit a szöveg alátámaszt; a saját tudásomat és véleményemet félreteszem.", "why": "A feladat a szöveg megértését méri, nem a világismeretet. Egy életszerű, de a szövegben nem alátámasztott opció rossz válasz." },
-    { "wrong": "A legerősebb, legérdekesebb állítást választom: She hates her job.", "right": "Az óvatosabbat választom, amely a bizonyítékhoz illik: She is not satisfied with her job.", "why": "A túlzó opciók (hates, always, never, everyone) gyakran csapdák: a szöveg ritkán mond ilyen végleteset, és egy-két negatív jelből nem következik gyűlölet." },
-    { "wrong": "Egy mondat alapján döntök, a folytatást nem olvasom el.", "right": "A környező mondatokat is elolvasom: egy későbbi but, however vagy egy reakció megfordíthatja a következtetést.", "why": "A következtetés több jel összességéből születik. Ha csak egy mondatot nézel, könnyen az ellenkezőjét következteted ki annak, amit a szöveg sugall." }
+    {
+      "wrong": "A válaszlehetőség szavát keresem a szövegben, és ha nem találom, kizárom.",
+      "right": "Megnézem, hogy a szöveg tényeiből következik-e az opció – a következtetéses kérdés jó válasza általában más szavakkal fogalmaz.",
+      "why": "Következtetésnél éppen az a lényeg, hogy a válasz nincs kimondva. A szó szerint egyező opció sokszor csapda, a jó válasz pedig a jelentésből következik."
+    },
+    {
+      "wrong": "Ez az életben így szokott lenni, ezért ezt választom.",
+      "right": "Csak azt fogadom el, amit a szöveg alátámaszt; a saját tudásomat és véleményemet félreteszem.",
+      "why": "A feladat a szöveg megértését méri, nem a világismeretet. Egy életszerű, de a szövegben nem alátámasztott opció rossz válasz."
+    },
+    {
+      "wrong": "A legerősebb, legérdekesebb állítást választom: She hates her job.",
+      "right": "Az óvatosabbat választom, amely a bizonyítékhoz illik: She is not satisfied with her job.",
+      "why": "A túlzó opciók (hates, always, never, everyone) gyakran csapdák: a szöveg ritkán mond ilyen végleteset, és egy-két negatív jelből nem következik gyűlölet."
+    },
+    {
+      "wrong": "Egy mondat alapján döntök, a folytatást nem olvasom el.",
+      "right": "A környező mondatokat is elolvasom: egy későbbi but, however vagy egy reakció megfordíthatja a következtetést.",
+      "why": "A következtetés több jel összességéből születik. Ha csak egy mondatot nézel, könnyen az ellenkezőjét következteted ki annak, amit a szöveg sugall."
+    }
   ],
   "examTips": [
     "Feleletválasztás (olvasás és hallás): a „What can we infer …?”, „What does the writer suggest …?”, „What does … mean by …?” kérdéseknél előbb keresd meg a szövegrészt, mondd el magadnak magyarul, mi következik belőle, és csak utána nézd meg az opciókat.",
@@ -74,10 +111,22 @@
       "kind": "choice",
       "prompt": "When Mr Evans walked into the classroom, the students immediately stopped talking and put their phones away. Nobody looked up at him, and the room was so quiet that you could hear the clock ticking.\n\nWhat can we infer about Mr Evans?",
       "options": [
-        { "key": "A", "text": "He is a new teacher at the school." },
-        { "key": "B", "text": "The students respect or fear him." },
-        { "key": "C", "text": "He is the students' favourite teacher." },
-        { "key": "D", "text": "He arrived late for the lesson." }
+        {
+          "key": "A",
+          "text": "He is a new teacher at the school."
+        },
+        {
+          "key": "B",
+          "text": "The students respect or fear him."
+        },
+        {
+          "key": "C",
+          "text": "He is the students' favourite teacher."
+        },
+        {
+          "key": "D",
+          "text": "He arrived late for the lesson."
+        }
       ],
       "answer": "B",
       "category": "inference",
@@ -94,10 +143,22 @@
       "kind": "choice",
       "prompt": "\"Excuse me, I ordered the soup about forty minutes ago,\" said the woman. \"I'm so sorry, madam,\" the young man replied. \"The kitchen is very busy tonight. I'll check on it for you right away.\"\n\nWhere does the conversation most probably take place?",
       "options": [
-        { "key": "A", "text": "In a supermarket" },
-        { "key": "B", "text": "In a restaurant" },
-        { "key": "C", "text": "In a hospital" },
-        { "key": "D", "text": "At a cooking class" }
+        {
+          "key": "A",
+          "text": "In a supermarket"
+        },
+        {
+          "key": "B",
+          "text": "In a restaurant"
+        },
+        {
+          "key": "C",
+          "text": "In a hospital"
+        },
+        {
+          "key": "D",
+          "text": "At a cooking class"
+        }
       ],
       "answer": "B",
       "category": "inference",
@@ -114,21 +175,37 @@
       "kind": "choice",
       "prompt": "Jake had been looking forward to the concert for months. When the band finally came on stage, however, he kept yawning and looking at the time. On the way home he said nothing about the music, and the next day he gave his ticket for the band's next show to his sister.\n\nWhat can we infer about Jake?",
       "options": [
-        { "key": "A", "text": "The concert did not live up to his expectations." },
-        { "key": "B", "text": "He had never liked the band." },
-        { "key": "C", "text": "He was ill during the concert." },
-        { "key": "D", "text": "His sister had asked him for the ticket." }
+        {
+          "key": "A",
+          "text": "He had never liked the band."
+        },
+        {
+          "key": "B",
+          "text": "The concert did not live up to his expectations."
+        },
+        {
+          "key": "C",
+          "text": "He was ill during the concert."
+        },
+        {
+          "key": "D",
+          "text": "His sister had asked him for the ticket."
+        }
       ],
-      "answer": "A",
+      "answer": "B",
       "category": "inference",
       "evidence": "he kept yawning and looking at the time … he said nothing about the music, and the next day he gave his ticket for the band's next show to his sister",
-      "explanation": "Helyes: A. Hónapokig várta a koncertet, de közben ásított, az órát nézte, utána nem beszélt a zenéről, és a következő koncertre szóló jegyét is továbbadta. Ezek együtt azt mutatják, hogy csalódott, a koncert nem váltotta be a reményeit.",
+      "explanation": "Helyes: B. Hónapokig várta a koncertet, de közben ásított, az órát nézte, utána nem beszélt a zenéről, és a következő koncertre szóló jegyét is továbbadta. Ezek együtt azt mutatják, hogy csalódott, a koncert nem váltotta be a reményeit.",
       "wrongOptions": {
-        "B": "Ellentmond a szövegnek: hónapokig várta a koncertet (had been looking forward to it for months), tehát szerette a zenekart.",
+        "A": "Ellentmond a szövegnek: hónapokig várta a koncertet (had been looking forward to it for months), tehát szerette a zenekart.",
         "C": "Betegségre nincs bizonyíték; az ásítás és az óra nézése unalomra utal, és betegség miatt nem adná tovább a következő koncert jegyét.",
         "D": "A szöveg nem mondja, hogy a testvére kérte volna a jegyet; ez hozzáképzelt információ."
       }
     }
   ],
-  "relatedCategories": ["attitude", "gist", "true-false-trap"]
+  "relatedCategories": [
+    "attitude",
+    "gist",
+    "true-false-trap"
+  ]
 }
