@@ -1,0 +1,146 @@
+{
+  "schemaVersion": 1,
+  "id": "rd-kozep-step-challenge-short-answer",
+  "revision": 1,
+  "level": "kozep",
+  "source": "generated",
+  "topic": "eletmod",
+  "title": "Thirty days, ten thousand steps",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "reading",
+  "type": "short-answer",
+  "instructions": "Read the article from a school magazine about a walking challenge and answer the questions (1–8). Use no more than FOUR words for each answer. There is an example (0) at the beginning.",
+  "instructionsHu": "Olvasd el az iskolaújság cikkét egy gyaloglós kihívásról, és válaszolj a kérdésekre (1–8). Egy válasz legfeljebb NÉGY szó lehet. A 0. a példa.",
+  "passage": {
+    "title": "Thirty days, ten thousand steps",
+    "subtitle": "Class 11B tried a month-long walking challenge. Here is what happened.",
+    "blocks": [
+      {
+        "text": "It all started in a biology lesson in October. Our teacher, Mr Horváth, told us that many teenagers walk only about 5,000 steps a day, and that most of us spend more than eight hours a day sitting down. Then he made a suggestion: for thirty days, all 26 of us would try to walk at least 10,000 steps every day. We would count our steps with our phones and share the numbers in a class chat group."
+      },
+      {
+        "text": "The first week was the hardest. On the first day, only nine of us reached 10,000 steps. Most of us were surprised by how little we normally moved. 'I thought I was quite active,' said Bori, 'but on a normal school day I only walked about 3,000 steps – mostly between my bed, the bus stop and the school canteen.'"
+      },
+      {
+        "text": "We soon found ways to walk more. Several students started getting off the bus two stops early and walking the rest of the way to school. Others took the stairs instead of the lift in the shopping centre, or walked their dogs for longer. Dani, who had never walked anywhere if he could avoid it, began going to football training on foot – a 40-minute walk."
+      },
+      {
+        "text": "By the third week, almost everyone was reaching the goal on most days. Many of us noticed changes. Several students said they slept better, and a few said they felt less stressed before tests. Lucas, an exchange student from Germany, said the best part was that he discovered parts of the city he had never seen before."
+      },
+      {
+        "text": "Not everything was positive, though. On rainy days it was difficult to find the motivation to go out, and some people felt that the competition in the chat group became too serious. One student even admitted that she had shaken her phone to get more steps!"
+      },
+      {
+        "text": "At the end of the month, 21 of the 26 students had walked at least 10,000 steps on more than 25 days. Mr Horváth was so pleased that he has suggested a new challenge for the spring: a whole month without using lifts or escalators."
+      }
+    ]
+  },
+  "example": {
+    "id": "0",
+    "kind": "text",
+    "prompt": "In which lesson did the idea for the challenge come up?",
+    "answer": ["biology", "in a biology lesson", "a biology lesson", "biology lesson", "in biology", "in biology lesson", "biology class", "in a biology class"],
+    "maxWords": 4,
+    "category": "detail",
+    "explanation": "Az egész egy biológiaórán kezdődött októberben: „in a biology lesson”.",
+    "evidence": "It all started in a biology lesson in October."
+  },
+  "items": [
+    {
+      "id": "1",
+      "kind": "text",
+      "prompt": "According to Mr Horváth, how many steps do many teenagers walk a day?",
+      "answer": ["about 5,000", "5,000", "5000", "about 5000", "five thousand", "about five thousand", "5,000 steps", "5000 steps", "about 5,000 steps", "about 5000 steps", "only about 5,000", "only 5,000", "around 5,000"],
+      "maxWords": 4,
+      "category": "detail",
+      "explanation": "A tanár szerint sok kamasz naponta csak körülbelül 5000 lépést tesz meg („only about 5,000 steps a day”). A 10 000 a kitűzött cél, nem ez a válasz.",
+      "evidence": "many teenagers walk only about 5,000 steps a day"
+    },
+    {
+      "id": "2",
+      "kind": "text",
+      "prompt": "What did the students use to count their steps?",
+      "answer": ["their phones", "phones", "with their phones", "their mobile phones", "mobile phones", "their mobiles", "their smartphones", "smartphones", "a phone", "phone"],
+      "maxWords": 4,
+      "category": "detail",
+      "explanation": "A lépéseiket a telefonjukkal számolták: „with our phones”.",
+      "evidence": "We would count our steps with our phones"
+    },
+    {
+      "id": "3",
+      "kind": "text",
+      "prompt": "How many students reached 10,000 steps on the first day?",
+      "answer": ["nine", "9", "only nine", "only 9", "nine students", "9 students", "only nine students", "only 9 students", "nine of them", "nine people"],
+      "maxWords": 4,
+      "category": "detail",
+      "explanation": "Az első napon csak kilencen érték el a 10 000 lépést („only nine of us”). A 26 az osztály létszáma, a 21 pedig a hónap végi eredmény.",
+      "evidence": "On the first day, only nine of us reached 10,000 steps."
+    },
+    {
+      "id": "4",
+      "kind": "text",
+      "prompt": "What did some students use instead of the lift in the shopping centre?",
+      "answer": ["the stairs", "stairs", "they took the stairs", "took the stairs", "the staircase", "staircase"],
+      "maxWords": 4,
+      "category": "detail",
+      "explanation": "Néhányan a bevásárlóközpontban a lift helyett a lépcsőt (the stairs) használták.",
+      "evidence": "Others took the stairs instead of the lift in the shopping centre"
+    },
+    {
+      "id": "5",
+      "kind": "text",
+      "prompt": "How did Dani start getting to football training?",
+      "answer": ["on foot", "he walked", "walking", "by walking", "he went on foot", "went on foot", "walked", "he walked there", "by foot"],
+      "maxWords": 4,
+      "category": "detail",
+      "explanation": "Dani, aki addig sehova nem ment gyalog, elkezdett gyalog (on foot) járni a focira – ez 40 perces séta.",
+      "evidence": "began going to football training on foot"
+    },
+    {
+      "id": "6",
+      "kind": "text",
+      "prompt": "Apart from sleeping better, what change did a few students notice before tests?",
+      "answer": ["they felt less stressed", "felt less stressed", "less stressed", "they were less stressed", "were less stressed", "less stress", "less nervous", "felt less nervous", "they felt less nervous", "more relaxed", "felt more relaxed", "they felt more relaxed", "calmer", "felt calmer", "they felt calmer"],
+      "maxWords": 4,
+      "category": "detail",
+      "explanation": "Néhányan azt mondták, hogy dolgozatok előtt kevésbé voltak stresszesek („felt less stressed”). Ugyanezt jelentő válasz (pl. less nervous, more relaxed) is elfogadható.",
+      "evidence": "a few said they felt less stressed before tests"
+    },
+    {
+      "id": "7",
+      "kind": "text",
+      "prompt": "What sometimes made it difficult to find the motivation to go out?",
+      "answer": ["rain", "the rain", "rainy days", "rainy weather", "the rainy weather", "bad weather", "when it rained", "when it was raining"],
+      "maxWords": 4,
+      "category": "detail",
+      "explanation": "Esős napokon (on rainy days) nehéz volt rávenni magukat, hogy kimenjenek. A chatcsoportbeli verseny egy másik probléma volt, az nem a kimenést nehezítette.",
+      "evidence": "On rainy days it was difficult to find the motivation to go out"
+    },
+    {
+      "id": "8",
+      "kind": "text",
+      "prompt": "What did one student do to get more steps?",
+      "answer": ["shook her phone", "she shook her phone", "shaking her phone", "shook the phone", "she shook the phone", "shaking the phone", "had shaken her phone"],
+      "maxWords": 4,
+      "category": "detail",
+      "explanation": "Az egyik diák bevallotta, hogy megrázta a telefonját (shook her phone), hogy több lépést mutasson – vagyis csalt.",
+      "evidence": "she had shaken her phone to get more steps"
+    }
+  ],
+  "glossary": [
+    { "term": "challenge", "meaning": "kihívás" },
+    { "term": "suggestion", "meaning": "javaslat" },
+    { "term": "share", "meaning": "megoszt" },
+    { "term": "reach", "meaning": "elér" },
+    { "term": "canteen", "meaning": "(iskolai) menza, ebédlő" },
+    { "term": "get off the bus", "meaning": "leszáll a buszról" },
+    { "term": "avoid", "meaning": "elkerül" },
+    { "term": "on foot", "meaning": "gyalog" },
+    { "term": "goal", "meaning": "cél" },
+    { "term": "exchange student", "meaning": "cserediák" },
+    { "term": "admit", "meaning": "bevall, beismer" },
+    { "term": "escalator", "meaning": "mozgólépcső" }
+  ],
+  "suggestedMinutes": 15
+}

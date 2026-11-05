@@ -1,0 +1,137 @@
+{
+  "schemaVersion": 1,
+  "id": "rd-kozep-repair-cafe-true-false",
+  "revision": 1,
+  "level": "kozep",
+  "source": "generated",
+  "topic": "kornyezet",
+  "title": "Don't throw it away – fix it!",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "reading",
+  "type": "true-false",
+  "instructions": "Read the article about a repair café. Decide whether the statements (1–8) are true (T) or false (F) according to the text. There is an example (0) at the beginning.",
+  "instructionsHu": "Olvasd el a cikket egy javítókávézóról, és döntsd el, hogy az állítások (1–8) a szöveg szerint igazak (T) vagy hamisak (F). A 0. a példa.",
+  "passage": {
+    "title": "Don't throw it away – fix it!",
+    "subtitle": "A visit to the monthly repair café in Ashford Green",
+    "blocks": [
+      {
+        "text": "On the first Saturday of every month, the old library in Ashford Green becomes a very unusual workshop. People arrive with broken toasters, torn jackets, lamps that don't work and bicycles with flat tyres. Volunteers sit at long tables with their tools, ready to help. This is the town's repair café, and entry is completely free."
+      },
+      {
+        "text": "The idea of repair cafés started in the Netherlands in 2009. Today, there are more than 2,000 of them around the world. The one in Ashford Green was opened three years ago by Helen Price, a retired science teacher. 'I was shocked by how many things people throw away just because one small part is broken,' she says. 'Often the repair only takes ten minutes.'"
+      },
+      {
+        "text": "The volunteers are of all ages. The oldest is Frank, an 82-year-old former electrician, who can fix almost any radio or kettle. The youngest is 16-year-old Mia, who repairs phones and laptops. 'At first, some older visitors didn't believe that I could help them,' Mia laughs. 'Now they ask for me by name.'"
+      },
+      {
+        "text": "An important rule at the café is that visitors don't just watch. They have to sit next to the volunteer and help with the repair. 'We don't want to be a free repair shop,' Helen explains. 'We want people to learn, so that next time they can do it themselves.' Visitors who want to say thank you can put some money in a box by the door. This money pays for new tools and spare parts."
+      },
+      {
+        "text": "Not every repair is successful. About one in four objects cannot be fixed, usually because the spare parts are too expensive or impossible to find. Some modern products are also made in a way that makes it difficult to open them without breaking them. Helen thinks this should change. 'Companies should make products that last longer and are easier to repair,' she says."
+      },
+      {
+        "text": "Last year, the café repaired about 600 objects. Helen calculates that this stopped more than two tonnes of waste from ending up at the rubbish dump. But for many visitors, the best part is not saving money or helping the planet. It is the tea, the cake and the friendly conversation while they wait."
+      }
+    ]
+  },
+  "example": {
+    "id": "0",
+    "kind": "tf",
+    "prompt": "The repair café is open once a month.",
+    "answer": "T",
+    "category": "detail",
+    "explanation": "Igaz: minden hónap első szombatján tartják („On the first Saturday of every month”), tehát havonta egyszer.",
+    "evidence": "On the first Saturday of every month"
+  },
+  "items": [
+    {
+      "id": "1",
+      "kind": "tf",
+      "prompt": "Visitors have to pay an entry fee.",
+      "answer": "F",
+      "category": "detail",
+      "explanation": "Hamis: a belépés teljesen ingyenes („entry is completely free”). Pénzt csak az adhat, aki köszönetképpen szeretne – ez önkéntes.",
+      "evidence": "entry is completely free"
+    },
+    {
+      "id": "2",
+      "kind": "tf",
+      "prompt": "The idea of repair cafés comes from the Netherlands.",
+      "answer": "T",
+      "category": "detail",
+      "explanation": "Igaz: a javítókávézók ötlete Hollandiában született 2009-ben („started in the Netherlands”).",
+      "evidence": "The idea of repair cafés started in the Netherlands in 2009."
+    },
+    {
+      "id": "3",
+      "kind": "tf",
+      "prompt": "Helen Price used to work as an electrician.",
+      "answer": "F",
+      "category": "true-false-trap",
+      "explanation": "Hamis: Helen nyugdíjas természettudomány-tanár („a retired science teacher”). A volt villanyszerelő Frank, a legidősebb önkéntes.",
+      "evidence": "Helen Price, a retired science teacher"
+    },
+    {
+      "id": "4",
+      "kind": "tf",
+      "prompt": "Some older visitors now want Mia to help them.",
+      "answer": "T",
+      "category": "inference",
+      "explanation": "Igaz: eleinte néhány idősebb látogató nem hitte, hogy Mia segíthet, de most név szerint kérik őt („Now they ask for me by name”) – vagyis kifejezetten őt akarják.",
+      "evidence": "Now they ask for me by name."
+    },
+    {
+      "id": "5",
+      "kind": "tf",
+      "prompt": "Visitors must take part in the repair of their own things.",
+      "answer": "T",
+      "category": "detail",
+      "explanation": "Igaz: fontos szabály, hogy a látogatók nem csak néznek, hanem le kell ülniük az önkéntes mellé és segíteniük kell a javításban („They have to … help with the repair”).",
+      "evidence": "They have to sit next to the volunteer and help with the repair."
+    },
+    {
+      "id": "6",
+      "kind": "tf",
+      "prompt": "The money in the box by the door goes to the volunteers.",
+      "answer": "F",
+      "category": "true-false-trap",
+      "explanation": "Hamis: a dobozba tett pénzből új szerszámokat és alkatrészeket vesznek („pays for new tools and spare parts”), nem az önkénteseké.",
+      "evidence": "This money pays for new tools and spare parts."
+    },
+    {
+      "id": "7",
+      "kind": "tf",
+      "prompt": "Most of the objects that people bring cannot be repaired.",
+      "answer": "F",
+      "category": "true-false-trap",
+      "explanation": "Hamis: körülbelül minden negyedik tárgyat nem lehet megjavítani („About one in four”), tehát a tárgyak többségét (kb. háromnegyedét) meg tudják javítani.",
+      "evidence": "About one in four objects cannot be fixed"
+    },
+    {
+      "id": "8",
+      "kind": "tf",
+      "prompt": "For many visitors, the social side of the café is the most enjoyable part.",
+      "answer": "T",
+      "category": "inference",
+      "explanation": "Igaz: sok látogatónak nem a spórolás vagy a környezet védelme a legjobb, hanem a tea, a sütemény és a barátságos beszélgetés – vagyis a társasági oldal.",
+      "evidence": "It is the tea, the cake and the friendly conversation while they wait."
+    }
+  ],
+  "glossary": [
+    { "term": "workshop", "meaning": "műhely" },
+    { "term": "torn", "meaning": "szakadt" },
+    { "term": "flat tyre", "meaning": "defektes (lapos) gumi" },
+    { "term": "volunteer", "meaning": "önkéntes" },
+    { "term": "retired", "meaning": "nyugdíjas" },
+    { "term": "former", "meaning": "egykori, volt" },
+    { "term": "electrician", "meaning": "villanyszerelő" },
+    { "term": "kettle", "meaning": "vízforraló" },
+    { "term": "spare parts", "meaning": "(pót)alkatrészek" },
+    { "term": "last longer", "meaning": "tovább tart, tartósabb" },
+    { "term": "waste", "meaning": "hulladék" },
+    { "term": "rubbish dump", "meaning": "szeméttelep" }
+  ],
+  "suggestedMinutes": 12
+}
