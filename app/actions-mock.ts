@@ -1,7 +1,8 @@
 "use server";
 
 import { revalidatePath } from "next/cache";
-import { abandonMock, startMock, startPart, submitPart, type MockKind } from "@/lib/mock";
+import { abandonMock, setPartExcluded, startMock, startPart, submitPart, type MockKind } from "@/lib/mock";
+import type { PartId } from "@/lib/exam/config";
 import { getSettings } from "@/lib/settings";
 
 export async function startMockAction(kind: MockKind) {
@@ -23,5 +24,11 @@ export async function submitPartAction(id: number, partIndex: number, answers: R
 
 export async function abandonMockAction(id: number) {
   abandonMock(id);
+  revalidatePath("/", "layout");
+}
+
+/** Leaves a part of a finished diagnostic out of the result (e.g. unusable listening audio), or counts it again. */
+export async function setPartExcludedAction(id: number, part: PartId, exclude: boolean) {
+  setPartExcluded(id, part, exclude);
   revalidatePath("/", "layout");
 }

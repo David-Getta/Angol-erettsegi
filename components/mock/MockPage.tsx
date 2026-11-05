@@ -11,6 +11,7 @@ import { Badge, Card, ProgressBar, btn, formatDate } from "../ui";
 import { CommandTip } from "../CommandTip";
 import { ImportButton } from "../grading/ImportButton";
 import { MockRunner } from "./MockRunner";
+import { ExcludePartButton } from "./ExcludePartButton";
 
 /** Shared page body for /probaerettsegi/[id] and /szintfelmero/[id]. */
 export function MockPage({ id, kind }: { id: number; kind: MockKind }) {
@@ -59,6 +60,9 @@ export function MockResultView({ kind, level, result, mockId }: { kind: MockKind
   const pendingWriting = result.parts.some((p) => p.pending);
   const subs = listSubmissions("writing").filter((s) => s.mockExamId === mockId);
   const weak = mockWeakCategories(mockId);
+  // diagnostic only: a part can be left out of the result (e.g. unusable listening audio)
+  const canExclude = kind === "diagnostic";
+  const excludedNames = result.parts.filter((p) => p.excluded).map((p) => p.name);
   return (
     <div className="space-y-5" data-testid="mock-result">
       {pendingWriting && (
@@ -86,6 +90,11 @@ export function MockResultView({ kind, level, result, mockId }: { kind: MockKind
               <b>{t.diagnostic.weaknesses}:</b> {result.weaknesses?.join(", ") || "–"}
             </div>
           </div>
+          {excludedNames.length > 0 && (
+            <p className="mt-3 text-xs text-muted" data-testid="excluded-note">
+              {t.diagnostic.excludedNote(excludedNames.join(", "))}
+            </p>
+          )}
         </Card>
       )}
       <Card title={t.mock.partScores}>
@@ -96,14 +105,17 @@ export function MockResultView({ kind, level, result, mockId }: { kind: MockKind
               <th className="pb-2 text-right">Nyers pont</th>
               <th className="pb-2 text-right">Vizsgapont</th>
               <th className="pb-2 pl-4">{t.mock.minimum}</th>
+              {canExclude && <th className="pb-2 pl-4 text-right">{t.diagnostic.counts}</th>}
             </tr>
           </thead>
           <tbody>
             {result.parts.map((p) => {
               const chk = o.parts.find((x) => x.part === p.part);
               return (
-                <tr key={p.part} className="border-t border-border">
-                  <td className="py-2">{p.name}</td>
+                <tr key={p.part} className={`border-t border-border${p.excluded ? " text-muted" : ""}`} data-excluded={p.excluded ? "1" : undefined}>
+                  <td className="py-2">
+                    {p.name} {p.excluded && <Badge tone="warn">{t.diagnostic.excluded}</Badge>}
+                  </td>
                   <td className="py-2 text-right tabular-nums">{p.raw === null ? (p.pending ? t.writing.pending : "–") : `${p.raw} / ${p.rawMax}`}</td>
                   <td className="py-2 text-right font-semibold tabular-nums">{p.points === null ? "–" : `${p.points} / ${p.maxPoints}`}</td>
                   <td className="py-2 pl-4">
@@ -115,6 +127,11 @@ export function MockResultView({ kind, level, result, mockId }: { kind: MockKind
                       <Badge tone="good">✓ {t.mock.ok} (min. {chk?.minPoints})</Badge>
                     )}
                   </td>
+                  {canExclude && (
+                    <td className="py-2 pl-4 text-right">
+                      <ExcludePartButton mockId={mockId} part={p.part} excluded={!!p.excluded} />
+                    </td>
+                  )}
                 </tr>
               );
             })}

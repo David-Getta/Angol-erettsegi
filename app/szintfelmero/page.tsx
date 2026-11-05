@@ -63,7 +63,7 @@ export default function DiagnosticLanding() {
                     {formatDate(m.createdAt)}
                   </Link>
                   {r?.cefr && <Badge tone="accent">{r.cefr}</Badge>}
-                  {r && <span className="text-muted">{r.parts.map((p) => `${p.name}: ${p.pct === null ? "–" : Math.round(p.pct) + "%"}`).join(" · ")}</span>}
+                  {r && <span className="text-muted">{r.parts.map((p) => `${p.name}: ${p.excluded ? t.diagnostic.excluded : p.pct === null ? "–" : Math.round(p.pct) + "%"}`).join(" · ")}</span>}
                 </li>
               );
             })}

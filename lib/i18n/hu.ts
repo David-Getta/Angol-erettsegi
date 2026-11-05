@@ -498,6 +498,13 @@ export const t = {
     retake: "Újra kitöltöm",
     history: "Korábbi felmérések",
     notEnough: "A szintfelmérőhöz nincs elég fenntartott feladat ezen a szinten.",
+    counts: "Beszámít",
+    exclude: "Kihagyom",
+    include: "Visszaveszem",
+    excluded: "kihagyva",
+    excludeTitle: "Ez a rész ne számítson bele (pl. ha a hanganyag élvezhetetlen volt): a becsült szintbe, az erősségekbe, a statisztikába, a hibanaplóba és a Mai tervbe sem kerül be, a feladata pedig újra felhasználható. Bármikor visszaveheted.",
+    includeTitle: "A rész újra beleszámít az eredménybe",
+    excludedNote: (names: string) => `A becslés ezek nélkül készült: ${names}.`,
   },
 
   mock: {

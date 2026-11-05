@@ -47,7 +47,7 @@ export function estimateParts(level: Level, targetPct: number): PartEstimate[] {
       pcts = db
         .select({ score: submissions.score, max: submissions.maxScore })
         .from(submissions)
-        .where(and(eq(submissions.kind, p.id), eq(submissions.level, level), eq(submissions.status, "graded"), isNotNull(submissions.score)))
+        .where(and(eq(submissions.subject, currentSubject()), eq(submissions.kind, p.id), eq(submissions.level, level), eq(submissions.status, "graded"), isNotNull(submissions.score)))
         .orderBy(desc(submissions.gradedAt))
         .limit(recentAttempts)
         .all()
@@ -56,7 +56,7 @@ export function estimateParts(level: Level, targetPct: number): PartEstimate[] {
       pcts = db
         .select({ score: attempts.score, max: attempts.maxScore })
         .from(attempts)
-        .where(and(eq(attempts.section, p.id), eq(attempts.level, level)))
+        .where(and(eq(attempts.subject, currentSubject()), eq(attempts.section, p.id), eq(attempts.level, level)))
         .orderBy(desc(attempts.createdAt))
         .limit(recentAttempts)
         .all()

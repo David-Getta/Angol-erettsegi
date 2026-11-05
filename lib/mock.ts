@@ -16,7 +16,16 @@ import { currentSubject } from "@/lib/exam/config";
 
 export type MockKind = "mock" | "diagnostic";
 export type MockPart = { part: PartId; name: string; timeSec: number; taskIds: string[] };
-export type MockPlan = { parts: MockPart[] };
+/** `excluded`: parts the student chose not to count (e.g. the listening audio was unusable). */
+export type MockPlan = { parts: MockPart[]; excluded?: PartId[] };
+
+/**
+ * Attempts, submissions and error-log entries of an excluded part get this
+ * suffix on their subject: every statistic, estimate, the error log and the
+ * "used task" list filter by the current subject, so they no longer count.
+ * Counting the part again restores the subject.
+ */
+const EXCLUDED_SUFFIX = ":kihagyva";
 
 /** Diagnostic: one short task per written part (about 45 minutes in total). */
 const DIAGNOSTIC: Record<string, { count: number; minutes: number }> = {
@@ -199,7 +208,44 @@ export function abandonMock(id: number): void {
   getDb().update(mockExams).set({ status: "abandoned", finishedAt: new Date() }).where(eq(mockExams.id, id)).run();
 }
 
-export type MockPartResult = { part: PartId; name: string; raw: number | null; rawMax: number; points: number | null; maxPoints: number; pct: number | null; pending: boolean; estimated?: boolean };
+/**
+ * Leaves a part of a finished diagnostic out of the result, or counts it again.
+ * Excluded parts do not count in the level estimate, the strengths and
+ * weaknesses, the weak error categories, the statistics, the error log or the
+ * daily plan; their tasks count as unused again.
+ */
+export function setPartExcluded(id: number, part: PartId, exclude: boolean): MockResult | null {
+  const m = getMock(id);
+  if (!m || m.status === "in-progress") return null;
+  const plan = m.plan as MockPlan;
+  if (!plan.parts.some((p) => p.part === part)) return null;
+  const excluded = new Set(plan.excluded ?? []);
+  if (exclude) excluded.add(part);
+  else excluded.delete(part);
+  const subject = m.subject;
+  const target = exclude ? `${subject}${EXCLUDED_SUFFIX}` : subject;
+  const db = getDb();
+  db.transaction((tx) => {
+    tx.update(mockExams)
+      .set({ plan: { ...plan, excluded: [...excluded] } })
+      .where(eq(mockExams.id, id))
+      .run();
+    const sourceIds: string[] = [];
+    if (part === "writing") {
+      const subs = tx.select({ id: submissions.id }).from(submissions).where(and(eq(submissions.mockExamId, id), eq(submissions.kind, "writing"))).all();
+      tx.update(submissions).set({ subject: target }).where(and(eq(submissions.mockExamId, id), eq(submissions.kind, "writing"))).run();
+      sourceIds.push(...subs.map((s) => String(s.id)));
+    } else {
+      const rows = tx.select({ id: attempts.id }).from(attempts).where(and(eq(attempts.mockExamId, id), eq(attempts.section, part))).all();
+      tx.update(attempts).set({ subject: target }).where(and(eq(attempts.mockExamId, id), eq(attempts.section, part))).run();
+      sourceIds.push(...rows.map((r) => String(r.id)));
+    }
+    if (sourceIds.length) tx.update(errors).set({ subject: target }).where(and(inArray(errors.sourceId, sourceIds), eq(errors.sourceType, part))).run();
+  });
+  return refreshMockResult(id);
+}
+
+export type MockPartResult = { part: PartId; name: string; raw: number | null; rawMax: number; points: number | null; maxPoints: number; pct: number | null; pending: boolean; estimated?: boolean; excluded?: boolean };
 
 export type MockResult = {
   parts: MockPartResult[];
@@ -233,9 +279,14 @@ export function refreshMockResult(id: number): MockResult | null {
   const grading = examConfig.grading();
   const st = levelStructure(level);
   const parts: MockPartResult[] = [];
+  const excluded = new Set(plan.excluded ?? []);
 
   for (const p of plan.parts) {
     const def = partDef(level, p.part);
+    if (excluded.has(p.part)) {
+      parts.push({ part: p.part, name: p.name, raw: null, rawMax: 0, points: null, maxPoints: def.maxPoints, pct: null, pending: false, excluded: true });
+      continue;
+    }
     if (p.part === "writing") {
       const subs = db.select().from(submissions).where(and(eq(submissions.mockExamId, id), eq(submissions.kind, "writing"))).all();
       const pending = subs.some((s) => s.status !== "graded");
@@ -269,7 +320,7 @@ export function refreshMockResult(id: number): MockResult | null {
   const writtenMax = st.parts.filter((p) => p.written && p.maxPoints > 0).reduce((n, p) => n + p.maxPoints, 0);
   const writtenPoints = parts.reduce((n, p) => n + (p.points ?? 0), 0);
   const writtenPct = totalPercent(writtenPoints, writtenMax, grading.percentRounding);
-  const complete = parts.every((p) => p.points !== null);
+  const complete = parts.every((p) => p.excluded || p.points !== null);
 
   // oral estimate: recent graded speaking, otherwise the written percentage
   const speakingDef = oralPart(level);
@@ -319,10 +370,12 @@ export function mockWeakCategories(mockId: number, limit = 6): WeakCategory[] {
     if (wrong) cur.wrong++;
     counts.set(id, cur);
   };
-  for (const a of db.select({ results: attempts.results }).from(attempts).where(eq(attempts.mockExamId, mockId)).all()) {
+  // excluded parts carry the ":kihagyva" subject suffix (see setPartExcluded)
+  const subject = getMock(mockId)?.subject ?? currentSubject();
+  for (const a of db.select({ results: attempts.results }).from(attempts).where(and(eq(attempts.mockExamId, mockId), eq(attempts.subject, subject))).all()) {
     for (const r of (a.results as { category: string; correct: boolean }[]) ?? []) bump(r.category, !r.correct);
   }
-  const subIds = db.select({ id: submissions.id }).from(submissions).where(eq(submissions.mockExamId, mockId)).all().map((x) => x.id);
+  const subIds = db.select({ id: submissions.id }).from(submissions).where(and(eq(submissions.mockExamId, mockId), eq(submissions.subject, subject))).all().map((x) => x.id);
   if (subIds.length) {
     for (const e of db.select({ category: errors.category }).from(errors).where(inArray(errors.sourceId, subIds)).all()) bump(e.category, true);
   }
