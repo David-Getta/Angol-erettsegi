@@ -1,0 +1,271 @@
+{
+  "schemaVersion": 1,
+  "id": "mag-gr-kovetkeztetes",
+  "subject": "magyar",
+  "revision": 1,
+  "level": "kozep",
+  "source": "generated",
+  "topic": "nyelvtan",
+  "title": "Következtetés, értelmezés",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "grammar",
+  "type": "lesson",
+  "category": "kovetkeztetes",
+  "summaryHu": "A következtetéses kérdések olyan állításra kérdeznek rá, amelyet a szöveg nem mond ki szó szerint, de logikusan következik belőle: a szerző véleményére, szándékára, hangnemére, egy szó vagy kép jelentésére az adott szövegösszefüggésben. A legnagyobb csapda a saját vélemény vagy háttértudás: a helyes következtetést mindig alá kell tudni támasztani egy szöveghellyel. Emelt szinten az irónia, a rejtett utalás és a szerzői álláspont árnyalt felismerése is elvárás.",
+  "rules": [
+    {
+      "title": "A következtetés a szövegből adódik",
+      "explanation": "Egy következtetés akkor helyes, ha a szöveg egy vagy több mondatából logikusan levezethető, még ha szó szerint nem is szerepel. Ellenőrző kérdés: melyik mondatra hivatkozva tudnám bizonyítani? Ha nincs ilyen mondat, a válasz valószínűleg a saját véleményed.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "Szöveg: „Valakinek át kellett adnia a szobáját. Ez a valaki én voltam.” Következtetés: a nagymama a beszélő régi szobájába költözött.",
+          "hu": "Nincs kimondva, de a két mondatból és a helyzetből logikusan adódik."
+        }
+      ]
+    },
+    {
+      "title": "Saját vélemény és háttértudás ≠ következtetés",
+      "explanation": "Lehet, hogy egy állítás igaz a valóságban, de ha a szöveg nem támasztja alá, a feladatban rossz válasz. A szövegértési feladat mindig a szövegről szól, nem a világról. Különösen veszélyesek a túláltalánosító válaszok („mindig”, „soha”, „minden”).",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "A szöveg szerint a pásztázó olvasás menetrendnél ésszerű. Hibás következtetés: „A szerző szerint a pásztázó olvasás mindig káros.”",
+          "hu": "A „mindig” túlzás, és ellentmond a szövegnek."
+        }
+      ]
+    },
+    {
+      "title": "Szerzői szándék és hangnem",
+      "explanation": "A szerző hangnemét (lelkes, kritikus, ironikus, tárgyilagos, aggódó) a nyelvi jelekből lehet kiolvasni: értékelő jelzők, idézőjelbe tett szavak, költői kérdések, túlzások, felkiáltások. A szándék (tájékoztatni, meggyőzni, szórakoztatni, figyelmeztetni) a szöveg műfajával is összefügg.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "„A telefon nem kérdezi meg, akarunk-e szórakozni; egyszerűen felkínálja a következő videót.”",
+          "hu": "A megszemélyesítés és a felsorolás kritikus hangot ad: a szerző a figyelmet elrabló technológiát bírálja."
+        }
+      ]
+    },
+    {
+      "title": "A szó jelentése a szövegösszefüggésben",
+      "explanation": "Ha egy szó vagy kifejezés jelentésére kérdeznek, ne a szótári jelentésből indulj ki, hanem abból, mit jelent az adott mondatban. Olvasd el az előtte és utána álló mondatot is; gyakran a kötőszó (de, pedig, vagyis) segít.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "„a légkondicionálók éppen a lakások hűtésekor fűtik tovább az utcát”",
+          "hu": "A „fűtik” itt nem fűtést jelent, hanem azt, hogy melegítik az utcát – a szó a paradox helyzetet hangsúlyozza."
+        }
+      ]
+    },
+    {
+      "title": "Irónia és rejtett jelentés",
+      "explanation": "Ironikus a megfogalmazás, ha a szerző mást ért rajta, mint amit szó szerint mond – gyakran az ellenkezőjét. Jelei: túlzó dicséret, idézőjelbe tett kifejezés, a „látszólag”, „mintha”, „tűnik” szavak. A „Ezek a döntések magánügynek tűnnek, pedig…” típusú mondat azt jelzi, hogy a látszat csal.",
+      "emeltOnly": true,
+      "examples": [
+        {
+          "en": "„Mindezt ingyen – legalábbis látszólag.”",
+          "hu": "A „legalábbis látszólag” ironikus megszorítás: valójában a figyelmünkkel fizetünk."
+        }
+      ]
+    }
+  ],
+  "commonMistakes": [
+    {
+      "wrong": "A szerző szerint a gyerekek nem szeretik a népmeséket, mert régiek.",
+      "right": "A szerző szerint a mesélés ma sem tűnt el, mert a mesék ma is fontos kérdésekre válaszolnak.",
+      "why": "A hibás válasz saját feltételezés, és ellentmond a szövegnek; a következtetést mindig szöveghellyel kell igazolni."
+    },
+    {
+      "wrong": "A „menedéket találtunk” kifejezés szerint a fa alatt el lehet bújni az eső elől.",
+      "right": "A kifejezés a hőség elleni védelemre utal: a fa árnyéka hűs menedék a forróságban.",
+      "why": "A szó jelentését a szövegösszefüggés dönti el; a szöveg a hőségről szól, nem az esőről."
+    },
+    {
+      "wrong": "A szerző tárgyilagosan, véleménynyilvánítás nélkül ír a telefonhasználatról.",
+      "right": "A szerző kritikus a telefonnal szemben: „Valójában a figyelmünkkel fizetünk.”",
+      "why": "Az értékelő mondatok (valójában, legalábbis látszólag) a szerző véleményét mutatják; a hangnem nem semleges."
+    },
+    {
+      "wrong": "„Lehet vitatkozni Bettelheim egyes állításaival” → A szerző elutasítja Bettelheim elméletét.",
+      "right": "A szerző Bettelheim alapgondolatát elfogadja, csak egyes részleteit tartja vitathatónak.",
+      "why": "A megengedő mondat („Lehet vitatkozni…, de…”) árnyal, nem elutasít; a „de” utáni rész a szerző fő véleménye."
+    }
+  ],
+  "examTips": [
+    "Következtetéses kérdésnél zárd ki először azokat a válaszokat, amelyek ellentmondanak a szövegnek, majd azokat, amelyekről a szöveg nem mond semmit – a maradék közül az lesz a jó, amelyet egy mondattal igazolni tudsz.",
+    "Ha a kérdés a szerző véleményére vonatkozik, keresd a „szerintem”, „úgy gondolom”, „valójában”, „pedig”, „de” típusú jelzéseket: ezek után áll a szerző saját álláspontja.",
+    "A műértelmező fogalmazásban is ezt a készséget használod: minden értelmezést egy idézettel támassz alá."
+  ],
+  "practice": [
+    {
+      "id": "1",
+      "kind": "choice",
+      "prompt": "Szöveg: „Sam szobáját a nagymamája kapta meg, ő pedig a konyha melletti kis helyiségbe költözött, ahol eddig apja íróasztala állt.” Melyik következtetés helyes?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Sam régi szobájában most a nagymama lakik."
+        },
+        {
+          "key": "B",
+          "text": "Sam apja új irodát bérelt."
+        },
+        {
+          "key": "C",
+          "text": "Sam örült, hogy a konyha mellé költözhetett."
+        },
+        {
+          "key": "D",
+          "text": "A nagymama a kis helyiségben lakik."
+        }
+      ],
+      "answer": "A",
+      "category": "kovetkeztetes",
+      "explanation": "Helyes: A. A szöveg szerint a szobát a nagymama „kapta meg”, Sam pedig máshová költözött – ebből következik, hogy a régi szobában a nagymama lakik.",
+      "wrongOptions": {
+        "B": "Az apa irodájáról csak annyit tudunk, hogy ott állt az íróasztala; új irodáról nincs szó.",
+        "C": "Sam érzéseiről a mondat nem árul el semmit – ez saját feltételezés.",
+        "D": "Fordítva: a kis helyiségbe Sam költözött."
+      }
+    },
+    {
+      "id": "2",
+      "kind": "choice",
+      "prompt": "Szöveg: „Mindebből azonban hiba volna arra következtetni, hogy a digitális olvasás eleve rosszabb.” Mit fejez ki a szerző?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Óv az egyoldalú következtetéstől, és jelzi, hogy a digitális olvasásnak előnyei is vannak."
+        },
+        {
+          "key": "B",
+          "text": "Azt állítja, hogy a digitális olvasás jobb a papírnál."
+        },
+        {
+          "key": "C",
+          "text": "Azt állítja, hogy a papír semmiben sem jobb."
+        },
+        {
+          "key": "D",
+          "text": "Visszavonja a korábbi kutatási eredményeket."
+        }
+      ],
+      "answer": "A",
+      "category": "kovetkeztetes",
+      "explanation": "Helyes: A. Az „azonban” fordulatot jelez, a „hiba volna arra következtetni” pedig az egyoldalú ítélet ellen figyelmeztet; a folytatásban a szerző a képernyő előnyeit sorolja.",
+      "wrongOptions": {
+        "B": "A szerző nem mondja, hogy jobb, csak azt, hogy nem „eleve rosszabb”.",
+        "C": "Túlzás: a szerző korábban a papír előnyeit is elismerte.",
+        "D": "A kutatási eredményeket nem vonja vissza, csak árnyalja a belőlük levonható következtetést."
+      }
+    },
+    {
+      "id": "3",
+      "kind": "choice",
+      "prompt": "Szöveg: „Mindezt ingyen – legalábbis látszólag. Valójában a figyelmünkkel fizetünk.” Milyen a szerző hangneme?",
+      "options": [
+        {
+          "key": "A",
+          "text": "ironikus, kritikus"
+        },
+        {
+          "key": "B",
+          "text": "lelkes, dicsérő"
+        },
+        {
+          "key": "C",
+          "text": "közömbös, semleges"
+        },
+        {
+          "key": "D",
+          "text": "félelmet keltő, pánikoló"
+        }
+      ],
+      "answer": "A",
+      "category": "kovetkeztetes",
+      "explanation": "Helyes: A. A „legalábbis látszólag” ironikus megszorítás, a „Valójában” pedig leleplezi a látszatot: a szerző bírálja az „ingyenes” digitális szórakozást.",
+      "wrongOptions": {
+        "B": "A szerző nem dicséri, hanem leleplezi az ingyenesség látszatát.",
+        "C": "Az értékelő szavak (látszólag, valójában) állásfoglalást mutatnak, nem semlegességet.",
+        "D": "A hangnem fanyar és higgadt, nem riogató."
+      }
+    },
+    {
+      "id": "4",
+      "kind": "choice",
+      "prompt": "Szöveg: „A tapasztalat azt mutatja, hogy néhány perc tanácstalanság után a gyerekek többsége kitalál valamit.” Melyik állítás következik a mondatból?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Az unatkozó gyerekek többsége rövid idő után magától is talál elfoglaltságot."
+        },
+        {
+          "key": "B",
+          "text": "Minden gyerek azonnal játszani kezd."
+        },
+        {
+          "key": "C",
+          "text": "A gyerekeknek mindig felnőtt segítség kell a játékhoz."
+        },
+        {
+          "key": "D",
+          "text": "A gyerekek nem szoktak unatkozni."
+        }
+      ],
+      "answer": "A",
+      "category": "kovetkeztetes",
+      "explanation": "Helyes: A. A „néhány perc tanácstalanság után” és a „többsége kitalál valamit” együtt pontosan ezt mondja – a „többsége” szó miatt nem mindenkire igaz.",
+      "wrongOptions": {
+        "B": "A „néhány perc tanácstalanság” szerint nem azonnal, és a „többsége” szerint nem minden gyerek.",
+        "C": "Épp ellenkezőleg: a gyerekek magukban találnak elfoglaltságot.",
+        "D": "A mondat éppen az unatkozó gyerekről szól."
+      }
+    },
+    {
+      "id": "5",
+      "kind": "text",
+      "prompt": "Szöveg: „Ezek a döntések magánügynek tűnnek, pedig együtt döntik el, hogy egy nyelv száz év múlva is szól-e majd.” Melyik kötőszó jelzi a mondatban, hogy a látszat és a valóság különbözik? Írja ki!",
+      "answer": [
+        "pedig"
+      ],
+      "category": "kovetkeztetes",
+      "explanation": "Helyes válasz: pedig. Az ellentétes kötőszó a „tűnnek” által jelzett látszattal szembeállítja a valóságot: a döntéseknek közösségi következményük van."
+    },
+    {
+      "id": "6",
+      "kind": "choice",
+      "prompt": "Szöveg: „Az ismétlődés nem a képzelet szegénysége. Éppen ellenkezőleg: a jól ismert szerkezet biztonságot ad.” Mit állít a szerző?",
+      "options": [
+        {
+          "key": "A",
+          "text": "A mesék visszatérő szerkezete értéket jelent, mert biztonságot nyújt."
+        },
+        {
+          "key": "B",
+          "text": "A mesék ismétlődései unalmassá teszik őket."
+        },
+        {
+          "key": "C",
+          "text": "A mesemondók képzelete szegényes volt."
+        },
+        {
+          "key": "D",
+          "text": "A meséket nem szabad ismételni."
+        }
+      ],
+      "answer": "A",
+      "category": "kovetkeztetes",
+      "explanation": "Helyes: A. Az „Éppen ellenkezőleg” fordulat a cáfolt nézet (a képzelet szegénysége) után a szerző saját, pozitív értékelését vezeti be.",
+      "wrongOptions": {
+        "B": "Ezt a nézetet a szerző éppen cáfolja.",
+        "C": "A szerző tagadja, hogy az ismétlődés a képzelet szegénysége volna.",
+        "D": "Ilyen tiltásról nincs szó."
+      }
+    }
+  ],
+  "relatedCategories": [
+    "lenyegkiemeles",
+    "szovegszerkezet"
+  ]
+}
