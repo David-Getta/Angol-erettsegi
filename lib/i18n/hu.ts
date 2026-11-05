@@ -19,6 +19,7 @@ export const t = {
     writing: "Íráskészség",
     speaking: "Szóbeli",
     vocabulary: "Szókincs",
+    grammar: "Szabálytár",
   },
 
   nav: {

@@ -28,7 +28,7 @@ function examinerTurns(task: SpeakingTask): string[] {
 export function SpeakingPractice({ task, examinerPrompt, ttsRate }: { task: SpeakingTask; examinerPrompt: string; ttsRate: number }) {
   const [tab, setTab] = useState<"self" | "live">("self");
   return (
-    <div className="grid gap-5 lg:grid-cols-[minmax(0,1fr)_minmax(0,1.2fr)]">
+    <div className="grid grid-cols-1 gap-5 lg:grid-cols-[minmax(0,1fr)_minmax(0,1.2fr)]">
       <TaskCard task={task} />
       <div className="space-y-4">
         <div className="flex gap-2">

@@ -81,8 +81,8 @@ export default async function LessonPage({ params }: Props) {
         }
       />
 
-      <div className="grid gap-5 lg:grid-cols-[minmax(0,1fr)_320px]">
-        <div className="space-y-5">
+      <div className="grid grid-cols-1 gap-5 lg:grid-cols-[minmax(0,1fr)_320px]">
+        <div className="min-w-0 space-y-5">
           <Card title={t.lessons.rules}>
             <div className="space-y-4" data-testid="lesson-rules">
               {baseRules.map((r, i) => (
@@ -134,7 +134,7 @@ export default async function LessonPage({ params }: Props) {
           )}
         </div>
 
-        <aside className="space-y-5">
+        <aside className="min-w-0 space-y-5">
           {lesson.examTips.length > 0 && (
             <Card title={t.lessons.examTips}>
               <ul className="list-disc space-y-1.5 pl-5 text-sm">

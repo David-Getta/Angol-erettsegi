@@ -19,7 +19,7 @@ export function SampleAnswer({ task, open = false }: { task: SpeakingTask; open?
         {t.sample.title} <span className="text-sm font-normal text-muted">· {t.sample.words(words)}</span>
       </summary>
       <p className="mt-2 text-sm text-muted">{t.sample.hint}</p>
-      <div className="mt-3 grid gap-5 lg:grid-cols-[minmax(0,1fr)_minmax(0,0.7fr)]">
+      <div className="mt-3 grid grid-cols-1 gap-5 lg:grid-cols-[minmax(0,1fr)_minmax(0,0.7fr)]">
         <div className="space-y-2">
           {sa.turns.map((turn, i) =>
             turn.speaker === "examiner" ? (

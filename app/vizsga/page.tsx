@@ -124,8 +124,8 @@ export default function ExamInfoPage() {
   return (
     <div>
       <PageHeader title={t.examInfo.title} intro={t.examInfo.intro} />
-      <div className="grid gap-5 lg:grid-cols-[minmax(0,1fr)_320px]">
-        <div>
+      <div className="grid grid-cols-1 gap-5 lg:grid-cols-[minmax(0,1fr)_320px]">
+        <div className="min-w-0">
           <h2 className="mb-3 flex items-center gap-2 text-lg font-semibold">
             {levelStructure(level).name} <Badge tone="accent">{levelStructure(level).cefr}</Badge>
           </h2>
@@ -139,7 +139,7 @@ export default function ExamInfoPage() {
             </div>
           </details>
         </div>
-        <aside className="space-y-5">
+        <aside className="min-w-0 space-y-5">
           <Card title={t.examInfo.grades}>
             {(["kozep", "emelt"] as const).map((lv) => (
               <div key={lv} className="mb-3 last:mb-0">

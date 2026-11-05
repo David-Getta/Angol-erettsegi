@@ -104,7 +104,7 @@ export function WritingEditor({
   };
 
   return (
-    <div className="grid gap-5 lg:grid-cols-[minmax(0,1fr)_minmax(0,1.3fr)]">
+    <div className="grid grid-cols-1 gap-5 lg:grid-cols-[minmax(0,1fr)_minmax(0,1.3fr)]">
       <div className="space-y-4">
         {!hideModeSwitch && (
           <div className="flex flex-wrap items-center gap-2 text-sm">
