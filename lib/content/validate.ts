@@ -257,7 +257,8 @@ function checkObjective(ctx: Ctx, t: ObjectiveTask) {
   const lengths = examConfig.structure().levels[t.level].textLength;
   const range = lengths[t.section];
   if (range) {
-    const wc = wordCount(source);
+    // tasks without a passage (e.g. error correction) carry their text in the item prompts
+    const wc = wordCount(source || all.map((i) => i.prompt ?? "").join(" "));
     if (wc < range.min * 0.6) warn(ctx, `A szöveg rövid a szinthez (${wc} szó, javasolt ${range.min}–${range.max}).`);
     if (wc > range.max * 1.4) warn(ctx, `A szöveg hosszú a szinthez (${wc} szó, javasolt ${range.min}–${range.max}).`);
   }
