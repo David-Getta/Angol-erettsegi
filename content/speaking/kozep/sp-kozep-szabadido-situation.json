@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 1,
+  "id": "sp-kozep-szabadido-situation",
+  "revision": 1,
+  "level": "kozep",
+  "source": "generated",
+  "topic": "szabadido",
+  "title": "Buying tickets for a musical",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "speaking",
+  "type": "situation",
+  "partNumber": 2,
+  "instructionsHu": "Egy barátoddal Londonban vagy, és ma estére szeretnétek jegyet venni egy musicalre. Beszélj a jegypénztárossal, és intézd el a jegyvásárlást. Minden pontot teljesíts.",
+  "situation": {
+    "context": "You are in London with a friend for a few days. You would like to see a musical tonight, so you go to the theatre box office in the afternoon. You can spend about £40 per person.",
+    "candidateRole": "You are a tourist who wants to buy two tickets.",
+    "examinerRole": "The examiner is the assistant at the box office.",
+    "goals": [
+      "Ask if there are any tickets left for tonight's show.",
+      "Ask about the prices and whether there are cheaper tickets for students.",
+      "Choose your seats and say why.",
+      "Find out when the show starts and finishes.",
+      "Pay for the tickets."
+    ],
+    "examinerOpening": "Good afternoon. Welcome to the Riverside Theatre. How can I help?"
+  },
+  "followUpQuestions": [
+    "Yes, we still have some seats. They're forty-five pounds downstairs and twenty-eight pounds upstairs in the balcony. Which would you like?",
+    "Are you students? If you have a student card, you get ten per cent off.",
+    "Here you are. How would you like to pay, by card or in cash?"
+  ],
+  "usefulPhrases": [
+    {
+      "en": "Are there any tickets left for tonight?",
+      "hu": "Van még jegy a ma esti előadásra?"
+    },
+    {
+      "en": "How much are the tickets?",
+      "hu": "Mennyibe kerülnek a jegyek?"
+    },
+    {
+      "en": "Is there a student discount?",
+      "hu": "Van diákkedvezmény?"
+    },
+    {
+      "en": "We'd like two seats next to each other.",
+      "hu": "Két egymás melletti helyet szeretnénk."
+    },
+    {
+      "en": "What time does the show start?",
+      "hu": "Hánykor kezdődik az előadás?"
+    },
+    {
+      "en": "When does it finish?",
+      "hu": "Mikor ér véget?"
+    },
+    {
+      "en": "Can I pay by card?",
+      "hu": "Fizethetek kártyával?"
+    }
+  ],
+  "speakingSeconds": 240,
+  "prepSeconds": 30
+}

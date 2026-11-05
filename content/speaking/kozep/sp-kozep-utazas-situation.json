@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 1,
+  "id": "sp-kozep-utazas-situation",
+  "revision": 1,
+  "level": "kozep",
+  "source": "generated",
+  "topic": "utazas",
+  "title": "A cancelled train",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "speaking",
+  "type": "situation",
+  "partNumber": 2,
+  "instructionsHu": "Angliában utazol, és törölték a vonatodat. Menj oda az információs pulthoz, mondd el a problémát, és tudd meg, hogyan juthatsz el a célodhoz. Minden pontot teljesíts.",
+  "situation": {
+    "context": "You are travelling alone from Manchester to London, where your aunt is going to meet you at the station. At Manchester Piccadilly station you see on the board that your train has been cancelled. You go to the information desk.",
+    "candidateRole": "You are a passenger whose train has been cancelled.",
+    "examinerRole": "The examiner is the assistant at the information desk.",
+    "goals": [
+      "Explain your problem.",
+      "Ask when the next train to London leaves and from which platform.",
+      "Find out if your ticket is valid on that train or if you have to pay extra.",
+      "Ask where you can get something to eat while you are waiting."
+    ],
+    "examinerOpening": "Hello. Can I help you?"
+  },
+  "followUpQuestions": [
+    "I'm sorry about that. Can I see your ticket, please?",
+    "The next one leaves at a quarter to four from platform six, but it's a slower train. It arrives in London at half past six. Is that all right for you?",
+    "Is there anything else you need to know?"
+  ],
+  "usefulPhrases": [
+    {
+      "en": "My train to London has been cancelled.",
+      "hu": "Törölték a londoni vonatomat."
+    },
+    {
+      "en": "When does the next train leave?",
+      "hu": "Mikor indul a következő vonat?"
+    },
+    {
+      "en": "Which platform does it leave from?",
+      "hu": "Melyik vágányról indul?"
+    },
+    {
+      "en": "Is my ticket still valid?",
+      "hu": "Érvényes még a jegyem?"
+    },
+    {
+      "en": "Do I have to pay extra?",
+      "hu": "Kell felárat fizetnem?"
+    },
+    {
+      "en": "Is there a café in the station?",
+      "hu": "Van kávézó az állomáson?"
+    },
+    {
+      "en": "Someone is waiting for me in London.",
+      "hu": "Valaki vár rám Londonban."
+    }
+  ],
+  "speakingSeconds": 240,
+  "prepSeconds": 30
+}

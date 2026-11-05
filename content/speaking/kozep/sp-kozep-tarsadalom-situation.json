@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 1,
+  "id": "sp-kozep-tarsadalom-situation",
+  "revision": 1,
+  "level": "kozep",
+  "source": "generated",
+  "topic": "tarsadalom",
+  "title": "Returning a jacket",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "speaking",
+  "type": "situation",
+  "partNumber": 2,
+  "instructionsHu": "Egy londoni ruhaboltban vettél egy dzsekit, de később kiderült, hogy baj van vele. Vidd vissza, magyarázd el a problémát, és intézd el, hogy kicseréljék, vagy visszakapd a pénzed. Minden pontot teljesíts.",
+  "situation": {
+    "context": "Yesterday you bought a jacket in a clothes shop in London. When you got back to your hotel, you noticed that the zip was broken and the jacket was a bit too small for you. Today you are taking it back to the shop.",
+    "candidateRole": "You are a customer who wants to return the jacket.",
+    "examinerRole": "The examiner is the shop assistant.",
+    "goals": [
+      "Explain when you bought the jacket and what is wrong with it.",
+      "Say what you would prefer: a bigger size or your money back.",
+      "Ask whether they have the jacket in a different colour.",
+      "Decide what to do and thank the assistant."
+    ],
+    "examinerOpening": "Good morning. Can I help you?"
+  },
+  "followUpQuestions": [
+    "Oh, I'm sorry to hear that. Have you got the receipt with you?",
+    "Would you like to exchange it, or would you prefer a refund?",
+    "We've only got the bigger size in green, I'm afraid. Would that be all right?"
+  ],
+  "usefulPhrases": [
+    {
+      "en": "I bought this jacket here yesterday.",
+      "hu": "Tegnap vettem itt ezt a dzsekit."
+    },
+    {
+      "en": "The zip is broken.",
+      "hu": "Elromlott a cipzár."
+    },
+    {
+      "en": "It's a bit too small for me.",
+      "hu": "Egy kicsit kicsi nekem."
+    },
+    {
+      "en": "Could I exchange it for a bigger size?",
+      "hu": "Kicserélhetném egy nagyobb méretre?"
+    },
+    {
+      "en": "I'd like a refund, please.",
+      "hu": "Szeretném visszakapni a pénzem."
+    },
+    {
+      "en": "Here's the receipt.",
+      "hu": "Itt a blokk."
+    },
+    {
+      "en": "Have you got it in black?",
+      "hu": "Van feketében is?"
+    }
+  ],
+  "speakingSeconds": 240,
+  "prepSeconds": 30
+}
