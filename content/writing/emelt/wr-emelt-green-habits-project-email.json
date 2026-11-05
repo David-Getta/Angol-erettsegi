@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "id": "wr-emelt-green-habits-project-email",
-  "revision": 1,
+  "revision": 2,
   "level": "emelt",
   "source": "generated",
   "topic": "kornyezet",
@@ -33,5 +33,19 @@
     { "en": "Hope this helps! Good luck with the project.", "hu": "Remélem, segít! Sok sikert a projekthez!" },
     { "en": "Best wishes,", "hu": "Üdvözlettel:" }
   ],
-  "checklistExtra": []
+  "checklistExtra": [],
+  "modelAnswer": {
+    "text": "Hi Chloe,\n\nHappy to help with your project!\n\nAt home we sort our rubbish and recycle everything we can, and we've started taking cloth bags to the shops to cut down on plastic. My dad cycles to work whenever the weather allows, and we try not to waste food.\n\nThe biggest problem around here is air pollution, especially in winter. My town, Miskolc, lies in a valley, so the smoke from old wood-burning stoves and the fumes from heavy traffic simply can't escape.\n\nTo be fair, the council has already introduced some electric buses. However, as far as I'm concerned, it isn't doing nearly enough. Many families still burn rubbish because they can't afford modern heating, and the council offers hardly any financial support to help them switch.\n\nHope this helps! Good luck with the project.\n\nBest wishes,\nDóra",
+    "pointsCovered": [
+      { "id": "p1", "quote": "At home we sort our rubbish and recycle everything we can, and we've started taking cloth bags to the shops to cut down on plastic." },
+      { "id": "p2", "quote": "My town, Miskolc, lies in a valley, so the smoke from old wood-burning stoves and the fumes from heavy traffic simply can't escape." },
+      { "id": "p3", "quote": "However, as far as I'm concerned, it isn't doing nearly enough." }
+    ],
+    "notes": [
+      "Feladat teljesítése: Chloe mindhárom kérdésére válaszol – a család szokásai több példával, a fő probléma (légszennyezés) és annak okai, végül indokolt vélemény az önkormányzatról, egy elismert lépéssel (elektromos buszok) és két kritikával.",
+      "Hangnem: baráti e-mail (Hi Chloe, Happy to help, Hope this helps!, Best wishes) összevont alakokkal; segítőkész és természetes, ahogy egy barátnak írnánk.",
+      "Szövegalkotás: a bekezdések sorrendje követi Chloe kérdéseit, a To be fair … However, … pár árnyalt véleményt ad, a so és a because pedig világos ok-okozati kapcsolatot teremt.",
+      "Szókincs: érdemes megtanulni: cut down on plastic, wood-burning stoves, as far as I'm concerned, hardly any financial support."
+    ]
+  }
 }

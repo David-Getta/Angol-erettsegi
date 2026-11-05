@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "id": "wr-emelt-green-area-development-email",
-  "revision": 1,
+  "revision": 2,
   "level": "emelt",
   "source": "generated",
   "topic": "kornyezet",
@@ -37,5 +37,20 @@
   ],
   "checklistExtra": [
     "Végig formális maradt a hangnem (összevont alakok és szleng nélkül)?"
-  ]
+  ],
+  "modelAnswer": {
+    "text": "Dear Sir or Madam,\n\nI am writing with regard to the proposed shopping centre in Willow Park. Although I am only staying here for a school year, I would like to express my concerns about the plan.\n\nWillow Park is far more than a green space; it is the heart of the town. Elderly residents walk there every morning, families have picnics at weekends, and for teenagers like me it is one of the few places where we can meet friends without spending money.\n\nAdmittedly, the shopping centre would have certain benefits. It would undoubtedly create jobs and attract visitors, which could bring extra income to the town. Residents would also have a wider choice of shops close to home.\n\nHowever, the environmental cost would be enormous. Dozens of old trees would have to be cut down, and a 500-space car park would lead to heavier traffic and more air pollution in an already busy area. Furthermore, small shops on the high street might not survive the competition from large chains.\n\nA better option might be to build the shopping centre on the empty factory site near the railway station. As this area is easy to reach by public transport, fewer people would need to drive, and the town would keep its only large park.\n\nI would strongly urge the Council to reconsider the plan and take residents' views into account.\n\nYours faithfully,\nBence Tóth",
+    "pointsCovered": [
+      { "id": "p1", "quote": "Elderly residents walk there every morning, families have picnics at weekends, and for teenagers like me it is one of the few places where we can meet friends without spending money." },
+      { "id": "p2", "quote": "It would undoubtedly create jobs and attract visitors, which could bring extra income to the town." },
+      { "id": "p3", "quote": "Dozens of old trees would have to be cut down, and a 500-space car park would lead to heavier traffic and more air pollution in an already busy area." },
+      { "id": "p4", "quote": "As this area is easy to reach by public transport, fewer people would need to drive, and the town would keep its only large park." }
+    ],
+    "notes": [
+      "Feladat teljesítése: a levél a hirdetményre reagál, és mind a négy szempontot kifejti – a park szerepe több korosztálynak (a fiatalokat is beleértve), két előny, környezeti és egyéb gondok, végül konkrét alternatíva (az üres gyár telke) indoklással.",
+      "Szövegalkotás és hangnem: hivatalos e-mail Dear Sir or Madam / Yours faithfully kerettel, összevont alakok nélkül; az ellenérv elismerése (Admittedly, …) és a However, Furthermore, As kötőszók meggyőző, kiegyensúlyozott érvelést adnak.",
+      "Szókincs: a helyzethez illő kifejezések – with regard to the proposed …, express my concerns, a green space, I would strongly urge the Council to reconsider the plan; mindegyik jól használható más panasz- és véleménylevélben is.",
+      "Nyelvhelyesség: a would feltételes szerkezet végig következetes (it would create, would have to be cut down, fewer people would need to drive), ami pontosan kifejezi, hogy egy tervről van szó."
+    ]
+  }
 }

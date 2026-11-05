@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "id": "wr-emelt-prague-trip-complaint",
-  "revision": 1,
+  "revision": 2,
   "level": "emelt",
   "source": "generated",
   "topic": "utazas",
@@ -79,5 +79,19 @@
   ],
   "checklistExtra": [
     "Határozott, de udvarias maradt a hangnem (nem sértegettem a céget)?"
-  ]
+  ],
+  "modelAnswer": {
+    "text": "Dear Sir or Madam,\n\nI am writing to complain about the weekend trip to Prague that I took with your company last month.\n\nAccording to your advertisement, we would travel on a comfortable, air-conditioned coach, stay five minutes' walk from the Old Town and have a guided tour in English. However, the coach's air conditioning did not work, and the hotel turned out to be on the outskirts, forty minutes away by tram. To make matters worse, our guide spoke only German.\n\nAs a result, we arrived exhausted after a hot journey and wasted hours travelling every day. Since I could not understand the guide, I learnt very little about the city's history.\n\nI believe I am entitled to a partial refund, and I expect a full explanation and an apology.\n\nI look forward to your prompt reply.\n\nYours faithfully,\nLevente Varga",
+    "pointsCovered": [
+      { "id": "p1", "quote": "However, the coach's air conditioning did not work, and the hotel turned out to be on the outskirts, forty minutes away by tram." },
+      { "id": "p2", "quote": "As a result, we arrived exhausted after a hot journey and wasted hours travelling every day." },
+      { "id": "p3", "quote": "I believe I am entitled to a partial refund, and I expect a full explanation and an apology." }
+    ],
+    "notes": [
+      "Feladat teljesítése: a levél pontról pontra veti össze a hirdetés ígéreteit (légkondicionált busz, belvárosi szálloda, angol nyelvű vezetés) a valósággal, megmutatja a következményeket, és világosan megfogalmazza az elvárást.",
+      "Hangnem: határozott, de udvarias panaszlevél – Dear Sir or Madam / Yours faithfully, összevont alakok és sértő megfogalmazás nélkül; a követelés tárgyszerű (I believe I am entitled to …).",
+      "Szövegalkotás: logikus felépítés (cél – ígéret és valóság – következmény – elvárás), a panaszlevél jellegzetes kapcsolóelemeivel: According to your advertisement, However, To make matters worse, As a result.",
+      "Szókincs: érdemes megtanulni: turned out to be, on the outskirts, I am entitled to a partial refund, I look forward to your prompt reply."
+    ]
+  }
 }

@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "id": "wr-emelt-escape-room-blog",
-  "revision": 1,
+  "revision": 2,
   "level": "emelt",
   "source": "generated",
   "topic": "szabadido",
@@ -32,5 +32,19 @@
     { "en": "My top tip is to …", "hu": "A legfontosabb tanácsom, hogy …" },
     { "en": "Have you ever tried one? Let me know in the comments!", "hu": "Próbáltatok már ilyet? Írjátok meg kommentben!" }
   ],
-  "checklistExtra": []
+  "checklistExtra": [],
+  "modelAnswer": {
+    "text": "Locked in a Pharaoh's Tomb!\n\nI'd been wanting to try an escape room for ages, so last Saturday my friends and I booked one in Szeged. The room looked like an ancient Egyptian tomb, and in the story we were archaeologists trapped inside by a curse, with sixty minutes to find the key.\n\nThe most challenging part was a code written in hieroglyphs. For fifteen minutes we got nowhere, and time was running out. In the end, we split up: two of us searched the walls for symbols while the others tried combinations, and we cracked it with four minutes to spare!\n\nI'd definitely recommend it – it's a great way to test your teamwork. My top tips: share every clue out loud and don't be afraid to ask for a hint. Have you ever tried one? Let me know in the comments!",
+    "pointsCovered": [
+      { "id": "p1", "quote": "The room looked like an ancient Egyptian tomb, and in the story we were archaeologists trapped inside by a curse, with sixty minutes to find the key." },
+      { "id": "p2", "quote": "In the end, we split up: two of us searched the walls for symbols while the others tried combinations, and we cracked it with four minutes to spare!" },
+      { "id": "p3", "quote": "My top tips: share every clue out loud and don't be afraid to ask for a hint." }
+    ],
+    "notes": [
+      "Feladat teljesítése: a három szempont három bekezdésben jelenik meg – a szoba és a történet, a legnehezebb rész (a hieroglifás kód) és a csapat megoldása, végül az ajánlás két konkrét tippel.",
+      "Hangnem: baráti blogstílus összevont alakokkal, felkiáltással és az olvasókhoz intézett kérdéssel a végén (Have you ever tried one? Let me know in the comments!), ez pontosan illik egy szabadidős bloghoz.",
+      "Szövegalkotás: időrendi felépítés, a cím felkelti az érdeklődést, az időhatározók és kötőszavak (For fifteen minutes, In the end, while) vezetik az olvasót.",
+      "Szókincs és nyelvhelyesség: természetes kifejezések, pl. I'd been wanting to … for ages (past perfect continuous), time was running out, we cracked it with four minutes to spare – mindhármat érdemes megtanulni."
+    ]
+  }
 }

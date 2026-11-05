@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "id": "wr-emelt-gap-year-forum",
-  "revision": 1,
+  "revision": 2,
   "level": "emelt",
   "source": "generated",
   "topic": "iskola",
@@ -30,5 +30,20 @@
     { "en": "On the one hand … on the other hand …", "hu": "egyrészt … másrészt …" },
     { "en": "All things considered, …", "hu": "mindent összevetve …" }
   ],
-  "checklistExtra": []
+  "checklistExtra": [],
+  "modelAnswer": {
+    "text": "In Hungary, taking a gap year is still quite unusual. Most students go straight to university after their final exams, partly because their parents expect them to and partly because they are afraid of falling behind their friends. Those who do not continue their studies usually start working immediately.\n\nNevertheless, I believe a well-planned gap year can offer a lot. First of all, it gives young people time to find out what they really want to study, instead of choosing a course just because it sounds safe. Working for a few months or volunteering abroad also helps you gain work experience, improve your language skills and broaden your horizons. Many people come back more mature and motivated than before.\n\nOn the other hand, a gap year is not without risks. Without careful planning, it can easily turn into twelve months of sleeping late and scrolling through social media. Some people lose the habit of studying and find it hard to get back into a routine. Travelling can also be expensive, so not every family can afford it.\n\nAs for me, I would take a gap year, but only with a clear plan. I would like to spend six months working in a café in Ireland to improve my English before starting my economics degree.\n\nAll things considered, a gap year is only a waste of time if you waste it.",
+    "pointsCovered": [
+      { "id": "p1", "quote": "Most students go straight to university after their final exams, partly because their parents expect them to and partly because they are afraid of falling behind their friends." },
+      { "id": "p2", "quote": "Working for a few months or volunteering abroad also helps you gain work experience, improve your language skills and broaden your horizons." },
+      { "id": "p3", "quote": "Without careful planning, it can easily turn into twelve months of sleeping late and scrolling through social media." },
+      { "id": "p4", "quote": "As for me, I would take a gap year, but only with a clear plan." }
+    ],
+    "notes": [
+      "Feladat teljesítése: mind a négy szempont érdemben szerepel – a magyar helyzet indoklással, két előny, három kockázat, és a saját döntés konkrét tervvel (hat hónap munka egy írországi kávézóban).",
+      "Szövegalkotás: kiegyensúlyozott érvelés (előnyök, majd On the other hand … hátrányok), a bekezdések elején jól látható kapcsolóelemek: Nevertheless, First of all, As for me, All things considered.",
+      "Hangnem: félhivatalos, összevont alakok nélküli fórumstílus, amely mégis személyes; a szellemes zárómondat (a gap year is only a waste of time if you waste it) emlékezetessé teszi a véleményt.",
+      "Szókincs és nyelvhelyesség: érdemes megtanulni: partly because … and partly because …, broaden your horizons, lose the habit of studying, not without risks."
+    ]
+  }
 }

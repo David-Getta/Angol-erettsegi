@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "id": "wr-emelt-ai-homework-forum",
-  "revision": 1,
+  "revision": 2,
   "level": "emelt",
   "source": "generated",
   "topic": "tudomany",
@@ -35,5 +35,20 @@
   ],
   "checklistExtra": [
     "Kifejtettem az előnyöket és a veszélyeket is, mielőtt állást foglaltam?"
-  ]
+  ],
+  "modelAnswer": {
+    "text": "In my opinion, AI is neither pure cheating nor a miracle – it all depends on how we use it.\n\nAt my school in Debrecen, almost everyone I know uses chatbots in some way. Some of my classmates ask them to explain maths problems or check the grammar of their essays, while others simply copy whole answers without even reading them.\n\nUsed wisely, these tools can be extremely helpful. A chatbot never gets tired of your questions, so it can explain a difficult concept again and again until you understand it. I often ask one to quiz me before a history test, which is far more effective than rereading my notes.\n\nHowever, the danger is that students stop thinking for themselves. If an AI writes your essay, you will never learn how to organise your ideas, and you will struggle in exams where no technology is allowed. What is more, chatbots sometimes give wrong information with complete confidence, so trusting them blindly can be risky.\n\nThat is why I believe schools need clear and fair rules. Students should be allowed to use AI for practice and explanations, but they should always say when and how they used it. Teachers could also require students to write important assignments in class or explain their work orally.\n\nTo sum up, AI is a smart learning tool as long as we stay in charge of our own thinking.",
+    "pointsCovered": [
+      { "id": "p1", "quote": "Some of my classmates ask them to explain maths problems or check the grammar of their essays, while others simply copy whole answers without even reading them." },
+      { "id": "p2", "quote": "A chatbot never gets tired of your questions, so it can explain a difficult concept again and again until you understand it." },
+      { "id": "p3", "quote": "If an AI writes your essay, you will never learn how to organise your ideas, and you will struggle in exams where no technology is allowed." },
+      { "id": "p4", "quote": "Students should be allowed to use AI for practice and explanations, but they should always say when and how they used it." }
+    ],
+    "notes": [
+      "Feladat teljesítése: mind a négy szempont külön bekezdést kap konkrét példával (matekmagyarázat, kikérdezés a történelemdolgozat előtt, gép nélküli vizsga), a nyitó és a záró mondat pedig egyértelműen állást foglal a kérdésben.",
+      "Szövegalkotás: világos érvelő felépítés (vélemény – tapasztalat – előnyök – veszélyek – szabályok – összegzés), a bekezdéseket változatos kötőszavak kapcsolják össze: However, What is more, That is why, To sum up.",
+      "Hangnem: félhivatalos fórumbejegyzés összevont alakok nélkül, de személyes példákkal – ez illik egy nemzetközi diákportálhoz.",
+      "Szókincs és nyelvhelyesség: B2-es szerkezetek, pl. a melléknévi igenévvel kezdett mondat (Used wisely, …), a neither … nor és a feltételes mondat (If an AI writes your essay, you will never learn …). Érdemes megtanulni: stop thinking for themselves, trust them blindly, stay in charge of our own thinking."
+    ]
+  }
 }

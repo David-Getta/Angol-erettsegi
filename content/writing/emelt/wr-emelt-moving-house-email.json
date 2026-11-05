@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "id": "wr-emelt-moving-house-email",
-  "revision": 1,
+  "revision": 2,
   "level": "emelt",
   "source": "generated",
   "topic": "szemelyes",
@@ -79,5 +79,19 @@
   ],
   "checklistExtra": [
     "Az összehasonlításnál használtam középfokot és ellentétes kötőszavakat (whereas, while, compared to)?"
-  ]
+  ],
+  "modelAnswer": {
+    "text": "Hi Liam,\n\nSorry I didn't tell you earlier – it all happened so fast! My parents had been thinking about moving for ages because they were tired of the city noise, so when Dad got a job in Gödöllő, they bought a house in a nearby village.\n\nCompared to the city, the village is much quieter and the air is far cleaner. Whereas I used to go to the cinema with friends after school, now I mostly go cycling. The downside is that it takes me an hour to get to school.\n\nAs for sharing a room with my little brother, at first we got on each other's nerves, especially when he played games late at night. On the bright side, we've become much closer – we even built a treehouse together last weekend!\n\nHow are things with you?\n\nAll the best,\nMáté",
+    "pointsCovered": [
+      { "id": "p1", "quote": "My parents had been thinking about moving for ages because they were tired of the city noise, so when Dad got a job in Gödöllő, they bought a house in a nearby village." },
+      { "id": "p2", "quote": "Whereas I used to go to the cinema with friends after school, now I mostly go cycling." },
+      { "id": "p3", "quote": "On the bright side, we've become much closer – we even built a treehouse together last weekend!" }
+    ],
+    "notes": [
+      "Feladat teljesítése: Liam mindhárom kérdésére érdemi válasz érkezik – a költözés két oka, összehasonlítás a városi élettel (előnyök és egy hátrány), végül a közös szoba hatása a testvérkapcsolatra, kezdeti nehézséggel és pozitív fordulattal.",
+      "Hangnem: baráti e-mail – bocsánatkérés a kezdetén (Sorry I didn't tell you earlier), összevont alakok, visszakérdezés és All the best a végén; pontosan reagál Liam szemrehányására.",
+      "Szövegalkotás: az összehasonlítást középfok és ellentétes kötőszavak teszik világossá (Compared to the city, much quieter, far cleaner, Whereas …, The downside is that …, On the bright side, …).",
+      "Nyelvhelyesség és szókincs: a past perfect continuous (had been thinking about moving for ages) és a used to (Whereas I used to …) pontos; érdemes megtanulni: get on each other's nerves, it takes me an hour to get to school."
+    ]
+  }
 }
