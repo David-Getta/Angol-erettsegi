@@ -1,0 +1,166 @@
+{
+  "schemaVersion": 1,
+  "id": "nem-lu-emelt-zugspitze-verb-forms",
+  "subject": "nemet",
+  "revision": 1,
+  "level": "emelt",
+  "source": "generated",
+  "topic": "utazas",
+  "title": "Zwei Tage bis zum Gipfel",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "language-use",
+  "type": "verb-forms",
+  "instructions": "Lesen Sie den Bericht und setzen Sie die Verben in Klammern in der richtigen Form in die Lücken (1–12) ein. In manchen Lücken brauchen Sie mehr als ein Wort. Am Anfang finden Sie ein Beispiel (0).",
+  "instructionsHu": "Írd a zárójelben megadott igéket a megfelelő alakban a hiányokba (néhol több szó is kellhet). A 0. a példa.",
+  "passage": {
+    "title": "Zwei Tage bis zum Gipfel",
+    "blocks": [
+      {
+        "text": "Im letzten August [[0]] mein Bruder Bence und ich endlich auf die Zugspitze, den höchsten Berg Deutschlands. Monatelang hatten wir uns auf die Tour [[1]] und jedes Wochenende in den Budaer Bergen trainiert. Trotzdem [[2]] wir am ersten Tag schon nach drei Stunden völlig erschöpft: Der Weg durch das Reintal ist lang, und die Sonne [[3]] ohne Pause."
+      },
+      {
+        "text": "Am Abend erreichten wir die Hütte, in der wir übernachten [[4]]. Sie war allerdings ausgebucht, weil wir [[5]], einen Platz zu reservieren. Zum Glück [[6]] uns der Hüttenwirt zwei Matratzen auf dem Dachboden an."
+      },
+      {
+        "text": "Am nächsten Morgen wurden wir um fünf Uhr von einem heftigen Gewitter [[7]]. Der Hüttenwirt riet uns, das Ende des Unwetters [[8]]. „Wenn ihr jetzt [[9]], bringt ihr euch in Lebensgefahr“, warnte er. Wir hörten auf ihn – zum Glück: Später erfuhren wir, dass am Vormittag ein Steinschlag einen Teil des Weges verschüttet hatte. Wenn wir früher [[10]], wären wir mitten hineingeraten."
+      },
+      {
+        "text": "Am Nachmittag [[11]] wir den Gipfel dann doch noch – müde und nass, aber überglücklich. Oben [[12]] sich die Wolken, und wir konnten bis weit nach Österreich sehen."
+      }
+    ]
+  },
+  "example": {
+    "id": "0",
+    "kind": "text",
+    "cue": "steigen",
+    "answer": [
+      "stiegen"
+    ],
+    "category": "tense",
+    "explanation": "Lezárt múltbeli esemény (im letzten August), a hiányba egy igealak fér: Präteritum. A „steigen” erős ige (steigen – stieg – gestiegen), többes szám 1. személyben: wir stiegen."
+  },
+  "items": [
+    {
+      "id": "1",
+      "kind": "text",
+      "cue": "vorbereiten",
+      "answer": [
+        "vorbereitet"
+      ],
+      "category": "tense",
+      "explanation": "Plusquamperfekt (hatten … + Partizip II), mert a felkészülés a túra előtt történt. A „vorbereiten” elváló „vor-” és nem elváló „be-” igekötős ige: a Partizip II-ben nincs „ge-”: vorbereitet."
+    },
+    {
+      "id": "2",
+      "kind": "text",
+      "cue": "sein",
+      "answer": [
+        "waren"
+      ],
+      "category": "tense",
+      "explanation": "Múltbeli állapot, többes szám 1. személy: wir waren (sein – war – gewesen). A „trotzdem” után fordított szórend: az ige közvetlenül utána áll."
+    },
+    {
+      "id": "3",
+      "kind": "text",
+      "cue": "scheinen",
+      "answer": [
+        "schien"
+      ],
+      "category": "tense",
+      "explanation": "A múltbeli elbeszélés része: die Sonne schien (scheinen – schien – geschienen), egyes szám 3. személy, végződés nélkül. (A „Der Weg … ist lang” jelen ideje általános igazság az útról.)"
+    },
+    {
+      "id": "4",
+      "kind": "text",
+      "cue": "wollen",
+      "answer": [
+        "wollten"
+      ],
+      "category": "modal",
+      "explanation": "Vonatkozó mellékmondatban a ragozott ige a végére kerül: in der wir übernachten wollten. Módbeli segédige múlt időben, többes szám 1. személy: wollten (umlaut nélkül)."
+    },
+    {
+      "id": "5",
+      "kind": "text",
+      "cue": "vergessen",
+      "answer": [
+        "vergessen hatten"
+      ],
+      "category": "tense",
+      "explanation": "A foglalás elfelejtése a megérkezés ELŐTT történt, ezért Plusquamperfekt kell: weil wir vergessen hatten. A „weil” mellékmondatban a ragozott segédige (hatten) áll a legvégén."
+    },
+    {
+      "id": "6",
+      "kind": "text",
+      "cue": "anbieten",
+      "answer": [
+        "bot"
+      ],
+      "category": "verb-conjugation",
+      "explanation": "Az „anbieten” elváló igekötős erős ige (bieten – bot – geboten): Präteritumban főmondatban az „an” a végére kerül, a hiányba a ragozott tő kell: der Hüttenwirt bot uns … an."
+    },
+    {
+      "id": "7",
+      "kind": "text",
+      "cue": "wecken",
+      "answer": [
+        "geweckt"
+      ],
+      "category": "passive",
+      "explanation": "Szenvedő szerkezet múlt időben: wurden … geweckt (werden + Partizip II). A cselekvőt a „von” + részes eset jelöli: von einem heftigen Gewitter."
+    },
+    {
+      "id": "8",
+      "kind": "text",
+      "cue": "abwarten",
+      "answer": [
+        "abzuwarten"
+      ],
+      "category": "infinitive",
+      "explanation": "A „raten” (tanácsol) után zu-s főnévi igenév áll. Elváló igekötős igénél a „zu” az igekötő és a tő közé kerül, egybeírva: abzuwarten."
+    },
+    {
+      "id": "9",
+      "kind": "text",
+      "cue": "losgehen",
+      "answer": [
+        "losgeht"
+      ],
+      "category": "verb-conjugation",
+      "explanation": "A „wenn” mellékmondatban az ige a végén áll, ezért az elváló igekötő NEM válik le: wenn ihr jetzt losgeht. A „ihr” alanyhoz -t végződés tartozik."
+    },
+    {
+      "id": "10",
+      "kind": "text",
+      "cue": "aufbrechen",
+      "answer": [
+        "aufgebrochen wären"
+      ],
+      "category": "konjunktiv",
+      "explanation": "Múltra vonatkozó, nem valós feltétel: Wenn wir früher aufgebrochen wären, wären wir … hineingeraten. Konjunktiv II múlt: wären + Partizip II, mert az „aufbrechen” (elindul) mozgást jelent, és „sein” segédigével képzi a múlt idejét."
+    },
+    {
+      "id": "11",
+      "kind": "text",
+      "cue": "erreichen",
+      "answer": [
+        "erreichten"
+      ],
+      "category": "tense",
+      "explanation": "Múltbeli elbeszélés, többes szám 1. személy: wir erreichten. Az „erreichen” gyenge ige, Präteritumban -te(n) végződést kap."
+    },
+    {
+      "id": "12",
+      "kind": "text",
+      "cue": "sich verziehen",
+      "answer": [
+        "verzogen"
+      ],
+      "category": "tense",
+      "explanation": "„Die Wolken verziehen sich” = a felhők elvonulnak. Erős ige: verziehen – verzog – verzogen; többes számú alannyal (die Wolken) Präteritumban: verzogen."
+    }
+  ],
+  "suggestedMinutes": 12
+}

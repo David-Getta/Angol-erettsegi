@@ -1,0 +1,87 @@
+{
+  "schemaVersion": 1,
+  "id": "fol-wr-kozep-repulout-idozona",
+  "subject": "foldrajz",
+  "revision": 1,
+  "level": "kozep",
+  "source": "generated",
+  "topic": "terkep",
+  "title": "Repülőút Budapestről New Yorkba: időzóna, méretarány, sebesség",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "writing",
+  "type": "szamitasos-elemzo",
+  "taskNumber": 2,
+  "situation": "Egy magyar diák júliusban Budapestről New Yorkba repül. A gép budapesti idő szerint 11:30-kor indul, a repülési idő 9 óra 30 perc. Nyáron Budapest a nyári időszámítás miatt az UTC+2, New York az UTC−4 időzóna szerint számítja az időt. Egy 1 : 30 000 000 méretarányú világtérképen a két város távolsága 23,5 cm.\n\nVálaszoljon a kérdésekre! A számítások menetét is írja le!\n\na) Hány órakor érkezik a gép New York-i helyi idő szerint? (3 pont)\nb) Mekkora a két város valós távolsága km-ben a térkép alapján? (2 pont)\nc) Mekkora volt a gép átlagsebessége km/h-ban? Egész számra kerekítsen! (2 pont)\nd) Magyarázza meg, miért kell nyugatra utazva visszaállítani az órát, és miért kell hazafelé előre! (3 pont)",
+  "points": [
+    {
+      "id": "p1",
+      "text": "a) Az érkezés időpontja New York-i idő szerint (3 pont)"
+    },
+    {
+      "id": "p2",
+      "text": "b) A valós távolság a méretarány alapján (2 pont)"
+    },
+    {
+      "id": "p3",
+      "text": "c) Az átlagsebesség (2 pont)"
+    },
+    {
+      "id": "p4",
+      "text": "d) Az időeltolódás magyarázata (3 pont)"
+    }
+  ],
+  "suggestedMinutes": 15,
+  "usefulPhrases": [
+    {
+      "en": "1° = 4 perc, 15° = 1 óra",
+      "hu": "a Föld óránként 15°-ot fordul tengelye körül"
+    },
+    {
+      "en": "UTC (egyezményes koordinált világidő)",
+      "hu": "a 0° hosszúsági kör idejéhez igazított világidő; a zónaidők ehhez képest + vagy − órák"
+    },
+    {
+      "en": "időkülönbség = a két zóna UTC-eltérésének különbsége",
+      "hu": "pl. (+2) − (−4) = 6 óra"
+    },
+    {
+      "en": "méretarány 1 : M → valós távolság = térképi távolság × M",
+      "hu": "cm-ben számolunk, utána váltunk km-re (1 km = 100 000 cm)"
+    },
+    {
+      "en": "átlagsebesség = út : idő",
+      "hu": "km/h-ban; a percet órára kell váltani (30 perc = 0,5 óra)"
+    },
+    {
+      "en": "kelet felé az idő előbbre jár",
+      "hu": "keletre utazva előre, nyugatra utazva vissza kell állítani az órát"
+    }
+  ],
+  "modelAnswer": {
+    "text": "a) A gép budapesti idő szerint 11:30 + 9 óra 30 perc = 21:00-kor érkezik. A két zóna közötti különbség (+2) − (−4) = 6 óra, és New York nyugatabbra van, ezért ott 6 órával korábban jár az idő: 21:00 − 6 óra = 15:00. A gép tehát New York-i helyi idő szerint 15:00-kor (délután 3 órakor) érkezik.\n\nb) A valós távolság = térképi távolság × méretarányszám = 23,5 cm × 30 000 000 = 705 000 000 cm. Mivel 1 km = 100 000 cm, ez 705 000 000 : 100 000 = 7050 km.\n\nc) Az átlagsebesség = út : idő = 7050 km : 9,5 h ≈ 742,1 km/h, egész számra kerekítve 742 km/h.\n\nd) A Föld nyugatról keletre forog a tengelye körül, ezért a keletebbre fekvő helyeken korábban kel és korábban delel a Nap, ott tehát előbbre jár az idő. Óránként 15°-ot fordul a Föld, ezért 15° hosszúságkülönbség 1 óra időkülönbséget jelent; az időzónák ezt egész órákra kerekítve követik. Nyugatra (New York felé) utazva ezért vissza kell állítani az órát (a diák napja 6 órával hosszabb lesz), hazafelé, kelet felé utazva pedig 6 órát előre kell állítani.",
+    "pointsCovered": [
+      {
+        "id": "p1",
+        "quote": "A gép budapesti idő szerint 11:30 + 9 óra 30 perc = 21:00-kor érkezik."
+      },
+      {
+        "id": "p2",
+        "quote": "A valós távolság = térképi távolság × méretarányszám = 23,5 cm × 30 000 000 = 705 000 000 cm."
+      },
+      {
+        "id": "p3",
+        "quote": "Az átlagsebesség = út : idő = 7050 km : 9,5 h ≈ 742,1 km/h, egész számra kerekítve 742 km/h."
+      },
+      {
+        "id": "p4",
+        "quote": "A Föld nyugatról keletre forog a tengelye körül, ezért a keletebbre fekvő helyeken korábban kel és korábban delel a Nap, ott tehát előbbre jár az idő."
+      }
+    ],
+    "notes": [
+      "Minden számítás menete, képlete és mértékegysége szerepel, és az eredmények helyesek (15:00, 7050 km, 742 km/h); a mértékegység-átváltást (cm → km, 30 perc → 0,5 óra) is leírja.",
+      "A d) rész ok–okozati magyarázatot ad (a Föld forgásiránya → keleten előbbre jár az idő → 15° = 1 óra), így az összefüggések szempontja teljesül.",
+      "Pontos fogalmakat használ (UTC, időzóna, nyári időszámítás, méretarányszám), a földrajzi irányokat helyesen kezeli."
+    ]
+  }
+}

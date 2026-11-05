@@ -1,0 +1,103 @@
+{
+  "schemaVersion": 1,
+  "id": "bio-wr-kozep-to-oxigen-adatelemzes",
+  "subject": "biologia",
+  "revision": 1,
+  "level": "kozep",
+  "source": "generated",
+  "topic": "okologia",
+  "title": "Egy tó oxigéntartalmának napi változása – adatelemzés",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "writing",
+  "type": "adatelemzes",
+  "taskNumber": 2,
+  "situation": "Egy sekély, tápanyagokban gazdag tó vizének oldottoxigén-tartalmát és hőmérsékletét egy nyári napon négyóránként mérték a felszín közelében:\nIdőpont (óra): 0 | 4 | 8 | 12 | 16 | 20 | 24\nOldott oxigén (mg/l): 6,0 | 4,8 | 6,2 | 10,5 | 12,0 | 8,6 | 6,1\nVízhőmérséklet (°C): 21 | 20 | 21 | 25 | 26 | 24 | 22\nNapkelte kb. 5 órakor, napnyugta kb. 20 órakor volt. Tudnivaló: a víz minél melegebb, annál kevesebb oxigént képes fizikailag oldani (26 °C-on telített állapotban kb. 8 mg/l-t).\nVálaszoljon a kérdésekre összefüggő mondatokban, a táblázat adataira hivatkozva!",
+  "points": [
+    {
+      "id": "p1",
+      "text": "Mikor volt a legalacsonyabb és mikor a legmagasabb a víz oxigéntartalma? Írja le a napi változás menetét!"
+    },
+    {
+      "id": "p2",
+      "text": "Magyarázza meg, miért nő az oxigéntartalom napközben! Mely élőlények és melyik folyamat okozza?"
+    },
+    {
+      "id": "p3",
+      "text": "Miért csökken az oxigéntartalom éjszaka? Mely élőlények fogyasztják az oxigént?"
+    },
+    {
+      "id": "p4",
+      "text": "A melegebb víz kevesebb oxigént képes oldani, a legmagasabb oxigéntartalmat mégis a legmelegebb órákban mérték. Mi következik ebből?"
+    },
+    {
+      "id": "p5",
+      "text": "Miért fordulhat elő tápanyagokkal erősen szennyezett (eutrofizálódott) tavakban hajnali halpusztulás?"
+    }
+  ],
+  "suggestedMinutes": 25,
+  "usefulPhrases": [
+    {
+      "en": "termelők (fitoplankton, hínár)",
+      "hu": "fotoszintézissel szerves anyagot és oxigént termelnek"
+    },
+    {
+      "en": "sejtlégzés",
+      "hu": "minden élőlény (a növények is) éjjel-nappal végzi, oxigént fogyaszt"
+    },
+    {
+      "en": "lebontók",
+      "hu": "az elhalt szerves anyagot bontó baktériumok és gombák; légzésükkel sok oxigént fogyasztanak"
+    },
+    {
+      "en": "nettó oxigéntermelés",
+      "hu": "fotoszintézis oxigéntermelése mínusz a légzés oxigénfogyasztása"
+    },
+    {
+      "en": "túltelített",
+      "hu": "több oldott gáz van a vízben, mint amennyi fizikailag egyensúlyban oldódna"
+    },
+    {
+      "en": "eutrofizáció",
+      "hu": "a vizek tápanyag-feldúsulása, algavirágzás, majd oxigénhiány"
+    },
+    {
+      "en": "A legkisebb érték … órakor volt (… mg/l).",
+      "hu": "pontos leolvasás az adat és a mértékegység megadásával"
+    }
+  ],
+  "checklistExtra": [
+    "Mértékegységgel együtt idéztem az adatokat?",
+    "Elkülönítettem a leírást (mi történik) és a magyarázatot (miért)?"
+  ],
+  "modelAnswer": {
+    "text": "A víz oxigéntartalma hajnali 4 órakor volt a legalacsonyabb (4,8 mg/l), délután 16 órakor a legmagasabb (12,0 mg/l). Éjfél és hajnal között csökken, napkelte után emelkedni kezd (8 órakor 6,2, délben 10,5 mg/l), délután tetőzik, majd este és éjszaka újra csökken (20 órakor 8,6, éjfélkor 6,1 mg/l). A változás tehát napi ciklust mutat, amely a fény meglétéhez igazodik.\n\nNapközben a tó termelői – a vízben lebegő algák (fitoplankton) és a hínárok – fotoszintetizálnak. A fotoszintézis fényszakaszában a víz bontásából oxigén szabadul fel, amely a vízben oldódik. Napközben a fotoszintézis oxigéntermelése nagyobb, mint az összes élőlény légzésének oxigénfogyasztása, ezért nő az oxigéntartalom; a fény erősödésével délután éri el a csúcsot.\n\nÉjszaka nincs fény, ezért szünetel a fotoszintézis, a sejtlégzés viszont folyamatos. Oxigént fogyaszt minden élőlény: az állatok (halak, rákok, rovarlárvák), maguk az algák és hínárok is, és különösen a lebontó baktériumok, amelyek az elhalt szerves anyagot bontják. Mivel oxigéntermelés nincs, csak fogyasztás, az oxigéntartalom egész éjjel csökken, és hajnalra a legkisebb.\n\nA 16 órakor mért 12,0 mg/l jóval több, mint amennyi 26 °C-on fizikailag telített állapotban oldódna (kb. 8 mg/l): a víz oxigénre túltelített. Ebből az következik, hogy az oxigéntartalom napi változását nem a hőmérséklet, hanem a biológiai folyamatok, elsősorban a fotoszintézis határozzák meg; a hőmérséklet hatása ennél kisebb.\n\nA tápanyagokkal (nitráttal, foszfáttal) terhelt tavakban az algák tömegesen elszaporodnak. Nappal sok oxigént termelnek, éjszaka viszont a hatalmas algatömeg és a sok elhalt algát bontó baktérium légzése rengeteg oxigént fogyaszt. Hajnalra az oxigéntartalom olyan alacsonyra eshet, hogy a halak megfulladnak – ezért a halpusztulás tipikusan hajnalban, meleg, szélcsendes éjszakák után következik be, amikor a meleg víz eleve kevesebb oxigént old.",
+    "pointsCovered": [
+      {
+        "id": "p1",
+        "quote": "A víz oxigéntartalma hajnali 4 órakor volt a legalacsonyabb (4,8 mg/l), délután 16 órakor a legmagasabb (12,0 mg/l)."
+      },
+      {
+        "id": "p2",
+        "quote": "Napközben a tó termelői – a vízben lebegő algák (fitoplankton) és a hínárok – fotoszintetizálnak."
+      },
+      {
+        "id": "p3",
+        "quote": "Éjszaka nincs fény, ezért szünetel a fotoszintézis, a sejtlégzés viszont folyamatos."
+      },
+      {
+        "id": "p4",
+        "quote": "Ebből az következik, hogy az oxigéntartalom napi változását nem a hőmérséklet, hanem a biológiai folyamatok, elsősorban a fotoszintézis határozzák meg"
+      },
+      {
+        "id": "p5",
+        "quote": "Hajnalra az oxigéntartalom olyan alacsonyra eshet, hogy a halak megfulladnak"
+      }
+    ],
+    "notes": [
+      "Tartalom: a leolvasás pontos (minimum, maximum, a menet a konkrét értékekkel), és mindegyik kérdésre biológiailag helyes választ ad: termelők és fotoszintézis, minden élőlény légzése, eutrofizáció.",
+      "Indoklás, következtetés: a 4. kérdésnél az adatot összeveti a telítési értékkel (12,0 > 8 mg/l), és ebből vonja le a következtetést – ez a magasabb pontszám kulcsa.",
+      "Szaknyelv: termelő, fitoplankton, sejtlégzés, lebontó, túltelített, eutrofizáció – pontos fogalmak, egyértelmű ok–okozati mondatok."
+    ]
+  }
+}

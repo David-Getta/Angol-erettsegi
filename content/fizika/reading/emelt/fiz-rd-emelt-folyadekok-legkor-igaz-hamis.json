@@ -1,0 +1,99 @@
+{
+  "schemaVersion": 1,
+  "id": "fiz-rd-emelt-folyadekok-legkor-igaz-hamis",
+  "subject": "fizika",
+  "revision": 1,
+  "level": "emelt",
+  "source": "generated",
+  "topic": "viz-levego-kornyezet",
+  "title": "Folyadékok, áramlások, légkör – igaz vagy hamis?",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "reading",
+  "type": "igaz-hamis",
+  "instructions": "Döntsd el az állításokról, hogy igazak (I) vagy hamisak (H)! A 0. állítás a megoldott példa. Ahol szükséges, g = 10 m/s².",
+  "example": {
+    "id": "0",
+    "kind": "tf",
+    "prompt": "Nyugvó folyadék belsejében egy adott pontban a nyomás minden irányban ugyanakkora.",
+    "answer": "T",
+    "category": "torvenyek",
+    "explanation": "Igaz. Nyugvó folyadékban (és gázban) a nyomás egy pontban irányfüggetlen; Pascal törvénye szerint a külső nyomás is minden irányban változatlanul terjed tovább. Ezért ugyanakkora a nyomás egy kis lemez mindkét oldalán, akárhogy fordítjuk."
+  },
+  "items": [
+    {
+      "id": "1",
+      "kind": "tf",
+      "prompt": "Egy tengervízben úszó jéghegy térfogatának kb. 89 %-a van a vízfelszín alatt, ha a jég sűrűsége 917 kg/m³, a tengervízé 1025 kg/m³.",
+      "answer": "T",
+      "category": "szamolas",
+      "explanation": "Igaz. Úszáskor a súly egyenlő a felhajtóerővel: ρ_jég·V·g = ρ_víz·V_bemerülő·g, így V_bemerülő/V = ρ_jég/ρ_víz = 917/1025 ≈ 0,89, azaz kb. 89 %."
+    },
+    {
+      "id": "2",
+      "kind": "tf",
+      "prompt": "Ha egy vízvezetékben a cső keresztmetszete a felére csökken, a víz áramlási sebessége is a felére csökken a szűkületben.",
+      "answer": "F",
+      "category": "torvenyek",
+      "explanation": "Hamis. A folytonossági (kontinuitási) egyenlet szerint összenyomhatatlan folyadéknál A·v = állandó, mert időegység alatt ugyanannyi víz halad át minden keresztmetszeten. Fele keresztmetszetnél a sebesség a KÉTSZERESÉRE nő (a nyomás pedig Bernoulli törvénye szerint csökken)."
+    },
+    {
+      "id": "3",
+      "kind": "tf",
+      "prompt": "A hidraulikus emelő a kis dugattyúra kifejtett erőt a dugattyúfelületek arányában megnöveli, de a végzett munkát nem növeli meg.",
+      "answer": "T",
+      "category": "torvenyek",
+      "explanation": "Igaz. Pascal törvénye szerint a nyomás mindkét dugattyúnál azonos: F₁/A₁ = F₂/A₂, így F₂ = F₁·A₂/A₁. A kiszorított folyadéktérfogat viszont azonos (A₁·s₁ = A₂·s₂), ezért a nagy dugattyú arányosan kisebb utat tesz meg, és F₁·s₁ = F₂·s₂ – a munka nem nő (energiamegmaradás)."
+    },
+    {
+      "id": "4",
+      "kind": "tf",
+      "prompt": "Egy óvatosan a víz felszínére helyezett acél gemkapocs a felületi feszültség miatt fennmaradhat, pedig az acél sűrűsége jóval nagyobb a vízénél.",
+      "answer": "T",
+      "category": "jelenseg-magyarazat",
+      "explanation": "Igaz. A víz felszíni rétege rugalmas hártyaként viselkedik: a felületi feszültségből származó erő a kis súlyú gemkapcsot megtartja, mielőtt az átszakítaná a felszínt. Ha mosogatószert cseppentünk a vízbe, a felületi feszültség csökken, és a gemkapocs elsüllyed."
+    },
+    {
+      "id": "5",
+      "kind": "tf",
+      "prompt": "A tengerszinten mérhető kb. 100 kPa légnyomás azt jelenti, hogy minden négyzetméternyi felületre kb. 10 tonna tömeg súlyának megfelelő nyomóerő hat.",
+      "answer": "T",
+      "category": "mertekegyseg",
+      "explanation": "Igaz. 100 kPa = 100 000 N/m², tehát 1 m²-re F = p·A = 100 000 N erő hat. Ennyi a súlya m = F/g = 100 000 N / 10 m/s² = 10 000 kg = 10 t tömegnek. (Ugyanez a felénk eső levegőoszlop súlya.)"
+    },
+    {
+      "id": "6",
+      "kind": "tf",
+      "prompt": "A sztratoszférában lévő ózonréteg főként a Napból érkező infravörös sugárzást nyeli el.",
+      "answer": "F",
+      "category": "fogalmak",
+      "explanation": "Hamis. Az ózonréteg a Nap ULTRAIBOLYA sugárzásának nagy részét (különösen az UV-B és UV-C tartományt) nyeli el, ezzel védi az élővilágot. Az infravörös sugárzás elnyelésében a vízgőz és a szén-dioxid (üvegházhatású gázok) játszik fő szerepet."
+    },
+    {
+      "id": "7",
+      "kind": "tf",
+      "prompt": "A szél kialakulásának alapvető oka a vízszintes irányú légnyomáskülönbség: a levegő a nagyobb nyomású terület felől a kisebb nyomású felé áramlik (közben a Föld forgása eltéríti).",
+      "answer": "T",
+      "category": "jelenseg-magyarazat",
+      "explanation": "Igaz. A nyomáskülönbség erőt fejt ki a levegőre, amely a magasabb nyomású helyről az alacsonyabb nyomású felé gyorsítja. A nyomáskülönbséget a felszín egyenetlen felmelegedése okozza; a Föld forgása miatti Coriolis-hatás az északi féltekén jobbra téríti el a mozgó légtömegeket."
+    },
+    {
+      "id": "8",
+      "kind": "tf",
+      "prompt": "Magas hegyen a víz forráspontja magasabb, mint a tengerszinten, mert ott kisebb a légnyomás.",
+      "answer": "F",
+      "category": "jelenseg-magyarazat",
+      "explanation": "Hamis. A víz akkor forr, amikor a telített gőzének nyomása eléri a külső nyomást. Kisebb légnyomáson ez alacsonyabb hőmérsékleten következik be, ezért a hegyen a forráspont ALACSONYABB (kb. 4000 m-en, kb. 62 kPa-on kb. 87 °C)."
+    },
+    {
+      "id": "9",
+      "kind": "tf",
+      "prompt": "Egy teljesen víz alá merült kő esetében a rá ható felhajtóerő a merülés mélységével arányosan nő.",
+      "answer": "F",
+      "category": "torvenyek",
+      "explanation": "Hamis. A felhajtóerő F = ρ_víz·g·V, ahol V a bemerülő térfogat. Teljes bemerülés után V már nem nő, és mivel a víz gyakorlatilag összenyomhatatlan (ρ állandó), a felhajtóerő a mélységtől független. A test alsó és felső lapjára ható nyomás egyaránt nő, de a KÜLÖNBSÉGÜK változatlan."
+    }
+  ],
+  "glossary": [],
+  "suggestedMinutes": 10
+}

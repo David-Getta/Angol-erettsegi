@@ -1,0 +1,90 @@
+{
+  "schemaVersion": 1,
+  "id": "tor-rd-emelt-kadar-korszak-igaz-hamis",
+  "subject": "tortenelem",
+  "revision": 1,
+  "level": "emelt",
+  "source": "generated",
+  "topic": "hideghaboru",
+  "title": "A Kádár-korszak gazdaságpolitikája",
+  "createdAt": "2026-11-05",
+  "tags": [
+    "magyar"
+  ],
+  "section": "reading",
+  "type": "igaz-hamis",
+  "instructions": "A feladat a Kádár-korszak gazdaságpolitikájával és életszínvonalával kapcsolatos. Döntse el a források és ismeretei alapján, hogy az állítások igazak (I) vagy hamisak (H)! A 0. a megoldott példa.",
+  "passage": {
+    "title": "Reform és életszínvonal a Kádár-korszakban",
+    "sourceNote": "A források a gyakorlás céljára írt, a kor stílusát követő szövegek, illetve leírások – nem hiteles korabeli dokumentumok.",
+    "blocks": [
+      {
+        "heading": "I. forrás – Részlet egy pártdokumentum stílusában írt tájékoztatóból, 1967",
+        "text": "„Az új gazdasági mechanizmus 1968. január 1-jén lép életbe. A vállalatok nagyobb önállóságot kapnak: maguk döntenek termelésükről és beruházásaik egy részéről, a nyereség egy részéből pedig a dolgozók részesedhetnek. Az árak egy része a kereslet és a kínálat szerint alakul. A reform nem érinti szocialista rendünk alapjait: a termelőeszközök társadalmi tulajdonát és a párt vezető szerepét.”"
+      },
+      {
+        "heading": "II. forrás – Egy budapesti munkás visszaemlékezése",
+        "text": "„A hatvanas évek végén vettük meg az első hűtőszekrényünket és a televíziót. A Trabantra hat évet vártunk, de megérte. Hétvégén a telken építkeztünk, a nyolcvanas években pedig a gyárban, munkaidő után a gazdasági munkaközösségben túlóráztunk. Politizálni nem volt tanácsos, de aki nem ellenkezett, azt békén hagyták.”"
+      }
+    ]
+  },
+  "example": {
+    "id": "0",
+    "kind": "tf",
+    "prompt": "Az új gazdasági mechanizmus 1968-ban lépett életbe.",
+    "answer": "T",
+    "category": "evszam-kronologia",
+    "explanation": "Igaz. Az I. forrás szerint a reform 1968. január 1-jén lépett életbe."
+  },
+  "items": [
+    {
+      "id": "1",
+      "kind": "tf",
+      "prompt": "Az I. forrás szerint a reform a vállalatokat a termelőeszközök magántulajdonába adta.",
+      "answer": "F",
+      "category": "forras-ertelmezes",
+      "explanation": "Hamis. A forrás szerint a reform „nem érinti” a termelőeszközök társadalmi tulajdonát: a vállalatok önállóbbak lettek, de állami tulajdonban maradtak. A reform a tervgazdaságot piaci elemekkel egészítette ki, nem szüntette meg."
+    },
+    {
+      "id": "2",
+      "kind": "tf",
+      "prompt": "A reformot a hetvenes évek elején belső ellenzői és a szovjet vezetés nyomására lefékezték.",
+      "answer": "T",
+      "category": "szemelyek-esemenyek",
+      "explanation": "Igaz. 1972-től a párton belüli reformellenesek (pl. a nagyüzemi munkásság érdekeire hivatkozók) és Moszkva nyomására a reformot visszafogták; a reform kidolgozóit háttérbe szorították."
+    },
+    {
+      "id": "3",
+      "kind": "tf",
+      "prompt": "Az új gazdasági mechanizmus kidolgozása elsősorban Nyers Rezső nevéhez fűződik.",
+      "answer": "T",
+      "category": "szemelyek-esemenyek",
+      "explanation": "Igaz. A reform kidolgozását Nyers Rezső, a KB gazdaságpolitikai titkára irányította; 1974-ben a reform lefékezésével együtt őt is eltávolították a vezetésből."
+    },
+    {
+      "id": "4",
+      "kind": "tf",
+      "prompt": "A II. forrás szerint a lakosság a hatvanas években várakozás nélkül juthatott személyautóhoz.",
+      "answer": "F",
+      "category": "forras-ertelmezes",
+      "explanation": "Hamis. A visszaemlékező szerint „a Trabantra hat évet” vártak: a tartós fogyasztási cikkek (főleg az autó) iránti kereslet jóval meghaladta a kínálatot, ami a hiánygazdaság jellemzője."
+    },
+    {
+      "id": "5",
+      "kind": "tf",
+      "prompt": "Az „aki nincs ellenünk, az velünk van” elve, amelyre a II. forrás utolsó mondata utal, a Rákosi-korszak politikáját fejezte ki.",
+      "answer": "F",
+      "category": "fogalomhasznalat",
+      "explanation": "Hamis. Ezt a jelszót Kádár János hirdette meg 1961-ben; a megtorlás után a hallgatólagos alku (életszínvonal a politikai passzivitásért cserébe) jelképe lett. A Rákosi-korszak ezzel szemben azt hirdette: „aki nincs velünk, az ellenünk van”."
+    },
+    {
+      "id": "6",
+      "kind": "tf",
+      "prompt": "Az életszínvonal fenntartására felvett nyugati hitelek miatt a nyolcvanas évekre súlyos eladósodás alakult ki, ami hozzájárult a rendszer válságához.",
+      "answer": "T",
+      "category": "ok-okozat",
+      "explanation": "Igaz. Az 1973-as olajválság után a romló cserearányokat és az életszínvonalat a kormány nyugati hitelekből finanszírozta; az 1980-as évek végére az adósság kb. 20 milliárd dollárra nőtt, ami a rendszerváltás egyik gazdasági előzménye lett."
+    }
+  ],
+  "suggestedMinutes": 7
+}

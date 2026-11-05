@@ -1,0 +1,91 @@
+{
+  "schemaVersion": 1,
+  "id": "mat-sp-emelt-koszinusztetel-szinusztetel",
+  "subject": "matematika",
+  "revision": 1,
+  "level": "emelt",
+  "source": "generated",
+  "topic": "trigonometria",
+  "title": "Tétel: a koszinusztétel és a szinusztétel",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "speaking",
+  "type": "tetel",
+  "partNumber": 1,
+  "instructionsHu": "Emelt szintű szóbeli tétel (30 perc felkészülés, kb. 20 perc felelet). Fejtsd ki a tételcímet önállóan, logikus felépítésben: mondd ki pontosan a kért definíciót, mondd ki a tételt a feltételekkel és bizonyítsd be, oldd meg és magyarázd el a feladatot, végül mutass alkalmazásokat (más témakörök, gyakorlati példák).",
+  "prompts": [
+    "Definíció: a szinusz és a koszinusz definíciója tetszőleges forgásszögre",
+    "Tétel és bizonyítás: a koszinusztétel kimondása és bizonyítása (vektorokkal)",
+    "A tétel felépítése: a Pitagorasz-tétel mint speciális eset, a szinusztétel, melyik tétel mikor használható, a kétértelmű eset",
+    "Feladat: távolság meghatározása egy tó két partja között",
+    "Alkalmazások: földmérés, navigáció, fizika"
+  ],
+  "followUpQuestions": [
+    "Hogyan látszik a koszinusztételből, hogy egy háromszög hegyes-, derék- vagy tompaszögű?"
+  ],
+  "usefulPhrases": [
+    {
+      "en": "c² = a² + b² − 2ab·cos γ",
+      "hu": "Koszinusztétel: a γ szöggel szemközti c oldal."
+    },
+    {
+      "en": "a/sin α = b/sin β = c/sin γ = 2R",
+      "hu": "Szinusztétel, R a köré írt kör sugara."
+    },
+    {
+      "en": "a·b = |a|·|b|·cos γ",
+      "hu": "Skaláris szorzat – ezzel bizonyítjuk a koszinusztételt."
+    },
+    {
+      "en": "nagyobb oldallal szemben nagyobb szög",
+      "hu": "Ezzel döntjük el a szinusztétel kétértelmű esetében, melyik szög jó."
+    },
+    {
+      "en": "cos(180° − α) = −cos α",
+      "hu": "Tompaszögnél a koszinusz negatív, ezért lesz c² > a² + b²."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Tételcím",
+      "text": "Hegyesszögek szögfüggvényeinek kiterjesztése tetszőleges forgásszögre. A koszinusztétel és a szinusztétel, alkalmazásuk."
+    },
+    {
+      "title": "Feladat",
+      "text": "Egy tó két partján lévő A és B pont távolságát akarjuk meghatározni. A parton egy C pontból CA = 120 m, CB = 150 m, és az ACB szög 70°. Számítsa ki az AB távolságot és a háromszög A csúcsnál lévő szögét!"
+    }
+  ],
+  "keyPoints": [
+    "Definíció: az α forgásszög szinusza (koszinusza) az i egységvektor α-val elforgatottjának második (első) koordinátája.",
+    "Koszinusztétel: bármely háromszögben c² = a² + b² − 2ab·cos γ.",
+    "Bizonyítás vektorokkal: a = CB, b = CA, AB = a − b, c² = (a − b)² = a² + b² − 2a·b, és a·b = ab·cos γ.",
+    "γ = 90°-nál cos γ = 0, így a Pitagorasz-tételt kapjuk; a tétel tehát annak általánosítása.",
+    "Szinusztétel: a : b : c = sin α : sin β : sin γ, illetve a/sin α = 2R.",
+    "Koszinusztétel: három oldal vagy két oldal és a közbezárt szög esetén; szinusztétel: két szög és egy oldal, vagy két oldal és az egyikkel szemközti szög esetén (itt két megoldás is lehet).",
+    "Feladat: AB ≈ 156,8 m; az A-nál lévő szög ≈ 64,0° (a 116° nem lehet, mert a kisebb oldallal szemben kisebb szög van).",
+    "Alkalmazások: háromszögelés a földmérésben, hajó- és repülőnavigáció, erők eredője."
+  ],
+  "speakingSeconds": 1200,
+  "prepSeconds": 1800,
+  "sampleAnswer": {
+    "turns": [
+      {
+        "speaker": "candidate",
+        "text": "A tétel a háromszögek oldalai és szögei közötti összefüggésekről szól. Először a definíció: a derékszögű koordináta-rendszerben az i egységvektort az origó körül α szöggel elforgatva kapjuk az e egységvektort. Az α forgásszög koszinusza az e vektor első koordinátája, szinusza a második koordinátája. Hegyesszögekre ez megegyezik a derékszögű háromszögben tanult definícióval, de így tompaszögekre is értelmes; például cos 120° = −1/2, és általában cos(180° − α) = −cos α, sin(180° − α) = sin α.\n\nA koszinusztétel: bármely háromszögben bármely oldal négyzete egyenlő a másik két oldal négyzetösszegéből kivonva e két oldal és az általuk közbezárt szög koszinuszának kétszeres szorzatát: c² = a² + b² − 2ab·cos γ.\nBizonyítás vektorokkal: legyen a C csúcsból az a = CB és a b = CA vektor; ezek hossza a, illetve b, és a szögük γ. Ekkor az AB vektor AB = CB − CA = a − b. A c oldal hossza ennek a vektornak a hossza, így c² = (a − b)² = a² − 2a·b + b², mert a skaláris szorzásra érvényes a disztributivitás és a kommutativitás, és egy vektor önmagával vett skaláris szorzata a hosszának négyzete. A skaláris szorzat definíciója szerint a·b = ab·cos γ, ezért c² = a² + b² − 2ab·cos γ. A bizonyítás hegyes-, derék- és tompaszögre egyaránt érvényes.\n\nHa γ = 90°, akkor cos γ = 0, és a Pitagorasz-tételt kapjuk; a koszinusztétel tehát annak általánosítása. Ha γ tompaszög, a koszinusz negatív, és c² > a² + b². A szinusztétel szerint egy háromszögben az oldalak aránya a szemközti szögek szinuszainak arányával egyenlő, sőt a/sin α = b/sin β = c/sin γ = 2R, ahol R a köré írt kör sugara. A koszinusztételt akkor használjuk, ha ismerjük a három oldalt, vagy két oldalt és a közbezárt szöget; a szinusztételt akkor, ha két szöget és egy oldalt, vagy két oldalt és az egyikkel szemközti szöget ismerünk. Az utóbbi esetben két megoldás is lehet, mert sin α = sin(180° − α).\n\nA feladatban a háromszögben a CB = a = 150 m oldal az A csúccsal, a CA = b = 120 m oldal a B csúccsal van szemben, és ismerjük a közbezárt γ = 70° szöget, ezért koszinusztételt alkalmazunk: c² = 150² + 120² − 2·150·120·cos 70° = 22 500 + 14 400 − 36 000·cos 70° ≈ 36 900 − 12 312,7 = 24 587,3, így c ≈ 156,8 m. Az A-nál lévő α szöget a szinusztétellel számolom: sin α = a·sin γ/c = 150·0,9397/156,8 ≈ 0,8989. Ennek két megoldása van 0° és 180° között: α ≈ 64,0° vagy α ≈ 116,0°. Mivel a = 150 m kisebb, mint c ≈ 156,8 m, és kisebb oldallal szemben kisebb szög van, α < γ = 70°, tehát α ≈ 64,0°. Ellenőrzésként a harmadik szög β ≈ 180° − 70° − 64,0° = 46,0°, ez a legrövidebb, 120 m-es oldallal szemben van, ahogy kell. Az A és B pont távolsága kb. 156,8 m, az A-nál lévő szög kb. 64,0°.\n\nAlkalmazások: a földmérésben a háromszögelés során egy alapvonal és szögek mérésével számítanak ki megközelíthetetlen távolságokat, mint ebben a feladatban; a hajó- és repülőnavigációban az irányszögekből és a megtett utakból határozzák meg a helyzetet. A fizikában két erő eredőjének nagyságát a koszinusztétellel kapjuk meg. A matematikán belül a koszinusztétel a skaláris szorzathoz és a koordinátageometriához, a szinusztétel a köré írt körhöz és a háromszög területképletéhez, T = ab·sin γ/2, kapcsolódik."
+      },
+      {
+        "speaker": "examiner",
+        "text": "Hogyan látszik a koszinusztételből, hogy egy háromszög hegyesszögű, derékszögű vagy tompaszögű?"
+      },
+      {
+        "speaker": "candidate",
+        "text": "A legnagyobb oldallal szemközti szög dönti el. Ha c² < a² + b², akkor cos γ > 0, a háromszög hegyesszögű; ha c² = a² + b², derékszögű; ha c² > a² + b², akkor cos γ < 0, tehát tompaszögű."
+      }
+    ],
+    "notes": [
+      "Definíció és tétel: a forgásszög szögfüggvényeinek egységvektoros definíciója pontos, a koszinusztétel kimondása teljes, a vektoros bizonyítás minden lépése indokolt (különbségvektor, disztributivitás, skaláris szorzat definíciója), és kimondja, hogy minden szögtípusra érvényes.",
+      "Felépítés: kapcsolatot teremt a Pitagorasz-tétellel és a szinusztétellel, megmondja, melyik tétel mikor használható, és kitér a kétértelmű esetre – ez a 10 pontos felépítés-szempont lényege.",
+      "Feladat és alkalmazás: a feladatban a kétértelmű esetet a „kisebb oldallal szemben kisebb szög” elvvel dönti el és ellenőriz; az alkalmazások valódi gyakorlati példák és témakörök közötti kapcsolatok."
+    ]
+  }
+}

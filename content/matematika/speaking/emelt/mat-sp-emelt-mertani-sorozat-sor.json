@@ -1,0 +1,91 @@
+{
+  "schemaVersion": 1,
+  "id": "mat-sp-emelt-mertani-sorozat-sor",
+  "subject": "matematika",
+  "revision": 1,
+  "level": "emelt",
+  "source": "generated",
+  "topic": "sorozatok",
+  "title": "Tétel: mértani sorozat, végtelen mértani sor, pénzügyi alkalmazások",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "speaking",
+  "type": "tetel",
+  "partNumber": 1,
+  "instructionsHu": "Emelt szintű szóbeli tétel (30 perc felkészülés, kb. 20 perc felelet). Fejtsd ki a tételcímet önállóan, logikus felépítésben: mondd ki pontosan a kért definíciót, mondd ki a tételt a feltételekkel és bizonyítsd be, oldd meg és magyarázd el a feladatot, végül mutass alkalmazásokat (más témakörök, gyakorlati példák).",
+  "prompts": [
+    "Definíció: a mértani sorozat definíciója",
+    "Tétel és bizonyítás: a mértani sorozat első n tagjának összege (q ≠ 1)",
+    "A tétel felépítése: n-edik tag, a mértani közép tulajdonság, monotonitás, végtelen mértani sor és összege (|q| < 1)",
+    "Feladat: periodikus tizedes tört átírása és egy pattogó labda útja",
+    "Alkalmazások: kamatos kamat, gyűjtőjáradék, hiteltörlesztés, bomlás és növekedés"
+  ],
+  "followUpQuestions": [
+    "Miért nem alkalmazható a végtelen sor összegképlete az 1 + 2 + 4 + 8 + … sorra?"
+  ],
+  "usefulPhrases": [
+    {
+      "en": "bₙ₊₁ = bₙ·q",
+      "hu": "A mértani sorozat definíciója (b₁ ≠ 0, q ≠ 0)."
+    },
+    {
+      "en": "Sₙ = b₁·(qⁿ − 1)/(q − 1)",
+      "hu": "Az első n tag összege, ha q ≠ 1."
+    },
+    {
+      "en": "S = b₁/(1 − q), ha |q| < 1",
+      "hu": "A végtelen mértani sor összege."
+    },
+    {
+      "en": "Kₙ = K₀·(1 + p/100)ⁿ",
+      "hu": "Kamatos kamat: a betét mértani sorozat szerint nő."
+    },
+    {
+      "en": "qⁿ → 0, ha |q| < 1",
+      "hu": "Ezért létezik a végtelen sor összege."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Tételcím",
+      "text": "A mértani sorozat. Az első n tag összege. A végtelen mértani sor. Pénzügyi alkalmazások."
+    },
+    {
+      "title": "Feladat",
+      "text": "a) Írja fel két egész szám hányadosaként a 0,121212… végtelen szakaszos tizedes törtet! b) Egy labdát 2 m magasról leejtünk; minden pattanás után az előző magasság 3/5 részéig emelkedik. Mekkora utat tesz meg a labda összesen, ha (elméletben) végtelen sokszor pattan?"
+    }
+  ],
+  "keyPoints": [
+    "Definíció: a (bₙ) sorozat mértani, ha b₁ ≠ 0, és van olyan q ≠ 0 szám, hogy minden n-re bₙ₊₁ = bₙ·q.",
+    "bₙ = b₁·qⁿ⁻¹; pozitív tagú sorozatban bármely tag a szomszédos tagok mértani közepe.",
+    "Tétel: q ≠ 1 esetén Sₙ = b₁·(qⁿ − 1)/(q − 1); q = 1-nél Sₙ = n·b₁.",
+    "Bizonyítás: q·Sₙ − Sₙ = b₁qⁿ − b₁, a közbülső tagok kiesnek, majd (q − 1)-gyel osztunk.",
+    "Végtelen mértani sor: |q| < 1 esetén qⁿ → 0, így a sor összege b₁/(1 − q); |q| ≥ 1 esetén (b₁ ≠ 0) nem konvergens.",
+    "Feladat a): 0,121212… = 0,12/(1 − 0,01) = 12/99 = 4/33.",
+    "Feladat b): 2 + 2·(1,2/(1 − 0,6)) = 2 + 6 = 8 m.",
+    "Alkalmazások: kamatos kamat Kₙ = K₀·qⁿ, gyűjtőjáradék és törlesztőrészlet a mértani sor összegképletével, radioaktív bomlás, populációnövekedés."
+  ],
+  "speakingSeconds": 1200,
+  "prepSeconds": 1800,
+  "sampleAnswer": {
+    "turns": [
+      {
+        "speaker": "candidate",
+        "text": "A tétel a mértani sorozatról és alkalmazásairól szól. Definíció: a (bₙ) számsorozatot mértani sorozatnak nevezzük, ha az első tagja nem nulla, és van olyan q nullától különböző valós szám, hogy a második tagtól kezdve minden tag az előző tag q-szorosa: bₙ₊₁ = bₙ·q. A q a sorozat hányadosa. Ebből teljes indukcióval adódik az n-edik tag képlete: bₙ = b₁·qⁿ⁻¹. Pozitív tagú mértani sorozatban a második tagtól kezdve bármely tag a két szomszédjának mértani közepe, mert bₙ² = bₙ₋₁·bₙ₊₁. Pozitív első tag esetén q > 1-nél a sorozat szigorúan nő, 0 < q < 1-nél szigorúan csökken, q < 0-nál a tagok előjele váltakozik.\n\nTétel: ha a mértani sorozat hányadosa q ≠ 1, akkor első n tagjának összege Sₙ = b₁·(qⁿ − 1)/(q − 1). Bizonyítás: írjuk fel az összeget: Sₙ = b₁ + b₁q + b₁q² + … + b₁qⁿ⁻¹. Szorozzuk meg mindkét oldalt q-val: q·Sₙ = b₁q + b₁q² + … + b₁qⁿ⁻¹ + b₁qⁿ. A második egyenletből kivonva az elsőt, a közbülső tagok kiesnek: q·Sₙ − Sₙ = b₁qⁿ − b₁, azaz (q − 1)·Sₙ = b₁(qⁿ − 1). Mivel q ≠ 1, oszthatunk (q − 1)-gyel: Sₙ = b₁·(qⁿ − 1)/(q − 1). Ha q = 1, minden tag b₁, és Sₙ = n·b₁.\n\nHa |q| < 1, akkor n növelésével qⁿ tart a 0-hoz, ezért Sₙ határértéke b₁·(0 − 1)/(q − 1) = b₁/(1 − q). Ezt nevezzük a végtelen mértani sor összegének. Ha |q| ≥ 1 és b₁ ≠ 0, a részletösszegek sorozata nem konvergens, a sornak nincs összege.\n\nA feladat a) része: 0,121212… = 0,12 + 0,0012 + 0,000012 + …, ez egy végtelen mértani sor, b₁ = 0,12 és q = 0,01. Mivel |q| < 1, az összeg 0,12/(1 − 0,01) = 0,12/0,99 = 12/99 = 4/33. Ellenőrzés: 4 : 33 = 0,1212…\nA b) rész: a labda először 2 m-t esik. Utána minden pattanásnál felemelkedik és ugyanannyit vissza is esik. Az emelkedések magasságai 2·3/5 = 1,2 m, 1,2·3/5 = 0,72 m, …, ezek mértani sorozatot alkotnak b₁ = 1,2 és q = 0,6 adatokkal. Összegük 1,2/(1 − 0,6) = 1,2/0,4 = 3 m. Mivel minden emelkedést egy ugyanakkora esés követ, a teljes út 2 + 2·3 = 8 m. A labda összesen 8 m utat tesz meg.\n\nAlkalmazások: a kamatos kamatnál a betét évről évre ugyanannyiszorosára nő, Kₙ = K₀·(1 + p/100)ⁿ, tehát mértani sorozatot alkot. Ha minden év elején ugyanakkora összeget teszünk be, az egyenleg egy mértani sorozat összege, ezt a gyűjtőjáradék számításánál használjuk, és ugyanígy számolják ki a hitelek egyenlő törlesztőrészleteit is. A természetben a radioaktív bomlás és a korlátlan körülmények közötti populációnövekedés is mértani sorozattal, illetve exponenciális függvénnyel írható le. A matematikán belül a végtelen mértani sor a határérték fogalmához, a periodikus tizedes törtek racionális voltának igazolásához és a fraktálokhoz, például a Koch-görbe hosszához kapcsolódik."
+      },
+      {
+        "speaker": "examiner",
+        "text": "Miért nem alkalmazható a végtelen sor összegképlete az 1 + 2 + 4 + 8 + … sorra?"
+      },
+      {
+        "speaker": "candidate",
+        "text": "Mert itt q = 2, tehát |q| ≥ 1, a 2ⁿ nem tart nullához, a részletösszegek minden határon túl nőnek. A b₁/(1 − q) képlet −1-et adna, ami nyilván értelmetlen egy pozitív tagú sor összegeként."
+      }
+    ],
+    "notes": [
+      "Definíció és tétel: a definíció tartalmazza a b₁ ≠ 0 és q ≠ 0 feltételt, az összegképlet bizonyítása teljes (q-val szorzás, kivonás, a q ≠ 1 feltétel szerepe az osztásnál), és a q = 1 esetet is kezeli.",
+      "Felépítés: a végtelen mértani sort a határértékkel vezeti be, kimondja a |q| < 1 feltételt, és azt is, mi történik |q| ≥ 1-nél; a vizsgáztató kérdésére konkrét példával mutatja meg, miért kell ez a feltétel.",
+      "Feladat és alkalmazás: mindkét részfeladatban megnevezi b₁-et és q-t, ellenőriz (4 : 33), a labdánál megindokolja a 2-es szorzót; az alkalmazások a pénzügyektől a természettudományokig terjednek."
+    ]
+  }
+}

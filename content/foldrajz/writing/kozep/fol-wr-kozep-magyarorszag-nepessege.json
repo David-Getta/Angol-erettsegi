@@ -1,0 +1,87 @@
+{
+  "schemaVersion": 1,
+  "id": "fol-wr-kozep-magyarorszag-nepessege",
+  "subject": "foldrajz",
+  "revision": 1,
+  "level": "kozep",
+  "source": "generated",
+  "topic": "magyarorszag",
+  "title": "Magyarország népességének változása (adatelemzés)",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "writing",
+  "type": "elemzo",
+  "taskNumber": 2,
+  "situation": "Az alábbi adatsor Magyarország népességének alakulását mutatja a népszámlálások szerint (kerekített adatok).\n\nNépességszám: 1980: 10,7 millió fő; 1990: 10,4 millió fő; 2001: 10,2 millió fő; 2011: 9,9 millió fő; 2022: 9,6 millió fő.\nA 0–14 évesek aránya: 1980: kb. 22%, 2022: kb. 14%. A 65 év felettiek aránya: 1980: kb. 13%, 2022: kb. 21%.\nNépmozgalmi adatok 2022-ben: születési arányszám kb. 9 ‰, halálozási arányszám kb. 14 ‰.\n\nVálaszoljon a kérdésekre az adatok és ismeretei alapján!\n\na) Jellemezze a népességszám változását 1980 és 2022 között! Számítsa ki, hány fővel és hány százalékkal csökkent a népesség! (3 pont)\nb) Mi a népességfogyás közvetlen oka a 2022-es adatok alapján? Számítsa ki a mutatót! (2 pont)\nc) Hogyan változott a népesség korösszetétele? Nevezze meg a folyamatot, és adja meg két okát! (3 pont)\nd) Nevezze meg a folyamat két társadalmi-gazdasági következményét! (2 pont)",
+  "points": [
+    {
+      "id": "p1",
+      "text": "a) A népességszám változásának jellemzése, a csökkenés fővel és százalékkal (3 pont)"
+    },
+    {
+      "id": "p2",
+      "text": "b) A természetes fogyás mint közvetlen ok, értékének kiszámítása (2 pont)"
+    },
+    {
+      "id": "p3",
+      "text": "c) A korösszetétel változása, az elöregedés és két oka (3 pont)"
+    },
+    {
+      "id": "p4",
+      "text": "d) Két társadalmi-gazdasági következmény (2 pont)"
+    }
+  ],
+  "suggestedMinutes": 15,
+  "usefulPhrases": [
+    {
+      "en": "természetes szaporodás / fogyás = születési arányszám − halálozási arányszám",
+      "hu": "‰-ben adjuk meg; negatív érték természetes fogyást jelent"
+    },
+    {
+      "en": "százalékos változás = (új érték − régi érték) : régi érték × 100",
+      "hu": "a népességcsökkenés arányának kiszámítása"
+    },
+    {
+      "en": "elöregedés",
+      "hu": "az idősek arányának növekedése, a gyermekek arányának csökkenése"
+    },
+    {
+      "en": "korfa",
+      "hu": "urna alakú korfa: szűk alap, széles felső rész – elöregedő népesség"
+    },
+    {
+      "en": "demográfiai átmenet",
+      "hu": "a fejlett országokban a születésszám tartósan alacsony, a népesség fogy"
+    },
+    {
+      "en": "eltartottsági ráta",
+      "hu": "az eltartott korúak (gyermekek, idősek) és az aktív korúak aránya"
+    }
+  ],
+  "modelAnswer": {
+    "text": "a) Magyarország népessége 1980 óta folyamatosan csökken: minden népszámlálás kisebb népességet mutatott, mint az előző. 1980 és 2022 között a csökkenés 10,7 − 9,6 = 1,1 millió fő, ami 1,1 : 10,7 × 100 ≈ 10,3%, vagyis a népesség kb. tizedével lett kisebb. Az ország népességének csúcspontja 1980 körül volt, azóta tartós a fogyás.\n\nb) A fogyás közvetlen oka a természetes fogyás: 2022-ben kevesebben születtek, mint ahányan meghaltak. A természetes szaporodás = születési arányszám − halálozási arányszám = 9 ‰ − 14 ‰ = −5 ‰, vagyis évente ezer lakosra kb. 5 fős természetes fogyás jut. Ezt a bevándorlás csak kis részben ellensúlyozza.\n\nc) A 0–14 évesek aránya kb. 22%-ról 14%-ra csökkent, a 65 év felettieké kb. 13%-ról 21%-ra nőtt, vagyis a népesség elöregszik, a korfa urna alakúvá válik. Az elöregedés egyik oka a tartósan alacsony születésszám: a családok kevesebb gyermeket vállalnak, később házasodnak, és a gyermekvállalás költségei magasak. Másik oka a várható élettartam növekedése az egészségügyi ellátás és az életkörülmények javulása miatt, így többen érik meg az idős kort.\n\nd) Az egyik következmény, hogy nő a nyugdíjrendszer és az egészségügy terhe, mert egyre kevesebb aktív korú dolgozó tart el egyre több nyugdíjast (romlik az eltartottsági arány). A másik, hogy egyes ágazatokban munkaerőhiány alakul ki, és kevesebb gyermek miatt iskolák, óvodák zárnak be, különösen az elnéptelenedő aprófalvas térségekben.",
+    "pointsCovered": [
+      {
+        "id": "p1",
+        "quote": "Magyarország népessége 1980 óta folyamatosan csökken: minden népszámlálás kisebb népességet mutatott, mint az előző."
+      },
+      {
+        "id": "p2",
+        "quote": "A fogyás közvetlen oka a természetes fogyás: 2022-ben kevesebben születtek, mint ahányan meghaltak."
+      },
+      {
+        "id": "p3",
+        "quote": "A 0–14 évesek aránya kb."
+      },
+      {
+        "id": "p4",
+        "quote": "Az egyik következmény, hogy nő a nyugdíjrendszer és az egészségügy terhe, mert egyre kevesebb aktív korú dolgozó tart el egyre több nyugdíjast (romlik az eltartottsági arány)."
+      }
+    ],
+    "notes": [
+      "Minden kérdésre válaszol, a számításokat (−1,1 millió fő, ≈10,3%, −5 ‰) a képlettel és mértékegységgel együtt leírja – ez a tartalmi helyesség maximumát adja.",
+      "Nem csak leolvassa az adatokat, hanem összefüggésbe hozza őket: a természetes fogyást és az elöregedést okokkal, a következményeket pedig a korösszetétellel indokolja.",
+      "A szaknyelv pontos (természetes fogyás, elöregedés, urna alakú korfa, eltartottsági arány), az ezrelék és a százalék megkülönböztetése helyes."
+    ]
+  }
+}

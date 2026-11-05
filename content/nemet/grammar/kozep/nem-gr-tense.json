@@ -1,0 +1,184 @@
+{
+  "schemaVersion": 1,
+  "id": "nem-gr-tense",
+  "subject": "nemet",
+  "level": "kozep",
+  "source": "generated",
+  "topic": "nyelvtan",
+  "title": "Igeidők",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "grammar",
+  "type": "lesson",
+  "category": "tense",
+  "summaryHu": "A németben a múltról beszélve leggyakrabban a Perfektet (haben/sein + Partizip II) használjuk, írott elbeszélésben a Präteritumot; a korábbi múltat a Plusquamperfekt, a jövőt a Präsens vagy a Futur I fejezi ki. A magyarban egyetlen múlt idő van, ezért a magyar tanulók fő gondja nem az igeidő kiválasztása, hanem a képzés: haben vagy sein, és a helyes Partizip II alak (gemacht, gegangen, besucht, studiert). Az Igealakok feladatban, a nyitott kloze-ban és az írás nyelvhelyességi szempontjánál ezek a hibák rendszeresen pontot visznek.",
+  "rules": [
+    {
+      "title": "Präsens: jelen, jövő és a seit-es szerkezet",
+      "explanation": "A Präsens a jelen mellett gyakran a jövőt is kifejezi, ha időhatározó jelzi (morgen, nächste Woche, im Sommer). A seit + időtartam/kezdőpont a múltban elkezdődött, de ma is tartó helyzetet jelöl, és ilyenkor is Präsens áll – ahogy a magyarban („három éve tanulok”), de máshogy, mint az angolban (I have been learning).",
+      "emeltOnly": false,
+      "examples": [
+        { "en": "Morgen fahren wir nach Wien.", "hu": "Holnap Bécsbe utazunk.", "note": "Jövő idő Präsensszel, időhatározóval." },
+        { "en": "Ich lerne seit drei Jahren Deutsch.", "hu": "Három éve tanulok németül.", "note": "seit + ma is tartó helyzet → Präsens." }
+      ]
+    },
+    {
+      "title": "A Perfekt képzése és a Partizip II",
+      "explanation": "Perfekt = a haben vagy a sein ragozott alakja a második helyen + Partizip II a mondat végén. Partizip II: gyenge (szabályos) igék: ge- + tő + -t (machen → gemacht, arbeiten → gearbeitet); erős igék: ge- + (gyakran megváltozott) tő + -en (gehen → gegangen, schreiben → geschrieben, trinken → getrunken, lesen → gelesen); vegyes igék: ge- + megváltozott tő + -t (bringen → gebracht, denken → gedacht, wissen → gewusst, kennen → gekannt). Nem kap ge- előtagot a nem elváló igekötős ige (be-, ver-, er-, ent-, zer-, ge-, emp-, miss-: besucht, verstanden, erzählt) és az -ieren végű ige (studiert, telefoniert, fotografiert). Az elváló igekötős igénél a ge- az igekötő és a tő közé kerül: eingekauft, angerufen, aufgestanden.",
+      "emeltOnly": false,
+      "examples": [
+        { "en": "Ich habe gestern meine Oma besucht.", "hu": "Tegnap meglátogattam a nagymamámat.", "note": "be- igekötő → nincs ge-: besucht." },
+        { "en": "Hast du den Brief schon geschrieben?", "hu": "Megírtad már a levelet?", "note": "Erős ige: schreiben → geschrieben." },
+        { "en": "Wir haben im Supermarkt eingekauft.", "hu": "A szupermarketben vásároltunk.", "note": "Elváló igekötő: ein-ge-kauft." }
+      ]
+    },
+    {
+      "title": "haben vagy sein?",
+      "explanation": "sein segédigét kapnak: a helyváltoztatást jelentő, tárgy nélküli igék (gehen, kommen, fahren, fliegen, laufen, reisen, umziehen), az állapotváltozást jelentő igék (aufstehen, einschlafen, aufwachen, werden, wachsen, sterben), valamint a sein, a bleiben, a passieren és a geschehen. Minden más ige haben-t kap, így az összes visszaható ige (Ich habe mich gefreut) és a tárgyas igék is (Ich habe das Auto in die Garage gefahren). A stehen, sitzen, liegen igék a német standardban haben-nel állnak; Ausztriában és Dél-Németországban a sein-es alak (ich bin gestanden) is helyes.",
+      "emeltOnly": false,
+      "examples": [
+        { "en": "Letzten Sommer sind wir nach Italien geflogen.", "hu": "Tavaly nyáron Olaszországba repültünk.", "note": "Helyváltoztatás → sein." },
+        { "en": "Ich bin heute um sechs Uhr aufgestanden.", "hu": "Ma hatkor keltem fel.", "note": "Állapotváltozás → sein." },
+        { "en": "Was ist passiert? – Ich bin zu Hause geblieben.", "hu": "Mi történt? – Otthon maradtam.", "note": "passieren, bleiben → sein." }
+      ]
+    },
+    {
+      "title": "Präteritum: írott elbeszélés és a gyakori igék",
+      "explanation": "A Präteritum az írott elbeszélés (történet, beszámoló, újságcikk) múlt ideje. Gyenge igék: tő + -te + rag (ich machte, du machtest, er machte, wir machten, ihr machtet, sie machten); erős igék: megváltozott tő, az ich és er alak rag nélküli (ich ging, er kam, sie fuhr, wir sahen). A sein, a haben, a módbeli segédigék és az es gibt beszédben is inkább Präteritumban állnak: war, hatte, konnte, musste, wollte, gab.",
+      "emeltOnly": false,
+      "examples": [
+        { "en": "Als Kind war ich oft bei meinen Großeltern.", "hu": "Gyerekként gyakran voltam a nagyszüleimnél.", "note": "sein → war (beszédben is)." },
+        { "en": "Gestern hatte ich keine Zeit.", "hu": "Tegnap nem volt időm." },
+        { "en": "Plötzlich klingelte das Telefon und alle sprangen auf.", "hu": "Hirtelen megszólalt a telefon, és mindenki felugrott.", "note": "Elbeszélés: gyenge (klingelte) és erős (sprangen) Präteritum." }
+      ]
+    },
+    {
+      "title": "Plusquamperfekt: a korábbi múlt",
+      "explanation": "Ha két múltbeli esemény közül a korábbit akarjuk jelölni, Plusquamperfektet használunk: hatte/war + Partizip II. Gyakori a nachdem kötőszóval: a nachdem-es mellékmondat Plusquamperfektben, a főmondat Präteritumban (vagy Perfektben) áll. A haben/sein választása ugyanaz, mint a Perfektnél.",
+      "emeltOnly": false,
+      "examples": [
+        { "en": "Als ich ins Kino kam, hatte der Film schon angefangen.", "hu": "Mire a moziba értem, a film már elkezdődött.", "note": "Előbb kezdődött a film → Plusquamperfekt." },
+        { "en": "Nachdem wir gegessen hatten, gingen wir spazieren.", "hu": "Miután ettünk, sétálni mentünk." }
+      ]
+    },
+    {
+      "title": "Futur I: werden + főnévi igenév",
+      "explanation": "A Futur I = a werden ragozott alakja (werde, wirst, wird, werden, werdet, werden) + főnévi igenév a mondat végén. Jövőbeli szándékot, ígéretet, előrejelzést fejez ki, a wohl/sicher szavakkal pedig jelen idejű feltételezést (Er wird wohl krank sein = valószínűleg beteg). Hétköznapi beszédben a jövőt gyakran egyszerűen Präsens + időhatározó fejezi ki.",
+      "emeltOnly": false,
+      "examples": [
+        { "en": "Nach dem Abitur werde ich in Graz studieren.", "hu": "Az érettségi után Grazban fogok tanulni." },
+        { "en": "Tom ist nicht da. Er wird wohl noch schlafen.", "hu": "Tom nincs itt. Biztosan alszik még.", "note": "Feltételezés a jelenre." }
+      ]
+    },
+    {
+      "title": "Futur II: befejezett jövő és feltételezés a múltra",
+      "explanation": "Futur II = werden + Partizip II + haben/sein főnévi igenév. Azt fejezi ki, hogy valami egy jövőbeli időpontig befejeződik, vagy – gyakrabban – feltételezést egy múltbeli eseményről (wohl, sicher szóval).",
+      "emeltOnly": true,
+      "examples": [
+        { "en": "Bis Freitag werde ich das Buch gelesen haben.", "hu": "Péntekre ki fogom olvasni a könyvet." },
+        { "en": "Er ist noch nicht da – er wird den Zug verpasst haben.", "hu": "Még nincs itt – biztosan lekéste a vonatot." }
+      ]
+    }
+  ],
+  "commonMistakes": [
+    { "wrong": "Ich habe seit drei Jahren Deutsch gelernt. (= ma is tanulom)", "right": "Ich lerne seit drei Jahren Deutsch.", "why": "Ha a cselekvés ma is tart, a seit mellett Präsens áll – mint a magyarban („három éve tanulok”). A Perfekt az angol I have been learning hatása." },
+    { "wrong": "Am Wochenende habe ich nach Wien gefahren.", "right": "Am Wochenende bin ich nach Wien gefahren.", "why": "A fahren itt helyváltoztatást jelent tárgy nélkül, ezért sein a segédige. haben csak tárgyas használatban áll (Ich habe das Auto gefahren)." },
+    { "wrong": "Ich habe heute um sieben aufgestanden.", "right": "Ich bin heute um sieben aufgestanden.", "why": "Az aufstehen állapotváltozást jelent (fekvőből álló helyzetbe), ezért sein-nel képezzük a Perfektet, mint az aufwachen és az einschlafen." },
+    { "wrong": "Er hat das Buch schon gelest.", "right": "Er hat das Buch schon gelesen.", "why": "A lesen erős ige, a Partizip II-je -en végű: gelesen. Az erős igék Partizip II-jét (gelesen, geschrieben, gegangen, getrunken) a rendhagyó igék listájából kell megtanulni." },
+    { "wrong": "Meine Schwester hat in Wien Medizin gestudiert.", "right": "Meine Schwester hat in Wien Medizin studiert.", "why": "Az -ieren végű igék Partizip II-je nem kap ge- előtagot: studiert, telefoniert, passiert, diskutiert." },
+    { "wrong": "Sie hat mir die ganze Geschichte geerzählt.", "right": "Sie hat mir die ganze Geschichte erzählt.", "why": "A nem elváló igekötős igék (be-, ver-, er-, ent-, zer-, ge-, emp-, miss-) Partizip II-je nem kap ge-t: erzählt, besucht, verstanden, bekommen." }
+  ],
+  "examTips": [
+    "Igealakok feladatban a szövegkörnyezetből döntsd el az időt (gestern, letztes Jahr → múlt; morgen → jelen/jövő; seit → Präsens), majd ellenőrizd a haben/sein választását és a Partizip II alakját.",
+    "Ha a szöveg elbeszélés (történet, újságcikk) és a környező igék Präteritumban állnak (ging, kam, sagte), a hiányzó igét is Präteritumba tedd; ha Perfektben (ist gegangen), akkor Perfektbe.",
+    "Írásban (blog, élménybeszámoló) a Perfekt a természetes; a sein/haben/módbeli segédigéknél viszont használd a Präteritumot (war, hatte, konnte) – ez nyelvileg igényesebb, és kevesebb a hibalehetőség.",
+    "Tanuld meg a leggyakoribb erős igék három alakját párban a segédigével: gehen – ging – ist gegangen, fahren – fuhr – ist gefahren, bleiben – blieb – ist geblieben, schreiben – schrieb – hat geschrieben, essen – aß – hat gegessen, finden – fand – hat gefunden."
+  ],
+  "practice": [
+    {
+      "id": "1",
+      "kind": "choice",
+      "prompt": "Gestern ___ wir mit dem Zug nach Wien gefahren.",
+      "options": [
+        { "key": "A", "text": "haben" },
+        { "key": "B", "text": "sind" },
+        { "key": "C", "text": "hatten" },
+        { "key": "D", "text": "seid" }
+      ],
+      "answer": "B",
+      "category": "tense",
+      "explanation": "Helyes: sind. A fahren itt helyváltoztatást jelent (Bécsbe utaztunk), tárgy nélkül, ezért a Perfekt segédigéje sein; a wir alany miatt: wir sind … gefahren.",
+      "wrongOptions": {
+        "A": "A haben csak akkor áll a fahren mellett, ha tárgya van (Ich habe das Auto gefahren); itt helyváltoztatásról van szó, ezért sein kell.",
+        "C": "A hatten haben-alak (Plusquamperfekt); a fahren tárgy nélkül sein-t kap, így sem a Perfekt, sem a Plusquamperfekt nem képezhető haben-nel.",
+        "D": "A seid az ihr-alak; az alany itt wir, amelyhez sind tartozik."
+      }
+    },
+    {
+      "id": "2",
+      "kind": "text",
+      "prompt": "Heute bin ich sehr früh ___ (aufstehen).",
+      "cue": "aufstehen",
+      "answer": ["aufgestanden"],
+      "category": "tense",
+      "explanation": "Helyes: aufgestanden. Az aufstehen elváló igekötős ige, ezért a ge- az igekötő és a tő közé kerül; a stehen erős ige, Partizip II-je gestanden → auf-ge-standen. A segédige sein (bin), mert állapotváltozást jelent."
+    },
+    {
+      "id": "3",
+      "kind": "choice",
+      "prompt": "Hast du den Brief an deine Brieffreundin schon ___?",
+      "options": [
+        { "key": "A", "text": "geschreibt" },
+        { "key": "B", "text": "geschrieben" },
+        { "key": "C", "text": "schrieb" },
+        { "key": "D", "text": "geschriebt" }
+      ],
+      "answer": "B",
+      "category": "tense",
+      "explanation": "Helyes: geschrieben. A schreiben erős ige (schreiben – schrieb – geschrieben), a Partizip II-je ge- + megváltozott tő + -en.",
+      "wrongOptions": {
+        "A": "A schreiben nem gyenge ige, ezért a Partizip II nem -t végű és a tő is megváltozik: geschrieben.",
+        "C": "A schrieb Präteritum-alak; a hast … mellé a mondat végére Partizip II kell.",
+        "D": "Keverék alak: erős tő (-schrieb-) gyenge -t végződéssel – ilyen alak nem létezik."
+      }
+    },
+    {
+      "id": "4",
+      "kind": "text",
+      "prompt": "Meine Cousine hat in Graz Architektur ___ (studieren).",
+      "cue": "studieren",
+      "answer": ["studiert"],
+      "category": "tense",
+      "explanation": "Helyes: studiert. Az -ieren végű igék Partizip II-je nem kap ge- előtagot: studieren → studiert (ugyanígy telefoniert, fotografiert)."
+    },
+    {
+      "id": "5",
+      "kind": "choice",
+      "prompt": "Ich ___ seit zwei Jahren in dieser Band und es macht mir immer noch Spaß.",
+      "options": [
+        { "key": "A", "text": "spiele" },
+        { "key": "B", "text": "habe gespielt" },
+        { "key": "C", "text": "spielte" },
+        { "key": "D", "text": "hatte gespielt" }
+      ],
+      "answer": "A",
+      "category": "tense",
+      "explanation": "Helyes: spiele. A seit zwei Jahren és az immer noch azt mutatja, hogy a helyzet ma is tart; ilyenkor a németben Präsens áll (mint a magyarban: két éve játszom).",
+      "wrongOptions": {
+        "B": "A Perfekt lezárt múltbeli eseményt jelöl; ma is tartó helyzetnél a seit mellett Präsens kell (ez az angol Present Perfect hatása).",
+        "C": "A Präteritum lezárt múltat jelöl, ami ellentmond az immer noch-nak.",
+        "D": "A Plusquamperfekt egy másik múltbeli eseménynél korábbi eseményt jelöl; itt nincs ilyen viszonyítási pont, és a helyzet ma is tart."
+      }
+    },
+    {
+      "id": "6",
+      "kind": "text",
+      "prompt": "Als ich ins Kino kam, ___ (haben) der Film schon angefangen.",
+      "cue": "haben",
+      "answer": ["hatte"],
+      "category": "tense",
+      "explanation": "Helyes: hatte. Két múltbeli esemény közül a korábbit (a film elkezdődött) Plusquamperfekt fejezi ki: hatte + Partizip II. Az anfangen haben-nel képzi az összetett múltat, a der Film alany miatt egyes szám 3. személy: hatte."
+    }
+  ],
+  "relatedCategories": ["verb-conjugation", "word-order", "modal"]
+}
