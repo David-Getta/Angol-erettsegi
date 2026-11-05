@@ -35,7 +35,8 @@ export default function DashboardPage() {
   const incomplete = incompleteCount();
   const app = examConfig.app();
   const targetTotal = Math.round((s.targetPct / 100) * structure.totalPoints);
-  const diagResult = diag?.result as { cefr?: string } | null | undefined;
+  const diagResult = diag?.result as { cefr?: string; writtenPct?: number } | null | undefined;
+  const language = examConfig.subject().language;
 
   return (
     <div className="space-y-6">
@@ -63,7 +64,11 @@ export default function DashboardPage() {
           <Stat label={t.dashboard.streak(st)} value={`🔥 ${st}`} hint={`${t.dashboard.week}: ${formatDuration(week)}`} />
         </Card>
         <Card>
-          <Stat label={t.dashboard.cefr} value={diagResult?.cefr ?? "?"} hint={diag ? formatDate(diag.createdAt) : t.dashboard.noData} />
+          <Stat
+            label={language ? t.dashboard.cefr : t.dashboard.diagnosticResult}
+            value={diagResult?.cefr ?? (diag && diagResult?.writtenPct !== undefined ? `${diagResult.writtenPct}%` : "?")}
+            hint={diag ? formatDate(diag.createdAt) : t.dashboard.noData}
+          />
         </Card>
         <Card>
           <Stat
@@ -74,7 +79,7 @@ export default function DashboardPage() {
         </Card>
       </div>
 
-      {!s.onboardingDone && <HowTo />}
+      {!s.onboardingDone && <HowTo language={language} />}
 
       {pending.length > 0 && (
         <CommandTip command="/javitas" message={`${t.dashboard.pendingCount(pending.length)}. ${t.tips.grading}`} testId="javitas-tip">

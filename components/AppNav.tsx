@@ -30,6 +30,7 @@ export function AppNav({ level, subject, groups }: { level: Level; subject: NavS
       {open && <div className="app-nav fixed inset-0 z-30 bg-black/30 lg:hidden" onClick={() => setOpen(false)} />}
       <nav
         id="app-nav"
+        data-testid="app-nav"
         className={`app-nav fixed inset-y-0 left-0 z-40 w-60 overflow-y-auto border-r border-border bg-surface px-3 py-4 transition-transform lg:translate-x-0 ${
           open ? "translate-x-0" : "-translate-x-full"
         }`}

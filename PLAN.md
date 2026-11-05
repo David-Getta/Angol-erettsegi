@@ -74,6 +74,15 @@ A fázisok után az app mindig futtatható; ami kész, az használható.
 - [x] Pontozás: betűvel írt számok és ezres elválasztók elfogadása
 - [x] Független ellenőrzés: minden objektív feladat, a Szabálytár és a szókincs-paklik
 
+## 14. Minden érettségi tantárgy
+- [x] Tantárgy-nyilvántartás (`config/subjects.json`), tantárgyankénti config (`config/subjects/<id>/`), tartalom `content/<id>/` alatt, `subject` oszlop minden adattáblában
+- [x] Kezdőképernyő tantárgyválasztóval (`/`), tantárgyankénti beállítások (szint, vizsganap, cél); a Kezdőlap a `/kezdolap`
+- [x] Az öt vizsgarész-hely (olvasás / nyelvhelyesség / hallás = objektív, írás = beadás, szóbeli) tantárgyanként más névvel, URL-lel és funkciókkal; dinamikus `/[resz]` útvonalak, adatvezérelt navigáció
+- [x] Tantárgytudatos parancsok (`/feladatok <tantárgy> …`, `/szokincs <tantárgy> …`), javítási promptok (magyar vizsgáztató a nem nyelvi tárgyaknál), beadás-fájlok
+- [x] Hivatalos vizsgaszerkezet mind a tíz tárgyhoz (forrásokkal; feltételes szóbeli matematikából és digitális kultúrából, írásbeli együtt 12 %, csak gyakorló részek)
+- [x] Kezdő tartalombank minden tárgyhoz (feladatok, kidolgozott feladatok / esszék mintamegoldással, tételek mintafelelettel, fogalomkártyák, Szabálytár-leckék minden hibakategóriához, útmutatók)
+- [x] Tesztek tantárgyanként (config-konzisztencia, lefedettség), e2e a tantárgyváltásra
+
 ---
 
 ## Döntések
@@ -98,6 +107,11 @@ A fázisok után az app mindig futtatható; ami kész, az használható.
 | D16 | A próbaérettségihez és a szintfelmérőhöz a bank feladatai `reservedFor` jelölést kaphatnak; a gyakorló listák ezeket alapból elrejtik | így marad „még nem használt” szett a próbaérettségire |
 | D17 | Vizsgapont-átváltás: arányos, felfelé kerekítve 0,5-től (`convertToExamPoints`); ha a configban van pontos táblázat és a nyers maximum egyezik, a táblázat | a hivatalos útmutatók feladatsoronkénti táblázatot adnak, a generált szettek nyers maximuma eltérhet |
 | D18 | Nincs ESLint (a Next 16 kivette a `next lint`-et); a minőségkapu a `tsc --noEmit` strict módban + tesztek | kevesebb függőség |
+| D19 | Minden tantárgy **ugyanarra az öt vizsgarész-helyre** (`reading`, `language-use`, `listening` objektív; `writing` beadás; `speaking` szóbeli) képezi le a saját részeit, a név, URL-rész, ikon és a funkciók (idézet, szójegyzék, hang, célzott gyakorlás) a `structure.json`-ból jönnek | egy kódbázis, egy séma, tíz tantárgy; a tartalom `section` mezője változatlan |
+| D20 | Az aktuális tantárgy a beállításokban (`settings.subject`), a lekérdezések erre szűrnek; a tantárgyválasztó összegzései `withSubject()`-tel futnak | egyfelhasználós app, a tantárgy globális állapot; nincs URL-prefix |
+| D21 | Feltételes szóbeli (`conditional`): matematika és digitális kultúra középszinten a szóbeli csak 12–24,99 % között számít; a próbaérettségi efelett az írásbeli százalékát adja végeredménynek | így egyezik a hivatalos pontszámítással |
+| D22 | A 12 %-os minimum `minPartAppliesTo: ["written", …]`-tel az írásbeli részekre együtt is érvényesíthető; `maxPoints: 0` = csak gyakorló rész (nem vizsgarész, nincs a próbaérettségiben) | a nem nyelvi tárgyaknál az írásbeli egy vizsgarész; digitális kultúránál a gyorskérdések csak gyakorlás |
+| D23 | A nem nyelvi tárgyak ábráit, térképeit a feladatok szövegesen írják le; a gyakorlati (digitális kultúra) feladatoknál a tanuló a megoldás leírását vagy kódját adja be | az app nem jelenít meg képet, és nem fut benne irodai szoftver |
 | D19 | Hang: Web Speech API; beszélőnként a böngésző angol hangjai közül nem/akcentus szerint választ; ha csak egy hang van, hangmagassággal különít el | ingyenes, offline is működik Chrome-ban (a beszédfelismeréshez internet kell a Chrome-nak) |
 | D20 | Ha a Web Speech beszédfelismerés nem elérhető, a szóbeli választ be is lehet gépelni (`transcriptSource: "typed"`) | Firefox/Safari alatt is használható maradjon |
 | D21 | A próbaérettségi hallási részének ideje legalább a becsült TTS-hanganyag (2 meghallgatás + felkészülés + szünetek) + 2 perc | a felolvasás sebessége gépenként eltér; a rész ne érjen véget, mielőtt a hanganyag kétszer elhangzik |

@@ -1,7 +1,8 @@
 import fs from "node:fs";
 import path from "node:path";
 import { describe, expect, it } from "vitest";
-import { configFor, examConfigProvenance, subjects, type PartId } from "@/lib/exam/config";
+import { configFor, examConfigProvenance, subjects, withSubject, type PartId } from "@/lib/exam/config";
+import { navGroups } from "@/lib/nav";
 import { speakingRubricRef } from "@/lib/exchange/prompts";
 import { rubricRefFor } from "@/lib/submissions";
 import { gradeFor } from "@/lib/scoring/exam";
@@ -141,6 +142,17 @@ for (const subject of configured) {
           if (p.features.categoryGroups.length) for (const g of p.features.categoryGroups) expect(cfg.errorCategories().groups.some((x) => x.id === g), `${p.id}: group ${g}`).toBe(true);
         }
       }
+    });
+
+    it("navigation and part lookups work with this subject as the current one", () => {
+      withSubject(subject.id, () => {
+        for (const level of LEVELS) {
+          const groups = navGroups(level);
+          const hrefs = groups.flatMap((g) => g.items.map((i) => i.href));
+          for (const p of cfg.structure().levels[level].parts) expect(hrefs, `${level}/${p.id}`).toContain(`/${p.slug}`);
+          expect(new Set(hrefs).size).toBe(hrefs.length);
+        }
+      });
     });
 
     it("every official config file records when and from where it was verified", () => {

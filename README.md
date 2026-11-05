@@ -1,7 +1,13 @@
-# Angol érettségi felkészítő
+# Érettségi felkészítő
 
-Lokális, egyfelhasználós gyakorló app az angol érettségire, **közép- és emelt szinten**.
-A felület magyar, a feladatok angolok, a magyarázatok magyarok.
+Lokális, egyfelhasználós gyakorló app az érettségire, **minden vizsgatárgyból, közép- és emelt szinten**.
+Indításkor kiválasztod a tantárgyat (magyar, matematika, történelem, angol, német, fizika, kémia, biológia, földrajz,
+digitális kultúra), és mindegyiknél ugyanazt a felületet kapod: feladatok magyarázattal, javítás, hibanapló, szabálytár,
+próbaérettségi. A felület és a magyarázatok magyarok; a nyelvi tárgyaknál a feladatok a célnyelven vannak.
+
+Minden tantárgy a saját hivatalos vizsgaszerkezetét követi (`config/subjects/<tantárgy>/`): a vizsgarészek, pontok, időkeretek,
+rubrikák, témakörök és hibakategóriák tantárgyanként vannak leírva, forrásmegjelöléssel. Az angol a legteljesebb; a többi tárgy
+kezdő feladatbankkal indul, amit a `/feladatok` paranccsal bővíthetsz.
 
 **Az app futás közben semmilyen fizetős AI API-t nem hív.** A feladatbankot és az írás- és szóbeli
 javítást a [Claude Code](https://claude.com/claude-code) végzi a projektben definiált parancsokkal,
@@ -11,6 +17,7 @@ vagy a javítást a Claude appba bemásolt prompttal kérheted. Nincs fiók, nin
 
 | Modul | Röviden |
 |---|---|
+| **Tantárgyválasztó** | a kezdőképernyő: tantárgyanként szint, visszaszámláló, a bank mérete és a becsült pontszám; a tantárgy bármikor váltható a menüből |
 | **Kezdőlap** | visszaszámláló, becsült pontszám vizsgarészenként a 12%-os küszöbbel és a céloddal, Mai terv, sorozat, heti gyakorlási idő, tartalomkészlet-jelző, javításra váró beadások |
 | **Szintfelmérő** | kb. 45 perces teszt mind a négy írásbeli részből → becsült CEFR-szint, erősségek és gyengeségek |
 | **Olvasott szöveg** | érettségi-típusú feladatok, gyakorló és vizsga mód, magyarázat minden kérdéshez (hol van a szövegben, miért rossz a többi opció), szavak felvétele szókártyába kattintással |
@@ -120,12 +127,12 @@ megtalálhatók parancsépítővel és Másolás gombokkal (forrás: `config/com
 
 | Parancs | Mit csinál | Példa |
 |---|---|---|
-| `/feladatok <rész> <szint> <darab> [témakör] [hibakategória]` | új feladatokat generál a tartalombankba (`content/`), magyarázatokkal és alternatív válaszokkal, majd validál | `/feladatok nyelvhelyesseg emelt 10` · `/feladatok olvasas kozep 4 utazas` · `/feladatok nyelvhelyesseg emelt 6 - tense` |
+| `/feladatok <tantárgy> <rész> <szint> <darab> [témakör] [hibakategória]` | új feladatokat generál a tartalombankba (`content/<tantárgy>/`), magyarázatokkal és alternatív válaszokkal, majd validál | `/feladatok angol nyelvhelyesseg emelt 10` · `/feladatok matematika rovid-feladatok kozep 4 egyenletek` · `/feladatok angol nyelvhelyesseg emelt 6 - tense` |
 | `/javitas [azonosító]` | kijavítja az `exchange/inbox/` beadásait a rubrika szerint → `exchange/outbox/` | `/javitas` |
-| `/szokincs [témakör] [szint] [darab]` | kiegészíti a hiányos szókártyákat; témakörrel új paklit generál | `/szokincs` · `/szokincs kornyezet emelt 40` |
+| `/szokincs <tantárgy> [témakör] [szint] [darab]` | kiegészíti a hiányos szókártyákat; témakörrel új paklit (nyelvnél szókincs, más tárgynál fogalmak) generál | `/szokincs angol` · `/szokincs angol kornyezet emelt 40` |
 | `/import-hivatalos <mappa>` | a `data/official/<mappa>/` hivatalos feladatsorát a bank formátumára alakítja | `/import-hivatalos 2024-majus-emelt` |
 
-`<rész>`: `olvasas`, `nyelvhelyesseg`, `hallas`, `iras`, `szobeli`, `szokincs` · `<szint>`: `kozep`, `emelt` ·
+`<tantárgy>`: a `config/subjects.json` azonosítói (`angol`, `matematika`, …) · `<rész>`: a tantárgy vizsgarészeinek URL-neve (angolnál `olvasas`, `nyelvhelyesseg`, `hallas`, `iras`, `szobeli`; matematikánál `rovid-feladatok`, `kidolgozott-feladatok`, `szobeli` – a Parancsok oldal felsorolja), továbbá `szokincs`, `szabaly`, `utmutato` · `<szint>`: `kozep`, `emelt` ·
 a témakör- és hibakategória-azonosítók a `config/subjects/<tantárgy>/topics.json` és `error-categories.json` fájlokban vannak
 (a `-` egy kihagyott paramétert jelent). Generálás után az appban: **Tartalom újratöltése** (vagy `npm run seed`, vagy a dev szerver újraindítása).
 
@@ -146,6 +153,7 @@ generált feladat soha nem jelenik meg hivatalosként.
   (az app mindig kiírja a pontos parancsot).
 - A Claude Code-os generálás és javítás a **Claude-előfizetés használati keretéből** megy, nem külön pénzből.
 - A becsült pontszám, jegy és CEFR-szint tájékoztató jellegű: a generált feladatok és az AI-javítás nem helyettesítik a hivatalos vizsgát.
+- A nem nyelvi tárgyak vizsgaadatai hírportálok és a hivatalos útmutatók indexelt szövege alapján készültek; ami nem volt ellenőrizhető, azt a config fájlok `meta.notes` mezője jelöli. Ábrát, térképet, képet az app nem mutat: a feladatok szövegesen írják le őket.
 - A felolvasás minősége a böngésző és az operációs rendszer hangjaitól függ.
 
 ## A vizsga adatai

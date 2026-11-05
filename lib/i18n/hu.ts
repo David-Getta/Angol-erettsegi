@@ -446,16 +446,27 @@ export const t = {
     welcome: "Üdv! Kezdd a szintfelmérővel – ebből áll össze a Mai terv.",
     howTo: "Hogyan használd?",
     howToHide: "Értem, elrejtem",
-    howToSteps: [
-      { text: "Töltsd ki a szintfelmérőt (kb. 45 perc) – ebből készül a személyre szabott Mai terv.", href: "/szintfelmero" },
-      { text: "Naponta 30–45 perc: a Mai terv feladatai és a szókártyák ismétlése.", href: "/szokincs/ismetles" },
-      { text: "Minden hibád a Hibanaplóba kerül: olvasd el a szabályát a Szabálytárban, és próbáld újra a hibáidat.", href: "/szabalytar" },
-      { text: "Hetente 1–2 írásfeladat: előtte nézd meg a szövegtípus útmutatóját, beadás után Claude Code-ban /javitas, majd az átírás és a mintamegoldás.", href: "/utmutatok" },
-      { text: "A szóbelire témakörönként készülj: kérdések, szituációk, mintaválaszok, kifejezések – és hallgasd vissza a saját hangodat.", href: "/temakorok" },
-      { text: "A hallást a diktálással is gyakorold: rövid mondatok a beszélők hangján, szóról szóra ellenőrizve.", href: "/hallas/diktalas" },
-      { text: "Havonta egy teljes próbaérettségi a hivatalos időkeretekkel.", href: "/probaerettsegi" },
-    ],
+    howToSteps: (language: boolean): { text: string; href: string }[] =>
+      language
+        ? [
+            { text: "Töltsd ki a szintfelmérőt (kb. 45 perc) – ebből készül a személyre szabott Mai terv.", href: "/szintfelmero" },
+            { text: "Naponta 30–45 perc: a Mai terv feladatai és a szókártyák ismétlése.", href: "/szokincs/ismetles" },
+            { text: "Minden hibád a Hibanaplóba kerül: olvasd el a szabályát a Szabálytárban, és próbáld újra a hibáidat.", href: "/szabalytar" },
+            { text: "Hetente 1–2 írásfeladat: előtte nézd meg a szövegtípus útmutatóját, beadás után Claude Code-ban /javitas, majd az átírás és a mintamegoldás.", href: "/utmutatok" },
+            { text: "A szóbelire témakörönként készülj: kérdések, szituációk, mintaválaszok, kifejezések – és hallgasd vissza a saját hangodat.", href: "/temakorok" },
+            { text: "A hallást a diktálással is gyakorold: rövid mondatok a beszélők hangján, szóról szóra ellenőrizve.", href: "/hallas/diktalas" },
+            { text: "Havonta egy teljes próbaérettségi a hivatalos időkeretekkel.", href: "/probaerettsegi" },
+          ]
+        : [
+            { text: "Töltsd ki a szintfelmérőt – ebből készül a személyre szabott Mai terv.", href: "/szintfelmero" },
+            { text: "Naponta 30–45 perc: a Mai terv feladatai és a fogalomkártyák ismétlése.", href: "/szokincs/ismetles" },
+            { text: "Minden hibád a Hibanaplóba kerül: olvasd el a hozzá tartozó szabályt, módszert a Szabálytárban, és próbáld újra.", href: "/szabalytar" },
+            { text: "Hetente 1–2 kidolgozott feladat vagy esszé: előtte nézd meg az útmutatót, beadás után Claude Code-ban /javitas, majd a mintamegoldás.", href: "/utmutatok" },
+            { text: "A szóbelire tételenként készülj: a tétel szempontjai, forrásai, kulcspontjai és a mintafelelet.", href: "/temakorok" },
+            { text: "Havonta egy teljes próbaérettségi a hivatalos időkeretekkel.", href: "/probaerettsegi" },
+          ],
     cefr: "Becsült szint",
+    diagnosticResult: "Szintfelmérő",
   },
 
   diagnostic: {

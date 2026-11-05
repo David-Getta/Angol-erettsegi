@@ -8,7 +8,7 @@ import { Card, btn } from "@/components/ui";
 import { t } from "@/lib/i18n/hu";
 
 /** First-steps card on the dashboard until the student hides it (settings.onboardingDone). */
-export function HowTo() {
+export function HowTo({ language }: { language: boolean }) {
   const [pending, start] = useTransition();
   const router = useRouter();
   return (
@@ -32,7 +32,7 @@ export function HowTo() {
       }
     >
       <ol className="list-decimal space-y-1.5 pl-5 text-sm" data-testid="howto">
-        {t.dashboard.howToSteps.map((step) => (
+        {t.dashboard.howToSteps(language).map((step) => (
           <li key={step.href}>
             <Link href={step.href} className="hover:underline">
               {step.text}

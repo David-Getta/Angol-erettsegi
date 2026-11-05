@@ -1,6 +1,12 @@
-# CLAUDE.md – Angol érettségi felkészítő app
+# CLAUDE.md – Érettségi felkészítő app
 
-Lokális, egyfelhasználós Next.js app egy magyar gimnazistának (angol érettségi, 2027 tavasz, közép és emelt szint).
+Lokális, egyfelhasználós Next.js app egy magyar gimnazistának (érettségi 2027 tavasz, közép és emelt szint) **minden
+vizsgatárgyból**: a kezdőképernyőn tantárgyat választ (`config/subjects.json`: magyar, matematika, történelem, angol, német, fizika,
+kémia, biológia, földrajz, digitális kultúra), és minden tantárgynál ugyanazt a felületet kapja. Minden tantárgy a saját hivatalos
+vizsgaszerkezetét követi: `config/subjects/<tantárgy>/` (szerkezet, pontok, rubrikák, témakörök, hibakategóriák), a tartalom
+`content/<tantárgy>/` alatt. Az öt vizsgarész-hely (`reading`, `language-use`, `listening` = objektív; `writing` = beadás;
+`speaking` = szóbeli) tantárgyanként más nevet, URL-részt és funkciókat kap a `structure.json`-ból (pl. matematika: `rovid-feladatok`,
+`kidolgozott-feladatok`, `szobeli`). Az aktuális tantárgy a beállításokban van (`examConfig` = az aktuális, `configFor(id)` = bármelyik).
 **Az app futás közben semmilyen AI API-t nem hív.** Minden AI-munkát Claude Code végez a `.claude/commands/` parancsokkal:
 a feladatbankot fájlokba generálja (`content/`), az írás- és szóbeli javítást a csere-mappán keresztül végzi (`exchange/`).
 
