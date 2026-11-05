@@ -40,7 +40,7 @@
       }
     ],
     "notes": [
-      "Ellenőrzött (2024 óta, Nat2020): közép írásbeli 180 perc, 100 pont (I. rész 45 perc / 30 pont, II. rész 135 perc / 70 pont: II/A 3 feladat, II/B 3-ból 2 × 17 pont); közép szóbeli 15 perc, 50 pont, csak 12–24,99 %-os írásbeli után; emelt írásbeli 240 perc, 115 pont (I. rész 4 feladat 51 pont, II. rész 5-ből 4 × 16 pont); emelt szóbeli 20 perc, 35 pont; felkészülés 30 perc.",
+      "Ellenőrzött (2024 óta, Nat2020): közép írásbeli 180 perc, 100 pont (I. rész 45 perc / 30 pont, II. rész 135 perc / 70 pont: II/A 3 feladat együtt 36 pont, II/B 3-ból 2 × 17 pont); közép szóbeli 15 perc, 50 pont, csak 12–24,99 %-os írásbeli után; emelt írásbeli 240 perc, 115 pont (I. rész 4 feladat 51 pont, II. rész 5-ből 4 × 16 pont); emelt szóbeli 20 perc, 35 pont; felkészülés 30 perc.",
       "App-modell: emelt szinten az I. rész feladatait az app rövid, eredménnyel ellenőrizhető feladatokként gyakoroltatja; az emelt I./II. rész percbeosztása a 240 perc javasolt felosztása (a vizsgán szabadon osztható).",
       "App-paraméter, nem hivatalos adat: mockTaskCount (hány feladat kerül egy próbaérettségibe), az írásbeli részek közti percbeosztás ott, ahol a vizsgán egyben kapják az időt, a textLength és a részek intro szövege.",
       "Az ellenőrzés hírportál-cikkek (Eduline, Telex) és a hivatalos dokumentumok keresőben indexelt szövege alapján történt; az OH oldalát a futtató környezet hálózata nem engedte közvetlenül megnyitni – a hivatalos vizsgaleírással érdemes összevetni."
@@ -83,7 +83,7 @@
           "maxPoints": 70,
           "mockTaskCount": 2,
           "notes": [
-            "II/A: 3 kötelező feladat (9–12 pont); II/B: 3 feladatból 2 választandó (17–17 pont) – jelöld, melyiket hagyod ki, különben az utolsó esik ki."
+            "II/A: 3 kötelező feladat (együtt 36 pont, feladatonként kb. 12); II/B: 3 feladatból 2 választandó (17–17 pont) – jelöld, melyiket hagyod ki, különben az utolsó esik ki."
           ],
           "features": {},
           "intro": "Kidolgozott feladatok: a megoldás menetét, indoklással írod le (szövegként, képletekkel). A javítást a Claude Code (/javitas) vagy a Claude app végzi a hivatalos javítási elvek szerint: részpontok, a gondolatmenet és a számolás külön.",

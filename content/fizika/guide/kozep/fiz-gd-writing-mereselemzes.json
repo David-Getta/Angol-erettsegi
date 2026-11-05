@@ -1,0 +1,136 @@
+{
+  "schemaVersion": 1,
+  "id": "fiz-gd-writing-mereselemzes",
+  "subject": "fizika",
+  "revision": 1,
+  "level": "kozep",
+  "source": "generated",
+  "topic": "utmutato",
+  "title": "Méréselemzés",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "guide",
+  "type": "writing",
+  "target": "mereselemzes",
+  "summaryHu": "A méréselemzésben egy leírt mérés adatsorát kell kiértékelni: felismerni a mennyiségek közti összefüggést, számolással vagy (leírt) grafikonnal meghatározni a keresett állandót, következtetést levonni, és megbecsülni a mérés hibáit. A javítók a helyes eredmények mellett a kiértékelés módszerét, a fizikai indoklást és a hibák szakszerű elemzését értékelik.",
+  "steps": [
+    {
+      "title": "Értsd meg a mérési elvet",
+      "explanation": "Melyik összefüggés alapján mérünk (F = D·Δl, T = 2π√(l/g), A = A₀·2^(−t/T½), R = U/I)? Mely mennyiségeket mértek közvetlenül, és melyik a keresett?",
+      "tips": [
+        "Írd fel az összefüggést, és jelöld benne a mért és a keresett mennyiségeket.",
+        "Nézd meg, kell-e előbb korrekció (pl. háttérsugárzás levonása)."
+      ]
+    },
+    {
+      "title": "Készíts táblázatot, számolj",
+      "explanation": "Minden mérési pontra számold ki a származtatott mennyiséget (F/Δl, T², ln A, U/I), és tedd táblázatba. Ellenőrizd, közel állandó-e a hányados, illetve egyenesre esnek-e a pontok.",
+      "tips": [
+        "Váltsd SI-be az adatokat (cm → m).",
+        "A kilógó pontot jelöld meg, ne hagyd ki szó nélkül."
+      ]
+    },
+    {
+      "title": "Grafikus kiértékelés",
+      "explanation": "Ha ábrázolni kell: tengelyek mennyiséggel és egységgel, alkalmas skála, a pontokon át kiegyenlítő egyenes. A meredekséget két, egymástól távoli pontjából számold, és fizikailag értelmezd (meredekség = D, 4π²/g, −ln2/T½).",
+      "tips": [
+        "Nem lineáris összefüggést linearizálj (T²–l, ln A – t).",
+        "Az egyenes tengelymetszete rendszeres hibára utalhat."
+      ]
+    },
+    {
+      "title": "Következtetés",
+      "explanation": "Mondd ki, mit mutatnak az adatok („a megnyúlás egyenesen arányos az erővel, tehát teljesül a Hooke-törvény”), és add meg az eredményt kerekítve, mértékegységgel.",
+      "tips": [
+        "A következtetés a SAJÁT adatokból jöjjön, ne a tankönyvből.",
+        "Vesd össze az irodalmi értékkel, ha van."
+      ]
+    },
+    {
+      "title": "Hibaelemzés",
+      "explanation": "Nevezd meg a konkrét hibaforrásokat (leolvasás, reakcióidő, statisztikus ingadozás, rendszeres hiba), becsüld meg a relatív hibát, és javasolj javítást (több mérés, nagyobb értékek mérése, jobb műszer).",
+      "tips": [
+        "Kis mért értéknél nagyobb a relatív hiba.",
+        "Radioaktív mérésnél a statisztikus hiba kb. √N."
+      ]
+    }
+  ],
+  "phrases": [
+    {
+      "group": "Elv",
+      "en": "A mérés elve a … összefüggés: …",
+      "hu": "A mérési elv megfogalmazása."
+    },
+    {
+      "group": "Kiértékelés",
+      "en": "A … hányados a mérésekben közel állandó, átlaga …",
+      "hu": "Arányosság igazolása."
+    },
+    {
+      "group": "Grafikon",
+      "en": "A pontok jó közelítéssel egy origón átmenő egyenesre esnek.",
+      "hu": "Lineáris kapcsolat igazolása."
+    },
+    {
+      "group": "Grafikon",
+      "en": "A kiegyenlítő egyenes meredeksége …, ebből …",
+      "hu": "A keresett állandó a meredekségből."
+    },
+    {
+      "group": "Eredmény",
+      "en": "A mérés eredménye: … ± … (mértékegység).",
+      "hu": "Eredmény hibával."
+    },
+    {
+      "group": "Hiba",
+      "en": "Relatív hiba = abszolút hiba / mért érték",
+      "hu": "Hibabecslés."
+    },
+    {
+      "group": "Hiba",
+      "en": "Δg/g ≈ Δl/l + 2·ΔT/T",
+      "hu": "Hibaterjedés szorzatban, hatványban (emelt)."
+    },
+    {
+      "group": "Javítás",
+      "en": "A mérés pontosítható, ha …",
+      "hu": "Javaslat a mérés javítására."
+    }
+  ],
+  "mistakes": [
+    {
+      "wrong": "A végeredményt a tankönyvi értékkel adom meg.",
+      "right": "A végeredményt a mérési adatokból számolom, és csak összevetem az irodalmi értékkel.",
+      "why": "A feladat a mérés kiértékelését értékeli, nem a lexikális tudást."
+    },
+    {
+      "wrong": "„A hibát a pontatlan mérés okozta.”",
+      "right": "„A legnagyobb hibaforrás a ±1 mm-es leolvasási hiba, ami a 2,1 cm-es megnyúlásnál kb. 5 %.”",
+      "why": "A hibaforrást konkrétan és lehetőleg számszerűen kell megadni."
+    },
+    {
+      "wrong": "Két szomszédos mérési pontból számolom a meredekséget.",
+      "right": "A kiegyenlítő egyenes két távoli pontjából számolom.",
+      "why": "Szomszédos pontoknál a mérési hiba erősen torzítja a meredekséget."
+    }
+  ],
+  "checklist": [
+    "Leírtam a mérési elvet (összefüggés, mért mennyiségek).",
+    "A származtatott mennyiségeket táblázatban kiszámoltam.",
+    "A grafikon tengelyeit egységgel jelöltem, kiegyenlítő egyenest húztam.",
+    "Az eredményt mértékegységgel és (emelten) hibával adtam meg.",
+    "Konkrét hibaforrásokat és javítási javaslatot írtam."
+  ],
+  "timing": "Kb. 35 perc: 5 perc az elv és az adatok áttekintése, 15 perc táblázat és kiértékelés, 10 perc következtetés és hibaelemzés, 5 perc ellenőrzés. A grafikonra (ha kell) kb. 5–8 percet szánj.",
+  "example": {
+    "title": "Minta: rugóállandó a mérési adatokból",
+    "text": "Mérés: F = 0,5; 1,0; 1,5; 2,0; 2,5 N; Δl = 2,1; 3,9; 6,0; 8,1; 9,9 cm.\nF/Δl: 23,8; 25,6; 25,0; 24,7; 25,3 N/m → átlag ≈ 25 N/m.\nKövetkeztetés: a hányados közel állandó, tehát F ~ Δl (Hooke-törvény), D ≈ 25 N/m. A legnagyobb relatív hibája az első mérésnek van (±1 mm a 2,1 cm-nél ≈ 5 %).",
+    "notes": [
+      "A kiértékelés táblázatos, a következtetés a saját adatokból jön, a hibaforrás konkrét és számszerű."
+    ]
+  },
+  "levelNotes": {
+    "kozep": "Középszinten a méréselemzés a jelenségértelmezéssel együtt választható 3. feladat (16 pont): egyszerű mérés (rugó, inga, ellenállás, lejtő) adatsora, arányosság felismerése, átlagolás, egyszerű hibaforrások.",
+    "emelt": "Emelt szinten a III. rész egyik feladata lehet méréselemző (11–12 pont): nem lineáris összefüggés linearizálása (T²–l, ln A – t), meredekségből állandó, háttérkorrekció, hibaterjedés és statisztikus hiba becslése."
+  }
+}

@@ -61,7 +61,8 @@
       "id": "2",
       "kind": "text",
       "prompt": "Írd fel az oltott mész képletét!",
-      "answer": ["Ca(OH)₂", "Ca(OH)2", "kalcium-hidroxid", "kalcium hidroxid"],
+      "answer": ["Ca(OH)₂", "Ca(OH)2", "kalcium-hidroxid", "kalcium hidroxid", "Kalcium-hidroxid", "Kalcium hidroxid"],
+      "caseSensitive": true,
       "maxWords": 2,
       "category": "anyagismeret",
       "explanation": "Helyes: Ca(OH)₂ (kalcium-hidroxid). A kalciumion kétszeresen pozitív (Ca²⁺), a hidroxidion egyszeresen negatív (OH⁻), ezért egy kalciumionhoz két hidroxidion tartozik."

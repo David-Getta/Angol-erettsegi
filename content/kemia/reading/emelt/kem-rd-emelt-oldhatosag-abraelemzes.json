@@ -27,7 +27,8 @@
     "id": "0",
     "kind": "text",
     "prompt": "Melyik anyag oldhatósága csökken a hőmérséklet emelésével?",
-    "answer": ["Ca(OH)₂", "Ca(OH)2", "kalcium-hidroxid", "kalcium hidroxid"],
+    "answer": ["Ca(OH)₂", "Ca(OH)2", "kalcium-hidroxid", "kalcium hidroxid", "Kalcium-hidroxid", "Kalcium hidroxid"],
+      "caseSensitive": true,
     "maxWords": 2,
     "category": "szovegertelmezes",
     "explanation": "Helyes: a kalcium-hidroxid, Ca(OH)₂. A táblázatban csak az ő oldhatósága kisebb 80 °C-on (0,09 g), mint 20 °C-on (0,17 g); a szöveg szerint az oldódása exoterm."

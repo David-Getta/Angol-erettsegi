@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "id": "mag-sp-emelt-szovegkohezio",
+  "subject": "magyar",
+  "revision": 1,
+  "level": "emelt",
+  "source": "generated",
+  "topic": "szoveg",
+  "title": "A szöveg összetartó ereje – szövegkohézió",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "speaking",
+  "type": "nyelvtan-tetel",
+  "partNumber": 2,
+  "instructionsHu": "Mutassa be, mitől lesz egy mondatsor szöveg! Fejtse ki a jelentésbeli és a grammatikai kapcsolóelemek szerepét, és elemezze a megadott szövegrészlet kohéziós eszközeit!",
+  "prompts": [
+    "A szöveg fogalma és ismérvei (kohézió, koherencia, a beszédhelyzethez illeszkedés)",
+    "Jelentésbeli kapcsolóelemek: ismétlés, szinonimák, hiperonimák, téma–réma szerkezet",
+    "Grammatikai kapcsolóelemek: névmások, névelők, kötőszók, egyeztetés, előre- és visszautalás",
+    "A megadott szöveg elemzése"
+  ],
+  "sources": [
+    {
+      "title": "Szöveg az elemzéshez",
+      "text": "Nagyapám minden tavasszal elültette a paradicsompalántákat a kert végében. Ő maga nevelte őket, márciusban, a konyhaablakban. A növényeket aztán gondosan karózta, mert – ahogy mondta – a jó termés a türelmen múlik. Idén először én ültettem el őket. Ezért, bár a kezem még ügyetlen volt, úgy éreztem, hogy ő is ott áll mellettem."
+    }
+  ],
+  "keyPoints": [
+    "A szöveg nem mondatok halmaza: a mondatok jelentésben és nyelvtanilag is összefüggenek (kohézió), egységes témájúak, és illeszkednek a beszédhelyzethez (koherencia).",
+    "Jelentésbeli kapcsolóelemek: a kulcsszó ismétlése, a szinonimák és a fölérendelt fogalmak (paradicsompalánták → növények), a téma–réma (ismert–új) haladás.",
+    "Grammatikai kapcsolóelemek: névmások (nagyapám → ő; palántákat → őket), a határozott névelő (a kert, a növényeket – ismert dolog), kötőszók (aztán, mert, ezért, bár), az igeidők egysége.",
+    "Visszautalás (anafora) és előreutalás (katafora): a szöveg névmásai visszafelé utalnak; előreutalásra példa lehet egy „azt …, hogy” szerkezet („úgy éreztem, hogy …”).",
+    "Kötőszók szerepe: időrend (aztán), ok (mert), következmény (ezért), megengedés (bár).",
+    "Időbeli kohézió: minden tavasszal → márciusban → idén; a múltbeli szokás és a jelenhez közeli egyszeri esemény szembeállítása.",
+    "A szöveg gondolati íve: a nagyapa szokása → a beszélő átveszi → érzelmi kapcsolat; a záró „ő is ott áll mellettem” visszautal a szöveg elejére (keret)."
+  ],
+  "speakingSeconds": 480,
+  "prepSeconds": 600,
+  "usefulPhrases": [
+    { "en": "kohézió – koherencia", "hu": "a szöveg nyelvi összetartó ereje, illetve értelmi egysége, jelentésbeli összefüggése" },
+    { "en": "anafora (visszautalás) – katafora (előreutalás)", "hu": "a szövegtani utalás két iránya (a stilisztikai anaforától meg kell különböztetni!)" },
+    { "en": "téma – réma", "hu": "a mondat ismert, kiinduló része és az új információt hordozó része" },
+    { "en": "hiperonima (fölérendelt fogalom)", "hu": "pl. paradicsompalánta → növény" },
+    { "en": "kapcsolóelem, kötőelem", "hu": "minden nyelvi eszköz, amely a mondatokat összeköti" }
+  ],
+  "sampleAnswer": {
+    "turns": [
+      {
+        "speaker": "candidate",
+        "text": "A szöveg nem egyszerűen mondatok egymásutánja. Akkor beszélünk szövegről, ha a mondatok jelentésben és nyelvtanilag is összefüggenek, egységes témájúak, és illeszkednek a beszédhelyzethez. A nyelvi összetartó erőt kohéziónak, az értelmi egységet koherenciának nevezzük. A kapcsolatot jelentésbeli és grammatikai kapcsolóelemek teremtik meg.\n\nA jelentésbeli kapcsolóelemek közé tartozik a kulcsszó ismétlése, a szinonimák és a fölérendelt fogalmak használata. A megadott szövegben a „paradicsompalántákat” szót a harmadik mondatban „A növényeket” fölérendelt fogalom váltja fel, ami elkerüli a szóismétlést, mégis egyértelmű marad, miről van szó. A mondatok téma–réma szerkezete is összeköti a szöveget: az előző mondat új információja a következő mondat kiindulópontja lesz.\n\nA grammatikai kapcsolóelemek közül a legfontosabbak a névmások. A „Nagyapám” szóra a második mondat „Ő” névmása utal vissza, a palántákra pedig az „őket”. Ezt visszautalásnak, szövegtani anaforának nevezzük. A határozott névelő is kohéziós eszköz: „a kert”, „a növényeket” azt jelzi, hogy ismert, azonosítható dolgokról van szó. A kötőszók a mondatok logikai viszonyát fejezik ki: az „aztán” időrendet, a „mert” okot, az „Ezért” következményt, a „bár” megengedést jelöl. A szövegben előreutalás is van: az „úgy éreztem, hogy” szerkezet előre jelzi a mellékmondat tartalmát.\n\nFontos az időbeli kohézió is. A „minden tavasszal” és a „márciusban” a nagyapa múltbeli szokását jelöli, az „Idén először” pedig egy új, egyszeri eseményt állít szembe vele. A szöveg zárómondata, „úgy éreztem, hogy ő is ott áll mellettem”, visszautal a nagyapára, és ezzel keretet ad: a gyakorlati cselekvés érzelmi jelentést kap. Így a rövid szöveg egységes, jól összefüggő egész."
+      }
+    ],
+    "notes": [
+      "Tartalom: a felelet definiálja a szöveget és a kohéziót, majd rendszerezetten (jelentésbeli – grammatikai elemek) halad; minden fogalomhoz a forrásból hoz példát.",
+      "Emelt szintű többlet: szövegtani anafora és katafora, téma–réma, hiperonima, időbeli kohézió és a keretes zárás felismerése.",
+      "Nyelvi minőség: szakszerű, de érthető megfogalmazás, logikus felépítés, összegző zárómondat."
+    ]
+  }
+}

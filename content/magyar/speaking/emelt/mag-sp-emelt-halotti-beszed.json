@@ -1,0 +1,79 @@
+{
+  "schemaVersion": 1,
+  "id": "mag-sp-emelt-halotti-beszed",
+  "subject": "magyar",
+  "revision": 1,
+  "level": "emelt",
+  "source": "generated",
+  "topic": "nyelvtortenet",
+  "title": "Nyelvemlékeink – a Halotti beszéd nyelve",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "speaking",
+  "type": "nyelvtan-tetel",
+  "partNumber": 2,
+  "instructionsHu": "Mutassa be a magyar nyelvtörténet korszakait és a nyelvemlékek típusait! Elemezze a Halotti beszéd megadott kezdetét: hasonlítsa össze a mai nyelvállapottal hangtani, alaktani és szókincsbeli szempontból!",
+  "prompts": [
+    "A magyar nyelv eredete és a nyelvtörténet korszakai",
+    "A nyelvemlékek típusai: szórványemlék, glossza, szövegemlék; a legfontosabb nyelvemlékek",
+    "A Halotti beszéd kezdetének nyelvi elemzése a mai nyelvvel összevetve"
+  ],
+  "sources": [
+    {
+      "title": "Halotti beszéd és könyörgés (1192–1195 körül) – kezdete eredeti írásmóddal",
+      "text": "Latiatuc feleym zumtuchel mic vogmuc. yſa pur eſ chomuv uogmuc."
+    },
+    {
+      "title": "Ugyanez mai betűkkel (olvasati változat) és mai magyar nyelven",
+      "text": "Látjátuk feleim szümtükhel, mik vogymuk: isa, por ës homou vogymuk.\n(Látjátok, feleim, szemetekkel, mik vagyunk: bizony, por és hamu vagyunk.)"
+    }
+  ],
+  "keyPoints": [
+    "A magyar az uráli nyelvcsalád finnugor ágának ugor csoportjába tartozik; legközelebbi rokonai a manysi és a hanti.",
+    "Korszakok: ősmagyar kor (a honfoglalásig, 896), ómagyar kor (896–1526), középmagyar kor (1526–1772), újmagyar kor (1772-től; a 20. századtól gyakran külön tárgyalják a legújabb időszakot).",
+    "Nyelvemlék-típusok: szórványemlék (magyar szavak idegen nyelvű szövegben, pl. Tihanyi alapítólevél, 1055), glossza (lapszéli vagy sorközi magyar megjegyzés), szövegemlék (összefüggő magyar szöveg).",
+    "A Halotti beszéd és könyörgés (1192–1195 k.) az első összefüggő magyar szövegemlék, a Pray-kódexben maradt fenn; temetési prédikáció és könyörgés.",
+    "Írásmód: a latin ábécé betűit használja, ezért egy betű több hangot is jelölhet, és egy hangot többféleképpen jelölhetnek (pl. c = k: „Latiatuc”, „mic”; z = sz: „zumtuchel”).",
+    "Hangtani különbségek: „szüm” (szem), „homou” (hamu – a szóban még o hang és szóvégi ou kettőshangzó állt), „ës” (és).",
+    "Alaktani különbségek: „vogymuk” (vagyunk), „-tük” birtokos személyjel (-tek), a „-hel” rag a mai -val/-vel előzménye („szümtükhel” = szemetekkel).",
+    "Szókincs: „isa” (bizony) mára kihalt szó; a „por és hamu” bibliai kifejezés a mulandóságot fejezi ki.",
+    "A nyelvemlék tanúsítja, hogy a magyar már a 12. század végén alkalmas volt egyházi, retorikus szöveg megformálására."
+  ],
+  "speakingSeconds": 480,
+  "prepSeconds": 600,
+  "usefulPhrases": [
+    {
+      "en": "szórványemlék – glossza – szövegemlék",
+      "hu": "a nyelvemlékek három fő típusa"
+    },
+    {
+      "en": "olvasat",
+      "hu": "a régi írásmódú szöveg feltételezett korabeli kiejtése mai betűkkel"
+    },
+    {
+      "en": "hangtani / alaktani / szókincsbeli változás",
+      "hu": "az összevetés három szempontja"
+    },
+    {
+      "en": "kihalt szó (archaizmus)",
+      "hu": "a mai nyelvből eltűnt szó, pl. isa = bizony"
+    },
+    {
+      "en": "A mai alakkal összevetve …",
+      "hu": "a régi és a mai nyelvállapot összehasonlítása"
+    }
+  ],
+  "sampleAnswer": {
+    "turns": [
+      {
+        "speaker": "candidate",
+        "text": "A magyar nyelv az uráli nyelvcsalád finnugor ágának ugor csoportjába tartozik, legközelebbi rokonai a manysi és a hanti. A nyelv történetét korszakokra osztjuk: az ősmagyar kor a honfoglalásig, 896-ig tart, az ómagyar kor 896-tól 1526-ig, a mohácsi csatáig, a középmagyar kor 1526-tól 1772-ig, a felvilágosodás kezdetéig, ezután következik az újmagyar kor, amelyen belül a 20. századtól gyakran külön tárgyalják a legújabb időszakot.\n\nA korai nyelvállapotról a nyelvemlékek tájékoztatnak. Három fő típusuk van: a szórványemlékben magyar szavak, főleg helynevek szerepelnek egy latin szövegben, ilyen az 1055-ös Tihanyi alapítólevél. A glossza lapszéli vagy sorközi magyar megjegyzés, a szövegemlék pedig összefüggő magyar szöveg. Ilyen az első összefüggő magyar nyelvű szövegünk, a Halotti beszéd és könyörgés, amely 1192 és 1195 között keletkezett, és a Pray-kódexben maradt fenn. Egy temetési prédikáció és egy könyörgés.\n\nA megadott kezdősor jól mutatja a nyelv változását. Először az írásmód tűnik fel: a latin ábécé betűit használták, ezért például a c betű k hangot jelöl a „Latiatuc” és a „mic” szóban, a z pedig sz-t a „zumtuchel” elején. Hangtani különbség, hogy a „szüm” alakból mára „szem” lett, a „homou” alakban pedig még o hang és szóvégi ou kettőshangzó állt, ebből alakult ki a mai „hamu”. Alaktani különbség a „vogymuk”, amely a mai „vagyunk” előzménye, valamint a „szümtükhel” szó: itt a „-tük” birtokos személyjel a mai „-tek” megfelelője, a „-hel” rag pedig a mai -val, -vel előzménye. A szókincsben is van eltérés: az „isa” szó, amely azt jelenti, hogy bizony, mára kihalt. A „por és hamu” bibliai kifejezés a mulandóságra figyelmeztet. A Halotti beszéd így azt is bizonyítja, hogy a magyar nyelv már a 12. század végén alkalmas volt egy igényes, retorikus szöveg megformálására."
+      }
+    ],
+    "notes": [
+      "Tartalom: a felelet a rokonságtól a korszakolásig és a nyelvemlék-típusokig felépíti az elméleti keretet, majd a forrást három szempontból (írásmód és hangtan, alaktan, szókincs) elemzi.",
+      "Forráshasználat: konkrét szóalakokat vet össze a mai megfelelőikkel, és meg is magyarázza a változást (pl. -hel → -val/-vel).",
+      "Nyelvi minőség: pontos szakszavak (szórványemlék, glossza, birtokos személyjel, rag), világos, logikus előadás."
+    ]
+  }
+}

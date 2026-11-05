@@ -1,0 +1,144 @@
+{
+  "schemaVersion": 1,
+  "id": "fiz-gd-speaking-tetel",
+  "subject": "fizika",
+  "revision": 1,
+  "level": "kozep",
+  "source": "generated",
+  "topic": "utmutato",
+  "title": "Szóbeli tétel: téma + kísérlet / mérés",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "guide",
+  "type": "speaking",
+  "target": "tetel",
+  "summaryHu": "A fizika szóbeli tétele két részből áll: egy téma összefüggő kifejtéséből és egy hozzá kapcsolódó kísérlet vagy mérés bemutatásából. Középszinten a tartalom 35, a kísérlet 20, a felépítés 5 pontot ér (60 pont); emelt szinten a tartalom 25, a mérés (elvégzés, jegyzőkönyv, kiértékelés) 20, a felépítés 5 pontot (50 pont). A vizsgáztatók a fogalmak és törvények pontosságát, a példákat, a kísérlet értelmezését és az önálló, logikus előadást értékelik.",
+  "steps": [
+    {
+      "title": "Vázlat a felkészülési időben",
+      "explanation": "A 30 perces felkészülés alatt írj vázlatot a tétel szempontjai szerint: fogalmak (jel, egység), törvények (képlet, feltétel), példák, alkalmazások, tudománytörténet; és készítsd elő a kísérletet (eszközök, menet, adattáblázat).",
+      "tips": [
+        "Emelt szinten a mérést ekkor végzed el – kezdd vele, hogy maradjon idő a kiértékelésre.",
+        "A vázlat legyen áttekinthető kulcsszavas lista, ne kész szöveg."
+      ]
+    },
+    {
+      "title": "Bevezetés és a téma kifejtése",
+      "explanation": "Bevezető mondat, majd logikus sorrend: definíciók → törvények → összefüggések, grafikonok → példák, alkalmazások. Minden képletnél mondd meg a betűk jelentését és az érvényesség feltételét.",
+      "tips": [
+        "Rajzolj a táblára (grafikon, erőábra, kapcsolási rajz), ha van lehetőség.",
+        "Emelt szinten egy rövid levezetés (pl. lengésidő, energiamegmaradás) sokat ér."
+      ]
+    },
+    {
+      "title": "A kísérlet vagy mérés",
+      "explanation": "Mutasd be: eszközök, összeállítás, menet, tapasztalat konkrét mért értékekkel, kiértékelés (számolás vagy grafikon), következtetés („Ez azt mutatja, hogy…”) és hibaforrások.",
+      "tips": [
+        "Mérésnél az eredményt hibával add meg.",
+        "Kapcsold vissza a kísérletet a téma törvényeihez."
+      ]
+    },
+    {
+      "title": "Összefoglalás és kérdések",
+      "explanation": "Egy-két mondatban foglald össze a lényeget, majd válaszolj a vizsgáztató kérdéseire: röviden, indoklással, a tanult törvényekre hivatkozva.",
+      "tips": [
+        "Ha nem érted a kérdést, kérdezz vissza.",
+        "A kérdésekre adott jó válasz a felépítés és a tartalom pontjait is javíthatja."
+      ]
+    }
+  ],
+  "phrases": [
+    {
+      "group": "Bevezetés",
+      "en": "A tételem … . Először …, majd …, végül bemutatom a kísérletet.",
+      "hu": "Szerkezetet adó nyitómondat."
+    },
+    {
+      "group": "Fogalom",
+      "en": "A … az a mennyiség, amely …; jele …, mértékegysége …",
+      "hu": "Definíció."
+    },
+    {
+      "group": "Törvény",
+      "en": "A … törvény kimondja, hogy …, ha …",
+      "hu": "Törvény feltétellel."
+    },
+    {
+      "group": "Képlet",
+      "en": "Képlettel: …, ahol … a …",
+      "hu": "Képlet a betűk jelentésével."
+    },
+    {
+      "group": "Példa",
+      "en": "Ezen alapul például a/az …",
+      "hu": "Alkalmazás."
+    },
+    {
+      "group": "Kísérlet",
+      "en": "A kísérlethez … eszközöket használtam; először …, majd …",
+      "hu": "A kísérlet menete."
+    },
+    {
+      "group": "Tapasztalat",
+      "en": "Azt mértem, hogy …",
+      "hu": "Konkrét mért adatok."
+    },
+    {
+      "group": "Értelmezés",
+      "en": "Ez azt mutatja, hogy …, mert …",
+      "hu": "A kísérlet fizikai magyarázata."
+    },
+    {
+      "group": "Hiba",
+      "en": "A legnagyobb hibaforrás …; a mérés pontosítható, ha …",
+      "hu": "Hibaelemzés."
+    },
+    {
+      "group": "Zárás",
+      "en": "Összefoglalva: …",
+      "hu": "Lezárás."
+    }
+  ],
+  "mistakes": [
+    {
+      "wrong": "Csak a kísérletről beszélek, a téma kifejtése rövid.",
+      "right": "A téma kifejtésére szánom az idő nagyobb részét (közép 8–9, emelt kb. 10 perc).",
+      "why": "A tartalom a legtöbb pontot érő szempont."
+    },
+    {
+      "wrong": "A kísérlet tapasztalatát elmondom, a magyarázatot nem.",
+      "right": "A tapasztalat után megmondom, melyik törvény magyarázza.",
+      "why": "A kísérleti pontok fele az értelmezésért jár."
+    },
+    {
+      "wrong": "A képleteket a betűk jelentése nélkül mondom.",
+      "right": "Minden képletnél megmondom, mit jelentenek a betűk és mi a mértékegység.",
+      "why": "Csak így derül ki, hogy érted az összefüggést."
+    },
+    {
+      "wrong": "Felolvasom a vázlatot.",
+      "right": "Szabadon beszélek, a vázlatra csak rápillantok.",
+      "why": "Az önálló, összefüggő előadás a felépítési pont feltétele."
+    }
+  ],
+  "checklist": [
+    "Bevezetés: megmondtam a tétel címét és a felelet szerkezetét.",
+    "Minden fogalomnál definíció, jel, mértékegység.",
+    "A törvényeket feltétellel és képlettel mondtam ki.",
+    "Legalább két példát vagy alkalmazást hoztam.",
+    "A kísérletnél: eszközök, menet, tapasztalat, értelmezés, hibák.",
+    "Összefoglalással zártam."
+  ],
+  "timing": "Középszinten 15 perc: kb. 8–9 perc a téma, 6–7 perc a kísérlet. Emelt szinten 20 perc: kb. 10 perc témakifejtés, 10 perc a mérés bemutatása (a mérés maga a felkészülési időben zajlik). A felkészülési 30 percből középszinten kb. 20 perc a vázlat és 10 perc a kísérlet kipróbálása.",
+  "example": {
+    "title": "Minta: egy kísérlet bemutatásának vázlata (fénytörés)",
+    "text": "Eszközök: plexi félhenger, optikai korong, lézer.\nMenet: a fényt a sík lap közepére irányítom 20°, 40°, 60°-os szöggel.\nTapasztalat: törési szögek 13°, 25°, 35°; sin α / sin β ≈ 1,52.\nÉrtelmezés: optikailag sűrűbb közegbe lépve a fény a merőlegeshez törik; n ≈ 1,5.\nEllenőrzés: határszög kb. 42°, sin 42° ≈ 1/1,5.",
+    "notes": [
+      "A vázlat követi a kísérleti rész elvárt szerkezetét: eszköz – menet – tapasztalat – értelmezés – ellenőrzés/hiba."
+    ]
+  },
+  "levelNotes": {
+    "kozep": "Középszinten a kísérletek többsége az Oktatási Hivatal évente kiadott listájából való (pl. lejtő, Ohm-törvény, hőtágulás, fénytörés); a kísérletet bemutatod és értelmezed, a mérési pontosság kevésbé fontos, mint a helyes következtetés.",
+    "emelt": "Emelt szinten központi tételsor van, és a mérést (pl. g mérése fonálingával, fókusztávolság, sűrűség, transzformátor) magad végzed el: jegyzőkönyv, kiértékelés, eredmény hibával. A tartalmi részben levezetéseket és mélyebb összefüggéseket is várnak."
+  }
+}

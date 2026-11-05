@@ -1,0 +1,142 @@
+{
+  "schemaVersion": 1,
+  "id": "kem-gd-exam-reading",
+  "subject": "kemia",
+  "revision": 1,
+  "level": "kozep",
+  "source": "generated",
+  "topic": "utmutato",
+  "title": "Teszt- és elemző feladatok",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "guide",
+  "type": "exam",
+  "target": "reading",
+  "summaryHu": "Az írásbeli vizsga egyetlen feladatlap (középszinten 150 perc, emelt szinten 240 perc, mindkettő 100 pont), amelyben zárt és rövid választ igénylő feladatok, valamint számítási és kifejtős feladatok váltják egymást. Az app a zárt, automatikusan javítható részt („Teszt- és elemző feladatok”) külön gyakoroltatja: egyszerű választás, négyféle asszociáció, igaz–hamis, párosítás, táblázat- és grafikonelemzés, esettanulmány és rövid számítás. Függvénytáblázat (periódusos rendszerrel) és zsebszámológép használható. Itt pontos fogalmi tudás és figyelmes olvasás kell: minden helyes válasz 1 pontot ér, a magyarázatból pedig megtanulhatod, miért az a jó.",
+  "steps": [
+    {
+      "title": "Először az utasítás és a példa",
+      "explanation": "Minden feladatnál nézd meg, milyen formában kell válaszolni: egy betű (egyszerű választás), A/B/C/D a négyféle asszociációnál (A, B, mindkettő, egyik sem), I/H, egy szám mértékegységgel vagy egy-két szavas fogalom. A 0. példa megmutatja a válasz formáját.",
+      "tips": [
+        "Négyféle asszociációnál írd fel magadnak a négy lehetőséget (A, B, mindkettő, egyik sem), mielőtt dönteni kezdesz.",
+        "Tagadó kérdést („melyik NEM…”) karikázz be."
+      ]
+    },
+    {
+      "title": "Egyszerű választás és asszociáció: zárd ki a rosszakat",
+      "explanation": "Olvasd el az összes választási lehetőséget, mielőtt döntesz. Minden opcióról döntsd el, igaz-e, és miért nem jó a többi. Négyféle asszociációnál minden állítást külön ellenőrizz mindkét anyagra: csak ha mindkettőre igaz, akkor „mindkettő”.",
+      "tips": [
+        "A „mindig”, „soha”, „csak” szavakat tartalmazó opciók gyakran hamisak – de ellenőrizd.",
+        "Ha két opció egymás ellentéte, valószínűleg az egyik a jó."
+      ]
+    },
+    {
+      "title": "Esettanulmány, táblázat, grafikon",
+      "explanation": "Előbb a kérdéseket olvasd el, aztán a szöveget vagy az adatokat, és jelöld meg, hol van a válasz. A szövegben szereplő adatot használd; a táblázatnál a fejléc mértékegységét (g/100 g víz, kJ/mol) olvasd el kétszer.",
+      "tips": [
+        "A grafikon leírásában a tengelyek mértékegységét írd ki magadnak.",
+        "Ha a kérdés magyarázatot kér, a szöveg adatát kapcsold össze a tanult összefüggéssel."
+      ]
+    },
+    {
+      "title": "Rövid számítás",
+      "explanation": "Itt csak a végeredményt kell beírni, de a lapszélen akkor is írd fel a rendezett egyenletet és az n = m/M lépést. A végeredményt mértékegységgel és a kért pontossággal add meg.",
+      "tips": [
+        "Ellenőrizd a nagyságrendet: egy gáz térfogata néhány dm³, nem több ezer.",
+        "A moláris tömegeket a függvénytáblázat periódusos rendszeréből vedd."
+      ]
+    },
+    {
+      "title": "Ellenőrzés",
+      "explanation": "A végén nézd át, minden kérdésre válaszoltál-e – üresen hagyott kérdés biztosan 0 pont, egy megfontolt tipp nem. Ellenőrizd, hogy a betűjelek egyértelműek-e, és hogy egy kérdésre csak egy válasz szerepel.",
+      "tips": [
+        "Ha bizonytalan vagy, a legvalószínűbbet jelöld meg, és lépj tovább."
+      ]
+    }
+  ],
+  "phrases": [
+    {
+      "group": "Utasítás",
+      "en": "egyszerű választás",
+      "hu": "Egy helyes válasz a felsoroltak közül."
+    },
+    {
+      "group": "Utasítás",
+      "en": "négyféle asszociáció",
+      "hu": "A = csak az első anyagra, B = csak a másodikra, C = mindkettőre, D = egyikre sem igaz."
+    },
+    {
+      "group": "Utasítás",
+      "en": "esettanulmány",
+      "hu": "Szöveg alapján megválaszolandó kérdések – a szöveg adatai a döntők."
+    },
+    {
+      "group": "Fogalom",
+      "en": "standardállapot (25 °C, 0,1 MPa)",
+      "hu": "Vm = 24,5 dm³/mol – a gázos rövid számítások alapja."
+    },
+    {
+      "group": "Fogalom",
+      "en": "n = m / M; n = V / Vm; c = n / V",
+      "hu": "A rövid számítások három leggyakoribb összefüggése."
+    },
+    {
+      "group": "Fogalom",
+      "en": "ΔEN, kötéstípus, rácstípus",
+      "hu": "A szerkezeti tesztkérdések kulcsa."
+    },
+    {
+      "group": "Fogalom",
+      "en": "konjugált sav–bázis pár",
+      "hu": "Egy protonban különböző részecskepár – gyakori tesztkérdés."
+    },
+    {
+      "group": "Fogalom",
+      "en": "oxidációs szám",
+      "hu": "Redoxireakció felismerése: változik-e valamelyik atomé."
+    }
+  ],
+  "mistakes": [
+    {
+      "wrong": "A négyféle asszociációnál a „mindkettő” helyett „A”-t jelöl, mert az A-ra biztosan igaz.",
+      "right": "Minden állítást mindkét anyagra külön ellenőriz.",
+      "why": "Az, hogy az egyik anyagra igaz, még nem zárja ki, hogy a másikra is igaz legyen."
+    },
+    {
+      "wrong": "Az esettanulmány kérdésére a tanult, de a szövegtől eltérő adatot írja.",
+      "right": "A szövegben megadott adatot használja.",
+      "why": "Az esettanulmány a szövegértelmezést méri; a javítási útmutató a szöveg szerinti választ fogadja el."
+    },
+    {
+      "wrong": "A rövid számításnál mértékegység nélküli számot ír be.",
+      "right": "A végeredményt mértékegységgel adja meg (pl. 2,45 dm³).",
+      "why": "A mértékegység az eredmény része; a „2,45” önmagában lehet dm³ vagy mol is."
+    },
+    {
+      "wrong": "Egy kérdésre két betűt jelöl, „hátha az egyik jó”.",
+      "right": "Egyetlen, megfontolt választ ad.",
+      "why": "Két válasz esetén a kérdés 0 pontot ér."
+    }
+  ],
+  "checklist": [
+    "Minden feladat utasítását és a 0. példát elolvastam?",
+    "A négyféle asszociációnál minden állítást mindkét anyagra ellenőriztem?",
+    "A számításoknál mértékegységgel adtam meg az eredményt?",
+    "Az esettanulmányban a szöveg adatait használtam?",
+    "Nem maradt üres válasz?"
+  ],
+  "timing": "Az írásbeli egyetlen feladatlap: középszinten 150, emelt szinten 240 perc jut rá. Az app javaslata szerint középszinten kb. 80 percet, emelt szinten kb. 100 percet szánj a teszt- és elemző (zárt) feladatokra, a maradékot a számítási és kifejtős feladatokra. Egy zárt kérdésnél ne ragadj le egy percnél tovább: jelöld meg, és térj vissza rá a végén.",
+  "example": {
+    "title": "Minta: négyféle asszociáció",
+    "text": "A) nátrium  B) klór  C) mindkettő  D) egyik sem\n1. Vegyületeiben +1-es oxidációs számú is lehet. → C\n2. Szobahőmérsékleten gáz. → B\n3. Vízzel hevesen reagál, és hidrogén fejlődik. → A",
+    "notes": [
+      "1: a nátrium vegyületeiben mindig +1, a klórnak is van +1-es oxidációs számú vegyülete (pl. HOCl, NaOCl), ezért mindkettő.",
+      "2: csak a klór gáz, a nátrium szilárd fém.",
+      "3: a klór vízzel nem fejleszt hidrogént (klórvíz, HCl és HOCl keletkezik), csak a nátrium."
+    ]
+  },
+  "levelNotes": {
+    "kozep": "Középszinten a feladatlap kb. 8–9 feladatból áll, a zárt feladatok alapfogalmakat, ismert anyagokat és egyszerű számításokat kérnek; a számítások aránya 20–40 %.",
+    "emelt": "Emelt szinten az elméleti (zárt és rövid választ igénylő) feladatok kb. 50–60 pontot érnek; a kérdések elvontabbak, gyakoribb a táblázat-, grafikon- és esettanulmány-elemzés és a többlépéses gondolkodás."
+  }
+}

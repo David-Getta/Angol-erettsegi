@@ -63,7 +63,8 @@
       "id": "4",
       "kind": "text",
       "prompt": "Add meg a salétromsav (HNO₃) konjugált bázispárját (képlettel)!",
-      "answer": ["NO₃⁻", "NO3-", "NO3⁻", "nitrátion", "nitrát-ion", "nitrát ion"],
+      "answer": ["NO₃⁻", "NO3-", "NO3⁻", "nitrátion", "nitrát-ion", "nitrát ion", "Nitrátion", "Nitrát-ion", "Nitrát ion"],
+      "caseSensitive": true,
       "maxWords": 2,
       "category": "reakciotipus",
       "explanation": "Helyes: NO₃⁻ (nitrátion). Egy sav konjugált bázisa az a részecske, amely a savból egy proton (H⁺) leadásával keletkezik: HNO₃ → H⁺ + NO₃⁻."
@@ -90,7 +91,8 @@
       "id": "7",
       "kind": "text",
       "prompt": "A Daniell-elemben melyik fém a negatív elektród (anód)?",
-      "answer": ["cink", "Zn", "a cink", "cinklemez", "cink elektród"],
+      "answer": ["cink", "Zn", "a cink", "cinklemez", "cink elektród", "Cink", "A cink", "Cinklemez", "Cink elektród"],
+      "caseSensitive": true,
       "maxWords": 2,
       "category": "reakciotipus",
       "explanation": "Helyes: a cink. A Daniell-elemben a kisebb standardpotenciálú fém (Zn: −0,76 V) oxidálódik, elektronokat ad le, ezért ez a negatív pólus (anód); a réz (+0,34 V) a pozitív pólus, ahol a Cu²⁺ redukálódik."

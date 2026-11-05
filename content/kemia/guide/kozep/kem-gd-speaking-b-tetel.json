@@ -1,0 +1,134 @@
+{
+  "schemaVersion": 1,
+  "id": "kem-gd-speaking-b-tetel",
+  "subject": "kemia",
+  "revision": 1,
+  "level": "kozep",
+  "source": "generated",
+  "topic": "utmutato",
+  "title": "B) Kísérlet",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "guide",
+  "type": "speaking",
+  "target": "b-tetel",
+  "summaryHu": "A B tétel egy kísérlet elvégzése és/vagy egy leírt kísérlet értelmezése. Középszinten 15 pontot ér (tapasztalat, kivitelezés 7; magyarázat, egyenlet 8), emelt szinten 10 pontot (5 + 5), és emelt szinten a kísérletet a bizottság előtt kell elvégezni. A bizottság azt figyeli, hogy pontosan leírod-e a tapasztalatot, és kémiailag helyesen, egyenlettel magyarázod-e.",
+  "steps": [
+    {
+      "title": "1. A kísérlet menete",
+      "explanation": "Röviden mondd el, mit csinálsz (mit mihez adsz, milyen mennyiségben, milyen eszközzel), és milyen biztonsági szabályokat tartasz be (védőszemüveg, kesztyű, vegyifülke, szagvizsgálat legyezgetéssel).",
+      "tips": [
+        "Emelt szinten a szakszerű kivitelezés is pontot ér: kis mennyiségek, tiszta eszközök.",
+        "Középszinten a leírt kísérletnél is mondd el röviden a menetet."
+      ]
+    },
+    {
+      "title": "2. Tapasztalat",
+      "explanation": "Mondd el pontosan, mit látsz, hallasz, érzel: színváltozás, gázfejlődés, csapadék, felmelegedés, szag. Ha több kémcső van, mindegyikről – a kontrollról is.",
+      "tips": [
+        "„A meszes víz megzavarosodott.” – ez tapasztalat.",
+        "„Szén-dioxid keletkezett.” – ez már magyarázat."
+      ]
+    },
+    {
+      "title": "3. Magyarázat és egyenlet",
+      "explanation": "Nevezd meg a keletkező anyagokat, írd fel a rendezett egyenletet, és indokold a jelenséget (oldhatóság, standardpotenciál, sav–bázis erősség, szerkezet). Redoxinál mondd meg, mi oxidálódik és mi redukálódik.",
+      "tips": [
+        "Írd is fel az egyenletet a táblára vagy a lapra.",
+        "Az ionegyenlet gyakran tömörebb és szemléletesebb."
+      ]
+    },
+    {
+      "title": "4. Következtetés",
+      "explanation": "Fogalmazd meg, mit bizonyít a kísérlet (pl. „a barnakő katalizátor”, „az ammónia jól oldódik vízben, és bázis”).",
+      "tips": [
+        "A következtetés kösse össze a kísérletet a tanult elmélettel."
+      ]
+    }
+  ],
+  "phrases": [
+    {
+      "group": "Menet",
+      "en": "A kémcsőbe … cm³ …-t öntök, majd cseppenként …-t adok hozzá.",
+      "hu": "A kivitelezés leírása."
+    },
+    {
+      "group": "Biztonság",
+      "en": "Védőszemüveget veszek fel, a gáz szagát legyezgetve vizsgálom.",
+      "hu": "Balesetvédelem."
+    },
+    {
+      "group": "Tapasztalat",
+      "en": "Az oldat … színű lett / … csapadék vált le / pezsgés indult.",
+      "hu": "Tapasztalat megfogalmazása."
+    },
+    {
+      "group": "Tapasztalat",
+      "en": "A kontroll kémcsőben nem történt változás.",
+      "hu": "Összehasonlítás a kontrollal."
+    },
+    {
+      "group": "Magyarázat",
+      "en": "A jelenség oka, hogy …",
+      "hu": "Kémiai magyarázat bevezetése."
+    },
+    {
+      "group": "Egyenlet",
+      "en": "A lejátszódó reakció ionegyenlete: …",
+      "hu": "Egyenlet."
+    },
+    {
+      "group": "Redoxi",
+      "en": "Az oxidálószer a …, a redukálószer a …",
+      "hu": "Redoxireakció értelmezése."
+    },
+    {
+      "group": "Következtetés",
+      "en": "A kísérlet tehát azt bizonyítja, hogy …",
+      "hu": "Lezárás."
+    }
+  ],
+  "mistakes": [
+    {
+      "wrong": "„Hidrogén fejlődik.” (tapasztalatként)",
+      "right": "„Pezsgés, színtelen gázbuborékok; lánghoz tartva pukkan.”",
+      "why": "A gáz kilétét a tapasztalatból következtetjük ki, ez a magyarázat része."
+    },
+    {
+      "wrong": "Egyenlet nélküli magyarázat.",
+      "right": "Rendezett egyenlet + ok.",
+      "why": "A „magyarázat, egyenlet” szempont egyenlet nélkül nem teljesíthető."
+    },
+    {
+      "wrong": "A kontroll kémcsőről nem mond semmit.",
+      "right": "Megmondja, hogy ott nincs változás, és ez mit bizonyít.",
+      "why": "A kontroll mutatja meg, hogy a változást a vizsgált tényező okozta."
+    },
+    {
+      "wrong": "Biztonsági szempontok elhanyagolása (szagvizsgálat közvetlenül).",
+      "right": "Legyezgetve szagol, védőszemüveget visel.",
+      "why": "A szakszerű kivitelezés emelt szinten értékelt elem."
+    }
+  ],
+  "checklist": [
+    "Elmondtam röviden a kísérlet menetét?",
+    "Minden kémcsőre leírtam a tapasztalatot (a kontrollra is)?",
+    "Rendezett egyenlettel magyaráztam?",
+    "Megmondtam, mit bizonyít a kísérlet?",
+    "Betartottam (és elmondtam) a biztonsági szabályokat?"
+  ],
+  "timing": "A B tételre a felkészülésből kb. 10 percet szánj. A felelet középszinten kb. 5–6, emelt szinten kb. 5 perc. Emelt szinten a kísérletet a felelet előtt végzed el – figyeld meg pontosan, és jegyezd fel a tapasztalatokat.",
+  "example": {
+    "title": "Minta: hidrogén-peroxid bomlása",
+    "text": "Tapasztalat: a barnakőpor beszórása után heves pezsgés, a parázsló gyújtópálca lángra lobban; a kontroll kémcsőben nincs változás.\nMagyarázat: 2 H₂O₂ → 2 H₂O + O₂; a fejlődő gáz oxigén. A MnO₂ katalizátor, csökkenti az aktiválási energiát.\nKövetkeztetés: a katalizátor a reakciót gyorsítja, de maga nem fogy el.",
+    "notes": [
+      "A tapasztalat és a magyarázat külön szerepel.",
+      "Az egyenlet rendezett, a gáz azonosítva.",
+      "A kontroll kémcső is szerepel."
+    ]
+  },
+  "levelNotes": {
+    "kozep": "Középszinten a kísérlet gyakran leírt kísérlet értelmezése; a B tétel projektmunkával is kiváltható. 15 pontot ér.",
+    "emelt": "Emelt szinten a kísérletet a bizottság előtt el kell végezni; 10 pontot ér, és a kivitelezés szakszerűsége is számít."
+  }
+}

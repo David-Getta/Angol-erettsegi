@@ -1,0 +1,133 @@
+{
+  "schemaVersion": 1,
+  "id": "kem-gd-writing-elemzo",
+  "subject": "kemia",
+  "revision": 1,
+  "level": "kozep",
+  "source": "generated",
+  "topic": "utmutato",
+  "title": "Elemző, anyagismereti feladat",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "guide",
+  "type": "writing",
+  "target": "elemzo",
+  "summaryHu": "Az elemző feladat egy vagy több anyagot (elemeket, vegyületeket, vegyületcsoportokat) állít középpontba, és 3–5 kérdésben kér összehasonlítást, szerkezet–tulajdonság összefüggést, egyenleteket és felhasználást. Gyakran egy rövid szöveg vagy adatsor (forráspontok, oldhatóság) is tartozik hozzá. A javító a tények helyességét, a kémiai magyarázatot (egyenlettel, szerkezettel) és a szaknyelv pontosságát értékeli.",
+  "steps": [
+    {
+      "title": "1. Az anyagok szerkezete",
+      "explanation": "Kezdd a szerkezettel: elektronszerkezet, kötéstípus, molekulaalak, polaritás, rácstípus, funkciós csoport. A legtöbb további kérdés erre épül.",
+      "tips": [
+        "Használd a periódusos rendszert és a megadott adatokat (EN, forráspont).",
+        "Szerves vegyületnél írd fel a konstitúciós képletet."
+      ]
+    },
+    {
+      "title": "2. Tulajdonságok szerkezettel indokolva",
+      "explanation": "Minden tulajdonságot (forráspont, oldhatóság, reakciókészség, korrózióállóság) egy „mert …” mondattal kapcsolj a szerkezethez. Összehasonlításnál mindkét anyagról mondj valamit, és nevezd meg a különbség okát.",
+      "tips": [
+        "Forráspontnál: van-e hidrogénkötés? Mekkora a molekula?",
+        "Reakciókészségnél: standardpotenciál, elektronegativitás, kötéserősség."
+      ]
+    },
+    {
+      "title": "3. Reakciók egyenlettel",
+      "explanation": "A kérdezett reakciókat rendezett egyenlettel írd fel, és nevezd meg a reakció típusát (sav–bázis, redoxi, addíció, szubsztitúció …), ha a kérdés erre utal.",
+      "tips": [
+        "Ha két anyag közül csak az egyik reagál, mondd meg, miért nem a másik."
+      ]
+    },
+    {
+      "title": "4. Előfordulás, előállítás, felhasználás, környezet",
+      "explanation": "A felhasználást mindig tulajdonsággal indokold („könnyűfém és korrózióálló, ezért…”). Környezeti kérdésnél nevezd meg a káros anyagot és a hatását.",
+      "tips": [
+        "Egy példa + egy indoklás anyagonként: ennyi általában elég a ponthoz."
+      ]
+    }
+  ],
+  "phrases": [
+    {
+      "group": "Összehasonlítás",
+      "en": "Míg az A …, addig a B …, mert …",
+      "hu": "Két anyag összevetése indoklással."
+    },
+    {
+      "group": "Szerkezet",
+      "en": "A molekula alakja …, ezért a molekula poláris/apoláris.",
+      "hu": "Polaritás indoklása."
+    },
+    {
+      "group": "Szerkezet",
+      "en": "A molekulák között hidrogénkötés alakul ki, ezért magas a forráspont.",
+      "hu": "Forráspont magyarázata."
+    },
+    {
+      "group": "Szerkezet",
+      "en": "a nemkötő elektronpár összenyomja a kötésszöget",
+      "hu": "Molekulaalak, VSEPR."
+    },
+    {
+      "group": "Reakciókészség",
+      "en": "negatívabb standardpotenciálú, ezért erősebb redukálószer",
+      "hu": "Fémek összehasonlítása."
+    },
+    {
+      "group": "Fogalom",
+      "en": "amfoter / passziválódás",
+      "hu": "Fémek viselkedése savban, lúgban, levegőn."
+    },
+    {
+      "group": "Fogalom",
+      "en": "konstitúciós izomer / funkciós csoport",
+      "hu": "Szerves vegyületek összehasonlítása."
+    },
+    {
+      "group": "Felhasználás",
+      "en": "… ezért alkalmas …-ra/-re.",
+      "hu": "Tulajdonság → felhasználás."
+    }
+  ],
+  "mistakes": [
+    {
+      "wrong": "„Az etanol forráspontja magasabb.” (indoklás nélkül)",
+      "right": "„Az etanol forráspontja magasabb, mert molekulái között hidrogénkötések vannak.”",
+      "why": "Az elemző feladatban a magyarázat külön pontot ér."
+    },
+    {
+      "wrong": "A vas sósavban vas(III)-kloriddá oldódik.",
+      "right": "Fe + 2 HCl → FeCl₂ + H₂",
+      "why": "Nem oxidáló savban a vas vas(II)-ionokká oxidálódik."
+    },
+    {
+      "wrong": "Az alumínium nem korrodálódik, mert pozitív a standardpotenciálja.",
+      "right": "Az alumínium standardpotenciálja negatív, de a tömör oxidréteg passziválja.",
+      "why": "A tényt (nem korrodálódik) a helyes okkal kell magyarázni."
+    },
+    {
+      "wrong": "Csak az egyik anyagról ír az összehasonlításban.",
+      "right": "Mindkét anyagról, ugyanazon szempont szerint ír.",
+      "why": "Az összehasonlítás a két anyag viszonyáról szól."
+    }
+  ],
+  "checklist": [
+    "A szerkezetet minden anyagnál megadtam?",
+    "Minden tulajdonságot indokoltam?",
+    "Az egyenletek rendezettek?",
+    "Az összehasonlításban mindkét anyagról írtam?",
+    "A felhasználást tulajdonsággal indokoltam?"
+  ],
+  "timing": "Középszinten egy elemző feladatra kb. 20, emelt szinten kb. 30 perc jut. Írj tömören, de teljes mondatokban: a „mert” mondatok fontosabbak a hosszúságnál.",
+  "example": {
+    "title": "Minta: forráspont-összehasonlítás",
+    "text": "Az etanol (CH₃–CH₂–OH) forráspontja 78 °C, a vele izomer dimetil-éteré (CH₃–O–CH₃) −24 °C. Az etanolmolekulák között hidrogénkötések alakulnak ki, mert a hidrogénatom oxigénhez kapcsolódik; a dimetil-éterben nincs O–H kötés, ezért molekulái között csak gyengébb dipólus–dipólus és diszperziós kölcsönhatás van.",
+    "notes": [
+      "Mindkét anyagról szól, adatokkal.",
+      "A különbséget szerkezettel (O–H kötés, hidrogénkötés) indokolja.",
+      "A szakkifejezések pontosak."
+    ]
+  },
+  "levelNotes": {
+    "kozep": "Középszinten ismert anyagok (víz, nátrium, vas, alumínium, etanol, ecetsav, etén) összehasonlítása, egyszerű szerkezet–tulajdonság összefüggések és egyenletek a jellemzőek.",
+    "emelt": "Emelt szinten mélyebb szerkezeti magyarázat (VSEPR, hibridizáció, hidrogénkötések száma), sav–bázis és redoxi egyensúlyok, polimerek és biomolekulák elemzése is előkerül."
+  }
+}

@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "id": "mag-sp-emelt-nyelvvaltozatok",
+  "subject": "magyar",
+  "revision": 1,
+  "level": "emelt",
+  "source": "generated",
+  "topic": "ember-nyelvhasznalat",
+  "title": "A magyar nyelv változatai",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "speaking",
+  "type": "nyelvtan-tetel",
+  "partNumber": 2,
+  "instructionsHu": "Mutassa be a magyar nyelv változatait (területi és társadalmi nyelvváltozatok)! Határozza meg a megadott mondatok nyelvváltozatát, nevezze meg a jellemző nyelvi sajátosságokat, és fejtse ki, mit gondol a nyelvjárások és a szleng megítéléséről!",
+  "prompts": [
+    "A nyelvváltozatok rendszere: területi (nyelvjárások) és társadalmi változatok (csoportnyelvek, szaknyelvek, szleng, argó)",
+    "A köznyelv és az irodalmi nyelv viszonya a nyelvváltozatokhoz",
+    "A megadott mondatok elemzése",
+    "Nyelvi előítéletek, a nyelvjárások és a szleng megítélése"
+  ],
+  "sources": [
+    { "title": "1. mondat", "text": "Tegnap a buliban full kész voltam, de a zene durva jó volt, tök megérte." },
+    { "title": "2. mondat", "text": "Hun vótál, fiam? Gyere be, mer’ mingyá’ hideg lesz a leves." },
+    { "title": "3. mondat", "text": "A beteg panasza a bal alsó végtagban jelentkező, terhelésre fokozódó fájdalom." }
+  ],
+  "keyPoints": [
+    "A nyelvváltozatok két fő csoportja: területi (vízszintes) változatok – a nyelvjárások; társadalmi (függőleges) változatok – csoportnyelvek, szaknyelvek, rétegnyelvek, szleng, argó.",
+    "A köznyelv az egész nyelvközösség által használt, normatív változat; az irodalmi nyelv ennek igényes, írott formája.",
+    "Az 1. mondat ifjúsági szleng: divatszavak és nyomatékosítók („full”, „durva jó”, „tök”), angol eredetű elem, a „kész” új jelentése (nagyon fáradt / mámoros) – csoporthoz tartozást, érzelmet fejez ki.",
+    "A 2. mondat nyelvjárási, népies beszélt nyelvi változat: „hun” (hol), „vótál” (l-kiesés és pótlónyúlás: voltál → vótál), „mer’”, „mingyá’” (szóvégi hangok elhagyása).",
+    "A 3. mondat orvosi szaknyelv: pontos, egyértelmű szakkifejezések („alsó végtag”, „terhelésre fokozódó”), névszói, tömörítő szerkezet.",
+    "A szaknyelv a pontosságot, a szleng a csoportidentitást és az expresszivitást, a nyelvjárás a helyi közösséghez tartozást szolgálja.",
+    "A nyelvjárások nem „hibás” változatok, hanem a nyelv történetének és változatosságának értékes részei; a nyelvi előítélet (a nyelvjárási beszélő lenézése) helytelen.",
+    "A jó nyelvhasználó a beszédhelyzethez igazítja a nyelvváltozatot (kódváltás): ami a baráti beszélgetésben helyénvaló, az egy érettségi dolgozatban nem."
+  ],
+  "speakingSeconds": 480,
+  "prepSeconds": 600,
+  "usefulPhrases": [
+    { "en": "területi (vízszintes) – társadalmi (függőleges) nyelvváltozat", "hu": "a nyelvváltozatok két fő csoportja" },
+    { "en": "köznyelv, irodalmi nyelv, nyelvjárás, szaknyelv, szleng, argó", "hu": "a legfontosabb nyelvváltozatok neve" },
+    { "en": "pótlónyúlás", "hu": "egy hang kiesését a szomszédos magánhangzó megnyúlása pótolja (voltál → vótál)" },
+    { "en": "nyelvi előítélet", "hu": "egy nyelvváltozat beszélőinek negatív megítélése pusztán a beszédmódjuk miatt" },
+    { "en": "kódváltás", "hu": "a nyelvváltozatok közötti váltás a beszédhelyzettől függően" }
+  ],
+  "sampleAnswer": {
+    "turns": [
+      {
+        "speaker": "candidate",
+        "text": "A magyar nyelv nem egységes: a beszélők lakóhelye, életkora, foglalkozása és társadalmi helyzete szerint különböző változatokban él. A nyelvváltozatokat két nagy csoportra osztjuk. A területi, más néven vízszintes változatok a nyelvjárások, amelyek egy-egy tájegységhez kötődnek. A társadalmi, függőleges változatok közé tartoznak a csoportnyelvek, a szaknyelvek, a szleng és az argó. Mindezek fölött áll a köznyelv, amelyet az egész nyelvközösség megért és használ, és amelynek igényes, írott formája az irodalmi nyelv.\n\nA megadott első mondat ifjúsági szleng. Jellemzőek rá a divatszavak és a nyomatékosító elemek: a „full” angol eredetű, a „durva jó” és a „tök” a fokozást fejezi ki, a „kész” pedig új jelentést kapott, azt jelenti, hogy valaki nagyon fáradt vagy mámoros. A szleng célja nem a pontos tájékoztatás, hanem az érzelmek kifejezése és a csoporthoz tartozás jelzése.\n\nA második mondat népies, nyelvjárási beszélt nyelvi változat. A „hun” a „hol” nyelvjárási alakja, a „vótál” szóban az l kiesett, és ezt az előtte álló magánhangzó megnyúlása pótolja, ezt pótlónyúlásnak nevezzük. A „mer’” és a „mingyá’” alakokban a szóvégi hangok maradnak el, ami az élőbeszéd gyorsaságát tükrözi.\n\nA harmadik mondat orvosi szaknyelv. Pontos szakkifejezéseket használ, például az „alsó végtag” a köznyelvi „láb” helyett áll, és a „terhelésre fokozódó” tömör jelzős szerkezet egyértelműen írja le a tünetet. A szaknyelv célja a pontosság és az egyértelműség.\n\nFontosnak tartom hangsúlyozni, hogy a nyelvjárások nem hibás változatok, hanem a nyelv történetének és gazdagságának részei, ezért a nyelvjárási beszélők lenézése nyelvi előítélet. A jó nyelvhasználó a beszédhelyzethez igazítja a nyelvváltozatot: ami egy baráti beszélgetésben természetes, az egy érettségi dolgozatban vagy egy hivatalos levélben már nem helyénvaló."
+      }
+    ],
+    "notes": [
+      "Tartalom: a felelet áttekinti a nyelvváltozatok rendszerét, mindhárom mondatot besorolja, és nyelvi jellemzőkkel (szókincs, hangtani jelenségek, szerkezet) bizonyítja a besorolást.",
+      "Emelt szintű többlet: a pótlónyúlás megnevezése, a változatok funkciójának összevetése és a nyelvi előítéletről kifejtett önálló vélemény.",
+      "Nyelvi minőség: igényes, összefüggő előadás, amely maga is a helyzethez illő köznyelvi-szaknyelvi stílust használja."
+    ]
+  }
+}
