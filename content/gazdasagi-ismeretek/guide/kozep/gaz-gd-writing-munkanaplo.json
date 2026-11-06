@@ -1,0 +1,130 @@
+{
+  "schemaVersion": 1,
+  "id": "gaz-gd-writing-munkanaplo",
+  "subject": "gazdasagi-ismeretek",
+  "revision": 1,
+  "level": "kozep",
+  "source": "generated",
+  "topic": "utmutato",
+  "title": "A projektmunka munkanaplója",
+  "createdAt": "2026-11-06",
+  "tags": [],
+  "section": "guide",
+  "type": "writing",
+  "target": "munkanaplo",
+  "summaryHu": "A munkanapló a projektmunka készítésének dátumozott naplója, amelyet a projekttel együtt kell leadni. A rubrika szerint a bejegyzések dátumozottak, és tartalmazzák a módszereket, a döntési helyzeteket, az akadályokat és megoldásukat (a munkanapló vezetése 6 pont); belőle látszik, hogy a témaválasztás, a vázlat, a konzultációk és a leadás a megadott időpontokra megtörtént (határidők, konzultációk 5 pont), és hogy a terjedelem, formai előírások rendben vannak (4 pont).",
+  "steps": [
+    {
+      "title": "Nyisd meg a naplót az első naptól",
+      "explanation": "Az első bejegyzés a témaválasztás: melyik OH-projekttémát választottad, miért, és mikor egyeztettél a konzulenssel. Ettől kezdve minden munkanapról (és minden konzultációról) legyen bejegyzés.",
+      "tips": [
+        "Formátum: dátum – mit csináltam – milyen módszerrel – mi a következő lépés.",
+        "Rövid, de rendszeres bejegyzések többet érnek egy utólag megírt hosszú szövegnél."
+      ]
+    },
+    {
+      "title": "Módszerek és döntési helyzetek",
+      "explanation": "Írd le, milyen módszerrel dolgoztál (pl. forrásgyűjtés, interjú, kérdőív, adatgyűjtés, táblázatkészítés, modellezés), és ha választanod kellett két lehetőség között, mit döntöttél és miért. A döntéshez használhatod a tanult fogalmakat: mi volt a döntés alternatív költsége?",
+      "tips": [
+        "„Két lehetőség közül …-t választottam, mert …; lemondtam arról, hogy …”",
+        "A racionális döntés lépései: információgyűjtés, a hasznok és költségek mérlegelése, a legjobb alternatíva kiválasztása."
+      ]
+    },
+    {
+      "title": "Akadályok és megoldásuk",
+      "explanation": "Minden elakadást írj le: mi volt a probléma, mit próbáltál, mi lett a megoldás. Ez nem gyengeség, hanem pontot érő elem.",
+      "tips": [
+        "Pl. „Nem találtam friss adatot → a konzulens javaslatára más forrást használtam.”"
+      ]
+    },
+    {
+      "title": "Konzultációk és határidők",
+      "explanation": "Minden konzultációnál rögzítsd a dátumot, a megbeszélt kérdéseket, a konzulens javaslatait és azt, hogy mit változtattál utána. Jelöld a határidőket (témaválasztás, vázlat, leadás) és azt, hogy teljesítetted-e.",
+      "tips": [
+        "A leadás legkésőbb az írásbeli vizsgaidőszak kezdetéig, a munkanaplóval és a forrásjegyzékkel együtt."
+      ]
+    },
+    {
+      "title": "Zárás: ellenőrzés a formai előírásokra",
+      "explanation": "Az utolsó bejegyzés a leadás előtti ellenőrzés: a projektmunka terjedelme és formája (címlap, tartalomjegyzék, fejezetek, mellékletek, forrásjegyzék) megfelel-e az előírásnak.",
+      "tips": []
+    }
+  ],
+  "phrases": [
+    {
+      "group": "Bejegyzés-sablon – témaválasztás",
+      "en": "[dátum] Témaválasztás: … témát választottam az OH projekttémái közül, mert …",
+      "hu": "az első bejegyzés"
+    },
+    {
+      "group": "Bejegyzés-sablon – módszer",
+      "en": "[dátum] Módszer: … (forrásgyűjtés / kérdőív / interjú / adatgyűjtés) – eredmény: …",
+      "hu": "egy munkanap rögzítése"
+    },
+    {
+      "group": "Bejegyzés-sablon – döntés",
+      "en": "[dátum] Döntési helyzet: … és … között kellett választanom. A(z) …-t választottam, mert … Az alternatív költség: …",
+      "hu": "döntés indoklása a tanult fogalommal"
+    },
+    {
+      "group": "Bejegyzés-sablon – akadály",
+      "en": "[dátum] Akadály: … Megoldás: …",
+      "hu": "elakadás és megoldása"
+    },
+    {
+      "group": "Bejegyzés-sablon – konzultáció",
+      "en": "[dátum] Konzultáció (… konzulenssel): megbeszéltük …; javaslat: …; teendőm: …",
+      "hu": "minden konzultáció után"
+    },
+    {
+      "group": "Bejegyzés-sablon – határidő",
+      "en": "[dátum] Határidő teljesítve: vázlat leadva / fejezet elkészült.",
+      "hu": "az ütemezés követése"
+    },
+    {
+      "group": "Bejegyzés-sablon – módosítás",
+      "en": "[dátum] A konzultáció után módosítottam: …, mert …",
+      "hu": "a visszajelzés beépítése"
+    },
+    {
+      "group": "Bejegyzés-sablon – zárás",
+      "en": "[dátum] Ellenőrzés: címlap, tartalomjegyzék, fejezetek, mellékletek, forrásjegyzék rendben; leadásra kész.",
+      "hu": "az utolsó bejegyzés"
+    }
+  ],
+  "mistakes": [
+    {
+      "wrong": "„Dolgoztam a projekten.” – dátum és tartalom nélkül.",
+      "right": "„2027. január 12. – Kérdőívet készítettem 10 kérdéssel a helyi piac vásárlóinak; holnap kipróbálom 3 osztálytársamon.”",
+      "why": "A munkanapló szempont dátumozott bejegyzéseket és a használt módszereket várja."
+    },
+    {
+      "wrong": "Csak a sikerekről írok, az elakadásokat kihagyom.",
+      "right": "Az akadályokat és a megoldásukat is rögzítem.",
+      "why": "A rubrika kifejezetten nézi az akadályokat és megoldásukat."
+    },
+    {
+      "wrong": "A konzultációkat nem jegyzem fel.",
+      "right": "Minden konzultáció dátummal, a megbeszéltekkel és a következő teendővel szerepel.",
+      "why": "A határidők, konzultációk szempont (5 pont) a munkanaplóból látszik."
+    },
+    {
+      "wrong": "A döntéseknél nem írom le, miért választottam.",
+      "right": "„… helyett …-t választottam, mert …; így lemondtam arról, hogy …”",
+      "why": "A döntési helyzetek indoklása a munkanapló része, és jól mutatja a gazdasági gondolkodást (alternatív költség)."
+    }
+  ],
+  "checklist": [
+    "Minden bejegyzés dátummal kezdődik?",
+    "Szerepelnek a használt módszerek?",
+    "Leírtam a döntési helyzeteket és az indoklásukat?",
+    "Leírtam az akadályokat és a megoldásukat?",
+    "Minden konzultáció és határidő benne van?",
+    "Az utolsó bejegyzés a formai ellenőrzés (címlap, tartalomjegyzék, fejezetek, mellékletek, forrásjegyzék)?"
+  ],
+  "timing": "Bejegyzésenként 5–10 perc, minden munkanap és konzultáció után azonnal. Az app próbaérettségijében a munkanapló-feladatra 30 perc jut.",
+  "levelNotes": {
+    "kozep": "Középszinten a készítés folyamata 15 pont (határidők, konzultációk 5, a munkanapló vezetése 6, terjedelem, formai előírások 4), és ennek nagy része a munkanaplóból látszik.",
+    "emelt": "Emelt szinten csak akkor kell munkanapló, ha a feladatsor helyett a projektmunkát választod; ilyenkor az értékelés formailag azonos a középszintűvel."
+  }
+}

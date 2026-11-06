@@ -1,0 +1,124 @@
+{
+  "schemaVersion": 1,
+  "id": "gaz-gd-exam-reading",
+  "subject": "gazdasagi-ismeretek",
+  "revision": 1,
+  "level": "kozep",
+  "source": "generated",
+  "topic": "utmutato",
+  "title": "Gyorskérdések / Írásbeli I. – Rövid feladatok",
+  "createdAt": "2026-11-06",
+  "tags": [],
+  "section": "guide",
+  "type": "exam",
+  "target": "reading",
+  "summaryHu": "Középszinten ez a rész csak gyakorlás (0 pont): „Középszinten az írásbeli vizsgarész a projektmunka, feladatlap nincs; a gyorskérdések a tételek fogalmait és összefüggéseit gyakoroltatják (nem vizsgarész).” Emelt szinten ez az „Írásbeli I. – Rövid feladatok” (40 pont, 60 perc): feleletválasztás, igaz–hamis, párosítás, fogalom felismerése, rövid számítás, gazdasági szöveg és adatsor értelmezése. A 40 pont és a 60 perc app-paraméter: az emelt írásbeli 180 perc, 100 pont, a vizsgán a 180 perc egyben van.",
+  "steps": [
+    {
+      "title": "Olvasd el a feladat utasítását és a 0. példát",
+      "explanation": "Minden feladat elején van egy megoldott példa (0). Ebből látod, milyen formában kell válaszolni: betűjel, T/F, egy fogalom vagy egy szám. Ezután nézd meg, melyik témakörhöz tartozik a feladat (pl. szükségletek és javak, gazdasági szereplők, piac fogalma).",
+      "tips": [
+        "Ha a példában egyetlen szó a válasz, te se írj mondatot.",
+        "A számítási feladatnál figyeld meg, kér-e mértékegységet."
+      ]
+    },
+    {
+      "title": "Feleletválasztás és igaz–hamis: a definícióból indulj",
+      "explanation": "Egy helyes válasz van a négy közül. Idézd fel a pontos definíciót (az arany DEFINÍCIÓ dobozok szövegét), és vesd össze minden opcióval. Az igaz–hamis állításoknál egy-egy szó dönt: pl. „Tőkepiac: egy éven túli, hosszú lejárat · Pénzpiac: egy éven belüli, rövid lejárat” – ha az állítás felcseréli a kettőt, hamis.",
+      "tips": [
+        "Figyelj a „mindig”, „csak”, „soha” szavakra.",
+        "A tiszta piacgazdaságban a piac, a tiszta tervgazdaságban az állam dönt – a vegyes gazdaságban a kettő együtt."
+      ]
+    },
+    {
+      "title": "Párosítás és fogalom: kizárásos módszer",
+      "explanation": "A közös opciólistában 1–2 felesleges elem is van. Először a biztos párokat jelöld, aztán a maradékot. A fogalom-feladatnál a definícióból vagy a példából nevezd meg a fogalmat egy-két szóval (pl. „természetbeni csere, pénz használata nélkül” → barter).",
+      "tips": [
+        "Párosítsd a termelési tényezőket a jövedelmükkel: munka – munkabér, természeti tényezők – bérleti díj (járadék), tőke – kamat, vállalkozó – profit.",
+        "A közgazdászokat a fő gondolatukkal párosítsd: Adam Smith – láthatatlan kéz, Keynes – állami beavatkozás válság idején, Friedman – monetarizmus."
+      ]
+    },
+    {
+      "title": "Rövid számítás és adatsor",
+      "explanation": "A rövid számításnál csak az eredményt kell beírni, de a lépéseket írd fel piszkozatba. A pékség példájából: átlagköltség = összköltség / termelés (38 000 / 300 ≈ 126,7 Ft/db); határköltség az utolsó 100 db-ra = az összköltség változása / 100 ((51 500 – 38 000) / 100 = 135 Ft/db); profit = bevétel – összköltség (39 000 – 38 000 = 1 000 Ft). Az adatsoros feladatban a táblázatot szövegben kapod: írd ki magadnak oszlopokba.",
+      "tips": [
+        "Tizedesvesszőt és tizedespontot is elfogad az app (126,7 = 126.7).",
+        "Ellenőrizd: a határköltség nem azonos az átlagköltséggel."
+      ]
+    },
+    {
+      "title": "Szövegértelmezés",
+      "explanation": "Rövid gazdasági hír vagy esetleírás alapján kell a tanult fogalmakat felismerni: melyik szereplőről van szó, melyik piacról, pozitív vagy normatív-e egy állítás, mi a döntés alternatív költsége. A válasz a szövegből és a tanult definícióból együtt jön ki.",
+      "tips": [
+        "Normatív állításban gyakran szerepel a „kellene”, „jobb lenne”, „igazságos” szó.",
+        "Húzd alá a szövegben a fogalomra utaló kulcsszót."
+      ]
+    }
+  ],
+  "phrases": [
+    {
+      "group": "Feladattípusok",
+      "en": "Feleletválasztás",
+      "hu": "egy helyes válasz 4 lehetőség közül (fogalom, irányzat, példa besorolása)"
+    },
+    {
+      "group": "Feladattípusok",
+      "en": "Igaz–hamis állítások",
+      "hu": "gazdasági állítások eldöntése; a magyarázatban a helyes megfogalmazás"
+    },
+    {
+      "group": "Feladattípusok",
+      "en": "Párosítás",
+      "hu": "fogalmak és definíciók, irányzatok és képviselők, példák és kategóriák közös opciólistából"
+    },
+    {
+      "group": "Feladattípusok",
+      "en": "Rövid számítás",
+      "hu": "határköltség, átlagköltség, profit, reáljövedelem, alternatív költség – csak az eredmény kell"
+    },
+    {
+      "group": "Képletek",
+      "en": "Átlagköltség = összköltség / termelt mennyiség",
+      "hu": "a pékségnél 300 db-nál 38 000 / 300 ≈ 126,7 Ft/db"
+    },
+    {
+      "group": "Képletek",
+      "en": "Profit = bevétel – összköltség",
+      "hu": "300 db-nál 39 000 – 38 000 = +1 000 Ft"
+    }
+  ],
+  "mistakes": [
+    {
+      "wrong": "A határköltséget az összköltség és a darabszám hányadosaként számolom.",
+      "right": "A határköltség a pótlólagos (utolsó) egység többletköltsége: 300-ról 400 db-ra (51 500 – 38 000) / 100 = 135 Ft/db.",
+      "why": "Az összköltség / darabszám az átlagköltség; a határelemzésben a változás számít, nem az átlag."
+    },
+    {
+      "wrong": "„A pénzpiac a hosszú lejáratú pénzeszközök piaca.” – igaznak jelölöm.",
+      "right": "Hamis: a pénzpiacon „a rövid lejáratú, egy éven belüli ügyletek tartoznak ide”; a tőkepiac az egy éven túli, hosszú lejáratú.",
+      "why": "A két piac épp a lejáratban különbözik, ezt kérdezik a legszívesebben."
+    },
+    {
+      "wrong": "A levegőt gazdasági jószágnak sorolom, mert a szükségletet kielégíti.",
+      "right": "A levegő szabad jószág: korlátlanul rendelkezésre áll; a gazdasági javak szűkösek, előállításuk költséges.",
+      "why": "Minden jószág alkalmas szükséglet kielégítésére – a csoportosítás szempontja itt a szűkösség."
+    },
+    {
+      "wrong": "Ha 10%-kal nő a fizetésem, a reáljövedelmem is nő.",
+      "right": "Ha az árak is 10%-kal emelkednek, „a nomináljövedelmünk nőtt, a reáljövedelmünk nem – ugyanannyit tudunk vásárolni”.",
+      "why": "A reáljövedelem az áru- és szolgáltatásmennyiség, amit a nomináljövedelemből az adott árakon meg lehet vásárolni."
+    }
+  ],
+  "checklist": [
+    "Megnéztem a 0. példát, és ugyanabban a formában válaszoltam?",
+    "Minden feleletválasztós kérdésnél egyetlen betűt jelöltem?",
+    "A számításnál a jó képletet használtam (átlag- vagy határköltség?), és ellenőriztem az eredményt?",
+    "A párosításnál maradt-e felesleges opció, és az valóban nem illik sehová?",
+    "Minden kérdésre adtam választ, és a végén visszatértem a megjelölt kérdésekhez?"
+  ],
+  "timing": "Emelt szinten az app 60 percet ad a 40 pontra, vagyis nagyjából percenként 2/3 pontnyi munkát: egy 5–8 kérdéses feladatra 6–10 perc jut. Ami 1 percen belül nem megy, jelöld meg, és a végén térj vissza rá; a számításokra hagyj több időt. Középszinten nincs időkorlát – itt a pontosság és a magyarázatok elolvasása a cél.",
+  "levelNotes": {
+    "kozep": "Középszinten a gyorskérdések nem vizsgarész (0 pont): a tételek fogalmait és összefüggéseit gyakoroltatják a szóbelire és a projektre. Minden hibánál olvasd el a magyarázatot, és a definíciót tanuld meg szó szerint.",
+    "emelt": "Emelt szinten ez az Írásbeli I. – Rövid feladatok (az appban 40 pont, 60 perc) a központi feladatsor gyakorlására. Mélyebb kérdések várhatók: elvek alkalmazása új helyzetre (alternatív költség, határelemzés, ceteris paribus), adatsor értelmezése, pozitív és normatív állítás elkülönítése, a közgazdasági irányzatok részletes ismerete."
+  }
+}
