@@ -50,6 +50,8 @@ export const SubjectSchema = z.object({
   /** Characters offered above the answer editor (formulas, Hungarian quotation marks …). */
   symbols: z.array(z.string().min(1).max(4)).default([]),
   available: z.boolean().default(true),
+  /** Levels the student prepares for in this subject; a single level hides the level switch for it. */
+  levels: z.array(LevelSchema).min(1).default(["kozep", "emelt"]),
   defaultLevel: LevelSchema.default("kozep"),
   defaultExamDate: z.string().regex(/^\d{4}-\d{2}-\d{2}$/),
   description: z.string(),

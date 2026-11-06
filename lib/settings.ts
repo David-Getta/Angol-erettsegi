@@ -47,7 +47,13 @@ export type Settings = z.infer<typeof SettingsSchema>;
 /** Keys that belong to the current subject, not to the app as a whole. */
 const SUBJECT_KEYS = Object.keys(SubjectSettingsSchema.shape) as (keyof SubjectSettings)[];
 
-type SubjectDefaults = { id: string; defaultLevel?: Level; defaultExamDate?: string };
+type SubjectDefaults = { id: string; defaultLevel?: Level; defaultExamDate?: string; levels?: Level[] };
+
+/** The level the subject can be studied at: the wanted one if the subject offers it, else its only (first) level. */
+function levelFor(d: SubjectDefaults, level: Level): Level {
+  const levels = d.levels?.length ? d.levels : (["kozep", "emelt"] as Level[]);
+  return levels.includes(level) ? level : levels[0]!;
+}
 
 /** Minimal read of config/subjects.json (the full loader lives in lib/exam/config and reads the settings itself). */
 function allSubjectDefaults(): SubjectDefaults[] {
@@ -67,7 +73,7 @@ function withSubject(stored: StoredSettings): Settings {
   const own = stored.subjects[stored.subject] ?? {};
   return {
     ...stored,
-    level: own.level ?? d.defaultLevel ?? "kozep",
+    level: levelFor(d, own.level ?? d.defaultLevel ?? "kozep"),
     examDate: own.examDate ?? d.defaultExamDate ?? "2027-05-03",
     targetPct: own.targetPct ?? 60,
     onboardingDone: own.onboardingDone ?? false,
@@ -116,9 +122,10 @@ export function updateSettings(patch: Partial<Settings>): Settings {
     else appPatch[k] = v;
   }
   const subjects = { ...stored.subjects, [subjectId]: SubjectSettingsSchema.partial().parse({ ...(stored.subjects[subjectId] ?? {}), ...ownPatch }) };
-  // the level switch applies to every subject at once (the student sits all exams at the chosen level by default)
+  // the level switch applies to every subject at once (the student sits all exams at the chosen level by default);
+  // a subject that is studied at one level only keeps that level
   if (patch.level) {
-    for (const s of allSubjectDefaults()) subjects[s.id] = SubjectSettingsSchema.partial().parse({ ...(subjects[s.id] ?? {}), level: patch.level });
+    for (const s of allSubjectDefaults()) subjects[s.id] = SubjectSettingsSchema.partial().parse({ ...(subjects[s.id] ?? {}), level: levelFor(s, patch.level) });
   }
   const next = StoredSettingsSchema.parse({ ...stored, ...appPatch, subject: subjectId, subjects });
   write(next);

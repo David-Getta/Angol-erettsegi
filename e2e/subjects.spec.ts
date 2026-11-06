@@ -40,27 +40,28 @@ test("subject chooser: matematika has its own parts, exam info and conditional o
   await expect(page.getByTestId("exam-parts-kozep")).toContainText("150");
 });
 
-test("subject chooser: gazdasági ismeretek has the project, the oral with defence and practice-only quick questions", async ({ page }) => {
+test("subject chooser: gazdasági ismeretek is studied at emelt only – fixed level, feladatsor parts and the oral", async ({ page }) => {
   await page.goto("/");
   await page.getByTestId("subject-gazdasagi-ismeretek").click();
   await page.waitForURL(/\/kezdolap/);
-  await page.getByTestId("level-kozep").click();
-  await expect(page.getByTestId("app-nav")).toContainText("Középszint");
+  // the level cannot be switched for this subject
+  await expect(page.getByTestId("level-fixed")).toHaveText("Emelt");
+  await expect(page.getByTestId("level-kozep")).toHaveCount(0);
   const nav = page.getByTestId("app-nav");
-  await expect(nav).toContainText("Gyorskérdések");
-  await expect(nav).toContainText("Projektmunka");
+  await expect(nav).toContainText("Emelt szint");
+  await expect(nav).toContainText("Rövid feladatok");
+  await expect(nav).toContainText("Kifejtendő feladatok");
   for (const route of ["/gyorskerdesek", "/kifejtes", "/szobeli", "/szabalytar", "/szokincs", "/utmutatok"]) {
     const res = await page.goto(route);
     expect(res?.status(), route).toBe(200);
     await expect(page.locator("h1").first()).toBeVisible();
   }
   await page.goto("/vizsga");
-  const parts = page.getByTestId("exam-parts-kozep");
-  await expect(parts).toContainText("Projektmunka");
-  await expect(parts).toContainText("110");
+  const parts = page.getByTestId("exam-parts-emelt");
+  await expect(parts).toContainText("Kifejtendő feladatok");
   await expect(parts).toContainText("150");
-  // the practice-only part is not in the exam table
-  await expect(parts).not.toContainText("Gyorskérdések");
+  // the level the subject is not studied at is not shown
+  await expect(page.getByTestId("exam-parts-kozep")).toHaveCount(0);
 });
 
 test("subject chooser: switching back to angol restores the English pages", async ({ page }) => {

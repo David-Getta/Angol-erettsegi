@@ -5,7 +5,8 @@
       "A vizsganapok a 2027. tavaszi vizsgaidőszak szokásos sorrendje alapján becsültek (hétfő magyar, kedd matematika, szerda történelem, csütörtök angol, péntek német, utána a többi tárgy) – a hivatalos vizsganaptár megjelenése után a Beállításokban pontosítandó.",
       "idPrefix: a tantárgy tartalomfájljainak azonosító-előtagja (pl. mat-rd-kozep-…, mat-gr-<kategória>, mat-gd-exam-reading); az azonosítók az adatbázisban globálisak, ezért tantárgyanként egyedi előtag kell. Az angol (az eredeti bank) előtag nélkül marad.",
       "speechLang: a felolvasás és a beszédfelismerés nyelve (angol en-GB, német de-DE, a többi tárgy hu-HU); languageName: a nyelvi tárgyak nyelvének neve a kártyatípusokhoz (angol → magyar).",
-      "symbols: a beadandó feladatok szerkesztője fölötti jelsor (képletek, idézőjelek) – kattintásra a kurzorhoz szúrja be a jelet."
+      "symbols: a beadandó feladatok szerkesztője fölötti jelsor (képletek, idézőjelek) – kattintásra a kurzorhoz szúrja be a jelet.",
+      "levels: mely szinteken készül a tanuló az adott tárgyból (alapértelmezés: mindkettő); egyetlen szint esetén a szintváltó ennél a tárgynál nem érvényes, a tartalom és a tesztek csak erre a szintre vonatkoznak (gazdasági ismeretek: csak emelt)."
     ]
   },
   "subjects": [
@@ -262,9 +263,9 @@
       "icon": "💰",
       "group": "egyeb",
       "language": false,
-      "defaultLevel": "kozep",
+      "defaultLevel": "emelt",
       "defaultExamDate": "2027-05-20",
-      "description": "Közgazdaságtan alapfogalmai, piac, pénz, vállalkozás, állam; projektmunka, szóbeli tétel és védés; fogalomkártyák és szabálytár.",
+      "description": "Emelt szint: közgazdaságtan alapfogalmai, piac, pénz, vállalkozás, állam; feladatsor, szóbeli tétel és aktuális elemzés; fogalomkártyák és szabálytár.",
       "idPrefix": "gaz",
       "speechLang": "hu-HU",
       "symbols": [
@@ -280,6 +281,9 @@
         "Δ",
         "·",
         "–"
+      ],
+      "levels": [
+        "emelt"
       ]
     }
   ]

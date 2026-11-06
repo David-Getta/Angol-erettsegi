@@ -183,8 +183,8 @@ for (const subject of configured) {
         for (const id of need) expect(guides.has(id), id).toBe(true);
       });
 
-      it("every exam part of the subject has at least one task on each level", () => {
-        for (const level of LEVELS) {
+      it("every exam part of the subject has at least one task on each level the subject is studied at", () => {
+        for (const level of subject.levels) {
           for (const p of cfg.structure().levels[level].parts) {
             expect(content.some((c) => c.level === level && c.section === p.id), `${subject.id}/${level}/${p.id}`).toBe(true);
           }

@@ -6,14 +6,27 @@ import { t } from "@/lib/i18n/hu";
 import type { Level } from "@/lib/content/schema";
 import { setLevelAction } from "@/app/actions";
 
-export function LevelSwitch({ level }: { level: Level }) {
+const ALL: Level[] = ["kozep", "emelt"];
+
+export function LevelSwitch({ level, levels = ALL }: { level: Level; levels?: Level[] }) {
   const [pending, start] = useTransition();
   const router = useRouter();
+  if (levels.length === 1) {
+    // the subject is studied at one level only: no switch, just the level
+    return (
+      <div className="flex items-center gap-2 text-sm" title={t.level.fixedHint}>
+        <span className="hidden text-muted sm:inline">{t.level.switchLabel}:</span>
+        <span className="rounded-md border border-border bg-accent px-3 py-1 text-accent-fg" data-testid="level-fixed">
+          {t.level.short[level]}
+        </span>
+      </div>
+    );
+  }
   return (
     <div className="flex items-center gap-2 text-sm" aria-busy={pending} title={t.level.switchHint}>
       <span className="hidden text-muted sm:inline">{t.level.switchLabel}:</span>
       <div className="inline-flex overflow-hidden rounded-md border border-border" role="group">
-        {(["kozep", "emelt"] as const).map((l) => (
+        {ALL.map((l) => (
           <button
             key={l}
             type="button"

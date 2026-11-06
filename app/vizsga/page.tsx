@@ -140,6 +140,8 @@ export default function ExamInfoPage() {
   const level = getSettings().level;
   const grading = examConfig.grading();
   const other: Level = level === "emelt" ? "kozep" : "emelt";
+  // a subject studied at one level only shows that level
+  const levels = examConfig.subject().levels;
   return (
     <div>
       <PageHeader title={t.examInfo.title} intro={t.examInfo.intro(examConfig.subject().name)} />
@@ -150,18 +152,20 @@ export default function ExamInfoPage() {
             {levelStructure(level).name} {levelStructure(level).cefr && <Badge tone="accent">{levelStructure(level).cefr}</Badge>}
           </h2>
           <LevelInfo level={level} />
-          <details className="mt-6">
-            <summary className="cursor-pointer text-lg font-semibold">
-              {levelStructure(other).name} {levelStructure(other).cefr && <span className="text-sm font-normal text-muted">({levelStructure(other).cefr})</span>}
-            </summary>
-            <div className="mt-3">
-              <LevelInfo level={other} />
-            </div>
-          </details>
+          {levels.includes(other) && (
+            <details className="mt-6">
+              <summary className="cursor-pointer text-lg font-semibold">
+                {levelStructure(other).name} {levelStructure(other).cefr && <span className="text-sm font-normal text-muted">({levelStructure(other).cefr})</span>}
+              </summary>
+              <div className="mt-3">
+                <LevelInfo level={other} />
+              </div>
+            </details>
+          )}
         </div>
         <aside className="min-w-0 space-y-5">
           <Card title={t.examInfo.grades}>
-            {(["kozep", "emelt"] as const).map((lv) => (
+            {(["kozep", "emelt"] as const).filter((lv) => levels.includes(lv)).map((lv) => (
               <div key={lv} className="mb-3 last:mb-0">
                 <div className="mb-1 text-sm font-medium">{levelStructure(lv).name}</div>
                 <table className="w-full text-sm" data-testid={`grades-${lv}`}>

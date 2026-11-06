@@ -54,7 +54,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               </span>
             </Link>
             <div className="flex items-center gap-2 sm:gap-3">
-              <LevelSwitch level={s.level} />
+              <LevelSwitch level={s.level} levels={subj.levels} />
               <ThemeSwitch theme={s.theme} />
             </div>
           </header>

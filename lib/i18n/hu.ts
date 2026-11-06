@@ -27,6 +27,7 @@ export const t = {
     short: { kozep: "Közép", emelt: "Emelt" },
     switchLabel: "Szint",
     switchHint: "A szintváltás minden tantárgyra érvényes",
+    fixedHint: "Ebből a tantárgyból csak ezen a szinten készülsz – a szintváltó itt nem érvényes",
   },
 
   section: {

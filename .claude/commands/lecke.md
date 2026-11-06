@@ -23,7 +23,9 @@ Argumentumok: `$ARGUMENTS` – formátum: `<tantárgy> <fájl> [témakör]`.
    `structure.json` (mely vizsgarész-helyeket használja a tárgy, `mockTaskCount`, `features`), `task-types.json`, `topics.json`,
    `error-categories.json`, `writing-rubric-*.json`, `speaking-rubric-*.json`.
 3. Nézd meg, mi van már a bankban ebből a témakörből (`ls content/<tantárgy>/*/*/ | grep <témakör>`), hogy ne ismételj.
-4. Állapítsd meg, mely fejezeteket tartalmazza az anyag (egy diasor lehet egy teljes téma vagy csak egy téma első fejezetei) –
+4. Nézd meg a tantárgy `levels` mezőjét a `config/subjects.json`-ban: **csak az ott felsorolt szintekre írj** (pl. gazdasági ismeretek:
+   csak `emelt`); ha egy szint szerepel, a „szintenként” előírásokat erre az egy szintre értsd.
+5. Állapítsd meg, mely fejezeteket tartalmazza az anyag (egy diasor lehet egy teljes téma vagy csak egy téma első fejezetei) –
    **csak a fájlban szereplő anyagból dolgozz**: a benne lévő definíciók (az „arany Definíció dobozok”) szó szerint kerüljenek a
    kártyákra, kulcspontokra és magyarázatokba; a fájlban nem szereplő elméletet, képletet, adatot ne találj ki.
 
