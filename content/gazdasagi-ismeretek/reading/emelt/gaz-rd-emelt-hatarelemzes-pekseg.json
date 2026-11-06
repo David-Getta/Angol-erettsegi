@@ -1,0 +1,193 @@
+{
+  "schemaVersion": 1,
+  "id": "gaz-rd-emelt-hatarelemzes-pekseg",
+  "subject": "gazdasagi-ismeretek",
+  "revision": 1,
+  "level": "emelt",
+  "source": "generated",
+  "topic": "alapfogalmak",
+  "title": "Határelemzés és átlagelemzés: a pékség adatai",
+  "createdAt": "2026-11-06",
+  "tags": [],
+  "section": "reading",
+  "type": "adatsor",
+  "instructions": "Olvassa el a pékség adatait, majd válaszoljon a kérdésekre! A számítási feladatoknál csak az eredményt írja be (Ft-ban, illetve Ft/db-ban; a tizedes értékeket egy tizedesjegyre kerekítve). A 0. a megoldott példa.",
+  "passage": {
+    "title": "Egy pékség napi termelése",
+    "blocks": [
+      {
+        "text": "Egy pékség azt mérlegeli, mennyi kenyeret érdemes naponta sütnie. Egy kenyér ára 130 Ft, és az ár a vizsgált mennyiségeknél nem változik."
+      },
+      {
+        "text": "Napi 100 db kenyér összköltsége 20 000 Ft, 200 db-é 30 000 Ft, 300 db-é 38 000 Ft, 400 db-é pedig 51 500 Ft."
+      },
+      {
+        "text": "A határköltséget mindig az utolsó 100 db-ra számoljuk: az összköltség növekedését elosztjuk 100-zal. Az átlagköltség az összköltség és a termelt mennyiség hányadosa, a bevétel az ár és a mennyiség szorzata, a profit pedig a bevétel és az összköltség különbsége."
+      }
+    ]
+  },
+  "example": {
+    "id": "0",
+    "kind": "text",
+    "prompt": "Mekkora az átlagköltség napi 200 db kenyér esetén (Ft/db)?",
+    "answer": [
+      "150",
+      "150 Ft",
+      "150 Ft/db",
+      "150Ft"
+    ],
+    "category": "szamitas",
+    "explanation": "150 Ft/db. Átlagköltség = összköltség / mennyiség = 30 000 Ft / 200 db = 150 Ft/db."
+  },
+  "items": [
+    {
+      "id": "1",
+      "kind": "text",
+      "prompt": "Mekkora az átlagköltség napi 300 db kenyér esetén (Ft/db, egy tizedesjegyre kerekítve)?",
+      "answer": [
+        "126,7",
+        "126.7",
+        "126,7 Ft",
+        "126.7 Ft",
+        "126,7 Ft/db",
+        "126.7 Ft/db",
+        "126,67",
+        "126.67"
+      ],
+      "category": "szamitas",
+      "explanation": "≈ 126,7 Ft/db. Átlagköltség = 38 000 Ft / 300 db = 126,666… ≈ 126,7 Ft/db."
+    },
+    {
+      "id": "2",
+      "kind": "text",
+      "prompt": "Mekkora a határköltség (Ft/db), ha a pékség 200 db-ról 300 db-ra növeli a termelést?",
+      "answer": [
+        "80",
+        "80 Ft",
+        "80 Ft/db",
+        "80Ft"
+      ],
+      "category": "szamitas",
+      "explanation": "80 Ft/db. Határköltség = az összköltség változása / a mennyiség változása = (38 000 − 30 000) Ft / 100 db = 80 Ft/db."
+    },
+    {
+      "id": "3",
+      "kind": "text",
+      "prompt": "Mekkora a határköltség (Ft/db), ha a pékség 300 db-ról 400 db-ra növeli a termelést?",
+      "answer": [
+        "135",
+        "135 Ft",
+        "135 Ft/db",
+        "135Ft"
+      ],
+      "category": "szamitas",
+      "explanation": "135 Ft/db. Határköltség = (51 500 − 38 000) Ft / 100 db = 13 500 Ft / 100 db = 135 Ft/db."
+    },
+    {
+      "id": "4",
+      "kind": "text",
+      "prompt": "Mekkora a pékség profitja napi 300 db kenyér esetén (Ft)?",
+      "answer": [
+        "1000",
+        "1 000",
+        "+1000",
+        "+1 000",
+        "1000 Ft",
+        "1 000 Ft",
+        "+1000 Ft",
+        "+1 000 Ft",
+        "1000Ft"
+      ],
+      "category": "szamitas",
+      "explanation": "+1 000 Ft. Bevétel = 130 Ft × 300 db = 39 000 Ft; profit = bevétel − összköltség = 39 000 − 38 000 = 1 000 Ft."
+    },
+    {
+      "id": "5",
+      "kind": "tf",
+      "prompt": "Napi 400 db kenyér esetén az átlagköltség kisebb a 130 Ft-os árnál.",
+      "answer": "T",
+      "category": "adatleolvasas",
+      "explanation": "Igaz. 51 500 Ft / 400 db ≈ 128,8 Ft/db, ami kisebb 130 Ft-nál – az átlagelemzés ezért azt sugallja, hogy „megéri többet sütni”."
+    },
+    {
+      "id": "6",
+      "kind": "choice",
+      "prompt": "Mennyit érdemes sütni a határelemzés szerint, és miért?",
+      "options": [
+        {
+          "key": "A",
+          "text": "400 db-ot, mert ott az átlagköltség (≈128,8 Ft) kisebb az árnál"
+        },
+        {
+          "key": "B",
+          "text": "300 db-ot, mert az utolsó 100 db darabja 135 Ft-ba kerülne, ami több a 130 Ft-os árnál, és csökkentené a profitot"
+        },
+        {
+          "key": "C",
+          "text": "200 db-ot, mert ott a legkisebb az összköltség növekedése"
+        },
+        {
+          "key": "D",
+          "text": "100 db-ot, mert ott a legkisebb az összköltség"
+        }
+      ],
+      "answer": "B",
+      "category": "alapelv-alkalmazas",
+      "explanation": "Helyes: B. Döntési szabály: addig érdemes növelni a termelést, amíg a határhaszon ≥ határköltség. A 300 → 400 db lépésnél a határköltség 135 Ft > 130 Ft, ezért a profit +1 000 Ft-ról +500 Ft-ra csökkenne.",
+      "wrongOptions": {
+        "A": "Ez az átlagelemzés következtetése, amely tévútra vezet: a döntésnél a változások (határköltség) számítanak, nem az átlagos értékek.",
+        "C": "200 db-nál a profit még −4 000 Ft, és a következő 100 db határköltsége (80 Ft) kisebb az árnál, tehát érdemes tovább növelni.",
+        "D": "100 db-nál a profit −7 000 Ft; az alacsony összköltség nem jelent jó döntést, mert a bevétel is kicsi."
+      }
+    },
+    {
+      "id": "7",
+      "kind": "text",
+      "prompt": "Tegyük fel, hogy – minden egyéb változatlansága mellett – a kenyér ára 140 Ft-ra emelkedik. Mekkora lenne ekkor a profit napi 400 db kenyér esetén (Ft)?",
+      "answer": [
+        "4500",
+        "4 500",
+        "+4500",
+        "+4 500",
+        "4500 Ft",
+        "4 500 Ft",
+        "+4500 Ft",
+        "+4 500 Ft",
+        "4500Ft"
+      ],
+      "category": "szamitas",
+      "explanation": "+4 500 Ft. Bevétel = 140 Ft × 400 db = 56 000 Ft; profit = 56 000 − 51 500 = 4 500 Ft (300 db-nál csak 42 000 − 38 000 = 4 000 Ft lenne)."
+    },
+    {
+      "id": "8",
+      "kind": "choice",
+      "prompt": "140 Ft-os kenyérár mellett melyik mennyiség a jobb döntés a határelemzés szerint?",
+      "options": [
+        {
+          "key": "A",
+          "text": "300 db"
+        },
+        {
+          "key": "B",
+          "text": "400 db"
+        },
+        {
+          "key": "C",
+          "text": "200 db"
+        },
+        {
+          "key": "D",
+          "text": "mindegy, mert a két profit megegyezik"
+        }
+      ],
+      "answer": "B",
+      "category": "alapelv-alkalmazas",
+      "explanation": "Helyes: B. Az utolsó 100 db határköltsége 135 Ft, ami most kisebb a 140 Ft-os árnál (határhaszon ≥ határköltség), ezért megéri 400 db-ot sütni: a profit 4 000 Ft-ról 4 500 Ft-ra nő.",
+      "wrongOptions": {
+        "A": "130 Ft-os árnál a 300 db volt a jobb, de 140 Ft-nál az utolsó 100 db is többet hoz (140 Ft), mint amennyibe kerül (135 Ft).",
+        "C": "200 db-nál a profit 140 Ft-os áron 28 000 − 30 000 = −2 000 Ft, tehát rosszabb.",
+        "D": "A két profit nem egyezik meg: 300 db-nál 4 000 Ft, 400 db-nál 4 500 Ft."
+      }
+    }
+  ]
+}

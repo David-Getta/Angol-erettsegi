@@ -1,0 +1,312 @@
+{
+  "schemaVersion": 1,
+  "id": "gaz-rd-emelt-alapelvek-alkalmazasa",
+  "subject": "gazdasagi-ismeretek",
+  "revision": 1,
+  "level": "emelt",
+  "source": "generated",
+  "topic": "alapfogalmak",
+  "title": "A gazdasági gondolkodás alapelvei egy diák hétköznapjaiban",
+  "createdAt": "2026-11-06",
+  "tags": [],
+  "section": "reading",
+  "type": "szovegertelmezes",
+  "instructions": "Olvassa el az esetleírást, majd válaszoljon a kérdésekre! Minden kérdésre egy helyes válasz van. A 0. a megoldott példa.",
+  "passage": {
+    "title": "Réka döntései egy hét alatt",
+    "sourceNote": "Gyakorlásra írt esetleírás a diasor példái alapján.",
+    "blocks": [
+      {
+        "text": "Réka végzős gimnazista. Érettségi után egyetemre szeretne menni, pedig egy ismerős cég már felajánlott neki egy állást. Kiszámolta, hogy a tandíj és a tankönyvek is pénzbe kerülnek, az édesapja azonban arra figyelmeztette, hogy ha egyetemre megy, arról a fizetésről is lemond, amelyet dolgozva kereshetne."
+      },
+      {
+        "text": "Szombat délelőtt Réka tanulni ül le. Erre az időre edzése lett volna, a barátai pedig a cukrászdába hívták – a kettő közül az edzést tartotta volna többre. Tanulás közben azon gondolkodik, hogy még egy óra tanulás mennyivel növelné a tudását, vagy már jobb lenne abbahagyni."
+      },
+      {
+        "text": "Délután a helyi újságban azt olvassa, hogy az állam új kórházat épít a városban. A cikk írója megjegyzi, hogy ugyanabból a pénzből egy autópálya-szakasz vagy egy új iskola is épülhetett volna, hiszen az állam pénze sem végtelen."
+      },
+      {
+        "text": "Este a fagyizóban azon tűnődik, hogy a nyáron azért vettek-e kevesebb fagylaltot, mert drágább lett, vagy mert hűvösebb volt az idő. A tanára szerint ilyenkor egyszerre csak egy tényező hatását szabad vizsgálni, a többit állandónak kell tekinteni."
+      },
+      {
+        "text": "Réka végül elhatározza, hogy a következő héten több egyetem honlapját is megnézi, összeveti a hasznokat és a költségeket, és csak ezután választja ki a számára legjobbat – akkor is, ha minden információt nem tud beszerezni."
+      }
+    ]
+  },
+  "example": {
+    "id": "0",
+    "kind": "choice",
+    "prompt": "Melyik alapelv jelenik meg abban, hogy Réka az egyetem választásakor lemond a fizetésről, amelyet dolgozva kereshetne?",
+    "options": [
+      {
+        "key": "A",
+        "text": "alternatív költség"
+      },
+      {
+        "key": "B",
+        "text": "határelemzés"
+      },
+      {
+        "key": "C",
+        "text": "ceteris paribus"
+      },
+      {
+        "key": "D",
+        "text": "racionalitás"
+      }
+    ],
+    "answer": "A",
+    "category": "alapelv-alkalmazas",
+    "explanation": "Helyes: A. Alternatív költség: annak a legjobb (legértékesebb) lehetőségnek az értéke, amelyről egy döntés meghozatalakor lemondunk – itt a kieső fizetés."
+  },
+  "items": [
+    {
+      "id": "1",
+      "kind": "choice",
+      "prompt": "Mi Réka továbbtanulásának alternatív költsége a diasor értelmezése szerint?",
+      "options": [
+        {
+          "key": "A",
+          "text": "a tandíj és a tankönyvek ára"
+        },
+        {
+          "key": "B",
+          "text": "a kieső fizetés, amelyet dolgozva kereshetne"
+        },
+        {
+          "key": "C",
+          "text": "a tandíj, a tankönyvek ára és a kieső fizetés összege"
+        },
+        {
+          "key": "D",
+          "text": "nincs alternatív költsége, mert az egyetem később megtérül"
+        }
+      ],
+      "answer": "B",
+      "category": "alapelv-alkalmazas",
+      "explanation": "Helyes: B. A dia szerint a továbbtanulás alternatív költsége a kieső fizetés, amit dolgozva kereshetne; a tandíj és a tankönyv közvetlen költség.",
+      "wrongOptions": {
+        "A": "A tandíj és a tankönyv a dia szerint közvetlen költség, nem a lemondott lehetőség értéke.",
+        "C": "Az alternatív költség csak a feláldozott lehetőség értéke; a közvetlen költségeket nem kell hozzáadni.",
+        "D": "Minden választásnak van alternatív költsége, mert le kell mondani a másik lehetőségről; a későbbi megtérülés ezen nem változtat."
+      }
+    },
+    {
+      "id": "2",
+      "kind": "choice",
+      "prompt": "Mi Réka szombat délelőtti tanulásának alternatív költsége?",
+      "options": [
+        {
+          "key": "A",
+          "text": "az edzés"
+        },
+        {
+          "key": "B",
+          "text": "az edzés és a cukrászda együtt"
+        },
+        {
+          "key": "C",
+          "text": "a cukrászdai találkozó"
+        },
+        {
+          "key": "D",
+          "text": "nincs, mert az idő ingyen van"
+        }
+      ],
+      "answer": "A",
+      "category": "alapelv-alkalmazas",
+      "explanation": "Helyes: A. Mindig csak a legjobb feláldozott lehetőséget számítjuk, és Réka a kettő közül az edzést tartotta többre; az idő is szűkös erőforrás.",
+      "wrongOptions": {
+        "B": "Az összes feláldozott lehetőség összeadása tipikus hiba: csak a legjobb (legértékesebb) lemondott lehetőség számít.",
+        "C": "A cukrászda csak a második legjobb lehetőség volt, Réka az edzést értékelte többre.",
+        "D": "Az alternatív költség nem csak pénz lehet: idő, élmény, lehetőség is – az idő szűkös erőforrás."
+      }
+    },
+    {
+      "id": "3",
+      "kind": "choice",
+      "prompt": "Melyik alapelvet alkalmazza Réka, amikor azon gondolkodik, mennyivel növelné még a tudását egy újabb óra tanulás?",
+      "options": [
+        {
+          "key": "A",
+          "text": "ceteris paribus"
+        },
+        {
+          "key": "B",
+          "text": "határelemzés"
+        },
+        {
+          "key": "C",
+          "text": "átlagelemzés"
+        },
+        {
+          "key": "D",
+          "text": "szűkösség"
+        }
+      ],
+      "answer": "B",
+      "category": "alapelv-alkalmazas",
+      "explanation": "Helyes: B. A határelemzés azt vizsgálja, hogyan változik a haszon és a költség, ha egy tevékenységet egy egységgel növelünk; a dia példája éppen „egy plusz óra tanulás”.",
+      "wrongOptions": {
+        "A": "A ceteris paribus elv egyetlen tényező hatásának elkülönítéséről szól, nem a „még egy egység” mérlegeléséről.",
+        "C": "Az átlagelemzés az átlagos értékeket nézi; a döntéseknél azonban a változások (határhaszon, határköltség) számítanak.",
+        "D": "A szűkösség az erőforrások korlátozottságát jelenti, nem a pótlólagos egység mérlegelését."
+      }
+    },
+    {
+      "id": "4",
+      "kind": "choice",
+      "prompt": "Mi a kórházépítés alternatív költsége a cikk szerint?",
+      "options": [
+        {
+          "key": "A",
+          "text": "az autópálya-szakasz vagy az iskola, amely ugyanabból a pénzből épülhetett volna"
+        },
+        {
+          "key": "B",
+          "text": "a kórház építésének teljes költsége"
+        },
+        {
+          "key": "C",
+          "text": "a kórházban dolgozó orvosok bére"
+        },
+        {
+          "key": "D",
+          "text": "nincs, mert az állam pénze korlátlan"
+        }
+      ],
+      "answer": "A",
+      "category": "alapelv-alkalmazas",
+      "explanation": "Helyes: A. A dia példája szerint a kórházépítés alternatív költsége az az autópálya vagy iskola, amely ugyanabból a pénzből épülhetett volna – a lemondott lehetőség.",
+      "wrongOptions": {
+        "B": "Az építés költsége pénzkiadás, nem a lemondott legjobb lehetőség értéke.",
+        "C": "Az orvosok bére működési kiadás, nem az a lehetőség, amelyről a döntéssel lemondunk.",
+        "D": "Az állam erőforrásai is szűkösek – a cikk is kiemeli, hogy az állam pénze sem végtelen."
+      }
+    },
+    {
+      "id": "5",
+      "kind": "choice",
+      "prompt": "Melyik alapelv magyarázza, hogy az államnak egyáltalán választania kell a kórház és más beruházások között?",
+      "options": [
+        {
+          "key": "A",
+          "text": "szűkösség"
+        },
+        {
+          "key": "B",
+          "text": "ceteris paribus"
+        },
+        {
+          "key": "C",
+          "text": "határelemzés"
+        },
+        {
+          "key": "D",
+          "text": "racionalitás"
+        }
+      ],
+      "answer": "A",
+      "category": "alapelv-alkalmazas",
+      "explanation": "Helyes: A. A szűkösség miatt az erőforrások mindig korlátozottak, miközben az igények gyakorlatilag korlátlanok – ezért mindig választani kell az alternatívák között.",
+      "wrongOptions": {
+        "B": "A ceteris paribus vizsgálati módszer, nem az oka annak, hogy választani kell.",
+        "C": "A határelemzés a döntés módszere, de nem magyarázza, miért kell egyáltalán dönteni.",
+        "D": "A racionalitás azt írja le, hogyan döntenek a szereplők, nem azt, miért kell dönteniük."
+      }
+    },
+    {
+      "id": "6",
+      "kind": "choice",
+      "prompt": "Melyik elv alkalmazását kéri a tanár a fagylalt-példában?",
+      "options": [
+        {
+          "key": "A",
+          "text": "racionalitás"
+        },
+        {
+          "key": "B",
+          "text": "ceteris paribus"
+        },
+        {
+          "key": "C",
+          "text": "alternatív költség"
+        },
+        {
+          "key": "D",
+          "text": "határelemzés"
+        }
+      ],
+      "answer": "B",
+      "category": "alapelv-alkalmazas",
+      "explanation": "Helyes: B. Ceteris paribus: „minden egyéb változatlansága mellett” – egyszerre csak egy tényező (itt az ár) hatását vizsgáljuk, az időjárást és a többit állandónak tekintjük.",
+      "wrongOptions": {
+        "A": "A racionalitás a szereplők ésszerű döntéseire vonatkozik, nem a tényezők elkülönítésére.",
+        "C": "Az alternatív költség a lemondott lehetőség értéke; a fagylalt-példában nem erről van szó.",
+        "D": "A határelemzés a „még egy egység” mérlegelése (pl. még egy gombóc), nem két hatás szétválasztása."
+      }
+    },
+    {
+      "id": "7",
+      "kind": "choice",
+      "prompt": "Racionális-e Réka döntése, ha nem tud minden információt beszerezni?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Nem, mert a racionalitás tökéletes informáltságot jelent."
+        },
+        {
+          "key": "B",
+          "text": "Igen, mert a racionalitás a rendelkezésre álló információkhoz igazodó legjobb döntést jelenti."
+        },
+        {
+          "key": "C",
+          "text": "Nem, mert csak a vállalatok döntenek racionálisan."
+        },
+        {
+          "key": "D",
+          "text": "Igen, mert a racionális döntéshez nem kell mérlegelni a hasznokat és a költségeket."
+        }
+      ],
+      "answer": "B",
+      "category": "alapelv-alkalmazas",
+      "explanation": "Helyes: B. A dia szerint a racionalitás nem tökéletes informáltságot jelent, hanem a rendelkezésre álló információkhoz igazodó legjobb döntést.",
+      "wrongOptions": {
+        "A": "Éppen ezt cáfolja a dia: a racionalitás nem tökéletes informáltságot jelent.",
+        "C": "A racionalitást minden gazdasági szereplőre feltételezzük, a háztartásokra is.",
+        "D": "A hasznok és költségek mérlegelése a racionális döntés második lépése, tehát szükséges."
+      }
+    },
+    {
+      "id": "8",
+      "kind": "choice",
+      "prompt": "Melyik sorrend felel meg a racionális döntés lépéseinek, ahogyan Réka is tervezi?",
+      "options": [
+        {
+          "key": "A",
+          "text": "információgyűjtés → a hasznok és költségek mérlegelése → a legjobb alternatíva kiválasztása"
+        },
+        {
+          "key": "B",
+          "text": "a legjobb alternatíva kiválasztása → információgyűjtés → mérlegelés"
+        },
+        {
+          "key": "C",
+          "text": "mérlegelés → a legjobb alternatíva kiválasztása → információgyűjtés"
+        },
+        {
+          "key": "D",
+          "text": "információgyűjtés → a legjobb alternatíva kiválasztása → mérlegelés"
+        }
+      ],
+      "answer": "A",
+      "category": "alapelv-alkalmazas",
+      "explanation": "Helyes: A. A racionális döntés lépései: 1. információgyűjtés a lehetőségekről, 2. a hasznok és költségek mérlegelése, 3. a legjobb alternatíva kiválasztása.",
+      "wrongOptions": {
+        "B": "A választás az utolsó lépés, előtte információt kell gyűjteni és mérlegelni.",
+        "C": "Mérlegelni csak az összegyűjtött információk alapján lehet, ezért az információgyűjtés az első.",
+        "D": "A kiválasztás a mérlegelés után következik, nem előtte."
+      }
+    }
+  ]
+}

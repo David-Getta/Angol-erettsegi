@@ -1,0 +1,291 @@
+{
+  "schemaVersion": 1,
+  "id": "gaz-rd-emelt-piacok-tokepiac-penzpiac",
+  "subject": "gazdasagi-ismeretek",
+  "revision": 1,
+  "level": "emelt",
+  "source": "generated",
+  "topic": "piaci-mechanizmus",
+  "title": "Piacok és piaci szereplők: tőkepiac, pénzpiac, munkaerőpiac",
+  "createdAt": "2026-11-06",
+  "tags": [],
+  "section": "reading",
+  "type": "feleletvalasztas",
+  "instructions": "Válassza ki a helyes választ! Minden kérdésre egy helyes válasz van. A 0. a megoldott példa.",
+  "example": {
+    "id": "0",
+    "kind": "choice",
+    "prompt": "Melyik ügylet tartozik a pénzpiachoz?",
+    "options": [
+      {
+        "key": "A",
+        "text": "egy éven belüli, rövid lejáratú ügylet"
+      },
+      {
+        "key": "B",
+        "text": "tízéves lejáratú hitel"
+      },
+      {
+        "key": "C",
+        "text": "lejárat nélküli ügylet"
+      },
+      {
+        "key": "D",
+        "text": "egy új dolgozó felvétele"
+      }
+    ],
+    "answer": "A",
+    "category": "fogalomcsere",
+    "explanation": "Helyes: A. A pénzpiacon a rövid lejáratú, egy éven belüli ügyletek zajlanak; az egy éven túli vagy lejárat nélküli ügyletek a tőkepiachoz tartoznak."
+  },
+  "items": [
+    {
+      "id": "1",
+      "kind": "choice",
+      "prompt": "Egy vállalat ötéves lejáratú hitelt vesz fel egy új üzemcsarnok felépítésére. Melyik piacon jelenik meg?",
+      "options": [
+        {
+          "key": "A",
+          "text": "pénzpiac"
+        },
+        {
+          "key": "B",
+          "text": "tőkepiac"
+        },
+        {
+          "key": "C",
+          "text": "munkaerőpiac"
+        },
+        {
+          "key": "D",
+          "text": "árupiac"
+        }
+      ],
+      "answer": "B",
+      "category": "fogalomcsere",
+      "explanation": "Helyes: B. A tőkepiac a hosszú lejáratú pénzeszközök adásvételének helyszíne – az egy éven túli ügyletek tartoznak ide, az ötéves hitel is.",
+      "wrongOptions": {
+        "A": "A pénzpiacra csak az egy éven belüli, rövid lejáratú ügyletek tartoznak.",
+        "C": "A munkaerőpiacon a munkakereslet és a munkakínálat találkozik, nem hitel.",
+        "D": "Az árupiacon termékek és szolgáltatások cseréje zajlik, nem pénzeszközöké."
+      }
+    },
+    {
+      "id": "2",
+      "kind": "choice",
+      "prompt": "Kik jelennek meg a tőkepiac kínálati oldalán?",
+      "options": [
+        {
+          "key": "A",
+          "text": "akiknek több pénzük van, mint amit felhasználnak, és megtakarításukat hitelezőként befektetik"
+        },
+        {
+          "key": "B",
+          "text": "akiknek nincs elég pénzük céljaik megvalósításához"
+        },
+        {
+          "key": "C",
+          "text": "a munkavállalók, akik a munkaerejüket kínálják"
+        },
+        {
+          "key": "D",
+          "text": "a vállalatok, amikor munkaerőt keresnek"
+        }
+      ],
+      "answer": "A",
+      "category": "fogalomcsere",
+      "explanation": "Helyes: A. A tőkepiac kínálati oldalán azok állnak, akiknek több pénzük van, mint amit felhasználnak – megtakarításukat hitelezőként befektetik.",
+      "wrongOptions": {
+        "B": "Ők a tőkepiac keresleti oldalán állnak.",
+        "C": "A munkavállalók a munkaerőpiac kínálati oldalát alkotják.",
+        "D": "A munkaerőt kereső vállalatok a munkaerőpiac keresleti oldalán vannak."
+      }
+    },
+    {
+      "id": "3",
+      "kind": "choice",
+      "prompt": "Melyik állítás írja le helyesen a háztartás és a vállalat piaci szerepét?",
+      "options": [
+        {
+          "key": "A",
+          "text": "A háztartás a munkaerőpiacon eladó, az árupiacon vevő; a vállalat a munkaerőpiacon vevő, az árupiacon eladó."
+        },
+        {
+          "key": "B",
+          "text": "A háztartás a munkaerőpiacon vevő, az árupiacon eladó; a vállalat fordítva."
+        },
+        {
+          "key": "C",
+          "text": "A háztartás minden piacon csak vevő, a vállalat minden piacon csak eladó."
+        },
+        {
+          "key": "D",
+          "text": "A háztartás és a vállalat is mindkét piacon eladó."
+        }
+      ],
+      "answer": "A",
+      "category": "modell-ertelmezes",
+      "explanation": "Helyes: A. A piac sajátos kapcsolatrendszer, amelyben minden szereplő egyszerre eladó és vevő: a háztartás munkaerőt ad el és árut vesz, a vállalat munkaerőt vesz és árut ad el.",
+      "wrongOptions": {
+        "B": "Fordítva van: a háztartás a munkaerejét eladja, a vállalat megveszi.",
+        "C": "Minden szereplő egyszerre eladó és vevő; a háztartás a munkaerőpiacon eladó.",
+        "D": "A vállalat a munkaerőpiacon vevő, a háztartás az árupiacon vevő."
+      }
+    },
+    {
+      "id": "4",
+      "kind": "choice",
+      "prompt": "Miért különleges tényező a munkaerő a diák szerint?",
+      "options": [
+        {
+          "key": "A",
+          "text": "mert nem lehet felhalmozni, nem lehet raktározni, és nem lehet tetszés szerint átcsoportosítani"
+        },
+        {
+          "key": "B",
+          "text": "mert a jövedelme a kamat"
+        },
+        {
+          "key": "C",
+          "text": "mert piacán csak a háztartások kereslete jelenik meg"
+        },
+        {
+          "key": "D",
+          "text": "mert a bérét a piacgazdaságban az állam határozza meg"
+        }
+      ],
+      "answer": "A",
+      "category": "fogalomcsere",
+      "explanation": "Helyes: A. A munkaerő különleges tényező: nem lehet felhalmozni, nem lehet raktározni, nem lehet tetszés szerint átcsoportosítani.",
+      "wrongOptions": {
+        "B": "A munka díja a munkabér; a kamat a tőke jövedelme.",
+        "C": "A munkaerőpiacon a kereslet a vállalatoké, a kínálat a munkavállalóké.",
+        "D": "Piacgazdaságban a munkaadók és munkavállalók szabadon egyeznek meg a bérről; az állami bérmeghatározás a tervgazdaság jellemzője."
+      }
+    },
+    {
+      "id": "5",
+      "kind": "choice",
+      "prompt": "A fizetésünk 10%-kal nő, és közben az árak is 10%-kal emelkednek. Mi történik a jövedelmünkkel?",
+      "options": [
+        {
+          "key": "A",
+          "text": "A nomináljövedelmünk nő, a reáljövedelmünk nem – ugyanannyit tudunk vásárolni."
+        },
+        {
+          "key": "B",
+          "text": "A reáljövedelmünk is 10%-kal nő."
+        },
+        {
+          "key": "C",
+          "text": "A nomináljövedelmünk csökken."
+        },
+        {
+          "key": "D",
+          "text": "A reáljövedelmünk nő, a nomináljövedelmünk nem."
+        }
+      ],
+      "answer": "A",
+      "category": "fogalomcsere",
+      "explanation": "Helyes: A. A nomináljövedelem a ténylegesen megszerzett pénzösszeg – ez nőtt; a reáljövedelem az ebből megvásárolható áru- és szolgáltatásmennyiség, amely azonos áremelkedés mellett nem változik.",
+      "wrongOptions": {
+        "B": "A reáljövedelem azt mutatja, mennyit lehet vásárolni; ha az árak ugyanannyival nőnek, ez nem nő.",
+        "C": "A ténylegesen megszerzett pénzösszeg nőtt, tehát a nomináljövedelem nem csökken.",
+        "D": "Fordítva: a névleges összeg nőtt, a vásárlóerő maradt ugyanannyi."
+      }
+    },
+    {
+      "id": "6",
+      "kind": "choice",
+      "prompt": "Földrajzi szempontból milyen piac a Dunántúl zöldség-gyümölcs piaca?",
+      "options": [
+        {
+          "key": "A",
+          "text": "helyi piac"
+        },
+        {
+          "key": "B",
+          "text": "regionális piac"
+        },
+        {
+          "key": "C",
+          "text": "országos piac"
+        },
+        {
+          "key": "D",
+          "text": "uniós piac"
+        }
+      ],
+      "answer": "B",
+      "category": "csoportositas",
+      "explanation": "Helyes: B. A regionális piac egy földrajzi terület piaca – a dia példája éppen a Dunántúl vagy a Tiszántúl zöldség-gyümölcs piaca.",
+      "wrongOptions": {
+        "A": "A helyi piac az adott település vásárcsarnoka, boltjai, áruházai.",
+        "C": "Az országos piac az országhatárokon belül bonyolódó teljes áruforgalom.",
+        "D": "Az uniós piac az együttműködésben részt vevő tagországok együttes piaca."
+      }
+    },
+    {
+      "id": "7",
+      "kind": "choice",
+      "prompt": "Mi történik a piac önszabályozó működése szerint, ha túl nagy a kínálat, és készletek halmozódnak fel?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Az árak csökkennek, ekkor nő a kereslet, a kínálat pedig csökken."
+        },
+        {
+          "key": "B",
+          "text": "Az árak nőnek, és ezzel a kereslet is nő."
+        },
+        {
+          "key": "C",
+          "text": "Az állam meghatározza az új, alacsonyabb árat."
+        },
+        {
+          "key": "D",
+          "text": "A termelők tovább növelik a kínálatot."
+        }
+      ],
+      "answer": "A",
+      "category": "ok-okozat",
+      "explanation": "Helyes: A. A piac önszabályozó rendszer: túlkínálat és készletfelhalmozódás esetén az árak csökkennek, nő a kereslet, a kínálat csökken, egyes termelők kilépnek a piacról.",
+      "wrongOptions": {
+        "B": "Túlkínálatnál az árak csökkennek; ráadásul a dia szerint áremelkedéskor a kereslet csökken, nem nő.",
+        "C": "Az önszabályozás piaci automatizmusokkal működik, állami ármegállapítás nélkül.",
+        "D": "Alacsonyabb áron a kínálat csökken, egyes termelők ki is lépnek a piacról."
+      }
+    },
+    {
+      "id": "8",
+      "kind": "choice",
+      "prompt": "A verseny jellege szerint melyik skálán helyezhetők el a piacok?",
+      "options": [
+        {
+          "key": "A",
+          "text": "tökéletes verseny – átmenetek – monopólium"
+        },
+        {
+          "key": "B",
+          "text": "helyi piac – világpiac"
+        },
+        {
+          "key": "C",
+          "text": "árupiac – termelési tényezők piaca"
+        },
+        {
+          "key": "D",
+          "text": "tőkepiac – pénzpiac"
+        }
+      ],
+      "answer": "A",
+      "category": "csoportositas",
+      "explanation": "Helyes: A. A verseny jellege szerint a piacszerkezetek a tökéletes versenytől (erős verseny) az átmeneteken át a monopóliumig (gyenge verseny) terjednek.",
+      "wrongOptions": {
+        "B": "Ez a földrajzi szempontú csoportosítás.",
+        "C": "Ez az eladásra szánt javak jellege szerinti csoportosítás.",
+        "D": "Ez a termelési tényezők piacain belüli megkülönböztetés a lejárat szerint."
+      }
+    }
+  ]
+}
