@@ -1,0 +1,293 @@
+{
+  "schemaVersion": 1,
+  "id": "gaz-gr-ok-okozat",
+  "subject": "gazdasagi-ismeretek",
+  "revision": 1,
+  "level": "kozep",
+  "source": "generated",
+  "topic": "nyelvtan",
+  "title": "Ok–okozati összefüggések – mert és ezért",
+  "createdAt": "2026-11-06",
+  "tags": [],
+  "section": "grammar",
+  "type": "lesson",
+  "category": "ok-okozat",
+  "summaryHu": "A közgazdaságtan összefüggéseket és törvényszerűségeket tár fel, ezért a felelet akkor jó, ha nemcsak felsorolja a jelenségeket, hanem megmondja, mi minek az oka. A tananyag fő láncai: szűkösség → választás → alternatív költség; árváltozás → kereslet és kínálat változása; munkamegosztás → termelékenység; szükséglet → termelés → fogyasztás → új szükséglet. Pontot veszít, aki felcseréli az okot és az okozatot, vagy indoklás nélkül állít.",
+  "rules": [
+    {
+      "title": "Szűkösség → választás → alternatív költség",
+      "explanation": "Az emberi szükségletek korlátlanok, az erőforrások (munka, tőke, nyersanyag, idő) szűkösek. Ezért választani kell, mit, hogyan, kinek termelünk – ez a gazdaság alapproblémája. Mivel választunk, egy lehetőségről le kell mondanunk: ennek értéke az alternatív költség. (Mankiw 1. elve: választás – nincs ingyen ebéd; 2. elve: alternatív költség.)",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "Mivel az erőforrások szűkösek, ezért minden társadalomnak meg kell válaszolnia a mit, hogyan, kinek termeljünk kérdést.",
+          "hu": "ok: szűkösség → következmény: választás"
+        },
+        {
+          "en": "Ha többet fordítunk zöld energiára, máshonnan kell elvenni.",
+          "hu": "A szűkösség miatt minden választásnak alternatív költsége van (aktuális példa: energiaár, klímavédelem)."
+        }
+      ]
+    },
+    {
+      "title": "A piac önszabályozása – az árak jelzései",
+      "explanation": "A piac önszabályozó rendszer. Ha egy termék ára nő, a kereslet csökken iránta (drágább a vevőknek), a termelők viszont növelik a kínálatot. Ha túl nagy a kínálat és készletek halmozódnak fel, az árak csökkennek – ekkor nő a kereslet, a kínálat csökken; alacsonyabb áron kevesebb termelő lép be, egy részük kilép a piacról. A szereplők egyéni érdekeiket követik, mégis a kereslet és kínálat kölcsönhatása révén, az árak segítségével kialakul a gazdaság egyensúlya.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "Az ár nő → a kereslet csökken, a kínálat nő.",
+          "hu": "Az ok az árváltozás, a következmény a kereslet és a kínálat változása."
+        },
+        {
+          "en": "Túlkínálat, készletek felhalmozódása → az árak csökkennek → a kereslet nő, a kínálat csökken.",
+          "hu": "A lánc második lépésében az ár már ok."
+        }
+      ]
+    },
+    {
+      "title": "Munkamegosztás → termelékenység → életszínvonal",
+      "explanation": "Adam Smith szerint a gazdagság forrása a munka, és a munkamegosztás növeli a termelékenységet. A tűgyár példája: egy ember egyedül néhány tűt készít naponta, felosztott munkával több ezer tű/nap készül. Következtetés: munkamegosztás → magasabb termelékenység. (Mankiw 8. elve: az életszínvonal a termelékenységtől függ; 5. elve: a kereskedelem mindkét félnek előnyös, win-win.)",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "Egy ember egyedül: néhány tű/nap; felosztott munka: több ezer tű/nap.",
+          "hu": "ok: munkamegosztás → okozat: magasabb termelékenység"
+        }
+      ]
+    },
+    {
+      "title": "A gazdasági körfolyamat ok-okozati lánca",
+      "explanation": "A szükségletek indítják el a termelést; a megtermelt javakat elosztják, majd a forgalomban (cserében) gazdát cserélnek; a fogyasztás kielégíti a szükségletet – de új szükségletek keletkeznek, így a folyamat újraindul. Ezért nevezzük körnek. Ide tartozik az is, hogy a szükségletek köre a jövedelem növekedésével bővül, a technológiai fejlődés a látens szükségleteket idővel effektívvé teheti, a kereslet nagyságát és összetételét pedig a jövedelem nagysága határozza meg.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "szükséglet → termelés → elosztás → forgalom (csere) → fogyasztás → új szükséglet",
+          "hu": "A kör azért ismétlődik, mert a fogyasztás után új szükségletek keletkeznek."
+        },
+        {
+          "en": "Nő a jövedelem → bővül a szükségletek köre.",
+          "hu": "Ami ma luxus, holnap akár kulturális szükséglet is lehet."
+        }
+      ]
+    },
+    {
+      "title": "Makrogazdasági összefüggések és a rendszerváltás",
+      "explanation": "Mankiw 9. elve: ha túl sok pénzt bocsátanak ki, nőnek az árak (pénzkibocsátás → infláció). Mankiw 10. elve: rövid távon választani kell az infláció és a munkanélküliség között (trade-off, kompromisszum). A rendszerváltás után a piacgazdaság alapjainak megteremtése (privatizáció, árliberalizáció, a külkereskedelem liberalizálása) átmeneti nehézségekkel járt: a termelés visszaesett (átmeneti válság), megjelent a tömeges munkanélküliség, magas lett az infláció, sok vállalat megszűnt, mert a piaci versenyt nem bírta.",
+      "emeltOnly": true,
+      "examples": [
+        {
+          "en": "Túl sok pénzt bocsátanak ki → nőnek az árak.",
+          "hu": "Mankiw 9. elve; aktuális kérdés: infláció."
+        },
+        {
+          "en": "Sok vállalat a piaci versenyt nem bírta → megszűnt → munkanélküliség.",
+          "hu": "A rendszerváltás átmeneti nehézségei egymásra épülnek."
+        }
+      ]
+    },
+    {
+      "title": "Hogyan írj indokolt összefüggést?",
+      "explanation": "Egy összefüggés három részből áll: ok + kötőszó + következmény, és ha lehet, a tananyag szabályára hivatkozva. Hasznos kötőszavak: mert, mivel, ezért, emiatt, ennek következtében, ha … akkor. Ellenőrizd az irányt: melyik változás történt előbb, és melyik a következménye?",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "Mivel a kenyér ára nőtt, a vevők kevesebbet vásárolnak belőle, a pékek viszont többet kínálnak, mert magasabb áron megéri többet termelni.",
+          "hu": "Ok, kötőszó, következmény és az indoklás is szerepel."
+        },
+        {
+          "en": "„Az alternatív költség fontos.” → „Mivel az erőforrások szűkösek, minden döntésnél lemondunk valamiről, ezért számít az alternatív költség.”",
+          "hu": "Az indoklás nélküli állításból indokolt összefüggés lesz."
+        }
+      ]
+    }
+  ],
+  "commonMistakes": [
+    {
+      "wrong": "Ha egy termék ára nő, a termelők csökkentik a kínálatot.",
+      "right": "Ha egy termék ára nő, a termelők növelik a kínálatot, a kereslet viszont csökken.",
+      "why": "A magasabb ár a termelőknek kedvez, a vevőknek drágább – ezért mozog ellentétes irányba a kínálat és a kereslet."
+    },
+    {
+      "wrong": "Ha túl nagy a kínálat, és készletek halmozódnak fel, az árak nőnek.",
+      "right": "Túlkínálatnál az árak csökkennek, ekkor nő a kereslet, a kínálat csökken.",
+      "why": "A felhalmozódó készlet az árak csökkenését okozza a piac önszabályozása révén."
+    },
+    {
+      "wrong": "A munkamegosztás csökkenti a termelékenységet, mert mindenki csak egy műveletet végez.",
+      "right": "A munkamegosztás növeli a termelékenységet (tűgyár: néhány tű helyett több ezer tű/nap).",
+      "why": "Adam Smith tűgyár-példája éppen azt mutatja, hogy a felosztott munka sokszorosára növeli a termelést."
+    },
+    {
+      "wrong": "A rendszerváltás után azonnal nőtt a termelés és csökkent a munkanélküliség.",
+      "right": "A rendszerváltás után átmeneti válság következett: visszaesett a termelés, megjelent a tömeges munkanélküliség, magas lett az infláció.",
+      "why": "A piacgazdaság alapjainak megteremtése átmeneti nehézségekkel járt; sok vállalat a piaci versenyt nem bírta."
+    },
+    {
+      "wrong": "A fogyasztással véget ér a gazdasági folyamat.",
+      "right": "A fogyasztás kielégíti a szükségletet, de új szükségletek keletkeznek, így a folyamat újraindul.",
+      "why": "Ezért nevezzük körfolyamatnak; az új szükségletek új termékek előállítását teszik szükségessé."
+    }
+  ],
+  "examTips": [
+    "Szóbeli tételnél minden felsorolt jelenséghez tegyél egy „mert” vagy „ezért” mondatot – a vizsgáztató az összefüggések feltárását értékeli, nem a puszta felsorolást.",
+    "Az aktuális gazdasági esemény elemzésénél (emelt szóbeli) a hírben szereplő változást kösd ok-okozati lánccal a tanult elvhez (pl. pénzkibocsátás → infláció, Mankiw 9. elve).",
+    "A projektmunkában az elemző részben a megállapításaidat indokold; az indoklás nélküli állítás leíró jellegű marad."
+  ],
+  "practice": [
+    {
+      "id": "1",
+      "kind": "choice",
+      "prompt": "A tananyag szerint mi történik, ha egy termék ára nő?",
+      "options": [
+        {
+          "key": "A",
+          "text": "A kereslet nő, a kínálat csökken."
+        },
+        {
+          "key": "B",
+          "text": "A kereslet csökken, a kínálat nő."
+        },
+        {
+          "key": "C",
+          "text": "A kereslet és a kínálat is nő."
+        },
+        {
+          "key": "D",
+          "text": "Sem a kereslet, sem a kínálat nem változik."
+        }
+      ],
+      "answer": "B",
+      "explanation": "Helyes: B. Ha egy termék ára nő, a kereslet csökken iránta (drágább a vevőknek), a termelők viszont növelik a kínálatot.",
+      "wrongOptions": {
+        "A": "Fordított irány: a drágulás a vevőket visszatartja, a termelőket ösztönzi.",
+        "C": "A vevőknek a drágább termék kevésbé vonzó, ezért a kereslet nem nő.",
+        "D": "Az ár a piac jelzése, a szereplők reagálnak rá."
+      },
+      "category": "ok-okozat"
+    },
+    {
+      "id": "2",
+      "kind": "choice",
+      "prompt": "Egy terméknél túl nagy a kínálat, készletek halmozódnak fel. Mi a következmény a piac önszabályozása szerint?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Az árak nőnek."
+        },
+        {
+          "key": "B",
+          "text": "Több termelő lép be a piacra."
+        },
+        {
+          "key": "C",
+          "text": "Az árak csökkennek."
+        },
+        {
+          "key": "D",
+          "text": "A kereslet csökken."
+        }
+      ],
+      "answer": "C",
+      "explanation": "Helyes: C. Ha túl nagy a kínálat és készletek halmozódnak fel, az árak csökkennek – ekkor nő a kereslet, a kínálat csökken.",
+      "wrongOptions": {
+        "A": "A felhalmozódó készlet nem drágulást, hanem árcsökkenést okoz.",
+        "B": "Alacsonyabb áron kevesebb termelő lép be, egy részük kilép a piacról.",
+        "D": "Az árcsökkenés hatására a kereslet nő, nem csökken."
+      },
+      "category": "ok-okozat"
+    },
+    {
+      "id": "3",
+      "kind": "text",
+      "prompt": "Mankiw hányadik alapelve mondja ki, hogy ha túl sok pénzt bocsátanak ki, nőnek az árak?",
+      "answer": [
+        "9",
+        "kilencedik",
+        "a kilencedik",
+        "9. elv",
+        "9. alapelv"
+      ],
+      "explanation": "Helyes: a 9. elv. Pénzkibocsátás → infláció: ha túl sok pénzt bocsátanak ki, nőnek az árak; a 10. elv az infláció és a munkanélküliség rövid távú trade-offja.",
+      "category": "ok-okozat"
+    },
+    {
+      "id": "4",
+      "kind": "choice",
+      "prompt": "Mi a szűkösség problémájának következménye a tananyag szerint?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Választani kell, mit, hogyan, kinek termelünk."
+        },
+        {
+          "key": "B",
+          "text": "Az állam hoz meg minden gazdasági döntést."
+        },
+        {
+          "key": "C",
+          "text": "Minden jószág szabad jószággá válik."
+        },
+        {
+          "key": "D",
+          "text": "A szükségletek idővel elfogynak."
+        }
+      ],
+      "answer": "A",
+      "explanation": "Helyes: A. Mivel a szükségletek korlátlanok, az erőforrások szűkösek, a gazdaság lényege a választás: mit, hogyan, kinek termelünk.",
+      "wrongOptions": {
+        "B": "Ez a tiszta tervgazdaság jellemzője, nem a szűkösség általános következménye – a szűkösség minden gazdasági rendszerben jelen van.",
+        "C": "Éppen fordítva: a szűkösség miatt a javak többsége gazdasági jószág.",
+        "D": "A szükségletek korlátlanok, és kielégítésük után újak keletkeznek."
+      },
+      "category": "ok-okozat"
+    },
+    {
+      "id": "5",
+      "kind": "choice",
+      "prompt": "Melyik NEM tartozik a rendszerváltás átmeneti nehézségei közé?",
+      "options": [
+        {
+          "key": "A",
+          "text": "a termelés visszaesése"
+        },
+        {
+          "key": "B",
+          "text": "a tömeges munkanélküliség megjelenése"
+        },
+        {
+          "key": "C",
+          "text": "a magas infláció"
+        },
+        {
+          "key": "D",
+          "text": "a Budapesti Értéktőzsde újranyitása"
+        }
+      ],
+      "answer": "D",
+      "explanation": "Helyes: D. A tőzsde újraindulása a piacgazdaság alapjainak megteremtéséhez tartozik, nem nehézség; a többi a tananyag szerint átmeneti nehézség volt.",
+      "wrongOptions": {
+        "A": "A termelés visszaesése (átmeneti válság) az átmeneti nehézségek között szerepel.",
+        "B": "A tömeges munkanélküliség megjelenése átmeneti nehézség volt.",
+        "C": "A magas infláció átmeneti nehézség volt."
+      },
+      "category": "ok-okozat"
+    },
+    {
+      "id": "6",
+      "kind": "text",
+      "prompt": "Egészítsd ki: „A fogyasztás kielégíti a szükségletet – de … keletkeznek, így a folyamat újraindul.”",
+      "answer": [
+        "új szükségletek",
+        "új szükséglet",
+        "újabb szükségletek",
+        "újabb szükséglet"
+      ],
+      "explanation": "Helyes: új szükségletek. A körfolyamat azért kör, mert a szükséglet kielégítése után új szükségletek keletkeznek, amelyek újra elindítják a termelést.",
+      "category": "ok-okozat"
+    }
+  ],
+  "relatedCategories": [
+    "alapelv-alkalmazas",
+    "modell-ertelmezes"
+  ]
+}

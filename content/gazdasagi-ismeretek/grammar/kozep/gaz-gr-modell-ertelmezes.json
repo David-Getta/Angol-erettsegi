@@ -1,0 +1,319 @@
+{
+  "schemaVersion": 1,
+  "id": "gaz-gr-modell-ertelmezes",
+  "subject": "gazdasagi-ismeretek",
+  "revision": 1,
+  "level": "kozep",
+  "source": "generated",
+  "topic": "nyelvtan",
+  "title": "Modellek és ábrák értelmezése",
+  "createdAt": "2026-11-06",
+  "tags": [],
+  "section": "grammar",
+  "type": "lesson",
+  "category": "modell-ertelmezes",
+  "summaryHu": "A tananyag sok összefüggést modellben, ábrán mutat be: a gazdasági körforgás, a körfolyamat, a három gazdasági rendszer modellje, a javak fája, a szükségletpiramis, a piacgazdaság kialakulásának lépcsője és a piacszerkezetek skálája. Egy ábrát akkor értesz, ha meg tudod mondani, kik a szereplők, mi áramlik merre, és ki dönt. A szóbeli tételben gyakran kérik: „Rajzold fel a gazdasági körforgás modelljét!”",
+  "rules": [
+    {
+      "title": "Hogyan olvass egy modellt?",
+      "explanation": "A modell a valóság leegyszerűsített mása (ábra, egyenlet, táblázat). Olvasás közben négy kérdést tegyél fel: 1. Kik a szereplők (dobozok)? 2. Mi áramlik közöttük (nyilak felirata)? 3. Merre mutat a nyíl (honnan hová)? 4. Mi maradt ki a modellből (mit egyszerűsít)?",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "A körforgás modelljében: TERMELŐK (vállalatok), FOGYASZTÓK (háztartások), két piac, két áramlás.",
+          "hu": "Szereplők és piacok azonosítása az első lépés."
+        }
+      ]
+    },
+    {
+      "title": "A gazdasági körforgás modellje",
+      "explanation": "Két szereplő: a termelők (vállalatok) és a fogyasztók (háztartások); két piac: a fogyasztási cikkek piaca és a termelési tényezők piaca. A fogyasztási cikkek piacán a termékek a vállalatoktól a háztartásokhoz jutnak, a vásárolt áruk ellenértéke (pénz) a háztartásoktól a vállalatokhoz. A termelési tényezők piacán a munkaerő, tőke, föld a háztartásoktól a vállalatokhoz kerül, a munkabér, kamat, bérlet a vállalatoktól a háztartásokhoz. A jószágáramlás (áruk, tényezők) és a pénzáramlás (ellenérték, jövedelem) mindig ellentétes irányú – ez a kettős körforgás. Szabály: az áruforgalom minden esetben együtt jár a jövedelmek mozgásával.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "Fogyasztási cikkek piaca: termékek → háztartások; pénz (ellenérték) → vállalatok.",
+          "hu": "A háztartás vevő az árupiacon."
+        },
+        {
+          "en": "Termelési tényezők piaca: munkaerő, tőke, föld → vállalatok; munkabér, kamat, bérlet → háztartások.",
+          "hu": "A háztartás eladó a munkaerőpiacon, a vállalat vevő."
+        },
+        {
+          "en": "A háztartás jövedelméből fogyaszt – a fogyasztás pedig a vállalatok bevétele.",
+          "hu": "Így zárul a kör."
+        }
+      ]
+    },
+    {
+      "title": "A gazdasági körfolyamat",
+      "explanation": "A gazdasági körfolyamat a szükségletek kielégítésének folyamata a termeléstől a fogyasztásig. Elemei: termelés, elosztás, forgalom (csere), fogyasztás. Olvasása: a szükségletek indítják el a termelést; a megtermelt javakat elosztják, majd a forgalomban (cserében) gazdát cserélnek; a fogyasztás kielégíti a szükségletet – de új szükségletek keletkeznek, így a folyamat újraindul. A körforgás (szereplők közötti áramlás) és a körfolyamat (a szükséglet kielégítésének lépései) két különböző modell.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "Szükségletek → termelés → elosztás → forgalom (csere) → fogyasztás → új szükségletek",
+          "hu": "A kört a szükséglet indítja, és az új szükséglet indítja újra."
+        }
+      ]
+    },
+    {
+      "title": "A három gazdasági rendszer modellje",
+      "explanation": "A modellek azt mutatják, ki válaszol a mit? hogyan? kinek? kérdésre. Tiszta piacgazdaság: mindhárom kérdésre a piac ad választ, a döntéseket a kereslet és a kínálat találkozása, vagyis az árak irányítják; az állam nem szerepel a modellben. Tiszta tervgazdaság: mindhárom kérdésről a központi állam dönt, a döntések utasítás formájában jutnak el a szereplőkhöz; a piac nem szerepel a modellben. Vegyes gazdaság: a piac és az állam együtt válaszol; a piac köti össze a szereplőket, az állam pedig beavatkozik, ahol a piac nem hatékony – a két tiszta modell ötvözete.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "MIT? HOGYAN? KINEK? → Piac, Piac, Piac",
+          "hu": "tiszta piacgazdaság"
+        },
+        {
+          "en": "MIT? HOGYAN? KINEK? → KÖZPONTI ÁLLAM (utasítás)",
+          "hu": "tiszta tervgazdaság"
+        },
+        {
+          "en": "MIT? HOGYAN? KINEK? → Piac + ÁLLAM",
+          "hu": "vegyes gazdaság – ma a világ legtöbb országa, így Magyarország is"
+        }
+      ]
+    },
+    {
+      "title": "Hierarchiák és fejlődési sorok: javak fája, piramis, lépcső",
+      "explanation": "A javak fáján fentről lefelé haladva egyre szűkebb csoportokat kapunk: javak → szabad és gazdasági javak → anyagi (termékek) és nem anyagi (szolgáltatások) → termelési eszközök, fogyasztási cikkek, illetve anyagi jellegű és nem anyagi jellegű szolgáltatások. A szükségletpiramis (Maslow-piramis) alulról felfelé olvasandó: az alsóbb szintű szükségletek kielégítése általában megelőzi a magasabb szintűekét. A piacgazdaság kialakulásának lépcsője időrendi sor: naturálgazdálkodás (önellátás) → barter (áru áruért) → a pénz megjelenése (csereeszköz) → árugazdaság (piacra termelnek) → piacgazdaság (a piac szervez).",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "A szabad javak ága nem bomlik tovább; az anyagi és nem anyagi javak a gazdasági javak alatt vannak.",
+          "hu": "A fa ágai mutatják, melyik csoport melyiknek az alcsoportja."
+        },
+        {
+          "en": "naturálgazdálkodás → barter → pénz megjelenése → árugazdaság → piacgazdaság",
+          "hu": "Minden lépcsőfokhoz egy kulcsszó tartozik: önellátás, áru áruért, csereeszköz, piacra termelnek, a piac szervez."
+        }
+      ]
+    },
+    {
+      "title": "Skálák és idővonalak",
+      "explanation": "A piacszerkezetek skálája a verseny jellege szerint rendezi a piacokat: a skála egyik végén az erős verseny (tökéletes verseny), a másikon a gyenge verseny (monopólium), közöttük az átmenetek. Az idővonalakat (közgazdasági irányzatok; Magyarország útja: 1948–1949 államosítás, 1968 új gazdasági mechanizmus, 1987–1988 reformtörvények, 1989–1990 rendszerváltás, 1990-es évek privatizáció, 2004 EU-tagság) balról jobbra, a korszakok jellemzőivel együtt olvasd: tervgazdaság → tervgazdaság piaci reformokkal → piacgazdaság.",
+      "emeltOnly": true,
+      "examples": [
+        {
+          "en": "erős verseny ······ gyenge verseny",
+          "hu": "tökéletes verseny – átmenetek – monopólium"
+        },
+        {
+          "en": "1968: új gazdasági mechanizmus",
+          "hu": "piaci elemek a tervgazdaságban: nagyobb vállalati önállóság"
+        }
+      ]
+    }
+  ],
+  "commonMistakes": [
+    {
+      "wrong": "A körforgás modelljében a pénz és a jószág ugyanabba az irányba áramlik.",
+      "right": "A jószágáramlás és a pénzáramlás mindig ellentétes irányú.",
+      "why": "Aki árut kap, ellenértéket ad érte: a termékkel szemben pénz, a munkaerővel szemben munkabér mozog."
+    },
+    {
+      "wrong": "A termelési tényezők piacán a vállalatok kínálják a munkaerőt a háztartásoknak.",
+      "right": "A munkaerőt a háztartások kínálják, a vállalatok vásárolják; a háztartás a munkaerőpiacon eladó, a vállalat vevő.",
+      "why": "A modellben a munkaerő, tőke, föld a háztartásoktól a vállalatokhoz áramlik, a munkabér, kamat, bérlet fordítva."
+    },
+    {
+      "wrong": "A tiszta piacgazdaság modelljében az állam dönt arról, kinek termeljenek.",
+      "right": "A tiszta piacgazdaságban mindhárom kérdésre a piac ad választ; az állam nem szerepel a modellben.",
+      "why": "A három rendszer abban különbözik, hogy ki hozza a döntéseket: a piac, az állam, vagy a kettő együtt."
+    },
+    {
+      "wrong": "A gazdasági körfolyamatot a termelés indítja el.",
+      "right": "A körfolyamatot a szükségletek indítják el.",
+      "why": "A modell olvasása szerint a szükségletek indítják el a termelést, és az új szükségletek indítják újra a folyamatot."
+    },
+    {
+      "wrong": "A barter után rögtön a piacgazdaság következik.",
+      "right": "A barter után a pénz megjelenése, majd az árugazdaság következik, és csak utána a piacgazdaság.",
+      "why": "A lépcső minden fokát meg kell nevezni; az árugazdaság kialakulása = a piacgazdaság megszületése."
+    },
+    {
+      "wrong": "A javak fáján az anyagi javak a szabad javak alá tartoznak.",
+      "right": "Az anyagi és a nem anyagi javak a gazdasági javak alcsoportjai.",
+      "why": "A fát fentről lefelé olvassuk, egyre szűkebb csoportok felé; a szabad javak ága nem bomlik tovább."
+    }
+  ],
+  "examTips": [
+    "Szóbeli tételnél a körforgás modelljét rajzold is fel, és mondd végig mindkét piacot, mindkét áramlást, a nyilak irányával és feliratával (munkabér, kamat, bérlet).",
+    "Emelt írásbeli feladatsorban a szövegesen leírt ábrákból kérdeznek (ki dönt, merre áramlik, melyik csoport alcsoportja) – a modell kulcsmondatait („a két áramlás mindig ellentétes irányú”) szó szerint idézd.",
+    "A projektmunkában egy saját ábra (pl. a vállalkozásod helye a körforgásban) jól mutatja a megértést; az ábra alá mindig írj magyarázó szöveget."
+  ],
+  "practice": [
+    {
+      "id": "1",
+      "kind": "choice",
+      "prompt": "A gazdasági körforgás modelljében mi áramlik a termelési tényezők piacán a vállalatoktól a háztartások felé?",
+      "options": [
+        {
+          "key": "A",
+          "text": "munkaerő, tőke, föld"
+        },
+        {
+          "key": "B",
+          "text": "munkabér, kamat, bérlet"
+        },
+        {
+          "key": "C",
+          "text": "termékek"
+        },
+        {
+          "key": "D",
+          "text": "a vásárolt áruk ellenértéke"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Helyes: B. A termelési tényezők piacán a vállalatok munkabért, kamatot, bérletet fizetnek a háztartásoknak a tőlük kapott munkaerőért, tőkéért, földért.",
+      "wrongOptions": {
+        "A": "A munkaerő, tőke, föld ellenkező irányba, a háztartásoktól a vállalatokhoz áramlik.",
+        "C": "A termékek a fogyasztási cikkek piacán áramlanak, nem a termelési tényezők piacán.",
+        "D": "A vásárolt áruk ellenértéke a fogyasztási cikkek piacán, a háztartásoktól a vállalatokhoz megy."
+      },
+      "category": "modell-ertelmezes"
+    },
+    {
+      "id": "2",
+      "kind": "choice",
+      "prompt": "A tiszta tervgazdaság modelljében ki válaszol a mit? hogyan? kinek? kérdésre?",
+      "options": [
+        {
+          "key": "A",
+          "text": "a piac"
+        },
+        {
+          "key": "B",
+          "text": "a piac és az állam együtt"
+        },
+        {
+          "key": "C",
+          "text": "a háztartások"
+        },
+        {
+          "key": "D",
+          "text": "a központi állam"
+        }
+      ],
+      "answer": "D",
+      "explanation": "Helyes: D. A tiszta tervgazdaságban mindhárom alapkérdésről a központi állam dönt, a döntések utasítás formájában jutnak el a szereplőkhöz; a piac nem szerepel a modellben.",
+      "wrongOptions": {
+        "A": "A piac a tiszta piacgazdaság modelljében dönt.",
+        "B": "A piac és az állam együtt a vegyes gazdaságban válaszol.",
+        "C": "A háztartások a tervgazdaságban nem döntenek az alapkérdésekről."
+      },
+      "category": "modell-ertelmezes"
+    },
+    {
+      "id": "3",
+      "kind": "text",
+      "prompt": "A piacgazdaság kialakulásának lépcsője: naturálgazdálkodás → barter → … → árugazdaság → piacgazdaság. Mi hiányzik?",
+      "answer": [
+        "a pénz megjelenése",
+        "pénz megjelenése",
+        "pénz",
+        "a pénz"
+      ],
+      "explanation": "Helyes: a pénz megjelenése (csereeszköz). A barter (áru áruért) nehézsége után a pénz mint csereeszköz tette lehetővé az árugazdaságot, ahol már piacra termelnek.",
+      "category": "modell-ertelmezes"
+    },
+    {
+      "id": "4",
+      "kind": "choice",
+      "prompt": "Mit jelent, hogy a körforgás modelljében „a két áramlás mindig ellentétes irányú”?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Amikor a háztartás terméket kap a vállalattól, a vállalat a termék ellenértékét kapja a háztartástól – az áru és a pénz egymással szemben mozog."
+        },
+        {
+          "key": "B",
+          "text": "A pénz és a termék ugyanabba az irányba halad."
+        },
+        {
+          "key": "C",
+          "text": "Csak a vállalatok kapnak pénzt, a háztartások soha."
+        },
+        {
+          "key": "D",
+          "text": "A háztartások és a vállalatok nem kerülnek kapcsolatba egymással."
+        }
+      ],
+      "answer": "A",
+      "explanation": "Helyes: A. A jószágáramlás (áruk, tényezők) és a pénzáramlás (ellenérték, jövedelem) egymással szemben halad: minden áruért vagy tényezőért ellenérték jár.",
+      "wrongOptions": {
+        "B": "Ez éppen a modell szabályának ellentéte.",
+        "C": "A háztartások a termelési tényezők piacán munkabért, kamatot, bérletet kapnak.",
+        "D": "A modell lényege, hogy a szereplők a piacokon állandó kapcsolatban vannak."
+      },
+      "category": "modell-ertelmezes"
+    },
+    {
+      "id": "5",
+      "kind": "choice",
+      "prompt": "Hogyan olvassuk a javak fáját?",
+      "options": [
+        {
+          "key": "A",
+          "text": "A sorrend tetszőleges."
+        },
+        {
+          "key": "B",
+          "text": "Fentről lefelé haladva egyre tágabb csoportokat kapunk."
+        },
+        {
+          "key": "C",
+          "text": "Fentről lefelé haladva egyre szűkebb csoportokat kapunk."
+        },
+        {
+          "key": "D",
+          "text": "Minden ágon ugyanakkora csoportok vannak."
+        }
+      ],
+      "answer": "C",
+      "explanation": "Helyes: C. A tananyag olvasási iránya: fentről lefelé haladva egyre szűkebb csoportokat kapunk (javak → gazdasági javak → anyagi javak → fogyasztási cikkek).",
+      "wrongOptions": {
+        "A": "A fa hierarchikus: minden ág a fölötte álló csoport alcsoportja.",
+        "B": "Fordított irány: lefelé a csoportok szűkülnek.",
+        "D": "Az alsóbb csoportok a felsők részei, tehát kisebbek."
+      },
+      "category": "modell-ertelmezes"
+    },
+    {
+      "id": "6",
+      "kind": "choice",
+      "prompt": "Melyik állítás igaz a vegyes gazdaság modelljére?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Az állam nem szerepel a modellben."
+        },
+        {
+          "key": "B",
+          "text": "A piac köti össze a szereplőket, az állam pedig beavatkozik, ahol a piac nem hatékony."
+        },
+        {
+          "key": "C",
+          "text": "A piac nem szerepel a modellben."
+        },
+        {
+          "key": "D",
+          "text": "A döntések utasítás formájában jutnak el a szereplőkhöz."
+        }
+      ],
+      "answer": "B",
+      "explanation": "Helyes: B. A vegyes gazdaság modelljében az alapkérdésekre a piac és az állam együtt válaszol: a piac köti össze a szereplőket, az állam beavatkozik, ahol a piac nem hatékony.",
+      "wrongOptions": {
+        "A": "Ez a tiszta piacgazdaság modelljére igaz.",
+        "C": "Ez a tiszta tervgazdaság modelljére igaz.",
+        "D": "Az utasításos irányítás a tiszta tervgazdaság jellemzője."
+      },
+      "category": "modell-ertelmezes"
+    }
+  ],
+  "relatedCategories": [
+    "ok-okozat",
+    "fogalomcsere"
+  ]
+}

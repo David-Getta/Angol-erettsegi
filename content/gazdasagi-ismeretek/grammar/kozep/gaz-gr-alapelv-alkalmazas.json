@@ -1,0 +1,326 @@
+{
+  "schemaVersion": 1,
+  "id": "gaz-gr-alapelv-alkalmazas",
+  "subject": "gazdasagi-ismeretek",
+  "revision": 1,
+  "level": "kozep",
+  "source": "generated",
+  "topic": "nyelvtan",
+  "title": "A gazdasági gondolkodás alapelveinek alkalmazása",
+  "createdAt": "2026-11-06",
+  "tags": [],
+  "section": "grammar",
+  "type": "lesson",
+  "category": "alapelv-alkalmazas",
+  "summaryHu": "A gazdasági gondolkodás alapelvei (szűkösség, alternatív költség, racionalitás, határelemzés, ceteris paribus, modellezés) minden gazdasági elemzés kiindulópontjai. A vizsgán nem elég felmondani őket: egy új helyzetre kell alkalmazni őket – megmondani, mi egy döntés alternatív költsége, racionális-e egy döntés, meddig érdemes növelni egy tevékenységet. A leggyakoribb hiba az összes feláldozott lehetőség összeadása és az átlag alapján hozott döntés.",
+  "rules": [
+    {
+      "title": "Alternatív költség: csak a legjobb feláldozott lehetőség",
+      "explanation": "Ha választunk egy lehetőséget, le kell mondanunk a másikról. Az alternatív költség annak a legjobb (legértékesebb) lehetőségnek az értéke, amelyről lemondunk – mindig csak a legjobbat számítjuk, nem az összeset. Nem csak pénz lehet: idő, élmény, lehetőség. Különböztesd meg a közvetlen költségtől: aki egyetemre megy, annak a tandíj és a tankönyv közvetlen költség, a kieső fizetés, amit dolgozva kereshetne, az alternatív költség.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "Érettségi után egyetemre megyek.",
+          "hu": "Alternatív költség: a kieső fizetés, amit dolgozva kereshetnék (a tandíj és a tankönyv közvetlen költség)."
+        },
+        {
+          "en": "Szombat délelőtt tanulok.",
+          "hu": "Alternatív költség: a kihagyott edzés vagy találkozó a barátokkal – az idő is szűkös erőforrás."
+        },
+        {
+          "en": "Az állam új kórházat épít.",
+          "hu": "Alternatív költség: az az autópálya vagy iskola, amely ugyanabból a pénzből épülhetett volna."
+        },
+        {
+          "en": "Ha valaki tanulás helyett dolgozni megy, akkor az elveszített tudás a munka alternatív költsége.",
+          "hu": "A tananyag saját példája az alapelvek áttekintésénél."
+        }
+      ]
+    },
+    {
+      "title": "Racionalitás: a rendelkezésre álló információkhoz igazodó legjobb döntés",
+      "explanation": "Feltételezzük, hogy a gazdasági szereplők racionálisan döntenek: döntéseiket ésszerűség és önérdek vezérli, céljuk a rendelkezésre álló erőforrásokból a lehető legnagyobb hasznot elérni. A racionális döntés lépései: 1. információgyűjtés a lehetőségekről, 2. a hasznok és költségek mérlegelése, 3. a legjobb alternatíva kiválasztása. Fontos: a racionalitás nem tökéletes informáltságot jelent, hanem a rendelkezésre álló információkhoz igazodó legjobb döntést.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "Egy diák három egyetem nyílt napjáról gyűjt információt, összeveti a hasznokat és a költségeket, majd a legjobbat választja – de nem tudhatja előre, milyen lesz a jövőbeli munkaerőpiac.",
+          "hu": "Racionális döntés: a három lépést végigjárta, és a rendelkezésre álló információkhoz igazodva döntött."
+        }
+      ]
+    },
+    {
+      "title": "Határelemzés: határhaszon ≥ határköltség",
+      "explanation": "A döntések során a változások (határhaszon, határköltség) számítanak, nem az átlagos értékek. Határhaszon: a pótlólagos (utolsó) egység többlethaszna; határköltség: a pótlólagos (utolsó) egység többletköltsége. Döntési szabály: addig érdemes növelni, amíg a határhaszon ≥ határköltség. Fagyizó: minden újabb gombóc egyre kisebb többletélvezetet ad, az ára (határköltsége) viszont ugyanannyi; akkor állunk meg, amikor az újabb gombóc már nem éri meg az árát. Pékség: az utolsó 100 db darabja 135 Ft-ba kerül, ez több, mint a 130 Ft-os ár, ezért csökkenti a profitot – 300 db a jobb döntés.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "1. gombóc: nagyon jólesik; 2.: még mindig finom; 3.: már alig kell; 4.: nem kell, megárt.",
+          "hu": "A határhaszon csökken, a határköltség állandó → a 4. gombócot már nem érdemes megvenni."
+        },
+        {
+          "en": "Pékség: 300 → 400 db, a határköltség 135 Ft/db > 130 Ft ár.",
+          "hu": "A 400 db-ra való növelés rontja a profitot (+1 000 Ft → +500 Ft), ezért 300 db a jobb."
+        },
+        {
+          "en": "Egy plusz óra tanulás mennyivel növeli a tudást? Egy plusz termék mennyivel növeli a profitot?",
+          "hu": "Határelemzés: mindig a „még egy egység” hasznát és költségét vetjük össze."
+        }
+      ]
+    },
+    {
+      "title": "Ceteris paribus: egyszerre csak egy tényező",
+      "explanation": "Ceteris paribus (latin): „minden egyéb változatlansága mellett” – egyszerre csak egy tényező hatását vizsgáljuk, a többit állandónak tekintjük. Példa: a nyári fagylaltvásárlás függ a fagylalt árától, az időjárástól, a vásárlók jövedelmétől, az ízléstől, divattól és más termékek árától. Probléma: ha nő az ár, és közben hőség is van, nem tudjuk, melyik hatás mekkora. Megoldás: ceteris paribus – ha csak az ár nő, kevesebb fagylaltot vesznek.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "Változik: a fagylalt ára. Állandó: időjárás, jövedelem, ízlés és divat, más termékek ára.",
+          "hu": "Így az ár hatása elkülöníthető: ha csak az ár nő, kevesebb fagylaltot vesznek."
+        },
+        {
+          "en": "Hibás vizsgálat: júliusban nőtt a fagylalt ára, és hőség volt – mégis többet vettek, tehát a drágulás növeli a vásárlást.",
+          "hu": "Két tényező változott egyszerre, ezért a következtetés nem helyes."
+        }
+      ]
+    },
+    {
+      "title": "Modellezés: a térkép-hasonlat",
+      "explanation": "A gazdaság bonyolult, ezért leegyszerűsítve, modellekben vizsgáljuk. A modell a valóság leegyszerűsített mása – mint egy térkép: nem mutat meg minden fát, mégis eligazít. Előnyei: egyszerűsít, a lényegre koncentrál; átláthatóvá teszi az összefüggéseket; lehetővé teszi az előrejelzést és a „mi lenne, ha…” elemzést; „kísérletezni” lehet vele; matematikailag, grafikusan jól kezelhető. Hátrányai: a leegyszerűsítés torzíthat, fontos tényezők kimaradhatnak; feltevései (pl. racionalitás, ceteris paribus) a valóságban nem mindig teljesülnek; az előrejelzések tévedhetnek (pl. váratlan válságok); adathiány vagy pontatlan adatok rontják a megbízhatóságát.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "A gazdasági körforgás modellje csak a háztartásokat és a vállalatokat ábrázolja.",
+          "hu": "Egyszerűsít, a lényegre koncentrál – de az állam és a külföld kimarad belőle."
+        }
+      ]
+    },
+    {
+      "title": "Mankiw első négy alapelve",
+      "explanation": "Mankiw 10 alapelvéből az első négy a döntésekről szól: 1. választás – nincs ingyen ebéd; 2. alternatív költség – minden döntésnek ára van, a feláldozott lehetőség; 3. marginális gondolkodás – a határhaszon és a határköltség összevetése; 4. ösztönzők – az emberek reagálnak az ösztönzőkre. Ezek a gazdasági gondolkodás alapelveinek alkalmazásai.",
+      "emeltOnly": true,
+      "examples": [
+        {
+          "en": "„Nincs ingyen ebéd.”",
+          "hu": "1. elv: minden választás lemondással jár."
+        },
+        {
+          "en": "A pékség a határköltség alapján dönt a termelt mennyiségről.",
+          "hu": "3. elv: marginális gondolkodás."
+        }
+      ]
+    }
+  ],
+  "commonMistakes": [
+    {
+      "wrong": "Az egyetem alternatív költsége a tandíj és a tankönyv ára.",
+      "right": "Az egyetem alternatív költsége a kieső fizetés, amit dolgozva kereshetnék; a tandíj és a tankönyv közvetlen költség.",
+      "why": "Az alternatív költség a lemondott lehetőség értéke, nem a választott lehetőség kiadása."
+    },
+    {
+      "wrong": "Ha tanulás helyett edzésre vagy moziba mehetnék, az alternatív költség az edzés és a mozi együtt.",
+      "right": "Az alternatív költség csak a legjobb feláldozott lehetőség, pl. az edzés, ha az lett volna a legjobb.",
+      "why": "A definíció szerint a legjobb (legértékesebb) lehetőség értékét számítjuk, az összes lehetőséget nem adjuk össze."
+    },
+    {
+      "wrong": "Csak a teljes információ birtokában hozott döntés racionális.",
+      "right": "Racionális a rendelkezésre álló információkhoz igazodó legjobb döntés.",
+      "why": "A racionalitás nem tökéletes informáltságot jelent."
+    },
+    {
+      "wrong": "400 db-nál az átlagköltség (128,8 Ft) kisebb az árnál, ezért 400 db a legjobb.",
+      "right": "Az utolsó 100 db darabja 135 Ft-ba kerül, ez több a 130 Ft-os árnál, ezért 300 db a jobb.",
+      "why": "A döntéseknél a határértékek számítanak, nem az átlagos értékek; az átlagelemzés itt rossz döntéshez vezet."
+    },
+    {
+      "wrong": "A fagylalt drágult, és közben hőség volt; mégis többet vettek, tehát a drágulás növeli a fagylaltvásárlást.",
+      "right": "Két tényező változott egyszerre, ezért nem tudjuk, melyik hatás mekkora; ceteris paribus: ha csak az ár nő, kevesebb fagylaltot vesznek.",
+      "why": "A ceteris paribus elv szerint egyszerre csak egy tényező hatását vizsgálhatjuk."
+    },
+    {
+      "wrong": "A modell rossz, mert nem mutat meg mindent.",
+      "right": "A modell szándékosan egyszerűsít, mint a térkép, amely nem mutat meg minden fát, mégis eligazít.",
+      "why": "Az egyszerűsítés a modell lényege és előnye; hátránya csak az, ha fontos tényezők kimaradnak, vagy feltevései nem teljesülnek."
+    }
+  ],
+  "examTips": [
+    "Szóbeli tételnél az elvet mindig saját példával is mutasd be (az Ismétlő kérdések is ezt kérik: „Mondj rá saját példát!”); az alternatív költségnél mondd ki, mi volt a legjobb feláldozott lehetőség.",
+    "Emelt írásbeli feladatsorban és elemzésnél gyakori a pékség-típusú döntés: írd le a döntési szabályt (határhaszon ≥ határköltség, itt: ár ≥ határköltség), és vesd össze az átlagelemzéssel.",
+    "A projektmunkában a vállalkozás döntéseinél (pl. mennyit termeljen, mire költse a pénzt) nevezd meg az alternatív költséget és a határelemzést – a tanult elvek alkalmazása szakmai érték."
+  ],
+  "practice": [
+    {
+      "id": "1",
+      "kind": "choice",
+      "prompt": "Péter érettségi után egyetemre megy. A tananyag szerint mi ennek a döntésnek az alternatív költsége?",
+      "options": [
+        {
+          "key": "A",
+          "text": "a tandíj"
+        },
+        {
+          "key": "B",
+          "text": "a tankönyvek ára"
+        },
+        {
+          "key": "C",
+          "text": "a kieső fizetés, amit dolgozva kereshetne"
+        },
+        {
+          "key": "D",
+          "text": "a tandíj, a tankönyvek ára és a kieső fizetés együtt"
+        }
+      ],
+      "answer": "C",
+      "explanation": "Helyes: C. Az alternatív költség a legjobb feláldozott lehetőség értéke: a kieső fizetés, amit dolgozva kereshetne. A tandíj és a tankönyv közvetlen költség.",
+      "wrongOptions": {
+        "A": "A tandíj a tananyag szerint közvetlen költség.",
+        "B": "A tankönyv ára közvetlen költség.",
+        "D": "A közvetlen költségek nem részei az alternatív költségnek, és a lemondott lehetőségeket sem adjuk össze."
+      },
+      "category": "alapelv-alkalmazas"
+    },
+    {
+      "id": "2",
+      "kind": "choice",
+      "prompt": "Lili szombat délelőtt tanul. Ha nem tanulna, edzésre menne – ez lenne a legjobb lehetősége; a második legjobb a mozi lenne. Mi a tanulás alternatív költsége?",
+      "options": [
+        {
+          "key": "A",
+          "text": "az edzés és a mozi együtt"
+        },
+        {
+          "key": "B",
+          "text": "az edzés"
+        },
+        {
+          "key": "C",
+          "text": "a mozi"
+        },
+        {
+          "key": "D",
+          "text": "nincs alternatív költsége, mert nem költ pénzt"
+        }
+      ],
+      "answer": "B",
+      "explanation": "Helyes: B. Mindig csak a legjobb (legértékesebb) feláldozott lehetőséget számítjuk, ez itt az edzés.",
+      "wrongOptions": {
+        "A": "A feláldozott lehetőségeket nem adjuk össze.",
+        "C": "A mozi csak a második legjobb lehetőség lett volna.",
+        "D": "Az alternatív költség nem csak pénz lehet: idő, élmény, lehetőség is."
+      },
+      "category": "alapelv-alkalmazas"
+    },
+    {
+      "id": "3",
+      "kind": "choice",
+      "prompt": "A fagyizó példájában mikor érdemes abbahagyni a gombócok vásárlását?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Amikor az újabb gombóc határhaszna kisebb lesz a határköltségénél."
+        },
+        {
+          "key": "B",
+          "text": "Már az első gombóc után, mert minden gombóc pénzbe kerül."
+        },
+        {
+          "key": "C",
+          "text": "Amikor az átlagos élvezet elkezd csökkenni."
+        },
+        {
+          "key": "D",
+          "text": "Csak amikor elfogy a pénzünk."
+        }
+      ],
+      "answer": "A",
+      "explanation": "Helyes: A. A döntési szabály: addig érdemes növelni, amíg a határhaszon ≥ határköltség; amikor az újabb gombóc már nem éri meg az árát, megállunk.",
+      "wrongOptions": {
+        "B": "Az első gombóc határhaszna nagy („nagyon jólesik”), meghaladja az árát, tehát megéri.",
+        "C": "A döntésnél nem az átlagos értékek, hanem a határértékek számítanak.",
+        "D": "A racionális döntés a haszon és a költség összevetése, nem a pénz elfogyása."
+      },
+      "category": "alapelv-alkalmazas"
+    },
+    {
+      "id": "4",
+      "kind": "choice",
+      "prompt": "Racionális-e a nem teljes információ birtokában hozott döntés?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Nem, racionális döntés csak tökéletes informáltság mellett lehetséges."
+        },
+        {
+          "key": "B",
+          "text": "Igen, ha a rendelkezésre álló információkhoz igazodó legjobb döntés."
+        },
+        {
+          "key": "C",
+          "text": "Csak akkor, ha az állam hozza."
+        },
+        {
+          "key": "D",
+          "text": "Csak akkor, ha a döntés pénzben mérhető."
+        }
+      ],
+      "answer": "B",
+      "explanation": "Helyes: B. A tananyag szerint a racionalitás nem tökéletes informáltságot jelent, hanem a rendelkezésre álló információkhoz igazodó legjobb döntést.",
+      "wrongOptions": {
+        "A": "Ez éppen a tananyag „FONTOS” figyelmeztetésével ellentétes.",
+        "C": "A racionalitás minden gazdasági szereplőre vonatkozik, nem csak az államra.",
+        "D": "A hasznok és költségek nem csak pénzben jelenhetnek meg (pl. idő, élmény)."
+      },
+      "category": "alapelv-alkalmazas"
+    },
+    {
+      "id": "5",
+      "kind": "choice",
+      "prompt": "Melyik vizsgálat felel meg a ceteris paribus elvnek a fagylalt példájában?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Az ár emelkedik, és közben hőség van – megnézzük, mennyit vesznek."
+        },
+        {
+          "key": "B",
+          "text": "Minden tényező egyszerre változik, és a végeredményt nézzük."
+        },
+        {
+          "key": "C",
+          "text": "Csak az időjárást tekintjük állandónak, a többi tényező változhat."
+        },
+        {
+          "key": "D",
+          "text": "Csak az ár változik; az időjárás, a jövedelem, az ízlés és más termékek ára állandó."
+        }
+      ],
+      "answer": "D",
+      "explanation": "Helyes: D. Ceteris paribus: egyszerre csak egy tényező (itt az ár) hatását vizsgáljuk, a többit állandónak tekintjük; ekkor látszik, hogy ha csak az ár nő, kevesebb fagylaltot vesznek.",
+      "wrongOptions": {
+        "A": "Két tényező változik egyszerre, így nem tudjuk, melyik hatás mekkora – ez a tananyagban leírt probléma.",
+        "B": "Ha minden változik, egyik tényező hatása sem különíthető el.",
+        "C": "Egy tényező állandósága kevés; a vizsgált tényezőn kívül mindegyiknek állandónak kell lennie."
+      },
+      "category": "alapelv-alkalmazas"
+    },
+    {
+      "id": "6",
+      "kind": "text",
+      "prompt": "Az állam ugyanabból a pénzből kórházat, autópályát vagy iskolát építhetne. Kórházat épít; a feláldozott lehetőségek közül az iskola lett volna a legértékesebb. Mi a döntés alternatív költsége?",
+      "answer": [
+        "az iskola",
+        "iskola",
+        "az iskola megépítése",
+        "iskolaépítés",
+        "az iskola felépítése",
+        "egy iskola"
+      ],
+      "explanation": "Helyes: az iskola. Az alternatív költség a legjobb (legértékesebb) feláldozott lehetőség értéke – itt az iskola; az autópályát nem adjuk hozzá.",
+      "category": "alapelv-alkalmazas"
+    }
+  ],
+  "relatedCategories": [
+    "ok-okozat",
+    "szamitas",
+    "modell-ertelmezes"
+  ]
+}
