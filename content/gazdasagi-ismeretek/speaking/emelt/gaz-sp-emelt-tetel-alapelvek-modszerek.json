@@ -1,0 +1,85 @@
+{
+  "schemaVersion": 1,
+  "id": "gaz-sp-emelt-tetel-alapelvek-modszerek",
+  "subject": "gazdasagi-ismeretek",
+  "revision": 1,
+  "level": "emelt",
+  "source": "generated",
+  "topic": "alapfogalmak",
+  "title": "A gazdasági gondolkodás alapelvei és vizsgálódási módszerei",
+  "createdAt": "2026-11-06",
+  "tags": [],
+  "section": "speaking",
+  "type": "tetel",
+  "partNumber": 1,
+  "instructionsHu": "Fejtse ki a tételt! Mutassa be a gazdasági gondolkodás alapelveit és a közgazdaságtan vizsgálódási módszereit, alkalmazza a határelemzést a forrásban megadott pékség adatain, különítse el a pozitív és a normatív állításokat, és helyezze el az alapelveket Mankiw 10 alapelvének rendszerében! Felkészülési idő: 30 perc.",
+  "prompts": [
+    "Mit értünk alternatív költségen? Hogyan értelmezi a közgazdaságtan a racionalitást? Racionális-e a nem teljes információ birtokában hozott döntés?",
+    "Mi a határelemzés lényege? Miben tér el az átlagelemzéstől? Alkalmazd a pékség adataira (2. forrás)!",
+    "Mit jelent a ceteris paribus elv? Melyek a modellezés előnyei és hátrányai? Milyen vizsgálódási módszereket ismersz?",
+    "Mi a különbség a pozitív és a normatív állítás között?",
+    "Csoportosítsd Mankiw 10 alapelvét három szintre (egyéni döntések, a szereplők kapcsolata, a gazdaság egésze)!"
+  ],
+  "usefulPhrases": [
+    {
+      "en": "marginális gondolkodás",
+      "hu": "Mankiw 3. elve: a döntéseknél a változás, a „még egy egység” számít"
+    },
+    {
+      "en": "döntési szabály: határhaszon ≥ határköltség",
+      "hu": "a határelemzés alkalmazása"
+    },
+    {
+      "en": "trade-off",
+      "hu": "kompromisszum, választás két cél között (Mankiw 10. elve)"
+    }
+  ],
+  "sources": [
+    {
+      "title": "1. forrás – Definíciók (tanórai diasor, 1. téma, 03. fejezet)",
+      "text": "Alternatív költség: annak a legjobb (legértékesebb) lehetőségnek az értéke, amelyről egy döntés meghozatalakor lemondunk.\nHatárelemzés: azt vizsgáljuk, hogyan változik a haszon és a költség, ha egy tevékenységet egy egységgel növelünk (vagy csökkentünk).\nCeteris paribus (latin): „minden egyéb változatlansága mellett” – egyszerre csak egy tényező hatását vizsgáljuk."
+    },
+    {
+      "title": "2. forrás – Egy pékség napi termelése (táblázat szöveges leírása)",
+      "text": "Egy kenyér ára 130 Ft. 100 db: összköltség 20 000 Ft, átlagköltség 200 Ft/db, bevétel 13 000 Ft, profit –7 000 Ft. 200 db: 30 000 Ft, 150 Ft/db, határköltség 100 Ft/db, bevétel 26 000 Ft, profit –4 000 Ft. 300 db: 38 000 Ft, ≈126,7 Ft/db, határköltség 80 Ft/db, bevétel 39 000 Ft, profit +1 000 Ft. 400 db: 51 500 Ft, ≈128,8 Ft/db, határköltség 135 Ft/db, bevétel 52 000 Ft, profit +500 Ft. (A határköltség az utolsó 100 db-ra, darabonként.)"
+    },
+    {
+      "title": "3. forrás – Mankiw 10 alapelve",
+      "text": "Mankiw 10 alapelve: 1. választás – nincs ingyen ebéd; 2. alternatív költség; 3. marginális gondolkodás; 4. ösztönzők; 5. a kereskedelem mindkét fél számára előnyös (win-win); 6. a piac ereje – láthatatlan kéz; 7. az állam szerepe – piaci kudarc, externáliák, közjavak; 8. az életszínvonal a termelékenységtől függ; 9. a túlzott pénzkibocsátás inflációhoz vezet; 10. rövid távon trade-off van az infláció és a munkanélküliség között."
+    }
+  ],
+  "keyPoints": [
+    "Az alapelvek: szűkösség, alternatív költség, racionalitás, határelemzés, ceteris paribus, modellezés – minden gazdasági elemzés kiindulópontjai.",
+    "Alternatív költség: annak a legjobb (legértékesebb) lehetőségnek az értéke, amelyről egy döntés meghozatalakor lemondunk; nem csak pénz lehet.",
+    "A racionalitás nem tökéletes informáltságot jelent, hanem a rendelkezésre álló információkhoz igazodó legjobb döntést (információgyűjtés – hasznok és költségek mérlegelése – a legjobb alternatíva).",
+    "Határelemzés: azt vizsgáljuk, hogyan változik a haszon és a költség, ha egy tevékenységet egy egységgel növelünk (vagy csökkentünk); döntési szabály: addig érdemes növelni, amíg a határhaszon ≥ határköltség.",
+    "A pékségnél az átlagelemzés 400 db-ot javasolna (128,8 Ft < 130 Ft), de az utolsó 100 db darabja 135 Ft > 130 Ft, ezért a 300 db a jobb döntés (+1 000 Ft profit a +500 Ft helyett).",
+    "Ceteris paribus: egyszerre csak egy tényező hatását vizsgáljuk; a modell a valóság leegyszerűsített mása – előnye az egyszerűsítés és az előrejelzés, hátránya a torzítás és a nem teljesülő feltevések.",
+    "Vizsgálódási módszerek: absztrakció, modellezés, határelemzés, indukció és dedukció, ceteris paribus, matematikai-statisztikai módszerek.",
+    "Pozitív állítás: tényeket ír le, ellenőrizhető („Mi van? Mi lesz, ha…?”); normatív: értékítélet, javaslat („Mi lenne helyes?”), gyakran a „kellene” szóval.",
+    "Mankiw elvei három szinten: 1–4. az egyéni döntések (választás, alternatív költség, marginális gondolkodás, ösztönzők), 5–7. a szereplők kapcsolata (kereskedelem, piac, állam), 8–10. a gazdaság egésze (termelékenység, pénzkibocsátás és infláció, infláció–munkanélküliség trade-off)."
+  ],
+  "speakingSeconds": 720,
+  "prepSeconds": 1800,
+  "sampleAnswer": {
+    "turns": [
+      {
+        "speaker": "candidate",
+        "text": "A tételem a gazdasági gondolkodás alapelvei és a vizsgálódási módszerek. A kiindulópont a szűkösség: az erőforrások korlátozottak, az igények gyakorlatilag korlátlanok, ezért választani kell. Ha választunk, lemondunk valamiről: az alternatív költség annak a legjobb, legértékesebb lehetőségnek az értéke, amelyről egy döntés meghozatalakor lemondunk – ha az állam kórházat épít, az alternatív költség az az iskola, amely ugyanabból a pénzből épülhetett volna. Feltételezzük, hogy a szereplők racionálisan döntenek: információt gyűjtenek, mérlegelik a hasznokat és költségeket, és a legjobbat választják. A racionalitás nem tökéletes informáltság, hanem a rendelkezésre álló információkhoz igazodó legjobb döntés, tehát a nem teljes információ mellett hozott döntés is lehet racionális. A határelemzés azt vizsgálja, hogyan változik a haszon és a költség, ha egy tevékenységet egy egységgel növelünk. A szabály: addig érdemes növelni, amíg a határhaszon legalább akkora, mint a határköltség. A pékség adatain jól látszik a különbség: 400 darabnál az átlagköltség 128,8 forint, kisebb a 130 forintos árnál, ezért az átlagelemzés szerint megéri többet sütni. Az utolsó száz darab darabja viszont 135 forintba kerül, ez több az árnál, a profit 1 000 forintról 500 forintra csökken, tehát a 300 darab a jobb döntés. A ceteris paribus elv szerint egyszerre csak egy tényező hatását vizsgáljuk: ha csak a fagylalt ára nő, kevesebbet vesznek. A modell a valóság leegyszerűsített mása, mint egy térkép: átláthatóvá tesz és előrejelzést ad, de torzíthat, és a feltevései nem mindig teljesülnek. További módszerek az absztrakció, az indukció és dedukció és a matematikai-statisztikai módszerek. A pozitív állítás tényt ír le: ha nő a cigaretta adója, kevesebbet vásárolnak; a normatív értékítélet: az államnak emelnie kellene az adót. Mankiw tíz alapelve három szintbe rendezhető: az első négy az egyéni döntésekről szól – nincs ingyen ebéd, alternatív költség, marginális gondolkodás, ösztönzők –, az ötödiktől a hetedikig a szereplők kapcsolatáról – a kereskedelem mindkét félnek előnyös, a piac ereje, az állam szerepe a piaci kudarcoknál –, az utolsó három a gazdaság egészéről: az életszínvonal a termelékenységtől függ, a túl sok pénz inflációt okoz, és rövid távon választani kell az infláció és a munkanélküliség között."
+      },
+      {
+        "speaker": "examiner",
+        "text": "Melyik Mankiw-elv kapcsolódik közvetlenül a pékség példájához?"
+      },
+      {
+        "speaker": "candidate",
+        "text": "A harmadik, a marginális gondolkodás: a pékség akkor dönt helyesen, ha nem az átlagot, hanem az utolsó száz darab többletköltségét veti össze az árral. Áttételesen a második is, mert a 400 darab helyett a 300 választásával lemondunk a többlettermelésről, de a többletköltséget is megtakarítjuk."
+      }
+    ],
+    "notes": [
+      "A definíciók szó szerint pontosak, és mind a hat alapelv megjelenik a módszerekkel együtt – ez az emelt szintű tartalmi teljesség.",
+      "A határelemzést a forrás adataival számszerűen alkalmazza, és megindokolja, miért tér el az átlagelemzés javaslatától.",
+      "Mankiw elveit nem csak felsorolja, hanem rendszerezi, és a kiegészítő kérdésnél a pékséghez kapcsolja – ez az összefüggések szempontja."
+    ]
+  }
+}

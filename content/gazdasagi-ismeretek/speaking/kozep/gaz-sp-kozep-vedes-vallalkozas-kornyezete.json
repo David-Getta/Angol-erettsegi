@@ -1,0 +1,68 @@
+{
+  "schemaVersion": 1,
+  "id": "gaz-sp-kozep-vedes-vallalkozas-kornyezete",
+  "subject": "gazdasagi-ismeretek",
+  "revision": 1,
+  "level": "kozep",
+  "source": "generated",
+  "topic": "alapfogalmak",
+  "title": "Projektvédés: egy helyi vállalkozás külső környezete",
+  "createdAt": "2026-11-06",
+  "tags": [],
+  "section": "speaking",
+  "type": "projekt-vedes",
+  "partNumber": 2,
+  "instructionsHu": "Védje meg projektmunkáját! A projekt címe: „Egy helyi vállalkozás külső környezete – Magyarország mint vegyes piacgazdaság”. A projektben egy (kitalált) helyi családi pékség példáján bemutatta a gazdasági rendszer fogalmát és alaptípusait, Magyarország útját a tervgazdaságtól a vegyes piacgazdaságig, a pékség kapcsolatát a háztartásokkal, a vállalatokkal, az állammal és a külfölddel, végül értékelést és javaslatot fogalmazott meg. Ismertesse a témát, indokolja a választását, mutassa be a célt, a módszereket, az eredményeket és a javaslatokat, majd válaszoljon a bizottság kérdéseire!",
+  "prompts": [
+    "Ismertesd röviden a választott témát!",
+    "Indokold meg, miért ezt a témát választottad!",
+    "Mutasd be a projekt célját, módszereit, fő eredményeit és javaslataidat!",
+    "Válaszolj a bizottság kérdéseire!"
+  ],
+  "sources": [
+    {
+      "title": "A projekt rövid összefoglalója",
+      "text": "Cél: megmutatni, hogyan határozza meg egy helyi kisvállalkozás működését az, hogy Magyarország vegyes piacgazdaság. Módszerek: a tanórai diasor feldolgozása (1. téma, 04. és 06. fejezet), interjú a pékség tulajdonosával, megfigyelés a boltban. Fejezetek: 1. Bevezetés és témaválasztás; 2. A gazdasági rendszer és alaptípusai; 3. A vállalkozás külső környezete: Magyarország mint vegyes piacgazdaság; 4. A gazdasági szereplők és a pékség; 5. Javaslatok és összegzés; forrásjegyzék, munkanapló, melléklet (az interjú kérdéssora)."
+    }
+  ],
+  "keyPoints": [
+    "A téma: egy helyi családi pékség külső környezete – Magyarország mint vegyes piacgazdaság.",
+    "A választás indoklása: személyes kapcsolat a vállalkozással, közvetlen megfigyelési lehetőség, a tanult fogalmak alkalmazása a valóságban.",
+    "Cél, módszer: forrásfeldolgozás (tanórai diasor), interjú, megfigyelés; a definíciók forrásmegjelöléssel.",
+    "Eredmény: a pékség a vegyes gazdaság mindkét oldalát mutatja – magántulajdon, szabad árképzés, illetve állami szabályozás, adó és támogatás.",
+    "Vegyes gazdaság: a tiszta piacgazdaság és a tiszta tervgazdaság keveréke; az állam és a piac együtt szabályozza a gazdaság működését.",
+    "A legtöbb kapcsolat a háztartásokkal van: a fogyasztásuk a vállalat bevétele, a vállalat munkabért fizet nekik (munkaerő – jövedelem).",
+    "Javaslat: második beszállító keresése a kockázat csökkentésére; saját, indokolt értékelés."
+  ],
+  "speakingSeconds": 300,
+  "prepSeconds": 1800,
+  "sampleAnswer": {
+    "turns": [
+      {
+        "speaker": "candidate",
+        "text": "A projektmunkám címe: Egy helyi vállalkozás külső környezete – Magyarország mint vegyes piacgazdaság. Egy családi pékséget vizsgáltam, és azt, hogyan határozza meg a működését az a gazdasági rendszer, amelyben dolgozik. Azért választottam ezt a témát, mert a nagyszüleim pékségében gyakran segítek, így közvetlenül megfigyelhettem, és kíváncsi voltam, hogyan jelennek meg a tanult fogalmak egy valódi vállalkozásban. A célom az volt, hogy megmutassam: a vegyes gazdaság nem elvont fogalom, hanem a pékség mindennapjait alakítja. Három módszert használtam. Először feldolgoztam a tanórai diasor negyedik és hatodik fejezetét, a definíciókat forrásmegjelöléssel vettem át. Másodszor interjút készítettem a tulajdonossal a beszállítókról, a vevőkről, az adókról és a gépekről. Harmadszor egy szombat délelőtt megfigyeltem a vásárlókat. Az eredményem az, hogy a pékség a vegyes gazdaság mindkét oldalát mutatja. A piaci oldalon magántulajdonban van, a tulajdonos maga dönti el, mit és mennyit süt, és maga állapítja meg az árat. Az állami oldalon adót fizet, betartja a fogyasztóvédelmi szabályokat, és az állam biztosítja a környezetét is, például az utakat és a közműveket. Bemutattam a rendszerváltás lépéseit is, mert egy ilyen önálló családi vállalkozás a tervgazdaságban nem működhetett volna. A külföld a pékségnél importon keresztül jelenik meg, mert egyes gépei külföldről származnak. Értékelésem szerint a vegyes gazdaság a pékségnek előnyös, gyengeségnek viszont azt láttam, hogy egyetlen lisztbeszállítótól függ, ezért azt javasoltam, hogy keressen egy második beszállítót."
+      },
+      {
+        "speaker": "examiner",
+        "text": "Miért nevezzük vegyes gazdaságnak Magyarországot?"
+      },
+      {
+        "speaker": "candidate",
+        "text": "Mert a vegyes gazdaság a tiszta piacgazdaság és a tiszta tervgazdaság keveréke, és nálunk is a piac és az állam együtt szabályozza a gazdaságot. A piaci alapok a magántulajdon túlsúlya, a szabad vállalkozás, a piaci árak és a verseny. Az állam közben közoktatást, egészségügyet, közlekedést és közműveket biztosít, szabályoz és újraeloszt. A tiszta típusok csak elméleti modellek."
+      },
+      {
+        "speaker": "examiner",
+        "text": "Melyik gazdasági szereplővel van a vállalkozásnak a legtöbb kapcsolata, és miért?"
+      },
+      {
+        "speaker": "candidate",
+        "text": "A háztartásokkal, mégpedig két irányban. Egyrészt a családok vásárolják a kenyeret, és a háztartások fogyasztása a vállalat bevétele. Másrészt a pékség dolgozói is háztartásokból érkeznek: a munkaerőpiacon a háztartás eladó, a vállalat vevő, a munkájukért munkabért kapnak. A körforgás modellje szerint a jószágáramlással ellentétes irányban mindig pénzáramlás halad."
+      }
+    ],
+    "notes": [
+      "A témaismertetés és az indoklás személyes és szakmai is, a bemutatás logikusan halad: cél – három módszer – eredmények – értékelés és javaslat.",
+      "Mindkét kérdésre a tanult definícióval és a projekt saját tapasztalatával válaszol (vegyes gazdaság definíciója; háztartás–vállalat kapcsolata, munkaerő – jövedelem).",
+      "Az előadás az 5 perces részhez illő terjedelmű, szakkifejezéseket használ, és nem tartalmaz kitalált statisztikát."
+    ]
+  }
+}

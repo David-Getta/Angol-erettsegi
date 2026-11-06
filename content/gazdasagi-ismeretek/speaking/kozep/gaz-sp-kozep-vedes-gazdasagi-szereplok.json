@@ -1,0 +1,68 @@
+{
+  "schemaVersion": 1,
+  "id": "gaz-sp-kozep-vedes-gazdasagi-szereplok",
+  "subject": "gazdasagi-ismeretek",
+  "revision": 1,
+  "level": "kozep",
+  "source": "generated",
+  "topic": "alapfogalmak",
+  "title": "Projektvédés: a gazdasági körforgás egy család és egy vállalat példáján",
+  "createdAt": "2026-11-06",
+  "tags": [],
+  "section": "speaking",
+  "type": "projekt-vedes",
+  "partNumber": 2,
+  "instructionsHu": "Védje meg projektmunkáját! A projekt címe: „A gazdasági körforgás egy család és egy vállalat példáján”. A projektben egy (kitalált) négytagú család és a közeli bútorüzem kapcsolatán mutatta be a háztartás és a vállalat szerepét, a jószágáramlást és a pénzáramlást, valamint a termelési tényezők jövedelmét. Ismertesse a témát, indokolja a választását, mutassa be a célt, a módszereket, az eredményeket és a javaslatokat, majd válaszoljon a bizottság kérdéseire!",
+  "prompts": [
+    "Ismertesd röviden a választott témát!",
+    "Indokold meg, miért ezt a témát választottad!",
+    "Mutasd be a projekt célját, módszereit, fő eredményeit és javaslataidat!",
+    "Válaszolj a bizottság kérdéseire!"
+  ],
+  "sources": [
+    {
+      "title": "A projekt rövid összefoglalója",
+      "text": "Cél: a gazdasági körforgás modelljének bemutatása egy család és egy helyi bútorüzem valós kapcsolatain. Módszerek: a tanórai diasor feldolgozása (1. téma, 04. fejezet), a család egy havi kiadásainak és bevételeinek csoportosítása (számadatok nélkül, kategóriák szerint), beszélgetés az üzem vezetőjével, saját körforgás-ábra. Fejezetek: 1. Bevezetés; 2. A gazdasági szereplők; 3. A kettős körforgás a család és az üzem példáján; 4. A termelési tényezők és jövedelmük; 5. Javaslatok és összegzés; forrásjegyzék, munkanapló."
+    }
+  ],
+  "keyPoints": [
+    "Háztartások: önálló gazdasági szereplők, akiknek célja szükségleteik kielégítése; termelési tényezőiket eladják, jövedelmüket fogyasztásra fordítják.",
+    "Vállalatok: gazdasági egységek, céljuk a termelés, a szolgáltatásnyújtás és a profit szerzése.",
+    "Gazdasági körforgás: a gazdasági szereplők közötti áruk és jövedelmek folyamatos mozgása; az áruforgalom mindig együtt jár a jövedelmek mozgásával.",
+    "Kettős körforgás: jószágáramlás (javak, szolgáltatások, erőforrások) és pénzáramlás (árak, jövedelmek, adók, támogatások); a két áramlás mindig ellentétes irányú.",
+    "A fogyasztási cikkek piacán a háztartás vevő, a termelési tényezők piacán eladó (munkaerő, tőke, föld).",
+    "Termelési tényezők és jövedelmük: munka – munkabér, természeti tényezők – bérleti díj (járadék), tőke – kamat, vállalkozó – profit (L, A, K, E).",
+    "Saját javaslat és értékelés a projekt eredményei alapján."
+  ],
+  "speakingSeconds": 300,
+  "prepSeconds": 1800,
+  "sampleAnswer": {
+    "turns": [
+      {
+        "speaker": "candidate",
+        "text": "A projektmunkám címe: A gazdasági körforgás egy család és egy vállalat példáján. Egy négytagú családot és egy közeli bútorüzemet vizsgáltam, mert az órán a körforgás modellje elsőre elvontnak tűnt, és meg akartam mutatni, hogy a saját életünkben is működik. A célom az volt, hogy a modell minden elemét valós kapcsolathoz kössem. Módszereim: feldolgoztam a tanórai diasor negyedik fejezetét, a család egy havi bevételeit és kiadásait kategóriákba soroltam – számadatok nélkül –, beszélgettem az üzem vezetőjével, végül saját ábrát rajzoltam. Az eredmények: a háztartás önálló gazdasági szereplő, amelynek célja szükségletei kielégítése. Az apa az üzemben dolgozik, vagyis a termelési tényezők piacán a háztartás eladó, munkaerőt kínál, és munkabért kap. Ugyanez a család a fogyasztási cikkek piacán vevő: például az üzemtől asztalt vásárolt. Így láttam a kettős körforgást: a jószágáramlás – a munkaerő az üzem felé, a bútor a család felé – mindig ellentétes irányú a pénzáramlással, vagyis a munkabérrel és a vételárral. A család pénze az üzem bevétele, az üzem kiadása a család jövedelme: az áruforgalom minden esetben együtt jár a jövedelmek mozgásával. Bemutattam a termelési tényezőket is: a munka jövedelme munkabér, a természeti tényezőké bérleti díj, a tőkéé kamat, a vállalkozóé profit. A család megtakarítása után kamatot kap, az üzem tulajdonosa profitot. Javaslatként azt fogalmaztam meg, hogy a család tudatosabban tervezze a kiadásait, mert a fogyasztás és a megtakarítás aránya a saját döntésük."
+      },
+      {
+        "speaker": "examiner",
+        "text": "Mi a különbség a jószágáramlás és a pénzáramlás között?"
+      },
+      {
+        "speaker": "candidate",
+        "text": "A jószágáramlásban javak, szolgáltatások és erőforrások mozognak, például a bútor vagy a munkaerő. A pénzáramlásban az árak, jövedelmek, adók és támogatások, például a vételár vagy a munkabér. A kettő mindig ellentétes irányú: ha a bútor a családhoz kerül, a pénz az üzemhez megy."
+      },
+      {
+        "speaker": "examiner",
+        "text": "Melyik termelési tényezőhöz milyen jövedelem tartozik?"
+      },
+      {
+        "speaker": "candidate",
+        "text": "A munkához munkabér, a természeti tényezőkhöz bérleti díj vagy járadék, a tőkéhez kamat, a vállalkozóhoz profit, amely maradványjövedelem. Ezt az L, A, K, E betűkkel szoktuk megjegyezni: L a munka, A a természeti tényezők, K a tőke, E a vállalkozó."
+      }
+    ],
+    "notes": [
+      "A projektet a körforgás modelljének minden elemére kiterjedő, valós példákkal mutatja be: a háztartás a két piacon eltérő szerepben (eladó és vevő).",
+      "A kérdésekre adott válaszok a diasor fogalmait pontosan használják (jószág- és pénzáramlás, ellentétes irány, L–A–K–E).",
+      "A módszerek (forrásfeldolgozás, csoportosítás, beszélgetés, saját ábra) és a javaslat a projektvédés rubrikájának bemutatás-szempontját teljesítik."
+    ]
+  }
+}

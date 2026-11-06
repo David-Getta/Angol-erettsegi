@@ -1,0 +1,79 @@
+{
+  "schemaVersion": 1,
+  "id": "gaz-sp-emelt-aktualis-energiaar",
+  "subject": "gazdasagi-ismeretek",
+  "revision": 1,
+  "level": "emelt",
+  "source": "generated",
+  "topic": "alapfogalmak",
+  "title": "Aktuális elemzés: energiaár és zöldenergia-vita",
+  "createdAt": "2026-11-06",
+  "tags": [],
+  "section": "speaking",
+  "type": "aktualis-elemzes",
+  "partNumber": 2,
+  "instructionsHu": "Értelmezze a forrásban szereplő (kitalált) hírt, és kapcsolja össze a tanult fogalmakkal! Mutassa be, milyen közgazdasági alapfogalmak állnak a vita mögött, válassza szét a pozitív és a normatív állításokat, és vesse össze, mit mondana a helyzetről Keynes és Friedman! Fogalmazzon meg indokolt saját következtetést!",
+  "prompts": [
+    "Foglald össze a hír lényegét! Milyen alapfogalmak állnak mögötte (szűkösség, alternatív költség, az állam szerepe – Mankiw 7. elve, piac vs. állam)?",
+    "Válogasd szét a hírben szereplő pozitív és normatív állításokat, és indokold!",
+    "Mit mondana a helyzetről Keynes, és mit Friedman?",
+    "Fogalmazz meg saját, indokolt következtetést, és jelöld, hogy az tény vagy vélemény!"
+  ],
+  "usefulPhrases": [
+    {
+      "en": "„Ez pozitív állítás, mert…”",
+      "hu": "ellenőrizhető ok-okozati állítás jelölése"
+    },
+    {
+      "en": "„Ez normatív állítás, mert értékítélet…”",
+      "hu": "a „kellene” típusú mondatok jelölése"
+    },
+    {
+      "en": "piaci kudarc",
+      "hu": "Mankiw 7. elve: ilyenkor az állam javíthat a piac eredményén"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Forrás – kitalált hír",
+      "text": "Kitalált hír (a gyakorlás céljára írt szöveg): „Az elmúlt hónapokban jelentősen emelkedtek az energiaárak, a háztartások és a vállalkozások egyaránt magasabb számlákkal szembesülnek. A parlamentben vita folyik arról, hogy az állam növelje-e a zöldenergia-beruházásokra fordított kiadásokat. A kormánypárti képviselő szerint »az államnak most kellene a megújuló energiába fektetnie, mert ez hosszú távon csökkenti az ország kiszolgáltatottságát«. Az ellenzéki képviselő úgy érvel, hogy »ha a költségvetés többet költ zöldenergiára, ugyanabból a pénzből kevesebb jut az egészségügyre és az oktatásra«. Egy elemző hozzáteszi: »Ha az energia drágul, a vállalatok költségei nőnek, és ez a termékek árában is megjelenik.«”"
+    },
+    {
+      "title": "Kapcsolódás a tananyaghoz (tanórai diasor, 1. téma, 05. fejezet)",
+      "text": "„Ha többet fordítunk zöld energiára, máshonnan kell elvenni.” Energiaár, klímavédelem → szűkösség, alternatív költség. Védővámok → piac vs. állam: mennyire avatkozzon be az állam a piac működésébe?"
+    }
+  ],
+  "keyPoints": [
+    "A hír lényege: drágul az energia, és vita folyik arról, hogy az állam többet költsön-e zöldenergiára.",
+    "Szűkösség: a költségvetés erőforrásai korlátozottak, ezért választani kell – „ha többet fordítunk zöld energiára, máshonnan kell elvenni”.",
+    "Alternatív költség: annak a legjobb (legértékesebb) lehetőségnek az értéke, amelyről lemondunk – itt az egészségügyre és oktatásra el nem költött pénz.",
+    "Mankiw 7. elve: az állam szerepe a piaci kudarcoknál (externáliák, közjavak); a vegyes gazdaságban az állam ott avatkozik be, ahol a piac önmagában nem hatékony (pl. környezetvédelem).",
+    "Pozitív állítás: „Ha az energia drágul, a vállalatok költségei nőnek…” és „ugyanabból a pénzből kevesebb jut…” – ellenőrizhető ok-okozati állítások.",
+    "Normatív állítás: „az államnak most kellene a megújuló energiába fektetnie” – értékítélet, a „kellene” szó jelzi.",
+    "Keynes: az államnak aktívan be kell avatkoznia, beruházásokkal, közkiadások növelésével; Friedman: bírálta az állami beavatkozást, az állam szerepét minimalizálni kell, a stabilitás kulcsa a pénzkínálat.",
+    "Saját következtetés a tény és a vélemény elkülönítésével."
+  ],
+  "speakingSeconds": 480,
+  "prepSeconds": 1800,
+  "sampleAnswer": {
+    "turns": [
+      {
+        "speaker": "candidate",
+        "text": "A forrás egy kitalált hír: drágul az energia, a háztartások és a vállalkozások magasabb számlákat kapnak, a parlamentben pedig arról vitatkoznak, hogy az állam költsön-e többet zöldenergiára. A vita mögött a szűkösség áll: a költségvetés pénze korlátozott, ezért ahogy a tananyag mondja, ha többet fordítunk zöld energiára, máshonnan kell elvenni. Ez az alternatív költség, vagyis annak a legjobb lehetőségnek az értéke, amelyről a döntéskor lemondunk – az ellenzéki képviselő éppen ezt mondja ki, amikor az egészségügyre és az oktatásra el nem költött pénzre utal. A kérdés az is, mekkora legyen az állam szerepe a piaccal szemben. Mankiw hetedik elve szerint az állam ott javíthat a piac eredményén, ahol piaci kudarc van, például externáliák vagy közjavak esetén; a vegyes gazdaságban is ott avatkozik be az állam, ahol a piac önmagában nem hatékony, például a környezetvédelemben. Ha szétválasztom az állításokat: az elemző mondata, hogy ha az energia drágul, a vállalatok költségei nőnek, és ez az árakban is megjelenik, pozitív állítás, mert ok-okozati összefüggést ír le, és ellenőrizhető. Az ellenzéki képviselő mondata, hogy ugyanabból a pénzből kevesebb jut másra, szintén pozitív. A kormánypárti képviselő mondata, hogy az államnak most kellene a megújuló energiába fektetnie, normatív, értékítélet, ezt a kellene szó is jelzi. Keynes valószínűleg az állami beavatkozást támogatná: szerinte a gazdasági válságok idején az államnak aktívan be kell avatkoznia, növelnie kell a beruházásokat és a közkiadásokat. Friedman bírálta a keynesiánus beavatkozást, szerinte az állam szerepét minimalizálni kell, ezért inkább a piacra bízná a megoldást. Saját véleményem – és ez normatív állítás – az, hogy a zöldenergia-beruházás indokolt lehet, de csak akkor, ha a döntéshozók nyíltan megmondják, miről mondanak le érte."
+      },
+      {
+        "speaker": "examiner",
+        "text": "Miért fontos a tény és a vélemény elkülönítése egy ilyen vitában?"
+      },
+      {
+        "speaker": "candidate",
+        "text": "Mert a pozitív állításokat adatokkal ellenőrizni lehet, a normatívakat nem: azok értékítéletek. Ha összekeverjük őket, a véleményt tényként adhatjuk el. A vitában először a tényekben kell megegyezni – például abban, hogy mi a beruházás alternatív költsége –, utána lehet a vélemények között dönteni."
+      }
+    ],
+    "notes": [
+      "A hír lényegét pontosan összefoglalja, és mindhárom kért fogalmat (szűkösség, alternatív költség, állam szerepe) a forrás konkrét mondataihoz köti.",
+      "A pozitív és normatív állításokat a forrás idézeteivel, indoklással választja szét, és a saját véleményét is normatívként jelöli – ez az érvelés szempontjának teljesítése.",
+      "Keynes és Friedman nézetét a tananyag szerint, a helyzetre alkalmazva ütközteti."
+    ]
+  }
+}

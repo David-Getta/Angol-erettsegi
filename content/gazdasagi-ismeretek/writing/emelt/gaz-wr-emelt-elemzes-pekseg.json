@@ -1,0 +1,91 @@
+{
+  "schemaVersion": 1,
+  "id": "gaz-wr-emelt-elemzes-pekseg",
+  "subject": "gazdasagi-ismeretek",
+  "revision": 1,
+  "level": "emelt",
+  "source": "generated",
+  "topic": "alapfogalmak",
+  "title": "Határelemzés és átlagelemzés egy pékség adatain",
+  "createdAt": "2026-11-06",
+  "tags": [],
+  "section": "writing",
+  "type": "elemzes",
+  "taskNumber": 2,
+  "situation": "Egy kisváros pékségének napi termelési adatai láthatók a táblázatban. Egy kenyér piaci ára 150 Ft, ez a termelt mennyiségtől nem függ.\n\nTáblázat (szöveges formában):\n– 100 db/nap: összköltség 22 000 Ft\n– 200 db/nap: összköltség 32 000 Ft\n– 300 db/nap: összköltség 40 000 Ft\n– 400 db/nap: összköltség 56 000 Ft\n\nA határköltséget mindig az utolsó 100 darabra, darabonként (Ft/db) számítsa! Válaszoljon az alábbi kérdésekre, a számításokat képlettel és mértékegységgel írja le!",
+  "points": [
+    {
+      "id": "p1",
+      "text": "Számítsa ki minden termelési szinten az átlagköltséget és (a 200, 300 és 400 db-os szinten) a határköltséget!"
+    },
+    {
+      "id": "p2",
+      "text": "Számítsa ki minden termelési szinten a bevételt és a profitot!"
+    },
+    {
+      "id": "p3",
+      "text": "Melyik termelési szint a legjobb a határelemzés szerint? Indokolja a döntési szabállyal!"
+    },
+    {
+      "id": "p4",
+      "text": "Miért tér el az átlagelemzés javaslata a határelemzésétől?"
+    },
+    {
+      "id": "p5",
+      "text": "A következő héten a pékség 160 Ft-ra emelte a kenyér árát, és ugyanezen a héten nagy városi rendezvény is volt; az eladott mennyiség nem változott. A tulajdonos szerint „az áremelés nem hatott a keresletre”. Értékelje ezt a következtetést a ceteris paribus elv alapján!"
+    }
+  ],
+  "suggestedMinutes": 50,
+  "usefulPhrases": [
+    {
+      "en": "átlagköltség = összköltség / termelt mennyiség",
+      "hu": "az egy darabra jutó költség (Ft/db)"
+    },
+    {
+      "en": "határköltség = összköltség változása / mennyiség változása",
+      "hu": "a pótlólagos (utolsó) egység többletköltsége (Ft/db)"
+    },
+    {
+      "en": "bevétel = ár × mennyiség; profit = bevétel – összköltség",
+      "hu": "a profit kiszámítása Ft-ban"
+    },
+    {
+      "en": "döntési szabály",
+      "hu": "addig érdemes növelni a termelést, amíg a határhaszon (itt: az ár) ≥ határköltség"
+    },
+    {
+      "en": "ceteris paribus",
+      "hu": "„minden egyéb változatlansága mellett” – egyszerre csak egy tényező hatását vizsgáljuk"
+    }
+  ],
+  "modelAnswer": {
+    "text": "1. Átlagköltség és határköltség\nÁtlagköltség = összköltség / termelt mennyiség.\n100 db: 22 000 Ft / 100 db = 220 Ft/db\n200 db: 32 000 Ft / 200 db = 160 Ft/db\n300 db: 40 000 Ft / 300 db ≈ 133,3 Ft/db\n400 db: 56 000 Ft / 400 db = 140 Ft/db\nHatárköltség = az összköltség változása / a mennyiség változása (az utolsó 100 db-ra).\n200 db: (32 000 – 22 000) Ft / 100 db = 10 000 / 100 = 100 Ft/db\n300 db: (40 000 – 32 000) Ft / 100 db = 8 000 / 100 = 80 Ft/db\n400 db: (56 000 – 40 000) Ft / 100 db = 16 000 / 100 = 160 Ft/db\nA 100 db-os szinten határköltség nem számítható, mert nincs előző sor.\n\n2. Bevétel és profit\nBevétel = ár × mennyiség, profit = bevétel – összköltség.\n100 db: 150 × 100 = 15 000 Ft; profit: 15 000 – 22 000 = –7 000 Ft\n200 db: 150 × 200 = 30 000 Ft; profit: 30 000 – 32 000 = –2 000 Ft\n300 db: 150 × 300 = 45 000 Ft; profit: 45 000 – 40 000 = +5 000 Ft\n400 db: 150 × 400 = 60 000 Ft; profit: 60 000 – 56 000 = +4 000 Ft\n\n3. A legjobb termelési szint a határelemzés szerint\nA határelemzés döntési szabálya: addig érdemes növelni a termelést, amíg egy újabb egység haszna – itt az érte kapott 150 Ft-os ár – legalább akkora, mint a határköltsége. A 200. és a 300. száz darab darabonként 100, illetve 80 Ft-ba kerül, ez kevesebb a 150 Ft-os árnál, tehát mindkét bővítés növeli a profitot. A 400. száz darab darabja viszont 160 Ft-ba kerül, ami több a 150 Ft-os árnál: ez a bővítés 15 000 Ft többletbevételt és 16 000 Ft többletköltséget hoz, vagyis 1 000 Ft-tal csökkenti a profitot. Ezért a 300 db/nap a legjobb döntés, itt a legnagyobb a profit (+5 000 Ft).\n\n4. Miért tér el az átlagelemzés?\nAz átlagelemzés szerint 400 db-nál az átlagköltség (140 Ft/db) kisebb az árnál (150 Ft), ezért úgy tűnik, hogy „megéri többet sütni”. Az átlag azonban az összes darab költségét teríti el, így elfedi, hogy az utolsó 100 darab már drágább, mint amennyit hoz. A döntéskor a változás, a „még egy egység” költsége és haszna számít, nem az átlagos érték – ezért a határelemzés ad helyes választ.\n\n5. Ceteris paribus\nA tulajdonos következtetése nem megalapozott. Egyszerre két tényező változott: nőtt az ár, és a rendezvény miatt több vásárló érkezett a városba. Nem tudjuk szétválasztani, melyik hatás mekkora: lehet, hogy az áremelés csökkentette a vásárolt mennyiséget, a rendezvény pedig ugyanannyival növelte. A ceteris paribus elv szerint egyszerre csak egy tényező hatását vizsgálhatjuk, a többit állandónak kell tekinteni. Ha csak az ár nőne, a tanult összefüggés szerint a kereslet csökkenne. A helyes vizsgálathoz olyan hetet kell választani, amikor csak az ár változik.",
+    "pointsCovered": [
+      {
+        "id": "p1",
+        "quote": "400 db: (56 000 – 40 000) Ft / 100 db = 16 000 / 100 = 160 Ft/db"
+      },
+      {
+        "id": "p2",
+        "quote": "300 db: 150 × 300 = 45 000 Ft; profit: 45 000 – 40 000 = +5 000 Ft"
+      },
+      {
+        "id": "p3",
+        "quote": "Ezért a 300 db/nap a legjobb döntés, itt a legnagyobb a profit (+5 000 Ft)."
+      },
+      {
+        "id": "p4",
+        "quote": "A döntéskor a változás, a „még egy egység” költsége és haszna számít, nem az átlagos érték"
+      },
+      {
+        "id": "p5",
+        "quote": "A ceteris paribus elv szerint egyszerre csak egy tényező hatását vizsgálhatjuk, a többit állandónak kell tekinteni."
+      }
+    ],
+    "notes": [
+      "Adatértelmezés és számítás (12 + 9 pont): minden átlagköltség, határköltség, bevétel és profit képlettel, behelyettesítéssel és mértékegységgel szerepel, a 300 db-os átlagköltség helyesen kerekítve (≈133,3 Ft/db).",
+      "Következtetés (6 pont): a döntés a határelemzés szabályára épül (az ár és a határköltség összevetése), és a 300→400 db-os lépés profitcsökkenését (15 000 – 16 000 = –1 000 Ft) számszerűen is igazolja.",
+      "A ceteris paribus kérdésre adott válasz megnevezi a két egyszerre változó tényezőt, és megmondja, hogyan lehetne helyesen vizsgálni a hatást – ez a tanult elv alkalmazása új helyzetre."
+    ]
+  }
+}

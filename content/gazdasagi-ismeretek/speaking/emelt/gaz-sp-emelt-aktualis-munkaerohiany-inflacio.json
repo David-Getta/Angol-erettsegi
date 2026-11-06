@@ -1,0 +1,79 @@
+{
+  "schemaVersion": 1,
+  "id": "gaz-sp-emelt-aktualis-munkaerohiany-inflacio",
+  "subject": "gazdasagi-ismeretek",
+  "revision": 1,
+  "level": "emelt",
+  "source": "generated",
+  "topic": "piaci-mechanizmus",
+  "title": "Aktuális elemzés: munkaerőhiány és infláció",
+  "createdAt": "2026-11-06",
+  "tags": [],
+  "section": "speaking",
+  "type": "aktualis-elemzes",
+  "partNumber": 2,
+  "instructionsHu": "Értelmezze a forrásban szereplő (kitalált) hírt, és kapcsolja össze a tanult fogalmakkal! Mutassa be a munkaerőpiacot mint a termelési tényezők egyik piacát, a munkaerő különleges jellegét, a nominál- és a reáljövedelem különbségét, kapcsolja a hírt Mankiw 9. és 10. elvéhez, és mutassa meg, hogyan segít a ceteris paribus elv a hatások szétválasztásában!",
+  "prompts": [
+    "Foglald össze a hír lényegét! Miért a termelési tényezők piacához tartozik a munkaerőpiac? Miért különleges tényező a munkaerő?",
+    "Magyarázd meg a szakszervezeti vezető mondatát a nominál- és a reáljövedelem fogalmával (10 %–10 % példa)!",
+    "Hogyan kapcsolódik a hír Mankiw 9. és 10. elvéhez?",
+    "Hogyan segít a ceteris paribus elv a béremelés és az áremelkedés hatásának szétválasztásában? Fogalmazz meg saját következtetést!"
+  ],
+  "usefulPhrases": [
+    {
+      "en": "nominál- vs. reáljövedelem",
+      "hu": "a ténylegesen megszerzett pénzösszeg – az ebből megvásárolható áru- és szolgáltatásmennyiség"
+    },
+    {
+      "en": "trade-off",
+      "hu": "Mankiw 10. elve: rövid távon választani kell az infláció és a munkanélküliség között"
+    },
+    {
+      "en": "ceteris paribus",
+      "hu": "egyszerre csak egy tényező hatását vizsgáljuk"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Forrás – kitalált hír",
+      "text": "Kitalált hír (a gyakorlás céljára írt szöveg): „Egyre több vállalat panaszkodik arra, hogy nem talál elég képzett szakembert: a feldolgozóiparban és a vendéglátásban betöltetlen állások maradnak. A cégek magasabb bérekkel próbálják megtartani dolgozóikat, a munkavállalók szerint azonban a béremelés nem érződik, mert közben az árak is emelkednek. Egy szakszervezeti vezető így fogalmazott: »Papíron többet keresünk, de a boltban ugyanannyit tudunk venni, mint tavaly.« Egy elemző szerint »ha a bérek és az árak egyszerre emelkednek, nehéz megmondani, mennyit javított a béremelés a dolgozók helyzetén«.”"
+    },
+    {
+      "title": "Definíciók (tanórai diasor, 2. téma, 02. fejezet)",
+      "text": "Munkaerőpiac: a munkakereslet és a munkakínálat találkozásának helye.\nNominál- (névleges) jövedelem: a ténylegesen megszerzett pénzösszeg. Reáljövedelem: az áru- és szolgáltatásmennyiség, amit a nomináljövedelemből az adott árakon meg lehet vásárolni."
+    }
+  ],
+  "keyPoints": [
+    "A hír lényege: munkaerőhiány miatt nőnek a bérek, de az árak is emelkednek, ezért a dolgozók helyzete alig javul.",
+    "Munkaerőpiac: a munkakereslet és a munkakínálat találkozásának helye; kereslet: a vállalatok, kínálat: a munkavállalók; a munka díja a munkabér.",
+    "A munkaerőpiac a termelési tényezők piacának része (tőkepiac, munkaerőpiac, pénzpiac); a munka elsődleges termelési tényező, jövedelme a munkabér.",
+    "A munkaerő különleges tényező: nem lehet felhalmozni, raktározni, tetszés szerint átcsoportosítani – ezért a hiány gyorsan nem pótolható.",
+    "Nominál- (névleges) jövedelem: a ténylegesen megszerzett pénzösszeg; reáljövedelem: az áru- és szolgáltatásmennyiség, amit a nomináljövedelemből az adott árakon meg lehet vásárolni; 10 % béremelés + 10 % áremelkedés = a reáljövedelem nem nő.",
+    "Mankiw 9. elve: ha túl sok pénzt bocsátanak ki, nőnek az árak; Mankiw 10. elve: rövid távon választani kell az infláció és a munkanélküliség között (trade-off).",
+    "Ceteris paribus: egyszerre csak egy tényező hatását vizsgáljuk – a béremelés hatása csak változatlan árak mellett mérhető, ezért a reáljövedelmet kell nézni.",
+    "Saját következtetés a tény és a vélemény elkülönítésével."
+  ],
+  "speakingSeconds": 480,
+  "prepSeconds": 1800,
+  "sampleAnswer": {
+    "turns": [
+      {
+        "speaker": "candidate",
+        "text": "A kitalált hír szerint a vállalatok nem találnak elég szakembert, ezért emelik a béreket, a dolgozók viszont nem érzik a javulást, mert közben az árak is nőnek. A munkaerőpiac a munkakereslet és a munkakínálat találkozásának helye: a keresletet a vállalatok adják, mert a termeléshez munkaerőre van szükségük, a kínálatot a munkavállalók. A munka díja a munkabér. Ez a termelési tényezők piacának része a tőkepiac és a pénzpiac mellett, hiszen a munka az egyik termelési tényező. A munkaerő különleges tényező: nem lehet felhalmozni, raktározni és tetszés szerint átcsoportosítani, ezért a hiányzó szakembert nem lehet gyorsan előteremteni, és a cégek a bérekkel versenyeznek. A szakszervezeti vezető mondata a nominál- és a reáljövedelem különbsége. A nominál-, vagyis névleges jövedelem a ténylegesen megszerzett pénzösszeg, a reáljövedelem az az áru- és szolgáltatásmennyiség, amit ebből az adott árakon meg lehet vásárolni. Ha a fizetés 10 százalékkal nő, de az árak is 10 százalékkal emelkednek, a nominál-jövedelem nőtt, a reáljövedelem nem – ugyanannyit lehet vásárolni, ahogy a hírben is mondják. A hír az inflációhoz kapcsolódik: Mankiw kilencedik elve szerint ha túl sok pénzt bocsátanak ki, nőnek az árak, a tizedik szerint pedig rövid távon választani kell az infláció és a munkanélküliség között. A munkaerőhiány az alacsony munkanélküliség jele, és ezzel együtt jár az áremelkedés – ez a trade-off. A ceteris paribus elv szerint egyszerre csak egy tényező hatását vizsgáljuk. Itt a bér és az ár egyszerre változik, ezért, ahogy az elemző mondja, nehéz megmondani a béremelés hatását. Ha az árakat változatlannak tekintjük, látjuk a béremelés tiszta hatását; a valóságban ezért a reáljövedelmet kell vizsgálni. Véleményem szerint – és ez normatív állítás – a béremelés mellett a képzésre is figyelni kellene, mert az hosszabb távon enyhíti a hiányt."
+      },
+      {
+        "speaker": "examiner",
+        "text": "Mi történne a reáljövedelemmel, ha a bérek 10 %-kal, az árak pedig csak 5 %-kal emelkednének?"
+      },
+      {
+        "speaker": "candidate",
+        "text": "Akkor a nominál-jövedelem 10 százalékkal nőne, és mivel az árak kevésbé emelkednek, ugyanabból a pénzből több árut és szolgáltatást lehetne megvenni, tehát a reáljövedelem is nőne. A dolgozók helyzete ekkor valóban javulna, de kevésbé, mint amit a 10 százalékos béremelés papíron mutat."
+      }
+    ],
+    "notes": [
+      "A forrás lényegét, a munkaerőpiac definícióját és a munkaerő különleges jellegét pontosan, a tananyag szavaival adja vissza.",
+      "A szakszervezeti mondatot a 10 %–10 % példával értelmezi, és a kiegészítő kérdésben új helyzetre (10 % – 5 %) is helyesen alkalmazza a reáljövedelem fogalmát, kitalált számadat nélkül.",
+      "Mankiw 9–10. elvét és a ceteris paribus elvet a hír konkrét állításaihoz köti, a saját véleményét normatív állításként jelöli."
+    ]
+  }
+}

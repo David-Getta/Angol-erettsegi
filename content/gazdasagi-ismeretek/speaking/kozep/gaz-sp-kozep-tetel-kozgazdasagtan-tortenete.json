@@ -1,0 +1,80 @@
+{
+  "schemaVersion": 1,
+  "id": "gaz-sp-kozep-tetel-kozgazdasagtan-tortenete",
+  "subject": "gazdasagi-ismeretek",
+  "revision": 1,
+  "level": "kozep",
+  "source": "generated",
+  "topic": "alapfogalmak",
+  "title": "A közgazdaságtan története",
+  "createdAt": "2026-11-06",
+  "tags": [],
+  "section": "speaking",
+  "type": "tetel",
+  "partNumber": 1,
+  "instructionsHu": "Fejtse ki a tételt! Mutassa be időrendben a közgazdasági gondolkodás fő irányzatait, képviselőiket és fő gondolataikat, majd részletesen Adam Smith munkásságát! Felkészülési idő: 30 perc.",
+  "prompts": [
+    "Az előzmények (ókor, középkor), a merkantilizmus és a fiziokraták: miben látták a gazdagság forrását? Mit jelent a „laissez-faire”?",
+    "Mutasd be Adam Smith munkásságát (fő mű, munkamegosztás – tűgyár, önérdek, láthatatlan kéz, az állam szerepe)!",
+    "Mi a különbség a polgári közgazdaságtan és a marxizmus között? Mely fogalmakra épít a neoklasszikus közgazdaságtan?",
+    "Miben tér el Keynes és Friedman nézete az állam gazdasági szerepéről?"
+  ],
+  "usefulPhrases": [
+    {
+      "en": "láthatatlan kéz",
+      "hu": "a piac az árak révén önmagát szabályozza, összehangolja a döntéseket"
+    },
+    {
+      "en": "laissez-faire",
+      "hu": "„Hagyjátok csinálni, hagyjátok menni” – a fiziokraták jelmondata"
+    },
+    {
+      "en": "protekcionizmus",
+      "hu": "a hazai gazdaság védelme az import visszaszorításával (merkantilizmus)"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Idézet Adam Smithtől (tanórai diasor)",
+      "text": "„Nem a mészáros, a serfőző vagy a pék jóindulatától várjuk ebédünket, hanem attól, hogy ők a saját érdeküket nézik.”"
+    },
+    {
+      "title": "Időszalag szöveges leírása",
+      "text": "XVI–XVII. sz.: merkantilizmus – XVIII. sz. közepe: fiziokraták – XVIII–XIX. sz.: klasszikus iskola – XIX. sz. közepe: Marx – XIX. vége–XX. eleje: neoklasszikusok – XX. sz. első fele: Keynes – XX. sz. második fele: Friedman."
+    }
+  ],
+  "keyPoints": [
+    "Az ókorban Arisztotelész már vizsgálta a csere és a pénz szerepét; a középkorban az egyház tanítása hatott (igazságos ár, kamatszedés tilalma).",
+    "Merkantilizmus (XVI–XVII. sz.): a gazdagságot az arany- és ezüstkészletekben mérték, export ösztönzése, import visszaszorítása, protekcionizmus; Thomas Mun, Colbert.",
+    "Fiziokraták (XVIII. sz. közepe): a gazdagság forrása a mezőgazdaság („tiszta termék”); Quesnay „Gazdasági táblázata” a körforgás első modellje; jelmondat: laissez-faire.",
+    "Adam Smith (1723–1790): A nemzetek gazdagsága (1776); a munkamegosztás növeli a termelékenységet (tűgyár: néhány tű helyett több ezer tű naponta).",
+    "Smith: az önérdek követése akaratlanul a közjót is szolgálja; a láthatatlan kéz: a piac az árak révén önmagát szabályozza; az állam szerepe szűk (honvédelem, igazságszolgáltatás, közintézmények).",
+    "Klasszikusok még: Ricardo – komparatív előnyök; Malthus – a népesség gyorsabban nő, mint az élelemtermelés.",
+    "Marx: a kapitalizmus kritikusa, történelmi materializmus, értéktöbblet-elmélet; a polgári közgazdaságtan elfogadja a piacgazdaságot, a marxizmus meghaladná.",
+    "Neoklasszikusok (Jevons, Walras, Marshall): matematikai módszerek, a döntések alapja a határhaszon és a határköltség.",
+    "Keynes (Általános elmélet, 1936): válságban az államnak aktívan be kell avatkoznia; Friedman: a pénzkínálat szabályozása a kulcs, az állam szerepét minimalizálni kell."
+  ],
+  "speakingSeconds": 600,
+  "prepSeconds": 1800,
+  "sampleAnswer": {
+    "turns": [
+      {
+        "speaker": "candidate",
+        "text": "A tételem a közgazdaságtan története. Az ókorban Arisztotelész már vizsgálta a csere és a pénz szerepét, a középkorban pedig az egyház tanítása hatott a gazdasági gondolkodásra, például az igazságos ár és a kamatszedés tilalma. Ekkor még a filozófia és az erkölcs része volt. A XVI–XVII. században a merkantilisták a nemzet gazdagságát az arany- és ezüstkészletekben mérték, ezért az exportot ösztönözték, az importot visszaszorították, az állam aktívan szabályozott – ez a protekcionizmus. Képviselője Thomas Mun és Colbert. A XVIII. század közepén a fiziokraták szerint a gazdagság forrása a mezőgazdaság, mert az teremti meg a tiszta terméket. Quesnay Gazdasági táblázata a körforgás első tudományos modellje, jelmondatuk a laissez-faire: hagyjátok csinálni, hagyjátok menni. A klasszikus iskola legfontosabb alakja Adam Smith, a közgazdaságtan atyja. Fő műve A nemzetek gazdagsága, 1776. Szerinte a gazdagság forrása a munka, és a munkamegosztás növeli a termelékenységet: a tűgyárban egy ember egyedül néhány tűt készít naponta, felosztott munkával több ezret. Mindenki a saját érdekét követi, és ezzel akaratlanul a közjót is szolgálja – ahogy az idézet mondja, nem a pék jóindulatától várjuk az ebédünket. A láthatatlan kéz azt jelenti, hogy a piac az árak révén önmagát szabályozza. Az állam szerepe szűk: honvédelem, igazságszolgáltatás, közintézmények. Ricardo a komparatív előnyökről, Malthus a népesedésről írt. A XIX. század közepétől két irány vált szét: a polgári közgazdaságtan elfogadja a piacgazdaságot, Marx viszont a kapitalizmus kritikusa volt. A neoklasszikusok – Jevons, Walras, Marshall – matematikai módszerekkel dolgoztak, a döntések alapja a határhaszon és a határköltség. Keynes a nagy válság után azt mondta, hogy válságban az államnak be kell avatkoznia, Friedman viszont a pénzkínálat szabályozását tartotta kulcsnak, és az állam szerepét minimalizálta volna."
+      },
+      {
+        "speaker": "examiner",
+        "text": "Milyen kapcsolat van a fiziokraták és Adam Smith gondolatai között?"
+      },
+      {
+        "speaker": "candidate",
+        "text": "Mindkettő a szabad gazdaság felé mutat: a fiziokraták laissez-faire jelmondata és Smith láthatatlan keze is azt fejezi ki, hogy a gazdaságot nem kell állandóan szabályozni. A fiziokraták elvetették a merkantilista nézetet, hogy a kereskedelem vagy a pénz a gazdagság forrása, és Smith sem a nemesfémekben látta a gazdagságot: szerinte a gazdagság forrása a munka."
+      }
+    ],
+    "notes": [
+      "Az irányzatok helyes időrendben, képviselőkkel és fő gondolattal szerepelnek, Adam Smith munkássága minden elemével (fő mű, tűgyár, önérdek, láthatatlan kéz, állam).",
+      "A forrásként kapott idézetet beépíti, és az összefüggéseket (merkantilisták → fiziokraták → Smith; Keynes ↔ Friedman) is megmutatja.",
+      "A kiegészítő kérdésnél két irányzat közös gondolatát önállóan kapcsolja össze."
+    ]
+  }
+}
