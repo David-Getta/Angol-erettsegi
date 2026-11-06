@@ -1,0 +1,291 @@
+{
+  "schemaVersion": 1,
+  "id": "gaz-rd-kozep-gazdasagi-rendszerek",
+  "subject": "gazdasagi-ismeretek",
+  "revision": 1,
+  "level": "kozep",
+  "source": "generated",
+  "topic": "alapfogalmak",
+  "title": "Gazdasági rendszerek és Magyarország útja a piacgazdaságig",
+  "createdAt": "2026-11-06",
+  "tags": [],
+  "section": "reading",
+  "type": "feleletvalasztas",
+  "instructions": "Válassza ki a helyes választ! Minden kérdésre egy helyes válasz van. A 0. a megoldott példa.",
+  "example": {
+    "id": "0",
+    "kind": "choice",
+    "prompt": "Melyik gazdasági rendszerben hozza meg az állam az összes gazdasági döntést?",
+    "options": [
+      {
+        "key": "A",
+        "text": "tiszta piacgazdaság"
+      },
+      {
+        "key": "B",
+        "text": "vegyes gazdaság"
+      },
+      {
+        "key": "C",
+        "text": "tiszta tervgazdaság"
+      },
+      {
+        "key": "D",
+        "text": "naturálgazdálkodás"
+      }
+    ],
+    "answer": "C",
+    "category": "definicio",
+    "explanation": "Helyes: C. Tiszta tervgazdaság az a gazdasági rendszer, amelyben az állam hoz meg minden gazdasági döntést (központi tervezés, köztulajdon, állami ármegállapítás)."
+  },
+  "items": [
+    {
+      "id": "1",
+      "kind": "choice",
+      "prompt": "Melyik állítás jellemző a tiszta piacgazdaságra?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Az árakat az állam határozza meg."
+        },
+        {
+          "key": "B",
+          "text": "A termelési tényezők magántulajdonban vannak, és a gazdálkodás kizárólagos szervezője a piac."
+        },
+        {
+          "key": "C",
+          "text": "A gazdasági szereplők célja a terv teljesítése."
+        },
+        {
+          "key": "D",
+          "text": "A megtermelt javakat az állam osztja szét a szereplők között."
+        }
+      ],
+      "answer": "B",
+      "category": "definicio",
+      "explanation": "Helyes: B. Ez a tiszta piacgazdaság definíciója: a termelési tényezők magántulajdonban vannak, és a gazdálkodás kizárólagos szervezője a piac.",
+      "wrongOptions": {
+        "A": "Az állami ármegállapítás a tervgazdaság jellemzője; a piacgazdaságban szabad árképzés van.",
+        "C": "A terv teljesítése a tervgazdaság szereplőinek célja; a piacgazdaságban a cél a profit.",
+        "D": "A javak állami elosztása a tervgazdaság jellemzője."
+      }
+    },
+    {
+      "id": "2",
+      "kind": "choice",
+      "prompt": "Mit jelent a vegyes gazdaság?",
+      "options": [
+        {
+          "key": "A",
+          "text": "A tiszta piacgazdaság és a tiszta tervgazdaság keveréke."
+        },
+        {
+          "key": "B",
+          "text": "Olyan gazdaság, amelyben az állam egyáltalán nem avatkozik be."
+        },
+        {
+          "key": "C",
+          "text": "A naturálgazdálkodás és a barter keveréke."
+        },
+        {
+          "key": "D",
+          "text": "Olyan gazdaság, amelyben minden termelési tényező állami tulajdonban van."
+        }
+      ],
+      "answer": "A",
+      "category": "definicio",
+      "explanation": "Helyes: A. A definíció szerint a vegyes gazdaság a tiszta piacgazdaság és a tiszta tervgazdaság keveréke: az állam és a piac együtt szabályozza a gazdaságot.",
+      "wrongOptions": {
+        "B": "Ha az állam egyáltalán nem avatkozik be, az a tiszta piacgazdaság modellje.",
+        "C": "A naturálgazdálkodás és a barter a piacgazdaság kialakulásának korai szakaszai, nem gazdasági rendszertípusok.",
+        "D": "A teljes köztulajdon a tiszta tervgazdaság jellemzője; a vegyes gazdaságban a termelési tényezők főként magántulajdonban vannak."
+      }
+    },
+    {
+      "id": "3",
+      "kind": "choice",
+      "prompt": "Melyik NEM tartozik a tulajdonhoz kapcsolódó jogok közé?",
+      "options": [
+        {
+          "key": "A",
+          "text": "birtoklás"
+        },
+        {
+          "key": "B",
+          "text": "használat"
+        },
+        {
+          "key": "C",
+          "text": "rendelkezés"
+        },
+        {
+          "key": "D",
+          "text": "árképzés"
+        }
+      ],
+      "answer": "D",
+      "category": "csoportositas",
+      "explanation": "Helyes: D. A tulajdonhoz kapcsolódó jogok a birtoklás, a használat, a rendelkezés és a lemondás más javáról; az árképzés nem tulajdonjog.",
+      "wrongOptions": {
+        "A": "A birtoklás a tulajdonhoz kapcsolódó jogok egyike.",
+        "B": "A használat a tulajdonhoz kapcsolódó jogok egyike.",
+        "C": "A rendelkezés a tulajdonhoz kapcsolódó jogok egyike."
+      }
+    },
+    {
+      "id": "4",
+      "kind": "choice",
+      "prompt": "Melyik időszakhoz köthető Magyarországon az államosítás, a tervgazdaság kiépítése szovjet mintára?",
+      "options": [
+        {
+          "key": "A",
+          "text": "1948–1949"
+        },
+        {
+          "key": "B",
+          "text": "1968"
+        },
+        {
+          "key": "C",
+          "text": "1987–1988"
+        },
+        {
+          "key": "D",
+          "text": "2004"
+        }
+      ],
+      "answer": "A",
+      "category": "iranyzatok",
+      "explanation": "Helyes: A. 1948–1949-ben történt az államosítás: a tervgazdaság kiépítése szovjet mintára, köztulajdonnal.",
+      "wrongOptions": {
+        "B": "1968-ban az új gazdasági mechanizmus piaci elemeket vitt a tervgazdaságba.",
+        "C": "1987–1988-ban a reformtörvények (kétszintű bankrendszer, társasági törvény) születtek.",
+        "D": "2004-ben lett Magyarország az EU tagja."
+      }
+    },
+    {
+      "id": "5",
+      "kind": "choice",
+      "prompt": "Mi volt az 1968-as új gazdasági mechanizmus lényege?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Piaci elemek a tervgazdaságban: nagyobb vállalati önállóság."
+        },
+        {
+          "key": "B",
+          "text": "A kétszintű bankrendszer létrehozása."
+        },
+        {
+          "key": "C",
+          "text": "Az állami vállalatok magánkézbe adása."
+        },
+        {
+          "key": "D",
+          "text": "Csatlakozás az Európai Unió egységes piacához."
+        }
+      ],
+      "answer": "A",
+      "category": "iranyzatok",
+      "explanation": "Helyes: A. Az 1968-as új gazdasági mechanizmus piaci elemeket vitt a tervgazdaságba, nagyobb vállalati önállósággal – a rendszer azonban tervgazdaság maradt.",
+      "wrongOptions": {
+        "B": "A kétszintű bankrendszert az 1987–1988-as reformtörvények hozták létre.",
+        "C": "A privatizáció a rendszerváltás utáni 1990-es évekre jellemző.",
+        "D": "Az EU egységes piacának 2004-től vagyunk része."
+      }
+    },
+    {
+      "id": "6",
+      "kind": "choice",
+      "prompt": "Mi történt Magyarországon 1987–1988-ban?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Államosítás szovjet mintára."
+        },
+        {
+          "key": "B",
+          "text": "Reformtörvények: kétszintű bankrendszer, társasági törvény."
+        },
+        {
+          "key": "C",
+          "text": "Az Európai Unió tagja lettünk."
+        },
+        {
+          "key": "D",
+          "text": "Az állami vállalatok tömeges magánkézbe adása."
+        }
+      ],
+      "answer": "B",
+      "category": "iranyzatok",
+      "explanation": "Helyes: B. 1987–1988-ban születtek a reformtörvények: létrejött a kétszintű bankrendszer, a társasági törvény pedig lehetővé tette a vállalkozásokat.",
+      "wrongOptions": {
+        "A": "Az államosítás 1948–1949-ben történt.",
+        "C": "Az EU-tagság 2004-ben valósult meg.",
+        "D": "A privatizáció a rendszerváltás után, az 1990-es években zajlott."
+      }
+    },
+    {
+      "id": "7",
+      "kind": "choice",
+      "prompt": "Mit jelent a privatizáció?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Az állami vállalatok magánkézbe kerülését."
+        },
+        {
+          "key": "B",
+          "text": "A magántulajdon állami tulajdonba vételét."
+        },
+        {
+          "key": "C",
+          "text": "Az árak állami megállapítását."
+        },
+        {
+          "key": "D",
+          "text": "Az árak felszabadítását (árliberalizáció)."
+        }
+      ],
+      "answer": "A",
+      "category": "fogalomcsere",
+      "explanation": "Helyes: A. A privatizáció az állami vállalatok magánkézbe kerülése; az 1990-es években ezzel együtt külföldi tőke is érkezett.",
+      "wrongOptions": {
+        "B": "Ez az államosítás, a privatizáció ellentéte.",
+        "C": "Az állami ármegállapítás a tervgazdaság jellemzője.",
+        "D": "Az árliberalizáció a rendszerváltás másik lépése volt: az árakat már nem az állam szabja meg – ez nem azonos a tulajdon magánkézbe adásával."
+      }
+    },
+    {
+      "id": "8",
+      "kind": "choice",
+      "prompt": "Ki ad választ a vegyes gazdaságban a három alapkérdésre (mit, hogyan, kinek termeljünk)?",
+      "options": [
+        {
+          "key": "A",
+          "text": "kizárólag a piac"
+        },
+        {
+          "key": "B",
+          "text": "kizárólag a központi állam"
+        },
+        {
+          "key": "C",
+          "text": "a piac és az állam együtt"
+        },
+        {
+          "key": "D",
+          "text": "a külföld"
+        }
+      ],
+      "answer": "C",
+      "category": "modell-ertelmezes",
+      "explanation": "Helyes: C. A vegyes gazdaság modelljében az alapkérdésekre a piac és az állam együtt válaszol: a piac köti össze a szereplőket, az állam beavatkozik, ahol a piac nem hatékony.",
+      "wrongOptions": {
+        "A": "Ha kizárólag a piac dönt, az a tiszta piacgazdaság modellje.",
+        "B": "Ha kizárólag a központi állam dönt, az a tiszta tervgazdaság modellje.",
+        "D": "A külföld gazdasági szereplő, de nem ő dönt egy ország alapkérdéseiről."
+      }
+    }
+  ]
+}
