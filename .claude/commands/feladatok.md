@@ -10,7 +10,7 @@ Argumentumok: `$ARGUMENTS`
 Formátum: `<tantárgy> <rész> <szint> <darab> [témakör] [hibakategória]` – a `-` egy kihagyott opcionális paramétert jelent.
 
 - **tantárgy**: a `config/subjects.json` egyik `id`-je (`angol`, `magyar`, `matematika`, `tortenelem`, `nemet`, `fizika`, `kemia`,
-  `biologia`, `foldrajz`, `digitalis-kultura`). A tantárgy configja: `config/subjects/<tantárgy>/`, tartalma: `content/<tantárgy>/`.
+  `biologia`, `foldrajz`, `digitalis-kultura`, `gazdasagi-ismeretek`). A tantárgy configja: `config/subjects/<tantárgy>/`, tartalma: `content/<tantárgy>/`.
 - **rész**: a vizsgarész `slug`-ja a tantárgy `config/subjects/<tantárgy>/structure.json` fájljából (`levels.<szint>.parts[].slug`,
   pl. angolnál `olvasas`, `nyelvhelyesseg`, `hallas`, `iras`, `szobeli`; matematikánál `rovid-feladatok`, `kidolgozott-feladatok`, `szobeli`).
   A slughoz tartozó `id` (`reading` | `language-use` | `listening` | `writing` | `speaking`) a fájl `section` mezője és a mappa neve,

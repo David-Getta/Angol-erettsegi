@@ -34,7 +34,7 @@
           "name": "tantárgy",
           "required": true,
           "valuesFrom": "subjects",
-          "description": "A tantárgy azonosítója (config/subjects.json): angol, magyar, matematika, tortenelem, nemet, fizika, kemia, biologia, foldrajz, digitalis-kultura."
+          "description": "A tantárgy azonosítója (config/subjects.json): angol, magyar, matematika, tortenelem, nemet, fizika, kemia, biologia, foldrajz, digitalis-kultura, gazdasagi-ismeretek."
         },
         {
           "name": "rész",
@@ -132,7 +132,7 @@
           "name": "tantárgy",
           "required": true,
           "valuesFrom": "subjects",
-          "description": "A tantárgy azonosítója (config/subjects.json): angol, magyar, matematika, tortenelem, nemet, fizika, kemia, biologia, foldrajz, digitalis-kultura."
+          "description": "A tantárgy azonosítója (config/subjects.json): angol, magyar, matematika, tortenelem, nemet, fizika, kemia, biologia, foldrajz, digitalis-kultura, gazdasagi-ismeretek."
         },
         {
           "name": "témakör",
@@ -194,6 +194,44 @@
         }
       ],
       "after": "Kattints a „Tartalom újratöltése” gombra. A feladatok „Hivatalos” jelöléssel jelennek meg a modulokban és a próbaérettségiben."
+    },
+    {
+      "name": "lecke",
+      "file": ".claude/commands/lecke.md",
+      "title": "Tanórai anyag feldolgozása",
+      "summary": "A tanár diasorából vagy jegyzetéből (PDF a data/lessons/<tantárgy>/ alatt) feladatokat, tételeket, fogalomkártyákat és szabálytár-bővítést ír a tartalombankba – csak a fájlban szereplő anyagból –, majd lefuttatja a validátort.",
+      "usage": "/lecke <tantárgy> <fájl> [témakör]",
+      "params": [
+        {
+          "name": "tantárgy",
+          "required": true,
+          "valuesFrom": "subjects",
+          "description": "A tantárgy azonosítója (config/subjects.json): angol, magyar, matematika, tortenelem, nemet, fizika, kemia, biologia, foldrajz, digitalis-kultura, gazdasagi-ismeretek."
+        },
+        {
+          "name": "fájl",
+          "required": true,
+          "valuesFrom": "free",
+          "description": "A data/lessons/<tantárgy>/ alatti PDF vagy szöveges fájl neve, pl. Gazdasagi_ismeretek_20261017.pdf."
+        },
+        {
+          "name": "témakör",
+          "required": false,
+          "valuesFrom": "topics",
+          "description": "A config/subjects/<tantárgy>/topics.json egyik id-je, ha az anyag egy témakörhöz tartozik; elhagyva a diasorból állapítja meg."
+        }
+      ],
+      "examples": [
+        {
+          "command": "/lecke gazdasagi-ismeretek Gazdasagi_ismeretek_20261017.pdf",
+          "description": "A következő gazdasági ismeretek diasor feldolgozása: feladatok, tételek, fogalomkártyák, szabálytár-bővítés."
+        },
+        {
+          "command": "/lecke gazdasagi-ismeretek Gazdasagi_ismeretek_20261017.pdf piaci-mechanizmus",
+          "description": "Ugyanez, a témakört előre megadva."
+        }
+      ],
+      "after": "Kattints a „Tartalom újratöltése” gombra (vagy futtasd: npm run seed). Az új feladatok, tételek és kártyák a tantárgy oldalain jelennek meg."
     }
   ]
 }

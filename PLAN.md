@@ -79,13 +79,14 @@ A fázisok után az app mindig futtatható; ami kész, az használható.
 - [x] Kezdőképernyő tantárgyválasztóval (`/`), tantárgyankénti beállítások (szint, vizsganap, cél); a Kezdőlap a `/kezdolap`
 - [x] Az öt vizsgarész-hely (olvasás / nyelvhelyesség / hallás = objektív, írás = beadás, szóbeli) tantárgyanként más névvel, URL-lel és funkciókkal; dinamikus `/[resz]` útvonalak, adatvezérelt navigáció
 - [x] Tantárgytudatos parancsok (`/feladatok <tantárgy> …`, `/szokincs <tantárgy> …`), javítási promptok (magyar vizsgáztató a nem nyelvi tárgyaknál), beadás-fájlok
-- [x] Hivatalos vizsgaszerkezet mind a tíz tárgyhoz (forrásokkal; feltételes szóbeli matematikából és digitális kultúrából, írásbeli együtt 12 %, csak gyakorló részek)
+- [x] Hivatalos vizsgaszerkezet mind a tizenegy tárgyhoz (forrásokkal; feltételes szóbeli matematikából és digitális kultúrából, írásbeli együtt 12 %, csak gyakorló részek)
 - [x] Kezdő tartalombank minden tárgyhoz (feladatok, kidolgozott feladatok / esszék mintamegoldással, tételek mintafelelettel, fogalomkártyák, Szabálytár-leckék minden hibakategóriához, útmutatók)
 - [x] Tesztek tantárgyanként (config-konzisztencia, lefedettség), e2e a tantárgyváltásra
 - [x] Független ellenőrzés minden új tárgy bankján (kulcsok, számítások, tények, idézetek): rossz kulcs nem volt, tárgyanként 12–44 javítás
 - [x] Helyes válaszok kiegyensúlyozása A–D között (`scripts/rebalance-choice-keys.py`), párosítások újrabetűzése (`scripts/reletter-match-options.py`); a validátor ellenőrzi, hogy a magyarázat a megoldás betűjét nevezi meg
 - [x] Felolvasás: biztonságos hangválasztás (nincs magyar rendszerhangra visszaesés), tantárgyankénti nyelv; a próbaérettségi órája nem ugrál gépeléskor
 - [x] Nem nyelvi tárgyak: tizedesvessző = pont, szóköz a számok körül nem számít, `caseSensitive` itemek (Aa, CO, német főnevek), jelsor a szerkesztőben, a szóbeli tétel forrásai megjelennek
+- [x] Gazdasági ismeretek (11. tárgy): projektmunka 40 + szóbeli 110 (tétel 70 + védés 40) középszinten, emelt feladatsor 100 + szóbeli 50; a tartalom a tanár diasoraiból készül leckénként (1. téma és a 2. téma 01–02 fejezete), a további leckék a diasorok érkezésével bővítik a bankot
 
 ---
 
@@ -111,7 +112,7 @@ A fázisok után az app mindig futtatható; ami kész, az használható.
 | D16 | A próbaérettségihez és a szintfelmérőhöz a bank feladatai `reservedFor` jelölést kaphatnak; a gyakorló listák ezeket alapból elrejtik | így marad „még nem használt” szett a próbaérettségire |
 | D17 | Vizsgapont-átváltás: arányos, felfelé kerekítve 0,5-től (`convertToExamPoints`); ha a configban van pontos táblázat és a nyers maximum egyezik, a táblázat | a hivatalos útmutatók feladatsoronkénti táblázatot adnak, a generált szettek nyers maximuma eltérhet |
 | D18 | Nincs ESLint (a Next 16 kivette a `next lint`-et); a minőségkapu a `tsc --noEmit` strict módban + tesztek | kevesebb függőség |
-| D19 | Minden tantárgy **ugyanarra az öt vizsgarész-helyre** (`reading`, `language-use`, `listening` objektív; `writing` beadás; `speaking` szóbeli) képezi le a saját részeit, a név, URL-rész, ikon és a funkciók (idézet, szójegyzék, hang, célzott gyakorlás) a `structure.json`-ból jönnek | egy kódbázis, egy séma, tíz tantárgy; a tartalom `section` mezője változatlan |
+| D19 | Minden tantárgy **ugyanarra az öt vizsgarész-helyre** (`reading`, `language-use`, `listening` objektív; `writing` beadás; `speaking` szóbeli) képezi le a saját részeit, a név, URL-rész, ikon és a funkciók (idézet, szójegyzék, hang, célzott gyakorlás) a `structure.json`-ból jönnek | egy kódbázis, egy séma, tizenegy tantárgy; a tartalom `section` mezője változatlan |
 | D20 | Az aktuális tantárgy a beállításokban (`settings.subject`), a lekérdezések erre szűrnek; a tantárgyválasztó összegzései `withSubject()`-tel futnak | egyfelhasználós app, a tantárgy globális állapot; nincs URL-prefix |
 | D21 | Feltételes szóbeli (`conditional`): matematika és digitális kultúra középszinten a szóbeli csak 12–24,99 % között számít; a próbaérettségi efelett az írásbeli százalékát adja végeredménynek | így egyezik a hivatalos pontszámítással |
 | D22 | A 12 %-os minimum `minPartAppliesTo: ["written", …]`-tel az írásbeli részekre együtt is érvényesíthető; `maxPoints: 0` = csak gyakorló rész (nem vizsgarész, nincs a próbaérettségiben) | a nem nyelvi tárgyaknál az írásbeli egy vizsgarész; digitális kultúránál a gyorskérdések csak gyakorlás |

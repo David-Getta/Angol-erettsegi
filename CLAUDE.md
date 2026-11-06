@@ -2,7 +2,7 @@
 
 Lokális, egyfelhasználós Next.js app egy magyar gimnazistának (érettségi 2027 tavasz, közép és emelt szint) **minden
 vizsgatárgyból**: a kezdőképernyőn tantárgyat választ (`config/subjects.json`: magyar, matematika, történelem, angol, német, fizika,
-kémia, biológia, földrajz, digitális kultúra), és minden tantárgynál ugyanazt a felületet kapja. Minden tantárgy a saját hivatalos
+kémia, biológia, földrajz, digitális kultúra, gazdasági ismeretek), és minden tantárgynál ugyanazt a felületet kapja. Minden tantárgy a saját hivatalos
 vizsgaszerkezetét követi: `config/subjects/<tantárgy>/` (szerkezet, pontok, rubrikák, témakörök, hibakategóriák), a tartalom
 `content/<tantárgy>/` alatt. Az öt vizsgarész-hely (`reading`, `language-use`, `listening` = objektív; `writing` = beadás;
 `speaking` = szóbeli) tantárgyanként más nevet, URL-részt és funkciókat kap a `structure.json`-ból (pl. matematika: `rovid-feladatok`,
@@ -43,6 +43,7 @@ a feladatbankot fájlokba generálja (`content/`), az írás- és szóbeli javí
 | `/javitas [beadás-id]` | az `exchange/inbox/` beadásainak javítása → `exchange/outbox/` | `/javitas` |
 | `/szokincs [témakör] [szint] [darab]` | hiányos szókártyák kiegészítése, új pakli | `/szokincs kornyezet emelt 40` |
 | `/import-hivatalos <mappa>` | hivatalos feladatsor (`data/official/<mappa>/`) → `content/` | `/import-hivatalos 2024-majus-emelt` |
+| `/lecke <tantárgy> <fájl> [témakör]` | a tanár diasora (`data/lessons/<tantárgy>/<fájl>`) → feladatok, tételek, kártyák, szabálytár a `content/`-be | `/lecke gazdasagi-ismeretek Gazdasagi_ismeretek_20261017.pdf` |
 
 A parancsok neve, paraméterei és példái a `config/commands.json`-ban vannak (ebből dolgozik a „Parancsok” oldal és a tippek is).
 Ha parancsot módosítasz, a `config/commands.json`-t és a `.claude/commands/<név>.md`-t is frissítsd (teszt ellenőrzi).

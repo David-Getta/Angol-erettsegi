@@ -6,8 +6,8 @@ import { buildCommand, feladatokCommand } from "@/lib/commands/build";
 
 describe("Claude Code commands", () => {
   const cfg = loadCommands();
-  it("lists the four commands", () => {
-    expect(cfg.commands.map((c) => c.name).sort()).toEqual(["feladatok", "import-hivatalos", "javitas", "szokincs"]);
+  it("lists the five commands", () => {
+    expect(cfg.commands.map((c) => c.name).sort()).toEqual(["feladatok", "import-hivatalos", "javitas", "lecke", "szokincs"]);
   });
   it("every command in config/commands.json has a command file", () => {
     for (const c of cfg.commands) {

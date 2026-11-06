@@ -1,0 +1,227 @@
+{
+  "meta": {
+    "verifiedAt": "2026-11-06",
+    "sources": [
+      {
+        "title": "Oktatási Hivatal: Az érettségi vizsgatárgyak részletes vizsgakövetelményei és vizsgaleírásai – Gazdasági ismeretek (közismereti választható tárgy, közép- és emelt szint)",
+        "url": "https://www.oktatas.hu/kozneveles/erettsegi/vizsgatargyak"
+      },
+      {
+        "title": "Oktatási Hivatal: A 2025. október–novemberi érettségi vizsgák nyilvánosságra hozott anyagai – gazdasági ismeretek: projekttémák közép- és emelt szinten, a projektmunka készítésének ajánlott menete, a projektmunka értékelési szempontjai",
+        "url": "https://www.oktatas.hu/kozneveles/erettsegi/2025oszi_vizsgaidoszak/2025osz_kozismereti_targyak"
+      },
+      {
+        "title": "OH-útmutató iskolai tükörmásolata (2026. május): A gazdasági ismeretek projektmunka készítésének és értékelésének útmutatója – a projektmunka 40 pont (a készítés folyamata 15 + az elkészült munka 25), központi javítási-értékelési útmutató; a védés mindkét szinten a szóbeli része",
+        "url": "https://www.bighb.hu/images/cikkek/erettsegi/2025_2026/1303_gazdism_projekt_keszit_pontutmut_2026maj.pdf"
+      },
+      {
+        "title": "OH-útmutató iskolai tükörmásolata (2026. május): A projektmunka készítésének ajánlott menete (konzultációk, munkanapló, leadás az írásbeli vizsgaidőszak kezdetéig)",
+        "url": "https://www.bighb.hu/images/cikkek/erettsegi/2025_2026/1302_gazdism_projekt_ajanlott_menete_2026maj.pdf"
+      },
+      {
+        "title": "Zrínyi Miklós Gimnázium: Gazdasági ismeretek – II. A vizsga leírása (a hivatalos vizsgaleírás másolata: közép projektmunka 40 pont + szóbeli 110 pont (70 + 40); emelt írásbeli 180 perc 100 pont – központi feladatsor vagy mélyebb projektmunka –, szóbeli 20 perc 50 pont központi tételsorból, két részből)",
+        "url": "https://www.zmg.hu/aloldalak/gazdism/erettsegi.pdf"
+      },
+      {
+        "title": "Zrínyi Miklós Gimnázium: A gazdasági ismeretek tantárgy követelményei – témák közép- és emelt szinten",
+        "url": "https://www.zmg.hu/aloldalak/gazdism/gazdismkov.pdf"
+      },
+      {
+        "title": "Hunyadi Mátyás Gimnázium: Érettségi témakörök – gazdasági ismeretek (középszint: projektmunka + szóbeli; a projekt védésének menete; aktuális gazdasági problémák)",
+        "url": "https://www.hunyadi-mkov.edu.hu/downloads/erettsegi/gazdasagi_ismeretek.pdf"
+      },
+      {
+        "title": "Szent Anna Gimnázium (2025. 02.): Gazdasági ismeretek fakultáció – szóbeli érettségi témakörök (20 tétel a közgazdaságtan alapfogalmaitól a globalizációig)",
+        "url": "https://szentanna-gk.hu/wp-content/uploads/2025/02/gazdasagi-ismeretek.pdf"
+      },
+      {
+        "title": "Eduline (2025. 01. 02.): Érettségi 2025 – a gazdasági ismeretek projektmunkájának témakörei közép- és emelt szinten (13 témakör)",
+        "url": "https://eduline.hu/erettsegi-felveteli/20250102_emelt-erettsegi-2025-gazdasagi-ismeretek-projektmunka-temakorok"
+      },
+      {
+        "title": "Tájékoztató emelt szintű érettségi vizsgára érkezőknek (gazdasági ismeretek: összefüggő feladatsor, 180 perc)",
+        "url": "https://teko.hu/images/phocadownload/emeltinfo/emelt_info.pdf"
+      },
+      {
+        "title": "Szakmódszertan (tankönyvtár): 5.2. Vizsgák a gazdasági ismeretekből – emelt írásbeli: a középszintűnél mélyebb projektmunka vagy a makro-, mikroökonómia és nemzetközi gazdasági ismeretek témaköreire épülő feladatsor; szóbeli: tétel kifejtése + a projektmunka védése",
+        "url": "https://regi.tankonyvtar.hu/hu/tartalom/tamop412b2/2013-0002_szakmodszertan-muszaki-gazdasagi_szakirany/tananyag/JEGYZET-39-5.2._Vizsgak_a_gazdasagi_isme.scorml"
+      },
+      {
+        "title": "Eduline (2026. 03. 14.): Érettségi 2026 – pontozási és osztályozási szabályok (közép 80/60/40/25 %, emelt 60/47/33/25 %, vizsgarészenként 12 %)",
+        "url": "https://eduline.hu/erettsegi-felveteli/20260314_erettsegi-2026-pontozas-osztalyozas"
+      }
+    ],
+    "notes": [
+      "Az ellenőrzés hírportál-cikkek (Eduline, Telex) és a hivatalos dokumentumok keresőben indexelt szövege alapján történt; az OH oldalát a futtató környezet hálózata nem engedte közvetlenül megnyitni – a hivatalos vizsgaleírással érdemes összevetni."
+    ]
+  },
+  "reading": [
+    {
+      "id": "feleletvalasztas",
+      "name": "Feleletválasztás",
+      "nameEn": "Multiple choice",
+      "levels": [
+        "kozep",
+        "emelt"
+      ],
+      "description": "Egy helyes válasz kiválasztása 4 lehetőség közül (fogalom, irányzat, példa besorolása).",
+      "itemKinds": [
+        "choice"
+      ]
+    },
+    {
+      "id": "igaz-hamis",
+      "name": "Igaz–hamis állítások",
+      "nameEn": "True/false",
+      "levels": [
+        "kozep",
+        "emelt"
+      ],
+      "description": "Gazdasági állítások eldöntése, a magyarázatban a helyes megfogalmazással.",
+      "itemKinds": [
+        "tf"
+      ]
+    },
+    {
+      "id": "parositas",
+      "name": "Párosítás",
+      "nameEn": "Matching",
+      "levels": [
+        "kozep",
+        "emelt"
+      ],
+      "description": "Fogalmak és definíciók, irányzatok és képviselők, példák és kategóriák párosítása közös opciólistából.",
+      "itemKinds": [
+        "match"
+      ]
+    },
+    {
+      "id": "fogalom",
+      "name": "Fogalom felismerése, rövid válasz",
+      "nameEn": "Concept recognition",
+      "levels": [
+        "kozep",
+        "emelt"
+      ],
+      "description": "Definíció vagy példa alapján a fogalom megnevezése, egy-két szavas válasz.",
+      "itemKinds": [
+        "text",
+        "choice"
+      ]
+    },
+    {
+      "id": "szamitas-rovid",
+      "name": "Rövid számítás",
+      "nameEn": "Short calculation",
+      "levels": [
+        "kozep",
+        "emelt"
+      ],
+      "description": "Egy-két lépéses számítás (határköltség, átlagköltség, profit, reáljövedelem, alternatív költség), csak az eredményt kell beírni.",
+      "itemKinds": [
+        "text"
+      ]
+    },
+    {
+      "id": "adatsor",
+      "name": "Táblázat, diagram elemzése",
+      "nameEn": "Data analysis",
+      "levels": [
+        "kozep",
+        "emelt"
+      ],
+      "description": "Szövegben leírt adatsor, táblázat vagy diagram alapján kérdések.",
+      "itemKinds": [
+        "text",
+        "choice",
+        "tf"
+      ]
+    },
+    {
+      "id": "szovegertelmezes",
+      "name": "Gazdasági szöveg, hír értelmezése",
+      "nameEn": "Text interpretation",
+      "levels": [
+        "kozep",
+        "emelt"
+      ],
+      "description": "Rövid gazdasági hír, forrásrészlet vagy esetleírás alapján kérdések a tanult fogalmakkal.",
+      "itemKinds": [
+        "choice",
+        "tf",
+        "text",
+        "match"
+      ]
+    }
+  ],
+  "language-use": [],
+  "listening": [],
+  "writing": [
+    {
+      "id": "projekt-fejezet",
+      "name": "Projektfejezet",
+      "nameEn": "Project chapter",
+      "levels": [
+        "kozep"
+      ],
+      "description": "A projektmunka egy fejezete: bevezetés és témaválasztás indoklása, elemző fejezet, javaslatok és összegzés."
+    },
+    {
+      "id": "munkanaplo",
+      "name": "Munkanapló",
+      "nameEn": "Work log",
+      "levels": [
+        "kozep"
+      ],
+      "description": "A projektmunka készítésének dátumozott naplója: módszerek, döntések, akadályok és megoldásuk."
+    },
+    {
+      "id": "kifejtes",
+      "name": "Kifejtendő feladat",
+      "nameEn": "Extended answer",
+      "levels": [
+        "emelt"
+      ],
+      "description": "Fogalmak, összefüggések, modellek kifejtése megadott szempontok szerint, példákkal."
+    },
+    {
+      "id": "elemzes",
+      "name": "Elemző feladat adatokkal",
+      "nameEn": "Data analysis task",
+      "levels": [
+        "emelt"
+      ],
+      "description": "Adatsor, táblázat vagy eset alapján számítás és közgazdasági következtetés."
+    }
+  ],
+  "speaking": [
+    {
+      "id": "tetel",
+      "name": "Szóbeli tétel",
+      "nameEn": "Oral topic",
+      "levels": [
+        "kozep",
+        "emelt"
+      ],
+      "description": "A tétel önálló kifejtése: definíciók, csoportosítások, összefüggések, példák."
+    },
+    {
+      "id": "projekt-vedes",
+      "name": "A projektmunka megvédése",
+      "nameEn": "Project defence",
+      "levels": [
+        "kozep"
+      ],
+      "description": "A téma ismertetése, a választás indoklása, a projekt bemutatása, válasz a kérdésekre."
+    },
+    {
+      "id": "aktualis-elemzes",
+      "name": "Aktuális gazdasági esemény / forrás elemzése",
+      "nameEn": "Current-event analysis",
+      "levels": [
+        "emelt"
+      ],
+      "description": "Hír, adatsor vagy forrásrészlet értelmezése és összekapcsolása a tétel fogalmaival."
+    }
+  ]
+}

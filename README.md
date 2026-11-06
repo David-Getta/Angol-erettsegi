@@ -2,7 +2,7 @@
 
 Lokális, egyfelhasználós gyakorló app az érettségire, **minden vizsgatárgyból, közép- és emelt szinten**.
 Indításkor kiválasztod a tantárgyat (magyar, matematika, történelem, angol, német, fizika, kémia, biológia, földrajz,
-digitális kultúra), és mindegyiknél ugyanazt a felületet kapod: feladatok magyarázattal, javítás, hibanapló, szabálytár,
+digitális kultúra, gazdasági ismeretek), és mindegyiknél ugyanazt a felületet kapod: feladatok magyarázattal, javítás, hibanapló, szabálytár,
 próbaérettségi. A felület és a magyarázatok magyarok; a nyelvi tárgyaknál a feladatok a célnyelven vannak.
 
 Minden tantárgy a saját hivatalos vizsgaszerkezetét követi (`config/subjects/<tantárgy>/`): a vizsgarészek, pontok, időkeretek,

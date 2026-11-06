@@ -40,6 +40,29 @@ test("subject chooser: matematika has its own parts, exam info and conditional o
   await expect(page.getByTestId("exam-parts-kozep")).toContainText("150");
 });
 
+test("subject chooser: gazdasági ismeretek has the project, the oral with defence and practice-only quick questions", async ({ page }) => {
+  await page.goto("/");
+  await page.getByTestId("subject-gazdasagi-ismeretek").click();
+  await page.waitForURL(/\/kezdolap/);
+  await page.getByTestId("level-kozep").click();
+  await expect(page.getByTestId("app-nav")).toContainText("Középszint");
+  const nav = page.getByTestId("app-nav");
+  await expect(nav).toContainText("Gyorskérdések");
+  await expect(nav).toContainText("Projektmunka");
+  for (const route of ["/gyorskerdesek", "/kifejtes", "/szobeli", "/szabalytar", "/szokincs", "/utmutatok"]) {
+    const res = await page.goto(route);
+    expect(res?.status(), route).toBe(200);
+    await expect(page.locator("h1").first()).toBeVisible();
+  }
+  await page.goto("/vizsga");
+  const parts = page.getByTestId("exam-parts-kozep");
+  await expect(parts).toContainText("Projektmunka");
+  await expect(parts).toContainText("110");
+  await expect(parts).toContainText("150");
+  // the practice-only part is not in the exam table
+  await expect(parts).not.toContainText("Gyorskérdések");
+});
+
 test("subject chooser: switching back to angol restores the English pages", async ({ page }) => {
   await page.goto("/");
   await page.getByTestId("subject-tortenelem").click();
