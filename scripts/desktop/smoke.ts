@@ -55,16 +55,22 @@ function diagnoseMac(bin: string): void {
   };
   show("codesign --verify", "codesign", ["--verify", "--deep", "--strict", "--verbose=2", app]);
   show("codesign -d", "codesign", ["-dv", "--verbose=2", app]);
-  show("version", bin, ["--version"]);
-  const reports = path.join(os.homedir(), "Library", "Logs", "DiagnosticReports");
-  if (fs.existsSync(reports)) {
+  show("ls MacOS", "ls", ["-la", path.join(app, "Contents", "MacOS")]);
+  show("ls Frameworks", "ls", ["-la", path.join(app, "Contents", "Frameworks")]);
+  show("plist", "plutil", ["-p", path.join(app, "Contents", "Info.plist")]);
+  // Chromium logs nothing to stderr in a packaged app unless asked; a CHECK failure shows up here
+  const v = spawnSync(bin, ["--version"], { encoding: "utf8", timeout: 30_000, env: { ...process.env, ELECTRON_ENABLE_LOGGING: "1", ELECTRON_ENABLE_STACK_DUMPING: "1" } });
+  console.error(`--- version (${v.status}, jel ${v.signal ?? "-"})\n${(v.stdout ?? "").slice(0, 2000)}${(v.stderr ?? "").slice(0, 4000)}`);
+  show("system log", "log", ["show", "--last", "3m", "--style", "compact", "--predicate", 'process CONTAINS "rettsegi" OR eventMessage CONTAINS "rettsegi" OR eventMessage CONTAINS "ErettsegiFelkeszito"']);
+  for (const reports of [path.join(os.homedir(), "Library", "Logs", "DiagnosticReports"), "/Library/Logs/DiagnosticReports"]) {
+    if (!fs.existsSync(reports)) continue;
     const newest = fs
       .readdirSync(reports)
       .filter((f) => /\.(ips|crash)$/.test(f))
       .map((f) => ({ f, t: fs.statSync(path.join(reports, f)).mtimeMs }))
       .sort((a, b) => b.t - a.t)[0];
-    if (newest) console.error(`--- crash report ${newest.f}\n${fs.readFileSync(path.join(reports, newest.f), "utf8").slice(0, 4000)}`);
-    else console.error("--- nincs összeomlás-jelentés");
+    if (newest) console.error(`--- crash report ${newest.f}\n${fs.readFileSync(path.join(reports, newest.f), "utf8").slice(0, 5000)}`);
+    else console.error(`--- nincs összeomlás-jelentés (${reports})`);
   }
 }
 
