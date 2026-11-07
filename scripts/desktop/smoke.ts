@@ -46,6 +46,28 @@ function executable(): string {
   return found;
 }
 
+/** When the app died on macOS: code signature state and the newest crash report (signal, exception type). */
+function diagnoseMac(bin: string): void {
+  const app = bin.replace(/\/Contents\/MacOS\/[^/]+$/, "");
+  const show = (title: string, cmd: string, cmdArgs: string[]) => {
+    const x = spawnSync(cmd, cmdArgs, { encoding: "utf8", timeout: 30_000 });
+    console.error(`--- ${title} (${x.status})\n${(x.stdout ?? "").slice(0, 2000)}${(x.stderr ?? "").slice(0, 2000)}`);
+  };
+  show("codesign --verify", "codesign", ["--verify", "--deep", "--strict", "--verbose=2", app]);
+  show("codesign -d", "codesign", ["-dv", "--verbose=2", app]);
+  show("version", bin, ["--version"]);
+  const reports = path.join(os.homedir(), "Library", "Logs", "DiagnosticReports");
+  if (fs.existsSync(reports)) {
+    const newest = fs
+      .readdirSync(reports)
+      .filter((f) => /\.(ips|crash)$/.test(f))
+      .map((f) => ({ f, t: fs.statSync(path.join(reports, f)).mtimeMs }))
+      .sort((a, b) => b.t - a.t)[0];
+    if (newest) console.error(`--- crash report ${newest.f}\n${fs.readFileSync(path.join(reports, newest.f), "utf8").slice(0, 4000)}`);
+    else console.error("--- nincs összeomlás-jelentés");
+  }
+}
+
 const exe = executable();
 const tmp = fs.mkdtempSync(path.join(os.tmpdir(), "erettsegi-smoke-"));
 const appArgs = [`--smoke-test=${shot}`, `--data-dir=${path.join(tmp, "data")}`, `--exchange-dir=${path.join(tmp, "exchange")}`];
@@ -64,10 +86,11 @@ try {
   /* no JSON line */
 }
 if (r.status !== 0 || !result.ok) {
-  console.error(`✖ a füstteszt elbukott (kilépési kód ${r.status})`);
+  console.error(`✖ a füstteszt elbukott (kilépési kód ${r.status}, jel ${r.signal ?? "-"}${r.error ? `, hiba: ${r.error.message}` : ""})`);
   console.error(result.error ?? "");
   console.error((r.stdout ?? "").slice(-3000));
   console.error((r.stderr ?? "").slice(-3000));
+  if (process.platform === "darwin") diagnoseMac(exe);
   process.exit(1);
 }
 console.log(`✓ az app elindult: ${result.title} (${result.version}) – ${result.subjects} tantárgy a kezdőképernyőn, ${result.url}`);
