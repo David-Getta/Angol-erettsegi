@@ -68,47 +68,41 @@ function diagnoseMac(bin: string): void {
   show("fuses", path.join(ROOT, "node_modules", ".bin", "electron-fuses"), ["read", "--app", app]);
   const lg = spawnSync("log", ["show", "--last", "2m", "--style", "compact", "--predicate", 'process CONTAINS "rettsegi" OR process CONTAINS "Erettsegi" OR eventMessage CONTAINS "rettsegi" OR eventMessage CONTAINS "asar" OR eventMessage CONTAINS "Electron"'], { encoding: "utf8", timeout: 60_000 });
   console.error(`--- system log (${lg.status}, last part)\n${(lg.stdout ?? "").slice(-4000)}${(lg.stderr ?? "").slice(-500)}`);
-  // Bisecting experiments on copies (no rebuild): which packaging difference kills the app on macOS?
-  const run = (title: string, cmd: string, cmdArgs: string[], extraEnv: Record<string, string> = {}) => {
-    const x = spawnSync(cmd, cmdArgs, { encoding: "utf8", timeout: 120_000, env: { ...env, ELECTRON_ENABLE_LOGGING: "1", ...extraEnv } });
-    console.error(`--- ${title}: status ${x.status}, jel ${x.signal ?? "-"}\n${(x.stdout ?? "").slice(0, 6000)}${(x.stderr ?? "").slice(-1500)}`);
+  // Is the file system normalization-sensitive, and does an ASCII bundle/helper name fix the start?
+  const run = (title: string, cmd: string, cmdArgs: string[]) => {
+    const x = spawnSync(cmd, cmdArgs, { encoding: "utf8", timeout: 120_000, env: { ...env, ELECTRON_ENABLE_LOGGING: "1" } });
+    console.error(`--- ${title}: status ${x.status}, jel ${x.signal ?? "-"}\n${(x.stdout ?? "").slice(0, 1500)}${(x.stderr ?? "").slice(-1500)}`);
   };
-  show("entitlements", "codesign", ["-d", "--entitlements", ":-", app]);
-  run("lldb backtrace", "lldb", ["--batch", "-o", "run", "-o", "bt 40", "-o", "quit", "--", bin, "--version"]);
-  const exeName = path.basename(bin);
-  const fresh = (name: string): string => {
-    const c = path.join(os.tmpdir(), `${name}.app`);
-    fs.rmSync(c, { recursive: true, force: true });
-    spawnSync("cp", ["-R", app, c]);
-    return c;
-  };
-  const plist = (c: string) => path.join(c, "Contents", "Info.plist");
-  const resign = (c: string) => spawnSync("codesign", ["--force", "--deep", "-s", "-", c]);
-  const c3 = fresh("x3");
-  spawnSync("plutil", ["-remove", "ElectronAsarIntegrity", plist(c3)]);
-  resign(c3);
-  run("X3 no ElectronAsarIntegrity --version", path.join(c3, "Contents", "MacOS", exeName), ["--version"]);
-  const c4 = fresh("x4");
-  spawnSync("plutil", ["-remove", "ElectronAsarIntegrity", plist(c4)]);
-  spawnSync("plutil", ["-remove", "LSEnvironment", plist(c4)]);
-  spawnSync("plutil", ["-remove", "NSAppTransportSecurity", plist(c4)]);
-  resign(c4);
-  run("X4 no integrity/LSEnvironment/ATS --version", path.join(c4, "Contents", "MacOS", exeName), ["--version"]);
-  const vanillaApp = path.join(ROOT, "node_modules", "electron", "dist", "Electron.app");
-  if (fs.existsSync(vanillaApp)) {
-    const c2 = fresh("x2");
-    fs.copyFileSync(plist(vanillaApp), plist(c2));
-    spawnSync("plutil", ["-replace", "CFBundleExecutable", "-string", exeName, plist(c2)]);
-    resign(c2);
-    run("X2 vanilla Info.plist --version", path.join(c2, "Contents", "MacOS", exeName), ["--version"]);
-    show("X2 plist", "plutil", ["-p", plist(c2)]);
-    // X1: vanilla bundle + our asar put in place (no extra resources)
-    const c1 = path.join(os.tmpdir(), "x1.app");
-    fs.rmSync(c1, { recursive: true, force: true });
-    spawnSync("cp", ["-R", vanillaApp, c1]);
-    fs.copyFileSync(path.join(app, "Contents", "Resources", "app.asar"), path.join(c1, "Contents", "Resources", "app.asar"));
-    run("X1 vanilla bundle + our asar --version", path.join(c1, "Contents", "MacOS", "Electron"), ["--version"]);
+  const frameworks = path.join(app, "Contents", "Frameworks");
+  const nfc = "Érettségi felkészítő Helper.app".normalize("NFC");
+  const nfd = nfc.normalize("NFD");
+  console.error(`--- X6 exists NFC: ${fs.existsSync(path.join(frameworks, nfc))}, NFD: ${fs.existsSync(path.join(frameworks, nfd))}; on disk: ${fs.readdirSync(frameworks).filter((f) => f.includes("Helper.app")).map((f) => (f === nfc ? "NFC" : f === nfd ? "NFD" : "other"))}`);
+  const c5 = path.join(os.tmpdir(), "x5.app");
+  fs.rmSync(c5, { recursive: true, force: true });
+  spawnSync("cp", ["-R", app, c5]);
+  const fw5 = path.join(c5, "Contents", "Frameworks");
+  for (const h of fs.readdirSync(fw5).filter((f) => f.endsWith(".app"))) {
+    const suffix = h.slice(h.indexOf("Helper")); // "Helper.app", "Helper (GPU).app", ...
+    const newDir = `Erettsegi ${suffix}`;
+    const oldExe = fs.readdirSync(path.join(fw5, h, "Contents", "MacOS"))[0] ?? "";
+    const newExe = `Erettsegi ${suffix.replace(/\.app$/, "")}`;
+    fs.renameSync(path.join(fw5, h, "Contents", "MacOS", oldExe), path.join(fw5, h, "Contents", "MacOS", newExe));
+    spawnSync("plutil", ["-replace", "CFBundleExecutable", "-string", newExe, path.join(fw5, h, "Contents", "Info.plist")]);
+    spawnSync("plutil", ["-replace", "CFBundleName", "-string", newExe, path.join(fw5, h, "Contents", "Info.plist")]);
+    fs.renameSync(path.join(fw5, h), path.join(fw5, newDir));
   }
+  spawnSync("plutil", ["-replace", "CFBundleName", "-string", "Erettsegi", path.join(c5, "Contents", "Info.plist")]);
+  spawnSync("codesign", ["--force", "--deep", "-s", "-", c5]);
+  show("X5 frameworks", "ls", [fw5]);
+  run("X5 ASCII CFBundleName + helpers --version", path.join(c5, "Contents", "MacOS", path.basename(bin)), ["--version"]);
+  run("X5 ASCII smoke", path.join(c5, "Contents", "MacOS", path.basename(bin)), ["--smoke-test", `--data-dir=${path.join(os.tmpdir(), "erettsegi-x5", "data")}`, `--exchange-dir=${path.join(os.tmpdir(), "erettsegi-x5", "exchange")}`]);
+  // X7: only the main plist's CFBundleName rewritten to the NFD spelling (what is on disk)
+  const c7 = path.join(os.tmpdir(), "x7.app");
+  fs.rmSync(c7, { recursive: true, force: true });
+  spawnSync("cp", ["-R", app, c7]);
+  spawnSync("plutil", ["-replace", "CFBundleName", "-string", "Érettségi felkészítő".normalize("NFD"), path.join(c7, "Contents", "Info.plist")]);
+  spawnSync("codesign", ["--force", "--deep", "-s", "-", c7]);
+  run("X7 NFD CFBundleName --version", path.join(c7, "Contents", "MacOS", path.basename(bin)), ["--version"]);
   // the crash reporter writes its file a few seconds after the crash
   spawnSync("sleep", ["10"]);
   for (const reports of [path.join(os.homedir(), "Library", "Logs", "DiagnosticReports"), "/Library/Logs/DiagnosticReports"]) {

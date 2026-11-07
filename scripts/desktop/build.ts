@@ -57,15 +57,17 @@ function ensureElectronBinary(): string {
   return exe;
 }
 
+/** Copies a tree without its links (they are materialized afterwards – see materializeSymlinks). */
 function copyDir(from: string, to: string): void {
-  fs.cpSync(from, to, { recursive: true, verbatimSymlinks: true });
+  fs.cpSync(from, to, { recursive: true, filter: (src) => !fs.lstatSync(src).isSymbolicLink() });
 }
 
 /**
  * Next's standalone output links its externals (`.next-desktop/node_modules/better-sqlite3-<hash>` →
- * `../../node_modules/better-sqlite3`). Links survive badly in installers and on Windows, and an absolute
- * one would point back at the build machine, so every link inside the copy becomes a real copy of its
- * target (the target is mapped into the copy when it points at the original standalone folder).
+ * `../../node_modules/better-sqlite3`; a junction on Windows without symlink rights). Links survive badly
+ * in installers, so every link of the ORIGINAL tree becomes a real copy of its target inside the server
+ * copy – the target is taken from the copy when it lies inside the standalone folder, so it already
+ * carries the Electron build of the native module.
  */
 function materializeSymlinks(dir: string, original: string): number {
   let n = 0;
@@ -79,8 +81,9 @@ function materializeSymlinks(dir: string, original: string): number {
         console.error(`✖ a standalone csomag hivatkozása sehová sem mutat: ${p} → ${target}`);
         process.exit(1);
       }
-      fs.rmSync(p);
-      fs.cpSync(target, p, { recursive: true, verbatimSymlinks: true });
+      const dest = path.join(SERVER_DIR, path.relative(original, p));
+      fs.rmSync(dest, { recursive: true, force: true });
+      fs.cpSync(target, dest, { recursive: true, filter: (src) => !fs.lstatSync(src).isSymbolicLink() });
       n++;
     } else if (entry.isDirectory()) {
       n += materializeSymlinks(p, original);
@@ -178,7 +181,7 @@ async function main(): Promise<void> {
   assembleServer();
   nativeForElectron(platform, arch);
   // after the native swap, so the copies made of the links carry the Electron binary too
-  const links = materializeSymlinks(SERVER_DIR, path.join(ROOT, DIST_DIR, "standalone"));
+  const links = materializeSymlinks(path.join(ROOT, DIST_DIR, "standalone"), path.join(ROOT, DIST_DIR, "standalone"));
   console.log(`✓ ${links} hivatkozás másolattá alakítva a szerver mappában`);
   const bundled = await bundleDesktop(ROOT);
   console.log(`✓ Electron-csomag: ${bundled.map((f) => path.relative(ROOT, f)).join(", ")}`);
