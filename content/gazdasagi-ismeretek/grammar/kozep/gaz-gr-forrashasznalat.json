@@ -12,7 +12,7 @@
   "section": "grammar",
   "type": "lesson",
   "category": "forrashasznalat",
-  "summaryHu": "A projektmunkában minden átvett adatot, gondolatot és idézetet meg kell jelölni: a szövegben rövid hivatkozással, a végén forrásjegyzékkel. Az értékelés azt is nézi, hogy a saját gondolat elkülönül-e az átvettől, és hogy a munkanapló dokumentálja-e a folyamatot. A hivatkozás nélküli átvétel a „Forráshasználat, adatok” szempontban az 1–2 pontos sávba visz; a védésen és a szóbelin is érdemes megnevezni, honnan származik egy definíció vagy adat.",
+  "summaryHu": "A projektmunkában minden átvett adatot, gondolatot és idézetet meg kell jelölni: a szövegben rövid hivatkozással, a végén forrásjegyzékkel. Az értékelés azt is nézi, hogy a saját gondolat elkülönül-e az átvettől, és hogy a munkanapló dokumentálja-e a folyamatot. A hivatkozás nélküli átvétel a „Forráshasználat, adatok” szempontban legfeljebb az 1–2 pontos sávba visz, a hivatkozás nélkül bemásolt szöveg pedig a rubrika külön szabálya szerint 0 pontot ér; a védésen és a szóbelin is érdemes megnevezni, honnan származik egy definíció vagy adat.",
   "rules": [
     {
       "title": "Milyen forrás számít?",
@@ -31,7 +31,7 @@
       "emeltOnly": false,
       "examples": [
         {
-          "en": "A szövegben: „Adam Smith szerint a piac „láthatatlan kéz” módjára irányítja a gazdaságot (Gazdasági ismeretek, 2. téma, tanórai diasor, 13. dia).”",
+          "en": "A szövegben: „Adam Smith szerint a piac »láthatatlan kéz« módjára irányítja a gazdaságot (Gazdasági ismeretek, 2. téma, tanórai diasor, 13. dia).”",
           "hu": "Rövid hivatkozás: forrás + pontos hely."
         },
         {
@@ -65,7 +65,7 @@
       "emeltOnly": false,
       "examples": [
         {
-          "en": "„A tanórai anyag szerint a munkaerő különleges tényező: nem lehet felhalmozni, raktározni. Saját interjúm alapján a pékségben is ez a fő gond: a hiányzó péket nem lehet „raktárból” pótolni. Véleményem szerint ezért…”",
+          "en": "„A tanórai anyag szerint a munkaerő különleges tényező: nem lehet felhalmozni, raktározni. Saját interjúm alapján a pékségben is ez a fő gond: a hiányzó péket nem lehet »raktárból« pótolni. Véleményem szerint ezért…”",
           "hu": "Három réteg, három jelzés: átvett tény – saját adat – saját vélemény."
         }
       ]
@@ -87,12 +87,12 @@
     },
     {
       "title": "Mit büntet az értékelés?",
-      "explanation": "A projektmunka „Forráshasználat, adatok” szempontja (6 pont) sávjai: 6 – „Több megbízható forrás, pontos hivatkozással, az adatok helyesen értelmezve.”; 5 – „Források vannak, a hivatkozás helyenként hiányos.”; 3–4 – „Kevés vagy pontatlanul hivatkozott forrás.”; 1–2 – „Forrás alig van, vagy nem hivatkozott átvétel.”; 0 – „Nincs forráshasználat.” A védésen a bemutatás szempontja (14 pont) is kéri, hogy bemutasd „a használt módszereket és forrásokat”.",
+      "explanation": "A projektmunka „Forráshasználat, adatok” szempontja (6 pont) sávjai: 6 – „Több megbízható forrás, pontos hivatkozással, az adatok helyesen értelmezve.”; 5 – „Források vannak, a hivatkozás helyenként hiányos.”; 3–4 – „Kevés vagy pontatlanul hivatkozott forrás.”; 1–2 – „Forrás alig van, vagy nem hivatkozott átvétel.”; 0 – „Nincs forráshasználat.” A védésen a bemutatás szempontja (14 pont) is kéri, hogy bemutasd „a használt módszereket és forrásokat”. A rubrika külön szabálya ennél is szigorúbb: „Hivatkozás nélkül átvett szöveg esetén a forráshasználat 0 pont.” – a szó szerint, hivatkozás nélkül bemásolt szöveg tehát a teljes szempontot nullázza.",
       "emeltOnly": false,
       "examples": [
         {
           "en": "Egy bekezdés szó szerint bemásolva egy honlapról, hivatkozás nélkül",
-          "hu": "A „nem hivatkozott átvétel” az 1–2 pontos sávba visz, akkor is, ha a többi forrás rendben van."
+          "hu": "A „nem hivatkozott átvétel” legfeljebb az 1–2 pontos sávba visz, a hivatkozás nélkül bemásolt szöveg pedig a rubrika külön szabálya szerint 0 pont – akkor is, ha a többi forrás rendben van."
         }
       ]
     }
@@ -101,7 +101,7 @@
     {
       "wrong": "Egy honlap bekezdését szó szerint, idézőjel és hivatkozás nélkül bemásolja.",
       "right": "Saját szavakkal összefoglalja, és hivatkozik a forrásra; ha a megfogalmazás fontos, idézőjelben, hivatkozással idézi.",
-      "why": "A rubrikában a „nem hivatkozott átvétel” az 1–2 pontos sáv."
+      "why": "A rubrikában a „nem hivatkozott átvétel” az 1–2 pontos sáv; a rubrika külön szabálya szerint pedig a hivatkozás nélkül átvett (bemásolt) szöveg esetén a forráshasználat 0 pont."
     },
     {
       "wrong": "„Forrás: internet”",
@@ -186,7 +186,7 @@
       ],
       "answer": "C",
       "category": "forrashasznalat",
-      "explanation": "Helyes: C. Átvett állítás (és adat), de nem tudjuk, melyik tanulmányból – a „nem hivatkozott átvétel” a rubrika 1–2 pontos sávjába tartozik.",
+      "explanation": "Helyes: C. Átvett állítás (és adat), de nem tudjuk, melyik tanulmányból – a „nem hivatkozott átvétel” a rubrika 1–2 pontos sávjába tartozik. Ha a szöveget szó szerint, hivatkozás nélkül másolja át, a rubrika külön szabálya szerint a szempont 0 pont.",
       "wrongOptions": {
         "A": "Ez jelölt saját vélemény – nem kell hozzá külső forrás.",
         "B": "A saját felmérés módszere, mintája és időpontja meg van adva.",
@@ -217,7 +217,7 @@
       ],
       "answer": "D",
       "category": "forrashasznalat",
-      "explanation": "Helyes: D. A rubrika 1–2 pontos sávja: „Forrás alig van, vagy nem hivatkozott átvétel.” (0 pont: „Nincs forráshasználat.”)",
+      "explanation": "Helyes: D. A rubrika 1–2 pontos sávja: „Forrás alig van, vagy nem hivatkozott átvétel.” (0 pont: „Nincs forráshasználat.”; a rubrika külön szabálya szerint a hivatkozás nélkül átvett szöveg is 0 pont.)",
       "wrongOptions": {
         "A": "A 6 pont: „Több megbízható forrás, pontos hivatkozással, az adatok helyesen értelmezve.”",
         "B": "Az 5 pont: „Források vannak, a hivatkozás helyenként hiányos.”",

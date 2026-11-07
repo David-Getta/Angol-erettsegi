@@ -6,7 +6,7 @@
   "level": "kozep",
   "source": "generated",
   "topic": "nyelvtan",
-  "title": "Ok–okozati összefüggések – mert és ezért",
+  "title": "Ok-okozati összefüggések – mert és ezért",
   "createdAt": "2026-11-06",
   "tags": [],
   "section": "grammar",
@@ -16,7 +16,7 @@
   "rules": [
     {
       "title": "Szűkösség → választás → alternatív költség",
-      "explanation": "Az emberi szükségletek korlátlanok, az erőforrások (munka, tőke, nyersanyag, idő) szűkösek. Ezért választani kell, mit, hogyan, kinek termelünk – ez a gazdaság alapproblémája. Mivel választunk, egy lehetőségről le kell mondanunk: ennek értéke az alternatív költség. (Mankiw 1. elve: választás – nincs ingyen ebéd; 2. elve: alternatív költség.)",
+      "explanation": "Az emberi szükségletek korlátlanok, az erőforrások (munka, tőke, nyersanyag, idő) szűkösek. Ezért választani kell, mit, hogyan, kinek termelünk – ez a gazdaság lényege; az alapprobléma maga a szűkösség, a három kérdés pedig a gazdaság alapkérdései. Mivel választunk, egy lehetőségről le kell mondanunk: ennek értéke az alternatív költség. (Mankiw 1. elve: választás – nincs ingyen ebéd; 2. elve: alternatív költség.)",
       "emeltOnly": false,
       "examples": [
         {
@@ -115,7 +115,7 @@
     {
       "wrong": "A munkamegosztás csökkenti a termelékenységet, mert mindenki csak egy műveletet végez.",
       "right": "A munkamegosztás növeli a termelékenységet (tűgyár: néhány tű helyett több ezer tű/nap).",
-      "why": "Adam Smith tűgyár-példája éppen azt mutatja, hogy a felosztott munka sokszorosára növeli a termelést."
+      "why": "Adam Smith tűgyárpéldája éppen azt mutatja, hogy a felosztott munka sokszorosára növeli a termelést."
     },
     {
       "wrong": "A rendszerváltás után azonnal nőtt a termelés és csökkent a munkanélküliség.",
@@ -202,10 +202,21 @@
       "prompt": "Mankiw hányadik alapelve mondja ki, hogy ha túl sok pénzt bocsátanak ki, nőnek az árak?",
       "answer": [
         "9",
+        "a 9",
         "kilencedik",
         "a kilencedik",
         "9. elv",
-        "9. alapelv"
+        "a 9. elv",
+        "9. elve",
+        "9. alapelv",
+        "a 9. alapelv",
+        "9. alapelve",
+        "a 9. alapelve",
+        "kilencedik elv",
+        "a kilencedik elv",
+        "kilencedik alapelv",
+        "a kilencedik alapelv",
+        "kilencedik alapelve"
       ],
       "explanation": "Helyes: a 9. elv. Pénzkibocsátás → infláció: ha túl sok pénzt bocsátanak ki, nőnek az árak; a 10. elv az infláció és a munkanélküliség rövid távú trade-offja.",
       "category": "ok-okozat"
@@ -280,7 +291,10 @@
         "új szükségletek",
         "új szükséglet",
         "újabb szükségletek",
-        "újabb szükséglet"
+        "újabb szükséglet",
+        "újak",
+        "új igények",
+        "újabb igények"
       ],
       "explanation": "Helyes: új szükségletek. A körfolyamat azért kör, mert a szükséglet kielégítése után új szükségletek keletkeznek, amelyek újra elindítják a termelést.",
       "category": "ok-okozat"

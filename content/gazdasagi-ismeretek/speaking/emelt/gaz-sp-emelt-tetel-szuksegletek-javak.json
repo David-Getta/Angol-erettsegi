@@ -1,9 +1,9 @@
 {
   "schemaVersion": 1,
-  "id": "gaz-sp-kozep-tetel-szuksegletek-javak",
+  "id": "gaz-sp-emelt-tetel-szuksegletek-javak",
   "subject": "gazdasagi-ismeretek",
   "revision": 1,
-  "level": "kozep",
+  "level": "emelt",
   "source": "generated",
   "topic": "alapfogalmak",
   "title": "A szükségletek és a javak",
@@ -14,7 +14,7 @@
   "partNumber": 1,
   "instructionsHu": "Fejtse ki a tételt! Határozza meg a szükséglet fogalmát, csoportosítsa a szükségleteket, mutassa be a javakat és csoportjaikat, végül kapcsolja össze a témát a szűkösség problémájával és a gazdaság három alapkérdésével! A definíciókat pontosan adja meg, és minden csoporthoz mondjon példát. Felkészülési idő: 30 perc.",
   "prompts": [
-    "Definiáld a szükséglet fogalmát! Csoportosítsd a szükségleteket három szempont szerint (fontossági sorrend – Maslow-piramis; létfenntartás: lét-, kulturális és luxusszükséglet; a kielégítés módja: egyéni és közösségi; kielégíthetőség: effektív és látens)!",
+    "Definiáld a szükséglet fogalmát! Csoportosítsd a szükségleteket három szempont szerint (fontosság a jövedelmek / létfenntartás szerint: lét-, kulturális és luxusszükséglet; a kielégítés módja: egyéni és közösségi; kielégíthetőség: effektív és látens), és mutasd be a szükségletek fontossági sorrendjét is (szükségletpiramis – Maslow-piramis)!",
     "Mi a javak fogalma? Mi a különbség a szabad és a gazdasági javak között?",
     "Mi különbözteti meg a magánjavakat, a közjavakat és a vegyes javakat?",
     "Mit jelent a szűkösség problémája? Milyen három alapkérdésre kell választ adni?"
@@ -54,7 +54,7 @@
     "Elérhetőség szerint magánjavak (másokat kizárhatnak belőlük), közjavak (fogyasztásukból senkit nem lehet kizárni) és vegyes javak (pl. autópálya).",
     "A szükségletek korlátlanok, az erőforrások szűkösek, ezért minden társadalomnak meg kell válaszolnia: mit, hogyan és kinek termeljünk?"
   ],
-  "speakingSeconds": 600,
+  "speakingSeconds": 720,
   "prepSeconds": 1800,
   "sampleAnswer": {
     "turns": [
@@ -73,7 +73,7 @@
     ],
     "notes": [
       "A két definíció szó szerint a diasor arany dobozaiból való, ezért a tartalmi pontosság teljes.",
-      "Mind a négy csoportosítási szempontot példával mutatja be, és a végén logikusan eljut a szűkösséghez és a három alapkérdéshez – ez az összefüggések feltárása.",
+      "A diasor három csoportosítási szempontját (létfenntartás / jövedelem, kielégítés módja, kielégíthetőség) és a fontossági sorrendet (szükségletpiramis) is példával mutatja be, és a végén logikusan eljut a szűkösséghez és a három alapkérdéshez – ez az összefüggések feltárása.",
       "A kiegészítő kérdésre a jövedelem és a szükségletek kapcsolatát a tananyag mondatával indokolja."
     ]
   }

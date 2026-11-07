@@ -82,7 +82,7 @@
     {
       "title": "Határelemzés kontra átlagelemzés a pékség példáján",
       "explanation": "Átlagelemzés szerint 400 db-nál az átlagköltség (128,8 Ft) kisebb az árnál (130 Ft), ezért „megéri többet sütni”. Határelemzés szerint az utolsó 100 db darabja 135 Ft-ba kerül, ami több, mint 130 Ft, ezért csökkenti a profitot: az utolsó 100 db 13 000 Ft többletbevételt (100 × 130) és 13 500 Ft többletköltséget hoz, a profit 500 Ft-tal csökken (+1 000 Ft → +500 Ft). 300 db a jobb döntés. A döntési szabály: addig érdemes növelni a termelést, amíg az utolsó egységből származó többletbevétel (itt az ár) ≥ határköltség.",
-      "emeltOnly": true,
+      "emeltOnly": false,
       "examples": [
         {
           "en": "300 → 400 db: többletbevétel 13 000 Ft, többletköltség 13 500 Ft, különbség −500 Ft",
@@ -172,7 +172,9 @@
         "126,7 Ft/db",
         "126.7 Ft/db",
         "≈126,7",
-        "≈ 126,7"
+        "≈ 126,7",
+        "≈ 126,7 Ft",
+        "≈ 126,7 Ft/db"
       ],
       "explanation": "Helyes: ≈ 126,7 Ft/db. Átlagköltség = összköltség / mennyiség = 38 000 : 300 = 126,666… ≈ 126,7 Ft/db.",
       "category": "szamitas"
@@ -245,8 +247,11 @@
         "100",
         "100 kosár",
         "100 kosarat",
+        "100 db",
+        "100 darab",
         "száz",
-        "száz kosár"
+        "száz kosár",
+        "száz kosarat"
       ],
       "explanation": "Helyes: 100 kosár. 275 000 : 2 750 = 100 – a nomináljövedelem 10%-kal nőtt, a reáljövedelem nem változott, ugyanannyit tudsz vásárolni.",
       "category": "szamitas"

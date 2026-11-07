@@ -46,7 +46,7 @@
     },
     {
       "title": "Termelési tényezők és jövedelmeik – nem „alapanyagok”",
-      "explanation": "„Alapanyagok, ami a gyártáshoz kell” helyett: termelési tényezők – „erőforrások, amelyek hozzájárulnak a gazdasági javak előállításához, tartósan rendelkezésre állnak, és nem szűnnek meg a termelési folyamat során.” Az alapanyag (nyersanyag) a termelésben felhasználódik, ezért a javak között a termelési eszközökhöz tartozik. A négy tényező és jövedelme: L – munka: munkabér; A – természeti tényezők: bérleti díj (járadék); K – tőke: kamat; E – vállalkozó: profit (maradványjövedelem). A tőke kétféle: reáltőke (gépek, épületek, berendezések) és pénz- és értékpapírtőke (hitelek, kötvények, részvények). A háztartás jövedelme főleg munkabér, de lehet bérleti díj, járadék, osztalék is.",
+      "explanation": "„Alapanyagok, ami a gyártáshoz kell” helyett: termelési tényezők – „erőforrások, amelyek hozzájárulnak a gazdasági javak előállításához, tartósan rendelkezésre állnak, és nem szűnnek meg a termelési folyamat során.” Az alapanyag (nyersanyag) a javak csoportosításában termelési eszköz – más javak előállításához szükséges (a dia példája: gépek, nyersanyagok). A négy tényező és jövedelme: L – munka: munkabér; A – természeti tényezők: bérleti díj (járadék); K – tőke: kamat; E – vállalkozó: profit (maradványjövedelem). A tőke kétféle: reáltőke (gépek, épületek, berendezések) és pénz- és értékpapírtőke (hitelek, kötvények, részvények). A háztartás jövedelme főleg munkabér, de lehet bérleti díj, járadék, osztalék is.",
       "emeltOnly": false,
       "examples": [
         {
@@ -95,12 +95,12 @@
     {
       "wrong": "„Infláció van, mert minden drága lett.”",
       "right": "„Infláció: emelkednek az árak, romlik a pénz értéke; Mankiw 9. elve szerint ha túl sok pénzt bocsátanak ki, nőnek az árak.”",
-      "why": "A „drágaság” köznyelvi; a szakszó mellé az ok–okozatot is mondd ki."
+      "why": "A „drágaság” köznyelvi; a szakszó mellé az ok-okozatot is mondd ki."
     },
     {
       "wrong": "„A vállalatnak alapanyagok kellenek: munkás, gép, föld.”",
       "right": "„A termeléshez termelési tényezők kellenek: munka, természeti tényezők, tőke és vállalkozó.”",
-      "why": "A termelési tényező tartósan rendelkezésre áll és nem szűnik meg a termelés során – az alapanyag igen, ezért az nem tényező."
+      "why": "A „munkás, gép, föld” nem alapanyag, hanem termelési tényező (munka, tőke, természeti tényező): tartósan rendelkezésre állnak, és nem szűnnek meg a termelés során. A természeti nyersanyagok (kőolaj, szén, ércek) a dia szerint a természeti tényezők (A) közé tartoznak; a javak csoportosításában a nyersanyag termelési eszköz."
     },
     {
       "wrong": "„Az egyetem ára a kieső fizetés.”",
@@ -119,7 +119,7 @@
     }
   ],
   "examTips": [
-    "Középszintű szóbeli: a „Szaknyelv alkalmazása” szempont 12 pont (emelten 5) – minden köznyelvi körülírás helyett mondd a definiált fogalmat.",
+    "Emelt szóbeli: a „Szaknyelv alkalmazása” szempont 5 pont – minden köznyelvi körülírás helyett mondd a definiált fogalmat. Az írásbeli kifejtendő feladatban is a pontosan használt szakszó hoz pontot.",
     "Emelt írásbeli kifejtendő feladat: „Szaknyelv alkalmazása” 4 pont; a 2 pontos sáv szó szerint: „Köznyelvi megfogalmazás a szakkifejezések helyett.”",
     "Projektmunka: a „Nyelvhelyesség, szaknyelv, forma” szempont legjobb sávja „pontos szaknyelv” – a fejezet megírása után keresd ki a „pénz”, „dolog”, „drága” szavakat, és cseréld szakszóra."
   ],
@@ -147,8 +147,10 @@
         "profit",
         "a profit",
         "maradványjövedelem",
+        "a maradványjövedelem",
         "profit (maradványjövedelem)",
-        "nyereség"
+        "nyereség",
+        "a nyereség"
       ],
       "category": "szaknyelv",
       "explanation": "Helyes: profit (maradványjövedelem). A dia szerint a vállalkozó (E) jövedelme a profit, más néven maradványjövedelem.",
@@ -234,10 +236,15 @@
       "prompt": "Mi a természeti tényezők (A) jövedelmének szakszava?",
       "answer": [
         "bérleti díj",
+        "a bérleti díj",
         "járadék",
+        "a járadék",
         "bérleti díj (járadék)",
+        "járadék (bérleti díj)",
         "földjáradék",
-        "bérleti díj, járadék"
+        "a földjáradék",
+        "bérleti díj, járadék",
+        "bérlet"
       ],
       "category": "szaknyelv",
       "explanation": "Helyes: bérleti díj (járadék). A dia: természeti tényezők – jövedelme: bérleti díj (járadék); a jövedelem forrásai között földjáradékként szerepel.",
