@@ -33,6 +33,11 @@ coverage/
 .next-e2e/
 .next-build/
 .next-shot/
+
+# desktop app build output (scripts/desktop/build.ts)
+.next-desktop/
+desktop/dist/
+desktop/out/
 !data/lessons/
 data/lessons/*
 !data/lessons/README.md

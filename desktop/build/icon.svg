@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#3a8a83"/>
+      <stop offset="1" stop-color="#245a56"/>
+    </linearGradient>
+  </defs>
+  <rect width="512" height="512" rx="112" fill="url(#bg)"/>
+  <!-- open book -->
+  <path d="M96 168c40-18 88-18 160 10v206c-72-28-120-28-160-10z" fill="#f6f5f1" opacity="0.96"/>
+  <path d="M416 168c-40-18-88-18-160 10v206c72-28 120-28 160-10z" fill="#e9e6dc" opacity="0.96"/>
+  <path d="M256 178v206" stroke="#245a56" stroke-width="6" stroke-linecap="round"/>
+  <!-- lines -->
+  <g stroke="#2f6f6a" stroke-width="10" stroke-linecap="round" opacity="0.55">
+    <path d="M128 220c28-8 56-8 100 6"/>
+    <path d="M128 262c28-8 56-8 100 6"/>
+    <path d="M128 304c28-8 56-8 100 6"/>
+    <path d="M284 226c44-14 72-14 100-6"/>
+    <path d="M284 268c44-14 72-14 100-6"/>
+    <path d="M284 310c44-14 72-14 100-6"/>
+  </g>
+  <!-- check mark badge -->
+  <circle cx="392" cy="392" r="72" fill="#f0b429"/>
+  <path d="M356 392l26 26 48-56" fill="none" stroke="#1d1a14" stroke-width="18" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

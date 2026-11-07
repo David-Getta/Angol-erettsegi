@@ -169,6 +169,9 @@ type RecognitionCtor = new () => {
 
 export function recognitionCtor(): RecognitionCtor | null {
   if (typeof window === "undefined") return null;
+  // Electron exposes the constructor but has no speech service behind it (every start ends in a
+  // "network" error), so the desktop app counts as unsupported and the UI points to the browser.
+  if (window.desktop) return null;
   const w = window as unknown as { SpeechRecognition?: RecognitionCtor; webkitSpeechRecognition?: RecognitionCtor };
   return w.SpeechRecognition ?? w.webkitSpeechRecognition ?? null;
 }

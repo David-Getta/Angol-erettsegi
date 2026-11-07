@@ -88,6 +88,17 @@ A fázisok után az app mindig futtatható; ami kész, az használható.
 - [x] Nem nyelvi tárgyak: tizedesvessző = pont, szóköz a számok körül nem számít, `caseSensitive` itemek (Aa, CO, német főnevek), jelsor a szerkesztőben, a szóbeli tétel forrásai megjelennek
 - [x] Gazdasági ismeretek (11. tárgy): projektmunka 40 + szóbeli 110 (tétel 70 + védés 40) középszinten, emelt feladatsor 100 + szóbeli 50; a tartalom a tanár diasoraiból készül leckénként (1. téma és a 2. téma 01–02 fejezete), a további leckék a diasorok érkezésével bővítik a bankot
 
+## 15. Asztali alkalmazás
+- [x] Electron-héj (`desktop/main.ts`, `preload.ts`, `shared.ts`): a Next standalone szerver gyerekfolyamatként (`ELECTRON_RUN_AS_NODE`, szabad 127.0.0.1-es port), várakozás a `/api/health`-re, splash („Az app indítása…” / „A feladatbank betöltése…”), magyar menü, `window.desktop` híd típusos szerződéssel
+- [x] Induláskori seed a szerverben (`instrumentation.ts` → `lib/startup.ts`, `APP_SEED_ON_START=1`): mappák, automatikus mentés, a csomagolt feladatbank betöltése a felhasználó adatbázisába a haladás megtartásával; `app/api/health` életjel
+- [x] Felhasználói mappák a programon kívül (adat: `%APPDATA%\erettsegi-felkeszito` / `~/Library/Application Support/erettsegi-felkeszito` / `~/.config/erettsegi-felkeszito`; beadás-mappa: `Dokumentumok/Érettségi felkészítő/exchange`, átállítható pl. a projekt `exchange/` mappájára), megnyitás a Beállításokból és a menüből
+- [x] Automatikus frissítés `electron-updater`-rel a GitHub Releases-ből (induláskor ~4 s után és hatóránként): arany sáv „Új verzió érhető el” – Mi változik? / Később / Frissítés most; Windows és Linux letölt, csendben telepít, újraindul; macOS → Letöltés (Releases oldal); kézi keresés a menüből, a fejléc ⭳ ikonjával és a Beállításokból; frissítési kulcs privát repóhoz (`safeStorage`)
+- [x] Beállítások → „Asztali alkalmazás” kártya és a fejléc ikonja (`components/desktop/`): verzió, frissítés, mappák, másik beadás-mappa, Megnyitás böngészőben (a beszédfelismeréshez – az Electronban nincs); a szóbeli oldal tippje, ha a felismerés nem elérhető
+- [x] Csomagolás: `electron-builder.yml` (NSIS per-user segített telepítő magyarul, dmg arm64 + x64, AppImage; `extraResources` = szerver, content, config, drizzle, parancsok), `scripts/desktop/{bundle,build,smoke,release-notes}.ts`, az Electron-ABI better-sqlite3 prebuilt letöltése fordítás helyett
+- [x] Kiadási folyamat: `CHANGELOG.md` + `scripts/release.ts` (`npm run release -- X.Y.Z --commit --tag`), `.github/workflows/release.yml` (v* címke vagy kézi indítás → három OS-en build + füstteszt → Releases a `latest*.yml`-ekkel, a leírás a CHANGELOG-ból), `ci.yml` (check + desktop:bundle minden pushnál)
+- [x] Tesztek és dokumentáció: `tests/desktop.test.ts` (Electron-verzió 39–42, IPC-lefedettség, csomagolás- és workflow-konzisztencia, changelog), `tests/startup.test.ts`; `TELEPITES.md` laikus útmutató, `desktop/README.md` fejlesztői jegyzet
+- Ellenőrzés: `npm run desktop:build && npm run desktop:smoke` lefut; az első asztali kiadás: `npm run release -- 1.0.0 --commit --tag`, majd `git push origin v1.0.0`
+
 ---
 
 ## Döntések
@@ -135,3 +146,6 @@ A fázisok után az app mindig futtatható; ami kész, az használható.
 | D34 | Diktáláshoz csak a nem lefoglalt hallási feladatok leiratai használhatók | a próbaérettségi és a szintfelmérő hanganyaga maradjon ismeretlen |
 | D35 | Válaszellenőrzéskor a betűvel írt számok és az ezres elválasztók normalizálódnak (`normalizeForCheck`); a validátor és a szókártya-kulcsok a korábbi normalizálást használják | így nem kell minden számalakot felsorolni, a meglévő tartalom és kártyák pedig nem változnak |
 | D36 | Automatikus mentés csak akkor, ha van haladási adat, legfeljebb 3 naponta, a legutóbbi 10 automatikus másolat marad; a kézi mentéseket sosem törli | egyfelhasználós lokális app: az adatvesztés a legnagyobb kockázat |
+| D37 | **Electron 42** (a major 39–42 között rögzítve) | a better-sqlite3 12.x csak az Electron 39–42-höz (ABI 140–146) ad előre fordított binárist; a build a prebuiltet tölti le fordítás helyett, a tartományt teszt őrzi (`tests/desktop.test.ts`) |
+| D38 | A szerver **gyerekfolyamat** (`ELECTRON_RUN_AS_NODE`) a Next standalone kimenetből; a héj csak a `/api/health`-re vár | az Electron-folyamatban nincs Next-kód: a szerver ugyanaz, mint böngészőben, a héj és a szerver egymástól függetlenül fejleszthető |
+| D39 | Frissítés a GitHub Releases-ből `electron-updater`-rel: Windows/Linux az appon belül telepít, macOS aláíratlan → a felhasználó tölti le | nincs Apple Developer aláírás; Windowson és Linuxon az aláíratlan csomag is cserélhető az appon belül |

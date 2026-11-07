@@ -5,6 +5,7 @@ import { listBackups } from "@/lib/backup";
 import { t } from "@/lib/i18n/hu";
 import { Card, PageHeader } from "@/components/ui";
 import { SettingsForm } from "./SettingsForm";
+import { DesktopSettings } from "@/components/desktop/DesktopSettings";
 
 export const metadata: Metadata = { title: t.settings.title };
 
@@ -16,6 +17,9 @@ export default function SettingsPage() {
     <div>
       <PageHeader title={t.settings.title} />
       <SettingsForm settings={s} totals={totals} backups={backups} language={examConfig.subject().language} speechLang={examConfig.subject().speechLang} languageName={examConfig.subject().languageName ?? "angol"} />
+      <div className="mt-5">
+        <DesktopSettings />
+      </div>
       <Card className="mt-6" title={t.settings.provenance}>
         <p className="mb-4 text-sm text-muted">{t.settings.provenanceHint}</p>
         <div className="space-y-4">

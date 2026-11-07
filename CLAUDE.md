@@ -34,6 +34,11 @@ a feladatbankot fájlokba generálja (`content/`), az írás- és szóbeli javí
 | `npm run typecheck` / `npm test` / `npm run test:e2e` | TypeScript, Vitest, Playwright |
 | `npm run check` | typecheck + teszt + tartalomvalidálás együtt |
 | `npm run db:generate` | új migráció a `lib/db/schema.ts` változása után |
+| `npm run desktop:dev` | Electron-héj a futó `npm run dev` szerver ellen (http://localhost:3000; előbb az `npm run dev`) |
+| `npm run desktop:build` | asztali app kicsomagolt mappába (`desktop/out/<os>-unpacked`): standalone `next build`, szerver, natív modul, héj, `electron-builder --dir` |
+| `npm run desktop:dist` | ugyanaz, de telepítő az aktuális OS-re (`desktop/out/`) |
+| `npm run desktop:smoke` | a kész kicsomagolt app füsttesztje (`--smoke-test`, ideiglenes adatmappa, képernyőkép, exit 0) |
+| `npm run release -- X.Y.Z --commit --tag` | verzióemelés, CHANGELOG „Kiadatlan” → „X.Y.Z – dátum”, commit, címke; utána `git push origin vX.Y.Z` indítja a kiadást |
 
 ## Claude Code parancsok (`.claude/commands/`)
 
@@ -57,7 +62,9 @@ Ha parancsot módosítasz, a `config/commands.json`-t és a `.claude/commands/<n
 app/                 oldalak (magyar URL-ek: /olvasas, /nyelvhelyesseg, /hallas, /iras, /szobeli, /szokincs, /hibanaplo,
                      /szabalytar, /utmutatok, /kifejezesek, /temakorok, /vizsga, /probaerettsegi, …)
   actions*.ts        server actionök (minden írás az adatbázisba ezeken megy át)
+  api/health/        életjel-végpont – az Electron-héj erre vár induláskor
 components/          React komponensek (exercise/ = közös feladatlejátszó)
+  desktop/           az asztali app UI-ja (bridge.ts hookok, UpdateBar arany sáv, TopbarUpdateButton, DesktopSettings kártya) – böngészőben null
 lib/
   content/           tartalomsémák (schema.ts), betöltés, validátor, seedelés, szöveg-segédfüggvények
   db/                Drizzle séma és kapcsolat
@@ -70,7 +77,8 @@ lib/
   targeted.ts        célzott gyakorlás, hibák újrapróbálása
   phrases.ts, topics.ts   Kifejezéstár, témakör-oldalak
   mock.ts, plan.ts   próbaérettségi / szintfelmérő, Mai terv
-  i18n/hu.ts         MINDEN magyar UI-szöveg
+  i18n/hu.ts         MINDEN magyar UI-szöveg (az asztali app szövegei is: t.desktop)
+  startup.ts         induláskori mappák, automatikus mentés, seed (APP_SEED_ON_START=1; az instrumentation.ts hívja)
 config/
   exam/              hivatalos vizsgaadatok (szerkezet, pontok, rubrikák, témakörök, feladattípusok, jegyhatárok)
   app.json           app-beállítások (javulási küszöb, készletjelző, becslés)
@@ -78,8 +86,16 @@ config/
 content/<rész>/<szint>/<id>.json   a tartalombank (rész: reading, language-use, listening, writing, speaking, vocabulary, grammar, guide)
 exchange/inbox|outbox|archive|vocab   javítási csere-mappa (git-ignorált)
 data/app.db, data/official/, data/backups/   felhasználói adatok (git-ignorált)
-scripts/             CLI-szkriptek (setup, seed, validate, import)
+scripts/             CLI-szkriptek (setup, seed, validate, import); release.ts = verzióemelés + CHANGELOG + commit + címke
+  desktop/           bundle.ts, build.ts, smoke.ts, release-notes.ts (asztali build, füstteszt, a kiadás szövege a CHANGELOG-ból)
 tests/ (Vitest), e2e/ (Playwright)
+desktop/             Electron-héj: main.ts (főfolyamat), preload.ts (window.desktop), shared.ts (IPC-szerződés), build/ (ikon),
+                     README.md (fejlesztői jegyzet); dist/ (main.cjs, preload.cjs, server/) és out/ (telepítők) git-ignorált build-kimenet
+electron-builder.yml csomagolás (appId, fájlok, extraResources, NSIS / dmg / AppImage, publish = GitHub Releases)
+instrumentation.ts   a Next-szerver indulásakor fut: APP_SEED_ON_START=1 esetén lib/startup.ts
+.github/workflows/   ci.yml (check + desktop:bundle minden pushnál), release.yml (telepítők v* címkére vagy kézi indításra → Releases)
+CHANGELOG.md         változásnapló – a „Kiadatlan” szakaszból lesz a kiadás szövege
+TELEPITES.md         laikus telepítési útmutató az asztali apphoz
 ```
 
 ## Konvenciók
@@ -90,6 +106,45 @@ tests/ (Vitest), e2e/ (Playwright)
 - Sémaváltozás: `lib/db/schema.ts` → `npm run db:generate` → a migráció commitolandó.
 - Kliens komponens nem importálhat Node-modult (`lib/db`, `lib/exam/config`, `fs`); a konfigurációt a szerver komponens adja át propként.
 - Minden fázis végén: `npm run check`, `npm run build`, commit.
+
+## Asztali alkalmazás (Electron)
+
+Az app telepíthető programként is fut (Windows NSIS-telepítő, macOS dmg, Linux AppImage), önfrissítéssel a GitHub Releases-ből
+(`github.com/David-Getta/Angol-erettsegi`). A héj (`desktop/main.ts`) a Next standalone szervert (`desktop/dist/server`; `next build`
+`DESKTOP_BUILD=1`-gyel, `output: "standalone"` csak ekkor) **gyerekfolyamatként** indítja `ELECTRON_RUN_AS_NODE`-dal egy szabad 127.0.0.1-es
+porton, `APP_SEED_ON_START=1`-gyel (→ `instrumentation.ts` → `lib/startup.ts`: mappák, automatikus mentés, seed az első kérés előtt), megvárja
+a `/api/health`-et, és akkor nyitja az ablakot (addig splash); magyar menü, `electron-updater`, IPC-kezelők. A szerver a mappáit a `lib/paths.ts`
+meglévő env-változóin kapja (`APP_ROOT`, `APP_CONFIG_DIR`, `APP_CONTENT_DIR`, `APP_DATA_DIR`, `APP_EXCHANGE_DIR`): adat Windowson
+`%APPDATA%\erettsegi-felkeszito\data` (+ `backups\`, `logs\`), macOS-en `~/Library/Application Support/erettsegi-felkeszito/`, Linuxon
+`~/.config/erettsegi-felkeszito/`; beadás-mappa alapból `Dokumentumok/Érettségi felkészítő/exchange`, a Beállításokban átállítható (pl. a projekt
+`exchange/` mappájára, hogy a `/javitas` lássa; a szerver újraindul). `desktop/preload.ts` → `window.desktop` (`contextBridge`); a típusos
+szerződés (`UpdateState`, `DesktopInfo`, `DesktopApi`, IPC-csatornanevek) a `desktop/shared.ts`-ben. UI: `components/desktop/` (`bridge.ts`
+hookok, `UpdateBar.tsx` arany sáv, `TopbarUpdateButton.tsx` ⭳ ikon, `DesktopSettings.tsx` kártya a Beállításokban: verzió, frissítés, mappák,
+másik beadás-mappa, frissítési kulcs, „Megnyitás böngészőben” – a beszédfelismerés csak böngészőben megy, az Electronban nincs).
+Csomagolás: `electron-builder.yml` (appId `hu.davidgetta.erettsegi-felkeszito`; az asar-ban csak `main.cjs`, `preload.cjs`, `package.json`;
+`extraResources` = server, content, config, drizzle, `.claude/commands`, ikon; NSIS per-user segített telepítő magyarul; mac aláíratlan;
+Linux AppImage). A Claude Code parancsok továbbra is a projektmappában futnak; az új tartalom app-frissítésként ér a tanulóhoz.
+
+**Parancsok:** `npm run desktop:dev` (héj a futó `npm run dev` ellen), `npm run desktop:build` (kicsomagolt mappa `desktop/out/<os>-unpacked`:
+standalone build `.next-desktop`-ba, `desktop/dist/server` összeállítása, Electron-ABI better-sqlite3 prebuilt letöltése, esbuild, `electron-builder --dir`),
+`npm run desktop:dist` (telepítő az aktuális OS-re `desktop/out/`-ba), `npm run desktop:smoke` (a kész app `--smoke-test`-tel ideiglenes adatmappában,
+képernyőkép, exit 0). Telepítőt csak a cél-OS-en lehet építeni – a GitHub Actions mindhármat megépíti.
+
+**Kiadás:** a változások a `CHANGELOG.md` „## Kiadatlan” szakaszába → `npm run release -- X.Y.Z --commit --tag` (package.json verzió, a szakaszból
+„## X.Y.Z – dátum”, commit „Kiadás: vX.Y.Z”, címke) → `git push origin vX.Y.Z` → `.github/workflows/release.yml` (`npm run check`, három OS-en
+`desktop:dist` + füstteszt, Releases-feltöltés a `latest*.yml`-ekkel – ezekből veszi észre a telepített app az új verziót; a kiadás szövege
+`npm run release:notes -- X.Y.Z --out file.md`). Kézi indítás: Actions → release → Run workflow → version. `ci.yml` minden pushnál: `npm run check` +
+`npm run desktop:bundle`. Frissítés: induláskor (~4 s) és hatóránként; Windows/Linux az appon belül letölt, csendben telepít, újraindul;
+macOS-en (nincs Apple Developer aláírás) a gomb a Releases oldalt nyitja meg. Az első asztali kiadás az 1.0.0.
+
+**Szabályok:**
+- Az Electron major **39–42** között marad (a better-sqlite3 12.x csak ezekhez ad előre fordított binárist, ABI 140–146); `tests/desktop.test.ts` őrzi.
+- Az Electron-folyamat **soha nem importál** Next-et vagy `lib/db`-t – a szerverrel csak http-n beszél.
+- Minden asztali UI-szöveg (menü, splash is) a `lib/i18n/hu.ts`-ben, `t.desktop` alatt.
+- Az oldal az asztali appot csak a `window.desktop`-on ismeri fel (böngészőben `undefined`), ezért minden asztali komponens ott `null`-t ad.
+- A héj sem hív semmilyen AI API-t.
+- Verzió = a `package.json` verziója (egyetlen forrás), csak az `npm run release` emeli.
+- A CHANGELOG „Kiadatlan” szakasza valódi változásokat írjon le: ebből lesz a kiadás szövege, amit a tanuló a frissítés előtt olvas („Mi változik?”).
 
 ## Tartalomséma (röviden – a teljes séma: `lib/content/schema.ts`)
 

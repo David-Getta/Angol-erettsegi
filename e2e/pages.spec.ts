@@ -49,3 +49,11 @@ for (const route of ROUTES) {
     expect(errors, errors.join("\n")).toEqual([]);
   });
 }
+
+/** The desktop shell waits for this probe before it opens the window. */
+test("the readiness probe answers", async ({ request }) => {
+  const res = await request.get("/api/health");
+  expect(res.status()).toBe(200);
+  const body = (await res.json()) as { ok: boolean };
+  expect(body.ok).toBe(true);
+});

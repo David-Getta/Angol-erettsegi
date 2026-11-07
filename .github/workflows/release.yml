@@ -1,0 +1,183 @@
+# Érettségi felkészítő — automatikus telepítő-build és kiadás (Steam-szerű letöltéshez).
+#
+# Mit csinál: a GitHub saját gépein legyártja a TELJES asztali appot (Electron-héj +
+# beépített Next.js-szerver + feladatbank), lefuttatja az ellenőrzéseket és az app
+# füsttesztjét (elindul, a kezdőképernyő betölt), majd:
+#   - minden futásnál feltölti a csomagokat build-artifactként,
+#   - kiadáskor kiteszi a Releases oldalra a frissítő-fájlokkal (latest*.yml) együtt —
+#     ezekből veszi észre a telepített app, hogy van új verzió.
+#
+# Kiadás KÉTFÉLE módon indítható:
+#  1. Actions → "release" → Run workflow → a "version" mezőbe pl. 1.0.1 →
+#     teljes kiadás készül (címke + Releases-feltöltés is). Üres verzióval
+#     csak próba-build készül, kiadás nélkül.
+#  2. v* címke pusholásával (npm run release -- 1.0.1 --commit --tag && git push origin v1.0.1).
+#
+# A telepítő NINCS aláírva (nincs tanúsítvány): Windows első indításkor "Ismeretlen kiadó"
+# figyelmeztetést ad, macOS-en jobb klikk → Megnyitás kell (lásd TELEPITES.md).
+
+name: release
+
+on:
+  workflow_dispatch:
+    inputs:
+      version:
+        description: "Kiadás verziószáma (pl. 1.0.1). Üresen: csak próba-build."
+        required: false
+        default: ""
+      platforms:
+        description: "Melyik csomag készüljön (a macOS-futtató 10x Actions-percet fogyaszt – iterálás közben érdemes szűkíteni)"
+        required: false
+        default: "all"
+        type: choice
+        options: ["all", "windows", "macos", "linux"]
+  push:
+    tags: ["v*"] # verziócímkére automatikus kiadás (minden platform)
+
+# A Releases oldalra való feltöltéshez írási jog kell a repó tartalmához.
+permissions:
+  contents: write
+
+# A kiadandó címke egységesen: tag-indításnál a címke neve, kézi indításnál
+# a megadott versionből képzett "vX.Y.Z"; üres, ha nem kell kiadni.
+env:
+  RELEASE_TAG: ${{ startsWith(github.ref, 'refs/tags/v') && github.ref_name || (github.event.inputs.version != '' && format('v{0}', github.event.inputs.version) || '') }}
+  WANT: ${{ github.event.inputs.platforms || 'all' }}
+
+jobs:
+  # Gyors ellenőrzés: típusok, tesztek, tartalom (olcsó ubuntu-gépen).
+  tests:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - run: npm run check
+
+  build:
+    needs: tests
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - os: windows-latest
+            name: windows
+            smoke: "npm run desktop:smoke -- --shot desktop/out/smoke-windows.png"
+          - os: macos-latest
+            name: macos
+            smoke: "npm run desktop:smoke -- --shot desktop/out/smoke-macos.png"
+          - os: ubuntu-latest
+            name: linux
+            smoke: "npm run desktop:smoke -- --shot desktop/out/smoke-linux.png"
+    # Csak a kért platform (platforms: all/windows/macos/linux); címke-indításnál mindig mind.
+    if: ${{ always() && needs.tests.result == 'success' }}
+    runs-on: ${{ matrix.os }}
+    # Szoros plafon: egy beragadt job feleslegesen égetné az Actions-percet (normál build ~10 perc).
+    timeout-minutes: 40
+    steps:
+      - name: Kell-e ez a platform?
+        id: want
+        shell: bash
+        run: |
+          if [ "$WANT" = "all" ] || [ "$WANT" = "${{ matrix.name }}" ]; then echo "go=true" >> "$GITHUB_OUTPUT"; else echo "go=false" >> "$GITHUB_OUTPUT"; fi
+      - uses: actions/checkout@v4
+        if: steps.want.outputs.go == 'true'
+      - uses: actions/setup-node@v4
+        if: steps.want.outputs.go == 'true'
+        with:
+          node-version: 22
+          cache: npm
+      - name: Függőségek
+        if: steps.want.outputs.go == 'true'
+        run: npm ci
+      - name: Verziószám beírása (automatikus frissítéshez)
+        # A kiadott app "tudja" a saját verzióját (package.json) — ehhez képest nézi a
+        # GitHub Releases latest*.yml fájlját, hogy van-e újabb. Próba-buildnél marad a repóbeli.
+        if: steps.want.outputs.go == 'true' && env.RELEASE_TAG != ''
+        shell: bash
+        run: |
+          v="${RELEASE_TAG#v}"
+          npm version "$v" --no-git-tag-version --allow-same-version
+          node -p "'package.json → ' + require('./package.json').version"
+      - name: Linux csomagoló-függőségek (AppImage, füstteszt)
+        if: steps.want.outputs.go == 'true' && matrix.name == 'linux'
+        run: sudo apt-get update && sudo apt-get install -y xvfb libfuse2
+      - name: Asztali app build (standalone szerver + natív modul + telepítő)
+        if: steps.want.outputs.go == 'true'
+        run: npm run desktop:dist
+        env:
+          # nincs tanúsítvány: electron-builder ne keressen aláíró kulcsot
+          CSC_IDENTITY_AUTO_DISCOVERY: "false"
+      - name: Kicsomagolt app a füstteszthez
+        # A telepítő mellé a kicsomagolt mappa is kell (a --dir build ugyanabból a szerverből készül).
+        if: steps.want.outputs.go == 'true'
+        run: npm run desktop:build -- --skip-next
+        env:
+          CSC_IDENTITY_AUTO_DISCOVERY: "false"
+      - name: Füstteszt (az app elindul, a kezdőképernyő betölt)
+        if: steps.want.outputs.go == 'true'
+        run: ${{ matrix.smoke }}
+      - name: Csomagok feltöltése build-artifactként
+        if: steps.want.outputs.go == 'true'
+        uses: actions/upload-artifact@v4
+        with:
+          name: erettsegi-felkeszito-${{ matrix.name }}
+          path: |
+            desktop/out/*.exe
+            desktop/out/*.exe.blockmap
+            desktop/out/*.dmg
+            desktop/out/*.dmg.blockmap
+            desktop/out/*.zip
+            desktop/out/*.zip.blockmap
+            desktop/out/*.AppImage
+            desktop/out/latest*.yml
+            desktop/out/smoke-*.png
+          retention-days: 7
+          if-no-files-found: error
+
+  # A kiadás a Releases oldalra: minden platform csomagja + a frissítő-leírók egy helyen.
+  publish:
+    needs: build
+    if: ${{ always() && needs.build.result == 'success' && (startsWith(github.ref, 'refs/tags/v') || github.event.inputs.version != '') }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - uses: actions/download-artifact@v4
+        with:
+          path: release-files
+          merge-multiple: true
+      - name: Mi kerül ki
+        run: ls -la release-files
+      # A kiadás leírása a CHANGELOG adott verziójú szakaszából épül — az app
+      # MEGMUTATJA ezt a szöveget a frissítés előtt. Fájlba íratjuk (--out), UTF-8-ban.
+      - name: Kiadás-jegyzet összeállítása a CHANGELOG-ból
+        shell: bash
+        run: |
+          npm run -s release:notes -- "${RELEASE_TAG#v}" --out release_notes.md
+          echo "--- a kiadás leírása ---"
+          head -40 release_notes.md
+      - name: Kiadás a Releases oldalra
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: ${{ env.RELEASE_TAG }}
+          name: ${{ env.RELEASE_TAG }}
+          body_path: release_notes.md
+          files: |
+            release-files/*.exe
+            release-files/*.exe.blockmap
+            release-files/*.dmg
+            release-files/*.dmg.blockmap
+            release-files/*.zip
+            release-files/*.zip.blockmap
+            release-files/*.AppImage
+            release-files/latest*.yml

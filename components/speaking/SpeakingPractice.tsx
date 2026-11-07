@@ -284,7 +284,9 @@ function SelfPractice({ task, ttsRate, base: basePath, language, speechLang }: {
   return (
     <Card>
       <p className="text-sm text-muted">{t.speaking.selfPracticeHint}</p>
-      {!asr && <p className="mt-2 rounded-md bg-warn-soft p-2 text-sm text-warn">{t.speaking.noAsr}</p>}
+      {!asr && (
+        <p className="mt-2 rounded-md bg-warn-soft p-2 text-sm text-warn">{typeof window !== "undefined" && window.desktop ? t.speaking.noAsrDesktop : t.speaking.noAsr}</p>
+      )}
       {!finished ? (
         <div className="mt-4 space-y-3">
           <div className="text-xs text-muted">

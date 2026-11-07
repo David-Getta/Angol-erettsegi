@@ -36,12 +36,26 @@ vagy a javítást a Claude appba bemásolt prompttal kérheted. Nincs fiók, nin
 | **Próbaérettségi** | teljes írásbeli szimuláció hivatalos időkeretekkel és szigorú részenkénti időzítéssel → pontszám, százalék, 12%-os küszöbök, becsült jegy, nyelvvizsga-egyenértékűség |
 | **Hivatalos feladatsorok** | a letöltött régi érettségik importálása saját használatra, egyértelmű „Hivatalos” jelöléssel |
 | **Statisztika, Parancsok, Beállítások** | grafikonok és kinyomtatható haladási jelentés; a Claude Code parancsok súgója parancsépítővel; export/import, adatbázis-mentés (automatikusan is) |
+| **Asztali app** | telepíthető program Windowsra, Macre és Linuxra (a beépített szerverrel – nem kell Node.js, parancssor, böngésző), automatikus frissítéssel a GitHub Releases-ből; az adat- és beadás-mappák egy kattintással; ugyanaz az app böngészőben is megnyitható |
 
 ## Telepítés
 
+### Asztali app (ajánlott)
+
+Nem kell hozzá Node.js, parancssor vagy böngésző. Töltsd le a gépedhez illő telepítőt a
+[Releases oldalról](https://github.com/David-Getta/Angol-erettsegi/releases/latest) (Windows: `Erettsegi-felkeszito-Setup-<verzió>.exe`,
+Mac: `…-mac-arm64.dmg` / `…-mac-x64.dmg`, Linux: `….AppImage`), kattints rá duplán, és kész: a program a saját gépeden fut, az adataid
+ott maradnak, és **magától frissül** – ha új kiadás jelenik meg, arany sáv jelzi, és egy kattintással („Frissítés most”) telepíted.
+Részletes, laikusoknak szóló útmutató (Windows, Mac, Linux, gyakori kérdések): **[TELEPITES.md](TELEPITES.md)**.
+
+Egy dolog nem megy az asztali appban: a **beszédfelismerés** (szóbeli diktálás, hallás → diktálás). Erre a **Beállítások → Asztali
+alkalmazás → Megnyitás böngészőben** gomb ugyanezt az appot, ugyanazokkal az adatokkal nyitja meg Chrome-ban/Edge-ben.
+
+### Fejlesztői / böngészős mód
+
 Kell hozzá: **Node.js 20.9 vagy újabb** (<https://nodejs.org>), és a beszédfelismeréshez **Google Chrome** (vagy Edge).
 
-### 1. Node.js telepítése (egyszer kell)
+#### 1. Node.js telepítése (egyszer kell)
 
 1. Nyisd meg a <https://nodejs.org/en/download> oldalt, és töltsd le az **LTS** verziót
    (macOS-en a **macOS Installer (.pkg)**, Windowson a **Windows Installer (.msi)**).
@@ -55,7 +69,7 @@ Kell hozzá: **Node.js 20.9 vagy újabb** (<https://nodejs.org>), és a beszédf
 
 Ha továbbra is `zsh: command not found: npm` a válasz, a telepítés nem fejeződött be, vagy a terminált nem nyitottad újra.
 
-### 2. Az app telepítése és indítása
+#### 2. Az app telepítése és indítása
 
 ```bash
 cd angol-erettsegi      # a kicsomagolt mappa (VS Code-ban: File → Open Folder, majd Terminal → New Terminal)
@@ -78,7 +92,7 @@ a szintet (közép/emelt), a vizsga dátumát és a célszázalékot.
 **Telefonról** (ugyanazon a wifin): `npm run dev:lan`, majd a telefonon `http://<a gép IP-címe>:3000`.
 (A vágólapra másolás és a mikrofon http-n korlátozott lehet; a gépen a localhost a kényelmesebb.)
 
-### Böngésző és hang
+#### Böngésző és hang
 
 - A **felolvasás** (hallás, kérdések) a böngésző beépített hangjait használja. Windowson/macOS-en több angol hang
   is van; a Beállításokban kiválaszthatod a női és a férfi hangot és a sebességet.
@@ -87,7 +101,11 @@ a szintet (közép/emelt), a vizsga dátumát és a célszázalékot.
 
 ### Frissítés új verzióra (az adataid megtartásával)
 
-A haladásod (`data/app.db`), a biztonsági mentések (`data/backups/`) és a javításra váró beadások (`exchange/`) **nincsenek benne** a
+**Asztali app:** magától frissül. Ha új kiadás jelenik meg, a lap tetején arany sáv jelzi: Windowson és Linuxon a **Frissítés most**
+gomb letölti, telepíti, és az app újraindul; Macen a **Letöltés** gomb a Releases oldalt nyitja meg, és az új appot a régi helyére húzod.
+Az adataid a programon kívül vannak, ezért megmaradnak. Részletek: [TELEPITES.md](TELEPITES.md).
+
+**Böngészős mód (ZIP):** a haladásod (`data/app.db`), a biztonsági mentések (`data/backups/`) és a javításra váró beadások (`exchange/`) **nincsenek benne** a
 letöltött ZIP-ben – ezek csak a te gépeden vannak. Ezért frissítéskor **ne töröld a régi mappát**:
 
 1. Állítsd le az appot (a terminálban Ctrl+C).
@@ -185,6 +203,19 @@ npm run build            # éles build
 ```
 
 A Playwright saját gépen először: `npx playwright install chromium`.
+
+**Asztali app** (Electron-héj a beépített Next-szerverrel, önfrissítéssel a GitHub Releases-ből):
+
+```bash
+npm run desktop:dev      # a héj a futó `npm run dev` szerver ellen (előbb indítsd el az `npm run dev`-et)
+npm run desktop:build    # teljes build kicsomagolt mappába: desktop/out/<os>-unpacked
+npm run desktop:dist     # telepítő az aktuális rendszerre: desktop/out/
+npm run desktop:smoke    # a kész app füsttesztje (elindul, a kezdőképernyő betölt)
+npm run release -- X.Y.Z --commit --tag   # verzióemelés + CHANGELOG + commit + címke; utána: git push origin vX.Y.Z → a GitHub Actions kiadja
+```
+
+A telepítőt csak a cél-rendszeren lehet építeni; kiadáskor a GitHub Actions (`.github/workflows/release.yml`) mindhármat megépíti.
+Részletek: `desktop/README.md`; a változásnapló (a kiadás szövege is ebből készül): `CHANGELOG.md`.
 
 Adatok: a haladásod a `data/app.db`-ben van (a **Beállítások → Adatok** alatt exportálhatod JSON-ba, visszatöltheted,
 és biztonsági mentést készíthetsz a `data/backups/` mappába). A projekt szabályai: `CLAUDE.md`, a terv és a döntések: `PLAN.md`.

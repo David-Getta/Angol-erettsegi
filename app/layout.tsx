@@ -10,6 +10,8 @@ import { ThemeSwitch } from "@/components/ThemeSwitch";
 import { ToastProvider } from "@/components/Toast";
 import { ContentLangProvider } from "@/components/ContentLang";
 import Link from "next/link";
+import { UpdateBar } from "@/components/desktop/UpdateBar";
+import { TopbarUpdateButton } from "@/components/desktop/TopbarUpdateButton";
 
 export const dynamic = "force-dynamic";
 
@@ -56,9 +58,13 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             <div className="flex items-center gap-2 sm:gap-3">
               <LevelSwitch level={s.level} levels={subj.levels} />
               <ThemeSwitch theme={s.theme} />
+              <TopbarUpdateButton />
             </div>
           </header>
-          <main className="mx-auto max-w-6xl px-4 pb-24 pt-6 lg:px-8">{children}</main>
+          <main className="mx-auto max-w-6xl px-4 pb-24 pt-6 lg:px-8">
+            <UpdateBar />
+            {children}
+          </main>
         </div>
         </ContentLangProvider>
         </ToastProvider>
