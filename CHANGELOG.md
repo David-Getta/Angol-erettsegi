@@ -11,6 +11,10 @@ előtt) ennek a fájlnak az adott verziójú szakaszából készül
 
 ## Kiadatlan
 
+_(még nincs kiadatlan változás)_
+
+## 1.0.0 – 2026-11-07
+
 - **Asztali alkalmazás.** Az app mostantól telepíthető programként is fut
   (Windows-telepítő, macOS-app, Linux AppImage): Electron-héj, benne a
   beépített Next.js-szerver a saját gépeden, a feladatbank a csomag része.
