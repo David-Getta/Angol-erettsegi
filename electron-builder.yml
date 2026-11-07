@@ -4,7 +4,7 @@
 # a resources/ mappában (scripts/desktop/build.ts rakja össze). A frissítés a GitHub Releases-ből jön (publish).
 appId: hu.davidgetta.erettsegi-felkeszito
 productName: Érettségi felkészítő
-executableName: ErettsegiFelkeszito
+# macOS-en az .app neve a productName (Finderben „Érettségi felkészítő”); Windowson és Linuxon a futtató ékezet nélküli.
 copyright: Copyright © 2026 David Getta
 artifactName: Erettsegi-felkeszito-${version}-${os}-${arch}.${ext}
 
@@ -51,6 +51,7 @@ win:
   target:
     - target: nsis
       arch: [x64]
+  executableName: ErettsegiFelkeszito
   icon: desktop/build/icon.png
   artifactName: Erettsegi-felkeszito-Setup-${version}.${ext}
   # nincs tanúsítvány – az első indításnál a Windows "Ismeretlen kiadó" figyelmeztetést ad (lásd TELEPITES.md)

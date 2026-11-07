@@ -22,10 +22,18 @@ function executable(): string {
     process.platform === "win32"
       ? [path.join(OUT, "win-unpacked", "ErettsegiFelkeszito.exe")]
       : process.platform === "darwin"
-        ? fs
-            .readdirSync(OUT)
+        ? // desktop/out/mac*/<productName>.app/Contents/MacOS/<executable> – whatever electron-builder named them
+          (fs.existsSync(OUT) ? fs.readdirSync(OUT) : [])
             .filter((d) => d.startsWith("mac"))
-            .map((d) => path.join(OUT, d, "Érettségi felkészítő.app", "Contents", "MacOS", "ErettsegiFelkeszito"))
+            .flatMap((d) =>
+              fs
+                .readdirSync(path.join(OUT, d))
+                .filter((a) => a.endsWith(".app"))
+                .flatMap((a) => {
+                  const bin = path.join(OUT, d, a, "Contents", "MacOS");
+                  return fs.existsSync(bin) ? fs.readdirSync(bin).map((f) => path.join(bin, f)) : [];
+                }),
+            )
         : [path.join(OUT, "linux-unpacked", "ErettsegiFelkeszito")];
   const found = candidates.find((c) => fs.existsSync(c));
   if (!found) {
