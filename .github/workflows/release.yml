@@ -7,6 +7,8 @@
 #   - kiadáskor kiteszi a Releases oldalra a frissítő-fájlokkal (latest*.yml) együtt —
 #     ezekből veszi észre a telepített app, hogy van új verzió.
 #
+# Próba-build (telepítők artifactként, kiadás nélkül): minden pusholás, amely a csomagolás fájljait érinti.
+#
 # Kiadás KÉTFÉLE módon indítható:
 #  1. Actions → "release" → Run workflow → a "version" mezőbe pl. 1.0.1 →
 #     teljes kiadás készül (címke + Releases-feltöltés is). Üres verzióval
@@ -33,6 +35,15 @@ on:
         options: ["all", "windows", "macos", "linux"]
   push:
     tags: ["v*"] # verziócímkére automatikus kiadás (minden platform)
+    # Próba-build (kiadás nélkül) minden olyan pusholásnál, amely a csomagolást érinti – így a Windows- és
+    # macOS-build is kiderül a címke előtt. (A paths-szűrő címke-pusholásra nem vonatkozik.)
+    branches: ["**"]
+    paths:
+      - ".github/workflows/release.yml"
+      - "electron-builder.yml"
+      - "desktop/**"
+      - "scripts/desktop/**"
+      - "package.json"
 
 # A Releases oldalra való feltöltéshez írási jog kell a repó tartalmához.
 permissions:
