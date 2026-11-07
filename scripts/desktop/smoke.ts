@@ -67,12 +67,20 @@ function diagnoseMac(bin: string): void {
   console.error(`--- system log (${lg.status}, last part)\n${(lg.stdout ?? "").slice(-4000)}${(lg.stderr ?? "").slice(-500)}`);
   // Experiments without rebuilding: does vanilla Electron run here, does a plain ad-hoc re-sign help,
   // does an ASCII executable name help (the product name is accented).
-  const run = (title: string, cmd: string, cmdArgs: string[]) => {
-    const x = spawnSync(cmd, cmdArgs, { encoding: "utf8", timeout: 60_000, env: { ...process.env, ELECTRON_ENABLE_LOGGING: "1" } });
+  const run = (title: string, cmd: string, cmdArgs: string[], extraEnv: Record<string, string> = {}) => {
+    const x = spawnSync(cmd, cmdArgs, { encoding: "utf8", timeout: 120_000, env: { ...process.env, ELECTRON_ENABLE_LOGGING: "1", ...extraEnv } });
     console.error(`--- ${title}: status ${x.status}, jel ${x.signal ?? "-"}\n${(x.stdout ?? "").slice(0, 600)}${(x.stderr ?? "").slice(-1500)}`);
   };
   const vanilla = path.join(ROOT, "node_modules", "electron", "dist", "Electron.app", "Contents", "MacOS", "Electron");
-  if (fs.existsSync(vanilla)) run("vanilla Electron --version", vanilla, ["--version"]);
+  if (fs.existsSync(vanilla)) {
+    run("vanilla Electron --version", vanilla, ["--version"]);
+    // our main process inside the vanilla Electron bundle: a crash here means the JS, a pass means the packaging
+    const asar = path.join(app, "Contents", "Resources", "app.asar");
+    run("vanilla Electron + our app.asar --smoke-test", vanilla, [asar, "--smoke-test", `--data-dir=${path.join(os.tmpdir(), "erettsegi-vanilla", "data")}`, `--exchange-dir=${path.join(os.tmpdir(), "erettsegi-vanilla", "exchange")}`]);
+  }
+  // backtrace of the trap
+  run("lldb backtrace", "lldb", ["--batch", "-o", "run", "-o", "bt 40", "-o", "quit", "--", bin, "--version"]);
+  run("packaged binary as node", bin, ["-e", "console.log('node ok', process.versions.electron)"], { ELECTRON_RUN_AS_NODE: "1" });
   const copy = path.join(os.tmpdir(), "ErettsegiFelkeszito.app");
   fs.rmSync(copy, { recursive: true, force: true });
   spawnSync("cp", ["-R", app, copy]);
