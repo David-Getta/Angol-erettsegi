@@ -70,9 +70,10 @@ nsis:
   # így a "Frissítés most" gomb csendben is le tudja futtatni.
   oneClick: false
   perMachine: false
-  # nincs „mindenkinek / csak nekem” oldal és nincs jogosultságkérés: mindig a felhasználó alá települ,
-  # így a csendes önfrissítés sosem akad el rendszergazdai jelszón
+  # nincs „mindenkinek / csak nekem” oldal és nincs jogosultságkérés: mindig a felhasználó alá települ
+  # (admin-fiókon is – desktop/build/installer.nsh), így a csendes önfrissítés sosem kér UAC-jóváhagyást
   allowElevation: false
+  include: desktop/build/installer.nsh
   allowToChangeInstallationDirectory: true
   createDesktopShortcut: always
   createStartMenuShortcut: true

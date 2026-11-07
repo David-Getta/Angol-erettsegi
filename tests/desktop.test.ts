@@ -38,6 +38,8 @@ describe("desktop app wiring", () => {
     expect(yml).toMatch(/oneClick: false/);
     // no "all users / only me" page: the silent self-update must never need elevation
     expect(yml).toMatch(/allowElevation: false/);
+    expect(yml).toContain("include: desktop/build/installer.nsh");
+    expect(read("desktop/build/installer.nsh")).toMatch(/!macro customInstallMode\s+StrCpy \$isForceCurrentInstall "1"/);
     // the server child needs run-as-node; a stray NODE_OPTIONS must not reach the packaged app
     expect(yml).toMatch(/runAsNode: true/);
     expect(yml).toMatch(/enableNodeOptionsEnvironmentVariable: false/);
