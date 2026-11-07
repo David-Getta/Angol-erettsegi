@@ -72,7 +72,7 @@ type DesktopSettings = {
   /** base64 of the safeStorage-encrypted token, or the plain token when encryption is unavailable (plain: true). */
   updateToken?: string;
   updateTokenPlain?: boolean;
-  windowBounds?: { x: number; y: number; width: number; height: number };
+  windowBounds?: { x: number; y: number; width: number; height: number; maximized?: boolean };
 };
 
 function readSettings(): DesktopSettings {
@@ -538,14 +538,14 @@ function closeSplash(): void {
 }
 
 /** Saved bounds are used only when they still fall on a connected display (undocked monitor, changed scaling). */
-function savedBounds(): { x: number; y: number; width: number; height: number } | undefined {
+function savedBounds(): { x?: number; y?: number; width: number; height: number; maximized?: boolean } | undefined {
   const b = readSettings().windowBounds;
   if (!b) return undefined;
   const onScreen = screen.getAllDisplays().some((d) => {
     const a = d.workArea;
     return b.x + 100 < a.x + a.width && b.x + b.width - 100 > a.x && b.y + 40 < a.y + a.height && b.y >= a.y - 20;
   });
-  return onScreen ? b : { x: undefined as unknown as number, y: undefined as unknown as number, width: b.width, height: b.height };
+  return onScreen ? b : { width: b.width, height: b.height, maximized: b.maximized };
 }
 
 function createWindow(url: string): BrowserWindow {
@@ -572,6 +572,7 @@ function createWindow(url: string): BrowserWindow {
   });
   w.once("ready-to-show", () => {
     closeSplash();
+    if (bounds?.maximized) w.maximize();
     w.show();
   });
   w.webContents.setWindowOpenHandler(({ url: target }) => {
@@ -585,7 +586,8 @@ function createWindow(url: string): BrowserWindow {
     if (isHttp(target)) void shell.openExternal(target);
   });
   w.on("close", () => {
-    if (!w.isMinimized() && !w.isFullScreen()) writeSettings({ windowBounds: w.getBounds() });
+    // a maximized window remembers its normal bounds plus the maximized flag
+    if (!w.isMinimized() && !w.isFullScreen()) writeSettings({ windowBounds: { ...w.getNormalBounds(), maximized: w.isMaximized() } });
   });
   w.on("closed", () => {
     if (win === w) win = null;
