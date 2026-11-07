@@ -61,16 +61,21 @@ function diagnoseMac(bin: string): void {
   // Chromium logs nothing to stderr in a packaged app unless asked; a CHECK failure shows up here
   const v = spawnSync(bin, ["--version"], { encoding: "utf8", timeout: 30_000, env: { ...process.env, ELECTRON_ENABLE_LOGGING: "1", ELECTRON_ENABLE_STACK_DUMPING: "1" } });
   console.error(`--- version (${v.status}, jel ${v.signal ?? "-"})\n${(v.stdout ?? "").slice(0, 2000)}${(v.stderr ?? "").slice(0, 4000)}`);
-  show("system log", "log", ["show", "--last", "3m", "--style", "compact", "--predicate", 'process CONTAINS "rettsegi" OR eventMessage CONTAINS "rettsegi" OR eventMessage CONTAINS "ErettsegiFelkeszito"']);
+  // fuse state: an enabled asar-integrity fuse with a stale hash kills the app with SIGTRAP before any log line
+  show("fuses", path.join(ROOT, "node_modules", ".bin", "electron-fuses"), ["read", "--app", app]);
+  const lg = spawnSync("log", ["show", "--last", "2m", "--style", "compact", "--predicate", 'process CONTAINS "rettsegi" OR process CONTAINS "Erettsegi" OR eventMessage CONTAINS "rettsegi" OR eventMessage CONTAINS "asar" OR eventMessage CONTAINS "Electron"'], { encoding: "utf8", timeout: 60_000 });
+  console.error(`--- system log (${lg.status}, last part)\n${(lg.stdout ?? "").slice(-4000)}${(lg.stderr ?? "").slice(-500)}`);
+  // the crash reporter writes its file a few seconds after the crash
+  spawnSync("sleep", ["10"]);
   for (const reports of [path.join(os.homedir(), "Library", "Logs", "DiagnosticReports"), "/Library/Logs/DiagnosticReports"]) {
     if (!fs.existsSync(reports)) continue;
-    const newest = fs
+    const ours = fs
       .readdirSync(reports)
-      .filter((f) => /\.(ips|crash)$/.test(f))
+      .filter((f) => /\.(ips|crash)$/.test(f) && /rettsegi|Erettsegi|Electron/i.test(f))
       .map((f) => ({ f, t: fs.statSync(path.join(reports, f)).mtimeMs }))
       .sort((a, b) => b.t - a.t)[0];
-    if (newest) console.error(`--- crash report ${newest.f}\n${fs.readFileSync(path.join(reports, newest.f), "utf8").slice(0, 5000)}`);
-    else console.error(`--- nincs összeomlás-jelentés (${reports})`);
+    if (ours) console.error(`--- crash report ${ours.f}\n${fs.readFileSync(path.join(reports, ours.f), "utf8").slice(0, 6000)}`);
+    else console.error(`--- nincs saját összeomlás-jelentés (${reports}): ${fs.readdirSync(reports).slice(-5).join(", ")}`);
   }
 }
 
