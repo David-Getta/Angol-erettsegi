@@ -65,6 +65,25 @@ function diagnoseMac(bin: string): void {
   show("fuses", path.join(ROOT, "node_modules", ".bin", "electron-fuses"), ["read", "--app", app]);
   const lg = spawnSync("log", ["show", "--last", "2m", "--style", "compact", "--predicate", 'process CONTAINS "rettsegi" OR process CONTAINS "Erettsegi" OR eventMessage CONTAINS "rettsegi" OR eventMessage CONTAINS "asar" OR eventMessage CONTAINS "Electron"'], { encoding: "utf8", timeout: 60_000 });
   console.error(`--- system log (${lg.status}, last part)\n${(lg.stdout ?? "").slice(-4000)}${(lg.stderr ?? "").slice(-500)}`);
+  // Experiments without rebuilding: does vanilla Electron run here, does a plain ad-hoc re-sign help,
+  // does an ASCII executable name help (the product name is accented).
+  const run = (title: string, cmd: string, cmdArgs: string[]) => {
+    const x = spawnSync(cmd, cmdArgs, { encoding: "utf8", timeout: 60_000, env: { ...process.env, ELECTRON_ENABLE_LOGGING: "1" } });
+    console.error(`--- ${title}: status ${x.status}, jel ${x.signal ?? "-"}\n${(x.stdout ?? "").slice(0, 600)}${(x.stderr ?? "").slice(-1500)}`);
+  };
+  const vanilla = path.join(ROOT, "node_modules", "electron", "dist", "Electron.app", "Contents", "MacOS", "Electron");
+  if (fs.existsSync(vanilla)) run("vanilla Electron --version", vanilla, ["--version"]);
+  const copy = path.join(os.tmpdir(), "ErettsegiFelkeszito.app");
+  fs.rmSync(copy, { recursive: true, force: true });
+  spawnSync("cp", ["-R", app, copy]);
+  show("re-sign plain ad-hoc", "codesign", ["--force", "--deep", "-s", "-", copy]);
+  run("copy, plain ad-hoc, accented name --version", path.join(copy, "Contents", "MacOS", path.basename(bin)), ["--version"]);
+  const macos = path.join(copy, "Contents", "MacOS");
+  fs.renameSync(path.join(macos, path.basename(bin)), path.join(macos, "ErettsegiFelkeszito"));
+  show("plist executable → ASCII", "plutil", ["-replace", "CFBundleExecutable", "-string", "ErettsegiFelkeszito", path.join(copy, "Contents", "Info.plist")]);
+  show("re-sign", "codesign", ["--force", "--deep", "-s", "-", copy]);
+  run("copy, ASCII executable --version", path.join(macos, "ErettsegiFelkeszito"), ["--version"]);
+  run("copy, ASCII executable smoke", path.join(macos, "ErettsegiFelkeszito"), [`--smoke-test`, `--data-dir=${path.join(os.tmpdir(), "erettsegi-exp", "data")}`, `--exchange-dir=${path.join(os.tmpdir(), "erettsegi-exp", "exchange")}`]);
   // the crash reporter writes its file a few seconds after the crash
   spawnSync("sleep", ["10"]);
   for (const reports of [path.join(os.homedir(), "Library", "Logs", "DiagnosticReports"), "/Library/Logs/DiagnosticReports"]) {
