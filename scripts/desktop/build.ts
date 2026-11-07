@@ -196,7 +196,18 @@ async function main(): Promise<void> {
   console.log(`✓ kiadás-jegyzet a frissítő-leíróba: ${path.relative(ROOT, notesFile)} (${notes.found ? "CHANGELOG" : "nincs ilyen szakasz – általános szöveg"})`);
   if (has("--dir")) eb.push("--dir");
   if (platform === "win32") eb.push("--win");
-  if (platform === "darwin") eb.push("--mac");
+  if (platform === "darwin") {
+    eb.push("--mac");
+    // Electron finds its helper apps by CFBundleName ("<name> Helper.app"), while electron-builder writes the
+    // helper folders with NFD-normalized names. An accented product name therefore never matches and the app
+    // dies at start-up ("Unable to find helper app", SIGTRAP) – so the bundle name is written in NFD too.
+    const yml = fs.readFileSync(path.join(ROOT, "electron-builder.yml"), "utf8");
+    const productName = (/^productName:\s*(.+)$/m.exec(yml)?.[1] ?? "").trim().replace(/^["']|["']$/g, "");
+    if (productName && productName !== productName.normalize("NFD")) {
+      eb.push(`--config.mac.extendInfo.CFBundleName=${productName.normalize("NFD")}`);
+      console.log("✓ macOS CFBundleName NFD-alakban (a helper-appok neve is az)");
+    }
+  }
   if (platform === "linux") eb.push("--linux");
   eb.push("--publish", value("--publish") ?? "never");
   run(bin("electron-builder"), eb, { env: { CSC_IDENTITY_AUTO_DISCOVERY: "false" } });

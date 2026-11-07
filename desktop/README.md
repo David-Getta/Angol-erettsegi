@@ -179,3 +179,12 @@ titkosítva, csak azon a gépen.
 - A héj sem hív semmilyen AI API-t.
 - Verzió = a `package.json` verziója (egyetlen forrás), csak az `npm run release`
   emeli.
+
+## macOS: ékezetes terméknév és a helper-appok
+
+Az Electron a segédprogramjait (`<CFBundleName> Helper.app`, `… Helper (Renderer).app` stb.) a fő `Info.plist`
+`CFBundleName` kulcsa alapján keresi, az electron-builder viszont a lemezre **NFD-normalizált** (szétbontott ékezetes)
+fájlneveket ír. Ékezetes terméknévnél a két alak nem egyezik, és az app induláskor szó nélkül elhal
+(`Unable to find helper app`, SIGTRAP). Ezért a `scripts/desktop/build.ts` macOS-en a `CFBundleName`-et NFD-alakban
+adja át (`--config.mac.extendInfo.CFBundleName`); a Finderben látható név (`CFBundleDisplayName`) változatlan.
+

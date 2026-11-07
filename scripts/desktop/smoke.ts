@@ -68,41 +68,6 @@ function diagnoseMac(bin: string): void {
   show("fuses", path.join(ROOT, "node_modules", ".bin", "electron-fuses"), ["read", "--app", app]);
   const lg = spawnSync("log", ["show", "--last", "2m", "--style", "compact", "--predicate", 'process CONTAINS "rettsegi" OR process CONTAINS "Erettsegi" OR eventMessage CONTAINS "rettsegi" OR eventMessage CONTAINS "asar" OR eventMessage CONTAINS "Electron"'], { encoding: "utf8", timeout: 60_000 });
   console.error(`--- system log (${lg.status}, last part)\n${(lg.stdout ?? "").slice(-4000)}${(lg.stderr ?? "").slice(-500)}`);
-  // Is the file system normalization-sensitive, and does an ASCII bundle/helper name fix the start?
-  const run = (title: string, cmd: string, cmdArgs: string[]) => {
-    const x = spawnSync(cmd, cmdArgs, { encoding: "utf8", timeout: 120_000, env: { ...env, ELECTRON_ENABLE_LOGGING: "1" } });
-    console.error(`--- ${title}: status ${x.status}, jel ${x.signal ?? "-"}\n${(x.stdout ?? "").slice(0, 1500)}${(x.stderr ?? "").slice(-1500)}`);
-  };
-  const frameworks = path.join(app, "Contents", "Frameworks");
-  const nfc = "Érettségi felkészítő Helper.app".normalize("NFC");
-  const nfd = nfc.normalize("NFD");
-  console.error(`--- X6 exists NFC: ${fs.existsSync(path.join(frameworks, nfc))}, NFD: ${fs.existsSync(path.join(frameworks, nfd))}; on disk: ${fs.readdirSync(frameworks).filter((f) => f.includes("Helper.app")).map((f) => (f === nfc ? "NFC" : f === nfd ? "NFD" : "other"))}`);
-  const c5 = path.join(os.tmpdir(), "x5.app");
-  fs.rmSync(c5, { recursive: true, force: true });
-  spawnSync("cp", ["-R", app, c5]);
-  const fw5 = path.join(c5, "Contents", "Frameworks");
-  for (const h of fs.readdirSync(fw5).filter((f) => f.endsWith(".app"))) {
-    const suffix = h.slice(h.indexOf("Helper")); // "Helper.app", "Helper (GPU).app", ...
-    const newDir = `Erettsegi ${suffix}`;
-    const oldExe = fs.readdirSync(path.join(fw5, h, "Contents", "MacOS"))[0] ?? "";
-    const newExe = `Erettsegi ${suffix.replace(/\.app$/, "")}`;
-    fs.renameSync(path.join(fw5, h, "Contents", "MacOS", oldExe), path.join(fw5, h, "Contents", "MacOS", newExe));
-    spawnSync("plutil", ["-replace", "CFBundleExecutable", "-string", newExe, path.join(fw5, h, "Contents", "Info.plist")]);
-    spawnSync("plutil", ["-replace", "CFBundleName", "-string", newExe, path.join(fw5, h, "Contents", "Info.plist")]);
-    fs.renameSync(path.join(fw5, h), path.join(fw5, newDir));
-  }
-  spawnSync("plutil", ["-replace", "CFBundleName", "-string", "Erettsegi", path.join(c5, "Contents", "Info.plist")]);
-  spawnSync("codesign", ["--force", "--deep", "-s", "-", c5]);
-  show("X5 frameworks", "ls", [fw5]);
-  run("X5 ASCII CFBundleName + helpers --version", path.join(c5, "Contents", "MacOS", path.basename(bin)), ["--version"]);
-  run("X5 ASCII smoke", path.join(c5, "Contents", "MacOS", path.basename(bin)), ["--smoke-test", `--data-dir=${path.join(os.tmpdir(), "erettsegi-x5", "data")}`, `--exchange-dir=${path.join(os.tmpdir(), "erettsegi-x5", "exchange")}`]);
-  // X7: only the main plist's CFBundleName rewritten to the NFD spelling (what is on disk)
-  const c7 = path.join(os.tmpdir(), "x7.app");
-  fs.rmSync(c7, { recursive: true, force: true });
-  spawnSync("cp", ["-R", app, c7]);
-  spawnSync("plutil", ["-replace", "CFBundleName", "-string", "Érettségi felkészítő".normalize("NFD"), path.join(c7, "Contents", "Info.plist")]);
-  spawnSync("codesign", ["--force", "--deep", "-s", "-", c7]);
-  run("X7 NFD CFBundleName --version", path.join(c7, "Contents", "MacOS", path.basename(bin)), ["--version"]);
   // the crash reporter writes its file a few seconds after the crash
   spawnSync("sleep", ["10"]);
   for (const reports of [path.join(os.homedir(), "Library", "Logs", "DiagnosticReports"), "/Library/Logs/DiagnosticReports"]) {

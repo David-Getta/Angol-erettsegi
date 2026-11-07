@@ -43,6 +43,8 @@ describe("desktop app wiring", () => {
     expect(yml).toMatch(/enableNodeOptionsEnvironmentVariable: false/);
     // an unsigned arm64 app would not even start on Apple Silicon: ad-hoc signature
     expect(yml).toContain('identity: "-"');
+    // the accented product name must reach the macOS bundle in the NFD form the helper folders use
+    expect(read("scripts/desktop/build.ts")).toContain('normalize("NFD")');
   });
 
   it("the Electron version has a prebuilt better-sqlite3 binary (the build fetches it instead of compiling)", () => {
