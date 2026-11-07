@@ -22,9 +22,12 @@ function executable(): string {
     process.platform === "win32"
       ? [path.join(OUT, "win-unpacked", "ErettsegiFelkeszito.exe")]
       : process.platform === "darwin"
-        ? // desktop/out/mac*/<productName>.app/Contents/MacOS/<executable> – whatever electron-builder named them
+        ? // desktop/out/mac*/<productName>.app/Contents/MacOS/<executable> – whatever electron-builder named them;
+          // the folder of this machine's architecture first (mac-arm64 on Apple Silicon, mac = x64), the other
+          // one would need Rosetta and dies with a signal
           (fs.existsSync(OUT) ? fs.readdirSync(OUT) : [])
             .filter((d) => d.startsWith("mac"))
+            .sort((a, b) => Number(b === (process.arch === "arm64" ? "mac-arm64" : "mac")) - Number(a === (process.arch === "arm64" ? "mac-arm64" : "mac")))
             .flatMap((d) =>
               fs
                 .readdirSync(path.join(OUT, d))
