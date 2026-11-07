@@ -133,11 +133,12 @@ function nativeForElectron(platform: string, arch: string): void {
   const ev = electronVersion();
   let node: string;
   if (platform === "darwin") {
+    // the second fetch wipes build/, so the first binary is parked outside it
     const arm = fetchPrebuild(dir, ev, platform, "arm64");
-    const armCopy = `${arm}.arm64`;
+    const armCopy = path.join(dir, "better_sqlite3.arm64.node");
     fs.renameSync(arm, armCopy);
     const x64 = fetchPrebuild(dir, ev, platform, "x64");
-    const x64Copy = `${x64}.x64`;
+    const x64Copy = path.join(dir, "better_sqlite3.x64.node");
     fs.renameSync(x64, x64Copy);
     node = x64;
     run("lipo", ["-create", "-output", node, armCopy, x64Copy]);
