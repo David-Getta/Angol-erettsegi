@@ -23,11 +23,10 @@ A letöltések mindig itt vannak:
    „A Windows megvédte a számítógépet” / „Ismeretlen kiadó”. Kattints a
    **További információ** → **Futtatás mindenképp** gombra. (Ez normális egy új
    programnál, amelynek nincs megvásárolt kiadói tanúsítványa.)
-3. Kövesd a telepítőt: **Tovább → Tovább → Telepítés**. Pár másodperc. Ha a
-   telepítő megkérdezi, kinek települjön, hagyd a **„Csak nekem”** (Only for
-   me) lehetőséget – így nem kér rendszergazdai jelszót, a saját felhasználód
-   alá települ (`%LOCALAPPDATA%\Programs\Érettségi felkészítő`), és a későbbi
-   frissítések is csendben lefutnak.
+3. Kövesd a telepítőt: **Tovább → Tovább → Telepítés**. Pár másodperc. Nem kér
+   rendszergazdai jelszót: mindig a saját felhasználód alá települ
+   (`%LOCALAPPDATA%\Programs\Érettségi felkészítő`), így a későbbi frissítések
+   is csendben lefutnak.
 4. A végén hagyd bepipálva az indítást, majd **Befejezés**. Az asztalon és a
    Start menüben megjelenik az **Érettségi felkészítő** ikon – legközelebb innen
    indítsd.

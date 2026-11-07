@@ -332,7 +332,11 @@ class Updater {
       debug: () => {},
     };
     this.applyToken();
-    autoUpdater.on("checking-for-update", () => this.set({ kind: "checking" }));
+    autoUpdater.on("checking-for-update", () => {
+      // a silent re-check keeps a known update on screen; only a manual check shows "checking"
+      if (this.silent && this.state.kind === "available") return;
+      this.set({ kind: "checking" });
+    });
     autoUpdater.on("update-available", (info: UpdateInfo) => {
       const notes = Array.isArray(info.releaseNotes)
         ? info.releaseNotes.map((n) => (typeof n === "string" ? n : n.note ?? "")).join("\n\n")
@@ -368,10 +372,13 @@ class Updater {
     else autoUpdater.setFeedURL({ provider: "github", owner: GITHUB.owner, repo: GITHUB.repo });
   }
 
+  /** The state a check started from (electron-updater emits "checking-for-update" before any error). */
+  private before: UpdateState = { kind: "idle" };
+
   /** A silent (background) failure never hides a known update or nags; a manual one shows the error. */
   private failed(e: Error): void {
     if (this.silent) {
-      if (this.state.kind !== "available") this.set({ kind: "idle" });
+      this.set(this.before.kind === "available" ? this.before : { kind: "idle" });
       return;
     }
     this.set({ kind: "error", message: e.message, url: RELEASES_URL });
@@ -389,6 +396,7 @@ class Updater {
       return this.checking;
     }
     this.silent = silent;
+    this.before = this.state;
     if (!silent) this.dismissed = null;
     this.checking = (async () => {
       try {

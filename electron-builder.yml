@@ -37,6 +37,14 @@ extraResources:
     to: icon.png
 
 asar: true
+# Electron-biztosítékok: a NODE_OPTIONS környezeti változót a csomagolt app nem veszi figyelembe (egy fejlesztői
+# gépen beállított --import/--require macOS-en el is omlasztotta), a node-inspector kapcsolók tiltva;
+# a runAsNode marad, mert a beépített szervert ELECTRON_RUN_AS_NODE-dal indítjuk.
+electronFuses:
+  runAsNode: true
+  enableNodeOptionsEnvironmentVariable: false
+  enableNodeCliInspectArguments: false
+  resetAdHocDarwinSignature: true
 npmRebuild: false
 nodeGypRebuild: false
 buildDependenciesFromSource: false
@@ -62,6 +70,9 @@ nsis:
   # így a "Frissítés most" gomb csendben is le tudja futtatni.
   oneClick: false
   perMachine: false
+  # nincs „mindenkinek / csak nekem” oldal és nincs jogosultságkérés: mindig a felhasználó alá települ,
+  # így a csendes önfrissítés sosem akad el rendszergazdai jelszón
+  allowElevation: false
   allowToChangeInstallationDirectory: true
   createDesktopShortcut: always
   createStartMenuShortcut: true

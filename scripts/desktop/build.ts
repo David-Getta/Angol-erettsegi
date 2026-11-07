@@ -13,6 +13,7 @@ import fs from "node:fs";
 import os from "node:os";
 import path from "node:path";
 import { bundleDesktop } from "./bundle";
+import { releaseNotes } from "./release-notes";
 
 const ROOT = process.cwd();
 const DIST_DIR = ".next-desktop";
@@ -182,6 +183,14 @@ async function main(): Promise<void> {
   const bundled = await bundleDesktop(ROOT);
   console.log(`✓ Electron-csomag: ${bundled.map((f) => path.relative(ROOT, f)).join(", ")}`);
   const eb = ["--config", "electron-builder.yml"];
+  // The release notes travel inside latest*.yml too, so the private-repo provider (which never reads the
+  // GitHub release body) and the public one both show markdown under "Mi változik?".
+  const pkg = JSON.parse(fs.readFileSync(path.join(ROOT, "package.json"), "utf8")) as { version: string };
+  const notesFile = path.join(ROOT, "desktop", "dist", "release_notes.md");
+  const notes = releaseNotes(fs.readFileSync(path.join(ROOT, "CHANGELOG.md"), "utf8"), pkg.version);
+  fs.writeFileSync(notesFile, notes.text + "\n", "utf8");
+  eb.push(`--config.releaseInfo.releaseNotesFile=${notesFile}`);
+  console.log(`✓ kiadás-jegyzet a frissítő-leíróba: ${path.relative(ROOT, notesFile)} (${notes.found ? "CHANGELOG" : "nincs ilyen szakasz – általános szöveg"})`);
   if (has("--dir")) eb.push("--dir");
   if (platform === "win32") eb.push("--win");
   if (platform === "darwin") eb.push("--mac");

@@ -36,6 +36,11 @@ describe("desktop app wiring", () => {
     // per-user Windows install so the silent update can replace the files without admin rights
     expect(yml).toMatch(/perMachine: false/);
     expect(yml).toMatch(/oneClick: false/);
+    // no "all users / only me" page: the silent self-update must never need elevation
+    expect(yml).toMatch(/allowElevation: false/);
+    // the server child needs run-as-node; a stray NODE_OPTIONS must not reach the packaged app
+    expect(yml).toMatch(/runAsNode: true/);
+    expect(yml).toMatch(/enableNodeOptionsEnvironmentVariable: false/);
     // an unsigned arm64 app would not even start on Apple Silicon: ad-hoc signature
     expect(yml).toContain('identity: "-"');
   });
