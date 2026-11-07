@@ -36,6 +36,8 @@ describe("desktop app wiring", () => {
     // per-user Windows install so the silent update can replace the files without admin rights
     expect(yml).toMatch(/perMachine: false/);
     expect(yml).toMatch(/oneClick: false/);
+    // an unsigned arm64 app would not even start on Apple Silicon: ad-hoc signature
+    expect(yml).toContain('identity: "-"');
   });
 
   it("the Electron version has a prebuilt better-sqlite3 binary (the build fetches it instead of compiling)", () => {
@@ -44,7 +46,8 @@ describe("desktop app wiring", () => {
     const major = Number(electron.version.split(".")[0]);
     expect(major).toBeGreaterThanOrEqual(39);
     expect(major).toBeLessThanOrEqual(42);
-    expect(pkg.devDependencies.electron).toContain(electron.version);
+    const declared = Number(((pkg.devDependencies.electron ?? "").match(/\d+/) ?? ["0"])[0]);
+    expect(declared).toBe(major);
   });
 
   it("the preload exposes every IPC channel the main process handles", () => {
@@ -69,6 +72,7 @@ describe("desktop app wiring", () => {
     expect(read("desktop/main.ts")).toContain('APP_SEED_ON_START: "1"');
     // the window waits for this route
     expect(read("app/api/health/route.ts")).toContain("ok: true");
+    expect(read("instrumentation.ts")).toContain("watchParent(");
     expect(read("desktop/main.ts")).toContain("/api/health");
   });
 
@@ -78,6 +82,8 @@ describe("desktop app wiring", () => {
     expect(wf).toContain("workflow_dispatch");
     expect(wf).toContain("npm run desktop:dist");
     expect(wf).toContain("npm run desktop:smoke");
+    expect(wf).toContain("target_commitish: ${{ github.sha }}");
+    expect(wf).toContain("concurrency:");
     expect(wf).toContain("release-files/latest*.yml");
     expect(wf).toContain("softprops/action-gh-release@v2");
     // the release body comes from the CHANGELOG through a file (UTF-8), never via console redirection
@@ -143,7 +149,11 @@ describe("release notes from the changelog", () => {
 
 describe("update banner helpers", () => {
   it("renders release-note markdown as plain text", () => {
-    expect(plainMarkdown("## Cím\n\n- **Félkövér** és `kód` [link](https://x)\n\n\n\n* másik")).toBe("Cím\n\n• Félkövér és kód link\n\n• másik");
+    expect(plainMarkdown("## Cím\n\n- **Félkövér** és `kód` [link](https://x)\n\n\n\n* másik")).toBe("Cím\n\n• Félkövér és kód link\n• másik");
+  });
+  it("renders the HTML the public GitHub provider delivers as plain text", () => {
+    const html = "<h2>Cím</h2>\n<ul>\n<li><strong>Első.</strong> Egy &amp; kettő</li>\n<li>Második<br>sor</li>\n</ul>\n<p>Vége.</p>";
+    expect(plainMarkdown(html)).toBe("Cím\n\n• Első. Egy & kettő\n• Második\nsor\n\nVége.");
   });
   it("shows whole megabytes, never zero", () => {
     expect(megabytes(null)).toBeNull();

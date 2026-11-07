@@ -22,6 +22,8 @@ export type UpdateState =
       installable: boolean;
       /** Page or file to open when the update is not installable. */
       url: string;
+      /** true after "Később": the banner stays hidden, the top-bar dot remains. */
+      dismissed: boolean;
     }
   | { kind: "downloading"; version: string; percent: number; transferred: number; total: number }
   | { kind: "downloaded"; version: string }

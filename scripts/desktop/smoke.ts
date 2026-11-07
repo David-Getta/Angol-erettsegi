@@ -54,7 +54,7 @@ const useXvfb = process.platform === "linux" && !process.env.DISPLAY && spawnSyn
 const cmd = useXvfb ? "xvfb-run" : exe;
 const cmdArgs = useXvfb ? ["--auto-servernum", "--server-args=-screen 0 1400x900x24", exe, ...appArgs] : appArgs;
 console.log(`$ ${[cmd, ...cmdArgs].join(" ")}`);
-const r = spawnSync(cmd, cmdArgs, { encoding: "utf8", timeout: 180_000, env: { ...process.env, ELECTRON_ENABLE_LOGGING: "0" } });
+const r = spawnSync(cmd, cmdArgs, { encoding: "utf8", timeout: 180_000, env: { ...process.env } });
 const lines = (r.stdout ?? "").split("\n").filter((l) => l.startsWith("{"));
 const last = lines[lines.length - 1];
 let result: { ok?: boolean; error?: string; title?: string; subjects?: number; url?: string; version?: string } = {};

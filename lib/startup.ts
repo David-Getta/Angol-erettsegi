@@ -5,6 +5,33 @@ import { examConfig } from "@/lib/exam/config";
 
 export type StartupResult = { backup: string | null; seed: SeedReport };
 
+/** Outcome of the start-up seed, reported by /api/health so the desktop shell can warn the user. */
+export type StartupStatus = { ok: boolean; error?: string; seed?: SeedReport; at: string };
+const holder = globalThis as unknown as { __startupStatus?: StartupStatus };
+export function setStartupStatus(s: StartupStatus): void {
+  holder.__startupStatus = s;
+}
+export function getStartupStatus(): StartupStatus | null {
+  return holder.__startupStatus ?? null;
+}
+
+/**
+ * The desktop shell passes its pid (APP_PARENT_PID): when it disappears (crash, Task Manager) the
+ * server exits too instead of lingering on its port.
+ */
+export function watchParent(pid: number, intervalMs = 5000): NodeJS.Timeout {
+  const timer = setInterval(() => {
+    try {
+      process.kill(pid, 0);
+    } catch {
+      console.log(`[indítás] a héj (${pid}) eltűnt, a szerver leáll`);
+      process.exit(0);
+    }
+  }, intervalMs);
+  timer.unref();
+  return timer;
+}
+
 /**
  * What a freshly started server does before the first request when
  * APP_SEED_ON_START=1 (the desktop app sets it): creates the exchange and data

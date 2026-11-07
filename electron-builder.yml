@@ -81,8 +81,9 @@ mac:
   category: public.app-category.education
   icon: desktop/build/icon.png
   artifactName: Erettsegi-felkeszito-${version}-mac-${arch}.${ext}
-  # nincs Apple Developer aláírás: ad-hoc aláírás, a frissítést a felhasználó tölti le (lásd TELEPITES.md)
-  identity: null
+  # nincs Apple Developer aláírás: ad-hoc aláírás ("-"), e nélkül az Apple Silicon-gép el sem indítaná;
+  # a frissítést a felhasználó tölti le (lásd TELEPITES.md)
+  identity: "-"
   hardenedRuntime: false
   gatekeeperAssess: false
   notarize: false

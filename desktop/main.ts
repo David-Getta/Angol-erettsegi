@@ -14,7 +14,7 @@
  *   --exchange-dir=<folder>           the exchange folder (default: Documents/Érettségi felkészítő/exchange)
  *   --smoke-test[=<screenshot.png>]   start, wait for the page, print a JSON line and exit (CI)
  */
-import { app, BrowserWindow, Menu, dialog, ipcMain, nativeTheme, safeStorage, shell, type MenuItemConstructorOptions } from "electron";
+import { app, BrowserWindow, Menu, dialog, ipcMain, nativeTheme, safeStorage, screen, shell, type MenuItemConstructorOptions } from "electron";
 import { autoUpdater, type UpdateInfo } from "electron-updater";
 import { spawn, type ChildProcess } from "node:child_process";
 import fs from "node:fs";
@@ -48,6 +48,12 @@ const hasFlag = (name: string) => process.argv.some((a) => a === name || a.start
 const DEV_URL = argValue("--dev-url");
 const SMOKE = hasFlag("--smoke-test");
 const SMOKE_SHOT = argValue("--smoke-test");
+
+// Chromium's Linux text-to-speech backend is off unless asked for (the listening tasks read aloud).
+if (process.platform === "linux") app.commandLine.appendSwitch("enable-speech-dispatcher");
+// electron-updater would prefer these over the key saved in the app (developer shells, CI).
+delete process.env.GH_TOKEN;
+delete process.env.GITHUB_TOKEN;
 
 /* -------------------------------------------------------------- paths */
 
@@ -87,8 +93,23 @@ function writeSettings(patch: Partial<DesktopSettings>): DesktopSettings {
 function dataDir(): string {
   return argValue("--data-dir") ?? path.join(USER_DATA, "data");
 }
+let exchangeFallback: string | null = null;
 function exchangeDir(): string {
-  return argValue("--exchange-dir") ?? readSettings().exchangeDir ?? path.join(app.getPath("documents"), "Érettségi felkészítő", "exchange");
+  return exchangeFallback ?? argValue("--exchange-dir") ?? readSettings().exchangeDir ?? path.join(app.getPath("documents"), "Érettségi felkészítő", "exchange");
+}
+/** Creates the folder; when the chosen one cannot be created (e.g. macOS denied access to Documents) the app falls back to its own data folder. */
+function ensureExchangeDir(): string {
+  const wanted = exchangeDir();
+  try {
+    fs.mkdirSync(wanted, { recursive: true });
+    return wanted;
+  } catch (e) {
+    const fallback = path.join(USER_DATA, "exchange");
+    log(`a beadás-mappa nem hozható létre (${wanted}): ${(e as Error).message} – helyette: ${fallback}`);
+    fs.mkdirSync(fallback, { recursive: true });
+    exchangeFallback = fallback;
+    return fallback;
+  }
 }
 function serverDir(): string {
   return app.isPackaged ? path.join(RESOURCES, "server") : path.join(REPO_ROOT, "desktop", "dist", "server");
@@ -155,6 +176,9 @@ class LocalServer {
   child: ChildProcess | null = null;
   url = "";
   port = 0;
+  /** Called when the server dies on its own (not stopped by us). */
+  onCrash: ((code: number | null) => void) | null = null;
+  private stopping = false;
 
   async start(onStatus: (s: string) => void): Promise<string> {
     if (DEV_URL) {
@@ -171,7 +195,9 @@ class LocalServer {
     if (!fs.existsSync(entry)) throw new Error(`hiányzik a szerver: ${entry}`);
     this.port = await freePort(this.port || undefined);
     this.url = `http://127.0.0.1:${this.port}`;
-    for (const d of [dataDir(), exchangeDir(), LOG_DIR]) fs.mkdirSync(d, { recursive: true });
+    for (const d of [dataDir(), LOG_DIR]) fs.mkdirSync(d, { recursive: true });
+    ensureExchangeDir();
+    this.stopping = false;
     const env: NodeJS.ProcessEnv = {
       ...process.env,
       ELECTRON_RUN_AS_NODE: "1",
@@ -185,6 +211,8 @@ class LocalServer {
       APP_EXCHANGE_DIR: exchangeDir(),
       APP_SEED_ON_START: "1",
       APP_VERSION: app.getVersion(),
+      // the server exits by itself when the shell disappears (crash, Task Manager), see lib/startup.ts
+      APP_PARENT_PID: String(process.pid),
       NEXT_TELEMETRY_DISABLED: "1",
     };
     // a globally set NODE_OPTIONS would make the packaged Electron warn and ignore it; the server needs none
@@ -198,10 +226,18 @@ class LocalServer {
     pipe(child.stdout);
     pipe(child.stderr);
     let exited: number | null = null;
+    let started = false;
+    child.on("error", (e) => {
+      exited = -1;
+      log(`a szerver nem indítható: ${e.message}`);
+      if (this.child === child) this.child = null;
+    });
     child.on("exit", (code) => {
       exited = code ?? -1;
       log(`a szerver kilépett (${code})`);
-      if (this.child === child) this.child = null;
+      const mine = this.child === child;
+      if (mine) this.child = null;
+      if (mine && started && !this.stopping && !quitting) this.onCrash?.(code);
     });
     onStatus(t.desktop.splash.seeding);
     const deadline = Date.now() + SERVER_START_TIMEOUT_MS;
@@ -209,6 +245,7 @@ class LocalServer {
       if (exited !== null) throw new Error(`a szerver kilépett (${exited}) – napló: ${path.join(LOG_DIR, "server.log")}`);
       if (await health(this.url)) {
         log("a szerver válaszol");
+        started = true;
         return this.url;
       }
       await sleep(300);
@@ -220,6 +257,7 @@ class LocalServer {
   stop(): void {
     const child = this.child;
     this.child = null;
+    this.stopping = true;
     if (!child || child.exitCode !== null) return;
     try {
       child.kill();
@@ -258,14 +296,15 @@ class Updater {
     for (const l of this.listeners) l(s);
   }
 
-  /** The banner state: an "available" the user dismissed shows as idle. */
+  /** The pushed state: an "available" the user put off carries dismissed=true (banner hidden, top-bar dot kept). */
   visible(): UpdateState {
-    if (this.state.kind === "available" && this.state.version === this.dismissed) return { kind: "idle" };
+    if (this.state.kind === "available") return { ...this.state, dismissed: this.state.version === this.dismissed };
     return this.state;
   }
 
   dismiss(): void {
     if (this.state.kind === "available") this.dismissed = this.state.version;
+    else if (this.state.kind === "error") this.state = { kind: "idle" };
     this.set(this.state);
   }
 
@@ -285,6 +324,7 @@ class Updater {
     autoUpdater.autoDownload = false;
     autoUpdater.autoInstallOnAppQuit = true;
     autoUpdater.allowPrerelease = false;
+    autoUpdater.disableWebInstaller = true;
     autoUpdater.logger = {
       info: (m: unknown) => log(`[updater] ${String(m)}`),
       warn: (m: unknown) => log(`[updater] ⚠ ${String(m)}`),
@@ -298,7 +338,7 @@ class Updater {
         ? info.releaseNotes.map((n) => (typeof n === "string" ? n : n.note ?? "")).join("\n\n")
         : (info.releaseNotes ?? "");
       const size = info.files?.reduce((n, f) => n + (f.size ?? 0), 0) || null;
-      this.set({ kind: "available", version: info.version, notes: notes.trim(), size, installable: this.installable(), url: RELEASES_URL });
+      this.set({ kind: "available", version: info.version, notes: notes.trim(), size, installable: this.installable(), url: RELEASES_URL, dismissed: false });
     });
     autoUpdater.on("update-not-available", () => this.set({ kind: "up-to-date", version: app.getVersion() }));
     autoUpdater.on("download-progress", (p) =>
@@ -317,8 +357,7 @@ class Updater {
     });
     autoUpdater.on("error", (e: Error) => {
       log(`[updater] hiba: ${e.stack ?? e.message}`);
-      if (this.silent) this.set({ kind: "idle" });
-      else this.set({ kind: "error", message: e.message, url: RELEASES_URL });
+      this.failed(e);
     });
   }
 
@@ -329,20 +368,44 @@ class Updater {
     else autoUpdater.setFeedURL({ provider: "github", owner: GITHUB.owner, repo: GITHUB.repo });
   }
 
+  /** A silent (background) failure never hides a known update or nags; a manual one shows the error. */
+  private failed(e: Error): void {
+    if (this.silent) {
+      if (this.state.kind !== "available") this.set({ kind: "idle" });
+      return;
+    }
+    this.set({ kind: "error", message: e.message, url: RELEASES_URL });
+  }
+
+  private checking: Promise<UpdateState> | null = null;
+
   async check(silent: boolean): Promise<UpdateState> {
     this.configure();
     if (!app.isPackaged) return this.state;
     if (this.state.kind === "downloading" || this.state.kind === "downloaded") return this.state;
+    // one check at a time – a manual check joins the running one but still wants to see its outcome
+    if (this.checking) {
+      if (!silent) this.silent = false;
+      return this.checking;
+    }
     this.silent = silent;
     if (!silent) this.dismissed = null;
-    try {
-      await autoUpdater.checkForUpdates();
-    } catch (e) {
-      const err = e as Error;
-      log(`[updater] az ellenőrzés nem sikerült: ${err.message}`);
-      this.set(silent ? { kind: "idle" } : { kind: "error", message: err.message, url: RELEASES_URL });
-    }
-    return this.visible();
+    this.checking = (async () => {
+      try {
+        const result = await autoUpdater.checkForUpdates();
+        // no update feed on this platform (e.g. Linux outside an AppImage): no events were emitted
+        if (!result) this.set({ kind: "disabled", reason: "unsupported" });
+        else if (this.state.kind === "checking") this.set({ kind: "up-to-date", version: app.getVersion() });
+      } catch (e) {
+        const err = e as Error;
+        log(`[updater] az ellenőrzés nem sikerült: ${err.message}`);
+        this.failed(err);
+      } finally {
+        this.checking = null;
+      }
+      return this.visible();
+    })();
+    return this.checking;
   }
 
   async download(): Promise<UpdateState> {
@@ -367,8 +430,8 @@ class Updater {
   install(): void {
     if (this.state.kind !== "downloaded") return;
     log("[updater] telepítés és újraindítás");
-    quitting = true;
-    server.stop();
+    // the server is stopped in before-quit; the new instance (AppImage) may start before this one is gone
+    app.releaseSingleInstanceLock();
     setImmediate(() => autoUpdater.quitAndInstall(true, true));
   }
 }
@@ -420,7 +483,15 @@ function info(): DesktopInfo {
 }
 
 const isHttp = (u: string) => /^https?:\/\//i.test(u);
-const isOurs = (u: string) => !!server.url && u.startsWith(server.url);
+/** Same origin as the local server (a prefix test would accept http://127.0.0.1:1234@evil.com/). */
+const isOurs = (u: string) => {
+  if (!server.url) return false;
+  try {
+    return new URL(u).origin === new URL(server.url).origin;
+  } catch {
+    return false;
+  }
+};
 
 function splashHtml(status: string): string {
   const dark = nativeTheme.shouldUseDarkColors;
@@ -458,8 +529,19 @@ function closeSplash(): void {
   splash = null;
 }
 
+/** Saved bounds are used only when they still fall on a connected display (undocked monitor, changed scaling). */
+function savedBounds(): { x: number; y: number; width: number; height: number } | undefined {
+  const b = readSettings().windowBounds;
+  if (!b) return undefined;
+  const onScreen = screen.getAllDisplays().some((d) => {
+    const a = d.workArea;
+    return b.x + 100 < a.x + a.width && b.x + b.width - 100 > a.x && b.y + 40 < a.y + a.height && b.y >= a.y - 20;
+  });
+  return onScreen ? b : { x: undefined as unknown as number, y: undefined as unknown as number, width: b.width, height: b.height };
+}
+
 function createWindow(url: string): BrowserWindow {
-  const bounds = readSettings().windowBounds;
+  const bounds = savedBounds();
   const w = new BrowserWindow({
     width: bounds?.width ?? 1280,
     height: bounds?.height ?? 860,
@@ -619,11 +701,24 @@ function registerIpc(): void {
     });
     const chosen = r.filePaths[0];
     if (r.canceled || !chosen) return null;
+    const previous = readSettings().exchangeDir;
     writeSettings({ exchangeDir: chosen });
+    exchangeFallback = null;
     log(`új beadás-mappa: ${chosen}`);
     if (!DEV_URL) {
-      const url = await server.restart(() => {});
-      await win.loadURL(url);
+      const current = win.webContents.getURL();
+      const pathname = isOurs(current) ? new URL(current).pathname : "/beallitasok";
+      try {
+        const url = await server.restart(() => {});
+        // answer first so the page can show its confirmation, then reload it from the restarted server
+        setTimeout(() => void win?.loadURL(`${url}${pathname}`), 600);
+      } catch (e) {
+        log(`a szerver nem indult újra az új mappával: ${(e as Error).message}`);
+        writeSettings({ exchangeDir: previous });
+        const url = await server.restart(() => {});
+        setTimeout(() => void win?.loadURL(`${url}${pathname}`), 600);
+        throw e;
+      }
     }
     return info();
   });
@@ -649,34 +744,97 @@ async function smokeTest(url: string): Promise<void> {
   console.log(JSON.stringify({ ok: true, url, version: app.getVersion(), title, subjects, dataDir: dataDir(), exchangeDir: exchangeDir() }));
 }
 
-async function start(): Promise<void> {
-  showSplash();
-  let url: string;
-  try {
-    url = await server.start(splashStatus);
-  } catch (e) {
-    const err = e as Error;
-    log(`indítási hiba: ${err.stack ?? err.message}`);
-    closeSplash();
-    if (SMOKE) {
-      console.log(JSON.stringify({ ok: false, error: err.message }));
-      app.exit(1);
-      return;
-    }
-    const r = await dialog.showMessageBox({
+let starting = false;
+
+/** "Az app nem tudott elindulni" – retry or quit; the splash stays so the app has a window meanwhile. */
+async function startFailed(err: Error): Promise<boolean> {
+  log(`indítási hiba: ${err.stack ?? err.message}`);
+  if (SMOKE) {
+    console.log(JSON.stringify({ ok: false, error: err.message }));
+    app.exit(1);
+    return false;
+  }
+  if (!splash) showSplash();
+  const r = await dialog.showMessageBox(splash!, {
+    type: "error",
+    title: t.appName,
+    message: t.desktop.splash.failed,
+    detail: `${err.message}\n\n${t.desktop.splash.failedHint(path.join(LOG_DIR, "server.log"))}`,
+    buttons: [t.desktop.splash.retry, t.desktop.splash.quit],
+    defaultId: 0,
+  });
+  return r.response === 0;
+}
+
+/** The server died while the window was open: offer a restart, keep the window. */
+function serverCrashed(code: number | null): void {
+  if (quitting || !win) return;
+  log(`a szerver váratlanul leállt (${code}) – újraindítás felajánlva`);
+  void (async () => {
+    const r = await dialog.showMessageBox(win!, {
       type: "error",
       title: t.appName,
       message: t.desktop.splash.failed,
-      detail: `${err.message}\n\n${t.desktop.splash.failedHint(path.join(LOG_DIR, "server.log"))}`,
+      detail: t.desktop.splash.failedHint(path.join(LOG_DIR, "server.log")),
       buttons: [t.desktop.splash.retry, t.desktop.splash.quit],
       defaultId: 0,
     });
-    if (r.response === 0) return start();
-    app.quit();
-    return;
+    if (r.response !== 0 || !win) {
+      app.quit();
+      return;
+    }
+    try {
+      const url = await server.start(() => {});
+      await win.loadURL(url);
+    } catch (e) {
+      serverCrashed(-1);
+      log((e as Error).message);
+    }
+  })();
+}
+
+/** Seeding problems reported by /api/health after start-up (the window is open; the bank may be stale). */
+function warnIfSeedFailed(url: string): void {
+  http
+    .get(`${url}/api/health`, (res) => {
+      let body = "";
+      res.on("data", (c: Buffer) => (body += c.toString("utf8")));
+      res.on("end", () => {
+        try {
+          const j = JSON.parse(body) as { seed?: { ok: boolean; error?: string } };
+          if (j.seed && !j.seed.ok) {
+            log(`a tartalom betöltése nem sikerült: ${j.seed.error}`);
+            if (win && !SMOKE) void dialog.showMessageBox(win, { type: "warning", title: t.appName, message: t.desktop.splash.seedFailed, detail: `${j.seed.error ?? ""}\n\n${path.join(LOG_DIR, "server.log")}`, buttons: ["OK"] });
+          }
+        } catch {
+          /* not json */
+        }
+      });
+    })
+    .on("error", () => {});
+}
+
+async function start(): Promise<void> {
+  starting = true;
+  showSplash();
+  let url: string;
+  for (;;) {
+    try {
+      url = await server.start(splashStatus);
+      break;
+    } catch (e) {
+      if (await startFailed(e as Error)) continue;
+      quitting = true;
+      app.quit();
+      return;
+    }
   }
+  server.onCrash = serverCrashed;
   win = createWindow(url);
+  starting = false;
   buildMenu();
+  warnIfSeedFailed(url);
+  updater.configure();
   if (SMOKE) {
     const timer = setTimeout(() => {
       console.log(JSON.stringify({ ok: false, error: "smoke test timeout" }));
@@ -694,7 +852,6 @@ async function start(): Promise<void> {
     }
     return;
   }
-  updater.configure();
   updater.onChange(sendState);
   setTimeout(() => void updater.check(true), 4000);
   setInterval(() => void updater.check(true), UPDATE_CHECK_INTERVAL_MS);
@@ -713,7 +870,9 @@ if (!app.requestSingleInstanceLock()) {
     registerIpc();
     void start();
   });
-  app.on("window-all-closed", () => app.quit());
+  app.on("window-all-closed", () => {
+    if (!starting) app.quit();
+  });
   app.on("before-quit", () => {
     quitting = true;
     server.stop();

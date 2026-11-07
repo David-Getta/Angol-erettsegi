@@ -8,6 +8,7 @@ import { createSubmissionAction } from "@/app/actions-grading";
 import { CopyButton } from "@/components/CopyButton";
 import { Card, btn, Badge } from "@/components/ui";
 import { hasRecorder, speak, startAudioRecording, startDictation, stopSpeaking, useSpeechSupport } from "@/components/speech";
+import { useDesktop } from "@/components/desktop/bridge";
 import { fmtClock } from "@/components/useTimer";
 import { useContentLang } from "@/components/ContentLang";
 
@@ -186,6 +187,7 @@ function SelfPractice({ task, ttsRate, base: basePath, language, speechLang }: {
   const totalStart = useRef<number | null>(null);
   const router = useRouter();
   const { asr, ready } = useSpeechSupport();
+  const desktop = useDesktop();
   const [keepVoice, setKeepVoice] = useState(true);
   const [clips, setClips] = useState<Record<number, string>>({});
   const audio = useRef<{ stop: () => Promise<string | null> } | null>(null);
@@ -285,7 +287,7 @@ function SelfPractice({ task, ttsRate, base: basePath, language, speechLang }: {
     <Card>
       <p className="text-sm text-muted">{t.speaking.selfPracticeHint}</p>
       {!asr && (
-        <p className="mt-2 rounded-md bg-warn-soft p-2 text-sm text-warn">{typeof window !== "undefined" && window.desktop ? t.speaking.noAsrDesktop : t.speaking.noAsr}</p>
+        <p className="mt-2 rounded-md bg-warn-soft p-2 text-sm text-warn">{desktop ? t.speaking.noAsrDesktop : t.speaking.noAsr}</p>
       )}
       {!finished ? (
         <div className="mt-4 space-y-3">

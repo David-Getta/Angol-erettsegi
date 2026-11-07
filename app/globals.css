@@ -92,6 +92,7 @@ body {
 }
 
 /* Distraction-free exam view: the page sets data-focus on <body>. */
+body[data-focus="true"] .update-bar,
 body[data-focus="true"] .app-nav,
 body[data-focus="true"] .app-topbar {
   display: none !important;
@@ -134,6 +135,9 @@ kbd {
 
 /* Printing a task, a lesson or a guide: content only, light colours, no controls. */
 @media print {
+  .update-bar {
+    display: none;
+  }
   :root,
   :root.dark {
     --bg: #ffffff;

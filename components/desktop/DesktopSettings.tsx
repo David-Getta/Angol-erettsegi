@@ -75,7 +75,7 @@ export function DesktopSettings() {
 
   const field = "mt-1 w-full rounded-md border border-border bg-surface px-3 py-2";
   return (
-    <div data-testid="desktop-settings">
+    <div data-testid="desktop-settings" className="mt-5">
     <Card title={t.desktop.title}>
       <div className="grid gap-5 md:grid-cols-2">
         <div>
@@ -118,7 +118,7 @@ export function DesktopSettings() {
                   <code className="block break-all font-mono text-xs">{info.paths[f.kind]}</code>
                 </span>
                 <span className="flex gap-1">
-                  <button type="button" className={btn.small} onClick={() => void api.openPath(f.kind)}>
+                  <button type="button" className={btn.small} onClick={() => void api.openPath(f.kind)} aria-label={`${t.desktop.open}: ${f.label}`}>
                     {t.desktop.open}
                   </button>
                   {f.kind === "exchange" && (

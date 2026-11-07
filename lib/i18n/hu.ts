@@ -845,7 +845,7 @@ export const t = {
     exchangeChanged: "A beadás-mappa módosult, az app újraindította a szervert.",
     token: "Frissítési kulcs (privát repóhoz)",
     tokenHint:
-      "Csak akkor kell, ha a GitHub-repó privát: egy fine-grained személyes token (github.com → Settings → Developer settings → Fine-grained tokens), csak ehhez a repóhoz, csak „Contents: Read-only” joggal. A kulcs csak ezen a gépen tárolódik; üresen hagyva törlődik.",
+      "Csak akkor kell, ha a GitHub-repó privát: egy fine-grained személyes token (github.com → Settings → Developer settings → Fine-grained tokens), csak ehhez a repóhoz, csak „Contents: Read-only” joggal. A kulcs csak ezen a gépen tárolódik, az operációs rendszer kulcstárával titkosítva (ahol ez nem elérhető, titkosítás nélkül, a felhasználói mappában); üresen hagyva törlődik.",
     tokenPlaceholder: "github_pat_…",
     tokenSet: "Van mentett kulcs.",
     tokenSaved: "A kulcs mentve – frissítés keresése…",
@@ -882,6 +882,7 @@ export const t = {
       starting: "Az app indítása…",
       seeding: "A feladatbank betöltése…",
       failed: "Az app nem tudott elindulni.",
+      seedFailed: "A feladatbank betöltése nem sikerült – az app a korábbi feladatokkal fut.",
       failedHint: (log: string) => `Részletek a naplóban: ${log}\n\nZárd be, és indítsd újra az appot. Ha marad, töröld a data mappa app.db-wal fájlját, vagy jelezd a hibát.`,
       retry: "Újrapróbálom",
       quit: "Kilépés",

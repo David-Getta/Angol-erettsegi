@@ -5,10 +5,24 @@ import { t } from "@/lib/i18n/hu";
 import { btn } from "@/components/ui";
 import { megabytes, useDesktop, useUpdateState } from "./bridge";
 
-/** Markdown from the GitHub release body shown as plain, readable text. */
+/**
+ * The release notes as plain, readable text. electron-updater hands over the GitHub release body as
+ * HTML (public provider, from the releases feed) or as markdown (private provider), so both are stripped.
+ */
 export function plainMarkdown(md: string): string {
   return md
     .replace(/\r/g, "")
+    .replace(/<br\s*\/?>/gi, "\n")
+    .replace(/<\/(p|div|h[1-6]|ul|ol|blockquote|pre)>/gi, "\n\n")
+    .replace(/<li[^>]*>/gi, "• ")
+    .replace(/<\/li>/gi, "\n")
+    .replace(/<[^>]+>/g, "")
+    .replace(/&nbsp;/g, " ")
+    .replace(/&amp;/g, "&")
+    .replace(/&lt;/g, "<")
+    .replace(/&gt;/g, ">")
+    .replace(/&quot;/g, '"')
+    .replace(/&#39;|&apos;/g, "'")
     .replace(/^#{1,6}\s+/gm, "")
     .replace(/\*\*(.+?)\*\*/g, "$1")
     .replace(/__(.+?)__/g, "$1")
@@ -16,6 +30,7 @@ export function plainMarkdown(md: string): string {
     .replace(/\[([^\]]+)\]\([^)]+\)/g, "$1")
     .replace(/^[ \t]*[-*][ \t]+/gm, "• ")
     .replace(/\n{3,}/g, "\n\n")
+    .replace(/(• [^\n]*)\n\n(?=• )/g, "$1\n")
     .trim();
 }
 
@@ -31,11 +46,12 @@ export function UpdateBar() {
   const [notesOpen, setNotesOpen] = useState(false);
   const [busy, setBusy] = useState(false);
   if (!api || !state) return null;
+  if (state.kind === "available" && state.dismissed) return null;
 
-  const box = "mb-5 rounded-xl border px-4 py-3 text-sm";
+  const box = "update-bar mb-5 rounded-xl border px-4 py-3 text-sm";
   if (state.kind === "downloading") {
     return (
-      <div className={`${box} border-warn bg-warn-soft`} data-testid="update-bar" role="status">
+      <div className={`${box} border-warn bg-warn-soft`} data-testid="update-bar" role="status" aria-live="off">
         <div className="flex items-center justify-between gap-3">
           <span className="font-medium text-warn">
             ⭳ {t.desktop.available(state.version)} · {t.desktop.downloading(state.percent)}
@@ -71,6 +87,9 @@ export function UpdateBar() {
           <button type="button" className={btn.small} onClick={() => void api.openExternal(state.url)}>
             {t.desktop.errorManual}
           </button>
+          <button type="button" className={btn.small} onClick={() => void api.update.dismiss()}>
+            {t.desktop.close}
+          </button>
         </span>
       </div>
     );
@@ -94,7 +113,7 @@ export function UpdateBar() {
         </div>
         <div className="flex flex-wrap items-center gap-2">
           {state.notes && (
-            <button type="button" className={btn.ghost} onClick={() => setNotesOpen((o) => !o)} aria-expanded={notesOpen}>
+            <button type="button" className={btn.ghost} onClick={() => setNotesOpen((o) => !o)} aria-expanded={notesOpen} aria-controls="update-notes">
               {t.desktop.whatsNew}
             </button>
           )}
@@ -107,7 +126,7 @@ export function UpdateBar() {
         </div>
       </div>
       {notesOpen && (
-        <div className="mt-3 rounded-lg border border-border bg-surface p-3">
+        <div className="mt-3 rounded-lg border border-border bg-surface p-3" id="update-notes">
           <div className="mb-1 text-xs font-semibold uppercase tracking-wide text-muted">{t.desktop.whatsNewTitle(state.version)}</div>
           <pre className="whitespace-pre-wrap font-sans text-sm">{plainMarkdown(state.notes) || t.desktop.noNotes}</pre>
         </div>
