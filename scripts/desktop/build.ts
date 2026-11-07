@@ -41,6 +41,21 @@ function electronVersion(): string {
   return pkg.version;
 }
 
+/** The electron package's postinstall downloads the runtime; when scripts were skipped (CI, ignore-scripts) fetch it now. */
+function ensureElectronBinary(): string {
+  const dist = path.join(ROOT, "node_modules", "electron", "dist");
+  const exe = path.join(dist, process.platform === "win32" ? "electron.exe" : process.platform === "darwin" ? "Electron.app/Contents/MacOS/Electron" : "electron");
+  if (!fs.existsSync(exe)) {
+    console.log("… az Electron futtatókörnyezet letöltése (node_modules/electron/install.js)");
+    run(process.execPath, [path.join(ROOT, "node_modules", "electron", "install.js")]);
+  }
+  if (!fs.existsSync(exe)) {
+    console.error(`✖ nincs Electron futtató: ${exe}`);
+    process.exit(1);
+  }
+  return exe;
+}
+
 function copyDir(from: string, to: string): void {
   fs.cpSync(from, to, { recursive: true, verbatimSymlinks: true });
 }
@@ -135,13 +150,13 @@ function nativeForElectron(platform: string, arch: string): void {
   }
   // Load it once in Electron's Node to be sure the ABI matches (only when building for this machine).
   if (platform === process.platform && (platform === "darwin" || arch === process.arch)) {
-    const electron = path.join(ROOT, "node_modules", "electron", "dist", process.platform === "win32" ? "electron.exe" : process.platform === "darwin" ? "Electron.app/Contents/MacOS/Electron" : "electron");
+    const electron = ensureElectronBinary();
     const check = spawnSync(electron, ["-e", `const D=require(${JSON.stringify(dir)});const db=new D(":memory:");console.log("better-sqlite3 OK, sqlite", db.prepare("select sqlite_version() v").get().v)`], {
       env: { ...process.env, ELECTRON_RUN_AS_NODE: "1" },
       encoding: "utf8",
     });
     if (check.status !== 0) {
-      console.error(`✖ a natív modul nem töltődik be az Electronban:\n${check.stderr}`);
+      console.error(`✖ a natív modul nem töltődik be az Electronban (${check.status ?? check.error?.message}):\n${check.stderr ?? ""}`);
       process.exit(1);
     }
     console.log(`✓ ${check.stdout.trim()}`);
