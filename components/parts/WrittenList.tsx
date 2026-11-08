@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { getSettings } from "@/lib/settings";
-import { listTasks, contentStock } from "@/lib/tasks";
+import { listTasks, contentStock, filterByOrigin, type Origin } from "@/lib/tasks";
+import { OriginFilter } from "@/components/OriginFilter";
 import { listSubmissions } from "@/lib/submissions";
 import { pendingInbox } from "@/lib/exchange/files";
 import { examConfig, topicName, taskTypeName } from "@/lib/exam/config";
@@ -17,10 +18,11 @@ import { ReloadContentButton } from "@/components/ReloadContentButton";
 import type { ExamPart } from "@/lib/exam/config";
 
 /** List page of a written-task part (e.g. Íráskészség, Esszé, Kidolgozott feladatok). */
-export function WrittenList({ part }: { part: ExamPart }) {
+export function WrittenList({ part, origin }: { part: ExamPart; origin?: Origin }) {
   const s = getSettings();
   const base = `/${part.slug}`;
-  const tasks = listTasks("writing", s.level);
+  const everything = listTasks("writing", s.level);
+  const tasks = filterByOrigin(everything, origin);
   const rubric = examConfig.writingRubric(s.level);
   const subs = listSubmissions("writing").filter((x) => x.level === s.level);
   const mine = new Set(subs.map((x) => x.id));
@@ -38,6 +40,7 @@ export function WrittenList({ part }: { part: ExamPart }) {
           </>
         } />
       <GuideLinks type="writing" title={t.guides.byTextType} names={Object.fromEntries(examConfig.taskTypes().writing.map((x) => [x.id, x.name]))} />
+      <OriginFilter items={everything} origin={origin} href={(o) => `${base}${o ? `?forras=${o}` : ""}`} />
       {pending.length > 0 && (
         <CommandTip command="/javitas" message={`${t.dashboard.pendingCount(pending.length)}. ${t.tips.grading}`} testId="javitas-tip">
           <ImportButton variant="secondary" />
@@ -71,7 +74,7 @@ export function WrittenList({ part }: { part: ExamPart }) {
                       <li key={x.id}>
                         <Link href={`${base}/${x.id}`} className="block h-full rounded-xl border border-border bg-surface p-4 hover:border-accent" data-testid={`task-${x.id}`}>
                           <div className="flex flex-wrap gap-1.5">
-                            <SourceBadge source={x.source} />
+                            <SourceBadge source={x.source} tags={x.tags} />
                             <Badge>{taskTypeName("writing", x.type)}</Badge>
                           </div>
                           <div className="mt-2 font-medium">{x.title}</div>

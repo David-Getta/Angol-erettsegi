@@ -1,6 +1,7 @@
 import Link from "next/link";
 import type { Level, ObjectiveSection } from "@/lib/content/schema";
-import { listTasks, contentStock } from "@/lib/tasks";
+import { listTasks, contentStock, filterByOrigin, type Origin } from "@/lib/tasks";
+import { OriginFilter } from "./OriginFilter";
 import { examConfig, topicName, taskTypeName, partName } from "@/lib/exam/config";
 import { feladatokCommand } from "@/lib/commands/build";
 import { t } from "@/lib/i18n/hu";
@@ -8,8 +9,9 @@ import { Badge, Empty, SourceBadge, pct, btn } from "./ui";
 import { CommandTip } from "./CommandTip";
 
 /** Task picker for reading / language use / listening, grouped by task type. */
-export function TaskList({ section, level, base, showReserved }: { section: ObjectiveSection; level: Level; base: string; showReserved: boolean }) {
-  const all = listTasks(section, level);
+export function TaskList({ section, level, base, showReserved, origin }: { section: ObjectiveSection; level: Level; base: string; showReserved: boolean; origin?: Origin }) {
+  const everything = listTasks(section, level);
+  const all = filterByOrigin(everything, origin);
   const tasks = all.filter((x) => showReserved || !x.reservedFor);
   const hiddenReserved = all.length - tasks.length;
   const types = examConfig.taskTypes()[section];
@@ -23,6 +25,7 @@ export function TaskList({ section, level, base, showReserved }: { section: Obje
 
   return (
     <div className="space-y-6">
+      <OriginFilter items={everything} origin={origin} href={(o) => `${base}${o ? `?forras=${o}` : ""}`} />
       {(totalUnused <= app.lowStock.threshold || low.length > 0) && (
         <CommandTip
           command={feladatokCommand(examConfig.subject().id, base.slice(1), level, app.lowStock.suggestCount)}
@@ -41,7 +44,7 @@ export function TaskList({ section, level, base, showReserved }: { section: Obje
             {groups.get(type)!.map((x) => (
               <li key={x.id} className="flex flex-col rounded-xl border border-border bg-surface p-4" data-testid={`task-${x.id}`}>
                 <div className="flex flex-wrap gap-1.5">
-                  <SourceBadge source={x.source} />
+                  <SourceBadge source={x.source} tags={x.tags} />
                   <Badge>{topicName(x.topic)}</Badge>
                   {x.reservedFor && <Badge tone="warn">{t.common.reserved[x.reservedFor]}</Badge>}
                 </div>

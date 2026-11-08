@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { getSettings } from "@/lib/settings";
-import { listTasks, contentStock } from "@/lib/tasks";
+import { listTasks, contentStock, filterByOrigin, type Origin } from "@/lib/tasks";
+import { OriginFilter } from "@/components/OriginFilter";
 import { listSubmissions } from "@/lib/submissions";
 import { pendingInbox } from "@/lib/exchange/files";
 import { examConfig, levelStructure, taskTypeName } from "@/lib/exam/config";
@@ -17,12 +18,13 @@ import { ReloadContentButton } from "@/components/ReloadContentButton";
 import type { ExamPart } from "@/lib/exam/config";
 
 /** List page of the oral part (speaking tasks / tételek), filterable by topic. */
-export function OralList({ part, tema }: { part: ExamPart; tema?: string }) {
+export function OralList({ part, tema, origin }: { part: ExamPart; tema?: string; origin?: Origin }) {
   const s = getSettings();
   const base = `/${part.slug}`;
   const topics = examConfig.topics().topics;
   const oral = levelStructure(s.level).oral;
-  const tasks = listTasks("speaking", s.level).filter((x) => !tema || x.topic === tema);
+  const everything = listTasks("speaking", s.level).filter((x) => !tema || x.topic === tema);
+  const tasks = filterByOrigin(everything, origin);
   const subs = listSubmissions("speaking").filter((x) => x.level === s.level);
   const mine = new Set(subs.map((x) => x.id));
   const pending = pendingInbox().filter((id) => mine.has(id));
@@ -38,6 +40,7 @@ export function OralList({ part, tema }: { part: ExamPart; tema?: string }) {
           </>
         } />
       <GuideLinks type="speaking" title={t.guides.byTaskType} names={Object.fromEntries(examConfig.taskTypes().speaking.map((x) => [x.id, x.name]))} />
+      <OriginFilter items={everything} origin={origin} href={(o) => `${base}?${new URLSearchParams({ ...(tema ? { tema } : {}), ...(o ? { forras: o } : {}) }).toString()}`} />
       {pending.length > 0 && (
         <CommandTip command="/javitas" message={`${t.dashboard.pendingCount(pending.length)}. ${t.tips.grading}`} testId="javitas-tip">
           <ImportButton variant="secondary" />
@@ -86,7 +89,7 @@ export function OralList({ part, tema }: { part: ExamPart; tema?: string }) {
                     <li key={x.id}>
                       <Link href={`${base}/${x.id}`} className="block h-full rounded-xl border border-border bg-surface p-4 hover:border-accent" data-testid={`task-${x.id}`}>
                         <div className="flex flex-wrap gap-1.5">
-                          <SourceBadge source={x.source} />
+                          <SourceBadge source={x.source} tags={x.tags} />
                           <Badge>{taskTypeName("speaking", x.type)}</Badge>
                           <Badge>{topics.find((tp) => tp.id === x.topic)?.name ?? x.topic}</Badge>
                         </div>

@@ -8,9 +8,10 @@ import { t } from "@/lib/i18n/hu";
 import { Card, PageHeader, btn } from "@/components/ui";
 import { TaskList } from "@/components/TaskList";
 import { ReloadContentButton } from "@/components/ReloadContentButton";
+import type { Origin } from "@/lib/tasks";
 
 /** List page of an objective part (tasks with items): reading, language use, listening, short-answer papers … */
-export function ObjectiveList({ part, showReserved }: { part: ExamPart; showReserved: boolean }) {
+export function ObjectiveList({ part, showReserved, origin }: { part: ExamPart; showReserved: boolean; origin?: Origin }) {
   const s = getSettings();
   const base = `/${part.slug}`;
   const groups = part.features.categoryGroups;
@@ -51,7 +52,7 @@ export function ObjectiveList({ part, showReserved }: { part: ExamPart; showRese
           </div>
         </Card>
       )}
-      <TaskList section={part.id as ObjectiveSection} level={s.level} base={base} showReserved={showReserved} />
+      <TaskList section={part.id as ObjectiveSection} level={s.level} base={base} showReserved={showReserved} origin={origin} />
     </div>
   );
 }

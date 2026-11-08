@@ -29,7 +29,7 @@ Argumentumok: `$ARGUMENTS` – formátum: `<tantárgy> <fájl> [témakör]`.
    **csak a fájlban szereplő anyagból dolgozz**: a benne lévő definíciók (az „arany Definíció dobozok”) szó szerint kerüljenek a
    kártyákra, kulcspontokra és magyarázatokba; a fájlban nem szereplő elméletet, képletet, adatot ne találj ki.
 
-## 2. Mit kell írni (minden fájl `source: "generated"`, `createdAt` = a mai nap, `tags`-ben a forrásfájl neve, pl. `"lecke:Gazdasagi_ismeretek_20261017.pdf"`)
+## 2. Mit kell írni (minden fájl `source: "generated"`, `createdAt` = a mai nap, `tags`-ben a `"tanari-diasor"` címke – ettől jelenik meg külön „Saját tanári anyag”-ként az appban – és a forrásfájl neve, pl. `"lecke:Gazdasagi_ismeretek_20261017.pdf"`)
 
 - **Objektív feladatok** a tárgy objektív vizsgarész-helyére (pl. `reading` = gyorskérdések / rövid feladatok): szintenként 3–5 feladat,
   6–8 itemmel, a `task-types.json` típusaiból változatosan (feleletválasztás, igaz–hamis, párosítás, fogalom felismerése, rövid

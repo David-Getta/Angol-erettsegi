@@ -16,6 +16,7 @@ export type TaskSummary = {
   itemCount: number;
   reservedFor: string | null;
   categories: string[];
+  tags: string[];
   attempts: number;
   bestPct: number | null;
   lastPct: number | null;
@@ -94,6 +95,7 @@ export function listTasks(section: Section, level: Level): TaskSummary[] {
         itemCount: r.itemCount,
         reservedFor: r.reservedFor,
         categories: r.categories,
+        tags: r.tags ?? [],
         attempts: s?.n ?? 0,
         bestPct: s?.best ?? null,
         lastPct: s?.last ?? null,
@@ -165,4 +167,18 @@ export function countTasks(section: Section, level: Level): number {
     .where(and(eq(tasks.subject, currentSubject()), eq(tasks.section, section), eq(tasks.level, level), eq(tasks.active, true)))
     .get();
   return r?.n ?? 0;
+}
+
+/** Tag of the content made from the student's own uploaded teacher material (/lecke). */
+export const TEACHER_TAG = "tanari-diasor";
+export type Origin = "tanari" | "altalanos";
+
+export function parseOrigin(v: string | undefined): Origin | undefined {
+  return v === "tanari" || v === "altalanos" ? v : undefined;
+}
+
+/** Keeps the own-teacher-material items ("tanari") or the general bank ("altalanos"); no filter = all. */
+export function filterByOrigin<T extends { tags: string[] }>(list: T[], origin: Origin | undefined): T[] {
+  if (!origin) return list;
+  return list.filter((x) => (origin === "tanari") === x.tags.includes(TEACHER_TAG));
 }

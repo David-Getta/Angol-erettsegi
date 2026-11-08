@@ -47,12 +47,19 @@ export function Badge({ children, tone = "neutral", title }: { children: ReactNo
   );
 }
 
-export function SourceBadge({ source }: { source: string }) {
+export function SourceBadge({ source, tags = [] }: { source: string; tags?: string[] }) {
   return (
-    <Badge tone={source === "official" ? "accent" : "neutral"} title={t.common.sourceHint[source]}>
-      {source === "official" ? "🏛 " : "✦ "}
-      {t.common.source[source] ?? source}
-    </Badge>
+    <>
+      <Badge tone={source === "official" ? "accent" : "neutral"} title={t.common.sourceHint[source]}>
+        {source === "official" ? "🏛 " : "✦ "}
+        {t.common.source[source] ?? source}
+      </Badge>
+      {tags.includes("tanari-diasor") && (
+        <Badge tone="warn" title={t.common.origin.teacherHint}>
+          {t.common.origin.teacherBadge}
+        </Badge>
+      )}
+    </>
   );
 }
 

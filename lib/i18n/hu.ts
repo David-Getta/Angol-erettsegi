@@ -99,6 +99,14 @@ export const t = {
     open: "Megnyitás",
     details: "Részletek",
     source: { official: "Hivatalos", generated: "Generált" } as Record<string, string>,
+    origin: {
+      label: "Forrás:",
+      all: "Mind",
+      tanari: "📒 Saját tanári anyag",
+      altalanos: "Általános feladatbank",
+      teacherBadge: "📒 Tanári diasor",
+      teacherHint: "A saját feltöltött tanári diasoraidból készült (csak az ott szereplő anyag).",
+    },
     sourceHint: {
       official: "Az Oktatási Hivatal korábbi feladatsorából importálva.",
       generated: "A Claude Code által generált gyakorlófeladat – nem hivatalos.",
