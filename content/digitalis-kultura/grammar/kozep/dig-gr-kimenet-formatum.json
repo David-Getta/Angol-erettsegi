@@ -1,0 +1,228 @@
+{
+  "schemaVersion": 1,
+  "id": "dig-gr-kimenet-formatum",
+  "subject": "digitalis-kultura",
+  "revision": 1,
+  "level": "kozep",
+  "source": "generated",
+  "topic": "nyelvtan",
+  "title": "Kimenet formátuma",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "grammar",
+  "type": "lesson",
+  "category": "kimenet-formatum",
+  "summaryHu": "A programozási feladat javítási útmutatója a kimenetet a mintához méri: a feladat sorszáma („2. feladat”), a kért szöveg, a kért pontosság (pl. két tizedesjegy), az elválasztó (szóköz, vessző) és a sorrend is számít. A kimenet formátuma külön pontokat ér, és a fájlba írásnál a sorvégjel vagy a kódolás hiánya is pontlevonás.",
+  "rules": [
+    {
+      "title": "A feladat szövegének pontos követése",
+      "explanation": "Minden részfeladat előtt írd ki a sorszámát, ha a feladat kéri; a kiírt szöveg legyen a minta szerinti (pl. „A bérlések száma: 7”), a kért mértékegységgel, és a kért helyre (képernyő vagy fájl).",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "print(\"2. feladat\")",
+          "hu": "a feladat sorszáma"
+        },
+        {
+          "en": "print(\"A bérlések száma:\", len(berlesek))",
+          "hu": "a minta szerinti szöveg"
+        }
+      ]
+    },
+    {
+      "title": "A print paraméterei",
+      "explanation": "A print a vesszővel elválasztott értékek közé alapértelmezésben egy szóközt tesz (sep=\" \"), a végére sortörést (end=\"\\n\"). sep=\"\" vagy sep=\";\" más elválasztót, end=\" \" egy sorba írást ad.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "print(1, 2, 3, sep=\";\")  →  1;2;3",
+          "hu": "egyedi elválasztó"
+        },
+        {
+          "en": "print(x, end=\" \")",
+          "hu": "a következő kiírás ugyanabba a sorba kerül"
+        }
+      ]
+    },
+    {
+      "title": "Számok formázása f-stringgel",
+      "explanation": "f\"{x:.2f}\" két tizedesjegyre kerekítve ír ki (8842.857… → 8842.86); f\"{n:02d}\" legalább két jegyen, vezető nullával (7 → 07); f\"{s:>10}\" 10 karakter szélesen jobbra igazítva. A round(x, 2) számot ad vissza, de a kiírásnál a felesleges nullák elmaradnak (round(2.5, 2) → 2.5).",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "f\"{osszes / 7:.2f}\"",
+          "hu": "átlag két tizedesjegyre"
+        },
+        {
+          "en": "f\"{h // 60}:{h % 60:02d}\"",
+          "hu": "ó:pp alak: 523 perc → 8:43"
+        }
+      ]
+    },
+    {
+      "title": "Lista kiírása elválasztóval",
+      "explanation": "A join() csak karakterláncokat fűz össze: \", \".join(nevek) vagy \" \".join(str(x) for x in szamok). A print(lista) a Python írásmódját adja ([1, 2, 3]), ami a vizsgán általában nem a kért formátum.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "print(\" \".join(str(x) for x in t))",
+          "hu": "számok egy sorban, szóközzel"
+        },
+        {
+          "en": "print(*t)",
+          "hu": "ugyanez rövidebben: a lista elemei szóközzel"
+        }
+      ]
+    },
+    {
+      "title": "Fájlba írás",
+      "explanation": "with open(\"ki.txt\", \"w\", encoding=\"utf-8\") as f: – a write() nem tesz sortörést, ezt neked kell hozzáírnod (\"\\n\"); számot előbb str()-rel alakíts szöveggé, vagy használd a print(…, file=f) formát.",
+      "emeltOnly": true,
+      "examples": [
+        {
+          "en": "f.write(rendszam + \" \" + str(dij) + \"\\n\")",
+          "hu": "egy sor a fájlba"
+        },
+        {
+          "en": "print(rendszam, dij, file=f)",
+          "hu": "ugyanez print-tel"
+        }
+      ]
+    }
+  ],
+  "commonMistakes": [
+    {
+      "wrong": "print(\"Napi átlag:\", osszes / 7)  →  Napi átlag: 8842.857142857143",
+      "right": "print(f\"Napi átlag: {osszes / 7:.2f}\")",
+      "why": "A feladat két tizedesjegyet kért; a formázatlan kimenet nem a kért alak, pontot veszítesz."
+    },
+    {
+      "wrong": "A részfeladatok eredményeit sorszám nélkül, egymás alá írom ki.",
+      "right": "Minden rész előtt: print(\"3. feladat\")",
+      "why": "A javító a sorszám alapján azonosítja a részfeladatokat; ha hiányzik, a kimenetet nehéz vagy lehetetlen pontozni."
+    },
+    {
+      "wrong": "\", \".join(szamok) – ahol a szamok egész számok listája.",
+      "right": "\", \".join(str(x) for x in szamok)",
+      "why": "A join() csak karakterláncokat fogad, számokra TypeError hibát ad."
+    },
+    {
+      "wrong": "f.write(sor) egy ciklusban, sortörés nélkül.",
+      "right": "f.write(sor + \"\\n\")",
+      "why": "Sortörés nélkül minden adat egyetlen hosszú sorba kerül a fájlban."
+    }
+  ],
+  "examTips": [
+    "Mielőtt beadod, futtasd le a programot a mintaadatokkal, és vesd össze a kimenetet a feladatlap mintájával: szöveg, szóközök, tizedesjegyek, sorrend.",
+    "Ha a feladat „egy sorban, szóközzel elválasztva” kér valamit, használd a join()-t vagy a print(*lista)-t, ne a print(lista)-t.",
+    "Fájlba írás után nyisd meg a létrejött fájlt, és ellenőrizd a tartalmát és a sortöréseket."
+  ],
+  "practice": [
+    {
+      "kind": "text",
+      "prompt": "Mit ír ki a program?\nprint(f\"{7 / 3:.2f}\")",
+      "answer": [
+        "2.33"
+      ],
+      "explanation": "Kimenet: 2.33. A .2f két tizedesjegyre kerekít: 7 / 3 = 2.3333…",
+      "id": "1",
+      "category": "kimenet-formatum"
+    },
+    {
+      "kind": "text",
+      "prompt": "Mit ír ki a program?\nprint(\"a\", \"b\", \"c\", sep=\"-\")",
+      "answer": [
+        "a-b-c"
+      ],
+      "explanation": "Kimenet: a-b-c. A sep paraméter adja meg az értékek közti elválasztót (alapértelmezésben szóköz).",
+      "id": "2",
+      "category": "kimenet-formatum"
+    },
+    {
+      "kind": "text",
+      "prompt": "Mit ír ki a program?\nh = 5\np = 7\nprint(f\"{h}:{p:02d}\")",
+      "answer": [
+        "5:07"
+      ],
+      "explanation": "Kimenet: 5:07. A :02d legalább két jegyen, vezető nullával írja ki a percet – így lesz szabályos ó:pp alak.",
+      "id": "3",
+      "category": "kimenet-formatum"
+    },
+    {
+      "kind": "choice",
+      "prompt": "A feladat: „Írja ki egy sorban, szóközzel elválasztva a t lista páros elemeit!” (a t egész számok listája). Melyik helyes?",
+      "options": [
+        {
+          "key": "A",
+          "text": "for x in t: if x % 2 == 0: print(x)"
+        },
+        {
+          "key": "B",
+          "text": "print(\" \".join(x for x in t if x % 2 == 0))"
+        },
+        {
+          "key": "C",
+          "text": "print([x for x in t if x % 2 == 0])"
+        },
+        {
+          "key": "D",
+          "text": "print(\" \".join(str(x) for x in t if x % 2 == 0))"
+        }
+      ],
+      "answer": "D",
+      "explanation": "D. A páros elemeket karakterlánccá alakítja, és szóközzel fűzi össze egyetlen sorba.",
+      "wrongOptions": {
+        "A": "Minden szám külön sorba kerülne (és egy sorba írva szintaktikailag sem helyes).",
+        "B": "A join egész számokat kapna – TypeError.",
+        "C": "A lista Python-alakban, szögletes zárójellel és vesszőkkel jelenne meg."
+      },
+      "id": "4",
+      "category": "kimenet-formatum"
+    },
+    {
+      "kind": "text",
+      "prompt": "Mit ír ki a program?\nfor i in range(3):\n    print(i, end=\"-\")",
+      "answer": [
+        "0-1-2-"
+      ],
+      "explanation": "Kimenet: 0-1-2- – az end=\"-\" miatt minden szám után kötőjel áll, és nincs sortörés; a végén is ott a kötőjel.",
+      "id": "5",
+      "category": "kimenet-formatum"
+    },
+    {
+      "kind": "choice",
+      "prompt": "Melyik írja a sor változó tartalmát önálló sorként a ki.txt fájlba (a fájl f néven, írásra van megnyitva)?",
+      "options": [
+        {
+          "key": "A",
+          "text": "f.write(sor + \"\\n\")"
+        },
+        {
+          "key": "B",
+          "text": "f.write(sor)"
+        },
+        {
+          "key": "C",
+          "text": "print(sor)"
+        },
+        {
+          "key": "D",
+          "text": "f.write(sor, \"\\n\")"
+        }
+      ],
+      "answer": "A",
+      "explanation": "A. A write() pontosan azt írja ki, amit kap; a sortörést (\\n) hozzá kell fűzni. (Egyenértékű: print(sor, file=f).)",
+      "wrongOptions": {
+        "B": "Sortörés nélkül a sorok egybefolynak.",
+        "C": "A képernyőre ír, nem a fájlba.",
+        "D": "A write() egyetlen argumentumot fogad – TypeError."
+      },
+      "id": "6",
+      "category": "kimenet-formatum"
+    }
+  ],
+  "relatedCategories": [
+    "algoritmus-logika",
+    "fajlkezeles"
+  ]
+}

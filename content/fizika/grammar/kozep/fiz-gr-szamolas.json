@@ -1,0 +1,279 @@
+{
+  "schemaVersion": 1,
+  "id": "fiz-gr-szamolas",
+  "subject": "fizika",
+  "revision": 1,
+  "level": "kozep",
+  "source": "generated",
+  "topic": "nyelvtan",
+  "title": "Számolás, normálalak, nagyságrend, kerekítés",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "grammar",
+  "type": "lesson",
+  "category": "szamolas",
+  "summaryHu": "A helyes képlet mellett a számolás pontossága is pontot ér: a hatványokkal való műveletek, a számológép helyes használata, a kerekítés és a nagyságrendi ellenőrzés. A legtöbb pontvesztés a túl korai kerekítésből, a normálalak hibáiból és abból adódik, hogy a diák nem veszi észre a nyilvánvalóan rossz nagyságrendű eredményt (pl. 300 m/s-os futó).",
+  "rules": [
+    {
+      "title": "Normálalak és hatványok",
+      "explanation": "Nagyon nagy és nagyon kicsi számokat normálalakban írunk: a · 10ⁿ, ahol 1 ≤ a < 10. Szorzásnál a kitevők összeadódnak, osztásnál kivonódnak: 10³ · 10⁻⁵ = 10⁻², 10⁸ / 10⁻⁷ = 10¹⁵.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "E = h·c/λ = 6,63 · 10⁻³⁴ · 3 · 10⁸ / (5 · 10⁻⁷) ≈ 4,0 · 10⁻¹⁹ J",
+          "hu": "6,63 · 3 / 5 ≈ 3,98; a kitevők: −34 + 8 + 7 = −19."
+        },
+        {
+          "en": "1,5 · 10¹¹ m / 3 · 10⁸ m/s = 0,5 · 10³ s = 500 s",
+          "hu": "A napfény útja a Földig."
+        }
+      ]
+    },
+    {
+      "title": "Értékes jegyek és kerekítés",
+      "explanation": "A végeredményt annyi értékes jegyre add meg, amennyi a legkevésbé pontos adatban van (általában 2–3), vagy ahogy a feladat kéri. A részeredményeket NE kerekítsd erősen: tartsd meg a számológépben, és csak a végén kerekíts.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "60 W / 230 V = 0,26086… A ≈ 0,26 A",
+          "hu": "Két értékes jegy elég."
+        },
+        {
+          "en": "√180 = 13,416… → 13,4 m/s",
+          "hu": "Ha a következő lépésben v² kell, a 180-at használd, ne a kerekített 13,4²-et."
+        }
+      ]
+    },
+    {
+      "title": "Nagyságrendi ellenőrzés",
+      "explanation": "Minden végeredményről kérdezd meg: reális ez? Egy autó lassulása néhány m/s², egy ember teljesítménye néhány száz W, egy háztartási áram néhány A, egy foton energiája néhány eV. Ha az eredmény ennél ezerszer nagyobb vagy kisebb, valószínűleg átváltási vagy hatványhiba van.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "Fékút 0,04 m?",
+          "hu": "Gyanús – valószínűleg km/h-val számoltál m/s helyett, vagy elmaradt egy négyzetre emelés."
+        },
+        {
+          "en": "Vízforralás 2,8 s alatt?",
+          "hu": "Gyanús – a valós érték néhány perc, tehát valahol 100-as szorzó hiányzik."
+        }
+      ]
+    },
+    {
+      "title": "A számológép helyes használata",
+      "explanation": "Törtvonal alatti összeget zárójelezz: 1/(1/20 − 1/60). Szögfüggvényeknél ellenőrizd, hogy a gép fok (DEG) üzemmódban van-e. Négyzetgyöknél a teljes kifejezés kerüljön a gyökjel alá.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "sin 30° = 0,5 DEG módban; RAD módban sin 30 ≈ −0,988",
+          "hu": "A rossz üzemmód teljesen rossz eredményt ad."
+        },
+        {
+          "en": "T = 2π·√(0,5/200) → √ alá a teljes hányadost!",
+          "hu": "2π · √0,0025 = 2π · 0,05 ≈ 0,314 s."
+        }
+      ]
+    },
+    {
+      "title": "Exponenciális és logaritmikus számolás",
+      "explanation": "A bomlási törvényben N = N₀ · 2^(−t/T½). Ha t a felezési idő egész többszöröse, fejben is számolható (3 felezés → 1/8). Ha az idő ismeretlen, logaritmussal fejezzük ki: t = T½ · log₂(N₀/N) = T½ · lg(N₀/N) / lg 2.",
+      "emeltOnly": true,
+      "examples": [
+        {
+          "en": "N₀/N = 10 → t = T½ · lg 10 / lg 2 ≈ 3,32 · T½",
+          "hu": "Tized részre csökkenéshez kb. 3,3 felezési idő kell."
+        },
+        {
+          "en": "15 perc, T½ = 2,5 perc → 2⁻⁶ = 1/64",
+          "hu": "Hat felezés."
+        }
+      ]
+    }
+  ],
+  "commonMistakes": [
+    {
+      "wrong": "A részeredményt 13-ra kerekítem, majd 13² = 169-cel számolok tovább 180 helyett.",
+      "right": "A pontos részeredményt (v² = 180 m²/s²) viszem tovább, és csak a végeredményt kerekítem.",
+      "why": "A korai kerekítés hibája felhalmozódik, és a végeredmény a megengedett tűrésen kívül eshet."
+    },
+    {
+      "wrong": "6,63 · 10⁻³⁴ · 3 · 10⁸ = 19,89 · 10⁻²⁶",
+      "right": "6,63 · 10⁻³⁴ · 3 · 10⁸ = 19,89 · 10⁻²⁶ = 1,989 · 10⁻²⁵",
+      "why": "A kitevőket összeadjuk (−34 + 8 = −26), majd a szorzót normálalakba írjuk."
+    },
+    {
+      "wrong": "1/k = 1/20 − 1/60 = 0,0333 → k = 0,0333 cm",
+      "right": "k = 1/0,0333 ≈ 30 cm",
+      "why": "Elfelejtette a reciprokot venni: a leképezési törvényből előbb 1/k jön ki."
+    },
+    {
+      "wrong": "A villamos átlagsebessége 97,5 m/s.",
+      "right": "Az átlagsebesség 468 m / 48 s = 9,75 m/s.",
+      "why": "Nagyságrendi ellenőrzés: egy villamos nem megy 350 km/h-val; elcsúszott a tizedesvessző."
+    }
+  ],
+  "examTips": [
+    "Számításos feladat: a „Számolási pontosság” szempont külön pontokat ér (közép 3, emelt 2) – a lépéseket írd le úgy, hogy a javító lássa, hol jó a gondolatmenet, akkor is, ha elszámoltál valamit.",
+    "Teszt: ha két válaszlehetőség csak egy 10-es szorzóban különbözik, a feladat a nagyságrendet vagy az átváltást ellenőrzi – számold ki gondosan a kitevőt.",
+    "A végén mindig végezz gyors becslést (kerekített számokkal fejben): ha a becslés és a számológép eredménye nagyon eltér, keresd meg a hibát."
+  ],
+  "practice": [
+    {
+      "id": "1",
+      "kind": "choice",
+      "prompt": "Mennyi (3,0 · 10⁸) · (2,0 · 10⁻³)?",
+      "options": [
+        {
+          "key": "A",
+          "text": "6,0 · 10⁵"
+        },
+        {
+          "key": "B",
+          "text": "6,0 · 10¹¹"
+        },
+        {
+          "key": "C",
+          "text": "6,0 · 10⁻²⁴"
+        },
+        {
+          "key": "D",
+          "text": "1,5 · 10¹¹"
+        }
+      ],
+      "answer": "A",
+      "category": "szamolas",
+      "explanation": "Helyes: A. A szorzók szorzódnak (3,0 · 2,0 = 6,0), a kitevők összeadódnak (8 + (−3) = 5): 6,0 · 10⁵.",
+      "wrongOptions": {
+        "B": "A kitevőket kivonta (8 − (−3) = 11) – ez az osztás szabálya.",
+        "C": "A kitevőket összeszorozta (8 · (−3)).",
+        "D": "Osztott (3/2 és 8 − (−3)) szorzás helyett."
+      }
+    },
+    {
+      "id": "2",
+      "kind": "choice",
+      "prompt": "Egy diák a lift sebességére 250 m/s-ot kapott. Mit érdemes először ellenőriznie?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Semmit, a lift lehet ilyen gyors."
+        },
+        {
+          "key": "B",
+          "text": "A g értékét."
+        },
+        {
+          "key": "C",
+          "text": "Csak a mértékegység betűjét."
+        },
+        {
+          "key": "D",
+          "text": "Az átváltásokat és a hatványokat, mert egy lift sebessége néhány m/s."
+        }
+      ],
+      "answer": "D",
+      "category": "szamolas",
+      "explanation": "Helyes: D. Egy lift sebessége tipikusan 1–10 m/s; a 250 m/s (900 km/h) egy repülőgépé. Ilyen nagyságrendi eltérés szinte mindig átváltási vagy hatványhibára utal.",
+      "wrongOptions": {
+        "A": "A nagyságrendi ellenőrzés éppen azt mutatja, hogy ez nem reális (kb. 900 km/h).",
+        "B": "A g pontatlansága (9,81 vagy 10) legfeljebb 2 %-ot változtat, nem százszorosat.",
+        "C": "A mértékegység betűje lehet jó, a hiba a számértékben van."
+      }
+    },
+    {
+      "id": "3",
+      "kind": "choice",
+      "prompt": "Egy számítás végeredménye a számológépen 0,0027846 A. Hogyan adod meg két értékes jegyre kerekítve?",
+      "options": [
+        {
+          "key": "A",
+          "text": "0,0028 A"
+        },
+        {
+          "key": "B",
+          "text": "0,0027 A"
+        },
+        {
+          "key": "C",
+          "text": "0,003 A"
+        },
+        {
+          "key": "D",
+          "text": "0,28 mA"
+        }
+      ],
+      "answer": "A",
+      "category": "szamolas",
+      "explanation": "Helyes: A. Az értékes jegyek az első nem nulla számjeggyel kezdődnek: 2 és 7, a következő számjegy 8, ezért felfelé kerekítünk: 0,0028 A (= 2,8 mA).",
+      "wrongOptions": {
+        "B": "Lefelé kerekített, pedig a harmadik jegy 8 ≥ 5.",
+        "C": "Ez csak egy értékes jegy.",
+        "D": "0,0028 A = 2,8 mA, nem 0,28 mA – a prefixum átváltása hibás."
+      }
+    },
+    {
+      "id": "4",
+      "kind": "choice",
+      "prompt": "A számológép RAD (radián) üzemmódban van, és sin 30-at számolsz vele. Mi történik?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Helyesen 0,5-öt kapsz."
+        },
+        {
+          "key": "B",
+          "text": "Hibás eredményt kapsz (kb. −0,99), mert a gép 30 radián szinuszát számolja."
+        },
+        {
+          "key": "C",
+          "text": "A számológép hibaüzenetet ad."
+        },
+        {
+          "key": "D",
+          "text": "Ugyanazt kapod, csak más formában."
+        }
+      ],
+      "answer": "B",
+      "category": "szamolas",
+      "explanation": "Helyes: B. 30 radián kb. 1719°, ennek szinusza kb. −0,99. Fokban megadott szögekhez DEG üzemmód kell, különben a teljes számítás hibás lesz.",
+      "wrongOptions": {
+        "A": "0,5-öt csak DEG (fok) üzemmódban kapsz.",
+        "C": "A gép nem jelez hibát, csak más értéket számol – ezért alattomos ez a hiba.",
+        "D": "A két érték teljesen különböző."
+      }
+    },
+    {
+      "id": "5",
+      "kind": "text",
+      "prompt": "Egy radioaktív minta 40 perc alatt a tizenhatodára bomlik. Hány perc a felezési idő?",
+      "answer": [
+        "10",
+        "10 perc",
+        "10 min"
+      ],
+      "maxWords": 2,
+      "category": "szamolas",
+      "explanation": "Helyes: 10 perc. 1/16 = (1/2)⁴, tehát 40 perc alatt 4 felezés történt: T½ = 40/4 = 10 perc."
+    },
+    {
+      "id": "6",
+      "kind": "text",
+      "prompt": "Mennyi (4,0 · 10⁶) / (8,0 · 10⁻²)? Normálalakban add meg!",
+      "answer": [
+        "5,0 · 10⁷",
+        "5 · 10⁷",
+        "5,0 · 10^7",
+        "5 · 10^7",
+        "5e7"
+      ],
+      "maxWords": 4,
+      "category": "szamolas",
+      "explanation": "Helyes: 5,0 · 10⁷. A szorzók hányadosa 4,0/8,0 = 0,5, a kitevők különbsége 6 − (−2) = 8: 0,5 · 10⁸ = 5,0 · 10⁷."
+    }
+  ],
+  "relatedCategories": [
+    "mertekegyseg",
+    "kepletek",
+    "szovegertelmezes"
+  ]
+}

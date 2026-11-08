@@ -1,0 +1,437 @@
+{
+  "meta": {
+    "verifiedAt": "2026-11-05",
+    "sources": [
+      {
+        "title": "Eduline (2024. 05. 10.): Itt van minden, amit a pénteki németérettségiről tudni érdemes (közép 60/30/30/60 perc, 33/18/33/33 pont + szóbeli 33; emelt 4 × 30 + 30)",
+        "url": "https://eduline.hu/erettsegi-felveteli/20240510_Itt-van-minden-amit-a-penteki-nemeterettsegirol-tudni-erdemes-erettsegi-2024"
+      },
+      {
+        "title": "Oktatási Hivatal: Élő idegen nyelv – közös vizsgaleírás (a német ugyanazt a szerkezetet követi, mint az angol)",
+        "url": "https://www.oktatas.hu/pub_bin/dload/kozoktatas/erettsegi/vizsgakovetelmenyek2017/elo_idegen_nyelv_vl.pdf"
+      },
+      {
+        "title": "Oktatási Hivatal: Élő idegen nyelv, vizsgaleírás – a vizsgarészekben alkalmazható feladattípusok",
+        "url": "https://www.oktatas.hu/pub_bin/dload/kozoktatas/erettsegi/vizsgakovetelmenyek2017/elo_idegen_nyelv_vl.pdf"
+      }
+    ],
+    "notes": [
+      "A német érettségi az élő idegen nyelv közös vizsgaleírását követi: a szerkezet, a pontszámok, a rubrikák és a témakörök azonosak az angollal (ellenőrizve: Eduline 2024. 05. 10.). A sávleírások a nyelvtől függetlenek.",
+      "A lista a vizsgaleírásban felsorolt és a hivatalos feladatsorokban ténylegesen előforduló formátumok összesítése; a vizsga nem zárt lista alapján épül fel, egy feladatsor bármelyiket használhatja.",
+      "Új típus felvételekor a content/ feladatok type mezője erre a listára hivatkozik (a validátor ellenőrzi)."
+    ]
+  },
+  "reading": [
+    {
+      "id": "headings",
+      "name": "Címillesztés",
+      "nameEn": "Matching headings",
+      "levels": [
+        "kozep",
+        "emelt"
+      ],
+      "description": "Bekezdésekhez a megfelelő cím kiválasztása a felsorolt címek közül (egy-két felesleges cím).",
+      "itemKinds": [
+        "match"
+      ]
+    },
+    {
+      "id": "missing-sentences",
+      "name": "Hiányzó mondatok visszahelyezése",
+      "nameEn": "Gapped text (sentences)",
+      "levels": [
+        "kozep",
+        "emelt"
+      ],
+      "description": "A szövegből kivett mondatok visszahelyezése (egy-két felesleges mondat).",
+      "itemKinds": [
+        "match"
+      ]
+    },
+    {
+      "id": "paragraph-beginnings",
+      "name": "Bekezdéskezdések visszahelyezése",
+      "nameEn": "Gapped text (paragraph openings)",
+      "levels": [
+        "kozep",
+        "emelt"
+      ],
+      "description": "A bekezdések első mondatának/kezdetének visszahelyezése.",
+      "itemKinds": [
+        "match"
+      ]
+    },
+    {
+      "id": "multiple-choice",
+      "name": "Feleletválasztás",
+      "nameEn": "Multiple choice",
+      "levels": [
+        "kozep",
+        "emelt"
+      ],
+      "description": "Kérdések vagy mondatkezdések, négy válaszlehetőséggel.",
+      "itemKinds": [
+        "choice"
+      ]
+    },
+    {
+      "id": "short-answer",
+      "name": "Rövid válasz",
+      "nameEn": "Short answers",
+      "levels": [
+        "kozep",
+        "emelt"
+      ],
+      "description": "Kérdésekre rövid (legfeljebb néhány szavas) válasz a szöveg alapján.",
+      "itemKinds": [
+        "text"
+      ]
+    },
+    {
+      "id": "true-false",
+      "name": "Igaz / hamis / nem derül ki",
+      "nameEn": "True / false / not given",
+      "levels": [
+        "kozep",
+        "emelt"
+      ],
+      "description": "Állítások összevetése a szöveggel.",
+      "itemKinds": [
+        "tf"
+      ]
+    },
+    {
+      "id": "sentence-completion",
+      "name": "Mondatbefejezés",
+      "nameEn": "Sentence completion",
+      "levels": [
+        "kozep",
+        "emelt"
+      ],
+      "description": "Mondatkezdésekhez a megfelelő befejezés kiválasztása, vagy a mondat kiegészítése a szöveg alapján.",
+      "itemKinds": [
+        "match",
+        "text"
+      ]
+    },
+    {
+      "id": "matching",
+      "name": "Információ párosítása",
+      "nameEn": "Multiple matching",
+      "levels": [
+        "kozep",
+        "emelt"
+      ],
+      "description": "Állítások párosítása személyekhez, szövegrészekhez vagy hirdetésekhez.",
+      "itemKinds": [
+        "match"
+      ]
+    }
+  ],
+  "language-use": [
+    {
+      "id": "open-cloze",
+      "name": "Lyukas szöveg (nyitott)",
+      "nameEn": "Open cloze",
+      "levels": [
+        "kozep",
+        "emelt"
+      ],
+      "description": "Egy-egy hiányzó szó beírása a szövegbe (névelő, elöljárószó, segédige, kötőszó …).",
+      "itemKinds": [
+        "text"
+      ]
+    },
+    {
+      "id": "multiple-choice-cloze",
+      "name": "Lyukas szöveg (feleletválasztós)",
+      "nameEn": "Multiple-choice cloze",
+      "levels": [
+        "kozep",
+        "emelt"
+      ],
+      "description": "A hiányzó szó kiválasztása négy lehetőség közül.",
+      "itemKinds": [
+        "choice"
+      ]
+    },
+    {
+      "id": "word-bank-cloze",
+      "name": "Lyukas szöveg szóbankkal",
+      "nameEn": "Banked cloze",
+      "levels": [
+        "kozep",
+        "emelt"
+      ],
+      "description": "A hiányzó szavak kiválasztása a megadott listából (felesleges szavakkal).",
+      "itemKinds": [
+        "match"
+      ]
+    },
+    {
+      "id": "word-formation",
+      "name": "Szóképzés",
+      "nameEn": "Word formation",
+      "levels": [
+        "kozep",
+        "emelt"
+      ],
+      "description": "A megadott szó megfelelő alakjának (képzett szónak) beírása.",
+      "itemKinds": [
+        "text"
+      ]
+    },
+    {
+      "id": "verb-forms",
+      "name": "Igealakok",
+      "nameEn": "Verb forms",
+      "levels": [
+        "kozep",
+        "emelt"
+      ],
+      "description": "A zárójelben megadott ige megfelelő alakjának beírása.",
+      "itemKinds": [
+        "text"
+      ]
+    },
+    {
+      "id": "missing-words",
+      "name": "Kimaradt szavak",
+      "nameEn": "Missing words",
+      "levels": [
+        "kozep",
+        "emelt"
+      ],
+      "description": "A szövegből kimaradt szavak pótlása (a hely megadva).",
+      "itemKinds": [
+        "text"
+      ]
+    },
+    {
+      "id": "error-correction",
+      "name": "Hibakeresés",
+      "nameEn": "Error correction",
+      "levels": [
+        "emelt"
+      ],
+      "description": "A sorban lévő felesleges vagy hibás szó megtalálása; ha a sor helyes, ✓.",
+      "itemKinds": [
+        "text"
+      ]
+    },
+    {
+      "id": "phrase-insertion",
+      "name": "Mondatrész-beillesztés",
+      "nameEn": "Phrase insertion",
+      "levels": [
+        "kozep",
+        "emelt"
+      ],
+      "description": "Kivett mondatrészek visszahelyezése a szövegbe a megadott listából.",
+      "itemKinds": [
+        "match"
+      ]
+    }
+  ],
+  "listening": [
+    {
+      "id": "multiple-choice",
+      "name": "Feleletválasztás",
+      "nameEn": "Multiple choice",
+      "levels": [
+        "kozep",
+        "emelt"
+      ],
+      "description": "Kérdések három-négy válaszlehetőséggel.",
+      "itemKinds": [
+        "choice"
+      ]
+    },
+    {
+      "id": "true-false",
+      "name": "Igaz / hamis",
+      "nameEn": "True / false",
+      "levels": [
+        "kozep",
+        "emelt"
+      ],
+      "description": "Állítások a hallott szöveg alapján.",
+      "itemKinds": [
+        "tf"
+      ]
+    },
+    {
+      "id": "short-answer",
+      "name": "Rövid válasz",
+      "nameEn": "Short answers",
+      "levels": [
+        "kozep",
+        "emelt"
+      ],
+      "description": "Kérdésekre rövid válasz a hallottak alapján.",
+      "itemKinds": [
+        "text"
+      ]
+    },
+    {
+      "id": "table-completion",
+      "name": "Táblázatkitöltés",
+      "nameEn": "Table / note completion",
+      "levels": [
+        "kozep",
+        "emelt"
+      ],
+      "description": "Táblázat vagy jegyzet kitöltése (számok, nevek, rövid információk).",
+      "itemKinds": [
+        "text"
+      ]
+    },
+    {
+      "id": "speaker-matching",
+      "name": "Beszélő hozzárendelése",
+      "nameEn": "Matching speakers",
+      "levels": [
+        "kozep",
+        "emelt"
+      ],
+      "description": "Állítások hozzárendelése a beszélőkhöz.",
+      "itemKinds": [
+        "match"
+      ]
+    },
+    {
+      "id": "sentence-completion",
+      "name": "Mondatkiegészítés",
+      "nameEn": "Sentence completion",
+      "levels": [
+        "kozep",
+        "emelt"
+      ],
+      "description": "Mondatok kiegészítése a hallottak alapján.",
+      "itemKinds": [
+        "text",
+        "choice"
+      ]
+    }
+  ],
+  "writing": [
+    {
+      "id": "informal-email",
+      "name": "Baráti e-mail / levél",
+      "nameEn": "Informal e-mail / letter",
+      "levels": [
+        "kozep",
+        "emelt"
+      ],
+      "description": "Személyes hangvételű üzenet ismerősnek.",
+      "itemKinds": []
+    },
+    {
+      "id": "formal-email",
+      "name": "Hivatalos e-mail / levél",
+      "nameEn": "Formal e-mail / letter",
+      "levels": [
+        "kozep",
+        "emelt"
+      ],
+      "description": "Hivatalos hangvételű levél (érdeklődés, panasz, jelentkezés, kérés).",
+      "itemKinds": []
+    },
+    {
+      "id": "blog",
+      "name": "Blogbejegyzés",
+      "nameEn": "Blog post",
+      "levels": [
+        "kozep",
+        "emelt"
+      ],
+      "description": "Személyes beszámoló, élmény vagy vélemény blogban.",
+      "itemKinds": []
+    },
+    {
+      "id": "forum",
+      "name": "Fórumbejegyzés",
+      "nameEn": "Forum post",
+      "levels": [
+        "kozep",
+        "emelt"
+      ],
+      "description": "Hozzászólás egy online fórumon, véleménnyel, érvekkel.",
+      "itemKinds": []
+    },
+    {
+      "id": "article",
+      "name": "Cikk",
+      "nameEn": "Article",
+      "levels": [
+        "emelt"
+      ],
+      "description": "Iskolai újságba, magazinba vagy honlapra írt cikk.",
+      "itemKinds": []
+    },
+    {
+      "id": "opinion",
+      "name": "Véleménykifejtő írás",
+      "nameEn": "Opinion / letter to the editor",
+      "levels": [
+        "emelt"
+      ],
+      "description": "Érvelő szöveg, olvasói levél vagy hozzászólás egy vitás kérdéshez.",
+      "itemKinds": []
+    }
+  ],
+  "speaking": [
+    {
+      "id": "interview",
+      "name": "Társalgás",
+      "nameEn": "Interview",
+      "levels": [
+        "kozep",
+        "emelt"
+      ],
+      "description": "Rövid, nem pontozott bemelegítés után kérdések a vizsgázó életéről és a témakörökből (pontozott rész).",
+      "itemKinds": []
+    },
+    {
+      "id": "situation",
+      "name": "Szituációs feladat",
+      "nameEn": "Role play",
+      "levels": [
+        "kozep"
+      ],
+      "description": "Szerepjáték a vizsgáztatóval egy hétköznapi helyzetben.",
+      "itemKinds": []
+    },
+    {
+      "id": "picture",
+      "name": "Önálló témakifejtés képek alapján",
+      "nameEn": "Picture-based talk",
+      "levels": [
+        "kozep",
+        "emelt"
+      ],
+      "description": "Képek leírása, összehasonlítása és a kapcsolódó kérdések megvitatása.",
+      "itemKinds": []
+    },
+    {
+      "id": "debate",
+      "name": "Vita",
+      "nameEn": "Debate",
+      "levels": [
+        "emelt"
+      ],
+      "description": "Érvelés a kiosztott álláspont mellett a vizsgáztatóval szemben.",
+      "itemKinds": []
+    },
+    {
+      "id": "presentation",
+      "name": "Önálló témakifejtés",
+      "nameEn": "Presentation",
+      "levels": [
+        "emelt"
+      ],
+      "description": "Egy állítás vagy téma kifejtése megadott szempontok alapján.",
+      "itemKinds": []
+    }
+  ]
+}

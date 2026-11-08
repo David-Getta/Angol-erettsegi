@@ -1,0 +1,83 @@
+{
+  "schemaVersion": 1,
+  "id": "mat-rd-emelt-halmazok-logika-allitasok",
+  "subject": "matematika",
+  "revision": 1,
+  "level": "emelt",
+  "source": "generated",
+  "topic": "halmazok-logika",
+  "title": "Logikai műveletek, halmazok, bizonyítási módszerek",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "reading",
+  "type": "igaz-hamis",
+  "instructions": "Döntsd el az állításokról, hogy igazak (T) vagy hamisak (F)! A magyarázatban az indoklást is megtalálod. A 0. állítás a példa.",
+  "example": {
+    "id": "0",
+    "kind": "tf",
+    "prompt": "Ha egy állítás hamis, akkor a tagadása igaz.",
+    "answer": "T",
+    "category": "definicio-tetel",
+    "explanation": "Igaz. A tagadás (negáció) igazságértéke mindig ellentétes az eredeti állításéval: hamis állítás tagadása igaz, igazé hamis."
+  },
+  "items": [
+    {
+      "id": "1",
+      "kind": "tf",
+      "prompt": "Az „A ⇒ B” implikáció hamis, ha A hamis és B igaz.",
+      "answer": "F",
+      "category": "definicio-tetel",
+      "explanation": "Hamis. Az implikáció csak akkor hamis, ha az előtag (A) igaz és az utótag (B) hamis; hamis előtag esetén az implikáció mindig igaz."
+    },
+    {
+      "id": "2",
+      "kind": "tf",
+      "prompt": "Az „A ⇒ B” és a „nem B ⇒ nem A” állítás igazságértéke mindig azonos.",
+      "answer": "T",
+      "category": "definicio-tetel",
+      "explanation": "Igaz. A „nem B ⇒ nem A” a kontrapozíció, logikailag egyenértékű az eredeti implikációval (mindkettő pontosan akkor hamis, ha A igaz és B hamis). Ezen alapul az indirekt bizonyítás egyik formája."
+    },
+    {
+      "id": "3",
+      "kind": "tf",
+      "prompt": "A „Minden prímszám páratlan.” állítás tagadása: „Minden prímszám páros.”",
+      "answer": "F",
+      "category": "valasz-megfogalmazas",
+      "explanation": "Hamis. A „minden” tagadása „van olyan, amelyik nem”: „Van olyan prímszám, amely nem páratlan.” Ez a tagadás igaz is (a 2 páros prím), tehát az eredeti állítás hamis."
+    },
+    {
+      "id": "4",
+      "kind": "tf",
+      "prompt": "Egy 5 elemű halmaznak 32 részhalmaza van.",
+      "answer": "T",
+      "category": "kepletek",
+      "explanation": "Igaz. Egy n elemű halmaz részhalmazainak száma 2ⁿ (minden elemről eldöntjük, benne van-e): 2⁵ = 32, az üres halmazt és magát a halmazt is beleszámítva."
+    },
+    {
+      "id": "5",
+      "kind": "tf",
+      "prompt": "Ha |A| = 10, |B| = 7 és |A ∪ B| = 13, akkor |A ∩ B| = 4.",
+      "answer": "T",
+      "category": "kepletek",
+      "explanation": "Igaz. A logikai szita szerint |A ∪ B| = |A| + |B| − |A ∩ B|, így |A ∩ B| = 10 + 7 − 13 = 4."
+    },
+    {
+      "id": "6",
+      "kind": "tf",
+      "prompt": "Annak bizonyítása, hogy √2 irracionális, klasszikusan teljes indukcióval történik.",
+      "answer": "F",
+      "category": "indoklas-hianya",
+      "explanation": "Hamis. A klasszikus bizonyítás indirekt: feltesszük, hogy √2 = p/q (p, q relatív prímek), ebből p² = 2q², így p és q is páros lenne – ellentmondás. Teljes indukcióval természetes számokra vonatkozó állításokat bizonyítunk."
+    },
+    {
+      "id": "7",
+      "kind": "tf",
+      "prompt": "Ha A ⊆ B, akkor A ∩ B = A.",
+      "answer": "T",
+      "category": "definicio-tetel",
+      "explanation": "Igaz. Ha A minden eleme B-nek is eleme, akkor a közös elemek éppen A elemei, így A ∩ B = A (és A ∪ B = B)."
+    }
+  ],
+  "glossary": [],
+  "suggestedMinutes": 12
+}

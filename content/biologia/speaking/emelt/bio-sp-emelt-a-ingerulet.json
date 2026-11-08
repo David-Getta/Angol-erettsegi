@@ -1,0 +1,79 @@
+{
+  "schemaVersion": 1,
+  "id": "bio-sp-emelt-a-ingerulet",
+  "subject": "biologia",
+  "revision": 1,
+  "level": "emelt",
+  "source": "generated",
+  "topic": "szabalyozas",
+  "title": "Az ingerület keletkezése, vezetése és átadása",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "speaking",
+  "type": "a-tetel",
+  "partNumber": 1,
+  "instructionsHu": "A) altétel – elméleti kifejtés. Mutasd be az idegsejt működését: hogyan alakul ki a nyugalmi potenciál, hogyan keletkezik és terjed az akciós potenciál, és hogyan adódik át az ingerület a szinapszisban! Használd a forrás adatait!",
+  "prompts": [
+    "A nyugalmi potenciál kialakulásának okai.",
+    "Az akciós potenciál szakaszai és ionmozgásai; a küszöb és a „minden vagy semmi” törvény.",
+    "Az ingerület vezetése velőshüvely nélküli és velőshüvelyes rostban.",
+    "A kémiai szinapszis működése; serkentő és gátló hatás, a szinapszisra ható anyagok."
+  ],
+  "followUpQuestions": [
+    "Miért nem lehet egy idegsejtet folyamatosan, szünet nélkül ingerelni?",
+    "Hogyan hatnak a helyi érzéstelenítők az ingerületvezetésre?"
+  ],
+  "usefulPhrases": [
+    {
+      "en": "nyugalmi potenciál",
+      "hu": "kb. −70 mV, a belső tér negatív"
+    },
+    {
+      "en": "depolarizáció – repolarizáció",
+      "hu": "Na⁺ beáramlás – K⁺ kiáramlás"
+    },
+    {
+      "en": "ugráló vezetés",
+      "hu": "a Ranvier-befűződések között, velőshüvelyes rostban"
+    },
+    {
+      "en": "ingerületátvivő anyag (neurotranszmitter)",
+      "hu": "pl. acetilkolin, a szinaptikus résen át hat"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Adatok",
+      "text": "Nyugalmi membránpotenciál: kb. −70 mV (a sejt belseje negatív). Ingerküszöb: kb. −55 mV. Az akciós potenciál csúcsa: kb. +30 mV. Vezetési sebesség: vékony, velőshüvely nélküli rostban 0,5–2 m/s, vastag, velőshüvelyes rostban akár 100 m/s."
+    },
+    {
+      "title": "Eset",
+      "text": "A kígyóméreg egyes összetevői a harántcsíkolt izom acetilkolin-receptoraihoz kötődve gátolják azok működését; egyes rovarirtó szerek pedig az acetilkolint bontó enzimet gátolják."
+    }
+  ],
+  "keyPoints": [
+    "Nyugalomban a Na⁺/K⁺-pumpa ATP-t bontva 3 Na⁺-t juttat ki, 2 K⁺-t be; a membrán nyugalomban főleg K⁺-ra átjárható, a kiszivárgó K⁺ miatt a belső tér negatív (kb. −70 mV).",
+    "Inger hatására a membrán depolarizálódik; a küszöböt (kb. −55 mV) elérve feszültségfüggő Na⁺-csatornák nyílnak, Na⁺ áramlik be, a potenciál +30 mV-ig nő.",
+    "Repolarizáció: a Na⁺-csatornák inaktiválódnak, K⁺-csatornák nyílnak, K⁺ áramlik ki; rövid hiperpolarizáció; a refrakter szakaszban a membrán nem ingerelhető – ez biztosítja az egyirányú terjedést.",
+    "„Minden vagy semmi” törvény: küszöb alatti inger nem vált ki akciós potenciált, küszöb felett mindig azonos nagyságút; az inger erősségét a kisülések gyakorisága kódolja.",
+    "Velőshüvely nélküli rostban folyamatos, lassú vezetés; velőshüvelyes rostban ugráló vezetés a Ranvier-befűződések között – sokkal gyorsabb (forrás: akár 100 m/s).",
+    "Kémiai szinapszis: az akciós potenciál hatására Ca²⁺ áramlik az axonvégződésbe, a hólyagocskák ingerületátvivő anyagot (pl. acetilkolint) ürítenek a szinaptikus résbe.",
+    "A transzmitter a posztszinaptikus membrán receptoraihoz kötődik, ioncsatornákat nyit: serkentő (depolarizáló) vagy gátló (hiperpolarizáló) hatás; a transzmittert enzim (acetilkolin-észteráz) bontja vagy visszaveszi a sejt.",
+    "A forrás esetei: a receptort gátló méreg bénulást okoz; az enzimgátló rovarirtó miatt az acetilkolin felhalmozódik, tartós izomgörcs, majd bénulás alakul ki."
+  ],
+  "speakingSeconds": 480,
+  "prepSeconds": 900,
+  "sampleAnswer": {
+    "turns": [
+      {
+        "speaker": "candidate",
+        "text": "Az idegsejt működésének alapja a membránpotenciál. Nyugalomban a sejt belseje a külső térhez képest negatív, kb. −70 mV. Ennek két oka van. A nátrium–kálium-pumpa ATP energiáját felhasználva három nátriumiont juttat ki és két káliumiont be, így kívül sok a Na⁺, belül sok a K⁺. A nyugalmi membrán főleg káliumionokra átjárható, ezért K⁺ szivárog ki, a sejtben pedig a negatív töltésű nagy molekulák maradnak – így alakul ki a negatív belső tér.\nInger hatására a membrán depolarizálódik. Ha eléri a kb. −55 mV-os küszöböt, feszültségfüggő nátriumcsatornák nyílnak, a Na⁺ a koncentráció- és töltéskülönbség hatására beáramlik, és a potenciál +30 mV-ig emelkedik. Ezután a nátriumcsatornák bezárulnak, káliumcsatornák nyílnak, a K⁺ kiáramlik, és a membrán repolarizálódik, rövid ideig még a nyugalmi érték alá is. Az akciós potenciál „minden vagy semmi” jellegű: küszöb alatt nem keletkezik, küszöb felett mindig ugyanakkora; az inger erősségét a kisülések gyakorisága jelzi. A refrakter szakaszban a membrán nem ingerelhető, ezért az ingerület csak előre terjed.\nA vezetés során az akciós potenciál a szomszédos membránszakaszt is küszöb fölé depolarizálja. Velőshüvely nélküli rostban ez folyamatosan, lassan, 0,5–2 m/s sebességgel történik. A velőshüvely szigetel, ezért ott csak a Ranvier-befűződéseknél keletkezik akciós potenciál – az ingerület „ugrál”, akár 100 m/s-mal, és kevesebb energiába kerül.\nA szinapszisban az axonvégződésbe érkező akciós potenciál kalciumcsatornákat nyit, a beáramló Ca²⁺ hatására a hólyagocskák ingerületátvivő anyagot ürítenek a szinaptikus résbe. Az acetilkolin a posztszinaptikus membrán receptoraihoz kötődik, ioncsatornákat nyit, és ott depolarizációt, azaz serkentést okoz; más transzmitterek hiperpolarizálnak, vagyis gátolnak. A hatást az acetilkolin-észteráz enzim szünteti meg, amely elbontja a transzmittert.\nEz magyarázza a forrás eseteit: ha a kígyóméreg a receptorokat elfoglalja, az acetilkolin nem tud hatni, az izom nem húzódik össze, bénulás lép fel. Ha viszont a rovarirtó a bontó enzimet gátolja, az acetilkolin felhalmozódik, és tartós izomgörcs, majd bénulás alakul ki."
+      }
+    ],
+    "notes": [
+      "Tartalom: a nyugalmi és az akciós potenciál ionos háttere, a küszöb, a refrakter szakasz, a vezetés két típusa és a szinapszis lépései pontosan, a forrás számadataival szerepelnek.",
+      "Összefüggések: az ugráló vezetés gyorsaságát a velőshüvely szigetelő szerepével, az egyirányúságot a refrakter szakasszal magyarázza, és a forrás két mérgezési esetét a szinapszis működéséből vezeti le.",
+      "Felépítés: a membrántól a rostig, majd a sejtkapcsolatig halad – emelt szinten elvárt, önálló, logikus kifejtés."
+    ]
+  }
+}

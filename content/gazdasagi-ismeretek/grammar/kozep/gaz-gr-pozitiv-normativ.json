@@ -1,0 +1,307 @@
+{
+  "schemaVersion": 1,
+  "id": "gaz-gr-pozitiv-normativ",
+  "subject": "gazdasagi-ismeretek",
+  "revision": 1,
+  "level": "kozep",
+  "source": "generated",
+  "topic": "nyelvtan",
+  "title": "Pozitív és normatív állítás – tény és vélemény",
+  "createdAt": "2026-11-06",
+  "tags": [],
+  "section": "grammar",
+  "type": "lesson",
+  "category": "pozitiv-normativ",
+  "summaryHu": "A pozitív közgazdaságtan azt kérdezi: „Mi van? Mi lesz, ha…?” – tényeket ír le, ok-okozati összefüggéseket vizsgál, állításai ellenőrizhetők. A normatív közgazdaságtan azt kérdezi: „Mi lenne helyes? Mi legyen?” – értékítéletet fogalmaz meg, javaslatot tesz, véleményen alapul. A szóbeli feleletben és a projektmunkában a kettőt külön kell tartani: a saját vélemény nem tálalható tényként, és indokolni kell.",
+  "rules": [
+    {
+      "title": "Pozitív állítás: „Mi van? Mi lesz, ha…?”",
+      "explanation": "A pozitív állítás tényeket ír le vagy ok-okozati összefüggést állít, és ellenőrizhető: adatokkal, megfigyeléssel eldönthető, hogy igaz-e. Nem tartalmaz értékítéletet.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "„Ha nő a cigaretta adója, kevesebb cigarettát vásárolnak.”",
+          "hu": "A tananyag példája: ok-okozati összefüggés, ellenőrizhető."
+        },
+        {
+          "en": "„A rendszerváltás után megjelent a tömeges munkanélküliség.”",
+          "hu": "Múltbeli tény, adatokkal ellenőrizhető."
+        },
+        {
+          "en": "„Ha túl sok pénzt bocsátanak ki, nőnek az árak.”",
+          "hu": "Mankiw 9. elve – „mi lesz, ha…” típusú összefüggés."
+        }
+      ]
+    },
+    {
+      "title": "Normatív állítás: „Mi lenne helyes? Mi legyen?”",
+      "explanation": "A normatív állítás értékítéletet fogalmaz meg vagy javaslatot tesz, véleményen alapul; tényekkel önmagában nem dönthető el. Tipp: a normatív állításokban gyakran szerepel a „kellene”, „jobb lenne”, „igazságos” szó.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "„Az államnak emelnie kellene a cigaretta adóját.”",
+          "hu": "A tananyag példája: javaslat, „kellene”."
+        },
+        {
+          "en": "„Igazságos lenne, ha a nyugdíjrendszert a fiatalabbak kisebb terhelésével finanszíroznák.”",
+          "hu": "Értékítélet: „igazságos lenne”."
+        },
+        {
+          "en": "„Jobb lenne, ha az állam kevésbé avatkozna be a piac működésébe.”",
+          "hu": "Vélemény a piac és az állam viszonyáról: „jobb lenne”."
+        }
+      ]
+    },
+    {
+      "title": "A döntő kérdés: ellenőrizhető-e?",
+      "explanation": "Ne a téma alapján dönts (az adóról szóló mondat lehet pozitív is, normatív is), hanem kérdezd meg: eldönthető-e tényekkel, adatokkal? Ha igen, pozitív; ha értékítéletet vagy javaslatot tartalmaz, normatív. Egy pozitív állítás akkor is pozitív, ha történetesen hamis – attól pozitív, hogy ellenőrizhető, nem attól, hogy igaz. A „kellene” szó gyakori jel, de nem kötelező: a „túl alacsony a minimálbér”, „az állam túl sokat avatkozik be”, „a legnagyobb probléma” is értékítélet. Vigyázz: a „túl sok” nem mindig vélemény – Mankiw 9. elvében („ha túl sok pénzt bocsátanak ki, nőnek az árak”) a „túl sok” a mérhető következményhez, az áremelkedéshez kötött, ezért ez ellenőrizhető, pozitív összefüggés.",
+      "emeltOnly": true,
+      "examples": [
+        {
+          "en": "„Ha nő a cigaretta ára, többet vásárolnak belőle.”",
+          "hu": "Pozitív (ellenőrizhető) állítás – csak éppen hamis, ellentétes a tananyag összefüggésével."
+        },
+        {
+          "en": "„Az államadósság a legsúlyosabb gazdasági probléma.”",
+          "hu": "Normatív, bár nincs benne „kellene”: a „legsúlyosabb” értékítélet."
+        }
+      ]
+    },
+    {
+      "title": "Mondatpárok a tananyag témáiból",
+      "explanation": "Ugyanarról a témáról mindig lehet pozitív és normatív állítást is tenni. Gyakorold párban: először írd le, mi van / mi lesz, ha…, utána, mi lenne helyes.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "Pozitív: „Ha többet fordítunk zöld energiára, máshonnan kell elvenni.” ↔ Normatív: „Többet kellene zöld energiára fordítani.”",
+          "hu": "energia, klímavédelem – szűkösség, alternatív költség"
+        },
+        {
+          "en": "Pozitív: „Rövid távon választani kell az infláció és a munkanélküliség között.” ↔ Normatív: „A munkanélküliség csökkentése fontosabb, mint az infláció letörése.”",
+          "hu": "Mankiw 10. elve – trade-off"
+        },
+        {
+          "en": "Pozitív: „Magyarország 2004-ben az Európai Unió egységes piacának része lett.” ↔ Normatív: „Jó döntés volt csatlakozni az Európai Unióhoz.”",
+          "hu": "Magyarország útja a piacgazdaságig"
+        },
+        {
+          "en": "Pozitív: „Az utolsó 100 kenyér darabja 135 Ft-ba kerül, ez több, mint a 130 Ft-os ár.” ↔ Normatív: „A péknek 300 kenyeret kellene sütnie.”",
+          "hu": "A normatív javaslatot itt pozitív számítás támasztja alá."
+        }
+      ]
+    },
+    {
+      "title": "Tény és vélemény a feleletben és a projektben",
+      "explanation": "A felelet és a projekt tényközlő részében pozitív állítások szerepeljenek, forrásra vagy tananyagra hivatkozva. A saját véleményt jelöld („véleményem szerint”, „javaslatom”), és pozitív érvekkel indokold („…kellene, mert…”). Így a vizsgáztató látja, hol ismerteted a tananyagot és hol értékelsz.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "„A tananyag szerint a védővámok kérdése arról szól, mennyire avatkozzon be az állam a piac működésébe. Véleményem szerint az államnak csak kivételes esetben kellene vámot kivetnie, mert a kereskedelem mindkét félnek előnyös lehet.”",
+          "hu": "Elkülönül a tény (első mondat) és a vélemény (második), és a vélemény indokolt (Mankiw 5. elve)."
+        }
+      ]
+    },
+    {
+      "title": "A közgazdasági irányzatok normatív javaslatai",
+      "explanation": "Az irányzatok pozitív megfigyelésekből normatív gazdaságpolitikai javaslatokat vezettek le. Keynes a nagy gazdasági világválság tapasztalata alapján azt javasolta, hogy válság idején az államnak aktívan be kell avatkoznia (beruházások, közkiadások növelése). Friedman bírálta a keynesiánus állami beavatkozást: az állam szerepét minimalizálni kell. A merkantilisták az export ösztönzését, az import visszaszorítását javasolták. A „kell” itt a javaslat (normatív állítás) jele – de nem minden „kell” normatív: a „ha többet fordítunk zöld energiára, máshonnan kell elvenni” (Mondatpárok szabály) a szűkösségből következő, ellenőrizhető tény, nem javaslat.",
+      "emeltOnly": true,
+      "examples": [
+        {
+          "en": "„Válság idején az államnak aktívan be kell avatkoznia.” (Keynes)",
+          "hu": "normatív javaslat"
+        },
+        {
+          "en": "„A gazdasági stabilitás kulcsa a pénzkínálat szabályozása.” (Friedman alaptézise)",
+          "hu": "összefüggést állít – pozitív jellegű megállapítás, amelyre a normatív javaslat épül"
+        }
+      ]
+    }
+  ],
+  "commonMistakes": [
+    {
+      "wrong": "„Ha nő a cigaretta adója, kevesebb cigarettát vásárolnak” – normatív, mert az adóról szól.",
+      "right": "Ez pozitív állítás.",
+      "why": "Nem a téma dönt, hanem az, hogy ellenőrizhető-e: ez ok-okozati összefüggés, adatokkal ellenőrizhető, értékítélet nincs benne."
+    },
+    {
+      "wrong": "A projektben: „Az állam túl sokat avatkozik be a gazdaságba.” – tényként, forrás nélkül.",
+      "right": "„Véleményem szerint az állam beavatkozása a … területen túl nagy, mert …”",
+      "why": "Itt a „túl sok” értékítélet: nincs megadva, mihez képest sok, és nem mérhető következményhez kötődik (szemben Mankiw 9. elvével); a véleményt jelölni és indokolni kell, különben a saját vélemény tényként jelenik meg."
+    },
+    {
+      "wrong": "Egy állítás csak akkor pozitív, ha igaz.",
+      "right": "Egy állítás akkor pozitív, ha ellenőrizhető; lehet hamis is.",
+      "why": "A pozitív–normatív megkülönböztetés az ellenőrizhetőségen alapul, nem az igazságtartalmon."
+    },
+    {
+      "wrong": "Ha nincs benne „kellene”, az állítás biztosan pozitív.",
+      "right": "A „kellene”, „jobb lenne”, „igazságos” gyakori jel, de minden értékítélet (pl. „túl alacsony”, „a legfontosabb”) normatív.",
+      "why": "A tananyag tippje szerint ezek a szavak „gyakran” szerepelnek – nem mindig."
+    },
+    {
+      "wrong": "A szóbelin: „Az alternatív költség miatt az államnak nem kellene kórházat építenie.” – indoklás nélkül.",
+      "right": "„A kórház alternatív költsége az az iskola vagy autópálya, amely ugyanabból a pénzből épülhetett volna (pozitív). Véleményem szerint mégis a kórház a fontosabb, mert …” (normatív, indokolt).",
+      "why": "Először a tényt mondd ki, utána a véleményt, indoklással – a kettő keverése logikai hiba."
+    }
+  ],
+  "examTips": [
+    "Szóbeli tételnél a pozitív–normatív különbséget a cigaretta adójáról szóló példapárral mutasd be, majd mondj egy saját párt – az Ismétlő kérdés („Mi a különbség a pozitív és a normatív állítás között?”) pontosan erre kérdez.",
+    "A projektmunkában külön fejezetben vagy jelölten írd a saját értékelést és javaslatot; a tényközlő részben forrásra hivatkozz. A saját gondolat és az átvett tartalom elkülönítése értékelési szempont.",
+    "Az aktuális gazdasági esemény elemzésénél (emelt szóbeli) először pozitívan írd le, mi történik és miért, csak utána mondj normatív véleményt (pl. védővám, energiaár) – és indokold a tanult elvekkel."
+  ],
+  "practice": [
+    {
+      "id": "1",
+      "kind": "choice",
+      "prompt": "Melyik állítás normatív?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Ha nő a cigaretta adója, kevesebb cigarettát vásárolnak."
+        },
+        {
+          "key": "B",
+          "text": "Az államnak emelnie kellene a cigaretta adóját."
+        },
+        {
+          "key": "C",
+          "text": "Az 1990-es években az állami vállalatok magánkézbe kerültek."
+        },
+        {
+          "key": "D",
+          "text": "Magyarország 2004-ben az Európai Unió tagja lett."
+        }
+      ],
+      "answer": "B",
+      "explanation": "Helyes: B. Javaslatot tesz és értékítéletet fogalmaz meg („kellene”), véleményen alapul – ez a tananyag normatív példája.",
+      "wrongOptions": {
+        "A": "Ok-okozati összefüggés, ellenőrizhető – pozitív állítás.",
+        "C": "Múltbeli tény (privatizáció), ellenőrizhető – pozitív.",
+        "D": "Tény, ellenőrizhető – pozitív."
+      },
+      "category": "pozitiv-normativ"
+    },
+    {
+      "id": "2",
+      "kind": "choice",
+      "prompt": "Melyik állítás pozitív?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Igazságos lenne, ha mindenki ugyanannyi jövedelmet kapna."
+        },
+        {
+          "key": "B",
+          "text": "Jobb lenne, ha az állam nem vetne ki védővámot."
+        },
+        {
+          "key": "C",
+          "text": "Ha túl sok pénzt bocsátanak ki, nőnek az árak."
+        },
+        {
+          "key": "D",
+          "text": "Az államnak több pénzt kellene zöld energiára költenie."
+        }
+      ],
+      "answer": "C",
+      "explanation": "Helyes: C. „Mi lesz, ha…” típusú, ellenőrizhető ok-okozati összefüggés (Mankiw 9. elve), értékítélet nélkül – a „túl sok pénz” itt nem vélemény, hanem az áremelkedést kiváltó pénzmennyiséget jelöli, ami adatokkal ellenőrizhető.",
+      "wrongOptions": {
+        "A": "„Igazságos lenne” – értékítélet, normatív.",
+        "B": "„Jobb lenne” – értékítélet, normatív.",
+        "D": "„Kellene” – javaslat, normatív."
+      },
+      "category": "pozitiv-normativ"
+    },
+    {
+      "id": "3",
+      "kind": "text",
+      "prompt": "Pozitív vagy normatív? „A rendszerváltás után megjelent a tömeges munkanélküliség.”",
+      "answer": [
+        "pozitív",
+        "pozitív állítás",
+        "pozitiv"
+      ],
+      "explanation": "Helyes: pozitív. Múltbeli tényt ír le, adatokkal ellenőrizhető, nincs benne értékítélet.",
+      "category": "pozitiv-normativ"
+    },
+    {
+      "id": "4",
+      "kind": "text",
+      "prompt": "Pozitív vagy normatív? „A gazdaságban a javak elosztását inkább az államra kellene bízni, mint a piacra.”",
+      "answer": [
+        "normatív",
+        "normatív állítás",
+        "normativ"
+      ],
+      "explanation": "Helyes: normatív. Javaslatot tesz és értékítéletet fogalmaz meg („kellene”), tényekkel önmagában nem dönthető el.",
+      "category": "pozitiv-normativ"
+    },
+    {
+      "id": "5",
+      "kind": "choice",
+      "prompt": "A tananyag tippje szerint melyik szó szerepel gyakran a normatív állításokban?",
+      "options": [
+        {
+          "key": "A",
+          "text": "csökken"
+        },
+        {
+          "key": "B",
+          "text": "ha … akkor"
+        },
+        {
+          "key": "C",
+          "text": "1776"
+        },
+        {
+          "key": "D",
+          "text": "kellene"
+        }
+      ],
+      "answer": "D",
+      "explanation": "Helyes: D. A normatív állításokban gyakran szerepel a „kellene”, „jobb lenne”, „igazságos” szó.",
+      "wrongOptions": {
+        "A": "A „csökken” változást ír le – pozitív állításokban szokásos.",
+        "B": "A „ha … akkor” ok-okozati összefüggést jelez, ez a pozitív állítás jellemzője („Mi lesz, ha…?”).",
+        "C": "Évszám – tényközlő, pozitív állításban szerepel (A nemzetek gazdagsága, 1776)."
+      },
+      "category": "pozitiv-normativ"
+    },
+    {
+      "id": "6",
+      "kind": "choice",
+      "prompt": "Melyik mondat választja el helyesen a tényt és a véleményt egy projektmunkában?",
+      "options": [
+        {
+          "key": "A",
+          "text": "A védővámok károsak, ez tény."
+        },
+        {
+          "key": "B",
+          "text": "A tananyag szerint a védővámok kérdése arról szól, mennyire avatkozzon be az állam a piac működésébe; véleményem szerint az államnak csak kivételes esetben kellene vámot kivetnie, mert a kereskedelem mindkét félnek előnyös lehet."
+        },
+        {
+          "key": "C",
+          "text": "Mindenki tudja, hogy a szabad kereskedelem jobb."
+        },
+        {
+          "key": "D",
+          "text": "A védővámok rosszak, ezért nem kell velük foglalkozni."
+        }
+      ],
+      "answer": "B",
+      "explanation": "Helyes: B. Előbb pozitív, a tananyagra hivatkozó tényközlés áll, majd jelölt („véleményem szerint”) és indokolt („mert…”) normatív állítás.",
+      "wrongOptions": {
+        "A": "Értékítéletet („károsak”) tényként közöl – ez a jellegzetes hiba.",
+        "C": "A „mindenki tudja” nem hivatkozás, és a „jobb” értékítélet indoklás nélkül.",
+        "D": "Indoklás nélküli értékítélet, és a kérdés elemzését is elhagyja."
+      },
+      "category": "pozitiv-normativ"
+    }
+  ],
+  "relatedCategories": [
+    "aktualitas",
+    "forrashasznalat",
+    "ok-okozat"
+  ]
+}

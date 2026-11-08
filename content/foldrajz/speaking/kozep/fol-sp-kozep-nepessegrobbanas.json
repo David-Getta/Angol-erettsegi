@@ -1,0 +1,84 @@
+{
+  "schemaVersion": 1,
+  "id": "fol-sp-kozep-nepessegrobbanas",
+  "subject": "foldrajz",
+  "revision": 1,
+  "level": "kozep",
+  "source": "generated",
+  "topic": "nepesseg-telepules",
+  "title": "A népességrobbanás és a demográfiai átmenet",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "speaking",
+  "type": "tarsadalomfoldrajz-tetel",
+  "partNumber": 2,
+  "instructionsHu": "Mutassa be a Föld népességének növekedését, a népességrobbanás okait és következményeit, valamint a demográfiai átmenet modelljét! Használja a mellékelt forrásokat és az atlaszt!",
+  "prompts": [
+    "Hogyan változott a Föld népessége, és mi okozta a gyorsuló növekedést?",
+    "Mutassa be a demográfiai átmenet szakaszait, és helyezzen el bennük országokat!",
+    "Hasonlítsa össze a két korfát, és mutassa be a népességrobbanás és az elöregedés következményeit!",
+    "Topográfia: mutassa meg Indiát, Kínát, Nigériát, Nigert és Németországot!"
+  ],
+  "followUpQuestions": [
+    "Miért csökken a születésszám, ha egy ország gazdaságilag fejlődik?",
+    "Milyen következményei lettek a kínai egykepolitikának?"
+  ],
+  "usefulPhrases": [
+    {
+      "en": "népességrobbanás",
+      "hu": "a népesség rendkívül gyors növekedése a halálozás csökkenése és a még magas születésszám miatt"
+    },
+    {
+      "en": "demográfiai átmenet",
+      "hu": "a születés és a halálozás változásának szakaszokra bontott modellje"
+    },
+    {
+      "en": "korfa",
+      "hu": "a népesség kor és nem szerinti összetételének diagramja"
+    },
+    {
+      "en": "természetes szaporodás",
+      "hu": "a születési és a halálozási arányszám különbsége"
+    },
+    {
+      "en": "népesedéspolitika",
+      "hu": "az állam beavatkozása a születésszám alakulásába"
+    }
+  ],
+  "sources": [
+    {
+      "title": "A Föld népessége",
+      "text": "A Föld népessége kb. 1800-ban érte el az 1 milliárd főt, 1927-ben a 2 milliárdot, 1960-ban a 3, 1974-ben a 4, 1987-ben az 5, 1999-ben a 6, 2011-ben a 7, 2022-ben a 8 milliárd főt."
+    },
+    {
+      "title": "Két korfa (leírás)",
+      "text": "Az A korfa (Niger) széles alapú, meredeken keskenyedő piramis: a népesség kb. fele 15 év alatti, a 65 év felettiek aránya 3% alatt van. A B korfa (Németország) alja keskeny, a középső és felső korcsoportok a legszélesebbek: a 65 év felettiek aránya kb. 22%, a 15 év alattiaké kb. 14%."
+    }
+  ],
+  "keyPoints": [
+    "A népesség több ezer évig lassan nőtt; 1800 körül érte el az 1 milliárdot, a 20. században gyorsult fel (népességrobbanás).",
+    "A népességrobbanás oka: a halálozás gyors csökkenése (orvostudomány, védőoltások, higiénia, élelmezés), miközben a születésszám még magas.",
+    "Demográfiai átmenet: 1. magas születés és halálozás; 2. csökkenő halálozás, gyors növekedés; 3. csökkenő születésszám; 4. alacsony születés és halálozás; (5. fogyás).",
+    "A fejlődő országok (pl. Niger, Nigéria) a 2–3., a fejlett országok (pl. Németország, Japán) a 4–5. szakaszban vannak.",
+    "Piramis alakú korfa: fiatal, gyorsan növő népesség; urna alakú: elöregedő, fogyó népesség.",
+    "Népességrobbanás következményei: élelmezési gondok, munkanélküliség, gyors városnövekedés, nyomornegyedek, környezetterhelés.",
+    "Elöregedés következményei: nyugdíj- és egészségügyi terhek, munkaerőhiány, bevándorlás szükségessége.",
+    "Népesedéspolitika: Kína egykepolitikája (1979–2015), családtámogatás a fejlett országokban.",
+    "Topográfia: India, Kína, Nigéria, Niger, Németország."
+  ],
+  "speakingSeconds": 480,
+  "prepSeconds": 900,
+  "sampleAnswer": {
+    "turns": [
+      {
+        "speaker": "candidate",
+        "text": "A forrás adatai szerint a Föld népessége 1800 körül érte el az 1 milliárd főt, a második milliárdhoz több mint száz év kellett, utána viszont egyre rövidebb idő alatt nőtt egy-egy milliárddal: 2022-ben már 8 milliárdan voltunk. Ezt a gyors növekedést nevezzük népességrobbanásnak. Oka, hogy az orvostudomány fejlődése, a védőoltások, a tiszta ivóvíz és a jobb élelmezés miatt a halálozás gyorsan csökkent, a születésszám viszont a hagyományos, mezőgazdasági társadalmakban még sokáig magas maradt. Ezt a folyamatot a demográfiai átmenet modellje írja le: az első szakaszban a születés és a halálozás is magas, a másodikban a halálozás csökken, ezért robbanásszerűen nő a népesség, a harmadikban a születésszám is csökkenni kezd, a negyedikben mindkettő alacsony, egyes fejlett országokban pedig már fogy a népesség. Az A korfa Nigeré, amelyet megmutatok Afrika térképén: széles alapú piramis, a népesség fele gyerek, ez a második szakaszra jellemző. A B korfa Németországé: urna alakú, kevés a fiatal és sok az idős, ez az elöregedő, negyedik-ötödik szakasz. A népességrobbanás következménye a fejlődő országokban az élelmezési gond, a munkanélküliség és a városok gyors, ellenőrizetlen növekedése nyomornegyedekkel. A fejlett országokban viszont az elöregedés miatt nő a nyugdíj- és az egészségügyi kiadás, munkaerőhiány alakul ki, amit sokszor bevándorlással pótolnak. Kína az egykepolitikával fékezte a növekedést, ma India a legnépesebb ország."
+      }
+    ],
+    "notes": [
+      "A felelet a forrás idősorából indul, és a változást az okokkal (csökkenő halálozás, magas születésszám) magyarázza.",
+      "A demográfiai átmenet szakaszait a két korfához köti, így a modell alkalmazását is bemutatja, nem csak felsorolja.",
+      "Mindkét népesedési probléma (robbanás és elöregedés) következményeit kifejti, a topográfiai elemeket a térképen megmutatja."
+    ]
+  }
+}

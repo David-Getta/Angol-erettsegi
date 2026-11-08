@@ -1,0 +1,185 @@
+{
+  "schemaVersion": 1,
+  "id": "fiz-rd-emelt-hotan-gazok-teszt",
+  "subject": "fizika",
+  "revision": 1,
+  "level": "emelt",
+  "source": "generated",
+  "topic": "energia-munka-ho",
+  "title": "Gáztörvények, főtételek, kalorimetria – feleletválasztós teszt",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "reading",
+  "type": "feleletvalasztas",
+  "instructions": "Minden kérdésnél egyetlen helyes válasz van. Jelöld meg a helyes válasz betűjelét! A 0. kérdés a megoldott példa. A gázokat tekintsd ideális gáznak.",
+  "example": {
+    "id": "0",
+    "kind": "choice",
+    "prompt": "Egy ideális gázt állandó hőmérsékleten lassan összenyomunk. Mi igaz?",
+    "options": [
+      { "key": "A", "text": "A nyomása nő, a belső energiája nem változik." },
+      { "key": "B", "text": "A nyomása nő, a belső energiája is nő." },
+      { "key": "C", "text": "A nyomása csökken, a belső energiája nem változik." },
+      { "key": "D", "text": "A nyomása nem változik, a térfogata nő." }
+    ],
+    "answer": "A",
+    "category": "torvenyek",
+    "explanation": "Helyes: A. Izoterm folyamatban p·V = állandó (Boyle–Mariotte), így kisebb térfogathoz nagyobb nyomás tartozik. Az ideális gáz belső energiája csak a hőmérséklettől függ, ezért nem változik; a rajta végzett munkát a gáz hő formájában leadja a környezetnek."
+  },
+  "items": [
+    {
+      "id": "1",
+      "kind": "choice",
+      "prompt": "Egy zárt, merev falú tartályban lévő gáz nyomása 27 °C-on 2,0 · 10⁵ Pa. Mekkora lesz a nyomása, ha 127 °C-ra melegítjük?",
+      "options": [
+        { "key": "A", "text": "1,5 · 10⁵ Pa" },
+        { "key": "B", "text": "2,0 · 10⁵ Pa" },
+        { "key": "C", "text": "2,7 · 10⁵ Pa" },
+        { "key": "D", "text": "9,4 · 10⁵ Pa" }
+      ],
+      "answer": "C",
+      "category": "mertekegyseg",
+      "explanation": "Helyes: C. Állandó térfogaton (izochor folyamat) p/T = állandó, ahol T az abszolút hőmérséklet: T₁ = 300 K, T₂ = 400 K. p₂ = p₁ · T₂/T₁ = 2,0 · 10⁵ Pa · 400/300 ≈ 2,7 · 10⁵ Pa.",
+      "wrongOptions": {
+        "A": "Fordított arányt használt (300/400); melegítéskor állandó térfogaton a nyomás NŐ.",
+        "B": "Merev tartályban a térfogat állandó, ezért melegítéskor a nyomás nem maradhat változatlan.",
+        "D": "Celsius-fokokkal számolt (127/27 ≈ 4,7); a gáztörvényekben mindig kelvinben mért abszolút hőmérséklet szerepel."
+      }
+    },
+    {
+      "id": "2",
+      "kind": "choice",
+      "prompt": "Egy gáz 500 J hőt vesz fel, és közben 200 J munkát végez a környezetén. Mennyivel változik a belső energiája?",
+      "options": [
+        { "key": "A", "text": "300 J-lal nő." },
+        { "key": "B", "text": "700 J-lal nő." },
+        { "key": "C", "text": "300 J-lal csökken." },
+        { "key": "D", "text": "200 J-lal nő." }
+      ],
+      "answer": "A",
+      "category": "vektor-irany",
+      "explanation": "Helyes: A. A termodinamika I. főtétele: ΔE = Q + W, ahol W a gázon végzett munka. A gáz VÉGEZ munkát, ezért a rajta végzett munka W = −200 J: ΔE = 500 J − 200 J = 300 J, a belső energia 300 J-lal nő.",
+      "wrongOptions": {
+        "B": "Előjelhiba: a gáz által végzett munka csökkenti a belső energiát, ezért nem hozzáadni, hanem levonni kell.",
+        "C": "A felvett hő (500 J) nagyobb a végzett munkánál (200 J), ezért a belső energia nő, nem csökken.",
+        "D": "A végzett munkát tekintette energiaváltozásnak; a változás a felvett hő és a végzett munka különbsége."
+      }
+    },
+    {
+      "id": "3",
+      "kind": "choice",
+      "prompt": "Egy gáz adiabatikusan (hőcsere nélkül) kitágul. Mi történik a hőmérsékletével?",
+      "options": [
+        { "key": "A", "text": "Nő, mert a gáz munkát végez." },
+        { "key": "B", "text": "Csökken, mert a gáz hőt ad le a környezetének." },
+        { "key": "C", "text": "Nem változik, mert nincs hőcsere." },
+        { "key": "D", "text": "Csökken, mert a végzett munkát a gáz a belső energiájából fedezi." }
+      ],
+      "answer": "D",
+      "category": "jelenseg-magyarazat",
+      "explanation": "Helyes: D. Adiabatikus folyamatban Q = 0, így ΔE = W. Táguláskor a gáz munkát végez (a rajta végzett munka negatív), ezért a belső energiája és vele a hőmérséklete csökken. Ezért hűl le a szifonpatronból vagy a szelepből kiáramló, gyorsan táguló gáz.",
+      "wrongOptions": {
+        "A": "A munkavégzés energiát visz EL a gázból; a hőmérséklet akkor nő, ha a gázt adiabatikusan összenyomjuk.",
+        "B": "Adiabatikus folyamatban definíció szerint nincs hőcsere; a lehűlés oka a munkavégzés.",
+        "C": "A hőcsere hiánya nem jelenti, hogy a belső energia állandó: munkavégzéssel is változhat."
+      }
+    },
+    {
+      "id": "4",
+      "kind": "choice",
+      "prompt": "Egy dugattyúval elzárt hengerben lévő gáz állandó, 1,0 · 10⁵ Pa nyomáson 2,0 dm³-ről 5,0 dm³-re tágul. Mennyi munkát végez a gáz?",
+      "options": [
+        { "key": "A", "text": "300 J" },
+        { "key": "B", "text": "500 J" },
+        { "key": "C", "text": "700 J" },
+        { "key": "D", "text": "3,0 · 10⁵ J" }
+      ],
+      "answer": "A",
+      "category": "mertekegyseg",
+      "explanation": "Helyes: A. Állandó nyomáson a tágulási munka W = p·ΔV = 1,0 · 10⁵ Pa · (5,0 − 2,0) · 10⁻³ m³ = 300 J. (1 dm³ = 10⁻³ m³, és Pa · m³ = N/m² · m³ = N·m = J.)",
+      "wrongOptions": {
+        "B": "500 J = p·V₂: a munkát a térfogat VÁLTOZÁSÁVAL kell számolni, nem a végső térfogattal.",
+        "C": "700 J = p·(V₁ + V₂): összeadta a két térfogatot a különbség helyett.",
+        "D": "Nem váltotta át a dm³-t m³-re: 3,0 dm³ = 3,0 · 10⁻³ m³."
+      }
+    },
+    {
+      "id": "5",
+      "kind": "choice",
+      "prompt": "Mekkora annak az ideális (Carnot-) hőerőgépnek a hatásfoka, amely 527 °C-os hőtartály és 27 °C-os hűtő között működik?",
+      "options": [
+        { "key": "A", "text": "5 %" },
+        { "key": "B", "text": "37,5 %" },
+        { "key": "C", "text": "62,5 %" },
+        { "key": "D", "text": "95 %" }
+      ],
+      "answer": "C",
+      "category": "mertekegyseg",
+      "explanation": "Helyes: C. Az ideális hőerőgép hatásfoka η = 1 − T_h/T_m, abszolút hőmérsékletekkel: T_m = 800 K, T_h = 300 K, így η = 1 − 300/800 = 0,625 = 62,5 %. Valódi gép hatásfoka ennél mindig kisebb.",
+      "wrongOptions": {
+        "A": "5 % ≈ 27/527: a két hőmérséklet hányadosát vette (ráadásul Celsius-fokban), nem az 1 − T_h/T_m kifejezést.",
+        "B": "37,5 % = 300/800, vagyis T_h/T_m – ez a leadott hő aránya, a hatásfok 1-ből kivonva kapható.",
+        "D": "95 % ≈ 1 − 27/527: Celsius-fokokkal számolt; a képletben kelvinben mért hőmérséklet szerepel."
+      }
+    },
+    {
+      "id": "6",
+      "kind": "choice",
+      "prompt": "0,2 kg 80 °C-os vizet összeöntünk 0,3 kg 20 °C-os vízzel. Mekkora lesz a közös hőmérséklet, ha a környezettel nincs hőcsere?",
+      "options": [
+        { "key": "A", "text": "22 °C" },
+        { "key": "B", "text": "44 °C" },
+        { "key": "C", "text": "50 °C" },
+        { "key": "D", "text": "56 °C" }
+      ],
+      "answer": "B",
+      "category": "szamolas",
+      "explanation": "Helyes: B. A meleg víz által leadott hő egyenlő a hideg víz által felvett hővel: c·0,2·(80 − T) = c·0,3·(T − 20). Ebből 16 − 0,2T = 0,3T − 6, azaz 0,5T = 22, T = 44 °C. (A fajhő mindkét oldalon azonos, ezért kiesik.)",
+      "wrongOptions": {
+        "A": "22 a 0,5·T = 22 egyenlet jobb oldala: kimaradt az osztás az összes tömeggel (0,5 kg).",
+        "C": "50 °C a két hőmérséklet egyszerű átlaga – ez csak egyenlő tömegeknél lenne igaz.",
+        "D": "Felcserélte a tömegeket: a hideg vízből van több, ezért a közös hőmérséklet 50 °C alatt van."
+      }
+    },
+    {
+      "id": "7",
+      "kind": "choice",
+      "prompt": "Mennyi hő szükséges 0,5 kg 0 °C-os jég megolvasztásához és a keletkező víz 20 °C-ra melegítéséhez? (Az olvadáshő 334 kJ/kg, a víz fajhője 4,18 kJ/(kg·°C).)",
+      "options": [
+        { "key": "A", "text": "41,8 kJ" },
+        { "key": "B", "text": "167 kJ" },
+        { "key": "C", "text": "209 kJ" },
+        { "key": "D", "text": "376 kJ" }
+      ],
+      "answer": "C",
+      "category": "szamolas",
+      "explanation": "Helyes: C. Két lépés: olvadás Q₁ = L·m = 334 kJ/kg · 0,5 kg = 167 kJ; melegítés Q₂ = c·m·ΔT = 4,18 · 0,5 · 20 = 41,8 kJ. Összesen Q = 167 + 41,8 ≈ 209 kJ.",
+      "wrongOptions": {
+        "A": "41,8 kJ csak a víz melegítése; kimaradt az olvadáshoz szükséges, ennél sokkal nagyobb hő.",
+        "B": "167 kJ csak az olvasztás; a 0 °C-os víz 20 °C-ra melegítése még 41,8 kJ.",
+        "D": "376 kJ = 334 + 41,8: az olvadáshőt nem szorozta meg a 0,5 kg tömeggel."
+      }
+    },
+    {
+      "id": "8",
+      "kind": "choice",
+      "prompt": "Melyik állítás a termodinamika II. főtételének egyik megfogalmazása?",
+      "options": [
+        { "key": "A", "text": "Az energia nem keletkezik és nem vész el, csak átalakul." },
+        { "key": "B", "text": "Jó szigeteléssel elérhető, hogy egy hőerőgép a felvett hőt teljes egészében munkává alakítsa." },
+        { "key": "C", "text": "Állandó térfogaton a gáz nyomása egyenesen arányos az abszolút hőmérsékletével." },
+        { "key": "D", "text": "Hő magától (külső beavatkozás nélkül) csak a melegebb testről a hidegebbre megy át." }
+      ],
+      "answer": "D",
+      "category": "torvenyek",
+      "explanation": "Helyes: D. A II. főtétel (Clausius-féle megfogalmazás) szerint a hő önként csak melegebbről hidegebb testre áramlik; a fordított irányhoz munkát kell befektetni (hűtőgép, hőszivattyú). Ezzel egyenértékű, hogy nincs olyan periodikusan működő gép, amely a felvett hőt teljesen munkává alakítja.",
+      "wrongOptions": {
+        "A": "Ez az energiamegmaradás, azaz a termodinamika I. főtétele.",
+        "B": "Éppen ezt tiltja a II. főtétel: a hő egy részét mindig le kell adni a hűtőnek, ezért η < 100 % szigeteléstől függetlenül.",
+        "C": "Ez Gay-Lussac II. törvénye (izochor állapotváltozás), nem főtétel."
+      }
+    }
+  ],
+  "glossary": [],
+  "suggestedMinutes": 18
+}

@@ -1,0 +1,267 @@
+{
+  "schemaVersion": 1,
+  "id": "dig-rd-emelt-sql-lekerdezesek",
+  "subject": "digitalis-kultura",
+  "revision": 1,
+  "level": "emelt",
+  "source": "generated",
+  "topic": "adatbazis",
+  "title": "SQL: csoportosítás, összekapcsolás, NULL",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "reading",
+  "type": "feleletvalasztas",
+  "instructions": "A kérdések egy tanulmányi verseny adatbázisára vonatkoznak: iskola(id, nev, varos), versenyzo(id, nev, iskola_id), eredmeny(versenyzo_id, feladat, pont). A versenyzo.iskola_id az iskola.id-re, az eredmeny.versenyzo_id a versenyzo.id-re hivatkozik. Válassza ki a helyes választ (A–D)! A 0. a példa.",
+  "example": {
+    "id": "0",
+    "kind": "choice",
+    "prompt": "Melyik záradékban szűrhetünk egy összesítő függvény eredményére (pl. csak azok az iskolák kellenek, ahonnan 5-nél több versenyző indult)?",
+    "options": [
+      {
+        "key": "A",
+        "text": "WHERE"
+      },
+      {
+        "key": "B",
+        "text": "ORDER BY"
+      },
+      {
+        "key": "C",
+        "text": "HAVING"
+      },
+      {
+        "key": "D",
+        "text": "FROM"
+      }
+    ],
+    "answer": "C",
+    "category": "adatbazis-lekerdezes",
+    "explanation": "C – HAVING. A WHERE a csoportosítás ELŐTT, rekordonként szűr, ezért nem tartalmazhat összesítő függvényt; a HAVING a GROUP BY UTÁN a csoportokra: … GROUP BY iskola.nev HAVING COUNT(*) > 5;",
+    "wrongOptions": {
+      "A": "A WHERE-ben nem állhat COUNT(), mert a csoportok még nem jöttek létre.",
+      "B": "Az ORDER BY rendez, nem szűr.",
+      "D": "A FROM a forrástáblákat adja meg."
+    }
+  },
+  "items": [
+    {
+      "id": "1",
+      "kind": "choice",
+      "prompt": "Mit ad vissza a SELECT COUNT(DISTINCT varos) FROM iskola; lekérdezés?",
+      "options": [
+        {
+          "key": "A",
+          "text": "az iskolák számát"
+        },
+        {
+          "key": "B",
+          "text": "a különböző városok számát"
+        },
+        {
+          "key": "C",
+          "text": "a városok listáját ismétlés nélkül"
+        },
+        {
+          "key": "D",
+          "text": "a legtöbb iskolával rendelkező várost"
+        }
+      ],
+      "answer": "B",
+      "category": "adatbazis-lekerdezes",
+      "explanation": "B. A DISTINCT az ismétlődő városneveket egyszer veszi figyelembe, a COUNT ezeket számolja meg: ha két iskola is szegedi, Szeged csak egyszer számít.",
+      "wrongOptions": {
+        "A": "Az iskolák számát a COUNT(*) adná, a DISTINCT varos miatt itt a városokat számoljuk.",
+        "C": "A listát a SELECT DISTINCT varos FROM iskola; adná; a COUNT egyetlen számot ad.",
+        "D": "Ehhez GROUP BY varos és rendezés kellene."
+      }
+    },
+    {
+      "id": "2",
+      "kind": "choice",
+      "prompt": "Az eredmeny táblában néhány rekordnál üres (NULL) a pont mező. Melyik feltétel válogatja ki ezeket a rekordokat?",
+      "options": [
+        {
+          "key": "A",
+          "text": "WHERE pont = NULL"
+        },
+        {
+          "key": "B",
+          "text": "WHERE pont = ''"
+        },
+        {
+          "key": "C",
+          "text": "WHERE pont = 0"
+        },
+        {
+          "key": "D",
+          "text": "WHERE pont IS NULL"
+        }
+      ],
+      "answer": "D",
+      "category": "adatbazis-lekerdezes",
+      "explanation": "D – IS NULL. A NULL „ismeretlen érték”: vele egyenlőségvizsgálatot végezni nem lehet (a pont = NULL sosem igaz), ezért külön operátor van rá: IS NULL, illetve IS NOT NULL.",
+      "wrongOptions": {
+        "A": "Az = NULL összehasonlítás eredménye ismeretlen, így egyetlen rekordot sem ad vissza.",
+        "B": "Az üres karakterlánc szöveg, nem NULL; számmezőben nem is értelmes.",
+        "C": "A 0 pont létező érték, nem azonos a hiányzó (NULL) értékkel."
+      }
+    },
+    {
+      "id": "3",
+      "kind": "choice",
+      "prompt": "Az iskola táblának 12, a versenyzo táblának 80 rekordja van, és minden versenyzőnek pontosan egy, létező iskola_id-je van. Hány sort ad a SELECT * FROM versenyzo INNER JOIN iskola ON versenyzo.iskola_id = iskola.id; lekérdezés?",
+      "options": [
+        {
+          "key": "A",
+          "text": "80"
+        },
+        {
+          "key": "B",
+          "text": "12"
+        },
+        {
+          "key": "C",
+          "text": "92"
+        },
+        {
+          "key": "D",
+          "text": "960"
+        }
+      ],
+      "answer": "A",
+      "category": "adatbazis-lekerdezes",
+      "explanation": "A – 80. Az INNER JOIN minden versenyzőhöz pontosan egy iskolát kapcsol (az iskola_id-je alapján), így versenyzőnként egy sor lesz. A 960 (12 · 80) a kapcsolófeltétel nélküli Descartes-szorzat lenne.",
+      "wrongOptions": {
+        "B": "Iskolánként nem egy sor lesz, hanem versenyzőnként; egy iskolához több versenyző is tartozhat.",
+        "C": "Az összekapcsolás nem adja össze a két tábla sorait.",
+        "D": "Ez a kapcsolófeltétel (ON) nélküli keresztszorzat sorainak száma."
+      }
+    },
+    {
+      "id": "4",
+      "kind": "choice",
+      "prompt": "Melyik lekérdezés adja meg versenyzőnként az összpontszámot, a legjobbal kezdve?",
+      "options": [
+        {
+          "key": "A",
+          "text": "SELECT versenyzo_id, SUM(pont) FROM eredmeny GROUP BY versenyzo_id ORDER BY SUM(pont);"
+        },
+        {
+          "key": "B",
+          "text": "SELECT versenyzo_id, SUM(pont) FROM eredmeny ORDER BY SUM(pont) DESC;"
+        },
+        {
+          "key": "C",
+          "text": "SELECT versenyzo_id, COUNT(pont) FROM eredmeny GROUP BY versenyzo_id ORDER BY COUNT(pont) DESC;"
+        },
+        {
+          "key": "D",
+          "text": "SELECT versenyzo_id, SUM(pont) FROM eredmeny GROUP BY versenyzo_id ORDER BY SUM(pont) DESC;"
+        }
+      ],
+      "answer": "D",
+      "category": "adatbazis-lekerdezes",
+      "explanation": "D. A GROUP BY versenyzo_id versenyzőnként egy csoportot képez, a SUM(pont) csoportonként összead, az ORDER BY … DESC csökkenő sorrendbe tesz. (Az ORDER BY-ban az összesítő kifejezést ismételjük meg, mert az Access a mezőnév álnevét itt nem fogadja el.)",
+      "wrongOptions": {
+        "A": "DESC nélkül növekvő a sorrend, a leggyengébb kerül előre.",
+        "B": "GROUP BY nélkül a SUM az egész táblát egy csoportnak tekinti (vagy hibát ad), versenyzőnkénti összeg nem keletkezik.",
+        "C": "A COUNT a pontszámok darabszámát adja, nem az összegüket."
+      }
+    },
+    {
+      "id": "5",
+      "kind": "choice",
+      "prompt": "Melyik lekérdezés adja meg azoknak az iskoláknak a nevét, ahonnan egyetlen versenyző sem indult?",
+      "options": [
+        {
+          "key": "A",
+          "text": "SELECT nev FROM iskola WHERE id IN (SELECT iskola_id FROM versenyzo);"
+        },
+        {
+          "key": "B",
+          "text": "SELECT nev FROM iskola WHERE id NOT IN (SELECT iskola_id FROM versenyzo);"
+        },
+        {
+          "key": "C",
+          "text": "SELECT iskola.nev FROM iskola INNER JOIN versenyzo ON iskola.id = versenyzo.iskola_id WHERE versenyzo.id IS NULL;"
+        },
+        {
+          "key": "D",
+          "text": "SELECT nev FROM iskola WHERE id <> iskola_id;"
+        }
+      ],
+      "answer": "B",
+      "category": "adatbazis-lekerdezes",
+      "explanation": "B. Az allekérdezés megadja azoknak az iskoláknak az azonosítóját, ahonnan van versenyző; a NOT IN ezeket kizárja. Ugyanez LEFT JOIN-nal is megoldható: … LEFT JOIN versenyzo ON … WHERE versenyzo.id IS NULL.",
+      "wrongOptions": {
+        "A": "Az IN éppen azokat az iskolákat adja, ahonnan VAN versenyző.",
+        "C": "INNER JOIN-nál csak az összetartozó párok maradnak meg, így a versenyzo.id sosem NULL – az eredmény üres. LEFT JOIN kellene.",
+        "D": "Az iskola táblának nincs iskola_id mezője; a két tábla összekapcsolása így nem végezhető el."
+      }
+    },
+    {
+      "id": "6",
+      "kind": "choice",
+      "prompt": "A 3. feladatnál négy pontszám szerepel: 10, 6, NULL és 8. Mit ad a SELECT AVG(pont) FROM eredmeny WHERE feladat = 3; lekérdezés?",
+      "options": [
+        {
+          "key": "A",
+          "text": "8"
+        },
+        {
+          "key": "B",
+          "text": "6"
+        },
+        {
+          "key": "C",
+          "text": "24"
+        },
+        {
+          "key": "D",
+          "text": "4,8"
+        }
+      ],
+      "answer": "A",
+      "category": "adatbazis-lekerdezes",
+      "explanation": "A – 8. Az összesítő függvények (AVG, SUM, COUNT(mező)) a NULL értékeket kihagyják: (10 + 6 + 8) / 3 = 8. Ha a hiányzó pontot 0-nak akarjuk tekinteni, azt külön kell kezelni.",
+      "wrongOptions": {
+        "B": "A 6 akkor jönne ki, ha a NULL 0-nak számítana (24 / 4) – de az AVG kihagyja.",
+        "C": "A 24 az összeg (SUM), nem az átlag.",
+        "D": "A 4,8 a 24 / 5 lenne, de csak három érvényes érték van."
+      }
+    },
+    {
+      "id": "7",
+      "kind": "choice",
+      "prompt": "Melyik feltétel választja ki a „Sz” betűkkel kezdődő városokat szabványos SQL-ben (pl. LibreOffice Base, SQLite)?",
+      "options": [
+        {
+          "key": "A",
+          "text": "varos LIKE '%Sz'"
+        },
+        {
+          "key": "B",
+          "text": "varos = 'Sz%'"
+        },
+        {
+          "key": "C",
+          "text": "varos LIKE 'Sz%'"
+        },
+        {
+          "key": "D",
+          "text": "varos LIKE 'Sz_'"
+        }
+      ],
+      "answer": "C",
+      "category": "adatbazis-lekerdezes",
+      "explanation": "C. A LIKE mintaillesztést végez: a % tetszőleges számú (akár nulla) karaktert, az _ pontosan egy karaktert helyettesít. Az MS Access ugyanezt a * és ? jellel írja: LIKE \"Sz*\".",
+      "wrongOptions": {
+        "A": "A '%Sz' a „Sz” végű nevekre illeszkedik.",
+        "B": "Az = operátor nem értelmezi a % jelet, csak a pontosan „Sz%” nevű várost találná meg.",
+        "D": "Az _ pontosan egy karakter, így csak a háromkarakteres, Sz-szel kezdődő neveket adná."
+      }
+    }
+  ],
+  "glossary": [],
+  "suggestedMinutes": 12
+}

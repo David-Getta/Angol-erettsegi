@@ -1,0 +1,111 @@
+{
+  "schemaVersion": 1,
+  "id": "dig-rd-emelt-python-kimenet",
+  "subject": "digitalis-kultura",
+  "revision": 1,
+  "level": "emelt",
+  "source": "generated",
+  "topic": "algoritmizalas",
+  "title": "Mit ír ki a program? – ciklusok, függvények, szótár",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "reading",
+  "type": "kod-kimenet",
+  "instructions": "Mit ír ki a képernyőre az alábbi Python-programrészlet? Írja le pontosan a kimenetet! Ha a print több értéket ír ki, a Pythonhoz hasonlóan egy szóközzel válassza el őket; listát a Python írásmódjával adjon meg. A behúzás jelzi, mely utasítások tartoznak a ciklushoz vagy az elágazáshoz. A 0. a példa.",
+  "example": {
+    "id": "0",
+    "kind": "text",
+    "prompt": "Mit ír ki a program?\nt = [5, 3, 8, 1]\nt.sort()\nprint(t[0], t[-1])",
+    "answer": [
+      "1 8"
+    ],
+    "category": "adattipus-adatszerkezet",
+    "explanation": "Kimenet: 1 8. A sort() helyben, növekvő sorrendbe rendezi a listát ([1, 3, 5, 8]); t[0] a legkisebb, t[-1] a legnagyobb elem."
+  },
+  "items": [
+    {
+      "id": "1",
+      "kind": "text",
+      "prompt": "Mit ír ki a program?\ndb = 0\nfor i in range(1, 5):\n    for j in range(i, 5):\n        db += 1\nprint(db)",
+      "answer": [
+        "10"
+      ],
+      "category": "algoritmus-logika",
+      "explanation": "Kimenet: 10. A belső ciklus i = 1-nél 4-szer (j = 1…4), i = 2-nél 3-szor, i = 3-nál 2-szer, i = 4-nél 1-szer fut: 4 + 3 + 2 + 1 = 10. Egymásba ágyazott ciklusnál a belső ciklus futásainak számát kell összegezni."
+    },
+    {
+      "id": "2",
+      "kind": "text",
+      "prompt": "Mit ír ki a program?\ns = \"algoritmus\"\nu = \"\"\nfor k in s:\n    if k in \"aeiou\":\n        u = u + k.upper()\nprint(u)",
+      "answer": [
+        "AOIU"
+      ],
+      "caseSensitive": true,
+      "category": "adattipus-adatszerkezet",
+      "explanation": "Kimenet: AOIU. A ciklus karakterenként halad; a magánhangzókat (a, o, i, u – a szó sorrendjében) nagybetűsítve fűzi az u végére, a mássalhangzókat kihagyja. Ez a kiválogatás tétele karakterláncon."
+    },
+    {
+      "id": "3",
+      "kind": "text",
+      "prompt": "Mit ír ki a program?\nszavak = [\"alma\", \"korte\", \"alma\", \"szilva\", \"alma\", \"korte\"]\ngy = {}\nfor sz in szavak:\n    gy[sz] = gy.get(sz, 0) + 1\nprint(len(gy), gy[\"alma\"])",
+      "answer": [
+        "3 3"
+      ],
+      "category": "adattipus-adatszerkezet",
+      "explanation": "Kimenet: 3 3. A szótár kulcsai a különböző szavak (alma, korte, szilva → 3 kulcs), az értékek az előfordulások száma; a get(sz, 0) 0-t ad, ha a kulcs még nincs a szótárban. Az „alma” háromszor szerepel."
+    },
+    {
+      "id": "4",
+      "kind": "text",
+      "prompt": "Mit ír ki a program?\ndef f(n):\n    if n <= 1:\n        return 1\n    return n * f(n - 2)\n\nprint(f(7))",
+      "answer": [
+        "105"
+      ],
+      "category": "algoritmus-logika",
+      "explanation": "Kimenet: 105. A rekurzív függvény f(7) = 7 · f(5) = 7 · 5 · f(3) = 7 · 5 · 3 · f(1) = 7 · 5 · 3 · 1 = 105 (a páratlan számok szorzata). A báziseset (n <= 1) állítja meg a rekurziót."
+    },
+    {
+      "id": "5",
+      "kind": "text",
+      "prompt": "Mit ír ki a program?\nt = [x * x for x in range(6) if x % 2 == 1]\nprint(t)",
+      "answer": [
+        "[1, 9, 25]",
+        "[1,9,25]"
+      ],
+      "category": "adattipus-adatszerkezet",
+      "explanation": "Kimenet: [1, 9, 25]. A listaértelmezés a range(6) elemei (0…5) közül a páratlanokat (1, 3, 5) válogatja ki, és a négyzetüket teszi a listába. A print a listát szögletes zárójellel, vesszővel elválasztva írja ki."
+    },
+    {
+      "id": "6",
+      "kind": "text",
+      "prompt": "Mit ír ki a program?\nn = 91\nd = 2\nwhile n % d != 0:\n    d += 1\nprint(d)",
+      "answer": [
+        "7"
+      ],
+      "category": "algoritmus-logika",
+      "explanation": "Kimenet: 7. A ciklus a 2-től felfelé keresi n első osztóját (a keresés tétele): 91 nem osztható 2-vel, 3-mal, 4-gyel, 5-tel, 6-tal, de 91 = 7 · 13. Ha d = n lenne az eredmény, n prímszám volna."
+    },
+    {
+      "id": "7",
+      "kind": "text",
+      "prompt": "Mit ír ki a program?\nn = 13\ns = \"\"\nwhile n > 0:\n    s = str(n % 2) + s\n    n = n // 2\nprint(s)",
+      "answer": [
+        "1101"
+      ],
+      "category": "algoritmus-logika",
+      "explanation": "Kimenet: 1101. A program a 13-at kettes számrendszerbe váltja: a maradékok sorban 1, 0, 1, 1, és mindegyiket a karakterlánc ELEJÉRE fűzi, így a fordított sorrend helyes lesz: 13 = 8 + 4 + 1 = 1101₂."
+    },
+    {
+      "id": "8",
+      "kind": "text",
+      "prompt": "Mit ír ki a program?\nt = [4, 9, 2, 9, 7]\nmi = 0\nfor i in range(1, len(t)):\n    if t[i] > t[mi]:\n        mi = i\nprint(mi)",
+      "answer": [
+        "1"
+      ],
+      "category": "algoritmus-logika",
+      "explanation": "Kimenet: 1. Ez a maximumkiválasztás tétele, az eredmény a legnagyobb elem INDEXE. A szigorú > miatt az első 9-es (1-es index) marad meg; a második 9-esnél (3-as index) a feltétel hamis. Ha >= állna ott, 3 lenne a kimenet."
+    }
+  ],
+  "glossary": [],
+  "suggestedMinutes": 12
+}

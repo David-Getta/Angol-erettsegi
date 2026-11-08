@@ -1,0 +1,180 @@
+{
+  "schemaVersion": 1,
+  "id": "kem-rd-emelt-oldhatosag-abraelemzes",
+  "subject": "kemia",
+  "revision": 1,
+  "level": "emelt",
+  "source": "generated",
+  "topic": "anyagi-halmazok",
+  "title": "Oldhatósági táblázat elemzése",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "reading",
+  "type": "abraelemzes",
+  "instructions": "A szöveg egy oldhatósági táblázat adatait írja le. A táblázat alapján válaszolj a kérdésekre! A rövid válaszoknál a számot mértékegységgel add meg; az igaz–hamis kérdéseknél I = T, H = F. Ar(Na) = 23, Ar(Cl) = 35,5. A 0. a példa.",
+  "passage": {
+    "title": "Néhány anyag oldhatósága vízben (g oldott anyag / 100 g víz)",
+    "blocks": [
+      {
+        "text": "A táblázat azt adja meg, hány gramm anyag oldható fel 100 g vízben telített oldatot készítve, két hőmérsékleten. Kálium-nitrát (KNO₃): 20 °C-on 32 g, 80 °C-on 169 g. Kálium-klorid (KCl): 20 °C-on 34 g, 80 °C-on 51 g. Nátrium-klorid (NaCl): 20 °C-on 36 g, 80 °C-on 38 g. Kalcium-hidroxid (Ca(OH)₂): 20 °C-on 0,17 g, 80 °C-on 0,09 g."
+      },
+      {
+        "text": "A legtöbb szilárd anyag oldódása endoterm, ezért oldhatóságuk a hőmérséklet emelésével nő – egyeseknél (kálium-nitrát) meredeken, másoknál (nátrium-klorid) alig. Néhány anyag, például a kalcium-hidroxid oldódása exoterm, ezért melegítve kevesebb oldódik belőle. Ha egy magasabb hőmérsékleten telített oldatot lehűtünk, az oldhatóságok különbségének megfelelő anyagmennyiség kristályosan kiválik: ezen alapul az átkristályosítás, a szilárd anyagok tisztításának gyakori módja."
+      }
+    ]
+  },
+  "example": {
+    "id": "0",
+    "kind": "text",
+    "prompt": "Melyik anyag oldhatósága csökken a hőmérséklet emelésével?",
+    "answer": [
+      "Ca(OH)₂",
+      "Ca(OH)2",
+      "kalcium-hidroxid",
+      "kalcium hidroxid"
+    ],
+    "caseSensitive": true,
+    "maxWords": 2,
+    "category": "szovegertelmezes",
+    "explanation": "Helyes: a kalcium-hidroxid, Ca(OH)₂. A táblázatban csak az ő oldhatósága kisebb 80 °C-on (0,09 g), mint 20 °C-on (0,17 g); a szöveg szerint az oldódása exoterm."
+  },
+  "items": [
+    {
+      "id": "1",
+      "kind": "text",
+      "prompt": "Hány gramm kálium-nitrát oldható fel 50 g vízben 20 °C-on?",
+      "answer": [
+        "16 g",
+        "16",
+        "16 gramm"
+      ],
+      "maxWords": 2,
+      "category": "oldatok-szamitas",
+      "explanation": "Helyes: 16 g. Az oldhatóság 100 g vízre 32 g, az oldott anyag tömege arányos a víz tömegével: 50 g vízben 32 · 50/100 = 16 g oldódik."
+    },
+    {
+      "id": "2",
+      "kind": "tf",
+      "prompt": "A nátrium-klorid oldhatósága csak kis mértékben függ a hőmérséklettől.",
+      "answer": "T",
+      "category": "szovegertelmezes",
+      "explanation": "Igaz. A táblázat szerint 20 °C-ról 80 °C-ra melegítve a NaCl oldhatósága csak 36 g-ról 38 g-ra nő, a szöveg is a „alig” szóval jellemzi."
+    },
+    {
+      "id": "3",
+      "kind": "text",
+      "prompt": "Mekkora a tömege a 80 °C-on 100 g vízzel készített telített kálium-nitrát-oldatnak?",
+      "answer": [
+        "269 g",
+        "269",
+        "269 gramm"
+      ],
+      "maxWords": 2,
+      "category": "oldatok-szamitas",
+      "explanation": "Helyes: 269 g. Az oldat tömege az oldószer és az oldott anyag tömegének összege: 100 g víz + 169 g KNO₃ = 269 g."
+    },
+    {
+      "id": "4",
+      "kind": "text",
+      "prompt": "Hány gramm kálium-nitrát válik ki, ha ezt a 80 °C-os telített oldatot (100 g vízzel) 20 °C-ra hűtjük?",
+      "answer": [
+        "137 g",
+        "137",
+        "137 gramm"
+      ],
+      "maxWords": 2,
+      "category": "oldatok-szamitas",
+      "explanation": "Helyes: 137 g. 100 g víz 20 °C-on már csak 32 g KNO₃-ot tart oldatban, a különbség kristályosan kiválik: 169 − 32 = 137 g. A víz mennyisége közben nem változik."
+    },
+    {
+      "id": "5",
+      "kind": "choice",
+      "prompt": "Mekkora a 20 °C-os telített nátrium-klorid-oldat tömegszázalékos összetétele?",
+      "options": [
+        {
+          "key": "A",
+          "text": "36,0 %"
+        },
+        {
+          "key": "B",
+          "text": "3,6 %"
+        },
+        {
+          "key": "C",
+          "text": "56,3 %"
+        },
+        {
+          "key": "D",
+          "text": "26,5 %"
+        }
+      ],
+      "answer": "D",
+      "category": "oldatok-szamitas",
+      "explanation": "Helyes: D. A tömegszázalékot az oldat tömegére kell vonatkoztatni: 36 g só 136 g oldatban van, 36/136 · 100 = 26,5 %.",
+      "wrongOptions": {
+        "A": "A 36 g az oldhatóság 100 g vízre, nem 100 g oldatra vonatkozik – ez a leggyakoribb hiba.",
+        "B": "Nagyságrendi hiba: 3,6 % a 36 g só 1000 g-ra vonatkoztatott aránya lenne; a helyes hányados 36/136 = 0,265.",
+        "C": "36/64 értelmetlen hányados; a 64 g sehol nem szerepel az adatokban."
+      }
+    },
+    {
+      "id": "6",
+      "kind": "tf",
+      "prompt": "20 °C-on a kálium-klorid jobban oldódik vízben, mint a kálium-nitrát.",
+      "answer": "T",
+      "category": "szovegertelmezes",
+      "explanation": "Igaz. 20 °C-on a KCl oldhatósága 34 g, a KNO₃-é 32 g 100 g vízben, tehát a kálium-klorid oldódik valamivel jobban (80 °C-on már fordított a sorrend: 51 g, illetve 169 g)."
+    },
+    {
+      "id": "7",
+      "kind": "text",
+      "prompt": "Legalább hány gramm 80 °C-os víz kell 102 g kálium-klorid feloldásához?",
+      "answer": [
+        "200 g",
+        "200",
+        "200 gramm"
+      ],
+      "maxWords": 2,
+      "category": "oldatok-szamitas",
+      "explanation": "Helyes: 200 g. 80 °C-on 100 g víz 51 g KCl-t old, 102 g KCl-hoz kétszer annyi, 200 g víz szükséges (102/51 = 2)."
+    },
+    {
+      "id": "8",
+      "kind": "choice",
+      "prompt": "Mekkora a 20 °C-os telített nátrium-klorid-oldat anyagmennyiség-koncentrációja, ha sűrűsége 1,20 g/cm³?",
+      "options": [
+        {
+          "key": "A",
+          "text": "kb. 0,62 mol/dm³"
+        },
+        {
+          "key": "B",
+          "text": "kb. 6,2 mol/dm³"
+        },
+        {
+          "key": "C",
+          "text": "kb. 5,4 mol/dm³"
+        },
+        {
+          "key": "D",
+          "text": "kb. 4,5 mol/dm³"
+        }
+      ],
+      "answer": "C",
+      "category": "oldatok-szamitas",
+      "explanation": "Helyes: C. 136 g oldat térfogata V = m/ρ = 136 g / 1,20 g/cm³ = 113,3 cm³ = 0,1133 dm³; n(NaCl) = 36 g / 58,5 g/mol = 0,615 mol; c = 0,615 mol / 0,1133 dm³ = 5,43 mol/dm³.",
+      "wrongOptions": {
+        "A": "Tízszeres hiba: a térfogatot cm³-ben hagyva vagy a sűrűséget rosszul alkalmazva kaphatjuk.",
+        "B": "Ezt kapjuk, ha a 36 g sót a 100 g víz térfogatára (0,1 dm³) vonatkoztatjuk, nem az oldatéra.",
+        "D": "Ezt kapjuk, ha a sűrűséget figyelmen kívül hagyjuk, és a 136 g oldat térfogatát 136 cm³-nek vesszük: 0,615 mol / 0,136 dm³ = 4,5 mol/dm³."
+      }
+    }
+  ],
+  "glossary": [
+    {
+      "term": "átkristályosítás",
+      "meaning": "tisztítási eljárás: forró telített oldat lehűtésekor a tiszta anyag kikristályosodik, a szennyezők oldatban maradnak"
+    }
+  ],
+  "suggestedMinutes": 12
+}

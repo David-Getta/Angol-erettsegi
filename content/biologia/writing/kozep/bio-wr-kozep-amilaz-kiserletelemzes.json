@@ -1,0 +1,95 @@
+{
+  "schemaVersion": 1,
+  "id": "bio-wr-kozep-amilaz-kiserletelemzes",
+  "subject": "biologia",
+  "revision": 1,
+  "level": "kozep",
+  "source": "generated",
+  "topic": "ember-szervezet",
+  "title": "A nyálamiláz működése – kísérletelemzés",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "writing",
+  "type": "kiserletelemzes",
+  "taskNumber": 1,
+  "situation": "Egy diák a nyál keményítőbontó hatását vizsgálta. Négy kémcsőbe 5–5 cm³ 1%-os keményítőoldatot töltött, majd a következőket adta hozzájuk:\n1. kémcső: 2 cm³ hígított nyál, 37 °C-os vízfürdőben;\n2. kémcső: 2 cm³ desztillált víz, 37 °C-os vízfürdőben;\n3. kémcső: 2 cm³ hígított nyál, jeges vízben (kb. 0 °C-on);\n4. kémcső: 2 cm³ előzőleg felforralt, majd lehűtött hígított nyál, 37 °C-os vízfürdőben.\n15 perc múlva mindegyik kémcső tartalmának egy részéhez néhány csepp Lugol-oldatot (jódos kálium-jodid-oldatot) cseppentett. Tapasztalat: az 1. kémcső mintája sárgásbarna maradt, a 2., a 3. és a 4. kémcső mintája kékesfekete lett. Az 1. kémcső maradékával Fehling-próbát is végzett: melegítés után téglavörös csapadék keletkezett.\nVálaszoljon a kérdésekre összefüggő, egész mondatokban!",
+  "points": [
+    {
+      "id": "p1",
+      "text": "Mi a 2. kémcső szerepe a kísérletben? Nevezze meg a kísérlet független és függő változóját!"
+    },
+    {
+      "id": "p2",
+      "text": "Magyarázza meg az 1. kémcső mindkét tapasztalatát! Melyik enzim működött, mit bontott, és mi lett a terméke?"
+    },
+    {
+      "id": "p3",
+      "text": "Mivel magyarázható a 3. és a 4. kémcső eredménye? Miben különbözik a hideg és a forralás hatása?"
+    },
+    {
+      "id": "p4",
+      "text": "Hol, milyen kémhatású közegben működik ez az enzim a szervezetben, és hol folytatódik a keményítő emésztése?"
+    }
+  ],
+  "suggestedMinutes": 25,
+  "usefulPhrases": [
+    {
+      "en": "kontroll (vak próba)",
+      "hu": "az a kémcső, amelyben a vizsgált tényező hiányzik; ehhez hasonlítjuk a többit"
+    },
+    {
+      "en": "független és függő változó",
+      "hu": "amit a kísérletező változtat, illetve amit mér"
+    },
+    {
+      "en": "Lugol-próba",
+      "hu": "jódos oldat: keményítő jelenlétében kékesfekete szín"
+    },
+    {
+      "en": "Fehling-próba",
+      "hu": "melegítve téglavörös csapadék: redukáló cukor (pl. glükóz, maltóz) jelenléte"
+    },
+    {
+      "en": "amiláz (ptialin)",
+      "hu": "keményítőbontó enzim a nyálban és a hasnyálban; terméke főleg maltóz"
+    },
+    {
+      "en": "denaturáció",
+      "hu": "a fehérje térszerkezetének visszafordíthatatlan megváltozása (pl. forralás, erős sav)"
+    },
+    {
+      "en": "hőmérsékleti optimum",
+      "hu": "az a hőmérséklet, amelyen az enzim a leggyorsabban működik (emberi enzimeknél kb. 37 °C)"
+    }
+  ],
+  "checklistExtra": [
+    "Minden kémcső eredményét megmagyaráztam, nem csak leírtam?",
+    "A hideg és a forralás hatásánál kitértem a visszafordíthatóságra?"
+  ],
+  "modelAnswer": {
+    "text": "A 2. kémcső a kontroll (vak próba): ugyanazt tartalmazza, mint az 1., csak nyál helyett desztillált vizet. Ez bizonyítja, hogy a keményítő magától, nyál nélkül nem bomlik el 15 perc alatt 37 °C-on, tehát az 1. kémcsőben látott változást a nyál okozza. A kísérlet független változója a nyál jelenléte és állapota, illetve a hőmérséklet (ezeket változtatta a diák), a függő változó pedig az, hogy a keményítő lebomlott-e, amit a Lugol-próba színe mutat.\n\nAz 1. kémcsőben a nyál amiláz enzime (ptialinja) a 15 perc alatt lebontotta a keményítőt. A Lugol-oldat jódja a keményítővel kékesfekete színt ad; mivel a minta sárgásbarna maradt, a keményítő már nem volt jelen. A Fehling-próba téglavörös csapadéka redukáló cukor jelenlétét mutatja: az amiláz a keményítőt főleg maltózzá (kettős cukorrá) bontotta, a maltóz pedig redukálja a Fehling-oldat réz(II)-ionjait.\n\nA 3. és a 4. kémcsőben megmaradt a keményítő, vagyis az enzim nem működött. Hidegben a molekulák mozgása lelassul, ritkábban találkozik az enzim a szubsztrátummal, ezért a reakció gyakorlatilag leáll; ez a hatás visszafordítható, mert ha a 3. kémcsövet 37 °C-ra melegítenénk, az amiláz újra bontaná a keményítőt. Forraláskor viszont az enzimfehérje térszerkezete véglegesen megváltozik (denaturálódik), az aktív centrum elveszíti alakját, ezért a lehűtött nyál sem működik többé: ez visszafordíthatatlan.\n\nA nyálamiláz a szájüregben, a nagyjából semleges (pH 6,8–7 körüli) nyálban működik, testhőmérsékleten. A gyomor savas közegében (pH 1,5–2) működése leáll. A keményítő emésztése a vékonybélben, a patkóbélben folytatódik a hasnyálmirigy amilázával, a keletkező maltózt pedig a bélnedv maltáz enzime bontja glükózzá, amely a vékonybél bolyhain keresztül szívódik fel.",
+    "pointsCovered": [
+      {
+        "id": "p1",
+        "quote": "A 2. kémcső a kontroll (vak próba)"
+      },
+      {
+        "id": "p2",
+        "quote": "az amiláz a keményítőt főleg maltózzá (kettős cukorrá) bontotta"
+      },
+      {
+        "id": "p3",
+        "quote": "Forraláskor viszont az enzimfehérje térszerkezete véglegesen megváltozik (denaturálódik)"
+      },
+      {
+        "id": "p4",
+        "quote": "A keményítő emésztése a vékonybélben, a patkóbélben folytatódik a hasnyálmirigy amilázával"
+      }
+    ],
+    "notes": [
+      "Tartalom: minden kérdésre pontos válasz van – a kontroll szerepe, a két változó, az enzim neve, szubsztrátja és terméke, a két próba értelmezése, valamint az emésztés további helye és enzimjei.",
+      "Indoklás: a válasz nem áll meg a tapasztalatnál, hanem megmagyarázza az okot (a Lugol-próba a keményítőt, a Fehling-próba a redukáló cukrot mutatja ki; hideg = lassuló, visszafordítható; forralás = denaturáció, visszafordíthatatlan).",
+      "Szaknyelv: pontos szakkifejezések (kontroll, szubsztrát, aktív centrum, denaturáció, maltóz, redukáló cukor), és mindegyiket helyesen használja."
+    ]
+  }
+}

@@ -1,0 +1,190 @@
+{
+  "schemaVersion": 1,
+  "id": "kem-rd-kozep-mesz-korforgasa-esettanulmany",
+  "subject": "kemia",
+  "revision": 1,
+  "level": "kozep",
+  "source": "generated",
+  "topic": "szervetlen-femek",
+  "title": "A mész körforgása – esettanulmány",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "reading",
+  "type": "esettanulmany",
+  "instructions": "Olvasd el a szöveget, majd válaszolj a kérdésekre! Az igaz–hamis kérdéseknél I = T (igaz), H = F (hamis); a feleletválasztós kérdéseknél egy helyes válasz van; a rövid válaszoknál képletet vagy számot írj. Ar(Ca) = 40, Ar(C) = 12, Ar(O) = 16. A 0. a példa.",
+  "passage": {
+    "title": "A mész körforgása",
+    "blocks": [
+      {
+        "text": "A mészkő fő alkotórésze a kalcium-karbonát (CaCO₃), amely vízben gyakorlatilag nem oldódik. Ha a mészkövet mészégető kemencében 900 °C fölé hevítik, elbomlik: égetett mész (kalcium-oxid, CaO) marad vissza, és szén-dioxid távozik. A folyamat endoterm, a kemencét folyamatosan fűteni kell: CaCO₃ → CaO + CO₂. 100 g (1 mol) kalcium-karbonátból 56 g kalcium-oxid és 44 g szén-dioxid keletkezik."
+      },
+      {
+        "text": "Az égetett mész vízzel hevesen, nagy hőfejlődés közben reagál, a keverék sisteregve felforrósodhat – ez a mészoltás: CaO + H₂O → Ca(OH)₂. A termék az oltott mész (kalcium-hidroxid), amely vízben csak kis mértékben oldódik; telített vizes oldata a meszes víz, amely lúgos kémhatású."
+      },
+      {
+        "text": "Az oltott mészből homokkal és vízzel habarcsot készítenek. A habarcs megkötése során a kalcium-hidroxid a levegő szén-dioxidjával lassan kalcium-karbonáttá alakul, miközben víz távozik: Ca(OH)₂ + CO₂ → CaCO₃ + H₂O. Ezért keményedik a friss vakolat hetek alatt, és ezért zavarosodik meg a meszes víz, ha szén-dioxidot vezetünk bele."
+      },
+      {
+        "text": "A természetben is lejátszódik a karbonát körforgása. A szén-dioxid-tartalmú csapadékvíz a mészkőhegységekben oldja a kőzetet, mert vízben oldódó kalcium-hidrogén-karbonát keletkezik: CaCO₃ + CO₂ + H₂O → Ca(HCO₃)₂. Amikor az oldat a barlang üregébe csepeg, a szén-dioxid egy része eltávozik, és a folyamat visszafelé játszódik le: a kalcium-hidrogén-karbonátból ismét kalcium-karbonát válik ki – így épülnek a cseppkövek. Ugyanez a reakció okozza a vízkő lerakódását a vízforralóban, amikor a kemény vizet felmelegítjük."
+      }
+    ]
+  },
+  "example": {
+    "id": "0",
+    "kind": "tf",
+    "prompt": "A mészégetés során szén-dioxid távozik a kemencéből.",
+    "answer": "T",
+    "category": "szovegertelmezes",
+    "explanation": "Igaz. A szöveg szerint a mészkő hevítésekor kalcium-oxid marad vissza és szén-dioxid távozik: CaCO₃ → CaO + CO₂."
+  },
+  "items": [
+    {
+      "id": "1",
+      "kind": "choice",
+      "prompt": "Mi az égetett mész képlete?",
+      "options": [
+        {
+          "key": "A",
+          "text": "CaCO₃"
+        },
+        {
+          "key": "B",
+          "text": "CaO"
+        },
+        {
+          "key": "C",
+          "text": "Ca(OH)₂"
+        },
+        {
+          "key": "D",
+          "text": "Ca(HCO₃)₂"
+        }
+      ],
+      "answer": "B",
+      "category": "anyagismeret",
+      "explanation": "Helyes: B. Az égetett mész a kalcium-oxid (CaO), amely a mészkő (CaCO₃) hőbontásával keletkezik.",
+      "wrongOptions": {
+        "A": "A CaCO₃ a mészkő, a kiindulási anyag, nem az égetés terméke.",
+        "C": "A Ca(OH)₂ az oltott mész, az égetett mész és víz reakciójának terméke.",
+        "D": "A Ca(HCO₃)₂ a kalcium-hidrogén-karbonát, amely a mészkő és a szén-dioxidos víz reakciójában keletkezik."
+      }
+    },
+    {
+      "id": "2",
+      "kind": "text",
+      "prompt": "Írd fel az oltott mész képletét!",
+      "answer": [
+        "Ca(OH)₂",
+        "Ca(OH)2",
+        "kalcium-hidroxid",
+        "kalcium hidroxid"
+      ],
+      "caseSensitive": true,
+      "maxWords": 2,
+      "category": "anyagismeret",
+      "explanation": "Helyes: Ca(OH)₂ (kalcium-hidroxid). A kalciumion kétszeresen pozitív (Ca²⁺), a hidroxidion egyszeresen negatív (OH⁻), ezért egy kalciumionhoz két hidroxidion tartozik."
+    },
+    {
+      "id": "3",
+      "kind": "tf",
+      "prompt": "A mészoltás endoterm folyamat.",
+      "answer": "F",
+      "category": "egyensuly-kinetika",
+      "explanation": "Hamis. A szöveg szerint az égetett mész vízzel „nagy hőfejlődés közben” reagál, a keverék felforrósodik – a mészoltás tehát exoterm. Endoterm (hőt igénylő) folyamat a mészégetés."
+    },
+    {
+      "id": "4",
+      "kind": "choice",
+      "prompt": "A habarcs megkötése során melyik anyag épül be a levegőből?",
+      "options": [
+        {
+          "key": "A",
+          "text": "oxigén"
+        },
+        {
+          "key": "B",
+          "text": "nitrogén"
+        },
+        {
+          "key": "C",
+          "text": "szén-dioxid"
+        },
+        {
+          "key": "D",
+          "text": "vízgőz"
+        }
+      ],
+      "answer": "C",
+      "category": "szovegertelmezes",
+      "explanation": "Helyes: C. A kalcium-hidroxid a levegő szén-dioxidjával reagál, és kalcium-karbonát keletkezik: Ca(OH)₂ + CO₂ → CaCO₃ + H₂O.",
+      "wrongOptions": {
+        "A": "Az oxigén nem vesz részt a megkötésben, a kalcium oxidációs száma nem változik.",
+        "B": "A nitrogén a levegő fő alkotója, de a mészhabarccsal nem reagál.",
+        "D": "A víz a megkötés során nem beépül, hanem éppen távozik (a reakció terméke)."
+      }
+    },
+    {
+      "id": "5",
+      "kind": "text",
+      "prompt": "Hány gramm szén-dioxid keletkezik 200 g kalcium-karbonát teljes hőbontásakor?",
+      "answer": [
+        "88 g",
+        "88",
+        "88 gramm"
+      ],
+      "maxWords": 2,
+      "category": "anyagmennyiseg",
+      "explanation": "Helyes: 88 g. A szöveg szerint 100 g (1 mol) CaCO₃-ból 44 g CO₂ keletkezik, így 200 g-ból (2 mol) kétszer annyi: 2 · 44 g = 88 g. Ellenőrzés: M(CO₂) = 12 + 2 · 16 = 44 g/mol."
+    },
+    {
+      "id": "6",
+      "kind": "tf",
+      "prompt": "A cseppkő képződésekor a kalcium-hidrogén-karbonát-oldatból kalcium-karbonát válik ki.",
+      "answer": "T",
+      "category": "szovegertelmezes",
+      "explanation": "Igaz. A barlangban a szén-dioxid távozik az oldatból, ezért az oldási folyamat megfordul: Ca(HCO₃)₂ → CaCO₃ + CO₂ + H₂O, és a vízben oldhatatlan kalcium-karbonát kiválik."
+    },
+    {
+      "id": "7",
+      "kind": "choice",
+      "prompt": "Miért oldja a szén-dioxid-tartalmú csapadékvíz a mészkövet?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Mert a kalcium-karbonát tiszta vízben is jól oldódik."
+        },
+        {
+          "key": "B",
+          "text": "Mert a reakció során a hőfejlődés megolvasztja a kőzetet."
+        },
+        {
+          "key": "C",
+          "text": "Mert a szén-dioxid redukálja a kalciumot fémmé."
+        },
+        {
+          "key": "D",
+          "text": "Mert vízben oldódó kalcium-hidrogén-karbonát keletkezik."
+        }
+      ],
+      "answer": "D",
+      "category": "reakciotipus",
+      "explanation": "Helyes: D. A szénsavas víz a vízben oldhatatlan karbonátot oldható hidrogén-karbonáttá alakítja: CaCO₃ + CO₂ + H₂O → Ca(HCO₃)₂. Ez a karsztosodás alapja.",
+      "wrongOptions": {
+        "A": "A szöveg első mondata szerint a kalcium-karbonát vízben gyakorlatilag nem oldódik.",
+        "B": "A folyamat során nincs jelentős hőfejlődés, és a mészkő olvadáspontja igen magas; az oldódás kémiai reakció.",
+        "C": "A folyamat nem redoxireakció: a kalcium oxidációs száma +2 marad, fém nem keletkezik."
+      }
+    }
+  ],
+  "glossary": [
+    {
+      "term": "endoterm",
+      "meaning": "hőt felvevő (hőelnyelő) folyamat"
+    },
+    {
+      "term": "hidrogén-karbonát",
+      "meaning": "a HCO₃⁻ iont tartalmazó só"
+    }
+  ],
+  "suggestedMinutes": 10
+}

@@ -1,0 +1,139 @@
+{
+  "schemaVersion": 1,
+  "id": "kem-gd-writing-kiserletelemzo",
+  "subject": "kemia",
+  "revision": 1,
+  "level": "kozep",
+  "source": "generated",
+  "topic": "utmutato",
+  "title": "Kísérletelemző feladat",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "guide",
+  "type": "writing",
+  "target": "kiserletelemzo",
+  "summaryHu": "A kísérletelemző feladat egy leírt kísérletet (vagy kísérletsorozatot) mutat be, és 3–5 kérdésben kérdez a várható tapasztalatokra, azok magyarázatára és a reakcióegyenletekre. A javító külön értékeli a tapasztalatot (szín, gáz, csapadék, hőváltozás), a magyarázatot (rendezett egyenlet, részecskeszintű indoklás) és a szaknyelvet. A legfontosabb: a tapasztalat az, amit látsz, a magyarázat az, amit ebből következtetsz.",
+  "steps": [
+    {
+      "title": "1. A kísérlet megértése",
+      "explanation": "Olvasd el a leírást, és írd fel, milyen anyagok kerülnek össze (képlettel). Gondold végig, milyen reakció mehet végbe: sav–bázis, csapadékképződés, gázfejlődés, redoxi (standardpotenciálok!), komplexképződés, szerves próba.",
+      "tips": [
+        "Ha standardpotenciálokat ad a feladat, biztosan redoxireakcióról van szó.",
+        "Rajzold fel a kémcsöveket, és írd mellé a tartalmukat."
+      ]
+    },
+    {
+      "title": "2. Tapasztalat",
+      "explanation": "Minden kémcsőre, minden lépésre írd le a látható változást, vagy azt, hogy nincs változás. Használj pontos szavakat: pezsgés, gázbuborék, fehér túrós csapadék, kocsonyás csapadék, elszíntelenedik, megkékül, felmelegszik, szúrós szag.",
+      "tips": [
+        "A „nincs változás” is tapasztalat – és pontot ér.",
+        "A csapadéknál add meg a színét és a jellegét."
+      ]
+    },
+    {
+      "title": "3. Magyarázat és egyenlet",
+      "explanation": "Nevezd meg a keletkező anyagot, írd fel a rendezett egyenletet (ha kérik, ionegyenletet), és indokold, miért megy végbe (vagy miért nem) a reakció: standardpotenciál, oldhatóság, sav–bázis erősség, szerkezet.",
+      "tips": [
+        "Ionegyenletnél a töltések összegét is ellenőrizd.",
+        "Redoxinál nevezd meg az oxidálódó és a redukálódó részecskét."
+      ]
+    },
+    {
+      "title": "4. Következtetés",
+      "explanation": "Fogalmazd meg, mit bizonyít a kísérlet (pl. „a gáz szén-dioxid”, „a klór erősebb oxidálószer a brómnál”, „a glükóz redukáló cukor”).",
+      "tips": [
+        "Az azonosítási feladatoknál a végén írd le egyértelműen: melyik kémcsőben mi volt."
+      ]
+    }
+  ],
+  "phrases": [
+    {
+      "group": "Tapasztalat",
+      "en": "pezsgés, színtelen gázbuborékok fejlődnek",
+      "hu": "Gázfejlődés leírása."
+    },
+    {
+      "group": "Tapasztalat",
+      "en": "fehér, túrós csapadék válik le",
+      "hu": "Pl. AgCl."
+    },
+    {
+      "group": "Tapasztalat",
+      "en": "az oldat kék színe halványul, vörösbarna bevonat jelenik meg",
+      "hu": "Fémkiszorítás (Cu kiválása)."
+    },
+    {
+      "group": "Tapasztalat",
+      "en": "a brómos víz elszíntelenedik",
+      "hu": "Telítetlenség, addíció."
+    },
+    {
+      "group": "Kimutatás",
+      "en": "a parázsló gyújtópálca lángra lobban",
+      "hu": "Oxigén."
+    },
+    {
+      "group": "Kimutatás",
+      "en": "a meszes víz megzavarosodik",
+      "hu": "Szén-dioxid."
+    },
+    {
+      "group": "Kimutatás",
+      "en": "lánghoz tartva pukkan (durranógázpróba)",
+      "hu": "Hidrogén."
+    },
+    {
+      "group": "Magyarázat",
+      "en": "a pozitívabb standardpotenciálú rendszer oxidált formája az oxidálószer",
+      "hu": "Redoxireakciók irányának indoklása."
+    },
+    {
+      "group": "Magyarázat",
+      "en": "az erősebb sav felszabadítja a gyengébbet a sójából",
+      "hu": "Karbonát + sav → CO₂."
+    }
+  ],
+  "mistakes": [
+    {
+      "wrong": "Tapasztalat: „klór keletkezik”.",
+      "right": "Tapasztalat: sárgászöld, szúrós szagú gáz fejlődik.",
+      "why": "A gáz neve következtetés; a tapasztalat az érzékelhető tulajdonság."
+    },
+    {
+      "wrong": "Csak a reagáló kémcsövekről ír.",
+      "right": "Azokról a kémcsövekről is ír, ahol nincs változás, és megindokolja, miért nincs.",
+      "why": "A „nincs változás” tapasztalata és magyarázata is pontot ér."
+    },
+    {
+      "wrong": "Molekulaegyenletet ír, holott ionegyenletet kértek.",
+      "right": "A kért formában írja fel az egyenletet.",
+      "why": "A javítási útmutató a kért egyenlettípusért ad pontot."
+    },
+    {
+      "wrong": "A fenolftaleint lúgban kéknek írja.",
+      "right": "A fenolftalein lúgban lila (rózsaszín).",
+      "why": "A színek pontossága a szaknyelvi és a tapasztalati pont része."
+    }
+  ],
+  "checklist": [
+    "Minden kémcsőre és lépésre írtam tapasztalatot?",
+    "A tapasztalatot és a magyarázatot szétválasztottam?",
+    "Az egyenletek rendezettek, a töltések egyeznek?",
+    "Megindokoltam, miért megy (vagy nem megy) végbe a reakció?",
+    "Leírtam a következtetést?"
+  ],
+  "timing": "Középszinten egy kísérletelemző feladatra kb. 20, emelt szinten kb. 30 perc jut. Először minden kérdésre írd le a tapasztalatot és az egyenletet, utána finomítsd a magyarázatokat.",
+  "example": {
+    "title": "Minta: karbonát kimutatása",
+    "text": "Tapasztalat: a nátrium-karbonát-oldathoz sósavat csepegtetve pezsgés, színtelen gázfejlődés.\nMagyarázat: Na₂CO₃ + 2 HCl → 2 NaCl + H₂O + CO₂; az erősebb sav felszabadítja a bomlékony szénsavat.\nKimutatás: a gázt meszes vízbe vezetve zavarosodás: CO₂ + Ca(OH)₂ → CaCO₃ + H₂O.",
+    "notes": [
+      "A tapasztalat csak észlelhető jelenséget tartalmaz.",
+      "A magyarázat egyenletet és okot is ad.",
+      "A kimutatás bizonyítja a gáz kilétét."
+    ]
+  },
+  "levelNotes": {
+    "kozep": "Középszinten jellemzőek a gázok és ionok kimutatása, a fémek viselkedése savakban és sóoldatokban, a sók hidrolízise és az egyszerű szerves próbák.",
+    "emelt": "Emelt szinten részecskeszintű magyarázat, standardpotenciálokra épülő indoklás, komplexképződés, szerves vegyületek megkülönböztetése (Fehling, ezüsttükör, Lugol) és kísérlettervezés is előfordul."
+  }
+}

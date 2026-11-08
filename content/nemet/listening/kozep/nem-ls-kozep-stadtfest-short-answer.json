@@ -1,0 +1,211 @@
+{
+  "schemaVersion": 1,
+  "id": "nem-ls-kozep-stadtfest-short-answer",
+  "subject": "nemet",
+  "revision": 1,
+  "level": "kozep",
+  "source": "generated",
+  "topic": "szabadido",
+  "title": "Stadtfest am Wochenende",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "listening",
+  "type": "short-answer",
+  "instructions": "Sie hören im Radio einen Veranstaltungstipp für das Wochenende. Beantworten Sie die Fragen (1–9) mit höchstens DREI Wörtern oder einer Zahl. Sie hören den Text zweimal. Am Anfang finden Sie ein Beispiel (0).",
+  "instructionsHu": "Egy rádiós programajánlót hallasz a hétvégére. Válaszolj a kérdésekre legfeljebb HÁROM szóval vagy egy számmal. A felvételt kétszer hallod.",
+  "listening": {
+    "format": "radio",
+    "speakers": [
+      {
+        "id": "P",
+        "name": "Moderatorin",
+        "gender": "female",
+        "accent": "de-DE",
+        "age": "adult"
+      }
+    ],
+    "script": [
+      {
+        "speaker": "P",
+        "text": "Und jetzt unser Veranstaltungstipp fürs Wochenende: Von Freitag bis Sonntag feiert Kirchberg sein großes Stadtfest, in diesem Jahr schon zum fünfzigsten Mal. Los geht es am Freitag um 18 Uhr auf dem Marktplatz. Die Bürgermeisterin eröffnet das Fest, und danach spielt die Schulband des Kirchberger Gymnasiums. Ab 20 Uhr steht dann die Rockgruppe „Nachtfalter“ auf der Bühne."
+      },
+      {
+        "speaker": "P",
+        "text": "Am Samstag dreht sich alles um Sport. Schon um neun Uhr startet der Stadtlauf. Es gibt eine Strecke von fünf und eine von zehn Kilometern. Anmelden kann man sich bis Freitagabend im Internet oder direkt am Samstagmorgen am Rathaus. Die Teilnahme kostet acht Euro, für Schülerinnen und Schüler ist sie kostenlos. Am Nachmittag gibt es im Stadtpark ein Volleyballturnier für Teams aus vier Personen."
+      },
+      {
+        "speaker": "P",
+        "text": "Für Familien ist der Sonntag ideal. Auf der Wiese hinter der Kirche gibt es ein Kinderprogramm mit einem Zauberer, Kinderschminken und einem kleinen Zoo mit Ziegen und Kaninchen. In der Hauptstraße findet von elf bis siebzehn Uhr ein Flohmarkt statt. Wer selbst etwas verkaufen möchte, muss keinen Tisch mitbringen, denn die Stadt stellt Tische zur Verfügung."
+      },
+      {
+        "speaker": "P",
+        "text": "Zum Abschluss gibt es am Sonntag um 22 Uhr ein großes Feuerwerk über dem See. Am besten sieht man es von der Brücke am Hafen."
+      },
+      {
+        "speaker": "P",
+        "text": "Noch ein wichtiger Hinweis: Während des Festes ist die Innenstadt für Autos gesperrt. Parken Sie bitte auf dem Parkplatz am Sportzentrum. Von dort fahren kostenlose Shuttlebusse alle fünfzehn Minuten ins Zentrum. Und wenn das Wetter schlecht wird? Keine Sorge: Die Konzerte finden dann in der Stadthalle statt. Alle Informationen finden Sie auch auf der Internetseite der Stadt Kirchberg."
+      }
+    ]
+  },
+  "example": {
+    "id": "0",
+    "kind": "text",
+    "prompt": "Zum wievielten Mal findet das Stadtfest statt?",
+    "answer": [
+      "zum fünfzigsten Mal",
+      "zum 50. Mal",
+      "fünfzigsten",
+      "50"
+    ],
+    "maxWords": 3,
+    "category": "detail",
+    "explanation": "Idén már ötvenedszer rendezik meg a városünnepet („schon zum fünfzigsten Mal”).",
+    "evidence": "in diesem Jahr schon zum fünfzigsten Mal"
+  },
+  "items": [
+    {
+      "id": "1",
+      "kind": "text",
+      "prompt": "Wer spielt am Freitag direkt nach der Eröffnung?",
+      "answer": [
+        "die Schulband",
+        "Schulband",
+        "eine Schulband",
+        "Schulband des Gymnasiums"
+      ],
+      "maxWords": 3,
+      "category": "detail",
+      "explanation": "A helyes válasz: die Schulband. A polgármesternő megnyitója után a gimnázium iskolai zenekara játszik; a „Nachtfalter” rockegyüttes csak 20 órától lép fel.",
+      "evidence": "danach spielt die Schulband des Kirchberger Gymnasiums"
+    },
+    {
+      "id": "2",
+      "kind": "text",
+      "prompt": "Wann beginnt der Stadtlauf?",
+      "answer": [
+        "um neun Uhr",
+        "um 9 Uhr",
+        "neun Uhr",
+        "9 Uhr",
+        "um 9.00 Uhr",
+        "9.00 Uhr",
+        "um neun",
+        "um 9"
+      ],
+      "maxWords": 3,
+      "category": "detail",
+      "explanation": "A helyes válasz: szombaton kilenc órakor („Schon um neun Uhr startet der Stadtlauf”).",
+      "evidence": "Schon um neun Uhr startet der Stadtlauf."
+    },
+    {
+      "id": "3",
+      "kind": "text",
+      "prompt": "Wie viel kostet der Stadtlauf für Schüler?",
+      "answer": [
+        "nichts",
+        "kostenlos",
+        "gar nichts",
+        "0 Euro",
+        "null Euro",
+        "ist kostenlos",
+        "gratis"
+      ],
+      "maxWords": 3,
+      "category": "true-false-trap",
+      "explanation": "A helyes válasz: semmibe, ingyenes. A nyolc euró a felnőttekre vonatkozik, a diákoknak ingyenes a részvétel.",
+      "evidence": "für Schülerinnen und Schüler ist sie kostenlos"
+    },
+    {
+      "id": "4",
+      "kind": "text",
+      "prompt": "Aus wie vielen Personen besteht ein Team beim Volleyballturnier?",
+      "answer": [
+        "vier",
+        "4",
+        "vier Personen",
+        "4 Personen",
+        "aus vier Personen"
+      ],
+      "maxWords": 3,
+      "category": "detail",
+      "explanation": "A helyes válasz: négy főből („für Teams aus vier Personen”).",
+      "evidence": "ein Volleyballturnier für Teams aus vier Personen"
+    },
+    {
+      "id": "5",
+      "kind": "text",
+      "prompt": "Welche Tiere gibt es im kleinen Zoo?",
+      "answer": [
+        "Ziegen und Kaninchen",
+        "Kaninchen und Ziegen",
+        "Ziegen, Kaninchen",
+        "Kaninchen, Ziegen"
+      ],
+      "maxWords": 3,
+      "category": "detail",
+      "explanation": "A helyes válasz: kecskék és nyulak („einem kleinen Zoo mit Ziegen und Kaninchen”). Mindkét állatot meg kell nevezni.",
+      "evidence": "einem kleinen Zoo mit Ziegen und Kaninchen"
+    },
+    {
+      "id": "6",
+      "kind": "text",
+      "prompt": "Was müssen Verkäufer auf dem Flohmarkt nicht mitbringen?",
+      "answer": [
+        "einen Tisch",
+        "Tisch",
+        "Tische",
+        "keinen Tisch"
+      ],
+      "maxWords": 3,
+      "category": "detail",
+      "explanation": "A helyes válasz: asztalt. A város biztosít asztalokat, ezért aki árulni akar, nem kell asztalt hoznia.",
+      "evidence": "muss keinen Tisch mitbringen, denn die Stadt stellt Tische zur Verfügung"
+    },
+    {
+      "id": "7",
+      "kind": "text",
+      "prompt": "Von wo aus sieht man das Feuerwerk am besten?",
+      "answer": [
+        "von der Brücke",
+        "Brücke",
+        "Brücke am Hafen",
+        "von der Hafenbrücke",
+        "Hafenbrücke"
+      ],
+      "maxWords": 3,
+      "category": "detail",
+      "explanation": "A helyes válasz: a kikötői hídról („von der Brücke am Hafen”). A tó fölött van a tűzijáték, de a híd a legjobb kilátópont.",
+      "evidence": "Am besten sieht man es von der Brücke am Hafen."
+    },
+    {
+      "id": "8",
+      "kind": "text",
+      "prompt": "Wo sollen Autofahrer parken?",
+      "answer": [
+        "am Sportzentrum",
+        "Sportzentrum",
+        "Parkplatz am Sportzentrum",
+        "beim Sportzentrum",
+        "auf dem Sportzentrum-Parkplatz"
+      ],
+      "maxWords": 3,
+      "category": "detail",
+      "explanation": "A helyes válasz: a sportközpontnál lévő parkolóban, mert a belváros le van zárva az autók elől; onnan ingyenes buszok járnak.",
+      "evidence": "Parken Sie bitte auf dem Parkplatz am Sportzentrum."
+    },
+    {
+      "id": "9",
+      "kind": "text",
+      "prompt": "Wo finden die Konzerte bei schlechtem Wetter statt?",
+      "answer": [
+        "in der Stadthalle",
+        "Stadthalle"
+      ],
+      "maxWords": 3,
+      "category": "detail",
+      "explanation": "A helyes válasz: a városi csarnokban („in der Stadthalle”), ha rossz idő lesz.",
+      "evidence": "Die Konzerte finden dann in der Stadthalle statt."
+    }
+  ],
+  "suggestedMinutes": 8
+}

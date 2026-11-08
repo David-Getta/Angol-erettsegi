@@ -1,0 +1,195 @@
+{
+  "schemaVersion": 1,
+  "id": "rd-emelt-career-changers-matching",
+  "subject": "angol",
+  "revision": 1,
+  "level": "emelt",
+  "source": "generated",
+  "topic": "munka",
+  "title": "Starting again",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "reading",
+  "type": "matching",
+  "instructions": "Read the article in which five people (A–E) talk about changing careers. Which person do the statements (1–10) refer to? Choose the correct letter (A–E). You can use each letter more than once. There is an example (0) at the beginning.",
+  "instructionsHu": "Öt ember (A–E) mesél arról, hogyan váltott pályát. Melyik emberre igazak az állítások (1–10)? Egy betű többször is használható. A 0. a példa.",
+  "passage": {
+    "title": "Starting again",
+    "subtitle": "Five people tell us why they gave up one career for a completely different one – and what it has cost them",
+    "blocks": [
+      {
+        "heading": "A – Daniel Hart, 34, furniture maker",
+        "text": "For eight years I was a lawyer at a big London firm. The salary was excellent, but I spent my days reading contracts for clients I never met. Woodwork began as something I did on Saturdays to relax – the first proper piece I made was a dining table for my sister's wedding – and before long friends were asking me to build things for them. Eventually I signed up for a two-year furniture-making course, which I did in the evenings while still going into the office every day. It was the most exhausting period of my life. Today I earn about a third of what I used to, and I've had to give up a few luxuries, such as holidays abroad. Funnily enough, my legal background hasn't gone to waste: the agreements I draw up with customers are far clearer than most craftsmen's, and that has saved me from several disputes."
+      },
+      {
+        "heading": "B – Priya Shah, 29, primary school teacher",
+        "text": "I never intended to leave flying. I loved being cabin crew – the travel, my colleagues, even the strange hours. Then, almost overnight, the airline cut half its staff, and I was one of them. For a few weeks I hardly left my flat. A neighbour who was a head teacher suggested I help out at her school as a volunteer, just to get out of the house, and within a month I knew what I wanted to do. Retraining took a year. My parents were thrilled; they had never thought of flying as a 'proper job', and now they tell everyone that their daughter is a teacher. What nobody warned me about was the workload. Between planning lessons and marking, I spend far more hours at my desk each week than I ever spent in the air. I'm not complaining, but on some grey Sunday evenings I do miss airports."
+      },
+      {
+        "heading": "C – Tom Brennan, 38, children's nurse",
+        "text": "When I was sixteen I wanted to be a nurse, but my father, a builder, laughed and said it was no job for a man. I was young enough to believe him, so I studied accounting instead and spent fifteen years being quietly bored. When he fell seriously ill a few years ago, I spent a lot of time in hospitals watching the nurses at work, and the old feeling came back. I resigned and went back to university full-time at thirty-five, which was much harder than I'd imagined – some of my lecturers were younger than me, and I'd completely forgotten how to write an essay. But I qualified last year and now work on a children's ward. My only real regret is the years I wasted. If I could speak to my sixteen-year-old self, I'd tell him to ignore everyone and apply."
+      },
+      {
+        "heading": "D – Sofia Marín, 27, software developer",
+        "text": "Journalism was my childhood dream, and for three years I worked for a local newspaper. I loved the job, but I was earning so little that I was still sharing a flat with four other people and couldn't imagine ever buying one of my own. When the paper announced another round of job cuts, I decided not to wait and see whether I would survive them. I handed in my notice and used my savings to pay for an intensive twelve-week coding course. I was terrified that I'd be the only person in the room without a maths or science background, but about half of my classmates had switched careers too, and the teaching was so practical that I hardly ever felt lost. Four months after finishing, I had a job. I now earn nearly twice what I did as a reporter, although I sometimes miss feeling that my work mattered to the local community."
+      },
+      {
+        "heading": "E – Ruth Adler, 52, bookshop owner",
+        "text": "After twenty-five years in IT, I used the money from selling my city flat to open a small bookshop in a seaside town. People love to call it my 'mid-life crisis', or they tell me how romantic it must be to spend all day reading. The truth is far less exciting. I didn't leave because I was unhappy; I left because I wanted to build something of my own while I still had the energy. And I hardly read at work – I'm too busy ordering stock, updating the website and organising events. What I find hard is the uncertainty. In my old job, I knew exactly what I would be earning five years later. Now, every January, long after the summer visitors have gone, I go through the accounts and wonder whether the shop will survive another year."
+      }
+    ]
+  },
+  "options": [
+    { "key": "A", "text": "Daniel Hart (furniture maker)" },
+    { "key": "B", "text": "Priya Shah (primary school teacher)" },
+    { "key": "C", "text": "Tom Brennan (children's nurse)" },
+    { "key": "D", "text": "Sofia Marín (software developer)" },
+    { "key": "E", "text": "Ruth Adler (bookshop owner)" }
+  ],
+  "optionsReusable": true,
+  "example": {
+    "id": "0",
+    "kind": "match",
+    "prompt": "Whose new career started as a free-time activity?",
+    "answer": "A",
+    "category": "detail",
+    "explanation": "A – Daniel. A famegmunkálás szombati kikapcsolódásként kezdődött („something I did on Saturdays to relax”), csak később lett belőle szakma.",
+    "evidence": "Woodwork began as something I did on Saturdays to relax"
+  },
+  "items": [
+    {
+      "id": "1",
+      "kind": "match",
+      "prompt": "Who trained for the new career without giving up the old job?",
+      "answer": "A",
+      "category": "detail",
+      "explanation": "A – Daniel. A kétéves bútorasztalos-tanfolyamot esténként végezte, miközben nappal továbbra is bejárt az irodába.",
+      "evidence": "which I did in the evenings while still going into the office every day",
+      "wrongOptions": {
+        "C": "Tom felmondott, és csak utána ment vissza nappali tagozatra az egyetemre („I resigned and went back to university full-time”)."
+      }
+    },
+    {
+      "id": "2",
+      "kind": "match",
+      "prompt": "Who did not leave the previous job by choice?",
+      "answer": "B",
+      "category": "inference",
+      "explanation": "B – Priya. Nem akart otthagyni a repülést; a légitársaság elbocsátotta a személyzet felét, és ő is köztük volt.",
+      "evidence": "the airline cut half its staff, and I was one of them",
+      "wrongOptions": {
+        "D": "Sofiánál is voltak leépítések, de ő maga döntött úgy, hogy nem várja meg őket, és felmondott („I handed in my notice”)."
+      }
+    },
+    {
+      "id": "3",
+      "kind": "match",
+      "prompt": "Who was discouraged from following their original ambition by a family member?",
+      "answer": "C",
+      "category": "detail",
+      "explanation": "C – Tom. Tizenhat évesen ápoló akart lenni, de az apja kinevette, és azt mondta, ez nem férfinak való munka – Tom elhitte, és inkább könyvelőnek tanult.",
+      "evidence": "my father, a builder, laughed and said it was no job for a man",
+      "wrongOptions": {
+        "B": "Priya szülei a régi munkájáról (repülés) gondolták, hogy nem „rendes” munka, az új pályájának viszont kifejezetten örülnek („My parents were thrilled”)."
+      }
+    },
+    {
+      "id": "4",
+      "kind": "match",
+      "prompt": "Who is better paid in the new career than in the previous one?",
+      "answer": "D",
+      "category": "detail",
+      "explanation": "D – Sofia. Szoftverfejlesztőként majdnem kétszer annyit keres, mint riporterként.",
+      "evidence": "I now earn nearly twice what I did as a reporter",
+      "wrongOptions": {
+        "A": "Daniel épp kevesebbet keres: a korábbi fizetésének csak körülbelül a harmadát."
+      }
+    },
+    {
+      "id": "5",
+      "kind": "match",
+      "prompt": "Who spends more time working now than before?",
+      "answer": "B",
+      "category": "detail",
+      "explanation": "B – Priya. Az óratervezés és a javítás miatt hetente sokkal több órát tölt az íróasztalnál, mint amennyit valaha a levegőben töltött.",
+      "evidence": "I spend far more hours at my desk each week than I ever spent in the air",
+      "wrongOptions": {
+        "A": "Daniel a tanfolyam idejét nevezi élete legfárasztóbb időszakának, de arról nem beszél, hogy most többet dolgozna, mint ügyvédként."
+      }
+    },
+    {
+      "id": "6",
+      "kind": "match",
+      "prompt": "Who finds that knowledge from the previous job is still useful?",
+      "answer": "A",
+      "category": "detail",
+      "explanation": "A – Daniel. Jogi háttere nem veszett kárba: az ügyfelekkel kötött megállapodásai sokkal világosabbak, mint más mesterembereké, és ez több vitától megkímélte.",
+      "evidence": "my legal background hasn't gone to waste",
+      "wrongOptions": {
+        "E": "Ruth említi, hogy frissíti a bolt weboldalát, de nem mondja, hogy az informatikai múltja segítene neki."
+      }
+    },
+    {
+      "id": "7",
+      "kind": "match",
+      "prompt": "Who wishes they had made the change much earlier?",
+      "answer": "C",
+      "category": "attitude",
+      "explanation": "C – Tom. Az egyetlen igazi bánata az elvesztegetett évek; a tizenhat éves önmagának azt mondaná, hogy ne törődjön senkivel, és jelentkezzen.",
+      "evidence": "My only real regret is the years I wasted.",
+      "wrongOptions": {
+        "B": "Priya nem akart pályát váltani – szerette a repülést, és néha ma is hiányoznak neki a repülőterek."
+      }
+    },
+    {
+      "id": "8",
+      "kind": "match",
+      "prompt": "Who is unsure whether their new business has a long-term future?",
+      "answer": "E",
+      "category": "inference",
+      "explanation": "E – Ruth. A bizonytalanságot nehezen viseli: minden januárban átnézi a könyvelést, és azon tűnődik, túléli-e a bolt a következő évet.",
+      "evidence": "wonder whether the shop will survive another year",
+      "wrongOptions": {
+        "A": "Daniel kevesebbet keres, és le kellett mondania néhány luxusról, de nem mondja, hogy féltené a vállalkozása jövőjét."
+      }
+    },
+    {
+      "id": "9",
+      "kind": "match",
+      "prompt": "Who found the transition less difficult than they had feared?",
+      "answer": "D",
+      "category": "inference",
+      "explanation": "D – Sofia. Attól rettegett, hogy egyedül lesz matematikai-természettudományos háttér nélkül, de a csoport fele szintén pályaváltó volt, és a tanítás olyan gyakorlatias volt, hogy szinte sosem érezte magát elveszettnek.",
+      "evidence": "the teaching was so practical that I hardly ever felt lost",
+      "wrongOptions": {
+        "C": "Tomnak épp nehezebb volt, mint gondolta („much harder than I'd imagined”)."
+      }
+    },
+    {
+      "id": "10",
+      "kind": "match",
+      "prompt": "Who feels that other people have the wrong idea about their decision?",
+      "answer": "E",
+      "category": "attitude",
+      "explanation": "E – Ruth. Az emberek kapuzárási pániknak vagy romantikus álomnak tartják a döntését, de szerinte az igazság sokkal kevésbé izgalmas: nem boldogtalanság miatt váltott, és a boltban alig olvas.",
+      "evidence": "People love to call it my 'mid-life crisis'",
+      "wrongOptions": {
+        "C": "Tom apja a fiatalkori pályaálmát nevette ki, nem a mostani pályaváltását értette félre."
+      }
+    }
+  ],
+  "glossary": [
+    { "term": "go to waste", "meaning": "kárba vész" },
+    { "term": "draw up", "meaning": "megfogalmaz, elkészít (szerződést)" },
+    { "term": "disputes", "meaning": "viták, jogviták" },
+    { "term": "cabin crew", "meaning": "légiutas-kísérő személyzet" },
+    { "term": "thrilled", "meaning": "nagyon boldog, el van ragadtatva" },
+    { "term": "workload", "meaning": "munkateher" },
+    { "term": "resigned", "meaning": "felmondott, lemondott" },
+    { "term": "ward", "meaning": "kórházi osztály" },
+    { "term": "hand in your notice", "meaning": "beadja a felmondását" },
+    { "term": "mid-life crisis", "meaning": "kapuzárási pánik, életközépi válság" },
+    { "term": "stock", "meaning": "árukészlet" }
+  ],
+  "suggestedMinutes": 15
+}

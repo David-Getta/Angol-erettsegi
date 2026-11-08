@@ -1,0 +1,205 @@
+{
+  "schemaVersion": 1,
+  "id": "rd-kozep-interrail-trip-missing-sentences",
+  "subject": "angol",
+  "revision": 1,
+  "level": "kozep",
+  "source": "generated",
+  "topic": "utazas",
+  "title": "Seven cities in fourteen days",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "reservedFor": "mock",
+  "section": "reading",
+  "type": "missing-sentences",
+  "instructions": "Read the blog post about an Interrail trip. Some sentences have been removed from the text. Choose the sentence (A–I) which fits each gap (1–6). There are two extra sentences that you do not need to use. There is an example (0) at the beginning.",
+  "instructionsHu": "Olvasd el a blogbejegyzést egy interrailes utazásról. Néhány mondatot kivettek a szövegből: válaszd ki, melyik mondat (A–I) illik az egyes helyekre (1–6). Két mondat felesleges. A 0. a példa.",
+  "passage": {
+    "title": "Seven cities in fourteen days",
+    "subtitle": "Lili Varga, 18, writes about her first Interrail trip",
+    "blocks": [
+      {
+        "text": "Last summer, after my final exams, my best friend Réka and I decided to see Europe by train. We bought Interrail passes, which let you travel on almost any train in more than thirty countries for a fixed price. [[0]] Because we were both under 28, we got the youth price, which was much cheaper."
+      },
+      {
+        "text": "Planning the route was the most exciting part. We sat in my kitchen with a big map and lots of coffee. [[1]] In the end, we chose seven: Vienna, Munich, Zurich, Milan, Venice, Ljubljana and Zagreb. My dad said it was too much for two weeks, and he was partly right."
+      },
+      {
+        "text": "The trains themselves were fantastic. Most of them were clean, fast and on time, especially in Switzerland. [[2]] On the way from Zurich to Milan, the train went through the Alps, and we spent more than three hours with our faces against the window."
+      },
+      {
+        "text": "Of course, not everything went well. In Munich, we missed our train because we were waiting on the wrong platform. [[3]] Luckily, with an Interrail pass you can simply take the next train, so we only lost two hours. After that, we always checked the information boards twice."
+      },
+      {
+        "text": "Money was another challenge. Switzerland and Italy were expensive, so we had to be careful. [[4]] We bought bread, cheese and fruit in supermarkets and had picnics in parks. It was cheaper than restaurants, and honestly, it was more fun."
+      },
+      {
+        "text": "We stayed in youth hostels, where we shared rooms with travellers from all over the world. In Ljubljana, we met two Australian girls who were also travelling by train. [[5]] We are still in touch, and they want to visit Hungary next year."
+      },
+      {
+        "text": "Would I do it again? Definitely, but I would choose fewer cities. [[6]] Next time, I want to spend at least three days in each place and really get to know it. If you are thinking about Interrail, my advice is simple: plan less and enjoy more."
+      }
+    ]
+  },
+  "options": [
+    {
+      "key": "A",
+      "text": "Instead of eating out, we usually made our own meals."
+    },
+    {
+      "key": "B",
+      "text": "My parents were worried because we had never travelled alone before."
+    },
+    {
+      "key": "C",
+      "text": "Ours allowed us to travel on any seven days within one month."
+    },
+    {
+      "key": "D",
+      "text": "We got on so well that we travelled on to Zagreb together."
+    },
+    {
+      "key": "E",
+      "text": "At first, we wanted to visit twelve cities, but we soon realised this was impossible."
+    },
+    {
+      "key": "F",
+      "text": "Réka's suitcase was so heavy that she could hardly carry it."
+    },
+    {
+      "key": "G",
+      "text": "The platform number had changed, but the announcement was only in German."
+    },
+    {
+      "key": "H",
+      "text": "Two days in a city is not enough to see more than the main sights."
+    },
+    {
+      "key": "I",
+      "text": "However, the best part was not the speed but the views."
+    }
+  ],
+  "example": {
+    "id": "0",
+    "kind": "match",
+    "answer": "C",
+    "category": "text-structure",
+    "explanation": "Az előző mondat az Interrail-bérletekről (passes) szól, a C mondat „Ours” szava erre utal vissza (a mi bérletünk), és megmondja, mire volt érvényes. Utána természetesen jön, hogy ifjúsági árat kaptak.",
+    "evidence": "We bought Interrail passes, which let you travel on almost any train in more than thirty countries for a fixed price."
+  },
+  "items": [
+    {
+      "id": "1",
+      "kind": "match",
+      "answer": "E",
+      "category": "text-structure",
+      "explanation": "A hiány után ez áll: „In the end, we chose seven” – a „seven” csak akkor érthető, ha előtte szó volt a városok számáról. Az E mondat szerint először tizenkét várost akartak, de rájöttek, hogy ez lehetetlen; végül hetet választottak.",
+      "evidence": "In the end, we chose seven",
+      "wrongOptions": {
+        "B": "Csábító, mert a bekezdésben szerepel az apa véleménye, de a szülők aggodalma után nem lenne értelme az „In the end, we chose seven” folytatásnak – nincs mire utalnia a „seven”-nek."
+      }
+    },
+    {
+      "id": "2",
+      "kind": "match",
+      "answer": "I",
+      "category": "text-structure",
+      "explanation": "Az előző mondat a vonatok gyorsaságát dicséri (fast), az I mondat ezt ellentéttel folytatja („However, the best part was not the speed but the views”), a következő mondat pedig a kilátást írja le (az Alpokon át, az ablakra tapadva).",
+      "evidence": "the train went through the Alps, and we spent more than three hours with our faces against the window",
+      "wrongOptions": {
+        "H": "A két nap egy városban témája a szöveg végére illik (kevesebb város, több idő); itt a vonatokról és a tájról van szó."
+      }
+    },
+    {
+      "id": "3",
+      "kind": "match",
+      "answer": "G",
+      "category": "text-structure",
+      "explanation": "Az előző mondat szerint rossz vágányon vártak, a G mondat megmagyarázza, miért: megváltozott a vágány száma, a bemondás pedig csak németül volt. Ezért ellenőrizték utána mindig kétszer a táblákat.",
+      "evidence": "we missed our train because we were waiting on the wrong platform",
+      "wrongOptions": {
+        "F": "Ez is egy kellemetlenség, de a nehéz bőröndnek semmi köze a rossz vágányhoz és a lekésett vonathoz, és utána a „Luckily…” mondat nem kapcsolódna hozzá."
+      }
+    },
+    {
+      "id": "4",
+      "kind": "match",
+      "answer": "A",
+      "category": "text-structure",
+      "explanation": "Drága országokban spórolniuk kellett, az A mondat szerint étterem helyett maguknak készítettek ételt – a következő mondat ezt részletezi (kenyér, sajt, gyümölcs a szupermarketből, piknik a parkban).",
+      "evidence": "We bought bread, cheese and fruit in supermarkets and had picnics in parks.",
+      "wrongOptions": {
+        "B": "A „we had to be careful” miatt csábító lehet a szülők aggodalma, de a következő mondat (vásárlás a szupermarketben, piknik a parkban) az olcsó étkezésről szól, nem a szülőkről."
+      }
+    },
+    {
+      "id": "5",
+      "kind": "match",
+      "answer": "D",
+      "category": "text-structure",
+      "explanation": "Az előző mondatban megismerkedtek két ausztrál lánnyal, a D mondat szerint annyira jól kijöttek, hogy együtt utaztak tovább Zágrábba; ezután érthető, hogy ma is tartják a kapcsolatot (still in touch).",
+      "evidence": "In Ljubljana, we met two Australian girls who were also travelling by train.",
+      "wrongOptions": {
+        "B": "A szülők aggodalma nem kapcsolódik az ausztrál lányokhoz, és utána a „We are still in touch” mondatnak nem lenne kire vonatkoznia."
+      }
+    },
+    {
+      "id": "6",
+      "kind": "match",
+      "answer": "H",
+      "category": "text-structure",
+      "explanation": "Lili kevesebb várost választana, a H mondat megindokolja: két nap egy városban csak a fő látnivalókra elég. A következő mondat ehhez kapcsolódik: legközelebb legalább három napot töltene mindenhol.",
+      "evidence": "Next time, I want to spend at least three days in each place",
+      "wrongOptions": {
+        "E": "Csábító, mert szintén a városok számáról szól, de az E mondat a tervezés kezdetéről szól (múlt), és az 1. helyre kell, ahol a „chose seven” utal rá."
+      }
+    }
+  ],
+  "glossary": [
+    {
+      "term": "fixed price",
+      "meaning": "rögzített, fix ár"
+    },
+    {
+      "term": "youth price",
+      "meaning": "ifjúsági ár, kedvezményes ár fiataloknak"
+    },
+    {
+      "term": "route",
+      "meaning": "útvonal"
+    },
+    {
+      "term": "partly",
+      "meaning": "részben"
+    },
+    {
+      "term": "on time",
+      "meaning": "pontosan, időben (nem késik)"
+    },
+    {
+      "term": "platform",
+      "meaning": "vágány, peron"
+    },
+    {
+      "term": "information board",
+      "meaning": "tájékoztató tábla, kijelző"
+    },
+    {
+      "term": "challenge",
+      "meaning": "kihívás"
+    },
+    {
+      "term": "youth hostel",
+      "meaning": "ifjúsági szálló"
+    },
+    {
+      "term": "still in touch",
+      "meaning": "még mindig tartják a kapcsolatot"
+    },
+    {
+      "term": "get to know",
+      "meaning": "megismer"
+    }
+  ],
+  "suggestedMinutes": 12
+}

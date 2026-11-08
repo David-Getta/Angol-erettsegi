@@ -1,0 +1,170 @@
+{
+  "schemaVersion": 1,
+  "id": "tor-rd-emelt-aranybulla-forraselemzes",
+  "subject": "tortenelem",
+  "revision": 1,
+  "level": "emelt",
+  "source": "generated",
+  "topic": "kozepkor",
+  "title": "II. András és az Aranybulla",
+  "createdAt": "2026-11-05",
+  "tags": [
+    "magyar"
+  ],
+  "section": "reading",
+  "type": "forraselemzes",
+  "instructions": "A feladat II. András uralkodásával és az Aranybullával kapcsolatos. Válaszoljon a kérdésekre a források és ismeretei segítségével! A 0. a megoldott példa.",
+  "passage": {
+    "title": "Elégedetlenség és kiváltságlevél a 13. század elején",
+    "sourceNote": "A források a gyakorlás céljára írt, a kor stílusát követő szövegek, illetve leírások – nem hiteles korabeli dokumentumok. A II. forrás az oklevél néhány rendelkezésének tartalmi összefoglalása.",
+    "blocks": [
+      {
+        "heading": "I. forrás – Egy királyi szerviens panaszleveléből, 1220 körül",
+        "text": "„Urunk, a király, ifjúsága óta oly bőkezűen osztogatja a királyi várakat és birtokokat, hogy ma már egész vármegyéket bírnak az ő kegyeltjei, s ezt ő maga új berendezkedésnek nevezi. A várak jövedelme fogy, a mi szabadságunkat pedig a nagyurak és ispánjaik naponta sértik: beszállásolnak házainkba, s bíráskodnak felettünk, holott mi csak a királynak tartozunk szolgálattal.”"
+      },
+      {
+        "heading": "II. forrás – Az oklevél néhány rendelkezése (összefoglalás)",
+        "text": "– A király szervienseit senki ne fogja el és ne ítélje el, csak ha előbb törvényesen megidézték és perbe fogták.\n– Ha a szerviens fiú örökös nélkül hal meg, birtokának negyedrésze a leányát illeti, a többivel szabadon rendelkezhet.\n– Ha a király vagy utódai ezeket megszegnék, a püspököknek, a főuraknak és a nemeseknek joguk legyen ellenállni és ellentmondani, a hűtlenség vádja nélkül."
+      }
+    ]
+  },
+  "example": {
+    "id": "0",
+    "kind": "text",
+    "prompt": "Melyik király adta ki a II. forrásban összefoglalt oklevelet? (Sorszámmal együtt.)",
+    "answer": [
+      "II. András",
+      "II András",
+      "2. András",
+      "Második András",
+      "II. András király"
+    ],
+    "category": "szemelyek-esemenyek",
+    "explanation": "Helyes: II. András (1205–1235). Az I. forrás „új berendezkedése” az ő birtokpolitikájára utal; a szerviensek elégedetlensége miatt adta ki az Aranybullát.",
+    "maxWords": 3
+  },
+  "items": [
+    {
+      "id": "1",
+      "kind": "text",
+      "prompt": "Melyik évben adták ki a II. forrásban összefoglalt oklevelet?",
+      "answer": [
+        "1222",
+        "1222-ben"
+      ],
+      "category": "evszam-kronologia",
+      "explanation": "Helyes: 1222. Az Aranybulla nevét a pecsétjéről (arany függőpecsét) kapta; 1231-ben megújították.",
+      "maxWords": 1
+    },
+    {
+      "id": "2",
+      "kind": "choice",
+      "prompt": "Melyik társadalmi csoport érdekeit védte elsősorban az oklevél?",
+      "options": [
+        {
+          "key": "A",
+          "text": "a jobbágyságét"
+        },
+        {
+          "key": "B",
+          "text": "a főpapságét és az egyházi nagybirtokosokét"
+        },
+        {
+          "key": "C",
+          "text": "a városi polgárságét"
+        },
+        {
+          "key": "D",
+          "text": "a királyi szerviensekét, a későbbi köznemesség elődeiét"
+        }
+      ],
+      "answer": "D",
+      "category": "forras-ertelmezes",
+      "explanation": "Helyes: D. A II. forrás rendelkezései a király szervienseinek személyes szabadságát (törvényes eljárás), öröklési rendjét és kötelezettségeit szabályozzák; a szerviensekből alakult ki a 13–14. században a köznemesség.",
+      "wrongOptions": {
+        "A": "A jobbágyság nem volt az oklevél kedvezményezettje; a szöveg a szabad, közvetlenül a királynak szolgáló réteget védi.",
+        "B": "Az oklevél a főpapokat is említi (az ellenállási jog gyakorlói között), de nem az ő kiváltságaik a fő tartalma.",
+        "C": "A városi polgárság kiváltságait külön városi kiváltságlevelek szabályozták; az Aranybulla nem róluk szól."
+      }
+    },
+    {
+      "id": "3",
+      "kind": "tf",
+      "prompt": "A II. forrás utolsó rendelkezése feljogosította az egyházi és világi előkelőket, hogy a kiváltságokat megszegő királlyal szemben ellenálljanak.",
+      "answer": "T",
+      "category": "forras-ertelmezes",
+      "explanation": "Igaz. Ez az ellenállási záradék: ha a király megszegi az oklevelet, a püspököknek, főuraknak és nemeseknek joguk van ellenállni „a hűtlenség vádja nélkül” – vagyis ez nem számít a király elleni lázadásnak."
+    },
+    {
+      "id": "4",
+      "kind": "choice",
+      "prompt": "Mi az I. forrásban említett „új berendezkedés” lényege?",
+      "options": [
+        {
+          "key": "A",
+          "text": "a királyi várak és birtokok nagyarányú eladományozása örökbirtokként"
+        },
+        {
+          "key": "B",
+          "text": "a pénzrontás és az évenkénti pénzbeváltás végleges megszüntetése"
+        },
+        {
+          "key": "C",
+          "text": "a vármegyerendszer megszervezése"
+        },
+        {
+          "key": "D",
+          "text": "a jobbágyok röghöz kötése"
+        }
+      ],
+      "answer": "A",
+      "category": "forras-sajat-tudas",
+      "explanation": "Helyes: A. II. András a királyi vármegyék birtokainak nagy részét híveinek adományozta (örök birtokként). Ez csökkentette a király jövedelmét és katonai erejét, és a várszervezet felbomlását gyorsította – a forrás szerint „a várak jövedelme fogy”.",
+      "wrongOptions": {
+        "B": "II. András éppen pénzrontással és új jövedelemforrásokkal (pl. a pénzverés, a sókereskedelem és a vámok jövedelmének bérbeadása) igyekezett pótolni kieső bevételeit; a pénzrontás nem szűnt meg.",
+        "C": "A királyi vármegyerendszert még I. (Szent) István szervezte meg a 11. század elején.",
+        "D": "A jobbágyság röghöz kötése a Dózsa-felkelés (1514) utáni törvények következménye, nem II. András intézkedése."
+      }
+    },
+    {
+      "id": "5",
+      "kind": "choice",
+      "prompt": "Hogyan függ össze a két forrás? Melyik következtetés helyes?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Az oklevelet a tatárjárás pusztításai miatt adták ki."
+        },
+        {
+          "key": "B",
+          "text": "Az oklevél a nagybirtokos kegyeltek további adományokra való jogát rögzítette."
+        },
+        {
+          "key": "C",
+          "text": "Az oklevél megszüntette a vármegyéket, ahogyan az I. forrás szerzője követelte."
+        },
+        {
+          "key": "D",
+          "text": "A birtokadományozások miatt sérelmet szenvedő szerviensek nyomására adta ki a király az oklevelet."
+        }
+      ],
+      "answer": "D",
+      "category": "forras-sajat-tudas",
+      "explanation": "Helyes: D. Az I. forrás a szerviensek panaszait (bíráskodás, beszállásolás) mutatja be, a II. forrás pedig éppen ezek ellen ad védelmet (törvényes eljárás). Az elégedetlen szerviensek 1222-ben fegyveresen gyűltek össze Székesfehérváron, és kikényszerítették az oklevél kiadását.",
+      "wrongOptions": {
+        "A": "A tatárjárás 1241–1242-ben volt, az oklevél 1222-ben készült.",
+        "B": "Az oklevél a szervienseket védte a nagyurakkal szemben, nem a kegyeltek jogait bővítette.",
+        "C": "Az I. forrás szerzője nem a vármegyék megszüntetését kéri, és az oklevél sem szüntette meg őket."
+      }
+    },
+    {
+      "id": "6",
+      "kind": "tf",
+      "prompt": "A II. forrás szerint a fiú örökös nélkül elhunyt szerviens teljes birtoka a királyra szállt.",
+      "answer": "F",
+      "category": "forras-ertelmezes",
+      "explanation": "Hamis. A forrás szerint a birtok negyedrésze a leányt illeti (leánynegyed), a többiről a szerviens „szabadon rendelkezhet” – vagyis nem szállt automatikusan a királyra."
+    }
+  ],
+  "suggestedMinutes": 8
+}

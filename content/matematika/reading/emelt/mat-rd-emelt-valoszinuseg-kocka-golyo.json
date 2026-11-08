@@ -1,0 +1,83 @@
+{
+  "schemaVersion": 1,
+  "id": "mat-rd-emelt-valoszinuseg-kocka-golyo",
+  "subject": "matematika",
+  "revision": 1,
+  "level": "emelt",
+  "source": "generated",
+  "topic": "valoszinuseg",
+  "title": "Klasszikus valószínűség: kockák, golyók, érmék",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "reading",
+  "type": "rovid-szamitas",
+  "instructions": "Számítsd ki a valószínűségeket! A választ törtként (pl. 5/36) vagy a kért pontosságú tizedes törtként add meg. A 0. feladat a kidolgozott példa.",
+  "example": {
+    "id": "0",
+    "kind": "text",
+    "prompt": "Két szabályos dobókockával dobunk. Mennyi a valószínűsége, hogy a dobott számok összege 12?",
+    "answer": ["1/36", "0,0278", "0.0278"],
+    "category": "valoszinuseg-statisztika",
+    "explanation": "Összes eset 6·6 = 36 (minden pár egyformán valószínű). Az összeg csak a (6; 6) dobásnál 12, ez 1 kedvező eset: P = 1/36."
+  },
+  "items": [
+    {
+      "id": "1",
+      "kind": "text",
+      "prompt": "Két kockával dobva mennyi a valószínűsége, hogy a dobott számok összege 7?",
+      "answer": ["1/6", "6/36", "0,167", "0.167", "0,1667", "0.1667"],
+      "category": "valoszinuseg-statisztika",
+      "explanation": "Kedvező párok: (1;6), (2;5), (3;4), (4;3), (5;2), (6;1) – 6 eset a 36-ból: P = 6/36 = 1/6. A 7 a leggyakoribb összeg."
+    },
+    {
+      "id": "2",
+      "kind": "text",
+      "prompt": "Két kockával dobva mennyi a valószínűsége, hogy legalább az egyik kockán 6-os van?",
+      "answer": ["11/36", "0,306", "0.306", "0,3056", "0.3056"],
+      "category": "valoszinuseg-statisztika",
+      "explanation": "Komplementer esemény: egyik kockán sincs 6-os, ennek 5·5 = 25 esete van. P = 1 − 25/36 = 11/36 ≈ 0,306. (Közvetlenül: 5 + 5 + 1 = 11 kedvező pár.)"
+    },
+    {
+      "id": "3",
+      "kind": "text",
+      "prompt": "Egy dobozban 5 piros és 3 kék golyó van. Visszatevés nélkül kihúzunk kettőt. Mennyi a valószínűsége, hogy mindkettő piros?",
+      "answer": ["5/14", "20/56", "10/28", "0,357", "0.357", "0,3571", "0.3571"],
+      "category": "valoszinuseg-statisztika",
+      "explanation": "Első húzás piros: 5/8; utána 4 piros marad 7 golyóból: 4/7. P = (5/8)·(4/7) = 20/56 = 5/14 ≈ 0,357. Kombinációkkal: C(5,2)/C(8,2) = 10/28 = 5/14."
+    },
+    {
+      "id": "4",
+      "kind": "text",
+      "prompt": "Egy szabályos érmét 5-ször feldobunk. Mennyi a valószínűsége, hogy pontosan 2 fejet dobunk?",
+      "answer": ["5/16", "10/32", "0,3125", "0.3125", "0,313", "0.313"],
+      "category": "kepletek",
+      "explanation": "Összes dobássorozat 2⁵ = 32, ezek egyformán valószínűek. A 2 fej helyét C(5,2) = 10-féleképpen választhatjuk: P = 10/32 = 5/16 = 0,3125."
+    },
+    {
+      "id": "5",
+      "kind": "text",
+      "prompt": "Hányféleképpen választható ki 8 ember közül egy 3 fős bizottság?",
+      "answer": ["56", "56 féle", "56-féleképpen"],
+      "category": "kepletek",
+      "explanation": "A sorrend nem számít, ezért kombináció: C(8,3) = 8!/(3!·5!) = (8·7·6)/(3·2·1) = 336/6 = 56."
+    },
+    {
+      "id": "6",
+      "kind": "text",
+      "prompt": "Egy 30 fős osztályban 18 lány van. Két tanulót véletlenszerűen kiválasztanak. Mennyi a valószínűsége, hogy mindkettő fiú? (Három tizedesjegyre kerekítve.)",
+      "answer": ["0,152", "0.152", "22/145", "66/435"],
+      "category": "valoszinuseg-statisztika",
+      "explanation": "12 fiú van. Kedvező: C(12,2) = 66, összes: C(30,2) = 435. P = 66/435 = 22/145 ≈ 0,152. Szorzással: (12/30)·(11/29) = 132/870 ≈ 0,152."
+    },
+    {
+      "id": "7",
+      "kind": "text",
+      "prompt": "Egy szabályos dobókockával négyszer dobunk. Mennyi a valószínűsége, hogy mind a négy dobott szám különböző? (Három tizedesjegyre kerekítve.)",
+      "answer": ["0,278", "0.278", "5/18", "360/1296"],
+      "category": "valoszinuseg-statisztika",
+      "explanation": "Összes eset 6⁴ = 1296. Kedvező: az első dobás 6-féle, a második 5, a harmadik 4, a negyedik 3-féle lehet: 6·5·4·3 = 360. P = 360/1296 = 5/18 ≈ 0,278."
+    }
+  ],
+  "glossary": [],
+  "suggestedMinutes": 15
+}

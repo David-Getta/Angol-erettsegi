@@ -1,0 +1,86 @@
+{
+  "schemaVersion": 1,
+  "id": "mat-rd-kozep-statisztika-parositas",
+  "subject": "matematika",
+  "revision": 1,
+  "level": "kozep",
+  "source": "generated",
+  "topic": "statisztika",
+  "title": "Statisztikai jellemzők egy adatsorban – párosítás",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "reading",
+  "type": "parositas",
+  "instructions": "Egy hat tanuló által egy héten elolvasott könyvfejezetek száma: 2, 3, 3, 5, 7, 10. Párosítsd minden statisztikai jellemzőhöz a megfelelő értéket az A–I listából! Egy érték csak egyszer használható, két érték felesleges. A 0. feladat a példa.",
+  "options": [
+    { "key": "A", "text": "3" },
+    { "key": "B", "text": "4" },
+    { "key": "C", "text": "5" },
+    { "key": "D", "text": "8" },
+    { "key": "E", "text": "6" },
+    { "key": "F", "text": "30" },
+    { "key": "G", "text": "2" },
+    { "key": "H", "text": "7" },
+    { "key": "I", "text": "9" }
+  ],
+  "example": {
+    "id": "0",
+    "kind": "match",
+    "prompt": "Az adatsor módusza",
+    "answer": "A",
+    "category": "valoszinuseg-statisztika",
+    "explanation": "A módusz a leggyakoribb adat. A 3 kétszer fordul elő, minden más érték egyszer, tehát a módusz 3."
+  },
+  "items": [
+    {
+      "id": "1",
+      "kind": "match",
+      "prompt": "Az adatsor átlaga",
+      "answer": "C",
+      "category": "valoszinuseg-statisztika",
+      "explanation": "Átlag = az adatok összege osztva a darabszámukkal: (2 + 3 + 3 + 5 + 7 + 10) : 6 = 30 : 6 = 5."
+    },
+    {
+      "id": "2",
+      "kind": "match",
+      "prompt": "Az adatsor mediánja",
+      "answer": "B",
+      "category": "valoszinuseg-statisztika",
+      "explanation": "Páros számú (6) adatnál a medián a nagyság szerint rendezett sor két középső elemének átlaga: a 3. és 4. adat 3 és 5, ezek átlaga (3 + 5) : 2 = 4."
+    },
+    {
+      "id": "3",
+      "kind": "match",
+      "prompt": "Az adatsor terjedelme",
+      "answer": "D",
+      "category": "definicio-tetel",
+      "explanation": "A terjedelem a legnagyobb és a legkisebb adat különbsége: 10 − 2 = 8."
+    },
+    {
+      "id": "4",
+      "kind": "match",
+      "prompt": "Az adatok összege",
+      "answer": "F",
+      "category": "szamolasi-hiba",
+      "explanation": "2 + 3 + 3 + 5 + 7 + 10 = 30. Ezt az összeget használtuk az átlag kiszámításához is."
+    },
+    {
+      "id": "5",
+      "kind": "match",
+      "prompt": "Az adatok száma",
+      "answer": "E",
+      "category": "szoveges-ertelmezes",
+      "explanation": "Hat tanuló adatát soroltuk fel, tehát az adatok száma 6 (a 3 kétszer szerepel, de két külön adat)."
+    },
+    {
+      "id": "6",
+      "kind": "match",
+      "prompt": "Az átlagnál nagyobb adatok száma",
+      "answer": "G",
+      "category": "valoszinuseg-statisztika",
+      "explanation": "Az átlag 5; ennél nagyobb a 7 és a 10, tehát 2 adat. (Az 5 nem nagyobb az átlagnál, hanem egyenlő vele.)"
+    }
+  ],
+  "glossary": [],
+  "suggestedMinutes": 7
+}

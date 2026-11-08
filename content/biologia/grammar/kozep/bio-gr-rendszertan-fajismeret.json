@@ -1,0 +1,282 @@
+{
+  "schemaVersion": 1,
+  "id": "bio-gr-rendszertan-fajismeret",
+  "subject": "biologia",
+  "revision": 1,
+  "level": "kozep",
+  "source": "generated",
+  "topic": "nyelvtan",
+  "title": "Rendszertan és fajismeret",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "grammar",
+  "type": "lesson",
+  "category": "rendszertan-fajismeret",
+  "summaryHu": "A rendszertani feladatokban az élőlénycsoportok jellemzőit és példafajait kell felismerni, párosítani vagy kizárni. A leggyakoribb hiba, hogy a mindennapi elnevezés (pl. „a gomba növény”, „a bálna hal”) felülírja a biológiai besorolást. A szóbeli B tételben fajismeret (pl. hazai fák, védett állatok) is előfordulhat.",
+  "rules": [
+    {
+      "title": "A rendszertani kategóriák és a kettős nevezéktan",
+      "explanation": "A kategóriák a legtágabbtól a legszűkebbig: ország – törzs – osztály – rend – család – nemzetség – faj. A faj tudományos neve Linné óta kéttagú: nemzetségnév (nagybetűvel) + faji jelző (kisbetűvel), dőlt betűvel.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "Homo sapiens – az ember: Homo a nemzetség, sapiens a faji jelző.",
+          "hu": "Kettős nevezéktan."
+        },
+        {
+          "en": "Az ember: állatok országa, gerinchúrosok törzse, emlősök osztálya, főemlősök rendje, emberfélék családja.",
+          "hu": "Kategóriasor."
+        }
+      ]
+    },
+    {
+      "title": "Az élővilág nagy csoportjai",
+      "explanation": "Prokarióták: baktériumok (és archeák) – sejtmag nélkül. Eukarióták: egysejtű eukarióták (pl. papucsállatka, zöld szemesostoros), gombák (heterotrófok, sejtfaluk kitin, tartalékuk glikogén), növények (autotrófok, cellulóz sejtfal, keményítő) és állatok (heterotrófok, sejtfal nélkül). A vírusok nem sejtek, egyik országba sem tartoznak.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "A csiperkegomba nem növény: nincs színteste, heterotróf, sejtfala kitin.",
+          "hu": "Külön ország."
+        },
+        {
+          "en": "A cianobaktérium fotoszintetizál, de prokarióta.",
+          "hu": "Nem „alga” a szó eukarióta értelmében."
+        }
+      ]
+    },
+    {
+      "title": "Gerincesek osztályai – kulcsbélyegek",
+      "explanation": "Halak: kopoltyú, pikkely, kétüregű szív. Kétéltűek: lárva kopoltyúval, kifejlett tüdővel és bőrrel lélegzik, csupasz nyálkás bőr, háromüregű szív. Hüllők: szaruképletek, héjas tojás, (főleg) háromüregű szív részleges kamrai sövénnyel. Madarak: toll, légzsákok, négyüregű szív, állandó testhő. Emlősök: szőr, tejmirigy, rekeszizom, négyüregű szív, állandó testhő.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "A bálna, a delfin és a denevér emlős: szőrük (a bálnáknál csökevényes), tejmirigyük van.",
+          "hu": "Életmód ≠ rendszertani csoport."
+        },
+        {
+          "en": "A vízisikló hüllő, a gőte kétéltű.",
+          "hu": "Hasonló testalkat, eltérő osztály."
+        }
+      ]
+    },
+    {
+      "title": "Gerinctelenek és növénycsoportok",
+      "explanation": "Ízeltlábúak: kitines külső váz, ízelt lábak – rovarok (3 pár láb, 3 testtájék), pókszabásúak (4 pár láb), rákok (kopoltyú, sok láb). Puhatestűek: csigák, kagylók, fejlábúak. Növények: mohák (nincs szállítószövet), harasztok (spórás, van szállítószövet), nyitvatermők (mag termés nélkül, pl. fenyők), zárvatermők (virág, termés; egyszikűek és kétszikűek).",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "A pók nem rovar: négy pár lába van, teste két testtájékból áll.",
+          "hu": "Pókszabású."
+        },
+        {
+          "en": "A búza egyszikű (párhuzamos erezet, mellékgyökérzet), a bab kétszikű (hálózatos erezet, főgyökérzet).",
+          "hu": "Egyszikű–kétszikű bélyegek."
+        }
+      ]
+    },
+    {
+      "title": "Hazai védett fajok és élőhelyük",
+      "explanation": "Az érettségin hazai fajok és életközösségek is szerepelnek: pl. kockás liliom (ártéri rétek), tavaszi hérics (száraz gyepek), túzok (alföldi gyepek), rétisas (vizes élőhelyek), fürge gyík, kecskebéka. A fajt a jellemző bélyegeiről és az élőhelyéről lehet felismerni.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "A túzok a világ egyik legnehezebb repülni képes madara, hazánkban fokozottan védett.",
+          "hu": "Fajismeret + védelem."
+        },
+        {
+          "en": "A kockás liliom ártéri kaszálóréteken él.",
+          "hu": "Faj és élőhely."
+        }
+      ]
+    }
+  ],
+  "commonMistakes": [
+    {
+      "wrong": "A gomba növény, csak nincs zöld színe.",
+      "right": "A gombák külön országot alkotnak: heterotrófok, sejtfaluk kitin, tartalék tápanyaguk glikogén.",
+      "why": "A színtest hiánya mellett a sejtfal anyaga és a raktározott szénhidrát is az állatokhoz teszi őket közelebb, nem a növényekhez."
+    },
+    {
+      "wrong": "A bálna hal, mert vízben él és úszója van.",
+      "right": "A bálna emlős: tüdővel lélegzik, elevenszülő, tejjel táplálja kicsinyét.",
+      "why": "A testalkat hasonlósága a vízi életmódhoz való alkalmazkodás (analógia), nem rokonság."
+    },
+    {
+      "wrong": "A pók rovar.",
+      "right": "A pók pókszabású ízeltlábú: 4 pár lába és 2 testtájéka van.",
+      "why": "A rovarok 3 pár lábúak és 3 testtájékúak (fej, tor, potroh)."
+    },
+    {
+      "wrong": "A denevér madár, mert repül.",
+      "right": "A denevér emlős: szőrös, elevenszülő, szoptat.",
+      "why": "A repülés több csoportban függetlenül alakult ki."
+    },
+    {
+      "wrong": "homo Sapiens",
+      "right": "Homo sapiens (dőlt betűvel)",
+      "why": "A nemzetségnév nagy, a faji jelző kis kezdőbetűs."
+    }
+  ],
+  "examTips": [
+    "Párosításnál a „kulcsbélyeget” keresd: toll → madár, tejmirigy → emlős, légzsák → madár, 4 pár láb → pókszabású; ezek egyértelműen kizárják a többi csoportot.",
+    "Asszociációs feladatnál (pl. „A) csak a hüllőkre, B) csak a madarakra, C) mindkettőre, D) egyikre sem”) a közös bélyegekre is figyelj: héjas tojás és szaruképlet mindkettőnél van.",
+    "A szóbeli fajismereti feladatban a fajt mindig a csoportjával és egy-két felismerési bélyeggel együtt nevezd meg."
+  ],
+  "practice": [
+    {
+      "id": "1",
+      "kind": "choice",
+      "prompt": "Melyik jellemző igaz a gombákra?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Sejtfaluk cellulózból áll."
+        },
+        {
+          "key": "B",
+          "text": "Fotoszintézisre képesek."
+        },
+        {
+          "key": "C",
+          "text": "Prokarióta sejtekből állnak."
+        },
+        {
+          "key": "D",
+          "text": "Heterotrófok, sejtfaluk kitint tartalmaz."
+        }
+      ],
+      "answer": "D",
+      "category": "rendszertan-fajismeret",
+      "explanation": "Helyes: D. A gombák eukarióta, heterotróf élőlények; sejtfaluk kitint tartalmaz, tartalék szénhidrátjuk a glikogén.",
+      "wrongOptions": {
+        "A": "Cellulóz sejtfala a növényeknek van.",
+        "B": "A gombáknak nincs színtestük, nem fotoszintetizálnak.",
+        "C": "A gombák eukarióták, valódi sejtmagjuk van."
+      }
+    },
+    {
+      "id": "2",
+      "kind": "choice",
+      "prompt": "Melyik állat NEM emlős?",
+      "options": [
+        {
+          "key": "A",
+          "text": "delfin"
+        },
+        {
+          "key": "B",
+          "text": "denevér"
+        },
+        {
+          "key": "C",
+          "text": "pingvin"
+        },
+        {
+          "key": "D",
+          "text": "sün"
+        }
+      ],
+      "answer": "C",
+      "category": "rendszertan-fajismeret",
+      "explanation": "Helyes: C. A pingvin madár: tollazata van, tojást rak, légzsákjai vannak – csak repülni nem tud, szárnyával úszik.",
+      "wrongOptions": {
+        "A": "A delfin emlős: tüdővel lélegzik, elevenszülő, szoptat.",
+        "B": "A denevér repülő emlős, szőrös és szoptat.",
+        "D": "A sün emlős: tüskéi módosult szőrszálak."
+      }
+    },
+    {
+      "id": "3",
+      "kind": "text",
+      "prompt": "Hány pár lába van a pókoknak?",
+      "answer": [
+        "4",
+        "négy",
+        "4 pár",
+        "négy pár"
+      ],
+      "category": "rendszertan-fajismeret",
+      "explanation": "Helyes: 4 pár. A pókszabásúak négy pár járólábúak, testük fejtorra és potrohra tagolódik; a rovaroknak három pár lábuk van.",
+      "maxWords": 2
+    },
+    {
+      "id": "4",
+      "kind": "choice",
+      "prompt": "Melyik a helyes írásmódja a fürge gyík tudományos nevének?",
+      "options": [
+        {
+          "key": "A",
+          "text": "lacerta Agilis"
+        },
+        {
+          "key": "B",
+          "text": "LACERTA AGILIS"
+        },
+        {
+          "key": "C",
+          "text": "Lacerta Agilis"
+        },
+        {
+          "key": "D",
+          "text": "Lacerta agilis"
+        }
+      ],
+      "answer": "D",
+      "category": "rendszertan-fajismeret",
+      "explanation": "Helyes: D. A kettős nevezéktan szerint a nemzetségnév nagy, a faji jelző kis kezdőbetűvel íródik (nyomtatásban dőlten).",
+      "wrongOptions": {
+        "A": "A nemzetségnév kis, a faji jelző nagy kezdőbetűs – fordítva helyes.",
+        "B": "Csupa nagybetűvel nem írjuk a tudományos nevet.",
+        "C": "A faji jelző nem kap nagy kezdőbetűt."
+      }
+    },
+    {
+      "id": "5",
+      "kind": "choice",
+      "prompt": "Melyik növénycsoportnak nincs szállítószövete?",
+      "options": [
+        {
+          "key": "A",
+          "text": "mohák"
+        },
+        {
+          "key": "B",
+          "text": "harasztok"
+        },
+        {
+          "key": "C",
+          "text": "nyitvatermők"
+        },
+        {
+          "key": "D",
+          "text": "zárvatermők"
+        }
+      ],
+      "answer": "A",
+      "category": "rendszertan-fajismeret",
+      "explanation": "Helyes: A. A mohák testében nincs valódi szállítószövet, ezért alacsonyak és nedves élőhelyhez kötöttek; a harasztoktól kezdve van fa- és háncsrész.",
+      "wrongOptions": {
+        "B": "A harasztoknak (pl. páfrányok, zsurlók) már van szállítószövetük, ezért nőhetnek nagyobbra.",
+        "C": "A nyitvatermők (pl. fenyők) fás szárú, szállítószövetes növények.",
+        "D": "A zárvatermők a legfejlettebb szállítószövettel rendelkeznek."
+      }
+    },
+    {
+      "id": "6",
+      "kind": "text",
+      "prompt": "Melyik gerinces osztály jellemzője, hogy lárváik kopoltyúval, kifejlett egyedeik tüdővel és bőrükkel lélegeznek?",
+      "answer": [
+        "kétéltűek",
+        "kétéltű",
+        "a kétéltűek"
+      ],
+      "category": "rendszertan-fajismeret",
+      "explanation": "Helyes: kétéltűek. A kétéltűek (pl. béka, gőte) lárvája vízben, kopoltyúval él, átalakulás után a kifejlett állat tüdővel és nedves, csupasz bőrén át lélegzik.",
+      "maxWords": 2
+    }
+  ],
+  "relatedCategories": [
+    "felepites-mukodes",
+    "evolucios-ervel"
+  ]
+}

@@ -1,0 +1,190 @@
+{
+  "schemaVersion": 1,
+  "id": "fol-lu-emelt-klimavaltozas-szovegertelmezes",
+  "subject": "foldrajz",
+  "revision": 1,
+  "level": "emelt",
+  "source": "generated",
+  "topic": "globalis-kihivasok",
+  "title": "Az üvegházhatás és a klímaváltozás – szövegértelmezés",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "language-use",
+  "type": "szovegertelmezes",
+  "instructions": "Olvassa el a szöveget, majd válaszoljon a kérdésekre a szöveg és földrajzi ismeretei alapján! A 0. a megoldott példa.",
+  "passage": {
+    "title": "Az üvegházhatás és a klímaváltozás",
+    "blocks": [
+      {
+        "text": "A Föld légköre természetes üvegházként működik: a vízgőz, a szén-dioxid és a metán átengedi a Nap rövid hullámú sugárzását, de a felmelegedett felszín hosszú hullámú (hő)kisugárzásának egy részét elnyeli és visszasugározza. Enélkül a felszín átlaghőmérséklete −18 °C körül lenne a mai kb. 15 °C helyett."
+      },
+      {
+        "text": "Az ipari forradalom óta a fosszilis tüzelőanyagok elégetése és az erdőirtás miatt a légkör szén-dioxid-tartalma kb. 280 ppm-ről 420 ppm fölé emelkedett. A metán mennyisége is nőtt, főként az állattenyésztés, a rizstermesztés és a földgáz kitermelése során. A Föld felszíni átlaghőmérséklete az 1850–1900 közötti átlaghoz képest 2011–2020-ra kb. 1,1 °C-kal emelkedett."
+      },
+      {
+        "text": "A melegedés következményei területenként eltérők. A sarkvidékeken a felmelegedés a globális átlag többszöröse: a nyári tengeri jég kiterjedése csökken, a világos jég helyén a sötétebb tengerfelszín több napsugárzást nyel el, ami tovább gyorsítja a melegedést. A gleccserek és jégtakarók olvadása, valamint a melegedő víz hőtágulása miatt a tengerszint 1900 óta kb. 20 cm-rel emelkedett, ami a sűrűn lakott, alacsony fekvésű deltavidékeket (pl. Banglades) fenyegeti."
+      },
+      {
+        "text": "A 2015-ös párizsi klímaegyezményben az országok vállalták, hogy a melegedést jóval 2 °C alatt tartják, és törekednek az 1,5 °C-os határ betartására. Ehhez a kibocsátás gyors csökkentésére (megújuló energiaforrások, energiatakarékosság) és a már elkerülhetetlen változásokhoz való alkalmazkodásra egyaránt szükség van."
+      }
+    ]
+  },
+  "example": {
+    "id": "0",
+    "kind": "text",
+    "prompt": "Mekkora lenne a szöveg szerint a felszín átlaghőmérséklete üvegházhatás nélkül?",
+    "answer": [
+      "−18 °C",
+      "-18 °C",
+      "−18",
+      "-18",
+      "mínusz 18 °C"
+    ],
+    "category": "szovegertelmezes",
+    "explanation": "−18 °C: a szöveg szerint üvegházhatás nélkül „a felszín átlaghőmérséklete −18 °C körül lenne a mai kb. 15 °C helyett”."
+  },
+  "items": [
+    {
+      "id": "1",
+      "kind": "choice",
+      "prompt": "Melyik sugárzás nagy részét nyelik el az üvegházhatású gázok?",
+      "options": [
+        {
+          "key": "A",
+          "text": "a Hold visszavert fényét"
+        },
+        {
+          "key": "B",
+          "text": "a Nap rövid hullámú sugárzását"
+        },
+        {
+          "key": "C",
+          "text": "a kozmikus sugárzást"
+        },
+        {
+          "key": "D",
+          "text": "a felmelegedett felszín hosszú hullámú hősugárzását"
+        }
+      ],
+      "answer": "D",
+      "category": "termeszeti-folyamat",
+      "explanation": "Helyes: D. A szöveg szerint a gázok „átengedik a Nap rövid hullámú sugárzását”, de a felszín „hosszú hullámú (hő)kisugárzásának egy részét elnyelik és visszasugározzák”.",
+      "wrongOptions": {
+        "A": "A Hold fénye elhanyagolható energia, és az üvegházhatás nem ezen alapul.",
+        "B": "A rövid hullámú napsugárzást a légkör nagyrészt átengedi; ezért melegszik fel a felszín.",
+        "C": "A kozmikus sugárzásnak nincs szerepe az üvegházhatásban."
+      }
+    },
+    {
+      "id": "2",
+      "kind": "text",
+      "prompt": "Hány százalékkal nőtt a légkör szén-dioxid-tartalma az ipari forradalom előtti értékhez képest a szöveg adatai szerint? Egész számra kerekítve adja meg!",
+      "answer": [
+        "50%",
+        "50",
+        "kb. 50%"
+      ],
+      "category": "szamitas-foldrajzi",
+      "explanation": "Kb. 50%: (420 − 280) : 280 = 140 : 280 = 0,5, azaz 50%-os növekedés."
+    },
+    {
+      "id": "3",
+      "kind": "tf",
+      "prompt": "A szöveg szerint a metánkibocsátás egyik forrása a rizstermesztés.",
+      "answer": "T",
+      "category": "szovegertelmezes",
+      "explanation": "Igaz: a szöveg szerint a metán mennyisége „főként az állattenyésztés, a rizstermesztés és a földgáz kitermelése során” nőtt (az elárasztott rizsföldeken oxigénhiányos bomlás zajlik)."
+    },
+    {
+      "id": "4",
+      "kind": "choice",
+      "prompt": "Melyik fogalom írja le a sarkvidéki folyamatot: a jég olvad → a sötétebb tengerfelszín több sugárzást nyel el → tovább gyorsul a melegedés?",
+      "options": [
+        {
+          "key": "A",
+          "text": "pozitív visszacsatolás"
+        },
+        {
+          "key": "B",
+          "text": "negatív visszacsatolás"
+        },
+        {
+          "key": "C",
+          "text": "hőmérsékleti inverzió"
+        },
+        {
+          "key": "D",
+          "text": "száraz adiabatikus hűlés"
+        }
+      ],
+      "answer": "A",
+      "category": "fogalomhasznalat",
+      "explanation": "Helyes: pozitív visszacsatolás – a folyamat következménye (a kisebb fényvisszaverő képesség) erősíti magát a folyamatot (a melegedést).",
+      "wrongOptions": {
+        "B": "Negatív visszacsatolásnál a következmény gyengítené, fékezné a kiváltó folyamatot.",
+        "C": "A hőmérsékleti inverzió az a helyzet, amikor a magasabb légréteg melegebb az alsónál (pl. téli ködös medencékben).",
+        "D": "A száraz adiabatikus hűlés a felemelkedő levegő tágulás miatti hűlése (kb. 1 °C/100 m), nincs köze a jégolvadáshoz."
+      }
+    },
+    {
+      "id": "5",
+      "kind": "tf",
+      "prompt": "A szöveg szerint a tengerszint emelkedését kizárólag a jégtakarók olvadása okozza.",
+      "answer": "F",
+      "category": "szovegertelmezes",
+      "explanation": "Hamis: a szöveg két okot nevez meg: „a gleccserek és jégtakarók olvadása, valamint a melegedő víz hőtágulása”."
+    },
+    {
+      "id": "6",
+      "kind": "text",
+      "prompt": "Melyik ország példája szerepel a szövegben az alacsony fekvésű, veszélyeztetett deltavidékekre?",
+      "answer": [
+        "Banglades",
+        "Bangladesh"
+      ],
+      "category": "szovegertelmezes",
+      "explanation": "Banglades: a szöveg szerint a tengerszint-emelkedés „a sűrűn lakott, alacsony fekvésű deltavidékeket (pl. Banglades)” fenyegeti; az ország a Gangesz–Brahmaputra deltáján fekszik.",
+      "maxWords": 1
+    },
+    {
+      "id": "7",
+      "kind": "choice",
+      "prompt": "Melyik intézkedés az alkalmazkodás (és nem a kibocsátás csökkentése) példája?",
+      "options": [
+        {
+          "key": "A",
+          "text": "a széntüzelésű erőművek bezárása"
+        },
+        {
+          "key": "B",
+          "text": "szélerőművek építése"
+        },
+        {
+          "key": "C",
+          "text": "az épületek hőszigetelése"
+        },
+        {
+          "key": "D",
+          "text": "a tengerparti gátak magasítása"
+        }
+      ],
+      "answer": "D",
+      "category": "tarsadalmi-folyamat",
+      "explanation": "Helyes: D. A gátmagasítás nem csökkenti a melegedést, hanem a már bekövetkező tengerszint-emelkedés káros hatásaitól véd – ez alkalmazkodás.",
+      "wrongOptions": {
+        "A": "A szénerőművek bezárása a legnagyobb kibocsátók egyikét szünteti meg – ez is kibocsátáscsökkentés.",
+        "B": "A szélerőmű fosszilis tüzelőanyagot vált ki, tehát a kibocsátást csökkenti.",
+        "C": "A hőszigetelés energiát takarít meg, így kevesebb a szén-dioxid-kibocsátás – ez kibocsátáscsökkentés."
+      }
+    },
+    {
+      "id": "8",
+      "kind": "tf",
+      "prompt": "A párizsi klímaegyezmény célja, hogy a melegedés jóval 2 °C alatt maradjon.",
+      "answer": "T",
+      "category": "szovegertelmezes",
+      "explanation": "Igaz: a szöveg szerint a 2015-ös egyezményben az országok vállalták, hogy „a melegedést jóval 2 °C alatt tartják”, és törekednek az 1,5 °C-os határ betartására."
+    }
+  ],
+  "suggestedMinutes": 10
+}

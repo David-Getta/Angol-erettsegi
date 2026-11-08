@@ -1,0 +1,133 @@
+{
+  "schemaVersion": 1,
+  "id": "kem-gd-speaking-c-tetel",
+  "subject": "kemia",
+  "revision": 1,
+  "level": "kozep",
+  "source": "generated",
+  "topic": "utmutato",
+  "title": "C) Problémamegoldó feladat",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "guide",
+  "type": "speaking",
+  "target": "c-tetel",
+  "summaryHu": "A C feladat csak emelt szinten szerepel: egy elemző, problémamegoldó feladat (gyakran számítás vagy adatelemzés), amelyet szóban, a lépéseket indokolva kell megoldani. 10 pontot ér: a probléma megoldására (helyes gondolatmenet és eredmény) 7, a lépések kémiai indoklására 3 pont jár. A bizottság nem csak az eredményt, hanem a gondolkodás menetét is értékeli.",
+  "steps": [
+    {
+      "title": "1. A probléma megértése",
+      "explanation": "Olvasd el a feladatot, írd ki az adatokat mértékegységgel, és fogalmazd meg, mit kell meghatározni. Gyűjtsd ki a rejtett információkat (pl. „+2-es oxidációs számú” → 1 : 1 arány a hidrogénnel; „lúgban is oldódik” → amfoter).",
+      "tips": [
+        "Minden megadott adatot használj fel – ha egy kimarad, valószínűleg ellenőrzésre szolgál.",
+        "Írd fel a kérdéseket a, b, c sorrendben."
+      ]
+    },
+    {
+      "title": "2. A megoldási terv",
+      "explanation": "Mondd el előre, milyen úton haladsz: „Először kiszámolom a hidrogén anyagmennyiségét, ebből a fémét, majd a moláris tömeget.” Ez a gondolatmenet-pontokat is biztosítja.",
+      "tips": [
+        "A tervet a felkészülési időben írd le."
+      ]
+    },
+    {
+      "title": "3. Lépésenkénti megoldás, indoklással",
+      "explanation": "Minden lépésnél mondd ki az összefüggést, a behelyettesítést és az eredményt mértékegységgel, és indokold kémiailag (teljes disszociáció, sztöchiometria, standardpotenciál).",
+      "tips": [
+        "Ne csak számolj: „mivel erős sav, teljesen disszociál, ezért…”.",
+        "A mértékegységeket hangosan is mondd ki."
+      ]
+    },
+    {
+      "title": "4. Válasz és ellenőrzés",
+      "explanation": "Fogalmazd meg a választ egy mondatban, és ellenőrizd egy másik adattal vagy becsléssel (pl. reális-e a pH, valóban amfoter-e az azonosított fém).",
+      "tips": [
+        "Ha a vizsgáztató kérdez, gondold végig: a kérdés gyakran a hiányzó lépésre utal."
+      ]
+    }
+  ],
+  "phrases": [
+    {
+      "group": "Terv",
+      "en": "Először …-t számolom ki, ebből következik …",
+      "hu": "A megoldási út ismertetése."
+    },
+    {
+      "group": "Indoklás",
+      "en": "Mivel a … erős sav, teljesen disszociál, ezért …",
+      "hu": "Kémiai indoklás."
+    },
+    {
+      "group": "Sztöchiometria",
+      "en": "Az egyenlet szerint 1 mol …-ból … mol … keletkezik.",
+      "hu": "Arány kimondása."
+    },
+    {
+      "group": "Összefüggés",
+      "en": "pH + pOH = 14; n = c · V",
+      "hu": "Sav–bázis problémák."
+    },
+    {
+      "group": "Összefüggés",
+      "en": "M = m / n",
+      "hu": "Ismeretlen anyag azonosítása."
+    },
+    {
+      "group": "Redoxi",
+      "en": "A negatívabb standardpotenciálú fém redukálja a pozitívabb fém ionjait.",
+      "hu": "Kiszorítási kérdések."
+    },
+    {
+      "group": "Ellenőrzés",
+      "en": "Ezt megerősíti, hogy …",
+      "hu": "Eredmény ellenőrzése másik adattal."
+    },
+    {
+      "group": "Válasz",
+      "en": "Tehát a keresett … értéke …",
+      "hu": "Szöveges válasz."
+    }
+  ],
+  "mistakes": [
+    {
+      "wrong": "Szó nélkül számol, csak az eredményt mondja.",
+      "right": "Lépésenként mondja és indokolja a megoldást.",
+      "why": "Az indoklásra külön 3 pont jár, és a gondolatmenet a megoldás-pontok része."
+    },
+    {
+      "wrong": "A pH-kat átlagolja két oldat keverésekor.",
+      "right": "Az anyagmennyiségeket vonja ki egymásból, és a teljes térfogatra számol.",
+      "why": "A pH logaritmikus; a közömbösítés anyagmennyiség-mérlege a helyes út."
+    },
+    {
+      "wrong": "Nem használja fel az összes adatot.",
+      "right": "Minden adatot felhasznál (megoldásra vagy ellenőrzésre).",
+      "why": "A kimaradt adat gyakran kulcsinformáció (pl. az amfoter jelleg az azonosítás megerősítése)."
+    },
+    {
+      "wrong": "Mértékegység nélküli végeredmény.",
+      "right": "Mértékegységgel és szöveges válasszal zár.",
+      "why": "A szaknyelvi pont a mértékegységek pontos használatát is jelenti."
+    }
+  ],
+  "checklist": [
+    "Kiírtam az adatokat és a kérdést?",
+    "Elmondtam a megoldás tervét?",
+    "Minden lépést indokoltam?",
+    "Felhasználtam minden adatot?",
+    "Ellenőriztem és mondatban válaszoltam?"
+  ],
+  "timing": "A C feladatra a 30 perces felkészülésből kb. 8–10 percet szánj; a felelet kb. 5–6 perc. A számolást a felkészülési időben végezd el, a feleletben a gondolatmenetet mondd el.",
+  "example": {
+    "title": "Minta: ismeretlen fém azonosítása (részlet)",
+    "text": "A fém +2-es oxidációs számú, ezért M + 2 HCl → MCl₂ + H₂, vagyis n(fém) = n(H₂). n(H₂) = 0,490 dm³ / 24,5 dm³/mol = 0,0200 mol, így M = 1,30 g / 0,0200 mol = 65,0 g/mol – ez a cink. Ezt megerősíti, hogy lúgban is oldódik, mert a cink amfoter.",
+    "notes": [
+      "A rejtett információból (+2) vezeti le az arányt.",
+      "Minden lépés mértékegységgel szerepel.",
+      "A második adatot ellenőrzésre használja."
+    ]
+  },
+  "levelNotes": {
+    "kozep": "Középszinten nincs C feladat; a szóbeli A és B tételből áll.",
+    "emelt": "Emelt szinten a C feladat 10 pontot ér; jellemzően pH-, sztöchiometriai, egyensúlyi vagy azonosítási probléma, amelyet szóban, indokolva kell megoldani."
+  }
+}

@@ -1,0 +1,277 @@
+{
+  "schemaVersion": 1,
+  "id": "tor-gr-feladatmegertes",
+  "subject": "tortenelem",
+  "revision": 1,
+  "level": "kozep",
+  "source": "generated",
+  "topic": "nyelvtan",
+  "title": "Feladatmegértés",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "grammar",
+  "type": "lesson",
+  "category": "feladatmegertes",
+  "summaryHu": "Az esszék első szempontja a feladatmegértés: ha az esszé nem a feladat témájáról szól, a feladatmegértés 0 pont, és ilyenkor az egész esszé 0 pontot kap. A szóbelin is 4 pontot ér, hogy a tétel kérdésére felelsz-e. A feladat szövegében meg kell találni a témát, a kért műveletet (bemutatás, összehasonlítás, értékelés), a tér- és időkeretet, és fel kell használni minden forrást.",
+  "rules": [
+    {
+      "title": "A feladat kulcsszavai",
+      "explanation": "Húzd alá a feladat szövegében: a témát (miről?), a szempontot (melyik oldaláról?), a korszakot és a térséget. Ezek jelölik ki, mi tartozik az esszébe.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "„Mutassa be Hunyadi Mátyás központosító politikáját!”",
+          "hu": "téma: Mátyás; szempont: a központosítás eszközei – nem életrajz, nem a reneszánsz kultúra részletes leírása"
+        },
+        {
+          "en": "„…a reformáció okait és következményeit!”",
+          "hu": "két kötelező elem: okok ÉS következmények"
+        }
+      ]
+    },
+    {
+      "title": "A kért művelet",
+      "explanation": "A felszólító ige megmondja, mit kell csinálni. Mutassa be / ismertesse: rendezett, lényegre törő kifejtés. Hasonlítsa össze: hasonlóságok és különbségek, szempontok szerint. Értékelje: eredmények és korlátok mérlegelése, indokolt álláspont. Tárja fel az okokat / következményeket: oksági magyarázat.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "„Hasonlítsa össze Széchenyi és Kossuth programját!”",
+          "hu": "kell egy összehasonlító bekezdés: azonos cél, eltérő módszer, tempó, viszony Béccsel"
+        },
+        {
+          "en": "„Értékelje a konszolidáció eredményeit!”",
+          "hu": "stabilitás és korlátok együtt, mérlegelve"
+        }
+      ]
+    },
+    {
+      "title": "Az idő- és térkeret",
+      "explanation": "A feladat időkeretét teljesen le kell fedni, de nem szabad túllépni. Ha a feladat „1848 és 1945 között” kérdez, ne állj meg 1867-nél, és ne írj a Kádár-korszakról. Középszinten a rövid esszé egyetemes, a hosszú magyar történelmi témájú.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "„…1848-tól az 1945-ös földreformig”",
+          "hu": "1848 → dualizmus → két világháború között → 1945"
+        },
+        {
+          "en": "„…az ipari forradalom korának angliai gyárait”",
+          "hu": "térkeret: Anglia; nem a magyar iparosodás"
+        }
+      ]
+    },
+    {
+      "title": "Szempontok és források",
+      "explanation": "A feladat szempontjait (ha vannak) mind teljesíteni kell, a forrásokat pedig fel kell használni – a feladatmegértés leírásában is szerepel, hogy „a forrásokat használja”.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "Vázlat: p1 – időpont, hely; p2 – I. forrás; p3 – II. forrás; p4 – következmény",
+          "hu": "minden szempontnak és forrásnak legyen helye a vázlatban"
+        }
+      ]
+    },
+    {
+      "title": "Választás a feladatok között",
+      "explanation": "Középszinten a 4 kiírt esszéből kettőt kell megírni: egy rövidet (egyetemes) és egy hosszút (magyar), különböző korszakból. Emelt szinten a 6 kiírt esszéből hármat: egy rövidet (egyetemes), egy hosszút (magyar) és egy komplexet. Azt a témát válaszd, amelynek korszakában biztos vagy.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "Közép: rövid esszé az ókorból + hosszú esszé a reformkorról",
+          "hu": "megfelel: különböző korszakok"
+        },
+        {
+          "en": "Emelt: rövid + hosszú + komplex",
+          "hu": "a három esszé együtt adja a II. feladatlap pontjait"
+        }
+      ]
+    }
+  ],
+  "commonMistakes": [
+    {
+      "wrong": "Feladat: Mátyás központosító politikája → az esszé fele a Corvináról és Beatrix királynéról szól.",
+      "right": "A reneszánsz udvart csak annyiban említsd, amennyiben a királyi hatalom tekintélyét, reprezentációját szolgálta; a fő rész az adóreform, a hivatalnokréteg és a fekete sereg.",
+      "why": "A lényegtelen részleteknél maradó esszé feladatmegértésre legfeljebb 1 pontot kap, és a többi szempontnál is veszít."
+    },
+    {
+      "wrong": "Feladat: a reformáció okai és következményei → csak Luther életrajzát írja le.",
+      "right": "Az okokat (búcsúcédula, az egyház világiasodása) és a következményeket (protestáns egyházak, augsburgi vallásbéke) kell kifejteni.",
+      "why": "Az életrajz nem felel a feladat kérdésére."
+    },
+    {
+      "wrong": "Feladat: hasonlítsa össze… → két külön leírás összevetés nélkül.",
+      "right": "Külön összehasonlító bekezdés: hasonlóságok, különbségek és azok magyarázata.",
+      "why": "Az összehasonlítás művelete nem teljesül, ha a két leírást nem viszonyítod egymáshoz."
+    },
+    {
+      "wrong": "Feladat: a parasztság helyzete 1848 és 1945 között → az esszé 1867-nél véget ér.",
+      "right": "A teljes időkeretet le kell fedni: a dualizmus, a két világháború közötti időszak és az 1945-ös földreform is kell.",
+      "why": "Az időkeret egy részének kihagyása a feladatmegértésben és a tájékozódásban is pontvesztés."
+    }
+  ],
+  "examTips": [
+    "Az esszé megírása előtt fogalmazd meg egy mondatban, mi a feladat kérdése, és minden bekezdés után ellenőrizd, arra felelsz-e.",
+    "Ha a feladatmegértés 0 pont (nem a feladat témájáról írsz), az egész esszé 0 pont – ezért ne válassz olyan feladatot, amelynek a korszakában bizonytalan vagy.",
+    "Szóbelin a tétel címe és a szempontok jelölik ki a feleletet: ha elkalandozol, a vizsgáztató visszaterel – ez már pontvesztés."
+  ],
+  "practice": [
+    {
+      "id": "1",
+      "kind": "choice",
+      "prompt": "Feladat: „Mutassa be Széchenyi István reformprogramját!” Melyik tartalom NEM tartozik a feladathoz?",
+      "options": [
+        {
+          "key": "A",
+          "text": "A Magyar Tudós Társaság alapítása"
+        },
+        {
+          "key": "B",
+          "text": "A Hitel és az ősiség bírálata"
+        },
+        {
+          "key": "C",
+          "text": "A Lánchíd és a hídvám"
+        },
+        {
+          "key": "D",
+          "text": "Széchenyi döblingi évei és halála (1860)"
+        }
+      ],
+      "answer": "D",
+      "category": "feladatmegertes",
+      "explanation": "Helyes: D. Széchenyi utolsó évei a döblingi szanatóriumban nem a reformprogramhoz tartoznak – ez lényegtelen életrajzi részlet.",
+      "wrongOptions": {
+        "A": "A tudós társaság a kulturális felzárkózás része, a programhoz tartozik.",
+        "B": "A Hitel és az ősiség bírálata a program alapja.",
+        "C": "A Lánchíd a program gyakorlati megvalósulása, a hídvám a közteherviselés felé mutat."
+      }
+    },
+    {
+      "id": "2",
+      "kind": "choice",
+      "prompt": "Mit kér az „értékelje” utasítás?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Mérlegelje az eredményeket és a korlátokat, és foglaljon állást indokolva."
+        },
+        {
+          "key": "B",
+          "text": "Sorolja fel az eseményeket időrendben."
+        },
+        {
+          "key": "C",
+          "text": "Idézze a forrásokat szó szerint."
+        },
+        {
+          "key": "D",
+          "text": "Írja le a szereplők életrajzát."
+        }
+      ],
+      "answer": "A",
+      "category": "feladatmegertes",
+      "explanation": "Helyes: A. Az értékelés mérlegelő, indokolt állásfoglalás – nem puszta leírás.",
+      "wrongOptions": {
+        "B": "Az időrendi felsorolás leírás, nem értékelés.",
+        "C": "A szó szerinti idézés nem értékelés, és F-elemnek sem elég.",
+        "D": "Az életrajz nem felel az értékelő kérdésre."
+      }
+    },
+    {
+      "id": "3",
+      "kind": "choice",
+      "prompt": "Feladat: a magyar parasztság birtokhelyzete 1848 és 1945 között. Melyik felépítés felel meg leginkább a feladatnak?",
+      "options": [
+        {
+          "key": "A",
+          "text": "időrendben 1848 → dualizmus → két világháború között → 1945, összehasonlító zárással"
+        },
+        {
+          "key": "B",
+          "text": "csak az 1848-as jobbágyfelszabadítás részletes leírása"
+        },
+        {
+          "key": "C",
+          "text": "az 1945 utáni kollektivizálás bemutatása"
+        },
+        {
+          "key": "D",
+          "text": "a források egymás utáni ismertetése, időrend nélkül"
+        }
+      ],
+      "answer": "A",
+      "category": "feladatmegertes",
+      "explanation": "Helyes: A. Lefedi a teljes időkeretet, és a feladat kérésének megfelelően összehasonlít.",
+      "wrongOptions": {
+        "B": "Csak az időkeret elejét dolgozza fel.",
+        "C": "Kívül esik a feladat időkeretén (csak utalásként jöhet szóba).",
+        "D": "A források ismertetése gondolatmenet nélkül nem kifejtés."
+      }
+    },
+    {
+      "id": "4",
+      "kind": "choice",
+      "prompt": "Középszinten hány esszét kell írni, és milyen megkötéssel?",
+      "options": [
+        {
+          "key": "A",
+          "text": "kettőt: egy rövid egyetemes és egy hosszú magyar témájút, különböző korszakból"
+        },
+        {
+          "key": "B",
+          "text": "hármat: rövidet, hosszút és komplexet"
+        },
+        {
+          "key": "C",
+          "text": "egyet, tetszőleges hosszúságban"
+        },
+        {
+          "key": "D",
+          "text": "kettőt, ugyanabból a korszakból"
+        }
+      ],
+      "answer": "A",
+      "category": "feladatmegertes",
+      "explanation": "Helyes: A. A 4 kiírt esszéből kettőt kell választani: egy rövid (egyetemes) és egy hosszú (magyar) esszét, eltérő korszakból.",
+      "wrongOptions": {
+        "B": "Három esszé (rövid, hosszú, komplex) az emelt szint követelménye.",
+        "C": "Középszinten két esszé kell, kötött terjedelemmel.",
+        "D": "A két esszének különböző korszakra kell vonatkoznia."
+      }
+    },
+    {
+      "id": "5",
+      "kind": "choice",
+      "prompt": "Feladat: „Mutassa be a Truman-elv és a Marshall-terv célját!” Melyik bevezető mondat irányul leginkább a feladatra?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Harry Truman 1884-ben született Missouriban."
+        },
+        {
+          "key": "B",
+          "text": "A második világháború 1939-ben kezdődött Lengyelország megtámadásával."
+        },
+        {
+          "key": "C",
+          "text": "1947-ben az USA a Truman-elvvel és a Marshall-tervvel a kommunizmus európai terjedését akarta feltartóztatni."
+        },
+        {
+          "key": "D",
+          "text": "A hidegháború az egyik legérdekesebb történelmi korszak."
+        }
+      ],
+      "answer": "C",
+      "category": "feladatmegertes",
+      "explanation": "Helyes: C. Elhelyezi a témát időben és térben, és rögtön a feladat kérdésére (a célra) felel.",
+      "wrongOptions": {
+        "A": "Életrajzi részlet, nem kapcsolódik a célokhoz.",
+        "B": "A háború kezdete nem a feladat témája; a bevezető túl messziről indul.",
+        "D": "Üres általánosság, nem ér pontot."
+      }
+    }
+  ],
+  "relatedCategories": [
+    "lenyegkiemeles",
+    "szerkesztes"
+  ]
+}

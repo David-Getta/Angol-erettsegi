@@ -1,0 +1,112 @@
+{
+  "schemaVersion": 1,
+  "id": "dig-wr-kozep-adatbazis-iskolai-konyvtar",
+  "subject": "digitalis-kultura",
+  "revision": 1,
+  "level": "kozep",
+  "source": "generated",
+  "topic": "adatbazis",
+  "title": "Adatbázis-kezelés: az iskolai könyvtár kölcsönzései",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "writing",
+  "type": "adatbazis",
+  "taskNumber": 4,
+  "situation": "Az iskolai könyvtár nyilvántartásának egy részlete két szövegfájlban van (UTF-8, tabulátorral tagolt; az első sor a mezőneveket tartalmazza).\n\nkonyv.txt – a konyv tábla: id (egész szám, a könyv azonosítója, kulcs), cim (szöveg), szerzo (szöveg), kiadas_eve (egész szám), mufaj (szöveg, pl. regény, krimi, ifjúsági).\nkolcsonzes.txt – a kolcsonzes tábla: id (egész szám, kulcs), konyv_id (egész szám, a kölcsönzött könyv azonosítója), tanulo (szöveg), osztaly (szöveg, pl. 10.A), kivetel (dátum), visszahozas (dátum; üres, ha a könyvet még nem hozták vissza).\n\nKészítsen konyvtar néven adatbázist! A lekérdezéseket a zárójelben megadott néven mentse! A lekérdezések csak a kért mezőket jelenítsék meg.\n\n1. Importálja a két táblát a megadott néven és mezőtípusokkal, állítsa be az elsődleges kulcsokat és a két tábla közötti kapcsolatot!\n2. Listázza ki az 1990 előtt kiadott könyvek címét, szerzőjét és kiadási évét a kiadás éve szerint növekvő sorrendben! (2regi)\n3. Hány krimi műfajú könyv van a könyvtárban? (3krimi)\n4. Adja meg azoknak a kölcsönzött könyveknek a címét, a kölcsönző tanuló nevét és osztályát, amelyeket még nem hoztak vissza! (4nincsvissza)\n5. Osztályonként hány kölcsönzés volt? A legtöbbet kölcsönző osztály legyen elöl! (5osztaly)\n6. Összesen hányszor kölcsönözték ki Jókai Mór könyveit? (6jokai)",
+  "points": [
+    {
+      "id": "p1",
+      "text": "1. Táblák importálása, mezőtípusok, elsődleges kulcsok, kapcsolat (3 pont)"
+    },
+    {
+      "id": "p2",
+      "text": "2. 2regi: szűrés és növekvő rendezés (2 pont)"
+    },
+    {
+      "id": "p3",
+      "text": "3. 3krimi: megszámlálás feltétellel (2 pont)"
+    },
+    {
+      "id": "p4",
+      "text": "4. 4nincsvissza: két tábla összekapcsolása, üres (NULL) mező szűrése (3 pont)"
+    },
+    {
+      "id": "p5",
+      "text": "5. 5osztaly: csoportosítás, megszámlálás, csökkenő rendezés (3 pont)"
+    },
+    {
+      "id": "p6",
+      "text": "6. 6jokai: összekapcsolás és megszámlálás szerzőre szűrve (2 pont)"
+    }
+  ],
+  "suggestedMinutes": 30,
+  "usefulPhrases": [
+    {
+      "en": "SELECT … FROM … WHERE … ORDER BY …;",
+      "hu": "a lekérdezés alapszerkezete: mezők, tábla, szűrés, rendezés"
+    },
+    {
+      "en": "INNER JOIN … ON konyv.id = kolcsonzes.konyv_id",
+      "hu": "két tábla összekapcsolása a kulcs–idegen kulcs párral"
+    },
+    {
+      "en": "IS NULL",
+      "hu": "üres (kitöltetlen) mező; = NULL-lal nem lehet vizsgálni"
+    },
+    {
+      "en": "COUNT(*) … GROUP BY osztaly",
+      "hu": "csoportonkénti megszámlálás"
+    },
+    {
+      "en": "ORDER BY COUNT(*) DESC",
+      "hu": "csökkenő sorrend az összesített érték szerint"
+    },
+    {
+      "en": "AS db",
+      "hu": "álnév: a számított oszlop fejléce"
+    },
+    {
+      "en": "Egy-a-többhöz kapcsolat",
+      "hu": "egy könyvet többször is kikölcsönözhetnek; a kapcsolat a konyv.id és a kolcsonzes.konyv_id között van"
+    },
+    {
+      "en": "Is Null (Access tervező nézet)",
+      "hu": "ugyanez a feltétel a tervezőrácsban"
+    }
+  ],
+  "checklistExtra": [],
+  "modelAnswer": {
+    "text": "Megoldás – Microsoft Access (a LibreOffice Base-ben ugyanígy, a lekérdezést SQL-nézetben is megírhatod)\n\n1. Új üres adatbázis: konyvtar.accdb. Külső adatok > Új adatforrás > Fájlból > Szövegfájl > konyv.txt; Tagolt, határoló: tabulátor, „Az első sor mezőneveket tartalmaz” bejelölve, kódolás: Unicode (UTF-8). Mezőtípusok: id, kiadas_eve: Szám (hosszú egész); cim, szerzo, mufaj: Rövid szöveg; elsődleges kulcs: id; a tábla neve: konyv. Ugyanígy a kolcsonzes.txt: id, konyv_id: Szám; tanulo, osztaly: Rövid szöveg; kivetel, visszahozas: Dátum/idő; kulcs: id. Adatbázis-eszközök > Kapcsolatok: a konyv.id mezőt a kolcsonzes.konyv_id mezőre húzom (egy-a-többhöz kapcsolat, hivatkozási integritás megőrzése).\n\n2. 2regi:\nSELECT cim, szerzo, kiadas_eve FROM konyv WHERE kiadas_eve < 1990 ORDER BY kiadas_eve;\n\n3. 3krimi:\nSELECT COUNT(*) AS db FROM konyv WHERE mufaj = 'krimi';\n\n4. 4nincsvissza:\nSELECT konyv.cim, kolcsonzes.tanulo, kolcsonzes.osztaly FROM konyv INNER JOIN kolcsonzes ON konyv.id = kolcsonzes.konyv_id WHERE kolcsonzes.visszahozas IS NULL;\n(Tervező nézetben: a visszahozas mező feltétel sorába Is Null, a megjelenítés jelölőnégyzetét kikapcsolva.)\n\n5. 5osztaly:\nSELECT osztaly, COUNT(*) AS db FROM kolcsonzes GROUP BY osztaly ORDER BY COUNT(*) DESC;\n\n6. 6jokai:\nSELECT COUNT(*) AS db FROM konyv INNER JOIN kolcsonzes ON konyv.id = kolcsonzes.konyv_id WHERE konyv.szerzo = 'Jókai Mór';\n\nMinden lekérdezést futtatok, és ellenőrzöm, hogy csak a kért mezők jelennek-e meg; a nevét a feladatban megadott módon (pl. 2regi) adom meg.",
+    "pointsCovered": [
+      {
+        "id": "p1",
+        "quote": "Adatbázis-eszközök > Kapcsolatok: a konyv.id mezőt a kolcsonzes.konyv_id mezőre húzom"
+      },
+      {
+        "id": "p2",
+        "quote": "SELECT cim, szerzo, kiadas_eve FROM konyv WHERE kiadas_eve < 1990 ORDER BY kiadas_eve;"
+      },
+      {
+        "id": "p3",
+        "quote": "SELECT COUNT(*) AS db FROM konyv WHERE mufaj = 'krimi';"
+      },
+      {
+        "id": "p4",
+        "quote": "WHERE kolcsonzes.visszahozas IS NULL;"
+      },
+      {
+        "id": "p5",
+        "quote": "SELECT osztaly, COUNT(*) AS db FROM kolcsonzes GROUP BY osztaly ORDER BY COUNT(*) DESC;"
+      },
+      {
+        "id": "p6",
+        "quote": "WHERE konyv.szerzo = 'Jókai Mór';"
+      }
+    ],
+    "notes": [
+      "A követelmények teljesítése: minden lekérdezés a megadott néven, csak a kért mezőkkel készül; az 5osztaly és a 6jokai pontosan egy-egy összesítést ad.",
+      "Szakszerű módszer: a két táblát a kulcsmezőn (konyv.id = kolcsonzes.konyv_id) kapcsolja össze, a vissza nem hozott könyveket IS NULL feltétellel szűri (az = NULL nem működne), a csoportosítást GROUP BY-jal végzi – nem kézzel számol.",
+      "Pontosság: a mezőtípusok helyesek (a dátum dátum, a szám szám), ezért a rendezés és az összehasonlítás (kiadas_eve < 1990) számként működik, nem szövegként."
+    ]
+  }
+}

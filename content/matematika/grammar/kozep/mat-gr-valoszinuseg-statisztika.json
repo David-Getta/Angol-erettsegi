@@ -1,0 +1,208 @@
+{
+  "schemaVersion": 1,
+  "id": "mat-gr-valoszinuseg-statisztika",
+  "subject": "matematika",
+  "revision": 1,
+  "level": "kozep",
+  "source": "generated",
+  "topic": "nyelvtan",
+  "title": "Valószínűség és statisztika helyes értelmezése",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "grammar",
+  "type": "lesson",
+  "category": "valoszinuseg-statisztika",
+  "summaryHu": "A valószínűségi feladatokban a fő hiba az, hogy nem egyformán valószínű kimeneteleket számolunk (pl. két kockánál 11 összeg), vagy a „legalább egy” eseményt összeadással számoljuk. Statisztikában a mediánhoz rendezni kell az adatokat, és csoportok átlagát súlyozni kell. Ez a lecke a modelleket és a jellemzőket foglalja össze.",
+  "rules": [
+    {
+      "title": "Klasszikus modell: egyformán valószínű kimenetelek",
+      "explanation": "P(A) = kedvező / összes csak akkor, ha az elemi események egyformán valószínűek. Két kockánál ezek a 36 rendezett pár, pénzérméknél a fej-írás sorozatok.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "Két kocka, összeg 8: (2;6), (3;5), (4;4), (5;3), (6;2) → 5/36",
+          "hu": "A (2;6) és a (6;2) két külön eset."
+        },
+        {
+          "en": "Három érmedobás, pontosan 2 fej: FFI, FIF, IFF → 3/8",
+          "hu": "Összesen 2³ = 8 egyformán valószínű sorozat."
+        }
+      ]
+    },
+    {
+      "title": "Komplementer és „legalább egy”",
+      "explanation": "„Legalább egy” típusú eseménynél a komplementer (egyik sem) sokszor egyszerűbb: P(legalább egy) = 1 − P(egyik sem). Az összeadás csak kizáró eseményeknél működik.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "Két kocka, legalább egy hatos: 1 − 25/36 = 11/36",
+          "hu": "Nem 1/6 + 1/6 = 12/36: a (6; 6) kétszer számolódna."
+        },
+        {
+          "en": "Visszatevéses húzás, legalább egy fehér (4 fehér, 6 fekete): 1 − (6/10)² = 0,64",
+          "hu": "Komplementer: mindkettő fekete."
+        }
+      ]
+    },
+    {
+      "title": "Középértékek: átlag, medián, módusz",
+      "explanation": "Átlag: az adatok összege osztva a számukkal. Medián: a nagyság szerint RENDEZETT adatsor középső eleme (páros számú adatnál a két középső átlaga). Módusz: a leggyakoribb érték. Csoportok közös átlaga a súlyozott átlag.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "7, 3, 9, 3, 8 → rendezve 3, 3, 7, 8, 9 → medián 7",
+          "hu": "Rendezés nélkül 9 jönne ki."
+        },
+        {
+          "en": "12 lány átlaga 4,5, 18 fiúé 4,0 → (12 · 4,5 + 18 · 4,0)/30 = 4,2",
+          "hu": "Nem (4,5 + 4,0)/2 = 4,25."
+        }
+      ]
+    },
+    {
+      "title": "Szórás",
+      "explanation": "A szórás az átlagtól való eltérések négyzetei átlagának négyzetgyöke: σ = √(Σ(xᵢ − x̄)²/n). Azt méri, mennyire szóródnak az adatok az átlag körül; mértékegysége az adatoké.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "3, 5, 7: átlag 5, eltérésnégyzetek 4, 0, 4 → σ = √(8/3) ≈ 1,63",
+          "hu": "Nem 8/3 (az a szórásnégyzet)."
+        },
+        {
+          "en": "2, 4, 4, 4, 5, 5, 7, 9: σ = 2",
+          "hu": "Az eltérésnégyzetek összege 32, 32/8 = 4."
+        }
+      ]
+    }
+  ],
+  "commonMistakes": [
+    {
+      "wrong": "Két kockánál az összeg 11-féle lehet, ezért P(összeg = 7) = 1/11.",
+      "right": "P(összeg = 7) = 6/36 = 1/6",
+      "why": "A 11 lehetséges összeg nem egyformán valószínű; a klasszikus modellhez a 36 rendezett pár kell."
+    },
+    {
+      "wrong": "A 7, 3, 9, 3, 8 adatsor mediánja 9 (a középső szám).",
+      "right": "A medián 7.",
+      "why": "A mediánhoz előbb nagyság szerint rendezni kell: 3, 3, 7, 8, 9."
+    },
+    {
+      "wrong": "P(legalább egy hatos két dobásból) = 1/6 + 1/6 = 1/3",
+      "right": "1 − (5/6)² = 11/36",
+      "why": "A két esemény nem kizáró (lehet két hatos is), ezért nem adhatók össze; komplementerrel egyszerűbb."
+    },
+    {
+      "wrong": "A két csoport átlaga (4,5 + 4,0)/2 = 4,25",
+      "right": "Súlyozott átlag: (12 · 4,5 + 18 · 4,0)/30 = 4,2",
+      "why": "Különböző létszámú csoportoknál a nagyobb csoport jobban számít."
+    }
+  ],
+  "examTips": [
+    "Az I. részben szinte mindig van egy statisztikai adatsor (átlag, medián, módusz, terjedelem, szórás) és egy egyszerű valószínűség – a rendezés és a pontos képlet a biztos pont.",
+    "A II/B-ben valószínűségnél írd le az összes és a kedvező esetek számát külön, indoklással (miért ennyi) – a javítás ezekre bontva ad pontot.",
+    "Kerekítésnél a valószínűséget a kért pontossággal add meg (pl. három tizedesjegy), de a tört alak is kerüljön a megoldásba."
+  ],
+  "practice": [
+    {
+      "id": "1",
+      "kind": "text",
+      "prompt": "Mi a 7, 3, 9, 3, 8 adatsor mediánja?",
+      "answer": [
+        "7"
+      ],
+      "category": "valoszinuseg-statisztika",
+      "explanation": "7. Nagyság szerint rendezve 3, 3, 7, 8, 9; öt adat esetén a medián a középső, a 3. adat: 7."
+    },
+    {
+      "id": "2",
+      "kind": "text",
+      "prompt": "Két szabályos kockával dobunk. Mennyi a valószínűsége, hogy legalább az egyiken hatos van?",
+      "answer": [
+        "11/36",
+        "0,306",
+        "0.306",
+        "0,31",
+        "0.31"
+      ],
+      "category": "valoszinuseg-statisztika",
+      "explanation": "11/36. A komplementer esemény (egyiken sincs hatos) 5 · 5 = 25 eset a 36-ból, így 1 − 25/36 = 11/36 ≈ 0,306."
+    },
+    {
+      "id": "3",
+      "kind": "choice",
+      "prompt": "Mennyi a 3, 5, 7 adatsor szórása?",
+      "options": [
+        {
+          "key": "A",
+          "text": "√(8/3) ≈ 1,63"
+        },
+        {
+          "key": "B",
+          "text": "2"
+        },
+        {
+          "key": "C",
+          "text": "8/3"
+        },
+        {
+          "key": "D",
+          "text": "4"
+        }
+      ],
+      "answer": "A",
+      "category": "valoszinuseg-statisztika",
+      "explanation": "A helyes: √(8/3) ≈ 1,63. Az átlag 5, az eltérésnégyzetek 4, 0, 4, átlaguk 8/3, és a szórás ennek négyzetgyöke.",
+      "wrongOptions": {
+        "B": "A 2 az átlagtól való legnagyobb eltérés, nem a szórás.",
+        "C": "A 8/3 a szórásnégyzet; a szóráshoz gyököt kell vonni.",
+        "D": "A 4 a terjedelem (7 − 3)."
+      }
+    },
+    {
+      "id": "4",
+      "kind": "text",
+      "prompt": "Egy osztályban 12 lány dolgozatátlaga 4,5, a 18 fiúé 4,0. Mennyi az osztály átlaga?",
+      "answer": [
+        "4,2",
+        "4.2"
+      ],
+      "category": "valoszinuseg-statisztika",
+      "explanation": "4,2. Súlyozott átlag: (12 · 4,5 + 18 · 4,0)/30 = (54 + 72)/30 = 126/30 = 4,2. A 4,25 hibás, mert a két csoport létszáma különböző."
+    },
+    {
+      "id": "5",
+      "kind": "choice",
+      "prompt": "Egy szabályos pénzérmét háromszor feldobunk. Mennyi a valószínűsége, hogy pontosan két fejet dobunk?",
+      "options": [
+        {
+          "key": "A",
+          "text": "1/4"
+        },
+        {
+          "key": "B",
+          "text": "3/8"
+        },
+        {
+          "key": "C",
+          "text": "2/3"
+        },
+        {
+          "key": "D",
+          "text": "1/8"
+        }
+      ],
+      "answer": "B",
+      "category": "valoszinuseg-statisztika",
+      "explanation": "A helyes: 3/8. Az összes kimenetel 2³ = 8 egyformán valószínű sorozat; pontosan két fej: FFI, FIF, IFF – 3 eset.",
+      "wrongOptions": {
+        "A": "Az 1/4 = (1/2)² csak két megadott dobásra igaz, és nem veszi figyelembe a harmadikat és a sorrendeket.",
+        "C": "A 2/3 a fejek számának aránya a dobásokhoz, nem valószínűség.",
+        "D": "Az 1/8 egyetlen adott sorrend (pl. FFI) valószínűsége; három ilyen sorrend van."
+      }
+    }
+  ],
+  "relatedCategories": [
+    "kepletek",
+    "szoveges-ertelmezes"
+  ]
+}

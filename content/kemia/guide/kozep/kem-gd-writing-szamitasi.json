@@ -1,0 +1,140 @@
+{
+  "schemaVersion": 1,
+  "id": "kem-gd-writing-szamitasi",
+  "subject": "kemia",
+  "revision": 1,
+  "level": "kozep",
+  "source": "generated",
+  "topic": "utmutato",
+  "title": "Számítási feladat",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "guide",
+  "type": "writing",
+  "target": "szamitasi",
+  "summaryHu": "A számítási feladat egy kémiai helyzetet (reakció, oldat, gáz, elektrolízis, egyensúly) ír le 2–5 részkérdéssel. A javító a helyes (rész)eredményeket, a megoldás menetét és indoklását, a számolási pontosságot, valamint a szöveges választ és a mértékegységet értékeli. A jó megoldás olvasható: minden lépésnél ott a felhasznált összefüggés, a behelyettesítés és az eredmény mértékegységgel.",
+  "steps": [
+    {
+      "title": "1. Adatok és cél",
+      "explanation": "Írd ki az adatokat mértékegységgel (m, V, c, w, ρ, Ar), és fogalmazd meg, mi a kérdés. Nézd meg, milyen pontosságot kér a feladat.",
+      "tips": [
+        "A sűrűség szinte mindig térfogat ↔ tömeg átváltáshoz kell.",
+        "A kristályvizet jelölő „· 5 H₂O” a moláris tömegbe is beletartozik."
+      ]
+    },
+    {
+      "title": "2. Rendezett egyenlet",
+      "explanation": "Írd fel a lejátszódó reakció(k) rendezett egyenletét. Ebből olvasod ki az anyagmennyiség-arányokat; ezért akkor is írd fel, ha a feladat külön nem kéri.",
+      "tips": [
+        "Ellenőrizd elemenként az atomszámot.",
+        "Elektrolízisnél írd fel külön a katód- és az anódfolyamatot."
+      ]
+    },
+    {
+      "title": "3. Átszámítás mólra és arányítás",
+      "explanation": "Az adott mennyiséget számold át anyagmennyiségre (n = m/M, n = V/Vm, n = c · V, n(e⁻) = Q/F), majd az egyenlet arányával számold ki a keresett anyag anyagmennyiségét. Két kiindulási anyagnál előbb döntsd el, melyik van feleslegben.",
+      "tips": [
+        "Írd ki: „Az egyenlet szerint 1 mol Mg-ból 1 mol H₂ keletkezik.”",
+        "A részeredményeket 4 értékes jeggyel vidd tovább."
+      ]
+    },
+    {
+      "title": "4. Visszaszámítás, kerekítés, szöveges válasz",
+      "explanation": "Számold vissza a kért mennyiségre (tömeg, térfogat, tömegszázalék, pH), kerekíts a kért pontosságra, és fogalmazz meg egy mondatos választ mértékegységgel.",
+      "tips": [
+        "Oldatnál a végső oldat tömegéből vond le a távozó gázt.",
+        "Ellenőrizd: reális-e az eredmény?"
+      ]
+    }
+  ],
+  "phrases": [
+    {
+      "group": "Alapösszefüggés",
+      "en": "n = m / M",
+      "hu": "Tömegből anyagmennyiség."
+    },
+    {
+      "group": "Alapösszefüggés",
+      "en": "V = n · Vm (24,5 dm³/mol)",
+      "hu": "Gázok térfogata standardállapotban."
+    },
+    {
+      "group": "Oldatok",
+      "en": "c = n / V; w = m(oldott) / m(oldat) · 100 %",
+      "hu": "Koncentráció, tömegszázalék."
+    },
+    {
+      "group": "Oldatok",
+      "en": "m₁w₁ + m₂w₂ = (m₁ + m₂)w₃",
+      "hu": "Keverési egyenlet."
+    },
+    {
+      "group": "Gázelegy",
+      "en": "M(átlag) = x₁M₁ + x₂M₂; ρrel = M / M(viszonyító gáz)",
+      "hu": "Gázelegyek összetétele relatív sűrűségből."
+    },
+    {
+      "group": "Termokémia",
+      "en": "ΔrH = Σ ΔkH(termékek) − Σ ΔkH(kiindulási anyagok)",
+      "hu": "Reakcióhő képződéshőkből."
+    },
+    {
+      "group": "pH",
+      "en": "pH = −lg[H₃O⁺]; pH + pOH = 14",
+      "hu": "Erős savak és bázisok, közömbösítés."
+    },
+    {
+      "group": "Elektrokémia",
+      "en": "n(e⁻) = I · t / F; n(anyag) = n(e⁻) / z",
+      "hu": "Faraday-törvény."
+    },
+    {
+      "group": "Egyensúly",
+      "en": "kiindulás – átalakulás – egyensúly; K = …",
+      "hu": "Egyensúlyi feladatok táblázata (emelt)."
+    }
+  ],
+  "mistakes": [
+    {
+      "wrong": "A tömegszázalékot a víz tömegére számolja.",
+      "right": "Az oldat teljes tömegére számolja.",
+      "why": "w = m(oldott anyag) / m(oldat); az oldat tömege tartalmazza az oldott anyagot is."
+    },
+    {
+      "wrong": "Az együtthatókat tömegarányként használja.",
+      "right": "Az együtthatók anyagmennyiség-arányt jelentenek.",
+      "why": "Tömegből előbb mólt kell számolni, csak utána lehet arányítani."
+    },
+    {
+      "wrong": "A felesleget nem vizsgálja, a terméket a feleslegben lévő anyagból számolja.",
+      "right": "Megállapítja, melyik anyag fogy el, és abból számol.",
+      "why": "A termék mennyiségét mindig az elfogyó (limitáló) anyag szabja meg."
+    },
+    {
+      "wrong": "Közben durván kerekít (0,2 helyett 0,1998 → 0,2 → …).",
+      "right": "A részeredményeket pontosabban viszi tovább, és csak a végén kerekít.",
+      "why": "A korai kerekítés a végeredményben számottevő eltérést okozhat."
+    }
+  ],
+  "checklist": [
+    "Rendezett egyenlettel kezdtem?",
+    "Minden lépésnél leírtam az összefüggést?",
+    "A felesleget megvizsgáltam?",
+    "A mértékegységek egyeznek (cm³ → dm³, perc → s)?",
+    "A végeredmény a kért pontosságú, és szöveges válasz zárja?"
+  ],
+  "timing": "Középszinten egy számítási feladatra kb. 25 perc jut, emelt szinten egy egyszerűbbre kb. 30, egy összetettre kb. 40 perc. Ha 5 percig nem jutsz előre, írd le, amit tudsz (egyenlet, átszámítás mólra), és lépj tovább – ezekért is jár pont.",
+  "example": {
+    "title": "Minta: oldat és gázfejlődés (részlet)",
+    "text": "Mg + 2 HCl → MgCl₂ + H₂\nn(Mg) = 4,86 g / 24,3 g/mol = 0,200 mol → n(H₂) = 0,200 mol\nV(H₂) = 0,200 mol · 24,5 dm³/mol = 4,90 dm³\nStandardállapotban 4,90 dm³ hidrogén fejlődik.",
+    "notes": [
+      "Az első sor a rendezett egyenlet – ebből jön az 1 : 1 arány.",
+      "Minden sorban ott az összefüggés, a behelyettesítés és a mértékegység.",
+      "Az utolsó sor a szöveges válasz – erre külön pont jár."
+    ]
+  },
+  "levelNotes": {
+    "kozep": "Középszinten a sztöchiometria, az oldatkészítés (tömegszázalék, koncentráció, kristályvizes sók), a hígítás és az egyszerű gázszámítás a leggyakoribb.",
+    "emelt": "Emelt szinten összetett feladatok jönnek: gázelegyek, termokémia, pH (erős és gyenge savak, közömbösítés), elektrolízis, egyensúly, képletmeghatározás; több részeredmény épül egymásra."
+  }
+}

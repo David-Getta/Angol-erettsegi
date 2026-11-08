@@ -1,0 +1,118 @@
+{
+  "schemaVersion": 1,
+  "id": "fol-rd-kozep-magyarorszag-tajak",
+  "subject": "foldrajz",
+  "revision": 1,
+  "level": "kozep",
+  "source": "generated",
+  "topic": "magyarorszag",
+  "title": "Magyarország tájai és vizei leírás alapján",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "reading",
+  "type": "topografia",
+  "instructions": "Nevezze meg a leírások alapján Magyarország tájait és vizeit! Írja a földrajzi nevet a kijelölt helyre! A 0. a megoldott példa.",
+  "example": {
+    "id": "0",
+    "kind": "text",
+    "prompt": "Az Északi-középhegység vulkáni eredetű tagja; itt emelkedik hazánk legmagasabb pontja, a Kékes (1014 m).",
+    "answer": ["Mátra"],
+    "maxWords": 3,
+    "category": "helymeghatarozas",
+    "explanation": "Mátra: andezitből álló vulkáni középhegység Gyöngyös és Eger között; a Kékes (1014 m) Magyarország legmagasabb pontja."
+  },
+  "items": [
+    {
+      "id": "1",
+      "kind": "text",
+      "prompt": "Közép-Európa legnagyobb tava (kb. 600 km²), sekély, a Dunántúl közepén fekszik; északi partját vulkáni tanúhegyek kísérik.",
+      "answer": ["Balaton"],
+      "maxWords": 3,
+      "category": "helymeghatarozas",
+      "explanation": "Balaton: a „magyar tenger”, Közép-Európa legnagyobb tava (kb. 594 km²), átlagos mélysége csak 3 m; északi partján a Badacsony és a többi bazalt tanúhegy áll."
+    },
+    {
+      "id": "2",
+      "kind": "text",
+      "prompt": "A Dunántúli-középhegység legnagyobb, főként mészkőből és dolomitból álló tagja; bauxit- és mangánérc-lelőhelyek, délkeleti peremén Veszprém városa.",
+      "answer": ["Bakony", "Bakony-hegység"],
+      "maxWords": 3,
+      "category": "helymeghatarozas",
+      "explanation": "Bakony: a Dunántúli-középhegység legnagyobb kiterjedésű tagja; karsztos mészkő- és dolomitfelszín, a trópusi mállásból keletkezett bauxit (Halimba, Nyirád) és mangánérc (Úrkút) lelőhelyeivel."
+    },
+    {
+      "id": "3",
+      "kind": "text",
+      "prompt": "Közép-Európa legnagyobb összefüggő füves pusztája, szikes legelőkkel; 1973-ban hazánk első nemzeti parkja lett, Debrecentől nyugatra fekszik.",
+      "answer": ["Hortobágy", "Hortobágyi Nemzeti Park"],
+      "maxWords": 3,
+      "category": "helymeghatarozas",
+      "explanation": "Hortobágy: a Tisza egykori árterén kialakult szikes puszta a Tiszántúl északi részén; a Hortobágyi Nemzeti Park (1973) hazánk első nemzeti parkja, a világörökség része."
+    },
+    {
+      "id": "4",
+      "kind": "text",
+      "prompt": "Két nagy folyónk közötti, futóhomokkal fedett hátság; homoki szőlő- és gyümölcstermesztés jellemzi, központja Kecskemét.",
+      "answer": ["Duna–Tisza köze", "Duna–Tisza közi hátság", "Duna–Tisza közi homokhátság", "Kiskunság", "Homokhátság"],
+      "maxWords": 3,
+      "category": "helymeghatarozas",
+      "explanation": "Duna–Tisza köze (Homokhátság, Kiskunság): a Duna hordalékából a szél által kifújt futóhomokkal borított hátság; a homokon szőlőt, barackot termesztenek, központja Kecskemét."
+    },
+    {
+      "id": "5",
+      "kind": "text",
+      "prompt": "Hazánk legcsapadékosabb tája az ország nyugati határán; ide tartozik a Kőszegi- és a Soproni-hegység, itt emelkedik a Dunántúl legmagasabb pontja, az Írott-kő (882 m).",
+      "answer": ["Alpokalja", "Nyugat-magyarországi peremvidék", "Nyugat-magyarországi-peremvidék"],
+      "maxWords": 3,
+      "category": "helymeghatarozas",
+      "explanation": "Alpokalja (Nyugat-magyarországi peremvidék): az Alpok keleti előtere; az óceáni hatás miatt itt esik a legtöbb csapadék (800 mm felett), a Kőszegi-hegységben álló Írott-kő (882 m) a Dunántúl legmagasabb pontja."
+    },
+    {
+      "id": "6",
+      "kind": "text",
+      "prompt": "A Dunántúl déli részén emelkedő, egykor feketekőszén-bányászatáról ismert középhegység; déli lábánál Pécs városa fekszik.",
+      "answer": ["Mecsek", "Mecsek-hegység"],
+      "maxWords": 3,
+      "category": "helymeghatarozas",
+      "explanation": "Mecsek: a Dunántúl déli, szigetszerű középhegysége; a jura kori feketekőszenet Pécs és Komló környékén bányászták, a hegység déli lába alatt fekszik Pécs."
+    },
+    {
+      "id": "7",
+      "kind": "text",
+      "prompt": "Az Északi-középhegység mészkőből álló karsztvidéke a szlovák határon; itt nyílik hazánk legismertebb cseppkőbarlangja, a Baradla; a világörökség része.",
+      "answer": ["Aggteleki-karszt", "Aggtelek", "Aggteleki-hegység", "Gömör–Tornai-karszt"],
+      "maxWords": 3,
+      "category": "helymeghatarozas",
+      "explanation": "Aggteleki-karszt: a Gömör–Tornai-karszt magyarországi része; a mészkő oldódásával (karsztosodás) keletkezett a Baradla-barlang, amely a szlovákiai barlangokkal együtt a világörökség része."
+    },
+    {
+      "id": "8",
+      "kind": "text",
+      "prompt": "Hazánk legnagyobb átlagmagasságú hegysége Miskolc és Eger között; mészkőfennsíkja és bükkösei nemzeti parkot alkotnak.",
+      "answer": ["Bükk", "Bükk-hegység"],
+      "maxWords": 3,
+      "category": "helymeghatarozas",
+      "explanation": "Bükk: mészkőből felépülő, fennsíkos középhegység (Bükk-fennsík), amelynek átlagmagassága a legnagyobb hazánkban; karsztjelenségek (barlangok, források), Bükki Nemzeti Park."
+    },
+    {
+      "id": "9",
+      "kind": "text",
+      "prompt": "Az Alföld északkeleti részén fekvő, futóhomokkal borított táj; almatermesztéséről ismert, központja Nyíregyháza.",
+      "answer": ["Nyírség"],
+      "maxWords": 3,
+      "category": "helymeghatarozas",
+      "explanation": "Nyírség: a Tisza egykori hordalékkúpján a szél által formált, futóhomokos táj az Alföld északkeleti részén; alma-, burgonya- és dohánytermesztés, központja Nyíregyháza."
+    },
+    {
+      "id": "10",
+      "kind": "text",
+      "prompt": "Közép-Európa legnyugatibb sztyepptava: sekély, nádasokkal borított, Sopron közelében fekszik, Ausztriával közös; környéke világörökségi kultúrtáj.",
+      "answer": ["Fertő", "Fertő tó", "Fertő-tó"],
+      "maxWords": 3,
+      "category": "helymeghatarozas",
+      "explanation": "Fertő (Fertő tó): a Kisalföld nyugati peremén fekvő, átlagosan 1 m mély sztyepptó; területének nagyobb része Ausztriához tartozik, a Fertő / Neusiedlersee kultúrtáj világörökség."
+    }
+  ],
+  "glossary": [],
+  "suggestedMinutes": 8
+}

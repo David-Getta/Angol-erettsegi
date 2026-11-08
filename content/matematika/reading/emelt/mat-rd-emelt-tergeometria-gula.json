@@ -1,0 +1,106 @@
+{
+  "schemaVersion": 1,
+  "id": "mat-rd-emelt-tergeometria-gula",
+  "subject": "matematika",
+  "revision": 1,
+  "level": "emelt",
+  "source": "generated",
+  "topic": "tergeometria",
+  "title": "Négyzet alapú szabályos gúla",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "reading",
+  "type": "rovid-szamitas",
+  "instructions": "Egy négyzet alapú szabályos gúla alapéle 10 cm, testmagassága 12 cm. A feladat részkérdésekből áll (a–f); mindegyiknél csak az eredményt írd be, a kért pontossággal. A 0. kérdés a kidolgozott példa.",
+  "example": {
+    "id": "0",
+    "kind": "text",
+    "prompt": "Mekkora a gúla alaplapjának területe?",
+    "answer": [
+      "100",
+      "100 cm²",
+      "100 cm2"
+    ],
+    "category": "kepletek",
+    "explanation": "Az alaplap 10 cm oldalú négyzet: T = a² = 10² = 100 cm²."
+  },
+  "items": [
+    {
+      "id": "1",
+      "kind": "text",
+      "prompt": "a) Mekkora az oldallapok magassága (az oldallapháromszögek alaphoz tartozó magassága)?",
+      "answer": [
+        "13",
+        "13 cm"
+      ],
+      "category": "geometria-osszefuggesek",
+      "explanation": "A testmagasság, az alapél felének megfelelő szakasz (5 cm) és az oldallap magassága derékszögű háromszöget alkot: mₒ = √(12² + 5²) = √169 = 13 cm."
+    },
+    {
+      "id": "2",
+      "kind": "text",
+      "prompt": "b) Mekkora a gúla felszíne?",
+      "answer": [
+        "360",
+        "360 cm²",
+        "360 cm2"
+      ],
+      "category": "kepletek",
+      "explanation": "A = alaplap + 4 oldallap = 100 + 4·(10·13/2) = 100 + 260 = 360 cm². Az oldallapnál az oldallap magasságával (13), nem a testmagassággal (12) kell számolni."
+    },
+    {
+      "id": "3",
+      "kind": "text",
+      "prompt": "c) Mekkora a gúla térfogata?",
+      "answer": [
+        "400",
+        "400 cm³",
+        "400 cm3"
+      ],
+      "category": "kepletek",
+      "explanation": "V = T·m/3 = 100·12/3 = 400 cm³. A 3-mal osztás kötelező: az azonos alapú és magasságú hasáb térfogata lenne 1200 cm³."
+    },
+    {
+      "id": "4",
+      "kind": "text",
+      "prompt": "d) Milyen hosszú a gúla oldaléle? (Két tizedesjegyre kerekítve.)",
+      "answer": [
+        "13,93",
+        "13.93",
+        "13,93 cm",
+        "13.93 cm"
+      ],
+      "category": "geometria-osszefuggesek",
+      "explanation": "Az oldalél, a testmagasság és az alaplap átlójának fele (5√2 ≈ 7,07 cm) derékszögű háromszöget alkot: él = √(12² + (5√2)²) = √(144 + 50) = √194 ≈ 13,93 cm."
+    },
+    {
+      "id": "5",
+      "kind": "text",
+      "prompt": "e) Mekkora szöget zár be egy oldallap az alaplappal? (Fokban, egy tizedesjegyre kerekítve.)",
+      "answer": [
+        "67,4",
+        "67.4",
+        "67,4°",
+        "67.4°"
+      ],
+      "category": "mertekegyseg-kerekites",
+      "explanation": "A hajlásszög az oldallap magassága és az alaplap középpontját az alapél felezőpontjával összekötő 5 cm-es szakasz szöge; a testmagassággal alkotott derékszögű háromszögben tg α = 12/5 = 2,4, így α ≈ 67,4°. (Az oldalél hajlásszöge más: tg β = 12/(5√2), β ≈ 59,5°.)"
+    },
+    {
+      "id": "6",
+      "kind": "text",
+      "prompt": "f) Mekkora a gúlába írható gömb sugara? (Két tizedesjegyre kerekítve.)",
+      "answer": [
+        "3,33",
+        "3.33",
+        "10/3",
+        "3,33 cm",
+        "3.33 cm"
+      ],
+      "category": "kepletek",
+      "explanation": "A beírt gömb sugara r = 3V/A = 3·400/360 = 10/3 ≈ 3,33 cm (a gúlát a gömb középpontjából a lapokra emelt gúlákra bontva V = A·r/3). Ellenőrzés síkmetszettel: a 10, 13, 13 oldalú háromszög beírt körének sugara T/s = 60/18 = 10/3."
+    }
+  ],
+  "glossary": [],
+  "suggestedMinutes": 20
+}

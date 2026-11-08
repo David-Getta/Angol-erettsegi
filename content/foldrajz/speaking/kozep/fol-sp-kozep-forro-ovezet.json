@@ -1,0 +1,82 @@
+{
+  "schemaVersion": 1,
+  "id": "fol-sp-kozep-forro-ovezet",
+  "subject": "foldrajz",
+  "revision": 1,
+  "level": "kozep",
+  "source": "generated",
+  "topic": "ovezetesseg",
+  "title": "A forró övezet: esőerdő, szavanna, sivatag",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "speaking",
+  "type": "termeszetfoldrajz-tetel",
+  "partNumber": 1,
+  "instructionsHu": "Mutassa be a forró övezet öveit (egyenlítői, átmeneti, térítői öv), éghajlatukat, növényzetüket és talajukat! Használja a mellékelt éghajlati adatokat és az atlaszt!",
+  "prompts": [
+    "Mi okozza a három öv eltérő éghajlatát (napállás, légnyomásövek, szelek)?",
+    "Hasonlítsa össze a három öv természetes növénytakaróját és talaját!",
+    "Milyen környezeti problémák jellemzik az övezetet (esőerdőirtás, elsivatagosodás)?",
+    "Topográfia: mutassa meg az Amazonas-medencét, a Kongó-medencét, a Száhelt, a Szaharát és a Kalahárit!"
+  ],
+  "followUpQuestions": [
+    "Miért terméketlen az esőerdő talaja, ha ilyen dús rajta a növényzet?",
+    "Mi a különbség a Szahara és a Namíb sivatag kialakulásának oka között?"
+  ],
+  "usefulPhrases": [
+    {
+      "en": "zenitális eső",
+      "hu": "a delelő Nap okozta erős felmelegedés és feláramlás miatti délutáni zápor"
+    },
+    {
+      "en": "passzát szél",
+      "hu": "a térítői magas nyomású övből az Egyenlítő felé fújó állandó szél"
+    },
+    {
+      "en": "szavanna",
+      "hu": "füves terület elszórt fákkal, esős és száraz évszakkal"
+    },
+    {
+      "en": "laterit (vörösföld)",
+      "hu": "a forró, nedves övezet vas- és alumínium-oxidokban gazdag, terméketlen talaja"
+    },
+    {
+      "en": "elsivatagosodás",
+      "hu": "a sivatagszegély területek emberi és éghajlati okokból bekövetkező pusztulása"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Három éghajlati állomás adatai",
+      "text": "A állomás: minden hónap középhőmérséklete 26–28 °C, évi csapadék kb. 2300 mm, minden hónapban 120 mm feletti. B állomás: havi középhőmérséklet 23–31 °C, évi csapadék kb. 800 mm, amelynek nagy része négy nyári hónapban hullik, a téli félév szinte csapadékmentes. C állomás: a legmelegebb hónap középhőmérséklete 35 °C, a leghidegebbé 13 °C, évi csapadék 20 mm alatt."
+    },
+    {
+      "title": "Térképvázlat (leírás)",
+      "text": "Az Afrikát ábrázoló vázlaton az Egyenlítő mentén sötétzöld sáv (esőerdő), attól északra és délre világoszöld (szavanna), majd sárga (sivatag) területek láthatók. A szavanna és a Szahara határán húzódó sávot a Száhel-övezetként jelölték."
+    }
+  ],
+  "keyPoints": [
+    "A forró övezet a két térítő között fekszik; a Nap egész évben magasan delel, ezért mindig meleg van.",
+    "Egyenlítői öv (A): egész évben magas napállás, feláramlás, alacsony nyomás → mindennapos zenitális eső; esőerdő, vörös, kilúgozott talaj (laterit).",
+    "Átmeneti öv / szavanna (B): magas napálláskor esős, alacsony napálláskor száraz évszak; füves terület elszórt fákkal, vörösföld.",
+    "Térítői öv / sivatag (C): leszálló légáramlás, magas nyomás, passzát → szárazság, nagy napi hőingás; sivatagi váztalaj.",
+    "A biológiai sokféleség az esőerdőben a legnagyobb, de a talaj terméketlen, ezért az irtás után gyorsan kimerül.",
+    "Esőerdőirtás (fakitermelés, legelők, szója- és olajpálma-ültetvények) és elsivatagosodás (túllegeltetés – főleg a kutak körül –, fakivágás tűzifának a Száhelben).",
+    "Topográfia: Amazonas-medence, Kongó-medence, Száhel, Szahara, Kalahári."
+  ],
+  "speakingSeconds": 420,
+  "prepSeconds": 900,
+  "sampleAnswer": {
+    "turns": [
+      {
+        "speaker": "candidate",
+        "text": "A forró övezet a Ráktérítő és a Baktérítő között helyezkedik el, itt a Nap egész évben magasan delel, ezért a hőmérséklet mindig magas. Az övezet három övre tagolódik. Az A állomás adatai az egyenlítői övre jellemzők: minden hónap 26–28 °C-os, és mindegyikben sok eső hullik. Az erős felmelegedés miatt a nedves levegő feláramlik, lehűl, és szinte minden délután zenitális eső esik. Itt nő az esőerdő, a Föld legfajgazdagabb életközössége, többszintes lombkoronával. A talaj mégis terméketlen vörös laterit, mert a bő csapadék kimossa a tápanyagokat, és a tápanyag a növényekben van. A térképen megmutatom az Amazonas- és a Kongó-medencét. A B állomás a szavannát mutatja: a nyári, magas napállású hónapokban az egyenlítői esőzóna ideér, ezért esős évszak van, télen viszont a passzát száraz levegője uralkodik. Ezért füves terület alakult ki elszórt fákkal, például akáciákkal és majomkenyérfával. A C állomás a térítői öv sivatagja: a leszálló légáramlás miatt nem képződik felhő, évente 20 mm alatti csapadék hullik, a nappalok forrók, az éjszakák hűvösek. Ilyen a Szahara; a déli félgömbön, a Baktérítő mentén fekvő Kalahári ennél csapadékosabb, félsivatagos medence. A legnagyobb gondot az esőerdőirtás jelenti: a fakitermelés, a legelők és az ültetvények miatt pusztul az erdő, a talaj kimerül, csökken a fajgazdagság. A Száhelben, a szavanna és a Szahara határán a túllegeltetés és a fakivágás aszályokkal együtt elsivatagosodást okoz."
+      }
+    ],
+    "notes": [
+      "Mindhárom övet a forrás adataiból azonosítja, és az éghajlatot ok–okozatilag (napállás, feláramlás, leszálló légáramlás) magyarázza.",
+      "Az éghajlatot összekapcsolja a növényzettel és a talajjal, ami az övezetesség lényege; a laterit terméketlenségét is helyesen indokolja.",
+      "A környezeti problémákat konkrét térséghez köti (Amazonas, Száhel), a topográfiai elemeket a térképen is megmutatja."
+    ]
+  }
+}

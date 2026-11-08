@@ -1,0 +1,168 @@
+{
+  "schemaVersion": 1,
+  "id": "rd-kozep-lightning-facts-headings",
+  "subject": "angol",
+  "revision": 1,
+  "level": "kozep",
+  "source": "generated",
+  "topic": "tudomany",
+  "title": "What do you know about lightning?",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "reading",
+  "type": "headings",
+  "instructions": "Read the article about lightning. Choose the most suitable heading (A–J) for each paragraph (1–7). There are two extra headings that you do not need to use. There is an example (0) at the beginning.",
+  "instructionsHu": "Olvasd el a villámokról szóló cikket, és válaszd ki minden bekezdéshez (1–7) a legmegfelelőbb címet (A–J). Két cím felesleges. A 0. a példa.",
+  "passage": {
+    "title": "What do you know about lightning?",
+    "subtitle": "A little science for stormy summer days",
+    "blocks": [
+      {
+        "gap": "0",
+        "text": "Lightning is really a giant electric spark. Inside a storm cloud, millions of tiny pieces of ice crash into each other as strong winds carry them up and down. This creates electricity, which slowly builds up in the cloud. When there is too much, it suddenly jumps – sometimes to another cloud, sometimes down to the ground."
+      },
+      {
+        "gap": "1",
+        "text": "A lightning bolt is only two or three centimetres wide, but it is unbelievably hot. For less than a second, the air around it reaches about 30,000 °C, which is five times hotter than the surface of the Sun. The air heats up so quickly that it explodes outwards, and that explosion is the sound we hear as thunder."
+      },
+      {
+        "gap": "2",
+        "text": "Because light travels much faster than sound, we always see the flash before we hear the thunder. You can use this fact to find out where a storm is. Count the seconds between the flash and the thunder, then divide the number by three. The result is the distance in kilometres, so if you count fifteen seconds, the storm is about five kilometres away."
+      },
+      {
+        "gap": "3",
+        "text": "Many people believe that lightning never strikes the same place twice. This is simply not true. Tall buildings are hit again and again: the Empire State Building in New York, for example, is struck about twenty times a year. Lightning usually takes the shortest way to the ground, which is often through the highest point in the area."
+      },
+      {
+        "gap": "4",
+        "text": "So what should you do if you are outside when a storm begins? The safest places are buildings and cars with a metal roof. Never stand under a lonely tree, and keep away from lakes, rivers and hilltops. Experts have an easy rule to remember: 'When thunder roars, go indoors.' After the last thunder, wait thirty minutes before you go outside again."
+      },
+      {
+        "gap": "5",
+        "text": "Being hit by lightning is very rare, and about nine out of ten people who are hit survive. However, many of them have health problems for years afterwards, for example with memory or sleep. Some survivors also get strange red marks on their skin that look like the branches of a tree. These 'lightning flowers' usually disappear after a few days."
+      },
+      {
+        "gap": "6",
+        "text": "Lightning does not happen equally often everywhere. The place with the most lightning in the world is Lake Maracaibo in Venezuela, where there are storms on nearly 300 nights a year. Sailors even used the flashes to find their way across the lake at night. In Hungary, lightning is most common between May and August, usually in the late afternoon."
+      },
+      {
+        "gap": "7",
+        "text": "Today, scientists can follow almost every flash on Earth. Sensors on the ground and satellites in space record where and when lightning strikes, and the information appears on free websites and phone apps within seconds. Some people dream of using the energy of lightning in our homes, but this is not possible yet: a bolt is too short, and nobody knows where the next one will hit."
+      }
+    ]
+  },
+  "options": [
+    { "key": "A", "text": "Work out how far away it is" },
+    { "key": "B", "text": "Some places get much more than others" },
+    { "key": "C", "text": "Staying safe when a storm comes" },
+    { "key": "D", "text": "Free energy for our homes" },
+    { "key": "E", "text": "How a flash is born" },
+    { "key": "F", "text": "Technology that follows every flash" },
+    { "key": "G", "text": "Life after a lightning strike" },
+    { "key": "H", "text": "Hotter than you can imagine" },
+    { "key": "I", "text": "Animals that know a storm is coming" },
+    { "key": "J", "text": "An old saying that is wrong" }
+  ],
+  "example": {
+    "id": "0",
+    "kind": "match",
+    "answer": "E",
+    "category": "gist",
+    "explanation": "E. A bekezdés azt magyarázza el, hogyan keletkezik a villám: a viharfelhőben a jégdarabkák ütköznek, felgyűlik az elektromosság, majd hirtelen átugrik egy másik felhőbe vagy a földre. Ezért illik hozzá a „How a flash is born” (Hogyan születik egy villanás) cím.",
+    "evidence": "This creates electricity, which slowly builds up in the cloud."
+  },
+  "items": [
+    {
+      "id": "1",
+      "kind": "match",
+      "answer": "H",
+      "category": "gist",
+      "explanation": "H. A bekezdés fő gondolata a villám hihetetlen hője: a levegő körülötte kb. 30 000 °C-ra hevül, ami ötször melegebb a Nap felszínénél – a mennydörgés is ebből a hirtelen felmelegedésből lesz. Ezért H: „Hotter than you can imagine” (Melegebb, mint gondolnád).",
+      "evidence": "it is unbelievably hot",
+      "wrongOptions": {
+        "E": "Csábító, mert a bekezdés is elmagyaráz egy folyamatot (hogyan lesz a mennydörgés), de a villám keletkezéséről a 0. bekezdés szól; itt a fő gondolat a hőség."
+      }
+    },
+    {
+      "id": "2",
+      "kind": "match",
+      "answer": "A",
+      "category": "gist",
+      "explanation": "A. A bekezdés egy egyszerű módszert tanít: számold meg a villámlás és a mennydörgés közötti másodperceket, oszd el hárommal, és megkapod a vihar távolságát kilométerben. Ezért A: „Work out how far away it is” (Számold ki, milyen messze van).",
+      "evidence": "Count the seconds between the flash and the thunder, then divide the number by three.",
+      "wrongOptions": {
+        "C": "A vihar távolsága összefügg a biztonsággal, de ez a bekezdés nem mondja meg, mit tegyél vihar idején, csak azt, hogyan számold ki, milyen messze van."
+      }
+    },
+    {
+      "id": "3",
+      "kind": "match",
+      "answer": "J",
+      "category": "gist",
+      "explanation": "J. A bekezdés egy közismert mondást cáfol (a villám sosem csap kétszer ugyanoda): ez egyszerűen nem igaz, az Empire State Buildingbe például évente kb. hússzor csap bele. Ezért J: „An old saying that is wrong” (Egy régi mondás, amely téves).",
+      "evidence": "This is simply not true.",
+      "wrongOptions": {
+        "B": "Csábító, mert arról is szó van, hogy a magas épületekbe gyakran csap a villám, de a B cím földrajzi helyekről szól (hol villámlik többet, hol kevesebbet), és ez a 6. bekezdés témája."
+      }
+    },
+    {
+      "id": "4",
+      "kind": "match",
+      "answer": "C",
+      "category": "gist",
+      "explanation": "C. A bekezdés tanácsokat ad arra az esetre, ha a szabadban ér a vihar: menj épületbe vagy fémtetős autóba, ne állj magányos fa alá, kerüld a vizet és a dombtetőket. Ezért C: „Staying safe when a storm comes” (Biztonságban, amikor jön a vihar).",
+      "evidence": "The safest places are buildings and cars with a metal roof.",
+      "wrongOptions": {
+        "G": "A villámcsapást túlélőkről az 5. bekezdés szól; ez a bekezdés arról, hogyan kerülheted el, hogy egyáltalán eltaláljon a villám."
+      }
+    },
+    {
+      "id": "5",
+      "kind": "match",
+      "answer": "G",
+      "category": "gist",
+      "explanation": "G. A bekezdés arról szól, mi történik azokkal, akiket eltalál a villám: tízből kilenc túléli, de sokuknak évekig vannak egészségügyi problémái (memória, alvás), és faágakhoz hasonló piros minták jelenhetnek meg a bőrükön. Ezért G: „Life after a lightning strike” (Élet a villámcsapás után).",
+      "evidence": "many of them have health problems for years afterwards",
+      "wrongOptions": {
+        "C": "Csábító, mert veszélyről van szó, de a bekezdés nem ad tanácsot a védekezéshez, hanem a villámcsapás utáni következményeket írja le."
+      }
+    },
+    {
+      "id": "6",
+      "kind": "match",
+      "answer": "B",
+      "category": "gist",
+      "explanation": "B. A bekezdés első mondata adja a fő gondolatot: a villám nem mindenhol egyformán gyakori. Példa erre a venezuelai Maracaibo-tó (évente közel 300 viharos éjszaka), és az is, hogy Magyarországon májustól augusztusig a leggyakoribb. Ezért B: „Some places get much more than others”.",
+      "evidence": "Lightning does not happen equally often everywhere.",
+      "wrongOptions": {
+        "I": "Csábító lehet, mert a tavon a hajósok a villámok segítségével tájékozódtak, de állatokról és arról, hogy ki érzi meg előre a vihart, egyáltalán nincs szó a szövegben."
+      }
+    },
+    {
+      "id": "7",
+      "kind": "match",
+      "answer": "F",
+      "category": "gist",
+      "explanation": "F. A bekezdés arról szól, hogy ma a tudósok szinte minden villámot nyomon tudnak követni földi érzékelőkkel és műholdakkal, az adatok pedig másodperceken belül megjelennek ingyenes weboldalakon és appokban. Ezért F: „Technology that follows every flash”.",
+      "evidence": "Today, scientists can follow almost every flash on Earth.",
+      "wrongOptions": {
+        "D": "Csábító, mert a bekezdés említi, hogy egyesek a villám energiájával szeretnék ellátni az otthonokat, de a szöveg szerint ez még nem lehetséges („this is not possible yet”), és nem ez a bekezdés fő gondolata."
+      }
+    }
+  ],
+  "glossary": [
+    { "term": "spark", "meaning": "szikra" },
+    { "term": "builds up", "meaning": "felgyülemlik, felhalmozódik" },
+    { "term": "bolt", "meaning": "villám (egy villámcsapás)" },
+    { "term": "surface", "meaning": "felszín" },
+    { "term": "explodes outwards", "meaning": "kifelé robban, szétrobban" },
+    { "term": "divide by three", "meaning": "eloszt hárommal" },
+    { "term": "struck", "meaning": "(villám) belecsapott, eltalálta (strike múlt idejű alakja)" },
+    { "term": "roars", "meaning": "dörög, bömböl" },
+    { "term": "survive", "meaning": "túlél" },
+    { "term": "branches", "meaning": "(fa)ágak" },
+    { "term": "sensors", "meaning": "érzékelők" },
+    { "term": "satellites", "meaning": "műholdak" }
+  ],
+  "suggestedMinutes": 10
+}

@@ -1,0 +1,136 @@
+{
+  "schemaVersion": 1,
+  "id": "fiz-gd-exam-reading",
+  "subject": "fizika",
+  "revision": 1,
+  "level": "kozep",
+  "source": "generated",
+  "topic": "utmutato",
+  "title": "I. rész – Feleletválasztós teszt",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "guide",
+  "type": "exam",
+  "target": "reading",
+  "summaryHu": "Az írásbeli első része feleletválasztós teszt: minden kérdésnél egyetlen helyes válasz van a megadott lehetőségek közül, kérdésenként 2 pont. Középszinten 20 kérdés (40 pont), emelt szinten 15 kérdés (30 pont); a kérdések a teljes anyagot lefedik a mechanikától a csillagászatig. Függvénytáblázat és számológép használható, indoklást nem kell írni – de a gyors, pontos döntéshez érteni kell a fogalmakat és az arányosságokat.",
+  "steps": [
+    {
+      "title": "Olvasd el a kérdést a végéig",
+      "explanation": "Húzd alá a kulcsszót: mit kérdeznek (nagyság, irány, változás, „NEM igaz”, „legalább”)? Sok rossz válasz egy közeli, de más kérdésre adott jó válasz.",
+      "tips": [
+        "A tagadó kérdéseknél („Melyik NEM…”) írd a margóra: NEM.",
+        "Nézd meg a mértékegységeket a válaszlehetőségekben – ezek is árulkodnak."
+      ]
+    },
+    {
+      "title": "Döntsd el a kérdés típusát",
+      "explanation": "Fogalmi kérdés (definíció, törvény), arányossági kérdés („hányszorosára változik”), rövid számítás vagy jelenség magyarázata. Arányossági kérdésnél írd fel a képletet, és nézd meg, milyen hatványon szerepel a változó.",
+      "tips": [
+        "v kétszeres → ½mv² négyszeres.",
+        "Számításnál írd fel a képletet a margóra, és helyettesíts be egységgel."
+      ]
+    },
+    {
+      "title": "Számolj, majd vesd össze a lehetőségekkel",
+      "explanation": "Ha az eredményed szerepel a lehetőségek között, ellenőrizd még egyszer az átváltást: a rossz válaszok gyakran a tipikus hibák (fordított hányados, km/h–m/s, °C–K, kimaradt ½) eredményei.",
+      "tips": [
+        "Ha két válasz csak tízes szorzóban tér el, a nagyságrendet ellenőrzik.",
+        "A g értékét a feladat adja meg (10 vagy 9,81 m/s²) – azzal számolj."
+      ]
+    },
+    {
+      "title": "Kizárásos módszer",
+      "explanation": "Ha nem tudod biztosan, zárd ki a biztosan rossz válaszokat (rossz mértékegység, ellentmond egy megmaradási törvénynek, lehetetlen érték, pl. 100 %-nál nagyobb hatásfok). Rossz válaszért nincs pontlevonás, ezért ne hagyj üresen kérdést.",
+      "tips": [
+        "Egy állítás akkor igaz, ha MINDEN része igaz.",
+        "A hétköznapi tévhitekre épülő válasz általában csapda."
+      ]
+    },
+    {
+      "title": "Ellenőrzés a végén",
+      "explanation": "Hagyj 3–5 percet: nézd át a megjelölt (bizonytalan) kérdéseket, és ellenőrizd, hogy minden kérdésnél pontosan egy betűt jelöltél-e, egyértelműen.",
+      "tips": [
+        "Javításnál a régi jelölést egyértelműen húzd át.",
+        "Ne változtass az első válaszodon, ha nincs rá konkrét okod."
+      ]
+    }
+  ],
+  "phrases": [
+    {
+      "group": "Arányosság",
+      "en": "E_m ~ v²",
+      "hu": "Ha a sebesség kétszeres, a mozgási energia négyszeres."
+    },
+    {
+      "group": "Arányosság",
+      "en": "F ~ 1/r²",
+      "hu": "Gravitációs és Coulomb-erő: kétszeres távolság → negyedakkora erő."
+    },
+    {
+      "group": "Arányosság",
+      "en": "T ~ √l (inga), T ~ √m (rugó)",
+      "hu": "Négyszeres hossz vagy tömeg → kétszeres rezgésidő."
+    },
+    {
+      "group": "Átváltás",
+      "en": "km/h : 3,6 = m/s",
+      "hu": "Mozgásos feladatok előtt mindig."
+    },
+    {
+      "group": "Átváltás",
+      "en": "T(K) = t(°C) + 273",
+      "hu": "Gáztörvényeknél és hatásfoknál kötelező."
+    },
+    {
+      "group": "Átváltás",
+      "en": "1 kWh = 3,6 · 10⁶ J; 1 eV = 1,6 · 10⁻¹⁹ J",
+      "hu": "Energiás kérdéseknél."
+    },
+    {
+      "group": "Kizárás",
+      "en": "η ≤ 100 %, v ≤ c, T ≥ 0 K",
+      "hu": "Ezeket sértő válasz biztosan rossz."
+    },
+    {
+      "group": "Kizárás",
+      "en": "Az erő és az ellenerő különböző testekre hat.",
+      "hu": "Newton III. törvényes csapdáknál."
+    }
+  ],
+  "mistakes": [
+    {
+      "wrong": "A kérdés gyors átfutása után az első ismerős számot választom.",
+      "right": "A kérdést végigolvasom, kiszámolom vagy végiggondolom a választ, és csak utána nézem meg a lehetőségeket.",
+      "why": "A rossz lehetőségek szándékosan a tipikus hibák eredményei, ezért „ismerősnek” tűnnek."
+    },
+    {
+      "wrong": "Ha nem tudom a választ, üresen hagyom.",
+      "right": "Kizárással szűkítem a lehetőségeket, és megjelölöm a legvalószínűbbet.",
+      "why": "Rossz válaszért nincs levonás, a tippnek is van esélye."
+    },
+    {
+      "wrong": "Celsius-fokkal számolok a gáztörvényben.",
+      "right": "A hőmérsékletet kelvinre váltom.",
+      "why": "A 127/27-es arány teljesen más eredményt ad, mint a 400/300."
+    }
+  ],
+  "checklist": [
+    "Minden kérdésnél pontosan egy betű van megjelölve, egyértelműen.",
+    "A tagadó (NEM) kérdéseket külön ellenőriztem.",
+    "A számolós kérdéseknél SI-egységekkel számoltam.",
+    "A megjelölt bizonytalan kérdésekhez a végén visszatértem.",
+    "Nem maradt üresen kérdés."
+  ],
+  "timing": "Középszinten a 150 percből kb. 40 percet szánj a tesztre (2 perc/kérdés), a többit az összetett feladatokra; emelt szinten a 240 percből szintén kb. 40 percet (kb. 2,5 perc/kérdés), mert az emelt kérdések többlépésesek. A nehéz kérdésen ne ragadj le: jelöld meg, és térj vissza rá a végén.",
+  "example": {
+    "title": "Minta: egy arányossági kérdés megoldása",
+    "text": "Kérdés: Egy műhold pályasugarát négyszeresére növeljük. Hányszorosára nő a keringési ideje? (A) 2 (B) 4 (C) 8 (D) 16\nMegoldás: Kepler III. törvénye: T² ~ r³ → T ~ r^(3/2). 4^(3/2) = 8 → C.",
+    "notes": [
+      "A képlet felírása egy sorban elég, és azonnal kizárja a 2-t (v ~ 1/√r) és a 16-ot (T ~ r²)."
+    ]
+  },
+  "levelNotes": {
+    "kozep": "Középszinten 20 kérdés, 2 pont/kérdés, 40 pont: a kérdések nagy része fogalmi (definíciók, mértékegységek, törvények) és egylépéses számolás. A legtöbb pont a fogalmak pontos ismeretén és a gyakori átváltásokon múlik.",
+    "emelt": "Emelt szinten 15 kérdés, 2 pont/kérdés, 30 pont: több az arányossági és többlépéses kérdés (Kepler III., ütközés energiaváltozása, fotoeffektus, bomlási sor), és gyakoriak a „melyik állítás igaz” típusú, finom fogalmi különbségekre épülő kérdések."
+  }
+}

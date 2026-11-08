@@ -1,0 +1,78 @@
+{
+  "schemaVersion": 1,
+  "id": "kem-sp-kozep-viz-a-tetel",
+  "subject": "kemia",
+  "revision": 1,
+  "level": "kozep",
+  "source": "generated",
+  "topic": "anyagi-halmazok",
+  "title": "A víz – szerkezet, tulajdonságok, jelentőség",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "speaking",
+  "type": "a-tetel",
+  "partNumber": 1,
+  "instructionsHu": "Ismertesse a víz molekulaszerkezetét és a vízmolekulák közötti kölcsönhatásokat, és ezekkel magyarázza a víz fizikai tulajdonságait! Mutassa be a víz kémiai reakcióit (sav–bázis szerep, reakció fémmel), a víz keménységét és a víz jelentőségét! Feleletében használja a periódusos rendszert!",
+  "prompts": [
+    "A vízmolekula szerkezete: kötések, kötésszög, alak, polaritás",
+    "A hidrogénkötés és következményei: forráspont, sűrűségi anomália, oldószer-tulajdonság",
+    "Sav–bázis tulajdonság: amfoter jelleg, autoprotolízis, vízionszorzat, pH",
+    "Redoxireakció: a nátrium és a víz reakciója",
+    "A víz keménysége; a víz jelentősége az élővilágban és az iparban"
+  ],
+  "followUpQuestions": [
+    "Miért kell a tömény kénsavat a vízbe önteni hígításkor, és nem fordítva?",
+    "Hogyan lágyítható a víz trisóval vagy ioncserélővel?"
+  ],
+  "usefulPhrases": [
+    {
+      "en": "dipólusmolekula",
+      "hu": "A töltések súlypontja nem esik egybe – a víz alakja miatt poláris."
+    },
+    {
+      "en": "hidrogénkötés",
+      "hu": "A víz különleges tulajdonságainak (forráspont, jég sűrűsége) kulcsa."
+    },
+    {
+      "en": "sűrűségi anomália",
+      "hu": "A víz sűrűsége 4 °C-on a legnagyobb, a jég úszik a vízen."
+    },
+    {
+      "en": "amfoter",
+      "hu": "Savval szemben bázis, bázissal szemben sav."
+    },
+    {
+      "en": "autoprotolízis, vízionszorzat",
+      "hu": "2 H₂O ⇌ H₃O⁺ + OH⁻; Kv = 1,0 · 10⁻¹⁴ (25 °C)."
+    },
+    {
+      "en": "változó és állandó keménység",
+      "hu": "Hidrogén-karbonátok (forralással megszűnik) ↔ szulfátok, kloridok."
+    }
+  ],
+  "sources": [],
+  "keyPoints": [
+    "A vízmolekulában két poláris kovalens O–H kötés van; az oxigén két nemkötő elektronpárja miatt a molekula V alakú, kötésszöge 104,5°, a molekula dipólus.",
+    "A vízmolekulák között hidrogénkötés alakul ki, ezért a víz forráspontja (100 °C) a moláris tömegéhez képest rendkívül magas (vö. metán: −161 °C).",
+    "A jég laza, hidrogénkötésekkel összetartott kristályszerkezete miatt a jég sűrűsége kisebb a vízénél; a víz sűrűsége 4 °C-on a legnagyobb.",
+    "A víz poláris oldószer: jól oldja az ionos és a hidrogénkötésre képes anyagokat.",
+    "A víz amfoter: H₂O + H₂O ⇌ H₃O⁺ + OH⁻; 25 °C-on Kv = 1,0 · 10⁻¹⁴, semleges oldatban pH = 7.",
+    "A nátrium hevesen reagál a vízzel: 2 Na + 2 H₂O → 2 NaOH + H₂; a víz itt oxidálószer.",
+    "A víz keménységét a kalcium- és magnéziumionok okozzák; a változó keménység forralással megszüntethető: Ca(HCO₃)₂ → CaCO₃ + H₂O + CO₂."
+  ],
+  "speakingSeconds": 480,
+  "prepSeconds": 900,
+  "sampleAnswer": {
+    "turns": [
+      {
+        "speaker": "candidate",
+        "text": "A vízmolekula egy oxigénatomból és két hidrogénatomból áll, amelyeket egy-egy poláris kovalens kötés kapcsol össze. A periódusos rendszerből látszik, hogy az oxigén elektronegativitása (3,5) jóval nagyobb a hidrogénénél (2,1), ezért a kötő elektronpárok az oxigén felé tolódnak. Az oxigénatomon két nemkötő elektronpár is van, így a négy elektronpár tetraéderesen helyezkedik el, a molekula pedig V alakú, kötésszöge 104,5°. Mivel a molekula nem szimmetrikus, a töltések súlypontja nem esik egybe: a vízmolekula dipólus.\nA vízmolekulák között hidrogénkötések alakulnak ki: egy molekula hidrogénatomja egy másik molekula oxigénjének nemkötő elektronpárjához kapcsolódik. Ezért magas a víz olvadás- és forráspontja: a hasonló moláris tömegű metán −161 °C-on forr, a víz 100 °C-on. A jégben minden molekula négy másikhoz kapcsolódik hidrogénkötéssel, laza, üreges rács alakul ki, ezért a jég sűrűsége kisebb, mint a vízé, és a jég úszik a vízen; a víz sűrűsége 4 °C-on a legnagyobb. A víz poláris oldószer: jól oldja az ionos vegyületeket, például a nátrium-kloridot, és a hidrogénkötésre képes anyagokat, például a cukrot vagy az etanolt.\nKémiailag a víz amfoter: savval szemben bázisként, bázissal szemben savként viselkedik. Autoprotolízise: H₂O + H₂O ⇌ H₃O⁺ + OH⁻. A vízionszorzat 25 °C-on 1,0 · 10⁻¹⁴, ezért a tiszta víz pH-ja 7. Redoxireakciókban is részt vesz: a nátrium hevesen reagál vele, 2 Na + 2 H₂O → 2 NaOH + H₂, itt a víz oxidálószer.\nA természetes vizek keménységét a kalcium- és magnéziumionok okozzák. A hidrogén-karbonátok okozta változó keménység forralással megszüntethető: Ca(HCO₃)₂ → CaCO₃ + H₂O + CO₂ – így keletkezik a vízkő. A víz az élő szervezetek fő alkotója, oldószer és reakciópartner, például a fotoszintézisben; az iparban oldószer és hűtőközeg."
+      }
+    ],
+    "notes": [
+      "Tartalom: a felelet a szerkezettől (V alak, 104,5°, dipólus) a tulajdonságokon (hidrogénkötés, sűrűségi anomália, oldószer) át a reakciókig és a jelentőségig minden lényeges elemet érint – ez a tartalmi szempont teljesítése.",
+      "Összefüggések: minden tulajdonságot szerkezettel magyaráz (miért magas a forráspont, miért úszik a jég), és három rendezett egyenletet ír fel (autoprotolízis, nátrium + víz, vízkőképződés).",
+      "Segédeszköz és szaknyelv: az elektronegativitás-értékeket a periódusos rendszerből veszi, a metánnal való összevetés pontos, a szakkifejezések (dipólus, autoprotolízis, vízionszorzat) helyesek."
+    ]
+  }
+}

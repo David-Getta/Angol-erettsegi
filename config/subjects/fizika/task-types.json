@@ -1,0 +1,186 @@
+{
+  "meta": {
+    "verifiedAt": "2026-11-05",
+    "sources": [
+      {
+        "title": "Oktatási Hivatal: Fizika – részletes érettségi vizsgakövetelmény és vizsgaleírás (2024-től érvényes, Nat2020)",
+        "url": "https://www.oktatas.hu/pub_bin/dload/kozoktatas/erettsegi/vizsgakovetelmenyek2024/fizika_2024_e.pdf"
+      },
+      {
+        "title": "Eduline (2026. 05. 19.): Minden, amit a keddi fizikaérettségiről tudni kell (közép 150 perc: 20 feleletválasztós × 2 pont + 4-ből 3 összetett feladat; szóbeli 60 pont, kísérlet)",
+        "url": "https://eduline.hu/erettsegi-felveteli/20260519_fizikaerettsegi-2026-minden-fontos-tudnivalo"
+      },
+      {
+        "title": "Fizikatanárok: Emelt szintű fizika javítási-értékelési útmutató, 2024. május (E2412) – pontösszesítő: I. 30, II. 18 + 5, III. 47",
+        "url": "https://www.fizikatanarok.hu/media/uploads/Fizika_erettsegi/Emelt/e_fiz_24maj_ut.pdf"
+      },
+      {
+        "title": "Eduline (2024. 12. 23.): Itt vannak a 2025-ös emelt szintű fizika érettségi témakörei és mérési feladatai",
+        "url": "https://eduline.hu/erettsegi-felveteli/20241223_emelt-szintu-fizika-erettsegi-szobeli-temakorok-meresi-feladatok-2025"
+      },
+      {
+        "title": "Vidra Gábor: Fizika Nat2020-as érettségi követelmények – témakörök és súlyok",
+        "url": "https://www.vidra-gabor.hu/kovetelmenyek.php"
+      },
+      {
+        "title": "Eduline (2019. 05. 20.): Ilyen lesz a szóbeli érettségi fizikából (tartalom 45 + felépítés 5 emelten)",
+        "url": "https://eduline.hu/erettsegi-felveteli/20190520_fizikaerettsegi-szobeli-kozep-es-emelt-szinten"
+      },
+      {
+        "title": "Eduline (2026. 03. 14.): Érettségi 2026 – pontozási és osztályozási szabályok (közép 80/60/40/25 %, emelt 60/47/33/25 %, vizsgarészenként 12 %)",
+        "url": "https://eduline.hu/erettsegi-felveteli/20260314_erettsegi-2026-pontozas-osztalyozas"
+      }
+    ],
+    "notes": [
+      "Az ellenőrzés hírportál-cikkek (Eduline, Telex) és a hivatalos dokumentumok keresőben indexelt szövege alapján történt; az OH oldalát a futtató környezet hálózata nem engedte közvetlenül megnyitni – a hivatalos vizsgaleírással érdemes összevetni."
+    ]
+  },
+  "reading": [
+    {
+      "id": "feleletvalasztas",
+      "name": "Feleletválasztós teszt",
+      "nameEn": "Multiple choice",
+      "levels": [
+        "kozep",
+        "emelt"
+      ],
+      "description": "Egy helyes válasz kiválasztása 3–5 lehetőség közül.",
+      "itemKinds": [
+        "choice"
+      ]
+    },
+    {
+      "id": "igaz-hamis",
+      "name": "Igaz–hamis állítások",
+      "nameEn": "True/false",
+      "levels": [
+        "kozep",
+        "emelt"
+      ],
+      "description": "Állítások eldöntése (igaz / hamis), indoklással a magyarázatban.",
+      "itemKinds": [
+        "tf"
+      ]
+    },
+    {
+      "id": "parositas",
+      "name": "Párosítás",
+      "nameEn": "Matching",
+      "levels": [
+        "kozep",
+        "emelt"
+      ],
+      "description": "Fogalmak, példák, ábrarészek párosítása közös opciólistából.",
+      "itemKinds": [
+        "match"
+      ]
+    },
+    {
+      "id": "rovid-valasz",
+      "name": "Rövid választ igénylő feladat",
+      "nameEn": "Short answer",
+      "levels": [
+        "kozep",
+        "emelt"
+      ],
+      "description": "Egy-két szavas vagy számszerű válasz (fogalom, érték, név).",
+      "itemKinds": [
+        "text",
+        "choice"
+      ]
+    },
+    {
+      "id": "abraelemzes",
+      "name": "Ábra-, táblázat- vagy grafikonelemzés",
+      "nameEn": "Data / diagram analysis",
+      "levels": [
+        "kozep",
+        "emelt"
+      ],
+      "description": "Szövegben leírt ábra, adatsor vagy táblázat alapján kérdések.",
+      "itemKinds": [
+        "text",
+        "choice",
+        "tf"
+      ]
+    },
+    {
+      "id": "szamitas-rovid",
+      "name": "Rövid számítás",
+      "nameEn": "Short calculation",
+      "levels": [
+        "kozep",
+        "emelt"
+      ],
+      "description": "Egy-két lépéses számítás, csak az eredményt kell beírni (mértékegységgel).",
+      "itemKinds": [
+        "text"
+      ]
+    }
+  ],
+  "language-use": [],
+  "listening": [],
+  "writing": [
+    {
+      "id": "szamitasos",
+      "name": "Számításos feladat",
+      "nameEn": "Calculation problem",
+      "levels": [
+        "kozep",
+        "emelt"
+      ],
+      "description": "Több részfeladatból álló számításos feladat, indoklással."
+    },
+    {
+      "id": "forraselemzes",
+      "name": "Forráselemzés",
+      "nameEn": "Source analysis",
+      "levels": [
+        "kozep",
+        "emelt"
+      ],
+      "description": "Szöveg, ábra, grafikon vagy táblázat alapján kérdések fizikai indoklással."
+    },
+    {
+      "id": "jelensegertelmezes",
+      "name": "Jelenségértelmezés",
+      "nameEn": "Phenomenon explanation",
+      "levels": [
+        "kozep",
+        "emelt"
+      ],
+      "description": "Egy jelenség leírása és fizikai magyarázata kérdések mentén."
+    },
+    {
+      "id": "mereselemzes",
+      "name": "Méréselemzés",
+      "nameEn": "Measurement analysis",
+      "levels": [
+        "kozep",
+        "emelt"
+      ],
+      "description": "Mért adatsor kiértékelése: számítás, grafikon, következtetés, hibabecslés."
+    },
+    {
+      "id": "temakifejtes",
+      "name": "Témakifejtés (esszé)",
+      "nameEn": "Essay",
+      "levels": [
+        "emelt"
+      ],
+      "description": "Egy téma összefüggő kifejtése 1–1,5 oldalon, szempontok szerint."
+    }
+  ],
+  "speaking": [
+    {
+      "id": "tetel",
+      "name": "Szóbeli tétel",
+      "nameEn": "Oral topic",
+      "levels": [
+        "kozep",
+        "emelt"
+      ],
+      "description": "Téma kifejtése + kísérlet / mérés bemutatása."
+    }
+  ]
+}

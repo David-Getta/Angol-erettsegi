@@ -1,0 +1,290 @@
+{
+  "schemaVersion": 1,
+  "id": "kem-gr-egyensuly-kinetika",
+  "subject": "kemia",
+  "revision": 1,
+  "level": "kozep",
+  "source": "generated",
+  "topic": "nyelvtan",
+  "title": "Egyensúly, reakciósebesség, termokémia",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "grammar",
+  "type": "lesson",
+  "category": "egyensuly-kinetika",
+  "summaryHu": "Ez a terület azt írja le, mennyi energia kíséri a reakciókat (termokémia), milyen gyorsan mennek végbe (kinetika), és meddig jutnak el (egyensúly). Az érettségin teszt- és esettanulmány-kérdésekben (pl. ammóniaszintézis), termokémiai és egyensúlyi számításokban, valamint a szóbeli tételekben is előkerül. Tipikus hibák: a reakcióhő előjelének tévesztése, a katalizátor egyensúlyra gyakorolt hatásának félreértése és a Le Chatelier–Braun-elv rossz alkalmazása (pl. a hőmérséklet hatása az egyensúlyi állandóra).",
+  "rules": [
+    {
+      "title": "Reakcióhő, képződéshő, Hess-tétel",
+      "explanation": "Exoterm reakciónál a rendszer hőt ad le, ΔrH < 0; endoterm reakciónál hőt vesz fel, ΔrH > 0. A képződéshő (ΔkH) annak a reakciónak a reakcióhője, amelyben 1 mol vegyület elemeiből keletkezik; az elemek stabilis módosulatának képződéshője 0. A Hess-tétel szerint a reakcióhő csak a kiindulási és a végállapottól függ, így ΔrH = Σ ΔkH(termékek) − Σ ΔkH(kiindulási anyagok), az egyenlet együtthatóival szorozva. Az ellentétes irányú reakció reakcióhője ellentett előjelű.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "CH₄ + 2 O₂ → CO₂ + 2 H₂O(f): ΔrH = [−394 + 2 · (−286)] − (−75) = −891 kJ/mol"
+        },
+        {
+          "en": "CaCO₃ → CaO + CO₂: ΔrH = [−635 + (−394)] − (−1207) = +178 kJ/mol",
+          "hu": "Endoterm folyamat: a mészégetéshez folyamatos hevítés kell."
+        }
+      ]
+    },
+    {
+      "title": "A reakciósebesség és befolyásoló tényezői",
+      "explanation": "A reakciósebesség a koncentráció időegység alatti változása. Az ütközési elmélet szerint csak azok az ütközések hatásosak, amelyekben a részecskék energiája eléri az aktiválási energiát, és megfelelő a térállásuk. A sebesség nő a koncentráció (gázoknál a nyomás) növelésével, a hőmérséklet emelésével (sok reakciónál 10 °C-onként 2–4-szeresére), szilárd anyagnál a felület növelésével (aprítással) és katalizátorral.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "A porított mészkő gyorsabban oldódik sósavban, mint a darabos.",
+          "hu": "Nagyobb a felület, több az ütközés."
+        },
+        {
+          "en": "Hűtőszekrényben lassabban romlik az étel.",
+          "hu": "Alacsonyabb hőmérsékleten kevesebb a hatásos ütközés."
+        }
+      ]
+    },
+    {
+      "title": "A katalizátor",
+      "explanation": "A katalizátor kisebb aktiválási energiájú reakcióutat nyit meg, ezért gyorsítja a reakciót, de a reakció végén változatlanul visszamarad. Az odaalakulást és a visszaalakulást egyformán gyorsítja, ezért az egyensúly gyorsabban áll be, de az egyensúlyi összetételt és az egyensúlyi állandót NEM változtatja meg; a reakcióhőt sem befolyásolja.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "2 H₂O₂ → 2 H₂O + O₂ (MnO₂ katalizátor)"
+        },
+        {
+          "en": "N₂ + 3 H₂ ⇌ 2 NH₃ (vaskatalizátor)",
+          "hu": "A katalizátor nem növeli az egyensúlyi ammóniahozamot, csak hamarabb éri el."
+        }
+      ]
+    },
+    {
+      "title": "Kémiai egyensúly és egyensúlyi állandó",
+      "explanation": "Megfordítható reakcióban, zárt rendszerben dinamikus egyensúly áll be: az oda- és a visszaalakulás sebessége egyenlő, a koncentrációk állandók. Az aA + bB ⇌ cC + dD reakció egyensúlyi állandója K = [C]ᶜ[D]ᵈ / ([A]ᵃ[B]ᵇ), az egyensúlyi koncentrációkkal. K csak a hőmérséklettől függ; a szilárd anyagok és a híg oldat oldószere (víz) nem szerepelnek benne. Nagy K esetén az egyensúly a termékek felé tolódik.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "H₂ + I₂ ⇌ 2 HI: K = [HI]² / ([H₂][I₂])"
+        },
+        {
+          "en": "CaCO₃(sz) ⇌ CaO(sz) + CO₂(g): K = [CO₂]",
+          "hu": "Heterogén egyensúly: a szilárd anyagok kimaradnak a kifejezésből."
+        }
+      ]
+    },
+    {
+      "title": "A Le Chatelier–Braun-elv",
+      "explanation": "Az egyensúlyban lévő rendszert érő külső hatás olyan változást idéz elő, amely a hatást csökkenteni igyekszik. Kiindulási anyag hozzáadása vagy termék elvonása → az egyensúly a termékek felé tolódik. Nyomásnövelés (gázreakciónál) → a kisebb gázmolekulaszámú oldal felé. Hőmérséklet-emelés → az endoterm irány felé (exoterm reakció egyensúlyi állandója csökken, endotermé nő). Ha a gázmolekulák száma a két oldalon egyenlő, a nyomás nem tolja el az egyensúlyt.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "N₂ + 3 H₂ ⇌ 2 NH₃, ΔrH = −92 kJ/mol",
+          "hu": "Nagy nyomás (4 mol gáz → 2 mol gáz) és alacsony hőmérséklet kedvez az ammóniának; a gyakorlatban mégis kb. 450 °C-on dolgoznak a reakciósebesség miatt (kompromisszum)."
+        },
+        {
+          "en": "H₂ + I₂ ⇌ 2 HI",
+          "hu": "2 mol gázból 2 mol gáz lesz: a nyomás nem változtatja meg az egyensúlyi összetételt."
+        }
+      ]
+    },
+    {
+      "title": "Egyensúlyi számítás táblázattal",
+      "explanation": "Az egyensúlyi feladatokat érdemes háromsoros táblázattal megoldani: kiindulás – átalakulás (az egyenlet arányai szerint, x-szel) – egyensúly. Az egyensúlyi értékeket helyettesítsd be K kifejezésébe. Ha a részecskeszám a reakcióban nem változik, a térfogat kiesik, és anyagmennyiségekkel is számolhatsz; egyébként koncentrációt kell használni. A másodfokú egyenlet gyökei közül csak a fizikailag értelmes (0 és a kiindulási mennyiség közötti) érvényes.",
+      "emeltOnly": true,
+      "examples": [
+        {
+          "en": "CH₃COOH + C₂H₅OH ⇌ CH₃COOC₂H₅ + H₂O, K = 4, 1–1 mol kiindulási anyag: x² / (1 − x)² = 4 → x = 2/3 mol",
+          "hu": "Az ecetsav 66,7 %-a alakul észterré."
+        }
+      ]
+    }
+  ],
+  "commonMistakes": [
+    {
+      "wrong": "A katalizátor az egyensúlyt a termékek felé tolja.",
+      "right": "A katalizátor csak gyorsítja az egyensúly beállását, az egyensúlyi összetételt nem változtatja meg.",
+      "why": "Az oda- és a visszaalakulás aktiválási energiáját egyformán csökkenti, így mindkét irány ugyanúgy gyorsul."
+    },
+    {
+      "wrong": "Az égés endoterm, mert hevíteni kell a meggyújtáshoz.",
+      "right": "Az égés exoterm (ΔrH < 0); a meggyújtás csak az aktiválási energiát fedezi.",
+      "why": "A reakcióhő a kiindulási és a végállapot energiakülönbsége; a reakció beindításához szükséges energia más fogalom (aktiválási energia)."
+    },
+    {
+      "wrong": "A hőmérséklet emelése minden egyensúlyt a termékek felé tol.",
+      "right": "A hőmérséklet emelése az endoterm irány felé tolja az egyensúlyt.",
+      "why": "Exoterm reakciónál (pl. ammóniaszintézis) melegítéskor csökken az egyensúlyi termékhozam és K értéke."
+    },
+    {
+      "wrong": "A nyomás növelése a H₂ + I₂ ⇌ 2 HI egyensúlyt a HI felé tolja.",
+      "right": "Ebben az egyensúlyban a nyomás nem okoz eltolódást.",
+      "why": "Mindkét oldalon 2 mol gáz van, a rendszer a molekulaszám változtatásával nem tudja csökkenteni a nyomást."
+    },
+    {
+      "wrong": "Hess-tétel: ΔrH = Σ ΔkH(kiindulási anyagok) − Σ ΔkH(termékek).",
+      "right": "ΔrH = Σ ΔkH(termékek) − Σ ΔkH(kiindulási anyagok)",
+      "why": "A felcserélés előjelhibát okoz: egy égésre pozitív, endoterm érték jönne ki, ami nyilvánvalóan rossz."
+    }
+  ],
+  "examTips": [
+    "Termokémiai számításnál a képződéshőket szorozd az egyenlet együtthatóival, és ne felejtsd el: az elemek (O₂, H₂, C(grafit)) képződéshője 0.",
+    "Egyensúlyi eltolásnál mindig nevezd meg, mi a külső hatás, és merre csökkenthető: „a nyomás növelésére a kisebb gázmolekulaszám felé…”.",
+    "Esettanulmányban (pl. ammóniaszintézis, kénsavgyártás) a „miért nem alacsonyabb a hőmérséklet?” kérdésre a válasz: a reakciósebesség túl kicsi lenne – kompromisszum az egyensúly és a sebesség között."
+  ],
+  "practice": [
+    {
+      "id": "1",
+      "kind": "choice",
+      "prompt": "Hogyan hat a hőmérséklet emelése az N₂ + 3 H₂ ⇌ 2 NH₃ (ΔrH = −92 kJ/mol) egyensúlyra?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Az ammónia képződése felé tolja."
+        },
+        {
+          "key": "B",
+          "text": "Csak a reakciósebességet csökkenti."
+        },
+        {
+          "key": "C",
+          "text": "Nem változtatja meg az egyensúlyt."
+        },
+        {
+          "key": "D",
+          "text": "A kiindulási anyagok felé tolja, az egyensúlyi állandó csökken."
+        }
+      ],
+      "answer": "D",
+      "category": "egyensuly-kinetika",
+      "explanation": "Helyes: D. A reakció exoterm, így a hőmérséklet emelésekor az endoterm irány, az ammónia bomlása kerül előtérbe; az egyensúlyi állandó csökken.",
+      "wrongOptions": {
+        "A": "Az ammónia képződése exoterm, a melegítés az ellentétes (endoterm) irányt segíti.",
+        "B": "Melegítéskor a reakciósebesség nő, nem csökken.",
+        "C": "A hőmérséklet az egyetlen tényező, amely magát K értékét is megváltoztatja."
+      }
+    },
+    {
+      "id": "2",
+      "kind": "text",
+      "prompt": "Mekkora a C(grafit) + O₂ → CO₂ reakció reakcióhője, ha ΔkH(CO₂) = −394 kJ/mol?",
+      "answer": [
+        "−394 kJ/mol",
+        "-394 kJ/mol",
+        "−394",
+        "-394"
+      ],
+      "category": "egyensuly-kinetika",
+      "explanation": "Helyes: −394 kJ/mol. Ez éppen a CO₂ képződési reakciója: a grafit és az oxigén képződéshője 0, így ΔrH = ΔkH(CO₂) = −394 kJ/mol.",
+      "maxWords": 2
+    },
+    {
+      "id": "3",
+      "kind": "choice",
+      "prompt": "Mit változtat meg a katalizátor?",
+      "options": [
+        {
+          "key": "A",
+          "text": "az aktiválási energiát"
+        },
+        {
+          "key": "B",
+          "text": "az egyensúlyi állandót"
+        },
+        {
+          "key": "C",
+          "text": "a reakcióhőt"
+        },
+        {
+          "key": "D",
+          "text": "az egyensúlyi termékhozamot"
+        }
+      ],
+      "answer": "A",
+      "category": "egyensuly-kinetika",
+      "explanation": "Helyes: az aktiválási energiát. A katalizátor kisebb aktiválási energiájú reakcióutat nyit, ezért gyorsabb a reakció.",
+      "wrongOptions": {
+        "B": "Az egyensúlyi állandó csak a hőmérséklettől függ.",
+        "C": "A reakcióhő csak a kiindulási és a végállapottól függ (Hess-tétel), ezt a katalizátor nem változtatja meg.",
+        "D": "A katalizátor mindkét irányt egyformán gyorsítja, az egyensúlyi összetétel nem változik."
+      }
+    },
+    {
+      "id": "4",
+      "kind": "choice",
+      "prompt": "Melyik változtatás NEM gyorsítja a cink és a sósav reakcióját?",
+      "options": [
+        {
+          "key": "A",
+          "text": "a sósav hígítása vízzel"
+        },
+        {
+          "key": "B",
+          "text": "töményebb sósav használata"
+        },
+        {
+          "key": "C",
+          "text": "cinkpor használata cinkdarab helyett"
+        },
+        {
+          "key": "D",
+          "text": "a sósav melegítése"
+        }
+      ],
+      "answer": "A",
+      "category": "egyensuly-kinetika",
+      "explanation": "Helyes: A. Hígításkor csökken az oxóniumionok koncentrációja, időegység alatt kevesebb az ütközés, a reakció lassul.",
+      "wrongOptions": {
+        "B": "Nagyobb koncentrációnál több az ütközés, a reakció gyorsabb.",
+        "C": "A por nagyobb felületen érintkezik a savval, a reakció gyorsabb.",
+        "D": "Magasabb hőmérsékleten több a hatásos ütközés, a reakció gyorsabb."
+      }
+    },
+    {
+      "id": "5",
+      "kind": "text",
+      "prompt": "Egy reakció sebessége 10 °C-onként a kétszeresére nő. Hányszorosára nő a sebesség, ha a hőmérsékletet 20 °C-ról 50 °C-ra emeljük?",
+      "answer": [
+        "8",
+        "8-szorosára",
+        "nyolcszorosára"
+      ],
+      "category": "egyensuly-kinetika",
+      "explanation": "Helyes: 8-szorosára. A 30 °C-os emelés 3 · 10 °C, így a sebesség 2 · 2 · 2 = 2³ = 8-szorosára nő.",
+      "maxWords": 1
+    },
+    {
+      "id": "6",
+      "kind": "choice",
+      "prompt": "Az A + B ⇌ C + D egyensúlyban (K = 1,0) 1,0–1,0 mol A-ból és B-ből indulunk ki. Mennyi C van egyensúlyban? (emelt)",
+      "options": [
+        {
+          "key": "A",
+          "text": "0,50 mol"
+        },
+        {
+          "key": "B",
+          "text": "0,25 mol"
+        },
+        {
+          "key": "C",
+          "text": "0,75 mol"
+        },
+        {
+          "key": "D",
+          "text": "1,0 mol"
+        }
+      ],
+      "answer": "A",
+      "category": "egyensuly-kinetika",
+      "explanation": "Helyes: 0,50 mol. x² / (1,0 − x)² = 1,0 → x / (1,0 − x) = 1,0 → x = 0,50 mol.",
+      "wrongOptions": {
+        "B": "0,25 mol esetén K = 0,25² / 0,75² = 0,11 lenne.",
+        "C": "0,75 mol esetén K = 0,75² / 0,25² = 9,0 lenne.",
+        "D": "Megfordítható reakcióban a kiindulási anyag nem alakulhat át teljesen."
+      }
+    }
+  ],
+  "relatedCategories": [
+    "reakciotipus",
+    "szamolas-mertekegyseg"
+  ]
+}

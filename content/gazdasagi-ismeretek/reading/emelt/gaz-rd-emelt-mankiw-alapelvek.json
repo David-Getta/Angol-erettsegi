@@ -1,0 +1,135 @@
+{
+  "schemaVersion": 1,
+  "id": "gaz-rd-emelt-mankiw-alapelvek",
+  "subject": "gazdasagi-ismeretek",
+  "revision": 1,
+  "level": "emelt",
+  "source": "generated",
+  "topic": "alapfogalmak",
+  "title": "Mankiw 10 alapelve a gyakorlatban",
+  "createdAt": "2026-11-06",
+  "tags": [],
+  "section": "reading",
+  "type": "parositas",
+  "instructions": "Melyik Mankiw-alapelv jelenik meg az egyes helyzetekben? Írja a helyzet mellé az alapelv betűjelét! Minden betűjel csak egyszer használható, két betűjel felesleges. A 0. a megoldott példa.",
+  "options": [
+    {
+      "key": "A",
+      "text": "1. Az emberek választás elé kerülnek – nincs ingyen ebéd."
+    },
+    {
+      "key": "B",
+      "text": "2. Valaminek a költsége az, amiről lemondunk érte (alternatív költség)."
+    },
+    {
+      "key": "C",
+      "text": "3. A racionális emberek a határon gondolkodnak (marginális gondolkodás)."
+    },
+    {
+      "key": "D",
+      "text": "4. Az emberek reagálnak az ösztönzőkre."
+    },
+    {
+      "key": "E",
+      "text": "5. A kereskedelem mindkét fél számára előnyös lehet (win-win)."
+    },
+    {
+      "key": "F",
+      "text": "6. A piac általában jól szervezi a gazdaságot (láthatatlan kéz)."
+    },
+    {
+      "key": "G",
+      "text": "7. Az állam időnként javíthat a piac működésén (piaci kudarc, externáliák, közjavak)."
+    },
+    {
+      "key": "H",
+      "text": "8. Egy ország életszínvonala a termelékenységtől függ."
+    },
+    {
+      "key": "I",
+      "text": "9. Ha túl sok pénzt bocsátanak ki, nőnek az árak (infláció)."
+    },
+    {
+      "key": "J",
+      "text": "10. Rövid távon választani kell az infláció és a munkanélküliség között (trade-off)."
+    }
+  ],
+  "example": {
+    "id": "0",
+    "kind": "match",
+    "prompt": "Az állam túl sok pénzt bocsát ki, és emiatt országosan emelkednek az árak.",
+    "answer": "I",
+    "category": "alapelv-alkalmazas",
+    "explanation": "Helyes: I (9. elv). A diasor szerint Mankiw 9. elve: ha túl sok pénzt bocsátanak ki, nőnek az árak – ez az infláció."
+  },
+  "items": [
+    {
+      "id": "1",
+      "kind": "match",
+      "prompt": "Ha nő a cigaretta adója, az emberek kevesebb cigarettát vásárolnak.",
+      "answer": "D",
+      "category": "alapelv-alkalmazas",
+      "explanation": "Helyes: D (4. elv). Az adóemelés drágítja a cigarettát, az emberek pedig reagálnak erre az ösztönzőre: kevesebbet vásárolnak.",
+      "wrongOptions": {
+        "B": "Nem a lemondott lehetőség értékéről van szó, hanem arról, hogy a megváltozott ár (ösztönző) megváltoztatja a viselkedést."
+      }
+    },
+    {
+      "id": "2",
+      "kind": "match",
+      "prompt": "Egy magyar és egy német vállalat szerződést köt: mindegyik azt adja el a másiknak, amit jobban tud előállítani, és mindkettő jobban jár.",
+      "answer": "E",
+      "category": "alapelv-alkalmazas",
+      "explanation": "Helyes: E (5. elv). A kereskedelem win-win helyzet: mindkét fél nyer a cserével."
+    },
+    {
+      "id": "3",
+      "kind": "match",
+      "prompt": "A pékség azt mérlegeli, megéri-e még 100 kenyérrel többet sütni: ennek darabja 135 Ft-ba kerülne, miközben a kenyér ára 130 Ft.",
+      "answer": "C",
+      "category": "alapelv-alkalmazas",
+      "explanation": "Helyes: C (3. elv). A pékség a „még egy egység” többletköltségét veti össze a többlethasznával – ez a marginális (határ-) gondolkodás.",
+      "wrongOptions": {
+        "A": "Választás minden döntésben van, de itt a pótlólagos egység mérlegelése a lényeg, ez a 3. elv."
+      }
+    },
+    {
+      "id": "4",
+      "kind": "match",
+      "prompt": "Egy gyár szennyezi a folyót, a piac ezt magától nem orvosolja, ezért az állam tilalmat vezet be.",
+      "answer": "G",
+      "category": "alapelv-alkalmazas",
+      "explanation": "Helyes: G (7. elv). Ahol a piac önmagában nem hatékony (piaci kudarc, externáliák), ott az állam javíthat a működésén – pl. a környezetszennyezés tilalmával.",
+      "wrongOptions": {
+        "F": "A 6. elv a piac önszabályozásáról szól; itt éppen az a helyzet, amikor a piac magától nem oldja meg a problémát."
+      }
+    },
+    {
+      "id": "5",
+      "kind": "match",
+      "prompt": "Egy fejlett ország lakói azért élnek jobban, mert egy óra munkával sokkal több terméket és szolgáltatást állítanak elő.",
+      "answer": "H",
+      "category": "alapelv-alkalmazas",
+      "explanation": "Helyes: H (8. elv). Egy ország életszínvonala a termelékenységtől függ: minél többet állítanak elő egységnyi munkával, annál magasabb az életszínvonal."
+    },
+    {
+      "id": "6",
+      "kind": "match",
+      "prompt": "A kormány rövid távon az infláció csökkentésére törekszik, de tudja, hogy ezzel átmenetileg nőhet a munkanélküliség.",
+      "answer": "J",
+      "category": "alapelv-alkalmazas",
+      "explanation": "Helyes: J (10. elv). Rövid távon kompromisszum (trade-off) van az infláció és a munkanélküliség között – választani kell a kettő között.",
+      "wrongOptions": {
+        "I": "A 9. elv az infláció okáról (túl sok pénz) szól, nem az infláció és a munkanélküliség közötti választásról."
+      }
+    },
+    {
+      "id": "7",
+      "kind": "match",
+      "prompt": "A piacon mindenki a saját érdekét követi, mégis az árak révén összehangolódnak a vevők és az eladók döntései.",
+      "answer": "F",
+      "category": "alapelv-alkalmazas",
+      "explanation": "Helyes: F (6. elv). Ez a piac ereje, Adam Smith „láthatatlan keze”: az önérdekét követő szereplők döntéseit az árak hangolják össze."
+    }
+  ]
+}

@@ -1,0 +1,256 @@
+{
+  "schemaVersion": 1,
+  "id": "kem-gr-szamolas-mertekegyseg",
+  "subject": "kemia",
+  "revision": 1,
+  "level": "kozep",
+  "source": "generated",
+  "topic": "nyelvtan",
+  "title": "Számolás, mértékegység, kerekítés",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "grammar",
+  "type": "lesson",
+  "category": "szamolas-mertekegyseg",
+  "summaryHu": "A helyes gondolatmenet is pontot veszít, ha a mértékegységek nem egyeznek (cm³ és dm³, g és kg, kJ és J), ha a logaritmust vagy a hatványokat rosszul kezeled, vagy ha a végeredményt indokolatlanul sok vagy kevés értékes jegyre kerekíted. A javítási útmutató a végeredményt mértékegységgel, a megadott adatok pontosságának megfelelően várja. Ez a lecke az egységátváltásokat, a pH-számítás logaritmusát és a kerekítés szabályait foglalja össze.",
+  "rules": [
+    {
+      "title": "Mértékegységek és átváltások",
+      "explanation": "Térfogat: 1 dm³ = 1 liter = 1000 cm³ = 1000 ml; 1 m³ = 1000 dm³. Tömeg: 1 kg = 1000 g, 1 g = 1000 mg. Energia: 1 kJ = 1000 J. Nyomás: 1 kPa = 1000 Pa, 0,1 MPa = 100 kPa. Hőmérséklet: T(K) = t(°C) + 273 (pontosan 273,15). Töltés: 1 C = 1 A · 1 s, ezért Q = I · t, ahol t másodpercben értendő.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "250 cm³ = 0,250 dm³"
+        },
+        {
+          "en": "2,5 óra = 2,5 · 3600 s = 9000 s"
+        },
+        {
+          "en": "25 °C = 298 K"
+        }
+      ]
+    },
+    {
+      "title": "Értékes jegyek és kerekítés",
+      "explanation": "A végeredményt annyi értékes jegyre add meg, amennyit a legkevésbé pontos adat tartalmaz (jellemzően 3 értékes jegy). Számolás közben ne kerekíts durván: a részeredményeket 1–2 jeggyel pontosabban vidd tovább, és csak a végén kerekíts. Értékes jegy minden nem nulla számjegy, a köztük álló nulla és a tizedes tört végén álló nulla; a bevezető nullák nem értékesek (0,0250 → 3 értékes jegy).",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "0,0250 mol: 3 értékes jegy"
+        },
+        {
+          "en": "4,86 g / 24,3 g/mol = 0,200 mol",
+          "hu": "Nem 0,2 és nem 0,20000 – három értékes jegy, mint az adatok."
+        }
+      ]
+    },
+    {
+      "title": "Hatványok, normálalak",
+      "explanation": "Kis és nagy számokat normálalakban írunk: 6,0 · 10²³; 1,0 · 10⁻¹⁴. Szorzásnál a kitevők összeadódnak, osztásnál kivonódnak: 10⁻³ · 10⁻² = 10⁻⁵; 10⁻¹⁴ / 10⁻³ = 10⁻¹¹. A számológépen az EXP (×10ˣ) gombot használd a 10 hatványaihoz.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "[OH⁻] = 1,0 · 10⁻¹⁴ / (2,0 · 10⁻³) = 5,0 · 10⁻¹² mol/dm³"
+        },
+        {
+          "en": "N = 0,25 mol · 6,0 · 10²³ 1/mol = 1,5 · 10²³"
+        }
+      ]
+    },
+    {
+      "title": "pH és logaritmus",
+      "explanation": "pH = −lg[H₃O⁺], [H₃O⁺] = 10^(−pH). Ha a koncentráció 1 · 10⁻ⁿ mol/dm³, a pH = n; egyébként számológéppel: −lg(2,0 · 10⁻³) = 2,70. A pH tizedesjegyeinek száma a koncentráció értékes jegyeinek számával egyezik (2,0 · 10⁻³ → 2,70). A pH nem additív: két oldat keverésekor az anyagmennyiségeket kell összegezni, nem a pH-kat átlagolni.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "[H₃O⁺] = 5,0 · 10⁻⁴ mol/dm³ → pH = 3,30"
+        },
+        {
+          "en": "pH = 4,50 → [H₃O⁺] = 10^(−4,50) = 3,2 · 10⁻⁵ mol/dm³"
+        }
+      ]
+    },
+    {
+      "title": "Ellenőrzés és szöveges válasz",
+      "explanation": "A végén becsüld meg, reális-e az eredmény: a tömegszázalék 0 és 100 % között van, a pH vizes oldatokban jellemzően 0 és 14 között, a termék tömege nem lehet nagyobb az összes kiindulási anyag tömegénél, a kitermelés legfeljebb 100 %. Minden részfeladatot szöveges válasszal és mértékegységgel zárj – a javítási útmutatóban erre külön pont jár.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "„A keletkező oldat 9,32 tömegszázalékos magnézium-kloridra nézve.”"
+        }
+      ]
+    },
+    {
+      "title": "Mértékegységek a gáztörvényben és az elektrokémiában",
+      "explanation": "A p · V = n · R · T összefüggésben SI-egységek (Pa, m³, K) vagy a kPa–dm³ pár használható, mert kPa · dm³ = J. A Faraday-törvénynél n(e⁻) = Q / F = I · t / F, ahol F = 96 500 C/mol; a leváló anyag anyagmennyisége n = n(e⁻) / z (z az ion töltésszáma).",
+      "emeltOnly": true,
+      "examples": [
+        {
+          "en": "2,00 A, 30,0 perc: Q = 2,00 A · 1800 s = 3600 C → n(e⁻) = 0,0373 mol → Cu: 0,0187 mol = 1,18 g"
+        }
+      ]
+    }
+  ],
+  "commonMistakes": [
+    {
+      "wrong": "c = 0,050 mol / 200 cm³ = 0,00025 mol/dm³",
+      "right": "c = 0,050 mol / 0,200 dm³ = 0,25 mol/dm³",
+      "why": "Ha a koncentráció mol/dm³-ben kell, a térfogatot dm³-ben kell behelyettesíteni."
+    },
+    {
+      "wrong": "Q = I · t = 2 A · 30 perc = 60 C",
+      "right": "Q = 2 A · 1800 s = 3600 C",
+      "why": "A coulomb definíciója 1 A · 1 s, ezért az időt másodpercben kell megadni."
+    },
+    {
+      "wrong": "Két oldat pH-ja 2 és 4, egyenlő térfogatú keverékük pH-ja tehát 3.",
+      "right": "Az oxóniumionok anyagmennyiségét kell összegezni: [H₃O⁺] = (10⁻² + 10⁻⁴) / 2 ≈ 5,05 · 10⁻³ mol/dm³ → pH ≈ 2,30.",
+      "why": "A pH logaritmikus mennyiség, nem átlagolható."
+    },
+    {
+      "wrong": "Végeredmény: 4,9000816 dm³",
+      "right": "4,90 dm³",
+      "why": "Az adatok három értékes jegyűek, ezért a végeredményt is három értékes jegyre kell kerekíteni; a sok tizedesjegy nem pontosabb, csak indokolatlan."
+    },
+    {
+      "wrong": "A gáztörvénybe T = 25-öt helyettesítünk 25 °C-nál.",
+      "right": "T = 25 + 273 = 298 K",
+      "why": "A gáztörvényben abszolút (kelvinben mért) hőmérséklet kell."
+    }
+  ],
+  "examTips": [
+    "Mielőtt behelyettesítesz, írd fel az összefüggést mértékegységekkel; ha a mértékegységek nem egyszerűsödnek a kívánt egységre, rossz a képlet vagy az átváltás.",
+    "A számológépet a vizsga előtt próbáld ki (tizedesvessző, normálalak), és gyakorold rajta az lg és a 10ˣ műveletet.",
+    "Ha egy részeredményt elszámolsz, a hibás értéket továbbvivő, egyébként helyes gondolatmenet részpontot kap – ezért mindig írd le a lépéseket."
+  ],
+  "practice": [
+    {
+      "id": "1",
+      "kind": "text",
+      "prompt": "Hány dm³ 750 cm³?",
+      "answer": [
+        "0,750 dm³",
+        "0,75 dm³",
+        "0.750 dm³",
+        "0.75 dm³",
+        "0,750",
+        "0,75",
+        "0.750",
+        "0.75"
+      ],
+      "category": "szamolas-mertekegyseg",
+      "explanation": "Helyes: 0,750 dm³. 1 dm³ = 1000 cm³, ezért 750 / 1000 = 0,750 dm³.",
+      "maxWords": 2
+    },
+    {
+      "id": "2",
+      "kind": "text",
+      "prompt": "Mekkora annak az oldatnak a pH-ja, amelyben [H₃O⁺] = 1,0 · 10⁻⁵ mol/dm³?",
+      "answer": [
+        "5,00",
+        "5.00",
+        "5,0",
+        "5.0",
+        "5"
+      ],
+      "category": "szamolas-mertekegyseg",
+      "explanation": "Helyes: 5,00 (elfogadható az 5 is). pH = −lg(1,0 · 10⁻⁵) = 5,00 – a két értékes jegyű koncentrációhoz két tizedesjegyű pH tartozik.",
+      "maxWords": 1
+    },
+    {
+      "id": "3",
+      "kind": "choice",
+      "prompt": "Hány értékes jegyet tartalmaz a 0,04060 szám?",
+      "options": [
+        {
+          "key": "A",
+          "text": "2"
+        },
+        {
+          "key": "B",
+          "text": "4"
+        },
+        {
+          "key": "C",
+          "text": "3"
+        },
+        {
+          "key": "D",
+          "text": "6"
+        }
+      ],
+      "answer": "B",
+      "category": "szamolas-mertekegyseg",
+      "explanation": "Helyes: 4 (4, 0, 6, 0). A bevezető nullák nem értékesek, a számjegyek közötti és a tizedes tört végén álló nulla igen.",
+      "wrongOptions": {
+        "A": "A 4 és a 6 közötti, valamint a végén álló nulla is értékes jegy.",
+        "C": "A tizedes tört végén álló nulla is értékes jegy, mert a mérés pontosságát jelzi.",
+        "D": "A bevezető nullák (0,0…) csak a helyiértéket jelölik, nem értékesek."
+      }
+    },
+    {
+      "id": "4",
+      "kind": "choice",
+      "prompt": "Mekkora a hidroxidion-koncentráció abban az oldatban, amelynek pH-ja 11,0 (25 °C)?",
+      "options": [
+        {
+          "key": "A",
+          "text": "1,0 · 10⁻¹¹ mol/dm³"
+        },
+        {
+          "key": "B",
+          "text": "11 mol/dm³"
+        },
+        {
+          "key": "C",
+          "text": "1,0 · 10⁻³ mol/dm³"
+        },
+        {
+          "key": "D",
+          "text": "3,0 mol/dm³"
+        }
+      ],
+      "answer": "C",
+      "category": "szamolas-mertekegyseg",
+      "explanation": "Helyes: 1,0 · 10⁻³ mol/dm³. pOH = 14 − 11 = 3, így [OH⁻] = 10⁻³ mol/dm³.",
+      "wrongOptions": {
+        "A": "Ez az oxóniumion-koncentráció, nem a hidroxidioné.",
+        "B": "A pH nem koncentráció, hanem annak negatív logaritmusa.",
+        "D": "A pOH értéke 3, a koncentráció ebből 10⁻³ mol/dm³, nem 3 mol/dm³."
+      }
+    },
+    {
+      "id": "5",
+      "kind": "text",
+      "prompt": "Hány kelvin 37 °C? (egész számra)",
+      "answer": [
+        "310 K",
+        "310",
+        "310 kelvin"
+      ],
+      "category": "szamolas-mertekegyseg",
+      "explanation": "Helyes: 310 K. T = t + 273 = 37 + 273 = 310 K.",
+      "maxWords": 2
+    },
+    {
+      "id": "6",
+      "kind": "text",
+      "prompt": "Mennyi töltés halad át 0,500 A erősségű áramnál 16 perc 5 másodperc alatt? (coulombban) (emelt)",
+      "answer": [
+        "482,5 C",
+        "482.5 C",
+        "482,5",
+        "482.5",
+        "483 C",
+        "483"
+      ],
+      "category": "szamolas-mertekegyseg",
+      "explanation": "Helyes: 482,5 C. t = 16 · 60 s + 5 s = 965 s; Q = I · t = 0,500 A · 965 s = 482,5 C, ami éppen 0,00500 mol elektron töltése.",
+      "maxWords": 2
+    }
+  ],
+  "relatedCategories": [
+    "anyagmennyiseg",
+    "oldatok-szamitas"
+  ]
+}

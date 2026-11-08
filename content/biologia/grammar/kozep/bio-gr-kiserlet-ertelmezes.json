@@ -1,0 +1,251 @@
+{
+  "schemaVersion": 1,
+  "id": "bio-gr-kiserlet-ertelmezes",
+  "subject": "biologia",
+  "revision": 1,
+  "level": "kozep",
+  "source": "generated",
+  "topic": "nyelvtan",
+  "title": "Kísérletek értelmezése és tervezése",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "grammar",
+  "type": "lesson",
+  "category": "kiserlet-ertelmezes",
+  "summaryHu": "Kísérletelemzés minden biológiaérettségin van: a feladatlapon, a kifejtős részben (közép: kísérletelemzés, emelt: problémafeladat) és a szóbeli B tételben is. A javítók azt nézik, hogy fel tudod-e ismerni a hipotézist, a független, a függő és az állandó változókat, a kontrollt, és hogy a következtetés valóban az adatokból következik-e.",
+  "rules": [
+    {
+      "title": "Hipotézis",
+      "explanation": "A hipotézis ellenőrizhető feltevés arról, hogy egy tényező hogyan hat egy mérhető eredményre. Jó hipotézis: megnevezi a tényezőt, a hatás irányát és a mért jelenséget.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "„A hőmérséklet emelése 37 °C-ig gyorsítja a nyálamiláz keményítőbontását.”",
+          "hu": "Tényező + irány + eredmény."
+        },
+        {
+          "en": "Rossz: „Megnézzük, mi történik a keményítővel.”",
+          "hu": "Ez kérdés, nem hipotézis."
+        }
+      ]
+    },
+    {
+      "title": "Változók",
+      "explanation": "Független változó: amit a kísérletező szándékosan változtat. Függő változó: amit mér, és ami a független változótól függhet. Állandó (kontrollált) tényezők: minden más, amit azonos értéken tartunk. Egy kísérletben egyszerre csak egy független változót változtatunk.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "Csírázási kísérletben: független változó a sókoncentráció, függő változó a kicsírázott magok száma, állandó a hőmérséklet, a fény, a magok fajtája és száma.",
+          "hu": "Három szerep."
+        },
+        {
+          "en": "Ha a melegebb csésze több vizet is kap, nem tudjuk, melyik tényező hatott.",
+          "hu": "Két változó egyszerre – hibás terv."
+        }
+      ]
+    },
+    {
+      "title": "Kontroll",
+      "explanation": "A kontroll az a minta, amelyben a vizsgált tényező hiányzik (vagy alapértéken van), minden más azonos. Ehhez hasonlítjuk a kísérleti mintákat; nélküle nem tudjuk, hogy a változást valóban a vizsgált tényező okozta-e. Negatív kontroll: biztosan nincs hatás (pl. forralt enzim); pozitív kontroll: biztosan van hatás (pl. ismert enzim).",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "Keményítő + desztillált víz (nyál helyett) – negatív kontroll.",
+          "hu": "A keményítő magától nem bomlik."
+        },
+        {
+          "en": "A forralt burgonya kataláza nem bontja a peroxidot – bizonyítja, hogy a hatást a hőérzékeny enzim okozza.",
+          "hu": "Negatív kontroll."
+        }
+      ]
+    },
+    {
+      "title": "Megbízhatóság: ismétlés és mintaszám",
+      "explanation": "Egyetlen mérés véletlen hibát tartalmazhat. Párhuzamos minták (ismétlés) és nagyobb mintaszám (több mag, több egyed) után az átlag megbízhatóbb; a szórás mutatja az eredmények ingadozását.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "Minden koncentrációból három csészét indítunk, csészénként 25 maggal, és átlagolunk.",
+          "hu": "Ismétlés + mintaszám."
+        },
+        {
+          "en": "Két tanuló pulzusadataiból nem lehet általános következtetést levonni.",
+          "hu": "Kis minta."
+        }
+      ]
+    },
+    {
+      "title": "Következtetés és hibaforrás",
+      "explanation": "A következtetés az eredményekből levont, a hipotézist megerősítő vagy elvető állítás – csak arra vonatkozhat, amit a kísérlet vizsgált. A hibaforrás olyan tényező, amely a vizsgált tényezőtől függetlenül befolyásolhatta az eredményt (pl. hőingadozás, pontatlan mérés).",
+      "emeltOnly": true,
+      "examples": [
+        {
+          "en": "„Az eredmények alátámasztják a hipotézist: a vizsgált tartományban a sókoncentráció növekedésével csökkent a csírázási arány.”",
+          "hu": "Óvatos, adatokra épülő következtetés."
+        },
+        {
+          "en": "Hibaforrás: a csészék vize párolgott, ezért a sóoldat töményebb lett.",
+          "hu": "Konkrét hibaforrás."
+        }
+      ]
+    }
+  ],
+  "commonMistakes": [
+    {
+      "wrong": "A kontroll az a kémcső, amelyben semmi sem történik.",
+      "right": "A kontroll az a minta, amelyben a vizsgált tényező hiányzik, de minden más azonos.",
+      "why": "A kontrollban is történhet változás – a lényeg az összehasonlíthatóság."
+    },
+    {
+      "wrong": "A függő változó a hőmérséklet, mert attól függ a csírázás.",
+      "right": "A hőmérséklet a független változó (ezt állítjuk be), a csírázás a függő változó (ezt mérjük).",
+      "why": "A „függő” arra utal, ami a beállított tényezőtől függ."
+    },
+    {
+      "wrong": "A kísérlet bebizonyította, hogy a só minden növénynek árt.",
+      "right": "A kísérlet azt mutatta, hogy a vizsgált koncentrációkban a só csökkentette a retek csírázását.",
+      "why": "A következtetés nem terjeszthető ki más fajokra és körülményekre."
+    },
+    {
+      "wrong": "Egy csészébe teszek egy magot, mert így pontosan látom, kicsírázik-e.",
+      "right": "Csészénként sok magot és több párhuzamos csészét használok.",
+      "why": "Egy mag esetén a véletlen (pl. életképtelen mag) dönti el az eredményt."
+    },
+    {
+      "wrong": "A meleg csésze kapjon több vizet, mert jobban párolog.",
+      "right": "Minden csésze azonos mennyiségű vizet kapjon, a párolgást fedővel akadályozzuk meg.",
+      "why": "Két tényező egyidejű változtatásakor nem tudjuk, melyik hatott."
+    }
+  ],
+  "examTips": [
+    "Kísérletelemzésnél először írd fel: hipotézis, független változó, függő változó, állandó tényezők, kontroll – a kérdések többsége ezekre épül.",
+    "Kísérlettervezésnél (emelt problémafeladat, B tétel) ne felejtsd el az ismétlést, a mintaszámot és a várható eredményt – ezekre külön pont járhat.",
+    "A következtetésben használd az óvatos megfogalmazást („a vizsgált körülmények között”, „az adatok alátámasztják”), és nevezz meg legalább egy konkrét hibaforrást."
+  ],
+  "practice": [
+    {
+      "id": "1",
+      "kind": "choice",
+      "prompt": "Egy kísérletben átokhínár hajtását különböző távolságra helyezik a lámpától, és percenként számolják a felszálló buborékokat. Mi a független változó?",
+      "options": [
+        {
+          "key": "A",
+          "text": "a lámpa távolsága (a fényerősség)"
+        },
+        {
+          "key": "B",
+          "text": "a buborékok száma"
+        },
+        {
+          "key": "C",
+          "text": "a víz hőmérséklete"
+        },
+        {
+          "key": "D",
+          "text": "a hajtás mérete"
+        }
+      ],
+      "answer": "A",
+      "category": "kiserlet-ertelmezes",
+      "explanation": "Helyes: A. A kísérletező a lámpa távolságát változtatja, ezzel a fényerősséget; ez a független változó.",
+      "wrongOptions": {
+        "B": "A buborékok száma a mért, függő változó.",
+        "C": "A víz hőmérsékletét állandó értéken kell tartani (a lámpa melegíthet – ez hibaforrás).",
+        "D": "A hajtás mérete rögzített tényező; mindig ugyanazt a hajtást kell használni."
+      }
+    },
+    {
+      "id": "2",
+      "kind": "choice",
+      "prompt": "Melyik a jó kontroll egy olyan kísérletben, amely azt vizsgálja, hogy a nyál bontja-e a keményítőt?",
+      "options": [
+        {
+          "key": "A",
+          "text": "keményítőoldat + nyál, 37 °C"
+        },
+        {
+          "key": "B",
+          "text": "keményítőoldat + nyál, 0 °C"
+        },
+        {
+          "key": "C",
+          "text": "csak nyál, 37 °C"
+        },
+        {
+          "key": "D",
+          "text": "keményítőoldat + desztillált víz, 37 °C"
+        }
+      ],
+      "answer": "D",
+      "category": "kiserlet-ertelmezes",
+      "explanation": "Helyes: D. A kontrollban csak a vizsgált tényező (a nyál) hiányzik, minden más azonos; így igazolható, hogy a keményítő nem bomlik el magától.",
+      "wrongOptions": {
+        "A": "Ez maga a kísérleti minta, nem kontroll.",
+        "B": "Ez egy újabb kísérleti változó (a hőmérséklet hatása), nem a nyál hatásának kontrollja.",
+        "C": "Keményítő nélkül nincs mit összehasonlítani; két tényező változik."
+      }
+    },
+    {
+      "id": "3",
+      "kind": "text",
+      "prompt": "Hogyan nevezzük a kísérletben azt a tényezőt, amelyet a kísérletező mér, és amely a beállított tényezőtől függhet?",
+      "answer": [
+        "függő változó",
+        "a függő változó",
+        "függő"
+      ],
+      "category": "kiserlet-ertelmezes",
+      "explanation": "Helyes: függő változó. Például a csírázási kísérletben a kicsírázott magok száma, az enzimkísérletben a keletkező gáz térfogata.",
+      "maxWords": 3
+    },
+    {
+      "id": "4",
+      "kind": "choice",
+      "prompt": "Miért kell egy csírázási kísérletben csészénként sok magot használni?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Hogy gyorsabban csírázzanak."
+        },
+        {
+          "key": "B",
+          "text": "Mert a kevés mag nem fér el a csészében."
+        },
+        {
+          "key": "C",
+          "text": "Hogy a magok melegítsék egymást."
+        },
+        {
+          "key": "D",
+          "text": "Hogy csökkenjen a véletlen (pl. életképtelen magok) hatása, és megbízhatóbb legyen az eredmény."
+        }
+      ],
+      "answer": "D",
+      "category": "kiserlet-ertelmezes",
+      "explanation": "Helyes: D. Nagyobb mintaszámnál egy-egy eleve életképtelen vagy rendellenes mag kevésbé torzítja az arányt.",
+      "wrongOptions": {
+        "A": "A magok száma nem gyorsítja a csírázást.",
+        "B": "A mintaszám a megbízhatóság miatt fontos, nem helykérdés.",
+        "C": "A magok nem melegítik érdemben egymást; a hőmérsékletet a termosztát biztosítja."
+      }
+    },
+    {
+      "id": "5",
+      "kind": "text",
+      "prompt": "Egy diák hipotézise: „A fény szükséges a babszemek csírázásához.” Két csészét indít: az egyiket világosban, a másikat sötétben, minden más azonos. Mindkettőben 18–18 mag csírázik ki a 20-ból. Elfogadható-e a hipotézis? (igen/nem)",
+      "answer": [
+        "nem",
+        "nem fogadható el",
+        "elvetendő"
+      ],
+      "category": "kiserlet-ertelmezes",
+      "explanation": "Helyes: nem. A sötétben is ugyanannyi mag csírázott ki, tehát a bab csírázásához a fény nem szükséges – a hipotézist az adatok cáfolják.",
+      "maxWords": 3
+    }
+  ],
+  "relatedCategories": [
+    "abra-adatelemzes",
+    "szovegertelmezes",
+    "anyagcsere-folyamat"
+  ]
+}

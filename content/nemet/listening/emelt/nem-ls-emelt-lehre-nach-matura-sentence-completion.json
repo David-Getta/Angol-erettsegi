@@ -1,0 +1,258 @@
+{
+  "schemaVersion": 1,
+  "id": "nem-ls-emelt-lehre-nach-matura-sentence-completion",
+  "subject": "nemet",
+  "revision": 1,
+  "level": "emelt",
+  "source": "generated",
+  "topic": "iskola",
+  "title": "Nach der Matura in die Werkstatt",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "listening",
+  "type": "sentence-completion",
+  "instructions": "Sie hören ein Radiointerview mit einer jungen Frau, die nach der Matura eine Lehre macht. Ergänzen Sie die Sätze (1–10) mit höchstens DREI Wörtern. Sie hören den Text zweimal. Am Anfang finden Sie ein Beispiel (0).",
+  "instructionsHu": "Egy rádióinterjút hallasz egy fiatal nővel, aki az érettségi után szakmát tanul. Egészítsd ki a mondatokat legfeljebb HÁROM szóval. A felvételt kétszer hallod.",
+  "listening": {
+    "format": "interview",
+    "speakers": [
+      {
+        "id": "M",
+        "name": "Moderator",
+        "gender": "male",
+        "accent": "de-AT",
+        "age": "adult"
+      },
+      {
+        "id": "L",
+        "name": "Lena Gruber",
+        "gender": "female",
+        "accent": "de-AT",
+        "age": "young"
+      }
+    ],
+    "script": [
+      {
+        "speaker": "M",
+        "text": "Servus und willkommen bei „Jugend im Gespräch“. Die meisten Jugendlichen in Österreich, die Matura machen, gehen danach an die Uni. Nicht so Lena Gruber. Die Neunzehnjährige aus Linz macht seit einem Jahr eine Lehre als Tischlerin. Lena, warum hast du dich dafür entschieden?"
+      },
+      {
+        "speaker": "L",
+        "text": "Ehrlich gesagt war das kein Plan, sondern eher ein Zufall. Nach der Matura wollte ich eigentlich Architektur studieren. Vorher habe ich aber im Sommer in der Werkstatt meines Onkels ausgeholfen, und da habe ich gemerkt: Ich will nicht nur zeichnen, ich will etwas mit meinen Händen bauen."
+      },
+      {
+        "speaker": "M",
+        "text": "Wie haben deine Eltern reagiert?"
+      },
+      {
+        "speaker": "L",
+        "text": "Meine Mutter war am Anfang schockiert. Sie hat gesagt: „Du hast doch nicht acht Jahre Gymnasium gemacht, um jetzt Holz zu schleifen!“ Mein Vater hat es lockerer gesehen, er ist nämlich selbst Elektriker. Inzwischen ist auch meine Mutter stolz, vor allem seit ich ihr einen Esstisch gebaut habe."
+      },
+      {
+        "speaker": "M",
+        "text": "Wie sieht dein Alltag aus?"
+      },
+      {
+        "speaker": "L",
+        "text": "Ich bin vier Tage pro Woche im Betrieb, das ist eine kleine Tischlerei mit acht Mitarbeitern. Einen Tag pro Woche gehe ich in die Berufsschule. Dort lernen wir Theorie: Materialkunde, technisches Zeichnen, aber auch Mathematik. Weil ich die Matura habe, dauert meine Lehre nur zwei statt drei Jahre."
+      },
+      {
+        "speaker": "M",
+        "text": "Und was verdienst du?"
+      },
+      {
+        "speaker": "L",
+        "text": "Im ersten Lehrjahr waren es ungefähr 800 Euro netto im Monat. Das ist nicht viel, aber ich wohne noch bei meinen Eltern, und es reicht für mein Auto und ein bisschen Urlaub. Viele meiner Freundinnen an der Uni haben gar kein eigenes Einkommen."
+      },
+      {
+        "speaker": "M",
+        "text": "Gibt es auch Schattenseiten?"
+      },
+      {
+        "speaker": "L",
+        "text": "Klar. Ich muss um halb sechs aufstehen, weil die Arbeit um sieben beginnt. Und die Arbeit ist körperlich anstrengend. Am Anfang hatte ich jeden Abend Rückenschmerzen. Außerdem bin ich die einzige Frau in der Werkstatt. Die Kollegen sind nett, aber manche Kunden sind überrascht, wenn ich komme, um eine Küche zu montieren. Einer hat mich mal gefragt, wann denn der Tischler kommt."
+      },
+      {
+        "speaker": "M",
+        "text": "Und was hast du geantwortet?"
+      },
+      {
+        "speaker": "L",
+        "text": "Dass er schon da ist. Danach war er übrigens sehr freundlich."
+      },
+      {
+        "speaker": "M",
+        "text": "Was sind deine Pläne nach der Lehre?"
+      },
+      {
+        "speaker": "L",
+        "text": "Ich möchte zuerst ein paar Jahre Erfahrung sammeln, vielleicht auch im Ausland, in Norwegen werden zum Beispiel gute Tischler gesucht. Später will ich die Meisterprüfung machen. Mit dem Meistertitel darf man in Österreich einen eigenen Betrieb führen und selbst Lehrlinge ausbilden. Und wer weiß, vielleicht studiere ich irgendwann doch noch Architektur, dann aber mit viel mehr Praxiswissen."
+      },
+      {
+        "speaker": "M",
+        "text": "Was rätst du anderen Maturantinnen und Maturanten?"
+      },
+      {
+        "speaker": "L",
+        "text": "Nicht automatisch an die Uni zu gehen, nur weil es alle machen. Probiert in den Ferien verschiedene Sachen aus. Ein Praktikum von zwei Wochen sagt manchmal mehr als zehn Berufstests im Internet."
+      }
+    ]
+  },
+  "example": {
+    "id": "0",
+    "kind": "text",
+    "prompt": "Nach der Matura wollte Lena eigentlich ______ studieren.",
+    "answer": [
+      "Architektur"
+    ],
+    "maxWords": 3,
+    "category": "detail",
+    "explanation": "A helyes válasz: Architektur. Lena eredetileg építészetet akart tanulni.",
+    "evidence": "Nach der Matura wollte ich eigentlich Architektur studieren."
+  },
+  "items": [
+    {
+      "id": "1",
+      "kind": "text",
+      "prompt": "Im Sommer hat Lena in der Werkstatt ______ ausgeholfen.",
+      "answer": [
+        "ihres Onkels",
+        "des Onkels",
+        "von ihrem Onkel"
+      ],
+      "maxWords": 3,
+      "category": "detail",
+      "explanation": "A helyes válasz: ihres Onkels (a nagybátyja műhelyében). A „Werkstatt” után birtokos eset áll, ezért a „mein Onkel” → ihres Onkels; a „von ihrem Onkel” is elfogadható.",
+      "evidence": "in der Werkstatt meines Onkels ausgeholfen"
+    },
+    {
+      "id": "2",
+      "kind": "text",
+      "prompt": "Lenas Mutter ist besonders stolz, seit Lena ihr ______ gebaut hat.",
+      "answer": [
+        "einen Esstisch",
+        "Esstisch",
+        "einen Tisch",
+        "den Esstisch"
+      ],
+      "maxWords": 3,
+      "category": "detail",
+      "explanation": "A helyes válasz: einen Esstisch (egy étkezőasztalt). Az anyja eleinte sokkolta a döntés, de mióta Lena asztalt készített neki, büszke rá.",
+      "evidence": "vor allem seit ich ihr einen Esstisch gebaut habe"
+    },
+    {
+      "id": "3",
+      "kind": "text",
+      "prompt": "Lenas Vater ist von Beruf ______.",
+      "answer": [
+        "Elektriker"
+      ],
+      "maxWords": 3,
+      "category": "detail",
+      "explanation": "A helyes válasz: Elektriker (villanyszerelő). Ezért fogadta lazábban, hogy Lena szakmát tanul.",
+      "evidence": "er ist nämlich selbst Elektriker"
+    },
+    {
+      "id": "4",
+      "kind": "text",
+      "prompt": "An einem Tag pro Woche besucht Lena ______.",
+      "answer": [
+        "die Berufsschule",
+        "Berufsschule",
+        "eine Berufsschule"
+      ],
+      "maxWords": 3,
+      "category": "detail",
+      "explanation": "A helyes válasz: die Berufsschule (szakiskola). Négy napot dolgozik az üzemben, egy napot a szakiskolában tölt, ahol elméletet tanul.",
+      "evidence": "Einen Tag pro Woche gehe ich in die Berufsschule."
+    },
+    {
+      "id": "5",
+      "kind": "text",
+      "prompt": "Wegen der Matura dauert Lenas Lehre nur ______.",
+      "answer": [
+        "zwei Jahre",
+        "2 Jahre"
+      ],
+      "maxWords": 3,
+      "category": "detail",
+      "explanation": "A helyes válasz: zwei Jahre. Az érettségi miatt a szokásos három helyett csak két évig tart a tanulóidő.",
+      "evidence": "dauert meine Lehre nur zwei statt drei Jahre"
+    },
+    {
+      "id": "6",
+      "kind": "text",
+      "prompt": "Von ihrem Lohn bezahlt Lena vor allem ______ und ein bisschen Urlaub.",
+      "answer": [
+        "ihr Auto",
+        "das Auto",
+        "Auto",
+        "ein Auto"
+      ],
+      "maxWords": 3,
+      "category": "detail",
+      "explanation": "A helyes válasz: ihr Auto. Mivel még a szüleinél lakik, a fizetéséből az autójára és egy kis nyaralásra futja.",
+      "evidence": "es reicht für mein Auto und ein bisschen Urlaub"
+    },
+    {
+      "id": "7",
+      "kind": "text",
+      "prompt": "In den ersten Wochen hatte Lena abends oft ______.",
+      "answer": [
+        "Rückenschmerzen",
+        "Schmerzen im Rücken"
+      ],
+      "maxWords": 3,
+      "category": "detail",
+      "explanation": "A helyes válasz: Rückenschmerzen (hátfájás). A munka fizikailag megterhelő, eleinte minden este fájt a háta.",
+      "evidence": "Am Anfang hatte ich jeden Abend Rückenschmerzen."
+    },
+    {
+      "id": "8",
+      "kind": "text",
+      "prompt": "Ein Kunde hat Lena einmal gefragt, wann ______ kommt.",
+      "answer": [
+        "der Tischler",
+        "Tischler",
+        "denn der Tischler"
+      ],
+      "maxWords": 3,
+      "category": "inference",
+      "explanation": "A helyes válasz: der Tischler. Az ügyfél nem gondolta, hogy egy nő az asztalos – Lena azt felelte, hogy az asztalos már itt van.",
+      "evidence": "Einer hat mich mal gefragt, wann denn der Tischler kommt."
+    },
+    {
+      "id": "9",
+      "kind": "text",
+      "prompt": "Mit dem Meistertitel darf man ______ führen und Lehrlinge ausbilden.",
+      "answer": [
+        "einen eigenen Betrieb",
+        "eigenen Betrieb",
+        "einen Betrieb",
+        "ein eigenes Unternehmen",
+        "eine eigene Firma",
+        "eine eigene Werkstatt"
+      ],
+      "maxWords": 3,
+      "category": "detail",
+      "explanation": "A helyes válasz: einen eigenen Betrieb (saját üzemet/vállalkozást). Ausztriában a mestervizsgával lehet saját üzemet vezetni és tanulókat képezni.",
+      "evidence": "Mit dem Meistertitel darf man in Österreich einen eigenen Betrieb führen und selbst Lehrlinge ausbilden."
+    },
+    {
+      "id": "10",
+      "kind": "text",
+      "prompt": "Lena meint, dass ______ manchmal mehr sagt als viele Berufstests im Internet.",
+      "answer": [
+        "ein Praktikum",
+        "ein zweiwöchiges Praktikum",
+        "ein kurzes Praktikum",
+        "Praktikum"
+      ],
+      "maxWords": 3,
+      "category": "attitude",
+      "explanation": "A helyes válasz: ein Praktikum. Szerinte egy kéthetes szakmai gyakorlat többet elárul, mint tíz internetes pályaorientációs teszt.",
+      "evidence": "Ein Praktikum von zwei Wochen sagt manchmal mehr als zehn Berufstests im Internet."
+    }
+  ],
+  "suggestedMinutes": 9
+}

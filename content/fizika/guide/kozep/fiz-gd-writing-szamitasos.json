@@ -1,0 +1,147 @@
+{
+  "schemaVersion": 1,
+  "id": "fiz-gd-writing-szamitasos",
+  "subject": "fizika",
+  "revision": 1,
+  "level": "kozep",
+  "source": "generated",
+  "topic": "utmutato",
+  "title": "Számításos feladat",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "guide",
+  "type": "writing",
+  "target": "szamitasos",
+  "summaryHu": "A számításos feladat egy fizikai helyzet több részkérdésre bontott kiszámítása (közép: 17 pont, 3–4 részkérdés; emelt: a III. rész feladatai, 11–12 pont). A javítók négy szempontot néznek: a részeredmények helyességét, a gondolatmenetet és az indoklást (melyik törvényt miért használod), a számolás pontosságát, valamint a szöveges választ mértékegységgel és ellenőrzéssel.",
+  "steps": [
+    {
+      "title": "Értsd meg a helyzetet",
+      "explanation": "Olvasd el a teljes feladatot, és döntsd el, milyen folyamatról van szó (egyenletesen gyorsuló mozgás, körmozgás, ütközés, áramkör, gázfolyamat). Készíts vázlatrajzot az erőkkel, sebességekkel, irányokkal.",
+      "tips": [
+        "A rajzon jelöld a pozitív irányt.",
+        "Gondold végig, milyen megmaradási törvény érvényes."
+      ]
+    },
+    {
+      "title": "Adatok és SI-átváltás",
+      "explanation": "Írd ki az adatokat jelöléssel, és váltsd SI-be (km/h → m/s, cm → m, °C → K, kWh → J). A rejtett adatokat is (v₀ = 0, a = 0, Q = 0).",
+      "tips": [
+        "Külön sorban írd az átváltásokat – így a javító is látja.",
+        "Jelöld a keresett mennyiséget kérdőjellel."
+      ]
+    },
+    {
+      "title": "Törvény és képlet",
+      "explanation": "Minden részkérdésnél nevezd meg a felhasznált törvényt, és írd fel a képletet általános alakban, mielőtt számokat helyettesítesz be. Az ismeretlent algebrailag fejezd ki.",
+      "tips": [
+        "„Newton II. törvénye szerint…”, „Az energiamegmaradás miatt…”.",
+        "Ha több képlet kell, láncold őket, és a részeredményt jól láthatóan írd ki."
+      ]
+    },
+    {
+      "title": "Behelyettesítés és számolás",
+      "explanation": "Helyettesíts be egységekkel együtt, és csak a végén kerekíts 2–3 értékes jegyre (vagy ahogy a feladat kéri).",
+      "tips": [
+        "A pontos részeredményt vidd tovább, ne a kerekítettet.",
+        "Normálalaknál figyelj a kitevőkre."
+      ]
+    },
+    {
+      "title": "Válasz és ellenőrzés",
+      "explanation": "Minden részkérdés végén írj szöveges választ mértékegységgel. Ellenőrizz: nagyságrend, mértékegység, határeset, vagy második módszer (pl. munkatétel az energiára).",
+      "tips": [
+        "„Az autó lassulása 5 m/s².”",
+        "Ha az eredmény irreális, keresd meg az átváltási hibát."
+      ]
+    }
+  ],
+  "phrases": [
+    {
+      "group": "Adatok",
+      "en": "Adatok: m = …, v₀ = … km/h = … m/s",
+      "hu": "Az első sor: adatok SI-ben."
+    },
+    {
+      "group": "Mozgás",
+      "en": "v² − v₀² = 2·a·s",
+      "hu": "Egyenletesen változó mozgás, ha az idő nem ismert."
+    },
+    {
+      "group": "Dinamika",
+      "en": "F_e = m·a",
+      "hu": "Newton II. törvénye – az eredő erővel."
+    },
+    {
+      "group": "Energia",
+      "en": "m·g·h = ½·m·v² (súrlódás nélkül)",
+      "hu": "Mechanikai energiamegmaradás."
+    },
+    {
+      "group": "Körmozgás",
+      "en": "F_cp = m·v²/r",
+      "hu": "A körpályán tartó eredő erő."
+    },
+    {
+      "group": "Lendület",
+      "en": "m₁·v₁ + m₂·v₂ = (m₁ + m₂)·u",
+      "hu": "Tökéletesen rugalmatlan ütközés."
+    },
+    {
+      "group": "Elektromosság",
+      "en": "P = U·I, R = U/I, E = P·t",
+      "hu": "Áramkörös számítások."
+    },
+    {
+      "group": "Hőtan",
+      "en": "Q = c·m·ΔT; p·V = n·R·T",
+      "hu": "Melegítés, gázok."
+    },
+    {
+      "group": "Válasz",
+      "en": "Válasz: …",
+      "hu": "Szöveges válasz mértékegységgel."
+    }
+  ],
+  "mistakes": [
+    {
+      "wrong": "s = v·t-vel számolom a fékutat.",
+      "right": "Egyenletesen lassuló mozgásnál s = (v₀ + v)/2 · t vagy s = v₀²/(2a).",
+      "why": "Az s = v·t csak állandó sebességre igaz."
+    },
+    {
+      "wrong": "A hatásfokkal szorzom a hasznos hőt, hogy megkapjam a felvett energiát.",
+      "right": "A felvett energia E = Q_hasznos/η, ami nagyobb a hasznosnál.",
+      "why": "A befektetett energia mindig nagyobb a hasznosnál."
+    },
+    {
+      "wrong": "A részeredményt 1 tizedesre kerekítem, majd négyzetre emelem.",
+      "right": "A pontos részeredményt viszem tovább, és csak a végén kerekítek.",
+      "why": "A korai kerekítés hibája felnagyítódik."
+    },
+    {
+      "wrong": "Mértékegység nélkül adom meg a végeredményt.",
+      "right": "Minden eredmény mellett ott a mértékegység.",
+      "why": "A „forma” szempontra mértékegység nélkül nem jár pont."
+    }
+  ],
+  "checklist": [
+    "Az adatokat SI-ben, külön sorban írtam ki.",
+    "Minden lépésnél megneveztem a törvényt.",
+    "A képleteket általános alakban is felírtam.",
+    "A végeredményeket a kért pontossággal kerekítettem.",
+    "Minden részkérdésnél van szöveges válasz mértékegységgel.",
+    "Legalább egy eredményt ellenőriztem."
+  ],
+  "timing": "Középszinten kb. 35 perc: 5 perc értelmezés és adatgyűjtés, 25 perc megoldás, 5 perc ellenőrzés. Emelt szinten egy III. részbeli feladatra szintén kb. 35 perc jut; a többlépéses részkérdéseknél először vázold a gondolatmenetet, és csak utána számolj.",
+  "example": {
+    "title": "Minta: egy részkérdés teljes megoldása",
+    "text": "c) Vízszintes irányban az eredő erő a fékezőerő, Newton II. törvénye szerint F = m·a = 1200 kg · 5 m/s² = 6000 N.\nEllenőrzés a munkatétellel: F·s = 6000 N · 40 m = 240 kJ = ½·m·v₀² = ½ · 1200 · 20² J.\nA fékezőerő 6000 N.",
+    "notes": [
+      "Törvény + képlet + behelyettesítés egységgel + ellenőrzés + szöveges válasz – mind a négy szempont pontjait hozza."
+    ]
+  },
+  "levelNotes": {
+    "kozep": "Középszinten a számításos feladat kötelező, 17 pontos (eredmény 8, indoklás 4, számolás 3, forma 2): egy témára épül, 3–4 részkérdéssel, többnyire egy-két lépéses számolással.",
+    "emelt": "Emelt szinten a III. rész számításos feladatai 11–12 pontosak (eredmény 6, indoklás 3, számolás 2, forma 0–1), többlépésesek és témakörökön átívelők (pl. energiamegmaradás + körmozgás dinamikája, gáztörvény + hidrosztatika)."
+  }
+}

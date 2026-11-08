@@ -1,0 +1,83 @@
+{
+  "schemaVersion": 1,
+  "id": "mat-rd-emelt-egyenletek-megoldasa",
+  "subject": "matematika",
+  "revision": 1,
+  "level": "emelt",
+  "source": "generated",
+  "topic": "egyenletek",
+  "title": "Egyenletek, egyenlőtlenségek, egyenletrendszer – eredmények",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "reading",
+  "type": "rovid-szamitas",
+  "instructions": "Oldd meg az egyenleteket a valós számok halmazán, és csak a kért eredményt írd be. Ahol több gyök van, a kérdés mondja meg, mit kell megadni. A 0. feladat a kidolgozott példa.",
+  "example": {
+    "id": "0",
+    "kind": "text",
+    "prompt": "Oldd meg: 2x − 5 = 11.",
+    "answer": ["8", "x = 8"],
+    "category": "egyenlet-rendezes",
+    "explanation": "Mindkét oldalhoz 5-öt adva 2x = 16, majd 2-vel osztva x = 8. Ellenőrzés: 2·8 − 5 = 11."
+  },
+  "items": [
+    {
+      "id": "1",
+      "kind": "text",
+      "prompt": "Hány valós megoldása van az x⁴ − 5x² + 4 = 0 egyenletnek?",
+      "answer": ["4", "4 db"],
+      "category": "egyenlet-rendezes",
+      "explanation": "Legyen y = x² (y ≥ 0): y² − 5y + 4 = 0, gyökei y = 1 és y = 4 (Viète: összegük 5, szorzatuk 4). x² = 1 → x = ±1; x² = 4 → x = ±2. Összesen 4 valós megoldás."
+    },
+    {
+      "id": "2",
+      "kind": "text",
+      "prompt": "Oldd meg: √(x + 3) = x − 3. Add meg a megoldást!",
+      "answer": ["6", "x = 6"],
+      "category": "ellenorzes",
+      "explanation": "Négyzetre emelve (x − 3 ≥ 0 feltétellel): x + 3 = x² − 6x + 9 → x² − 7x + 6 = 0 → x = 1 vagy x = 6. Az x = 1 hamis gyök, mert √4 = 2 ≠ 1 − 3 = −2. Az x = 6 jó: √9 = 3 = 6 − 3. Egyetlen megoldás: x = 6."
+    },
+    {
+      "id": "3",
+      "kind": "text",
+      "prompt": "Oldd meg: 2ˣ⁺¹ = 32.",
+      "answer": ["4", "x = 4"],
+      "category": "tortek-hatvanyok",
+      "explanation": "32 = 2⁵, és az exponenciális függvény szigorúan monoton, ezért a kitevők egyenlők: x + 1 = 5, azaz x = 4."
+    },
+    {
+      "id": "4",
+      "kind": "text",
+      "prompt": "Oldd meg: log₃(x − 1) = 2.",
+      "answer": ["10", "x = 10"],
+      "category": "definicio-tetel",
+      "explanation": "A logaritmus definíciója szerint x − 1 = 3² = 9, így x = 10. Az értelmezési tartomány (x − 1 > 0, azaz x > 1) teljesül."
+    },
+    {
+      "id": "5",
+      "kind": "text",
+      "prompt": "Hány egész szám elégíti ki az |x − 2| ≤ 3 egyenlőtlenséget?",
+      "answer": ["7", "7 db"],
+      "category": "egyenlet-rendezes",
+      "explanation": "|x − 2| ≤ 3 azt jelenti, hogy x legfeljebb 3 távolságra van a 2-től: −3 ≤ x − 2 ≤ 3 → −1 ≤ x ≤ 5. Az egészek: −1, 0, 1, 2, 3, 4, 5 – ez 7 szám."
+    },
+    {
+      "id": "6",
+      "kind": "text",
+      "prompt": "Oldd meg az egyenletrendszert: x + y = 7 és x − y = 1. Add meg az x·y szorzat értékét!",
+      "answer": ["12"],
+      "category": "szamolasi-hiba",
+      "explanation": "A két egyenletet összeadva 2x = 8, x = 4; visszahelyettesítve y = 3. A szorzat: x·y = 4·3 = 12."
+    },
+    {
+      "id": "7",
+      "kind": "text",
+      "prompt": "Hány egész szám eleme az (x − 1)(x + 4) ≤ 0 egyenlőtlenség megoldáshalmazának?",
+      "answer": ["6", "6 db"],
+      "category": "fuggveny-abrazolas",
+      "explanation": "A szorzat zérushelyei 1 és −4; a felfelé nyíló parabola a két zérushely között nem pozitív, így −4 ≤ x ≤ 1. Az egészek: −4, −3, −2, −1, 0, 1 – 6 darab."
+    }
+  ],
+  "glossary": [],
+  "suggestedMinutes": 15
+}

@@ -1,0 +1,124 @@
+{
+  "schemaVersion": 1,
+  "id": "dig-rd-kozep-sql-kulcsszavak",
+  "subject": "digitalis-kultura",
+  "revision": 1,
+  "level": "kozep",
+  "source": "generated",
+  "topic": "adatbazis",
+  "title": "SQL-kulcsszavak és adatbázis-fogalmak",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "reading",
+  "type": "rovid-valasz",
+  "instructions": "A kérdések egy iskolai adatbázis tanulo(azon, nev, osztaly, szulev, atlag) táblájára vonatkoznak. Írja be a kért SQL-kulcsszót, függvényt vagy fogalmat! A 0. a példa.",
+  "example": {
+    "id": "0",
+    "kind": "text",
+    "prompt": "Melyik SQL-kulcsszóval kezdődik az adatokat lekérdező utasítás?",
+    "answer": [
+      "SELECT"
+    ],
+    "category": "adatbazis-lekerdezes",
+    "explanation": "SELECT: utána soroljuk fel a megjelenítendő mezőket, pl. SELECT nev, osztaly FROM tanulo; a FROM után a tábla neve áll.",
+    "maxWords": 2
+  },
+  "items": [
+    {
+      "id": "1",
+      "kind": "text",
+      "prompt": "Melyik kulcsszó után adjuk meg a szűrési feltételt (pl. csak a 10.A osztály tanulói)?",
+      "answer": [
+        "WHERE"
+      ],
+      "category": "adatbazis-lekerdezes",
+      "explanation": "WHERE: SELECT nev FROM tanulo WHERE osztaly = '10.A'; A WHERE a csoportosítás előtt, rekordonként szűr.",
+      "maxWords": 2
+    },
+    {
+      "id": "2",
+      "kind": "text",
+      "prompt": "Melyik kulcsszópárral rendezzük a lekérdezés eredményét?",
+      "answer": [
+        "ORDER BY"
+      ],
+      "category": "adatbazis-lekerdezes",
+      "explanation": "ORDER BY: SELECT nev, atlag FROM tanulo ORDER BY nev; Alapértelmezés szerint növekvő (ASC) sorrendben rendez.",
+      "maxWords": 3
+    },
+    {
+      "id": "3",
+      "kind": "text",
+      "prompt": "Melyik kulcsszót írjuk az ORDER BY után álló mezőnév mögé, ha csökkenő sorrendet szeretnénk?",
+      "answer": [
+        "DESC"
+      ],
+      "category": "adatbazis-lekerdezes",
+      "explanation": "DESC (descending): ORDER BY atlag DESC – a legjobb átlag lesz elöl. A növekvő sorrend kulcsszava az ASC, de ez az alapértelmezés.",
+      "maxWords": 2
+    },
+    {
+      "id": "4",
+      "kind": "text",
+      "prompt": "Melyik összesítő függvény számolja meg a rekordokat (pl. hány tanuló van)?",
+      "answer": [
+        "COUNT",
+        "COUNT(*)",
+        "COUNT()"
+      ],
+      "category": "adatbazis-lekerdezes",
+      "explanation": "COUNT: SELECT COUNT(*) FROM tanulo; A COUNT(*) minden rekordot megszámol, a COUNT(mezo) csak azokat, ahol a mező nem üres (nem NULL).",
+      "maxWords": 2
+    },
+    {
+      "id": "5",
+      "kind": "text",
+      "prompt": "Melyik kulcsszópárral csoportosítjuk a rekordokat, pl. hogy osztályonként kapjunk átlagot?",
+      "answer": [
+        "GROUP BY"
+      ],
+      "category": "adatbazis-lekerdezes",
+      "explanation": "GROUP BY: SELECT osztaly, AVG(atlag) FROM tanulo GROUP BY osztaly; Minden osztályból egy sor lesz, az összesítő függvény csoportonként számol.",
+      "maxWords": 3
+    },
+    {
+      "id": "6",
+      "kind": "text",
+      "prompt": "Hogy hívjuk azt a mezőt (mezőket), amely a tábla minden rekordját egyértelműen azonosítja?",
+      "answer": [
+        "elsődleges kulcs",
+        "primary key",
+        "elsődleges kulcsmező"
+      ],
+      "category": "adatbazis-lekerdezes",
+      "explanation": "Elsődleges kulcs (primary key), itt az azon mező: értéke minden rekordnál különböző és nem lehet üres. A nev nem jó kulcs, mert két tanulónak lehet ugyanaz a neve.",
+      "maxWords": 3
+    },
+    {
+      "id": "7",
+      "kind": "text",
+      "prompt": "Melyik kulcsszóval hagyjuk ki az eredményből az ismétlődő sorokat (pl. az osztályok listájánál minden osztály csak egyszer szerepeljen)?",
+      "answer": [
+        "DISTINCT",
+        "SELECT DISTINCT"
+      ],
+      "category": "adatbazis-lekerdezes",
+      "explanation": "DISTINCT: SELECT DISTINCT osztaly FROM tanulo; Nélküle minden tanuló sorában megjelenne az osztálya, vagyis ugyanaz az osztály többször.",
+      "maxWords": 2
+    },
+    {
+      "id": "8",
+      "kind": "text",
+      "prompt": "Melyik összesítő függvény adja egy numerikus mező átlagát?",
+      "answer": [
+        "AVG",
+        "AVG()"
+      ],
+      "category": "adatbazis-lekerdezes",
+      "explanation": "AVG (average): SELECT AVG(atlag) FROM tanulo; Az összeget a SUM, a legnagyobb és legkisebb értéket a MAX és a MIN adja.",
+      "maxWords": 2
+    }
+  ],
+  "glossary": [],
+  "suggestedMinutes": 8
+}

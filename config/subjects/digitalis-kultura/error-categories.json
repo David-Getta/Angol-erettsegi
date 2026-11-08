@@ -1,0 +1,130 @@
+{
+  "meta": {
+    "verifiedAt": "2026-11-05",
+    "sources": [
+      {
+        "title": "Oktatási Hivatal: Digitális kultúra – részletes érettségi vizsgakövetelmény és vizsgaleírás (2024-től érvényes, Nat2020)",
+        "url": "https://www.oktatas.hu/pub_bin/dload/kozoktatas/erettsegi/vizsgakovetelmenyek2024/digitalis_kultura_2024_e.pdf"
+      },
+      {
+        "title": "Eduline (2024. 05. 13.): Érettségi 2024 – ezeket a feladatokat kapták a diákok középszinten digitális kultúrából (180 perc, 5 feladat: szövegszerkesztés, vizuális elemek, táblázatkezelés, adatbázis, programozás)",
+        "url": "https://eduline.hu/erettsegi-felveteli/20240513_digitalis-kultura-erettsegi-kozepszint-feladatok"
+      },
+      {
+        "title": "Eduline (2024. 10. 24.): Nem sikerült az érettségi? Ezt kell tudnotok a szóbeliről – matematika és digitális kultúra (szóbeli csak 12–24,99 % között, póttétel)",
+        "url": "https://eduline.hu/erettsegi_felveteli/20241024_oszi_erettsegi_2024_matematika_digitalis_kultura_szobeli_szabalyok_pottetel"
+      },
+      {
+        "title": "Eduline (2025. 05. 20.): Itt vannak a hétfői emelt szintű digitális kultúra érettségi feladatlapjai és javítókulcsa (240 perc, 120 pont)",
+        "url": "https://eduline.hu/erettsegi_felveteli/20250520_digitalis_kultura_emelt_szint_megoldasok"
+      },
+      {
+        "title": "Petrik Lajos Szakgimnázium (2024. 10.): Digitális kultúra érettségi – iskolai tájékoztató (szóbeli: A téma kifejtése + B programozási feladat bemutatása, 15 perc)",
+        "url": "https://petrik.hu/wp-content/uploads/2024/10/Digitalis_kultura.pdf"
+      },
+      {
+        "title": "Siegler Gábor (PPKE ITK, 2026. 03.): Digitális kultúra – tanártovábbképzési előadások (emelt szóbeli 30 pont, a gyakorlati pontbontás)",
+        "url": "https://itk.ppke.hu/storage/tinymce/uploads/Kozepiskola/2026_tanarovabbkepzes/Digitalis-kultura-tananyagok/Siegler-Gabor_eloadasai_2026-03.pdf"
+      },
+      {
+        "title": "Eduline (2026. 03. 14.): Érettségi 2026 – pontozási és osztályozási szabályok (közép 80/60/40/25 %, emelt 60/47/33/25 %, vizsgarészenként 12 %)",
+        "url": "https://eduline.hu/erettsegi-felveteli/20260314_erettsegi-2026-pontozas-osztalyozas"
+      }
+    ],
+    "notes": [
+      "Az ellenőrzés hírportál-cikkek (Eduline, Telex) és a hivatalos dokumentumok keresőben indexelt szövege alapján történt; az OH oldalát a futtató környezet hálózata nem engedte közvetlenül megnyitni – a hivatalos vizsgaleírással érdemes összevetni."
+    ]
+  },
+  "groups": [
+    {
+      "id": "eszkoz",
+      "name": "Eszközhasználat"
+    },
+    {
+      "id": "adat",
+      "name": "Adatok, képletek, lekérdezések"
+    },
+    {
+      "id": "program",
+      "name": "Programozás"
+    },
+    {
+      "id": "elmelet",
+      "name": "Elméleti ismeretek"
+    }
+  ],
+  "categories": [
+    {
+      "id": "formazas",
+      "name": "Formázás, stílusok, oldalbeállítás",
+      "group": "eszkoz",
+      "description": "Kézi formázás stílus helyett, hibás behúzás, tabulátor, oldalbeállítás, kép- és táblázatelhelyezés."
+    },
+    {
+      "id": "prezentacio-weblap-hiba",
+      "name": "Prezentáció, weblap elemei",
+      "group": "eszkoz",
+      "description": "Hiányzó vagy rossz dia-/oldalelem, hivatkozás, animáció, stílus, kép méretezése."
+    },
+    {
+      "id": "fajlkezeles",
+      "name": "Fájlkezelés, mentés, formátum",
+      "group": "eszkoz",
+      "description": "Rossz fájlnév vagy formátum, elmaradt mentés, nem a kiosztott fájlból dolgozik."
+    },
+    {
+      "id": "kepletek-fuggvenyek",
+      "name": "Képletek, függvények",
+      "group": "adat",
+      "description": "Rossz függvény vagy argumentum, hiányzó abszolút hivatkozás, kézzel beírt eredmény."
+    },
+    {
+      "id": "diagram",
+      "name": "Diagram és adatmegjelenítés",
+      "group": "adat",
+      "description": "Rossz diagramtípus, adattartomány, feliratok, tengelyek."
+    },
+    {
+      "id": "adatbazis-lekerdezes",
+      "name": "Lekérdezések, kapcsolatok",
+      "group": "adat",
+      "description": "Hibás SQL/lekérdezés, hiányzó kapcsolat, rossz feltétel, csoportosítás vagy rendezés."
+    },
+    {
+      "id": "algoritmus-logika",
+      "name": "Algoritmus logikája",
+      "group": "program",
+      "description": "Hibás elágazás, ciklusfeltétel, kezdőérték, határeset; a részfeladat nem azt oldja meg, amit kér."
+    },
+    {
+      "id": "adattipus-adatszerkezet",
+      "name": "Adattípusok, adatszerkezetek",
+      "group": "program",
+      "description": "Rossz típus, tömb/lista indexelés, karakterlánc–szám átalakítás, beolvasási hiba."
+    },
+    {
+      "id": "kimenet-formatum",
+      "name": "Kimenet formátuma",
+      "group": "program",
+      "description": "A kimenet nem a kért formában vagy szöveggel jelenik meg; hiányzó mentés fájlba."
+    },
+    {
+      "id": "hardver-szoftver-fogalom",
+      "name": "Hardver, szoftver, operációs rendszer fogalmai",
+      "group": "elmelet",
+      "description": "Fogalmak összekeverése, pontatlan meghatározás."
+    },
+    {
+      "id": "halozat-biztonsag",
+      "name": "Hálózatok, internet, adatbiztonság",
+      "group": "elmelet",
+      "description": "Protokollok, címzés, titkosítás, jelszavak, adatvédelem."
+    },
+    {
+      "id": "informacios-tarsadalom-fogalom",
+      "name": "Információs társadalom, jog, etika",
+      "group": "elmelet",
+      "description": "Szerzői jog, licencek, adatvédelmi szabályok, e-ügyintézés, netikett."
+    }
+  ]
+}

@@ -1,0 +1,81 @@
+{
+  "schemaVersion": 1,
+  "id": "dig-sp-emelt-szogyakorisag",
+  "subject": "digitalis-kultura",
+  "revision": 1,
+  "level": "emelt",
+  "source": "generated",
+  "topic": "algoritmizalas",
+  "title": "Programozási feladat: szógyakoriság szótárral",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "speaking",
+  "type": "programozasi-tetel",
+  "partNumber": 2,
+  "instructionsHu": "Programozási feladat: írjon programot, amely egy szövegben megszámolja a szavak előfordulását (a kis- és nagybetűt nem megkülönböztetve, az írásjeleket figyelmen kívül hagyva), és kiírja a három leggyakoribb szót a gyakoriságával; azonos gyakoriságnál ábécérendben! Mutassa be és magyarázza el a megoldást!",
+  "prompts": [
+    "A szöveg előkészítése: kisbetűsítés, írásjelek eltávolítása, szavakra bontás",
+    "Gyakoriság számolása szótárban",
+    "Rendezés két szempont szerint",
+    "Az első három elem kiírása",
+    "A megoldás bonyolultsága, alternatívák"
+  ],
+  "followUpQuestions": [
+    "Hogyan oldaná meg szótár nélkül, két listával? Miért lassabb?",
+    "Mi lenne a kimenet, ha nem kisbetűsítene?"
+  ],
+  "usefulPhrases": [
+    {
+      "en": "szótár (dict)",
+      "hu": "kulcs–érték párok; itt szó → darabszám"
+    },
+    {
+      "en": "gyak.get(sz, 0)",
+      "hu": "a kulcs értéke, vagy 0, ha még nincs a szótárban"
+    },
+    {
+      "en": "s.lower(), k.isalpha(), s.split()",
+      "hu": "kisbetűsítés, betű-e a karakter, szavakra bontás"
+    },
+    {
+      "en": "sorted(…, key=…)",
+      "hu": "rendezés saját rendezési kulccsal"
+    },
+    {
+      "en": "lambda par: (-par[1], par[0])",
+      "hu": "kétszempontú kulcs: gyakoriság csökkenő, szó növekvő"
+    },
+    {
+      "en": "szeletelés [:3]",
+      "hu": "az első három elem"
+    }
+  ],
+  "sources": [
+    {
+      "title": "A feladat",
+      "text": "Szöveg: „Az alma piros, az alma édes. A körte sárga, a körte is édes, de az alma a kedvencem.” Írja ki a három leggyakoribb szót és az előfordulásuk számát (azonos gyakoriságnál ábécérendben)!"
+    }
+  ],
+  "keyPoints": [
+    "Előkészítés: lower() kisbetűsít, a karakterenkénti szűrés (isalpha() vagy szóköz) eltávolítja az írásjeleket, a split() szavakra bont.",
+    "A szótár kulcsa a szó, értéke a darabszám; a get(sz, 0) kezeli az első előfordulást.",
+    "A rendezés kulcsa a (−gyakoriság, szó) pár: a negatív gyakoriság miatt csökkenő, egyenlőségnél a szó szerint növekvő sorrend.",
+    "A rendezett lista első három eleme: a 3, alma 3, az 3 (mindhárom 3-szor szerepel, ábécérendben).",
+    "Bonyolultság: a számolás egyetlen menet a szavakon, a rendezés n log n; a Python a szöveget Unicode-kódpont szerint rendezi, ezért a magyar ábécérendhez (pl. é, ö) külön rendezési kulcs kellene."
+  ],
+  "speakingSeconds": 600,
+  "prepSeconds": 900,
+  "sampleAnswer": {
+    "turns": [
+      {
+        "speaker": "candidate",
+        "text": "A feladat három lépésből áll: a szöveg előkészítése, a gyakoriságok megszámolása és a rendezett kiírás.\n\nszoveg = \"Az alma piros, az alma édes. A körte sárga, a körte is édes, de az alma a kedvencem.\"\n\ntiszta = \"\"\nfor k in szoveg.lower():\n    if k.isalpha() or k == \" \":\n        tiszta += k\nszavak = tiszta.split()\n\ngyak = {}\nfor sz in szavak:\n    gyak[sz] = gyak.get(sz, 0) + 1\n\nrendezett = sorted(gyak.items(), key=lambda par: (-par[1], par[0]))\nfor szo, db in rendezett[:3]:\n    print(szo, db)\n\nElőször a lower() metódussal mindent kisbetűssé alakítok, hogy az „Az” és az „az” ugyanannak számítson. Utána karakterenként végigmegyek a szövegen, és csak a betűket és a szóközöket tartom meg, így eltűnnek a vesszők és a pontok. A split() a szóközök mentén szavakra bontja a szöveget. A gyakorisághoz szótárat használok: a kulcs a szó, az érték, hogy hányszor szerepelt. A get metódus nullát ad vissza, ha a szó még nincs a szótárban, így nem kell külön elágazás az első előforduláshoz. A rendezésnél a sorted függvénynek saját kulcsot adok meg: a gyakoriság ellentettjét és magát a szót. A negatív gyakoriság miatt a leggyakoribb kerül előre, egyenlő gyakoriságnál pedig a szavak növekvő, vagyis ábécérendben következnek. A szeletelés az első három párt adja. Itt az „a”, az „alma” és az „az” is háromszor szerepel, ezért a kimenet: a 3, alma 3, az 3. Megjegyzem, hogy a Python a kódpontok szerint rendez, így az ékezetes betűk a z után kerülnének; a pontos magyar ábécérendhez külön rendezési kulcs kellene. A szótáras megoldás egyetlen menetben számol, ezért gyorsabb, mint ha minden szót egy listában keresnék meg."
+      }
+    ],
+    "notes": [
+      "A megoldás működik, a holtversenyt a feladat szerint (ábécérendben) kezeli, és a kimenetet is megindokolja (a, alma, az – mind 3).",
+      "A magyarázat szaknyelvileg pontos (szótár, kulcs–érték, rendezési kulcs, szeletelés), és a két szempontú rendezés trükkjét (negatív gyakoriság) érthetően elmagyarázza.",
+      "Emelt szintű többlet: a kódpont szerinti rendezés korlátjának (ékezetes betűk) és a szótáras megoldás hatékonyságának megemlítése."
+    ]
+  }
+}

@@ -1,0 +1,135 @@
+{
+  "schemaVersion": 1,
+  "id": "fol-rd-emelt-magyarorszag-varosok",
+  "subject": "foldrajz",
+  "revision": 1,
+  "level": "emelt",
+  "source": "generated",
+  "topic": "magyarorszag",
+  "title": "Magyarország városai a térképvázlaton",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "reading",
+  "type": "topografia",
+  "instructions": "A térképvázlat Magyarországot ábrázolja (a vázlatot a szöveg írja le). Nevezze meg a számokkal jelölt településeket! A 0. a megoldott példa.",
+  "passage": {
+    "title": "A térképvázlat leírása",
+    "blocks": [
+      { "text": "A térképvázlaton Magyarország látható; a számokkal jelölt települések leírása:" },
+      { "text": "0 – Az ország második legnépesebb városa a Tiszántúl keleti részén, Hajdú-Bihar megye székhelye, a „kálvinista Róma”." },
+      { "text": "1 – A Tisza partján fekvő megyeszékhely az Alföld déli részén; paprikájáról, szalámigyártásáról és egyeteméről ismert." },
+      { "text": "2 – A Sajó völgyében, a Bükk lábánál fekvő egykori nehézipari (vaskohászati) központ, Borsod-Abaúj-Zemplén megye székhelye." },
+      { "text": "3 – A Mecsek déli lábánál fekvő egyetemi város; egykor szén- és uránbányászat, 2010-ben Európa Kulturális Fővárosa volt." },
+      { "text": "4 – A Rába és a Mosoni-Duna találkozásánál, a Kisalföldön fekvő megyeszékhely; barokk belváros, az autóipar (Audi) központja." },
+      { "text": "5 – A Duna jobb partján fekvő kisváros a Dunántúlon, ahol hazánk egyetlen atomerőműve működik." },
+      { "text": "6 – Középkori királyi székhely a Duna jobb partján, a Dunakanyar nyugati kapujában; bazilikája a magyar katolikus egyház központja, a folyó túlpartján Párkány (Szlovákia)." },
+      { "text": "7 – A Bakony lábánál, a Balatontól északra fekvő megyeszékhely, a „királynék városa”, várnegyeddel." },
+      { "text": "8 – A Duna–Tisza köze központja, Bács-Kiskun megye székhelye; a kajszibarack és Kodály Zoltán városa, ma autógyár (Mercedes) is működik itt." },
+      { "text": "9 – Hazánk legnyugatibb megyeszékhelye az Alpokalján, római kori elődje Savaria volt." },
+      { "text": "10 – A Bükk lábánál fekvő barokk város; vára 1552-ben ellenállt a töröknek, borvidéke az Egri bikavérről híres." }
+    ]
+  },
+  "example": {
+    "id": "0",
+    "kind": "text",
+    "prompt": "A térképvázlaton 0-val jelölt város neve:",
+    "answer": ["Debrecen"],
+    "maxWords": 3,
+    "category": "orszag-varos",
+    "explanation": "Debrecen: a Tiszántúl központja, kb. 200 ezer lakosával az ország második legnépesebb városa; a reformáció óta a magyar kálvinizmus központja (Nagytemplom, Református Kollégium)."
+  },
+  "items": [
+    {
+      "id": "1",
+      "kind": "text",
+      "prompt": "A térképvázlaton 1-es számmal jelölt város neve:",
+      "answer": ["Szeged"],
+      "maxWords": 3,
+      "category": "orszag-varos",
+      "explanation": "Szeged: Csongrád-Csanád megye székhelye a Tisza és a Maros találkozásánál; az 1879-es árvíz után újjáépített város, fűszerpaprika, Pick szalámi, egyetem és biológiai kutatóközpont."
+    },
+    {
+      "id": "2",
+      "kind": "text",
+      "prompt": "A térképvázlaton 2-es számmal jelölt város neve:",
+      "answer": ["Miskolc"],
+      "maxWords": 3,
+      "category": "orszag-varos",
+      "explanation": "Miskolc: a szocialista nehézipar egyik központja volt (diósgyőri vasgyár), a rendszerváltás után súlyos szerkezetváltási válságot élt át; ma az ország negyedik legnépesebb városa."
+    },
+    {
+      "id": "3",
+      "kind": "text",
+      "prompt": "A térképvázlaton 3-as számmal jelölt város neve:",
+      "answer": ["Pécs"],
+      "maxWords": 3,
+      "category": "orszag-varos",
+      "explanation": "Pécs: Baranya megye székhelye a Mecsek déli lejtőjén; ókeresztény sírkamrái a világörökség részei, a szén- és uránbányászat megszűnése után az egyetem és a kultúra lett a város húzóereje."
+    },
+    {
+      "id": "4",
+      "kind": "text",
+      "prompt": "A térképvázlaton 4-es számmal jelölt város neve:",
+      "answer": ["Győr"],
+      "maxWords": 3,
+      "category": "orszag-varos",
+      "explanation": "Győr: Győr-Moson-Sopron megye székhelye a Bécs–Budapest tengely mentén; az Audi motor- és járműgyára a magyar export egyik legnagyobb tétele."
+    },
+    {
+      "id": "5",
+      "kind": "text",
+      "prompt": "A térképvázlaton 5-ös számmal jelölt város neve:",
+      "answer": ["Paks"],
+      "maxWords": 3,
+      "category": "orszag-varos",
+      "explanation": "Paks: Tolna megyében, a Duna jobb partján fekvő kisváros; az 1980-as években épült atomerőmű négy blokkja hazánk villamosenergia-termelésének közel felét adja."
+    },
+    {
+      "id": "6",
+      "kind": "text",
+      "prompt": "A térképvázlaton 6-os számmal jelölt város neve:",
+      "answer": ["Esztergom"],
+      "maxWords": 3,
+      "category": "orszag-varos",
+      "explanation": "Esztergom: Szent István születési helye és az Árpád-kor egyik királyi székhelye; a bazilika az esztergom-budapesti érsek székhelye, a Mária Valéria híd köti össze a szlovákiai Párkánnyal."
+    },
+    {
+      "id": "7",
+      "kind": "text",
+      "prompt": "A térképvázlaton 7-es számmal jelölt város neve:",
+      "answer": ["Veszprém"],
+      "maxWords": 3,
+      "category": "orszag-varos",
+      "explanation": "Veszprém: Veszprém megye székhelye a Bakony és a Balaton-felvidék találkozásánál; a „királynék városa” nevet onnan kapta, hogy a középkorban a veszprémi püspök joga volt a királynék megkoronázása; 2023-ban Európa Kulturális Fővárosa volt."
+    },
+    {
+      "id": "8",
+      "kind": "text",
+      "prompt": "A térképvázlaton 8-as számmal jelölt város neve:",
+      "answer": ["Kecskemét"],
+      "maxWords": 3,
+      "category": "orszag-varos",
+      "explanation": "Kecskemét: a Homokhátság mezővárosi központja; a homoki gyümölcstermesztés (kajszibarack, barackpálinka) mellett a 2012-ben megnyílt Mercedes-gyár a térség legnagyobb ipari beruházása."
+    },
+    {
+      "id": "9",
+      "kind": "text",
+      "prompt": "A térképvázlaton 9-es számmal jelölt város neve:",
+      "answer": ["Szombathely"],
+      "maxWords": 3,
+      "category": "orszag-varos",
+      "explanation": "Szombathely: Vas megye székhelye; a római Savaria (Pannonia provincia) helyén áll, az osztrák határ közelsége miatt a nyugati tőke egyik első célpontja volt a rendszerváltás után."
+    },
+    {
+      "id": "10",
+      "kind": "text",
+      "prompt": "A térképvázlaton 10-es számmal jelölt város neve:",
+      "answer": ["Eger"],
+      "maxWords": 3,
+      "category": "orszag-varos",
+      "explanation": "Eger: Heves megye székhelye a Bükk és a Mátra között; az 1552-es várvédelem (Dobó István), a barokk belváros, a minaret és az Egri borvidék (bikavér) teszik ismertté."
+    }
+  ],
+  "glossary": [],
+  "suggestedMinutes": 9
+}

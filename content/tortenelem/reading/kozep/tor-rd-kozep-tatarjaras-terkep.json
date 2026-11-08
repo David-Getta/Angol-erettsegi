@@ -1,0 +1,171 @@
+{
+  "schemaVersion": 1,
+  "id": "tor-rd-kozep-tatarjaras-terkep",
+  "subject": "tortenelem",
+  "revision": 1,
+  "level": "kozep",
+  "source": "generated",
+  "topic": "kozepkor",
+  "title": "A tatárjárás helyszínei",
+  "createdAt": "2026-11-05",
+  "tags": [
+    "magyar"
+  ],
+  "section": "reading",
+  "type": "terkep",
+  "instructions": "A feladat a tatárjárással (1241–1242) kapcsolatos. A térképvázlat leírása alapján azonosítsa a számokkal jelölt helyszíneket! Írja a helyszín betűjelét a számok mellé! Egy betűjel csak egyszer használható, három felesleges. Ezután válaszoljon a kérdésekre! A 0. a megoldott példa.",
+  "passage": {
+    "title": "Térképvázlat: a mongol támadás útvonalai Magyarországon, 1241–1242",
+    "sourceNote": "A térképvázlatot itt szöveges leírás helyettesíti; a helyszíneket a kronológia nélküli atlasz segítségével is ellenőrizheti.",
+    "blocks": [
+      {
+        "text": "A térképvázlat a Magyar Királyságot ábrázolja. Nyilak mutatják, hogy a mongol fősereg Batu kán vezetésével északkelet felől, egy másik sereg pedig a keleti és délkeleti szorosokon át, Erdély felől tört be az országba. A számok a következő helyszíneket jelölik:"
+      },
+      {
+        "text": "0 – a Kárpátok északkeleti részén lévő hágó, ahol a fősereg 1241 márciusában áttörte a gyepűt;\n1 – síkság a Sajó folyó mellett, ahol 1241. április 11-én a mongolok megsemmisítették a királyi sereget;\n2 – a Duna bal partján fekvő gazdag kereskedőváros, amelyet a mongolok a csata után, 1241 áprilisában feldúltak;\n3 – dalmát tengerparti város, ahol a király 1242 tavaszán, a mongolok elől menekülve menedéket talált."
+      }
+    ]
+  },
+  "options": [
+    {
+      "key": "A",
+      "text": "Mohács"
+    },
+    {
+      "key": "B",
+      "text": "Muhi"
+    },
+    {
+      "key": "C",
+      "text": "Nándorfehérvár"
+    },
+    {
+      "key": "D",
+      "text": "Pest"
+    },
+    {
+      "key": "E",
+      "text": "Pozsony"
+    },
+    {
+      "key": "F",
+      "text": "Trau (Trogir)"
+    },
+    {
+      "key": "G",
+      "text": "Vereckei-hágó"
+    }
+  ],
+  "example": {
+    "id": "0",
+    "kind": "match",
+    "prompt": "0. helyszín",
+    "answer": "G",
+    "category": "topografia",
+    "explanation": "Helyes: G – Vereckei-hágó. Az Északkeleti-Kárpátok legfontosabb átjárója; a honfoglaló magyarok és 1241-ben Batu kán főserege is itt tört be."
+  },
+  "items": [
+    {
+      "id": "1",
+      "kind": "match",
+      "prompt": "1. helyszín",
+      "answer": "B",
+      "category": "topografia",
+      "explanation": "Helyes: B – Muhi. A Sajó menti muhi csatában (1241. április 11.) a mongolok bekerítették és szétverték IV. Béla seregét; a király csak nehezen menekült meg."
+    },
+    {
+      "id": "2",
+      "kind": "match",
+      "prompt": "2. helyszín",
+      "answer": "D",
+      "category": "topografia",
+      "explanation": "Helyes: D – Pest. A Duna bal (keleti) partján fekvő, német polgárok lakta kereskedőváros volt; a muhi vereség után a mongolok feldúlták. (Buda vára csak a tatárjárás után épült fel a jobb parton.)"
+    },
+    {
+      "id": "3",
+      "kind": "match",
+      "prompt": "3. helyszín",
+      "answer": "F",
+      "category": "topografia",
+      "explanation": "Helyes: F – Trau (Trogir). IV. Béla a mongol üldözők elől a dalmát tengerpartra menekült, és Trau városában, a tenger védelmében vészelte át a veszélyt 1242 tavaszán."
+    },
+    {
+      "id": "4",
+      "kind": "choice",
+      "prompt": "A hagyományos magyarázat szerint mi volt a mongol sereg kivonulásának közvetlen oka 1242 tavaszán?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Ögödej nagykán halála és az utódlás kérdése"
+        },
+        {
+          "key": "B",
+          "text": "IV. Béla döntő győzelme a mongolok felett"
+        },
+        {
+          "key": "C",
+          "text": "a pápa által meghirdetett keresztes hadjárat"
+        },
+        {
+          "key": "D",
+          "text": "a Bizánci Birodalom katonai beavatkozása"
+        }
+      ],
+      "answer": "A",
+      "category": "ok-okozat",
+      "explanation": "Helyes: A. Ögödej nagykán 1241 decemberében meghalt; a hagyományos magyarázat szerint Batu kán ezért vonult ki, hogy jelen lehessen az utódlásról szóló döntésnél. (A kutatás további okokat is említ, pl. a sereg veszteségeit és a kővárak ellenállását.)",
+      "wrongOptions": {
+        "B": "IV. Béla a muhi csatában vereséget szenvedett, és a mongolok kivonulásáig nem tudott ellentámadást indítani.",
+        "C": "A pápa nem indított hatékony keresztes hadjáratot Magyarország megsegítésére; IV. Béla segélykérései sikertelenek maradtak.",
+        "D": "Bizánc nem avatkozott be; a magyar király külső segítséget nem kapott."
+      }
+    },
+    {
+      "id": "5",
+      "kind": "text",
+      "prompt": "Melyik király uralkodott Magyarországon a tatárjárás idején? (Sorszámmal együtt.)",
+      "answer": [
+        "IV. Béla",
+        "IV Béla",
+        "4. Béla",
+        "Negyedik Béla",
+        "IV. Béla király"
+      ],
+      "category": "szemelyek-esemenyek",
+      "explanation": "Helyes: IV. Béla (1235–1270). Ő vezette a sereget Muhinál, ő menekült Trauba, és a tatárjárás után ő építette újjá az országot – ezért nevezik „második honalapítónak”.",
+      "maxWords": 3
+    },
+    {
+      "id": "6",
+      "kind": "choice",
+      "prompt": "Melyik volt IV. Béla legfontosabb intézkedése a tatárjárás után, egy újabb támadás megelőzésére?",
+      "options": [
+        {
+          "key": "A",
+          "text": "a kunok végleges kiűzése az országból"
+        },
+        {
+          "key": "B",
+          "text": "a királyi vármegyék megszüntetése"
+        },
+        {
+          "key": "C",
+          "text": "az Aranybulla kiadása"
+        },
+        {
+          "key": "D",
+          "text": "kővárak építésének támogatása"
+        }
+      ],
+      "answer": "D",
+      "category": "ok-okozat",
+      "explanation": "Helyes: D. A tatárjárás tapasztalata az volt, hogy a földvárak elestek, a kővárak (pl. Esztergom, Székesfehérvár) ellenálltak. Ezért IV. Béla birtokot adományozott, és engedélyezte, hogy a főurak kővárakat építsenek; ő maga emeltette Buda várát is.",
+      "wrongOptions": {
+        "A": "IV. Béla éppen visszahívta a kunokat a tatárjárás után, mert katonai erejükre számított.",
+        "B": "A vármegyerendszer megmaradt; IV. Béla nem szüntette meg a vármegyéket.",
+        "C": "Az Aranybullát II. András adta ki 1222-ben, még a tatárjárás előtt."
+      }
+    }
+  ],
+  "suggestedMinutes": 7
+}

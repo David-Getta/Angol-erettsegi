@@ -1,0 +1,323 @@
+{
+  "schemaVersion": 1,
+  "id": "gr-conditional",
+  "subject": "angol",
+  "level": "kozep",
+  "source": "generated",
+  "topic": "nyelvtan",
+  "title": "Feltételes mondatok",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "grammar",
+  "type": "lesson",
+  "category": "conditional",
+  "summaryHu": "A feltételes mondatok azt fejezik ki, mi történik, történne vagy történt volna, ha egy feltétel teljesül. A magyar a ha-mellékmondatban is feltételes módot használ („ha lenne időm”), az angol viszont az if-mellékmondatba nem tesz would-ot – ez a magyar anyanyelvűek leggyakoribb hibája. A vizsgán az igealakos feladatban és a lyukas szövegekben közvetlenül pontot ér, az íráskészségben (tanács, javaslat, elképzelt helyzet) és a szóbelin pedig a „Nyelvhelyesség” szempontnál számít.",
+  "rules": [
+    {
+      "title": "Zero conditional: általános igazság",
+      "explanation": "Szerkezet: If + Present Simple, Present Simple. Olyan következményt fejez ki, amely mindig bekövetkezik, ha a feltétel teljesül (természeti törvény, szabály, szokás). Az if itt a when (amikor) jelentéséhez áll közel.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "If you heat ice, it melts.",
+          "hu": "Ha jeget melegítesz, elolvad."
+        },
+        {
+          "en": "If I drink coffee in the evening, I can't sleep.",
+          "hu": "Ha este kávét iszom, nem tudok aludni."
+        }
+      ]
+    },
+    {
+      "title": "First conditional: valós jövőbeli lehetőség",
+      "explanation": "Szerkezet: If + jelen idő, will + V1. Valós, könnyen elképzelhető jövőbeli helyzetről szól. Az if-mellékmondatban jelen idő áll (általában Present Simple, néha Present Perfect vagy Continuous), akkor is, ha jövőre gondolunk. Ugyanez igaz a when, as soon as, before, after, until, unless kötőszavú mellékmondatokra. A főmondatban will helyett állhat can, may, might, should vagy felszólító mód is.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "If it rains tomorrow, we'll stay at home.",
+          "hu": "Ha holnap esik, otthon maradunk."
+        },
+        {
+          "en": "I'll call you as soon as I arrive.",
+          "hu": "Felhívlak, amint megérkezem.",
+          "note": "as soon as után is jelen idő, nem will arrive."
+        },
+        {
+          "en": "If you see Tom, tell him to call me.",
+          "hu": "Ha látod Tomot, mondd meg neki, hogy hívjon fel.",
+          "note": "A főmondat itt felszólító mód."
+        }
+      ]
+    },
+    {
+      "title": "Second conditional: valószínűtlen, elképzelt helyzet",
+      "explanation": "Szerkezet: If + Past Simple, would + V1 (vagy could/might + V1). Jelenre vagy jövőre vonatkozó, valószínűtlen vagy elképzelt helyzetről szól. A múlt idő itt nem múltat jelent, hanem valószerűtlenséget. A be igénél minden személyben állhat were (If I were you…); ez a választékosabb forma, beszélt nyelvben az If I was is előfordul, de tanácsadásnál az If I were you állandósult.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "If I had more time, I would learn to play the guitar.",
+          "hu": "Ha több időm lenne, megtanulnék gitározni."
+        },
+        {
+          "en": "If I were you, I'd apologise.",
+          "hu": "A helyedben bocsánatot kérnék."
+        },
+        {
+          "en": "What would you do if you won the lottery?",
+          "hu": "Mit csinálnál, ha megnyernéd a lottót?"
+        }
+      ]
+    },
+    {
+      "title": "Third conditional: múltbeli, meg nem valósult helyzet",
+      "explanation": "Szerkezet: If + Past Perfect (had + V3), would have + V3 (vagy could/might have + V3). A múltról szól: mi történt volna, ha valami másképp alakult volna. Gyakran sajnálkozást vagy szemrehányást fejez ki.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "If we had left earlier, we wouldn't have missed the train.",
+          "hu": "Ha korábban indultunk volna, nem késtük volna le a vonatot."
+        },
+        {
+          "en": "If you had told me, I would have helped you.",
+          "hu": "Ha szóltál volna, segítettem volna."
+        }
+      ]
+    },
+    {
+      "title": "unless, in case, as long as",
+      "explanation": "Az unless jelentése „hacsak nem” (= if … not), ezért utána állító ige áll. Az in case jelentése „arra az esetre, ha / hátha” – óvintézkedést fejez ki, nem feltételt. Az as long as és a provided / providing (that) jelentése „feltéve, hogy”, „csak akkor, ha”. Jövőre vonatkozóan mindegyik után jelen idő áll.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "You won't pass unless you study harder.",
+          "hu": "Nem fogsz átmenni, hacsak nem tanulsz többet."
+        },
+        {
+          "en": "Take an umbrella in case it rains.",
+          "hu": "Vigyél esernyőt, hátha esni fog."
+        },
+        {
+          "en": "You can borrow my bike as long as you bring it back by six.",
+          "hu": "Elviheted a biciklimet, feltéve, hogy hatra visszahozod."
+        }
+      ]
+    },
+    {
+      "title": "wish / if only – bárcsak",
+      "explanation": "Jelenbeli helyzet, amelyet szeretnénk másképp: wish / if only + Past Simple (a be igénél were vagy was), illetve could + V1. Múltbeli dolog sajnálata: wish / if only + Past Perfect (had + V3). Bosszantó viselkedés vagy változás iránti vágy: wish + would + V1 – de csak másokra vagy dolgokra, saját magunkra nem (nem I wish I would…).",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "I wish I lived closer to the school.",
+          "hu": "Bárcsak közelebb laknék az iskolához!"
+        },
+        {
+          "en": "I wish I hadn't eaten so much.",
+          "hu": "Bárcsak ne ettem volna annyit!"
+        },
+        {
+          "en": "If only it would stop raining!",
+          "hu": "Bárcsak elállna az eső!"
+        }
+      ]
+    },
+    {
+      "title": "Vegyes feltételes mondatok és inverzió",
+      "explanation": "Vegyes feltételes: múltbeli feltétel, jelenbeli következmény: If + Past Perfect, would + V1 (If I had studied harder, I would be at university now). Jelenbeli állapot, múltbeli következmény: If + Past Simple, would have + V3 (If I weren't so shy, I would have spoken to her). Választékos stílusban az if elhagyható, ilyenkor fordított szórend jön: Had I known… = If I had known…; Should you need… = If you need…; Were I… = If I were….",
+      "emeltOnly": true,
+      "examples": [
+        {
+          "en": "If I had taken the job in London, I would live there now.",
+          "hu": "Ha elvállaltam volna a londoni állást, most ott élnék."
+        },
+        {
+          "en": "Had I known about the party, I would have come.",
+          "hu": "Ha tudtam volna a buliról, eljöttem volna."
+        },
+        {
+          "en": "Should you have any questions, please do not hesitate to contact me.",
+          "hu": "Ha bármilyen kérdése lenne, forduljon hozzám bizalommal.",
+          "note": "Hivatalos levél zárásában nagyon hasznos."
+        }
+      ]
+    }
+  ],
+  "commonMistakes": [
+    {
+      "wrong": "If I would have more money, I would buy a car.",
+      "right": "If I had more money, I would buy a car.",
+      "why": "Az if-mellékmondatba nem kerül would, még ha magyarul ott is feltételes mód áll („ha lenne”). Valószerűtlen jelenbeli feltételnél az if után Past Simple kell."
+    },
+    {
+      "wrong": "If it will rain tomorrow, we will stay at home.",
+      "right": "If it rains tomorrow, we will stay at home.",
+      "why": "Jövőre vonatkozó feltételnél az if után jelen idő áll; a will csak a főmondatba kerül."
+    },
+    {
+      "wrong": "If I would have known, I would have helped.",
+      "right": "If I had known, I would have helped.",
+      "why": "Múltbeli feltételnél az if után Past Perfect (had + V3) áll. A would have csak a főmondatba kerül."
+    },
+    {
+      "wrong": "Unless you don't hurry, you'll miss the bus.",
+      "right": "Unless you hurry, you'll miss the bus.",
+      "why": "Az unless már tartalmazza a tagadást (= if … not), ezért utána állító ige kell: „hacsak nem sietsz”."
+    },
+    {
+      "wrong": "I wish I can speak French.",
+      "right": "I wish I could speak French.",
+      "why": "A wish után a jelenre vonatkozó vágyat egy igeidővel „hátrébb” fejezzük ki: can → could, am → were, have → had."
+    },
+    {
+      "wrong": "I'll wait here until you will come back.",
+      "right": "I'll wait here until you come back.",
+      "why": "Az until, when, as soon as, before, after kötőszavú mellékmondatban jövőre is jelen időt használunk – ugyanúgy, mint az if után."
+    }
+  ],
+  "examTips": [
+    "Igealakok: ha a mondatban if, unless, when, as soon as vagy wish van, először nézd meg a mondat másik felét. Ha ott will áll → az if után jelen idő; ha would → Past Simple; ha would have → had + V3. Az if-mellékmondatba soha ne írj will-t vagy would-ot.",
+    "Nyitott lyukas szöveg és hibakeresés (emelt): gyakori hiányzó vagy felesleges szó a would az if után, valamint az if, unless, were, had. Ha a mondat elején Had, Should vagy Were áll if nélkül, az inverziós feltételes szerkezet (emelt).",
+    "Íráskészség és szóbeli: a feltételes mondatok jól jönnek tanácsadáshoz (If I were you, I would…), ajánlathoz (If you are interested, I will…), a vita során érveléshez (If schools banned phones, students would…) és hivatalos levél zárásához (Should you need any further information, please contact me)."
+  ],
+  "practice": [
+    {
+      "id": "1",
+      "kind": "choice",
+      "prompt": "If I ___ you, I would talk to the teacher about it.",
+      "options": [
+        {
+          "key": "A",
+          "text": "were"
+        },
+        {
+          "key": "B",
+          "text": "would be"
+        },
+        {
+          "key": "C",
+          "text": "am"
+        },
+        {
+          "key": "D",
+          "text": "have been"
+        }
+      ],
+      "answer": "A",
+      "category": "conditional",
+      "explanation": "Helyes: were. Elképzelt, valószerűtlen helyzet (második típus): If + Past Simple, would + V1. A be igénél ilyenkor minden személyben were állhat; az If I were you a tanácsadás állandó formája.",
+      "wrongOptions": {
+        "B": "Az if-mellékmondatba nem kerül would.",
+        "C": "Jelen idő valós (első típusú) feltételben állna, will-es főmondattal; itt a főmondatban would van, és az, hogy „én te vagyok”, nem valós helyzet.",
+        "D": "A Present Perfect nem illik egyik feltételes szerkezetbe sem a would + V1 főmondat mellett."
+      }
+    },
+    {
+      "id": "2",
+      "kind": "text",
+      "prompt": "If the weather ___ (be) nice tomorrow, we'll have a picnic in the park.",
+      "cue": "be",
+      "answer": [
+        "is",
+        "'s"
+      ],
+      "category": "conditional",
+      "explanation": "Helyes: is. Valós jövőbeli lehetőség (első típus): If + Present Simple, will + V1. Bár a tomorrow jövőre utal, az if után jelen idő áll, nem will be."
+    },
+    {
+      "id": "3",
+      "kind": "text",
+      "prompt": "If I had known about the problem, I ___ (help) you.",
+      "cue": "help",
+      "answer": [
+        "would have helped",
+        "'d have helped",
+        "would've helped",
+        "could have helped",
+        "could've helped",
+        "might have helped",
+        "might've helped"
+      ],
+      "category": "conditional",
+      "explanation": "Helyes: would have helped. Múltbeli, meg nem valósult helyzet (harmadik típus): If + had + V3, would have + V3. „Ha tudtam volna a problémáról, segítettem volna.” A could have helped (tudtam volna segíteni) is helyes."
+    },
+    {
+      "id": "4",
+      "kind": "choice",
+      "prompt": "You can't go out ___ you tidy your room first.",
+      "options": [
+        {
+          "key": "A",
+          "text": "unless"
+        },
+        {
+          "key": "B",
+          "text": "if"
+        },
+        {
+          "key": "C",
+          "text": "in case"
+        },
+        {
+          "key": "D",
+          "text": "as long as"
+        }
+      ],
+      "answer": "A",
+      "category": "conditional",
+      "explanation": "Helyes: unless. Jelentése „hacsak nem” (= if you don't): „Nem mehetsz el, hacsak előbb nem rakod rendbe a szobádat.” Az unless után állító ige áll.",
+      "wrongOptions": {
+        "B": "„Nem mehetsz el, ha rendbe rakod a szobádat” – a jelentés éppen fordított, értelmetlen.",
+        "C": "Az in case óvintézkedést jelent („hátha”), itt nincs értelme.",
+        "D": "Az as long as jelentése „feltéve, hogy”: „nem mehetsz el, feltéve, hogy rendet raksz” – logikailag értelmetlen."
+      }
+    },
+    {
+      "id": "5",
+      "kind": "text",
+      "prompt": "I wish I ___ (have) a bigger room – mine is tiny.",
+      "cue": "have",
+      "answer": [
+        "had",
+        "could have"
+      ],
+      "category": "conditional",
+      "explanation": "Helyes: had. Jelenbeli helyzetre vonatkozó vágy: wish + Past Simple („Bárcsak nagyobb szobám lenne!”). A could have (bárcsak lehetne) is helyes, a have és a would have viszont nem."
+    },
+    {
+      "id": "6",
+      "kind": "choice",
+      "prompt": "If she had taken the medicine yesterday, she ___ better now.",
+      "options": [
+        {
+          "key": "A",
+          "text": "would feel"
+        },
+        {
+          "key": "B",
+          "text": "would have felt"
+        },
+        {
+          "key": "C",
+          "text": "will feel"
+        },
+        {
+          "key": "D",
+          "text": "felt"
+        }
+      ],
+      "answer": "A",
+      "category": "conditional",
+      "explanation": "Helyes: would feel. Vegyes feltételes mondat (emelt): a feltétel a múltra vonatkozik (had taken … yesterday), a következmény a jelenre (now), ezért If + had + V3, would + V1. „Ha tegnap bevette volna a gyógyszert, most jobban érezné magát.”",
+      "wrongOptions": {
+        "B": "A would have felt múltbeli következményt jelentene, de a now a jelenre utal.",
+        "C": "A will valós jövőbeli következményt jelöl, nem illik a meg nem valósult múltbeli feltételhez.",
+        "D": "A főmondatban would kell; a Past Simple önmagában nem fejez ki feltételes következményt."
+      }
+    }
+  ],
+  "relatedCategories": [
+    "tense",
+    "modal",
+    "verb-form"
+  ]
+}

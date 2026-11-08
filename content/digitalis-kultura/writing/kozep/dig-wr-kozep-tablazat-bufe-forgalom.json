@@ -1,0 +1,136 @@
+{
+  "schemaVersion": 1,
+  "id": "dig-wr-kozep-tablazat-bufe-forgalom",
+  "subject": "digitalis-kultura",
+  "revision": 1,
+  "level": "kozep",
+  "source": "generated",
+  "topic": "tablazatkezeles",
+  "title": "Táblázatkezelés: a büfé heti forgalma",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "writing",
+  "type": "tablazatkezeles",
+  "taskNumber": 3,
+  "situation": "Az iskolai büfé vezetője egy hét eladási adatait szeretné kiértékelni.\n\nForrásfájl: bufe.txt (UTF-8, tabulátorral tagolt). Az első sor a fejléc, alatta 15 termék adatai: A oszlop – Termék, B – Egységár (Ft), C–G – a hétfőtől péntekig eladott darabszám (fejlécek: Hétfő, Kedd, Szerda, Csütörtök, Péntek).\n\nTöltse be az adatokat a munkalap A1-es cellájától kezdve, és mentse a munkát bufe néven a táblázatkezelő saját formátumában! Minden számítást képlettel végezzen; ha egy képletet másolással visz át, használjon megfelelő (relatív, abszolút vagy vegyes) hivatkozást!\n\n1. Töltse be az adatokat, és mentse a munkát bufe néven!\n2. A H oszlopban (fejléc: Heti db) számítsa ki termékenként a héten eladott darabszámot!\n3. Az I oszlopban (fejléc: Bevétel) számítsa ki termékenként a heti bevételt!\n4. A 17. sorban (A17: Összesen) számítsa ki a C–I oszlopok összegét!\n5. A J oszlopban (fejléc: Arány) adja meg, hogy a termék bevétele hány százaléka a teljes heti bevételnek! Az érték százalék formátumban, egy tizedesjeggyel jelenjen meg.\n6. A K oszlopban (fejléc: Megjegyzés) jelenjen meg a „kevés” szöveg, ha a termékből a héten 30-nál kevesebbet adtak el, egyébként a cella maradjon üres!\n7. Az M1:M4 cellákba írjon magyarázó szöveget, az N1:N4 cellákban számítsa ki: N1 – a legnagyobb heti bevétel; N2 – a legkisebb egységár; N3 – hány termékből adtak el a héten legalább 100 darabot; N4 – a termékenkénti átlagos heti bevétel egész forintra kerekítve!\n8. Formázás: az első sor félkövér, középre igazított, sortöréssel több sorba tördelt; a B és az I oszlop számai, valamint az N1 és N4 cella pénznem formátumúak, tizedesjegy nélkül („Ft”); az A1:K17 tartomány minden cellájának vékony szegélye legyen.\n9. Készítsen csoportosított oszlopdiagramot a napi összes eladott darabszámról (C17:G17) a napok nevével (C1:G1)! A diagram címe „Napi eladás (db)” legyen, jelmagyarázat ne jelenjen meg; a diagramot a táblázat alá helyezze!",
+  "points": [
+    {
+      "id": "p1",
+      "text": "1. Betöltés az A1-es cellától, mentés bufe néven (1 pont)"
+    },
+    {
+      "id": "p2",
+      "text": "2. Heti darabszám összegző függvénnyel, másolva (2 pont)"
+    },
+    {
+      "id": "p3",
+      "text": "3. Heti bevétel képlettel (2 pont)"
+    },
+    {
+      "id": "p4",
+      "text": "4. Oszlopösszegek a 17. sorban (3 pont)"
+    },
+    {
+      "id": "p5",
+      "text": "5. Arány a teljes bevételhez abszolút hivatkozással, százalék formátum egy tizedesjeggyel (4 pont)"
+    },
+    {
+      "id": "p6",
+      "text": "6. „kevés” megjegyzés HA függvénnyel, egyébként üres cella (3 pont)"
+    },
+    {
+      "id": "p7",
+      "text": "7. N1–N4: legnagyobb bevétel, legkisebb egységár, legalább 100 db-os termékek száma, kerekített átlag (5 pont)"
+    },
+    {
+      "id": "p8",
+      "text": "8. Fejléc, pénznem- és szegélyformázás (3 pont)"
+    },
+    {
+      "id": "p9",
+      "text": "9. Oszlopdiagram a napi összesekről, címmel, jelmagyarázat nélkül, a táblázat alatt (2 pont)"
+    }
+  ],
+  "suggestedMinutes": 45,
+  "usefulPhrases": [
+    {
+      "en": "=SZUM(C2:G2)  /  =SUM(C2:G2)",
+      "hu": "sorösszeg; a kitöltőjellel lefelé másolható"
+    },
+    {
+      "en": "=I2/$I$17",
+      "hu": "arány a teljes összeghez; a $ rögzíti a nevezőt másoláskor"
+    },
+    {
+      "en": "=HA(H2<30;\"kevés\";\"\")  /  =IF(H2<30,\"kevés\",\"\")",
+      "hu": "feltételtől függő szöveg; a \"\" üres cellát mutat"
+    },
+    {
+      "en": "=DARABTELI(H2:H16;\">=100\")  /  =COUNTIF(…)",
+      "hu": "feltételnek megfelelő cellák száma; a relációs feltétel idézőjelben"
+    },
+    {
+      "en": "=KEREKÍTÉS(ÁTLAG(I2:I16);0)  /  =ROUND(AVERAGE(…),0)",
+      "hu": "egész számra kerekített átlag – a formátum csak a kijelzést kerekíti"
+    },
+    {
+      "en": "F4 billentyű",
+      "hu": "szerkesztés közben váltogatja a hivatkozás típusát: A1 → $A$1 → A$1 → $A1"
+    },
+    {
+      "en": "Cellák formázása > Pénznem / Százalék",
+      "hu": "a szám megjelenése (Ft, %) – az érték nem változik"
+    },
+    {
+      "en": "Ctrl + kijelölés",
+      "hu": "nem összefüggő tartományok kijelölése a diagramhoz (fejléc + összegsor)"
+    }
+  ],
+  "checklistExtra": [],
+  "modelAnswer": {
+    "text": "Megoldás – a képletek magyar Excel-függvénynévvel, zárójelben az angol változat (a magyar felületű LibreOffice Calc is a magyar neveket használja, az angol felületű az angolokat). A magyar változat pontosvesszővel, az angol vesszővel választja el az argumentumokat.\n\n1. Betöltés: Adatok > Szövegből/CSV-ből > bufe.txt, Fájl eredete: 65001: Unicode (UTF-8), Határoló: Tabulátor > Betöltés (vagy Fájl > Megnyitás és a Szövegbeolvasó varázsló: tagolt, tabulátor). Az adatok az A1 cellától kerülnek a lapra. Fájl > Mentés másként: Excel-munkafüzet, bufe.xlsx (Calc: bufe.ods).\n\n2. H1: Heti db; H2: =SZUM(C2:G2)   (=SUM(C2:G2)), majd a kitöltőjellel H16-ig másolom.\n\n3. I1: Bevétel; I2: =B2*H2, másolás I16-ig.\n\n4. A17: Összesen; C17: =SZUM(C2:C16)   (=SUM(C2:C16)), majd jobbra másolom I17-ig. A B17 üresen marad, mert az egységárak összegének nincs értelme.\n\n5. J1: Arány; J2: =I2/$I$17, másolás J16-ig; Cellák formázása > Szám > Százalék, tizedesjegyek: 1. Az $I$17 abszolút hivatkozás, mert minden sorban ugyanazzal a teljes bevétellel kell osztani – relatív hivatkozással a másolás után üres cellákra mutatna (#ZÉRÓOSZTÓ!).\n\n6. K1: Megjegyzés; K2: =HA(H2<30;\"kevés\";\"\")   (=IF(H2<30,\"kevés\",\"\")), másolás K16-ig. A \"\" üres szöveget ad, így a cella üresnek látszik.\n\n7. M1: Legnagyobb heti bevétel – N1: =MAX(I2:I16)   (=MAX(I2:I16))\nM2: Legkisebb egységár – N2: =MIN(B2:B16)   (=MIN(B2:B16))\nM3: Legalább 100 db-ot eladott termékek – N3: =DARABTELI(H2:H16;\">=100\")   (=COUNTIF(H2:H16,\">=100\"))\nM4: Átlagos heti bevétel – N4: =KEREKÍTÉS(ÁTLAG(I2:I16);0)   (=ROUND(AVERAGE(I2:I16),0))\nA tartományok a 16. sorig tartanak, hogy a 17. sor összegei ne kerüljenek bele.\n\n8. Formázás: A1:K1 kijelölve: Félkövér, Középre igazítás, Sortöréssel több sorba. B2:B16, I2:I17, N1 és N4: Cellák formázása > Pénznem, tizedesjegyek: 0, szimbólum: Ft. A1:K17 kijelölve: Kezdőlap > Szegélyek > Minden szegély.\n\n9. Diagram: kijelölöm a C1:G1 tartományt, majd Ctrl-t lenyomva a C17:G17 tartományt; Beszúrás > Oszlopdiagram > Csoportosított oszlop. Diagramcím: Napi eladás (db); a Diagramelemek (+) gombbal a Jelmagyarázatot kikapcsolom. A diagramot a 19. sor alá húzom. Végül mentés (Ctrl+S).",
+    "pointsCovered": [
+      {
+        "id": "p1",
+        "quote": "Fájl > Mentés másként: Excel-munkafüzet, bufe.xlsx"
+      },
+      {
+        "id": "p2",
+        "quote": "H2: =SZUM(C2:G2)   (=SUM(C2:G2))"
+      },
+      {
+        "id": "p3",
+        "quote": "I2: =B2*H2, másolás I16-ig"
+      },
+      {
+        "id": "p4",
+        "quote": "C17: =SZUM(C2:C16)   (=SUM(C2:C16)), majd jobbra másolom I17-ig"
+      },
+      {
+        "id": "p5",
+        "quote": "J2: =I2/$I$17, másolás J16-ig; Cellák formázása > Szám > Százalék, tizedesjegyek: 1"
+      },
+      {
+        "id": "p6",
+        "quote": "K2: =HA(H2<30;\"kevés\";\"\")   (=IF(H2<30,\"kevés\",\"\"))"
+      },
+      {
+        "id": "p7",
+        "quote": "N4: =KEREKÍTÉS(ÁTLAG(I2:I16);0)   (=ROUND(AVERAGE(I2:I16),0))"
+      },
+      {
+        "id": "p8",
+        "quote": "Cellák formázása > Pénznem, tizedesjegyek: 0, szimbólum: Ft"
+      },
+      {
+        "id": "p9",
+        "quote": "Beszúrás > Oszlopdiagram > Csoportosított oszlop. Diagramcím: Napi eladás (db)"
+      }
+    ],
+    "notes": [
+      "A követelmények teljesítése: minden kért oszlop és cella képlettel készül, a tartományok pontosan a 2–16. sort fedik le, így az összesítő sor nem torzítja az eredményeket.",
+      "Szakszerű módszer: összegző és statisztikai függvények (SZUM, MAX, MIN, DARABTELI, ÁTLAG) és egyetlen, másolható képlet oszloponként; az arányhoz abszolút hivatkozás ($I$17) – ezek hiánya (kézzel beírt érték, cellánként újraírt képlet) a „módszer” pontjait vinné el.",
+      "Pontosság: a kerekítés a KEREKÍTÉS függvénnyel valóban megtörténik (nem csak a megjelenítés változik), a formátumok (százalék, Ft) és a diagram beállításai a leírás szerintiek."
+    ]
+  }
+}

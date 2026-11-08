@@ -1,0 +1,95 @@
+{
+  "schemaVersion": 1,
+  "id": "mag-lu-kozep-stiluseszkozok",
+  "subject": "magyar",
+  "revision": 1,
+  "level": "kozep",
+  "source": "generated",
+  "topic": "stilus-jelentes",
+  "title": "Szóképek és alakzatok felismerése",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "language-use",
+  "type": "nyelvi-feladat",
+  "instructions": "Melyik stíluseszköz a legjellemzőbb az idézett sorokra? Írja be a stíluseszköz betűjelét! Minden betűjel csak egyszer használható, két stíluseszköz fölösleges. A 0. sor a példa.",
+  "options": [
+    { "key": "A", "text": "metafora" },
+    { "key": "B", "text": "hasonlat" },
+    { "key": "C", "text": "megszemélyesítés" },
+    { "key": "D", "text": "alliteráció" },
+    { "key": "E", "text": "szinesztézia" },
+    { "key": "F", "text": "anafora" },
+    { "key": "G", "text": "költői kérdés" },
+    { "key": "H", "text": "ellentét" },
+    { "key": "I", "text": "hiperbola (túlzás)" },
+    { "key": "J", "text": "oximoron" }
+  ],
+  "example": {
+    "id": "0",
+    "kind": "match",
+    "prompt": "„Párisba tegnap beszökött az Ősz.” (Ady Endre: Párisban járt az Ősz)",
+    "answer": "C",
+    "category": "muertelmezes-eszkozok",
+    "explanation": "Megszemélyesítés: az évszak emberi cselekvést végez (beszökött), a nagybetűs „Ősz” szinte szereplővé válik."
+  },
+  "items": [
+    {
+      "id": "1",
+      "kind": "match",
+      "prompt": "„Füstösek, furcsák, búsak, bíborak” (Ady Endre: Párisban járt az Ősz)",
+      "answer": "D",
+      "category": "muertelmezes-eszkozok",
+      "explanation": "Helyes: alliteráció (betűrím). Az egymást követő szavak azonos mássalhangzóval kezdődnek (f – f, b – b), ami zeneiséget ad a sornak és összekapcsolja a melléknévi halmozást."
+    },
+    {
+      "id": "2",
+      "kind": "match",
+      "prompt": "„Munkában élt az ember mint a hangya” (Vörösmarty Mihály: Előszó)",
+      "answer": "B",
+      "category": "muertelmezes-eszkozok",
+      "explanation": "Helyes: hasonlat. A két dolgot (az ember és a hangya szorgalma) a „mint” kötőszó kapcsolja össze, mindkét tag megnevezve. A metaforából a hasonlító szó hiányzik."
+    },
+    {
+      "id": "3",
+      "kind": "match",
+      "prompt": "„Ment-e / A könyvek által a világ elébb?” (Vörösmarty Mihály: Gondolatok a könyvtárban)",
+      "answer": "G",
+      "category": "muertelmezes-eszkozok",
+      "explanation": "Helyes: költői kérdés. Nem a tájékozódás a célja, hanem a gondolkodtatás és a kétely kifejezése; a vers egésze erre a kérdésre keresi a választ."
+    },
+    {
+      "id": "4",
+      "kind": "match",
+      "prompt": "„Tán csodállak, ámde nem szeretlek” (Petőfi Sándor: Az alföld)",
+      "answer": "H",
+      "category": "muertelmezes-eszkozok",
+      "explanation": "Helyes: ellentét. A „csodállak” és a „nem szeretlek” szembeállítását az „ámde” kötőszó jelzi: a beszélő elismeri a Kárpátok szépségét, de érzelmileg az alföldhöz kötődik."
+    },
+    {
+      "id": "5",
+      "kind": "match",
+      "prompt": "„Már vénülő kezemmel / Fogom meg a kezedet, / Már vénülő szememmel / Őrizem a szemedet.” (Ady Endre: Őrizem a szemed)",
+      "answer": "F",
+      "category": "muertelmezes-eszkozok",
+      "explanation": "Helyes: anafora. A „Már vénülő” szókapcsolat két sor elején ismétlődik; a sorkezdő ismétlés nyomatékosítja az öregedés és a ragaszkodás gondolatát."
+    },
+    {
+      "id": "6",
+      "kind": "match",
+      "prompt": "„Meleg, sárga hangon szólt a falu harangja.”",
+      "answer": "E",
+      "category": "muertelmezes-eszkozok",
+      "explanation": "Helyes: szinesztézia. Különböző érzékterületek kapcsolódnak össze: a hallható hangot tapintási (meleg) és látási (sárga) érzettel jellemzi."
+    },
+    {
+      "id": "7",
+      "kind": "match",
+      "prompt": "„Az élet egy hosszú, kanyargós országút.”",
+      "answer": "A",
+      "category": "muertelmezes-eszkozok",
+      "explanation": "Helyes: metafora. Az életet azonosítja az országúttal hasonlító szó (mint, akár) nélkül; a két dolog közös jegye a hosszúság, a fordulatok, a haladás."
+    }
+  ],
+  "glossary": [],
+  "suggestedMinutes": 6
+}

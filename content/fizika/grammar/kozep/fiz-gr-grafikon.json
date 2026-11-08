@@ -1,0 +1,264 @@
+{
+  "schemaVersion": 1,
+  "id": "fiz-gr-grafikon",
+  "subject": "fizika",
+  "revision": 1,
+  "level": "kozep",
+  "source": "generated",
+  "topic": "nyelvtan",
+  "title": "Grafikonok és táblázatok leolvasása, értelmezése",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "grammar",
+  "type": "lesson",
+  "category": "grafikon",
+  "summaryHu": "A fizikai grafikonokból három dolgot olvasunk ki: egy adott pont értékét, a meredekséget és a görbe alatti területet – és mindháromnak fizikai jelentése van. A feladatokban a grafikon szövegesen van leírva (tengelyek, szakaszok), ezért először mindig tisztázd, mi van a vízszintes és mi a függőleges tengelyen, és milyen egységben.",
+  "rules": [
+    {
+      "title": "Tengelyek és egységek",
+      "explanation": "Először olvasd el, melyik mennyiség melyik tengelyen van, és milyen egységben (s vagy perc, cm vagy m). A leolvasott értéket a számolás előtt váltsd SI-be.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "v–t grafikon: vízszintesen t (s), függőlegesen v (m/s)",
+          "hu": "Ha a sebesség km/h-ban van megadva, a meredekséget előbb át kell váltani."
+        },
+        {
+          "en": "Táblázat: „Δl (cm)” oszlop",
+          "hu": "A rugóállandóhoz méterbe váltsd: 2,1 cm = 0,021 m."
+        }
+      ]
+    },
+    {
+      "title": "A meredekség jelentése",
+      "explanation": "A grafikon meredeksége a függőleges és a vízszintes tengelyen lévő mennyiség változásának hányadosa – ez maga is fizikai mennyiség: s–t grafikonon a sebesség, v–t grafikonon a gyorsulás, F–Δl grafikonon a rugóállandó, U–I grafikonon az ellenállás, Q–ΔT grafikonon a hőkapacitás (c·m).",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "v–t: 0-ról 12 m/s-ra 10 s alatt → a = 1,2 m/s²",
+          "hu": "Ferde egyenes = egyenletesen változó mozgás."
+        },
+        {
+          "en": "s–t: vízszintes szakasz → v = 0",
+          "hu": "A test áll."
+        }
+      ]
+    },
+    {
+      "title": "A görbe alatti terület jelentése",
+      "explanation": "A grafikon és a vízszintes tengely közötti terület a két tengely mennyiségének szorzata: v–t grafikonon a megtett út, F–s grafikonon a munka, p–V grafikonon a gáz munkája, I–t grafikonon az átáramlott töltés, P–t grafikonon az energia.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "v–t: 10 s alatt 0-ról 12 m/s-ra → s = ½ · 10 · 12 = 60 m",
+          "hu": "Háromszög területe."
+        },
+        {
+          "en": "F–s: rugó, F = D·x → W = ½·D·x²",
+          "hu": "A háromszög területe adja a rugalmas energiát."
+        }
+      ]
+    },
+    {
+      "title": "A görbe alakjából következtetés",
+      "explanation": "Origón átmenő egyenes = egyenes arányosság (Ohm, Hooke). Vízszintes szakasz = állandó mennyiség (pl. olvadáskor a hőmérséklet). Hiperbola = fordított arányosság (izoterm p–V). Parabola = négyzetes összefüggés (s ~ t²).",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "Melegítési görbe vízszintes szakasza 0 °C-on",
+          "hu": "Halmazállapot-változás: olvadás."
+        },
+        {
+          "en": "p–V grafikon: hiperbola",
+          "hu": "Izoterm állapotváltozás, p·V = állandó."
+        }
+      ]
+    },
+    {
+      "title": "Linearizálás",
+      "explanation": "Ha az összefüggés nem lineáris, olyan mennyiségeket ábrázolunk, amelyek között már egyenes kapcsolat van: fonálingánál T²–l (meredekség 4π²/g), radioaktív bomlásnál ln A – t (meredekség −ln2/T½), rugós rezgőnél T²–m (meredekség 4π²/D). A meredekségből a keresett állandó kiszámítható.",
+      "emeltOnly": true,
+      "examples": [
+        {
+          "en": "T²–l egyenes, meredekség 4,02 s²/m → g = 4π²/4,02 ≈ 9,8 m/s²",
+          "hu": "Fonálinga: T² = (4π²/g)·l, tehát a meredekség 4π²/g."
+        },
+        {
+          "en": "ln A – t egyenes, meredekség −0,27 1/perc → T½ = 0,693/0,27 ≈ 2,6 perc",
+          "hu": "Bomlási törvény: ln A = ln A₀ − (ln 2/T½)·t."
+        }
+      ]
+    }
+  ],
+  "commonMistakes": [
+    {
+      "wrong": "A v–t grafikon vízszintes szakaszán a test áll.",
+      "right": "A v–t grafikon vízszintes szakaszán a test egyenletesen mozog (v állandó); áll, ha a grafikon a vízszintes tengelyen fut (v = 0).",
+      "why": "A v–t és az s–t grafikont összekeverte: s–t grafikonon jelent a vízszintes szakasz nyugalmat."
+    },
+    {
+      "wrong": "A v–t grafikon alatti terület a gyorsulás.",
+      "right": "A v–t grafikon alatti terület a megtett út, a meredeksége a gyorsulás.",
+      "why": "A terület a két tengely szorzata (m/s · s = m), a meredekség a hányadosuk (m/s / s = m/s²)."
+    },
+    {
+      "wrong": "A meredekség 12/10 = 1,2, mértékegység nélkül.",
+      "right": "A meredekség 1,2 m/s², mert a függőleges tengely m/s, a vízszintes s.",
+      "why": "A meredekség fizikai mennyiség, mértékegysége a két tengely egységének hányadosa."
+    },
+    {
+      "wrong": "A mérési pontokat töröttvonallal kötöm össze.",
+      "right": "A szóródó mérési pontokon át kiegyenlítő egyenest (görbét) húzok.",
+      "why": "A mérési hibák miatt a pontok szóródnak; a törvényszerűséget a kiegyenlítő vonal mutatja."
+    }
+  ],
+  "examTips": [
+    "Teszt és forráselemzés: a grafikonos kérdések háromféle kérdést tesznek fel (érték, meredekség, terület) – először azt döntsd el, melyikre van szükség.",
+    "Méréselemzés: ha ábrázolást kérnek, írd le a tengelyeket egységgel, a skálát, és húzz kiegyenlítő egyenest; a meredekséget két, egymástól távoli pontjából számold.",
+    "Ha a grafikon szakaszokból áll, minden szakaszt külön elemezz (gyorsul – egyenletes – lassul), és a teljes útnál add össze a területeket."
+  ],
+  "practice": [
+    {
+      "id": "1",
+      "kind": "choice",
+      "prompt": "Mit ad meg egy sebesség–idő grafikon meredeksége?",
+      "options": [
+        {
+          "key": "A",
+          "text": "A megtett utat."
+        },
+        {
+          "key": "B",
+          "text": "Az átlagsebességet."
+        },
+        {
+          "key": "C",
+          "text": "Az elmozdulást."
+        },
+        {
+          "key": "D",
+          "text": "A gyorsulást."
+        }
+      ],
+      "answer": "D",
+      "category": "grafikon",
+      "explanation": "Helyes: D. A meredekség Δv/Δt, ami a gyorsulás definíciója (m/s²).",
+      "wrongOptions": {
+        "A": "A megtett út a v–t grafikon alatti TERÜLET.",
+        "B": "Az átlagsebesség a teljes út osztva a teljes idővel.",
+        "C": "Az elmozdulás is területként (előjelesen) olvasható ki, nem meredekségként."
+      }
+    },
+    {
+      "id": "2",
+      "kind": "choice",
+      "prompt": "Egy autó v–t grafikonja 0 s és 8 s között egyenletesen nő 0-ról 16 m/s-ra. Mennyi utat tesz meg ezalatt?",
+      "options": [
+        {
+          "key": "A",
+          "text": "128 m"
+        },
+        {
+          "key": "B",
+          "text": "64 m"
+        },
+        {
+          "key": "C",
+          "text": "16 m"
+        },
+        {
+          "key": "D",
+          "text": "2 m"
+        }
+      ],
+      "answer": "B",
+      "category": "grafikon",
+      "explanation": "Helyes: B. Az út a grafikon alatti háromszög területe: ½ · 8 s · 16 m/s = 64 m.",
+      "wrongOptions": {
+        "A": "128 m a téglalap területe (8 · 16) – ez állandó 16 m/s-os sebességnél lenne az út.",
+        "C": "16 m/s a végsebesség, nem út.",
+        "D": "2 m/s² a gyorsulás (a meredekség), nem az út."
+      }
+    },
+    {
+      "id": "3",
+      "kind": "choice",
+      "prompt": "Egy anyag melegítési görbéjén (hőmérséklet–idő, állandó fűtőteljesítmény mellett) vízszintes szakasz van 80 °C-on. Mit jelent ez?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Az anyag ekkor halmazállapot-változáson megy át (pl. olvad vagy forr)."
+        },
+        {
+          "key": "B",
+          "text": "Az anyag ekkor nem kap hőt."
+        },
+        {
+          "key": "C",
+          "text": "Az anyag fajhője ekkor nulla."
+        },
+        {
+          "key": "D",
+          "text": "A mérés hibás."
+        }
+      ],
+      "answer": "A",
+      "category": "grafikon",
+      "explanation": "Helyes: A. A felvett hő ilyenkor a halmazállapot-változásra (pl. olvadásra) fordítódik, a hőmérséklet nem nő; a szakasz hossza a halmazállapot-változáshoz szükséges hővel arányos.",
+      "wrongOptions": {
+        "B": "A fűtés folyamatos, az anyag végig kap hőt.",
+        "C": "Ha a hőmérséklet nem nő hőközlésre, az nem nulla, hanem „végtelen” fajhőnek felelne meg – a helyes magyarázat a halmazállapot-változás.",
+        "D": "Ez valódi, jól ismert jelenség (olvadás- vagy forráspont)."
+      }
+    },
+    {
+      "id": "4",
+      "kind": "choice",
+      "prompt": "Egy rugó F–Δl grafikonja origón átmenő egyenes, amely Δl = 0,05 m-nél F = 2,0 N-t mutat. Mekkora a rugóállandó?",
+      "options": [
+        {
+          "key": "A",
+          "text": "0,1 N/m"
+        },
+        {
+          "key": "B",
+          "text": "0,025 N/m"
+        },
+        {
+          "key": "C",
+          "text": "40 N/m"
+        },
+        {
+          "key": "D",
+          "text": "0,4 N/m"
+        }
+      ],
+      "answer": "C",
+      "category": "grafikon",
+      "explanation": "Helyes: C. A rugóállandó a meredekség: D = F/Δl = 2,0 N / 0,05 m = 40 N/m.",
+      "wrongOptions": {
+        "A": "0,1 = F·Δl: szorzott osztás helyett.",
+        "B": "0,025 = Δl/F: fordított hányados, ez 1/D lenne (egysége m/N).",
+        "D": "0,4 = 2,0/5: a megnyúlást cm-ben hagyta, így N/cm-t kapott; 0,4 N/cm = 40 N/m."
+      }
+    },
+    {
+      "id": "5",
+      "kind": "text",
+      "prompt": "Egy test sebessége 4 s-ig állandó 5 m/s, majd 2 s alatt egyenletesen 0-ra csökken. Mennyi a teljes megtett út méterben?",
+      "answer": [
+        "25",
+        "25 m",
+        "25 méter"
+      ],
+      "maxWords": 2,
+      "category": "grafikon",
+      "explanation": "Helyes: 25 m. A v–t grafikon alatti terület: téglalap 4 s · 5 m/s = 20 m, plusz háromszög ½ · 2 s · 5 m/s = 5 m, összesen 25 m."
+    }
+  ],
+  "relatedCategories": [
+    "szovegertelmezes",
+    "meres-kiertekeles",
+    "kepletek"
+  ]
+}

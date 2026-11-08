@@ -1,0 +1,45 @@
+{
+  "schemaVersion": 1,
+  "id": "fiz-wr-emelt-buborek-gaztorveny",
+  "subject": "fizika",
+  "revision": 1,
+  "level": "emelt",
+  "source": "generated",
+  "topic": "viz-levego-kornyezet",
+  "title": "Számításos feladat: felszálló légbuborék egy tóban",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "writing",
+  "type": "szamitasos",
+  "taskNumber": 5,
+  "situation": "Egy 20 m mély tó fenekén egy búvár légzőkészülékéből 2,0 cm³ térfogatú levegőbuborék szabadul ki. A tó fenekén a víz hőmérséklete 7 °C, a felszín közelében 27 °C; a buborékban lévő levegő hőmérséklete mindig a környező vízével egyezik. A külső légnyomás 1,0 · 10⁵ Pa, a víz sűrűsége 1000 kg/m³, g = 10 m/s², R = 8,31 J/(mol·K). A buborék levegőjét ideális gáznak tekintjük, a felületi feszültség hatását és a víz párolgását elhanyagoljuk.\n\na) Mekkora a nyomás a tó fenekén? (2 pont)\nb) Mekkora a buborék térfogata közvetlenül a felszín alatt? (4 pont)\nc) Hányszorosára nő a buborékra ható felhajtóerő a felszálláskor? (2 pont)\nd) Hány mól levegő van a buborékban? (3 pont)",
+  "points": [
+    { "id": "p1", "text": "a) A teljes nyomás a tó fenekén (légnyomás + hidrosztatikai nyomás) (2 pont)" },
+    { "id": "p2", "text": "b) A buborék térfogata a felszín alatt az egyesített gáztörvénnyel (4 pont)" },
+    { "id": "p3", "text": "c) A felhajtóerő változásának aránya (2 pont)" },
+    { "id": "p4", "text": "d) A gáz anyagmennyisége az állapotegyenletből (3 pont)" }
+  ],
+  "suggestedMinutes": 35,
+  "usefulPhrases": [
+    { "en": "p = p₀ + ρ·g·h", "hu": "A folyadék belsejében a teljes nyomás: külső légnyomás + hidrosztatikai nyomás." },
+    { "en": "p₁·V₁/T₁ = p₂·V₂/T₂", "hu": "Egyesített gáztörvény állandó anyagmennyiségű ideális gázra (T kelvinben!)." },
+    { "en": "T(K) = t(°C) + 273", "hu": "Átváltás abszolút hőmérsékletre." },
+    { "en": "p·V = n·R·T", "hu": "Az ideális gáz állapotegyenlete; SI-egységekben (Pa, m³, K) számolj!" },
+    { "en": "F_fel = ρ_víz·g·V", "hu": "Arkhimédész törvénye: a felhajtóerő a kiszorított víz súlya, a térfogattal arányos." },
+    { "en": "1 cm³ = 10⁻⁶ m³", "hu": "Térfogat-átváltás az állapotegyenlethez." }
+  ],
+  "modelAnswer": {
+    "text": "a) A tó fenekén a teljes nyomás a külső légnyomás és a vízoszlop hidrosztatikai nyomásának összege: p₁ = p₀ + ρ·g·h = 1,0 · 10⁵ Pa + 1000 · 10 · 20 Pa = 1,0 · 10⁵ Pa + 2,0 · 10⁵ Pa = 3,0 · 10⁵ Pa.\nA tó fenekén a nyomás 3,0 · 10⁵ Pa (a légnyomás háromszorosa).\n\nb) A buborékban lévő levegő mennyisége nem változik, ezért alkalmazható az egyesített gáztörvény: p₁·V₁/T₁ = p₂·V₂/T₂.\nAdatok: p₁ = 3,0 · 10⁵ Pa, V₁ = 2,0 cm³, T₁ = 7 + 273 = 280 K; p₂ = 1,0 · 10⁵ Pa (a felszín alatt a hidrosztatikai nyomás elhanyagolható), T₂ = 27 + 273 = 300 K.\nV₂ = V₁ · (p₁/p₂) · (T₂/T₁) = 2,0 cm³ · 3,0 · (300/280) ≈ 2,0 · 3,0 · 1,071 cm³ ≈ 6,4 cm³.\nA buborék térfogata a felszín alatt kb. 6,4 cm³: a nyomás csökkenése miatt háromszorosára, a melegedés miatt további kb. 7 %-kal nő.\n\nc) Arkhimédész törvénye szerint F_fel = ρ_víz·g·V, a felhajtóerő a buborék térfogatával arányos (a víz sűrűségének kis hőmérsékletfüggését elhanyagolva). Így F₂/F₁ = V₂/V₁ = 6,43/2,0 ≈ 3,2.\nA felhajtóerő kb. 3,2-szeresére nő.\n\nd) Az állapotegyenlet p·V = n·R·T, a tó fenekén felírva: n = p₁·V₁/(R·T₁) = 3,0 · 10⁵ Pa · 2,0 · 10⁻⁶ m³ / (8,31 J/(mol·K) · 280 K) = 0,60 J / 2327 J/mol ≈ 2,6 · 10⁻⁴ mol.\nEllenőrzés a felszínen: n = 1,0 · 10⁵ · 6,43 · 10⁻⁶ / (8,31 · 300) ≈ 2,6 · 10⁻⁴ mol, ugyanannyi.\nA buborékban kb. 2,6 · 10⁻⁴ mol levegő van.",
+    "pointsCovered": [
+      { "id": "p1", "quote": "p₁ = p₀ + ρ·g·h = 1,0 · 10⁵ Pa + 1000 · 10 · 20 Pa = 1,0 · 10⁵ Pa + 2,0 · 10⁵ Pa = 3,0 · 10⁵ Pa" },
+      { "id": "p2", "quote": "V₂ = V₁ · (p₁/p₂) · (T₂/T₁) = 2,0 cm³ · 3,0 · (300/280) ≈ 2,0 · 3,0 · 1,071 cm³ ≈ 6,4 cm³" },
+      { "id": "p3", "quote": "F₂/F₁ = V₂/V₁ = 6,43/2,0 ≈ 3,2" },
+      { "id": "p4", "quote": "n = p₁·V₁/(R·T₁) = 3,0 · 10⁵ Pa · 2,0 · 10⁻⁶ m³ / (8,31 J/(mol·K) · 280 K) = 0,60 J / 2327 J/mol ≈ 2,6 · 10⁻⁴ mol" }
+    ],
+    "notes": [
+      "Eredmény: a 3,0 · 10⁵ Pa nyomás, a 6,4 cm³ térfogat, a 3,2-szeres felhajtóerő és a 2,6 · 10⁻⁴ mol anyagmennyiség helyes – ez az eredmény 6 pontja.",
+      "Indoklás: a megoldás kimondja, miért állandó az anyagmennyiség (egyesített gáztörvény), miért kell a légnyomást is hozzáadni a hidrosztatikai nyomáshoz, és miért arányos a felhajtóerő a térfogattal.",
+      "Számolás: a hőmérsékletek kelvinre, a térfogat m³-re váltása külön le van írva (ez a leggyakoribb hibaforrás), a d) részt a felszíni adatokkal ellenőrzi."
+    ]
+  }
+}

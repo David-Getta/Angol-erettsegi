@@ -1,0 +1,82 @@
+{
+  "schemaVersion": 1,
+  "id": "bio-sp-emelt-b-pulzus-terheles",
+  "subject": "biologia",
+  "revision": 1,
+  "level": "emelt",
+  "source": "generated",
+  "topic": "ember-szervezet",
+  "title": "A szív és a légzés alkalmazkodása a terheléshez",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "speaking",
+  "type": "b-tetel",
+  "partNumber": 2,
+  "instructionsHu": "B) altétel – problémamegoldó feladat. Elemezd a forrásban leírt mérés adatait, magyarázd meg a változásokat és a két tanuló közötti különbséget, majd tervezz vizsgálatot az edzés hatásának ellenőrzésére!",
+  "prompts": [
+    "Az adatok leírása és összehasonlítása.",
+    "A pulzus- és légzésszám-növekedés okai és szabályozása terheléskor.",
+    "Az edzett és az edzetlen szervezet különbségének magyarázata (perctérfogat, pulzustérfogat).",
+    "Kísérletterv az edzés hatásának vizsgálatára; hibaforrások."
+  ],
+  "followUpQuestions": [
+    "Miért nő terheléskor a szisztolés vérnyomás is?",
+    "Miért marad a terhelés után még percekig gyorsabb a légzés (oxigénadósság)?"
+  ],
+  "usefulPhrases": [
+    {
+      "en": "perctérfogat = pulzustérfogat × pulzusszám",
+      "hu": "a keringés teljesítményének számítása"
+    },
+    {
+      "en": "kemoreceptor",
+      "hu": "a vér CO₂-, H⁺- és O₂-szintjét érzékelő receptor"
+    },
+    {
+      "en": "szimpatikus idegrendszer",
+      "hu": "terheléskor gyorsítja a szívet, tágítja a hörgőket"
+    },
+    {
+      "en": "kontrollcsoport",
+      "hu": "az a csoport, amely nem kapja a vizsgált hatást"
+    }
+  ],
+  "sources": [
+    {
+      "title": "A mérés leírása",
+      "text": "Két 17 éves fiú 3 percig egyenletes ütemben fel-le lépett egy 40 cm magas zsámolyra (lépcsőteszt). A tanuló rendszeresen sportol (heti 5 edzés), B tanuló nem sportol. Pulzusukat (szívverés/perc) nyugalomban, a terhelés végén, valamint 1 és 3 perccel utána mérték; a légzésszámot (légvétel/perc) nyugalomban és a terhelés végén."
+    },
+    {
+      "title": "Eredmények",
+      "text": "Pulzus – nyugalomban: A 58, B 78; terhelés végén: A 132, B 168; 1 perc múlva: A 96, B 150; 3 perc múlva: A 66, B 118. Légzésszám – nyugalomban: A 14, B 16; terhelés végén: A 26, B 34."
+    },
+    {
+      "title": "Tudnivaló",
+      "text": "A perctérfogat (a szív által percenként kipumpált vér) = pulzustérfogat (egy összehúzódással kipumpált vér) × pulzusszám. Nyugalomban felnőttben kb. 5 liter/perc."
+    }
+  ],
+  "keyPoints": [
+    "Mindkét tanulónál nő a pulzus és a légzésszám terheléskor, majd csökken; B értékei mindig magasabbak, és lassabban áll vissza (3 perc után A majdnem nyugalmi, B még messze van tőle).",
+    "A dolgozó izom több oxigént igényel és több szén-dioxidot termel; a vér CO₂-szintjének emelkedését és pH-csökkenését kemoreceptorok érzékelik, a nyúltvelői légzőközpont fokozza a légzést.",
+    "A szimpatikus idegrendszer és az adrenalin növeli a szívfrekvenciát és az összehúzódás erejét; az izmok erei kitágulnak.",
+    "Nyugalomban mindkét tanulónak kb. 5 l/perc perctérfogat kell; A kisebb pulzusa nagyobb pulzustérfogatot jelent (5000 : 58 ≈ 86 ml, B-nél 5000 : 78 ≈ 64 ml).",
+    "Az edzett szívizom erősebb, a bal kamra üregtérfogata nagyobb (sportszív), az izmokban több a hajszálér és a mitokondrium – gyorsabb a megnyugvás.",
+    "Kísérletterv: hipotézis (rendszeres edzés csökkenti a nyugalmi pulzust és gyorsítja a megnyugvást); nagyobb, hasonló korú és nemű csoportok; edző és nem edző csoport, kezdeti és pl. 8 hét utáni mérés; azonos teszt, napszak, étkezés utáni idő.",
+    "Hibaforrások: két egyén nem reprezentatív, eltérő testtömeg, izgalom, a pulzusszámlálás pontatlansága, eltérő lépésütem – ismétlés, pulzusmérő óra, metronóm."
+  ],
+  "speakingSeconds": 720,
+  "prepSeconds": 900,
+  "sampleAnswer": {
+    "turns": [
+      {
+        "speaker": "candidate",
+        "text": "Az adatok szerint mindkét fiú pulzusa és légzésszáma megnőtt a terheléstől, majd csökkent. Az A tanuló nyugalmi pulzusa 58, a terhelés végén 132, és 3 perc múlva már 66, tehát majdnem visszaállt. A B tanuló már nyugalomban 78-as pulzusú, a terhelés végén 168-at mértek nála, és 3 perc múlva is 118 – lassabban nyugszik meg. A légzésszám A-nál 14-ről 26-ra, B-nél 16-ról 34-re nőtt.\nA változás oka, hogy a dolgozó izmok sejtlégzése felgyorsul: több oxigénre van szükségük, és több szén-dioxidot termelnek. A vér szén-dioxid-szintjének emelkedését és a pH csökkenését kemoreceptorok érzékelik, és a nyúltvelő légzőközpontja szaporábbá és mélyebbé teszi a légzést. Közben a szimpatikus idegrendszer és a mellékvesevelő adrenalinja gyorsítja és erősíti a szívműködést, az izmok erei kitágulnak, így több vér, vagyis több oxigén jut oda, ahol szükség van rá.\nA két tanuló közötti különbséget a perctérfogattal magyarázom. Nyugalomban mindkettőjüknek nagyjából 5 liter vér kell percenként. Ha A szíve ezt 58 összehúzódással teljesíti, egy összehúzódással kb. 86 ml-t pumpál ki, B szíve 78 összehúzódással csak kb. 64 ml-t. A rendszeres edzés hatására a szívizom megerősödik, a bal kamra térfogata nő, ezért nagyobb a pulzustérfogat, és kisebb pulzus is elég. Az edzett izmokban több a hajszálér és a mitokondrium, ezért hatékonyabb az oxigénfelhasználás, és gyorsabb a megnyugvás.\nMivel két ember adataiból nem lehet általánosítani, vizsgálatot terveznék. Hipotézisem: a rendszeres állóképességi edzés csökkenti a nyugalmi pulzust és lerövidíti a megnyugvás idejét. Két hasonló korú, nemű és testtömegű, legalább 15–15 fős csoportot alakítanék; az egyik nyolc hétig hetente háromszor edz, a másik nem. Mindkét csoportot a vizsgálat elején és végén ugyanazzal a lépcsőteszttel mérném, azonos napszakban, azonos zsámolymagassággal, metronómmal megadott ütemben, pulzusmérő órával. A kezdő és a végső értékek változását hasonlítanám össze. Hibaforrás lehet az izgalom, az eltérő étkezés vagy alvás, ezért a mérést többször megismételném, és átlagot számolnék."
+      }
+    ],
+    "notes": [
+      "Elemzés: az adatokat pontosan leolvassa és összehasonlítja (nyugalmi érték, csúcs, visszatérés), és a perctérfogat képletével számszerűen is igazolja a pulzustérfogat különbségét.",
+      "Következtetés, indoklás: a pulzus és a légzés fokozódását a szabályozás teljes láncával magyarázza (CO₂ és pH → kemoreceptor → légzőközpont; szimpatikus hatás, adrenalin), az edzettség hatását szervi és sejtszinten is.",
+      "Kísérlettervezés: a két egyénből nem általánosít, hanem kontrollcsoportos, előtte–utána mérést tervez állandó feltételekkel és ismétléssel – ez a B) altétel emelt szintű elvárása."
+    ]
+  }
+}

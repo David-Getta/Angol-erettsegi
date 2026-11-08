@@ -1,0 +1,47 @@
+{
+  "schemaVersion": 1,
+  "id": "mat-wr-kozep-strand-medence-osszetett",
+  "subject": "matematika",
+  "revision": 1,
+  "level": "kozep",
+  "source": "generated",
+  "topic": "tergeometria",
+  "title": "II/B: a strand medencéje – térfogat, csempézés, jegybevétel",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "writing",
+  "type": "osszetett",
+  "taskNumber": 2,
+  "situation": "Egy strand úszómedencéje téglatest alakú: 25 m hosszú, 12 m széles és mindenhol 1,6 m mély.\n\na) Hány m³ víz fér a medencébe, ha színültig töltik? Hány óra alatt telik meg a medence, ha a töltőcsap percenként 1000 liter vizet ad? (4 pont)\n\nb) A medence alját és négy oldalfalát csempézik. Hány m² a csempézendő felület? (4 pont)\n\nc) A csempe négyzetméterenként 4500 Ft-ba kerül. A vágási hulladék miatt a csempézendő felületnél 10%-kal több csempét vásárolnak. Mennyibe kerül a csempe? Az eredményt ezer forintra kerekítve adja meg! (4 pont)\n\nd) Egy forró nyári napon 1250 vendég látogatta a strandot. A vendégek 60%-a felnőtt volt, a többi gyerek. A felnőtt belépő 2400 Ft, a gyerekjegy a felnőtt jegy árának a fele. Mennyi volt ezen a napon a strand jegybevétele? (5 pont)",
+  "points": [
+    { "id": "p1", "text": "a) A medence térfogata m³-ben, átváltás literre, a töltési idő órában (4 pont)" },
+    { "id": "p2", "text": "b) Az alj és a négy oldalfal területének összege (4 pont)" },
+    { "id": "p3", "text": "c) A 10%-kal növelt csempemennyiség ára, ezer forintra kerekítve (4 pont)" },
+    { "id": "p4", "text": "d) A felnőttek és gyerekek száma, a gyerekjegy ára, a teljes jegybevétel (5 pont)" }
+  ],
+  "suggestedMinutes": 35,
+  "usefulPhrases": [
+    { "en": "V = a·b·c", "hu": "Téglatest térfogata: hosszúság · szélesség · magasság (mélység)." },
+    { "en": "1 m³ = 1000 liter", "hu": "Átváltás: a liter és a köbméter közti összefüggés." },
+    { "en": "idő = mennyiség / sebesség", "hu": "Töltési idő: összes liter osztva a percenkénti literrel, majd perc → óra (÷ 60)." },
+    { "en": "oldalfalak: 2·(a·m) + 2·(b·m)", "hu": "A fedőlap (a víz felszíne) nem számít, csak az alj és a 4 oldalfal." },
+    { "en": "10%-kal több = 1,1-szeres", "hu": "A százalékos növelést szorzással a legegyszerűbb kezelni." },
+    { "en": "60% = 0,6; a többi 40%", "hu": "A százalékokat tizedes törtként szorozd; a kiegészítő rész 100% − 60%." },
+    { "en": "Ezer forintra kerekítés", "hu": "2 071 080 Ft → 2 071 000 Ft (a százasokat nézzük)." }
+  ],
+  "checklistExtra": [],
+  "modelAnswer": {
+    "text": "a) A medence téglatest, térfogata V = 25·12·1,6 = 480 m³. Mivel 1 m³ = 1000 liter, ez 480 000 liter víz.\nA csap percenként 1000 litert ad, így a töltés 480 000 : 1000 = 480 percig tart. 480 perc = 480 : 60 = 8 óra.\nA medencébe 480 m³ víz fér, és 8 óra alatt telik meg.\n\nb) Az alj területe 25·12 = 300 m². A két hosszabbik oldalfal területe 2·(25·1,6) = 80 m², a két rövidebb oldalfalé 2·(12·1,6) = 38,4 m². (A medence teteje nyitott, ott nincs csempe.)\nA csempézendő felület: 300 + 80 + 38,4 = 418,4 m².\n\nc) A hulladék miatt a felület 110%-át, azaz 1,1-szeresét vásárolják meg: 418,4·1,1 = 460,24 m² csempét.\nEnnek ára 460,24·4500 = 2 071 080 Ft.\nEzer forintra kerekítve a csempe kb. 2 071 000 Ft-ba kerül.\n\nd) A felnőttek száma a vendégek 60%-a: 1250·0,6 = 750 fő; a gyerekek száma 1250 − 750 = 500 fő (ez a 40%). A gyerekjegy a felnőtt jegy fele: 2400 : 2 = 1200 Ft.\nA felnőttek bevétele 750·2400 = 1 800 000 Ft, a gyerekek bevétele 500·1200 = 600 000 Ft.\nA strand jegybevétele ezen a napon 1 800 000 + 600 000 = 2 400 000 Ft volt.",
+    "pointsCovered": [
+      { "id": "p1", "quote": "A csap percenként 1000 litert ad, így a töltés 480 000 : 1000 = 480 percig tart. 480 perc = 480 : 60 = 8 óra." },
+      { "id": "p2", "quote": "A csempézendő felület: 300 + 80 + 38,4 = 418,4 m²." },
+      { "id": "p3", "quote": "Ezer forintra kerekítve a csempe kb. 2 071 000 Ft-ba kerül." },
+      { "id": "p4", "quote": "A strand jegybevétele ezen a napon 1 800 000 + 600 000 = 2 400 000 Ft volt." }
+    ],
+    "notes": [
+      "Eredmény: mind a négy részfeladat végeredménye helyes (480 m³ és 8 óra; 418,4 m²; 2 071 000 Ft; 2 400 000 Ft), a kért kerekítéssel.",
+      "Indoklás: a megoldás minden lépésnél leírja, mit számol és miért (téglatest térfogata, 1 m³ = 1000 l, a nyitott tető nem csempézendő, a 10% többlet 1,1-szeres szorzó, a gyerekek a maradék 40%).",
+      "Mértékegység és válasz: minden részeredmény mellett ott a mértékegység (m³, liter, perc → óra, m², Ft), és minden rész szöveges válasszal zárul – ez adja a forma-szempont pontját."
+    ]
+  }
+}

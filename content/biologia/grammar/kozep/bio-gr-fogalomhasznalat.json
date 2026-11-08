@@ -1,0 +1,253 @@
+{
+  "schemaVersion": 1,
+  "id": "bio-gr-fogalomhasznalat",
+  "subject": "biologia",
+  "revision": 1,
+  "level": "kozep",
+  "source": "generated",
+  "topic": "nyelvtan",
+  "title": "Biológiai fogalmak pontos használata",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "grammar",
+  "type": "lesson",
+  "category": "fogalomhasznalat",
+  "summaryHu": "A biológiaérettségin sok pont azon múlik, hogy a rokon fogalmakat (gén–allél, faj–populáció, sejtlégzés–lélegzés, emésztés–felszívódás) pontosan megkülönbözteted-e. A feleletválasztós és rövid válaszos feladatok gyakran éppen ezekre a különbségekre kérdeznek rá, a kifejtős részekben és a szóbelin pedig a pontatlan fogalomhasználat a „szaknyelv” szempontnál visz el pontot.",
+  "rules": [
+    {
+      "title": "Jó definíció: főfogalom + megkülönböztető jegy",
+      "explanation": "Egy fogalom meghatározásakor először mondd meg, milyen tágabb csoportba tartozik (főfogalom), majd azt, ami a csoport többi tagjától megkülönbözteti. Ha csak példát mondasz vagy csak egy tulajdonságot, az nem definíció.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "Az enzim olyan biológiai katalizátor (főfogalom), amely – többnyire fehérje lévén – a reakció aktiválási energiáját csökkenti, és maga nem alakul át (megkülönböztető jegyek).",
+          "hu": "A főfogalom a katalizátor, a megkülönböztető jegy a biológiai eredet és a működés módja."
+        },
+        {
+          "en": "Rossz: „Az enzim például a pepszin.”",
+          "hu": "Ez csak példa, nem meghatározás."
+        }
+      ]
+    },
+    {
+      "title": "Gén, allél, genotípus, fenotípus",
+      "explanation": "A gén a DNS egy információt hordozó szakasza; az allél ugyanannak a génnek egy változata. A genotípus az egyed allélösszetétele (pl. Aa), a fenotípus a megjelenő tulajdonság (pl. sárga mag), amelyet a környezet is befolyásol.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "A borsó magszínét egy gén határozza meg, amelynek két allélja van: S (sárga) és s (zöld).",
+          "hu": "A „sárga gén” helytelen kifejezés: a sárga szín egy allélhoz tartozik."
+        },
+        {
+          "en": "Az Ss genotípusú borsó fenotípusa sárga magszín.",
+          "hu": "Genotípus = betűk, fenotípus = tulajdonság."
+        }
+      ]
+    },
+    {
+      "title": "Szerveződési szintek: populáció, életközösség, ökoszisztéma",
+      "explanation": "A populáció egy faj egy területen élő egyedeinek csoportja. Az életközösség (biocönózis) az ott élő összes populáció együtt. Az ökoszisztéma az életközösség és az élettelen környezet együtt. A faj ennél tágabb: az összes, egymással termékeny utódot létrehozni képes egyed, bárhol éljen.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "A Balaton pontypopulációja a ponty faj egyik populációja.",
+          "hu": "Egy fajnak sok populációja lehet."
+        },
+        {
+          "en": "A Balaton ökoszisztémájához a víz, az iszap és a hőmérséklet is hozzátartozik.",
+          "hu": "Az élettelen tényezők nélkül csak életközösségről beszélhetünk."
+        }
+      ]
+    },
+    {
+      "title": "Folyamatok fogalompárjai",
+      "explanation": "Sejtlégzés (biológiai oxidáció): a sejtekben, a mitokondriumban zajló lebontó folyamat; lélegzés (légzőmozgás): a levegő ki- és beáramlása a tüdőbe. Emésztés: a tápanyagok enzimes lebontása a tápcsatornában; felszívódás: a kis molekulák bejutása a vérbe vagy a nyirokba. Kiválasztás: a bomlástermékek eltávolítása (vese); elválasztás: mirigyváladék termelése.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "A növények éjjel-nappal végeznek sejtlégzést, nappal ezen felül fotoszintetizálnak.",
+          "hu": "A „növények éjjel lélegeznek” megfogalmazás pontatlan."
+        },
+        {
+          "en": "A glükóz a vékonybélben szívódik fel, a keményítő emésztése a szájban kezdődik.",
+          "hu": "Emésztés ≠ felszívódás."
+        }
+      ]
+    },
+    {
+      "title": "Homológ és analóg, haploid és diploid",
+      "explanation": "Homológ szervek közös eredetűek (azonos alapterv), működésük eltérhet; analóg szervek eltérő eredetűek, de hasonló működésűek. Diploid (2n) sejtben minden kromoszómából kettő van (testi sejtek), haploid (n) sejtben egy (ivarsejtek).",
+      "emeltOnly": true,
+      "examples": [
+        {
+          "en": "A denevér szárnya és az ember karja homológ, a denevér szárnya és a lepke szárnya analóg.",
+          "hu": "Közös eredet kontra hasonló funkció."
+        },
+        {
+          "en": "Az emberi petesejt haploid: 23 kromoszómát tartalmaz.",
+          "hu": "A testi sejtek 46 kromoszómája 23 pár."
+        }
+      ]
+    }
+  ],
+  "commonMistakes": [
+    {
+      "wrong": "A vírus egysejtű élőlény.",
+      "right": "A vírus nem sejt: nukleinsavból és fehérjeburokból áll, önálló anyagcseréje nincs, csak gazdasejtben szaporodik.",
+      "why": "Az „egysejtű” sejtes szerveződést jelent, a vírus viszont sejtszint alatti képlet."
+    },
+    {
+      "wrong": "A sárga szín génje domináns.",
+      "right": "A sárga színt okozó allél domináns.",
+      "why": "A dominancia az allélok viszonya; egy génnek nincs „színe”, a gén alléljai különböznek."
+    },
+    {
+      "wrong": "A növények nappal fotoszintetizálnak, éjjel lélegeznek.",
+      "right": "A növények folyamatosan végeznek sejtlégzést, nappal ezen felül fotoszintézist is.",
+      "why": "A sejtlégzés nem áll le nappal; csak nappal a fotoszintézis oxigéntermelése nagyobb a légzés fogyasztásánál."
+    },
+    {
+      "wrong": "A Balaton élővilága egy populáció.",
+      "right": "A Balaton élővilága egy életközösség (sok faj populációi).",
+      "why": "A populáció egyetlen faj egyedeiből áll."
+    },
+    {
+      "wrong": "A vese elválasztja a vizeletet.",
+      "right": "A vese kiválasztja (kiválasztó szerv), a mirigyek elválasztanak.",
+      "why": "A kiválasztás a bomlástermékek eltávolítása, az elválasztás mirigyváladék termelése."
+    }
+  ],
+  "examTips": [
+    "Feleletválasztásnál keresd a fogalompár másik tagját az opciók között: a rossz válaszok gyakran a rokon fogalmat írják le (pl. populáció helyett életközösség).",
+    "Rövid válasznál a pontos szakszót írd (pl. „allél”, nem „génváltozat”) – a javítókulcs a szakszót kéri, a körülírás csak akkor jó, ha egyértelmű.",
+    "Kifejtős válaszban és a szóbelin a fogalmat első előfordulásakor definiáld egy mondatban: ez a tartalmi és a szaknyelvi pontot is biztosítja."
+  ],
+  "practice": [
+    {
+      "id": "1",
+      "kind": "choice",
+      "prompt": "Melyik meghatározás illik a populációra?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Egy adott területen élő összes élőlény."
+        },
+        {
+          "key": "B",
+          "text": "Egy faj adott területen, egy időben élő egyedeinek csoportja."
+        },
+        {
+          "key": "C",
+          "text": "Az élőlények és élettelen környezetük együtt."
+        },
+        {
+          "key": "D",
+          "text": "Az összes, egymással termékeny utódot létrehozni képes egyed."
+        }
+      ],
+      "answer": "B",
+      "category": "fogalomhasznalat",
+      "explanation": "Helyes: B. A populáció egyetlen faj egy adott helyen és időben együtt élő, egymással szaporodó egyedeinek csoportja.",
+      "wrongOptions": {
+        "A": "Ez az életközösség (biocönózis): sok faj populációi együtt.",
+        "C": "Ez az ökoszisztéma: életközösség + élettelen környezet.",
+        "D": "Ez a faj meghatározása, amely több populációból is állhat."
+      }
+    },
+    {
+      "id": "2",
+      "kind": "text",
+      "prompt": "Hogyan nevezzük ugyanannak a génnek a különböző változatait?",
+      "answer": [
+        "allél",
+        "allélok",
+        "allélek",
+        "allélja",
+        "allélei"
+      ],
+      "category": "fogalomhasznalat",
+      "explanation": "Helyes: allél. Egy génnek több allélja lehet (pl. az AB0-vércsoportgénnek három: A, B, 0); egy diploid egyedben egy génből két allél van.",
+      "maxWords": 2
+    },
+    {
+      "id": "3",
+      "kind": "choice",
+      "prompt": "Melyik mondat használja helyesen a fogalmakat?",
+      "options": [
+        {
+          "key": "A",
+          "text": "A vékonybélben a glükóz megemésztődik."
+        },
+        {
+          "key": "B",
+          "text": "A vese elválasztja a karbamidot."
+        },
+        {
+          "key": "C",
+          "text": "A tüdőben zajlik a sejtlégzés."
+        },
+        {
+          "key": "D",
+          "text": "A keményítő emésztése a szájüregben kezdődik, a glükóz a vékonybélben szívódik fel."
+        }
+      ],
+      "answer": "D",
+      "category": "fogalomhasznalat",
+      "explanation": "Helyes: D. A keményítőt már a nyál amiláza elkezdi bontani (emésztés), a végtermék glükóz a vékonybél bolyhain át szívódik fel.",
+      "wrongOptions": {
+        "A": "A glükóz már nem emésztődik tovább, hanem felszívódik.",
+        "B": "A vese kiválaszt; elválasztásról mirigyeknél beszélünk.",
+        "C": "A tüdőben gázcsere és lélegzés történik; sejtlégzést minden sejt végez, a mitokondriumokban."
+      }
+    },
+    {
+      "id": "4",
+      "kind": "choice",
+      "prompt": "Melyik szervpár analóg?",
+      "options": [
+        {
+          "key": "A",
+          "text": "az ember karja és a ló mellső lába"
+        },
+        {
+          "key": "B",
+          "text": "a madár szárnya és a denevér szárnya (mint mellső végtag)"
+        },
+        {
+          "key": "C",
+          "text": "a bálna mellső úszója és a delfin mellső úszója"
+        },
+        {
+          "key": "D",
+          "text": "a sas szárnya és a lepke szárnya"
+        }
+      ],
+      "answer": "D",
+      "category": "fogalomhasznalat",
+      "explanation": "Helyes: D. A sas szárnya csontos mellső végtag, a lepke szárnya kitinlemez – eltérő eredetűek, csak a repülés funkciója közös, ezért analógok.",
+      "wrongOptions": {
+        "A": "Mindkettő emlős mellső végtag, azonos csontokkal – homológ.",
+        "B": "Mindkettő gerinces mellső végtag (csontváz szintjén homológ), csak a repülés kétszer, egymástól függetlenül alakult ki.",
+        "C": "Két rokon emlős azonos eredetű mellső végtagja – homológ."
+      }
+    },
+    {
+      "id": "5",
+      "kind": "text",
+      "prompt": "Hogyan nevezzük azt a sejtet, amelyben minden kromoszómából csak egy van (pl. ivarsejt)?",
+      "answer": [
+        "haploid",
+        "haploid sejt",
+        "n",
+        "egyszeres kromoszómaszámú"
+      ],
+      "category": "fogalomhasznalat",
+      "explanation": "Helyes: haploid (n). Az emberi ivarsejtek 23 kromoszómát tartalmaznak; a megtermékenyítéskor két haploid sejt egyesül, és diploid (2n = 46) zigóta jön létre.",
+      "maxWords": 3
+    }
+  ],
+  "relatedCategories": [
+    "felepites-mukodes",
+    "szovegertelmezes"
+  ]
+}

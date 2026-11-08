@@ -1,0 +1,197 @@
+{
+  "schemaVersion": 1,
+  "id": "nem-ls-emelt-wiener-kaffeehaus-true-false",
+  "subject": "nemet",
+  "revision": 1,
+  "level": "emelt",
+  "source": "generated",
+  "topic": "szabadido",
+  "title": "Zeit haben im Kaffeehaus",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "listening",
+  "type": "true-false",
+  "instructions": "Sie hören eine Radioreportage über ein traditionelles Wiener Kaffeehaus. Entscheiden Sie, ob die Aussagen (1–9) richtig (T) oder falsch (F) sind. Sie hören den Text zweimal. Am Anfang finden Sie ein Beispiel (0).",
+  "instructionsHu": "Egy rádióriportot hallasz egy hagyományos bécsi kávéházról. Döntsd el, igazak (T) vagy hamisak (F) az állítások. A felvételt kétszer hallod.",
+  "listening": {
+    "format": "radio",
+    "speakers": [
+      {
+        "id": "P",
+        "name": "Reporterin",
+        "gender": "female",
+        "accent": "de-AT",
+        "age": "adult"
+      },
+      {
+        "id": "N",
+        "name": "Herr Novak (Oberkellner)",
+        "gender": "male",
+        "accent": "de-AT",
+        "age": "older"
+      },
+      {
+        "id": "M",
+        "name": "Mira (Studentin)",
+        "gender": "female",
+        "accent": "de-AT",
+        "age": "young"
+      }
+    ],
+    "script": [
+      {
+        "speaker": "P",
+        "text": "Marmortische, Holzstühle, Zeitungen in langen Holzhaltern und ein Kellner im schwarzen Anzug. Seit 2011 steht die Wiener Kaffeehauskultur auf der österreichischen Liste des immateriellen Kulturerbes. Doch wie lebendig ist sie heute noch? Ich bin ins Café Brandl gegangen, ein traditionelles Kaffeehaus im siebten Bezirk. Herr Novak, Sie sind hier Oberkellner. Wie lange schon?"
+      },
+      {
+        "speaker": "N",
+        "text": "Seit neununddreißig Jahren. Angefangen habe ich mit siebzehn, als Piccolo, so heißt bei uns der Lehrling. Damals musste ich zwei Jahre lang nur Wasser servieren und Zeitungen ordnen, bevor ich zum ersten Mal einen Kaffee bringen durfte."
+      },
+      {
+        "speaker": "P",
+        "text": "Was macht ein echtes Wiener Kaffeehaus aus?"
+      },
+      {
+        "speaker": "N",
+        "text": "Die Zeit. Bei uns kann man mit einer einzigen Melange den ganzen Nachmittag sitzen, und niemand wird Sie hinauswerfen. Zum Kaffee bekommen Sie immer ein Glas Wasser, und wenn Sie lange bleiben, bringe ich Ihnen ungefragt ein neues. Das ist kein Service, das ist Respekt."
+      },
+      {
+        "speaker": "P",
+        "text": "Viele sagen ja, die Wiener Kellner seien unfreundlich …"
+      },
+      {
+        "speaker": "N",
+        "text": "Wir sind nicht unfreundlich, wir sind ehrlich. Wenn ein Gast mit dem Finger schnippt, dann komme ich halt ein bisschen später. Ein bisschen Grant gehört dazu, die Touristen erwarten das sogar."
+      },
+      {
+        "speaker": "P",
+        "text": "Wer sind heute Ihre Gäste?"
+      },
+      {
+        "speaker": "N",
+        "text": "Am Vormittag die Pensionisten, die Zeitung lesen. Mittags Leute aus den Büros, die hier essen, unser Gulasch ist berühmt. Und am Nachmittag immer mehr Studenten mit Laptops. Früher hätte ich das schrecklich gefunden, heute sehe ich es anders: Früher haben die Dichter hier ihre Romane geschrieben, heute schreiben die Studenten eben ihre Abschlussarbeiten."
+      },
+      {
+        "speaker": "P",
+        "text": "Eine dieser Studentinnen ist Mira, 23. Mira, warum kommst du hierher und nicht in ein modernes Café?"
+      },
+      {
+        "speaker": "M",
+        "text": "Weil es hier ruhig ist. In den neuen Coffeeshops läuft immer laute Musik, und nach einer Stunde schaut dich jemand an, als ob du endlich gehen solltest. Hier stört das niemanden. Ich bin drei-, viermal pro Woche da, meistens bis zum Abend."
+      },
+      {
+        "speaker": "P",
+        "text": "Ist das nicht teuer?"
+      },
+      {
+        "speaker": "M",
+        "text": "Eine Melange kostet hier fast fünf Euro, das ist schon nicht billig. Aber wenn man bedenkt, dass ich fünf Stunden hier sitze und arbeite, ist es billiger als jede Bibliothek mit Kaffeeautomat. Und das WLAN ist gratis. Das hat Herr Novak übrigens lange verhindert."
+      },
+      {
+        "speaker": "N",
+        "text": "Ja, ich war dagegen. Ich dachte, dann redet keiner mehr miteinander. Aber der Chef hat gesagt, ohne Internet kommen keine jungen Leute mehr. Er hatte recht."
+      },
+      {
+        "speaker": "P",
+        "text": "Machen Sie sich Sorgen um die Zukunft der Kaffeehäuser?"
+      },
+      {
+        "speaker": "N",
+        "text": "Die Mieten in der Innenstadt steigen, und einige alte Cafés mussten schon zusperren. Das tut weh. Aber solange es Menschen gibt, die sich Zeit nehmen wollen, wird es auch Kaffeehäuser geben. Nur das Personal, das ist schwierig. Junge Leute wollen heute nicht mehr am Wochenende arbeiten. Ich verstehe sie ja."
+      }
+    ]
+  },
+  "example": {
+    "id": "0",
+    "kind": "tf",
+    "prompt": "Herr Novak arbeitet seit fast vierzig Jahren als Kellner.",
+    "answer": "T",
+    "category": "detail",
+    "explanation": "Igaz: harminckilenc éve dolgozik ott („Seit neununddreißig Jahren”), ez majdnem negyven év.",
+    "evidence": "Seit neununddreißig Jahren."
+  },
+  "items": [
+    {
+      "id": "1",
+      "kind": "tf",
+      "prompt": "Als Lehrling durfte Herr Novak von Anfang an Kaffee servieren.",
+      "answer": "F",
+      "category": "detail",
+      "explanation": "Hamis: két évig csak vizet szolgálhatott fel és újságokat rendezhetett, mielőtt először kávét vihetett.",
+      "evidence": "Damals musste ich zwei Jahre lang nur Wasser servieren und Zeitungen ordnen, bevor ich zum ersten Mal einen Kaffee bringen durfte."
+    },
+    {
+      "id": "2",
+      "kind": "tf",
+      "prompt": "Im Café Brandl erwartet man, dass die Gäste regelmäßig etwas Neues bestellen.",
+      "answer": "F",
+      "category": "detail",
+      "explanation": "Hamis: egyetlen melange-zsal egész délután ott lehet ülni, és senki sem küldi el a vendéget.",
+      "evidence": "Bei uns kann man mit einer einzigen Melange den ganzen Nachmittag sitzen, und niemand wird Sie hinauswerfen."
+    },
+    {
+      "id": "3",
+      "kind": "tf",
+      "prompt": "Gäste, die lange bleiben, bekommen frisches Wasser, ohne danach zu fragen.",
+      "answer": "T",
+      "category": "detail",
+      "explanation": "Igaz: aki sokáig marad, annak kérés nélkül („ungefragt”) új pohár vizet visz.",
+      "evidence": "wenn Sie lange bleiben, bringe ich Ihnen ungefragt ein neues"
+    },
+    {
+      "id": "4",
+      "kind": "tf",
+      "prompt": "Nach Herrn Novak erwarten Touristen von Wiener Kellnern eine gewisse Unfreundlichkeit.",
+      "answer": "T",
+      "category": "inference",
+      "explanation": "Igaz: szerinte egy kis morcosság („Grant”) hozzátartozik, és a turisták ezt egyenesen elvárják.",
+      "evidence": "Ein bisschen Grant gehört dazu, die Touristen erwarten das sogar."
+    },
+    {
+      "id": "5",
+      "kind": "tf",
+      "prompt": "Herr Novak ärgert sich heute über die Studenten mit Laptops.",
+      "answer": "F",
+      "category": "attitude",
+      "explanation": "Hamis: régen szörnyűnek találta volna, de ma másképp látja – a diákok ugyanúgy írnak ott, ahogy régen a költők.",
+      "evidence": "Früher hätte ich das schrecklich gefunden, heute sehe ich es anders"
+    },
+    {
+      "id": "6",
+      "kind": "tf",
+      "prompt": "Mira mag die modernen Coffeeshops wegen der Musik.",
+      "answer": "F",
+      "category": "attitude",
+      "explanation": "Hamis: Mira épp azért jár a kávéházba, mert ott csend van – az új kávézókban mindig hangos zene szól, és ez zavarja.",
+      "evidence": "In den neuen Coffeeshops läuft immer laute Musik"
+    },
+    {
+      "id": "7",
+      "kind": "tf",
+      "prompt": "Mira findet das Kaffeehaus für ihre Zwecke eigentlich günstig.",
+      "answer": "T",
+      "category": "inference",
+      "explanation": "Igaz: bár egy melange majdnem öt euró, öt óra munkához képest olcsóbb bármelyik kávéautomatás könyvtárnál.",
+      "evidence": "ist es billiger als jede Bibliothek mit Kaffeeautomat"
+    },
+    {
+      "id": "8",
+      "kind": "tf",
+      "prompt": "Herr Novak war ursprünglich gegen das kostenlose WLAN.",
+      "answer": "T",
+      "category": "detail",
+      "explanation": "Igaz: ellenezte, mert attól tartott, hogy akkor senki sem beszélget majd egymással; a főnöke győzte meg.",
+      "evidence": "Ja, ich war dagegen."
+    },
+    {
+      "id": "9",
+      "kind": "tf",
+      "prompt": "Laut Herrn Novak ist es leicht, junges Personal zu finden.",
+      "answer": "F",
+      "category": "detail",
+      "explanation": "Hamis: a személyzet a nehéz kérdés („das ist schwierig”), mert a fiatalok nem akarnak hétvégén dolgozni.",
+      "evidence": "Nur das Personal, das ist schwierig."
+    }
+  ],
+  "suggestedMinutes": 8
+}

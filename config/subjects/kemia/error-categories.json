@@ -1,0 +1,130 @@
+{
+  "meta": {
+    "verifiedAt": "2026-11-05",
+    "sources": [
+      {
+        "title": "Oktatási Hivatal: Kémia – részletes érettségi vizsgakövetelmény és vizsgaleírás (2024-től érvényes, Nat2020)",
+        "url": "https://www.oktatas.hu/pub_bin/dload/kozoktatas/erettsegi/vizsgakovetelmenyek2024/kemia_2024_e.pdf"
+      },
+      {
+        "title": "Eduline (2025. 05. 14.): Minden, amit a kémiaérettségiről tudni kell – pontozás, témakörök (közép 150 perc, 100 pont; emelt 240 perc)",
+        "url": "https://eduline.hu/erettsegi-felveteli/20250514_kemiaerettsegi-minden-amit-tudni-kell-pontozas-temakorok"
+      },
+      {
+        "title": "Eduline (2024. 05. 14.): Minden, amit a csütörtöki kémiaérettségiről tudni kell",
+        "url": "https://eduline.hu/erettsegi-felveteli/20240514_kemia-erettsegi-kozepszint-emelt-szint-tudnivalok"
+      },
+      {
+        "title": "kemiaerettsegi.hu: Szóbeli vizsgarész (közép: A téma 25 + B kísérlet 15 + szaknyelv 5 + segédeszközök 5)",
+        "url": "https://kemiaerettsegi.hu/szobeli.html"
+      },
+      {
+        "title": "kemiaerettsegi.hu: Középszintű javítási-értékelési útmutató, 2024. május (K2412)",
+        "url": "https://kemiaerettsegi.hu/dl/mo2024maj.pdf"
+      },
+      {
+        "title": "Eduline (2024. 04. 11.): Ilyenek lesznek az idei emelt kémia érettségi szóbeli A és C feladatainak témakörei",
+        "url": "https://eduline.hu/erettsegi-felveteli/20240411_erettsegi-2024-emelt-kemia-szobeli-feladatkorok"
+      },
+      {
+        "title": "Eduline (2026. 03. 14.): Érettségi 2026 – pontozási és osztályozási szabályok (közép 80/60/40/25 %, emelt 60/47/33/25 %, vizsgarészenként 12 %)",
+        "url": "https://eduline.hu/erettsegi-felveteli/20260314_erettsegi-2026-pontozas-osztalyozas"
+      }
+    ],
+    "notes": [
+      "Az ellenőrzés hírportál-cikkek (Eduline, Telex) és a hivatalos dokumentumok keresőben indexelt szövege alapján történt; az OH oldalát a futtató környezet hálózata nem engedte közvetlenül megnyitni – a hivatalos vizsgaleírással érdemes összevetni."
+    ]
+  },
+  "groups": [
+    {
+      "id": "fogalom",
+      "name": "Fogalmak, szerkezet"
+    },
+    {
+      "id": "reakcio",
+      "name": "Reakciók, egyenletek"
+    },
+    {
+      "id": "szamitas",
+      "name": "Számítás"
+    },
+    {
+      "id": "kiserlet",
+      "name": "Kísérlet, értelmezés"
+    }
+  ],
+  "categories": [
+    {
+      "id": "atomszerkezet",
+      "name": "Atomszerkezet, periódusos rendszer",
+      "group": "fogalom",
+      "description": "Elektronszerkezet, periodikus tulajdonságok, ionok töltése."
+    },
+    {
+      "id": "kotes-szerkezet",
+      "name": "Kötések, molekulaszerkezet, polaritás",
+      "group": "fogalom",
+      "description": "Kötéstípus, molekulaalak, polaritás, rácstípus, másodrendű kötések."
+    },
+    {
+      "id": "anyagismeret",
+      "name": "Anyagismeret, tulajdonságok",
+      "group": "fogalom",
+      "description": "Elemek, vegyületek tulajdonságainak, előfordulásának, felhasználásának tévesztése."
+    },
+    {
+      "id": "szerves-elnevezes",
+      "name": "Szerves vegyületek: elnevezés, csoportok",
+      "group": "fogalom",
+      "description": "Funkciós csoportok, homológ sor, izoméria, elnevezés."
+    },
+    {
+      "id": "reakcioegyenlet",
+      "name": "Reakcióegyenlet rendezése",
+      "group": "reakcio",
+      "description": "Rendezetlen vagy hibás egyenlet, rossz termékek, halmazállapot-jelölés."
+    },
+    {
+      "id": "reakciotipus",
+      "name": "Reakciótípusok, sav–bázis, redoxi",
+      "group": "reakcio",
+      "description": "Reakciótípus felismerése, oxidációs szám, sav–bázis párok, pH."
+    },
+    {
+      "id": "egyensuly-kinetika",
+      "name": "Egyensúly, reakciósebesség, termokémia",
+      "group": "reakcio",
+      "description": "Le Chatelier-elv, reakcióhő előjele, katalizátor hatása."
+    },
+    {
+      "id": "anyagmennyiseg",
+      "name": "Anyagmennyiség, moláris tömeg",
+      "group": "szamitas",
+      "description": "n = m/M, Avogadro-szám, moláris térfogat hibás használata."
+    },
+    {
+      "id": "oldatok-szamitas",
+      "name": "Oldatok: tömeg- és anyagmennyiség-koncentráció",
+      "group": "szamitas",
+      "description": "Tömegszázalék, koncentráció, hígítás, keverés számítási hibái."
+    },
+    {
+      "id": "szamolas-mertekegyseg",
+      "name": "Számolás, mértékegység, kerekítés",
+      "group": "szamitas",
+      "description": "Számolási hiba, mértékegység-átváltás, pontosság."
+    },
+    {
+      "id": "kiserlet-tapasztalat",
+      "name": "Kísérlet tapasztalata és magyarázata",
+      "group": "kiserlet",
+      "description": "Rossz tapasztalat, hiányzó vagy téves magyarázat."
+    },
+    {
+      "id": "szovegertelmezes",
+      "name": "Feladat és adatok értelmezése",
+      "group": "kiserlet",
+      "description": "Esettanulmány, táblázat félreolvasása; nem a kérdésre válaszol."
+    }
+  ]
+}

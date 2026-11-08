@@ -1,0 +1,168 @@
+{
+  "schemaVersion": 1,
+  "id": "kem-vc-emelt-termokemia-egyensuly",
+  "subject": "kemia",
+  "revision": 1,
+  "level": "emelt",
+  "source": "generated",
+  "topic": "reakciok",
+  "title": "Fogalmak: termokémia, reakciókinetika, egyensúly (emelt)",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "vocabulary",
+  "type": "deck",
+  "cards": [
+    {
+      "term": "reakcióhő",
+      "meaning": "Az a hőmennyiség (entalpiaváltozás), amely a reakcióegyenlet szerinti anyagmennyiségek átalakulását kíséri állandó nyomáson; exoterm reakciónál negatív.",
+      "example": "A metán égésének reakcióhője −891 kJ/mol, ha a keletkező víz folyékony.",
+      "collocation": "ΔrH, kJ/mol"
+    },
+    {
+      "term": "entalpia",
+      "meaning": "Állandó nyomáson a rendszer hőtartalmát jellemző állapotfüggvény; megváltozása (ΔH) a reakcióhő.",
+      "example": "Az exoterm reakció során a rendszer entalpiája csökken.",
+      "collocation": "H"
+    },
+    {
+      "term": "képződéshő",
+      "meaning": "Annak a reakciónak a reakcióhője, amelyben 1 mol vegyület standardállapotú elemeiből keletkezik; az elemek stabilis módosulatának képződéshője 0.",
+      "example": "A szén-dioxid képződéshője −394 kJ/mol.",
+      "collocation": "ΔkH"
+    },
+    {
+      "term": "égéshő",
+      "meaning": "1 mol anyag tökéletes elégetését kísérő entalpiaváltozás (standard körülmények, a víz folyékony).",
+      "example": "Az etanol égéshője kb. −1367 kJ/mol.",
+      "collocation": "ΔéH"
+    },
+    {
+      "term": "Hess-tétel",
+      "meaning": "A reakcióhő csak a kiindulási és a végállapottól függ, a reakció útjától független; ezért a reakcióhők összeadhatók.",
+      "example": "A Hess-tétel alapján a reakcióhő a képződéshőkből számítható: ΔrH = Σ ΔkH(termékek) − Σ ΔkH(kiindulási anyagok)."
+    },
+    {
+      "term": "exoterm reakció",
+      "meaning": "Hőfelszabadulással járó reakció (ΔrH < 0); a termékek entalpiája kisebb a kiindulási anyagokénál.",
+      "example": "Az égés exoterm reakció, a környezet felmelegszik."
+    },
+    {
+      "term": "endoterm reakció",
+      "meaning": "Hőelnyeléssel járó reakció (ΔrH > 0).",
+      "example": "A mészkő hőbontása endoterm reakció, folyamatos hevítést igényel."
+    },
+    {
+      "term": "kötési energia",
+      "meaning": "1 mol adott kovalens kötés felszakításához szükséges energia gázállapotban.",
+      "example": "A nitrogénmolekula hármas kötésének kötési energiája nagy (946 kJ/mol), ezért a nitrogén kevéssé reakcióképes.",
+      "collocation": "kJ/mol"
+    },
+    {
+      "term": "oldáshő",
+      "meaning": "1 mol anyag nagy mennyiségű oldószerben való oldódását kísérő entalpiaváltozás; a rácsenergia és a hidratációs hő összege.",
+      "example": "A nátrium-hidroxid oldáshője negatív, ezért oldódáskor az oldat felmelegszik."
+    },
+    {
+      "term": "rácsenergia",
+      "meaning": "Az 1 mol kristályos anyag és szabad, gáz-halmazállapotú részecskéi közötti energiakülönbség: ennyi energia kell a rács szétbontásához, és ugyanennyi szabadul fel a kristály képződésekor.",
+      "example": "A kisebb méretű, nagyobb töltésű ionokból álló kristály rácsenergiája nagyobb."
+    },
+    {
+      "term": "hidratációs hő",
+      "meaning": "1 mol gáz-halmazállapotú ion vízmolekulákkal való körülvételekor (hidratációjakor) felszabaduló energia.",
+      "example": "A hidratációs hő mindig negatív, mert az ion–dipólus kölcsönhatás kialakulása energiafelszabadulással jár."
+    },
+    {
+      "term": "standardállapot",
+      "meaning": "Megállapodás szerinti állapot: 25 °C és 0,1 MPa nyomás; oldatoknál 1 mol/dm³ koncentráció.",
+      "example": "Standardállapotban a gázok moláris térfogatát 24,5 dm³/mol-nak vesszük.",
+      "collocation": "Vm = 24,5 dm³/mol"
+    },
+    {
+      "term": "aktiválási energia",
+      "meaning": "Az a minimális energia, amellyel az ütköző részecskéknek rendelkezniük kell ahhoz, hogy ütközésük reakcióhoz vezessen (az aktivált komplex kialakulásához szükséges energia).",
+      "example": "A katalizátor csökkenti a reakció aktiválási energiáját.",
+      "collocation": "Ea"
+    },
+    {
+      "term": "aktivált komplex",
+      "meaning": "A reakció során átmenetileg kialakuló, nagy energiájú részecskeegyüttes, amelyben a régi kötések lazulnak, az újak még nem alakultak ki teljesen.",
+      "example": "Az aktivált komplex energiája és a kiindulási anyagok energiája közti különbség az aktiválási energia."
+    },
+    {
+      "term": "ütközési elmélet",
+      "meaning": "A reakció feltétele, hogy a részecskék megfelelő energiával és megfelelő térállásban ütközzenek.",
+      "example": "Az ütközési elmélet magyarázza, miért gyorsítja a reakciót a koncentráció növelése."
+    },
+    {
+      "term": "hatásos ütközés",
+      "meaning": "Olyan ütközés, amelyben a részecskék energiája eléri az aktiválási energiát, és térállásuk is megfelelő, így reakció történik.",
+      "example": "Csak a hatásos ütközések vezetnek a termékek keletkezéséhez."
+    },
+    {
+      "term": "reakciósebesség",
+      "meaning": "Egy anyag koncentrációjának időegység alatti változása (a sztöchiometriai számmal osztva).",
+      "example": "A reakciósebesség a hőmérséklet emelésével nő.",
+      "collocation": "v = Δc/Δt, mol/(dm³·s)"
+    },
+    {
+      "term": "sebességi egyenlet",
+      "meaning": "A reakciósebesség és a kiindulási anyagok koncentrációja közötti összefüggés, pl. v = k · [A] · [B].",
+      "example": "Egy lépésben lejátszódó reakció sebességi egyenletében a kitevők a sztöchiometriai számok."
+    },
+    {
+      "term": "sebességi állandó",
+      "meaning": "A sebességi egyenlet arányossági tényezője; függ a hőmérséklettől és a katalizátortól, nem függ a koncentrációtól.",
+      "example": "Magasabb hőmérsékleten a sebességi állandó értéke nagyobb.",
+      "collocation": "k"
+    },
+    {
+      "term": "katalizátor",
+      "meaning": "Olyan anyag, amely kisebb aktiválási energiájú reakcióutat nyit, így gyorsítja a reakciót, de a reakció végén változatlanul visszamarad; az egyensúlyi összetételt nem változtatja meg.",
+      "example": "Az ammóniaszintézisben vaskatalizátort használnak."
+    },
+    {
+      "term": "inhibitor",
+      "meaning": "A reakciót lassító anyag.",
+      "example": "Az élelmiszerekhez adott antioxidánsok inhibitorként lassítják az avasodást."
+    },
+    {
+      "term": "megfordítható reakció",
+      "meaning": "Olyan reakció, amely mindkét irányban végbemehet, ezért zárt rendszerben egyensúlyra vezet.",
+      "example": "Az ammóniaszintézis megfordítható reakció: N₂ + 3 H₂ ⇌ 2 NH₃.",
+      "collocation": "⇌"
+    },
+    {
+      "term": "dinamikus egyensúly",
+      "meaning": "Olyan állapot, amelyben az odaalakulás és a visszaalakulás sebessége megegyezik, ezért a koncentrációk nem változnak, bár a reakciók tovább folynak.",
+      "example": "A dinamikus egyensúlyban az észterképződés és az észter hidrolízise azonos sebességgel megy végbe."
+    },
+    {
+      "term": "egyensúlyi állandó",
+      "meaning": "Adott hőmérsékleten állandó érték: a termékek egyensúlyi koncentrációinak (sztöchiometriai számuk szerinti hatványon vett) szorzata osztva a kiindulási anyagokéval.",
+      "example": "Az egyensúlyi állandó értéke csak a hőmérséklettől függ.",
+      "collocation": "K = [C]ᶜ[D]ᵈ / ([A]ᵃ[B]ᵇ)"
+    },
+    {
+      "term": "egyensúlyi koncentráció",
+      "meaning": "Egy anyag koncentrációja az egyensúly beállta után.",
+      "example": "Az egyensúlyi koncentrációkat helyettesítjük be az egyensúlyi állandó kifejezésébe.",
+      "collocation": "[A]"
+    },
+    {
+      "term": "heterogén egyensúly",
+      "meaning": "Olyan egyensúly, amelyben a résztvevő anyagok több fázisban vannak; a szilárd anyagok nem szerepelnek az egyensúlyi állandóban.",
+      "example": "A mészkő hőbomlása zárt edényben heterogén egyensúlyra vezet: CaCO₃(sz) ⇌ CaO(sz) + CO₂(g)."
+    },
+    {
+      "term": "Le Chatelier–Braun-elv",
+      "meaning": "Az egyensúlyban lévő rendszert érő külső hatás olyan folyamatot indít el, amely a hatást csökkenteni igyekszik (legkisebb kényszer elve).",
+      "example": "A Le Chatelier–Braun-elv szerint a nyomás növelése a kisebb gázmolekulaszám irányába tolja el az egyensúlyt."
+    },
+    {
+      "term": "átalakulási százalék",
+      "meaning": "Az egyensúlyig (vagy adott ideig) átalakult anyagmennyiség a kiindulási anyagmennyiség százalékában.",
+      "example": "A 66,7 %-os átalakulási százalék azt jelenti, hogy az ecetsav kétharmada észterré alakult."
+    }
+  ]
+}

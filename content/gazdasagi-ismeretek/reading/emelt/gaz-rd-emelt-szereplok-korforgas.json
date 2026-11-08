@@ -1,0 +1,89 @@
+{
+  "schemaVersion": 1,
+  "id": "gaz-rd-emelt-szereplok-korforgas",
+  "subject": "gazdasagi-ismeretek",
+  "revision": 1,
+  "level": "emelt",
+  "source": "generated",
+  "topic": "alapfogalmak",
+  "title": "Gazdasági szereplők, körforgás és termelési tényezők",
+  "createdAt": "2026-11-06",
+  "tags": [],
+  "section": "reading",
+  "type": "igaz-hamis",
+  "instructions": "Döntse el, hogy igazak vagy hamisak az alábbi állítások! A 0. a megoldott példa.",
+  "example": {
+    "id": "0",
+    "kind": "tf",
+    "prompt": "A gazdaság négy szereplője: a háztartások, a vállalatok, az állam és a külföld.",
+    "answer": "T",
+    "category": "definicio",
+    "explanation": "Igaz. A diasor szerint a gazdaság szereplői a háztartások, a vállalatok, az állam és a külföld; ezek állandó kapcsolatban vannak egymással."
+  },
+  "items": [
+    {
+      "id": "1",
+      "kind": "tf",
+      "prompt": "A háztartások termelési tényezőiket (pl. munkaerejüket) eladják, és így jövedelmet szereznek, amelyet fogyasztásra fordítanak.",
+      "answer": "T",
+      "category": "definicio",
+      "explanation": "Igaz. A háztartás önálló gazdasági szereplő, célja szükségletei kielégítése: termelési tényezőit eladja, jövedelmet szerez, és azt fogyasztásra fordítja."
+    },
+    {
+      "id": "2",
+      "kind": "tf",
+      "prompt": "A nonprofit szervezetek – például iskolák, kórházak, alapítványok – elsődleges célja a profit megszerzése.",
+      "answer": "F",
+      "category": "fogalomcsere",
+      "explanation": "Hamis. A nonprofit szervezeteknek nem a profit, hanem a közösségi szükségletek kielégítése a céljuk; a nyereség a profitorientált vállalatok célja."
+    },
+    {
+      "id": "3",
+      "kind": "tf",
+      "prompt": "A gazdasági körfolyamat elemei: termelés, elosztás, forgalom (csere) és fogyasztás.",
+      "answer": "T",
+      "category": "definicio",
+      "explanation": "Igaz. A gazdasági körfolyamat a szükségletek kielégítésének folyamata a termeléstől a fogyasztásig; elemei a termelés, az elosztás, a forgalom (csere) és a fogyasztás."
+    },
+    {
+      "id": "4",
+      "kind": "tf",
+      "prompt": "A gazdasági körforgás modelljében a jószágáramlás és a pénzáramlás mindig azonos irányú.",
+      "answer": "F",
+      "category": "modell-ertelmezes",
+      "explanation": "Hamis. A modell szerint a két áramlás mindig ellentétes irányú: a javak és tényezők az egyik irányba, az ellenértékük (pénz, jövedelem) a másik irányba áramlik."
+    },
+    {
+      "id": "5",
+      "kind": "tf",
+      "prompt": "A tőke (K) jövedelme a munkabér, a munka (L) jövedelme a kamat.",
+      "answer": "F",
+      "category": "fogalomcsere",
+      "explanation": "Hamis, a két jövedelem fel van cserélve. A munka (L) jövedelme a munkabér, a tőke (K) jövedelme a kamat."
+    },
+    {
+      "id": "6",
+      "kind": "tf",
+      "prompt": "A vállalkozó (E) jövedelme a profit, amelyet maradványjövedelemnek is nevezünk.",
+      "answer": "T",
+      "category": "definicio",
+      "explanation": "Igaz. A vállalkozó a termelést irányító, döntéseket hozó, kockázatot vállaló szereplő; jövedelme a profit (maradványjövedelem)."
+    },
+    {
+      "id": "7",
+      "kind": "tf",
+      "prompt": "Szűkített újratermelésről beszélünk, ha több és változatosabb jószágot állítanak elő, mint korábban.",
+      "answer": "F",
+      "category": "fogalomcsere",
+      "explanation": "Hamis. Ez a bővített újratermelés; szűkített újratermelésnél kevesebb jószág és szolgáltatás készül, mint korábban. A fejlett gazdaságra a bővített újratermelés jellemző."
+    },
+    {
+      "id": "8",
+      "kind": "tf",
+      "prompt": "A természeti tényezők (A) jövedelme a bérleti díj (járadék).",
+      "answer": "T",
+      "category": "definicio",
+      "explanation": "Igaz. A természeti tényezők (megújuló: erdő, vízenergia, termőföld; nem megújuló: kőolaj, szén, ércek) jövedelme a bérleti díj, más néven járadék."
+    }
+  ]
+}

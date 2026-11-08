@@ -1,0 +1,83 @@
+{
+  "schemaVersion": 1,
+  "id": "dig-sp-emelt-kep-es-hang-digitalizalasa",
+  "subject": "digitalis-kultura",
+  "revision": 1,
+  "level": "emelt",
+  "source": "generated",
+  "topic": "online-kommunikacio",
+  "title": "A képek és hangok digitális ábrázolása és tömörítése",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "speaking",
+  "type": "elmeleti-tetel",
+  "partNumber": 1,
+  "instructionsHu": "Mutassa be, hogyan lesz egy analóg jelből (hangból, képből) digitális adat, mitől függ a minősége és a mérete, és hogyan csökkenthető a tömörítéssel! Végezze el és értelmezze a tételkártya számítását!",
+  "prompts": [
+    "Analóg és digitális jel; mintavételezés és kvantálás",
+    "Hang: mintavételi frekvencia, bitmélység, csatornák; a mintavételi tétel",
+    "Kép: raszter- és vektorgrafika, felbontás, színmélység, színmodellek (RGB, CMYK)",
+    "Fájlméret számítása tömörítés nélkül",
+    "Veszteségmentes és veszteséges tömörítés, jellemző formátumok (PNG, ZIP, FLAC – JPEG, MP3, MP4)"
+  ],
+  "followUpQuestions": [
+    "Miért nem érdemes egy JPEG-képet sokszor újramenteni?",
+    "Miért kisebb egy logó PNG-ben, mint JPEG-ben, ha éles határvonalak vannak rajta?"
+  ],
+  "usefulPhrases": [
+    {
+      "en": "mintavételezés",
+      "hu": "a folytonos jel értékének rögzítése adott időközönként"
+    },
+    {
+      "en": "kvantálás",
+      "hu": "a minták kerekítése véges számú szintre"
+    },
+    {
+      "en": "mintavételi frekvencia (Hz)",
+      "hu": "másodpercenkénti minták száma"
+    },
+    {
+      "en": "bitmélység, színmélység",
+      "hu": "egy minta / egy képpont tárolására használt bitek száma"
+    },
+    {
+      "en": "veszteségmentes / veszteséges tömörítés",
+      "hu": "az eredeti visszaállítható / a kevésbé fontos információ elvész"
+    },
+    {
+      "en": "bitráta (kbit/s)",
+      "hu": "másodpercenként tárolt vagy továbbított adatmennyiség"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Tételkártya – számítás",
+      "text": "Mekkora egy 3 perces, CD-minőségű (44 100 Hz, 16 bit, sztereó) tömörítetlen hangfelvétel? Hasonlítsa össze ugyanennek a felvételnek egy 128 kbit/s-os MP3-változatával!"
+    }
+  ],
+  "keyPoints": [
+    "Digitalizálás: a folytonos jelből adott időközönként mintát veszünk (mintavételezés), és minden mintát véges sok szint egyikével, egész számként ábrázolunk (kvantálás).",
+    "A mintavételi tétel szerint a mintavételi frekvenciának legalább a jelben lévő legnagyobb frekvencia kétszeresének kell lennie; a hallható tartomány kb. 20 kHz-ig tart, ezért a CD 44,1 kHz-cel dolgozik.",
+    "Hangfájl mérete tömörítés nélkül = mintavételi frekvencia · bitmélység · csatornák száma · idő: 44 100 · 16 · 2 · 180 = 254 016 000 bit = 31 752 000 bájt ≈ 31,8 MB.",
+    "A 128 kbit/s-os MP3: 128 000 / 8 · 180 = 2 880 000 bájt ≈ 2,9 MB, kb. 11-szer kisebb.",
+    "Rasztergrafika: képpontok mátrixa, mérete szélesség · magasság · színmélység; vektorgrafika: alakzatok matematikai leírása, minőségromlás nélkül nagyítható.",
+    "Színmélység: n bit → 2ⁿ szín (24 bit ≈ 16,7 millió); RGB additív (képernyő), CMYK szubtraktív (nyomtatás).",
+    "Veszteségmentes tömörítés (PNG, ZIP, FLAC): az eredeti pontosan visszaállítható; veszteséges (JPEG, MP3, a videóknál pl. H.264): az ember által kevésbé érzékelt információt elhagyja, sokkal kisebb méretet ad."
+  ],
+  "speakingSeconds": 600,
+  "prepSeconds": 900,
+  "sampleAnswer": {
+    "turns": [
+      {
+        "speaker": "candidate",
+        "text": "A természetben a hang és a fény folytonos, analóg jel, a számítógép viszont csak véges sok számot tud tárolni, ezért digitalizálni kell. Ennek két lépése van. A mintavételezésnél meghatározott időközönként rögzítjük a jel értékét; a kvantálásnál ezt az értéket véges sok szint egyikére kerekítjük, és egész számként, binárisan tároljuk. A minőséget a hangnál a mintavételi frekvencia és a bitmélység határozza meg. A mintavételi tétel szerint legalább a legmagasabb frekvencia kétszeresével kell mintát venni; mivel az ember kb. 20 kHz-ig hall, a CD 44,1 kHz-et és 16 bitet használ, két csatornán.\n\nA tételkártya számítása: másodpercenként 44 100 minta, mindegyik 16 bit, két csatorna, ez 1 411 200 bit, vagyis 176 400 bájt másodpercenként. Három perc 180 másodperc, így a tömörítetlen fájl 31 752 000 bájt, körülbelül 31,8 MB. A 128 kbit/s-os MP3 másodpercenként 16 000 bájt, 180 másodperc alatt 2 880 000 bájt, kb. 2,9 MB – tehát nagyjából tizenegyszer kisebb. Ez veszteséges tömörítés: a pszichoakusztikai modell elhagyja azokat a hangösszetevőket, amelyeket egy hangosabb hang elfed, vagy amelyeket nem hallunk.\n\nA képeknél a rasztergrafika képpontokból áll; a méretet a felbontás és a színmélység adja: egy 1920 × 1080-as, 24 bites kép tömörítés nélkül kb. 6,2 MB. A vektorgrafika ezzel szemben alakzatokat ír le, ezért minőségromlás nélkül nagyítható, például az SVG-formátum. A képernyő RGB, a nyomda CMYK színmodellel dolgozik.\n\nA tömörítés lehet veszteségmentes – ilyen a PNG, a ZIP vagy a FLAC, ahol az eredeti pontosan visszaállítható – vagy veszteséges, mint a JPEG, az MP3 és a videóformátumok, ahol sokkal kisebb lesz a fájl, de az elhagyott információ nem nyerhető vissza. Ezért fotóhoz JPEG, logóhoz, képernyőképhez PNG való."
+      }
+    ],
+    "notes": [
+      "Tartalom: a digitalizálás mindkét lépését, a mintavételi tételt, a kép- és hangjellemzőket és a kétféle tömörítést is pontosan kifejti, példákkal és formátumokkal.",
+      "A tételkártya számítása hibátlan és levezetett (bit → bájt átváltással), az eredményt értelmezi is (kb. 11-szeres csökkenés) – emelt szinten ez a „tartalom, összefüggések” szempont kulcsa.",
+      "Logikai felépítés: elvtől (digitalizálás) a számításon át a gyakorlati következtetésig (melyik formátum mire való) halad."
+    ]
+  }
+}

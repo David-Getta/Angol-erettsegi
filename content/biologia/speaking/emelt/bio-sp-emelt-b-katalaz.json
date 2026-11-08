@@ -1,0 +1,83 @@
+{
+  "schemaVersion": 1,
+  "id": "bio-sp-emelt-b-katalaz",
+  "subject": "biologia",
+  "revision": 1,
+  "level": "emelt",
+  "source": "generated",
+  "topic": "sejtbiologia",
+  "title": "A kataláz enzim működésének vizsgálata",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "speaking",
+  "type": "b-tetel",
+  "partNumber": 2,
+  "instructionsHu": "B) altétel – problémamegoldó feladat. Értelmezd a forrásban leírt kísérletet és adatait! Fogalmazd meg a hipotézist, elemezd az eredményeket, majd tervezz kísérletet arra, hogyan befolyásolja a kémhatás (pH) a kataláz működését!",
+  "prompts": [
+    "A kísérlet hipotézise, változói és a kontroll szerepe.",
+    "Az adatok elemzése: az optimum és a görbe két szárának magyarázata.",
+    "Kísérletterv a pH hatásának vizsgálatára (változók, állandó tényezők, ismétlés, várható eredmény).",
+    "A kataláz biológiai szerepe és a lehetséges hibaforrások."
+  ],
+  "followUpQuestions": [
+    "Hogyan változna a gázfejlődés, ha kétszer annyi burgonyát használnánk?",
+    "Miért lassul a gázfejlődés a mérés vége felé, és mi történik, ha a peroxid elfogy?"
+  ],
+  "usefulPhrases": [
+    {
+      "en": "aktív centrum",
+      "hu": "az enzim azon része, ahová a szubsztrát kötődik"
+    },
+    {
+      "en": "hőmérsékleti optimum",
+      "hu": "a leggyorsabb működéshez tartozó hőmérséklet"
+    },
+    {
+      "en": "pufferoldat",
+      "hu": "állandó pH-t biztosító oldat"
+    },
+    {
+      "en": "párhuzamos mérés",
+      "hu": "ugyanazon feltételek ismétlése, átlagolás"
+    }
+  ],
+  "sources": [
+    {
+      "title": "A kísérlet leírása",
+      "text": "Azonos tömegű (2 g), azonos méretű nyers burgonyakorongokat 10 percig különböző hőmérsékletű vízfürdőben tartottak, majd ugyanazon a hőmérsékleten 10 cm³ 3%-os hidrogén-peroxid-oldatot öntöttek rájuk. A keletkező gázt egy vízzel teli, fordított mérőhengerben fogták fel, és 2 perc alatt mérték a térfogatát. Egy további csőben előzőleg 5 percig forralt burgonyakorongot használtak 37 °C-on."
+    },
+    {
+      "title": "Eredmények (2 perc alatt keletkezett gáz, cm³)",
+      "text": "0 °C: 4; 20 °C: 11; 37 °C: 18; 50 °C: 9; 70 °C: 1; forralt burgonya 37 °C-on: 0."
+    },
+    {
+      "title": "Reakció",
+      "text": "A kataláz a hidrogén-peroxidot bontja: 2 H₂O₂ → 2 H₂O + O₂."
+    }
+  ],
+  "keyPoints": [
+    "Hipotézis: a hőmérséklet befolyásolja a kataláz aktivitását; egy optimum alatt a növekvő hőmérséklet gyorsítja, fölötte lassítja a H₂O₂ bontását.",
+    "Független változó: hőmérséklet; függő változó: 2 perc alatt keletkező oxigén térfogata; állandó: burgonya tömege és felülete, H₂O₂ koncentrációja és térfogata, idő.",
+    "A forralt burgonya a kontroll: bizonyítja, hogy a gázfejlődést a hőérzékeny enzim okozza, nem a peroxid magától bomlása.",
+    "Az optimum a mérések szerint 37 °C körül van (18 cm³); pontosabb meghatározáshoz 30–45 °C között sűrűbb mérés kellene.",
+    "Az optimum alatt a molekulák lassabban mozognak, ritkábbak az enzim–szubsztrát ütközések; felette az enzimfehérje denaturálódik, az aktív centrum alakja megváltozik.",
+    "pH-kísérlet: független változó a pH (pl. pufferoldatokkal 3, 5, 7, 9, 11), állandó a hőmérséklet (37 °C) és minden más; ismétlés csövenként legalább háromszor; várhatóan semleges körül optimum.",
+    "A kataláz a sejtekben (peroxiszómákban) keletkező mérgező hidrogén-peroxidot bontja ártalmatlan vízzé és oxigénné.",
+    "Hibaforrások: eltérő korongfelület, a gáz egy része elszökik, a hőmérséklet a mérés közben változik, a burgonya enzimtartalma eltérő; ismétléssel és átlagolással csökkenthetők."
+  ],
+  "speakingSeconds": 720,
+  "prepSeconds": 900,
+  "sampleAnswer": {
+    "turns": [
+      {
+        "speaker": "candidate",
+        "text": "A kísérlet azt vizsgálja, hogyan függ a kataláz aktivitása a hőmérséklettől. A hipotézisem: a hőmérséklet emelkedése egy optimális értékig gyorsítja a hidrogén-peroxid bontását, e fölött viszont lassítja, mert az enzim károsodik. A független változó a hőmérséklet, a függő változó a 2 perc alatt keletkező oxigén térfogata, amely a reakció sebességét jelzi. Állandó a burgonyakorongok tömege és mérete, a peroxidoldat töménysége és térfogata, valamint a mérési idő. A forralt burgonya a kontroll: mivel ott nem keletkezett gáz, bizonyított, hogy a bontást a burgonya hőérzékeny enzimje végzi, nem a peroxid magától bomlik el.\nAz adatok szerint 0 °C-on 4, 20 °C-on 11, 37 °C-on 18 cm³ gáz keletkezett, majd 50 °C-on 9-re, 70 °C-on 1 cm³-re csökkent. Az optimum tehát 37 °C körül van – pontosan csak annyit mondhatunk, hogy a vizsgált értékek közül itt volt a legnagyobb az aktivitás, a valódi optimum 20 és 50 °C között bárhol lehet. Az emelkedő szakasz oka, hogy melegebben gyorsabban mozognak a molekulák, gyakrabban találkozik a szubsztrát az enzim aktív centrumával. A csökkenés oka a denaturáció: a fehérje térszerkezetét tartó gyenge kötések felbomlanak, az aktív centrum alakja megváltozik, és a forralásnál ez teljes és visszafordíthatatlan.\nA pH hatását így vizsgálnám: öt kémcsőbe azonos burgonyakorongot tennék, és a peroxidoldatot 3, 5, 7, 9 és 11-es pH-jú pufferoldattal készíteném el. A hőmérséklet mindenhol 37 °C, minden más is azonos. Minden pH-n háromszor ismételnék, és átlagot számolnék. Azt várnám, hogy a semleges kémhatás körül lesz a legtöbb gáz, az erősen savas és lúgos oldatban kevés, mert a szélsőséges pH is megváltoztatja a fehérje töltéseit és szerkezetét.\nA kataláz szerepe a sejtben az, hogy az anyagcsere során – főként a peroxiszómákban – keletkező, mérgező hidrogén-peroxidot vízzé és oxigénné bontsa. Hibaforrás lehet, hogy a korongok felülete eltér, a gáz egy része a cső falán buborékként marad vagy elszökik, és a keverék mérés közben hűl vagy melegszik; ezeket pontos méretre vágással, zárt rendszerrel és ismétléssel lehet csökkenteni."
+      }
+    ],
+    "notes": [
+      "Elemzés, kísérlettervezés: a hipotézis irányt is megad, a változók és a kontroll pontosak, az új kísérletterv egyetlen változót módosít, ismétlést és várható eredményt is tartalmaz.",
+      "Következtetés: az optimumot óvatosan, az adatok felbontásának megfelelően határozza meg, a görbe két szárát molekuláris szinten (ütközési gyakoriság, denaturáció) magyarázza.",
+      "Felépítés: a probléma → adatok → új terv → biológiai jelentőség sorrendben haladó, önálló felelet, amely a hibaforrásokat is számba veszi."
+    ]
+  }
+}

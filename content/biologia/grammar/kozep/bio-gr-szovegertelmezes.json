@@ -1,0 +1,251 @@
+{
+  "schemaVersion": 1,
+  "id": "bio-gr-szovegertelmezes",
+  "subject": "biologia",
+  "revision": 1,
+  "level": "kozep",
+  "source": "generated",
+  "topic": "nyelvtan",
+  "title": "A kérdés és a forrásszöveg értelmezése",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "grammar",
+  "type": "lesson",
+  "category": "szovegertelmezes",
+  "summaryHu": "Sok pont azért vész el, mert a válasz nem arra felel, amit a kérdés kér: elnézzük a „NEM” szót, kettő helyett egy választ adunk, vagy a szöveg helyett a saját tudásunkból válaszolunk. A biológiai feladatlap szövegelemzős és asszociációs feladataiban a pontos olvasás ugyanolyan fontos, mint a tárgyi tudás.",
+  "rules": [
+    {
+      "title": "A feladatutasítás kulcsszavai",
+      "explanation": "Húzd alá az utasítás kulcsszavait: hány választ kell adni, melyik a helyes VAGY melyik NEM helyes, „a szöveg alapján” vagy „saját ismeretei alapján”, kell-e indokolni, mértékegységet megadni. A tagadó kérdések (NEM, kivéve, hamis) a leggyakoribb csapdák.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "„Melyik NEM szerepel a szövegben a megelőzés eszközei között?” – itt a szövegből hiányzó lehetőséget kell kiválasztani.",
+          "hu": "Tagadó kérdés."
+        },
+        {
+          "en": "„Nevezzen meg KÉT…” – egy válasz csak fél pontot ér.",
+          "hu": "Darabszám."
+        }
+      ]
+    },
+    {
+      "title": "A szöveg alapján – vagy saját tudásból?",
+      "explanation": "Ha a kérdés „a szöveg szerint” kérdez, a választ a szövegből kell kiolvasni, akkor is, ha többet tudsz a témáról. Ha a szövegben nem szerepel az információ, nem írhatod be „tudásból” a szöveghez kötött válaszba. Más kérdések kifejezetten a saját ismereteidre építenek – ezt az utasítás jelzi.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "„A szöveg szerint mi a víz felfelé áramlásának fő hajtóereje?” → párologtatás (a szöveg mondja ki).",
+          "hu": "Szöveghez kötött."
+        },
+        {
+          "en": "„Milyen típusú transzporttal jut a glükóz…?” – ha a szöveg nem írja, a tankönyvi tudás kell.",
+          "hu": "Saját tudás."
+        }
+      ]
+    },
+    {
+      "title": "Asszociáció és többszörös választás",
+      "explanation": "Négyféle asszociációnál (A, B, mindkettő, egyik sem) minden állítást mindkét fogalomra külön-külön ellenőrizz: igaz-e A-ra? igaz-e B-re? Csak a két „igen/nem” válasz után válaszd ki a betűt.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "„Örökítőanyagot tartalmaz” – vírusra igaz, baktériumra igaz → C (mindkettő).",
+          "hu": "Két külön ellenőrzés."
+        },
+        {
+          "en": "„Maghártyával határolt sejtmagja van” – vírusra nem, baktériumra nem → D (egyik sem).",
+          "hu": "A „D” is lehet helyes."
+        }
+      ]
+    },
+    {
+      "title": "Igaz–hamis állítások csapdái",
+      "explanation": "Az abszolút szavak (mindig, soha, kizárólag, csak, minden) gyakran teszik hamissá az állítást – de nem mindig! Az állítás csak akkor igaz, ha minden része igaz; egy hibás mellékmondat vagy indoklás az egészet hamissá teszi.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "„A növények kizárólag nappal végeznek sejtlégzést.” – hamis (a „kizárólag” miatt).",
+          "hu": "Abszolút szó."
+        },
+        {
+          "en": "„A vörösvérsejt hemoglobint tartalmaz, ezért sejtmagja van.” – hamis: az első fele igaz, az indoklás nem.",
+          "hu": "Összetett állítás."
+        }
+      ]
+    },
+    {
+      "title": "Kifejtős válasz: kérdésre felelni, nem témáról írni",
+      "explanation": "A kifejtős kérdésekre a válasz első mondata közvetlenül feleljen a kérdésre, utána jöhet az indoklás. Ha a kérdés „hasonlítsa össze”, mindkét elemet és a különbséget is meg kell nevezni; ha „magyarázza meg”, az okot kell leírni, nem csak a jelenséget.",
+      "emeltOnly": true,
+      "examples": [
+        {
+          "en": "Kérdés: „Miért vastagabb a bal kamra fala?” Jó válasz: „Mert a nagy vérkörbe nagyobb nyomással kell pumpálnia.”",
+          "hu": "Közvetlen válasz + ok."
+        },
+        {
+          "en": "Rossz válasz: „A szívnek négy ürege van: két pitvar és két kamra…”",
+          "hu": "Témáról ír, nem a kérdésre felel."
+        }
+      ]
+    }
+  ],
+  "commonMistakes": [
+    {
+      "wrong": "„Melyik NEM igaz?” – a diák az első igaz állítást jelöli meg.",
+      "right": "A hamis állítást kell kiválasztani.",
+      "why": "A tagadó kérdést aláhúzással érdemes megjelölni."
+    },
+    {
+      "wrong": "„A szöveg szerint” kérdésre tankönyvi, a szövegben nem szereplő választ ad.",
+      "right": "A választ a szöveg információjára építi (akár szó szerint idézve).",
+      "why": "A javítókulcs a szövegből kiolvasható választ fogadja el."
+    },
+    {
+      "wrong": "„Nevezzen meg két hormont!” – egy hormont nevez meg.",
+      "right": "Két hormont nevez meg.",
+      "why": "A darabszámot az utasítás pontosan előírja, minden elem külön pontot ér."
+    },
+    {
+      "wrong": "Asszociációnál csak az egyik fogalomra ellenőrzi az állítást.",
+      "right": "Mindkét fogalomra külön ellenőrzi, utána választ.",
+      "why": "Így marad el a „mindkettő” és az „egyik sem” lehetőség."
+    },
+    {
+      "wrong": "„Magyarázza meg!” kérdésre csak leírja a jelenséget.",
+      "right": "Az okot is megadja: „…, mert …”.",
+      "why": "A magyarázat ok-okozati kapcsolat, nem leírás."
+    }
+  ],
+  "examTips": [
+    "Olvasd el az összes kérdést a szöveg előtt: így olvasás közben már jelölheted a válaszokhoz szükséges részeket.",
+    "Szövegelemzésnél idézd vagy pontosan fogalmazd át a szöveg mondatát – a javító így látja, hogy a válasz a szövegből származik.",
+    "A feladatlap végén ellenőrizd: minden kérdésre annyi választ adtál-e, amennyit kért, és a tagadó kérdéseknél a hamis/kivétel opciót jelölted-e."
+  ],
+  "practice": [
+    {
+      "id": "1",
+      "kind": "choice",
+      "prompt": "A kérdés: „Melyik NEM a vese feladata?” Melyik választ kell megjelölni?",
+      "options": [
+        {
+          "key": "A",
+          "text": "az epe termelése"
+        },
+        {
+          "key": "B",
+          "text": "a vízháztartás szabályozása"
+        },
+        {
+          "key": "C",
+          "text": "a karbamid kiválasztása"
+        },
+        {
+          "key": "D",
+          "text": "a vér pH-jának szabályozása"
+        }
+      ],
+      "answer": "A",
+      "category": "szovegertelmezes",
+      "explanation": "Helyes: A. Az epét a máj termeli; a többi felsorolt feladatot a vese látja el – a tagadó kérdésben ezt az egy kakukktojást kell megtalálni.",
+      "wrongOptions": {
+        "B": "A vízháztartás szabályozása (ADH hatására) a vese feladata.",
+        "C": "A karbamid kiválasztása a vese feladata, ezért nem ezt kell jelölni.",
+        "D": "A vese hidrogénionokat választ ki, így szabályozza a pH-t."
+      }
+    },
+    {
+      "id": "2",
+      "kind": "choice",
+      "prompt": "Állítás: „A vírusoknak és a baktériumoknak is van riboszómájuk.” Asszociációs feladatban (A: csak vírus, B: csak baktérium, C: mindkettő, D: egyik sem) mi a helyes betű a „Van saját riboszómájuk” állításra?",
+      "options": [
+        {
+          "key": "A",
+          "text": "A"
+        },
+        {
+          "key": "B",
+          "text": "B"
+        },
+        {
+          "key": "C",
+          "text": "C"
+        },
+        {
+          "key": "D",
+          "text": "D"
+        }
+      ],
+      "answer": "B",
+      "category": "szovegertelmezes",
+      "explanation": "Helyes: B. Vírusra külön ellenőrizve: nincs riboszómája (a gazdasejtét használja). Baktériumra: van. Ezért csak a baktériumra igaz.",
+      "wrongOptions": {
+        "A": "A vírusnak nincs saját riboszómája.",
+        "C": "A vírusra nem igaz, ezért nem lehet „mindkettő”.",
+        "D": "A baktériumra igaz, ezért nem lehet „egyik sem”."
+      }
+    },
+    {
+      "id": "3",
+      "kind": "text",
+      "prompt": "Igaz vagy hamis (I/H)? „Az emberi vörösvérsejt hemoglobint tartalmaz, ezért sok mitokondrium van benne.”",
+      "answer": [
+        "H",
+        "hamis",
+        "F"
+      ],
+      "category": "szovegertelmezes",
+      "explanation": "Helyes: hamis. Az első rész igaz, de a következtetés nem: az érett vörösvérsejtnek nincs mitokondriuma (és sejtmagja sem); egy hibás rész az egész állítást hamissá teszi.",
+      "maxWords": 1
+    },
+    {
+      "id": "4",
+      "kind": "choice",
+      "prompt": "Egy szövegben ez áll: „A mikroműanyagnak az 5 milliméternél kisebb műanyagdarabokat nevezzük.” A kérdés: „A szöveg szerint mekkora a mikroműanyag?” Melyik a legjobb válasz?",
+      "options": [
+        {
+          "key": "A",
+          "text": "csak mikroszkóppal látható"
+        },
+        {
+          "key": "B",
+          "text": "nanométeres méretű"
+        },
+        {
+          "key": "C",
+          "text": "1 mikrométernél kisebb"
+        },
+        {
+          "key": "D",
+          "text": "5 milliméternél kisebb"
+        }
+      ],
+      "answer": "D",
+      "category": "szovegertelmezes",
+      "explanation": "Helyes: D. A szöveghez kötött kérdésre a szöveg meghatározását kell megadni, nem egy saját elképzelést.",
+      "wrongOptions": {
+        "A": "Az 5 mm alatti darabok egy része szabad szemmel is látható; a szöveg nem ezt mondja.",
+        "B": "Ez a nanoműanyagokra vonatkozna, a szöveg nem erről szól.",
+        "C": "Ez a szövegben nem szerepel."
+      }
+    },
+    {
+      "id": "5",
+      "kind": "text",
+      "prompt": "Hány elemet kell megnevezni, ha az utasítás így szól: „Nevezze meg a fotoszintézis két kiindulási anyagát!” (Írja be a számot!)",
+      "answer": [
+        "2",
+        "kettő",
+        "két"
+      ],
+      "category": "szovegertelmezes",
+      "explanation": "Helyes: 2 – a szén-dioxidot és a vizet. Az utasítás darabszámot ír elő; egy elem csak részpontot érne, háromnál a felesleges (hibás) elem pontot vehet el.",
+      "maxWords": 1
+    }
+  ],
+  "relatedCategories": [
+    "fogalomhasznalat",
+    "abra-adatelemzes",
+    "kiserlet-ertelmezes"
+  ]
+}

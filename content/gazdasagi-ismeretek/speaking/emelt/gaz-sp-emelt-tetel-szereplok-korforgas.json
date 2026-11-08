@@ -1,0 +1,80 @@
+{
+  "schemaVersion": 1,
+  "id": "gaz-sp-emelt-tetel-szereplok-korforgas",
+  "subject": "gazdasagi-ismeretek",
+  "revision": 1,
+  "level": "emelt",
+  "source": "generated",
+  "topic": "alapfogalmak",
+  "title": "Gazdasági szereplők, körforgás, termelési tényezők",
+  "createdAt": "2026-11-06",
+  "tags": [],
+  "section": "speaking",
+  "type": "tetel",
+  "partNumber": 1,
+  "instructionsHu": "Fejtse ki a tételt! Mutassa be a gazdaság szereplőit és kapcsolataikat, a gazdasági körfolyamat elemeit, a kettős körforgást és a körforgás modelljét (szavakkal), a termelési tényezőket és jövedelmüket, az újratermelés típusait és az információ szerepét! Felkészülési idő: 30 perc.",
+  "prompts": [
+    "Sorold fel a gazdaság négy szereplőjét, jellemezd mindegyik szerepét és kapcsolataikat!",
+    "Melyek a gazdasági körfolyamat elemei? Miért nevezzük „kör”-nek? Mi a különbség a szűkített és a bővített újratermelés között?",
+    "Írd le szavakkal a gazdasági körforgás modelljét! Mi a jószágáramlás és a pénzáramlás?",
+    "Sorold fel a négy termelési tényezőt és jövedelmüket (L, A, K, E)! Miért tekinthető az információ is termelési tényezőnek?"
+  ],
+  "usefulPhrases": [
+    {
+      "en": "kettős körforgás",
+      "hu": "jószágáramlás + pénzáramlás, ellentétes irányban"
+    },
+    {
+      "en": "L, A, K, E",
+      "hu": "munka, természeti tényezők, tőke, vállalkozó – munkabér, bérleti díj, kamat, profit"
+    },
+    {
+      "en": "bővített újratermelés",
+      "hu": "több és változatosabb jószág előállítása"
+    }
+  ],
+  "sources": [
+    {
+      "title": "1. forrás – Definíciók (tanórai diasor, 1. téma, 04. fejezet)",
+      "text": "Gazdasági körfolyamat: a szükségletek kielégítésének folyamata a termeléstől a fogyasztásig.\nGazdasági körforgás: a gazdasági szereplők közötti áruk és jövedelmek folyamatos mozgása.\nTermelési tényezők: erőforrások, amelyek hozzájárulnak a gazdasági javak előállításához, tartósan rendelkezésre állnak, és nem szűnnek meg a termelési folyamat során."
+    },
+    {
+      "title": "2. forrás – A körforgás-modell ábrájának leírása",
+      "text": "Bal oldalon a TERMELŐK (vállalatok), jobb oldalon a FOGYASZTÓK (háztartások). Felül a FOGYASZTÁSI CIKKEK PIACA: a termékek a termelőktől a fogyasztók felé áramlanak, a vásárolt áruk ellenértéke a fogyasztóktól a termelők felé. Alul a TERMELÉSI TÉNYEZŐK PIACA: a munkaerő, a tőke és a föld a háztartásoktól a vállalatok felé áramlik, a munkabér, a kamat és a bérlet a vállalatoktól a háztartások felé. Felirat: „A két áramlás mindig ellentétes irányú.”"
+    }
+  ],
+  "keyPoints": [
+    "Négy szereplő: háztartások (fogyasztanak, munkaerőt kínálnak), vállalatok (termelnek, szolgáltatnak, munkát adnak), állam (szabályoz, újraeloszt, szolgáltat), külföld (importál, exportál, tőkét mozgat).",
+    "Háztartások: önálló gazdasági szereplők, akiknek célja szükségleteik kielégítése; Külföld: önálló gazdasági szereplő, amely más országok vállalatait és intézményeit jelenti.",
+    "Kapcsolatok: háztartás–vállalat: munkaerő – jövedelem; vállalat–állam: adó – támogatás; állam–külföld: külkereskedelem, nemzetközi szerződések.",
+    "Gazdasági körfolyamat: a szükségletek kielégítésének folyamata a termeléstől a fogyasztásig; elemei: termelés, elosztás, forgalom (csere), fogyasztás; kör, mert a fogyasztás után új szükségletek keletkeznek.",
+    "Újratermelés: a termelés, elosztás, forgalom és fogyasztás állandó ismétlődése; szűkített (kevesebb jószág készül) és bővített (több és változatosabb jószág) – a fejlett gazdaságra a bővített jellemző.",
+    "Gazdasági körforgás: a gazdasági szereplők közötti áruk és jövedelmek folyamatos mozgása; kettős körforgás: jószágáramlás és pénzáramlás, a két áramlás mindig ellentétes irányú.",
+    "A modell két piaca: fogyasztási cikkek piaca (termékek ↔ ellenérték) és termelési tényezők piaca (munkaerő, tőke, föld ↔ munkabér, kamat, bérlet).",
+    "Termelési tényezők: munka – munkabér; természeti tényezők – bérleti díj (járadék); tőke – kamat; vállalkozó – profit (maradványjövedelem).",
+    "Információ: a gazdasági döntések alapja (piaci trendek, kereslet-kínálat adatok, technológiai újítások)."
+  ],
+  "speakingSeconds": 720,
+  "prepSeconds": 1800,
+  "sampleAnswer": {
+    "turns": [
+      {
+        "speaker": "candidate",
+        "text": "A tételem a gazdasági szereplők és a körforgás. A gazdaságnak négy szereplője van. A háztartások önálló gazdasági szereplők, akiknek célja szükségleteik kielégítése: eladják termelési tényezőiket, például a munkaerejüket, és a jövedelmüket fogyasztásra fordítják. A vállalatok célja a termelés, a szolgáltatásnyújtás és a profit; ha veszteségesek, megszűnnek, a nonprofit szervezetek viszont közösségi szükségleteket elégítenek ki. Az állam szabályoz, újraeloszt és szolgáltat, ott lép be, ahol a piac önmagában nem hatékony. A külföld önálló gazdasági szereplő, amely más országok vállalatait és intézményeit jelenti, és az exportban, importban jelenik meg. A háztartás és a vállalat között munkaerő és jövedelem, a vállalat és az állam között adó és támogatás áramlik. A gazdasági körfolyamat a szükségletek kielégítésének folyamata a termeléstől a fogyasztásig: termelés, elosztás, forgalom és fogyasztás. Azért kör, mert a fogyasztás után új szükségletek keletkeznek, és a folyamat újraindul. Ennek állandó ismétlődése az újratermelés, amely lehet szűkített, ha kevesebb jószág készül, és bővített, ha több és változatosabb; a fejlett gazdaságra a bővített jellemző. A gazdasági körforgás a szereplők közötti áruk és jövedelmek folyamatos mozgása. Kettős: a jószágáramlásban javak, szolgáltatások és erőforrások, a pénzáramlásban árak, jövedelmek, adók és támogatások mozognak, és a két áramlás mindig ellentétes irányú. A modellben a fogyasztási cikkek piacán a termékek a vállalatoktól a háztartásokhoz jutnak, az ellenértékük visszafelé; a termelési tényezők piacán a munkaerő, a tőke és a föld a háztartásoktól a vállalatokhoz kerül, a munkabér, a kamat és a bérlet pedig a háztartásokhoz. A termelési tényezők erőforrások, amelyek hozzájárulnak a javak előállításához, tartósan rendelkezésre állnak, és nem szűnnek meg a termelésben. A munka jövedelme a munkabér, a természeti tényezőké a bérleti díj, a tőkéé a kamat, a vállalkozóé a profit. Ma az információ is tényező: a gazdasági döntések alapja, például a piaci trendek és a kereslet-kínálat adatok."
+      },
+      {
+        "speaker": "examiner",
+        "text": "Miért mondjuk, hogy az áruforgalom minden esetben együtt jár a jövedelmek mozgásával?"
+      },
+      {
+        "speaker": "candidate",
+        "text": "Mert minden jószágmozgásnak van pénzbeli ellenértéke, amely ellentétes irányban halad: amikor a háztartás megvesz egy terméket, az ára a vállalat bevétele lesz, amikor a háztartás munkát ad el, munkabért kap. Így a körforgás azt is megmutatja, hogyan jutnak el a jövedelmek az egyik szereplőtől a másikhoz."
+      }
+    ],
+    "notes": [
+      "A négy szereplő definíciója és szerepe, a körfolyamat, az újratermelés és a körforgás meghatározása pontos – a tétel minden elemét lefedi.",
+      "A modellt szavakkal, a két piac és az áramlások irányának megnevezésével írja le, ami a rajz hiányában is teljes értékű.",
+      "A kiegészítő kérdésnél a körforgás szabályát önállóan, példával indokolja."
+    ]
+  }
+}

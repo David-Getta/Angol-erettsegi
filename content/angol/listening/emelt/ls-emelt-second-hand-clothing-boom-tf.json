@@ -1,0 +1,207 @@
+{
+  "schemaVersion": 1,
+  "id": "ls-emelt-second-hand-clothing-boom-tf",
+  "subject": "angol",
+  "revision": 1,
+  "level": "emelt",
+  "source": "generated",
+  "topic": "gazdasag",
+  "title": "Who profits from second-hand clothes?",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "reservedFor": "mock",
+  "section": "listening",
+  "type": "true-false",
+  "instructions": "You are going to listen to a radio feature about the market for second-hand clothes. Decide whether statements 1–10 are true (T) or false (F) according to what you hear. You will hear the recording twice. There is an example (0) at the beginning.",
+  "instructionsHu": "Egy rádióriportot hallasz a használtruha-piacról. Döntsd el, hogy az 1–10. állítás a hallottak alapján igaz (T) vagy hamis (F). A felvételt kétszer hallod; a 0. a példa.",
+  "listening": {
+    "format": "news",
+    "speakers": [
+      {
+        "id": "R",
+        "name": "Emma Lowe (reporter)",
+        "gender": "female",
+        "accent": "en-GB",
+        "age": "adult"
+      },
+      {
+        "id": "C",
+        "name": "Ciaran Doyle (vintage shop owner)",
+        "gender": "male",
+        "accent": "en-IE",
+        "age": "adult"
+      },
+      {
+        "id": "B",
+        "name": "Dr Hannah Brooks (economist)",
+        "gender": "female",
+        "accent": "en-US",
+        "age": "adult"
+      },
+      {
+        "id": "J",
+        "name": "Josh Taylor (student reseller)",
+        "gender": "male",
+        "accent": "en-GB",
+        "age": "young"
+      }
+    ],
+    "script": [
+      {
+        "speaker": "R",
+        "text": "It used to be something people did quietly, almost with a sense of embarrassment. Today, buying second-hand clothes is big business. According to one industry estimate, the resale market is now growing about three times faster than the market for new clothing. I set out to find out who's actually making money from our old jeans – and who isn't. My first stop is a narrow shop near the station in Leeds, where Ciaran Doyle has been selling vintage clothes for nearly twenty years."
+      },
+      {
+        "speaker": "C",
+        "text": "When I opened, my customers were mostly students and the odd musician looking for a leather jacket. Now I get everybody – teenagers, office workers, pensioners, the lot. Business has never been better, to be honest. But the online platforms have changed the game completely. People check the price of everything on their phones before they buy. I can't ask forty pounds for a jumper if they can see a similar one online for twelve."
+      },
+      {
+        "speaker": "R",
+        "text": "Those platforms are arguably the real winners of the boom. Most of them make their money by taking a commission on each sale, typically somewhere between five and fifteen per cent, and many also charge buyers a small fee for protection in case something goes wrong. Dr Hannah Brooks, an economist who studies consumer behaviour, says the appeal for shoppers isn't only about saving money."
+      },
+      {
+        "speaker": "B",
+        "text": "In our surveys, price is still the number one reason, but it's not the only one. Younger buyers in particular tell us they like the idea that a piece of clothing has a history – that someone else wore it to a concert in 1990, or whatever. And there's a kind of treasure-hunt pleasure in it. You never know what you're going to find. Environmental reasons come up as well, although, interestingly, they're usually mentioned third, not first."
+      },
+      {
+        "speaker": "R",
+        "text": "But Dr Brooks also warns that the picture isn't entirely green."
+      },
+      {
+        "speaker": "B",
+        "text": "There's a risk of what economists call a rebound effect. Some people sell clothes they've hardly worn and use the money to buy even more new things. So instead of replacing new purchases, reselling can actually speed up the whole cycle. In our latest study, roughly one in four regular sellers said they'd been shopping more often since they started selling."
+      },
+      {
+        "speaker": "R",
+        "text": "For some young people, reselling has turned into a serious side job. Nineteen-year-old Josh Taylor started by selling his old trainers to pay for driving lessons."
+      },
+      {
+        "speaker": "J",
+        "text": "At first it was just a bit of pocket money, like, ten pounds here and there. Then I realised I could pick stuff up cheaply at car boot sales and charity shops and sell it on for more. Last summer I was making about three hundred pounds a month. But people think it's easy money, and honestly, it's not. You're photographing everything, writing descriptions, answering messages at midnight, queuing at the post office. If I worked out what I earn per hour, I'd probably be better off stacking shelves in a supermarket."
+      },
+      {
+        "speaker": "R",
+        "text": "And then there's the tax question. In a number of countries, platforms are now required to report users who sell more than a certain number of items a year to the tax authorities. Josh admits that came as a surprise."
+      },
+      {
+        "speaker": "J",
+        "text": "Yeah, I had no idea. I thought it was basically like a garage sale. Now I keep a spreadsheet of everything I buy and sell, just in case."
+      },
+      {
+        "speaker": "R",
+        "text": "Back in Leeds, Ciaran isn't too worried about the competition from teenagers with smartphones."
+      },
+      {
+        "speaker": "C",
+        "text": "Look, an app can't let you try something on, and it can't tell you that the coat you're holding was made in a factory in Manchester in 1975. That's what people come in for – the stories. As long as I can offer that, I think there'll always be room for a shop like mine."
+      },
+      {
+        "speaker": "R",
+        "text": "For Money Talk, this is Emma Lowe in Leeds."
+      }
+    ]
+  },
+  "example": {
+    "id": "0",
+    "kind": "tf",
+    "prompt": "Ciaran Doyle has had his shop for almost two decades.",
+    "answer": "T",
+    "category": "detail",
+    "explanation": "Igaz: a riporter szerint Ciaran majdnem húsz éve („nearly twenty years”) árul vintage ruhákat – ez a „két évtized”.",
+    "evidence": "has been selling vintage clothes for nearly twenty years"
+  },
+  "items": [
+    {
+      "id": "1",
+      "kind": "tf",
+      "prompt": "Ciaran's customers are now a more mixed group than when he started.",
+      "answer": "T",
+      "category": "detail",
+      "explanation": "Igaz: kezdetben főleg diákok és néhány zenész jártak hozzá, most viszont „everybody” – tinédzserek, irodai dolgozók, nyugdíjasok is. Ez sokkal vegyesebb vásárlói kör.",
+      "evidence": "Now I get everybody – teenagers, office workers, pensioners, the lot."
+    },
+    {
+      "id": "2",
+      "kind": "tf",
+      "prompt": "The online platforms have made it possible for Ciaran to charge more.",
+      "answer": "F",
+      "category": "inference",
+      "explanation": "Hamis: épp ellenkezőleg, a vásárlók a telefonjukon összehasonlítják az árakat, ezért nem kérhet 40 fontot egy pulóverért, ha hasonlót 12-ért látnak az interneten. Az online platformok tehát lejjebb szorítják az árait.",
+      "evidence": "I can't ask forty pounds for a jumper if they can see a similar one online for twelve."
+    },
+    {
+      "id": "3",
+      "kind": "tf",
+      "prompt": "The platforms earn money only from the people who sell clothes.",
+      "answer": "F",
+      "category": "true-false-trap",
+      "explanation": "Hamis: az eladóktól jutalékot kapnak, de sok platform a vevőktől is kér egy kis díjat (vásárlói védelemért). Tehát nem csak az eladóktól keresnek.",
+      "evidence": "many also charge buyers a small fee for protection in case something goes wrong"
+    },
+    {
+      "id": "4",
+      "kind": "tf",
+      "prompt": "Dr Brooks says that many young buyers like the fact that clothes have a past.",
+      "answer": "T",
+      "category": "detail",
+      "explanation": "Igaz: a fiatalabb vásárlók szerint tetszik nekik, hogy egy ruhadarabnak „története van” (has a history) – például valaki egy koncerten viselte 1990-ben.",
+      "evidence": "Younger buyers in particular tell us they like the idea that a piece of clothing has a history"
+    },
+    {
+      "id": "5",
+      "kind": "tf",
+      "prompt": "According to Dr Brooks's surveys, protecting the environment is the main motive for buying second-hand.",
+      "answer": "F",
+      "category": "true-false-trap",
+      "explanation": "Hamis: a fő ok még mindig az ár („the number one reason”); a környezetvédelmi szempontokat általában csak harmadikként említik.",
+      "evidence": "they're usually mentioned third, not first"
+    },
+    {
+      "id": "6",
+      "kind": "tf",
+      "prompt": "About a quarter of regular sellers in the study said they had started to buy clothes more frequently.",
+      "answer": "T",
+      "category": "detail",
+      "explanation": "Igaz: a legutóbbi felmérésben a rendszeres eladók nagyjából egynegyede („one in four”) mondta, hogy azóta gyakrabban vásárol, amióta árul.",
+      "evidence": "roughly one in four regular sellers said they'd been shopping more often since they started selling"
+    },
+    {
+      "id": "7",
+      "kind": "tf",
+      "prompt": "Josh thinks that reselling is a simple way to make money.",
+      "answer": "F",
+      "category": "attitude",
+      "explanation": "Hamis: Josh szerint az emberek azt hiszik, hogy ez könnyű pénz, de „honestly, it's not” – fényképezni, leírást írni, éjfélkor üzenetekre válaszolni, postán sorban állni kell.",
+      "evidence": "But people think it's easy money, and honestly, it's not."
+    },
+    {
+      "id": "8",
+      "kind": "tf",
+      "prompt": "Josh suspects that an ordinary supermarket job might pay him more per hour.",
+      "answer": "T",
+      "category": "inference",
+      "explanation": "Igaz: ha kiszámolná az órabérét, valószínűleg jobban járna, ha egy szupermarketben polcot töltene fel („better off stacking shelves”) – vagyis a bolti munka óránként többet hozna.",
+      "evidence": "If I worked out what I earn per hour, I'd probably be better off stacking shelves in a supermarket."
+    },
+    {
+      "id": "9",
+      "kind": "tf",
+      "prompt": "Josh knew about the tax reporting rules from the start.",
+      "answer": "F",
+      "category": "detail",
+      "explanation": "Hamis: a riporter szerint meglepetés volt neki, Josh pedig azt mondja, fogalma sem volt róla („I had no idea”) – azt hitte, ez olyan, mint egy garázsvásár.",
+      "evidence": "Yeah, I had no idea."
+    },
+    {
+      "id": "10",
+      "kind": "tf",
+      "prompt": "Ciaran is optimistic about the future of his shop.",
+      "answer": "T",
+      "category": "attitude",
+      "explanation": "Igaz: nem aggódik különösebben a konkurencia miatt, és úgy gondolja, hogy amíg történeteket tud kínálni a ruhákhoz, mindig lesz hely egy ilyen boltnak.",
+      "evidence": "I think there'll always be room for a shop like mine"
+    }
+  ],
+  "glossary": [],
+  "suggestedMinutes": 9
+}

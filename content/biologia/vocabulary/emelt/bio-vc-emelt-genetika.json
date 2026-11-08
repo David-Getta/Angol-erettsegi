@@ -1,0 +1,179 @@
+{
+  "schemaVersion": 1,
+  "id": "bio-vc-emelt-genetika",
+  "subject": "biologia",
+  "revision": 1,
+  "level": "emelt",
+  "source": "generated",
+  "topic": "genetika",
+  "title": "Genetika – fogalmak (emelt)",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "vocabulary",
+  "type": "deck",
+  "cards": [
+    {
+      "term": "gén",
+      "meaning": "A DNS egy meghatározott szakasza, amely egy fehérje (vagy RNS) felépítéséhez szükséges információt hordozza; az öröklődés alapegysége.",
+      "example": "Egy gén több változatban, allélként is előfordulhat."
+    },
+    {
+      "term": "allél",
+      "meaning": "Egy gén egyik változata; a homológ kromoszómák azonos génhelyén különböző allélok lehetnek.",
+      "example": "Az AB0-vércsoportgénnek három allélja van: A, B és 0."
+    },
+    {
+      "term": "génhely (lókusz)",
+      "meaning": "Az a hely a kromoszómán, ahol egy adott gén található.",
+      "example": "A homológ kromoszómákon ugyanazon a génhelyen ugyanannak a génnek az allélja van."
+    },
+    {
+      "term": "genotípus",
+      "meaning": "Egy egyed adott génre (vagy génekre) vonatkozó allélösszetétele, pl. Aa.",
+      "example": "A domináns fenotípusú egyed genotípusa tesztelő keresztezéssel vagy DNS-vizsgálattal állapítható meg biztosan."
+    },
+    {
+      "term": "fenotípus",
+      "meaning": "Az egyed megfigyelhető tulajdonságainak összessége; a genotípus és a környezet együttes hatására alakul ki.",
+      "example": "Az azonos genotípusú ikrek fenotípusa a környezet miatt is eltérhet."
+    },
+    {
+      "term": "homozigóta",
+      "meaning": "Az az egyed, amelynek egy adott génhelyen két azonos allélja van (AA vagy aa).",
+      "example": "A homozigóta egyed csak egyféle ivarsejtet ad az adott génre."
+    },
+    {
+      "term": "heterozigóta",
+      "meaning": "Az az egyed, amelynek egy adott génhelyen két különböző allélja van (Aa).",
+      "example": "A heterozigóta egyed kétféle ivarsejtet képez egyenlő arányban."
+    },
+    {
+      "term": "domináns allél",
+      "meaning": "Az az allél, amely heterozigóta állapotban is megnyilvánul a fenotípusban, elfedve a recesszívet.",
+      "example": "A borsó sárga magszínét domináns allél okozza."
+    },
+    {
+      "term": "recesszív allél",
+      "meaning": "Az az allél, amely csak homozigóta állapotban (aa) nyilvánul meg a fenotípusban.",
+      "example": "A recesszív allél heterozigótában rejtve öröklődik tovább."
+    },
+    {
+      "term": "kodominancia",
+      "meaning": "Öröklésmenet, amelyben heterozigóta egyedben mindkét allél teljes mértékben megnyilvánul (pl. AB vércsoport).",
+      "example": "Az AB vércsoport kodominancia eredménye: mindkét antigén megjelenik a vörösvérsejteken."
+    },
+    {
+      "term": "intermedier öröklődés",
+      "meaning": "Öröklésmenet, amelyben a heterozigóta fenotípusa a két homozigóta közötti átmenet (pl. piros × fehér csodatölcsér → rózsaszín).",
+      "example": "Intermedier öröklődésnél az F₂ nemzedékben a fenotípusarány is 1 : 2 : 1."
+    },
+    {
+      "term": "tesztelő keresztezés",
+      "meaning": "Domináns fenotípusú, ismeretlen genotípusú egyed keresztezése recesszív homozigótával; az utódok arányából derül ki a genotípus.",
+      "example": "Ha a tesztelő keresztezés utódai fele-fele arányban hasadnak, a vizsgált egyed heterozigóta volt."
+    },
+    {
+      "term": "független öröklődés",
+      "meaning": "Különböző kromoszómapárokon lévő gének öröklődése, amelyek alléljai a meiózisban egymástól függetlenül kombinálódnak (Mendel független öröklődési szabálya).",
+      "example": "Független öröklődésnél a dihibrid F₂ fenotípusaránya 9 : 3 : 3 : 1.",
+      "collocation": "9 : 3 : 3 : 1"
+    },
+    {
+      "term": "kapcsolt öröklődés (géncsatolás)",
+      "meaning": "Az ugyanazon a kromoszómán lévő gének együttes öröklődése; csak átkereszteződés választhatja szét alléljaikat.",
+      "example": "Kapcsolt öröklődés esetén a szülői allélkombinációk gyakoribbak az utódokban."
+    },
+    {
+      "term": "átkereszteződés (crossing over)",
+      "meaning": "A homológ kromoszómák kromatidái közötti szakaszcsere a meiózis első profázisában; új allélkombinációkat hoz létre.",
+      "example": "Az átkereszteződés gyakorisága annál nagyobb, minél távolabb van egymástól a két gén."
+    },
+    {
+      "term": "ivarhoz kötött öröklődés",
+      "meaning": "Az ivari kromoszómán (többnyire az X-en) lévő gének öröklődése; a fenotípus megjelenése függ az utód nemétől.",
+      "example": "A színtévesztés ivarhoz kötött öröklődésű, ezért a férfiak között gyakoribb."
+    },
+    {
+      "term": "hordozó",
+      "meaning": "Olyan egészséges (heterozigóta) egyed, amely egy recesszív betegség allélját hordozza, és továbbadhatja.",
+      "example": "A hemofíliás fiú anyja általában hordozó."
+    },
+    {
+      "term": "mutáció",
+      "meaning": "Az örökítőanyag (DNS bázissorrendje, kromoszóma szerkezete vagy száma) hirtelen, öröklődő megváltozása.",
+      "example": "A mutáció új allélokat hoz létre, ez a változatosság végső forrása."
+    },
+    {
+      "term": "pontmutáció",
+      "meaning": "Egyetlen nukleotidot (bázispárt) érintő mutáció: csere, beépülés vagy kiesés.",
+      "example": "A sarlósejtes vérszegénységet egy pontmutáció okozza a hemoglobin génjében."
+    },
+    {
+      "term": "kromoszómaszám-rendellenesség",
+      "meaning": "A kromoszómák számának megváltozása, többnyire az ivarsejtképzés során bekövetkező szétválási hiba miatt (pl. triszómia).",
+      "example": "A Down-szindróma kromoszómaszám-rendellenesség: a 21. kromoszómából három van.",
+      "collocation": "21-es triszómia"
+    },
+    {
+      "term": "replikáció",
+      "meaning": "A DNS megkettőződése a sejtosztódás előtt; szemikonzervatív, azaz mindkét új molekula egy régi és egy új szálból áll.",
+      "example": "A replikáció során a DNS-polimeráz a bázispárosodás szabályai szerint építi fel az új szálat."
+    },
+    {
+      "term": "transzkripció",
+      "meaning": "Az RNS szintézise a DNS egyik szálának mintájára (átírás); eukariótákban a sejtmagban, RNS-polimeráz végzi.",
+      "example": "A transzkripció terméke az mRNS."
+    },
+    {
+      "term": "transzláció",
+      "meaning": "A fehérjeszintézis a riboszómán: az mRNS kodonjainak sorrendje alapján a tRNS-ek által szállított aminosavak peptidlánccá kapcsolódnak.",
+      "example": "A transzláció a startkodonnál kezdődik, és a stopkodonnál ér véget."
+    },
+    {
+      "term": "kodon",
+      "meaning": "Az mRNS három egymást követő nukleotidja (bázishármas), amely egy aminosavat vagy a lánc végét jelöli.",
+      "example": "Az AUG kodon a metionint kódolja, és egyben startkodon."
+    },
+    {
+      "term": "antikodon",
+      "meaning": "A tRNS három nukleotidból álló szakasza, amely a bázispárosodás szabályai szerint kapcsolódik az mRNS kodonjához.",
+      "example": "Az mRNS 5'-AUG-3' kodonjához a tRNS 3'-UAC-5' irányú antikodonja kapcsolódik."
+    },
+    {
+      "term": "genetikai kód",
+      "meaning": "A nukleinsav bázishármasai és az aminosavak közötti megfeleltetés; triplet, degenerált, egyértelmű, átfedésmentes és majdnem egyetemes.",
+      "example": "A genetikai kód degenerált, mert egy aminosavat több kodon is kódolhat.",
+      "collocation": "64 kodon, 20 aminosav"
+    },
+    {
+      "term": "intron",
+      "meaning": "Az eukarióta gén nem kódoló szakasza, amely az elsődleges átiratból az érés (splicing) során kivágódik.",
+      "example": "Az intron szakaszok nem kerülnek bele az érett mRNS-be."
+    },
+    {
+      "term": "exon",
+      "meaning": "Az eukarióta gén azon szakasza, amely az érett mRNS-ben megmarad, és (nagyrészt) aminosavakat kódol.",
+      "example": "Az érés során az exon szakaszok összekapcsolódnak."
+    },
+    {
+      "term": "plazmid",
+      "meaning": "A baktériumok fő DNS-ét kiegészítő, kis méretű, gyűrű alakú DNS-molekula; gyakran rezisztenciagéneket hordoz, a géntechnológiában vektorként használják.",
+      "example": "A plazmid segítségével jut be az emberi inzulin génje a baktériumba."
+    },
+    {
+      "term": "génmódosított szervezet (GMO)",
+      "meaning": "Olyan élőlény, amelynek örökítőanyagát géntechnológiai módszerrel, más fajból származó vagy módosított génnel megváltoztatták.",
+      "example": "A rovarkártevőknek ellenálló kukorica génmódosított szervezet."
+    },
+    {
+      "term": "poligénes öröklődés",
+      "meaning": "Olyan tulajdonság öröklődése, amelyet több gén együttesen alakít ki; a fenotípus folytonos eloszlású (pl. testmagasság, bőrszín).",
+      "example": "A testmagasság poligénes öröklődésű, és a környezet (táplálkozás) is befolyásolja."
+    },
+    {
+      "term": "polimeráz-láncreakció (PCR)",
+      "meaning": "Laboratóriumi módszer, amellyel egy DNS-szakasz rövid idő alatt sok milliószorosára sokszorozható hőstabil DNS-polimeráz segítségével.",
+      "example": "A polimeráz-láncreakció segítségével kis mintából is kimutatható egy vírus örökítőanyaga."
+    }
+  ]
+}

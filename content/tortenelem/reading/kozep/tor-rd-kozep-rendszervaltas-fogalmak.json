@@ -1,0 +1,137 @@
+{
+  "schemaVersion": 1,
+  "id": "tor-rd-kozep-rendszervaltas-fogalmak",
+  "subject": "tortenelem",
+  "revision": 1,
+  "level": "kozep",
+  "source": "generated",
+  "topic": "jelenkor",
+  "title": "A rendszerváltás és az euroatlanti integráció fogalmai",
+  "createdAt": "2026-11-05",
+  "tags": [
+    "magyar"
+  ],
+  "section": "reading",
+  "type": "fogalmak",
+  "instructions": "A feladat a magyarországi rendszerváltással és az azt követő évekkel kapcsolatos. Olvassa el a forrást, majd párosítsa a meghatározásokat a fogalmakkal! Írja a fogalom betűjelét a meghatározás mellé! Egy betűjel csak egyszer használható, három felesleges. Végül válaszoljon a kérdésre! A 0. a megoldott példa.",
+  "passage": {
+    "title": "Egy budapesti napilap tudósításából, 1990. május",
+    "sourceNote": "A források a gyakorlás céljára írt, a kor stílusát követő szövegek, illetve leírások – nem hiteles korabeli dokumentumok.",
+    "blocks": [
+      {
+        "text": "„Összeült az első szabadon választott Országgyűlés. Negyven év után először fordult elő, hogy a választók több párt jelöltjei közül szabadon dönthettek. Az új kormány előtt álló feladatok óriásiak: a tervgazdaság helyett piacgazdaságot kell teremteni, az állami vállalatokat magánkézbe kell adni, és végig kell vinni a szovjet csapatok márciusban megkezdődött kivonását. Sokan már arról beszélnek, hogy hazánk egyszer a nyugat-európai közösség tagja lehet.”"
+      }
+    ]
+  },
+  "options": [
+    {
+      "key": "A",
+      "text": "államosítás"
+    },
+    {
+      "key": "B",
+      "text": "egypártrendszer"
+    },
+    {
+      "key": "C",
+      "text": "Európai Unió"
+    },
+    {
+      "key": "D",
+      "text": "KGST"
+    },
+    {
+      "key": "E",
+      "text": "köztársaság"
+    },
+    {
+      "key": "F",
+      "text": "NATO"
+    },
+    {
+      "key": "G",
+      "text": "Nemzeti Kerekasztal"
+    },
+    {
+      "key": "H",
+      "text": "privatizáció"
+    },
+    {
+      "key": "I",
+      "text": "többpártrendszer"
+    }
+  ],
+  "example": {
+    "id": "0",
+    "kind": "match",
+    "prompt": "Az ellenzéki szervezetek és az MSZMP 1989-es tárgyalássorozata, amely a békés átmenet feltételeiről (pl. a választási törvényről) állapodott meg.",
+    "answer": "G",
+    "category": "fogalomhasznalat",
+    "explanation": "Helyes: G – Nemzeti Kerekasztal. 1989 nyarán és őszén az ellenzék, az MSZMP és a „harmadik oldal” tárgyalásai készítették elő a szabad választásokat és az alkotmánymódosítást."
+  },
+  "items": [
+    {
+      "id": "1",
+      "kind": "match",
+      "prompt": "Az állami tulajdonú vállalatok magánkézbe adása.",
+      "answer": "H",
+      "category": "fogalomhasznalat",
+      "explanation": "Helyes: H – privatizáció. A forrás szerint „az állami vállalatokat magánkézbe kell adni”; ez a piacgazdaságra való áttérés egyik fő lépése volt.",
+      "wrongOptions": {
+        "A": "Az államosítás ennek az ellentéte: magántulajdon állami tulajdonba vétele (pl. 1948–49-ben)."
+      }
+    },
+    {
+      "id": "2",
+      "kind": "match",
+      "prompt": "Olyan politikai rendszer, amelyben több párt szabadon versenyezhet a választásokon.",
+      "answer": "I",
+      "category": "fogalomhasznalat",
+      "explanation": "Helyes: I – többpártrendszer. A forrás szerint a választók „több párt jelöltjei közül szabadon dönthettek” – ez a többpártrendszer lényege.",
+      "wrongOptions": {
+        "B": "Az egypártrendszer az 1990 előtti állapot: csak az állampárt (MSZMP) működhetett legálisan."
+      }
+    },
+    {
+      "id": "3",
+      "kind": "match",
+      "prompt": "Az az államforma, amelyet 1989. október 23-án kikiáltottak, és amelyben az államfő választott elnök.",
+      "answer": "E",
+      "category": "fogalomhasznalat",
+      "explanation": "Helyes: E – köztársaság. Az alkotmánymódosítás után 1989. október 23-án Szűrös Mátyás ideiglenes államfő kikiáltotta a Magyar Köztársaságot (a Népköztársaság helyett)."
+    },
+    {
+      "id": "4",
+      "kind": "match",
+      "prompt": "Az Egyesült Államok vezette katonai szövetség, amelyhez Magyarország 1999-ben csatlakozott.",
+      "answer": "F",
+      "category": "fogalomhasznalat",
+      "explanation": "Helyes: F – NATO (Észak-atlanti Szerződés Szervezete). Magyarország Csehországgal és Lengyelországgal együtt 1999. március 12-én lett tag.",
+      "wrongOptions": {
+        "D": "A KGST a szocialista országok gazdasági együttműködési szervezete volt, 1991-ben feloszlott."
+      }
+    },
+    {
+      "id": "5",
+      "kind": "match",
+      "prompt": "Az a gazdasági és politikai közösség, amelynek Magyarország 2004. május 1-jén lett a tagja.",
+      "answer": "C",
+      "category": "fogalomhasznalat",
+      "explanation": "Helyes: C – Európai Unió. A forrásban említett „nyugat-európai közösséghez” Magyarország kilenc másik országgal együtt 2004. május 1-jén csatlakozott."
+    },
+    {
+      "id": "6",
+      "kind": "text",
+      "prompt": "Ki lett az első szabadon választott Országgyűlés által megválasztott miniszterelnök 1990-ben?",
+      "answer": [
+        "Antall József",
+        "Antall",
+        "dr. Antall József"
+      ],
+      "category": "szemelyek-esemenyek",
+      "explanation": "Helyes: Antall József. A választást megnyerő Magyar Demokrata Fórum elnöke 1990 májusában alakított koalíciós kormányt; 1993-ban bekövetkezett haláláig vezette a kormányt.",
+      "maxWords": 3
+    }
+  ],
+  "suggestedMinutes": 6
+}

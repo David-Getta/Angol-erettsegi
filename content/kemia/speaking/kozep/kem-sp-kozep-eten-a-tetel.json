@@ -1,0 +1,79 @@
+{
+  "schemaVersion": 1,
+  "id": "kem-sp-kozep-eten-a-tetel",
+  "subject": "kemia",
+  "revision": 1,
+  "level": "kozep",
+  "source": "generated",
+  "topic": "szenhidrogenek",
+  "title": "Az etén és az alkének",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "speaking",
+  "type": "a-tetel",
+  "partNumber": 1,
+  "instructionsHu": "Mutassa be az etént mint az alkének legegyszerűbb képviselőjét: molekulaszerkezet, fizikai tulajdonságok, jellemző reakciók (égés, addíciók, polimerizáció), előállítás és felhasználás! Írja fel a reakciók egyenletét!",
+  "prompts": [
+    "Az alkének homológ sora, általános képlete; az etén molekulaszerkezete (σ- és π-kötés, síkalkat, kötésszög)",
+    "Fizikai tulajdonságok",
+    "Addíciós reakciók: bróm, hidrogén, hidrogén-klorid, víz",
+    "Polimerizáció: polietilén; égés",
+    "Előállítás, felhasználás, biológiai szerep (növényi hormon)"
+  ],
+  "followUpQuestions": [
+    "Miért nincs a but-1-énnek cisz–transz izomerje?",
+    "Hogyan különböztetné meg az etánt és az etént egy kísérlettel?"
+  ],
+  "usefulPhrases": [
+    {
+      "en": "CₙH₂ₙ",
+      "hu": "Az alkének (és a cikloalkánok) általános képlete."
+    },
+    {
+      "en": "σ-kötés, π-kötés",
+      "hu": "A kettős kötés két része; a π-kötés gyengébb, felszakad az addíciókor."
+    },
+    {
+      "en": "addíció",
+      "hu": "Kettős kötésre kapcsolódás – az alkének jellemző reakciója."
+    },
+    {
+      "en": "a brómos víz elszíntelenedik",
+      "hu": "A telítetlenség (C=C) kimutatása."
+    },
+    {
+      "en": "polimerizáció, monomer, polimer",
+      "hu": "n CH₂=CH₂ → [–CH₂–CH₂–]ₙ"
+    },
+    {
+      "en": "krakkolás",
+      "hu": "Nagyobb szénhidrogének hőbontása kisebb molekulákra – az etén ipari forrása."
+    }
+  ],
+  "sources": [],
+  "keyPoints": [
+    "Az alkének általános képlete CₙH₂ₙ, egy C=C kettős kötést tartalmaznak.",
+    "Az etén (CH₂=CH₂) síkalkatú molekula, kötésszöge kb. 120°; a kettős kötés egy σ- és egy π-kötésből áll, a kettős kötés körül nincs szabad elfordulás.",
+    "Az etén színtelen, gyengén édeskés szagú gáz, apoláris, vízben rosszul oldódik.",
+    "Jellemző reakciója az addíció: CH₂=CH₂ + Br₂ → CH₂Br–CH₂Br; a brómos víz elszíntelenedése a telítetlenség kimutatása.",
+    "Hidrogén-addícióval etán, HCl-addícióval klóretán, víz addíciójával etanol keletkezik.",
+    "Polimerizációval polietilén keletkezik: n CH₂=CH₂ → [–CH₂–CH₂–]ₙ.",
+    "Égése: C₂H₄ + 3 O₂ → 2 CO₂ + 2 H₂O; világító, kissé kormozó lánggal ég.",
+    "Az ipar kőolajpárlatok krakkolásával állítja elő; a növényekben a gyümölcsérést serkentő hormon."
+  ],
+  "speakingSeconds": 480,
+  "prepSeconds": 900,
+  "sampleAnswer": {
+    "turns": [
+      {
+        "speaker": "candidate",
+        "text": "Az alkének nyílt láncú szénhidrogének, amelyek egy szén-szén kettős kötést tartalmaznak; általános képletük CₙH₂ₙ. A homológ sor első tagja az etén, összegképlete C₂H₄, szerkezeti képlete CH₂=CH₂. A kettős kötés egy σ- és egy π-kötésből áll. Mindkét szénatomhoz három atom kapcsolódik egy síkban, ezért a molekula síkalkatú, a kötésszögek kb. 120°-osak. A π-kötés miatt a kettős kötés körül nincs szabad elfordulás – ez okozza a nagyobb szénatomszámú alkéneknél a geometriai, vagyis cisz–transz izomériát.\nAz etén színtelen, gyengén édeskés szagú gáz. Molekulája apoláris, ezért vízben rosszul, apoláris oldószerekben jól oldódik.\nKémiai tulajdonságait a π-kötés határozza meg: a π-kötés gyengébb a σ-kötésnél, könnyen felszakad, ezért az etén addíciós reakciókra hajlamos. Brómmal 1,2-dibrómetán keletkezik: CH₂=CH₂ + Br₂ → CH₂Br–CH₂Br. Ezért színteleníti el az etén a brómos vizet – ez a telítetlenség kimutatása. Katalizátor jelenlétében hidrogént addícionál, és etán lesz belőle: CH₂=CH₂ + H₂ → CH₃–CH₃. Hidrogén-kloriddal klóretán keletkezik, vízzel savas katalizátor mellett etanol: CH₂=CH₂ + H₂O → CH₃–CH₂–OH. Az eténmolekulák egymással is összekapcsolódhatnak: ez a polimerizáció, amelynek terméke a polietilén: n CH₂=CH₂ → [–CH₂–CH₂–]ₙ. Levegőn világító, kissé kormozó lánggal ég: C₂H₄ + 3 O₂ → 2 CO₂ + 2 H₂O.\nAz ipar a kőolaj nagyobb szénatomszámú párlatainak krakkolásával állítja elő. A legtöbb etént polietilén, PVC és etanol gyártására használják fel. A növényekben az etén hormon: serkenti a gyümölcsök érését, ezért érlelőkamrákban például a banán érlelésére is alkalmazzák."
+      }
+    ],
+    "notes": [
+      "Tartalom: a szerkezettől (σ- és π-kötés, síkalkat, 120°) a fizikai tulajdonságokon és a reakciókon át az előállításig és a felhasználásig minden elemet érint.",
+      "Összefüggések: a reakciókészséget (addíció) a π-kötés gyengeségével, az oldhatóságot az apoláris jelleggel magyarázza; hat rendezett egyenletet ír, köztük a polimerizációt helyes polimerképlettel.",
+      "Szaknyelv: homológ sor, addíció, polimerizáció, krakkolás, geometriai izoméria – pontos fogalomhasználat; a brómos vizes próbát a telítetlenség kimutatásaként nevezi meg."
+    ]
+  }
+}

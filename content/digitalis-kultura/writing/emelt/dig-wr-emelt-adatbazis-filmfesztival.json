@@ -1,0 +1,136 @@
+{
+  "schemaVersion": 1,
+  "id": "dig-wr-emelt-adatbazis-filmfesztival",
+  "subject": "digitalis-kultura",
+  "revision": 1,
+  "level": "emelt",
+  "source": "generated",
+  "topic": "adatbazis",
+  "title": "Adatbázis-kezelés: filmfesztivál vetítései",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "writing",
+  "type": "adatbazis",
+  "taskNumber": 3,
+  "situation": "Egy filmfesztivál vetítéseinek adatait kell feldolgoznia. A három szövegfájl UTF-8 kódolású, tabulátorral tagolt, az első sor a mezőneveket tartalmazza.\n\nfilm.txt – film tábla: id (egész, kulcs), cim (szöveg), rendezo (szöveg), orszag (szöveg, pl. magyar, norvég), ev (egész, a bemutató éve), hossz (egész, percben).\nterem.txt – terem tábla: id (egész, kulcs), nev (szöveg), ferohely (egész).\nvetites.txt – vetites tábla: id (egész, kulcs), film_id (egész), terem_id (egész), datum (dátum), kezdes (idő, óó:pp), eladott (egész, az eladott jegyek száma).\n\nKészítsen fesztival néven adatbázist! A lekérdezéseket a zárójelben megadott néven mentse; a lekérdezések pontosan a kért mezőket jelenítsék meg!\n\n1. Importálja a táblákat a megadott néven és mezőtípusokkal, állítsa be a kulcsokat és a táblák közötti kapcsolatokat!\n2. Listázza a 120 percnél hosszabb filmek címét és hosszát a leghosszabbal kezdve! (2hosszu)\n3. Adja meg a magyar filmek vetítéseinek dátumát, kezdési idejét, a film címét és a terem nevét időrendben! (3magyar)\n4. Melyik vetítéseken kelt el minden jegy? Adja meg a film címét, a vetítés dátumát és a terem nevét! (4telt)\n5. Filmenként mennyi jegyet adtak el összesen? Csak azok a filmek jelenjenek meg, amelyekre összesen 200-nál több jegy kelt el, a legnézettebbel kezdve! (5nezok)\n6. Termenként mekkora volt az átlagos kihasználtság (eladott jegy / férőhely) százalékban, egy tizedesjegyre kerekítve? (6kihasznaltsag)\n7. Mely filmeket nem vetítették egyszer sem? (7nemvetitett)\n8. Melyik film vetítésén adták el a legtöbb jegyet? Adja meg a címet, a dátumot és az eladott jegyek számát! (8legtobb)\n9. Készítsen lekérdezést, amely naponként megadja a vetítések számát és az eladott jegyek összegét (9napi), majd erre építve jelentést (9napi) dátum szerint rendezve, a mezők magyar feliratával (Dátum, Vetítések, Eladott jegyek)!",
+  "points": [
+    {
+      "id": "p1",
+      "text": "1. Táblák, mezőtípusok, kulcsok, két kapcsolat (4 pont)"
+    },
+    {
+      "id": "p2",
+      "text": "2. 2hosszu: szűrés, csökkenő rendezés (2 pont)"
+    },
+    {
+      "id": "p3",
+      "text": "3. 3magyar: három tábla összekapcsolása, szűrés, kétszintű rendezés (4 pont)"
+    },
+    {
+      "id": "p4",
+      "text": "4. 4telt: két mező összehasonlítása a feltételben (3 pont)"
+    },
+    {
+      "id": "p5",
+      "text": "5. 5nezok: csoportosítás, összegzés, HAVING, rendezés (4 pont)"
+    },
+    {
+      "id": "p6",
+      "text": "6. 6kihasznaltsag: számított mező, átlag, kerekítés termenként (4 pont)"
+    },
+    {
+      "id": "p7",
+      "text": "7. 7nemvetitett: allekérdezés vagy külső összekapcsolás (3 pont)"
+    },
+    {
+      "id": "p8",
+      "text": "8. 8legtobb: allekérdezés a maximumra (3 pont)"
+    },
+    {
+      "id": "p9",
+      "text": "9. 9napi: összesítő lekérdezés és jelentés (3 pont)"
+    }
+  ],
+  "suggestedMinutes": 60,
+  "usefulPhrases": [
+    {
+      "en": "(A INNER JOIN B ON …) INNER JOIN C ON …",
+      "hu": "három tábla összekapcsolása; az Access zárójelezést kér"
+    },
+    {
+      "en": "WHERE vetites.eladott = terem.ferohely",
+      "hu": "két mező összehasonlítása a feltételben"
+    },
+    {
+      "en": "GROUP BY … HAVING SUM(…) > 200",
+      "hu": "csoportok szűrése összesített érték alapján"
+    },
+    {
+      "en": "ROUND(AVG(x * 100.0 / y), 1)",
+      "hu": "százalékos átlag egy tizedesre; a 100.0 tizedes osztást kényszerít"
+    },
+    {
+      "en": "WHERE id NOT IN (SELECT film_id FROM vetites)",
+      "hu": "„egyszer sem” típusú kérdés allekérdezéssel"
+    },
+    {
+      "en": "LEFT JOIN … WHERE vetites.id IS NULL",
+      "hu": "ugyanez külső összekapcsolással"
+    },
+    {
+      "en": "WHERE eladott = (SELECT MAX(eladott) FROM vetites)",
+      "hu": "a maximumhoz tartozó rekord(ok) – holtversenyt is kezel"
+    },
+    {
+      "en": "Jelentés varázsló",
+      "hu": "nyomtatható, csoportosított/rendezett kimutatás egy lekérdezésből"
+    }
+  ],
+  "checklistExtra": [],
+  "modelAnswer": {
+    "text": "Megoldás – Microsoft Access (SQL-nézetben; a LibreOffice Base-ben ugyanez SQL-ben futtatható)\n\n1. Új adatbázis: fesztival.accdb. Mindhárom fájlt importálom (Külső adatok > Szövegfájl; tagolt, tabulátor, az első sor mezőneveket tartalmaz, UTF-8). Típusok: az id, film_id, terem_id, ev, hossz, ferohely, eladott Szám (hosszú egész); a datum Dátum/idő; a kezdes Dátum/idő (rövid idő) vagy Rövid szöveg; a többi Rövid szöveg. Kulcs mindhárom táblában az id. Kapcsolatok: film.id – vetites.film_id és terem.id – vetites.terem_id, mindkettő egy-a-többhöz, hivatkozási integritással.\n\n2. 2hosszu:\nSELECT cim, hossz FROM film WHERE hossz > 120 ORDER BY hossz DESC;\n\n3. 3magyar:\nSELECT vetites.datum, vetites.kezdes, film.cim, terem.nev FROM (vetites INNER JOIN film ON vetites.film_id = film.id) INNER JOIN terem ON vetites.terem_id = terem.id WHERE film.orszag = 'magyar' ORDER BY vetites.datum, vetites.kezdes;\n(Az Access a több összekapcsolást zárójelezve várja.)\n\n4. 4telt:\nSELECT film.cim, vetites.datum, terem.nev FROM (vetites INNER JOIN film ON vetites.film_id = film.id) INNER JOIN terem ON vetites.terem_id = terem.id WHERE vetites.eladott = terem.ferohely;\n\n5. 5nezok:\nSELECT film.cim, SUM(vetites.eladott) AS jegyek FROM film INNER JOIN vetites ON film.id = vetites.film_id GROUP BY film.id, film.cim HAVING SUM(vetites.eladott) > 200 ORDER BY SUM(vetites.eladott) DESC;\n(A csoportosítás az id szerint is történik, hogy két azonos című film ne olvadjon össze; a HAVING a csoportokra szűr.)\n\n6. 6kihasznaltsag:\nSELECT terem.nev, ROUND(AVG(vetites.eladott * 100.0 / terem.ferohely), 1) AS kihasznaltsag FROM terem INNER JOIN vetites ON terem.id = vetites.terem_id GROUP BY terem.id, terem.nev;\n(A 100.0-val szorzás miatt az osztás tizedes törtet ad azokban a rendszerekben is, ahol két egész szám osztása egészosztás lenne.)\n\n7. 7nemvetitett:\nSELECT cim FROM film WHERE id NOT IN (SELECT film_id FROM vetites);\nEgyenértékű: SELECT film.cim FROM film LEFT JOIN vetites ON film.id = vetites.film_id WHERE vetites.id IS NULL;\n\n8. 8legtobb:\nSELECT film.cim, vetites.datum, vetites.eladott FROM film INNER JOIN vetites ON film.id = vetites.film_id WHERE vetites.eladott = (SELECT MAX(eladott) FROM vetites);\n(Ha több vetítésen is ugyanannyi, maximális számú jegy kelt el, mindegyik megjelenik. A rendezés + kivágás rendszerfüggő: a LIMIT 1 (pl. SQLite, MySQL) csak egyet adna, az Access TOP 1-e minden holtversenyzőt – az allekérdezés minden rendszerben ugyanazt adja.)\n\n9. 9napi:\nSELECT vetites.datum, COUNT(*) AS vetitesek, SUM(vetites.eladott) AS jegyek FROM vetites GROUP BY vetites.datum ORDER BY vetites.datum;\nJelentés: Létrehozás > Jelentés varázsló, forrás: a 9napi lekérdezés, rendezés datum szerint; a jelentés nevét 9napi-ra állítom, Tervező nézetben a címkéket átírom: Dátum, Vetítések, Eladott jegyek.",
+    "pointsCovered": [
+      {
+        "id": "p1",
+        "quote": "Kapcsolatok: film.id – vetites.film_id és terem.id – vetites.terem_id"
+      },
+      {
+        "id": "p2",
+        "quote": "SELECT cim, hossz FROM film WHERE hossz > 120 ORDER BY hossz DESC;"
+      },
+      {
+        "id": "p3",
+        "quote": "WHERE film.orszag = 'magyar' ORDER BY vetites.datum, vetites.kezdes;"
+      },
+      {
+        "id": "p4",
+        "quote": "WHERE vetites.eladott = terem.ferohely;"
+      },
+      {
+        "id": "p5",
+        "quote": "HAVING SUM(vetites.eladott) > 200 ORDER BY SUM(vetites.eladott) DESC;"
+      },
+      {
+        "id": "p6",
+        "quote": "ROUND(AVG(vetites.eladott * 100.0 / terem.ferohely), 1) AS kihasznaltsag"
+      },
+      {
+        "id": "p7",
+        "quote": "SELECT cim FROM film WHERE id NOT IN (SELECT film_id FROM vetites);"
+      },
+      {
+        "id": "p8",
+        "quote": "WHERE vetites.eladott = (SELECT MAX(eladott) FROM vetites);"
+      },
+      {
+        "id": "p9",
+        "quote": "SELECT vetites.datum, COUNT(*) AS vetitesek, SUM(vetites.eladott) AS jegyek FROM vetites GROUP BY vetites.datum ORDER BY vetites.datum;"
+      }
+    ],
+    "notes": [
+      "A követelmények teljesítése: mind a kilenc részfeladat a megadott néven, pontosan a kért mezőkkel készül; a jelentés a lekérdezésre épül, magyar feliratokkal.",
+      "Szakszerű módszer: kulcsokon alapuló összekapcsolások, GROUP BY + HAVING a csoportszűrésre, allekérdezés a maximumra és a hiányzó kapcsolatra – nincs „kézzel kinézett” érték (pl. WHERE eladott = 180), ami adatváltozáskor hibás eredményt adna.",
+      "Pontosság: a kihasznaltság számításánál a tizedes osztás és a kerekítés, a 8legtobb-nál a holtverseny is helyesen kezelve; a mezőtípusok miatt a dátum szerinti rendezés időrendi."
+    ]
+  }
+}

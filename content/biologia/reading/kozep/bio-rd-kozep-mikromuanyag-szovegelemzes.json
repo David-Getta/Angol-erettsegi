@@ -1,0 +1,208 @@
+{
+  "schemaVersion": 1,
+  "id": "bio-rd-kozep-mikromuanyag-szovegelemzes",
+  "subject": "biologia",
+  "revision": 1,
+  "level": "kozep",
+  "source": "generated",
+  "topic": "kornyezetvedelem",
+  "title": "Mikroműanyagok a vizekben – szövegelemzés",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "reading",
+  "type": "szovegelemzes",
+  "instructions": "Olvassa el figyelmesen a szöveget, majd válaszoljon a kérdésekre! A feleletválasztós kérdéseknél a helyes válasz betűjelét, az igaz–hamis állításoknál I (T) vagy H (F) betűt, a rövid választ igénylő kérdéseknél a kért szót írja be. A 0. kérdés a példa.",
+  "passage": {
+    "title": "Láthatatlan szemét: mikroműanyagok a vizekben",
+    "blocks": [
+      {
+        "text": "Mikroműanyagnak az 5 milliméternél kisebb műanyagdarabokat nevezzük. Egy részük eleve ilyen kicsi kerül a környezetbe: ilyenek a kozmetikumokhoz adott csiszolószemcsék vagy a szintetikus ruhák mosásakor leváló szálak. Nagyobb részük azonban a vízbe kerülő palackokból, zacskókból és halászhálókból keletkezik, amelyeket a napfény ultraibolya sugárzása, a hullámzás és a hőmérséklet-változás egyre apróbb darabokra tördel. A műanyagot a lebontó élőlények – baktériumok és gombák – nem vagy csak nagyon lassan képesek lebontani, ezért a darabok évtizedekig, akár évszázadokig megmaradnak."
+      },
+      {
+        "text": "A vízi élőlények gyakran tápláléknak nézik a műanyagszemcséket. A planktonszűrő apró rákok és kagylók a vízzel együtt nyelik le őket, a halak pedig vagy közvetlenül, vagy a rákokkal együtt veszik fel. A műanyag maga nem emésztődik meg, de a felületéhez könnyen kötődnek vízben oldott mérgező anyagok, például nehézfémek és növényvédőszer-maradványok. Így a szemcsék a méreganyagokat is beviszik az élőlény szervezetébe, és azok a táplálékláncban felfelé haladva feldúsulhatnak: a csúcsragadozók testében a koncentráció sokszorosa lehet a vízben mérhetőnek."
+      },
+      {
+        "text": "Egy hazai kutatócsoport a Dunából és mellékfolyóiból vett vízmintákat vizsgált. A legtöbb szemcsét a nagyvárosok alatti szakaszokon találták, különösen nagy esőzések után, amikor a csapadékcsatornákból és a túlterhelt szennyvíztisztítókból a tisztítatlan víz közvetlenül a folyóba jutott. A szemcsék kétharmada szálas szerkezetű volt, ami a kutatók szerint a ruhamosásból származó műszálakra utal."
+      },
+      {
+        "text": "A megoldás nem egyszerű, mert a már vízben lévő szemcséket gyakorlatilag nem lehet kiszűrni. A kutatók ezért a megelőzést hangsúlyozzák: kevesebb egyszer használatos műanyag, a hulladék szelektív gyűjtése és újrahasznosítása, a mosógépekbe szerelhető szálszűrők, valamint a szennyvíztisztítók fejlesztése. Az Európai Unió 2023-tól fokozatosan tiltja a kozmetikumokhoz szándékosan hozzáadott mikroműanyagokat."
+      }
+    ]
+  },
+  "example": {
+    "id": "0",
+    "kind": "choice",
+    "prompt": "Mekkora a mikroműanyag-szemcsék mérete a szöveg meghatározása szerint?",
+    "options": [
+      {
+        "key": "A",
+        "text": "1 milliméternél kisebb"
+      },
+      {
+        "key": "B",
+        "text": "5 centiméternél kisebb"
+      },
+      {
+        "key": "C",
+        "text": "5 milliméternél kisebb"
+      },
+      {
+        "key": "D",
+        "text": "csak mikroszkóppal látható"
+      }
+    ],
+    "answer": "C",
+    "category": "szovegertelmezes",
+    "explanation": "Helyes: C. A szöveg első mondata adja meg a definíciót: „Mikroműanyagnak az 5 milliméternél kisebb műanyagdarabokat nevezzük.”"
+  },
+  "items": [
+    {
+      "id": "1",
+      "kind": "choice",
+      "prompt": "A szöveg szerint miért marad meg a műanyag évtizedekig a vízben?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Mert a víz hideg, és ez lassítja a bomlást."
+        },
+        {
+          "key": "B",
+          "text": "Mert a napfény nem éri el a víz alatt."
+        },
+        {
+          "key": "C",
+          "text": "Mert a halak nem eszik meg."
+        },
+        {
+          "key": "D",
+          "text": "Mert a lebontó szervezetek nem vagy csak nagyon lassan tudják lebontani."
+        }
+      ],
+      "answer": "D",
+      "category": "szovegertelmezes",
+      "explanation": "Helyes: D. A szöveg kimondja: a műanyagot „a lebontó élőlények – baktériumok és gombák – nem vagy csak nagyon lassan képesek lebontani, ezért a darabok évtizedekig … megmaradnak”. A műanyag a természetben ismeretlen, mesterséges polimer, amelyre a lebontóknak nincs enzimük.",
+      "wrongOptions": {
+        "A": "A szöveg a víz hőmérsékletét nem említi okként; a tartósság a lebonthatatlanságból ered.",
+        "B": "A napfény a szöveg szerint tördeli a műanyagot, tehát aprítja, de nem bontja le; a megmaradás oka a lebontók hiánya.",
+        "C": "A szöveg szerint a halak éppen hogy felveszik a szemcséket; ez nem oka a megmaradásnak."
+      }
+    },
+    {
+      "id": "2",
+      "kind": "tf",
+      "prompt": "A mikroműanyag-szemcsék közvetlenül megemésztődnek a halak gyomrában, és így mérgezik meg őket.",
+      "answer": "F",
+      "category": "szovegertelmezes",
+      "explanation": "Hamis. A szöveg szerint „a műanyag maga nem emésztődik meg”; a veszélyt az jelenti, hogy a felületéhez kötődő mérgező anyagokat (nehézfémek, növényvédőszer-maradványok) beviszi a szervezetbe."
+    },
+    {
+      "id": "3",
+      "kind": "text",
+      "prompt": "Hogyan nevezzük azt a jelenséget, amelyet a szöveg a méreganyagokról leír: a tápláléklánc magasabb szintjein egyre nagyobb a koncentrációjuk?",
+      "answer": [
+        "feldúsulás",
+        "biológiai feldúsulás",
+        "felhalmozódás",
+        "biológiai felhalmozódás",
+        "bioakkumuláció",
+        "biomagnifikáció",
+        "akkumuláció",
+        "dúsulás",
+        "feldúsulnak"
+      ],
+      "maxWords": 2,
+      "category": "okologiai-osszefugges",
+      "explanation": "Helyes: (biológiai) feldúsulás, bioakkumuláció. A nehezen lebomló mérgek az élőlény testében nem ürülnek ki, és a ragadozó az összes elfogyasztott zsákmány mérgét magába gyűjti, így a csúcsragadozókban a koncentráció sokszorosa lehet a vízben mérhetőnek."
+    },
+    {
+      "id": "4",
+      "kind": "choice",
+      "prompt": "Hol találták a kutatók a legtöbb mikroműanyag-szemcsét a Dunában?",
+      "options": [
+        {
+          "key": "A",
+          "text": "a folyó forrásvidékén"
+        },
+        {
+          "key": "B",
+          "text": "a mellékfolyók torkolatánál, száraz időszakban"
+        },
+        {
+          "key": "C",
+          "text": "a nagyvárosok alatti szakaszokon, főleg nagy esőzések után"
+        },
+        {
+          "key": "D",
+          "text": "a szennyvíztisztítók felett"
+        }
+      ],
+      "answer": "C",
+      "category": "szovegertelmezes",
+      "explanation": "Helyes: C. A harmadik bekezdés szerint „a legtöbb szemcsét a nagyvárosok alatti szakaszokon találták, különösen nagy esőzések után”, mert ekkor a csapadékcsatornákból és a túlterhelt tisztítókból tisztítatlan víz jut a folyóba.",
+      "wrongOptions": {
+        "A": "A forrásvidéket a szöveg nem említi; a szennyezés forrása a városok szennyvize.",
+        "B": "A szöveg nagy esőzések utáni, nem száraz időszakbeli maximumról ír.",
+        "D": "A tisztítók felett a víz még nem tartalmazza a városi szennyvizet; a maximum alattuk van."
+      }
+    },
+    {
+      "id": "5",
+      "kind": "text",
+      "prompt": "A szemcsék kétharmada szálas szerkezetű volt. A szöveg szerint milyen tevékenységből származnak ezek a szálak?",
+      "answer": [
+        "ruhamosás",
+        "mosás",
+        "a ruhamosásból",
+        "szintetikus ruhák mosása",
+        "műszálas ruhák mosása",
+        "ruhák mosásából",
+        "mosásból",
+        "a mosásból"
+      ],
+      "maxWords": 4,
+      "category": "szovegertelmezes",
+      "explanation": "Helyes: a ruhamosásból. A szöveg szerint a szálas szerkezet „a ruhamosásból származó műszálakra utal”; az első bekezdés is említi, hogy a szintetikus ruhák mosásakor szálak válnak le."
+    },
+    {
+      "id": "6",
+      "kind": "tf",
+      "prompt": "A szöveg szerint a már vízben lévő mikroműanyagot korszerű szűrőkkel hatékonyan el lehet távolítani, ezért nem a megelőzés a legfontosabb.",
+      "answer": "F",
+      "category": "szovegertelmezes",
+      "explanation": "Hamis. Az utolsó bekezdés ennek ellenkezőjét állítja: „a már vízben lévő szemcséket gyakorlatilag nem lehet kiszűrni”, ezért a kutatók a megelőzést hangsúlyozzák."
+    },
+    {
+      "id": "7",
+      "kind": "choice",
+      "prompt": "Melyik NEM szerepel a szövegben a megelőzés eszközei között?",
+      "options": [
+        {
+          "key": "A",
+          "text": "a hulladék szelektív gyűjtése és újrahasznosítása"
+        },
+        {
+          "key": "B",
+          "text": "szálszűrő a mosógépekben"
+        },
+        {
+          "key": "C",
+          "text": "a folyók vizének rendszeres klórozása"
+        },
+        {
+          "key": "D",
+          "text": "a szennyvíztisztítók fejlesztése"
+        }
+      ],
+      "answer": "C",
+      "category": "szovegertelmezes",
+      "explanation": "Helyes: C. A szöveg a kevesebb egyszer használatos műanyagot, a szelektív gyűjtést és újrahasznosítást, a mosógépek szálszűrőit, a tisztítók fejlesztését és a kozmetikai mikroműanyagok tilalmát sorolja fel – a klórozás nem szerepel, és nem is hatna a műanyagra.",
+      "wrongOptions": {
+        "A": "A szelektív gyűjtés és az újrahasznosítás a szövegben felsorolt megelőző eszköz.",
+        "B": "A mosógépbe szerelhető szálszűrőt a szöveg kifejezetten említi.",
+        "D": "A szennyvíztisztítók fejlesztése szerepel a megoldások között."
+      }
+    }
+  ],
+  "glossary": [],
+  "suggestedMinutes": 12
+}

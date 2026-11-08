@@ -1,0 +1,79 @@
+{
+  "schemaVersion": 1,
+  "id": "bio-sp-emelt-b-csaladfa-elemzes",
+  "subject": "biologia",
+  "revision": 1,
+  "level": "emelt",
+  "source": "generated",
+  "topic": "genetika",
+  "title": "Családfaelemzés: egy recesszív betegség öröklődése",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "speaking",
+  "type": "b-tetel",
+  "partNumber": 2,
+  "instructionsHu": "B) altétel – problémamegoldó feladat. Elemezd a forrásban leírt családfát! Állapítsd meg és indokold az öröklésmenetet, add meg a családtagok lehetséges genotípusát, számold ki a kérdezett valószínűségeket, és fogalmazd meg, mit tanácsolnál a családnak!",
+  "prompts": [
+    "Az öröklésmenet meghatározása: domináns vagy recesszív, autoszomális vagy X-hez kötött – indoklással.",
+    "A családtagok genotípusa (biztos és lehetséges genotípusok).",
+    "A kérdezett valószínűségek kiszámítása.",
+    "Genetikai tanácsadás: szűrés, a betegség példája."
+  ],
+  "followUpQuestions": [
+    "Hogyan változna a következtetés, ha a 3. személy fiú lenne?",
+    "Miért gyakoribbak a recesszív betegségek a rokonházasságokból született gyermekek között?"
+  ],
+  "usefulPhrases": [
+    {
+      "en": "autoszomális recesszív",
+      "hu": "a gén testi kromoszómán van, csak aa genotípusban jelenik meg"
+    },
+    {
+      "en": "hordozó",
+      "hu": "heterozigóta (Aa), egészséges, de továbbadhatja az allélt"
+    },
+    {
+      "en": "feltételes valószínűség",
+      "hu": "egészséges testvér esetén 2/3 a hordozás esélye"
+    },
+    {
+      "en": "genetikai tanácsadás",
+      "hu": "a kockázat felmérése és tájékoztatás családtervezés előtt"
+    }
+  ],
+  "sources": [
+    {
+      "title": "A családfa leírása",
+      "text": "I. nemzedék: 1. egészséges férfi és 2. egészséges nő. Gyermekeik (II. nemzedék): 3. beteg lány, 4. egészséges fiú, 5. egészséges lány. Az 5. lány egy vele nem rokon, egészséges férfival (6.) házasodott; gyermekeik (III. nemzedék): 7. egészséges fiú és 8. beteg fiú."
+    },
+    {
+      "title": "Kérdések",
+      "text": "a) Milyen öröklésmenetű a betegség? b) Mi az 1., 2., 3., 5. és 6. személy genotípusa? c) Mekkora a valószínűsége, hogy a 4. személy hordozó? d) Mekkora a valószínűsége, hogy az 5. és 6. személy következő gyermeke beteg lesz? e) Mekkora a valószínűsége, hogy a 7. személy hordozó?"
+    }
+  ],
+  "keyPoints": [
+    "Két egészséges szülőnek (1, 2) beteg gyermeke van, tehát az allél recesszív.",
+    "Nem lehet X-hez kötött recesszív: a beteg lány (3) apjának (1) betegnek kellene lennie, de egészséges – tehát autoszomális recesszív.",
+    "Genotípusok: 1 és 2: Aa (hordozók); 3: aa; 5 és 6: Aa, mert van beteg fiuk (8: aa).",
+    "A 4. személy egészséges, ezért AA vagy Aa; az egészségesek között az Aa aránya 2/3.",
+    "Az 5 × 6 (Aa × Aa) pár következő gyermeke 1/4 (25%) valószínűséggel beteg – a korábbi gyermekektől függetlenül.",
+    "A 7. személy egészséges, így hordozó volta 2/3 valószínűségű.",
+    "Példa: cisztás fibrózis (autoszomális recesszív); fenilketonúria – az újszülöttkori szűrés és a diéta megelőzi a tüneteket.",
+    "Genetikai tanácsadás: hordozóvizsgálat, a 4. és a 7. személy párválasztásánál is figyelembe veendő; rokonházasság növeli a kockázatot."
+  ],
+  "speakingSeconds": 720,
+  "prepSeconds": 900,
+  "sampleAnswer": {
+    "turns": [
+      {
+        "speaker": "candidate",
+        "text": "Az öröklésmenet meghatározását az 1. és 2. személlyel kezdem: mindketten egészségesek, mégis van egy beteg lányuk, a 3-as. Ebből következik, hogy a betegséget recesszív allél okozza, és mindkét szülő hordozó. Ki kell zárnom, hogy X-hez kötött recesszív lenne: akkor a beteg lánynak mindkét X kromoszómáján a beteg allél lenne, az egyiket az apjától kapta volna, tehát az apjának is betegnek kellene lennie. Az 1. személy viszont egészséges, így a betegség autoszomális recesszív öröklésmenetű.\nA genotípusok: az 1. és a 2. személy Aa, a beteg 3. személy aa. Az 5. és a 6. személy egészséges, de van egy beteg fiuk, a 8-as, aki aa – tehát mindketten adtak neki egy a allélt, vagyis mindketten Aa genotípusúak.\nA 4. személy egészséges fiú, két hordozó szülőtől. Az Aa × Aa keresztezés utódai 1 AA : 2 Aa : 1 aa arányban születnek, de mivel tudjuk, hogy ő nem aa, csak a három egészséges lehetőség közül választhatunk; ezek közül kettő Aa, így annak valószínűsége, hogy hordozó, 2/3.\nAz 5. és a 6. személy is Aa, ezért a következő gyermekük 1/4, azaz 25% valószínűséggel lesz beteg. Ez minden gyermekre külön érvényes, attól függetlenül, hogy már van egy beteg gyermekük. A 7. személy egészséges, ezért ugyanúgy, mint a 4-es esetében, 2/3 a valószínűsége, hogy hordozó.\nIlyen öröklésmenetű betegség például a cisztás fibrózis vagy a fenilketonúria. Ez utóbbit Magyarországon minden újszülöttnél szűrik, és fenilalaninszegény diétával a súlyos idegrendszeri károsodás megelőzhető. A családnak genetikai tanácsadást javasolnék: a 4. és a 7. személy hordozóvizsgálaton vehet részt, és ha leendő párjuk is hordozó, a gyermekük 25% eséllyel lehet beteg. A rokonházasság növeli annak esélyét, hogy két hordozó találkozzon, ezért kerülendő."
+      }
+    ],
+    "notes": [
+      "Elemzés: az öröklésmenetet két lépésben, kizárással igazolja (recesszív, mert egészséges szülőknek beteg gyermeke van; nem X-hez kötött, mert a beteg lány apja egészséges).",
+      "Következtetés, számítás: a genotípusokat a családfa adataiból vezeti le, és helyesen alkalmazza a feltételes valószínűséget (egészséges testvér: 2/3 hordozó, nem 1/2), valamint a független események elvét (minden gyermek 1/4).",
+      "Alkalmazás: konkrét betegséget és a magyar újszülöttkori szűrést hozza példának, a genetikai tanácsadást a számításokra építi."
+    ]
+  }
+}

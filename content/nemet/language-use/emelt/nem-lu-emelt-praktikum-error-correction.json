@@ -1,0 +1,170 @@
+{
+  "schemaVersion": 1,
+  "id": "nem-lu-emelt-praktikum-error-correction",
+  "subject": "nemet",
+  "revision": 1,
+  "level": "emelt",
+  "source": "generated",
+  "topic": "munka",
+  "title": "Vier Wochen in der Werbeagentur",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "language-use",
+  "type": "error-correction",
+  "instructions": "Lesen Sie den Text, in dem eine Schülerin über ihr Praktikum berichtet. In manchen Zeilen gibt es ein überflüssiges Wort. Schreiben Sie dieses Wort auf. Wenn eine Zeile richtig ist, setzen Sie ein Häkchen (✓). Am Anfang finden Sie ein Beispiel (0).",
+  "instructionsHu": "Olvasd el a szöveget soronként. Egyes sorokban van egy felesleges szó, amelynek nem kellene ott lennie: írd be ezt a szót. Ha a sor helyes, tegyél pipát (✓). A 0. a példa.",
+  "example": {
+    "id": "0",
+    "kind": "text",
+    "prompt": "Letzten Sommer habe ich mich ein vierwöchiges Praktikum in einer Werbeagentur",
+    "answer": [
+      "mich"
+    ],
+    "category": "reflexive-pronoun",
+    "explanation": "A felesleges szó: „mich”. A „ein Praktikum machen” nem visszaható szerkezet: Letzten Sommer habe ich ein vierwöchiges Praktikum … gemacht."
+  },
+  "items": [
+    {
+      "id": "1",
+      "kind": "text",
+      "prompt": "in Wien gemacht. Eigentlich wollte ich lieber bei einer Zeitung zu arbeiten,",
+      "answer": [
+        "zu"
+      ],
+      "category": "infinitive",
+      "explanation": "A felesleges szó: „zu”. Módbeli segédige (wollte) után a főnévi igenév „zu” nélkül áll: wollte ich lieber bei einer Zeitung arbeiten."
+    },
+    {
+      "id": "2",
+      "kind": "text",
+      "prompt": "aber dort gab es keine freien Plätze mehr. Am ersten Tag war ich sehr nervös,",
+      "answer": [
+        "✓"
+      ],
+      "category": "negation",
+      "explanation": "A sor helyes. „Es gibt + tárgyeset”: es gab keine freien Plätze mehr (már nem volt szabad hely) – a „kein” után többes számban a melléknév -en végződést kap."
+    },
+    {
+      "id": "3",
+      "kind": "text",
+      "prompt": "denn ich kannte keinen niemanden und hatte keine Ahnung, was mich erwartete.",
+      "answer": [
+        "keinen",
+        "niemanden"
+      ],
+      "category": "negation",
+      "explanation": "A felesleges szó: „keinen” (vagy „niemanden”). A németben nincs kettős tagadás: egyetlen tagadószó elég – ich kannte niemanden (vagy a beszélt nyelvben: ich kannte keinen) = senkit sem ismertem."
+    },
+    {
+      "id": "4",
+      "kind": "text",
+      "prompt": "Meine Betreuerin hieß Katharina und war nur drei Jahre älter als wie ich. Sie",
+      "answer": [
+        "wie"
+      ],
+      "category": "adjective-declension",
+      "explanation": "A felesleges szó: „wie”. Középfok után csak „als” áll: älter als ich. Az „als wie” a beszélt nyelvben előfordul, de helytelen."
+    },
+    {
+      "id": "5",
+      "kind": "text",
+      "prompt": "zeigte mir gleich am ersten Morgen, wie man mit dem Programm arbeitet, mit dem",
+      "answer": [
+        "✓"
+      ],
+      "category": "conjunction",
+      "explanation": "A sor helyes. A függő kérdésben (wie man … arbeitet) az ige a végén áll, a „mit dem” pedig vonatkozó mellékmondatot vezet be (mit dem Programm → mit dem)."
+    },
+    {
+      "id": "6",
+      "kind": "text",
+      "prompt": "die Agentur ihre Plakate entwirft. Nach der einer Woche durfte ich schon in einer",
+      "answer": [
+        "der"
+      ],
+      "category": "article-declension",
+      "explanation": "A felesleges szó: „der”. Egy főnév előtt csak egy névelő állhat: nach einer Woche (egy hét után). Határozott és határozatlan névelő nem állhat egymás mellett."
+    },
+    {
+      "id": "7",
+      "kind": "text",
+      "prompt": "Besprechung eigene Ideen vorstellen. Der Kunde war ein kleines Café, das es",
+      "answer": [
+        "es"
+      ],
+      "category": "conjunction",
+      "explanation": "A felesleges szó: „es”. A vonatkozó mellékmondat alanya maga a „das” (ein kleines Café, das neue Gäste gewinnen wollte), mellette nem kell még egy alany."
+    },
+    {
+      "id": "8",
+      "kind": "text",
+      "prompt": "neue Gäste gewinnen wollte. Mein Vorschlag, auf den Plakaten echte Stammgäste",
+      "answer": [
+        "✓"
+      ],
+      "category": "word-order",
+      "explanation": "A sor helyes. A mellékmondatban a ragozott módbeli segédige áll a végén (gewinnen wollte), a „Mein Vorschlag” után pedig zu-s főnévi igenév következik a következő sorban (… zu zeigen)."
+    },
+    {
+      "id": "9",
+      "kind": "text",
+      "prompt": "zu zeigen, gefiel ihnen so gut, dass er tatsächlich umgesetzt worden wurde.",
+      "answer": [
+        "worden"
+      ],
+      "category": "passive",
+      "explanation": "A felesleges szó: „worden”. Präteritum szenvedő szerkezetben: wurde + Partizip II → umgesetzt wurde. A „worden” csak összetett múlt időben kell (ist umgesetzt worden)."
+    },
+    {
+      "id": "10",
+      "kind": "text",
+      "prompt": "Darauf bin ich bis heute stolz darauf. Natürlich gab es auch langweilige Aufgaben:",
+      "answer": [
+        "darauf"
+      ],
+      "category": "verb-rection",
+      "explanation": "A felesleges szó: „darauf” (az egyik a kettő közül). A „stolz sein auf” vonzatát egyetlen „darauf” helyettesíti: Darauf bin ich stolz / Ich bin darauf stolz."
+    },
+    {
+      "id": "11",
+      "kind": "text",
+      "prompt": "Ich musste oft Kaffee kochen und Dateien sortieren. Trotzdem habe ich in vier",
+      "answer": [
+        "✓"
+      ],
+      "category": "word-order",
+      "explanation": "A sor helyes. A „musste” után a két főnévi igenév „zu” nélkül áll (kochen, sortieren), a „trotzdem” után pedig fordított szórend jön: Trotzdem habe ich …"
+    },
+    {
+      "id": "12",
+      "kind": "text",
+      "prompt": "Wochen mehr gelernt als in einem ganzen Schuljahr. Vor allem habe ich dass gemerkt,",
+      "answer": [
+        "dass"
+      ],
+      "category": "conjunction",
+      "explanation": "A felesleges szó: „dass”. A „gemerkt” után a következő sorban függő kérdés jön (wie wichtig es ist …), amelyet a „wie” vezet be – a „dass” itt felesleges, és a főmondat közepén sem állhat."
+    },
+    {
+      "id": "13",
+      "kind": "text",
+      "prompt": "wie wichtig es ist, im Team zu arbeiten und sich mit Kritik umzugehen.",
+      "answer": [
+        "sich"
+      ],
+      "category": "reflexive-pronoun",
+      "explanation": "A felesleges szó: „sich”. Az „umgehen mit” (bánik valamivel) nem visszaható ige: mit Kritik umzugehen. (Visszaható a „sich auseinandersetzen mit”.)"
+    },
+    {
+      "id": "14",
+      "kind": "text",
+      "prompt": "Ob ich später wirklich in der Werbung arbeiten möchte, weiß ich noch nicht.",
+      "answer": [
+        "✓"
+      ],
+      "category": "word-order",
+      "explanation": "A sor helyes. Az „ob” mellékmondatban az ige a végén áll (arbeiten möchte), és mivel a mellékmondat áll elöl, a főmondat igével kezdődik: weiß ich noch nicht."
+    }
+  ],
+  "suggestedMinutes": 12
+}

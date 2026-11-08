@@ -1,0 +1,150 @@
+{
+  "meta": {
+    "verifiedAt": "2026-11-05",
+    "sources": [
+      {
+        "title": "Oktatási Hivatal: Magyar nyelv és irodalom – részletes érettségi vizsgakövetelmény és vizsgaleírás (2024-től érvényes, Nat2020)",
+        "url": "https://www.oktatas.hu/pub_bin/dload/kozoktatas/erettsegi/vizsgakovetelmenyek2024/magyar_nyelv_es_irodalom_2024_e.pdf"
+      },
+      {
+        "title": "Eduline (2024. 05. 06.): Kezdődik a magyarérettségi – változások, pontozás, időkeret (240 perc = 90 + 150; szövegértés 40 + irodalmi feladatlap 20; II. feladatlap 40; helyesírás −8, íráskép −2)",
+        "url": "https://eduline.hu/erettsegi-felveteli/20240506_kezdodik-a-magyarerettsegi-valtozasok-pontozas-idokeret-minden-fontos-tudnivalo"
+      },
+      {
+        "title": "Eduline (2025. 04. 08.): Milyen részekből áll és hogyan pontozzák a középszintű magyarérettségit? (tartalmi minőség 30 + nyelvi minőség 10)",
+        "url": "https://eduline.hu/erettsegi_felveteli/20250408_Milyen_reszekbol_all_es_hogyan_pontozzak_a_magyarerettsegit"
+      },
+      {
+        "title": "Eduline (2025. 11. 06.): Így pontozzák a magyar nyelv és irodalom szóbelit (irodalom 25 + nyelvtan 15 + nyelvi minőség 10)",
+        "url": "https://eduline.hu/erettsegi-felveteli/20251106_oszi-erettsegi-2025-magyar-nyelv-es-irodalom-pontozas-ertekelesi-kriteriumok"
+      },
+      {
+        "title": "Eduline (2024. 04. 11.): Vizsgarészek, pontozás, segédeszközök – minden a 2024-es magyarérettségiről (emelt: szövegértési és nyelvi-irodalmi műveltségi feladatsor 40, műértelmező 40, reflektáló 20)",
+        "url": "https://eduline.hu/erettsegi-felveteli/20240411_Minden-amit-a-2024es-magyarerettsegirol-tudnotok-kell"
+      },
+      {
+        "title": "Eduline (2026. 04. 30.): Ady, Arany vagy Babits? – a 2026-os középszintű magyarérettségi kötelező szerzői",
+        "url": "https://eduline.hu/erettsegi-felveteli/20260430_magyar-nyelv-es-irodalom-erettsegi-2026-kozepszint-irok-koltok-lista"
+      },
+      {
+        "title": "ELTE Anyanyelv-pedagógia (2024): tanulmány a 2024-es magyar javítási-értékelési útmutatóról (szerkezet 5 + nyelvi igényesség 5)",
+        "url": "https://ojs.elte.hu/anyanyelv-pedagogia/article/download/11840/10505/32588"
+      },
+      {
+        "title": "Eduline (2026. 03. 14.): Érettségi 2026 – pontozási és osztályozási szabályok (közép 80/60/40/25 %, emelt 60/47/33/25 %, vizsgarészenként 12 %)",
+        "url": "https://eduline.hu/erettsegi-felveteli/20260314_erettsegi-2026-pontozas-osztalyozas"
+      }
+    ],
+    "notes": [
+      "Az ellenőrzés hírportál-cikkek (Eduline, Telex) és a hivatalos dokumentumok keresőben indexelt szövege alapján történt; az OH oldalát a futtató környezet hálózata nem engedte közvetlenül megnyitni – a hivatalos vizsgaleírással érdemes összevetni."
+    ]
+  },
+  "groups": [
+    {
+      "id": "szovegertes",
+      "name": "Szövegértés"
+    },
+    {
+      "id": "szovegalkotas",
+      "name": "Szövegalkotás"
+    },
+    {
+      "id": "nyelvhelyesseg",
+      "name": "Nyelvhelyesség, helyesírás"
+    },
+    {
+      "id": "irodalom",
+      "name": "Irodalmi ismeretek"
+    },
+    {
+      "id": "nyelvtan",
+      "name": "Nyelvtani ismeretek"
+    }
+  ],
+  "categories": [
+    {
+      "id": "informacio-visszakereses",
+      "name": "Információ visszakeresése",
+      "group": "szovegertes",
+      "description": "A szövegben lévő adat, állítás pontos megtalálása és visszaadása."
+    },
+    {
+      "id": "lenyegkiemeles",
+      "name": "Lényegkiemelés, tömörítés",
+      "group": "szovegertes",
+      "description": "A fő gondolat, a bekezdés tételmondatának felismerése, a lényeg tömör megfogalmazása."
+    },
+    {
+      "id": "kovetkeztetes",
+      "name": "Következtetés, értelmezés",
+      "group": "szovegertes",
+      "description": "A szövegből levonható következtetés, a szerzői szándék, a szóhasználat értelmezése."
+    },
+    {
+      "id": "szovegszerkezet",
+      "name": "Szövegszerkezet, szövegtípus felismerése",
+      "group": "szovegertes",
+      "description": "A szöveg felépítése, a részek viszonya, műfaj és kommunikációs cél."
+    },
+    {
+      "id": "feladatmegertes",
+      "name": "Feladatmegértés, témától eltérés",
+      "group": "szovegalkotas",
+      "description": "Nem a feladat kérdésére válaszol, a szempontokat nem követi, tartalomismertetésbe csúszik."
+    },
+    {
+      "id": "kifejtes-ervek",
+      "name": "Kifejtés mélysége, érvelés",
+      "group": "szovegalkotas",
+      "description": "Felszínes vagy indoklás nélküli állítások, hiányzó példák, ismétlés."
+    },
+    {
+      "id": "szerkesztettseg",
+      "name": "Szerkesztettség, bekezdések, logika",
+      "group": "szovegalkotas",
+      "description": "Bevezetés–kifejtés–befejezés hiánya, aránytalanság, a gondolatmenet nem követhető."
+    },
+    {
+      "id": "stilus-hangnem",
+      "name": "Stílus, hangnem, műfaji követelmények",
+      "group": "szovegalkotas",
+      "description": "A műfajhoz nem illő stílus, szóismétlés, pontatlan szóhasználat, köznyelvi fordulatok."
+    },
+    {
+      "id": "helyesiras",
+      "name": "Helyesírás, központozás",
+      "group": "nyelvhelyesseg",
+      "description": "Egybe- és különírás, j/ly, hosszú–rövid magánhangzók, tulajdonnevek, vesszőhasználat."
+    },
+    {
+      "id": "mondatszerkesztes",
+      "name": "Mondatszerkesztés, nyelvhelyesség",
+      "group": "nyelvhelyesseg",
+      "description": "Egyeztetési hibák, hiányos vagy túlbonyolított mondatok, vonzatok, kötőszók."
+    },
+    {
+      "id": "muertelmezes-eszkozok",
+      "name": "Műértelmezés, poétikai eszközök",
+      "group": "irodalom",
+      "description": "Költői képek, alakzatok, verselés, szerkezet, elbeszélői nézőpont felismerése és funkciójuk."
+    },
+    {
+      "id": "irodalomtorteneti-kontextus",
+      "name": "Irodalomtörténeti kontextus, szerzők és művek",
+      "group": "irodalom",
+      "description": "Korszak, stílusirányzat, életrajzi és műveltségi adatok, szerző–mű–szereplő tévesztése, memoriter."
+    },
+    {
+      "id": "nyelvtani-fogalom",
+      "name": "Nyelvtani fogalmak, nyelvi elemzés",
+      "group": "nyelvtan",
+      "description": "Szófaj, mondatrész, szóelemek, hangtani jelenségek, jelentésviszonyok felismerésének hibái."
+    },
+    {
+      "id": "nyelvi-jelenseg-kifejtes",
+      "name": "Nyelvi jelenségek kifejtése, példák",
+      "group": "nyelvtan",
+      "description": "Kommunikáció, nyelvtörténet, nyelvváltozatok, stílusrétegek, retorika pontatlan kifejtése, példák hiánya."
+    }
+  ]
+}

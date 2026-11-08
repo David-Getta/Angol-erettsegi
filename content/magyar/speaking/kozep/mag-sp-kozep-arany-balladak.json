@@ -1,0 +1,75 @@
+{
+  "schemaVersion": 1,
+  "id": "mag-sp-kozep-arany-balladak",
+  "subject": "magyar",
+  "revision": 1,
+  "level": "kozep",
+  "source": "generated",
+  "topic": "kotelezo-szerzok",
+  "title": "Arany János balladái",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "speaking",
+  "type": "irodalom-tetel",
+  "partNumber": 1,
+  "instructionsHu": "Mutassa be Arany János balladaköltészetét! Határozza meg a ballada műfaját, ismertesse Arany balladáinak fő csoportjait, és értelmezze A walesi bárdokat a megadott kezdőversszak alapján!",
+  "prompts": [
+    "A ballada műfaji sajátosságai (a líra, az epika és a dráma határán)",
+    "Arany balladáinak csoportjai: a nagykőrösi balladák (történelmi és lélektani) és az Őszikék balladái",
+    "A walesi bárdok keletkezése, szerkezete és jelentése",
+    "A balladai eszközök: kihagyásos szerkesztés, párbeszéd, sejtetés, refrén"
+  ],
+  "sources": [
+    {
+      "title": "Arany János: A walesi bárdok (első versszak, 1857)",
+      "text": "Edward király, angol király\nLéptet fakó lován:\nHadd látom, úgymond, mennyit ér\nA velszi tartomány."
+    }
+  ],
+  "keyPoints": [
+    "A ballada a líra, az epika és a dráma határán álló műfaj; Gyulai Pál meghatározása szerint „tragédia dalban elbeszélve”.",
+    "Jellemzői: tragikus történet sűrítve, kihagyásos (szaggatott) szerkesztés, párbeszédes jelenetek, sejtetés, gyakran refrén.",
+    "Arany balladáinak nagy része a nagykőrösi években (1851–1860) született: történelmi (Szondi két apródja, A walesi bárdok) és lélektani balladák (Ágnes asszony).",
+    "A késői balladák az Őszikék időszakában (1877) keletkeztek (pl. Tengerihántás, Híd-avatás).",
+    "A walesi bárdok (1857) a zsarnokkal szembeni néma ellenállás verse; keletkezése Ferenc József 1857-es magyarországi látogatásához kapcsolódik.",
+    "Szerkezete: Edward Walesben, a montgomeryi lakoma a három bárd énekével (fokozás), majd a király londoni gyötrődése.",
+    "A bárdok inkább vállalják a máglyát, mint hogy a hódítót dicsőítsék – a költői hivatás erkölcsi tartása.",
+    "A kezdő versszak jelentése: a hódító a tartományt csak értékként, zsákmányként szemléli (mennyit ér)."
+  ],
+  "speakingSeconds": 600,
+  "prepSeconds": 1200,
+  "usefulPhrases": [
+    {
+      "en": "„tragédia dalban elbeszélve”",
+      "hu": "Gyulai Pál balladadefiníciója – érdemes idézni a műfaj meghatározásánál"
+    },
+    {
+      "en": "kihagyásos (szaggatott) szerkesztés",
+      "hu": "a ballada nem mond el mindent, az olvasónak kell kiegészítenie a hiányzó részeket"
+    },
+    {
+      "en": "történelmi ballada – lélektani ballada",
+      "hu": "Arany nagykőrösi balladáinak két fő típusa"
+    },
+    {
+      "en": "allegorikus olvasat",
+      "hu": "a történet egy másik (itt: a korabeli magyar) helyzetre is vonatkoztatható"
+    },
+    {
+      "en": "fokozás",
+      "hu": "a három bárd éneke egyre nyíltabban vádol"
+    }
+  ],
+  "sampleAnswer": {
+    "turns": [
+      {
+        "speaker": "candidate",
+        "text": "A ballada a líra, az epika és a dráma határán álló műfaj. Gyulai Pál találó meghatározása szerint „tragédia dalban elbeszélve”: tragikus történetet mond el, de dalszerű, zenei formában, sűrítve. Jellemző rá a kihagyásos, szaggatott szerkesztés, a párbeszédes jelenetek és a sejtetés: a ballada nem mond el mindent, az olvasónak kell kiegészítenie a hiányzó részeket.\n\nArany János a magyar ballada legnagyobb mestere. Balladáinak nagy része a nagykőrösi években, 1851 és 1860 között született, a szabadságharc bukása utáni elnyomás idején. Ezek két nagy csoportba sorolhatók: a történelmi balladák, mint a Szondi két apródja vagy A walesi bárdok, és a lélektani balladák, mint az Ágnes asszony, amely a bűn és a megőrülés lélektanát ábrázolja. Késői balladái, például a Tengerihántás és a Híd-avatás, az Őszikék időszakában, 1877-ben keletkeztek.\n\nA walesi bárdokat Arany 1857-ben írta, amikor Ferenc József Magyarországra látogatott, és a költőt üdvözlő vers írására kérték fel. Arany nem a császárt köszöntötte, hanem egy középkori angol történetet dolgozott fel, amely allegorikusan a magyar helyzetre is vonatkoztatható. A kezdő versszak rögtön jellemzi a hódítót: Edward király „léptet fakó lován”, és azt akarja látni, „mennyit ér / A velszi tartomány”. Számára a meghódított ország csak érték, zsákmány.\n\nA ballada középpontjában a montgomeryi lakoma áll, ahol a király azt követeli, hogy a walesi bárdok dicsőítsék őt. A három bárd azonban egymás után a halottakról, a szenvedésről és a zsarnok bűneiről énekel, és énekük bárdról bárdra egyre nyíltabban vádolja a zsarnokot – ez a fokozás a ballada drámai gerince. Edward máglyára küldi a bárdokat, de a mű végén Londonban sem talál nyugalmat, mert fülében tovább szól a mártírhalált halt bárdok dala. A ballada így a költői hivatás erkölcsi tartásáról és a zsarnokkal szembeni néma ellenállásról szól."
+      }
+    ],
+    "notes": [
+      "Tartalom: a felelet a műfaj meghatározásával kezd, majd az életmű tagolásával (nagykőrösi és késői balladák) ad keretet, végül egy művet részletesen értelmez a keletkezés, a szerkezet és a jelentés szempontjából.",
+      "Forráshasználat: a kezdő versszakból kiemelt „mennyit ér” kifejezést értelmezi (a hódító szemlélete), nem csak elismétli a szöveget.",
+      "Nyelvi minőség: világos tagolás, pontos műfaji szakszavak (kihagyásos szerkesztés, allegória, fokozás), a cselekmény csak annyiban szerepel, amennyiben az értelmezést szolgálja."
+    ]
+  }
+}

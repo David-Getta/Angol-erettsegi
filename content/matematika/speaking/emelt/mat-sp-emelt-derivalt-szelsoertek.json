@@ -1,0 +1,91 @@
+{
+  "schemaVersion": 1,
+  "id": "mat-sp-emelt-derivalt-szelsoertek",
+  "subject": "matematika",
+  "revision": 1,
+  "level": "emelt",
+  "source": "generated",
+  "topic": "fuggvenyek",
+  "title": "Tétel: a differenciálszámítás és alkalmazása szélsőérték-feladatokban",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "speaking",
+  "type": "tetel",
+  "partNumber": 1,
+  "instructionsHu": "Emelt szintű szóbeli tétel (30 perc felkészülés, kb. 20 perc felelet). Fejtsd ki a tételcímet önállóan, logikus felépítésben: mondd ki pontosan a kért definíciót, mondd ki a tételt a feltételekkel és bizonyítsd be, oldd meg és magyarázd el a feladatot, végül mutass alkalmazásokat (más témakörök, gyakorlati példák).",
+  "prompts": [
+    "Definíció: a differenciahányados és a derivált (differenciálhányados) definíciója",
+    "Tétel és bizonyítás: ha f deriválható az x₀ belső pontban és ott helyi szélsőértéke van, akkor f′(x₀) = 0",
+    "A tétel felépítése: a derivált geometriai jelentése, deriválási szabályok, monotonitás és a derivált előjele, második derivált, a tétel megfordításának hamissága",
+    "Feladat: kartonlapból hajtogatott doboz maximális térfogata",
+    "Alkalmazások: fizika, közgazdaságtan, optimalizálás, érintő egyenlete"
+  ],
+  "followUpQuestions": [
+    "Miért kell külön vizsgálni a derivált előjelét, ha már tudjuk, hogy V′(5) = 0?"
+  ],
+  "usefulPhrases": [
+    {
+      "en": "f′(x₀) = lim(h → 0) (f(x₀ + h) − f(x₀))/h",
+      "hu": "A derivált definíciója (a differenciahányados határértéke)."
+    },
+    {
+      "en": "y − f(x₀) = f′(x₀)·(x − x₀)",
+      "hu": "Az érintő egyenlete az x₀ pontban."
+    },
+    {
+      "en": "(f·g)′ = f′·g + f·g′",
+      "hu": "Szorzat deriválási szabálya."
+    },
+    {
+      "en": "(xⁿ)′ = n·xⁿ⁻¹",
+      "hu": "Hatványfüggvény deriváltja."
+    },
+    {
+      "en": "f′ előjelet vált x₀-ban → helyi szélsőérték",
+      "hu": "Elégséges feltétel: + → − maximum, − → + minimum."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Tételcím",
+      "text": "A differenciálszámítás. A derivált fogalma, geometriai jelentése. Függvényvizsgálat, szélsőérték-feladatok."
+    },
+    {
+      "title": "Feladat",
+      "text": "Egy 30 cm × 30 cm-es négyzet alakú kartonlap négy sarkából egybevágó, x cm oldalú négyzeteket vágunk ki, és a maradékból felül nyitott, téglatest alakú dobozt hajtogatunk. Mekkora x esetén lesz a doboz térfogata maximális, és mekkora ez a térfogat?"
+    }
+  ],
+  "keyPoints": [
+    "Definíció: f′(x₀) = lim(h → 0) (f(x₀ + h) − f(x₀))/h, ha ez a határérték létezik és véges.",
+    "Geometriai jelentés: f′(x₀) a grafikon (x₀; f(x₀)) pontbeli érintőjének meredeksége.",
+    "Tétel: deriválható függvény belső pontbeli helyi szélsőértékhelyén f′(x₀) = 0 – bizonyítás a jobb és bal oldali differenciahányadosok előjelével.",
+    "A megfordítás nem igaz: f(x) = x³-nél f′(0) = 0, de 0-ban nincs szélsőérték; elegendő feltétel a derivált előjelváltása.",
+    "Monotonitás: ha egy intervallumon f′ > 0, f szigorúan nő; ha f′ < 0, szigorúan csökken.",
+    "Feladat: V(x) = x(30 − 2x)², 0 < x < 15; V′(x) = (30 − 2x)(30 − 6x) = 0 → x = 5 (x = 15 nincs az értelmezési tartományban); V′ előjele + → −, tehát maximum.",
+    "V(5) = 5·20² = 2000 cm³.",
+    "Alkalmazások: sebesség és gyorsulás mint az út deriváltjai, határköltség, optimális méretezés, érintő egyenlete."
+  ],
+  "speakingSeconds": 1200,
+  "prepSeconds": 1800,
+  "sampleAnswer": {
+    "turns": [
+      {
+        "speaker": "candidate",
+        "text": "A tétel a függvények deriváltjáról és alkalmazásáról szól. Definíció: legyen f egy x₀ pont környezetében értelmezett függvény. Az (f(x₀ + h) − f(x₀))/h hányadost differenciahányadosnak nevezzük; ez a grafikon két pontján átmenő szelő meredeksége. Ha ennek a h → 0 esetén létezik véges határértéke, akkor azt mondjuk, hogy f deriválható x₀-ban, és ezt a határértéket nevezzük a függvény x₀ pontbeli deriváltjának vagy differenciálhányadosának: f′(x₀). Geometriailag f′(x₀) a grafikon (x₀; f(x₀)) pontjához húzott érintő meredeksége, így az érintő egyenlete y − f(x₀) = f′(x₀)·(x − x₀).\n\nA deriválási szabályok közül a legfontosabbak: konstans deriváltja 0, (xⁿ)′ = n·xⁿ⁻¹, összeg deriváltja a deriváltak összege, a szorzaté (f·g)′ = f′·g + f·g′. Ha egy intervallumon f′(x) > 0, akkor f ott szigorúan monoton nő, ha f′(x) < 0, akkor szigorúan csökken.\n\nTétel: ha f deriválható az értelmezési tartományának egy x₀ belső pontjában, és ott helyi szélsőértéke van, akkor f′(x₀) = 0. Bizonyítás helyi maximumra: ekkor x₀ egy környezetében f(x₀ + h) ≤ f(x₀), vagyis a számláló f(x₀ + h) − f(x₀) ≤ 0. Ha h > 0, a differenciahányados ≤ 0, ezért jobb oldali határértéke is ≤ 0. Ha h < 0, a differenciahányados ≥ 0, ezért bal oldali határértéke ≥ 0. Mivel f deriválható x₀-ban, a két egyoldali határérték egyenlő, és mindkettő f′(x₀). Egy szám csak akkor lehet egyszerre ≤ 0 és ≥ 0, ha 0, tehát f′(x₀) = 0. Minimumra ugyanígy bizonyítunk, fordított egyenlőtlenségekkel. A tétel megfordítása nem igaz: az f(x) = x³ függvénynél f′(0) = 0, de a függvény szigorúan nő, 0-ban nincs szélsőértéke. Ezért a szélsőértékhez azt is vizsgálni kell, hogy f′ előjelet vált-e: pozitívból negatívba váltásnál maximum, negatívból pozitívba váltásnál minimum van. Ezt eldönthetjük a második deriválttal is: ha f′(x₀) = 0 és f″(x₀) < 0, akkor maximum van.\n\nA feladat: ha a sarkokból x cm oldalú négyzeteket vágunk ki, a doboz alapja (30 − 2x) cm oldalú négyzet, magassága x cm, így a térfogata V(x) = x·(30 − 2x)². A feladat értelmében 0 < x < 15. Deriválva a szorzat szabálya és az összetett függvény deriválási szabálya szerint V′(x) = (30 − 2x)² + x·2·(30 − 2x)·(−2) = (30 − 2x)·(30 − 2x − 4x) = (30 − 2x)(30 − 6x). Ez 0, ha x = 15 vagy x = 5; az x = 15 nincs az értelmezési tartományban. Ha 0 < x < 5, mindkét tényező pozitív, V′ > 0, a térfogat nő; ha 5 < x < 15, az első tényező pozitív, a második negatív, V′ < 0, a térfogat csökken. Tehát x = 5-nél a térfogatnak maximuma van: V(5) = 5·20² = 2000 cm³. Ellenőrzés: x = 4-nél V = 4·22² = 1936, x = 6-nál V = 6·18² = 1944, mindkettő kisebb. A térfogat akkor maximális, ha 5 cm oldalú négyzeteket vágunk ki, és ekkor 2000 cm³.\n\nAlkalmazások: a fizikában a pillanatnyi sebesség az út–idő függvény deriváltja, a gyorsulás a sebességé. A közgazdaságtanban a határköltség a költségfüggvény deriváltja. A mérnöki gyakorlatban optimalizálásra használjuk: minimális anyagfelhasználású doboz, legnagyobb területű kerítéssel bekerített telek. A matematikán belül a derivált az érintő egyenletéhez, a függvényvizsgálathoz és az integrálszámításhoz kapcsolódik, hiszen a Newton–Leibniz-tétel szerint a határozott integrált egy primitív függvény, azaz egy olyan függvény segítségével számoljuk, amelynek deriváltja az eredeti függvény."
+      },
+      {
+        "speaker": "examiner",
+        "text": "Miért kell külön vizsgálni a derivált előjelét, ha már tudjuk, hogy V′(5) = 0?"
+      },
+      {
+        "speaker": "candidate",
+        "text": "Mert a tétel csak szükséges feltétel: a derivált nullahelyén lehet maximum, minimum vagy egyik sem, mint az x³-nél 0-ban. Az előjelváltás (itt + → −) bizonyítja, hogy x = 5-ben valóban maximum van."
+      }
+    ],
+    "notes": [
+      "Definíció és tétel: a derivált definíciója a feltétellel (létezik és véges a határérték) pontos, a tétel kimondásában szerepel a „deriválható” és a „belső pont” feltétel, a bizonyítás a két egyoldali határérték előjeléből teljes.",
+      "Felépítés: a geometriai jelentés, a deriválási szabályok, a monotonitás kapcsolata és a tétel megfordításának hamissága (x³ ellenpélda) is szerepel – ez emelt szinten elvárt.",
+      "Feladat és alkalmazás: az értelmezési tartományt kimondja és felhasználja (az x = 15 kiesik), az előjelvizsgálattal igazolja a maximumot, számszerű ellenőrzést is ad; az alkalmazások a fizikától az integrálszámításig terjednek."
+    ]
+  }
+}

@@ -1,0 +1,282 @@
+{
+  "schemaVersion": 1,
+  "id": "fiz-gr-indoklas-felepites",
+  "subject": "fizika",
+  "revision": 1,
+  "level": "kozep",
+  "source": "generated",
+  "topic": "nyelvtan",
+  "title": "Indoklás, a megoldás és a felelet felépítése",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "grammar",
+  "type": "lesson",
+  "category": "indoklas-felepites",
+  "summaryHu": "Az értékelésben (az app rubrikája szerint) külön pont jár a gondolatmenetért és a felépítésért: a számításos feladatban az „indoklás” (közép 4, emelt 3 pont), az emelt témakifejtésben a „kifejtés módja” (5 pont), a szóbelin a „felépítés” (5 pont). Indoklás nélküli puszta végeredmény még helyes szám esetén is pontot veszít.",
+  "rules": [
+    {
+      "title": "A számításos megoldás szerkezete",
+      "explanation": "1) Adatok jelöléssel, egységgel (SI-re váltva). 2) A felhasznált törvény megnevezése és a képlet általános alakban. 3) Átrendezés, behelyettesítés egységekkel. 4) Eredmény, ésszerű kerekítéssel. 5) Szöveges válasz a kérdésre, ahol lehet, ellenőrzés.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "„Newton II. törvénye szerint F = m·a, így F = 1200 kg · 5 m/s² = 6000 N. A fékezőerő 6 kN.”",
+          "hu": "Törvény + képlet + behelyettesítés + válasz egy mondatban."
+        },
+        {
+          "en": "„Ellenőrzés: ½·m·v² = 240 kJ = F·s, egyezik.”",
+          "hu": "Az ellenőrzés a forma-szempont része."
+        }
+      ]
+    },
+    {
+      "title": "Indoklás: miért ez a képlet?",
+      "explanation": "Minden nem nyilvánvaló lépésnél írd le, miért teheted meg: „mivel nincs súrlódás, a mechanikai energia megmarad”, „a két kocsi összekapcsolódik, ezért a lendület megmarad, a mozgási energia nem”, „a tetőn a pályától való elválás határesetében N = 0”.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "„A gáz mennyisége nem változik, ezért alkalmazható az egyesített gáztörvény.”",
+          "hu": "A feltétel kimondása (állandó anyagmennyiség) indokolja a képlet választását."
+        },
+        {
+          "en": "„A hatásfok miatt a felvett energia nagyobb a hasznos hőnél: E = Q/η.”",
+          "hu": "Ez a lépés dönti el, hogy osztunk vagy szorzunk a hatásfokkal."
+        }
+      ]
+    },
+    {
+      "title": "A szóbeli felelet felépítése",
+      "explanation": "Bevezetés (a tétel címe, mit fogsz bemutatni) → fogalmak definícióval, egységgel → törvények feltételekkel, képlettel → példák, alkalmazások → kísérlet: eszközök, menet, tapasztalat, magyarázat, hibák → rövid összefoglalás. A vizsgáztató kérdéseire röviden, de indokolva válaszolj.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "„A tételem a hőtágulás. Először a jelenség okát, majd a szilárd testek, folyadékok és gázok hőtágulását mutatom be, végül a kísérletet.”",
+          "hu": "A bevezető mondat szerkezetet ad."
+        },
+        {
+          "en": "„A kísérlet azt mutatja, hogy…”",
+          "hu": "A következtetés kimondása a kísérleti pontok egyik kulcsa."
+        }
+      ]
+    },
+    {
+      "title": "Szaknyelv és pontos megfogalmazás",
+      "explanation": "Használd a pontos szakkifejezéseket (eredő erő, centripetális gyorsulás, belső energia, indukált feszültség), és kerüld a pontatlan hétköznapi fordulatokat („az áram elfogy”, „hőt tartalmaz”, „lendítő erő”). Egy-egy mondat egy gondolatot tartalmazzon.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "„A test lendülete elfogy.” → „A súrlódás munkája csökkenti a test mozgási energiáját.”",
+          "hu": "A „lendület elfogy” pontatlan: a súrlódás munkája alakítja át az energiát."
+        },
+        {
+          "en": "„A feszültség átfolyik.” → „A fogyasztón áram folyik át, a két vége között feszültség van.”",
+          "hu": "Az áram folyik át a fogyasztón, a feszültség két pont között értelmezett."
+        }
+      ]
+    },
+    {
+      "title": "A témakifejtés (emelt II. rész)",
+      "explanation": "Kb. 1–1,5 oldalas összefüggő szöveg, amely minden megadott szempontot kifejt. Szerkezet: rövid bevezetés → szempontonként egy-egy bekezdés (fogalom, törvény képlettel, kísérlet vagy példa) → összefoglalás. A tartalom 18, a kifejtés módja (logika, összefüggő szöveg, szaknyelv, helyesírás) 5 pontot ér; felsorolás vagy vázlat nem ér teljes pontot.",
+      "emeltOnly": true,
+      "examples": [
+        {
+          "en": "„Ebből az következik, hogy…”, „Ezzel szemben…”, „Összefoglalva…”",
+          "hu": "Kapcsolóelemek a logikus szövegért."
+        },
+        {
+          "en": "Szempont kihagyása → a tartalmi pontok arányosan csökkennek.",
+          "hu": "Írás előtt pipáld ki a szempontokat a vázlatodban."
+        }
+      ]
+    }
+  ],
+  "commonMistakes": [
+    {
+      "wrong": "F = 6000 N",
+      "right": "Newton II. törvénye szerint F = m·a = 1200 kg · 5 m/s² = 6000 N. A fékezőerő 6000 N.",
+      "why": "A puszta végeredmény nem mutatja a gondolatmenetet; a képlet és a törvény megnevezése az indoklás része."
+    },
+    {
+      "wrong": "A szóbelin a kísérletet a tétel elején, a fogalmak előtt mutatom be, a magyarázat nélkül.",
+      "right": "Előbb a fogalmakat és a törvényt fejtem ki, utána a kísérletet, amelyet a törvény alapján értelmezek.",
+      "why": "A kísérlet értelmezéséhez a fogalmak és törvények kellenek; logikátlan sorrend a felépítési pontot rontja."
+    },
+    {
+      "wrong": "A témakifejtést pontokba szedett vázlatként írom meg.",
+      "right": "Összefüggő, bekezdésekre tagolt szöveget írok, kapcsolóelemekkel.",
+      "why": "A kifejtés módja szempont összefüggő szöveget vár; a vázlat a tartalmi pontokat is csökkentheti, mert hiányoznak a magyarázatok."
+    },
+    {
+      "wrong": "Mivel az energia megmarad, m·g·h = ½·m·v² (súrlódásos lejtőn).",
+      "right": "Mivel súrlódás van, m·g·h = ½·m·v² + F_s·s – a mechanikai energia egy része hővé alakul.",
+      "why": "Az indoklásnak a konkrét helyzet feltételeire kell épülnie."
+    }
+  ],
+  "examTips": [
+    "Számításos feladatnál minden részkérdés végén legyen egy szöveges válasz mondat mértékegységgel – a „forma” szempont pontja ezen múlik.",
+    "Szóbelin a felkészülési 30 percben írj vázlatot a felelet szerkezetéről (definíciók, törvények, példák, kísérlet), és ehhez tartsd magad.",
+    "Emelt témakifejtésnél írás előtt 5 perc vázlat: minden szemponthoz 2–3 kulcsgondolat, egy képlet, egy példa."
+  ],
+  "practice": [
+    {
+      "id": "1",
+      "kind": "choice",
+      "prompt": "Melyik megoldás kapja a legtöbb pontot az indoklás szempontjára?",
+      "options": [
+        {
+          "key": "A",
+          "text": "„a = 5 m/s²”"
+        },
+        {
+          "key": "B",
+          "text": "„a = 400/80 = 5”"
+        },
+        {
+          "key": "C",
+          "text": "„Egyenletesen lassuló mozgásnál v² − v₀² = 2·a·s, és v = 0, így a = v₀²/(2s) = (20 m/s)²/(2 · 40 m) = 5 m/s².”"
+        },
+        {
+          "key": "D",
+          "text": "„A lassulás nagy, kb. 5.”"
+        }
+      ],
+      "answer": "C",
+      "category": "indoklas-felepites",
+      "explanation": "Helyes: C. Ez a megoldás megnevezi a mozgás típusát, felírja az összefüggést, kimondja a felhasznált feltételt (v = 0), és egységekkel helyettesít be – így a gondolatmenet követhető.",
+      "wrongOptions": {
+        "A": "Csak a végeredmény szerepel, a gondolatmenet nem látszik.",
+        "B": "Látszik egy számítás, de nem derül ki, honnan jön a 400 és a 80, és hiányzik a mértékegység.",
+        "D": "Becslés, mértékegység és indoklás nélkül."
+      }
+    },
+    {
+      "id": "2",
+      "kind": "choice",
+      "prompt": "Mi legyen a szóbeli felelet logikus sorrendje?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Kísérlet → törvények → definíciók."
+        },
+        {
+          "key": "B",
+          "text": "Bevezetés → fogalmak és törvények → példák, alkalmazások → kísérlet és értelmezése → összefoglalás."
+        },
+        {
+          "key": "C",
+          "text": "Csak a kísérlet bemutatása, mert az ér a legtöbb pontot."
+        },
+        {
+          "key": "D",
+          "text": "A tétel szempontjai véletlenszerű sorrendben."
+        }
+      ],
+      "answer": "B",
+      "category": "indoklas-felepites",
+      "explanation": "Helyes: B. A fogalmak és törvények adják a kísérlet értelmezésének alapját, ezért előbb ezeket fejtjük ki; a bevezetés és az összefoglalás keretet ad – ez a felépítés pontjait hozza.",
+      "wrongOptions": {
+        "A": "A kísérlet értelmezéséhez előbb a fogalmak és a törvények kellenek.",
+        "C": "A tartalmi kifejtés (közép 35, emelt 25 pont) a legnagyobb pontszámú rész.",
+        "D": "A véletlenszerű sorrend a felépítési pontot rontja."
+      }
+    },
+    {
+      "id": "3",
+      "kind": "choice",
+      "prompt": "Melyik mondat szakszerű?",
+      "options": [
+        {
+          "key": "A",
+          "text": "„Az izzóban elfogy az áram.”"
+        },
+        {
+          "key": "B",
+          "text": "„Az áram átmegy a feszültségen.”"
+        },
+        {
+          "key": "C",
+          "text": "„Az izzó feszültséget fogyaszt.”"
+        },
+        {
+          "key": "D",
+          "text": "„Az izzón átfolyó áram elektromos energiát szállít, amely az izzószálban hővé és fénnyé alakul.”"
+        }
+      ],
+      "answer": "D",
+      "category": "indoklas-felepites",
+      "explanation": "Helyes: D. A töltés (és az áram) nem fogy el; az energia alakul át a fogyasztóban. Ez a mondat pontosan megnevezi a mennyiségeket és a folyamatot.",
+      "wrongOptions": {
+        "A": "Az áramerősség soros körben az izzó előtt és után is ugyanaz; az energia alakul át.",
+        "B": "A feszültség nem anyag vagy hely, amin az áram „átmegy”.",
+        "C": "A feszültség két pont közötti mennyiség, nem „fogyasztható”."
+      }
+    },
+    {
+      "id": "4",
+      "kind": "choice",
+      "prompt": "Egy számításos feladat részkérdése: „Mekkora a fékút?” Melyik befejezés teljes?",
+      "options": [
+        {
+          "key": "A",
+          "text": "„62,5”"
+        },
+        {
+          "key": "B",
+          "text": "„s = 62,5 m”"
+        },
+        {
+          "key": "C",
+          "text": "„s = v²/(2a) = 625/10 = 62,5 m. Tehát a fékút 62,5 m.”"
+        },
+        {
+          "key": "D",
+          "text": "„A fékút hosszabb lesz.”"
+        }
+      ],
+      "answer": "C",
+      "category": "indoklas-felepites",
+      "explanation": "Helyes: C. Képlet, behelyettesítés, mértékegységes eredmény és szöveges válasz is van – ez a „forma” és az „indoklás” szempontnak is megfelel.",
+      "wrongOptions": {
+        "A": "Mértékegység és indoklás nélküli szám.",
+        "B": "Az eredmény egységgel megvan, de nem látszik, hogyan jött ki.",
+        "D": "Minőségi állítás szám nélkül; a kérdés értéket kért."
+      }
+    },
+    {
+      "id": "5",
+      "kind": "choice",
+      "prompt": "Az emelt témakifejtésben a diák minden szempontot megemlít egy-egy felsoroló mondatban, képlet és példa nélkül. Mi a legvalószínűbb értékelés?",
+      "options": [
+        {
+          "key": "A",
+          "text": "A tartalomra kevés pont jár, mert a szempontok nincsenek kifejtve (képlet, magyarázat, példa nélkül), és a kifejtés módja is gyenge."
+        },
+        {
+          "key": "B",
+          "text": "Teljes pontszám, mert minden szempont szerepel."
+        },
+        {
+          "key": "C",
+          "text": "Nulla pont, mert nincs elég hosszú."
+        },
+        {
+          "key": "D",
+          "text": "Csak a helyesírást értékelik."
+        }
+      ],
+      "answer": "A",
+      "category": "indoklas-felepites",
+      "explanation": "Helyes: A. A tartalmi pontok a szempontok TELJES, szakszerű kifejtéséért járnak (törvény, összefüggés, példa); a puszta említés csak töredékpontot ér, és a felsoroló stílus a kifejtés módja szempontot is rontja.",
+      "wrongOptions": {
+        "B": "A szempont megemlítése nem azonos a kifejtésével.",
+        "C": "Nem nulla: az említett helyes elemekért jár néhány pont.",
+        "D": "A helyesírás csak a kifejtés módja (5 pont) egyik eleme."
+      }
+    }
+  ],
+  "relatedCategories": [
+    "szovegertelmezes",
+    "meres-kiertekeles",
+    "fogalmak"
+  ]
+}

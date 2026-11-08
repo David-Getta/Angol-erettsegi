@@ -1,0 +1,265 @@
+{
+  "schemaVersion": 1,
+  "id": "tor-gr-szaknyelv",
+  "subject": "tortenelem",
+  "revision": 1,
+  "level": "kozep",
+  "source": "generated",
+  "topic": "nyelvtan",
+  "title": "Szaknyelv alkalmazása",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "grammar",
+  "type": "lesson",
+  "category": "szaknyelv",
+  "summaryHu": "A kommunikáció-szempont K1 eleme a történelmi szakkifejezések helyes használatát értékeli az esszékben, a szóbelin pedig a 10 pontos kommunikáció-szempont része. A szaknyelv nem idegen szavak halmozása: a köznyelvi körülírás helyett a pontos fogalmat kell használni, a korszakhoz illő kifejezésekkel, anakronizmus nélkül.",
+  "rules": [
+    {
+      "title": "Köznyelvi körülírás helyett szakszó",
+      "explanation": "Ahol van pontos történelmi fogalom, azt használd: rövidebb, egyértelműbb, és pontot ér.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "„a király odaadta a földeket a híveinek”",
+          "hu": "birtokadományozás (pl. II. András „új berendezkedése”)"
+        },
+        {
+          "en": "„a parasztok ingyen dolgoztak a földesúrnak”",
+          "hu": "robot (a majorságon)"
+        },
+        {
+          "en": "„a nemesek is fizettek adót”",
+          "hu": "közteherviselés"
+        }
+      ]
+    },
+    {
+      "title": "Korszakhoz illő fogalmak – az anakronizmus kerülése",
+      "explanation": "Anakronizmus, ha egy fogalmat vagy intézményt olyan korra vetítesz, amelyben még (vagy már) nem létezett. Középkorban nincs „miniszter”, „parlament” helyett rendi országgyűlés van; Augustus nem „diktátor”, hanem princeps.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "„Szent István miniszterei”",
+          "hu": "helyesen: a királyi tanács tagjai, ispánok"
+        },
+        {
+          "en": "„Mátyás parlamentje”",
+          "hu": "helyesen: rendi országgyűlés"
+        }
+      ]
+    },
+    {
+      "title": "Rokon fogalmak pontos jelentése",
+      "explanation": "Forradalom: a politikai rendszer gyors, alapvető megváltoztatása; szabadságharc: fegyveres küzdelem a függetlenségért; felkelés: fegyveres lázadás. Fegyverszünet: a harcok ideiglenes beszüntetése; béke: a háborút lezáró szerződés. Annexió: terület egyoldalú bekebelezése.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "1848–49",
+          "hu": "forradalom (március 15., áprilisi törvények) és szabadságharc (1848 ősze – 1849)"
+        },
+        {
+          "en": "1918. november 3. – padovai fegyverszünet; 1920. június 4. – trianoni béke",
+          "hu": "fegyverszünet ≠ béke"
+        }
+      ]
+    },
+    {
+      "title": "Címek és tisztségek",
+      "explanation": "A tisztség pontos neve is szaknyelv: fejedelem (Géza, Rákóczi), király (István), kormányzó (Hunyadi János, Kossuth 1849-ben kormányzó-elnök, Horthy 1920–1944), miniszterelnök (Batthyány, Bethlen), első titkár (Kádár).",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "Horthy Miklós",
+          "hu": "kormányzó, nem király"
+        },
+        {
+          "en": "Hunyadi János",
+          "hu": "kormányzó (1446–1453), nem király"
+        }
+      ]
+    },
+    {
+      "title": "Elvont értelmező fogalmak",
+      "explanation": "Emelt szinten az elemzést értelmező fogalmak teszik pontossá: legitimáció (a hatalom elismertségének alapja), centralizáció (hatalomkoncentráció), modernizáció, hegemónia, konszolidáció, revízió.",
+      "emeltOnly": true,
+      "examples": [
+        {
+          "en": "„Augustus a köztársasági intézmények megtartásával hatalma legitimációját erősítette.”",
+          "hu": "elvont fogalom pontos használata"
+        },
+        {
+          "en": "„Mátyás centralizációs politikája”",
+          "hu": "központosítás – a bárók hatalmának visszaszorítása"
+        }
+      ]
+    }
+  ],
+  "commonMistakes": [
+    {
+      "wrong": "Szent István miniszterei segítették az államszervezést.",
+      "right": "Szent István tanácsadói és ispánjai segítették az államszervezést.",
+      "why": "A miniszter újkori tisztség – a középkorra vetítése anakronizmus."
+    },
+    {
+      "wrong": "Mátyás elvette a nagyurak pénzét.",
+      "right": "Mátyás az 1467-es adóreformmal megszüntette a korábbi adómentességeket.",
+      "why": "A köznyelvi, pontatlan megfogalmazás helyett a pontos intézkedést és fogalmat kell megnevezni."
+    },
+    {
+      "wrong": "Horthy Miklós 1920-ban király lett.",
+      "right": "Horthy Miklóst 1920-ban kormányzóvá választották; Magyarország király nélküli királyság maradt.",
+      "why": "A tisztség pontos neve tartalmi kérdés is: a királykérdés rendezetlen maradt."
+    },
+    {
+      "wrong": "A szovjetek 1956-ban háborúban legyőzték Magyarországot.",
+      "right": "A szovjet katonai beavatkozás leverte a forradalmat és szabadságharcot.",
+      "why": "A „háború” két állam közötti fegyveres konfliktus; 1956-ban egy forradalom elleni katonai intervenció történt."
+    }
+  ],
+  "examTips": [
+    "Minden esszéhez gyűjts a piszkozatba 5–8 szakkifejezést, és építsd be őket a szövegbe – a K1 elem ezen múlik.",
+    "Szóbelin inkább kevesebb, de pontosan használt fogalom legyen, mint sok, bizonytalan; ha a vizsgáztató visszakérdez, tudd meghatározni is."
+  ],
+  "practice": [
+    {
+      "id": "1",
+      "kind": "choice",
+      "prompt": "Melyik szakkifejezés illik ide: „a jobbágy ingyenes munkája a földesúr saját kezelésű földjén”?",
+      "options": [
+        {
+          "key": "A",
+          "text": "tized"
+        },
+        {
+          "key": "B",
+          "text": "kilenced"
+        },
+        {
+          "key": "C",
+          "text": "robot"
+        },
+        {
+          "key": "D",
+          "text": "majorság"
+        }
+      ],
+      "answer": "C",
+      "category": "szaknyelv",
+      "explanation": "Helyes: robot. A majorságon (a földesúr saját kezelésű birtokán) végzett ingyenes munka.",
+      "wrongOptions": {
+        "A": "A tized az egyháznak fizetett terményadó.",
+        "B": "A kilenced terményadó (a termés kilencede) a földesúrnak.",
+        "D": "A majorság maga a földterület, nem a munka."
+      }
+    },
+    {
+      "id": "2",
+      "kind": "choice",
+      "prompt": "Melyik kifejezés anakronisztikus Szent István korára?",
+      "options": [
+        {
+          "key": "A",
+          "text": "érsekség"
+        },
+        {
+          "key": "B",
+          "text": "ispán"
+        },
+        {
+          "key": "C",
+          "text": "vármegye"
+        },
+        {
+          "key": "D",
+          "text": "miniszterelnök"
+        }
+      ],
+      "answer": "D",
+      "category": "szaknyelv",
+      "explanation": "Helyes: miniszterelnök. Ez újkori tisztség (Magyarországon 1848-tól).",
+      "wrongOptions": {
+        "A": "István két érsekséget (Esztergom, Kalocsa) alapított.",
+        "B": "Az ispán István korában a vármegye élén állt.",
+        "C": "A királyi vármegyét István szervezte meg."
+      }
+    },
+    {
+      "id": "3",
+      "kind": "choice",
+      "prompt": "Milyen tisztséget viselt Horthy Miklós 1920 és 1944 között?",
+      "options": [
+        {
+          "key": "A",
+          "text": "köztársasági elnök"
+        },
+        {
+          "key": "B",
+          "text": "király"
+        },
+        {
+          "key": "C",
+          "text": "miniszterelnök"
+        },
+        {
+          "key": "D",
+          "text": "kormányzó"
+        }
+      ],
+      "answer": "D",
+      "category": "szaknyelv",
+      "explanation": "Helyes: kormányzó. Az államfői jogokat a király nélküli királyságban a kormányzó gyakorolta.",
+      "wrongOptions": {
+        "A": "A Horthy-korszakban Magyarország államformája királyság volt; köztársaság csak 1946-ban lett újra.",
+        "B": "Horthy nem volt király; a királykérdés rendezetlen maradt.",
+        "C": "A miniszterelnök a kormány feje volt (pl. Bethlen István)."
+      }
+    },
+    {
+      "id": "4",
+      "kind": "text",
+      "prompt": "Mi a szakszava: „a király birtokokat adott hű embereinek örökös tulajdonként”? (egy szó)",
+      "answer": [
+        "birtokadományozás",
+        "adományozás",
+        "birtokadomány"
+      ],
+      "category": "szaknyelv",
+      "explanation": "Helyes: birtokadományozás. II. András birtokpolitikáját is így nevezzük; a köznyelvi körülírás helyett ez a pontos szakszó."
+    },
+    {
+      "id": "5",
+      "kind": "choice",
+      "prompt": "Mi a különbség a fegyverszünet és a béke között?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Fegyverszünetet csak a győztes kérhet."
+        },
+        {
+          "key": "B",
+          "text": "A kettő ugyanazt jelenti."
+        },
+        {
+          "key": "C",
+          "text": "A béke ideiglenes, a fegyverszünet végleges."
+        },
+        {
+          "key": "D",
+          "text": "A fegyverszünet a harcok ideiglenes beszüntetése, a béke a háborút lezáró, a feltételeket rögzítő szerződés."
+        }
+      ],
+      "answer": "D",
+      "category": "szaknyelv",
+      "explanation": "Helyes: D. Pl. 1918 novemberében fegyverszünet volt (Padova), a békét csak 1920-ban kötötték meg (Trianon).",
+      "wrongOptions": {
+        "A": "Fegyverszünetet többnyire a vesztes fél kér.",
+        "B": "Jogilag két különböző megállapodás.",
+        "C": "Fordítva: a fegyverszünet ideiglenes, a béke végleges rendezés."
+      }
+    }
+  ],
+  "relatedCategories": [
+    "fogalomhasznalat",
+    "szerkesztes"
+  ]
+}

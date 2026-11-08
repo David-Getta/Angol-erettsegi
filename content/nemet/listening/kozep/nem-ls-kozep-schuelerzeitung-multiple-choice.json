@@ -1,0 +1,320 @@
+{
+  "schemaVersion": 1,
+  "id": "nem-ls-kozep-schuelerzeitung-multiple-choice",
+  "subject": "nemet",
+  "revision": 1,
+  "level": "kozep",
+  "source": "generated",
+  "topic": "iskola",
+  "title": "Zwanzig Jahre Schülerzeitung",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "listening",
+  "type": "multiple-choice",
+  "instructions": "Sie hören ein Interview im Schulradio mit der Chefredakteurin einer Schülerzeitung. Wählen Sie die richtige Lösung (A, B oder C). Sie hören den Text zweimal. Am Anfang finden Sie ein Beispiel (0).",
+  "instructionsHu": "Egy iskolarádiós interjút hallasz egy iskolaújság főszerkesztőjével. Válaszd ki a helyes megoldást (A, B vagy C). A felvételt kétszer hallod.",
+  "listening": {
+    "format": "interview",
+    "speakers": [
+      {
+        "id": "M",
+        "name": "Moderator",
+        "gender": "male",
+        "accent": "de-DE",
+        "age": "young"
+      },
+      {
+        "id": "H",
+        "name": "Hanna Berger",
+        "gender": "female",
+        "accent": "de-DE",
+        "age": "young"
+      }
+    ],
+    "script": [
+      {
+        "speaker": "M",
+        "text": "Hallo und willkommen bei Radio Pausenhof, dem Schulradio des Goethe-Gymnasiums. Heute ist Hanna Berger aus der Klasse 11c bei mir. Sie ist Chefredakteurin unserer Schülerzeitung „Die Lupe“. Hallo, Hanna!"
+      },
+      {
+        "speaker": "H",
+        "text": "Hallo! Danke für die Einladung."
+      },
+      {
+        "speaker": "M",
+        "text": "Hanna, seit wann gibt es die Lupe eigentlich?"
+      },
+      {
+        "speaker": "H",
+        "text": "Die erste Ausgabe ist vor genau zwanzig Jahren erschienen. Damals waren es nur vier Seiten, schwarz-weiß kopiert. Heute haben wir vierzig Seiten, alles in Farbe."
+      },
+      {
+        "speaker": "M",
+        "text": "Wow. Und wie viele Leute arbeiten mit?"
+      },
+      {
+        "speaker": "H",
+        "text": "Im Moment sind wir fünfzehn, von der siebten bis zur zwölften Klasse. Wir treffen uns jeden Dienstag nach der sechsten Stunde in der Bibliothek. Eine Lehrerin, Frau Wagner, hilft uns, aber sie schreibt nicht mit. Sie liest nur am Ende alles noch einmal durch."
+      },
+      {
+        "speaker": "M",
+        "text": "Wie oft erscheint die Zeitung?"
+      },
+      {
+        "speaker": "H",
+        "text": "Viermal im Jahr. Früher waren es sechs Ausgaben, aber das war einfach zu viel Arbeit neben der Schule."
+      },
+      {
+        "speaker": "M",
+        "text": "Worüber schreibt ihr am liebsten?"
+      },
+      {
+        "speaker": "H",
+        "text": "Wir schreiben über alles, was an der Schule passiert. Am beliebtesten sind bei den Lesern aber die Interviews mit Lehrern. Da fragen wir zum Beispiel, was sie mit sechzehn werden wollten oder welche Musik sie hören. In der letzten Ausgabe hat uns der Sportlehrer erzählt, dass er früher in einer Punkband gespielt hat. Das hat niemand gewusst!"
+      },
+      {
+        "speaker": "M",
+        "text": "Das glaube ich. Gab es auch schon mal Ärger?"
+      },
+      {
+        "speaker": "H",
+        "text": "Ein bisschen, ja. Letztes Jahr haben wir einen kritischen Artikel über das Essen in der Mensa geschrieben. Der Koch war zuerst ziemlich sauer. Aber dann hat er uns eingeladen, einen Tag in der Küche mitzuarbeiten. Seitdem gibt es jeden Freitag ein vegetarisches Gericht, das die Schüler selbst auswählen."
+      },
+      {
+        "speaker": "M",
+        "text": "Das ist ja ein toller Erfolg. Was kostet die Lupe?"
+      },
+      {
+        "speaker": "H",
+        "text": "Einen Euro. Damit bezahlen wir aber nur einen Teil des Drucks. Den Rest finanzieren wir mit Werbung von Geschäften aus der Nachbarschaft, zum Beispiel vom Fahrradladen und von der Eisdiele."
+      },
+      {
+        "speaker": "M",
+        "text": "Und wenn jemand mitmachen möchte?"
+      },
+      {
+        "speaker": "H",
+        "text": "Dann einfach am Dienstag vorbeikommen! Man muss kein Superschreiber sein. Wir suchen auch Leute, die fotografieren oder zeichnen können."
+      },
+      {
+        "speaker": "M",
+        "text": "Hanna, vielen Dank für das Gespräch!"
+      }
+    ]
+  },
+  "example": {
+    "id": "0",
+    "kind": "choice",
+    "prompt": "Die erste Ausgabe der „Lupe“ erschien vor …",
+    "options": [
+      {
+        "key": "A",
+        "text": "vier Jahren."
+      },
+      {
+        "key": "B",
+        "text": "fünfzehn Jahren."
+      },
+      {
+        "key": "C",
+        "text": "zwanzig Jahren."
+      }
+    ],
+    "answer": "C",
+    "category": "detail",
+    "explanation": "Hanna szerint az első szám pontosan húsz évvel ezelőtt jelent meg.",
+    "evidence": "Die erste Ausgabe ist vor genau zwanzig Jahren erschienen."
+  },
+  "items": [
+    {
+      "id": "1",
+      "kind": "choice",
+      "prompt": "Frau Wagner …",
+      "options": [
+        {
+          "key": "A",
+          "text": "schreibt in jeder Ausgabe einen Artikel."
+        },
+        {
+          "key": "B",
+          "text": "liest die Texte am Ende noch einmal."
+        },
+        {
+          "key": "C",
+          "text": "leitet die Treffen in der Bibliothek."
+        }
+      ],
+      "answer": "B",
+      "category": "detail",
+      "explanation": "Frau Wagner nem ír cikket, csak a végén még egyszer átolvas mindent – ez a B.",
+      "evidence": "Sie liest nur am Ende alles noch einmal durch.",
+      "wrongOptions": {
+        "A": "Hanna kifejezetten mondja, hogy a tanárnő nem ír („sie schreibt nicht mit”).",
+        "C": "A találkozók helye a könyvtár, de arról nincs szó, hogy a tanárnő vezetné őket – csak segít."
+      }
+    },
+    {
+      "id": "2",
+      "kind": "choice",
+      "prompt": "Warum erscheint die Zeitung nicht mehr sechsmal im Jahr?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Es war zu viel Arbeit neben der Schule."
+        },
+        {
+          "key": "B",
+          "text": "Es gab zu wenige Leser."
+        },
+        {
+          "key": "C",
+          "text": "Der Druck war zu teuer."
+        }
+      ],
+      "answer": "A",
+      "category": "detail",
+      "explanation": "Korábban hat szám jelent meg, de az túl sok munka volt az iskola mellett – ezért ma csak négy.",
+      "evidence": "aber das war einfach zu viel Arbeit neben der Schule",
+      "wrongOptions": {
+        "B": "Az olvasók számáról nincs szó; sőt, a tanárinterjúk kifejezetten népszerűek.",
+        "C": "A nyomdaköltség később kerül szóba a finanszírozásnál, nem a megjelenések számának okaként."
+      }
+    },
+    {
+      "id": "3",
+      "kind": "choice",
+      "prompt": "Was lesen die Schüler am liebsten?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Berichte über Sport."
+        },
+        {
+          "key": "B",
+          "text": "Artikel über Musik."
+        },
+        {
+          "key": "C",
+          "text": "Interviews mit Lehrern."
+        }
+      ],
+      "answer": "C",
+      "category": "detail",
+      "explanation": "Az olvasók körében a tanárokkal készült interjúk a legnépszerűbbek („Am beliebtesten … die Interviews mit Lehrern”).",
+      "evidence": "Am beliebtesten sind bei den Lesern aber die Interviews mit Lehrern.",
+      "wrongOptions": {
+        "A": "A tornatanár csak egy interjú alanya volt; sportbeszámolókról nincs szó.",
+        "B": "A zene csak egy kérdés az interjúkban (welche Musik sie hören), nem külön cikktípus."
+      }
+    },
+    {
+      "id": "4",
+      "kind": "choice",
+      "prompt": "Was haben die Leser über den Sportlehrer erfahren?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Er hört am liebsten Punkmusik."
+        },
+        {
+          "key": "B",
+          "text": "Er hat früher in einer Band gespielt."
+        },
+        {
+          "key": "C",
+          "text": "Er wollte mit sechzehn Lehrer werden."
+        }
+      ],
+      "answer": "B",
+      "category": "detail",
+      "explanation": "A tornatanár elmesélte, hogy régen egy punkzenekarban játszott – ezt senki sem tudta.",
+      "evidence": "dass er früher in einer Punkband gespielt hat",
+      "wrongOptions": {
+        "A": "Az hangzik el, hogy punkzenekarban játszott, nem az, hogy ma is ezt hallgatja legszívesebben.",
+        "C": "Azt, hogy mi akart lenni tizenhat évesen, általában kérdezik a tanároktól, de a tornatanár válaszáról nincs szó."
+      }
+    },
+    {
+      "id": "5",
+      "kind": "choice",
+      "prompt": "Was hat sich nach dem Artikel über die Mensa geändert?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Das Essen ist billiger geworden."
+        },
+        {
+          "key": "B",
+          "text": "Der Koch hat die Schule verlassen."
+        },
+        {
+          "key": "C",
+          "text": "Die Schüler wählen einmal pro Woche ein Gericht aus."
+        }
+      ],
+      "answer": "C",
+      "category": "detail",
+      "explanation": "Azóta minden pénteken van egy vegetáriánus étel, amelyet a diákok maguk választanak ki – vagyis hetente egyszer ők döntenek.",
+      "evidence": "Seitdem gibt es jeden Freitag ein vegetarisches Gericht, das die Schüler selbst auswählen.",
+      "wrongOptions": {
+        "A": "Az étel áráról nem esik szó.",
+        "B": "A szakács nem ment el: először mérges volt, aztán meghívta a diákokat a konyhára."
+      }
+    },
+    {
+      "id": "6",
+      "kind": "choice",
+      "prompt": "Wie wird die Zeitung finanziert?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Durch den Verkaufspreis und durch Werbung."
+        },
+        {
+          "key": "B",
+          "text": "Nur durch den Verkaufspreis."
+        },
+        {
+          "key": "C",
+          "text": "Durch Geld von der Schule."
+        }
+      ],
+      "answer": "A",
+      "category": "detail",
+      "explanation": "Az egy eurós ár csak a nyomtatás egy részét fedezi, a többit a környékbeli üzletek hirdetéseiből fizetik.",
+      "evidence": "Den Rest finanzieren wir mit Werbung von Geschäften aus der Nachbarschaft",
+      "wrongOptions": {
+        "B": "Az ár csak egy részt fedez („nur einen Teil des Drucks”).",
+        "C": "Az iskola anyagi támogatásáról nincs szó."
+      }
+    },
+    {
+      "id": "7",
+      "kind": "choice",
+      "prompt": "Wer kann bei der Zeitung mitmachen?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Nur Schüler, die sehr gut schreiben."
+        },
+        {
+          "key": "B",
+          "text": "Auch Schüler, die fotografieren oder zeichnen."
+        },
+        {
+          "key": "C",
+          "text": "Nur Schüler ab der zwölften Klasse."
+        }
+      ],
+      "answer": "B",
+      "category": "detail",
+      "explanation": "Hanna szerint nem kell nagyon jól írni, és olyanokat is keresnek, akik fényképeznek vagy rajzolnak.",
+      "evidence": "Wir suchen auch Leute, die fotografieren oder zeichnen können.",
+      "wrongOptions": {
+        "A": "Épp ellenkezőleg: „Man muss kein Superschreiber sein.”",
+        "C": "A szerkesztőségben hetedikestől tizenkettedikesig mindenki dolgozik."
+      }
+    }
+  ],
+  "suggestedMinutes": 8
+}

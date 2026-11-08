@@ -1,0 +1,185 @@
+{
+  "schemaVersion": 1,
+  "id": "fiz-rd-emelt-modern-fizika-teszt",
+  "subject": "fizika",
+  "revision": 1,
+  "level": "emelt",
+  "source": "generated",
+  "topic": "atom-magfizika",
+  "title": "Foton, atomszerkezet, magfizika – feleletválasztós teszt",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "reading",
+  "type": "feleletvalasztas",
+  "instructions": "Minden kérdésnél egyetlen helyes válasz van. Jelöld meg a helyes válasz betűjelét! A 0. kérdés a megoldott példa. h = 6,63 · 10⁻³⁴ J·s, c = 3,0 · 10⁸ m/s, 1 eV = 1,6 · 10⁻¹⁹ J.",
+  "example": {
+    "id": "0",
+    "kind": "choice",
+    "prompt": "Mitől függ egy foton energiája?",
+    "options": [
+      { "key": "A", "text": "A fény frekvenciájától: E = h·f." },
+      { "key": "B", "text": "A fény erősségétől (intenzitásától)." },
+      { "key": "C", "text": "A fényforrás távolságától." },
+      { "key": "D", "text": "Minden foton energiája egyforma." }
+    ],
+    "answer": "A",
+    "category": "kepletek",
+    "explanation": "Helyes: A. A foton energiája E = h·f = h·c/λ, ahol h a Planck-állandó. A fény erőssége csak a fotonok SZÁMÁT növeli, az egyes fotonok energiáját nem."
+  },
+  "items": [
+    {
+      "id": "1",
+      "kind": "choice",
+      "prompt": "Mekkora az 500 nm hullámhosszú zöld fény egy fotonjának energiája?",
+      "options": [
+        { "key": "A", "text": "4,0 · 10⁻²⁸ J" },
+        { "key": "B", "text": "4,0 · 10⁻²² J" },
+        { "key": "C", "text": "4,0 · 10⁻¹⁹ J" },
+        { "key": "D", "text": "1,3 · 10⁻²⁷ J" }
+      ],
+      "answer": "C",
+      "category": "mertekegyseg",
+      "explanation": "Helyes: C. E = h·c/λ = 6,63 · 10⁻³⁴ J·s · 3,0 · 10⁸ m/s / 5,0 · 10⁻⁷ m ≈ 4,0 · 10⁻¹⁹ J, ami kb. 2,5 eV.",
+      "wrongOptions": {
+        "A": "A hullámhosszt nanométerben (500) helyettesítette be méter helyett; 500 nm = 5,0 · 10⁻⁷ m.",
+        "B": "A fénysebességet km/s-ban (3 · 10⁵) írta be; SI-ben 3,0 · 10⁸ m/s.",
+        "D": "1,3 · 10⁻²⁷ = h/λ, ez a foton LENDÜLETE kg·m/s-ban, nem az energiája."
+      }
+    },
+    {
+      "id": "2",
+      "kind": "choice",
+      "prompt": "Egy fém kilépési munkája 2,0 eV. A fémlapot 3,1 eV energiájú fotonokat tartalmazó fénnyel világítjuk meg. Mekkora a kilépő elektronok legnagyobb mozgási energiája?",
+      "options": [
+        { "key": "A", "text": "1,1 eV" },
+        { "key": "B", "text": "2,0 eV" },
+        { "key": "C", "text": "3,1 eV" },
+        { "key": "D", "text": "5,1 eV" }
+      ],
+      "answer": "A",
+      "category": "torvenyek",
+      "explanation": "Helyes: A. Einstein fényelektromos egyenlete: h·f = W_ki + E_mozg,max, így E_mozg,max = 3,1 eV − 2,0 eV = 1,1 eV. A foton energiájából a kilépési munka „fedezi” az elektron kiszabadítását, a maradék a mozgási energia.",
+      "wrongOptions": {
+        "B": "2,0 eV a kilépési munka, amely az elektron kiszakításához kell – ez nem marad meg mozgási energiaként.",
+        "C": "3,1 eV a foton teljes energiája; ebből le kell vonni a kilépési munkát.",
+        "D": "Összeadta a két energiát; a kilépési munka ELHASZNÁLÓDIK, nem hozzáadódik."
+      }
+    },
+    {
+      "id": "3",
+      "kind": "choice",
+      "prompt": "A fényelektromos jelenségnél a megvilágító fény frekvenciáját változatlanul hagyva növeljük a fény erősségét. Mi történik?",
+      "options": [
+        { "key": "A", "text": "Időegység alatt több elektron lép ki, de a legnagyobb mozgási energiájuk nem változik." },
+        { "key": "B", "text": "Ugyanannyi elektron lép ki, de nagyobb energiával." },
+        { "key": "C", "text": "Több elektron lép ki, és nagyobb a legnagyobb mozgási energiájuk is." },
+        { "key": "D", "text": "Ha a frekvencia a határfrekvencia alatt van, kellően erős fénnyel már lesz elektronkilépés." }
+      ],
+      "answer": "A",
+      "category": "jelenseg-magyarazat",
+      "explanation": "Helyes: A. Erősebb fényben több foton érkezik, ezért több elektron lép ki (nagyobb a fotoáram). Egy elektron azonban egy foton energiáját nyeli el, ez pedig csak a frekvenciától függ (h·f), így a legnagyobb mozgási energia nem változik.",
+      "wrongOptions": {
+        "B": "Az intenzitás a fotonok számát növeli, nem az egyes fotonok energiáját – ezért több lesz az elektron, nem gyorsabb.",
+        "C": "A mozgási energia h·f − W_ki, ebben az intenzitás nem szerepel.",
+        "D": "A határfrekvencia alatt egyetlen foton energiája sem elég a kilépéshez, ezért akármilyen erős fény sem vált ki elektront."
+      }
+    },
+    {
+      "id": "4",
+      "kind": "choice",
+      "prompt": "A hidrogénatom energiaszintjei Eₙ = −13,6 eV / n². Mekkora energiájú foton keletkezik, amikor az elektron az n = 3 állapotból az n = 2 állapotba kerül?",
+      "options": [
+        { "key": "A", "text": "1,51 eV" },
+        { "key": "B", "text": "1,89 eV" },
+        { "key": "C", "text": "3,40 eV" },
+        { "key": "D", "text": "12,1 eV" }
+      ],
+      "answer": "B",
+      "category": "szamolas",
+      "explanation": "Helyes: B. E₃ = −13,6/9 ≈ −1,51 eV, E₂ = −13,6/4 = −3,40 eV. A foton energiája a különbség: E₃ − E₂ = −1,51 − (−3,40) ≈ 1,89 eV. Ez a kb. 656 nm-es vörös (Balmer-sorozat Hα) vonal.",
+      "wrongOptions": {
+        "A": "1,51 eV az n = 3 szint energiájának abszolút értéke, nem a két szint különbsége.",
+        "C": "3,40 eV az n = 2 szint energiájának abszolút értéke.",
+        "D": "12,1 eV az n = 3 → n = 1 átmenet energiája (ultraibolya, Lyman-sorozat)."
+      }
+    },
+    {
+      "id": "5",
+      "kind": "choice",
+      "prompt": "Egy radioaktív minta aktivitása 15 nap alatt a kezdeti érték nyolcadára csökken. Mekkora az izotóp felezési ideje?",
+      "options": [
+        { "key": "A", "text": "1,9 nap" },
+        { "key": "B", "text": "5 nap" },
+        { "key": "C", "text": "7,5 nap" },
+        { "key": "D", "text": "45 nap" }
+      ],
+      "answer": "B",
+      "category": "szamolas",
+      "explanation": "Helyes: B. 1/8 = (1/2)³, tehát 15 nap alatt 3 felezési idő telt el: T½ = 15 nap / 3 = 5 nap. (A bomlási törvény: A = A₀ · 2^(−t/T½).)",
+      "wrongOptions": {
+        "A": "15/8 ≈ 1,9: a nyolcadra csökkenést 8 felezésnek vette, pedig 8 = 2³, vagyis csak 3 felezés.",
+        "C": "15/2 = 7,5: ennyi idő alatt csak a felére csökkenne, a nyolcadra 22,5 nap alatt.",
+        "D": "45 = 15 · 3: osztás helyett szorzott; a felezési idő rövidebb a vizsgált 15 napnál."
+      }
+    },
+    {
+      "id": "6",
+      "kind": "choice",
+      "prompt": "Az urán-238 (Z = 92) bomlási sora a stabil ólom-206-ban (Z = 82) végződik. Hány alfa- és hány béta-mínusz bomlás történik a sor során?",
+      "options": [
+        { "key": "A", "text": "8 alfa- és 6 béta-mínusz bomlás." },
+        { "key": "B", "text": "6 alfa- és 8 béta-mínusz bomlás." },
+        { "key": "C", "text": "8 alfa- és 10 béta-mínusz bomlás." },
+        { "key": "D", "text": "10 alfa- és 2 béta-mínusz bomlás." }
+      ],
+      "answer": "A",
+      "category": "szamolas",
+      "explanation": "Helyes: A. A tömegszámot csak az alfa-bomlás változtatja (4-gyel): (238 − 206)/4 = 8 alfa-bomlás. Ez a rendszámot 8 · 2 = 16-tal csökkentené (92 → 76), de a végén Z = 82, tehát 6 béta-mínusz bomlás (mindegyik +1) is történt.",
+      "wrongOptions": {
+        "B": "Felcserélte a két számot: 6 alfa-bomlás csak 24-gyel csökkentené a tömegszámot, a szükséges 32 helyett.",
+        "C": "10 béta-mínusz bomlás után a rendszám 76 + 10 = 86 lenne (radon), nem 82.",
+        "D": "10 alfa-bomlás 40-nel csökkentené a tömegszámot, 238 − 40 = 198 lenne, nem 206."
+      }
+    },
+    {
+      "id": "7",
+      "kind": "choice",
+      "prompt": "Mi igaz az atommag tömegére?",
+      "options": [
+        { "key": "A", "text": "Nagyobb, mint az alkotó szabad protonok és neutronok tömegének összege." },
+        { "key": "B", "text": "Kisebb a nukleonok tömegének összegénél, és a különbség az elektronok tömege." },
+        { "key": "C", "text": "Pontosan egyenlő a nukleonok tömegének összegével." },
+        { "key": "D", "text": "Kisebb, mint az alkotó szabad nukleonok tömegének összege; a különbség c²-szerese a mag kötési energiája." }
+      ],
+      "answer": "D",
+      "category": "fogalmak",
+      "explanation": "Helyes: D. A mag kialakulásakor energia szabadul fel, ezért a kötött rendszer tömege kisebb: ez a tömeghiány (Δm). A kötési energia E_k = Δm·c², ennyi energia kellene a mag nukleonjaira bontásához.",
+      "wrongOptions": {
+        "A": "Ha nagyobb lenne, a mag magától szétesne nukleonjaira; a stabil magok tömege kisebb.",
+        "B": "Az elektronok nem részei a magnak; a tömeghiány a nukleonok kötési energiájának megfelelő tömeg.",
+        "C": "A pontos tömegmérések mérhető tömeghiányt mutatnak; erre épül a magenergia felszabadulásának magyarázata."
+      }
+    },
+    {
+      "id": "8",
+      "kind": "choice",
+      "prompt": "Miért szabadulhat fel energia nehéz magok (pl. urán) hasadásakor ÉS könnyű magok (pl. hidrogénizotópok) egyesülésekor is?",
+      "options": [
+        { "key": "A", "text": "Mert az egy nukleonra jutó kötési energia a vas (Fe-56) környékén a legnagyobb, és mindkét folyamat e felé a tartomány felé visz." },
+        { "key": "B", "text": "Mert minden magreakcióban energia szabadul fel." },
+        { "key": "C", "text": "Mert a hasadási és a fúziós termékek radioaktívak." },
+        { "key": "D", "text": "Mert mindkét folyamatban növekszik a nukleonok száma." }
+      ],
+      "answer": "A",
+      "category": "jelenseg-magyarazat",
+      "explanation": "Helyes: A. A fajlagos (egy nukleonra jutó) kötési energia a tömegszám függvényében a vas–nikkel tartományban (A ≈ 56–62) maximális, kb. 8,8 MeV. A nehéz mag hasadásakor és a könnyű magok egyesülésekor is erősebben kötött magok keletkeznek, a kötési energia növekménye felszabadul.",
+      "wrongOptions": {
+        "B": "Sok magreakció energiát IGÉNYEL (pl. vasnál nehezebb magok fúziója vagy vasnál könnyebbek hasítása).",
+        "C": "A termékek radioaktivitása nem oka a felszabaduló energiának; a fúzió fő terméke, a hélium-4 stabil.",
+        "D": "A nukleonok száma (a tömegszám) magreakciókban megmarad, nem nő."
+      }
+    }
+  ],
+  "glossary": [],
+  "suggestedMinutes": 18
+}

@@ -1,0 +1,127 @@
+{
+  "schemaVersion": 1,
+  "id": "dig-gd-speaking-programozasi-tetel",
+  "subject": "digitalis-kultura",
+  "revision": 1,
+  "level": "kozep",
+  "source": "generated",
+  "topic": "utmutato",
+  "title": "Programozási feladat bemutatása (B)",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "guide",
+  "type": "speaking",
+  "target": "programozasi-tetel",
+  "summaryHu": "A szóbeli B) részében egy rövid programozási feladatot kell megoldanod a felkészülési időben, majd bemutatnod és elmagyaráznod: az adatszerkezetet, az algoritmust (melyik programozási tételt miért), a kód működését és egy példán az eredményt. A vizsgáztató a megoldás helyességét és a bemutatás érthetőségét, szakszerűségét értékeli.",
+  "steps": [
+    {
+      "title": "Értsd meg a feladatot",
+      "explanation": "Olvasd el, milyen bemenet van (lista, bekért adat, szöveg), és mit kell kiírni. Bontsd részfeladatokra, és mindegyikhez rendelj programozási tételt.",
+      "tips": [
+        "Egy példát számolj ki kézzel – ez lesz a teszted.",
+        "Figyelj a határesetekre: nincs ilyen elem, egyenlő értékek."
+      ]
+    },
+    {
+      "title": "Írd meg a programot",
+      "explanation": "Írd meg a kódot (gépen vagy papíron, a vizsga rendje szerint), és ha lehet, futtasd le. Használj beszédes változóneveket és ha kell, függvényt.",
+      "tips": [
+        "A kezdőértékekre figyelj (0 az összegnél, az első elem a maximumnál).",
+        "A ciklus feltételénél a határ legyen elöl (i < len(t) and …)."
+      ]
+    },
+    {
+      "title": "Mutasd be: adatszerkezet – algoritmus – kód – példa",
+      "explanation": "Kezdd azzal, hogyan tárolod az adatokat; utána részfeladatonként mondd el, melyik tételt használod és miért, majd a kód lényeges sorait magyarázd; végül mutasd meg egy példán a kimenetet.",
+      "tips": [
+        "Ne olvasd fel soronként a kódot, hanem magyarázd a működését.",
+        "Mondd ki a hatékonyságot is, ha releváns (pl. √n-ig vizsgálat, bináris keresés)."
+      ]
+    },
+    {
+      "title": "Kérdések",
+      "explanation": "Gyakori kérdések: mi lenne, ha … (más kezdőérték, >= a > helyett), hogyan bővítenéd, miért ezt az adatszerkezetet választottad, mennyi lépést tesz a program.",
+      "tips": [
+        "A válaszban a tétel és a feltétel szerepét említsd."
+      ]
+    }
+  ],
+  "phrases": [
+    {
+      "group": "Bevezetés",
+      "en": "A feladatban … kell meghatározni; az adatokat egy … tárolom.",
+      "hu": "a feladat és az adatszerkezet"
+    },
+    {
+      "group": "Tétel",
+      "en": "Ehhez a … tételét használom, mert …",
+      "hu": "a programozási tétel megnevezése és indoklása"
+    },
+    {
+      "group": "Kezdőérték",
+      "en": "A kezdőérték azért …, mert …",
+      "hu": "a kezdőérték indoklása"
+    },
+    {
+      "group": "Ciklus",
+      "en": "A ciklus addig fut, amíg …",
+      "hu": "ciklusfeltétel magyarázata"
+    },
+    {
+      "group": "Elágazás",
+      "en": "Ha …, akkor …, különben …",
+      "hu": "elágazás magyarázata"
+    },
+    {
+      "group": "Határeset",
+      "en": "Ha nincs ilyen elem, a program …",
+      "hu": "határeset kezelése"
+    },
+    {
+      "group": "Példa",
+      "en": "A minta adatokra a program kimenete …",
+      "hu": "eredmény bemutatása"
+    },
+    {
+      "group": "Hatékonyság",
+      "en": "Ez legfeljebb … lépést jelent, szemben a …",
+      "hu": "lépésszám, hatékonyság"
+    }
+  ],
+  "mistakes": [
+    {
+      "wrong": "Soronként felolvasom a kódot.",
+      "right": "A működést magyarázom: mit, miért, melyik tétellel.",
+      "why": "A „bemutatás” szempont a megértést értékeli."
+    },
+    {
+      "wrong": "Nem mondom ki, mi történik, ha nincs megfelelő elem.",
+      "right": "Külön megmutatom a „nincs ilyen” esetet.",
+      "why": "A határesetek kezelése a megoldás helyességének része."
+    },
+    {
+      "wrong": "A programot nem próbálom ki semmilyen példán.",
+      "right": "Egy kézzel kiszámolt példán végigkövetem és bemutatom a kimenetet.",
+      "why": "A példa igazolja a működést, és a vizsgáztató is könnyebben követi."
+    }
+  ],
+  "checklist": [
+    "Minden részfeladathoz megneveztem a tételt?",
+    "A kezdőértékek és a ciklusfeltételek jók?",
+    "A határeseteket kezeltem?",
+    "Van egy kiszámolt példám a bemutatáshoz?"
+  ],
+  "timing": "Középszinten kb. 7 perc, emelt szinten kb. 10 perc a bemutatás. A felkészülésből kb. 12–15 percet szánj a megoldásra és a kipróbálásra.",
+  "example": {
+    "title": "Minta: a bemutatás vázlata (heti hőmérsékletek)",
+    "text": "1. Adat: 7 valós szám egy listában\n2. Átlag: összegzés, majd osztás a darabszámmal; .1f formázás\n3. Maximum: kezdőérték az első elem (negatív értékek miatt)\n4. Fagyos napok: megszámlálás (< 0)\n5. Első 5 °C feletti nap: keresés while ciklussal, sorszám = index + 1\n6. Kimenet a mintára: 2.3; 6.0; 2; 6. nap",
+    "notes": [
+      "Minden ponthoz egy tétel és egy indoklás tartozik.",
+      "A végén a konkrét kimenet igazolja, hogy a program működik."
+    ]
+  },
+  "levelNotes": {
+    "kozep": "Középszinten egy-két tétel alkalmazása (összegzés, megszámlálás, maximum, eldöntés, keresés) egyszerű listán vagy bekért adatokon, érthető magyarázattal.",
+    "emelt": "Emelt szinten függvényekre bontott, hatékony megoldás (pl. prímteszt √n-ig, szótáras gyakoriság, bináris keresés), a hatékonyság és az adatszerkezet-választás indoklásával."
+  }
+}

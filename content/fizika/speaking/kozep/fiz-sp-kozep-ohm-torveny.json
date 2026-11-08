@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "id": "fiz-sp-kozep-ohm-torveny",
+  "subject": "fizika",
+  "revision": 1,
+  "level": "kozep",
+  "source": "generated",
+  "topic": "elektromossag",
+  "title": "Az elektromos áram és Ohm törvénye – mérés egy ellenálláson",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "speaking",
+  "type": "tetel",
+  "partNumber": 1,
+  "instructionsHu": "Fejtsd ki az egyenáram jellemzőit (áramerősség, feszültség, ellenállás, Ohm törvénye, soros és párhuzamos kapcsolás), majd állítsd össze az áramkört, mérd meg egy ismeretlen ellenálláson az áramerősséget különböző feszültségeknél, és értékeld a mérést!",
+  "prompts": [
+    "Az elektromos áram, az áramerősség és a feszültség fogalma, mértékegysége, mérése",
+    "Ohm törvénye, az ellenállás; mitől függ egy fémhuzal ellenállása?",
+    "Soros és párhuzamos kapcsolás: áram, feszültség, eredő ellenállás",
+    "Az elektromos munka és teljesítmény",
+    "A mérés összeállítása (ampermérő, voltmérő bekötése), az U–I grafikon és az ellenállás meghatározása"
+  ],
+  "sources": [
+    {
+      "title": "Mérés: ellenállás meghatározása",
+      "text": "Eszközök: szabályozható feszültségű egyenáramú tápegység (0–12 V), ismeretlen ellenállás (kb. 100 Ω), két digitális multiméter (ampermérőnek és voltmérőnek), vezetékek, kapcsoló.\nMenet: kapcsold az ellenállással sorosan az ampermérőt, az ellenállással párhuzamosan a voltmérőt! Állítsd a tápegység feszültségét rendre kb. 2, 4, 6, 8 és 10 V-ra, és jegyezd fel az összetartozó U és I értékeket! Számítsd ki minden mérésnél az U/I hányadost, és ábrázold az áramerősséget a feszültség függvényében!\nVárt tapasztalat: az áramerősség egyenesen arányos a feszültséggel, az U/I hányados (az ellenállás) közel állandó, az I–U grafikon origón átmenő egyenes."
+    }
+  ],
+  "keyPoints": [
+    "Az elektromos áram a töltéshordozók rendezett mozgása; az áramerősség I = Q/t, egysége az amper (A).",
+    "A feszültség az egységnyi töltésen végzett munka, U = W/Q, egysége a volt (V); a feszültség az áram „hajtóereje”.",
+    "Ohm törvénye: állandó hőmérsékletű fémes vezetőben az áramerősség egyenesen arányos a feszültséggel; R = U/I, egysége az ohm (Ω).",
+    "A huzal ellenállása R = ρ·l/A: arányos a hosszal, fordítottan arányos a keresztmetszettel, függ az anyagtól és a hőmérséklettől.",
+    "Soros kapcsolásnál az áram közös, a feszültségek és az ellenállások összeadódnak; párhuzamosnál a feszültség közös, az áramok összeadódnak, 1/R = 1/R₁ + 1/R₂.",
+    "Az elektromos teljesítmény P = U·I, a munka W = U·I·t.",
+    "Az ampermérőt sorosan, a voltmérőt párhuzamosan kell kötni; az ampermérő ellenállása kicsi, a voltmérőé nagy.",
+    "A mérés kiértékelése: az U/I hányadosok átlaga adja az ellenállást; az I–U grafikonon (vízszintesen U, függőlegesen I) az origón átmenő egyenes meredeksége 1/R, tehát R a meredekség reciproka."
+  ],
+  "speakingSeconds": 900,
+  "prepSeconds": 1800,
+  "sampleAnswer": {
+    "turns": [
+      {
+        "speaker": "candidate",
+        "text": "A tételem az egyenáram és Ohm törvénye. Elektromos áramnak a töltéshordozók rendezett mozgását nevezzük; fémekben ezek a szabad elektronok. Az áramerősség megmutatja, mennyi töltés halad át a vezető keresztmetszetén egységnyi idő alatt: I = Q/t, mértékegysége az amper. Az áramot a feszültség hozza létre, amely az egységnyi töltésen végzett munkát jelenti: U = W/Q, mértékegysége a volt.\nOhm törvénye szerint állandó hőmérsékletű fémes vezetőben az áramerősség egyenesen arányos a feszültséggel, a hányadosuk az ellenállás: R = U/I, mértékegysége az ohm. Egy huzal ellenállása egyenesen arányos a hosszával, fordítottan arányos a keresztmetszetével, és függ az anyagától: R = ρ·l/A. A fémek ellenállása melegítéskor nő, ezért az izzólámpa nem követi pontosan Ohm törvényét.\nSoros kapcsolásban minden fogyasztón ugyanaz az áram folyik, a feszültségek összeadódnak, és az eredő ellenállás az ellenállások összege. Párhuzamos kapcsolásban a feszültség közös, az áramok összeadódnak, az eredő ellenállás reciproka pedig a reciprokok összege, tehát kisebb a legkisebb ellenállásnál is. A lakásban a fogyasztók párhuzamosan vannak kötve, hogy mindegyik 230 V-ot kapjon. Az elektromos teljesítmény P = U·I, a munka W = U·I·t.\nA mérésnél az ismeretlen ellenállással sorba kötöttem az ampermérőt, mert annak az ellenálláson átfolyó áramot kell mérnie, a voltmérőt pedig párhuzamosan, az ellenállás két végére. A tápegység feszültségét 2 V-ról 10 V-ig, 2 V-os lépésekben növeltem. 2 V-nál 0,020 A-t, 4 V-nál 0,041 A-t, 6 V-nál 0,059 A-t, 8 V-nál 0,081 A-t, 10 V-nál 0,100 A-t mértem. Az U/I hányados minden mérésnél 97 és 102 Ω között volt, átlagosan kb. 100 Ω. Az áramerősség–feszültség grafikon origón átmenő egyenes, tehát az ellenállás teljesíti Ohm törvényét, és az ellenállása kb. 100 Ω. A kis eltéréseket a műszerek pontossága és a leolvasás okozza; a mérés közben az ellenállás nem melegedett fel érezhetően."
+      },
+      {
+        "speaker": "examiner",
+        "text": "Mi történt volna, ha az ampermérőt párhuzamosan kötöd az ellenállással?"
+      },
+      {
+        "speaker": "candidate",
+        "text": "Az ampermérő ellenállása nagyon kicsi, ezért rövidzárat okozott volna: majdnem az egész áram a műszeren folyt volna át, ami tönkreteheti a műszert vagy kiolvaszthatja a biztosítékát, és nem az ellenállás áramát mértem volna."
+      }
+    ],
+    "notes": [
+      "A felelet minden fogalmat definícióval és mértékegységgel ad meg, Ohm törvényét a feltételével (állandó hőmérséklet) együtt mondja ki, és hétköznapi példát is hoz (lakás párhuzamos kapcsolása, izzólámpa) – ez a tartalom pontjait biztosítja.",
+      "A mérés leírása szakszerű: indokolja az ampermérő soros és a voltmérő párhuzamos bekötését, konkrét mérési adatokat ad, az U/I hányadosból és a grafikonból is következtet – így a kísérleti rész teljes.",
+      "A vizsgáztató kérdésére adott válasz a műszer belső ellenállásával érvel, ami a mérés fizikai megértését mutatja."
+    ]
+  }
+}

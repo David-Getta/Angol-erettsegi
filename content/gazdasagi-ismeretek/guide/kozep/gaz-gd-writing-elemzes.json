@@ -1,0 +1,135 @@
+{
+  "schemaVersion": 1,
+  "id": "gaz-gd-writing-elemzes",
+  "subject": "gazdasagi-ismeretek",
+  "revision": 1,
+  "level": "kozep",
+  "source": "generated",
+  "topic": "utmutato",
+  "title": "Elemző feladat adatokkal (emelt)",
+  "createdAt": "2026-11-06",
+  "tags": [],
+  "section": "guide",
+  "type": "writing",
+  "target": "elemzes",
+  "summaryHu": "Az elemző feladatban adatsor, táblázat vagy eset alapján kell számolni és közgazdasági következtetést levonni (az appban 30 pont, 50 perc). „A számításokat a képlettel és a mértékegységgel együtt kell leírni; a következtetést a tanult fogalmakkal kell indokolni.” Pontozás: az adatok, a forrás értelmezése 12, számítás, mutatók 9, következtetés, gazdasági érvelés 6, szaknyelv, megfogalmazás 3 pont.",
+  "steps": [
+    {
+      "title": "Adatok leolvasása",
+      "explanation": "Először értsd meg a táblázatot: mit mutat egy sor és egy oszlop, mi a mértékegység (db/nap, Ft, Ft/db), és milyen adat hiányzik, amit neked kell kiszámolnod. Írd le egy mondatban a szintet, a változást és a tendenciát.",
+      "tips": [
+        "Az adatértelmezés a legtöbb pontot (12) éri: „szint, változás, arány, tendencia”.",
+        "Jelöld, hogy a határköltség „az utolsó 100 db-ra” vonatkozik – nem darabonként mért változás."
+      ]
+    },
+    {
+      "title": "Képlet + számítás + mértékegység",
+      "explanation": "Minden mutatónál: képlet, behelyettesítés, eredmény mértékegységgel. Átlagköltség = összköltség / termelt mennyiség (Ft/db). Határköltség = az összköltség változása / a termelés változása (Ft/db). Bevétel = ár × mennyiség (Ft). Profit = bevétel – összköltség (Ft).",
+      "tips": [
+        "Kerekítésnél jelöld: ≈ 126,7 Ft/db.",
+        "Ellenőrizd a számokat visszaszámolással."
+      ]
+    },
+    {
+      "title": "Határelemzés: a döntési szabály",
+      "explanation": "A döntés a határértékeken múlik, nem az átlagon. „Döntési szabály: addig érdemes növelni, amíg a határhaszon ≥ határköltség.” Egy termelőnél a pótlólagos egység haszna az ára (pl. 130 Ft/db): ha a határköltség ennél kisebb, a többlettermelés növeli a profitot; ha nagyobb, csökkenti.",
+      "tips": [
+        "Mondd ki, mi az átlagelemzés és mi a határelemzés eredménye, és miért a határelemzés a jobb döntés.",
+        "Kapcsold Mankiw 3. elvéhez: marginális gondolkodás."
+      ]
+    },
+    {
+      "title": "Következtetés a tanult fogalmakkal",
+      "explanation": "Fogalmazd meg a választ a kérdésre (pl. „300 db a jobb döntés”), és indokold szakkifejezésekkel: határköltség, átlagköltség, profit, ceteris paribus (ha egy tényező hatását vizsgálod). Ha a feladat megváltoztat egy adatot (pl. az árat), számold újra, és nézd meg, változik-e a döntés.",
+      "tips": [
+        "A következtetés az adatokból következzen, ne előre megadott véleményből."
+      ]
+    }
+  ],
+  "phrases": [
+    {
+      "group": "Adatleolvasás",
+      "en": "A táblázat a … napi termelését mutatja …-tól …-ig; a termelés növekedésével az összköltség …-ról …-ra nő.",
+      "hu": "a szint és a változás leírása"
+    },
+    {
+      "group": "Adatleolvasás",
+      "en": "Az átlagköltség … db-ig csökken, utána nő.",
+      "hu": "tendencia megfogalmazása"
+    },
+    {
+      "group": "Képlet",
+      "en": "Átlagköltség = összköltség / mennyiség = … / … ≈ … Ft/db",
+      "hu": "átlagköltség számítása"
+    },
+    {
+      "group": "Képlet",
+      "en": "Határköltség = Δ összköltség / Δ mennyiség = (… – …) / … = … Ft/db",
+      "hu": "határköltség számítása az utolsó egységekre"
+    },
+    {
+      "group": "Képlet",
+      "en": "Profit = bevétel – összköltség = … – … = … Ft",
+      "hu": "profit számítása"
+    },
+    {
+      "group": "Döntési szabály",
+      "en": "Addig érdemes növelni, amíg a határhaszon ≥ határköltség.",
+      "hu": "a határelemzés döntési szabálya"
+    },
+    {
+      "group": "Következtetés",
+      "en": "Az átlagelemzés szerint …, a határelemzés szerint viszont …, ezért …",
+      "hu": "a két módszer eredményének szembeállítása"
+    },
+    {
+      "group": "Következtetés",
+      "en": "Ceteris paribus, ha csak az ár változik …-ra, akkor …",
+      "hu": "egy adat változtatásának hatása"
+    }
+  ],
+  "mistakes": [
+    {
+      "wrong": "„400 db-nál az átlagköltség (128,8 Ft) kisebb az árnál, tehát érdemes 400 db-ot sütni.”",
+      "right": "Az utolsó 100 db darabja 135 Ft-ba kerül > 130 Ft → csökkenti a profitot (1 000 Ft-ról 500 Ft-ra); 300 db a jobb döntés.",
+      "why": "A döntésnél a határköltséget kell az árral (a pótlólagos egység hasznával) összevetni, nem az átlagköltséget."
+    },
+    {
+      "wrong": "A határköltséget 51 500 / 400 = 128,75-ként számolom.",
+      "right": "(51 500 – 38 000) / (400 – 300) = 13 500 / 100 = 135 Ft/db.",
+      "why": "Az összköltség / mennyiség az átlagköltség; a határköltség a változásból számol."
+    },
+    {
+      "wrong": "Mértékegység nélkül írom az eredményt: „135”.",
+      "right": "135 Ft/db.",
+      "why": "A rubrika a képletet és a mértékegységet is kéri – ez a számítás-szempont (9 pont) része."
+    },
+    {
+      "wrong": "A következtetés csak annyi: „300 db a jó.”",
+      "right": "„300 db a jobb döntés, mert a 300. darabig a határköltség (100, majd 80 Ft/db) kisebb az árnál (130 Ft), a 300 fölötti 100 db határköltsége (135 Ft/db) viszont nagyobb – a profit 300 db-nál a legnagyobb (+1 000 Ft).”",
+      "why": "A következtetést a tanult fogalmakkal (határelemzés döntési szabálya) kell indokolni."
+    }
+  ],
+  "checklist": [
+    "Leírtam a táblázat szintjét, változását és tendenciáját?",
+    "Minden számításnál ott a képlet, a behelyettesítés és a mértékegység?",
+    "Visszaszámolással ellenőriztem az eredményeket?",
+    "A döntést a határelemzés szabályával (határhaszon ≥ határköltség) indokoltam?",
+    "Megmondtam, miben tér el az átlag- és a határelemzés eredménye?",
+    "Pontos szakkifejezéseket használtam (határköltség, átlagköltség, profit, bevétel)?"
+  ],
+  "timing": "Az app 50 percet ad: 10 perc a táblázat megértése, 20 perc a számítások (képlettel), 15 perc a következtetés megírása, 5 perc ellenőrzés.",
+  "example": {
+    "title": "Kidolgozott példa: a pékség napi termelése (egy kenyér ára 130 Ft)",
+    "text": "Adatok – termelés: 100 / 200 / 300 / 400 db/nap; összköltség: 20 000 / 30 000 / 38 000 / 51 500 Ft.\n1. Átlagköltség = összköltség / mennyiség: 20 000 / 100 = 200 Ft/db; 30 000 / 200 = 150 Ft/db; 38 000 / 300 ≈ 126,7 Ft/db; 51 500 / 400 ≈ 128,8 Ft/db.\n2. Határköltség (az utolsó 100 db-ra) = Δ összköltség / 100: (30 000 – 20 000) / 100 = 100 Ft/db; (38 000 – 30 000) / 100 = 80 Ft/db; (51 500 – 38 000) / 100 = 135 Ft/db.\n3. Bevétel = 130 Ft × mennyiség: 13 000 / 26 000 / 39 000 / 52 000 Ft.\n4. Profit = bevétel – összköltség: –7 000 / –4 000 / +1 000 / +500 Ft.\n5. Átlagelemzés szerint 400 db-nál az átlagköltség (128,8 Ft) kisebb az árnál → „megéri többet sütni”. Határelemzés szerint az utolsó 100 db darabja 135 Ft-ba kerül > 130 Ft → csökkenti a profitot. Döntési szabály: addig érdemes növelni, amíg a határhaszon ≥ határköltség – 300 db a jobb döntés (profit +1 000 Ft).",
+    "notes": [
+      "Minden mutató képlettel, behelyettesítéssel és mértékegységgel szerepel.",
+      "A 200 → 300 db lépésnél a határköltség (80 Ft/db) kisebb az árnál, ezért a profit nő (–4 000 → +1 000 Ft); a 300 → 400 db lépésnél nagyobb (135 Ft/db), ezért csökken (+1 000 → +500 Ft).",
+      "A következtetés szembeállítja az átlag- és a határelemzést, és a döntési szabállyal indokol."
+    ]
+  },
+  "levelNotes": {
+    "kozep": "Középszinten nincs írásbeli elemző feladat, de a gyorskérdések rövid számításai (átlagköltség, határköltség, profit, reáljövedelem) ugyanezt a gondolkodást gyakoroltatják.",
+    "emelt": "Emelt szinten ez az Írásbeli II. adatokra épülő feladata (az appban 30 pont). Várható, hogy egy adatot megváltoztatnak (pl. az árat), és újra kell dönteni; segédeszköz nem használható (számológép csak akkor, ha a feladatlap megengedi)."
+  }
+}

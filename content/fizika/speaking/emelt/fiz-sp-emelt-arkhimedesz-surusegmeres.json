@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "fiz-sp-emelt-arkhimedesz-surusegmeres",
+  "subject": "fizika",
+  "revision": 1,
+  "level": "emelt",
+  "source": "generated",
+  "topic": "viz-levego-kornyezet",
+  "title": "Folyadékok és gázok sztatikája – sűrűségmérés Arkhimédész törvényével",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "speaking",
+  "type": "tetel",
+  "partNumber": 1,
+  "instructionsHu": "Fejtsd ki a nyugvó folyadékok és gázok fizikáját (nyomás, hidrosztatikai nyomás, Pascal törvénye, légnyomás, Arkhimédész törvénye, úszás feltétele) a gyakorlati alkalmazásokkal együtt! Ezután rugós erőmérővel határozd meg egy fémtest sűrűségét és egy ismeretlen folyadék sűrűségét Arkhimédész törvénye alapján, és becsüld meg a mérés hibáját!",
+  "prompts": [
+    "A nyomás fogalma; a hidrosztatikai nyomás (p = ρ·g·h), a közlekedőedények",
+    "Pascal törvénye és a hidraulikus gépek",
+    "A légnyomás, Torricelli kísérlete, a légnyomás változása a magassággal",
+    "Arkhimédész törvénye, a felhajtóerő eredete; az úszás, lebegés és elmerülés feltétele",
+    "A sűrűségmérés menete, kiértékelése és hibái"
+  ],
+  "sources": [
+    {
+      "title": "Mérés: sűrűség meghatározása felhajtóerővel",
+      "text": "Eszközök: 5 N-os méréshatárú, 0,05 N beosztású rugós erőmérő, ismeretlen anyagú fémhenger fonálon, két főzőpohár (egyikben csapvíz, másikban ismeretlen sűrűségű sóoldat), állvány.\nMenet: mérd meg a fémhenger súlyát levegőben (G)! Ezután úgy, hogy a henger teljesen a vízbe merüljön, de ne érjen a pohár aljához, olvasd le az erőmérőt (G_v)! Ismételd meg a mérést a sóoldatban (G_s)! A víz sűrűségét vedd 1000 kg/m³-nek.\nVárt tapasztalat: a vízbe merülő testet kisebb erő tartja meg; a felhajtóerő F = G − G_v. A test sűrűsége ρ = ρ_víz · G/(G − G_v), a sóoldaté ρ_s = ρ_víz · (G − G_s)/(G − G_v)."
+    }
+  ],
+  "keyPoints": [
+    "A nyomás p = F/A (Pa); a folyadék hidrosztatikai nyomása p = ρ·g·h, az edény alakjától független (hidrosztatikai paradoxon); a közlekedőedényekben a folyadék egy szinten áll.",
+    "Pascal törvénye: zárt folyadékban a külső nyomás minden irányban változatlanul terjed; hidraulikus emelő: F₁/A₁ = F₂/A₂.",
+    "A légnyomás a levegőoszlop súlyából ered, tengerszinten kb. 101 kPa (Torricelli: 760 mm higanyoszlop); a magassággal csökken.",
+    "Arkhimédész törvénye: a folyadékba merülő testre a kiszorított folyadék súlyával egyenlő felhajtóerő hat, F = ρ_f·g·V; oka az alsó és felső lapra ható nyomások különbsége.",
+    "Úszik a test, ha átlagsűrűsége kisebb a folyadékénál; lebeg, ha egyenlő; elmerül, ha nagyobb.",
+    "A mérésben a felhajtóerő G − G_v, a test térfogata V = (G − G_v)/(ρ_víz·g), sűrűsége ρ = ρ_víz·G/(G − G_v); a folyadék sűrűsége a két felhajtóerő arányából.",
+    "Hibabecslés: az erőmérő leolvasási hibája (±0,02–0,05 N) a kis felhajtóerőnél okoz nagy relatív hibát; légbuborékok a testen, a pohár falának érintése torzít."
+  ],
+  "speakingSeconds": 1200,
+  "prepSeconds": 1800,
+  "sampleAnswer": {
+    "turns": [
+      {
+        "speaker": "candidate",
+        "text": "A tételem a nyugvó folyadékok és gázok fizikája. A nyomás a felületre merőleges nyomóerő és a felület hányadosa, p = F/A, egysége a pascal. A nyugvó folyadék súlyából származik a hidrosztatikai nyomás, p = ρ·g·h, amely csak a folyadék sűrűségétől és a mélységtől függ, az edény alakjától nem; ezért áll egy szinten a folyadék a közlekedőedényekben, és ezért kell a gátakat lent vastagabbra építeni. Pascal törvénye szerint a zárt folyadékra kifejtett külső nyomás minden irányban változatlanul terjed tovább. Ezen alapul a hidraulikus emelő és az autó fékje: a két dugattyúnál a nyomás egyenlő, ezért F₁/A₁ = F₂/A₂, és a nagy dugattyún sokszoros erőt kapunk, de kisebb elmozdulással, így a munka nem nő.\nA levegőnek is van súlya, ezért légnyomás van; Torricelli higanyoszloppal mutatta ki, hogy tengerszinten 760 mm higanyoszlop nyomásával egyenlő, ez kb. 101 kPa. A magassággal a légnyomás csökken.\nArkhimédész törvénye szerint a folyadékba merülő testre a kiszorított folyadék súlyával egyenlő felhajtóerő hat: F = ρ_f·g·V. Az ok az, hogy a test alsó lapjára nagyobb hidrosztatikai nyomás hat, mint a felsőre. Ha a test átlagsűrűsége kisebb a folyadékénál, úszik, ha egyenlő, lebeg, ha nagyobb, elmerül. Ezért úszik az acélhajó, és így szabályozza a mélységét a tengeralattjáró a tartályai vízzel való feltöltésével.\nA mérésben a fémhenger súlya levegőben 2,70 N volt, vízbe merítve az erőmérő 1,70 N-t mutatott, tehát a felhajtóerő 1,00 N. A henger térfogata V = F/(ρ_víz·g) ≈ 1,0 · 10⁻⁴ m³, azaz kb. 100 cm³. A sűrűsége ρ = 1000 kg/m³ · 2,70/1,00 = 2700 kg/m³, ami az alumínium sűrűsége. A sóoldatban az erőmérő 1,62 N-t mutatott, ott a felhajtóerő 1,08 N, így a sóoldat sűrűsége 1000 · 1,08/1,00 = 1080 kg/m³. Az erőmérőt kb. ±0,02 N pontossággal tudtam leolvasni; a felhajtóerő 1,00 N körüli, ezért ennek relatív hibája kb. 4 %, a súlyé kb. 1 %, így a fém sűrűségét kb. 5 %-os, kb. ±130 kg/m³-es bizonytalansággal határoztam meg."
+      },
+      {
+        "speaker": "examiner",
+        "text": "Miért fontos, hogy a henger teljesen elmerüljön, de ne érjen a pohár aljához?"
+      },
+      {
+        "speaker": "candidate",
+        "text": "Ha csak részben merülne be, kisebb lenne a kiszorított víz térfogata, és túl kicsi felhajtóerőt mérnék. Ha leérne az aljára, a pohár alja is tartaná egy erővel, és az erőmérő emiatt kisebb értéket mutatna, ami túl nagy felhajtóerőt adna."
+      }
+    ],
+    "notes": [
+      "A tartalmi rész a nyomás fogalmától a hidrosztatikai nyomáson, Pascal törvényén, a légnyomáson át Arkhimédész törvényéig és az úszás feltételéig halad, és a felhajtóerő eredetét is megmagyarázza.",
+      "A mérés kiértékelése teljes: felhajtóerő, térfogat, a fém sűrűsége (2700 kg/m³, alumínium) és a sóoldat sűrűsége (1080 kg/m³), valamint a relatív hibák összegzésével számszerű hibabecslés.",
+      "A vizsgáztató kérdésére a mérési hibák irányát is helyesen indokolja, ami a mérés tudatos elvégzését mutatja."
+    ]
+  }
+}

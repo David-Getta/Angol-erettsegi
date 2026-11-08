@@ -1,0 +1,306 @@
+{
+  "schemaVersion": 1,
+  "id": "gr-passive",
+  "subject": "angol",
+  "revision": 2,
+  "level": "kozep",
+  "source": "generated",
+  "topic": "nyelvtan",
+  "title": "Szenvedő szerkezet",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "grammar",
+  "type": "lesson",
+  "category": "passive",
+  "summaryHu": "A szenvedő szerkezetet (be + V3) akkor használjuk, ha nem az a fontos, ki végzi a cselekvést, hanem az, hogy mi történik valakivel vagy valamivel. A magyar ilyenkor többnyire általános alanyú mondatot használ („Megjavították az autót.”), ezért a magyar anyanyelvűek gyakran kihagyják a be igét, rossz igeidőt tesznek rá, vagy a V3 helyett a második alakot írják. A vizsgán az igealakos feladatban és a lyukas szövegekben közvetlenül pontot ér, az íráskészségnél pedig hivatalos levélben és cikkben a „Nyelvhelyesség, helyesírás” szempontnál számít.",
+  "rules": [
+    {
+      "title": "Képzés: be + V3, az igeidőt a be hordozza",
+      "explanation": "A szenvedő szerkezetben a főige mindig harmadik alakban (V3, past participle) áll: szabályos igéknél -ed (cleaned), rendhagyóknál a szótár 3. oszlopa (written, built, taken, stolen). Az igeidőt a be ige mutatja, ugyanabban az időben, mint a cselekvő mondatban: is cleaned (Present Simple), was cleaned (Past Simple), has been cleaned (Present Perfect), will be cleaned (jövő idő), is being cleaned (Present Continuous), was being cleaned (Past Continuous), had been cleaned (Past Perfect). Tagadásnál és kérdésnél is a be (illetve az első segédige) változik: wasn't built, Has it been sold?",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "The classroom is cleaned every afternoon.",
+          "hu": "Az osztálytermet minden délután kitakarítják.",
+          "note": "every afternoon → szokás: is + V3."
+        },
+        {
+          "en": "The bridge was built in 1849.",
+          "hu": "A hidat 1849-ben építették.",
+          "note": "Lezárt múltbeli időpont: was + V3."
+        },
+        {
+          "en": "Our flat has just been redecorated.",
+          "hu": "A lakásunkat most újították fel.",
+          "note": "Jelenre ható eredmény: has been + V3."
+        }
+      ]
+    },
+    {
+      "title": "Mikor használjuk? – a cselekvő és a by",
+      "explanation": "Akkor választjuk a szenvedő szerkezetet, ha a cselekvő ismeretlen, nem fontos vagy magától értetődik, illetve ha a mondat a cselekvés tárgyáról szól. A cselekvőt a by vezeti be (magyarul: által, -tól/-től), de csak akkor nevezzük meg, ha új vagy fontos információ. Eszközt a with jelöl (written with a pencil).",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "My bike was stolen last night.",
+          "hu": "Tegnap este ellopták a biciklimet.",
+          "note": "Nem tudjuk, ki lopta el – nincs by."
+        },
+        {
+          "en": "Hamlet was written by Shakespeare.",
+          "hu": "A Hamletet Shakespeare írta.",
+          "note": "A by + cselekvő itt a lényeges információ."
+        },
+        {
+          "en": "English is spoken in many countries.",
+          "hu": "Sok országban beszélnek angolul."
+        }
+      ]
+    },
+    {
+      "title": "Módbeli segédigével, to-val és -ing alakkal",
+      "explanation": "Módbeli segédige után: modal + be + V3 (must be done, can be seen, should be avoided). Főnévi igenévként: to be + V3 (want to be invited). Ott, ahol -ing alak kell (pl. like, hate, enjoy, avoid után, elöljárószó után): being + V3 (I hate being interrupted).",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "Mobile phones must be switched off during the exam.",
+          "hu": "A vizsga alatt a mobiltelefonokat ki kell kapcsolni."
+        },
+        {
+          "en": "The castle can be visited for free on Sundays.",
+          "hu": "A vár vasárnaponként ingyen látogatható."
+        },
+        {
+          "en": "She doesn't like being told what to do.",
+          "hu": "Nem szereti, ha megmondják neki, mit csináljon."
+        }
+      ]
+    },
+    {
+      "title": "Két tárgyú igék: I was given…, We were told…",
+      "explanation": "A give, send, offer, show, tell, teach, promise típusú igéknek két tárgyuk van (valakinek valamit). Szenvedő szerkezetben általában a személy lesz az alany: I was given a present. A magyar „kaptam”, „azt mondták nekünk” fordítás miatt sokan kerülik ezt a szerkezetet, pedig az angolban nagyon gyakori és természetes.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "I was offered a summer job at the hotel.",
+          "hu": "Felajánlottak nekem egy nyári munkát a szállodában."
+        },
+        {
+          "en": "We were told to wait outside.",
+          "hu": "Azt mondták nekünk, hogy várjunk kint."
+        }
+      ]
+    },
+    {
+      "title": "have/get something done – megcsináltatni valamit",
+      "explanation": "Ha valaki más végzi el nekünk a munkát (általában fizetünk érte), a have + tárgy + V3 szerkezetet használjuk; a get + tárgy + V3 ennek kötetlenebb változata. Az igeidőt a have/get hordozza: I'm having my car repaired, I had my hair cut. Ugyanezt a szerkezetet használjuk akkor is, ha valami kellemetlen történik velünk: She had her bag stolen.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "I'm having my car repaired tomorrow.",
+          "hu": "Holnap megjavíttatom az autómat."
+        },
+        {
+          "en": "We had our house painted last summer.",
+          "hu": "Tavaly nyáron kifestettük a házat (festővel).",
+          "note": "Nem mi magunk festettük, hanem festőt fogadtunk."
+        },
+        {
+          "en": "She had her bag stolen on the bus.",
+          "hu": "Ellopták a táskáját a buszon.",
+          "note": "Elszenvedett esemény, nem rendelés."
+        }
+      ]
+    },
+    {
+      "title": "Személytelen szenvedő: It is said that… / He is said to…",
+      "explanation": "Hírekben, cikkekben, hivatalos szövegekben gyakori. Két szerkezet: It + is said / believed / thought / reported / expected + that + mellékmondat, vagy alany + is said / believed + to + ige. Ha az állítás a múltra vonatkozik, to have + V3 kell (He is believed to have left). Magyarul: azt mondják, úgy tartják, állítólag.",
+      "emeltOnly": true,
+      "examples": [
+        {
+          "en": "It is believed that the castle was built in the 13th century.",
+          "hu": "Úgy tartják, hogy a várat a 13. században építették."
+        },
+        {
+          "en": "He is said to be the richest man in the town.",
+          "hu": "Állítólag ő a város leggazdagabb embere."
+        },
+        {
+          "en": "The thieves are thought to have left the country.",
+          "hu": "Úgy gondolják, hogy a tolvajok elhagyták az országot.",
+          "note": "Múltbeli cselekvés: to have + V3."
+        }
+      ]
+    }
+  ],
+  "commonMistakes": [
+    {
+      "wrong": "The bridge built in 1849.",
+      "right": "The bridge was built in 1849.",
+      "why": "A szenvedő szerkezetből nem maradhat ki a be ige: a built önmagában itt nem állítmány. Magyarul „a hidat építették”, angolul viszont a híd az alany, ezért was built."
+    },
+    {
+      "wrong": "My phone was stole yesterday.",
+      "right": "My phone was stolen yesterday.",
+      "why": "A be után a harmadik alak (V3) áll, nem a második: steal – stole – stolen. Rendhagyó igéknél mindig a 3. alakot használd (written, taken, given, broken)."
+    },
+    {
+      "wrong": "It was built a new school in our town.",
+      "right": "A new school was built in our town.",
+      "why": "A magyar „Építettek egy új iskolát” mondatnak nincs alanya, az angol mondatnak viszont kell. Ilyenkor a cselekvés tárgya (a new school) lesz a szenvedő mondat alanya; az It was built… szerkezet itt hibás."
+    },
+    {
+      "wrong": "The letter was written from my grandmother.",
+      "right": "The letter was written by my grandmother.",
+      "why": "Szenvedő mondatban a cselekvőt a by vezeti be. A from itt hibás; a with eszközt jelöl (written with a pen)."
+    },
+    {
+      "wrong": "I cut my hair yesterday. (a fodrásznál)",
+      "right": "I had my hair cut yesterday.",
+      "why": "Az I cut my hair azt jelenti, hogy saját magad vágtad le. Ha a fodrász csinálta, a have + tárgy + V3 szerkezet kell: „levágattam a hajamat”."
+    },
+    {
+      "wrong": "The new stadium is building now.",
+      "right": "The new stadium is being built now.",
+      "why": "Éppen zajló szenvedő cselekvésnél am/is/are + being + V3 kell. Az is building cselekvő alak – mintha a stadion maga építene valamit."
+    }
+  ],
+  "examTips": [
+    "Igealakok (zárójeles ige): ha a mondat alanya nem végezheti a cselekvést (a levél nem ír, a híd nem épít), szenvedő alak kell. Először az igeidőt határozd meg az időhatározókból (last year, since, already, tomorrow), azt tedd a be igére, a főigét pedig V3-ba.",
+    "Nyitott lyukas szöveg és kimaradt szavak: ha a hiány egy V3 előtt van (The museum ___ opened in 1902.), gyakran a be megfelelő alakja hiányzik (was, is, been, being). A cselekvő előtt a by is gyakori hiányzó szó.",
+    "Íráskészség: hivatalos levélben, cikkben a szenvedő szerkezet tárgyilagosabb és udvariasabb (I was told that…, The problem has not been solved yet.). A változatos, helyes szerkezethasználat a „Nyelvhelyesség, helyesírás” és a „Szókincs, kifejezésmód” szempontnál is számít."
+  ],
+  "practice": [
+    {
+      "id": "1",
+      "kind": "choice",
+      "prompt": "My grandparents' house ___ in 1965.",
+      "options": [
+        {
+          "key": "A",
+          "text": "built"
+        },
+        {
+          "key": "B",
+          "text": "was building"
+        },
+        {
+          "key": "C",
+          "text": "has been built"
+        },
+        {
+          "key": "D",
+          "text": "was built"
+        }
+      ],
+      "answer": "D",
+      "category": "passive",
+      "explanation": "Helyes: was built. A ház nem épít, hanem felépítették, ezért szenvedő szerkezet kell; az in 1965 lezárt múltbeli időpont, így Past Simple: was + V3.",
+      "wrongOptions": {
+        "A": "A be nélkül a built cselekvő múlt idő lenne: a mondat azt állítaná, hogy a ház épített valamit.",
+        "B": "Ez cselekvő, folyamatos alak: azt jelentené, hogy a ház éppen épített valamit.",
+        "C": "A Present Perfect nem állhat konkrét múltbeli időponttal (in 1965)."
+      }
+    },
+    {
+      "id": "2",
+      "kind": "text",
+      "prompt": "Mobile phones must ___ (switch) off during the concert.",
+      "cue": "switch",
+      "answer": [
+        "be switched"
+      ],
+      "category": "passive",
+      "explanation": "Helyes: be switched. A telefonok nem kapcsolnak ki semmit, őket kell kikapcsolni, ezért szenvedő szerkezet kell. Módbeli segédige (must) után: be + V3."
+    },
+    {
+      "id": "3",
+      "kind": "text",
+      "prompt": "Since 2010, more than a hundred trees ___ (plant) in our street.",
+      "cue": "plant",
+      "answer": [
+        "have been planted"
+      ],
+      "category": "passive",
+      "explanation": "Helyes: have been planted. A fákat elültették (szenvedő), a since 2010 pedig a múltban kezdődő, máig tartó időszakot jelöl, ezért Present Perfect: have been + V3. Az alany többes számú (trees), ezért have."
+    },
+    {
+      "id": "4",
+      "kind": "choice",
+      "prompt": "Sorry, you can't use the lift at the moment. It ___.",
+      "options": [
+        {
+          "key": "A",
+          "text": "is repairing"
+        },
+        {
+          "key": "B",
+          "text": "has repaired"
+        },
+        {
+          "key": "C",
+          "text": "repairs"
+        },
+        {
+          "key": "D",
+          "text": "is being repaired"
+        }
+      ],
+      "answer": "D",
+      "category": "passive",
+      "explanation": "Helyes: is being repaired. A liftet éppen most javítják (at the moment), ezért szenvedő Present Continuous kell: is + being + V3.",
+      "wrongOptions": {
+        "A": "Cselekvő alak: azt jelentené, hogy a lift javít valamit.",
+        "B": "Cselekvő Present Perfect: azt jelentené, hogy a lift megjavított valamit.",
+        "C": "Cselekvő Present Simple: szokást jelentene, és a lift nem javít semmit."
+      }
+    },
+    {
+      "id": "5",
+      "kind": "text",
+      "prompt": "Last Saturday I had my bike ___ (repair) at the shop near the station.",
+      "cue": "repair",
+      "answer": [
+        "repaired"
+      ],
+      "category": "passive",
+      "explanation": "Helyes: repaired. A have + tárgy + V3 szerkezet azt jelenti, hogy valaki más csinálta meg nekünk (megjavíttattam a biciklimet). Az igeidőt a had hordozza, a főige V3."
+    },
+    {
+      "id": "6",
+      "kind": "choice",
+      "prompt": "The painting ___ to be worth over a million euros.",
+      "options": [
+        {
+          "key": "A",
+          "text": "says"
+        },
+        {
+          "key": "B",
+          "text": "said"
+        },
+        {
+          "key": "C",
+          "text": "is saying"
+        },
+        {
+          "key": "D",
+          "text": "is said"
+        }
+      ],
+      "answer": "D",
+      "category": "passive",
+      "explanation": "Helyes: is said. Személytelen szenvedő szerkezet (emelt): alany + is said + to + ige = állítólag. „A festmény állítólag több mint egymillió eurót ér.”",
+      "wrongOptions": {
+        "A": "Cselekvő alak: azt jelentené, hogy a festmény mond valamit.",
+        "B": "A be nélkül a said cselekvő múlt idő lenne: azt jelentené, hogy a festmény mondott valamit. Az „állítólag” jelentéshez szenvedő alak kell: is said.",
+        "C": "Cselekvő folyamatos alak, ugyanúgy értelmetlen: a festmény nem beszél."
+      }
+    }
+  ],
+  "relatedCategories": [
+    "tense",
+    "verb-form",
+    "modal"
+  ]
+}

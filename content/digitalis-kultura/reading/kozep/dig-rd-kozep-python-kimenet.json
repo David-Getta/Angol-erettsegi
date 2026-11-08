@@ -1,0 +1,111 @@
+{
+  "schemaVersion": 1,
+  "id": "dig-rd-kozep-python-kimenet",
+  "subject": "digitalis-kultura",
+  "revision": 1,
+  "level": "kozep",
+  "source": "generated",
+  "topic": "algoritmizalas",
+  "title": "Mit ír ki a program? – Python alapok",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "reading",
+  "type": "kod-kimenet",
+  "instructions": "Mit ír ki a képernyőre az alábbi Python-programrészlet? Írja le pontosan a kimenetet! Ha a print több értéket ír ki, a Pythonhoz hasonlóan egy szóközzel válassza el őket. A behúzás jelzi, mely utasítások tartoznak a ciklushoz vagy az elágazáshoz. A 0. a példa.",
+  "example": {
+    "id": "0",
+    "kind": "text",
+    "prompt": "Mit ír ki a program?\na = 7\nb = 2\nprint(a // b, a % b)",
+    "answer": [
+      "3 1"
+    ],
+    "category": "kimenet-formatum",
+    "explanation": "Kimenet: 3 1. A // az egészosztás (7 // 2 = 3), a % a maradék (7 % 2 = 1). A print a vesszővel elválasztott értékeket egy szóközzel elválasztva írja ki."
+  },
+  "items": [
+    {
+      "id": "1",
+      "kind": "text",
+      "prompt": "Mit ír ki a program?\ns = 0\nfor i in range(1, 5):\n    s = s + i\nprint(s)",
+      "answer": [
+        "10"
+      ],
+      "category": "algoritmus-logika",
+      "explanation": "Kimenet: 10. A range(1, 5) az 1, 2, 3, 4 értékeket adja – a felső határ (5) már nem tartozik bele –, így s = 1 + 2 + 3 + 4 = 10. A print a cikluson kívül van (nincs behúzva), ezért csak egyszer fut le."
+    },
+    {
+      "id": "2",
+      "kind": "text",
+      "prompt": "Mit ír ki a program?\nszo = \"informatika\"\nprint(len(szo))",
+      "answer": [
+        "11"
+      ],
+      "category": "adattipus-adatszerkezet",
+      "explanation": "Kimenet: 11. A len() a karakterlánc hosszát, azaz a karakterek számát adja: i-n-f-o-r-m-a-t-i-k-a = 11 karakter."
+    },
+    {
+      "id": "3",
+      "kind": "text",
+      "prompt": "Mit ír ki a program?\nx = 15\nif x > 10 and x % 2 == 0:\n    print(\"A\")\nelif x > 10:\n    print(\"B\")\nelse:\n    print(\"C\")",
+      "answer": [
+        "B"
+      ],
+      "caseSensitive": true,
+      "category": "algoritmus-logika",
+      "explanation": "Kimenet: B. Az első feltétel hamis, mert az and miatt mindkét részének igaznak kellene lennie, de 15 % 2 = 1, tehát a 15 nem páros. Az elif feltétele (15 > 10) igaz, így a B ág fut le, az else már nem."
+    },
+    {
+      "id": "4",
+      "kind": "text",
+      "prompt": "Mit ír ki a program?\nlista = [4, 8, 1, 9, 3]\nprint(lista[1] + lista[-1])",
+      "answer": [
+        "11"
+      ],
+      "category": "adattipus-adatszerkezet",
+      "explanation": "Kimenet: 11. A lista indexelése 0-tól indul, ezért lista[1] a második elem, a 8; a negatív index hátulról számol, lista[-1] az utolsó elem, a 3. 8 + 3 = 11."
+    },
+    {
+      "id": "5",
+      "kind": "text",
+      "prompt": "Mit ír ki a program?\nn = 0\ndb = 0\nwhile n < 20:\n    n = n + 6\n    db = db + 1\nprint(db, n)",
+      "answer": [
+        "4 24"
+      ],
+      "category": "algoritmus-logika",
+      "explanation": "Kimenet: 4 24. A ciklus addig fut, amíg n < 20: n értéke 6, 12, 18, majd 24 lesz, közben db 1, 2, 3, 4. Amikor n = 24, a feltétel hamis, a ciklus leáll. A feltételt mindig a ciklusmag elején vizsgálja, ezért n túllépheti a 20-at."
+    },
+    {
+      "id": "6",
+      "kind": "text",
+      "prompt": "Mit ír ki a program?\nszamok = [3, 7, 2, 8, 5]\ndb = 0\nfor sz in szamok:\n    if sz > 4:\n        db += 1\nprint(db)",
+      "answer": [
+        "3"
+      ],
+      "category": "algoritmus-logika",
+      "explanation": "Kimenet: 3. Ez a megszámlálás tétele: a ciklus végigmegy a lista elemein, és a 4-nél nagyobbaknál (7, 8, 5) növeli a számlálót. A db += 1 ugyanaz, mint a db = db + 1."
+    },
+    {
+      "id": "7",
+      "kind": "text",
+      "prompt": "Mit ír ki a program?\nprint(\"3\" + \"4\", 3 + 4)",
+      "answer": [
+        "34 7"
+      ],
+      "category": "adattipus-adatszerkezet",
+      "explanation": "Kimenet: 34 7. Idézőjelek között karakterlánc (str) áll, két karakterlánc „összeadása” összefűzés: \"3\" + \"4\" = \"34\". Két egész szám (int) összege viszont 7. Ezért kell a beolvasott szöveget int()-tel számmá alakítani, mielőtt számolunk vele."
+    },
+    {
+      "id": "8",
+      "kind": "text",
+      "prompt": "Mit ír ki a program?\nvaros = \"Budapest\"\nprint(varos[0:4])",
+      "answer": [
+        "Buda"
+      ],
+      "caseSensitive": true,
+      "category": "adattipus-adatszerkezet",
+      "explanation": "Kimenet: Buda. A szeletelés [0:4] a 0., 1., 2. és 3. indexű karaktert adja (B, u, d, a); a záró index (4) már nem tartozik bele."
+    }
+  ],
+  "glossary": [],
+  "suggestedMinutes": 10
+}

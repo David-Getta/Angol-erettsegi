@@ -1,0 +1,85 @@
+{
+  "schemaVersion": 1,
+  "id": "kem-sp-emelt-tioszulfat-sebesseg-b-tetel",
+  "subject": "kemia",
+  "revision": 1,
+  "level": "emelt",
+  "source": "generated",
+  "topic": "reakciok",
+  "title": "A reakciósebesség függése a koncentrációtól és a hőmérséklettől",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "speaking",
+  "type": "b-tetel",
+  "partNumber": 2,
+  "instructionsHu": "Végezze el (értelmezze) a leírt kísérletet! Ismertesse a tapasztalatokat, írja fel a reakció egyenletét, és a mért idők alapján magyarázza meg a koncentráció és a hőmérséklet hatását a reakciósebességre az ütközési elmélettel!",
+  "prompts": [
+    "Mit tapasztalunk a poharakban, és mi okozza az X jel eltűnését?",
+    "Írja fel a reakció egyenletét, és határozza meg a reakció típusát!",
+    "Értelmezze a mért időket: hogyan függ a reakciósebesség a koncentrációtól és a hőmérséklettől?",
+    "Magyarázza meg a jelenségeket az ütközési elmélet alapján!"
+  ],
+  "followUpQuestions": [
+    "Hogyan módosítaná a kísérletet, hogy a katalizátor hatását is vizsgálni lehessen?"
+  ],
+  "usefulPhrases": [
+    {
+      "en": "S₂O₃²⁻ + 2 H⁺ → S + SO₂ + H₂O",
+      "hu": "A tioszulfát bomlása savas közegben."
+    },
+    {
+      "en": "idő ∝ 1 / reakciósebesség",
+      "hu": "Azonos mennyiségű termék kiválásáig mért idő értelmezése."
+    },
+    {
+      "en": "ütközési elmélet",
+      "hu": "Reakció csak ütközéskor, és csak hatásos ütközéskor."
+    },
+    {
+      "en": "hatásos ütközés, aktiválási energia",
+      "hu": "A hőmérséklet hatásának magyarázata."
+    },
+    {
+      "en": "egyszerre egy tényezőt változtatunk",
+      "hu": "A kísérlettervezés alapelve (kontrollált változók)."
+    },
+    {
+      "en": "hibaforrás",
+      "hu": "A mérés pontatlanságának okai – emelt szinten elvárt megnevezni."
+    }
+  ],
+  "sources": [
+    {
+      "title": "A kísérlet",
+      "text": "Három főzőpohárba nátrium-tioszulfát-oldatot öntünk: az elsőbe 50 cm³ 0,10 mol/dm³-es oldatot, a másodikba 25 cm³ ugyanilyen oldatot és 25 cm³ desztillált vizet, a harmadikba 50 cm³ 0,10 mol/dm³-es oldatot, amelyet előzőleg kb. 40 °C-ra melegítettünk. A poharakat egy fekete X-szel megjelölt fehér papírlapra állítjuk. Mindegyikbe 10 cm³ 1 mol/dm³-es sósavat öntünk, és stopperrel mérjük, mennyi idő múlva tűnik el felülről nézve az X jel."
+    },
+    {
+      "title": "Mért idők",
+      "text": "1. pohár (szobahőmérséklet): 48 s; 2. pohár (hígított, szobahőmérséklet): 95 s; 3. pohár (kb. 40 °C): 11 s."
+    }
+  ],
+  "keyPoints": [
+    "Az oldat fokozatosan opálos, majd sárgásfehéren zavaros lesz a kiváló kolloid kéntől; szúrós szag (SO₂) is érezhető; a zavarosság eltakarja az X-et.",
+    "Na₂S₂O₃ + 2 HCl → 2 NaCl + S + SO₂ + H₂O (ionosan: S₂O₃²⁻ + 2 H⁺ → S + SO₂ + H₂O).",
+    "A reakció redoxireakció (diszproporció): a tioszulfát kénatomjainak átlagos oxidációs száma +2, a kénben 0, a kén-dioxidban +4.",
+    "Az eltűnésig mért idő fordítottan arányos az átlagos reakciósebességgel: ugyanannyi kén kiválásához rövidebb idő = nagyobb sebesség.",
+    "A felére hígított oldatban kb. kétszer annyi idő kellett: a reakciósebesség a koncentrációval nő (itt közel egyenesen arányos).",
+    "A melegebb oldatban sokkal rövidebb idő kellett: a hőmérséklet emelésével a reakciósebesség erősen nő.",
+    "Ütközési elmélet: nagyobb koncentrációnál időegység alatt több ütközés történik; magasabb hőmérsékleten nagyobb az aktiválási energiát elérő (hatásos) ütközések aránya."
+  ],
+  "speakingSeconds": 300,
+  "prepSeconds": 450,
+  "sampleAnswer": {
+    "turns": [
+      {
+        "speaker": "candidate",
+        "text": "Mindhárom pohárban a sósav hozzáöntése után egy ideig nem látunk változást, majd az oldat opálossá, végül sárgásfehéren zavarossá válik, és enyhén szúrós szag érezhető. A zavarosodást a kiváló, finom eloszlású kén okozza, amely egy idő után teljesen eltakarja a papírlapon lévő X jelet. A lejátszódó reakció:\nNa₂S₂O₃ + 2 HCl → 2 NaCl + S + SO₂ + H₂O\nionegyenlettel: S₂O₃²⁻ + 2 H⁺ → S + SO₂ + H₂O. A reakció diszproporció: a tioszulfátion kénatomjainak átlagos oxidációs száma +2, ebből a kénben 0, a kén-dioxidban +4 lesz.\nAz X eltűnéséig mindig ugyanannyi kénnek kell kiválnia, ezért a mért idő fordítottan arányos az átlagos reakciósebességgel: minél rövidebb az idő, annál gyorsabb a reakció.\nAz első és a második pohár összevetése a koncentráció hatását mutatja. Az összeöntés után mindkét pohárban 60 cm³ az oldat térfogata és ugyanannyi a sósav, de a második pohárban a tioszulfát koncentrációja a fele. Az idő 48 másodpercről 95 másodpercre, vagyis közel a kétszeresére nőtt, tehát a reakciósebesség a koncentrációval nő, ebben az esetben közel egyenesen arányosan. Az ütközési elmélet szerint a reakcióhoz a részecskéknek ütközniük kell; nagyobb koncentrációban egységnyi térfogatban több részecske van, így időegység alatt több ütközés történik.\nAz első és a harmadik pohár összevetése a hőmérséklet hatását mutatja: a melegített oldatban az idő 11 másodpercre csökkent, a reakció mintegy négyszer gyorsabb lett. Magasabb hőmérsékleten a részecskék átlagos mozgási energiája nagyobb, gyakrabban ütköznek, és főleg sokkal nagyobb azoknak az ütközéseknek az aránya, amelyekben az energia eléri az aktiválási energiát; csak ezek a hatásos ütközések vezetnek reakcióhoz.\nA mérés hibaforrása, hogy az X eltűnése szubjektív megítélés, és a melegített oldat hőmérséklete a hideg sósav hozzáöntésekor és a mérés alatt csökken."
+      }
+    ],
+    "notes": [
+      "Tapasztalat: a zavarosodást, a szagot és az X eltűnését pontosan leírja, és helyesen értelmezi a mért időket (idő ↔ sebesség fordított aránya).",
+      "Magyarázat: rendezett molekula- és ionegyenletet ír, oxidációs számokkal mutatja be a diszproporciót, és mindkét hatást az ütközési elmélettel (ütközési gyakoriság, hatásos ütközések aránya) magyarázza.",
+      "Kísérleti gondolkodás: ellenőrzi, hogy csak egy tényező változott (azonos össztérfogat, azonos savmennyiség), és megnevezi a hibaforrásokat – ez az emelt szintű kísérletelemzés lényege."
+    ]
+  }
+}

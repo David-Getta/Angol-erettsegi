@@ -1,0 +1,144 @@
+{
+  "schemaVersion": 1,
+  "id": "dig-wr-emelt-tablazat-webaruhaz",
+  "subject": "digitalis-kultura",
+  "revision": 1,
+  "level": "emelt",
+  "source": "generated",
+  "topic": "tablazatkezeles",
+  "title": "Táblázatkezelés: webáruház rendelései",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "writing",
+  "type": "tablazatkezeles",
+  "taskNumber": 2,
+  "situation": "Egy kis webáruház 2026. első félévének rendeléseit kell kiértékelnie.\n\nForrásfájlok (UTF-8, tabulátorral tagolt, fejléces):\n• rendeles.txt – A: Rendelésszám, B: Dátum, C: Vevőkód, D: Termékkód, E: Mennyiség; 480 rendelés (2–481. sor), 2026. január 1. és június 30. között.\n• termek.txt – A: Termékkód, B: Megnevezés, C: Egységár (Ft); 25 termék (2–26. sor).\n\nTöltse be a rendeléseket a Rendelések munkalap, a termékeket a Termékek munkalap A1-es cellájától, és mentse a munkafüzetet webaruhaz néven a táblázatkezelő saját formátumában! Minden számítást képlettel végezzen!\n\n1. Töltse be az adatokat a két munkalapra, és mentse a munkafüzetet!\n2. A Rendelések lap F oszlopában (Egységár) jelenítse meg a termék egységárát a Termékek lapról, keresőfüggvénnyel!\n3. A G oszlopban (Érték) számítsa ki a rendelés értékét!\n4. A H oszlopban (Kedvezmény) a kedvezmény mértéke jelenjen meg: 50 000 Ft feletti értéknél 10%, 20 000 Ft felettinél 5%, egyébként 0%!\n5. Az I oszlopban (Fizetendő) a kedvezménnyel csökkentett érték jelenjen meg, egész forintra kerekítve!\n6. A J oszlopban (Hónap) a rendelés hónapjának sorszáma jelenjen meg!\n7. Az M1: Hónap, N1: Bevétel fejléc alatt az M2:M7 cellákba írja az 1–6 számokat, az N2:N7 cellákban számítsa ki a havi bevételt (a Fizetendő összege)!\n8. A K oszlopban (Hétvége) jelenjen meg IGAZ, ha a rendelést szombaton vagy vasárnap adták le, egyébként HAMIS! Az M9 cellába írja: Hétvégi rendelések, az N9-ben számítsa ki a számukat!\n9. Az M10 cellába írja: Legnagyobb rendelés; az N10-ben jelenítse meg a legnagyobb fizetendő összegű rendelés rendelésszámát!\n10. Készítsen vonaldiagramot a havi bevételről (N2:N7, a vízszintes tengelyen a hónapok sorszámával) „Havi bevétel 2026 első félévében” címmel!",
+  "points": [
+    {
+      "id": "p1",
+      "text": "1. Betöltés két munkalapra, mentés (1 pont)"
+    },
+    {
+      "id": "p2",
+      "text": "2. Egységár keresőfüggvénnyel a másik munkalapról (2 pont)"
+    },
+    {
+      "id": "p3",
+      "text": "3. Rendelési érték (1 pont)"
+    },
+    {
+      "id": "p4",
+      "text": "4. Kedvezménysávok egymásba ágyazott feltétellel, százalékformátum (2 pont)"
+    },
+    {
+      "id": "p5",
+      "text": "5. Fizetendő összeg kerekítéssel (1 pont)"
+    },
+    {
+      "id": "p6",
+      "text": "6. A hónap sorszáma dátumfüggvénnyel (1 pont)"
+    },
+    {
+      "id": "p7",
+      "text": "7. Havi bevételek feltételes összegzéssel (2 pont)"
+    },
+    {
+      "id": "p8",
+      "text": "8. Hétvége jelzése és a hétvégi rendelések száma (2 pont)"
+    },
+    {
+      "id": "p9",
+      "text": "9. A legnagyobb rendelés rendelésszáma (2 pont)"
+    },
+    {
+      "id": "p10",
+      "text": "10. Vonaldiagram a havi bevételről, címmel (1 pont)"
+    }
+  ],
+  "suggestedMinutes": 35,
+  "usefulPhrases": [
+    {
+      "en": "Termékek!$A$2:$C$26",
+      "hu": "hivatkozás egy másik munkalap tartományára"
+    },
+    {
+      "en": "=FKERES(D2;…;3;HAMIS)  /  =VLOOKUP(…,FALSE)",
+      "hu": "pontos egyezésű keresés kód alapján"
+    },
+    {
+      "en": "=HA(G2>50000;10%;HA(G2>20000;5%;0))  /  IF(…)",
+      "hu": "sávos szabály: a legszigorúbb feltétel kerüljön előre"
+    },
+    {
+      "en": "=KEREKÍTÉS(G2*(1-H2);0)  /  ROUND",
+      "hu": "kedvezményes ár egész forintra"
+    },
+    {
+      "en": "=HÓNAP(B2)  /  =MONTH(B2)",
+      "hu": "a dátum hónapjának sorszáma"
+    },
+    {
+      "en": "=HÉT.NAPJA(B2;2)>5  /  =WEEKDAY(B2,2)>5",
+      "hu": "IGAZ a szombatra és vasárnapra (2-es típus: hétfő = 1)"
+    },
+    {
+      "en": "=SZUMHA(feltételtartomány;feltétel;összegtartomány)  /  SUMIF",
+      "hu": "feltételes összegzés hónaponként"
+    },
+    {
+      "en": "=INDEX(A:A;HOL.VAN(MAX(I:I);I:I;0))  /  INDEX/MATCH",
+      "hu": "a maximumhoz tartozó azonosító"
+    }
+  ],
+  "checklistExtra": [],
+  "modelAnswer": {
+    "text": "Megoldás – magyar Excel-függvénynevek (a magyar felületű LibreOffice Calcban is ezek), zárójelben az angol nyelvű változat.\n\n1. Két munkalapot hozok létre (Rendelések, Termékek), mindkettőre Adatok > Szövegből/CSV-ből (UTF-8, tabulátor), A1-től. Mentés: webaruhaz.xlsx.\n\n2. F1: Egységár; F2: =FKERES(D2;Termékek!$A$2:$C$26;3;HAMIS)   (=VLOOKUP(D2,Termékek!$A$2:$C$26,3,FALSE)); újabb Excelben: =XKERES(D2;Termékek!$A$2:$A$26;Termékek!$C$2:$C$26)   (=XLOOKUP(…)). A HAMIS pontos egyezést kér, a termékkódok így nem kell, hogy rendezettek legyenek. Másolás F481-ig.\n\n3. G1: Érték; G2: =E2*F2.\n\n4. H1: Kedvezmény; H2: =HA(G2>50000;10%;HA(G2>20000;5%;0))   (=IF(G2>50000,10%,IF(G2>20000,5%,0))), százalékformátummal. A nagyobb határt kell előbb vizsgálni, különben az 50 000 feletti rendelések is csak 5%-ot kapnának.\n\n5. I1: Fizetendő; I2: =KEREKÍTÉS(G2*(1-H2);0)   (=ROUND(G2*(1-H2),0)), pénznem formátum, Ft.\n\n6. J1: Hónap; J2: =HÓNAP(B2)   (=MONTH(B2)).\n\n7. M1: Hónap, N1: Bevétel; M2:M7: 1, 2, …, 6; N2: =SZUMHA($J$2:$J$481;M2;$I$2:$I$481)   (=SUMIF($J$2:$J$481,M2,$I$2:$I$481)), másolás N7-ig.\n\n8. K1: Hétvége; K2: =HÉT.NAPJA(B2;2)>5   (=WEEKDAY(B2,2)>5). A 2-es típusnál a hétfő 1, a vasárnap 7, így a szombat és a vasárnap nagyobb 5-nél, és a képlet IGAZ vagy HAMIS értéket ad. N9: =DARABTELI(K2:K481;IGAZ)   (=COUNTIF(K2:K481,TRUE)).\n\n9. N10: =INDEX(A2:A481;HOL.VAN(MAX(I2:I481);I2:I481;0))   (=INDEX(A2:A481,MATCH(MAX(I2:I481),I2:I481,0))). A MAX megadja a legnagyobb összeget, a HOL.VAN a sorát, az INDEX az ugyanabban a sorban álló rendelésszámot.\n\n10. N1:N7 kijelölve: Beszúrás > Vonaldiagram; Adatok kijelölése > Vízszintes tengely feliratai: M2:M7; diagramcím: Havi bevétel 2026 első félévében. Mentés.",
+    "pointsCovered": [
+      {
+        "id": "p1",
+        "quote": "Két munkalapot hozok létre (Rendelések, Termékek)"
+      },
+      {
+        "id": "p2",
+        "quote": "F2: =FKERES(D2;Termékek!$A$2:$C$26;3;HAMIS)"
+      },
+      {
+        "id": "p3",
+        "quote": "G2: =E2*F2"
+      },
+      {
+        "id": "p4",
+        "quote": "H2: =HA(G2>50000;10%;HA(G2>20000;5%;0))"
+      },
+      {
+        "id": "p5",
+        "quote": "I2: =KEREKÍTÉS(G2*(1-H2);0)"
+      },
+      {
+        "id": "p6",
+        "quote": "J2: =HÓNAP(B2)   (=MONTH(B2))"
+      },
+      {
+        "id": "p7",
+        "quote": "N2: =SZUMHA($J$2:$J$481;M2;$I$2:$I$481)"
+      },
+      {
+        "id": "p8",
+        "quote": "K2: =HÉT.NAPJA(B2;2)>5   (=WEEKDAY(B2,2)>5)"
+      },
+      {
+        "id": "p9",
+        "quote": "N10: =INDEX(A2:A481;HOL.VAN(MAX(I2:I481);I2:I481;0))"
+      },
+      {
+        "id": "p10",
+        "quote": "diagramcím: Havi bevétel 2026 első félévében"
+      }
+    ],
+    "notes": [
+      "A követelmények teljesítése: minden oszlop és összesítő cella képlettel készül, a munkalapok közti hivatkozás (Termékek!$A$2:$C$26) helyes.",
+      "Szakszerű módszer: keresőfüggvény a másik lapról, egymásba ágyazott HA a sávokra a helyes sorrendben, SZUMHA a havi összegzésre, logikai értéket adó képlet a hétvégére, INDEX + HOL.VAN a maximumhoz tartozó azonosítóra.",
+      "Pontosság: a kerekítés a fizetendő összegnél valóban megtörténik, a százalékok százalékformátumban jelennek meg, a hét napjának típusa (2) miatt a szombat–vasárnap helyesen számít hétvégének."
+    ]
+  }
+}

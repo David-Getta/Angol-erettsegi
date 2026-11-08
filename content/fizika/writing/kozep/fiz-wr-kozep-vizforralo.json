@@ -1,0 +1,45 @@
+{
+  "schemaVersion": 1,
+  "id": "fiz-wr-kozep-vizforralo",
+  "subject": "fizika",
+  "revision": 1,
+  "level": "kozep",
+  "source": "generated",
+  "topic": "elektromossag",
+  "title": "Számításos feladat: az elektromos vízforraló",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "writing",
+  "type": "szamitasos",
+  "taskNumber": 1,
+  "situation": "Egy elektromos vízforraló adattábláján ez áll: 230 V, 2000 W. A forralóba 1,5 liter 20 °C-os csapvizet töltünk, és felforraljuk (100 °C-ig melegítjük). A forraló hatásfoka 90 %, vagyis a felvett elektromos energia 90 %-a melegíti a vizet. A víz fajhője 4200 J/(kg·°C), sűrűsége 1 kg/liter; 1 kWh elektromos energia ára 40 Ft.\n\na) Mekkora áram folyik a forraló fűtőszálán működés közben, és mekkora a fűtőszál ellenállása? (4 pont)\nb) Mennyi hő szükséges a víz felforralásához? (4 pont)\nc) Mennyi ideig tart a forralás? (5 pont)\nd) Mennyibe kerül egy ilyen forralás? (4 pont)\n\nA megoldás menetét, a felhasznált összefüggéseket írd le, és minden eredményt mértékegységgel adj meg!",
+  "points": [
+    { "id": "p1", "text": "a) Az áramerősség és a fűtőszál ellenállása (4 pont)" },
+    { "id": "p2", "text": "b) A víz felmelegítéséhez szükséges hő (4 pont)" },
+    { "id": "p3", "text": "c) A forralás ideje a hatásfok figyelembevételével (5 pont)" },
+    { "id": "p4", "text": "d) A felhasznált energia kWh-ban és a forralás költsége (4 pont)" }
+  ],
+  "suggestedMinutes": 35,
+  "usefulPhrases": [
+    { "en": "P = U·I", "hu": "Az elektromos teljesítmény: feszültség × áramerősség." },
+    { "en": "R = U/I = U²/P", "hu": "Ohm törvénye; a névleges adatokból az ellenállás közvetlenül is számolható." },
+    { "en": "Q = c·m·ΔT", "hu": "A felmelegítéshez szükséges hő: fajhő × tömeg × hőmérséklet-változás." },
+    { "en": "η = E_hasznos / E_befektetett", "hu": "A hatásfok; a befektetett (felvett) energia a hasznosnál mindig nagyobb." },
+    { "en": "E = P·t", "hu": "A felvett elektromos energia: teljesítmény × idő." },
+    { "en": "1 kWh = 3,6 · 10⁶ J", "hu": "Átváltás joule és kilowattóra között (1 kW · 3600 s)." }
+  ],
+  "modelAnswer": {
+    "text": "Adatok: U = 230 V, P = 2000 W, V = 1,5 l → m = 1,5 kg, T₁ = 20 °C, T₂ = 100 °C, η = 0,90, c = 4200 J/(kg·°C), ár: 40 Ft/kWh.\n\na) Az elektromos teljesítmény P = U·I, ebből I = P/U = 2000 W / 230 V ≈ 8,7 A.\nOhm törvényével R = U/I = 230 V / 8,7 A ≈ 26 Ω (pontosabban R = U²/P = 230² / 2000 Ω = 26,45 Ω).\nA fűtőszálon kb. 8,7 A áram folyik, az ellenállása kb. 26 Ω.\n\nb) A víz tömege m = 1,5 kg, a hőmérséklet-változás ΔT = 100 °C − 20 °C = 80 °C.\nQ = c·m·ΔT = 4200 J/(kg·°C) · 1,5 kg · 80 °C = 504 000 J = 504 kJ.\nA víz felforralásához 504 kJ hő kell.\n\nc) A hatásfok η = Q/E, ezért a forraló által felvett elektromos energia E = Q/η = 504 000 J / 0,90 = 560 000 J.\nA felvett energia E = P·t, így t = E/P = 560 000 J / 2000 W = 280 s.\n280 s = 4 perc 40 s. (Ellenőrzés: 2000 W · 280 s · 0,9 = 504 000 J, ez egyezik a b) eredményével.)\nA forralás 280 s-ig, azaz 4 perc 40 másodpercig tart.\n\nd) A felvett energia kilowattórában: E = 560 000 J / 3 600 000 J/kWh ≈ 0,156 kWh (vagy E = P·t = 2 kW · 280/3600 h ≈ 0,156 kWh).\nA költség: 0,156 kWh · 40 Ft/kWh ≈ 6,2 Ft.\nEgy forralás kb. 6 Ft-ba kerül.",
+    "pointsCovered": [
+      { "id": "p1", "quote": "I = P/U = 2000 W / 230 V ≈ 8,7 A" },
+      { "id": "p2", "quote": "Q = c·m·ΔT = 4200 J/(kg·°C) · 1,5 kg · 80 °C = 504 000 J = 504 kJ" },
+      { "id": "p3", "quote": "t = E/P = 560 000 J / 2000 W = 280 s" },
+      { "id": "p4", "quote": "0,156 kWh · 40 Ft/kWh ≈ 6,2 Ft" }
+    ],
+    "notes": [
+      "Eredmény: az áram (8,7 A), az ellenállás (26 Ω), a hő (504 kJ), az idő (280 s) és a költség (kb. 6 Ft) is helyes – ez az eredmény-szempont 8 pontja.",
+      "Indoklás: a megoldás kimondja, hogy a hatásfok miatt a felvett energia NAGYOBB a hasznos hőnél (E = Q/η), ez a feladat kulcslépése; a gyakori hiba a Q·η szorzás, amely rövidebb időt adna.",
+      "Számolás és forma: a liter → kg és a J → kWh átváltás külön le van írva, a c) rész ellenőrzést is tartalmaz, és minden részkérdésre szöveges válasz született mértékegységgel."
+    ]
+  }
+}

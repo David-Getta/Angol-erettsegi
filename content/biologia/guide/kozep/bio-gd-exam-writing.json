@@ -1,0 +1,126 @@
+{
+  "schemaVersion": 1,
+  "id": "bio-gd-exam-writing",
+  "subject": "biologia",
+  "revision": 1,
+  "level": "kozep",
+  "source": "generated",
+  "topic": "utmutato",
+  "title": "Kifejtős részfeladatok, esszé és problémafeladat",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "guide",
+  "type": "exam",
+  "target": "writing",
+  "summaryHu": "Az app a feladatlap mondatokban megválaszolandó részeit külön gyakoroltatja: középszinten kísérletelemzést, magyarázó kérdéseket és ábra-, adatelemzést (3–5 kérdés, feladatonként 15 pont), emelt szinten a II. részt: egy esszét vagy egy problémafeladatot (20 pont) a négy kijelölt témakörből (emberi szervezet, egészséges életmód, ökológia és környezetvédelem, növényélettan). A javítás a tartalmi helyességet, az összefüggések és következtetések indoklását, valamint a szaknyelvet értékeli.",
+  "steps": [
+    {
+      "title": "A feladat és a kérdések megértése",
+      "explanation": "Olvasd el a teljes feladatot, és számozd meg a kérdéseket vagy szempontokat. Húzd alá a műveleti igéket: nevezze meg, írja le, hasonlítsa össze, magyarázza meg, indokolja, tervezze meg – mindegyik más típusú választ kér.",
+      "tips": [
+        "„Magyarázza meg” = ok-okozati összefüggés („…, mert …”).",
+        "„Hasonlítsa össze” = mindkét elem + a különbség/hasonlóság."
+      ]
+    },
+    {
+      "title": "Vázlat",
+      "explanation": "Kérdésenként vagy szempontonként írj fel 2–4 kulcsszót: a szükséges fogalmakat, az adatokat, amelyekre hivatkozni fogsz, és a következtetést. Esszénél a szempontok sorrendje legyen a bekezdések sorrendje.",
+      "tips": [
+        "Esszénél 5–8 perc vázlat megéri: a logikus felépítés külön pontot ér.",
+        "Adatelemzésnél jelöld meg a táblázat azon értékeit, amelyekre hivatkozni fogsz."
+      ]
+    },
+    {
+      "title": "Megfogalmazás",
+      "explanation": "Egész mondatokban, szakszerűen írj. Minden kérdésre az első mondat közvetlenül feleljen, utána jöjjön az indoklás. A szakkifejezést első előfordulásakor röviden magyarázd meg.",
+      "tips": [
+        "Kerüld a célirányos („azért, hogy…”) magyarázatot az evolúciós és élettani kérdésekben.",
+        "Adatra hivatkozz számmal és mértékegységgel."
+      ]
+    },
+    {
+      "title": "Ellenőrzés",
+      "explanation": "Olvasd vissza: minden kérdésre, minden szempontra kitértél-e, a következtetést indokoltad-e, és nincs-e a szövegben biológiailag hibás állítás.",
+      "tips": [
+        "Hibás állítás nem ér tartalmi pontot – ha bizonytalan vagy egy részletben, inkább hagyd ki.",
+        "Esszénél nézd meg, hogy a bevezetés és a lezárás is megvan-e."
+      ]
+    }
+  ],
+  "phrases": [
+    {
+      "group": "Műveleti ige",
+      "en": "Nevezze meg…",
+      "hu": "egy szakkifejezést vagy elemet kell megadni, magyarázat nélkül"
+    },
+    {
+      "group": "Műveleti ige",
+      "en": "Magyarázza meg…",
+      "hu": "ok-okozati összefüggést kell leírni („…, mert …”)"
+    },
+    {
+      "group": "Műveleti ige",
+      "en": "Indokolja…",
+      "hu": "az állítás mellé az alátámasztó érvet vagy adatot is meg kell adni"
+    },
+    {
+      "group": "Kísérlet",
+      "en": "A kísérlet független változója …, függő változója …",
+      "hu": "a változók megnevezése"
+    },
+    {
+      "group": "Adatelemzés",
+      "en": "A táblázat adatai szerint … (érték, mértékegység), ami nagyobb, mint …",
+      "hu": "adatra hivatkozó összehasonlítás"
+    },
+    {
+      "group": "Következtetés",
+      "en": "Az eredmények alátámasztják / nem támasztják alá a hipotézist, mert …",
+      "hu": "indokolt következtetés"
+    },
+    {
+      "group": "Esszé",
+      "en": "Ennek oka, hogy … / Ennek következménye, hogy …",
+      "hu": "bekezdések közötti logikai kapcsolás"
+    },
+    {
+      "group": "Szaknyelv",
+      "en": "negatív visszacsatolás, aktív transzport, denaturáció",
+      "hu": "pontos, egyértelmű szakkifejezések"
+    }
+  ],
+  "mistakes": [
+    {
+      "wrong": "A kérdésre adott válasz egyetlen szó, indoklás nélkül.",
+      "right": "Teljes mondatban, indoklással válaszol.",
+      "why": "Következtetést csak indoklással fogadnak el teljes pontra."
+    },
+    {
+      "wrong": "Az esszében egy szempontot teljesen kihagy.",
+      "right": "Minden szempontra külön bekezdést szán.",
+      "why": "A tartalmi pontok szempontonként oszlanak meg."
+    },
+    {
+      "wrong": "Az adatelemzésben csak a trendet írja le („nő, majd csökken”).",
+      "right": "Konkrét értékekkel írja le a trendet, és megmagyarázza az okát.",
+      "why": "Az adatelemzésnél a leolvasás és a magyarázat is pontot ér."
+    },
+    {
+      "wrong": "Az esszé és a problémafeladat közül mindkettőt megírja.",
+      "right": "Csak az egyiket választja ki és írja meg.",
+      "why": "Ha mindkettőt megírja, csak az elsőt javítják."
+    }
+  ],
+  "checklist": [
+    "Minden kérdésre, minden szempontra válaszoltam?",
+    "A „magyarázza meg” kérdéseknél leírtam az okot is?",
+    "Az adatokra számmal és mértékegységgel hivatkoztam?",
+    "A szakkifejezéseket pontosan használtam?",
+    "Emelt szinten csak az egyik feladatot (esszé vagy problémafeladat) írtam meg?"
+  ],
+  "timing": "Középszinten egy kifejtős feladatra kb. 25 percet érdemes szánni (5 perc olvasás és vázlat, 15–17 perc írás, 3 perc ellenőrzés). Emelt szinten az esszére vagy a problémafeladatra kb. 60 perc kell: 8–10 perc tervezés, 40–45 perc írás, 5–10 perc ellenőrzés.",
+  "levelNotes": {
+    "kozep": "Középszinten a válaszok rövidebbek, kérdésenként néhány mondatosak; a legfontosabb a kérdésre adott pontos válasz és az indoklás. A kísérletelemzésben a kontroll és a változók, az adatelemzésben a konkrét adatokra hivatkozás ér sok pontot.",
+    "emelt": "Emelt szinten az esszé megadott szempontok szerinti összefüggő szöveg (gyakorláshoz kb. 400–600 szó javasolt); a problémafeladatban hipotézist kell felállítani, kísérletet tervezni, adatot elemezni és következtetést levonni. A tartalmi elemek (12 pont) mellett az összefüggések és a problémamegoldás (5 pont), valamint a felépítés és a szaknyelv (3 pont) is számít."
+  }
+}

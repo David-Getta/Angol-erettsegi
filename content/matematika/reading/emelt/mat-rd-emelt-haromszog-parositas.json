@@ -1,0 +1,113 @@
+{
+  "schemaVersion": 1,
+  "id": "mat-rd-emelt-haromszog-parositas",
+  "subject": "matematika",
+  "revision": 1,
+  "level": "emelt",
+  "source": "generated",
+  "topic": "sikgeometria",
+  "title": "A 13–14–15-ös háromszög adatai",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "reading",
+  "type": "parositas",
+  "instructions": "Egy háromszög oldalai a = 13 cm, b = 14 cm és c = 15 cm. Párosítsd minden mennyiséghez a hozzá tartozó értéket az A–I listából! Minden érték legfeljebb egyszer használható, két érték felesleges. A 0. feladat a példa. (A hosszak cm-ben, a terület cm²-ben értendő.)",
+  "options": [
+    {
+      "key": "A",
+      "text": "4"
+    },
+    {
+      "key": "B",
+      "text": "12"
+    },
+    {
+      "key": "C",
+      "text": "11,2"
+    },
+    {
+      "key": "D",
+      "text": "21"
+    },
+    {
+      "key": "E",
+      "text": "0,8"
+    },
+    {
+      "key": "F",
+      "text": "0,6"
+    },
+    {
+      "key": "G",
+      "text": "84"
+    },
+    {
+      "key": "H",
+      "text": "42"
+    },
+    {
+      "key": "I",
+      "text": "8,125"
+    }
+  ],
+  "example": {
+    "id": "0",
+    "kind": "match",
+    "prompt": "A háromszög félkerülete (s)",
+    "answer": "D",
+    "category": "kepletek",
+    "explanation": "s = (a + b + c)/2 = (13 + 14 + 15)/2 = 42/2 = 21 cm. (A 42 a kerület, nem a félkerület.)"
+  },
+  "items": [
+    {
+      "id": "1",
+      "kind": "match",
+      "prompt": "A háromszög területe",
+      "answer": "G",
+      "category": "kepletek",
+      "explanation": "Héron-képlettel: T = √(s(s − a)(s − b)(s − c)) = √(21·8·7·6) = √7056 = 84 cm²."
+    },
+    {
+      "id": "2",
+      "kind": "match",
+      "prompt": "A beírt kör sugara",
+      "answer": "A",
+      "category": "kepletek",
+      "explanation": "A beírt kör sugara r = T/s = 84/21 = 4 cm (a háromszöget a beírt kör középpontjából három háromszögre bontva T = r·s)."
+    },
+    {
+      "id": "3",
+      "kind": "match",
+      "prompt": "A köré írt kör sugara",
+      "answer": "I",
+      "category": "kepletek",
+      "explanation": "R = abc/(4T) = (13·14·15)/(4·84) = 2730/336 = 8,125 cm. (Ugyanez a szinusztételből: a/sin α = 2R.)"
+    },
+    {
+      "id": "4",
+      "kind": "match",
+      "prompt": "A b = 14 cm-es oldalhoz tartozó magasság",
+      "answer": "B",
+      "category": "geometria-osszefuggesek",
+      "explanation": "T = b·m_b/2, így m_b = 2T/b = 168/14 = 12 cm."
+    },
+    {
+      "id": "5",
+      "kind": "match",
+      "prompt": "Az a = 13 cm-es oldallal szemközti α szög koszinusza",
+      "answer": "F",
+      "category": "kepletek",
+      "explanation": "Koszinusztétel: cos α = (b² + c² − a²)/(2bc) = (196 + 225 − 169)/(2·14·15) = 252/420 = 0,6. (A 0,8 ennek a szögnek a szinusza: √(1 − 0,36) = 0,8.)"
+    },
+    {
+      "id": "6",
+      "kind": "match",
+      "prompt": "A c = 15 cm-es oldalhoz tartozó magasság",
+      "answer": "C",
+      "category": "geometria-osszefuggesek",
+      "explanation": "m_c = 2T/c = 168/15 = 11,2 cm. A leghosszabb oldalhoz tartozik a legrövidebb magasság."
+    }
+  ],
+  "glossary": [],
+  "suggestedMinutes": 15
+}

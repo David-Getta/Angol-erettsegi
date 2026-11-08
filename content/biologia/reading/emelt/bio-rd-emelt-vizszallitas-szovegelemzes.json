@@ -1,0 +1,217 @@
+{
+  "schemaVersion": 1,
+  "id": "bio-rd-emelt-vizszallitas-szovegelemzes",
+  "subject": "biologia",
+  "revision": 1,
+  "level": "emelt",
+  "source": "generated",
+  "topic": "novenyek-allatok",
+  "title": "A növények vízszállítása – szövegelemzés",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "reading",
+  "type": "szovegelemzes",
+  "instructions": "Olvassa el figyelmesen a szöveget, majd válaszoljon a kérdésekre! A feleletválasztós kérdéseknél a helyes válasz betűjelét, az igaz–hamis állításoknál I (T) vagy H (F) betűt, a rövid választ igénylő kérdéseknél a kért fogalmat írja be. A 0. kérdés a példa.",
+  "passage": {
+    "title": "Hogyan jut fel a víz a fa koronájába?",
+    "blocks": [
+      {
+        "text": "Egy nyári napon egy kifejlett tölgyfa több száz liter vizet is elpárologtathat a leveleiből. A víz a talajból a gyökérszőrökön keresztül jut a növénybe: a gyökérszőrök sejtjeinek sejtnedve töményebb, mint a talajoldat, ezért a víz ozmózissal áramlik beléjük. A gyökér kéregrétegén áthaladva a víz a gyökér középhengerébe, a farészbe jut. A farész vízszállító csövei és vízszállító sejtjei elhalt, élő sejttartalom nélküli sejtekből állnak, amelyek vastag, fásodott fala ellenáll a belső szívóhatásnak."
+      },
+      {
+        "text": "A víz felfelé áramlásának fő hajtóereje a párologtatás. A levél gázcserenyílásain át távozó vízgőz helyére a levél sejtjei a szomszédos sejtekből, végső soron a farész csöveiből vesznek fel vizet. Mivel a vízmolekulák között erős összetartó erő, kohézió hat, és a vízoszlopot a csövek falához való tapadás, adhézió is tartja, a levélben fogyó víz maga után húzza a vízoszlopot a gyökértől a levélig. Kisebb szerepe van a gyökérnyomásnak, amely például tavasszal, lombfakadás előtt a szőlő könnyezését okozza: a megmetszett vesszőből ilyenkor folyadék csepeg."
+      },
+      {
+        "text": "A gázcserenyílásokat két zárósejt határolja. Ha a zárósejtek vizet vesznek fel és megduzzadnak, a nyílás kinyílik; ha vizet veszítenek, a nyílás bezáródik. Szárazságban a gyökérben is képződő abszcizinsav nevű növényi hormon a levélbe jutva a gázcserenyílások záródását idézi elő. Ez csökkenti a vízveszteséget, de egyúttal a szén-dioxid felvételét is, így a fotoszintézis lelassul. A növény tehát állandó kompromisszumra kényszerül a vízmegtartás és a szén-dioxid-felvétel között."
+      },
+      {
+        "text": "A sivatagi növények közül sok faj, például számos kaktusz, éjszaka nyitja ki gázcserenyílásait, amikor hűvösebb és párásabb a levegő. A felvett szén-dioxidot szerves savak formájában éjszakára megköti, és nappal, zárt gázcserenyílások mellett, a fény energiáját felhasználva építi be cukorba."
+      }
+    ]
+  },
+  "example": {
+    "id": "0",
+    "kind": "text",
+    "prompt": "Milyen folyamattal jut a víz a talajból a gyökérszőrök sejtjeibe?",
+    "answer": [
+      "ozmózis",
+      "ozmózissal",
+      "ozmózis útján"
+    ],
+    "category": "felepites-mukodes",
+    "explanation": "Helyes: ozmózis. A szöveg szerint a gyökérszőrök sejtnedve töményebb a talajoldatnál, ezért a víz a féligáteresztő sejthártyán át a töményebb oldat felé, a sejtbe áramlik.",
+    "maxWords": 2
+  },
+  "items": [
+    {
+      "id": "1",
+      "kind": "choice",
+      "prompt": "A szöveg szerint mi a víz felfelé áramlásának fő hajtóereje?",
+      "options": [
+        {
+          "key": "A",
+          "text": "a gyökérnyomás"
+        },
+        {
+          "key": "B",
+          "text": "a levelek párologtatása"
+        },
+        {
+          "key": "C",
+          "text": "a farész élő sejtjeinek aktív pumpálása"
+        },
+        {
+          "key": "D",
+          "text": "a fotoszintézis során termelt oxigén nyomása"
+        }
+      ],
+      "answer": "B",
+      "category": "szovegertelmezes",
+      "explanation": "Helyes: B. A szöveg kimondja: „A víz felfelé áramlásának fő hajtóereje a párologtatás.” A levélből távozó víz helyére a farészből áramlik új víz, így a párologtatás „szívja” felfelé a vízoszlopot.",
+      "wrongOptions": {
+        "A": "A szöveg szerint a gyökérnyomásnak csak kisebb szerepe van, főleg tavasszal, lombfakadás előtt.",
+        "C": "A farész vízszállító elemei elhalt sejtek, nem pumpálnak; a vízszállítás passzív folyamat.",
+        "D": "Az oxigén a levélből távozik, nem hajtja a vízáramlást; erről a szöveg nem is ír."
+      }
+    },
+    {
+      "id": "2",
+      "kind": "tf",
+      "prompt": "A farész vízszállító csövei élő sejtek, amelyek ATP felhasználásával pumpálják felfelé a vizet.",
+      "answer": "F",
+      "category": "felepites-mukodes",
+      "explanation": "Hamis. A szöveg szerint a vízszállító csövek és sejtek „elhalt, élő sejttartalom nélküli sejtekből állnak”; a vízszállítás passzív, a párologtatás szívóhatása, a kohézió és az adhézió hajtja, nem ATP-t igénylő pumpa."
+    },
+    {
+      "id": "3",
+      "kind": "text",
+      "prompt": "Hogyan nevezzük a vízmolekulák között ható összetartó erőt?",
+      "answer": [
+        "kohézió",
+        "kohéziós erő",
+        "összetartó erő"
+      ],
+      "category": "felepites-mukodes",
+      "explanation": "Helyes: kohézió. A vízmolekulák között hidrogénkötések alakulnak ki, ezért a vékony csövekben a vízoszlop nem szakad el, hanem egyben húzható felfelé; a cső falához való tapadás az adhézió.",
+      "maxWords": 2
+    },
+    {
+      "id": "4",
+      "kind": "choice",
+      "prompt": "Mikor van a szöveg szerint jelentős szerepe a gyökérnyomásnak?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Szárazságban, amikor a gázcserenyílások zárva vannak, és a levelek erősen párologtatnak."
+        },
+        {
+          "key": "B",
+          "text": "Nyári délben, amikor a legerősebb a párologtatás."
+        },
+        {
+          "key": "C",
+          "text": "Tavasszal, lombfakadás előtt, amikor még nincsenek párologtató levelek."
+        },
+        {
+          "key": "D",
+          "text": "Ősszel, a lombhullás után, amikor a levelek párologtatása a legerősebb."
+        }
+      ],
+      "answer": "C",
+      "category": "szovegertelmezes",
+      "explanation": "Helyes: C. A szöveg példája a szőlő tavaszi könnyezése lombfakadás előtt: ilyenkor még nincs levél, tehát párologtatás sem, ezért a gyökérnyomás hajtja a nedvet felfelé.",
+      "wrongOptions": {
+        "A": "Zárt gázcserenyílások mellett a levelek nem párologtatnak erősen – az állítás önellentmondó, és a szöveg sem kapcsolja a gyökérnyomást a szárazsághoz.",
+        "B": "Nyáron a párologtatás a fő hajtóerő, a gyökérnyomás ehhez képest elhanyagolható.",
+        "D": "Lombhullás után nincsenek levelek, tehát nem lehet erős párologtatás; a szöveg tavaszi példát hoz."
+      }
+    },
+    {
+      "id": "5",
+      "kind": "choice",
+      "prompt": "Mi történik, ha a zárósejtek vizet veszítenek?",
+      "options": [
+        {
+          "key": "A",
+          "text": "A gázcserenyílás kinyílik, és nő a párologtatás."
+        },
+        {
+          "key": "B",
+          "text": "A gázcserenyílás bezáródik, és csökken a szén-dioxid felvétele."
+        },
+        {
+          "key": "C",
+          "text": "A gázcserenyílás bezáródik, és nő a szén-dioxid felvétele."
+        },
+        {
+          "key": "D",
+          "text": "A zárósejtek megduzzadnak, és a növény több vizet vesz fel."
+        }
+      ],
+      "answer": "B",
+      "category": "felepites-mukodes",
+      "explanation": "Helyes: B. A szöveg szerint vízvesztéskor a nyílás bezáródik; ez csökkenti a párologtatást, de ugyanazon a nyíláson jut be a szén-dioxid is, ezért annak felvétele is csökken.",
+      "wrongOptions": {
+        "A": "A nyílás vízfelvételkor, megduzzadt zárósejteknél nyílik ki, vízvesztéskor bezáródik.",
+        "C": "Zárt nyíláson át kevesebb, nem több szén-dioxid jut a levélbe.",
+        "D": "Vízvesztéskor a zárósejtek ernyednek, nem duzzadnak meg."
+      }
+    },
+    {
+      "id": "6",
+      "kind": "tf",
+      "prompt": "Az abszcizinsav szárazságban a gázcserenyílások kinyílását idézi elő, hogy a növény több szén-dioxidot vehessen fel.",
+      "answer": "F",
+      "category": "szabalyozas-folyamat",
+      "explanation": "Hamis. A szöveg szerint az abszcizinsav szárazságban a gázcserenyílások „záródását idézi elő”, ami a vízveszteséget csökkenti – ennek ára a lassuló szén-dioxid-felvétel és fotoszintézis."
+    },
+    {
+      "id": "7",
+      "kind": "text",
+      "prompt": "Melyik anyag felvétele csökken a gázcserenyílások bezáródásakor, ami miatt a fotoszintézis lelassul?",
+      "answer": [
+        "szén-dioxid",
+        "széndioxid",
+        "CO2",
+        "CO₂",
+        "a szén-dioxid"
+      ],
+      "category": "anyagcsere-folyamat",
+      "explanation": "Helyes: a szén-dioxid. A fotoszintézis sötétszakaszában (Calvin-ciklus) a levél a gázcserenyílásokon át felvett szén-dioxidot köti meg; zárt nyílásoknál a levél belsejében a CO₂-koncentráció csökken, és a folyamat lelassul.",
+      "maxWords": 2
+    },
+    {
+      "id": "8",
+      "kind": "choice",
+      "prompt": "Mi az előnye annak, hogy sok kaktusz éjszaka nyitja ki a gázcserenyílásait?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Nappal a levegő egyáltalán nem tartalmaz szén-dioxidot."
+        },
+        {
+          "key": "B",
+          "text": "Éjszaka fény nélkül is teljes egészében lezajlik a fotoszintézis."
+        },
+        {
+          "key": "C",
+          "text": "Éjszaka több oxigént vehet fel a fotoszintézishez."
+        },
+        {
+          "key": "D",
+          "text": "A hűvösebb, párásabb éjszakai levegőben kevesebb vizet veszít, mégis felveszi a szén-dioxidot."
+        }
+      ],
+      "answer": "D",
+      "category": "felepites-mukodes",
+      "explanation": "Helyes: D. Éjszaka kisebb a párolgás, ezért a nyitott gázcserenyílásokon kevesebb víz távozik. A szén-dioxidot szerves savakban tárolja, és nappal, zárt nyílások mellett, a fény energiájával építi be cukorba – így a víztakarékosság és a fotoszintézis összeegyeztethető.",
+      "wrongOptions": {
+        "A": "A levegő szén-dioxid-tartalma nappal is megvan; a nappali zárva tartás oka a vízveszteség elkerülése.",
+        "B": "A szöveg szerint a cukor felépítése nappal, a fény energiáját felhasználva történik; éjszaka csak a CO₂ megkötése zajlik.",
+        "C": "A fotoszintézishez szén-dioxid kell, nem oxigén; az oxigént a fotoszintézis termeli."
+      }
+    }
+  ],
+  "glossary": [],
+  "suggestedMinutes": 12
+}

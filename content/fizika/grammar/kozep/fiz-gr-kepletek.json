@@ -1,0 +1,272 @@
+{
+  "schemaVersion": 1,
+  "id": "fiz-gr-kepletek",
+  "subject": "fizika",
+  "revision": 1,
+  "level": "kozep",
+  "source": "generated",
+  "topic": "nyelvtan",
+  "title": "Képletek kiválasztása, átrendezése és behelyettesítés",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "grammar",
+  "type": "lesson",
+  "category": "kepletek",
+  "summaryHu": "A számításos feladatok pontjainak nagy része azon múlik, hogy a helyzethez illő összefüggést választod-e, helyesen rendezed-e át, és a megfelelő mennyiségeket helyettesíted-e be. A tipikus hiba nem a számológép, hanem a rossz képlet (pl. egyenletes mozgás képlete gyorsuló mozgásra) vagy a fordított átrendezés (m/F az F/m helyett). A függvénytáblázat képleteit is csak akkor tudod jól használni, ha tudod, mikor érvényesek.",
+  "rules": [
+    {
+      "title": "A helyzethez illő képlet",
+      "explanation": "Először döntsd el, milyen a mozgás vagy folyamat (egyenletes / egyenletesen gyorsuló, izoterm / izobár / izochor, soros / párhuzamos), és csak ezután válassz képletet. Írd le a képletet általánosan, mielőtt számokat helyettesítesz be.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "Egyenletes mozgás: s = v·t",
+          "hu": "Csak állandó sebességnél."
+        },
+        {
+          "en": "Egyenletesen gyorsuló mozgás nyugalomból: s = (a/2)·t², v = a·t, v² = 2·a·s",
+          "hu": "Ha az idő nem ismert, a v² = 2as alak a legrövidebb út."
+        },
+        {
+          "en": "Soros: R_e = R₁ + R₂; párhuzamos: 1/R_e = 1/R₁ + 1/R₂",
+          "hu": "A kapcsolás típusa dönti el a képletet."
+        }
+      ]
+    },
+    {
+      "title": "Átrendezés lépésenként",
+      "explanation": "Az ismeretlent algebrai lépésekkel fejezd ki, mielőtt behelyettesítesz: így ellenőrizhető a gondolatmenet, és kevesebb a számolási hiba. Szorzatból osztással, hányadosból szorzással, négyzetből gyökvonással fejezünk ki; reciprokos képletnél előbb a reciprokot számold ki.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "F = m·a → a = F/m",
+          "hu": "6 N / 2 kg = 3 m/s² (nem 2/6!)."
+        },
+        {
+          "en": "1/f = 1/t + 1/k → 1/k = 1/f − 1/t → k = 1/(1/f − 1/t)",
+          "hu": "f = 20 cm, t = 60 cm: 1/k = 1/20 − 1/60 = 1/30, k = 30 cm."
+        },
+        {
+          "en": "T = 2π·√(l/g) → g = 4π²·l/T²",
+          "hu": "A gyökös képletet négyzetre emelés után rendezd át."
+        }
+      ]
+    },
+    {
+      "title": "Behelyettesítés mértékegységgel",
+      "explanation": "A számokat mértékegységükkel együtt helyettesítsd be, SI-egységekben. Így látszik, ha valami nem stimmel (pl. km/h és s keveredik), és az eredmény mértékegysége is kijön.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "P = W/t = 20 000 J / 10 s = 2000 W",
+          "hu": "J/s = W."
+        },
+        {
+          "en": "E = ½·m·v² = ½ · 1200 kg · (20 m/s)² = 240 000 J",
+          "hu": "kg·m²/s² = J."
+        }
+      ]
+    },
+    {
+      "title": "Ellenőrzés mértékegységgel és határesettel",
+      "explanation": "A kapott képlet akkor lehet helyes, ha a két oldal mértékegysége egyezik (dimenzióellenőrzés), és egyszerű határesetben (pl. α = 0°, μ = 0, m₂ = 0) a várt eredményt adja.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "Lejtő: a = g·(sin α − μ·cos α)",
+          "hu": "μ = 0-ra a = g·sin α, α = 90°-ra a = g: helyes határesetek."
+        },
+        {
+          "en": "v = √(2·g·h): √(m/s² · m) = m/s",
+          "hu": "A mértékegység egyezik."
+        }
+      ]
+    },
+    {
+      "title": "Összetett feladatok: több képlet láncolása",
+      "explanation": "Az emelt feladatok többlépésesek: egy részeredményt (pl. sebességet energiamegmaradásból) egy másik összefüggésbe (pl. centripetális erő) kell továbbvinni. Írd ki a részeredményt jól láthatóan, és csak a végén kerekíts.",
+      "emeltOnly": true,
+      "examples": [
+        {
+          "en": "Hurok tetején: m·g·h = m·g·2r + ½·m·v², majd N + m·g = m·v²/r",
+          "hu": "Az első egyenletből v², a másodikból N."
+        },
+        {
+          "en": "Fotoeffektus: E_foton = h·c/λ, majd E_mozg = E_foton − W_ki",
+          "hu": "Két lépésben, eV-ra váltva."
+        }
+      ]
+    }
+  ],
+  "commonMistakes": [
+    {
+      "wrong": "s = v·t = 20 m/s · 4 s = 80 m (egyenletesen lassuló autóra).",
+      "right": "Egyenletesen lassuló mozgásnál s = (v₀ + v)/2 · t = (20 + 0)/2 · 4 = 40 m.",
+      "why": "Az s = v·t csak állandó sebességnél igaz; változó sebességnél az átlagsebességgel kell számolni."
+    },
+    {
+      "wrong": "a = m/F = 2 kg / 6 N ≈ 0,33 m/s²",
+      "right": "a = F/m = 6 N / 2 kg = 3 m/s²",
+      "why": "Fordított átrendezés; az erő és a gyorsulás egyenesen arányos, a tömeggel osztunk."
+    },
+    {
+      "wrong": "1/k = 1/f + 1/t",
+      "right": "1/k = 1/f − 1/t",
+      "why": "Az 1/f = 1/t + 1/k-ból kivonással kapjuk az 1/k-t."
+    },
+    {
+      "wrong": "E = m·v² (a ½ elhagyásával)",
+      "right": "E = ½·m·v²",
+      "why": "A mozgási energia képletében az ½ lényeges; a lendület (m·v) és a mozgási energia sem keverhető össze."
+    }
+  ],
+  "examTips": [
+    "Összetett feladat: a javítók külön pontot adnak a helyes összefüggés felírásáért, akkor is, ha a végeredmény elszámolódik – ezért mindig írd le a képletet általános alakban.",
+    "Teszt: a rossz válaszlehetőségek gyakran a tipikus átrendezési hibák eredményei (fordított hányados, kimaradt ½ vagy 2π) – ha a te eredményed is ilyen, ellenőrizd az átrendezést.",
+    "A függvénytáblázatot használhatod, de nézd meg a képlet mellett a feltételt is (pl. „kis kitérés esetén”)."
+  ],
+  "practice": [
+    {
+      "id": "1",
+      "kind": "choice",
+      "prompt": "Egy autó nyugalomból egyenletesen gyorsulva 10 s alatt 25 m/s sebességet ér el. Mekkora utat tesz meg eközben?",
+      "options": [
+        {
+          "key": "A",
+          "text": "125 m"
+        },
+        {
+          "key": "B",
+          "text": "250 m"
+        },
+        {
+          "key": "C",
+          "text": "2,5 m"
+        },
+        {
+          "key": "D",
+          "text": "62,5 m"
+        }
+      ],
+      "answer": "A",
+      "category": "kepletek",
+      "explanation": "Helyes: A. Nyugalomból egyenletesen gyorsulva s = (v₀ + v)/2 · t = (0 + 25)/2 · 10 = 125 m (vagy a = 2,5 m/s², s = a/2·t² = 125 m).",
+      "wrongOptions": {
+        "B": "250 m = v·t, az egyenletes mozgás képlete; gyorsulásnál az átlagsebesség csak 12,5 m/s.",
+        "C": "2,5 a gyorsulás m/s²-ben, nem az út.",
+        "D": "62,5 m = a/4·t²: kétszer is felezett."
+      }
+    },
+    {
+      "id": "2",
+      "kind": "choice",
+      "prompt": "Melyik a helyes átrendezés? A fonálinga lengésidejéből (T = 2π·√(l/g)) a nehézségi gyorsulás:",
+      "options": [
+        {
+          "key": "A",
+          "text": "g = 2π·l/T"
+        },
+        {
+          "key": "B",
+          "text": "g = 4π²·T²/l"
+        },
+        {
+          "key": "C",
+          "text": "g = T²/(4π²·l)"
+        },
+        {
+          "key": "D",
+          "text": "g = 4π²·l/T²"
+        }
+      ],
+      "answer": "D",
+      "category": "kepletek",
+      "explanation": "Helyes: D. Négyzetre emelve T² = 4π²·l/g, ebből g = 4π²·l/T². Ellenőrzés: m / s² = m/s², a mértékegység helyes.",
+      "wrongOptions": {
+        "A": "A négyzetre emelés kimaradt: a gyök és a 2π négyzete is kell.",
+        "B": "Az l és T² felcserélődött; a mértékegység s²/m lenne.",
+        "C": "Ez 1/g, a reciprok."
+      }
+    },
+    {
+      "id": "3",
+      "kind": "choice",
+      "prompt": "Egy 10 cm fókusztávolságú gyűjtőlencsétől 15 cm-re van a tárgy. Hol keletkezik a kép?",
+      "options": [
+        {
+          "key": "A",
+          "text": "6 cm-re"
+        },
+        {
+          "key": "B",
+          "text": "25 cm-re"
+        },
+        {
+          "key": "C",
+          "text": "30 cm-re"
+        },
+        {
+          "key": "D",
+          "text": "5 cm-re"
+        }
+      ],
+      "answer": "C",
+      "category": "kepletek",
+      "explanation": "Helyes: C. 1/k = 1/f − 1/t = 1/10 − 1/15 = 3/30 − 2/30 = 1/30, tehát k = 30 cm (valódi, kétszeresen nagyított kép).",
+      "wrongOptions": {
+        "A": "6 cm = 1/(1/10 + 1/15): összeadta a reciprokokat.",
+        "B": "25 cm = f + t, ez nem a leképezési törvény.",
+        "D": "5 cm = t − f, ez sem a leképezési törvény."
+      }
+    },
+    {
+      "id": "4",
+      "kind": "choice",
+      "prompt": "Melyik képlet ad mértékegység szerint is hibás eredményt a mozgási energiára?",
+      "options": [
+        {
+          "key": "A",
+          "text": "½·m·v²"
+        },
+        {
+          "key": "B",
+          "text": "I²/(2m), ahol I a lendület"
+        },
+        {
+          "key": "C",
+          "text": "m·v"
+        },
+        {
+          "key": "D",
+          "text": "F·s (ha F állandó gyorsítóerő, s a gyorsítás útja nyugalomból)"
+        }
+      ],
+      "answer": "C",
+      "category": "kepletek",
+      "explanation": "Helyes: C. Az m·v a lendület, egysége kg·m/s, nem joule. A többi alak helyes: ½mv², I²/(2m) = (mv)²/(2m) = ½mv², és a munkatétel szerint F·s = ½mv².",
+      "wrongOptions": {
+        "A": "Ez a mozgási energia alapképlete, egysége kg·m²/s² = J.",
+        "B": "I²/(2m) = m²v²/(2m) = ½mv², tehát helyes.",
+        "D": "A munkatétel szerint nyugalomból indulva a gyorsítóerő munkája egyenlő a mozgási energiával."
+      }
+    },
+    {
+      "id": "5",
+      "kind": "text",
+      "prompt": "Egy 230 V-os fogyasztó teljesítménye 1150 W. Mekkora az ellenállása ohmban?",
+      "answer": [
+        "46",
+        "46 Ω",
+        "46 ohm"
+      ],
+      "maxWords": 2,
+      "category": "kepletek",
+      "explanation": "Helyes: 46 Ω. P = U²/R, ebből R = U²/P = 230² / 1150 = 52 900 / 1150 = 46 Ω. (Másképp: I = P/U = 5 A, R = U/I = 46 Ω.)"
+    }
+  ],
+  "relatedCategories": [
+    "mertekegyseg",
+    "szamolas",
+    "torvenyek"
+  ]
+}

@@ -1,0 +1,134 @@
+{
+  "schemaVersion": 1,
+  "id": "nem-gd-exam-writing",
+  "subject": "nemet",
+  "revision": 1,
+  "level": "kozep",
+  "source": "generated",
+  "topic": "utmutato",
+  "title": "Íráskészség",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "guide",
+  "type": "exam",
+  "target": "writing",
+  "summaryHu": "Az írásbeli negyedik része két írásfeladattal. Középszinten 60 perc és 33 pont: egy rövidebb irányított szöveg (80–100 szó, 3 szempont, 11 pont) és egy hosszabb irányított szöveg (100–120 szó, 3–4 szempont, 22 pont). Emelt szinten 90 perc és 30 pont: egy irányított fogalmazás (120–150 szó, 3 szempont, 15 pont) és egy érvelő szöveg (200–250 szó, 4 szempont, 15 pont). Csak ebben a részben használható nyomtatott szótár. A szövegtípus lehet baráti vagy hivatalos e-mail, blog- vagy fórumbejegyzés, emelten cikk is.",
+  "steps": [
+    {
+      "title": "A feladat elolvasása: helyzet, szövegtípus, szempontok",
+      "explanation": "Olvasd el a helyzetleírást és – ha van – a kapott szöveget (e-mail, hirdetés, fórumbejegyzés). Állapítsd meg: kinek írsz (barát, cég, fórum olvasói), milyen szövegtípust (E-Mail, Blogbeitrag, Forumsbeitrag, Artikel), milyen hangnemben (du vagy Sie), és húzd alá az irányító szempontokat.",
+      "tips": [
+        "Minden szempontot számozz meg – mindegyikre külön bekezdést fogsz írni.",
+        "Ha a szempont két részből áll (pl. „wann und wo”), mindkettőre válaszolj."
+      ]
+    },
+    {
+      "title": "Vázlat (3–5 perc)",
+      "explanation": "Szempontonként írj fel 2–3 német kulcsszót vagy kifejezést. Gondold végig a bevezetést és a zárást is. A vázlat segít, hogy minden szempont tartalmasan, nagyjából arányosan kerüljön a szövegbe.",
+      "tips": [
+        "Ötletelés közben gondolj a szempontra illő kifejezésekre is (Ich schlage vor, …; Ich würde gern wissen, ob …).",
+        "Ne írj fogalmazványt egészében piszkozatba – nincs rá idő."
+      ]
+    },
+    {
+      "title": "Megírás: bekezdésekben, kötőszavakkal",
+      "explanation": "A levélformát (megszólítás, elköszönés) a szövegtípus szerint használd. Minden szempont külön bekezdést kap. Kösd össze a mondatokat (weil, deshalb, außerdem, trotzdem, zum Beispiel), és figyelj a német szórendre: az ige a főmondatban a második helyen, mellékmondatban a végén áll.",
+      "tips": [
+        "Inkább egyszerű, de helyes mondatokat írj, mint bonyolultakat sok hibával.",
+        "Használd a szótárt a pontos szóhoz és a főnév neméhez (der/die/das), de ne ezzel töltsd az időt."
+      ]
+    },
+    {
+      "title": "Szószámlálás",
+      "explanation": "Számold meg a szavakat. A szóhatárt érdemes betartani: középszinten az 1. feladatnál 40, a 2.-nál 50 szó alatt, emelt szinten 60, illetve 100 szó alatt a feladat teljesítése 0 pont (és így az egész feladat 0 pont). Ha a szöveg túl hosszú (közép: 150 / 180 szó fölött, emelt: 225 / 375 szó fölött), a feladat teljesítéséből 1 pontot levonnak.",
+      "tips": [
+        "Számolj soronként, és írd a sor végére a szószámot.",
+        "Az app szószámlálója a teljes szöveget számolja, a megszólítással és az elköszönéssel együtt."
+      ]
+    },
+    {
+      "title": "Átolvasás: tipikus hibák",
+      "explanation": "Olvasd át a szöveget egyszer a tartalomra (minden szempont benne van?), egyszer a nyelvtanra. Ellenőrizd: nagybetűs főnevek, az ige helye, a Perfekt segédigéje (haben vagy sein), névelők és esetek elöljárók után, a megszólítás formája (Sie/Ihnen nagybetűvel hivatalos levélben).",
+      "tips": [
+        "Hivatalos levélben ne keverd a du és a Sie formát.",
+        "A „Sehr geehrte Damen und Herren,” után kisbetűvel folytatódik a levél."
+      ]
+    }
+  ],
+  "phrases": [
+    {
+      "group": "Szövegkohézió",
+      "en": "Zuerst … / Außerdem … / Zum Schluss …",
+      "hu": "Először … / Ezenkívül … / Végül …"
+    },
+    {
+      "group": "Szövegkohézió",
+      "en": "Deshalb / Trotzdem / Zum Beispiel",
+      "hu": "Ezért / Ennek ellenére / Például"
+    },
+    {
+      "group": "Szövegkohézió",
+      "en": "Einerseits …, andererseits …",
+      "hu": "Egyrészt …, másrészt …"
+    },
+    {
+      "group": "Vélemény",
+      "en": "Meiner Meinung nach …",
+      "hu": "Véleményem szerint … (utána az ige jön!)"
+    },
+    {
+      "group": "Vélemény",
+      "en": "Ich finde, dass …",
+      "hu": "Úgy gondolom, hogy …"
+    }
+  ],
+  "mistakes": [
+    {
+      "wrong": "Meiner Meinung nach Handys sind in der Schule nützlich.",
+      "right": "Meiner Meinung nach sind Handys in der Schule nützlich.",
+      "why": "A „Meiner Meinung nach” az első mondatrész, ezért utána az ige következik (ige a második helyen)."
+    },
+    {
+      "wrong": "Sehr geehrte Damen und Herren, Ich schreibe Ihnen, weil …",
+      "right": "Sehr geehrte Damen und Herren,\n\nich schreibe Ihnen, weil …",
+      "why": "A megszólítás vesszővel zárul, és a levél kisbetűvel folytatódik (kivéve, ha főnévvel vagy a Sie/Ihr formával kezdődik)."
+    },
+    {
+      "wrong": "Ich habe nach Berlin gefahren.",
+      "right": "Ich bin nach Berlin gefahren.",
+      "why": "A helyváltoztatást jelentő igék (fahren, gehen, fliegen, kommen) a Perfektet „sein” segédigével képzik."
+    },
+    {
+      "wrong": "Az egyik szempontot kihagyom, mert nem jut eszembe hozzá semmi.",
+      "right": "Minden szemponthoz írok legalább 2–3 mondatot, ha kell, kitalált részletekkel.",
+      "why": "A kihagyott szempont a feladat teljesítésénél (a legtöbb pontot érő szempont) pontlevonást jelent. A tartalom lehet kitalált, csak legyen meggyőző."
+    },
+    {
+      "wrong": "Liebe Lisa, … Mit freundlichen Grüßen",
+      "right": "Liebe Lisa, … Liebe Grüße / Viele Grüße",
+      "why": "Baráti levélben a hivatalos elköszönés hangnemhiba. A megszólítás és az elköszönés legyen azonos hangnemű."
+    }
+  ],
+  "checklist": [
+    "Minden irányító szempontra kitértem, és mindegyik külön bekezdést kapott?",
+    "A szövegtípusnak megfelelő formát (megszólítás, elköszönés, cím) használtam?",
+    "Végig ugyanabban a hangnemben (du vagy Sie) írtam?",
+    "A szöveg a szóhatáron belül van?",
+    "A mondataimat kötőszavak kapcsolják össze?",
+    "Ellenőriztem az ige helyét, a nagybetűs főneveket és a Perfekt segédigéjét?"
+  ],
+  "timing": "Középszinten 60 perc jut a két feladatra (javasolt kb. 25 perc az 1. és 35 perc a 2. feladatra), emelt szinten 90 perc (kb. 35 perc az 1. és 55 perc a 2. feladatra). Feladatonként: 3–5 perc (emelten 5–8 perc) tervezés, utána írás, a végén 5 perc szószámlálás és átolvasás. Kezdheted a nagyobb pontértékű feladattal is, de mindkettőre hagyj elég időt.",
+  "example": {
+    "title": "Minta: egy szempont kidolgozása",
+    "text": "Szempont: „Fragen Sie nach der Unterkunft.”\nGyenge: Gibt es eine Unterkunft?\nJó: Zuerst möchte ich fragen, ob es möglich ist, bei einer Gastfamilie zu wohnen. Ich würde nämlich gern so viel wie möglich Deutsch sprechen.",
+    "notes": [
+      "A jó változat konkrét (vendégcsalád), indokol (nämlich …), és udvarias függő kérdést használ (ob es möglich ist, …).",
+      "A „Zuerst” sorrendjelző a bekezdést a levél szerkezetébe illeszti.",
+      "Két mondat egy szempontra – így a feladat teljesítése teljes értékű."
+    ]
+  },
+  "levelNotes": {
+    "kozep": "Középszinten (A2–B1) mindkét feladat irányított szöveg (baráti vagy hivatalos e-mail, blog, fórumbejegyzés). Az 1. feladatban (80–100 szó) a feladat teljesítése és a szöveg terjedelme 5, a szókincs 3, a nyelvhelyesség 3 pontot ér; a 2. feladatban (100–120 szó) a hangnem (2 pont) és a szövegalkotás (4 pont) is külön szempont. A legfontosabb: minden szempont, helyes alapszerkezetek, a hangnemhez illő forma.",
+    "emelt": "Emelt szinten (B2) az 1. feladat irányított fogalmazás (120–150 szó), a 2. érvelő szöveg (200–250 szó, 4 szempont), amely lehet cikk, véleménycikk, fórum- vagy blogbejegyzés, hivatalos levél. Az érvelő szövegnél a szövegalkotás 5 pontot ér: világos bevezetés, érvek és ellenérvek, saját álláspont, B2-es kötőelemek (zwar … aber, einerseits … andererseits, hinzu kommt, dass …) és változatos szerkezetek (Konjunktiv II, Passiv, Relativsätze)."
+  }
+}

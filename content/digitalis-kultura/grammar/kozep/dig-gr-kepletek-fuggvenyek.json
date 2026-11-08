@@ -1,0 +1,271 @@
+{
+  "schemaVersion": 1,
+  "id": "dig-gr-kepletek-fuggvenyek",
+  "subject": "digitalis-kultura",
+  "revision": 1,
+  "level": "kozep",
+  "source": "generated",
+  "topic": "nyelvtan",
+  "title": "Képletek, függvények, hivatkozások",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "grammar",
+  "type": "lesson",
+  "category": "kepletek-fuggvenyek",
+  "summaryHu": "A táblázatkezelési feladat pontjainak többsége képletekért jár: a javítók azt nézik, hogy minden eredmény képlettel készült-e (nem kézzel beírt szám), a képlet másolható-e (helyes relatív, abszolút, vegyes hivatkozás), és a feladathoz illő függvényt használtad-e. Magyar Excelben (és a magyar felületű LibreOffice Calcban) a függvények magyar nevűek és pontosvessző választja el az argumentumokat (=SZUM(A1:A5)); angol nyelvű Excelben angol nevek és vessző (angol felületű Calcban angol nevek, beállítástól függően vessző vagy pontosvessző).",
+  "rules": [
+    {
+      "title": "A képlet és a hivatkozások",
+      "explanation": "A képlet egyenlőségjellel kezdődik. Relatív hivatkozás (B2): másoláskor eltolódik; abszolút ($B$2): nem változik; vegyes ($B2 vagy B$2): csak az oszlop, illetve csak a sor rögzített. Az F4 billentyű váltogatja a típusokat. Közös szorzóra, összegre, táblázatra (pl. az FKERES tartományára) abszolút hivatkozás kell.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "=I2/$I$17",
+          "hu": "arány a teljes összeghez; lefelé másolva a nevező marad"
+        },
+        {
+          "en": "=$B3*C$2",
+          "hu": "szorzótábla: az oszlop, illetve a sor rögzítve, így jobbra és lefelé is másolható"
+        }
+      ]
+    },
+    {
+      "title": "Alapfüggvények magyarul és angolul",
+      "explanation": "SZUM (SUM), ÁTLAG (AVERAGE), MIN, MAX, DARAB (COUNT – számok), DARAB2 (COUNTA – nem üres cellák), DARABÜRES (COUNTBLANK), KEREKÍTÉS (ROUND), INT, MARADÉK (MOD), ABS, GYÖK (SQRT), NAGY (LARGE), KICSI (SMALL), SORSZÁM (RANK).",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "=KEREKÍTÉS(ÁTLAG(D2:D31);1)  /  =ROUND(AVERAGE(D2:D31),1)",
+          "hu": "átlag egy tizedesjegyre kerekítve"
+        },
+        {
+          "en": "=NAGY(C2:C50;3)  /  =LARGE(C2:C50,3)",
+          "hu": "a harmadik legnagyobb érték"
+        }
+      ]
+    },
+    {
+      "title": "Feltételes függvények",
+      "explanation": "HA (IF): =HA(feltétel;érték_ha_igaz;érték_ha_hamis), egymásba ágyazható; ÉS (AND), VAGY (OR), NEM (NOT). Feltételes számolás: DARABTELI (COUNTIF), SZUMHA (SUMIF), ÁTLAGHA (AVERAGEIF), több feltétellel DARABHATÖBB (COUNTIFS), SZUMHATÖBB (SUMIFS), ÁTLAGHATÖBB (AVERAGEIFS). A relációs feltétel idézőjelben áll, cellával összefűzve: \">=\"&B1.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "=HA(ÉS(C2>=50;D2=\"igen\");\"felvéve\";\"\")  /  =IF(AND(…),…)",
+          "hu": "két feltétel egyszerre"
+        },
+        {
+          "en": "=DARABHATÖBB(B:B;\"11.A\";C:C;\">=\"&H1)  /  =COUNTIFS(…)",
+          "hu": "több feltétel, a határ egy cellában"
+        }
+      ]
+    },
+    {
+      "title": "Keresőfüggvények",
+      "explanation": "FKERES (VLOOKUP): a tartomány első oszlopában keres, és a megadott sorszámú oszlopból ad értéket; a 4. argumentum HAMIS (FALSE) = pontos egyezés, IGAZ (TRUE) vagy elhagyva = közelítő egyezés (növekvően rendezett első oszlop kell, sávos táblázatokhoz). XKERES (XLOOKUP): bármely oszlopban keres és bármelyikből ad értéket. INDEX + HOL.VAN (INDEX + MATCH): a talált sor bármely oszlopából, balra is.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "=FKERES(D2;Termékek!$A$2:$C$26;3;HAMIS)",
+          "hu": "egységár termékkód alapján, másik munkalapról"
+        },
+        {
+          "en": "=INDEX(A2:A31;HOL.VAN(MAX(B2:B31);B2:B31;0))",
+          "hu": "a maximumhoz tartozó dátum vagy név"
+        }
+      ]
+    },
+    {
+      "title": "Kerekítés vagy formázás?",
+      "explanation": "A cellaformátum (tizedesjegyek, pénznem, százalék) csak a megjelenítést változtatja, a számolás a pontos értékkel folyik. Ha a feladat kerekítést kér („egész forintra kerekítve”), a KEREKÍTÉS (ROUND) függvény kell; ha megjelenítést („két tizedesjeggyel jelenjen meg”), elég a formátum.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "=KEREKÍTÉS(G2*(1-H2);0)",
+          "hu": "a kerekített érték számol tovább"
+        },
+        {
+          "en": "Cellák formázása > Szám > 2 tizedesjegy",
+          "hu": "csak a kijelzés változik"
+        }
+      ]
+    },
+    {
+      "title": "Emelt szint: szöveg- és dátumfüggvények",
+      "explanation": "BAL (LEFT), JOBB (RIGHT), KÖZÉP (MID), HOSSZ (LEN), SZÖVEG.KERES (SEARCH), SZÖVEG.TALÁL (FIND), ÖSSZEFŰZ / FŰZ (CONCATENATE / CONCAT) vagy az & jel; dátum: ÉV (YEAR), HÓNAP (MONTH), NAP (DAY), HÉT.NAPJA (WEEKDAY), MA (TODAY); idő: ÓRA (HOUR), PERCEK (MINUTE), MPERC (SECOND); az időérték a nap törtrésze (·1440 = perc).",
+      "emeltOnly": true,
+      "examples": [
+        {
+          "en": "=BAL(A2;SZÖVEG.KERES(\" \";A2)-1)  /  =LEFT(A2,SEARCH(\" \",A2)-1)",
+          "hu": "a vezetéknév a teljes névből"
+        },
+        {
+          "en": "=HÉT.NAPJA(B2;2)>5  /  =WEEKDAY(B2,2)>5",
+          "hu": "hétvége-e (2-es típus: hétfő = 1)"
+        }
+      ]
+    }
+  ],
+  "commonMistakes": [
+    {
+      "wrong": "A C17 cellába beírom a kiszámolt összeget: 48 250.",
+      "right": "=SZUM(C2:C16)",
+      "why": "A kézzel beírt eredmény 0 pont, és adatváltozáskor sem frissül."
+    },
+    {
+      "wrong": "=B2*F1, majd lefelé másolom.",
+      "right": "=B2*$F$1",
+      "why": "Relatív hivatkozásnál másoláskor F2, F3 … lesz a szorzó, amelyek üresek – rossz eredmény. A közös szorzót $ jellel kell rögzíteni."
+    },
+    {
+      "wrong": "=FKERES(D2;$F$2:$G$20;2) pontos kódkereséshez.",
+      "right": "=FKERES(D2;$F$2:$G$20;2;HAMIS)",
+      "why": "A 4. argumentum nélkül közelítő egyezéssel keres: rendezetlen kódoknál rossz értéket adhat, és nem jelez hibát."
+    },
+    {
+      "wrong": "=HA(G2>20000;5%;HA(G2>50000;10%;0))",
+      "right": "=HA(G2>50000;10%;HA(G2>20000;5%;0))",
+      "why": "Az 50 000 feletti érték az első feltételnél már 5%-ot kap, a második ág sosem fut le: a szigorúbb feltételt kell előbb vizsgálni."
+    },
+    {
+      "wrong": "=DARABTELI(H2:H200;\"<H2\")",
+      "right": "=DARABTELI(H2:H200;\"<\"&H2)",
+      "why": "Idézőjelen belül a H2 csak szöveg; a cella értékét összefűzéssel (&) kell a feltételbe tenni."
+    }
+  ],
+  "examTips": [
+    "Mielőtt egy képletet lemásolsz, gondold végig, mi maradjon fix: a közös állandó, a teljes összeg és a keresési táblázat mindig abszolút hivatkozás.",
+    "Ha nem emlékszel a függvény magyar nevére, a Képletek > Függvény beszúrása (fx) ablakban kereshetsz leírás alapján; a vizsgán a súgó használható.",
+    "Ellenőrizd az eredményt egy-két kézzel kiszámolt cellán – a javítók a kulcsban megadott értékeket keresik."
+  ],
+  "practice": [
+    {
+      "kind": "text",
+      "prompt": "A D2 cellában =B2*C$1 áll. Mi lesz a képlet, ha a D2 tartalmát az E3 cellába másolod?",
+      "answer": [
+        "=C3*D$1",
+        "C3*D$1"
+      ],
+      "explanation": "=C3*D$1. Egy oszloppal jobbra és egy sorral lejjebb másolsz: a relatív B2 → C3; a C$1-ben a sor rögzített, az oszlop eltolódik → D$1.",
+      "id": "1",
+      "category": "kepletek-fuggvenyek"
+    },
+    {
+      "kind": "choice",
+      "prompt": "Mi a hibája az =FKERES(A2;$F$2:$G$20;2) képletnek, ha a termékkódra pontos egyezés kell?",
+      "options": [
+        {
+          "key": "A",
+          "text": "A tartomány nem lehet abszolút hivatkozás."
+        },
+        {
+          "key": "B",
+          "text": "Hiányzik a negyedik argumentum, ezért közelítő egyezéssel keres."
+        },
+        {
+          "key": "C",
+          "text": "Az oszlopszám csak 1 lehet."
+        },
+        {
+          "key": "D",
+          "text": "Az FKERES csak számot tud keresni."
+        }
+      ],
+      "answer": "B",
+      "explanation": "B. A 4. argumentum alapértéke IGAZ (közelítő egyezés); pontos egyezéshez HAMIS (FALSE) kell: =FKERES(A2;$F$2:$G$20;2;HAMIS).",
+      "wrongOptions": {
+        "A": "A keresési tartomány éppen azért abszolút, hogy másoláskor ne mozduljon el.",
+        "C": "Az oszlopszám a visszaadandó oszlop sorszáma a tartományban; itt 2 a jó.",
+        "D": "Szöveget is kereshet."
+      },
+      "id": "2",
+      "category": "kepletek-fuggvenyek"
+    },
+    {
+      "kind": "text",
+      "prompt": "Melyik függvény (magyar vagy angol néven) számolja meg azokat a cellákat, amelyek TÖBB feltételnek is megfelelnek?",
+      "answer": [
+        "DARABHATÖBB",
+        "COUNTIFS"
+      ],
+      "explanation": "DARABHATÖBB (COUNTIFS): feltételtartomány–feltétel párokat kap, és csak azokat a sorokat számolja, ahol mind teljesül.",
+      "id": "3",
+      "category": "kepletek-fuggvenyek"
+    },
+    {
+      "kind": "choice",
+      "prompt": "A B2 cella értéke 47. Mit ad az =HA(B2>=80;\"jeles\";HA(B2>=60;\"jó\";\"elégséges\")) képlet?",
+      "options": [
+        {
+          "key": "A",
+          "text": "jeles"
+        },
+        {
+          "key": "B",
+          "text": "jó"
+        },
+        {
+          "key": "C",
+          "text": "hibaüzenetet"
+        },
+        {
+          "key": "D",
+          "text": "elégséges"
+        }
+      ],
+      "answer": "D",
+      "explanation": "D – elégséges. 47 >= 80 hamis, ezért a belső HA fut; 47 >= 60 is hamis, így a belső HA harmadik argumentuma adja az eredményt.",
+      "wrongOptions": {
+        "A": "Ehhez legalább 80 kellene.",
+        "B": "Ehhez legalább 60 kellene.",
+        "C": "A képlet szintaktikailag helyes."
+      },
+      "id": "4",
+      "category": "kepletek-fuggvenyek"
+    },
+    {
+      "kind": "choice",
+      "prompt": "Mi a különbség aközött, hogy egy cellát 2 tizedesjegyre formázol, illetve a =KEREKÍTÉS(A1;2) képletet használod?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Nincs különbség."
+        },
+        {
+          "key": "B",
+          "text": "A formázás csak a megjelenítést változtatja, a KEREKÍTÉS az értéket is, így a további számítások a kerekített számmal folynak."
+        },
+        {
+          "key": "C",
+          "text": "A KEREKÍTÉS csak a megjelenítést változtatja."
+        },
+        {
+          "key": "D",
+          "text": "A formázás törli a tizedesjegyeket a cellából."
+        }
+      ],
+      "answer": "B",
+      "explanation": "B. Formázott cellával számolva a pontos értéket használja a program; ha a feladat kerekített értéket kér, függvény kell.",
+      "wrongOptions": {
+        "A": "Összegzéskor eltérő eredményt adhatnak.",
+        "C": "Fordítva: a KEREKÍTÉS az értéket módosítja.",
+        "D": "A formázás az értéket nem módosítja."
+      },
+      "id": "5",
+      "category": "kepletek-fuggvenyek"
+    },
+    {
+      "kind": "text",
+      "prompt": "Egészítsd ki a feltételt úgy, hogy az =DARABTELI(H2:H200; … ) a H2 cella értékénél kisebb számokat számolja meg! Írd be a hiányzó argumentumot!",
+      "answer": [
+        "\"<\"&H2"
+      ],
+      "explanation": "\"<\"&H2. Az & összefűzi a relációs jelet a cella értékével (pl. \"<118,5\"); ha a H2 az idézőjelen belül állna, szövegként értelmezné.",
+      "id": "6",
+      "category": "kepletek-fuggvenyek"
+    }
+  ],
+  "relatedCategories": [
+    "diagram",
+    "fajlkezeles"
+  ]
+}

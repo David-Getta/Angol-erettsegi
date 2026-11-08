@@ -1,0 +1,144 @@
+{
+  "schemaVersion": 1,
+  "id": "ls-kozep-climbing-course-booking-table",
+  "subject": "angol",
+  "revision": 1,
+  "level": "kozep",
+  "source": "generated",
+  "topic": "szabadido",
+  "title": "Booking a climbing course",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "listening",
+  "type": "table-completion",
+  "instructions": "You are going to listen to a phone call between a young woman and the receptionist at a climbing centre. Complete the booking notes with the missing information. Write no more than three words or a number in each gap. You will hear the recording twice. There is an example (0) at the beginning.",
+  "instructionsHu": "Telefonbeszélgetést hallasz egy fiatal nő és egy mászóterem recepciósa között. Egészítsd ki a foglalási jegyzetet a hiányzó adatokkal (legfeljebb három szó vagy egy szám). A felvételt kétszer hallod. A 0. a példa.",
+  "listening": {
+    "format": "conversation",
+    "speakers": [
+      { "id": "R", "name": "Mark (receptionist)", "gender": "male", "accent": "en-GB", "age": "adult" },
+      { "id": "E", "name": "Emily", "gender": "female", "accent": "en-US", "age": "young" }
+    ],
+    "script": [
+      { "speaker": "R", "text": "Good afternoon, Summit Climbing Centre, Mark speaking. How can I help you?" },
+      { "speaker": "E", "text": "Hi. I'm calling about your climbing courses. My brother and I have never climbed before, so we're looking for something for complete beginners." },
+      { "speaker": "R", "text": "Then our Starter Course is perfect for you. It's on Saturday mornings, and you don't need any experience at all." },
+      { "speaker": "E", "text": "Great. How long is the course?" },
+      { "speaker": "R", "text": "It's four sessions, one every Saturday. So that's four weeks." },
+      { "speaker": "E", "text": "And what time does it start?" },
+      { "speaker": "R", "text": "Each session starts at half past ten and finishes at half past twelve. Oh, but please come ten minutes early on the first day, because there's a short safety talk." },
+      { "speaker": "E", "text": "OK, no problem. And how much does it cost?" },
+      { "speaker": "R", "text": "The normal price is sixty pounds per person for the whole course. But are you students, by any chance?" },
+      { "speaker": "E", "text": "Yes, we're both at college." },
+      { "speaker": "R", "text": "Then it's forty-five pounds each. You just need to show your student card on the first day." },
+      { "speaker": "E", "text": "That's much better. Do we need to bring any special equipment?" },
+      { "speaker": "R", "text": "No, not at all. We give you a helmet and a rope, and climbing shoes are included in the price too. Just wear comfortable sports clothes. And, um, please don't wear jeans. They're terrible for climbing." },
+      { "speaker": "E", "text": "Good to know. So when does the next course start?" },
+      { "speaker": "R", "text": "Let me have a look. The March course is already full, I'm afraid. The next one starts on the twelfth of April." },
+      { "speaker": "E", "text": "The twelfth of April. That's fine. Can I book two places, please?" },
+      { "speaker": "R", "text": "Of course. Can I have your name?" },
+      { "speaker": "E", "text": "Yes, it's Emily Fenwick." },
+      { "speaker": "R", "text": "Could you spell your surname for me, please?" },
+      { "speaker": "E", "text": "Sure. It's F-E-N-W-I-C-K. People often forget the W, because you don't hear it." },
+      { "speaker": "R", "text": "F-E-N-W-I-C-K. Thank you. You can pay at reception on the first day, or online before then. Is there anything else?" },
+      { "speaker": "E", "text": "Just one thing. Is there a café? My brother is always hungry." },
+      { "speaker": "R", "text": "There is, on the first floor. It's open until six every day, and climbers get ten percent off." },
+      { "speaker": "E", "text": "Perfect. Thanks so much for your help." },
+      { "speaker": "R", "text": "You're welcome, Emily. See you on the twelfth of April." }
+    ]
+  },
+  "example": {
+    "id": "0",
+    "kind": "text",
+    "prompt": "Day of the course: ______",
+    "answer": ["Saturday", "Saturdays", "on Saturdays", "on Saturday", "Saturday mornings", "Saturday morning", "on Saturday mornings"],
+    "maxWords": 3,
+    "category": "detail",
+    "explanation": "A Starter Course szombat délelőttönként van („on Saturday mornings”), tehát a nap: Saturday.",
+    "evidence": "It's on Saturday mornings"
+  },
+  "items": [
+    {
+      "id": "1",
+      "kind": "text",
+      "prompt": "Number of sessions: ______",
+      "answer": ["4", "four", "4 sessions", "four sessions"],
+      "maxWords": 3,
+      "category": "detail",
+      "explanation": "A helyes válasz: 4 (four). A recepciós szerint a tanfolyam négy alkalomból áll, minden szombaton egy.",
+      "evidence": "It's four sessions, one every Saturday."
+    },
+    {
+      "id": "2",
+      "kind": "text",
+      "prompt": "Each session starts at: ______",
+      "answer": ["10.30", "10:30", "half past ten", "ten thirty", "10.30 am", "10:30 am", "10.30am", "10:30am", "10.30 a.m.", "10:30 a.m.", "half past 10", "ten thirty am"],
+      "maxWords": 3,
+      "category": "detail",
+      "explanation": "A helyes válasz: 10.30 (half past ten). Csapda: 12.30-kor ér véget, az első napon pedig tíz perccel korábban kell érkezni, de a kezdés időpontja fél tizenegy.",
+      "evidence": "Each session starts at half past ten and finishes at half past twelve."
+    },
+    {
+      "id": "3",
+      "kind": "text",
+      "prompt": "Student price per person: £ ______",
+      "answer": ["45", "£45", "45 pounds", "forty-five", "forty five", "forty-five pounds", "forty five pounds", "£45.00", "45.00"],
+      "maxWords": 3,
+      "category": "detail",
+      "explanation": "A helyes válasz: 45 (forty-five). Csapda: a normál ár 60 font, de diákoknak 45 font fejenként – ehhez az első napon a diákigazolványt kell megmutatni.",
+      "evidence": "Then it's forty-five pounds each."
+    },
+    {
+      "id": "4",
+      "kind": "text",
+      "prompt": "Included in the price: a helmet, a rope and ______",
+      "answer": ["climbing shoes", "shoes", "the climbing shoes", "the shoes", "climbing shoe"],
+      "maxWords": 3,
+      "category": "detail",
+      "explanation": "A helyes válasz: mászócipő (climbing shoes). A sisakot és a kötelet ők adják, és az árban a mászócipő is benne van.",
+      "evidence": "climbing shoes are included in the price too"
+    },
+    {
+      "id": "5",
+      "kind": "text",
+      "prompt": "Do not wear: ______",
+      "answer": ["jeans", "any jeans", "your jeans"],
+      "maxWords": 3,
+      "category": "detail",
+      "explanation": "A helyes válasz: farmer (jeans). Kényelmes sportruhát kell viselni, farmert nem, mert az nagyon rossz mászáshoz („they're terrible for climbing”).",
+      "evidence": "please don't wear jeans"
+    },
+    {
+      "id": "6",
+      "kind": "text",
+      "prompt": "Start date of the next course: ______",
+      "answer": ["12 April", "12th April", "April 12", "April 12th", "12th of April", "twelfth of April", "twelfth April", "April twelfth", "April the twelfth", "12/4", "12/04", "12 Apr", "Apr 12"],
+      "maxWords": 3,
+      "category": "detail",
+      "explanation": "A helyes válasz: április 12. (the twelfth of April). Csapda: a márciusi tanfolyam már betelt, ezért a következő, április 12-i kezdést választják.",
+      "evidence": "The next one starts on the twelfth of April."
+    },
+    {
+      "id": "7",
+      "kind": "text",
+      "prompt": "Name for the booking: Emily ______",
+      "answer": ["Fenwick"],
+      "maxWords": 3,
+      "category": "detail",
+      "explanation": "A helyes válasz: Fenwick. Emily betűzi a nevét (F-E-N-W-I-C-K), és figyelmeztet, hogy a W-t gyakran elfelejtik, mert nem hallatszik – ezért a „Fenick” rossz.",
+      "evidence": "Sure. It's F-E-N-W-I-C-K."
+    },
+    {
+      "id": "8",
+      "kind": "text",
+      "prompt": "The café closes at: ______",
+      "answer": ["6", "six", "6 pm", "6pm", "6 p.m.", "six pm", "six o'clock", "6 o'clock", "6.00", "6:00", "6.00 pm", "6:00 pm", "18.00", "18:00", "six p.m."],
+      "maxWords": 3,
+      "category": "detail",
+      "explanation": "A helyes válasz: 6 óra (six). A kávézó az első emeleten van, és minden nap hatig van nyitva („open until six”).",
+      "evidence": "It's open until six every day"
+    }
+  ],
+  "glossary": [],
+  "suggestedMinutes": 8
+}

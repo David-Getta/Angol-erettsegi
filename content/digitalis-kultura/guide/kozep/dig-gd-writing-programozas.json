@@ -1,0 +1,152 @@
+{
+  "schemaVersion": 1,
+  "id": "dig-gd-writing-programozas",
+  "subject": "digitalis-kultura",
+  "revision": 1,
+  "level": "kozep",
+  "source": "generated",
+  "topic": "utmutato",
+  "title": "Programozási feladat",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "guide",
+  "type": "writing",
+  "target": "programozas",
+  "summaryHu": "A programozási feladatban egy leírás szerinti programot kell írnod a választott nyelven (pl. Python): az adatokat billentyűzetről vagy fájlból olvasod be, részfeladatonként feldolgozod, és a megadott formában kiírod, esetleg fájlba írod. Középszinten ez az 5. feladat (15 pont), emelt szinten a 4. (45 pont). A részfeladatok külön pontot érnek, és a részben működő program is pontot kap; a beadott forráskód számít.",
+  "steps": [
+    {
+      "title": "Olvasd el az egészet, és tervezd meg az adatszerkezetet",
+      "explanation": "Nézd meg a bemenet formátumát (elválasztó, típusok, sorok száma) és az összes részfeladatot: így tudod eldönteni, milyen szerkezetben tárold az adatokat (lista, listák listája, szótárak listája, párhuzamos listák).",
+      "tips": [
+        "Ha több részfeladat ugyanazt számolja (pl. időtartam), írj rá függvényt.",
+        "A minta bemenet és kimenet a legjobb tesztadat."
+      ]
+    },
+    {
+      "title": "Beolvasás és ellenőrzés",
+      "explanation": "A fájlt relatív névvel, UTF-8 kódolással nyisd meg; a sorokat strip() és split() bontja, a számokat int()/float() alakítja. A beolvasás után próbaképp írd ki az első rekordot és a darabszámot.",
+      "tips": [
+        "with open(\"adat.txt\", encoding=\"utf-8\") as f:",
+        "A bekért adatot (input) is alakítsd számmá, ha számolsz vele."
+      ]
+    },
+    {
+      "title": "Részfeladatonként: tétel, kód, teszt",
+      "explanation": "Minden részfeladatnál nevezd meg a programozási tételt (összegzés, megszámlálás, maximumkiválasztás, eldöntés, keresés, kiválogatás), írd meg, és azonnal futtasd le. A kiírás előtt jelenjen meg a feladat sorszáma.",
+      "tips": [
+        "A maximum kezdőértéke az első elem.",
+        "A keresésnél kezeld a „nincs ilyen” esetet."
+      ]
+    },
+    {
+      "title": "Kimenet és fájlba írás",
+      "explanation": "A kiírás pontosan a minta szerinti legyen: szöveg, tizedesjegyek, elválasztók. Fájlba írásnál add meg a kódolást, és tegyél sortörést minden sor végére.",
+      "tips": [
+        "f\"{x:.2f}\" két tizedesjegy; \", \".join(...) egy sorban.",
+        "Fájlírás: with open(\"ki.txt\", \"w\", encoding=\"utf-8\") as f:"
+      ]
+    },
+    {
+      "title": "Végső teszt",
+      "explanation": "Futtasd le az egész programot a mintaadatokkal, és vesd össze a mintakimenettel; próbálj ki határeseteket is (nincs ilyen elem, egyenlő értékek). Mentsd a forráskódot a kért néven.",
+      "tips": [
+        "A szintaktikai hibás program semmit sem ír ki – a végén mindig futtasd le."
+      ]
+    }
+  ],
+  "phrases": [
+    {
+      "group": "Beolvasás",
+      "en": "with open(\"adat.txt\", encoding=\"utf-8\") as f:",
+      "hu": "fájl megnyitása olvasásra"
+    },
+    {
+      "group": "Beolvasás",
+      "en": "sor.strip().split(\";\")",
+      "hu": "sor feldarabolása"
+    },
+    {
+      "group": "Beolvasás",
+      "en": "int(input(\"…\"))",
+      "hu": "bekért szám"
+    },
+    {
+      "group": "Tétel",
+      "en": "osszeg += x; db += 1",
+      "hu": "összegzés, megszámlálás"
+    },
+    {
+      "group": "Tétel",
+      "en": "if t[i] > t[maxi]: maxi = i",
+      "hu": "maximumkiválasztás"
+    },
+    {
+      "group": "Tétel",
+      "en": "while i < n and not jo(t[i]): i += 1",
+      "hu": "eldöntés, keresés"
+    },
+    {
+      "group": "Szerkezet",
+      "en": "d[k] = d.get(k, 0) + 1",
+      "hu": "gyakoriság szótárban"
+    },
+    {
+      "group": "Kimenet",
+      "en": "print(f\"Átlag: {atlag:.2f}\")",
+      "hu": "formázott kiírás"
+    },
+    {
+      "group": "Kimenet",
+      "en": "f.write(sor + \"\\n\")",
+      "hu": "fájlba írás soronként"
+    },
+    {
+      "group": "Függvény",
+      "en": "def percben(ido): … return …",
+      "hu": "ismétlődő számítás függvényben"
+    }
+  ],
+  "mistakes": [
+    {
+      "wrong": "Az input() eredményével közvetlenül számolok.",
+      "right": "int(input(...)) – előbb számmá alakítom.",
+      "why": "Az input() szöveget ad; az összeadás összefűzés lesz, vagy hiba."
+    },
+    {
+      "wrong": "A maximum kezdőértéke 0.",
+      "right": "A kezdőérték az első elem.",
+      "why": "Negatív (vagy a 0-nál kisebb) adatoknál a 0 hibás eredményt ad."
+    },
+    {
+      "wrong": "A mintakimenetet beírom a print-be.",
+      "right": "Az eredményt a beolvasott adatokból számolom.",
+      "why": "A javító más adatokkal is tesztelhet; a „bedrótozott” kimenet nem ér pontot."
+    },
+    {
+      "wrong": "A feladat sorszámát nem írom ki.",
+      "right": "print(\"3. feladat\") minden rész előtt.",
+      "why": "A javító a sorszám alapján azonosítja a részeket."
+    }
+  ],
+  "checklist": [
+    "A beolvasás jó (darabszám, első rekord ellenőrizve)?",
+    "Minden részfeladat lefut, és a minta szerinti kimenetet adja?",
+    "A „nincs ilyen” és az egyenlő értékek esete kezelve van?",
+    "A kiírás formátuma (tizedesjegy, elválasztó, szöveg) pontos?",
+    "A fájlba írás megtörtént, sortörésekkel?",
+    "A forráskód a kért néven el van mentve?"
+  ],
+  "timing": "Középszinten kb. 35 perc (15 pont): 5 perc tervezés, 25 perc kódolás és tesztelés részenként, 5 perc végső teszt. Emelt szinten kb. 95 perc (45 pont): 10 perc tervezés, 70 perc részfeladatok, 15 perc teszt és határesetek.",
+  "example": {
+    "title": "Minta: beolvasás és egy tétel",
+    "text": "berlesek = []\nwith open(\"berles.txt\", encoding=\"utf-8\") as f:\n    for sor in f:\n        azon, nev, perc = sor.strip().split(\";\")\n        berlesek.append([azon, nev, int(perc)])\n\nprint(\"4. feladat\")\nleg = berlesek[0]\nfor b in berlesek:\n    if b[2] > leg[2]:\n        leg = b\nprint(\"A leghosszabb bérlés:\", leg[1], leg[2], \"perc\")",
+    "notes": [
+      "A sorvégjelet a strip() vágja le, a percet int() alakítja számmá.",
+      "A maximumkiválasztás az első rekordról indul, és a teljes rekordot jegyzi meg."
+    ]
+  },
+  "levelNotes": {
+    "kozep": "Középszinten rövid konzolos program: bekérés vagy egyszerű fájlolvasás, összegzés, megszámlálás, maximum, eldöntés, kiválogatás, formázott kiírás.",
+    "emelt": "Emelt szinten összetett fájlfeldolgozás: rekordok, saját függvények, szótár, rendezés, sorozatkeresés, időpont-átalakítás, fájlba írás – a hatékony és jól tagolt kód is számít."
+  }
+}

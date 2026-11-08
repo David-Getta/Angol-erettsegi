@@ -1,0 +1,75 @@
+{
+  "schemaVersion": 1,
+  "id": "bio-sp-kozep-a-dohanyzas",
+  "subject": "biologia",
+  "revision": 1,
+  "level": "kozep",
+  "source": "generated",
+  "topic": "egeszsegtan",
+  "title": "A dohányzás hatása a légzőrendszerre és a keringésre",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "speaking",
+  "type": "a-tetel",
+  "partNumber": 1,
+  "instructionsHu": "A) altétel – életközeli probléma. Egy barátod szerint „napi néhány szál cigaretta vagy az e-cigaretta nem árt”. Fejtsd ki a dohányzás biológiai hatásait a szempontok szerint, használd a forrás adatát, és a végén fogalmazd meg, mit mondanál a barátodnak!",
+  "prompts": [
+    "A légutak felépítése és öntisztulása (csillós hám, nyálka).",
+    "A dohányfüst fő összetevői (nikotin, kátrány, szén-monoxid) és hatásuk a szervezetre.",
+    "A dohányzás okozta légzőszervi és keringési betegségek.",
+    "A passzív dohányzás és az e-cigaretta kockázatai, a leszokás előnyei."
+  ],
+  "followUpQuestions": [
+    "Miért gyorsabb a dohányosok pulzusa nyugalomban is?",
+    "Hogyan befolyásolja a dohányzás a magzat fejlődését?"
+  ],
+  "usefulPhrases": [
+    {
+      "en": "csillós hám, kehelysejt",
+      "hu": "a légutak tisztító rendszere"
+    },
+    {
+      "en": "krónikus hörghurut",
+      "hu": "tartós köhögés, pangó nyálka"
+    },
+    {
+      "en": "szén-monoxid – hemoglobin",
+      "hu": "oxigénszállítás csökkenése"
+    },
+    {
+      "en": "érelmeszesedés",
+      "hu": "plakkok az artériák falában"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Egészségügyi tájékoztató (részlet)",
+      "text": "A tüdőrákos esetek túlnyomó többsége, mintegy 80–90%-a dohányzással függ össze. A dohányfüst több ezer vegyületet tartalmaz, ezek közül több tucat bizonyítottan rákkeltő. A leszokás után a szívinfarktus kockázata már néhány év alatt jelentősen csökken."
+    }
+  ],
+  "keyPoints": [
+    "A légutakat csillós hám béleli, a kehelysejtek nyálkája megköti a port és a kórokozókat, a csillók a garat felé továbbítják.",
+    "A dohányfüst bénítja, majd elpusztítja a csillókat, ezért a nyálka pang, krónikus hörghurut (dohányos köhögés) alakul ki.",
+    "A nikotin függőséget okoz, szűkíti az ereket, emeli a pulzust és a vérnyomást.",
+    "A szén-monoxid az oxigénnél erősebben kötődik a hemoglobinhoz, csökkenti a vér oxigénszállító képességét.",
+    "A kátrány rákkeltő anyagokat tartalmaz: tüdő-, gége-, szájüregi daganat; a forrás szerint a tüdőrák 80–90%-a dohányzással függ össze.",
+    "A dohányzás gyorsítja az érelmeszesedést: szívinfarktus, stroke, érszűkület kockázata nő; a léghólyagok falának pusztulása tüdőtágulathoz vezet (COPD).",
+    "A passzív dohányzás is ártalmas (gyermekek, várandósság); az e-cigaretta is nikotint és károsító anyagokat juttat a tüdőbe.",
+    "A leszokás után a kockázatok csökkennek; a legjobb megoldás el sem kezdeni."
+  ],
+  "speakingSeconds": 480,
+  "prepSeconds": 900,
+  "sampleAnswer": {
+    "turns": [
+      {
+        "speaker": "candidate",
+        "text": "A légutak belső felszínét csillós hám béleli. A hám kehelysejtjei nyálkát termelnek, amely megköti a belélegzett port és kórokozókat, a csillók pedig folyamatos csapásokkal a garat felé sodorják a nyálkát – így tisztul a légút. A dohányfüst ezt a rendszert rombolja: a csillók mozgása lelassul, majd a csillók elpusztulnak, a nyálka pang, ezért alakul ki a dohányosokra jellemző reggeli köhögés, a krónikus hörghurut.\nA füst három legveszélyesebb összetevője a nikotin, a kátrány és a szén-monoxid. A nikotin az idegrendszerre hat, erős függőséget okoz, szűkíti az ereket, emeli a pulzust és a vérnyomást. A szén-monoxid az oxigénnél sokkal erősebben kötődik a hemoglobinhoz, így a vér kevesebb oxigént szállít, a szívnek többet kell dolgoznia. A kátrányban rákkeltő anyagok vannak: a forrás szerint a tüdőrákos esetek 80–90%-a dohányzással függ össze, de a gége- és a szájüregi daganatok kockázata is nő.\nA keringésre is hat: a dohányzás gyorsítja az érelmeszesedést, így nő a szívinfarktus és a stroke veszélye. Hosszú távon a léghólyagok fala is pusztul, csökken a gázcserefelület, ez a tüdőtágulat, amely légszomjjal jár.\nA passzív dohányos ugyanezeket az anyagokat lélegzi be, különösen veszélyes ez a gyerekeknek és a magzatnak. Az e-cigaretta sem ártalmatlan: nikotint, tehát függőséget okozó anyagot tartalmaz, és a gőze is irritálja a légutakat.\nA barátomnak azt mondanám, hogy a „néhány szál” is elég a függőséghez és az érkárosodáshoz. A jó hír az, hogy a forrás szerint leszokás után már néhány év alatt jelentősen csökken az infarktus kockázata – de a legjobb, ha el sem kezdi."
+      }
+    ],
+    "notes": [
+      "Tartalom: a felelet a légutak öntisztulásától a három fő füstösszetevőn át a betegségekig mindent érint, és minden hatásnál megmondja a mechanizmust (pl. a CO a hemoglobinhoz kötődik).",
+      "Összefüggések, alkalmazás: felhasználja a forrás adatát (80–90%), és a végén a „barátnak” szóló, egészségtudatos következtetést fogalmaz meg – ez az A) altétel életközeli jellegének felel meg.",
+      "Felépítés: a szempontok sorrendjében halad, bekezdésről bekezdésre, szakszerű, de érthető nyelven."
+    ]
+  }
+}

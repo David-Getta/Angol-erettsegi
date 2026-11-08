@@ -1,0 +1,211 @@
+{
+  "schemaVersion": 1,
+  "id": "mat-gr-szamolasi-hiba",
+  "subject": "matematika",
+  "revision": 1,
+  "level": "kozep",
+  "source": "generated",
+  "topic": "nyelvtan",
+  "title": "Számolási hibák elkerülése",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "grammar",
+  "type": "lesson",
+  "category": "szamolasi-hiba",
+  "summaryHu": "A számolási hiba (műveleti sorrend, előjel, törtek, korai kerekítés) a leggyakoribb pontvesztés: a javítási útmutató szerint csak az adott lépés pontja vész el, de a rövid feladatoknál (I. rész) a rossz végeredmény nulla pontot ér. A biztos módszer: lépésenként, áttekinthetően számolni, a részeredményeket pontosan tovább vinni, és a végén becsléssel ellenőrizni.",
+  "rules": [
+    {
+      "title": "A műveleti sorrend",
+      "explanation": "Előbb a zárójelek, utána a hatványozás és gyökvonás, majd a szorzás és osztás balról jobbra, végül az összeadás és kivonás balról jobbra. A szorzás nem „erősebb” az osztásnál: azonos szinten balról jobbra haladunk.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "18 − 6 : 3 · 2 = 18 − 2 · 2 = 18 − 4 = 14",
+          "hu": "Az osztás és a szorzás balról jobbra: 6 : 3 = 2, majd 2 · 2 = 4."
+        },
+        {
+          "en": "2 + 3 · 4 = 2 + 12 = 14",
+          "hu": "A szorzás megelőzi az összeadást; (2 + 3) · 4 = 20 csak zárójellel lenne."
+        }
+      ]
+    },
+    {
+      "title": "Előjelek és hatványok",
+      "explanation": "A −a² jelentése −(a²), tehát a hatványozás előbb történik, mint az előjelváltás; (−a)² viszont a negatív szám négyzete. Negatív szám páros kitevőjű hatványa pozitív, páratlan kitevőjűé negatív. Zárójel előtti mínusz minden tag előjelét megváltoztatja.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "−3² = −9, de (−3)² = 9",
+          "hu": "A −3² a 9 ellentettje."
+        },
+        {
+          "en": "(−2)³ = −8, (−1)¹⁰⁰ = 1",
+          "hu": "Páratlan kitevő: negatív; páros kitevő: pozitív."
+        },
+        {
+          "en": "10 − (4 − 7) = 10 − 4 + 7 = 13",
+          "hu": "A zárójel előtti mínusz a −7-ből +7-et csinál."
+        }
+      ]
+    },
+    {
+      "title": "Kerekítés csak a végén",
+      "explanation": "A részeredményeket pontosan (törtként, gyökösen vagy a számológép teljes kijelzésével) vidd tovább, és csak a végeredményt kerekítsd a kért pontosságra. A korán kerekített részeredmény a végeredményt is elrontja, és pontlevonással jár.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "1,04¹⁰ ≈ 1,4802, de (1,04⁵ ≈ 1,22)² ≈ 1,4884",
+          "hu": "A korai kerekítés már a második tizedesjegyben eltérést okoz."
+        },
+        {
+          "en": "cos γ = 2/7 → γ ≈ 73,4°",
+          "hu": "A 2/7-et nem kerekítjük 0,3-ra, mert az 72,5°-ot adna."
+        }
+      ]
+    },
+    {
+      "title": "Becslés és ellenőrzés",
+      "explanation": "Minden végeredménynél kérdezd meg: jó-e a nagyságrend, jó-e az előjel, van-e értelme a feladatban? Gyors becslés: kerekítsd az adatokat (0,48 ≈ 0,5; 612 ≈ 600), és nézd meg, közel van-e az eredmény.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "0,48 · 612 ≈ 0,5 · 600 = 300 (pontosan 293,76)",
+          "hu": "A 2937,6 vagy a 29,376 rossz helyre tett tizedesvessző lenne."
+        },
+        {
+          "en": "Egy háromszög szöge 230° → biztosan hiba",
+          "hu": "A háromszög szögei 0° és 180° közé esnek."
+        }
+      ]
+    }
+  ],
+  "commonMistakes": [
+    {
+      "wrong": "−4² = 16",
+      "right": "−4² = −16",
+      "why": "A hatványozás megelőzi az előjelváltást: −4² = −(4²). Ha a negatív számot akarod négyzetre emelni, zárójel kell: (−4)² = 16."
+    },
+    {
+      "wrong": "2 + 3 · 4 = 20",
+      "right": "2 + 3 · 4 = 14",
+      "why": "A szorzást az összeadás előtt kell elvégezni; a 20 a (2 + 3) · 4 eredménye."
+    },
+    {
+      "wrong": "5 − (2x − 3) = 5 − 2x − 3",
+      "right": "5 − (2x − 3) = 5 − 2x + 3 = 8 − 2x",
+      "why": "A zárójel előtti mínusz a zárójelben minden tag előjelét megfordítja, a −3-ból +3 lesz."
+    },
+    {
+      "wrong": "1 ÷ 2 × 3 = 1/6 (a számológépbe így beírva)",
+      "right": "1 ÷ 2 × 3 = 1,5; az 1/6-hoz 1 ÷ (2 × 3) kell",
+      "why": "A számológép balról jobbra számol azonos szinten; a nevezőt zárójelbe kell tenni."
+    }
+  ],
+  "examTips": [
+    "Az I. részben (rövid feladatok) csak a végeredmény számít: egy elírt előjel az egész feladat pontját elviheti, ezért minden eredményt ellenőrizz visszahelyettesítéssel vagy becsléssel.",
+    "A II. részben a hibás részeredménnyel helyesen továbbszámolt lépések pontot érnek – ezért mindig írd le a számolás menetét, ne csak az eredményt.",
+    "A számológépnél figyelj a fok/radián beállításra (trigonometria) és a zárójelekre (törtek, gyökök, hatványok)."
+  ],
+  "practice": [
+    {
+      "id": "1",
+      "kind": "text",
+      "prompt": "Mennyi 18 − 6 : 3 · 2 értéke?",
+      "answer": [
+        "14"
+      ],
+      "category": "szamolasi-hiba",
+      "explanation": "14. Azonos szinten balról jobbra: 6 : 3 = 2, 2 · 2 = 4, végül 18 − 4 = 14. A 17 (18 − 6 : 6) azért rossz, mert a szorzást nem lehet az osztás elé venni."
+    },
+    {
+      "id": "2",
+      "kind": "text",
+      "prompt": "Mennyi −2² + (−3)² értéke?",
+      "answer": [
+        "5"
+      ],
+      "category": "szamolasi-hiba",
+      "explanation": "5. A −2² = −4 (előbb hatványozunk, aztán veszünk ellentettet), a (−3)² = 9, így −4 + 9 = 5."
+    },
+    {
+      "id": "3",
+      "kind": "choice",
+      "prompt": "Mennyi (−1)¹⁰¹ − (−1)¹⁰⁰ értéke?",
+      "options": [
+        {
+          "key": "A",
+          "text": "−2"
+        },
+        {
+          "key": "B",
+          "text": "0"
+        },
+        {
+          "key": "C",
+          "text": "2"
+        },
+        {
+          "key": "D",
+          "text": "1"
+        }
+      ],
+      "answer": "A",
+      "category": "szamolasi-hiba",
+      "explanation": "A helyes: −2. Páratlan kitevőnél (−1)¹⁰¹ = −1, páros kitevőnél (−1)¹⁰⁰ = 1, így −1 − 1 = −2.",
+      "wrongOptions": {
+        "B": "A 0 akkor jönne ki, ha mindkét hatványt azonosnak vennéd – de a kitevők paritása eltér.",
+        "C": "A 2 a két hatvány előjelének felcserélésével adódna: 1 − (−1).",
+        "D": "Az 1 csak az egyik hatvány értéke, a kivonást is el kell végezni."
+      }
+    },
+    {
+      "id": "4",
+      "kind": "text",
+      "prompt": "Számítsd ki: 2/3 − 5/6 + 1/2!",
+      "answer": [
+        "1/3",
+        "2/6",
+        "0,33",
+        "0.33"
+      ],
+      "category": "szamolasi-hiba",
+      "explanation": "1/3. Közös nevező 6: 4/6 − 5/6 + 3/6 = 2/6 = 1/3. Hibás a számlálók és nevezők külön összevonása (2 − 5 + 1)/(3 − 6 + 2)."
+    },
+    {
+      "id": "5",
+      "kind": "choice",
+      "prompt": "Melyik a legjobb becslés a 0,48 · 612 szorzatra?",
+      "options": [
+        {
+          "key": "A",
+          "text": "3"
+        },
+        {
+          "key": "B",
+          "text": "300"
+        },
+        {
+          "key": "C",
+          "text": "30"
+        },
+        {
+          "key": "D",
+          "text": "3000"
+        }
+      ],
+      "answer": "B",
+      "category": "szamolasi-hiba",
+      "explanation": "A helyes: 300. 0,48 ≈ 0,5 és 612 ≈ 600, így a szorzat ≈ 300 (pontosan 293,76). A becslés megmutatja, ha a tizedesvessző rossz helyre került.",
+      "wrongOptions": {
+        "A": "A 3 két nagyságrenddel kisebb: ez 0,0048 · 612 lenne.",
+        "C": "A 30 tized akkora: ez 0,048 · 612 lenne.",
+        "D": "A 3000 tízszer nagyobb: ez 4,8 · 612 lenne."
+      }
+    }
+  ],
+  "relatedCategories": [
+    "tortek-hatvanyok",
+    "ellenorzes",
+    "mertekegyseg-kerekites"
+  ]
+}

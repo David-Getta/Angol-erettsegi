@@ -1,0 +1,243 @@
+{
+  "schemaVersion": 1,
+  "id": "dig-gr-adattipus-adatszerkezet",
+  "subject": "digitalis-kultura",
+  "revision": 1,
+  "level": "kozep",
+  "source": "generated",
+  "topic": "nyelvtan",
+  "title": "Adattípusok, adatszerkezetek",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "grammar",
+  "type": "lesson",
+  "category": "adattipus-adatszerkezet",
+  "summaryHu": "A programozási feladat első lépése szinte mindig a beolvasás és a tárolás, és itt csúszik be a legtöbb típus- és szerkezeti hiba: szövegként maradt szám, sorvégjeles utolsó mező, rossz index, rosszul választott adatszerkezet. Ezek a hibák a későbbi részfeladatokat is elrontják, ezért a beolvasást mindig ellenőrizd (pl. írd ki az első rekordot).",
+  "rules": [
+    {
+      "title": "Alaptípusok és átalakításuk",
+      "explanation": "int (egész), float (valós, tizedesponttal: 3.5), str (karakterlánc), bool (True/False). Az input() és a fájlból olvasott sor mindig str; számoláshoz int() vagy float() kell, kiíráshoz összefűzésnél str(). A tizedesvessző („3,5”) Pythonban nem szám – a float() hibát ad rá.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "int(\"12\") + int(\"30\")  →  42",
+          "hu": "számmá alakítás után összeadás"
+        },
+        {
+          "en": "\"12\" + \"30\"  →  \"1230\"",
+          "hu": "karakterláncok összefűzése"
+        }
+      ]
+    },
+    {
+      "title": "Beolvasás fájlból",
+      "explanation": "A sorokat for ciklussal olvassuk; a strip() levágja a sorvégjelet (\\n) és a szóközöket, a split(elválasztó) részekre bontja a sort. A számmá alakítandó részeket int()/float() alakítja; az eredményt rekordként (lista, tuple, szótár vagy osztály) tesszük egy listába.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "azon, nev, perc = sor.strip().split(\";\")",
+          "hu": "három mező egy sorból"
+        },
+        {
+          "en": "berlesek.append([azon, nev, int(perc)])",
+          "hu": "rekord tárolása listában"
+        }
+      ]
+    },
+    {
+      "title": "Listák és indexelés",
+      "explanation": "A lista indexei 0-tól len(t) − 1-ig tartanak; a negatív index hátulról számol (t[-1] az utolsó). Szeletelés: t[a:b] az a-tól b−1-ig tartó elemek. Hasznos: append(), len(), sort(), sorted(), sum(), max(), min(), in. Túlindexelés: IndexError.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "t = [4, 8, 1]; t[0] → 4; t[-1] → 1; t[0:2] → [4, 8]",
+          "hu": "indexelés és szeletelés"
+        }
+      ]
+    },
+    {
+      "title": "Karakterláncok",
+      "explanation": "A str nem módosítható (s[0] = \"A\" hibát ad), de új karakterlánc építhető. Hasznos metódusok: lower(), upper(), strip(), split(), join(), find(), count(), replace(), isdigit(), isalpha(); a len() a hossz, az in a tartalmazás.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "\"Budapest\"[0:4] → \"Buda\"",
+          "hu": "szeletelés"
+        },
+        {
+          "en": "\", \".join([\"a\", \"b\"]) → \"a, b\"",
+          "hu": "összefűzés elválasztóval"
+        }
+      ]
+    },
+    {
+      "title": "Szótár és rekordok",
+      "explanation": "A szótár (dict) kulcs–érték párokat tárol, a kulcs alapján gyors az elérés: gyakoriság (d[k] = d.get(k, 0) + 1), csoportosítás, keresőtábla. Rekordokat tárolhatsz listák listájában (b[2]), szótárak listájában (p[\"rendszam\"]) vagy párhuzamos listákban (ugyanaz az index ugyanazt a rekordot jelenti).",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "gyak = {}; gyak[\"alma\"] = gyak.get(\"alma\", 0) + 1",
+          "hu": "gyakoriság számolása"
+        },
+        {
+          "en": "for kulcs, ertek in gyak.items():",
+          "hu": "a szótár bejárása"
+        }
+      ]
+    },
+    {
+      "title": "Emelt szint: halmaz, tuple, lebegőpontos pontatlanság",
+      "explanation": "A halmaz (set) ismétlődés nélküli elemeket tárol (különböző értékek száma: len(set(t))). A tuple nem módosítható rekord (pl. (perc, valtozas) eseménypár). A float bináris tört, ezért 0.1 + 0.2 == 0.3 hamis; pénzösszeget egész fillérben/forintban, összehasonlítást tűréssel (abs(a − b) < 1e-9) vagy kerekítéssel végezz.",
+      "emeltOnly": true,
+      "examples": [
+        {
+          "en": "len(set([\"K03\", \"K11\", \"K03\"])) → 2",
+          "hu": "különböző azonosítók száma"
+        },
+        {
+          "en": "0.1 + 0.2 == 0.3  →  False",
+          "hu": "lebegőpontos kerekítési hiba"
+        }
+      ]
+    }
+  ],
+  "commonMistakes": [
+    {
+      "wrong": "osszeg = osszeg + input(\"Szám: \")",
+      "right": "osszeg = osszeg + int(input(\"Szám: \"))",
+      "why": "Az input() szöveget ad; számhoz szöveget adva TypeError, két szöveget összeadva összefűzés lesz."
+    },
+    {
+      "wrong": "nev = sor.split(\";\")[2] – és a név végén ott marad a \\n.",
+      "right": "sor.strip().split(\";\")",
+      "why": "A sor utolsó mezőjében benne marad a sorvégjel, így a \"Kiss Anna\\n\" == \"Kiss Anna\" összehasonlítás hamis lesz."
+    },
+    {
+      "wrong": "utolso = t[len(t)]",
+      "right": "utolso = t[len(t) - 1] vagy t[-1]",
+      "why": "Az indexek 0-tól len(t) − 1-ig tartanak; a t[len(t)] IndexError."
+    },
+    {
+      "wrong": "float(\"3,5\")",
+      "right": "float(\"3,5\".replace(\",\", \".\"))",
+      "why": "A Python tizedespontot vár; a magyar tizedesvesszős adatot előbb át kell alakítani."
+    }
+  ],
+  "examTips": [
+    "A beolvasás után írd ki az első rekordot és a rekordok számát – így azonnal látod, ha rossz az elválasztó vagy a típus.",
+    "Válassz a feladathoz illő adatszerkezetet: sorszám szerinti adatnál lista, név/kód szerinti csoportosításnál szótár.",
+    "A szóbelin mondd ki, milyen típusú és szerkezetű az adat (pl. „egész számok listája”, „szótár, ahol a kulcs a szó”)."
+  ],
+  "practice": [
+    {
+      "kind": "text",
+      "prompt": "Mit ír ki a program?\nprint(int(\"7\") + int(\"8\"), \"7\" + \"8\")",
+      "answer": [
+        "15 78"
+      ],
+      "explanation": "Kimenet: 15 78. Az int() számmá alakít, így az összeg 15; két karakterlánc + jellel összefűződik: \"78\".",
+      "id": "1",
+      "category": "adattipus-adatszerkezet"
+    },
+    {
+      "kind": "text",
+      "prompt": "Mit ír ki a program?\nt = [10, 20, 30, 40]\nprint(t[1:3])",
+      "answer": [
+        "[20, 30]",
+        "[20,30]"
+      ],
+      "explanation": "Kimenet: [20, 30]. A szelet az 1-es indextől a 3-as előttiig tart: t[1] = 20, t[2] = 30.",
+      "id": "2",
+      "category": "adattipus-adatszerkezet"
+    },
+    {
+      "kind": "choice",
+      "prompt": "sor = \"Kiss Anna;10.A\\n\"; adatok = sor.split(\";\"). Mi az adatok[1] értéke?",
+      "options": [
+        {
+          "key": "A",
+          "text": "\"10.A\""
+        },
+        {
+          "key": "B",
+          "text": "hibaüzenet"
+        },
+        {
+          "key": "C",
+          "text": "\"Kiss Anna\""
+        },
+        {
+          "key": "D",
+          "text": "\"10.A\\n\""
+        }
+      ],
+      "answer": "D",
+      "explanation": "D – \"10.A\\n\": a split() nem vágja le a sorvégjelet, az az utolsó mezőben marad. Ezért kell előbb strip(): sor.strip().split(\";\").",
+      "wrongOptions": {
+        "A": "Ez strip() után lenne így.",
+        "B": "A split() nem ad hibát, két elemű listát ad.",
+        "C": "Ez az adatok[0], az index 0-tól indul."
+      },
+      "id": "3",
+      "category": "adattipus-adatszerkezet"
+    },
+    {
+      "kind": "text",
+      "prompt": "Melyik szótármetódus adja vissza egy kulcs értékét úgy, hogy ha a kulcs még nincs a szótárban, egy megadott alapértéket (pl. 0-t) ad hiba helyett?",
+      "answer": [
+        "get",
+        "get()",
+        ".get()",
+        "dict.get"
+      ],
+      "explanation": "get: d.get(kulcs, 0). A d[kulcs] nem létező kulcsra KeyError hibát adna; gyakoriságszámolásnál ezért használjuk a get-et.",
+      "id": "4",
+      "category": "adattipus-adatszerkezet"
+    },
+    {
+      "kind": "text",
+      "prompt": "Mit ír ki a program?\nd = {\"alma\": 3, \"korte\": 5}\nd[\"alma\"] += 1\nprint(d[\"alma\"], len(d))",
+      "answer": [
+        "4 2"
+      ],
+      "explanation": "Kimenet: 4 2. Az \"alma\" kulcs értéke 3-ról 4-re nő; a szótárban továbbra is két kulcs van, a len() a kulcsok számát adja.",
+      "id": "5",
+      "category": "adattipus-adatszerkezet"
+    },
+    {
+      "kind": "choice",
+      "prompt": "Mit ad Pythonban a float(\"3,5\") hívás?",
+      "options": [
+        {
+          "key": "A",
+          "text": "3.5"
+        },
+        {
+          "key": "B",
+          "text": "35.0"
+        },
+        {
+          "key": "C",
+          "text": "ValueError hibát"
+        },
+        {
+          "key": "D",
+          "text": "3"
+        }
+      ],
+      "answer": "C",
+      "explanation": "C – ValueError: a Python tizedespontot vár („3.5”); a tizedesvesszős szöveget előbb át kell alakítani: float(\"3,5\".replace(\",\", \".\")).",
+      "wrongOptions": {
+        "A": "Csak tizedesponttal megadva lenne 3.5.",
+        "B": "A vesszőt nem hagyja figyelmen kívül.",
+        "D": "A float nem csonkol, és itt hibát ad."
+      },
+      "id": "6",
+      "category": "adattipus-adatszerkezet"
+    }
+  ],
+  "relatedCategories": [
+    "algoritmus-logika",
+    "fajlkezeles"
+  ]
+}

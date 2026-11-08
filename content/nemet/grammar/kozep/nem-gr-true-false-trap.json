@@ -1,0 +1,125 @@
+{
+  "schemaVersion": 1,
+  "id": "nem-gr-true-false-trap",
+  "subject": "nemet",
+  "level": "kozep",
+  "source": "generated",
+  "topic": "nyelvtan",
+  "title": "Igaz / hamis / nem derül ki",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "grammar",
+  "type": "lesson",
+  "category": "true-false-trap",
+  "summaryHu": "Az igaz/hamis feladatokban (olvasásnál gyakran harmadik lehetőséggel: „nem derül ki” – németül steht nicht im Text) az állítást pontosan össze kell vetni a szöveggel. A „hamis” azt jelenti, hogy a szöveg az ellenkezőjét mondja; a „nem derül ki” azt, hogy a szöveg erről nem ad információt. A legtöbb hiba abból adódik, hogy a vizsgázó a saját tudása vagy a valószínűség alapján dönt, és nem figyel a pontosító szavakra (alle, nur, immer, nie, müssen, können, noch, nicht mehr).",
+  "rules": [
+    {
+      "title": "Igaz, hamis vagy nem derül ki – mit jelent pontosan?",
+      "explanation": "Igaz (richtig): a szöveg ugyanezt állítja, akár más szavakkal. Hamis (falsch): a szöveg kifejezetten mást vagy az ellenkezőjét állítja. Nem derül ki (steht nicht im Text): a szöveg nem mond róla semmit, vagy csak részben, és a hiányzó rész nem következik belőle. Hallásnál általában csak igaz/hamis van – ott a nem említett állítás hamisnak számít, ha a feladat így kéri.",
+      "emeltOnly": false,
+      "examples": [
+        { "en": "Text: „Das Hotel hat ein Hallenbad und eine Sauna.”\nAussage: Im Hotel gibt es ein Fitnessstudio.", "note": "Nem derül ki: a szöveg nem állítja, hogy csak uszoda és szauna van, és edzőteremről sem mond semmit." }
+      ]
+    },
+    {
+      "title": "Mennyiség és gyakoriság: alle, viele, einige, nur, immer, nie",
+      "explanation": "Egyetlen szó megváltoztathatja az állítás igazságát. Ha a szövegben viele (sokan), az állításban alle (mindenki) áll, az állítás hamis vagy nem derül ki. Figyelj: alle – viele – einige – manche – wenige – niemand; immer – meistens – oft – manchmal – selten – nie; nur (csak), auch (is), sogar (még … is).",
+      "emeltOnly": false,
+      "examples": [
+        { "en": "Text: „Viele Schüler fahren mit dem Bus zur Schule.”\nAussage: Alle Schüler fahren mit dem Bus.", "note": "Nem ugyanaz: viele ≠ alle. Ha a szöveg nem mond többet, az állítás nem derül ki / hamis (a feladat szerint)." }
+      ]
+    },
+    {
+      "title": "Modalitás és idő: muss/kann, früher/jetzt, noch/nicht mehr",
+      "explanation": "A müssen (kötelező) és a können/dürfen (lehetséges, szabad) nem ugyanaz: ha a szöveg szerint lehet jelentkezni, az állítás pedig, hogy kötelező, az hamis. Az időviszonyok is döntők: früher (régen) vs. jetzt (most), noch (még) vs. nicht mehr (már nem), schon (már) vs. noch nicht (még nem), bald (hamarosan) vs. bereits (már).",
+      "emeltOnly": false,
+      "examples": [
+        { "en": "Text: „Früher hat Marie in Wien gewohnt, seit dem Sommer lebt sie in Salzburg.”\nAussage: Marie wohnt noch in Wien.", "note": "Hamis: a szöveg szerint már Salzburgban él (früher – seit dem Sommer)." }
+      ]
+    },
+    {
+      "title": "Átfogalmazás felismerése",
+      "explanation": "Az igaz állítás ritkán ismétli szó szerint a szöveget: szinonimát, ellentétes szót tagadással vagy más szerkezetet használ. freiwillig (önkéntes) = niemand muss; kostenlos = man muss nichts bezahlen; nicht teuer ≈ günstig; nicht erlaubt = verboten. Ilyenkor a jelentést hasonlítsd össze, ne a szavakat.",
+      "emeltOnly": false,
+      "examples": [
+        { "en": "Text: „Die Teilnahme am Workshop ist kostenlos.”\nAussage: Man muss für den Workshop nichts bezahlen.", "note": "Igaz: kostenlos = man muss nichts bezahlen." }
+      ]
+    },
+    {
+      "title": "Ne a saját tudásod alapján dönts",
+      "explanation": "Az állítás lehet igaz a valóságban (vagy nagyon valószínű), de ha a szöveg nem mondja, akkor nem derül ki. A feladat csak azt méri, mit mond a szöveg. Ha azon gondolkodsz, hogy „biztosan így van, mert általában így szokott lenni”, az a „nem derül ki” jele.",
+      "emeltOnly": false,
+      "examples": [
+        { "en": "Text: „Herr Lang arbeitet seit zehn Jahren als Busfahrer.”\nAussage: Herr Lang fährt gern Bus.", "note": "Nem derül ki: tíz év munka nem jelenti biztosan, hogy szereti – a szöveg nem mond erről semmit." }
+      ]
+    }
+  ],
+  "commonMistakes": [
+    { "wrong": "Az állítás logikus és valószínű, ezért igaznak jelölöm.", "right": "Megkeresem a szövegben azt a mondatot, amely ugyanezt állítja; ha nincs ilyen, és az ellenkezője sincs, „nem derül ki”.", "why": "A feladat a szöveg pontos megértését méri, nem az általános tudást; a valószínű, de nem említett állítás tipikus „nem derül ki”." },
+    { "wrong": "A szöveg nem említi, tehát hamis.", "right": "Hamis csak akkor, ha a szöveg az ellenkezőjét mondja; ha egyszerűen nem beszél róla, „nem derül ki”.", "why": "A „hamis” és a „nem derül ki” megkülönböztetése a feladat lényege: a hamishoz kell egy ellentmondó mondat a szövegben." },
+    { "wrong": "Nem figyelek a kis szavakra: a szövegben manchmal, az állításban immer áll – igaznak jelölöm.", "right": "A mennyiségi és gyakorisági szavakat összevetem: manchmal ≠ immer.", "why": "A feladatírók gyakran egyetlen szó (alle, nur, immer, nie, muss) megváltoztatásával teszik hamissá az állítást." },
+    { "wrong": "A szó szerinti egyezést keresem: ha a szavak egyeznek, igaz.", "right": "A jelentést hasonlítom össze: a szó szerinti egyezés mellett is lehet benne tagadás vagy más időviszony.", "why": "Az állítás és a szöveg ugyanazokat a szavakat használhatja, miközben a jelentés eltér (pl. noch – nicht mehr, kann – muss)." }
+  ],
+  "examTips": [
+    "Minden állításban húzd alá a pontosító szavakat (alle, nur, immer, nie, muss, kann, noch, schon, früher) – ezeket kell a szöveggel a legpontosabban összevetni.",
+    "Ha „hamis”-t jelölsz, legyen a szövegben egy konkrét mondat, amely ellentmond; ha nincs ilyen, gondold át, nem „nem derül ki”-e.",
+    "Az állítások általában a szöveg sorrendjét követik: ha megtaláltad a 2. állításhoz tartozó részt, a 3.-at utána keresd."
+  ],
+  "practice": [
+    {
+      "id": "1",
+      "kind": "choice",
+      "prompt": "Das Jugendzentrum ist montags bis freitags von 14 bis 20 Uhr geöffnet. Am Wochenende finden dort manchmal Konzerte statt.\n\nAussage: „Am Wochenende ist das Jugendzentrum immer geschlossen.”\nIst die Aussage richtig, falsch oder steht sie nicht im Text?",
+      "options": [
+        { "key": "A", "text": "Richtig" },
+        { "key": "B", "text": "Falsch" },
+        { "key": "C", "text": "Steht nicht im Text" }
+      ],
+      "answer": "B",
+      "category": "true-false-trap",
+      "evidence": "Am Wochenende finden dort manchmal Konzerte statt.",
+      "explanation": "Helyes: Falsch. A szöveg szerint hétvégén néha koncerteket tartanak az ifjúsági központban, tehát hétvégén nincs mindig zárva. Az immer (mindig) ellentmond a manchmal-nak.",
+      "wrongOptions": {
+        "A": "A nyitvatartás csak hétköznapokra van megadva, de a manchmal Konzerte azt mutatja, hogy hétvégén is nyitva lehet – az immer geschlossen tehát nem igaz.",
+        "C": "A szöveg kifejezetten mond valamit a hétvégéről (manchmal Konzerte), ami ellentmond az állításnak – ezért nem „nem derül ki”, hanem hamis."
+      }
+    },
+    {
+      "id": "2",
+      "kind": "choice",
+      "prompt": "Herr Lang arbeitet seit zehn Jahren als Busfahrer in Graz. Sein Sohn möchte später auch Busfahrer werden.\n\nAussage: „Herr Lang fährt gern Bus.”\nIst die Aussage richtig, falsch oder steht sie nicht im Text?",
+      "options": [
+        { "key": "A", "text": "Richtig" },
+        { "key": "B", "text": "Falsch" },
+        { "key": "C", "text": "Steht nicht im Text" }
+      ],
+      "answer": "C",
+      "category": "true-false-trap",
+      "evidence": "Herr Lang arbeitet seit zehn Jahren als Busfahrer in Graz.",
+      "explanation": "Helyes: Steht nicht im Text. A szöveg csak azt mondja, hogy Herr Lang tíz éve buszsofőr, és hogy a fia is az szeretne lenni. Arról, hogy ő maga szereti-e a munkáját, nincs információ.",
+      "wrongOptions": {
+        "A": "Az, hogy valaki tíz éve dolgozik valahol, vagy hogy a fia is ezt a szakmát választaná, nem bizonyítja, hogy szereti – ez csak feltételezés.",
+        "B": "A szöveg azt sem mondja, hogy nem szeret buszt vezetni; nincs ellentmondó mondat, ezért nem hamis."
+      }
+    },
+    {
+      "id": "3",
+      "kind": "choice",
+      "prompt": "Für den Ausflug nach Wien können sich alle Schüler der 11. Klassen anmelden. Die Teilnahme ist freiwillig, kostet aber 25 Euro.\n\nAussage: „Niemand ist verpflichtet, am Ausflug teilzunehmen.”\nIst die Aussage richtig, falsch oder steht sie nicht im Text?",
+      "options": [
+        { "key": "A", "text": "Richtig" },
+        { "key": "B", "text": "Falsch" },
+        { "key": "C", "text": "Steht nicht im Text" }
+      ],
+      "answer": "A",
+      "category": "true-false-trap",
+      "evidence": "Die Teilnahme ist freiwillig",
+      "explanation": "Helyes: Richtig. A freiwillig (önkéntes) azt jelenti, hogy senki sem köteles részt venni – az állítás más szavakkal ugyanezt mondja (niemand ist verpflichtet).",
+      "wrongOptions": {
+        "B": "Hamis akkor lenne, ha a szöveg szerint kötelező lenne a részvétel; a freiwillig éppen az ellenkezőjét mondja.",
+        "C": "A szöveg kifejezetten szól a részvétel önkéntességéről (freiwillig) – csak más szóval, mint az állítás."
+      }
+    }
+  ],
+  "relatedCategories": ["detail", "inference"]
+}

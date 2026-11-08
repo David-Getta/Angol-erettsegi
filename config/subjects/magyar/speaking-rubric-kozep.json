@@ -1,0 +1,189 @@
+{
+  "meta": {
+    "verifiedAt": "2026-11-05",
+    "sources": [
+      {
+        "title": "Oktatási Hivatal: Magyar nyelv és irodalom – részletes érettségi vizsgakövetelmény és vizsgaleírás (2024-től érvényes, Nat2020)",
+        "url": "https://www.oktatas.hu/pub_bin/dload/kozoktatas/erettsegi/vizsgakovetelmenyek2024/magyar_nyelv_es_irodalom_2024_e.pdf"
+      },
+      {
+        "title": "Eduline (2024. 05. 06.): Kezdődik a magyarérettségi – változások, pontozás, időkeret (240 perc = 90 + 150; szövegértés 40 + irodalmi feladatlap 20; II. feladatlap 40; helyesírás −8, íráskép −2)",
+        "url": "https://eduline.hu/erettsegi-felveteli/20240506_kezdodik-a-magyarerettsegi-valtozasok-pontozas-idokeret-minden-fontos-tudnivalo"
+      },
+      {
+        "title": "Eduline (2025. 04. 08.): Milyen részekből áll és hogyan pontozzák a középszintű magyarérettségit? (tartalmi minőség 30 + nyelvi minőség 10)",
+        "url": "https://eduline.hu/erettsegi_felveteli/20250408_Milyen_reszekbol_all_es_hogyan_pontozzak_a_magyarerettsegit"
+      },
+      {
+        "title": "Eduline (2025. 11. 06.): Így pontozzák a magyar nyelv és irodalom szóbelit (irodalom 25 + nyelvtan 15 + nyelvi minőség 10)",
+        "url": "https://eduline.hu/erettsegi-felveteli/20251106_oszi-erettsegi-2025-magyar-nyelv-es-irodalom-pontozas-ertekelesi-kriteriumok"
+      },
+      {
+        "title": "Eduline (2024. 04. 11.): Vizsgarészek, pontozás, segédeszközök – minden a 2024-es magyarérettségiről (emelt: szövegértési és nyelvi-irodalmi műveltségi feladatsor 40, műértelmező 40, reflektáló 20)",
+        "url": "https://eduline.hu/erettsegi-felveteli/20240411_Minden-amit-a-2024es-magyarerettsegirol-tudnotok-kell"
+      },
+      {
+        "title": "Eduline (2026. 04. 30.): Ady, Arany vagy Babits? – a 2026-os középszintű magyarérettségi kötelező szerzői",
+        "url": "https://eduline.hu/erettsegi-felveteli/20260430_magyar-nyelv-es-irodalom-erettsegi-2026-kozepszint-irok-koltok-lista"
+      },
+      {
+        "title": "ELTE Anyanyelv-pedagógia (2024): tanulmány a 2024-es magyar javítási-értékelési útmutatóról (szerkezet 5 + nyelvi igényesség 5)",
+        "url": "https://ojs.elte.hu/anyanyelv-pedagogia/article/download/11840/10505/32588"
+      },
+      {
+        "title": "Eduline (2026. 03. 14.): Érettségi 2026 – pontozási és osztályozási szabályok (közép 80/60/40/25 %, emelt 60/47/33/25 %, vizsgarészenként 12 %)",
+        "url": "https://eduline.hu/erettsegi-felveteli/20260314_erettsegi-2026-pontozas-osztalyozas"
+      }
+    ],
+    "notes": [
+      "Ellenőrzött: irodalom tétel tartalma 25, magyar nyelv tétel tartalma 15, a két felelet nyelvi minősége együtt 10 = 50; az app a nyelvi minőséget 5 + 5-ként a két felelethez rendeli.",
+      "Az ellenőrzés hírportál-cikkek (Eduline, Telex) és a hivatalos dokumentumok keresőben indexelt szövege alapján történt; az OH oldalát a futtató környezet hálózata nem engedte közvetlenül megnyitni – a hivatalos vizsgaleírással érdemes összevetni."
+    ]
+  },
+  "id": "speaking-kozep",
+  "level": "kozep",
+  "examMaxPoints": 50,
+  "tasks": [
+    {
+      "id": "irodalom",
+      "partNumber": 1,
+      "name": "Irodalom tétel",
+      "types": [
+        "irodalom-tetel"
+      ],
+      "criteria": [
+        {
+          "id": "tartalom",
+          "name": "Az irodalom tétel tartalma",
+          "description": "A tétel kifejtése a megadott szöveg(részlet) alapján: műértelmezés, tárgyi tudás, irodalomtörténeti kontextus, a szempontok követése.",
+          "max": 25,
+          "bands": [
+            {
+              "points": "25",
+              "descriptor": "Teljes, árnyalt, tárgyi tudással alátámasztott kifejtés a szövegrészlet értő használatával."
+            },
+            {
+              "points": "18–24",
+              "descriptor": "Jó kifejtés kisebb hiányokkal."
+            },
+            {
+              "points": "11–17",
+              "descriptor": "Részben kifejtett, felszínes vagy tartalomismertető felelet."
+            },
+            {
+              "points": "1–9",
+              "descriptor": "Vázlatos, tévedésekkel."
+            },
+            {
+              "points": "0",
+              "descriptor": "Nem értékelhető."
+            }
+          ]
+        },
+        {
+          "id": "nyelv",
+          "name": "Nyelvi minőség (irodalom felelet)",
+          "description": "Összefüggő, választékos, szakszerű előadás, önálló gondolatmenet.",
+          "max": 5,
+          "bands": [
+            {
+              "points": "5",
+              "descriptor": "Maradéktalanul teljesül: Összefüggő, választékos, szakszerű előadás, önálló gondolatmenet."
+            },
+            {
+              "points": "4",
+              "descriptor": "Kisebb hiányosságokkal vagy pontatlanságokkal teljesül; a lényeg helyes."
+            },
+            {
+              "points": "3",
+              "descriptor": "Részben teljesül: több elem hiányzik, pontatlan vagy indoklás nélküli."
+            },
+            {
+              "points": "2",
+              "descriptor": "Alig teljesül: csak néhány helyes, odaillő elem van."
+            },
+            {
+              "points": "0",
+              "descriptor": "Nem teljesül, vagy nem értékelhető."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "nyelvtan",
+      "partNumber": 2,
+      "name": "Magyar nyelv tétel",
+      "types": [
+        "nyelvtan-tetel"
+      ],
+      "criteria": [
+        {
+          "id": "tartalom",
+          "name": "A nyelvtan tétel tartalma",
+          "description": "A nyelvi jelenség, fogalom pontos kifejtése, példákkal, a megadott szöveg felhasználásával.",
+          "max": 15,
+          "bands": [
+            {
+              "points": "15",
+              "descriptor": "Pontos, teljes kifejtés példákkal, a szöveg felhasználásával."
+            },
+            {
+              "points": "11–14",
+              "descriptor": "Jó kifejtés kisebb hiányokkal."
+            },
+            {
+              "points": "7–10",
+              "descriptor": "Részben kifejtett, kevés példa."
+            },
+            {
+              "points": "1–5",
+              "descriptor": "Vázlatos, pontatlan."
+            },
+            {
+              "points": "0",
+              "descriptor": "Nem értékelhető."
+            }
+          ]
+        },
+        {
+          "id": "nyelv",
+          "name": "Nyelvi minőség (nyelvtan felelet)",
+          "description": "Összefüggő, szakszerű, választékos előadás.",
+          "max": 5,
+          "bands": [
+            {
+              "points": "5",
+              "descriptor": "Maradéktalanul teljesül: Összefüggő, szakszerű, választékos előadás."
+            },
+            {
+              "points": "4",
+              "descriptor": "Kisebb hiányosságokkal vagy pontatlanságokkal teljesül; a lényeg helyes."
+            },
+            {
+              "points": "3",
+              "descriptor": "Részben teljesül: több elem hiányzik, pontatlan vagy indoklás nélküli."
+            },
+            {
+              "points": "2",
+              "descriptor": "Alig teljesül: csak néhány helyes, odaillő elem van."
+            },
+            {
+              "points": "0",
+              "descriptor": "Nem teljesül, vagy nem értékelhető."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "overall": [],
+  "conversion": {
+    "method": "identity"
+  },
+  "officialScoring": [
+    "Szóbeli: 15 perc, 30 perc felkészülés, 50 pont (irodalom 25 + nyelvtan 15 + nyelvi minőség 10).",
+    "Iskolai tételsor: 20 irodalom + 20 magyar nyelv tétel."
+  ],
+  "generalRules": []
+}

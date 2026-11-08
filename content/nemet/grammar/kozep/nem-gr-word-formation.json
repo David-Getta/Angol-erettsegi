@@ -1,0 +1,274 @@
+{
+  "schemaVersion": 1,
+  "id": "nem-gr-word-formation",
+  "subject": "nemet",
+  "level": "kozep",
+  "source": "generated",
+  "topic": "nyelvtan",
+  "title": "Szóképzés, összetett szavak",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "grammar",
+  "type": "lesson",
+  "category": "word-formation",
+  "summaryHu": "A német szókincs nagy része képzéssel és összetétellel épül: igéből főnév (entscheiden → die Entscheidung), melléknévből főnév (möglich → die Möglichkeit), főnévből melléknév (Freund → freundlich), és szinte korlátlan számú összetett szó (Geburtstagsparty). A magyarban is sok a képző, ezért a rendszer ismerős, de a német képzők nem felelnek meg egy az egyben a magyaroknak, és a nemet, a kötőhangot (Fugen-s) és az Umlautot is tudni kell. A nyelvhelyesség rész szóképzési feladatában ez közvetlenül pontot ér, olvasásnál pedig az ismeretlen szavak megfejtésében segít.",
+  "rules": [
+    {
+      "title": "Főnévképzés",
+      "explanation": "-ung igéből, mindig nőnemű: wohnen → die Wohnung, entscheiden → die Entscheidung, erklären → die Erklärung. -heit / -keit melléknévből, nőnemű: frei → die Freiheit, krank → die Krankheit, gesund → die Gesundheit; -keit az -ig, -lich, -bar, -sam végű melléknevek után: möglich → die Möglichkeit, schwierig → die Schwierigkeit, freundlich → die Freundlichkeit. -er / -erin személy: lesen → der Leser / die Leserin, fahren → der Fahrer. -schaft (nőnemű): die Freundschaft, die Mannschaft. Igetőből végződés nélkül (gyakran hímnemű): besuchen → der Besuch, anfangen → der Anfang. Főnévi igenévből (semleges): das Lesen, das Schwimmen.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "Die Entscheidung war nicht leicht.",
+          "hu": "Nem volt könnyű a döntés.",
+          "note": "entscheiden → die Entscheidung."
+        },
+        {
+          "en": "Gibt es eine Möglichkeit, den Termin zu verschieben?",
+          "hu": "Van lehetőség az időpont áttételére?",
+          "note": "möglich → die Möglichkeit."
+        },
+        {
+          "en": "Danke für deinen Besuch!",
+          "hu": "Köszönöm, hogy meglátogattál!"
+        }
+      ]
+    },
+    {
+      "title": "Melléknévképzés",
+      "explanation": "-lich: Freund → freundlich, Tag → täglich, Gefahr → gefährlich (gyakran Umlauttal); -ig: Sonne → sonnig, Lust → lustig, Geduld → geduldig; -isch: Ungarn → ungarisch, Typ → typisch, Europa → europäisch; -bar (-ható, -hető): essen → essbar, waschen → waschbar, erreichen → erreichbar; -los (-talan, -telen): Arbeit → arbeitslos, Kosten → kostenlos, Hilfe → hilflos; -voll: wertvoll, sinnvoll; -reich: erfolgreich, hilfreich. Nem minden igéből képezhető -bar: verstehen → verständlich (nem verstehbar).",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "Die Verkäuferin war sehr freundlich.",
+          "hu": "Az eladónő nagyon kedves volt."
+        },
+        {
+          "en": "Der Eintritt ist für Schüler kostenlos.",
+          "hu": "A belépés diákoknak ingyenes."
+        },
+        {
+          "en": "Ich bin heute leider nicht erreichbar.",
+          "hu": "Ma sajnos nem vagyok elérhető."
+        }
+      ]
+    },
+    {
+      "title": "Tagadó és ellentétes jelentés: un-, -los, miss-",
+      "explanation": "un- a melléknév és néhány főnév ellentétét képzi: freundlich → unfreundlich, möglich → unmöglich, gesund → ungesund, das Glück → das Unglück. A -los a „hiány” jelentésű melléknévképző (-talan, -telen): arbeitslos, hoffnungslos. miss- főleg főnevekben és igékben: der Erfolg → der Misserfolg, verstehen → missverstehen.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "Fast Food ist ungesund.",
+          "hu": "A gyorsétel egészségtelen."
+        },
+        {
+          "en": "Das ist leider unmöglich.",
+          "hu": "Ez sajnos lehetetlen."
+        }
+      ]
+    },
+    {
+      "title": "Összetett szavak és a kötőhang",
+      "explanation": "Az összetett szó egybeírandó, a jelentését és a nemét az utolsó tag (Grundwort) adja, az előtte álló tag pontosítja: der Kühlschrank (kühl + der Schrank), die Haustür (das Haus + die Tür), das Fußballspiel. A tagok közé gyakran kötőhang kerül: -s- (Geburtstagsparty, Arbeitsplatz, Lieblingsessen; az -ung, -heit, -keit, -ion, -tät végű szavak után mindig: Wohnungsschlüssel, Universitätsstadt), -n-/-en- (Straßenbahn, Sonnenbrille), -e- (Hundefutter). Melléknév is lehet összetett: umweltfreundlich, eiskalt, hellblau.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "Wir feiern am Samstag meine Geburtstagsparty.",
+          "hu": "Szombaton tartjuk a születésnapi bulimat.",
+          "note": "der Geburtstag + s + die Party → die Geburtstagsparty."
+        },
+        {
+          "en": "Ich fahre mit der Straßenbahn zur Arbeit.",
+          "hu": "Villamossal járok dolgozni."
+        }
+      ]
+    },
+    {
+      "title": "Igekötők: új jelentés",
+      "explanation": "Az igekötő gyakran teljesen megváltoztatja az ige jelentését: stehen (áll) – aufstehen (felkel) – verstehen (megért) – bestehen (letesz vizsgát; áll valamiből) – entstehen (keletkezik); kommen – ankommen (megérkezik) – bekommen (kap); hören – aufhören (abbahagy) – zuhören (figyelmesen hallgat) – gehören (valakié); fahren – abfahren (elindul) – erfahren (megtud!); suchen – besuchen (meglátogat). Az elváló igekötők (an-, auf-, aus-, ein-, mit-, zu-, ab-) hangsúlyosak, a nem elválók (be-, ver-, er-, ent-, ge-, zer-) hangsúlytalanok.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "Wann fährt der Zug ab?",
+          "hu": "Mikor indul a vonat?"
+        },
+        {
+          "en": "Ich habe erst gestern davon erfahren.",
+          "hu": "Csak tegnap tudtam meg."
+        },
+        {
+          "en": "Hör auf! Und hör mir bitte zu!",
+          "hu": "Hagyd abba! És figyelj rám, kérlek!"
+        }
+      ]
+    },
+    {
+      "title": "Haladó képzések: -weise, -frei, -fähig, -wert",
+      "explanation": "-weise melléknévből mondathatározó: glücklicherweise (szerencsére), möglicherweise (esetleg), normalerweise (általában), teilweise (részben). -frei: alkoholfrei, kostenfrei, barrierefrei. -fähig: leistungsfähig, arbeitsfähig. -wert / -würdig: sehenswert (látnivaló, érdemes megnézni), empfehlenswert, merkwürdig (furcsa). Az emelt szintű szóképzési feladatban és az írásban ezek a változatos, pontos szókincs jelei.",
+      "emeltOnly": true,
+      "examples": [
+        {
+          "en": "Glücklicherweise hat niemand den Fehler bemerkt.",
+          "hu": "Szerencsére senki sem vette észre a hibát."
+        },
+        {
+          "en": "Die Altstadt ist wirklich sehenswert.",
+          "hu": "Az óváros tényleg megér egy látogatást."
+        }
+      ]
+    }
+  ],
+  "commonMistakes": [
+    {
+      "wrong": "Das ist eine gute Möglichheit.",
+      "right": "Das ist eine gute Möglichkeit.",
+      "why": "Az -ig, -lich, -bar, -sam végű melléknevekből -keit képzővel lesz főnév: möglich → Möglichkeit, schwierig → Schwierigkeit."
+    },
+    {
+      "wrong": "Ich bin Ungarisch.",
+      "right": "Ich bin Ungarin. / Ich bin Ungar.",
+      "why": "A nemzetiséget a németben főnévvel mondjuk (der Ungar, die Ungarin); az ungarisch melléknév (ein ungarisches Gericht), az Ungarisch pedig a nyelv (Ich spreche Ungarisch)."
+    },
+    {
+      "wrong": "Ich lade dich zu meiner Geburtstagparty ein.",
+      "right": "Ich lade dich zu meiner Geburtstagsparty ein.",
+      "why": "A Geburtstag után a kötőhang -s- kötelező: Geburtstags-party. A nemet az utolsó tag adja: die Party → die Geburtstagsparty."
+    },
+    {
+      "wrong": "Nach der Schule war er ein Jahr arbeitlos.",
+      "right": "Nach der Schule war er ein Jahr arbeitslos.",
+      "why": "Az Arbeit után -s- kötőhang áll (Arbeitsplatz, arbeitslos, Arbeitszeit)."
+    },
+    {
+      "wrong": "Die Erklärung war sehr verstehbar.",
+      "right": "Die Erklärung war sehr verständlich.",
+      "why": "Nem minden igéből képezhető -bar melléknév; a verstehen-hez a verständlich (érthető) tartozik."
+    },
+    {
+      "wrong": "Das Handy hört mir.",
+      "right": "Das Handy gehört mir.",
+      "why": "A hören jelentése „hall”; a birtoklást a ge- igekötős gehören (valakié) fejezi ki – az igekötő megváltoztatja a jelentést."
+    }
+  ],
+  "examTips": [
+    "Szóképzési feladatban először döntsd el, milyen szófaj kell a hiányba: névelő után főnév (nagybetűvel!), névelő és főnév között melléknév (végződéssel!), ige mellett határozószó. Utána válaszd ki a képzőt.",
+    "Ha főnevet képzel, ellenőrizd a többes számot és az esetet is (die Möglichkeit – viele Möglichkeiten), ha melléknevet, a végződést (ein freundlicher Mann) – a szóképzési feladatban ezek is számítanak.",
+    "Olvasásnál bontsd szét az ismeretlen összetett szót: Umweltschutzorganisation = Umwelt + Schutz + Organisation (környezetvédelmi szervezet) – a tagok sokszor ismerősek."
+  ],
+  "practice": [
+    {
+      "id": "1",
+      "kind": "text",
+      "prompt": "Nach langem Überlegen habe ich eine wichtige ___ (entscheiden) getroffen.",
+      "cue": "entscheiden",
+      "answer": [
+        "Entscheidung"
+      ],
+      "caseSensitive": true,
+      "category": "word-formation",
+      "explanation": "Helyes: Entscheidung. Az eine … getroffen főnevet kíván (eine Entscheidung treffen); igéből -ung képzővel lesz főnév, amely mindig nőnemű: entscheiden → die Entscheidung."
+    },
+    {
+      "id": "2",
+      "kind": "text",
+      "prompt": "Der Verkäufer war sehr ___ (Freund) und hat uns gut beraten.",
+      "cue": "Freund",
+      "answer": [
+        "freundlich"
+      ],
+      "category": "word-formation",
+      "explanation": "Helyes: freundlich. A sehr után és állítmányként (war) melléknév kell, végződés nélkül; a der Freund főnévből -lich képzővel: freundlich (kedves, barátságos)."
+    },
+    {
+      "id": "3",
+      "kind": "choice",
+      "prompt": "Bis morgen ein ganzes Buch lesen? Das ist leider ___!",
+      "options": [
+        {
+          "key": "A",
+          "text": "nichtmöglich"
+        },
+        {
+          "key": "B",
+          "text": "unmöglich"
+        },
+        {
+          "key": "C",
+          "text": "möglichlos"
+        },
+        {
+          "key": "D",
+          "text": "ohnemöglich"
+        }
+      ],
+      "answer": "B",
+      "category": "word-formation",
+      "explanation": "Helyes: unmöglich. A melléknév ellentétét az un- előtag képzi: möglich → unmöglich (lehetetlen).",
+      "wrongOptions": {
+        "A": "A nicht tagadószó, nem előtag; külön írva helyes lenne (nicht möglich), de egybeírva nem létező szó.",
+        "C": "A -los képző főnévhez járul (arbeitslos, kostenlos), melléknévhez nem.",
+        "D": "Az ohne elöljárószó, nem képez melléknevet."
+      }
+    },
+    {
+      "id": "4",
+      "kind": "text",
+      "prompt": "Meine Oma kann ohne Brille kaum lesen, sie hat ___ (schwierig) mit den Augen.",
+      "cue": "schwierig",
+      "answer": [
+        "Schwierigkeiten"
+      ],
+      "caseSensitive": true,
+      "category": "word-formation",
+      "explanation": "Helyes: Schwierigkeiten. A hat után főnév kell (Schwierigkeiten haben mit = nehézségei vannak valamivel); az -ig végű melléknévből -keit képzővel lesz főnév, és itt többes számban áll: die Schwierigkeit – die Schwierigkeiten."
+    },
+    {
+      "id": "5",
+      "kind": "choice",
+      "prompt": "Am Samstag feiern wir bei uns im Garten eine große ___.",
+      "options": [
+        {
+          "key": "A",
+          "text": "Geburtstagfeier"
+        },
+        {
+          "key": "B",
+          "text": "Geburtstagsfeier"
+        },
+        {
+          "key": "C",
+          "text": "Geburtstagesfeier"
+        },
+        {
+          "key": "D",
+          "text": "Geburtstag-Feier"
+        }
+      ],
+      "answer": "B",
+      "category": "word-formation",
+      "explanation": "Helyes: Geburtstagsfeier. A Geburtstag + Feier összetételben -s- kötőhang áll, és az egészet egybeírjuk; a neme az utolsó tagé (die Feier).",
+      "wrongOptions": {
+        "A": "Hiányzik a kötelező -s- kötőhang (Geburtstags-).",
+        "C": "Az -es- kötőhang itt nem helyes; a Geburtstag után -s- áll.",
+        "D": "Kötőjel nélkül, egybeírva helyes, és a kötőhang ebből is hiányzik."
+      }
+    },
+    {
+      "id": "6",
+      "kind": "text",
+      "prompt": "Nach dem Abitur war mein Bruder ein halbes Jahr ___ (Arbeit), dann hat er eine Stelle gefunden.",
+      "cue": "Arbeit",
+      "answer": [
+        "arbeitslos"
+      ],
+      "category": "word-formation",
+      "explanation": "Helyes: arbeitslos. A war után melléknév kell (munkanélküli volt); a die Arbeit főnévből -los képzővel, -s- kötőhanggal: arbeitslos."
+    }
+  ],
+  "relatedCategories": [
+    "spelling",
+    "vocabulary-range",
+    "plural-gender"
+  ]
+}

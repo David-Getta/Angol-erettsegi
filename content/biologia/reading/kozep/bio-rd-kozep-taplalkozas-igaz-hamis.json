@@ -1,0 +1,91 @@
+{
+  "schemaVersion": 1,
+  "id": "bio-rd-kozep-taplalkozas-igaz-hamis",
+  "subject": "biologia",
+  "revision": 1,
+  "level": "kozep",
+  "source": "generated",
+  "topic": "egeszsegtan",
+  "title": "Táplálkozás és tápanyagok – igaz vagy hamis?",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "reading",
+  "type": "igaz-hamis",
+  "instructions": "Döntse el az alábbi, táplálkozással kapcsolatos állításokról, hogy igazak vagy hamisak! Jelölje az igaz állításokat I (T), a hamisakat H (F) betűvel! A 0. állítás a példa.",
+  "example": {
+    "id": "0",
+    "kind": "tf",
+    "prompt": "A C-vitamin vízben oldódó vitamin.",
+    "answer": "T",
+    "category": "fogalomhasznalat",
+    "explanation": "Igaz. A C-vitamin (aszkorbinsav) és a B-vitaminok vízben oldódnak, ezért a szervezet (a B12-vitamin kivételével) nem raktározza őket, a felesleg a vizelettel kiürül – rendszeresen kell fogyasztani."
+  },
+  "items": [
+    {
+      "id": "1",
+      "kind": "tf",
+      "prompt": "A fehérjék építőkövei az aminosavak.",
+      "answer": "T",
+      "category": "fogalomhasznalat",
+      "explanation": "Igaz. A fehérjék aminosavakból felépülő óriásmolekulák; az emésztés során aminosavakra bomlanak, és ezekből építi fel a szervezet a saját fehérjéit. Húszféle fehérjealkotó aminosav van, közülük néhány esszenciális, azaz csak táplálékkal vihető be."
+    },
+    {
+      "id": "2",
+      "kind": "tf",
+      "prompt": "A zsírban oldódó vitaminok (A, D, E, K) nem raktározódnak a szervezetben, ezért naponta nagy mennyiségben kell fogyasztani őket.",
+      "answer": "F",
+      "category": "fogalomhasznalat",
+      "explanation": "Hamis. Éppen a zsírban oldódó vitaminok raktározódnak (a májban és a zsírszövetben), ezért túladagolásuk is lehetséges; a vízben oldódók (B, C) azok, amelyek – a B12-vitamin kivételével – nem raktározódnak, és rendszeres pótlást igényelnek."
+    },
+    {
+      "id": "3",
+      "kind": "tf",
+      "prompt": "A skorbut a D-vitamin hiánybetegsége.",
+      "answer": "F",
+      "category": "fogalomhasznalat",
+      "explanation": "Hamis. A skorbut (ínyvérzés, sebgyógyulási zavar) a C-vitamin hiánya miatt alakul ki, mert a C-vitamin a kötőszöveti kollagén képzéséhez szükséges. A D-vitamin hiánya gyermekkorban angolkórt, felnőttkorban csontlágyulást okoz."
+    },
+    {
+      "id": "4",
+      "kind": "tf",
+      "prompt": "Az élelmi rostok (pl. a cellulóz) az ember számára emészthetetlenek, de serkentik a bélmozgást.",
+      "answer": "T",
+      "category": "anyagcsere-folyamat",
+      "explanation": "Igaz. Az embernek nincs cellulózbontó enzime, ezért a rostok emésztetlenül haladnak át a bélcsatornán; megduzzadva növelik a béltartalom térfogatát, ami serkenti a perisztaltikát, és csökkenti a székrekedés és a vastagbélbetegségek kockázatát."
+    },
+    {
+      "id": "5",
+      "kind": "tf",
+      "prompt": "A testtömegindex (BMI) a testtömeg (kg) és a testmagasság (m) négyzetének hányadosa.",
+      "answer": "T",
+      "category": "okologiai-szamitas",
+      "explanation": "Igaz. BMI = testtömeg (kg) / testmagasság² (m²). Felnőtteknél 18,5–24,9 közötti érték számít normálisnak, 25 felett túlsúlyról, 30 felett elhízásról beszélünk. Például 70 kg és 1,75 m esetén 70 / 1,75² = 70 / 3,0625 ≈ 22,9."
+    },
+    {
+      "id": "6",
+      "kind": "tf",
+      "prompt": "A jódhiány a hasnyálmirigy működési zavarát okozza.",
+      "answer": "F",
+      "category": "felepites-mukodes",
+      "explanation": "Hamis. A jód a pajzsmirigy hormonjának (tiroxin) alkotórésze; hiányában a pajzsmirigy megnagyobbodik (golyva), és anyagcsere-lassulás lép fel. A hasnyálmirigy az inzulint és emésztőenzimeket termel, működése nem függ a jódtól."
+    },
+    {
+      "id": "7",
+      "kind": "tf",
+      "prompt": "A koleszterin kizárólag káros anyag, a szervezetnek egyáltalán nincs rá szüksége.",
+      "answer": "F",
+      "category": "fogalomhasznalat",
+      "explanation": "Hamis. A koleszterin a sejthártya alkotórésze, belőle képződnek a szteroid hormonok (pl. nemi hormonok), a D-vitamin és az epesavak. Csak a vérben tartósan magas szintje káros, mert az erek falán lerakódva érelmeszesedést okoz."
+    },
+    {
+      "id": "8",
+      "kind": "tf",
+      "prompt": "Az egészséges étrendben a napi energiabevitel legnagyobb részét a szénhidrátok adják.",
+      "answer": "T",
+      "category": "fogalomhasznalat",
+      "explanation": "Igaz. Az ajánlások szerint az energia körülbelül 50–55%-át szénhidrátokból (főleg összetett szénhidrátokból: gabona, burgonya, zöldség), kb. 30%-át zsírokból és 12–15%-át fehérjékből célszerű fedezni."
+    }
+  ],
+  "glossary": [],
+  "suggestedMinutes": 7
+}

@@ -1,0 +1,133 @@
+{
+  "schemaVersion": 1,
+  "id": "bio-gd-writing-kiserletelemzes",
+  "subject": "biologia",
+  "revision": 1,
+  "level": "kozep",
+  "source": "generated",
+  "topic": "utmutato",
+  "title": "Kísérletelemzés",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "guide",
+  "type": "writing",
+  "target": "kiserletelemzes",
+  "summaryHu": "A kísérletelemzésben egy leírt kísérlet (elrendezés, tapasztalat) alapján kell 3–5 kérdésre mondatokban válaszolni: mi a kísérlet célja és hipotézise, melyek a változók, mi a kontroll szerepe, hogyan magyarázható az eredmény, és mi a következtetés. A javító a biológiai helyességet, az indoklást és a szaknyelvet értékeli.",
+  "steps": [
+    {
+      "title": "A kísérlet szerkezetének feltárása",
+      "explanation": "Olvasd el a leírást, és jelöld meg: mit változtattak (független változó), mit mértek vagy figyeltek meg (függő változó), mi maradt állandó, és melyik minta a kontroll.",
+      "tips": [
+        "Készíts kis táblázatot a mintákról: miben különböznek, mi az eredmény.",
+        "A kontroll az a minta, amelyből a vizsgált tényező hiányzik."
+      ]
+    },
+    {
+      "title": "Az eredmény leírása és magyarázata",
+      "explanation": "Minden mintánál először mondd el a tapasztalatot, majd a biológiai okát. A kimutatási reakciókat (Lugol, Fehling, meszes víz, gyújtópálca) nevezd meg, és mondd meg, mit jeleznek.",
+      "tips": [
+        "„Az 1. kémcső sárgásbarna maradt, tehát nem volt benne keményítő, mert az amiláz lebontotta.”",
+        "Ha két minta eredménye azonos, de az oka eltér (hideg – forralás), ezt külön magyarázd."
+      ]
+    },
+    {
+      "title": "Következtetés",
+      "explanation": "A következtetés a hipotézisre vonatkozik: megerősítik vagy cáfolják az eredmények? Fogalmazz óvatosan, és csak arra általánosíts, amit a kísérlet vizsgált.",
+      "tips": [
+        "„A vizsgált körülmények között…”",
+        "Ha kérdezik, mondj hibaforrást és javítási lehetőséget (ismétlés, nagyobb mintaszám)."
+      ]
+    },
+    {
+      "title": "Kapcsolás a szervezethez",
+      "explanation": "Gyakori záró kérdés, hogy hol és hogyan működik a vizsgált folyamat a szervezetben (pl. az enzim helye, pH-ja, a folyamat folytatása). Itt a tananyagra kell támaszkodnod.",
+      "tips": [
+        "Ne felejtsd el a kémhatást és a hőmérsékletet, ha enzimről van szó."
+      ]
+    }
+  ],
+  "phrases": [
+    {
+      "group": "Változók",
+      "en": "A kísérlet független változója …, függő változója …",
+      "hu": "a változók pontos megnevezése"
+    },
+    {
+      "group": "Kontroll",
+      "en": "A … kémcső a kontroll: ugyanazt tartalmazza, csak … nélkül.",
+      "hu": "a kontroll szerepének leírása"
+    },
+    {
+      "group": "Kontroll",
+      "en": "Ez bizonyítja, hogy a változást a … okozza.",
+      "hu": "a kontroll jelentősége"
+    },
+    {
+      "group": "Tapasztalat",
+      "en": "A … próba … színt adott, ami … jelenlétét mutatja.",
+      "hu": "kimutatási reakció értelmezése"
+    },
+    {
+      "group": "Magyarázat",
+      "en": "… hatására …, ezért …",
+      "hu": "ok-okozati mondat"
+    },
+    {
+      "group": "Összehasonlítás",
+      "en": "A … és a … mintában az eredmény azonos, de az ok eltér: …",
+      "hu": "két hasonló eredmény elkülönítése"
+    },
+    {
+      "group": "Következtetés",
+      "en": "Az eredmények alátámasztják a hipotézist, mert …",
+      "hu": "indokolt következtetés"
+    },
+    {
+      "group": "Hibaforrás",
+      "en": "Az eredményt befolyásolhatta …; ezt … lehetne kiküszöbölni.",
+      "hu": "hibaforrás és javítás"
+    }
+  ],
+  "mistakes": [
+    {
+      "wrong": "„A 2. kémcső kék lett.” (magyarázat nélkül)",
+      "right": "„A 2. kémcső kékesfekete lett, mert a keményítő nem bomlott le: nem volt benne enzim.”",
+      "why": "A tapasztalat leírása kevés, az okot is meg kell adni."
+    },
+    {
+      "wrong": "„A kontroll az, ahol nem történt semmi.”",
+      "right": "„A kontroll az a minta, amelyből csak a vizsgált tényező hiányzik.”",
+      "why": "A kontroll szerepe az összehasonlítás, nem az, hogy ne történjen benne változás."
+    },
+    {
+      "wrong": "„A forralt és a hideg enzim is elromlott.”",
+      "right": "„Hidegben az enzim működése visszafordíthatóan lelassul, forraláskor a fehérje visszafordíthatatlanul denaturálódik.”",
+      "why": "A két hatás mechanizmusa és visszafordíthatósága különbözik."
+    },
+    {
+      "wrong": "„A kísérlet bebizonyította, hogy az enzim mindig 37 °C-on működik a legjobban.”",
+      "right": "„A vizsgált hőmérsékletek közül 37 °C-on volt a leggyorsabb a bontás.”",
+      "why": "A következtetés nem lehet általánosabb, mint a mérések."
+    }
+  ],
+  "checklist": [
+    "Megneveztem a független és a függő változót?",
+    "Leírtam, mi a kontroll, és miért van rá szükség?",
+    "Minden minta eredményét megmagyaráztam, nem csak leírtam?",
+    "A kimutatási reakciók jelentését megadtam?",
+    "A következtetésem az adatokból következik, és nem általánosít túl?"
+  ],
+  "timing": "Középszinten kb. 25 perc: 5 perc a kísérlet áttekintése és egy kis táblázat, 15–17 perc a válaszok megírása, 3 perc ellenőrzés.",
+  "levelNotes": {
+    "kozep": "Középszinten a kísérletek ismertek (enzimműködés, csírázás, fotoszintézis, erjedés, ozmózis); a kérdések a kontrollra, a változókra és a magyarázatra irányulnak.",
+    "emelt": "Emelt szinten a kísérletelemzés a feladatlapon és a problémafeladatban is előkerül, összetettebb adatokkal; gyakran kell új kísérletet tervezni, hipotézist megfogalmazni és hibaforrást keresni."
+  },
+  "example": {
+    "title": "Minta: egy válaszrészlet (közép, enzimkísérlet)",
+    "text": "A 2. kémcső a kontroll: ugyanazt tartalmazza, mint az 1., csak nyál helyett desztillált vizet. Ez bizonyítja, hogy a keményítő magától nem bomlik el, tehát az 1. kémcsőben látott változást a nyál amiláza okozza.",
+    "notes": [
+      "Az első mondat közvetlenül felel a kérdésre.",
+      "A második mondat megmondja, miért kell a kontroll – ez az indoklás pontja."
+    ]
+  }
+}

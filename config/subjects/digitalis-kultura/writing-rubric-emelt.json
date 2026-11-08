@@ -1,0 +1,431 @@
+{
+  "meta": {
+    "verifiedAt": "2026-11-05",
+    "sources": [
+      {
+        "title": "Oktatási Hivatal: Digitális kultúra – részletes érettségi vizsgakövetelmény és vizsgaleírás (2024-től érvényes, Nat2020)",
+        "url": "https://www.oktatas.hu/pub_bin/dload/kozoktatas/erettsegi/vizsgakovetelmenyek2024/digitalis_kultura_2024_e.pdf"
+      },
+      {
+        "title": "Eduline (2024. 05. 13.): Érettségi 2024 – ezeket a feladatokat kapták a diákok középszinten digitális kultúrából (180 perc, 5 feladat: szövegszerkesztés, vizuális elemek, táblázatkezelés, adatbázis, programozás)",
+        "url": "https://eduline.hu/erettsegi-felveteli/20240513_digitalis-kultura-erettsegi-kozepszint-feladatok"
+      },
+      {
+        "title": "Eduline (2024. 10. 24.): Nem sikerült az érettségi? Ezt kell tudnotok a szóbeliről – matematika és digitális kultúra (szóbeli csak 12–24,99 % között, póttétel)",
+        "url": "https://eduline.hu/erettsegi_felveteli/20241024_oszi_erettsegi_2024_matematika_digitalis_kultura_szobeli_szabalyok_pottetel"
+      },
+      {
+        "title": "Eduline (2025. 05. 20.): Itt vannak a hétfői emelt szintű digitális kultúra érettségi feladatlapjai és javítókulcsa (240 perc, 120 pont)",
+        "url": "https://eduline.hu/erettsegi_felveteli/20250520_digitalis_kultura_emelt_szint_megoldasok"
+      },
+      {
+        "title": "Petrik Lajos Szakgimnázium (2024. 10.): Digitális kultúra érettségi – iskolai tájékoztató (szóbeli: A téma kifejtése + B programozási feladat bemutatása, 15 perc)",
+        "url": "https://petrik.hu/wp-content/uploads/2024/10/Digitalis_kultura.pdf"
+      },
+      {
+        "title": "Siegler Gábor (PPKE ITK, 2026. 03.): Digitális kultúra – tanártovábbképzési előadások (emelt szóbeli 30 pont, a gyakorlati pontbontás)",
+        "url": "https://itk.ppke.hu/storage/tinymce/uploads/Kozepiskola/2026_tanarovabbkepzes/Digitalis-kultura-tananyagok/Siegler-Gabor_eloadasai_2026-03.pdf"
+      },
+      {
+        "title": "Eduline (2026. 03. 14.): Érettségi 2026 – pontozási és osztályozási szabályok (közép 80/60/40/25 %, emelt 60/47/33/25 %, vizsgarészenként 12 %)",
+        "url": "https://eduline.hu/erettsegi-felveteli/20260314_erettsegi-2026-pontozas-osztalyozas"
+      }
+    ],
+    "notes": [
+      "A 120 pont felosztása (30/15/30/45) az informatika emelt érettségi bontásából becsült – a hivatalos vizsgaleírással egyeztetendő.",
+      "Az ellenőrzés hírportál-cikkek (Eduline, Telex) és a hivatalos dokumentumok keresőben indexelt szövege alapján történt; az OH oldalát a futtató környezet hálózata nem engedte közvetlenül megnyitni – a hivatalos vizsgaleírással érdemes összevetni."
+    ]
+  },
+  "id": "writing-emelt",
+  "level": "emelt",
+  "examMaxPoints": 120,
+  "tasks": [
+    {
+      "taskNumber": 1,
+      "name": "Kiadvány, prezentáció, weblap",
+      "textTypes": [
+        "szovegszerkesztes",
+        "prezentacio-weblap"
+      ],
+      "guidingPoints": "",
+      "suggestedMinutes": 50,
+      "maxRaw": 30,
+      "criteria": [
+        {
+          "id": "megvalositas",
+          "name": "A feladat követelményeinek teljesítése",
+          "description": "A kért elemek (kiadvány / prezentáció / weblap elemei, stílusok, képek, hivatkozások) elkészültek és a leírásnak megfelelnek; minden részfeladat pontot ér.",
+          "max": 16,
+          "bands": [
+            {
+              "points": "16",
+              "descriptor": "Minden részfeladat a leírás szerint elkészült."
+            },
+            {
+              "points": "12–15",
+              "descriptor": "A részfeladatok többsége elkészült, egy-két apró eltéréssel."
+            },
+            {
+              "points": "7–11",
+              "descriptor": "A részfeladatok fele készült el, vagy több hibás."
+            },
+            {
+              "points": "1–6",
+              "descriptor": "Csak néhány részfeladat készült el."
+            },
+            {
+              "points": "0",
+              "descriptor": "A feladat nem készült el."
+            }
+          ]
+        },
+        {
+          "id": "modszer",
+          "name": "Szakszerű módszer, eszközhasználat",
+          "description": "A megfelelő eszközt, függvényt, lekérdezést, stílust vagy algoritmust használja (nem kézi munkával helyettesíti).",
+          "max": 8,
+          "bands": [
+            {
+              "points": "8",
+              "descriptor": "Végig szakszerű, hatékony megoldás."
+            },
+            {
+              "points": "6–7",
+              "descriptor": "Többségében szakszerű, egy-két kézi vagy körülményes megoldás."
+            },
+            {
+              "points": "4–5",
+              "descriptor": "Vegyes: a módszer több helyen nem megfelelő."
+            },
+            {
+              "points": "1–3",
+              "descriptor": "Többnyire nem szakszerű megoldás."
+            },
+            {
+              "points": "0",
+              "descriptor": "Nem értékelhető."
+            }
+          ]
+        },
+        {
+          "id": "pontossag",
+          "name": "Pontosság, hibátlan működés",
+          "description": "Az eredmény hibátlan (helyes értékek, működő kód, pontos formázás), a fájl/kód megfelelően elmentve és elnevezve.",
+          "max": 6,
+          "bands": [
+            {
+              "points": "6",
+              "descriptor": "Hibátlan."
+            },
+            {
+              "points": "5",
+              "descriptor": "Egy kisebb hiba."
+            },
+            {
+              "points": "3–4",
+              "descriptor": "Több hiba, de használható."
+            },
+            {
+              "points": "1–2",
+              "descriptor": "Sok hiba."
+            },
+            {
+              "points": "0",
+              "descriptor": "Nem működik / nem értékelhető."
+            }
+          ]
+        }
+      ],
+      "rules": []
+    },
+    {
+      "taskNumber": 2,
+      "name": "Táblázatkezelés",
+      "textTypes": [
+        "tablazatkezeles"
+      ],
+      "guidingPoints": "",
+      "suggestedMinutes": 35,
+      "maxRaw": 15,
+      "criteria": [
+        {
+          "id": "megvalositas",
+          "name": "A feladat követelményeinek teljesítése",
+          "description": "A kért elemek (képletek, függvények, diagram, formázás) elkészültek és a leírásnak megfelelnek; minden részfeladat pontot ér.",
+          "max": 8,
+          "bands": [
+            {
+              "points": "8",
+              "descriptor": "Minden részfeladat a leírás szerint elkészült."
+            },
+            {
+              "points": "6–7",
+              "descriptor": "A részfeladatok többsége elkészült, egy-két apró eltéréssel."
+            },
+            {
+              "points": "4–5",
+              "descriptor": "A részfeladatok fele készült el, vagy több hibás."
+            },
+            {
+              "points": "1–3",
+              "descriptor": "Csak néhány részfeladat készült el."
+            },
+            {
+              "points": "0",
+              "descriptor": "A feladat nem készült el."
+            }
+          ]
+        },
+        {
+          "id": "modszer",
+          "name": "Szakszerű módszer, eszközhasználat",
+          "description": "A megfelelő eszközt, függvényt, lekérdezést, stílust vagy algoritmust használja (nem kézi munkával helyettesíti).",
+          "max": 4,
+          "bands": [
+            {
+              "points": "4",
+              "descriptor": "Végig szakszerű, hatékony megoldás."
+            },
+            {
+              "points": "3",
+              "descriptor": "Többségében szakszerű, egy-két kézi vagy körülményes megoldás."
+            },
+            {
+              "points": "2",
+              "descriptor": "Vegyes: a módszer több helyen nem megfelelő."
+            },
+            {
+              "points": "0",
+              "descriptor": "Nem értékelhető."
+            }
+          ]
+        },
+        {
+          "id": "pontossag",
+          "name": "Pontosság, hibátlan működés",
+          "description": "Az eredmény hibátlan (helyes értékek, működő kód, pontos formázás), a fájl/kód megfelelően elmentve és elnevezve.",
+          "max": 3,
+          "bands": [
+            {
+              "points": "3",
+              "descriptor": "Hibátlan."
+            },
+            {
+              "points": "2",
+              "descriptor": "Több hiba, de használható."
+            },
+            {
+              "points": "1",
+              "descriptor": "Sok hiba."
+            },
+            {
+              "points": "0",
+              "descriptor": "Nem működik / nem értékelhető."
+            }
+          ]
+        }
+      ],
+      "rules": []
+    },
+    {
+      "taskNumber": 3,
+      "name": "Adatbázis-kezelés",
+      "textTypes": [
+        "adatbazis"
+      ],
+      "guidingPoints": "",
+      "suggestedMinutes": 60,
+      "maxRaw": 30,
+      "criteria": [
+        {
+          "id": "megvalositas",
+          "name": "A feladat követelményeinek teljesítése",
+          "description": "A kért elemek (táblák, kapcsolatok, összetett lekérdezések, jelentés) elkészültek és a leírásnak megfelelnek; minden részfeladat pontot ér.",
+          "max": 16,
+          "bands": [
+            {
+              "points": "16",
+              "descriptor": "Minden részfeladat a leírás szerint elkészült."
+            },
+            {
+              "points": "12–15",
+              "descriptor": "A részfeladatok többsége elkészült, egy-két apró eltéréssel."
+            },
+            {
+              "points": "7–11",
+              "descriptor": "A részfeladatok fele készült el, vagy több hibás."
+            },
+            {
+              "points": "1–6",
+              "descriptor": "Csak néhány részfeladat készült el."
+            },
+            {
+              "points": "0",
+              "descriptor": "A feladat nem készült el."
+            }
+          ]
+        },
+        {
+          "id": "modszer",
+          "name": "Szakszerű módszer, eszközhasználat",
+          "description": "A megfelelő eszközt, függvényt, lekérdezést, stílust vagy algoritmust használja (nem kézi munkával helyettesíti).",
+          "max": 8,
+          "bands": [
+            {
+              "points": "8",
+              "descriptor": "Végig szakszerű, hatékony megoldás."
+            },
+            {
+              "points": "6–7",
+              "descriptor": "Többségében szakszerű, egy-két kézi vagy körülményes megoldás."
+            },
+            {
+              "points": "4–5",
+              "descriptor": "Vegyes: a módszer több helyen nem megfelelő."
+            },
+            {
+              "points": "1–3",
+              "descriptor": "Többnyire nem szakszerű megoldás."
+            },
+            {
+              "points": "0",
+              "descriptor": "Nem értékelhető."
+            }
+          ]
+        },
+        {
+          "id": "pontossag",
+          "name": "Pontosság, hibátlan működés",
+          "description": "Az eredmény hibátlan (helyes értékek, működő kód, pontos formázás), a fájl/kód megfelelően elmentve és elnevezve.",
+          "max": 6,
+          "bands": [
+            {
+              "points": "6",
+              "descriptor": "Hibátlan."
+            },
+            {
+              "points": "5",
+              "descriptor": "Egy kisebb hiba."
+            },
+            {
+              "points": "3–4",
+              "descriptor": "Több hiba, de használható."
+            },
+            {
+              "points": "1–2",
+              "descriptor": "Sok hiba."
+            },
+            {
+              "points": "0",
+              "descriptor": "Nem működik / nem értékelhető."
+            }
+          ]
+        }
+      ],
+      "rules": []
+    },
+    {
+      "taskNumber": 4,
+      "name": "Algoritmizálás, adatmodellezés",
+      "textTypes": [
+        "programozas"
+      ],
+      "guidingPoints": "",
+      "suggestedMinutes": 95,
+      "maxRaw": 45,
+      "criteria": [
+        {
+          "id": "megvalositas",
+          "name": "A feladat követelményeinek teljesítése",
+          "description": "A kért elemek (beolvasás, adatszerkezetek, részfeladatok, kimenet, hibakezelés) elkészültek és a leírásnak megfelelnek; minden részfeladat pontot ér.",
+          "max": 25,
+          "bands": [
+            {
+              "points": "25",
+              "descriptor": "Minden részfeladat a leírás szerint elkészült."
+            },
+            {
+              "points": "18–24",
+              "descriptor": "A részfeladatok többsége elkészült, egy-két apró eltéréssel."
+            },
+            {
+              "points": "11–17",
+              "descriptor": "A részfeladatok fele készült el, vagy több hibás."
+            },
+            {
+              "points": "1–9",
+              "descriptor": "Csak néhány részfeladat készült el."
+            },
+            {
+              "points": "0",
+              "descriptor": "A feladat nem készült el."
+            }
+          ]
+        },
+        {
+          "id": "modszer",
+          "name": "Szakszerű módszer, eszközhasználat",
+          "description": "A megfelelő eszközt, függvényt, lekérdezést, stílust vagy algoritmust használja (nem kézi munkával helyettesíti).",
+          "max": 11,
+          "bands": [
+            {
+              "points": "11",
+              "descriptor": "Végig szakszerű, hatékony megoldás."
+            },
+            {
+              "points": "8–10",
+              "descriptor": "Többségében szakszerű, egy-két kézi vagy körülményes megoldás."
+            },
+            {
+              "points": "5–7",
+              "descriptor": "Vegyes: a módszer több helyen nem megfelelő."
+            },
+            {
+              "points": "1–4",
+              "descriptor": "Többnyire nem szakszerű megoldás."
+            },
+            {
+              "points": "0",
+              "descriptor": "Nem értékelhető."
+            }
+          ]
+        },
+        {
+          "id": "pontossag",
+          "name": "Pontosság, hibátlan működés",
+          "description": "Az eredmény hibátlan (helyes értékek, működő kód, pontos formázás), a fájl/kód megfelelően elmentve és elnevezve.",
+          "max": 9,
+          "bands": [
+            {
+              "points": "9",
+              "descriptor": "Hibátlan."
+            },
+            {
+              "points": "7–8",
+              "descriptor": "Egy kisebb hiba."
+            },
+            {
+              "points": "4–6",
+              "descriptor": "Több hiba, de használható."
+            },
+            {
+              "points": "1–3",
+              "descriptor": "Sok hiba."
+            },
+            {
+              "points": "0",
+              "descriptor": "Nem működik / nem értékelhető."
+            }
+          ]
+        }
+      ],
+      "rules": []
+    }
+  ],
+  "conversion": {
+    "method": "identity"
+  },
+  "generalRules": [
+    "A forráskódot a megadott néven kell menteni; a részfeladatok külön pontot érnek."
+  ]
+}

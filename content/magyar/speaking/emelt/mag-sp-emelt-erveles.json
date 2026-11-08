@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "id": "mag-sp-emelt-erveles",
+  "subject": "magyar",
+  "revision": 1,
+  "level": "emelt",
+  "source": "generated",
+  "topic": "retorika",
+  "title": "Az érvelés felépítése és az érvtípusok",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "speaking",
+  "type": "nyelvtan-tetel",
+  "partNumber": 2,
+  "instructionsHu": "Mutassa be az érvelés szerkezetét, a főbb érvtípusokat és a cáfolat módjait! Elemezze a megadott diákönkormányzati felszólalást: nevezze meg a tételt, az érveket és azok típusát, a cáfolatot és a beszéd részeit!",
+  "prompts": [
+    "Az érvelés szerkezete: állítás (tétel), bizonyítás (érvek), következtetés",
+    "Érvtípusok: logikai, tapasztalati (példa), tekintélyi, analógiás érv; érvelési hibák",
+    "A cáfolat és a megengedés; a retorikus beszéd részei",
+    "A megadott felszólalás elemzése"
+  ],
+  "sources": [
+    {
+      "title": "Felszólalás a diákönkormányzat ülésén",
+      "text": "Kedves Társaim! Azt javaslom, hogy iskolánk udvarán alakítsunk ki egy közösségi kertet. Először is: a kert közösséget teremt, hiszen a munkát csak együtt tudjuk elvégezni. Másodszor: a szomszédos gimnáziumban két éve működik ilyen kert, és az ottani diákok szerint azóta sokkal többet beszélgetnek egymással a szünetekben. Harmadszor: a biológiatanárunk is megerősítette, hogy a kerti munka kiváló terep a gyakorlati tanuláshoz. Persze mondhatná valaki, hogy ez sok munkával jár. Igen, de a munka nem teher, ha közösen végezzük, és a termés a miénk lesz. Kérlek, szavazzatok a javaslatra!"
+    }
+  ],
+  "keyPoints": [
+    "Az érvelés három része: az állítás (tétel), amelyet bizonyítani akarunk; a bizonyítás (érvek, bizonyítékok); a következtetés.",
+    "Érvtípusok: logikai (ok-okozati) érv, tapasztalati érv (példa, tény), tekintélyi érv (szakértőre hivatkozás), analógiás érv (hasonló eset alapján).",
+    "Érvelési hibák: személyeskedés (ad hominem), elhamarkodott általánosítás, hamis tekintély, körben forgó érvelés.",
+    "A cáfolat az ellenérv gyengítése; a megengedő cáfolat előbb elismeri az ellenvetés egy részét („Igen, de …”).",
+    "A retorikus beszéd részei: bevezetés (megszólítás, figyelemfelkeltés), elbeszélés/tárgyalás, bizonyítás, cáfolat, befejezés (összegzés, felhívás).",
+    "A felszólalás tétele: alakítsanak ki közösségi kertet az iskola udvarán.",
+    "Első érv: logikai (a közös munka közösséget teremt); második: tapasztalati és analógiás (a szomszéd gimnázium példája); harmadik: tekintélyi (a biológiatanár véleménye).",
+    "Megengedő cáfolat: „Persze mondhatná valaki … Igen, de …”; a befejezés felhívás (szavazzatok)."
+  ],
+  "speakingSeconds": 480,
+  "prepSeconds": 600,
+  "usefulPhrases": [
+    { "en": "tétel – érv – bizonyíték – következtetés", "hu": "az érvelés alapfogalmai" },
+    { "en": "logikai, tapasztalati, tekintélyi, analógiás érv", "hu": "a leggyakoribb érvtípusok" },
+    { "en": "megengedő cáfolat („Igen, de …”)", "hu": "az ellenvetés részleges elismerése, majd gyengítése" },
+    { "en": "a beszéd részei: bevezetés, tárgyalás, bizonyítás, cáfolat, befejezés", "hu": "a klasszikus retorika szerkezete" },
+    { "en": "érvelési hiba (pl. személyeskedés)", "hu": "olyan érv, amely nem a tételt bizonyítja, hanem megtéveszt" }
+  ],
+  "sampleAnswer": {
+    "turns": [
+      {
+        "speaker": "candidate",
+        "text": "Az érvelés célja, hogy egy állítás igazságáról vagy egy javaslat helyességéről meggyőzzünk másokat. Három része van: az állítás vagy tétel, amelyet bizonyítani akarunk, a bizonyítás, vagyis az érvek és a bizonyítékok sora, végül a következtetés. Az érveknek több típusa van. A logikai érv ok-okozati összefüggésre épít, a tapasztalati érv példát, tényt hoz, a tekintélyi érv egy szakértőre vagy elismert személyre hivatkozik, az analógiás érv pedig egy hasonló eset alapján következtet. Kerülni kell az érvelési hibákat, például a személyeskedést, amikor nem a véleményt, hanem a vitapartnert támadjuk, vagy az elhamarkodott általánosítást.\n\nA meggyőző érvelés része a cáfolat is, amely az ellenérvet gyengíti. Különösen hatásos a megengedő cáfolat, amely előbb elismeri az ellenvetés egy részét. A klasszikus retorika szerint a beszéd részei a bevezetés, a tárgyalás, a bizonyítás, a cáfolat és a befejezés.\n\nA megadott felszólalás jól mutatja ezt a szerkezetet. A bevezetés a „Kedves Társaim!” megszólítás, amely után rögtön elhangzik a tétel: alakítsanak ki közösségi kertet az iskola udvarán. Az érveket a szónok sorszámokkal tagolja, ami áttekinthetővé teszi a beszédet. Az első érv logikai: a közös munka közösséget teremt, ezt a „hiszen” kötőszó vezeti be. A második érv tapasztalati és egyben analógiás: a szomszédos gimnázium példájából következtet arra, hogy náluk is javulna a közösségi élet. A harmadik tekintélyi érv, a biológiatanár véleményére hivatkozik. Ezután következik a megengedő cáfolat: „Persze mondhatná valaki, hogy ez sok munkával jár. Igen, de …” A szónok elismeri az ellenvetést, majd gyengíti azzal, hogy a közös munka nem teher. A befejezés felhívás: „Kérlek, szavazzatok a javaslatra!” A rövid beszéd tehát a klasszikus retorikai felépítést követi, és változatos érvtípusokkal dolgozik."
+      }
+    ],
+    "notes": [
+      "Tartalom: az elméleti rész (szerkezet, érvtípusok, hibák, cáfolat, a beszéd részei) teljes, és a szövegelemzés minden elemét besorolja ebbe a rendszerbe.",
+      "Forráshasználat: a vizsgázó észreveszi a nyelvi jelzéseket is (sorszámozás, „hiszen”, „Igen, de”), és azt, hogy egy érv egyszerre lehet tapasztalati és analógiás.",
+      "Nyelvi minőség: szakszerű és jól követhető előadás, maga a felelet is logikusan érvel."
+    ]
+  }
+}

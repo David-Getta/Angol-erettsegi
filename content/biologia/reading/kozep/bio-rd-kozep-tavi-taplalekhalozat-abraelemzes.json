@@ -1,0 +1,189 @@
+{
+  "schemaVersion": 1,
+  "id": "bio-rd-kozep-tavi-taplalekhalozat-abraelemzes",
+  "subject": "biologia",
+  "revision": 1,
+  "level": "kozep",
+  "source": "generated",
+  "topic": "okologia",
+  "title": "Egy tó táplálékhálózata – ábraelemzés",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "reading",
+  "type": "abraelemzes",
+  "instructions": "Tanulmányozza az ábra és a táblázat szöveges leírását, majd válaszoljon a kérdésekre! A feleletválasztós kérdéseknél a helyes válasz betűjelét, a rövid választ igénylőknél a kért szót vagy számot írja be. A 0. kérdés a példa.",
+  "passage": {
+    "title": "Egy sekély tó táplálékhálózata",
+    "blocks": [
+      {
+        "text": "Az ábra egy sekély, hazai tó táplálékhálózatát mutatja. A nyilak az anyag és az energia áramlásának irányát jelzik: a nyíl attól az élőlénytől mutat, amelyet megesznek, ahhoz, amelyik megeszi. A hálózat tagjai: fitoplankton (a vízben lebegő egysejtű algák), hínár, zooplankton (apró lebegő rákok), csiga, ponty, csuka és szürke gém."
+      },
+      {
+        "text": "Az ábrán a következő nyilak láthatók: fitoplankton → zooplankton; hínár → csiga; zooplankton → ponty; csiga → ponty; ponty → csuka; ponty → szürke gém; csuka → szürke gém."
+      },
+      {
+        "heading": "Táblázat: a tó egy hektárjára jutó biomassza (kg szárazanyag)",
+        "text": "Termelők: 2000 kg. Elsődleges fogyasztók: 200 kg. Másodlagos fogyasztók: 20 kg. Harmadlagos fogyasztók: 2 kg."
+      }
+    ]
+  },
+  "example": {
+    "id": "0",
+    "kind": "choice",
+    "prompt": "Melyik élőlény termelő a hálózatban?",
+    "options": [
+      {
+        "key": "A",
+        "text": "hínár"
+      },
+      {
+        "key": "B",
+        "text": "zooplankton"
+      },
+      {
+        "key": "C",
+        "text": "csiga"
+      },
+      {
+        "key": "D",
+        "text": "ponty"
+      }
+    ],
+    "answer": "A",
+    "category": "okologiai-osszefugges",
+    "explanation": "Helyes: A. Termelő az, amely fotoszintézissel maga állítja elő szerves anyagát, és amelyből a leírás szerint csak kiinduló nyíl van: a hínár és a fitoplankton. A zooplankton, a csiga és a ponty fogyasztó."
+  },
+  "items": [
+    {
+      "id": "1",
+      "kind": "choice",
+      "prompt": "Melyik élőlény elsődleges fogyasztó (növényevő)?",
+      "options": [
+        {
+          "key": "A",
+          "text": "ponty"
+        },
+        {
+          "key": "B",
+          "text": "csuka"
+        },
+        {
+          "key": "C",
+          "text": "hínár"
+        },
+        {
+          "key": "D",
+          "text": "csiga"
+        }
+      ],
+      "answer": "D",
+      "category": "okologiai-osszefugges",
+      "explanation": "Helyes: D. A csiga a hínárt (termelőt) fogyasztja, tehát elsődleges fogyasztó – ugyanúgy, mint a fitoplanktont evő zooplankton.",
+      "wrongOptions": {
+        "A": "A ponty zooplanktont és csigát eszik, tehát másodlagos fogyasztó.",
+        "B": "A csuka pontyot eszik, ezért harmadlagos fogyasztó.",
+        "C": "A hínár termelő, nem fogyasztó."
+      }
+    },
+    {
+      "id": "2",
+      "kind": "text",
+      "prompt": "Hány táplálkozási szintből áll a leghosszabb tápláléklánc, amely a fitoplanktontól a szürke gémig vezet?",
+      "answer": [
+        "5",
+        "öt",
+        "5 szint",
+        "öt szint",
+        "ötből",
+        "5 táplálkozási szint"
+      ],
+      "maxWords": 3,
+      "category": "abra-adatelemzes",
+      "explanation": "Helyes: 5. A leghosszabb lánc: fitoplankton → zooplankton → ponty → csuka → szürke gém, azaz termelő, elsődleges, másodlagos, harmadlagos és negyedleges fogyasztó – öt szint."
+    },
+    {
+      "id": "3",
+      "kind": "tf",
+      "prompt": "A szürke gém a hálózatban kizárólag harmadlagos fogyasztó.",
+      "answer": "F",
+      "category": "okologiai-osszefugges",
+      "explanation": "Hamis. A gém pontyot is eszik (ekkor harmadlagos fogyasztó), de csukát is (ekkor negyedleges fogyasztó). Egy táplálékhálózatban ugyanaz a faj több táplálkozási szinten is állhat – ez a különbség a tápláléklánc és a táplálékhálózat között."
+    },
+    {
+      "id": "4",
+      "kind": "text",
+      "prompt": "A táblázat szerint hány százaléka a másodlagos fogyasztók biomasszája az elsődleges fogyasztókénak?",
+      "answer": [
+        "10",
+        "10%",
+        "tíz",
+        "tíz százalék",
+        "10 százalék",
+        "egytized",
+        "1/10"
+      ],
+      "maxWords": 3,
+      "category": "okologiai-szamitas",
+      "explanation": "Helyes: 10%. 20 kg / 200 kg = 0,1, azaz 10%. A biomassza szintenként nagyságrenddel csökken, mert az elfogyasztott energia nagy része légzéssel hővé alakul, és nem épül be a következő szint testébe."
+    },
+    {
+      "id": "5",
+      "kind": "choice",
+      "prompt": "Mi a legvalószínűbb következménye annak, ha a tóból a horgászok kifogják az összes csukát?",
+      "options": [
+        {
+          "key": "A",
+          "text": "A pontyok egyedszáma csökken."
+        },
+        {
+          "key": "B",
+          "text": "A pontyok egyedszáma nő, ezért a zooplankton és a csiga egyedszáma csökken."
+        },
+        {
+          "key": "C",
+          "text": "A hínár mennyisége erősen csökken."
+        },
+        {
+          "key": "D",
+          "text": "A szürke gém kipusztul, mert elfogy a tápláléka."
+        }
+      ],
+      "answer": "B",
+      "category": "okologiai-osszefugges",
+      "explanation": "Helyes: B. A csuka a ponty egyik fogyasztója; ha eltűnik, a pontyok száma nő, ezért több zooplanktont és csigát fogyasztanak, így azok egyedszáma csökken. A változás továbbterjed: kevesebb zooplankton több fitoplanktont jelent.",
+      "wrongOptions": {
+        "A": "A ponty egy ragadozója tűnt el, ezért az egyedszáma inkább nő, nem csökken.",
+        "C": "Ha a csigák száma csökken, a hínár kevésbé fogy, tehát inkább nő, mint csökken.",
+        "D": "A gém nem pusztul ki: a hálózat szerint pontyot is eszik, és abból több lesz."
+      }
+    },
+    {
+      "id": "6",
+      "kind": "tf",
+      "prompt": "A táblázat adatai alapján minden táplálkozási szintre az alatta lévő szint biomasszájának körülbelül tizede jut.",
+      "answer": "T",
+      "category": "abra-adatelemzes",
+      "explanation": "Igaz. 2000 → 200 → 20 → 2 kg: minden szint az előző tizede. Ez a biomassza-piramis: a felsőbb szinteken egyre kevesebb anyag és energia áll rendelkezésre, ezért a csúcsragadozók egyedszáma mindig kicsi."
+    },
+    {
+      "id": "7",
+      "kind": "text",
+      "prompt": "Hogyan nevezzük azokat az élőlényeket (pl. baktériumok, gombák), amelyek az elpusztult élőlények szerves anyagát szervetlen anyagokká bontják, és így zárják a tó anyagforgalmát?",
+      "answer": [
+        "lebontók",
+        "lebontó szervezetek",
+        "lebontó",
+        "lebontó élőlények",
+        "szaprofiták",
+        "reducensek",
+        "dekomponálók",
+        "lebontók (reducensek)"
+      ],
+      "maxWords": 3,
+      "category": "fogalomhasznalat",
+      "explanation": "Helyes: lebontók (reducensek, szaprofiták). Az elhalt szervezetek és az ürülék szerves anyagait baktériumok és gombák bontják szervetlen anyagokká (CO₂, víz, ásványi sók), amelyeket a termelők újra felvehetnek – nélkülük az anyagforgalom nem záródna."
+    }
+  ],
+  "glossary": [],
+  "suggestedMinutes": 10
+}

@@ -1,0 +1,126 @@
+{
+  "schemaVersion": 1,
+  "id": "kem-gd-exam-writing",
+  "subject": "kemia",
+  "revision": 1,
+  "level": "kozep",
+  "source": "generated",
+  "topic": "utmutato",
+  "title": "Számítási és kísérletelemző feladatok",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "guide",
+  "type": "exam",
+  "target": "writing",
+  "summaryHu": "Az írásbeli feladatlap második nagy része a kidolgozandó feladatoké: számítási, kísérletelemző és elemző feladatok. Itt a megoldás menetét is értékelik: a felhasznált összefüggést, a rendezett egyenleteket, a mértékegységeket és a szöveges választ. Középszinten a számítási feladatok aránya a vizsgán 20–40 %, emelt szinten legalább négy számítási feladat szerepel (kb. 40–50 pont). A hibás részeredményt továbbvivő, egyébként helyes gondolatmenet részpontot kap, ezért minden lépést le kell írni.",
+  "steps": [
+    {
+      "title": "Olvasd el a teljes feladatot",
+      "explanation": "Mielőtt számolni kezdesz, olvasd végig az összes részkérdést (a, b, c …): a későbbi részek gyakran az előzők eredményére épülnek, és megmutatják, merre halad a feladat. Írd ki az adatokat mértékegységgel, és jelöld, mi a kérdés.",
+      "tips": [
+        "Húzd alá a kerekítési utasítást (pl. „három értékes jegyre”).",
+        "Jelöld meg, mely adatokat nem használtad még fel."
+      ]
+    },
+    {
+      "title": "Egyenlet, anyagmennyiség, arány",
+      "explanation": "A számítási feladatok gerince: rendezett egyenlet → az adott mennyiség átszámítása mólra → arány az egyenletből → visszaszámítás a kért mennyiségre. Írd le a felhasznált összefüggést (n = m/M, V = n · Vm, c = n/V, Q = I · t) is.",
+      "tips": [
+        "Két kiindulási anyagnál előbb döntsd el, melyik van feleslegben.",
+        "A részeredményeket egy jeggyel pontosabban vidd tovább."
+      ]
+    },
+    {
+      "title": "Kísérletelemzés: tapasztalat → magyarázat → egyenlet",
+      "explanation": "A kísérletelemző feladatokban külön pontot ér a tapasztalat (mit látunk) és a magyarázat (miért, egyenlettel). Minden kémcsőről írj, akkor is, ha ott nincs változás – a „nincs változás” is tapasztalat.",
+      "tips": [
+        "A tapasztalatot érzékszervi szavakkal írd le: pezseg, zavarosodik, elszíntelenedik.",
+        "Ionegyenletet kér a feladat? Akkor ionegyenletet írj."
+      ]
+    },
+    {
+      "title": "Szöveges válasz és ellenőrzés",
+      "explanation": "Minden részfeladatot zárj egy mondattal, mértékegységgel („Standardállapotban 4,90 dm³ hidrogén fejlődik.”). A végén ellenőrizd, hogy az eredmény reális-e (tömegszázalék 0–100 %, pH 0–14, nem keletkezhet több termék, mint amennyi anyag volt).",
+      "tips": [
+        "Ellenőrzésre jó egy második módszer (pl. tömegmegmaradás).",
+        "Ha egy eredmény irreális, keresd meg a hibát, és javítsd a lépést."
+      ]
+    }
+  ],
+  "phrases": [
+    {
+      "group": "Összefüggés",
+      "en": "n = m / M",
+      "hu": "Tömeg ↔ anyagmennyiség."
+    },
+    {
+      "group": "Összefüggés",
+      "en": "V = n · Vm",
+      "hu": "Gáz térfogata (standardállapotban Vm = 24,5 dm³/mol)."
+    },
+    {
+      "group": "Összefüggés",
+      "en": "c = n / V; w = m(oldott) / m(oldat)",
+      "hu": "Koncentráció és tömegszázalék."
+    },
+    {
+      "group": "Összefüggés",
+      "en": "ΔrH = Σ ΔkH(termékek) − Σ ΔkH(kiindulási anyagok)",
+      "hu": "Hess-tétel a termokémiai feladatokhoz."
+    },
+    {
+      "group": "Összefüggés",
+      "en": "n(e⁻) = I · t / F",
+      "hu": "Elektrolízis, Faraday-törvény (F = 96 500 C/mol)."
+    },
+    {
+      "group": "Szöveges válasz",
+      "en": "A keletkező oldat … tömegszázalékos …-ra nézve.",
+      "hu": "Oldatösszetétel megfogalmazása."
+    },
+    {
+      "group": "Kísérletelemzés",
+      "en": "Tapasztalat: … Magyarázat: …",
+      "hu": "A két pontozott elem szétválasztása."
+    },
+    {
+      "group": "Indoklás",
+      "en": "Mivel …, ezért …",
+      "hu": "A lépések kémiai indoklása – erre külön pont jár."
+    }
+  ],
+  "mistakes": [
+    {
+      "wrong": "Csak a végeredményt írja le.",
+      "right": "Leírja a felhasznált összefüggéseket és a lépéseket.",
+      "why": "A gondolatmenetre külön pont jár, és hibás részeredménynél csak a leírt lépések alapján kaphat részpontot."
+    },
+    {
+      "wrong": "Rendezetlen egyenletből számol arányt.",
+      "right": "Először rendezi az egyenletet, és abból olvassa ki az arányt.",
+      "why": "A rendezetlen egyenlet hibás arányt ad, így a teljes számítás rossz lesz."
+    },
+    {
+      "wrong": "A kísérletelemzésnél csak egyenletet ír, tapasztalatot nem.",
+      "right": "Leírja a tapasztalatot is (szín, gáz, csapadék).",
+      "why": "A tapasztalatra és a magyarázatra külön pont jár."
+    },
+    {
+      "wrong": "Elfelejti a mértékegységet és a szöveges választ.",
+      "right": "Minden részfeladatot mondattal és mértékegységgel zár.",
+      "why": "A „Válasz, mértékegység” szempontra külön pont jár."
+    }
+  ],
+  "checklist": [
+    "Minden részkérdésre válaszoltam?",
+    "Az egyenletek rendezettek (atomok és töltések)?",
+    "Leírtam a felhasznált összefüggéseket?",
+    "A végeredmény a kért pontosságú és mértékegységes?",
+    "Ellenőriztem, hogy az eredmény reális?"
+  ],
+  "timing": "Középszinten a teljes feladatlapra 150 perc jut; az app javaslata szerint kb. 70 percet szánj a kidolgozandó feladatokra (egy számítási feladatra kb. 25, egy kísérletelemzőre és egy elemzőre kb. 20–20 percet). Emelt szinten a 240 percből kb. 140 perc jut ezekre: egy számítási feladatra 30–40, egy kísérletelemző és egy elemző feladatra kb. 30–30 perc. Hagyj 10 percet az ellenőrzésre.",
+  "levelNotes": {
+    "kozep": "Középszinten tipikus a sztöchiometriai, oldatkészítési és egyszerű gázszámítás, egy leírt kísérlet értelmezése és egy anyagismereti elemző feladat.",
+    "emelt": "Emelt szinten összetettebb, többlépéses számítások jönnek (pH, egyensúly, termokémia, elektrolízis, gázelegyek, képletmeghatározás), a kísérletelemzésnél részecskeszintű magyarázat és pontos szaknyelv kell."
+  }
+}

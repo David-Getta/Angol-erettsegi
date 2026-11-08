@@ -1,0 +1,215 @@
+{
+  "schemaVersion": 1,
+  "id": "tor-rd-emelt-szovjetunio-felbomlasa",
+  "subject": "tortenelem",
+  "revision": 1,
+  "level": "emelt",
+  "source": "generated",
+  "topic": "jelenkor",
+  "title": "A Szovjetunió felbomlása",
+  "createdAt": "2026-11-05",
+  "tags": [
+    "egyetemes"
+  ],
+  "section": "reading",
+  "type": "feleletvalasztas",
+  "instructions": "A feladat a Szovjetunió felbomlásával kapcsolatos. Válassza ki a források és ismeretei segítségével a helyes választ! Minden kérdésre egy helyes válasz van. A 0. a megoldott példa.",
+  "passage": {
+    "title": "A szovjet birodalom vége",
+    "sourceNote": "A források a gyakorlás céljára írt, a kor stílusát követő szövegek, illetve leírások – nem hiteles korabeli dokumentumok.",
+    "blocks": [
+      {
+        "heading": "I. forrás – Egy szovjet pártvezető beszédének stílusában, 1987",
+        "text": "„Az átalakítás nem a szocializmus elvetése, hanem megújítása. Gazdaságunk lelassult, a fegyverkezés terhei nőnek, a népnek elege van a sorban állásból. Nyilvánosság nélkül nem tudjuk feltárni a hibákat: beszélnünk kell a múlt bűneiről is, és a vállalatoknak nagyobb önállóságot kell adnunk.”"
+      },
+      {
+        "heading": "II. forrás – Egy hírügynökség jelentéséből, 1991. december",
+        "text": "„December 8-án Oroszország, Ukrajna és Belarusz vezetői kimondták, hogy a Szovjetunió mint nemzetközi jogalany megszűnik, és létrehozták a Független Államok Közösségét. December 25-én a szovjet elnök lemondott, a Kreml tornyán pedig a vörös zászló helyére az orosz trikolórt vonták fel.”"
+      }
+    ]
+  },
+  "example": {
+    "id": "0",
+    "kind": "choice",
+    "prompt": "Ki volt az a szovjet vezető, aki az I. forrásban leírt politikát meghirdette?",
+    "options": [
+      {
+        "key": "A",
+        "text": "Nyikita Hruscsov"
+      },
+      {
+        "key": "B",
+        "text": "Mihail Gorbacsov"
+      },
+      {
+        "key": "C",
+        "text": "Leonyid Brezsnyev"
+      },
+      {
+        "key": "D",
+        "text": "Borisz Jelcin"
+      }
+    ],
+    "answer": "B",
+    "category": "szemelyek-esemenyek",
+    "explanation": "Helyes: Mihail Gorbacsov. 1985-től az SZKP főtitkára volt, ő hirdette meg a peresztrojkát (átalakítás) és a glasznosztyot (nyilvánosság); 1991. december 25-én lemondott a szovjet elnöki tisztségről."
+  },
+  "items": [
+    {
+      "id": "1",
+      "kind": "choice",
+      "prompt": "Mit jelent az I. forrásban említett „nyilvánosság” orosz megfelelője, a glasznoszty?",
+      "options": [
+        {
+          "key": "A",
+          "text": "a kelet–nyugati viszony enyhülését a hetvenes években"
+        },
+        {
+          "key": "B",
+          "text": "a gazdaság átalakítását, a vállalatok önállóságának növelését"
+        },
+        {
+          "key": "C",
+          "text": "a cenzúra enyhítését, a hibák és a múlt bűneinek nyílt megvitatását"
+        },
+        {
+          "key": "D",
+          "text": "a magántulajdon teljes visszaállítását"
+        }
+      ],
+      "answer": "C",
+      "category": "fogalomhasznalat",
+      "explanation": "Helyes: C. A glasznoszty a nyilvánosság politikája: enyhült a cenzúra, nyíltan lehetett beszélni a hibákról és a sztálini múlt bűneiről – a forrás szerint „beszélnünk kell a múlt bűneiről is”.",
+      "wrongOptions": {
+        "A": "Ez az enyhülés (détente) fogalma, amely a hetvenes évek nemzetközi kapcsolataira vonatkozik.",
+        "B": "Ez a peresztrojka (átalakítás) gazdasági oldala, nem a glasznoszty.",
+        "D": "Gorbacsov a forrás szerint is a szocializmus „megújítását” akarta, nem a magántulajdon teljes visszaállítását."
+      }
+    },
+    {
+      "id": "2",
+      "kind": "choice",
+      "prompt": "Melyik 1991. augusztusi esemény gyorsította fel döntően a Szovjetunió felbomlását?",
+      "options": [
+        {
+          "key": "A",
+          "text": "a reformellenes vezetők sikertelen puccskísérlete Moszkvában"
+        },
+        {
+          "key": "B",
+          "text": "a berlini fal leomlása"
+        },
+        {
+          "key": "C",
+          "text": "a csernobili atomerőmű katasztrófája"
+        },
+        {
+          "key": "D",
+          "text": "a szovjet csapatok bevonulása Afganisztánba"
+        }
+      ],
+      "answer": "A",
+      "category": "evszam-kronologia",
+      "explanation": "Helyes: A. 1991 augusztusában a keményvonalas vezetők megpróbálták eltávolítani Gorbacsovot; a puccs Jelcin vezetésével összeomlott, de utána a tagköztársaságok sorra kimondták függetlenségüket.",
+      "wrongOptions": {
+        "B": "A berlini fal 1989. november 9-én omlott le.",
+        "C": "A csernobili katasztrófa 1986 áprilisában történt.",
+        "D": "A szovjet csapatok 1979 decemberében vonultak be Afganisztánba (1989-ben vonultak ki)."
+      }
+    },
+    {
+      "id": "3",
+      "kind": "choice",
+      "prompt": "Melyik szervezetet hozták létre a II. forrás szerint a Szovjetunió helyett?",
+      "options": [
+        {
+          "key": "A",
+          "text": "a Kölcsönös Gazdasági Segítség Tanácsát"
+        },
+        {
+          "key": "B",
+          "text": "a Független Államok Közösségét"
+        },
+        {
+          "key": "C",
+          "text": "a Varsói Szerződést"
+        },
+        {
+          "key": "D",
+          "text": "az Európai Gazdasági Közösséget"
+        }
+      ],
+      "answer": "B",
+      "category": "forras-ertelmezes",
+      "explanation": "Helyes: B. A forrás szerint december 8-án a három szláv köztársaság vezetői „létrehozták a Független Államok Közösségét” (FÁK), amelyhez később más volt tagköztársaságok is csatlakoztak.",
+      "wrongOptions": {
+        "A": "A KGST-t 1949-ben hozták létre, és 1991 júniusában feloszlott.",
+        "C": "A Varsói Szerződést 1955-ben alapították, 1991 nyarán szűnt meg.",
+        "D": "Az EGK nyugat-európai szervezet volt (1957), a Szovjetunióhoz nincs köze."
+      }
+    },
+    {
+      "id": "4",
+      "kind": "choice",
+      "prompt": "Melyik a Szovjetunió felbomlásának egyik legfontosabb oka az I. forrás és ismeretei alapján?",
+      "options": [
+        {
+          "key": "A",
+          "text": "a szovjet gazdaság gyors növekedése, amely miatt a tagköztársaságok önállóságra törekedtek"
+        },
+        {
+          "key": "B",
+          "text": "a NATO katonai támadása a Szovjetunió ellen"
+        },
+        {
+          "key": "C",
+          "text": "a tervgazdaság válsága és a fegyverkezési verseny terhei, amelyekhez a tagköztársaságok nemzeti mozgalmai társultak"
+        },
+        {
+          "key": "D",
+          "text": "az ENSZ határozata a Szovjetunió feloszlatásáról"
+        }
+      ],
+      "answer": "C",
+      "category": "ok-okozat",
+      "explanation": "Helyes: C. A forrás szerint „gazdaságunk lelassult, a fegyverkezés terhei nőnek”. A tervgazdaság nem tudott lépést tartani a Nyugattal, a reformok pedig felszínre hozták a balti, kaukázusi és ukrán nemzeti törekvéseket.",
+      "wrongOptions": {
+        "A": "A forrás éppen a gazdaság lelassulásáról beszél, nem gyors növekedésről.",
+        "B": "A NATO nem támadta meg a Szovjetuniót; a hidegháború közvetlen katonai összecsapás nélkül ért véget.",
+        "D": "Az ENSZ nem határozott a Szovjetunió feloszlatásáról; a felbomlás a tagköztársaságok döntése nyomán ment végbe."
+      }
+    },
+    {
+      "id": "5",
+      "kind": "choice",
+      "prompt": "Melyik egykori szovjet tagköztársaság fekszik a Balti-tenger partján, és lett 2004-ben az Európai Unió és a NATO tagja?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Grúzia"
+        },
+        {
+          "key": "B",
+          "text": "Ukrajna"
+        },
+        {
+          "key": "C",
+          "text": "Belarusz"
+        },
+        {
+          "key": "D",
+          "text": "Észtország"
+        }
+      ],
+      "answer": "D",
+      "category": "topografia",
+      "explanation": "Helyes: Észtország. A három balti állam (Észtország, Lettország, Litvánia) 1991-ben nyerte vissza függetlenségét, és 2004-ben csatlakozott a NATO-hoz és az EU-hoz is.",
+      "wrongOptions": {
+        "A": "Grúzia a Kaukázusban, a Fekete-tenger partján fekszik, nem a Baltikumban.",
+        "B": "Ukrajna a Fekete-tenger partján fekszik, nem a Baltikumban, és 2004-ben nem csatlakozott sem az EU-hoz, sem a NATO-hoz.",
+        "C": "Belarusz tengerparttal nem rendelkező ország, Oroszország szövetségese; nem csatlakozott sem az EU-hoz, sem a NATO-hoz."
+      }
+    }
+  ],
+  "suggestedMinutes": 7
+}

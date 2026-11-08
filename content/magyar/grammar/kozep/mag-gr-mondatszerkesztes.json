@@ -1,0 +1,301 @@
+{
+  "schemaVersion": 1,
+  "id": "mag-gr-mondatszerkesztes",
+  "subject": "magyar",
+  "revision": 1,
+  "level": "kozep",
+  "source": "generated",
+  "topic": "nyelvtan",
+  "title": "Mondatszerkesztés, nyelvhelyesség",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "grammar",
+  "type": "lesson",
+  "category": "mondatszerkesztes",
+  "summaryHu": "A nyelvhelyesség a szövegalkotás nyelvi pontjaiba számít bele: egyeztetési hibák, rossz vonzatok, a köznyelvi norma szerint helytelen igealakok (suksükölés, nákolás), félresikerült, túl hosszú vagy hiányos mondatok rontják a dolgozat értékét. A cél a világos, egyértelmű, gördülékeny mondat. A szóbelin a nyelvi minőség külön pontot ér, itt is számítanak ezek a jelenségek.",
+  "rules": [
+    {
+      "title": "Egyeztetés",
+      "explanation": "Az állítmány számban és személyben egyezik az alannyal. Gyűjtőnév (csapat, osztály, többség) és számnévvel álló főnév után a köznyelvi norma szerint egyes szám áll (A csapat nyert; Két diák hiányzik). A birtokos és a birtok egyeztetésénél is figyelni kell (a diákok véleménye – nem: véleményei, ha egyetlen közös véleményről van szó).",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "Az osztály kirándulni ment. Három tanuló beteg.",
+          "hu": "Gyűjtőnév és számnév után egyes számú állítmány."
+        }
+      ]
+    },
+    {
+      "title": "Vonzatok és határozóragok",
+      "explanation": "Sok ige és melléknév meghatározott ragot kíván (vonzat): függ valamitől, számít valakire, tart valamitől, büszke valamire, felelős valamiért. Gyakori hiba a hová? (-ba/-be) és a hol? (-ban/-ben) kérdésre felelő ragok összekeverése: Bementem a boltba (hová?), de a boltban voltam (hol?).",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "Beültem az autóba. Az autóban ültem.",
+          "hu": "Mozgás iránya: -ba; helyzet: -ban."
+        }
+      ]
+    },
+    {
+      "title": "Igealakok: suksükölés, nákolás, ikes ragozás",
+      "explanation": "Suksükölésnek nevezzük, amikor a t végű igék kijelentő módú alakja helyett felszólító módú alakot használnak (helyes: Ő is látja, mi is szeretjük; helytelen: Ő is lássa, mi is szeressük). Nákolás a feltételes mód egyes szám 1. személyű -nék helyett a -nák használata (helyes: Én is innék egy kávét; helytelen: innák). Igényes írásban az ikes igék egyes szám 1. személyű alakja: eszem, iszom, alszom.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "Ő is látja a hibát. – Azt akarom, hogy ő is lássa.",
+          "hu": "Kijelentő mód: látja; felszólító mód (hogy-os mellékmondatban): lássa."
+        }
+      ]
+    },
+    {
+      "title": "A vonatkozó névmás: amely – ami",
+      "explanation": "A választékos írásbeli norma szerint főnévi előzményre az „amely” utal (a vers, amelyet elemzünk), az „ami” pedig az az, minden, semmi, valami névmásokra és egész tagmondatra (Minden, ami szép…; Elkésett, ami ritkán fordul elő). A vonatkozó névmás egyértelműen arra utaljon, amire vonatkozik.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "Az a vers, amelyet a legjobban szeretek, a Mama.",
+          "hu": "Főnévi előzmény (vers) → amely(et)."
+        },
+        {
+          "en": "Minden, ami a versben történik, a padláson játszódik.",
+          "hu": "A „minden” után ami."
+        }
+      ]
+    },
+    {
+      "title": "Világos mondatszerkezet",
+      "explanation": "Kerüld a túl hosszú, sokszorosan összetett mondatokat, amelyekben elvész az alany; a hiányos mondatokat (alany vagy állítmány nélkül); a „hogy” halmozását (Azt mondta, hogy ha esik, hogy nem jön → Azt mondta, hogy ha esik, nem jön). Egy mondatban egy fő gondolat legyen; a kötőszók (mert, ezért, de, tehát) pontosan fejezzék ki a logikai viszonyt.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "Rossz: „Mivel a vers, amelyet József Attila írt, aki 1905-ben született, és akinek az anyja korán meghalt, ami nagy hatással volt rá, a Mama.” – Jobb: „József Attila anyja korán meghalt. Ez az élmény ihlette a Mama című verset.”",
+          "hu": "A két rövidebb mondat világos, a hosszú mondatból hiányzik az állítmány."
+        }
+      ]
+    }
+  ],
+  "commonMistakes": [
+    {
+      "wrong": "A csapat nagyszerűen játszottak.",
+      "right": "A csapat nagyszerűen játszott.",
+      "why": "A gyűjtőnév (csapat) nyelvtanilag egyes számú, ezért az állítmány is egyes számú."
+    },
+    {
+      "wrong": "Bementem a könyvtárban.",
+      "right": "Bementem a könyvtárba.",
+      "why": "A „bemegy” ige iránya a hová? kérdésre felel, ezért -ba/-be rag kell."
+    },
+    {
+      "wrong": "Én is szívesen olvasnák egy jó könyvet.",
+      "right": "Én is szívesen olvasnék egy jó könyvet.",
+      "why": "Nákolás: egyes szám 1. személyben a feltételes mód alanyi ragozású alakja mély hangrendű igénél is -nék (olvasnék), nem -nák."
+    },
+    {
+      "wrong": "Ő is lássa, hogy ez így nem jó.",
+      "right": "Ő is látja, hogy ez így nem jó.",
+      "why": "Suksükölés: kijelentő módban a „látja” alak a helyes; a „lássa” felszólító mód."
+    },
+    {
+      "wrong": "Azt mondta, hogy ha esik, hogy nem jön.",
+      "right": "Azt mondta, hogy ha esik, nem jön.",
+      "why": "A „hogy” kötőszó felesleges ismétlése nyelvhelyességi hiba."
+    }
+  ],
+  "examTips": [
+    "A szövegalkotás nyelvi pontjaihoz (5, illetve 3 pont) a mondatok helyessége is hozzátartozik: átolvasáskor különösen a hosszú mondatokat ellenőrizd, van-e alanyuk és állítmányuk.",
+    "Szóbelin beszéd közben is figyelj a „-ba/-ban” és a „látja/lássa” különbségére – a nyelvi minőség pontjait ilyen apró hibák is csökkentik.",
+    "A műveltségi feladatlapon nyelvhelyességi feladat is előfordulhat: hibás mondat javítása vagy a helyes alak kiválasztása."
+  ],
+  "practice": [
+    {
+      "id": "1",
+      "kind": "choice",
+      "prompt": "Melyik mondat helyes?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Bementem a boltban kenyérért."
+        },
+        {
+          "key": "B",
+          "text": "Bementem a boltba kenyérért."
+        },
+        {
+          "key": "C",
+          "text": "Bementem a boltnál kenyérért."
+        },
+        {
+          "key": "D",
+          "text": "Bementem a bolthoz kenyérért."
+        }
+      ],
+      "answer": "B",
+      "category": "mondatszerkesztes",
+      "explanation": "Helyes: B. A „bemegy” ige a hová? kérdésre felelő -ba/-be ragot kívánja.",
+      "wrongOptions": {
+        "A": "A -ban a hol? kérdésre felel (a boltban voltam), mozgásnál hibás.",
+        "C": "A -nál/-nél helyzetet jelöl valami mellett, a „bemegy” igéhez nem illik.",
+        "D": "A -hoz/-hez a közelítés iránya (a bolthoz ment), de a „be” igekötő belső térbe irányuló mozgást jelöl."
+      }
+    },
+    {
+      "id": "2",
+      "kind": "choice",
+      "prompt": "Melyik mondat felel meg a köznyelvi normának?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Én is ivnék egy pohár vizet."
+        },
+        {
+          "key": "B",
+          "text": "Én is innák egy pohár vizet."
+        },
+        {
+          "key": "C",
+          "text": "Én is innék egy pohár vizet."
+        },
+        {
+          "key": "D",
+          "text": "Én is innám egy pohár vizet."
+        }
+      ],
+      "answer": "C",
+      "category": "mondatszerkesztes",
+      "explanation": "Helyes: C. A feltételes mód egyes szám 1. személyű alanyi ragozású alakja: innék.",
+      "wrongOptions": {
+        "A": "Az „iszik” ige feltételes módja nem „ivnék”.",
+        "B": "Nákolás: az „innák” többes szám 3. személyű alak (ők innák meg).",
+        "D": "Az „innám” tárgyas ragozású alak, határozatlan tárgy (egy pohár vizet) mellett az alanyi ragozás a helyes."
+      }
+    },
+    {
+      "id": "3",
+      "kind": "choice",
+      "prompt": "Melyik mondat helyes?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Ő is láttya, hogy késésben vagyunk."
+        },
+        {
+          "key": "B",
+          "text": "Ő is lássa, hogy késésben vagyunk."
+        },
+        {
+          "key": "C",
+          "text": "Ő is látya, hogy késésben vagyunk."
+        },
+        {
+          "key": "D",
+          "text": "Ő is látja, hogy késésben vagyunk."
+        }
+      ],
+      "answer": "D",
+      "category": "mondatszerkesztes",
+      "explanation": "Helyes: D. Kijelentő módban a „látja” alak a helyes; a kiejtés [láttya], de a szóelemző írásmód szerint „látja”.",
+      "wrongOptions": {
+        "A": "A kiejtett alakot írja le; a helyes írásmód „látja”.",
+        "B": "Suksükölés: a „lássa” felszólító módú alak, kijelentő mondatban hibás.",
+        "C": "Helyesírási hiba: kiejtés szerinti, torzított alak."
+      }
+    },
+    {
+      "id": "4",
+      "kind": "choice",
+      "prompt": "Melyik mondat egyeztetése helyes?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Az osztály tegnap kirándulni ment."
+        },
+        {
+          "key": "B",
+          "text": "Az osztály tegnap kirándulni mentek."
+        },
+        {
+          "key": "C",
+          "text": "Két diákok hiányzott."
+        },
+        {
+          "key": "D",
+          "text": "A diákok tegnap kirándulni ment."
+        }
+      ],
+      "answer": "A",
+      "category": "mondatszerkesztes",
+      "explanation": "Helyes: A. A gyűjtőnév (osztály) nyelvtanilag egyes számú, az állítmány is egyes szám.",
+      "wrongOptions": {
+        "B": "A gyűjtőnév mellett a köznyelvi norma egyes számú állítmányt kíván.",
+        "C": "Számnév után a főnév egyes számban áll (két diák), és az állítmány is.",
+        "D": "Többes számú alany (diákok) mellett többes számú állítmány kell (mentek)."
+      }
+    },
+    {
+      "id": "5",
+      "kind": "choice",
+      "prompt": "Melyik vonatkozó névmás illik a mondatba a választékos írásbeli norma szerint? „Ez az a vers, ___ a legjobban szeretek.”",
+      "options": [
+        {
+          "key": "A",
+          "text": "amit"
+        },
+        {
+          "key": "B",
+          "text": "amelyet"
+        },
+        {
+          "key": "C",
+          "text": "akit"
+        },
+        {
+          "key": "D",
+          "text": "amelyik"
+        }
+      ],
+      "answer": "B",
+      "category": "mondatszerkesztes",
+      "explanation": "Helyes: amelyet. Főnévi előzményre (vers) a választékos norma az „amely” névmást ajánlja.",
+      "wrongOptions": {
+        "A": "Az „ami” az az, minden, valami típusú előzményre vagy egész tagmondatra utal; főnév után a beszélt nyelvben gyakori, de írásban az „amely” ajánlott.",
+        "C": "Az „aki” személyre utal, a vers nem személy.",
+        "D": "Az „amelyik” több közül való kiválasztást hangsúlyoz; itt nincs választás, egyszerű vonatkozás van."
+      }
+    },
+    {
+      "id": "6",
+      "kind": "choice",
+      "prompt": "Melyik mondat javítja ki a „hogy” halmozását? „Megígérte, hogy ha végez, hogy felhív.”",
+      "options": [
+        {
+          "key": "A",
+          "text": "Megígérte, hogy ha végez, felhív."
+        },
+        {
+          "key": "B",
+          "text": "Megígérte, hogy, ha végez, hogy felhív."
+        },
+        {
+          "key": "C",
+          "text": "Megígérte hogy ha végez hogy felhív."
+        },
+        {
+          "key": "D",
+          "text": "Megígérte, ha végez, hogy hogy felhív."
+        }
+      ],
+      "answer": "A",
+      "category": "mondatszerkesztes",
+      "explanation": "Helyes: A. A „hogy” kötőszó egyszer szerepel, a feltételes mellékmondat (ha végez) beékelődik, vesszővel elválasztva.",
+      "wrongOptions": {
+        "B": "Megmaradt a felesleges második „hogy”.",
+        "C": "Megmaradt a halmozás, és a vesszők is hiányoznak.",
+        "D": "Még súlyosabb halmozás és értelmetlen szórend."
+      }
+    }
+  ],
+  "relatedCategories": [
+    "helyesiras",
+    "stilus-hangnem"
+  ]
+}

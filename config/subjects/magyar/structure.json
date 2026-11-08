@@ -1,0 +1,246 @@
+{
+  "meta": {
+    "verifiedAt": "2026-11-05",
+    "sources": [
+      {
+        "title": "Oktatási Hivatal: Magyar nyelv és irodalom – részletes érettségi vizsgakövetelmény és vizsgaleírás (2024-től érvényes, Nat2020)",
+        "url": "https://www.oktatas.hu/pub_bin/dload/kozoktatas/erettsegi/vizsgakovetelmenyek2024/magyar_nyelv_es_irodalom_2024_e.pdf"
+      },
+      {
+        "title": "Eduline (2024. 05. 06.): Kezdődik a magyarérettségi – változások, pontozás, időkeret (240 perc = 90 + 150; szövegértés 40 + irodalmi feladatlap 20; II. feladatlap 40; helyesírás −8, íráskép −2)",
+        "url": "https://eduline.hu/erettsegi-felveteli/20240506_kezdodik-a-magyarerettsegi-valtozasok-pontozas-idokeret-minden-fontos-tudnivalo"
+      },
+      {
+        "title": "Eduline (2025. 04. 08.): Milyen részekből áll és hogyan pontozzák a középszintű magyarérettségit? (tartalmi minőség 30 + nyelvi minőség 10)",
+        "url": "https://eduline.hu/erettsegi_felveteli/20250408_Milyen_reszekbol_all_es_hogyan_pontozzak_a_magyarerettsegit"
+      },
+      {
+        "title": "Eduline (2025. 11. 06.): Így pontozzák a magyar nyelv és irodalom szóbelit (irodalom 25 + nyelvtan 15 + nyelvi minőség 10)",
+        "url": "https://eduline.hu/erettsegi-felveteli/20251106_oszi-erettsegi-2025-magyar-nyelv-es-irodalom-pontozas-ertekelesi-kriteriumok"
+      },
+      {
+        "title": "Eduline (2024. 04. 11.): Vizsgarészek, pontozás, segédeszközök – minden a 2024-es magyarérettségiről (emelt: szövegértési és nyelvi-irodalmi műveltségi feladatsor 40, műértelmező 40, reflektáló 20)",
+        "url": "https://eduline.hu/erettsegi-felveteli/20240411_Minden-amit-a-2024es-magyarerettsegirol-tudnotok-kell"
+      },
+      {
+        "title": "Eduline (2026. 04. 30.): Ady, Arany vagy Babits? – a 2026-os középszintű magyarérettségi kötelező szerzői",
+        "url": "https://eduline.hu/erettsegi-felveteli/20260430_magyar-nyelv-es-irodalom-erettsegi-2026-kozepszint-irok-koltok-lista"
+      },
+      {
+        "title": "ELTE Anyanyelv-pedagógia (2024): tanulmány a 2024-es magyar javítási-értékelési útmutatóról (szerkezet 5 + nyelvi igényesség 5)",
+        "url": "https://ojs.elte.hu/anyanyelv-pedagogia/article/download/11840/10505/32588"
+      },
+      {
+        "title": "Eduline (2026. 03. 14.): Érettségi 2026 – pontozási és osztályozási szabályok (közép 80/60/40/25 %, emelt 60/47/33/25 %, vizsgarészenként 12 %)",
+        "url": "https://eduline.hu/erettsegi-felveteli/20260314_erettsegi-2026-pontozas-osztalyozas"
+      }
+    ],
+    "notes": [
+      "Ellenőrzött (2024 óta, Nat2020): közép írásbeli 240 perc (I. feladatlap 90 perc: szövegértés 40 + irodalmi műveltségi feladatlap 20; II. feladatlap 150 perc: egy mű értelmezése vagy témakifejtő esszé 40 pont, tartalmi minőség 30 + nyelvi minőség 10); helyesírás legfeljebb −8, íráskép legfeljebb −2 pont levonás; emelt írásbeli 240 perc (szövegértési és nyelvi-irodalmi műveltségi feladatsor 40; műértelmező szöveg 40 + reflektáló szöveg 20); szóbeli közép 15 perc, emelt 20 perc, 50 pont (irodalom 25 + nyelvtan 15 + nyelvi minőség 10); helyesírási szótár használható.",
+      "Nem teljesen ellenőrzött: az emelt szövegalkotás 40 + 20 bontása és a nyelvi minőség 5 + 5 felosztása; emelten az I. feladatsor szövegértés/műveltség (25/15) és a percbeosztás az app felosztása.",
+      "App-modell: a helyesírási és írásképi levonást az app nem vonja le a pontszámból, a javítás szövegesen jelzi (a rubrika szabályai közt szerepel).",
+      "App-paraméter, nem hivatalos adat: mockTaskCount (hány feladat kerül egy próbaérettségibe), az írásbeli részek közti percbeosztás ott, ahol a vizsgán egyben kapják az időt, a textLength és a részek intro szövege.",
+      "Az ellenőrzés hírportál-cikkek (Eduline, Telex) és a hivatalos dokumentumok keresőben indexelt szövege alapján történt; az OH oldalát a futtató környezet hálózata nem engedte közvetlenül megnyitni – a hivatalos vizsgaleírással érdemes összevetni."
+    ]
+  },
+  "levels": {
+    "kozep": {
+      "name": "Középszint",
+      "cefr": "",
+      "writtenTotalMin": 240,
+      "totalPoints": 150,
+      "parts": [
+        {
+          "id": "reading",
+          "kind": "objective",
+          "slug": "szovegertes",
+          "name": "I. feladatlap – Szövegértés",
+          "written": true,
+          "order": 1,
+          "timeMin": 60,
+          "maxPoints": 40,
+          "mockTaskCount": 1,
+          "notes": [
+            "Az I. feladatlap (90 perc) szövegértési feladatsora; helyesírási szótár használható."
+          ],
+          "features": {
+            "evidence": true,
+            "wrongOptions": true
+          },
+          "intro": "Szövegértési feladatsor: ismeretterjesztő, publicisztikai vagy esszészöveg kérdésekkel (információ visszakeresése, lényegkiemelés, következtetés, szövegszerkezet). Minden válasz után magyarázat, a szövegből vett idézettel.",
+          "icon": "📖"
+        },
+        {
+          "id": "language-use",
+          "kind": "objective",
+          "slug": "muveltseg",
+          "name": "I. feladatlap – Irodalmi műveltségi feladatlap",
+          "written": true,
+          "order": 2,
+          "timeMin": 30,
+          "maxPoints": 20,
+          "mockTaskCount": 2,
+          "notes": [
+            "2024-től: irodalmi (műveltségi) feladatlap – memoriterek, fogalmak, kötelező olvasmányok, szerzők és művek."
+          ],
+          "features": {
+            "targeted": true
+          },
+          "intro": "Irodalmi és nyelvi műveltségi feladatok: szerzők, művek, műfajok, fogalmak, memoriterek, nyelvtani elemzés. Minden válasz után magyarázat.",
+          "icon": "✎"
+        },
+        {
+          "id": "writing",
+          "kind": "written",
+          "slug": "szovegalkotas",
+          "name": "II. feladatlap – Szövegalkotás",
+          "written": true,
+          "order": 3,
+          "timeMin": 150,
+          "maxPoints": 40,
+          "mockTaskCount": 1,
+          "notes": [
+            "Egy mű értelmezése VAGY témakifejtő esszé (választás). Helyesírásért legfeljebb 8, írásképért legfeljebb 2 pont vonható le a teljes dolgozatból."
+          ],
+          "features": {},
+          "intro": "Szövegalkotás: egy mű értelmezése, témakifejtő esszé (emelten műértelmező és reflektáló szöveg). A javítást a Claude Code (/javitas) vagy a Claude app végzi: tartalmi minőség, szövegszerkezet, nyelvi igényesség, helyesírás.",
+          "icon": "✍"
+        },
+        {
+          "id": "speaking",
+          "kind": "oral",
+          "slug": "szobeli",
+          "name": "Szóbeli (irodalom és nyelvtan tétel)",
+          "written": false,
+          "order": 4,
+          "maxPoints": 50,
+          "notes": [
+            "Iskolai tételsor: 20 irodalom + 20 magyar nyelv tétel; egy-egy tételt húzol mindkettőből."
+          ],
+          "features": {},
+          "intro": "Szóbeli tételek irodalomból és magyar nyelvből: a tétel kifejtése a tételhez adott szöveg(részlet) alapján.",
+          "icon": "🗣"
+        }
+      ],
+      "breaks": [],
+      "oral": {
+        "durationMin": "15",
+        "prepMin": "30",
+        "parts": [
+          {
+            "number": 1,
+            "name": "Irodalom tétel",
+            "description": "A kihúzott irodalmi tétel kifejtése a tételhez adott szöveg(részlet) alapján – tartalom 25 pont.",
+            "minutes": "10"
+          },
+          {
+            "number": 2,
+            "name": "Magyar nyelv tétel",
+            "description": "A nyelvi tétel kifejtése példákkal, a megadott szöveg felhasználásával – tartalom 15 pont; a két felelet nyelvi minősége együtt 10 pont.",
+            "minutes": "5"
+          }
+        ]
+      },
+      "textLength": {}
+    },
+    "emelt": {
+      "name": "Emelt szint",
+      "cefr": "",
+      "writtenTotalMin": 240,
+      "totalPoints": 150,
+      "parts": [
+        {
+          "id": "reading",
+          "kind": "objective",
+          "slug": "szovegertes",
+          "name": "I. feladatsor – Szövegértés",
+          "written": true,
+          "order": 1,
+          "timeMin": 55,
+          "maxPoints": 25,
+          "mockTaskCount": 1,
+          "notes": [
+            "A szövegértési és nyelvi-irodalmi műveltségi feladatsor (40 pont) szövegértési része; a 25/15 bontás az app felosztása."
+          ],
+          "features": {
+            "evidence": true,
+            "wrongOptions": true
+          },
+          "intro": "Szövegértési feladatsor: ismeretterjesztő, publicisztikai vagy esszészöveg kérdésekkel (információ visszakeresése, lényegkiemelés, következtetés, szövegszerkezet). Minden válasz után magyarázat, a szövegből vett idézettel.",
+          "icon": "📖"
+        },
+        {
+          "id": "language-use",
+          "kind": "objective",
+          "slug": "muveltseg",
+          "name": "I. feladatsor – Nyelvi-irodalmi műveltség",
+          "written": true,
+          "order": 2,
+          "timeMin": 35,
+          "maxPoints": 15,
+          "mockTaskCount": 2,
+          "notes": [
+            "Az irodalmi szöveghez kapcsolódó nyelvi, irodalmi, műveltségi kérdések."
+          ],
+          "features": {
+            "targeted": true
+          },
+          "intro": "Irodalmi és nyelvi műveltségi feladatok: szerzők, művek, műfajok, fogalmak, memoriterek, nyelvtani elemzés. Minden válasz után magyarázat.",
+          "icon": "✎"
+        },
+        {
+          "id": "writing",
+          "kind": "written",
+          "slug": "szovegalkotas",
+          "name": "II. feladatsor – Szövegalkotás",
+          "written": true,
+          "order": 3,
+          "timeMin": 150,
+          "maxPoints": 60,
+          "mockTaskCount": 2,
+          "notes": [
+            "Műértelmező szöveg (egy mű értelmezése vagy összehasonlító értelmezés, 40 pont) + reflektáló szöveg (20 pont); helyesírás és íráskép levonással."
+          ],
+          "features": {},
+          "intro": "Szövegalkotás: egy mű értelmezése, témakifejtő esszé (emelten műértelmező és reflektáló szöveg). A javítást a Claude Code (/javitas) vagy a Claude app végzi: tartalmi minőség, szövegszerkezet, nyelvi igényesség, helyesírás.",
+          "icon": "✍"
+        },
+        {
+          "id": "speaking",
+          "kind": "oral",
+          "slug": "szobeli",
+          "name": "Szóbeli (irodalom és nyelvtan tétel)",
+          "written": false,
+          "order": 4,
+          "maxPoints": 50,
+          "notes": [
+            "Központi tételsor (OH): 20 irodalom + 20 magyar nyelv tételcím, decemberben nyilvános."
+          ],
+          "features": {},
+          "intro": "Szóbeli tételek irodalomból és magyar nyelvből: a tétel kifejtése a tételhez adott szöveg(részlet) alapján.",
+          "icon": "🗣"
+        }
+      ],
+      "breaks": [],
+      "oral": {
+        "durationMin": "20",
+        "prepMin": "30",
+        "parts": [
+          {
+            "number": 1,
+            "name": "Irodalom tétel",
+            "description": "A központi tételsor irodalmi tételének kifejtése – tartalom 25 pont.",
+            "minutes": "12"
+          },
+          {
+            "number": 2,
+            "name": "Magyar nyelv tétel",
+            "description": "Nyelvi tétel kifejtése – tartalom 15 pont; nyelvi minőség együtt 10.",
+            "minutes": "8"
+          }
+        ]
+      },
+      "textLength": {}
+    }
+  }
+}

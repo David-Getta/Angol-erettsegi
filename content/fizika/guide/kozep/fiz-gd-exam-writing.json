@@ -1,0 +1,122 @@
+{
+  "schemaVersion": 1,
+  "id": "fiz-gd-exam-writing",
+  "subject": "fizika",
+  "revision": 1,
+  "level": "kozep",
+  "source": "generated",
+  "topic": "utmutato",
+  "title": "Összetett feladatok (közép II. rész, emelt II–III. rész)",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "guide",
+  "type": "exam",
+  "target": "writing",
+  "summaryHu": "Az írásbeli második részében részletesen kidolgozott megoldásokat írsz, amelyeket a javítási útmutató részpontokra bontva értékel. Középszinten 4 feladatból 3-at kell megoldani (a számításos feladat és a forráselemzés kötelező, a jelenségértelmezés vagy a méréselemzés közül választasz), összesen 50 pontért. Emelt szinten a II. részben 3 témából egyet kell kifejteni (tartalom 18 + kifejtés 5 = 23 pont), a III. részben 4 kötelező összetett feladat van (47 pont).",
+  "steps": [
+    {
+      "title": "Válassz feladatot tudatosan",
+      "explanation": "Középszinten a választható feladatnál nézd meg mindkettőt 2–3 percig: melyik kérdéseire tudsz több biztos választ adni? Emelt szinten a témakifejtésnél azt a témát válaszd, amelynek minden szempontjához tudsz képletet és példát.",
+      "tips": [
+        "A választást jelöld egyértelműen a feladatlapon.",
+        "Ne kezdd el mindkettőt – a második elkezdése csak időt visz el."
+      ]
+    },
+    {
+      "title": "Írd ki az adatokat és a kérdést",
+      "explanation": "Minden feladatnál az első sor: adatok jelöléssel és SI-egységben, a keresett mennyiség kérdőjellel. A szövegben rejtett adatokat is írd ki (nyugalomból → v₀ = 0).",
+      "tips": [
+        "Ha ábra (grafikon) van leírva, rajzold le magadnak.",
+        "Jelöld, melyik részkérdés melyik adatot használja."
+      ]
+    },
+    {
+      "title": "Oldd meg részkérdésenként",
+      "explanation": "Minden részkérdésnél: törvény/összefüggés megnevezése, képlet általánosan, átrendezés, behelyettesítés egységgel, eredmény, szöveges válasz. A hibás részeredményt továbbvivő, egyébként helyes gondolatmenet is részpontot kap – ezért ne hagyd abba, ha egy lépés bizonytalan.",
+      "tips": [
+        "Ha egy részeredményt nem tudsz kiszámolni, vegyél fel egy értéket („legyen v = 10 m/s”), és számolj vele tovább.",
+        "A kerekítést csak a végén végezd."
+      ]
+    },
+    {
+      "title": "Ellenőrizz",
+      "explanation": "Mértékegység, nagyságrend, határesetek. Ahol lehet, ellenőrizd az eredményt egy második módszerrel (pl. energiamegmaradással, a munkatétellel, a grafikon alatti területtel).",
+      "tips": [
+        "A „forma” szempont pontja (válasz, mértékegység, ellenőrzés) könnyen megszerezhető.",
+        "Kérdezd meg: reális ez az érték?"
+      ]
+    }
+  ],
+  "phrases": [
+    {
+      "group": "Megoldás menete",
+      "en": "Adatok: …; Keressük: …",
+      "hu": "Minden számításos feladat első sora."
+    },
+    {
+      "group": "Megoldás menete",
+      "en": "A … törvény szerint …",
+      "hu": "A felhasznált törvény megnevezése – indoklási pont."
+    },
+    {
+      "group": "Megoldás menete",
+      "en": "Mivel …, ezért …",
+      "hu": "A feltétel kimondása (súrlódásmentes, zárt rendszer, állandó nyomás)."
+    },
+    {
+      "group": "Megoldás menete",
+      "en": "Ellenőrzés: …",
+      "hu": "A forma-szempont része; második módszer vagy nagyságrendi becslés."
+    },
+    {
+      "group": "Válasz",
+      "en": "Válasz: a … értéke … (mértékegység).",
+      "hu": "Minden részkérdés végén."
+    },
+    {
+      "group": "Forrás",
+      "en": "A forrás szerint …",
+      "hu": "Forráselemzésnél a forrás adatainak jelölése."
+    },
+    {
+      "group": "Mérés",
+      "en": "A mérési pontok jó közelítéssel egy egyenesre esnek, ezért …",
+      "hu": "Méréselemzésnél a következtetés megfogalmazása."
+    },
+    {
+      "group": "Témakifejtés",
+      "en": "Összefoglalva: …",
+      "hu": "Emelt II. rész: a szöveg lezárása."
+    }
+  ],
+  "mistakes": [
+    {
+      "wrong": "Csak a végeredményt írom le, mert az a lényeg.",
+      "right": "Leírom a gondolatmenetet: törvény, képlet, behelyettesítés, eredmény, válasz.",
+      "why": "A pontok nagyobb része a gondolatmenetért jár (indoklás, számolás, forma); a végeredmény egymagában csak töredékpont."
+    },
+    {
+      "wrong": "Ha az a) részt nem tudom, a b)-t és a c)-t is kihagyom.",
+      "right": "Felveszek egy értéket az a) eredményének, és azzal megoldom a b) és c) részt.",
+      "why": "A helyes gondolatmenet a hibás vagy feltételezett részeredménnyel is pontot ér."
+    },
+    {
+      "wrong": "A választható feladatok közül mindkettőt elkezdem, és majd eldöntöm.",
+      "right": "Két-három perc alatt választok, és csak azt az egyet dolgozom ki.",
+      "why": "Csak az egyik értékelhető, a másik elvesztegetett idő."
+    }
+  ],
+  "checklist": [
+    "Minden részkérdéshez van szöveges válasz mértékegységgel.",
+    "A felhasznált törvényeket megneveztem.",
+    "Az átváltásokat (km/h, °C → K, cm² → m²) külön leírtam.",
+    "Legalább egy eredményt ellenőriztem második módszerrel.",
+    "Középszinten egyértelműen jelöltem a választott 3. feladatot.",
+    "Emelt témakifejtésnél minden szempontot kifejtettem."
+  ],
+  "timing": "Középszinten a 150 percből kb. 110 perc jut az összetett feladatokra: feladatonként kb. 35 perc, a végén 5 perc ellenőrzés. Emelt szinten a 240 percből kb. 200 perc: a témakifejtésre kb. 45 perc (5 perc vázlat), a négy III. részbeli feladatra egyenként kb. 35 perc, a végén ellenőrzés.",
+  "levelNotes": {
+    "kozep": "Középszinten 3 feladat (17 + 17 + 16 pont): számításos feladat (3–4 részkérdés), forráselemzés (szöveg, táblázat, leírt grafikon, 4–6 kérdés), valamint jelenségértelmezés vagy méréselemzés. A feladatok egy-egy témára épülnek, a számolás többnyire egy-két lépéses.",
+    "emelt": "Emelt szinten a II. részben 3 témából 1 kifejtése (kb. 1–1,5 oldal; tartalom 18 + kifejtés módja 5 pont), a III. részben 4 kötelező összetett feladat (12/12/12/11 pont) számításos, méréselemző és jelenségértelmező feladatokból, többlépéses, több témakört összekapcsoló gondolatmenettel."
+  }
+}

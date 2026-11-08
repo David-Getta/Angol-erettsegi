@@ -1,0 +1,98 @@
+{
+  "schemaVersion": 1,
+  "id": "mat-rd-emelt-statisztika-adatsor",
+  "subject": "matematika",
+  "revision": 1,
+  "level": "emelt",
+  "source": "generated",
+  "topic": "statisztika",
+  "title": "Adatsor jellemzői, szórás, új adat hatása",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "reading",
+  "type": "rovid-szamitas",
+  "instructions": "Egy biológiai kísérletben 8 palánta egyheti növekedését mérték (cm-ben): 2, 4, 4, 4, 5, 5, 7, 9. A feladat részkérdésekből áll (a–f); csak az eredményt írd be. A 0. kérdés a kidolgozott példa.",
+  "example": {
+    "id": "0",
+    "kind": "text",
+    "prompt": "Mennyi az adatsor terjedelme?",
+    "answer": [
+      "7",
+      "7 cm"
+    ],
+    "category": "definicio-tetel",
+    "explanation": "A terjedelem a legnagyobb és a legkisebb adat különbsége: 9 − 2 = 7 cm."
+  },
+  "items": [
+    {
+      "id": "1",
+      "kind": "text",
+      "prompt": "a) Mennyi az adatok átlaga?",
+      "answer": [
+        "5",
+        "5 cm"
+      ],
+      "category": "valoszinuseg-statisztika",
+      "explanation": "Az átlag az adatok összege osztva a darabszámmal: (2 + 4 + 4 + 4 + 5 + 5 + 7 + 9)/8 = 40/8 = 5 cm."
+    },
+    {
+      "id": "2",
+      "kind": "text",
+      "prompt": "b) Mennyi az adatsor mediánja?",
+      "answer": [
+        "4,5",
+        "4.5",
+        "4,5 cm",
+        "4.5 cm"
+      ],
+      "category": "valoszinuseg-statisztika",
+      "explanation": "Páros számú adatnál a medián a rendezett sor két középső elemének átlaga: a 4. és az 5. adat 4 és 5, így a medián (4 + 5)/2 = 4,5 cm."
+    },
+    {
+      "id": "3",
+      "kind": "text",
+      "prompt": "c) Mennyi az adatsor szórása?",
+      "answer": [
+        "2",
+        "2 cm"
+      ],
+      "category": "kepletek",
+      "explanation": "Az átlagtól való eltérések: −3, −1, −1, −1, 0, 0, 2, 4; négyzeteik összege 9 + 1 + 1 + 1 + 0 + 0 + 4 + 16 = 32. A szórás az eltérésnégyzetek átlagának négyzetgyöke: √(32/8) = √4 = 2 cm."
+    },
+    {
+      "id": "4",
+      "kind": "text",
+      "prompt": "d) Hány adat tér el az átlagtól legfeljebb egy szórásnyival?",
+      "answer": [
+        "6",
+        "6 db"
+      ],
+      "category": "szoveges-ertelmezes",
+      "explanation": "Az átlag 5, a szórás 2, tehát a [3; 7] intervallumba eső adatokat számoljuk: 4, 4, 4, 5, 5, 7 – ez 6 adat. A 2 (eltérés 3) és a 9 (eltérés 4) kívül esik."
+    },
+    {
+      "id": "5",
+      "kind": "text",
+      "prompt": "e) Egy kilencedik palánta adatát is hozzáveszik, így a 9 adat átlaga 6 cm lesz. Hány cm a kilencedik adat?",
+      "answer": [
+        "14",
+        "14 cm"
+      ],
+      "category": "egyenlet-rendezes",
+      "explanation": "A 9 adat összege 9·6 = 54 cm, a régi 8 adaté 40 cm, így az új adat 54 − 40 = 14 cm."
+    },
+    {
+      "id": "6",
+      "kind": "text",
+      "prompt": "f) Mennyi a 9 adatból álló adatsor mediánja?",
+      "answer": [
+        "5",
+        "5 cm"
+      ],
+      "category": "valoszinuseg-statisztika",
+      "explanation": "A rendezett sor: 2, 4, 4, 4, 5, 5, 7, 9, 14. Páratlan sok (9) adatnál a medián a középső, az 5. adat: 5 cm. A kiugró 14 a mediánt alig mozdítja, az átlagot viszont 1-gyel növelte."
+    }
+  ],
+  "glossary": [],
+  "suggestedMinutes": 20
+}

@@ -1,0 +1,95 @@
+{
+  "schemaVersion": 1,
+  "id": "fol-sp-emelt-legkori-cirkulacio",
+  "subject": "foldrajz",
+  "revision": 1,
+  "level": "emelt",
+  "source": "generated",
+  "topic": "levegoburok",
+  "title": "A légkör általános körzése",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "speaking",
+  "type": "termeszetfoldrajz-tetel",
+  "partNumber": 1,
+  "instructionsHu": "Mutassa be a légkör általános körzését: a légnyomásövek kialakulását, az állandó szeleket és ezek hatását az éghajlatra! Használja a mellékelt forrásokat, a topográfiai elemeket mutassa meg az atlaszban!",
+  "prompts": [
+    "Hogyan alakulnak ki a Föld légnyomásövei (hőmérsékleti és dinamikus okok)?",
+    "Mutassa be az állandó szeleket (passzát, nyugati szelek, sarki keleti szelek) és a téríti erő (Coriolis-hatás) szerepét!",
+    "Magyarázza meg a légnyomásövek évszakos eltolódását és ennek éghajlati következményeit!",
+    "Topográfia: mutassa meg az Azori-szigeteket, Izlandot, a Szaharát, az Amazonas-medencét, az Egyenlítőt és a két térítőt!"
+  ],
+  "followUpQuestions": [
+    "Miért nem pontosan az Egyenlítő fölött húzódik egész évben az összeáramlási öv?",
+    "Hogyan módosítja a szárazföldek és óceánok elrendeződése a légnyomásöveket?"
+  ],
+  "usefulPhrases": [
+    {
+      "en": "általános légkörzés",
+      "hu": "a Föld egészére kiterjedő, állandó légmozgási rendszer"
+    },
+    {
+      "en": "hőmérsékleti és dinamikus eredetű légnyomásöv",
+      "hu": "a felmelegedés/lehűlés, illetve a levegő felhalmozódása (leszállása) okozza"
+    },
+    {
+      "en": "téríti erő (Coriolis-hatás)",
+      "hu": "a Föld forgása miatt a mozgó levegő az északi félgömbön jobbra, a délin balra térül"
+    },
+    {
+      "en": "passzátcella (Hadley-cella)",
+      "hu": "a 0–30° között működő zárt légkörzési cella"
+    },
+    {
+      "en": "azori anticiklon, izlandi ciklon",
+      "hu": "az Észak-Atlanti térség állandó nyomásközpontjai"
+    },
+    {
+      "en": "intertrópusi összeáramlási öv (ITCZ)",
+      "hu": "az egyenlítői feláramlás sávja, ahol a két félgömb passzátjai találkoznak"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Vázlatos ábra (leírás)",
+      "text": "Az ábra a Föld egyik félgömbjének metszetét mutatja. Az Egyenlítőnél felszálló nyilak és „A” (alacsony nyomás) jel látható; a 30° körüli szélességen leszálló nyilak és „M” (magas nyomás); a 60° körül ismét „A”, a sarkon „M” jel. A felszín közelében a 30°-tól az Egyenlítő felé ferdén, keletről érkező nyilak (passzát), a 30°-tól a 60° felé délnyugatról érkező nyilak (nyugati szelek), a sarktól a 60° felé keletről fújó nyilak láthatók."
+    },
+    {
+      "title": "Éghajlati jellemzők",
+      "text": "Az izlandi minimum és az azori maximum az Atlanti-óceán északi részén egész évben megfigyelhető nyomásközpont; különbségük határozza meg, milyen erősek a Közép-Európába érkező nyugati szelek és ciklonok. A Szahara a térítői magas nyomású övben, az Amazonas-medence az egyenlítői alacsony nyomású övben fekszik."
+    }
+  ],
+  "keyPoints": [
+    "Az Egyenlítőnél az erős felmelegedés miatt a levegő felszáll: hőmérsékleti eredetű egyenlítői alacsony nyomású öv (összeáramlási öv).",
+    "A magasban a sarkok felé áramló levegő a 30° körül leszáll: dinamikus eredetű térítői magas nyomású öv; a leszálló levegő melegszik, szárazságot okoz (Szahara).",
+    "A sarkoknál a lehűlt, sűrű levegő miatt sarki magas nyomás; a 60° körül, ahol a meleg és hideg légtömegek találkoznak, mérsékelt övi (szubpoláris) alacsony nyomás, frontok, ciklonok.",
+    "A téríti erő miatt a mozgó levegő az északi félgömbön jobbra, a délin balra térül: északkeleti és délkeleti passzát, délnyugati (északon) és északnyugati (délen) nyugati szelek, sarki keleti szelek.",
+    "Cellás körzés: a passzátcella (Hadley-cella) a 0–30° között; a mérsékelt övezetben a nyugati szelek, a sarkvidéken a sarki cella.",
+    "Évszakos eltolódás: a nyomásövek a Nap látszólagos vándorlását követve nyáron a sarkok, télen az Egyenlítő felé tolódnak → szavanna esős-száraz évszaka, mediterrán száraz nyár és csapadékos tél.",
+    "A kontinensek és óceánok eltérő felmelegedése módosítja az öveket (nyári termikus alacsony nyomás, téli szibériai anticiklon, monszun).",
+    "Topográfia: Azori-szigetek, Izland, Szahara, Amazonas-medence, Egyenlítő, Ráktérítő, Baktérítő."
+  ],
+  "speakingSeconds": 600,
+  "prepSeconds": 900,
+  "sampleAnswer": {
+    "turns": [
+      {
+        "speaker": "candidate",
+        "text": "A légkör általános körzését a napsugárzás egyenlőtlen eloszlása hajtja: az Egyenlítő környékén sokkal több energia érkezik egységnyi felületre, mint a sarkoknál. Az Egyenlítőnél a felszín erősen felmelegszik, a levegő kitágul és felszáll, ezért ott hőmérsékleti eredetű alacsony nyomású öv, az összeáramlási öv alakul ki, sok csapadékkal – ide tartozik az Amazonas-medence, amelyet most megmutatok. A felszállt levegő a magasban a sarkok felé áramlik, közben lehűl, és a téríti erő is eltéríti, így a 30. szélességi kör táján felhalmozódik és leszáll. Ez a dinamikus eredetű térítői magas nyomású öv; a leszálló levegő melegszik és szárazodik, ezért itt vannak a nagy forró sivatagok, például a Szahara. Az ábra szerint a felszínen a térítői övből az Egyenlítő felé fúj a passzát; mivel a téríti erő az északi félgömbön jobbra térít, ott északkeleti, a délin délkeleti passzát fúj. Ez a 0–30° közötti zárt kör a passzátcella. A térítői övből a sarkok felé is áramlik levegő: ezek a nyugati szelek, amelyek az északi félgömbön délnyugatról fújnak, és óceáni levegőt hoznak Európába. A sarkoknál a hideg, sűrű levegő miatt magas nyomás van, innen fújnak a sarki keleti szelek. A 60. szélességi kör táján a meleg nyugati és a hideg sarki légtömegek találkoznak: itt frontok és ciklonok keletkeznek. Az Atlanti-óceán északi részén ennek két állandó nyomásközpontja az izlandi ciklon és az azori anticiklon, ezeket Izland és az Azori-szigetek fölött mutatom meg. A nyomásövek a Nap látszólagos vándorlását követve évszakosan eltolódnak: nyáron északra, télen délre. Ezért van a szavannán esős és száraz évszak, és ezért száraz a mediterrán nyár, amikor a térítői magas nyomás uralja a térséget."
+      },
+      {
+        "speaker": "examiner",
+        "text": "Hogyan módosítja a szárazföldek és óceánok elrendeződése a légnyomásöveket?"
+      },
+      {
+        "speaker": "candidate",
+        "text": "A szárazföld gyorsabban melegszik fel és hűl le, mint az óceán, ezért a nagy kontinensek felett a nyomásövek szétszakadnak. Nyáron Ázsia belsejében hőségi alacsony nyomás alakul ki, télen viszont a kihűlt szárazföld felett az ázsiai, más néven szibériai anticiklon. Ez a nyomáskülönbség hozza létre a monszun szélrendszert, amely Dél- és Kelet-Ázsiában évszakosan megfordítja a szélirányt."
+      }
+    ],
+    "notes": [
+      "A felelet az energia-egyenlőtlenségtől a nyomásöveken és a szeleken át az évszakos eltolódásig logikus ok–okozati láncot épít, az emelt szinten elvárt dinamikus és hőmérsékleti eredetet is megkülönbözteti.",
+      "A téríti erő hatását helyesen alkalmazza mindkét félgömbre (északkeleti/délkeleti passzát, délnyugati nyugati szél), és a forrás ábráját értelmezi.",
+      "A topográfiai elemeket (Amazonas-medence, Szahara, Izland, Azori-szigetek) a jelenségekhez kötve, a térképen megmutatva használja."
+    ]
+  }
+}

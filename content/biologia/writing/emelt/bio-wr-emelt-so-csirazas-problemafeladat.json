@@ -1,0 +1,108 @@
+{
+  "schemaVersion": 1,
+  "id": "bio-wr-emelt-so-csirazas-problemafeladat",
+  "subject": "biologia",
+  "revision": 1,
+  "level": "emelt",
+  "source": "generated",
+  "topic": "novenyek-allatok",
+  "title": "Útsó és csírázás – problémafeladat",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "writing",
+  "type": "problemafeladat",
+  "taskNumber": 1,
+  "situation": "Télen az utakat sóval (nátrium-kloriddal) szórják. Egy kertész azt tapasztalta, hogy a forgalmas út melletti ágyásban tavasszal elvetett retekmagok közül sokkal kevesebb kelt ki, mint a kert távolabbi részén. Feltételezése szerint ennek oka a talaj megnövekedett sótartalma. Az iskola biológia szakköre ezt kísérlettel akarja ellenőrizni.\nRendelkezésre álló eszközök: azonos tasakból származó retekmagok, Petri-csészék, szűrőpapír, desztillált víz, konyhasó, mérleg, mérőhenger, termosztát, vonalzó.\nA szakkör előkísérletének eredménye (5 nap után, csészénként 25 mag, 22 °C, sötétben):\nNaCl-koncentráció (g/l): 0 | 2 | 5 | 10 | 20\nKicsírázott magok száma: 23 | 21 | 14 | 4 | 0\nOldja meg a problémafeladatot a szempontok szerint, összefüggő szövegben!",
+  "points": [
+    {
+      "id": "p1",
+      "text": "Fogalmazza meg a vizsgálat hipotézisét!"
+    },
+    {
+      "id": "p2",
+      "text": "Tervezze meg a kísérletet: független és függő változó, kontroll, állandó tényezők, ismétlések!"
+    },
+    {
+      "id": "p3",
+      "text": "Számítsa ki a csírázási arányt százalékban az előkísérlet minden koncentrációjánál, és írja le az összefüggést!"
+    },
+    {
+      "id": "p4",
+      "text": "Magyarázza meg a jelenséget a víz mozgása (ozmózis) és a csírázás anyagcseréje alapján!"
+    },
+    {
+      "id": "p5",
+      "text": "Milyen következtetést vonhat le a kertész? Milyen hibaforrásokra kell figyelni, és milyen gyakorlati javaslatot tenne?"
+    }
+  ],
+  "suggestedMinutes": 60,
+  "usefulPhrases": [
+    {
+      "en": "hipotézis",
+      "hu": "ellenőrizhető feltevés: melyik tényező hogyan hat a mért eredményre"
+    },
+    {
+      "en": "független / függő változó",
+      "hu": "amit beállítunk (sókoncentráció) / amit mérünk (csírázási arány)"
+    },
+    {
+      "en": "kontroll",
+      "hu": "a vizsgált tényezőt nem tartalmazó minta (0 g/l NaCl, desztillált víz)"
+    },
+    {
+      "en": "párhuzamos minták (ismétlés)",
+      "hu": "ugyanazon feltételek többszöri beállítása; az átlag megbízhatóbb"
+    },
+    {
+      "en": "csírázási arány (%)",
+      "hu": "kicsírázott magok száma / összes mag · 100"
+    },
+    {
+      "en": "duzzadás",
+      "hu": "a száraz mag vízfelvétele, a csírázás első lépése"
+    },
+    {
+      "en": "ozmózis",
+      "hu": "víz áramlása féligáteresztő hártyán át a töményebb oldat felé"
+    },
+    {
+      "en": "hibaforrás",
+      "hu": "olyan tényező, amely a kísérlet eredményét a vizsgált tényezőtől függetlenül befolyásolhatja"
+    }
+  ],
+  "checklistExtra": [
+    "Ellenőrizhető-e a hipotézisem (tényező + irány + mért eredmény)?",
+    "Felsoroltam minden állandó tényezőt, a kontrollt és az ismétlést?",
+    "A számításoknál leírtam a műveletet is, nem csak az eredményt?"
+  ],
+  "modelAnswer": {
+    "text": "Hipotézis: a talaj (illetve a csíráztató oldat) nátrium-klorid-koncentrációjának növekedése csökkenti a kicsírázó retekmagok arányát. Ez a hipotézis ellenőrizhető, mert pontosan megmondja, melyik tényező (sókoncentráció) milyen hatással (csökkenés) van a mért eredményre (csírázási arány).\n\nA kísérletben a független változó a csíráztató oldat NaCl-koncentrációja, ezt a szakkör állítja be: 0, 2, 5, 10 és 20 g/l. A 0 g/l-es, desztillált vizes csésze a kontroll, ehhez hasonlítjuk a többit. A függő változó a meghatározott idő (5 nap) alatt kicsírázott magok száma, amelyből csírázási arányt számolunk; kiegészítésként a gyököcskék hossza is mérhető vonalzóval. Minden más tényezőt állandó értéken kell tartani: azonos tasakból származó, hasonló méretű magok, csészénként azonos magszám (25), azonos mennyiségű oldat (pl. 5 cm³) ugyanannyi szűrőpapíron, azonos hőmérséklet a termosztátban (22 °C), azonos fényviszonyok (sötét) és azonos időtartam. Az oldatokat mérleggel és mérőhengerrel kell elkészíteni (pl. 5 g/l: 5 g só 1 liter desztillált vízben). Minden koncentrációból legalább három párhuzamos csészét érdemes indítani, és az eredményeket átlagolni, mert így csökken a véletlen (pl. eleve életképtelen magok) hatása. A párolgás miatti töményedést fedővel kell megakadályozni.\n\nAz előkísérlet csírázási arányai: 0 g/l-nél 23/25 = 92%, 2 g/l-nél 21/25 = 84%, 5 g/l-nél 14/25 = 56%, 10 g/l-nél 4/25 = 16%, 20 g/l-nél 0/25 = 0%. A sókoncentráció növekedésével a csírázási arány csökken; kis koncentrációnál (2 g/l) a hatás még csekély, 5 és 10 g/l között a csökkenés erős, 20 g/l-nél egyetlen mag sem csírázik. Az adatok tehát alátámasztják a hipotézist.\n\nA csírázás első lépése a duzzadás: a száraz mag vizet vesz fel, és csak a megfelelő víztartalom elérése után indulnak be az enzimek, amelyek lebontják a tartalék tápanyagokat (keményítőt, fehérjéket, zsírokat), és a sejtlégzés ezekből termel ATP-t a növekedéshez. Ha a környező oldat töményebb, a víz ozmózissal nehezebben jut a magba, sőt nagy koncentrációnál a sejtekből vizet von el, így a duzzadás és az enzimműködés elmarad. Emellett a sejtekbe jutó nagy mennyiségű nátrium- és kloridion közvetlenül is károsítja az enzimek működését (ionmérgezés). Mindkét hatás a koncentráció növekedésével erősödik, ez magyarázza a fokozatos csökkenést.\n\nA kertész következtethet arra, hogy az út menti talaj sótartalma valószínűleg hozzájárul a gyenge keléshez, de a laboratóriumi eredményt óvatosan kell a kertre alkalmazni. Hibaforrás lehet, hogy az ágyásban más tényezők is eltérnek (a talaj tömörödése, árnyékolás, kipufogógázok, nehézfémek), és nem ismerjük az ágyás talajának tényleges sótartalmát; ezért érdemes megmérni a talaj sótartalmát (vezetőképességét), vagy a kísérletet a két helyről vett talajmintával is elvégezni. Gyakorlati javaslat: a járda és a kocsibeálló síkosságmentesítésére só helyett homokot, zúzott követ használjon, tavasszal bőséges öntözéssel mossa ki a sót a talaj felső rétegéből, javítsa a talajt szerves anyaggal (komposzttal), és az út mellé sótűrőbb növényeket ültessen.",
+    "pointsCovered": [
+      {
+        "id": "p1",
+        "quote": "Hipotézis: a talaj (illetve a csíráztató oldat) nátrium-klorid-koncentrációjának növekedése csökkenti a kicsírázó retekmagok arányát."
+      },
+      {
+        "id": "p2",
+        "quote": "A kísérletben a független változó a csíráztató oldat NaCl-koncentrációja"
+      },
+      {
+        "id": "p3",
+        "quote": "Az előkísérlet csírázási arányai: 0 g/l-nél 23/25 = 92%, 2 g/l-nél 21/25 = 84%, 5 g/l-nél 14/25 = 56%, 10 g/l-nél 4/25 = 16%, 20 g/l-nél 0/25 = 0%."
+      },
+      {
+        "id": "p4",
+        "quote": "Ha a környező oldat töményebb, a víz ozmózissal nehezebben jut a magba"
+      },
+      {
+        "id": "p5",
+        "quote": "Hibaforrás lehet, hogy az ágyásban más tényezők is eltérnek"
+      }
+    ],
+    "notes": [
+      "Tartalmi elemek: a hipotézis ellenőrizhető és irányt is megad; a kísérlettervben szerepel a független és függő változó, a kontroll, az összes állandó tényező, az ismétlés és az oldatkészítés módja.",
+      "Problémamegoldás: a számítások hibátlanok (92, 84, 56, 16, 0%), a magyarázat két szinten is helyes (ozmotikus vízfelvétel és ionmérgezés), és a következtetés kitér arra, hogy a laboratóriumi eredmény miért nem vihető át egy az egyben a kertre.",
+      "Felépítés: a szempontok sorrendjében haladó, bekezdésekre tagolt szöveg, szakszerű fogalmakkal (duzzadás, ozmózis, párhuzamos minta, kontroll); a gyakorlati javaslatok a biológiai magyarázatból következnek."
+    ]
+  }
+}

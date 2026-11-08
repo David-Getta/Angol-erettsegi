@@ -1,0 +1,112 @@
+{
+  "meta": {
+    "verifiedAt": "2026-11-05",
+    "sources": [
+      {
+        "title": "Oktatási Hivatal: Történelem – részletes érettségi vizsgakövetelmény és vizsgaleírás (2024-től érvényes, Nat2020)",
+        "url": "https://www.oktatas.hu/pub_bin/dload/kozoktatas/erettsegi/vizsgakovetelmenyek2024/tortenelem_2024_e.pdf"
+      },
+      {
+        "title": "Eduline (2024. 04. 12.): Vizsgarészek, pontozás, segédeszközök – minden a 2024-es töriérettségiről (180 perc, 100 + 50 pont, 12 rövid feladat, 4-ből 2 esszé, 7 témakör)",
+        "url": "https://eduline.hu/erettsegi-felveteli/20240412_tortenelem-erettsegi-tudnivalok-erettsegi-2024"
+      },
+      {
+        "title": "Eduline (2024. 05. 24.): Így pontozzák a középszintű töriérettségit (szóbeli szempontok 4/6/10/12/18)",
+        "url": "https://eduline.hu/erettsegi-felveteli/20240524_torierettsegi-pontszaitas-szabalyok-irasbeli-szobeli-vizsga"
+      },
+      {
+        "title": "Eduline (2025. 04. 23.): Így pontozzák az idei töriérettségi írásbeli részét (esszé-szempontok, rövid 17 / hosszú 33 pont, terjedelem)",
+        "url": "https://eduline.hu/erettsegi-felveteli/20250423_tortenelemerettsegi-irasbeli-vizsga-pontozasa-2025"
+      },
+      {
+        "title": "Eduline (2024. 04. 26.): Milyen hosszúnak kell lennie az esszéknek a töri írásbelin (100–130 / 210–260 szó)",
+        "url": "https://eduline.hu/erettsegi-felveteli/20240426_Erettsegi-2024milyen-hosszunak-kell-lennie-a-tori-irasbelin-az-esszeknek"
+      },
+      {
+        "title": "Eduline (2025. 11. 06.): Így számolják a pontokat a történelem szóbelin",
+        "url": "https://eduline.hu/erettsegi-felveteli/20251106_oszi-erettsegi-2025-tortenelem-szobeli-vizsga-pontozas"
+      },
+      {
+        "title": "Eduline (2023. 12. 19.): Ezek lesznek történelemből emelt szinten a témakörök (emelt I. 100 perc + II. 140 perc, 6-ból 3 esszé)",
+        "url": "https://eduline.hu/erettsegi-felveteli/20231219_Erettsegi-2024-ezek-lesznek-tortenelembol-emelt-szinten-a-temakorok"
+      },
+      {
+        "title": "Oktatási Hivatal: Történelem középszint, javítási-értékelési útmutató, 2025. május (K2511) – esszé-szempontok (tükörmásolat)",
+        "url": "https://www.tortenelemtanarok.hu/media/uploads/Tortenelem_erettsegi/Kozep/k_tort_25maj_ut.pdf"
+      },
+      {
+        "title": "Eduline (2026. 03. 14.): Érettségi 2026 – pontozási és osztályozási szabályok (közép 80/60/40/25 %, emelt 60/47/33/25 %, vizsgarészenként 12 %)",
+        "url": "https://eduline.hu/erettsegi-felveteli/20260314_erettsegi-2026-pontozas-osztalyozas"
+      }
+    ],
+    "notes": [
+      "Ellenőrzött: a jegyhatárok minden tantárgyban azonosak (közép 80/60/40/25 %, emelt 60/47/33/25 %), és vizsgarészenként (írásbeli, szóbeli) 12 % a minimum.",
+      "Az ellenőrzés hírportál-cikkek (Eduline, Telex) és a hivatalos dokumentumok keresőben indexelt szövege alapján történt; az OH oldalát a futtató környezet hálózata nem engedte közvetlenül megnyitni – a hivatalos vizsgaleírással érdemes összevetni."
+    ]
+  },
+  "minPartPercent": 12,
+  "minPartAppliesTo": [
+    "written",
+    "speaking"
+  ],
+  "minPartNote": "Az írásbeli és a szóbeli vizsgarészben külön-külön el kell érni az elérhető pontszám legalább 12%-át, különben a vizsga elégtelen, akármennyi is az összpontszám. Az írásbelin belül a részek (pl. rövid feladatok és esszék) együtt számítanak egy vizsgarésznek.",
+  "gradeBoundaries": {
+    "kozep": [
+      {
+        "grade": 5,
+        "name": "jeles",
+        "minPct": 80
+      },
+      {
+        "grade": 4,
+        "name": "jó",
+        "minPct": 60
+      },
+      {
+        "grade": 3,
+        "name": "közepes",
+        "minPct": 40
+      },
+      {
+        "grade": 2,
+        "name": "elégséges",
+        "minPct": 25
+      },
+      {
+        "grade": 1,
+        "name": "elégtelen",
+        "minPct": 0
+      }
+    ],
+    "emelt": [
+      {
+        "grade": 5,
+        "name": "jeles",
+        "minPct": 60
+      },
+      {
+        "grade": 4,
+        "name": "jó",
+        "minPct": 47
+      },
+      {
+        "grade": 3,
+        "name": "közepes",
+        "minPct": 33
+      },
+      {
+        "grade": 2,
+        "name": "elégséges",
+        "minPct": 25
+      },
+      {
+        "grade": 1,
+        "name": "elégtelen",
+        "minPct": 0
+      }
+    ]
+  },
+  "languageExamEquivalence": [],
+  "languageExamNote": "",
+  "percentRounding": "round"
+}

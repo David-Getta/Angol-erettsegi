@@ -1,0 +1,297 @@
+{
+  "schemaVersion": 1,
+  "id": "dig-gr-formazas",
+  "subject": "digitalis-kultura",
+  "revision": 1,
+  "level": "kozep",
+  "source": "generated",
+  "topic": "nyelvtan",
+  "title": "Formázás, stílusok, oldalbeállítás",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "grammar",
+  "type": "lesson",
+  "category": "formazas",
+  "summaryHu": "A szövegszerkesztési (és emelt szinten a kiadványszerkesztési) feladat pontjainak nagy része azon múlik, hogy a kért formátumot a megfelelő eszközzel állítod-e be: stílussal, bekezdésformátummal, tabulátorral, szakasztöréssel. A javítók a „szakszerű módszer” szempontnál kifejezetten nézik, hogy nem szóközökkel, üres sorokkal vagy kézi sortöréssel pótolod-e a beépített funkciókat. A leggyakoribb pontvesztés: stílus helyett kézi formázás, rossz mértékegység, elfelejtett oldalbeállítás.",
+  "rules": [
+    {
+      "title": "Karakter-, bekezdés- és oldalformázás",
+      "explanation": "A karakterformázás (betűtípus, betűméret, félkövér, dőlt, szín) a kijelölt karakterekre vonatkozik. A bekezdésformázás (igazítás, behúzás, térköz előtte/utána, sorköz) az egész bekezdésre – ehhez elég a kurzort a bekezdésbe tenni. Az oldalformázás (papírméret, tájolás, margók, élőfej, élőláb, hasábok) az oldalra, illetve a szakaszra érvényes.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "Times New Roman, 12 pt, dőlt",
+          "hu": "karakterformátum: Kezdőlap > Betűtípus"
+        },
+        {
+          "en": "Sorkizárt, első sor behúzása 1 cm, utána 6 pt térköz, 1,15-ös sorköz",
+          "hu": "bekezdésformátum: Kezdőlap > Bekezdés (Writer: Formátum > Bekezdés)"
+        },
+        {
+          "en": "A4, fekvő, margók 2 cm",
+          "hu": "oldalbeállítás: Elrendezés > Margók (Writer: Formátum > Oldalstílus)"
+        }
+      ]
+    },
+    {
+      "title": "Stílusok: egyszer beállítod, mindenhol érvényes",
+      "explanation": "A stílus elnevezett formázáscsomag. A szövegtörzs a Normál (Writer: Alapértelmezett bekezdésstílus vagy Szövegtörzs), a címek a Címsor 1, Címsor 2 … stílust kapják. A stílust módosítod (jobb gomb > Módosítás), és minden vele formázott bekezdés egyszerre változik. A címsorstílusokból automatikusan tartalomjegyzék is készíthető.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "Címsor 1: 20 pt, félkövér, középre, utána 12 pt",
+          "hu": "a címre Címsor 1 stílust teszek, majd a stílust módosítom"
+        },
+        {
+          "en": "Hivatkozások > Tartalomjegyzék",
+          "hu": "a Címsor stílusú bekezdésekből készül, frissíthető"
+        }
+      ]
+    },
+    {
+      "title": "Térköz, behúzás, tabulátor – soha nem szóköz és üres sor",
+      "explanation": "A bekezdések közti távolság térköz (előtte/utána, pontban), nem üres sor. A sor eleji beljebb kezdés behúzás (bal, jobb, első sor, függő), nem szóközök. Egy sorban több helyre igazítást tabulátorral állítunk be: balra, jobbra, középre vagy decimálisan igazító tabulátor, kitöltő karakterrel (pl. pontozás).",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "Jobbra igazító tabulátor 16 cm-nél, pontozott kitöltéssel",
+          "hu": "árlista, tartalomjegyzék jellegű sor"
+        },
+        {
+          "en": "Függő behúzás 1 cm",
+          "hu": "az első sor kilóg, a többi beljebb kezdődik (pl. irodalomjegyzék)"
+        }
+      ]
+    },
+    {
+      "title": "Oldalbeállítás, szakaszok, élőfej és élőláb",
+      "explanation": "A margókat, a tájolást és a papírméretet az oldalbeállításnál adod meg. Ha a dokumentum egy része eltérő beállítást kap (fekvő oldal, más hasábszám, más élőfej), szakasztöréssel (Writer: eltérő oldalstílussal) választod le. Az oldalszám mindig mező (Beszúrás > Oldalszám), soha nem kézzel írt szám.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "Elrendezés > Töréspontok > Szakasztörés: Következő oldal",
+          "hu": "új szakasz, amely külön tájolást kaphat"
+        },
+        {
+          "en": "Beszúrás > Oldalszám > Lap alja > középre",
+          "hu": "automatikus oldalszám az élőlábban"
+        }
+      ]
+    },
+    {
+      "title": "Kép és táblázat elhelyezése",
+      "explanation": "A képet a méretarány zárolásával, pontos értékkel méretezed (pl. szélesség 6 cm), majd beállítod a körbefuttatást (négyzetes, szoros, szöveg mögött, szövegbe illesztve) és a pozíciót, a szövegtől mért távolságot. A tabulátorral tagolt sorokat a „Szöveg átalakítása táblázattá” funkcióval alakítod táblázattá; a táblázat igazítása, szegélye, fejlécsora külön beállítás.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "Képformátum > Méret: méretarány zárolva, szélesség 6 cm",
+          "hu": "a magasság arányosan változik"
+        },
+        {
+          "en": "Táblázat tulajdonságai > Sor: ismétlődjön fejlécsorként",
+          "hu": "többoldalas táblázatnál minden oldalon megjelenik a fejléc"
+        }
+      ]
+    },
+    {
+      "title": "Emelt szint: kiadvány, hasábok, eltérő élőfejek",
+      "explanation": "Emelt szinten hosszabb kiadvány is előfordul: hasábok (szakaszonként), tartalomjegyzék a címsorstílusokból, első oldalon eltérő vagy páros/páratlan oldalon eltérő élőfej, iniciálé, lábjegyzet, kereszthivatkozás. Itt is a beépített eszköz a szakszerű megoldás.",
+      "emeltOnly": true,
+      "examples": [
+        {
+          "en": "Elrendezés > Hasábok > Kettő, köztük 0,5 cm",
+          "hu": "csak a kijelölt szakaszra"
+        },
+        {
+          "en": "Élőfej: eltérő első oldal",
+          "hu": "a címlapon nincs élőfej, a többi oldalon van"
+        }
+      ]
+    }
+  ],
+  "commonMistakes": [
+    {
+      "wrong": "A bekezdések közé üres sorokat ütök Enterrel.",
+      "right": "A bekezdések utáni térközt állítom be (pl. Térköz utána: 6 pt) a stílusban.",
+      "why": "Az üres sor nem térköz: a javító a rejtett karakterekkel (¶) látja, és a „szakszerű módszer” pontjait levonja; ráadásul az oldal alján és tetején is fölösleges hely marad."
+    },
+    {
+      "wrong": "A szöveget szóközökkel tolom a sor végére.",
+      "right": "Jobbra igazító tabulátort teszek a kért pozícióba.",
+      "why": "A szóközös igazítás más betűtípusnál, betűméretnél elcsúszik; a tabulátor pontosan a megadott helyre igazít."
+    },
+    {
+      "wrong": "Minden címet egyenként formázok félkövérre és 14 pontra.",
+      "right": "A címek Címsor 2 stílust kapnak, és a stílust módosítom.",
+      "why": "Ha a feladat stílust kér, a kézi formázás nem ér pontot, és ha egy cím kimarad vagy eltér, további pont vész el."
+    },
+    {
+      "wrong": "Az oldalszámot kézzel írom be minden oldal aljára.",
+      "right": "Beszúrás > Oldalszám: mezőt szúrok be az élőlábba.",
+      "why": "A kézzel írt szám nem frissül, ha a szöveg áttördelődik, és nem is ugyanaz a funkció, amit a feladat kér."
+    },
+    {
+      "wrong": "A képet a sarkánál fogva „szemre” húzom kisebbre.",
+      "right": "A Méret ablakban, a méretarány zárolásával pontosan 6 cm-re állítom.",
+      "why": "A szemre méretezett kép mérete eltér a kérttől, és ha a méretarány nincs zárolva, a kép torzul is."
+    }
+  ],
+  "examTips": [
+    "A szövegszerkesztési feladat elején mindig kapcsold be a rejtett karakterek megjelenítését (¶): így látod a tabulátorokat, a fölösleges szóközöket és üres sorokat, amelyeket a forrásszövegből törölni kell.",
+    "Először az egész dokumentumra érvényes beállításokat végezd el (oldalbeállítás, Normál stílus), utána a címeket és csak a végén a képeket, táblázatokat – így nem kell újra igazítani őket.",
+    "A mértékegységekre figyelj: a betűméret és a térköz pontban (pt), a margó, a behúzás és a képméret centiméterben (cm) értendő."
+  ],
+  "practice": [
+    {
+      "kind": "choice",
+      "prompt": "A feladat szerint a bekezdések után 6 pontos térköz legyen. Mi a szakszerű megoldás?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Minden bekezdés után egy üres sort ütök."
+        },
+        {
+          "key": "B",
+          "text": "A Normál stílus bekezdésbeállításánál a „Térköz utána” értéke 6 pt."
+        },
+        {
+          "key": "C",
+          "text": "Az üres sorok betűméretét 6 pontra állítom."
+        },
+        {
+          "key": "D",
+          "text": "A sorközt 6 pontra állítom."
+        }
+      ],
+      "answer": "B",
+      "explanation": "B. A térköz bekezdésformátum, és ha a stílusban állítod be, minden szövegtörzs-bekezdésre egyszerre érvényes. Üres sorok, kicsinyített üres sorok használata nem szakszerű.",
+      "wrongOptions": {
+        "A": "Az üres sor nem térköz; a javító a ¶ jelekkel látja, és a módszer pontjait levonja.",
+        "C": "Ez trükközés: továbbra is üres bekezdések vannak a szövegben.",
+        "D": "A sorköz a bekezdésen belüli sorok távolsága, nem a bekezdések közti hely."
+      },
+      "id": "1",
+      "category": "formazas"
+    },
+    {
+      "kind": "text",
+      "prompt": "Melyik billentyűkombinációval szúrunk be nem törhető szóközt a Wordben és a Writerben?",
+      "answer": [
+        "Ctrl+Shift+Szóköz",
+        "Ctrl+Shift+Space"
+      ],
+      "explanation": "Ctrl+Shift+Szóköz. A nem törhető szóköz két oldalán álló szavak (pl. „5 kg”, „12 500 Ft”) mindig egy sorba kerülnek.",
+      "id": "2",
+      "category": "formazas"
+    },
+    {
+      "kind": "choice",
+      "prompt": "Egy álló tájolású dokumentum közepén egyetlen oldalt fekvőre kell állítani. Mit kell az oldal elé és után beszúrni?",
+      "options": [
+        {
+          "key": "A",
+          "text": "szakasztörést (következő oldal)"
+        },
+        {
+          "key": "B",
+          "text": "oldaltörést"
+        },
+        {
+          "key": "C",
+          "text": "hasábtörést"
+        },
+        {
+          "key": "D",
+          "text": "kézi sortörést"
+        }
+      ],
+      "answer": "A",
+      "explanation": "A. A tájolás szakaszonként állítható, ezért a fekvő oldalt két szakasztörés közé teszed, és csak annak a szakasznak az oldalbeállítását módosítod (Writer: eltérő oldalstílus).",
+      "wrongOptions": {
+        "B": "Az oldaltörés csak új oldalt kezd, a beállítások közösek maradnak, így az egész dokumentum fekvő lenne.",
+        "C": "A hasábtörés a következő hasábba viszi a szöveget.",
+        "D": "A kézi sortörés csak új sort kezd ugyanabban a bekezdésben."
+      },
+      "id": "3",
+      "category": "formazas"
+    },
+    {
+      "kind": "choice",
+      "prompt": "Árlistát készítesz: a termék neve balra, az ára a sor végén, a kettő között pontozott vonal. A feladat pontozott kitöltést kér. Melyik eszközt használod?",
+      "options": [
+        {
+          "key": "A",
+          "text": "jobbra igazító tabulátort pontozott kitöltő karakterrel"
+        },
+        {
+          "key": "B",
+          "text": "szóközöket és pontokat"
+        },
+        {
+          "key": "C",
+          "text": "szegély nélküli kétoszlopos táblázatot"
+        },
+        {
+          "key": "D",
+          "text": "sorkizárt igazítást"
+        }
+      ],
+      "answer": "A",
+      "explanation": "A. A jobbra igazító tabulátor az árat pontosan a megadott pozícióhoz igazítja, a kitöltő karakter pedig automatikusan kirajzolja a pontozást.",
+      "wrongOptions": {
+        "B": "A kézzel gépelt pontok és szóközök elcsúsznak, ez nem szakszerű.",
+        "C": "A táblázattal igazítható, de pontozott kitöltést nem ad, és a feladat nem táblázatot kér.",
+        "D": "A sorkizárás a szavak közti helyet nyújtja, nem igazít egy pozícióhoz."
+      },
+      "id": "4",
+      "category": "formazas"
+    },
+    {
+      "kind": "text",
+      "prompt": "Mi a neve a Wordben annak a stílusnak, amely a szövegtörzs alapértelmezett formátumát adja?",
+      "answer": [
+        "Normál",
+        "Normal",
+        "Normál stílus"
+      ],
+      "explanation": "Normál (angolul Normal). Ha ezt módosítod, minden szövegtörzs-bekezdés formátuma változik; a Writerben ennek az Alapértelmezett bekezdésstílus felel meg.",
+      "id": "5",
+      "category": "formazas"
+    },
+    {
+      "kind": "choice",
+      "prompt": "A beszúrt kép 1600 × 1200 képpontos. A feladat arányos méretezéssel 8 cm szélességet kér. Mekkora lesz a kép magassága?",
+      "options": [
+        {
+          "key": "A",
+          "text": "8 cm"
+        },
+        {
+          "key": "B",
+          "text": "6 cm"
+        },
+        {
+          "key": "C",
+          "text": "4,5 cm"
+        },
+        {
+          "key": "D",
+          "text": "10,7 cm"
+        }
+      ],
+      "answer": "B",
+      "explanation": "B – 6 cm. Arányos méretezésnél a magasság : szélesség arány nem változik: 8 cm · 1200 / 1600 = 6 cm.",
+      "wrongOptions": {
+        "A": "Ez négyzet alakúra torzítaná a képet.",
+        "C": "Ez nem az 1200/1600 = 0,75-ös arányból jön ki.",
+        "D": "Ez fordított aránnyal (8 · 1600 / 1200) számolt érték."
+      },
+      "id": "6",
+      "category": "formazas"
+    }
+  ],
+  "relatedCategories": [
+    "prezentacio-weblap-hiba",
+    "fajlkezeles"
+  ]
+}

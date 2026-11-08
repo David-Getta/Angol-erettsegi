@@ -1,0 +1,154 @@
+{
+  "meta": {
+    "verifiedAt": "2026-11-05",
+    "sources": [
+      {
+        "title": "Oktatási Hivatal: Magyar nyelv és irodalom – részletes érettségi vizsgakövetelmény és vizsgaleírás (2024-től érvényes, Nat2020)",
+        "url": "https://www.oktatas.hu/pub_bin/dload/kozoktatas/erettsegi/vizsgakovetelmenyek2024/magyar_nyelv_es_irodalom_2024_e.pdf"
+      },
+      {
+        "title": "Eduline (2024. 05. 06.): Kezdődik a magyarérettségi – változások, pontozás, időkeret (240 perc = 90 + 150; szövegértés 40 + irodalmi feladatlap 20; II. feladatlap 40; helyesírás −8, íráskép −2)",
+        "url": "https://eduline.hu/erettsegi-felveteli/20240506_kezdodik-a-magyarerettsegi-valtozasok-pontozas-idokeret-minden-fontos-tudnivalo"
+      },
+      {
+        "title": "Eduline (2025. 04. 08.): Milyen részekből áll és hogyan pontozzák a középszintű magyarérettségit? (tartalmi minőség 30 + nyelvi minőség 10)",
+        "url": "https://eduline.hu/erettsegi_felveteli/20250408_Milyen_reszekbol_all_es_hogyan_pontozzak_a_magyarerettsegit"
+      },
+      {
+        "title": "Eduline (2025. 11. 06.): Így pontozzák a magyar nyelv és irodalom szóbelit (irodalom 25 + nyelvtan 15 + nyelvi minőség 10)",
+        "url": "https://eduline.hu/erettsegi-felveteli/20251106_oszi-erettsegi-2025-magyar-nyelv-es-irodalom-pontozas-ertekelesi-kriteriumok"
+      },
+      {
+        "title": "Eduline (2024. 04. 11.): Vizsgarészek, pontozás, segédeszközök – minden a 2024-es magyarérettségiről (emelt: szövegértési és nyelvi-irodalmi műveltségi feladatsor 40, műértelmező 40, reflektáló 20)",
+        "url": "https://eduline.hu/erettsegi-felveteli/20240411_Minden-amit-a-2024es-magyarerettsegirol-tudnotok-kell"
+      },
+      {
+        "title": "Eduline (2026. 04. 30.): Ady, Arany vagy Babits? – a 2026-os középszintű magyarérettségi kötelező szerzői",
+        "url": "https://eduline.hu/erettsegi-felveteli/20260430_magyar-nyelv-es-irodalom-erettsegi-2026-kozepszint-irok-koltok-lista"
+      },
+      {
+        "title": "ELTE Anyanyelv-pedagógia (2024): tanulmány a 2024-es magyar javítási-értékelési útmutatóról (szerkezet 5 + nyelvi igényesség 5)",
+        "url": "https://ojs.elte.hu/anyanyelv-pedagogia/article/download/11840/10505/32588"
+      },
+      {
+        "title": "Eduline (2026. 03. 14.): Érettségi 2026 – pontozási és osztályozási szabályok (közép 80/60/40/25 %, emelt 60/47/33/25 %, vizsgarészenként 12 %)",
+        "url": "https://eduline.hu/erettsegi-felveteli/20260314_erettsegi-2026-pontozas-osztalyozas"
+      }
+    ],
+    "notes": [
+      "Az ellenőrzés hírportál-cikkek (Eduline, Telex) és a hivatalos dokumentumok keresőben indexelt szövege alapján történt; az OH oldalát a futtató környezet hálózata nem engedte közvetlenül megnyitni – a hivatalos vizsgaleírással érdemes összevetni."
+    ]
+  },
+  "reading": [
+    {
+      "id": "szovegertes",
+      "name": "Szövegértési feladatsor",
+      "nameEn": "Reading comprehension",
+      "levels": [
+        "kozep",
+        "emelt"
+      ],
+      "description": "Egy szöveghez kérdések: információ visszakeresése, lényegkiemelés, következtetés, szövegszerkezet, szóhasználat.",
+      "itemKinds": [
+        "text",
+        "choice",
+        "tf"
+      ]
+    }
+  ],
+  "language-use": [
+    {
+      "id": "muveltsegi",
+      "name": "Irodalmi műveltségi feladat",
+      "nameEn": "Literary knowledge",
+      "levels": [
+        "kozep",
+        "emelt"
+      ],
+      "description": "Szerzők és művek, műfajok, korszakok, fogalmak, memoriterek, kötelező olvasmányok.",
+      "itemKinds": [
+        "choice",
+        "match",
+        "text",
+        "tf"
+      ]
+    },
+    {
+      "id": "nyelvi-feladat",
+      "name": "Nyelvi feladat",
+      "nameEn": "Language task",
+      "levels": [
+        "kozep",
+        "emelt"
+      ],
+      "description": "Szófajok, mondatelemzés, helyesírás, jelentéstan, stíluseszközök felismerése.",
+      "itemKinds": [
+        "choice",
+        "match",
+        "text"
+      ]
+    }
+  ],
+  "listening": [],
+  "writing": [
+    {
+      "id": "muertelmezes",
+      "name": "Egy mű értelmezése",
+      "nameEn": "Interpretation of a text",
+      "levels": [
+        "kozep",
+        "emelt"
+      ],
+      "description": "Egy lírai, epikai vagy drámai mű(részlet) értelmezése megadott szempontok szerint."
+    },
+    {
+      "id": "temakifejto-essze",
+      "name": "Témakifejtő esszé",
+      "nameEn": "Thematic essay",
+      "levels": [
+        "kozep"
+      ],
+      "description": "Irodalmi téma kifejtése saját olvasmányélmények és tárgyi tudás alapján."
+    },
+    {
+      "id": "osszehasonlito",
+      "name": "Összehasonlító értelmezés",
+      "nameEn": "Comparative interpretation",
+      "levels": [
+        "emelt"
+      ],
+      "description": "Két mű összehasonlító értelmezése (emelt műértelmező szöveg)."
+    },
+    {
+      "id": "reflektalo",
+      "name": "Reflektáló szöveg",
+      "nameEn": "Reflective text",
+      "levels": [
+        "emelt"
+      ],
+      "description": "Érvelő-reflektáló írás egy irodalmi vagy kulturális jelenségről."
+    }
+  ],
+  "speaking": [
+    {
+      "id": "irodalom-tetel",
+      "name": "Irodalom tétel",
+      "nameEn": "Literature topic",
+      "levels": [
+        "kozep",
+        "emelt"
+      ],
+      "description": "Irodalmi tétel kifejtése szövegrészlet alapján."
+    },
+    {
+      "id": "nyelvtan-tetel",
+      "name": "Magyar nyelv tétel",
+      "nameEn": "Grammar topic",
+      "levels": [
+        "kozep",
+        "emelt"
+      ],
+      "description": "Nyelvi tétel kifejtése példákkal."
+    }
+  ]
+}

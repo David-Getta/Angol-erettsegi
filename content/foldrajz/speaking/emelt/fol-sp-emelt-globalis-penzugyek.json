@@ -1,0 +1,88 @@
+{
+  "schemaVersion": 1,
+  "id": "fol-sp-emelt-globalis-penzugyek",
+  "subject": "foldrajz",
+  "revision": 1,
+  "level": "emelt",
+  "source": "generated",
+  "topic": "vilaggazdasag",
+  "title": "A globális pénzügyi rendszer és a pénzügyi válságok",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "speaking",
+  "type": "tarsadalomfoldrajz-tetel",
+  "partNumber": 2,
+  "instructionsHu": "Mutassa be a nemzetközi pénzügyi rendszer működését, szereplőit és központjait, valamint a 2008-as pénzügyi válság okait és következményeit! Használja a mellékelt forrásokat és az atlaszt!",
+  "prompts": [
+    "Milyen szerepet játszanak a pénzpiacok (tőzsdék, bankok, devizapiac) a világgazdaságban?",
+    "Mutassa be a nemzetközi pénzügyi intézményeket (IMF, Világbank) és a pénzügyi világközpontokat!",
+    "Elemezze a 2008-as pénzügyi válság kialakulását és terjedését, valamint hatását Magyarországra!",
+    "Topográfia: mutassa meg New Yorkot, Londont, Tokiót, Frankfurtot, Hongkongot, Szingapúrt és Zürichet!"
+  ],
+  "followUpQuestions": [
+    "Mi a különbség a GDP és a GNI között, és miért nagy ez a különbség Írország esetében?",
+    "Miért vonzóak a vállalatok számára az offshore központok?"
+  ],
+  "usefulPhrases": [
+    {
+      "en": "reálgazdaság / pénzügyi szféra",
+      "hu": "a termelés és kereskedelem, illetve a pénz- és tőkepiacok világa"
+    },
+    {
+      "en": "tőzsde, részvény, kötvény",
+      "hu": "értékpapír-piac; tulajdonrész, illetve hitelviszonyt megtestesítő értékpapír"
+    },
+    {
+      "en": "jelzáloghitel",
+      "hu": "ingatlannal fedezett hitel"
+    },
+    {
+      "en": "devizahitel",
+      "hu": "külföldi valutában nyilvántartott hitel; árfolyamkockázattal jár"
+    },
+    {
+      "en": "offshore központ, adóparadicsom",
+      "hu": "alacsony adókat és titoktartást kínáló pénzügyi hely"
+    },
+    {
+      "en": "pénzügyi válság",
+      "hu": "a bankok és a pénzpiacok működési zavara, amely a reálgazdaságra is átterjed"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Pénzügyi központok (leírás)",
+      "text": "A pénzügyi központokat rangsoroló felmérésekben évek óta New York és London áll az élen, utánuk ázsiai központok (Szingapúr, Hongkong, Sanghaj, Tokió) következnek; Európában Frankfurt, Zürich és Párizs is kiemelkedő. A világ legnagyobb tőzsdéi közé tartozik a New York-i (NYSE, Nasdaq), a sanghaji, a tokiói, a hongkongi és a londoni."
+    },
+    {
+      "title": "Esetleírás: 2008",
+      "text": "Az USA-ban a 2000-es évek közepén a bankok fizetésképtelenséggel fenyegető ügyfeleknek is nagy összegű jelzáloghitelt adtak, a hiteleket értékpapírokba csomagolva továbbadták a világ bankjainak. Amikor a lakásárak esni kezdtek, a hitelek egy része bedőlt; 2008 szeptemberében csődbe ment a Lehman Brothers befektetési bank. A bizalomvesztés világméretű hitelválságot és gazdasági visszaesést okozott. Magyarország 2008 októberében kb. 20 milliárd eurós hitelcsomagot kapott az IMF-től, az Európai Uniótól és a Világbanktól."
+    }
+  ],
+  "keyPoints": [
+    "A pénzügyi szféra a reálgazdaság (termelés, kereskedelem) finanszírozását végzi; mára forgalma sokszorosan meghaladja a reálgazdaságét.",
+    "Szereplők: kereskedelmi és befektetési bankok, tőzsdék, biztosítók, befektetési alapok; jegybankok (kamatpolitika, árfolyam).",
+    "Tőzsde: részvények, kötvények kereskedése; devizapiac: valuták árfolyama; a dollár a fő világvaluta.",
+    "IMF (Washington): fizetésimérleg-gondokkal küzdő országok átmeneti hitelezése, feltételekkel; Világbank: hosszú távú fejlesztési hitelek a fejlődő országoknak.",
+    "Pénzügyi világközpontok: New York, London, majd Szingapúr, Hongkong, Sanghaj, Tokió, Frankfurt, Zürich; offshore központok, adóparadicsomok (pl. Kajmán-szigetek).",
+    "2008: amerikai másodlagos jelzálogpiaci válság → értékpapírosított hitelek → Lehman Brothers csődje → bizalomvesztés, hitelszűke, világméretű recesszió.",
+    "Magyarországi hatás: devizahitelek (svájci frank) törlesztőrészleteinek emelkedése a forint gyengülésével, IMF–EU–Világbank hitelcsomag, recesszió, munkanélküliség.",
+    "Tanulság: a globalizált pénzügyi rendszerben a válság gyorsan terjed (pénzügyi fertőzés), szigorúbb bankszabályozás szükséges.",
+    "Topográfia: New York, London, Tokió, Frankfurt, Hongkong, Szingapúr, Zürich."
+  ],
+  "speakingSeconds": 600,
+  "prepSeconds": 900,
+  "sampleAnswer": {
+    "turns": [
+      {
+        "speaker": "candidate",
+        "text": "A globális pénzügyi rendszer feladata, hogy a megtakarításokat eljuttassa azokhoz, akik beruházni akarnak, vagyis finanszírozza a termelést és a kereskedelmet. Mára azonban a pénzügyi szféra forgalma sokszorosan meghaladja a reálgazdaságét. Legfontosabb szereplői a kereskedelmi és befektetési bankok, a biztosítók, a befektetési alapok és a tőzsdék, ahol részvényekkel és kötvényekkel kereskednek, a devizapiacon pedig a valuták árfolyama alakul ki; a fő világvaluta a dollár. A forrás szerint a pénzügyi világközpontok rangsorát New York és London vezeti, utánuk Szingapúr, Hongkong, Sanghaj és Tokió következik, Európában Frankfurt és Zürich is jelentős; ezeket most sorban megmutatom a térképen. A nemzetközi intézmények közül a washingtoni székhelyű Nemzetközi Valutaalap a fizetési nehézségekkel küzdő országoknak ad rövid távú hitelt gazdaságpolitikai feltételekkel, a Világbank pedig a fejlődő országok hosszú távú fejlesztéseit finanszírozza. A 2008-as válság az Egyesült Államokból indult. A bankok olyan ügyfeleknek is adtak jelzáloghitelt, akik nem tudták biztosan visszafizetni, a hiteleket pedig értékpapírokba csomagolva eladták a világ bankjainak. Amikor a lakásárak csökkenni kezdtek, a hitelek bedőltek, 2008 szeptemberében csődbe ment a Lehman Brothers. A bankok nem bíztak egymásban, megszűnt a hitelezés, és a válság a globalizált rendszeren keresztül gyorsan az egész világra átterjedt, recessziót okozva. Magyarországot különösen súlyosan érintette, mert sok háztartásnak volt svájcifrank-alapú devizahitele, és a forint gyengülésével megugrottak a törlesztőrészletek. Az állam finanszírozása is veszélybe került, ezért az ország 2008 októberében kb. 20 milliárd eurós hitelcsomagot kapott az IMF-től, az EU-tól és a Világbanktól. A válság után a bankokra szigorúbb szabályok vonatkoznak."
+      }
+    ],
+    "notes": [
+      "A felelet a pénzügyi rendszer funkciójától a szereplőkön és központokon át a válság mechanizmusáig logikusan halad, a forrás esetleírását beépíti.",
+      "A válság terjedését ok–okozati láncként írja le (kockázatos hitelek → értékpapírosítás → csőd → bizalomvesztés → globális recesszió), és a magyarországi hatást (devizahitelek, IMF-csomag) is konkrétan bemutatja.",
+      "Az IMF és a Világbank szerepét pontosan elkülöníti; a pénzügyi központokat megnevezi és a térképen megmutatja."
+    ]
+  }
+}

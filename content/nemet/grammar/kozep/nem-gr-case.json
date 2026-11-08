@@ -1,0 +1,302 @@
+{
+  "schemaVersion": 1,
+  "id": "nem-gr-case",
+  "subject": "nemet",
+  "level": "kozep",
+  "source": "generated",
+  "topic": "nyelvtan",
+  "title": "Esetek (Kasus)",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "grammar",
+  "type": "lesson",
+  "category": "case",
+  "summaryHu": "A németben négy eset van (Nominativ, Akkusativ, Dativ, Genitiv), és ezt főleg a névelő és a névmás alakja mutatja, nem a főnév végződése. A magyarban sokkal több eset van, de a rag a főnéven áll, ezért a magyar tanulók könnyen elfelejtik a névelőt ragozni (es gibt ein Park helyett einen Park), és ott is tárgyesetet használnak, ahol a német ige részes esetet kíván (folgen, helfen, begegnen). A nyelvhelyességi feladatokban (névelők, névmások, végződések) és írásban az esethibák a leggyakoribb pontlevonások közé tartoznak.",
+  "rules": [
+    {
+      "title": "Nominativ: alany és állítmány",
+      "explanation": "Nominativban áll a mondat alanya (wer? was?) és a sein, werden, bleiben ige után álló főnév (névszói állítmány). A névelők: der, die, das, die (Pl.); ein, eine, ein.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "Der Lehrer erklärt die Aufgabe.",
+          "hu": "A tanár elmagyarázza a feladatot.",
+          "note": "Ki magyaráz? → der Lehrer (Nominativ)."
+        },
+        {
+          "en": "Mein Bruder wird Ingenieur.",
+          "hu": "A bátyám mérnök lesz.",
+          "note": "werden után Nominativ."
+        }
+      ]
+    },
+    {
+      "title": "Akkusativ: a tárgy",
+      "explanation": "Akkusativban áll a tárgy (wen? was?), és ez kell a haben, az es gibt, a brauchen, a kennen és a legtöbb tárgyas ige után, valamint a für, ohne, gegen, um, durch, bis elöljárók után. Csak a hímnem változik: der → den, ein → einen, kein → keinen, mein → meinen. A személyes névmások: mich, dich, ihn, sie, es, uns, euch, sie/Sie.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "Ich habe einen Bruder und eine Schwester.",
+          "hu": "Van egy bátyám és egy húgom.",
+          "note": "haben + Akkusativ: einen Bruder."
+        },
+        {
+          "en": "In unserer Stadt gibt es einen großen Park.",
+          "hu": "A városunkban van egy nagy park.",
+          "note": "es gibt + Akkusativ!"
+        },
+        {
+          "en": "Kennst du ihn?",
+          "hu": "Ismered őt?"
+        }
+      ]
+    },
+    {
+      "title": "Dativ: a részes eset",
+      "explanation": "Dativban áll a részeshatározó (wem? – kinek?), jellemzően a geben, schenken, zeigen, erklären, schicken, bringen igék mellett (személy Dativban, dolog Akkusativban). Névelők: dem, der, dem, den (+ -n a többes számú főnéven: den Kindern). Névmások: mir, dir, ihm, ihr, ihm, uns, euch, ihnen/Ihnen.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "Ich schenke meiner Mutter Blumen.",
+          "hu": "Virágot ajándékozok anyukámnak."
+        },
+        {
+          "en": "Kannst du mir die Fotos zeigen?",
+          "hu": "Meg tudod mutatni nekem a fotókat?"
+        },
+        {
+          "en": "Der Lehrer gibt den Schülern die Tests zurück.",
+          "hu": "A tanár visszaadja a diákoknak a dolgozatokat.",
+          "note": "Dativ többes szám: den Schülern (-n)."
+        }
+      ]
+    },
+    {
+      "title": "Csak Dativval álló igék",
+      "explanation": "Néhány gyakori ige tárgy helyett Dativot vonz: helfen, danken, gefallen, gehören, gratulieren, antworten, glauben (valakinek), vertrauen, passen, schmecken, fehlen, wehtun, zuhören, folgen, begegnen. Ezek egy része a magyarban is részes esettel áll (segít valakinek, tetszik valakinek), de a folgen (követ valakit), a begegnen (találkozik valakivel) és a vertrauen (megbízik valakiben) eltér. A gefallen, schmecken, gehören, passen igéknél a dolog az alany (Nominativ), a személy Dativban áll: Der Film gefällt mir.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "Kannst du mir bitte helfen?",
+          "hu": "Segítenél nekem?"
+        },
+        {
+          "en": "Der Hund folgt dem Kind überallhin.",
+          "hu": "A kutya mindenhová követi a gyereket.",
+          "note": "folgen + Dativ – a magyarban tárgyeset!"
+        },
+        {
+          "en": "Die Jacke gefällt mir, aber sie passt mir nicht.",
+          "hu": "Tetszik a kabát, de nem jó rám."
+        }
+      ]
+    },
+    {
+      "title": "A két tárgy sorrendje",
+      "explanation": "Ha a Dativ és az Akkusativ is főnév, a Dativ áll elöl: Ich gebe dem Kind das Buch. Ha az Akkusativ névmás, az kerül előre: Ich gebe es dem Kind / Ich gebe es ihm. A névmás mindig a főnév elé kerül: Ich gebe ihm das Buch.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "Ich erkläre meinem Freund die Hausaufgabe.",
+          "hu": "Elmagyarázom a barátomnak a házi feladatot.",
+          "note": "Két főnév: Dativ – Akkusativ."
+        },
+        {
+          "en": "Ich erkläre sie ihm morgen.",
+          "hu": "Holnap elmagyarázom neki.",
+          "note": "Két névmás: Akkusativ – Dativ."
+        }
+      ]
+    },
+    {
+      "title": "Genitiv: a birtokos eset",
+      "explanation": "A Genitiv a birtokost jelöli (wessen? – kinek a …?): des Vaters, des Kindes (hímnemű és semleges főnév: -s vagy -es rag), der Mutter, der Eltern (nőnem és többes szám: nincs rag). Személynévnél: Annas Fahrrad (aposztróf nélkül). A beszélt nyelvben gyakran von + Dativ helyettesíti (das Auto von meinem Vater), írásban azonban a Genitiv az igényesebb. Genitivet kíván a wegen, trotz, während, statt elöljáró is.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "Das ist das Auto meines Onkels.",
+          "hu": "Ez a nagybátyám autója."
+        },
+        {
+          "en": "Die Wohnung meiner Großeltern ist sehr gemütlich.",
+          "hu": "A nagyszüleim lakása nagyon hangulatos."
+        },
+        {
+          "en": "Wegen des schlechten Wetters bleiben wir zu Hause.",
+          "hu": "A rossz idő miatt otthon maradunk."
+        }
+      ]
+    }
+  ],
+  "commonMistakes": [
+    {
+      "wrong": "In der Nähe gibt es ein Park.",
+      "right": "In der Nähe gibt es einen Park.",
+      "why": "Az es gibt után Akkusativ áll, ezért a hímnemű der Park határozatlan névelője einen. A magyar „van egy park” alanyként kezeli, ezért könnyű Nominativot írni."
+    },
+    {
+      "wrong": "Ich habe ein Bruder.",
+      "right": "Ich habe einen Bruder.",
+      "why": "A haben tárgyat vonz (Akkusativ). A magyar „van egy bátyám” szerkezetben a bátyám alany, a németben viszont tárgy: einen Bruder."
+    },
+    {
+      "wrong": "Ich helfe meinen Bruder bei den Hausaufgaben.",
+      "right": "Ich helfe meinem Bruder bei den Hausaufgaben.",
+      "why": "A helfen Dativot vonz (segít valakinek): meinem Bruder. A meinen Bruder Akkusativ – az angol help someone hatására szokták tévesen használni."
+    },
+    {
+      "wrong": "Ich folge dich.",
+      "right": "Ich folge dir.",
+      "why": "A folgen Dativot vonz, bár a magyar „követlek” tárgyas. Ugyanígy: Ich begegne ihm (találkozom vele), Ich vertraue dir (megbízom benned)."
+    },
+    {
+      "wrong": "Mir gefällt diesen Film.",
+      "right": "Mir gefällt dieser Film.",
+      "why": "A gefallen igénél a tetsző dolog az alany (Nominativ), a személy Dativban áll – pontosan, mint a magyarban: „tetszik nekem ez a film”."
+    },
+    {
+      "wrong": "Ich gebe das Buch ihm.",
+      "right": "Ich gebe ihm das Buch.",
+      "why": "A névmás mindig a főnév elé kerül. Két főnévnél a Dativ áll elöl (Ich gebe dem Kind das Buch), Akkusativ névmásnál az kerül előre (Ich gebe es ihm)."
+    }
+  ],
+  "examTips": [
+    "Nyitott kloze-ban és névelős feladatban mindig kérdezd meg: mi a főnév neme, és milyen esetet kíván az ige vagy az elöljáró? A végződés (den, dem, einen, einem) csak e két kérdés után dönthető el.",
+    "Írd meg magadnak a Dativos igék listáját (helfen, danken, gefallen, gehören, gratulieren, antworten, folgen, begegnen), és írásban ezeknél külön ellenőrizd a névmást: mir/dir/ihm, nem mich/dich/ihn.",
+    "Írásban a Genitiv (das Haus meiner Eltern, wegen des Wetters) igényesebb a von + Dativnál – emelt szinten különösen érdemes használni, de csak ha biztosan tudod a végződést.",
+    "Átolvasáskor nézd végig az es gibt, a haben és a brauchen utáni hímnemű főneveket: szinte mindig einen/keinen/meinen kell."
+  ],
+  "practice": [
+    {
+      "id": "1",
+      "kind": "choice",
+      "prompt": "Kannst du ___ bitte beim Umzug helfen?",
+      "options": [
+        {
+          "key": "A",
+          "text": "mich"
+        },
+        {
+          "key": "B",
+          "text": "meiner"
+        },
+        {
+          "key": "C",
+          "text": "mir"
+        },
+        {
+          "key": "D",
+          "text": "ich"
+        }
+      ],
+      "answer": "C",
+      "category": "case",
+      "explanation": "Helyes: mir. A helfen Dativot vonz (segít valakinek), az ich Dativ alakja mir.",
+      "wrongOptions": {
+        "A": "A mich Akkusativ; a helfen nem tárgyas ige, hanem részes esetet kíván.",
+        "B": "A meiner az ich Genitiv alakja (ritka, választékos), a helfen nem Genitivet vonz.",
+        "D": "Az ich Nominativ, alanyként áll; itt az alany a du."
+      }
+    },
+    {
+      "id": "2",
+      "kind": "text",
+      "prompt": "In unserer Stadt gibt es ___ (ein) großen Park.",
+      "cue": "ein",
+      "answer": [
+        "einen"
+      ],
+      "category": "case",
+      "explanation": "Helyes: einen. Az es gibt után Akkusativ áll; a der Park hímnemű, ezért a határozatlan névelő einen (a melléknév végződése is ezt mutatja: großen)."
+    },
+    {
+      "id": "3",
+      "kind": "choice",
+      "prompt": "Das Fahrrad gehört ___ Lehrerin.",
+      "options": [
+        {
+          "key": "A",
+          "text": "die"
+        },
+        {
+          "key": "B",
+          "text": "des"
+        },
+        {
+          "key": "C",
+          "text": "den"
+        },
+        {
+          "key": "D",
+          "text": "der"
+        }
+      ],
+      "answer": "D",
+      "category": "case",
+      "explanation": "Helyes: der. A gehören Dativot vonz (valakié), a die Lehrerin nőnemű, a nőnem Dativ névelője der.",
+      "wrongOptions": {
+        "A": "A die nőnemű Nominativ vagy Akkusativ; a gehören után Dativ kell.",
+        "B": "A des hímnemű/semleges Genitiv; a gehören nem birtokos esetet vonz.",
+        "C": "A den hímnemű Akkusativ vagy többes számú Dativ; a Lehrerin egyes számú nőnemű főnév."
+      }
+    },
+    {
+      "id": "4",
+      "kind": "text",
+      "prompt": "Zum Geburtstag schenke ich ___ (mein) Vater ein Buch.",
+      "cue": "mein",
+      "answer": [
+        "meinem"
+      ],
+      "category": "case",
+      "explanation": "Helyes: meinem. A schenken mellett a személy (kinek?) Dativban áll; a der Vater hímnemű, így a birtokos névelő Dativ alakja meinem."
+    },
+    {
+      "id": "5",
+      "kind": "choice",
+      "prompt": "Der Film hat ___ sehr gut gefallen.",
+      "options": [
+        {
+          "key": "A",
+          "text": "unsere"
+        },
+        {
+          "key": "B",
+          "text": "unser"
+        },
+        {
+          "key": "C",
+          "text": "wir"
+        },
+        {
+          "key": "D",
+          "text": "uns"
+        }
+      ],
+      "answer": "D",
+      "category": "case",
+      "explanation": "Helyes: uns. A gefallen igénél a film az alany, a személy Dativban áll (tetszett nekünk); a wir Dativ alakja uns.",
+      "wrongOptions": {
+        "A": "Az unsere birtokos névelő (a mi …-nk), utána főnévnek kellene állnia.",
+        "B": "Az unser birtokos névelő (a mi …-nk) vagy a wir Genitiv alakja; itt személyes névmás kell Dativban.",
+        "C": "A wir Nominativ; az alany itt der Film, a személy részes esetben áll."
+      }
+    },
+    {
+      "id": "6",
+      "kind": "text",
+      "prompt": "Das ist das Auto ___ (mein) Onkels.",
+      "cue": "mein",
+      "answer": [
+        "meines"
+      ],
+      "category": "case",
+      "explanation": "Helyes: meines. Birtokos viszony (kinek az autója?) → Genitiv. A der Onkel hímnemű: Genitivben a névelő meines, a főnév -s ragot kap (Onkels)."
+    }
+  ],
+  "relatedCategories": [
+    "article-declension",
+    "preposition",
+    "verb-rection"
+  ]
+}

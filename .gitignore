@@ -1,0 +1,43 @@
+# dependencies
+node_modules/
+
+# next.js
+.next/
+out/
+next-env.d.ts
+*.tsbuildinfo
+
+# local user data (progress database, backups, exports)
+data/*
+!data/.gitkeep
+!data/official/
+data/official/*
+!data/official/README.md
+
+# exchange folder: personal submissions and feedback are not committed
+exchange/inbox/*
+exchange/outbox/*
+exchange/archive/*
+exchange/vocab/*
+!exchange/**/.gitkeep
+
+# test output
+test-results/
+playwright-report/
+coverage/
+
+# misc
+.DS_Store
+*.log
+.env*
+.next-e2e/
+.next-build/
+.next-shot/
+
+# desktop app build output (scripts/desktop/build.ts)
+.next-desktop/
+desktop/dist/
+desktop/out/
+!data/lessons/
+data/lessons/*
+!data/lessons/README.md

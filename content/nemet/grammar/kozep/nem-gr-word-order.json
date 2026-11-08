@@ -1,0 +1,332 @@
+{
+  "schemaVersion": 1,
+  "id": "nem-gr-word-order",
+  "subject": "nemet",
+  "level": "kozep",
+  "source": "generated",
+  "topic": "nyelvtan",
+  "title": "Szórend",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "grammar",
+  "type": "lesson",
+  "category": "word-order",
+  "summaryHu": "A német szórend kötött: kijelentő főmondatban a ragozott ige mindig a második helyen áll, a második igei rész (Partizip II, főnévi igenév, elváló igekötő) a mondat végére kerül, mellékmondatban pedig a ragozott ige áll a végén. A magyar szórend szabad, a hangsúly dönti el, ezért a magyar tanulók gyakran írnak „Morgen ich fahre …” vagy „…, weil ich habe keine Zeit” típusú mondatokat. Írásban és szóbelin a szórendi hiba a nyelvhelyességi pontszámot rontja, a nyelvhelyesség rész mondatrész-beillesztéses és hibakereső feladatai pedig kifejezetten erre építenek.",
+  "rules": [
+    {
+      "title": "A ragozott ige a második helyen (V2)",
+      "explanation": "Kijelentő főmondatban a ragozott ige a második mondatrész helyén áll. Az első helyen bármi lehet: alany, időhatározó, tárgy, sőt egy egész mellékmondat. Ha nem az alany áll elöl, az alany közvetlenül az ige után következik (fordított szórend). A „hely” mondatrészt jelent, nem szót: az Am nächsten Morgen egyetlen helynek számít.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "Ich gehe heute ins Kino. – Heute gehe ich ins Kino.",
+          "hu": "Ma moziba megyek.",
+          "note": "Az ige mindkét esetben a 2. helyen."
+        },
+        {
+          "en": "Am nächsten Morgen waren alle müde.",
+          "hu": "Másnap reggel mindenki fáradt volt."
+        },
+        {
+          "en": "Den Film habe ich schon gesehen.",
+          "hu": "A filmet már láttam.",
+          "note": "Tárgy az első helyen → fordított szórend."
+        }
+      ]
+    },
+    {
+      "title": "Keretes szerkezet (Satzklammer)",
+      "explanation": "Ha az állítmány több részből áll, a ragozott rész a második helyen, a többi a mondat végén áll, és közöttük van minden más: Perfekt (haben/sein … Partizip II), módbeli segédige vagy werden (… főnévi igenév), elváló igekötős ige (… igekötő).",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "Ich habe gestern Abend meine Oma besucht.",
+          "hu": "Tegnap este meglátogattam a nagymamámat."
+        },
+        {
+          "en": "Wir müssen morgen sehr früh aufstehen.",
+          "hu": "Holnap nagyon korán kell kelnünk."
+        },
+        {
+          "en": "Der Zug kommt um 8 Uhr in Wien an.",
+          "hu": "A vonat 8 órakor érkezik Bécsbe."
+        }
+      ]
+    },
+    {
+      "title": "Kérdés és felszólítás",
+      "explanation": "Eldöntendő kérdésben és felszólításban a ragozott ige az első helyen áll (Kommst du mit? Komm mit! Kommen Sie bitte!). Kérdőszavas kérdésben a kérdőszó az első helyen, az ige a második helyen, utána az alany (Wann fährt der Bus?). A keretes szerkezet itt is megmarad (Hast du das Buch gelesen?).",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "Hast du am Samstag Zeit?",
+          "hu": "Ráérsz szombaton?"
+        },
+        {
+          "en": "Wo wohnt deine Brieffreundin?",
+          "hu": "Hol lakik a levelezőtársad?"
+        }
+      ]
+    },
+    {
+      "title": "Mellékmondat: a ragozott ige a végén",
+      "explanation": "A dass, weil, wenn, ob, obwohl, als, damit, bevor, nachdem kötőszó, a vonatkozó névmás és a függő kérdés kérdőszava után a ragozott ige a mellékmondat legvégére kerül (emlékeztető: „KATI” – a Konjunktion az elején, a Tätigkeit, vagyis az ige a végén). Összetett igealakban a ragozott rész áll leghátul (…, weil ich krank gewesen bin; …, dass ich morgen arbeiten muss). Az elváló igekötő a mellékmondatban összekapcsolódik az igével (…, wenn der Zug ankommt). Ha a mellékmondat áll elöl, az egész az első helynek számít, ezért a főmondat az igével kezdődik: Wenn ich Zeit habe, komme ich.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "Ich bleibe zu Hause, weil ich krank bin.",
+          "hu": "Otthon maradok, mert beteg vagyok."
+        },
+        {
+          "en": "Weißt du, wann der Film anfängt?",
+          "hu": "Tudod, mikor kezdődik a film?",
+          "note": "Függő kérdés: kérdőszó + … + ige a végén."
+        },
+        {
+          "en": "Wenn es morgen regnet, bleiben wir zu Hause.",
+          "hu": "Ha holnap esik, otthon maradunk.",
+          "note": "Mellékmondat az 1. helyen → ige, majd alany."
+        }
+      ]
+    },
+    {
+      "title": "Kötőszók 0. helyen és kötőszóértékű határozók",
+      "explanation": "Az und, aber, oder, denn, sondern két főmondatot köt össze, de nem foglal helyet (0. hely), ezért utánuk egyenes szórend jön: …, denn ich bin krank. A deshalb, deswegen, trotzdem, dann, danach, außerdem, sonst viszont határozószó: az első helyet foglalja el, ezért utána rögtön az ige áll: …, deshalb bleibe ich zu Hause.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "Ich komme nicht mit, denn ich habe keine Zeit.",
+          "hu": "Nem megyek veletek, mert nincs időm.",
+          "note": "denn → egyenes szórend."
+        },
+        {
+          "en": "Ich habe keine Zeit, deshalb komme ich nicht mit.",
+          "hu": "Nincs időm, ezért nem megyek veletek.",
+          "note": "deshalb → ige, alany."
+        }
+      ]
+    },
+    {
+      "title": "A mondat közepe: TeKaMoLo és a névmások",
+      "explanation": "A határozók szokásos sorrendje: temporal (mikor?) – kausal (miért?) – modal (hogyan?) – lokal (hol? hová?): Ich fahre morgen wegen der Prüfung mit dem Zug nach Budapest. A névmások a mondat elejére, közvetlenül az ige (vagy fordított szórendnél az alany) után kerülnek, és két névmásnál az Akkusativ áll elöl: Ich habe es ihm gestern gegeben.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "Wir fahren am Freitag wegen des Konzerts mit dem Auto nach Wien.",
+          "hu": "Pénteken a koncert miatt autóval megyünk Bécsbe.",
+          "note": "Te – Ka – Mo – Lo."
+        },
+        {
+          "en": "Gestern hat sie mir das Foto gezeigt.",
+          "hu": "Tegnap megmutatta nekem a fotót."
+        }
+      ]
+    },
+    {
+      "title": "Két főnévi igenév a mellékmondatban",
+      "explanation": "Ha a módbeli segédige Perfektben áll, a Partizip II helyett főnévi igenév áll (Ersatzinfinitiv): Ich habe nicht kommen können. Mellékmondatban ilyenkor a ragozott segédige NEM a legvégére, hanem a két főnévi igenév elé kerül: …, weil ich gestern nicht habe kommen können.",
+      "emeltOnly": true,
+      "examples": [
+        {
+          "en": "Es tut mir leid, dass ich dich nicht habe anrufen können.",
+          "hu": "Sajnálom, hogy nem tudtalak felhívni."
+        },
+        {
+          "en": "Er sagt, dass er das Buch nicht hat lesen wollen.",
+          "hu": "Azt mondja, hogy nem akarta elolvasni a könyvet."
+        }
+      ]
+    }
+  ],
+  "commonMistakes": [
+    {
+      "wrong": "Morgen ich fahre nach Wien.",
+      "right": "Morgen fahre ich nach Wien.",
+      "why": "A ragozott ige mindig a második helyen áll. Ha az időhatározó van elöl, az alany az ige mögé kerül (fordított szórend)."
+    },
+    {
+      "wrong": "Ich habe gekauft ein neues Handy.",
+      "right": "Ich habe ein neues Handy gekauft.",
+      "why": "Keretes szerkezet: a segédige a második helyen, a Partizip II a mondat legvégén áll, közöttük a tárgy."
+    },
+    {
+      "wrong": "Ich komme nicht, weil ich habe keine Zeit.",
+      "right": "Ich komme nicht, weil ich keine Zeit habe.",
+      "why": "A weil mellékmondatot vezet be, ezért a ragozott ige a végére kerül. (A beszélt nyelvben hallani weil + egyenes szórendet, de írásban ez hiba.)"
+    },
+    {
+      "wrong": "Ich war krank, deshalb ich bin zu Hause geblieben.",
+      "right": "Ich war krank, deshalb bin ich zu Hause geblieben.",
+      "why": "A deshalb nem kötőszó, hanem határozószó, és az első helyet foglalja el – utána az ige jön, aztán az alany."
+    },
+    {
+      "wrong": "Wenn ich Zeit habe, ich komme gern.",
+      "right": "Wenn ich Zeit habe, komme ich gern.",
+      "why": "Az elöl álló mellékmondat a főmondat első helyének számít, ezért utána közvetlenül a ragozott ige következik."
+    },
+    {
+      "wrong": "Ich weiß nicht, wo wohnt er.",
+      "right": "Ich weiß nicht, wo er wohnt.",
+      "why": "A függő kérdés mellékmondat: a kérdőszó után alany, a ragozott ige a végén. Csak az egyenes kérdésben áll az ige a kérdőszó után (Wo wohnt er?)."
+    }
+  ],
+  "examTips": [
+    "Írás után ellenőrizd minden mondatban: hol a ragozott ige? Főmondatban a 2. helyen, mellékmondatban (dass, weil, wenn, ob, obwohl …) a végén. Ez a leggyorsabban javítható és legtöbbet érő ellenőrzés.",
+    "A mondatrész-beillesztéses és a hibakereső feladatban a szórend gyakran a kulcs: ha egy mondatrész igével kezdődik, csak fordított szórendű helyre illik; ha igével végződik, mellékmondat része.",
+    "Változatos mondatkezdéssel (Am Wochenende…, Leider…, Deshalb…, Wenn …) jobb pontot kapsz a nyelvi szempontnál, de csak akkor, ha a fordított szórendet helyesen alkalmazod.",
+    "Szóbelin, ha bizonytalan vagy, használj denn-t a weil helyett: utána egyenes szórend jön, így kisebb az esélye a hibának."
+  ],
+  "practice": [
+    {
+      "id": "1",
+      "kind": "choice",
+      "prompt": "Melyik mondat helyes?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Am Samstag ich besuche meine Oma."
+        },
+        {
+          "key": "B",
+          "text": "Am Samstag besuche meine Oma ich."
+        },
+        {
+          "key": "C",
+          "text": "Am Samstag besuche ich meine Oma."
+        },
+        {
+          "key": "D",
+          "text": "Ich am Samstag besuche meine Oma."
+        }
+      ],
+      "answer": "C",
+      "category": "word-order",
+      "explanation": "Helyes: C. Az időhatározó (Am Samstag) áll az első helyen, a ragozott ige (besuche) a másodikon, utána közvetlenül az alany (ich).",
+      "wrongOptions": {
+        "A": "Az ige a harmadik helyre került; fordított szórendnél az alanynak az ige mögött kell állnia.",
+        "B": "Az alany fordított szórendnél közvetlenül az ige után áll, nem a mondat végén.",
+        "D": "Két mondatrész (Ich, am Samstag) áll az ige előtt; az ige csak a második helyen állhat."
+      }
+    },
+    {
+      "id": "2",
+      "kind": "choice",
+      "prompt": "Ich kann heute nicht zum Training kommen, weil ___.",
+      "options": [
+        {
+          "key": "A",
+          "text": "ich muss arbeiten"
+        },
+        {
+          "key": "B",
+          "text": "arbeiten ich muss"
+        },
+        {
+          "key": "C",
+          "text": "muss ich arbeiten"
+        },
+        {
+          "key": "D",
+          "text": "ich arbeiten muss"
+        }
+      ],
+      "answer": "D",
+      "category": "word-order",
+      "explanation": "Helyes: ich arbeiten muss. A weil mellékmondatot vezet be: az alany az elején, a ragozott ige (muss) a legvégén, előtte a főnévi igenév (arbeiten).",
+      "wrongOptions": {
+        "A": "Ez főmondati szórend; a weil után a ragozott ige a végére kerül. (A beszélt nyelvben előfordul, de írásban hibának számít.)",
+        "B": "Az alanynak a kötőszó után kell állnia, és a főnévi igenév a ragozott ige előtt van.",
+        "C": "Fordított főmondati szórend – a weil után nem állhat."
+      }
+    },
+    {
+      "id": "3",
+      "kind": "text",
+      "prompt": "Kannst du mir sagen, wann der Zug aus Salzburg ___ (ankommen)?",
+      "cue": "ankommen",
+      "answer": [
+        "ankommt"
+      ],
+      "category": "word-order",
+      "explanation": "Helyes: ankommt. A wann itt függő kérdést (mellékmondatot) vezet be, ezért a ragozott ige a végére kerül, és az elváló igekötő összekapcsolódik vele: …, wann der Zug ankommt."
+    },
+    {
+      "id": "4",
+      "kind": "choice",
+      "prompt": "Es regnet den ganzen Tag, ___ bleiben wir heute zu Hause.",
+      "options": [
+        {
+          "key": "A",
+          "text": "deshalb"
+        },
+        {
+          "key": "B",
+          "text": "denn"
+        },
+        {
+          "key": "C",
+          "text": "weil"
+        },
+        {
+          "key": "D",
+          "text": "aber"
+        }
+      ],
+      "answer": "A",
+      "category": "word-order",
+      "explanation": "Helyes: deshalb. A hiány után közvetlenül az ige (bleiben) áll, tehát a hiányzó szó az első helyet foglalja el – ez a deshalb (ezért), amely után fordított szórend jön. Jelentésben is illik: az eső miatt maradunk otthon.",
+      "wrongOptions": {
+        "B": "A denn után egyenes szórend jön (denn wir bleiben …), és jelentésben is fordított lenne: az ok nem az otthon maradás.",
+        "C": "A weil után a ragozott ige a mellékmondat végére kerülne (weil wir … bleiben).",
+        "D": "Az aber 0. helyen áll, utána egyenes szórend jönne (aber wir bleiben …), és az ellentét sem illik a jelentéshez."
+      }
+    },
+    {
+      "id": "5",
+      "kind": "choice",
+      "prompt": "Wenn ich mehr Zeit hätte, ___.",
+      "options": [
+        {
+          "key": "A",
+          "text": "würde ich mehr lesen"
+        },
+        {
+          "key": "B",
+          "text": "ich würde mehr lesen"
+        },
+        {
+          "key": "C",
+          "text": "ich mehr lesen würde"
+        },
+        {
+          "key": "D",
+          "text": "würde mehr lesen ich"
+        }
+      ],
+      "answer": "A",
+      "category": "word-order",
+      "explanation": "Helyes: würde ich mehr lesen. Az elöl álló wenn-es mellékmondat a főmondat első helye, ezért közvetlenül utána a ragozott ige (würde), majd az alany (ich) következik; a főnévi igenév a végén áll.",
+      "wrongOptions": {
+        "B": "Az ich az ige elé került, így az ige a harmadik helyre csúszott; a mellékmondat után a főmondat igével kezdődik.",
+        "C": "Ez mellékmondati szórend; a főmondatban a ragozott ige nem állhat a végén.",
+        "D": "Az alany fordított szórendnél közvetlenül az ige után áll, és a főnévi igenév (lesen) a mondat végére kerül."
+      }
+    },
+    {
+      "id": "6",
+      "kind": "text",
+      "prompt": "Ich glaube, dass mein Bruder morgen nicht kommen ___ (können).",
+      "cue": "können",
+      "answer": [
+        "kann"
+      ],
+      "category": "word-order",
+      "explanation": "Helyes: kann. A dass mellékmondatban a ragozott ige (a módbeli segédige) a legvégére kerül, a főnévi igenév (kommen) elé: …, dass er morgen nicht kommen kann."
+    }
+  ],
+  "relatedCategories": [
+    "conjunction",
+    "negation",
+    "tense"
+  ]
+}

@@ -1,0 +1,96 @@
+{
+  "schemaVersion": 1,
+  "id": "kem-wr-kozep-vas-aluminium",
+  "subject": "kemia",
+  "revision": 1,
+  "level": "kozep",
+  "source": "generated",
+  "topic": "szervetlen-femek",
+  "title": "A vas és az alumínium összehasonlítása",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "writing",
+  "type": "elemzo",
+  "taskNumber": 3,
+  "situation": "Hasonlítsa össze a két legnagyobb mennyiségben felhasznált fémet, a vasat és az alumíniumot az alábbi szempontok szerint! Használja a függvénytáblázat periódusos rendszerét!\n\na) Adja meg mindkét elem helyét a periódusos rendszerben (periódus, csoport, mező) és alapállapotú elektronszerkezetét! (2 pont)\nb) Mindkét fém reagál híg sósavval. Írja fel a két reakció rendezett egyenletét! (3 pont)\nc) A két fém közül melyik oldódik nátrium-hidroxid-oldatban is? Írja fel a reakció egyenletét! (2 pont)\nd) Magyarázza meg, miért rozsdásodik el nedves levegőn a vas, és miért nem korrodálódik tovább az alumínium, bár standardpotenciálja negatívabb a vasénál! (3 pont)\ne) Adjon meg mindkét fémre egy-egy jellemző felhasználást, és indokolja egy-egy tulajdonsággal! (2 pont)",
+  "points": [
+    {
+      "id": "p1",
+      "text": "a) Hely a periódusos rendszerben és elektronszerkezet mindkét elemre (2 pont)"
+    },
+    {
+      "id": "p2",
+      "text": "b) A két fém sósavas reakciójának rendezett egyenlete (3 pont)"
+    },
+    {
+      "id": "p3",
+      "text": "c) A lúgban oldódó fém és a reakció egyenlete (2 pont)"
+    },
+    {
+      "id": "p4",
+      "text": "d) A vas rozsdásodásának és az alumínium passziválódásának magyarázata (3 pont)"
+    },
+    {
+      "id": "p5",
+      "text": "e) Felhasználás tulajdonsággal indokolva mindkét fémre (2 pont)"
+    }
+  ],
+  "suggestedMinutes": 20,
+  "usefulPhrases": [
+    {
+      "en": "[Ar] 3d⁶ 4s²",
+      "hu": "Rövidített elektronszerkezet: a nemesgáz-törzs szögletes zárójelben."
+    },
+    {
+      "en": "amfoter",
+      "hu": "Savval és erős bázissal is reagál (Al, Zn és oxidjaik, hidroxidjaik)."
+    },
+    {
+      "en": "Na[Al(OH)₄] – nátrium-tetrahidroxo-aluminát",
+      "hu": "Az alumínium lúgos oldódásának terméke."
+    },
+    {
+      "en": "passziválódás",
+      "hu": "Tömör, jól tapadó oxidréteg védi a fémet a további korróziótól."
+    },
+    {
+      "en": "Fe + 2 HCl → FeCl₂ + H₂",
+      "hu": "Sósavban a vas vas(II)-ionokká oxidálódik, nem vas(III)-ionokká."
+    },
+    {
+      "en": "a tulajdonság → felhasználás",
+      "hu": "Elemző feladatban a felhasználást mindig egy tulajdonsággal indokold („mert …”)."
+    }
+  ],
+  "checklistExtra": [],
+  "modelAnswer": {
+    "text": "a) Az alumínium (Z = 13) a 3. periódus 13. csoportjának eleme, a p-mezőben van; elektronszerkezete 1s² 2s² 2p⁶ 3s² 3p¹. A vas (Z = 26) a 4. periódus 8. csoportjának eleme, d-mezőbeli átmenetifém; elektronszerkezete 1s² 2s² 2p⁶ 3s² 3p⁶ 3d⁶ 4s², röviden [Ar] 3d⁶ 4s².\n\nb) Mindkét fém standardpotenciálja negatívabb a hidrogénénél, ezért híg sósavból hidrogént fejlesztenek:\n2 Al + 6 HCl → 2 AlCl₃ + 3 H₂\nFe + 2 HCl → FeCl₂ + H₂\nSósavban az alumínium alumíniumionokká (Al³⁺), a vas vas(II)-ionokká (Fe²⁺) oxidálódik.\n\nc) Nátrium-hidroxid-oldatban csak az alumínium oldódik, mert amfoter jellegű (oxidja és hidroxidja savban és lúgban is oldódik):\n2 Al + 2 NaOH + 6 H₂O → 2 Na[Al(OH)₄] + 3 H₂\nA vas nátrium-hidroxid-oldattal nem reagál.\n\nd) A vas nedves levegőn oxigén és víz együttes hatására oxidálódik; a keletkező rozsda (vas(III)-oxid-hidroxid, közelítőleg Fe₂O₃ · x H₂O) laza, porózus, lepattogzik, ezért nem védi az alatta lévő fémet, és a korrózió tovább halad. Az alumínium felületén vékony, tömör, jól tapadó alumínium-oxid-réteg (Al₂O₃) képződik, amely elzárja a fémet a levegőtől és a víztől – ez a passziválódás –, ezért az alumínium negatívabb standardpotenciálja ellenére sem korrodálódik tovább.\n\ne) A vasat acél formájában szerkezeti anyagként használják, például hidak, épületek vázához, mert nagy a szilárdsága és jól alakítható. Az alumíniumból repülőgép- és autóalkatrészeket, italosdobozt, fóliát készítenek, mert kis sűrűségű könnyűfém, korrózióálló és jól alakítható.",
+    "pointsCovered": [
+      {
+        "id": "p1",
+        "quote": "A vas (Z = 26) a 4. periódus 8. csoportjának eleme, d-mezőbeli átmenetifém; elektronszerkezete 1s² 2s² 2p⁶ 3s² 3p⁶ 3d⁶ 4s²"
+      },
+      {
+        "id": "p2",
+        "quote": "2 Al + 6 HCl → 2 AlCl₃ + 3 H₂"
+      },
+      {
+        "id": "p3",
+        "quote": "2 Al + 2 NaOH + 6 H₂O → 2 Na[Al(OH)₄] + 3 H₂"
+      },
+      {
+        "id": "p4",
+        "quote": "ez a passziválódás"
+      },
+      {
+        "id": "p5",
+        "quote": "Az alumíniumból repülőgép- és autóalkatrészeket, italosdobozt, fóliát készítenek, mert kis sűrűségű könnyűfém, korrózióálló és jól alakítható."
+      }
+    ],
+    "notes": [
+      "Tények (tapasztalat-szempont): a két elem helye, elektronszerkezete, reakciói és felhasználása hiánytalan és helyes – a vas sósavban vas(II)-kloriddá oldódik, ezt sokan elrontják.",
+      "Magyarázat: a korrózió eltérését szerkezettel magyarázza (laza rozsda ↔ tömör oxidréteg), az amfoter jelleget egyenlettel mutatja be, és a felhasználásokat tulajdonsággal indokolja.",
+      "Szaknyelv: pontos fogalmak (amfoter, passziválódás, d-mező, átmenetifém) és hibátlan, rendezett egyenletek."
+    ]
+  }
+}

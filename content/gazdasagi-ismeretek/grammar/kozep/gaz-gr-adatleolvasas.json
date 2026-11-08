@@ -1,0 +1,292 @@
+{
+  "schemaVersion": 1,
+  "id": "gaz-gr-adatleolvasas",
+  "subject": "gazdasagi-ismeretek",
+  "revision": 1,
+  "level": "kozep",
+  "source": "generated",
+  "topic": "nyelvtan",
+  "title": "Táblázat, diagram leolvasása",
+  "createdAt": "2026-11-06",
+  "tags": [],
+  "section": "grammar",
+  "type": "lesson",
+  "category": "adatleolvasas",
+  "summaryHu": "A gazdasági ismeretek feladataiban a táblázatokat és ábrákat szövegben leírva kapod: a pékség költségtáblázatát, a fagylalt-példa ceteris paribus táblázatát, az irányzatok időrendi táblázatát és Magyarország útjának idővonalát. A leggyakoribb hibák: a sor és az oszlop felcserélése, a szint és a változás, illetve az arány és az abszolút érték összekeverése. Mindig a szerkezettel kezdd: mit jelent a sor, mit az oszlop, mi a mértékegység.",
+  "rules": [
+    {
+      "title": "Először a szerkezet: mi a sor, mi az oszlop, mi a mértékegység?",
+      "explanation": "Mielőtt bármit leolvasol, nevezd meg, mit jelentenek a sorok és az oszlopok. A pékség-táblázatban (egy kenyér ára 130 Ft) minden SOR egy termelési szint: napi 100, 200, 300 és 400 db. Az OSZLOPOK: összköltség (Ft) – a napi termelés teljes költsége; átlagköltség (Ft/db) – egy darabra jutó költség; határköltség (Ft/db) – az utolsó 100 db-ra jutó többletköltség darabonként; bevétel (Ft) – 130 Ft × a darabszám; profit (Ft) – a bevétel és az összköltség különbsége. Egy sor adatai mindig ugyanarra a termelési szintre vonatkoznak.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "300 db/nap sora: összköltség 38 000 Ft · átlagköltség ≈ 126,7 Ft/db · határköltség 80 Ft/db · bevétel 39 000 Ft · profit +1 000 Ft",
+          "hu": "Egy sor = egy termelési szint. 38 000 / 300 ≈ 126,7 (átlagköltség); 39 000 − 38 000 = +1 000 (profit); (38 000 − 30 000) / 100 = 80 (határköltség)."
+        },
+        {
+          "en": "100 db/nap sora: a határköltség oszlopában „–” áll",
+          "hu": "A határköltség az előző sorhoz képesti változásból számolható; az első sor előtt nincs adat, ezért itt nincs érték. A „–” nem nulla!"
+        }
+      ]
+    },
+    {
+      "title": "Szint vagy változás?",
+      "explanation": "Egyes oszlopok egy adott termelési szint ÉRTÉKÉT (szintjét) mutatják – összköltség, bevétel, profit –, mások a két sor közötti VÁLTOZÁST – a határköltség az utolsó 100 db többletköltsége darabonként. A döntéshez a határelemzés a változást nézi: addig érdemes növelni, amíg a határhaszon ≥ határköltség. A pékségnél az utolsó 100 db darabja 135 Ft-ba kerül, ez több a 130 Ft-os árnál, ezért csökkenti a profitot: 300 db a jobb döntés.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "300 → 400 db: összköltség 38 000 → 51 500 Ft (változás: +13 500 Ft, darabonként 135 Ft = határköltség); profit +1 000 → +500 Ft",
+          "hu": "A profit 400 db-nál még pozitív (szint), de 500 Ft-tal kisebb, mint 300 db-nál (változás). A legnagyobb profit 300 db-nál van."
+        },
+        {
+          "en": "Átlagelemzés szerint 400 db-nál az átlagköltség (128,8 Ft) kisebb az árnál → „megéri többet sütni”.",
+          "hu": "Ez a dia szerint a téves következtetés: az átlag nem mutatja meg, mennyibe kerül az utolsó egység. A határköltség (135 Ft/db) igen.",
+          "note": "A határelemzés versus átlagelemzés a dia fő tanulsága."
+        }
+      ]
+    },
+    {
+      "title": "Arány (egy darabra jutó érték) vagy abszolút érték?",
+      "explanation": "A mértékegység elárulja, mit olvasol: a Ft/db egy darabra jutó érték (arány), a Ft a teljes összeg (abszolút érték). Az átlagköltség csökkenése NEM jelenti, hogy a költség csökken. Ugyanígy a százalékos változás nem szint: a nominál- és reáljövedelem példájában a fizetés 10%-kal nő, de az árak is 10%-kal emelkednek – a nomináljövedelem nőtt, a reáljövedelem nem, ugyanannyit tudunk vásárolni.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "100 → 200 db: átlagköltség 200 → 150 Ft/db, összköltség 20 000 → 30 000 Ft",
+          "hu": "Az egy darabra jutó költség csökken, a teljes költség viszont 10 000 Ft-tal nő."
+        },
+        {
+          "en": "Fizetés +10%, árak +10%",
+          "hu": "Nomináljövedelem: nőtt (a ténylegesen megszerzett pénzösszeg). Reáljövedelem: nem változott (ugyanannyi árut és szolgáltatást lehet belőle venni)."
+        }
+      ]
+    },
+    {
+      "title": "A ceteris paribus táblázat: VÁLTOZIK / állandó",
+      "explanation": "A fagylalt-példa táblázata azt mutatja, mitől függ, mennyi fagylaltot vesznek nyáron: a fagylalt ára, az időjárás, a vásárlók jövedelme, ízlés, divat, más termékek ára. Csak egy sorban áll VÁLTOZIK (a fagylalt ára), a többi tényező mellett „állandó”. Így olvasd: egyszerre csak egy tényező hatását vizsgáljuk, ezért a megfigyelt változás ennek az egy tényezőnek tulajdonítható – ceteris paribus: ha csak az ár nő, kevesebb fagylaltot vesznek.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "a fagylalt ára – VÁLTOZIK; az időjárás, a vásárlók jövedelme, ízlés, divat, más termékek ára – állandó",
+          "hu": "Ha nő az ár, és közben hőség is van, nem tudjuk, melyik hatás mekkora – ezért tartjuk a többit állandónak."
+        }
+      ]
+    },
+    {
+      "title": "Időrendi táblázat és idővonal: sorrend, időszak, tartalom",
+      "explanation": "Az irányzatok időrendi táblázatában minden oszlop egy időszak + irányzat + fő gondolat: XVI–XVII. sz. merkantilizmus (állami beavatkozás, nemesfémek felhalmozása); XVIII. sz. közepe fiziokraták (a mezőgazdaság elsődlegessége); XVIII–XIX. sz. klasszikus iskola (Smith, Ricardo, Malthus: piaci önszabályozás, kereskedelem, népesedés); XIX. sz. közepe Marx (a kapitalizmus kritikája, osztályharc); XIX. vége – XX. eleje neoklasszikusok (határhaszon, matematikai modellek); XX. sz. első fele Keynes (állami keresletélénkítés válság idején); XX. sz. második fele Friedman (monetarizmus, a szabad piac elsődlegessége). Magyarország idővonalán a szakaszhatár is adat: a rendszerváltásig tervgazdaság (piaci reformokkal), utána piacgazdaság.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "1948–1949 államosítás · 1968 új gazdasági mechanizmus · 1987–1988 reformtörvények · 1989–1990 rendszerváltás · 1990-es évek privatizáció · 2004 EU-tagság",
+          "hu": "1948–49: a tervgazdaság kiépítése szovjet mintára, köztulajdon; 1968: piaci elemek a tervgazdaságban, nagyobb vállalati önállóság; 1987–88: kétszintű bankrendszer, társasági törvény (vállalkozások); 1989–90: demokrácia és piacgazdaság, újranyit a Budapesti Értéktőzsde; 1990-es évek: állami vállalatok magánkézbe, külföldi tőke érkezik; 2004: az Európai Unió egységes piacának része leszünk."
+        }
+      ]
+    }
+  ],
+  "commonMistakes": [
+    {
+      "wrong": "A 400 db-os sorban a határköltség ≈ 128,8 Ft/db.",
+      "right": "400 db-nál az ÁTLAGköltség ≈ 128,8 Ft/db, a HATÁRköltség 135 Ft/db.",
+      "why": "Oszlopcsere: a két oszlop szomszédos és mindkettő Ft/db – mindig ellenőrizd az oszlop fejlécét."
+    },
+    {
+      "wrong": "Az átlagköltség 200-ról 150 Ft/db-ra csökken, tehát a pékség költségei csökkennek.",
+      "right": "Az összköltség 20 000-ről 30 000 Ft-ra nő; csak az egy darabra jutó költség csökken.",
+      "why": "Arány és abszolút érték összekeverése: a Ft/db egy darabra jutó, a Ft teljes összeg."
+    },
+    {
+      "wrong": "400 db-nál a profit +500 Ft, pozitív, tehát a 400 db a legjobb döntés.",
+      "right": "A profit 300 db-nál a legnagyobb (+1 000 Ft); 300-ról 400 db-ra 500 Ft-tal csökken, mert az utolsó 100 db határköltsége (135 Ft/db) nagyobb az árnál (130 Ft).",
+      "why": "Szint és változás összekeverése: a döntéshez a változást (határköltség az árral szemben) kell nézni."
+    },
+    {
+      "wrong": "Az első sorban a határköltség 0 Ft/db.",
+      "right": "Az első sorban nincs határköltség („–”): nincs előző sor, amelyhez képest a változást számolni lehetne.",
+      "why": "A „–” hiányzó, nem értelmezhető adatot jelöl, nem nullát."
+    },
+    {
+      "wrong": "1968-ban Magyarország piacgazdasággá vált.",
+      "right": "1968: új gazdasági mechanizmus – piaci elemek a tervgazdaságban; a piacgazdaság a rendszerváltással (1989–1990) jött létre.",
+      "why": "Az idővonal két szakaszra oszlik: tervgazdaság (piaci reformokkal) a rendszerváltásig, utána piacgazdaság."
+    },
+    {
+      "wrong": "A fizetésem 10%-kal nőtt, tehát 10%-kal többet tudok vásárolni.",
+      "right": "Ha az árak is 10%-kal emelkedtek, csak a nomináljövedelmem nőtt, a reáljövedelmem nem: ugyanannyit tudok vásárolni.",
+      "why": "A százalékos változást mindig a másik változóval együtt kell olvasni (bér és árak)."
+    }
+  ],
+  "examTips": [
+    "Emelt írásbeli, rövid feladatok (adatsor típus): a táblázatot szövegben kapod – írd le magadnak egy sorban a sorok és oszlopok jelentését, mielőtt válaszolsz.",
+    "Emelt írásbeli, elemző feladat: „Az adatok, a forrás értelmezése” szempont 12 pont – a szint, a változás, az arány és a tendencia helyes megkülönböztetését értékeli; egy leolvasási hiba már a 9–11 pontos sávba visz.",
+    "Emelt szóbeli: ha a tétel forrása táblázat (pl. a pékség-példa vagy az idővonal), mondd ki, melyik sorból és oszlopból veszed az adatot – a tartalmi pontosság így ellenőrizhető. Az aktuális esemény / forrás elemzésénél (20 pont) ugyanez az adatsor értelmezésének alapja."
+  ],
+  "practice": [
+    {
+      "id": "1",
+      "kind": "text",
+      "prompt": "A pékség-táblázat (ár: 130 Ft/db) szerint mekkora a profit napi 300 db sütésénél? (Ft-ban)",
+      "answer": [
+        "1000",
+        "1 000",
+        "+1000",
+        "+1 000",
+        "1000 Ft",
+        "1 000 Ft",
+        "+1 000 Ft",
+        "+1000 Ft",
+        "1000 forint",
+        "1 000 forint",
+        "+1 000 forint"
+      ],
+      "category": "adatleolvasas",
+      "explanation": "Helyes: +1 000 Ft. A 300 db-os sorban a bevétel 39 000 Ft (300 × 130), az összköltség 38 000 Ft, a profit a kettő különbsége: 39 000 − 38 000 = 1 000 Ft.",
+      "maxWords": 3
+    },
+    {
+      "id": "2",
+      "kind": "choice",
+      "prompt": "A pékség-táblázat melyik oszlopa mutatja meg, hogy az utolsó 100 db darabonként mennyivel növelte a költséget?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Összköltség (Ft)"
+        },
+        {
+          "key": "B",
+          "text": "Átlagköltség (Ft/db)"
+        },
+        {
+          "key": "C",
+          "text": "Határköltség (Ft/db)"
+        },
+        {
+          "key": "D",
+          "text": "Profit (Ft)"
+        }
+      ],
+      "answer": "C",
+      "category": "adatleolvasas",
+      "explanation": "Helyes: C, a határköltség. A dia szerint ez „az utolsó 100 db-ra” jutó többletköltség darabonként, pl. 300 → 400 db: (51 500 − 38 000) / 100 = 135 Ft/db.",
+      "wrongOptions": {
+        "A": "Az összköltség a teljes napi költség szintje, nem a változás.",
+        "B": "Az átlagköltség az összes darabra elosztott költség, nem az utolsó 100 db többletköltsége.",
+        "D": "A profit a bevétel és az összköltség különbsége, nem költségadat."
+      }
+    },
+    {
+      "id": "3",
+      "kind": "text",
+      "prompt": "A pékség-táblázat melyik termelési szintjén a legkisebb az átlagköltség? (db/nap)",
+      "answer": [
+        "300",
+        "300 db",
+        "300 db/nap",
+        "napi 300 db",
+        "300 darab",
+        "napi 300 darab",
+        "300 darab/nap"
+      ],
+      "category": "adatleolvasas",
+      "explanation": "Helyes: 300 db. Az átlagköltség oszlopa: 200 → 150 → ≈ 126,7 → ≈ 128,8 Ft/db, a legkisebb érték (≈ 126,7 Ft/db) a 300 db-os sorban van.",
+      "maxWords": 3
+    },
+    {
+      "id": "4",
+      "kind": "choice",
+      "prompt": "Mi történik a pékségnél, ha a napi termelés 200 db-ról 300 db-ra nő?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Az összköltség csökken, mert az átlagköltség csökken."
+        },
+        {
+          "key": "B",
+          "text": "Az összköltség 8 000 Ft-tal nő, az átlagköltség 150-ről ≈ 126,7 Ft/db-ra csökken."
+        },
+        {
+          "key": "C",
+          "text": "Az összköltség és az átlagköltség is nő."
+        },
+        {
+          "key": "D",
+          "text": "A határköltség ≈ 126,7 Ft/db."
+        }
+      ],
+      "answer": "B",
+      "category": "adatleolvasas",
+      "explanation": "Helyes: B. Az összköltség 38 000 − 30 000 = 8 000 Ft-tal nő (ez 100 db-ra 80 Ft/db határköltség), közben az egy darabra jutó költség 150-ről ≈ 126,7 Ft/db-ra csökken.",
+      "wrongOptions": {
+        "A": "Arány és abszolút érték összekeverése: az összköltség 30 000-ről 38 000 Ft-ra nő.",
+        "C": "Az átlagköltség ebben a lépésben csökken (150 → ≈ 126,7 Ft/db).",
+        "D": "A ≈ 126,7 Ft/db az átlagköltség; a határköltség ebben a lépésben 80 Ft/db."
+      }
+    },
+    {
+      "id": "5",
+      "kind": "choice",
+      "prompt": "A fagylalt-példa ceteris paribus táblázatában melyik tényező mellett áll „VÁLTOZIK”?",
+      "options": [
+        {
+          "key": "A",
+          "text": "az időjárás"
+        },
+        {
+          "key": "B",
+          "text": "a vásárlók jövedelme"
+        },
+        {
+          "key": "C",
+          "text": "más termékek ára"
+        },
+        {
+          "key": "D",
+          "text": "a fagylalt ára"
+        }
+      ],
+      "answer": "D",
+      "category": "adatleolvasas",
+      "explanation": "Helyes: D, a fagylalt ára. Ceteris paribus: egyszerre csak egy tényező változik, a többi (időjárás, jövedelem, ízlés, divat, más termékek ára) állandó – így látszik, hogy ha csak az ár nő, kevesebb fagylaltot vesznek.",
+      "wrongOptions": {
+        "A": "Az időjárás a táblázatban állandó – éppen azért, hogy a hőség hatása ne keveredjen az áréval.",
+        "B": "A vásárlók jövedelme állandónak tekintett tényező.",
+        "C": "Más termékek ára is az állandó tényezők között szerepel."
+      }
+    },
+    {
+      "id": "6",
+      "kind": "choice",
+      "prompt": "Magyarország útjának idővonalán melyik időponthoz tartozik a „kétszintű bankrendszer, társasági törvény (vállalkozások)”?",
+      "options": [
+        {
+          "key": "A",
+          "text": "1968"
+        },
+        {
+          "key": "B",
+          "text": "1987–1988"
+        },
+        {
+          "key": "C",
+          "text": "1989–1990"
+        },
+        {
+          "key": "D",
+          "text": "2004"
+        }
+      ],
+      "answer": "B",
+      "category": "adatleolvasas",
+      "explanation": "Helyes: B, 1987–1988 – a reformtörvények: kétszintű bankrendszer és társasági törvény, még a tervgazdaság (piaci reformokkal) szakaszában.",
+      "wrongOptions": {
+        "A": "1968 az új gazdasági mechanizmus: piaci elemek a tervgazdaságban, nagyobb vállalati önállóság.",
+        "C": "1989–1990 a rendszerváltás: demokrácia és piacgazdaság, újranyit a Budapesti Értéktőzsde.",
+        "D": "2004 az EU-tagság: az Európai Unió egységes piacának része leszünk."
+      }
+    }
+  ],
+  "relatedCategories": [
+    "szamitas",
+    "modell-ertelmezes",
+    "alapelv-alkalmazas"
+  ]
+}

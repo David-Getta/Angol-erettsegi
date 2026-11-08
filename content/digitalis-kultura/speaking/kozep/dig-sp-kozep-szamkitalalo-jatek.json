@@ -1,0 +1,81 @@
+{
+  "schemaVersion": 1,
+  "id": "dig-sp-kozep-szamkitalalo-jatek",
+  "subject": "digitalis-kultura",
+  "revision": 1,
+  "level": "kozep",
+  "source": "generated",
+  "topic": "algoritmizalas",
+  "title": "Programozási feladat: számkitaláló játék",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "speaking",
+  "type": "programozasi-tetel",
+  "partNumber": 2,
+  "instructionsHu": "Programozási feladat: írjon programot, amely „gondol” egy 1 és 100 közötti véletlen egész számra, a felhasználó pedig addig tippel, amíg el nem találja! Minden rossz tipp után írja ki a program, hogy a gondolt szám nagyobb vagy kisebb, a végén pedig azt, hány tippből sikerült! Mutassa be a megoldást, és magyarázza el, legfeljebb hány tipp kell ügyes tippeléssel!",
+  "prompts": [
+    "Véletlenszám előállítása",
+    "Elöltesztelő ciklus: ismétlés, amíg nem talál",
+    "Elágazás: nagyobb / kisebb / talált",
+    "Számláló a tippekhez",
+    "A legjobb stratégia (felezés) és a legrosszabb eset"
+  ],
+  "followUpQuestions": [
+    "Mi történne, ha a felhasználó betűt írna be? Hogyan védekezne ez ellen?",
+    "Miért elég 7 tipp 100 szám esetén?"
+  ],
+  "usefulPhrases": [
+    {
+      "en": "random.randint(a, b)",
+      "hu": "véletlen egész szám a és b között, a határokat is beleértve"
+    },
+    {
+      "en": "while feltétel:",
+      "hu": "elöltesztelő ciklus – addig ismétel, amíg a feltétel igaz"
+    },
+    {
+      "en": "if / elif / else",
+      "hu": "többágú elágazás"
+    },
+    {
+      "en": "int(input())",
+      "hu": "a beírt szöveg egész számmá alakítása"
+    },
+    {
+      "en": "számláló",
+      "hu": "a ciklusmag minden lefutásakor eggyel nő"
+    },
+    {
+      "en": "felezéses (bináris) keresés",
+      "hu": "minden lépésben a lehetőségek felét zárja ki"
+    }
+  ],
+  "sources": [
+    {
+      "title": "A feladat",
+      "text": "A program gondoljon egy 1 és 100 közötti véletlen egész számra! A felhasználó tippeljen, a program minden tipp után írja ki: „Nagyobb” vagy „Kisebb”, amíg el nem találja; a végén írja ki a tippek számát!"
+    }
+  ],
+  "keyPoints": [
+    "A véletlenszámot a random modul randint(1, 100) függvénye adja (mindkét határ benne van).",
+    "Mivel előre nem tudjuk, hány tipp kell, feltételes (while) ciklus kell; a tipp változó kezdőértéke olyan szám (0), amely biztosan nem a gondolt szám, így a ciklus legalább egyszer lefut.",
+    "A beolvasott szöveget int()-tel számmá kell alakítani az összehasonlításhoz.",
+    "A tippek számát számláló változó (megszámlálás) tartja nyilván.",
+    "Ügyes stratégia a felezés (bináris keresés): minden tipp legalább felére szűkíti a lehetőségeket, így 100 számnál legfeljebb 7 tipp kell (2⁷ = 128 ≥ 100)."
+  ],
+  "speakingSeconds": 420,
+  "prepSeconds": 900,
+  "sampleAnswer": {
+    "turns": [
+      {
+        "speaker": "candidate",
+        "text": "A feladat lényege, hogy nem tudjuk előre, hányszor kell ismételni, ezért feltételes ciklust használok.\n\nimport random\n\ngondolt = random.randint(1, 100)\ntippek = 0\ntipp = 0\nwhile tipp != gondolt:\n    tipp = int(input(\"Tipp: \"))\n    tippek += 1\n    if tipp < gondolt:\n        print(\"Nagyobb\")\n    elif tipp > gondolt:\n        print(\"Kisebb\")\nprint(\"Eltaláltad\", tippek, \"tippből!\")\n\nA random modul randint függvénye 1 és 100 közötti egész számot ad, mindkét határt beleértve. A tippek változó számolja a próbálkozásokat, a tipp változónak 0 a kezdőértéke: ez biztosan nem egyezik a gondolt számmal, ezért a while ciklus feltétele elsőre igaz, és a ciklus legalább egyszer lefut. A ciklusban bekérem a tippet, az input szöveget ad, ezért int()-tel számmá alakítom, majd növelem a számlálót. Utána egy elágazás következik: ha a tipp kisebb, kiírom, hogy a gondolt szám nagyobb, ha nagyobb, hogy kisebb. Ha eltalálta, egyik ág sem fut le, a ciklusfeltétel hamis lesz, és a ciklus után kiírom a tippek számát. Kipróbáltam úgy, hogy a gondolt szám 37 volt: 50-re „Kisebb”, 25-re „Nagyobb”, 37-re a program azt írta, eltaláltam 3 tippből. A legjobb stratégia a felezés: először 50-et tippelek, aztán mindig a maradék tartomány közepét. Minden tipp legalább felére csökkenti a lehetőségeket, ezért 100 számnál legfeljebb 7 tipp kell, mert 2 a hetediken 128, ami már több, mint 100."
+      }
+    ],
+    "notes": [
+      "Működő, a feladatnak megfelelő program; a vizsgázó egy konkrét játékmenettel (37-es gondolt szám) igazolja a működést.",
+      "A magyarázatban szerepel, miért while ciklus kell (ismeretlen ismétlésszám), miért 0 a kezdőérték és miért kell az int() – ezek a tipikus rákérdezések.",
+      "A felezéses stratégia és a 7 tippes felső korlát (2⁷ = 128 ≥ 100) összekapcsolja a feladatot a bináris kereséssel, ez a szaknyelvi és összefüggés-szempontban is értékes."
+    ]
+  }
+}

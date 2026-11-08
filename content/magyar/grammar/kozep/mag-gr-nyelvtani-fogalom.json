@@ -1,0 +1,271 @@
+{
+  "schemaVersion": 1,
+  "id": "mag-gr-nyelvtani-fogalom",
+  "subject": "magyar",
+  "revision": 1,
+  "level": "kozep",
+  "source": "generated",
+  "topic": "nyelvtan",
+  "title": "Nyelvtani fogalmak, nyelvi elemzés",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "grammar",
+  "type": "lesson",
+  "category": "nyelvtani-fogalom",
+  "summaryHu": "A nyelvtani elemzés a nyelvi szintek fogalmaira épül: hangtan (magánhangzók, mássalhangzók, hangtörvények), alaktan (szóelemek, szóalkotás), szófajtan, mondattan (mondatrészek, mondatfajták) és jelentéstan. A műveltségi feladatlapon és a szóbeli nyelvtan tételben pontos meghatározásokat és felismerést várnak. A tipikus hibák az igenevek, a jelzőfajták és a hangtörvények összekeverésében születnek.",
+  "rules": [
+    {
+      "title": "Szóelemek és sorrendjük",
+      "explanation": "A szó felépítése: szótő + képző(k) + jel(ek) + rag. A képző új szót hoz létre (tanul → tanuló), a jel módosítja a jelentést, de nem hoz létre új szót (többesjel -k, múlt idő jele -t/-tt, fokjel -bb), a rag a szó mondatbeli viszonyát jelöli (tárgyrag -t, határozóragok, igei személyragok). A rag után már nem állhat más toldalék.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "tanul + ó + k + nak → tanulóknak",
+          "hu": "tő (tanul) + képző (-ó) + többesjel (-k) + részeshatározó-rag (-nak)"
+        }
+      ]
+    },
+    {
+      "title": "Az igenevek",
+      "explanation": "Az igenevek igéből képzett, az ige és egy névszó tulajdonságait egyesítő szóalakok. Főnévi igenév: -ni (olvasni). Melléknévi igenév: folyamatos -ó/-ő (olvasó), befejezett -t/-tt (olvasott), beálló -andó/-endő (olvasandó). Határozói igenév: -va/-ve, -ván/-vén (olvasva). A „megírt” lehet ige (Megírt egy levelet) vagy melléknévi igenév (a megírt levél) – a mondatbeli szerep dönt.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "Az újságot olvasva elaludt. – A megírt levelet postára adta. – Szeretek úszni.",
+          "hu": "határozói igenév – befejezett melléknévi igenév – főnévi igenév"
+        }
+      ]
+    },
+    {
+      "title": "Mondatrészek",
+      "explanation": "Főrészek: alany (ki? mi?) és állítmány (mit csinál? milyen? mi?). Bővítmények: tárgy (kit? mit?), határozók (hol? mikor? hogyan? miért? stb.), jelzők. A jelzők fajtái: minőségjelző (milyen?), mennyiségjelző (hány? mennyi?), birtokos jelző (kinek a …?), értelmező jelző (a jelzett szó után, más szóval megnevezi újra).",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "A barátom kutyája egész éjjel ugatott.",
+          "hu": "alany: kutyája; birtokos jelző: barátom; időhatározó: egész éjjel; állítmány: ugatott"
+        }
+      ]
+    },
+    {
+      "title": "Hangtörvények",
+      "explanation": "Részleges hasonulás zöngésség szerint (dobta [dopta]), képzési hely szerint (színpad [szímpad]); teljes hasonulás (egészség [egésség]); összeolvadás (barátság [baráccság], látja [láttya]); mássalhangzó-rövidülés (jobbra [jobra]); mássalhangzó-kiesés (mondta [monta]). A magánhangzók között az illeszkedés (házban – kertben) és a hangrend a legfontosabb.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "egészség → [egésség]",
+          "hu": "teljes hasonulás, írásban szóelemző írásmód"
+        }
+      ]
+    },
+    {
+      "title": "Jelentéstani viszonyok",
+      "explanation": "Egyjelentésű szó; többjelentésű szó (a jelentések összefüggnek: toll); azonos alakú szavak (homonímák, a jelentések között nincs kapcsolat: ég – ég); rokon értelmű szavak (szinonimák: bátor – merész); ellentétes jelentésű szavak (antonimák); alakváltozatok (fel – föl); hasonló alakú szavak (paronímák: egyelőre – egyenlőre); hangutánzó és hangfestő szavak.",
+      "emeltOnly": true,
+      "examples": [
+        {
+          "en": "toll (madártoll – íróeszköz) vs. ég (égbolt – lángol)",
+          "hu": "poliszémia vs. homonímia: van-e jelentéskapcsolat?"
+        }
+      ]
+    }
+  ],
+  "commonMistakes": [
+    {
+      "wrong": "Az „olvasva” melléknévi igenév.",
+      "right": "Az „olvasva” határozói igenév (-va képző).",
+      "why": "A melléknévi igenév képzői -ó/-ő, -t/-tt, -andó/-endő; a -va/-ve a határozói igenév képzője."
+    },
+    {
+      "wrong": "A „barátom kutyája” szerkezetben a „barátom” az alany.",
+      "right": "A „barátom” birtokos jelző, az alany a „kutyája”.",
+      "why": "A birtokos jelző a birtokot bővíti (kinek a kutyája?); nem ő végzi a cselekvést."
+    },
+    {
+      "wrong": "A „dobta” [dopta] kiejtése teljes hasonulás.",
+      "right": "Részleges hasonulás zöngésség szerint.",
+      "why": "A b csak zöngésségében igazodik (p lesz), nem válik azonossá a t-vel."
+    },
+    {
+      "wrong": "A „toll” két jelentése azonos alakú szó.",
+      "right": "A „toll” többjelentésű szó.",
+      "why": "A két jelentés összefügg (régen madártollal írtak), ezért poliszémia, nem homonímia."
+    }
+  ],
+  "examTips": [
+    "Szófaj-meghatározásnál mindig nézd meg a szó szerepét a mondatban: ugyanaz az alak lehet ige és melléknévi igenév, főnév és melléknév.",
+    "Mondatrész-elemzésnél kezdd az állítmánnyal, majd keresd meg az alanyt (ki? mi? végzi), és csak utána a bővítményeket.",
+    "Szóbeli nyelvtan tételnél a meghatározás mellé mindig hozz példát, lehetőleg a tételhez adott szövegből."
+  ],
+  "practice": [
+    {
+      "id": "1",
+      "kind": "choice",
+      "prompt": "Mi a szóelemek helyes sorrendje?",
+      "options": [
+        {
+          "key": "A",
+          "text": "szótő + rag + jel + képző"
+        },
+        {
+          "key": "B",
+          "text": "szótő + képző + jel + rag"
+        },
+        {
+          "key": "C",
+          "text": "képző + szótő + rag + jel"
+        },
+        {
+          "key": "D",
+          "text": "szótő + jel + képző + rag"
+        }
+      ],
+      "answer": "B",
+      "category": "nyelvtani-fogalom",
+      "explanation": "Helyes: B. Például tanul + ó + k + nak: a képző a tőhöz kapcsolódik, utána a jel, végül a rag.",
+      "wrongOptions": {
+        "A": "A rag mindig a szó végén áll, utána nem következhet más toldalék.",
+        "C": "A képző nem előzheti meg a tövet (az igekötő nem képző).",
+        "D": "A képző a jel előtt áll (tanuló + k, nem tanul + k + ó)."
+      }
+    },
+    {
+      "id": "2",
+      "kind": "choice",
+      "prompt": "Milyen szófajú a „megírandó” szó ebben a mondatban: „A megírandó dolgozat témáját holnap kapjuk meg.”?",
+      "options": [
+        {
+          "key": "A",
+          "text": "főnévi igenév"
+        },
+        {
+          "key": "B",
+          "text": "folyamatos melléknévi igenév"
+        },
+        {
+          "key": "C",
+          "text": "határozói igenév"
+        },
+        {
+          "key": "D",
+          "text": "beálló melléknévi igenév"
+        }
+      ],
+      "answer": "D",
+      "category": "nyelvtani-fogalom",
+      "explanation": "Helyes: beálló melléknévi igenév. Az -andó/-endő képző jövőben elvégzendő cselekvést jelöl, és a főnév előtt jelzőként áll.",
+      "wrongOptions": {
+        "A": "A főnévi igenév képzője -ni (megírni).",
+        "B": "A folyamatos melléknévi igenév képzője -ó/-ő (megíró).",
+        "C": "A határozói igenév képzője -va/-ve (megírva)."
+      }
+    },
+    {
+      "id": "3",
+      "kind": "choice",
+      "prompt": "Milyen mondatrész az „egész éjjel” ebben a mondatban: „A kutya egész éjjel ugatott.”?",
+      "options": [
+        {
+          "key": "A",
+          "text": "tárgy"
+        },
+        {
+          "key": "B",
+          "text": "helyhatározó"
+        },
+        {
+          "key": "C",
+          "text": "időhatározó"
+        },
+        {
+          "key": "D",
+          "text": "mennyiségjelző"
+        }
+      ],
+      "answer": "C",
+      "category": "nyelvtani-fogalom",
+      "explanation": "Helyes: időhatározó. A mikor? meddig? kérdésre felel, és az állítmányt bővíti.",
+      "wrongOptions": {
+        "A": "A tárgy a mit? kérdésre felel, és -t raggal jelölt; az „ugat” itt tárgyatlan.",
+        "B": "A helyhatározó a hol? kérdésre felel.",
+        "D": "Az „egész” itt az „éjjel” szót bővíti, de az egész szerkezet az ige időhatározója."
+      }
+    },
+    {
+      "id": "4",
+      "kind": "choice",
+      "prompt": "Milyen hangtani jelenség érvényesül a „látja” [láttya] kiejtésében?",
+      "options": [
+        {
+          "key": "A",
+          "text": "összeolvadás"
+        },
+        {
+          "key": "B",
+          "text": "teljes hasonulás"
+        },
+        {
+          "key": "C",
+          "text": "részleges hasonulás zöngésség szerint"
+        },
+        {
+          "key": "D",
+          "text": "mássalhangzó-kiesés"
+        }
+      ],
+      "answer": "A",
+      "category": "nyelvtani-fogalom",
+      "explanation": "Helyes: összeolvadás. A t és a j egy harmadik, hosszú hanggá (tty) olvad össze.",
+      "wrongOptions": {
+        "B": "Teljes hasonulásnál az egyik hang azonossá válna a másikkal; itt új hang keletkezik.",
+        "C": "A zöngésség nem változik ebben a hangkapcsolatban.",
+        "D": "Egyik hang sem esik ki nyomtalanul."
+      }
+    },
+    {
+      "id": "5",
+      "kind": "choice",
+      "prompt": "Mi a különbség a többjelentésű és az azonos alakú szavak között?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Az azonos alakú szavakat másképp írjuk."
+        },
+        {
+          "key": "B",
+          "text": "Nincs különbség, a két fogalom ugyanazt jelenti."
+        },
+        {
+          "key": "C",
+          "text": "A többjelentésű szavak mindig igék, az azonos alakúak mindig főnevek."
+        },
+        {
+          "key": "D",
+          "text": "A többjelentésű szó jelentései összefüggnek, az azonos alakú szavak jelentései között nincs kapcsolat."
+        }
+      ],
+      "answer": "D",
+      "category": "nyelvtani-fogalom",
+      "explanation": "Helyes: D. A toll jelentései összefüggnek (poliszémia), az ég (égbolt – lángol) jelentései nem (homonímia).",
+      "wrongOptions": {
+        "A": "Az azonos alakú szavak hangalakja és írása is azonos.",
+        "B": "A két jelenség megkülönböztetése a jelentéskapcsolaton alapul.",
+        "C": "A szófajnak nincs köze a besoroláshoz."
+      }
+    },
+    {
+      "id": "6",
+      "kind": "text",
+      "prompt": "Milyen jelző a „két” ebben a szerkezetben: „két almát”? (egy szó)",
+      "answer": [
+        "mennyiségjelző"
+      ],
+      "category": "nyelvtani-fogalom",
+      "explanation": "Helyes válasz: mennyiségjelző. A számnév a hány? kérdésre felel, és a főnevet bővíti."
+    }
+  ],
+  "relatedCategories": [
+    "nyelvi-jelenseg-kifejtes",
+    "helyesiras"
+  ]
+}

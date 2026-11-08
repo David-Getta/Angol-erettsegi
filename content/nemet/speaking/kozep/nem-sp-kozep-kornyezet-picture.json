@@ -1,0 +1,89 @@
+{
+  "schemaVersion": 1,
+  "id": "nem-sp-kozep-kornyezet-picture",
+  "subject": "nemet",
+  "revision": 1,
+  "level": "kozep",
+  "source": "generated",
+  "topic": "kornyezet",
+  "title": "Etwas für die Umwelt tun",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "speaking",
+  "type": "picture",
+  "partNumber": 3,
+  "instructionsHu": "Nézd meg a két kép leírását. Írd le, mit látsz, hasonlítsd össze, mit tesznek az emberek a környezetért, mondd el a saját tapasztalatodat, majd válaszolj a vizsgáztató kérdéseire.",
+  "scenes": [
+    {
+      "description": "Eine Gruppe von Jugendlichen sammelt an einem sonnigen Samstagmorgen in einem Stadtpark Müll. Sie tragen Handschuhe und gelbe Westen und haben große Müllsäcke dabei. Ein Mädchen hebt eine Plastikflasche vom Boden auf, ein Junge zeigt lachend auf einen vollen Sack. Im Hintergrund sieht man einen kleinen See und Spaziergänger mit Hunden."
+    },
+    {
+      "description": "Eine Familie steht in ihrer Küche vor vier bunten Mülleimern. Der Vater wirft Papier in den blauen Eimer, die Mutter spült ein Glas aus, und ein kleiner Junge hält eine leere Dose in der Hand und schaut fragend auf die Eimer. Auf dem Tisch liegen Stoffbeutel und eine Kiste mit Gemüse vom Markt."
+    }
+  ],
+  "prompts": [
+    "Beschreiben Sie die beiden Bilder.",
+    "Vergleichen Sie: Was tun die Menschen auf den Bildern für die Umwelt?",
+    "Was tun Sie selbst und Ihre Familie für den Umweltschutz?"
+  ],
+  "followUpQuestions": [
+    "Würden Sie bei einer Müllsammelaktion mitmachen? Warum (nicht)?",
+    "Was kann man in der Schule für die Umwelt tun?",
+    "Wie kommen Sie normalerweise zur Schule?",
+    "Was ist für Sie das größte Umweltproblem in Ihrer Stadt?"
+  ],
+  "usefulPhrases": [
+    {
+      "en": "Auf dem ersten Bild sehe ich …",
+      "hu": "Az első képen … látok."
+    },
+    {
+      "en": "Im Hintergrund sieht man …",
+      "hu": "A háttérben … látható."
+    },
+    {
+      "en": "Müll sammeln / den Müll trennen",
+      "hu": "szemetet szed / szelektíven gyűjti a szemetet"
+    },
+    {
+      "en": "Auf beiden Bildern …",
+      "hu": "Mindkét képen …"
+    },
+    {
+      "en": "…, die Familie dagegen …",
+      "hu": "…, a család viszont …"
+    },
+    {
+      "en": "auf die Umwelt achten",
+      "hu": "figyel a környezetre"
+    },
+    {
+      "en": "Wir nehmen zum Einkaufen Stofftaschen mit.",
+      "hu": "Vászontáskát viszünk a vásárláshoz."
+    }
+  ],
+  "speakingSeconds": 300,
+  "prepSeconds": 30,
+  "sampleAnswer": {
+    "turns": [
+      {
+        "speaker": "candidate",
+        "text": "Auf dem ersten Bild sehe ich eine Gruppe von Jugendlichen in einem Park. Sie tragen gelbe Westen und Handschuhe und sammeln Müll. Ein Mädchen hebt gerade eine Plastikflasche auf. Das Wetter ist schön, und im Hintergrund gehen Leute mit ihren Hunden spazieren. Auf dem zweiten Bild ist eine Familie in der Küche. Die Familie trennt den Müll: Der Vater wirft Papier in den blauen Eimer, und der kleine Junge weiß nicht genau, wohin die Dose gehört. Auf beiden Bildern tun die Menschen etwas für die Umwelt. Die Jugendlichen machen eine gemeinsame Aktion draußen, die Familie dagegen achtet im Alltag zu Hause auf die Umwelt. Ich finde beides wichtig, aber den Müll trennen kann jeder jeden Tag. Bei uns zu Hause trennen wir auch den Müll, und wir nehmen zum Einkaufen immer Stofftaschen mit."
+      },
+      {
+        "speaker": "examiner",
+        "text": "Würden Sie bei einer Müllsammelaktion mitmachen? Warum (nicht)?"
+      },
+      {
+        "speaker": "candidate",
+        "text": "Ja, auf jeden Fall. Letztes Jahr hat unsere Schule eine Aktion am Ufer der Theiß organisiert, und ich war dabei. Es war anstrengend, aber auch lustig, und am Ende waren wir stolz auf die vielen vollen Säcke."
+      }
+    ],
+    "notes": [
+      "Feladat teljesítése: a vizsgázó mindkét képet leírja (emberek, tevékenység, háttér), összehasonlítja őket (közös akció a szabadban ↔ mindennapi szokás otthon), véleményt mond, saját példát hoz, és a kiegészítő kérdésre is élménnyel válaszol.",
+      "Szókincs: a környezetvédelem alapszavai pontosak (Müll sammeln, den Müll trennen, Mülleimer, Stofftaschen, auf die Umwelt achten).",
+      "Nyelvhelyesség: a képleírás jelen időben, a saját élmény Perfektben szól; a „wohin die Dose gehört” függő kérdésben az ige a végén áll.",
+      "Érdemes megtanulni: „Auf beiden Bildern …”, „…, die Familie dagegen …”, „Ich finde beides wichtig, aber …”, „Es war anstrengend, aber auch lustig”."
+    ]
+  }
+}

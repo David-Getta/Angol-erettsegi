@@ -1,0 +1,127 @@
+{
+  "schemaVersion": 1,
+  "id": "nem-sp-kozep-eletmod-situation",
+  "subject": "nemet",
+  "revision": 1,
+  "level": "kozep",
+  "source": "generated",
+  "topic": "eletmod",
+  "title": "In der Apotheke",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "speaking",
+  "type": "situation",
+  "partNumber": 2,
+  "instructionsHu": "Diákcserén vagy Németországban, és két napja fáj a torkod. Menj be egy gyógyszertárba, mondd el a panaszaidat, és kérj tanácsot. Minden pontot teljesíts.",
+  "situation": {
+    "context": "Sie sind mit einem Schüleraustausch in Deutschland und wohnen bei einer Gastfamilie. Seit zwei Tagen haben Sie Halsschmerzen und fühlen sich müde. Sie gehen in eine Apotheke.",
+    "candidateRole": "Sie sind ein Austauschschüler / eine Austauschschülerin, dem / der es nicht gut geht.",
+    "examinerRole": "Der Prüfer / Die Prüferin ist der Apotheker / die Apothekerin.",
+    "goals": [
+      "Beschreiben Sie Ihre Beschwerden.",
+      "Bitten Sie um ein Medikament und fragen Sie, wie Sie es nehmen sollen.",
+      "Fragen Sie, ob Sie am Wochenende bei einem Fußballturnier mitspielen können.",
+      "Fragen Sie nach dem Preis und bezahlen Sie."
+    ],
+    "examinerOpening": "Guten Tag! Wie kann ich Ihnen helfen?"
+  },
+  "followUpQuestions": [
+    "Haben Sie auch Fieber?",
+    "Haben Sie Allergien, oder nehmen Sie andere Medikamente?",
+    "Das macht acht Euro neunzig. Möchten Sie bar oder mit Karte bezahlen?"
+  ],
+  "usefulPhrases": [
+    {
+      "en": "Seit zwei Tagen habe ich Halsschmerzen.",
+      "hu": "Két napja fáj a torkom."
+    },
+    {
+      "en": "Ich fühle mich die ganze Zeit müde.",
+      "hu": "Egész idő alatt fáradtnak érzem magam."
+    },
+    {
+      "en": "Ich habe Schnupfen.",
+      "hu": "Náthás vagyok."
+    },
+    {
+      "en": "Ich habe Fieber gemessen.",
+      "hu": "Megmértem a lázamat."
+    },
+    {
+      "en": "Können Sie mir etwas gegen … geben?",
+      "hu": "Tudna adni valamit … ellen?"
+    },
+    {
+      "en": "Wie oft muss ich das nehmen?",
+      "hu": "Milyen gyakran kell bevennem?"
+    },
+    {
+      "en": "Ist das ein Problem?",
+      "hu": "Gond ez?"
+    },
+    {
+      "en": "Mit Karte, bitte.",
+      "hu": "Kártyával, kérem."
+    }
+  ],
+  "speakingSeconds": 240,
+  "prepSeconds": 30,
+  "sampleAnswer": {
+    "turns": [
+      {
+        "speaker": "examiner",
+        "text": "Guten Tag! Wie kann ich Ihnen helfen?"
+      },
+      {
+        "speaker": "candidate",
+        "text": "Guten Tag! Seit zwei Tagen habe ich starke Halsschmerzen, und ich bin die ganze Zeit müde. Heute Morgen hatte ich auch ein bisschen Schnupfen."
+      },
+      {
+        "speaker": "examiner",
+        "text": "Haben Sie auch Fieber?"
+      },
+      {
+        "speaker": "candidate",
+        "text": "Ich glaube nicht. Gestern Abend habe ich bei meiner Gastfamilie Fieber gemessen, es waren nur 37,2 Grad."
+      },
+      {
+        "speaker": "examiner",
+        "text": "Dann ist es wahrscheinlich eine leichte Erkältung. Haben Sie Allergien, oder nehmen Sie andere Medikamente?"
+      },
+      {
+        "speaker": "candidate",
+        "text": "Nein, ich habe keine Allergien und nehme auch keine Medikamente. Können Sie mir bitte etwas gegen die Halsschmerzen geben? Und wie oft muss ich das nehmen?"
+      },
+      {
+        "speaker": "examiner",
+        "text": "Ich gebe Ihnen diese Lutschtabletten. Nehmen Sie alle drei bis vier Stunden eine, aber nicht mehr als sechs am Tag. Und trinken Sie viel Tee."
+      },
+      {
+        "speaker": "candidate",
+        "text": "Alles klar, vielen Dank. Am Samstag hat meine Austauschschule ein Fußballturnier, und ich möchte gern mitspielen. Ist das ein Problem?"
+      },
+      {
+        "speaker": "examiner",
+        "text": "Wenn Sie kein Fieber bekommen und sich besser fühlen, können Sie mitspielen. Aber übertreiben Sie es nicht."
+      },
+      {
+        "speaker": "candidate",
+        "text": "Gut, dann ruhe ich mich bis Samstag aus. Was kosten die Tabletten?"
+      },
+      {
+        "speaker": "examiner",
+        "text": "Das macht acht Euro neunzig. Möchten Sie bar oder mit Karte bezahlen?"
+      },
+      {
+        "speaker": "candidate",
+        "text": "Mit Karte, bitte. Vielen Dank und auf Wiedersehen!"
+      }
+    ],
+    "notes": [
+      "Kommunikációs cél: a vizsgázó pontosan leírja a tüneteket, gyógyszert kér és rákérdez az adagolásra, megkérdezi, játszhat-e a tornán, végül megkérdezi az árat és fizet – minden szempont teljesül.",
+      "Szókincs: a betegség és a gyógyszertár szókincse pontos (Halsschmerzen, Schnupfen, Fieber messen, Allergien, Medikamente nehmen, Lutschtabletten), a válaszok természetesen reagálnak a gyógyszerész kérdéseire.",
+      "Nyelvhelyesség: a „Seit zwei Tagen habe ich …” szerkezet jelen idővel helyes (a magyar „két napja fáj” is jelen idő), a visszaható ige (sich ausruhen) és az udvarias kérés (Können Sie mir bitte … geben?) hibátlan.",
+      "Érdemes megtanulni: „Seit zwei Tagen habe ich …”, „Können Sie mir bitte etwas gegen … geben?”, „Wie oft muss ich das nehmen?”, „Ist das ein Problem?”."
+    ]
+  }
+}

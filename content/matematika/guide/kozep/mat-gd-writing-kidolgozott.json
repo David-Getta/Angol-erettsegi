@@ -1,0 +1,130 @@
+{
+  "schemaVersion": 1,
+  "id": "mat-gd-writing-kidolgozott",
+  "subject": "matematika",
+  "revision": 1,
+  "level": "kozep",
+  "source": "generated",
+  "topic": "utmutato",
+  "title": "Kidolgozott feladat (II/A jellegű)",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "guide",
+  "type": "writing",
+  "target": "kidolgozott",
+  "summaryHu": "A kidolgozott feladat egy témakör 2–4 részkérdéses, indoklással megoldandó feladata (középszinten a II/A, kb. 12 pont; emelt szinten a II. rész egyik feladata, 16 pont). A javítás részpontokban értékeli a helyes eredményt, a gondolatmenetet, a számolás pontosságát és a szöveges választ mértékegységgel.",
+  "steps": [
+    {
+      "title": "Az adatok és a kérdések áttekintése",
+      "explanation": "Írd ki az adatokat jelöléssel (a = 7 cm, …), nézd meg, mit kérdez az a), b), c), és figyeld meg, épülnek-e egymásra.",
+      "tips": [
+        "Ha a b) az a) eredményét használja, az a)-t ellenőrizd különösen gondosan.",
+        "A kért kerekítést jelöld meg a feladatszövegben."
+      ]
+    },
+    {
+      "title": "A megfelelő összefüggés kiválasztása",
+      "explanation": "Döntsd el, melyik tétel vagy képlet vezet célhoz (pl. három oldalból szög: koszinusztétel; zérushely: megoldóképlet), és írd le a nevét és az általános alakját.",
+      "tips": [
+        "„A koszinusztétel szerint c² = a² + b² − 2ab · cos γ.”",
+        "Ha többféle út van, a rövidebbet válaszd, a másikat ellenőrzésre használd."
+      ]
+    },
+    {
+      "title": "Számolás lépésenként",
+      "explanation": "Helyettesíts be, írd le a köztes eredményeket (pontos vagy kellően pontos alakban), és csak a végén kerekíts.",
+      "tips": [
+        "cos γ = 2/7 – ezt vidd tovább, ne 0,3-at.",
+        "Számológépes lépésnél írd le a beírt kifejezést."
+      ]
+    },
+    {
+      "title": "Ellenőrzés és válasz",
+      "explanation": "Ellenőrizz egy másik módszerrel vagy visszahelyettesítéssel, majd írj szöveges választ mértékegységgel minden részkérdés végén.",
+      "tips": [
+        "Háromszögnél: a legnagyobb oldallal szemben van a legnagyobb szög?",
+        "Egyenlőtlenségnél: egy próbaszám a megoldáshalmazból és egy kívülről."
+      ]
+    }
+  ],
+  "phrases": [
+    {
+      "group": "Bevezetés",
+      "en": "Legyen …",
+      "hu": "Jelölés bevezetése (pl. a háromszög oldalai, a keresett szög)."
+    },
+    {
+      "group": "Indoklás",
+      "en": "A … tétel szerint …",
+      "hu": "A felhasznált tétel megnevezése."
+    },
+    {
+      "group": "Indoklás",
+      "en": "Mivel cos γ > 0, a γ hegyesszög.",
+      "hu": "Előjelből következtetés a szög fajtájára."
+    },
+    {
+      "group": "Indoklás",
+      "en": "A legnagyobb szög a legnagyobb oldallal szemben van.",
+      "hu": "A keresett szög kiválasztásának indoklása."
+    },
+    {
+      "group": "Függvény",
+      "en": "Teljes négyzetté alakítva: f(x) = (x − u)² + v.",
+      "hu": "Szélsőérték és értékkészlet leolvasása."
+    },
+    {
+      "group": "Függvény",
+      "en": "Mivel a > 0, a parabola felfelé nyílik.",
+      "hu": "A szélsőérték fajtájának indoklása."
+    },
+    {
+      "group": "Ellenőrzés",
+      "en": "Ellenőrzés a … képlettel: …",
+      "hu": "Második módszer az eredmény igazolására."
+    },
+    {
+      "group": "Válasz",
+      "en": "A háromszög legnagyobb szöge kb. 73,4°.",
+      "hu": "Szöveges válasz mértékegységgel, a kért pontossággal."
+    }
+  ],
+  "mistakes": [
+    {
+      "wrong": "A szöget a legkisebb oldallal szemben számolom ki, pedig a legnagyobbat kérdezik.",
+      "right": "A legnagyobb oldallal szemközti szöget számolom.",
+      "why": "Háromszögben a nagyobb oldallal szemben nagyobb szög van; ezt egy mondatban indokolni is kell."
+    },
+    {
+      "wrong": "A részeredményt 0,3-ra kerekítem, és azzal számolok tovább.",
+      "right": "A pontos 2/7-et (vagy a számológép teljes értékét) viszem tovább.",
+      "why": "A korai kerekítés a végeredményt elrontja, és a számolási pont elvész."
+    },
+    {
+      "wrong": "Az egyenlőtlenség megoldását a gyökökből „x > 1 és x > 5” alakban adom meg.",
+      "right": "A parabola állásából: 1 < x < 5.",
+      "why": "Másodfokú egyenlőtlenségnél a parabola helyzete dönti el, a gyökök között vagy kívül van-e a megoldás."
+    }
+  ],
+  "checklist": [
+    "Minden részkérdésnél megneveztem a felhasznált tételt vagy képletet?",
+    "A köztes eredményeket pontosan vittem tovább, és csak a végén kerekítettem a kért pontosságra?",
+    "Ellenőriztem az eredményt (második módszer, visszahelyettesítés, próbaszám)?",
+    "Minden részkérdés szöveges válasszal és mértékegységgel zárul?"
+  ],
+  "timing": "Középszinten egy II/A feladatra kb. 20 perc jut (a rubrika szerint), emelt szinten egy II. részbeli feladatra kb. 35 perc. Ha 10 perc után sem látod az utat, lépj tovább, és a végén térj vissza.",
+  "example": {
+    "title": "Minta: egy részkérdés teljes megoldása",
+    "text": "a) A háromszögben a legnagyobb szög a legnagyobb, c = 9 cm-es oldallal szemben van (γ). A koszinusztétel szerint cos γ = (a² + b² − c²)/(2ab) = (49 + 64 − 81)/112 = 2/7. Mivel cos γ > 0, γ hegyesszög: γ ≈ 73,4°. A háromszög legnagyobb szöge kb. 73,4°.",
+    "notes": [
+      "Indokolja, miért a γ a keresett szög.",
+      "Megnevezi a tételt és a képletet.",
+      "Pontos részeredménnyel (2/7) számol, és a végén kerekít.",
+      "Szöveges válasz mértékegységgel."
+    ]
+  },
+  "levelNotes": {
+    "kozep": "Középszinten a II/A feladatai (13–15.) kötelezők, egyenként kb. 12 pontosak, 2–3 részkérdéssel; jellemző témák: egyenletek, függvények, trigonometria, koordinátageometria, statisztika.",
+    "emelt": "Emelt szinten a kidolgozott feladat a II. rész egyik (16 pontos) feladata 3–4 részkérdéssel, gyakran paraméterrel, koordinátageometriával vagy függvényvizsgálattal; az indoklás és az értelmezési tartomány vizsgálata elvárt."
+  }
+}

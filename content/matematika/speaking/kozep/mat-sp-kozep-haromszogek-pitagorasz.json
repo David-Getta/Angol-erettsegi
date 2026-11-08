@@ -1,0 +1,92 @@
+{
+  "schemaVersion": 1,
+  "id": "mat-sp-kozep-haromszogek-pitagorasz",
+  "subject": "matematika",
+  "revision": 1,
+  "level": "kozep",
+  "source": "generated",
+  "topic": "sikgeometria",
+  "title": "Tétel: háromszögek – Pitagorasz-tétel, háromszög-egyenlőtlenség, súlyvonal",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "speaking",
+  "type": "tetel",
+  "partNumber": 1,
+  "instructionsHu": "Középszintű szóbeli tétel (30 perc felkészülés, kb. 15 perc felelet). Először válaszolj a három elméleti kérdésre (definíció, tétel kimondása a feltételekkel), majd oldd meg és magyarázd el a három feladatot: mondd ki, melyik összefüggést használod és miért, és fogalmazd meg a választ.",
+  "prompts": [
+    "1. elméleti kérdés: Mondja ki a Pitagorasz-tételt és a megfordítását!",
+    "2. elméleti kérdés: Mondja ki a háromszög-egyenlőtlenséget!",
+    "3. elméleti kérdés: Mi a háromszög súlyvonala és súlypontja? Milyen arányban osztja a súlypont a súlyvonalakat?",
+    "1. feladat: derékszögű háromszög átfogója és területe",
+    "2. feladat: létezik-e háromszög adott oldalakkal",
+    "3. feladat: egyenlő szárú háromszög magassága, területe és súlypontja"
+  ],
+  "followUpQuestions": [
+    "Az első feladat háromszögénél hol van a köré írt kör középpontja?"
+  ],
+  "usefulPhrases": [
+    {
+      "en": "a² + b² = c²",
+      "hu": "Pitagorasz-tétel: c az átfogó, a derékszöggel szemközti oldal."
+    },
+    {
+      "en": "a + b > c, a + c > b, b + c > a",
+      "hu": "Háromszög-egyenlőtlenség: elég a két rövidebb oldal összegét a leghosszabbal összevetni."
+    },
+    {
+      "en": "S a súlyvonalat 2 : 1 arányban osztja",
+      "hu": "A súlypont a súlyvonal csúcstól távolabbi harmadoló pontja."
+    },
+    {
+      "en": "T = a·mₐ/2",
+      "hu": "Háromszög területe: oldal és a hozzá tartozó magasság szorzatának fele."
+    }
+  ],
+  "sources": [
+    {
+      "title": "1. feladat",
+      "text": "Egy derékszögű háromszög befogói 9 cm és 12 cm. Mekkora az átfogója és a területe?"
+    },
+    {
+      "title": "2. feladat",
+      "text": "Létezik-e olyan háromszög, amelynek oldalai 3 cm, 5 cm és 9 cm hosszúak? Válaszát indokolja!"
+    },
+    {
+      "title": "3. feladat",
+      "text": "Egy egyenlő szárú háromszög alapja 10 cm, szárai 13 cm hosszúak. Mekkora az alaphoz tartozó magassága és a területe? Milyen messze van a súlypontja az alaptól?"
+    }
+  ],
+  "keyPoints": [
+    "Pitagorasz-tétel: derékszögű háromszögben a befogók négyzetösszege egyenlő az átfogó négyzetével (a² + b² = c²).",
+    "Megfordítás: ha egy háromszögben a² + b² = c², akkor a háromszög derékszögű, a derékszög a c-vel szemben van.",
+    "Háromszög-egyenlőtlenség: bármely két oldal összege nagyobb a harmadiknál.",
+    "Súlyvonal: csúcsot a szemközti oldal felezőpontjával összekötő szakasz; a három súlyvonal egy pontban, a súlypontban metszi egymást.",
+    "A súlypont a súlyvonalakat 2 : 1 arányban osztja, a nagyobbik rész a csúcs felé esik.",
+    "1. feladat: c = 15 cm, T = 54 cm².",
+    "2. feladat: nem létezik, mert 3 + 5 = 8 < 9.",
+    "3. feladat: m = 12 cm, T = 60 cm², a súlypont az alaptól 4 cm-re van."
+  ],
+  "speakingSeconds": 900,
+  "prepSeconds": 1800,
+  "sampleAnswer": {
+    "turns": [
+      {
+        "speaker": "candidate",
+        "text": "Az első elméleti kérdés a Pitagorasz-tétel: minden derékszögű háromszögben a két befogó hosszának négyzetösszege egyenlő az átfogó hosszának négyzetével, vagyis ha a és b a befogók, c az átfogó, akkor a² + b² = c². A tétel megfordítása is igaz: ha egy háromszög oldalaira a² + b² = c² teljesül, akkor a háromszög derékszögű, és a derékszög a c oldallal szemben van.\nA második kérdés a háromszög-egyenlőtlenség: bármely háromszögben bármely két oldal hosszának összege nagyobb a harmadik oldal hosszánál. Fordítva: ha három pozitív számra ez mindhárom esetben teljesül, akkor van ilyen oldalú háromszög.\nA harmadik kérdés: a háromszög súlyvonala az a szakasz, amely egy csúcsot a szemközti oldal felezőpontjával köt össze. A három súlyvonal egy pontban metszi egymást, ez a súlypont. A súlypont mindegyik súlyvonalat 2 : 1 arányban osztja, a hosszabb rész a csúcs felé esik, tehát a súlypont a súlyvonal oldalhoz közelebbi harmadoló pontja.\n\nAz első feladatban a háromszög derékszögű, ezért alkalmazhatom a Pitagorasz-tételt: c² = 9² + 12² = 81 + 144 = 225, így c = 15 cm. Derékszögű háromszögben a két befogó egymásra merőleges, ezért az egyik a másikhoz tartozó magasság: T = 9·12/2 = 54 cm². Az átfogó 15 cm, a terület 54 cm².\n\nA második feladatban a háromszög-egyenlőtlenséget kell ellenőrizni. A két rövidebb oldal összege 3 + 5 = 8 cm, ami kisebb, mint a leghosszabb oldal, 9 cm. Ezért ilyen háromszög nem létezik: a 3 és 5 cm-es szakasz nem ér össze a 9 cm-es oldal két végpontja fölött.\n\nA harmadik feladatban az egyenlő szárú háromszög alaphoz tartozó magassága felezi az alapot, így egy derékszögű háromszöget kapunk, amelynek átfogója a 13 cm-es szár, egyik befogója az alap fele, 5 cm. Pitagorasz-tétellel m² = 13² − 5² = 169 − 25 = 144, tehát m = 12 cm. A terület T = 10·12/2 = 60 cm². Mivel ez a magasság az alap felezőpontjába fut, egyben súlyvonal is. A súlypont a súlyvonalat 2 : 1 arányban osztja a csúcs felől, így az alaptól a súlyvonal harmadára, 12 : 3 = 4 cm-re van. Válasz: a magasság 12 cm, a terület 60 cm², a súlypont az alaptól 4 cm-re van."
+      },
+      {
+        "speaker": "examiner",
+        "text": "Az első feladat háromszögénél hol van a köré írt kör középpontja?"
+      },
+      {
+        "speaker": "candidate",
+        "text": "Thalész tétele miatt derékszögű háromszögben a köré írt kör középpontja az átfogó felezőpontja, így a sugár az átfogó fele, 7,5 cm."
+      }
+    ],
+    "notes": [
+      "Elmélet: a Pitagorasz-tétel a feltétellel (derékszögű háromszög) és a megfordításával, a háromszög-egyenlőtlenség és a súlypont 2 : 1 aránya pontosan szerepel – ezek a leggyakoribb elméleti kérdések ebben a tételben.",
+      "Feladatok: minden feladatban megnevezi a használt tételt, a 3. feladatban megindokolja, miért súlyvonal is a magasság (egyenlő szárú háromszög), és azt is, melyik irányból kell a harmadot mérni.",
+      "Kommunikáció: a válaszok teljes mondatok mértékegységgel; a vizsgáztató kérdésére Thalész tételével, pontos szaknyelvvel felel."
+    ]
+  }
+}

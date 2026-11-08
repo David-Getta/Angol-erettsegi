@@ -1,0 +1,273 @@
+{
+  "schemaVersion": 1,
+  "id": "fol-gr-szovegertelmezes",
+  "subject": "foldrajz",
+  "revision": 1,
+  "level": "kozep",
+  "source": "generated",
+  "topic": "nyelvtan",
+  "title": "Szöveg és kérdés értelmezése",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "grammar",
+  "type": "lesson",
+  "category": "szovegertelmezes",
+  "summaryHu": "Sok pont azon vész el, hogy a válasz nem arra felel, amit a kérdés kér: a „magyarázza meg” kérdésre csak egy név érkezik, a „hasonlítsa össze” kérdésre csak egy dolog leírása, vagy a „szöveg alapján” kérdésre saját, a szövegben nem szereplő tudás. Ez a lecke a műveleti igék és a forrásalapú kérdések kezelését tanítja. Mindegyik írásbeli feladattípusban és a szóbeli tétel forrásainál is számít.",
+  "rules": [
+    {
+      "title": "A műveleti igék jelentése",
+      "explanation": "A kérdés igéje megmondja, milyen válasz kell. Nevezze meg: egy szó, név vagy fogalom. Jellemezze / mutassa be: több tulajdonság összefüggő mondatokban. Magyarázza meg / indokolja: ok–okozati összefüggés („mert”, „ezért”). Hasonlítsa össze: mindkét elem azonos szempontok szerint, hasonlóság és különbség. Értékelje: előnyök és hátrányok, saját, indokolt állásfoglalás.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "„Nevezze meg a szelet!” → főn",
+          "hu": "Egy szó elég."
+        },
+        {
+          "en": "„Magyarázza meg, miért száraz!” → mert a leszálló levegő melegszik, relatív páratartalma csökken …",
+          "hu": "Ok–okozati mondat kell."
+        }
+      ]
+    },
+    {
+      "title": "Forrás vagy saját tudás?",
+      "explanation": "Ha a kérdés „a szöveg alapján” vagy „a forrás szerint” szól, a választ a forrásból kell venni (gyakran szó szerint idézhető). Ha „ismeretei alapján” kérdez, saját tudásodat várják. Ha mindkettő („a forrás és ismeretei alapján”), a forrás adatát egészítsd ki magyarázattal.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "„A szöveg szerint mi okozta a vízminőség romlását?” → a szövegben megnevezett műtrágya és szennyvíz"
+        }
+      ]
+    },
+    {
+      "title": "A pontszám mint útmutató",
+      "explanation": "A zárójelben megadott pontszám jelzi, hány elemet várnak: egy 3 pontos „mutassa be” kérdésre három különálló, helyes állítás kell. Ha a kérdés „két példát” kér, pontosan kettőt adj – a harmadik nem ér pontot, a hibás viszont ronthat.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "„Nevezzen meg két következményt! (2 pont)” → két különböző következmény, egy-egy mondatban"
+        }
+      ]
+    },
+    {
+      "title": "Tagadó és összetett kérdések",
+      "explanation": "A „melyik NEM …”, „melyik állítás hamis” típusú kérdéseknél húzd alá a tagadást. Összetett kérdésnél („Hol fekszik, és mi a jelentősége?”) válaszolj minden részkérdésre külön.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "„Melyik ország NEM tagja az EU-nak?” → a kakukktojást kell kiválasztani"
+        }
+      ]
+    },
+    {
+      "title": "Forráskritika",
+      "explanation": "Emelt szinten értékelni is kell a forrást: ki készítette, mikor, milyen céllal, mennyire pontosak és frissek az adatok, egyezik-e más forrásokkal. Két forrás ellentmondását nem kell feloldani, de észre kell venni és meg kell nevezni.",
+      "emeltOnly": true,
+      "examples": [
+        {
+          "en": "Egy 2005-ös adatsor alapján nem lehet a mai helyzetről biztos állítást tenni."
+        }
+      ]
+    }
+  ],
+  "commonMistakes": [
+    {
+      "wrong": "Kérdés: „Magyarázza meg, miért sok a csapadék a hegység szél felőli oldalán!” – Válasz: „Domborzati csapadék.”",
+      "right": "„A hegység felemeli a levegőt, amely lehűl, telítetté válik, a vízgőz kicsapódik, ezért sok a csapadék.”",
+      "why": "A magyarázó kérdésre ok–okozati láncot kell adni; a fogalom megnevezése csak a válasz egy eleme."
+    },
+    {
+      "wrong": "Kérdés: „Hasonlítsa össze a két állomás éghajlatát!” – Válasz csak az A állomásról szól.",
+      "right": "Mindkét állomást azonos szempontok (hőingás, csapadék, típus) szerint kell jellemezni, és kimondani a különbséget.",
+      "why": "Az összehasonlítás lényege a viszonyítás; egyetlen elem leírása legfeljebb részpontot ér."
+    },
+    {
+      "wrong": "Kérdés: „A szöveg szerint mi a halászat összeomlásának oka?” – Válasz a saját tudásból, a szövegben nem szereplő okkal.",
+      "right": "A szövegben megnevezett okot kell megadni.",
+      "why": "Forrásalapú kérdésnél a forrás tartalmát értékelik; a helyes, de a forrásban nem szereplő válasz nem biztos, hogy pontot ér."
+    },
+    {
+      "wrong": "Kérdés: „Nevezzen meg két példát!” – Válasz: négy példa, köztük egy hibás.",
+      "right": "Pontosan két, biztosan helyes példa.",
+      "why": "A javítók általában az első kettőt értékelik, a hibás elem pontot vehet el."
+    }
+  ],
+  "examTips": [
+    "Olvasd el a kérdést kétszer: egyszer a feladat megértéséhez, egyszer az igék és a pontszám aláhúzásához.",
+    "A szövegértelmezési rövid feladatokban a válasz gyakran szó szerint megtalálható a szövegben – keresd meg és idézd pontosan.",
+    "A kifejtős feladat végén ellenőrizd: minden részkérdésre (a, b, c …) válaszoltál-e, és a műveleti igének megfelelő formában."
+  ],
+  "practice": [
+    {
+      "id": "1",
+      "kind": "choice",
+      "prompt": "Mit vár a „Magyarázza meg!” műveleti ige?",
+      "options": [
+        {
+          "key": "A",
+          "text": "egy térkép megrajzolását"
+        },
+        {
+          "key": "B",
+          "text": "egyetlen szakszó megnevezését"
+        },
+        {
+          "key": "C",
+          "text": "egy felsorolást indoklás nélkül"
+        },
+        {
+          "key": "D",
+          "text": "ok–okozati összefüggés leírását"
+        }
+      ],
+      "answer": "D",
+      "category": "szovegertelmezes",
+      "explanation": "Helyes: D. A magyarázatban a jelenség okát és a folyamat lépéseit kell leírni („mert …, ezért …”).",
+      "wrongOptions": {
+        "A": "A rajzot külön kérik („ábrázolja”, „rajzolja be”).",
+        "B": "Egyetlen szó a „nevezze meg” kérdésre elég, a magyarázatra nem.",
+        "C": "Az indoklás nélküli felsorolás nem mutat összefüggést."
+      }
+    },
+    {
+      "id": "2",
+      "kind": "choice",
+      "prompt": "Egy kérdés: „Nevezzen meg két következményt! (2 pont)”. Melyik válasz a legjobb?",
+      "options": [
+        {
+          "key": "A",
+          "text": "a jelenség okainak felsorolása"
+        },
+        {
+          "key": "B",
+          "text": "öt következmény, hátha van köztük jó"
+        },
+        {
+          "key": "C",
+          "text": "egy következmény részletesen kifejtve"
+        },
+        {
+          "key": "D",
+          "text": "két különböző, biztosan helyes következmény"
+        }
+      ],
+      "answer": "D",
+      "category": "szovegertelmezes",
+      "explanation": "Helyes: D. A pontszám és a kérdés két elemet vár; a többlet nem ér pontot, a hibás elem viszont ronthat.",
+      "wrongOptions": {
+        "A": "Az okok nem következmények – a kérdés mást kér.",
+        "B": "A javító nem válogat helyetted; a hibás elemek pontot vehetnek el.",
+        "C": "Egy következmény csak 1 pontot érhet, akármilyen részletes."
+      }
+    },
+    {
+      "id": "3",
+      "kind": "choice",
+      "prompt": "Mit jelent, ha a kérdés így szól: „A forrás alapján …”?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Csak számot lehet válaszként írni."
+        },
+        {
+          "key": "B",
+          "text": "Bármilyen helyes saját ismeret elfogadható, akkor is, ha nincs a forrásban."
+        },
+        {
+          "key": "C",
+          "text": "A forrást nem kell elolvasni."
+        },
+        {
+          "key": "D",
+          "text": "A választ a forrás tartalmából kell megadni."
+        }
+      ],
+      "answer": "D",
+      "category": "szovegertelmezes",
+      "explanation": "Helyes: D. A forrásalapú kérdés azt méri, megtalálod és értelmezed-e a forrás információját.",
+      "wrongOptions": {
+        "A": "A válasz lehet szó, mondat vagy szám is, a kérdéstől függően.",
+        "B": "A forrásban nem szereplő válasz forrásalapú kérdésnél könnyen pont nélkül marad.",
+        "C": "A forrás nélkül a kérdés nem válaszolható meg biztosan."
+      }
+    },
+    {
+      "id": "4",
+      "kind": "choice",
+      "prompt": "Melyik a jó összehasonlító mondat?",
+      "options": [
+        {
+          "key": "A",
+          "text": "„Az A állomás hőingása 10 °C, a B állomásé 35 °C, tehát B-n 25 °C-kal nagyobb.”"
+        },
+        {
+          "key": "B",
+          "text": "„Az A állomáson enyhe a tél.”"
+        },
+        {
+          "key": "C",
+          "text": "„B állomás hideg.”"
+        },
+        {
+          "key": "D",
+          "text": "„Mindkettő az északi félgömbön van, és ennyi.”"
+        }
+      ],
+      "answer": "A",
+      "category": "szovegertelmezes",
+      "explanation": "Helyes: A. Mindkét elemet azonos szempont (hőingás) szerint nevezi meg, és számszerűsíti a különbséget.",
+      "wrongOptions": {
+        "B": "Csak az egyik állomásról szól, nincs viszonyítás.",
+        "C": "Egy elem, pontatlan jellemzéssel, összehasonlítás nélkül.",
+        "D": "Egy hasonlóság még nem összehasonlítás; a lényeges különbségeket is meg kell nevezni."
+      }
+    },
+    {
+      "id": "5",
+      "kind": "text",
+      "prompt": "Melyik műveleti ige kér előnyöket és hátrányokat, valamint indokolt állásfoglalást? (egy szó, felszólító módban)",
+      "answer": [
+        "Értékelje",
+        "Értékeld"
+      ],
+      "category": "szovegertelmezes",
+      "explanation": "Értékelje: az értékelés a pozitív és a negatív oldalt is mérlegeli, és indokolt véleménnyel zárul.",
+      "maxWords": 1
+    },
+    {
+      "id": "6",
+      "kind": "choice",
+      "prompt": "„Melyik ország NEM tagja az Európai Uniónak?” Mire kell figyelni?",
+      "options": [
+        {
+          "key": "A",
+          "text": "A tagadásra: a kakukktojást kell kiválasztani."
+        },
+        {
+          "key": "B",
+          "text": "Arra, hogy a legnagyobb országot válasszuk."
+        },
+        {
+          "key": "C",
+          "text": "Arra, hogy minden tagállamot felsoroljunk."
+        },
+        {
+          "key": "D",
+          "text": "Semmire, a NEM szó nem számít."
+        }
+      ],
+      "answer": "A",
+      "category": "szovegertelmezes",
+      "explanation": "Helyes: A. A tagadó kérdésnél a felsoroltak közül az egyetlen nem odaillőt kell megtalálni; érdemes a NEM szót aláhúzni.",
+      "wrongOptions": {
+        "B": "A méretnek nincs köze a kérdéshez.",
+        "C": "A felsorolás nem kérdés, felesleges munka.",
+        "D": "A tagadás megfordítja a kérdést – ha nem veszed észre, biztosan rossz választ adsz."
+      }
+    }
+  ],
+  "relatedCategories": [
+    "abra-diagram",
+    "fogalomhasznalat"
+  ]
+}

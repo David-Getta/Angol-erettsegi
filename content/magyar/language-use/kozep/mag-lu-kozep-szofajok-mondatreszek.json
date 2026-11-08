@@ -1,0 +1,262 @@
+{
+  "schemaVersion": 1,
+  "id": "mag-lu-kozep-szofajok-mondatreszek",
+  "subject": "magyar",
+  "revision": 1,
+  "level": "kozep",
+  "source": "generated",
+  "topic": "nyelvi-szintek",
+  "title": "Szófajok és mondatrészek",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "language-use",
+  "type": "nyelvi-feladat",
+  "instructions": "Határozza meg a mondatokban idézőjellel kiemelt szavak szófaját, illetve mondatrészi szerepét! Válassza ki a helyes választ (A, B, C vagy D)! A 0. sor a példa.",
+  "example": {
+    "id": "0",
+    "kind": "choice",
+    "prompt": "Milyen szófajú a kiemelt szó? A gyerekek „tegnap” futottak haza.",
+    "options": [
+      {
+        "key": "A",
+        "text": "melléknév"
+      },
+      {
+        "key": "B",
+        "text": "határozószó"
+      },
+      {
+        "key": "C",
+        "text": "határozói igenév"
+      },
+      {
+        "key": "D",
+        "text": "ige"
+      }
+    ],
+    "answer": "B",
+    "category": "nyelvtani-fogalom",
+    "explanation": "Határozószó: toldalék nélkül is a cselekvés körülményét, itt az idejét fejezi ki (mikor futottak haza?) – időhatározószó."
+  },
+  "items": [
+    {
+      "id": "1",
+      "kind": "choice",
+      "prompt": "Milyen szófajú a kiemelt szó? Az újságot „olvasva” elaludt a fotelban.",
+      "options": [
+        {
+          "key": "A",
+          "text": "főnévi igenév"
+        },
+        {
+          "key": "B",
+          "text": "melléknévi igenév"
+        },
+        {
+          "key": "C",
+          "text": "ige"
+        },
+        {
+          "key": "D",
+          "text": "határozói igenév"
+        }
+      ],
+      "answer": "D",
+      "category": "nyelvtani-fogalom",
+      "explanation": "Helyes: határozói igenév. Az ige tövéhez -va/-ve (-ván/-vén) képző járul, és a mondatban a cselekvés körülményét fejezi ki (mikor, hogyan aludt el?).",
+      "wrongOptions": {
+        "A": "A főnévi igenév képzője -ni (olvasni), ez nem szerepel a szóban.",
+        "B": "A melléknévi igenév képzője -ó/-ő, -t/-tt vagy -andó/-endő (olvasó, olvasott, olvasandó), és főnév előtt jelzőként áll.",
+        "C": "Az ige személyragot kapna (olvas, olvasott); a -va képzős alak nem ragozott igealak, hanem igenév."
+      }
+    },
+    {
+      "id": "2",
+      "kind": "choice",
+      "prompt": "Milyen szófajú a kiemelt szó? A „megírt” levelet végül postára adta.",
+      "options": [
+        {
+          "key": "A",
+          "text": "befejezett melléknévi igenév"
+        },
+        {
+          "key": "B",
+          "text": "folyamatos melléknévi igenév"
+        },
+        {
+          "key": "C",
+          "text": "beálló melléknévi igenév"
+        },
+        {
+          "key": "D",
+          "text": "múlt idejű ige"
+        }
+      ],
+      "answer": "A",
+      "category": "nyelvtani-fogalom",
+      "explanation": "Helyes: befejezett melléknévi igenév. A -t/-tt képzős igenév a már lezárult cselekvést jelöli, és itt a főnév előtt jelzőként áll (milyen levelet? megírt).",
+      "wrongOptions": {
+        "B": "A folyamatos melléknévi igenév képzője -ó/-ő (megíró), és éppen zajló cselekvést jelöl.",
+        "C": "A beálló melléknévi igenév képzője -andó/-endő (megírandó): a jövőben elvégzendő cselekvést jelöl.",
+        "D": "A „megírt” alak múlt idejű ige is lehet (Ő megírt egy levelet), de itt a főnév előtt áll, jelzői szerepben, ezért melléknévi igenév."
+      }
+    },
+    {
+      "id": "3",
+      "kind": "choice",
+      "prompt": "Milyen szófajú a kiemelt szó? Nyáron mindennap szeretek „úszni” a tóban.",
+      "options": [
+        {
+          "key": "A",
+          "text": "főnév"
+        },
+        {
+          "key": "B",
+          "text": "határozói igenév"
+        },
+        {
+          "key": "C",
+          "text": "főnévi igenév"
+        },
+        {
+          "key": "D",
+          "text": "határozószó"
+        }
+      ],
+      "answer": "C",
+      "category": "nyelvtani-fogalom",
+      "explanation": "Helyes: főnévi igenév. Az igető + -ni képző a cselekvést főnévszerűen nevezi meg; itt a „szeretek” ige tárgya (mit szeretek? úszni).",
+      "wrongOptions": {
+        "A": "A cselekvés főnévi megnevezése az „úszás” volna; a -ni képzős alak igenév, nem főnév.",
+        "B": "A határozói igenév képzője -va/-ve vagy -ván/-vén (úszva).",
+        "D": "A határozószó nem igéből -ni képzővel alakul; az „úszni” a cselekvést nevezi meg, nem körülményt."
+      }
+    },
+    {
+      "id": "4",
+      "kind": "choice",
+      "prompt": "Milyen mondatrész a kiemelt szó? Tegnap a „nagymamám” almás pitét sütött.",
+      "options": [
+        {
+          "key": "A",
+          "text": "alany"
+        },
+        {
+          "key": "B",
+          "text": "tárgy"
+        },
+        {
+          "key": "C",
+          "text": "birtokos jelző"
+        },
+        {
+          "key": "D",
+          "text": "időhatározó"
+        }
+      ],
+      "answer": "A",
+      "category": "nyelvtani-fogalom",
+      "explanation": "Helyes: alany. Ő végzi az állítmány (sütött) által jelölt cselekvést; kérdése: ki sütött? A birtokos személyjel (-m) nem változtat a mondatrészi szerepen.",
+      "wrongOptions": {
+        "B": "A tárgy a „pitét” (mit sütött?), amelyet a -t tárgyrag jelöl.",
+        "C": "Birtokos jelző egy másik főnév előtt állna (a nagymamám pitéje); itt a szó önállóan, a cselekvő szerepében áll.",
+        "D": "Az időhatározó a „tegnap” (mikor?)."
+      }
+    },
+    {
+      "id": "5",
+      "kind": "choice",
+      "prompt": "Milyen mondatrész a kiemelt szókapcsolat? Péter délutánonként „a könyvtárban” tanul.",
+      "options": [
+        {
+          "key": "A",
+          "text": "módhatározó"
+        },
+        {
+          "key": "B",
+          "text": "időhatározó"
+        },
+        {
+          "key": "C",
+          "text": "tárgy"
+        },
+        {
+          "key": "D",
+          "text": "helyhatározó"
+        }
+      ],
+      "answer": "D",
+      "category": "nyelvtani-fogalom",
+      "explanation": "Helyes: helyhatározó. A -ban/-ben rag a hol? kérdésre felel: hol tanul? A könyvtárban.",
+      "wrongOptions": {
+        "A": "A módhatározó a hogyan? kérdésre felel (pl. szorgalmasan).",
+        "B": "Az időhatározó a „délutánonként” (mikor? milyen gyakran?).",
+        "C": "A tárgyat a -t rag jelölné, és mit? kérdésre felelne; a „tanul” itt tárgy nélkül áll."
+      }
+    },
+    {
+      "id": "6",
+      "kind": "choice",
+      "prompt": "Milyen mondatrész a kiemelt szó? Reggelire megettem „két” almát.",
+      "options": [
+        {
+          "key": "A",
+          "text": "minőségjelző"
+        },
+        {
+          "key": "B",
+          "text": "mennyiségjelző"
+        },
+        {
+          "key": "C",
+          "text": "birtokos jelző"
+        },
+        {
+          "key": "D",
+          "text": "értelmező jelző"
+        }
+      ],
+      "answer": "B",
+      "category": "nyelvtani-fogalom",
+      "explanation": "Helyes: mennyiségjelző. A „két” számnév az „almát” főnevet bővíti, és a hány? kérdésre felel.",
+      "wrongOptions": {
+        "A": "A minőségjelző a milyen? kérdésre felel (pl. piros almát).",
+        "C": "A birtokos jelző a kinek a …? kérdésre felel (pl. a szomszéd almáját).",
+        "D": "Az értelmező jelző a jelzett szó után áll, és azt más szóval újra megnevezi (pl. almát, egy jonatánt)."
+      }
+    },
+    {
+      "id": "7",
+      "kind": "choice",
+      "prompt": "Milyen mondatrész a kiemelt szó? A „barátom” kutyája egész éjjel ugatott.",
+      "options": [
+        {
+          "key": "A",
+          "text": "alany"
+        },
+        {
+          "key": "B",
+          "text": "minőségjelző"
+        },
+        {
+          "key": "C",
+          "text": "birtokos jelző"
+        },
+        {
+          "key": "D",
+          "text": "tárgy"
+        }
+      ],
+      "answer": "C",
+      "category": "nyelvtani-fogalom",
+      "explanation": "Helyes: birtokos jelző. A „barátom” a birtokost jelöli (kinek a kutyája?); a birtokot, a „kutyája” szót bővíti. A mondat alanya a „kutyája” (ki ugatott?).",
+      "wrongOptions": {
+        "A": "Nem a barát ugatott, hanem a kutyája: az alany a „kutyája”.",
+        "B": "A minőségjelző tulajdonságot fejez ki (milyen kutya?); a „barátom” birtokviszonyt jelöl.",
+        "D": "Az „ugat” ige itt tárgy nélkül áll, a „barátom” pedig nem kap tárgyragot."
+      }
+    }
+  ],
+  "glossary": [],
+  "suggestedMinutes": 6
+}

@@ -1,0 +1,310 @@
+{
+  "schemaVersion": 1,
+  "id": "gr-word-order",
+  "subject": "angol",
+  "level": "kozep",
+  "source": "generated",
+  "topic": "nyelvtan",
+  "title": "Szórend",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "grammar",
+  "type": "lesson",
+  "category": "word-order",
+  "summaryHu": "A magyar szórend szabad: a hangsúlyos információ kerül az ige elé, ezért szinte bármilyen sorrend helyes lehet. Az angol szórend kötött: alany – állítmány – tárgy – határozók, és kérdésben a segédige az alany elé kerül. A magyar tanulóknál ezért gyakori, hogy a határozót az ige és a tárgy közé teszik (*I like very much football), elrontják a kérdés szórendjét, és a függő kérdésben is kérdő szórendet használnak. A feleletválasztós és nyitott kloze-ban, a mondatrész-beillesztésnél és az emelt hibakeresésnél is számít, íráskor pedig az egyik legfeltűnőbb hiba.",
+  "rules": [
+    {
+      "title": "Alapszórend: alany – ige – tárgy – határozók",
+      "explanation": "Az állító mondat alapszórendje: alany (S) – ige (V) – tárgy (O). Az ige és a tárgy közé nem kerülhet határozó. A mondat végén álló határozók szokásos sorrendje: mód – hely – idő (hogyan? – hol? – mikor?). Az időhatározó a mondat elejére is kerülhet, ha hangsúlyozni akarjuk vagy ha hosszú.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "I like football very much.",
+          "hu": "Nagyon szeretem a focit.",
+          "note": "Nem *I like very much football."
+        },
+        {
+          "en": "She sang beautifully at the concert last night.",
+          "hu": "Tegnap este gyönyörűen énekelt a koncerten.",
+          "note": "mód – hely – idő"
+        },
+        {
+          "en": "Last summer we went to Croatia.",
+          "hu": "Tavaly nyáron Horvátországba mentünk."
+        }
+      ]
+    },
+    {
+      "title": "A gyakoriságot kifejező határozók helye",
+      "explanation": "A gyakoriságot és néhány más dolgot kifejező rövid határozó (always, usually, often, sometimes, rarely, never, already, just, still, also, even, only) a főige ELÉ kerül, de a be ige és a segédige (can, have, will …) UTÁN. Ha több segédige van, az első után áll (I have never been …, She will probably be …).",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "We usually have dinner at seven.",
+          "hu": "Általában hétkor vacsorázunk."
+        },
+        {
+          "en": "She is always late for the first lesson.",
+          "hu": "Mindig elkésik az első óráról.",
+          "note": "A be ige után: is always."
+        },
+        {
+          "en": "I can never remember his name.",
+          "hu": "Sosem jut eszembe a neve.",
+          "note": "Segédige után: can never."
+        }
+      ]
+    },
+    {
+      "title": "Kérdő mondat: segédige az alany előtt",
+      "explanation": "A kérdés szórendje: (kérdőszó) + segédige + alany + főige. Present Simple-ben és Past Simple-ben a do/does/did a segédige (Where do you live?). Ha a kérdőszó maga az alany (Who? What? Which …?), nincs do/does/did és nincs fordított szórend (Who called you? = Ki hívott?). Ha az igéhez elöljárószó tartozik, az a kérdés végére kerül (Who are you talking to?).",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "Where do your parents work?",
+          "hu": "Hol dolgoznak a szüleid?"
+        },
+        {
+          "en": "Who called you yesterday? – Who did you call yesterday?",
+          "hu": "Ki hívott fel tegnap? – Kit hívtál fel tegnap?",
+          "note": "Alanykérdés: nincs did; tárgykérdés: van did."
+        },
+        {
+          "en": "What are you looking at?",
+          "hu": "Mit nézel?",
+          "note": "Az elöljárószó a mondat végén marad."
+        }
+      ]
+    },
+    {
+      "title": "Függő kérdés: állító szórend",
+      "explanation": "Ha a kérdés egy másik mondatba ágyazódik (Can you tell me …, Do you know …, I wonder …, I don't know …, I'd like to know …), a beágyazott rész szórendje állító: alany + ige, és nincs do/does/did. Eldöntendő kérdésnél if vagy whether vezeti be. Ez az udvarias kérdezés alapformája hivatalos levélben és szituációs feladatban.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "Could you tell me where the station is?",
+          "hu": "Meg tudná mondani, hol van az állomás?",
+          "note": "Nem *where is the station."
+        },
+        {
+          "en": "I don't know what time the film starts.",
+          "hu": "Nem tudom, hánykor kezdődik a film.",
+          "note": "Nem *what time does the film start."
+        },
+        {
+          "en": "Do you know if Kate is coming to the party?",
+          "hu": "Tudod, hogy Kate eljön-e a buliba?"
+        }
+      ]
+    },
+    {
+      "title": "Melléknevek sorrendje, enough és too helye",
+      "explanation": "A melléknév a főnév előtt áll. Több melléknévnél a szokásos sorrend: vélemény – méret – kor – forma – szín – származás – anyag – (cél) + főnév (a lovely little old wooden house). Az enough a melléknév és a határozószó UTÁN áll (old enough, fast enough), de a főnév ELŐTT (enough money, enough time). A too a melléknév előtt áll (too expensive).",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "She bought a beautiful red silk scarf.",
+          "hu": "Vett egy gyönyörű piros selyemsálat.",
+          "note": "vélemény – szín – anyag"
+        },
+        {
+          "en": "He isn't old enough to drive.",
+          "hu": "Nem elég idős ahhoz, hogy vezessen."
+        },
+        {
+          "en": "We don't have enough time to finish the project.",
+          "hu": "Nincs elég időnk befejezni a projektet."
+        }
+      ]
+    },
+    {
+      "title": "Inverzió tagadó és korlátozó határozók után",
+      "explanation": "Ha a mondat tagadó vagy korlátozó határozóval kezdődik (Never, Rarely, Seldom, Not only, Hardly … when, No sooner … than, Only when / Only after / Only then, Under no circumstances, Little), a főmondatban kérdő szórend következik: segédige + alany + főige (Present és Past Simple-ben do/does/did). Ez nyomatékos, formális szerkezet, főleg írásban és szónoklatban használjuk.",
+      "emeltOnly": true,
+      "examples": [
+        {
+          "en": "Never have I seen such a beautiful sunset.",
+          "hu": "Soha nem láttam még ilyen gyönyörű naplementét."
+        },
+        {
+          "en": "Not only did she win the race, but she also broke the record.",
+          "hu": "Nemcsak megnyerte a versenyt, hanem meg is döntötte a rekordot."
+        },
+        {
+          "en": "Only when I got home did I realise that I had lost my phone.",
+          "hu": "Csak amikor hazaértem, akkor jöttem rá, hogy elvesztettem a telefonomat."
+        }
+      ]
+    }
+  ],
+  "commonMistakes": [
+    {
+      "wrong": "I like very much football.",
+      "right": "I like football very much.",
+      "why": "Angolul az ige és a tárgy közé nem tehetünk határozót: a very much, a lot, well a tárgy után, a mondat végére kerül. A magyar „Nagyon szeretem a focit” sorrendje nem vihető át."
+    },
+    {
+      "wrong": "Where you live?",
+      "right": "Where do you live?",
+      "why": "Kérdésben segédige kell az alany elé; Present Simple-ben do/does, Past Simple-ben did. Magyarul a kérdést a kérdőszó és a hanglejtés jelzi, angolul a szórend is."
+    },
+    {
+      "wrong": "Can you tell me where is the station?",
+      "right": "Can you tell me where the station is?",
+      "why": "A függő kérdésben (Can you tell me …, I don't know …, I wonder …) állító szórend van: alany + ige. A kérdést a bevezető rész (Can you tell me) teszi kérdéssé."
+    },
+    {
+      "wrong": "She speaks very well English.",
+      "right": "She speaks English very well.",
+      "why": "A tárgy (English) közvetlenül az ige után áll, a módhatározó (very well) csak utána. A magyar „nagyon jól beszél angolul” sorrendje itt hibás."
+    },
+    {
+      "wrong": "I go always to school by bike.",
+      "right": "I always go to school by bike.",
+      "why": "A gyakoriságot kifejező határozó (always, usually, often, never) a főige ELÉ kerül; a be ige után viszont áll (I'm always tired)."
+    },
+    {
+      "wrong": "I wonder where did he go.",
+      "right": "I wonder where he went.",
+      "why": "A függő kérdésben nincs do/does/did: a múlt időt maga a főige mutatja (went), a szórend pedig állító (alany + ige)."
+    }
+  ],
+  "examTips": [
+    "Feleletválasztós kloze-ban és mondatrész-beillesztésnél, ha az opciók ugyanazokat a szavakat más sorrendben tartalmazzák (where the station is / where is the station), először döntsd el, hogy egyenes kérdésről vagy egy mondatba ágyazott függő kérdésről van-e szó.",
+    "Emelt szintű hibakeresésnél tipikus felesleges szó a do/does/did a függő kérdésben (*I asked her what time did the shop close): ilyenkor a did a felesleges szó.",
+    "Íráskor a hivatalos levél kérdései többnyire függő kérdések (I would like to know whether …, Could you tell me how much the course costs?) – itt különösen figyelj az állító szórendre. A szóbeli szituációs feladatban is ez az udvarias kérdésforma.",
+    "Emelt szinten az inverzió (Not only …, Never before …, Only after …) a szerkezetek változatosságát mutatja az írásban, de csak akkor használd, ha biztos vagy a formában: egy hibás inverzió többet árt, mint amennyit használ."
+  ],
+  "practice": [
+    {
+      "id": "1",
+      "kind": "text",
+      "prompt": "Excuse me, could you tell me ___? (the / starts / concert / when)",
+      "cue": "the / starts / concert / when",
+      "answer": [
+        "when the concert starts"
+      ],
+      "category": "word-order",
+      "explanation": "Helyes: when the concert starts. A could you tell me után függő kérdés áll, amelynek szórendje állító: kérdőszó + alany + ige, segédige (does) nélkül."
+    },
+    {
+      "id": "2",
+      "kind": "choice",
+      "prompt": "My grandmother ___.",
+      "options": [
+        {
+          "key": "A",
+          "text": "speaks very well German"
+        },
+        {
+          "key": "B",
+          "text": "speaks German very well"
+        },
+        {
+          "key": "C",
+          "text": "very well speaks German"
+        },
+        {
+          "key": "D",
+          "text": "speaks German well very"
+        }
+      ],
+      "answer": "B",
+      "category": "word-order",
+      "explanation": "Helyes: speaks German very well. A tárgy (German) közvetlenül az ige után áll, a módhatározó (very well) csak a tárgy után következik.",
+      "wrongOptions": {
+        "A": "A határozó nem kerülhet az ige és a tárgy közé – ez a magyar „nagyon jól beszél németül” sorrendje.",
+        "C": "A very well módhatározó nem állhat a főige előtt; oda csak bizonyos rövid határozók kerülhetnek (pl. always, often, never).",
+        "D": "A very a well-t erősíti, ezért előtte áll: very well, nem well very."
+      }
+    },
+    {
+      "id": "3",
+      "kind": "text",
+      "prompt": "Where ___ you go on holiday last summer?",
+      "answer": [
+        "did"
+      ],
+      "category": "word-order",
+      "explanation": "Helyes: did. Past Simple-kérdésben a did segédige az alany elé kerül (kérdőszó + did + alany + puszta ige), a főige pedig puszta alakban marad (go)."
+    },
+    {
+      "id": "4",
+      "kind": "choice",
+      "prompt": "Which sentence is correct?",
+      "options": [
+        {
+          "key": "A",
+          "text": "We go usually to the lake in summer."
+        },
+        {
+          "key": "B",
+          "text": "We usually go to the lake in summer."
+        },
+        {
+          "key": "C",
+          "text": "Usually we to the lake go in summer."
+        },
+        {
+          "key": "D",
+          "text": "We usually to the lake go in summer."
+        }
+      ],
+      "answer": "B",
+      "category": "word-order",
+      "explanation": "Helyes: We usually go to the lake in summer. A gyakoriságot kifejező határozó (usually) a főige elé kerül, a helyhatározó és az időhatározó pedig az ige után következik (hely – idő).",
+      "wrongOptions": {
+        "A": "A usually nem kerülhet a főige után; a főige elé kell (de a be ige után állna: We are usually …).",
+        "C": "A helyhatározó (to the lake) nem állhat az alany és az ige között; az ige közvetlenül az alany után jön.",
+        "D": "A usually helye jó, de a helyhatározó nem kerülhet az ige elé."
+      }
+    },
+    {
+      "id": "5",
+      "kind": "choice",
+      "prompt": "Not only ___ the exam, but she also got the highest score in her class.",
+      "options": [
+        {
+          "key": "A",
+          "text": "did she pass"
+        },
+        {
+          "key": "B",
+          "text": "she passed"
+        },
+        {
+          "key": "C",
+          "text": "she did pass"
+        },
+        {
+          "key": "D",
+          "text": "passed she"
+        }
+      ],
+      "answer": "A",
+      "category": "word-order",
+      "explanation": "Helyes: did she pass (emelt szint). Ha a mondat a Not only kifejezéssel kezdődik, inverzió következik: segédige + alany + főige. Past Simple-ben a segédige did, a főige puszta alakban áll.",
+      "wrongOptions": {
+        "B": "A mondat eleji Not only után nem maradhat állító szórend; inverzió kell.",
+        "C": "Ez állító szórend nyomatékos did-del; az inverzióhoz a segédigének az alany ELÉ kell kerülnie.",
+        "D": "Főigével nem képezhetünk inverziót; segédige (did) kell, és utána puszta ige."
+      }
+    },
+    {
+      "id": "6",
+      "kind": "text",
+      "prompt": "___ to drive a car. (old / isn't / enough / he)",
+      "cue": "old / isn't / enough / he",
+      "answer": [
+        "he isn't old enough"
+      ],
+      "category": "word-order",
+      "explanation": "Helyes: He isn't old enough. Az enough a melléknév UTÁN áll (old enough), főnév előtt viszont elé kerülne (enough money). A mondat alapszórendje: alany + ige + melléknév."
+    }
+  ],
+  "relatedCategories": [
+    "question-form",
+    "auxiliary",
+    "reported-speech"
+  ]
+}

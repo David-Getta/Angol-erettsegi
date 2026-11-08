@@ -1,0 +1,147 @@
+{
+  "schemaVersion": 1,
+  "id": "gaz-rd-emelt-kozgazdasagtan-tortenete",
+  "subject": "gazdasagi-ismeretek",
+  "revision": 1,
+  "level": "emelt",
+  "source": "generated",
+  "topic": "alapfogalmak",
+  "title": "A közgazdaságtan története: irányzatok és képviselők",
+  "createdAt": "2026-11-06",
+  "tags": [],
+  "section": "reading",
+  "type": "parositas",
+  "instructions": "Melyik irányzathoz vagy közgazdászhoz tartozik a gondolat? Írja a megfelelő betűjelet a meghatározás mellé! Minden betűjel csak egyszer használható, két betűjel felesleges. A 0. a megoldott példa.",
+  "options": [
+    {
+      "key": "A",
+      "text": "merkantilizmus"
+    },
+    {
+      "key": "B",
+      "text": "fiziokraták"
+    },
+    {
+      "key": "C",
+      "text": "Adam Smith"
+    },
+    {
+      "key": "D",
+      "text": "David Ricardo"
+    },
+    {
+      "key": "E",
+      "text": "Thomas Malthus"
+    },
+    {
+      "key": "F",
+      "text": "Karl Marx"
+    },
+    {
+      "key": "G",
+      "text": "neoklasszikus közgazdaságtan"
+    },
+    {
+      "key": "H",
+      "text": "John Maynard Keynes"
+    },
+    {
+      "key": "I",
+      "text": "Milton Friedman"
+    },
+    {
+      "key": "J",
+      "text": "Arisztotelész"
+    },
+    {
+      "key": "K",
+      "text": "a középkori egyház tanítása"
+    }
+  ],
+  "example": {
+    "id": "0",
+    "kind": "match",
+    "prompt": "A nemzet gazdagságát az arany- és ezüstkészletek nagyságában mérték; cél az export ösztönzése, az import visszaszorítása.",
+    "answer": "A",
+    "category": "iranyzatok",
+    "explanation": "Helyes: A (merkantilizmus, XVI–XVII. század). A merkantilisták a gazdagságot a nemesfémkészletben mérték, és az állam aktív szabályozását (protekcionizmus) hirdették."
+  },
+  "items": [
+    {
+      "id": "1",
+      "kind": "match",
+      "prompt": "A gazdagság forrása a mezőgazdaság, mert az teremti meg a „tiszta terméket”; jelmondatuk: „Hagyjátok csinálni, hagyjátok menni” (laissez-faire).",
+      "answer": "B",
+      "category": "iranyzatok",
+      "explanation": "Helyes: B (fiziokraták, XVIII. század közepe). Elvetették a merkantilista nézetet, hogy a kereskedelem vagy a pénz a gazdagság forrása; szerintük a mezőgazdaság az.",
+      "wrongOptions": {
+        "A": "A merkantilisták éppen a kereskedelmet és a nemesfémet tartották a gazdagság forrásának, és az állami beavatkozást hirdették – ezt a fiziokraták elvetették."
+      }
+    },
+    {
+      "id": "2",
+      "kind": "match",
+      "prompt": "Fő műve A nemzetek gazdagsága (1776); szerinte a munkamegosztás növeli a termelékenységet, amit a tűgyár példájával mutatott be.",
+      "answer": "C",
+      "category": "iranyzatok",
+      "explanation": "Helyes: C (Adam Smith, 1723–1790). Ő a közgazdaságtan „atyja”; a gazdagság forrásának a munkát tartotta, a tűgyár példája a munkamegosztás előnyét szemlélteti."
+    },
+    {
+      "id": "3",
+      "kind": "match",
+      "prompt": "A komparatív előnyök elmélete: megmutatja az országok közötti kereskedelem előnyeit.",
+      "answer": "D",
+      "category": "iranyzatok",
+      "explanation": "Helyes: D (David Ricardo, 1772–1823). A klasszikus iskola tagjaként ő dolgozta ki a komparatív előnyök elméletét."
+    },
+    {
+      "id": "4",
+      "kind": "match",
+      "prompt": "Népesedési elmélet: a népesség gyorsabban nő, mint az élelemtermelés.",
+      "answer": "E",
+      "category": "iranyzatok",
+      "explanation": "Helyes: E (Thomas Malthus, 1766–1834). A klasszikus iskola harmadik nagy alakja; a népesedési elmélet az ő nevéhez fűződik."
+    },
+    {
+      "id": "5",
+      "kind": "match",
+      "prompt": "Értéktöbblet-elmélet: a munkások által megtermelt érték és a bér közti különbség a tőkés nyereségének alapja.",
+      "answer": "F",
+      "category": "iranyzatok",
+      "explanation": "Helyes: F (Karl Marx, 1818–1883). A kapitalizmus kritikusa; az értéktöbblet-elmélet és a történelmi materializmus (a történelem mozgatója az osztályharc) tőle származik."
+    },
+    {
+      "id": "6",
+      "kind": "match",
+      "prompt": "A gazdasági döntések alapja a határhaszon és a határköltség; a klasszikus iskolát már matematikai módszerekkel fejlesztették tovább.",
+      "answer": "G",
+      "category": "iranyzatok",
+      "explanation": "Helyes: G (neoklasszikus közgazdaságtan, XIX. század vége – XX. század eleje). Képviselői Jevons, Walras és Marshall; fő gondolatuk a határhaszon és a határköltség.",
+      "wrongOptions": {
+        "C": "Adam Smith a klasszikus iskola megalapítója volt; a határhaszon és a matematikai módszerek a későbbi, neoklasszikus továbbfejlesztés jellemzői."
+      }
+    },
+    {
+      "id": "7",
+      "kind": "match",
+      "prompt": "Az Általános elmélet (1936) szerzője: a gazdasági válságok idején az államnak aktívan be kell avatkoznia, növelni kell a beruházásokat és a közkiadásokat.",
+      "answer": "H",
+      "category": "iranyzatok",
+      "explanation": "Helyes: H (John Maynard Keynes, 1883–1946). A nagy gazdasági világválság tapasztalata alapján dolgozta ki a keresletvezérelt gazdaságpolitika elméletét.",
+      "wrongOptions": {
+        "I": "Friedman éppen bírálta a keynesiánus állami beavatkozást, szerinte az állam szerepét minimalizálni kell."
+      }
+    },
+    {
+      "id": "8",
+      "kind": "match",
+      "prompt": "A gazdasági stabilitás kulcsa a pénzkínálat szabályozása; az állam szerepét minimalizálni kell.",
+      "answer": "I",
+      "category": "iranyzatok",
+      "explanation": "Helyes: I (Milton Friedman, 1912–2006). A monetarista iskola vezető alakja; nézetei a neoliberalizmushoz kapcsolódnak, amely a XX. század második felének domináns gazdaságpolitikája lett.",
+      "wrongOptions": {
+        "H": "Keynes válság idején aktív állami beavatkozást javasolt – ez Friedman nézetének az ellentéte."
+      }
+    }
+  ]
+}

@@ -1,0 +1,131 @@
+{
+  "schemaVersion": 1,
+  "id": "nem-rd-kozep-stadtbibliothek-headings",
+  "subject": "nemet",
+  "revision": 1,
+  "level": "kozep",
+  "source": "generated",
+  "topic": "szabadido",
+  "title": "Mehr als nur Bücher",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "reading",
+  "type": "headings",
+  "instructions": "Lesen Sie den Artikel über eine neue Stadtbibliothek. Ordnen Sie den Absätzen (1–6) die passenden Überschriften (A–I) zu. Zwei Überschriften bleiben übrig. Am Anfang finden Sie ein Beispiel (0).",
+  "instructionsHu": "Olvasd el a cikket az új városi könyvtárról, és párosítsd a bekezdésekhez (1–6) a megfelelő címet (A–I). Két cím felesleges. A 0. a példa.",
+  "passage": {
+    "title": "Mehr als nur Bücher",
+    "subtitle": "Die neue Stadtbibliothek von Lindenberg ist seit Mai geöffnet",
+    "blocks": [
+      { "gap": "0", "text": "Seit Mai hat die Stadt Lindenberg eine neue Bibliothek. Das alte Gebäude in der Bahnhofstraße war zu klein und zu dunkel geworden. Das neue Haus am Marktplatz hat drei Stockwerke, große Fenster und Platz für mehr als 100.000 Bücher, Zeitschriften, Filme und Spiele. Schon im ersten Monat kamen über 20.000 Besucher." },
+      { "gap": "1", "text": "Die Bibliothek ist nicht nur ein Ort zum Lesen. Im zweiten Stock gibt es ein Café, in dem man frühstücken oder einfach mit Freunden reden kann. Im Erdgeschoss steht ein Klavier, das jeder spielen darf. Und einmal im Monat findet im großen Saal ein Konzert oder eine Lesung statt." },
+      { "gap": "2", "text": "Für Schülerinnen und Schüler gibt es einen eigenen Bereich mit Arbeitsplätzen, Steckdosen und schnellem WLAN. Hier kann man in Ruhe Hausaufgaben machen oder für Prüfungen lernen. Die Plätze sind kostenlos, aber vor Prüfungszeiten sollte man sie online reservieren, weil sie sehr beliebt sind." },
+      { "gap": "3", "text": "Wer kein Geld für teure Geräte hat, kann sie in der Bibliothek ausleihen: Laptops, E-Book-Reader, Kameras und sogar Musikinstrumente. Die Leihfrist beträgt zwei Wochen. Für diese Angebote braucht man nur einen Bibliotheksausweis, der für Jugendliche unter 18 Jahren nichts kostet." },
+      { "gap": "4", "text": "Besonders stolz ist die Bibliothek auf ihr Programm für die Kleinsten. Jeden Samstagvormittag liest eine Mitarbeiterin Kindern zwischen drei und sechs Jahren Geschichten vor. Die Eltern können in dieser Zeit selbst lesen oder im Café sitzen. Die Kinder bekommen am Ende einen Stempel – und nach zehn Stempeln ein Buch geschenkt." },
+      { "gap": "5", "text": "Auch wer abends arbeitet oder weit weg wohnt, soll die Bibliothek nutzen können. Deshalb kann man rund um die Uhr E-Books und Hörbücher über die Internetseite ausleihen. Und wer ein Buch zurückgeben möchte, muss nicht warten, bis die Bibliothek öffnet: Neben dem Eingang gibt es eine Rückgabebox, die Tag und Nacht offen ist." },
+      { "gap": "6", "text": "Natürlich kostet so ein Haus viel Geld. Die Stadt hat etwa zwölf Millionen Euro bezahlt, zwei Millionen kamen von einer Stiftung und von privaten Spendern. Nicht alle Einwohner waren von dem Plan begeistert – manche hätten das Geld lieber für neue Straßen ausgegeben. Die Bibliotheksleiterin aber sagt: „Eine Stadt braucht Orte, an denen alle willkommen sind, ohne etwas kaufen zu müssen.“" }
+    ]
+  },
+  "options": [
+    { "key": "A", "text": "Geräte zum Ausleihen" },
+    { "key": "B", "text": "Ein Treffpunkt, nicht nur ein Leseort" },
+    { "key": "C", "text": "Teuer, aber wichtig für die Stadt" },
+    { "key": "D", "text": "Größer und heller als früher" },
+    { "key": "E", "text": "Nutzung rund um die Uhr" },
+    { "key": "F", "text": "Weniger Besucher als erwartet" },
+    { "key": "G", "text": "Ruhig lernen mit WLAN" },
+    { "key": "H", "text": "Ein neues Kino für Lindenberg" },
+    { "key": "I", "text": "Vorlesen für die Kleinsten" }
+  ],
+  "example": {
+    "id": "0",
+    "kind": "match",
+    "answer": "D",
+    "category": "gist",
+    "explanation": "A bekezdés az új épületet mutatja be: a régi túl kicsi és sötét volt, az új háromszintes, nagy ablakokkal – ezért a D (Größer und heller als früher).",
+    "evidence": "Das alte Gebäude in der Bahnhofstraße war zu klein und zu dunkel geworden."
+  },
+  "items": [
+    {
+      "id": "1",
+      "kind": "match",
+      "answer": "B",
+      "category": "gist",
+      "explanation": "A bekezdés fő gondolata, hogy a könyvtár nem csak olvasóhely: kávézó, zongora, koncertek – találkozóhely. Ezért B.",
+      "evidence": "Die Bibliothek ist nicht nur ein Ort zum Lesen.",
+      "wrongOptions": {
+        "H": "Koncertről és felolvasásról van szó, moziról egyáltalán nem."
+      }
+    },
+    {
+      "id": "2",
+      "kind": "match",
+      "answer": "G",
+      "category": "gist",
+      "explanation": "A bekezdés a diákok tanulósarkáról szól: munkahelyek, konnektor, gyors wifi, nyugodt tanulás – ezért G (Ruhig lernen mit WLAN).",
+      "evidence": "Hier kann man in Ruhe Hausaufgaben machen oder für Prüfungen lernen.",
+      "wrongOptions": {
+        "E": "A tanulóhelyeket előre kell foglalni, és nem éjjel-nappal használhatók – a „rund um die Uhr” a 5. bekezdésre illik."
+      }
+    },
+    {
+      "id": "3",
+      "kind": "match",
+      "answer": "A",
+      "category": "gist",
+      "explanation": "Laptopot, e-könyv-olvasót, kamerát, hangszert lehet kölcsönözni két hétre – a bekezdés témája a kikölcsönözhető eszközök (A).",
+      "evidence": "kann sie in der Bibliothek ausleihen: Laptops, E-Book-Reader, Kameras und sogar Musikinstrumente",
+      "wrongOptions": {
+        "G": "Itt nem a tanulásról, hanem a kölcsönözhető készülékekről van szó."
+      }
+    },
+    {
+      "id": "4",
+      "kind": "match",
+      "answer": "I",
+      "category": "gist",
+      "explanation": "A bekezdés a 3–6 éves gyerekeknek szóló szombati felolvasásról szól – ezért I (Vorlesen für die Kleinsten).",
+      "evidence": "liest eine Mitarbeiterin Kindern zwischen drei und sechs Jahren Geschichten vor",
+      "wrongOptions": {
+        "B": "A kávézó csak mellékesen szerepel (a szülők ott ülhetnek), a fő téma a gyerekprogram."
+      }
+    },
+    {
+      "id": "5",
+      "kind": "match",
+      "answer": "E",
+      "category": "gist",
+      "explanation": "E-könyvek éjjel-nappal kölcsönözhetők az interneten, és a visszaadó doboz is mindig nyitva van – a könyvtár bármikor használható (E).",
+      "evidence": "Deshalb kann man rund um die Uhr E-Books und Hörbücher über die Internetseite ausleihen.",
+      "wrongOptions": {
+        "A": "Nem eszközökről, hanem az időbeli elérhetőségről (éjjel-nappal) szól a bekezdés."
+      }
+    },
+    {
+      "id": "6",
+      "kind": "match",
+      "answer": "C",
+      "category": "gist",
+      "explanation": "A bekezdés a költségekről (12 millió euró) és arról szól, hogy nem mindenki örült – de a vezető szerint fontos a városnak. Ezért C.",
+      "evidence": "Natürlich kostet so ein Haus viel Geld.",
+      "wrongOptions": {
+        "F": "A látogatók számáról itt nincs szó; az első bekezdés szerint ráadásul sokan jöttek."
+      }
+    }
+  ],
+  "glossary": [
+    { "term": "das Stockwerk", "meaning": "emelet, szint" },
+    { "term": "das Erdgeschoss", "meaning": "földszint" },
+    { "term": "die Lesung", "meaning": "felolvasóest, író-olvasó találkozó" },
+    { "term": "die Steckdose", "meaning": "konnektor" },
+    { "term": "ausleihen", "meaning": "kikölcsönöz" },
+    { "term": "die Leihfrist", "meaning": "kölcsönzési határidő" },
+    { "term": "der Bibliotheksausweis", "meaning": "könyvtári olvasójegy" },
+    { "term": "liest vor (vorlesen)", "meaning": "felolvas" },
+    { "term": "rund um die Uhr", "meaning": "éjjel-nappal" },
+    { "term": "die Rückgabebox", "meaning": "visszaadó doboz" },
+    { "term": "die Stiftung", "meaning": "alapítvány" },
+    { "term": "der Spender", "meaning": "adományozó" }
+  ],
+  "suggestedMinutes": 12
+}

@@ -1,0 +1,295 @@
+{
+  "schemaVersion": 1,
+  "id": "gaz-gr-szamitas",
+  "subject": "gazdasagi-ismeretek",
+  "revision": 1,
+  "level": "kozep",
+  "source": "generated",
+  "topic": "nyelvtan",
+  "title": "Számítások: átlagköltség, határköltség, profit, jövedelem",
+  "createdAt": "2026-11-06",
+  "tags": [],
+  "section": "grammar",
+  "type": "lesson",
+  "category": "szamitas",
+  "summaryHu": "A tananyag számpéldái (a pékség táblázata, a nominál- és reáljövedelem 10%–10%-os példája, az alternatív költség) egyszerű képletekre épülnek: átlagköltség = összköltség / mennyiség, határköltség = az összköltség változása / a mennyiség változása, bevétel = ár × mennyiség, profit = bevétel − összköltség. Pontot az veszít, aki összekeveri az átlag- és a határköltséget, kihagyja a mértékegységet (Ft vagy Ft/db), vagy nem írja le a műveletet.",
+  "rules": [
+    {
+      "title": "Átlagköltség = összköltség / termelt mennyiség",
+      "explanation": "Az átlagköltség megmutatja, mennyibe kerül átlagosan egy darab: az összköltséget elosztjuk a termelt mennyiséggel. Mértékegysége Ft/db. A pékség adatai (napi termelés, összköltség): 100 db – 20 000 Ft; 200 db – 30 000 Ft; 300 db – 38 000 Ft; 400 db – 51 500 Ft.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "20 000 : 100 = 200 Ft/db",
+          "hu": "100 db-nál"
+        },
+        {
+          "en": "30 000 : 200 = 150 Ft/db",
+          "hu": "200 db-nál"
+        },
+        {
+          "en": "38 000 : 300 = 126,666… ≈ 126,7 Ft/db",
+          "hu": "300 db-nál, egy tizedesre kerekítve"
+        },
+        {
+          "en": "51 500 : 400 = 128,75 ≈ 128,8 Ft/db",
+          "hu": "400 db-nál, egy tizedesre kerekítve"
+        }
+      ]
+    },
+    {
+      "title": "Határköltség = Δösszköltség / Δmennyiség",
+      "explanation": "A határköltség a pótlólagos (utolsó) egység többletköltsége. A pékség táblázatában a termelés 100 darabonként nő, ezért a határköltség az utolsó 100 db-ra jutó többletköltség egy darabra: (új összköltség − előző összköltség) : 100. Mértékegysége Ft/db. 100 db-nál nincs előző sor, ezért ott nem számolható („–”).",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "(30 000 − 20 000) : (200 − 100) = 10 000 : 100 = 100 Ft/db",
+          "hu": "200 db-nál"
+        },
+        {
+          "en": "(38 000 − 30 000) : (300 − 200) = 8 000 : 100 = 80 Ft/db",
+          "hu": "300 db-nál"
+        },
+        {
+          "en": "(51 500 − 38 000) : (400 − 300) = 13 500 : 100 = 135 Ft/db",
+          "hu": "400 db-nál – ez nagyobb a 130 Ft-os árnál"
+        }
+      ]
+    },
+    {
+      "title": "Bevétel = ár × mennyiség; profit = bevétel − összköltség",
+      "explanation": "A pékség egy kenyeret 130 Ft-ért ad el. A bevétel az eladott mennyiség és az ár szorzata, a profit a bevétel és az összköltség különbsége; ha negatív, a pékség veszteséges. Mindkettő mértékegysége Ft.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "100 db: 130 × 100 = 13 000 Ft; 13 000 − 20 000 = −7 000 Ft",
+          "hu": "veszteség"
+        },
+        {
+          "en": "200 db: 130 × 200 = 26 000 Ft; 26 000 − 30 000 = −4 000 Ft",
+          "hu": "veszteség"
+        },
+        {
+          "en": "300 db: 130 × 300 = 39 000 Ft; 39 000 − 38 000 = +1 000 Ft",
+          "hu": "a legnagyobb profit"
+        },
+        {
+          "en": "400 db: 130 × 400 = 52 000 Ft; 52 000 − 51 500 = +500 Ft",
+          "hu": "kisebb profit, mint 300 db-nál"
+        }
+      ]
+    },
+    {
+      "title": "Határelemzés kontra átlagelemzés a pékség példáján",
+      "explanation": "Átlagelemzés szerint 400 db-nál az átlagköltség (128,8 Ft) kisebb az árnál (130 Ft), ezért „megéri többet sütni”. Határelemzés szerint az utolsó 100 db darabja 135 Ft-ba kerül, ami több, mint 130 Ft, ezért csökkenti a profitot: az utolsó 100 db 13 000 Ft többletbevételt (100 × 130) és 13 500 Ft többletköltséget hoz, a profit 500 Ft-tal csökken (+1 000 Ft → +500 Ft). 300 db a jobb döntés. A döntési szabály: addig érdemes növelni a termelést, amíg az utolsó egységből származó többletbevétel (itt az ár) ≥ határköltség.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "300 → 400 db: többletbevétel 13 000 Ft, többletköltség 13 500 Ft, különbség −500 Ft",
+          "hu": "A profitváltozás (+500 − (+1 000) = −500 Ft) ugyanezt mutatja."
+        },
+        {
+          "en": "200 → 300 db: határköltség 80 Ft/db < 130 Ft",
+          "hu": "Ez a bővítés még megérte: a profit −4 000 Ft-ról +1 000 Ft-ra nőtt."
+        }
+      ]
+    },
+    {
+      "title": "Nominál- és reáljövedelem",
+      "explanation": "Jövedelem: az adott időszak alatt megszerzett bevételből levonjuk a jogszabály által elfogadott költségeket (pl. adókat). Nomináljövedelem: a ténylegesen megszerzett pénzösszeg. Reáljövedelem: az áru- és szolgáltatásmennyiség, amit a nomináljövedelemből az adott árakon meg lehet vásárolni. Ha a fizetésünk 10%-kal nő, de az árak is 10%-kal emelkednek, a nomináljövedelmünk nőtt, a reáljövedelmünk nem – ugyanannyit tudunk vásárolni.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "Fizetés: 200 000 Ft → 220 000 Ft (+10%). Egy kosár ára: 2 000 Ft → 2 200 Ft (+10%).",
+          "hu": "Előtte 200 000 : 2 000 = 100 kosár, utána 220 000 : 2 200 = 100 kosár – a nomináljövedelem nőtt, a reáljövedelem nem."
+        },
+        {
+          "en": "Fizetés +10%, az árak nem változnak: 220 000 : 2 000 = 110 kosár.",
+          "hu": "Ekkor a reáljövedelem is nő, mert több árut lehet megvásárolni."
+        }
+      ]
+    },
+    {
+      "title": "Alternatív költség kiszámítása",
+      "explanation": "Az alternatív költség annak a legjobb (legértékesebb) lehetőségnek az értéke, amelyről lemondunk. Számításnál sorold fel a feláldozott lehetőségeket az értékükkel, és válaszd ki a legnagyobbat – nem összeadod őket, és nem a választott lehetőség költségét írod.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "Szombat délelőtt tanulok. Ehelyett egy rendezvényen 8 000 Ft-ot vagy szórólapozással 5 000 Ft-ot kereshetnék.",
+          "hu": "Alternatív költség: 8 000 Ft (a legjobb feláldozott lehetőség) – nem 13 000 Ft és nem 5 000 Ft."
+        }
+      ]
+    }
+  ],
+  "commonMistakes": [
+    {
+      "wrong": "400 db-nál a határköltség 51 500 : 400 ≈ 128,8 Ft/db.",
+      "right": "51 500 : 400 ≈ 128,8 Ft/db az átlagköltség; a határköltség (51 500 − 38 000) : 100 = 135 Ft/db.",
+      "why": "Az átlagköltség az összköltséget osztja a teljes mennyiséggel, a határköltség csak az utolsó egységek többletköltségét nézi."
+    },
+    {
+      "wrong": "300 → 400 db: a határköltség 13 500 Ft.",
+      "right": "A határköltség 13 500 : 100 = 135 Ft/db.",
+      "why": "A 13 500 Ft az utolsó 100 db együttes többletköltsége; egy darabra a mennyiség változásával (100) el kell osztani."
+    },
+    {
+      "wrong": "Profit = bevétel − átlagköltség, pl. 39 000 − 126,7.",
+      "right": "Profit = bevétel − összköltség: 39 000 − 38 000 = 1 000 Ft.",
+      "why": "A bevételt (Ft) az összköltséggel (Ft) vetjük össze; az átlagköltség Ft/db, más mértékegység."
+    },
+    {
+      "wrong": "A végeredmény: 80.",
+      "right": "A határköltség 80 Ft/db.",
+      "why": "Mértékegység nélkül a szám nem értelmezhető (Ft, Ft/db vagy darab?)."
+    },
+    {
+      "wrong": "A fizetésem 10%-kal nőtt, tehát 10%-kal többet tudok vásárolni.",
+      "right": "Ha az árak is 10%-kal nőttek, ugyanannyit tudok vásárolni: a nomináljövedelem nőtt, a reáljövedelem nem.",
+      "why": "A reáljövedelem a megvásárolható mennyiség, ehhez az árak változását is figyelembe kell venni."
+    },
+    {
+      "wrong": "Alternatív költség = 8 000 + 5 000 = 13 000 Ft.",
+      "right": "Alternatív költség = 8 000 Ft, a legjobb feláldozott lehetőség értéke.",
+      "why": "Egyszerre csak egy lehetőséget választhattam volna, ezért csak a legjobb feláldozott lehetőség számít."
+    }
+  ],
+  "examTips": [
+    "Emelt írásbeli feladatsorban a számításos feladatoknál mindig írd le a képletet, a behelyettesítést és az eredményt mértékegységgel (Ft, Ft/db) – a részeredmények is pontot érnek.",
+    "Elemzésnél ne állj meg a számításnál: a végén fogalmazd meg a döntést a határelemzés szabályával („az utolsó 100 db darabja 135 Ft-ba kerül > 130 Ft, ezért 300 db a jobb”).",
+    "Kerekítésnél kövesd a feladat utasítását; ha nincs, egy tizedesre kerekíts, és jelöld (≈ 126,7). Tizedesvesszőt használj.",
+    "A projektmunkában, ha saját vállalkozásod költségeit számolod, ugyanezeket a képleteket használd, és táblázatban mutasd be a számítás menetét."
+  ],
+  "practice": [
+    {
+      "id": "1",
+      "kind": "text",
+      "prompt": "A pékség napi 300 db kenyeret süt, az összköltség 38 000 Ft. Mennyi az átlagköltség Ft/db-ban, egy tizedesre kerekítve?",
+      "answer": [
+        "126,7",
+        "126.7",
+        "126,7 Ft",
+        "126.7 Ft",
+        "126,7 Ft/db",
+        "126.7 Ft/db",
+        "≈126,7",
+        "≈ 126,7",
+        "≈ 126,7 Ft",
+        "≈ 126,7 Ft/db"
+      ],
+      "explanation": "Helyes: ≈ 126,7 Ft/db. Átlagköltség = összköltség / mennyiség = 38 000 : 300 = 126,666… ≈ 126,7 Ft/db.",
+      "category": "szamitas"
+    },
+    {
+      "id": "2",
+      "kind": "text",
+      "prompt": "A termelés 200 db-ról 300 db-ra nő, az összköltség 30 000 Ft-ról 38 000 Ft-ra. Mennyi a határköltség Ft/db-ban?",
+      "answer": [
+        "80",
+        "80 Ft",
+        "80 Ft/db"
+      ],
+      "explanation": "Helyes: 80 Ft/db. Határköltség = Δösszköltség / Δmennyiség = (38 000 − 30 000) : (300 − 200) = 8 000 : 100 = 80 Ft/db.",
+      "category": "szamitas"
+    },
+    {
+      "id": "3",
+      "kind": "text",
+      "prompt": "Ha a kenyér ára 130 Ft helyett 140 Ft lenne, mennyi lenne a pékség profitja 400 db-nál (összköltség 51 500 Ft)?",
+      "answer": [
+        "4500",
+        "4 500",
+        "4500 Ft",
+        "4 500 Ft",
+        "+4500",
+        "+4 500",
+        "+4500 Ft",
+        "+4 500 Ft"
+      ],
+      "explanation": "Helyes: 4 500 Ft. Bevétel = 140 × 400 = 56 000 Ft; profit = bevétel − összköltség = 56 000 − 51 500 = 4 500 Ft.",
+      "category": "szamitas"
+    },
+    {
+      "id": "4",
+      "kind": "choice",
+      "prompt": "Ha a kenyér ára 140 Ft lenne (az összköltségek változatlanok), hány darabot lenne a legjobb sütni?",
+      "options": [
+        {
+          "key": "A",
+          "text": "100 db"
+        },
+        {
+          "key": "B",
+          "text": "200 db"
+        },
+        {
+          "key": "C",
+          "text": "300 db"
+        },
+        {
+          "key": "D",
+          "text": "400 db"
+        }
+      ],
+      "answer": "D",
+      "explanation": "Helyes: D. Az utolsó 100 db határköltsége 135 Ft/db < 140 Ft, tehát a bővítés növeli a profitot: 300 db-nál 140 × 300 − 38 000 = 4 000 Ft, 400 db-nál 56 000 − 51 500 = 4 500 Ft.",
+      "wrongOptions": {
+        "A": "100 db-nál a profit 14 000 − 20 000 = −6 000 Ft, veszteség.",
+        "B": "200 db-nál a profit 28 000 − 30 000 = −2 000 Ft, veszteség.",
+        "C": "300 db-nál a profit 4 000 Ft, de a 400. darabig a határköltség (135 Ft) kisebb az árnál (140 Ft), ezért a bővítés még megéri."
+      },
+      "category": "szamitas"
+    },
+    {
+      "id": "5",
+      "kind": "text",
+      "prompt": "A fizetésed 250 000 Ft-ról 275 000 Ft-ra nő (+10%), közben egy kosár ára 2 500 Ft-ról 2 750 Ft-ra emelkedik (+10%). Hány kosarat tudsz venni az emelés után? (Előtte: 250 000 : 2 500 = 100.)",
+      "answer": [
+        "100",
+        "100 kosár",
+        "100 kosarat",
+        "100 db",
+        "100 darab",
+        "száz",
+        "száz kosár",
+        "száz kosarat"
+      ],
+      "explanation": "Helyes: 100 kosár. 275 000 : 2 750 = 100 – a nomináljövedelem 10%-kal nőtt, a reáljövedelem nem változott, ugyanannyit tudsz vásárolni.",
+      "category": "szamitas"
+    },
+    {
+      "id": "6",
+      "kind": "choice",
+      "prompt": "Bence szombat délelőtt tanul. Ehelyett egy rendezvényen 9 000 Ft-ot, vagy szórólapozással 6 000 Ft-ot kereshetne. Mennyi a tanulás alternatív költsége pénzben kifejezve?",
+      "options": [
+        {
+          "key": "A",
+          "text": "15 000 Ft"
+        },
+        {
+          "key": "B",
+          "text": "6 000 Ft"
+        },
+        {
+          "key": "C",
+          "text": "9 000 Ft"
+        },
+        {
+          "key": "D",
+          "text": "3 000 Ft"
+        }
+      ],
+      "answer": "C",
+      "explanation": "Helyes: C. Az alternatív költség a legjobb feláldozott lehetőség értéke: a rendezvényen kereshető 9 000 Ft.",
+      "wrongOptions": {
+        "A": "A 15 000 Ft a két lehetőség összege; a feláldozott lehetőségeket nem adjuk össze.",
+        "B": "A 6 000 Ft csak a második legjobb lehetőség értéke.",
+        "D": "A 3 000 Ft a két lehetőség különbsége, ennek nincs köze az alternatív költséghez."
+      },
+      "category": "szamitas"
+    }
+  ],
+  "relatedCategories": [
+    "alapelv-alkalmazas",
+    "adatleolvasas"
+  ]
+}

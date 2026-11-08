@@ -1,0 +1,105 @@
+{
+  "schemaVersion": 1,
+  "id": "mat-rd-emelt-sorozatok-penzugy",
+  "subject": "matematika",
+  "revision": 1,
+  "level": "emelt",
+  "source": "generated",
+  "topic": "sorozatok",
+  "title": "Számtani és mértani sorozat, kamatos kamat",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "reading",
+  "type": "rovid-szamitas",
+  "instructions": "Egy számtani sorozat harmadik tagja 11, hetedik tagja 27 (1–3. feladat). Egy mértani sorozat első tagja 2, hányadosa 3 (4–5. feladat). A 6–7. feladat kamatos kamatról szól. Csak az eredményt írd be; a 0. feladat a kidolgozott példa.",
+  "example": {
+    "id": "0",
+    "kind": "text",
+    "prompt": "Mennyi a számtani sorozat differenciája?",
+    "answer": [
+      "4",
+      "d = 4"
+    ],
+    "category": "kepletek",
+    "explanation": "a₇ = a₃ + 4d, ezért 27 = 11 + 4d, innen 4d = 16, d = 4."
+  },
+  "items": [
+    {
+      "id": "1",
+      "kind": "text",
+      "prompt": "Mennyi a számtani sorozat első tagja?",
+      "answer": [
+        "3",
+        "a1 = 3",
+        "a₁ = 3"
+      ],
+      "category": "kepletek",
+      "explanation": "a₃ = a₁ + 2d, azaz 11 = a₁ + 2·4, így a₁ = 3. Ellenőrzés: a₇ = 3 + 6·4 = 27."
+    },
+    {
+      "id": "2",
+      "kind": "text",
+      "prompt": "Mennyi a számtani sorozat első 20 tagjának összege?",
+      "answer": [
+        "820",
+        "S20 = 820"
+      ],
+      "category": "kepletek",
+      "explanation": "Sₙ = n·(2a₁ + (n − 1)d)/2 = 20·(2·3 + 19·4)/2 = 10·(6 + 76) = 820."
+    },
+    {
+      "id": "3",
+      "kind": "text",
+      "prompt": "Hányadik tagja a számtani sorozatnak a 103?",
+      "answer": [
+        "26"
+      ],
+      "category": "egyenlet-rendezes",
+      "explanation": "aₙ = a₁ + (n − 1)d: 3 + (n − 1)·4 = 103 → (n − 1)·4 = 100 → n − 1 = 25 → n = 26."
+    },
+    {
+      "id": "4",
+      "kind": "text",
+      "prompt": "Mennyi a mértani sorozat ötödik tagja?",
+      "answer": [
+        "162"
+      ],
+      "category": "kepletek",
+      "explanation": "bₙ = b₁·qⁿ⁻¹, így b₅ = 2·3⁴ = 2·81 = 162. Gyakori hiba 2·3⁵ = 486-ot számolni: a kitevő n − 1."
+    },
+    {
+      "id": "5",
+      "kind": "text",
+      "prompt": "Mennyi a mértani sorozat első 6 tagjának összege?",
+      "answer": [
+        "728"
+      ],
+      "category": "kepletek",
+      "explanation": "Sₙ = b₁·(qⁿ − 1)/(q − 1) = 2·(3⁶ − 1)/(3 − 1) = 2·728/2 = 728. (3⁶ = 729.) Ellenőrzés: 2 + 6 + 18 + 54 + 162 + 486 = 728."
+    },
+    {
+      "id": "6",
+      "kind": "text",
+      "prompt": "Egy bankban 500 000 Ft-ot helyezünk el évi 4%-os kamatos kamatra. Mennyi lesz a betét 3 év után? (Egész forintra kerekítve.)",
+      "answer": [
+        "562432",
+        "562432 Ft"
+      ],
+      "category": "kepletek",
+      "explanation": "Kamatos kamat: minden évben 1,04-szeresére nő a betét. 500 000·1,04³ = 500 000·1,124864 = 562 432 Ft."
+    },
+    {
+      "id": "7",
+      "kind": "text",
+      "prompt": "Hány év után haladja meg először a betét a 700 000 Ft-ot (ugyanilyen 4%-os kamatozással)?",
+      "answer": [
+        "9",
+        "9 év"
+      ],
+      "category": "ellenorzes",
+      "explanation": "500 000·1,04ⁿ > 700 000 → 1,04ⁿ > 1,4 → n > lg 1,4 / lg 1,04 ≈ 0,1461/0,01703 ≈ 8,58. Mivel n egész, n = 9. Ellenőrzés: 1,04⁸ ≈ 1,3686 (684 285 Ft, még kevesebb), 1,04⁹ ≈ 1,4233 (711 656 Ft, már több)."
+    }
+  ],
+  "glossary": [],
+  "suggestedMinutes": 15
+}

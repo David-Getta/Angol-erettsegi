@@ -1,0 +1,88 @@
+{
+  "schemaVersion": 1,
+  "id": "kem-wr-emelt-ammonia-viz-kenhidrogen",
+  "subject": "kemia",
+  "revision": 1,
+  "level": "emelt",
+  "source": "generated",
+  "topic": "atomszerkezet-kotesek",
+  "title": "Az ammónia, a víz és a kén-hidrogén összehasonlítása",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "writing",
+  "type": "elemzo",
+  "taskNumber": 4,
+  "situation": "Forráspontok (101,3 kPa): NH₃: −33 °C; H₂O: 100 °C; H₂S: −60 °C. Elektronegativitások: H 2,1; N 3,0; O 3,5; S 2,5.\n\na) Adja meg a három molekula alakját és kötésszögük közelítő értékét, és indokolja az elektronpár-taszítási elmélet alapján, miért kisebb a víz kötésszöge, mint az ammóniáé! (3 pont)\nb) Magyarázza meg a forráspontok sorrendjét (H₂O > NH₃ > H₂S)! (3 pont)\nc) Hogyan viselkedik az ammónia és a kén-hidrogén vízben a Brønsted-elmélet szerint? Írja fel a protolitikus egyensúlyok egyenletét! (3 pont)\nd) Mutassa be egyenlettel, hogy a víz amfoter, és adja meg a vízionszorzat értékét 25 °C-on! (2 pont)",
+  "points": [
+    {
+      "id": "p1",
+      "text": "a) Molekulaalak, kötésszög és a kötésszögek különbségének magyarázata (3 pont)"
+    },
+    {
+      "id": "p2",
+      "text": "b) A forráspontok sorrendjének magyarázata (3 pont)"
+    },
+    {
+      "id": "p3",
+      "text": "c) Az ammónia és a kén-hidrogén sav–bázis viselkedése, egyenletek (3 pont)"
+    },
+    {
+      "id": "p4",
+      "text": "d) A víz autoprotolízise és a vízionszorzat (2 pont)"
+    }
+  ],
+  "suggestedMinutes": 30,
+  "usefulPhrases": [
+    {
+      "en": "elektronpár-taszítási (VSEPR) elmélet",
+      "hu": "A központi atom körüli elektronpárok egymástól a lehető legtávolabb helyezkednek el."
+    },
+    {
+      "en": "a nemkötő elektronpár nagyobb helyet foglal el",
+      "hu": "Ezért kisebb a kötésszög: CH₄ 109,5° > NH₃ 107° > H₂O 104,5°."
+    },
+    {
+      "en": "hidrogénkötés-donor / -akceptor",
+      "hu": "A donor az O–H, N–H hidrogénje, az akceptor a nemkötő elektronpár."
+    },
+    {
+      "en": "Brønsted-sav / Brønsted-bázis",
+      "hu": "Protondonor / protonakceptor."
+    },
+    {
+      "en": "autoprotolízis",
+      "hu": "Azonos molekulák közötti protonátadás: 2 H₂O ⇌ H₃O⁺ + OH⁻."
+    },
+    {
+      "en": "Kv = 1,0 · 10⁻¹⁴ (25 °C)",
+      "hu": "A vízionszorzat – ebből következik a pH + pOH = 14."
+    }
+  ],
+  "checklistExtra": [],
+  "modelAnswer": {
+    "text": "a) Az ammónia (NH₃) trigonális piramis alakú, kötésszöge kb. 107°; a víz (H₂O) V alakú, kötésszöge 104,5°; a kén-hidrogén (H₂S) szintén V alakú, kötésszöge kb. 92°. A nitrogén- és az oxigénatom körül is négy elektronpár helyezkedik el tetraéderesen, de a nemkötő elektronpár nagyobb helyet foglal el, mint a kötő, ezért összenyomja a kötésszöget. Az ammóniában egy, a vízben két nemkötő elektronpár van, ezért a víz kötésszöge kisebb (a tetraéderes 109,5°-hoz képest 107°, illetve 104,5°).\n\nb) Mindhárom molekula poláris, de a forráspontot döntően a molekulák közötti hidrogénkötés határozza meg. A kén elektronegativitása (2,5) alig nagyobb a hidrogénénél (2,1), ezért a kén-hidrogén molekulái között nincs számottevő hidrogénkötés, csak gyenge dipólus–dipólus és diszperziós kölcsönhatás – ezért a legalacsonyabb a forráspontja (−60 °C). Az ammónia és a víz molekulái között hidrogénkötés alakul ki. Az oxigén elektronegativitása (3,5) nagyobb a nitrogénénél (3,0), így az O–H kötés polárisabb; ráadásul egy vízmolekula két hidrogénatomja és két nemkötő elektronpárja révén átlagosan két hidrogénkötés donorja és két hidrogénkötés akceptora lehet, az ammóniamolekulának viszont csak egy nemkötő elektronpárja van. A vízben tehát erősebb és több hidrogénkötés van, ezért a víz forráspontja a legmagasabb (100 °C), az ammóniáé közepes (−33 °C).\n\nc) Az ammónia bázisként viselkedik: a nitrogénatom nemkötő elektronpárjával protont vesz fel a víztől:\nNH₃ + H₂O ⇌ NH₄⁺ + OH⁻\nA kén-hidrogén gyenge savként protont ad át a víznek:\nH₂S + H₂O ⇌ HS⁻ + H₃O⁺\nMindkét egyensúly erősen a kiindulási anyagok felé tolódik, mert az ammónia gyenge bázis, a kén-hidrogén gyenge sav.\n\nd) A víz autoprotolízise során az egyik vízmolekula savként, a másik bázisként viselkedik:\nH₂O + H₂O ⇌ H₃O⁺ + OH⁻\nA vízionszorzat 25 °C-on: Kv = [H₃O⁺] · [OH⁻] = 1,0 · 10⁻¹⁴ (mol/dm³)².",
+    "pointsCovered": [
+      {
+        "id": "p1",
+        "quote": "Az ammóniában egy, a vízben két nemkötő elektronpár van, ezért a víz kötésszöge kisebb"
+      },
+      {
+        "id": "p2",
+        "quote": "A vízben tehát erősebb és több hidrogénkötés van, ezért a víz forráspontja a legmagasabb (100 °C), az ammóniáé közepes (−33 °C)."
+      },
+      {
+        "id": "p3",
+        "quote": "H₂S + H₂O ⇌ HS⁻ + H₃O⁺"
+      },
+      {
+        "id": "p4",
+        "quote": "Kv = [H₃O⁺] · [OH⁻] = 1,0 · 10⁻¹⁴ (mol/dm³)²"
+      }
+    ],
+    "notes": [
+      "Tények: az alakok, kötésszögek, forráspontok és a sav–bázis szerepek helyesek; a kén-hidrogént helyesen gyenge savként, az ammóniát gyenge bázisként kezeli.",
+      "Magyarázat: a kötésszöget az elektronpár-taszítással, a forráspont-sorrendet az elektronegativitás-különbséggel és a hidrogénkötések számával indokolja – az emelt szintű elemzéshez mindkét tényező kell.",
+      "Szaknyelv: protolitikus egyensúly, autoprotolízis, hidrogénkötés-donor és -akceptor; az egyensúlyjel (⇌) és a töltések hibátlanok."
+    ]
+  }
+}

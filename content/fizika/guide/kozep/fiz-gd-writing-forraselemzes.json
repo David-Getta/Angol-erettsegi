@@ -1,0 +1,121 @@
+{
+  "schemaVersion": 1,
+  "id": "fiz-gd-writing-forraselemzes",
+  "subject": "fizika",
+  "revision": 1,
+  "level": "kozep",
+  "source": "generated",
+  "topic": "utmutato",
+  "title": "Forráselemzés",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "guide",
+  "type": "writing",
+  "target": "forraselemzes",
+  "summaryHu": "A forráselemzésben egy rövid ismeretterjesztő szöveg, táblázat vagy szövegesen leírt grafikon alapján kell 4–6 kérdésre fizikai indoklással válaszolni (közép: 17 pont – válaszok 10, indoklás 4, szaknyelv 3). A feladat azt méri, hogy a forrás adatait helyesen ki tudod-e olvasni, össze tudod-e kapcsolni a tanult fizikával, és pontos szaknyelven meg tudod-e fogalmazni a választ.",
+  "steps": [
+    {
+      "title": "Olvasd el a kérdéseket a forrás előtt",
+      "explanation": "Így olvasás közben már tudod, milyen adatokat keress. Jelöld a forrásban az adatokat, és írd melléjük, melyik kérdéshez kellenek.",
+      "tips": [
+        "A táblázat oszlopainak mértékegységét karikázd be.",
+        "A leírt grafikont rajzold le."
+      ]
+    },
+    {
+      "title": "Válaszolj a forrás adataival",
+      "explanation": "A számolós kérdéseket a forrás adataival oldd meg, akkor is, ha a saját tudásod szerint más érték is lehetne. Jelezd, ha a forrásból veszed az adatot.",
+      "tips": [
+        "„A forrás szerint …”",
+        "Írd le a számítás menetét is, ne csak az eredményt."
+      ]
+    },
+    {
+      "title": "Kapcsold a tanult fizikához",
+      "explanation": "A „miért” kérdéseknél nevezd meg a fizikai törvényt vagy jelenséget (pl. belső fényelektromos jelenség, felezési idő, Arkhimédész törvénye), és alkalmazd a forrásban leírt helyzetre.",
+      "tips": [
+        "Egy jó válasz: törvény + alkalmazás + következtetés.",
+        "Legalább annyi okot adj meg, amennyit a kérdés kér."
+      ]
+    },
+    {
+      "title": "Szaknyelv és mértékegységek",
+      "explanation": "Pontos szakkifejezéseket használj, minden mennyiséget mértékegységgel adj meg. A szaknyelvi pontok (3) könnyen elveszhetnek a pontatlan hétköznapi fogalmazással.",
+      "tips": [
+        "„Aktivitás-koncentráció”, nem „sugárzás mennyisége”.",
+        "„Hatásfok”, nem „kihasználtság”."
+      ]
+    }
+  ],
+  "phrases": [
+    {
+      "group": "Forrás",
+      "en": "A forrás szerint …",
+      "hu": "Adat átvétele a forrásból."
+    },
+    {
+      "group": "Forrás",
+      "en": "A táblázat adataiból kiszámítva …",
+      "hu": "Számolás a forrás adataival."
+    },
+    {
+      "group": "Indoklás",
+      "en": "Ennek fizikai oka az, hogy …",
+      "hu": "A „miért” kérdések válaszának kezdete."
+    },
+    {
+      "group": "Indoklás",
+      "en": "A … törvény szerint …, ezért …",
+      "hu": "Törvény alkalmazása a helyzetre."
+    },
+    {
+      "group": "Arány",
+      "en": "… kb. …-szor nagyobb, mint …",
+      "hu": "Két adat összevetése."
+    },
+    {
+      "group": "Energia",
+      "en": "η = E_hasznos / E_befektetett",
+      "hu": "Hatásfok a forrás adataiból."
+    },
+    {
+      "group": "Magfizika",
+      "en": "N = N₀ · (1/2)^(t/T½)",
+      "hu": "Bomlási törvény forrásbeli felezési idővel."
+    },
+    {
+      "group": "Összevetés",
+      "en": "A mért érték meghaladja / nem éri el a … határértéket.",
+      "hu": "Adatok összevetése a forrásban adott referenciaszinttel."
+    }
+  ],
+  "mistakes": [
+    {
+      "wrong": "A kérdésre a tankönyvi tudásomból válaszolok, a forrást nem használom.",
+      "right": "A forrás adataiból indulok ki, és ezeket kapcsolom a tanult fizikához.",
+      "why": "A feladat a forrás feldolgozását értékeli; a forrástól független válasz részpontot ér."
+    },
+    {
+      "wrong": "„Télen kevesebb a napfény.”",
+      "right": "„Télen alacsonyabban delel a Nap, laposabb szögben érkeznek a sugarak, és rövidebbek a nappalok, ezért egységnyi felületre kevesebb energia jut.”",
+      "why": "A válaszok pontja a fizikai okért jár, nem a hétköznapi megállapításért."
+    },
+    {
+      "wrong": "A számolás eredményét mértékegység nélkül adom meg.",
+      "right": "Az eredmény mértékegységgel szerepel (kWh, Bq, %).",
+      "why": "A szaknyelvi szempont a mértékegységeket is értékeli."
+    }
+  ],
+  "checklist": [
+    "Minden kérdésre válaszoltam.",
+    "A számolásokat a forrás adataival végeztem, és jeleztem a forrást.",
+    "A „miért” kérdéseknél megneveztem a fizikai törvényt.",
+    "Minden mennyiség mértékegységgel szerepel.",
+    "Pontos szakkifejezéseket használtam."
+  ],
+  "timing": "Kb. 35 perc: 5 perc a kérdések és a forrás elolvasása (adatok jelölése), 25 perc a válaszok, 5 perc ellenőrzés. A rövid, 2–3 pontos kérdésekre 3–4 mondat elég.",
+  "levelNotes": {
+    "kozep": "Középszinten a forráselemzés kötelező, 17 pontos: a forrás egy hétköznapi vagy technikai témát dolgoz fel (napelem, radon, közlekedés, időjárás), a kérdések egyszerű adatkiolvasást, egylépéses számolást és fizikai magyarázatot kérnek.",
+    "emelt": "Emelt szinten a forráselemző jellegű kérdések a III. rész összetett feladataiban jelennek meg, több adat összekapcsolásával, grafikonról leolvasott értékekkel és többlépéses számolással."
+  }
+}

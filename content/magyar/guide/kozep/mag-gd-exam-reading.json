@@ -1,0 +1,133 @@
+{
+  "schemaVersion": 1,
+  "id": "mag-gd-exam-reading",
+  "subject": "magyar",
+  "revision": 1,
+  "level": "kozep",
+  "source": "generated",
+  "topic": "utmutato",
+  "title": "Szövegértés",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "guide",
+  "type": "exam",
+  "target": "reading",
+  "summaryHu": "Az írásbeli I. részének szövegértési feladatsora: egy (esetleg két) ismeretterjesztő, publicisztikai vagy esszészöveghez kapcsolódó kérdéssor. Középszinten 40 pontot ér, emelt szinten a szövegértési és nyelvi-irodalmi műveltségi feladatsor együtt 40 pontos (az app ebből 25 pontot számol a szövegértésre). A kérdések az információ visszakeresését, a lényegkiemelést, a következtetést és a szövegszerkezet felismerését mérik; minden választ a szövegből kell igazolni. Helyesírási szótár használható.",
+  "steps": [
+    {
+      "title": "Első olvasás: a szöveg egésze",
+      "explanation": "Olvasd végig a szöveget egyszer, megállás nélkül, hogy lásd a témáját, a műfaját és a szerző álláspontját. Jelöld meg ceruzával a bekezdések számát és a kulcsszavakat. Ne a kérdésekkel kezdj: ha előbb a kérdéseket olvasod, a szöveget csak darabokban látod.",
+      "tips": [
+        "A cím, az alcím és az első bekezdés utolsó mondata gyakran elárulja a fő gondolatot.",
+        "A bekezdések első mondatait karikázd be: ezek többnyire tételmondatok."
+      ]
+    },
+    {
+      "title": "A kérdések elemzése",
+      "explanation": "Minden kérdésnél húzd alá a kérdőszót (mikor, hány, miért, milyen szerepű), a szűkítő szavakat (NEM, csak, első) és az utasítást (idézze, írja ki, fogalmazza meg saját szavaival). Ezek döntik el, milyen formájú válasz kell.",
+      "tips": [
+        "Az „Idézze!” szó szerinti, idézőjeles választ kér, a „saját szavaival” átfogalmazást.",
+        "A kérdések sorrendje többnyire a szöveg sorrendjét követi."
+      ]
+    },
+    {
+      "title": "Válasz és igazolás",
+      "explanation": "Keresd meg a szövegben azt a helyet, ahol a válasz található, és csak ennek alapján válaszolj. Feleletválasztásnál zárd ki a szövegnek ellentmondó és a szövegben nem szereplő opciókat. Igaz–hamis kérdésnél olvasd vissza szóról szóra a releváns mondatot.",
+      "tips": [
+        "Ha nem találod a választ igazoló mondatot, valószínűleg a saját tudásodból válaszoltál.",
+        "A mértékegységet és a pontos nevet ne hagyd le."
+      ]
+    },
+    {
+      "title": "Következtetéses és szerkezeti kérdések",
+      "explanation": "A nehezebb kérdések a szerző véleményére, hangnemére, egy kifejezés jelentésére vagy egy bekezdés szerepére kérdeznek. Ilyenkor a kötőszavak (azonban, tehát, persze, pedig) és az értékelő szavak adják a kulcsot.",
+      "tips": [
+        "Szerkezeti kérdésnél olvasd el az előző bekezdés utolsó és a vizsgált bekezdés első mondatát.",
+        "Hangnemre vonatkozó kérdésnél keresd a túlzásokat, idézőjeles szavakat, költői kérdéseket."
+      ]
+    },
+    {
+      "title": "Ellenőrzés",
+      "explanation": "A végén nézd át, hogy minden kérdésre válaszoltál-e, a rövid válaszok olvashatók és helyesen írottak-e. Üresen hagyott válasz biztosan nulla pont: inkább írj be egy jól megindokolt tippet.",
+      "tips": [
+        "Különösen a neveket és a szakszavakat ellenőrizd helyesírás szempontjából."
+      ]
+    }
+  ],
+  "phrases": [
+    {
+      "group": "Utasítások értelmezése",
+      "en": "Idézze! / Írja ki a szövegből!",
+      "hu": "szó szerinti, idézőjeles válasz kell"
+    },
+    {
+      "group": "Utasítások értelmezése",
+      "en": "Fogalmazza meg saját szavaival!",
+      "hu": "tömör átfogalmazás, nem idézet"
+    },
+    {
+      "group": "Utasítások értelmezése",
+      "en": "Melyik NEM …?",
+      "hu": "a szövegben nem szereplő vagy annak ellentmondó állítást kell kiválasztani"
+    },
+    {
+      "group": "Szerkezeti jelzések",
+      "en": "azonban, viszont, ezzel szemben",
+      "hu": "ellentétet, fordulatot jelez – a bekezdés árnyal vagy cáfol"
+    },
+    {
+      "group": "Szerkezeti jelzések",
+      "en": "tehát, vagyis, összességében",
+      "hu": "összegzést jelez – gyakran itt áll a szöveg fő gondolata"
+    },
+    {
+      "group": "Szerkezeti jelzések",
+      "en": "persze, igaz ugyan, bár",
+      "hu": "megengedést jelez – a szerző egy ellenvetést fogad be"
+    },
+    {
+      "group": "Szerzői hangnem",
+      "en": "legalábbis látszólag, úgynevezett",
+      "hu": "iróniára, kritikus távolságtartásra utalhat"
+    },
+    {
+      "group": "Szerzői hangnem",
+      "en": "Szerintem / Úgy gondolom / Valójában",
+      "hu": "a szerző saját álláspontja következik"
+    }
+  ],
+  "mistakes": [
+    {
+      "wrong": "A kérdésre a saját véleményem szerint válaszolok.",
+      "right": "A választ mindig a szöveg egy konkrét helyével igazolom.",
+      "why": "A szövegértési feladat a szövegről szól; ami igaz lehet a valóságban, de a szöveg nem állítja, az rossz válasz."
+    },
+    {
+      "wrong": "„Idézze!” utasításra saját szavaimmal foglalom össze a mondatot.",
+      "right": "Szó szerint, idézőjelben másolom ki a mondatot.",
+      "why": "Az utasítás figyelmen kívül hagyása akkor is pontvesztés, ha a tartalom helyes."
+    },
+    {
+      "wrong": "A „Melyik NEM…” kérdésnél a szövegben szereplő állítást jelölöm.",
+      "right": "A szövegben nem szereplő vagy annak ellentmondó állítást jelölöm.",
+      "why": "A tagadó kérdés megfordítja a feladatot; a NEM szót érdemes bekarikázni."
+    },
+    {
+      "wrong": "Egy nehéz kérdésen 10 percig gondolkodom.",
+      "right": "Továbblépek, és a végén térek vissza rá.",
+      "why": "Egy-egy kérdés csak néhány pontot ér; az elakadás a könnyebb kérdésektől veszi el az időt."
+    }
+  ],
+  "checklist": [
+    "Végigolvastam az egész szöveget, mielőtt a kérdésekhez kezdtem.",
+    "Minden kérdésnél aláhúztam a kérdőszót és az utasítást (idézze / saját szavaival / NEM).",
+    "Minden válaszomat igazolni tudom egy szöveghellyel.",
+    "A számoknál megadtam a mértékegységet, a neveket pontosan írtam le.",
+    "Nem maradt üres válasz."
+  ],
+  "timing": "Középszinten az I. feladatlapra összesen 90 perc jut a szövegértéssel és az irodalmi műveltségi feladatlappal együtt; a szövegértésre érdemes kb. 55–60 percet szánni (10 perc olvasás, 40 perc válaszadás, 5–10 perc ellenőrzés). Emelt szinten szintén 90 perc a teljes I. feladatsor; a szövegértésre kb. 55 perc ajánlott.",
+  "levelNotes": {
+    "kozep": "Középszinten egy (néha két) szöveg tartozik a feladatsorhoz, a kérdések nagyobb része információ-visszakeresés és lényegkiemelés; a következtetéses kérdések a szöveghez közel maradnak. A szöveg terjedelmét a feladatlap adja; az app középszintű gyakorlószövegei kb. 500–600 szavasak.",
+    "emelt": "Emelt szinten hosszabb, elvontabb esszé vagy értekezés a jellemző (az app emelt szintű gyakorlószövegei kb. 700–750 szavasak), több a következtetéses, szerkezeti és szerzői szándékra vonatkozó kérdés (irónia, érvelési lépések, keretes szerkezet). A szövegértési rész egy feladatsorban szerepel a nyelvi-irodalmi műveltségi kérdésekkel."
+  }
+}

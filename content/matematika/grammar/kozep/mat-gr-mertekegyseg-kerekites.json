@@ -1,0 +1,191 @@
+{
+  "schemaVersion": 1,
+  "id": "mat-gr-mertekegyseg-kerekites",
+  "subject": "matematika",
+  "revision": 1,
+  "level": "kozep",
+  "source": "generated",
+  "topic": "nyelvtan",
+  "title": "Mértékegységek, átváltás, kerekítés",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "grammar",
+  "type": "lesson",
+  "category": "mertekegyseg-kerekites",
+  "summaryHu": "A mértékegység és a kerekítés a „forma” pontjait érinti, de rossz átváltásnál a végeredmény is hibás lesz. Területnél négyzetes, térfogatnál köbös a váltószám; a kerekítést a feladatban kért pontossággal és csak a végén végezzük.",
+  "rules": [
+    {
+      "title": "Hossz, terület, térfogat átváltása",
+      "explanation": "1 m = 10 dm = 100 cm. Területnél a váltószám négyzetre emelődik (1 m² = 100 dm² = 10 000 cm²), térfogatnál köbre (1 m³ = 1000 dm³ = 1 000 000 cm³). 1 dm³ = 1 liter, 1 m³ = 1000 liter.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "3,2 m² = 32 000 cm²",
+          "hu": "Nem 320 cm²: a váltószám 100² = 10 000."
+        },
+        {
+          "en": "2,5 m³ = 2500 dm³ = 2500 liter",
+          "hu": "1 m³ = 1000 liter."
+        }
+      ]
+    },
+    {
+      "title": "Idő és szög",
+      "explanation": "Az idő hatvanas számrendszerű: 0,75 óra = 0,75 · 60 = 45 perc. Szögnél π radián = 180°, ezért fokból radiánba π/180-nal szorzunk, radiánból fokba 180/π-vel.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "1,75 óra = 1 óra 45 perc",
+          "hu": "Nem 1 óra 75 perc."
+        },
+        {
+          "en": "π/6 rad = 30°, 135° = 3π/4 rad",
+          "hu": "Szögfüggvények számolásánál a számológép fok/radián módja is számít."
+        }
+      ]
+    },
+    {
+      "title": "Kerekítés szabálya és a kért pontosság",
+      "explanation": "A kért helyiérték utáni jegy dönt: 5 vagy nagyobb esetén felfelé, különben lefelé kerekítünk. Csak a végeredményt kerekítjük; a részeredményeket pontosan visszük tovább. Ha a feladat nem ír pontosságot, értelmes (2–3 értékes jegyű) kerekítést adunk, és ezt jelezzük (≈).",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "4,5² · π = 63,617… ≈ 63,6 cm² (egy tizedesjegyre)",
+          "hu": "A második tizedesjegy (1) miatt lefelé."
+        },
+        {
+          "en": "2 071 080 Ft ezer forintra: 2 071 000 Ft",
+          "hu": "A százasok helyén 0 áll, ezért lefelé."
+        }
+      ]
+    },
+    {
+      "title": "Gyakorlati kerekítés",
+      "explanation": "Valós helyzetben a feladat dönti el az irányt: festékből, csempéből, buszból felfelé kerekítünk (különben nem elég), elkészíthető darabszámnál lefelé (nem lehet fél süteményt eladni).",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "418,4 m² csempe · 1,1 = 460,24 m² → 461 m²-t kell venni, ha csak egész m² kapható",
+          "hu": "Lefelé kerekítve nem lenne elég."
+        },
+        {
+          "en": "1 kg lisztből 7,6 adag → 7 teljes adag",
+          "hu": "Az elkészíthető adag lefelé kerekítendő."
+        }
+      ]
+    }
+  ],
+  "commonMistakes": [
+    {
+      "wrong": "1 m² = 100 cm²",
+      "right": "1 m² = 10 000 cm²",
+      "why": "1 m = 100 cm, és a terület két hossz szorzata, így a váltószám 100 · 100 = 10 000."
+    },
+    {
+      "wrong": "2,5 óra = 2 óra 50 perc",
+      "right": "2,5 óra = 2 óra 30 perc",
+      "why": "Az óra 60 perc, nem 100: 0,5 óra = 30 perc."
+    },
+    {
+      "wrong": "Részeredmények kerekítése: sin γ ≈ 0,96, majd T ≈ 28 · 0,96 = 26,88",
+      "right": "sin γ pontos értékével: T ≈ 26,83 → 26,8",
+      "why": "A korán kerekített részeredmény a végeredmény tizedesjegyeit elrontja; a teljes pontossággal kell továbbszámolni."
+    },
+    {
+      "wrong": "A válasz: 480 (mértékegység nélkül, a kérdés literben kérdezett)",
+      "right": "A medencébe 480 m³ = 480 000 liter víz fér.",
+      "why": "A végeredménynél a kért mértékegység és a szöveges válasz is pontot ér; a 480 egy literes kérdésre hibás válasz."
+    }
+  ],
+  "examTips": [
+    "A II. részben a rubrika „Válasz, mértékegység, ellenőrzés” szempontja feladatonként 1–2 pont – a mértékegység nélküli végeredmény ezt elveszíti.",
+    "Figyeld a kérdés mértékegységét: ha m³-ben adott a térfogat, de literben kérdezik, váltsd át (· 1000).",
+    "A kért pontosságot (pl. „két tizedesjegyre”, „ezer forintra”) pontosan tartsd be; az eltérő kerekítés pontlevonással jár."
+  ],
+  "practice": [
+    {
+      "id": "1",
+      "kind": "text",
+      "prompt": "Hány cm² 3,2 m²?",
+      "answer": [
+        "32000",
+        "32000 cm²",
+        "32000 cm2"
+      ],
+      "category": "mertekegyseg-kerekites",
+      "explanation": "32 000 cm². 1 m² = 10 000 cm² (100 cm · 100 cm), így 3,2 · 10 000 = 32 000 cm²."
+    },
+    {
+      "id": "2",
+      "kind": "text",
+      "prompt": "Hány liter 2,5 m³?",
+      "answer": [
+        "2500",
+        "2500 l",
+        "2500 liter"
+      ],
+      "category": "mertekegyseg-kerekites",
+      "explanation": "2500 liter. 1 m³ = 1000 dm³ és 1 dm³ = 1 liter, így 2,5 m³ = 2500 liter."
+    },
+    {
+      "id": "3",
+      "kind": "choice",
+      "prompt": "Mennyi 1,75 óra?",
+      "options": [
+        {
+          "key": "A",
+          "text": "1 óra 75 perc"
+        },
+        {
+          "key": "B",
+          "text": "1 óra 34 perc"
+        },
+        {
+          "key": "C",
+          "text": "1 óra 7,5 perc"
+        },
+        {
+          "key": "D",
+          "text": "1 óra 45 perc"
+        }
+      ],
+      "answer": "D",
+      "category": "mertekegyseg-kerekites",
+      "explanation": "A helyes: 1 óra 45 perc. 0,75 óra = 0,75 · 60 perc = 45 perc.",
+      "wrongOptions": {
+        "A": "A 75 perc több egy óránál; az óra 60 perc, nem 100.",
+        "B": "A 34 perc nem jön ki semmilyen helyes átváltásból: 0,75 · 60 = 45.",
+        "C": "A 7,5 perc 0,125 óra lenne."
+      }
+    },
+    {
+      "id": "4",
+      "kind": "text",
+      "prompt": "Hány fok a π/6 radián?",
+      "answer": [
+        "30",
+        "30°"
+      ],
+      "category": "mertekegyseg-kerekites",
+      "explanation": "30°. π radián = 180°, így π/6 = 180°/6 = 30°."
+    },
+    {
+      "id": "5",
+      "kind": "text",
+      "prompt": "Egy kör sugara 4,5 cm. Mekkora a területe egy tizedesjegyre kerekítve (cm²)?",
+      "answer": [
+        "63,6",
+        "63.6",
+        "63,6 cm²",
+        "63.6 cm²"
+      ],
+      "category": "mertekegyseg-kerekites",
+      "explanation": "63,6 cm². T = r²π = 20,25π ≈ 63,617 cm², egy tizedesjegyre 63,6 cm² (a második tizedesjegy 1, ezért lefelé kerekítünk)."
+    }
+  ],
+  "relatedCategories": [
+    "szamolasi-hiba",
+    "valasz-megfogalmazas",
+    "kepletek"
+  ]
+}

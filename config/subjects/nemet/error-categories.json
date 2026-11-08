@@ -1,0 +1,224 @@
+{
+  "meta": {
+    "verifiedAt": "2026-11-05",
+    "sources": [
+      {
+        "title": "Eduline (2024. 05. 10.): Itt van minden, amit a pénteki németérettségiről tudni érdemes (közép 60/30/30/60 perc, 33/18/33/33 pont + szóbeli 33; emelt 4 × 30 + 30)",
+        "url": "https://eduline.hu/erettsegi-felveteli/20240510_Itt-van-minden-amit-a-penteki-nemeterettsegirol-tudni-erdemes-erettsegi-2024"
+      },
+      {
+        "title": "Oktatási Hivatal: Élő idegen nyelv – közös vizsgaleírás (a német ugyanazt a szerkezetet követi, mint az angol)",
+        "url": "https://www.oktatas.hu/pub_bin/dload/kozoktatas/erettsegi/vizsgakovetelmenyek2017/elo_idegen_nyelv_vl.pdf"
+      }
+    ],
+    "notes": [
+      "A kategóriák az app belső kulcsai a német nyelvtan tipikus hibaterületeire (magyar anyanyelvűek szempontjából); a szövegértési és írás-kategóriák az angollal közösek."
+    ]
+  },
+  "groups": [
+    {
+      "id": "grammar",
+      "name": "Nyelvtan"
+    },
+    {
+      "id": "vocabulary",
+      "name": "Szókincs"
+    },
+    {
+      "id": "writing",
+      "name": "Írás"
+    },
+    {
+      "id": "comprehension",
+      "name": "Szövegértés"
+    }
+  ],
+  "categories": [
+    {
+      "id": "verb-conjugation",
+      "name": "Igeragozás",
+      "group": "grammar",
+      "description": "Jelen idejű ragozás, tőhangváltós és rendhagyó igék (sein, haben, werden, wissen), elváló igekötők."
+    },
+    {
+      "id": "tense",
+      "name": "Igeidők",
+      "group": "grammar",
+      "description": "Perfekt / Präteritum / Plusquamperfekt / Futur választása és képzése (haben vagy sein, Partizip II)."
+    },
+    {
+      "id": "case",
+      "name": "Esetek (Kasus)",
+      "group": "grammar",
+      "description": "Nominativ, Akkusativ, Dativ, Genitiv használata: tárgy, részeshatározó, birtokos."
+    },
+    {
+      "id": "article-declension",
+      "name": "Névelők, névelőragozás",
+      "group": "grammar",
+      "description": "der/die/das, határozott–határozatlan névelő, névelő nélküli alakok, a névelő ragozása."
+    },
+    {
+      "id": "adjective-declension",
+      "name": "Melléknévragozás",
+      "group": "grammar",
+      "description": "A melléknév végződése névelővel, névelő nélkül, határozatlan névelővel; fokozás."
+    },
+    {
+      "id": "preposition",
+      "name": "Elöljárószók és vonzatuk",
+      "group": "grammar",
+      "description": "Tárgy-, részes-, váltakozó és birtokos esetű elöljárók (in, auf, mit, wegen…), Wechselpräpositionen."
+    },
+    {
+      "id": "word-order",
+      "name": "Szórend",
+      "group": "grammar",
+      "description": "Ige a második helyen, fordított szórend, mellékmondati (KATI) szórend, keretes szerkezet, TeKaMoLo."
+    },
+    {
+      "id": "conjunction",
+      "name": "Kötőszók, mellékmondatok",
+      "group": "grammar",
+      "description": "weil / denn / deshalb, dass, ob, wenn / als, obwohl, trotzdem, vonatkozói mellékmondat."
+    },
+    {
+      "id": "modal",
+      "name": "Módbeli segédigék",
+      "group": "grammar",
+      "description": "können, müssen, dürfen, sollen, wollen, mögen / möchte jelentése, ragozása és múlt ideje."
+    },
+    {
+      "id": "passive",
+      "name": "Szenvedő szerkezet",
+      "group": "grammar",
+      "description": "werden + Partizip II, Zustandspassiv, szenvedő módbeli segédigével."
+    },
+    {
+      "id": "konjunktiv",
+      "name": "Konjunktiv II, feltételes mondat",
+      "group": "grammar",
+      "description": "würde + Infinitiv, hätte/wäre/könnte, irreális feltétel és kívánság, udvarias kérés."
+    },
+    {
+      "id": "infinitive",
+      "name": "Főnévi igenév zu-val és zu nélkül",
+      "group": "grammar",
+      "description": "zu + Infinitiv, um…zu, ohne…zu, módbeli segédigék és lassen zu nélkül."
+    },
+    {
+      "id": "reflexive-pronoun",
+      "name": "Visszaható igék, névmások",
+      "group": "grammar",
+      "description": "sich-es igék, személyes és birtokos névmások ragozása, es használata."
+    },
+    {
+      "id": "plural-gender",
+      "name": "Főnevek neme és többes száma",
+      "group": "grammar",
+      "description": "A főnév neme, többesszám-képzés, gyenge ragozású főnevek (n-Deklination)."
+    },
+    {
+      "id": "negation",
+      "name": "Tagadás",
+      "group": "grammar",
+      "description": "nicht / kein helye és választása, nie, niemand, nichts."
+    },
+    {
+      "id": "verb-rection",
+      "name": "Igevonzatok",
+      "group": "vocabulary",
+      "description": "Igék, melléknevek, főnevek állandó vonzata (warten auf, sich interessieren für, Angst vor)."
+    },
+    {
+      "id": "collocation",
+      "name": "Kollokációk, állandó szókapcsolatok",
+      "group": "vocabulary",
+      "description": "Természetes szókapcsolatok és funkcióigés szerkezetek (eine Entscheidung treffen, Sport treiben)."
+    },
+    {
+      "id": "word-formation",
+      "name": "Szóképzés, összetett szavak",
+      "group": "vocabulary",
+      "description": "Képzők (-ung, -heit, -keit, -lich, -bar), összetett szavak, igekötők jelentésváltozása."
+    },
+    {
+      "id": "false-friend",
+      "name": "Hamis barátok, jelentéskeverés",
+      "group": "vocabulary",
+      "description": "Hasonló alakú, más jelentésű szavak (bekommen, Gift, wer/wo), rokon értelmű szavak keverése."
+    },
+    {
+      "id": "vocabulary-range",
+      "name": "Szókincs terjedelme, pontos szóválasztás",
+      "group": "vocabulary",
+      "description": "A témához illő, pontos, változatos szóhasználat."
+    },
+    {
+      "id": "spelling",
+      "name": "Helyesírás",
+      "group": "writing",
+      "description": "Betűhibák, kis/nagybetű (nyelvek, napok, nemzetiségek), egybe-/különírás."
+    },
+    {
+      "id": "punctuation",
+      "name": "Központozás",
+      "group": "writing",
+      "description": "Vessző, pont, aposztróf; levélformák központozása."
+    },
+    {
+      "id": "register",
+      "name": "Hangnem",
+      "group": "writing",
+      "description": "A helyzethez illő formális/informális nyelvhasználat, megszólítás, elköszönés, összevonások."
+    },
+    {
+      "id": "cohesion",
+      "name": "Szövegkohézió",
+      "group": "writing",
+      "description": "Bekezdések, gondolatok összekapcsolása, utalószavak, ismétlések elkerülése."
+    },
+    {
+      "id": "detail",
+      "name": "Részletek megértése",
+      "group": "comprehension",
+      "description": "Konkrét információ (név, szám, ok, időpont) kikeresése a szövegből."
+    },
+    {
+      "id": "gist",
+      "name": "Fő gondolat",
+      "group": "comprehension",
+      "description": "A bekezdés vagy a szöveg fő mondanivalójának megértése (pl. címillesztésnél)."
+    },
+    {
+      "id": "inference",
+      "name": "Következtetés",
+      "group": "comprehension",
+      "description": "Ki nem mondott, de a szövegből következő információ, a szerző/beszélő szándéka."
+    },
+    {
+      "id": "vocabulary-in-context",
+      "name": "Szó jelentése a szövegben",
+      "group": "comprehension",
+      "description": "Ismeretlen szó vagy kifejezés jelentésének kikövetkeztetése a szövegkörnyezetből."
+    },
+    {
+      "id": "text-structure",
+      "name": "Szövegszerkezet",
+      "group": "comprehension",
+      "description": "Hiányzó mondat/bekezdés visszahelyezése: utalószavak, logikai kapcsolatok."
+    },
+    {
+      "id": "attitude",
+      "name": "Vélemény, hozzáállás",
+      "group": "comprehension",
+      "description": "A beszélő vagy a szerző véleménye, érzései, hozzáállása."
+    },
+    {
+      "id": "true-false-trap",
+      "name": "Igaz / hamis / nem derül ki",
+      "group": "comprehension",
+      "description": "Az állítás és a szöveg pontos összevetése – különösen a „nem derül ki” eset."
+    }
+  ]
+}

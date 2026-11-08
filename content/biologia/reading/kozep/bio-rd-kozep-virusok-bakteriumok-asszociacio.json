@@ -1,0 +1,324 @@
+{
+  "schemaVersion": 1,
+  "id": "bio-rd-kozep-virusok-bakteriumok-asszociacio",
+  "subject": "biologia",
+  "revision": 1,
+  "level": "kozep",
+  "source": "generated",
+  "topic": "egyed-szervezodes",
+  "title": "Vírusok és baktériumok – asszociáció",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "reading",
+  "type": "asszociacio",
+  "instructions": "Döntse el az alábbi állításokról, hogy kire igazak! Írja a megfelelő betűt az állítás mellé: A) csak a vírusokra igaz, B) csak a baktériumokra igaz, C) mindkettőre igaz, D) egyikre sem igaz. A 0. állítás a példa.",
+  "example": {
+    "id": "0",
+    "kind": "choice",
+    "prompt": "Örökítőanyagot (nukleinsavat) tartalmaznak.",
+    "options": [
+      {
+        "key": "A",
+        "text": "csak a vírusokra igaz"
+      },
+      {
+        "key": "B",
+        "text": "csak a baktériumokra igaz"
+      },
+      {
+        "key": "C",
+        "text": "mindkettőre igaz"
+      },
+      {
+        "key": "D",
+        "text": "egyikre sem igaz"
+      }
+    ],
+    "answer": "C",
+    "category": "felepites-mukodes",
+    "explanation": "Helyes: C. A baktériumok örökítőanyaga DNS, a vírusoké DNS vagy RNS – nukleinsav nélkül egyikük sem tudna szaporodni, hiszen ez hordozza a felépítésükhöz szükséges információt."
+  },
+  "items": [
+    {
+      "id": "1",
+      "kind": "choice",
+      "prompt": "Önálló anyagcseréjük nincs, csak élő gazdasejtben képesek szaporodni.",
+      "options": [
+        {
+          "key": "A",
+          "text": "csak a vírusokra igaz"
+        },
+        {
+          "key": "B",
+          "text": "csak a baktériumokra igaz"
+        },
+        {
+          "key": "C",
+          "text": "mindkettőre igaz"
+        },
+        {
+          "key": "D",
+          "text": "egyikre sem igaz"
+        }
+      ],
+      "answer": "A",
+      "category": "fogalomhasznalat",
+      "explanation": "Helyes: A. A vírusok nem sejtek: nincs saját anyagcseréjük, riboszómájuk és energiatermelésük, ezért csak a gazdasejt anyagait és enzimjeit felhasználva sokszorozódnak. A baktériumok önálló, saját anyagcserével rendelkező sejtek.",
+      "wrongOptions": {
+        "B": "A baktériumok önálló sejtek, a legtöbbjük táptalajon, gazdasejt nélkül is szaporodik.",
+        "C": "A baktériumok saját anyagcserével rendelkeznek, ezért nem igaz mindkettőre.",
+        "D": "A vírusokra igaz: gazdasejt nélkül nem szaporodnak."
+      }
+    },
+    {
+      "id": "2",
+      "kind": "choice",
+      "prompt": "Sejtfal határolja őket, de maghártyával körülvett, valódi sejtmagjuk nincs.",
+      "options": [
+        {
+          "key": "A",
+          "text": "csak a vírusokra igaz"
+        },
+        {
+          "key": "B",
+          "text": "csak a baktériumokra igaz"
+        },
+        {
+          "key": "C",
+          "text": "mindkettőre igaz"
+        },
+        {
+          "key": "D",
+          "text": "egyikre sem igaz"
+        }
+      ],
+      "answer": "B",
+      "category": "felepites-mukodes",
+      "explanation": "Helyes: B. A baktériumok prokarióta sejtek: sejthártyájukon kívül (a fajok többségénél) sejtfal van, örökítőanyaguk pedig a citoplazmában, sejtmag nélkül található. A vírusoknak se sejtfaluk, se sejtmagjuk nincs, mert nem sejtek.",
+      "wrongOptions": {
+        "A": "A vírusok nem sejtek, ezért sejtfaluk sincs; örökítőanyagukat fehérjeburok veszi körül.",
+        "C": "Sejtfala csak a baktériumnak van, a vírusnak nincs.",
+        "D": "A baktériumokra igaz az állítás, tehát nem lehet „egyik sem”."
+      }
+    },
+    {
+      "id": "3",
+      "kind": "choice",
+      "prompt": "Antibiotikumokkal elpusztíthatók, vagy szaporodásuk gátolható.",
+      "options": [
+        {
+          "key": "A",
+          "text": "csak a vírusokra igaz"
+        },
+        {
+          "key": "B",
+          "text": "csak a baktériumokra igaz"
+        },
+        {
+          "key": "C",
+          "text": "mindkettőre igaz"
+        },
+        {
+          "key": "D",
+          "text": "egyikre sem igaz"
+        }
+      ],
+      "answer": "B",
+      "category": "felepites-mukodes",
+      "explanation": "Helyes: B. Az antibiotikumok a baktériumsejt saját szerkezeteit (pl. sejtfalképzés, baktériumriboszóma) támadják. A vírusoknak ilyen szerkezeteik nincsenek, ezért vírusos betegségre (pl. influenzára) az antibiotikum hatástalan.",
+      "wrongOptions": {
+        "A": "Vírusfertőzésre az antibiotikum nem hat, mert a vírusnak nincs sejtfala és saját riboszómája.",
+        "C": "A vírusokra nem igaz, ezért nem lehet „mindkettő”.",
+        "D": "A baktériumokra igaz, erre fejlesztették ki az antibiotikumokat."
+      }
+    },
+    {
+      "id": "4",
+      "kind": "choice",
+      "prompt": "Okozhatnak emberi betegséget, és egyes fajaik ellen védőoltás is létezik.",
+      "options": [
+        {
+          "key": "A",
+          "text": "csak a vírusokra igaz"
+        },
+        {
+          "key": "B",
+          "text": "csak a baktériumokra igaz"
+        },
+        {
+          "key": "C",
+          "text": "mindkettőre igaz"
+        },
+        {
+          "key": "D",
+          "text": "egyikre sem igaz"
+        }
+      ],
+      "answer": "C",
+      "category": "fogalomhasznalat",
+      "explanation": "Helyes: C. Vírus okozza például a kanyarót, az influenzát és a bárányhimlőt, baktérium a tetanuszt, a diftériát és a szamárköhögést – mindegyik ellen van védőoltás, amely immunológiai memóriát alakít ki.",
+      "wrongOptions": {
+        "A": "Baktériumok is okoznak betegséget (pl. tetanusz), és ellenük is van oltás.",
+        "B": "Vírusok is okoznak betegséget (pl. kanyaró), és ellenük is van oltás.",
+        "D": "Mindkét csoport okozhat betegséget, így nem lehet „egyik sem”."
+      }
+    },
+    {
+      "id": "5",
+      "kind": "choice",
+      "prompt": "Saját riboszómáikon állítják elő fehérjéiket.",
+      "options": [
+        {
+          "key": "A",
+          "text": "csak a vírusokra igaz"
+        },
+        {
+          "key": "B",
+          "text": "csak a baktériumokra igaz"
+        },
+        {
+          "key": "C",
+          "text": "mindkettőre igaz"
+        },
+        {
+          "key": "D",
+          "text": "egyikre sem igaz"
+        }
+      ],
+      "answer": "B",
+      "category": "felepites-mukodes",
+      "explanation": "Helyes: B. A baktériumsejtben riboszómák vannak, ezeken saját fehérjéit szintetizálja. A vírusnak nincs riboszómája: fehérjéit a gazdasejt riboszómái állítják elő a vírus örökítőanyaga alapján.",
+      "wrongOptions": {
+        "A": "A vírusnak nincs riboszómája, a gazdasejtét használja.",
+        "C": "Csak a baktériumnak van saját riboszómája.",
+        "D": "A baktériumokra igaz, tehát nem lehet „egyik sem”."
+      }
+    },
+    {
+      "id": "6",
+      "kind": "choice",
+      "prompt": "Örökítőanyagukat fehérjeburok (kapszid) veszi körül.",
+      "options": [
+        {
+          "key": "A",
+          "text": "csak a vírusokra igaz"
+        },
+        {
+          "key": "B",
+          "text": "csak a baktériumokra igaz"
+        },
+        {
+          "key": "C",
+          "text": "mindkettőre igaz"
+        },
+        {
+          "key": "D",
+          "text": "egyikre sem igaz"
+        }
+      ],
+      "answer": "A",
+      "category": "felepites-mukodes",
+      "explanation": "Helyes: A. A vírusrészecske nukleinsavból (DNS vagy RNS) és az azt körülvevő fehérjeburokból (kapszidból) áll, egyes vírusoknak ezen kívül lipidburka is van. A baktérium örökítőanyaga a citoplazmában van, sejthártya és sejtfal határolja a sejtet.",
+      "wrongOptions": {
+        "B": "A baktérium DNS-ét nem fehérjeburok, hanem a sejt egésze (sejthártya, sejtfal) határolja.",
+        "C": "Kapszid csak a vírusoknak van.",
+        "D": "A vírusokra igaz, tehát nem lehet „egyik sem”."
+      }
+    },
+    {
+      "id": "7",
+      "kind": "choice",
+      "prompt": "Maghártyával határolt sejtmagjuk és mitokondriumaik vannak.",
+      "options": [
+        {
+          "key": "A",
+          "text": "csak a vírusokra igaz"
+        },
+        {
+          "key": "B",
+          "text": "csak a baktériumokra igaz"
+        },
+        {
+          "key": "C",
+          "text": "mindkettőre igaz"
+        },
+        {
+          "key": "D",
+          "text": "egyikre sem igaz"
+        }
+      ],
+      "answer": "D",
+      "category": "fogalomhasznalat",
+      "explanation": "Helyes: D. Maghártyával határolt sejtmag és mitokondrium az eukarióta sejtek (növények, állatok, gombák, egysejtű eukarióták) jellemzője. A baktérium prokarióta, nincs sejtmagja és mitokondriuma; a vírus pedig nem is sejt.",
+      "wrongOptions": {
+        "A": "A vírusnak semmilyen sejtalkotója nincs.",
+        "B": "A baktérium prokarióta: nincs sejtmagja és nincsenek hártyás sejtalkotói, így mitokondriuma sem.",
+        "C": "Egyikre sem igaz, ezek az eukarióta sejtek jellemzői."
+      }
+    },
+    {
+      "id": "8",
+      "kind": "choice",
+      "prompt": "Ide tartoznak a HIV, az influenza és a kanyaró kórokozói.",
+      "options": [
+        {
+          "key": "A",
+          "text": "csak a vírusokra igaz"
+        },
+        {
+          "key": "B",
+          "text": "csak a baktériumokra igaz"
+        },
+        {
+          "key": "C",
+          "text": "mindkettőre igaz"
+        },
+        {
+          "key": "D",
+          "text": "egyikre sem igaz"
+        }
+      ],
+      "answer": "A",
+      "category": "rendszertan-fajismeret",
+      "explanation": "Helyes: A. A HIV (szerzett immunhiányos tünetegyüttes, AIDS), az influenza és a kanyaró kórokozója egyaránt vírus. Baktérium okozza például a tetanuszt, a tuberkulózist és a szalmonellózist.",
+      "wrongOptions": {
+        "B": "Ezek a betegségek nem baktériumos eredetűek, antibiotikum nem hat rájuk.",
+        "C": "Mindhárom kórokozó vírus, egyik sem baktérium.",
+        "D": "A vírusokra igaz, tehát nem lehet „egyik sem”."
+      }
+    },
+    {
+      "id": "9",
+      "kind": "choice",
+      "prompt": "Örökítőanyaguk mutációval megváltozhat, ezért új változataik (pl. gyógyszerrezisztens törzsek) jelenhetnek meg.",
+      "options": [
+        {
+          "key": "A",
+          "text": "csak a vírusokra igaz"
+        },
+        {
+          "key": "B",
+          "text": "csak a baktériumokra igaz"
+        },
+        {
+          "key": "C",
+          "text": "mindkettőre igaz"
+        },
+        {
+          "key": "D",
+          "text": "egyikre sem igaz"
+        }
+      ],
+      "answer": "C",
+      "category": "evolucios-ervel",
+      "explanation": "Helyes: C. Mindkét csoport örökítőanyaga mutálódhat; mivel gyorsan és nagy számban szaporodnak, gyorsan jelennek meg új változatok – ilyenek az antibiotikum-rezisztens baktériumtörzsek és az új influenzavírus-változatok (ezért kell évente új influenzaoltás).",
+      "wrongOptions": {
+        "A": "A baktériumok is mutálódnak; így alakulnak ki például az antibiotikum-rezisztens törzsek.",
+        "B": "A vírusok is mutálódnak, ezért változik évről évre az influenzavírus.",
+        "D": "Mindkettőre igaz, tehát nem lehet „egyik sem”."
+      }
+    }
+  ],
+  "glossary": [],
+  "suggestedMinutes": 8
+}

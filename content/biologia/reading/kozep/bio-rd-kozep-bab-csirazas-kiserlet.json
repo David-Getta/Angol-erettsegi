@@ -1,0 +1,227 @@
+{
+  "schemaVersion": 1,
+  "id": "bio-rd-kozep-bab-csirazas-kiserlet",
+  "subject": "biologia",
+  "revision": 1,
+  "level": "kozep",
+  "source": "generated",
+  "topic": "bevezetes",
+  "title": "A babszemek csírázása és a hőmérséklet – kísérletelemzés",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "reading",
+  "type": "abraelemzes",
+  "instructions": "Olvassa el a kísérlet leírását és a táblázat adatait, majd válaszoljon a kérdésekre! A feleletválasztós kérdéseknél a helyes válasz betűjelét, az igaz–hamis állításoknál I (T) vagy H (F) betűt, a többi kérdésnél a kért számot vagy szót írja be. A 0. kérdés a példa.",
+  "passage": {
+    "title": "Csíráznak-e a babszemek hidegben?",
+    "blocks": [
+      {
+        "text": "Egy diák azt vizsgálta, hogyan befolyásolja a hőmérséklet a babszemek csírázását. Négy egyforma Petri-csészébe nedves vattát tett, és mindegyikbe 20 darab, azonos fajtájú és azonos évben termett babszemet helyezett. A csészéket sötét helyen, négy különböző hőmérsékleten tartotta: 5 °C-on, 15 °C-on, 25 °C-on és 35 °C-on. A vattát naponta azonos mennyiségű, szobahőmérsékletű csapvízzel nedvesítette. Öt nap múlva megszámolta, hány babszemből bújt ki a gyököcske."
+      },
+      {
+        "heading": "Táblázat: a kicsírázott babszemek száma öt nap után (csészénként 20 mag)",
+        "text": "5 °C: 0 mag. 15 °C: 9 mag. 25 °C: 18 mag. 35 °C: 11 mag."
+      }
+    ]
+  },
+  "example": {
+    "id": "0",
+    "kind": "choice",
+    "prompt": "Mi volt a kísérletben a független változó, vagyis az a tényező, amelyet a diák szándékosan változtatott?",
+    "options": [
+      {
+        "key": "A",
+        "text": "a hőmérséklet"
+      },
+      {
+        "key": "B",
+        "text": "a kicsírázott magvak száma"
+      },
+      {
+        "key": "C",
+        "text": "a locsolóvíz mennyisége"
+      },
+      {
+        "key": "D",
+        "text": "a babszemek fajtája"
+      }
+    ],
+    "answer": "A",
+    "category": "kiserlet-ertelmezes",
+    "explanation": "Helyes: A. A diák a négy csészét szándékosan négy különböző hőmérsékleten tartotta, minden más feltételt azonosnak hagyott – a hőmérséklet tehát a független (vizsgált) változó."
+  },
+  "items": [
+    {
+      "id": "1",
+      "kind": "choice",
+      "prompt": "Mi volt a kísérletben a függő változó, vagyis az, amit a diák mért?",
+      "options": [
+        {
+          "key": "A",
+          "text": "a csészék hőmérséklete"
+        },
+        {
+          "key": "B",
+          "text": "az öt nap alatt kicsírázott babszemek száma"
+        },
+        {
+          "key": "C",
+          "text": "a vatta nedvessége"
+        },
+        {
+          "key": "D",
+          "text": "a Petri-csészék mérete"
+        }
+      ],
+      "answer": "B",
+      "category": "kiserlet-ertelmezes",
+      "explanation": "Helyes: B. A függő változó az, ami a független változó hatására megváltozhat, és amit mérünk: itt az öt nap után kicsírázott babszemek száma (ahol kibújt a gyököcske).",
+      "wrongOptions": {
+        "A": "A hőmérsékletet a diák állította be, ez a független változó, nem a mért eredmény.",
+        "C": "A vatta nedvességét a diák minden csészében azonosan tartotta – ez rögzített (állandó) feltétel.",
+        "D": "A csészék egyformák voltak; a méretük rögzített feltétel, nem mért adat."
+      }
+    },
+    {
+      "id": "2",
+      "kind": "choice",
+      "prompt": "Miért tett a diák minden csészébe azonos fajtájú és azonos évben termett babszemet, és miért locsolta őket azonos mennyiségű vízzel?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Hogy a csészék közötti különbséget csak a hőmérséklet okozhassa."
+        },
+        {
+          "key": "B",
+          "text": "Hogy a babszemek gyorsabban csírázzanak."
+        },
+        {
+          "key": "C",
+          "text": "Mert a víz mennyisége a függő változó."
+        },
+        {
+          "key": "D",
+          "text": "Hogy 5 °C-on is biztosan kicsírázzanak a magok."
+        }
+      ],
+      "answer": "A",
+      "category": "kiserlet-ertelmezes",
+      "explanation": "Helyes: A. Egy kísérletben egyszerre csak egy tényezőt változtatunk; minden más feltételt (fajta, magok kora, víz, fény, idő) állandó értéken tartunk, mert csak így tulajdonítható az eltérő eredmény a vizsgált tényezőnek.",
+      "wrongOptions": {
+        "B": "Az azonos feltételek nem gyorsítják a csírázást, csak összehasonlíthatóvá teszik a csészéket.",
+        "C": "A vízmennyiség rögzített feltétel; a függő változó a kicsírázott magok száma.",
+        "D": "Az azonos locsolás nem pótolja a hiányzó hőt: 5 °C-on egy mag sem csírázott ki."
+      }
+    },
+    {
+      "id": "3",
+      "kind": "text",
+      "prompt": "A babszemek hány százaléka csírázott ki 15 °C-on? (Csak a számot írja be!)",
+      "answer": [
+        "45",
+        "45%",
+        "45 százalék",
+        "0,45"
+      ],
+      "maxWords": 2,
+      "category": "okologiai-szamitas",
+      "explanation": "Helyes: 45%. 15 °C-on a 20 magból 9 csírázott ki: 9 / 20 = 0,45, azaz 45%."
+    },
+    {
+      "id": "4",
+      "kind": "text",
+      "prompt": "A vizsgált hőmérsékletek közül melyiken csírázott ki a legtöbb babszem?",
+      "answer": [
+        "25 °C",
+        "25",
+        "25 fok",
+        "25 fokon",
+        "25 °C-on",
+        "25 C"
+      ],
+      "maxWords": 2,
+      "category": "abra-adatelemzes",
+      "explanation": "Helyes: 25 °C. A táblázat szerint 25 °C-on 18 mag csírázott ki, ez több, mint 15 °C-on (9) és 35 °C-on (11); 5 °C-on egy sem."
+    },
+    {
+      "id": "5",
+      "kind": "tf",
+      "prompt": "Az eredményekből biztosan megállapítható, hogy a bab csírázásának optimális hőmérséklete pontosan 25 °C.",
+      "answer": "F",
+      "category": "kiserlet-ertelmezes",
+      "explanation": "Hamis. A diák csak négy hőmérsékletet vizsgált; az adatokból annyi következik, hogy a vizsgáltak közül 25 °C volt a legkedvezőbb. Az optimum valahol 15 és 35 °C között van (lehet például 22 vagy 28 °C is) – ennek pontosításához sűrűbb hőmérséklet-lépcső kellene."
+    },
+    {
+      "id": "6",
+      "kind": "tf",
+      "prompt": "5 °C-on azért nem csírázott ki egyetlen babszem sem, mert alacsony hőmérsékleten a csírázáshoz szükséges, enzimek által katalizált folyamatok (például a tartalék tápanyagok lebontása) nagyon lelassulnak.",
+      "answer": "T",
+      "category": "anyagcsere-folyamat",
+      "explanation": "Igaz. A csírázáshoz a magnak le kell bontania tartalék tápanyagait (keményítő, fehérje), és ezekből energiát kell nyernie; ezeket a folyamatokat enzimek katalizálják, amelyek működése hidegben erősen lelassul."
+    },
+    {
+      "id": "7",
+      "kind": "choice",
+      "prompt": "Melyik módosítás tenné a legmegbízhatóbbá a kísérlet eredményét?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Minden csészébe csak egyetlen babszemet tenne."
+        },
+        {
+          "key": "B",
+          "text": "Minden hőmérsékleten több csészével megismételné a vizsgálatot, és átlagot számolna."
+        },
+        {
+          "key": "C",
+          "text": "A csészéket napos ablakpárkányra tenné."
+        },
+        {
+          "key": "D",
+          "text": "A 25 °C-os csészét több vízzel locsolná, mint a többit."
+        }
+      ],
+      "answer": "B",
+      "category": "kiserlet-ertelmezes",
+      "explanation": "Helyes: B. Az ismétlések (párhuzamos minták) és a nagyobb mintaszám csökkentik a véletlen hatását (például hogy néhány mag eleve csírázásképtelen); az átlag így megbízhatóbb.",
+      "wrongOptions": {
+        "A": "Egy maggal a véletlen dönt: ha az az egy mag éppen életképtelen, téves következtetést vonnánk le.",
+        "C": "Az ablakpárkányon a hőmérséklet ingadozna, és a fény új, nem vizsgált változót vinne a kísérletbe.",
+        "D": "Ha egy csésze több vizet kap, két tényező változik egyszerre, és nem tudnánk, melyik okozta a különbséget."
+      }
+    },
+    {
+      "id": "8",
+      "kind": "choice",
+      "prompt": "Melyik hipotézist ellenőrizte a diák a kísérletével?",
+      "options": [
+        {
+          "key": "A",
+          "text": "A babszemek csírázásához fény szükséges."
+        },
+        {
+          "key": "B",
+          "text": "A babszemek csírázásához oxigén szükséges."
+        },
+        {
+          "key": "C",
+          "text": "A hőmérséklet befolyásolja, hány babszem csírázik ki adott idő alatt."
+        },
+        {
+          "key": "D",
+          "text": "A nagyobb babszemek gyorsabban csíráznak, mint a kisebbek."
+        }
+      ],
+      "answer": "C",
+      "category": "kiserlet-ertelmezes",
+      "explanation": "Helyes: C. A kísérletben egyedül a hőmérséklet különbözött a csészék között, a mért eredmény pedig az öt nap alatt kicsírázott magvak száma – tehát a hőmérséklet hatását vizsgálta.",
+      "wrongOptions": {
+        "A": "Minden csésze sötétben volt, a fényt nem változtatta, így a fény szerepéről nem mond semmit a kísérlet.",
+        "B": "Az oxigénellátás minden csészében azonos volt, ezt a tényezőt nem vizsgálta.",
+        "D": "A magok méretét nem mérte és nem változtatta, erre a kérdésre a kísérlet nem ad választ."
+      }
+    }
+  ],
+  "glossary": [],
+  "suggestedMinutes": 8
+}

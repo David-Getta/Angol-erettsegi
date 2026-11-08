@@ -1,0 +1,134 @@
+{
+  "schemaVersion": 1,
+  "id": "mat-gd-writing-bizonyitas",
+  "subject": "matematika",
+  "revision": 1,
+  "level": "kozep",
+  "source": "generated",
+  "topic": "utmutato",
+  "title": "Bizonyítási feladat",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "guide",
+  "type": "writing",
+  "target": "bizonyitas",
+  "summaryHu": "A bizonyítási feladat (emelt szinten a II. rész részkérdéseiként gyakori) egy állítás általános igazolását kéri: oszthatóság, egyenlőtlenség, geometriai összefüggés, teljes indukció, indirekt bizonyítás. A javítás a logikai lépésekért és a felhasznált tételek megnevezéséért ad pontot; példákkal bizonyítani nem lehet.",
+  "steps": [
+    {
+      "title": "Az állítás pontos megértése",
+      "explanation": "Írd fel, mi a feltétel és mi a bizonyítandó állítás (pl. „minden n pozitív egészre …”). Próbáld ki néhány kis számra – ez nem bizonyítás, de megmutatja, mi az ötlet.",
+      "tips": [
+        "Fogalmazd át képletre: „n³ − n osztható 6-tal” ⇔ 6 | n³ − n.",
+        "Nézd meg, melyik módszer illik: közvetlen, indirekt, teljes indukció."
+      ]
+    },
+    {
+      "title": "A módszer kiválasztása",
+      "explanation": "Közvetlen bizonyítás: átalakításokkal jutsz a célhoz (pl. szorzattá alakítás). Indirekt: feltételezed az állítás tagadását, és ellentmondásra jutsz. Teljes indukció: természetes számokra vonatkozó állításnál kezdőlépés, indukciós feltevés, öröklődés.",
+      "tips": [
+        "Irracionalitásnál és „végtelen sok” állításnál szinte mindig indirekt bizonyítás kell.",
+        "Összegképletnél vagy egyenlőtlenségnél n-re a teljes indukció a szokásos."
+      ]
+    },
+    {
+      "title": "A lépések leírása",
+      "explanation": "Minden lépésnél mondd ki, miért igaz: melyik azonosság, tétel vagy feltétel miatt. Általános jelöléssel dolgozz (n, k), ne konkrét számokkal.",
+      "tips": [
+        "„Mivel a 2 és a 3 relatív prímek, …”",
+        "„Az indukciós feltevés szerint …”"
+      ]
+    },
+    {
+      "title": "Lezárás",
+      "explanation": "A végén fogalmazd meg, mit bizonyítottál (indirekt bizonyításnál az ellentmondást és a következtetést is), és jelöld a bizonyítás végét.",
+      "tips": [
+        "„Tehát az állítás minden n pozitív egész számra igaz. ∎”",
+        "Indirektnél: „Ez ellentmondás, tehát a feltevés hamis.”"
+      ]
+    }
+  ],
+  "phrases": [
+    {
+      "group": "Indirekt bizonyítás",
+      "en": "Tegyük fel indirekt, hogy az állítás nem igaz, azaz …",
+      "hu": "Az indirekt bizonyítás nyitánya: a tagadás pontos kimondása."
+    },
+    {
+      "group": "Indirekt bizonyítás",
+      "en": "Ez ellentmond annak, hogy …, tehát a feltevés hamis.",
+      "hu": "Az ellentmondás és a következtetés kimondása."
+    },
+    {
+      "group": "Teljes indukció",
+      "en": "Kezdőlépés: n = 1-re az állítás igaz, mert …",
+      "hu": "Az első lépés ellenőrzése."
+    },
+    {
+      "group": "Teljes indukció",
+      "en": "Tegyük fel, hogy valamely k-ra igaz: …",
+      "hu": "Indukciós feltevés."
+    },
+    {
+      "group": "Teljes indukció",
+      "en": "Belátjuk, hogy ekkor k + 1-re is igaz.",
+      "hu": "Öröklődés (indukciós lépés)."
+    },
+    {
+      "group": "Oszthatóság",
+      "en": "Három egymást követő egész közül pontosan egy osztható 3-mal.",
+      "hu": "Szomszédos számok oszthatósága."
+    },
+    {
+      "group": "Oszthatóság",
+      "en": "Ha a | m és b | m, valamint (a; b) = 1, akkor a · b | m.",
+      "hu": "Relatív prím osztók szorzata – csak relatív prímekre!"
+    },
+    {
+      "group": "Lezárás",
+      "en": "Tehát az állítást beláttuk. ∎",
+      "hu": "A bizonyítás végének jelzése."
+    }
+  ],
+  "mistakes": [
+    {
+      "wrong": "„n = 1, 2, 3, 4-re igaz, tehát minden n-re igaz.”",
+      "right": "Általános érvelés n-re (vagy teljes indukció).",
+      "why": "Véges sok példa nem bizonyít általános állítást; csak a cáfolathoz elég egy ellenpélda."
+    },
+    {
+      "wrong": "Teljes indukciónál kihagyom a kezdőlépést.",
+      "right": "Kezdőlépés + indukciós feltevés + öröklődés.",
+      "why": "A kezdőlépés nélkül az öröklődés semmit sem bizonyít (hamis állításra is működhet)."
+    },
+    {
+      "wrong": "„2 | m és 4 | m, tehát 8 | m.”",
+      "right": "Csak relatív prím osztók szorzata osztó: 2 és 4 nem relatív prímek.",
+      "why": "Ellenpélda: 4 osztható 2-vel és 4-gyel, de 8-cal nem. A feltételt (relatív prímek) mindig ki kell mondani."
+    },
+    {
+      "wrong": "Indirekt bizonyításnál a tagadást pontatlanul fogalmazom meg.",
+      "right": "A tagadás pontos: „√3 racionális, azaz √3 = p/q, ahol p, q relatív prímek.”",
+      "why": "Ha a feltevés nem pontosan az állítás tagadása, az ellentmondásból nem következik az állítás."
+    }
+  ],
+  "checklist": [
+    "Pontosan leírtam a feltételt és a bizonyítandó állítást?",
+    "Megneveztem a bizonyítási módszert (közvetlen, indirekt, teljes indukció)?",
+    "Minden lépésnél megadtam az indokot (tétel, azonosság, feltétel)?",
+    "Teljes indukciónál megvan mindhárom lépés?",
+    "A végén kimondtam, mit bizonyítottam?"
+  ],
+  "timing": "Emelt szinten egy bizonyítási részkérdésre (5–6 pont) kb. 10–12 perc jusson. Ha 5 perc alatt nincs ötlet, próbálj ki kis eseteket, vagy válts módszert (indirekt ↔ közvetlen).",
+  "example": {
+    "title": "Minta: rövid közvetlen bizonyítás",
+    "text": "Állítás: két egymást követő páratlan szám négyzetének különbsége osztható 8-cal. Bizonyítás: legyenek a számok 2k − 1 és 2k + 1 (k egész). A nevezetes azonosságokkal kifejtve: (2k + 1)² − (2k − 1)² = (4k² + 4k + 1) − (4k² − 4k + 1) = 8k, ami osztható 8-cal. ∎",
+    "notes": [
+      "Általános jelöléssel dolgozik (k), nem példákkal.",
+      "Megnevezi az átalakítást (nevezetes azonosság), és kimondja a következtetést."
+    ]
+  },
+  "levelNotes": {
+    "kozep": "Középszinten bizonyítási feladat ritka; inkább egy állítás igazságának eldöntése indoklással (igaz–hamis, ellenpélda) fordul elő. A logikai alapok (implikáció, megfordítás, ellenpélda) így is hasznosak.",
+    "emelt": "Emelt szinten a bizonyítás a II. rész gyakori részkérdése (oszthatóság, egyenlőtlenségek, sorozatok, geometria), és a szóbelin is minden tételhez tartozik egy bizonyítás. A felhasznált tételek megnevezése nélkül nem jár teljes pont."
+  }
+}

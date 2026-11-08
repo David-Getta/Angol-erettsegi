@@ -1,0 +1,87 @@
+{
+  "schemaVersion": 1,
+  "id": "fol-sp-emelt-karpat-medence-kialakulasa",
+  "subject": "foldrajz",
+  "revision": 1,
+  "level": "emelt",
+  "source": "generated",
+  "topic": "magyarorszag",
+  "title": "A Kárpát-medence kialakulása és ásványkincsei",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "speaking",
+  "type": "termeszetfoldrajz-tetel",
+  "partNumber": 1,
+  "instructionsHu": "Mutassa be a Kárpát-medence földtörténeti fejlődését, a hazai nagytájak kialakulását és a földtörténeti múlthoz kötődő ásványkincseket! Használja a mellékelt forrásokat, a topográfiai elemeket mutassa meg az atlaszban!",
+  "prompts": [
+    "Milyen folyamatok alakították ki a Kárpát-medencét az újidőben (Kárpátok felgyűrődése, a medence süllyedése, vulkánosság)?",
+    "Mutassa be a Pannon-tó feltöltődését és a negyedidőszak felszínformálását (lösz, futóhomok, folyóhordalék)!",
+    "Milyen ásványkincsek kötődnek a földtörténeti korokhoz, és hol találhatók?",
+    "Topográfia: mutassa meg a Mecseket, a Bakonyt, a Mátrát, a Tokaji-hegységet, a Badacsonyt, az Alföldet és a Kisalföldet!"
+  ],
+  "followUpQuestions": [
+    "Miért gazdag Magyarország termálvízben?",
+    "Hogyan keletkezett a bauxit, ha ma nincs trópusi éghajlat a Bakonyban?"
+  ],
+  "usefulPhrases": [
+    {
+      "en": "medencesüllyedés",
+      "hu": "a hegységkeretén belüli kéregdarabok lezökkenése"
+    },
+    {
+      "en": "röghegység",
+      "hu": "törésvonalak mentén kiemelt kéregdarabokból álló hegység"
+    },
+    {
+      "en": "tanúhegy",
+      "hu": "a lepusztult környezetből kiemelkedő, keményebb kőzetsapkájú hegy"
+    },
+    {
+      "en": "Pannon-tó (Pannon-beltó)",
+      "hu": "a harmadidőszak végén a medencét kitöltő, fokozatosan feltöltődő állóvíz"
+    },
+    {
+      "en": "lösz",
+      "hu": "a jégkorszakban a szél által felhalmozott, finom, meszes por; a mezőségi talajok alapkőzete"
+    },
+    {
+      "en": "földi hőáram",
+      "hu": "a Föld belsejéből a felszín felé áramló hő; a Kárpát-medencében átlag feletti"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Földtörténeti vázlat (leírás)",
+      "text": "A középidőben a terület nagy részét tenger borította, amelyben vastag mészkő- és dolomitrétegek rakódtak le (Dunántúli-középhegység, Bükk). Az újidő harmadidőszakában felgyűrődött a Kárpátok íve, a belső terület összetöredezett és süllyedni kezdett, a törésvonalak mentén andezites vulkánosság zajlott (Börzsöny, Mátra, Tokaji-hegység). A harmadidőszak végén a Pannon-tó töltötte ki a medencét, amelyet a folyók hordaléka fokozatosan feltöltött; a tó feltöltődésének idején a Balaton-felvidéken bazaltvulkánok működtek. A negyedidőszakban a jégkorszak hideg, száraz szakaszaiban lösz és futóhomok halmozódott fel."
+    },
+    {
+      "title": "Ásványkincsek (adatlista)",
+      "text": "Feketekőszén: Mecsek (jura kor). Bauxit: Bakony, Vértes (trópusi mállás terméke, kréta–eocén). Lignit: Mátraalja, Bükkalja (Visonta, Bükkábrány – harmadidőszak vége). Kőolaj és földgáz: Alföld (Algyő), Zala (harmadidőszaki üledékek). Mangánérc: Úrkút (jura)."
+    }
+  ],
+  "keyPoints": [
+    "A Kárpát-medence az Eurázsiai-hegységrendszer része; a Kárpátok az újidő harmadidőszakában az Afrikai- és az Eurázsiai-lemez közeledése során gyűrődtek fel.",
+    "A medence belseje összetöredezett és süllyedt; a földkéreg itt vékony, ezért nagy a földi hőáram (termálvizek).",
+    "A törésvonalak mentén a harmadidőszakban andezites vulkánosság (Börzsöny, Mátra, Tokaji-hegység), a végén bazaltvulkánosság (Balaton-felvidék tanúhegyei, Badacsony).",
+    "A középidei tengeri üledékekből (mészkő, dolomit) épülnek a röghegységek (Dunántúli-középhegység, Bükk, Mecsek); a medence süllyedésekor ezek a rögök kiemelkedtek.",
+    "A Pannon-tó a harmadidőszak végén töltötte ki a medencét; a folyók hordaléka feltöltötte (homok, agyag – kőolaj- és földgáztároló rétegek).",
+    "Negyedidőszak: jégkorszaki hideg, száraz szakaszok → lösz (Mezőföld, Tolnai-dombság), futóhomok (Nyírség, Duna–Tisza köze), folyóhordalék (Alföld, Kisalföld).",
+    "Ásványkincsek: feketekőszén (Mecsek), bauxit (Bakony), lignit (Visonta), kőolaj-földgáz (Algyő, Zala), mangán (Úrkút); ma a hazai bányászat jelentősége kicsi, az energiahordozók nagy részét importáljuk.",
+    "Topográfia: Mecsek, Bakony, Mátra, Tokaji-hegység, Badacsony, Alföld, Kisalföld."
+  ],
+  "speakingSeconds": 600,
+  "prepSeconds": 900,
+  "sampleAnswer": {
+    "turns": [
+      {
+        "speaker": "candidate",
+        "text": "A Kárpát-medence mai képe főként az újidőben alakult ki, de kőzetei sokkal régebbiek. A forrás szerint a középidőben a terület nagy részét tenger borította, amelyben élőlények mészvázából vastag mészkő- és dolomitrétegek rakódtak le; ebből épül ma a Dunántúli-középhegység, például a Bakony, és a Bükk is. Az újidő harmadidőszakában az Afrikai- és az Eurázsiai-lemez közeledése során felgyűrődött a Kárpátok íve, a belső rész pedig összetöredezett és süllyedni kezdett – így jött létre a medence. A süllyedés miatt a földkéreg itt vékony, ezért nagy a földi hőáram, ennek köszönhetők a termálvizeink. A törésvonalak mentén andezites vulkánosság zajlott, ekkor keletkezett a Börzsöny, a Mátra és a Tokaji-hegység, ezeket most megmutatom az Északi-középhegységben. A harmadidőszak végén a medencét a Pannon-tó töltötte ki, amelyet a környező hegyekből érkező folyók hordaléka, homok és agyag fokozatosan feltöltött; ezekben a rétegekben keletkezett az alföldi és a zalai kőolaj és földgáz, például Algyőnél. Ugyanekkor a Balaton-felvidéken bazaltvulkánok működtek, a keményebb bazaltsapka megvédte őket a lepusztulástól, így jöttek létre a tanúhegyek, mint a Badacsony. A negyedidőszakban a jégkorszak hideg, száraz időszakaiban a szél löszt halmozott fel, például a Mezőföldön, és futóhomokot a Nyírségben és a Duna–Tisza közén, a folyók pedig feltöltötték az Alföldet és a Kisalföldet. Ásványkincseink is a földtörténethez kötődnek: a Mecsek jura kori feketekőszene, a Bakony bauxitja, amely trópusi mállással keletkezett, és a Mátraalja lignitje, amelyre a visontai Mátrai Erőmű épült. Ma a bányászat jelentősége kicsi, energiahordozóink nagy részét importáljuk."
+      }
+    ],
+    "notes": [
+      "A felelet időrendben, a középidőtől a negyedidőszakig építi fel a folyamatot, és minden szakaszhoz konkrét hazai tájat kapcsol – ez a tartalom és az összefüggések szempontjainak maximumát adja.",
+      "Az ásványkincseket a keletkezésük korához és körülményeihez kapcsolja (trópusi mállás, tavi üledék), ami emelt szinten elvárt.",
+      "A topográfiai elemeket (Bakony, Bükk, Börzsöny, Mátra, Tokaji-hegység, Badacsony, Algyő, Mezőföld, Nyírség) pontosan megnevezi és megmutatja."
+    ]
+  }
+}

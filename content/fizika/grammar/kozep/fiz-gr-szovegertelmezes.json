@@ -1,0 +1,264 @@
+{
+  "schemaVersion": 1,
+  "id": "fiz-gr-szovegertelmezes",
+  "subject": "fizika",
+  "revision": 1,
+  "level": "kozep",
+  "source": "generated",
+  "topic": "nyelvtan",
+  "title": "A feladat szövegének értelmezése – adatok, rejtett feltételek, a kérdés",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "grammar",
+  "type": "lesson",
+  "category": "szovegertelmezes",
+  "summaryHu": "Sok pont azért vész el, mert a diák nem azt számolja ki, amit a feladat kérdez, vagy figyelmen kívül hagy egy szövegbe rejtett adatot („nyugalomból indul”, „súrlódásmentes”, „egyenletesen”). A feladat elolvasása módszeres munka: adatgyűjtés, a feltételek lefordítása fizikai nyelvre, és annak tisztázása, pontosan mire kell válaszolni.",
+  "rules": [
+    {
+      "title": "Adatgyűjtés",
+      "explanation": "Olvasás közben írd ki az összes adatot jelöléssel és mértékegységgel (m = 1200 kg, v₀ = 72 km/h …), és jelöld a keresett mennyiséget kérdőjellel. A számításos feladatoknál ez a megoldás első sora – a javítók is ezt várják.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "„Egy 1200 kg-os autó 72 km/h-ról 40 m úton áll meg.”",
+          "hu": "m = 1200 kg, v₀ = 20 m/s, v = 0, s = 40 m, a = ?"
+        },
+        {
+          "en": "„1,5 liter vizet…”",
+          "hu": "m = 1,5 kg (ρ = 1 kg/l) – a térfogatból tömeg lesz."
+        }
+      ]
+    },
+    {
+      "title": "Rejtett adatok és feltételek",
+      "explanation": "Bizonyos szavak adatot jelentenek: „nyugalomból indul” → v₀ = 0; „megáll” → v = 0; „egyenletesen mozog” → a = 0, az erők eredője 0; „súrlódásmentes, közegellenállás nélkül” → a mechanikai energia megmarad; „ideális gáz” → p·V = n·R·T alkalmazható, a belső energia csak a hőmérséklettől függ; „hőszigetelt”, „gyors, hőcsere nélküli” → Q = 0 (adiabatikus); „állandó nyomáson” → izobár; „legmagasabb pont” → v_y = 0.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "„A labdát függőlegesen feldobjuk; a pálya legmagasabb pontján…”",
+          "hu": "Ott v = 0 (függőleges hajítás)."
+        },
+        {
+          "en": "„A tartály merev falú.”",
+          "hu": "V = állandó, izochor folyamat."
+        }
+      ]
+    },
+    {
+      "title": "Mire kérdez a feladat?",
+      "explanation": "Nézd meg pontosan a kérdést: nagyságot vagy irányt is? Hőmérsékletet vagy hőmérséklet-változást? Utat vagy elmozdulást? Teljesítményt vagy energiát? Hányszorosára vagy mennyivel? Százalékot vagy arányt? A válasz formája (mértékegység, kerekítés) is a kérdésben van.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "„Hány százalékkal hosszabb?” – s'/s = 1,5625",
+          "hu": "A válasz: 56 %-kal hosszabb, nem 156 %."
+        },
+        {
+          "en": "„Mennyibe kerül?”",
+          "hu": "A végeredmény forintban, nem kWh-ban."
+        }
+      ]
+    },
+    {
+      "title": "Az ábrák és grafikonok szöveges leírása",
+      "explanation": "A vizsgán (és itt) az ábrát gyakran szövegesen írják le. Rajzold le magadnak: tengelyek, szakaszok, értékek. A rajz alapján sokkal könnyebb a meredekséget, a területet vagy az irányokat meghatározni.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "„0-tól 10 s-ig a sebesség egyenletesen nő 0-ról 12 m/s-ra.”",
+          "hu": "Ferde egyenes szakasz: a = 1,2 m/s², s = 60 m."
+        },
+        {
+          "en": "„A kocsi a hurok belső oldalán fut.”",
+          "hu": "A pálya nyomóereje a kör középpontja felé mutat."
+        }
+      ]
+    },
+    {
+      "title": "Felesleges adatok és több lépés",
+      "explanation": "Az emelt feladatokban lehet olyan adat, amelyre nincs szükség (pl. a tömeg, ha kiesik az egyenletből), és olyan részkérdés, amely egy korábbi eredményre épül. Ha egy adatot nem használtál, gondold végig, valóban felesleges-e.",
+      "emeltOnly": true,
+      "examples": [
+        {
+          "en": "Szabadesés ideje: a tömeg felesleges adat",
+          "hu": "h = (g/2)·t² – a tömeg nem szerepel."
+        },
+        {
+          "en": "Hurok: a tömeg csak a nyomóerőhöz kell",
+          "hu": "A minimális magasság h = 2,5·r független a tömegtől."
+        }
+      ]
+    }
+  ],
+  "commonMistakes": [
+    {
+      "wrong": "„Nyugalomból indul” – ezt nem írom fel adatként.",
+      "right": "v₀ = 0 – ez is adat, és ettől egyszerűsödnek a képletek (s = a/2·t²).",
+      "why": "A szöveg sok adatot szavakban ad meg; ezeket is ki kell írni."
+    },
+    {
+      "wrong": "„Hány százalékkal nőtt?” → 156 %",
+      "right": "Az új érték az eredeti 156 %-a, tehát 56 %-kal nőtt.",
+      "why": "A „hány százaléka” és a „hány százalékkal több” két különböző kérdés."
+    },
+    {
+      "wrong": "„Mennyivel nő a hőmérséklet?” → T = 44 °C",
+      "right": "ΔT = 44 °C − 20 °C = 24 °C a változás; a 44 °C a végső hőmérséklet.",
+      "why": "A kérdés a változásra vonatkozott, nem a végállapotra."
+    },
+    {
+      "wrong": "„A gáz által végzett munka” → a gázon végzett munkát adom meg előjellel.",
+      "right": "A gáz által végzett munka táguláskor pozitív (p·ΔV), a gázon végzett ennek ellentettje.",
+      "why": "A kérdés megfogalmazása dönti el az előjelet."
+    }
+  ],
+  "examTips": [
+    "Számításos feladat: a megoldás elején az „Adatok:” sor és a végén a szöveges válasz („Az autó lassulása 5 m/s².”) is pontot ér.",
+    "Teszt: húzd alá a kérdés kulcsszavát (nagysága, iránya, változása, legalább, legfeljebb) – sok rossz válaszlehetőség egy másik, közeli kérdésre adott jó válasz.",
+    "Forráselemzés: a válaszhoz a forrás adatait használd, és jelezd is („a forrás szerint…”); ha a forrás és a saját tudásod eltér, a feladat a forrás adataival számolást kéri."
+  ],
+  "practice": [
+    {
+      "id": "1",
+      "kind": "choice",
+      "prompt": "A feladat szövege: „Egy testet a 20 m magas toronyból vízszintesen elhajítunk.” Melyik adat rejtett benne?",
+      "options": [
+        {
+          "key": "A",
+          "text": "A kezdősebesség függőleges összetevője nulla."
+        },
+        {
+          "key": "B",
+          "text": "A test tömege."
+        },
+        {
+          "key": "C",
+          "text": "A test vízszintes sebessége nulla."
+        },
+        {
+          "key": "D",
+          "text": "A test a földet a torony tövében éri el."
+        }
+      ],
+      "answer": "A",
+      "category": "szovegertelmezes",
+      "explanation": "Helyes: A. A „vízszintesen elhajítjuk” azt jelenti, hogy a kezdősebesség teljes egészében vízszintes, a függőleges összetevő v₀y = 0; függőlegesen tehát szabadesés történik, t = √(2h/g) = 2 s (g = 10 m/s²).",
+      "wrongOptions": {
+        "B": "A tömeg nem következik a szövegből, és a mozgáshoz nem is kell.",
+        "C": "Éppen a vízszintes sebesség az, ami nem nulla (ezért vízszintes hajítás).",
+        "D": "A test a vízszintes sebessége miatt távolabb ér földet."
+      }
+    },
+    {
+      "id": "2",
+      "kind": "choice",
+      "prompt": "„Mennyi idő alatt ér le a test?” – kérdezi a feladat, és a diák 20 m/s-ot ad meg. Mi a hiba?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Rossz a mértékegység, s helyett m/s."
+        },
+        {
+          "key": "B",
+          "text": "Nem azt a mennyiséget számolta ki, amit a feladat kérdez: időt kellett volna megadni."
+        },
+        {
+          "key": "C",
+          "text": "A g értéke rossz."
+        },
+        {
+          "key": "D",
+          "text": "Nincs hiba."
+        }
+      ],
+      "answer": "B",
+      "category": "szovegertelmezes",
+      "explanation": "Helyes: B. A kérdés az időre vonatkozik (s-ban), a diák a becsapódási sebességet adta meg. A válasznak a kérdezett mennyiséget kell tartalmaznia mértékegységgel.",
+      "wrongOptions": {
+        "A": "Nem csak az egység rossz: a 20 m/s egy másik mennyiség (sebesség) helyes értéke lehet, nem az időé.",
+        "C": "A g értékétől függetlenül más mennyiséget számolt.",
+        "D": "A válasz nem a feltett kérdésre felel."
+      }
+    },
+    {
+      "id": "3",
+      "kind": "choice",
+      "prompt": "A feladat: „A gáz hőmérséklete 300 K-ről 400 K-re nőtt. Hány százalékkal nőtt az abszolút hőmérséklet?” Mi a helyes válasz?",
+      "options": [
+        {
+          "key": "A",
+          "text": "133 %"
+        },
+        {
+          "key": "B",
+          "text": "100 %"
+        },
+        {
+          "key": "C",
+          "text": "33 %"
+        },
+        {
+          "key": "D",
+          "text": "25 %"
+        }
+      ],
+      "answer": "C",
+      "category": "szovegertelmezes",
+      "explanation": "Helyes: C. Az új érték a régi 400/300 ≈ 1,33-szorosa, vagyis kb. 33 %-kal nagyobb. A 133 % arra a kérdésre felelne, hogy „hány százaléka” az új érték a réginek.",
+      "wrongOptions": {
+        "A": "133 % = 400/300: az új érték a régi 133 %-a, tehát 33 %-kal nőtt.",
+        "B": "100 K-nel nőtt, ami nem 100 %, mert a kiindulás 300 K.",
+        "D": "25 % = 100/400: a változást a VÉGSŐ értékhez viszonyította, nem a kiindulóhoz."
+      }
+    },
+    {
+      "id": "4",
+      "kind": "choice",
+      "prompt": "Melyik kifejezés jelenti, hogy a testre ható erők eredője nulla?",
+      "options": [
+        {
+          "key": "A",
+          "text": "„A test gyorsul.”"
+        },
+        {
+          "key": "B",
+          "text": "„A test szabadon esik.”"
+        },
+        {
+          "key": "C",
+          "text": "„A test egyenletes körmozgást végez.”"
+        },
+        {
+          "key": "D",
+          "text": "„A test egyenes vonalú egyenletes mozgást végez.”"
+        }
+      ],
+      "answer": "D",
+      "category": "szovegertelmezes",
+      "explanation": "Helyes: D. Newton I. törvénye szerint egyenes vonalú egyenletes mozgásnál (és nyugalomban) az eredő erő nulla. Ez a feladatszöveg egyik leggyakoribb rejtett adata.",
+      "wrongOptions": {
+        "A": "Gyorsulásnál az eredő erő F = m·a ≠ 0.",
+        "B": "Szabadesésnél a nehézségi erő az eredő.",
+        "C": "Körmozgásnál a sebesség iránya változik, ezért van eredő (centripetális) erő."
+      }
+    },
+    {
+      "id": "5",
+      "kind": "text",
+      "prompt": "Egy feladat azt kéri: „Adja meg a fékút változását, ha a kezdősebesség 20 m/s-ról 30 m/s-ra nő, azonos lassulással!” Az eredeti fékút 40 m. Hány méterrel lesz hosszabb a fékút?",
+      "answer": [
+        "50",
+        "50 m",
+        "50 méter"
+      ],
+      "maxWords": 2,
+      "category": "szovegertelmezes",
+      "explanation": "Helyes: 50 m-rel. A fékút a kezdősebesség négyzetével arányos: s' = 40 m · (30/20)² = 40 · 2,25 = 90 m. A kérdés a változásra vonatkozik: 90 − 40 = 50 m-rel hosszabb."
+    }
+  ],
+  "relatedCategories": [
+    "indoklas-felepites",
+    "szamolas",
+    "grafikon"
+  ]
+}

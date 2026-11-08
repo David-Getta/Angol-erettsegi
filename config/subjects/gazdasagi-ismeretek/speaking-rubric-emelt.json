@@ -1,0 +1,289 @@
+{
+  "meta": {
+    "verifiedAt": "2026-11-06",
+    "sources": [
+      {
+        "title": "Oktatási Hivatal: Az érettségi vizsgatárgyak részletes vizsgakövetelményei és vizsgaleírásai – Gazdasági ismeretek (közismereti választható tárgy, közép- és emelt szint)",
+        "url": "https://www.oktatas.hu/kozneveles/erettsegi/vizsgatargyak"
+      },
+      {
+        "title": "Oktatási Hivatal: A 2025. október–novemberi érettségi vizsgák nyilvánosságra hozott anyagai – gazdasági ismeretek: projekttémák közép- és emelt szinten, a projektmunka készítésének ajánlott menete, a projektmunka értékelési szempontjai",
+        "url": "https://www.oktatas.hu/kozneveles/erettsegi/2025oszi_vizsgaidoszak/2025osz_kozismereti_targyak"
+      },
+      {
+        "title": "OH-útmutató iskolai tükörmásolata (2026. május): A gazdasági ismeretek projektmunka készítésének és értékelésének útmutatója – a projektmunka 40 pont (a készítés folyamata 15 + az elkészült munka 25), központi javítási-értékelési útmutató; a védés mindkét szinten a szóbeli része",
+        "url": "https://www.bighb.hu/images/cikkek/erettsegi/2025_2026/1303_gazdism_projekt_keszit_pontutmut_2026maj.pdf"
+      },
+      {
+        "title": "OH-útmutató iskolai tükörmásolata (2026. május): A projektmunka készítésének ajánlott menete (konzultációk, munkanapló, leadás az írásbeli vizsgaidőszak kezdetéig)",
+        "url": "https://www.bighb.hu/images/cikkek/erettsegi/2025_2026/1302_gazdism_projekt_ajanlott_menete_2026maj.pdf"
+      },
+      {
+        "title": "Zrínyi Miklós Gimnázium: Gazdasági ismeretek – II. A vizsga leírása (a hivatalos vizsgaleírás másolata: közép projektmunka 40 pont + szóbeli 110 pont (70 + 40); emelt írásbeli 180 perc 100 pont – központi feladatsor vagy mélyebb projektmunka –, szóbeli 20 perc 50 pont központi tételsorból, két részből)",
+        "url": "https://www.zmg.hu/aloldalak/gazdism/erettsegi.pdf"
+      },
+      {
+        "title": "Zrínyi Miklós Gimnázium: A gazdasági ismeretek tantárgy követelményei – témák közép- és emelt szinten",
+        "url": "https://www.zmg.hu/aloldalak/gazdism/gazdismkov.pdf"
+      },
+      {
+        "title": "Hunyadi Mátyás Gimnázium: Érettségi témakörök – gazdasági ismeretek (középszint: projektmunka + szóbeli; a projekt védésének menete; aktuális gazdasági problémák)",
+        "url": "https://www.hunyadi-mkov.edu.hu/downloads/erettsegi/gazdasagi_ismeretek.pdf"
+      },
+      {
+        "title": "Szent Anna Gimnázium (2025. 02.): Gazdasági ismeretek fakultáció – szóbeli érettségi témakörök (20 tétel a közgazdaságtan alapfogalmaitól a globalizációig)",
+        "url": "https://szentanna-gk.hu/wp-content/uploads/2025/02/gazdasagi-ismeretek.pdf"
+      },
+      {
+        "title": "Eduline (2025. 01. 02.): Érettségi 2025 – a gazdasági ismeretek projektmunkájának témakörei közép- és emelt szinten (13 témakör)",
+        "url": "https://eduline.hu/erettsegi-felveteli/20250102_emelt-erettsegi-2025-gazdasagi-ismeretek-projektmunka-temakorok"
+      },
+      {
+        "title": "Tájékoztató emelt szintű érettségi vizsgára érkezőknek (gazdasági ismeretek: összefüggő feladatsor, 180 perc)",
+        "url": "https://teko.hu/images/phocadownload/emeltinfo/emelt_info.pdf"
+      },
+      {
+        "title": "Szakmódszertan (tankönyvtár): 5.2. Vizsgák a gazdasági ismeretekből – emelt írásbeli: a középszintűnél mélyebb projektmunka vagy a makro-, mikroökonómia és nemzetközi gazdasági ismeretek témaköreire épülő feladatsor; szóbeli: tétel kifejtése + a projektmunka védése",
+        "url": "https://regi.tankonyvtar.hu/hu/tartalom/tamop412b2/2013-0002_szakmodszertan-muszaki-gazdasagi_szakirany/tananyag/JEGYZET-39-5.2._Vizsgak_a_gazdasagi_isme.scorml"
+      },
+      {
+        "title": "Eduline (2026. 03. 14.): Érettségi 2026 – pontozási és osztályozási szabályok (közép 80/60/40/25 %, emelt 60/47/33/25 %, vizsgarészenként 12 %)",
+        "url": "https://eduline.hu/erettsegi-felveteli/20260314_erettsegi-2026-pontozas-osztalyozas"
+      }
+    ],
+    "notes": [
+      "Ellenőrzött: 20 perc, 50 pont, központi tételsor, két részből (a tétel kifejtése + a tételhez kapcsolódó aktuális gazdasági esemény / forrás). A 30 + 20 pontos felosztás és a szempontok az app paraméterei.",
+      "Az ellenőrzés hírportál-cikkek (Eduline, Telex) és a hivatalos dokumentumok keresőben indexelt szövege alapján történt; az OH oldalát a futtató környezet hálózata nem engedte közvetlenül megnyitni – a hivatalos vizsgaleírással érdemes összevetni."
+    ]
+  },
+  "id": "speaking-emelt",
+  "level": "emelt",
+  "examMaxPoints": 50,
+  "tasks": [
+    {
+      "id": "tetel",
+      "partNumber": 1,
+      "name": "A tétel kifejtése",
+      "types": [
+        "tetel"
+      ],
+      "criteria": [
+        {
+          "id": "tartalom",
+          "name": "Tartalmi pontosság és teljesség",
+          "description": "A tétel fogalmai, csoportosításai, összefüggései helyesen és teljesen szerepelnek (a definíciók szó szerinti pontossággal).",
+          "max": 13,
+          "bands": [
+            {
+              "points": "13",
+              "descriptor": "A tétel minden lényeges eleme helyesen, pontos definíciókkal."
+            },
+            {
+              "points": "10–12",
+              "descriptor": "A lényeg helyes, egy-két elem hiányzik vagy pontatlan."
+            },
+            {
+              "points": "6–9",
+              "descriptor": "A tétel fele hiányzik vagy téves."
+            },
+            {
+              "points": "1–5",
+              "descriptor": "Csak néhány helyes elem."
+            },
+            {
+              "points": "0",
+              "descriptor": "Nincs értékelhető tartalom."
+            }
+          ]
+        },
+        {
+          "id": "osszefugges",
+          "name": "Összefüggések, példák, aktualitás",
+          "description": "Az elemek összekapcsolása, saját és aktuális gazdasági példák, a tanult modellek alkalmazása.",
+          "max": 7,
+          "bands": [
+            {
+              "points": "7",
+              "descriptor": "Az összefüggéseket indokolja, találó saját és aktuális példákkal."
+            },
+            {
+              "points": "5–6",
+              "descriptor": "Van példa és összefüggés, de nem mindenhol."
+            },
+            {
+              "points": "3–4",
+              "descriptor": "Főleg felsorolás, kevés példa."
+            },
+            {
+              "points": "1–2",
+              "descriptor": "Összefüggés és példa alig van."
+            },
+            {
+              "points": "0",
+              "descriptor": "Nincs."
+            }
+          ]
+        },
+        {
+          "id": "szaknyelv",
+          "name": "Szaknyelv alkalmazása",
+          "description": "A közgazdasági szakkifejezések helyes, következetes használata.",
+          "max": 5,
+          "bands": [
+            {
+              "points": "5",
+              "descriptor": "Pontos, következetes szaknyelv."
+            },
+            {
+              "points": "4",
+              "descriptor": "Egy-két pontatlan kifejezés."
+            },
+            {
+              "points": "3",
+              "descriptor": "Köznyelvi megfogalmazás a szakkifejezések helyett."
+            },
+            {
+              "points": "2",
+              "descriptor": "A szakkifejezések többnyire hibásak."
+            },
+            {
+              "points": "0",
+              "descriptor": "Nem értékelhető."
+            }
+          ]
+        },
+        {
+          "id": "eloadas",
+          "name": "Felépítés, önálló előadásmód",
+          "description": "Logikus vázlat, önálló, összefüggő, segítség nélküli előadás, a kérdésekre érdemi válasz.",
+          "max": 5,
+          "bands": [
+            {
+              "points": "5",
+              "descriptor": "Logikus, önálló, folyamatos előadás, a kérdésekre érdemi válasz."
+            },
+            {
+              "points": "4",
+              "descriptor": "Jó felépítés, egy-két segítő kérdés kellett."
+            },
+            {
+              "points": "3",
+              "descriptor": "Töredezett előadás, több segítő kérdés."
+            },
+            {
+              "points": "2",
+              "descriptor": "Csak kérdésekre válaszol."
+            },
+            {
+              "points": "0",
+              "descriptor": "Nem értékelhető."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "aktualis",
+      "partNumber": 2,
+      "name": "Aktuális gazdasági esemény / forrás elemzése",
+      "types": [
+        "aktualis-elemzes"
+      ],
+      "criteria": [
+        {
+          "id": "ertelmezes",
+          "name": "Az esemény / forrás értelmezése",
+          "description": "A forrás (hír, adatsor, idézet) lényegét helyesen érti és fogalmazza meg.",
+          "max": 8,
+          "bands": [
+            {
+              "points": "8",
+              "descriptor": "A forrás lényegét pontosan ragadja meg."
+            },
+            {
+              "points": "6–7",
+              "descriptor": "A lényeg helyes, egy részlet félreértve."
+            },
+            {
+              "points": "4–5",
+              "descriptor": "Részben érti a forrást."
+            },
+            {
+              "points": "1–3",
+              "descriptor": "Félreérti a forrást."
+            },
+            {
+              "points": "0",
+              "descriptor": "Nem értelmezi."
+            }
+          ]
+        },
+        {
+          "id": "kapcsolas",
+          "name": "Összekapcsolás a tétel fogalmaival",
+          "description": "Az eseményt a tétel fogalmaival, modelljeivel magyarázza (pl. szűkösség, alternatív költség, kereslet–kínálat, állami beavatkozás).",
+          "max": 7,
+          "bands": [
+            {
+              "points": "7",
+              "descriptor": "A tanult fogalmakkal pontosan és indokoltan magyarázza az eseményt."
+            },
+            {
+              "points": "5–6",
+              "descriptor": "A kapcsolat megvan, az indoklás hiányos."
+            },
+            {
+              "points": "3–4",
+              "descriptor": "Csak megemlíti a fogalmakat."
+            },
+            {
+              "points": "1–2",
+              "descriptor": "A kapcsolat téves."
+            },
+            {
+              "points": "0",
+              "descriptor": "Nincs."
+            }
+          ]
+        },
+        {
+          "id": "erveles",
+          "name": "Önálló érvelés, következtetés",
+          "description": "Saját, indokolt álláspont vagy következtetés (pozitív és normatív állítás elkülönítve).",
+          "max": 5,
+          "bands": [
+            {
+              "points": "5",
+              "descriptor": "Indokolt saját következtetés, a tény és a vélemény elkülönítve."
+            },
+            {
+              "points": "4",
+              "descriptor": "Indokolt következtetés, a tény és a vélemény keveredik."
+            },
+            {
+              "points": "3",
+              "descriptor": "Vélemény indoklás nélkül."
+            },
+            {
+              "points": "2",
+              "descriptor": "Csak odavetett megjegyzés."
+            },
+            {
+              "points": "0",
+              "descriptor": "Nincs."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "overall": [],
+  "conversion": {
+    "method": "identity"
+  },
+  "officialScoring": [
+    "Emelt szóbeli: 20 perc, 30 perc felkészülés, 50 pont; központi tételsor és központi értékelési útmutató.",
+    "A felelet két jól elkülönülő részből áll: a tétel kifejtése és a kapcsolódó aktuális gazdasági esemény / forrás elemzése (projektet készítőknél a projekt védése)."
+  ],
+  "generalRules": []
+}

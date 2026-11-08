@@ -1,0 +1,261 @@
+{
+  "schemaVersion": 1,
+  "id": "kem-gr-anyagmennyiseg",
+  "subject": "kemia",
+  "revision": 1,
+  "level": "kozep",
+  "source": "generated",
+  "topic": "nyelvtan",
+  "title": "Anyagmennyiség, moláris tömeg",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "grammar",
+  "type": "lesson",
+  "category": "anyagmennyiseg",
+  "summaryHu": "A kémiai számítások alapja az anyagmennyiség (mol): az egyenlet együtthatói anyagmennyiség-arányokat jelentenek, ezért minden tömeget, térfogatot és részecskeszámot először mólra kell átszámolni. A rövid számításoktól a sztöchiometriai és képletmeghatározó feladatokig minden számítási feladat erre épül. Tipikus hibák: rossz moláris tömeg (kétatomos molekulák, kristályvíz), a moláris térfogat alkalmazása folyadékra vagy rossz állapotra, és a tömegek közvetlen arányítása az egyenlet alapján.",
+  "rules": [
+    {
+      "title": "Az anyagmennyiség és a moláris tömeg",
+      "explanation": "1 mol anyag 6,0 · 10²³ (Avogadro-állandó, NA) részecskét tartalmaz. A moláris tömeg (M, g/mol) számértéke a relatív atom- vagy molekulatömeg: az összetevő atomok relatív atomtömegeinek összege. Összefüggések: n = m / M és n = N / NA.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "M(H₂SO₄) = 2 · 1,0 + 32,1 + 4 · 16,0 = 98,1 g/mol"
+        },
+        {
+          "en": "49,05 g kénsav: n = 49,05 g / 98,1 g/mol = 0,500 mol"
+        },
+        {
+          "en": "0,500 mol kénsav: N = 0,500 mol · 6,0 · 10²³ 1/mol = 3,0 · 10²³ molekula"
+        }
+      ]
+    },
+    {
+      "title": "Gázok: moláris térfogat és Avogadro-törvény",
+      "explanation": "Azonos hőmérsékletű és nyomású gázok egyenlő térfogataiban azonos számú molekula van (Avogadro-törvény), ezért 1 mol bármely gáz térfogata azonos: standardállapotban (25 °C, 0,1 MPa) a feladatokban Vm = 24,5 dm³/mol, 0 °C-on és 101,3 kPa-on 22,4 dm³/mol. n = V / Vm. Gázelegyben a térfogatszázalék egyenlő a mólszázalékkal. Folyadékokra és szilárd anyagokra a moláris térfogat így NEM alkalmazható.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "2,45 dm³ standardállapotú CO₂: n = 2,45 / 24,5 = 0,100 mol, m = 0,100 · 44,0 = 4,40 g"
+        },
+        {
+          "en": "Relatív sűrűség: ρrel = M₁ / M₂ – a CO₂ levegőre vonatkoztatott sűrűsége 44 / 29 = 1,52",
+          "hu": "Ezért gyűlik össze a szén-dioxid a pincék alján."
+        }
+      ]
+    },
+    {
+      "title": "Sztöchiometria: számítás az egyenletből",
+      "explanation": "1. Írd fel a rendezett egyenletet. 2. Az ismert mennyiséget számold át anyagmennyiségre. 3. Az együtthatók arányával számold ki a keresett anyag anyagmennyiségét. 4. Ezt váltsd vissza tömegre vagy térfogatra. Ha két kiindulási anyag mennyisége adott, előbb döntsd el, melyik fogy el (limitáló anyag): a termék mennyiségét ebből kell számolni.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "2 H₂ + O₂ → 2 H₂O: 4,0 g H₂ (2,0 mol) → 2,0 mol H₂O → 36 g víz"
+        },
+        {
+          "en": "3,0 mol H₂ + 1,0 mol O₂: az O₂ fogy el (1,0 mol O₂-hoz 2,0 mol H₂ kell) → 2,0 mol víz keletkezik, 1,0 mol H₂ marad"
+        }
+      ]
+    },
+    {
+      "title": "Kristályvizes vegyületek",
+      "explanation": "A kristályvizes só moláris tömegébe a kristályvíz is beletartozik: M(CuSO₄ · 5 H₂O) = M(CuSO₄) + 5 · M(H₂O). 1 mol kristályvizes sóban 1 mol vízmentes só és n mol víz van. Oldáskor a kristályvíz az oldószerhez adódik.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "M(CuSO₄ · 5 H₂O) = 159,6 + 5 · 18,0 = 249,6 g/mol"
+        },
+        {
+          "en": "24,96 g rézgálic = 0,100 mol, ebben 15,96 g CuSO₄ és 9,00 g víz van"
+        }
+      ]
+    },
+    {
+      "title": "Képletmeghatározás",
+      "explanation": "Égetéses elemanalízisnél a szén mind CO₂-ba, a hidrogén mind H₂O-ba kerül: n(C) = n(CO₂), n(H) = 2 · n(H₂O); az oxigén tömegét különbségként kapjuk. Az anyagmennyiségek legkisebb egész számú aránya adja a tapasztalati képletet; a molekulaképlethez a moláris tömeg is kell (pl. relatív sűrűségből). Tömegszázalékos összetételből: 100 g vegyületet véve a tömegszázalékok grammokká válnak.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "85,7 % C és 14,3 % H: 85,7 / 12,0 = 7,14 mol C; 14,3 / 1,0 = 14,3 mol H → 1 : 2 → (CH₂)ₙ",
+          "hu": "M = 56 g/mol esetén C₄H₈."
+        }
+      ]
+    },
+    {
+      "title": "Az egyetemes (általános) gáztörvény",
+      "explanation": "Nem standard állapotban a p · V = n · R · T összefüggéssel számolj: R = 8,314 J/(mol · K), T kelvinben; ha p kPa-ban és V dm³-ben van, a szorzatuk J (kPa · dm³ = J).",
+      "emeltOnly": true,
+      "examples": [
+        {
+          "en": "1,00 mol gáz 101,3 kPa-on és 298 K-en: V = 1,00 · 8,314 · 298 / 101,3 = 24,5 dm³",
+          "hu": "Ez a feladatokban használt standard moláris térfogat."
+        },
+        {
+          "en": "2,00 mol gáz 200 kPa-on és 300 K-en: V = 2,00 · 8,314 · 300 / 200 = 24,9 dm³"
+        }
+      ]
+    }
+  ],
+  "commonMistakes": [
+    {
+      "wrong": "M(O₂) = 16 g/mol",
+      "right": "M(O₂) = 32 g/mol",
+      "why": "Az oxigéngáz kétatomos molekulákból áll; a 16 g/mol az oxigénatom moláris tömege. Ugyanez igaz a H₂-re, az N₂-re és a Cl₂-re."
+    },
+    {
+      "wrong": "10,0 g víz térfogata: 10,0 / 18,0 · 24,5 = 13,6 dm³",
+      "right": "10,0 g folyékony víz térfogata kb. 10,0 cm³ (ρ = 1,00 g/cm³).",
+      "why": "A moláris térfogat csak gázokra érvényes; folyadék térfogatát a sűrűségből számoljuk."
+    },
+    {
+      "wrong": "2 H₂ + O₂ → 2 H₂O, tehát 2 g hidrogénből 2 g víz lesz.",
+      "right": "2 mol (4,0 g) hidrogénből 2 mol (36 g) víz lesz.",
+      "why": "Az együtthatók anyagmennyiség-arányt jelentenek, nem tömegarányt; a tömegeket előbb mólra kell átszámolni."
+    },
+    {
+      "wrong": "A rézgálic moláris tömege 159,6 g/mol.",
+      "right": "M(CuSO₄ · 5 H₂O) = 249,6 g/mol",
+      "why": "A kristályvíz a kristály része, tömegét bele kell számolni; a 159,6 g/mol a vízmentes réz(II)-szulfáté."
+    },
+    {
+      "wrong": "Égetéses analízisnél n(H) = n(H₂O).",
+      "right": "n(H) = 2 · n(H₂O)",
+      "why": "Minden vízmolekulában két hidrogénatom van."
+    }
+  ],
+  "examTips": [
+    "Minden számítási feladat első sora a rendezett egyenlet, a második az adott mennyiség átszámítása mólra – ezekért akkor is jár részpont, ha később elszámolod.",
+    "Írd ki a mértékegységeket minden lépésben (g/mol, dm³/mol): így azonnal feltűnik, ha rossz összefüggést használtál.",
+    "Ha két kiindulási anyag mennyisége adott, mindig vizsgáld meg, melyik van feleslegben, mielőtt a terméket számolnád."
+  ],
+  "practice": [
+    {
+      "id": "1",
+      "kind": "text",
+      "prompt": "Mekkora a kalcium-karbonát (CaCO₃) moláris tömege? Ar(Ca) = 40,0; Ar(C) = 12,0; Ar(O) = 16,0",
+      "answer": [
+        "100 g/mol",
+        "100",
+        "100,0 g/mol",
+        "100.0 g/mol"
+      ],
+      "category": "anyagmennyiseg",
+      "explanation": "Helyes: 100 g/mol. 40,0 + 12,0 + 3 · 16,0 = 100,0 g/mol.",
+      "maxWords": 2
+    },
+    {
+      "id": "2",
+      "kind": "text",
+      "prompt": "Hány mol 6,0 · 10²² darab vízmolekula? (NA = 6,0 · 10²³ 1/mol)",
+      "answer": [
+        "0,10 mol",
+        "0,1 mol",
+        "0.10 mol",
+        "0.1 mol",
+        "0,10",
+        "0,1",
+        "0.10",
+        "0.1"
+      ],
+      "category": "anyagmennyiseg",
+      "explanation": "Helyes: 0,10 mol. n = N / NA = 6,0 · 10²² / 6,0 · 10²³ 1/mol = 0,10 mol.",
+      "maxWords": 2
+    },
+    {
+      "id": "3",
+      "kind": "choice",
+      "prompt": "Mekkora térfogatú standardállapotú hidrogén fejlődik 6,54 g cink sósavban való oldásakor? Ar(Zn) = 65,4; Vm = 24,5 dm³/mol",
+      "options": [
+        {
+          "key": "A",
+          "text": "1,225 dm³"
+        },
+        {
+          "key": "B",
+          "text": "4,90 dm³"
+        },
+        {
+          "key": "C",
+          "text": "2,45 dm³"
+        },
+        {
+          "key": "D",
+          "text": "0,245 dm³"
+        }
+      ],
+      "answer": "C",
+      "category": "anyagmennyiseg",
+      "explanation": "Helyes: 2,45 dm³. Zn + 2 HCl → ZnCl₂ + H₂; n(Zn) = 6,54 g / 65,4 g/mol = 0,100 mol = n(H₂); V = 0,100 mol · 24,5 dm³/mol = 2,45 dm³.",
+      "wrongOptions": {
+        "A": "Ez a fele: mintha 2 mol cinkből 1 mol hidrogén lenne – az egyenlet szerint az arány 1 : 1.",
+        "B": "Ez a kétszerese: mintha a HCl együtthatóját vette volna a hidrogénre.",
+        "D": "Helyiérték-hiba: 0,100 mol · 24,5 dm³/mol = 2,45 dm³, nem 0,245 dm³."
+      }
+    },
+    {
+      "id": "4",
+      "kind": "choice",
+      "prompt": "Melyik gáz 1,00 g-ja tölt be standardállapotban a legnagyobb térfogatot?",
+      "options": [
+        {
+          "key": "A",
+          "text": "O₂"
+        },
+        {
+          "key": "B",
+          "text": "H₂"
+        },
+        {
+          "key": "C",
+          "text": "CO₂"
+        },
+        {
+          "key": "D",
+          "text": "CH₄"
+        }
+      ],
+      "answer": "B",
+      "category": "anyagmennyiseg",
+      "explanation": "Helyes: H₂. Azonos tömegnél annak a gáznak a legnagyobb az anyagmennyisége (és így a térfogata), amelynek a legkisebb a moláris tömege: M(H₂) = 2,0 g/mol.",
+      "wrongOptions": {
+        "A": "M(O₂) = 32 g/mol, így 1,00 g csak 0,031 mol.",
+        "C": "M(CO₂) = 44 g/mol – ez tölti be a legkisebb térfogatot.",
+        "D": "M(CH₄) = 16 g/mol, ez nagyobb a hidrogénénél."
+      }
+    },
+    {
+      "id": "5",
+      "kind": "text",
+      "prompt": "Egy szénhidrogén 85,7 tömegszázalék szenet tartalmaz, moláris tömege 42,0 g/mol. Mi a molekulaképlete?",
+      "answer": [
+        "C₃H₆",
+        "C3H6"
+      ],
+      "caseSensitive": true,
+      "category": "anyagmennyiseg",
+      "explanation": "Helyes: C₃H₆. 100 g-ban 85,7 g C (7,14 mol) és 14,3 g H (14,3 mol) van: az arány 1 : 2, a tapasztalati képlet CH₂ (14,0 g/mol); 42,0 / 14,0 = 3 → C₃H₆ (propén vagy ciklopropán).",
+      "maxWords": 1
+    },
+    {
+      "id": "6",
+      "kind": "text",
+      "prompt": "Mekkora térfogatot tölt be 2,00 mol gáz 200 kPa nyomáson és 27 °C-on? R = 8,314 J/(mol · K); dm³-ben (emelt)",
+      "answer": [
+        "24,9 dm³",
+        "24.9 dm³",
+        "24,9 dm3",
+        "24.9 dm3",
+        "24,9",
+        "24.9"
+      ],
+      "category": "anyagmennyiseg",
+      "explanation": "Helyes: 24,9 dm³. T = 27 + 273 = 300 K; V = nRT / p = 2,00 · 8,314 · 300 / 200 kPa = 24,9 dm³ (kPa · dm³ = J).",
+      "maxWords": 2
+    }
+  ],
+  "relatedCategories": [
+    "oldatok-szamitas",
+    "szamolas-mertekegyseg",
+    "reakcioegyenlet"
+  ]
+}

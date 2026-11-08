@@ -1,0 +1,86 @@
+{
+  "schemaVersion": 1,
+  "id": "kem-sp-emelt-galvanelem-a-tetel",
+  "subject": "kemia",
+  "revision": 1,
+  "level": "emelt",
+  "source": "generated",
+  "topic": "sav-bazis-redoxi",
+  "title": "Galvánelemek és standardpotenciál",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "speaking",
+  "type": "a-tetel",
+  "partNumber": 1,
+  "instructionsHu": "Ismertesse a galvánelemek működési elvét a Daniell-elem példáján! Térjen ki a standardpotenciál fogalmára, a standard hidrogénelektródra, az elektromotoros erő kiszámítására és a redoxireakciók irányának előrejelzésére! Mutasson be gyakorlati áramforrásokat, és hasonlítsa össze a galvánelemet az elektrolizáló cellával!",
+  "prompts": [
+    "A Daniell-elem felépítése, elektródfolyamatok, cellareakció, cellajelölés",
+    "Anód és katód, az elektronok és az ionok mozgása, a sóhíd szerepe",
+    "A standardpotenciál és a standard hidrogénelektród; a redoxifolyamatok irányának előrejelzése",
+    "Az elektromotoros erő számítása",
+    "Gyakorlati galvánelemek, akkumulátorok; összevetés az elektrolízissel"
+  ],
+  "followUpQuestions": [
+    "Mekkora a cink–ezüst galvánelem elektromotoros ereje, ha E°(Ag⁺/Ag) = +0,80 V?"
+  ],
+  "usefulPhrases": [
+    {
+      "en": "(−) Zn | ZnSO₄(aq) || CuSO₄(aq) | Cu (+)",
+      "hu": "A Daniell-elem cellajelölése; || = sóhíd."
+    },
+    {
+      "en": "anód = oxidáció, katód = redukció",
+      "hu": "Mindig igaz; a pólus előjele a cellatípustól függ."
+    },
+    {
+      "en": "standard hidrogénelektród, E° = 0,00 V",
+      "hu": "Az elektródpotenciálok viszonyítási pontja."
+    },
+    {
+      "en": "EMF = E°(katód) − E°(anód)",
+      "hu": "A galvánelem elektromotoros ereje."
+    },
+    {
+      "en": "sóhíd",
+      "hu": "Ionvezetés, az oldatok elektromos semlegességének fenntartása."
+    },
+    {
+      "en": "önként végbemenő ↔ kikényszerített redoxireakció",
+      "hu": "Galvánelem ↔ elektrolízis."
+    }
+  ],
+  "sources": [],
+  "keyPoints": [
+    "A galvánelem a kémiai energiát elektromos energiává alakítja; a redoxireakció két részfolyamata térben elválasztva megy végbe.",
+    "Daniell-elem: (−) Zn | ZnSO₄(aq) || CuSO₄(aq) | Cu (+); anód (oxidáció): Zn → Zn²⁺ + 2 e⁻; katód (redukció): Cu²⁺ + 2 e⁻ → Cu.",
+    "Az elektronok a külső áramkörben a cinktől a réz felé áramlanak; a sóhíd (porózus fal) biztosítja az ionvezetést és az oldatok elektromos semlegességét.",
+    "A standardpotenciál a standard hidrogénelektródhoz (E° = 0,00 V) viszonyított elektródpotenciál standard körülmények között (1 mol/dm³, 25 °C, 0,1 MPa).",
+    "EMF = E°(katód) − E°(anód); a Daniell-elemre 0,34 V − (−0,76 V) = 1,10 V.",
+    "A pozitívabb standardpotenciálú rendszer oxidált formája oxidálja a negatívabb rendszer redukált formáját.",
+    "Példák: szárazelem (Leclanché-elem), lúgos elem, ólomakkumulátor, lítiumion-akkumulátor.",
+    "Elektrolízisnél külső áramforrás kényszerít ki egy önként végbe nem menő redoxireakciót; ott is az anódon oxidáció, a katódon redukció történik, de az anód a pozitív pólus."
+  ],
+  "speakingSeconds": 480,
+  "prepSeconds": 900,
+  "sampleAnswer": {
+    "turns": [
+      {
+        "speaker": "candidate",
+        "text": "A galvánelem olyan eszköz, amelyben egy önként végbemenő redoxireakció kémiai energiája elektromos energiává alakul. Ehhez az oxidációt és a redukciót térben elválasztjuk, és az elektronátmenet egy külső vezetőn keresztül történik.\nA Daniell-elemben cinklemez merül cink-szulfát-oldatba, rézlemez pedig réz(II)-szulfát-oldatba; a két oldatot sóhíd vagy porózus fal köti össze. Cellajelöléssel: (−) Zn | ZnSO₄(aq) || CuSO₄(aq) | Cu (+). A cinkelektródon oxidáció történik, ez az anód, a negatív pólus: Zn → Zn²⁺ + 2 e⁻. A rézelektródon redukció történik, ez a katód, a pozitív pólus: Cu²⁺ + 2 e⁻ → Cu. A cellareakció: Zn + Cu²⁺ → Zn²⁺ + Cu. Az elektronok a külső áramkörben a cinktől a réz felé haladnak, a sóhídon keresztül pedig ionok vándorolnak, így mindkét oldat elektromosan semleges marad; sóhíd nélkül az áram azonnal megszűnne.\nAz elektródpotenciálok abszolút értéke nem mérhető, ezért egy viszonyítási elektródhoz, a standard hidrogénelektródhoz hasonlítjuk őket, amelynek potenciálját megállapodás szerint 0,00 V-nak tekintjük. Ez platinázott platinalemez, amely 1 mol/dm³ oxóniumion-koncentrációjú oldatba merül, és körülötte standard nyomású hidrogéngáz áramlik. A standardpotenciál egy redoxirendszer potenciálja standard körülmények között, ehhez a hidrogénelektródhoz mérve: például a cinké −0,76 V, a rézé +0,34 V. Minél pozitívabb a standardpotenciál, annál erősebb oxidálószer a rendszer oxidált formája; a pozitívabb rendszer oxidált formája képes oxidálni a negatívabb rendszer redukált formáját. Ezért szorítja ki a cink a rezet az oldatából, fordítva viszont nem.\nAz elektromotoros erő a katód és az anód standardpotenciáljának különbsége: EMF = E°(katód) − E°(anód) = 0,34 V − (−0,76 V) = 1,10 V.\nA gyakorlatban szárazelemeket, lúgos elemeket, valamint újratölthető ólom- és lítiumion-akkumulátorokat használunk. Az elektrolízis a galvánelem fordítottja: ott külső áramforrás kényszerít ki egy önként végbe nem menő redoxireakciót. Mindkét esetben az anódon oxidáció, a katódon redukció történik, de elektrolízisnél az anód a pozitív pólus."
+      },
+      {
+        "speaker": "examiner",
+        "text": "Hogyan változik a Daniell-elem működése közben a két oldat koncentrációja?"
+      },
+      {
+        "speaker": "candidate",
+        "text": "A cinkelektród oldódik, ezért a cink-szulfát-oldat koncentrációja nő, a rézelektródon réz válik ki, ezért a réz(II)-szulfát-oldat koncentrációja csökken. A sóhídon át a szulfátionok a cinkes oldat felé vándorolnak, így mindkét oldat semleges marad."
+      }
+    ],
+    "notes": [
+      "Tartalom: a működési elvtől a Daniell-elemen, a standardpotenciálon és az EMF-en át a gyakorlati áramforrásokig és az elektrolízissel való összevetésig minden elem szerepel.",
+      "Összefüggések: az elektródfolyamatokat és a cellareakciót rendezett egyenlettel adja meg, a sóhíd szerepét részecskeszinten magyarázza, a kiszorítási sort a standardpotenciálokból vezeti le, és kiszámolja az EMF-et.",
+      "Szaknyelv: anód/katód, pólus, cellajelölés, standard hidrogénelektród – az emelt szint elvárt pontosságával; az anód és a pólus viszonyát mindkét cellatípusra helyesen adja meg."
+    ]
+  }
+}

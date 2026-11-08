@@ -1,0 +1,121 @@
+{
+  "schemaVersion": 1,
+  "id": "fiz-gd-writing-jelensegertelmezes",
+  "subject": "fizika",
+  "revision": 1,
+  "level": "kozep",
+  "source": "generated",
+  "topic": "utmutato",
+  "title": "Jelenségértelmezés",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "guide",
+  "type": "writing",
+  "target": "jelensegertelmezes",
+  "summaryHu": "A jelenségértelmezésben egy leírt jelenséget (pl. kukta, rézcsőben eső mágnes, bepárásodó üveg) kell kérdések mentén fizikailag megmagyarázni, gyakran egy-egy kisebb számítással kiegészítve. A javítók azt nézik, hogy minden válaszod a jelenség fizikai OKÁT adja-e meg a megfelelő törvénnyel, és hogy a megfogalmazás szakszerű-e (közép: válaszok 10, indoklás 4, szaknyelv 2 pont).",
+  "steps": [
+    {
+      "title": "Azonosítsd a fizikát",
+      "explanation": "Olvasás közben gondold végig: melyik témakör, melyik törvény áll a jelenség mögött (forráspont és nyomás, indukció és Lenz-törvény, felhajtóerő, hőtágulás)? Írd a margóra.",
+      "tips": [
+        "Egy jelenség mögött több törvény is lehet (pl. indukció + energiamegmaradás).",
+        "Keresd a szövegben a kulcsadatokat (nyomás, hőmérséklet, idő)."
+      ]
+    },
+    {
+      "title": "Ok → törvény → következmény",
+      "explanation": "Minden válasz szerkezete: a jelenség oka, a felelős törvény, annak alkalmazása erre a helyzetre, és a következtetés. A puszta leírás („mert lassan esik”) nem magyarázat.",
+      "tips": [
+        "„A jelenség oka az, hogy …”",
+        "„A … törvény szerint …, ezért …”"
+      ]
+    },
+    {
+      "title": "Számolás, ha kérik",
+      "explanation": "A jelenségértelmezésben is lehet számítás (erő, sebesség, teljesítmény). Ezt a számításos feladatokhoz hasonlóan, képlettel, egységekkel végezd, és értelmezd az eredményt.",
+      "tips": [
+        "Pl. 80 kPa túlnyomás egy 0,038 m²-es fedélen 3000 N – ez kb. 300 kg súlya.",
+        "Az eredményt kapcsold vissza a jelenséghez."
+      ]
+    },
+    {
+      "title": "Ellenőrizd a tévhiteket",
+      "explanation": "Nézd át: nem használtál-e hétköznapi tévhitet („a hideg beáramlik”, „a réz vonzza a mágnest”, „a hő a forró testben van”)?",
+      "tips": [
+        "A tévhitre épülő válasz nulla pontot is érhet.",
+        "Fogalmazz pontosan: hő ≠ hőmérséklet, súly ≠ tömeg."
+      ]
+    }
+  ],
+  "phrases": [
+    {
+      "group": "Ok",
+      "en": "A jelenség oka az, hogy …",
+      "hu": "A válasz nyitómondata."
+    },
+    {
+      "group": "Törvény",
+      "en": "… törvénye szerint …",
+      "hu": "A felelős törvény megnevezése."
+    },
+    {
+      "group": "Feltétel",
+      "en": "Ez csak akkor következik be, ha …",
+      "hu": "A jelenség feltételének kimondása."
+    },
+    {
+      "group": "Következtetés",
+      "en": "Ezért tapasztaljuk, hogy …",
+      "hu": "A magyarázat lezárása."
+    },
+    {
+      "group": "Energia",
+      "en": "A … energia … energiává alakul.",
+      "hu": "Energetikai magyarázat."
+    },
+    {
+      "group": "Hőtan",
+      "en": "A forrás feltétele, hogy a telített gőz nyomása elérje a külső nyomást.",
+      "hu": "Forráspont és nyomás."
+    },
+    {
+      "group": "Indukció",
+      "en": "Az indukált áram akadályozza az őt létrehozó változást (Lenz).",
+      "hu": "Elektromágneses jelenségek."
+    },
+    {
+      "group": "Összevetés",
+      "en": "Ezzel szemben a … esetben …, mert …",
+      "hu": "Két eset összehasonlítása."
+    }
+  ],
+  "mistakes": [
+    {
+      "wrong": "„A kuktában gyorsabban fő az étel, mert erősebben melegít.”",
+      "right": "„A kuktában nagyobb a nyomás, ezért a víz magasabb hőmérsékleten (kb. 117 °C) forr; magasabb hőmérsékleten gyorsabbak a főzés folyamatai.”",
+      "why": "A kukta nem melegít erősebben; a lényeg a forráspont nyomásfüggése."
+    },
+    {
+      "wrong": "„A mágnest a réz vonzza, ezért esik lassan.”",
+      "right": "„A mozgó mágnes örvényáramokat indukál a csőben, amelyek mezeje Lenz törvénye szerint fékezi.”",
+      "why": "A réz nem mágnesezhető; a tévhit nulla pontot ér."
+    },
+    {
+      "wrong": "Csak leírom, mit látok.",
+      "right": "Megmondom, miért történik, melyik törvény alapján.",
+      "why": "A jelenségértelmezés az okra kérdez, nem a leírásra."
+    }
+  ],
+  "checklist": [
+    "Minden kérdésre a fizikai okkal válaszoltam.",
+    "Megneveztem a felelős törvényeket.",
+    "A számításoknál képletet, egységet és szöveges választ írtam.",
+    "Nem használtam hétköznapi tévhitet.",
+    "A fogalmakat pontosan használtam (hő–hőmérséklet, nyomás–túlnyomás)."
+  ],
+  "timing": "Kb. 35 perc (közép, választható 3. feladat; emelt, III. rész): 5 perc a jelenség végiggondolása, 25 perc a válaszok, 5 perc átolvasás. Rövid kérdésre 3–5 mondat elég, de mindegyikben legyen törvény.",
+  "levelNotes": {
+    "kozep": "Középszinten a jelenségértelmezés a méréselemzéssel együtt választható 3. feladat (16 pont); többnyire hétköznapi jelenség (konyha, időjárás, közlekedés), egyszerű számítással.",
+    "emelt": "Emelt szinten a III. rész egyik összetett feladata lehet jelenségértelmező (11–12 pont): összetettebb jelenség (örvényáramok, fotoeffektus, rezonancia), energiamérleggel és több lépéses számítással."
+  }
+}

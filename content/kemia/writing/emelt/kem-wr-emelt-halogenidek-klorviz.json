@@ -1,0 +1,96 @@
+{
+  "schemaVersion": 1,
+  "id": "kem-wr-emelt-halogenidek-klorviz",
+  "subject": "kemia",
+  "revision": 1,
+  "level": "emelt",
+  "source": "generated",
+  "topic": "szervetlen-nemfemek",
+  "title": "Halogenidionok reakciója klórvízzel és brómos vízzel",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "writing",
+  "type": "kiserletelemzo",
+  "taskNumber": 3,
+  "situation": "Három kémcsőben kálium-klorid-, kálium-bromid- és kálium-jodid-oldat van. Mindhárom kémcsőbe néhány cm³ klórvizet öntünk, majd 1–1 cm³ benzint rétegezünk rájuk, és a kémcsöveket összerázzuk. Egy negyedik kémcsőben kálium-jodid-oldathoz brómos vizet öntünk, majd néhány csepp keményítőoldatot adunk hozzá.\n\nStandardpotenciálok: E°(Cl₂/2 Cl⁻) = +1,36 V; E°(Br₂/2 Br⁻) = +1,09 V; E°(I₂/2 I⁻) = +0,54 V.\n\na) Mit tapasztalunk az első három kémcsőben a benzines összerázás után? (3 pont)\nb) Írja fel a lejátszódó reakciók ionegyenletét! (2 pont)\nc) Magyarázza meg a standardpotenciálok alapján, miért reagál a klór a bromid- és a jodidionokkal, és miért nincs változás a kálium-klorid-oldatban! (2 pont)\nd) Mit tapasztalunk a negyedik kémcsőben? Írja fel a reakció ionegyenletét, és indokolja, miért megy végbe! (3 pont)\ne) Miért a benzines fázisban jelenik meg a halogének színe? (2 pont)",
+  "points": [
+    {
+      "id": "p1",
+      "text": "a) A három kémcső tapasztalatai a benzines rázás után (3 pont)"
+    },
+    {
+      "id": "p2",
+      "text": "b) A klór reakcióinak ionegyenletei (2 pont)"
+    },
+    {
+      "id": "p3",
+      "text": "c) A reakciók magyarázata a standardpotenciálokkal (2 pont)"
+    },
+    {
+      "id": "p4",
+      "text": "d) A brómos víz és a jodidion reakciója: tapasztalat (keményítővel), ionegyenlet, indoklás (3 pont)"
+    },
+    {
+      "id": "p5",
+      "text": "e) A halogének benzines oldódásának magyarázata (2 pont)"
+    }
+  ],
+  "suggestedMinutes": 30,
+  "usefulPhrases": [
+    {
+      "en": "a pozitívabb standardpotenciálú rendszer oxidált formája az oxidálószer",
+      "hu": "Ezzel döntsd el a redoxireakció irányát."
+    },
+    {
+      "en": "Cl₂ > Br₂ > I₂ (oxidálóképesség)",
+      "hu": "A halogének oxidálóképessége a csoportban lefelé csökken."
+    },
+    {
+      "en": "bróm benzinben: narancssárga–vörösbarna; jód benzinben: ibolya",
+      "hu": "A halogének jellegzetes színe apoláris oldószerben."
+    },
+    {
+      "en": "jód + keményítő → sötétkék",
+      "hu": "A jód érzékeny kimutatása."
+    },
+    {
+      "en": "extrakció (kirázás)",
+      "hu": "Az oldott anyag átvitele egy jobban oldó, nem elegyedő oldószerbe."
+    },
+    {
+      "en": "„hasonló a hasonlóban oldódik”",
+      "hu": "Apoláris anyag apoláris oldószerben oldódik jól."
+    }
+  ],
+  "checklistExtra": [],
+  "modelAnswer": {
+    "text": "a) A kálium-klorid-oldatot tartalmazó kémcsőben nincs változás; a benzines réteg legfeljebb halványan sárgászöld lesz a benne oldódó klórtól. A kálium-bromid-oldatnál rázás után a felső, benzines réteg narancssárga–vörösbarna színű lesz. A kálium-jodid-oldatnál a vizes fázis a klórvíz hozzáadásakor megbarnul, rázás után pedig a benzines réteg ibolyaszínű (lila) lesz.\n\nb) Cl₂ + 2 Br⁻ → 2 Cl⁻ + Br₂\nCl₂ + 2 I⁻ → 2 Cl⁻ + I₂\n\nc) Egy redoxireakció akkor megy végbe önként, ha az oxidálószer redoxirendszerének standardpotenciálja pozitívabb, mint a redukálószeré. A klór standardpotenciálja (+1,36 V) pozitívabb a bróménál (+1,09 V) és a jódénál (+0,54 V), ezért a klór erősebb oxidálószer, és elektront vesz el a bromid- és a jodidionoktól. A kloridion a klór saját redukált formája, ezért közöttük nincs elektronátmenet, így változás sem.\n\nd) Az oldat sötétbarna lesz a kivált jódtól, a keményítőoldat hozzáadása után pedig sötétkék színeződés jelenik meg, mert a jód a keményítővel kék színű zárványvegyületet képez:\nBr₂ + 2 I⁻ → 2 Br⁻ + I₂\nA bróm standardpotenciálja (+1,09 V) pozitívabb a jódénál (+0,54 V), ezért a bróm oxidálja a jodidionokat.\n\ne) A halogénmolekulák (Br₂, I₂) apolárisak, ezért az apoláris benzinben sokkal jobban oldódnak, mint a poláris vízben („hasonló a hasonlóban oldódik”). Összerázáskor a halogén nagy része átkerül a vízzel nem elegyedő, kisebb sűrűségű benzines fázisba (extrakció), és ott jellegzetes színével jelenik meg.",
+    "pointsCovered": [
+      {
+        "id": "p1",
+        "quote": "A kálium-bromid-oldatnál rázás után a felső, benzines réteg narancssárga–vörösbarna színű lesz."
+      },
+      {
+        "id": "p2",
+        "quote": "Cl₂ + 2 I⁻ → 2 Cl⁻ + I₂"
+      },
+      {
+        "id": "p3",
+        "quote": "A klór standardpotenciálja (+1,36 V) pozitívabb a bróménál (+1,09 V) és a jódénál (+0,54 V), ezért a klór erősebb oxidálószer"
+      },
+      {
+        "id": "p4",
+        "quote": "Br₂ + 2 I⁻ → 2 Br⁻ + I₂"
+      },
+      {
+        "id": "p5",
+        "quote": "A halogénmolekulák (Br₂, I₂) apolárisak, ezért az apoláris benzinben sokkal jobban oldódnak, mint a poláris vízben"
+      }
+    ],
+    "notes": [
+      "Tapasztalatok: mindhárom kémcső eredményét (a változás hiányát is) és a negyedik kémcső két színváltozását pontosan, a fázisok megnevezésével írja le.",
+      "Magyarázat: a reakciók irányát a megadott standardpotenciálokkal indokolja, rendezett ionegyenleteket ír (töltés és atomszám is egyezik), és részecskeszinten magyarázza a benzines oldódást (apoláris molekulák).",
+      "Szaknyelv: oxidálószer, standardpotenciál, extrakció, zárványvegyület – a szakkifejezések pontosak, a képletek hibátlanok."
+    ]
+  }
+}

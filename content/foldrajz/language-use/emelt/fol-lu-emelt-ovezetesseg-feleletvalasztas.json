@@ -1,0 +1,261 @@
+{
+  "schemaVersion": 1,
+  "id": "fol-lu-emelt-ovezetesseg-feleletvalasztas",
+  "subject": "foldrajz",
+  "revision": 1,
+  "level": "emelt",
+  "source": "generated",
+  "topic": "ovezetesseg",
+  "title": "Földrajzi övezetesség – feleletválasztás",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "language-use",
+  "type": "feleletvalasztas",
+  "instructions": "Válassza ki a helyes választ! Írja a betűjelét a kijelölt helyre! Minden kérdésre egy helyes válasz van. A 0. a megoldott példa.",
+  "example": {
+    "id": "0",
+    "kind": "choice",
+    "prompt": "Melyik övezetre jellemző a keménylombú erdő és a mediterrán éghajlat?",
+    "options": [
+      {
+        "key": "A",
+        "text": "meleg mérsékelt övezet"
+      },
+      {
+        "key": "B",
+        "text": "forró övezet"
+      },
+      {
+        "key": "C",
+        "text": "hideg mérsékelt övezet"
+      },
+      {
+        "key": "D",
+        "text": "hideg övezet"
+      }
+    ],
+    "answer": "A",
+    "category": "ovezetesseg-hiba",
+    "explanation": "Helyes: meleg mérsékelt övezet. A mediterrán éghajlat (enyhe, csapadékos tél, forró, száraz nyár) a meleg mérsékelt övezet része; a nyári szárazságot jól tűrő, keménylombú növényzet jellemzi."
+  },
+  "items": [
+    {
+      "id": "1",
+      "kind": "choice",
+      "prompt": "Melyik talaj jellemző a valódi (nedves) mérsékelt övezet lombhullató erdeire?",
+      "options": [
+        {
+          "key": "A",
+          "text": "laterit"
+        },
+        {
+          "key": "B",
+          "text": "csernozjom (mezőségi talaj)"
+        },
+        {
+          "key": "C",
+          "text": "podzol"
+        },
+        {
+          "key": "D",
+          "text": "barna erdőtalaj"
+        }
+      ],
+      "answer": "D",
+      "category": "ovezetesseg-hiba",
+      "explanation": "Helyes: barna erdőtalaj. A lombhullató erdők évente lehulló avarja közepes humusztartalmat ad, a mérsékelt csapadék mérsékelten lúgozza ki a talajt – így alakul ki a közepesen termékeny barna erdőtalaj.",
+      "wrongOptions": {
+        "A": "A laterit a forró, nedves övezet vas- és alumínium-oxidokban gazdag vörös talaja.",
+        "B": "A csernozjom a füves puszták (sztyepp) talaja, a mérsékelt övezet szárazabb, kontinentális részén.",
+        "C": "A podzol a hideg mérsékelt övezet tűlevelű erdeinek (tajga) savanyú, kilúgozott talaja."
+      }
+    },
+    {
+      "id": "2",
+      "kind": "choice",
+      "prompt": "Miért csökken a hegységekben a magassággal a hőmérséklet (függőleges övezetesség)?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Mert a hegységek kőzetei eleve hidegebbek."
+        },
+        {
+          "key": "B",
+          "text": "Mert a hegycsúcsok messzebb vannak a Naptól."
+        },
+        {
+          "key": "C",
+          "text": "Mert a hegyekben mindig felhős az ég."
+        },
+        {
+          "key": "D",
+          "text": "Mert a troposzféra levegője alulról, a felszín hősugárzásától melegszik, és a magasban a ritkább levegő kevesebb hőt tart vissza."
+        }
+      ],
+      "answer": "D",
+      "category": "termeszeti-folyamat",
+      "explanation": "Helyes: D. A napsugárzás főként a felszínt melegíti, a levegő a felszín hosszú hullámú kisugárzásától melegszik; felfelé ritkul a levegő, kevesebb benne a hőt elnyelő vízgőz és szén-dioxid. Átlagosan 100 méterenként kb. 0,5–0,6 °C a hőmérséklet-csökkenés.",
+      "wrongOptions": {
+        "A": "A kőzetek hőmérsékletét is a napsugárzás és a levegő határozza meg; a hegység anyaga nem oka a hűlésnek.",
+        "B": "A néhány km-es magasságkülönbség a 150 millió km-es Nap–Föld távolsághoz képest elhanyagolható.",
+        "C": "A felhőzet gyakori a hegyekben, de nem ez az oka a magassággal való hűlésnek; derült időben is hidegebb van fent."
+      }
+    },
+    {
+      "id": "3",
+      "kind": "choice",
+      "prompt": "Melyik párosítás helyes (éghajlati típus – jellemző terület)?",
+      "options": [
+        {
+          "key": "A",
+          "text": "sivatagi éghajlat – Amazonas-medence"
+        },
+        {
+          "key": "B",
+          "text": "mediterrán éghajlat – Kongó-medence"
+        },
+        {
+          "key": "C",
+          "text": "tundraéghajlat – Pampa"
+        },
+        {
+          "key": "D",
+          "text": "monszunéghajlat – Banglades"
+        }
+      ],
+      "answer": "D",
+      "category": "ovezetesseg-hiba",
+      "explanation": "Helyes: monszun – Banglades. Dél- és Délkelet-Ázsiában az évszakosan irányt váltó monszun szél nyáron rendkívül sok csapadékot hoz, a tél száraz; Banglades ennek tipikus területe.",
+      "wrongOptions": {
+        "A": "Az Amazonas-medence a Föld legnagyobb esőerdős területe, egyenlítői éghajlattal.",
+        "B": "A Kongó-medence az Egyenlítő mentén fekszik, egyenlítői éghajlatú, esőerdővel borított terület.",
+        "C": "A Pampa Argentína füves síksága, a mérsékelt övezetben; a tundra a hideg övezet peremén, a sarkkörök közelében van."
+      }
+    },
+    {
+      "id": "4",
+      "kind": "choice",
+      "prompt": "Mi a szavannaéghajlat legfontosabb jellemzője?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Enyhe, csapadékos tél és forró, száraz nyár."
+        },
+        {
+          "key": "B",
+          "text": "Egész évben bőséges csapadék, szinte mindennapos délutáni zápor."
+        },
+        {
+          "key": "C",
+          "text": "Hideg tél és meleg nyár, nyári csapadékmaximum."
+        },
+        {
+          "key": "D",
+          "text": "Egész évben meleg van, a csapadék egy esős (nyári) és egy száraz évszakra oszlik."
+        }
+      ],
+      "answer": "D",
+      "category": "ovezetesseg-hiba",
+      "explanation": "Helyes: D. A szavanna a forró övezetben, az egyenlítői és a térítői öv között fekszik: magas napálláskor az egyenlítői feláramlás esőt hoz, alacsony napálláskor a passzát száraz levegője uralkodik.",
+      "wrongOptions": {
+        "A": "Ez a mediterrán éghajlat leírása (meleg mérsékelt övezet).",
+        "B": "Ez az egyenlítői éghajlat leírása, ahol nincs száraz évszak.",
+        "C": "Ez a mérsékelt övezeti kontinentális éghajlat leírása."
+      }
+    },
+    {
+      "id": "5",
+      "kind": "choice",
+      "prompt": "Melyik állítás igaz a tajgára?",
+      "options": [
+        {
+          "key": "A",
+          "text": "A meleg mérsékelt övezet keménylombú erdeje."
+        },
+        {
+          "key": "B",
+          "text": "A hideg övezet fátlan, mohás-zuzmós növénytársulása."
+        },
+        {
+          "key": "C",
+          "text": "A hideg mérsékelt övezet tűlevelű erdeje, alatta podzol talaj képződik."
+        },
+        {
+          "key": "D",
+          "text": "A forró övezet lombhullató erdeje."
+        }
+      ],
+      "answer": "C",
+      "category": "ovezetesseg-hiba",
+      "explanation": "Helyes: C. A tajga Észak-Eurázsia és Észak-Amerika hatalmas tűlevelű erdőöve hosszú, hideg téllel és rövid nyárral; a savanyú tűlevél-avar alatt kilúgozott podzol talaj alakul ki.",
+      "wrongOptions": {
+        "A": "Ez a mediterrán keménylombú erdő (pl. magyaltölgy, babérfélék).",
+        "B": "Ez a tundra; a tundrán a rövid, hűvös nyár miatt a fák nem élnek meg.",
+        "D": "A forró övezet szárazabb részein (monszun- és szavannavidék) vannak lombhullató erdők, ezek nem a tajgához tartoznak."
+      }
+    },
+    {
+      "id": "6",
+      "kind": "choice",
+      "prompt": "Miért nincs összefüggő hideg mérsékelt övezet (tajga) a déli félgömbön?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Mert a déli félgömb egészében melegebb, mint az északi."
+        },
+        {
+          "key": "B",
+          "text": "Mert a déli félgömbön az 50–70° közötti szélességeken alig van szárazföld."
+        },
+        {
+          "key": "C",
+          "text": "Mert a déli félgömbön nincs tél."
+        },
+        {
+          "key": "D",
+          "text": "Mert a déli félgömbön nem élnek tűlevelű fák."
+        }
+      ],
+      "answer": "B",
+      "category": "ovezetesseg-hiba",
+      "explanation": "Helyes: B. Az övezetek kialakulásához szárazföld kell: a déli félgömbön az 50–70° közötti övben szinte csak óceán van (a Déli-óceán), csak Dél-Amerika csúcsa nyúlik ide.",
+      "wrongOptions": {
+        "A": "A déli félgömb nem melegebb általában; az Antarktisz miatt a sarkvidéke hidegebb is az északinál.",
+        "C": "A déli félgömbön is van tél, csak az északi félgömb nyarával egy időben (június–augusztus).",
+        "D": "Élnek ott tűlevelűek (pl. araukáriák), de nincs olyan összefüggő szárazföld, amelyen tajgaöv alakulhatna ki."
+      }
+    },
+    {
+      "id": "7",
+      "kind": "choice",
+      "prompt": "Mi az oka annak, hogy az egyenlítői övezetben szinte minden délután zápor esik?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Csak a hegyvidékeken esik, ahol a domborzat felemeli a levegőt."
+        },
+        {
+          "key": "B",
+          "text": "A nyugati szelek ciklonjai hozzák az esőt."
+        },
+        {
+          "key": "C",
+          "text": "A hideg tengeráramlások lehűtik a levegőt."
+        },
+        {
+          "key": "D",
+          "text": "Az erős felmelegedés miatt a nedves levegő felemelkedik, lehűl, és a vízgőz kicsapódik (zenitális eső)."
+        }
+      ],
+      "answer": "D",
+      "category": "termeszeti-folyamat",
+      "explanation": "Helyes: D. A delelő Nap délelőtt erősen felmelegíti a felszínt, a nedves levegő feláramlik (konvekció), és délutánra gomolyfelhőkből heves zápor hull; ez az egyenlítői éghajlat napi ritmusa.",
+      "wrongOptions": {
+        "A": "A zenitális eső a síkságokon is mindennapos (pl. Amazonas-medence), tehát nem a domborzat az oka.",
+        "B": "A nyugati szelek és ciklonjaik a mérsékelt övezet csapadékát adják, az Egyenlítőnél nem fújnak.",
+        "C": "A hideg tengeráramlások éppen szárazságot okoznak (pl. az Atacama vagy a Namíb parti sivatagja)."
+      }
+    }
+  ],
+  "suggestedMinutes": 10
+}

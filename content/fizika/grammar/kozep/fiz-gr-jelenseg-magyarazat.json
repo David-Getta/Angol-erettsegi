@@ -1,0 +1,282 @@
+{
+  "schemaVersion": 1,
+  "id": "fiz-gr-jelenseg-magyarazat",
+  "subject": "fizika",
+  "revision": 1,
+  "level": "kozep",
+  "source": "generated",
+  "topic": "nyelvtan",
+  "title": "Jelenségek fizikai magyarázata – ok, törvény, következtetés",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "grammar",
+  "type": "lesson",
+  "category": "jelenseg-magyarazat",
+  "summaryHu": "Egy jelenség magyarázata nem a tapasztalat újramondása, hanem az OK megnevezése: melyik fizikai törvény miatt történik az, amit látunk. A jelenségértelmező feladatban, a teszt „miért” kérdéseiben és a szóbeli kísérleti részében a hétköznapi tévhitek (pl. „a nehezebb test gyorsabban esik”) a leggyakoribb pontvesztők.",
+  "rules": [
+    {
+      "title": "A magyarázat szerkezete",
+      "explanation": "Jó magyarázat: 1) a jelenség rövid leírása, 2) a felelős fizikai törvény vagy fogalom megnevezése, 3) alkalmazása a konkrét helyzetre (mi változik, mi marad állandó), 4) következtetés: ezért tapasztaljuk azt, amit.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "Miért párásodik be a hűtőből kivett üveg?",
+          "hu": "A hideg felület lehűti a mellette lévő levegőt a harmatpont alá, a levegő telítetté válik, a vízgőz lecsapódik (kondenzáció)."
+        },
+        {
+          "en": "Miért úszik az acélhajó?",
+          "hu": "Az átlagsűrűsége (acél + benne a levegő) kisebb a vízénél, így már részben bemerülve akkora felhajtóerő hat rá, amennyi a súlya (Arkhimédész)."
+        }
+      ]
+    },
+    {
+      "title": "Tipikus tévhitek a mechanikában",
+      "explanation": "„A mozgáshoz erő kell” – nem: egyenletes mozgáshoz eredő erő nem kell (Newton I.). „A nehezebb test gyorsabban esik” – légellenállás nélkül minden test ugyanakkora g gyorsulással esik. „Az űrben nincs gravitáció” – a keringő űrhajósok szabadon esnek, a gravitáció hat rájuk.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "A hirtelen fékező buszon előredőlünk.",
+          "hu": "Nem „előre lök” valami: a testünk tehetetlensége miatt megtartja a sebességét, a busz lassul alattunk."
+        },
+        {
+          "en": "Vákuumcsőben a toll és az érme egyszerre esik le.",
+          "hu": "A gyorsulás a tömegtől független; levegőben a légellenállás lassítja a tollat."
+        }
+      ]
+    },
+    {
+      "title": "Tipikus tévhitek a hőtanban és az elektromosságban",
+      "explanation": "„A hideg beáramlik” – nem: a hő a melegebb helyről a hidegebbre áramlik. „A takaró melegít” – nem termel hőt, csak a hővezetést lassítja. „Az áram elfogy a fogyasztóban” – az áramerősség soros körben mindenhol ugyanaz, az ENERGIA alakul át.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "A fémkorlát hidegebbnek érződik, mint a fa pad, pedig ugyanolyan hőmérsékletűek.",
+          "hu": "A fém jobb hővezető, gyorsabban vezeti el a kezünkből a hőt."
+        },
+        {
+          "en": "Az izzó előtti és utáni vezetékben ugyanakkora áram folyik.",
+          "hu": "A töltés nem fogy el; a fogyasztóban az elektromos energia alakul hővé és fénnyé."
+        }
+      ]
+    },
+    {
+      "title": "Tipikus tévhitek a fénytanban és a csillagászatban",
+      "explanation": "„Nyáron közelebb vagyunk a Naphoz” – az évszakokat a forgástengely ferdesége okozza. „A holdfázist a Föld árnyéka okozza” – a megvilágított holdfélből látható rész változik. „A fekete ruha azért meleg, mert vastag” – a fekete felület több fényt nyel el.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "Napközelben (január elején) az északi féltekén tél van.",
+          "hu": "A távolság szerepe elhanyagolható a beesési szöghöz képest."
+        },
+        {
+          "en": "A kék ég oka a fény szóródása a levegő molekuláin.",
+          "hu": "A rövidebb hullámhosszú kék fény sokkal erősebben szóródik, mint a vörös."
+        }
+      ]
+    },
+    {
+      "title": "Energetikai magyarázat",
+      "explanation": "Sok jelenség legegyszerűbb magyarázata az energiamérleg: honnan jön és hová megy az energia. Például Lenz törvénye az energiamegmaradás következménye; a súrlódás mechanikai energiát alakít belső energiává; a hőerőgép hatásfoka a II. főtétel miatt kisebb 100 %-nál.",
+      "emeltOnly": true,
+      "examples": [
+        {
+          "en": "A rézcsőben eső mágnes lassan esik.",
+          "hu": "Az örvényáramok fékezik; a helyzeti energia a cső Joule-hőjévé alakul."
+        },
+        {
+          "en": "A pattogó labda egyre kisebbet ugrik.",
+          "hu": "Minden pattanáskor mechanikai energia alakul belső energiává."
+        }
+      ]
+    }
+  ],
+  "commonMistakes": [
+    {
+      "wrong": "A labda azért áll meg, mert elfogy belőle a lendítő erő.",
+      "right": "A labda azért áll meg, mert a súrlódás és a légellenállás fékezi; erő nélkül egyenletesen haladna tovább.",
+      "why": "Newton I. törvénye: a mozgás fenntartásához nem kell erő, a megálláshoz viszont fékező erő kell."
+    },
+    {
+      "wrong": "Télen azért van hideg, mert távolabb van a Nap.",
+      "right": "Télen azért hidegebb, mert a Nap alacsonyabban delel: a sugarak laposabban érkeznek, és rövidebbek a nappalok.",
+      "why": "A Föld–Nap távolság az év során csak kb. 3 %-kal változik, és januárban vagyunk a legközelebb."
+    },
+    {
+      "wrong": "A pulóver melegít.",
+      "right": "A pulóver a benne lévő levegővel hőszigetel: lassítja a testünk által termelt hő távozását.",
+      "why": "A pulóver nem hőforrás; a hőszigetelő réteg a hőátadást csökkenti."
+    },
+    {
+      "wrong": "A mágnes azért esik lassan a rézcsőben, mert a réz vonzza.",
+      "right": "A mágnes mozgása örvényáramokat indukál a csőben, amelyek mezeje Lenz törvénye szerint fékezi a mágnest.",
+      "why": "A réz nem mágnesezhető; a hatás oka az indukció, nem a mágneses vonzás."
+    }
+  ],
+  "examTips": [
+    "Jelenségértelmezésnél minden „miért?” kérdésre a fizikai OKKAL kezdd a választ, és nevezd meg a törvényt – a „mert így tapasztaltuk” nem magyarázat.",
+    "Teszt: a rossz válaszlehetőségek között szinte mindig ott van a hétköznapi tévhit – ha egy válasz „józan észnek” tűnik, ellenőrizd a törvénnyel.",
+    "Szóbeli: a kísérlet után mondd ki a következtetést egy mondatban („Ez azt mutatja, hogy…”) – a kísérleti pontok fele az értelmezésért jár."
+  ],
+  "practice": [
+    {
+      "id": "1",
+      "kind": "choice",
+      "prompt": "Miért érezzük hidegebbnek a fém kilincset, mint a fa ajtót, ha ugyanakkora a hőmérsékletük?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Mert a fém hőmérséklete valójában alacsonyabb."
+        },
+        {
+          "key": "B",
+          "text": "Mert a fa felmelegíti a kezünket."
+        },
+        {
+          "key": "C",
+          "text": "Mert a fém hideget sugároz."
+        },
+        {
+          "key": "D",
+          "text": "Mert a fém jobb hővezető, gyorsabban vezeti el a hőt a kezünkből."
+        }
+      ],
+      "answer": "D",
+      "category": "jelenseg-magyarazat",
+      "explanation": "Helyes: D. Hőmérsékleti egyensúlyban mindkettő szobahőmérsékletű, de a fém hővezetési tényezője sokkal nagyobb, ezért a meleg kezünkből gyorsabban von el hőt – az idegvégződéseink a hőáramot érzékelik, nem a hőmérsékletet.",
+      "wrongOptions": {
+        "A": "A szobában hosszú ideig lévő tárgyak hőmérséklete kiegyenlítődik.",
+        "B": "A szobahőmérsékletű fa nem melegebb a kezünknél, nem melegíti, csak lassabban hűti.",
+        "C": "Hideget nem lehet sugározni; a hő a melegebb kézből áramlik a hidegebb tárgyba."
+      }
+    },
+    {
+      "id": "2",
+      "kind": "choice",
+      "prompt": "Légüres csőben egy toll és egy pénzérme ugyanakkora magasságból esik le. Mi történik?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Az érme ér le előbb, mert nehezebb."
+        },
+        {
+          "key": "B",
+          "text": "A toll ér le előbb, mert kisebb a tömege."
+        },
+        {
+          "key": "C",
+          "text": "Egyszerre érnek le."
+        },
+        {
+          "key": "D",
+          "text": "A toll lebeg, mert nincs levegő, ami lefelé nyomná."
+        }
+      ],
+      "answer": "C",
+      "category": "jelenseg-magyarazat",
+      "explanation": "Helyes: C. Légellenállás nélkül minden test ugyanakkora g gyorsulással esik, a tömegtől függetlenül (a nagyobb nehézségi erőhöz nagyobb tehetetlenség tartozik). Levegőben a tollat a légellenállás lassítja.",
+      "wrongOptions": {
+        "A": "A nagyobb tömeg nagyobb nehézségi erőt, de arányosan nagyobb tehetetlenséget is jelent, így a gyorsulás ugyanaz.",
+        "B": "A kisebb tömeg nem okoz gyorsabb esést.",
+        "D": "A testeket a gravitáció húzza lefelé, nem a levegő nyomja; vákuumban is esnek."
+      }
+    },
+    {
+      "id": "3",
+      "kind": "choice",
+      "prompt": "Miért dőlünk előre, amikor a busz hirtelen fékez?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Mert a testünk a tehetetlensége miatt megtartja a sebességét, miközben a busz lassul."
+        },
+        {
+          "key": "B",
+          "text": "Mert egy erő előre lök minket."
+        },
+        {
+          "key": "C",
+          "text": "Mert a busz lassulásakor a gravitáció előre mutat."
+        },
+        {
+          "key": "D",
+          "text": "Mert a levegő előre áramlik a buszban."
+        }
+      ],
+      "answer": "A",
+      "category": "jelenseg-magyarazat",
+      "explanation": "Helyes: A. Newton I. törvénye szerint a testünk megtartja a mozgásállapotát. A busz (és a lábunk a padlón) lassul, a felsőtestünk viszont még a korábbi sebességgel halad, ezért a buszhoz képest előredőlünk.",
+      "wrongOptions": {
+        "B": "Nincs előre ható erő: a buszhoz képesti „előrelendülés” a tehetetlenség következménye.",
+        "C": "A gravitáció mindig lefelé mutat, fékezéskor sem változik.",
+        "D": "A levegő mozgása elhanyagolható hatású, és nem ez a jelenség oka."
+      }
+    },
+    {
+      "id": "4",
+      "kind": "choice",
+      "prompt": "Miért kék a nappali égbolt?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Mert az óceán kék színe visszatükröződik."
+        },
+        {
+          "key": "B",
+          "text": "Mert a Nap kék fényt bocsát ki."
+        },
+        {
+          "key": "C",
+          "text": "Mert a levegő kék színű gázokból áll."
+        },
+        {
+          "key": "D",
+          "text": "Mert a napfény kék összetevője a levegő molekuláin sokkal erősebben szóródik, mint a vörös."
+        }
+      ],
+      "answer": "D",
+      "category": "jelenseg-magyarazat",
+      "explanation": "Helyes: D. A levegő molekuláin történő szóródás erőssége erősen nő a hullámhossz csökkenésével, ezért a kék fény minden irányból szórtan érkezik a szemünkbe. Napnyugtakor a hosszú légköri úton a kék kiszóródik, ezért vörös a lemenő Nap.",
+      "wrongOptions": {
+        "A": "A szárazföld fölött is kék az ég; az óceán színe inkább maga is az égbolt tükröződése.",
+        "B": "A Nap fénye fehér, minden színt tartalmaz.",
+        "C": "A levegő gázai (nitrogén, oxigén) színtelenek."
+      }
+    },
+    {
+      "id": "5",
+      "kind": "choice",
+      "prompt": "Egy hűtőből kivett hideg üdítős üveg kívülről bepárásodik. Mi a jelenség oka?",
+      "options": [
+        {
+          "key": "A",
+          "text": "A levegő vízgőze lecsapódik a hideg felületen, mert az ott lehűlő levegő telítetté válik."
+        },
+        {
+          "key": "B",
+          "text": "Az üvegen át kiszivárog az üdítő."
+        },
+        {
+          "key": "C",
+          "text": "Az üveg „kiizzad”, mert hideg."
+        },
+        {
+          "key": "D",
+          "text": "A hideg üveg vonzza a vízcseppeket."
+        }
+      ],
+      "answer": "A",
+      "category": "jelenseg-magyarazat",
+      "explanation": "Helyes: A. A hideg felület mellett a levegő a harmatpontja alá hűl, a benne lévő vízgőz már nem maradhat gőz állapotban, és kicsapódik (kondenzáció) – ugyanez a harmat és a bepárásodó szemüveg oka.",
+      "wrongOptions": {
+        "B": "Az üveg zárt és vízhatlan, a cseppek a levegő vízgőzéből származnak.",
+        "C": "Az üveg nem bocsát ki vizet; a víz a környező levegőből jön.",
+        "D": "Nincs ilyen vonzás; a lehűlés miatti lecsapódás a magyarázat."
+      }
+    }
+  ],
+  "relatedCategories": [
+    "torvenyek",
+    "fogalmak",
+    "indoklas-felepites"
+  ]
+}

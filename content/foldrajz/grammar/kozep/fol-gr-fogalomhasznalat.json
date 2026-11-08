@@ -1,0 +1,239 @@
+{
+  "schemaVersion": 1,
+  "id": "fol-gr-fogalomhasznalat",
+  "subject": "foldrajz",
+  "revision": 1,
+  "level": "kozep",
+  "source": "generated",
+  "topic": "nyelvtan",
+  "title": "Földrajzi fogalmak pontos használata",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "grammar",
+  "type": "lesson",
+  "category": "fogalomhasznalat",
+  "summaryHu": "A földrajzban sok, hétköznapi nyelvben rokon értelműnek tűnő fogalompár valójában mást jelent (időjárás – éghajlat, árvíz – belvíz, GDP – GNI, népesség – népsűrűség). A vizsgán a fogalom-meghatározás, az igaz–hamis és a kifejtős feladatok is erre építenek, a szóbelin pedig a szaknyelv külön értékelési szempont. Egy rossz szó egy egyébként helyes magyarázatot is pontatlanná tesz.",
+  "rules": [
+    {
+      "title": "Időjárás vagy éghajlat?",
+      "explanation": "Az időjárás a légkör pillanatnyi, rövid idejű állapota (ma esik, holnap fagy lesz). Az éghajlat egy terület sokéves (legalább 30 éves) átlagos és szélsőséges időjárási viszonyainak összessége. Az éghajlatot éghajlati elemek (hőmérséklet, csapadék, szél, napsütés) átlagaival írjuk le.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "„Holnap hidegfront érkezik.” → időjárás"
+        },
+        {
+          "en": "„Magyarország éghajlata mérsékelten szárazföldi.” → éghajlat"
+        }
+      ]
+    },
+    {
+      "title": "GDP, GNI, egy főre jutó érték",
+      "explanation": "A GDP (bruttó hazai termék) az ország területén előállított végső termékek és szolgáltatások értéke (területi elv), a GNI (bruttó nemzeti jövedelem) az ország lakóinak jövedelme, bárhol keletkezett (tulajdonosi elv). Az ország fejlettségét az egy főre jutó GDP vagy GNI jobban mutatja, mint az összérték; az eltérő árszínvonalat a vásárlóerő-paritás (PPP) veszi figyelembe.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "Kína GDP-je óriási, de egy főre jutó GDP-je a fejlett országokénál jóval kisebb."
+        }
+      ]
+    },
+    {
+      "title": "Népességszám, népsűrűség, arányszám",
+      "explanation": "A népességszám a lakosok száma (fő), a népsűrűség az egy km²-re jutó lakosok száma (fő/km²). A születési és halálozási arányszám ezer lakosra vetített érték (‰), nem a születések száma. A természetes szaporodás a kettő különbsége.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "India a legnépesebb, de Banglades sűrűbben lakott."
+        },
+        {
+          "en": "9 ‰ születési arányszám ≠ 9000 születés"
+        }
+      ]
+    },
+    {
+      "title": "Vízburok fogalompárjai",
+      "explanation": "Árvíz: a folyóból kilépő víz; belvíz: a helyben összegyűlő, le nem folyó csapadék- és talajvíz. Talajvíz: az első vízzáró réteg fölötti víz; rétegvíz: két vízzáró réteg közötti víz (ha nyomás alatt áll és feltör, artézi víz). Hévíz: legalább 30 °C-os felszín alatti víz.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "2006 – tiszai árvíz; 2010 – kiterjedt alföldi belvíz"
+        }
+      ]
+    },
+    {
+      "title": "Települési folyamatok fogalmai",
+      "explanation": "Urbanizáció (városodás): a városi népesség arányának növekedése; városiasodás: a városi életmód és infrastruktúra terjedése. Szuburbanizáció: kiköltözés az elővárosokba; dezurbanizáció: a nagyvárosi térség népességének csökkenése; reurbanizáció: visszaköltözés a megújult városközpontba.",
+      "emeltOnly": true,
+      "examples": [
+        {
+          "en": "Budapest környéke az 1990-es évektől: szuburbanizáció"
+        }
+      ]
+    }
+  ],
+  "commonMistakes": [
+    {
+      "wrong": "Magyarország időjárása mérsékelten szárazföldi.",
+      "right": "Magyarország éghajlata mérsékelten szárazföldi.",
+      "why": "Hosszú távú, átlagos jellemzőről van szó, ez az éghajlat; az időjárás csak a pillanatnyi állapot."
+    },
+    {
+      "wrong": "A belvíz a folyóból kilépő víz.",
+      "right": "A folyóból kilépő víz az árvíz; a belvíz a sík területeken helyben összegyűlő, le nem folyó víz.",
+      "why": "A két jelenség oka és a védekezés módja is más: árvíz ellen töltés, belvíz ellen csatornázás, szivattyúzás."
+    },
+    {
+      "wrong": "Kína a legsűrűbben lakott ország, mert ott él a legtöbb ember.",
+      "right": "Kína (India mellett) az egyik legnépesebb ország, de népsűrűsége kisebb, mint például Bangladesé.",
+      "why": "A népsűrűség a népesség és a terület hányadosa, ezért nem következik a népességszámból."
+    },
+    {
+      "wrong": "A születési arányszám 2022-ben 88 000 volt.",
+      "right": "2022-ben kb. 88 000 gyermek született; a születési arányszám kb. 9 ‰.",
+      "why": "Az arányszám ezer lakosra vetített érték, mértékegysége ‰; a születések száma abszolút szám."
+    },
+    {
+      "wrong": "Az ország GDP-je nagy, tehát az ott élők gazdagok.",
+      "right": "Az életszínvonalat az egy főre jutó GDP (GNI) mutatja jobban.",
+      "why": "Egy nagy népességű ország összes GDP-je nagy lehet, miközben az egy főre jutó érték alacsony."
+    }
+  ],
+  "examTips": [
+    "A fogalom-meghatározásos feladatban pontos szakszót várnak: „városba költözés” helyett urbanizáció, „melegebb levegő lefelé” helyett főn.",
+    "A kifejtős és a szóbeli feladatban a szaknyelv külön szempont: a rokon fogalmakat ne cseréld fel, és a mértékegységet (‰, %, fő/km²) mindig írd ki.",
+    "Igaz–hamis feladatban sokszor egy fogalmat cserélnek ki egy hasonlóra (időjárás ↔ éghajlat, talajvíz ↔ karsztvíz) – keresd a kicserélt szót."
+  ],
+  "practice": [
+    {
+      "id": "1",
+      "kind": "choice",
+      "prompt": "Melyik mondat helyes?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Az éghajlat egy adott nap légköri állapota."
+        },
+        {
+          "key": "B",
+          "text": "Budapest időjárása a sokéves átlag szerint mérsékelten szárazföldi."
+        },
+        {
+          "key": "C",
+          "text": "Budapest éghajlatára hideg tél és meleg nyár jellemző."
+        },
+        {
+          "key": "D",
+          "text": "Az időjárás egy terület 30 éves átlagos jellemzője."
+        }
+      ],
+      "answer": "C",
+      "category": "fogalomhasznalat",
+      "explanation": "Helyes: C. A sokéves átlagos jellemző (hideg tél, meleg nyár) az éghajlat.",
+      "wrongOptions": {
+        "A": "Egy adott nap légköri állapota az időjárás.",
+        "B": "A sokéves átlag az éghajlat, nem az időjárás.",
+        "D": "A 30 éves átlagos jellemző az éghajlat, nem az időjárás."
+      }
+    },
+    {
+      "id": "2",
+      "kind": "text",
+      "prompt": "Hogyan nevezzük az egy km²-re jutó lakosok számát?",
+      "answer": [
+        "népsűrűség"
+      ],
+      "category": "fogalomhasznalat",
+      "explanation": "Népsűrűség: népesség : terület, mértékegysége fő/km².",
+      "maxWords": 1
+    },
+    {
+      "id": "3",
+      "kind": "choice",
+      "prompt": "Melyik mutató veszi figyelembe a külföldre áramló és a külföldről érkező jövedelmeket?",
+      "options": [
+        {
+          "key": "A",
+          "text": "inflációs ráta"
+        },
+        {
+          "key": "B",
+          "text": "GDP (bruttó hazai termék)"
+        },
+        {
+          "key": "C",
+          "text": "népsűrűség"
+        },
+        {
+          "key": "D",
+          "text": "GNI (bruttó nemzeti jövedelem)"
+        }
+      ],
+      "answer": "D",
+      "category": "fogalomhasznalat",
+      "explanation": "Helyes: GNI. A GDP-ből levonja a külföldre áramló, és hozzáadja a külföldről kapott jövedelmeket – tulajdonosi elvű mutató.",
+      "wrongOptions": {
+        "A": "Az infláció az árszínvonal változását méri.",
+        "B": "A GDP területi elvű: mindent beszámít, amit az ország területén termeltek, akár külföldi a tulajdonos.",
+        "C": "A népsűrűség népességföldrajzi mutató, nem jövedelmi."
+      }
+    },
+    {
+      "id": "4",
+      "kind": "text",
+      "prompt": "Hogyan nevezzük a sík területeken a hóolvadás vagy tartós esőzés után összegyűlő, le nem folyó vizet?",
+      "answer": [
+        "belvíz"
+      ],
+      "category": "fogalomhasznalat",
+      "explanation": "Belvíz: nem a folyóból származik, hanem a helyben összegyűlő csapadék- és talajvíz, amely a vízzáró talaj és a sík felszín miatt nem tud elfolyni.",
+      "maxWords": 1
+    },
+    {
+      "id": "5",
+      "kind": "choice",
+      "prompt": "Melyik mértékegység tartozik a születési arányszámhoz?",
+      "options": [
+        {
+          "key": "A",
+          "text": "fő/km²"
+        },
+        {
+          "key": "B",
+          "text": "% (százalék)"
+        },
+        {
+          "key": "C",
+          "text": "‰ (ezrelék)"
+        },
+        {
+          "key": "D",
+          "text": "fő"
+        }
+      ],
+      "answer": "C",
+      "category": "fogalomhasznalat",
+      "explanation": "Helyes: ‰. A születési arányszám az ezer lakosra jutó élveszületések száma.",
+      "wrongOptions": {
+        "A": "A fő/km² a népsűrűség mértékegysége.",
+        "B": "Százalékban a korcsoportok arányát vagy a szaporodási rátát szokás megadni, a születési arányszámot nem.",
+        "D": "A „fő” abszolút szám (pl. a születések száma), nem arányszám."
+      }
+    },
+    {
+      "id": "6",
+      "kind": "text",
+      "prompt": "Hogyan nevezzük a legalább 30 °C-os felszín alatti vizet?",
+      "answer": [
+        "hévíz",
+        "termálvíz"
+      ],
+      "category": "fogalomhasznalat",
+      "explanation": "Hévíz (termálvíz): a 30 °C-nál melegebb felszín alatti víz; Magyarországon a vékony kéreg és a nagy földi hőáram miatt gyakori.",
+      "maxWords": 1
+    }
+  ],
+  "relatedCategories": [
+    "termeszeti-folyamat",
+    "tarsadalmi-folyamat"
+  ]
+}

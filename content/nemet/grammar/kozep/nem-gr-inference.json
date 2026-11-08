@@ -1,0 +1,204 @@
+{
+  "schemaVersion": 1,
+  "id": "nem-gr-inference",
+  "subject": "nemet",
+  "level": "kozep",
+  "source": "generated",
+  "topic": "nyelvtan",
+  "title": "Következtetés",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "grammar",
+  "type": "lesson",
+  "category": "inference",
+  "summaryHu": "A következtetéses kérdéseknél a válasz nincs szó szerint a szövegben, de a szövegből biztosan következik: egy helyzetből, egy megjegyzésből vagy egy apró szóból (erst, schon, sogar, nur) kell kikövetkeztetni. Ide tartozik a szöveg vagy a beszélő céljának felismerése is (tájékoztat, figyelmeztet, kér, panaszkodik). A csapda kétirányú: vagy túl szó szerint olvasunk, vagy túl messzire megyünk, és a saját véleményünket vagy általános tudásunkat írjuk a szövegbe. Főleg feleletválasztós olvasás- és hallásfeladatokban, emelt szinten gyakran.",
+  "rules": [
+    {
+      "title": "A következtetésnek a szövegen kell alapulnia",
+      "explanation": "A jó válasz nincs kimondva, de a szöveg egy vagy több mondata egyértelműen alátámasztja. Mindig keresd meg azt a mondatot, amelyből a következtetés levonható – ha nem találsz ilyet, a válasz valószínűleg a saját feltételezésed.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "Anna packte ihren Regenschirm ein und zog die Gummistiefel an.",
+          "note": "Nincs kimondva, de következik: esik az eső, vagy esőre számít."
+        },
+        {
+          "en": "Als der Lehrer die Noten vorlas, strahlte Max über das ganze Gesicht.",
+          "note": "Következtetés: Max jó jegyet kapott, és örül neki."
+        }
+      ]
+    },
+    {
+      "title": "Kis szavak, nagy jelentés: erst, schon, sogar, nur, noch",
+      "explanation": "Az erst (csak, nem korábban, mint) azt jelzi, hogy valami később történt a vártnál; a schon (már) azt, hogy korábban; a sogar (sőt, még … is) meglepő dolgot vezet be; a nur (csak) korlátozást; a noch (még) folytatást vagy hátralévő dolgot. Ezek a szavak gyakran döntik el a helyes választ.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "Der Zug kam erst um zehn an.",
+          "note": "A vonat a vártnál később érkezett – a beszélő valószínűleg várt rá, és ez rossz volt neki."
+        },
+        {
+          "en": "Sie spricht sogar Japanisch.",
+          "note": "A sogar azt jelzi: ez meglepő, különleges teljesítmény."
+        }
+      ]
+    },
+    {
+      "title": "A szöveg célja és címzettje",
+      "explanation": "Kérdezd meg: ki írta, kinek, és miért? Hirdetés: rávenni valamire; figyelmeztetés: veszélyre utalni (Achtung, Vorsicht, bitte beachten Sie); panasz: elégedetlenség kifejezése (leider, enttäuscht, ich erwarte); kérés: valaki tegyen meg valamit (Könnten Sie …, wir bitten um …). A célt gyakran nem mondja ki a szöveg, de a nyelvi eszközök elárulják.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "Liebe Gäste, bitte denken Sie daran, beim Verlassen des Zimmers das Licht auszuschalten. Die Umwelt dankt es Ihnen!",
+          "note": "Cél: kérés / figyelmeztetés az energiatakarékosságra, nem tájékoztatás a szobáról."
+        }
+      ]
+    },
+    {
+      "title": "Ne következtess túl messzire",
+      "explanation": "A rossz opciók gyakran logikusnak hangzanak, vagy a valóságban igazak lehetnek, de a szöveg nem támasztja alá őket. Ha egy opció olyan információt tartalmaz, amely sehol sincs a szövegben (sem kimondva, sem egyértelműen következtethetően), ne válaszd – akkor sem, ha a saját tapasztalatod szerint valószínű.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "Tim ist nach dem Training sehr müde nach Hause gekommen.",
+          "note": "Következik: fárasztó volt az edzés. NEM következik: rosszul játszott, megsérült vagy nem szeret edzeni."
+        }
+      ]
+    },
+    {
+      "title": "Hallásnál: hanglejtés és helyzet",
+      "explanation": "Hallási feladatban a hanglejtés (ironikus, meglepett, bosszús hang), a hangulatjelző szavak (Na toll …, Ach so!, Echt?) és a helyzet (hol vannak, mi történik a háttérben) is segít kikövetkeztetni, amit a beszélő nem mond ki. Figyelj arra, hogyan reagál a másik fél – ez gyakran megerősíti a következtetést.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "„Na toll, jetzt regnet es auch noch!”",
+          "note": "A toll (szuper) itt ironikus: a beszélő bosszús, mert az eső tovább rontja a helyzetet."
+        }
+      ]
+    }
+  ],
+  "commonMistakes": [
+    {
+      "wrong": "Azt az opciót választom, amelyik a valóságban a legvalószínűbb.",
+      "right": "Azt az opciót választom, amelyet a szöveg egy konkrét része alátámaszt.",
+      "why": "A következtetésnek a szövegen kell alapulnia, nem az általános tudáson vagy a saját véleményeden. A „logikus, de nem szerepel” opciók tipikus csapdák."
+    },
+    {
+      "wrong": "Csak azt fogadom el, ami szó szerint benne van a szövegben.",
+      "right": "Elfogadom azt is, ami a szövegből egyértelműen következik (pl. a Wecker említéséből, hogy elaludt).",
+      "why": "A következtetéses kérdés éppen azt méri, hogy érted-e a ki nem mondott összefüggéseket. Ha csak szó szerinti egyezést keresel, a jó választ sem fogod megtalálni."
+    },
+    {
+      "wrong": "Átsiklom az olyan apró szavak fölött, mint az erst, a schon vagy a sogar.",
+      "right": "Ezeknél a szavaknál megállok, és megkérdezem: mit árul el ez a beszélő hozzáállásáról vagy a helyzetről?",
+      "why": "Egyetlen erst vagy sogar megváltoztathatja a mondat értelmét (késés, meglepetés), és sokszor éppen ez a kérdés kulcsa."
+    }
+  ],
+  "examTips": [
+    "Következtetéses kérdésnél minden opció mellé írd oda, melyik mondat támasztja alá – amelyik mellé nem tudsz semmit írni, azt húzd ki.",
+    "Figyelj a kérdés megfogalmazására: Was kann man aus dem Text schließen? / Was meint die Sprecherin? / Warum …? – ezek jelzik, hogy nem szó szerinti választ keresel.",
+    "Hallásnál az első meghallgatáskor a helyzetre és a hangulatra figyelj (ki, hol, milyen hangon), a második meghallgatáskor keresd meg a konkrét mondatot, amely a választ alátámasztja."
+  ],
+  "practice": [
+    {
+      "id": "1",
+      "kind": "choice",
+      "prompt": "Frau Berger kam um 8.15 Uhr ins Büro, eine Viertelstunde später als sonst. Ihre Kollegin sah sie an und fragte nur: „Hat die S-Bahn heute wieder gestreikt?” Frau Berger lachte: „Diesmal nicht – mein Wecker!”\n\nWarum ist Frau Berger zu spät gekommen?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Die S-Bahn hat gestreikt."
+        },
+        {
+          "key": "B",
+          "text": "Ihre Kollegin hat sie aufgehalten."
+        },
+        {
+          "key": "C",
+          "text": "Sie musste noch einkaufen."
+        },
+        {
+          "key": "D",
+          "text": "Sie hat verschlafen."
+        }
+      ],
+      "answer": "D",
+      "category": "inference",
+      "evidence": "„Diesmal nicht – mein Wecker!”",
+      "explanation": "Helyes: D. Frau Berger nem mondja ki, hogy elaludt, de a mein Wecker! (az ébresztőórám!) válasz erre utal: az ébresztő nem szólt (jól), ezért késett. A Diesmal nicht kizárja a sztrájkot.",
+      "wrongOptions": {
+        "A": "A Diesmal nicht (ezúttal nem) éppen kizárja, hogy az S-Bahn sztrájkolt volna; a wieder azt mutatja, hogy máskor ez volt az ok.",
+        "B": "A kolléganő csak kérdez, amikor Frau Berger már megérkezett; nem ő tartotta fel.",
+        "C": "A bevásárlás egyáltalán nem szerepel a szövegben."
+      }
+    },
+    {
+      "id": "2",
+      "kind": "choice",
+      "prompt": "Erst nach drei Wochen bekam Tim eine Antwort auf seine Bewerbung. Er hatte schon gar nicht mehr damit gerechnet.\n\nWas erfahren wir über Tim?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Er hat sehr schnell eine Antwort bekommen."
+        },
+        {
+          "key": "B",
+          "text": "Er hat die Stelle bekommen."
+        },
+        {
+          "key": "C",
+          "text": "Er hatte die Hoffnung fast aufgegeben."
+        },
+        {
+          "key": "D",
+          "text": "Er wollte keine Antwort."
+        }
+      ],
+      "answer": "C",
+      "category": "inference",
+      "evidence": "Er hatte schon gar nicht mehr damit gerechnet.",
+      "explanation": "Helyes: C. Az erst nach drei Wochen azt jelzi, hogy a válasz a vártnál később jött, a schon gar nicht mehr damit gerechnet pedig azt, hogy Tim már nem is számított rá – vagyis szinte feladta a reményt.",
+      "wrongOptions": {
+        "A": "Az erst (csak … után) éppen azt fejezi ki, hogy a válasz későn jött, nem gyorsan.",
+        "B": "A szöveg csak annyit mond, hogy választ kapott; azt nem, hogy mi volt a válasz – ez túlzott következtetés.",
+        "D": "Nem arról van szó, hogy nem akart választ, hanem hogy már nem számított rá."
+      }
+    },
+    {
+      "id": "3",
+      "kind": "choice",
+      "prompt": "Liebe Nachbarn, am Samstag feiern wir den 18. Geburtstag unserer Tochter im Garten. Es kann bis etwa Mitternacht etwas lauter werden. Wir bitten um Ihr Verständnis! Familie Kovács, 2. Stock\n\nWas ist das Ziel dieses Zettels?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Die Nachbarn im Voraus um Verständnis für den Lärm bitten"
+        },
+        {
+          "key": "B",
+          "text": "Die Nachbarn zur Party einladen"
+        },
+        {
+          "key": "C",
+          "text": "Sich über laute Nachbarn beschweren"
+        },
+        {
+          "key": "D",
+          "text": "Den Garten für eine Feier vermieten"
+        }
+      ],
+      "answer": "A",
+      "category": "inference",
+      "evidence": "Es kann bis etwa Mitternacht etwas lauter werden. Wir bitten um Ihr Verständnis!",
+      "explanation": "Helyes: A. A család előre jelzi, hogy szombaton éjfélig hangosabb lehet, és megértést kér – a cédula célja tehát a szomszédok előzetes tájékoztatása és megértésük kérése.",
+      "wrongOptions": {
+        "B": "A cédula nem hív meg senkit (nincs benne pl. Sie sind herzlich eingeladen), csak a buliról tájékoztat.",
+        "C": "Nem ők panaszkodnak a szomszédokra, hanem ők lesznek hangosak – a helyzet fordított.",
+        "D": "A kert bérbeadásáról szó sincs; a saját kertjükben ünnepelnek."
+      }
+    }
+  ],
+  "relatedCategories": [
+    "attitude",
+    "gist"
+  ]
+}

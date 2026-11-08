@@ -1,0 +1,166 @@
+{
+  "schemaVersion": 1,
+  "id": "fiz-rd-emelt-hullamok-optika-teszt",
+  "subject": "fizika",
+  "revision": 1,
+  "level": "emelt",
+  "source": "generated",
+  "topic": "hullamok-feny",
+  "title": "Hullámjelenségek és geometriai optika – feleletválasztós teszt",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "reading",
+  "type": "feleletvalasztas",
+  "instructions": "Minden kérdésnél egyetlen helyes válasz van. Jelöld meg a helyes válasz betűjelét! A 0. kérdés a megoldott példa.",
+  "example": {
+    "id": "0",
+    "kind": "choice",
+    "prompt": "Mikor léphet fel teljes visszaverődés két átlátszó közeg határán?",
+    "options": [
+      { "key": "A", "text": "Ha a fény optikailag ritkább közegből sűrűbbe lép." },
+      { "key": "B", "text": "Csak merőleges beesésnél." },
+      { "key": "C", "text": "Mindig, ha a beesési szög 45°-nál nagyobb." },
+      { "key": "D", "text": "Ha a fény optikailag sűrűbb közegből ritkábba lép, és a beesési szög nagyobb a határszögnél." }
+    ],
+    "answer": "D",
+    "category": "torvenyek",
+    "explanation": "Helyes: D. Sűrűbb közegből ritkábba lépve a fény a merőlegestől törik; a határszögnél (sin α_h = n_ritkább/n_sűrűbb) a törési szög eléri a 90°-ot, ennél nagyobb beesési szögnél a fény már nem lép ki, teljesen visszaverődik (pl. optikai szálban)."
+  },
+  "items": [
+    {
+      "id": "1",
+      "kind": "choice",
+      "prompt": "Mekkora a teljes visszaverődés határszöge üveg–levegő határon, ha az üveg törésmutatója 1,5?",
+      "options": [
+        { "key": "A", "text": "33,7°" },
+        { "key": "B", "text": "41,8°" },
+        { "key": "C", "text": "48,2°" },
+        { "key": "D", "text": "90°" }
+      ],
+      "answer": "B",
+      "category": "szamolas",
+      "explanation": "Helyes: B. A határszögnél a törési szög 90°: sin α_h = 1/n = 1/1,5 ≈ 0,667, így α_h = arcsin 0,667 ≈ 41,8°. Ennél nagyobb beesési szögnél a fény teljesen visszaverődik az üvegben.",
+      "wrongOptions": {
+        "A": "33,7° = arctg(1/1,5): tangenssel számolt; a törési törvényben szinuszok szerepelnek.",
+        "C": "48,2° = arccos(1/1,5): koszinusszal számolt, ez a határszög pótszöge.",
+        "D": "90° a törési szög a határszögnél, nem maga a határszög."
+      }
+    },
+    {
+      "id": "2",
+      "kind": "choice",
+      "prompt": "Egy optikai rács rácsállandója 2,0 µm. Merőlegesen 500 nm hullámhosszú fény esik rá. Mekkora szögben látható az elsőrendű elhajlási maximum?",
+      "options": [
+        { "key": "A", "text": "0,25°" },
+        { "key": "B", "text": "14,5°" },
+        { "key": "C", "text": "30°" },
+        { "key": "D", "text": "75,5°" }
+      ],
+      "answer": "B",
+      "category": "kepletek",
+      "explanation": "Helyes: B. Az erősítés feltétele d·sin α = k·λ. Első rendben (k = 1): sin α = λ/d = 500 · 10⁻⁹ m / 2,0 · 10⁻⁶ m = 0,25, így α ≈ 14,5°.",
+      "wrongOptions": {
+        "A": "0,25 a szög SZINUSZA, nem maga a szög fokban.",
+        "C": "30° a MÁSODRENDŰ maximum (sin α = 2λ/d = 0,5).",
+        "D": "75,5° = arccos 0,25: a rácsegyenletben a szög szinusza szerepel, nem a koszinusza."
+      }
+    },
+    {
+      "id": "3",
+      "kind": "choice",
+      "prompt": "Egy két végén rögzített, 0,60 m hosszú húron a hullám terjedési sebessége 240 m/s. Mekkora a húr alaphangjának frekvenciája?",
+      "options": [
+        { "key": "A", "text": "200 Hz" },
+        { "key": "B", "text": "100 Hz" },
+        { "key": "C", "text": "400 Hz" },
+        { "key": "D", "text": "144 Hz" }
+      ],
+      "answer": "A",
+      "category": "kepletek",
+      "explanation": "Helyes: A. A két végén rögzített húron a végeken csomópont van; az alaphangnál a húr hossza fél hullámhossz: λ = 2L = 1,2 m. A frekvencia f = c/λ = 240 m/s / 1,2 m = 200 Hz.",
+      "wrongOptions": {
+        "B": "100 Hz-et λ = 4L-lel kapnánk; ez az egyik végén zárt síp alaphangjára igaz, a két végén rögzített húrra nem.",
+        "C": "400 Hz-et λ = L-lel kapnánk, ez a húr első felhangja (második harmonikusa).",
+        "D": "144 = c·L: a sebességet szorozta a hosszal; a frekvencia a sebesség és a hullámhossz hányadosa."
+      }
+    },
+    {
+      "id": "4",
+      "kind": "choice",
+      "prompt": "Egy szirénázó mentőautó közeledik, majd elhalad mellettünk és távolodik. Milyennek halljuk a sziréna hangmagasságát a kibocsátotthoz képest?",
+      "options": [
+        { "key": "A", "text": "Közeledéskor magasabbnak, távolodáskor mélyebbnek." },
+        { "key": "B", "text": "Végig magasabbnak." },
+        { "key": "C", "text": "Közeledéskor mélyebbnek, távolodáskor magasabbnak." },
+        { "key": "D", "text": "Ugyanolyannak, csak a hangerő változik." }
+      ],
+      "answer": "A",
+      "category": "jelenseg-magyarazat",
+      "explanation": "Helyes: A. Ez a Doppler-jelenség: a közeledő forrás hullámfrontjai sűrűbben érkeznek hozzánk (rövidebb hullámhossz, nagyobb észlelt frekvencia), a távolodóé ritkábban. Az elhaladás pillanatában az észlelt hangmagasság hirtelen lecsökken.",
+      "wrongOptions": {
+        "B": "Távolodáskor a hullámfrontok ritkábban érkeznek, ezért az észlelt frekvencia kisebb a kibocsátottnál.",
+        "C": "Éppen fordítva: a közeledés növeli, a távolodás csökkenti az észlelt frekvenciát.",
+        "D": "A hangerő is változik, de a mozgó forrás az észlelt frekvenciát is megváltoztatja – ez jól hallható."
+      }
+    },
+    {
+      "id": "5",
+      "kind": "choice",
+      "prompt": "Young kétréses kísérletében a két rés távolságát a kétszeresére növeljük (a hullámhossz és az ernyő távolsága változatlan). Mi történik az ernyőn látható interferenciacsíkokkal?",
+      "options": [
+        { "key": "A", "text": "A szomszédos világos csíkok távolsága a kétszeresére nő." },
+        { "key": "B", "text": "A csíkok eltűnnek, mert a fény nem lesz koherens." },
+        { "key": "C", "text": "A csíkok távolsága nem változik." },
+        { "key": "D", "text": "A szomszédos világos csíkok távolsága a felére csökken." }
+      ],
+      "answer": "D",
+      "category": "torvenyek",
+      "explanation": "Helyes: D. Kis szögeknél a szomszédos maximumok távolsága Δx = λ·L/d, ahol d a résköz, L az ernyő távolsága. Kétszeres d mellett Δx a felére csökken, a csíkok sűrűbbek lesznek.",
+      "wrongOptions": {
+        "A": "A csíktávolság a résközzel FORDÍTOTTAN arányos; a hullámhossz vagy az ernyőtávolság növelése növelné.",
+        "B": "A két rést ugyanaz a hullámfront világítja meg, így a koherencia megmarad; csak a csíkok sűrűsége változik.",
+        "C": "A csíktávolság függ a résköztől (Δx = λ·L/d)."
+      }
+    },
+    {
+      "id": "6",
+      "kind": "choice",
+      "prompt": "Egy +2,5 dioptriás gyűjtőlencsétől 1,2 m-re tárgy van. Hol keletkezik a kép?",
+      "options": [
+        { "key": "A", "text": "A lencsétől 0,30 m-re." },
+        { "key": "B", "text": "A lencsétől 0,40 m-re." },
+        { "key": "C", "text": "A lencsétől 0,60 m-re." },
+        { "key": "D", "text": "A lencsétől 1,2 m-re." }
+      ],
+      "answer": "C",
+      "category": "kepletek",
+      "explanation": "Helyes: C. A fókusztávolság f = 1/D = 1/2,5 m = 0,40 m. A leképezési törvényből 1/k = 1/f − 1/t = 2,5 − 1/1,2 ≈ 2,5 − 0,833 = 1,667 1/m, így k = 0,60 m. A kép valódi, fordított, és fele akkora, mint a tárgy (N = k/t = 0,5).",
+      "wrongOptions": {
+        "A": "0,30 m = 1/(2,5 + 0,833): összeadta a reciprokokat, pedig 1/k = 1/f − 1/t.",
+        "B": "0,40 m a fókusztávolság; ide csak a végtelen távoli tárgy képe kerül.",
+        "D": "1,2 m a tárgytávolság; a kép csak t = 2f = 0,8 m esetén lenne a tárggyal azonos távolságban."
+      }
+    },
+    {
+      "id": "7",
+      "kind": "choice",
+      "prompt": "Melyik jelenség bizonyítja, hogy a fény transzverzális hullám?",
+      "options": [
+        { "key": "A", "text": "Az interferencia." },
+        { "key": "B", "text": "Az elhajlás." },
+        { "key": "C", "text": "A polarizáció." },
+        { "key": "D", "text": "A fénytörés." }
+      ],
+      "answer": "C",
+      "category": "fogalmak",
+      "explanation": "Helyes: C. Polarizálni csak transzverzális hullámot lehet: két egymás után helyezett polárszűrő közül a második elforgatásával a fény kioltható, mert a rezgés iránya (az elektromos térerősség) merőleges a terjedési irányra, és a szűrő csak egy rezgési irányt enged át.",
+      "wrongOptions": {
+        "A": "Interferenciát a longitudinális hullámok (pl. a hang) is mutatnak; ez csak a hullámtermészetet bizonyítja.",
+        "B": "Elhajlás minden hullámnál előfordul (a hang is „elkanyarodik” a sarkon), a rezgés irányáról nem árul el semmit.",
+        "D": "Fénytörés bármilyen hullámnál fellép, amelynek a sebessége a két közegben eltér."
+      }
+    }
+  ],
+  "glossary": [],
+  "suggestedMinutes": 16
+}

@@ -1,0 +1,134 @@
+{
+  "schemaVersion": 1,
+  "id": "bio-gd-exam-reading",
+  "subject": "biologia",
+  "revision": 1,
+  "level": "kozep",
+  "source": "generated",
+  "topic": "utmutato",
+  "title": "Feladatlap – rövid feladatok",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "guide",
+  "type": "exam",
+  "target": "reading",
+  "summaryHu": "Az írásbeli vizsga fő része a többrészes feladatokból álló feladatlap: középszinten 6–12 (jellemzően 8–10), emelt szinten 8–10 feladat, mindegyik egy témakör köré szervezve. Egy feladaton belül váltakoznak a feladattípusok: feleletválasztás, asszociáció, igaz–hamis, párosítás, rövid válasz, ábra- és adatelemzés, szövegelemzés és rövid genetikai vagy ökológiai számítás. Csak számológép használható; az ábrák a vizsgán rajzként, az appban szöveges leírásként szerepelnek.",
+  "steps": [
+    {
+      "title": "Áttekintés és témakörök",
+      "explanation": "Lapozd át a feladatlapot, és nézd meg, milyen témakörök szerepelnek. Kezdd azzal a feladattal, amelyben a legbiztosabb vagy – a jó kezdés nyugalmat ad, és időt spórol a nehezebb feladatokra.",
+      "tips": [
+        "Jelöld meg ceruzával azokat a feladatokat, amelyekhez vissza akarsz térni.",
+        "Ne ragadj le egy kérdésnél 2–3 percnél tovább; lépj tovább, és a végén térj vissza."
+      ]
+    },
+    {
+      "title": "Az utasítás és a példa elolvasása",
+      "explanation": "Minden feladat előtt olvasd el az utasítást: hány választ kell adni, melyik a helyes vagy melyik NEM, használható-e egy betű többször (párosításnál), mit jelent az A–D betű (asszociációnál). A 0. kérdés (példa) mutatja a válasz formáját.",
+      "tips": [
+        "Asszociációnál írd fel a lap szélére: A = csak az első, B = csak a második, C = mindkettő, D = egyik sem.",
+        "A tagadó kérdéseket (NEM, kivéve) húzd alá."
+      ]
+    },
+    {
+      "title": "Ábra-, táblázat- és szövegelemzés",
+      "explanation": "Először a tengelyeket, mértékegységeket, a táblázat fejlécét nézd meg, csak utána a kérdéseket. Szövegelemzésnél olvasd el előbb a kérdéseket, majd a szöveget, és jelöld meg a válaszokhoz szükséges mondatokat.",
+      "tips": [
+        "A „szöveg szerint” kérdésekre a szöveg információjával válaszolj.",
+        "Leolvasásnál mindig írd ki a mértékegységet."
+      ]
+    },
+    {
+      "title": "Számítási feladatok",
+      "explanation": "Írd fel a jelölést és a képletet (keresztezési táblázat, Lincoln-index, százalékszámítás), és csak utána számolj. A végeredményt a kért formában (tört, százalék, egész szám) és mértékegységgel add meg.",
+      "tips": [
+        "Genetikánál: jelölés → szülők → ivarsejtek → táblázat → arány.",
+        "Ellenőrizd a nagyságrendet: lehet-e a valóságban ekkora az eredmény?"
+      ]
+    },
+    {
+      "title": "Ellenőrzés",
+      "explanation": "A végén nézd át: minden kérdésre adtál-e választ (a hiányzó válasz biztosan 0 pont), a darabszámot betartottad-e, és a tagadó kérdéseknél a hamis opciót jelölted-e.",
+      "tips": [
+        "Ha bizonytalan vagy, akkor is írj választ: az üresen hagyott kérdés biztosan nem ér pontot.",
+        "Az átírt válasz legyen egyértelmű."
+      ]
+    }
+  ],
+  "phrases": [
+    {
+      "group": "Utasítás",
+      "en": "Melyik állítás NEM igaz…?",
+      "hu": "tagadó kérdés: a hamis állítást kell kiválasztani"
+    },
+    {
+      "group": "Utasítás",
+      "en": "A) csak az elsőre, B) csak a másodikra, C) mindkettőre, D) egyikre sem",
+      "hu": "négyféle asszociáció betűinek jelentése"
+    },
+    {
+      "group": "Utasítás",
+      "en": "Egy betű többször is felhasználható.",
+      "hu": "párosításnál a közös opciólista betűi ismétlődhetnek"
+    },
+    {
+      "group": "Leolvasás",
+      "en": "A táblázat szerint … értéke … (mértékegység).",
+      "hu": "adat pontos megadása"
+    },
+    {
+      "group": "Számítás",
+      "en": "P(aabb) = 1/4 · 1/4 = 1/16",
+      "hu": "független események valószínűségének szorzása"
+    },
+    {
+      "group": "Számítás",
+      "en": "N = M · n / m",
+      "hu": "jelölés–visszafogás: a populáció becsült nagysága"
+    },
+    {
+      "group": "Számítás",
+      "en": "százalék = rész / egész · 100",
+      "hu": "arányszámítás"
+    },
+    {
+      "group": "Rövid válasz",
+      "en": "egy-két szóval, szakkifejezéssel",
+      "hu": "rövid válasznál a pontos szakszót kell beírni"
+    }
+  ],
+  "mistakes": [
+    {
+      "wrong": "Az asszociációs feladatban csak az egyik fogalomra ellenőrzi az állítást.",
+      "right": "Mindkét fogalomra külön ellenőrzi, és csak utána választ betűt.",
+      "why": "Különben elmarad a „mindkettő” vagy az „egyik sem” lehetőség."
+    },
+    {
+      "wrong": "Rövid válasznál hosszú, magyarázó mondatot ír.",
+      "right": "A kért egy-két szót vagy számot írja be.",
+      "why": "A rövid válasz a pontos fogalmat vagy értéket kéri; a felesleges, hibás részlet pontot vehet el."
+    },
+    {
+      "wrong": "A számítás végeredményét mértékegység nélkül adja meg.",
+      "right": "Az eredményt mértékegységgel (kJ/m², egyed/ha, %) írja.",
+      "why": "A mértékegység a válasz része; nélküle félreérthető."
+    },
+    {
+      "wrong": "Egy nehéz kérdésen 10 percig gondolkodik.",
+      "right": "Továbblép, és a végén tér vissza.",
+      "why": "Egy nehéz kérdés többnyire nem ér több pontot, mint egy könnyebb, az idő viszont véges: a többi kérdésre szánt percek több pontot hozhatnak."
+    }
+  ],
+  "checklist": [
+    "Minden kérdésre adtam választ?",
+    "A tagadó kérdéseknél a NEM igaz / kivétel opciót jelöltem?",
+    "A darabszámos utasításoknál annyi választ írtam, amennyit kért?",
+    "A számításoknál mértékegységgel és a kért pontossággal adtam meg az eredményt?",
+    "A párosításnál ellenőriztem, hogy egy betű csak akkor szerepel többször, ha az utasítás megengedi?"
+  ],
+  "timing": "Középszinten 150 perc jut a teljes feladatlapra (az app ebből kb. 100 percet a rövid feladatokra, 50-et a kifejtős részekre számol): feladatonként átlagosan 10–15 perc. Emelt szinten a 240 perc szabadon osztható; az I. rész feladataira kb. 160–170 percet, a II. részre (esszé vagy problémafeladat) kb. 60–70 percet érdemes szánni. A végére hagyj 10 percet az ellenőrzésre.",
+  "levelNotes": {
+    "kozep": "Középszinten a feladatok alapfogalmakra, egyszerűbb ábrákra és egylépéses számításokra épülnek (monohibrid keresztezés, vércsoport, százalék). A legtöbb pont a fogalmak pontos ismeretén és az utasítás figyelmes olvasásán múlik.",
+    "emelt": "Emelt szinten több a többlépéses feladat: dihibrid és ivarhoz kötött öröklés, Hardy–Weinberg-számítás, energiaáramlás, összetett grafikonok két változóval, kísérletértelmezés. Gyakran egy hosszabb szöveg vagy adatsor köré épül egy egész feladat, ezért az elemzés idejével is számolj."
+  }
+}

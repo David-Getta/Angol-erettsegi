@@ -1,0 +1,305 @@
+{
+  "schemaVersion": 1,
+  "id": "kem-gr-kiserlet-tapasztalat",
+  "subject": "kemia",
+  "revision": 1,
+  "level": "kozep",
+  "source": "generated",
+  "topic": "nyelvtan",
+  "title": "Kísérlet tapasztalata és magyarázata",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "grammar",
+  "type": "lesson",
+  "category": "kiserlet-tapasztalat",
+  "summaryHu": "A kísérletelemző írásbeli feladatban és a szóbeli B tételben a pontok külön járnak a tapasztalatra (mit látunk, hallunk, érzünk) és a magyarázatra (miért, egyenlettel). A leggyakoribb hiba, hogy a tapasztalat helyére a magyarázatot írják („hidrogén fejlődik” – ez következtetés; a tapasztalat: „pezsgés, gázbuborékok”), vagy a magyarázatból hiányzik a rendezett egyenlet. Ez a lecke a megfigyelések pontos leírását és a jellemző kísérletek tapasztalatait foglalja össze.",
+  "rules": [
+    {
+      "title": "Tapasztalat ≠ magyarázat",
+      "explanation": "A tapasztalat az érzékszervekkel észlelhető változás: színváltozás, gázfejlődés (pezsgés, buborékok), csapadékképződés (zavarosodás, kiválás), oldódás, hőmérséklet-változás (felmelegedés, lehűlés), szag, fényjelenség, hang. A magyarázat megnevezi az anyagokat, a reakciót (egyenlettel) és az okot (szerkezet, standardpotenciál, oldhatóság). Írd külön: „Tapasztalat: …”, „Magyarázat: …”.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "Tapasztalat: a magnéziumszalag pezsgés közben feloldódik, a kémcső felmelegszik.",
+          "hu": "Ez az, amit látsz és érzel."
+        },
+        {
+          "en": "Magyarázat: Mg + 2 HCl → MgCl₂ + H₂; a reakció exoterm.",
+          "hu": "Ez az, amit a tapasztalatból következtetsz."
+        }
+      ]
+    },
+    {
+      "title": "Gázok kimutatása",
+      "explanation": "Hidrogén: lánghoz tartva pukkan (durranógázpróba), szájával lefelé tartott kémcsőben fogható fel. Oxigén: a parázsló gyújtópálca lángra lobban. Szén-dioxid: az égő gyújtópálca elalszik, a meszes víz megzavarosodik (CaCO₃). Ammónia: szúrós szag, a nedves vörös lakmuszpapírt megkékíti, sósavgőzzel fehér füst (NH₄Cl) keletkezik. Klór: sárgászöld, szúrós szagú gáz, a nedves színes papírt elszínteleníti.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "CO₂ + Ca(OH)₂ → CaCO₃ + H₂O",
+          "hu": "A meszes víz zavarosodása."
+        },
+        {
+          "en": "NH₃ + HCl → NH₄Cl",
+          "hu": "Fehér füst."
+        }
+      ]
+    },
+    {
+      "title": "Ionok kimutatása, csapadékok, lángfestés",
+      "explanation": "Kloridion: ezüst-nitráttal fehér, túrós csapadék (AgCl); bromidion: sárgásfehér (AgBr); jodidion: sárga (AgI). Szulfátion: bárium-kloriddal fehér csapadék (BaSO₄). Karbonátion: savval pezsgés (CO₂). Réz(II)-ion: kék oldat, NaOH-dal kék csapadék (Cu(OH)₂), ammóniafeleslegben mélykék oldat. Vas(III)-ion: NaOH-dal vörösbarna csapadék (Fe(OH)₃). Lángfestés: Na sárga, K fakóibolya, Ca téglavörös, Cu zöld, Li és Sr vörös, Ba fakózöld.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "Ba²⁺ + SO₄²⁻ → BaSO₄"
+        },
+        {
+          "en": "Fe³⁺ + 3 OH⁻ → Fe(OH)₃"
+        }
+      ]
+    },
+    {
+      "title": "Indikátorok színei",
+      "explanation": "Fenolftalein: savas és semleges közegben színtelen, lúgosban lila (rózsaszín). Metilnarancs: savasban vörös, semleges és lúgos közegben sárga. Lakmusz: savasban vörös, lúgosban kék. Univerzális indikátor: savasban vörös–narancs, semlegesben zöld, lúgosban kék–ibolya.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "Nátrium-karbonát-oldat + fenolftalein → lila",
+          "hu": "Az oldat a karbonátion hidrolízise miatt lúgos."
+        },
+        {
+          "en": "Sósav + metilnarancs → vörös; nátronlúg + metilnarancs → sárga"
+        }
+      ]
+    },
+    {
+      "title": "Szerves vegyületek jellemző próbái",
+      "explanation": "Telítetlenség: a brómos víz elszíntelenedik (addíció). Aldehidcsoport: ezüsttükörpróba (ammóniás ezüst-nitrát-oldattal ezüsttükör az edény falán) és Fehling-próba (a kék reagensből téglavörös Cu₂O csapadék); a glükóz mindkettőt adja, a szacharóz nem. Keményítő: jóddal (Lugol-oldattal) sötétkék szín. Fehérje: biuretreakció (lúgos közegben réz(II)-ionokkal ibolyaszín), xantoprotein-reakció (tömény salétromsavval sárga szín). Alkoholok: nátriummal hidrogénfejlődés.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "CH₂=CH₂ + Br₂ → CH₂Br–CH₂Br",
+          "hu": "A sárgásbarna brómos víz elszíntelenedik."
+        }
+      ]
+    },
+    {
+      "title": "Ismeretlen anyagok azonosítása, kísérlettervezés",
+      "explanation": "Ha több ismeretlen anyagot kell azonosítani, válassz olyan reagenst, amely mindegyikkel MÁS tapasztalatot ad, vagy lépésenként szűkíts (az azonosított anyag oldata reagensként is használható). Írd le, melyik reagenst adod, mit tapasztalsz az egyes esetekben, és milyen egyenlet magyarázza. Gondolj a kontrollkísérletre (pl. desztillált víz) és a lépések sorrendjére is.",
+      "emeltOnly": true,
+      "examples": [
+        {
+          "en": "NaCl-, Na₂CO₃- és Na₂SO₄-oldat: 1. sósav → csak a karbonát pezseg; 2. BaCl₂ → a maradék kettő közül a szulfát ad fehér csapadékot."
+        }
+      ]
+    }
+  ],
+  "commonMistakes": [
+    {
+      "wrong": "Tapasztalat: hidrogéngáz fejlődik.",
+      "right": "Tapasztalat: pezsgés, színtelen gázbuborékok fejlődnek. (Magyarázat: a gáz hidrogén, amit durranógázpróbával igazolunk.)",
+      "why": "A gáz kilétét nem látjuk, csak a buborékokat; a „hidrogén” már következtetés, a magyarázatba tartozik."
+    },
+    {
+      "wrong": "A fenolftalein lúgban kék lesz.",
+      "right": "A fenolftalein lúgos oldatban lila (rózsaszín).",
+      "why": "A kék szín a lakmuszé és az univerzális indikátoré lúgos közegben; a fenolftalein színtelenből lilára vált."
+    },
+    {
+      "wrong": "A szén-dioxid kimutatása: a parázsló gyújtópálca lángra lobban.",
+      "right": "Az égő gyújtópálca elalszik, a meszes víz megzavarosodik.",
+      "why": "A parázsló pálca lángra lobbanása az oxigén próbája; a szén-dioxid nem táplálja az égést."
+    },
+    {
+      "wrong": "A réz(II)-szulfát-oldatba tett vasszögön ezüstös bevonat jelenik meg.",
+      "right": "A vasszög felületén vörösbarna rézbevonat jelenik meg, az oldat kék színe halványul.",
+      "why": "A vas a rezet szorítja ki, a kiváló fémréz vörösbarna; az oldat a réz(II)-ionok fogyása miatt halványul."
+    },
+    {
+      "wrong": "A kloridion kimutatása: bárium-kloriddal fehér csapadék.",
+      "right": "Kloridion: ezüst-nitráttal fehér csapadék (AgCl); a bárium-klorid a szulfátion kimutatására szolgál.",
+      "why": "A reagenst úgy választjuk, hogy a kimutatandó ion vele képezzen csapadékot: Cl⁻ + Ag⁺, SO₄²⁻ + Ba²⁺."
+    }
+  ],
+  "examTips": [
+    "A kísérletelemző feladatban a tapasztalatra és a magyarázatra külön pont jár: válaszolj mindkettőre, még ha a kérdés csak annyi is, hogy „mit tapasztalunk és miért?”.",
+    "Szóbeli B tételnél a sorrend: a kísérlet menete röviden → tapasztalat → magyarázat → egyenlet → következtetés (mit bizonyít a kísérlet).",
+    "Színeknél légy pontos: a „kék csapadék” és a „kék oldat” nem ugyanaz; csapadéknál a színét és a jellegét (túrós, kocsonyás) is mondd meg."
+  ],
+  "practice": [
+    {
+      "id": "1",
+      "kind": "choice",
+      "prompt": "Mit tapasztalunk, ha bárium-klorid-oldatot öntünk nátrium-szulfát-oldathoz?",
+      "options": [
+        {
+          "key": "A",
+          "text": "fehér csapadék válik le"
+        },
+        {
+          "key": "B",
+          "text": "pezsgés"
+        },
+        {
+          "key": "C",
+          "text": "az oldat megkékül"
+        },
+        {
+          "key": "D",
+          "text": "nincs változás"
+        }
+      ],
+      "answer": "A",
+      "category": "kiserlet-tapasztalat",
+      "explanation": "Helyes: fehér csapadék. Ba²⁺ + SO₄²⁻ → BaSO₄; a bárium-szulfát vízben gyakorlatilag oldhatatlan.",
+      "wrongOptions": {
+        "B": "Gáz nem keletkezik, a reakció csapadékképződés.",
+        "C": "Egyik ion sem színes; kék színt például a réz(II)-ionok adnak.",
+        "D": "A bárium-szulfát rosszul oldódik, ezért kiválik."
+      }
+    },
+    {
+      "id": "2",
+      "kind": "choice",
+      "prompt": "Hogyan mutatható ki az oxigéngáz?",
+      "options": [
+        {
+          "key": "A",
+          "text": "a parázsló gyújtópálca lángra lobban"
+        },
+        {
+          "key": "B",
+          "text": "a meszes víz megzavarosodik"
+        },
+        {
+          "key": "C",
+          "text": "lánghoz tartva pukkan"
+        },
+        {
+          "key": "D",
+          "text": "elszínteleníti a brómos vizet"
+        }
+      ],
+      "answer": "A",
+      "category": "kiserlet-tapasztalat",
+      "explanation": "Helyes: a parázsló gyújtópálca lángra lobban, mert az oxigén erősen táplálja az égést.",
+      "wrongOptions": {
+        "B": "Ez a szén-dioxid próbája (CaCO₃ csapadék).",
+        "C": "Ez a hidrogén próbája (durranógázpróba).",
+        "D": "Ez a telítetlen vegyületek (pl. etén) próbája."
+      }
+    },
+    {
+      "id": "3",
+      "kind": "text",
+      "prompt": "Milyen színű lesz a fenolftalein nátrium-hidroxid-oldatban?",
+      "answer": [
+        "lila",
+        "rózsaszín",
+        "ciklámen",
+        "lilás-rózsaszín",
+        "pirosas-lila"
+      ],
+      "category": "kiserlet-tapasztalat",
+      "explanation": "Helyes: lila (rózsaszín). A fenolftalein savas és semleges közegben színtelen, lúgos közegben (kb. pH 8,2 felett) lila.",
+      "maxWords": 2
+    },
+    {
+      "id": "4",
+      "kind": "choice",
+      "prompt": "Melyik tapasztalat jellemző a glükózoldat Fehling-próbájára?",
+      "options": [
+        {
+          "key": "A",
+          "text": "ezüsttükör képződik"
+        },
+        {
+          "key": "B",
+          "text": "ibolyaszínű oldat keletkezik"
+        },
+        {
+          "key": "C",
+          "text": "sötétkék szín jelenik meg"
+        },
+        {
+          "key": "D",
+          "text": "téglavörös csapadék válik le"
+        }
+      ],
+      "answer": "D",
+      "category": "kiserlet-tapasztalat",
+      "explanation": "Helyes: téglavörös csapadék (Cu₂O). A glükóz aldehidcsoportja a réz(II)-ionokat réz(I)-oxiddá redukálja.",
+      "wrongOptions": {
+        "A": "Ezüsttükör az ezüsttükörpróbánál (ammóniás ezüst-nitrát-oldattal) keletkezik.",
+        "B": "Ibolyaszín a fehérjék biuretreakciójára jellemző.",
+        "C": "Sötétkék szín a keményítő és a jód reakciójára jellemző."
+      }
+    },
+    {
+      "id": "5",
+      "kind": "choice",
+      "prompt": "Melyik mondat TAPASZTALAT (nem magyarázat) a cink és a sósav reakciójánál?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Hidrogén fejlődik."
+        },
+        {
+          "key": "B",
+          "text": "A cink oxidálódik."
+        },
+        {
+          "key": "C",
+          "text": "A cink felületén gázbuborékok képződnek, a fém fogy."
+        },
+        {
+          "key": "D",
+          "text": "Cink-klorid keletkezik."
+        }
+      ],
+      "answer": "C",
+      "category": "kiserlet-tapasztalat",
+      "explanation": "Helyes: C. Ez az, amit szemmel látunk; a többi állítás következtetés a tapasztalatból.",
+      "wrongOptions": {
+        "A": "A gáz kilétét nem látjuk – ez magyarázat (igazolni a durranógázpróbával lehet).",
+        "B": "Az oxidáció részecskeszintű magyarázat, közvetlenül nem észlelhető.",
+        "D": "A cink-klorid színtelen oldatban marad, keletkezése nem látható – ez is magyarázat."
+      }
+    },
+    {
+      "id": "6",
+      "kind": "choice",
+      "prompt": "Három kémcsőben sósav, nátrium-klorid-oldat és nátrium-hidroxid-oldat van. Melyik egyetlen reagenssel különböztethető meg mindhárom? (emelt)",
+      "options": [
+        {
+          "key": "A",
+          "text": "univerzális indikátor"
+        },
+        {
+          "key": "B",
+          "text": "fenolftalein"
+        },
+        {
+          "key": "C",
+          "text": "ezüst-nitrát-oldat"
+        },
+        {
+          "key": "D",
+          "text": "desztillált víz"
+        }
+      ],
+      "answer": "A",
+      "category": "kiserlet-tapasztalat",
+      "explanation": "Helyes: univerzális indikátor. A sósavban vörös (savas), a nátrium-klorid-oldatban zöld (semleges), a nátrium-hidroxid-oldatban kék–ibolya (lúgos) – három különböző szín.",
+      "wrongOptions": {
+        "B": "A fenolftalein a savas és a semleges oldatban is színtelen, így a sósavat és a NaCl-oldatot nem különbözteti meg.",
+        "C": "Ezüst-nitráttal a sósav és a NaCl-oldat is fehér AgCl csapadékot ad, ezért ezt a kettőt nem különbözteti meg.",
+        "D": "Mindhárom oldat színtelen, vízzel hígítva nincs észlelhető változás."
+      }
+    }
+  ],
+  "relatedCategories": [
+    "anyagismeret",
+    "reakcioegyenlet",
+    "szovegertelmezes"
+  ]
+}

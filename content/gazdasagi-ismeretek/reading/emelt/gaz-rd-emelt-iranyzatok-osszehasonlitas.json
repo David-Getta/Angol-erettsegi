@@ -1,0 +1,291 @@
+{
+  "schemaVersion": 1,
+  "id": "gaz-rd-emelt-iranyzatok-osszehasonlitas",
+  "subject": "gazdasagi-ismeretek",
+  "revision": 1,
+  "level": "emelt",
+  "source": "generated",
+  "topic": "alapfogalmak",
+  "title": "Közgazdasági irányzatok összehasonlítása",
+  "createdAt": "2026-11-06",
+  "tags": [],
+  "section": "reading",
+  "type": "feleletvalasztas",
+  "instructions": "Válassza ki a helyes választ! Minden kérdésre egy helyes válasz van. A 0. a megoldott példa.",
+  "example": {
+    "id": "0",
+    "kind": "choice",
+    "prompt": "Mit tartott Adam Smith a gazdagság forrásának?",
+    "options": [
+      {
+        "key": "A",
+        "text": "az arany- és ezüstkészleteket"
+      },
+      {
+        "key": "B",
+        "text": "a mezőgazdaságot"
+      },
+      {
+        "key": "C",
+        "text": "a munkát"
+      },
+      {
+        "key": "D",
+        "text": "a pénzkínálatot"
+      }
+    ],
+    "answer": "C",
+    "category": "iranyzatok",
+    "explanation": "Helyes: C. Smith szerint a gazdagság forrása a munka, a munkamegosztás pedig növeli a termelékenységet (tűgyár)."
+  },
+  "items": [
+    {
+      "id": "1",
+      "kind": "choice",
+      "prompt": "Melyik irányzat szerint a gazdagság forrása a mezőgazdaság, mert az teremti meg a „tiszta terméket”?",
+      "options": [
+        {
+          "key": "A",
+          "text": "merkantilizmus"
+        },
+        {
+          "key": "B",
+          "text": "fiziokraták"
+        },
+        {
+          "key": "C",
+          "text": "klasszikus közgazdaságtan"
+        },
+        {
+          "key": "D",
+          "text": "neoklasszikus közgazdaságtan"
+        }
+      ],
+      "answer": "B",
+      "category": "iranyzatok",
+      "explanation": "Helyes: B. A fiziokraták (XVIII. század közepe) a mezőgazdaságot tartották a gazdagság forrásának, és elvetették a merkantilista nézetet.",
+      "wrongOptions": {
+        "A": "A merkantilisták a gazdagságot az arany- és ezüstkészletekben mérték.",
+        "C": "A klasszikusok (Smith) szerint a gazdagság forrása a munka.",
+        "D": "A neoklasszikusok a határhasznot és a határköltséget állították középpontba, nem a mezőgazdaságot."
+      }
+    },
+    {
+      "id": "2",
+      "kind": "choice",
+      "prompt": "Melyik állítás írja le helyesen a merkantilisták és a fiziokraták felfogását az állam szerepéről?",
+      "options": [
+        {
+          "key": "A",
+          "text": "A merkantilisták szerint az állam aktívan szabályozza a gazdaságot (protekcionizmus), a fiziokraták jelmondata a „hagyjátok csinálni, hagyjátok menni”."
+        },
+        {
+          "key": "B",
+          "text": "Mindkét irányzat a szabad kereskedelmet és az állami be nem avatkozást hirdette."
+        },
+        {
+          "key": "C",
+          "text": "A fiziokraták az import visszaszorítását, a merkantilisták a laissez-faire elvét hirdették."
+        },
+        {
+          "key": "D",
+          "text": "Mindkét irányzat a központi tervezést támogatta."
+        }
+      ],
+      "answer": "A",
+      "category": "iranyzatok",
+      "explanation": "Helyes: A. A merkantilizmusban az állam aktívan szabályozott (export ösztönzése, import visszaszorítása, protekcionizmus), a fiziokraták viszont a laissez-faire jelmondatot hirdették.",
+      "wrongOptions": {
+        "B": "A merkantilisták éppen állami beavatkozást (protekcionizmust) hirdettek.",
+        "C": "Fordítva: az import visszaszorítása merkantilista, a laissez-faire fiziokrata gondolat.",
+        "D": "A központi tervezés a marxizmushoz és a tervgazdasághoz kötődik, nem ezekhez az irányzatokhoz."
+      }
+    },
+    {
+      "id": "3",
+      "kind": "choice",
+      "prompt": "Hogyan látta Adam Smith az állam szerepét?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Szűknek: honvédelem, igazságszolgáltatás, közintézmények és közművek fenntartása."
+        },
+        {
+          "key": "B",
+          "text": "Válság idején az államnak aktívan be kell avatkoznia, növelnie kell a közkiadásokat."
+        },
+        {
+          "key": "C",
+          "text": "Az állam feladata a termelés központi megtervezése és az árak meghatározása."
+        },
+        {
+          "key": "D",
+          "text": "Az állam feladata az arany- és ezüstkészletek növelése az export ösztönzésével."
+        }
+      ],
+      "answer": "A",
+      "category": "iranyzatok",
+      "explanation": "Helyes: A. Smith szerint az állam szerepe szűk (honvédelem, igazságszolgáltatás, közintézmények és közművek), a gazdaságot a piac „láthatatlan keze” az árak révén szabályozza.",
+      "wrongOptions": {
+        "B": "Ez Keynes nézete (XX. század első fele), nem Smithé.",
+        "C": "Ez a tervgazdaság (marxista gazdaságtan) felfogása.",
+        "D": "Ez a merkantilisták felfogása, amelyet a klasszikusok már nem vallottak."
+      }
+    },
+    {
+      "id": "4",
+      "kind": "choice",
+      "prompt": "Melyik állítás helyes Keynes és Friedman nézetéről az állam gazdasági szerepéről?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Keynes szerint válság idején az államnak aktívan be kell avatkoznia; Friedman ezt bírálta, szerinte az állam szerepét minimalizálni kell."
+        },
+        {
+          "key": "B",
+          "text": "Keynes és Friedman egyaránt az állami beavatkozás minimalizálását javasolta."
+        },
+        {
+          "key": "C",
+          "text": "Friedman a keresletvezérelt gazdaságpolitika megalkotója, Keynes a monetarista iskola vezetője."
+        },
+        {
+          "key": "D",
+          "text": "Keynes szerint a gazdasági stabilitás kulcsa kizárólag a pénzkínálat szabályozása."
+        }
+      ],
+      "answer": "A",
+      "category": "iranyzatok",
+      "explanation": "Helyes: A. Keynes (Általános elmélet, 1936) válság idején állami keresletélénkítést javasolt; Friedman, a monetarista iskola vezető alakja, bírálta ezt, és a pénzkínálat szabályozását tartotta kulcsnak.",
+      "wrongOptions": {
+        "B": "Keynes éppen az aktív állami beavatkozás híve volt.",
+        "C": "Fordítva: Keynes a keresletvezérelt gazdaságpolitika, Friedman a monetarizmus képviselője.",
+        "D": "A pénzkínálat szabályozása Friedman (monetarizmus) alaptézise, nem Keynesé."
+      }
+    },
+    {
+      "id": "5",
+      "kind": "choice",
+      "prompt": "Mit állít Marx értéktöbblet-elmélete?",
+      "options": [
+        {
+          "key": "A",
+          "text": "A munkások által megtermelt érték és a bér közti különbség a tőkés nyereségének alapja."
+        },
+        {
+          "key": "B",
+          "text": "A népesség gyorsabban nő, mint az élelemtermelés."
+        },
+        {
+          "key": "C",
+          "text": "A gazdasági döntések alapja a határhaszon és a határköltség."
+        },
+        {
+          "key": "D",
+          "text": "Mindenki a saját érdekét követi, és ezzel akaratlanul a közjót is szolgálja."
+        }
+      ],
+      "answer": "A",
+      "category": "iranyzatok",
+      "explanation": "Helyes: A. Az értéktöbblet-elmélet szerint a munkások által megtermelt érték és a bér közti különbség a tőkés nyereségének alapja; Marx ebből vezette le a kapitalizmus kritikáját.",
+      "wrongOptions": {
+        "B": "Ez Malthus népesedési elmélete.",
+        "C": "Ez a neoklasszikus közgazdaságtan fő gondolata.",
+        "D": "Ez Adam Smith önérdekről szóló gondolata."
+      }
+    },
+    {
+      "id": "6",
+      "kind": "choice",
+      "prompt": "Melyik párosítás helyes a neoklasszikus közgazdaságtan képviselőinél?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Jevons – határhaszon-elmélet; Walras – általános egyensúly elmélete; Marshall – a kereslet–kínálat modellje"
+        },
+        {
+          "key": "B",
+          "text": "Jevons – általános egyensúly elmélete; Walras – a kereslet–kínálat modellje; Marshall – határhaszon-elmélet"
+        },
+        {
+          "key": "C",
+          "text": "Walras – Gazdasági táblázat; Jevons – tűgyár; Marshall – népesedési elmélet"
+        },
+        {
+          "key": "D",
+          "text": "Marshall – Általános elmélet; Walras – monetarizmus; Jevons – értéktöbblet-elmélet"
+        }
+      ],
+      "answer": "A",
+      "category": "iranyzatok",
+      "explanation": "Helyes: A. William Stanley Jevons a határhaszon-elmélet egyik megalkotója, Léon Walras az általános egyensúly elméletéé, Alfred Marshall a kereslet–kínálat modelljéé.",
+      "wrongOptions": {
+        "B": "A három név és elmélet össze van keverve: az általános egyensúly Walras, a határhaszon Jevons nevéhez fűződik.",
+        "C": "A Gazdasági táblázat Quesnay, a tűgyár Smith, a népesedési elmélet Malthus műve.",
+        "D": "Az Általános elmélet Keynes, a monetarizmus Friedman, az értéktöbblet-elmélet Marx nevéhez kötődik."
+      }
+    },
+    {
+      "id": "7",
+      "kind": "choice",
+      "prompt": "Mi volt François Quesnay „Gazdasági táblázat”-ának jelentősége?",
+      "options": [
+        {
+          "key": "A",
+          "text": "a gazdasági körforgás első tudományos modellje"
+        },
+        {
+          "key": "B",
+          "text": "a munkamegosztás előnyeinek első leírása"
+        },
+        {
+          "key": "C",
+          "text": "a komparatív előnyök elméletének kiinduló táblázata"
+        },
+        {
+          "key": "D",
+          "text": "az első gazdaságpolitikai irányzat programja"
+        }
+      ],
+      "answer": "A",
+      "category": "iranyzatok",
+      "explanation": "Helyes: A. A fiziokrata Quesnay „Gazdasági táblázat”-a a gazdasági körforgás első tudományos modellje volt.",
+      "wrongOptions": {
+        "B": "A munkamegosztás előnyeit Adam Smith mutatta be (tűgyár).",
+        "C": "A komparatív előnyök elmélete Ricardo nevéhez fűződik.",
+        "D": "A gazdaságpolitika első tudatos irányzata a merkantilizmus volt."
+      }
+    },
+    {
+      "id": "8",
+      "kind": "choice",
+      "prompt": "Mit szemléltet Adam Smith tűgyárpéldája?",
+      "options": [
+        {
+          "key": "A",
+          "text": "hogy a munkamegosztás növeli a termelékenységet"
+        },
+        {
+          "key": "B",
+          "text": "hogy a piac az árak révén önmagát szabályozza"
+        },
+        {
+          "key": "C",
+          "text": "hogy a népesség gyorsabban nő, mint az élelemtermelés"
+        },
+        {
+          "key": "D",
+          "text": "hogy a tőkés nyeresége a meg nem fizetett munkából származik"
+        }
+      ],
+      "answer": "A",
+      "category": "iranyzatok",
+      "explanation": "Helyes: A. Egy ember egyedül néhány tűt készít naponta, felosztott munkával több ezret – következtetés: munkamegosztás → magasabb termelékenység.",
+      "wrongOptions": {
+        "B": "Ez a „láthatatlan kéz” gondolata, amely Smithé ugyan, de nem a tűgyár példája.",
+        "C": "Ez Malthus népesedési elmélete.",
+        "D": "Ez Marx értéktöbblet-elméletének gondolata."
+      }
+    }
+  ]
+}

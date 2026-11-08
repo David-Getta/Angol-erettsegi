@@ -1,0 +1,47 @@
+{
+  "schemaVersion": 1,
+  "id": "fiz-wr-kozep-rugo-meres",
+  "subject": "fizika",
+  "revision": 1,
+  "level": "kozep",
+  "source": "generated",
+  "topic": "mozgas-egyensuly",
+  "title": "Méréselemzés: a rugóállandó meghatározása",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "writing",
+  "type": "mereselemzes",
+  "taskNumber": 3,
+  "situation": "Egy diák függőlegesen felfüggesztett csavarrugóra egyre több egyforma, egyenként 0,5 N súlyú akasztós nehezéket akasztott, és milliméterbeosztású vonalzóval mérte a rugó megnyúlását (a terheletlen hosszhoz képest). A mérési eredményei:\nF = 0,5 N → Δl = 2,1 cm\nF = 1,0 N → Δl = 3,9 cm\nF = 1,5 N → Δl = 6,0 cm\nF = 2,0 N → Δl = 8,1 cm\nF = 2,5 N → Δl = 9,9 cm\n(Terhelés nélkül a megnyúlás természetesen 0.)\n\n1. Milyen kapcsolat van a rugót nyújtó erő és a megnyúlás között? Írd le, hogyan ábrázolnád az adatokat, és milyen grafikont várnál! (5 pont)\n2. Határozd meg a rugó rugóállandóját az adatokból! (3 pont)\n3. Mekkora erő nyújtaná meg a rugót 7,0 cm-rel? (3 pont)\n4. Melyik mérés tér el relatíve a legjobban a többitől, és mi lehet az oka? Hogyan lehetne a mérést pontosítani? (2 pont)\n5. A rugóra 200 g tömegű testet akasztunk, és kis rezgésbe hozzuk. Mennyi idő alatt végez 10 teljes rezgést? (3 pont)",
+  "points": [
+    { "id": "p1", "text": "1. Az erő és a megnyúlás kapcsolata, az ábrázolás és a várt grafikon (5 pont)" },
+    { "id": "p2", "text": "2. A rugóállandó meghatározása (3 pont)" },
+    { "id": "p3", "text": "3. A 7,0 cm-es megnyúláshoz tartozó erő (3 pont)" },
+    { "id": "p4", "text": "4. A legjobban eltérő mérés, a hiba oka és a pontosítás (2 pont)" },
+    { "id": "p5", "text": "5. 10 rezgés ideje 200 g-os testtel (3 pont)" }
+  ],
+  "suggestedMinutes": 35,
+  "usefulPhrases": [
+    { "en": "F = D·Δl", "hu": "Hooke-törvény: a rugalmas alakváltozás arányos a nyújtó erővel; D a rugóállandó (N/m)." },
+    { "en": "D = ΔF/Δ(Δl) – a grafikon meredeksége", "hu": "Az F–Δl grafikon origón átmenő egyenesének meredeksége a rugóállandó." },
+    { "en": "az összetartozó értékpárok hányadosának átlaga", "hu": "Egyszerű kiértékelés: minden mérésre D = F/Δl, majd átlagolás." },
+    { "en": "relatív hiba = abszolút hiba / mért érték", "hu": "A leolvasási hiba (±1 mm) kis megnyúlásnál relatíve nagyobb." },
+    { "en": "T = 2π·√(m/D)", "hu": "A rugóra akasztott test rezgésideje; független a kitéréstől." },
+    { "en": "a mérési pontok az egyenes körül szóródnak", "hu": "Így írd le, ha a pontok nem pontosan esnek az egyenesre – ez mérési hiba, nem a törvény sérülése." }
+  ],
+  "modelAnswer": {
+    "text": "1. A Hooke-törvény szerint a rugó megnyúlása egyenesen arányos a nyújtó erővel: F = D·Δl, ahol D a rugóállandó. Az adatokat F–Δl koordináta-rendszerben ábrázolnám (vízszintesen a megnyúlás méterben vagy cm-ben, függőlegesen az erő N-ban), a (0; 0) pontot is felvéve. A pontok jó közelítéssel egy origón átmenő egyenesre esnek; a mérési hibák miatt kissé szóródnak körülötte, ezért nem összekötöm a pontokat, hanem egy kiegyenlítő egyenest húzok közéjük. Az egyenes meredeksége a rugóállandó. Az arányosságot az is mutatja, hogy kétszeres erőnél (1,0 N → 2,0 N) a megnyúlás is kb. kétszeres (3,9 cm → 8,1 cm).\n\n2. Minden mérésre kiszámítom a D = F/Δl hányadost (a megnyúlást méterben):\n0,5 N / 0,021 m ≈ 23,8 N/m; 1,0 N / 0,039 m ≈ 25,6 N/m; 1,5 N / 0,060 m = 25,0 N/m; 2,0 N / 0,081 m ≈ 24,7 N/m; 2,5 N / 0,099 m ≈ 25,3 N/m.\nAz átlag D ≈ (23,8 + 25,6 + 25,0 + 24,7 + 25,3)/5 ≈ 24,9 N/m, a kiegyenlítő egyenes meredekségéből is kb. 25 N/m adódik.\nA rugóállandó D ≈ 25 N/m.\n\n3. F = D·Δl = 25 N/m · 0,070 m = 1,75 N ≈ 1,8 N. (Ez a grafikonról is leolvasható az 1,5 N és a 2,0 N közötti szakaszon.)\nA rugót kb. 1,8 N erő nyújtaná meg 7,0 cm-rel.\n\n4. Relatíve a legjobban az első mérés (0,5 N, 2,1 cm, D ≈ 23,8 N/m) tér el az átlagtól (kb. 4–5 %-kal). Ennek oka, hogy a vonalzó leolvasási hibája (kb. ±1 mm) minden mérésnél ugyanakkora, de a kis megnyúlásnál ez relatíve nagyobb hibát okoz (1 mm a 2,1 cm-nek közel 5 %-a, a 9,9 cm-nek csak 1 %-a). Pontosítás: több mérés nagyobb terhelésekkel (a rugalmassági határon belül), minden terhelésnél többszöri leolvasás szemmagasságból (a parallaxishiba elkerülésére), mutató vagy tükrös skála használata, és a D meghatározása a grafikon meredekségéből.\n\n5. A rezgésidő T = 2π·√(m/D) = 2 · 3,14 · √(0,200 kg / 25 N/m) = 6,28 · √0,008 s ≈ 6,28 · 0,0894 s ≈ 0,56 s.\n10 teljes rezgés ideje 10 · T ≈ 5,6 s. (A rezgésidő nem függ a kitéréstől, ezért a „kis rezgés” nagysága nem számít.)\nA 200 g-os test kb. 5,6 s alatt végez 10 rezgést.",
+    "pointsCovered": [
+      { "id": "p1", "quote": "A pontok jó közelítéssel egy origón átmenő egyenesre esnek" },
+      { "id": "p2", "quote": "A rugóállandó D ≈ 25 N/m." },
+      { "id": "p3", "quote": "F = D·Δl = 25 N/m · 0,070 m = 1,75 N ≈ 1,8 N" },
+      { "id": "p4", "quote": "Relatíve a legjobban az első mérés (0,5 N, 2,1 cm, D ≈ 23,8 N/m) tér el az átlagtól" },
+      { "id": "p5", "quote": "10 teljes rezgés ideje 10 · T ≈ 5,6 s" }
+    ],
+    "notes": [
+      "Válaszok: a Hooke-törvény felismerése, a helyes ábrázolási mód (kiegyenlítő egyenes, origón át), a rugóállandó (kb. 25 N/m), a 7,0 cm-hez tartozó erő és a 10 rezgés ideje mind helyes – ez a válaszok 10 pontja.",
+      "Indoklás: a kiértékelés minden lépése követhető (hányadosok táblázatszerűen, átlag), a hibát a leolvasási hiba RELATÍV nagyságával magyarázza, és konkrét javítást javasol – ez a méréselemzésben kulcsfontosságú.",
+      "Szaknyelv: helyesen használja a megnyúlás, rugóállandó, meredekség, kiegyenlítő egyenes, relatív hiba és rezgésidő fogalmát, a cm → m átváltás minden számolásban megtörténik."
+    ]
+  }
+}

@@ -1,0 +1,214 @@
+{
+  "meta": {
+    "verifiedAt": "2026-11-05",
+    "sources": [
+      {
+        "title": "Oktatási Hivatal: Földrajz – részletes érettségi vizsgakövetelmény és vizsgaleírás (2024-től érvényes, Nat2020)",
+        "url": "https://www.oktatas.hu/pub_bin/dload/kozoktatas/erettsegi/vizsgakovetelmenyek2024/foldrajz_2024_e.pdf"
+      },
+      {
+        "title": "Eduline (2025. 05. 13.): Ezeket kell tudni a csütörtöki földrajzérettségiről – segédeszközök, pontozás (közép írásbeli 90 pont: topográfia 20 perc 20 pont + 100 perc 70 pont)",
+        "url": "https://eduline.hu/erettsegi-felveteli/20250513_minden-a-csoturtoki-foldrjazerettsegirol-segedeszkozok-pontozas-eddig-irhatjatok"
+      },
+      {
+        "title": "Eduline (2024. 05. 15.): Minden, amit a csütörtöki földrajzérettségiről tudni érdemes",
+        "url": "https://eduline.hu/erettsegi-felveteli/20240515_foldrajzerettsegi-tudnivalok-segedeszkozok-egy-helyen"
+      },
+      {
+        "title": "Oktatási Hivatal, Új Köznevelés (2022): Érettségi változások – Földrajz (20/70/90 pont, szóbeli A/B változat, 60 pont)",
+        "url": "https://www.oktatas.hu/pub_bin/dload/kozoktatas/uj_kozneveles/2022_2/UKN_2202_06_Erettsegi_valtozasok_Foldrajz.pdf"
+      },
+      {
+        "title": "GeoMetodika (2021): Megőrizve megújítani – a földrajz érettségi vizsga új vonásai (írásbeli 100 → 90 pont)",
+        "url": "https://geometodika.hu/megorizve-megujitani-a-foldrajz-erettsegi-vizsga-uj-vonasai/"
+      },
+      {
+        "title": "Eduline (2024. 12. 13.): Itt vannak a 2025-ös emelt szintű földrajzérettségi témakörei",
+        "url": "https://eduline.hu/erettsegi-felveteli/20241213_emelt-szintu-foldrajzerettsegi-tetelek-temakorok-2025"
+      },
+      {
+        "title": "Eduline (2026. 03. 14.): Érettségi 2026 – pontozási és osztályozási szabályok (közép 80/60/40/25 %, emelt 60/47/33/25 %, vizsgarészenként 12 %)",
+        "url": "https://eduline.hu/erettsegi-felveteli/20260314_erettsegi-2026-pontozas-osztalyozas"
+      }
+    ],
+    "notes": [
+      "A két kifejtős feladat (10 + 10 = 20) az app felosztása; a vizsgán ezek a II. feladatlap részkérdései.",
+      "Az ellenőrzés hírportál-cikkek (Eduline, Telex) és a hivatalos dokumentumok keresőben indexelt szövege alapján történt; az OH oldalát a futtató környezet hálózata nem engedte közvetlenül megnyitni – a hivatalos vizsgaleírással érdemes összevetni."
+    ]
+  },
+  "id": "writing-kozep",
+  "level": "kozep",
+  "examMaxPoints": 20,
+  "tasks": [
+    {
+      "taskNumber": 1,
+      "name": "Összefüggés-magyarázat",
+      "textTypes": [
+        "osszefugges-magyarazat"
+      ],
+      "guidingPoints": "2–4 kérdés",
+      "suggestedMinutes": 15,
+      "maxRaw": 10,
+      "criteria": [
+        {
+          "id": "tartalom",
+          "name": "Tartalmi helyesség, teljesség",
+          "description": "A kérdésekre adott válaszok földrajzilag helyesek és teljesek.",
+          "max": 6,
+          "bands": [
+            {
+              "points": "6",
+              "descriptor": "Maradéktalanul teljesül: A kérdésekre adott válaszok földrajzilag helyesek és teljesek."
+            },
+            {
+              "points": "5",
+              "descriptor": "Kisebb hiányosságokkal vagy pontatlanságokkal teljesül; a lényeg helyes."
+            },
+            {
+              "points": "3–4",
+              "descriptor": "Részben teljesül: több elem hiányzik, pontatlan vagy indoklás nélküli."
+            },
+            {
+              "points": "1–2",
+              "descriptor": "Alig teljesül: csak néhány helyes, odaillő elem van."
+            },
+            {
+              "points": "0",
+              "descriptor": "Nem teljesül, vagy nem értékelhető."
+            }
+          ]
+        },
+        {
+          "id": "osszefugges",
+          "name": "Összefüggések, indoklás",
+          "description": "Ok–okozati összefüggések, a folyamat lépéseinek, a térbeli kapcsolatoknak az indoklása.",
+          "max": 2,
+          "bands": [
+            {
+              "points": "2",
+              "descriptor": "Maradéktalanul teljesül: Ok–okozati összefüggések, a folyamat lépéseinek, a térbeli kapcsolatoknak az indoklása."
+            },
+            {
+              "points": "1",
+              "descriptor": "Részben teljesül: több elem hiányzik, pontatlan vagy indoklás nélküli."
+            },
+            {
+              "points": "0",
+              "descriptor": "Nem teljesül, vagy nem értékelhető."
+            }
+          ]
+        },
+        {
+          "id": "szaknyelv",
+          "name": "Szaknyelv, topográfiai pontosság",
+          "description": "Pontos szakkifejezések és földrajzi nevek.",
+          "max": 2,
+          "bands": [
+            {
+              "points": "2",
+              "descriptor": "Maradéktalanul teljesül: Pontos szakkifejezések és földrajzi nevek."
+            },
+            {
+              "points": "1",
+              "descriptor": "Részben teljesül: több elem hiányzik, pontatlan vagy indoklás nélküli."
+            },
+            {
+              "points": "0",
+              "descriptor": "Nem teljesül, vagy nem értékelhető."
+            }
+          ]
+        }
+      ],
+      "rules": []
+    },
+    {
+      "taskNumber": 2,
+      "name": "Elemző feladat (adat, ábra, szöveg)",
+      "textTypes": [
+        "elemzo",
+        "szamitasos-elemzo"
+      ],
+      "guidingPoints": "3–5 kérdés",
+      "suggestedMinutes": 15,
+      "maxRaw": 10,
+      "criteria": [
+        {
+          "id": "tartalom",
+          "name": "Tartalmi helyesség, teljesség",
+          "description": "A kérdésekre adott válaszok földrajzilag helyesek és teljesek.",
+          "max": 6,
+          "bands": [
+            {
+              "points": "6",
+              "descriptor": "Maradéktalanul teljesül: A kérdésekre adott válaszok földrajzilag helyesek és teljesek."
+            },
+            {
+              "points": "5",
+              "descriptor": "Kisebb hiányosságokkal vagy pontatlanságokkal teljesül; a lényeg helyes."
+            },
+            {
+              "points": "3–4",
+              "descriptor": "Részben teljesül: több elem hiányzik, pontatlan vagy indoklás nélküli."
+            },
+            {
+              "points": "1–2",
+              "descriptor": "Alig teljesül: csak néhány helyes, odaillő elem van."
+            },
+            {
+              "points": "0",
+              "descriptor": "Nem teljesül, vagy nem értékelhető."
+            }
+          ]
+        },
+        {
+          "id": "osszefugges",
+          "name": "Összefüggések, indoklás",
+          "description": "Ok–okozati összefüggések, a folyamat lépéseinek, a térbeli kapcsolatoknak az indoklása.",
+          "max": 2,
+          "bands": [
+            {
+              "points": "2",
+              "descriptor": "Maradéktalanul teljesül: Ok–okozati összefüggések, a folyamat lépéseinek, a térbeli kapcsolatoknak az indoklása."
+            },
+            {
+              "points": "1",
+              "descriptor": "Részben teljesül: több elem hiányzik, pontatlan vagy indoklás nélküli."
+            },
+            {
+              "points": "0",
+              "descriptor": "Nem teljesül, vagy nem értékelhető."
+            }
+          ]
+        },
+        {
+          "id": "szaknyelv",
+          "name": "Szaknyelv, topográfiai pontosság",
+          "description": "Pontos szakkifejezések és földrajzi nevek.",
+          "max": 2,
+          "bands": [
+            {
+              "points": "2",
+              "descriptor": "Maradéktalanul teljesül: Pontos szakkifejezések és földrajzi nevek."
+            },
+            {
+              "points": "1",
+              "descriptor": "Részben teljesül: több elem hiányzik, pontatlan vagy indoklás nélküli."
+            },
+            {
+              "points": "0",
+              "descriptor": "Nem teljesül, vagy nem értékelhető."
+            }
+          ]
+        }
+      ],
+      "rules": []
+    }
+  ],
+  "conversion": {
+    "method": "identity"
+  },
+  "generalRules": [
+    "A hivatalos útmutató válaszelemenként ad pontot; tartalmilag helyes, más megfogalmazású válasz is elfogadható.",
+    "Számításos feladatnál a mértékegység és a kerekítés része a válasznak."
+  ]
+}

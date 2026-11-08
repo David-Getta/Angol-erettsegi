@@ -1,0 +1,157 @@
+{
+  "schemaVersion": 1,
+  "id": "bio-rd-emelt-populacio-energia-szamitas",
+  "subject": "biologia",
+  "revision": 1,
+  "level": "emelt",
+  "source": "generated",
+  "topic": "okologia",
+  "title": "Populációk és energiaáramlás – ökológiai számítás",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "reading",
+  "type": "szamitas-rovid",
+  "instructions": "Olvassa el a leírásokat, és oldja meg a számítási feladatokat! Csak a végeredményt írja be mértékegységgel vagy anélkül. A 0. feladat a példa.",
+  "passage": {
+    "blocks": [
+      {
+        "heading": "A) Jelölés–visszafogás",
+        "text": "Egy 5 hektáros erdei tisztáson élve fogó csapdákkal 60 erdei egeret fogtak be, megjelölték, majd szabadon engedték őket. Egy hét múlva újra csapdáztak: 50 egeret fogtak, közülük 12 volt jelölt. (Feltételezzük, hogy a jelölés nem befolyásolja az egerek túlélését és befoghatóságát, és a két fogás között nem volt jelentős születés, elhullás vagy vándorlás.)"
+      },
+      {
+        "heading": "B) Energiaáramlás egy réten",
+        "text": "Egy rét termelői egy év alatt négyzetméterenként 20 000 kJ energiát kötnek meg a fotoszintézissel (bruttó elsődleges termelés), ebből 8000 kJ-t saját sejtlégzésükre használnak fel. A növényevők évente négyzetméterenként 1200 kJ energiát tartalmazó növényi anyagot fogyasztanak el; ebből 400 kJ emésztetlenül, a bélsárral távozik, 640 kJ-t sejtlégzésükre használnak fel, a többi a testükbe épül be (másodlagos termelés)."
+      },
+      {
+        "heading": "C) Populációk változása",
+        "text": "Egy baktériumtenyészet egyedszáma kedvező körülmények között 20 percenként megkétszereződik. Egy őzpopulációban az év elején 400 egyed élt; az év során 120 gida született, 80 egyed elpusztult, 15 elvándorolt és 5 bevándorolt."
+      }
+    ]
+  },
+  "example": {
+    "id": "0",
+    "kind": "text",
+    "prompt": "Mekkora a rét nettó elsődleges termelése (kJ/m² egy év alatt)?",
+    "answer": [
+      "12000",
+      "12.000",
+      "12000 kJ",
+      "12000 kJ/m²"
+    ],
+    "category": "okologiai-szamitas",
+    "explanation": "Helyes: 12 000 kJ/m². Nettó elsődleges termelés = bruttó termelés − a termelők légzése = 20 000 − 8000 = 12 000 kJ/m²; ez az a szerves anyag, amely a fogyasztók és a lebontók számára elérhető.",
+    "maxWords": 3
+  },
+  "items": [
+    {
+      "id": "1",
+      "kind": "text",
+      "prompt": "Hány egyedből áll a becslés szerint a tisztás egérpopulációja?",
+      "answer": [
+        "250",
+        "250 egyed",
+        "250 egér",
+        "250 db"
+      ],
+      "category": "okologiai-szamitas",
+      "explanation": "Helyes: 250. A jelölés–visszafogás elve: a második fogásban a jelöltek aránya megegyezik a populációban lévő jelöltek arányával: 12/50 = 60/N, ebből N = 60 · 50 / 12 = 250 egyed.",
+      "maxWords": 2
+    },
+    {
+      "id": "2",
+      "kind": "text",
+      "prompt": "Mekkora az egérpopuláció egyedsűrűsége (egyed/hektár)?",
+      "answer": [
+        "50",
+        "50 egyed/ha",
+        "50/ha",
+        "50 egyed/hektár",
+        "50 egyed"
+      ],
+      "category": "okologiai-szamitas",
+      "explanation": "Helyes: 50 egyed/ha. Egyedsűrűség = egyedszám / terület = 250 / 5 ha = 50 egyed hektáronként.",
+      "maxWords": 2
+    },
+    {
+      "id": "3",
+      "kind": "text",
+      "prompt": "Mennyi energia épül be a növényevők testébe (másodlagos termelés, kJ/m² egy év alatt)?",
+      "answer": [
+        "160",
+        "160 kJ",
+        "160 kJ/m²"
+      ],
+      "category": "okologiai-szamitas",
+      "explanation": "Helyes: 160 kJ/m². Az elfogyasztott 1200 kJ-ból 400 kJ a bélsárral távozik, így 800 kJ szívódik fel (asszimiláció); ebből 640 kJ a légzés során hővé alakul, a testbe 800 − 640 = 160 kJ épül be.",
+      "maxWords": 2
+    },
+    {
+      "id": "4",
+      "kind": "text",
+      "prompt": "A nettó elsődleges termelés hány százalékát fogyasztják el a növényevők?",
+      "answer": [
+        "10",
+        "10%",
+        "1/10",
+        "0,1"
+      ],
+      "category": "okologiai-szamitas",
+      "explanation": "Helyes: 10%. 1200 kJ / 12 000 kJ = 0,1 = 10%. A nettó termelés nagyobb része elfogyasztatlanul elhal, és a lebontókhoz kerül.",
+      "maxWords": 2
+    },
+    {
+      "id": "5",
+      "kind": "text",
+      "prompt": "A növényevők másodlagos termelése a nettó elsődleges termelés hány százaléka? (Egy tizedesjegyre kerekítve)",
+      "answer": [
+        "1,3",
+        "1,3%"
+      ],
+      "category": "okologiai-szamitas",
+      "explanation": "Helyes: kb. 1,3%. 160 kJ / 12 000 kJ ≈ 0,0133, azaz kb. 1,3%. Az energia a táplálkozási szintek között nagyrészt elvész (bélsár, légzési hő), ezért a felsőbb szinteken egyre kevesebb energia és biomassza van.",
+      "maxWords": 2
+    },
+    {
+      "id": "6",
+      "kind": "text",
+      "prompt": "Hány baktérium lesz a tenyészetben 2 óra múlva, ha kezdetben 1000 baktérium volt?",
+      "answer": [
+        "64000",
+        "64.000",
+        "64000 db",
+        "6,4·10⁴"
+      ],
+      "category": "okologiai-szamitas",
+      "explanation": "Helyes: 64 000. 2 óra = 120 perc, ez 120 / 20 = 6 kettőződés; 1000 · 2⁶ = 1000 · 64 = 64 000. Ez exponenciális (korlátlan) növekedés, amely a valóságban a táplálék elfogyásával és a bomlástermékek felhalmozódásával lelassul.",
+      "maxWords": 3
+    },
+    {
+      "id": "7",
+      "kind": "text",
+      "prompt": "Hány őz él a populációban az év végén?",
+      "answer": [
+        "430",
+        "430 egyed",
+        "430 őz",
+        "430 db"
+      ],
+      "category": "okologiai-szamitas",
+      "explanation": "Helyes: 430. Egyedszám-változás = születés − halálozás + bevándorlás − elvándorlás = 120 − 80 + 5 − 15 = +30; 400 + 30 = 430 egyed.",
+      "maxWords": 2
+    },
+    {
+      "id": "8",
+      "kind": "text",
+      "prompt": "Hány százalékkal nőtt az őzpopuláció egyedszáma az év során?",
+      "answer": [
+        "7,5",
+        "7,5%"
+      ],
+      "category": "okologiai-szamitas",
+      "explanation": "Helyes: 7,5%. A növekedés 30 egyed, ez a kiinduló 400 egyedhez viszonyítva 30 / 400 = 0,075 = 7,5%.",
+      "maxWords": 2
+    }
+  ],
+  "glossary": [],
+  "suggestedMinutes": 12
+}

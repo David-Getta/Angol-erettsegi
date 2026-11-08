@@ -1,0 +1,152 @@
+{
+  "schemaVersion": 1,
+  "id": "nem-lu-kozep-tierheim-word-formation",
+  "subject": "nemet",
+  "revision": 1,
+  "level": "kozep",
+  "source": "generated",
+  "topic": "tarsadalom",
+  "title": "Meine Samstage im Tierheim",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "language-use",
+  "type": "word-formation",
+  "instructions": "Lesen Sie den Text. Bilden Sie aus den Wörtern in Klammern Wörter, die in die Lücken (1–10) passen. Am Anfang finden Sie ein Beispiel (0).",
+  "instructionsHu": "A zárójelben megadott szavakból képezz olyan szót, amely illik az egyes hiányokba. A 0. a példa.",
+  "passage": {
+    "title": "Meine Samstage im Tierheim",
+    "blocks": [
+      {
+        "text": "Seit einem Jahr arbeite ich jeden Samstag [[0]] im Tierheim unserer Stadt. Meine wichtigste [[1]] ist es, mit den Hunden spazieren zu gehen. Viele Hunde sind am Anfang sehr [[2]], weil sie schlechte Erfahrungen mit Menschen gemacht haben. Mit viel [[3]] und Zeit werden sie aber langsam ruhiger."
+      },
+      {
+        "text": "Am liebsten mag ich Bruno, einen alten Schäferhund, der nach dem Tod seines [[4]] ins Tierheim kam. Leider wollen die meisten [[5]] einen jungen Hund, und alte Tiere warten oft jahrelang. Umso größer war unsere [[6]], als sich im März ein älteres Ehepaar für Bruno interessierte. Die beiden waren sehr [[7]] und kamen dreimal zu Besuch, bevor sie ihn mitnahmen. Ich war ein bisschen traurig, aber vor allem [[8]]."
+      },
+      {
+        "text": "Natürlich ist die Arbeit im Tierheim nicht immer [[9]]: Man muss auch Käfige putzen und bei jedem Wetter draußen sein. Trotzdem kann ich diese Erfahrung allen [[10]] empfehlen, die Tiere lieben."
+      }
+    ]
+  },
+  "example": {
+    "id": "0",
+    "kind": "text",
+    "cue": "EHRENAMT",
+    "answer": [
+      "ehrenamtlich"
+    ],
+    "category": "word-formation",
+    "explanation": "Az igéhez (arbeite) határozószó kell: EHRENAMT (önkéntes tisztség) → ehrenamtlich (önkéntesen, fizetés nélkül), a -lich képzővel."
+  },
+  "items": [
+    {
+      "id": "1",
+      "kind": "text",
+      "cue": "AUFGEBEN",
+      "answer": [
+        "Aufgabe"
+      ],
+      "caseSensitive": true,
+      "category": "word-formation",
+      "explanation": "A „meine wichtigste” után nőnemű főnév kell: AUFGEBEN → die Aufgabe (feladat). Az ige tőhangja megváltozik (geben → Gabe). Főnévről van szó, ezért nagy kezdőbetűvel kell írni."
+    },
+    {
+      "id": "2",
+      "kind": "text",
+      "cue": "ANGST",
+      "answer": [
+        "ängstlich",
+        "verängstigt"
+      ],
+      "category": "word-formation",
+      "explanation": "A „sehr” után melléknév kell: ANGST → ängstlich (félénk, ijedős), -lich képzővel és umlauttal. A „verängstigt” (megfélemlített) is helyes."
+    },
+    {
+      "id": "3",
+      "kind": "text",
+      "cue": "GEDULDIG",
+      "answer": [
+        "Geduld"
+      ],
+      "caseSensitive": true,
+      "category": "word-formation",
+      "explanation": "A „mit viel” után főnév kell: GEDULDIG (türelmes) → die Geduld (türelem) – itt a képzőt el kell hagyni. Főnévről van szó, ezért nagy kezdőbetűvel kell írni."
+    },
+    {
+      "id": "4",
+      "kind": "text",
+      "cue": "BESITZEN",
+      "answer": [
+        "Besitzers"
+      ],
+      "caseSensitive": true,
+      "category": "word-formation",
+      "explanation": "Személyt jelölő főnév kell -er képzővel: BESITZEN → der Besitzer (gazda, tulajdonos). A „nach dem Tod seines …” birtokos esetet kíván, ezért hímnemben -s végződés jár: seines Besitzers. Főnévről van szó, ezért nagy kezdőbetűvel kell írni."
+    },
+    {
+      "id": "5",
+      "kind": "text",
+      "cue": "BESUCHEN",
+      "answer": [
+        "Besucher",
+        "Besucherinnen"
+      ],
+      "caseSensitive": true,
+      "category": "word-formation",
+      "explanation": "A „die meisten” után többes számú, személyt jelölő főnév kell: BESUCHEN → die Besucher (látogatók). A -er végű hímnemű főnév többes száma nem változik. Főnévről van szó, ezért nagy kezdőbetűvel kell írni."
+    },
+    {
+      "id": "6",
+      "kind": "text",
+      "cue": "FREUEN",
+      "answer": [
+        "Freude"
+      ],
+      "caseSensitive": true,
+      "category": "word-formation",
+      "explanation": "Az „unsere” birtokos névmás után nőnemű főnév kell: FREUEN (örül) → die Freude (öröm). Főnévről van szó, ezért nagy kezdőbetűvel kell írni."
+    },
+    {
+      "id": "7",
+      "kind": "text",
+      "cue": "FREUND",
+      "answer": [
+        "freundlich"
+      ],
+      "category": "word-formation",
+      "explanation": "A „sehr” után melléknév kell: FREUND → freundlich (kedves, barátságos), a -lich képzővel."
+    },
+    {
+      "id": "8",
+      "kind": "text",
+      "cue": "GLÜCK",
+      "answer": [
+        "glücklich"
+      ],
+      "category": "word-formation",
+      "explanation": "A „traurig” ellentéteként melléknév kell: GLÜCK → glücklich (boldog), -lich képzővel. A „war … glücklich” szerkezetben a melléknév nem kap végződést."
+    },
+    {
+      "id": "9",
+      "kind": "text",
+      "cue": "SPANNEN",
+      "answer": [
+        "spannend",
+        "entspannend"
+      ],
+      "category": "word-formation",
+      "explanation": "Melléknév kell a „nicht immer” után: SPANNEN → spannend (izgalmas), a folyamatos melléknévi igenév -d végződésével. Az „entspannend” (pihentető) is értelmes: a ketrectakarítás és a rossz idő sem izgalmas, sem pihentető."
+    },
+    {
+      "id": "10",
+      "kind": "text",
+      "cue": "JUGEND",
+      "answer": [
+        "Jugendlichen"
+      ],
+      "caseSensitive": true,
+      "category": "word-formation",
+      "explanation": "Személyt jelölő főnév kell: JUGEND (ifjúság) → der/die Jugendliche (fiatal). Melléknévként ragozódik: az „allen” után részes eset többes számban: allen Jugendlichen. Főnévről van szó, ezért nagy kezdőbetűvel kell írni."
+    }
+  ],
+  "suggestedMinutes": 10
+}

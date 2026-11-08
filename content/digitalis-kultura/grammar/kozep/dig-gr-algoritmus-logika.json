@@ -1,0 +1,264 @@
+{
+  "schemaVersion": 1,
+  "id": "dig-gr-algoritmus-logika",
+  "subject": "digitalis-kultura",
+  "revision": 1,
+  "level": "kozep",
+  "source": "generated",
+  "topic": "nyelvtan",
+  "title": "Algoritmus logikája",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "grammar",
+  "type": "lesson",
+  "category": "algoritmus-logika",
+  "summaryHu": "A programozási feladatban a részfeladatok többsége egy-egy programozási tétel (összegzés, megszámlálás, maximumkiválasztás, eldöntés, keresés, kiválogatás) alkalmazása. A pontok akkor vesznek el, ha a tétel váza hibás: rossz kezdőérték, eggyel elcsúszott ciklushatár, rossz sorrendű elágazás, vagy a határesetek (egyenlő értékek, „nincs ilyen elem”) kezeletlenek. A szóbeli B) részében is ezeket kell érthetően elmagyarázni.",
+  "rules": [
+    {
+      "title": "A programozási tételek váza",
+      "explanation": "Összegzés: összeg = 0, majd minden elemet hozzáadunk. Megszámlálás: db = 0, és ha az elem megfelel a feltételnek, db nő. Maximumkiválasztás: a kezdőérték az ELSŐ elem (vagy indexe), és minden nagyobb elemnél frissítjük. Eldöntés: van-e megfelelő elem – az első találatnál megállhatunk. Keresés: van-e, és ha igen, hányadik. Kiválogatás: a megfelelő elemeket új listába gyűjtjük.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "osszeg = 0 → minden x elemre: osszeg += x",
+          "hu": "összegzés"
+        },
+        {
+          "en": "maxi = 0 → minden i indexre 1-től: ha t[i] > t[maxi], akkor maxi = i",
+          "hu": "maximumkiválasztás indexszel"
+        },
+        {
+          "en": "i = 0 → amíg i < n és t[i] nem jó: i += 1 → van = i < n",
+          "hu": "eldöntés / keresés"
+        }
+      ]
+    },
+    {
+      "title": "Kezdőértékek",
+      "explanation": "Az összegzés és a megszámlálás 0-ról indul, a szorzat 1-ről. A maximum és a minimum kezdőértéke a sorozat első eleme, nem 0 vagy egy „nagy szám”: ha minden érték negatív (vagy nagyobb az önkényes kezdőértéknél), a 0 kezdőérték hibás eredményt ad.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "legnagyobb = t[0]",
+          "hu": "helyes kezdőérték maximumhoz"
+        },
+        {
+          "en": "legnagyobb = 0",
+          "hu": "hibás, ha minden érték negatív lehet"
+        }
+      ]
+    },
+    {
+      "title": "Ciklushatárok",
+      "explanation": "A range(a, b) az a, a+1, …, b−1 értékeket adja – a b már nem. A lista indexei 0-tól len(t) − 1-ig tartanak. A while ciklus feltételét a ciklusmag előtt vizsgálja; a keresésnél az i < len(t) feltételnek kell elöl állnia, hogy a t[i] ne fusson túl a listán (rövidzár kiértékelés).",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "for i in range(1, 11):",
+          "hu": "1-től 10-ig fut (10-szer)"
+        },
+        {
+          "en": "while i < len(t) and t[i] != keresett:",
+          "hu": "először a határ, utána az elem vizsgálata"
+        }
+      ]
+    },
+    {
+      "title": "Elágazások és logikai feltételek",
+      "explanation": "Többágú elágazásnál (if – elif – else) az első igaz ág fut le, ezért a szigorúbb (szűkebb) feltételt kell előre tenni. Az and mindkét, az or legalább egy feltételt kéri; a tagadás: not (a and b) = (not a) or (not b). A határesetet a reláció dönti el: >= beleérti, > kizárja a határt.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "if p >= 80: jeles; elif p >= 60: jó; elif p >= 40: közepes; else: …",
+          "hu": "a legszigorúbb feltétel elöl"
+        },
+        {
+          "en": "not (x > 0 and x < 10)  ⇔  x <= 0 or x >= 10",
+          "hu": "De Morgan-azonosság"
+        }
+      ]
+    },
+    {
+      "title": "Határesetek tesztelése",
+      "explanation": "Minden programot próbálj ki a mintán kívül is: egyenlő értékek (melyik maximum maradjon: első vagy utolsó?), pontosan a határon lévő érték (30 perc, 10 000 lépés), „nincs ilyen elem”, egyetlen elem. A feladat szövege megmondja, mi a teendő ezekben az esetekben.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "if t[i] > t[maxi]",
+          "hu": "az első legnagyobb marad meg"
+        },
+        {
+          "en": "if t[i] >= t[maxi]",
+          "hu": "az utolsó legnagyobb marad meg"
+        }
+      ]
+    },
+    {
+      "title": "Emelt szint: összetett minták",
+      "explanation": "Leghosszabb sorozat (aktuális hossz és rekord nyilvántartása), szétválogatás két listába, metszet és unió, csoportonkénti összesítés szótárral, eseménylistás egyidejűség-számítás. Emelt szinten a hatékonyság is számít: felesleges egymásba ágyazott ciklus helyett egy menet és szótár.",
+      "emeltOnly": true,
+      "examples": [
+        {
+          "en": "akt = akt + 1 ha emelkedik, különben 0; ha akt > leg: leg = akt",
+          "hu": "leghosszabb emelkedő szakasz"
+        }
+      ]
+    }
+  ],
+  "commonMistakes": [
+    {
+      "wrong": "legnagyobb = 0, majd a negatív hőmérsékletek maximumát keresem.",
+      "right": "legnagyobb = homerseklet[0]",
+      "why": "Ha minden érték negatív, a 0 sosem cserélődik le, és a program 0 °C-ot ír ki – olyan értéket, ami nincs is az adatok között."
+    },
+    {
+      "wrong": "for i in range(1, len(t)): összegzésnél.",
+      "right": "for i in range(len(t)): (vagy for x in t:)",
+      "why": "A range(1, …) kihagyja a 0. indexű, vagyis az első elemet; a maximumkiválasztásnál ez szándékos, az összegzésnél hiba."
+    },
+    {
+      "wrong": "while t[i] != keresett and i < len(t):",
+      "right": "while i < len(t) and t[i] != keresett:",
+      "why": "Ha az elem nincs a listában, i eléri a len(t)-t, és a t[i] kiértékelése IndexError hibát ad; fordított sorrendben a rövidzár miatt a t[i] már nem fut le."
+    },
+    {
+      "wrong": "if pont >= 40: \"közepes\" elif pont >= 80: \"jeles\"",
+      "right": "if pont >= 80: \"jeles\" elif pont >= 40: \"közepes\"",
+      "why": "A 95 pont már az első feltételnél „közepes” lesz, a második ág sosem fut le."
+    }
+  ],
+  "examTips": [
+    "Minden részfeladat előtt nevezd meg magadnak, melyik tétel kell (összegzés? megszámlálás? keresés?) – így a váz rögtön megvan.",
+    "A minta bemenet mellett találj ki egy határesetet is, és próbáld ki: a javítók más adatokkal is tesztelhetnek.",
+    "A szóbelin mondd ki a tétel nevét és a kezdőérték, a ciklusfeltétel okát – a bemutatás pontjai ezért járnak."
+  ],
+  "practice": [
+    {
+      "kind": "text",
+      "prompt": "Mit ír ki a program?\nt = [-5, -2, -9]\nm = 0\nfor x in t:\n    if x > m:\n        m = x\nprint(m)",
+      "answer": [
+        "0"
+      ],
+      "explanation": "Kimenet: 0 – és ez hibás eredmény! A maximum kezdőértéke 0, de minden elem negatív, így egyik sem nagyobb nála. Helyesen m = t[0], akkor -2 lenne a kimenet.",
+      "id": "1",
+      "category": "algoritmus-logika"
+    },
+    {
+      "kind": "choice",
+      "prompt": "Melyik ciklusfeltétel helyes egy lineáris keresésnél, hogy akkor se legyen indexhiba, ha a keresett elem nincs a listában?",
+      "options": [
+        {
+          "key": "A",
+          "text": "while t[i] != keresett:"
+        },
+        {
+          "key": "B",
+          "text": "while t[i] != keresett and i < len(t):"
+        },
+        {
+          "key": "C",
+          "text": "while i <= len(t) and t[i] != keresett:"
+        },
+        {
+          "key": "D",
+          "text": "while i < len(t) and t[i] != keresett:"
+        }
+      ],
+      "answer": "D",
+      "explanation": "D. Az and balról jobbra értékel, és ha az első feltétel hamis, a másodikat már nem vizsgálja (rövidzár); így i = len(t) esetén a t[i] nem fut le.",
+      "wrongOptions": {
+        "A": "Ha az elem nincs a listában, a ciklus túlfut, és hibát ad.",
+        "B": "Ha i eléri a len(t)-t, előbb a t[i] értékelődik ki → IndexError.",
+        "C": "Az i <= len(t) megengedi az i = len(t) indexet, ami túlmutat a listán."
+      },
+      "id": "2",
+      "category": "algoritmus-logika"
+    },
+    {
+      "kind": "text",
+      "prompt": "Mit ír ki a program?\nfor i in range(2, 10, 3):\n    print(i, end=\" \")",
+      "answer": [
+        "2 5 8"
+      ],
+      "explanation": "Kimenet: 2 5 8. A range(2, 10, 3) 2-től indul, 3-asával lép, és a 10 már nem tartozik bele: 2, 5, 8 (a 11 túllépi a határt).",
+      "id": "3",
+      "category": "algoritmus-logika"
+    },
+    {
+      "kind": "choice",
+      "prompt": "Melyik elágazás ad minden pontszámra helyes minősítést (80-tól jeles, 50-től elégséges, alatta elégtelen)?",
+      "options": [
+        {
+          "key": "A",
+          "text": "if p >= 80 → jeles; elif p >= 50 → elégséges; else → elégtelen"
+        },
+        {
+          "key": "B",
+          "text": "if p >= 50 → elégséges; elif p >= 80 → jeles; else → elégtelen"
+        },
+        {
+          "key": "C",
+          "text": "if p > 80 → jeles; elif p > 50 → elégséges; else → elégtelen"
+        },
+        {
+          "key": "D",
+          "text": "if p >= 80 → jeles; if p >= 50 → elégséges; else → elégtelen"
+        }
+      ],
+      "answer": "A",
+      "explanation": "A. Az első igaz ág fut le, ezért a szigorúbb (80-as) feltételnek kell elöl állnia; a >= a határt is beleérti.",
+      "wrongOptions": {
+        "B": "A 95 pont már az első feltételnél elégséges lesz; a jeles ág sosem fut le.",
+        "C": "A > kizárja a határt: pontosan 80 pont elégséges, 50 pont elégtelen lenne.",
+        "D": "Két külön if: a 95 pontra előbb jeles, majd a második if-nél elégséges is kiíródik."
+      },
+      "id": "4",
+      "category": "algoritmus-logika"
+    },
+    {
+      "kind": "text",
+      "prompt": "Mit ír ki a program?\ndb = 0\nfor i in range(1, 6):\n    for j in range(1, 6):\n        if i < j:\n            db += 1\nprint(db)",
+      "answer": [
+        "10"
+      ],
+      "explanation": "Kimenet: 10. Az 1–5 számokból képezhető i < j párok száma: 4 + 3 + 2 + 1 + 0 = 10 (= 5 · 4 / 2). A belső ciklus mind a 25 párt végignézi, de csak a feltételnek megfelelőket számolja.",
+      "id": "5",
+      "category": "algoritmus-logika"
+    },
+    {
+      "kind": "choice",
+      "prompt": "A feladat: „Volt-e olyan nap, amikor 3000-nél kevesebbet lépett?” Melyik programozási tétel illik rá?",
+      "options": [
+        {
+          "key": "A",
+          "text": "összegzés"
+        },
+        {
+          "key": "B",
+          "text": "kiválogatás"
+        },
+        {
+          "key": "C",
+          "text": "eldöntés"
+        },
+        {
+          "key": "D",
+          "text": "maximumkiválasztás"
+        }
+      ],
+      "answer": "C",
+      "explanation": "C – eldöntés: a kérdés igen/nem válaszú, és az első 3000 alatti napnál meg lehet állni.",
+      "wrongOptions": {
+        "A": "Az összegzés egy összeget ad, nem igen/nem választ.",
+        "B": "A kiválogatás az összes ilyen napot összegyűjtené – több, mint amit a kérdés kér.",
+        "D": "A legnagyobb érték nem dönti el a kérdést."
+      },
+      "id": "6",
+      "category": "algoritmus-logika"
+    }
+  ],
+  "relatedCategories": [
+    "adattipus-adatszerkezet",
+    "kimenet-formatum"
+  ]
+}

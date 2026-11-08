@@ -1,0 +1,138 @@
+{
+  "meta": {
+    "verifiedAt": "2026-11-05",
+    "sources": [
+      {
+        "title": "Oktatási Hivatal: Történelem – részletes érettségi vizsgakövetelmény és vizsgaleírás (2024-től érvényes, Nat2020)",
+        "url": "https://www.oktatas.hu/pub_bin/dload/kozoktatas/erettsegi/vizsgakovetelmenyek2024/tortenelem_2024_e.pdf"
+      },
+      {
+        "title": "Eduline (2024. 04. 12.): Vizsgarészek, pontozás, segédeszközök – minden a 2024-es töriérettségiről (180 perc, 100 + 50 pont, 12 rövid feladat, 4-ből 2 esszé, 7 témakör)",
+        "url": "https://eduline.hu/erettsegi-felveteli/20240412_tortenelem-erettsegi-tudnivalok-erettsegi-2024"
+      },
+      {
+        "title": "Eduline (2024. 05. 24.): Így pontozzák a középszintű töriérettségit (szóbeli szempontok 4/6/10/12/18)",
+        "url": "https://eduline.hu/erettsegi-felveteli/20240524_torierettsegi-pontszaitas-szabalyok-irasbeli-szobeli-vizsga"
+      },
+      {
+        "title": "Eduline (2025. 04. 23.): Így pontozzák az idei töriérettségi írásbeli részét (esszé-szempontok, rövid 17 / hosszú 33 pont, terjedelem)",
+        "url": "https://eduline.hu/erettsegi-felveteli/20250423_tortenelemerettsegi-irasbeli-vizsga-pontozasa-2025"
+      },
+      {
+        "title": "Eduline (2024. 04. 26.): Milyen hosszúnak kell lennie az esszéknek a töri írásbelin (100–130 / 210–260 szó)",
+        "url": "https://eduline.hu/erettsegi-felveteli/20240426_Erettsegi-2024milyen-hosszunak-kell-lennie-a-tori-irasbelin-az-esszeknek"
+      },
+      {
+        "title": "Eduline (2025. 11. 06.): Így számolják a pontokat a történelem szóbelin",
+        "url": "https://eduline.hu/erettsegi-felveteli/20251106_oszi-erettsegi-2025-tortenelem-szobeli-vizsga-pontozas"
+      },
+      {
+        "title": "Eduline (2023. 12. 19.): Ezek lesznek történelemből emelt szinten a témakörök (emelt I. 100 perc + II. 140 perc, 6-ból 3 esszé)",
+        "url": "https://eduline.hu/erettsegi-felveteli/20231219_Erettsegi-2024-ezek-lesznek-tortenelembol-emelt-szinten-a-temakorok"
+      },
+      {
+        "title": "Oktatási Hivatal: Történelem középszint, javítási-értékelési útmutató, 2025. május (K2511) – esszé-szempontok (tükörmásolat)",
+        "url": "https://www.tortenelemtanarok.hu/media/uploads/Tortenelem_erettsegi/Kozep/k_tort_25maj_ut.pdf"
+      },
+      {
+        "title": "Eduline (2026. 03. 14.): Érettségi 2026 – pontozási és osztályozási szabályok (közép 80/60/40/25 %, emelt 60/47/33/25 %, vizsgarészenként 12 %)",
+        "url": "https://eduline.hu/erettsegi-felveteli/20260314_erettsegi-2026-pontozas-osztalyozas"
+      }
+    ],
+    "notes": [
+      "Az ellenőrzés hírportál-cikkek (Eduline, Telex) és a hivatalos dokumentumok keresőben indexelt szövege alapján történt; az OH oldalát a futtató környezet hálózata nem engedte közvetlenül megnyitni – a hivatalos vizsgaleírással érdemes összevetni."
+    ]
+  },
+  "groups": [
+    {
+      "id": "forras",
+      "name": "Forráshasználat"
+    },
+    {
+      "id": "ter-ido",
+      "name": "Tájékozódás időben és térben"
+    },
+    {
+      "id": "fogalom",
+      "name": "Fogalmak, ismeretek"
+    },
+    {
+      "id": "essze",
+      "name": "Esszéírás, gondolkodás"
+    }
+  ],
+  "categories": [
+    {
+      "id": "forras-ertelmezes",
+      "name": "A forrás értelmezése",
+      "group": "forras",
+      "description": "A forrás állításának, szerzői szándékának, műfajának félreértése."
+    },
+    {
+      "id": "forras-sajat-tudas",
+      "name": "Forrás és saját ismeret összekapcsolása",
+      "group": "forras",
+      "description": "A forrásból kiolvasott megállapításhoz nem kapcsolódik következtetés, vagy a következtetés nem a forrásból következik."
+    },
+    {
+      "id": "adatleolvasas",
+      "name": "Adatsor, diagram, térkép leolvasása",
+      "group": "forras",
+      "description": "Hibás leolvasás, trend vagy arány félreértelmezése, jelmagyarázat figyelmen kívül hagyása."
+    },
+    {
+      "id": "evszam-kronologia",
+      "name": "Évszámok, kronológia",
+      "group": "ter-ido",
+      "description": "Rossz évszám, sorrend, korszakhoz rendelés."
+    },
+    {
+      "id": "topografia",
+      "name": "Topográfia",
+      "group": "ter-ido",
+      "description": "Helyszínek, határok, területváltozások hibás azonosítása."
+    },
+    {
+      "id": "fogalomhasznalat",
+      "name": "Történelmi fogalmak",
+      "group": "fogalom",
+      "description": "Fogalom pontatlan vagy téves használata (pl. rendiség–abszolutizmus, nacionalizmus–nemzetállam)."
+    },
+    {
+      "id": "szemelyek-esemenyek",
+      "name": "Személyek, események ismerete",
+      "group": "fogalom",
+      "description": "Személyek szerepének, eseményeknek, intézményeknek a tévesztése."
+    },
+    {
+      "id": "ok-okozat",
+      "name": "Ok–okozati összefüggések",
+      "group": "essze",
+      "description": "Hiányzó vagy téves ok, következmény; az összefüggés nincs indokolva."
+    },
+    {
+      "id": "feladatmegertes",
+      "name": "Feladatmegértés",
+      "group": "essze",
+      "description": "Nem a feladat kérdésére válaszol, lényegtelen részleteknél marad, a korszakot elvéti."
+    },
+    {
+      "id": "szerkesztes",
+      "name": "Megszerkesztettség, nyelvhelyesség",
+      "group": "essze",
+      "description": "Logikátlan felépítés, bekezdések hiánya, mondatszerkesztési és nyelvhelyességi hibák."
+    },
+    {
+      "id": "szaknyelv",
+      "name": "Szaknyelv alkalmazása",
+      "group": "essze",
+      "description": "Köznyelvi vagy pontatlan kifejezések a szakkifejezések helyett, anakronizmus."
+    },
+    {
+      "id": "lenyegkiemeles",
+      "name": "Lényegkiemelés, relevancia",
+      "group": "essze",
+      "description": "A lényeges tényezők helyett mellékes adatok, ismétlés, tárgytól eltérés."
+    }
+  ]
+}

@@ -1,0 +1,91 @@
+{
+  "schemaVersion": 1,
+  "id": "mat-sp-emelt-oszthatosag-primek",
+  "subject": "matematika",
+  "revision": 1,
+  "level": "emelt",
+  "source": "generated",
+  "topic": "szamelmelet",
+  "title": "Tétel: oszthatóság, prímszámok, a számelmélet alaptétele",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "speaking",
+  "type": "tetel",
+  "partNumber": 1,
+  "instructionsHu": "Emelt szintű szóbeli tétel (30 perc felkészülés, kb. 20 perc felelet). Fejtsd ki a tételcímet önállóan, logikus felépítésben: mondd ki pontosan a kért definíciót, mondd ki a tételt a feltételekkel és bizonyítsd be, oldd meg és magyarázd el a feladatot, végül mutass alkalmazásokat (más témakörök, gyakorlati példák).",
+  "prompts": [
+    "Definíció: az oszthatóság és a prímszám definíciója",
+    "Tétel és bizonyítás: végtelen sok prímszám van (Eukleidész)",
+    "A tétel felépítése: a számelmélet alaptétele, az osztók száma, legnagyobb közös osztó és legkisebb közös többszörös, oszthatósági szabályok",
+    "Feladat: Igazolja, hogy ha p 3-nál nagyobb prímszám, akkor p² − 1 osztható 24-gyel!",
+    "Alkalmazások: törtek, titkosítás, ellenőrző számjegyek, periodikus jelenségek"
+  ],
+  "followUpQuestions": [
+    "Miért lényeges a feladatban, hogy p 3-nál nagyobb?"
+  ],
+  "usefulPhrases": [
+    {
+      "en": "a | b ⇔ b = k·a (k ∈ ℤ)",
+      "hu": "Az oszthatóság definíciója."
+    },
+    {
+      "en": "n = p₁^α₁·p₂^α₂·…·pₖ^αₖ",
+      "hu": "Kanonikus alak (prímtényezős felbontás)."
+    },
+    {
+      "en": "d(n) = (α₁ + 1)(α₂ + 1)…(αₖ + 1)",
+      "hu": "Az osztók száma a kanonikus alakból."
+    },
+    {
+      "en": "lnko(a; b)·lkkt(a; b) = a·b",
+      "hu": "Pozitív egészekre mindig igaz összefüggés."
+    },
+    {
+      "en": "Tegyük fel indirekt, hogy …",
+      "hu": "Az indirekt bizonyítás nyitása; a végén ki kell mondani az ellentmondást."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Tételcím",
+      "text": "Oszthatóság, prímszámok. A számelmélet alaptétele. Legnagyobb közös osztó, legkisebb közös többszörös."
+    },
+    {
+      "title": "Feladat",
+      "text": "Igazolja, hogy ha p 3-nál nagyobb prímszám, akkor p² − 1 osztható 24-gyel! Adja meg a 720 pozitív osztóinak számát!"
+    }
+  ],
+  "keyPoints": [
+    "Definíció: a | b (a osztója b-nek), ha van olyan k egész, hogy b = k·a; prímszám: pontosan két pozitív osztója van (1 és önmaga).",
+    "Tétel: végtelen sok prímszám van – indirekt bizonyítás az N = p₁·p₂·…·pₙ + 1 számmal.",
+    "A számelmélet alaptétele: minden 1-nél nagyobb egész a sorrendtől eltekintve egyértelműen bontható prímszámok szorzatára.",
+    "Osztók száma: n = p₁^α₁·…·pₖ^αₖ esetén (α₁ + 1)·…·(αₖ + 1).",
+    "lnko: a közös prímtényezők a kisebb kitevővel; lkkt: minden prímtényező a nagyobb kitevővel; lnko(a; b)·lkkt(a; b) = a·b.",
+    "Feladat: p² − 1 = (p − 1)(p + 1), két szomszédos páros szám (egyikük 4-gyel osztható) → 8 | p² − 1; a három szomszédos szám közül egy osztható 3-mal, de nem p → 3 | p² − 1; (8; 3) = 1 → 24 | p² − 1.",
+    "720 = 2⁴·3²·5, osztóinak száma 5·3·2 = 30.",
+    "Alkalmazások: törtek egyszerűsítése (lnko), közös nevező (lkkt), RSA-titkosítás, ellenőrző számjegyek, fogaskerekek, menetrendek."
+  ],
+  "speakingSeconds": 1200,
+  "prepSeconds": 1800,
+  "sampleAnswer": {
+    "turns": [
+      {
+        "speaker": "candidate",
+        "text": "A tétel az egész számok oszthatóságáról szól. Definíció: azt mondjuk, hogy az a egész szám osztója a b egész számnak, jelben a | b, ha létezik olyan k egész szám, hogy b = k·a. Például 3 | 12, mert 12 = 4·3. Prímszámnak nevezzük azokat a pozitív egész számokat, amelyeknek pontosan két pozitív osztójuk van: az 1 és önmaguk. Az 1 tehát nem prím, mert csak egy pozitív osztója van; a 2 az egyetlen páros prím. Az 1-nél nagyobb, nem prím pozitív egészeket összetett számoknak nevezzük.\n\nA legfontosabb tétel a számelmélet alaptétele: minden 1-nél nagyobb egész szám felbontható prímszámok szorzatára, és ez a felbontás a tényezők sorrendjétől eltekintve egyértelmű. Például 720 = 2⁴·3²·5. Ebből a kanonikus alakból az osztók száma is adódik: ha n = p₁^α₁·…·pₖ^αₖ, akkor minden osztó p₁^β₁·…·pₖ^βₖ alakú, ahol 0 ≤ βᵢ ≤ αᵢ, így az osztók száma (α₁ + 1)·…·(αₖ + 1). A 720 osztóinak száma (4 + 1)(2 + 1)(1 + 1) = 30. Két szám legnagyobb közös osztóját úgy kapjuk, hogy a közös prímtényezőket a kisebbik kitevőn szorozzuk össze, a legkisebb közös többszöröst pedig úgy, hogy minden előforduló prímtényezőt a nagyobbik kitevőn veszünk; pozitív a és b esetén lnko(a; b)·lkkt(a; b) = a·b.\n\nTétel: végtelen sok prímszám van. Bizonyítás indirekt módon: tegyük fel, hogy csak véges sok prím van, legyenek ezek p₁, p₂, …, pₙ. Tekintsük az N = p₁·p₂·…·pₙ + 1 számot. Ez nagyobb 1-nél, ezért az alaptétel szerint van prímosztója, és ez a feltevés szerint csak valamelyik pᵢ lehet. De N-et bármelyik pᵢ-vel osztva 1 maradékot kapunk, mert p₁·…·pₙ osztható pᵢ-vel. Így egyik pᵢ sem osztója N-nek, ami ellentmondás. Tehát a feltevés hamis, végtelen sok prímszám van.\n\nA feladat: legyen p 3-nál nagyobb prím. Ekkor p² − 1 = (p − 1)(p + 1). Mivel p páratlan, p − 1 és p + 1 két egymást követő páros szám, ezek közül az egyik 4-gyel is osztható, ezért a szorzatuk osztható 2·4 = 8-cal. A p − 1, p, p + 1 három egymást követő egész szám, közülük pontosan egy osztható 3-mal; ez nem a p, mert p 3-nál nagyobb prím, tehát p − 1 vagy p + 1 osztható 3-mal, így a szorzat is. Mivel 8 és 3 relatív prímek, a szorzat osztható 8·3 = 24-gyel. Ellenőrzés: p = 5-re 24, p = 7-re 48, p = 11-re 120, mind osztható 24-gyel.\n\nAlkalmazások: a legnagyobb közös osztóval törteket egyszerűsítünk, a legkisebb közös többszörössel közös nevezőt keresünk, vagy azt számoljuk ki, mikor találkozik újra két ismétlődő esemény, például két fogaskerék foga vagy két menetrend szerinti járat. A nagy prímszámok a modern titkosításban, például az RSA-eljárásban fontosak, mert két nagy prím szorzatát könnyű kiszámolni, de a szorzatot prímtényezőkre bontani rendkívül nehéz. A maradékos osztáson alapulnak az ellenőrző számjegyek is, például a könyvek ISBN-számában."
+      },
+      {
+        "speaker": "examiner",
+        "text": "Miért lényeges a feladatban, hogy p 3-nál nagyobb?"
+      },
+      {
+        "speaker": "candidate",
+        "text": "A p = 2 esetén p² − 1 = 3, a p = 3 esetén 8, egyik sem osztható 24-gyel. A bizonyításban kihasználtam, hogy p páratlan (ez p = 2-nél nem igaz), és hogy p nem osztható 3-mal (ez p = 3-nál nem igaz)."
+      }
+    ],
+    "notes": [
+      "Definíció és felépítés: az oszthatóság és a prímszám definíciója pontos (az 1 nem prím, mert csak egy osztója van), a számelmélet alaptétele az egyértelműséggel együtt szerepel, és ebből vezeti le az osztók számát és az lnko/lkkt szabályát.",
+      "Tétel és bizonyítás: Eukleidész indirekt bizonyítása teljes: a feltevés, az N szám, az alaptétel alkalmazása és az ellentmondás is ki van mondva.",
+      "Feladat és alkalmazás: a feladat megoldása minden lépést indokol (miért 8, miért 3, miért szorozhatók össze a relatív prímek), ellenőriz, a vizsgáztató kérdésére pedig megmutatja, hol használta a p > 3 feltételt; az alkalmazások több témakörhöz és a gyakorlathoz is kötődnek."
+    ]
+  }
+}

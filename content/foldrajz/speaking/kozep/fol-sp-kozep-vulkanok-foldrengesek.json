@@ -1,0 +1,83 @@
+{
+  "schemaVersion": 1,
+  "id": "fol-sp-kozep-vulkanok-foldrengesek",
+  "subject": "foldrajz",
+  "revision": 1,
+  "level": "kozep",
+  "source": "generated",
+  "topic": "kozetburok",
+  "title": "Vulkánok és földrengések a lemezszegélyek mentén",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "speaking",
+  "type": "termeszetfoldrajz-tetel",
+  "partNumber": 1,
+  "instructionsHu": "Mutassa be a vulkánosság és a földrengések kapcsolatát a kőzetlemezek mozgásával! Használja a mellékelt forrásokat, a topográfiai elemeket mutassa meg az atlaszban!",
+  "prompts": [
+    "Hogyan függ össze a vulkánok és a földrengések elhelyezkedése a lemezszegélyekkel?",
+    "Milyen vulkántípusokat ismer, és mitől függ a kitörés jellege?",
+    "Hogyan keletkezik a földrengés, és hogyan mérik az erősségét? Milyen veszélyeket okoz?",
+    "Topográfia: mutassa meg a Csendes-óceáni Tűzgyűrűt, az Andokat, Japánt, Izlandot, az Etnát és a Vezúvot!"
+  ],
+  "followUpQuestions": [
+    "Miért nincs Magyarországon működő vulkán?",
+    "Mivel lehet csökkenteni a földrengések okozta károkat?"
+  ],
+  "usefulPhrases": [
+    {
+      "en": "kőzetlemez",
+      "hu": "a kőzetburok nagy, egymáshoz képest mozgó darabja"
+    },
+    {
+      "en": "alábukás (szubdukció)",
+      "hu": "a nagyobb sűrűségű óceáni lemez a másik lemez alá nyomul"
+    },
+    {
+      "en": "rétegvulkán / pajzsvulkán",
+      "hu": "meredek, rétegzett, robbanásos kitörésű, illetve lapos, híg lávából épült vulkán"
+    },
+    {
+      "en": "hipocentrum, epicentrum",
+      "hu": "a rengésfészek a mélyben, illetve a fölötte lévő felszíni pont"
+    },
+    {
+      "en": "szökőár (cunami)",
+      "hu": "tenger alatti rengés vagy vulkánkitörés által keltett óriási hullám"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Térképvázlat (leírás)",
+      "text": "A világtérkép-vázlaton piros pontok jelölik a működő vulkánokat, sárga körök a nagy földrengések helyét. A jelek sűrűn sorakoznak a Csendes-óceán peremén, a Földközi-tenger térségétől a Himaláján át Indonéziáig, valamint az Atlanti-óceán közepén húzódó vonal mentén; a kontinensek belsejében, például Ausztrália vagy Brazília területén alig van jel."
+    },
+    {
+      "title": "Esetleírás",
+      "text": "2011. március 11-én Japán északkeleti partjai előtt 9-es erősségű tenger alatti földrengés pattant ki. Az általa keltett szökőár néhol 10 m-nél is magasabb volt, kb. 18 ezer ember halt meg vagy tűnt el, és súlyosan megrongálódott a fukusimai atomerőmű."
+    }
+  ],
+  "keyPoints": [
+    "A vulkánok és a földrengések többsége a kőzetlemezek határán, keskeny övekben helyezkedik el.",
+    "Távolodó lemezszegély (óceánközépi hátság, Izland): hasadékvulkánosság, bazaltos, híg láva, kisebb rengések.",
+    "Közeledő lemezszegély, alábukás (Andok, Japán): sűrűn folyó, gázdús magma, robbanásos kitörések, rétegvulkánok, nagy erejű rengések.",
+    "Forró folt (Hawaii) a lemezek belsejében is okozhat vulkánosságot.",
+    "Vulkántípusok: pajzsvulkán (lávaömlés) és rétegvulkán (láva- és hamurétegek).",
+    "A földrengés a kőzetekben felhalmozódó feszültség hirtelen felszabadulása; rengésfészek (hipocentrum) és rengésközpont (epicentrum).",
+    "Erősségét a Richter-skálán (magnitúdó), a felszíni pusztítást az intenzitásskálán mérik; veszély: épületomlás, szökőár, tűz.",
+    "Topográfia: Csendes-óceáni Tűzgyűrű, Andok, Japán, Izland, Etna, Vezúv."
+  ],
+  "speakingSeconds": 420,
+  "prepSeconds": 900,
+  "sampleAnswer": {
+    "turns": [
+      {
+        "speaker": "candidate",
+        "text": "A forrás térképvázlata jól mutatja, hogy a vulkánok és a nagy földrengések nem véletlenszerűen helyezkednek el, hanem keskeny övekben, a kőzetlemezek határán. A legfontosabb ilyen öv a Csendes-óceáni Tűzgyűrű, amelyet most körbemutatok az atlaszban: az Andoktól Alaszkán és Japánon át Új-Zélandig húzódik. A másik öv a Földközi-tengertől a Himaláján át Indonéziáig tart, a harmadik az Atlanti-óceán közepén futó hátság, amelynek kiemelkedő része Izland. A távolodó lemezszegélyeken, például Izlandon a lemezek eltávolodnak, a résen bazaltos, híg magma ömlik ki, ezért nyugodt lávaömlések és lapos pajzsvulkánok jellemzők. A közeledő lemezszegélyeken, ahol az óceáni lemez alábukik, mint az Andokban vagy Japánban, sűrűn folyó, gázdús magma keletkezik, a kitörések robbanásosak, és meredek rétegvulkánok épülnek. Európában ilyen az Etna Szicíliában és a Vezúv Nápoly mellett. A földrengés akkor pattan ki, amikor a lemezek mozgása miatt a kőzetekben felhalmozódott feszültség hirtelen elmozdulással szabadul fel. A kipattanás helye a mélyben a rengésfészek, fölötte a felszínen a rengésközpont. Az erősséget a Richter-skálán mérik. A forrásban leírt 2011-es japán földrengés 9-es erősségű volt, a tenger alatti rengés szökőárat keltett, amelynek kb. 18 ezer halálos áldozata és eltűntje volt, és megrongálta a fukusimai atomerőművet. A védekezés eszköze a földrengésbiztos építkezés, a szökőár-előrejelző rendszer és a lakosság felkészítése."
+      }
+    ],
+    "notes": [
+      "A felelet a térképvázlat leírásából indul, és a jelenségeket a lemezszegély-típusokkal magyarázza, így az összefüggések világosak.",
+      "Mindkét vulkántípust és a földrengés keletkezését, mérését pontos szakszavakkal mutatja be, és a forrás esetét (2011, Japán) beépíti.",
+      "A Tűzgyűrűt és a többi topográfiai elemet nemcsak megnevezi, hanem a térképen körbe is mutatja."
+    ]
+  }
+}

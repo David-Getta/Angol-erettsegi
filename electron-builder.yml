@@ -1,0 +1,111 @@
+# Érettségi felkészítő – asztali csomag (electron-builder).
+# Build: npm run desktop:build (csak kicsomagolt mappa) / npm run desktop:dist (telepítő az aktuális rendszerre).
+# A csomag: Electron-héj (desktop/dist/main.cjs, preload.cjs) + a Next.js standalone szerver és a tartalom
+# a resources/ mappában (scripts/desktop/build.ts rakja össze). A frissítés a GitHub Releases-ből jön (publish).
+appId: hu.davidgetta.erettsegi-felkeszito
+productName: Érettségi felkészítő
+# macOS-en az .app neve a productName (Finderben „Érettségi felkészítő”); Windowson és Linuxon a futtató ékezet nélküli.
+copyright: Copyright © 2026 David Getta
+artifactName: Erettsegi-felkeszito-${version}-${os}-${arch}.${ext}
+
+directories:
+  output: desktop/out
+  buildResources: desktop/build
+
+# Csak a két csomagolt fájl és a package.json kerül az app.asar-ba; a root node_modules NEM (a szerver
+# saját, Electron-ABI-ra épített node_modules-szel a resources/server alatt van).
+files:
+  - desktop/dist/main.cjs
+  - desktop/dist/preload.cjs
+  - package.json
+  - "!node_modules/**"
+extraResources:
+  # A szerver saját node_modules-ével együtt: az electron-builder a forrásmappa GYÖKERÉBEN lévő
+  # node_modules-t mindig kihagyja, ezért egy szinttel feljebbről, "server/**" szűrővel másoljuk.
+  - from: desktop/dist
+    to: .
+    filter: ["server/**/*"]
+  - from: content
+    to: content
+  - from: config
+    to: config
+  - from: drizzle
+    to: drizzle
+  - from: .claude/commands
+    to: .claude/commands
+  - from: desktop/build/icon.png
+    to: icon.png
+
+asar: true
+# Electron-biztosítékok: a NODE_OPTIONS környezeti változót a csomagolt app nem veszi figyelembe (egy fejlesztői
+# gépen beállított --import/--require macOS-en el is omlasztotta), a node-inspector kapcsolók tiltva;
+# a runAsNode marad, mert a beépített szervert ELECTRON_RUN_AS_NODE-dal indítjuk.
+electronFuses:
+  runAsNode: true
+  enableNodeOptionsEnvironmentVariable: false
+  enableNodeCliInspectArguments: false
+  resetAdHocDarwinSignature: true
+npmRebuild: false
+nodeGypRebuild: false
+buildDependenciesFromSource: false
+
+publish:
+  provider: github
+  owner: David-Getta
+  repo: Angol-erettsegi
+  releaseType: release
+
+win:
+  target:
+    - target: nsis
+      arch: [x64]
+  executableName: ErettsegiFelkeszito
+  icon: desktop/build/icon.png
+  artifactName: Erettsegi-felkeszito-Setup-${version}.${ext}
+  # nincs tanúsítvány – az első indításnál a Windows "Ismeretlen kiadó" figyelmeztetést ad (lásd TELEPITES.md)
+  verifyUpdateCodeSignature: false
+
+nsis:
+  # Segített (nem egykattintásos) telepítő: Tovább → Tovább → Telepítés, felhasználói szintű (nem kér rendszergazdát),
+  # így a "Frissítés most" gomb csendben is le tudja futtatni.
+  oneClick: false
+  perMachine: false
+  # nincs „mindenkinek / csak nekem” oldal és nincs jogosultságkérés: mindig a felhasználó alá települ
+  # (admin-fiókon is – desktop/build/installer.nsh), így a csendes önfrissítés sosem kér UAC-jóváhagyást
+  allowElevation: false
+  include: desktop/build/installer.nsh
+  allowToChangeInstallationDirectory: true
+  createDesktopShortcut: always
+  createStartMenuShortcut: true
+  shortcutName: Érettségi felkészítő
+  runAfterFinish: true
+  deleteAppDataOnUninstall: false
+  installerLanguages: [hu_HU, en_US]
+  language: "1038"
+  unicode: true
+
+mac:
+  target:
+    - target: dmg
+      arch: [arm64, x64]
+    - target: zip
+      arch: [arm64, x64]
+  category: public.app-category.education
+  icon: desktop/build/icon.png
+  artifactName: Erettsegi-felkeszito-${version}-mac-${arch}.${ext}
+  # nincs Apple Developer aláírás: ad-hoc aláírás ("-"), e nélkül az Apple Silicon-gép el sem indítaná;
+  # a frissítést a felhasználó tölti le (lásd TELEPITES.md)
+  identity: "-"
+  hardenedRuntime: false
+  gatekeeperAssess: false
+  notarize: false
+
+linux:
+  target:
+    - target: AppImage
+      arch: [x64]
+  executableName: ErettsegiFelkeszito
+  icon: desktop/build/icon.png
+  category: Education
+  artifactName: Erettsegi-felkeszito-${version}.${ext}
+  synopsis: Érettségi felkészítő – lokális gyakorlóapp

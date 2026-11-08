@@ -1,0 +1,90 @@
+{
+  "schemaVersion": 1,
+  "id": "tor-rd-kozep-nacizmus-igaz-hamis",
+  "subject": "tortenelem",
+  "revision": 1,
+  "level": "kozep",
+  "source": "generated",
+  "topic": "vilaghaboruk-kora",
+  "title": "A nemzetiszocialisták hatalomra jutása",
+  "createdAt": "2026-11-05",
+  "tags": [
+    "egyetemes"
+  ],
+  "section": "reading",
+  "type": "igaz-hamis",
+  "instructions": "A feladat a nemzetiszocialisták németországi hatalomra jutásával kapcsolatos. Döntse el a források és ismeretei alapján, hogy az állítások igazak (I) vagy hamisak (H)! A 0. a megoldott példa.",
+  "passage": {
+    "title": "Németország 1928–1933",
+    "sourceNote": "Az I. forrás a gyakorlás céljára írt, korhű stílusú szöveg; a II. forrás adatai kerekített éves átlagok.",
+    "blocks": [
+      {
+        "heading": "I. forrás – Egy berlini napilap tudósításából, 1933. március",
+        "text": "„Hindenburg elnök január 30-án Adolf Hitlert nevezte ki birodalmi kancellárrá. A február végi Reichstag-tűz után kiadott elnöki rendeletek felfüggesztették a sajtó- és a gyülekezési szabadságot, a kommunista képviselők nagy részét letartóztatták. A március 5-i választáson a nemzetiszocialista párt a szavazatok mintegy 44 százalékát szerezte meg. A kormány most olyan törvényt kíván elfogadtatni, amely négy évre felhatalmazza, hogy a parlament nélkül is hozhasson törvényeket.”"
+      },
+      {
+        "heading": "II. forrás – A munkanélküliek száma Németországban (éves átlag, kerekítve)",
+        "text": "1928: kb. 1,4 millió fő; 1932: kb. 5,6 millió fő."
+      }
+    ]
+  },
+  "example": {
+    "id": "0",
+    "kind": "tf",
+    "prompt": "Hitlert a köztársasági elnök nevezte ki kancellárrá.",
+    "answer": "T",
+    "category": "forras-ertelmezes",
+    "explanation": "Igaz. A forrás szerint „Hindenburg elnök január 30-án Adolf Hitlert nevezte ki birodalmi kancellárrá”; Hindenburg a Weimari Köztársaság elnöke volt."
+  },
+  "items": [
+    {
+      "id": "1",
+      "kind": "tf",
+      "prompt": "A forrás szerint a nemzetiszocialisták az 1933. márciusi választáson abszolút többséget szereztek.",
+      "answer": "F",
+      "category": "forras-ertelmezes",
+      "explanation": "Hamis. A párt a szavazatok „mintegy 44 százalékát” kapta, ez kevesebb, mint 50 %, tehát nem abszolút többség – ezért volt szüksége Hitlernek szövetségesekre és a felhatalmazási törvényre."
+    },
+    {
+      "id": "2",
+      "kind": "tf",
+      "prompt": "A tudósításban említett törvény a parlament helyett a kormánynak adott törvényhozói jogkört.",
+      "answer": "T",
+      "category": "fogalomhasznalat",
+      "explanation": "Igaz. A tervezett törvény (felhatalmazási törvény, 1933. március) négy évre felhatalmazta a kormányt, hogy a parlament nélkül alkosson törvényeket; ezzel megszűnt a hatalmi ágak szétválasztása, és kiépülhetett a diktatúra."
+    },
+    {
+      "id": "3",
+      "kind": "tf",
+      "prompt": "Az adatok szerint 1928 és 1932 között a munkanélküliek száma négyszeresére nőtt.",
+      "answer": "T",
+      "category": "adatleolvasas",
+      "explanation": "Igaz. 5,6 millió : 1,4 millió = 4, tehát a munkanélküliek száma négyszeresére nőtt."
+    },
+    {
+      "id": "4",
+      "kind": "tf",
+      "prompt": "A munkanélküliség növekedését elsősorban az 1929-ben kezdődött gazdasági világválság okozta.",
+      "answer": "T",
+      "category": "ok-okozat",
+      "explanation": "Igaz. Az 1929 októberében, a New York-i tőzsdekrachhal kezdődő világválság az amerikai hitelekre épülő német gazdaságot különösen súlyosan sújtotta; a tömeges munkanélküliség a szélsőséges pártok – köztük a nemzetiszocialisták – megerősödéséhez vezetett."
+    },
+    {
+      "id": "5",
+      "kind": "tf",
+      "prompt": "A Weimari Köztársaság alkotmányát az első világháború kitörése előtt fogadták el.",
+      "answer": "F",
+      "category": "evszam-kronologia",
+      "explanation": "Hamis. A Weimari Köztársaság a vesztes háború és a császárság bukása (1918. november) után jött létre; alkotmányát 1919-ben, Weimarban fogadta el a nemzetgyűlés."
+    },
+    {
+      "id": "6",
+      "kind": "tf",
+      "prompt": "A forrás szerint a Reichstag-tűz után kiadott rendeletek kiterjesztették a sajtószabadságot.",
+      "answer": "F",
+      "category": "forras-ertelmezes",
+      "explanation": "Hamis. A forrás szerint a rendeletek „felfüggesztették a sajtó- és a gyülekezési szabadságot”, vagyis korlátozták, nem kiterjesztették az alapjogokat."
+    }
+  ],
+  "suggestedMinutes": 6
+}

@@ -1,0 +1,119 @@
+{
+  "schemaVersion": 1,
+  "id": "dig-rd-emelt-tablazat-kepletek-eredmenye",
+  "subject": "digitalis-kultura",
+  "revision": 1,
+  "level": "emelt",
+  "source": "generated",
+  "topic": "tablazatkezeles",
+  "title": "Mi a képlet eredménye? – feltételes és kereső függvények",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "reading",
+  "type": "rovid-valasz",
+  "instructions": "A kérdések a következő munkalapra vonatkoznak. A1:D1: Név | Osztály | Pont | Idő (perc). A2:D7 adatai: Bodnár Eszter | 11.A | 78 | 42; Csordás Máté | 11.B | 65 | 55; Fehér Lili | 11.A | 92 | 38; Győri Bence | 11.C | 65 | 60; Kántor Réka | 11.B | 88 | 47; Lakatos Ádám | 11.A | 54 | 51. Írja be, milyen értéket ad a képlet! Minden képlet magyar és angol (zárójelben) alakban is szerepel. A 0. a példa.",
+  "example": {
+    "id": "0",
+    "kind": "text",
+    "prompt": "=MAX(C2:C7)   (angolul: =MAX(C2:C7))",
+    "answer": [
+      "92"
+    ],
+    "category": "kepletek-fuggvenyek",
+    "explanation": "92: a Pont oszlop (C2:C7) legnagyobb értéke Fehér Lilié.",
+    "maxWords": 2
+  },
+  "items": [
+    {
+      "id": "1",
+      "kind": "text",
+      "prompt": "=DARABTELI(B2:B7;\"11.A\")   (angolul: =COUNTIF(B2:B7,\"11.A\"))",
+      "answer": [
+        "3"
+      ],
+      "category": "kepletek-fuggvenyek",
+      "explanation": "3: a B oszlopban háromszor szerepel a „11.A” (Bodnár Eszter, Fehér Lili, Lakatos Ádám). A DARABTELI a feltételnek megfelelő cellákat számolja.",
+      "maxWords": 2
+    },
+    {
+      "id": "2",
+      "kind": "text",
+      "prompt": "=SZUMHA(B2:B7;\"11.B\";C2:C7)   (angolul: =SUMIF(B2:B7,\"11.B\",C2:C7))",
+      "answer": [
+        "153"
+      ],
+      "category": "kepletek-fuggvenyek",
+      "explanation": "153: a feltételt a B oszlopban vizsgálja, de a C oszlop megfelelő sorait adja össze: Csordás Máté 65 + Kántor Réka 88 = 153.",
+      "maxWords": 2
+    },
+    {
+      "id": "3",
+      "kind": "text",
+      "prompt": "=DARABHATÖBB(B2:B7;\"11.A\";C2:C7;\">=60\")   (angolul: =COUNTIFS(B2:B7,\"11.A\",C2:C7,\">=60\"))",
+      "answer": [
+        "2"
+      ],
+      "category": "kepletek-fuggvenyek",
+      "explanation": "2: azokat a sorokat számolja, ahol MINDKÉT feltétel teljesül: a 11.A-sok közül Eszter (78) és Lili (92) pontja legalább 60, Ádámé (54) nem.",
+      "maxWords": 2
+    },
+    {
+      "id": "4",
+      "kind": "text",
+      "prompt": "=FKERES(\"Győri Bence\";A2:D7;4;HAMIS)   (angolul: =VLOOKUP(\"Győri Bence\",A2:D7,4,FALSE))",
+      "answer": [
+        "60"
+      ],
+      "category": "kepletek-fuggvenyek",
+      "explanation": "60: az FKERES a tartomány ELSŐ oszlopában keresi a nevet, és a megtalált sor 4. oszlopából (Idő) ad értéket. A HAMIS (FALSE) pontos egyezést kér.",
+      "maxWords": 2
+    },
+    {
+      "id": "5",
+      "kind": "text",
+      "prompt": "=HA(ÉS(C4>90;D4<40);\"kiváló\";\"jó\")   (angolul: =IF(AND(C4>90,D4<40),\"kiváló\",\"jó\"))",
+      "answer": [
+        "kiváló"
+      ],
+      "category": "kepletek-fuggvenyek",
+      "explanation": "kiváló: C4 = 92 (> 90 igaz) és D4 = 38 (< 40 igaz); az ÉS csak akkor IGAZ, ha minden feltétele igaz, ezért a HA a második argumentumot adja.",
+      "maxWords": 2
+    },
+    {
+      "id": "6",
+      "kind": "text",
+      "prompt": "=SORSZÁM(C6;C2:C7)   (angolul: =RANK(C6,C2:C7))",
+      "answer": [
+        "2"
+      ],
+      "category": "kepletek-fuggvenyek",
+      "explanation": "2: a SORSZÁM alapértelmezésben csökkenő sorrendben rangsorol. A pontok sorrendje 92, 88, 78, 65, 65, 54, így C6 (88) a második. (Az azonos 65-ösök azonos helyezést kapnának.)",
+      "maxWords": 2
+    },
+    {
+      "id": "7",
+      "kind": "text",
+      "prompt": "=KEREKÍTÉS(ÁTLAG(D2:D7);1)   (angolul: =ROUND(AVERAGE(D2:D7),1))",
+      "answer": [
+        "48,8",
+        "48.8"
+      ],
+      "category": "kepletek-fuggvenyek",
+      "explanation": "48,8: az idők összege 42 + 55 + 38 + 60 + 47 + 51 = 293, átlaguk 293 / 6 = 48,833…, egy tizedesjegyre kerekítve 48,8.",
+      "maxWords": 2
+    },
+    {
+      "id": "8",
+      "kind": "text",
+      "prompt": "=INDEX(A2:A7;HOL.VAN(MIN(D2:D7);D2:D7;0))   (angolul: =INDEX(A2:A7,MATCH(MIN(D2:D7),D2:D7,0)))",
+      "answer": [
+        "Fehér Lili"
+      ],
+      "category": "kepletek-fuggvenyek",
+      "explanation": "Fehér Lili: a MIN(D2:D7) a legrövidebb idő (38), a HOL.VAN megadja, hányadik a tartományban (3.), az INDEX pedig az A2:A7 3. elemét adja. Így lehet a keresett oszloptól BALRA lévő értéket kiolvasni, amire az FKERES nem képes.",
+      "maxWords": 3
+    }
+  ],
+  "glossary": [],
+  "suggestedMinutes": 12
+}

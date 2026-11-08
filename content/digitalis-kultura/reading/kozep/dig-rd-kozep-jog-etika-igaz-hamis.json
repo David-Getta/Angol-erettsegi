@@ -1,0 +1,91 @@
+{
+  "schemaVersion": 1,
+  "id": "dig-rd-kozep-jog-etika-igaz-hamis",
+  "subject": "digitalis-kultura",
+  "revision": 1,
+  "level": "kozep",
+  "source": "generated",
+  "topic": "informacios-tarsadalom",
+  "title": "Szerzői jog, licencek, adatvédelem",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "reading",
+  "type": "igaz-hamis",
+  "instructions": "Döntse el, hogy az állítás igaz (T) vagy hamis (F)! A 0. a példa.",
+  "example": {
+    "id": "0",
+    "kind": "tf",
+    "prompt": "A szerzői jogi védelem a mű létrehozásával automatikusan keletkezik, ehhez nem kell regisztráció.",
+    "answer": "T",
+    "category": "informacios-tarsadalom-fogalom",
+    "explanation": "Igaz. A magyar szerzői jogi törvény szerint a szerzőt a mű megalkotásától fogva megilleti a védelem; nem kell bejelenteni, regisztrálni vagy © jelet tenni rá."
+  },
+  "items": [
+    {
+      "id": "1",
+      "kind": "tf",
+      "prompt": "Ha egy fénykép szabadon elérhető az interneten, akkor bármilyen célra szabadon felhasználható.",
+      "answer": "F",
+      "category": "informacios-tarsadalom-fogalom",
+      "explanation": "Hamis. Az elérhetőség nem jelent engedélyt: a képnek is van szerzője, akinek a jogai a nyilvános közzététel után is megmaradnak. Csak akkor használhatod, ha a licence megengedi (pl. Creative Commons), vagy engedélyt kaptál."
+    },
+    {
+      "id": "2",
+      "kind": "tf",
+      "prompt": "Egy CC BY-NC licencű művet kereskedelmi célra a szerző külön engedélye nélkül nem lehet felhasználni.",
+      "answer": "T",
+      "category": "informacios-tarsadalom-fogalom",
+      "explanation": "Igaz. Az NC (NonCommercial) feltétel kizárja a kereskedelmi felhasználást; a BY pedig azt jelenti, hogy a szerzőt minden felhasználásnál meg kell nevezni."
+    },
+    {
+      "id": "3",
+      "kind": "tf",
+      "prompt": "A freeware (ingyenes) program mindig nyílt forráskódú.",
+      "answer": "F",
+      "category": "informacios-tarsadalom-fogalom",
+      "explanation": "Hamis. A freeware csak azt jelenti, hogy a program ingyen használható; a forráskódja általában nem hozzáférhető, és nem módosítható. A nyílt forráskódú (open source) szoftver forráskódja megismerhető és a licenc szerint módosítható."
+    },
+    {
+      "id": "4",
+      "kind": "tf",
+      "prompt": "A GDPR szerint személyes adatot csak jogalap (például az érintett hozzájárulása vagy jogszabályi kötelezettség) alapján szabad kezelni.",
+      "answer": "T",
+      "category": "informacios-tarsadalom-fogalom",
+      "explanation": "Igaz. Az EU általános adatvédelmi rendelete (GDPR) szerint minden adatkezeléshez jogalap kell; a hozzájárulás csak az egyik lehetséges jogalap (további pl. szerződés teljesítése, jogi kötelezettség)."
+    },
+    {
+      "id": "5",
+      "kind": "tf",
+      "prompt": "Az adathalász (phishing) üzenet jellemzően arra akarja rávenni a címzettet, hogy egy hamis oldalon adja meg a jelszavát vagy a bankkártyaadatait.",
+      "answer": "T",
+      "category": "halozat-biztonsag",
+      "explanation": "Igaz. Az adathalász üzenet megbízhatónak tűnő feladó (bank, futárszolgálat, iskola) nevében sürgetve egy hamis weboldalra csal. Védekezés: ellenőrizd a feladó címét és a link valódi címét, és sose add meg a jelszavad e-mailben kapott linken."
+    },
+    {
+      "id": "6",
+      "kind": "tf",
+      "prompt": "Ha egy műből rövid részletet idézünk, a forrást és a szerzőt nem kell megjelölni.",
+      "answer": "F",
+      "category": "informacios-tarsadalom-fogalom",
+      "explanation": "Hamis. Idézni a cél által indokolt terjedelemben szabad, de a forrás és a szerző megjelölése kötelező; enélkül az idézet plágium."
+    },
+    {
+      "id": "7",
+      "kind": "tf",
+      "prompt": "A közösségi oldalra feltöltött fénykép a saját törlésünk után biztosan mindenhonnan eltűnik.",
+      "answer": "F",
+      "category": "informacios-tarsadalom-fogalom",
+      "explanation": "Hamis. Mások lementhették, megoszthatták, és másolatok maradhatnak a szolgáltatónál vagy más oldalakon is. A digitális lábnyomunk nehezen törölhető, ezért feltöltés előtt kell gondolkodni."
+    },
+    {
+      "id": "8",
+      "kind": "tf",
+      "prompt": "A netikett az internetes kommunikáció illemszabályainak összessége.",
+      "answer": "T",
+      "category": "informacios-tarsadalom-fogalom",
+      "explanation": "Igaz. A netikett (net + etikett) az online viselkedés íratlan szabályai: pl. nem írunk csupa nagybetűvel (az kiabálásnak számít), értelmes tárgyat adunk a levélnek, nem továbbítunk láncleveleket, tiszteljük mások magánszféráját."
+    }
+  ],
+  "glossary": [],
+  "suggestedMinutes": 8
+}

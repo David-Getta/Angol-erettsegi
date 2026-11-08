@@ -1,0 +1,125 @@
+{
+  "schemaVersion": 1,
+  "id": "dig-rd-emelt-kepformatumok-parositas",
+  "subject": "digitalis-kultura",
+  "revision": 1,
+  "level": "emelt",
+  "source": "generated",
+  "topic": "prezentacio-grafika",
+  "title": "Képformátumok és színmodellek",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "reading",
+  "type": "parositas",
+  "instructions": "Párosítsa a leírásokat a fogalmakkal (A–J)! Minden betűt legfeljebb egyszer használhat, két betű felesleges. A 0. a példa.",
+  "options": [
+    {
+      "key": "A",
+      "text": "BMP"
+    },
+    {
+      "key": "B",
+      "text": "CMYK"
+    },
+    {
+      "key": "C",
+      "text": "felbontás (ppi/dpi)"
+    },
+    {
+      "key": "D",
+      "text": "GIF"
+    },
+    {
+      "key": "E",
+      "text": "HSL"
+    },
+    {
+      "key": "F",
+      "text": "JPEG (JPG)"
+    },
+    {
+      "key": "G",
+      "text": "PNG"
+    },
+    {
+      "key": "H",
+      "text": "RGB"
+    },
+    {
+      "key": "I",
+      "text": "SVG"
+    },
+    {
+      "key": "J",
+      "text": "színmélység"
+    }
+  ],
+  "example": {
+    "id": "0",
+    "kind": "match",
+    "prompt": "Veszteséges tömörítésű rasztergrafikus formátum, elsősorban fényképekhez; átlátszóságot nem tárol.",
+    "answer": "F",
+    "category": "prezentacio-weblap-hiba",
+    "explanation": "F – JPEG. A veszteséges tömörítés az emberi szem számára kevésbé feltűnő részleteket elhagyja, így a fotók fájlmérete kicsi lesz; minden újramentés tovább ronthatja a minőséget."
+  },
+  "items": [
+    {
+      "id": "1",
+      "kind": "match",
+      "prompt": "Veszteségmentes tömörítésű rasztergrafikus formátum, amely 24 bites színeket és fokozatos átlátszóságot (alfa-csatornát) is tárol; logókhoz, képernyőképekhez ideális.",
+      "answer": "G",
+      "category": "prezentacio-weblap-hiba",
+      "explanation": "G – PNG. Veszteségmentes, így az éles határvonalak (szöveg, logó) nem mosódnak el, és az alfa-csatorna miatt az átlátszó háttér is megmarad. A GIF legfeljebb 256 színt és csak teljes átlátszóságot ismer."
+    },
+    {
+      "id": "2",
+      "kind": "match",
+      "prompt": "Legfeljebb 256 színt (palettát) használó formátum, amely egyszerű animációt is tárolhat.",
+      "answer": "D",
+      "category": "prezentacio-weblap-hiba",
+      "explanation": "D – GIF. Palettás (8 bites) formátum, ezért fotókhoz nem jó, de egyszerű ábrákhoz és rövid animációkhoz igen."
+    },
+    {
+      "id": "3",
+      "kind": "match",
+      "prompt": "XML-alapú vektorgrafikus formátum: weblapon minőségromlás nélkül tetszőlegesen nagyítható.",
+      "answer": "I",
+      "category": "prezentacio-weblap-hiba",
+      "explanation": "I – SVG (Scalable Vector Graphics). Az alakzatokat (vonal, kör, görbe) matematikailag írja le, ezért nem „kockásodik” nagyításkor, és a böngészők közvetlenül megjelenítik."
+    },
+    {
+      "id": "4",
+      "kind": "match",
+      "prompt": "Additív színkeverés vörös, zöld és kék fénnyel; a monitorok és a projektorok színmodellje.",
+      "answer": "H",
+      "category": "prezentacio-weblap-hiba",
+      "explanation": "H – RGB. A három alapszín fényét összeadva keveri a színeket (mindhárom teljes erővel: fehér). Weblapon pl. #FF8800 vagy rgb(255, 136, 0) alakban adjuk meg."
+    },
+    {
+      "id": "5",
+      "kind": "match",
+      "prompt": "Szubtraktív színmodell: cián, bíbor, sárga és fekete festék; a nyomdai négyszínnyomás alapja.",
+      "answer": "B",
+      "category": "prezentacio-weblap-hiba",
+      "explanation": "B – CMYK. A festékek elnyelik a fény egy részét (kivonó keverés). Nyomdába szánt kiadványnál ebben a színmodellben érdemes dolgozni, mert az RGB egyes színei nem nyomtathatók."
+    },
+    {
+      "id": "6",
+      "kind": "match",
+      "prompt": "Egy képpont színének tárolására használt bitek száma; 24 bitnél kb. 16,7 millió szín.",
+      "answer": "J",
+      "category": "prezentacio-weblap-hiba",
+      "explanation": "J – színmélység. n biten 2ⁿ szín ábrázolható: 24 bit = 2²⁴ = 16 777 216 szín. A fájlméret (tömörítés nélkül) = szélesség · magasság · színmélység bit, ezt 8-cal osztva kapjuk a bájtokat."
+    },
+    {
+      "id": "7",
+      "kind": "match",
+      "prompt": "Egy hüvelyknyi (2,54 cm) hosszra jutó képpontok vagy nyomtatott pontok száma; ettől függ, mekkora méretben nyomtatható jó minőségben a kép.",
+      "answer": "C",
+      "category": "prezentacio-weblap-hiba",
+      "explanation": "C – felbontás (ppi/dpi). Nyomtatáshoz általában 300 ppi az ajánlott; egy 3000 pixel széles kép így 10 hüvelyk (kb. 25 cm) szélesen nyomtatható jó minőségben."
+    }
+  ],
+  "glossary": [],
+  "suggestedMinutes": 8
+}

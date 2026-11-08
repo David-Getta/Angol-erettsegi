@@ -1,0 +1,282 @@
+{
+  "schemaVersion": 1,
+  "id": "fiz-gr-meres-kiertekeles",
+  "subject": "fizika",
+  "revision": 1,
+  "level": "kozep",
+  "source": "generated",
+  "topic": "nyelvtan",
+  "title": "Mérések és kísérletek kiértékelése, hibabecslés",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "grammar",
+  "type": "lesson",
+  "category": "meres-kiertekeles",
+  "summaryHu": "A méréselemző feladatban és a szóbeli kísérleti részében (közép 20 pont, emelt 20 pont) nem elég a számolás: le kell írni a mérési elvet, a mérési adatokból helyes következtetést kell levonni, és meg kell becsülni a mérés hibáját. A leggyakoribb hiba a hiányzó hibabecslés és az, hogy a következtetés nem a mért adatokból, hanem a tankönyvből jön.",
+  "rules": [
+    {
+      "title": "A mérési elv",
+      "explanation": "Mondd meg, melyik összefüggés alapján méred a keresett mennyiséget, és melyik mennyiségeket méred közvetlenül. Például g-t fonálingával: T = 2π·√(l/g) → g = 4π²·l/T²; közvetlenül l-t és T-t mérjük.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "Rugóállandó: F = D·Δl → D = F/Δl",
+          "hu": "Mérjük: F (súly), Δl (vonalzó)."
+        },
+        {
+          "en": "Fajhő keveréssel: c₁·m₁·ΔT₁ = c₂·m₂·ΔT₂",
+          "hu": "Mérjük: tömegek, hőmérsékletek."
+        }
+      ]
+    },
+    {
+      "title": "Többszöri mérés, átlag",
+      "explanation": "A véletlen hibák csökkentésére minden mérést többször végzünk el, és az átlagot használjuk. Rövid időtartamoknál sok periódust mérünk egyszerre (10 lengés), mert a stopper kezelésének hibája (kb. 0,1–0,2 s) így eloszlik.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "10 lengés: 20,1 s → T = 2,01 s",
+          "hu": "A ±0,2 s-os reakcióidő-hiba a T-ben csak ±0,02 s."
+        },
+        {
+          "en": "Három mérés átlaga: (1,98 + 2,03 + 2,01)/3 = 2,01 s",
+          "hu": "A kiugró értékeket ellenőrizd újraméréssel."
+        }
+      ]
+    },
+    {
+      "title": "Abszolút és relatív hiba",
+      "explanation": "Az abszolút hiba (Δx) a mért érték bizonytalansága egységben (pl. ±1 mm), a relatív hiba Δx/x, általában százalékban. Ugyanakkora abszolút hiba kis mért értéknél nagy relatív hibát jelent – ezért érdemes nagy értékeket (hosszú ingát, nagy megnyúlást, sok beütést) mérni.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "Δl = ±1 mm, l = 2,1 cm → kb. 5 %; l = 9,9 cm → kb. 1 %",
+          "hu": "A kis megnyúlás mérése pontatlanabb."
+        },
+        {
+          "en": "N = 100 beütés → statisztikus hiba √100 = 10, azaz 10 %",
+          "hu": "N = 10 000 → 1 %."
+        }
+      ]
+    },
+    {
+      "title": "Grafikus kiértékelés",
+      "explanation": "Az összetartozó értékpárokat ábrázold (tengelyek egységgel), húzz kiegyenlítő egyenest a pontok közé, és a meredekségét két, egymástól távoli pontjából számold. Az egyenes illeszkedése mutatja, hogy a feltételezett összefüggés teljesül-e; a kilógó pont mérési hibára utalhat.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "U–I pontok egy origón átmenő egyenesen → Ohm törvénye teljesül",
+          "hu": "Meredekség (U/I) = R."
+        },
+        {
+          "en": "T²–l egyenes nem megy át pontosan az origón",
+          "hu": "Az ingahossz mérésében állandó (rendszeres) hiba van – a meredekség ettől még jó."
+        }
+      ]
+    },
+    {
+      "title": "Hibaterjedés",
+      "explanation": "Szorzatban és hányadosban a relatív hibák összeadódnak; hatványnál a kitevővel szorzódnak: g = 4π²·l/T² esetén Δg/g ≈ Δl/l + 2·ΔT/T. Összegnél és különbségnél az abszolút hibák adódnak össze – ezért nagy a hibája két közeli érték különbségének (pl. nettó beütésszám a háttér közelében).",
+      "emeltOnly": true,
+      "examples": [
+        {
+          "en": "l = 1,000 ± 0,002 m, T = 2,01 ± 0,02 s → Δg/g ≈ 0,2 % + 2 % ≈ 2,2 %",
+          "hu": "g = (9,8 ± 0,2) m/s²."
+        },
+        {
+          "en": "Nettó beütés: (64 ± 8) − (30 ± 5) = 34 ± 13",
+          "hu": "A különbség relatív hibája kb. 40 %."
+        }
+      ]
+    }
+  ],
+  "commonMistakes": [
+    {
+      "wrong": "A mérés szerint g = 9,81 m/s², mert ez a pontos érték.",
+      "right": "A mérés szerint g = (9,8 ± 0,2) m/s², ami a hibahatáron belül egyezik az irodalmi 9,81 m/s²-es értékkel.",
+      "why": "A mérés eredményét a saját adatokból kell megadni, hibával; az irodalmi érték csak összevetésre szolgál."
+    },
+    {
+      "wrong": "Egy lengés idejét mértem le stopperrel: T = 2,1 s.",
+      "right": "Tíz lengés idejét mértem (20,1 s), így T = 2,01 s.",
+      "why": "Egyetlen lengésnél a reakcióidő hibája a mért idő 10 %-a is lehet."
+    },
+    {
+      "wrong": "A hiba oka: rosszul mértem.",
+      "right": "Hibaforrás: a vonalzó leolvasásának ±1 mm-es bizonytalansága, ami a 2 cm-es megnyúlásnál kb. 5 % relatív hiba.",
+      "why": "A hibaforrást konkrétan meg kell nevezni, és lehetőleg számszerűen becsülni."
+    },
+    {
+      "wrong": "A pontokat töröttvonallal összekötöm, és a két utolsó pontból számolom a meredekséget.",
+      "right": "Kiegyenlítő egyenest húzok, és annak két távoli pontjából számolom a meredekséget.",
+      "why": "A kiegyenlítő egyenes minden mérést figyelembe vesz, a véletlen hibák így kiátlagolódnak."
+    }
+  ],
+  "examTips": [
+    "Méréselemzés: a kérdések általában ezt a sorrendet követik – mérési elv, kiértékelés (számolás vagy grafikon), következtetés, hibák és javítási javaslat. Mindegyikre külön válaszolj.",
+    "Szóbeli: a kísérlet bemutatásánál mondd el az eszközöket, a menetet, a mért adatokat, a kiértékelést és a hibaforrásokat – az emelt szinten a jegyzőkönyv és a hibabecslés külön pontot ér.",
+    "A következtetést mindig a saját adataidból fogalmazd meg („A 2s/t² hányados közel állandó, tehát s ~ t².”)."
+  ],
+  "practice": [
+    {
+      "id": "1",
+      "kind": "choice",
+      "prompt": "Miért mérjük a fonálinga 10 lengésének idejét egy lengés helyett?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Mert az inga 10 lengés után megáll."
+        },
+        {
+          "key": "B",
+          "text": "Mert így a kitérés kisebb lesz."
+        },
+        {
+          "key": "C",
+          "text": "Mert a lengésidő a lengések számától függ."
+        },
+        {
+          "key": "D",
+          "text": "Mert a stopper kezelésének (állandó nagyságú) hibája így a lengésidőnek csak tizedrészét terheli."
+        }
+      ],
+      "answer": "D",
+      "category": "meres-kiertekeles",
+      "explanation": "Helyes: D. A reakcióidő miatti hiba (kb. 0,2 s) független a mért időtartam hosszától; 10 lengésnél ez a teljes időre jut, így egy lengés idejének hibája kb. 0,02 s.",
+      "wrongOptions": {
+        "A": "A kis csillapítás miatt az inga sokáig leng; nem ezért mérünk tízet.",
+        "B": "A kitérést a mérés kezdete határozza meg, a mért lengések száma nem változtatja.",
+        "C": "A lengésidő a lengések számától független (állandó)."
+      }
+    },
+    {
+      "id": "2",
+      "kind": "choice",
+      "prompt": "Egy diák a megnyúlást ±1 mm pontossággal tudja leolvasni. Melyik mérésnek legnagyobb a relatív hibája?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Δl = 2,0 cm"
+        },
+        {
+          "key": "B",
+          "text": "Δl = 5,0 cm"
+        },
+        {
+          "key": "C",
+          "text": "Δl = 8,0 cm"
+        },
+        {
+          "key": "D",
+          "text": "Δl = 10,0 cm"
+        }
+      ],
+      "answer": "A",
+      "category": "meres-kiertekeles",
+      "explanation": "Helyes: A. A relatív hiba Δx/x: 1 mm / 20 mm = 5 %, míg 10 cm-nél 1 mm / 100 mm = 1 %. Ugyanakkora abszolút hiba kis mért értéknél relatíve nagyobb.",
+      "wrongOptions": {
+        "B": "1 mm / 50 mm = 2 %, kisebb, mint a 2,0 cm-es mérésé.",
+        "C": "1 mm / 80 mm ≈ 1,3 %.",
+        "D": "1 mm / 100 mm = 1 %, ennek a legkisebb a relatív hibája."
+      }
+    },
+    {
+      "id": "3",
+      "kind": "choice",
+      "prompt": "Egy diák U–I mérési pontjai egy origón átmenő egyenes körül szóródnak, egy pont kivételével, amely messze van az egyenestől. Mi a helyes eljárás?",
+      "options": [
+        {
+          "key": "A",
+          "text": "A kilógó pontot is belevesszük, és töröttvonallal kötjük össze a pontokat."
+        },
+        {
+          "key": "B",
+          "text": "A kilógó pont alapján új törvényt fogalmazunk meg."
+        },
+        {
+          "key": "C",
+          "text": "Az egész mérést elvetjük."
+        },
+        {
+          "key": "D",
+          "text": "Ellenőrizzük újraméréssel; ha mérési hiba volt, a kiegyenlítő egyenest a többi pontra illesztjük, és a hibát a jegyzőkönyvben jelezzük."
+        }
+      ],
+      "answer": "D",
+      "category": "meres-kiertekeles",
+      "explanation": "Helyes: D. Az egyetlen kilógó pont valószínűleg leolvasási vagy beállítási hiba; újraméréssel ellenőrizzük, és a kiértékelést a megbízható pontokra illesztett egyenesből végezzük, a döntést indokolva.",
+      "wrongOptions": {
+        "A": "A töröttvonal a mérési hibákat is „ábrázolja”, nem a törvényszerűséget.",
+        "B": "Egyetlen, a többinek ellentmondó pontból nem lehet törvényt levonni.",
+        "C": "Egy hibás pont miatt nem kell az egész mérést elvetni."
+      }
+    },
+    {
+      "id": "4",
+      "kind": "choice",
+      "prompt": "A g = 4π²·l/T² képletben az l relatív hibája 0,5 %, a T relatív hibája 1 %. Mekkora közelítőleg g relatív hibája?",
+      "options": [
+        {
+          "key": "A",
+          "text": "0,5 %"
+        },
+        {
+          "key": "B",
+          "text": "1,5 %"
+        },
+        {
+          "key": "C",
+          "text": "2,5 %"
+        },
+        {
+          "key": "D",
+          "text": "1 %"
+        }
+      ],
+      "answer": "C",
+      "category": "meres-kiertekeles",
+      "explanation": "Helyes: C. Szorzatnál és hányadosnál a relatív hibák összeadódnak, a hatványkitevővel szorozva: Δg/g ≈ Δl/l + 2·ΔT/T = 0,5 % + 2 · 1 % = 2,5 %.",
+      "wrongOptions": {
+        "A": "Csak az l hibáját vette figyelembe.",
+        "B": "A T hibáját nem szorozta 2-vel, pedig T a négyzeten szerepel.",
+        "D": "Csak a T hibáját vette figyelembe, és azt sem a kitevővel szorozva."
+      }
+    },
+    {
+      "id": "5",
+      "kind": "choice",
+      "prompt": "Egy kísérletben a 2s/t² hányados öt mérésből 0,48; 0,51; 0,50; 0,49; 0,52 m/s². Melyik a helyes következtetés?",
+      "options": [
+        {
+          "key": "A",
+          "text": "A gyorsulás minden mérésben más, tehát a mozgás nem egyenletesen gyorsuló."
+        },
+        {
+          "key": "B",
+          "text": "A hányados a mérési hibán belül állandó (kb. 0,50 m/s²), tehát s ~ t², a mozgás egyenletesen gyorsuló."
+        },
+        {
+          "key": "C",
+          "text": "A mérés hibás, mert a hányadosok nem pontosan egyformák."
+        },
+        {
+          "key": "D",
+          "text": "A hányados nő, tehát a gyorsulás nő."
+        }
+      ],
+      "answer": "B",
+      "category": "meres-kiertekeles",
+      "explanation": "Helyes: B. Az értékek kb. ±4 %-on belül szóródnak az átlag (0,50 m/s²) körül, ami az időmérés hibájával magyarázható; rendszeres változás nincs, ezért a gyorsulás állandónak tekinthető.",
+      "wrongOptions": {
+        "A": "A kis, véletlenszerű ingadozás mérési hiba, nem a mozgás jellegének változása.",
+        "C": "Mérési eredmények sosem pontosan egyformák; a kérdés az, hogy az eltérés a hibahatáron belül van-e.",
+        "D": "Az értékek nem nőnek rendszeresen (0,48 → 0,51 → 0,50 → 0,49 → 0,52), csak ingadoznak."
+      }
+    }
+  ],
+  "relatedCategories": [
+    "grafikon",
+    "szamolas",
+    "indoklas-felepites"
+  ]
+}

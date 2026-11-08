@@ -1,0 +1,82 @@
+{
+  "schemaVersion": 1,
+  "id": "fol-lu-kozep-kozetburok-igaz-hamis",
+  "subject": "foldrajz",
+  "revision": 1,
+  "level": "kozep",
+  "source": "generated",
+  "topic": "kozetburok",
+  "title": "Lemeztektonika és kőzetek – igaz vagy hamis?",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "language-use",
+  "type": "igaz-hamis",
+  "instructions": "Döntse el, hogy igazak (I) vagy hamisak (H) az alábbi állítások! A 0. a megoldott példa.",
+  "example": {
+    "id": "0",
+    "kind": "tf",
+    "prompt": "A kőzetburok (litoszféra) a földkéregből és a felső köpeny legfelső, merev részéből áll.",
+    "answer": "T",
+    "category": "fogalomhasznalat",
+    "explanation": "Igaz: a kőzetburok a földkéreg és a felső köpeny legkülső, szilárd része; ez darabolódik kőzetlemezekre, amelyek a képlékeny asztenoszférán mozognak."
+  },
+  "items": [
+    {
+      "id": "1",
+      "kind": "tf",
+      "prompt": "Az óceáni kőzetlemez alábukása (szubdukciója) a távolodó lemezszegélyeken megy végbe.",
+      "answer": "F",
+      "category": "termeszeti-folyamat",
+      "explanation": "Hamis: az alábukás a közeledő (ütköző) lemezszegélyeken történik, ahol a nagyobb sűrűségű óceáni lemez a másik alá nyomul. A távolodó lemezszegélyeken (óceánközépi hátság) éppen új kéreg képződik."
+    },
+    {
+      "id": "2",
+      "kind": "tf",
+      "prompt": "Az óceánközépi hátságok mentén a feláramló magmából új óceáni kéreg képződik.",
+      "answer": "T",
+      "category": "termeszeti-folyamat",
+      "explanation": "Igaz: a hátságok a távolodó lemezszegélyek; a hasadékban feltörő bazaltos magma megszilárdulva folyamatosan új óceáni kérget hoz létre (óceánfenék-szétterülés)."
+    },
+    {
+      "id": "3",
+      "kind": "tf",
+      "prompt": "A bazalt mélységi magmás kőzet.",
+      "answer": "F",
+      "category": "fogalomhasznalat",
+      "explanation": "Hamis: a bazalt kiömlési (vulkáni) magmás kőzet, a felszínre ömlő láva gyors lehűlésével keletkezik, ezért apró szemcsés. Mélységi magmás kőzet például a gránit."
+    },
+    {
+      "id": "4",
+      "kind": "tf",
+      "prompt": "A mészkő üledékes kőzet, amely nagyrészt élőlények mészvázából halmozódott fel.",
+      "answer": "T",
+      "category": "fogalomhasznalat",
+      "explanation": "Igaz: a mészkő többnyire biogén (szerves eredetű) üledékes kőzet: a tengerben élt kagylók, csigák, korallok és mészvázas egysejtűek vázából rakódott le, de vegyi úton is kiválhat."
+    },
+    {
+      "id": "5",
+      "kind": "tf",
+      "prompt": "A Himalája két óceáni kőzetlemez ütközésével jött létre.",
+      "answer": "F",
+      "category": "termeszeti-folyamat",
+      "explanation": "Hamis: a Himalája két kontinentális lemez, az Indiai- és az Eurázsiai-lemez ütközésével gyűrődött fel. Két óceáni lemez ütközésénél szigetív (pl. Japán) jön létre."
+    },
+    {
+      "id": "6",
+      "kind": "tf",
+      "prompt": "A Mátra és a Börzsöny az újidő harmadidőszakában működő vulkánok maradványa.",
+      "answer": "T",
+      "category": "termeszeti-folyamat",
+      "explanation": "Igaz: az Északi-középhegység vulkáni hegységei (Börzsöny, Mátra, Tokaji-hegység) a harmadidőszak (miocén) andezites vulkánosságával keletkeztek, azóta lepusztultak."
+    },
+    {
+      "id": "7",
+      "kind": "tf",
+      "prompt": "A földrengés fészke (hipocentruma) a felszínen van, közvetlenül a rengés kipattanásának helye fölött.",
+      "answer": "F",
+      "category": "fogalomhasznalat",
+      "explanation": "Hamis: a rengésfészek (hipocentrum) a mélyben van, ahol a kőzetek elmozdulnak. A fölötte lévő felszíni pont a rengésközpont (epicentrum)."
+    }
+  ],
+  "suggestedMinutes": 6
+}

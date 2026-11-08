@@ -1,0 +1,80 @@
+{
+  "schemaVersion": 1,
+  "id": "kem-sp-kozep-hidrogen-peroxid-b-tetel",
+  "subject": "kemia",
+  "revision": 1,
+  "level": "kozep",
+  "source": "generated",
+  "topic": "reakciok",
+  "title": "A hidrogén-peroxid bomlása barnakő hatására",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "speaking",
+  "type": "b-tetel",
+  "partNumber": 2,
+  "instructionsHu": "Értelmezze a leírt kísérletet! Ismertesse a tapasztalatokat, azonosítsa a fejlődő gázt, írja fel a reakció egyenletét, és magyarázza meg a barnakő szerepét!",
+  "prompts": [
+    "Mit tapasztalunk a két kémcsőben?",
+    "Milyen gáz fejlődik, és hogyan mutatható ki?",
+    "Mi a barnakő szerepe? Mit bizonyít a szűrés és a mérés?",
+    "Írja fel a reakció egyenletét, és nevezze meg a reakció típusát!"
+  ],
+  "followUpQuestions": [
+    "Változik-e a fejlődő oxigén térfogata, ha kétszer annyi barnakövet szórunk az oldatba?"
+  ],
+  "usefulPhrases": [
+    {
+      "en": "parázsló gyújtópálca lángra lobban",
+      "hu": "Az oxigén kimutatása."
+    },
+    {
+      "en": "2 H₂O₂ → 2 H₂O + O₂",
+      "hu": "A hidrogén-peroxid bomlása."
+    },
+    {
+      "en": "diszproporció",
+      "hu": "Ugyanaz az elem oxidálódik és redukálódik is (O: −1 → −2 és 0)."
+    },
+    {
+      "en": "katalizátor",
+      "hu": "Gyorsít, csökkenti az aktiválási energiát, változatlanul visszamarad."
+    },
+    {
+      "en": "aktiválási energia",
+      "hu": "A reakció beindulásához szükséges minimális energia."
+    },
+    {
+      "en": "kontrollkísérlet",
+      "hu": "A katalizátor nélküli kémcső mutatja meg, hogy a változást a barnakő okozza."
+    }
+  ],
+  "sources": [
+    {
+      "title": "A kísérlet leírása",
+      "text": "Két kémcsőbe 3–3 cm³ 3 %-os hidrogén-peroxid-oldatot öntünk. Az elsőhöz nem adunk semmit, a másodikba késhegynyi, előzőleg lemért tömegű barnakőport (mangán-dioxid, MnO₂) szórunk. Mindkét kémcső szájához parázsló gyújtópálcát tartunk. A reakció végén a második kémcső tartalmát leszűrjük, a szűrőpapíron visszamaradó fekete port megszárítjuk és megmérjük: tömege megegyezik a beszórt barnakőével."
+    }
+  ],
+  "keyPoints": [
+    "Az első kémcsőben szemmel látható változás nincs (a bomlás nagyon lassú), a másodikban heves pezsgés, gázfejlődés indul.",
+    "A parázsló gyújtópálca a második kémcsőnél lángra lobban: a fejlődő gáz oxigén.",
+    "2 H₂O₂ → 2 H₂O + O₂",
+    "A reakció bomlás, egyben redoxireakció (diszproporció): az oxigén oxidációs száma −1-ről −2-re és 0-ra változik.",
+    "A barnakő katalizátor: csökkenti az aktiválási energiát, gyorsítja a reakciót, de maga nem fogy el – tömege a reakció után változatlan.",
+    "A katalizátor nem változtatja meg a reakcióhőt és a keletkező termék mennyiségét, csak a reakció sebességét."
+  ],
+  "speakingSeconds": 330,
+  "prepSeconds": 450,
+  "sampleAnswer": {
+    "turns": [
+      {
+        "speaker": "candidate",
+        "text": "Az első kémcsőben, ahová csak hidrogén-peroxid-oldatot öntöttünk, nem látunk változást, legfeljebb néhány apró buborékot, és a parázsló gyújtópálca nem lobban lángra. A második kémcsőben a barnakőpor beszórása után azonnal heves pezsgés indul, a kémcső kissé felmelegszik, és a szájához tartott parázsló gyújtópálca lángra lobban. Ez bizonyítja, hogy a fejlődő gáz oxigén, amely táplálja az égést.\nA hidrogén-peroxid vízzé és oxigénné bomlik:\n2 H₂O₂ → 2 H₂O + O₂\nA reakció bomlás, ugyanakkor redoxireakció is: a hidrogén-peroxidban az oxigén oxidációs száma −1, a vízben −2-re csökken, az oxigéngázban 0-ra nő. Ugyanannak az elemnek az atomjai oxidálódnak és redukálódnak is, ezért ez diszproporció. A bomlás exoterm folyamat, ezért melegszik fel a kémcső.\nA hidrogén-peroxid szobahőmérsékleten magától is bomlik, de nagyon lassan, mert nagy a reakció aktiválási energiája. A barnakő, vagyis a mangán-dioxid katalizátor: a reakciót kisebb aktiválási energiájú úton vezeti, ezért a reakciósebesség sokszorosára nő. A katalizátor a reakció végén változatlan formában és mennyiségben visszamarad – ezt bizonyítja, hogy a leszűrt, megszárított fekete por tömege megegyezik a beszórt barnakőével. A katalizátor nem változtatja meg a reakcióhőt, és azt sem, hogy végül mennyi oxigén keletkezik, csak azt, hogy milyen gyorsan. Az élő szervezetekben a kataláz enzim bontja ugyanígy a sejtekben keletkező, mérgező hidrogén-peroxidot. A hidrogén-peroxidot sötét üvegben tárolják, hogy a fény ne gyorsítsa a bomlását."
+      }
+    ],
+    "notes": [
+      "Tapasztalat: mindkét kémcső viselkedését (a kontrollét is) leírja, és a gázt a parázsló gyújtópálcával azonosítja.",
+      "Magyarázat: rendezett egyenlettel, oxidációs számokkal magyarázza a diszproporciót, és a katalizátor fogalmát (kisebb aktiválási energia, változatlanul visszamarad) a szűrés–mérés eredményével kapcsolja össze.",
+      "Szaknyelv: aktiválási energia, katalizátor, diszproporció, exoterm; az élővilágbeli párhuzam (kataláz enzim) a tudás alkalmazását mutatja."
+    ]
+  }
+}

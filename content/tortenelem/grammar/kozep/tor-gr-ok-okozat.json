@@ -1,0 +1,262 @@
+{
+  "schemaVersion": 1,
+  "id": "tor-gr-ok-okozat",
+  "subject": "tortenelem",
+  "revision": 1,
+  "level": "kozep",
+  "source": "generated",
+  "topic": "nyelvtan",
+  "title": "Ok–okozati összefüggések (E-elem)",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "grammar",
+  "type": "lesson",
+  "category": "ok-okozat",
+  "summaryHu": "A „Történelmi gondolkodás és történelmi ismeretek” (E) szempont adja az esszék és a szóbeli legtöbb pontját (közép: 6 és 12, emelt: 6, 12 és 16 pont az esszékben, a szóbelin 18 pont). Egy E-elem akkor teljes, ha a helyes megállapításhoz indoklást is fűzöl: megnevezed az okát vagy a következményét. A tények puszta felsorolása – kötőszó és magyarázat nélkül – kevés pontot ér.",
+  "rules": [
+    {
+      "title": "Az E-elem: megállapítás + indoklás",
+      "explanation": "A megállapítás egy helyes történelmi tény vagy jelenség; az indoklás megmondja, miért történt, vagy mi lett a következménye. A kettőt kötőszó kapcsolja össze (mert, ezért, így, ennek következtében).",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "„Mátyás állandó zsoldos hadsereget tartott, mert így a bárók bandériumaitól függetlenül viselhetett háborút.”",
+          "hu": "megállapítás + ok"
+        },
+        {
+          "en": "„A tatárjárás után IV. Béla kővárakat építtetett, ezért egy újabb támadás már kevésbé lett volna pusztító.”",
+          "hu": "megállapítás + következmény"
+        }
+      ]
+    },
+    {
+      "title": "Az okok fajtái: hosszú távú ok, közvetlen ok, ürügy",
+      "explanation": "A hosszú távú (mélyebb) okok évtizedek alatt halmozódnak fel (gazdasági, társadalmi, nemzetközi feszültségek); a közvetlen ok (kiváltó ok, ürügy) a robbanást előidéző esemény. Jó elemzés mindkettőt megnevezi, és megkülönbözteti.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "Első világháború: hosszú távú okok – nagyhatalmi és gyarmati versengés, szövetségi rendszerek, nacionalizmus, fegyverkezés",
+          "hu": "mélyebb okok"
+        },
+        {
+          "en": "Szarajevói merénylet (1914. június 28.)",
+          "hu": "közvetlen ok, ürügy"
+        }
+      ]
+    },
+    {
+      "title": "Következmények: rövid és hosszú távú",
+      "explanation": "A következmény lehet azonnali (rövid távú) vagy évtizedekkel későbbi (hosszú távú); lehet szándékolt vagy nem szándékolt. A hosszú távú következmény felismerése különösen értékes.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "Ősiség (1351)",
+          "hu": "hosszú távú következmény: a 19. században a hitelhiány akadályozta a birtokok korszerűsítését"
+        },
+        {
+          "en": "Trianon (1920)",
+          "hu": "rövid távon gazdasági válság, hosszú távon a revíziós külpolitika és a német orientáció"
+        }
+      ]
+    },
+    {
+      "title": "Oksági kötőszavak",
+      "explanation": "Az összefüggést mindig mondd ki nyelvileg is: ok – mert, mivel, hiszen, ennek oka, azért … mert; következmény – ezért, emiatt, így, ennek következtében, ez vezetett ahhoz, hogy; feltétel – ha … akkor; ellentét – bár, ennek ellenére.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "„A világválság az agrárexportra épülő országot súlyosan érintette, ezért Bethlen 1931-ben lemondott.”",
+          "hu": "következmény jelzése"
+        },
+        {
+          "en": "„Bár a reform növelte a vállalatok önállóságát, a tervgazdaság alapjait nem érintette.”",
+          "hu": "ellentét – árnyalt megállapítás"
+        }
+      ]
+    },
+    {
+      "title": "Oksági lánc és mérlegelés",
+      "explanation": "Emelt szinten az okokat láncba fűzöd (A → B → C), és mérlegeled, melyik a legfontosabb. Ez a komplex esszé és a 18 pontos szóbeli szempont kulcsa.",
+      "emeltOnly": true,
+      "examples": [
+        {
+          "en": "világválság → tömeges munkanélküliség → a szélsőséges pártok erősödése → Hitler kancellár (1933)",
+          "hu": "oksági lánc"
+        },
+        {
+          "en": "„A legfontosabb ok a hadsereg kimerülése volt, mert…”",
+          "hu": "rangsorolás indoklással"
+        }
+      ]
+    }
+  ],
+  "commonMistakes": [
+    {
+      "wrong": "1914-ben azért tört ki az első világháború, mert megölték Ferenc Ferdinándot.",
+      "right": "A szarajevói merénylet csak a közvetlen ok (ürügy) volt; a háború mélyebb okai a nagyhatalmi ellentétek, a szövetségi rendszerek és a nacionalizmus voltak.",
+      "why": "A kiváltó ok és a mélyebb okok összemosása leegyszerűsíti a történelmi folyamatot."
+    },
+    {
+      "wrong": "Mátyás fekete sereget tartott. Bécset elfoglalta.",
+      "right": "Mátyás a megnövelt adókból fekete sereget tartott, így a báróktól függetlenül folytathatta nyugati hódításait, és 1485-ben elfoglalta Bécset.",
+      "why": "Két tény egymás mellé helyezése nem E-elem; az összefüggést kötőszóval ki kell mondani."
+    },
+    {
+      "wrong": "A reformáció azért terjedt el, mert Luther nagyon jól beszélt.",
+      "right": "A reformáció azért terjedt el, mert a fejedelmek érdekeltek voltak az egyházi birtokok megszerzésében és a pápától való függetlenségben, a könyvnyomtatás pedig gyorsan terjesztette az új tanokat.",
+      "why": "Egy szereplő személyes tulajdonsága helyett a történelmi (gazdasági, politikai, társadalmi) tényezőket kell megnevezni."
+    },
+    {
+      "wrong": "A New Deal jó volt, mert segített az embereknek.",
+      "right": "A New Deal közmunkákkal munkát és jövedelmet teremtett, ezért nőtt a kereslet, és csökkent a munkanélküliség.",
+      "why": "Az értékítélet nem indoklás; a gazdasági mechanizmust kell megmagyarázni."
+    }
+  ],
+  "examTips": [
+    "Az E-szempont adja a legtöbb pontot: minden bekezdésben legyen legalább egy „mert / ezért / ennek következtében” típusú mondat.",
+    "Szóbelin a vizsgáztató gyakran rákérdez: „Miért?” vagy „Mi lett a következménye?” – válaszolj a hosszú és a rövid távú okok, illetve következmények szétválasztásával.",
+    "A rövid feladatokban az ok-okozati kérdéseknél a zavaró válaszok gyakran időrendben lehetetlenek (a következmény nem lehet korábbi az oknál) – ezzel sokat kizárhatsz."
+  ],
+  "practice": [
+    {
+      "id": "1",
+      "kind": "choice",
+      "prompt": "Melyik az első világháború közvetlen kiváltó oka (ürügye)?",
+      "options": [
+        {
+          "key": "A",
+          "text": "a nagyhatalmak gyarmati versengése"
+        },
+        {
+          "key": "B",
+          "text": "a szarajevói merénylet (1914. június 28.)"
+        },
+        {
+          "key": "C",
+          "text": "a szövetségi rendszerek kialakulása"
+        },
+        {
+          "key": "D",
+          "text": "a fegyverkezési verseny"
+        }
+      ],
+      "answer": "B",
+      "category": "ok-okozat",
+      "explanation": "Helyes: B. Ferenc Ferdinánd trónörökös meggyilkolása után küldte Ausztria-Magyarország az ultimátumot Szerbiának; ez indította el a láncreakciót.",
+      "wrongOptions": {
+        "A": "A gyarmati versengés hosszú távú, mélyebb ok volt.",
+        "C": "A szövetségi rendszerek (antant, hármas szövetség) hosszú távú okok; ezek tették világméretűvé a konfliktust.",
+        "D": "A fegyverkezési verseny szintén mélyebb ok, nem kiváltó esemény."
+      }
+    },
+    {
+      "id": "2",
+      "kind": "choice",
+      "prompt": "Melyik mondat teljes E-elem?",
+      "options": [
+        {
+          "key": "A",
+          "text": "A nyílt szavazás rossz dolog volt."
+        },
+        {
+          "key": "B",
+          "text": "Bethlen 1921-ben lett miniszterelnök."
+        },
+        {
+          "key": "C",
+          "text": "Bethlen bevezette a vidéki nyílt szavazást, így biztosította kormánypártja tartós többségét."
+        },
+        {
+          "key": "D",
+          "text": "Bethlen nyílt szavazást vezetett be."
+        }
+      ],
+      "answer": "C",
+      "category": "ok-okozat",
+      "explanation": "Helyes: C. Megállapítás (nyílt szavazás) + következmény (a kormánypárt tartós többsége), kötőszóval összekapcsolva.",
+      "wrongOptions": {
+        "A": "Értékítélet indoklás nélkül.",
+        "B": "Helyes tény, de nincs benne ok vagy következmény.",
+        "D": "Csak megállapítás, indoklás nélkül."
+      }
+    },
+    {
+      "id": "3",
+      "kind": "choice",
+      "prompt": "Mi volt az ősiség (1351) hosszú távú következménye a 19. században?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Megerősödött a városi polgárság."
+        },
+        {
+          "key": "B",
+          "text": "A jobbágyok tömegesen földtulajdonhoz jutottak."
+        },
+        {
+          "key": "C",
+          "text": "A nemesek nem vehettek fel hitelt birtokaikra, ez akadályozta a gazdaság korszerűsítését."
+        },
+        {
+          "key": "D",
+          "text": "Szabaddá vált a nagybirtokok adásvétele."
+        }
+      ],
+      "answer": "C",
+      "category": "ok-okozat",
+      "explanation": "Helyes: C. Mivel a birtok nem volt elidegeníthető, zálogként sem szolgálhatott; Széchenyi a Hitelben (1830) ezért követelte az ősiség eltörlését.",
+      "wrongOptions": {
+        "A": "Az ősiség a nemesség kiváltsága volt, a polgárság helyzetét nem javította.",
+        "B": "Az ősiség a nemesi birtokot védte, a jobbágyok földhöz jutását nem segítette.",
+        "D": "Éppen ellenkezőleg: az ősiség tiltotta a nemesi birtok végleges eladását."
+      }
+    },
+    {
+      "id": "4",
+      "kind": "choice",
+      "prompt": "Mi volt a nagy földrajzi felfedezések egyik közvetlen gazdasági oka?",
+      "options": [
+        {
+          "key": "A",
+          "text": "az árforradalom"
+        },
+        {
+          "key": "B",
+          "text": "a keleti fűszerek és luxuscikkek beszerzése az oszmán és az itáliai közvetítők kikerülésével"
+        },
+        {
+          "key": "C",
+          "text": "az ipari forradalom nyersanyagigénye"
+        },
+        {
+          "key": "D",
+          "text": "az amerikai ezüstbányák kiaknázása"
+        }
+      ],
+      "answer": "B",
+      "category": "ok-okozat",
+      "explanation": "Helyes: B. A keleti áruk drágák voltak, mert az oszmán és az itáliai közvetítő kereskedelem miatt sok kézen mentek át; a portugálok és a spanyolok ezért kerestek közvetlen tengeri utat Indiába.",
+      "wrongOptions": {
+        "A": "Az árforradalom a felfedezések következménye volt (az amerikai nemesfém beáramlása miatt).",
+        "C": "Az ipari forradalom csak a 18. század második felében kezdődött – anakronizmus.",
+        "D": "Az amerikai ezüstbányák kiaknázása a felfedezések és a hódítás következménye volt."
+      }
+    },
+    {
+      "id": "5",
+      "kind": "text",
+      "prompt": "Egészítsd ki egy kötőszóval: „A doni katasztrófa után Kállay Miklós titkos tárgyalásokat kezdett a nyugati hatalmakkal, ___ Németország 1944. március 19-én megszállta az országot.”",
+      "answer": [
+        "ezért",
+        "emiatt",
+        "így"
+      ],
+      "category": "ok-okozat",
+      "explanation": "Helyes: ezért (emiatt, így). A titkos béketapogatózás ok, a német megszállás a következménye – az ok-okozati kötőszó teszi teljessé az E-elemet."
+    }
+  ],
+  "relatedCategories": [
+    "forras-sajat-tudas",
+    "lenyegkiemeles"
+  ]
+}

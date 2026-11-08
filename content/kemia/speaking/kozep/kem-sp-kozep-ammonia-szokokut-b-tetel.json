@@ -1,0 +1,84 @@
+{
+  "schemaVersion": 1,
+  "id": "kem-sp-kozep-ammonia-szokokut-b-tetel",
+  "subject": "kemia",
+  "revision": 1,
+  "level": "kozep",
+  "source": "generated",
+  "topic": "szervetlen-nemfemek",
+  "title": "Az ammónia oldódása vízben – szökőkútkísérlet",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "speaking",
+  "type": "b-tetel",
+  "partNumber": 2,
+  "instructionsHu": "Értelmezze a leírt kísérletet! Ismertesse a tapasztalatokat, magyarázza meg őket az ammónia molekulaszerkezete és sav–bázis tulajdonsága alapján, és írja fel a lejátszódó reakció egyenletét!",
+  "prompts": [
+    "Mit tapasztalunk a cseppentő megnyomása után?",
+    "Miért áramlik be a víz a lombikba?",
+    "Miért változik meg a beáramló víz színe? Írja fel az egyenletet!",
+    "Miért kell az ammóniát szájával lefelé fordított lombikban felfogni?"
+  ],
+  "followUpQuestions": [
+    "Működne-e a kísérlet szén-dioxiddal vagy hidrogén-kloriddal? Melyik esetben milyen színű lenne a fenolftaleines víz?"
+  ],
+  "usefulPhrases": [
+    {
+      "en": "Tapasztalat: … Magyarázat: …",
+      "hu": "A B tétel két pontozott része – mindig válaszd szét őket."
+    },
+    {
+      "en": "a nyomás lecsökken, a külső légnyomás benyomja a vizet",
+      "hu": "A szökőkút fizikai oka."
+    },
+    {
+      "en": "NH₃ + H₂O ⇌ NH₄⁺ + OH⁻",
+      "hu": "Az ammónia bázikus viselkedése vízben."
+    },
+    {
+      "en": "Brønsted-bázis (protonakceptor)",
+      "hu": "Az ammónia nemkötő elektronpárjával köti meg a protont."
+    },
+    {
+      "en": "fenolftalein: lúgos közegben lila",
+      "hu": "A színváltozás a lúgos kémhatást jelzi."
+    },
+    {
+      "en": "kisebb sűrűségű a levegőnél",
+      "hu": "M(NH₃) = 17 g/mol < 29 g/mol – szájával lefelé fogjuk fel."
+    }
+  ],
+  "sources": [
+    {
+      "title": "A kísérlet leírása",
+      "text": "Egy száraz gömblombikot ammóniagázzal töltünk meg, és átfúrt dugóval lezárjuk; a dugón át egy vékony, a lombik belsejébe nyúló üvegcső és egy vízzel töltött cseppentő vezet. A lombikot szájával lefelé fordítva fogóval rögzítjük úgy, hogy az üvegcső alsó vége egy fenolftaleines vízzel teli kristályosítócsészébe merüljön. Ezután a cseppentőből néhány csepp vizet nyomunk a lombikba."
+    },
+    {
+      "title": "Segédadat",
+      "text": "20 °C-on 1 térfogat víz kb. 700 térfogat ammóniagázt old."
+    }
+  ],
+  "keyPoints": [
+    "A víz szökőkútszerűen beáramlik a lombikba, és a beáramló víz lila (rózsaszín) színű lesz.",
+    "Az ammónia rendkívül jól oldódik vízben, ezért a néhány csepp víz a lombikban lévő gáz nagy részét elnyeli, és a lombikban a nyomás lecsökken.",
+    "A külső légnyomás nyomja be a vizet a lombikba.",
+    "A jó oldhatóság oka: az ammónia poláris molekula, és hidrogénkötést alakít ki a vízmolekulákkal; kis része reagál is a vízzel.",
+    "NH₃ + H₂O ⇌ NH₄⁺ + OH⁻ – az ammónia Brønsted-bázis, az oldat lúgos, ezért a fenolftalein lila lesz.",
+    "Az ammónia a levegőnél kisebb sűrűségű (M = 17 g/mol < 29 g/mol), ezért szájával lefelé fordított edényben fogható fel."
+  ],
+  "speakingSeconds": 330,
+  "prepSeconds": 450,
+  "sampleAnswer": {
+    "turns": [
+      {
+        "speaker": "candidate",
+        "text": "A cseppentőből a lombikba nyomott néhány csepp víz után az üvegcsövön keresztül a fenolftaleines víz szökőkútszerűen áramlik be a lombikba, és amint belép, lila (rózsaszín) színűvé válik. A lombik végül szinte teljesen megtelik folyadékkal.\nA magyarázat az ammónia kiváló vízoldhatósága: 20 °C-on egy térfogat víz körülbelül hétszáz térfogat ammóniagázt old. A bejuttatott néhány csepp víz ezért a lombikban lévő ammónia jelentős részét feloldja, a gáz anyagmennyisége, így a nyomása is hirtelen lecsökken. A lombikon kívül a légnyomás változatlan, ezért a külső légnyomás benyomja a vizet a csövön keresztül; az újabb beáramló víz még több ammóniát old, így a folyamat felgyorsul.\nAz ammónia azért oldódik ilyen jól, mert molekulája poláris: a nitrogén elektronegativitása nagyobb a hidrogénénél, a molekula trigonális piramis alakú, és a nitrogénatomon van egy nemkötő elektronpár. Az ammóniamolekulák hidrogénkötéseket létesítenek a vízmolekulákkal. Az oldott ammónia kis része reakcióba is lép a vízzel: a nitrogén nemkötő elektronpárjával protont vesz fel a vízmolekulától:\nNH₃ + H₂O ⇌ NH₄⁺ + OH⁻\nEbben a reakcióban az ammónia Brønsted-bázis, a víz sav. A keletkező hidroxidionok miatt az oldat lúgos kémhatású, ezért a fenolftalein színtelenből lilára vált. Az egyensúly erősen a kiindulási anyagok felé tolódik, mert az ammónia gyenge bázis.\nA lombikot azért kell szájával lefelé tartva megtölteni, mert az ammónia moláris tömege (17 g/mol) kisebb a levegő átlagos moláris tömegénél (29 g/mol), tehát kisebb a sűrűsége, és felfelé száll."
+      }
+    ],
+    "notes": [
+      "Tapasztalat: a felelet pontosan leírja, mit lát a vizsgázó (szökőkút, színváltozás, a lombik megtelése) – ez a tapasztalat-szempont pontjait adja.",
+      "Magyarázat: a nyomáscsökkenést az oldhatósággal, az oldhatóságot a molekulaszerkezettel (polaritás, hidrogénkötés), a színváltozást a protolitikus egyenlettel magyarázza – ez a magyarázat-szempont teljes pontszáma.",
+      "Szaknyelv és segédeszköz: Brønsted-bázis, nemkötő elektronpár, trigonális piramis; a moláris tömegeket a periódusos rendszer adataiból számolja."
+    ]
+  }
+}

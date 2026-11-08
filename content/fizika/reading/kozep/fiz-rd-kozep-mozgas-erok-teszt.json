@@ -1,0 +1,185 @@
+{
+  "schemaVersion": 1,
+  "id": "fiz-rd-kozep-mozgas-erok-teszt",
+  "subject": "fizika",
+  "revision": 1,
+  "level": "kozep",
+  "source": "generated",
+  "topic": "mozgas-egyensuly",
+  "title": "Mozgások és erők – feleletválasztós teszt",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "reading",
+  "type": "feleletvalasztas",
+  "instructions": "Minden kérdésnél egyetlen helyes válasz van. Jelöld meg a helyes válasz betűjelét! A 0. kérdés a megoldott példa. Ahol szükséges, g = 10 m/s².",
+  "example": {
+    "id": "0",
+    "kind": "choice",
+    "prompt": "Egy autó egyenes úton 90 km/h állandó sebességgel halad. Mekkora utat tesz meg 2 perc alatt?",
+    "options": [
+      { "key": "A", "text": "1,5 km" },
+      { "key": "B", "text": "3 km" },
+      { "key": "C", "text": "4,5 km" },
+      { "key": "D", "text": "180 km" }
+    ],
+    "answer": "B",
+    "category": "kepletek",
+    "explanation": "Helyes: B. 90 km/h = 90 000 m / 3600 s = 25 m/s; 2 perc = 120 s. Egyenletes mozgásnál s = v·t = 25 m/s · 120 s = 3000 m = 3 km. (Másképp: 2 perc a 60 perc harmincad része, 90 km / 30 = 3 km.)"
+  },
+  "items": [
+    {
+      "id": "1",
+      "kind": "choice",
+      "prompt": "Egy test szabadon esik (a légellenállás elhanyagolható). Melyik állítás igaz a mozgására?",
+      "options": [
+        { "key": "A", "text": "A gyorsulása állandó." },
+        { "key": "B", "text": "A sebessége állandó." },
+        { "key": "C", "text": "A gyorsulása egyenletesen nő." },
+        { "key": "D", "text": "Az első másodpercben nagyobb a gyorsulása, mint később." }
+      ],
+      "answer": "A",
+      "category": "torvenyek",
+      "explanation": "Helyes: A. A szabadesés egyenletesen gyorsuló mozgás: a gyorsulás a nehézségi gyorsulás (g ≈ 9,81 m/s²), amely a Föld felszíne közelében állandó. A sebesség egyenletesen nő (v = g·t), a gyorsulás nem változik.",
+      "wrongOptions": {
+        "B": "Szabadesésnél a sebesség másodpercenként kb. 10 m/s-mal nő, nem állandó – az állandó mennyiség a gyorsulás.",
+        "C": "A g nem változik az esés közben; az, ami egyenletesen nő, a sebesség.",
+        "D": "A nehézségi gyorsulás független az eltelt időtől: az első és a tizedik másodpercben is ugyanannyi."
+      }
+    },
+    {
+      "id": "2",
+      "kind": "choice",
+      "prompt": "Egy 2 kg tömegű testre 6 N nagyságú eredő erő hat. Mekkora a test gyorsulása?",
+      "options": [
+        { "key": "A", "text": "12 m/s²" },
+        { "key": "B", "text": "3 m/s²" },
+        { "key": "C", "text": "0,33 m/s²" },
+        { "key": "D", "text": "8 m/s²" }
+      ],
+      "answer": "B",
+      "category": "kepletek",
+      "explanation": "Helyes: B. Newton II. törvénye: F = m·a, ebből a = F/m = 6 N / 2 kg = 3 m/s². (1 N = 1 kg·m/s², így az egység is kijön.)",
+      "wrongOptions": {
+        "A": "12 az erő és a tömeg szorzata – a gyorsulást osztással kapjuk: a = F/m.",
+        "C": "Fordítva osztott (m/F = 2/6); a gyorsulás az erő osztva a tömeggel.",
+        "D": "Összeadta a két számot; a mennyiségek közt szorzat–hányados kapcsolat van, nem összeg."
+      }
+    },
+    {
+      "id": "3",
+      "kind": "choice",
+      "prompt": "Egy ló húzza a szekeret. Mit mond Newton III. törvénye a ló és a szekér közötti erőkről?",
+      "options": [
+        { "key": "A", "text": "A ló nagyobb erővel hat a szekérre, mint a szekér a lóra, különben a szekér nem indulna el." },
+        { "key": "B", "text": "Az erő és az ellenerő ugyanarra a testre hat, ezért kiegyenlítik egymást." },
+        { "key": "C", "text": "A szekér csak akkor hat vissza a lóra, ha már mozgásban van." },
+        { "key": "D", "text": "A szekér ugyanolyan nagy, ellentétes irányú erővel hat a lóra, mint a ló a szekérre." }
+      ],
+      "answer": "D",
+      "category": "torvenyek",
+      "explanation": "Helyes: D. A hatás–ellenhatás törvénye szerint két test kölcsönhatásában az erők mindig egyenlő nagyságúak és ellentétes irányúak, de különböző testekre hatnak. A szekér azért indul el, mert a rá ható erők eredője (a ló húzóereje mínusz a súrlódás) nem nulla – ez Newton II. törvénye, nem a III.",
+      "wrongOptions": {
+        "A": "A kölcsönhatás két ereje mindig egyenlő nagyságú; a szekér elindulását a RÁ ható erők eredője dönti el, nem a ló–szekér erőpár különbsége.",
+        "B": "Az erő és az ellenerő két KÜLÖNBÖZŐ testre hat, ezért nem egyenlíthetik ki egymást.",
+        "C": "Az erő és az ellenerő mindig egyszerre lép fel, nyugalomban is (pl. az asztalon fekvő könyv is nyomja az asztalt, és az asztal is a könyvet)."
+      }
+    },
+    {
+      "id": "4",
+      "kind": "choice",
+      "prompt": "Egy test egyenletes körmozgást végez. Melyik mennyisége állandó?",
+      "options": [
+        { "key": "A", "text": "A sebességvektora." },
+        { "key": "B", "text": "Nincs gyorsulása, ezért minden mennyisége állandó." },
+        { "key": "C", "text": "A gyorsulásvektora." },
+        { "key": "D", "text": "A sebességének nagysága." }
+      ],
+      "answer": "D",
+      "category": "fogalmak",
+      "explanation": "Helyes: D. Egyenletes körmozgásnál a sebesség nagysága állandó, de az iránya folyamatosan változik (mindig a kör érintőjének irányába mutat). Mivel a sebességvektor változik, a testnek van gyorsulása: a centripetális gyorsulás (a = v²/r), amely mindig a kör középpontja felé mutat.",
+      "wrongOptions": {
+        "A": "A sebesség iránya minden pillanatban más (érintő irányú), így a sebességvektor változik.",
+        "B": "Az irányváltozás is gyorsulás: a körmozgást a középpont felé mutató (centripetális) gyorsulás tartja fenn.",
+        "C": "A centripetális gyorsulás nagysága állandó, de iránya mindig a középpont felé mutat, azaz folyton változik."
+      }
+    },
+    {
+      "id": "5",
+      "kind": "choice",
+      "prompt": "Egy vízszintes padlón álló, 5 kg tömegű ládát 20 N nagyságú vízszintes erővel húzunk, de a láda nem mozdul meg. Mekkora a ládára ható tapadási súrlódási erő?",
+      "options": [
+        { "key": "A", "text": "0 N" },
+        { "key": "B", "text": "20 N" },
+        { "key": "C", "text": "50 N" },
+        { "key": "D", "text": "Az adatokból nem lehet eldönteni." }
+      ],
+      "answer": "B",
+      "category": "vektor-irany",
+      "explanation": "Helyes: B. A láda nyugalomban van, ezért a rá ható erők eredője nulla. Vízszintes irányban csak a 20 N húzóerő és a tapadási súrlódási erő hat, tehát a súrlódási erő is 20 N nagyságú, a húzóerővel ellentétes irányú. A tapadási súrlódás mindig éppen annyi, amennyi az egyensúlyhoz kell (a maximális értékéig).",
+      "wrongOptions": {
+        "A": "Ha a súrlódás nulla lenne, a 20 N erő gyorsítaná a ládát – de a láda áll.",
+        "C": "50 N a láda súlya (m·g), ami függőleges; a vízszintes egyensúlyt a 20 N-os húzóerővel szemben a 20 N-os súrlódás biztosítja.",
+        "D": "A nyugalom (eredő erő = 0) egyértelműen megadja: a súrlódási erő egyenlő a húzóerővel."
+      }
+    },
+    {
+      "id": "6",
+      "kind": "choice",
+      "prompt": "Egy 0,5 kg tömegű labda 10 m/s sebességgel halad. Mekkora a lendülete?",
+      "options": [
+        { "key": "A", "text": "5 kg·m/s" },
+        { "key": "B", "text": "20 kg·m/s" },
+        { "key": "C", "text": "25 kg·m/s" },
+        { "key": "D", "text": "50 kg·m/s" }
+      ],
+      "answer": "A",
+      "category": "kepletek",
+      "explanation": "Helyes: A. A lendület (impulzus) a tömeg és a sebesség szorzata: I = m·v = 0,5 kg · 10 m/s = 5 kg·m/s. Irányát a sebesség iránya adja.",
+      "wrongOptions": {
+        "B": "20 a sebesség és a tömeg hányadosa (10/0,5); a lendület szorzat, nem hányados.",
+        "C": "25 J a mozgási energia (½·m·v² = 0,5·0,5·100), ami más mennyiség, más egységgel.",
+        "D": "50 = m·v², ez sem a lendület, sem az energia képlete."
+      }
+    },
+    {
+      "id": "7",
+      "kind": "choice",
+      "prompt": "Egy kétoldalú emelő egyik karja 0,2 m, a másik 0,8 m hosszú. A hosszabb kar végén 50 N erő hat lefelé. Mekkora lefelé mutató erő tartja egyensúlyban az emelőt a rövidebb kar végén?",
+      "options": [
+        { "key": "A", "text": "12,5 N" },
+        { "key": "B", "text": "50 N" },
+        { "key": "C", "text": "200 N" },
+        { "key": "D", "text": "800 N" }
+      ],
+      "answer": "C",
+      "category": "kepletek",
+      "explanation": "Helyes: C. Egyensúlyban a forgatónyomatékok egyenlők: F₁·k₁ = F₂·k₂. A hosszabb karon 50 N · 0,8 m = 40 N·m a forgatónyomaték, ezért a rövid karon F = 40 N·m / 0,2 m = 200 N szükséges. A rövidebb karon nagyobb erő kell – ezért emelünk a hosszabb karral.",
+      "wrongOptions": {
+        "A": "Fordítva arányosított (50·0,2/0,8); a rövidebb karon NAGYOBB erő kell, hogy ugyanannyi legyen a forgatónyomaték.",
+        "B": "Csak egyenlő hosszú karoknál lenne egyenlő a két erő.",
+        "D": "A karok aránya 4, nem 16: 50 N · 4 = 200 N, nem 800 N."
+      }
+    },
+    {
+      "id": "8",
+      "kind": "choice",
+      "prompt": "Egy űrhajós tömege a Földön 60 kg. A Holdon a nehézségi gyorsulás a földinek kb. hatoda. Mi igaz a Holdon?",
+      "options": [
+        { "key": "A", "text": "Tömege 60 kg, súlya kb. 100 N." },
+        { "key": "B", "text": "Tömege 10 kg, súlya kb. 100 N." },
+        { "key": "C", "text": "Tömege 60 kg, súlya kb. 600 N." },
+        { "key": "D", "text": "Tömege 10 kg, súlya kb. 600 N." }
+      ],
+      "answer": "A",
+      "category": "fogalmak",
+      "explanation": "Helyes: A. A tömeg a test tehetetlenségének mértéke, mindenhol ugyanannyi (60 kg). A súly a nehézségi erő: G = m·g. A Földön 60 kg · 10 m/s² ≈ 600 N, a Holdon g kb. 1,6 m/s², ezért a súly kb. 600 N / 6 ≈ 100 N.",
+      "wrongOptions": {
+        "B": "A tömeg nem változik a helytől függően – csak a súly csökken a hatodára.",
+        "C": "600 N a földi súly; a Holdon a kisebb g miatt a súly is kisebb.",
+        "D": "Mindkét érték rossz: a tömeg marad 60 kg, a súly pedig csökken, nem marad 600 N."
+      }
+    }
+  ],
+  "glossary": [],
+  "suggestedMinutes": 14
+}

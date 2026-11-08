@@ -1,0 +1,88 @@
+{
+  "schemaVersion": 1,
+  "id": "kem-wr-kozep-harom-oldat-azonositasa",
+  "subject": "kemia",
+  "revision": 1,
+  "level": "kozep",
+  "source": "generated",
+  "topic": "sav-bazis-redoxi",
+  "title": "Három színtelen folyadék azonosítása",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "writing",
+  "type": "kiserletelemzo",
+  "taskNumber": 2,
+  "situation": "Három számozott kémcsőben, ismeretlen sorrendben desztillált víz, nátrium-klorid-oldat és nátrium-karbonát-oldat van. Rendelkezésre áll híg sósav, ezüst-nitrát-oldat és fenolftalein-oldat. Egy tanuló a következő lépéseket végezte el:\n\n1. lépés: mindhárom kémcső tartalmából kis mintát vett, és mindegyikhez híg sósavat csepegtetett. Az egyik mintában pezsgést tapasztalt, a másik kettőben nem.\n2. lépés: a két megmaradt folyadék újabb mintájához ezüst-nitrát-oldatot csepegtetett.\n3. lépés: a nátrium-karbonát-oldat egy újabb mintájához fenolftaleint cseppentett.\n4. lépés: az 1. lépésben fejlődő gázt meszes vízbe vezette, illetve égő gyújtópálcát tartott a gázfejlesztő kémcső szájához.\n\na) Melyik kémcsőben volt pezsgés, és mi okozta? Írja fel a reakció egyenletét! (3 pont)\nb) Mit tapasztalt a 2. lépésben a két kémcsőben, és mi a magyarázat? Írja fel a reakció ionegyenletét! (3 pont)\nc) Milyen színű lett a fenolftalein a 3. lépésben? Magyarázza meg egyenlettel! (3 pont)\nd) Mit tapasztalt a 4. lépésben? Mit bizonyít ez a gázról? Írja fel a meszes vízzel lejátszódó reakció egyenletét! (4 pont)",
+  "points": [
+    {
+      "id": "p1",
+      "text": "a) A pezsgő kémcső tartalma, a pezsgés oka és egyenlete (3 pont)"
+    },
+    {
+      "id": "p2",
+      "text": "b) A 2. lépés tapasztalata mindkét kémcsőben, magyarázat, ionegyenlet (3 pont)"
+    },
+    {
+      "id": "p3",
+      "text": "c) A fenolftalein színe és a karbonátion hidrolízisének egyenlete (3 pont)"
+    },
+    {
+      "id": "p4",
+      "text": "d) A gáz kimutatásának tapasztalatai, következtetés, egyenlet (4 pont)"
+    }
+  ],
+  "suggestedMinutes": 20,
+  "usefulPhrases": [
+    {
+      "en": "Tapasztalat: … – Magyarázat: …",
+      "hu": "Mindig válaszd szét, mit látsz (pezsgés, csapadék, szín) és mi ennek a kémiai oka."
+    },
+    {
+      "en": "fehér, túrós csapadék",
+      "hu": "Az ezüst-klorid jellemző megjelenése: a kloridion kimutatása ezüst-nitráttal."
+    },
+    {
+      "en": "az erősebb sav felszabadítja a gyengébb savat a sójából",
+      "hu": "Karbonát + sav → pezsgés (CO₂): a szénsav gyenge és bomlékony."
+    },
+    {
+      "en": "hidrolízis",
+      "hu": "A gyenge sav anionja (CO₃²⁻) protont vesz fel a víztől → OH⁻ → lúgos oldat."
+    },
+    {
+      "en": "lila (rózsaszín)",
+      "hu": "A fenolftalein színe lúgos közegben; savas és semleges közegben színtelen."
+    },
+    {
+      "en": "a meszes víz megzavarosodik",
+      "hu": "A szén-dioxid kimutatása: CaCO₃ csapadék keletkezik."
+    }
+  ],
+  "checklistExtra": [],
+  "modelAnswer": {
+    "text": "a) Pezsgés abban a kémcsőben volt, amelyben a nátrium-karbonát-oldat volt. A karbonátionok a sósav oxóniumionjaival reagálnak: az erősebb sav (a sósav) felszabadítja a gyengébb és bomlékony szénsavat, amely vízre és szén-dioxidra bomlik:\nNa₂CO₃ + 2 HCl → 2 NaCl + H₂O + CO₂\nA nátrium-klorid-oldat és a desztillált víz a sósavval nem reagál, ezért ott nincs változás.\n\nb) Az egyik kémcsőben fehér, túrós csapadék keletkezett – ebben volt a nátrium-klorid-oldat –, a másikban nem történt változás, az a desztillált víz. A csapadék ezüst-klorid, amely vízben gyakorlatilag oldhatatlan:\nAg⁺ + Cl⁻ → AgCl\nA desztillált vízben nincs kloridion, ezért nem képződik csapadék.\n\nc) A fenolftalein a nátrium-karbonát-oldatban lila (rózsaszín) lett, tehát az oldat lúgos kémhatású. Ennek oka a karbonátion hidrolízise: a karbonátion bázisként protont vesz fel a vízmolekulától, és hidroxidionok keletkeznek:\nCO₃²⁻ + H₂O ⇌ HCO₃⁻ + OH⁻\nA nátrium-karbonát gyenge sav (szénsav) és erős bázis (nátrium-hidroxid) sója.\n\nd) A meszes víz megzavarosodott, az égő gyújtópálca pedig elaludt. Ez bizonyítja, hogy a gáz szén-dioxid: nem táplálja az égést, a kalcium-hidroxiddal pedig vízben rosszul oldódó, fehér kalcium-karbonát keletkezik:\nCO₂ + Ca(OH)₂ → CaCO₃ + H₂O",
+    "pointsCovered": [
+      {
+        "id": "p1",
+        "quote": "Na₂CO₃ + 2 HCl → 2 NaCl + H₂O + CO₂"
+      },
+      {
+        "id": "p2",
+        "quote": "Az egyik kémcsőben fehér, túrós csapadék keletkezett – ebben volt a nátrium-klorid-oldat –, a másikban nem történt változás, az a desztillált víz."
+      },
+      {
+        "id": "p3",
+        "quote": "CO₃²⁻ + H₂O ⇌ HCO₃⁻ + OH⁻"
+      },
+      {
+        "id": "p4",
+        "quote": "CO₂ + Ca(OH)₂ → CaCO₃ + H₂O"
+      }
+    ],
+    "notes": [
+      "Tapasztalatok: minden lépésnél pontosan leírja, mit lát (pezsgés, fehér túrós csapadék, lila szín, zavarosodás, kialvó láng), és ezekből azonosítja a három folyadékot – ez a tapasztalat-szempont teljes pontszáma.",
+      "Magyarázat: mind a négy jelenséget kémiai okkal és rendezett egyenlettel magyarázza (gázfejlődés, csapadékképződés, hidrolízis, CO₂-kimutatás), a b) részben a kért ionegyenletet írja fel.",
+      "Szaknyelv: pontos szakkifejezéseket használ (oxóniumion, hidrolízis, gyenge sav – erős bázis sója), és a képletek, töltések, egyensúlyjel (⇌) hibátlanok."
+    ]
+  }
+}

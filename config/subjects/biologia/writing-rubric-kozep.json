@@ -1,0 +1,231 @@
+{
+  "meta": {
+    "verifiedAt": "2026-11-05",
+    "sources": [
+      {
+        "title": "Oktatási Hivatal: Biológia – részletes érettségi vizsgakövetelmény és vizsgaleírás (2024-től érvényes, Nat2020)",
+        "url": "https://www.oktatas.hu/pub_bin/dload/kozoktatas/erettsegi/vizsgakovetelmenyek2024/biologia_2024_e.pdf"
+      },
+      {
+        "title": "Eduline (2024. 05. 13.): Minden, amit a keddi biológiaérettségiről tudni kell (közép 150 perc, 100 pont, 6–12 feladat; szóbeli A 25 + B 20 + 5; emelt 240 perc 80 + 20 pont)",
+        "url": "https://eduline.hu/erettsegi-felveteli/20240513_biologiaerettsegi-biologia-erettsegi-2024-minden-tudnivalo"
+      },
+      {
+        "title": "Eduline (2025. 05. 12.): Milyen segédeszközt lehet használni a biológiaérettségin? (csak számológép)",
+        "url": "https://eduline.hu/erettsegi-felveteli/20250512_biologiaerettsegi-segedeszkozok-szamologep"
+      },
+      {
+        "title": "emeltbiosz.hu: Az érettségi menetéről – szóbeli pontozás (közép 25 + 20 + 5, emelt 20 + 25 + 5)",
+        "url": "https://emeltbiosz.hu/erettsegi/"
+      },
+      {
+        "title": "Gergely Tibor: A 2024-től érvényes biológia érettségi követelményrendszer változásai (hat Nat2020 témakör)",
+        "url": "http://www.gergelytibor.hu/kovetelmenyek_valtozasai.pdf"
+      },
+      {
+        "title": "Eduline (2023. 12. 22.): Itt vannak a 2024-es emelt szintű biológiaérettségi témakörei",
+        "url": "https://eduline.hu/erettsegi-felveteli/20231222_emelt-szintu-biologiaerettsegi-temakorok-2024"
+      },
+      {
+        "title": "Eduline (2026. 03. 14.): Érettségi 2026 – pontozási és osztályozási szabályok (közép 80/60/40/25 %, emelt 60/47/33/25 %, vizsgarészenként 12 %)",
+        "url": "https://eduline.hu/erettsegi-felveteli/20260314_erettsegi-2026-pontozas-osztalyozas"
+      }
+    ],
+    "notes": [
+      "A két kifejtős feladat (15 + 15 = 30) az app felosztása; a vizsgán ezek a feladatlap részkérdései, a hivatalos útmutató elemenként ad pontot.",
+      "Az ellenőrzés hírportál-cikkek (Eduline, Telex) és a hivatalos dokumentumok keresőben indexelt szövege alapján történt; az OH oldalát a futtató környezet hálózata nem engedte közvetlenül megnyitni – a hivatalos vizsgaleírással érdemes összevetni."
+    ]
+  },
+  "id": "writing-kozep",
+  "level": "kozep",
+  "examMaxPoints": 30,
+  "tasks": [
+    {
+      "taskNumber": 1,
+      "name": "Kísérletelemzés, magyarázat",
+      "textTypes": [
+        "kiserletelemzes",
+        "magyarazat"
+      ],
+      "guidingPoints": "3–5 kérdés",
+      "suggestedMinutes": 25,
+      "maxRaw": 15,
+      "criteria": [
+        {
+          "id": "tartalom",
+          "name": "Tartalmi helyesség, teljesség",
+          "description": "A kérdésekre adott válaszok biológiailag helyesek és teljesek.",
+          "max": 8,
+          "bands": [
+            {
+              "points": "8",
+              "descriptor": "Maradéktalanul teljesül: A kérdésekre adott válaszok biológiailag helyesek és teljesek."
+            },
+            {
+              "points": "6–7",
+              "descriptor": "Kisebb hiányosságokkal vagy pontatlanságokkal teljesül; a lényeg helyes."
+            },
+            {
+              "points": "4–5",
+              "descriptor": "Részben teljesül: több elem hiányzik, pontatlan vagy indoklás nélküli."
+            },
+            {
+              "points": "1–3",
+              "descriptor": "Alig teljesül: csak néhány helyes, odaillő elem van."
+            },
+            {
+              "points": "0",
+              "descriptor": "Nem teljesül, vagy nem értékelhető."
+            }
+          ]
+        },
+        {
+          "id": "indoklas",
+          "name": "Indoklás, összefüggések, következtetés",
+          "description": "Ok–okozati összefüggések, az adatokból/ábrából levont következtetés indoklása.",
+          "max": 4,
+          "bands": [
+            {
+              "points": "4",
+              "descriptor": "Maradéktalanul teljesül: Ok–okozati összefüggések, az adatokból/ábrából levont következtetés indoklása."
+            },
+            {
+              "points": "3",
+              "descriptor": "Kisebb hiányosságokkal vagy pontatlanságokkal teljesül; a lényeg helyes."
+            },
+            {
+              "points": "2",
+              "descriptor": "Részben teljesül: több elem hiányzik, pontatlan vagy indoklás nélküli."
+            },
+            {
+              "points": "0",
+              "descriptor": "Nem teljesül, vagy nem értékelhető."
+            }
+          ]
+        },
+        {
+          "id": "szaknyelv",
+          "name": "Szaknyelv, pontosság",
+          "description": "Pontos szakkifejezések, egyértelmű megfogalmazás.",
+          "max": 3,
+          "bands": [
+            {
+              "points": "3",
+              "descriptor": "Maradéktalanul teljesül: Pontos szakkifejezések, egyértelmű megfogalmazás."
+            },
+            {
+              "points": "2",
+              "descriptor": "Részben teljesül: több elem hiányzik, pontatlan vagy indoklás nélküli."
+            },
+            {
+              "points": "1",
+              "descriptor": "Alig teljesül: csak néhány helyes, odaillő elem van."
+            },
+            {
+              "points": "0",
+              "descriptor": "Nem teljesül, vagy nem értékelhető."
+            }
+          ]
+        }
+      ],
+      "rules": []
+    },
+    {
+      "taskNumber": 2,
+      "name": "Ábra-, adatelemzés következtetéssel",
+      "textTypes": [
+        "adatelemzes",
+        "magyarazat"
+      ],
+      "guidingPoints": "3–5 kérdés",
+      "suggestedMinutes": 25,
+      "maxRaw": 15,
+      "criteria": [
+        {
+          "id": "tartalom",
+          "name": "Tartalmi helyesség, teljesség",
+          "description": "A kérdésekre adott válaszok biológiailag helyesek és teljesek.",
+          "max": 8,
+          "bands": [
+            {
+              "points": "8",
+              "descriptor": "Maradéktalanul teljesül: A kérdésekre adott válaszok biológiailag helyesek és teljesek."
+            },
+            {
+              "points": "6–7",
+              "descriptor": "Kisebb hiányosságokkal vagy pontatlanságokkal teljesül; a lényeg helyes."
+            },
+            {
+              "points": "4–5",
+              "descriptor": "Részben teljesül: több elem hiányzik, pontatlan vagy indoklás nélküli."
+            },
+            {
+              "points": "1–3",
+              "descriptor": "Alig teljesül: csak néhány helyes, odaillő elem van."
+            },
+            {
+              "points": "0",
+              "descriptor": "Nem teljesül, vagy nem értékelhető."
+            }
+          ]
+        },
+        {
+          "id": "indoklas",
+          "name": "Indoklás, összefüggések, következtetés",
+          "description": "Ok–okozati összefüggések, az adatokból/ábrából levont következtetés indoklása.",
+          "max": 4,
+          "bands": [
+            {
+              "points": "4",
+              "descriptor": "Maradéktalanul teljesül: Ok–okozati összefüggések, az adatokból/ábrából levont következtetés indoklása."
+            },
+            {
+              "points": "3",
+              "descriptor": "Kisebb hiányosságokkal vagy pontatlanságokkal teljesül; a lényeg helyes."
+            },
+            {
+              "points": "2",
+              "descriptor": "Részben teljesül: több elem hiányzik, pontatlan vagy indoklás nélküli."
+            },
+            {
+              "points": "0",
+              "descriptor": "Nem teljesül, vagy nem értékelhető."
+            }
+          ]
+        },
+        {
+          "id": "szaknyelv",
+          "name": "Szaknyelv, pontosság",
+          "description": "Pontos szakkifejezések, egyértelmű megfogalmazás.",
+          "max": 3,
+          "bands": [
+            {
+              "points": "3",
+              "descriptor": "Maradéktalanul teljesül: Pontos szakkifejezések, egyértelmű megfogalmazás."
+            },
+            {
+              "points": "2",
+              "descriptor": "Részben teljesül: több elem hiányzik, pontatlan vagy indoklás nélküli."
+            },
+            {
+              "points": "1",
+              "descriptor": "Alig teljesül: csak néhány helyes, odaillő elem van."
+            },
+            {
+              "points": "0",
+              "descriptor": "Nem teljesül, vagy nem értékelhető."
+            }
+          ]
+        }
+      ],
+      "rules": []
+    }
+  ],
+  "conversion": {
+    "method": "identity"
+  },
+  "generalRules": [
+    "Minden kérdésre a kérdés tartalmának megfelelő, biológiailag pontos válasz kell; a szakkifejezés hiánya nem hiba, ha a leírás helyes.",
+    "Következtetést csak indoklással fogadunk el teljes pontra."
+  ]
+}

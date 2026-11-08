@@ -1,0 +1,201 @@
+{
+  "schemaVersion": 1,
+  "id": "nem-gr-gist",
+  "subject": "nemet",
+  "level": "kozep",
+  "source": "generated",
+  "topic": "nyelvtan",
+  "title": "Fő gondolat",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "grammar",
+  "type": "lesson",
+  "category": "gist",
+  "summaryHu": "A fő gondolat megértése azt jelenti, hogy fel tudod ismerni, miről szól egy bekezdés vagy a teljes szöveg – akkor is, ha nem értesz minden szót. Ez a készség a címillesztésnél, a bekezdéskezdések visszahelyezésénél, a beszélők hozzárendelésénél és a „Worum geht es?” típusú feleletválasztós kérdéseknél számít. A leggyakoribb csapda, hogy a rossz cím egy részletet vagy egy szót vesz át a szövegből, ezért ismerősnek tűnik, de nem fedi az egész bekezdést.",
+  "rules": [
+    {
+      "title": "Az első és az utolsó mondat",
+      "explanation": "A bekezdés témáját gyakran az első mondat vezeti be, az utolsó pedig összegzi vagy következtetést von le. Olvasd el először ezeket, majd fusd át a bekezdés közepét: mi az, ami végig visszatér (ugyanaz a téma, szinonimák, névmások)?",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "Immer mehr Familien in Deutschland verzichten auf ein eigenes Auto. … Am Ende sparen sie nicht nur Geld, sondern schützen auch die Umwelt.",
+          "note": "Első mondat: autó nélküli családok; utolsó: előnyei. Fő gondolat: miért élnek egyre többen autó nélkül."
+        }
+      ]
+    },
+    {
+      "title": "A cím az egész bekezdést fedje",
+      "explanation": "A helyes cím a bekezdés egészére igaz, nem csak egy mondatára. Ha egy cím csak egy részletre illik (egy szám, egy példa, egy mellékes szereplő), valószínűleg csapda. Kérdezd meg: ha a bekezdés minden mondatát elolvasom, mindegyik ehhez a címhez tartozik?",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "Absatz über eine Schülerin, die ein Jahr in Kanada verbracht hat: Schule, Gastfamilie, neue Freunde, Heimweh am Anfang.",
+          "note": "Jó cím: Ein Jahr im Ausland. Rossz cím: Heimweh (honvágy) – ez csak egy részlet."
+        }
+      ]
+    },
+    {
+      "title": "A kulcsszó-csapda",
+      "explanation": "A rossz címekben gyakran olyan szó szerepel, amely szó szerint előfordul a bekezdésben. Az egyezés önmagában nem bizonyíték – a jó cím sokszor egészen más szavakkal foglalja össze a lényeget, mint a szöveg.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "Text: „Früher gab es in jedem Dorf ein Kino. Heute schauen die meisten Leute Filme lieber zu Hause auf dem Sofa, und viele kleine Kinos mussten schließen.”",
+          "note": "Az Ein Abend im Kino cím tartalmazza a Kino szót, de a bekezdés a kis mozik bezárásáról szól: Das Ende der Dorfkinos."
+        }
+      ]
+    },
+    {
+      "title": "Kizárásos módszer és felesleges címek",
+      "explanation": "Címillesztésnél egy-két cím felesleges. Kezdd azokkal a bekezdésekkel, amelyekben biztos vagy, és húzd ki a felhasznált címeket. A bizonytalan bekezdéseknél így kevesebb lehetőség marad. Végül ellenőrizd: a felesleges címek valóban egyik bekezdésre sem illenek jobban?",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "6 Überschriften – 5 Absätze",
+          "note": "Egy cím kimarad; ne próbáld mindenáron elhelyezni."
+        }
+      ]
+    },
+    {
+      "title": "Hallásnál: helyzet, szereplők, cél",
+      "explanation": "Hallási feladatban a fő gondolathoz azt kell megérteni, ki beszél kivel, hol, és miért (információt kér, panaszkodik, meghív, lemond). A helyzetet a felvétel első mondatai általában elárulják (Guten Tag, hier ist …; Liebe Fahrgäste, …), a célt pedig a kérés, javaslat vagy kérdés (Können wir …? Ich wollte fragen, ob …).",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "„Liebe Fahrgäste, wegen Bauarbeiten fährt die Linie 4 heute nur bis zum Hauptbahnhof.”",
+          "note": "Helyzet: hangosbemondás; fő gondolat: a 4-es vonal ma rövidebb útvonalon jár."
+        }
+      ]
+    }
+  ],
+  "commonMistakes": [
+    {
+      "wrong": "Azt a címet választom, amelyikben ugyanaz a szó szerepel, mint a bekezdésben.",
+      "right": "Azt a címet választom, amely a bekezdés egészének mondanivalóját foglalja össze – akár egészen más szavakkal.",
+      "why": "A szó szerinti egyezés tipikus csapda: a feladatírók szándékosan tesznek a rossz címekbe a szövegből ismert szavakat."
+    },
+    {
+      "wrong": "Egy érdekes részlet alapján döntök (pl. egy szám vagy egy példa).",
+      "right": "Megkeresem, mi a közös a bekezdés összes mondatában, és ehhez illesztem a címet.",
+      "why": "A részletre illő cím csak egy mondatra igaz; a fő gondolat az egész bekezdésre."
+    },
+    {
+      "wrong": "Minden szót le akarok fordítani, mielőtt a címekről döntök.",
+      "right": "Átfutom a bekezdést, megkeresem a témát és a visszatérő szavakat, és csak a kétes részeket olvasom el alaposan.",
+      "why": "A fő gondolat megértéséhez nem kell minden szó; a szóról szóra olvasás sok időt visz el, és a lényeg elveszhet a részletekben."
+    },
+    {
+      "wrong": "A felesleges címet is elhelyezem valahol, mert „biztos kell”.",
+      "right": "Elfogadom, hogy egy-két cím felesleges, és csak oda teszek címet, ahová valóban illik.",
+      "why": "A felesleges címek éppen azért vannak, hogy a találgatást kiszűrjék; ha egyet erőltetve elhelyezel, két feladatot is elronthatsz."
+    }
+  ],
+  "examTips": [
+    "Címillesztésnél először olvasd el az összes címet, és mindegyikről gondold végig, milyen bekezdést vársz hozzá – így olvasás közben gyorsabban felismered a párt.",
+    "Bekezdéskezdések visszahelyezésénél a kezdőmondatnak a bekezdés témáját kell bevezetnie, és illeszkednie kell az utána következő mondathoz (névmás, kötőszó).",
+    "Hallásnál a beszélők hozzárendelésénél az első hallgatáskor csak a beszélők fő mondanivalójára figyelj (mi a véleménye, mi a gondja), a részleteket a második hallgatásra hagyd."
+  ],
+  "practice": [
+    {
+      "id": "1",
+      "kind": "choice",
+      "prompt": "Viele Jugendliche verbringen heute mehrere Stunden pro Tag am Handy. Eine neue Studie zeigt, dass besonders der Schlaf darunter leidet: Wer abends lange im Internet surft, schläft später ein und ist am Morgen müde. Experten empfehlen deshalb, das Handy eine Stunde vor dem Schlafengehen auszuschalten.\n\nWelche Überschrift passt am besten?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Neue Handys für Jugendliche"
+        },
+        {
+          "key": "B",
+          "text": "Zu viel Handy – zu wenig Schlaf"
+        },
+        {
+          "key": "C",
+          "text": "Wie man richtig im Internet surft"
+        },
+        {
+          "key": "D",
+          "text": "Eine Studie über Experten"
+        }
+      ],
+      "answer": "B",
+      "category": "gist",
+      "evidence": "Eine neue Studie zeigt, dass besonders der Schlaf darunter leidet",
+      "explanation": "Helyes: B. A bekezdés minden mondata ugyanarról szól: a sok mobilozás rontja az alvást (a probléma, a tanulmány eredménye, a szakértők tanácsa).",
+      "wrongOptions": {
+        "A": "Új telefonokról a szöveg nem beszél; a Handy szó szerepel, de más összefüggésben (kulcsszó-csapda).",
+        "C": "Az im Internet surfen csak egy részlet (az esti szörfözés mint ok), a bekezdés nem az internetezés módjáról szól.",
+        "D": "A tanulmány és a szakértők szerepelnek, de a szöveg nem róluk szól, hanem a mobil és az alvás kapcsolatáról."
+      }
+    },
+    {
+      "id": "2",
+      "kind": "choice",
+      "prompt": "Seit über hundert Jahren gibt es in dem kleinen Dorf die Bäckerei Huber. Im letzten Winter wollte der alte Besitzer sie schließen, weil er keinen Nachfolger fand. Da hatten die Dorfbewohner eine Idee: Sie gründeten einen Verein, kauften die Bäckerei und führen sie jetzt gemeinsam weiter.\n\nWelche Überschrift passt am besten?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Die Geschichte des Brotes"
+        },
+        {
+          "key": "B",
+          "text": "Warum alte Bäckereien schließen"
+        },
+        {
+          "key": "C",
+          "text": "Ein kalter Winter auf dem Land"
+        },
+        {
+          "key": "D",
+          "text": "Ein Dorf rettet seine Bäckerei"
+        }
+      ],
+      "answer": "D",
+      "category": "gist",
+      "evidence": "Sie gründeten einen Verein, kauften die Bäckerei und führen sie jetzt gemeinsam weiter.",
+      "explanation": "Helyes: D. A bekezdés lényege a fordulat: a pékség bezárt volna, de a falu lakói egyesületet alapítottak, megvették és közösen viszik tovább – vagyis megmentették.",
+      "wrongOptions": {
+        "A": "A kenyér története nem téma; a pékség százéves múltja csak bevezető részlet.",
+        "B": "A bezárás csak a probléma volt, amely végül nem következett be; a bekezdés a megmentésről szól, és csak egy pékségről, nem általában a régi pékségekről.",
+        "C": "A tél csak az időpontot jelöli (im letzten Winter), a hidegről szó sincs."
+      }
+    },
+    {
+      "id": "3",
+      "kind": "choice",
+      "prompt": "(Hallás – üzenet a hangpostán) „Hallo Jana, hier ist Mia. Du, ich schaffe es heute leider nicht um vier ins Café, mein Bus hat Verspätung. Können wir uns um halb fünf treffen? Ruf mich bitte kurz zurück!”\n\nWarum ruft Mia an?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Sie möchte das Treffen eine halbe Stunde später beginnen."
+        },
+        {
+          "key": "B",
+          "text": "Sie möchte sich an einem anderen Ort treffen."
+        },
+        {
+          "key": "C",
+          "text": "Sie lädt Jana zum ersten Mal ins Café ein."
+        },
+        {
+          "key": "D",
+          "text": "Sie sagt das Treffen ab."
+        }
+      ],
+      "answer": "A",
+      "category": "gist",
+      "evidence": "Können wir uns um halb fünf treffen?",
+      "explanation": "Helyes: A. Mia késik a busz miatt, ezért azt kéri, hogy négy helyett fél ötkor találkozzanak – a találkozót fél órával későbbre teszi.",
+      "wrongOptions": {
+        "B": "A helyszín ugyanaz marad (ins Café); csak az időpont változik.",
+        "C": "A találkozó már meg volt beszélve (um vier ins Café), Mia nem most hívja meg Janát.",
+        "D": "Nem mondja le a találkozót, hanem új időpontot javasol (um halb fünf)."
+      }
+    }
+  ],
+  "relatedCategories": [
+    "text-structure",
+    "detail"
+  ]
+}

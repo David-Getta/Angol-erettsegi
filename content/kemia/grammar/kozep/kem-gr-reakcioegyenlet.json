@@ -1,0 +1,264 @@
+{
+  "schemaVersion": 1,
+  "id": "kem-gr-reakcioegyenlet",
+  "subject": "kemia",
+  "revision": 1,
+  "level": "kozep",
+  "source": "generated",
+  "topic": "nyelvtan",
+  "title": "Reakcióegyenlet rendezése",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "grammar",
+  "type": "lesson",
+  "category": "reakcioegyenlet",
+  "summaryHu": "A kémiai egyenlet csak akkor ér pontot, ha a képletek helyesek, és az egyenlet rendezett: mindkét oldalon azonos az atomok száma, ionegyenletnél a töltések összege is. Az érettségin szinte minden feladattípusban kell egyenletet írni – kísérletelemzésnél, elemző feladatban, számításnál és a szóbeli B tételben is –, és a számítás is hibás lesz, ha rossz az egyenlet. Tipikus hibák: a képlet indexének „rendezése” együttható helyett, rossz termék, rendezetlen redoxiegyenlet, hiányzó töltések.",
+  "rules": [
+    {
+      "title": "Először a helyes képletek, aztán az együtthatók",
+      "explanation": "A rendezés során CSAK az együtthatókat (a képletek elé írt számokat) szabad változtatni, az indexeket soha: az index a vegyület összetételét adja meg. Ehhez előbb a helyes képleteket kell felírni az ionok töltéséből (Al³⁺ és SO₄²⁻ → Al₂(SO₄)₃), a kétatomos elemmolekulákat (H₂, O₂, N₂, F₂, Cl₂, Br₂, I₂) pedig molekulaként kell írni.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "H₂ + O₂ → H₂O (rendezetlen) → 2 H₂ + O₂ → 2 H₂O"
+        },
+        {
+          "en": "Hibás: H₂ + O₂ → H₂O₂",
+          "hu": "Az index átírásával más anyag (hidrogén-peroxid) keletkezne!"
+        }
+      ]
+    },
+    {
+      "title": "A rendezés lépései",
+      "explanation": "Rendezz elemenként: kezdd azzal az elemmel, amely mindkét oldalon csak egy képletben fordul elő; a változatlanul megmaradó összetett ionokat (SO₄²⁻, NO₃⁻, PO₄³⁻) kezeld egységként; a hidrogént és az oxigént hagyd a végére. Égési egyenleteknél: C → CO₂, H → H₂O, végül O₂; ha tört jön ki, szorozz kettővel. A végén ellenőrizz minden elemet.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "C₃H₈ + 5 O₂ → 3 CO₂ + 4 H₂O",
+          "hu": "3 C → 3 CO₂; 8 H → 4 H₂O; az oxigén: 6 + 4 = 10 atom → 5 O₂."
+        },
+        {
+          "en": "2 C₂H₆ + 7 O₂ → 4 CO₂ + 6 H₂O",
+          "hu": "Az etánnál 3,5 O₂ jönne ki, ezért mindent kettővel szorzunk."
+        },
+        {
+          "en": "3 Ca(OH)₂ + 2 H₃PO₄ → Ca₃(PO₄)₂ + 6 H₂O",
+          "hu": "A foszfátiont egységként kezeljük."
+        }
+      ]
+    },
+    {
+      "title": "Ionegyenletek",
+      "explanation": "Az ionegyenletben csak a ténylegesen átalakuló részecskéket írjuk fel, a változatlanul maradó (néző) ionok elmaradnak. A vízben jól oldódó erős elektrolitokat (erős savak, erős bázisok, oldódó sók) ionosan, a csapadékot, a gázt, a vizet és a gyenge elektrolitokat molekulaképlettel írjuk. Az ionegyenlet akkor rendezett, ha az atomok ÉS a töltések összege is egyezik a két oldalon.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "AgNO₃ + NaCl → AgCl + NaNO₃ ⇒ Ag⁺ + Cl⁻ → AgCl"
+        },
+        {
+          "en": "HCl + NaOH → NaCl + H₂O ⇒ H⁺ + OH⁻ → H₂O"
+        },
+        {
+          "en": "CaCO₃ + 2 H⁺ → Ca²⁺ + H₂O + CO₂",
+          "hu": "A mészkő vízben nem oldódik, ezért képlettel írjuk; a töltés: +2 = +2."
+        }
+      ]
+    },
+    {
+      "title": "Redoxiegyenletek rendezése oxidációsszám-változással",
+      "explanation": "Határozd meg, melyik atom oxidációs száma nő és melyiké csökken, és mennyivel. Az együtthatókat úgy válaszd meg, hogy a leadott és a felvett elektronok száma egyezzen (legkisebb közös többszörös). Ezután rendezd a többi atomot, végül a hidrogént és az oxigént (vízzel), ionegyenletnél a töltéseket H⁺-nal vagy OH⁻-nal.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "2 Al + 3 Cu²⁺ → 2 Al³⁺ + 3 Cu",
+          "hu": "Az Al 3 elektront ad le, a Cu²⁺ 2-t vesz fel; LKKT = 6 → 2 Al és 3 Cu²⁺; a töltés: +6 = +6."
+        },
+        {
+          "en": "Cu + 4 HNO₃ → Cu(NO₃)₂ + 2 NO₂ + 2 H₂O",
+          "hu": "Cu: 0 → +2 (2 e⁻ le), N: +5 → +4 (1 e⁻ fel) → 2 NO₂; a nitrátként megmaradó 2 N miatt összesen 4 HNO₃ kell."
+        }
+      ]
+    },
+    {
+      "title": "Összetettebb redoxiegyenletek: a permanganát",
+      "explanation": "Savas közegben a permanganátion (MnO₄⁻, Mn: +7) mangán(II)-ionná redukálódik, vagyis 5 elektront vesz fel. Az elektronmérleg után a töltéseket H⁺-ionokkal, az oxigént vízzel rendezzük.",
+      "emeltOnly": true,
+      "examples": [
+        {
+          "en": "2 MnO₄⁻ + 5 H₂O₂ + 6 H⁺ → 2 Mn²⁺ + 5 O₂ + 8 H₂O",
+          "hu": "Mn: +7 → +2 (5 e⁻ fel) ×2; O: −1 → 0 (2 e⁻ le H₂O₂-molekulánként) ×5; a töltés: −2 + 6 = +4 = 2 · (+2)."
+        },
+        {
+          "en": "MnO₄⁻ + 5 Fe²⁺ + 8 H⁺ → Mn²⁺ + 5 Fe³⁺ + 4 H₂O",
+          "hu": "A töltés: −1 + 10 + 8 = +17 = +2 + 15."
+        }
+      ]
+    }
+  ],
+  "commonMistakes": [
+    {
+      "wrong": "Na + Cl → NaCl",
+      "right": "2 Na + Cl₂ → 2 NaCl",
+      "why": "A klór kétatomos molekulákból áll (Cl₂); a rendezéshez az együtthatót kell változtatni, nem az indexet."
+    },
+    {
+      "wrong": "Mg + HCl → MgCl₂ + H₂",
+      "right": "Mg + 2 HCl → MgCl₂ + H₂",
+      "why": "A bal oldalon 1 Cl és 1 H van, a jobb oldalon 2–2: a HCl elé 2-es együttható kell."
+    },
+    {
+      "wrong": "Fe + Cu²⁺ → Fe³⁺ + Cu",
+      "right": "Fe + Cu²⁺ → Fe²⁺ + Cu",
+      "why": "Réz(II)-ionokkal a vas vas(II)-ionokká oxidálódik; a hibás egyenletben ráadásul a töltések sem egyeznek (+2 ≠ +3)."
+    },
+    {
+      "wrong": "Al + Cu²⁺ → Al³⁺ + Cu",
+      "right": "2 Al + 3 Cu²⁺ → 2 Al³⁺ + 3 Cu",
+      "why": "Az atomok száma egyezik, de a töltés nem (+2 ≠ +3): a leadott (3) és a felvett (2) elektronok számát a 6-os közös többszörössel kell kiegyenlíteni."
+    },
+    {
+      "wrong": "CaCO₃ + 2 HCl → CaCl₂ + H₂CO₃",
+      "right": "CaCO₃ + 2 HCl → CaCl₂ + H₂O + CO₂",
+      "why": "A szénsav bomlékony, a reakcióban szén-dioxid-gáz és víz keletkezik – a tapasztalat (pezsgés) is ezt mutatja."
+    }
+  ],
+  "examTips": [
+    "Minden egyenlet után számold végig az atomokat elemenként, ionegyenletnél a töltéseket is – fél perc, de az egyenletpont és a ráépülő számítás is ezen múlik.",
+    "Számítási feladatnál az anyagmennyiség-arányt mindig a rendezett egyenletből olvasd ki; rendezetlen egyenlettel a végeredmény is hibás lesz.",
+    "Kísérletelemzésnél, ha a feladat ionegyenletet kér, ne írj molekulaegyenletet (és fordítva): a kért formáért jár a pont."
+  ],
+  "practice": [
+    {
+      "id": "1",
+      "kind": "choice",
+      "prompt": "Melyik a propán tökéletes égésének helyesen rendezett egyenlete?",
+      "options": [
+        {
+          "key": "A",
+          "text": "C₃H₈ + 5 O₂ → 3 CO₂ + 4 H₂O"
+        },
+        {
+          "key": "B",
+          "text": "C₃H₈ + O₂ → CO₂ + H₂O"
+        },
+        {
+          "key": "C",
+          "text": "C₃H₈ + 5 O₂ → 3 CO + 4 H₂O"
+        },
+        {
+          "key": "D",
+          "text": "C₃H₈ + 7 O₂ → 3 CO₂ + 4 H₂O"
+        }
+      ],
+      "answer": "A",
+      "category": "reakcioegyenlet",
+      "explanation": "Helyes: A. 3 C → 3 CO₂, 8 H → 4 H₂O, az oxigénatomok: 3 · 2 + 4 = 10 → 5 O₂.",
+      "wrongOptions": {
+        "B": "Rendezetlen: a szén-, a hidrogén- és az oxigénatomok száma sem egyezik.",
+        "C": "Tökéletes égéskor szén-dioxid keletkezik, és az oxigénatomok száma sem egyezik (10 ≠ 7).",
+        "D": "7 O₂ 14 oxigénatomot jelent, a jobb oldalon csak 10 van."
+      }
+    },
+    {
+      "id": "2",
+      "kind": "text",
+      "prompt": "Írd be a hiányzó együtthatót: 4 Al + ? O₂ → 2 Al₂O₃",
+      "answer": [
+        "3"
+      ],
+      "category": "reakcioegyenlet",
+      "explanation": "Helyes: 3. A jobb oldalon 2 · 3 = 6 oxigénatom van, ehhez 3 O₂-molekula kell; az alumíniumatomok száma (4 = 2 · 2) rendben van.",
+      "maxWords": 1
+    },
+    {
+      "id": "3",
+      "kind": "choice",
+      "prompt": "Melyik ionegyenlet rendezett?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Fe³⁺ + Zn → Fe + Zn²⁺"
+        },
+        {
+          "key": "B",
+          "text": "2 Fe³⁺ + Zn → 2 Fe + Zn²⁺"
+        },
+        {
+          "key": "C",
+          "text": "Fe³⁺ + 3 Zn → Fe + 3 Zn²⁺"
+        },
+        {
+          "key": "D",
+          "text": "2 Fe³⁺ + 3 Zn → 2 Fe + 3 Zn²⁺"
+        }
+      ],
+      "answer": "D",
+      "category": "reakcioegyenlet",
+      "explanation": "Helyes: D. A töltés a bal oldalon 2 · (+3) = +6, a jobb oldalon 3 · (+2) = +6; mindkét oldalon 2 Fe és 3 Zn van.",
+      "wrongOptions": {
+        "A": "Az atomok száma egyezik, de a töltés nem (+3 ≠ +2).",
+        "B": "A töltés nem egyezik (+6 ≠ +2).",
+        "C": "A töltés nem egyezik (+3 ≠ +6)."
+      }
+    },
+    {
+      "id": "4",
+      "kind": "text",
+      "prompt": "Mi a hiányzó termék képlete? CaCO₃ + 2 HCl → CaCl₂ + H₂O + ?",
+      "answer": [
+        "CO₂",
+        "CO2"
+      ],
+      "caseSensitive": true,
+      "category": "reakcioegyenlet",
+      "explanation": "Helyes: CO₂. A karbonát és a sav reakciójában keletkező szénsav vízre és szén-dioxidra bomlik; az atommérleg is csak így egyezik (1 C, 3 O).",
+      "maxWords": 1
+    },
+    {
+      "id": "5",
+      "kind": "choice",
+      "prompt": "Melyik a nátrium-hidroxid és a kénsav teljes közömbösítésének helyes egyenlete?",
+      "options": [
+        {
+          "key": "A",
+          "text": "2 NaOH + H₂SO₄ → Na₂SO₄ + 2 H₂O"
+        },
+        {
+          "key": "B",
+          "text": "NaOH + H₂SO₄ → NaSO₄ + H₂O"
+        },
+        {
+          "key": "C",
+          "text": "NaOH + H₂SO₄ → Na₂SO₄ + H₂O"
+        },
+        {
+          "key": "D",
+          "text": "2 NaOH + H₂SO₄ → Na₂SO₄ + H₂O"
+        }
+      ],
+      "answer": "A",
+      "category": "reakcioegyenlet",
+      "explanation": "Helyes: A. Teljes közömbösítéskor a kénsav két protonját két hidroxidion köti meg: mindkét oldalon 2 Na, 4 H, 1 S és 6 O van.",
+      "wrongOptions": {
+        "B": "A NaSO₄ képlet hibás: a Na⁺ és a SO₄²⁻ töltése miatt a nátrium-szulfát Na₂SO₄.",
+        "C": "Rendezetlen: 1 Na áll szemben 2-vel.",
+        "D": "A hidrogén- és az oxigénatomok száma nem egyezik: 4 H a bal oldalon, csak 2 a jobb oldalon."
+      }
+    },
+    {
+      "id": "6",
+      "kind": "text",
+      "prompt": "Rendezd az egyenletet: ? MnO₄⁻ + 5 Fe²⁺ + 8 H⁺ → Mn²⁺ + 5 Fe³⁺ + 4 H₂O – mi a permanganátion együtthatója? (emelt)",
+      "answer": [
+        "1"
+      ],
+      "category": "reakcioegyenlet",
+      "explanation": "Helyes: 1. A mangán +7-ről +2-re redukálódik (5 elektront vesz fel), ami éppen 5 Fe²⁺ → Fe³⁺ átalakulás elektronjainak felel meg; a töltés: −1 + 10 + 8 = +17 = +2 + 15.",
+      "maxWords": 1
+    }
+  ],
+  "relatedCategories": [
+    "reakciotipus",
+    "anyagmennyiseg"
+  ]
+}

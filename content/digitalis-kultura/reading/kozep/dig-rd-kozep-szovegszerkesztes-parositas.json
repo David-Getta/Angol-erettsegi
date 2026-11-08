@@ -1,0 +1,125 @@
+{
+  "schemaVersion": 1,
+  "id": "dig-rd-kozep-szovegszerkesztes-parositas",
+  "subject": "digitalis-kultura",
+  "revision": 1,
+  "level": "kozep",
+  "source": "generated",
+  "topic": "szovegszerkesztes",
+  "title": "Szövegszerkesztési fogalmak párosítása",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "reading",
+  "type": "parositas",
+  "instructions": "Párosítsa a leírásokat a szövegszerkesztési fogalmakkal (A–J)! Minden fogalmat legfeljebb egyszer használhat, két fogalom felesleges. A 0. a példa.",
+  "options": [
+    {
+      "key": "A",
+      "text": "bekezdés bal oldali behúzása"
+    },
+    {
+      "key": "B",
+      "text": "élőfej"
+    },
+    {
+      "key": "C",
+      "text": "hasábok"
+    },
+    {
+      "key": "D",
+      "text": "kézi sortörés (Shift+Enter)"
+    },
+    {
+      "key": "E",
+      "text": "körlevél"
+    },
+    {
+      "key": "F",
+      "text": "lábjegyzet"
+    },
+    {
+      "key": "G",
+      "text": "nem törhető szóköz"
+    },
+    {
+      "key": "H",
+      "text": "stílus"
+    },
+    {
+      "key": "I",
+      "text": "szakasztörés"
+    },
+    {
+      "key": "J",
+      "text": "tabulátor"
+    }
+  ],
+  "example": {
+    "id": "0",
+    "kind": "match",
+    "prompt": "Formázási beállítások elnevezett csoportja (betűtípus, méret, térköz…); ha módosítjuk, minden vele formázott bekezdés egyszerre megváltozik.",
+    "answer": "H",
+    "category": "formazas",
+    "explanation": "H – stílus. A stílus (pl. Címsor 1, Normál) egyetlen helyen tárolja a formázást; ezért a vizsgán a „stílussal” kért formázást nem szabad kézzel, bekezdésenként beállítani."
+  },
+  "items": [
+    {
+      "id": "1",
+      "kind": "match",
+      "prompt": "Egy sorban megadott pozícióhoz igazítja a szöveget, pl. árlistában a termék neve balra, az ára jobbra, pontozott kitöltéssel.",
+      "answer": "J",
+      "category": "formazas",
+      "explanation": "J – tabulátor. A tabulátorpozíció lehet balra, jobbra, középre vagy decimálisan igazító, és kaphat kitöltő karaktert (pontozás). Szóközökkel igazítani hiba, mert más betűtípusnál elcsúszik."
+    },
+    {
+      "id": "2",
+      "kind": "match",
+      "prompt": "Minden oldal tetején megismétlődő terület, ide kerülhet pl. a dokumentum címe vagy a szerző neve.",
+      "answer": "B",
+      "category": "formazas",
+      "explanation": "B – élőfej. Az oldal alján ismétlődő terület az élőláb (oda kerül általában az oldalszám). Az élőfej tartalmát elég egyszer beírni, minden oldalon megjelenik."
+    },
+    {
+      "id": "3",
+      "kind": "match",
+      "prompt": "Önállóan beállítható részekre bontja a dokumentumot, így pl. egyetlen oldal lehet fekvő tájolású az álló oldalak között.",
+      "answer": "I",
+      "category": "formazas",
+      "explanation": "I – szakasztörés. A szakaszonként eltérhet a tájolás, a margó, a hasábszám, az élőfej és az élőláb. A sima oldaltörés csak új oldalt kezd, a beállítások nem változnak."
+    },
+    {
+      "id": "4",
+      "kind": "match",
+      "prompt": "Két szó közé tett jel, amelynél a sor nem törhet el, pl. „5 kg”, „2027. május”, „dr. Kiss”.",
+      "answer": "G",
+      "category": "formazas",
+      "explanation": "G – nem törhető szóköz (Word és Writer: Ctrl+Shift+Szóköz). A szám és a mértékegysége, illetve a szorosan összetartozó szavak így mindig egy sorba kerülnek."
+    },
+    {
+      "id": "5",
+      "kind": "match",
+      "prompt": "Az oldal alján megjelenő, számmal hivatkozott megjegyzés vagy forrásmegjelölés.",
+      "answer": "F",
+      "category": "formazas",
+      "explanation": "F – lábjegyzet. A szövegszerkesztő automatikusan számozza, és a hivatkozott oldal aljára teszi; ha a dokumentum végére kerül, végjegyzetnek hívjuk."
+    },
+    {
+      "id": "6",
+      "kind": "match",
+      "prompt": "Ugyanazt a levelet sok címzettnek készíti el úgy, hogy egy adatforrás (pl. táblázat) mezőit illeszti be a levélbe.",
+      "answer": "E",
+      "category": "formazas",
+      "explanation": "E – körlevél. A törzsdokumentumba mezőket (pl. «Név», «Cím») szúrunk be; az egyesítéskor az adatforrás minden rekordjából külön levél készül."
+    },
+    {
+      "id": "7",
+      "kind": "match",
+      "prompt": "A szöveget újságszerűen több, egymás melletti oszlopba rendezi.",
+      "answer": "C",
+      "category": "formazas",
+      "explanation": "C – hasábok. A hasábok száma, szélessége és a köztük lévő térköz beállítható; ha csak egy részt akarunk hasábokba rendezni, azt szakasztörések határolják."
+    }
+  ],
+  "glossary": [],
+  "suggestedMinutes": 8
+}

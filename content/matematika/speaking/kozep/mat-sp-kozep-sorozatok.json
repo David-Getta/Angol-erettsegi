@@ -1,0 +1,91 @@
+{
+  "schemaVersion": 1,
+  "id": "mat-sp-kozep-sorozatok",
+  "subject": "matematika",
+  "revision": 1,
+  "level": "kozep",
+  "source": "generated",
+  "topic": "sorozatok",
+  "title": "Tétel: számtani és mértani sorozat",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "speaking",
+  "type": "tetel",
+  "partNumber": 1,
+  "instructionsHu": "Középszintű szóbeli tétel (30 perc felkészülés, kb. 15 perc felelet). Először válaszolj a három elméleti kérdésre (definíció, tétel kimondása a feltételekkel), majd oldd meg és magyarázd el a három feladatot: mondd ki, melyik összefüggést használod és miért, és fogalmazd meg a választ.",
+  "prompts": [
+    "1. elméleti kérdés: Definiálja a számtani sorozatot, és írja fel az n-edik tagját az első tag és a differencia segítségével!",
+    "2. elméleti kérdés: Definiálja a mértani sorozatot, és írja fel az n-edik tagját!",
+    "3. elméleti kérdés: Mondja ki a számtani és a mértani sorozat első n tagjának összegére vonatkozó képletet!",
+    "1. feladat: számtani sorozat differenciája és összege",
+    "2. feladat: mértani sorozat két tagjából a hányados és az első tag",
+    "3. feladat: szöveges feladat (széksorok) számtani sorozattal"
+  ],
+  "followUpQuestions": [
+    "Milyen sorozat a 3, 3, 3, …?"
+  ],
+  "usefulPhrases": [
+    {
+      "en": "aₙ = a₁ + (n − 1)d",
+      "hu": "A számtani sorozat n-edik tagja: az elsőhöz (n − 1)-szer adjuk a differenciát."
+    },
+    {
+      "en": "Sₙ = (a₁ + aₙ)·n/2",
+      "hu": "A számtani sorozat első n tagjának összege (Gauss ötlete: párosítás)."
+    },
+    {
+      "en": "bₙ = b₁·qⁿ⁻¹",
+      "hu": "A mértani sorozat n-edik tagja."
+    },
+    {
+      "en": "Sₙ = b₁·(qⁿ − 1)/(q − 1)",
+      "hu": "A mértani sorozat első n tagjának összege, ha q ≠ 1."
+    }
+  ],
+  "sources": [
+    {
+      "title": "1. feladat",
+      "text": "Egy számtani sorozat első tagja 7, ötödik tagja 19. Mennyi a differenciája és az első 10 tagjának összege?"
+    },
+    {
+      "title": "2. feladat",
+      "text": "Egy mértani sorozat második tagja 6, negyedik tagja 54. Mennyi lehet a sorozat hányadosa és első tagja?"
+    },
+    {
+      "title": "3. feladat",
+      "text": "Egy színházterem első sorában 12 szék van, és minden további sorban 2-vel több, mint az előzőben. A teremben 15 sor van. Hány szék van összesen a teremben?"
+    }
+  ],
+  "keyPoints": [
+    "Számtani sorozat: a második tagtól kezdve bármely tag és az előző tag különbsége állandó (d).",
+    "aₙ = a₁ + (n − 1)·d; Sₙ = (a₁ + aₙ)·n/2.",
+    "Mértani sorozat: az első tag nem 0, és a második tagtól kezdve bármely tag és az előző tag hányadosa állandó (q ≠ 0).",
+    "bₙ = b₁·qⁿ⁻¹; Sₙ = b₁·(qⁿ − 1)/(q − 1), ha q ≠ 1; q = 1 esetén Sₙ = n·b₁.",
+    "1. feladat: d = 3, a₁₀ = 34, S₁₀ = 205.",
+    "2. feladat: q² = 9, két megoldás: q = 3, b₁ = 2, illetve q = −3, b₁ = −2.",
+    "3. feladat: a₁₅ = 40, S₁₅ = 390 szék."
+  ],
+  "speakingSeconds": 900,
+  "prepSeconds": 1800,
+  "sampleAnswer": {
+    "turns": [
+      {
+        "speaker": "candidate",
+        "text": "Az első elméleti kérdés: egy sorozat számtani sorozat, ha a második tagtól kezdve bármelyik tag és az azt megelőző tag különbsége ugyanaz az állandó szám; ezt differenciának nevezzük és d-vel jelöljük. Az n-edik tag: aₙ = a₁ + (n − 1)·d, mert az első tagtól az n-edikig (n − 1)-szer adjuk hozzá a differenciát.\nA második kérdés: egy sorozat mértani sorozat, ha az első tagja nem nulla, és a második tagtól kezdve bármelyik tag és az azt megelőző tag hányadosa ugyanaz az állandó szám; ez a hányados, q, ami nem lehet 0. Az n-edik tag: bₙ = b₁·qⁿ⁻¹.\nA harmadik kérdés: a számtani sorozat első n tagjának összege Sₙ = (a₁ + aₙ)·n/2, vagy másképp Sₙ = (2a₁ + (n − 1)d)·n/2. A mértani sorozat első n tagjának összege, ha q ≠ 1: Sₙ = b₁·(qⁿ − 1)/(q − 1); ha q = 1, akkor minden tag egyenlő, és Sₙ = n·b₁.\n\nAz első feladatban a₅ = a₁ + 4d, tehát 19 = 7 + 4d, ebből 4d = 12 és d = 3. A tizedik tag a₁₀ = 7 + 9·3 = 34. Az első 10 tag összege S₁₀ = (7 + 34)·10/2 = 41·5 = 205. A differencia 3, az első tíz tag összege 205.\n\nA második feladatban b₄ = b₂·q², mert a második tagtól a negyedikig kétszer szorzunk q-val. Így 54 = 6·q², q² = 9, és ebből q = 3 vagy q = −3 – mindkettő lehetséges, ezt nem szabad elhagyni. Ha q = 3, akkor b₁ = b₂/q = 6/3 = 2, a sorozat 2, 6, 18, 54, …; ha q = −3, akkor b₁ = −2, a sorozat −2, 6, −18, 54, … Mindkettőnek valóban 6 a második és 54 a negyedik tagja. Válasz: q = 3 és b₁ = 2, vagy q = −3 és b₁ = −2.\n\nA harmadik feladatban a sorokban lévő székek száma számtani sorozat, a₁ = 12, d = 2. A 15. sorban a₁₅ = 12 + 14·2 = 40 szék van. Az összes szék száma S₁₅ = (12 + 40)·15/2 = 52·7,5 = 390. A teremben összesen 390 szék van."
+      },
+      {
+        "speaker": "examiner",
+        "text": "Milyen sorozat a 3, 3, 3, …? Számtani vagy mértani?"
+      },
+      {
+        "speaker": "candidate",
+        "text": "Mindkettő: a szomszédos tagok különbsége állandó 0, tehát számtani sorozat d = 0-val, és a hányadosuk állandó 1, tehát mértani sorozat q = 1-gyel. Ilyenkor a mértani összegképlet helyett Sₙ = n·b₁-et kell használni."
+      }
+    ],
+    "notes": [
+      "Elmélet: mindkét definíció pontos (a mértani sorozatnál az első tag és a hányados nem nulla), az n-edik tag és az összegképletek feltétellel (q ≠ 1) szerepelnek.",
+      "Feladatok: az 1. és 3. feladat a képletek helyes behelyettesítése, a 2. feladatban a q² = 9 mindkét megoldását megtalálja és ellenőrzi – ez a leggyakoribb pontvesztés ennél a tételnél.",
+      "Kommunikáció: minden lépésnél megmondja, miért annyi a kitevő vagy a szorzó (pl. „kétszer szorzunk q-val”), és a vizsgáztató kérdésére indoklással felel."
+    ]
+  }
+}

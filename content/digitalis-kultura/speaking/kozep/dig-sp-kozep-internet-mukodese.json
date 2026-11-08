@@ -1,0 +1,82 @@
+{
+  "schemaVersion": 1,
+  "id": "dig-sp-kozep-internet-mukodese",
+  "subject": "digitalis-kultura",
+  "revision": 1,
+  "level": "kozep",
+  "source": "generated",
+  "topic": "halozatok",
+  "title": "Az internet működése és szolgáltatásai",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "speaking",
+  "type": "elmeleti-tetel",
+  "partNumber": 1,
+  "instructionsHu": "Mutassa be, hogyan épülnek fel a számítógép-hálózatok és hogyan működik az internet! Térjen ki a címzésre, a névfeloldásra és a legfontosabb szolgáltatásokra, majd a tételkártya példája alapján magyarázza el, mi történik egy weboldal megnyitásakor!",
+  "prompts": [
+    "Hálózattípusok (LAN, WAN) és hálózati eszközök (router, switch, vezeték nélküli hozzáférési pont)",
+    "IP-cím, domainnév, DNS",
+    "Kliens–szerver modell, protokollok (HTTP/HTTPS, SMTP, IMAP)",
+    "Internetes szolgáltatások: web, e-mail, felhőtárhely, streaming",
+    "Biztonságos internethasználat: https, erős jelszó, kétlépcsős azonosítás"
+  ],
+  "followUpQuestions": [
+    "Mi a különbség a switch és a router között?",
+    "Miért nem elég önmagában a https a biztonsághoz?"
+  ],
+  "usefulPhrases": [
+    {
+      "en": "LAN, WAN",
+      "hu": "helyi és nagy kiterjedésű hálózat"
+    },
+    {
+      "en": "router (útválasztó)",
+      "hu": "hálózatok között továbbítja a csomagokat"
+    },
+    {
+      "en": "IP-cím",
+      "hu": "az eszköz azonosítója a hálózaton"
+    },
+    {
+      "en": "DNS",
+      "hu": "domainnév → IP-cím fordítás"
+    },
+    {
+      "en": "protokoll",
+      "hu": "a kommunikáció szabályrendszere (HTTP, HTTPS, SMTP)"
+    },
+    {
+      "en": "kliens–szerver",
+      "hu": "a kliens kér, a szerver kiszolgál"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Tételkártya",
+      "text": "Ha beírja a böngészőbe a www.pelda.hu címet, néhány tized másodperc múlva megjelenik az oldal. Magyarázza el lépésenként, mi történik közben!"
+    }
+  ],
+  "keyPoints": [
+    "A hálózat összekapcsolt eszközök rendszere, amely adatcserét és erőforrás-megosztást tesz lehetővé; LAN: helyi (épület, iskola), WAN: nagy kiterjedésű; az internet hálózatok hálózata.",
+    "Eszközök: a switch a helyi hálózaton belül továbbít, a router hálózatok között, IP-cím alapján választ útvonalat; a hozzáférési pont a vezeték nélküli eszközöket kapcsolja be.",
+    "Minden eszköznek IP-címe van (IPv4: 4 db 0–255 közötti szám, 32 bit; IPv6: 128 bit); a DNS a domainnevet IP-címre fordítja.",
+    "Kliens–szerver modell: a böngésző (kliens) kérést küld, a webszerver válaszol; protokoll = a kommunikáció szabályai (HTTP/HTTPS a webhez, SMTP a levélküldéshez, IMAP/POP3 a letöltéshez).",
+    "Az adatok csomagokra bontva, akár különböző útvonalon utaznak, a célgépen állnak össze.",
+    "A https titkosított kapcsolatot jelent, de nem garantálja, hogy az oldal megbízható; védekezés: erős, egyedi jelszavak, kétlépcsős azonosítás, frissítések."
+  ],
+  "speakingSeconds": 480,
+  "prepSeconds": 900,
+  "sampleAnswer": {
+    "turns": [
+      {
+        "speaker": "candidate",
+        "text": "A számítógép-hálózat összekapcsolt eszközök rendszere, amelyek adatot cserélnek és erőforrásokat osztanak meg. A helyi hálózat, a LAN, egy épületet vagy iskolát fed le, a WAN nagy földrajzi területet; az internet pedig a hálózatok világméretű hálózata. A helyi hálózaton belül a switch, vagyis kapcsoló továbbítja az adatokat a gépek között, a router pedig a hálózatokat köti össze, és az IP-cím alapján dönti el, merre küldje tovább a csomagokat. A vezeték nélküli eszközök hozzáférési ponton keresztül csatlakoznak.\n\nMinden eszköznek van IP-címe: az IPv4-cím négy, 0 és 255 közötti számból áll, például 192.168.1.10, ez 32 bit; mivel ezek elfogytak, terjed a 128 bites IPv6. Az embereknek a nevek könnyebbek, ezért van a DNS, amely a domainnevet IP-címre fordítja.\n\nA tételkártya példájában először a gépem a DNS-szervertől megkérdezi, mi a www.pelda.hu IP-címe. Ezután a böngészőm, a kliens, kapcsolatot nyit a webszerverrel, és HTTPS protokollal kéri az oldalt; a TLS titkosítás miatt ezt más nem olvashatja. A szerver visszaküldi a HTML-fájlt, a böngésző pedig külön kérésekkel letölti a képeket és a stíluslapot, és megjeleníti az oldalt. Az adatok kis csomagokban utaznak, sok routeren keresztül.\n\nAz internet legfontosabb szolgáltatásai a web, az e-mail – levélküldéskor SMTP, olvasáskor IMAP –, a felhőtárhely és a videók streamelése. A biztonsághoz figyelni kell a https-re, de tudni kell, hogy egy csaló oldalnak is lehet tanúsítványa; fontos még az erős, egyedi jelszó és a kétlépcsős azonosítás."
+      }
+    ],
+    "notes": [
+      "Tartalom: a hálózattípusoktól a címzésen és a DNS-en át a szolgáltatásokig minden szempontot érint, a tételkártya kérdését lépésről lépésre, helyes sorrendben (DNS → kapcsolat → HTTP-kérés → válasz → további kérések) válaszolja meg.",
+      "Szaknyelv: a kliens, szerver, protokoll, csomag, TLS fogalmakat pontosan használja, és megkülönbözteti a switch és a router szerepét.",
+      "Összefüggések: a https korlátját (csaló oldalnak is lehet tanúsítványa) is megemlíti – ez a „pontos szakkifejezések, összekapcsolás” szempontban többletpontot ér."
+    ]
+  }
+}

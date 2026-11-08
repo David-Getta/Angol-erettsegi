@@ -1,0 +1,287 @@
+{
+  "schemaVersion": 1,
+  "id": "mag-rd-kozep-papir-vagy-kepernyo",
+  "subject": "magyar",
+  "revision": 1,
+  "level": "kozep",
+  "source": "generated",
+  "topic": "szovegertes",
+  "title": "Lapozni vagy görgetni?",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "reading",
+  "type": "szovegertes",
+  "instructions": "Olvassa el figyelmesen az alábbi publicisztikai szöveget, majd oldja meg a hozzá kapcsolódó feladatokat (1–10)! A válaszokat a szöveg alapján adja meg. A 0. feladat a példa.",
+  "passage": {
+    "title": "Lapozni vagy görgetni?",
+    "blocks": [
+      {
+        "text": "Aki ma felszáll egy reggeli villamosra, szinte biztosan több telefont lát, mint könyvet. A képernyőkön hírek, üzenetek, rövid videók és hosszabb cikkek váltják egymást, és sokan már a kötelező olvasmányokat is telefonon vagy táblagépen olvassák el. Kézenfekvő a kérdés: mindegy-e, hogy papíron vagy képernyőn olvasunk? A válasz – mint oly sokszor – az, hogy attól függ, mit és miért olvasunk."
+      },
+      {
+        "text": "Az elmúlt két évtizedben számos kutatás vizsgálta, hogyan értjük meg ugyanazt a szöveget a két különböző felületen. Egy 2018-ban megjelent összefoglaló elemzés, amely több tucat korábbi vizsgálat eredményeit vetette össze, arra jutott, hogy az ismeretterjesztő, magyarázó szövegeknél a papíron olvasók átlagosan valamivel jobban teljesítettek a szövegértési feladatokban. Az elbeszélő szövegeknél, vagyis a történeteknél viszont alig volt különbség. A kutatók azt is megfigyelték, hogy a képernyő hátránya akkor a legnagyobb, ha az olvasónak sietnie kell."
+      },
+      {
+        "text": "Miért lehet ez így? Az egyik magyarázat a szokásainkban rejlik. A képernyőn többnyire rövid, gyorsan fogyasztható tartalmakat olvasunk, és közben ugrálunk: átfutjuk a címeket, megnézünk egy képet, aztán továbbgörgetünk. Ezt az olvasási módot sokan „pásztázó” olvasásnak hívják. A baj nem azzal van, hogy pásztázunk – egy menetrend vagy egy hírösszefoglaló esetében ez teljesen ésszerű –, hanem azzal, hogy a megszokás egy hosszabb, összetettebb szövegnél is átveszi az irányítást. Ilyenkor azt hisszük, hogy megértettük, amit olvastunk, pedig csak a felszínt érintettük."
+      },
+      {
+        "text": "A papír melletti másik érv a tájékozódás. Egy nyomtatott könyvben a szöveg helye is jelentést hordoz: emlékszünk, hogy egy fontos mondat a bal oldal alján volt, nagyjából a könyv harmadánál. A kezünk érzi, mennyit olvastunk már, és mennyi van még hátra. A képernyőn ezek a támpontok elmosódnak, a szöveg egyetlen végtelen szalagként fut előttünk, és nehezebb fejben „térképet” rajzolni róla. Ráadásul a papír nem küld értesítést: egy könyv lapjai között nem villan fel üzenet, nem hív egy újabb videó, és semmi sem csábít arra, hogy félbehagyjuk az olvasást. A figyelem megosztása pedig, ahogy azt bárki tapasztalhatta már, a megértés egyik legnagyobb ellensége."
+      },
+      {
+        "text": "Mindebből azonban hiba volna arra következtetni, hogy a digitális olvasás eleve rosszabb. A képernyő olyan lehetőségeket is kínál, amelyeket a papír nem: egyetlen érintéssel kikereshetjük egy ismeretlen szó jelentését, felnagyíthatjuk a betűket, vagy hangosan felolvastathatjuk a szöveget. A gyengénlátó vagy diszlexiás olvasóknak ezek az eszközök sokszor éppen azt teszik lehetővé, hogy egyáltalán olvassanak. Az e-könyv-olvasók tükröződésmentes kijelzője pedig sokak tapasztalata szerint kevésbé fárasztja a szemet, mint a telefoné. Egy zsebben elférő készüléken ráadásul egész könyvtárat vihetünk magunkkal a nyaralásra vagy a kollégiumba."
+      },
+      {
+        "text": "A kérdés tehát nem az, hogy papír vagy képernyő, hanem az, hogy tudatosan választunk-e. Ha egy tankönyvi fejezetet kell megtanulni, vagy egy nehezebb esszén kell elgondolkodni, érdemes kinyomtatni, vagy legalább kikapcsolni az értesítéseket és ceruzát venni a kezünkbe. Ha viszont gyorsan kell eligazodnunk egy hírben vagy egy menetrendben, nyugodtan maradhatunk a telefonnál. Egy regényt pedig, amelyet kikapcsolódásként olvasunk, bátran olvashatunk e-könyv-olvasón is, hiszen a történetek megértésében a kutatások szerint alig van különbség. A jó olvasó nem az, aki ragaszkodik egyetlen felülethez, hanem az, aki tudja, melyik helyzetben melyik szolgálja jobban."
+      },
+      {
+        "text": "Végül egy apró, de nem lényegtelen tanács: bármelyik felületet választjuk, a megértés legjobb próbája az, ha a szöveg végén becsukjuk a könyvet vagy lezárjuk a képernyőt, és néhány mondatban, a saját szavainkkal elmondjuk, mit olvastunk. Ha ez sikerül, mindegy, hogy lapoztunk vagy görgettünk."
+      }
+    ]
+  },
+  "example": {
+    "id": "0",
+    "kind": "tf",
+    "prompt": "Igaz vagy hamis? A szerző szerint egy reggeli villamoson ma több telefont látni, mint könyvet.",
+    "answer": "T",
+    "category": "informacio-visszakereses",
+    "explanation": "Igaz: a szöveg első mondata szerint aki reggel villamosra száll, „szinte biztosan több telefont lát, mint könyvet”.",
+    "evidence": "szinte biztosan több telefont lát, mint könyvet"
+  },
+  "items": [
+    {
+      "id": "1",
+      "kind": "text",
+      "prompt": "Melyik évben jelent meg az az összefoglaló elemzés, amelyről a 2. bekezdés beszámol? Írja le az évszámot!",
+      "answer": [
+        "2018",
+        "2018-ban",
+        "2018. év"
+      ],
+      "maxWords": 2,
+      "category": "informacio-visszakereses",
+      "explanation": "Helyes válasz: 2018. A 2. bekezdés így vezeti be a kutatást: „Egy 2018-ban megjelent összefoglaló elemzés”. Ilyen adatkérdésnél csak a pontos adatot kell visszaadni, magyarázat nem kell.",
+      "evidence": "Egy 2018-ban megjelent összefoglaló elemzés"
+    },
+    {
+      "id": "2",
+      "kind": "choice",
+      "prompt": "Milyen szövegeknél NEM talált érdemi különbséget az elemzés a papíron és a képernyőn olvasók eredményei között?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Az elbeszélő szövegeknél, vagyis a történeteknél."
+        },
+        {
+          "key": "B",
+          "text": "Az ismeretterjesztő szövegeknél."
+        },
+        {
+          "key": "C",
+          "text": "A magyarázó szövegeknél."
+        },
+        {
+          "key": "D",
+          "text": "Minden szövegtípusnál azonos volt az eredmény."
+        }
+      ],
+      "answer": "A",
+      "category": "informacio-visszakereses",
+      "explanation": "Helyes: A. A szöveg szerint „Az elbeszélő szövegeknél, vagyis a történeteknél viszont alig volt különbség.” A kérdésben a NEM szó a döntő: a különbség hiányát kell megtalálni.",
+      "evidence": "Az elbeszélő szövegeknél, vagyis a történeteknél viszont alig volt különbség.",
+      "wrongOptions": {
+        "B": "Éppen az ismeretterjesztő, magyarázó szövegeknél teljesítettek jobban a papíron olvasók, ott tehát volt különbség.",
+        "C": "A magyarázó szövegek az ismeretterjesztőkkel együtt szerepelnek: ezeknél a papír előnyét mutatta ki az elemzés.",
+        "D": "A szöveg két szövegtípust megkülönböztet, és csak az egyiknél nem talált érdemi eltérést; az eredmény tehát nem volt mindenütt azonos."
+      }
+    },
+    {
+      "id": "3",
+      "kind": "tf",
+      "prompt": "Igaz vagy hamis? A kutatók szerint a képernyő hátránya akkor a legkisebb, ha az olvasónak sietnie kell.",
+      "answer": "F",
+      "category": "informacio-visszakereses",
+      "explanation": "Hamis: a szöveg az ellenkezőjét állítja – a képernyő hátránya akkor a legnagyobb, ha az olvasónak sietnie kell. Az állítás egyetlen szót (legkisebb ↔ legnagyobb) fordít meg, ezért kell pontosan visszaolvasni.",
+      "evidence": "a képernyő hátránya akkor a legnagyobb, ha az olvasónak sietnie kell"
+    },
+    {
+      "id": "4",
+      "kind": "text",
+      "prompt": "Hogyan nevezi a szöveg azt az olvasási módot, amikor átfutjuk a címeket, megnézünk egy képet, aztán továbbgörgetünk? Írja ki a szövegből a jelzőt!",
+      "answer": [
+        "pásztázó",
+        "pásztázó olvasás",
+        "pásztázó olvasásnak",
+        "„pásztázó” olvasás"
+      ],
+      "maxWords": 2,
+      "category": "informacio-visszakereses",
+      "explanation": "Helyes válasz: pásztázó (olvasás). A 3. bekezdés leírja az ugráló, címeket átfutó olvasást, majd megnevezi: „Ezt az olvasási módot sokan »pásztázó« olvasásnak hívják.”",
+      "evidence": "Ezt az olvasási módot sokan „pásztázó” olvasásnak hívják."
+    },
+    {
+      "id": "5",
+      "kind": "choice",
+      "prompt": "Mi a szerző véleménye a pásztázó olvasásról?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Minden helyzetben káros, ezért le kell szokni róla."
+        },
+        {
+          "key": "B",
+          "text": "Bizonyos szövegeknél ésszerű; az a baj, ha hosszabb, összetettebb szövegnél is így olvasunk."
+        },
+        {
+          "key": "C",
+          "text": "Csak képernyőn lehet így olvasni, papíron nem."
+        },
+        {
+          "key": "D",
+          "text": "Ez a leghatékonyabb módszer a tananyag megtanulására."
+        }
+      ],
+      "answer": "B",
+      "category": "kovetkeztetes",
+      "explanation": "Helyes: B. A szerző szerint „A baj nem azzal van, hogy pásztázunk”: menetrendnél vagy hírösszefoglalónál ez ésszerű, a gond az, ha a megszokás egy hosszabb, összetettebb szövegnél is átveszi az irányítást.",
+      "evidence": "A baj nem azzal van, hogy pásztázunk",
+      "wrongOptions": {
+        "A": "A szerző kifejezetten ésszerűnek tartja a pásztázást menetrendnél és hírösszefoglalónál, tehát nem tartja minden helyzetben károsnak.",
+        "C": "A szöveg a képernyős szokásainkhoz köti a pásztázást, de nem állítja, hogy papíron lehetetlen volna.",
+        "D": "Épp fordítva: tankönyvi fejezet megtanulásához a szerző a figyelmes, ceruzás olvasást ajánlja, a pásztázás ott csak a felszínt érinti."
+      }
+    },
+    {
+      "id": "6",
+      "kind": "choice",
+      "prompt": "Mi a 4. bekezdés fő gondolata?",
+      "options": [
+        {
+          "key": "A",
+          "text": "A könyvek fontos mondatai mindig a bal oldal alján vannak."
+        },
+        {
+          "key": "B",
+          "text": "A képernyőn nagyobb betűkkel is lehet olvasni."
+        },
+        {
+          "key": "C",
+          "text": "A nyomtatott könyvben a szöveg helye és a könyv tapintható terjedelme segíti a tájékozódást."
+        },
+        {
+          "key": "D",
+          "text": "A digitális szöveg rövidebb, mint a nyomtatott."
+        }
+      ],
+      "answer": "C",
+      "category": "lenyegkiemeles",
+      "explanation": "Helyes: C. A bekezdés tételmondata: „A papír melletti másik érv a tájékozódás.” A további mondatok ezt fejtik ki (emlékszünk a mondat helyére, a kezünk érzi a terjedelmet, a képernyőn ezek a támpontok elmosódnak).",
+      "evidence": "A papír melletti másik érv a tájékozódás.",
+      "wrongOptions": {
+        "A": "A bal oldal alja csak egy példa arra, hogy emlékszünk egy mondat helyére; nem általános szabály, és nem a bekezdés fő gondolata.",
+        "B": "A betűk nagyítása az 5. bekezdésben, a képernyő előnyei között szerepel, nem a 4. bekezdés gondolata.",
+        "D": "A szöveg nem állítja, hogy a digitális szöveg rövidebb; a képernyős szöveget „végtelen szalagnak” nevezi, vagyis a tagolatlanságát emeli ki."
+      }
+    },
+    {
+      "id": "7",
+      "kind": "tf",
+      "prompt": "Igaz vagy hamis? A szerző szerint a digitális eszközök a gyengénlátó vagy diszlexiás olvasóknak is segíthetnek.",
+      "answer": "T",
+      "category": "informacio-visszakereses",
+      "explanation": "Igaz: az 5. bekezdés szerint a szókikeresés, a betűnagyítás és a felolvastatás a gyengénlátó vagy diszlexiás olvasóknak sokszor éppen azt teszi lehetővé, hogy egyáltalán olvassanak.",
+      "evidence": "A gyengénlátó vagy diszlexiás olvasóknak ezek az eszközök sokszor éppen azt teszik lehetővé, hogy egyáltalán olvassanak."
+    },
+    {
+      "id": "8",
+      "kind": "choice",
+      "prompt": "Milyen szerepet tölt be az 5. bekezdés a szöveg gondolatmenetében?",
+      "options": [
+        {
+          "key": "A",
+          "text": "A szerző személyes élményét meséli el."
+        },
+        {
+          "key": "B",
+          "text": "Összefoglalja a 2018-as kutatás módszerét."
+        },
+        {
+          "key": "C",
+          "text": "Új témát vezet be: a könyvtárak jövőjét."
+        },
+        {
+          "key": "D",
+          "text": "Árnyalja a korábbiakat: bemutatja a digitális olvasás előnyeit, hogy ne lehessen egyoldalú következtetést levonni."
+        }
+      ],
+      "answer": "D",
+      "category": "szovegszerkezet",
+      "explanation": "Helyes: D. Az 5. bekezdés az „azonban” kötőszóval fordulatot jelez: „Mindebből azonban hiba volna arra következtetni, hogy a digitális olvasás eleve rosszabb.” Ezután a képernyő előnyeit sorolja, vagyis ellenpontozza és árnyalja a papír mellett szóló érveket.",
+      "evidence": "Mindebből azonban hiba volna arra következtetni, hogy a digitális olvasás eleve rosszabb.",
+      "wrongOptions": {
+        "A": "A bekezdés általános megállapításokat tesz (kínál, kikereshetjük, felnagyíthatjuk), személyes történetet nem mesél el.",
+        "B": "A kutatásról a 2. bekezdés szól, és ott sem a módszerről, hanem az eredményekről; az 5. bekezdés nem tér vissza rá.",
+        "C": "A „könyvtár” szó csak képletes kifejezésben szerepel (egész könyvtárat vihetünk magunkkal); a bekezdés témája a digitális olvasás előnyei, nem a könyvtárak jövője."
+      }
+    },
+    {
+      "id": "9",
+      "kind": "choice",
+      "prompt": "Melyik műfajba sorolható leginkább a szöveg?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Tudományos szakcikk módszertani leírással és hivatkozásokkal."
+        },
+        {
+          "key": "B",
+          "text": "Publicisztika: véleményt kifejtő, tanácsot adó cikk."
+        },
+        {
+          "key": "C",
+          "text": "Novella."
+        },
+        {
+          "key": "D",
+          "text": "Hivatalos levél."
+        }
+      ],
+      "answer": "B",
+      "category": "szovegszerkezet",
+      "explanation": "Helyes: B. A szöveg egy hétköznapi kérdésből indul, kutatási eredményekre hivatkozik, de a végén saját álláspontot fogalmaz meg és tanácsot ad az olvasónak („A kérdés tehát nem az, hogy papír vagy képernyő, hanem az, hogy tudatosan választunk-e.”) – ez a publicisztika jellemzője.",
+      "evidence": "A kérdés tehát nem az, hogy papír vagy képernyő, hanem az, hogy tudatosan választunk-e.",
+      "wrongOptions": {
+        "A": "Tudományos szakcikkben pontos hivatkozások, módszertani leírás, adatok szerepelnének; itt a kutatás csak egy-két mondatban, közérthetően jelenik meg, a hangnem pedig személyes, tanácsadó.",
+        "C": "A novella fikciós elbeszélés szereplőkkel és cselekménnyel; ez a szöveg érvel és tájékoztat, nem történetet mesél.",
+        "D": "Hivatalos levélnek megszólítása, címzettje, hivatalos ügye volna; ez a szöveg a nagyközönséghez szól."
+      }
+    },
+    {
+      "id": "10",
+      "kind": "tf",
+      "prompt": "Igaz vagy hamis? A szerző azt javasolja, hogy egy tankönyvi fejezet tanulásakor legalább kapcsoljuk ki az értesítéseket.",
+      "answer": "T",
+      "category": "informacio-visszakereses",
+      "explanation": "Igaz: a 6. bekezdés szerint tankönyvi fejezet tanulásakor érdemes kinyomtatni a szöveget, „vagy legalább kikapcsolni az értesítéseket és ceruzát venni a kezünkbe”.",
+      "evidence": "vagy legalább kikapcsolni az értesítéseket és ceruzát venni a kezünkbe"
+    }
+  ],
+  "glossary": [
+    {
+      "term": "kézenfekvő",
+      "meaning": "magától értetődő, nyilvánvaló"
+    },
+    {
+      "term": "pásztázó",
+      "meaning": "a szövegen gyorsan végigfutó, csak kulcsszavakat, címeket kereső (olvasás)"
+    },
+    {
+      "term": "támpont",
+      "meaning": "kiindulópont, amelyhez igazodni lehet"
+    },
+    {
+      "term": "diszlexiás",
+      "meaning": "olvasási zavarral (diszlexiával) élő"
+    }
+  ],
+  "suggestedMinutes": 30
+}

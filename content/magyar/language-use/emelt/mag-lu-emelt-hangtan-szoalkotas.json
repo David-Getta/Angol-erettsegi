@@ -1,0 +1,293 @@
+{
+  "schemaVersion": 1,
+  "id": "mag-lu-emelt-hangtan-szoalkotas",
+  "subject": "magyar",
+  "revision": 1,
+  "level": "emelt",
+  "source": "generated",
+  "topic": "nyelvi-szintek",
+  "title": "Hangtani jelenségek és szóalkotási módok",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "language-use",
+  "type": "nyelvi-feladat",
+  "instructions": "Nevezze meg a szavak kiejtésében érvényesülő hangtani jelenséget, illetve a szóalkotás módját! Válassza ki a helyes választ (A, B, C vagy D)! A szögletes zárójel a kiejtést jelöli. A 0. sor a példa.",
+  "example": {
+    "id": "0",
+    "kind": "choice",
+    "prompt": "egészség – kiejtve: [egésség]. Milyen hangtani jelenség érvényesül?",
+    "options": [
+      {
+        "key": "A",
+        "text": "mássalhangzó-kiesés"
+      },
+      {
+        "key": "B",
+        "text": "részleges hasonulás zöngésség szerint"
+      },
+      {
+        "key": "C",
+        "text": "összeolvadás"
+      },
+      {
+        "key": "D",
+        "text": "teljes hasonulás"
+      }
+    ],
+    "answer": "D",
+    "category": "nyelvtani-fogalom",
+    "explanation": "Teljes hasonulás: az sz a következő s hatására teljesen s-sé alakul ([ss]). Írásban nem jelöljük, mert a szóelemző elv érvényesül (egész + ség)."
+  },
+  "items": [
+    {
+      "id": "1",
+      "kind": "choice",
+      "prompt": "dobta – kiejtve: [dopta]. Milyen hangtani jelenség érvényesül?",
+      "options": [
+        {
+          "key": "A",
+          "text": "teljes hasonulás"
+        },
+        {
+          "key": "B",
+          "text": "részleges hasonulás zöngésség szerint"
+        },
+        {
+          "key": "C",
+          "text": "részleges hasonulás a képzés helye szerint"
+        },
+        {
+          "key": "D",
+          "text": "összeolvadás"
+        }
+      ],
+      "answer": "B",
+      "category": "nyelvtani-fogalom",
+      "explanation": "Helyes: részleges hasonulás zöngésség szerint. A zöngés b a zöngétlen t előtt zöngétlenné (p-vé) válik; a hang csak egy tulajdonságában (a zöngésségben) igazodik a szomszédjához.",
+      "wrongOptions": {
+        "A": "Teljes hasonulásnál a hang azonossá válna a szomszédjával ([dotta]); itt csak zöngétlenedés történik.",
+        "C": "A képzés helye nem változik: a b és a p is ajakhang.",
+        "D": "Összeolvadásnál két hang egy harmadik, hosszú hanggá olvad (pl. t + j → tty); itt nem keletkezik új hang."
+      }
+    },
+    {
+      "id": "2",
+      "kind": "choice",
+      "prompt": "színpad – kiejtve: [szímpad]. Milyen hangtani jelenség érvényesül?",
+      "options": [
+        {
+          "key": "A",
+          "text": "részleges hasonulás a képzés helye szerint"
+        },
+        {
+          "key": "B",
+          "text": "részleges hasonulás zöngésség szerint"
+        },
+        {
+          "key": "C",
+          "text": "mássalhangzó-rövidülés"
+        },
+        {
+          "key": "D",
+          "text": "teljes hasonulás"
+        }
+      ],
+      "answer": "A",
+      "category": "nyelvtani-fogalom",
+      "explanation": "Helyes: részleges hasonulás a képzés helye szerint. Az n a p ajakhang előtt ajakkal képzett m-mé válik; a hang képzésének helye igazodik a következő hangéhoz.",
+      "wrongOptions": {
+        "B": "Az n és az m egyaránt zöngés, a zöngésség nem változik.",
+        "C": "Rövidülés hosszú mássalhangzónál történik (pl. jobbra → [jobra]); itt nincs hosszú hang.",
+        "D": "A teljes hasonulásnál az n p-vé válna; itt csak a képzés helye igazodik."
+      }
+    },
+    {
+      "id": "3",
+      "kind": "choice",
+      "prompt": "barátság – kiejtve: [baráccság]. Milyen hangtani jelenség érvényesül?",
+      "options": [
+        {
+          "key": "A",
+          "text": "mássalhangzó-kiesés"
+        },
+        {
+          "key": "B",
+          "text": "teljes hasonulás"
+        },
+        {
+          "key": "C",
+          "text": "összeolvadás"
+        },
+        {
+          "key": "D",
+          "text": "magánhangzó-rövidülés"
+        }
+      ],
+      "answer": "C",
+      "category": "nyelvtani-fogalom",
+      "explanation": "Helyes: összeolvadás. A t és az s egy harmadik, hosszú hanggá, [cs]-vé olvad össze; a két eredeti hang egyike sem marad meg.",
+      "wrongOptions": {
+        "A": "Egyik hang sem esik ki nyomtalanul; a kettőből új, hosszú hang lesz.",
+        "B": "Teljes hasonulásnál az egyik hang a másikkal azonossá válna (pl. [barásság]); itt egy új hang keletkezik.",
+        "D": "A jelenség mássalhangzókat érint, nem magánhangzót."
+      }
+    },
+    {
+      "id": "4",
+      "kind": "choice",
+      "prompt": "jobbra – kiejtve: [jobra]. Milyen hangtani jelenség érvényesül?",
+      "options": [
+        {
+          "key": "A",
+          "text": "részleges hasonulás zöngésség szerint"
+        },
+        {
+          "key": "B",
+          "text": "összeolvadás"
+        },
+        {
+          "key": "C",
+          "text": "mássalhangzó-rövidülés"
+        },
+        {
+          "key": "D",
+          "text": "mássalhangzó-nyúlás"
+        }
+      ],
+      "answer": "C",
+      "category": "nyelvtani-fogalom",
+      "explanation": "Helyes: mássalhangzó-rövidülés. A hosszú bb egy másik mássalhangzó (r) mellett rövid b-ként hangzik; írásban a szóelemzés miatt megtartjuk a kettőzést (jobb + ra).",
+      "wrongOptions": {
+        "A": "A b zöngés marad, mert az r is zöngés.",
+        "B": "Nem keletkezik új hang a b és az r találkozásából.",
+        "D": "Nyúlásnál a hang meghosszabbodna (ahogy a magánhangzó-nyúlásnál: alma → almát); itt éppen az ellenkezője, rövidülés történik."
+      }
+    },
+    {
+      "id": "5",
+      "kind": "choice",
+      "prompt": "mondta – kiejtve: [monta]. Milyen hangtani jelenség érvényesül?",
+      "options": [
+        {
+          "key": "A",
+          "text": "részleges hasonulás a képzés helye szerint"
+        },
+        {
+          "key": "B",
+          "text": "teljes hasonulás"
+        },
+        {
+          "key": "C",
+          "text": "összeolvadás"
+        },
+        {
+          "key": "D",
+          "text": "mássalhangzó-kiesés"
+        }
+      ],
+      "answer": "D",
+      "category": "nyelvtani-fogalom",
+      "explanation": "Helyes: mássalhangzó-kiesés. Három mássalhangzó (n, d, t) torlódásakor a középső, a d kiesik a kiejtésből; írásban megtartjuk (mond + ta).",
+      "wrongOptions": {
+        "A": "Az n képzési helye nem változik.",
+        "B": "Teljes hasonulásnál a d t-vé válna ([montta]); itt a d nyomtalanul eltűnik.",
+        "C": "Nem keletkezik új, harmadik hang."
+      }
+    },
+    {
+      "id": "6",
+      "kind": "choice",
+      "prompt": "MÁV (Magyar Államvasutak). Milyen szóalkotási móddal keletkezett?",
+      "options": [
+        {
+          "key": "A",
+          "text": "szóösszetétel"
+        },
+        {
+          "key": "B",
+          "text": "betűszó (rövidítéses szóalkotás)"
+        },
+        {
+          "key": "C",
+          "text": "szóképzés"
+        },
+        {
+          "key": "D",
+          "text": "szóelvonás"
+        }
+      ],
+      "answer": "B",
+      "category": "nyelvtani-fogalom",
+      "explanation": "Helyes: betűszó. A többszavas név szavainak kezdőbetűiből alakult (Magyar ÁllamVasutak), és önálló szóként ragozzuk (a MÁV-nál).",
+      "wrongOptions": {
+        "A": "Szóösszetételnél két vagy több önálló szó kapcsolódik egybe (pl. vasútállomás); itt csak kezdőbetűk maradtak.",
+        "C": "Szóképzésnél képző járul a tőhöz (pl. vasutas); itt nincs képző.",
+        "D": "Szóelvonásnál egy szó végéről vélt képzőt hagyunk el; ez itt nem történt."
+      }
+    },
+    {
+      "id": "7",
+      "kind": "choice",
+      "prompt": "naplemente – Milyen összetett szó? (Segítség: a nap lemegy.)",
+      "options": [
+        {
+          "key": "A",
+          "text": "alanyos alárendelő összetétel"
+        },
+        {
+          "key": "B",
+          "text": "tárgyas alárendelő összetétel"
+        },
+        {
+          "key": "C",
+          "text": "birtokos jelzős alárendelő összetétel"
+        },
+        {
+          "key": "D",
+          "text": "mellérendelő összetétel"
+        }
+      ],
+      "answer": "A",
+      "category": "nyelvtani-fogalom",
+      "explanation": "Helyes: alanyos alárendelő összetétel. Az előtag (nap) az utótagban rejlő cselekvés alanya: a nap megy le.",
+      "wrongOptions": {
+        "B": "Tárgyas összetételnél az előtag a cselekvés tárgya volna (pl. favágó: fát vág).",
+        "C": "Birtokos jelzős összetételnél az előtag birtokos (pl. hegyoldal: a hegy oldala).",
+        "D": "Mellérendelő összetételben a tagok egyenrangúak (pl. ide-oda, testvér); itt a tagok között alárendelő viszony van."
+      }
+    },
+    {
+      "id": "8",
+      "kind": "choice",
+      "prompt": "hegyoldal – Milyen összetett szó?",
+      "options": [
+        {
+          "key": "A",
+          "text": "ikerszó"
+        },
+        {
+          "key": "B",
+          "text": "minőségjelzős alárendelő összetétel"
+        },
+        {
+          "key": "C",
+          "text": "határozós alárendelő összetétel"
+        },
+        {
+          "key": "D",
+          "text": "birtokos jelzős alárendelő összetétel"
+        }
+      ],
+      "answer": "D",
+      "category": "nyelvtani-fogalom",
+      "explanation": "Helyes: birtokos jelzős alárendelő összetétel. Felbontva: a hegy oldala – az előtag a birtokos, az utótag a birtok.",
+      "wrongOptions": {
+        "A": "Az ikerszó két hasonló hangalakú tagból áll (pl. dimbes-dombos, csiki-csuki).",
+        "B": "Minőségjelzős összetételnél az előtag tulajdonságot jelöl (pl. vasajtó, nagyváros).",
+        "C": "Határozós összetételnél az előtag határozó (pl. partra száll → partraszállás)."
+      }
+    }
+  ],
+  "glossary": [],
+  "suggestedMinutes": 7
+}

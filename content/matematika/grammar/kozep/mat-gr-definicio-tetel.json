@@ -1,0 +1,223 @@
+{
+  "schemaVersion": 1,
+  "id": "mat-gr-definicio-tetel",
+  "subject": "matematika",
+  "revision": 1,
+  "level": "kozep",
+  "source": "generated",
+  "topic": "nyelvtan",
+  "title": "Definíciók és tételek pontos ismerete",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "grammar",
+  "type": "lesson",
+  "category": "definicio-tetel",
+  "summaryHu": "A matematikában a definíció megmondja, mit nevezünk egy szóval (pl. prímszám), a tétel pedig egy bizonyítható állítás a feltételeivel (pl. Pitagorasz-tétel derékszögű háromszögre). Az I. rész fogalmi kérdéseinél, a szóbelin és az emelt szintű bizonyításoknál a pontos kimondás pontot ér; a gyakori hiba a feltétel elhagyása vagy a tétel és megfordításának összekeverése.",
+  "rules": [
+    {
+      "title": "Definíció és tétel",
+      "explanation": "A definíció egy fogalmat vezet be a már ismert fogalmakkal (ezt nem bizonyítjuk); a tétel egy állítás, amelyet bizonyítunk. A tétel kimondásához hozzátartozik a feltétel („ha …, akkor …”).",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "Definíció: prímszám az a pozitív egész, amelynek pontosan két pozitív osztója van.",
+          "hu": "Az 1 nem prím (egy osztója van), a 2 prím."
+        },
+        {
+          "en": "Tétel: ha egy háromszög derékszögű, akkor a befogók négyzetösszege az átfogó négyzete.",
+          "hu": "A feltétel: derékszögű háromszög."
+        }
+      ]
+    },
+    {
+      "title": "Tétel és megfordítása",
+      "explanation": "A „ha A, akkor B” tétel megfordítása a „ha B, akkor A” állítás. A megfordítás nem mindig igaz, ezért külön tétel (ha igaz). Ha mindkettő igaz, „A pontosan akkor, ha B” (ekvivalencia).",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "Ha egy szám osztható 6-tal, akkor 3-mal is. (igaz) – Megfordítás: ha 3-mal osztható, akkor 6-tal is. (hamis: 9)",
+          "hu": "Egy ellenpélda elég a cáfolathoz."
+        },
+        {
+          "en": "Pitagorasz-tétel megfordítása: ha a² + b² = c², akkor a háromszög derékszögű. (igaz)",
+          "hu": "Ezzel döntjük el, derékszögű-e egy háromszög."
+        }
+      ]
+    },
+    {
+      "title": "Szükséges és elégséges feltétel",
+      "explanation": "Ha A ⇒ B igaz, akkor B szükséges feltétele A-nak, A pedig elégséges feltétele B-nek. Például a 3-mal oszthatóság szükséges, de nem elégséges feltétele a 6-tal való oszthatóságnak.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "Ha f deriválható az x₀ belső pontban, akkor f′(x₀) = 0 szükséges, de nem elégséges feltétele a helyi szélsőértéknek (x³ a 0-ban)",
+          "hu": "Emelt szinten gyakori kérdés."
+        }
+      ]
+    },
+    {
+      "title": "Pontos fogalmak, jelölések",
+      "explanation": "A zérushely az x érték, ahol f(x) = 0 (nem pont); a függvény olyan hozzárendelés, amely az értelmezési tartomány minden eleméhez pontosan egy elemet rendel; a négyzetgyök értéke nemnegatív. A pontos szóhasználat a szóbelin külön pontot ér.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "f(x) = 2x − 8 zérushelye x = 4",
+          "hu": "A grafikon az x tengelyt a (4; 0) pontban metszi – a zérushely a 4."
+        },
+        {
+          "en": "√16 = 4 (nem ±4)",
+          "hu": "Az x² = 16 egyenletnek van két megoldása: ±4."
+        }
+      ]
+    }
+  ],
+  "commonMistakes": [
+    {
+      "wrong": "Az 1 prímszám.",
+      "right": "Az 1 nem prímszám (és nem is összetett).",
+      "why": "A prímszámnak pontosan két pozitív osztója van; az 1-nek csak egy. Ezért kell a definícióban a „pontosan két” kifejezés."
+    },
+    {
+      "wrong": "A Pitagorasz-tétel: minden háromszögben a² + b² = c².",
+      "right": "Minden derékszögű háromszögben a befogók négyzetösszege egyenlő az átfogó négyzetével.",
+      "why": "A feltétel (derékszögű háromszög) a tétel része; más háromszögekre a koszinusztétel érvényes."
+    },
+    {
+      "wrong": "A zérushely a (3; 0) pont.",
+      "right": "A zérushely x = 3.",
+      "why": "A zérushely az értelmezési tartomány eleme (szám), a (3; 0) a grafikon és az x tengely közös pontja."
+    },
+    {
+      "wrong": "Minden téglalap négyzet.",
+      "right": "Minden négyzet téglalap, de nem minden téglalap négyzet.",
+      "why": "A négyzet speciális téglalap (minden oldala egyenlő); a megfordítás nem igaz."
+    }
+  ],
+  "examTips": [
+    "Az I. részben gyakran kérdeznek fogalmat (pl. „Mi a medián?”, „Írja fel a 36 összes pozitív osztóját!”) vagy igaz–hamis döntést – a definíció szó szerinti tudása itt gyors pont.",
+    "Középszintű szóbelin a három elméleti kérdés (definíció, tétel feltételekkel) 15 pontot ér; emelt szóbelin a definíció 2, a tétel kimondása és bizonyítása 6 pont.",
+    "Igaz–hamis kérdésnél egyetlen ellenpélda elég a „hamis” válaszhoz; „igaz” válaszhoz a tételre kell hivatkozni."
+  ],
+  "practice": [
+    {
+      "id": "1",
+      "kind": "choice",
+      "prompt": "Melyik szám prímszám?",
+      "options": [
+        {
+          "key": "A",
+          "text": "1"
+        },
+        {
+          "key": "B",
+          "text": "51"
+        },
+        {
+          "key": "C",
+          "text": "57"
+        },
+        {
+          "key": "D",
+          "text": "53"
+        }
+      ],
+      "answer": "D",
+      "category": "definicio-tetel",
+      "explanation": "A helyes: 53. Pontosan két pozitív osztója van (1 és 53): nem osztható 2-vel, 3-mal, 5-tel, 7-tel, és 7² = 49 < 53 < 64 = 8², így más prímmel nem kell próbálni.",
+      "wrongOptions": {
+        "A": "Az 1-nek csak egy pozitív osztója van, ezért nem prím.",
+        "B": "51 = 3 · 17 (a jegyek összege 6, osztható 3-mal).",
+        "C": "57 = 3 · 19 (a jegyek összege 12, osztható 3-mal)."
+      }
+    },
+    {
+      "id": "2",
+      "kind": "choice",
+      "prompt": "Melyik a Pitagorasz-tétel megfordítása?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Ha egy háromszög oldalaira a² + b² = c², akkor a háromszög derékszögű."
+        },
+        {
+          "key": "B",
+          "text": "Ha a háromszög derékszögű, akkor a² + b² = c²."
+        },
+        {
+          "key": "C",
+          "text": "Minden háromszögben a² + b² = c²."
+        },
+        {
+          "key": "D",
+          "text": "Ha a háromszög derékszögű, akkor a² + b² > c²."
+        }
+      ],
+      "answer": "A",
+      "category": "definicio-tetel",
+      "explanation": "A helyes: A. A tétel „ha derékszögű, akkor a² + b² = c²”; a megfordításban a feltétel és a következmény helyet cserél.",
+      "wrongOptions": {
+        "B": "Ez maga a Pitagorasz-tétel, nem a megfordítása.",
+        "C": "Ez hamis állítás: nem derékszögű háromszögre nem igaz.",
+        "D": "Ez hamis: derékszögű háromszögben pontos egyenlőség áll."
+      }
+    },
+    {
+      "id": "3",
+      "kind": "text",
+      "prompt": "Hány pozitív osztója van egy prímszámnak?",
+      "answer": [
+        "2",
+        "2 db",
+        "kettő"
+      ],
+      "category": "definicio-tetel",
+      "explanation": "2. A definíció szerint a prímszámnak pontosan két pozitív osztója van: az 1 és önmaga."
+    },
+    {
+      "id": "4",
+      "kind": "choice",
+      "prompt": "Melyik állítás igaz minden egész számra?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Ha egy szám osztható 6-tal, akkor osztható 3-mal."
+        },
+        {
+          "key": "B",
+          "text": "Ha egy szám osztható 3-mal, akkor osztható 6-tal."
+        },
+        {
+          "key": "C",
+          "text": "Egy szám pontosan akkor osztható 6-tal, ha osztható 3-mal."
+        },
+        {
+          "key": "D",
+          "text": "Ha egy szám nem osztható 6-tal, akkor 3-mal sem osztható."
+        }
+      ],
+      "answer": "A",
+      "category": "definicio-tetel",
+      "explanation": "A helyes: A. Ha 6 | n, akkor n = 6k = 3 · 2k, tehát 3 | n. A többi állítást a 9 cáfolja.",
+      "wrongOptions": {
+        "B": "Ellenpélda: a 9 osztható 3-mal, de 6-tal nem.",
+        "C": "Az ekvivalenciához a megfordítás is kellene, ami a 9 miatt hamis.",
+        "D": "Ellenpélda: a 9 nem osztható 6-tal, de 3-mal igen."
+      }
+    },
+    {
+      "id": "5",
+      "kind": "text",
+      "prompt": "Mi az f(x) = 2x − 8 függvény zérushelye?",
+      "answer": [
+        "4",
+        "x = 4"
+      ],
+      "category": "definicio-tetel",
+      "explanation": "4. A zérushely az az x, ahol a függvényérték 0: 2x − 8 = 0, x = 4. A (4; 0) a grafikon pontja, a zérushely maga a 4."
+    }
+  ],
+  "relatedCategories": [
+    "indoklas-hianya",
+    "kepletek"
+  ]
+}

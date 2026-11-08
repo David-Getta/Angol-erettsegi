@@ -1,0 +1,83 @@
+{
+  "schemaVersion": 1,
+  "id": "dig-sp-emelt-titkositas-adatbiztonsag",
+  "subject": "digitalis-kultura",
+  "revision": 1,
+  "level": "emelt",
+  "source": "generated",
+  "topic": "halozatok",
+  "title": "Titkosítás, hitelesítés és adatbiztonság",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "speaking",
+  "type": "elmeleti-tetel",
+  "partNumber": 1,
+  "instructionsHu": "Mutassa be a titkosítás fajtáit és alkalmazásait az interneten, a hitelesítés módjait és a legfontosabb fenyegetéseket! A tételkártya esetén keresztül magyarázza el a jelszavak biztonságos tárolását!",
+  "prompts": [
+    "Szimmetrikus és aszimmetrikus (nyilvános kulcsú) titkosítás; a kulcscsere problémája",
+    "A HTTPS/TLS működése: tanúsítvány, hitelesítésszolgáltató, munkamenetkulcs",
+    "Digitális aláírás és hash (kivonat)",
+    "Hitelesítés: jelszó, kétlépcsős azonosítás; jelszavak tárolása",
+    "Fenyegetések és védekezés: adathalászat, kártevők, zsarolóvírus, biztonsági mentés"
+  ],
+  "followUpQuestions": [
+    "Miért lassú hash-függvényt használnak jelszavakhoz?",
+    "Mit garantál és mit nem a böngésző lakat ikonja?"
+  ],
+  "usefulPhrases": [
+    {
+      "en": "szimmetrikus / aszimmetrikus titkosítás",
+      "hu": "egy közös kulcs / nyilvános és privát kulcspár"
+    },
+    {
+      "en": "TLS, HTTPS",
+      "hu": "titkosított, hitelesített webes kapcsolat"
+    },
+    {
+      "en": "tanúsítvány, hitelesítésszolgáltató",
+      "hu": "a szerver kilétét igazoló, megbízható fél által aláírt adat"
+    },
+    {
+      "en": "hash (kivonat), só",
+      "hu": "egyirányú lenyomat; a só véletlen adat, amely egyedivé teszi a lenyomatot"
+    },
+    {
+      "en": "digitális aláírás",
+      "hu": "a feladó azonosítása és az üzenet sértetlenségének igazolása"
+    },
+    {
+      "en": "kétlépcsős azonosítás",
+      "hu": "jelszó + egy másik típusú tényező"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Tételkártya",
+      "text": "Két webáruház adatbázisából is ellopták a felhasználók adatait. Az egyik a jelszavakat titkosítatlanul, a másik sózott hash formájában tárolta. Mi a különbség a két eset következményei között, és mit tegyenek a felhasználók?"
+    }
+  ],
+  "keyPoints": [
+    "Szimmetrikus titkosítás (pl. AES): ugyanaz a kulcs titkosít és fejt vissza – gyors, de a kulcsot biztonságosan el kell juttatni a partnerhez.",
+    "Aszimmetrikus titkosítás (pl. RSA): kulcspár – a nyilvános kulccsal titkosított üzenetet csak a privát kulcs fejti vissza; nem kell titkos csatorna a kulcscseréhez, de lassú.",
+    "HTTPS/TLS: a szerver tanúsítványát egy megbízható hitelesítésszolgáltató írja alá; aszimmetrikus módszerrel egyeznek meg egy szimmetrikus munkamenetkulcsban, és azzal titkosítanak (hibrid megoldás).",
+    "Digitális aláírás: az üzenet hash-ét a feladó a privát kulcsával írja alá, bárki ellenőrizheti a nyilvános kulccsal → hitelesség és sértetlenség.",
+    "Hash: egyirányú függvény, rögzített hosszúságú kivonat; jelszavakat sózott, lassú hash-sel (pl. bcrypt, Argon2) kell tárolni, így a szivárgás után sem olvashatók ki közvetlenül.",
+    "Kétlépcsős azonosítás: a jelszó mellé egy másik típusú tényező (telefon, biztonsági kulcs) kell.",
+    "Fenyegetések: adathalászat, kártevők (vírus, féreg, trójai, zsarolóvírus), közbeékelődéses támadás; védekezés: frissítés, egyedi jelszavak és jelszókezelő, offline biztonsági mentés."
+  ],
+  "speakingSeconds": 600,
+  "prepSeconds": 900,
+  "sampleAnswer": {
+    "turns": [
+      {
+        "speaker": "candidate",
+        "text": "A titkosítás célja, hogy az adatot csak az olvashassa, akinek szól. A szimmetrikus titkosításnál, például az AES-nél, ugyanazzal a kulccsal titkosítunk és fejtünk vissza; ez gyors, de a kulcsot valahogy biztonságosan el kell juttatni a partnerhez – ez a kulcscsere problémája. Az aszimmetrikus, nyilvános kulcsú titkosításnál, például az RSA-nál, mindenkinek kulcspárja van: a nyilvános kulccsal bárki titkosíthat, de visszafejteni csak a tulajdonos privát kulcsával lehet. Ez lassabb, ezért a gyakorlatban a kettőt együtt használjuk.\n\nA HTTPS-nél, vagyis a TLS-nél a szerver egy tanúsítványt küld, amelyet egy megbízható hitelesítésszolgáltató írt alá; a böngésző ezzel ellenőrzi, hogy tényleg a címben szereplő domainhez kapcsolódik. Utána aszimmetrikus módszerrel megegyeznek egy szimmetrikus munkamenetkulcsban, és a forgalmat már azzal titkosítják. A digitális aláírás fordítva működik: a feladó az üzenet hash-ét a privát kulcsával írja alá, és bárki ellenőrizheti a nyilvános kulccsal, így bizonyos, ki küldte, és hogy nem módosult.\n\nA hash egyirányú függvény: az adatból rögzített hosszúságú kivonatot készít, amelyből az eredeti nem állítható vissza. A tételkártya esetében az első webáruháznál a támadó azonnal megkapta a jelszavakat, és mivel sokan mindenhol ugyanazt használják, más fiókjaikba is be tud lépni. A másodiknál csak sózott hash-ek szivárogtak ki: a só véletlen adat, ami miatt két azonos jelszó lenyomata is különbözik, így előre kiszámolt táblázatokkal nem lehet visszakeresni, a lassú hash-függvény pedig a próbálgatást is nagyon lelassítja. Mindkét esetben a felhasználóknak jelszót kell cserélniük, különösen ott, ahol ugyanazt használták, és érdemes bekapcsolni a kétlépcsős azonosítást, amely a jelszó mellé egy második tényezőt, például a telefonra érkező kódot kéri.\n\nA leggyakoribb fenyegetések az adathalászat, a kártevők – köztük a zsarolóvírus, amely titkosítja a fájlokat –, és a közbeékelődéses támadás nyílt Wi-Fi-n. Védekezés a frissítések telepítése, az egyedi jelszavak jelszókezelővel és a rendszeres, leválasztott biztonsági mentés."
+      }
+    ],
+    "notes": [
+      "Tartalom: a két titkosítási mód, a hibrid TLS-működés, a digitális aláírás és a hash szerepe pontosan és helyes összefüggésben szerepel; a tételkártya esetét szakszerűen elemzi (só, lassú hash, jelszó-újrahasznosítás).",
+      "Logikai felépítés: az alapfogalmaktól (kulcsok) jut el az alkalmazásokig (HTTPS, aláírás), majd a konkrét esetig és a teendőkig – követhető, rendezett kifejtés.",
+      "Emelt szinten értékelt összefüggés: miért kell a gyakorlatban a szimmetrikus és az aszimmetrikus titkosítást együtt használni."
+    ]
+  }
+}

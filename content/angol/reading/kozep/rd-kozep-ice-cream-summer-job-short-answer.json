@@ -1,0 +1,243 @@
+{
+  "schemaVersion": 1,
+  "id": "rd-kozep-ice-cream-summer-job-short-answer",
+  "subject": "angol",
+  "revision": 1,
+  "level": "kozep",
+  "source": "generated",
+  "topic": "munka",
+  "title": "Ice cream, sunburn and a lot of patience",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "reservedFor": "mock",
+  "section": "reading",
+  "type": "short-answer",
+  "instructions": "Read the article about a student's summer job and answer the questions (1–8). Use no more than FOUR words for each answer. There is an example (0) at the beginning.",
+  "instructionsHu": "Olvasd el a cikket egy diák nyári munkájáról, és válaszolj a kérdésekre (1–8). Egy válasz legfeljebb NÉGY szó lehet. A 0. a példa.",
+  "passage": {
+    "title": "Ice cream, sunburn and a lot of patience",
+    "subtitle": "Kitti Szabó, 18, describes her first real summer job",
+    "blocks": [
+      {
+        "text": "Last June, I started looking for a summer job because I wanted to save money for a driving course. My cousin had worked at an ice-cream stand in Balatonfüred the year before, and she told me they always needed students. I sent an email to the owner, Mr Kovács, and two days later I had an interview – on the phone, while he was serving customers."
+      },
+      {
+        "text": "I worked there for nine weeks, from the beginning of July until the end of August. My shift usually started at ten in the morning and finished at six in the evening, five days a week. At the weekends, when the town was full of tourists, we sometimes stayed open until ten at night. I earned 1,800 forints an hour, plus tips, which were often surprisingly good."
+      },
+      {
+        "text": "The work was harder than I expected. On hot days, the queue was sometimes thirty metres long, and everybody wanted their ice cream immediately. Scooping ice cream for eight hours is tiring for your arms – after the first week, my right wrist hurt so much that I had to wear a bandage. I also had to clean the freezers every evening, which was the part of the job I liked least."
+      },
+      {
+        "text": "The best thing was the people. I worked with three other students, and we became really good friends. We invented names for the regular customers, like 'Mr Pistachio', an old man who came every day at exactly four o'clock and always ordered the same flavour. I also practised my English and German a lot, because many of the tourists came from Austria and Germany."
+      },
+      {
+        "text": "I learnt a lot of things that you can't learn at school. I learnt to stay calm when customers were rude, to count change quickly, and to smile even when I was tired. Mr Kovács was strict but fair: if you were late, you had to stay longer, but if you worked really hard, he gave you an extra day off."
+      },
+      {
+        "text": "By the end of the summer, I had saved enough for the driving course and still had some money left for a new phone. Mr Kovács has already asked me to come back next year – and I've said yes."
+      }
+    ]
+  },
+  "example": {
+    "id": "0",
+    "kind": "text",
+    "prompt": "What did Kitti want to save money for?",
+    "answer": [
+      "a driving course",
+      "driving course",
+      "for a driving course",
+      "driving lessons",
+      "for driving lessons"
+    ],
+    "maxWords": 4,
+    "category": "detail",
+    "explanation": "Kitti azért keresett nyári munkát, mert egy autóvezetői tanfolyamra (driving course) akart spórolni.",
+    "evidence": "I wanted to save money for a driving course"
+  },
+  "items": [
+    {
+      "id": "1",
+      "kind": "text",
+      "prompt": "Who told Kitti about the job at the ice-cream stand?",
+      "answer": [
+        "her cousin",
+        "cousin",
+        "Kitti's cousin",
+        "her cousin did",
+        "a cousin"
+      ],
+      "maxWords": 4,
+      "category": "detail",
+      "explanation": "Az unokatestvére (cousin) dolgozott ott az előző évben, és ő mondta Kittinek, hogy mindig keresnek diákokat.",
+      "evidence": "My cousin had worked at an ice-cream stand in Balatonfüred the year before, and she told me they always needed students."
+    },
+    {
+      "id": "2",
+      "kind": "text",
+      "prompt": "What was Mr Kovács doing during Kitti's job interview?",
+      "answer": [
+        "serving customers",
+        "he was serving customers",
+        "serving the customers",
+        "serving ice cream",
+        "selling ice cream"
+      ],
+      "maxWords": 4,
+      "category": "detail",
+      "explanation": "Az interjú telefonon zajlott, miközben Mr Kovács a vevőket szolgálta ki: „serving customers”.",
+      "evidence": "on the phone, while he was serving customers"
+    },
+    {
+      "id": "3",
+      "kind": "text",
+      "prompt": "How many weeks did Kitti work at the stand?",
+      "answer": [
+        "nine",
+        "9",
+        "nine weeks",
+        "9 weeks",
+        "for nine weeks",
+        "for 9 weeks"
+      ],
+      "maxWords": 4,
+      "category": "detail",
+      "explanation": "Kilenc hétig dolgozott ott, július elejétől augusztus végéig: „for nine weeks”.",
+      "evidence": "I worked there for nine weeks"
+    },
+    {
+      "id": "4",
+      "kind": "text",
+      "prompt": "Apart from her hourly pay, what other money did Kitti get?",
+      "answer": [
+        "tips",
+        "the tips",
+        "tips from customers",
+        "tips from the customers",
+        "customers' tips"
+      ],
+      "maxWords": 4,
+      "category": "detail",
+      "explanation": "Az órabéren (1800 Ft) felül borravalót (tips) is kapott, ami gyakran meglepően sok volt.",
+      "evidence": "plus tips, which were often surprisingly good"
+    },
+    {
+      "id": "5",
+      "kind": "text",
+      "prompt": "What did Kitti have to wear after the first week?",
+      "answer": [
+        "a bandage",
+        "bandage",
+        "a wrist bandage",
+        "bandage on her wrist",
+        "a bandage on it"
+      ],
+      "maxWords": 4,
+      "category": "detail",
+      "explanation": "Az első hét után annyira fájt a jobb csuklója a fagyiadagolástól, hogy kötést (bandage) kellett hordania.",
+      "evidence": "my right wrist hurt so much that I had to wear a bandage"
+    },
+    {
+      "id": "6",
+      "kind": "text",
+      "prompt": "Which part of the job did Kitti like least?",
+      "answer": [
+        "cleaning the freezers",
+        "cleaning freezers",
+        "clean the freezers",
+        "to clean the freezers",
+        "cleaning the freezer",
+        "cleaning the fridges"
+      ],
+      "maxWords": 4,
+      "category": "detail",
+      "explanation": "Minden este ki kellett takarítania a fagyasztókat (freezers), és ezt szerette a legkevésbé: „the part of the job I liked least”.",
+      "evidence": "I also had to clean the freezers every evening, which was the part of the job I liked least."
+    },
+    {
+      "id": "7",
+      "kind": "text",
+      "prompt": "Which flavour did 'Mr Pistachio' probably order every day?",
+      "answer": [
+        "pistachio",
+        "pistachio ice cream",
+        "pistachio ice-cream",
+        "pistachio flavour",
+        "pistachio flavor"
+      ],
+      "maxWords": 4,
+      "category": "inference",
+      "explanation": "A szöveg nem mondja ki, de következtethető: a diákok a törzsvendégeknek nevet adtak, és az idős úr, aki mindig ugyanazt az ízt kérte, a „Mr Pistachio” nevet kapta – tehát valószínűleg pisztáciát rendelt.",
+      "evidence": "like 'Mr Pistachio', an old man who came every day at exactly four o'clock and always ordered the same flavour"
+    },
+    {
+      "id": "8",
+      "kind": "text",
+      "prompt": "What did Mr Kovács give to students who worked really hard?",
+      "answer": [
+        "an extra day off",
+        "extra day off",
+        "a day off",
+        "an extra free day",
+        "extra free day",
+        "a free day",
+        "an extra day",
+        "extra days off"
+      ],
+      "maxWords": 4,
+      "category": "detail",
+      "explanation": "Mr Kovács szigorú, de igazságos volt: aki keményen dolgozott, egy plusz szabadnapot (an extra day off) kapott.",
+      "evidence": "if you worked really hard, he gave you an extra day off"
+    }
+  ],
+  "glossary": [
+    {
+      "term": "shift",
+      "meaning": "műszak"
+    },
+    {
+      "term": "tips",
+      "meaning": "borravaló"
+    },
+    {
+      "term": "queue",
+      "meaning": "sor (ahol az emberek várnak)"
+    },
+    {
+      "term": "scooping",
+      "meaning": "(fagylalt) adagolása kanállal"
+    },
+    {
+      "term": "wrist",
+      "meaning": "csukló"
+    },
+    {
+      "term": "bandage",
+      "meaning": "kötés, rugalmas pólya"
+    },
+    {
+      "term": "freezer",
+      "meaning": "fagyasztó, hűtőpult"
+    },
+    {
+      "term": "flavour",
+      "meaning": "íz (pl. fagylalté)"
+    },
+    {
+      "term": "rude",
+      "meaning": "udvariatlan, goromba"
+    },
+    {
+      "term": "count change",
+      "meaning": "visszajárót számol"
+    },
+    {
+      "term": "strict",
+      "meaning": "szigorú"
+    },
+    {
+      "term": "day off",
+      "meaning": "szabadnap"
+    }
+  ],
+  "suggestedMinutes": 15
+}

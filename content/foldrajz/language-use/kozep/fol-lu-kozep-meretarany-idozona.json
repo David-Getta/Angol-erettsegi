@@ -1,0 +1,113 @@
+{
+  "schemaVersion": 1,
+  "id": "fol-lu-kozep-meretarany-idozona",
+  "subject": "foldrajz",
+  "revision": 1,
+  "level": "kozep",
+  "source": "generated",
+  "topic": "terkep",
+  "title": "Méretarány, időzóna, népsűrűség – rövid számítások",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "language-use",
+  "type": "szamitas-rovid",
+  "instructions": "Végezze el a számításokat! Írja az eredményt a kijelölt helyre, a kért mértékegységgel! A 0. a megoldott példa.",
+  "example": {
+    "id": "0",
+    "kind": "text",
+    "prompt": "Egy 1 : 100 000 méretarányú térképen két település távolsága 5 cm. Hány km a valódi távolság?",
+    "answer": [
+      "5 km",
+      "5"
+    ],
+    "category": "szamitas-foldrajzi",
+    "explanation": "5 km: 5 cm × 100 000 = 500 000 cm = 5000 m = 5 km. (1 : 100 000 méretaránynál 1 cm = 1 km.)"
+  },
+  "items": [
+    {
+      "id": "1",
+      "kind": "text",
+      "prompt": "Egy 1 : 250 000 méretarányú térképen két város távolsága 8 cm. Hány km a valódi távolság?",
+      "answer": [
+        "20 km",
+        "20"
+      ],
+      "category": "szamitas-foldrajzi",
+      "explanation": "20 km: 8 cm × 250 000 = 2 000 000 cm = 20 000 m = 20 km. (1 cm a térképen 2,5 km a valóságban.)"
+    },
+    {
+      "id": "2",
+      "kind": "text",
+      "prompt": "Két város valódi távolsága 36 km. Hány cm ez egy 1 : 300 000 méretarányú térképen?",
+      "answer": [
+        "12 cm",
+        "12"
+      ],
+      "category": "szamitas-foldrajzi",
+      "explanation": "12 cm: 36 km = 3 600 000 cm; 3 600 000 cm : 300 000 = 12 cm. (1 cm a térképen 3 km-nek felel meg.)"
+    },
+    {
+      "id": "3",
+      "kind": "text",
+      "prompt": "Egy térképen 4 cm felel meg a valóságban 10 km-nek. Mekkora a térkép méretaránya?",
+      "answer": [
+        "1 : 250 000",
+        "1:250.000"
+      ],
+      "category": "terkep-olvasas",
+      "explanation": "1 : 250 000: 10 km = 1 000 000 cm, tehát 4 cm : 1 000 000 cm; mindkét oldalt 4-gyel osztva 1 : 250 000."
+    },
+    {
+      "id": "4",
+      "kind": "text",
+      "prompt": "Budapest a közép-európai (UTC+1) időzónában van, Tokió az UTC+9 zónában. Hány óra van Tokióban, amikor Budapesten (téli időszámítás szerint) 14 óra van?",
+      "answer": [
+        "22 óra",
+        "22",
+        "22:00",
+        "22.00"
+      ],
+      "category": "szamitas-foldrajzi",
+      "explanation": "22 óra: Tokió 9 − 1 = 8 zónával keletebbre van, ott tehát 8 órával később jár az idő: 14 + 8 = 22 óra. Keletre haladva az idő előbbre jár."
+    },
+    {
+      "id": "5",
+      "kind": "text",
+      "prompt": "New York az UTC−5 időzónában van. Egy repülőgép budapesti idő (UTC+1) szerint 10 órakor indul Budapestről, és 9 órás repülés után ér New Yorkba. Hány órakor érkezik New York-i helyi idő szerint?",
+      "answer": [
+        "13 óra",
+        "13",
+        "13:00",
+        "13.00"
+      ],
+      "category": "szamitas-foldrajzi",
+      "explanation": "13 óra: az érkezés budapesti idő szerint 10 + 9 = 19 óra. New York 1 − (−5) = 6 zónával nyugatabbra van, ott 6 órával korábban jár az idő: 19 − 6 = 13 óra."
+    },
+    {
+      "id": "6",
+      "kind": "text",
+      "prompt": "Magyarország területe kb. 93 000 km², népessége kb. 9,6 millió fő. Mekkora a népsűrűség? Egész számra kerekítve adja meg!",
+      "answer": [
+        "103 fő/km²",
+        "103",
+        "103 fő/km2"
+      ],
+      "category": "szamitas-foldrajzi",
+      "explanation": "103 fő/km²: népsűrűség = népesség : terület = 9 600 000 fő : 93 000 km² ≈ 103,2 fő/km², egészre kerekítve 103 fő/km²."
+    },
+    {
+      "id": "7",
+      "kind": "text",
+      "prompt": "Két település földrajzi hosszúsága között 30° a különbség. Mennyi a helyi idejük különbsége?",
+      "answer": [
+        "2 óra",
+        "2",
+        "120 perc",
+        "2 h"
+      ],
+      "category": "szamitas-foldrajzi",
+      "explanation": "2 óra: 1° hosszúságkülönbség 4 perc helyiidő-különbséget jelent (a Föld 4 perc alatt fordul 1°-ot), így 30° × 4 perc = 120 perc = 2 óra."
+    }
+  ],
+  "suggestedMinutes": 10
+}

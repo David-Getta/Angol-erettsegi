@@ -1,0 +1,215 @@
+{
+  "schemaVersion": 1,
+  "id": "tor-rd-kozep-1956-feleletvalasztas",
+  "subject": "tortenelem",
+  "revision": 1,
+  "level": "kozep",
+  "source": "generated",
+  "topic": "hideghaboru",
+  "title": "Az 1956-os forradalom és szabadságharc",
+  "createdAt": "2026-11-05",
+  "tags": [
+    "magyar"
+  ],
+  "section": "reading",
+  "type": "feleletvalasztas",
+  "instructions": "A feladat az 1956-os forradalommal és szabadságharccal kapcsolatos. Válassza ki a források és ismeretei segítségével a helyes választ! Minden kérdésre egy helyes válasz van. A 0. a megoldott példa.",
+  "passage": {
+    "title": "1956 októbere és novembere",
+    "sourceNote": "A források a gyakorlás céljára írt, a kor stílusát követő szövegek, illetve leírások – nem hiteles korabeli dokumentumok.",
+    "blocks": [
+      {
+        "heading": "I. forrás – Egyetemisták röplapja, Budapest, 1956. október 22.",
+        "text": "„Mi, a budapesti egyetemek hallgatói követeljük: a szovjet csapatok vonuljanak ki hazánkból! Nagy Imre vezetésével alakuljon új kormány! Legyen titkos, általános választás, több párt részvételével! Legyen szabad a szólás és a sajtó! Holnap, október 23-án a lengyel nép iránti rokonszenvünk jeléül vonuljunk a Bem-szoborhoz!”"
+      },
+      {
+        "heading": "II. forrás – Egy rádióbeszéd összefoglalása, 1956. november 1.",
+        "text": "„A magyar kormány felmondja a Varsói Szerződést, és kinyilvánítja Magyarország semlegességét. Az Egyesült Nemzetek Szervezetéhez fordulunk, hogy a négy nagyhatalom segítségével védje meg hazánk semlegességét.”"
+      }
+    ]
+  },
+  "example": {
+    "id": "0",
+    "kind": "choice",
+    "prompt": "Melyik napon tört ki a forradalom?",
+    "options": [
+      {
+        "key": "A",
+        "text": "1956. november 4."
+      },
+      {
+        "key": "B",
+        "text": "1956. október 6."
+      },
+      {
+        "key": "C",
+        "text": "1956. október 23."
+      },
+      {
+        "key": "D",
+        "text": "1956. március 15."
+      }
+    ],
+    "answer": "C",
+    "category": "evszam-kronologia",
+    "explanation": "Helyes: 1956. október 23. A röplap a másnapi, október 23-i felvonulásra hív; a tüntetés estére, a Rádió ostromával fegyveres felkeléssé vált."
+  },
+  "items": [
+    {
+      "id": "1",
+      "kind": "choice",
+      "prompt": "Kinek a vezetésével követelték az egyetemisták az új kormány megalakítását?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Rákosi Mátyás"
+        },
+        {
+          "key": "B",
+          "text": "Gerő Ernő"
+        },
+        {
+          "key": "C",
+          "text": "Kádár János"
+        },
+        {
+          "key": "D",
+          "text": "Nagy Imre"
+        }
+      ],
+      "answer": "D",
+      "category": "szemelyek-esemenyek",
+      "explanation": "Helyes: Nagy Imre. Az 1953–1955 közötti reformpolitikája miatt népszerű Nagy Imrét a röplap kormányfőnek követeli; október 24-én valóban miniszterelnök lett.",
+      "wrongOptions": {
+        "A": "Rákosi Mátyás a sztálinista diktatúra vezetője volt, akit 1956 nyarán leváltottak; a forradalmárok éppen ellene fordultak.",
+        "B": "Gerő Ernő az MDP első titkára volt, október 23-i rádióbeszéde tovább szította az elégedetlenséget.",
+        "C": "Kádár János november 4-én a szovjet csapatok támogatásával alakított kormányt, és a forradalom leverője lett."
+      }
+    },
+    {
+      "id": "2",
+      "kind": "choice",
+      "prompt": "Miért éppen a Bem-szoborhoz vonultak a tüntetők?",
+      "options": [
+        {
+          "key": "A",
+          "text": "mert Bem József lengyel tábornok az 1848–49-es szabadságharc hőse volt, így a szobor a lengyel–magyar barátság jelképe"
+        },
+        {
+          "key": "B",
+          "text": "mert ott állt a Magyar Rádió épülete"
+        },
+        {
+          "key": "C",
+          "text": "mert Bem József a Rákosi-rendszer áldozata volt"
+        },
+        {
+          "key": "D",
+          "text": "mert Bem József szovjet tábornokként segítette Magyarország felszabadítását"
+        }
+      ],
+      "answer": "A",
+      "category": "forras-sajat-tudas",
+      "explanation": "Helyes: A. A forrás szerint a felvonulás „a lengyel nép iránti rokonszenv” jele volt (Lengyelországban 1956 őszén reformok indultak). Bem József lengyel születésű tábornok az 1848–49-es szabadságharcban az erdélyi magyar sereget vezette, ezért a két nép barátságát jelképezte.",
+      "wrongOptions": {
+        "B": "A Rádió a Bródy Sándor utcában volt; a tömeg este vonult oda, de a Bem-szobor nem ott állt.",
+        "C": "Bem József a 19. században élt (1794–1850), a Rákosi-rendszerhez nincs köze.",
+        "D": "Bem nem volt szovjet tábornok; a 19. századi lengyel és magyar szabadságküzdelmek katonája volt."
+      }
+    },
+    {
+      "id": "3",
+      "kind": "choice",
+      "prompt": "Melyik nemzetközi szervezetből lépett ki Magyarország a II. forrás szerint?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Varsói Szerződés"
+        },
+        {
+          "key": "B",
+          "text": "KGST"
+        },
+        {
+          "key": "C",
+          "text": "NATO"
+        },
+        {
+          "key": "D",
+          "text": "ENSZ"
+        }
+      ],
+      "answer": "A",
+      "category": "forras-ertelmezes",
+      "explanation": "Helyes: a Varsói Szerződés. A forrás szerint a kormány „felmondja a Varsói Szerződést”, és kimondja a semlegességet. Nagy Imre ezzel az országba újonnan bevonuló szovjet csapatokra reagált; Moszkva a második beavatkozásról már október 31-én döntött.",
+      "wrongOptions": {
+        "B": "A KGST a szocialista országok gazdasági szervezete; a forrás nem erről szól.",
+        "C": "Magyarország soha nem volt a NATO tagja a hidegháború idején; a NATO a nyugati katonai szövetség.",
+        "D": "A forrás szerint a kormány éppen az ENSZ-hez fordul segítségért, nem lép ki belőle."
+      }
+    },
+    {
+      "id": "4",
+      "kind": "choice",
+      "prompt": "Mikor indult a forradalmat leverő második szovjet katonai beavatkozás?",
+      "options": [
+        {
+          "key": "A",
+          "text": "1956. október 24."
+        },
+        {
+          "key": "B",
+          "text": "1956. november 4."
+        },
+        {
+          "key": "C",
+          "text": "1956. október 30."
+        },
+        {
+          "key": "D",
+          "text": "1956. december 1."
+        }
+      ],
+      "answer": "B",
+      "category": "evszam-kronologia",
+      "explanation": "Helyes: november 4. Hajnalban a szovjet csapatok általános támadást indítottak Budapest és az ország ellen, Kádár János pedig bejelentette ellenkormánya megalakulását.",
+      "wrongOptions": {
+        "A": "Október 24-én az első szovjet beavatkozás kezdődött, amely nem tudta leverni a felkelést.",
+        "C": "Október 30-án a szovjet csapatok éppen kivonultak Budapestről, és megjelent a szovjet kormány nyilatkozata a tárgyalási szándékról.",
+        "D": "December elejére a fegyveres harcok már véget értek; a megtorlás és a sztrájkok időszaka következett."
+      }
+    },
+    {
+      "id": "5",
+      "kind": "choice",
+      "prompt": "Melyik nemzetközi válság vonta el a nyugati nagyhatalmak figyelmét 1956 őszén?",
+      "options": [
+        {
+          "key": "A",
+          "text": "a szuezi válság"
+        },
+        {
+          "key": "B",
+          "text": "a kubai rakétaválság"
+        },
+        {
+          "key": "C",
+          "text": "a berlini fal felépítése"
+        },
+        {
+          "key": "D",
+          "text": "a koreai háború"
+        }
+      ],
+      "answer": "A",
+      "category": "ok-okozat",
+      "explanation": "Helyes: a szuezi válság. 1956 októberének végén Izrael, Nagy-Britannia és Franciaország megtámadta Egyiptomot a Szuezi-csatorna államosítása miatt; a nyugati hatalmak megosztottsága és a válság megkönnyítette a szovjet beavatkozást Magyarországon.",
+      "wrongOptions": {
+        "B": "A kubai rakétaválság 1962-ben volt.",
+        "C": "A berlini falat 1961-ben építették fel.",
+        "D": "A koreai háború 1950 és 1953 között zajlott, 1956-ban már véget ért."
+      }
+    }
+  ],
+  "suggestedMinutes": 6
+}

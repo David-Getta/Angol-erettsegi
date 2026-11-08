@@ -1,0 +1,325 @@
+{
+  "schemaVersion": 1,
+  "id": "gaz-gr-forrashasznalat",
+  "subject": "gazdasagi-ismeretek",
+  "revision": 1,
+  "level": "kozep",
+  "source": "generated",
+  "topic": "nyelvtan",
+  "title": "Forráshasználat, hivatkozás",
+  "createdAt": "2026-11-06",
+  "tags": [],
+  "section": "grammar",
+  "type": "lesson",
+  "category": "forrashasznalat",
+  "summaryHu": "A projektmunkában minden átvett adatot, gondolatot és idézetet meg kell jelölni: a szövegben rövid hivatkozással, a végén forrásjegyzékkel. Az értékelés azt is nézi, hogy a saját gondolat elkülönül-e az átvettől, és hogy a munkanapló dokumentálja-e a folyamatot. A hivatkozás nélküli átvétel a „Forráshasználat, adatok” szempontban legfeljebb az 1–2 pontos sávba visz, a hivatkozás nélkül bemásolt szöveg pedig a rubrika külön szabálya szerint 0 pontot ér; a védésen és a szóbelin is érdemes megnevezni, honnan származik egy definíció vagy adat.",
+  "rules": [
+    {
+      "title": "Milyen forrás számít?",
+      "explanation": "A projektmunkában és a feleletben forrás minden, amiből adatot, gondolatot vagy idézetet veszel át: a tanórai anyag (a tanár diasora), tankönyv és szakkönyv (pl. a diasoron szereplő Mankiw-féle alapelvek forrása), statisztikai adat (pl. hivatalos statisztika, jegybanki kiadvány), interjú (pl. egy helyi vállalkozóval), saját felmérés (kérdőív). Az értékelés legjobb sávja: „Több megbízható forrás, pontos hivatkozással, az adatok helyesen értelmezve.” Egy forrás kevés; a különböző típusok (elmélet + adat + saját gyűjtés) együtt adnak megbízható képet.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "Projekt „A vállalkozásom piaca” – források: a 2. téma diasora (a piac fogalma, csoportosítása); interjú egy helyi pékség tulajdonosával; saját kérdőív 30 vásárlóval",
+          "hu": "Elméleti forrás + két saját gyűjtésű forrás – mindhármat meg kell nevezni."
+        }
+      ]
+    },
+    {
+      "title": "Hogyan hivatkozunk?",
+      "explanation": "Minden átvett gondolatnál a szövegben jelöld a forrást (rövid hivatkozás vagy lábjegyzet), és a végén a forrásjegyzékben add meg a teljes adatokat: szerző, cím, kiadás éve (könyvnél kiadó, városnál), a felhasznált oldal; online forrásnál a cím, az elérési út (URL) és a letöltés dátuma; interjúnál az interjúalany (vagy szerepe), az időpont; saját felmérésnél a módszer, a minta nagysága és az időpont. A forrásjegyzék a projektmunka kötelező formai eleme (címlap, tartalomjegyzék, fejezetek, mellékletek, forrásjegyzék).",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "A szövegben: „Adam Smith szerint a piac »láthatatlan kéz« módjára irányítja a gazdaságot (Gazdasági ismeretek, 2. téma, tanórai diasor, 13. dia).”",
+          "hu": "Rövid hivatkozás: forrás + pontos hely."
+        },
+        {
+          "en": "Forrásjegyzékben: Gazdasági ismeretek – 1. téma: A közgazdaságtan alapfogalmai, főbb kérdései, vizsgálódási módszerei. Előadás és érettségi felkészítő tananyag (tanórai diasor).",
+          "hu": "A teljes adat a végén, a szövegbeli rövid hivatkozás erre mutat."
+        },
+        {
+          "en": "Interjú: X. Y., pékségtulajdonos, 2026. október 12. (a jegyzőkönyv a mellékletben)",
+          "hu": "Az interjú is forrás – a jegyzőkönyv mellékletként igazolja."
+        }
+      ]
+    },
+    {
+      "title": "Idézet vagy saját szavakkal: mindkettőhöz hivatkozás kell",
+      "explanation": "Szó szerinti idézet: pontosan, idézőjelben, hivatkozással – csak akkor, ha a megfogalmazás maga fontos (pl. egy definíció vagy egy híres mondat). Saját szavakkal összefoglalás (tartalmi átvétel): a gondolat nem a tiéd, ezért ide is kell hivatkozás, csak idézőjel nem. Hosszabb szöveg idézőjel nélküli, szó szerinti bemásolása hivatkozás nélküli átvétel.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "Idézet: Smith szerint „Nem a mészáros, a serfőző vagy a pék jóindulatától várjuk ebédünket, hanem attól, hogy ők a saját érdeküket nézik.” (1. téma, tanórai diasor, 24. dia)",
+          "hu": "Szó szerint, idézőjelben, a forrás megjelölésével."
+        },
+        {
+          "en": "Összefoglalás: A tanórai anyag szerint Smith úgy látta, hogy aki a saját érdekét követi, akaratlanul a közjót is szolgálja (1. téma, 24. dia).",
+          "hu": "Saját megfogalmazás, idézőjel nélkül – a hivatkozás itt is kötelező."
+        }
+      ]
+    },
+    {
+      "title": "A saját gondolat elkülönítése az átvettől",
+      "explanation": "A rubrika leírása szerint a „saját gondolat elkülönül az átvettől”. Nyelvi jelzésekkel választod el: átvett – „A forrás szerint…”, „X megállapítja, hogy…”, „A tanórai anyag alapján…”; saját adat – „Saját felmérésem szerint…”; saját vélemény – „Véleményem szerint…”, „Ebből arra következtetek, hogy…”. A saját vélemény gyakran normatív állítás (kellene, jobb lenne) – jelöld, és indokold az átvett tényekkel.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "„A tanórai anyag szerint a munkaerő különleges tényező: nem lehet felhalmozni, raktározni. Saját interjúm alapján a pékségben is ez a fő gond: a hiányzó péket nem lehet »raktárból« pótolni. Véleményem szerint ezért…”",
+          "hu": "Három réteg, három jelzés: átvett tény – saját adat – saját vélemény."
+        }
+      ]
+    },
+    {
+      "title": "Adatok forrása és a munkanapló",
+      "explanation": "Minden táblázat, diagram és számadat alatt add meg a forrást („Forrás: …”, saját számításnál „Saját szerkesztés … adatai alapján”). A munkanapló a készítés folyamatának forrása: a rubrika szerint „rögzíti a használt módszereket, a döntési helyzeteket, az akadályokat és megoldásukat, dátumozva” – így azt is, mikor, melyik forrást használtad, és miért döntöttél mellette vagy ellene.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "1. táblázat: A pékség napi költségei és profitja. Forrás: saját szerkesztés a tanórai pékség-példa (1. téma, 45. dia) alapján",
+          "hu": "A táblázat alatti forrássor a forráshasználat pontjait védi."
+        },
+        {
+          "en": "Munkanapló, 2026. október 12.: interjú a pékség tulajdonosával (45 perc). Döntés: a kérdőívet 20-ról 30 főre bővítem, mert … Akadály: a tulajdonos nem adott pontos költségadatot – megoldás: a tanórai példa számait használom, és ezt jelölöm.",
+          "hu": "Dátum, módszer, döntés, akadály, megoldás – ahogy a rubrika kéri."
+        }
+      ]
+    },
+    {
+      "title": "Mit büntet az értékelés?",
+      "explanation": "A projektmunka „Forráshasználat, adatok” szempontja (6 pont) sávjai: 6 – „Több megbízható forrás, pontos hivatkozással, az adatok helyesen értelmezve.”; 5 – „Források vannak, a hivatkozás helyenként hiányos.”; 3–4 – „Kevés vagy pontatlanul hivatkozott forrás.”; 1–2 – „Forrás alig van, vagy nem hivatkozott átvétel.”; 0 – „Nincs forráshasználat.” A védésen a bemutatás szempontja (14 pont) is kéri, hogy bemutasd „a használt módszereket és forrásokat”. A rubrika külön szabálya ennél is szigorúbb: „Hivatkozás nélkül átvett szöveg esetén a forráshasználat 0 pont.” – a szó szerint, hivatkozás nélkül bemásolt szöveg tehát a teljes szempontot nullázza.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "Egy bekezdés szó szerint bemásolva egy honlapról, hivatkozás nélkül",
+          "hu": "A „nem hivatkozott átvétel” legfeljebb az 1–2 pontos sávba visz, a hivatkozás nélkül bemásolt szöveg pedig a rubrika külön szabálya szerint 0 pont – akkor is, ha a többi forrás rendben van."
+        }
+      ]
+    }
+  ],
+  "commonMistakes": [
+    {
+      "wrong": "Egy honlap bekezdését szó szerint, idézőjel és hivatkozás nélkül bemásolja.",
+      "right": "Saját szavakkal összefoglalja, és hivatkozik a forrásra; ha a megfogalmazás fontos, idézőjelben, hivatkozással idézi.",
+      "why": "A rubrikában a „nem hivatkozott átvétel” az 1–2 pontos sáv; a rubrika külön szabálya szerint pedig a hivatkozás nélkül átvett (bemásolt) szöveg esetén a forráshasználat 0 pont."
+    },
+    {
+      "wrong": "„Forrás: internet”",
+      "right": "Pontos forrás: a cikk vagy oldal címe, szerzője/kiadója, URL, letöltés dátuma.",
+      "why": "Az „internet” nem forrás, hanem csatorna; ellenőrizhetetlen – a rubrika „pontos hivatkozást” kér."
+    },
+    {
+      "wrong": "A projekt táblázata alatt nincs forrás.",
+      "right": "„Forrás: saját szerkesztés a … adatai alapján” vagy a táblázat eredeti forrása.",
+      "why": "Az adatok forrásának megjelölése a forráshasználat szempont része („az idézetek, adatok hivatkozva”)."
+    },
+    {
+      "wrong": "A saját véleményét a forrás állításaként írja („A szakirodalom szerint az államnak kellene…”).",
+      "right": "„Véleményem szerint az államnak kellene…, mert a forrás szerint …”",
+      "why": "A saját gondolatnak el kell különülnie az átvettől; a „kellene” normatív állítás, a te véleményed."
+    },
+    {
+      "wrong": "Idézőjelben, de átfogalmazva idéz egy definíciót.",
+      "right": "Idézőjelben csak a szó szerinti szöveg áll (pl. „Piac: a tényleges és a lehetséges (potenciális) eladók és vevők találkozási helye, illetve cserekapcsolatuk rendszere.”); az átfogalmazás idézőjel nélkül, hivatkozással.",
+      "why": "Az idézőjel azt állítja, hogy szó szerinti a szöveg – ha nem az, pontatlan a hivatkozás."
+    }
+  ],
+  "examTips": [
+    "Projektmunka, az elkészült munka: a „Forráshasználat, adatok” szempont 6 pont – több, megnevezett forrás, pontos hivatkozás, a saját gondolat elkülönítése.",
+    "Projektmunka, a készítés folyamata: a munkanapló (6 pont) és a „Terjedelem, formai előírások” (4 pont, benne a forrásjegyzék) is a forráshasználat dokumentálásán múlik.",
+    "Projektvédés: a „bemutatás” szempont (14 pont) kéri a használt módszerek és források bemutatását – készíts egy mondatot arról, milyen forrásokból dolgoztál, és miért azokból.",
+    "Szóbeli tétel: ha egy definíciót vagy idézetet mondasz (pl. Smith mondata), nevezd meg, kitől vagy honnan származik."
+  ],
+  "practice": [
+    {
+      "id": "1",
+      "kind": "choice",
+      "prompt": "Melyik forrásmegjelölés a legpontosabb egy projektmunkában?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Forrás: internet"
+        },
+        {
+          "key": "B",
+          "text": "Forrás: Google"
+        },
+        {
+          "key": "C",
+          "text": "Gazdasági ismeretek – 2. téma: A piaci mechanizmus alapvető elemei, működése, a piacgazdaság jellemzői. Tanórai diasor, 16. dia"
+        },
+        {
+          "key": "D",
+          "text": "Forrás: a tanárom"
+        }
+      ],
+      "answer": "C",
+      "category": "forrashasznalat",
+      "explanation": "Helyes: C. Megnevezi a forrást (cím, típus) és a pontos helyet (dia), így ellenőrizhető – a rubrika „pontos hivatkozást” kér.",
+      "wrongOptions": {
+        "A": "Az internet csatorna, nem forrás – nem ellenőrizhető.",
+        "B": "A kereső nem forrás, csak a megtalálás eszköze.",
+        "D": "Hiányzik, melyik anyag és melyik része – nem ellenőrizhető."
+      }
+    },
+    {
+      "id": "2",
+      "kind": "choice",
+      "prompt": "Melyik mondatból hiányzik a forrás megjelölése?",
+      "options": [
+        {
+          "key": "A",
+          "text": "„Véleményem szerint a pékségnek a napi 300 db-nál kellene maradnia.”"
+        },
+        {
+          "key": "B",
+          "text": "„Saját kérdőíves felmérésem (30 fő, 2026. október) szerint a vásárlók többsége reggel vásárol.”"
+        },
+        {
+          "key": "C",
+          "text": "„Egy tanulmány szerint a vállalkozások fele az első évben megszűnik.”"
+        },
+        {
+          "key": "D",
+          "text": "„Az 1. táblázat (saját szerkesztés a tanórai pékség-példa alapján) mutatja a költségeket.”"
+        }
+      ],
+      "answer": "C",
+      "category": "forrashasznalat",
+      "explanation": "Helyes: C. Átvett állítás (és adat), de nem tudjuk, melyik tanulmányból – a „nem hivatkozott átvétel” a rubrika 1–2 pontos sávjába tartozik. Ha a szöveget szó szerint, hivatkozás nélkül másolja át, a rubrika külön szabálya szerint a szempont 0 pont.",
+      "wrongOptions": {
+        "A": "Ez jelölt saját vélemény – nem kell hozzá külső forrás.",
+        "B": "A saját felmérés módszere, mintája és időpontja meg van adva.",
+        "D": "A táblázat forrása jelölve van."
+      }
+    },
+    {
+      "id": "3",
+      "kind": "choice",
+      "prompt": "A projektmunka „Forráshasználat, adatok” szempontjában melyik sávba tartozik a „nem hivatkozott átvétel”?",
+      "options": [
+        {
+          "key": "A",
+          "text": "6 pont"
+        },
+        {
+          "key": "B",
+          "text": "5 pont"
+        },
+        {
+          "key": "C",
+          "text": "3–4 pont"
+        },
+        {
+          "key": "D",
+          "text": "1–2 pont"
+        }
+      ],
+      "answer": "D",
+      "category": "forrashasznalat",
+      "explanation": "Helyes: D. A rubrika 1–2 pontos sávja: „Forrás alig van, vagy nem hivatkozott átvétel.” (0 pont: „Nincs forráshasználat.”; a rubrika külön szabálya szerint a hivatkozás nélkül átvett szöveg is 0 pont.)",
+      "wrongOptions": {
+        "A": "A 6 pont: „Több megbízható forrás, pontos hivatkozással, az adatok helyesen értelmezve.”",
+        "B": "Az 5 pont: „Források vannak, a hivatkozás helyenként hiányos.”",
+        "C": "A 3–4 pont: „Kevés vagy pontatlanul hivatkozott forrás.”"
+      }
+    },
+    {
+      "id": "4",
+      "kind": "choice",
+      "prompt": "Melyik a szabályos idézet?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Smith szerint nem a pék jóindulata adja az ebédet."
+        },
+        {
+          "key": "B",
+          "text": "Smith szerint „Nem a mészáros, a serfőző vagy a pék jóindulatától várjuk ebédünket, hanem attól, hogy ők a saját érdeküket nézik.” (1. téma, tanórai diasor, 24. dia)"
+        },
+        {
+          "key": "C",
+          "text": "„A pék a saját érdekét nézi, ezért kapunk ebédet” – mondta Smith."
+        },
+        {
+          "key": "D",
+          "text": "Nem a mészáros, a serfőző vagy a pék jóindulatától várjuk ebédünket, hanem attól, hogy ők a saját érdeküket nézik."
+        }
+      ],
+      "answer": "B",
+      "category": "forrashasznalat",
+      "explanation": "Helyes: B. Szó szerinti szöveg, idézőjelben, a forrás és a pontos hely megjelölésével.",
+      "wrongOptions": {
+        "A": "Ez összefoglalás, de hivatkozás nélkül.",
+        "C": "Idézőjelben átfogalmazott szöveg és forrás nélkül – az idézőjel szó szerinti szöveget ígér.",
+        "D": "Szó szerinti átvétel idézőjel és hivatkozás nélkül – nem hivatkozott átvétel."
+      }
+    },
+    {
+      "id": "5",
+      "kind": "choice",
+      "prompt": "Melyik részlet választja el helyesen a saját véleményt az átvett gondolattól?",
+      "options": [
+        {
+          "key": "A",
+          "text": "„Az államnak csökkentenie kellene a vámokat.”"
+        },
+        {
+          "key": "B",
+          "text": "„A tanórai anyag szerint a védővám a piac és az állam viszonyának kérdése (1. téma, 79. dia). Véleményem szerint a vállalkozásomnak a szabad kereskedelem kedvez, mert…”"
+        },
+        {
+          "key": "C",
+          "text": "„A szakirodalom szerint az államnak csökkentenie kellene a vámokat, szerintem is.”"
+        },
+        {
+          "key": "D",
+          "text": "„Mindenki tudja, hogy a vám rossz.”"
+        }
+      ],
+      "answer": "B",
+      "category": "forrashasznalat",
+      "explanation": "Helyes: B. Az átvett gondolat forrással („A tanórai anyag szerint…”), a saját vélemény jelölve („Véleményem szerint…”) és indokolva.",
+      "wrongOptions": {
+        "A": "Normatív állítás jelölés és indoklás nélkül – nem derül ki, kié a gondolat.",
+        "C": "A saját normatív véleményt a szakirodalomnak tulajdonítja, forrás nélkül.",
+        "D": "Általánosítás forrás és indoklás nélkül, tényként közölt vélemény."
+      }
+    },
+    {
+      "id": "6",
+      "kind": "choice",
+      "prompt": "A rubrika szerint mit rögzít a munkanapló?",
+      "options": [
+        {
+          "key": "A",
+          "text": "csak a leadás dátumát"
+        },
+        {
+          "key": "B",
+          "text": "a használt módszereket, a döntési helyzeteket, az akadályokat és megoldásukat, dátumozva"
+        },
+        {
+          "key": "C",
+          "text": "a projektmunka teljes szövegét"
+        },
+        {
+          "key": "D",
+          "text": "a forrásjegyzéket ábécérendben"
+        }
+      ],
+      "answer": "B",
+      "category": "forrashasznalat",
+      "explanation": "Helyes: B. A rubrika: a munkanapló „rögzíti a használt módszereket, a döntési helyzeteket, az akadályokat és megoldásukat, dátumozva” – így a forrásgyűjtés lépéseit is.",
+      "wrongOptions": {
+        "A": "A leadás dátuma csak egy elem – a napló a teljes folyamatot dokumentálja.",
+        "C": "A napló nem a kész munka, hanem a készítés folyamatának leírása.",
+        "D": "A forrásjegyzék a projektmunka formai eleme, nem a munkanapló tartalma."
+      }
+    }
+  ],
+  "relatedCategories": [
+    "pozitiv-normativ",
+    "szerkesztes"
+  ]
+}

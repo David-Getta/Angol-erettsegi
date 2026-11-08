@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "fiz-sp-kozep-fenytores",
+  "subject": "fizika",
+  "revision": 1,
+  "level": "kozep",
+  "source": "generated",
+  "topic": "hullamok-feny",
+  "title": "A fény visszaverődése és törése – a törésmutató mérése",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "speaking",
+  "type": "tetel",
+  "partNumber": 1,
+  "instructionsHu": "Fejtsd ki a fény visszaverődésének és törésének törvényeit, a teljes visszaverődést és a gyakorlati alkalmazásokat, majd mutasd be a félhenger alakú plexitesttel végzett kísérletet: mérd meg néhány beesési szöghöz a törési szöget, és határozd meg a plexi törésmutatóját!",
+  "prompts": [
+    "A fény terjedése, a fénysebesség; a visszaverődés törvénye",
+    "A fénytörés jelensége és törvénye (Snellius–Descartes), a törésmutató",
+    "A teljes visszaverődés feltétele, a határszög, alkalmazások (optikai szál, prizma)",
+    "Hétköznapi jelenségek: a vízbe merülő pálca „törése”, a délibáb, a színszóródás (prizma)",
+    "A mérés elvégzése és kiértékelése, a törésmutató kiszámítása"
+  ],
+  "sources": [
+    {
+      "title": "Kísérlet: fénytörés plexi félhengeren",
+      "text": "Eszközök: félhenger alakú plexitest, szögbeosztásos korong (optikai korong), keskeny fénynyalábot adó lámpa vagy lézermutató.\nMenet: helyezd a félhengert a korongra úgy, hogy a sík lapja a 90°–90° vonalon legyen, a középpontja a korong középpontjában! A fénysugarat a sík lapra, a középpontba irányítsd 20°, 40° és 60°-os beesési szöggel, és olvasd le a törési szögeket! Ezután a fényt a hengeres oldal felől küldd a középpontba, és növeld a beesési szöget, amíg a megtört sugár el nem tűnik!\nVárt tapasztalat: levegőből plexibe lépve a fény a beesési merőlegeshez törik; a sin α / sin β hányados kb. 1,5. Plexiből levegőbe lépve kb. 42°-os beesési szög fölött teljes visszaverődés figyelhető meg."
+    }
+  ],
+  "keyPoints": [
+    "Homogén közegben a fény egyenes vonalban terjed; vákuumban c ≈ 300 000 km/s, átlátszó anyagokban lassabban.",
+    "Visszaverődéskor a beesési szög egyenlő a visszaverődési szöggel, és a beeső sugár, a merőleges és a visszavert sugár egy síkban van.",
+    "Fénytörés két közeg határán a terjedési sebesség változása miatt jön létre; törési törvény: sin α / sin β = n₂,₁ = c₁/c₂.",
+    "Optikailag sűrűbb közegbe lépve a fény a merőlegeshez, ritkábba lépve a merőlegestől törik; merőleges beesésnél nem törik.",
+    "Teljes visszaverődés sűrűbb közegből ritkábba lépve, a határszögnél nagyobb beesési szögnél jön létre; sin α_h = 1/n (levegőbe lépve).",
+    "Alkalmazás: optikai szál (internet, endoszkóp), prizmás távcső, a gyémánt csillogása.",
+    "A mérés kiértékelése: sin α / sin β hányadosok átlaga ≈ 1,5 a plexi törésmutatója; a határszögből is ellenőrizhető."
+  ],
+  "speakingSeconds": 900,
+  "prepSeconds": 1800,
+  "sampleAnswer": {
+    "turns": [
+      {
+        "speaker": "candidate",
+        "text": "A tételem a fény visszaverődése és törése. A fény homogén közegben egyenes vonalban terjed, vákuumban kb. 300 000 km/s sebességgel, átlátszó anyagokban ennél lassabban. Amikor a fény két közeg határára érkezik, egy része visszaverődik, egy része átlép a másik közegbe. A visszaverődés törvénye szerint a beesési szög egyenlő a visszaverődési szöggel, a szögeket mindig a beesési merőlegestől mérjük, és a beeső sugár, a merőleges és a visszavert sugár egy síkban van.\nHa a fény ferdén lép át egy másik közegbe, megváltozik a terjedési iránya: ez a fénytörés. Az oka, hogy a két közegben más a fény sebessége. A törési törvény szerint a beesési és a törési szög szinuszának hányadosa állandó: sin α / sin β = n, ahol n a második közegnek az elsőre vonatkoztatott törésmutatója, és egyenlő a két fénysebesség hányadosával. Optikailag sűrűbb közegbe lépve a fény a merőlegeshez törik, ritkábba lépve a merőlegestől. Ezért látjuk megtörtnek a vízbe merülő pálcát, és ezért tűnik sekélyebbnek a medence. A fehér fény prizmán színeire bomlik, mert a törésmutató a színtől is függ.\nHa a fény sűrűbb közegből ritkábba lép, és a beesési szög elér egy határszöget, a törési szög 90° lesz, ennél nagyobb szögnél pedig a fény már nem lép ki, teljesen visszaverődik. Levegőbe lépve sin α_h = 1/n. Ezen alapul az optikai szál, amelyben a fény a falon sokszor teljesen visszaverődve vezethető.\nA kísérletben a félhengert az optikai korongra tettem, és a fényt a sík lap közepére irányítottam. 20°-os beesési szögnél kb. 13°-os, 40°-nál kb. 25°-os, 60°-nál kb. 35°-os törési szöget mértem; a fény tehát a merőlegeshez tört. A sin α / sin β hányados rendre 1,52; 1,52 és 1,51 lett, így a plexi törésmutatója kb. 1,5. Ezután a hengeres oldal felől küldtem be a fényt; ez a felület felé merőlegesen halad, ezért ott nem törik meg. A beesési szöget növelve kb. 42°-nál a megtört sugár eltűnt, és csak a visszavert sugár maradt: ez a határszög, és sin 42° ≈ 0,67 ≈ 1/1,5, ami megerősíti a mért törésmutatót."
+      },
+      {
+        "speaker": "examiner",
+        "text": "Miért kell a félhenger középpontjába irányítani a fényt?"
+      },
+      {
+        "speaker": "candidate",
+        "text": "Mert így a fény a hengeres felületet mindig sugárirányban, vagyis merőlegesen éri, ezért ott nem törik meg. Így csak a sík lapon történik törés, és a korongon közvetlenül leolvasható a beesési és a törési szög."
+      }
+    ],
+    "notes": [
+      "A felelet a visszaverődéstől a törésen át a teljes visszaverődésig logikusan halad, a törési törvényt képlettel és a fénysebességek arányával mondja ki, és hétköznapi jelenségeket is értelmez.",
+      "A mérés részletes: konkrét szögpárok, kiszámított hányadosok (≈ 1,5), és a határszöggel végzett független ellenőrzés – a kiértékelés így szakszerű és meggyőző.",
+      "A vizsgáztató kérdésére a mérési elrendezés lényegét (sugárirányú beesés a hengeres felületen) magyarázza el, ami a kísérlet tudatos elvégzését mutatja."
+    ]
+  }
+}

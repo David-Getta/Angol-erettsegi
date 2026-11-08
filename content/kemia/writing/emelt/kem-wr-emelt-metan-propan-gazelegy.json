@@ -1,0 +1,88 @@
+{
+  "schemaVersion": 1,
+  "id": "kem-wr-emelt-metan-propan-gazelegy",
+  "subject": "kemia",
+  "revision": 1,
+  "level": "emelt",
+  "source": "generated",
+  "topic": "kemia-kornyezet",
+  "title": "Metán–propán fűtőgázelegy összetétele és égéshője",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "writing",
+  "type": "szamitasi",
+  "taskNumber": 2,
+  "situation": "Egy metánból és propánból álló fűtőgázelegy hidrogéngázra vonatkoztatott relatív sűrűsége 13,6.\n\na) Határozza meg a gázelegy térfogatszázalékos összetételét! (4 pont)\nb) Adja meg a gázelegy tömegszázalékos összetételét! (2 pont)\nc) Számítsa ki a két gáz égéshőjét a képződéshőkből, és határozza meg, mennyi hő szabadul fel 10,0 dm³ standardállapotú gázelegy tökéletes elégetésekor (a keletkező víz folyékony)! (5 pont)\nd) Mekkora térfogatú standardállapotú levegő szükséges a 10,0 dm³ gázelegy tökéletes elégetéséhez? A levegő 21,0 térfogatszázalék oxigént tartalmaz. (4 pont)\n\nAdatok: Ar(H) = 1,0; Ar(C) = 12,0; képződéshők: ΔkH(CH₄, g) = −75 kJ/mol; ΔkH(C₃H₈, g) = −104 kJ/mol; ΔkH(CO₂, g) = −394 kJ/mol; ΔkH(H₂O, f) = −286 kJ/mol; Vm = 24,5 dm³/mol (standardállapot).",
+  "points": [
+    {
+      "id": "p1",
+      "text": "a) Az átlagos moláris tömeg és a térfogatszázalékos összetétel (4 pont)"
+    },
+    {
+      "id": "p2",
+      "text": "b) A tömegszázalékos összetétel (2 pont)"
+    },
+    {
+      "id": "p3",
+      "text": "c) A két égéshő a Hess-tétellel és a 10,0 dm³ elegy elégetésekor felszabaduló hő (5 pont)"
+    },
+    {
+      "id": "p4",
+      "text": "d) A szükséges oxigén és levegő térfogata (4 pont)"
+    }
+  ],
+  "suggestedMinutes": 40,
+  "usefulPhrases": [
+    {
+      "en": "M(átlag) = ρrel · M(H₂)",
+      "hu": "Gázelegy átlagos moláris tömege a relatív sűrűségből."
+    },
+    {
+      "en": "M(átlag) = x₁M₁ + x₂M₂",
+      "hu": "Az átlagos moláris tömeg a móltörtekkel súlyozott átlag."
+    },
+    {
+      "en": "térfogat% = mól% (gázoknál)",
+      "hu": "Avogadro-törvény: azonos állapotban a térfogat arányos az anyagmennyiséggel."
+    },
+    {
+      "en": "ΔrH = Σ ΔkH(termékek) − Σ ΔkH(kiindulási anyagok)",
+      "hu": "Hess-tétel képződéshőkkel; az elemek képződéshője 0."
+    },
+    {
+      "en": "Q = Σ nᵢ · |ΔrHᵢ|",
+      "hu": "Az elegy égésekor felszabaduló hő a komponensek járulékainak összege."
+    },
+    {
+      "en": "V(levegő) = V(O₂) / 0,21",
+      "hu": "A levegő oxigéntartalmából számolt levegőigény."
+    }
+  ],
+  "checklistExtra": [],
+  "modelAnswer": {
+    "text": "a) Az elegy átlagos moláris tömege: M = 13,6 · M(H₂) = 13,6 · 2,0 g/mol = 27,2 g/mol.\nLegyen a metán móltörtje x, a propáné (1 − x); azonos állapotú gázoknál a móltört egyenlő a térfogattörttel:\n16,0x + 44,0(1 − x) = 27,2 → 44,0 − 28,0x = 27,2 → x = 0,600\nA gázelegy 60,0 térfogatszázalék metánt és 40,0 térfogatszázalék propánt tartalmaz.\n\nb) 1 mol elegyben: m(CH₄) = 0,600 mol · 16,0 g/mol = 9,60 g, m(C₃H₈) = 0,400 mol · 44,0 g/mol = 17,6 g; összesen 27,2 g.\nw(CH₄) = 9,60 g / 27,2 g · 100 % = 35,3 %; w(C₃H₈) = 17,6 g / 27,2 g · 100 % = 64,7 %.\n\nc) CH₄ + 2 O₂ → CO₂ + 2 H₂O(f)\nΔrH = [−394 + 2 · (−286)] − (−75) = −891 kJ/mol\nC₃H₈ + 5 O₂ → 3 CO₂ + 4 H₂O(f)\nΔrH = [3 · (−394) + 4 · (−286)] − (−104) = −2222 kJ/mol\n(Hess-tétel: ΔrH = Σ ΔkH(termékek) − Σ ΔkH(kiindulási anyagok); az elemi oxigén képződéshője 0.)\nn(elegy) = 10,0 dm³ / 24,5 dm³/mol = 0,4082 mol, ebből n(CH₄) = 0,2449 mol, n(C₃H₈) = 0,1633 mol.\nQ = 0,2449 mol · 891 kJ/mol + 0,1633 mol · 2222 kJ/mol = 218,2 kJ + 362,8 kJ = 581 kJ\n10,0 dm³ gázelegy tökéletes elégetésekor 581 kJ hő szabadul fel.\n\nd) A 10,0 dm³ elegyben 6,00 dm³ metán és 4,00 dm³ propán van. Azonos állapotú gázoknál a térfogatarány egyenlő az anyagmennyiség-aránnyal, ezért az egyenletek szerint:\nV(O₂) = 2 · 6,00 dm³ + 5 · 4,00 dm³ = 32,0 dm³\nV(levegő) = 32,0 dm³ / 0,210 = 152 dm³\nA tökéletes égéshez 152 dm³ standardállapotú levegő szükséges.",
+    "pointsCovered": [
+      {
+        "id": "p1",
+        "quote": "A gázelegy 60,0 térfogatszázalék metánt és 40,0 térfogatszázalék propánt tartalmaz."
+      },
+      {
+        "id": "p2",
+        "quote": "w(CH₄) = 9,60 g / 27,2 g · 100 % = 35,3 %; w(C₃H₈) = 17,6 g / 27,2 g · 100 % = 64,7 %."
+      },
+      {
+        "id": "p3",
+        "quote": "Q = 0,2449 mol · 891 kJ/mol + 0,1633 mol · 2222 kJ/mol = 218,2 kJ + 362,8 kJ = 581 kJ"
+      },
+      {
+        "id": "p4",
+        "quote": "V(levegő) = 32,0 dm³ / 0,210 = 152 dm³"
+      }
+    ],
+    "notes": [
+      "Eredmény: helyes az összetétel (60,0 / 40,0 V/V%, 35,3 / 64,7 m/m%), a két égéshő (−891 és −2222 kJ/mol), a felszabaduló hő (581 kJ) és a levegőigény (152 dm³).",
+      "Indoklás: megnevezi a felhasznált törvényeket (Avogadro-törvény, Hess-tétel), és megmondja, miért egyenlő a térfogattört a móltörttel; a d) részt térfogatokkal, egyszerűbben, de indokoltan számolja.",
+      "Számolás és forma: a képződéshőket az együtthatókkal szorozza, a víz halmazállapotát jelöli (f), a hőt pozitív mennyiségként („felszabadul”), az égéshőt negatív előjellel adja meg; minden rész szöveges válasszal zárul."
+    ]
+  }
+}

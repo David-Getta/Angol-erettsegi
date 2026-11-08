@@ -1,0 +1,264 @@
+{
+  "schemaVersion": 1,
+  "id": "tor-gr-lenyegkiemeles",
+  "subject": "tortenelem",
+  "revision": 1,
+  "level": "kozep",
+  "source": "generated",
+  "topic": "nyelvtan",
+  "title": "Lényegkiemelés, relevancia",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "grammar",
+  "type": "lesson",
+  "category": "lenyegkiemeles",
+  "summaryHu": "A korlátozott terjedelmű esszében (közép 100–130 és 210–260, emelt 110–130, 240–290 és 290–340 szó) és a 15–20 perces szóbelin csak a lényegre van hely. A javító a feladat kérdésére felelő, lényeges tényezőket értékeli; a mellékes részletek, az ismétlés és a töltelékmondatok nem érnek pontot, sőt kiszorítják a pontot érő F- és E-elemeket.",
+  "rules": [
+    {
+      "title": "Mi a lényeges?",
+      "explanation": "Lényeges az, ami a feladat kérdésére felel: a fő okok, a döntő események, a következmények, a forrásokból levonható megállapítások. Próba: ha kihagynám ezt a mondatot, gyengülne-e a válaszom a feladat kérdésére?",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "Feladat: a tatárjárás következményei",
+          "hu": "lényeges: kővárépítés, betelepítés, a királyi hatalom változása; mellékes: a mongol lovak termete"
+        }
+      ]
+    },
+    {
+      "title": "Arányok: a szempontok súlya",
+      "explanation": "Oszd be a terjedelmet a szempontok között. Rövid esszében (kb. 120 szó): 1 mondat elhelyezés, forrásonként 1–2 mondat következtetéssel, 2–3 mondat ok vagy következmény. Hosszú esszében szempontonként egy bekezdés.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "120 szavas esszé vázlata",
+          "hu": "bevezetés 20 szó – I. forrás 30 – II. forrás 30 – következmények 40"
+        }
+      ]
+    },
+    {
+      "title": "Ismétlés és töltelék kerülése",
+      "explanation": "Ne ismételd meg a feladat szövegét, ne idézz hosszan a forrásból, és kerüld a tartalom nélküli fordulatokat („mint már említettem”, „ez nagyon fontos kérdés”).",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "„Mint azt már az előzőekben is kifejtettem, ez a kérdés nagyon fontos.”",
+          "hu": "töltelék – nem ér pontot, törölhető"
+        }
+      ]
+    },
+    {
+      "title": "Elbeszélés helyett elemzés",
+      "explanation": "Az esszé nem az események részletes elmesélése: a csata lefolyása helyett a jelentősége, a törvény minden pontja helyett a lényege és hatása a fontos.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "„Mohácsnál délután kezdődött a csata, esett az eső…”",
+          "hu": "elbeszélés"
+        },
+        {
+          "en": "„A mohácsi vereség (1526) után a kettős királyválasztás tartósan megosztotta az országot.”",
+          "hu": "elemzés – jelentőség"
+        }
+      ]
+    },
+    {
+      "title": "Rangsorolás",
+      "explanation": "Emelt szinten a tényezők fontosság szerinti rangsorolása is elvárás: melyik volt a döntő ok, melyik csak kísérő körülmény?",
+      "emeltOnly": true,
+      "examples": [
+        {
+          "en": "„A Rákóczi-szabadságharc bukásának döntő oka a francia segítség elmaradása és a katonai túlerő volt; a pestisjárvány ezt csak súlyosbította.”",
+          "hu": "döntő ok és kísérő tényező megkülönböztetése"
+        }
+      ]
+    }
+  ],
+  "commonMistakes": [
+    {
+      "wrong": "Mohácsnál a csata délután kezdődött, esett az eső, Tomori Pál a sereg élén állt, a király lova megbotlott…",
+      "right": "A mohácsi vereség (1526) után a kettős királyválasztás és a török előrenyomulás tartósan megosztotta az országot.",
+      "why": "A csata részletei nem felelnek a következményekre irányuló kérdésre; a terjedelem a lényegre kell."
+    },
+    {
+      "wrong": "Az I. forrás szerint „Hitelt csak az kaphat, akinek birtokát zálogba lehet adni, a mi földünket azonban az ősiség megköti. A robotos jobbágy munkája…” (az egész forrás bemásolva)",
+      "right": "Az I. forrás szerint az ősiség miatt nem lehetett zálogba adni a birtokot, ezért Széchenyi az eltörlését sürgette.",
+      "why": "A hosszú idézet terjedelmet emészt fel, és nem mutatja az értelmezést; röviden, saját szavaiddal foglald össze."
+    },
+    {
+      "wrong": "Mint már fentebb említettem, Széchenyi nagyon fontos szerepet játszott, ami nagyon lényeges.",
+      "right": "Széchenyi Hitele (1830) indította el a reformkort.",
+      "why": "A töltelékmondat nem tartalmaz ellenőrizhető állítást, és pontot sem ér."
+    },
+    {
+      "wrong": "A rövid esszé fele a korszak előzményeiről szól.",
+      "right": "A rövid esszében egy mondat elhelyezi a témát, a többi a feladat kérdésére felel.",
+      "why": "Rövid esszében nincs hely hosszú előzménytörténetre."
+    }
+  ],
+  "examTips": [
+    "Rövid esszében nincs hely bevezető általánosságoknak: az első mondat már helyezze el a témát térben és időben.",
+    "Szóbelin, ha elakadsz, térj vissza a tétel kérdéséhez és a forrásokhoz – a vizsgáztató a lényegre kérdez rá, nem a részletekre."
+  ],
+  "practice": [
+    {
+      "id": "1",
+      "kind": "choice",
+      "prompt": "Feladat: a tatárjárás következményei. Melyik mondat a leglényegesebb?",
+      "options": [
+        {
+          "key": "A",
+          "text": "A mongolok kis termetű, szívós sztyeppei lovakon harcoltak."
+        },
+        {
+          "key": "B",
+          "text": "A tatárjárás után IV. Béla kővárak építésével készült fel egy újabb támadásra."
+        },
+        {
+          "key": "C",
+          "text": "IV. Béla egy ideig Trau városában tartózkodott."
+        },
+        {
+          "key": "D",
+          "text": "A mongol birodalmat Dzsingisz kán alapította."
+        }
+      ],
+      "answer": "B",
+      "category": "lenyegkiemeles",
+      "explanation": "Helyes: B. A kővárépítés a tatárjárás egyik legfontosabb következménye, és közvetlenül felel a kérdésre.",
+      "wrongOptions": {
+        "A": "A mongol harcmodor részlete, nem a következményekről szól.",
+        "C": "Igaz, de mellékes részlet a menekülésről, nem következmény.",
+        "D": "Előzmény, nem a magyarországi következmények része."
+      }
+    },
+    {
+      "id": "2",
+      "kind": "choice",
+      "prompt": "Melyik mondat töltelék, amely nem ér pontot?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Mint azt már az előzőekben is kifejtettem, ez a kérdés nagyon fontos."
+        },
+        {
+          "key": "B",
+          "text": "A kiegyezés (1867) létrehozta az Osztrák–Magyar Monarchiát."
+        },
+        {
+          "key": "C",
+          "text": "Az I. forrás szerint a nemesség is adózni fog, ami a jogegyenlőség felé mutat."
+        },
+        {
+          "key": "D",
+          "text": "A pengő bevezetése (1927) megszilárdította a pénzügyeket."
+        }
+      ],
+      "answer": "A",
+      "category": "lenyegkiemeles",
+      "explanation": "Helyes: A. Nincs benne ellenőrizhető történelmi állítás, csak a terjedelmet növeli.",
+      "wrongOptions": {
+        "B": "Pontos tény, a témához kapcsolódva E-elem része lehet.",
+        "C": "Teljes F-elem: forrásmegállapítás + következtetés.",
+        "D": "Tény + következmény: E-elem."
+      }
+    },
+    {
+      "id": "3",
+      "kind": "choice",
+      "prompt": "Rövid esszéhez (100–130 szó) melyik felosztás a legjobb?",
+      "options": [
+        {
+          "key": "A",
+          "text": "1–2 mondat elhelyezés, mindkét forrásból megállapítás következtetéssel, 2–3 ok vagy következmény"
+        },
+        {
+          "key": "B",
+          "text": "a szöveg fele a források szó szerinti idézése"
+        },
+        {
+          "key": "C",
+          "text": "hosszú bevezetés a korszak előzményeiről"
+        },
+        {
+          "key": "D",
+          "text": "csak saját ismeretek, források nélkül"
+        }
+      ],
+      "answer": "A",
+      "category": "lenyegkiemeles",
+      "explanation": "Helyes: A. Minden szempont (T, F, E, K) helyet kap a szűk terjedelemben.",
+      "wrongOptions": {
+        "B": "A szó szerinti idézés nem értelmezés, és kiszorítja a következtetéseket.",
+        "C": "A hosszú előzmény lényegtelen, és elveszi a helyet a kifejtéstől.",
+        "D": "A források használata kötelező; nélkülük az F-szempont 0 pont."
+      }
+    },
+    {
+      "id": "4",
+      "kind": "choice",
+      "prompt": "Feladat: Augustus hatalmának alapjai. Melyik adat a legkevésbé releváns?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Kezében tartotta a hadsereg irányítását."
+        },
+        {
+          "key": "B",
+          "text": "Augustus Kr. u. 14-ben Nolában halt meg."
+        },
+        {
+          "key": "C",
+          "text": "Megkapta a néptribunusi jogkört."
+        },
+        {
+          "key": "D",
+          "text": "A köztársasági intézmények formálisan megmaradtak."
+        }
+      ],
+      "answer": "B",
+      "category": "lenyegkiemeles",
+      "explanation": "Helyes: B. Igaz, de a halál helye és ideje nem magyarázza hatalmának alapjait.",
+      "wrongOptions": {
+        "A": "A hadsereg irányítása hatalmának legfontosabb alapja volt.",
+        "C": "A néptribunusi jogkör (vétójog, sérthetetlenség) hatalma jogi alapja.",
+        "D": "A köztársasági látszat a legitimáció eszköze volt – lényeges."
+      }
+    },
+    {
+      "id": "5",
+      "kind": "choice",
+      "prompt": "Feladat: az 1848-as áprilisi törvények jelentősége. Melyik a leginkább lényegre törő mondat?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Az áprilisi törvényeket sokáig tárgyalták, és sok vita volt róluk."
+        },
+        {
+          "key": "B",
+          "text": "Az áprilisi törvények a rendi berendezkedést polgári alkotmányos monarchiával váltották fel: felelős kormányt, népképviseletet és jogegyenlőséget teremtettek."
+        },
+        {
+          "key": "C",
+          "text": "V. Ferdinánd Pozsonyban szentesítette a törvényeket, a teremben sokan voltak jelen."
+        },
+        {
+          "key": "D",
+          "text": "Az áprilisi törvények nagyon fontos törvények voltak."
+        }
+      ],
+      "answer": "B",
+      "category": "lenyegkiemeles",
+      "explanation": "Helyes: B. Megnevezi a változás lényegét és a fő intézményeket – ez felel a jelentőségre irányuló kérdésre.",
+      "wrongOptions": {
+        "A": "Általános, tartalmilag üres megállapítás.",
+        "C": "Mellékes részlet; csak a szentesítés ténye releváns.",
+        "D": "Értékítélet indoklás nélkül."
+      }
+    }
+  ],
+  "relatedCategories": [
+    "feladatmegertes",
+    "ok-okozat"
+  ]
+}

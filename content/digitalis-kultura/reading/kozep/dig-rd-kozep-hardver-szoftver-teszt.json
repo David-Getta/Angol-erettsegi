@@ -1,0 +1,267 @@
+{
+  "schemaVersion": 1,
+  "id": "dig-rd-kozep-hardver-szoftver-teszt",
+  "subject": "digitalis-kultura",
+  "revision": 1,
+  "level": "kozep",
+  "source": "generated",
+  "topic": "hardver-szoftver",
+  "title": "Hardver, szoftver, operációs rendszer",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "reading",
+  "type": "feleletvalasztas",
+  "instructions": "Válassza ki a helyes választ (A–D)! Minden kérdésre pontosan egy helyes válasz van. A 0. a példa.",
+  "example": {
+    "id": "0",
+    "kind": "choice",
+    "prompt": "Melyik eszköz bemeneti (input) periféria?",
+    "options": [
+      {
+        "key": "A",
+        "text": "monitor"
+      },
+      {
+        "key": "B",
+        "text": "nyomtató"
+      },
+      {
+        "key": "C",
+        "text": "hangszóró"
+      },
+      {
+        "key": "D",
+        "text": "billentyűzet"
+      }
+    ],
+    "answer": "D",
+    "category": "hardver-szoftver-fogalom",
+    "explanation": "D – billentyűzet: rajta keresztül adat jut a számítógépbe. A monitor, a nyomtató és a hangszóró kimeneti (output) periféria.",
+    "wrongOptions": {
+      "A": "A monitor a számítógép által előállított képet jeleníti meg, tehát kimeneti eszköz.",
+      "B": "A nyomtató papírra viszi ki az adatot: kimeneti eszköz.",
+      "C": "A hangszóró hangot ad ki: kimeneti eszköz."
+    }
+  },
+  "items": [
+    {
+      "id": "1",
+      "kind": "choice",
+      "prompt": "Melyik állítás igaz a RAM-ra (operatív memóriára)?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Kikapcsoláskor is megőrzi a tartalmát."
+        },
+        {
+          "key": "B",
+          "text": "Itt vannak a futó programok és az éppen használt adatok; kikapcsoláskor a tartalma elvész."
+        },
+        {
+          "key": "C",
+          "text": "Csak olvasható, gyárilag beírt memória."
+        },
+        {
+          "key": "D",
+          "text": "A merevlemez egyik része."
+        }
+      ],
+      "answer": "B",
+      "category": "hardver-szoftver-fogalom",
+      "explanation": "B. A RAM (Random Access Memory) a futó programok és adataik gyors, írható-olvasható tára; áram nélkül elveszíti a tartalmát (illékony). A tartós tárolásra a háttértár (SSD, HDD) szolgál.",
+      "wrongOptions": {
+        "A": "Ez a háttértárakra (SSD, HDD, pendrive) igaz, a RAM tartalma kikapcsoláskor elvész.",
+        "C": "Ez a ROM (Read Only Memory) jellemzője.",
+        "D": "A RAM önálló memóriamodul az alaplapon, nem a merevlemez része."
+      }
+    },
+    {
+      "id": "2",
+      "kind": "choice",
+      "prompt": "Hány bájt 1 KiB (kibibájt)?",
+      "options": [
+        {
+          "key": "A",
+          "text": "1000"
+        },
+        {
+          "key": "B",
+          "text": "8"
+        },
+        {
+          "key": "C",
+          "text": "1024"
+        },
+        {
+          "key": "D",
+          "text": "1 000 000"
+        }
+      ],
+      "answer": "C",
+      "category": "hardver-szoftver-fogalom",
+      "explanation": "C – 1024 bájt: a bináris előtagok 2 hatványai (1 KiB = 2¹⁰ C). A decimális kB (kilobájt) az SI szerint 1000 bájt; a köznyelv a kettőt gyakran összekeveri.",
+      "wrongOptions": {
+        "A": "1000 bájt az SI-előtagos 1 kB, nem a bináris KiB.",
+        "B": "8 bit egy bájt; ez a bit és a bájt viszonya.",
+        "D": "1 000 000 bájt 1 MB (megabájt), nem KiB."
+      }
+    },
+    {
+      "id": "3",
+      "kind": "choice",
+      "prompt": "Melyik az operációs rendszer feladata?",
+      "options": [
+        {
+          "key": "A",
+          "text": "A dokumentumok helyesírásának ellenőrzése."
+        },
+        {
+          "key": "B",
+          "text": "A weboldalak HTML-kódjának megírása."
+        },
+        {
+          "key": "C",
+          "text": "A hardvererőforrások (processzoridő, memória, perifériák) kezelése és a programok futtatása."
+        },
+        {
+          "key": "D",
+          "text": "A processzor órajelének előállítása."
+        }
+      ],
+      "answer": "C",
+      "category": "hardver-szoftver-fogalom",
+      "explanation": "C. Az operációs rendszer közvetít a hardver és a felhasználói programok között: elosztja a processzoridőt és a memóriát, kezeli a fájlrendszert és a perifériákat (illesztőprogramokkal), elindítja a programokat.",
+      "wrongOptions": {
+        "A": "A helyesírás-ellenőrzés a szövegszerkesztő (alkalmazói szoftver) szolgáltatása.",
+        "B": "A HTML-kódot a webfejlesztő írja szövegszerkesztővel vagy fejlesztőkörnyezetben.",
+        "D": "Az órajelet hardver (órajel-generátor, kvarc) állítja elő."
+      }
+    },
+    {
+      "id": "4",
+      "kind": "choice",
+      "prompt": "Mit jelent, ha egy processzor órajele 3,2 GHz?",
+      "options": [
+        {
+          "key": "A",
+          "text": "A processzornak 3,2 magja van."
+        },
+        {
+          "key": "B",
+          "text": "A processzorban 3,2 GB memória van."
+        },
+        {
+          "key": "C",
+          "text": "Percenként 3,2 millió művelet."
+        },
+        {
+          "key": "D",
+          "text": "Másodpercenként 3,2 milliárd órajelciklus."
+        }
+      ],
+      "answer": "D",
+      "category": "hardver-szoftver-fogalom",
+      "explanation": "D. A hertz a másodpercenkénti ciklusok száma, a giga- előtag 10⁹: 3,2 GHz = 3,2 · 10⁹ ciklus másodpercenként. A gyorsaság nem csak ettől függ (magok száma, gyorsítótár, architektúra).",
+      "wrongOptions": {
+        "A": "A magok száma egész szám, és nem az órajelből derül ki.",
+        "B": "A GHz frekvencia (ciklus/másodperc), nem tárolókapacitás; a GB a memória mértékegysége.",
+        "C": "A giga 10⁹ (milliárd), és a hertz másodpercre vonatkozik, nem percre."
+      }
+    },
+    {
+      "id": "5",
+      "kind": "choice",
+      "prompt": "Melyik adattároló működik mozgó alkatrész nélkül, flash memóriával?",
+      "options": [
+        {
+          "key": "A",
+          "text": "SSD"
+        },
+        {
+          "key": "B",
+          "text": "HDD (merevlemez)"
+        },
+        {
+          "key": "C",
+          "text": "DVD-lemez"
+        },
+        {
+          "key": "D",
+          "text": "mágnesszalag"
+        }
+      ],
+      "answer": "A",
+      "category": "hardver-szoftver-fogalom",
+      "explanation": "A – SSD (Solid State Drive): flash memóriacellákban tárol, nincs forgó lemeze, ezért gyorsabb és ütésállóbb, mint a HDD.",
+      "wrongOptions": {
+        "B": "A HDD forgó mágneslemezeken és mozgó író-olvasó fejjel dolgozik.",
+        "C": "A DVD optikai tároló, lézerrel olvassák a forgó lemezt.",
+        "D": "A mágnesszalagot tekercselve olvassák, mozgó alkatrészekkel."
+      }
+    },
+    {
+      "id": "6",
+      "kind": "choice",
+      "prompt": "Melyik alkalmazói (felhasználói) szoftver?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Windows 11"
+        },
+        {
+          "key": "B",
+          "text": "Linux-kernel"
+        },
+        {
+          "key": "C",
+          "text": "nyomtató-illesztőprogram (driver)"
+        },
+        {
+          "key": "D",
+          "text": "táblázatkezelő program"
+        }
+      ],
+      "answer": "D",
+      "category": "hardver-szoftver-fogalom",
+      "explanation": "D. Az alkalmazói szoftver a felhasználó konkrét feladatát oldja meg (táblázatkezelés, szövegszerkesztés, böngészés). Az operációs rendszer, a kernel és az illesztőprogram rendszerszoftver.",
+      "wrongOptions": {
+        "A": "A Windows 11 operációs rendszer, azaz rendszerszoftver.",
+        "B": "A kernel az operációs rendszer magja – rendszerszoftver.",
+        "C": "Az illesztőprogram az operációs rendszer és egy hardvereszköz közti kapcsolatot teremti meg – rendszerszoftver."
+      }
+    },
+    {
+      "id": "7",
+      "kind": "choice",
+      "prompt": "Melyik a Neumann-elvek egyike?",
+      "options": [
+        {
+          "key": "A",
+          "text": "A számítógéphez csak egy periféria csatlakozhat."
+        },
+        {
+          "key": "B",
+          "text": "A számítógép tízes számrendszerben dolgozik."
+        },
+        {
+          "key": "C",
+          "text": "A programot lyukkártyáról, utasításonként kell beolvasni."
+        },
+        {
+          "key": "D",
+          "text": "A program és az adatok ugyanabban a belső memóriában, azonos módon tárolódnak."
+        }
+      ],
+      "answer": "D",
+      "category": "hardver-szoftver-fogalom",
+      "explanation": "D – a tárolt program elve. Neumann János elvei: kettes számrendszer, teljesen elektronikus működés, soros utasításvégrehajtás, belső memória, amelyben a program és az adat is tárolódik, valamint univerzális (bármilyen feladatra programozható) gép.",
+      "wrongOptions": {
+        "A": "Nincs ilyen elv; a gép központi egységből és tetszőleges számú perifériából áll.",
+        "B": "A Neumann-elvek egyike éppen a kettes (bináris) számrendszer használata.",
+        "C": "A tárolt program elve szerint a program a belső memóriában van, nem kívülről olvassuk be utasításonként."
+      }
+    }
+  ],
+  "glossary": [],
+  "suggestedMinutes": 8
+}

@@ -1,0 +1,237 @@
+{
+  "note": "A Parancsok súgóoldal, a helyzetfüggő tippek és a .claude/commands/*.md fájlok innen dolgoznak. Ha itt változtatsz, a parancsfájlt is frissítsd (egy teszt ellenőrzi, hogy minden parancshoz van fájl).",
+  "sectionArgs": [
+    {
+      "value": "<rész>",
+      "section": "part",
+      "label": "A vizsgarész URL-azonosítója (lásd az app oldalait, pl. olvasas, rovid-feladatok)"
+    },
+    {
+      "value": "szokincs",
+      "section": "vocabulary",
+      "label": "Szókincs / fogalmak (pakli)"
+    },
+    {
+      "value": "szabaly",
+      "section": "grammar",
+      "label": "Szabálytár (lecke egy hibakategóriához)"
+    },
+    {
+      "value": "utmutato",
+      "section": "guide",
+      "label": "Útmutató (szövegtípus, feladattípus vagy vizsgarész)"
+    }
+  ],
+  "commands": [
+    {
+      "name": "feladatok",
+      "file": ".claude/commands/feladatok.md",
+      "title": "Új feladatok generálása",
+      "summary": "Új, érettségi-szerű feladatokat ír a tartalombankba (content/) a séma szerint, magyar magyarázatokkal és alternatív válaszokkal, majd lefuttatja a validátort.",
+      "usage": "/feladatok <tantárgy> <rész> <szint> <darab> [témakör] [hibakategória]",
+      "params": [
+        {
+          "name": "tantárgy",
+          "required": true,
+          "valuesFrom": "subjects",
+          "description": "A tantárgy azonosítója (config/subjects.json): angol, magyar, matematika, tortenelem, nemet, fizika, kemia, biologia, foldrajz, digitalis-kultura, gazdasagi-ismeretek."
+        },
+        {
+          "name": "rész",
+          "required": true,
+          "valuesFrom": "sections",
+          "description": "A vizsgarész URL-azonosítója a tantárgy configjából (az app a parancsot mindig kiírja: pl. angolnál olvasas, nyelvhelyesseg, hallas, iras, szobeli; matematikánál rovid-feladatok, kidolgozott-feladatok, szobeli) – vagy szokincs (pakli), szabaly (szabálylecke egy hibakategóriához), utmutato (útmutató)."
+        },
+        {
+          "name": "szint",
+          "required": true,
+          "valuesFrom": "levels",
+          "description": "kozep (A2–B1) vagy emelt (B2)."
+        },
+        {
+          "name": "darab",
+          "required": true,
+          "valuesFrom": "count",
+          "description": "Hány feladatot (szókincsnél: hány paklit / témakört) generáljon. 1–20 között érdemes."
+        },
+        {
+          "name": "témakör",
+          "required": false,
+          "valuesFrom": "topics",
+          "description": "A szóbeli témakörök egyike (azonosító, pl. kornyezet). Ha elhagyod, vegyes témákat választ, a bankban ritkábbakat előnyben részesítve."
+        },
+        {
+          "name": "hibakategória",
+          "required": false,
+          "valuesFrom": "categories",
+          "description": "Nyelvhelyességnél: erre a hibakategóriára fókuszáló itemeket ír (pl. tense, article, preposition). A szabaly résznél kötelező: ehhez a kategóriához ír leckét."
+        }
+      ],
+      "examples": [
+        {
+          "command": "/feladatok angol nyelvhelyesseg emelt 10",
+          "description": "10 új emelt szintű angol nyelvhelyesség-feladat vegyes típusokkal."
+        },
+        {
+          "command": "/feladatok matematika rovid-feladatok kozep 6 fuggvenyek",
+          "description": "6 középszintű rövid matekfeladat a Függvények témakörből."
+        },
+        {
+          "command": "/feladatok tortenelem esszek emelt 2 - -",
+          "description": "2 emelt szintű történelem esszéfeladat vegyes témakörből."
+        },
+        {
+          "command": "/feladatok angol nyelvhelyesseg emelt 6 - tense",
+          "description": "6 feladat, amely az igeidőkre fókuszál (a „-” kihagyja a témakört)."
+        },
+        {
+          "command": "/feladatok matematika szabaly kozep 1 - szamolas",
+          "description": "Szabálylecke (magyarázat, tipikus hibák, mini-gyakorlás) a matematika Szabálytárába a számolási hibákhoz."
+        },
+        {
+          "command": "/feladatok magyar utmutato kozep 1 - -",
+          "description": "A még hiányzó útmutatók egyike a magyar Útmutatók közé."
+        }
+      ],
+      "after": "Kattints a „Tartalom újratöltése” gombra (vagy indítsd újra a dev szervert / futtasd: npm run seed), és az új feladatok megjelennek."
+    },
+    {
+      "name": "javitas",
+      "file": ".claude/commands/javitas.md",
+      "title": "Írás- és szóbeli beadások javítása",
+      "summary": "Feldolgozza az exchange/inbox/ összes javításra váró beadását (írás és szóbeli átirat), a hivatalos rubrika szerint szigorúan pontoz, és a javítást az exchange/outbox/-ba írja.",
+      "usage": "/javitas [beadás-azonosító]",
+      "params": [
+        {
+          "name": "beadás-azonosító",
+          "required": false,
+          "valuesFrom": "free",
+          "description": "Ha megadod, csak ezt az egy beadást javítja (pl. w-20261105-1432-ab12). Elhagyva mindet."
+        }
+      ],
+      "examples": [
+        {
+          "command": "/javitas",
+          "description": "Minden javításra váró beadás kijavítása."
+        },
+        {
+          "command": "/javitas w-20261105-1432-ab12",
+          "description": "Csak egy konkrét beadás javítása."
+        }
+      ],
+      "after": "Kattints a „Javítások importálása” gombra (vagy futtasd: npm run import-feedback). A javítás megjelenik a beadásnál, a hibák a hibanaplóba kerülnek."
+    },
+    {
+      "name": "szokincs",
+      "file": ".claude/commands/szokincs.md",
+      "title": "Szókártyák kiegészítése, szókincs generálása",
+      "summary": "Kiegészíti a hiányos szókártyákat (jelentés, példamondat, kollokáció), és kérésre témakörönkénti szókincs-paklit generál a tartalombankba.",
+      "usage": "/szokincs <tantárgy> [témakör] [szint] [darab]",
+      "params": [
+        {
+          "name": "tantárgy",
+          "required": true,
+          "valuesFrom": "subjects",
+          "description": "A tantárgy azonosítója (config/subjects.json): angol, magyar, matematika, tortenelem, nemet, fizika, kemia, biologia, foldrajz, digitalis-kultura, gazdasagi-ismeretek."
+        },
+        {
+          "name": "témakör",
+          "required": false,
+          "valuesFrom": "topics",
+          "description": "Ha megadod, ehhez a témakörhöz generál új paklit (kártyákat). Elhagyva csak a hiányos kártyákat egészíti ki."
+        },
+        {
+          "name": "szint",
+          "required": false,
+          "valuesFrom": "levels",
+          "description": "A pakli szintje (kozep / emelt). Alapból a beállított szint."
+        },
+        {
+          "name": "darab",
+          "required": false,
+          "valuesFrom": "count",
+          "description": "Hány szót tartalmazzon az új pakli (alapból 40)."
+        }
+      ],
+      "examples": [
+        {
+          "command": "/szokincs angol",
+          "description": "A hiányos angol szókártyák (jelentés, példamondat) kiegészítése az exchange/vocab/incomplete.json alapján."
+        },
+        {
+          "command": "/szokincs angol kornyezet emelt 40",
+          "description": "Új 40 kártyás emelt szintű angol pakli a Környezetünk témakörből."
+        },
+        {
+          "command": "/szokincs tortenelem kozepkor kozep 40",
+          "description": "40 kártyás fogalom- és évszámpakli a középkor témakörből a történelemhez."
+        }
+      ],
+      "after": "Hiányos kártyáknál: kattints a Szókincs oldalon a „Kiegészítések betöltése” gombra. Új paklinál: „Tartalom újratöltése”, majd „Pakli felvétele”."
+    },
+    {
+      "name": "import-hivatalos",
+      "file": ".claude/commands/import-hivatalos.md",
+      "title": "Hivatalos feladatsor importálása",
+      "summary": "A data/official/<mappa>/ alá bemásolt hivatalos feladatlapból (PDF), javítási útmutatóból és hanganyagból a tartalombank formátumára alakítja a feladatokat (source: official), majd lefuttatja a validátort.",
+      "usage": "/import-hivatalos <mappa>",
+      "params": [
+        {
+          "name": "mappa",
+          "required": true,
+          "valuesFrom": "officialFolders",
+          "description": "A data/official/ alatti mappa neve, pl. 2024-majus-emelt."
+        }
+      ],
+      "examples": [
+        {
+          "command": "/import-hivatalos 2024-majus-emelt",
+          "description": "A 2024. májusi emelt szintű feladatsor importálása."
+        },
+        {
+          "command": "/import-hivatalos 2023-oktober-kozep",
+          "description": "A 2023. októberi középszintű feladatsor importálása."
+        }
+      ],
+      "after": "Kattints a „Tartalom újratöltése” gombra. A feladatok „Hivatalos” jelöléssel jelennek meg a modulokban és a próbaérettségiben."
+    },
+    {
+      "name": "lecke",
+      "file": ".claude/commands/lecke.md",
+      "title": "Tanórai anyag feldolgozása",
+      "summary": "A tanár diasorából vagy jegyzetéből (PDF a data/lessons/<tantárgy>/ alatt) feladatokat, tételeket, fogalomkártyákat és szabálytár-bővítést ír a tartalombankba – csak a fájlban szereplő anyagból –, majd lefuttatja a validátort.",
+      "usage": "/lecke <tantárgy> <fájl> [témakör]",
+      "params": [
+        {
+          "name": "tantárgy",
+          "required": true,
+          "valuesFrom": "subjects",
+          "description": "A tantárgy azonosítója (config/subjects.json): angol, magyar, matematika, tortenelem, nemet, fizika, kemia, biologia, foldrajz, digitalis-kultura, gazdasagi-ismeretek."
+        },
+        {
+          "name": "fájl",
+          "required": true,
+          "valuesFrom": "free",
+          "description": "A data/lessons/<tantárgy>/ alatti PDF vagy szöveges fájl neve, pl. Gazdasagi_ismeretek_20261017.pdf."
+        },
+        {
+          "name": "témakör",
+          "required": false,
+          "valuesFrom": "topics",
+          "description": "A config/subjects/<tantárgy>/topics.json egyik id-je, ha az anyag egy témakörhöz tartozik; elhagyva a diasorból állapítja meg."
+        }
+      ],
+      "examples": [
+        {
+          "command": "/lecke gazdasagi-ismeretek Gazdasagi_ismeretek_20261017.pdf",
+          "description": "A következő gazdasági ismeretek diasor feldolgozása: feladatok, tételek, fogalomkártyák, szabálytár-bővítés."
+        },
+        {
+          "command": "/lecke gazdasagi-ismeretek Gazdasagi_ismeretek_20261017.pdf piaci-mechanizmus",
+          "description": "Ugyanez, a témakört előre megadva."
+        }
+      ],
+      "after": "Kattints a „Tartalom újratöltése” gombra (vagy futtasd: npm run seed). Az új feladatok, tételek és kártyák a tantárgy oldalain jelennek meg."
+    }
+  ]
+}

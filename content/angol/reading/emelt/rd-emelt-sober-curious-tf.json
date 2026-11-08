@@ -1,0 +1,192 @@
+{
+  "schemaVersion": 1,
+  "id": "rd-emelt-sober-curious-tf",
+  "subject": "angol",
+  "revision": 1,
+  "level": "emelt",
+  "source": "generated",
+  "topic": "eletmod",
+  "title": "Last orders for alcohol?",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "reservedFor": "mock",
+  "section": "reading",
+  "type": "true-false",
+  "instructions": "Read the article about young people and alcohol. Decide whether the statements (1–10) are true (T) or false (F) according to the text, or whether the information is not given (NG). There is an example (0) at the beginning.",
+  "instructionsHu": "Olvasd el a fiatalok alkoholfogyasztásáról szóló cikket. Döntsd el, hogy az állítások igazak (T), hamisak (F), vagy a szövegből nem derül ki (NG). A 0. a példa.",
+  "passage": {
+    "title": "Last orders for alcohol?",
+    "subtitle": "Young adults are drinking less than any generation before them. What is behind the change – and will it last?",
+    "blocks": [
+      {
+        "text": "Every Friday night, the Copper Kettle in Bristol is packed with people in their twenties. The music is loud, the conversation louder, and the bartenders are busy shaking cocktails. Nothing about the scene would seem out of place in any city-centre bar, except for one detail: not a single drink on the menu contains alcohol. When it opened four years ago, the owners were told by friends that they would be bankrupt within six months. Instead, they have opened a second bar and are now looking for a third location."
+      },
+      {
+        "text": "The Copper Kettle is part of a wider trend. Across much of Europe and North America, surveys show that people born after 1997 – so-called Generation Z – drink less alcohol than their parents did at the same age, and a growing proportion do not drink at all. In Britain, the share of 16-to-24-year-olds who describe themselves as non-drinkers has roughly doubled since the early 2000s. Sales of alcohol-free beer, once a joke among serious drinkers, have risen every year for the past decade."
+      },
+      {
+        "text": "Researchers have struggled to identify a single cause. Health is clearly part of the picture: young people today are better informed about the effects of alcohol on the body and the mind, and many say they simply do not want to feel ill the next day. Money matters too. With rents high and part-time jobs poorly paid, a night of heavy drinking is an expense many students can no longer justify. 'A round of drinks for five friends can cost as much as a week's food shopping,' says Ellie Thornton, a 22-year-old history student who stopped drinking last year."
+      },
+      {
+        "text": "Some sociologists believe that social media has played a more surprising role. In the past, an embarrassing night out was quickly forgotten. Today, it may be photographed, posted online and remain there for years. 'Young people are constantly aware that they might be recorded,' explains Dr Samuel Price, who studies youth culture. 'Losing control in public carries a much higher risk than it did for their parents.' Others argue that the internet has simply replaced the pub as a place to meet: why go out to socialise when your friends are available on your phone at any hour?"
+      },
+      {
+        "text": "Not all the news is positive, however. Some health experts warn that the overall figures hide important differences. While the majority of young people drink less, a small minority still drink heavily, and the number of young adults treated in hospital for alcohol-related problems has not fallen as quickly as overall consumption. There are also concerns that 'sober curious' social media influencers sometimes promote expensive alcohol-free products with health claims that have little scientific support."
+      },
+      {
+        "text": "For Ellie, the decision to stop drinking was less dramatic than she had expected. She worried at first that her friends would find her boring or that she would be left out of parties. In fact, she says, hardly anyone noticed. 'I still go out until two in the morning,' she laughs. 'The only difference is that I remember it the next day – and I've got more money in my bank account.' She does not rule out having a glass of wine at her sister's wedding next summer, but says she no longer sees alcohol as necessary for having fun."
+      },
+      {
+        "text": "Whether the trend will survive as Generation Z grows older remains to be seen. Previous generations also drank less in some periods and more in others. But the owners of the Copper Kettle are optimistic. 'Our customers aren't anti-alcohol,' says co-founder Marcus Bell. 'They just want to choose, and for the first time they really can.'"
+      }
+    ]
+  },
+  "example": {
+    "id": "0",
+    "kind": "tf",
+    "prompt": "None of the drinks served at the Copper Kettle contain alcohol.",
+    "answer": "T",
+    "category": "detail",
+    "explanation": "Igaz (T): a szöveg szerint az itallapon egyetlen ital sem tartalmaz alkoholt.",
+    "evidence": "not a single drink on the menu contains alcohol"
+  },
+  "items": [
+    {
+      "id": "1",
+      "kind": "tf",
+      "prompt": "The owners' friends expected the bar to fail.",
+      "answer": "T",
+      "category": "inference",
+      "explanation": "Igaz (T): a barátaik azt mondták nekik, hogy hat hónapon belül csődbe mennek – vagyis a kudarcukra számítottak.",
+      "evidence": "the owners were told by friends that they would be bankrupt within six months"
+    },
+    {
+      "id": "2",
+      "kind": "tf",
+      "prompt": "The owners have already opened a third bar.",
+      "answer": "F",
+      "category": "true-false-trap",
+      "explanation": "Hamis (F): a második bárt már megnyitották, a harmadikhoz még csak helyszínt keresnek („are now looking for a third location”).",
+      "evidence": "they have opened a second bar and are now looking for a third location"
+    },
+    {
+      "id": "3",
+      "kind": "tf",
+      "prompt": "Alcohol-free beer now sells better than ordinary beer among young people.",
+      "answer": "NG",
+      "category": "true-false-trap",
+      "explanation": "Nem derül ki (NG): a szöveg csak annyit mond, hogy az alkoholmentes sör eladásai tíz éve minden évben nőnek; azt nem, hogy több fogy-e belőle, mint a hagyományos sörből.",
+      "evidence": "Sales of alcohol-free beer, once a joke among serious drinkers, have risen every year for the past decade."
+    },
+    {
+      "id": "4",
+      "kind": "tf",
+      "prompt": "Researchers agree that concern about health is the main reason why young people drink less.",
+      "answer": "F",
+      "category": "true-false-trap",
+      "explanation": "Hamis (F): a kutatók nem tudtak egyetlen okot azonosítani („have struggled to identify a single cause”); az egészség csak az egyik tényező a pénz és a közösségi média mellett.",
+      "evidence": "Researchers have struggled to identify a single cause."
+    },
+    {
+      "id": "5",
+      "kind": "tf",
+      "prompt": "Ellie Thornton has a part-time job.",
+      "answer": "NG",
+      "category": "true-false-trap",
+      "explanation": "Nem derül ki (NG): a rosszul fizetett diákmunkákról csak általánosságban esik szó; Ellie-ről annyit tudunk, hogy 22 éves történelem szakos hallgató, azt nem, hogy dolgozik-e.",
+      "evidence": "With rents high and part-time jobs poorly paid, a night of heavy drinking is an expense many students can no longer justify."
+    },
+    {
+      "id": "6",
+      "kind": "tf",
+      "prompt": "Dr Price thinks that getting drunk in public has more serious consequences for young people today than it had in the past.",
+      "answer": "T",
+      "category": "detail",
+      "explanation": "Igaz (T): Dr Price szerint a nyilvános kontrollvesztés sokkal nagyobb kockázattal jár, mint a szüleik idejében, mert bárkit lefotózhatnak és a felvétel évekig fent maradhat.",
+      "evidence": "'Losing control in public carries a much higher risk than it did for their parents.'"
+    },
+    {
+      "id": "7",
+      "kind": "tf",
+      "prompt": "The number of young adults who need hospital treatment because of alcohol has fallen faster than drinking in general.",
+      "answer": "F",
+      "category": "detail",
+      "explanation": "Hamis (F): épp fordítva – a kórházi kezelések száma nem csökkent olyan gyorsan, mint az összfogyasztás („has not fallen as quickly as overall consumption”).",
+      "evidence": "has not fallen as quickly as overall consumption"
+    },
+    {
+      "id": "8",
+      "kind": "tf",
+      "prompt": "Some influencers make health claims about alcohol-free products that are poorly supported by research.",
+      "answer": "T",
+      "category": "detail",
+      "explanation": "Igaz (T): egyes influenszerek olyan egészségügyi állításokkal reklámozzák a drága alkoholmentes termékeket, amelyeket alig támaszt alá tudomány („little scientific support”).",
+      "evidence": "promote expensive alcohol-free products with health claims that have little scientific support"
+    },
+    {
+      "id": "9",
+      "kind": "tf",
+      "prompt": "Ellie says that her social life has hardly changed since she gave up alcohol.",
+      "answer": "T",
+      "category": "inference",
+      "explanation": "Igaz (T): ugyanúgy hajnali kettőig szórakozik, és szerinte az egyetlen különbség, hogy másnap emlékszik az estére (és több pénze van) – a barátai szinte észre sem vették a változást.",
+      "evidence": "'I still go out until two in the morning,' she laughs. 'The only difference is that I remember it the next day"
+    },
+    {
+      "id": "10",
+      "kind": "tf",
+      "prompt": "According to Marcus Bell, most of the Copper Kettle's customers are opposed to drinking alcohol.",
+      "answer": "F",
+      "category": "attitude",
+      "explanation": "Hamis (F): Bell szerint a vendégeik nem alkoholellenesek („aren't anti-alcohol”), csak szeretnének választani.",
+      "evidence": "'Our customers aren't anti-alcohol,' says co-founder Marcus Bell."
+    }
+  ],
+  "glossary": [
+    {
+      "term": "packed",
+      "meaning": "zsúfolt, tele van"
+    },
+    {
+      "term": "bankrupt",
+      "meaning": "csődbe ment"
+    },
+    {
+      "term": "proportion",
+      "meaning": "arány, hányad"
+    },
+    {
+      "term": "justify",
+      "meaning": "igazol, indokol (költséget)"
+    },
+    {
+      "term": "embarrassing",
+      "meaning": "kínos, ciki"
+    },
+    {
+      "term": "losing control",
+      "meaning": "elveszíti az önuralmát"
+    },
+    {
+      "term": "consumption",
+      "meaning": "fogyasztás"
+    },
+    {
+      "term": "sober curious",
+      "meaning": "„józanságra kíváncsi” – aki tudatosan kevesebbet vagy egyáltalán nem iszik"
+    },
+    {
+      "term": "promote",
+      "meaning": "népszerűsít, reklámoz"
+    },
+    {
+      "term": "rule out",
+      "meaning": "kizár (lehetőséget)"
+    },
+    {
+      "term": "remains to be seen",
+      "meaning": "majd kiderül, egyelőre nem tudni"
+    }
+  ],
+  "suggestedMinutes": 15
+}

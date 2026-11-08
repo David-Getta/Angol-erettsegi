@@ -1,0 +1,274 @@
+{
+  "schemaVersion": 1,
+  "id": "mag-gr-nyelvi-jelenseg-kifejtes",
+  "subject": "magyar",
+  "revision": 1,
+  "level": "kozep",
+  "source": "generated",
+  "topic": "nyelvtan",
+  "title": "Nyelvi jelenségek kifejtése, példák",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "grammar",
+  "type": "lesson",
+  "category": "nyelvi-jelenseg-kifejtes",
+  "summaryHu": "A szóbeli nyelvtan tétel és a műveltségi feladatlap nyelvi kérdései nemcsak felismerést, hanem kifejtést is kérnek: a kommunikáció, a nyelvtörténet, a nyelvváltozatok, a szöveg és a retorika jelenségeit meghatározással, rendszerezve és példákkal kell bemutatni. A felelet akkor teljes, ha az elméletet a tételhez adott szöveg elemzésével kapcsolod össze. A tipikus hiba a pontatlan meghatározás és a példák hiánya.",
+  "rules": [
+    {
+      "title": "A kommunikáció tényezői és funkciói",
+      "explanation": "Jakobson modellje szerint a kommunikáció tényezői: adó, vevő, üzenet, csatorna, kód, valóság (kontextus). Mindegyikhez egy funkció kapcsolódik: érzelemkifejező (adó), felhívó (vevő), esztétikai (üzenet), kapcsolattartó (csatorna), metanyelvi (kód), ismeretközlő (valóság). Egy közlésben több funkció is lehet, de az egyik uralkodó.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "„Szia! Megmondanád a tanárnőnek, hogy beteg vagyok?”",
+          "hu": "kapcsolattartó (Szia!), felhívó (megmondanád), ismeretközlő (beteg vagyok)"
+        }
+      ]
+    },
+    {
+      "title": "A nyelvtörténet korszakai és nyelvemlékei",
+      "explanation": "Ősmagyar kor (a honfoglalásig, 896), ómagyar kor (896–1526), középmagyar kor (1526–1772), újmagyar kor (1772-től; a 20. századtól gyakran külön tárgyalják a legújabb időszakot). Nyelvemlék-típusok: szórványemlék (Tihanyi alapítólevél, 1055), glossza, szövegemlék (Halotti beszéd és könyörgés, 1192–1195 k.; Ómagyar Mária-siralom, 1300 k. – az első magyar vers).",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "Latiatuc feleym zumtuchel mic vogmuc.",
+          "hu": "A Halotti beszéd kezdete: a c betű k hangot, a z sz hangot jelöl – a latin ábécét alkalmazták a magyar hangokra."
+        }
+      ]
+    },
+    {
+      "title": "Nyelvváltozatok",
+      "explanation": "Területi (vízszintes) változatok: a nyelvjárások. Társadalmi (függőleges) változatok: szaknyelvek, csoportnyelvek, szleng, argó. Fölöttük a köznyelv, amelynek igényes írott formája az irodalmi nyelv. A nyelvjárás nem hibás nyelvhasználat, hanem a nyelv természetes változata; a jó nyelvhasználó a beszédhelyzethez igazodik.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "„Hun vótál?” – „Hol voltál?”",
+          "hu": "nyelvjárási/népies alak (l-kiesés pótlónyúlással) – köznyelvi alak"
+        }
+      ]
+    },
+    {
+      "title": "A szöveg és a retorika fogalmai",
+      "explanation": "A szöveg ismérvei: kohézió (nyelvi összetartó erő: névmások, kötőszók, ismétlés, szinonimák) és koherencia (értelmi egység). A retorika a meggyőzés tudománya: a beszéd részei (bevezetés, elbeszélés, bizonyítás, cáfolat, befejezés), az érvtípusok (logikai, tapasztalati, tekintélyi, analógiás) és a meggyőzés eszközei (éthosz, pátosz, logosz).",
+      "emeltOnly": true,
+      "examples": [
+        {
+          "en": "„Nagyapám… Ő maga nevelte őket.”",
+          "hu": "szövegtani visszautalás (anafora) névmással – kohéziós eszköz"
+        }
+      ]
+    },
+    {
+      "title": "Hogyan épül fel egy kifejtő felelet?",
+      "explanation": "1. Meghatározás (mi a jelenség?). 2. Rendszerezés (milyen fajtái vannak?). 3. Példák – saját példa és a megadott szövegből vett példa. 4. Összegzés vagy kitekintés (miért fontos, hol találkozunk vele?). Minden fogalom mellé tartozzon egy konkrét példa.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "Tétel: nyelvváltozatok → meghatározás, csoportosítás, a három mondat besorolása, a nyelvi előítélet kérdése",
+          "hu": "négylépéses felépítés"
+        }
+      ]
+    }
+  ],
+  "commonMistakes": [
+    {
+      "wrong": "A kommunikációnak három tényezője van: a beszélő, a hallgató és az üzenet.",
+      "right": "A tényezők: adó, vevő, üzenet, csatorna, kód és valóság (kontextus).",
+      "why": "A hiányos felsorolás a tartalmi pontszámot csökkenti; mind a hat tényezőt és a hozzájuk tartozó funkciót ismerni kell."
+    },
+    {
+      "wrong": "Az első magyar nyelvű vers a Halotti beszéd.",
+      "right": "Az első összefüggő magyar nyelvű szöveg a Halotti beszéd; az első magyar nyelvű vers az Ómagyar Mária-siralom.",
+      "why": "A két nyelvemlék szerepét gyakran összekeverik."
+    },
+    {
+      "wrong": "A nyelvjárás a helytelen, műveletlen beszéd.",
+      "right": "A nyelvjárás a nyelv területi változata, a köznyelvvel egyenrangú, saját szabályokkal.",
+      "why": "A nyelvjárások lenézése nyelvi előítélet; a nyelvjárások a nyelv történetének és gazdagságának részei."
+    },
+    {
+      "wrong": "A kohézió azt jelenti, hogy a szöveg érdekes.",
+      "right": "A kohézió a szöveg nyelvi összetartó ereje (névmások, kötőszók, ismétlés, szinonimák).",
+      "why": "A szakszavakat pontos meghatározással kell használni."
+    }
+  ],
+  "examTips": [
+    "Szóbelin a tételhez kapott szöveget használd fel a felelet közben: minden fogalomhoz keress benne példát – a tartalmi pontok jelentős része ezért jár.",
+    "A korszakhatárokat (896, 1526, 1772) és a nyelvemlékek évszámait (1055, 1192–1195) érdemes pontosan megtanulni.",
+    "Kifejtő felelet előtt a felkészülési időben írj fel egy négypontos vázlatot: meghatározás – fajták – példák – összegzés."
+  ],
+  "practice": [
+    {
+      "id": "1",
+      "kind": "choice",
+      "prompt": "Melyik funkció kapcsolódik a csatornához Jakobson modelljében?",
+      "options": [
+        {
+          "key": "A",
+          "text": "kapcsolattartó"
+        },
+        {
+          "key": "B",
+          "text": "felhívó"
+        },
+        {
+          "key": "C",
+          "text": "metanyelvi"
+        },
+        {
+          "key": "D",
+          "text": "érzelemkifejező"
+        }
+      ],
+      "answer": "A",
+      "category": "nyelvi-jelenseg-kifejtes",
+      "explanation": "Helyes: kapcsolattartó. A kapcsolat megnyitását, fenntartását, lezárását szolgálja (Halló!, Szia!, Ugye érted?).",
+      "wrongOptions": {
+        "B": "A felhívó funkció a vevőhöz kapcsolódik.",
+        "C": "A metanyelvi funkció a kódhoz kapcsolódik (a nyelvről szóló közlés).",
+        "D": "Az érzelemkifejező funkció az adóhoz kapcsolódik."
+      }
+    },
+    {
+      "id": "2",
+      "kind": "choice",
+      "prompt": "Melyik az első magyar nyelvű vers?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Halotti beszéd és könyörgés"
+        },
+        {
+          "key": "B",
+          "text": "Ómagyar Mária-siralom"
+        },
+        {
+          "key": "C",
+          "text": "Tihanyi alapítólevél"
+        },
+        {
+          "key": "D",
+          "text": "Szózat"
+        }
+      ],
+      "answer": "B",
+      "category": "nyelvi-jelenseg-kifejtes",
+      "explanation": "Helyes: az Ómagyar Mária-siralom (1300 körül), amely a Leuveni kódexben maradt fenn.",
+      "wrongOptions": {
+        "A": "A Halotti beszéd prózai szöveg: az első összefüggő magyar nyelvű szövegemlék.",
+        "C": "A Tihanyi alapítólevél latin oklevél magyar szórványokkal.",
+        "D": "A Szózat Vörösmarty 1836-os verse, nem nyelvemlék."
+      }
+    },
+    {
+      "id": "3",
+      "kind": "choice",
+      "prompt": "Melyik nyelvváltozatba tartozik a következő mondat? „A beteg panasza a bal alsó végtagban jelentkező, terhelésre fokozódó fájdalom.”",
+      "options": [
+        {
+          "key": "A",
+          "text": "argó"
+        },
+        {
+          "key": "B",
+          "text": "szleng"
+        },
+        {
+          "key": "C",
+          "text": "nyelvjárás"
+        },
+        {
+          "key": "D",
+          "text": "szaknyelv"
+        }
+      ],
+      "answer": "D",
+      "category": "nyelvi-jelenseg-kifejtes",
+      "explanation": "Helyes: szaknyelv (orvosi). Pontos, egyértelmű szakkifejezéseket (alsó végtag, terhelésre fokozódó) és tömör, névszói szerkezetet használ.",
+      "wrongOptions": {
+        "A": "Az argó a társadalom peremén élő csoportok titkos nyelve; itt nem erről van szó.",
+        "B": "A szleng kötetlen, divatszavas, érzelmi színezetű; ez a mondat tárgyilagos.",
+        "C": "A nyelvjárás területi változat, jellegzetes hangtani vagy szókincsbeli eltérésekkel; itt ilyen nincs."
+      }
+    },
+    {
+      "id": "4",
+      "kind": "choice",
+      "prompt": "Melyik a középmagyar kor időhatára?",
+      "options": [
+        {
+          "key": "A",
+          "text": "1772-től napjainkig"
+        },
+        {
+          "key": "B",
+          "text": "896–1526"
+        },
+        {
+          "key": "C",
+          "text": "1526–1772"
+        },
+        {
+          "key": "D",
+          "text": "a honfoglalásig"
+        }
+      ],
+      "answer": "C",
+      "category": "nyelvi-jelenseg-kifejtes",
+      "explanation": "Helyes: 1526–1772, a mohácsi csatától a felvilágosodás kezdetéig.",
+      "wrongOptions": {
+        "A": "Ez az újmagyar kor (a legújabb időszakkal együtt).",
+        "B": "Ez az ómagyar kor.",
+        "D": "Ez az ősmagyar kor."
+      }
+    },
+    {
+      "id": "5",
+      "kind": "choice",
+      "prompt": "Mi a koherencia?",
+      "options": [
+        {
+          "key": "A",
+          "text": "A szöveg értelmi egysége, jelentésbeli összefüggése."
+        },
+        {
+          "key": "B",
+          "text": "A szöveg hosszúsága."
+        },
+        {
+          "key": "C",
+          "text": "A szövegben előforduló idegen szavak száma."
+        },
+        {
+          "key": "D",
+          "text": "A szöveg helyesírási hibátlansága."
+        }
+      ],
+      "answer": "A",
+      "category": "nyelvi-jelenseg-kifejtes",
+      "explanation": "Helyes: A. A koherencia a szöveg értelmi egysége; a kohézió pedig ennek nyelvi eszközeit (névmások, kötőszók, ismétlés) jelenti.",
+      "wrongOptions": {
+        "B": "A terjedelem nem szövegtani ismérv.",
+        "C": "Az idegen szavak száma stilisztikai, nem szövegtani kérdés.",
+        "D": "A helyesírás külön terület; egy hibátlanul írt szöveg is lehet inkoherens."
+      }
+    },
+    {
+      "id": "6",
+      "kind": "text",
+      "prompt": "Hogyan nevezzük a nyelv területi változatait? (egy szó, többes számban)",
+      "answer": [
+        "nyelvjárások",
+        "nyelvjárás",
+        "tájnyelvek",
+        "dialektusok"
+      ],
+      "category": "nyelvi-jelenseg-kifejtes",
+      "explanation": "Helyes válasz: nyelvjárások (dialektusok). A nyelv vízszintes tagolódását mutatják, szemben a társadalmi (függőleges) változatokkal."
+    }
+  ],
+  "relatedCategories": [
+    "nyelvtani-fogalom",
+    "kifejtes-ervek"
+  ]
+}

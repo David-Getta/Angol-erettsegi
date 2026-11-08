@@ -1,0 +1,179 @@
+{
+  "schemaVersion": 1,
+  "id": "mat-gr-szoveges-ertelmezes",
+  "subject": "matematika",
+  "revision": 1,
+  "level": "kozep",
+  "source": "generated",
+  "topic": "nyelvtan",
+  "title": "Szöveges feladatok értelmezése, modellalkotás",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "grammar",
+  "type": "lesson",
+  "category": "szoveges-ertelmezes",
+  "summaryHu": "Szöveges feladatnál a matematika csak a második lépés: előbb pontosan meg kell érteni, mit jelentenek az adatok, és fel kell írni a helyes modellt (egyenlet, sorozat, valószínűségi modell). A tipikus hibák a százalékok alapjának felcserélése, a „-val több” és a „-szor annyi” összekeverése, és a „legalább / pontosan” figyelmen kívül hagyása.",
+  "rules": [
+    {
+      "title": "Adatok, ismeretlen, modell",
+      "explanation": "Gyűjtsd ki az adatokat mértékegységgel, vezess be jelölést (legyen x …, mértékegységgel), és írd fel a feltételeket egyenletként. A végén a kérdésre válaszolj, ne csak x értékét add meg.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "„Anna 3 évvel idősebb Bélánál, együtt 31 évesek.” → Béla x, Anna x + 3, x + (x + 3) = 31 → x = 14",
+          "hu": "Béla 14, Anna 17 éves."
+        }
+      ]
+    },
+    {
+      "title": "Százalékszámítás: mi az alap?",
+      "explanation": "A „p%-kal több” (1 + p/100)-szorosát, a „p%-kal kevesebb” (1 − p/100)-szorosát jelenti annak a mennyiségnek, amihez viszonyítunk. Egymást követő változásoknál a szorzók összeszorzódnak, nem a százalékok adódnak össze.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "20%-os emelés, majd 20%-os csökkentés: 1,2 · 0,8 = 0,96 → az eredeti ár 96%-a",
+          "hu": "Nem jutunk vissza az eredeti árhoz."
+        },
+        {
+          "en": "A csökkentett ár 9600 Ft (20%-kal olcsóbb): eredeti = 9600/0,8 = 12 000 Ft",
+          "hu": "Nem 9600 · 1,2."
+        }
+      ]
+    },
+    {
+      "title": "„-val több”, „-szor annyi”, arányos osztás",
+      "explanation": "„3-mal több” = + 3; „háromszor annyi” = · 3. Arányos osztásnál (2 : 3) az egész 2 + 3 = 5 részre oszlik.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "1200 Ft 2 : 3 arányban: egy rész 240 Ft, a nagyobbik 720 Ft",
+          "hu": "1200/5 = 240."
+        },
+        {
+          "en": "„40%-a fiú, 18 lány” → 18 a 60%: az osztály 30 fős",
+          "hu": "Az ismert mennyiség százalékát kell megtalálni."
+        }
+      ]
+    },
+    {
+      "title": "Pontosan, legalább, legfeljebb",
+      "explanation": "„Legalább 2” = 2 vagy több; „legfeljebb 2” = 0, 1 vagy 2; „pontosan 2” = csak 2. Valószínűségnél és kombinatorikánál ez teljesen más eseményt jelent, a komplementer is ettől függ.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "Legalább egy fej 3 dobásból: 1 − 1/8 = 7/8; pontosan egy fej: 3/8",
+          "hu": "Két különböző kérdés."
+        }
+      ]
+    }
+  ],
+  "commonMistakes": [
+    {
+      "wrong": "20%-os drágulás, majd 20%-os árcsökkentés után az ár ugyanannyi.",
+      "right": "Az ár az eredeti 96%-a lesz.",
+      "why": "A második százalék már a megemelt árra vonatkozik: 1,2 · 0,8 = 0,96."
+    },
+    {
+      "wrong": "„3-mal több” → 3x",
+      "right": "„3-mal több” → x + 3",
+      "why": "A „-val több” összeadást jelent, a „-szor annyi” szorzást."
+    },
+    {
+      "wrong": "Az eredeti ár: 9600 · 1,2 = 11 520 Ft (20%-kal csökkentett ár 9600 Ft)",
+      "right": "9600 : 0,8 = 12 000 Ft",
+      "why": "A 20% az eredeti árra vonatkozik, ezért a 9600 Ft az eredeti 80%-a; nem a csökkentett árat kell 20%-kal növelni."
+    },
+    {
+      "wrong": "„Pontosan egy” helyett „legalább egyet” számolok",
+      "right": "Olvasd el újra a kérdést, és jelöld meg a kulcsszót",
+      "why": "A „pontosan” és a „legalább” más eseményt jelent; rossz eseményre számolva a helyes számolás sem ér pontot."
+    }
+  ],
+  "examTips": [
+    "A II/B szöveges feladataiban (pl. bevásárlás, kirándulás, kamat) a modell felírása (egyenlet, képlet a megfelelő adatokkal) önálló pontot ér – írd le, mit jelöl az x.",
+    "Húzd alá a kulcsszavakat: „-kal több”, „-szorosa”, „legalább”, „visszatevés nélkül”, „egész”. Ezek határozzák meg a modellt.",
+    "A végén olvasd el újra a kérdést, és arra válaszolj (pl. a kérdés a nagyobbik részre vagy a különbségre vonatkozik)."
+  ],
+  "practice": [
+    {
+      "id": "1",
+      "kind": "text",
+      "prompt": "Egy termék árát 20%-kal megemelték, majd az új árat 20%-kal csökkentették. Hány százaléka a végső ár az eredeti árnak?",
+      "answer": [
+        "96",
+        "96%"
+      ],
+      "category": "szoveges-ertelmezes",
+      "explanation": "96%. A két változás szorzója 1,2 és 0,8, ezek szorzata 0,96, tehát a végső ár az eredeti 96%-a."
+    },
+    {
+      "id": "2",
+      "kind": "text",
+      "prompt": "Anna 3 évvel idősebb Bélánál, és együtt 31 évesek. Hány éves Béla?",
+      "answer": [
+        "14",
+        "14 éves"
+      ],
+      "category": "szoveges-ertelmezes",
+      "explanation": "14. Legyen Béla x éves, Anna x + 3. x + x + 3 = 31, 2x = 28, x = 14. Ellenőrzés: 14 + 17 = 31."
+    },
+    {
+      "id": "3",
+      "kind": "choice",
+      "prompt": "Egy osztály tanulóinak 40%-a fiú, a lányok száma 18. Hány fős az osztály?",
+      "options": [
+        {
+          "key": "A",
+          "text": "30"
+        },
+        {
+          "key": "B",
+          "text": "45"
+        },
+        {
+          "key": "C",
+          "text": "25,2"
+        },
+        {
+          "key": "D",
+          "text": "72"
+        }
+      ],
+      "answer": "A",
+      "category": "szoveges-ertelmezes",
+      "explanation": "A helyes: 30. A lányok aránya 100% − 40% = 60%, így 0,6 · x = 18, x = 30.",
+      "wrongOptions": {
+        "B": "A 45 abból jön, ha a 18-at a 40%-nak veszed – de a 18 a lányok száma, akik a 60%-ot teszik ki.",
+        "C": "Létszám nem lehet tört; a 25,2 = 18 · 1,4 hibás modellből adódik.",
+        "D": "A 72 = 18 · 4: itt a százalékokat nem megfelelően értelmezték."
+      }
+    },
+    {
+      "id": "4",
+      "kind": "text",
+      "prompt": "1200 Ft-ot két testvér 2 : 3 arányban oszt el egymás között. Mennyi a nagyobbik rész (Ft)?",
+      "answer": [
+        "720",
+        "720 Ft"
+      ],
+      "category": "szoveges-ertelmezes",
+      "explanation": "720 Ft. Az egész 2 + 3 = 5 egyenlő részre oszlik, egy rész 1200 : 5 = 240 Ft, a nagyobbik rész 3 · 240 = 720 Ft."
+    },
+    {
+      "id": "5",
+      "kind": "text",
+      "prompt": "Egy autó 150 km-t tesz meg 2 óra alatt. Ugyanezzel az átlagsebességgel hány óra alatt tesz meg 225 km-t?",
+      "answer": [
+        "3",
+        "3 óra"
+      ],
+      "category": "szoveges-ertelmezes",
+      "explanation": "3 óra. Az átlagsebesség 150 : 2 = 75 km/h, így az idő 225 : 75 = 3 óra (egyenes arányosság: 1,5-szer akkora út 1,5-szer annyi idő)."
+    }
+  ],
+  "relatedCategories": [
+    "valasz-megfogalmazas",
+    "egyenlet-rendezes",
+    "ellenorzes"
+  ]
+}

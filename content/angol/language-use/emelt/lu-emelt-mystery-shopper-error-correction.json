@@ -1,0 +1,124 @@
+{
+  "schemaVersion": 1,
+  "id": "lu-emelt-mystery-shopper-error-correction",
+  "subject": "angol",
+  "revision": 1,
+  "level": "emelt",
+  "source": "generated",
+  "topic": "munka",
+  "title": "Paid to go shopping",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "language-use",
+  "type": "error-correction",
+  "instructions": "Read the text below, in which a student writes about her part-time job. Some lines contain an extra word that should not be there. Write the extra word in the box. If a line is correct, put a tick (✓). There is an example (0) at the beginning.",
+  "instructionsHu": "Olvasd el a szöveget soronként. Egyes sorokban van egy felesleges szó, amelynek nem kellene ott lennie: írd be ezt a szót. Ha a sor helyes, tegyél pipát (✓). A 0. a példa.",
+  "example": {
+    "id": "0",
+    "kind": "text",
+    "prompt": "Last summer I have found an unusual way to earn some extra money: I became",
+    "answer": ["have"],
+    "category": "tense",
+    "explanation": "A felesleges szó: „have”. A „last summer” lezárt múltbeli időpont, ezért past simple kell: Last summer I found … . Present perfect nem állhat konkrét múltbeli időhatározóval."
+  },
+  "items": [
+    {
+      "id": "1",
+      "kind": "text",
+      "prompt": "a mystery shopper. A friend of mine had been doing it for months, and she",
+      "answer": ["✓"],
+      "category": "tense",
+      "explanation": "A sor helyes. A „had been doing it for months” past perfect continuous: a barátnő már hónapok óta csinálta, amikor a szerző belevágott – a folyamat egy múltbeli pont előtt kezdődött és addig tartott."
+    },
+    {
+      "id": "2",
+      "kind": "text",
+      "prompt": "suggested me that I should register with the same agency. The idea is simple:",
+      "answer": ["me"],
+      "category": "reported-speech",
+      "explanation": "A felesleges szó: „me”. A „suggest” után nem állhat közvetlenül a személy: suggest that somebody (should) do something. Helyesen: she suggested that I should register. A „suggested me that” tipikus magyaros hiba."
+    },
+    {
+      "id": "3",
+      "kind": "text",
+      "prompt": "companies want to know how do their staff treat customers, so they pay ordinary",
+      "answer": ["do"],
+      "category": "word-order",
+      "explanation": "A felesleges szó: „do”. Függő kérdésben (want to know how …) kijelentő szórend áll, segédige nélkül: how their staff treat customers."
+    },
+    {
+      "id": "4",
+      "kind": "text",
+      "prompt": "people to visit their shops and report back on their experience. Despite of its",
+      "answer": ["of"],
+      "category": "linking",
+      "explanation": "A felesleges szó: „of”. A „despite” után közvetlenül főnév vagy -ing alak áll: despite its exciting name. Az „of” csak az „in spite of” szerkezetben szerepel."
+    },
+    {
+      "id": "5",
+      "kind": "text",
+      "prompt": "exciting name, the job is hard work, because you have to remember every detail",
+      "answer": ["✓"],
+      "category": "collocation",
+      "explanation": "A sor helyes. A „hard work” megszámlálhatatlan főnévi szerkezet, ezért névelő nélkül áll (the job is hard work – nem „a hard work”), a „because” pedig az okot vezeti be."
+    },
+    {
+      "id": "6",
+      "kind": "text",
+      "prompt": "without anyone is noticing that you are taking notes. My first visit was to a",
+      "answer": ["is"],
+      "category": "gerund-infinitive",
+      "explanation": "A felesleges szó: „is”. Elöljárószó (without) után -ing alak áll, ragozott ige nélkül: without anyone noticing (anélkül, hogy bárki észrevenné)."
+    },
+    {
+      "id": "7",
+      "kind": "text",
+      "prompt": "busy fast-food restaurant. I was been told to order a burger, time how long",
+      "answer": ["been"],
+      "category": "passive",
+      "explanation": "A felesleges szó: „been”. Múlt idejű szenvedő szerkezet: was + 3. alak (I was told – azt mondták nekem). A „was been” nem létező alak; a „been” csak have/had után állhat (I had been told)."
+    },
+    {
+      "id": "8",
+      "kind": "text",
+      "prompt": "it took to arrive and check whether the toilets were clean. The cashier made me",
+      "answer": ["✓"],
+      "category": "word-order",
+      "explanation": "A sor helyes. A „time how long it took to arrive” és a „check whether the toilets were clean” függő kérdés, kijelentő szórenddel; a „made me” után a következő sorban helyesen puszta ige jön (made me wait)."
+    },
+    {
+      "id": "9",
+      "kind": "text",
+      "prompt": "wait for ten minutes. When I asked her what the problem was, she told to me",
+      "answer": ["to"],
+      "category": "reported-speech",
+      "explanation": "A felesleges szó: „to”. A „tell” után a személy elöljárószó nélkül áll: she told me that … (vö. she said to me). Az „asked her what the problem was” függő kérdés helyes szórendű."
+    },
+    {
+      "id": "10",
+      "kind": "text",
+      "prompt": "that the kitchen was short of staff. Unless if you have an excellent memory,",
+      "answer": ["if"],
+      "category": "conditional",
+      "explanation": "A felesleges szó: „if”. Az „unless” önmagában azt jelenti: hacsak nem (= if … not), ezért nem kell mellé „if”: Unless you have an excellent memory, … . (Ha az „unless”-t hagynánk el, a mondat értelmetlen lenne: aki jól emlékszik, könnyen felejt?)"
+    },
+    {
+      "id": "11",
+      "kind": "text",
+      "prompt": "it is easy to forget such details, so I always pay a close attention to everything",
+      "answer": ["a"],
+      "category": "collocation",
+      "explanation": "A felesleges szó: „a”. Az „attention” megszámlálhatatlan főnév, és állandó kifejezésben áll: pay (close) attention to something – névelő nélkül."
+    },
+    {
+      "id": "12",
+      "kind": "text",
+      "prompt": "around me. The job has also turned me into a much more patient customer myself.",
+      "answer": ["✓"],
+      "category": "comparison",
+      "explanation": "A sor helyes. A „much more patient” helyes fokozás: a középfokot (more patient) a „much” erősíti (sokkal türelmesebb); a „turn somebody into something” jelentése: valakiből valamit csinál."
+    }
+  ],
+  "glossary": [],
+  "suggestedMinutes": 12
+}

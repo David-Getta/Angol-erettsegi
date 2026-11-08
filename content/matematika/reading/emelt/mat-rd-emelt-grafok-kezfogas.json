@@ -1,0 +1,95 @@
+{
+  "schemaVersion": 1,
+  "id": "mat-rd-emelt-grafok-kezfogas",
+  "subject": "matematika",
+  "revision": 1,
+  "level": "emelt",
+  "source": "generated",
+  "topic": "kombinatorika-grafok",
+  "title": "Gráfok és kombinatorika egy baráti társaságban",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "reading",
+  "type": "rovid-szamitas",
+  "instructions": "Egy 7 fős baráti társaság tagjait egy gráf csúcsaival, a köztük történt kézfogásokat az élekkel szemléltetjük (két ember legfeljebb egyszer fog kezet). A feladat részkérdésekből áll (a–f); csak az eredményt írd be. A 0. kérdés a kidolgozott példa.",
+  "example": {
+    "id": "0",
+    "kind": "text",
+    "prompt": "Hány kézfogás történik, ha mindenki mindenkivel kezet fog?",
+    "answer": [
+      "21",
+      "21 db"
+    ],
+    "category": "kepletek",
+    "explanation": "Ez a 7 csúcsú teljes gráf, élszáma 7·6/2 = 21 = C(7; 2): minden él két csúcs kiválasztása, a sorrend nem számít."
+  },
+  "items": [
+    {
+      "id": "1",
+      "kind": "text",
+      "prompt": "a) Egy napon a résztvevők rendre 4, 3, 3, 2, 2, 1, 1 emberrel fogtak kezet. Hány kézfogás volt ezen a napon?",
+      "answer": [
+        "8",
+        "8 db"
+      ],
+      "category": "definicio-tetel",
+      "explanation": "A fokszámok összege az élszám kétszerese, mert minden él két csúcs fokszámába számít bele: (4 + 3 + 3 + 2 + 2 + 1 + 1)/2 = 16/2 = 8."
+    },
+    {
+      "id": "2",
+      "kind": "text",
+      "prompt": "b) Lehetséges-e, hogy mind a 7 ember pontosan 3 másikkal fogott kezet? (igen / nem)",
+      "answer": [
+        "nem",
+        "nem lehetséges",
+        "nem lehet"
+      ],
+      "category": "indoklas-hianya",
+      "explanation": "Nem: ekkor a fokszámok összege 7·3 = 21 lenne, ami páratlan, pedig a fokszámok összege mindig páros (az élszám kétszerese). Minden gráfban páros sok páratlan fokszámú csúcs van.",
+      "maxWords": 2
+    },
+    {
+      "id": "3",
+      "kind": "text",
+      "prompt": "c) Legalább hány kézfogásnak kell történnie ahhoz, hogy a gráf összefüggő legyen?",
+      "answer": [
+        "6",
+        "6 db"
+      ],
+      "category": "definicio-tetel",
+      "explanation": "Az n csúcsú összefüggő gráfnak legalább n − 1 éle van; pontosan n − 1 éllel a gráf fa. 7 csúcsnál ez 6 él."
+    },
+    {
+      "id": "4",
+      "kind": "text",
+      "prompt": "d) Hányféleképpen ülhet le a 7 ember egy kerek asztal köré, ha két ülésrend akkor azonos, ha forgatással egymásba vihető?",
+      "answer": [
+        "720"
+      ],
+      "category": "kepletek",
+      "explanation": "Egy embert rögzítünk (a forgatások miatt), a többi 6 sorrendje számít: 6! = 720. A 7! = 5040 minden ülésrendet 7-szer számolna."
+    },
+    {
+      "id": "5",
+      "kind": "text",
+      "prompt": "e) Hányféleképpen választható ki közülük egy 3 fős csapat, amelynek egyik tagja a csapatkapitány?",
+      "answer": [
+        "105"
+      ],
+      "category": "szoveges-ertelmezes",
+      "explanation": "Előbb a kapitányt (7-féle), majd a másik két tagot a maradék 6 közül (C(6; 2) = 15): 7·15 = 105. Másképp: C(7; 3)·3 = 35·3 = 105."
+    },
+    {
+      "id": "6",
+      "kind": "text",
+      "prompt": "f) Egy versenyen hányféleképpen alakulhat közöttük az 1., 2. és 3. hely (holtverseny nincs)?",
+      "answer": [
+        "210"
+      ],
+      "category": "kepletek",
+      "explanation": "A helyezések különbözők, ezért a sorrend számít (ismétlés nélküli variáció): 7·6·5 = 210. Az e) résztől eltérően itt mindhárom kiválasztott szerepe különböző."
+    }
+  ],
+  "glossary": [],
+  "suggestedMinutes": 20
+}

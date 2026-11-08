@@ -1,0 +1,185 @@
+{
+  "schemaVersion": 1,
+  "id": "bio-rd-kozep-novenyi-allati-sejt-asszociacio",
+  "subject": "biologia",
+  "revision": 1,
+  "level": "kozep",
+  "source": "generated",
+  "topic": "sejtbiologia",
+  "title": "Növényi és állati sejt – asszociáció",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "reading",
+  "type": "asszociacio",
+  "instructions": "Döntse el az alábbi állításokról, hogy melyik sejttípusra igazak! Írja a megfelelő betűt az állítás mellé: A) csak a növényi sejtre igaz, B) csak az állati sejtre igaz, C) mindkettőre igaz, D) egyikre sem igaz. A 0. állítás a példa.",
+  "example": {
+    "id": "0",
+    "kind": "choice",
+    "prompt": "Kívülről sejthártya határolja.",
+    "options": [
+      { "key": "A", "text": "csak a növényi sejtre igaz" },
+      { "key": "B", "text": "csak az állati sejtre igaz" },
+      { "key": "C", "text": "mindkettőre igaz" },
+      { "key": "D", "text": "egyikre sem igaz" }
+    ],
+    "answer": "C",
+    "category": "felepites-mukodes",
+    "explanation": "Helyes: C. Minden sejtet – a növényit és az állatit is – sejthártya (plazmamembrán) határol; a növényi sejtnél ezen kívül még sejtfal is van, de a sejthártya ott is megvan."
+  },
+  "items": [
+    {
+      "id": "1",
+      "kind": "choice",
+      "prompt": "Sejthártyáján kívül cellulózból felépülő sejtfal található.",
+      "options": [
+        { "key": "A", "text": "csak a növényi sejtre igaz" },
+        { "key": "B", "text": "csak az állati sejtre igaz" },
+        { "key": "C", "text": "mindkettőre igaz" },
+        { "key": "D", "text": "egyikre sem igaz" }
+      ],
+      "answer": "A",
+      "category": "felepites-mukodes",
+      "explanation": "Helyes: A. A cellulóz sejtfal a növényi sejt jellemzője: szilárdságot ad és megakadályozza, hogy a sejt vízfelvételkor szétpukkadjon. Az állati sejtnek nincs sejtfala, csak sejthártyája.",
+      "wrongOptions": {
+        "B": "Az állati sejtet csak sejthártya határolja, sejtfala nincs.",
+        "C": "Sejtfal csak a növényi (és a gomba-, baktérium-) sejtekben van; az állatiban nincs.",
+        "D": "A növényi sejtnek van cellulóz sejtfala, tehát nem igaz, hogy egyikre sem vonatkozik."
+      }
+    },
+    {
+      "id": "2",
+      "kind": "choice",
+      "prompt": "Zöld színtestek (kloroplasztiszok) lehetnek benne, amelyekben fotoszintézis folyik.",
+      "options": [
+        { "key": "A", "text": "csak a növényi sejtre igaz" },
+        { "key": "B", "text": "csak az állati sejtre igaz" },
+        { "key": "C", "text": "mindkettőre igaz" },
+        { "key": "D", "text": "egyikre sem igaz" }
+      ],
+      "answer": "A",
+      "category": "felepites-mukodes",
+      "explanation": "Helyes: A. A kloroplasztisz a fotoszintézis helye, klorofillt tartalmaz; csak a növényi (és algasejtek) zöld részeinek sejtjeiben van meg. Az állati sejt heterotróf, nem fotoszintetizál.",
+      "wrongOptions": {
+        "B": "Az állati sejt nem fotoszintetizál, színteste nincs.",
+        "C": "Színtest csak a növényi sejtben van, az állatiban nem.",
+        "D": "A növény zöld részeinek sejtjeiben van kloroplasztisz, így az állítás a növényi sejtre igaz."
+      }
+    },
+    {
+      "id": "3",
+      "kind": "choice",
+      "prompt": "Mitokondriumaiban a szerves anyagok lebontásával (biológiai oxidációval) ATP termelődik.",
+      "options": [
+        { "key": "A", "text": "csak a növényi sejtre igaz" },
+        { "key": "B", "text": "csak az állati sejtre igaz" },
+        { "key": "C", "text": "mindkettőre igaz" },
+        { "key": "D", "text": "egyikre sem igaz" }
+      ],
+      "answer": "C",
+      "category": "anyagcsere-folyamat",
+      "explanation": "Helyes: C. A mitokondrium minden eukarióta sejt „erőműve”: a növényi sejtnek is szüksége van ATP-re, ezért a fotoszintézis mellett biológiai oxidációt is végez, különösen éjszaka és a nem zöld részekben (pl. gyökér).",
+      "wrongOptions": {
+        "A": "A mitokondrium nem csak a növényi sejtben van: minden eukarióta sejt tartalmazza.",
+        "B": "Gyakori tévedés, hogy a növényi sejt „csak fotoszintetizál”: valójában mitokondriuma is van, és légzik.",
+        "D": "Mindkét sejttípusnak van mitokondriuma, az állítás tehát igaz rájuk."
+      }
+    },
+    {
+      "id": "4",
+      "kind": "choice",
+      "prompt": "A kifejlett sejt térfogatának nagy részét egyetlen, központi sejtüreg (vakuólum) tölti ki.",
+      "options": [
+        { "key": "A", "text": "csak a növényi sejtre igaz" },
+        { "key": "B", "text": "csak az állati sejtre igaz" },
+        { "key": "C", "text": "mindkettőre igaz" },
+        { "key": "D", "text": "egyikre sem igaz" }
+      ],
+      "answer": "A",
+      "category": "felepites-mukodes",
+      "explanation": "Helyes: A. A nagy központi vakuólum a kifejlett növényi sejt jellemzője: sejtnedvet tartalmaz, fenntartja a sejt feszességét (turgor), raktároz. Az állati sejtben csak kisebb, átmeneti hólyagocskák vannak.",
+      "wrongOptions": {
+        "B": "Az állati sejtben nincs nagy központi sejtüreg, legfeljebb apró hólyagok.",
+        "C": "A központi vakuólum csak a növényi sejtre jellemző.",
+        "D": "A növényi sejtre igaz, tehát nem lehet „egyikre sem”."
+      }
+    },
+    {
+      "id": "5",
+      "kind": "choice",
+      "prompt": "Nincs sejtmagja; gyűrű alakú DNS-e szabadon, a citoplazmában található.",
+      "options": [
+        { "key": "A", "text": "csak a növényi sejtre igaz" },
+        { "key": "B", "text": "csak az állati sejtre igaz" },
+        { "key": "C", "text": "mindkettőre igaz" },
+        { "key": "D", "text": "egyikre sem igaz" }
+      ],
+      "answer": "D",
+      "category": "fogalomhasznalat",
+      "explanation": "Helyes: D. Ez a prokarióta (baktérium-) sejt jellemzője. A növényi és az állati sejt is eukarióta: maghártyával határolt, valódi sejtmagjuk van, benne több, pálcika alakú kromoszómával.",
+      "wrongOptions": {
+        "A": "A növényi sejt eukarióta, van sejtmagja.",
+        "B": "Az állati sejt is eukarióta, sejtmaggal rendelkezik (a vörösvérsejt kivételes, de ott a mag később veszik el).",
+        "C": "Egyik sejttípusra sem igaz: a maghiány a baktériumokat jellemzi."
+      }
+    },
+    {
+      "id": "6",
+      "kind": "choice",
+      "prompt": "Riboszómái vannak, amelyeken a fehérjeszintézis zajlik.",
+      "options": [
+        { "key": "A", "text": "csak a növényi sejtre igaz" },
+        { "key": "B", "text": "csak az állati sejtre igaz" },
+        { "key": "C", "text": "mindkettőre igaz" },
+        { "key": "D", "text": "egyikre sem igaz" }
+      ],
+      "answer": "C",
+      "category": "felepites-mukodes",
+      "explanation": "Helyes: C. A riboszóma minden sejtben megtalálható (még a baktériumokban is), mert minden sejt termel fehérjéket; a növényi és az állati sejt egyformán tartalmaz riboszómákat.",
+      "wrongOptions": {
+        "A": "Nem csak a növényi sejtben: fehérjét minden sejt szintetizál.",
+        "B": "Nem csak az állati sejtben: a növényi sejt is riboszómákon készíti fehérjéit.",
+        "D": "Minden élő sejtnek van riboszómája, az állítás tehát mindkettőre igaz."
+      }
+    },
+    {
+      "id": "7",
+      "kind": "choice",
+      "prompt": "Tartalék szénhidrátja a glikogén.",
+      "options": [
+        { "key": "A", "text": "csak a növényi sejtre igaz" },
+        { "key": "B", "text": "csak az állati sejtre igaz" },
+        { "key": "C", "text": "mindkettőre igaz" },
+        { "key": "D", "text": "egyikre sem igaz" }
+      ],
+      "answer": "B",
+      "category": "anyagcsere-folyamat",
+      "explanation": "Helyes: B. Az állati sejtek (pl. máj- és izomsejtek) glikogén formájában raktározzák a szénhidrátot; a növényi sejt tartalék szénhidrátja a keményítő. Mindkettő glükózegységekből épül fel, de más az elágazásuk és az előfordulásuk.",
+      "wrongOptions": {
+        "A": "A növényi sejt keményítőt raktároz, nem glikogént.",
+        "C": "Csak az állati (és gomba-) sejtekben van glikogén; a növényekben keményítő.",
+        "D": "Az állati sejtre igaz, ezért nem „egyikre sem”."
+      }
+    },
+    {
+      "id": "8",
+      "kind": "choice",
+      "prompt": "Sejtosztódáskor a sejtközpont (centriólumok) szervezi az osztódási orsó kialakulását.",
+      "options": [
+        { "key": "A", "text": "csak a növényi sejtre igaz" },
+        { "key": "B", "text": "csak az állati sejtre igaz" },
+        { "key": "C", "text": "mindkettőre igaz" },
+        { "key": "D", "text": "egyikre sem igaz" }
+      ],
+      "answer": "B",
+      "category": "felepites-mukodes",
+      "explanation": "Helyes: B. Centriólumokból álló sejtközpont az állati sejtekben van; a virágos növények sejtjeiben nincs centriólum, az osztódási orsó ott a sejtközpont nélkül szerveződik.",
+      "wrongOptions": {
+        "A": "A virágos növények sejtjeiben nincs centriólum.",
+        "C": "Csak az állati sejtre jellemző a centriólumokból álló sejtközpont.",
+        "D": "Az állati sejtre igaz, tehát nem „egyikre sem”."
+      }
+    }
+  ],
+  "glossary": [],
+  "suggestedMinutes": 8
+}

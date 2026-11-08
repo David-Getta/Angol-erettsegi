@@ -1,0 +1,309 @@
+{
+  "schemaVersion": 1,
+  "id": "gr-agreement",
+  "subject": "angol",
+  "level": "kozep",
+  "source": "generated",
+  "topic": "nyelvtan",
+  "title": "Egyeztetés",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "grammar",
+  "type": "lesson",
+  "category": "agreement",
+  "summaryHu": "Az alany és az állítmány számban egyezik: egyes számú alanyhoz egyes számú ige tartozik (he works, she was, it has), többes számúhoz többes számú (they work, they were). A magyar tanulókat főleg azok a szavak vezetik félre, amelyek angolul másképp viselkednek, mint magyarul: a people és a police többes számú, a news, az information és a mathematics egyes számú, valamint a hosszú alany, amelyben az ige előtt egy másik főnév áll (The price of the tickets is …). Ez az igealakos és a feleletválasztós feladatokban, az emelt hibakeresésben és az íráskészség nyelvhelyességi szempontjában is pontot ér.",
+  "rules": [
+    {
+      "title": "Az alapszabály: egyes szám – többes szám",
+      "explanation": "Egyes számú alany (he, she, it, egyes számú vagy megszámlálhatatlan főnév) után Present Simple-ben -s végű ige, a be alakja is/was, a have alakja has. Többes számú alany (we, you, they, többes számú főnév) után -s nélküli ige, are/were, have. A there is / there are, there was / there were a mögötte álló főnévhez igazodik.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "My best friend lives in Győr.",
+          "hu": "A legjobb barátom Győrben lakik."
+        },
+        {
+          "en": "There are two bakeries in our street.",
+          "hu": "Két pékség van az utcánkban."
+        },
+        {
+          "en": "There was a lot of traffic this morning.",
+          "hu": "Ma reggel nagy forgalom volt.",
+          "note": "A traffic megszámlálhatatlan: there was."
+        }
+      ]
+    },
+    {
+      "title": "Mindig többes számú főnevek",
+      "explanation": "Többes számú igével állnak: people (emberek), police, cattle; a the + melléknév szerkezetű embercsoportok (the rich, the elderly, the young); valamint a két részből álló tárgyak: trousers, jeans, shorts, glasses, scissors, pyjamas. Ha a pair of szerkezettel használjuk őket, az ige a pair-hez igazodik, tehát egyes számú.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "People are very friendly here.",
+          "hu": "Az emberek nagyon barátságosak itt."
+        },
+        {
+          "en": "The police are looking for the driver.",
+          "hu": "A rendőrség keresi a sofőrt.",
+          "note": "A police többes számú: are, nem *is."
+        },
+        {
+          "en": "My jeans are too tight, but this pair of jeans is perfect.",
+          "hu": "A farmerom túl szűk, de ez a farmer tökéletes."
+        }
+      ]
+    },
+    {
+      "title": "Egyes számmal egyeztetett alanyok",
+      "explanation": "Egyes számú igével állnak: az everyone/everybody, everything, someone, nobody, nothing és az each, every + egyes számú főnév; a megszámlálhatatlan főnevek (news, information, advice, money, furniture); az -ics végű tantárgyak és tudományágak (mathematics, physics, economics); valamint az egységként kezelt összeg, időtartam és távolság (Ten euros is …, Two hours is …, Five kilometres is …). Az everyone után visszautalásként a their is elfogadott (Everyone has their own opinion).",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "Everyone in my class has a smartphone.",
+          "hu": "Az osztályomban mindenkinek van okostelefonja."
+        },
+        {
+          "en": "The news is good.",
+          "hu": "Jók a hírek.",
+          "note": "A news egyes számú: is, nem *are."
+        },
+        {
+          "en": "Three weeks is a long time to wait.",
+          "hu": "Három hét hosszú idő a várakozásra."
+        }
+      ]
+    },
+    {
+      "title": "Hosszú alany: az ige a fő alanyhoz igazodik",
+      "explanation": "Ha az alanyhoz elöljárós szerkezet vagy mellékmondat kapcsolódik, az ige a fő alanyhoz (a szerkezet első főnevéhez) igazodik, nem az ige előtt közvetlenül álló főnévhez: The price of the tickets is …, The students in the photo are …. A one of + többes számú főnév, az each of és a neither of után is egyes számú ige áll, mert az alany a one / each.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "The price of the tickets is too high.",
+          "hu": "A jegyek ára túl magas.",
+          "note": "Az alany a price, nem a tickets."
+        },
+        {
+          "en": "One of my friends lives in London.",
+          "hu": "Az egyik barátom Londonban él."
+        },
+        {
+          "en": "Each of the students has to give a presentation.",
+          "hu": "Minden diáknak kell egy prezentációt tartania."
+        }
+      ]
+    },
+    {
+      "title": "Gyűjtőnevek: family, team, class, government",
+      "explanation": "A csoportot jelölő főnevek (family, team, class, government, staff, audience, company) a brit angolban egyes és többes számú igével is állhatnak: egyes számmal, ha a csoportot egységként látjuk, többes számmal, ha a tagokra gondolunk. Az amerikai angol általában egyes számot használ. A lényeg a következetesség: The team is … it, illetve The team are … they.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "My family is quite big.",
+          "hu": "Elég nagy a családom.",
+          "note": "A család mint egység."
+        },
+        {
+          "en": "My family are all early risers.",
+          "hu": "A családomban mindenki korán kel.",
+          "note": "A család tagjai (brit angol)."
+        },
+        {
+          "en": "The team has won every match this season.",
+          "hu": "A csapat ebben az idényben minden meccsét megnyerte."
+        }
+      ]
+    },
+    {
+      "title": "Nehezebb esetek: neither … nor, a number of, none of",
+      "explanation": "Az either … or és a neither … nor szerkezetben az ige a hozzá közelebb álló alanyhoz igazodik (Neither my brother nor my parents were …). Az a number of (sok) + többes számú főnév többes számú igével áll, a the number of (valaminek a száma) egyes számúval. A none of + többes számú főnév után egyes és többes számú ige is elfogadott; formális szövegben gyakoribb az egyes szám.",
+      "emeltOnly": true,
+      "examples": [
+        {
+          "en": "Neither my brother nor my parents were at home.",
+          "hu": "Sem a bátyám, sem a szüleim nem voltak otthon."
+        },
+        {
+          "en": "A number of students have complained about the new rules.",
+          "hu": "Számos diák panaszkodott az új szabályokra."
+        },
+        {
+          "en": "The number of students has increased this year.",
+          "hu": "Idén nőtt a diákok száma."
+        }
+      ]
+    }
+  ],
+  "commonMistakes": [
+    {
+      "wrong": "The people is very friendly here.",
+      "right": "People are very friendly here.",
+      "why": "A people „emberek” jelentésben többes számú főnév (a person többes száma), ezért mindig többes számú igével áll. Általános értelemben névelő sem kell elé."
+    },
+    {
+      "wrong": "Everyone have a mobile phone.",
+      "right": "Everyone has a mobile phone.",
+      "why": "Az everyone, everybody, nobody, someone egyes számú igével áll, bár jelentésében sok emberre utal. Magyarul is egyes szám („mindenkinek van”), de a „sok ember” jelentés miatt sokan többes számot írnak."
+    },
+    {
+      "wrong": "One of my friends live in Debrecen.",
+      "right": "One of my friends lives in Debrecen.",
+      "why": "Az alany a one (egy), nem a friends; az ige a fő alanyhoz igazodik, ezért egyes szám 3. személyű -s kell."
+    },
+    {
+      "wrong": "The news are bad.",
+      "right": "The news is bad.",
+      "why": "A news az -s végződése ellenére megszámlálhatatlan, egyes számú főnév. Magyarul „a hírek” többes szám, ezért tévesztjük el."
+    },
+    {
+      "wrong": "There is many people in the room.",
+      "right": "There are many people in the room.",
+      "why": "A there is / there are a mögötte álló főnévhez igazodik: többes számú főnév (people) előtt there are kell."
+    },
+    {
+      "wrong": "The police has arrested the man.",
+      "right": "The police have arrested the man.",
+      "why": "A police mindig többes számú igével áll (jelentése: a rendőrök). A magyar „a rendőrség” egyes száma itt félrevezet."
+    }
+  ],
+  "examTips": [
+    "Igealakos feladatban mindig keresd meg a mondat valódi alanyát, és csak utána írd be az igét: hosszú alanyban (The number of cars in the city …, Each of the players …) az ige előtti főnév gyakran csapda.",
+    "A there is / there are, was / were és has / have választás a feleletválasztós kloze gyakori kérdése; a döntés a következő főnév számán múlik (there were a lot of people, de there was a lot of traffic).",
+    "Emelt szintű hibakeresésnél gyakori, hogy egy hosszú alany után rossz számú ige áll (*The results of the survey shows …): olvasd el a sort úgy, hogy előbb megkeresed az alanyt.",
+    "Íráskor ellenőrizd az everyone, people, police, news, information, advice szavak után az igét és a visszautaló névmást is; a „Nyelvhelyesség, helyesírás” szempontnál minden egyeztetési hiba hibának számít."
+  ],
+  "practice": [
+    {
+      "id": "1",
+      "kind": "choice",
+      "prompt": "Most people in my town ___ to work by car.",
+      "options": [
+        {
+          "key": "A",
+          "text": "goes"
+        },
+        {
+          "key": "B",
+          "text": "is going"
+        },
+        {
+          "key": "C",
+          "text": "go"
+        },
+        {
+          "key": "D",
+          "text": "going"
+        }
+      ],
+      "answer": "C",
+      "category": "agreement",
+      "explanation": "Helyes: go. Az alany a people (emberek), amely többes számú, ezért Present Simple-ben -s nélküli ige kell. Szokásról van szó, ezért egyszerű jelen idő.",
+      "wrongOptions": {
+        "A": "Az -s végződés egyes szám 3. személyű alanyhoz tartozik, a people többes számú.",
+        "B": "Az is egyes számú, a people mellé are kellene; és szokásnál amúgy is Present Simple a megfelelő.",
+        "D": "Az -ing alak segédige nélkül nem lehet állítmány."
+      }
+    },
+    {
+      "id": "2",
+      "kind": "text",
+      "prompt": "Everybody in our class ___ (have) a smartphone these days.",
+      "cue": "have",
+      "answer": [
+        "has",
+        "has got"
+      ],
+      "category": "agreement",
+      "explanation": "Helyes: has (vagy has got). Az everybody egyes számú igével áll, és jelen idejű állapotról (birtoklás) van szó, ezért a have egyes szám 3. személyű alakja, a has kell – nem *have."
+    },
+    {
+      "id": "3",
+      "kind": "choice",
+      "prompt": "The information you gave me ___ very useful.",
+      "options": [
+        {
+          "key": "A",
+          "text": "were"
+        },
+        {
+          "key": "B",
+          "text": "are"
+        },
+        {
+          "key": "C",
+          "text": "was"
+        },
+        {
+          "key": "D",
+          "text": "have been"
+        }
+      ],
+      "answer": "C",
+      "category": "agreement",
+      "explanation": "Helyes: was. Az information megszámlálhatatlan főnév, ezért egyes számú igével áll, akkor is, ha magyarul „információk”-at mondanánk.",
+      "wrongOptions": {
+        "A": "A were többes számú alak, a megszámlálhatatlan information után egyes szám kell.",
+        "B": "Az are többes számú alak; a megszámlálhatatlan information után egyes szám (is vagy was) kell.",
+        "D": "A have been többes számú; egyes számban has been lenne."
+      }
+    },
+    {
+      "id": "4",
+      "kind": "text",
+      "prompt": "One of the reasons why I like this school ___ (be) the friendly atmosphere.",
+      "cue": "be",
+      "answer": [
+        "is"
+      ],
+      "category": "agreement",
+      "explanation": "Helyes: is. Az alany a one (az egyik ok), nem a reasons, ezért egyes számú ige kell. A mondat jelen időben szól (I like), így is."
+    },
+    {
+      "id": "5",
+      "kind": "choice",
+      "prompt": "Mathematics ___ always been my favourite subject.",
+      "options": [
+        {
+          "key": "A",
+          "text": "have"
+        },
+        {
+          "key": "B",
+          "text": "is"
+        },
+        {
+          "key": "C",
+          "text": "has"
+        },
+        {
+          "key": "D",
+          "text": "are"
+        }
+      ],
+      "answer": "C",
+      "category": "agreement",
+      "explanation": "Helyes: has. Az -ics végű tantárgynevek (mathematics, physics) egyes számú igével állnak; a been miatt Present Perfect kell: has always been.",
+      "wrongOptions": {
+        "A": "A have többes számú alak, a mathematics viszont egyes számmal egyeztetendő.",
+        "B": "A számmal egyezik, de az is + been nem létező szerkezet; a been előtt have/has kell.",
+        "D": "Az are többes számú, és az are + been sem helyes szerkezet."
+      }
+    },
+    {
+      "id": "6",
+      "kind": "text",
+      "prompt": "There ___ (be) a lot of tourists in the city centre last weekend.",
+      "cue": "be",
+      "answer": [
+        "were"
+      ],
+      "category": "agreement",
+      "explanation": "Helyes: were. A there was / there were a mögötte álló főnévhez igazodik: a tourists többes számú, és a last weekend miatt múlt idő kell, tehát there were."
+    }
+  ],
+  "relatedCategories": [
+    "plural",
+    "verb-form",
+    "pronoun"
+  ]
+}

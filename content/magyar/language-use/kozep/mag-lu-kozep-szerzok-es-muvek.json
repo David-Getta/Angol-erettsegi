@@ -1,0 +1,125 @@
+{
+  "schemaVersion": 1,
+  "id": "mag-lu-kozep-szerzok-es-muvek",
+  "subject": "magyar",
+  "revision": 1,
+  "level": "kozep",
+  "source": "generated",
+  "topic": "kotelezo-szerzok",
+  "title": "Szerzők és művek – a kötelező szerzők",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "language-use",
+  "type": "muveltsegi",
+  "instructions": "Párosítsa a műveket a szerzőjükkel! Minden műhöz írja be a szerző betűjelét. Egy szerző csak egyszer szerepelhet, két szerző fölösleges. A 0. sor a példa.",
+  "options": [
+    {
+      "key": "A",
+      "text": "Arany János"
+    },
+    {
+      "key": "B",
+      "text": "Ady Endre"
+    },
+    {
+      "key": "C",
+      "text": "Babits Mihály"
+    },
+    {
+      "key": "D",
+      "text": "Jókai Mór"
+    },
+    {
+      "key": "E",
+      "text": "József Attila"
+    },
+    {
+      "key": "F",
+      "text": "Kosztolányi Dezső"
+    },
+    {
+      "key": "G",
+      "text": "Mikszáth Kálmán"
+    },
+    {
+      "key": "H",
+      "text": "Petőfi Sándor"
+    },
+    {
+      "key": "I",
+      "text": "Vörösmarty Mihály"
+    },
+    {
+      "key": "J",
+      "text": "Móricz Zsigmond"
+    }
+  ],
+  "example": {
+    "id": "0",
+    "kind": "match",
+    "prompt": "Toldi (elbeszélő költemény, 1846)",
+    "answer": "A",
+    "category": "irodalomtorteneti-kontextus",
+    "explanation": "A Toldit Arany János írta a Kisfaludy Társaság 1846-os pályázatára; a trilógia első része, felező tizenkettesben, páros rímmel."
+  },
+  "items": [
+    {
+      "id": "1",
+      "kind": "match",
+      "prompt": "A kőszívű ember fiai (regény)",
+      "answer": "D",
+      "category": "irodalomtorteneti-kontextus",
+      "explanation": "Jókai Mór romantikus regénye (1869) a Baradlay család és fiai sorsán át mutatja be az 1848–49-es szabadságharcot. Gyakori tévesztés Mikszáthtal, de Mikszáth regényei jóval később születtek, és anekdotikusak."
+    },
+    {
+      "id": "2",
+      "kind": "match",
+      "prompt": "Szent Péter esernyője (regény)",
+      "answer": "G",
+      "category": "irodalomtorteneti-kontextus",
+      "explanation": "Mikszáth Kálmán regénye (1895) a Glogován és Besztercebányán játszódó történet; Wibra Gyuri és Veronka szerelme, az esernyő-motívum és az anekdotikus elbeszélésmód jellemzi."
+    },
+    {
+      "id": "3",
+      "kind": "match",
+      "prompt": "Édes Anna (regény)",
+      "answer": "F",
+      "category": "irodalomtorteneti-kontextus",
+      "explanation": "Kosztolányi Dezső lélektani regénye (1926): a cselédlány Édes Anna meggyilkolja gazdáit, Vizyéket. A mű a Tanácsköztársaság bukása után, 1919 nyarán kezdődik."
+    },
+    {
+      "id": "4",
+      "kind": "match",
+      "prompt": "Jónás könyve (elbeszélő költemény)",
+      "answer": "C",
+      "category": "irodalomtorteneti-kontextus",
+      "explanation": "Babits Mihály késői elbeszélő költeménye, a bibliai Jónás-történet újraírása: a prófétai küldetés és felelősségvállalás kérdése, a hallgatás mint bűnrészesség gondolata. Babits a Nyugat költője és később szerkesztője volt."
+    },
+    {
+      "id": "5",
+      "kind": "match",
+      "prompt": "Szózat (vers, 1836)",
+      "answer": "I",
+      "category": "irodalomtorteneti-kontextus",
+      "explanation": "A Szózatot Vörösmarty Mihály írta 1836-ban („Hazádnak rendületlenűl / Légy híve, oh magyar”). Gyakori hiba Kölcsey Ferenccel tévesztése, aki a Himnuszt írta (1823)."
+    },
+    {
+      "id": "6",
+      "kind": "match",
+      "prompt": "A Dunánál (vers)",
+      "answer": "E",
+      "category": "irodalomtorteneti-kontextus",
+      "explanation": "József Attila 1936-os verse („A rakodópart alsó kövén ültem”): a személyes sors, az ősök és a népek közös múltjának számvetése."
+    },
+    {
+      "id": "7",
+      "kind": "match",
+      "prompt": "A magyar Ugaron (vers)",
+      "answer": "B",
+      "category": "irodalomtorteneti-kontextus",
+      "explanation": "Ady Endre verse az Új versek (1906) kötetből; az „Ugar” a parlagon hagyott, elmaradott magyar viszonyok szimbóluma."
+    }
+  ],
+  "glossary": [],
+  "suggestedMinutes": 6
+}

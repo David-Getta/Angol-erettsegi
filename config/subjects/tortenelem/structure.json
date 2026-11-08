@@ -1,0 +1,199 @@
+{
+  "meta": {
+    "verifiedAt": "2026-11-05",
+    "sources": [
+      {
+        "title": "Oktatási Hivatal: Történelem – részletes érettségi vizsgakövetelmény és vizsgaleírás (2024-től érvényes, Nat2020)",
+        "url": "https://www.oktatas.hu/pub_bin/dload/kozoktatas/erettsegi/vizsgakovetelmenyek2024/tortenelem_2024_e.pdf"
+      },
+      {
+        "title": "Eduline (2024. 04. 12.): Vizsgarészek, pontozás, segédeszközök – minden a 2024-es töriérettségiről (180 perc, 100 + 50 pont, 12 rövid feladat, 4-ből 2 esszé, 7 témakör)",
+        "url": "https://eduline.hu/erettsegi-felveteli/20240412_tortenelem-erettsegi-tudnivalok-erettsegi-2024"
+      },
+      {
+        "title": "Eduline (2024. 05. 24.): Így pontozzák a középszintű töriérettségit (szóbeli szempontok 4/6/10/12/18)",
+        "url": "https://eduline.hu/erettsegi-felveteli/20240524_torierettsegi-pontszaitas-szabalyok-irasbeli-szobeli-vizsga"
+      },
+      {
+        "title": "Eduline (2025. 04. 23.): Így pontozzák az idei töriérettségi írásbeli részét (esszé-szempontok, rövid 17 / hosszú 33 pont, terjedelem)",
+        "url": "https://eduline.hu/erettsegi-felveteli/20250423_tortenelemerettsegi-irasbeli-vizsga-pontozasa-2025"
+      },
+      {
+        "title": "Eduline (2024. 04. 26.): Milyen hosszúnak kell lennie az esszéknek a töri írásbelin (100–130 / 210–260 szó)",
+        "url": "https://eduline.hu/erettsegi-felveteli/20240426_Erettsegi-2024milyen-hosszunak-kell-lennie-a-tori-irasbelin-az-esszeknek"
+      },
+      {
+        "title": "Eduline (2025. 11. 06.): Így számolják a pontokat a történelem szóbelin",
+        "url": "https://eduline.hu/erettsegi-felveteli/20251106_oszi-erettsegi-2025-tortenelem-szobeli-vizsga-pontozas"
+      },
+      {
+        "title": "Eduline (2023. 12. 19.): Ezek lesznek történelemből emelt szinten a témakörök (emelt I. 100 perc + II. 140 perc, 6-ból 3 esszé)",
+        "url": "https://eduline.hu/erettsegi-felveteli/20231219_Erettsegi-2024-ezek-lesznek-tortenelembol-emelt-szinten-a-temakorok"
+      },
+      {
+        "title": "Oktatási Hivatal: Történelem középszint, javítási-értékelési útmutató, 2025. május (K2511) – esszé-szempontok (tükörmásolat)",
+        "url": "https://www.tortenelemtanarok.hu/media/uploads/Tortenelem_erettsegi/Kozep/k_tort_25maj_ut.pdf"
+      },
+      {
+        "title": "Eduline (2026. 03. 14.): Érettségi 2026 – pontozási és osztályozási szabályok (közép 80/60/40/25 %, emelt 60/47/33/25 %, vizsgarészenként 12 %)",
+        "url": "https://eduline.hu/erettsegi-felveteli/20260314_erettsegi-2026-pontozas-osztalyozas"
+      }
+    ],
+    "notes": [
+      "Ellenőrzött (2024 óta, Nat2020): közép írásbeli 180 perc egyben, 100 pont (I. 12 rövid feladat 50 pont, II. 4-ből 2 esszé 50 pont: rövid egyetemes 17 + hosszú magyar 33); emelt írásbeli 240 perc két feladatlapon (I. 100 perc 50 pont, II. 140 perc 50 pont: 6-ból 3 esszé, nyers 20 + 36 + 44 kettővel osztva); szóbeli közép 15 perc, emelt 20 perc, 50 pont, 30 perc felkészülés; atlasz kronológia nélkül.",
+      "App-paraméter: a középszintű 180 perc 90 + 90 felosztása (a vizsgán egyben kapják az időt).",
+      "App-paraméter, nem hivatalos adat: mockTaskCount (hány feladat kerül egy próbaérettségibe), az írásbeli részek közti percbeosztás ott, ahol a vizsgán egyben kapják az időt, a textLength és a részek intro szövege.",
+      "Az ellenőrzés hírportál-cikkek (Eduline, Telex) és a hivatalos dokumentumok keresőben indexelt szövege alapján történt; az OH oldalát a futtató környezet hálózata nem engedte közvetlenül megnyitni – a hivatalos vizsgaleírással érdemes összevetni."
+    ]
+  },
+  "levels": {
+    "kozep": {
+      "name": "Középszint",
+      "cefr": "",
+      "writtenTotalMin": 180,
+      "totalPoints": 150,
+      "parts": [
+        {
+          "id": "reading",
+          "kind": "objective",
+          "slug": "rovid-feladatok",
+          "name": "I. rész – Rövid feladatok",
+          "written": true,
+          "order": 1,
+          "timeMin": 90,
+          "maxPoints": 50,
+          "mockTaskCount": 4,
+          "notes": [
+            "12 forrásalapú feladat; kronológia nélküli atlasz az egész írásbelin használható. A 180 perc a két rész között szabadon osztható."
+          ],
+          "features": {
+            "wrongOptions": true,
+            "targeted": true
+          },
+          "intro": "Egyszerű, rövid választ igénylő feladatok forrásokkal (szöveg, adatsor, térképleírás, kép leírása): évszámok, fogalmak, személyek, összefüggések. Minden válasz után magyarázat.",
+          "icon": "📜"
+        },
+        {
+          "id": "writing",
+          "kind": "written",
+          "slug": "esszek",
+          "name": "II. rész – Esszék",
+          "written": true,
+          "order": 2,
+          "timeMin": 90,
+          "maxPoints": 50,
+          "mockTaskCount": 2,
+          "notes": [
+            "4 kiírt esszéből 2: egy rövid (egyetemes) és egy hosszú (magyar), különböző korszakból."
+          ],
+          "features": {},
+          "intro": "Esszék a vizsga II. részéhez: rövid és hosszú (emelten komplex) esszé forrásokkal és szempontokkal. A javítást a Claude Code (/javitas) vagy a Claude app végzi a hivatalos szempontok szerint (feladatmegértés, tájékozódás térben és időben, szaknyelv, forráshasználat, történelmi gondolkodás).",
+          "icon": "✍"
+        },
+        {
+          "id": "speaking",
+          "kind": "oral",
+          "slug": "szobeli",
+          "name": "Szóbeli (tétel)",
+          "written": false,
+          "order": 3,
+          "maxPoints": 50,
+          "notes": [
+            "Iskolai tételsor (20–22 tétel, 60 % magyar, 40 % egyetemes); kronológia nélküli atlasz használható."
+          ],
+          "features": {},
+          "intro": "Szóbeli tételek forrásokkal: a tétel kifejtése a hivatalos szempontok szerint. A választ beszéddel (felismerés) vagy gépeléssel adod meg.",
+          "icon": "🗣"
+        }
+      ],
+      "breaks": [],
+      "oral": {
+        "durationMin": "15",
+        "prepMin": "30",
+        "parts": [
+          {
+            "number": 1,
+            "name": "A tétel kifejtése",
+            "description": "A kihúzott tétel önálló kifejtése a tételhez adott források (szöveg, kép, térkép, adatsor) felhasználásával, a hivatalos szempontok szerint; a vizsgáztató kérdéseket tehet fel.",
+            "minutes": "15"
+          }
+        ]
+      },
+      "textLength": {}
+    },
+    "emelt": {
+      "name": "Emelt szint",
+      "cefr": "",
+      "writtenTotalMin": 240,
+      "totalPoints": 150,
+      "parts": [
+        {
+          "id": "reading",
+          "kind": "objective",
+          "slug": "rovid-feladatok",
+          "name": "I. rész – Rövid feladatok",
+          "written": true,
+          "order": 1,
+          "timeMin": 100,
+          "maxPoints": 50,
+          "mockTaskCount": 4,
+          "notes": [
+            "Külön feladatlap, 100 perc, segédeszköz nélkül."
+          ],
+          "features": {
+            "wrongOptions": true,
+            "targeted": true
+          },
+          "intro": "Egyszerű, rövid választ igénylő feladatok forrásokkal (szöveg, adatsor, térképleírás, kép leírása): évszámok, fogalmak, személyek, összefüggések. Minden válasz után magyarázat.",
+          "icon": "📜"
+        },
+        {
+          "id": "writing",
+          "kind": "written",
+          "slug": "esszek",
+          "name": "II. rész – Esszék",
+          "written": true,
+          "order": 2,
+          "timeMin": 140,
+          "maxPoints": 50,
+          "mockTaskCount": 3,
+          "notes": [
+            "6 kiírt esszéből 3: egy rövid (egyetemes), egy hosszú (magyar) és egy komplex; a nyers pontokat (20 + 36 + 44) kettővel osztva kapod a vizsgapontot. Atlasz (kronológia nélkül) csak itt használható."
+          ],
+          "features": {},
+          "intro": "Esszék a vizsga II. részéhez: rövid és hosszú (emelten komplex) esszé forrásokkal és szempontokkal. A javítást a Claude Code (/javitas) vagy a Claude app végzi a hivatalos szempontok szerint (feladatmegértés, tájékozódás térben és időben, szaknyelv, forráshasználat, történelmi gondolkodás).",
+          "icon": "✍"
+        },
+        {
+          "id": "speaking",
+          "kind": "oral",
+          "slug": "szobeli",
+          "name": "Szóbeli (tétel)",
+          "written": false,
+          "order": 3,
+          "maxPoints": 50,
+          "notes": [
+            "Központi tételsor (OH, december)."
+          ],
+          "features": {},
+          "intro": "Szóbeli tételek forrásokkal: a tétel kifejtése a hivatalos szempontok szerint. A választ beszéddel (felismerés) vagy gépeléssel adod meg.",
+          "icon": "🗣"
+        }
+      ],
+      "breaks": [],
+      "oral": {
+        "durationMin": "20",
+        "prepMin": "30",
+        "parts": [
+          {
+            "number": 1,
+            "name": "A tétel kifejtése",
+            "description": "A központi tételsor egy tételének önálló kifejtése forrásokkal, a hivatalos szempontok szerint.",
+            "minutes": "20"
+          }
+        ]
+      },
+      "textLength": {}
+    }
+  }
+}

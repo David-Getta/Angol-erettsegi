@@ -1,0 +1,180 @@
+{
+  "schemaVersion": 1,
+  "id": "kem-rd-emelt-redoxi-ph-rovid-valasz",
+  "subject": "kemia",
+  "revision": 1,
+  "level": "emelt",
+  "source": "generated",
+  "topic": "sav-bazis-redoxi",
+  "title": "Oxidációs szám, sav–bázis párok, pH – rövid válaszok",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "reading",
+  "type": "rovid-valasz",
+  "instructions": "Rövid választ igénylő kérdések: írd be a kért számot, képletet vagy nevet (az oxidációs számot előjellel), a feleletválasztós kérdéseknél a helyes betűjelet! 25 °C-ra vonatkoztatva Kv = 10⁻¹⁴. A 0. a példa.",
+  "example": {
+    "id": "0",
+    "kind": "text",
+    "prompt": "Mennyi a mangán oxidációs száma a kálium-permanganátban (KMnO₄)?",
+    "answer": [
+      "+7",
+      "7"
+    ],
+    "maxWords": 1,
+    "category": "reakciotipus",
+    "explanation": "Helyes: +7. A kálium +1, a négy oxigén 4 · (−2) = −8; a semleges vegyületben az oxidációs számok összege 0, ezért Mn: 0 − 1 + 8 = +7."
+  },
+  "items": [
+    {
+      "id": "1",
+      "kind": "text",
+      "prompt": "Mennyi a kén oxidációs száma a kénsavban (H₂SO₄)?",
+      "answer": [
+        "+6",
+        "6"
+      ],
+      "maxWords": 1,
+      "category": "reakciotipus",
+      "explanation": "Helyes: +6. Két hidrogén 2 · (+1) = +2, négy oxigén 4 · (−2) = −8; a kén oxidációs száma 0 − 2 + 8 = +6 (ez a kén legmagasabb oxidációs száma)."
+    },
+    {
+      "id": "2",
+      "kind": "text",
+      "prompt": "Mennyi a króm oxidációs száma a kálium-dikromátban (K₂Cr₂O₇)?",
+      "answer": [
+        "+6",
+        "6"
+      ],
+      "maxWords": 1,
+      "category": "reakciotipus",
+      "explanation": "Helyes: +6. K: 2 · (+1) = +2, O: 7 · (−2) = −14, a két krómra együtt +12 jut, tehát egy krómatom oxidációs száma +6."
+    },
+    {
+      "id": "3",
+      "kind": "choice",
+      "prompt": "A Zn + Cu²⁺ → Zn²⁺ + Cu reakcióban melyik részecske az oxidálószer?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Zn"
+        },
+        {
+          "key": "B",
+          "text": "Cu"
+        },
+        {
+          "key": "C",
+          "text": "Zn²⁺"
+        },
+        {
+          "key": "D",
+          "text": "Cu²⁺"
+        }
+      ],
+      "answer": "D",
+      "category": "reakciotipus",
+      "explanation": "Helyes: D. Az oxidálószer az a részecske, amely elektront vesz fel, vagyis redukálódik: a Cu²⁺ két elektront vesz fel és fémrézzé alakul (oxidációs száma +2 → 0).",
+      "wrongOptions": {
+        "A": "A cink elektront ad le (0 → +2), oxidálódik, tehát ő a redukálószer.",
+        "B": "A fémréz a redukció terméke.",
+        "C": "A Zn²⁺ a cink oxidációjának terméke, a reakcióban nem vesz fel elektront."
+      }
+    },
+    {
+      "id": "4",
+      "kind": "text",
+      "prompt": "Add meg a salétromsav (HNO₃) konjugált bázispárját (képlettel)!",
+      "answer": [
+        "NO₃⁻",
+        "NO3-",
+        "NO3⁻",
+        "NO₃-",
+        "nitrátion",
+        "nitrát-ion",
+        "nitrát ion"
+      ],
+      "caseSensitive": true,
+      "maxWords": 2,
+      "category": "reakciotipus",
+      "explanation": "Helyes: NO₃⁻ (nitrátion). Egy sav konjugált bázisa az a részecske, amely a savból egy proton (H⁺) leadásával keletkezik: HNO₃ → H⁺ + NO₃⁻."
+    },
+    {
+      "id": "5",
+      "kind": "text",
+      "prompt": "Mekkora a pH-ja a 0,01 mol/dm³ koncentrációjú sósavnak?",
+      "answer": [
+        "2",
+        "pH = 2",
+        "2,0",
+        "2.0"
+      ],
+      "maxWords": 3,
+      "category": "reakciotipus",
+      "explanation": "Helyes: pH = 2. A sósav erős sav, teljesen disszociál, így [H⁺] = 0,01 = 10⁻² mol/dm³; pH = −lg[H⁺] = 2."
+    },
+    {
+      "id": "6",
+      "kind": "text",
+      "prompt": "Mekkora a pH-ja a 0,001 mol/dm³ koncentrációjú nátrium-hidroxid-oldatnak (25 °C)?",
+      "answer": [
+        "11",
+        "pH = 11",
+        "11,0",
+        "11.0"
+      ],
+      "maxWords": 3,
+      "category": "reakciotipus",
+      "explanation": "Helyes: pH = 11. A NaOH erős bázis, [OH⁻] = 10⁻³ mol/dm³, pOH = 3; 25 °C-on pH + pOH = 14, ezért pH = 14 − 3 = 11."
+    },
+    {
+      "id": "7",
+      "kind": "text",
+      "prompt": "A Daniell-elemben melyik fém a negatív elektród (anód)?",
+      "answer": [
+        "cink",
+        "Zn",
+        "a cink",
+        "cinklemez",
+        "cink elektród",
+        "cinkelektród"
+      ],
+      "caseSensitive": true,
+      "maxWords": 2,
+      "category": "reakciotipus",
+      "explanation": "Helyes: a cink. A Daniell-elemben a kisebb standardpotenciálú fém (Zn: −0,76 V) oxidálódik, elektronokat ad le, ezért ez a negatív pólus (anód); a réz (+0,34 V) a pozitív pólus, ahol a Cu²⁺ redukálódik."
+    },
+    {
+      "id": "8",
+      "kind": "choice",
+      "prompt": "Melyik folyamat redoxireakció?",
+      "options": [
+        {
+          "key": "A",
+          "text": "NaOH + HCl → NaCl + H₂O"
+        },
+        {
+          "key": "B",
+          "text": "CaCO₃ → CaO + CO₂"
+        },
+        {
+          "key": "C",
+          "text": "2 Mg + O₂ → 2 MgO"
+        },
+        {
+          "key": "D",
+          "text": "AgNO₃ + NaCl → AgCl + NaNO₃"
+        }
+      ],
+      "answer": "C",
+      "category": "reakciotipus",
+      "explanation": "Helyes: C. Redoxireakcióban oxidációs számok változnak: a magnézium 0-ról +2-re nő (oxidálódik), az oxigén 0-ról −2-re csökken (redukálódik).",
+      "wrongOptions": {
+        "A": "Sav–bázis (semlegesítési) reakció: protonátadás történik, egyik elem oxidációs száma sem változik.",
+        "B": "Hőbomlás: a Ca +2, a C +4, az O −2 marad mindkét oldalon.",
+        "D": "Csapadékképződés (ioncsere): az ionok töltése nem változik."
+      }
+    }
+  ],
+  "glossary": [],
+  "suggestedMinutes": 10
+}

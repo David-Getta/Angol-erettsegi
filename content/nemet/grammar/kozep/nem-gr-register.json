@@ -1,0 +1,318 @@
+{
+  "schemaVersion": 1,
+  "id": "nem-gr-register",
+  "subject": "nemet",
+  "level": "kozep",
+  "source": "generated",
+  "topic": "nyelvtan",
+  "title": "Hangnem",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "grammar",
+  "type": "lesson",
+  "category": "register",
+  "summaryHu": "A németben a hangnem legfontosabb jele a megszólítás módja: a Sie (magázás) hivatalos helyzetben és ismeretlen felnőttel, a du (tegezés) barátokkal, családdal, kortársakkal. A levélben ehhez illő megszólítás (Sehr geehrte …, / Liebe …,) és elköszönés (Mit freundlichen Grüßen / Viele Grüße) tartozik, és a Sie vagy a du végig következetes kell legyen. A magyar tanulók gyakran keverik a két formát egy levélen belül (Sehr geehrte Frau Müller, wie geht es dir?), és a kérést túl közvetlenül fogalmazzák meg. Az írásbeli értékelésben a hangnem a szövegtípusnak megfelelő nyelvhasználat része, a hiba a feladatteljesítés és a szövegalkotás pontszámát is ronthatja.",
+  "rules": [
+    {
+      "title": "Sie vagy du?",
+      "explanation": "Sie: hivatalos levél (intézmény, cég, iskolaigazgató, szálloda, ügyfélszolgálat), ismeretlen felnőtt, tanár (felsőbb évesként), hivatalos szituáció a szóbelin. du: barát, családtag, osztálytárs, levelezőtárs, fiatal, akivel közvetlen viszonyban vagy; többes számban ihr (Liebe Anna, lieber Tom, wie geht es euch?). A választott forma a levél elejétől a végéig ugyanaz: Sie – Ihnen – Ihr; du – dir – dein.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "Könnten Sie mir bitte sagen, wann der Kurs beginnt?",
+          "hu": "Meg tudná mondani, mikor kezdődik a tanfolyam?"
+        },
+        {
+          "en": "Hast du am Wochenende Zeit?",
+          "hu": "Ráérsz hétvégén?"
+        }
+      ]
+    },
+    {
+      "title": "Megszólítás",
+      "explanation": "Hivatalos, ismeretlen címzett: Sehr geehrte Damen und Herren, Hivatalos, ismert név: Sehr geehrte Frau Müller, / Sehr geehrter Herr Müller, (titulussal: Sehr geehrter Herr Dr. Schmidt,). Félhivatalos (ismerős felnőtt, akit magázol): Liebe Frau Müller, / Lieber Herr Müller, Baráti: Liebe Anna, / Lieber Tom, / Liebe Anna, lieber Tom, / Hallo Anna, / Hi Tom, A liebe/lieber és a geehrte/geehrter végződése a címzett nemétől függ.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "Sehr geehrte Damen und Herren,",
+          "hu": "Tisztelt Hölgyeim és Uraim!",
+          "note": "Ismeretlen címzett."
+        },
+        {
+          "en": "Sehr geehrter Herr Wagner,",
+          "hu": "Tisztelt Wagner úr!",
+          "note": "Hímnem: geehrter."
+        },
+        {
+          "en": "Lieber Max,",
+          "hu": "Kedves Max!",
+          "note": "Hímnem: lieber, nőnem: liebe."
+        }
+      ]
+    },
+    {
+      "title": "Elköszönés és aláírás",
+      "explanation": "Hivatalos: Mit freundlichen Grüßen (a legbiztosabb), Freundliche Grüße, + teljes név (Anna Kovács). Félhivatalos: Viele Grüße, Herzliche Grüße. Baráti: Liebe Grüße, Viele Grüße, Bis bald!, Schreib bald!, + keresztnév; gyakran Dein (férfi író) / Deine (női író) a név előtt: Deine Anna, Dein Péter. Az elköszönés után nincs írásjel. Rövidítést (LG, VG, HDL) ne használj.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "Ich freue mich auf Ihre Antwort.\nMit freundlichen Grüßen\nPéter Kovács",
+          "hu": "Várom válaszát. Tisztelettel: Kovács Péter"
+        },
+        {
+          "en": "Schreib mir bald!\nLiebe Grüße\nDeine Lili",
+          "hu": "Írj hamar! Sok puszi: Lili"
+        }
+      ]
+    },
+    {
+      "title": "A hivatalos levél kifejezései",
+      "explanation": "Bevezetés: ich schreibe Ihnen, weil … / ich habe Ihre Anzeige in … gelesen und … / ich interessiere mich für … / ich möchte mich über … beschweren. Kérés, érdeklődés: Könnten Sie mir bitte mitteilen, ob/wann/wie viel …? Ich würde gern wissen, … Ich wäre Ihnen dankbar, wenn Sie … Befejezés: Ich freue mich auf Ihre Antwort. Für Ihre Hilfe bedanke ich mich im Voraus. Ich hoffe auf eine baldige Antwort.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "Sehr geehrte Damen und Herren,\nich habe Ihre Anzeige im Internet gelesen und interessiere mich für den Sommerkurs.",
+          "hu": "Tisztelt Hölgyeim és Uraim! Olvastam a hirdetésüket az interneten, és érdekel a nyári tanfolyam."
+        },
+        {
+          "en": "Ich wäre Ihnen dankbar, wenn Sie mir weitere Informationen schicken könnten.",
+          "hu": "Hálás lennék, ha további információt küldenének."
+        }
+      ]
+    },
+    {
+      "title": "A baráti levél kifejezései",
+      "explanation": "Bevezetés: danke für deine Mail / deinen Brief! Wie geht's? Lange nichts von dir gehört! Tartalom: Stell dir vor, … Weißt du was? Hast du Lust, …? Wie wär's mit …? Befejezés: Ich freue mich auf deine Antwort! Schreib bald! Grüß deine Eltern von mir! A beszélt nyelvi formák (geht's, wie wär's, ich hab) itt természetesek, de chatnyelvet (lol, thx), túl sok felkiáltójelet és emojit ne használj.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "Liebe Mia,\nvielen Dank für deine Mail! Stell dir vor, ich habe einen Hund bekommen!",
+          "hu": "Kedves Mia! Köszönöm az e-mailedet! Képzeld, kaptam egy kutyát!"
+        },
+        {
+          "en": "Hast du Lust, mich im Sommer zu besuchen?",
+          "hu": "Van kedved meglátogatni nyáron?"
+        }
+      ]
+    },
+    {
+      "title": "Udvariasság: kérés Konjunktiv II-vel",
+      "explanation": "Hivatalos helyzetben a kérést Konjunktiv II-vel és bitte-vel tesszük udvariassá: Könnten Sie …? Würden Sie …? Ich hätte gern … Ich würde gern … A közvetlen ich will …, a parancsoló hangnemű felszólítás bitte nélkül (Schicken Sie mir …!) és a kioktató hangnem (Sie müssen …) ismeretlen címzettnél udvariatlan. Panaszlevélben is maradj tárgyilagos: Leider war ich mit … nicht zufrieden.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "Könnten Sie mir bitte die Preise für Gruppen schicken?",
+          "hu": "Elküldené, kérem, a csoportos árakat?"
+        },
+        {
+          "en": "Leider entsprach das Zimmer nicht der Beschreibung auf Ihrer Webseite.",
+          "hu": "Sajnos a szoba nem felelt meg a honlapjukon olvasható leírásnak."
+        }
+      ]
+    },
+    {
+      "title": "Semleges, igényes stílus cikkben és véleménykifejtésben",
+      "explanation": "Cikkben, fórum- vagy olvasói hozzászólásban, véleménykifejtő írásban kerüld a túl laza szavakat (krass, mega, voll cool), és használj semleges, személytelen szerkezeteket is: man kann / man sollte …, Es ist wichtig, dass …, Viele Jugendliche sind der Meinung, dass …, Meiner Ansicht nach …, Es ist fraglich, ob … A szenvedő szerkezet és a főnévi stílus (die Nutzung sozialer Medien) is a semleges hangnem eszköze.",
+      "emeltOnly": true,
+      "examples": [
+        {
+          "en": "Es ist fraglich, ob ein Handyverbot an Schulen wirklich sinnvoll ist.",
+          "hu": "Kérdéses, hogy az iskolai mobiltilalomnak valóban van-e értelme."
+        },
+        {
+          "en": "Viele Jugendliche sind der Meinung, dass sie zu wenig Freizeit haben.",
+          "hu": "Sok fiatal úgy véli, hogy túl kevés a szabadideje."
+        }
+      ]
+    }
+  ],
+  "commonMistakes": [
+    {
+      "wrong": "Sehr geehrte Frau Müller, wie geht es dir?",
+      "right": "Sehr geehrte Frau Müller, ich schreibe Ihnen, weil …",
+      "why": "A hivatalos megszólítás után magázni kell, és a magázás a levél végéig tart. A Sie és a du keverése a leggyakoribb hangnemhiba."
+    },
+    {
+      "wrong": "Lieber Anna,",
+      "right": "Liebe Anna,",
+      "why": "A lieb- végződése a címzett nemétől függ: nőnél liebe, férfinál lieber (Lieber Tom). Ugyanígy: Sehr geehrte Frau …, Sehr geehrter Herr …"
+    },
+    {
+      "wrong": "Hallo Herr Direktor!",
+      "right": "Sehr geehrter Herr Dr. Schmidt, / Sehr geehrte Frau Schmidt,",
+      "why": "Hivatalos levélben a Hallo túl közvetlen, és a németben nem a beosztással, hanem a névvel (és a doktori címmel) szólítunk meg."
+    },
+    {
+      "wrong": "Mit freundlichen Grüßen\nDein Péter",
+      "right": "Mit freundlichen Grüßen\nPéter Kovács (hivatalos) / Viele Grüße\nDein Péter (baráti)",
+      "why": "A hivatalos elköszönéshez teljes név tartozik, a Dein/Deine csak baráti levélben áll. A két stílust nem keverjük."
+    },
+    {
+      "wrong": "Ich will wissen, wie viel der Kurs kostet.",
+      "right": "Ich würde gern wissen, wie viel der Kurs kostet. / Könnten Sie mir bitte mitteilen, wie viel der Kurs kostet?",
+      "why": "Az ich will egy hivatalos címzettnek követelőzőnek hat. Udvarias kéréshez Konjunktiv II kell (würde gern, könnten Sie)."
+    },
+    {
+      "wrong": "LG, Anna",
+      "right": "Liebe Grüße\nAnna",
+      "why": "A chatnyelvi rövidítések (LG, VG, HDL) érettségi szövegben – baráti levélben sem – elfogadhatatlanok, és az elköszönés után nincs írásjel."
+    }
+  ],
+  "examTips": [
+    "Mielőtt írni kezdesz, döntsd el a feladat alapján: ki a címzett (barát vagy intézmény)? Ebből következik a Sie/du, a megszólítás és az elköszönés – írd fel ezeket először a lap aljára, hogy végig következetes maradj.",
+    "Hivatalos levélben a kéréseket és kérdéseket Konjunktiv II-vel fogalmazd (Könnten Sie …? Ich würde gern wissen, …) – az udvarias hangnem a szövegalkotás értékelésénél számít.",
+    "Szituációs szóbeli feladatban figyeld a feladatleírást: ha a vizsgáztató hivatalos szerepben van (eladó, recepciós, tanár), magázd; ha barátot játszik, tegezd – és ne válts menet közben."
+  ],
+  "practice": [
+    {
+      "id": "1",
+      "kind": "choice",
+      "prompt": "Egy szállodának írsz, nem tudod, ki olvassa a leveled. Melyik a helyes megszólítás?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Liebe Damen und Herren,"
+        },
+        {
+          "key": "B",
+          "text": "Sehr geehrter Damen und Herren,"
+        },
+        {
+          "key": "C",
+          "text": "Hallo Hotel,"
+        },
+        {
+          "key": "D",
+          "text": "Sehr geehrte Damen und Herren,"
+        }
+      ],
+      "answer": "D",
+      "category": "register",
+      "explanation": "Helyes: Sehr geehrte Damen und Herren, – ismeretlen hivatalos címzett szokásos formális megszólítása; a geehrte többes számú végződéssel áll.",
+      "wrongOptions": {
+        "A": "A liebe baráti vagy félhivatalos hangnemű, ismeretlen hivatalos címzettnek nem illik.",
+        "B": "A geehrter egyes számú hímnemű végződés (Sehr geehrter Herr …); a Damen und Herren többes szám, ezért geehrte.",
+        "C": "Intézményt nem szólítunk meg Hallo-val; ez túl közvetlen."
+      }
+    },
+    {
+      "id": "2",
+      "kind": "choice",
+      "prompt": "Melyik elköszönés illik egy hivatalos levél végére?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Tschüss"
+        },
+        {
+          "key": "B",
+          "text": "Liebe Grüße"
+        },
+        {
+          "key": "C",
+          "text": "Mit freundlichen Grüßen"
+        },
+        {
+          "key": "D",
+          "text": "Bis bald"
+        }
+      ],
+      "answer": "C",
+      "category": "register",
+      "explanation": "Helyes: Mit freundlichen Grüßen – ez a hivatalos levél szokásos, semleges-udvarias elköszönése, utána a teljes név következik.",
+      "wrongOptions": {
+        "A": "A Tschüss szóbeli, baráti búcsú, levél végére hivatalos helyzetben nem illik.",
+        "B": "A Liebe Grüße baráti, bizalmas elköszönés.",
+        "D": "A Bis bald (hamarosan találkozunk) baráti, informális fordulat."
+      }
+    },
+    {
+      "id": "3",
+      "kind": "choice",
+      "prompt": "Melyik mondat illik leginkább egy nyelviskolának írt hivatalos levélbe?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Ich will Infos über den Kurs."
+        },
+        {
+          "key": "B",
+          "text": "Könnten Sie mir bitte Informationen über den Kurs schicken?"
+        },
+        {
+          "key": "C",
+          "text": "Schick mir Infos!"
+        },
+        {
+          "key": "D",
+          "text": "Gib mir bitte Informationen über den Kurs."
+        }
+      ],
+      "answer": "B",
+      "category": "register",
+      "explanation": "Helyes: B. Magázó forma (Sie), Konjunktiv II (könnten) és bitte – ez az udvarias hivatalos kérés.",
+      "wrongOptions": {
+        "A": "Az ich will követelőző, az Infos pedig beszélt nyelvi rövidítés – hivatalos levélben nem illik.",
+        "C": "Tegező felszólítás és rövidítés – egy intézménynek írt levélben udvariatlan.",
+        "D": "Tegező felszólító mód (gib); hivatalos címzettet magázni kell."
+      }
+    },
+    {
+      "id": "4",
+      "kind": "text",
+      "prompt": "Sehr geehrter Herr Wagner, vielen Dank für ___ E-Mail vom 3. Mai.",
+      "answer": [
+        "Ihre"
+      ],
+      "caseSensitive": true,
+      "category": "register",
+      "explanation": "Helyes: Ihre. A hivatalos megszólítás (Sehr geehrter Herr …) után magázunk; a magázó birtokos névelő Ihr-, nagybetűvel. A die E-Mail nőnemű, a für után Akkusativban: Ihre."
+    },
+    {
+      "id": "5",
+      "kind": "choice",
+      "prompt": "Barátodnak, Tomnak írsz. Melyik a helyes megszólítás?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Lieber Tom,"
+        },
+        {
+          "key": "B",
+          "text": "Liebe Tom,"
+        },
+        {
+          "key": "C",
+          "text": "Lieben Tom,"
+        },
+        {
+          "key": "D",
+          "text": "Sehr geehrter Tom,"
+        }
+      ],
+      "answer": "A",
+      "category": "register",
+      "explanation": "Helyes: Lieber Tom, – baráti megszólítás, a lieb- hímnemű címzettnél -er végződést kap.",
+      "wrongOptions": {
+        "B": "A liebe nőnemű (vagy többes számú) címzetthez illik (Liebe Anna,).",
+        "C": "A lieben végződés megszólításban nem helyes.",
+        "D": "A Sehr geehrter hivatalos megszólítás, és vezetéknévvel áll (Sehr geehrter Herr …), keresztnévvel nem."
+      }
+    },
+    {
+      "id": "6",
+      "kind": "text",
+      "prompt": "Liebe Anna, … Ich freue mich schon auf ___ Antwort! Viele Grüße, deine Lili",
+      "answer": [
+        "deine"
+      ],
+      "category": "register",
+      "explanation": "Helyes: deine. Baráti levélről van szó (Liebe Anna, deine Lili), ezért tegezünk; a die Antwort nőnemű, az auf után Akkusativban: deine Antwort."
+    }
+  ],
+  "relatedCategories": [
+    "punctuation",
+    "spelling",
+    "cohesion"
+  ]
+}

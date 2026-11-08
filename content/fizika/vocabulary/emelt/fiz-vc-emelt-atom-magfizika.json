@@ -1,0 +1,208 @@
+{
+  "schemaVersion": 1,
+  "id": "fiz-vc-emelt-atom-magfizika",
+  "subject": "fizika",
+  "revision": 1,
+  "level": "emelt",
+  "source": "generated",
+  "topic": "atom-magfizika",
+  "title": "Atom- és magfizika – fogalmak, törvények",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "vocabulary",
+  "type": "deck",
+  "cards": [
+    {
+      "term": "foton",
+      "meaning": "Az elektromágneses sugárzás energiaadagja (kvantuma); energiája a frekvenciával arányos, nyugalmi tömege nincs.",
+      "pos": "n",
+      "example": "Egy 500 nm-es zöld fény fotonjának energiája kb. 2,5 eV.",
+      "collocation": "E = h·f, p = h/λ"
+    },
+    {
+      "term": "Planck-állandó",
+      "meaning": "A kvantumfizika alapvető állandója, amely a foton energiáját a frekvenciájához köti.",
+      "pos": "n",
+      "example": "A Planck-állandó értéke h ≈ 6,63 · 10⁻³⁴ J·s.",
+      "collocation": "h = 6,63 · 10⁻³⁴ J·s"
+    },
+    {
+      "term": "fényelektromos jelenség",
+      "meaning": "Fém felületéből fény hatására elektronok lépnek ki; csak a határfrekvenciánál nagyobb frekvenciájú fény váltja ki.",
+      "pos": "n",
+      "example": "A fényelektromos jelenség magyarázatáért kapott Einstein Nobel-díjat.",
+      "collocation": "h·f = W_ki + E_mozg,max"
+    },
+    {
+      "term": "kilépési munka",
+      "meaning": "Az a legkisebb energia, amely egy elektron fémből való kiszakításához szükséges; anyagra jellemző.",
+      "pos": "n",
+      "example": "A cézium kilépési munkája kicsi (kb. 2 eV), ezért már látható fény is elektronokat vált ki belőle.",
+      "collocation": "W_ki = h·f_h"
+    },
+    {
+      "term": "határfrekvencia",
+      "meaning": "Az a legkisebb frekvencia, amelynél a fényelektromos jelenség még létrejön.",
+      "pos": "n",
+      "example": "A határfrekvencia alatt akármilyen erős fény sem vált ki elektronokat.",
+      "collocation": "f_h = W_ki/h"
+    },
+    {
+      "term": "elektronvolt",
+      "meaning": "Energiaegység: egy elektron energiaváltozása 1 V feszültségen való áthaladáskor.",
+      "pos": "n",
+      "example": "Az atomfizikában az energiát gyakran elektronvoltban adjuk meg; 1 eV = 1,6 · 10⁻¹⁹ J.",
+      "collocation": "1 eV = 1,6 · 10⁻¹⁹ J"
+    },
+    {
+      "term": "de Broglie-hullámhossz",
+      "meaning": "Az anyagi részecskékhez rendelt hullámhossz, amely a lendületükkel fordítottan arányos.",
+      "pos": "n",
+      "example": "Az elektronok de Broglie-hullámhossza miatt figyelhető meg elektronelhajlás kristályrácson.",
+      "collocation": "λ = h/(m·v)"
+    },
+    {
+      "term": "vonalas színkép",
+      "meaning": "Diszkrét hullámhosszakon jelentkező fénykibocsátás vagy -elnyelés, a gáz halmazállapotú atomok jellemzője.",
+      "pos": "n",
+      "example": "A hidrogén vonalas színképe bizonyítja, hogy az atom energiaszintjei kvantáltak."
+    },
+    {
+      "term": "Bohr-modell",
+      "meaning": "Atommodell, amelyben az elektron csak meghatározott energiájú (stacionárius) pályákon keringhet sugárzás nélkül, és pályaváltáskor bocsát ki vagy nyel el fotont.",
+      "pos": "n",
+      "example": "A Bohr-modell pontosan megadja a hidrogénatom energiaszintjeit: Eₙ = −13,6 eV/n².",
+      "collocation": "h·f = Eₘ − Eₙ"
+    },
+    {
+      "term": "gerjesztett állapot",
+      "meaning": "Az atom alapállapotánál nagyobb energiájú állapota, amelyből foton kibocsátásával tér vissza.",
+      "pos": "n",
+      "example": "A gerjesztett állapotú neonatomok fényt kibocsátva térnek vissza alapállapotba a reklámcsőben."
+    },
+    {
+      "term": "határozatlansági reláció",
+      "meaning": "Heisenberg összefüggése: egy részecske helye és lendülete egyszerre csak korlátozott pontossággal határozható meg.",
+      "pos": "n",
+      "example": "A határozatlansági reláció miatt nem beszélhetünk az elektron pontos pályájáról az atomban.",
+      "collocation": "Δx·Δp ≥ h/(4π)"
+    },
+    {
+      "term": "nukleon",
+      "meaning": "Az atommag építőköveinek (protonok és neutronok) közös neve.",
+      "pos": "n",
+      "example": "A szén-12 atommagjában 12 nukleon van: 6 proton és 6 neutron."
+    },
+    {
+      "term": "tömegszám",
+      "meaning": "Az atommagban lévő nukleonok (protonok és neutronok) száma.",
+      "pos": "n",
+      "example": "Az urán-235 tömegszáma 235.",
+      "collocation": "A = Z + N"
+    },
+    {
+      "term": "rendszám",
+      "meaning": "Az atommagban lévő protonok száma; meghatározza, melyik elemről van szó.",
+      "pos": "n",
+      "example": "Az urán rendszáma 92, tehát magjában 92 proton van.",
+      "collocation": "Z"
+    },
+    {
+      "term": "izotóp",
+      "meaning": "Azonos rendszámú, de különböző neutronszámú (tömegszámú) atommagok.",
+      "pos": "n",
+      "example": "A szén-14 a szén radioaktív izotópja, a régészeti kormeghatározás alapja."
+    },
+    {
+      "term": "erős kölcsönhatás",
+      "meaning": "A nukleonokat az atommagban összetartó, nagyon rövid hatótávolságú, a töltéstől független vonzó kölcsönhatás.",
+      "pos": "n",
+      "example": "Az erős kölcsönhatás a protonok elektromos taszításánál sokkal erősebb, de csak kb. 10⁻¹⁵ m-en belül hat."
+    },
+    {
+      "term": "tömeghiány",
+      "meaning": "A mag tömege és az alkotó szabad nukleonok tömegösszegének különbsége (a mag tömege kisebb).",
+      "pos": "n",
+      "example": "A tömeghiány c²-szerese adja az atommag kötési energiáját.",
+      "collocation": "Δm = Z·m_p + N·m_n − m_mag"
+    },
+    {
+      "term": "kötési energia",
+      "meaning": "Az az energia, amely az atommag nukleonjaira bontásához szükséges (és a mag kialakulásakor felszabadul).",
+      "pos": "n",
+      "example": "Az egy nukleonra jutó kötési energia a vas-56 környékén a legnagyobb, kb. 8,8 MeV.",
+      "collocation": "E_k = Δm·c²"
+    },
+    {
+      "term": "radioaktivitás",
+      "meaning": "Instabil atommagok spontán átalakulása sugárzás (alfa, béta, gamma) kibocsátásával.",
+      "pos": "n",
+      "example": "A radioaktivitás jelenségét Becquerel fedezte fel 1896-ban."
+    },
+    {
+      "term": "alfa-bomlás",
+      "meaning": "Radioaktív bomlás, amelyben a mag hélium-4 atommagot bocsát ki; a rendszám 2-vel, a tömegszám 4-gyel csökken.",
+      "pos": "n",
+      "example": "Az alfa-bomlás során a rádium-226-ból radon-222 keletkezik.",
+      "collocation": "ᴬ_ZX → ᴬ⁻⁴_(Z−2)Y + ⁴₂He"
+    },
+    {
+      "term": "béta-mínusz bomlás",
+      "meaning": "Radioaktív bomlás, amelyben egy neutron protonná alakul, és a mag egy elektront (és egy antineutrínót) bocsát ki; a rendszám 1-gyel nő.",
+      "pos": "n",
+      "example": "A szén-14 béta-mínusz bomlással nitrogén-14-gyé alakul.",
+      "collocation": "n → p + e⁻ + ν̄"
+    },
+    {
+      "term": "gamma-sugárzás",
+      "meaning": "A gerjesztett atommag által kibocsátott nagy energiájú elektromágneses sugárzás; a mag összetétele nem változik.",
+      "pos": "n",
+      "example": "A gamma-sugárzás áthatolóképessége nagy, ellene vastag ólom- vagy betonfal véd."
+    },
+    {
+      "term": "felezési idő",
+      "meaning": "Az az idő, amely alatt a radioaktív magok fele elbomlik; az adott izotópra jellemző állandó.",
+      "pos": "n",
+      "example": "A jód-131 felezési ideje kb. 8 nap, ezért a balesetek után néhány hónap alatt gyakorlatilag eltűnik.",
+      "collocation": "N = N₀·2^(−t/T½)"
+    },
+    {
+      "term": "aktivitás",
+      "meaning": "A radioaktív mintában időegység alatt bekövetkező bomlások száma; egysége a becquerel.",
+      "pos": "n",
+      "example": "Az aktivitás a bomlatlan magok számával arányosan, exponenciálisan csökken.",
+      "collocation": "A = λ·N (Bq)"
+    },
+    {
+      "term": "elnyelt dózis",
+      "meaning": "Az ionizáló sugárzásból az anyag egységnyi tömegében elnyelt energia; egysége a gray.",
+      "pos": "n",
+      "example": "Az elnyelt dózis 1 Gy, ha 1 kg anyag 1 J sugárzási energiát nyel el.",
+      "collocation": "D = E/m (Gy)"
+    },
+    {
+      "term": "maghasadás",
+      "meaning": "Nehéz atommag (pl. urán-235) kettéválása két közepes tömegű magra, neutronbefogás után, nagy energia és 2–3 neutron felszabadulásával.",
+      "pos": "n",
+      "example": "A maghasadás során egyetlen urán-235 mag kb. 200 MeV energiát ad."
+    },
+    {
+      "term": "láncreakció",
+      "meaning": "Olyan magreakció-sorozat, amelyben a hasadáskor keletkező neutronok újabb hasadásokat okoznak.",
+      "pos": "n",
+      "example": "Az atomreaktorban a láncreakciót szabályozórudakkal tartják kritikus állapotban."
+    },
+    {
+      "term": "moderátor",
+      "meaning": "Az atomreaktorban a gyors neutronokat lelassító anyag (pl. víz, grafit), mert az urán-235 a lassú neutronokat könnyebben fogja be.",
+      "pos": "n",
+      "example": "A paksi reaktorokban a víz egyszerre moderátor és hűtőközeg."
+    },
+    {
+      "term": "magfúzió",
+      "meaning": "Könnyű atommagok egyesülése nehezebb maggá, nagy energia felszabadulásával; csak nagyon nagy hőmérsékleten megy végbe.",
+      "pos": "n",
+      "example": "A Nap energiáját a hidrogén héliummá alakuló magfúziója termeli."
+    }
+  ]
+}

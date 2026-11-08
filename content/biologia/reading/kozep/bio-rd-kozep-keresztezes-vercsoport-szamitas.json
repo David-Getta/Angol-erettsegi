@@ -1,0 +1,99 @@
+{
+  "schemaVersion": 1,
+  "id": "bio-rd-kozep-keresztezes-vercsoport-szamitas",
+  "subject": "biologia",
+  "revision": 1,
+  "level": "kozep",
+  "source": "generated",
+  "topic": "genetika",
+  "title": "Keresztezések és vércsoportok – rövid számítás",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "reading",
+  "type": "szamitas-rovid",
+  "instructions": "Oldja meg az alábbi genetikai feladatokat! Csak a végeredményt (számot, arányt vagy százalékot) kell beírni. A 0. feladat a példa.",
+  "passage": {
+    "title": "Adatok a feladatokhoz",
+    "blocks": [
+      {
+        "text": "A borsó magjának színét egy génpár határozza meg: a sárga szín (S allél) domináns, a zöld szín (s allél) recesszív. Az emberi AB0-vércsoportrendszert három allél alakítja ki: az A és a B allél egymáshoz képest kodomináns (együtt AB-vércsoportot adnak), a 0 allél mindkettőhöz képest recesszív."
+      }
+    ]
+  },
+  "example": {
+    "id": "0",
+    "kind": "text",
+    "prompt": "Homozigóta sárga magú (SS) és zöld magú (ss) borsót keresztezünk. Az utódok hány százaléka lesz sárga magú?",
+    "answer": ["100", "100%", "mind", "mindegyik", "az összes"],
+    "maxWords": 3,
+    "category": "genetikai-szamitas",
+    "explanation": "Helyes: 100%. Az SS szülő csak S, az ss szülő csak s ivarsejtet ad, ezért minden utód Ss genotípusú; mivel a sárga (S) domináns, mindegyik sárga magú lesz."
+  },
+  "items": [
+    {
+      "id": "1",
+      "kind": "text",
+      "prompt": "Két heterozigóta sárga magú borsót (Ss × Ss) keresztezünk. Mi lesz a fenotípusok aránya az utódok között (sárga : zöld)?",
+      "answer": ["3:1", "3 sárga : 1 zöld", "3 sárga, 1 zöld", "3/4 sárga, 1/4 zöld", "75% sárga, 25% zöld", "75 : 25"],
+      "maxWords": 6,
+      "category": "genetikai-szamitas",
+      "explanation": "Helyes: 3 : 1. Az Ss × Ss keresztezés utódai: 1 SS, 2 Ss, 1 ss (genotípusarány 1 : 2 : 1). Az SS és az Ss egyaránt sárga, csak az ss zöld, ezért a fenotípusarány 3 sárga : 1 zöld."
+    },
+    {
+      "id": "2",
+      "kind": "text",
+      "prompt": "Az Ss × Ss keresztezés utódainak hány százaléka heterozigóta?",
+      "answer": ["50", "50%", "fél", "1/2", "ötven", "ötven százalék", "a fele"],
+      "maxWords": 3,
+      "category": "genetikai-szamitas",
+      "explanation": "Helyes: 50%. A keresztezési táblázatban négy egyformán valószínű kombináció van: SS, Ss, sS, ss. Ebből kettő (Ss és sS) heterozigóta, azaz 2/4 = 50%."
+    },
+    {
+      "id": "3",
+      "kind": "text",
+      "prompt": "Heterozigóta sárga (Ss) és zöld magú (ss) borsót keresztezünk. Az utódok hány százaléka lesz zöld magú?",
+      "answer": ["50", "50%", "fél", "1/2", "ötven", "ötven százalék", "a fele"],
+      "maxWords": 3,
+      "category": "genetikai-szamitas",
+      "explanation": "Helyes: 50%. Az Ss szülő fele S, fele s ivarsejtet ad, az ss szülő csak s-t. Az utódok fele Ss (sárga), fele ss (zöld), tehát 50% zöld. Ez a tesztelő keresztezés: a recesszív homozigótával való keresztezés megmutatja, hogy a domináns fenotípusú szülő heterozigóta."
+    },
+    {
+      "id": "4",
+      "kind": "text",
+      "prompt": "Egy A-vércsoportú (A0 genotípusú) és egy B-vércsoportú (B0 genotípusú) szülő gyermekei között hányféle vércsoport fordulhat elő?",
+      "answer": ["4", "négy", "4 féle", "4-féle", "négyféle", "négy féle", "mind a négy"],
+      "maxWords": 4,
+      "category": "genetikai-szamitas",
+      "explanation": "Helyes: 4 (mind a négy). Az A0 szülő A vagy 0, a B0 szülő B vagy 0 allélt ad: a lehetséges utódok AB (AB-vércsoport), A0 (A), B0 (B) és 00 (0-s). Ez az egyetlen szülőpár-típus, amelynél mind a négy vércsoport megjelenhet."
+    },
+    {
+      "id": "5",
+      "kind": "text",
+      "prompt": "Mekkora a valószínűsége, hogy az előbbi szülők (A0 × B0) következő gyermeke 0-s vércsoportú lesz?",
+      "answer": ["25", "25%", "1/4", "0,25", "negyed", "egynegyed", "huszonöt százalék"],
+      "maxWords": 3,
+      "category": "genetikai-szamitas",
+      "explanation": "Helyes: 25% (1/4). A gyermek akkor 0-s vércsoportú, ha mindkét szülőtől a 0 allélt kapja: 1/2 · 1/2 = 1/4. Minden gyermeknél újra ugyanez a valószínűség, függetlenül a korábbi testvérek vércsoportjától."
+    },
+    {
+      "id": "6",
+      "kind": "text",
+      "prompt": "Két AB-vércsoportú szülő gyermekei között melyik vércsoport NEM fordulhat elő?",
+      "answer": ["0", "0-s", "nullás", "0 vércsoport", "0-s vércsoport", "nullás vércsoport", "a 0-s", "a nullás"],
+      "maxWords": 3,
+      "category": "genetikai-szamitas",
+      "explanation": "Helyes: a 0-s vércsoport. Az AB genotípusú szülők csak A vagy B allélt adhatnak, 0 allél egyiküknek sincs. Az utódok AA (A), AB (AB) vagy BB (B) genotípusúak lehetnek 1 : 2 : 1 arányban; 00 genotípus nem jöhet létre."
+    },
+    {
+      "id": "7",
+      "kind": "text",
+      "prompt": "Egyszerűsített modell szerint a barna szemszín (B) domináns a kékkel (b) szemben. Egy heterozigóta barna szemű (Bb) és egy kék szemű (bb) szülő négy gyermeke közül várhatóan hány kék szemű?",
+      "answer": ["2", "kettő", "2 gyermek", "két gyermek", "kettő gyermek", "a fele"],
+      "maxWords": 3,
+      "category": "genetikai-szamitas",
+      "explanation": "Helyes: várhatóan 2. A Bb × bb keresztezésben az utódok fele Bb (barna), fele bb (kék), tehát négy gyermek közül átlagosan 2 kék szemű. A valóságban ettől eltérhet a szám, mert minden gyermeknél külön-külön 50% az esély."
+    }
+  ],
+  "glossary": [],
+  "suggestedMinutes": 10
+}

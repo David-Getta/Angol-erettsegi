@@ -1,0 +1,82 @@
+{
+  "schemaVersion": 1,
+  "id": "dig-sp-emelt-primszamok",
+  "subject": "digitalis-kultura",
+  "revision": 1,
+  "level": "emelt",
+  "source": "generated",
+  "topic": "algoritmizalas",
+  "title": "Programozási feladat: prímszámok",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "speaking",
+  "type": "programozasi-tetel",
+  "partNumber": 2,
+  "instructionsHu": "Programozási feladat: írjon függvényt, amely egy egész számról eldönti, hogy prímszám-e, és csak a szám négyzetgyökéig vizsgálja az osztókat! A függvény segítségével írja ki, hány prímszám van 1 és 100 között, és melyik a legnagyobb 1000-nél kisebb prím! Mutassa be a megoldást, és indokolja, miért elég a négyzetgyökig vizsgálni!",
+  "prompts": [
+    "A prímszám definíciója, a határesetek (0, 1, 2)",
+    "Az eldöntő függvény: osztók keresése √n-ig",
+    "Megszámlálás 1 és 100 között",
+    "Keresés visszafelé 999-től",
+    "A hatékonyság indoklása"
+  ],
+  "followUpQuestions": [
+    "Hogyan lehetne még gyorsítani (pl. a páros számok kihagyásával)?",
+    "Mit csinál az Eratoszthenész szitája, és mikor jobb?"
+  ],
+  "usefulPhrases": [
+    {
+      "en": "prímszám",
+      "hu": "pontosan két pozitív osztója van"
+    },
+    {
+      "en": "def prim(n): … return",
+      "hu": "logikai értékű (igaz/hamis) függvény"
+    },
+    {
+      "en": "while d * d <= n",
+      "hu": "osztók vizsgálata √n-ig, gyökvonás nélkül"
+    },
+    {
+      "en": "n % d == 0",
+      "hu": "d osztója n-nek"
+    },
+    {
+      "en": "eldöntés tétele",
+      "hu": "az első ellenpéldánál meg lehet állni"
+    },
+    {
+      "en": "időbonyolultság",
+      "hu": "hogyan nő a lépésszám a bemenet méretével (n helyett √n)"
+    }
+  ],
+  "sources": [
+    {
+      "title": "A feladat",
+      "text": "Írjon prim(n) függvényt, amely igazat ad, ha n prímszám! Az osztókat csak √n-ig vizsgálja! Ezzel határozza meg az 1 és 100 közötti prímek számát és a legnagyobb 1000 alatti prímet!"
+    }
+  ],
+  "keyPoints": [
+    "Prímszám: pontosan két pozitív osztója van (1 és önmaga); az 1 és a 0 nem prím, a 2 a legkisebb prím.",
+    "Az eldöntés tétele: ha talál osztót, azonnal hamisat ad (return False); ha a ciklus végigfut, igazat.",
+    "Elég √n-ig vizsgálni: ha n = a · b és a ≤ b, akkor a ≤ √n, tehát ha van valódi osztó, √n-ig biztosan előkerül; a d * d <= n feltétel elkerüli a gyökvonást és a lebegőpontos pontatlanságot.",
+    "A megszámlálás 1-től 100-ig: 25 prím.",
+    "A keresés 999-től lefelé halad, és az első prímnél megáll: 997.",
+    "Hatékonyság: n-ig vizsgálva kb. n lépés, √n-ig kb. √n (1 000 000-nál 1000 lépés a millió helyett)."
+  ],
+  "speakingSeconds": 600,
+  "prepSeconds": 900,
+  "sampleAnswer": {
+    "turns": [
+      {
+        "speaker": "candidate",
+        "text": "A feladat egy eldöntő függvény és annak kétféle felhasználása: megszámlálás és keresés.\n\ndef prim(n):\n    if n < 2:\n        return False\n    d = 2\n    while d * d <= n:\n        if n % d == 0:\n            return False\n        d += 1\n    return True\n\ndb = 0\nfor x in range(1, 101):\n    if prim(x):\n        db += 1\nprint(\"Prímek száma 1 és 100 között:\", db)\n\nx = 999\nwhile not prim(x):\n    x -= 1\nprint(\"A legnagyobb 1000 alatti prím:\", x)\n\nA prímszámnak pontosan két pozitív osztója van, az egy és önmaga, ezért az 1 és a 0 nem prím: ezt a függvény elején kezelem, ha n kisebb kettőnél, hamisat adok vissza. Ezután a d osztójelöltet 2-től indítom, és addig növelem, amíg d négyzete legfeljebb n. Ha n osztható d-vel, vagyis a maradék nulla, rögtön hamisat adok vissza – ez az eldöntés tétele, az első osztónál nem kell tovább keresni. Ha a ciklus végigfut, nincs valódi osztó, a szám prím. Azért elég a négyzetgyökig menni, mert ha n felbontható a szor b alakban, és a a kisebbik tényező, akkor a nem lehet nagyobb gyök n-nél, tehát ha van osztó, a gyökig biztosan megtaláljuk. A d * d <= n feltétel ráadásul elkerüli a gyökvonást és a lebegőpontos kerekítési hibát. Ez nagy számoknál óriási különbség: egymilliónál ezer lépés egymillió helyett. A főprogram először megszámlálja a prímeket 1 és 100 között, ez 25. Utána 999-ről indulva lefelé keresek, amíg prímet nem találok; a ciklus biztosan megáll, mert van prím az intervallumban. Az eredmény 997."
+      }
+    ],
+    "notes": [
+      "A megoldás működik és hatékony; a határeseteket (0, 1, 2) a függvény helyesen kezeli, a kimenetet is bemutatja (25 prím, 997).",
+      "A magyarázat a matematikai indoklást (n = a · b, a ≤ √n) is megadja, és a d * d <= n feltétel előnyét is megemlíti – emelt szinten a „bemutatás, szaknyelv” szempont ezt várja.",
+      "Továbbgondolásra jó válasz: a 2 után elég a páratlan osztókat vizsgálni, sok szám prímségéhez pedig az Eratoszthenész szitája hatékonyabb."
+    ]
+  }
+}

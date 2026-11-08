@@ -1,0 +1,307 @@
+{
+  "schemaVersion": 1,
+  "id": "nem-gr-plural-gender",
+  "subject": "nemet",
+  "level": "kozep",
+  "source": "generated",
+  "topic": "nyelvtan",
+  "title": "Főnevek neme és többes száma",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "grammar",
+  "type": "lesson",
+  "category": "plural-gender",
+  "summaryHu": "Minden német főnévnek nyelvtani neme van (hím-, nő- vagy semleges nem), és többes számát többféleképpen képezheti (-e, -er, -(e)n, -s, végződés nélkül, gyakran Umlauttal). A magyarban nincs nyelvtani nem, és a többes szám mindig -k, ezért a nemet és a többes számot szavanként kell megtanulni – bár sok végződés segít. A magyar számnév után egyes szám áll („három könyv”), a németben többes (drei Bücher). A névelő-, melléknév- és névmáshibák nagy része a rossz nemből indul, ezért ez minden nyelvhelyességi feladatban és az írásban is számít.",
+  "rules": [
+    {
+      "title": "A nemet a szóval együtt kell tanulni",
+      "explanation": "A főnév nemét mindig névelővel és többes számmal együtt tanuld: der Tisch, die Tische; die Lampe, die Lampen; das Buch, die Bücher. A nyelvtani nem nem mindig egyezik a természetes nemmel: das Mädchen (a lány) és das Kind semleges, mert a -chen végződés és a szó maga ezt határozza meg; a névmás is a nyelvtani nemet követi (das Mädchen → es). Az összetett szó neme az utolsó tagé: das Haus + die Tür → die Haustür, der Fußball + das Spiel → das Fußballspiel.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "Das Mädchen dort ist meine Cousine.",
+          "hu": "Az a lány ott az unokatestvérem.",
+          "note": "-chen → mindig das."
+        },
+        {
+          "en": "Die Hausaufgabe war schwer.",
+          "hu": "A házi feladat nehéz volt.",
+          "note": "das Haus + die Aufgabe → die Hausaufgabe."
+        }
+      ]
+    },
+    {
+      "title": "Nemet jelző végződések",
+      "explanation": "Nőnemű (die): -ung (die Wohnung), -heit/-keit (die Freiheit, die Möglichkeit), -schaft (die Freundschaft), -ion (die Information), -tät (die Universität), -ik (die Musik), -ei (die Bäckerei), -ur (die Natur), és a legtöbb -e végű szó (die Reise, die Schule – kivétel pl. der Junge, der Name, der Käse, das Ende, das Auge). Hímnemű (der): -ling (der Schmetterling), -ismus (der Tourismus), -or (der Motor), a legtöbb -er végű személy- és eszköznév (der Lehrer, der Computer), a napok, hónapok, évszakok (der Montag, der Mai, der Winter). Semleges (das): -chen, -lein (das Brötchen), -um (das Museum), -ment (das Dokument), a főnévvé vált főnévi igenév (das Essen, das Schwimmen).",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "Die Zeitung liegt auf dem Tisch.",
+          "hu": "Az újság az asztalon van.",
+          "note": "-ung → die."
+        },
+        {
+          "en": "Im Sommer ist das Museum länger geöffnet.",
+          "hu": "Nyáron a múzeum tovább tart nyitva.",
+          "note": "der Sommer, das Museum."
+        }
+      ]
+    },
+    {
+      "title": "Többesszám-típusok",
+      "explanation": "-e, gyakran Umlauttal: der Tag – die Tage, der Stuhl – die Stühle, die Stadt – die Städte. -er, mindig Umlauttal, ha lehet: das Kind – die Kinder, das Buch – die Bücher, das Haus – die Häuser. -(e)n (a nőnemű főnevek többsége): die Frau – die Frauen, die Schule – die Schulen, die Zeitung – die Zeitungen. -s (idegen szavak, magánhangzóra végződők): das Handy – die Handys, das Auto – die Autos, das Kino – die Kinos. Végződés nélkül (az -er, -el, -en végű hím- és semleges nemű szavak), néha Umlauttal: der Lehrer – die Lehrer, das Zimmer – die Zimmer, der Vater – die Väter; a nőneműek közül csak a die Mutter – die Mütter és a die Tochter – die Töchter. Többes számban a névelő mindig die.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "In unserer Stadt gibt es drei Kinos und zwei Museen.",
+          "hu": "A városunkban három mozi és két múzeum van.",
+          "note": "das Museum – die Museen."
+        },
+        {
+          "en": "Meine beiden Brüder wohnen in Wien.",
+          "hu": "Mindkét bátyám Bécsben lakik.",
+          "note": "der Bruder – die Brüder."
+        }
+      ]
+    },
+    {
+      "title": "Dativ többes szám: -n",
+      "explanation": "Többes számú Dativban a főnév -n végződést kap, ha a többes szám alakja még nem -n vagy -s végű: mit den Kindern, mit meinen Freunden, in den Bergen. Nem kap további -n-t: mit den Frauen (már -n), mit den Autos (-s).",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "Am Wochenende spiele ich mit meinen Freunden Fußball.",
+          "hu": "Hétvégén a barátaimmal focizom."
+        },
+        {
+          "en": "Die Lehrerin spricht mit den Eltern.",
+          "hu": "A tanárnő a szülőkkel beszél.",
+          "note": "die Eltern → den Eltern (már -n)."
+        }
+      ]
+    },
+    {
+      "title": "Gyenge ragozású hímnemű főnevek (n-Deklination)",
+      "explanation": "Néhány hímnemű főnév az egyes szám Nominativ kivételével minden esetben -(e)n végződést kap: der Junge – den/dem/des Jungen; ide tartozik a der Mensch, der Student, der Kollege, der Nachbar, der Kunde, der Tourist, der Polizist, der Präsident, der Name (Genitivben des Namens) és a der Herr (den/dem Herrn). Felismerés: sok közülük -e végű hímnemű személynév vagy -ent, -ant, -ist végű.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "Kennst du den neuen Studenten aus Spanien?",
+          "hu": "Ismered az új spanyol diákot?"
+        },
+        {
+          "en": "Ich habe dem Nachbarn beim Umzug geholfen.",
+          "hu": "Segítettem a szomszédnak a költözésben."
+        }
+      ]
+    },
+    {
+      "title": "Egyes és többes szám használata",
+      "explanation": "Számnév után a németben többes szám áll (drei Bücher, zwei Jahre – magyarul: három könyv, két év). Csak többes számban használatos: die Eltern, die Leute, die Geschwister, die Ferien, die Möbel. Gyűjtőnévként egyes számú: das Obst, das Gemüse, das Geld. A die Haare (haj) többes számú, ezért az ige is: Meine Haare sind lang (de egyes számban is lehet: Mein Haar ist lang). Mértékegységek után egyes szám: zwei Kilo Äpfel, drei Glas Wasser, 5 Euro.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "Meine Eltern sind beide Lehrer.",
+          "hu": "A szüleim mindketten tanárok."
+        },
+        {
+          "en": "Wir haben drei Wochen Ferien.",
+          "hu": "Három hét szünetünk van."
+        },
+        {
+          "en": "Ich kaufe zwei Kilo Tomaten.",
+          "hu": "Két kiló paradicsomot veszek."
+        }
+      ]
+    },
+    {
+      "title": "Nemtől függő jelentés, kétféle többes szám",
+      "explanation": "Néhány szó jelentése a nemtől függ: der See (tó) – die See (tenger), der Leiter (vezető) – die Leiter (létra), das Band (szalag) – die Band (zenekar), der Teil (rész) – das Teil (darab, alkatrész). Más szavaknak két, eltérő jelentésű többes számuk van: die Bank – die Bänke (padok) / die Banken (bankok), das Wort – die Wörter (egyes szavak) / die Worte (összefüggő szöveg, mondás).",
+      "emeltOnly": true,
+      "examples": [
+        {
+          "en": "Im Sommer fahren wir an den See, nicht an die See.",
+          "hu": "Nyáron a tóhoz megyünk, nem a tengerhez."
+        },
+        {
+          "en": "Im Park stehen viele Bänke.",
+          "hu": "A parkban sok pad van."
+        }
+      ]
+    }
+  ],
+  "commonMistakes": [
+    {
+      "wrong": "Ich habe drei Buch gekauft.",
+      "right": "Ich habe drei Bücher gekauft.",
+      "why": "A magyarban számnév után egyes szám áll („három könyv”), a németben többes: drei Bücher."
+    },
+    {
+      "wrong": "Die Mädchen ist sehr nett. (egy lányról)",
+      "right": "Das Mädchen ist sehr nett.",
+      "why": "A -chen kicsinyítő képzős főnevek mindig semlegesek, a természetes nemtől függetlenül."
+    },
+    {
+      "wrong": "Meine Eltern ist sehr streng.",
+      "right": "Meine Eltern sind sehr streng.",
+      "why": "A die Eltern csak többes számban létezik, ezért az ige is többes számú: sind."
+    },
+    {
+      "wrong": "Ich habe lange mit dem Student gesprochen.",
+      "right": "Ich habe lange mit dem Studenten gesprochen.",
+      "why": "A der Student gyenge ragozású (n-Deklination): az egyes számú Nominativ kivételével minden esetben -en végződést kap."
+    },
+    {
+      "wrong": "Am Wochenende spiele ich mit meinen Freunde Tennis.",
+      "right": "Am Wochenende spiele ich mit meinen Freunden Tennis.",
+      "why": "Többes számú Dativban a főnév is -n végződést kap: die Freunde → mit den/meinen Freunden."
+    },
+    {
+      "wrong": "Meine Haare ist lang.",
+      "right": "Meine Haare sind lang.",
+      "why": "A die Haare többes szám, így az ige is többes számú. A magyar „a hajam” egyes szám, ezért keverik."
+    }
+  ],
+  "examTips": [
+    "Szótanuláskor mindig három dolgot írj le: névelő, szó, többes szám (der Stuhl, -¨e). A szótár is így adja meg – szokj hozzá ehhez a jelöléshez.",
+    "Ha nem tudod egy szó nemét, nézd meg a végződését (-ung, -heit, -keit → die; -chen → das; -er személy → der) – ez a feladatokban sokszor elég a helyes névelőhöz.",
+    "Nyelvhelyességi feladatban a többes számú Dativ -n-je (den Kindern, mit Freunden) és a gyenge főnevek -en-je (den Studenten, dem Nachbarn) gyakori kérdés – külön figyelj rájuk.",
+    "Írásban az összetett szavak nemét az utolsó tag adja: ha bizonytalan vagy, bontsd szét a szót (die Geburtstagsparty ← die Party)."
+  ],
+  "practice": [
+    {
+      "id": "1",
+      "kind": "choice",
+      "prompt": "Wie viele ___ hast du? – Zwei: einen Bruder und eine Schwester.",
+      "options": [
+        {
+          "key": "A",
+          "text": "Geschwisters"
+        },
+        {
+          "key": "B",
+          "text": "Geschwistern"
+        },
+        {
+          "key": "C",
+          "text": "Geschwister"
+        },
+        {
+          "key": "D",
+          "text": "Geschwiste"
+        }
+      ],
+      "answer": "C",
+      "category": "plural-gender",
+      "explanation": "Helyes: Geschwister. A die Geschwister (testvérek) többes számú főnév, a haben tárgyaként Akkusativban áll, amely többes számban azonos a Nominativval: Geschwister.",
+      "wrongOptions": {
+        "A": "A -s végződés itt nem létezik; a Geschwister többes száma végződés nélküli.",
+        "B": "A Geschwistern többes számú Dativ (mit meinen Geschwistern); a haben után Akkusativ kell.",
+        "D": "Nem létező alak; a szó Geschwister, -er végződéssel."
+      }
+    },
+    {
+      "id": "2",
+      "kind": "text",
+      "prompt": "In unserer Stadt gibt es drei große ___ (Kino).",
+      "cue": "Kino",
+      "answer": [
+        "Kinos"
+      ],
+      "caseSensitive": true,
+      "category": "plural-gender",
+      "explanation": "Helyes: Kinos. Számnév után többes szám áll; a magánhangzóra végződő das Kino többes száma -s: die Kinos."
+    },
+    {
+      "id": "3",
+      "kind": "choice",
+      "prompt": "Ich habe gestern lange mit ___ gesprochen.",
+      "options": [
+        {
+          "key": "A",
+          "text": "unserem neuen Nachbar"
+        },
+        {
+          "key": "B",
+          "text": "unser neuer Nachbar"
+        },
+        {
+          "key": "C",
+          "text": "unseren neuen Nachbar"
+        },
+        {
+          "key": "D",
+          "text": "unserem neuen Nachbarn"
+        }
+      ],
+      "answer": "D",
+      "category": "plural-gender",
+      "explanation": "Helyes: unserem neuen Nachbarn. A mit Dativot vonz (unserem neuen), a der Nachbar pedig gyenge ragozású főnév, ezért Dativban -n végződést kap: dem Nachbarn.",
+      "wrongOptions": {
+        "A": "A névelő és a melléknév helyes, de a der Nachbar n-Deklinationos főnév: Dativban Nachbarn kell.",
+        "B": "Ez Nominativ alak; a mit után Dativ áll.",
+        "C": "Az unseren neuen többes számú Dativ lenne – akkor a főnév is többes szám (Nachbarn); egyes számú Dativban unserem kell."
+      }
+    },
+    {
+      "id": "4",
+      "kind": "text",
+      "prompt": "Meine beiden ___ (Großmutter) wohnen auf dem Land.",
+      "cue": "Großmutter",
+      "answer": [
+        "Großmütter"
+      ],
+      "caseSensitive": true,
+      "category": "plural-gender",
+      "explanation": "Helyes: Großmütter. A beiden (mindkét) és a wohnen többes számot kíván; az összetett szó többes száma az utolsó tagé: die Mutter – die Mütter (végződés nélkül, Umlauttal) → die Großmütter."
+    },
+    {
+      "id": "5",
+      "kind": "choice",
+      "prompt": "___ Zeitung von heute liegt auf dem Küchentisch.",
+      "options": [
+        {
+          "key": "A",
+          "text": "Der"
+        },
+        {
+          "key": "B",
+          "text": "Das"
+        },
+        {
+          "key": "C",
+          "text": "Die"
+        },
+        {
+          "key": "D",
+          "text": "Den"
+        }
+      ],
+      "answer": "C",
+      "category": "plural-gender",
+      "explanation": "Helyes: Die. Az -ung végű főnevek mind nőneműek: die Zeitung; a mondat alanyaként Nominativban áll.",
+      "wrongOptions": {
+        "A": "A der hímnemű Nominativ; az -ung végű főnevek nőneműek.",
+        "B": "A das semleges; a Zeitung nőnemű.",
+        "D": "A den hímnemű Akkusativ (vagy többes számú Dativ); itt nőnemű alany áll."
+      }
+    },
+    {
+      "id": "6",
+      "kind": "text",
+      "prompt": "Der Lehrer gibt ___ (die Kinder) die Hefte zurück.",
+      "cue": "die Kinder",
+      "answer": [
+        "den Kindern"
+      ],
+      "caseSensitive": true,
+      "category": "plural-gender",
+      "explanation": "Helyes: den Kindern. Kinek adja vissza? → Dativ. Többes számú Dativban a névelő den, és a főnév -n végződést kap: die Kinder → den Kindern."
+    }
+  ],
+  "relatedCategories": [
+    "article-declension",
+    "adjective-declension",
+    "case"
+  ]
+}

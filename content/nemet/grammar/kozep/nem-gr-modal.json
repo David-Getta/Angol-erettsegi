@@ -1,0 +1,303 @@
+{
+  "schemaVersion": 1,
+  "id": "nem-gr-modal",
+  "subject": "nemet",
+  "level": "kozep",
+  "source": "generated",
+  "topic": "nyelvtan",
+  "title": "Módbeli segédigék",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "grammar",
+  "type": "lesson",
+  "category": "modal",
+  "summaryHu": "A módbeli segédigék (können, müssen, dürfen, sollen, wollen, mögen, möchte) képességet, kötelességet, engedélyt, szándékot fejeznek ki, és mindig zu nélküli főnévi igenévvel állnak, amely a mondat végére kerül. Ragozásuk rendhagyó: egyes számban tőhangváltósak, és az ich/er alak rag nélküli (ich kann, er kann). A magyar tanulók leggyakoribb hibái: er kannt, ich muss zu lernen, valamint a nicht müssen (nem kell) és a nicht dürfen (nem szabad, tilos) keverése. Az Igealakok és a lyukas szöveges feladatokban, illetve írásban (javaslat, kérés, tanács) gyakran kerülnek elő.",
+  "rules": [
+    {
+      "title": "Jelentések",
+      "explanation": "können: tud, képes rá; lehetséges (Ich kann schwimmen. Kann ich helfen?). müssen: kell – szükségszerűség, belső vagy külső kényszer (Ich muss lernen). dürfen: szabad, engedélye van (Darf ich hier parken?). sollen: kell – valaki más elvárása, utasítás, tanács (Der Arzt sagt, ich soll mehr trinken. Soll ich das Fenster öffnen? = Kinyissam az ablakot?). wollen: akar (Ich will Pilot werden). mögen: szeret, kedvel – főleg főnévvel (Ich mag Pizza). möchte: szeretne – udvarias kívánság (Ich möchte einen Kaffee).",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "Kannst du mir bei den Hausaufgaben helfen?",
+          "hu": "Tudsz segíteni a házi feladatban?"
+        },
+        {
+          "en": "Mein Arzt sagt, ich soll weniger Zucker essen.",
+          "hu": "Az orvosom azt mondja, kevesebb cukrot egyek.",
+          "note": "sollen = valaki más elvárása."
+        },
+        {
+          "en": "Soll ich dich vom Bahnhof abholen?",
+          "hu": "Elmenjek érted az állomásra?"
+        }
+      ]
+    },
+    {
+      "title": "Ragozás jelen időben",
+      "explanation": "Egyes számban a tő megváltozik (kivéve sollen), az ich és az er/sie/es alak azonos és rag nélküli: können: kann, kannst, kann, können, könnt, können; müssen: muss, musst, muss, müssen, müsst, müssen; dürfen: darf, darfst, darf, dürfen, dürft, dürfen; sollen: soll, sollst, soll, sollen, sollt, sollen; wollen: will, willst, will, wollen, wollt, wollen; mögen: mag, magst, mag, mögen, mögt, mögen. A möchte (a mögen Konjunktiv II alakja): möchte, möchtest, möchte, möchten, möchtet, möchten.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "Mein Bruder kann sehr gut kochen.",
+          "hu": "A bátyám nagyon jól tud főzni.",
+          "note": "er kann – rag nélkül."
+        },
+        {
+          "en": "Willst du mitkommen?",
+          "hu": "Akarsz jönni?"
+        },
+        {
+          "en": "Wir möchten zwei Karten für Samstag.",
+          "hu": "Két jegyet szeretnénk szombatra."
+        }
+      ]
+    },
+    {
+      "title": "Szórend: zu nélküli főnévi igenév a mondat végén",
+      "explanation": "A ragozott módbeli segédige főmondatban a második helyen áll, a főnévi igenév – zu nélkül – a mondat végén. Mellékmondatban a módbeli segédige kerül a legvégére, a főnévi igenév elé. Ha a jelentés egyértelmű, a főnévi igenév el is maradhat: Ich muss nach Hause (gehen). Ich kann gut Deutsch (sprechen).",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "Ich muss heute lange arbeiten.",
+          "hu": "Ma sokáig kell dolgoznom."
+        },
+        {
+          "en": "Ich komme nicht, weil ich für den Test lernen muss.",
+          "hu": "Nem jövök, mert tanulnom kell a dolgozatra.",
+          "note": "Mellékmondat: muss a végén."
+        },
+        {
+          "en": "Ich muss jetzt nach Hause.",
+          "hu": "Most haza kell mennem.",
+          "note": "A gehen elhagyható."
+        }
+      ]
+    },
+    {
+      "title": "Tagadás: nicht müssen ≠ nicht dürfen",
+      "explanation": "nicht müssen = nem kell, nem szükséges (Du musst nicht kommen = nem kell eljönnöd, de eljöhetsz). nicht dürfen = nem szabad, tilos (Du darfst hier nicht rauchen). A nem kell jelentést a brauchen + nicht/kein + zu + főnévi igenév is kifejezi: Du brauchst nicht zu kommen.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "Morgen ist Feiertag, wir müssen nicht in die Schule.",
+          "hu": "Holnap ünnepnap, nem kell iskolába mennünk."
+        },
+        {
+          "en": "Im Museum darf man nicht fotografieren.",
+          "hu": "A múzeumban tilos fényképezni."
+        },
+        {
+          "en": "Du brauchst keine Angst zu haben.",
+          "hu": "Nem kell félned."
+        }
+      ]
+    },
+    {
+      "title": "Múlt idő: Präteritum Umlaut nélkül",
+      "explanation": "A módbeli segédigék múlt ideje beszédben is többnyire Präteritum: konnte, musste, durfte, sollte, wollte, mochte – Umlaut nélkül, a gyenge igék -te végződésével (ich konnte, du konntest, er konnte, wir konnten). A möchte-nek nincs saját múlt ideje: múltban wollte áll (Ich wollte ins Kino gehen = moziba akartam / szerettem volna menni).",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "Gestern konnte ich nicht kommen, ich musste arbeiten.",
+          "hu": "Tegnap nem tudtam eljönni, dolgoznom kellett."
+        },
+        {
+          "en": "Als Kind wollte ich Tierärztin werden.",
+          "hu": "Gyerekként állatorvos akartam lenni."
+        }
+      ]
+    },
+    {
+      "title": "Perfekt két főnévi igenévvel és szubjektív jelentés",
+      "explanation": "A módbeli segédige Perfektje (ritkább, mint a Präteritum) haben + két főnévi igenév: Ich habe nicht kommen können (nem Partizip II!). Szubjektív, feltételezést kifejező jelentésben: Er muss krank sein (biztosan beteg), Er soll sehr reich sein (állítólag nagyon gazdag), Das dürfte stimmen (valószínűleg igaz), Sie könnte recht haben (lehet, hogy igaza van).",
+      "emeltOnly": true,
+      "examples": [
+        {
+          "en": "Ich habe gestern nicht kommen können.",
+          "hu": "Tegnap nem tudtam eljönni."
+        },
+        {
+          "en": "Das Licht ist an – sie muss schon zu Hause sein.",
+          "hu": "Ég a villany – biztosan otthon van már."
+        },
+        {
+          "en": "Der neue Film soll sehr spannend sein.",
+          "hu": "Állítólag nagyon izgalmas az új film."
+        }
+      ]
+    }
+  ],
+  "commonMistakes": [
+    {
+      "wrong": "Er kannt sehr gut schwimmen.",
+      "right": "Er kann sehr gut schwimmen.",
+      "why": "A módbeli segédigék egyes szám 3. személye rag nélküli, és azonos az ich-alakkal: ich kann, er kann (ugyanígy muss, darf, will, soll, mag)."
+    },
+    {
+      "wrong": "Ich muss heute zu lernen.",
+      "right": "Ich muss heute lernen.",
+      "why": "A módbeli segédigék után zu nélküli főnévi igenév áll. A zu + főnévi igenév más igék után kell (Ich versuche, zu lernen; Ich habe keine Lust, zu lernen)."
+    },
+    {
+      "wrong": "Du musst hier nicht rauchen. (= tilos)",
+      "right": "Du darfst hier nicht rauchen.",
+      "why": "A tiltást nicht dürfen fejezi ki. A nicht müssen jelentése „nem kell” – vagyis nem tiltás, hanem a kötelezettség hiánya."
+    },
+    {
+      "wrong": "Gestern möchtete ich ins Kino gehen.",
+      "right": "Gestern wollte ich ins Kino gehen.",
+      "why": "A möchte-nek nincs múlt ideje; múltbeli szándékot a wollte fejez ki."
+    },
+    {
+      "wrong": "Ich kann nicht kommen, weil ich muss lernen.",
+      "right": "Ich kann nicht kommen, weil ich lernen muss.",
+      "why": "Mellékmondatban a ragozott módbeli segédige a legvégére kerül, a főnévi igenév mögé."
+    },
+    {
+      "wrong": "Ich will einen Kaffee, bitte. (pincérnek)",
+      "right": "Ich möchte einen Kaffee, bitte. / Ich hätte gern einen Kaffee.",
+      "why": "A will nyelvtanilag helyes, de kéréskor udvariatlan, követelőző. Rendeléskor, kéréskor a möchte vagy az Ich hätte gern … az elvárt udvarias forma."
+    }
+  ],
+  "examTips": [
+    "Igealakok feladatban, ha a zárójelben módbeli segédige van, figyelj a rag nélküli ich/er alakra (kann, muss, darf, will) és arra, hogy múltban nincs Umlaut (konnte, musste, durfte).",
+    "Írásban a kéréshez, javaslathoz és tanácshoz módbeli segédigéket használsz: Könnten Sie mir bitte …? Wir könnten … Du solltest … – ezek a szövegtípushoz illő, udvarias megfogalmazást is jelentik, ami a hangnem szempontnál számít.",
+    "Szituációs szóbeli feladatban a Darf ich …? (engedélykérés), a Kann ich …? / Könnte ich …? (lehetőség) és a Soll ich …? (felajánlás) a leghasznosabb kérdésformák.",
+    "Ha nem kell valamit csinálni, mondd nicht müssen-nel vagy nicht brauchen zu-val; ha tilos, nicht dürfen-nel – a kettő felcserélése jelentéshibának számít."
+  ],
+  "practice": [
+    {
+      "id": "1",
+      "kind": "choice",
+      "prompt": "Im Museum ___ man nicht fotografieren. Das ist verboten.",
+      "options": [
+        {
+          "key": "A",
+          "text": "darf"
+        },
+        {
+          "key": "B",
+          "text": "muss"
+        },
+        {
+          "key": "C",
+          "text": "möchte"
+        },
+        {
+          "key": "D",
+          "text": "will"
+        }
+      ],
+      "answer": "A",
+      "category": "modal",
+      "explanation": "Helyes: darf. A tiltást (Das ist verboten) a nicht dürfen fejezi ki: man darf nicht = nem szabad, tilos.",
+      "wrongOptions": {
+        "B": "A nicht müssen jelentése „nem kell”, ami nem tiltás – ellentmond a Das ist verboten mondatnak.",
+        "C": "A möchte kívánságot fejez ki (szeretne), a tiltáshoz nincs köze.",
+        "D": "A will akaratot fejez ki; a mondat szabályról, tiltásról szól."
+      }
+    },
+    {
+      "id": "2",
+      "kind": "text",
+      "prompt": "___ (können) du mir bitte kurz helfen?",
+      "cue": "können",
+      "answer": [
+        "Kannst",
+        "Könntest"
+      ],
+      "category": "modal",
+      "explanation": "Helyes: Kannst (vagy udvariasabban Könntest). A du-alak: du kannst; eldöntendő kérdésben a ragozott ige áll az első helyen. A Konjunktiv II alak (Könntest du …?) még udvariasabb kérés."
+    },
+    {
+      "id": "3",
+      "kind": "choice",
+      "prompt": "Morgen ist Sonntag, du ___ also nicht früh aufstehen – schlaf ruhig aus!",
+      "options": [
+        {
+          "key": "A",
+          "text": "musst"
+        },
+        {
+          "key": "B",
+          "text": "darfst"
+        },
+        {
+          "key": "C",
+          "text": "kannst"
+        },
+        {
+          "key": "D",
+          "text": "willst"
+        }
+      ],
+      "answer": "A",
+      "category": "modal",
+      "explanation": "Helyes: musst. A vasárnap miatt nem kell korán kelni (schlaf ruhig aus = nyugodtan aludj sokáig); a „nem kell” jelentést a nicht müssen fejezi ki.",
+      "wrongOptions": {
+        "B": "A nicht dürfen tiltást jelent (nem szabad korán kelned) – ez ellentmond a schlaf ruhig aus (nyugodtan) bátorításnak.",
+        "C": "A nicht können azt jelenti, hogy nem vagy rá képes – a vasárnapból ez nem következik.",
+        "D": "A nicht wollen a másik ember akaratáról szólna; a mondat (also = tehát) a vasárnapból következő szükségtelenséget fejezi ki."
+      }
+    },
+    {
+      "id": "4",
+      "kind": "text",
+      "prompt": "Als Kind ___ (wollen) ich unbedingt Pilot werden.",
+      "cue": "wollen",
+      "answer": [
+        "wollte"
+      ],
+      "category": "modal",
+      "explanation": "Helyes: wollte. Múltbeli szándékról van szó (gyerekként), ezért Präteritum áll: wollen → wollte; az ich-alak rag nélküli (-te végződéssel)."
+    },
+    {
+      "id": "5",
+      "kind": "choice",
+      "prompt": "A kávézóban udvariasan rendelsz: „Ich ___ einen Cappuccino, bitte.”",
+      "options": [
+        {
+          "key": "A",
+          "text": "mag"
+        },
+        {
+          "key": "B",
+          "text": "möchte"
+        },
+        {
+          "key": "C",
+          "text": "will"
+        },
+        {
+          "key": "D",
+          "text": "muss"
+        }
+      ],
+      "answer": "B",
+      "category": "modal",
+      "explanation": "Helyes: möchte. Rendeléskor, udvarias kéréskor a möchte (szeretnék) a szokásos forma.",
+      "wrongOptions": {
+        "A": "A mögen általános kedvelést jelent (Ich mag Cappuccino = szeretem a cappuccinót), rendelésre nem használjuk.",
+        "C": "Az Ich will … nyelvtanilag helyes, de követelőző, udvariatlan – rendeléskor nem illik.",
+        "D": "A muss kényszert fejez ki (kell), ami rendeléskor értelmetlen."
+      }
+    },
+    {
+      "id": "6",
+      "kind": "text",
+      "prompt": "Gestern ___ (müssen) wir eine halbe Stunde auf den Bus warten.",
+      "cue": "müssen",
+      "answer": [
+        "mussten"
+      ],
+      "category": "modal",
+      "explanation": "Helyes: mussten. Múlt idő (gestern) → Präteritum; a módbeli segédigék Präteritumban elveszítik az Umlautot: müssen → musste, a wir-alak mussten."
+    }
+  ],
+  "relatedCategories": [
+    "verb-conjugation",
+    "word-order",
+    "konjunktiv"
+  ]
+}

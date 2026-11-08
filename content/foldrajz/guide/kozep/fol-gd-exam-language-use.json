@@ -1,0 +1,125 @@
+{
+  "schemaVersion": 1,
+  "id": "fol-gd-exam-language-use",
+  "subject": "foldrajz",
+  "revision": 1,
+  "level": "kozep",
+  "source": "generated",
+  "topic": "utmutato",
+  "title": "Rövid feladatok (II. feladatlap)",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "guide",
+  "type": "exam",
+  "target": "language-use",
+  "summaryHu": "A rövid feladatok a II. feladatlap zárt és rövid nyílt végű feladatai: feleletválasztás, igaz–hamis, párosítás, fogalom-meghatározás, ábra- és szövegértelmezés, rövid számítás. Középszinten a II. feladatlap 100 perces és 70 pontos, itt atlasz, számológép, vonalzó és körző használható; az app a rövid feladatokat külön gyakoroltatja. A siker kulcsa a pontos kérdésértelmezés és a mértékegységgel megadott, ellenőrzött eredmény.",
+  "steps": [
+    {
+      "title": "Olvasd el az egész feladatot",
+      "explanation": "A feladat bevezető szövege, ábrája vagy táblázata minden kérdéshez kell. Először nézd meg, mit ábrázol, milyen mértékegységben, mi a jelmagyarázat.",
+      "tips": [
+        "Klímadiagramon: vonal = hőmérséklet, oszlop = csapadék.",
+        "Táblázatnál nézd meg az oszlopfejlécet és a mértékegységet."
+      ]
+    },
+    {
+      "title": "Azonosítsd a kérdés típusát",
+      "explanation": "Feleletválasztásnál egy helyes válasz van; igaz–hamisnál egyetlen hibás elem elég ahhoz, hogy az állítás hamis legyen; párosításnál figyelj a felesleges opciókra; fogalomnál pontos szakszót várnak.",
+      "tips": [
+        "Húzd alá a tagadást (NEM, hamis).",
+        "Igaz–hamisnál keresd a kicserélt szót (melegszik ↔ hűl, talajvíz ↔ karsztvíz)."
+      ]
+    },
+    {
+      "title": "Számításnál: képlet, behelyettesítés, mértékegység",
+      "explanation": "A rövid számításnál csak az eredményt írod be, de azt a kért mértékegységgel és kerekítéssel. Ellenőrizd a nagyságrendet.",
+      "tips": [
+        "Méretaránynál 1 km = 100 000 cm.",
+        "Időzónánál keletre előbbre jár az idő."
+      ]
+    },
+    {
+      "title": "Kizárásos módszer",
+      "explanation": "Ha bizonytalan vagy, zárd ki a biztosan rossz válaszokat – a megmaradók közül az indokolható legyen a válaszod. Ne hagyj üresen kérdést.",
+      "tips": [
+        "Az „mindig”, „soha”, „kizárólag” szavak gyakran hamis állítást jeleznek."
+      ]
+    },
+    {
+      "title": "Utólagos ellenőrzés",
+      "explanation": "A végén nézd át, minden kérdésre válaszoltál-e, és a számításoknál ott van-e a mértékegység.",
+      "tips": []
+    }
+  ],
+  "phrases": [
+    {
+      "group": "Műveleti igék",
+      "en": "Nevezze meg!",
+      "hu": "egy szó, név vagy fogalom elég"
+    },
+    {
+      "group": "Műveleti igék",
+      "en": "Számítsa ki!",
+      "hu": "eredmény mértékegységgel, a kért kerekítéssel"
+    },
+    {
+      "group": "Műveleti igék",
+      "en": "Döntse el, igaz vagy hamis!",
+      "hu": "egyetlen hibás elem hamissá teszi az állítást"
+    },
+    {
+      "group": "Képletek",
+      "en": "népsűrűség = népesség : terület",
+      "hu": "fő/km²"
+    },
+    {
+      "group": "Képletek",
+      "en": "természetes szaporodás = születési − halálozási arányszám",
+      "hu": "‰, előjellel"
+    },
+    {
+      "group": "Képletek",
+      "en": "valós távolság = térképi távolság × méretarányszám",
+      "hu": "cm-ben számolj, majd válts km-re"
+    },
+    {
+      "group": "Képletek",
+      "en": "1° hosszúság = 4 perc, 15° = 1 óra",
+      "hu": "helyi idő, időzóna"
+    },
+    {
+      "group": "Ábraolvasás",
+      "en": "százalékpont ↔ százalék",
+      "hu": "két arány különbsége százalékpont"
+    }
+  ],
+  "mistakes": [
+    {
+      "wrong": "A „18,5” eredményt mértékegység nélkül írom be egy hőmérsékleti kérdésnél, ahol a feladat kéri a mértékegységet.",
+      "right": "18,5 °C.",
+      "why": "Ha a feladat mértékegységet kér, nélküle a válasz hiányos."
+    },
+    {
+      "wrong": "Igaz–hamis: „A tengerszint emelkedését kizárólag a jég olvadása okozza.” → igaz.",
+      "right": "Hamis, mert a hőtágulás is okozza.",
+      "why": "A „kizárólag” szó miatt egyetlen további ok is hamissá teszi az állítást."
+    },
+    {
+      "wrong": "A klímadiagram oszlopát hőmérsékletként olvasom le.",
+      "right": "Az oszlop a csapadék, a vonal a hőmérséklet.",
+      "why": "A két adatsor más tengelyhez tartozik."
+    }
+  ],
+  "checklist": [
+    "Minden kérdésre válaszoltam, nem maradt üres hely.",
+    "A számításos válaszoknál ott van a mértékegység és a kért kerekítés.",
+    "A tagadó kérdéseknél a kakukktojást választottam.",
+    "A párosításnál nem használtam kétszer ugyanazt a betűt.",
+    "Az igaz–hamis állításoknál minden elemet ellenőriztem."
+  ],
+  "timing": "Középszinten a II. feladatlap 100 percéből az app becslése szerint kb. 70 perc jut a rövid feladatokra. Feladatonként 6–10 percet szánj; ha egy kérdésen 2 percnél tovább gondolkodsz, jelöld meg, és lépj tovább – a végén térj vissza.",
+  "levelNotes": {
+    "kozep": "Középszinten a II. feladatlapon atlasz, számológép, vonalzó és körző használható. Az ábrák egyszerűbbek, a számítások egy-két lépésesek (méretarány, időzóna, népsűrűség, hőingás).",
+    "emelt": "Emelt szinten az egységes feladatsorban számológép és vonalzó használható, atlasz nem. A feladatok több lépésesek (delelési magasság, helyi idő, demográfiai mutatók), és több forrást kell egyszerre értelmezni."
+  }
+}

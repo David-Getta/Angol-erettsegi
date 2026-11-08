@@ -1,0 +1,196 @@
+{
+  "schemaVersion": 1,
+  "id": "fol-lu-emelt-nepesedesi-adatok",
+  "subject": "foldrajz",
+  "revision": 1,
+  "level": "emelt",
+  "source": "generated",
+  "topic": "nepesseg-telepules",
+  "title": "Négy ország népesedési adatai – táblázatelemzés",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "language-use",
+  "type": "abraelemzes",
+  "instructions": "Az alábbi táblázat négy ország (A–D) népesedési adatait tartalmazza. Válaszoljon a kérdésekre a táblázat alapján! Számításnál írja le a mértékegységet is. A 0. a megoldott példa.",
+  "passage": {
+    "title": "Négy ország népesedési adatai (táblázat szöveges leírása)",
+    "blocks": [
+      {
+        "text": "A táblázat oszlopai: születési arányszám (‰), halálozási arányszám (‰), csecsemőhalandóság (‰), a 0–14 évesek aránya (%), a 65 év felettiek aránya (%)."
+      },
+      {
+        "text": "A ország: 38 ‰ | 9 ‰ | 60 ‰ | 44% | 3%"
+      },
+      {
+        "text": "B ország: 18 ‰ | 6 ‰ | 20 ‰ | 26% | 7%"
+      },
+      {
+        "text": "C ország: 10 ‰ | 10 ‰ | 4 ‰ | 16% | 19%"
+      },
+      {
+        "text": "D ország: 7 ‰ | 13 ‰ | 2 ‰ | 12% | 29%"
+      }
+    ]
+  },
+  "example": {
+    "id": "0",
+    "kind": "text",
+    "prompt": "Mekkora az A ország természetes szaporodása?",
+    "answer": [
+      "29 ‰",
+      "29",
+      "2,9%"
+    ],
+    "category": "abra-diagram",
+    "explanation": "29 ‰: természetes szaporodás = születési arányszám − halálozási arányszám = 38 ‰ − 9 ‰ = 29 ‰ (= 2,9%)."
+  },
+  "items": [
+    {
+      "id": "1",
+      "kind": "text",
+      "prompt": "Mekkora a D ország természetes szaporodása (fogyása)?",
+      "answer": [
+        "−6 ‰",
+        "-6 ‰",
+        "−6",
+        "-6",
+        "6 ‰ fogyás"
+      ],
+      "category": "abra-diagram",
+      "explanation": "−6 ‰: 7 ‰ − 13 ‰ = −6 ‰, vagyis évente ezer lakosra 6 fős természetes fogyás jut."
+    },
+    {
+      "id": "2",
+      "kind": "choice",
+      "prompt": "Melyik ország korfája piramis alakú (széles alap, keskeny csúcs)?",
+      "options": [
+        {
+          "key": "A",
+          "text": "A"
+        },
+        {
+          "key": "B",
+          "text": "B"
+        },
+        {
+          "key": "C",
+          "text": "C"
+        },
+        {
+          "key": "D",
+          "text": "D"
+        }
+      ],
+      "answer": "A",
+      "category": "abra-diagram",
+      "explanation": "Helyes: A. Itt a legnagyobb a 0–14 évesek aránya (44%) és a legkisebb a 65 év felettieké (3%): sok születés, kevés idős – ez piramis alakú korfát ad.",
+      "wrongOptions": {
+        "B": "B-ben a gyermekek aránya (26%) már csökken, a korfa alja szűkül: inkább harang alakú, átmeneti típus.",
+        "C": "C-ben kevés a gyermek (16%), sok az idős (19%): harang-, illetve urna alakú korfa.",
+        "D": "D-ben a gyermekek aránya a legkisebb (12%), az időseké a legnagyobb (29%): fordított, urna alakú korfa."
+      }
+    },
+    {
+      "id": "3",
+      "kind": "choice",
+      "prompt": "Melyik ország jár a demográfiai átmenet harmadik szakaszában (a születésszám már csökken, a halálozás alacsony, a népesség még nő)?",
+      "options": [
+        {
+          "key": "A",
+          "text": "A"
+        },
+        {
+          "key": "B",
+          "text": "B"
+        },
+        {
+          "key": "C",
+          "text": "C"
+        },
+        {
+          "key": "D",
+          "text": "D"
+        }
+      ],
+      "answer": "B",
+      "category": "tarsadalmi-folyamat",
+      "explanation": "Helyes: B. A halálozás alacsony (6 ‰), a születésszám már mérséklődött (18 ‰), de a természetes szaporodás még pozitív (12 ‰) – ez a csökkenő születésszámú, harmadik szakasz.",
+      "wrongOptions": {
+        "A": "A-ban a születésszám még nagyon magas (38 ‰), a halálozás már alacsony: ez a népességrobbanás, a második szakasz.",
+        "C": "C-ben a születés és a halálozás is alacsony és egyenlő (10 ‰): ez a negyedik, stagnáló szakasz.",
+        "D": "D-ben a halálozás meghaladja a születést: ez a fogyó népességű (ötödik) szakasz."
+      }
+    },
+    {
+      "id": "4",
+      "kind": "text",
+      "prompt": "Hány év alatt duplázódna meg az A ország népessége a jelenlegi ütemmel? Használja a 70-es szabályt (megkettőződési idő ≈ 70 : a szaporodás %-ban), és kerekítsen egész évre!",
+      "answer": [
+        "24 év",
+        "24",
+        "kb. 24 év"
+      ],
+      "category": "szamitas-foldrajzi",
+      "explanation": "Kb. 24 év: a 29 ‰ = 2,9%, így 70 : 2,9 ≈ 24,1, azaz kb. 24 év alatt kétszereződne meg a népesség (vándorlás nélkül)."
+    },
+    {
+      "id": "5",
+      "kind": "tf",
+      "prompt": "A C ország népessége a természetes népmozgalom alapján stagnál.",
+      "answer": "T",
+      "category": "abra-diagram",
+      "explanation": "Igaz: C-ben a születési és a halálozási arányszám is 10 ‰, a különbség 0 ‰ – a népesség (vándorlás nélkül) nem nő és nem fogy."
+    },
+    {
+      "id": "6",
+      "kind": "choice",
+      "prompt": "Mi a D ország elöregedésének legfőbb oka?",
+      "options": [
+        {
+          "key": "A",
+          "text": "a tartósan alacsony születésszám és a hosszú várható élettartam"
+        },
+        {
+          "key": "B",
+          "text": "a magas csecsemőhalandóság"
+        },
+        {
+          "key": "C",
+          "text": "a fiatalok nagyarányú bevándorlása"
+        },
+        {
+          "key": "D",
+          "text": "a magas halálozási arányszám"
+        }
+      ],
+      "answer": "A",
+      "category": "tarsadalmi-folyamat",
+      "explanation": "Helyes: A. Ha kevés gyermek születik és az emberek tovább élnek, az idősek aránya nő (D-ben 29%). A magas, 13 ‰-es halálozási arányszám nem oka, hanem következménye az elöregedésnek: sok idős ember él az országban.",
+      "wrongOptions": {
+        "B": "D csecsemőhalandósága 2 ‰, a négy ország közül a legkisebb – ez nem okozhat elöregedést.",
+        "C": "A fiatalok bevándorlása éppen fiatalítaná a népességet.",
+        "D": "A magas halálozási arányszám itt az elöregedés következménye (sok az idős), nem az oka."
+      }
+    },
+    {
+      "id": "7",
+      "kind": "tf",
+      "prompt": "A B ország csecsemőhalandósága ötször akkora, mint a C országé.",
+      "answer": "T",
+      "category": "abra-diagram",
+      "explanation": "Igaz: B-ben 20 ‰, C-ben 4 ‰ a csecsemőhalandóság; 20 : 4 = 5."
+    },
+    {
+      "id": "8",
+      "kind": "text",
+      "prompt": "Hány százalék a C ország népességében a 15–64 évesek (aktív korúak) aránya?",
+      "answer": [
+        "65%",
+        "65"
+      ],
+      "category": "szamitas-foldrajzi",
+      "explanation": "65%: a három korcsoport együtt 100%, így 100% − 16% (0–14 évesek) − 19% (65 év felettiek) = 65%."
+    }
+  ],
+  "suggestedMinutes": 10
+}

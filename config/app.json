@@ -1,0 +1,34 @@
+{
+  "improving": {
+    "lastN": 10,
+    "minPct": 80
+  },
+  "lowStock": {
+    "threshold": 2,
+    "suggestCount": 6
+  },
+  "estimate": {
+    "recentAttempts": 6,
+    "decay": 0.75
+  },
+  "targeted": {
+    "itemsPerRound": 12,
+    "minBankItems": 8
+  },
+  "dailyPlan": {
+    "minTasks": 3,
+    "maxTasks": 5
+  },
+  "textAnswers": {
+    "acceptNearMissIn": []
+  },
+  "review": {
+    "minAgeHours": 20,
+    "itemsPerRound": 15,
+    "planMinDue": 3
+  },
+  "backup": {
+    "everyDays": 3,
+    "keep": 10
+  }
+}

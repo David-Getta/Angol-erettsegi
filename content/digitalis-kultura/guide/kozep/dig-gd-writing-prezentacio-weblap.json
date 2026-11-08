@@ -1,0 +1,148 @@
+{
+  "schemaVersion": 1,
+  "id": "dig-gd-writing-prezentacio-weblap",
+  "subject": "digitalis-kultura",
+  "revision": 1,
+  "level": "kozep",
+  "source": "generated",
+  "topic": "utmutato",
+  "title": "Prezentáció, grafika, weblap",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "guide",
+  "type": "writing",
+  "target": "prezentacio-weblap",
+  "summaryHu": "A vizuális feladatban a leírás és a minta szerint bemutatót, grafikát vagy weblapot kell készítened a kiosztott szövegekből és képekből. Középszinten ez a 2. feladat (20 pont), emelt szinten az 1. feladat lehet weblap vagy prezentáció (30 pont). A javítók az elemek meglétét és pontosságát (diák, elrendezés, formátum, animáció, hivatkozás, HTML-szerkezet, CSS) és a szakszerű módszert (diaminta, külső stíluslap) értékelik.",
+  "steps": [
+    {
+      "title": "Bemutató: diaméret és diaminta",
+      "explanation": "Először a diaméretet állítsd be (pl. 16:9), majd a diamintán a háttérét, a címek és a szövegek formátumát, a minden dián megjelenő képet (logót). Így a diák egységesek, és nem kell diánként formázni.",
+      "tips": [
+        "Nézet > Diaminta, a legfelső (fő) dia.",
+        "Pontos színhez az RGB-értékeket add meg."
+      ]
+    },
+    {
+      "title": "Bemutató: diák, animáció, áttűnés, hivatkozás",
+      "explanation": "A diákat a megfelelő elrendezéssel hozd létre, a helyőrzőkbe tedd a szöveget és a képet. Az animáció a dián belüli objektumra, az áttűnés a diaváltásra vonatkozik. A hivatkozást a kért szövegre vagy képre tedd.",
+      "tips": [
+        "Felsorolás egyenként: Effektus beállításai > Bekezdésenként.",
+        "Minden diára: Alkalmazás mindegyikre."
+      ]
+    },
+    {
+      "title": "Weblap: HTML-váz és szerkezet",
+      "explanation": "Kezdd a vázzal: <!DOCTYPE html>, <html lang=\"hu\">, <head> (meta charset, title, link a stíluslapra), <body>. A tartalmat szemantikus elemekkel tagold (header, nav, section, footer), címsorokkal, bekezdésekkel, listákkal, táblázattal.",
+      "tips": [
+        "Minden képnek legyen alt szövege.",
+        "A belső hivatkozáshoz az id és a href=\"#id\" párosa kell."
+      ]
+    },
+    {
+      "title": "Weblap: CSS",
+      "explanation": "A formázást a külső stíluslapra írd: elemszelektorok (body, h1), osztályok (.kiemelt), azonosítók (#fejlec). A kért értékeket (szín, betűtípus, méret, igazítás, szegély) pontosan add meg.",
+      "tips": [
+        "A háttérszín background-color, a szövegszín color.",
+        "A tartalom középre igazítása: max-width és margin: 0 auto."
+      ]
+    },
+    {
+      "title": "Ellenőrzés",
+      "explanation": "A bemutatót nézd végig diavetítésben (animáció, hivatkozás, diaszám), a weblapot nyisd meg böngészőben (képek, hivatkozások, ékezetek).",
+      "tips": [
+        "A relatív útvonalak (kepek/…) a mappaszerkezethez igazodjanak.",
+        "Mentsd a kért néven: robotika.pptx, kiallitas.html, stilus.css."
+      ]
+    }
+  ],
+  "phrases": [
+    {
+      "group": "Bemutató",
+      "en": "Nézet > Diaminta",
+      "hu": "a közös elemek helye"
+    },
+    {
+      "group": "Bemutató",
+      "en": "Animációk > Megjelenés, Bekezdésenként",
+      "hu": "felsorolás elemei egyenként"
+    },
+    {
+      "group": "Bemutató",
+      "en": "Áttűnések > Alkalmazás mindegyikre",
+      "hu": "egységes diaváltás"
+    },
+    {
+      "group": "Bemutató",
+      "en": "Beszúrás > Élőfej és élőláb > Diaszám",
+      "hu": "diaszám, címdián kikapcsolható"
+    },
+    {
+      "group": "HTML",
+      "en": "<link rel=\"stylesheet\" href=\"stilus.css\">",
+      "hu": "külső stíluslap csatolása"
+    },
+    {
+      "group": "HTML",
+      "en": "<img src=\"kepek/foto1.jpg\" alt=\"…\">",
+      "hu": "kép relatív útvonallal, helyettesítő szöveggel"
+    },
+    {
+      "group": "HTML",
+      "en": "<a href=\"https://…\" target=\"_blank\">",
+      "hu": "külső hivatkozás új lapon"
+    },
+    {
+      "group": "CSS",
+      "en": "color, background-color, font-family, text-align",
+      "hu": "szöveg- és háttérformázás"
+    },
+    {
+      "group": "CSS",
+      "en": "border-collapse: collapse; padding: 6px;",
+      "hu": "táblázat szegélye és cellamargója"
+    },
+    {
+      "group": "CSS",
+      "en": "display: flex; list-style: none;",
+      "hu": "vízszintes menü"
+    }
+  ],
+  "mistakes": [
+    {
+      "wrong": "A logót minden diára külön beszúrom.",
+      "right": "A diamintára teszem.",
+      "why": "A minden diára kért elemet a mintán kell beállítani – ez a módszerpont."
+    },
+    {
+      "wrong": "A HTML-elemeket a style attribútummal formázom.",
+      "right": "A formázás a stilus.css-ben van.",
+      "why": "Ha a feladat külső stíluslapot kér, az inline formázás nem ér pontot."
+    },
+    {
+      "wrong": "A kép útvonala C:\\Users\\…",
+      "right": "Relatív útvonal: kepek/foto1.jpg",
+      "why": "Az abszolút helyi útvonal a látogatónál (és a javítónál) nem működik."
+    }
+  ],
+  "checklist": [
+    "A diaminta beállításai (háttér, címformátum, logó) elkészültek?",
+    "Minden dia a kért elrendezéssel és tartalommal kész?",
+    "Az animáció és az áttűnés a leírás szerinti?",
+    "A weblap váza érvényes (doctype, lang, charset, title)?",
+    "A stíluslap csatolva van, és minden CSS-érték a kért?",
+    "A hivatkozások és a képek működnek?"
+  ],
+  "timing": "Középszinten kb. 30 perc (20 pont): 5 perc diaméret és diaminta, 15 perc diák, 5 perc animáció és áttűnés, 5 perc ellenőrzés. Emelt szinten egy weblap kb. 50 perc (30 pont): 15 perc HTML-szerkezet, 25 perc tartalom és CSS, 10 perc ellenőrzés böngészőben.",
+  "example": {
+    "title": "Minta: CSS-szabályok",
+    "text": "body { font-family: Arial, sans-serif; background-color: #f4f1ea; max-width: 960px; margin: 0 auto; }\nh1 { text-align: center; color: #7a2e1d; }\n.menu { display: flex; gap: 20px; list-style: none; }",
+    "notes": [
+      "Minden kért érték egy-egy pont: a betűtípus, a háttérszín, a szélesség és a középre igazítás külön.",
+      "Az osztályszelektor (.menu) ponttal kezdődik; a HTML-ben class=\"menu\"."
+    ]
+  },
+  "levelNotes": {
+    "kozep": "Középszinten jellemzően 3–5 diás bemutató vagy egyszerű grafika: diaminta, elrendezések, kép, táblázat, animáció, áttűnés, hivatkozás, diaszám.",
+    "emelt": "Emelt szinten az 1. feladat gyakran weblap: érvényes HTML5, szemantikus elemek, belső és külső hivatkozások, képek figcaption-nel, táblázat, külső CSS osztályokkal, dobozmodellel és vízszintes menüvel."
+  }
+}

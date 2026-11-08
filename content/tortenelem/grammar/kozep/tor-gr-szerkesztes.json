@@ -1,0 +1,252 @@
+{
+  "schemaVersion": 1,
+  "id": "tor-gr-szerkesztes",
+  "subject": "tortenelem",
+  "revision": 1,
+  "level": "kozep",
+  "source": "generated",
+  "topic": "nyelvtan",
+  "title": "Megszerkesztettség, nyelvhelyesség",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "grammar",
+  "type": "lesson",
+  "category": "szerkesztes",
+  "summaryHu": "Az esszék kommunikáció-szempontja (K) a szaknyelv mellett a szöveg megszerkesztettségét (K2) és a nyelvhelyességet (K3) is értékeli: közép rövid esszében 4, hosszúban 6 pont, emelten 4, 6 és 6 pont. Jól szerkesztett az az esszé, amelynek bekezdései egy-egy gondolati egységet alkotnak, a mondatok logikusan épülnek egymásra, és a dátumok, nevek, intézmények helyesen vannak leírva.",
+  "rules": [
+    {
+      "title": "Szerkezet: bevezetés – kifejtés – lezárás",
+      "explanation": "A bevezetés elhelyezi a témát térben és időben, és megnevezi a problémát (1–2 mondat). A kifejtés szempontonként vagy időrendben tagolt bekezdésekből áll. A lezárás összegez vagy értékel (következmény, jelentőség). A rövid esszé 3–4, a hosszú 4–6 bekezdés.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "Bevezetés: „A reformkor (1830–1848) Magyarországon a polgári átalakulásért folytatott küzdelem időszaka volt.”",
+          "hu": "tér, idő és probléma egy mondatban"
+        },
+        {
+          "en": "Lezárás: „A reformok 1848-ban, az áprilisi törvényekkel valósultak meg.”",
+          "hu": "következmény, a gondolatmenet lezárása"
+        }
+      ]
+    },
+    {
+      "title": "Bekezdés = egy gondolati egység",
+      "explanation": "Minden bekezdés egy szempontot vagy egy szakaszt dolgoz fel. Az első mondat jelzi, miről szól a bekezdés (témamondat), a többi kifejti: forrás, következtetés, ok, következmény.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "„Az I. forrás szerint… Ebből arra következtetek… Ennek oka…”",
+          "hu": "egy bekezdésen belül forrás – következtetés – magyarázat"
+        }
+      ]
+    },
+    {
+      "title": "Logikai kapcsolóelemek",
+      "explanation": "A mondatok közötti viszonyt kötőszavak mutatják. Idő: ezt követően, eközben, ugyanekkor. Ok-okozat: ezért, mivel, ennek következtében. Ellentét: azonban, ezzel szemben, ennek ellenére. Kiegészítés: emellett, továbbá. Összegzés: összességében, tehát.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "„Széchenyi a gazdasági reformokat tartotta elsődlegesnek; Kossuth ezzel szemben a politikai átalakítást is sürgette.”",
+          "hu": "ellentét jelzése"
+        },
+        {
+          "en": "„A blokád nem érte el célját, ezért 1949 májusában feloldották.”",
+          "hu": "ok-okozat jelzése"
+        }
+      ]
+    },
+    {
+      "title": "Helyesírás a történelemben",
+      "explanation": "Dátum: 1848. március 15-én (pont az évszám után, a hónap kisbetűs, a toldalék kötőjellel kapcsolódik). Századok: a 16. században vagy a XVI. században. Uralkodók: II. András, IV. Béla. Intézmények, államok: Osztrák–Magyar Monarchia, Magyar Királyság, Országos Honvédelmi Bizottmány (nagy kezdőbetű); események: trianoni békeszerződés, mohácsi csata, áprilisi törvények (kisbetű).",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "1956. október 23-án",
+          "hu": "helyes dátumírás toldalékkal"
+        },
+        {
+          "en": "a mohácsi csata, a trianoni békeszerződés",
+          "hu": "az eseménynevekben a helynévből képzett melléknév kisbetűs"
+        }
+      ]
+    },
+    {
+      "title": "Mondatszerkesztés",
+      "explanation": "Egy mondatba egy-két állítás kerüljön; a túl hosszú, többszörösen összetett mondatban elveszik a logika. A névmások (ő, ez, az) legyenek egyértelműek: ha két szereplőről írsz, ismételd meg a nevet.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "„Mátyás legyőzte Frigyest, majd ő elfoglalta Bécset.”",
+          "hu": "kétértelmű: ki foglalta el? Jobb: „…majd Mátyás 1485-ben elfoglalta Bécset.”"
+        }
+      ]
+    }
+  ],
+  "commonMistakes": [
+    {
+      "wrong": "1848 Március 15.-én kitört a forradalom.",
+      "right": "1848. március 15-én kitört a forradalom.",
+      "why": "Az évszám után pont kell, a hónap neve kisbetűs, a nap sorszáma után toldalék előtt nem kell pont."
+    },
+    {
+      "wrong": "Egyetlen, bekezdések nélküli szövegtömb az egész esszé.",
+      "right": "Bevezetés, szempontonként tagolt kifejtő bekezdések és lezárás.",
+      "why": "A bekezdések hiánya a K2 elemben pontvesztés, és a javító is nehezebben találja meg az F- és E-elemeket."
+    },
+    {
+      "wrong": "osztrák-magyar monarchia",
+      "right": "Osztrák–Magyar Monarchia",
+      "why": "Államnév: nagy kezdőbetűk, a két tag között nagykötőjel (–)."
+    },
+    {
+      "wrong": "Széchenyi és Kossuth vitatkozott, ő azonban gyorsabb változást akart.",
+      "right": "Széchenyi és Kossuth vitatkozott; Kossuth azonban gyorsabb változást akart.",
+      "why": "Két szereplő esetén a névmás kétértelmű – ismételd meg a nevet."
+    }
+  ],
+  "examTips": [
+    "Hagyj az esszék végén 3–5 percet az átolvasásra: dátumok, nevek, mondathatárok, bekezdések.",
+    "A piszkozatban készíts vázlatot: bekezdésenként egy kulcsszó, a hozzá tartozó forrás és az ok vagy következmény – így a szerkezet magától kialakul."
+  ],
+  "practice": [
+    {
+      "id": "1",
+      "kind": "choice",
+      "prompt": "Melyik a helyes írásmód?",
+      "options": [
+        {
+          "key": "A",
+          "text": "1848 március 15.-én"
+        },
+        {
+          "key": "B",
+          "text": "1848. március 15-én"
+        },
+        {
+          "key": "C",
+          "text": "1848. Március 15-én"
+        },
+        {
+          "key": "D",
+          "text": "1848, március 15én"
+        }
+      ],
+      "answer": "B",
+      "category": "szerkesztes",
+      "explanation": "Helyes: B. Az évszám után pont, a hónap kisbetűs, a napot a toldalék kötőjellel követi.",
+      "wrongOptions": {
+        "A": "Az évszám után hiányzik a pont, a nap után felesleges.",
+        "C": "A hónap neve kisbetűs.",
+        "D": "Vessző helyett pont kell, és a toldalékot kötőjellel kell kapcsolni a számhoz."
+      }
+    },
+    {
+      "id": "2",
+      "kind": "choice",
+      "prompt": "Melyik kötőszó fejez ki ellentétet?",
+      "options": [
+        {
+          "key": "A",
+          "text": "továbbá"
+        },
+        {
+          "key": "B",
+          "text": "ezért"
+        },
+        {
+          "key": "C",
+          "text": "ezt követően"
+        },
+        {
+          "key": "D",
+          "text": "azonban"
+        }
+      ],
+      "answer": "D",
+      "category": "szerkesztes",
+      "explanation": "Helyes: azonban. Ellentétes viszonyt jelez, pl. „A reform növelte a vállalatok önállóságát, a tervgazdaság alapjait azonban nem érintette.”",
+      "wrongOptions": {
+        "A": "A „továbbá” kiegészítést jelez.",
+        "B": "Az „ezért” következményt jelez.",
+        "C": "Az „ezt követően” időbeli sorrendet jelez."
+      }
+    },
+    {
+      "id": "3",
+      "kind": "choice",
+      "prompt": "Melyik a legjobb bevezető mondat egy reformkori esszéhez?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Ebben az esszében a reformkorról fogok írni, mert ez a feladat."
+        },
+        {
+          "key": "B",
+          "text": "A reformkor (1830–1848) Magyarországon a polgári átalakulásért folytatott küzdelem időszaka volt."
+        },
+        {
+          "key": "C",
+          "text": "Széchenyi nagyon érdekes ember volt."
+        },
+        {
+          "key": "D",
+          "text": "A reformkor után jött a forradalom, aztán a kiegyezés, aztán az első világháború."
+        }
+      ],
+      "answer": "B",
+      "category": "szerkesztes",
+      "explanation": "Helyes: B. Elhelyezi a témát időben és térben, és megnevezi a korszak lényegét.",
+      "wrongOptions": {
+        "A": "Tartalom nélküli, a feladatot ismétli.",
+        "C": "Értékítélet, nem helyezi el a témát.",
+        "D": "Felsorolás, amely túllép a téma időkeretén."
+      }
+    },
+    {
+      "id": "4",
+      "kind": "choice",
+      "prompt": "Melyik a helyes írásmód?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Osztrák-magyar Monarchia"
+        },
+        {
+          "key": "B",
+          "text": "osztrák-magyar monarchia"
+        },
+        {
+          "key": "C",
+          "text": "Osztrák–Magyar Monarchia"
+        },
+        {
+          "key": "D",
+          "text": "Osztrák Magyar monarchia"
+        }
+      ],
+      "answer": "C",
+      "category": "szerkesztes",
+      "explanation": "Helyes: C. Az államnév minden tagja nagy kezdőbetűs, a két tag között nagykötőjel áll.",
+      "wrongOptions": {
+        "A": "A „Magyar” is nagy kezdőbetűs, és kötőjel helyett nagykötőjel kell.",
+        "B": "Az államnév nem írható kisbetűvel.",
+        "D": "Hiányzik az írásjel a két tag között, és a „Monarchia” is nagybetűs."
+      }
+    },
+    {
+      "id": "5",
+      "kind": "text",
+      "prompt": "Írd le arab számmal (vagy római számmal) a századot: „a tizenhatodik században” → „a ___ században”",
+      "answer": [
+        "16.",
+        "XVI."
+      ],
+      "category": "szerkesztes",
+      "explanation": "Helyes: 16. (vagy XVI.). A sorszámnév után pontot kell tenni: a 16. században / a XVI. században."
+    }
+  ],
+  "relatedCategories": [
+    "szaknyelv",
+    "feladatmegertes"
+  ]
+}

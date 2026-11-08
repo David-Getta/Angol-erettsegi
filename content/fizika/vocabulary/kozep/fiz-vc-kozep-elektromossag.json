@@ -1,0 +1,202 @@
+{
+  "schemaVersion": 1,
+  "id": "fiz-vc-kozep-elektromossag",
+  "subject": "fizika",
+  "revision": 1,
+  "level": "kozep",
+  "source": "generated",
+  "topic": "elektromossag",
+  "title": "Elektromosság és mágnesesség – fogalmak",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "vocabulary",
+  "type": "deck",
+  "cards": [
+    {
+      "term": "elektromos töltés",
+      "meaning": "A testek elektromos állapotát jellemző mennyiség; pozitív és negatív lehet, megmarad, egysége a coulomb.",
+      "pos": "n",
+      "example": "Az elektron töltése −1,6 · 10⁻¹⁹ C, ez az elemi töltés.",
+      "collocation": "Q (C)"
+    },
+    {
+      "term": "töltésmegmaradás",
+      "meaning": "Zárt rendszerben az elektromos töltések algebrai összege állandó; töltés csak szétválasztható, nem keletkezik.",
+      "pos": "n",
+      "example": "Dörzsöléskor a töltésmegmaradás miatt a két test ellentétes, egyenlő nagyságú töltésre tesz szert."
+    },
+    {
+      "term": "Coulomb-törvény",
+      "meaning": "Két pontszerű töltés között ható erő arányos a töltések szorzatával és fordítottan arányos a távolságuk négyzetével.",
+      "pos": "n",
+      "example": "A Coulomb-törvény szerint kétszeres távolságnál negyedakkora az erő.",
+      "collocation": "F = k·Q₁·Q₂/r²"
+    },
+    {
+      "term": "elektromos mező",
+      "meaning": "A töltések körül kialakuló tér, amely a benne lévő töltésekre erőt fejt ki.",
+      "pos": "n",
+      "example": "Az elektromos mező erővonalai a pozitív töltésből indulnak és a negatívban végződnek."
+    },
+    {
+      "term": "elektromos térerősség",
+      "meaning": "Az elektromos mezőben az egységnyi pozitív töltésre ható erő; vektormennyiség.",
+      "pos": "n",
+      "example": "A két lemez közötti homogén mezőben a térerősség mindenhol ugyanakkora.",
+      "collocation": "E = F/q (N/C = V/m)"
+    },
+    {
+      "term": "feszültség",
+      "meaning": "Két pont között az elektromos mező által az egységnyi töltésen végzett munka.",
+      "pos": "n",
+      "example": "A zsebtelep feszültsége 4,5 V.",
+      "collocation": "U = W/Q (V)"
+    },
+    {
+      "term": "áramerősség",
+      "meaning": "A vezető keresztmetszetén időegység alatt átáramló töltés.",
+      "pos": "n",
+      "example": "Az áramerősséget a fogyasztóval sorosan kötött ampermérővel mérjük.",
+      "collocation": "I = Q/t (A)"
+    },
+    {
+      "term": "elektromos ellenállás",
+      "meaning": "A vezető feszültségének és áramerősségének hányadosa; azt fejezi ki, mennyire akadályozza a vezető az áramot.",
+      "pos": "n",
+      "example": "Az izzó ellenállása melegen sokkal nagyobb, mint hidegen.",
+      "collocation": "R = U/I (Ω)"
+    },
+    {
+      "term": "Ohm törvénye",
+      "meaning": "Állandó hőmérsékletű fémes vezetőben az áramerősség egyenesen arányos a feszültséggel.",
+      "pos": "n",
+      "example": "Ohm törvénye alapján 12 V-on 2 A áramot felvevő fogyasztó ellenállása 6 Ω.",
+      "collocation": "I = U/R"
+    },
+    {
+      "term": "fajlagos ellenállás",
+      "meaning": "Az anyagra jellemző mennyiség: az 1 m hosszú, 1 m² keresztmetszetű vezető ellenállása.",
+      "pos": "n",
+      "example": "A réz fajlagos ellenállása kicsi, ezért készülnek belőle a vezetékek.",
+      "collocation": "R = ρ·l/A"
+    },
+    {
+      "term": "soros kapcsolás",
+      "meaning": "A fogyasztók egymás után kapcsolása, így az áramnak egyetlen útja van; az áram közös, a feszültségek összeadódnak.",
+      "pos": "n",
+      "example": "Soros kapcsolásnál az eredő ellenállás az ellenállások összege.",
+      "collocation": "R_e = R₁ + R₂"
+    },
+    {
+      "term": "párhuzamos kapcsolás",
+      "meaning": "A fogyasztók ugyanarra a két pontra kapcsolása; a feszültség közös, az áramok összeadódnak.",
+      "pos": "n",
+      "example": "A lakás fogyasztói párhuzamos kapcsolásban kapják mind a 230 V-ot.",
+      "collocation": "1/R_e = 1/R₁ + 1/R₂"
+    },
+    {
+      "term": "elektromos teljesítmény",
+      "meaning": "Az elektromos munka és az idő hányadosa; a fogyasztóban időegység alatt átalakuló energia.",
+      "pos": "n",
+      "example": "A 2000 W teljesítményű vízforraló 230 V-on kb. 8,7 A áramot vesz fel.",
+      "collocation": "P = U·I (W)"
+    },
+    {
+      "term": "kilowattóra",
+      "meaning": "Energiaegység: az 1 kW teljesítményű fogyasztó által 1 óra alatt felhasznált energia.",
+      "pos": "n",
+      "example": "A villanyszámlán az energiát kilowattórában adják meg; 1 kWh = 3,6 MJ.",
+      "collocation": "1 kWh = 3,6 · 10⁶ J"
+    },
+    {
+      "term": "áramforrás",
+      "meaning": "Olyan eszköz, amely más energiát elektromos energiává alakítva feszültséget tart fenn (telep, akkumulátor, generátor).",
+      "pos": "n",
+      "example": "Az áramforrás belsejében a töltések szétválasztása munkát igényel."
+    },
+    {
+      "term": "elektromotoros erő",
+      "meaning": "Az áramforrás terheletlen (áram nélküli) kapocsfeszültsége; az egységnyi töltésen az áramforrás belsejében végzett munka.",
+      "pos": "n",
+      "example": "A 4,5 V elektromotoros erejű telep kapocsfeszültsége terheléskor kisebb lesz a belső ellenállás miatt.",
+      "collocation": "U₀ = U_k + I·R_b"
+    },
+    {
+      "term": "mágneses mező",
+      "meaning": "Mágnesek és áramjárta vezetők körül kialakuló tér, amely mágnesekre és mozgó töltésekre erőt fejt ki.",
+      "pos": "n",
+      "example": "Az iránytű a Föld mágneses mezőjének irányába áll be."
+    },
+    {
+      "term": "mágneses indukció",
+      "meaning": "A mágneses mező erősségét és irányát jellemző vektormennyiség; egysége a tesla.",
+      "pos": "n",
+      "example": "Egy erős neodímium mágnes felszínén a mágneses indukció néhány tized tesla, a Föld mágneses mezejéé csak kb. 50 µT.",
+      "collocation": "B (T)"
+    },
+    {
+      "term": "elektromágnes",
+      "meaning": "Vasmagos tekercs, amely csak akkor mágneses, ha áram folyik rajta; erőssége az áramerősséggel és a menetszámmal nő.",
+      "pos": "n",
+      "example": "A daru elektromágnese kikapcsoláskor elengedi a vashulladékot."
+    },
+    {
+      "term": "Lorentz-erő",
+      "meaning": "A mágneses mezőben mozgó töltésre ható erő, amely merőleges a sebességre és az indukcióvonalakra is.",
+      "pos": "n",
+      "example": "A Lorentz-erő téríti el az elektronnyalábot a régi tévék képcsövében.",
+      "collocation": "F = q·v·B"
+    },
+    {
+      "term": "elektromos motor",
+      "meaning": "Olyan gép, amely a mágneses mezőben lévő áramjárta tekercsre ható erő segítségével elektromos energiát mechanikai energiává alakít.",
+      "pos": "n",
+      "example": "A villanymotor tekercsére ható forgatónyomaték forgatja a tengelyt."
+    },
+    {
+      "term": "elektromágneses indukció",
+      "meaning": "Feszültség keletkezése egy vezetőben a rajta áthaladó mágneses fluxus megváltozásakor.",
+      "pos": "n",
+      "example": "Az elektromágneses indukció jelenségét Faraday fedezte fel 1831-ben.",
+      "collocation": "U_i = −N·ΔΦ/Δt"
+    },
+    {
+      "term": "Lenz törvénye",
+      "meaning": "Az indukált áram iránya olyan, hogy hatásával akadályozza az őt létrehozó változást.",
+      "pos": "n",
+      "example": "Lenz törvénye miatt taszítja a fémgyűrű a hozzá közelített mágnest."
+    },
+    {
+      "term": "generátor",
+      "meaning": "Olyan gép, amely mechanikai energiát elektromos energiává alakít: mágneses mezőben forgatott tekercsben feszültség indukálódik.",
+      "pos": "n",
+      "example": "Az erőmű generátorát a gőzturbina forgatja."
+    },
+    {
+      "term": "váltakozó áram",
+      "meaning": "Olyan áram, amelynek iránya és erőssége periodikusan változik; a hálózatban 50 Hz frekvenciájú, szinuszos.",
+      "pos": "n",
+      "example": "A váltakozó áram effektív értéke a csúcsérték √2-ed része.",
+      "collocation": "U_eff = U_max/√2"
+    },
+    {
+      "term": "transzformátor",
+      "meaning": "Közös vasmagon lévő két tekercsből álló eszköz, amely a váltakozó feszültséget a menetszámok arányában alakítja át.",
+      "pos": "n",
+      "example": "A transzformátor segítségével nagyfeszültségen szállítják az energiát, hogy kicsi legyen a veszteség.",
+      "collocation": "U₁/U₂ = N₁/N₂"
+    },
+    {
+      "term": "félvezető",
+      "meaning": "Olyan anyag (pl. szilícium), amelynek vezetőképessége a fémek és a szigetelők közé esik, és erősen függ a hőmérséklettől, megvilágítástól, szennyezéstől.",
+      "pos": "n",
+      "example": "A félvezető dióda csak egy irányban vezeti az áramot."
+    },
+    {
+      "term": "földelés",
+      "meaning": "A készülék fémházának vezető összekötése a földdel, hogy hiba esetén a ház ne kerüljön veszélyes feszültség alá.",
+      "pos": "n",
+      "example": "A mosógép fémházát a földelés teszi érintésvédelmileg biztonságossá."
+    }
+  ]
+}

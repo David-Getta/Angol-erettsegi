@@ -1,0 +1,126 @@
+{
+  "schemaVersion": 1,
+  "id": "dig-rd-emelt-szamrendszerek-adatabrazolas",
+  "subject": "digitalis-kultura",
+  "revision": 1,
+  "level": "emelt",
+  "source": "generated",
+  "topic": "hardver-szoftver",
+  "title": "Számrendszerek és adatábrázolás",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "reading",
+  "type": "rovid-valasz",
+  "instructions": "Számolja ki és írja be az eredményt! Az alsó index a számrendszer alapszámát jelöli (pl. 1011₂ kettes, 2A₁₆ tizenhatos számrendszerbeli szám). A 0. a példa.",
+  "example": {
+    "id": "0",
+    "kind": "text",
+    "prompt": "Mennyi az 1011₂ tízes számrendszerben?",
+    "answer": [
+      "11"
+    ],
+    "category": "hardver-szoftver-fogalom",
+    "explanation": "11: 1011₂ = 1·8 + 0·4 + 1·2 + 1·1 = 11. A helyiértékek jobbról balra 1, 2, 4, 8, … (2 hatványai).",
+    "maxWords": 1
+  },
+  "items": [
+    {
+      "id": "1",
+      "kind": "text",
+      "prompt": "Írja fel a 45-öt kettes számrendszerben!",
+      "answer": [
+        "101101",
+        "101101₂"
+      ],
+      "category": "hardver-szoftver-fogalom",
+      "explanation": "101101: 45 = 32 + 8 + 4 + 1, tehát a 32-es, 8-as, 4-es és 1-es helyiértéken áll 1-es. Maradékos osztással: 45→1, 22→0, 11→1, 5→1, 2→0, 1→1, alulról felfelé olvasva 101101.",
+      "maxWords": 1
+    },
+    {
+      "id": "2",
+      "kind": "text",
+      "prompt": "Mennyi az FF₁₆ tízes számrendszerben?",
+      "answer": [
+        "255"
+      ],
+      "category": "hardver-szoftver-fogalom",
+      "explanation": "255: F = 15, így FF₁₆ = 15·16 + 15 = 255 – ez a legnagyobb 1 bájton (8 biten) tárolható előjel nélküli szám. Ezért megy a színkódok (#RRGGBB) minden összetevője 0-tól 255-ig.",
+      "maxWords": 1
+    },
+    {
+      "id": "3",
+      "kind": "text",
+      "prompt": "Hány különböző érték ábrázolható 10 biten?",
+      "answer": [
+        "1024",
+        "2^10",
+        "2¹⁰"
+      ],
+      "category": "hardver-szoftver-fogalom",
+      "explanation": "1024: n biten 2ⁿ különböző bitsorozat van, 2¹⁰ = 1024 (előjel nélkül 0-tól 1023-ig).",
+      "maxWords": 1
+    },
+    {
+      "id": "4",
+      "kind": "text",
+      "prompt": "Hány bájton tárolja az UTF-8 kódolás az „ő” betűt?",
+      "answer": [
+        "2",
+        "2 bájt",
+        "2 bájton"
+      ],
+      "category": "adattipus-adatszerkezet",
+      "explanation": "2: az UTF-8 változó hosszúságú kódolás; az angol ábécé betűi (ASCII) 1 bájtosak, az ékezetes magyar betűk (á, ő, ű …) 2 bájtosak. Ezért nem mindegy, milyen kódolással mentjük vagy nyitjuk meg a szöveges fájlokat.",
+      "maxWords": 2
+    },
+    {
+      "id": "5",
+      "kind": "text",
+      "prompt": "Mennyi a 2A₁₆ tízes számrendszerben?",
+      "answer": [
+        "42"
+      ],
+      "category": "hardver-szoftver-fogalom",
+      "explanation": "42: A = 10, így 2A₁₆ = 2·16 + 10 = 42.",
+      "maxWords": 1
+    },
+    {
+      "id": "6",
+      "kind": "text",
+      "prompt": "Melyik a legkisebb egész szám, amely 8 biten kettes komplemens ábrázolással tárolható?",
+      "answer": [
+        "-128",
+        "−128"
+      ],
+      "category": "hardver-szoftver-fogalom",
+      "explanation": "−128: n biten kettes komplemensben −2ⁿ⁻¹ és 2ⁿ⁻¹ − 1 közötti egészek ábrázolhatók, 8 biten −128…127. A legkisebb szám bitmintája 10000000.",
+      "maxWords": 1
+    },
+    {
+      "id": "7",
+      "kind": "text",
+      "prompt": "Hány MiB egy 4 GiB-os memória?",
+      "answer": [
+        "4096",
+        "4096 MiB"
+      ],
+      "category": "hardver-szoftver-fogalom",
+      "explanation": "4096: 1 GiB = 1024 MiB, így 4 · 1024 = 4096 MiB. A bináris előtagok (Ki, Mi, Gi) 1024-es, az SI-előtagok (k, M, G) 1000-es váltószámot jelentenek.",
+      "maxWords": 2
+    },
+    {
+      "id": "8",
+      "kind": "text",
+      "prompt": "Mennyi az 1100₂ + 0110₂ összeg kettes számrendszerben?",
+      "answer": [
+        "10010",
+        "10010₂"
+      ],
+      "category": "hardver-szoftver-fogalom",
+      "explanation": "10010: 1100₂ = 12, 0110₂ = 6, összegük 18 = 16 + 2 = 10010₂. Írásban is összeadhatod: jobbról 0+0 = 0, 0+1 = 1, 1+1 = 0 és 1 marad, 1+0+1 = 0 és 1 marad, a végén az 1.",
+      "maxWords": 1
+    }
+  ],
+  "glossary": [],
+  "suggestedMinutes": 10
+}

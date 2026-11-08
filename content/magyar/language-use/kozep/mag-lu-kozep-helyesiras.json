@@ -1,0 +1,262 @@
+{
+  "schemaVersion": 1,
+  "id": "mag-lu-kozep-helyesiras",
+  "subject": "magyar",
+  "revision": 1,
+  "level": "kozep",
+  "source": "generated",
+  "topic": "nyelvi-szintek",
+  "title": "Helyesírási alapesetek",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "language-use",
+  "type": "nyelvi-feladat",
+  "instructions": "Válassza ki a helyesen írt alakot vagy mondatot (A, B, C vagy D)! A feladat a magyar helyesírás szabályainak (AkH. 12. kiadás) ismeretét méri. A 0. sor a példa.",
+  "example": {
+    "id": "0",
+    "kind": "choice",
+    "prompt": "Melyik szó van helyesen írva?",
+    "options": [
+      {
+        "key": "A",
+        "text": "muszály"
+      },
+      {
+        "key": "B",
+        "text": "muszálj"
+      },
+      {
+        "key": "C",
+        "text": "muszáj"
+      },
+      {
+        "key": "D",
+        "text": "muszaj"
+      }
+    ],
+    "answer": "C",
+    "category": "helyesiras",
+    "explanation": "Helyes: muszáj – j-vel és hosszú á-val. A j/ly írását a hagyomány szerinti írásmód határozza meg, ezért ezeket a szavakat meg kell tanulni."
+  },
+  "items": [
+    {
+      "id": "1",
+      "kind": "choice",
+      "prompt": "Melyik szó van helyesen írva?",
+      "options": [
+        {
+          "key": "A",
+          "text": "gojó"
+        },
+        {
+          "key": "B",
+          "text": "golyó"
+        },
+        {
+          "key": "C",
+          "text": "goljó"
+        },
+        {
+          "key": "D",
+          "text": "gollyó"
+        }
+      ],
+      "answer": "B",
+      "category": "helyesiras",
+      "explanation": "Helyes: golyó. Ly-nal írjuk, mert a hagyomány szerinti írásmód ezt őrzi (mint a gólya, folyó, hely, mély szóban); a kiejtés [j] hangja alapján nem lehet eldönteni.",
+      "wrongOptions": {
+        "A": "A kiejtés szerint írt alak, de a szót hagyományosan ly-nal írjuk.",
+        "C": "Az lj betűkapcsolat nem létezik a magyar helyesírásban ebben a szóban.",
+        "D": "A kettőzött lly csak hosszú ly hangnál áll (pl. gallyat), a golyó szóban rövid a hang."
+      }
+    },
+    {
+      "id": "2",
+      "kind": "choice",
+      "prompt": "Hogyan írjuk betűvel a 2027-es évszámot?",
+      "options": [
+        {
+          "key": "A",
+          "text": "kétezerhuszonhét"
+        },
+        {
+          "key": "B",
+          "text": "kétezer huszonhét"
+        },
+        {
+          "key": "C",
+          "text": "két ezer huszonhét"
+        },
+        {
+          "key": "D",
+          "text": "kétezer-huszonhét"
+        }
+      ],
+      "answer": "D",
+      "category": "helyesiras",
+      "explanation": "Helyes: kétezer-huszonhét. Kétezer fölött az összetett számnevet a hátulról számolt hármas számcsoportok határán kötőjellel tagoljuk (kétezer-huszonhét, hárommillió-kétszázezer).",
+      "wrongOptions": {
+        "A": "Csak kétezerig írjuk egybe a számneveket (pl. ezerkilencszáznegyvenkilenc); kétezer fölött kötőjel kell.",
+        "B": "A számcsoportok között nem szóköz, hanem kötőjel áll.",
+        "C": "A számnév tagjait nem írjuk külön; a „két ezer” alak hibás."
+      }
+    },
+    {
+      "id": "3",
+      "kind": "choice",
+      "prompt": "Hogyan írjuk betűvel az 1848-as évszámot?",
+      "options": [
+        {
+          "key": "A",
+          "text": "ezernyolcszáznegyvennyolc"
+        },
+        {
+          "key": "B",
+          "text": "ezer-nyolcszáznegyvennyolc"
+        },
+        {
+          "key": "C",
+          "text": "ezernyolcszáz-negyvennyolc"
+        },
+        {
+          "key": "D",
+          "text": "ezer nyolcszáz negyvennyolc"
+        }
+      ],
+      "answer": "A",
+      "category": "helyesiras",
+      "explanation": "Helyes: ezernyolcszáznegyvennyolc. Kétezerig minden számnevet egybeírunk, bármilyen hosszú.",
+      "wrongOptions": {
+        "B": "Kötőjelet csak kétezer fölött teszünk a számcsoportok közé.",
+        "C": "A kötőjel itt indokolatlan: 2000 alatti számnév.",
+        "D": "A számnév egy szó, tagjait nem írjuk külön."
+      }
+    },
+    {
+      "id": "4",
+      "kind": "choice",
+      "prompt": "Melyik alak helyes?",
+      "options": [
+        {
+          "key": "A",
+          "text": "labdarúgómérkőzés"
+        },
+        {
+          "key": "B",
+          "text": "labda rúgó mérkőzés"
+        },
+        {
+          "key": "C",
+          "text": "labda-rúgómérkőzés"
+        },
+        {
+          "key": "D",
+          "text": "labdarúgó-mérkőzés"
+        }
+      ],
+      "answer": "D",
+      "category": "helyesiras",
+      "explanation": "Helyes: labdarúgó-mérkőzés. A szótagszámlálás szabálya (6–3-as szabály) szerint a kettőnél több tagú összetételt, ha hat szótagnál hosszabb, a fő összetételi határon kötőjellel tagoljuk. Itt három tag (labda + rúgó + mérkőzés) és hét szótag van, a fő határ a labdarúgó és a mérkőzés között húzódik.",
+      "wrongOptions": {
+        "A": "Három tag és hét szótag: a szótagszámlálás szabálya szerint kötőjel kell.",
+        "B": "Az összetett szót nem írhatjuk külön szavakként.",
+        "C": "A kötőjel a fő összetételi határra kerül (labdarúgó | mérkőzés), nem a labda után."
+      }
+    },
+    {
+      "id": "5",
+      "kind": "choice",
+      "prompt": "Melyik mondat központozása helyes?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Tudom hogy, holnap eljössz."
+        },
+        {
+          "key": "B",
+          "text": "Tudom, hogy, holnap eljössz."
+        },
+        {
+          "key": "C",
+          "text": "Tudom, hogy holnap eljössz."
+        },
+        {
+          "key": "D",
+          "text": "Tudom hogy holnap eljössz."
+        }
+      ],
+      "answer": "C",
+      "category": "helyesiras",
+      "explanation": "Helyes: Tudom, hogy holnap eljössz. A tagmondatokat vessző választja el; a vessző a mellékmondatot bevezető kötőszó (hogy) elé kerül, utána nem.",
+      "wrongOptions": {
+        "A": "A vessző nem a kötőszó után, hanem előtte áll.",
+        "B": "A „hogy” után nem kell vessző, csak előtte.",
+        "D": "A két tagmondat (Tudom / hogy holnap eljössz) közül hiányzik a vessző."
+      }
+    },
+    {
+      "id": "6",
+      "kind": "choice",
+      "prompt": "Melyik földrajzi név van helyesen írva?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Kárpát-medence"
+        },
+        {
+          "key": "B",
+          "text": "Kárpátmedence"
+        },
+        {
+          "key": "C",
+          "text": "Kárpát medence"
+        },
+        {
+          "key": "D",
+          "text": "Kárpátok-medence"
+        }
+      ],
+      "answer": "A",
+      "category": "helyesiras",
+      "explanation": "Helyes: Kárpát-medence. Ha a földrajzi név tulajdonnévi előtagból és földrajzi köznévi utótagból (medence, felvidék, part) áll, kötőjellel kapcsoljuk őket, és csak az előtag kezdődik nagybetűvel (vö. Balaton-felvidék, Duna-part).",
+      "wrongOptions": {
+        "B": "Egybeírás csak akkor lehetséges, ha a név már egyetlen szóvá olvadt; itt kötőjel kell.",
+        "C": "A két elemet nem írjuk külön: kötőjel kapcsolja őket.",
+        "D": "A név előtagja a „Kárpát” alak, nem a többes számú „Kárpátok” (vö. Kárpát-medence, Kárpát-medencei)."
+      }
+    },
+    {
+      "id": "7",
+      "kind": "choice",
+      "prompt": "Melyik mondat helyes, ha a beszélő a nagyanyjáról beszél?",
+      "options": [
+        {
+          "key": "A",
+          "text": "A nagy mamám almás pitét sütött."
+        },
+        {
+          "key": "B",
+          "text": "A nagymamám almás pitét sütött."
+        },
+        {
+          "key": "C",
+          "text": "A nagy-mamám almás pitét sütött."
+        },
+        {
+          "key": "D",
+          "text": "A nagymamám, almás pitét sütött."
+        }
+      ],
+      "answer": "B",
+      "category": "helyesiras",
+      "explanation": "Helyes: nagymamám. Ha a két szó együtt új jelentést hoz létre (nagymama = nagyanya, nem egy nagy termetű anya), egybeírjuk – ez a jelentésváltozás miatti egybeírás.",
+      "wrongOptions": {
+        "A": "A különírt „nagy mamám” egy nagy termetű édesanyát jelentene.",
+        "C": "Kötőjel kéttagú összetételben itt nem indokolt.",
+        "D": "A szóalak helyes, de az alanyt (A nagymamám) nem választjuk el vesszővel a mondat többi részétől."
+      }
+    }
+  ],
+  "glossary": [],
+  "suggestedMinutes": 6
+}

@@ -1,0 +1,166 @@
+{
+  "schemaVersion": 1,
+  "id": "fiz-rd-kozep-energia-hotan-teszt",
+  "subject": "fizika",
+  "revision": 1,
+  "level": "kozep",
+  "source": "generated",
+  "topic": "energia-munka-ho",
+  "title": "Munka, energia, hő – feleletválasztós teszt",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "reading",
+  "type": "feleletvalasztas",
+  "instructions": "Minden kérdésnél egyetlen helyes válasz van. Jelöld meg a helyes válasz betűjelét! A 0. kérdés a megoldott példa. Ahol szükséges, g = 10 m/s².",
+  "example": {
+    "id": "0",
+    "kind": "choice",
+    "prompt": "Melyik fizikai mennyiség mértékegysége a joule (J)?",
+    "options": [
+      { "key": "A", "text": "A teljesítmény." },
+      { "key": "B", "text": "A munka." },
+      { "key": "C", "text": "Az erő." },
+      { "key": "D", "text": "A nyomás." }
+    ],
+    "answer": "B",
+    "category": "mertekegyseg",
+    "explanation": "Helyes: B. A joule a munka és az energia (valamint a hő) mértékegysége: 1 J = 1 N·m. A teljesítmény egysége a watt (W = J/s), az erőé a newton (N), a nyomásé a pascal (Pa = N/m²)."
+  },
+  "items": [
+    {
+      "id": "1",
+      "kind": "choice",
+      "prompt": "Egy 2 kg tömegű testet egyenletesen 3 m magasra emelünk. Mennyi munkát végzünk a nehézségi erő ellenében?",
+      "options": [
+        { "key": "A", "text": "6 J" },
+        { "key": "B", "text": "30 J" },
+        { "key": "C", "text": "60 J" },
+        { "key": "D", "text": "600 J" }
+      ],
+      "answer": "C",
+      "category": "kepletek",
+      "explanation": "Helyes: C. Az emelési munka a nehézségi erő és a magasság szorzata: W = m·g·h = 2 kg · 10 m/s² · 3 m = 60 J. Ennyivel nő a test helyzeti energiája.",
+      "wrongOptions": {
+        "A": "6 = m·h, kimaradt a g: az emeléshez a SÚLYT (m·g = 20 N) kell szorozni a magassággal.",
+        "B": "A felezés a mozgási energia képletének (½·m·v²) összekeverése; az emelési munkában nincs ½.",
+        "D": "Egy tízes szorzóval több: 2·10·3 = 60, nem 600."
+      }
+    },
+    {
+      "id": "2",
+      "kind": "choice",
+      "prompt": "Egy autó sebességét a kétszeresére növeljük. Hányszorosára nő a mozgási energiája?",
+      "options": [
+        { "key": "A", "text": "2-szeresére" },
+        { "key": "B", "text": "8-szorosára" },
+        { "key": "C", "text": "√2-szeresére" },
+        { "key": "D", "text": "4-szeresére" }
+      ],
+      "answer": "D",
+      "category": "torvenyek",
+      "explanation": "Helyes: D. A mozgási energia a sebesség négyzetével arányos: E = ½·m·v². Ha v → 2v, akkor v² → 4v², tehát az energia a négyszeresére nő. Ezért nő ilyen gyorsan a fékút is a sebességgel.",
+      "wrongOptions": {
+        "A": "A lendület (m·v) duplázódik, a mozgási energia a sebesség NÉGYZETÉVEL arányos.",
+        "B": "A sebesség a második, nem a harmadik hatványon szerepel a képletben.",
+        "C": "A √2 fordított gondolkodás: akkor nőne az energia 2-szeresére, ha a sebesség √2-szeresére nőne."
+      }
+    },
+    {
+      "id": "3",
+      "kind": "choice",
+      "prompt": "Egy emelőgép 500 kg tömegű terhet 10 s alatt 4 m magasra emel egyenletesen. Mekkora a gép hasznos teljesítménye?",
+      "options": [
+        { "key": "A", "text": "200 W" },
+        { "key": "B", "text": "2 kW" },
+        { "key": "C", "text": "20 kW" },
+        { "key": "D", "text": "50 kW" }
+      ],
+      "answer": "B",
+      "category": "kepletek",
+      "explanation": "Helyes: B. A végzett munka W = m·g·h = 500 kg · 10 m/s² · 4 m = 20 000 J. A teljesítmény a munka és az idő hányadosa: P = W/t = 20 000 J / 10 s = 2000 W = 2 kW.",
+      "wrongOptions": {
+        "A": "Kihagyta a g-t (500·4/10 = 200): a munkához a súly, nem a tömeg kell.",
+        "C": "20 kJ a MUNKA; a teljesítményhez még el kell osztani az idővel.",
+        "D": "50 kW-ot akkor kapnánk, ha a tömeget a g-vel és az idővel szoroznánk – ez nem a teljesítmény képlete."
+      }
+    },
+    {
+      "id": "4",
+      "kind": "choice",
+      "prompt": "Melyik állítás igaz a hő és a hőmérséklet kapcsolatáról?",
+      "options": [
+        { "key": "A", "text": "A hő és a hőmérséklet ugyanazt jelenti, csak más egységben mérjük." },
+        { "key": "B", "text": "A hőmérséklet mértékegysége a joule." },
+        { "key": "C", "text": "A magasabb hőmérsékletű testben mindig több hő van." },
+        { "key": "D", "text": "A hő a hőmérséklet-különbség miatt egyik testről a másikra átadott energia." }
+      ],
+      "answer": "D",
+      "category": "fogalmak",
+      "explanation": "Helyes: D. A hő (Q) energiaátadás: a melegebb testről a hidegebbre jut át a hőmérséklet-különbség miatt, egysége a joule. A hőmérséklet (T) állapotjelző, amely a részecskék átlagos mozgási energiájával függ össze, egysége a kelvin vagy a °C.",
+      "wrongOptions": {
+        "A": "Két különböző mennyiség: a hőmérséklet állapotjelző, a hő átadott energia.",
+        "B": "A hőmérsékletet kelvinben vagy Celsius-fokban mérjük; a joule az energia (hő, munka) egysége.",
+        "C": "A testnek nincs „hőtartalma”, belső energiája van; a hő csak a folyamat során átadott energia. Egy nagy, hideg tó belső energiája nagyobb lehet egy forró teáénál."
+      }
+    },
+    {
+      "id": "5",
+      "kind": "choice",
+      "prompt": "Ugyanannyi hőt közlünk 1 kg vízzel (c = 4200 J/(kg·°C)) és 1 kg rézzel (c = 390 J/(kg·°C)). Melyik melegszik fel jobban?",
+      "options": [
+        { "key": "A", "text": "A réz, mert kisebb a fajhője." },
+        { "key": "B", "text": "A víz, mert nagyobb a fajhője." },
+        { "key": "C", "text": "Egyformán melegszenek, mert azonos a tömegük." },
+        { "key": "D", "text": "Attól függ, mennyi a közölt hő." }
+      ],
+      "answer": "A",
+      "category": "torvenyek",
+      "explanation": "Helyes: A. Q = c·m·ΔT, ebből ΔT = Q/(c·m). Azonos Q és m mellett a hőmérséklet-változás fordítottan arányos a fajhővel: a réz fajhője kb. 11-szer kisebb, ezért kb. 11-szer nagyobb a hőmérséklet-emelkedése.",
+      "wrongOptions": {
+        "B": "A nagy fajhő éppen azt jelenti, hogy sok hő kell 1 °C-os melegítéshez – a víz melegszik kevésbé.",
+        "C": "A fajhők eltérnek, ezért azonos tömegnél sem azonos a felmelegedés.",
+        "D": "A hő mennyisége a különbség nagyságát befolyásolja, de azt, hogy MELYIK melegszik jobban, minden Q-nál a fajhő dönti el."
+      }
+    },
+    {
+      "id": "6",
+      "kind": "choice",
+      "prompt": "0 °C-os jég olvad egy edényben. Mi történik a jég–víz keverék hőmérsékletével, miközben hőt vesz fel a környezetből?",
+      "options": [
+        { "key": "A", "text": "Egyenletesen nő." },
+        { "key": "B", "text": "Csökken." },
+        { "key": "C", "text": "0 °C marad, amíg az összes jég el nem olvad." },
+        { "key": "D", "text": "Először csökken, majd nő." }
+      ],
+      "answer": "C",
+      "category": "jelenseg-magyarazat",
+      "explanation": "Helyes: C. Halmazállapot-változás közben a felvett hő (olvadáshő, L ≈ 334 kJ/kg) a kristályrács felbontására, a részecskék közötti kötések megszüntetésére fordítódik, nem a részecskék mozgási energiájának növelésére, ezért a hőmérséklet állandó marad, amíg jég van a keverékben.",
+      "wrongOptions": {
+        "A": "A hőmérséklet csak akkor kezd nőni, amikor már minden jég elolvadt.",
+        "B": "Hőfelvétel közben a hőmérséklet nem csökkenhet.",
+        "D": "Nincs csökkenő szakasz: olvadás közben a hőmérséklet állandó, utána nő."
+      }
+    },
+    {
+      "id": "7",
+      "kind": "choice",
+      "prompt": "Egy hőerőgép körfolyamatonként 1000 J hőt vesz fel a fűtőtestből és 300 J hasznos munkát végez. Mekkora a hatásfoka?",
+      "options": [
+        { "key": "A", "text": "3 %" },
+        { "key": "B", "text": "30 %" },
+        { "key": "C", "text": "70 %" },
+        { "key": "D", "text": "300 %" }
+      ],
+      "answer": "B",
+      "category": "kepletek",
+      "explanation": "Helyes: B. A hatásfok a hasznos munka és a felvett hő hányadosa: η = W/Q_fel = 300 J / 1000 J = 0,3 = 30 %. A többi 700 J hő a hűtőbe (környezetbe) távozik.",
+      "wrongOptions": {
+        "A": "0,3 nem 3 %, hanem 30 % – a tizedes tört százalékká alakításánál 100-zal kell szorozni.",
+        "C": "70 % a leadott hő aránya (700/1000), a hatásfok a HASZNOS munka aránya.",
+        "D": "A hatásfok nem lehet 100 %-nál nagyobb; fordítva osztott (1000/300)."
+      }
+    }
+  ],
+  "glossary": [],
+  "suggestedMinutes": 12
+}

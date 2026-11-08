@@ -1,0 +1,196 @@
+{
+  "schemaVersion": 1,
+  "id": "mat-gr-ellenorzes",
+  "subject": "matematika",
+  "revision": 1,
+  "level": "kozep",
+  "source": "generated",
+  "topic": "nyelvtan",
+  "title": "Ellenőrzés, feltételek vizsgálata",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "grammar",
+  "type": "lesson",
+  "category": "ellenorzes",
+  "summaryHu": "Az ellenőrzés két dolgot jelent: a kapott számot visszahelyettesítjük (kiszűri a számolási hibát és a hamis gyököt), és megnézzük, megfelel-e a feladat feltételeinek (értelmezési tartomány, pozitív hossz, egész darabszám). A javítási útmutató az ellenőrzésre vagy a kikötésre sokszor külön pontot ad.",
+  "rules": [
+    {
+      "title": "Visszahelyettesítés az eredeti egyenletbe",
+      "explanation": "A kapott gyököt mindig az EREDETI egyenletbe helyettesítsd vissza, ne egy átalakított alakba – a hamis gyök csak így derül ki.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "√(2x + 3) = x: gyökök 3 és −1; x = −1-nél √1 = 1 ≠ −1 → csak x = 3",
+          "hu": "A négyzetre emelt alakban a −1 is jónak látszana."
+        }
+      ]
+    },
+    {
+      "title": "Értelmezési tartomány",
+      "explanation": "Logaritmus argumentuma pozitív, gyök alatt nemnegatív szám áll, nevező nem nulla. A kikötést a megoldás elején írd fel, és a végén vesd össze a gyökökkel.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "lg(x − 2) + lg(x + 1) = 1: kikötés x > 2; gyökök 4 és −3 → csak x = 4",
+          "hu": "Az x = −3-nál lg(−5) nem értelmezett."
+        }
+      ]
+    },
+    {
+      "title": "A feladat feltételei",
+      "explanation": "Hosszúság, terület, idő pozitív; darabszám (ember, busz, doboz) egész, és a helyzet dönti el, hogy felfelé vagy lefelé kerekítünk. A matematikailag helyes, de a feladatban értelmetlen megoldást ki kell zárni, indoklással.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "130 tanuló, 50 fős buszok: 130/50 = 2,6 → 3 busz kell",
+          "hu": "2 busz nem elég, a 2,6 busz értelmetlen."
+        },
+        {
+          "en": "x(x + 3) = 40: x = 5 vagy x = −8; hosszúság nem negatív → x = 5",
+          "hu": "A −8-at indoklással zárjuk ki."
+        }
+      ]
+    },
+    {
+      "title": "Több megoldás és egész index",
+      "explanation": "Másodfokú összefüggésnél (q² = 9) mindkét előjelet vizsgáld. Ha egy sorozat tagjának sorszámát keresed, az csak pozitív egész lehet: ha nem egész jön ki, a szám nem tagja a sorozatnak.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "a₁ = 5, d = 3: 5 + 3(n − 1) = 60 → n ≈ 19,33 → a 60 nem tagja a sorozatnak",
+          "hu": "Az index nem lehet tört."
+        }
+      ]
+    }
+  ],
+  "commonMistakes": [
+    {
+      "wrong": "Egy oldal hossza x = −8 cm vagy x = 5 cm.",
+      "right": "Az oldal 5 cm (a −8 hosszúságként értelmetlen).",
+      "why": "A másodfokú egyenlet mindkét gyöke matematikailag helyes, de a feladat feltétele (pozitív hossz) kizárja a negatívat; ezt ki is kell mondani."
+    },
+    {
+      "wrong": "130 tanulóhoz 2,6 busz kell.",
+      "right": "3 busz kell.",
+      "why": "Darabszám csak egész lehet, és itt felfelé kell kerekíteni, mert 2 buszba nem fér el mindenki."
+    },
+    {
+      "wrong": "lg(x − 2) + lg(x + 1) = 1 megoldásai: 4 és −3.",
+      "right": "Az egyetlen megoldás x = 4.",
+      "why": "Az x = −3-nál a logaritmusok argumentuma negatív, a kifejezés nem értelmezett; a kikötés (x > 2) ezt kiszűri."
+    },
+    {
+      "wrong": "q² = 9, tehát q = 3.",
+      "right": "q = 3 vagy q = −3.",
+      "why": "Negatív szám négyzete is pozitív; mindkét esetet végig kell számolni és ellenőrizni."
+    }
+  ],
+  "examTips": [
+    "Az egyenletes II/A feladatokban a kikötés és az ellenőrzés gyakran 1–1 pont: írd le akkor is, ha a gyök nyilvánvalóan jó.",
+    "Szöveges feladatnál a végén kérdezd meg magadtól: van-e értelme az eredménynek (nagyságrend, előjel, egész szám)? A rubrika „Válasz, mértékegység, ellenőrzés” szempontja erre ad pontot.",
+    "Az I. részben is érdemes 10 másodperc visszahelyettesítésre: egy elírt előjel itt a teljes pontot elviszi."
+  ],
+  "practice": [
+    {
+      "id": "1",
+      "kind": "text",
+      "prompt": "Oldd meg a valós számok halmazán: lg(x − 2) + lg(x + 1) = 1.",
+      "answer": [
+        "4",
+        "x = 4"
+      ],
+      "category": "ellenorzes",
+      "explanation": "4. Kikötés: x > 2. A szorzat logaritmusával lg((x − 2)(x + 1)) = 1, azaz (x − 2)(x + 1) = 10, x² − x − 12 = 0, x = 4 vagy x = −3. A −3 nem felel meg a kikötésnek, így az egyetlen megoldás x = 4."
+    },
+    {
+      "id": "2",
+      "kind": "text",
+      "prompt": "Egy iskolai kiránduláson 130 tanuló vesz részt, egy buszba 50 fő fér. Legalább hány busz kell?",
+      "answer": [
+        "3",
+        "3 busz",
+        "3 db"
+      ],
+      "category": "ellenorzes",
+      "explanation": "3. 130 : 50 = 2,6, de busz csak egész darab lehet, és 2 buszba csak 100 fő fér, ezért felfelé kerekítünk: 3 busz."
+    },
+    {
+      "id": "3",
+      "kind": "choice",
+      "prompt": "Egy téglalap oldalai x és x + 3 (cm), területe 40 cm². Az x² + 3x − 40 = 0 egyenlet gyökei 5 és −8. Mi a helyes válasz?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Az oldalak 5 cm és 8 cm vagy −8 cm és −5 cm."
+        },
+        {
+          "key": "B",
+          "text": "Az oldalak −8 cm és −5 cm."
+        },
+        {
+          "key": "C",
+          "text": "Az oldalak 5 cm és 8 cm."
+        },
+        {
+          "key": "D",
+          "text": "Nincs megoldás."
+        }
+      ],
+      "answer": "C",
+      "category": "ellenorzes",
+      "explanation": "A helyes: C. A −8 hosszúságként nem lehetséges, ezért csak x = 5 jó, a másik oldal 8 cm. Ellenőrzés: 5 · 8 = 40.",
+      "wrongOptions": {
+        "A": "A negatív gyököt a feladat feltétele kizárja; a válaszban csak az értelmes megoldás szerepelhet.",
+        "B": "Hosszúság nem lehet negatív.",
+        "D": "Az x = 5 minden feltételnek megfelel, tehát van megoldás."
+      }
+    },
+    {
+      "id": "4",
+      "kind": "text",
+      "prompt": "Oldd meg a valós számok halmazán: √(2x + 3) = x.",
+      "answer": [
+        "3",
+        "x = 3"
+      ],
+      "category": "ellenorzes",
+      "explanation": "3. Négyzetre emelve 2x + 3 = x², x² − 2x − 3 = 0, gyökei 3 és −1. Ellenőrzés az eredeti egyenletben: x = 3-nál √9 = 3 jó, x = −1-nél √1 = 1 ≠ −1, ez hamis gyök."
+    },
+    {
+      "id": "5",
+      "kind": "choice",
+      "prompt": "Egy számtani sorozatban a₁ = 5 és d = 3. Tagja-e a sorozatnak a 60?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Igen, a 19. tag."
+        },
+        {
+          "key": "B",
+          "text": "Igen, a 20. tag."
+        },
+        {
+          "key": "C",
+          "text": "Nem, mert a 60 páros."
+        },
+        {
+          "key": "D",
+          "text": "Nem, mert a sorszámra nem egész szám adódik."
+        }
+      ],
+      "answer": "D",
+      "category": "ellenorzes",
+      "explanation": "A helyes: D. 5 + 3(n − 1) = 60-ból n − 1 = 55/3, n ≈ 19,33, ami nem egész; a 19. tag 59, a 20. tag 62.",
+      "wrongOptions": {
+        "A": "A 19. tag 5 + 18 · 3 = 59, nem 60.",
+        "B": "A 20. tag 5 + 19 · 3 = 62.",
+        "C": "A paritás itt nem dönt: a sorozatban vannak páros tagok is (pl. 8, 14)."
+      }
+    }
+  ],
+  "relatedCategories": [
+    "egyenlet-rendezes",
+    "szoveges-ertelmezes",
+    "valasz-megfogalmazas"
+  ]
+}

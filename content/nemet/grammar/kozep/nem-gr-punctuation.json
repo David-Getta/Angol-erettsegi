@@ -1,0 +1,341 @@
+{
+  "schemaVersion": 1,
+  "id": "nem-gr-punctuation",
+  "subject": "nemet",
+  "level": "kozep",
+  "source": "generated",
+  "topic": "nyelvtan",
+  "title": "Központozás",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "grammar",
+  "type": "lesson",
+  "category": "punctuation",
+  "summaryHu": "A német vesszőhasználat nyelvtani alapú: a mellékmondatot mindig vessző választja el a főmondattól, akárcsak a magyarban. Eltérés viszont, hogy a németben nincs vessző az als és a wie előtt egyszerű összehasonlításban (größer als ich), és más a levél formája is: a megszólítás után vessző áll, és kisbetűvel folytatjuk, az elköszönés (Mit freundlichen Grüßen) után pedig nincs írásjel. Az írásbeli értékelésben a központozási hibák a nyelvhelyességhez tartoznak, a levélformák a szövegtípus szabályainak betartásához is.",
+  "rules": [
+    {
+      "title": "Vessző a mellékmondat előtt és után",
+      "explanation": "A mellékmondatot (dass, weil, wenn, ob, obwohl, als, damit, nachdem, kérdőszavas függő kérdés, vonatkozói mellékmondat) mindig vessző választja el: Ich glaube, dass er kommt. Ha a mellékmondat elöl áll, utána van a vessző: Wenn ich Zeit habe, komme ich. A mondat közepébe ékelt mellékmondatot két vessző fogja közre: Der Film, den ich gesehen habe, war toll.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "Ich weiß nicht, ob ich am Samstag Zeit habe.",
+          "hu": "Nem tudom, ráérek-e szombaton."
+        },
+        {
+          "en": "Das Mädchen, das neben mir sitzt, heißt Lili.",
+          "hu": "A lány, aki mellettem ül, Lilinek hívják."
+        }
+      ]
+    },
+    {
+      "title": "Vessző főmondatok és felsorolás között",
+      "explanation": "Az aber, sondern, doch és denn előtt mindig vessző áll: Ich bin müde, aber ich muss noch lernen. Az und és az oder előtt két teljes főmondat között a vessző elhagyható (Ich lese(,) und mein Bruder spielt). Felsorolásban a tagok közé vessző kerül, de az utolsó und/oder elé nem: Ich esse gern Äpfel, Birnen und Bananen.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "Wir fahren nicht nach Wien, sondern nach Graz.",
+          "hu": "Nem Bécsbe megyünk, hanem Grazba."
+        },
+        {
+          "en": "Ich brauche Milch, Eier, Mehl und Zucker.",
+          "hu": "Tej, tojás, liszt és cukor kell."
+        }
+      ]
+    },
+    {
+      "title": "Vessző a zu-s főnévi igeneves szerkezetnél",
+      "explanation": "Kötelező a vessző, ha a szerkezetet um, ohne, statt, anstatt, außer vagy als vezeti be (Ich lerne, um die Prüfung zu bestehen), ha egy főnévtől függ (Ich habe keine Lust, ins Kino zu gehen), vagy ha utalószó (es, daran, darauf, dazu) jelzi előre (Ich freue mich darauf, dich zu sehen). Más esetben a vessző elhagyható, de kitenni sosem hiba.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "Er ist gegangen, ohne sich zu verabschieden.",
+          "hu": "Elment anélkül, hogy elköszönt volna."
+        },
+        {
+          "en": "Hast du Zeit, mir zu helfen?",
+          "hu": "Van időd segíteni nekem?"
+        }
+      ]
+    },
+    {
+      "title": "Nincs vessző: összehasonlítás als és wie előtt",
+      "explanation": "Egyszerű összehasonlításban az als és a wie előtt nincs vessző: Meine Schwester ist älter als ich. Er ist so groß wie sein Vater. A magyarban a „mint” elé vesszőt teszünk („idősebb, mint én”) – a németben ez hiba. Vessző csak akkor kell, ha az als/wie teljes mellékmondatot vezet be: Der Test war leichter, als ich dachte.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "Im Sommer ist es hier wärmer als in Hamburg.",
+          "hu": "Nyáron itt melegebb van, mint Hamburgban."
+        },
+        {
+          "en": "Die Reise war schöner, als wir erwartet hatten.",
+          "hu": "Az utazás szebb volt, mint vártuk.",
+          "note": "Mellékmondat → vessző."
+        }
+      ]
+    },
+    {
+      "title": "Levélforma: megszólítás és elköszönés",
+      "explanation": "A megszólítás után vessző áll, és a levél első mondata kisbetűvel folytatódik (kivéve, ha főnévvel vagy Sie-vel kezdődik): Liebe Anna, / wie geht es dir? – Sehr geehrte Damen und Herren, / ich schreibe Ihnen, weil … (Felkiáltójel is állhat a megszólítás után, akkor nagybetűvel folytatjuk, de a vessző a mai szokás.) Az elköszönés (Mit freundlichen Grüßen, Viele Grüße, Liebe Grüße) után nincs írásjel, a név új sorba kerül. A magyar „Üdvözlettel:” kettőspontja a németben hiba.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "Lieber Tom,\nvielen Dank für deine Mail!",
+          "hu": "Kedves Tom! Köszönöm az e-mailedet!",
+          "note": "Vessző a megszólítás után, kisbetűs folytatás."
+        },
+        {
+          "en": "Mit freundlichen Grüßen\nAnna Kovács",
+          "hu": "Tisztelettel: Kovács Anna",
+          "note": "Az elköszönés után nincs írásjel."
+        }
+      ]
+    },
+    {
+      "title": "Dátum, sorszám, idézőjel, birtokos",
+      "explanation": "A sorszámnév után pont áll: am 3. Mai, der 2. Weltkrieg, im 21. Jahrhundert. Dátum a levél fejlécében: Budapest, 5. November 2026 vagy 5.11.2026. Időpont: 8.30 Uhr vagy 8:30 Uhr. Az idézőjel alul kezdődik és felül zárul: „Hallo!”. A tulajdonnév birtokos -s-e elé a standard írásmódban nem teszünk aposztrófot: Annas Fahrrad, Peters Zimmer.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "Die Party ist am 14. Juni um 19.30 Uhr.",
+          "hu": "A buli június 14-én 19.30-kor lesz."
+        },
+        {
+          "en": "Das ist Lauras Zimmer.",
+          "hu": "Ez Laura szobája.",
+          "note": "Aposztróf nélkül."
+        }
+      ]
+    }
+  ],
+  "commonMistakes": [
+    {
+      "wrong": "Ich glaube dass er morgen kommt.",
+      "right": "Ich glaube, dass er morgen kommt.",
+      "why": "A dass-os mellékmondat előtt mindig vessző áll – ugyanúgy, mint a magyarban a „hogy” előtt."
+    },
+    {
+      "wrong": "Mein Bruder ist größer, als ich.",
+      "right": "Mein Bruder ist größer als ich.",
+      "why": "Egyszerű összehasonlításban (mellékmondat nélkül) az als és a wie előtt nincs vessző. A magyar „nagyobb, mint én” vesszője a németben hiba."
+    },
+    {
+      "wrong": "Liebe Anna,\nWie geht es dir?",
+      "right": "Liebe Anna,\nwie geht es dir?",
+      "why": "A vesszővel lezárt megszólítás után a levél kisbetűvel folytatódik (kivéve főnév vagy Sie esetén)."
+    },
+    {
+      "wrong": "Mit freundlichen Grüßen,\nPéter Kovács",
+      "right": "Mit freundlichen Grüßen\nPéter Kovács",
+      "why": "Az elköszönő formula után a németben nincs vessző (és pont vagy kettőspont sem); az angol Yours sincerely, mintája itt hibás."
+    },
+    {
+      "wrong": "Der Mann der neben uns wohnt ist Arzt.",
+      "right": "Der Mann, der neben uns wohnt, ist Arzt.",
+      "why": "A mondatba ékelt vonatkozói mellékmondatot két vessző fogja közre: az elején és a végén is."
+    },
+    {
+      "wrong": "Ich bin müde aber ich muss noch lernen.",
+      "right": "Ich bin müde, aber ich muss noch lernen.",
+      "why": "Az aber (és a sondern, doch, denn) előtt mindig vessző áll."
+    }
+  ],
+  "examTips": [
+    "Írás után keresd meg a szövegben az összes dass, weil, wenn, ob, obwohl, der/die/das (vonatkozó névmás) szót: mindegyik előtt (és a mellékmondat végén) kell vessző.",
+    "Levélben a formai elemek (megszólítás vesszővel, kisbetűs folytatás, elköszönés írásjel nélkül, név új sorban) a szövegtípus szabályainak része – ezeket tanuld meg egyszer, és minden levélben ugyanígy használd.",
+    "Ha bizonytalan vagy, inkább rövidebb mondatokat írj: két rövid főmondat ponttal elválasztva kevesebb hibalehetőséget rejt, mint egy hosszú, rosszul tagolt mondat."
+  ],
+  "practice": [
+    {
+      "id": "1",
+      "kind": "choice",
+      "prompt": "Melyik mondat központozása helyes?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Ich hoffe dass du bald kommst."
+        },
+        {
+          "key": "B",
+          "text": "Ich hoffe, dass du bald kommst."
+        },
+        {
+          "key": "C",
+          "text": "Ich hoffe dass, du bald kommst."
+        },
+        {
+          "key": "D",
+          "text": "Ich hoffe; dass du bald kommst."
+        }
+      ],
+      "answer": "B",
+      "category": "punctuation",
+      "explanation": "Helyes: B. A dass-os mellékmondatot vessző választja el a főmondattól, a vessző a kötőszó előtt áll.",
+      "wrongOptions": {
+        "A": "Hiányzik a kötelező vessző a dass előtt.",
+        "C": "A vessző a kötőszó elé kerül, nem mögé.",
+        "D": "A pontosvessző itt nem helyes; a mellékmondatot vessző választja el."
+      }
+    },
+    {
+      "id": "2",
+      "kind": "choice",
+      "prompt": "Melyik mondat központozása helyes?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Meine Schwester ist älter als ich."
+        },
+        {
+          "key": "B",
+          "text": "Meine Schwester ist älter, als ich."
+        },
+        {
+          "key": "C",
+          "text": "Meine Schwester, ist älter als ich."
+        },
+        {
+          "key": "D",
+          "text": "Meine Schwester ist, älter als ich."
+        }
+      ],
+      "answer": "A",
+      "category": "punctuation",
+      "explanation": "Helyes: A. Egyszerű összehasonlításban (az als után nincs mellékmondat, csak egy névmás) nem áll vessző.",
+      "wrongOptions": {
+        "B": "Az als ich nem mellékmondat, ezért elé nem kell vessző (a magyar „mint” előtti vessző hatása).",
+        "C": "Az alany és az ige közé nem kerül vessző.",
+        "D": "Az ige és az állítmány közé nem kerül vessző."
+      }
+    },
+    {
+      "id": "3",
+      "kind": "choice",
+      "prompt": "Hivatalos levél vége – melyik a helyes forma? (A / jel az új sort jelöli.)",
+      "options": [
+        {
+          "key": "A",
+          "text": "Mit freundlichen Grüßen, / Anna Kovács"
+        },
+        {
+          "key": "B",
+          "text": "Mit freundlichen Grüßen: Anna Kovács"
+        },
+        {
+          "key": "C",
+          "text": "Mit freundlichen Grüßen! / Anna Kovács"
+        },
+        {
+          "key": "D",
+          "text": "Mit freundlichen Grüßen / Anna Kovács"
+        }
+      ],
+      "answer": "D",
+      "category": "punctuation",
+      "explanation": "Helyes: D. A német elköszönő formula után nincs írásjel, a név új sorba kerül.",
+      "wrongOptions": {
+        "A": "Az angol Yours sincerely, mintájára tett vessző a németben hiba.",
+        "B": "A kettőspont a magyar „Üdvözlettel:” hatása, és a név is új sorba kerül.",
+        "C": "Az elköszönés után nem áll felkiáltójel."
+      }
+    },
+    {
+      "id": "4",
+      "kind": "choice",
+      "prompt": "Melyik mondat központozása helyes?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Das Buch das ich gerade lese ist sehr spannend."
+        },
+        {
+          "key": "B",
+          "text": "Das Buch, das ich gerade lese ist sehr spannend."
+        },
+        {
+          "key": "C",
+          "text": "Das Buch das ich gerade lese, ist sehr spannend."
+        },
+        {
+          "key": "D",
+          "text": "Das Buch, das ich gerade lese, ist sehr spannend."
+        }
+      ],
+      "answer": "D",
+      "category": "punctuation",
+      "explanation": "Helyes: D. A mondat közepébe ékelt vonatkozói mellékmondatot (das ich gerade lese) két vessző fogja közre.",
+      "wrongOptions": {
+        "A": "Mindkét vessző hiányzik a vonatkozói mellékmondat körül.",
+        "B": "Hiányzik a mellékmondat végét jelző vessző (lese után).",
+        "C": "Hiányzik a mellékmondat elejét jelző vessző (Buch után)."
+      }
+    },
+    {
+      "id": "5",
+      "kind": "choice",
+      "prompt": "Baráti levél eleje – melyik a helyes forma? (A / jel az új sort jelöli.)",
+      "options": [
+        {
+          "key": "A",
+          "text": "Liebe Tante Eva, / Wie geht es dir?"
+        },
+        {
+          "key": "B",
+          "text": "Liebe Tante Eva, / wie geht es dir?"
+        },
+        {
+          "key": "C",
+          "text": "Liebe Tante Eva. / wie geht es dir?"
+        },
+        {
+          "key": "D",
+          "text": "Liebe, Tante Eva / wie geht es dir?"
+        }
+      ],
+      "answer": "B",
+      "category": "punctuation",
+      "explanation": "Helyes: B. A megszólítás után vessző áll, és a levél kisbetűvel folytatódik (a wie nem főnév).",
+      "wrongOptions": {
+        "A": "Vesszővel lezárt megszólítás után nem kezdjük nagybetűvel a következő sort (csak főnév vagy Sie esetén).",
+        "C": "A megszólítás után nem pont, hanem vessző áll.",
+        "D": "A megszólítás belsejébe nem kerül vessző, a végére viszont kell."
+      }
+    },
+    {
+      "id": "6",
+      "kind": "choice",
+      "prompt": "Melyik mondatba KELL vesszőt tenni a ___ helyére?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Ich gehe heute nicht ins Kino ___ sondern ins Theater."
+        },
+        {
+          "key": "B",
+          "text": "Ich kaufe Äpfel ___ und Bananen."
+        },
+        {
+          "key": "C",
+          "text": "Er ist so groß ___ wie sein Vater."
+        },
+        {
+          "key": "D",
+          "text": "Wir fahren morgen ___ nach Wien."
+        }
+      ],
+      "answer": "A",
+      "category": "punctuation",
+      "explanation": "Helyes: A. A sondern előtt mindig vessző áll: …, sondern ins Theater.",
+      "wrongOptions": {
+        "B": "Két felsorolt tag között az und elé nem kerül vessző.",
+        "C": "Egyszerű összehasonlításban a wie előtt nincs vessző.",
+        "D": "Egyszerű mondat, nincs benne tagmondat-határ, ezért nem kell vessző."
+      }
+    }
+  ],
+  "relatedCategories": [
+    "spelling",
+    "conjunction",
+    "register"
+  ]
+}

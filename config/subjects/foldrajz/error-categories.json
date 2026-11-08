@@ -1,0 +1,118 @@
+{
+  "meta": {
+    "verifiedAt": "2026-11-05",
+    "sources": [
+      {
+        "title": "Oktatási Hivatal: Földrajz – részletes érettségi vizsgakövetelmény és vizsgaleírás (2024-től érvényes, Nat2020)",
+        "url": "https://www.oktatas.hu/pub_bin/dload/kozoktatas/erettsegi/vizsgakovetelmenyek2024/foldrajz_2024_e.pdf"
+      },
+      {
+        "title": "Eduline (2025. 05. 13.): Ezeket kell tudni a csütörtöki földrajzérettségiről – segédeszközök, pontozás (közép írásbeli 90 pont: topográfia 20 perc 20 pont + 100 perc 70 pont)",
+        "url": "https://eduline.hu/erettsegi-felveteli/20250513_minden-a-csoturtoki-foldrjazerettsegirol-segedeszkozok-pontozas-eddig-irhatjatok"
+      },
+      {
+        "title": "Eduline (2024. 05. 15.): Minden, amit a csütörtöki földrajzérettségiről tudni érdemes",
+        "url": "https://eduline.hu/erettsegi-felveteli/20240515_foldrajzerettsegi-tudnivalok-segedeszkozok-egy-helyen"
+      },
+      {
+        "title": "Oktatási Hivatal, Új Köznevelés (2022): Érettségi változások – Földrajz (20/70/90 pont, szóbeli A/B változat, 60 pont)",
+        "url": "https://www.oktatas.hu/pub_bin/dload/kozoktatas/uj_kozneveles/2022_2/UKN_2202_06_Erettsegi_valtozasok_Foldrajz.pdf"
+      },
+      {
+        "title": "GeoMetodika (2021): Megőrizve megújítani – a földrajz érettségi vizsga új vonásai (írásbeli 100 → 90 pont)",
+        "url": "https://geometodika.hu/megorizve-megujitani-a-foldrajz-erettsegi-vizsga-uj-vonasai/"
+      },
+      {
+        "title": "Eduline (2024. 12. 13.): Itt vannak a 2025-ös emelt szintű földrajzérettségi témakörei",
+        "url": "https://eduline.hu/erettsegi-felveteli/20241213_emelt-szintu-foldrajzerettsegi-tetelek-temakorok-2025"
+      },
+      {
+        "title": "Eduline (2026. 03. 14.): Érettségi 2026 – pontozási és osztályozási szabályok (közép 80/60/40/25 %, emelt 60/47/33/25 %, vizsgarészenként 12 %)",
+        "url": "https://eduline.hu/erettsegi-felveteli/20260314_erettsegi-2026-pontozas-osztalyozas"
+      }
+    ],
+    "notes": [
+      "Az ellenőrzés hírportál-cikkek (Eduline, Telex) és a hivatalos dokumentumok keresőben indexelt szövege alapján történt; az OH oldalát a futtató környezet hálózata nem engedte közvetlenül megnyitni – a hivatalos vizsgaleírással érdemes összevetni."
+    ]
+  },
+  "groups": [
+    {
+      "id": "topografia",
+      "name": "Topográfia"
+    },
+    {
+      "id": "fogalom",
+      "name": "Fogalmak, folyamatok"
+    },
+    {
+      "id": "elemzes",
+      "name": "Adat- és ábraelemzés"
+    },
+    {
+      "id": "szamitas",
+      "name": "Számítás"
+    }
+  ],
+  "categories": [
+    {
+      "id": "helymeghatarozas",
+      "name": "Helyek, tájak azonosítása",
+      "group": "topografia",
+      "description": "Hibás vagy hiányos földrajzi név, helytelen térbeli elhelyezés."
+    },
+    {
+      "id": "orszag-varos",
+      "name": "Országok, városok, régiók",
+      "group": "topografia",
+      "description": "Országok, fővárosok, régiók, központok keverése."
+    },
+    {
+      "id": "termeszeti-folyamat",
+      "name": "Természetföldrajzi folyamatok",
+      "group": "fogalom",
+      "description": "Lemeztektonika, felszínformálás, időjárási és éghajlati folyamatok hibás magyarázata."
+    },
+    {
+      "id": "tarsadalmi-folyamat",
+      "name": "Társadalmi-gazdasági folyamatok",
+      "group": "fogalom",
+      "description": "Népesedés, urbanizáció, gazdasági szerkezet, globalizáció összefüggéseinek hibái."
+    },
+    {
+      "id": "fogalomhasznalat",
+      "name": "Földrajzi fogalmak",
+      "group": "fogalom",
+      "description": "Fogalmak pontatlan vagy téves használata (pl. időjárás–éghajlat, GDP–GNI)."
+    },
+    {
+      "id": "ovezetesseg-hiba",
+      "name": "Övezetesség, éghajlati típusok",
+      "group": "fogalom",
+      "description": "Éghajlati övek, típusok, természetes növényzet és talaj összekapcsolásának hibái."
+    },
+    {
+      "id": "abra-diagram",
+      "name": "Ábra, diagram, táblázat leolvasása",
+      "group": "elemzes",
+      "description": "Hibás leolvasás, trend félreértelmezése, tengelyek, jelmagyarázat."
+    },
+    {
+      "id": "szovegertelmezes",
+      "name": "Szöveg és kérdés értelmezése",
+      "group": "elemzes",
+      "description": "Nem a kérdésre válaszol, a forrás információját félreérti."
+    },
+    {
+      "id": "terkep-olvasas",
+      "name": "Térképolvasás, jelmagyarázat, méretarány",
+      "group": "elemzes",
+      "description": "Jelmagyarázat, tájolás, méretarány hibás használata."
+    },
+    {
+      "id": "szamitas-foldrajzi",
+      "name": "Földrajzi számítások",
+      "group": "szamitas",
+      "description": "Időzóna, méretarány, népsűrűség, növekedési ráta, mértékegység hibái."
+    }
+  ]
+}

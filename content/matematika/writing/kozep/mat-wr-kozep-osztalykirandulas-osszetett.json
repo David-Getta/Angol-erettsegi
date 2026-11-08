@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 1,
+  "id": "mat-wr-kozep-osztalykirandulas-osszetett",
+  "subject": "matematika",
+  "revision": 1,
+  "level": "kozep",
+  "source": "generated",
+  "topic": "kombinatorika-grafok",
+  "title": "II/B: osztálykirándulás – kördiagram, bizottság, költség, sorsolás",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "writing",
+  "type": "osszetett",
+  "taskNumber": 2,
+  "situation": "Egy 30 fős osztály (18 lány és 12 fiú) kétnapos kirándulást szervez.\n\na) Egy szavazáson 12 tanuló a Balatont, 10 tanuló Egert, 8 tanuló Sopront választotta úticélnak. Az eredményt kördiagramon ábrázolják. Hány fokos középponti szög tartozik a kördiagramon a Balatont választóknak? (3 pont)\n\nb) A szervezéshez 5 fős bizottságot választanak, amelyben pontosan 3 lány és 2 fiú van. Hányféleképpen állítható össze ez a bizottság? (4 pont)\n\nc) A busz bérlése összesen 150 000 Ft, amelyet az osztály tanulói egyenlően fizetnek. A szállás fejenként és éjszakánként 6500 Ft (két éjszakát maradnak), a múzeumi belépő fejenként 1800 Ft. Mennyibe kerül a kirándulás egy tanulónak? (4 pont)\n\nd) A kiránduláson tombolát tartanak: 30 cédula közül 5-ön van nyeremény. Két tanuló egymás után, visszatevés nélkül húz egy-egy cédulát. Mennyi a valószínűsége, hogy pontosan egyikük nyer? Az eredményt három tizedesjegyre kerekítve is adja meg! (6 pont)",
+  "points": [
+    { "id": "p1", "text": "a) A Balatont választók aránya és a hozzá tartozó középponti szög (3 pont)" },
+    { "id": "p2", "text": "b) A 3 lány és 2 fiú kiválasztása kombinációkkal, a lehetőségek száma (4 pont)" },
+    { "id": "p3", "text": "c) Egy tanuló buszköltsége, szállása, belépője és ezek összege (4 pont)" },
+    { "id": "p4", "text": "d) A „pontosan egyikük nyer” két esetének valószínűsége és összegük, három tizedesjegyre (6 pont)" }
+  ],
+  "suggestedMinutes": 35,
+  "usefulPhrases": [
+    { "en": "középponti szög = (rész/egész)·360°", "hu": "Kördiagramon a teljes kör 360° felel meg az összes adatnak." },
+    { "en": "C(n; k) = n!/(k!·(n−k)!)", "hu": "Kombináció: k elem kiválasztása n-ből, ha a sorrend nem számít." },
+    { "en": "egymástól független választások → szorzás", "hu": "A lányok és a fiúk kiválasztásának lehetőségeit összeszorozzuk." },
+    { "en": "egy főre jutó költség = összköltség / fő", "hu": "A közös buszköltséget 30-cal osztjuk." },
+    { "en": "P(pontosan egy) = P(nyer, nem nyer) + P(nem nyer, nyer)", "hu": "A két sorrend egymást kizáró esemény, valószínűségük összeadódik." },
+    { "en": "visszatevés nélkül: a második húzásnál 29 cédula marad", "hu": "A nevező és a kedvező esetek száma is változik a második húzásra." }
+  ],
+  "checklistExtra": [],
+  "modelAnswer": {
+    "text": "a) A Balatont a 30 tanulóból 12 választotta, ez az összes szavazat 12/30 = 2/5 része. A kördiagramon a teljes kör, 360° felel meg a 30 szavazatnak, ezért a Balatonhoz tartozó középponti szög 360°·12/30 = 144°.\nA Balatont választóknak 144°-os középponti szög tartozik.\n\nb) A 3 lányt a 18 lány közül a sorrendre való tekintet nélkül C(18; 3) = (18·17·16)/(3·2·1) = 816-féleképpen, a 2 fiút a 12 fiú közül C(12; 2) = (12·11)/2 = 66-féleképpen választhatjuk ki. A lányok és a fiúk kiválasztása egymástól független, így a lehetőségek száma a kettő szorzata: 816·66 = 53 856.\nA bizottság 53 856-féleképpen állítható össze.\n\nc) A busz egy tanulóra eső költsége 150 000 : 30 = 5000 Ft. A szállás két éjszakára 2·6500 = 13 000 Ft, a belépő 1800 Ft.\nEgy tanuló összes költsége: 5000 + 13 000 + 1800 = 19 800 Ft.\nA kirándulás egy tanulónak 19 800 Ft-ba kerül.\n\nd) „Pontosan egyikük nyer” két, egymást kizáró módon következhet be: az első nyer és a második nem, vagy az első nem nyer és a második igen. Visszatevés nélkül húznak, ezért a második húzásnál 29 cédula marad.\nP(első nyer, második nem) = (5/30)·(25/29) = 125/870,\nP(első nem nyer, második nyer) = (25/30)·(5/29) = 125/870.\nA keresett valószínűség a két eset összege: 125/870 + 125/870 = 250/870 = 25/87 ≈ 0,287.\nAnnak a valószínűsége, hogy pontosan egyikük nyer, 25/87 ≈ 0,287.",
+    "pointsCovered": [
+      { "id": "p1", "quote": "a Balatonhoz tartozó középponti szög 360°·12/30 = 144°." },
+      { "id": "p2", "quote": "a lehetőségek száma a kettő szorzata: 816·66 = 53 856." },
+      { "id": "p3", "quote": "Egy tanuló összes költsége: 5000 + 13 000 + 1800 = 19 800 Ft." },
+      { "id": "p4", "quote": "A keresett valószínűség a két eset összege: 125/870 + 125/870 = 250/870 = 25/87 ≈ 0,287." }
+    ],
+    "notes": [
+      "Eredmény: a négy részfeladat eredménye (144°; 53 856; 19 800 Ft; 25/87 ≈ 0,287) helyes és a kért alakban szerepel.",
+      "Indoklás: a megoldás kimondja, miért kombinációt használ (a sorrend nem számít), miért szoroz (független választások), és miért ad össze a d) részben (egymást kizáró esetek) – a vizsgán ezek a mondatok érnek pontot, nem csak a számok.",
+      "Modell: a d) részben a „visszatevés nélkül” feltételt helyesen kezeli (a második húzásnál 29 cédula), ami a leggyakoribb hibaforrás az ilyen feladatokban; minden rész szöveges válasszal, mértékegységgel zárul."
+    ]
+  }
+}

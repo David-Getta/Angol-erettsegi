@@ -1,0 +1,150 @@
+{
+  "schemaVersion": 1,
+  "id": "tor-rd-emelt-vilagvalsag-adatsor",
+  "subject": "tortenelem",
+  "revision": 1,
+  "level": "emelt",
+  "source": "generated",
+  "topic": "vilaghaboruk-kora",
+  "title": "A nagy gazdasági világválság és a New Deal",
+  "createdAt": "2026-11-05",
+  "tags": [
+    "egyetemes"
+  ],
+  "section": "reading",
+  "type": "adatsor",
+  "instructions": "A feladat az 1929–1933-as gazdasági világválsággal és az amerikai válaszlépésekkel kapcsolatos. Válaszoljon a kérdésekre a források és ismeretei segítségével! A 0. a megoldott példa.",
+  "passage": {
+    "title": "Az Egyesült Államok a válság idején",
+    "sourceNote": "Az I. forrás adatai kerekített értékek. A II. forrás a gyakorlás céljára írt, korhű stílusú szöveg.",
+    "blocks": [
+      {
+        "heading": "I. forrás – A munkanélküliségi ráta az Egyesült Államokban (a munkavállalók százalékában, kerekítve)",
+        "text": "1929: kb. 3 %; 1933: kb. 25 %; 1937: kb. 14 %; 1938: kb. 19 %."
+      },
+      {
+        "heading": "II. forrás – Egy amerikai elnök rádióbeszédéből, 1934",
+        "text": "„Nem várhatunk tovább arra, hogy a piac magától rendbe jöjjön. A kormány munkát ad azoknak, akiknek nincs: utakat, gátakat, iskolákat építünk. Felügyelet alá vonjuk a bankokat, hogy a megtakarítások ne vesszenek el egyik napról a másikra, és gondoskodunk arról, hogy az idős és a munkanélküli ne maradjon támasz nélkül.”"
+      }
+    ]
+  },
+  "example": {
+    "id": "0",
+    "kind": "text",
+    "prompt": "Hány százalék volt az I. forrás szerint a munkanélküliségi ráta 1933-ban?",
+    "answer": [
+      "25",
+      "25%",
+      "kb. 25%",
+      "kb. 25",
+      "25 százalék"
+    ],
+    "category": "adatleolvasas",
+    "explanation": "Helyes: kb. 25 %. Ez a válság mélypontja: négy munkavállalóból egy munka nélkül maradt.",
+    "maxWords": 3
+  },
+  "items": [
+    {
+      "id": "1",
+      "kind": "tf",
+      "prompt": "Az I. forrás szerint 1933-ban az amerikai munkavállalók mintegy negyede munkanélküli volt.",
+      "answer": "T",
+      "category": "adatleolvasas",
+      "explanation": "Igaz. A 25 % éppen egynegyed: minden negyedik munkavállaló nem talált munkát."
+    },
+    {
+      "id": "2",
+      "kind": "tf",
+      "prompt": "Az I. forrás szerint a munkanélküliség 1933 és 1938 között folyamatosan csökkent.",
+      "answer": "F",
+      "category": "adatleolvasas",
+      "explanation": "Hamis. 1933 és 1937 között 25 %-ról 14 %-ra csökkent, de 1938-ra újra 19 %-ra emelkedett – a csökkenés tehát nem volt folyamatos."
+    },
+    {
+      "id": "3",
+      "kind": "text",
+      "prompt": "Hogyan nevezzük a II. forrásban leírt amerikai gazdaságpolitikát?",
+      "answer": [
+        "New Deal",
+        "New Deal-politika",
+        "New Deal politika",
+        "új irányvonal",
+        "új osztás"
+      ],
+      "category": "fogalomhasznalat",
+      "explanation": "Helyes: New Deal (új irányvonal). Franklin D. Roosevelt 1933-tól bevezetett programja állami beavatkozással (közmunkák, bankfelügyelet, szociális biztonság) igyekezett kivezetni az országot a válságból.",
+      "maxWords": 3
+    },
+    {
+      "id": "4",
+      "kind": "choice",
+      "prompt": "Melyik gazdaságpolitikai elvvel áll összhangban a II. forrás?",
+      "options": [
+        {
+          "key": "A",
+          "text": "az állam beavatkozik a gazdaságba, és közmunkákkal élénkíti a keresletet"
+        },
+        {
+          "key": "B",
+          "text": "az állam nem avatkozik be, a piac önszabályozására bízza a kilábalást"
+        },
+        {
+          "key": "C",
+          "text": "a termelőeszközöket államosítják, és központi tervet vezetnek be"
+        },
+        {
+          "key": "D",
+          "text": "a kivitelt minden eszközzel növelik, a behozatalt tiltják, hogy nemesfém halmozódjon fel"
+        }
+      ],
+      "answer": "A",
+      "category": "forras-sajat-tudas",
+      "explanation": "Helyes: A. A forrás szerint „nem várhatunk tovább arra, hogy a piac magától rendbe jöjjön”, és a kormány munkát ad (utak, gátak). Ez a keynesi elveknek megfelelő állami beavatkozás: a közmunkák jövedelmet teremtenek, így nő a kereslet.",
+      "wrongOptions": {
+        "B": "A forrás éppen elveti a piac önszabályozására való várakozást (laissez-faire).",
+        "C": "A New Deal a piacgazdaság keretei között maradt; államosítás és központi tervezés a szovjet tervgazdaság jellemzője volt.",
+        "D": "Ez a merkantilizmus kora újkori elve, nem a New Deal-é."
+      }
+    },
+    {
+      "id": "5",
+      "kind": "choice",
+      "prompt": "Mi magyarázza az I. forrás 1938-as adatának változását 1937-hez képest?",
+      "options": [
+        {
+          "key": "A",
+          "text": "A kormány 1937-ben visszafogta az állami kiadásokat, és a gazdaság újra visszaesett."
+        },
+        {
+          "key": "B",
+          "text": "Kitört a második világháború, és leálltak az európai exportpiacok."
+        },
+        {
+          "key": "C",
+          "text": "Az Egyesült Államok belépett a második világháborúba."
+        },
+        {
+          "key": "D",
+          "text": "Megszűnt a New Deal, mert Roosevelt elvesztette az elnökválasztást."
+        }
+      ],
+      "answer": "A",
+      "category": "ok-okozat",
+      "explanation": "Helyes: A. A javuló helyzet miatt a kormány 1937-ben csökkentette a kiadásokat (és szigorodott a pénzpolitika); a kereslet visszaesett, és 1937–38-ban új recesszió következett – ez is mutatja, mennyire az állami élénkítés tartotta életben a fellendülést.",
+      "wrongOptions": {
+        "B": "A második világháború 1939 szeptemberében tört ki, az 1938-as adat ezt megelőzi.",
+        "C": "Az Egyesült Államok csak 1941 decemberében, Pearl Harbor után lépett be a háborúba.",
+        "D": "Roosevelt 1936-ban fölényesen újraválasztották, és 1945-ig volt elnök."
+      }
+    },
+    {
+      "id": "6",
+      "kind": "tf",
+      "prompt": "A II. forrásban említett gondoskodást az idősekről és a munkanélküliekről a New Deal egyik törvénye, a társadalombiztosítási törvény (1935) valósította meg.",
+      "answer": "T",
+      "category": "forras-sajat-tudas",
+      "explanation": "Igaz. Az 1935-ös Social Security Act vezette be az Egyesült Államokban az öregségi nyugdíjat és a munkanélküli-segélyt – ez a forrás utolsó mondatában ígért szociális biztonság megvalósulása."
+    }
+  ],
+  "suggestedMinutes": 8
+}

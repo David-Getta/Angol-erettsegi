@@ -1,0 +1,302 @@
+{
+  "schemaVersion": 1,
+  "id": "nem-gr-preposition",
+  "subject": "nemet",
+  "level": "kozep",
+  "source": "generated",
+  "topic": "nyelvtan",
+  "title": "Elöljárószók és vonzatuk",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "grammar",
+  "type": "lesson",
+  "category": "preposition",
+  "summaryHu": "A német elöljárószó a főnév előtt áll, és meghatározza az esetét: vannak Akkusativos, Dativos, Genitivos és ún. váltakozó (Wechselpräpositionen) elöljárók, amelyek után a hová? kérdésre Akkusativ, a hol? kérdésre Dativ áll. A magyar ezt mind ragokkal fejezi ki (-ba, -ban, -ra, -on), ezért a magyar tanulóknak a helyes elöljáró kiválasztása (nach, zu vagy in?), az eset és az időhatározók (am, im, um, vor, in) okozzák a legtöbb gondot. A nyitott kloze-ban az elöljáró az egyik leggyakoribb megoldás.",
+  "rules": [
+    {
+      "title": "Akkusativos elöljárók: durch, für, gegen, ohne, um, bis",
+      "explanation": "Mindig Akkusativ áll utánuk: durch (át, keresztül), für (számára, -ért), gegen (ellen, felé; körül időpontnál), ohne (nélkül), um (körül; óra pontos időpontja), bis (-ig, többnyire névelő nélkül vagy más elöljáróval: bis morgen, bis zum Bahnhof). Az entlang (mentén) általában a főnév után áll, Akkusativval: den Fluss entlang.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "Das Geschenk ist für meinen Vater.",
+          "hu": "Az ajándék apukámnak szól."
+        },
+        {
+          "en": "Ohne dich gehe ich nicht ins Konzert.",
+          "hu": "Nélküled nem megyek a koncertre."
+        },
+        {
+          "en": "Wir gehen durch den Park nach Hause.",
+          "hu": "A parkon át megyünk haza."
+        }
+      ]
+    },
+    {
+      "title": "Dativos elöljárók: aus, bei, mit, nach, seit, von, zu, gegenüber",
+      "explanation": "Mindig Dativ áll utánuk: aus (-ból, -ből), bei (-nál, -nél; valakinél), mit (-val, -vel), nach (után; irány országba, városba), seit (óta), von (-tól, -től; -ról, -ről), zu (-hoz, -hez, -höz), gegenüber (szemben). A zu és a von gyakran összevonódik: zum, zur, vom; a bei: beim.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "Ich fahre mit dem Bus zur Schule.",
+          "hu": "Busszal megyek iskolába."
+        },
+        {
+          "en": "Nach dem Unterricht bin ich oft bei meiner Oma.",
+          "hu": "Tanítás után gyakran vagyok a nagymamámnál."
+        },
+        {
+          "en": "Seit einem Jahr lerne ich Gitarre.",
+          "hu": "Egy éve tanulok gitározni."
+        }
+      ]
+    },
+    {
+      "title": "Váltakozó elöljárók: hová? → Akkusativ, hol? → Dativ",
+      "explanation": "Az an, auf, hinter, in, neben, über, unter, vor, zwischen után Akkusativ áll, ha irányt, helyváltoztatást fejez ki (wohin?), és Dativ, ha helyet (wo?). Jellemző igepárok: legen (fektet, tesz) – liegen (fekszik), stellen (állít) – stehen (áll), setzen (ültet) – sitzen (ül), hängen (akaszt: hängte, gehängt) – hängen (lóg: hing, gehangen).",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "Ich lege das Buch auf den Tisch. – Das Buch liegt auf dem Tisch.",
+          "hu": "Az asztalra teszem a könyvet. – A könyv az asztalon van.",
+          "note": "wohin? den – wo? dem."
+        },
+        {
+          "en": "Wir gehen ins Kino. – Wir sind im Kino.",
+          "hu": "Moziba megyünk. – Moziban vagyunk."
+        },
+        {
+          "en": "Häng das Bild an die Wand! – Das Bild hängt schon an der Wand.",
+          "hu": "Akaszd fel a képet a falra! – A kép már a falon lóg."
+        }
+      ]
+    },
+    {
+      "title": "Hová és hol? nach, zu, in, bei, an, auf",
+      "explanation": "Hová?: nach + névelő nélküli ország/város és nach Hause (haza); in + Akkusativ a névelős országnév és a zárt hely előtt, ahová bemegyünk (in die Schweiz, ins Kino, in die Stadt); zu + személy, intézmény, ahová odamegyünk (zu Oma, zum Arzt, zum Bahnhof, zur Schule); an + víz, part (ans Meer, an den See); auf + nyílt tér, rendezvény (auf den Markt, auf eine Party). Hol?: in + Dativ (in Wien, im Kino), bei + személy (bei Oma, beim Arzt), zu Hause (otthon), an + Dativ (am Meer), auf + Dativ (auf dem Land, auf der Party).",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "Im Sommer fahren wir nach Italien ans Meer.",
+          "hu": "Nyáron Olaszországba megyünk a tengerhez."
+        },
+        {
+          "en": "Nach der Schule gehe ich nach Hause. Am Nachmittag bin ich zu Hause.",
+          "hu": "Iskola után hazamegyek. Délután otthon vagyok.",
+          "note": "nach Hause = haza, zu Hause = otthon."
+        },
+        {
+          "en": "Heute Nachmittag bin ich beim Zahnarzt.",
+          "hu": "Ma délután fogorvosnál vagyok."
+        }
+      ]
+    },
+    {
+      "title": "Időhatározók: um, am, im, in, vor, seit",
+      "explanation": "um + pontos időpont (um acht Uhr); am + nap, dátum, napszak (am Montag, am 3. Mai, am Abend – de: in der Nacht); im + hónap, évszak (im Juli, im Winter); évszám elöljáró nélkül vagy im Jahr (2025 / im Jahr 2025, nem in 2025); in + időtartam = valamennyi idő múlva (in zwei Wochen); vor + Dativ = valamennyi idővel ezelőtt (vor einem Jahr); seit + Dativ = óta (seit 2020, seit zwei Monaten); von … bis (-tól -ig).",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "Der Kurs beginnt am Montag um halb fünf.",
+          "hu": "A tanfolyam hétfőn fél ötkor kezdődik."
+        },
+        {
+          "en": "In zwei Wochen habe ich Geburtstag.",
+          "hu": "Két hét múlva lesz a születésnapom."
+        },
+        {
+          "en": "Vor drei Jahren sind wir nach Győr umgezogen.",
+          "hu": "Három évvel ezelőtt Győrbe költöztünk."
+        }
+      ]
+    },
+    {
+      "title": "Genitivos elöljárók: wegen, trotz, während, statt",
+      "explanation": "A wegen (miatt), trotz (ellenére), während (alatt, közben) és (an)statt (helyett) írásban Genitivet vonz: wegen des Regens, trotz der Kälte, während der Ferien. A beszélt nyelvben gyakran Dativot hallani (wegen dem Regen), de írásban a Genitiv a helyes. Választékos, főleg írott elöljárók még: innerhalb, außerhalb, aufgrund.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "Wegen des Streiks fuhren keine Züge.",
+          "hu": "A sztrájk miatt nem jártak a vonatok."
+        },
+        {
+          "en": "Trotz des Regens haben wir Fußball gespielt.",
+          "hu": "Az eső ellenére fociztunk."
+        },
+        {
+          "en": "Während der Ferien arbeite ich in einem Café.",
+          "hu": "A szünidőben egy kávézóban dolgozom."
+        }
+      ]
+    }
+  ],
+  "commonMistakes": [
+    {
+      "wrong": "Am Wochenende fahre ich in Österreich.",
+      "right": "Am Wochenende fahre ich nach Österreich.",
+      "why": "Hová? kérdésre a névelő nélküli ország- és városnevek előtt nach áll. Az in Österreich helyet jelöl (Ausztriában)."
+    },
+    {
+      "wrong": "Nach dem Training gehe ich zu Hause.",
+      "right": "Nach dem Training gehe ich nach Hause.",
+      "why": "nach Hause = haza (irány), zu Hause = otthon (hely). A gehen irányt fejez ki, ezért nach Hause."
+    },
+    {
+      "wrong": "Das Poster hängt an die Wand.",
+      "right": "Das Poster hängt an der Wand.",
+      "why": "A hängen (lóg) helyet jelöl (wo?), ezért a váltakozó elöljáró után Dativ áll. Akkusativ csak irányt jelölő igével: Ich hänge das Poster an die Wand."
+    },
+    {
+      "wrong": "Wir treffen uns am 8 Uhr.",
+      "right": "Wir treffen uns um 8 Uhr.",
+      "why": "Pontos óraidő előtt um áll. Az am napok, dátumok és napszakok előtt használatos (am Freitag, am Abend)."
+    },
+    {
+      "wrong": "Vor zwei Wochen fahre ich nach Wien. (= két hét múlva)",
+      "right": "In zwei Wochen fahre ich nach Wien.",
+      "why": "in + időtartam = valamennyi idő múlva (jövő), vor + időtartam = valamennyi idővel ezelőtt (múlt). A két elöljáró jelentése ellentétes."
+    },
+    {
+      "wrong": "Ich fahre jeden Tag mit den Bus.",
+      "right": "Ich fahre jeden Tag mit dem Bus.",
+      "why": "A mit mindig Dativot vonz; a der Bus Dativ alakja dem Bus. A den Akkusativ (vagy többes számú Dativ)."
+    }
+  ],
+  "examTips": [
+    "Nyitott kloze-ban, ha a hiány után névelő + főnév áll, nézd meg a névelő esetét: a dem/der (Dativ) vagy den (Akkusativ) sokszor elárulja, milyen elöljáró kell, és fordítva.",
+    "Váltakozó elöljárónál mindig kérdezd meg: wo? vagy wohin? A mozgást, irányt jelölő igék (gehen, fahren, legen, stellen, hängen – akaszt) Akkusativot, a helyet jelölők (sein, liegen, stehen, wohnen, hängen – lóg) Dativot kívánnak.",
+    "Írásban az időpontok (am Samstag um 10 Uhr, im Juli, in zwei Wochen) szinte minden levélben előfordulnak – ezeknél ne hibázz, mert könnyen megjegyezhetők.",
+    "Tanuld meg a Dativos elöljárók listáját (aus, bei, mit, nach, seit, von, zu) és az Akkusativosakat (durch, für, gegen, ohne, um) egy-egy mondóka segítségével – a nyelvtani feladatokban ezek biztos pontok."
+  ],
+  "practice": [
+    {
+      "id": "1",
+      "kind": "choice",
+      "prompt": "Am Wochenende fahren wir ___ Italien.",
+      "options": [
+        {
+          "key": "A",
+          "text": "nach"
+        },
+        {
+          "key": "B",
+          "text": "in"
+        },
+        {
+          "key": "C",
+          "text": "zu"
+        },
+        {
+          "key": "D",
+          "text": "bei"
+        }
+      ],
+      "answer": "A",
+      "category": "preposition",
+      "explanation": "Helyes: nach. Irányt (hová?) fejezünk ki egy névelő nélküli országnévvel, ilyenkor nach áll: nach Italien.",
+      "wrongOptions": {
+        "B": "Az in irányjelölésnél csak névelős országnévvel áll (in die Schweiz); az Italien névelő nélküli.",
+        "C": "A zu személyekhez, intézményekhez, épületekhez vezető irányt jelöl (zum Arzt), országnév előtt nem használjuk.",
+        "D": "A bei helyet jelöl (valakinél, valami közelében), irányt nem."
+      }
+    },
+    {
+      "id": "2",
+      "kind": "text",
+      "prompt": "Ich stelle die Vase auf ___ (der) Tisch.",
+      "cue": "der",
+      "answer": [
+        "den"
+      ],
+      "category": "preposition",
+      "explanation": "Helyes: den. A stellen irányt fejez ki (hová teszem?), ezért a váltakozó auf után Akkusativ áll; a der Tisch hímnemű → den Tisch."
+    },
+    {
+      "id": "3",
+      "kind": "choice",
+      "prompt": "Wir treffen uns ___ halb acht vor dem Kino.",
+      "options": [
+        {
+          "key": "A",
+          "text": "am"
+        },
+        {
+          "key": "B",
+          "text": "in"
+        },
+        {
+          "key": "C",
+          "text": "im"
+        },
+        {
+          "key": "D",
+          "text": "um"
+        }
+      ],
+      "answer": "D",
+      "category": "preposition",
+      "explanation": "Helyes: um. Pontos óraidő (halb acht = fél nyolc) előtt az um elöljáró áll.",
+      "wrongOptions": {
+        "A": "Az am napok, dátumok és napszakok előtt áll (am Montag, am Abend), óraidő előtt nem.",
+        "B": "Az in + időtartam azt jelenti, hogy valamennyi idő múlva (in zwei Stunden); pontos időpont előtt nem áll.",
+        "C": "Az im hónapok és évszakok előtt áll (im Mai, im Winter)."
+      }
+    },
+    {
+      "id": "4",
+      "kind": "text",
+      "prompt": "___ zwei Monaten habe ich Geburtstag – ich freue mich schon auf die Party!",
+      "answer": [
+        "In"
+      ],
+      "category": "preposition",
+      "explanation": "Helyes: In. Jövőbeli eseményről van szó (habe … Geburtstag, freue mich schon), ezért in + Dativ = valamennyi idő múlva: in zwei Monaten (két hónap múlva). A vor zwei Monaten a múltra vonatkozna."
+    },
+    {
+      "id": "5",
+      "kind": "choice",
+      "prompt": "Das Fußballspiel ist ___ des starken Regens nicht ausgefallen.",
+      "options": [
+        {
+          "key": "A",
+          "text": "trotz"
+        },
+        {
+          "key": "B",
+          "text": "wegen"
+        },
+        {
+          "key": "C",
+          "text": "statt"
+        },
+        {
+          "key": "D",
+          "text": "mit"
+        }
+      ],
+      "answer": "A",
+      "category": "preposition",
+      "explanation": "Helyes: trotz. A meccset az erős eső ELLENÉRE nem mondták le – ezt a trotz + Genitiv fejezi ki.",
+      "wrongOptions": {
+        "B": "A wegen okot jelöl (miatt); az eső nem lehet az oka annak, hogy a meccs nem maradt el – logikailag ellentmondásos.",
+        "C": "A statt jelentése „helyett”, ami itt értelmetlen.",
+        "D": "A mit Dativot vonz (mit dem Regen), a des starken Regens Genitiv, és a jelentés sem illik ide."
+      }
+    },
+    {
+      "id": "6",
+      "kind": "text",
+      "prompt": "Ich kann heute Nachmittag nicht kommen, ich bin ___ Zahnarzt.",
+      "answer": [
+        "beim"
+      ],
+      "category": "preposition",
+      "explanation": "Helyes: beim. Hol vagyok? – személynél, orvosnál: bei + Dativ, összevonva bei dem → beim. A zum irányt jelölne (zum Zahnarzt gehen), a sein ige mellé hely kell."
+    }
+  ],
+  "relatedCategories": [
+    "case",
+    "verb-rection",
+    "article-declension"
+  ]
+}

@@ -1,0 +1,123 @@
+{
+  "schemaVersion": 1,
+  "id": "bio-gd-writing-adatelemzes",
+  "subject": "biologia",
+  "revision": 1,
+  "level": "kozep",
+  "source": "generated",
+  "topic": "utmutato",
+  "title": "Ábra- és adatelemzés",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "guide",
+  "type": "writing",
+  "target": "adatelemzes",
+  "summaryHu": "Az adatelemző feladatban egy szövegben leírt táblázat, grafikon vagy ábra alapján kell 3–5 kérdésre mondatokban válaszolni: leolvasni, összehasonlítani, változást leírni, magyarázni és következtetni. A teljes pontszámhoz a válaszoknak a konkrét adatokra kell hivatkozniuk, és a biológiai okot is meg kell adniuk.",
+  "steps": [
+    {
+      "title": "Az adatok áttekintése",
+      "explanation": "Nézd meg a táblázat fejlécét, a mértékegységeket, az időpontokat vagy csoportokat, és a megadott határértékeket. Keresd meg a szélsőértékeket (minimum, maximum) és a változás irányát.",
+      "tips": [
+        "Karikázd be a kérdésekhez szükséges értékeket.",
+        "Ha határértéket adnak meg (pl. egészséges tartomány), azzal minden adatot össze kell vetni."
+      ]
+    },
+    {
+      "title": "Leírás adatokkal",
+      "explanation": "A változást szakaszokra bontva, konkrét értékekkel írd le: honnan hová, mikor, mennyit változott.",
+      "tips": [
+        "„A vércukorszint 30 percre 4,8-ról 7,6 mmol/l-re emelkedett, majd 120 percre 5,1 mmol/l-re csökkent.”"
+      ]
+    },
+    {
+      "title": "Magyarázat",
+      "explanation": "A leírt változás biológiai okát add meg: melyik folyamat, melyik szerv vagy hormon felelős érte.",
+      "tips": [
+        "Különítsd el: mi történik (leírás) – miért történik (magyarázat)."
+      ]
+    },
+    {
+      "title": "Következtetés és alkalmazás",
+      "explanation": "Vond le a kérdezett következtetést (pl. melyik személy beteg, milyen hatású a tényező), és indokold az adatokkal. Ha javaslatot kérnek, az is biológiai indoklással álljon.",
+      "tips": [
+        "„B lehet cukorbeteg, mert éhgyomri értéke (7,9 mmol/l) meghaladja a 7,0 mmol/l-es határt.”"
+      ]
+    }
+  ],
+  "phrases": [
+    {
+      "group": "Leolvasás",
+      "en": "A legkisebb érték … órakor volt (… mg/l).",
+      "hu": "szélsőérték megadása"
+    },
+    {
+      "group": "Leírás",
+      "en": "… és … között … -ról … -ra nőtt / csökkent.",
+      "hu": "változás leírása adatokkal"
+    },
+    {
+      "group": "Összehasonlítás",
+      "en": "A … értékei végig magasabbak, mint a …",
+      "hu": "két adatsor összevetése"
+    },
+    {
+      "group": "Határérték",
+      "en": "… , ami meghaladja a … határértéket.",
+      "hu": "adat összevetése referenciaértékkel"
+    },
+    {
+      "group": "Magyarázat",
+      "en": "A változás oka, hogy …",
+      "hu": "biológiai ok megadása"
+    },
+    {
+      "group": "Számítás",
+      "en": "A változás mértéke (… − …) / … · 100 = … %.",
+      "hu": "relatív változás számítása"
+    },
+    {
+      "group": "Következtetés",
+      "en": "Az adatokból arra következtethetünk, hogy …",
+      "hu": "következtetés"
+    },
+    {
+      "group": "Óvatosság",
+      "en": "Az adatok együttjárást mutatnak, de az ok-okozati kapcsolathoz további vizsgálat kell.",
+      "hu": "korreláció és ok-okozat elkülönítése"
+    }
+  ],
+  "mistakes": [
+    {
+      "wrong": "„Az oxigéntartalom napközben nő.”",
+      "right": "„Az oxigéntartalom 4 órakor 4,8 mg/l, 16 órakor 12,0 mg/l, tehát napközben nő.”",
+      "why": "Az adatelemzésben a konkrét érték nélküli leírás csak részpontot ér."
+    },
+    {
+      "wrong": "„B cukorbeteg.” (indoklás nélkül)",
+      "right": "„B lehet cukorbeteg, mert a 120. percben mért 13,4 mmol/l nagyobb a 11,1 mmol/l-es határnál.”",
+      "why": "A következtetést az adatokkal kell alátámasztani."
+    },
+    {
+      "wrong": "„A meleg miatt több az oxigén.”",
+      "right": "„A melegebb víz kevesebb oxigént old; a délutáni maximumot a fotoszintézis okozza.”",
+      "why": "Az együttjárásból nem következik ok-okozat."
+    },
+    {
+      "wrong": "A mértékegység elhagyása.",
+      "right": "Minden adat mértékegységgel.",
+      "why": "Mértékegység nélkül az adat nem egyértelmű."
+    }
+  ],
+  "checklist": [
+    "Minden állításomhoz konkrét adatot idéztem?",
+    "A határértékekkel összevetettem az adatokat?",
+    "Elkülönítettem a leírást és a magyarázatot?",
+    "A következtetést indokoltam?",
+    "Minden adatnál ott van a mértékegység?"
+  ],
+  "timing": "Kb. 25 perc: 5 perc az adatok áttekintése és a fontos értékek bejelölése, 17 perc írás, 3 perc ellenőrzés (adatok és mértékegységek).",
+  "levelNotes": {
+    "kozep": "Középszinten egy-két adatsor vagy egy egyszerű grafikon a jellemző (vércukorgörbe, oxigéntartalom napi változása, pulzus terheléskor); a kérdések leolvasásra, összehasonlításra és egyszerű magyarázatra irányulnak.",
+    "emelt": "Emelt szinten több változó, összetettebb grafikon (pl. fényerősség és CO₂ együttes hatása) vagy számítással kombinált elemzés jöhet; a korlátozó tényezők és a következtetés korlátainak megfogalmazása is elvárás."
+  }
+}

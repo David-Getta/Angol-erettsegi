@@ -1,0 +1,302 @@
+{
+  "schemaVersion": 1,
+  "id": "dig-gr-diagram",
+  "subject": "digitalis-kultura",
+  "revision": 1,
+  "level": "kozep",
+  "source": "generated",
+  "topic": "nyelvtan",
+  "title": "Diagramok és adatmegjelenítés",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "grammar",
+  "type": "lesson",
+  "category": "diagram",
+  "summaryHu": "A táblázatkezelési feladatok szinte mindig kérnek egy diagramot, és ehhez néha feltételes formázást is. A pont a helyes diagramtípusért, a pontos adattartományért (fejléccel, összegsor nélkül) és a kért feliratokért (cím, tengelycím, jelmagyarázat) jár. A leggyakoribb hiba a rossz típus (kördiagram időbeli adatra) és a rossz kijelölés.",
+  "rules": [
+    {
+      "title": "A diagramtípus kiválasztása",
+      "explanation": "Oszlopdiagram: kategóriák összehasonlítása (pl. napok, osztályok). Sávdiagram: ugyanez vízszintesen, hosszú kategórianevekhez. Vonaldiagram: időbeli változás, trend (hónapok, napok). Kördiagram: egyetlen egész részekre bontása (megoszlás, százalék). Pont (XY) diagram: két számadat kapcsolata. Halmozott oszlop: a részek és az egész egyszerre.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "Havi átlaghőmérséklet egy évre",
+          "hu": "vonaldiagram"
+        },
+        {
+          "en": "A tanulók megoszlása évfolyamonként",
+          "hu": "kördiagram"
+        },
+        {
+          "en": "Tanulással töltött órák és a pontszám",
+          "hu": "pont (XY) diagram"
+        }
+      ]
+    },
+    {
+      "title": "Az adattartomány kijelölése",
+      "explanation": "A fejléccellákat is jelöld ki, mert ebből lesz az adatsor neve és a kategóriatengely felirata. Nem szomszédos tartományokat a Ctrl nyomva tartásával jelölsz ki. Az összegsort, átlagsort ne jelöld ki, ha nem kérik, mert torzítja a diagramot.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "C1:G1 + Ctrl + C17:G17",
+          "hu": "napnevek és napi összesek"
+        },
+        {
+          "en": "Adatok kijelölése > Vízszintes tengely feliratai",
+          "hu": "utólag is megadhatók a kategóriák"
+        }
+      ]
+    },
+    {
+      "title": "A diagram elemei",
+      "explanation": "Diagramcím, tengelycímek (mértékegységgel), jelmagyarázat (helye vagy kikapcsolása), adatfeliratok, rácsvonalak, tengelyskála. Ezeket a Diagramelemek (+) gombbal vagy a Diagramtervezés lapon állítod be (Calc: a diagram szerkesztő módjában a Beszúrás menüben).",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "Tengelycímek > Elsődleges függőleges: perc",
+          "hu": "a függőleges tengely felirata"
+        },
+        {
+          "en": "Jelmagyarázat: Lent / Nincs",
+          "hu": "helye vagy elrejtése"
+        }
+      ]
+    },
+    {
+      "title": "Tengelyek és a félrevezető ábrázolás",
+      "explanation": "Oszlop- és sávdiagramnál a függőleges tengely 0-ról induljon, különben a kis különbségek nagynak tűnnek. Dátumtengelynél figyelj, hogy a program dátumként kezelje a kategóriákat; a sorok és oszlopok felcserélésével (Sor/oszlop váltása) módosítható, mi legyen az adatsor.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "Tengely formázása > Minimum: 0",
+          "hu": "torzításmentes oszlopdiagram"
+        },
+        {
+          "en": "Sor/oszlop váltása",
+          "hu": "az adatsorok és a kategóriák felcserélése"
+        }
+      ]
+    },
+    {
+      "title": "Feltételes formázás",
+      "explanation": "A cella formátuma az értéke vagy egy képlet eredménye szerint változik, és adatváltozáskor magától frissül: cellakiemelési szabályok (nagyobb, kisebb, között), felső/alsó 10, adatsávok, színskálák, ikonkészletek, képlet alapú szabály (a teljes sor kiemeléséhez vegyes hivatkozással: =$J2<=3).",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "Feltételes formázás > Új szabály > Képlet alapján: =$C2=\"N\"",
+          "hu": "a teljes sor kiemelése, ha a C oszlop értéke N"
+        }
+      ]
+    },
+    {
+      "title": "Emelt szint: kombinált diagram, másodlagos tengely",
+      "explanation": "Két, nagyon eltérő nagyságrendű adatsor (pl. bevétel Ft-ban és darabszám) egy diagramon kombinált diagrammal ábrázolható: az egyik oszlop, a másik vonal a másodlagos tengelyen. Mindkét tengelyt címmel kell ellátni.",
+      "emeltOnly": true,
+      "examples": [
+        {
+          "en": "Diagramtípus módosítása > Kombinált: Bevétel – oszlop, Darab – vonal, másodlagos tengely",
+          "hu": "két mértékegység egy ábrán"
+        }
+      ]
+    }
+  ],
+  "commonMistakes": [
+    {
+      "wrong": "Kördiagramot készítek a havi bevételek alakulásáról.",
+      "right": "Vonaldiagram (időbeli változás) vagy oszlopdiagram.",
+      "why": "A kördiagram egy egész részeit mutatja; az időbeli trend rajta nem olvasható le."
+    },
+    {
+      "wrong": "A diagram adattartományába az Összesen sort is kijelölöm.",
+      "right": "Csak a 2–16. sor adatait (és a fejlécet) jelölöm ki.",
+      "why": "Az összeg sokszorosa a többi értéknek, a diagram használhatatlanná válik, és a pontot is elveszíted."
+    },
+    {
+      "wrong": "A jelmagyarázatban „Adatsor1” áll.",
+      "right": "A fejléccellát is kijelölöm, vagy az Adatok kijelölésénél megadom a nevet.",
+      "why": "A javítók a kért feliratokat ellenőrzik; az „Adatsor1” azt mutatja, hogy a tartomány hiányos."
+    },
+    {
+      "wrong": "A feltételnek megfelelő cellákat kézzel színezem pirosra.",
+      "right": "Feltételes formázási szabályt állítok be.",
+      "why": "A kézi színezés nem frissül, ha az adat változik, és a feladat feltételes formázást kér."
+    }
+  ],
+  "examTips": [
+    "A diagramot a feladat utolsó lépéseként készítsd el, amikor a forrásadatok (képletek) már biztosan jók.",
+    "Olvasd el pontosan, milyen feliratokat kér a feladat (cím szövege, tengelycím, jelmagyarázat helye): ezek külön pontot érnek.",
+    "Ha a feladat a diagram helyét is megadja (pl. „a táblázat alá”, „új munkalapra”), azt is tartsd be."
+  ],
+  "practice": [
+    {
+      "kind": "choice",
+      "prompt": "Egy város havi átlaghőmérsékletét kell ábrázolni egy évre. Melyik diagramtípus a legmegfelelőbb?",
+      "options": [
+        {
+          "key": "A",
+          "text": "kördiagram"
+        },
+        {
+          "key": "B",
+          "text": "vonaldiagram"
+        },
+        {
+          "key": "C",
+          "text": "pont (XY) diagram dátum nélkül"
+        },
+        {
+          "key": "D",
+          "text": "halmozott sávdiagram"
+        }
+      ],
+      "answer": "B",
+      "explanation": "B – vonaldiagram: időbeli változást mutat, a hónapok egymás után következnek, a trend jól látható.",
+      "wrongOptions": {
+        "A": "A kördiagram egy egész részeit mutatja; a hónapok hőmérséklete nem egy egész része.",
+        "C": "Kategória (hónap) nélkül az időbeli sorrend nem olvasható le.",
+        "D": "A halmozás itt értelmetlen: nincs összeadható részösszeg."
+      },
+      "id": "1",
+      "category": "diagram"
+    },
+    {
+      "kind": "choice",
+      "prompt": "Az iskola tanulóinak megoszlását kell ábrázolni évfolyamonként (a négy évfolyam együtt az egész iskola). Melyik diagram a legszemléletesebb?",
+      "options": [
+        {
+          "key": "A",
+          "text": "vonaldiagram"
+        },
+        {
+          "key": "B",
+          "text": "kördiagram"
+        },
+        {
+          "key": "C",
+          "text": "pont (XY) diagram"
+        },
+        {
+          "key": "D",
+          "text": "területdiagram"
+        }
+      ],
+      "answer": "B",
+      "explanation": "B – kördiagram: egy egész (az iskola) részekre bontása, a cikkek a részarányt mutatják.",
+      "wrongOptions": {
+        "A": "A vonal időbeli változásra való, az évfolyamok nem idősor.",
+        "C": "Két számváltozó kapcsolatához való.",
+        "D": "A területdiagram is időbeli változásra való."
+      },
+      "id": "2",
+      "category": "diagram"
+    },
+    {
+      "kind": "choice",
+      "prompt": "A diagram jelmagyarázatában „Adatsor1” áll a „Bevétel” helyett. Mi okozta?",
+      "options": [
+        {
+          "key": "A",
+          "text": "A diagram túl kicsi."
+        },
+        {
+          "key": "B",
+          "text": "Az adattartomány kijelölésekor a fejléccellát (Bevétel) kihagytad."
+        },
+        {
+          "key": "C",
+          "text": "Rossz a diagramtípus."
+        },
+        {
+          "key": "D",
+          "text": "A cellák pénznem formátumúak."
+        }
+      ],
+      "answer": "B",
+      "explanation": "B. A sorozat nevét a program a fejléccellából veszi; ha nincs kijelölve, automatikus nevet ad. Javítás: Adatok kijelölése > Adatsor szerkesztése > Név.",
+      "wrongOptions": {
+        "A": "A méret nem befolyásolja a feliratokat.",
+        "C": "Típusváltás után is Adatsor1 maradna.",
+        "D": "A számformátum nem hat az adatsor nevére."
+      },
+      "id": "3",
+      "category": "diagram"
+    },
+    {
+      "kind": "choice",
+      "prompt": "Azt kell megmutatni, hogyan függ össze a tanulással töltött órák száma és a dolgozat pontszáma (30 tanuló adatai). Melyik diagramtípus kell?",
+      "options": [
+        {
+          "key": "A",
+          "text": "oszlopdiagram"
+        },
+        {
+          "key": "B",
+          "text": "kördiagram"
+        },
+        {
+          "key": "C",
+          "text": "pont (XY) diagram"
+        },
+        {
+          "key": "D",
+          "text": "vonaldiagram a tanulók neve szerint"
+        }
+      ],
+      "answer": "C",
+      "explanation": "C – pont (XY) diagram: mindkét tengelyen szám áll, minden tanuló egy pont; az összefüggés (trend) a pontfelhőből látszik.",
+      "wrongOptions": {
+        "A": "Az oszlopdiagram kategóriákat hasonlít össze, nem két számváltozó kapcsolatát mutatja.",
+        "B": "Nincs egész, aminek a részeit mutatná.",
+        "D": "A nevek sorrendje önkényes, a vonal hamis trendet sugall."
+      },
+      "id": "4",
+      "category": "diagram"
+    },
+    {
+      "kind": "text",
+      "prompt": "Melyik billentyűt tartod lenyomva, amikor egérrel nem szomszédos tartományokat jelölsz ki a diagramhoz?",
+      "answer": [
+        "Ctrl",
+        "Control"
+      ],
+      "explanation": "Ctrl. Így pl. a C1:G1 fejlécet és a C17:G17 összegsort együtt jelölheted ki, a közöttük lévő sorok nélkül.",
+      "id": "5",
+      "category": "diagram"
+    },
+    {
+      "kind": "choice",
+      "prompt": "Oszlopdiagram mutatja öt nap bevételét, amelyek 9800 és 10 400 Ft között vannak; a függőleges tengely 9500-ról indul. Mi a probléma?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Semmi, így jobban látszanak a különbségek."
+        },
+        {
+          "key": "B",
+          "text": "Kördiagramot kellene használni."
+        },
+        {
+          "key": "C",
+          "text": "A kis különbségeket félrevezetően felnagyítja: oszlopdiagramnál a tengelynek 0-ról kell indulnia."
+        },
+        {
+          "key": "D",
+          "text": "Az oszlopdiagramnak nem lehet címe."
+        }
+      ],
+      "answer": "C",
+      "explanation": "C. Az oszlop magassága az értékkel arányos benyomást kelt; ha a tengely nem 0-ról indul, egy 6%-os különbség többszörösnek látszik.",
+      "wrongOptions": {
+        "A": "Éppen ez a torzítás: a különbség valójában kicsi.",
+        "B": "Napi bevételek összehasonlítására az oszlop jó, csak a tengelyt kell javítani.",
+        "D": "Lehet és kell is címe."
+      },
+      "id": "6",
+      "category": "diagram"
+    }
+  ],
+  "relatedCategories": [
+    "kepletek-fuggvenyek"
+  ]
+}

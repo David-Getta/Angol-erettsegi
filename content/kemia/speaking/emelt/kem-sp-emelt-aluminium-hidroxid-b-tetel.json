@@ -1,0 +1,84 @@
+{
+  "schemaVersion": 1,
+  "id": "kem-sp-emelt-aluminium-hidroxid-b-tetel",
+  "subject": "kemia",
+  "revision": 1,
+  "level": "emelt",
+  "source": "generated",
+  "topic": "szervetlen-femek",
+  "title": "Az alumínium-hidroxid amfoter jellege",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "speaking",
+  "type": "b-tetel",
+  "partNumber": 2,
+  "instructionsHu": "Végezze el (értelmezze) a leírt kísérletet! Ismertesse a tapasztalatokat, írja fel a lejátszódó folyamatok ionegyenletét, és magyarázza meg az amfoter jelleget! Válaszoljon a forrásban szereplő kérdésre is!",
+  "prompts": [
+    "Mit tapasztalunk a nátrium-hidroxid-oldat első részleteinek hozzáadásakor?",
+    "Mit tapasztalunk a lúgfelesleg, illetve a sósav hatására?",
+    "Írja fel a lejátszódó folyamatok ionegyenletét!",
+    "Mit jelent az amfoter jelleg? Hogyan használja ki az alumíniumgyártás?"
+  ],
+  "followUpQuestions": [
+    "Mi történne, ha alumínium-klorid helyett magnézium-klorid-oldattal végeznénk el a kísérletet?"
+  ],
+  "usefulPhrases": [
+    {
+      "en": "fehér, kocsonyás csapadék",
+      "hu": "Az alumínium-hidroxid jellegzetes megjelenése."
+    },
+    {
+      "en": "Al(OH)₃ + OH⁻ → [Al(OH)₄]⁻",
+      "hu": "Oldódás lúgfeleslegben: komplex ion képződik."
+    },
+    {
+      "en": "Al(OH)₃ + 3 H⁺ → Al³⁺ + 3 H₂O",
+      "hu": "Oldódás savban."
+    },
+    {
+      "en": "amfoter",
+      "hu": "Savval és erős bázissal is reagál."
+    },
+    {
+      "en": "Bayer-eljárás, vörösiszap",
+      "hu": "Az alumínium-oxid elválasztása a bauxit vas(III)-oxid-tartalmától."
+    },
+    {
+      "en": "cseppenként, rázogatás közben",
+      "hu": "A szakszerű kivitelezés – a csapadék leválása így jól követhető."
+    }
+  ],
+  "sources": [
+    {
+      "title": "A kísérlet",
+      "text": "Két kémcsőbe 2–2 cm³ alumínium-klorid-oldatot öntünk, és mindkettőbe cseppenként, rázogatás közben híg nátrium-hidroxid-oldatot adunk, amíg jól látható csapadék válik le. Ezután az első kémcsőbe további nátrium-hidroxid-oldatot csepegtetünk feleslegben, a második kémcsőbe híg sósavat öntünk."
+    },
+    {
+      "title": "Kérdés a kísérlet végén",
+      "text": "Mi történne, ha az első kémcső tiszta oldatához ezután óvatosan, cseppenként sósavat adnánk?"
+    }
+  ],
+  "keyPoints": [
+    "Kevés NaOH hatására fehér, kocsonyás csapadék válik le: Al³⁺ + 3 OH⁻ → Al(OH)₃.",
+    "A lúgfeleslegben a csapadék feloldódik, színtelen oldat keletkezik: Al(OH)₃ + OH⁻ → [Al(OH)₄]⁻ (tetrahidroxo-aluminát-ion).",
+    "Sósavban a csapadék szintén feloldódik: Al(OH)₃ + 3 H⁺ → Al³⁺ + 3 H₂O.",
+    "Az Al(OH)₃ amfoter: savval szemben bázisként, erős bázissal szemben savként viselkedik.",
+    "Az aluminátoldathoz cseppenként sósavat adva előbb újra leválik az Al(OH)₃ csapadék ([Al(OH)₄]⁻ + H⁺ → Al(OH)₃ + H₂O), majd savfeleslegben ismét feloldódik.",
+    "A bauxit feldolgozásakor az amfoter alumínium-oxidot tömény nátronlúgban oldják, így választják el a vas(III)-oxidtól (vörösiszap)."
+  ],
+  "speakingSeconds": 300,
+  "prepSeconds": 450,
+  "sampleAnswer": {
+    "turns": [
+      {
+        "speaker": "candidate",
+        "text": "Amikor az alumínium-klorid-oldathoz cseppenként nátrium-hidroxid-oldatot adunk, mindkét kémcsőben fehér, kocsonyás csapadék válik le. Ez alumínium-hidroxid, amely vízben gyakorlatilag nem oldódik:\nAl³⁺ + 3 OH⁻ → Al(OH)₃\nAz első kémcsőben további nátrium-hidroxid-oldat hatására a csapadék feloldódik, és színtelen, átlátszó oldatot kapunk. A hidroxidionok feleslegében komplex ion, tetrahidroxo-aluminát-ion keletkezik:\nAl(OH)₃ + OH⁻ → [Al(OH)₄]⁻\nA második kémcsőben a sósav hatására szintén eltűnik a csapadék, mert a hidroxid az oxóniumionokkal reagál, és hidratált alumíniumionok, valamint víz keletkezik:\nAl(OH)₃ + 3 H⁺ → Al³⁺ + 3 H₂O\nA kísérlet azt mutatja, hogy az alumínium-hidroxid amfoter vegyület: savval szemben bázisként viselkedik, mert hidroxidcsoportjai megkötik a protonokat, erős bázissal szemben pedig savként, mert a hidroxidionokkal komplex aluminátiont képez. Ugyanez igaz az alumínium-oxidra és magára az alumíniumra is, amely sósavban és nátronlúgban is hidrogénfejlődés közben oldódik.\nHa az első kémcső tiszta aluminátoldatához óvatosan, cseppenként sósavat adnánk, először a hidroxidion-felesleg közömbösödne, majd újra leválna a fehér alumínium-hidroxid-csapadék: [Al(OH)₄]⁻ + H⁺ → Al(OH)₃ + H₂O. Savfeleslegben a csapadék végül ismét feloldódna.\nAz amfoter jelleget az alumíniumgyártás is kihasználja: a bauxitot tömény nátrium-hidroxid-oldattal kezelik; ebben az alumínium-oxid aluminát formájában feloldódik, a vas(III)-oxid viszont nem, így vörösiszapként elválasztható. Az oldatból kiválasztott alumínium-hidroxidot hevítéssel timfölddé alakítják, amelyből olvadékelektrolízissel állítják elő az alumíniumot."
+      }
+    ],
+    "notes": [
+      "Tapasztalat: a csapadék leválását, oldódását lúg- és savfeleslegben, valamint a visszaalakítás várható tapasztalatát pontosan, színnel és megjelenéssel írja le.",
+      "Magyarázat: minden lépéshez rendezett ionegyenletet ír (töltések egyeznek), az amfoter jelleget mindkét irányban értelmezi, és a gyakorlati jelentőséget (bauxitfeldolgozás) is bemutatja.",
+      "Szaknyelv: amfoter, komplex ion, tetrahidroxo-aluminát, timföld, vörösiszap – pontos megnevezések."
+    ]
+  }
+}

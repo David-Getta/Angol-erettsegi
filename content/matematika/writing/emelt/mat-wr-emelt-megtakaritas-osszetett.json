@@ -1,0 +1,95 @@
+{
+  "schemaVersion": 1,
+  "id": "mat-wr-emelt-megtakaritas-osszetett",
+  "subject": "matematika",
+  "revision": 1,
+  "level": "emelt",
+  "source": "generated",
+  "topic": "sorozatok",
+  "title": "II. rész: Réka megtakarítása – gyűjtőjáradék, kamatláb-összehasonlítás",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "writing",
+  "type": "osszetett",
+  "taskNumber": 1,
+  "situation": "Réka a 18. születésnapján takarékszámlát nyit, és ettől kezdve minden év elején 300 000 Ft-ot fizet be rá (az első befizetés az 1. év elején történik). A bank évi 4%-os kamatot ad, amelyet minden év végén jóváír; a jóváírt kamat a következő években tovább kamatozik. Más pénzmozgás a számlán nincs.\n\na) Mennyi pénz lesz a számlán az 5. év végén, a kamat jóváírása után? Az eredményt egész forintra kerekítve adja meg! (4 pont)\nb) Melyik év végén haladja meg a számla egyenlege először a 4 000 000 Ft-ot, ha Réka minden év elején folytatja a befizetést? (5 pont)\nc) Réka bátyja, Bence ugyanebben a bankban, ugyanilyen kamatozással az 1. év elején egyetlen összeget köt le 5 évre. Mekkora összeget kell befizetnie, hogy az 5. év végén ugyanannyi pénze legyen, mint Rékának? Az eredményt ezer forintra kerekítve adja meg! (3 pont)\nd) A bank egy másik ajánlata egyszeri betétre: a kamatláb az 1. évben 3%, és ezután évente 0,5 százalékponttal nő (3%; 3,5%; 4%; 4,5%; 5%). Egyszeri 1 000 000 Ft-os betét esetén melyik ajánlat ad több pénzt az 5. év végén: ez, vagy az állandó évi 4%? Válaszát számítással indokolja! (4 pont)\n\nA megoldás menetét, a felhasznált összefüggéseket írja le!",
+  "points": [
+    {
+      "id": "p1",
+      "text": "a) Az 5. év végi egyenleg a befizetések kamatos kamattal növelt értékének összegeként, mértani sorozat összegképletével (4 pont)"
+    },
+    {
+      "id": "p2",
+      "text": "b) Az Sₙ > 4 000 000 egyenlőtlenség felírása és megoldása logaritmussal, n egész voltának figyelembevételével, ellenőrzéssel (5 pont)"
+    },
+    {
+      "id": "p3",
+      "text": "c) Az egyszeri betét, amely 5 év alatt az a) részben kapott összegre nő (diszkontálás), ezer forintra kerekítve (3 pont)"
+    },
+    {
+      "id": "p4",
+      "text": "d) A változó és az állandó kamatlábú betét 5 év végi értékének kiszámítása és összehasonlítása, szöveges válasz (4 pont)"
+    }
+  ],
+  "suggestedMinutes": 35,
+  "usefulPhrases": [
+    {
+      "en": "Kₙ = K₀·(1 + p/100)ⁿ",
+      "hu": "Kamatos kamat: egy összeg n év alatt (1 + p/100)ⁿ-szeresére nő."
+    },
+    {
+      "en": "Sₙ = a₁·(qⁿ − 1)/(q − 1)",
+      "hu": "A mértani sorozat első n tagjának összege (q ≠ 1) – a rendszeres befizetések összegzéséhez."
+    },
+    {
+      "en": "a₁ = 300 000·1,04",
+      "hu": "Az év eleji befizetés az év végére már egy évet kamatozott, ezért a sorozat legkisebb tagja nem 300 000."
+    },
+    {
+      "en": "1,04ⁿ > c ⇔ n > lg c / lg 1,04",
+      "hu": "Exponenciális egyenlőtlenség megoldása logaritmussal; lg 1,04 > 0, ezért az irány nem fordul meg."
+    },
+    {
+      "en": "n pozitív egész → felfelé kerekítünk",
+      "hu": "Az „először haladja meg” kérdésnél a legkisebb megfelelő egész év a válasz; ellenőrizd a két szomszédos évet."
+    },
+    {
+      "en": "x = S/1,04ⁿ",
+      "hu": "Diszkontálás: mekkora mai összeg nő n év alatt S-re."
+    },
+    {
+      "en": "számtani és mértani közép közötti egyenlőtlenség",
+      "hu": "Azonos átlagú, de változó kamatlábak szorzata kisebb, mint az átlagos kamatláb hatványa."
+    }
+  ],
+  "checklistExtra": [
+    "Az év eleji befizetésnél figyeltem, hogy az összeg az év végéig már kamatozik?",
+    "Az „először” kérdésnél ellenőriztem a két szomszédos egész értéket?"
+  ],
+  "modelAnswer": {
+    "text": "a) Az egyes befizetések különböző ideig kamatoznak: az 1. év elején befizetett 300 000 Ft 5 évig, a 2. év elején befizetett 4 évig, …, az 5. év elején befizetett 1 évig. Évi 4%-os kamatnál egy összeg egy év alatt 1,04-szeresére nő, így az 5. év végi egyenleg:\nS₅ = 300 000·1,04⁵ + 300 000·1,04⁴ + 300 000·1,04³ + 300 000·1,04² + 300 000·1,04.\nEz egy mértani sorozat első 5 tagjának összege, ahol a₁ = 300 000·1,04 = 312 000 és q = 1,04. A mértani sorozat összegképletével:\nS₅ = 312 000·(1,04⁵ − 1)/(1,04 − 1) ≈ 312 000·(1,2166529 − 1)/0,04 ≈ 312 000·5,416323 ≈ 1 689 893 Ft.\nAz 5. év végén kb. 1 689 893 Ft lesz Réka számláján.\n\nb) Az a) rész gondolatmenete szerint az n. év végén az egyenleg Sₙ = 312 000·(1,04ⁿ − 1)/0,04. Azt keressük, mikor teljesül először Sₙ > 4 000 000:\n312 000·(1,04ⁿ − 1)/0,04 > 4 000 000\n1,04ⁿ − 1 > 160 000/312 000 ≈ 0,51282\n1,04ⁿ > 1,51282.\nMindkét oldal 10-es alapú logaritmusát véve (az lg függvény szigorúan monoton nő, ezért az egyenlőtlenség iránya nem változik): n·lg 1,04 > lg 1,51282. Mivel lg 1,04 > 0, ezzel osztva n > lg 1,51282/lg 1,04 ≈ 0,17979/0,017033 ≈ 10,56.\nMivel n pozitív egész, a legkisebb megfelelő érték n = 11. Ellenőrzés: S₁₀ ≈ 3 745 905 Ft < 4 000 000 Ft, de S₁₁ ≈ 4 207 742 Ft > 4 000 000 Ft.\nA számla egyenlege a 11. év végén haladja meg először a 4 000 000 Ft-ot.\n\nc) Ha Bence x Ft-ot köt le, az 5 év alatt x·1,04⁵ Ft-ra nő. A feltétel: x·1,04⁵ = S₅, így x = S₅/1,04⁵ ≈ 1 689 893/1,2166529 ≈ 1 388 969 Ft.\nBencének kb. 1 389 000 Ft-ot kell befizetnie (ezer forintra kerekítve).\n\nd) A változó kamatozású ajánlatnál az 5. év végi egyenleg: 1 000 000·1,03·1,035·1,04·1,045·1,05 ≈ 1 000 000·1,216512 ≈ 1 216 512 Ft.\nAz állandó 4%-os kamatozásnál: 1 000 000·1,04⁵ ≈ 1 000 000·1,216653 ≈ 1 216 653 Ft.\nA különbség 1 216 653 − 1 216 512 = 141 Ft az állandó kamatozás javára. Ez nem véletlen: a kamatlábak számtani közepe (3 + 3,5 + 4 + 4,5 + 5)/5 = 4%, és a számtani és mértani közép közötti egyenlőtlenség szerint az 1,03; 1,035; 1,04; 1,045; 1,05 számok szorzata kisebb, mint 1,04⁵, mert a tényezők nem mind egyenlők.\nAz állandó évi 4%-os kamatozás a kedvezőbb, kb. 141 Ft-tal.",
+    "pointsCovered": [
+      {
+        "id": "p1",
+        "quote": "S₅ = 312 000·(1,04⁵ − 1)/(1,04 − 1) ≈ 312 000·(1,2166529 − 1)/0,04 ≈ 312 000·5,416323 ≈ 1 689 893 Ft."
+      },
+      {
+        "id": "p2",
+        "quote": "A számla egyenlege a 11. év végén haladja meg először a 4 000 000 Ft-ot."
+      },
+      {
+        "id": "p3",
+        "quote": "Bencének kb. 1 389 000 Ft-ot kell befizetnie (ezer forintra kerekítve)."
+      },
+      {
+        "id": "p4",
+        "quote": "Az állandó évi 4%-os kamatozás a kedvezőbb, kb. 141 Ft-tal."
+      }
+    ],
+    "notes": [
+      "Eredmény: mind a négy részeredmény helyes és a kért pontossággal szerepel (1 689 893 Ft; a 11. év vége; 1 389 000 Ft; az állandó 4% a jobb, kb. 141 Ft-tal), ezért az eredmény-szempontra teljes pont jár.",
+      "Indoklás: a megoldás megmutatja, miért mértani sorozat az egyenleg (a befizetések eltérő ideig kamatoznak), miért a₁ = 312 000, és a b) részben kimondja, miért nem fordul meg az egyenlőtlenség iránya a logaritmus után.",
+      "Ellenőrzés és válasz: a b) részben a két szomszédos év egyenlegét is kiszámolja (S₁₀ és S₁₁), a d) részben a számtani–mértani közép egyenlőtlenségével meg is magyarázza az eredményt; minden rész szöveges válasszal és mértékegységgel zárul."
+    ]
+  }
+}

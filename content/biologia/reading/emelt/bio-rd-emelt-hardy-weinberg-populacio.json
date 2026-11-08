@@ -1,0 +1,202 @@
+{
+  "schemaVersion": 1,
+  "id": "bio-rd-emelt-hardy-weinberg-populacio",
+  "subject": "biologia",
+  "revision": 1,
+  "level": "emelt",
+  "source": "generated",
+  "topic": "evolucio",
+  "title": "Populációgenetika: a Hardy–Weinberg-szabály",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "reading",
+  "type": "rovid-valasz",
+  "instructions": "Olvassa el a populáció leírását, majd válaszoljon a kérdésekre! A számítást igénylő kérdéseknél csak a végeredményt írja be (tizedes törtet vesszővel vagy ponttal is írhat), a feleletválasztós kérdéseknél a helyes válasz betűjelét. A 0. kérdés a példa.",
+  "passage": {
+    "blocks": [
+      {
+        "text": "Egy nagy kiterjedésű gyepen 2500 egyedből álló növénypopuláció él. A virág színét egyetlen génpár határozza meg: a bíbor szín allélja (B) teljesen domináns a fehér szín alléljával (b) szemben. A populációban 400 fehér virágú egyedet számoltak meg. Tegyük fel, hogy a populáció Hardy–Weinberg-egyensúlyban van! A Hardy–Weinberg-összefüggés: p + q = 1 és p² + 2pq + q² = 1, ahol p a B, q a b allél gyakorisága."
+      }
+    ]
+  },
+  "example": {
+    "id": "0",
+    "kind": "text",
+    "prompt": "Mekkora a fehér virágú (bb) egyedek gyakorisága (q²) a populációban?",
+    "answer": [
+      "0,16",
+      "16%",
+      "16"
+    ],
+    "category": "genetikai-szamitas",
+    "explanation": "Helyes: 0,16. A fehér virágú egyedek csak homozigóta recesszívek lehetnek: 400 / 2500 = 0,16 = q².",
+    "maxWords": 2
+  },
+  "items": [
+    {
+      "id": "1",
+      "kind": "text",
+      "prompt": "Mekkora a b allél gyakorisága (q)?",
+      "answer": [
+        "0,4",
+        "0,40",
+        "40%",
+        "40"
+      ],
+      "category": "genetikai-szamitas",
+      "explanation": "Helyes: 0,4. q = √q² = √0,16 = 0,4. A recesszív allél gyakoriságát mindig a recesszív fenotípusúak arányából számoljuk, mert csak az ő genotípusuk ismert biztosan.",
+      "maxWords": 2
+    },
+    {
+      "id": "2",
+      "kind": "text",
+      "prompt": "Mekkora a B allél gyakorisága (p)?",
+      "answer": [
+        "0,6",
+        "0,60",
+        "60%",
+        "60"
+      ],
+      "category": "genetikai-szamitas",
+      "explanation": "Helyes: 0,6. Mivel két allél van, p + q = 1, így p = 1 − 0,4 = 0,6.",
+      "maxWords": 2
+    },
+    {
+      "id": "3",
+      "kind": "text",
+      "prompt": "Hány heterozigóta (Bb) egyed él várhatóan a populációban?",
+      "answer": [
+        "1200",
+        "1200 egyed",
+        "1200 db"
+      ],
+      "category": "genetikai-szamitas",
+      "explanation": "Helyes: 1200. A heterozigóták gyakorisága 2pq = 2 · 0,6 · 0,4 = 0,48; a 2500 egyed 48%-a 0,48 · 2500 = 1200 egyed.",
+      "maxWords": 3
+    },
+    {
+      "id": "4",
+      "kind": "text",
+      "prompt": "A bíbor virágú egyedek hány százaléka heterozigóta? (Egész százalékra kerekítve)",
+      "answer": [
+        "57",
+        "57%",
+        "57,1",
+        "57,1%",
+        "4/7"
+      ],
+      "category": "genetikai-szamitas",
+      "explanation": "Helyes: kb. 57%. Bíbor virágú 2500 − 400 = 2100 egyed, ebből heterozigóta 1200 (a homozigóta BB: p² · 2500 = 0,36 · 2500 = 900). 1200 / 2100 ≈ 0,571, azaz kb. 57%.",
+      "maxWords": 2
+    },
+    {
+      "id": "5",
+      "kind": "choice",
+      "prompt": "Melyik NEM feltétele a Hardy–Weinberg-egyensúlynak?",
+      "options": [
+        {
+          "key": "A",
+          "text": "A domináns allél gyakoribb, mint a recesszív."
+        },
+        {
+          "key": "B",
+          "text": "Az egyedek véletlenszerűen párosodnak."
+        },
+        {
+          "key": "C",
+          "text": "Nincs mutáció, szelekció, ki- és bevándorlás."
+        },
+        {
+          "key": "D",
+          "text": "A populáció nagy létszámú."
+        }
+      ],
+      "answer": "A",
+      "category": "evolucios-ervel",
+      "explanation": "Helyes: A. Az egyensúly bármilyen allélgyakoriság mellett fennállhat, a recesszív allél is lehet gyakoribb a dominánsnál (például q = 0,7 mellett is lehet egyensúly). A valódi feltételek: nagy populáció, véletlenszerű párosodás, továbbá mutáció, szelekció és génáramlás hiánya.",
+      "wrongOptions": {
+        "B": "Ez feltétel: ha az egyedek választanak (pl. hasonló a hasonlóval párosodik), a genotípus-arányok eltolódnak.",
+        "C": "Ezek mind evolúciós tényezők; ha hatnak, az allélgyakoriság változik, tehát nincs egyensúly.",
+        "D": "Ez feltétel: kis populációban a véletlen (genetikai sodródás) megváltoztatja az allélgyakoriságokat."
+      }
+    },
+    {
+      "id": "6",
+      "kind": "choice",
+      "prompt": "Egy tűzvész a populáció egyedeinek 90%-át – a virágszíntől függetlenül – elpusztítja. A túlélő 250 egyedben a b allél gyakorisága a véletlen folytán 0,4-ről 0,3-ra változik. Melyik evolúciós tényező hatott?",
+      "options": [
+        {
+          "key": "A",
+          "text": "genetikai sodródás (palacknyakhatás)"
+        },
+        {
+          "key": "B",
+          "text": "természetes szelekció"
+        },
+        {
+          "key": "C",
+          "text": "génáramlás"
+        },
+        {
+          "key": "D",
+          "text": "mutáció"
+        }
+      ],
+      "answer": "A",
+      "category": "evolucios-ervel",
+      "explanation": "Helyes: A. A tűz véletlenszerűen, a genotípustól függetlenül pusztított; a kis létszámú túlélő csoport allélgyakorisága pusztán a véletlen miatt tér el az eredetitől. Ez a genetikai sodródás egyik formája, a palacknyakhatás.",
+      "wrongOptions": {
+        "B": "Szelekcióról akkor beszélnénk, ha a túlélés a virágszíntől (a genotípustól) függött volna; a feladat szerint nem függött.",
+        "C": "Génáramlás egyedek (vagy pollen) be- vagy kivándorlásával jár, itt ilyen nem történt.",
+        "D": "A mutáció új allélt hoz létre, és nagyon ritka; egy tűzvész nem okoz mutációt, és nem is ez változtatta meg a gyakoriságot."
+      }
+    },
+    {
+      "id": "7",
+      "kind": "choice",
+      "prompt": "Tegyük fel, hogy a fehér virágú növényeket a beporzó rovarok elkerülik, ezért kevesebb magot hoznak. Mi történik várhatóan sok nemzedéken át a b allél gyakoriságával?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Nem változik, mert a b allél a heterozigótákban is megvan."
+        },
+        {
+          "key": "B",
+          "text": "Egyetlen nemzedék alatt nullára csökken."
+        },
+        {
+          "key": "C",
+          "text": "Növekszik, mert a recesszív allélok mindig terjednek."
+        },
+        {
+          "key": "D",
+          "text": "Lassan csökken, de nem tűnik el gyorsan, mert a heterozigótákban rejtve marad."
+        }
+      ],
+      "answer": "D",
+      "category": "evolucios-ervel",
+      "explanation": "Helyes: D. A szelekció csak a bb fenotípust sújtja; a heterozigóta (Bb) egyedek bíbor virágúak, így a b allélt rejtve tovább adják. Ahogy q csökken, egyre kisebb része van homozigótában, ezért a szelekció egyre lassabban hat.",
+      "wrongOptions": {
+        "A": "A heterozigóták megléte lassítja, de nem akadályozza meg a csökkenést, mert a bb egyedek kevesebb utódot hagynak.",
+        "B": "Egy nemzedék alatt csak akkor tűnhetne el, ha minden b allélt hordozó egyed elpusztulna – a heterozigóták viszont nem szelektálódnak.",
+        "C": "Az allélok terjedését nem a dominancia, hanem a szelekció és a véletlen dönti el; itt a b allél hátrányos."
+      }
+    },
+    {
+      "id": "8",
+      "kind": "text",
+      "prompt": "Hogyan nevezzük az allélgyakoriságok megváltozását okozó tényezőt, amikor egy szomszédos populációból egyedek (vagy pollenszemek) jutnak be, és ott szaporodnak?",
+      "answer": [
+        "génáramlás",
+        "migráció",
+        "génvándorlás",
+        "bevándorlás"
+      ],
+      "category": "evolucios-ervel",
+      "explanation": "Helyes: génáramlás (migráció). Ha a beérkező egyedek allélgyakorisága eltér a befogadó populációétól, a populáció allélgyakorisága megváltozik; a génáramlás a populációk közötti különbségeket csökkenti.",
+      "maxWords": 2
+    }
+  ],
+  "glossary": [],
+  "suggestedMinutes": 12
+}

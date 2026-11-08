@@ -1,0 +1,184 @@
+{
+  "schemaVersion": 1,
+  "id": "dig-vc-kozep-halozatok-internet",
+  "subject": "digitalis-kultura",
+  "revision": 1,
+  "level": "kozep",
+  "source": "generated",
+  "topic": "halozatok",
+  "title": "Hálózatok és internet – alapfogalmak",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "vocabulary",
+  "type": "deck",
+  "cards": [
+    {
+      "term": "számítógép-hálózat",
+      "meaning": "Összekapcsolt számítógépek és eszközök rendszere, amely adatcserét és erőforrás-megosztást (nyomtató, fájlok, internetkapcsolat) tesz lehetővé.",
+      "example": "Az iskolai számítógép-hálózat minden gépről elérhetővé teszi a nyomtatót.",
+      "pos": "n"
+    },
+    {
+      "term": "LAN",
+      "meaning": "Helyi hálózat (Local Area Network): egy épületre, intézményre kiterjedő hálózat.",
+      "example": "Az iskola gépei egy LAN-ba vannak kötve.",
+      "pos": "n"
+    },
+    {
+      "term": "WAN",
+      "meaning": "Nagy kiterjedésű hálózat (Wide Area Network): városokat, országokat köt össze; a legnagyobb WAN az internet.",
+      "example": "A bankfiókokat a központtal egy WAN köti össze.",
+      "pos": "n"
+    },
+    {
+      "term": "internet",
+      "meaning": "A hálózatok világméretű hálózata, amely egységes protokollcsalád (TCP/IP) segítségével kommunikál.",
+      "example": "Az internet nem azonos a webbel: a web csak az egyik szolgáltatása.",
+      "pos": "n"
+    },
+    {
+      "term": "router (útválasztó)",
+      "meaning": "Hálózatokat összekötő eszköz, amely az IP-cím alapján választja ki az adatcsomagok útját.",
+      "example": "Az otthoni router köti össze a lakás hálózatát az internettel.",
+      "pos": "n"
+    },
+    {
+      "term": "switch (kapcsoló)",
+      "meaning": "Egy helyi hálózaton belül, a gépek között továbbítja az adatokat, a fizikai (MAC) cím alapján.",
+      "example": "A tanterem gépei egy switch-be csatlakoznak.",
+      "pos": "n"
+    },
+    {
+      "term": "Wi-Fi",
+      "meaning": "Vezeték nélküli helyi hálózati technológia; az eszközök egy hozzáférési ponton (pl. a routeren) keresztül csatlakoznak.",
+      "example": "A nyilvános Wi-Fi hálózaton ne végezzünk banki műveleteket.",
+      "pos": "n"
+    },
+    {
+      "term": "IP-cím",
+      "meaning": "Az eszköz azonosítója a hálózaton; az IPv4-cím 32 bites, négy, 0 és 255 közötti számmal írjuk (pl. 192.168.1.10).",
+      "example": "A 192.168.1.10 egy helyi hálózati IP-cím.",
+      "pos": "n"
+    },
+    {
+      "term": "IPv6",
+      "meaning": "Az IP-címzés 128 bites változata, amelyet az IPv4-címek elfogyása miatt vezettek be; hexadecimálisan írjuk (pl. 2001:db8::1).",
+      "example": "Az IPv6 gyakorlatilag kimeríthetetlen számú címet biztosít.",
+      "pos": "n"
+    },
+    {
+      "term": "DNS",
+      "meaning": "Domain Name System: névfeloldó rendszer, amely a domainnevekhez megkeresi a hozzájuk tartozó IP-címet.",
+      "example": "Ha a DNS nem működik, a weboldalak név alapján nem érhetők el.",
+      "pos": "n"
+    },
+    {
+      "term": "domainnév",
+      "meaning": "Egy szerver ember által könnyen megjegyezhető neve (pl. www.pelda.hu); a végén a legfelső szintű tartomány (.hu, .com) áll.",
+      "example": "A domainnév végén a .hu Magyarországot jelöli.",
+      "pos": "n"
+    },
+    {
+      "term": "URL",
+      "meaning": "Egységes erőforrás-azonosító, egy webes erőforrás teljes címe: protokoll, domainnév, elérési út (pl. https://www.pelda.hu/hirek/index.html).",
+      "example": "Az URL elején álló https a protokollt adja meg.",
+      "pos": "n"
+    },
+    {
+      "term": "protokoll",
+      "meaning": "A hálózati kommunikáció szabályainak rendszere (milyen formában, milyen sorrendben küldik az adatokat).",
+      "example": "A böngésző és a webszerver a HTTPS protokoll szerint kommunikál.",
+      "pos": "n"
+    },
+    {
+      "term": "HTTP",
+      "meaning": "A weboldalak átvitelére szolgáló protokoll; titkosítatlan.",
+      "example": "HTTP-kapcsolatnál a jelszó titkosítatlanul utazna a hálózaton.",
+      "pos": "n"
+    },
+    {
+      "term": "HTTPS",
+      "meaning": "A HTTP TLS-titkosítással védett változata; a szerver tanúsítvánnyal igazolja magát.",
+      "example": "A webáruházak a fizetésnél mindig HTTPS-kapcsolatot használnak.",
+      "pos": "n"
+    },
+    {
+      "term": "SMTP",
+      "meaning": "Levélküldő protokoll: ezzel küldi el a levelezőprogram a levelet a szervernek, és ezzel továbbítják egymásnak a levelezőszerverek.",
+      "example": "A levelezőprogram beállításainál meg kell adni az SMTP-szerver címét.",
+      "pos": "n"
+    },
+    {
+      "term": "IMAP",
+      "meaning": "Levelek olvasására szolgáló protokoll; a levelek a szerveren maradnak, így több eszközön szinkronban láthatók.",
+      "example": "IMAP használatakor a telefonon olvasott levél a laptopon is olvasottként jelenik meg.",
+      "pos": "n"
+    },
+    {
+      "term": "kliens–szerver modell",
+      "meaning": "Működési modell, amelyben a kliens (pl. böngésző) kérést küld, a szerver (pl. webszerver) pedig kiszolgálja.",
+      "example": "A kliens–szerver modellben a böngésző kér, a webszerver válaszol.",
+      "pos": "n"
+    },
+    {
+      "term": "sávszélesség",
+      "meaning": "Az időegység alatt átvihető adatmennyiség; bit/s-ban mérjük (pl. 100 Mbit/s).",
+      "example": "A 100 Mbit/s sávszélesség másodpercenként legfeljebb 12,5 MB letöltését teszi lehetővé.",
+      "pos": "n"
+    },
+    {
+      "term": "felhőtárhely",
+      "meaning": "Interneten keresztül elérhető, egy szolgáltató szerverein tárolt tárhely; bármely eszközről elérhető, megosztható.",
+      "example": "A felhőtárhelyre mentett dokumentumot a telefonomon is meg tudom nyitni.",
+      "pos": "n"
+    },
+    {
+      "term": "streaming",
+      "meaning": "Folyamatos adatfolyam: a hang vagy videó lejátszása letöltés közben, a teljes fájl megérkezése előtt elkezdődik.",
+      "example": "A streaming miatt a film azonnal indul, nem kell megvárni a letöltést.",
+      "pos": "n"
+    },
+    {
+      "term": "tűzfal",
+      "meaning": "Szoftver vagy hardver, amely szabályok alapján engedélyezi vagy tiltja a hálózati forgalmat.",
+      "example": "A tűzfal megakadályozza, hogy kívülről engedély nélkül kapcsolódjanak a gépünkhöz.",
+      "pos": "n"
+    },
+    {
+      "term": "adathalászat (phishing)",
+      "meaning": "Csalás, amelyben megtévesztő üzenettel hamis weboldalra csalják az áldozatot, hogy megadja a jelszavát vagy bankkártyaadatait.",
+      "example": "Az adathalászat gyakran sürgető hangvételű, banknak álcázott e-maillel kezdődik.",
+      "pos": "n"
+    },
+    {
+      "term": "kétlépcsős azonosítás",
+      "meaning": "Belépés két különböző típusú tényezővel: amit tudunk (jelszó) és ami nálunk van (telefon, biztonsági kulcs) vagy ami mi vagyunk (ujjlenyomat).",
+      "example": "A kétlépcsős azonosítás miatt az ellopott jelszó önmagában nem elég a belépéshez.",
+      "pos": "n"
+    },
+    {
+      "term": "erős jelszó",
+      "meaning": "Hosszú (legalább 12 karakter), kis- és nagybetűt, számot, írásjelet tartalmazó, nem kitalálható és minden szolgáltatásnál egyedi jelszó.",
+      "example": "Erős jelszó lehet egy hosszú, véletlen szavakból álló jelmondat.",
+      "pos": "n"
+    },
+    {
+      "term": "titkos másolat (Bcc)",
+      "meaning": "E-mail-mező: az ide írt címzettek címét a többi címzett nem látja.",
+      "example": "Sok címzettnek titkos másolatban küldjük a levelet, hogy ne lássák egymás címét.",
+      "pos": "n"
+    },
+    {
+      "term": "netikett",
+      "meaning": "Az internetes kommunikáció illemszabályai (pl. nem írunk csupa nagybetűvel, értelmes tárgyat adunk a levélnek, tiszteljük mások magánszféráját).",
+      "example": "A netikett szerint a csupa nagybetűs írás kiabálásnak számít.",
+      "pos": "n"
+    },
+    {
+      "term": "süti (cookie)",
+      "meaning": "A weboldal által a böngészőben tárolt kis adatfájl (pl. bejelentkezés, kosár, beállítások, követés); a nem feltétlenül szükséges sütikhez hozzájárulás kell.",
+      "example": "A süti megjegyzi, hogy már bejelentkeztem az oldalra.",
+      "pos": "n"
+    }
+  ]
+}

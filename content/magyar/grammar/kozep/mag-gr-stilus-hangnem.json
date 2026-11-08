@@ -1,0 +1,261 @@
+{
+  "schemaVersion": 1,
+  "id": "mag-gr-stilus-hangnem",
+  "subject": "magyar",
+  "revision": 1,
+  "level": "kozep",
+  "source": "generated",
+  "topic": "nyelvtan",
+  "title": "Stílus, hangnem, műfaji követelmények",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "grammar",
+  "type": "lesson",
+  "category": "stilus-hangnem",
+  "summaryHu": "A nyelvi igényesség pontjai azt értékelik, hogy a dolgozat stílusa illik-e a műfajhoz (értekező, elemző vagy reflektáló), pontos-e a szóhasználat, használod-e a szakszavakat, és kerülöd-e a szóismétlést, a köznyelvi és szleng fordulatokat, a modoros, üres frázisokat. A választékos stílus nem bonyolultságot jelent, hanem pontosságot és a helyzethez illő hangnemet.",
+  "rules": [
+    {
+      "title": "Az értekező stílus",
+      "explanation": "A műértelmező és az esszé az értekező (tudományos-népszerűsítő) stílusréteghez tartozik: tárgyilagos, pontos, választékos, de nem mesterkélt. Kerüld a szlenget (tök jó, durva, full), a túlzottan bizalmas fordulatokat és a felkiáltásokat. Reflektáló szövegben a személyes hang (úgy gondolom, saját tapasztalatom szerint) megengedett, de a stílus ott is igényes.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "Kerülendő: „A vers tök durva, nagyon ütős a vége.” – Helyes: „A vers zárlata megrendítő erejű.”",
+          "hu": "A jelentés ugyanaz, a stílus az értekező műfajhoz illik."
+        }
+      ]
+    },
+    {
+      "title": "Szakszavak pontos használata",
+      "explanation": "A szakszavakat (metafora, megszemélyesítés, lírai én, idősík, szimbólum, keretes szerkezet) pontosan, a jelentésüknek megfelelően használd. Ne a költőt azonosítsd automatikusan a beszélővel: a versben a „lírai én” vagy „a beszélő” szól. A szakszó csak akkor ér pontot, ha helyesen alkalmazod.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "Pontatlan: „József Attila felment a padlásra.” – Pontos: „A lírai én felidézi, ahogy az anya felment a padlásra.”",
+          "hu": "A vers beszélője és a cselekvő anya megkülönböztetése."
+        }
+      ]
+    },
+    {
+      "title": "A szóismétlés elkerülése",
+      "explanation": "Ugyanazt a szót (pl. „a vers”, „mutatja”) ne ismételd egymás utáni mondatokban. Használj rokon értelmű szavakat (költemény, mű, alkotás; érzékelteti, kifejezi, sugallja, jelzi), névmást vagy átfogalmazást. A szóismétlés a nyelvi pontot rontja.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "„A vers azt mutatja… A vers azt is mutatja…” → „A vers azt mutatja… A költemény azt is érzékelteti…”",
+          "hu": "Változatos igék és megnevezések."
+        }
+      ]
+    },
+    {
+      "title": "Pontos szóhasználat, üres frázisok kerülése",
+      "explanation": "Kerüld a semmitmondó, általános fordulatokat („nagyon szép vers”, „sok érdekes dolgot ír”, „a költő mondanivalója”), a pontatlan szavakat és a nyelvi kliséket. Minden mondatod mondjon valami konkrétat a műről.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "Üres: „Ez egy nagyon szép és érdekes vers.” – Konkrét: „A vers a hétköznapi teregetés képét kozmikus látomássá emeli.”",
+          "hu": "A konkrét mondat értelmezést tartalmaz."
+        }
+      ]
+    },
+    {
+      "title": "Hangnem és beszédhelyzet",
+      "explanation": "Emelt szinten a reflektáló szöveg hangneme személyes és érvelő, a műértelmezőé tárgyilagosabb, elemző. A két feladat stílusa nem azonos: a reflektáló szövegben természetes az első személy és a retorikus kérdés, a műértelmezésben inkább a szakszerű, harmadik személyű megfogalmazás.",
+      "emeltOnly": true,
+      "examples": [
+        {
+          "en": "Reflektáló: „Saját tapasztalatom szerint a vers várni tud.” – Műértelmező: „A zárlat a késői felismerés pillanatát rögzíti.”",
+          "hu": "Ugyanaz az igényesség, más hangnem."
+        }
+      ]
+    }
+  ],
+  "commonMistakes": [
+    {
+      "wrong": "A vers nagyon ütős, a vége full megható.",
+      "right": "A vers zárlata megrendítő erejű.",
+      "why": "A szleng és a túl bizalmas szavak nem illenek az értekező műfajhoz; a nyelvi pontból levonnak érte."
+    },
+    {
+      "wrong": "Petőfi a Kárpátokat csodálja, de nem szereti, mert Petőfi az alföldön érzi otthon magát, és Petőfi szerint…",
+      "right": "Petőfi beszélője a Kárpátokat csodálja, de nem szereti, mert a síkságon érzi otthon magát; a költő szerint…",
+      "why": "A szóismétlés (Petőfi, Petőfi, Petőfi) monotonná teszi a szöveget; névmással, átfogalmazással kerülhető el."
+    },
+    {
+      "wrong": "A költő mondanivalója az, hogy az élet nehéz.",
+      "right": "A vers a teljes kiszolgáltatottság élményét fogalmazza meg: a lírai én minden emberi kötődését elveszítette.",
+      "why": "Az általános, üres fordulat semmit nem mond az adott műről."
+    },
+    {
+      "wrong": "Ady a parlagon hagyott földön gázolt, és lehajolt a humuszig.",
+      "right": "A lírai én a parlagon hagyott földön „gázol”, és lehajol a „szent humuszig”.",
+      "why": "A költő és a lírai én azonosítása pontatlan; a szöveg szereplőit és a beszélőt pontosan kell megnevezni."
+    }
+  ],
+  "examTips": [
+    "Írás közben tarts magad előtt egy rövid listát rokon értelmű igékről: kifejezi, érzékelteti, sugallja, jelzi, megjeleníti, kiemeli, hangsúlyozza.",
+    "Az átolvasáskor jelöld meg a háromszor vagy többször ismétlődő szavakat, és cseréld le őket.",
+    "A helyesírási szótár a vizsgán is használható: kétes esetben nézz utána, mert a helyesírási hibák a dolgozat egészéből vonnak le pontot."
+  ],
+  "practice": [
+    {
+      "id": "1",
+      "kind": "choice",
+      "prompt": "Melyik mondat illik egy műértelmező dolgozatba?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Hű, ez aztán egy szuper vers!"
+        },
+        {
+          "key": "B",
+          "text": "A vége tök durva, nagyon bejött."
+        },
+        {
+          "key": "C",
+          "text": "A vers zárlata megrendítő erejű: az anya alakja az égig nő."
+        },
+        {
+          "key": "D",
+          "text": "A vers vége full megható, szerintem mindenki sír rajta."
+        }
+      ],
+      "answer": "C",
+      "category": "stilus-hangnem",
+      "explanation": "Helyes: C. Választékos, pontos, értekező stílus, konkrét értelmezéssel.",
+      "wrongOptions": {
+        "A": "Indulatszó és felkiáltás, értelmezés nélkül.",
+        "B": "Szleng (tök, durva, bejött) – nem illik a műfajhoz.",
+        "D": "Szleng (full) és általánosítás, elemzés nélkül."
+      }
+    },
+    {
+      "id": "2",
+      "kind": "choice",
+      "prompt": "Melyik szó a legpontosabb a mondatban? „A „kékítőt old az ég vizében” kép az anya alakját mitikus magasságba ___.”",
+      "options": [
+        {
+          "key": "A",
+          "text": "rakja"
+        },
+        {
+          "key": "B",
+          "text": "teszi"
+        },
+        {
+          "key": "C",
+          "text": "csinálja"
+        },
+        {
+          "key": "D",
+          "text": "emeli"
+        }
+      ],
+      "answer": "D",
+      "category": "stilus-hangnem",
+      "explanation": "Helyes: emeli. Pontos, kifejező ige, amely a kép irányát (felfelé, az égig) is érzékelteti.",
+      "wrongOptions": {
+        "A": "Köznyelvi, pontatlan; a „rakja” fizikai cselekvést jelent.",
+        "B": "Túl általános, színtelen ige.",
+        "C": "Köznyelvi, pontatlan ige, a mondat szerkezetébe sem illik."
+      }
+    },
+    {
+      "id": "3",
+      "kind": "choice",
+      "prompt": "Hogyan kerülhető el a szóismétlés? „A vers keletkezése 1934. A vers négy versszakból áll. A vers témája az emlékezés.”",
+      "options": [
+        {
+          "key": "A",
+          "text": "A Mama 1934-ben keletkezett. A négy versszakos költemény témája az emlékezés."
+        },
+        {
+          "key": "B",
+          "text": "A vers keletkezése 1934. A vers négy versszakból áll, és a vers témája az emlékezés."
+        },
+        {
+          "key": "C",
+          "text": "Vers: 1934, négy versszak, emlékezés."
+        },
+        {
+          "key": "D",
+          "text": "A vers, a vers, a vers – 1934, négy versszak, emlékezés."
+        }
+      ],
+      "answer": "A",
+      "category": "stilus-hangnem",
+      "explanation": "Helyes: A. A címmel és a „költemény” szóval változatos a megnevezés, a mondatok össze is kapcsolódnak.",
+      "wrongOptions": {
+        "B": "Még több ismétlés maradt benne.",
+        "C": "Távirati stílus, nem összefüggő szöveg.",
+        "D": "Ez halmozza az ismétlést."
+      }
+    },
+    {
+      "id": "4",
+      "kind": "choice",
+      "prompt": "Melyik megfogalmazás pontos a lírai én és a költő viszonyát tekintve?",
+      "options": [
+        {
+          "key": "A",
+          "text": "József Attila felment a padlásra teregetni."
+        },
+        {
+          "key": "B",
+          "text": "A lírai én felidézi, ahogy az anya felment a padlásra."
+        },
+        {
+          "key": "C",
+          "text": "A költő teregetett a padláson."
+        },
+        {
+          "key": "D",
+          "text": "Az anya a lírai én."
+        }
+      ],
+      "answer": "B",
+      "category": "stilus-hangnem",
+      "explanation": "Helyes: B. A versben a beszélő (lírai én) emlékezik, a padlásra az anya ment fel.",
+      "wrongOptions": {
+        "A": "Nem a költő, hanem az anya ment fel a padlásra; ráadásul a költőt és a beszélőt sem kell automatikusan azonosítani.",
+        "C": "Ugyanaz a hiba: a cselekvő az anya.",
+        "D": "Az anya a vers megidézett alakja, nem a beszélő."
+      }
+    },
+    {
+      "id": "5",
+      "kind": "choice",
+      "prompt": "Melyik mondat illik inkább egy reflektáló szövegbe, mint egy műértelmezésbe?",
+      "options": [
+        {
+          "key": "A",
+          "text": "A zárókép metaforája kozmikussá tágítja a teret."
+        },
+        {
+          "key": "B",
+          "text": "A versszakok kilenc szótagos sorai páros rímmel kapcsolódnak."
+        },
+        {
+          "key": "C",
+          "text": "Saját tapasztalatom szerint a kívülről tudott vers évekkel később is jelentést kaphat."
+        },
+        {
+          "key": "D",
+          "text": "A vers idősíkjai keretes szerkezetet alkotnak."
+        }
+      ],
+      "answer": "C",
+      "category": "stilus-hangnem",
+      "explanation": "Helyes: C. A személyes tapasztalat és az első személyű érvelés a reflektáló szöveg jellemzője; a többi mondat műelemző, tárgyilagos megállapítás.",
+      "wrongOptions": {
+        "A": "Képelemzés – a műértelmező szöveg stílusa.",
+        "B": "Formai elemzés – a műértelmező szöveg stílusa.",
+        "D": "Szerkezeti elemzés – a műértelmező szöveg stílusa."
+      }
+    }
+  ],
+  "relatedCategories": [
+    "szerkesztettseg",
+    "mondatszerkesztes"
+  ]
+}

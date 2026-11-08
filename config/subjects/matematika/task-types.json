@@ -1,0 +1,159 @@
+{
+  "meta": {
+    "verifiedAt": "2026-11-05",
+    "sources": [
+      {
+        "title": "Oktatási Hivatal: Matematika – részletes érettségi vizsgakövetelmény és vizsgaleírás (2024-től érvényes, Nat2020)",
+        "url": "https://www.oktatas.hu/pub_bin/dload/kozoktatas/erettsegi/vizsgakovetelmenyek2024/matematika_2024_e.pdf"
+      },
+      {
+        "title": "Eduline (2025. 04. 28.): Így pontozzák a középszintű matekérettségit (I. rész 45 perc/30 pont, II/A 3 feladat, II/B 3×17 pont – 2 választandó)",
+        "url": "https://eduline.hu/erettsegi-felveteli/20250428_Matekerettsegi-2025-pontozas-feladatok"
+      },
+      {
+        "title": "Eduline (2024. 05. 14.): Mikor kell szóban is érettségizni matekból? (12–24,99 % között; 50 pont = 15 + 30 + 5)",
+        "url": "https://eduline.hu/erettsegi-felveteli/20240514_szobeli-kozepszintu-matekerettsegi-mikor"
+      },
+      {
+        "title": "Eduline (2025. 06. 02.): Hány percesek és hány pontosak a szóbeli érettségik közép- és emelt szinten? (emelt matek szóbeli 20 perc, 35 pont)",
+        "url": "https://eduline.hu/erettsegi-felveteli/20250602_hany-perc-hany-pont-szobeli-erettsegi-kozep-emelt-szint"
+      },
+      {
+        "title": "Eduline (2022. 05. 02.): Itt van minden, amit az emelt matekérettségiről tudnotok kell (240 perc, I. rész 4 feladat 51 pont, II. rész 5-ből 4 × 16 pont)",
+        "url": "https://eduline.hu/erettsegi-felveteli/20220502_emelt-matek-osszefoglalo"
+      },
+      {
+        "title": "Eduline (2019. 11. 12.): Véget értek az emelt szintű szóbelik – így pontozzák (emelt matek szóbeli 35 pont bontása)",
+        "url": "https://eduline.hu/erettsegi-felveteli/20191112_oszi-erettsegi-szobelik-pontozas"
+      },
+      {
+        "title": "Eduline (2024. 03. 27.): Grafikonon mutatjuk, hogyan változnak a matekérettségi témaköreinek arányai (Nat2020 témakörök és súlyok)",
+        "url": "https://eduline.hu/erettsegi-felveteli/20240327_matekerettsegi-temakorok-valtozasok-2024"
+      },
+      {
+        "title": "Oktatási Hivatal: Középszintű matematika javítási-értékelési útmutató, 2025. október – általános javítási elvek (tükörmásolat)",
+        "url": "https://www.mateking.hu/sites/mp/files/uploads/k_mat_25okt_ut.pdf"
+      },
+      {
+        "title": "Eduline (2026. 03. 14.): Érettségi 2026 – pontozási és osztályozási szabályok (közép 80/60/40/25 %, emelt 60/47/33/25 %, vizsgarészenként 12 %)",
+        "url": "https://eduline.hu/erettsegi-felveteli/20260314_erettsegi-2026-pontozas-osztalyozas"
+      }
+    ],
+    "notes": [
+      "Az ellenőrzés hírportál-cikkek (Eduline, Telex) és a hivatalos dokumentumok keresőben indexelt szövege alapján történt; az OH oldalát a futtató környezet hálózata nem engedte közvetlenül megnyitni – a hivatalos vizsgaleírással érdemes összevetni."
+    ]
+  },
+  "reading": [
+    {
+      "id": "rovid-szamitas",
+      "name": "Rövid számításos feladat",
+      "nameEn": "Short calculation",
+      "levels": [
+        "kozep",
+        "emelt"
+      ],
+      "description": "Egy-két lépéses számítás, csak az eredményt kell megadni.",
+      "itemKinds": [
+        "text"
+      ]
+    },
+    {
+      "id": "feleletvalasztas",
+      "name": "Feleletválasztás",
+      "nameEn": "Multiple choice",
+      "levels": [
+        "kozep",
+        "emelt"
+      ],
+      "description": "Egy helyes válasz kiválasztása (pl. melyik állítás igaz, melyik grafikon illik).",
+      "itemKinds": [
+        "choice"
+      ]
+    },
+    {
+      "id": "igaz-hamis",
+      "name": "Igaz–hamis állítások",
+      "nameEn": "True/false",
+      "levels": [
+        "kozep",
+        "emelt"
+      ],
+      "description": "Állítások eldöntése indoklással a magyarázatban.",
+      "itemKinds": [
+        "tf"
+      ]
+    },
+    {
+      "id": "parositas",
+      "name": "Párosítás",
+      "nameEn": "Matching",
+      "levels": [
+        "kozep",
+        "emelt"
+      ],
+      "description": "Pl. függvények és grafikonok, halmazok és elemek párosítása.",
+      "itemKinds": [
+        "match"
+      ]
+    },
+    {
+      "id": "fogalom",
+      "name": "Definíció, tétel felismerése",
+      "nameEn": "Concept check",
+      "levels": [
+        "kozep",
+        "emelt"
+      ],
+      "description": "Fogalom, tétel, jelölés helyes megnevezése vagy kiegészítése.",
+      "itemKinds": [
+        "text",
+        "choice"
+      ]
+    }
+  ],
+  "language-use": [],
+  "listening": [],
+  "writing": [
+    {
+      "id": "kidolgozott",
+      "name": "Kidolgozott feladat",
+      "nameEn": "Worked problem",
+      "levels": [
+        "kozep",
+        "emelt"
+      ],
+      "description": "Több részfeladatból álló, indoklással megoldandó feladat (II/A jellegű)."
+    },
+    {
+      "id": "osszetett",
+      "name": "Összetett, szöveges feladat",
+      "nameEn": "Complex problem",
+      "levels": [
+        "kozep",
+        "emelt"
+      ],
+      "description": "Hosszabb, életszerű szövegű feladat több témakörből (II/B, emelt II. jellegű)."
+    },
+    {
+      "id": "bizonyitas",
+      "name": "Bizonyítási feladat",
+      "nameEn": "Proof",
+      "levels": [
+        "emelt"
+      ],
+      "description": "Állítás bizonyítása lépésenként, a felhasznált tételek megnevezésével."
+    }
+  ],
+  "speaking": [
+    {
+      "id": "tetel",
+      "name": "Szóbeli tétel",
+      "nameEn": "Oral topic",
+      "levels": [
+        "kozep",
+        "emelt"
+      ],
+      "description": "Definíciók, tételek, bizonyítás (emelten) és a tételhez tartozó feladatok kifejtése."
+    }
+  ]
+}

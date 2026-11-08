@@ -1,0 +1,287 @@
+{
+  "schemaVersion": 1,
+  "id": "nem-gr-passive",
+  "subject": "nemet",
+  "level": "kozep",
+  "source": "generated",
+  "topic": "nyelvtan",
+  "title": "Szenvedő szerkezet",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "grammar",
+  "type": "lesson",
+  "category": "passive",
+  "summaryHu": "A német szenvedő szerkezet (Passiv) a werden segédigével és a Partizip II-vel képződik, és akkor használjuk, ha a cselekvés a fontos, nem az, hogy ki végzi (Das Brot wird jeden Tag frisch gebacken). A magyar ilyenkor általános alanyt használ („sütik”, „építenek”), ezért a magyar tanulók ritkán élnek vele, és a képzésben hibáznak: worden helyett geworden, főnévi igenév a Partizip II helyett, von és durch keverése. Szövegértésben (ismeretterjesztő szövegek, hírek) gyakori, nyelvhelyességben az Igealakok feladatban és emelt szinten az írásban is előkerül.",
+  "rules": [
+    {
+      "title": "Képzés: werden + Partizip II, minden igeidőben",
+      "explanation": "Präsens: wird + Partizip II (Das Haus wird renoviert). Präteritum: wurde + Partizip II (Das Haus wurde renoviert). Perfekt: ist + Partizip II + worden (Das Haus ist renoviert worden) – a szenvedő Perfektben a werden Partizip II-je ge- nélküli: worden, nem geworden. Plusquamperfekt: war + Partizip II + worden. Futur I: wird + Partizip II + werden. A Partizip II a mondat végén áll, a ragozott segédige a második helyen.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "Die Kettenbrücke wurde 1849 eröffnet.",
+          "hu": "A Lánchidat 1849-ben adták át."
+        },
+        {
+          "en": "Mein Fahrrad ist gestern gestohlen worden.",
+          "hu": "Tegnap ellopták a biciklimet.",
+          "note": "Perfekt: ist … worden."
+        },
+        {
+          "en": "In Ungarn wird viel Paprika gegessen.",
+          "hu": "Magyarországon sok paprikát esznek."
+        }
+      ]
+    },
+    {
+      "title": "Mikor használjuk? – Passiv vagy man",
+      "explanation": "A szenvedő szerkezet akkor természetes, ha a cselekvő ismeretlen, mindegy vagy magától értetődő: folyamatok, leírások, hírek, szabályok, receptek. Ugyanezt a man általános alannyal is ki lehet fejezni aktív mondatban: Man renoviert das Haus = Das Haus wird renoviert. Aktívból passzívba: az Akkusativ tárgyból Nominativ alany lesz.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "Man spricht hier Deutsch. – Hier wird Deutsch gesprochen.",
+          "hu": "Itt németül beszélnek."
+        },
+        {
+          "en": "Der Müll wird jeden Dienstag abgeholt.",
+          "hu": "A szemetet minden kedden elviszik."
+        }
+      ]
+    },
+    {
+      "title": "A cselekvő megnevezése: von vagy durch",
+      "explanation": "Ha meg akarjuk nevezni, ki végzi a cselekvést, von + Dativ áll (személy, intézmény): Das Bild wurde von Picasso gemalt. Az eszközt, közvetítőt vagy okot durch + Akkusativ fejezi ki: Die Nachricht wurde durch einen Boten überbracht. Természeti erőknél mindkettő előfordul (von dem Sturm / durch den Sturm zerstört).",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "Der Roman wurde von einer jungen Autorin geschrieben.",
+          "hu": "A regényt egy fiatal írónő írta."
+        },
+        {
+          "en": "Viele Häuser wurden durch das Hochwasser beschädigt.",
+          "hu": "Sok házat megrongált az árvíz."
+        }
+      ]
+    },
+    {
+      "title": "Szenvedő szerkezet módbeli segédigével",
+      "explanation": "Módbeli segédige + Partizip II + werden (szenvedő főnévi igenév) a mondat végén: Das Formular muss bis Freitag ausgefüllt werden. Der Computer kann nicht mehr repariert werden. Mellékmondatban a módbeli segédige áll a legvégén: …, dass das Formular ausgefüllt werden muss.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "Die Hausaufgabe muss bis morgen gemacht werden.",
+          "hu": "A házi feladatot holnapig el kell készíteni."
+        },
+        {
+          "en": "Hier darf nicht geparkt werden.",
+          "hu": "Itt tilos parkolni."
+        }
+      ]
+    },
+    {
+      "title": "Zustandspassiv: sein + Partizip II",
+      "explanation": "A sein + Partizip II nem folyamatot, hanem egy cselekvés eredményeként létrejött állapotot fejez ki: Die Tür ist geschlossen (zárva van). Összevetve: Die Tür wird geschlossen (becsukják – folyamat). Nyitvatartásnál, feliratoknál ezért ist/sind geöffnet/geschlossen áll: Das Museum ist montags geschlossen.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "Das Geschäft ist sonntags geschlossen.",
+          "hu": "Az üzlet vasárnap zárva van."
+        },
+        {
+          "en": "Der Tisch ist schon gedeckt.",
+          "hu": "Az asztal már meg van terítve."
+        }
+      ]
+    },
+    {
+      "title": "Alany nélküli szenvedő, Dativ, a szenvedő helyettesítése",
+      "explanation": "Tárgy nélküli igéknél alany nélküli szenvedő is lehetséges: Hier wird nicht geraucht. Am Samstag wird getanzt (a mondat elején es állhat: Es wird getanzt). A Dativ a szenvedő mondatban is Dativ marad, nem lesz alany: Man hilft mir → Mir wird geholfen. A szenvedő jelentést kifejezheti még: sich lassen + főnévi igenév (Das lässt sich leicht erklären), sein + zu + főnévi igenév (Die Aufgabe ist bis Montag zu erledigen) és a -bar képző (Das ist machbar).",
+      "emeltOnly": true,
+      "examples": [
+        {
+          "en": "Mir wurde sofort geholfen.",
+          "hu": "Azonnal segítettek nekem.",
+          "note": "Dativ marad: mir, nem ich."
+        },
+        {
+          "en": "Das Problem lässt sich schnell lösen.",
+          "hu": "A probléma gyorsan megoldható."
+        },
+        {
+          "en": "Die Anmeldung ist bis zum 15. Mai abzugeben.",
+          "hu": "A jelentkezést május 15-ig kell leadni."
+        }
+      ]
+    }
+  ],
+  "commonMistakes": [
+    {
+      "wrong": "Das Haus ist 1990 gebaut geworden.",
+      "right": "Das Haus ist 1990 gebaut worden.",
+      "why": "A szenvedő Perfektben a werden Partizip II-je ge- nélkül áll: worden. A geworden csak a „válik valamivé” jelentésű werden Perfektje (Er ist Arzt geworden)."
+    },
+    {
+      "wrong": "Hier wird Deutsch sprechen.",
+      "right": "Hier wird Deutsch gesprochen.",
+      "why": "A szenvedő szerkezet werden + Partizip II. A werden + főnévi igenév a Futur I lenne (aktív jövő idő)."
+    },
+    {
+      "wrong": "Das Brot wird jeden Morgen gebackt.",
+      "right": "Das Brot wird jeden Morgen gebacken.",
+      "why": "A backen Partizip II-je erős alakú: gebacken. A szenvedő szerkezethez a helyes Partizip II-t kell tudni (gelesen, geschrieben, gefunden, gestohlen)."
+    },
+    {
+      "wrong": "Das Fenster wurde durch meinem Bruder kaputt gemacht.",
+      "right": "Das Fenster wurde von meinem Bruder kaputt gemacht.",
+      "why": "A cselekvő személyt von + Dativ vezeti be. A durch eszközt, okot jelöl, és Akkusativot vonz (durch den Sturm)."
+    },
+    {
+      "wrong": "Das Museum wird von 9 bis 17 Uhr geöffnet.",
+      "right": "Das Museum ist von 9 bis 17 Uhr geöffnet.",
+      "why": "A nyitvatartás állapot (nyitva van), ezért Zustandspassiv (sein + Partizip II) kell. A wird geöffnet azt jelentené, hogy kinyitják – ez egy pillanatnyi cselekvés."
+    },
+    {
+      "wrong": "Mich wurde nicht geholfen.",
+      "right": "Mir wurde nicht geholfen.",
+      "why": "A helfen Dativot vonz, és a Dativ a szenvedő mondatban is Dativ marad (nem lesz belőle alany, és Akkusativ sem)."
+    }
+  ],
+  "examTips": [
+    "Szövegértésnél (ismeretterjesztő szöveg, hír) a szenvedő mondatban a cselekvő gyakran nincs megnevezve – ha a kérdés arra vonatkozik, ki tett valamit, keresd a von + Dativ részt, vagy fogadd el, hogy a szöveg nem mondja meg.",
+    "Igealakok feladatban, ha a mondat alanya nem végezheti a cselekvést (Das Paket …, Der Brief …, Die Stadt …), gyanakodj szenvedő szerkezetre, és nézd meg, áll-e worden vagy werden a mondat végén.",
+    "Emelt szintű írásban (cikk, véleménykifejtés) egy-két szenvedő szerkezet (Es wird oft behauptet, dass …; Das Problem muss gelöst werden) igényesebbé teszi a stílust – de csak akkor használd, ha biztos vagy a képzésben."
+  ],
+  "practice": [
+    {
+      "id": "1",
+      "kind": "choice",
+      "prompt": "Das Paket ist gestern Nachmittag ___ worden.",
+      "options": [
+        {
+          "key": "A",
+          "text": "schickt"
+        },
+        {
+          "key": "B",
+          "text": "schicken"
+        },
+        {
+          "key": "C",
+          "text": "geschickt"
+        },
+        {
+          "key": "D",
+          "text": "geschicken"
+        }
+      ],
+      "answer": "C",
+      "category": "passive",
+      "explanation": "Helyes: geschickt. Szenvedő Perfekt: ist + Partizip II + worden. A schicken gyenge ige, Partizip II-je ge- + tő + -t: geschickt.",
+      "wrongOptions": {
+        "A": "A schickt ragozott alak (er schickt), nem Partizip II.",
+        "B": "A főnévi igenév nem állhat a worden előtt; a szenvedő szerkezethez Partizip II kell.",
+        "D": "A schicken gyenge ige, Partizip II-je -t végű; a geschicken nem létező alak."
+      }
+    },
+    {
+      "id": "2",
+      "kind": "text",
+      "prompt": "In diesem Restaurant ___ (werden) jeden Tag frische Pasta gemacht.",
+      "cue": "werden",
+      "answer": [
+        "wird"
+      ],
+      "category": "passive",
+      "explanation": "Helyes: wird. Jelen idejű szenvedő szerkezet: werden + Partizip II (gemacht). Az alany a frische Pasta (egyes szám), ezért a werden egyes szám 3. személyű alakja kell: wird."
+    },
+    {
+      "id": "3",
+      "kind": "choice",
+      "prompt": "Der Film ist 2023 in Budapest gedreht ___.",
+      "options": [
+        {
+          "key": "A",
+          "text": "worden"
+        },
+        {
+          "key": "B",
+          "text": "geworden"
+        },
+        {
+          "key": "C",
+          "text": "wurde"
+        },
+        {
+          "key": "D",
+          "text": "werden"
+        }
+      ],
+      "answer": "A",
+      "category": "passive",
+      "explanation": "Helyes: worden. A szenvedő Perfekt: ist + Partizip II + worden. A szenvedő segédige Partizip II-je ge- nélküli.",
+      "wrongOptions": {
+        "B": "A geworden a „válik valamivé” jelentésű werden Partizip II-je (Er ist Lehrer geworden); szenvedő szerkezetben worden áll.",
+        "C": "A wurde Präteritum-alak, a második helyre kerülne (Der Film wurde … gedreht), a mondat végén nem állhat az ist mellett.",
+        "D": "A werden főnévi igenév; az ist … gedreht werden szerkezet hibás (Futur passivban wird … gedreht werden lenne)."
+      }
+    },
+    {
+      "id": "4",
+      "kind": "text",
+      "prompt": "Der Brief an die Schule muss heute noch ___ (schreiben) werden.",
+      "cue": "schreiben",
+      "answer": [
+        "geschrieben"
+      ],
+      "category": "passive",
+      "explanation": "Helyes: geschrieben. Módbeli segédigés szenvedő szerkezet: muss + Partizip II + werden. A schreiben erős ige, Partizip II-je geschrieben."
+    },
+    {
+      "id": "5",
+      "kind": "choice",
+      "prompt": "Das Bild wurde ___ einem berühmten ungarischen Maler gemalt.",
+      "options": [
+        {
+          "key": "A",
+          "text": "bei"
+        },
+        {
+          "key": "B",
+          "text": "durch"
+        },
+        {
+          "key": "C",
+          "text": "mit"
+        },
+        {
+          "key": "D",
+          "text": "von"
+        }
+      ],
+      "answer": "D",
+      "category": "passive",
+      "explanation": "Helyes: von. A szenvedő mondatban a cselekvő személyt von + Dativ vezeti be (von einem … Maler).",
+      "wrongOptions": {
+        "A": "A bei helyet jelöl (valakinél), a cselekvőt nem vezeti be.",
+        "B": "A durch eszközt, okot jelöl, és Akkusativot vonz (durch einen …) – a festő itt a cselekvő személy, és a mondatban Dativ áll.",
+        "C": "A mit eszközt vagy társat jelöl (mit dem Pinsel gemalt = ecsettel festették); a cselekvő személyt nem."
+      }
+    },
+    {
+      "id": "6",
+      "kind": "text",
+      "prompt": "Mein Fahrrad ___ (werden) gestern vor der Schule gestohlen.",
+      "cue": "werden",
+      "answer": [
+        "wurde"
+      ],
+      "category": "passive",
+      "explanation": "Helyes: wurde. Múltbeli szenvedő (gestern), és a mondat végén nincs worden, tehát Präteritum: wurde + Partizip II (gestohlen). A Perfekthez a mondat végére worden kellene (ist … gestohlen worden)."
+    }
+  ],
+  "relatedCategories": [
+    "tense",
+    "modal",
+    "verb-conjugation"
+  ]
+}

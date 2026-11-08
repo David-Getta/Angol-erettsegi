@@ -1,0 +1,267 @@
+{
+  "schemaVersion": 1,
+  "id": "rd-emelt-night-trains-short-answer",
+  "subject": "angol",
+  "revision": 2,
+  "level": "emelt",
+  "source": "generated",
+  "topic": "utazas",
+  "title": "Sleeping your way across Europe",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "reading",
+  "type": "short-answer",
+  "instructions": "Read the article about night trains and answer the questions. Use NO MORE THAN FOUR WORDS for each answer. There is an example (0) at the beginning.",
+  "instructionsHu": "Olvasd el az éjszakai vonatokról szóló cikket, és válaszolj a kérdésekre legfeljebb négy szóval. A 0. a példa.",
+  "passage": {
+    "title": "Sleeping your way across Europe",
+    "subtitle": "Night trains, which almost disappeared a decade ago, are making a comeback. Our reporter boarded one to find out why.",
+    "blocks": [
+      {
+        "text": "At 7.40 on a Thursday evening, the platform at Amsterdam Centraal is crowded with an unusual mix of passengers: a family with three sleepy children, two businesswomen with laptop bags, a group of students carrying enough snacks for a week. All of them are waiting for the overnight service to Vienna, which will cover more than 1,100 kilometres while they sleep. If everything goes to plan, they will step off the train at half past nine the next morning, in the middle of the city, without having passed through a single security check."
+      },
+      {
+        "text": "Only a decade ago, journeys like this seemed to belong to the past. Budget airlines could fly passengers between European capitals for less than the price of a restaurant meal, and one national railway after another cancelled its sleeper services, which were expensive to run and often half empty. By 2016, many routes that had existed for over a century had vanished from the timetables."
+      },
+      {
+        "text": "What changed was not so much the trains as the travellers. Growing awareness of the environmental cost of flying – a short-haul flight produces several times more carbon dioxide per passenger than the same journey by rail – has persuaded many people, particularly the young, to look for alternatives. Railway companies noticed that demand was rising and began ordering new carriages. Launching new routes, however, has not always been easy: a single train may need permission from four or five national railway networks, each with its own rules and fees."
+      },
+      {
+        "text": "My compartment, a 'couchette' with six narrow beds arranged in two rows of three, is clearly designed for practicality rather than luxury. Each bed comes with a pillow, a sheet sleeping bag and a small reading light, and the conductor hands out bottles of water and earplugs. Passengers who want more privacy can pay extra for a sleeper cabin with a proper bed and its own washbasin, while those on a tight budget can choose a reclining seat, which is cheaper but, as one experienced traveller warns me, 'only for people who can sleep anywhere'."
+      },
+      {
+        "text": "My fellow passengers have varied reasons for being on board. Lukas, a 24-year-old engineering student from Rotterdam, says he has not taken a plane for three years. 'I worked out that one return flight to Spain cancelled out everything I had saved by cycling instead of driving,' he explains. Across the corridor, a retired couple from Utrecht tell me they simply hate airports. 'Here, you don't waste a whole day,' says the husband. 'You go to bed in one country and wake up in another.'"
+      },
+      {
+        "text": "The experience is not without its drawbacks. Night trains are rarely cheaper than flights, especially if you book a private cabin, and tickets for popular dates sell out months in advance. Delays are common, and on my journey we stopped for almost an hour somewhere in Germany for reasons nobody explained. Light sleepers should also be warned: the train shudders noisily every time it brakes, and at around three in the morning the carriages are separated and attached to another train, a process that involves a good deal of banging."
+      },
+      {
+        "text": "Still, as we roll slowly through the outskirts of Vienna the next morning, the mood in the dining car is cheerful. Breakfast – a bread roll, butter, jam and coffee – is included in the ticket price. Lukas is already planning his next trip, to Stockholm. 'It takes longer,' he admits, 'but the journey becomes part of the holiday instead of something you just have to survive.'"
+      }
+    ]
+  },
+  "example": {
+    "id": "0",
+    "kind": "text",
+    "prompt": "Which city is the night train travelling to?",
+    "answer": [
+      "Vienna",
+      "to Vienna"
+    ],
+    "maxWords": 4,
+    "category": "detail",
+    "explanation": "Vienna (Bécs) – az utasok az éjszakai Bécsbe tartó járatra várnak („the overnight service to Vienna”).",
+    "evidence": "All of them are waiting for the overnight service to Vienna"
+  },
+  "items": [
+    {
+      "id": "1",
+      "kind": "text",
+      "prompt": "What will passengers not have to go through at any point on this journey?",
+      "answer": [
+        "security checks",
+        "security check",
+        "a security check",
+        "any security checks",
+        "any security check",
+        "a single security check",
+        "security",
+        "airport security",
+        "airport security checks",
+        "security controls"
+      ],
+      "maxWords": 4,
+      "category": "detail",
+      "explanation": "Security checks (biztonsági ellenőrzés). A szöveg szerint úgy érkeznek meg a város közepére, hogy egyetlen biztonsági ellenőrzésen sem mennek át – a repülőúttal ellentétben.",
+      "evidence": "without having passed through a single security check"
+    },
+    {
+      "id": "2",
+      "kind": "text",
+      "prompt": "What did railway companies start to order once they saw that demand was growing?",
+      "answer": [
+        "new carriages",
+        "carriages",
+        "new carriage",
+        "new train carriages",
+        "train carriages",
+        "new railway carriages",
+        "railway carriages",
+        "new coaches",
+        "new railway coaches"
+      ],
+      "maxWords": 4,
+      "category": "detail",
+      "explanation": "New carriages (új vasúti kocsik). A vasúttársaságok észrevették a növekvő keresletet, és új kocsikat kezdtek rendelni („began ordering new carriages”).",
+      "evidence": "Railway companies noticed that demand was rising and began ordering new carriages."
+    },
+    {
+      "id": "3",
+      "kind": "text",
+      "prompt": "From how many national railway networks may a single train need permission?",
+      "answer": [
+        "four or five",
+        "4 or 5",
+        "four to five",
+        "4 to 5",
+        "4-5",
+        "four or five networks",
+        "4 or 5 networks"
+      ],
+      "maxWords": 4,
+      "category": "detail",
+      "explanation": "Four or five (négy-öt). Az új járatok indítása azért nehéz, mert egyetlen vonatnak négy-öt nemzeti vasúthálózattól kell engedélyt kérnie, mindegyiknek saját szabályai és díjai vannak.",
+      "evidence": "a single train may need permission from four or five national railway networks"
+    },
+    {
+      "id": "4",
+      "kind": "text",
+      "prompt": "What is the least expensive way of travelling on this train?",
+      "answer": [
+        "a reclining seat",
+        "reclining seat",
+        "reclining seats",
+        "the reclining seat",
+        "in a reclining seat",
+        "a seat",
+        "seat"
+      ],
+      "maxWords": 4,
+      "category": "inference",
+      "explanation": "A reclining seat (dönthető ülés). A szűkös költségvetésű utasok („on a tight budget”) választhatják, és a szöveg szerint olcsóbb („which is cheaper”) – a hálófülke felár ellenében jár, tehát az ülés a legolcsóbb.",
+      "evidence": "those on a tight budget can choose a reclining seat, which is cheaper"
+    },
+    {
+      "id": "5",
+      "kind": "text",
+      "prompt": "What does Lukas do instead of driving a car?",
+      "answer": [
+        "cycling",
+        "cycles",
+        "he cycles",
+        "cycle",
+        "rides a bike",
+        "he rides a bike",
+        "rides a bicycle",
+        "he rides a bicycle",
+        "rides his bike",
+        "he rides his bike",
+        "goes by bike",
+        "he goes by bike",
+        "by bike",
+        "by bicycle",
+        "uses a bike",
+        "he uses a bike",
+        "he goes cycling"
+      ],
+      "maxWords": 4,
+      "category": "detail",
+      "explanation": "Cycling (biciklizik). Lukas azt számolta ki, hogy egyetlen spanyolországi repülőút semmissé tette mindazt, amit azzal spórolt meg, hogy autó helyett biciklivel jár („by cycling instead of driving”).",
+      "evidence": "everything I had saved by cycling instead of driving"
+    },
+    {
+      "id": "6",
+      "kind": "text",
+      "prompt": "Which place do the retired couple particularly dislike?",
+      "answer": [
+        "airports",
+        "airport",
+        "the airport",
+        "the airports",
+        "an airport"
+      ],
+      "maxWords": 4,
+      "category": "detail",
+      "explanation": "Airports (repülőterek). Az utrechti nyugdíjas házaspár egyszerűen utálja a repülőtereket („they simply hate airports”) – a „particularly dislike” ennek az átfogalmazása.",
+      "evidence": "a retired couple from Utrecht tell me they simply hate airports"
+    },
+    {
+      "id": "7",
+      "kind": "text",
+      "prompt": "In which country was the train held up for nearly an hour?",
+      "answer": [
+        "Germany",
+        "in Germany",
+        "somewhere in Germany"
+      ],
+      "maxWords": 4,
+      "category": "detail",
+      "explanation": "Germany (Németország). A riporter útján a vonat majdnem egy órát állt valahol Németországban, magyarázat nélkül („held up” = feltartóztatták, késett).",
+      "evidence": "we stopped for almost an hour somewhere in Germany"
+    },
+    {
+      "id": "8",
+      "kind": "text",
+      "prompt": "Which meal do passengers not have to pay extra for?",
+      "answer": [
+        "breakfast",
+        "a breakfast",
+        "the breakfast"
+      ],
+      "maxWords": 4,
+      "category": "detail",
+      "explanation": "Breakfast (reggeli). A reggeli (zsemle, vaj, lekvár, kávé) benne van a jegy árában („is included in the ticket price”), tehát nem kell külön fizetni érte.",
+      "evidence": "Breakfast – a bread roll, butter, jam and coffee – is included in the ticket price."
+    },
+    {
+      "id": "9",
+      "kind": "text",
+      "prompt": "Which city does Lukas plan to visit next?",
+      "answer": [
+        "Stockholm",
+        "to Stockholm"
+      ],
+      "maxWords": 4,
+      "category": "detail",
+      "explanation": "Stockholm. Lukas már a következő útját tervezi, Stockholmba („his next trip, to Stockholm”).",
+      "evidence": "Lukas is already planning his next trip, to Stockholm."
+    }
+  ],
+  "glossary": [
+    {
+      "term": "platform",
+      "meaning": "peron"
+    },
+    {
+      "term": "overnight service",
+      "meaning": "éjszakai járat"
+    },
+    {
+      "term": "sleeper services",
+      "meaning": "hálókocsis járatok"
+    },
+    {
+      "term": "short-haul flight",
+      "meaning": "rövid távú repülőjárat"
+    },
+    {
+      "term": "carriages",
+      "meaning": "vasúti kocsik"
+    },
+    {
+      "term": "couchette",
+      "meaning": "fekvőhelyes (kusett) fülke"
+    },
+    {
+      "term": "on a tight budget",
+      "meaning": "szűkös pénzből, kevés pénzzel"
+    },
+    {
+      "term": "cancel out",
+      "meaning": "semmissé tesz, kiolt (hatást)"
+    },
+    {
+      "term": "drawbacks",
+      "meaning": "hátrányok"
+    },
+    {
+      "term": "shudder",
+      "meaning": "rázkódik, megremeg"
+    },
+    {
+      "term": "outskirts",
+      "meaning": "külváros, peremkerület"
+    }
+  ],
+  "suggestedMinutes": 15
+}

@@ -1,0 +1,130 @@
+{
+  "meta": {
+    "verifiedAt": "2026-11-05",
+    "sources": [
+      {
+        "title": "Oktatási Hivatal: Biológia – részletes érettségi vizsgakövetelmény és vizsgaleírás (2024-től érvényes, Nat2020)",
+        "url": "https://www.oktatas.hu/pub_bin/dload/kozoktatas/erettsegi/vizsgakovetelmenyek2024/biologia_2024_e.pdf"
+      },
+      {
+        "title": "Eduline (2024. 05. 13.): Minden, amit a keddi biológiaérettségiről tudni kell (közép 150 perc, 100 pont, 6–12 feladat; szóbeli A 25 + B 20 + 5; emelt 240 perc 80 + 20 pont)",
+        "url": "https://eduline.hu/erettsegi-felveteli/20240513_biologiaerettsegi-biologia-erettsegi-2024-minden-tudnivalo"
+      },
+      {
+        "title": "Eduline (2025. 05. 12.): Milyen segédeszközt lehet használni a biológiaérettségin? (csak számológép)",
+        "url": "https://eduline.hu/erettsegi-felveteli/20250512_biologiaerettsegi-segedeszkozok-szamologep"
+      },
+      {
+        "title": "emeltbiosz.hu: Az érettségi menetéről – szóbeli pontozás (közép 25 + 20 + 5, emelt 20 + 25 + 5)",
+        "url": "https://emeltbiosz.hu/erettsegi/"
+      },
+      {
+        "title": "Gergely Tibor: A 2024-től érvényes biológia érettségi követelményrendszer változásai (hat Nat2020 témakör)",
+        "url": "http://www.gergelytibor.hu/kovetelmenyek_valtozasai.pdf"
+      },
+      {
+        "title": "Eduline (2023. 12. 22.): Itt vannak a 2024-es emelt szintű biológiaérettségi témakörei",
+        "url": "https://eduline.hu/erettsegi-felveteli/20231222_emelt-szintu-biologiaerettsegi-temakorok-2024"
+      },
+      {
+        "title": "Eduline (2026. 03. 14.): Érettségi 2026 – pontozási és osztályozási szabályok (közép 80/60/40/25 %, emelt 60/47/33/25 %, vizsgarészenként 12 %)",
+        "url": "https://eduline.hu/erettsegi-felveteli/20260314_erettsegi-2026-pontozas-osztalyozas"
+      }
+    ],
+    "notes": [
+      "Az ellenőrzés hírportál-cikkek (Eduline, Telex) és a hivatalos dokumentumok keresőben indexelt szövege alapján történt; az OH oldalát a futtató környezet hálózata nem engedte közvetlenül megnyitni – a hivatalos vizsgaleírással érdemes összevetni."
+    ]
+  },
+  "groups": [
+    {
+      "id": "fogalom",
+      "name": "Fogalmak, felépítés"
+    },
+    {
+      "id": "folyamat",
+      "name": "Folyamatok, összefüggések"
+    },
+    {
+      "id": "elemzes",
+      "name": "Adat- és ábraelemzés"
+    },
+    {
+      "id": "szamitas",
+      "name": "Genetikai és ökológiai számítás"
+    }
+  ],
+  "categories": [
+    {
+      "id": "fogalomhasznalat",
+      "name": "Biológiai fogalmak",
+      "group": "fogalom",
+      "description": "Fogalmak összekeverése vagy pontatlan meghatározása (pl. gén–allél, faj–populáció)."
+    },
+    {
+      "id": "felepites-mukodes",
+      "name": "Felépítés és működés kapcsolata",
+      "group": "fogalom",
+      "description": "Szervek, sejtalkotók felépítésének és funkciójának tévesztése."
+    },
+    {
+      "id": "rendszertan-fajismeret",
+      "name": "Rendszertan, fajismeret",
+      "group": "fogalom",
+      "description": "Élőlénycsoportok jellemzőinek, példafajainak keverése."
+    },
+    {
+      "id": "anyagcsere-folyamat",
+      "name": "Anyagcsere-folyamatok",
+      "group": "folyamat",
+      "description": "Fotoszintézis, légzés, erjedés lépései, kiindulási anyagok és termékek."
+    },
+    {
+      "id": "szabalyozas-folyamat",
+      "name": "Szabályozás, homeosztázis",
+      "group": "folyamat",
+      "description": "Idegi és hormonális szabályozás, visszacsatolás irányának hibája."
+    },
+    {
+      "id": "okologiai-osszefugges",
+      "name": "Ökológiai összefüggések",
+      "group": "folyamat",
+      "description": "Táplálékláncok, anyagforgalom, környezeti tényezők hatásának hibás értelmezése."
+    },
+    {
+      "id": "evolucios-ervel",
+      "name": "Evolúciós érvelés",
+      "group": "folyamat",
+      "description": "Lamarcki (célirányos) magyarázat, szelekció félreértése."
+    },
+    {
+      "id": "abra-adatelemzes",
+      "name": "Ábra, grafikon, táblázat elemzése",
+      "group": "elemzes",
+      "description": "Hibás leolvasás, trend vagy összefüggés félreértelmezése."
+    },
+    {
+      "id": "kiserlet-ertelmezes",
+      "name": "Kísérlet értelmezése",
+      "group": "elemzes",
+      "description": "Kontroll, változók, következtetés hibái."
+    },
+    {
+      "id": "szovegertelmezes",
+      "name": "A kérdés és a szöveg értelmezése",
+      "group": "elemzes",
+      "description": "Nem a kérdésre válaszol, a szöveg információját félreérti."
+    },
+    {
+      "id": "genetikai-szamitas",
+      "name": "Genetikai feladatok",
+      "group": "szamitas",
+      "description": "Genotípus–fenotípus arányok, keresztezési táblázat, ivarhoz kötött öröklés hibái."
+    },
+    {
+      "id": "okologiai-szamitas",
+      "name": "Ökológiai, élettani számítás",
+      "group": "szamitas",
+      "description": "Populációnövekedés, energiaáramlás, arányok, mértékegységek."
+    }
+  ]
+}

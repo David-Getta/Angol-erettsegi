@@ -1,0 +1,263 @@
+{
+  "schemaVersion": 1,
+  "id": "dig-gr-informacios-tarsadalom-fogalom",
+  "subject": "digitalis-kultura",
+  "revision": 1,
+  "level": "kozep",
+  "source": "generated",
+  "topic": "nyelvtan",
+  "title": "Információs társadalom, jog, etika",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "grammar",
+  "type": "lesson",
+  "category": "informacios-tarsadalom-fogalom",
+  "summaryHu": "Az információs társadalomról szóló tételekben a szerzői jog, a licencek, a személyes adatok védelme, az e-ügyintézés és a felelős online viselkedés szabályait kell pontosan ismerni. A gyakorlati vizsgán is számít: a kiadványba, weblapra csak engedéllyel felhasználható képet tehetsz, és a forrást meg kell jelölni. A leggyakoribb hibák: „ami a neten van, az szabad”, a freeware és a nyílt forráskód összekeverése, és a személyes adat túl szűk értelmezése.",
+  "rules": [
+    {
+      "title": "Szerzői jog",
+      "explanation": "A szerzői jog a művet a létrehozásától automatikusan védi (regisztráció nem kell), Magyarországon a szerző halálától számított 70 évig. A szerzőt személyhez fűződő jogok (név feltüntetése, a mű egysége) és vagyoni jogok (többszörözés, terjesztés, nyilvánossághoz közvetítés engedélyezése) illetik meg. Szabad felhasználás pl. az idézés a forrás és a szerző megjelölésével; a magáncélú másolás szoftverre nem vonatkozik.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "„… (Szerző: Kovács Anna, forrás: pelda.hu, 2026)”",
+          "hu": "forrásmegjelölés idézéskor"
+        }
+      ]
+    },
+    {
+      "title": "Licencek",
+      "explanation": "Kereskedelmi (fizetős) szoftver; shareware (ideig vagy funkcióiban korlátozott kipróbálás); freeware (ingyenes, általában zárt forrású); nyílt forráskódú (a forráskód megismerhető, módosítható, a licenc szerint terjeszthető, pl. GPL); közkincs (public domain): a védelmi idő lejárt, vagy a szerző lemondott a jogairól. Creative Commons: BY (szerző megnevezése), NC (nem kereskedelmi), ND (nem módosítható), SA (azonos licenccel terjeszthető).",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "CC BY-NC-SA",
+          "hu": "a szerzőt meg kell nevezni, kereskedelmi cél tilos, a módosított mű is ugyanilyen licencet kap"
+        }
+      ]
+    },
+    {
+      "title": "Személyes adatok védelme (GDPR)",
+      "explanation": "Személyes adat minden olyan információ, amely alapján egy élő ember azonosítható (név, lakcím, e-mail-cím, fénykép, IP-cím, helyadat); különleges adat pl. az egészségügyi adat. A kezeléshez jogalap kell (pl. hozzájárulás, szerződés, jogi kötelezettség); elvek: célhoz kötöttség, adattakarékosság, pontosság, korlátozott tárolás, biztonság. Az érintett jogai: tájékoztatás, hozzáférés, helyesbítés, törlés, tiltakozás, adathordozhatóság. Magyarországon a felügyeleti hatóság a NAIH.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "Egy osztálytárs felismerhető fotója",
+          "hu": "személyes adat – közzétételéhez az ő hozzájárulása kell"
+        }
+      ]
+    },
+    {
+      "title": "E-ügyintézés és digitális állampolgárság",
+      "explanation": "Az állami ügyek egy része online intézhető (pl. Ügyfélkapu+ azonosítással vagy a DÁP mobilalkalmazással); a hivatalos azonosítási adatokat soha nem adjuk meg e-mailben vagy telefonon kérő „ügyintézőnek”. Digitális lábnyom: minden online tevékenységünk nyomot hagy, a feltöltött tartalom nehezen törölhető.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "Ügyfélkapu+ belépés kétlépcsős azonosítással",
+          "hu": "biztonságos e-ügyintézés"
+        }
+      ]
+    },
+    {
+      "title": "Netikett és felelős információhasználat",
+      "explanation": "Netikett: az online kommunikáció illemszabályai (értelmes tárgysor, nem csupa nagybetű, tömeges levélnél titkos másolat, mások magánszférájának tisztelete). Forráskritika: ki a szerző, mikor és hol jelent meg, mit mondanak más források – az álhírek és a manipulált képek (deepfake) felismeréséhez.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "Bcc mező tömeges levélnél",
+          "hu": "nem adjuk ki a címzettek e-mail-címét"
+        }
+      ]
+    },
+    {
+      "title": "Emelt szint: algoritmusok a társadalomban",
+      "explanation": "A közösségi oldalak ajánlórendszerei az érdeklődésünk szerint válogatnak, ami véleménybuborékot (filter bubble) okozhat; a mesterséges intelligencia által készített szöveg, kép és videó felhasználásánál a forrás megjelölése, a hitelesség ellenőrzése és a személyiségi jogok tisztelete kérdéses és fontos.",
+      "emeltOnly": true,
+      "examples": [
+        {
+          "en": "„A kép mesterséges intelligenciával készült.”",
+          "hu": "átlátható jelölés"
+        }
+      ]
+    }
+  ],
+  "commonMistakes": [
+    {
+      "wrong": "Ami szabadon elérhető az interneten, azt bárki szabadon felhasználhatja.",
+      "right": "Csak akkor használhatom, ha a licence megengedi, vagy engedélyt kaptam (és a forrást megjelölöm).",
+      "why": "Az elérhetőség nem engedély; a szerzői jog a nyilvánosságra hozott műveket is védi."
+    },
+    {
+      "wrong": "A freeware program szabadon módosítható.",
+      "right": "A freeware ingyenes, de általában zárt forrású; módosítani a nyílt forráskódú szoftvert lehet.",
+      "why": "Az ár (ingyenes) és a forráskód hozzáférhetősége két külön kérdés."
+    },
+    {
+      "wrong": "Ha egy szöveget a saját szavaimmal átírok, nem kell megjelölnöm a forrást.",
+      "right": "Az átvett gondolatoknál is meg kell jelölni a forrást.",
+      "why": "A forrás nélküli átvétel – átfogalmazva is – plágium."
+    },
+    {
+      "wrong": "Személyes adat csak a név és a lakcím.",
+      "right": "Személyes adat minden, ami alapján valaki azonosítható: e-mail-cím, fénykép, IP-cím, helyadat is.",
+      "why": "A túl szűk értelmezés miatt az ember sokkal több adatot ad ki, mint gondolná."
+    }
+  ],
+  "examTips": [
+    "Az elméleti tételt egy saját életből vett példával (iskolai prezentáció, közösségi média, online vásárlás) is támaszd alá – a rubrika a példákat külön értékeli.",
+    "A licenceknél mindig két dolgot nézz: mennyibe kerül, és hozzáférhető-e, módosítható-e a forráskód.",
+    "A gyakorlati vizsgán a kiadott képeket használd; ha mégis mást, csak szabad licencűt, forrásmegjelöléssel."
+  ],
+  "practice": [
+    {
+      "kind": "choice",
+      "prompt": "Mit enged meg a CC BY-SA licenc?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Csak a nem kereskedelmi felhasználást."
+        },
+        {
+          "key": "B",
+          "text": "Bármilyen felhasználást, akár kereskedelmit is, ha megnevezed a szerzőt, és a módosított művet ugyanilyen licenccel teszed közzé."
+        },
+        {
+          "key": "C",
+          "text": "Csak változtatás nélküli felhasználást."
+        },
+        {
+          "key": "D",
+          "text": "Bármilyen felhasználást a szerző megnevezése nélkül."
+        }
+      ],
+      "answer": "B",
+      "explanation": "B. BY: a szerzőt meg kell nevezni; SA (ShareAlike): az átdolgozást azonos licenccel kell terjeszteni. NC nincs benne, tehát a kereskedelmi felhasználás megengedett.",
+      "wrongOptions": {
+        "A": "Ez az NC feltétel lenne, ami itt nem szerepel.",
+        "C": "Ez az ND feltétel lenne; az SA éppen az átdolgozásra vonatkozik.",
+        "D": "A BY miatt a szerző megnevezése kötelező."
+      },
+      "id": "1",
+      "category": "informacios-tarsadalom-fogalom"
+    },
+    {
+      "kind": "text",
+      "prompt": "Hány évig tart Magyarországon a szerzői jogi védelem a szerző halála után?",
+      "answer": [
+        "70",
+        "70 év",
+        "70 évig"
+      ],
+      "explanation": "70 évig: a vagyoni jogok a szerző életében és halálától számított 70 évig állnak fenn; utána a mű közkincs lesz.",
+      "id": "2",
+      "category": "informacios-tarsadalom-fogalom"
+    },
+    {
+      "kind": "choice",
+      "prompt": "Melyik személyes adat?",
+      "options": [
+        {
+          "key": "A",
+          "text": "egy város lakosainak száma"
+        },
+        {
+          "key": "B",
+          "text": "egy tanuló iskolai e-mail-címe (kiss.anna@…)"
+        },
+        {
+          "key": "C",
+          "text": "a napi középhőmérséklet"
+        },
+        {
+          "key": "D",
+          "text": "egy könyv ISBN-száma"
+        }
+      ],
+      "answer": "B",
+      "explanation": "B. Az e-mail-cím egy konkrét emberhez köthető, így azonosításra alkalmas – személyes adat.",
+      "wrongOptions": {
+        "A": "Statisztikai adat, nem azonosít senkit.",
+        "C": "Mérési adat, nem személyhez kötött.",
+        "D": "Egy kiadványt azonosít, nem embert."
+      },
+      "id": "3",
+      "category": "informacios-tarsadalom-fogalom"
+    },
+    {
+      "kind": "choice",
+      "prompt": "Melyik licenc engedi meg a program forráskódjának módosítását és a módosított változat továbbadását?",
+      "options": [
+        {
+          "key": "A",
+          "text": "shareware"
+        },
+        {
+          "key": "B",
+          "text": "freeware"
+        },
+        {
+          "key": "C",
+          "text": "GPL (nyílt forráskódú licenc)"
+        },
+        {
+          "key": "D",
+          "text": "kereskedelmi (zárt) licenc"
+        }
+      ],
+      "answer": "C",
+      "explanation": "C. A GPL szabad szoftveres licenc: a forráskód hozzáférhető, módosítható és terjeszthető, de a módosított változatot is GPL alatt kell kiadni.",
+      "wrongOptions": {
+        "A": "A shareware kipróbálható, de a forráskódja általában zárt.",
+        "B": "A freeware ingyenes, de általában zárt forrású.",
+        "D": "A kereskedelmi licenc a forráskód módosítását nem engedi."
+      },
+      "id": "4",
+      "category": "informacios-tarsadalom-fogalom"
+    },
+    {
+      "kind": "choice",
+      "prompt": "Mit jelent, ha egy mű közkincs (public domain)?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Ingyenesen letölthető, de nem használható fel."
+        },
+        {
+          "key": "B",
+          "text": "Csak múzeumok használhatják."
+        },
+        {
+          "key": "C",
+          "text": "Bárki szabadon felhasználhatja, mert lejárt a védelmi idő, vagy a szerző lemondott a vagyoni jogairól."
+        },
+        {
+          "key": "D",
+          "text": "A mű állami tulajdonban van, engedélyt kell kérni."
+        }
+      ],
+      "answer": "C",
+      "explanation": "C. A közkincs mű engedély nélkül, szabadon felhasználható (a szerző nevét ilyenkor is illik feltüntetni); ilyenek pl. a több mint 70 éve elhunyt szerzők művei.",
+      "wrongOptions": {
+        "A": "A közkincs éppen szabadon felhasználható.",
+        "B": "A közkincs bárki számára szabadon felhasználható.",
+        "D": "Nincs szükség engedélyre."
+      },
+      "id": "5",
+      "category": "informacios-tarsadalom-fogalom"
+    },
+    {
+      "kind": "text",
+      "prompt": "Mi a magyar adatvédelmi felügyeleti hatóság rövidítése?",
+      "answer": [
+        "NAIH"
+      ],
+      "explanation": "NAIH – Nemzeti Adatvédelmi és Információszabadság Hatóság; hozzá lehet fordulni, ha valaki jogellenesen kezeli a személyes adatainkat.",
+      "id": "6",
+      "category": "informacios-tarsadalom-fogalom"
+    }
+  ],
+  "relatedCategories": [
+    "halozat-biztonsag",
+    "hardver-szoftver-fogalom"
+  ]
+}

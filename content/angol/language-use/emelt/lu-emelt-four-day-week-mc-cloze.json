@@ -1,0 +1,428 @@
+{
+  "schemaVersion": 1,
+  "id": "lu-emelt-four-day-week-mc-cloze",
+  "subject": "angol",
+  "revision": 1,
+  "level": "emelt",
+  "source": "generated",
+  "topic": "munka",
+  "title": "Thirty-two hours a week",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "reservedFor": "mock",
+  "section": "language-use",
+  "type": "multiple-choice-cloze",
+  "instructions": "Read the text and decide which word or phrase (A, B, C or D) best fits each gap. There is an example (0) at the beginning.",
+  "instructionsHu": "Olvasd el a szöveget, és válaszd ki, melyik szó vagy kifejezés (A, B, C vagy D) illik a legjobban az egyes hiányokba. A 0. a példa.",
+  "passage": {
+    "title": "Thirty-two hours a week",
+    "blocks": [
+      {
+        "text": "When the managers of Brightwell, a small marketing agency in Leeds, announced that staff would work only four days a week for the same salary, many employees thought it was too good to be [[0]]. The six-month trial was [[1]] of a national experiment involving more than sixty companies, and its results have just been published."
+      },
+      {
+        "text": "The first few weeks were not easy. Employees had to [[2]] the same amount of work into fewer hours, so meetings were cut [[3]] to thirty minutes, and everyone agreed not to send emails after six o'clock [[4]] it was absolutely necessary."
+      },
+      {
+        "text": "The results surprised even the [[5]] critics of the idea. Productivity, far [[6]] falling, rose slightly, and since the four-day week was introduced, the number of sick days [[7]] by almost two thirds. Several employees said that they felt more [[8]] and much less exhausted at the end of the week."
+      },
+      {
+        "text": "Not everything went smoothly, however. Some team leaders [[9]] that they spent their day off answering urgent calls from clients, and the receptionist pointed out that someone still [[10]] to answer the phone on Fridays. The company solved the problem [[11]] introducing a rota, so staff now take turns to work on Fridays and have a different day off instead. Last month, Brightwell decided to make the four-day week [[12]]. 'We are never going back,' says the director."
+      }
+    ]
+  },
+  "example": {
+    "id": "0",
+    "kind": "choice",
+    "options": [
+      {
+        "key": "A",
+        "text": "true"
+      },
+      {
+        "key": "B",
+        "text": "real"
+      },
+      {
+        "key": "C",
+        "text": "right"
+      },
+      {
+        "key": "D",
+        "text": "certain"
+      }
+    ],
+    "answer": "A",
+    "category": "collocation",
+    "explanation": "Állandó kifejezés: „too good to be true” = túl szép ahhoz, hogy igaz legyen.",
+    "wrongOptions": {
+      "B": "A „too good to be real” nem állandó kifejezés.",
+      "C": "A „right” (helyes) nem része a kifejezésnek.",
+      "D": "A „certain” (biztos) nem része a kifejezésnek."
+    }
+  },
+  "items": [
+    {
+      "id": "1",
+      "kind": "choice",
+      "options": [
+        {
+          "key": "A",
+          "text": "part"
+        },
+        {
+          "key": "B",
+          "text": "piece"
+        },
+        {
+          "key": "C",
+          "text": "portion"
+        },
+        {
+          "key": "D",
+          "text": "member"
+        }
+      ],
+      "answer": "A",
+      "category": "collocation",
+      "explanation": "„Be part of something” = része valaminek (egy nagyobb egésznek). Ebben a jelentésben a „part” névelő nélkül is állhat: was part of a national experiment.",
+      "wrongOptions": {
+        "B": "A „piece” tárgy darabját jelenti (a piece of cake), és névelő nélkül nem állhat itt.",
+        "C": "A „portion” mennyiségi rész, adag (a portion of chips); névelő nélkül itt nem helyes, és nem kísérlet részére használjuk.",
+        "D": "A „member” személyre vagy szervezetre utal (a member of the club); egy próbaidőszak nem lehet tag."
+      }
+    },
+    {
+      "id": "2",
+      "kind": "choice",
+      "options": [
+        {
+          "key": "A",
+          "text": "fill"
+        },
+        {
+          "key": "B",
+          "text": "set"
+        },
+        {
+          "key": "C",
+          "text": "fit"
+        },
+        {
+          "key": "D",
+          "text": "hold"
+        }
+      ],
+      "answer": "C",
+      "category": "collocation",
+      "explanation": "„Fit something into something” = belezsúfol, beilleszt valamit valamibe: ugyanannyi munkát kellett kevesebb órába besűríteni.",
+      "wrongOptions": {
+        "A": "A „fill” fordított szerkezetű lenne: fill the hours with work; „fill work into hours” hibás.",
+        "B": "A „set into” beágyazást jelent (pl. követ a falba), munkára nem használjuk.",
+        "D": "A „hold” jelentése tart; „hold work into hours” értelmetlen."
+      }
+    },
+    {
+      "id": "3",
+      "kind": "choice",
+      "options": [
+        {
+          "key": "A",
+          "text": "up"
+        },
+        {
+          "key": "B",
+          "text": "off"
+        },
+        {
+          "key": "C",
+          "text": "out"
+        },
+        {
+          "key": "D",
+          "text": "down"
+        }
+      ],
+      "answer": "D",
+      "category": "phrasal-verb",
+      "explanation": "Phrasal verb: „cut something down (to)” = lecsökkent, lerövidít valamit valamennyire (cut down to thirty minutes).",
+      "wrongOptions": {
+        "A": "A „cut up” = feldarabol.",
+        "B": "A „cut off” = elvág, megszakít (pl. áramot, telefonvonalat).",
+        "C": "A „cut out” = kivág, teljesen elhagy – ekkor nem lehetne utána „to thirty minutes”."
+      }
+    },
+    {
+      "id": "4",
+      "kind": "choice",
+      "options": [
+        {
+          "key": "A",
+          "text": "otherwise"
+        },
+        {
+          "key": "B",
+          "text": "if"
+        },
+        {
+          "key": "C",
+          "text": "except"
+        },
+        {
+          "key": "D",
+          "text": "unless"
+        }
+      ],
+      "answer": "D",
+      "category": "linking",
+      "explanation": "„Unless” = hacsak nem (= if … not): nem küldenek e-mailt hat után, hacsak nem feltétlenül szükséges.",
+      "wrongOptions": {
+        "A": "Az „otherwise” = különben; nem vezet be feltételes mellékmondatot.",
+        "B": "Az „if” az ellenkezőjét jelentené: akkor ne küldjenek e-mailt, ha szükséges.",
+        "C": "Az „except” után főnév vagy „except when / except that” állna, nem közvetlenül mellékmondat."
+      }
+    },
+    {
+      "id": "5",
+      "kind": "choice",
+      "options": [
+        {
+          "key": "A",
+          "text": "fiercest"
+        },
+        {
+          "key": "B",
+          "text": "heaviest"
+        },
+        {
+          "key": "C",
+          "text": "deepest"
+        },
+        {
+          "key": "D",
+          "text": "widest"
+        }
+      ],
+      "answer": "A",
+      "category": "collocation",
+      "explanation": "Kollokáció: „a fierce critic” = heves, elszánt bírálója valaminek; felsőfokban: even the fiercest critics = még a leghevesebb bírálók is.",
+      "wrongOptions": {
+        "B": "A „heavy” esővel, forgalommal társul (heavy rain, heavy traffic), kritikussal nem.",
+        "C": "A „deep” érzésekkel, gondolatokkal társul (deep sadness), kritikussal nem.",
+        "D": "A „wide” (széles) nem kollokál a „critic” szóval."
+      }
+    },
+    {
+      "id": "6",
+      "kind": "choice",
+      "options": [
+        {
+          "key": "A",
+          "text": "away"
+        },
+        {
+          "key": "B",
+          "text": "from"
+        },
+        {
+          "key": "C",
+          "text": "off"
+        },
+        {
+          "key": "D",
+          "text": "out"
+        }
+      ],
+      "answer": "B",
+      "category": "collocation",
+      "explanation": "„Far from + -ing” = távolról sem …, (ahelyett hogy …): a termelékenység távolról sem csökkent, hanem kissé nőtt.",
+      "wrongOptions": {
+        "A": "A „far away” térbeli távolságot jelent (messze), -ing alak nem követheti.",
+        "C": "A „far off” = messze (térben vagy időben), nem áll -ing alak előtt.",
+        "D": "A „far out” (szleng: különös, szuper) nem illik ide, és -ing alak sem követheti."
+      }
+    },
+    {
+      "id": "7",
+      "kind": "choice",
+      "options": [
+        {
+          "key": "A",
+          "text": "has fallen"
+        },
+        {
+          "key": "B",
+          "text": "have fallen"
+        },
+        {
+          "key": "C",
+          "text": "fell"
+        },
+        {
+          "key": "D",
+          "text": "has been fallen"
+        }
+      ],
+      "answer": "A",
+      "category": "agreement",
+      "explanation": "A „the number of …” szerkezetben az alany a „number” (egyes szám), ezért „has”; a „since …” idői mellékmondat miatt present perfect kell: has fallen.",
+      "wrongOptions": {
+        "B": "A „the number of sick days” egyes számú alany, ezért nem „have”. (A „a number of” = sok – az többes számú igét kapna.)",
+        "C": "„Since” + múltbeli kezdőpont esetén a főmondatban present perfect kell, nem past simple.",
+        "D": "A „fall” tárgyatlan ige, ezért nincs szenvedő alakja."
+      }
+    },
+    {
+      "id": "8",
+      "kind": "choice",
+      "options": [
+        {
+          "key": "A",
+          "text": "motivation"
+        },
+        {
+          "key": "B",
+          "text": "motivating"
+        },
+        {
+          "key": "C",
+          "text": "motivated"
+        },
+        {
+          "key": "D",
+          "text": "motive"
+        }
+      ],
+      "answer": "C",
+      "category": "word-formation",
+      "explanation": "Az érzést, állapotot az -ed végű melléknév fejezi ki: feel motivated = motiváltnak érzi magát. Az -ing végű melléknév azt írja le, ami másokat motivál.",
+      "wrongOptions": {
+        "A": "A „motivation” főnév; a „felt more” után melléknév kell.",
+        "B": "A „motivating” = motiváló (ami másokat lelkesít); az alany érzésére nem használjuk.",
+        "D": "A „motive” főnév (indíték), nem melléknév."
+      }
+    },
+    {
+      "id": "9",
+      "kind": "choice",
+      "options": [
+        {
+          "key": "A",
+          "text": "accused"
+        },
+        {
+          "key": "B",
+          "text": "complained"
+        },
+        {
+          "key": "C",
+          "text": "blamed"
+        },
+        {
+          "key": "D",
+          "text": "criticised"
+        }
+      ],
+      "answer": "B",
+      "category": "word-choice",
+      "explanation": "„Complain that …” = panaszkodik, hogy … – ez az ige közvetlenül állhat „that” mellékmondattal.",
+      "wrongOptions": {
+        "A": "Vonzata: „accuse somebody of something” – személyes tárgy és „of” kell, „that” mellékmondat nem.",
+        "C": "Vonzata: „blame somebody for something” – „that” mellékmondattal nem áll.",
+        "D": "Vonzata: „criticise somebody/something (for …)”; a „criticise that …” helytelen."
+      }
+    },
+    {
+      "id": "10",
+      "kind": "choice",
+      "options": [
+        {
+          "key": "A",
+          "text": "had"
+        },
+        {
+          "key": "B",
+          "text": "must"
+        },
+        {
+          "key": "C",
+          "text": "should"
+        },
+        {
+          "key": "D",
+          "text": "can"
+        }
+      ],
+      "answer": "A",
+      "category": "modal",
+      "explanation": "A „have to” múlt ideje „had to” = kellett: valakinek pénteken is fel kellett vennie a telefont. A gap után „to” áll, ezért csak a „had” illik ide.",
+      "wrongOptions": {
+        "B": "A „must” után puszta ige áll, „to” nem; múlt idejű alakja sincs.",
+        "C": "A „should” után puszta ige áll (should answer), „to” nem.",
+        "D": "A „can” után puszta ige áll, és képességet jelent, nem kötelezettséget."
+      }
+    },
+    {
+      "id": "11",
+      "kind": "choice",
+      "options": [
+        {
+          "key": "A",
+          "text": "through"
+        },
+        {
+          "key": "B",
+          "text": "with"
+        },
+        {
+          "key": "C",
+          "text": "by"
+        },
+        {
+          "key": "D",
+          "text": "for"
+        }
+      ],
+      "answer": "C",
+      "category": "preposition",
+      "explanation": "„By + -ing” a módot, eszközt fejezi ki (valaminek a megtételével): solved the problem by introducing a rota = egy beosztás bevezetésével oldották meg.",
+      "wrongOptions": {
+        "A": "A „through” után inkább főnév áll (through a rota); „through introducing” nem természetes.",
+        "B": "A „with + -ing” nem fejez ki módszert.",
+        "D": "A „for + -ing” célt vagy okot fejez ki, módszert nem."
+      }
+    },
+    {
+      "id": "12",
+      "kind": "choice",
+      "options": [
+        {
+          "key": "A",
+          "text": "permanent"
+        },
+        {
+          "key": "B",
+          "text": "constant"
+        },
+        {
+          "key": "C",
+          "text": "lasting"
+        },
+        {
+          "key": "D",
+          "text": "continuous"
+        }
+      ],
+      "answer": "A",
+      "category": "word-choice",
+      "explanation": "„Make something permanent” = véglegessé tesz valamit: a próbaidőszak után a négynapos hét végleges lett.",
+      "wrongOptions": {
+        "B": "A „constant” = folytonos, állandóan ismétlődő (constant noise), nem „végleges”.",
+        "C": "A „lasting” jelzőként használatos (a lasting effect); a „make something lasting” nem természetes.",
+        "D": "A „continuous” = megszakítás nélküli (continuous rain), nem „végleges”."
+      }
+    }
+  ],
+  "glossary": [],
+  "suggestedMinutes": 12
+}

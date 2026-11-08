@@ -1,0 +1,152 @@
+{
+  "schemaVersion": 1,
+  "id": "dig-wr-kozep-szovegszerkesztes-erdei-iskola",
+  "subject": "digitalis-kultura",
+  "revision": 1,
+  "level": "kozep",
+  "source": "generated",
+  "topic": "szovegszerkesztes",
+  "title": "Szövegszerkesztés: tájékoztató az erdei iskoláról",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "writing",
+  "type": "szovegszerkesztes",
+  "taskNumber": 1,
+  "situation": "Az iskola a 9. évfolyamnak háromnapos erdei iskolát szervez a Bükkben; erről kell kétoldalas tájékoztatót készítenie a leírás szerint.\n\nForrásfájlok:\n• erdei.txt – a tájékoztató formázatlan szövege (UTF-8 kódolás): a cím („Erdei iskola a Bükkben”), egy bevezető bekezdés, majd három rész („Program”, „Felszerelés”, „Költségek”) a saját alcímével. A Felszerelés rész nyolc sora egy-egy tárgy. A Költségek rész négy sorában a tétel neve, a mennyiség és az összeg tabulátorral elválasztva áll; az első sor a fejléc (Tétel, Mennyiség, Összeg).\n• bukk.jpg – egy erdei tájkép (1600 × 1067 képpont).\n\nA dokumentumot a szövegszerkesztő saját formátumában erdei néven mentse (erdei.docx vagy erdei.odt)!\n\n1. Nyissa meg az erdei.txt fájlt, és mentse a dokumentumot erdei néven!\n2. Oldalbeállítás: A4-es, álló lap; a felső és az alsó margó 2 cm, a bal és a jobb margó 2,5 cm.\n3. A szövegtörzs stílusa (Normál, illetve Alapértelmezett bekezdésstílus): Times New Roman (vagy Liberation Serif) betűtípus, 12 pontos betűméret, 1,15-ös sorköz, sorkizárt igazítás, a bekezdések után 6 pontos térköz.\n4. A címet Címsor 1 stílussal formázza, és a stílust módosítsa: 20 pontos, félkövér, sötétzöld betű, középre igazítás, utána 12 pontos térköz.\n5. A három alcímet Címsor 2 stílussal formázza: 14 pontos, félkövér, előtte 12, utána 6 pontos térköz.\n6. A bevezető bekezdés jobb oldalára szúrja be a bukk.jpg képet: arányosan 6 cm szélesre méretezve, négyzetes körbefuttatással, a szövegtől minden oldalon 0,3 cm távolságra.\n7. A Felszerelés rész nyolc sorát alakítsa felsorolásjeles listává; a felsorolásjel a margótól 1 cm-re legyen.\n8. A Költségek rész négy sorából készítsen háromoszlopos táblázatot: a fejléc félkövér és szürke hátterű, az Összeg oszlop jobbra igazított, a táblázat vízszintesen középen álljon, és minden cellának vékony szegélye legyen.\n9. Az élőfejbe jobbra igazítva írja be: „Kossuth Gimnázium – 9. évfolyam”; az élőlábban középen automatikus oldalszám jelenjen meg.\n10. A bevezetőben a „Bükki Nemzeti Park” kifejezés után szúrjon be lábjegyzetet ezzel a szöveggel: „A szállás a nemzeti park erdei iskolájában lesz.”\n11. A számok és a mértékegységek, illetve a pénznem közé (pl. „3 nap”, „12 500 Ft”, az ezres tagolásnál is) tegyen nem törhető szóközt! Ellenőrizze, hogy a dokumentum két oldalas!",
+  "points": [
+    {
+      "id": "p1",
+      "text": "1. A forrásszöveg megnyitása és a dokumentum mentése erdei néven, a szövegszerkesztő saját formátumában (1 pont)"
+    },
+    {
+      "id": "p2",
+      "text": "2. Oldalbeállítás: A4, álló, felső és alsó margó 2 cm, bal és jobb margó 2,5 cm (2 pont)"
+    },
+    {
+      "id": "p3",
+      "text": "3. A szövegtörzs stílusa: Times New Roman, 12 pt, 1,15-ös sorköz, sorkizárt, utána 6 pt térköz (4 pont)"
+    },
+    {
+      "id": "p4",
+      "text": "4. Cím: Címsor 1 stílus módosítva – 20 pt, félkövér, sötétzöld, középre, utána 12 pt (3 pont)"
+    },
+    {
+      "id": "p5",
+      "text": "5. Alcímek: Címsor 2 stílus – 14 pt, félkövér, előtte 12 pt, utána 6 pt (2 pont)"
+    },
+    {
+      "id": "p6",
+      "text": "6. Kép: jobb oldalon, arányosan 6 cm széles, négyzetes körbefuttatás, 0,3 cm távolság (3 pont)"
+    },
+    {
+      "id": "p7",
+      "text": "7. Felsorolásjeles lista, a jel 1 cm-re a margótól (2 pont)"
+    },
+    {
+      "id": "p8",
+      "text": "8. Táblázat: 3 oszlop, félkövér szürke fejléc, jobbra igazított összeg, középre igazított táblázat, szegélyek (4 pont)"
+    },
+    {
+      "id": "p9",
+      "text": "9. Élőfej jobbra igazított szöveggel, élőláb középen automatikus oldalszámmal (2 pont)"
+    },
+    {
+      "id": "p10",
+      "text": "10. Lábjegyzet a megadott helyen és szöveggel (1 pont)"
+    },
+    {
+      "id": "p11",
+      "text": "11. Nem törhető szóközök, kétoldalas dokumentum (1 pont)"
+    }
+  ],
+  "suggestedMinutes": 40,
+  "usefulPhrases": [
+    {
+      "en": "Stílus módosítása (jobb gomb > Módosítás)",
+      "hu": "egy helyen állítod be a formátumot, és minden ilyen stílusú bekezdés követi – a vizsgán a stílussal kért formázást így kell megoldani"
+    },
+    {
+      "en": "Térköz előtte / utána (pt)",
+      "hu": "a bekezdések közti távolság; nem üres sorokkal (Enter) állítjuk be"
+    },
+    {
+      "en": "Szöveg körbefuttatása: Négyzetes",
+      "hu": "a kép mellett a szöveg a kép befoglaló téglalapja körül folyik"
+    },
+    {
+      "en": "Szöveg átalakítása táblázattá",
+      "hu": "tabulátorral tagolt sorokból táblázat – nem kell újragépelni az adatokat"
+    },
+    {
+      "en": "Ctrl+Shift+Szóköz",
+      "hu": "nem törhető szóköz: szám és mértékegység, ezres tagolás, dátum részei ne kerüljenek külön sorba"
+    },
+    {
+      "en": "Beszúrás > Oldalszám",
+      "hu": "automatikus oldalszám mező az élőfejben vagy élőlábban (kézzel beírt szám hibás)"
+    },
+    {
+      "en": "Hivatkozások > Lábjegyzet beszúrása",
+      "hu": "automatikusan számozott megjegyzés az oldal alján"
+    },
+    {
+      "en": "Rejtett karakterek (¶)",
+      "hu": "megmutatja a bekezdésjeleket, tabulátorokat, nem törhető szóközöket – ellenőrzéshez"
+    }
+  ],
+  "checklistExtra": [],
+  "modelAnswer": {
+    "text": "Megoldás lépésről lépésre – Microsoft Word (zárójelben a LibreOffice Writer eltérő menüi)\n\n1. Megnyitás és mentés: Fájl > Megnyitás, a fájltípusnál „Minden fájl”, az erdei.txt-t Unicode (UTF-8) kódolással nyitom meg (Writer: a megnyitáskor felugró ablakban a karakterkészlet: Unicode (UTF-8)). Rögtön elmentem: Fájl > Mentés másként, fájltípus: Word-dokumentum, név: erdei (Writer: ODF-szöveg, erdei.odt). Munka közben gyakran mentek (Ctrl+S).\n\n2. Oldalbeállítás: Elrendezés > Margók > Egyéni margók: felső 2 cm, alsó 2 cm, bal 2,5 cm, jobb 2,5 cm; Tájolás: Álló; Méret: A4 (Writer: Formátum > Oldalstílus > Oldal lap).\n\n3. Szövegtörzs: a Kezdőlap Stílusok csoportjában a Normál stíluson jobb gomb > Módosítás: Times New Roman, 12 pt; Formátum > Bekezdés: Igazítás: Sorkizárt, Térköz utána: 6 pt, Sorköz: Többszörös, 1,15 (Writer: Stílusok panel (F11) > Alapértelmezett bekezdésstílus > Szerkesztés). Mivel minden bekezdés Normál stílusú, a beállítás az egész szövegre érvényes, kézi formázás nélkül.\n\n4. Cím: a kurzort a címbe teszem, és Címsor 1 stílust adok neki. A stíluson jobb gomb > Módosítás: Times New Roman, 20 pt, félkövér, betűszín sötétzöld, középre zárt; Formátum > Bekezdés: Térköz előtte 0 pt, utána 12 pt.\n\n5. Alcímek: a Program, a Felszerelés és a Költségek sor Címsor 2 stílust kap; a stílust módosítom: 14 pt, félkövér, Térköz előtte 12 pt, utána 6 pt. Így mindhárom alcím egyszerre változik.\n\n6. Kép: a bevezető bekezdés elejére állok, Beszúrás > Képek > Ez az eszköz > bukk.jpg. Képformátum > Méret: a méretarány zárolva, szélesség 6 cm (a magasság magától 4 cm lesz). Szöveg körbefuttatása: Négyzetes; További elrendezési beállítások > Pozíció: vízszintesen Jobbra, a Margóhoz viszonyítva; Szöveg körbefuttatása lap: távolság a szövegtől fent, lent, balra és jobbra 0,3 cm (Writer: jobb gomb > Tulajdonságok > Körbefuttatás: Párhuzamos, Térköz 0,3 cm; Pozíció: Jobbra).\n\n7. Felsorolás: kijelölöm a nyolc sort, Kezdőlap > Felsorolás; jobb gomb > Lista behúzásának módosítása: a felsorolásjel helye 1 cm (Writer: Formátum > Felsorolás és számozás > Pozíció lap: a felsorolásjel helyét az „Igazítva” (Aligned at) mező adja meg: 1 cm; a „Behúzás” mező a szöveg kezdetét állítja).\n\n8. Táblázat: kijelölöm a négy tabulátoros sort, Beszúrás > Táblázat > Szöveg átalakítása táblázattá, elválasztó: Tabulátor, oszlopok száma: 3 (Writer: Táblázat > Átalakítás > Szövegből táblázat). A fejlécsort félkövérre állítom, és Táblázattervezés > Mintázat: világosszürke hátteret adok neki. Az Összeg oszlop celláit jobbra igazítom. Táblázat tulajdonságai > Táblázat lap > Igazítás: Középre; Szegélyek > Minden szegély, 0,5 pt.\n\n9. Élőfej és élőláb: Beszúrás > Élőfej > Üres, beírom: Kossuth Gimnázium – 9. évfolyam, és jobbra igazítom. Beszúrás > Oldalszám > Lap alja > Egyszerű szám 2 (középre igazított) (Writer: Beszúrás > Élőfej és élőláb > Élőláb, majd Beszúrás > Mező > Oldalszám, középre igazítva).\n\n10. Lábjegyzet: a kurzort a „Bükki Nemzeti Park” után teszem, Hivatkozások > Lábjegyzet beszúrása (Ctrl+Alt+F), és beírom: A szállás a nemzeti park erdei iskolájában lesz. (Writer: Beszúrás > Lábjegyzet és végjegyzet > Lábjegyzet.)\n\n11. Nem törhető szóköz: a „3 nap”, „12 500 Ft” típusú helyeken a szóközt törlöm, és Ctrl+Shift+Szóközt nyomok (az ezres tagolásnál is). A rejtett karakterek (¶) bekapcsolásával ellenőrzöm, hogy ott a nem törhető szóköz jele (Word: °, Writer: szürke háttér) látszik. Végül nyomtatási képben megnézem, hogy a dokumentum két oldalas, és mentem (Ctrl+S).",
+    "pointsCovered": [
+      {
+        "id": "p1",
+        "quote": "az erdei.txt-t Unicode (UTF-8) kódolással nyitom meg"
+      },
+      {
+        "id": "p2",
+        "quote": "Elrendezés > Margók > Egyéni margók: felső 2 cm, alsó 2 cm, bal 2,5 cm, jobb 2,5 cm; Tájolás: Álló; Méret: A4"
+      },
+      {
+        "id": "p3",
+        "quote": "a Normál stíluson jobb gomb > Módosítás: Times New Roman, 12 pt; Formátum > Bekezdés: Igazítás: Sorkizárt, Térköz utána: 6 pt, Sorköz: Többszörös, 1,15"
+      },
+      {
+        "id": "p4",
+        "quote": "A stíluson jobb gomb > Módosítás: Times New Roman, 20 pt, félkövér, betűszín sötétzöld, középre zárt"
+      },
+      {
+        "id": "p5",
+        "quote": "a stílust módosítom: 14 pt, félkövér, Térköz előtte 12 pt, utána 6 pt"
+      },
+      {
+        "id": "p6",
+        "quote": "a méretarány zárolva, szélesség 6 cm"
+      },
+      {
+        "id": "p7",
+        "quote": "a felsorolásjel helye 1 cm"
+      },
+      {
+        "id": "p8",
+        "quote": "Beszúrás > Táblázat > Szöveg átalakítása táblázattá, elválasztó: Tabulátor, oszlopok száma: 3"
+      },
+      {
+        "id": "p9",
+        "quote": "Beszúrás > Oldalszám > Lap alja > Egyszerű szám 2 (középre igazított)"
+      },
+      {
+        "id": "p10",
+        "quote": "Hivatkozások > Lábjegyzet beszúrása (Ctrl+Alt+F)"
+      },
+      {
+        "id": "p11",
+        "quote": "a szóközt törlöm, és Ctrl+Shift+Szóközt nyomok"
+      }
+    ],
+    "notes": [
+      "A követelmények teljesítése: mind a 11 részfeladat a leírás pontos értékeivel készül el (margók, betűméretek, térközök, képméret), ezért a „megvalósítás” szempont teljes pontot kap.",
+      "Szakszerű módszer: a formázás stílusokkal történik (Normál, Címsor 1, Címsor 2), a táblázat átalakítással, az oldalszám mezőként, a lábjegyzet a beépített funkcióval – sehol nincs kézi pótmegoldás (szóközös igazítás, kézzel írt oldalszám), ami a „módszer” pontjait vinné el.",
+      "Pontosság: a fájl a kért néven és formátumban, többször is mentve van, a nem törhető szóközök ellenőrzése a rejtett karakterekkel történik – a mentés elmaradása a vizsgán az egész feladat pontjait veszélyeztetné."
+    ]
+  }
+}

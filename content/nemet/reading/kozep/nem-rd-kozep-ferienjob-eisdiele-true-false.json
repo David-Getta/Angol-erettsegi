@@ -1,0 +1,135 @@
+{
+  "schemaVersion": 1,
+  "id": "nem-rd-kozep-ferienjob-eisdiele-true-false",
+  "subject": "nemet",
+  "revision": 1,
+  "level": "kozep",
+  "source": "generated",
+  "topic": "munka",
+  "title": "Mein Sommer in der Eisdiele",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "reading",
+  "type": "true-false",
+  "instructions": "Lesen Sie das Interview mit einem Schüler über seinen Ferienjob. Entscheiden Sie, ob die Aussagen (1–9) richtig (T), falsch (F) sind oder ob die Information im Text nicht vorkommt (NG). Am Anfang finden Sie ein Beispiel (0).",
+  "instructionsHu": "Olvasd el az interjút egy diák nyári munkájáról, és döntsd el, hogy az állítások igazak (T), hamisak (F), vagy a szövegből nem derülnek ki (NG). A 0. a példa.",
+  "passage": {
+    "title": "Mein Sommer in der Eisdiele",
+    "subtitle": "Jonas Weber, 17, aus Konstanz hat sechs Wochen lang Eis verkauft",
+    "blocks": [
+      { "text": "Jonas Weber ist 17 und wohnt in Konstanz am Bodensee. In den Sommerferien hat er sechs Wochen in der Eisdiele „Venezia“ gearbeitet. Wir haben ihn gefragt, wie es war." },
+      { "text": "„Den Job habe ich über meine Cousine bekommen. Sie hat dort letztes Jahr gearbeitet und wusste, dass der Chef wieder jemanden sucht. Ich musste nur ein kurzes Gespräch führen – einen Lebenslauf wollte niemand sehen. Am ersten Tag habe ich gelernt, wie man eine schöne Eiskugel formt. Das klingt einfach, aber meine ersten zwanzig Kugeln sahen furchtbar aus." },
+      { "text": "Gearbeitet habe ich meistens von 14 bis 20 Uhr, fünf Tage pro Woche. Montags war die Eisdiele geschlossen. An heißen Tagen stand die Schlange bis auf die Straße, und wir hatten keine Minute Pause. Wenn es regnete, kam fast niemand, und ich habe stundenlang die Theke geputzt." },
+      { "text": "Verdient habe ich zwölf Euro pro Stunde, dazu kam das Trinkgeld, das wir am Ende des Tages geteilt haben. Insgesamt habe ich fast 2.000 Euro gespart. Davon kaufe ich mir ein neues Fahrrad, der Rest ist für den Führerschein." },
+      { "text": "Das Beste am Job waren die Kollegen. Wir waren sechs Schüler und Studenten, und nach der Arbeit sind wir oft noch zusammen an den See gegangen. Das Schlimmste? Die Kunden, die zehn Minuten überlegen, welche Sorte sie wollen, während hinter ihnen dreißig Leute warten." },
+      { "text": "Nächsten Sommer möchte ich wieder in der Eisdiele arbeiten, aber vielleicht nur vier Wochen. Ich habe nämlich gemerkt, dass die Ferien ohne Freizeit ziemlich kurz sind. Meinen Freunden empfehle ich den Job trotzdem: Man lernt, mit Menschen umzugehen – und man darf so viel Eis essen, wie man will.“" }
+    ]
+  },
+  "example": {
+    "id": "0",
+    "kind": "tf",
+    "prompt": "Jonas hat in den Sommerferien sechs Wochen gearbeitet.",
+    "answer": "T",
+    "category": "detail",
+    "explanation": "Igaz: a nyári szünetben hat hetet dolgozott a fagylaltozóban („sechs Wochen in der Eisdiele”).",
+    "evidence": "In den Sommerferien hat er sechs Wochen in der Eisdiele"
+  },
+  "items": [
+    {
+      "id": "1",
+      "kind": "tf",
+      "prompt": "Jonas hat den Job durch seine Cousine bekommen.",
+      "answer": "T",
+      "category": "detail",
+      "explanation": "Igaz: az unokatestvére révén jutott a munkához („über meine Cousine bekommen”), aki előző évben ott dolgozott.",
+      "evidence": "Den Job habe ich über meine Cousine bekommen."
+    },
+    {
+      "id": "2",
+      "kind": "tf",
+      "prompt": "Für den Job musste Jonas einen Lebenslauf schreiben.",
+      "answer": "F",
+      "category": "detail",
+      "explanation": "Hamis: csak egy rövid beszélgetés kellett, önéletrajzot senki nem akart látni („einen Lebenslauf wollte niemand sehen”).",
+      "evidence": "einen Lebenslauf wollte niemand sehen"
+    },
+    {
+      "id": "3",
+      "kind": "tf",
+      "prompt": "Die Eisdiele war jeden Tag der Woche geöffnet.",
+      "answer": "F",
+      "category": "true-false-trap",
+      "explanation": "Hamis: hétfőnként zárva volt a fagylaltozó („Montags war die Eisdiele geschlossen”), tehát nem volt minden nap nyitva.",
+      "evidence": "Montags war die Eisdiele geschlossen."
+    },
+    {
+      "id": "4",
+      "kind": "tf",
+      "prompt": "Bei Regen hatte Jonas weniger zu tun.",
+      "answer": "T",
+      "category": "detail",
+      "explanation": "Igaz: ha esett, alig jött valaki, és Jonas órákig a pultot takarította – vagyis kevesebb dolga volt.",
+      "evidence": "Wenn es regnete, kam fast niemand"
+    },
+    {
+      "id": "5",
+      "kind": "tf",
+      "prompt": "Das Trinkgeld haben die Mitarbeiter untereinander aufgeteilt.",
+      "answer": "T",
+      "category": "detail",
+      "explanation": "Igaz: a borravalót a nap végén elosztották egymás között („das wir am Ende des Tages geteilt haben”).",
+      "evidence": "das Trinkgeld, das wir am Ende des Tages geteilt haben"
+    },
+    {
+      "id": "6",
+      "kind": "tf",
+      "prompt": "Jonas will das ganze Geld für den Führerschein ausgeben.",
+      "answer": "F",
+      "category": "true-false-trap",
+      "explanation": "Hamis: a pénzből először új kerékpárt vesz, és csak a maradék megy a jogosítványra („der Rest ist für den Führerschein”).",
+      "evidence": "Davon kaufe ich mir ein neues Fahrrad, der Rest ist für den Führerschein."
+    },
+    {
+      "id": "7",
+      "kind": "tf",
+      "prompt": "Jonas kannte seine Kollegen schon vor dem Sommer.",
+      "answer": "NG",
+      "category": "true-false-trap",
+      "explanation": "Nem derül ki: a szöveg csak azt mondja, hogy hat diák és egyetemista dolgozott együtt, és munka után a tóhoz mentek – arról nincs szó, hogy korábbról ismerték-e egymást.",
+      "evidence": "Wir waren sechs Schüler und Studenten"
+    },
+    {
+      "id": "8",
+      "kind": "tf",
+      "prompt": "Jonas möchte im nächsten Sommer kürzer arbeiten als in diesem Jahr.",
+      "answer": "T",
+      "category": "inference",
+      "explanation": "Igaz: jövőre is dolgozna, de talán csak négy hetet („vielleicht nur vier Wochen”), ami kevesebb a mostani hatnál.",
+      "evidence": "aber vielleicht nur vier Wochen"
+    },
+    {
+      "id": "9",
+      "kind": "tf",
+      "prompt": "Jonas' Cousine hat in diesem Sommer auch in der Eisdiele gearbeitet.",
+      "answer": "NG",
+      "category": "true-false-trap",
+      "explanation": "Nem derül ki: az unokatestvér tavaly dolgozott ott („letztes Jahr”), de arról nincs szó, hogy ebben az évben is dolgozott-e.",
+      "evidence": "Sie hat dort letztes Jahr gearbeitet"
+    }
+  ],
+  "glossary": [
+    { "term": "die Eisdiele", "meaning": "fagylaltozó" },
+    { "term": "der Lebenslauf", "meaning": "önéletrajz" },
+    { "term": "die Eiskugel", "meaning": "fagylaltgombóc" },
+    { "term": "furchtbar", "meaning": "szörnyű, borzasztó" },
+    { "term": "die Schlange", "meaning": "sor (várakozók sora); kígyó" },
+    { "term": "die Theke", "meaning": "pult" },
+    { "term": "verdienen", "meaning": "keres (pénzt), megérdemel" },
+    { "term": "das Trinkgeld", "meaning": "borravaló" },
+    { "term": "der Führerschein", "meaning": "jogosítvány" },
+    { "term": "die Sorte", "meaning": "fajta, íz (fagylaltnál)" },
+    { "term": "empfehlen", "meaning": "ajánl" },
+    { "term": "mit Menschen umgehen", "meaning": "bánni az emberekkel, kezelni az embereket" }
+  ],
+  "suggestedMinutes": 12
+}

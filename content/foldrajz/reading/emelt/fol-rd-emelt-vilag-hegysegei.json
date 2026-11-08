@@ -1,0 +1,118 @@
+{
+  "schemaVersion": 1,
+  "id": "fol-rd-emelt-vilag-hegysegei",
+  "subject": "foldrajz",
+  "revision": 1,
+  "level": "emelt",
+  "source": "generated",
+  "topic": "kozetburok",
+  "title": "A Föld hegységei és vulkánjai leírás alapján",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "reading",
+  "type": "topografia",
+  "instructions": "Nevezze meg a leírás alapján a hegységeket, csúcsokat és vulkánokat! Írja a földrajzi nevet a kijelölt helyre! A 0. a megoldott példa.",
+  "example": {
+    "id": "0",
+    "kind": "text",
+    "prompt": "A Föld legmagasabb hegysége; az Indiai- és az Eurázsiai-lemez ütközésével gyűrődött fel, itt áll a Mount Everest (8849 m).",
+    "answer": ["Himalája"],
+    "maxWords": 3,
+    "category": "helymeghatarozas",
+    "explanation": "Himalája: két kontinentális lemez ütközésével (kollízió) keletkezett fiatal lánchegység Nepál, India, Kína (Tibet), Bhután és Pakisztán területén; ma is emelkedik."
+  },
+  "items": [
+    {
+      "id": "1",
+      "kind": "text",
+      "prompt": "Dél-Amerika nyugati partján több mint 7000 km hosszan húzódó lánchegység; a Nazca-lemez alábukásával keletkezett, sok aktív vulkánnal.",
+      "answer": ["Andok"],
+      "maxWords": 3,
+      "category": "helymeghatarozas",
+      "explanation": "Andok: a Föld leghosszabb szárazföldi hegysége; az óceáni Nazca-lemez a Dél-amerikai-lemez alá bukik (szubdukció), ezért gyakoriak a földrengések és a rétegvulkánok (pl. Cotopaxi); legmagasabb csúcsa az Aconcagua (6961 m)."
+    },
+    {
+      "id": "2",
+      "kind": "text",
+      "prompt": "Észak-Amerika nyugati részének fiatal lánchegység-rendszere Kanadától az USA délnyugati államaiig; az Eurázsiai-hegységrendszerrel egyidős.",
+      "answer": ["Sziklás-hegység", "Rocky Mountains", "Sziklás hegység"],
+      "maxWords": 3,
+      "category": "helymeghatarozas",
+      "explanation": "Sziklás-hegység (Rocky Mountains): a Pacifikus-hegységrendszer tagja, az újidőben gyűrődött fel; a Kordillerák belső vonulata, keletre tőle a Préri (Nagy-síkság) terül el."
+    },
+    {
+      "id": "3",
+      "kind": "text",
+      "prompt": "Afrika legmagasabb csúcsa (5895 m), hóval fedett, nem működő (szunnyadó) rétegvulkán Tanzániában, a Kelet-afrikai-árokrendszer közelében.",
+      "answer": ["Kilimandzsáró", "Kilimanjaro", "Kilimandzsaro"],
+      "maxWords": 3,
+      "category": "helymeghatarozas",
+      "explanation": "Kilimandzsáró: a Kelet-afrikai-árokrendszer felszakadásához kapcsolódó vulkanizmus terméke; az Egyenlítőhöz közel fekszik, mégis a magasság miatt csúcsán gleccserek vannak (függőleges övezetesség)."
+    },
+    {
+      "id": "4",
+      "kind": "text",
+      "prompt": "Japán legmagasabb hegye (3776 m), szabályos kúp alakú rétegvulkán, a szigetország jelképe.",
+      "answer": ["Fuji", "Fudzsi", "Fudzsijama", "Fuji-san", "Fudzsi-szan", "Fuji-hegy"],
+      "maxWords": 3,
+      "category": "helymeghatarozas",
+      "explanation": "Fuji (Fudzsi): a Csendes-óceáni Tűzgyűrű tagja; a Japán-szigetek alá bukó óceáni lemezek olvadékából táplálkozó rétegvulkán, utoljára 1707-ben tört ki."
+    },
+    {
+      "id": "5",
+      "kind": "text",
+      "prompt": "Európa legmagasabb aktív vulkánja (kb. 3350 m) Szicília keleti részén.",
+      "answer": ["Etna"],
+      "maxWords": 3,
+      "category": "helymeghatarozas",
+      "explanation": "Etna: az Afrikai- és az Eurázsiai-lemez ütközési zónájához kötődő, szinte folyamatosan működő rétegvulkán; lávája és hamuja termékeny talajt ad, ezért lejtőin szőlő- és citrustermesztés folyik."
+    },
+    {
+      "id": "6",
+      "kind": "text",
+      "prompt": "A Nápolyi-öböl partján álló vulkán, amelynek Kr. u. 79-es kitörése elpusztította Pompejit és Herculaneumot.",
+      "answer": ["Vezúv"],
+      "maxWords": 3,
+      "category": "helymeghatarozas",
+      "explanation": "Vezúv: robbanásos kitörésű (pliniusi) rétegvulkán Nápoly mellett; a sűrűn lakott környezete miatt a Föld egyik legveszélyesebb vulkánja, utoljára 1944-ben tört ki."
+    },
+    {
+      "id": "7",
+      "kind": "text",
+      "prompt": "Az Alpok és Nyugat-Európa legmagasabb csúcsa (4810 m) a francia–olasz határon.",
+      "answer": ["Mont Blanc"],
+      "maxWords": 3,
+      "category": "helymeghatarozas",
+      "explanation": "Mont Blanc: gránitból álló, gleccserekkel borított csúcs az Alpok nyugati részén; alatta vezet a Franciaországot Olaszországgal összekötő közúti alagút."
+    },
+    {
+      "id": "8",
+      "kind": "text",
+      "prompt": "A Kaukázus és – ha a hegységet Európához számítjuk – Európa legmagasabb csúcsa (5642 m), nem működő vulkán Oroszországban.",
+      "answer": ["Elbrusz"],
+      "maxWords": 3,
+      "category": "helymeghatarozas",
+      "explanation": "Elbrusz: kettős kúpú, nem működő (szunnyadó) rétegvulkán a Nagy-Kaukázusban; a Kaukázus az Arab-lemez és az Eurázsiai-lemez ütközésével gyűrődött fel."
+    },
+    {
+      "id": "9",
+      "kind": "text",
+      "prompt": "Észak-Amerika keleti részének idős, erősen lepusztult röghegysége az USA keleti partvidékével párhuzamosan; a 19. században kőszénbányászat jellemezte.",
+      "answer": ["Appalache", "Appalache-hegység", "Appalachok", "Appalache-hegyvidék"],
+      "maxWords": 3,
+      "category": "helymeghatarozas",
+      "explanation": "Appalache-hegység: az óidőben gyűrődött, azóta lepusztult röghegység; feketekőszén-telepei alapozták meg az USA északkeleti iparvidékét (Pittsburgh)."
+    },
+    {
+      "id": "10",
+      "kind": "text",
+      "prompt": "Ausztrália keleti partjával párhuzamosan húzódó, idős, lepusztult hegység; a kontinens legmagasabb pontja (Mount Kosciuszko, 2228 m) is itt van.",
+      "answer": ["Nagy-Vízválasztó-hegység", "Nagy-Vízválasztó", "Great Dividing Range"],
+      "maxWords": 3,
+      "category": "helymeghatarozas",
+      "explanation": "Nagy-Vízválasztó-hegység: Ausztrália egyetlen jelentős hegysége, az óidőben gyűrődött; nevét onnan kapta, hogy elválasztja a keletre, a Csendes-óceán felé futó rövid folyókat a nyugatra, a kontinens belseje felé tartó vízfolyásoktól (Murray–Darling-rendszer, Eyre-tó medencéje)."
+    }
+  ],
+  "glossary": [],
+  "suggestedMinutes": 9
+}

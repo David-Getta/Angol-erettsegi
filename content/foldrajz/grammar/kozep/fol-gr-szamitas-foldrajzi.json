@@ -1,0 +1,211 @@
+{
+  "schemaVersion": 1,
+  "id": "fol-gr-szamitas-foldrajzi",
+  "subject": "foldrajz",
+  "revision": 1,
+  "level": "kozep",
+  "source": "generated",
+  "topic": "nyelvtan",
+  "title": "Földrajzi számítások",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "grammar",
+  "type": "lesson",
+  "category": "szamitas-foldrajzi",
+  "summaryHu": "A földrajzi számítások (méretarány, időzóna és helyi idő, népsűrűség, népesedési mutatók, hőingás, delelési magasság) mindkét szinten rendszeresen szerepelnek. Ezek egy-két lépéses feladatok, de a pontot csak a helyes mértékegységgel és kerekítéssel megadott eredményért adják, a kifejtős feladatban a számítás menetét is értékelik. A hibák többsége előjel-, irány- vagy mértékegységhiba.",
+  "rules": [
+    {
+      "title": "Méretarány",
+      "explanation": "Valós távolság = térképi távolság × méretarányszám; térképi távolság = valós távolság : méretarányszám. Mindig cm-ben számolj, és a végén válts: 1 km = 100 000 cm.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "1 : 200 000, 7 cm → 7 × 200 000 = 1 400 000 cm = 14 km"
+        }
+      ]
+    },
+    {
+      "title": "Helyi idő és zónaidő",
+      "explanation": "A Föld 24 óra alatt 360°-ot fordul, tehát 1 óra alatt 15°-ot, 4 perc alatt 1°-ot. Keletebbre előbbre jár az idő. Zónaidőnél a két zóna UTC-eltérésének különbségét adjuk hozzá vagy vonjuk le; a dátumválasztó vonalon kelet felé haladva egy napot vissza, nyugat felé egy napot előre kell lépni.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "Budapest (UTC+1) 10:00 → New York (UTC−5): 10 − 6 = 4:00"
+        },
+        {
+          "en": "15° hosszúságkülönbség = 1 óra; 1° = 4 perc"
+        }
+      ]
+    },
+    {
+      "title": "Népesedési és népsűrűségi mutatók",
+      "explanation": "Népsűrűség = népesség : terület (fő/km²). Természetes szaporodás = születési − halálozási arányszám (‰). Éves változás fővel = népesség × arányszám : 1000. Százalékos változás = (új − régi) : régi × 100. Megkettőződési idő ≈ 70 : szaporodás %-ban.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "12 millió fő, 100 000 km² → 120 fő/km²"
+        },
+        {
+          "en": "Születés 30 ‰, halálozás 10 ‰ → +20 ‰ = 2% → kb. 35 év alatt kétszereződik"
+        }
+      ]
+    },
+    {
+      "title": "Éghajlati számítások",
+      "explanation": "Évi közepes hőingás = legmelegebb − leghidegebb hónap középhőmérséklete. Évi középhőmérséklet = a 12 havi átlag összege : 12. Évi csapadék = a havi értékek összege. A hőmérséklet a troposzférában átlagosan 100 m-enként kb. 0,6 °C-kal csökken (telítetlen, felemelkedő levegőben kb. 1 °C/100 m).",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "Július 21 °C, január −3 °C → hőingás 24 °C"
+        },
+        {
+          "en": "A hegy lábánál 18 °C, 1500 m-rel feljebb kb. 18 − 9 = 9 °C"
+        }
+      ]
+    },
+    {
+      "title": "Delelési magasság",
+      "explanation": "Napéjegyenlőségkor: delelési magasság = 90° − földrajzi szélesség. Napfordulókor: 90° − szélesség + 23,5° azon a félgömbön, ahol nyár van, és 90° − szélesség − 23,5° ott, ahol tél van. Fordítva is használható: a delelési magasságból kiszámítható a szélesség.",
+      "emeltOnly": true,
+      "examples": [
+        {
+          "en": "é. sz. 47,5°, június 21.: 90 − 47,5 + 23,5 = 66°"
+        },
+        {
+          "en": "é. sz. 47,5°, december 22.: 90 − 47,5 − 23,5 = 19°"
+        }
+      ]
+    }
+  ],
+  "commonMistakes": [
+    {
+      "wrong": "Budapesten 12 óra van, New Yorkban (UTC−5) tehát 18 óra.",
+      "right": "New Yorkban 12 − 6 = 6 óra van.",
+      "why": "New York nyugatabbra van, ott később kel fel a Nap, ezért kevesebb az idő; nyugat felé vonni kell."
+    },
+    {
+      "wrong": "1 : 250 000 méretarányon 8 cm = 200 km.",
+      "right": "8 cm = 2 000 000 cm = 20 km.",
+      "why": "A cm → km váltásnál 100 000-rel kell osztani; egy nulla eltévesztése tízszeres hibát okoz."
+    },
+    {
+      "wrong": "Születés 9 ‰, halálozás 14 ‰ → természetes szaporodás 5 ‰.",
+      "right": "A természetes szaporodás −5 ‰ (természetes fogyás).",
+      "why": "A különbség előjele megmutatja, nő vagy fogy a népesség – a mínusz jel elhagyása tartalmi hiba."
+    },
+    {
+      "wrong": "A népesség 50 millióról 40 millióra csökkent, ez 25%-os csökkenés.",
+      "right": "A csökkenés 10 : 50 = 20%.",
+      "why": "A változást mindig a kiinduló (régi) értékhez viszonyítjuk, nem a végsőhöz."
+    },
+    {
+      "wrong": "A hőingás: július 20 °C, január −5 °C → 15 °C.",
+      "right": "20 − (−5) = 25 °C.",
+      "why": "Negatív szám kivonásakor az abszolút értékek összeadódnak."
+    }
+  ],
+  "examTips": [
+    "Írd le a képletet, helyettesíts be, és add meg az eredményt mértékegységgel – a kifejtős számításos feladatban mindhárom lépés pontot ér.",
+    "Az időzónás feladatnál rajzolj egy egyszerű számegyenest: keletre (+), nyugatra (−) – így nem téveszted el az irányt.",
+    "Kerekíts a feladatban kért pontosságra, és ellenőrizd az eredmény nagyságrendjét (pl. egy ország népsűrűsége ritkán több ezer fő/km²)."
+  ],
+  "practice": [
+    {
+      "id": "1",
+      "kind": "text",
+      "prompt": "Budapesten (UTC+1) 15 óra van. Hány óra van Pekingben (UTC+8)?",
+      "answer": [
+        "22 óra",
+        "22",
+        "22:00",
+        "22.00"
+      ],
+      "category": "szamitas-foldrajzi",
+      "explanation": "22 óra: Peking 8 − 1 = 7 zónával keletebbre van, ott 7 órával később jár az idő: 15 + 7 = 22 óra."
+    },
+    {
+      "id": "2",
+      "kind": "text",
+      "prompt": "Egy ország területe 50 000 km², népessége 4 millió fő. Mekkora a népsűrűség?",
+      "answer": [
+        "80 fő/km²",
+        "80",
+        "80 fő/km2"
+      ],
+      "category": "szamitas-foldrajzi",
+      "explanation": "80 fő/km²: 4 000 000 fő : 50 000 km² = 80 fő/km²."
+    },
+    {
+      "id": "3",
+      "kind": "text",
+      "prompt": "Két hely között a hosszúságkülönbség 45°. Mennyi a helyi idejük különbsége?",
+      "answer": [
+        "3 óra",
+        "3",
+        "180 perc",
+        "3 h"
+      ],
+      "category": "szamitas-foldrajzi",
+      "explanation": "3 óra: 45° × 4 perc = 180 perc = 3 óra (vagy 45° : 15° = 3 óra)."
+    },
+    {
+      "id": "4",
+      "kind": "choice",
+      "prompt": "Egy ország születési arányszáma 25 ‰, halálozási arányszáma 5 ‰. Kb. hány év alatt kétszereződik meg a népessége a 70-es szabály szerint?",
+      "options": [
+        {
+          "key": "A",
+          "text": "350 év"
+        },
+        {
+          "key": "B",
+          "text": "14 év"
+        },
+        {
+          "key": "C",
+          "text": "70 év"
+        },
+        {
+          "key": "D",
+          "text": "35 év"
+        }
+      ],
+      "answer": "D",
+      "category": "szamitas-foldrajzi",
+      "explanation": "Helyes: 35 év. A természetes szaporodás 25 − 5 = 20 ‰ = 2%; 70 : 2 = 35 év.",
+      "wrongOptions": {
+        "A": "A 350 a 70 : 0,2 eredménye – itt a ‰ és a % összekeveredett.",
+        "B": "A 14 a 70 : 5 eredménye, de a halálozási arányszámmal osztani hibás – a szaporodás (2%) kell.",
+        "C": "A 70 év 1%-os szaporodásnál lenne igaz."
+      }
+    },
+    {
+      "id": "5",
+      "kind": "text",
+      "prompt": "Mekkora a Nap delelési magassága a napéjegyenlőség napján az é. sz. 40°-on?",
+      "answer": [
+        "50°",
+        "50",
+        "50 fok"
+      ],
+      "category": "szamitas-foldrajzi",
+      "explanation": "50°: napéjegyenlőségkor a delelési magasság 90° − földrajzi szélesség = 90° − 40° = 50°."
+    },
+    {
+      "id": "6",
+      "kind": "text",
+      "prompt": "Egy hegy lábánál (200 m) 16 °C van. Hány fok várható a 2200 m magas csúcson, ha a hőmérséklet 100 m-enként 0,6 °C-kal csökken?",
+      "answer": [
+        "4 °C",
+        "4",
+        "4 fok"
+      ],
+      "category": "szamitas-foldrajzi",
+      "explanation": "4 °C: a magasságkülönbség 2000 m, azaz 20 × 100 m; 20 × 0,6 °C = 12 °C csökkenés; 16 − 12 = 4 °C."
+    }
+  ],
+  "relatedCategories": [
+    "terkep-olvasas",
+    "abra-diagram"
+  ]
+}

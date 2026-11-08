@@ -1,0 +1,123 @@
+{
+  "schemaVersion": 1,
+  "id": "nem-sp-kozep-gazdasag-situation",
+  "subject": "nemet",
+  "revision": 1,
+  "level": "kozep",
+  "source": "generated",
+  "topic": "gazdasag",
+  "title": "Kopfhörer umtauschen",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "speaking",
+  "type": "situation",
+  "partNumber": 2,
+  "instructionsHu": "Hamburgban egy hete fülhallgatót vettél, és az egyik oldala már nem működik. Vidd vissza a boltba, és intézd el a cserét vagy a visszatérítést. Minden pontot teljesíts.",
+  "situation": {
+    "context": "Sie verbringen einen Monat bei Verwandten in Hamburg. Letzte Woche haben Sie in einem Elektronikgeschäft kabellose Kopfhörer für 59 Euro gekauft. Jetzt funktioniert der linke Kopfhörer nicht mehr. Sie gehen mit dem Kassenbon in das Geschäft.",
+    "candidateRole": "Sie sind ein Kunde / eine Kundin mit einer Reklamation.",
+    "examinerRole": "Der Prüfer / Die Prüferin ist der Verkäufer / die Verkäuferin.",
+    "goals": [
+      "Erklären Sie das Problem.",
+      "Sagen Sie, wann Sie die Kopfhörer gekauft haben, und zeigen Sie den Kassenbon.",
+      "Sagen Sie, was Sie möchten (Umtausch oder Geld zurück).",
+      "Reagieren Sie auf das Angebot des Verkäufers / der Verkäuferin und treffen Sie eine Entscheidung."
+    ],
+    "examinerOpening": "Guten Tag! Kann ich Ihnen helfen?"
+  },
+  "followUpQuestions": [
+    "Oh, das ist ärgerlich. Wann haben Sie sie denn gekauft?",
+    "Dieses Modell haben wir leider nicht mehr. Ich kann Ihnen ein anderes für 69 Euro anbieten oder einen Gutschein geben.",
+    "Möchten Sie das neue Modell gleich ausprobieren?"
+  ],
+  "usefulPhrases": [
+    {
+      "en": "Ich habe ein Problem mit diesen Kopfhörern.",
+      "hu": "Gondom van ezzel a fülhallgatóval."
+    },
+    {
+      "en": "Der linke Kopfhörer funktioniert nicht mehr.",
+      "hu": "A bal oldali fülhallgató már nem működik."
+    },
+    {
+      "en": "Hier ist der Kassenbon.",
+      "hu": "Itt a blokk."
+    },
+    {
+      "en": "Ich hätte gern ein neues Paar.",
+      "hu": "Egy új párat szeretnék."
+    },
+    {
+      "en": "Oder Sie geben mir mein Geld zurück.",
+      "hu": "Vagy visszaadják a pénzemet."
+    },
+    {
+      "en": "Muss ich die Differenz bezahlen?",
+      "hu": "Ki kell fizetnem a különbözetet?"
+    },
+    {
+      "en": "Dann nehme ich lieber …",
+      "hu": "Akkor inkább … választom."
+    }
+  ],
+  "speakingSeconds": 240,
+  "prepSeconds": 30,
+  "sampleAnswer": {
+    "turns": [
+      {
+        "speaker": "examiner",
+        "text": "Guten Tag! Kann ich Ihnen helfen?"
+      },
+      {
+        "speaker": "candidate",
+        "text": "Guten Tag! Ich habe ein Problem mit diesen Kopfhörern. Der linke Kopfhörer funktioniert seit gestern nicht mehr, ich höre nur noch auf der rechten Seite."
+      },
+      {
+        "speaker": "examiner",
+        "text": "Oh, das ist ärgerlich. Wann haben Sie sie denn gekauft?"
+      },
+      {
+        "speaker": "candidate",
+        "text": "Letzten Samstag, also vor einer Woche, hier in Ihrem Geschäft. Hier ist der Kassenbon. Sie haben 59 Euro gekostet."
+      },
+      {
+        "speaker": "examiner",
+        "text": "Danke. Was möchten Sie jetzt? Sollen wir sie reparieren lassen?"
+      },
+      {
+        "speaker": "candidate",
+        "text": "Nein, eine Reparatur dauert bestimmt zu lange. Ich hätte gern ein neues Paar, genau dasselbe Modell. Oder Sie geben mir mein Geld zurück."
+      },
+      {
+        "speaker": "examiner",
+        "text": "Dieses Modell haben wir leider nicht mehr. Ich kann Ihnen ein anderes für 69 Euro anbieten oder einen Gutschein geben."
+      },
+      {
+        "speaker": "candidate",
+        "text": "Hm, muss ich für das andere Modell die zehn Euro dazubezahlen?"
+      },
+      {
+        "speaker": "examiner",
+        "text": "Ja, die Differenz müssten Sie leider selbst bezahlen."
+      },
+      {
+        "speaker": "candidate",
+        "text": "Dann nehme ich lieber mein Geld zurück. Einen Gutschein brauche ich nicht, weil ich schon nächste Woche wieder nach Ungarn fahre."
+      },
+      {
+        "speaker": "examiner",
+        "text": "Kein Problem, das geht auch. Hier sind Ihre 59 Euro."
+      },
+      {
+        "speaker": "candidate",
+        "text": "Vielen Dank für Ihre Hilfe! Auf Wiedersehen."
+      }
+    ],
+    "notes": [
+      "Kommunikációs cél: a vizsgázó világosan elmondja a hibát, megadja a vásárlás idejét és megmutatja a blokkot, megmondja, mit szeretne, majd az eladó ajánlatára mérlegel (kérdez a különbözetről), és indokolt döntést hoz.",
+      "Szókincs: a reklamáció szavai pontosak (Kassenbon, Reparatur, Modell, Differenz, Gutschein, Geld zurück), a hangnem udvarias, de határozott.",
+      "Nyelvhelyesség: az udvarias „Ich hätte gern …”, a „dazubezahlen” elváló ige módbeli segédigével és a „weil” mellékmondat helyes szórendje mind hibátlan.",
+      "Érdemes megtanulni: „Der linke Kopfhörer funktioniert nicht mehr”, „Ich hätte gern …”, „Oder Sie geben mir mein Geld zurück”, „Dann nehme ich lieber …”."
+    ]
+  }
+}

@@ -1,0 +1,274 @@
+{
+  "schemaVersion": 1,
+  "id": "fiz-gr-mertekegyseg",
+  "subject": "fizika",
+  "revision": 1,
+  "level": "kozep",
+  "source": "generated",
+  "topic": "nyelvtan",
+  "title": "Mértékegységek, prefixumok, átváltás",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "grammar",
+  "type": "lesson",
+  "category": "mertekegyseg",
+  "summaryHu": "A fizikai mennyiség = mérőszám × mértékegység: mértékegység nélkül az eredmény nem értékelhető. A legtöbb számolási hiba az átváltásból ered (km/h és m/s, cm² és m², °C és K, kWh és J). Számolás előtt mindent válts SI-alapegységre, a végeredményt pedig a feladatban kért egységben add meg.",
+  "rules": [
+    {
+      "title": "SI-alapegységek és származtatott egységek",
+      "explanation": "Az SI-alapegységek: m, kg, s, A, K, mol, cd. A többi ezekből származik: N = kg·m/s², J = N·m, W = J/s, Pa = N/m², C = A·s, V = J/C = W/A, Ω = V/A. Ha mindent SI-ben helyettesítesz be, az eredmény is SI-egységben jön ki.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "1 N = 1 kg·m/s²",
+          "hu": "1 kg tömegű testet 1 m/s²-tel gyorsító erő."
+        },
+        {
+          "en": "1 Pa = 1 N/m²; 1 bar = 10⁵ Pa",
+          "hu": "A légnyomás kb. 1 bar = 100 kPa."
+        }
+      ]
+    },
+    {
+      "title": "Prefixumok",
+      "explanation": "A prefixumok tízes hatványokat jelentenek: G = 10⁹, M = 10⁶, k = 10³, c = 10⁻², m = 10⁻³, µ = 10⁻⁶, n = 10⁻⁹. Behelyettesítés előtt írd át normálalakba.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "20 µF = 20 · 10⁻⁶ F = 2 · 10⁻⁵ F",
+          "hu": "Kondenzátoroknál gyakori."
+        },
+        {
+          "en": "500 nm = 500 · 10⁻⁹ m = 5 · 10⁻⁷ m",
+          "hu": "Fény hullámhossza."
+        },
+        {
+          "en": "2,5 kΩ = 2500 Ω",
+          "hu": "Ellenállások."
+        }
+      ]
+    },
+    {
+      "title": "Négyzetes és köbös egységek",
+      "explanation": "Terület- és térfogategységnél a prefixum is négyzetre, illetve köbre emelődik: 1 cm² = 10⁻⁴ m², 1 mm² = 10⁻⁶ m², 1 cm³ = 10⁻⁶ m³, 1 dm³ = 1 liter = 10⁻³ m³.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "A = 2 cm² = 2 · 10⁻⁴ m²",
+          "hu": "Nem 2 · 10⁻² m²!"
+        },
+        {
+          "en": "V = 3 dm³ = 3 · 10⁻³ m³",
+          "hu": "p·ΔV = 10⁵ Pa · 3 · 10⁻³ m³ = 300 J."
+        }
+      ]
+    },
+    {
+      "title": "Gyakori átváltások",
+      "explanation": "km/h → m/s: osztás 3,6-tal (72 km/h = 20 m/s). °C → K: +273 (20 °C = 293 K); hőmérséklet-KÜLÖNBSÉG mindkettőben ugyanannyi. kWh → J: 1 kWh = 3,6 · 10⁶ J. eV → J: 1 eV = 1,6 · 10⁻¹⁹ J. perc → s: ·60, óra → s: ·3600.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "90 km/h = 90/3,6 m/s = 25 m/s",
+          "hu": "1 km/h = 1000 m / 3600 s = 1/3,6 m/s."
+        },
+        {
+          "en": "ΔT = 80 °C = 80 K",
+          "hu": "A különbségnél nem kell átváltani."
+        },
+        {
+          "en": "3,1 eV = 3,1 · 1,6 · 10⁻¹⁹ J ≈ 5,0 · 10⁻¹⁹ J",
+          "hu": "Foton energiája."
+        }
+      ]
+    },
+    {
+      "title": "Mikor KELL kelvin?",
+      "explanation": "A gáztörvényekben (p·V = n·R·T, p/T = állandó), a hőerőgépek hatásfokában (1 − T_h/T_m) és minden arányosságban a hőmérsékletet kelvinben kell behelyettesíteni. Celsius-fokkal csak különbséget (Q = c·m·ΔT) szabad számolni.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "27 °C → 127 °C: a nyomás 400/300-szorosára nő, nem 127/27-szeresére.",
+          "hu": "Arányosság → kelvin."
+        },
+        {
+          "en": "Q = c·m·ΔT, ΔT = 100 °C − 20 °C = 80 °C",
+          "hu": "Különbség → mindegy."
+        }
+      ]
+    }
+  ],
+  "commonMistakes": [
+    {
+      "wrong": "v = 72 km/h, t = 10 s → s = 72 · 10 = 720 m",
+      "right": "72 km/h = 20 m/s → s = 20 m/s · 10 s = 200 m",
+      "why": "A km/h-t át kell váltani m/s-ra, ha az idő másodpercben van."
+    },
+    {
+      "wrong": "A = 4 cm² = 4 · 10⁻² m²",
+      "right": "A = 4 cm² = 4 · 10⁻⁴ m²",
+      "why": "A cm² a cm négyzete: (10⁻² m)² = 10⁻⁴ m²."
+    },
+    {
+      "wrong": "p₂ = p₁ · T₂/T₁ = 2 · 10⁵ Pa · 127/27",
+      "right": "p₂ = p₁ · T₂/T₁ = 2 · 10⁵ Pa · 400 K / 300 K",
+      "why": "A gáztörvényekben abszolút (kelvin) hőmérséklet szerepel."
+    },
+    {
+      "wrong": "I = Q/t = 36 C / 2 perc = 18 A",
+      "right": "I = 36 C / 120 s = 0,3 A",
+      "why": "Az amper C/s, ezért az időt másodpercben kell megadni."
+    }
+  ],
+  "examTips": [
+    "Minden végeredmény mellé írj mértékegységet – a hiányzó mértékegység pontlevonással jár, és a számításos feladat értékelésében a „Válasz, mértékegység” szempont külön pontot ér.",
+    "Teszt: a rossz válaszok között szinte mindig ott van az átváltás nélküli eredmény (pl. 1000-szer vagy 3,6-szer nagyobb) – ha ilyet kapsz, nézd meg újra az egységeket.",
+    "A függvénytáblázat első oldalain megtalálod a prefixumokat és az átváltásokat – vizsga közben is használd."
+  ],
+  "practice": [
+    {
+      "id": "1",
+      "kind": "choice",
+      "prompt": "Hány m/s a 108 km/h?",
+      "options": [
+        {
+          "key": "A",
+          "text": "30 m/s"
+        },
+        {
+          "key": "B",
+          "text": "108 m/s"
+        },
+        {
+          "key": "C",
+          "text": "388,8 m/s"
+        },
+        {
+          "key": "D",
+          "text": "10,8 m/s"
+        }
+      ],
+      "answer": "A",
+      "category": "mertekegyseg",
+      "explanation": "Helyes: A. 108 km/h = 108 000 m / 3600 s = 30 m/s (vagy 108 : 3,6 = 30).",
+      "wrongOptions": {
+        "B": "Átváltás nélkül a km/h-t m/s-nak vette; 1 km/h = 1000 m / 3600 s, ezért 3,6-tal osztani kell.",
+        "C": "Szorzott 3,6-tal osztás helyett (108 · 3,6 ≈ 388,8).",
+        "D": "A km/h-t nem lehet 10-zel osztva m/s-ra váltani; a váltószám 3,6."
+      }
+    },
+    {
+      "id": "2",
+      "kind": "choice",
+      "prompt": "Mennyi 5 cm³ köbméterben?",
+      "options": [
+        {
+          "key": "A",
+          "text": "5 · 10⁻² m³"
+        },
+        {
+          "key": "B",
+          "text": "5 · 10⁻³ m³"
+        },
+        {
+          "key": "C",
+          "text": "5 · 10⁻⁶ m³"
+        },
+        {
+          "key": "D",
+          "text": "5 · 10⁻⁹ m³"
+        }
+      ],
+      "answer": "C",
+      "category": "mertekegyseg",
+      "explanation": "Helyes: C. 1 cm = 10⁻² m, ezért 1 cm³ = (10⁻² m)³ = 10⁻⁶ m³, így 5 cm³ = 5 · 10⁻⁶ m³.",
+      "wrongOptions": {
+        "A": "Csak a hosszúság prefixumát vette, a köbre emelést nem.",
+        "B": "Ez 5 dm³ (5 liter) lenne.",
+        "D": "Ez 5 mm³ lenne (1 mm³ = 10⁻⁹ m³)."
+      }
+    },
+    {
+      "id": "3",
+      "kind": "choice",
+      "prompt": "Egy gáz hőmérséklete 20 °C-ról 40 °C-ra nő állandó térfogaton. Hányszorosára nő a nyomása?",
+      "options": [
+        {
+          "key": "A",
+          "text": "2-szeresére"
+        },
+        {
+          "key": "B",
+          "text": "Kb. 1,07-szeresére"
+        },
+        {
+          "key": "C",
+          "text": "4-szeresére"
+        },
+        {
+          "key": "D",
+          "text": "Nem változik."
+        }
+      ],
+      "answer": "B",
+      "category": "mertekegyseg",
+      "explanation": "Helyes: B. Izochor folyamatban p ~ T, abszolút hőmérséklettel: 313 K / 293 K ≈ 1,07. A kelvinben számolt arány sokkal kisebb, mint a Celsius-fokok aránya.",
+      "wrongOptions": {
+        "A": "A Celsius-fokok arányát (40/20) vette; a gáztörvényekben kelvin kell.",
+        "C": "Ez sem a kelvin-, sem a Celsius-arány.",
+        "D": "Állandó térfogaton melegítve a nyomás nő."
+      }
+    },
+    {
+      "id": "4",
+      "kind": "choice",
+      "prompt": "Hány joule 0,5 kWh?",
+      "options": [
+        {
+          "key": "A",
+          "text": "500 J"
+        },
+        {
+          "key": "B",
+          "text": "1800 J"
+        },
+        {
+          "key": "C",
+          "text": "1,8 · 10⁶ J"
+        },
+        {
+          "key": "D",
+          "text": "3,6 · 10⁶ J"
+        }
+      ],
+      "answer": "C",
+      "category": "mertekegyseg",
+      "explanation": "Helyes: C. 1 kWh = 1000 W · 3600 s = 3,6 · 10⁶ J, így 0,5 kWh = 1,8 · 10⁶ J = 1,8 MJ.",
+      "wrongOptions": {
+        "A": "0,5 kWh = 500 Wh, de a wattóra nem joule: 1 Wh = 1 W · 3600 s = 3600 J.",
+        "B": "0,5 · 3600 = 1800: az órát átváltotta, de a kilowattot nem wattra.",
+        "D": "Ez 1 kWh, nem 0,5 kWh."
+      }
+    },
+    {
+      "id": "5",
+      "kind": "text",
+      "prompt": "Egy foton energiája 2,0 eV. Mennyi ez joule-ban? (Normálalakban, pl. 1,6 · 10⁻¹⁹ J alakban add meg!)",
+      "answer": [
+        "3,2 · 10⁻¹⁹ J",
+        "3,2 · 10^-19 J",
+        "3,2e-19 J",
+        "3,2 · 10⁻¹⁹",
+        "3,2e-19"
+      ],
+      "maxWords": 4,
+      "category": "mertekegyseg",
+      "explanation": "Helyes: 3,2 · 10⁻¹⁹ J. 1 eV = 1,6 · 10⁻¹⁹ J, ezért 2,0 eV = 2,0 · 1,6 · 10⁻¹⁹ J = 3,2 · 10⁻¹⁹ J."
+    }
+  ],
+  "relatedCategories": [
+    "szamolas",
+    "kepletek",
+    "fogalmak"
+  ]
+}

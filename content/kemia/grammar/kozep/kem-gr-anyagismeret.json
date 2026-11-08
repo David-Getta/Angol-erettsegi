@@ -1,0 +1,294 @@
+{
+  "schemaVersion": 1,
+  "id": "kem-gr-anyagismeret",
+  "subject": "kemia",
+  "revision": 1,
+  "level": "kozep",
+  "source": "generated",
+  "topic": "nyelvtan",
+  "title": "Anyagismeret, tulajdonságok",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "grammar",
+  "type": "lesson",
+  "category": "anyagismeret",
+  "summaryHu": "Az anyagismeret az elemek és vegyületek fizikai és kémiai tulajdonságainak, előfordulásának, előállításának és felhasználásának ismerete – a kémiaérettségi feladatainak jelentős része erre épül (négyféle asszociáció, esettanulmány, elemző feladat, szóbeli A tétel). Nem elég bemagolni: a tulajdonságot a szerkezetből és a periódusos rendszerbeli helyből érdemes levezetni. A leggyakoribb hibák: rossz szín vagy halmazállapot, összekevert vegyületnevek (szóda–szódabikarbóna, mész–mészkő) és a reakciókészség irányának tévesztése.",
+  "rules": [
+    {
+      "title": "Rendszerezés: a tulajdonság a szerkezetből következik",
+      "explanation": "Egy anyagról mindig ebben a sorrendben gondolkodj: szerkezet (kötés, rács, molekulaalak) → fizikai tulajdonságok (halmazállapot, szín, szag, oldhatóság, olvadás- és forráspont, sűrűség, vezetés) → kémiai tulajdonságok (sav–bázis és redoxi jelleg, jellemző reakciók) → előfordulás → előállítás (laboratóriumi és ipari) → felhasználás → élettani és környezeti hatás. Ez egyben a szóbeli A tétel ajánlott vázlata is.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "Klór: Cl₂, apoláris molekula → sárgászöld, szúrós szagú, mérgező gáz; erős oxidálószer → fertőtlenítés, PVC-gyártás"
+        }
+      ]
+    },
+    {
+      "title": "A fémek reakciókészsége: a redoxisor",
+      "explanation": "A fémek redukálóképességét a standardpotenciáljuk mutatja: K, Ca, Na, Mg, Al, Zn, Fe, Pb, (H), Cu, Ag, Au sorrendben csökken (E°: K −2,93 V, Ca −2,87 V, Na −2,71 V). A hidrogénnél negatívabb potenciálú fémek nem oxidáló savakból (sósav, híg kénsav) hidrogént fejlesztenek, a réz és az ezüst nem. Az alkálifémek és a kalcium már szobahőmérsékleten a vízzel is hidrogént fejlesztenek. Egy fém a nála pozitívabb standardpotenciálú fém ionjait redukálja, vagyis kiszorítja azt a sójából.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "Zn + 2 HCl → ZnCl₂ + H₂",
+          "hu": "A cink a hidrogénnél negatívabb standardpotenciálú."
+        },
+        {
+          "en": "Cu + HCl → nincs reakció",
+          "hu": "A réz standardpotenciálja pozitív."
+        },
+        {
+          "en": "Fe + CuSO₄ → FeSO₄ + Cu",
+          "hu": "A vas kiszorítja a rezet."
+        }
+      ]
+    },
+    {
+      "title": "Passziválódás és oxidáló savak",
+      "explanation": "Egyes fémek felületén tömör oxidréteg védi a fémet: az alumínium már levegőn passziválódik, a vas, az alumínium és a króm tömény salétromsavban is, ezért tömény salétromsav vas- vagy alumíniumtartályban szállítható. A réz és az ezüst nem oldódik sósavban, de oxidáló savban (salétromsav, forró tömény kénsav) igen – ilyenkor nem hidrogén, hanem nitrogén-oxid, illetve kén-dioxid fejlődik.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "Cu + 4 HNO₃ (tömény) → Cu(NO₃)₂ + 2 NO₂ + 2 H₂O",
+          "hu": "Barna nitrogén-dioxid gáz fejlődik."
+        },
+        {
+          "en": "3 Cu + 8 HNO₃ (híg) → 3 Cu(NO₃)₂ + 2 NO + 4 H₂O"
+        },
+        {
+          "en": "Cu + 2 H₂SO₄ (tömény, forró) → CuSO₄ + SO₂ + 2 H₂O"
+        }
+      ]
+    },
+    {
+      "title": "Gyakran összekevert nevek és képletek",
+      "explanation": "Sok vegyületnek köznapi neve van, ezeket pontosan kell tudni: mészkő = CaCO₃, égetett mész = CaO, oltott mész = Ca(OH)₂; szóda = Na₂CO₃ (kristályszóda: Na₂CO₃ · 10 H₂O), szódabikarbóna = NaHCO₃; marónátron = NaOH; rézgálic = CuSO₄ · 5 H₂O; gipsz = CaSO₄ · 2 H₂O; konyhasó = NaCl; szalmiáksó = NH₄Cl; timföld = Al₂O₃.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "Mészégetés: CaCO₃ → CaO + CO₂"
+        },
+        {
+          "en": "Mészoltás: CaO + H₂O → Ca(OH)₂"
+        },
+        {
+          "en": "A habarcs megkötése: Ca(OH)₂ + CO₂ → CaCO₃ + H₂O"
+        }
+      ]
+    },
+    {
+      "title": "Színek, szagok, halmazállapotok",
+      "explanation": "Jellemző színek: klór sárgászöld gáz; bróm vörösbarna folyadék; jód szürkésfekete, fémfényű szilárd anyag (gőze ibolya); kén sárga; réz vörös; réz(II)-oxid fekete; hidratált réz(II)-ion kék; vízmentes CuSO₄ fehér; vas(III)-hidroxid vörösbarna csapadék; AgCl fehér, AgBr sárgásfehér, AgI sárga csapadék; NO₂ barna gáz. Szúrós szagú: NH₃, HCl, SO₂, Cl₂; záptojásszagú: H₂S. Szobahőmérsékleten folyékony elem a bróm és a higany.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "CuSO₄ (fehér) + 5 H₂O → CuSO₄ · 5 H₂O (kék)",
+          "hu": "A vízmentes réz(II)-szulfát a víz kimutatására is használható."
+        }
+      ]
+    },
+    {
+      "title": "Amfoter vegyületek és komplexek",
+      "explanation": "Amfoter az az anyag, amely savval és erős bázissal is reagál: ilyen az alumínium, a cink, valamint oxidjaik és hidroxidjaik. Fontos komplexek: [Cu(NH₃)₄]²⁺ (mélykék – a réz(II)-ionok kimutatása ammóniával), [Ag(NH₃)₂]⁺ (az ezüsttükörpróba reagense), [Zn(OH)₄]²⁻, [Al(OH)₄]⁻.",
+      "emeltOnly": true,
+      "examples": [
+        {
+          "en": "Al(OH)₃ + 3 H⁺ → Al³⁺ + 3 H₂O; Al(OH)₃ + OH⁻ → [Al(OH)₄]⁻"
+        },
+        {
+          "en": "Cu²⁺ + 4 NH₃ → [Cu(NH₃)₄]²⁺",
+          "hu": "Mélykék oldat – a réz(II)-ionok kimutatása."
+        }
+      ]
+    }
+  ],
+  "commonMistakes": [
+    {
+      "wrong": "A szódabikarbóna képlete Na₂CO₃.",
+      "right": "A szódabikarbóna NaHCO₃ (nátrium-hidrogén-karbonát); a szóda Na₂CO₃.",
+      "why": "A szódabikarbóna a savanyú só, hevítve szódává, vízzé és szén-dioxiddá bomlik: 2 NaHCO₃ → Na₂CO₃ + H₂O + CO₂."
+    },
+    {
+      "wrong": "A réz sósavban hidrogénfejlődés közben oldódik.",
+      "right": "A réz sósavban nem oldódik.",
+      "why": "A réz standardpotenciálja (+0,34 V) pozitívabb a hidrogénénél, ezért nem tudja redukálni az oxóniumionokat; csak oxidáló savakban (pl. salétromsavban) oldódik."
+    },
+    {
+      "wrong": "A tömény salétromsavat nem lehet vastartályban tárolni, mert feloldja a vasat.",
+      "right": "Tömény salétromsavban a vas (és az alumínium) passziválódik, ezért ilyen tartályban szállítható.",
+      "why": "A tömény oxidáló sav tömör oxidréteget hoz létre a fém felületén, amely megakadályozza a további oldódást."
+    },
+    {
+      "wrong": "A jód vörösbarna folyadék.",
+      "right": "A jód szürkésfekete, fémfényű szilárd anyag; gőze ibolyaszínű.",
+      "why": "A vörösbarna folyadék a bróm; a halogének színe a csoportban lefelé sötétedik, halmazállapotuk gázból szilárdba vált."
+    },
+    {
+      "wrong": "Az égetett mész képlete CaCO₃.",
+      "right": "Az égetett mész CaO; a CaCO₃ a mészkő, a Ca(OH)₂ az oltott mész.",
+      "why": "A mész körforgása: mészkőből égetéssel égetett mész, abból vízzel oltott mész, ami a levegő szén-dioxidjával újra kalcium-karbonáttá köt meg."
+    }
+  ],
+  "examTips": [
+    "Négyféle asszociációs feladatban minden állítást külön-külön ellenőrizz mindkét anyagra – az, hogy az egyikre igaz, még nem jelenti, hogy a másikra hamis.",
+    "Esettanulmányban a szöveg gyakran olyan tényt is közöl, amit nem kell fejből tudni: a választ a szövegből és a tanult összefüggésekből együtt add meg.",
+    "Szóbeli A tételnél a „szerkezet → tulajdonság → reakció → előfordulás → előállítás → felhasználás” vázlat biztosítja, hogy ne maradjon ki tartalmi elem."
+  ],
+  "practice": [
+    {
+      "id": "1",
+      "kind": "choice",
+      "prompt": "Melyik fém NEM fejleszt hidrogént híg sósavból?",
+      "options": [
+        {
+          "key": "A",
+          "text": "cink"
+        },
+        {
+          "key": "B",
+          "text": "vas"
+        },
+        {
+          "key": "C",
+          "text": "magnézium"
+        },
+        {
+          "key": "D",
+          "text": "ezüst"
+        }
+      ],
+      "answer": "D",
+      "category": "anyagismeret",
+      "explanation": "Helyes: ezüst. Standardpotenciálja (+0,80 V) pozitívabb a hidrogénénél, ezért nem redukálja az oxóniumionokat.",
+      "wrongOptions": {
+        "A": "A cink (−0,76 V) negatívabb a hidrogénnél, hidrogént fejleszt.",
+        "B": "A vas (−0,44 V) sósavban vas(II)-kloriddá oldódik, közben hidrogén fejlődik.",
+        "C": "A magnézium (−2,37 V) hevesen fejleszt hidrogént."
+      }
+    },
+    {
+      "id": "2",
+      "kind": "text",
+      "prompt": "Mi az oltott mész képlete?",
+      "answer": [
+        "Ca(OH)₂",
+        "Ca(OH)2"
+      ],
+      "caseSensitive": true,
+      "category": "anyagismeret",
+      "explanation": "Helyes: Ca(OH)₂, kalcium-hidroxid. Az égetett mész (CaO) és a víz reakciójában keletkezik: CaO + H₂O → Ca(OH)₂.",
+      "maxWords": 1
+    },
+    {
+      "id": "3",
+      "kind": "choice",
+      "prompt": "Milyen színű csapadék keletkezik, ha kálium-jodid-oldathoz ezüst-nitrát-oldatot öntünk?",
+      "options": [
+        {
+          "key": "A",
+          "text": "fehér"
+        },
+        {
+          "key": "B",
+          "text": "sárga"
+        },
+        {
+          "key": "C",
+          "text": "fekete"
+        },
+        {
+          "key": "D",
+          "text": "kék"
+        }
+      ],
+      "answer": "B",
+      "category": "anyagismeret",
+      "explanation": "Helyes: sárga. Ag⁺ + I⁻ → AgI; az ezüst-jodid sárga csapadék (az AgCl fehér, az AgBr sárgásfehér).",
+      "wrongOptions": {
+        "A": "Fehér csapadékot a kloridionok adnak (AgCl).",
+        "C": "Fekete csapadék például szulfidionokkal (Ag₂S) képződik.",
+        "D": "Kék színűek a réz(II)-vegyületek, az ezüst-halogenidek nem."
+      }
+    },
+    {
+      "id": "4",
+      "kind": "choice",
+      "prompt": "Melyik állítás igaz az alumíniumra?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Levegőn gyorsan elkorrodál, mert negatív a standardpotenciálja."
+        },
+        {
+          "key": "B",
+          "text": "Sósavban és nátrium-hidroxid-oldatban is oldódik."
+        },
+        {
+          "key": "C",
+          "text": "Nehézfém."
+        },
+        {
+          "key": "D",
+          "text": "Vegyületeiben +2-es oxidációs számú."
+        }
+      ],
+      "answer": "B",
+      "category": "anyagismeret",
+      "explanation": "Helyes: B. Az alumínium amfoter: sósavval AlCl₃, nátronlúggal Na[Al(OH)₄] keletkezik, mindkét esetben hidrogénfejlődés közben.",
+      "wrongOptions": {
+        "A": "Felületén tömör oxidréteg képződik (passziválódik), ezért negatív standardpotenciálja ellenére sem korrodálódik tovább.",
+        "C": "Sűrűsége kicsi (2,7 g/cm³), tehát könnyűfém.",
+        "D": "Az alumínium a 13. csoport eleme, három vegyértékelektronját leadva +3-as oxidációs számú."
+      }
+    },
+    {
+      "id": "5",
+      "kind": "text",
+      "prompt": "Milyen gáz fejlődik, ha rezet tömény salétromsavba teszünk? (képlet)",
+      "answer": [
+        "NO₂",
+        "NO2"
+      ],
+      "caseSensitive": true,
+      "category": "anyagismeret",
+      "explanation": "Helyes: NO₂ (nitrogén-dioxid), barna gáz. A salétromsav oxidáló sav: a rezet a nitrátion oxidálja, nem az oxóniumion, ezért nem hidrogén fejlődik: Cu + 4 HNO₃ → Cu(NO₃)₂ + 2 NO₂ + 2 H₂O.",
+      "maxWords": 1
+    },
+    {
+      "id": "6",
+      "kind": "choice",
+      "prompt": "Milyen színű lesz a réz(II)-szulfát-oldat, ha feleslegben ammóniaoldatot adunk hozzá? (emelt)",
+      "options": [
+        {
+          "key": "A",
+          "text": "zöld"
+        },
+        {
+          "key": "B",
+          "text": "színtelen"
+        },
+        {
+          "key": "C",
+          "text": "mélykék"
+        },
+        {
+          "key": "D",
+          "text": "vörösbarna"
+        }
+      ],
+      "answer": "C",
+      "category": "anyagismeret",
+      "explanation": "Helyes: mélykék. Először világoskék Cu(OH)₂ csapadék válik le, amely az ammóniafeleslegben feloldódik, és mélykék tetraammin-réz(II)-komplex keletkezik: [Cu(NH₃)₄]²⁺.",
+      "wrongOptions": {
+        "A": "Zöld színt például a vas(II)-ionok vagy a réz klorokomplexei adnak, nem az ammin-komplex.",
+        "B": "A komplexképződéskor a réz(II)-ion nem tűnik el, hanem színes komplexet képez.",
+        "D": "Vörösbarna a vas(III)-hidroxid és a fémréz; ammóniával a réz(II)-ion nem redukálódik."
+      }
+    }
+  ],
+  "relatedCategories": [
+    "kotes-szerkezet",
+    "reakciotipus",
+    "kiserlet-tapasztalat"
+  ]
+}

@@ -1,0 +1,134 @@
+{
+  "schemaVersion": 1,
+  "id": "bio-rd-emelt-kornyezeti-problemak-parositas",
+  "subject": "biologia",
+  "revision": 1,
+  "level": "emelt",
+  "source": "generated",
+  "topic": "kornyezetvedelem",
+  "title": "Globális és helyi környezeti problémák – párosítás",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "reading",
+  "type": "parositas",
+  "instructions": "Párosítsa a leírásokat a megfelelő környezeti problémával (A–J)! Minden betűt legfeljebb egyszer használhat fel, és egy betű felesleges. A 0. leírás a példa.",
+  "options": [
+    {
+      "key": "A",
+      "text": "eutrofizáció"
+    },
+    {
+      "key": "B",
+      "text": "savas ülepedés (savas eső)"
+    },
+    {
+      "key": "C",
+      "text": "a sztratoszférikus ózonréteg elvékonyodása"
+    },
+    {
+      "key": "D",
+      "text": "az üvegházhatás fokozódása"
+    },
+    {
+      "key": "E",
+      "text": "biológiai feldúsulás (biomagnifikáció)"
+    },
+    {
+      "key": "F",
+      "text": "fotokémiai (Los Angeles-típusú) szmog"
+    },
+    {
+      "key": "G",
+      "text": "inváziós fajok terjedése"
+    },
+    {
+      "key": "H",
+      "text": "az élőhelyek feldarabolódása"
+    },
+    {
+      "key": "I",
+      "text": "másodlagos szikesedés"
+    },
+    {
+      "key": "J",
+      "text": "hőszennyezés"
+    }
+  ],
+  "optionsReusable": false,
+  "example": {
+    "id": "0",
+    "kind": "match",
+    "prompt": "A szántóföldekről bemosódó nitrát- és foszfátvegyületek miatt egy tóban elszaporodnak az algák, majd elpusztulásuk és lebomlásuk után a mélyebb vízrétegekben oxigénhiány alakul ki.",
+    "answer": "A",
+    "category": "okologiai-osszefugges",
+    "explanation": "Helyes: A (eutrofizáció). A növényi tápanyagok (N, P) feldúsulása az algák tömeges elszaporodását okozza; az elhalt algák lebontása sok oxigént fogyaszt, ezért halpusztulás és bűzös, oxigénhiányos (anaerob) bomlás következik."
+  },
+  "items": [
+    {
+      "id": "1",
+      "kind": "match",
+      "prompt": "Klórozott-fluorozott szénhidrogénekből (freonokból) felszabaduló klóratomok a magaslégkörben bontják az O₃-molekulákat, ezért több ultraibolya (UV-B) sugárzás jut a felszínre.",
+      "answer": "C",
+      "category": "okologiai-osszefugges",
+      "explanation": "Helyes: C (az ózonréteg elvékonyodása). A sztratoszféra ózonja elnyeli az UV-B sugárzás nagy részét; a klóratomok láncreakcióban sok ózonmolekulát bontanak. A több UV-sugárzás bőrrákot, szürke hályogot és DNS-károsodást okozhat. A freonok gyártását a montreáli egyezmény (1987) korlátozta."
+    },
+    {
+      "id": "2",
+      "kind": "match",
+      "prompt": "A fosszilis tüzelőanyagok égetéséből származó szén-dioxid, valamint a szarvasmarha-tartásból és a rizsföldekről származó metán elnyeli a Föld felszínéről kisugárzott infravörös (hő-) sugárzást.",
+      "answer": "D",
+      "category": "okologiai-osszefugges",
+      "explanation": "Helyes: D (az üvegházhatás fokozódása). A természetes üvegházhatás nélkül a Föld átlaghőmérséklete kb. −18 °C lenne; a szén-dioxid és a metán koncentrációjának emberi eredetű növekedése a hőkisugárzás egyre nagyobb részét tartja vissza, ez okozza a globális felmelegedést."
+    },
+    {
+      "id": "3",
+      "kind": "match",
+      "prompt": "A kén-dioxid és a nitrogén-oxidok a légkör vízgőzével savakat képeznek; a csapadék kilúgozza a talaj ásványi anyagait, károsítja a fenyvesek tűleveleit és a mészkőből készült szobrokat.",
+      "answer": "B",
+      "category": "okologiai-osszefugges",
+      "explanation": "Helyes: B (savas ülepedés). A kén-dioxidból kénessav és kénsav, a nitrogén-oxidokból salétromsav keletkezik; a savas csapadék oldja a mészkövet, a talajból kimossa a tápelemeket, és mobilizálja a mérgező alumíniumionokat, ezért pusztulnak az erdők és savanyodnak a tavak."
+    },
+    {
+      "id": "4",
+      "kind": "match",
+      "prompt": "Nyári, napos, szélcsendes időben a gépjárművek kipufogógázának nitrogén-oxidjaiból és szénhidrogénjeiből a napfény hatására ózon és más, nyálkahártya-izgató oxidálószerek keletkeznek a talaj közelében.",
+      "answer": "F",
+      "category": "okologiai-osszefugges",
+      "explanation": "Helyes: F (fotokémiai szmog). Ez a nyári, oxidáló szmog, amelynek kialakulásához erős napsugárzás kell; a talajközeli ózon a légutakat és a növények leveleit károsítja. (A téli, London-típusú szmog főleg kén-dioxidból és koromból áll, és ködös, hideg időben alakul ki.)"
+    },
+    {
+      "id": "5",
+      "kind": "match",
+      "prompt": "A DDT nevű rovarirtó szer a tápláléklánc magasabb szintjein egyre nagyobb koncentrációban halmozódott fel; a ragadozó madarak tojáshéja elvékonyodott, és állományaik összeomlottak.",
+      "answer": "E",
+      "category": "okologiai-osszefugges",
+      "explanation": "Helyes: E (biológiai feldúsulás). A zsírban oldódó, nehezen lebomló DDT nem ürül ki a szervezetből, így minden táplálkozási szinten töményebb lesz: a csúcsragadozók (pl. a vándorsólyom, a rétisas) szervezetében a koncentráció a vízben vagy a talajban mérhető sokszorosa lehet."
+    },
+    {
+      "id": "6",
+      "kind": "match",
+      "prompt": "Az Észak-Amerikából dísz- és mézelő növényként behozott selyemkóró és magas aranyvessző kivadult, gyorsan terjed, és kiszorítja az őshonos növényfajokat.",
+      "answer": "G",
+      "category": "okologiai-osszefugges",
+      "explanation": "Helyes: G (inváziós fajok terjedése). Az ember által új területre juttatott fajok egy része az új helyen nem talál természetes ellenségre és versenytársra, ezért gyorsan elszaporodik, és az őshonos fajokat kiszorítva csökkenti a biológiai sokféleséget."
+    },
+    {
+      "id": "7",
+      "kind": "match",
+      "prompt": "Autópályák, nagy mezőgazdasági táblák és települések kisebb, egymástól elszigetelt foltokra bontják egy faj élőhelyét; a kis populációk között megszűnik a génáramlás.",
+      "answer": "H",
+      "category": "okologiai-osszefugges",
+      "explanation": "Helyes: H (az élőhelyek feldarabolódása). Az elszigetelt kis populációkban erősebb a genetikai sodródás és a beltenyésztés, csökken a genetikai változatosság, és nő a kihalás veszélye; ezért fontosak az ökológiai folyosók (pl. vadátjárók)."
+    },
+    {
+      "id": "8",
+      "kind": "match",
+      "prompt": "Száraz éghajlatú területen helytelen öntözés miatt megemelkedik a talajvíz szintje; a párolgó víz sói a talaj felső rétegében felhalmozódnak, és a talaj terméketlenné válik.",
+      "answer": "I",
+      "category": "okologiai-osszefugges",
+      "explanation": "Helyes: I (másodlagos szikesedés). Az emberi tevékenység (öntözés, talajvízszint-emelkedés) okozta sófelhalmozódás a talajszerkezetet rontja, a magas sókoncentráció pedig ozmotikusan gátolja a növények vízfelvételét."
+    }
+  ],
+  "glossary": [],
+  "suggestedMinutes": 10
+}

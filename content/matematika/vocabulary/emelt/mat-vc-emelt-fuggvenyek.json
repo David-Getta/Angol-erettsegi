@@ -1,0 +1,176 @@
+{
+  "schemaVersion": 1,
+  "id": "mat-vc-emelt-fuggvenyek",
+  "subject": "matematika",
+  "revision": 1,
+  "level": "emelt",
+  "source": "generated",
+  "topic": "fuggvenyek",
+  "title": "Analízis: határérték, derivált, integrál (emelt)",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "vocabulary",
+  "type": "deck",
+  "cards": [
+    {
+      "term": "sorozat határértéke",
+      "meaning": "Az (aₙ) sorozat határértéke az A szám, ha bármely ε > 0 számhoz van olyan N küszöbindex, hogy minden n > N esetén |aₙ − A| < ε.",
+      "example": "Az 1/n sorozat határértéke 0, mert bármely ε > 0-hoz N = 1/ε jó küszöbindex.",
+      "collocation": "lim aₙ = A"
+    },
+    {
+      "term": "konvergens sorozat",
+      "meaning": "Olyan sorozat, amelynek van (véges) határértéke.",
+      "example": "A (3n + 1)/n sorozat konvergens, határértéke 3."
+    },
+    {
+      "term": "divergens sorozat",
+      "meaning": "Olyan sorozat, amely nem konvergens (például végtelenbe tart vagy oszcillál).",
+      "example": "A (−1)ⁿ sorozat divergens, mert két érték között ugrál."
+    },
+    {
+      "term": "korlátos sorozat",
+      "meaning": "Olyan sorozat, amelynek tagjai egy alkalmas K számra mind |aₙ| ≤ K feltételnek tesznek eleget.",
+      "example": "Minden konvergens sorozat korlátos, de a (−1)ⁿ korlátos sorozat nem konvergens.",
+      "collocation": "|aₙ| ≤ K"
+    },
+    {
+      "term": "monoton növekvő sorozat",
+      "meaning": "Olyan sorozat, amelyben minden n-re aₙ ≤ aₙ₊₁ (szigorúan: aₙ < aₙ₊₁).",
+      "example": "Minden korlátos, monoton növekvő sorozat konvergens.",
+      "collocation": "aₙ ≤ aₙ₊₁"
+    },
+    {
+      "term": "függvény határértéke",
+      "meaning": "Az f függvény határértéke x₀-ban A, ha minden x₀-hoz tartó, x₀-tól különböző értelmezési tartománybeli (xₙ) sorozatra f(xₙ) → A (átviteli elv).",
+      "example": "Az (x² − 4)/(x − 2) függvény határértéke a 2-ben 4, pedig ott nincs értelmezve.",
+      "collocation": "lim(x→x₀) f(x) = A"
+    },
+    {
+      "term": "folytonosság",
+      "meaning": "Az f függvény folytonos x₀-ban, ha ott értelmezett, létezik határértéke, és ez egyenlő f(x₀)-lal.",
+      "example": "A folytonosság hiánya látszik az előjelfüggvénynél: a sgn x a 0-ban nem folytonos, mert ott ugrik.",
+      "collocation": "lim(x→x₀) f(x) = f(x₀)"
+    },
+    {
+      "term": "differenciahányados",
+      "meaning": "Az (f(x) − f(x₀))/(x − x₀) hányados: a grafikon (x₀; f(x₀)) és (x; f(x)) pontján átmenő szelő meredeksége.",
+      "example": "A differenciahányados az átlagos változási sebességet méri.",
+      "collocation": "(f(x) − f(x₀))/(x − x₀)"
+    },
+    {
+      "term": "derivált",
+      "meaning": "Az f függvény x₀-beli deriváltja a differenciahányados határértéke, ha az létezik és véges: f′(x₀) = lim(h → 0) (f(x₀ + h) − f(x₀))/h.",
+      "example": "Az f(x) = x² derivált értéke a 3 helyen 6.",
+      "collocation": "f′(x₀)"
+    },
+    {
+      "term": "érintő egyenlete",
+      "meaning": "Az f grafikonjának (x₀; f(x₀)) pontbeli érintője az f′(x₀) meredekségű egyenes ezen a ponton át.",
+      "example": "Az x² grafikonjához az (1; 1) pontban húzott érintő egyenlete y = 2x − 1.",
+      "collocation": "y − f(x₀) = f′(x₀)(x − x₀)"
+    },
+    {
+      "term": "deriváltfüggvény",
+      "meaning": "Az a függvény, amely minden olyan x-hez, ahol f deriválható, az f′(x) értéket rendeli.",
+      "example": "Az x³ − 3x deriváltfüggvénye 3x² − 3.",
+      "collocation": "x ↦ f′(x)"
+    },
+    {
+      "term": "szorzat deriváltja",
+      "meaning": "Két deriválható függvény szorzatának deriváltja: az első deriváltja szorozva a másodikkal, plusz az első szorozva a második deriváltjával.",
+      "example": "A szorzat deriváltja: (x²·sin x)′ = 2x·sin x + x²·cos x.",
+      "collocation": "(f·g)′ = f′·g + f·g′"
+    },
+    {
+      "term": "hányados deriváltja",
+      "meaning": "Ha g(x) ≠ 0: (f/g)′ = (f′·g − f·g′)/g².",
+      "example": "A hányados deriváltja: (1/x)′ = (0·x − 1·1)/x² = −1/x².",
+      "collocation": "(f/g)′ = (f′g − fg′)/g²"
+    },
+    {
+      "term": "összetett függvény deriváltja",
+      "meaning": "Láncszabály: a külső függvény deriváltja a belső függvény helyén, szorozva a belső függvény deriváltjával.",
+      "example": "Az összetett függvény deriváltja: ((2x + 1)⁵)′ = 5(2x + 1)⁴·2.",
+      "collocation": "(f(g(x)))′ = f′(g(x))·g′(x)"
+    },
+    {
+      "term": "helyi maximum",
+      "meaning": "Az f-nek x₀-ban helyi maximuma van, ha x₀-nak van olyan környezete, amelyben minden x-re f(x) ≤ f(x₀).",
+      "example": "Az x³ − 3x függvénynek x = −1-ben helyi maximuma van, értéke 2.",
+      "collocation": "f(x) ≤ f(x₀)"
+    },
+    {
+      "term": "szélsőérték szükséges feltétele",
+      "meaning": "Ha f deriválható az x₀ belső pontban, és ott helyi szélsőértéke van, akkor f′(x₀) = 0 (a megfordítás nem igaz: x³ a 0-ban).",
+      "example": "A szélsőérték szükséges feltétele teljesül az x³ függvénynél 0-ban, mégsincs ott szélsőérték.",
+      "collocation": "f′(x₀) = 0"
+    },
+    {
+      "term": "szélsőérték elégséges feltétele",
+      "meaning": "Ha f′(x₀) = 0 és f′ az x₀-ban előjelet vált (+ → −: maximum, − → +: minimum), akkor x₀-ban helyi szélsőérték van; ugyanez következik f′(x₀) = 0 és f″(x₀) ≠ 0 esetén.",
+      "example": "A szélsőérték elégséges feltétele: f′(x₀) = 0 és f″(x₀) < 0 esetén helyi maximum van.",
+      "collocation": "f′ előjelet vált"
+    },
+    {
+      "term": "monotonitás és derivált",
+      "meaning": "Ha egy intervallum minden pontjában f′(x) > 0, akkor f ott szigorúan monoton nő; ha f′(x) < 0, szigorúan monoton csökken.",
+      "example": "A monotonitás vizsgálatához a derivált előjelét táblázatban ábrázoljuk.",
+      "collocation": "f′ > 0 ⇒ f nő"
+    },
+    {
+      "term": "konvex függvény",
+      "meaning": "Az f (alulról) konvex az I intervallumon, ha bármely két grafikonpontja közötti húr nincs a grafikon alatt; kétszer deriválható f-re ez f″(x) ≥ 0-val egyenértékű.",
+      "example": "Az x² függvény az egész számegyenesen konvex.",
+      "collocation": "f″ ≥ 0"
+    },
+    {
+      "term": "konkáv függvény",
+      "meaning": "Az f (alulról) konkáv az I intervallumon, ha bármely két grafikonpontja közötti húr nincs a grafikon felett; kétszer deriválható f-re: f″(x) ≤ 0.",
+      "example": "A √x függvény a pozitív számokon konkáv.",
+      "collocation": "f″ ≤ 0"
+    },
+    {
+      "term": "inflexiós pont",
+      "meaning": "A grafikon azon pontja, ahol a függvény konvexből konkávba vagy konkávból konvexbe vált; kétszer deriválható f-nél f″ itt előjelet vált.",
+      "example": "Az x³ függvény inflexiós pontja az origó.",
+      "collocation": "f″ előjelet vált"
+    },
+    {
+      "term": "primitív függvény",
+      "meaning": "Az F függvény az f primitív függvénye az I intervallumon, ha ott F deriválható és F′(x) = f(x).",
+      "example": "Az x³/3 primitív függvénye az x²-nek, és x³/3 + 5 is az.",
+      "collocation": "F′ = f"
+    },
+    {
+      "term": "határozatlan integrál",
+      "meaning": "Az f összes primitív függvényének halmaza; ezek egy konstansban különböznek.",
+      "example": "Az x² határozatlan integrálja x³/3 + C.",
+      "collocation": "∫f(x)dx = F(x) + C"
+    },
+    {
+      "term": "határozott integrál",
+      "meaning": "Az [a; b]-n korlátos f függvény határozott integrálja az alsó és felső közelítő összegek közös határértéke (ha létezik); jele ∫ₐᵇ f(x)dx.",
+      "example": "A határozott integrál értéke negatív is lehet, ha a függvény az x tengely alatt halad.",
+      "collocation": "∫ₐᵇ f(x)dx"
+    },
+    {
+      "term": "Newton–Leibniz-tétel",
+      "meaning": "Ha f folytonos az [a; b] intervallumon és F egy primitív függvénye, akkor ∫ₐᵇ f(x)dx = F(b) − F(a).",
+      "example": "A Newton–Leibniz-tétel szerint ∫₀² x² dx = 8/3 − 0 = 8/3.",
+      "collocation": "∫ₐᵇ f = F(b) − F(a)"
+    },
+    {
+      "term": "görbe alatti terület",
+      "meaning": "Ha f folytonos és nemnegatív az [a; b]-n, akkor a grafikon, az x tengely és az x = a, x = b egyenesek által határolt síkidom területe ∫ₐᵇ f(x)dx.",
+      "example": "Az x² görbe alatti terület a [0; 3] intervallumon 9.",
+      "collocation": "T = ∫ₐᵇ f(x)dx"
+    },
+    {
+      "term": "inverz függvény",
+      "meaning": "A kölcsönösen egyértelmű f függvény inverze az az f⁻¹ függvény, amely f értékkészletén értelmezett, és f⁻¹(f(x)) = x; grafikonja f grafikonjának tükörképe az y = x egyenesre.",
+      "example": "A 2ˣ függvény inverz függvénye a log₂ x.",
+      "collocation": "f⁻¹(f(x)) = x"
+    }
+  ]
+}

@@ -1,0 +1,232 @@
+{
+  "schemaVersion": 1,
+  "id": "mat-gr-fuggveny-abrazolas",
+  "subject": "matematika",
+  "revision": 1,
+  "level": "kozep",
+  "source": "generated",
+  "topic": "nyelvtan",
+  "title": "Függvények: ábrázolás és tulajdonságok",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "grammar",
+  "type": "lesson",
+  "category": "fuggveny-abrazolas",
+  "summaryHu": "A függvényes feladatokban (grafikon leolvasása, transzformációk, értelmezési tartomány, értékkészlet, zérushely, monotonitás, szélsőérték) a leggyakoribb hiba az eltolás irányának felcserélése és a szélsőérték helyének és értékének összekeverése. Emelt szinten a derivált előjele adja a monotonitást és a szélsőértéket.",
+  "rules": [
+    {
+      "title": "Transzformációk",
+      "explanation": "Az f(x − u) + v grafikonja az f grafikonjának u-val jobbra és v-vel felfelé tolt képe (u < 0: balra, v < 0: lefelé). A −f(x) az x tengelyre, az f(−x) az y tengelyre tükröz; c · f(x) (c > 0) az y irányban nyújt.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "(x + 2)² : az x² parabola 2-vel balra tolva",
+          "hu": "A tengelypont x-koordinátája ott van, ahol x + 2 = 0, azaz −2."
+        },
+        {
+          "en": "(x − 1)² + 2: tengelypont (1; 2)",
+          "hu": "1-gyel jobbra, 2-vel fel."
+        }
+      ]
+    },
+    {
+      "title": "Értelmezési tartomány és értékkészlet",
+      "explanation": "Az értelmezési tartomány azon x-ek halmaza, ahol a hozzárendelési szabály értelmes (gyök alatt ≥ 0, nevező ≠ 0, logaritmus argumentuma > 0). Az értékkészlet a felvett függvényértékek halmaza.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "√(x − 1): x ≥ 1, értékkészlet [0; ∞)",
+          "hu": "Az x = 1 is benne van."
+        },
+        {
+          "en": "|x − 3| − 1: értékkészlet [−1; ∞)",
+          "hu": "|x − 3| ≥ 0, ezért az érték ≥ −1."
+        }
+      ]
+    },
+    {
+      "title": "Zérushely, szélsőérték: hely és érték",
+      "explanation": "A zérushely az x, ahol f(x) = 0. A szélsőérték helye x-érték, a szélsőérték értéke a függvényérték ott. Másodfokú függvénynél teljes négyzetté alakítással kapjuk: a(x − u)² + v → hely u, érték v.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "−x² + 4x = −(x − 2)² + 4: maximumhely 2, maximumérték 4",
+          "hu": "a < 0, ezért maximum van."
+        },
+        {
+          "en": "−2x + 6 zérushelye: x = 3",
+          "hu": "A grafikon az x tengelyt a (3; 0) pontban metszi."
+        }
+      ]
+    },
+    {
+      "title": "Monotonitás",
+      "explanation": "Szigorúan monoton nő egy intervallumon, ha nagyobb x-hez nagyobb érték tartozik. Lineáris függvény a meredekség előjele szerint nő vagy csökken; parabola a tengelypontig csökken (a > 0), utána nő.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "(x + 2)² a (−∞; −2] intervallumon csökken, a [−2; ∞)-on nő",
+          "hu": "A tengelypont x-koordinátája választja el."
+        }
+      ]
+    },
+    {
+      "title": "A derivált és a függvény menete",
+      "explanation": "Ha f′(x) > 0 egy intervallumon, f ott szigorúan nő; ha f′(x) < 0, csökken. Ahol f′ előjelet vált (+ → −), helyi maximum, (− → +) helyi minimum van; f″ előjele a konvexitást adja.",
+      "emeltOnly": true,
+      "examples": [
+        {
+          "en": "f(x) = x³ − 3x, f′(x) = 3(x − 1)(x + 1): maximum x = −1-nél, minimum x = 1-nél",
+          "hu": "Előjeltáblázattal döntjük el."
+        }
+      ]
+    }
+  ],
+  "commonMistakes": [
+    {
+      "wrong": "(x + 2)² a parabolát 2-vel jobbra tolja",
+      "right": "(x + 2)² 2-vel balra tolja",
+      "why": "A tengelypont ott van, ahol a zárójel 0, vagyis x = −2-nél; az x helyére írt +2 balra tol."
+    },
+    {
+      "wrong": "Az x² − 4x + 1 minimuma x = 2",
+      "right": "A minimum helye x = 2, a minimum értéke −3",
+      "why": "A hely (x) és az érték (f(x)) két különböző kérdés: f(2) = 4 − 8 + 1 = −3. Olvasd el, melyiket kérdezik!"
+    },
+    {
+      "wrong": "Az |x| értékkészlete ℝ",
+      "right": "Az |x| értékkészlete [0; ∞)",
+      "why": "Az abszolút érték sosem negatív; az értelmezési tartomány ℝ, de az értékkészlet csak a nemnegatív számok."
+    },
+    {
+      "wrong": "A √x értelmezési tartománya x > 0",
+      "right": "x ≥ 0",
+      "why": "A 0 négyzetgyöke értelmezett (√0 = 0), ezért a 0 is beletartozik."
+    }
+  ],
+  "examTips": [
+    "Az I. részben gyakori: „Adja meg a függvény értékkészletét / zérushelyét / minimumhelyét” – írd le pontosan azt, amit kérdeznek (hely vagy érték, intervallum zárt vagy nyílt végpontokkal).",
+    "Grafikon-leírásos feladatnál készíts saját vázlatot: a tengelypont, a zérushelyek és a tengelymetszet elég a jó válaszhoz.",
+    "Emelt szinten a függvényvizsgálatnál az előjeltáblázat (f′ és f″ előjele intervallumonként) a teljes pont feltétele – a „látszik a grafikonon” nem indoklás."
+  ],
+  "practice": [
+    {
+      "id": "1",
+      "kind": "choice",
+      "prompt": "Mi a g(x) = (x − 1)² + 2 függvény grafikonjának tengelypontja?",
+      "options": [
+        {
+          "key": "A",
+          "text": "(1; −2)"
+        },
+        {
+          "key": "B",
+          "text": "(−1; 2)"
+        },
+        {
+          "key": "C",
+          "text": "(1; 2)"
+        },
+        {
+          "key": "D",
+          "text": "(2; 1)"
+        }
+      ],
+      "answer": "C",
+      "category": "fuggveny-abrazolas",
+      "explanation": "A helyes: (1; 2). Az x² parabolát 1-gyel jobbra (x − 1) és 2-vel felfelé (+2) toltuk, így a tengelypont (1; 2).",
+      "wrongOptions": {
+        "A": "A +2 felfelé tol, ezért a második koordináta +2.",
+        "B": "Az (x − 1) jobbra tol, nem balra.",
+        "D": "A koordináták sorrendje fel van cserélve: előbb az x (1), aztán az y (2)."
+      }
+    },
+    {
+      "id": "2",
+      "kind": "text",
+      "prompt": "Mi az f(x) = −2x + 6 függvény zérushelye?",
+      "answer": [
+        "3",
+        "x = 3"
+      ],
+      "category": "fuggveny-abrazolas",
+      "explanation": "3. −2x + 6 = 0, ebből x = 3. A 6 a tengelymetszet (f(0) = 6), nem a zérushely."
+    },
+    {
+      "id": "3",
+      "kind": "choice",
+      "prompt": "Mi az f(x) = |x − 3| − 1 függvény értékkészlete (ha az értelmezési tartomány ℝ)?",
+      "options": [
+        {
+          "key": "A",
+          "text": "[3; ∞)"
+        },
+        {
+          "key": "B",
+          "text": "[−1; ∞)"
+        },
+        {
+          "key": "C",
+          "text": "ℝ"
+        },
+        {
+          "key": "D",
+          "text": "[0; ∞)"
+        }
+      ],
+      "answer": "B",
+      "category": "fuggveny-abrazolas",
+      "explanation": "A helyes: [−1; ∞). |x − 3| ≥ 0 és minden nemnegatív értéket felvesz, így |x − 3| − 1 ≥ −1, és minden −1-nél nem kisebb értéket felvesz (x = 3-nál −1).",
+      "wrongOptions": {
+        "A": "A 3 a minimum helye (x), nem az értékkészlet alsó határa.",
+        "C": "A függvény sosem kisebb −1-nél, ezért nem vesz fel minden valós értéket.",
+        "D": "A [0; ∞) az |x − 3| értékkészlete; a −1 eltolás lefelé viszi."
+      }
+    },
+    {
+      "id": "4",
+      "kind": "text",
+      "prompt": "Mennyi az f(x) = −x² + 4x függvény legnagyobb értéke?",
+      "answer": [
+        "4"
+      ],
+      "category": "fuggveny-abrazolas",
+      "explanation": "4. Teljes négyzetté alakítva −x² + 4x = −(x − 2)² + 4. Mivel −(x − 2)² ≤ 0, a legnagyobb érték 4, amit x = 2-nél vesz fel."
+    },
+    {
+      "id": "5",
+      "kind": "choice",
+      "prompt": "Melyik intervallumon szigorúan monoton csökkenő az f(x) = (x + 2)² függvény?",
+      "options": [
+        {
+          "key": "A",
+          "text": "(−∞; −2]"
+        },
+        {
+          "key": "B",
+          "text": "[−2; ∞)"
+        },
+        {
+          "key": "C",
+          "text": "(−∞; 2]"
+        },
+        {
+          "key": "D",
+          "text": "ℝ"
+        }
+      ],
+      "answer": "A",
+      "category": "fuggveny-abrazolas",
+      "explanation": "A helyes: (−∞; −2]. A felfelé nyíló parabola tengelypontja (−2; 0); a tengelypontig csökken, utána nő.",
+      "wrongOptions": {
+        "B": "A [−2; ∞) intervallumon a függvény nő.",
+        "C": "A tengelypont −2-nél van, nem 2-nél (az x + 2 balra tol).",
+        "D": "A parabola nem monoton az egész számegyenesen."
+      }
+    }
+  ],
+  "relatedCategories": [
+    "algebrai-atalakitas",
+    "definicio-tetel"
+  ]
+}

@@ -1,0 +1,89 @@
+{
+  "schemaVersion": 1,
+  "id": "gaz-rd-emelt-pozitiv-normativ",
+  "subject": "gazdasagi-ismeretek",
+  "revision": 1,
+  "level": "emelt",
+  "source": "generated",
+  "topic": "alapfogalmak",
+  "title": "Pozitív és normatív állítások, a modellezés előnyei és hátrányai",
+  "createdAt": "2026-11-06",
+  "tags": [],
+  "section": "reading",
+  "type": "igaz-hamis",
+  "instructions": "Döntse el, hogy igazak vagy hamisak az alábbi állítások! Az idézett mondatoknál azt döntse el, helyes-e a besorolásuk. A 0. a megoldott példa.",
+  "example": {
+    "id": "0",
+    "kind": "tf",
+    "prompt": "„Ha nő a cigaretta adója, kevesebb cigarettát vásárolnak.” – Ez pozitív állítás.",
+    "answer": "T",
+    "category": "pozitiv-normativ",
+    "explanation": "Igaz. A pozitív állítás tényeket ír le, ok-okozati összefüggést vizsgál („Mi lesz, ha…?”), és ellenőrizhető."
+  },
+  "items": [
+    {
+      "id": "1",
+      "kind": "tf",
+      "prompt": "„Az államnak emelnie kellene a cigaretta adóját.” – Ez pozitív állítás, mert ok-okozati összefüggést vizsgál.",
+      "answer": "F",
+      "category": "pozitiv-normativ",
+      "explanation": "Hamis. Ez normatív állítás: értékítéletet fogalmaz meg, javaslatot tesz („Mi legyen?”); erre utal a „kellene” szó is."
+    },
+    {
+      "id": "2",
+      "kind": "tf",
+      "prompt": "„Ha a fagylalt ára nő, és minden egyéb változatlan, kevesebb fagylaltot vesznek.” – Ez pozitív állítás.",
+      "answer": "T",
+      "category": "pozitiv-normativ",
+      "explanation": "Igaz. Ellenőrizhető ok-okozati összefüggést ír le (ceteris paribus), nincs benne értékítélet."
+    },
+    {
+      "id": "3",
+      "kind": "tf",
+      "prompt": "„Igazságos lenne, ha a kórház helyett inkább iskolát építene az állam.” – Ez normatív állítás.",
+      "answer": "T",
+      "category": "pozitiv-normativ",
+      "explanation": "Igaz. Az „igazságos” és a „lenne” értékítéletre utal: a mondat véleményen alapuló javaslat, nem ellenőrizhető tény."
+    },
+    {
+      "id": "4",
+      "kind": "tf",
+      "prompt": "„A rendszerváltás után Magyarországon megjelent a tömeges munkanélküliség.” – Ez normatív állítás.",
+      "answer": "F",
+      "category": "pozitiv-normativ",
+      "explanation": "Hamis. Ez pozitív állítás: tényt ír le, amely ellenőrizhető (a diasor szerint a rendszerváltás átmeneti nehézsége volt a tömeges munkanélküliség)."
+    },
+    {
+      "id": "5",
+      "kind": "tf",
+      "prompt": "„Jobb lenne, ha a Magyar Nemzeti Bank fő célja nem az árstabilitás volna.” – Ez pozitív állítás, mert egy valós intézményről szól.",
+      "answer": "F",
+      "category": "pozitiv-normativ",
+      "explanation": "Hamis. Az, hogy valós intézményről szól, nem teszi pozitívvá: a „jobb lenne” értékítéletet fejez ki, tehát normatív állítás."
+    },
+    {
+      "id": "6",
+      "kind": "tf",
+      "prompt": "A modell egyik előnye, hogy „kísérletezni” lehet vele, a valódi gazdaságon ugyanis nem lehet kísérletezni.",
+      "answer": "T",
+      "category": "modell-ertelmezes",
+      "explanation": "Igaz. A diasor a modellezés előnyei között sorolja fel: egyszerűsít, átláthatóvá teszi az összefüggéseket, lehetővé teszi az előrejelzést, és „kísérletezni” lehet vele."
+    },
+    {
+      "id": "7",
+      "kind": "tf",
+      "prompt": "A modellezés hátránya lehet, hogy feltevései (pl. a racionalitás, a ceteris paribus) a valóságban nem mindig teljesülnek.",
+      "answer": "T",
+      "category": "modell-ertelmezes",
+      "explanation": "Igaz. Ez a modellezés egyik hátránya; további hátrányok: a leegyszerűsítés torzíthat, az előrejelzések tévedhetnek, és az adathiány rontja a megbízhatóságot."
+    },
+    {
+      "id": "8",
+      "kind": "tf",
+      "prompt": "A jó közgazdasági modell a valóság minden részletét tartalmazza, ezért előrejelzései nem tévedhetnek.",
+      "answer": "F",
+      "category": "modell-ertelmezes",
+      "explanation": "Hamis. A modell a valóság leegyszerűsített mása (mint egy térkép, amely nem mutat meg minden fát): kiemeli a lényeget, és előrejelzései tévedhetnek (pl. váratlan válságok)."
+    }
+  ]
+}

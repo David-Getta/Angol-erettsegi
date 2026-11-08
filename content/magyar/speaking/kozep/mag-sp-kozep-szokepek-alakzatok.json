@@ -1,0 +1,57 @@
+{
+  "schemaVersion": 1,
+  "id": "mag-sp-kozep-szokepek-alakzatok",
+  "subject": "magyar",
+  "revision": 1,
+  "level": "kozep",
+  "source": "generated",
+  "topic": "stilus-jelentes",
+  "title": "Szóképek és alakzatok",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "speaking",
+  "type": "nyelvtan-tetel",
+  "partNumber": 2,
+  "instructionsHu": "Mutassa be a legfontosabb szóképeket és alakzatokat! Határozza meg a fogalmakat, és elemezze a megadott idézetek stíluseszközeit, kitérve arra is, milyen hatást keltenek!",
+  "prompts": [
+    "A szóképek fogalma és fajtái (hasonlat, metafora, megszemélyesítés, metonímia, szinesztézia, szimbólum)",
+    "Az alakzatok fogalma és fajtái (ismétlés, anafora, alliteráció, halmozás, fokozás, ellentét)",
+    "A megadott idézetek elemzése: eszköz és stílushatás"
+  ],
+  "sources": [
+    { "title": "Vörösmarty Mihály: Előszó (részlet)", "text": "Munkában élt az ember mint a hangya" },
+    { "title": "Petőfi Sándor: Az alföld (részlet)", "text": "Börtönéből szabadult sas lelkem,\nHa a rónák végtelenjét látom." },
+    { "title": "Ady Endre: Párisban járt az Ősz (részlet)", "text": "Párisba tegnap beszökött az Ősz.\n…\nFüstösek, furcsák, búsak, bíborak" }
+  ],
+  "keyPoints": [
+    "A szóképek (trópusok) jelentésátvitelen alapulnak: egy fogalmat egy másik fogalom nevével fejezünk ki.",
+    "Hasonlat: két dolog összevetése hasonlító szóval (mint, akár) – „Munkában élt az ember mint a hangya”.",
+    "Metafora: azonosítás hasonlító szó nélkül – „sas lelkem” (a lélek mint sas).",
+    "Megszemélyesítés: élettelen dolog vagy fogalom emberi tulajdonságot, cselekvést kap – „beszökött az Ősz”.",
+    "Metonímia: érintkezésen alapuló névátvitel (pl. „Megivott egy pohárral”); szinesztézia: érzékterületek keverése; szimbólum: többértelmű jelkép.",
+    "Az alakzatok a szöveg elrendezésén, az ismétlésen, kihagyáson, felcserélésen alapulnak.",
+    "Alliteráció: azonos kezdőhangok – „Füstösek, furcsák, búsak, bíborak”; a sor egyben melléknévi halmozás.",
+    "A stíluseszközök funkciója: szemléletesség, hangulatteremtés, nyomatékosítás, zeneiség – mindig a hatásukkal együtt kell elemezni őket."
+  ],
+  "speakingSeconds": 300,
+  "prepSeconds": 600,
+  "usefulPhrases": [
+    { "en": "szókép (trópus) – alakzat", "hu": "a stíluseszközök két nagy csoportja: jelentésátvitel, illetve elrendezés" },
+    { "en": "hasonlító – hasonlított", "hu": "a hasonlat és a metafora két tagja" },
+    { "en": "stílushatás", "hu": "mit ér el az eszköz: szemléletesség, nyomaték, hangulat" },
+    { "en": "Ebben az idézetben … figyelhető meg, amely …", "hu": "eszköz + hatás összekapcsolása" }
+  ],
+  "sampleAnswer": {
+    "turns": [
+      {
+        "speaker": "candidate",
+        "text": "A stíluseszközöket két nagy csoportra oszthatjuk: szóképekre és alakzatokra. A szóképek vagy trópusok jelentésátvitelen alapulnak, vagyis egy fogalmat egy másik fogalom nevével fejezünk ki. A legegyszerűbb a hasonlat, amely két dolgot hasonlító szóval, például a „mint” kötőszóval vet össze. Ilyen Vörösmarty Előszójának sora: „Munkában élt az ember mint a hangya”. A kép a szorgalmat, a békés, közös munkát teszi szemléletessé.\n\nA metafora ezzel szemben hasonlító szó nélkül azonosít. Petőfi Az alföld című versében a „sas lelkem” kifejezés a lelket a sassal azonosítja, a „Börtönéből szabadult” jelző pedig a felszabadulás, a szárnyalás élményét adja: a beszélő lelke a rónák látványától szinte a magasba emelkedik. A megszemélyesítésnél élettelen dolog vagy fogalom kap emberi cselekvést. Ady versében „Párisba tegnap beszökött az Ősz”: az évszak titokban érkező szereplővé válik, ez a kép a rejtélyes, sejtelmes hangulatot teremti meg. A szóképekhez tartozik még a metonímia, amely érintkezésen alapul, a szinesztézia, amely különböző érzékterületeket kapcsol össze, és a szimbólum, amely többértelmű jelkép.\n\nAz alakzatok nem jelentésátvitelen, hanem a szöveg elrendezésén alapulnak: ide tartozik az ismétlés, a sorkezdő ismétlés, vagyis az anafora, a halmozás, a fokozás és az ellentét. Ady sorában, a „Füstösek, furcsák, búsak, bíborak” szavaknál alliterációt, azaz azonos kezdőhangok ismétlődését látjuk, ami zeneivé teszi a sort, ugyanakkor a melléknevek halmozása a lélek sokszínű, borongós hangulatát fejezi ki. Összefoglalva: a stíluseszközöket mindig a hatásukkal együtt érdemes elemezni, mert szerepük a szemléletesség, a nyomatékosítás és a hangulatteremtés."
+      }
+    ],
+    "notes": [
+      "Tartalom: a felelet a két nagy csoport megkülönböztetésével indul, majd minden fogalmat definiál és a forrásokból vett példán szemléltet.",
+      "Az elemzés nem áll meg a megnevezésnél: minden eszköznél megmondja a stílushatást (szorgalom, szárnyalás, sejtelmesség, zeneiség).",
+      "Nyelvi minőség: világos, szakszerű, jól tagolt előadás; a forrásokat pontosan idézi."
+    ]
+  }
+}

@@ -1,0 +1,308 @@
+{
+  "schemaVersion": 1,
+  "id": "gr-verb-form",
+  "subject": "angol",
+  "revision": 2,
+  "level": "kozep",
+  "source": "generated",
+  "topic": "nyelvtan",
+  "title": "Igealakok",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "grammar",
+  "type": "lesson",
+  "category": "verb-form",
+  "summaryHu": "Ebben a kategóriában nem az igeidő kiválasztása, hanem az ige helyes alakja a kérdés: az egyes szám 3. személyű -s, a segédige után álló alak, a rendhagyó igék második és harmadik alakja, valamint az -ing és -ed végződés helyesírása. A magyar igeragozás egészen más rendszer, ezért gyakori a „he go”, a „did went” vagy a „has wrote” típusú hiba. Az igealakos feladatban (verb forms) a jó igeidő sem ér pontot, ha az alak hibás, és íráskor is ezek a leggyakrabban levont nyelvhelyességi pontok.",
+  "rules": [
+    {
+      "title": "Egyes szám 3. személy: -s jelen időben",
+      "explanation": "Present Simple-ben he, she, it és minden egyes számú főnév után az igéhez -s kerül: works, plays. -es kell s, ss, sh, ch, x, o után (watches, washes, goes, does); mássalhangzó + y → -ies (study → studies), de magánhangzó + y → -s (play → plays). A have alakja has. Tagadásban és kérdésben a does viszi az -s-t, a főige puszta alakban marad.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "My sister teaches maths and watches a lot of films.",
+          "hu": "A nővérem matekot tanít, és sok filmet néz."
+        },
+        {
+          "en": "Does your brother play football?",
+          "hu": "Focizik a bátyád?",
+          "note": "A does után puszta ige: play, nem *plays."
+        },
+        {
+          "en": "He studies hard but never has time for sport.",
+          "hu": "Keményen tanul, de soha nincs ideje sportolni."
+        }
+      ]
+    },
+    {
+      "title": "Milyen alak áll a segédige után?",
+      "explanation": "A segédige meghatározza a főige alakját. do/does/did és a módbeli segédigék (can, could, will, would, must, should, may, might) után puszta ige (V1) áll. A be (am, is, are, was, were, been) után -ing alak (folyamatos igeidők) vagy V3 (szenvedő szerkezet). A have/has/had után V3 (befejezett igeidők). Egy igei szerkezetben az időt mindig csak az első ige jelöli.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "Did you see the match? – Yes, I saw it.",
+          "hu": "Láttad a meccset? – Igen, láttam.",
+          "note": "did + see, de állításban saw."
+        },
+        {
+          "en": "He can't swim yet.",
+          "hu": "Még nem tud úszni."
+        },
+        {
+          "en": "The bridge was built in 1849.",
+          "hu": "A hidat 1849-ben építették.",
+          "note": "was + V3: szenvedő szerkezet."
+        }
+      ]
+    },
+    {
+      "title": "Rendhagyó igék: V1 – V2 – V3",
+      "explanation": "A rendhagyó igék múlt idejű (V2) és harmadik (V3) alakját meg kell tanulni: go – went – gone, write – wrote – written, buy – bought – bought, take – took – taken, choose – chose – chosen, fall – fell – fallen, begin – began – begun. A V2 csak állító Past Simple-ben áll; a V3 a have/has/had után (befejezett igeidők) és a be után (szenvedő szerkezet) kell. Ahol a V2 és a V3 eltér, ott a kettő nem cserélhető fel.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "She wrote three e-mails this morning.",
+          "hu": "Ma reggel három e-mailt írt."
+        },
+        {
+          "en": "She has written three e-mails today.",
+          "hu": "Ma már három e-mailt írt.",
+          "note": "has + V3 (written), nem *has wrote."
+        },
+        {
+          "en": "I've never ridden a horse.",
+          "hu": "Még soha nem lovagoltam.",
+          "note": "ride – rode – ridden"
+        }
+      ]
+    },
+    {
+      "title": "Az -ing és -ed végződés helyesírása",
+      "explanation": "Néma e-re végződő igénél az e elmarad (make → making, live → lived). Egy szótagú, egy rövid magánhangzóra és egy mássalhangzóra végződő igénél a mássalhangzó megkettőződik (stop → stopped, stopping; plan → planned); több szótagú igénél csak akkor, ha az utolsó szótag hangsúlyos (prefer → preferred). Mássalhangzó + y → -ied a múlt időben (study → studied), de az -ing előtt az y megmarad (studying). Az -ie végű igék -ing alakja -ying (lie → lying, die → dying). A brit helyesírás az -l-t hangsúlytalan szótag után is kettőzi (travel → travelled, amerikai: traveled).",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "We stopped at a small café on the way.",
+          "hu": "Útközben megálltunk egy kis kávézónál."
+        },
+        {
+          "en": "She is lying on the beach and studying for her exam.",
+          "hu": "A tengerparton fekszik, és a vizsgájára tanul."
+        },
+        {
+          "en": "I travelled to Spain last summer.",
+          "hu": "Tavaly nyáron Spanyolországba utaztam."
+        }
+      ]
+    },
+    {
+      "title": "-ing és -ed melléknevek",
+      "explanation": "Sok érzelmet kifejező igéből két melléknév képezhető. Az -ing végű azt írja le, ami az érzést kiváltja (boring film, interesting book, tiring journey), az -ed végű azt, aki az érzést érzi (I'm bored, she was interested, we were tired). Gyakori párok: bored/boring, interested/interesting, excited/exciting, tired/tiring, surprised/surprising, disappointed/disappointing, embarrassed/embarrassing, confused/confusing.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "The lesson was boring, so we were bored.",
+          "hu": "Az óra unalmas volt, ezért unatkoztunk."
+        },
+        {
+          "en": "I'm very interested in history.",
+          "hu": "Nagyon érdekel a történelem."
+        },
+        {
+          "en": "It was an exciting match, and the fans were really excited.",
+          "hu": "Izgalmas meccs volt, és a szurkolók nagyon izgatottak voltak."
+        }
+      ]
+    },
+    {
+      "title": "Igeneves szerkezetek (participle clauses)",
+      "explanation": "Írásban egy mellékmondatot rövidebb igeneves szerkezettel is kifejezhetünk, ha a két tagmondat alanya azonos. Present participle (V-ing): egyidejű cselekvés vagy cselekvő jelentés (Walking home, I met …). Past participle (V3): szenvedő jelentés (Built in 1902, the bridge …). Perfect participle (having + V3): az előbb befejeződött cselekvés (Having finished …). Az igenév alanya meg kell egyeznie a főmondat alanyával.",
+      "emeltOnly": true,
+      "examples": [
+        {
+          "en": "Walking home from school, I met an old friend.",
+          "hu": "Hazafelé az iskolából találkoztam egy régi barátommal."
+        },
+        {
+          "en": "Built in 1902, the bridge is the oldest in the town.",
+          "hu": "Az 1902-ben épült híd a város legrégebbi hídja."
+        },
+        {
+          "en": "Having finished the test, she handed in her paper and left.",
+          "hu": "Miután befejezte a dolgozatot, beadta és kiment."
+        }
+      ]
+    }
+  ],
+  "commonMistakes": [
+    {
+      "wrong": "He go to school by bus.",
+      "right": "He goes to school by bus.",
+      "why": "Egyes szám 3. személyben (he, she, it, egyes számú főnév) Present Simple-ben -s/-es kell az igére. Magyarul minden személynek saját ragja van, angolul csak ez az egy végződés maradt, ezért könnyű elfelejteni."
+    },
+    {
+      "wrong": "Did you went to the party?",
+      "right": "Did you go to the party?",
+      "why": "A did már jelzi a múlt időt, ezért utána a főige puszta (V1) alakban áll. A múlt idő egy igei szerkezetben csak egyszer, az első igén jelenik meg."
+    },
+    {
+      "wrong": "She has wrote a letter to the council.",
+      "right": "She has written a letter to the council.",
+      "why": "A have/has/had után a harmadik alak (V3) kell. A rendhagyó igéknél a V2 és a V3 gyakran különbözik (write – wrote – written), ezért mindkettőt meg kell tanulni."
+    },
+    {
+      "wrong": "He doesn't likes coffee.",
+      "right": "He doesn't like coffee.",
+      "why": "A does már hordozza az egyes szám 3. személyű -s-t, utána a főige puszta alakban áll."
+    },
+    {
+      "wrong": "The film was so long that I was very boring.",
+      "right": "The film was so long that I was very bored.",
+      "why": "Az -ed végű melléknév azt írja le, aki érzi az érzést (bored = unatkozik), az -ing végű azt, ami kiváltja (boring = unalmas). Az „I was boring” azt jelenti, hogy én voltam unalmas másoknak."
+    },
+    {
+      "wrong": "We stoped at a café and I was studing there.",
+      "right": "We stopped at a café and I was studying there.",
+      "why": "Egy szótagú, rövid magánhangzó + egy mássalhangzó végű igénél a mássalhangzó kettőződik (stopped), a study -ing alakjában pedig az y megmarad (studying). Az igealakos feladatban egy betű hibája is pontvesztés."
+    }
+  ],
+  "examTips": [
+    "Igealakos feladatban (verb forms) minden beírt alakot ellenőrizz háromszor: jó-e az igeidő, egyezik-e az alannyal (egyes szám 3. személyű -s, was/were), és helyes-e a rendhagyó alak és a helyesírás. Egyetlen hiányzó betű (*stoped, *studing) is pontvesztés.",
+    "Tanuld meg a leggyakoribb rendhagyó igéket mind a három alakjukkal (pl. bring – brought – brought, catch – caught – caught, choose – chose – chosen, fall – fell – fallen). A feleletválasztós kloze kedvelt csapdája, hogy ugyanannak az igének a V2 és a V3 alakja is szerepel az opciók között.",
+    "Kimaradt szavas és nyitott kloze feladatban gyakran a segédige hiányzik (does, did, has, was, been). Nézd meg, milyen alakban áll a főige a hiány után: puszta ige → do/does/did vagy módbeli segédige; -ing → a be valamely alakja; V3 → have vagy be.",
+    "Íráskor az egyes szám 3. személyű -s hiánya és a did + V2 alapszintű hibának számít, és a „Nyelvhelyesség, helyesírás” szempontnál ront. Átolvasáskor keresd meg az összes he/she/it alanyú mondatot, és nézd meg az igét."
+  ],
+  "practice": [
+    {
+      "id": "1",
+      "kind": "text",
+      "prompt": "My little brother ___ (watch) cartoons every Saturday morning.",
+      "cue": "watch",
+      "answer": [
+        "watches"
+      ],
+      "category": "verb-form",
+      "explanation": "Helyes: watches. Szokásos cselekvés (every Saturday) → Present Simple; az alany egyes szám 3. személyű (my little brother), és a ch végű ige -es végződést kap."
+    },
+    {
+      "id": "2",
+      "kind": "choice",
+      "prompt": "___ your parents enjoy the concert last night?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Did"
+        },
+        {
+          "key": "B",
+          "text": "Do"
+        },
+        {
+          "key": "C",
+          "text": "Were"
+        },
+        {
+          "key": "D",
+          "text": "Have"
+        }
+      ],
+      "answer": "A",
+      "category": "verb-form",
+      "explanation": "Helyes: Did. A last night lezárt múltbeli időpont, ezért Past Simple-kérdés kell: Did + alany + puszta ige (enjoy).",
+      "wrongOptions": {
+        "B": "A Do jelen idejű kérdést képez, de a mondat a tegnap estéről szól (last night).",
+        "C": "A be (were) után nem állhat puszta ige; folyamatos alakhoz enjoying kellene, de az sem illik ide.",
+        "D": "A Have Present Perfect kérdést képezne, ahhoz V3 kellene (enjoyed), és a last night miatt Present Perfect amúgy sem állhat."
+      }
+    },
+    {
+      "id": "3",
+      "kind": "text",
+      "prompt": "Have you ever ___ (ride) a horse?",
+      "cue": "ride",
+      "answer": [
+        "ridden"
+      ],
+      "category": "verb-form",
+      "explanation": "Helyes: ridden. A have után a harmadik alak (V3) kell; a ride rendhagyó: ride – rode – ridden. A rode (V2) itt hibás."
+    },
+    {
+      "id": "4",
+      "kind": "choice",
+      "prompt": "The museum tour was really ___; I learnt a lot.",
+      "options": [
+        {
+          "key": "A",
+          "text": "interesting"
+        },
+        {
+          "key": "B",
+          "text": "interested"
+        },
+        {
+          "key": "C",
+          "text": "interest"
+        },
+        {
+          "key": "D",
+          "text": "interests"
+        }
+      ],
+      "answer": "A",
+      "category": "verb-form",
+      "explanation": "Helyes: interesting. A tárlatvezetés váltja ki az érdeklődést, ezért -ing végű melléknév kell (érdekes). Az -ed végű alak azt írja le, aki érdeklődik.",
+      "wrongOptions": {
+        "B": "Az interested azt jelenti, hogy valaki érdeklődik; a tárlatvezetés nem érez érdeklődést.",
+        "C": "Az interest főnév vagy ige, nem állhat melléknévként a was után.",
+        "D": "Az interests többes számú főnév vagy E/3-as igealak, a was után melléknév kell."
+      }
+    },
+    {
+      "id": "5",
+      "kind": "text",
+      "prompt": "We ___ (stop) at a petrol station because we were running out of fuel.",
+      "cue": "stop",
+      "answer": [
+        "stopped"
+      ],
+      "category": "verb-form",
+      "explanation": "Helyes: stopped. Múltbeli lezárt cselekvés → Past Simple. A stop egy szótagú, rövid magánhangzó + egy mássalhangzó végű ige, ezért az -ed előtt a p megkettőződik."
+    },
+    {
+      "id": "6",
+      "kind": "choice",
+      "prompt": "My grandmother ___ in a small village near Eger.",
+      "options": [
+        {
+          "key": "A",
+          "text": "live"
+        },
+        {
+          "key": "B",
+          "text": "is live"
+        },
+        {
+          "key": "C",
+          "text": "living"
+        },
+        {
+          "key": "D",
+          "text": "lives"
+        }
+      ],
+      "answer": "D",
+      "category": "verb-form",
+      "explanation": "Helyes: lives. Állandó helyzet → Present Simple; az alany egyes szám 3. személyű (my grandmother), ezért az ige -s végződést kap.",
+      "wrongOptions": {
+        "A": "Hiányzik az egyes szám 3. személyű -s.",
+        "B": "Az is + puszta ige nem létező szerkezet; folyamatos alakban is living lenne.",
+        "C": "Az -ing alak segédige (is) nélkül nem lehet a mondat állítmánya."
+      }
+    }
+  ],
+  "relatedCategories": [
+    "tense",
+    "agreement",
+    "spelling"
+  ]
+}

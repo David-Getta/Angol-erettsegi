@@ -1,0 +1,130 @@
+{
+  "schemaVersion": 1,
+  "id": "mat-gd-speaking-tetel",
+  "subject": "matematika",
+  "revision": 1,
+  "level": "kozep",
+  "source": "generated",
+  "topic": "utmutato",
+  "title": "Szóbeli tétel kifejtése",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "guide",
+  "type": "speaking",
+  "target": "tetel",
+  "summaryHu": "A szóbeli tétel egy témakör definícióinak, tételeinek és feladatainak önálló, logikus bemutatása. Középszinten három elméleti kérdésre kell válaszolni (definíció, tétel feltételekkel, összefüggés) és három alapfeladatot megoldani; emelt szinten a tételcímet kell kifejteni definícióval, tétellel és bizonyítással, feladattal és alkalmazásokkal. A pontos szaknyelv és az érthető előadás külön pontot ér.",
+  "steps": [
+    {
+      "title": "A vázlat elkészítése",
+      "explanation": "A 30 perces felkészülésben írd le a definíciókat és tételeket pontosan, oldd meg a feladatokat, és emelt szinten készítsd el a bizonyítás lépéseit. A vázlat kulcsszavakból, képletekből és ábrákból álljon.",
+      "tips": [
+        "A feladatok megoldását teljesen számold végig.",
+        "Jelöld, milyen sorrendben fogsz beszélni."
+      ]
+    },
+    {
+      "title": "Definíciók és tételek kimondása",
+      "explanation": "Mondd ki a definíciót teljes mondatban („… -nak nevezzük azt a …”), a tételt a feltételekkel („Ha …, akkor …”). Adj egy-egy rövid példát is.",
+      "tips": [
+        "A feltétel elhagyása pontlevonás: „derékszögű háromszögben”, „q ≠ 1 esetén”.",
+        "Ha van megfordítás, mondd ki, igaz-e."
+      ]
+    },
+    {
+      "title": "A bizonyítás bemutatása (emelt)",
+      "explanation": "Mondd ki, milyen módszerrel bizonyítasz (közvetlen, indirekt, teljes indukció, vektoros), és lépésenként indokolj. A végén mondd ki, mit láttál be.",
+      "tips": [
+        "Rajzolj ábrát, ha geometriai a bizonyítás.",
+        "Ne olvass a vázlatról, hanem magyarázz."
+      ]
+    },
+    {
+      "title": "Feladatok és alkalmazások",
+      "explanation": "A feladatnál mondd el a gondolatmenetet és a választ. Emelt szinten mutass alkalmazásokat: kapcsolatot más témakörökkel és gyakorlati példákat.",
+      "tips": [
+        "Pl. koszinusztétel → földmérés, navigáció, erők eredője.",
+        "Pl. mértani sorozat → kamatos kamat, hiteltörlesztés."
+      ]
+    }
+  ],
+  "phrases": [
+    {
+      "group": "Bevezetés",
+      "en": "A tételben a … témakört mutatom be: először a … fogalmát definiálom.",
+      "hu": "A felelet szerkezetének bejelentése."
+    },
+    {
+      "group": "Definíció",
+      "en": "… -nak nevezzük azt a …, amelyre teljesül, hogy …",
+      "hu": "Definíció kimondása."
+    },
+    {
+      "group": "Tétel",
+      "en": "Ha …, akkor …",
+      "hu": "Tétel kimondása a feltétellel."
+    },
+    {
+      "group": "Tétel",
+      "en": "A tétel megfordítása is igaz: …",
+      "hu": "Megfordítás kimondása, ha igaz."
+    },
+    {
+      "group": "Bizonyítás",
+      "en": "A tételt indirekt módon bizonyítom: tegyük fel, hogy …",
+      "hu": "Bizonyítási módszer megnevezése."
+    },
+    {
+      "group": "Bizonyítás",
+      "en": "Ezzel beláttuk, hogy …",
+      "hu": "A bizonyítás lezárása."
+    },
+    {
+      "group": "Feladat",
+      "en": "A feladatban … -t használom, mert …",
+      "hu": "A megoldási módszer indoklása."
+    },
+    {
+      "group": "Alkalmazás",
+      "en": "Ezt a tételt alkalmazzuk például a …",
+      "hu": "Alkalmazás, kapcsolat más témakörrel."
+    }
+  ],
+  "mistakes": [
+    {
+      "wrong": "„A Pitagorasz-tétel az, hogy a² + b² = c².”",
+      "right": "„Minden derékszögű háromszögben a befogók négyzetösszege egyenlő az átfogó négyzetével.”",
+      "why": "A képlet önmagában nem kimondás: hiányzik a feltétel és a betűk jelentése."
+    },
+    {
+      "wrong": "A bizonyítást a vázlatról felolvasom, magyarázat nélkül.",
+      "right": "Lépésenként magyarázom, miért következik egyik lépés a másikból.",
+      "why": "A vizsgáztató a megértést értékeli; a nyelvhasználat és a kommunikáció külön pont."
+    },
+    {
+      "wrong": "Emelt szinten csak a feladatot oldom meg, a tételcím többi elemét nem fejtem ki.",
+      "right": "Definíció → tétel → bizonyítás → további összefüggések → feladat → alkalmazások.",
+      "why": "Az emelt szóbeli pontjainak nagyobb része a tétel felépítésére, a definícióra, a bizonyításra és az alkalmazásokra jár."
+    }
+  ],
+  "checklist": [
+    "Minden definíciót és tételt pontosan, a feltételekkel tudok kimondani?",
+    "A feladatokat végigszámoltam, és el tudom mondani a gondolatmenetet?",
+    "Emelt szinten: a bizonyítás minden lépését tudom indokolni?",
+    "Van legalább 2–3 alkalmazásom (más témakör, gyakorlati példa)?",
+    "Pontos szaknyelvet és jelöléseket használok?"
+  ],
+  "timing": "Középszinten kb. 15 perc a felelet: 5 perc az elméleti kérdésekre, 8–9 perc a három feladatra. Emelt szinten kb. 20 perc: 12–15 perc a tétel kifejtésére (benne a bizonyítással) és 5–8 perc a feladatra. A felkészülés mindkét szinten 30 perc.",
+  "example": {
+    "title": "Minta: egy tétel kimondása és bizonyításának vázlata (emelt)",
+    "text": "Tétel: végtelen sok prímszám van. Bizonyítás (indirekt): tegyük fel, hogy csak véges sok prím van: p₁, …, pₙ. Az N = p₁ · … · pₙ + 1 szám 1-nél nagyobb, ezért a számelmélet alaptétele szerint van prímosztója; de egyik pᵢ sem osztja, mert a maradék 1. Ellentmondás, tehát végtelen sok prím van.",
+    "notes": [
+      "Megnevezi a módszert (indirekt).",
+      "Kimondja a feltevést, az ellentmondást és a következtetést.",
+      "Hivatkozik a számelmélet alaptételére (minden 1-nél nagyobb számnak van prímosztója)."
+    ]
+  },
+  "levelNotes": {
+    "kozep": "Középszinten: 3 elméleti kérdés (15 pont), 3 feladat (30 pont), kommunikáció (5 pont), összesen 50 pont. Csak 12–24,99%-os írásbeli után kell szóbelizni.",
+    "emelt": "Emelt szinten: a tétel felépítése és tartalma 10, definíció 2, tétel és bizonyítás 6, feladat 8, alkalmazások 4, nyelvhasználat 5 pont – összesen 35. A tételcímeket az OH évente közzéteszi, ezért mindegyikre előre készíthetsz vázlatot."
+  }
+}

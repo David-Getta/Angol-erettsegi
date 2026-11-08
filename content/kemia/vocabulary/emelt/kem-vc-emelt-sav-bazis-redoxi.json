@@ -1,0 +1,179 @@
+{
+  "schemaVersion": 1,
+  "id": "kem-vc-emelt-sav-bazis-redoxi",
+  "subject": "kemia",
+  "revision": 1,
+  "level": "emelt",
+  "source": "generated",
+  "topic": "sav-bazis-redoxi",
+  "title": "Fogalmak: sav–bázis és redoxifolyamatok, elektrokémia (emelt)",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "vocabulary",
+  "type": "deck",
+  "cards": [
+    {
+      "term": "Brønsted-sav",
+      "meaning": "Protonleadásra képes részecske (protondonor).",
+      "example": "A hidrogén-klorid a vízzel szemben Brønsted-savként viselkedik: protont ad át.",
+      "collocation": "HCl + H₂O → H₃O⁺ + Cl⁻"
+    },
+    {
+      "term": "Brønsted-bázis",
+      "meaning": "Protonfelvételre képes részecske (protonakceptor); nemkötő elektronpárja van.",
+      "example": "Az ammónia Brønsted-bázis, mert nemkötő elektronpárjával protont köt meg.",
+      "collocation": "NH₃ + H₂O ⇌ NH₄⁺ + OH⁻"
+    },
+    {
+      "term": "konjugált sav–bázis pár",
+      "meaning": "Egy proton leadásával, illetve felvételével egymásba alakuló részecskepár (pl. NH₄⁺/NH₃).",
+      "example": "Az ecetsav és az acetátion konjugált sav–bázis párt alkot."
+    },
+    {
+      "term": "amfoter részecske",
+      "meaning": "Olyan részecske, amely a partnertől függően savként és bázisként is viselkedhet.",
+      "example": "A hidrogén-karbonát-ion amfoter részecske: protont adhat le és vehet fel."
+    },
+    {
+      "term": "autoprotolízis",
+      "meaning": "Ugyanazon anyag molekulái közötti protonátadás.",
+      "example": "A víz autoprotolízise miatt a tiszta víz is tartalmaz oxónium- és hidroxidionokat.",
+      "collocation": "2 H₂O ⇌ H₃O⁺ + OH⁻"
+    },
+    {
+      "term": "vízionszorzat",
+      "meaning": "Az oxónium- és a hidroxidion-koncentráció szorzata; 25 °C-on híg vizes oldatokban állandó: 1,0 · 10⁻¹⁴ (mol/dm³)².",
+      "example": "A vízionszorzat alapján 25 °C-on pH + pOH = 14.",
+      "collocation": "Kv"
+    },
+    {
+      "term": "pH",
+      "meaning": "Az oxóniumion-koncentráció (mol/dm³-ben kifejezett számértékének) negatív tízes alapú logaritmusa.",
+      "example": "A 0,010 mol/dm³-es sósav pH-ja 2,00.",
+      "collocation": "pH = −lg[H₃O⁺]"
+    },
+    {
+      "term": "savállandó",
+      "meaning": "Gyenge sav protolitikus egyensúlyának egyensúlyi állandója; minél nagyobb, annál erősebb a sav.",
+      "example": "Az ecetsav savállandója 25 °C-on 1,8 · 10⁻⁵.",
+      "collocation": "Ks = [H₃O⁺][A⁻] / [HA]"
+    },
+    {
+      "term": "bázisállandó",
+      "meaning": "Gyenge bázis protolitikus egyensúlyának egyensúlyi állandója.",
+      "example": "Az ammónia bázisállandója 25 °C-on 1,8 · 10⁻⁵.",
+      "collocation": "Kb = [BH⁺][OH⁻] / [B]"
+    },
+    {
+      "term": "disszociációfok",
+      "meaning": "A disszociált molekulák és az összes oldott molekula anyagmennyiségének hányadosa.",
+      "example": "A 0,10 mol/dm³-es ecetsav disszociációfoka kb. 1,3 %.",
+      "collocation": "α"
+    },
+    {
+      "term": "hidrolízis",
+      "meaning": "Sók ionjainak protolitikus reakciója a vízzel, amely miatt az oldat savas vagy lúgos kémhatású lesz.",
+      "example": "A nátrium-acetát oldata az acetátion hidrolízise miatt lúgos."
+    },
+    {
+      "term": "pufferoldat",
+      "meaning": "Gyenge sav és sója (vagy gyenge bázis és sója) oldata, amelynek pH-ja kis mennyiségű sav vagy lúg hatására alig változik.",
+      "example": "Az ecetsav–nátrium-acetát pufferoldat pH-ja hígításkor sem változik számottevően."
+    },
+    {
+      "term": "közömbösítés",
+      "meaning": "Sav és bázis reakciója, amelyben só és víz keletkezik.",
+      "example": "A gyomorsav közömbösítésére szódabikarbónát is használnak.",
+      "collocation": "H₃O⁺ + OH⁻ → 2 H₂O"
+    },
+    {
+      "term": "titrálás",
+      "meaning": "Térfogatos mennyiségi elemzés: ismert koncentrációjú mérőoldatot adagolunk az egyenértékpontig.",
+      "example": "A sósav koncentrációját nátrium-hidroxid-mérőoldattal végzett titrálással határozzuk meg."
+    },
+    {
+      "term": "indikátor",
+      "meaning": "Olyan anyag (gyenge sav vagy bázis), amelynek színe a pH-tól függ.",
+      "example": "A fenolftalein indikátor lúgos oldatban lila, savas és semleges oldatban színtelen."
+    },
+    {
+      "term": "oxidációs szám",
+      "meaning": "Az a töltés, amely az atomon lenne, ha a kötő elektronpárokat teljesen a nagyobb elektronegativitású atomhoz rendelnénk.",
+      "example": "A kénsavban a kén oxidációs száma +6."
+    },
+    {
+      "term": "oxidáció",
+      "meaning": "Elektronleadás, az oxidációs szám növekedése.",
+      "example": "A cink oxidációja során cinkionok keletkeznek: Zn → Zn²⁺ + 2 e⁻."
+    },
+    {
+      "term": "redukció",
+      "meaning": "Elektronfelvétel, az oxidációs szám csökkenése.",
+      "example": "A réz(II)-ionok redukciója során fémréz válik ki: Cu²⁺ + 2 e⁻ → Cu."
+    },
+    {
+      "term": "oxidálószer",
+      "meaning": "Az a részecske, amely elektront vesz fel, és ezzel a partnerét oxidálja; maga redukálódik.",
+      "example": "A klór erős oxidálószer, a bromidionokat brómmá oxidálja."
+    },
+    {
+      "term": "redukálószer",
+      "meaning": "Az a részecske, amely elektront ad le, és ezzel a partnerét redukálja; maga oxidálódik.",
+      "example": "A szén-monoxid redukálószerként működik a vasgyártásban."
+    },
+    {
+      "term": "diszproporció",
+      "meaning": "Olyan redoxireakció, amelyben ugyanannak az elemnek az atomjai egyszerre oxidálódnak és redukálódnak.",
+      "example": "A hidrogén-peroxid bomlása diszproporció: az oxigén −1-es oxidációs száma −2-re és 0-ra változik."
+    },
+    {
+      "term": "standardpotenciál",
+      "meaning": "Egy redoxirendszer elektródpotenciálja standard körülmények között, a standard hidrogénelektródhoz viszonyítva.",
+      "example": "A cink standardpotenciálja −0,76 V, a rézé +0,34 V.",
+      "collocation": "E°, V"
+    },
+    {
+      "term": "standard hidrogénelektród",
+      "meaning": "Platinázott platinalemez 1 mol/dm³ oxóniumion-koncentrációjú oldatban, standard nyomású hidrogéngázzal körülvéve; potenciálja megállapodás szerint 0,00 V.",
+      "example": "Az elektródpotenciálokat a standard hidrogénelektródhoz viszonyítjuk."
+    },
+    {
+      "term": "galvánelem",
+      "meaning": "Olyan elektrokémiai cella, amely önként végbemenő redoxireakció kémiai energiáját elektromos energiává alakítja.",
+      "example": "A Daniell-elem cink–réz galvánelem.",
+      "collocation": "(−) Zn | Zn²⁺ || Cu²⁺ | Cu (+)"
+    },
+    {
+      "term": "elektromotoros erő",
+      "meaning": "A galvánelem pólusai közötti feszültség áramfelvétel nélkül.",
+      "example": "A Daniell-elem elektromotoros ereje standard körülmények között 1,10 V.",
+      "collocation": "EMF = E°(katód) − E°(anód)"
+    },
+    {
+      "term": "anód",
+      "meaning": "Az az elektród, amelyen oxidáció történik (galvánelemben a negatív, elektrolízisnél a pozitív pólus).",
+      "example": "Nátrium-klorid-olvadék elektrolízisekor az anódon a kloridionok klórrá oxidálódnak."
+    },
+    {
+      "term": "katód",
+      "meaning": "Az az elektród, amelyen redukció történik (galvánelemben a pozitív, elektrolízisnél a negatív pólus).",
+      "example": "A réz(II)-szulfát-oldat elektrolízisekor a katódon réz válik ki."
+    },
+    {
+      "term": "elektrolízis",
+      "meaning": "Elektromos áram hatására elektrolitoldatban vagy olvadékban végbemenő, önként le nem játszódó redoxireakció.",
+      "example": "Az alumíniumot a kriolitban oldott timföld olvadékának elektrolízisével állítják elő."
+    },
+    {
+      "term": "Faraday-törvény",
+      "meaning": "Az elektródon átalakuló anyag mennyisége arányos az áthaladt töltéssel: n = Q / (z · F).",
+      "example": "A Faraday-törvény szerint 96 500 C töltés 1 mol elektron átvitelének felel meg.",
+      "collocation": "F = 96 500 C/mol"
+    },
+    {
+      "term": "korrózió",
+      "meaning": "Fémek környezeti hatásra bekövetkező, nem kívánt kémiai vagy elektrokémiai átalakulása.",
+      "example": "A vas korróziója nedves levegőn rozsdásodás formájában megy végbe."
+    }
+  ]
+}

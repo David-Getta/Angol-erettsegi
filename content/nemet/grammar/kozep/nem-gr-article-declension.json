@@ -1,0 +1,287 @@
+{
+  "schemaVersion": 1,
+  "id": "nem-gr-article-declension",
+  "subject": "nemet",
+  "level": "kozep",
+  "source": "generated",
+  "topic": "nyelvtan",
+  "title": "Névelők, névelőragozás",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "grammar",
+  "type": "lesson",
+  "category": "article-declension",
+  "summaryHu": "A német névelő egyszerre mutatja a főnév nemét (der, die, das), számát és esetét, ezért minden főnevet névelővel együtt kell megtanulni. A magyarban nincs nyelvtani nem és a névelő nem ragozódik, így a magyar tanulók gyakran ragozatlanul hagyják a névelőt (mit der Freunden, kein Bruder), és máshol tesznek vagy hagynak el névelőt, mint a német (in die Schweiz, Ich bin Schülerin). A nyitott kloze és a feleletválasztós lyukas szöveg leggyakoribb megoldásai között vannak a névelők és az elöljárós összevonások (im, am, zum, ins).",
+  "rules": [
+    {
+      "title": "A határozott névelő ragozása",
+      "explanation": "Hímnem – nőnem – semleges – többes szám: Nominativ: der, die, das, die; Akkusativ: den, die, das, die; Dativ: dem, der, dem, den (+ -n a főnéven); Genitiv: des (+ -s/-es), der, des (+ -s/-es), der. Ugyanígy ragozódnak a dieser, jeder, welcher, mancher és az alle (többes szám) névelőszók: dieser, diese, dieses; diesen; diesem; dieses.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "Der Bus kommt. Ich nehme den Bus. Ich fahre mit dem Bus.",
+          "hu": "Jön a busz. A busszal megyek. Busszal utazom.",
+          "note": "Nominativ – Akkusativ – Dativ."
+        },
+        {
+          "en": "Hast du dieses Buch schon gelesen?",
+          "hu": "Olvastad már ezt a könyvet?",
+          "note": "das Buch → dieses (Akkusativ semleges)."
+        }
+      ]
+    },
+    {
+      "title": "A határozatlan névelő, a kein és a birtokos névelők",
+      "explanation": "Az ein, a kein és a birtokos névelők (mein, dein, sein, ihr, unser, euer, ihr/Ihr) ugyanúgy ragozódnak: Nominativ: ein, eine, ein, (keine); Akkusativ: einen, eine, ein, (keine); Dativ: einem, einer, einem, (keinen); Genitiv: eines, einer, eines, (keiner). A hímnemű Nominativ és a semleges Nominativ/Akkusativ rag nélküli (ein, kein, mein). Az euer ragos alakjaiból kiesik az e: eure, eurem.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "Ich habe keinen Bruder, aber eine Schwester.",
+          "hu": "Nincs bátyám, de van egy nővérem."
+        },
+        {
+          "en": "Wir fahren mit unserem Auto in den Urlaub.",
+          "hu": "A saját autónkkal megyünk nyaralni."
+        },
+        {
+          "en": "Ist das euer Hund? – Ja, und das ist eure Katze.",
+          "hu": "Ez a ti kutyátok? – Igen, és ez a ti macskátok."
+        }
+      ]
+    },
+    {
+      "title": "Mikor nincs névelő?",
+      "explanation": "Nem áll névelő: foglalkozás, nemzetiség, vallás előtt a sein, werden után (Ich bin Schülerin. Er wird Arzt. Sie ist Österreicherin) – de melléknévvel már igen (Er ist ein guter Arzt); anyagnév és elvont főnév előtt általános értelemben (Ich trinke gern Kaffee. Ich habe Zeit. Musik macht mich glücklich); határozatlan többes számú főnév előtt (Ich habe Fragen); a legtöbb ország- és városnév előtt (in Ungarn, nach Österreich, in Berlin); személynév előtt a standard nyelvben (Peter kommt heute – a magyar beszélt „a Péter” nem fordítható le).",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "Meine Mutter ist Krankenschwester.",
+          "hu": "Anyukám ápolónő.",
+          "note": "Foglalkozás: nincs névelő."
+        },
+        {
+          "en": "Ich trinke morgens Tee mit Milch.",
+          "hu": "Reggel tejes teát iszom.",
+          "note": "Anyagnév általános értelemben."
+        },
+        {
+          "en": "Musik ist mein Hobby.",
+          "hu": "A zene a hobbim.",
+          "note": "A magyarban van névelő, a németben nincs."
+        }
+      ]
+    },
+    {
+      "title": "Ahol a németben névelő kell",
+      "explanation": "Néhány országnévnek van névelője: die Schweiz, die Türkei, die Slowakei, die Ukraine, der Iran, és a többes számúak: die USA, die Niederlande. Ezekkel hová? kérdésre in + Akkusativ (in die Schweiz), hol? kérdésre in + Dativ (in der Schweiz) áll, nem nach. Névelő áll a hónapok, évszakok, napok és napszakok előtt is, elöljáróval összevonva: im Mai, im Sommer, am Montag, am Abend (de: in der Nacht), és az utcanevek előtt: in der Hauptstraße.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "Nächstes Jahr möchte ich in der Schweiz arbeiten.",
+          "hu": "Jövőre Svájcban szeretnék dolgozni."
+        },
+        {
+          "en": "Im Sommer fahren wir in die Slowakei.",
+          "hu": "Nyáron Szlovákiába utazunk.",
+          "note": "Névelős ország → in die, nem nach."
+        },
+        {
+          "en": "Am Wochenende schlafe ich lange.",
+          "hu": "Hétvégén sokáig alszom."
+        }
+      ]
+    },
+    {
+      "title": "Elöljárószó + névelő összevonása",
+      "explanation": "A határozott névelő bizonyos elöljárókkal összeolvad: an dem → am, in dem → im, in das → ins, an das → ans, bei dem → beim, von dem → vom, zu dem → zum, zu der → zur. Az állandó kifejezésekben kötelező az összevont alak: zum Beispiel, im Sommer, am Montag, ins Kino gehen, zur Schule gehen, zum Arzt gehen, beim Arzt sein, vom Bahnhof abholen.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "Heute Abend gehen wir ins Kino.",
+          "hu": "Ma este moziba megyünk.",
+          "note": "in das → ins (hová?)."
+        },
+        {
+          "en": "Ich muss morgen zum Zahnarzt.",
+          "hu": "Holnap fogorvoshoz kell mennem.",
+          "note": "zu dem → zum."
+        },
+        {
+          "en": "Gehst du zu Fuß zur Schule?",
+          "hu": "Gyalog mész iskolába?",
+          "note": "zu der → zur."
+        }
+      ]
+    }
+  ],
+  "commonMistakes": [
+    {
+      "wrong": "Ich fahre im Sommer nach Schweiz.",
+      "right": "Ich fahre im Sommer in die Schweiz.",
+      "why": "A Schweiz névelős (nőnemű) országnév, ezért irány kifejezésekor in + Akkusativ áll: in die Schweiz. A nach csak a névelő nélküli ország- és városnevek előtt használatos (nach Österreich, nach Wien)."
+    },
+    {
+      "wrong": "Am Wochenende gehe ich mit der Freunden ins Kino.",
+      "right": "Am Wochenende gehe ich mit den Freunden ins Kino.",
+      "why": "A mit Dativot vonz; többes számban a Dativ névelő den, és a főnév is -n ragot kap: den Freunden."
+    },
+    {
+      "wrong": "Ich habe kein Bruder.",
+      "right": "Ich habe keinen Bruder.",
+      "why": "A haben Akkusativot vonz, a hímnemű kein Akkusativ alakja keinen – ugyanúgy, ahogy ein → einen."
+    },
+    {
+      "wrong": "Wir fahren mit unser Auto nach Kroatien.",
+      "right": "Wir fahren mit unserem Auto nach Kroatien.",
+      "why": "A birtokos névelő is ragozódik: mit + Dativ, das Auto semleges → unserem."
+    },
+    {
+      "wrong": "Ich trinke jeden Morgen den Kaffee.",
+      "right": "Ich trinke jeden Morgen Kaffee.",
+      "why": "Anyagnév általános értelemben névelő nélkül áll. A den Kaffee csak akkor helyes, ha egy konkrét, ismert kávéról van szó (Ich trinke den Kaffee, den du gemacht hast)."
+    },
+    {
+      "wrong": "Mein Vater ist ein Arzt.",
+      "right": "Mein Vater ist Arzt.",
+      "why": "Foglalkozás előtt a sein/werden után nem áll névelő (mint a magyarban: „Apám orvos”); az ein Arzt az angol a doctor hatása. Melléknévvel viszont kell: Er ist ein sehr guter Arzt."
+    }
+  ],
+  "examTips": [
+    "Nyitott kloze-ban, ha a hiány előtt elöljáró, utána főnév áll, gondolj az összevont alakokra (im, am, zum, zur, ins, beim) – ezek egy szónak számítanak.",
+    "Feleletválasztós lyukas szövegnél a négy opció gyakran ugyanaz a névelő különböző esetekben (der/den/dem/des): keresd meg a főnév nemét, majd az esetet meghatározó igét vagy elöljárót.",
+    "Írásban az országneveknél figyelj: nach Ungarn, nach Deutschland, nach Österreich, de in die Schweiz, in die Slowakei, in die USA.",
+    "Tanuld a főneveket mindig névelővel és többes számmal együtt (der Tisch, die Tische) – a névelőhibák többsége abból adódik, hogy nem tudod a főnév nemét."
+  ],
+  "practice": [
+    {
+      "id": "1",
+      "kind": "choice",
+      "prompt": "Ich habe ___ Bruder, aber zwei Schwestern.",
+      "options": [
+        {
+          "key": "A",
+          "text": "kein"
+        },
+        {
+          "key": "B",
+          "text": "keine"
+        },
+        {
+          "key": "C",
+          "text": "keinen"
+        },
+        {
+          "key": "D",
+          "text": "keinem"
+        }
+      ],
+      "answer": "C",
+      "category": "article-declension",
+      "explanation": "Helyes: keinen. A haben Akkusativot vonz, a der Bruder hímnemű, így a kein Akkusativ alakja keinen.",
+      "wrongOptions": {
+        "A": "A kein hímnemű Nominativ (vagy semleges Nominativ/Akkusativ); hímnemű Akkusativban -en végződés kell.",
+        "B": "A keine nőnemű vagy többes számú alak; a Bruder hímnemű, egyes számú.",
+        "D": "A keinem Dativ; a haben után tárgyeset (Akkusativ) áll."
+      }
+    },
+    {
+      "id": "2",
+      "kind": "text",
+      "prompt": "Wir fahren im Sommer mit ___ (unser) Auto nach Kroatien.",
+      "cue": "unser",
+      "answer": [
+        "unserem"
+      ],
+      "category": "article-declension",
+      "explanation": "Helyes: unserem. A mit elöljáró Dativot vonz, a das Auto semleges, így a birtokos névelő Dativ alakja unserem (mint einem)."
+    },
+    {
+      "id": "3",
+      "kind": "choice",
+      "prompt": "Nächstes Jahr möchte meine Schwester in ___ Schweiz arbeiten.",
+      "options": [
+        {
+          "key": "A",
+          "text": "– (névelő nélkül)"
+        },
+        {
+          "key": "B",
+          "text": "den"
+        },
+        {
+          "key": "C",
+          "text": "die"
+        },
+        {
+          "key": "D",
+          "text": "der"
+        }
+      ],
+      "answer": "D",
+      "category": "article-declension",
+      "explanation": "Helyes: der. A Schweiz nőnemű, névelős országnév; a hol? kérdésre (Svájcban dolgozni) in + Dativ áll, a nőnem Dativ névelője der: in der Schweiz.",
+      "wrongOptions": {
+        "A": "A Schweiz azon kevés országnév közé tartozik, amelynek mindig van névelője (die Schweiz).",
+        "B": "A den hímnemű Akkusativ vagy többes számú Dativ; a Schweiz egyes számú nőnemű főnév.",
+        "C": "Az in die Schweiz irányt jelöl (hová?); itt helyről van szó (hol dolgozik?), ezért Dativ kell."
+      }
+    },
+    {
+      "id": "4",
+      "kind": "text",
+      "prompt": "Ich habe Zahnschmerzen, deshalb gehe ich heute Nachmittag ___ Zahnarzt.",
+      "answer": [
+        "zum"
+      ],
+      "category": "article-declension",
+      "explanation": "Helyes: zum. Személyhez, orvoshoz menve a zu elöljáró áll (hová?), amely Dativot vonz: zu dem Zahnarzt → összevonva zum Zahnarzt."
+    },
+    {
+      "id": "5",
+      "kind": "choice",
+      "prompt": "Hast du ___ Buch schon gelesen? Es ist wirklich spannend.",
+      "options": [
+        {
+          "key": "A",
+          "text": "dieser"
+        },
+        {
+          "key": "B",
+          "text": "dieses"
+        },
+        {
+          "key": "C",
+          "text": "diese"
+        },
+        {
+          "key": "D",
+          "text": "diesen"
+        }
+      ],
+      "answer": "B",
+      "category": "article-declension",
+      "explanation": "Helyes: dieses. A das Buch semleges, a lesen tárgyaként Akkusativban áll; a dieser a határozott névelő mintájára ragozódik: das → dieses.",
+      "wrongOptions": {
+        "A": "A dieser hímnemű Nominativ (vagy nőnemű Dativ/Genitiv); a Buch semleges.",
+        "C": "A diese nőnemű vagy többes számú alak.",
+        "D": "A diesen hímnemű Akkusativ (der → den → diesen); a semleges Akkusativ dieses."
+      }
+    },
+    {
+      "id": "6",
+      "kind": "text",
+      "prompt": "Die Lehrerin gibt ___ (die) Kindern die Hefte zurück.",
+      "cue": "die",
+      "answer": [
+        "den"
+      ],
+      "category": "article-declension",
+      "explanation": "Helyes: den. A zurückgeben mellett a személy (kinek?) Dativban áll; többes számú Dativban a névelő den, és a főnév -n ragot kap: den Kindern."
+    }
+  ],
+  "relatedCategories": [
+    "case",
+    "plural-gender",
+    "adjective-declension"
+  ]
+}

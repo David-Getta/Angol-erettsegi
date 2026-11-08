@@ -1,0 +1,128 @@
+{
+  "schemaVersion": 1,
+  "id": "dig-wr-kozep-tablazat-aprilisi-idojaras",
+  "subject": "digitalis-kultura",
+  "revision": 1,
+  "level": "kozep",
+  "source": "generated",
+  "topic": "tablazatkezeles",
+  "title": "Táblázatkezelés: áprilisi időjárási adatok",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "writing",
+  "type": "tablazatkezeles",
+  "taskNumber": 3,
+  "situation": "Az iskola meteorológiai szakköre 2026 áprilisában naponta feljegyezte a legmagasabb és a legalacsonyabb hőmérsékletet, valamint a lehullott csapadék mennyiségét.\n\nForrásfájl: aprilis.txt (UTF-8, tabulátorral tagolt). Az első sor a fejléc, alatta 30 sor: A – Dátum (2026.04.01. … 2026.04.30.), B – Max. hőmérséklet (°C, egy tizedesjegy), C – Min. hőmérséklet (°C), D – Csapadék (mm; 0, ha nem esett).\n\nTöltse be az adatokat az A1-es cellától, és mentse a munkát idojaras néven a táblázatkezelő saját formátumában! Minden számítást képlettel végezzen!\n\n1. Töltse be az adatokat, és mentse a munkát!\n2. Az E oszlopban (fejléc: Napi átlag) számítsa ki a napi középhőmérsékletet a maximum és a minimum átlagaként; egy tizedesjeggyel jelenjen meg!\n3. Az F oszlopban (fejléc: Hőingás) számítsa ki a napi maximum és minimum különbségét!\n4. A G oszlopban (fejléc: Jelleg) jelenjen meg: „száraz”, ha nem esett csapadék; „csapadékos”, ha 0-nál több, de 10 mm-nél kevesebb esett; „bőséges”, ha legalább 10 mm esett!\n5. Az I1:I7 cellákba magyarázó szöveget írjon, a J1:J7 cellákban számítsa ki: J1 – a hónap legmagasabb hőmérséklete; J2 – az a dátum, amikor ezt mérték (ha több ilyen nap van, az első); J3 – a fagyos napok száma (amikor a minimum 0 °C alatt volt); J4 – a havi összes csapadék; J5 – hány napon esett csapadék; J6 – a csapadékos napok átlagos csapadéka két tizedesjegyre kerekítve; J7 – a havi átlaghőmérséklet (az E oszlop átlaga) egy tizedesjegyre kerekítve!\n6. Feltételes formázással a B oszlopban a 20 °C-os vagy annál nagyobb értékek piros betűvel, a C oszlopban a 0 °C alatti értékek világoskék háttérrel jelenjenek meg!\n7. Formázás: az első sor félkövér és sortöréssel tördelt; a B, C, E és F oszlop számai egy tizedesjeggyel, a dátumok éééé.hh.nn. alakban jelenjenek meg (J2-ben is)!\n8. Készítsen vonaldiagramot a napi maximum- és minimumhőmérséklet alakulásáról (A1:C31)! A diagram címe „Hőmérséklet 2026 áprilisában”, a függőleges tengely címe „°C” legyen, a jelmagyarázat alul jelenjen meg!",
+  "points": [
+    {
+      "id": "p1",
+      "text": "1. Betöltés, mentés idojaras néven (1 pont)"
+    },
+    {
+      "id": "p2",
+      "text": "2. Napi átlag képlettel, egy tizedesjeggyel (3 pont)"
+    },
+    {
+      "id": "p3",
+      "text": "3. Hőingás (2 pont)"
+    },
+    {
+      "id": "p4",
+      "text": "4. Jelleg egymásba ágyazott HA függvénnyel (4 pont)"
+    },
+    {
+      "id": "p5",
+      "text": "5. J1–J7 statisztikák: maximum, a hozzá tartozó dátum, fagyos napok, összeg, csapadékos napok, feltételes átlag, kerekített havi átlag (8 pont)"
+    },
+    {
+      "id": "p6",
+      "text": "6. Két feltételes formázási szabály (3 pont)"
+    },
+    {
+      "id": "p7",
+      "text": "7. Fejléc, tizedesjegyek és dátumformátum (2 pont)"
+    },
+    {
+      "id": "p8",
+      "text": "8. Vonaldiagram címmel, tengelycímmel, alul elhelyezett jelmagyarázattal (2 pont)"
+    }
+  ],
+  "suggestedMinutes": 45,
+  "usefulPhrases": [
+    {
+      "en": "=HA(D2=0;\"száraz\";HA(D2<10;\"csapadékos\";\"bőséges\"))",
+      "hu": "három eset egymásba ágyazott HA-val (angolul IF); a sorrend számít"
+    },
+    {
+      "en": "=INDEX(A2:A31;HOL.VAN(J1;B2:B31;0))  /  INDEX(…, MATCH(…))",
+      "hu": "a maximumhoz tartozó dátum; bármelyik oszlopból visszakereshet"
+    },
+    {
+      "en": "=XKERES(J1;B2:B31;A2:A31)  /  =XLOOKUP(…)",
+      "hu": "ugyanez az újabb Excelben egyetlen függvénnyel"
+    },
+    {
+      "en": "=DARABTELI(C2:C31;\"<0\")  /  =COUNTIF(…)",
+      "hu": "feltételes megszámlálás (fagyos napok)"
+    },
+    {
+      "en": "=ÁTLAGHA(D2:D31;\">0\")  /  =AVERAGEIF(…)",
+      "hu": "csak a feltételnek megfelelő értékek átlaga"
+    },
+    {
+      "en": "Feltételes formázás > Új szabály",
+      "hu": "a cella formátuma az értékétől függ, és adatváltozáskor magától frissül"
+    },
+    {
+      "en": "Egyéni számformátum: éééé.hh.nn.",
+      "hu": "magyar Excelben az év é, a hónap h, a nap n betű"
+    },
+    {
+      "en": "Diagramelemek (+) > Tengelycímek, Jelmagyarázat",
+      "hu": "a diagram feliratai és a jelmagyarázat helye"
+    }
+  ],
+  "checklistExtra": [],
+  "modelAnswer": {
+    "text": "Megoldás – magyar Excel-függvénynevek (a magyar felületű LibreOffice Calcban is ezek), zárójelben az angol nyelvű változat.\n\n1. Betöltés: Adatok > Szövegből/CSV-ből > aprilis.txt, kódolás: 65001: Unicode (UTF-8), határoló: Tabulátor; az adatok az A1-től. Mentés: idojaras.xlsx (Calc: idojaras.ods). Ellenőrzöm, hogy a dátumok és a tizedes törtek számként (jobbra igazítva) jelentek-e meg.\n\n2. E1: Napi átlag; E2: =ÁTLAG(B2:C2)   (=AVERAGE(B2:C2)), másolás E31-ig; a Tizedesjegyek csökkentése/növelése gombbal egy tizedesjegyre állítom.\n\n3. F1: Hőingás; F2: =B2-C2, másolás F31-ig.\n\n4. G1: Jelleg; G2: =HA(D2=0;\"száraz\";HA(D2<10;\"csapadékos\";\"bőséges\"))   (=IF(D2=0,\"száraz\",IF(D2<10,\"csapadékos\",\"bőséges\"))), másolás G31-ig. A belső HA csak akkor fut, ha esett csapadék, ezért ott elég a „< 10” feltétel.\n\n5. A statisztikák:\nI1: Legmagasabb hőmérséklet – J1: =MAX(B2:B31)   (=MAX(B2:B31))\nI2: Ekkor mérték – J2: =INDEX(A2:A31;HOL.VAN(J1;B2:B31;0))   (=INDEX(A2:A31,MATCH(J1,B2:B31,0))); újabb Excelben ugyanez: =XKERES(J1;B2:B31;A2:A31)   (=XLOOKUP(J1,B2:B31,A2:A31)). A HOL.VAN az első egyezést adja, ez kell, ha több ilyen nap van.\nI3: Fagyos napok – J3: =DARABTELI(C2:C31;\"<0\")   (=COUNTIF(C2:C31,\"<0\"))\nI4: Havi csapadék (mm) – J4: =SZUM(D2:D31)   (=SUM(D2:D31))\nI5: Csapadékos napok – J5: =DARABTELI(D2:D31;\">0\")   (=COUNTIF(D2:D31,\">0\"))\nI6: Átlagos csapadék esős napon – J6: =KEREKÍTÉS(ÁTLAGHA(D2:D31;\">0\");2)   (=ROUND(AVERAGEIF(D2:D31,\">0\"),2))\nI7: Havi átlaghőmérséklet – J7: =KEREKÍTÉS(ÁTLAG(E2:E31);1)   (=ROUND(AVERAGE(E2:E31),1))\n\n6. Feltételes formázás: B2:B31 kijelölve: Kezdőlap > Feltételes formázás > Új szabály > Csak azon cellák formázása, amelyek: Cellaérték nagyobb vagy egyenlő 20 > Formátum: piros betűszín. C2:C31: Cellakiemelési szabályok > Kisebb, mint… 0, egyéni formátum: világoskék kitöltés (Calc: Formátum > Feltételes > Feltétel).\n\n7. Formázás: A1:G1 félkövér, Sortöréssel több sorba; B, C, E, F oszlop: Szám, 1 tizedesjegy; A2:A31 és J2: Cellák formázása > Egyéni: éééé.hh.nn. (Calc: ÉÉÉÉ.HH.NN.).\n\n8. Diagram: A1:C31 kijelölve, Beszúrás > Vonaldiagram > Vonal. Diagramcím: Hőmérséklet 2026 áprilisában; Diagramelemek (+) > Tengelycímek > Elsődleges függőleges: °C; Jelmagyarázat > Lent. Mentés (Ctrl+S).",
+    "pointsCovered": [
+      {
+        "id": "p1",
+        "quote": "Mentés: idojaras.xlsx (Calc: idojaras.ods)"
+      },
+      {
+        "id": "p2",
+        "quote": "E2: =ÁTLAG(B2:C2)   (=AVERAGE(B2:C2)), másolás E31-ig"
+      },
+      {
+        "id": "p3",
+        "quote": "F2: =B2-C2, másolás F31-ig"
+      },
+      {
+        "id": "p4",
+        "quote": "G2: =HA(D2=0;\"száraz\";HA(D2<10;\"csapadékos\";\"bőséges\"))"
+      },
+      {
+        "id": "p5",
+        "quote": "J2: =INDEX(A2:A31;HOL.VAN(J1;B2:B31;0))   (=INDEX(A2:A31,MATCH(J1,B2:B31,0)))"
+      },
+      {
+        "id": "p6",
+        "quote": "Cellaérték nagyobb vagy egyenlő 20 > Formátum: piros betűszín"
+      },
+      {
+        "id": "p7",
+        "quote": "A2:A31 és J2: Cellák formázása > Egyéni: éééé.hh.nn."
+      },
+      {
+        "id": "p8",
+        "quote": "Tengelycímek > Elsődleges függőleges: °C; Jelmagyarázat > Lent"
+      }
+    ],
+    "notes": [
+      "A követelmények teljesítése: mind a 30 nap minden kért értéke képlettel készül, a J1–J7 cellák a feladatban felsorolt sorrendben adják az eredményeket.",
+      "Szakszerű módszer: egymásba ágyazott HA a háromféle jellegre, INDEX + HOL.VAN (vagy XKERES) a maximumhoz tartozó dátumra, DARABTELI és ÁTLAGHA a feltételes számolásra, feltételes formázás a kiemelésre – kézi színezés vagy kézzel kikeresett dátum nem ér pontot.",
+      "Pontosság: a kerekítés függvénnyel történik, ahol a feladat kerekítést kér; ahol csak megjelenítést (E oszlop), ott formátummal – a kettő különbségét a javítók is nézik."
+    ]
+  }
+}

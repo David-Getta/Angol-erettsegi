@@ -1,0 +1,104 @@
+{
+  "schemaVersion": 1,
+  "id": "fiz-rd-emelt-fizikatortenet-parositas",
+  "subject": "fizika",
+  "revision": 1,
+  "level": "emelt",
+  "source": "generated",
+  "topic": "fizikatortenet",
+  "title": "A modern fizika felé – tudósok és eredmények párosítása",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "reading",
+  "type": "parositas",
+  "instructions": "Párosítsd az eredményeket, kísérleteket azzal a tudóssal, akinek a nevéhez fűződnek! Minden nevet legfeljebb egyszer használhatsz, és két név kimarad. A 0. sor a megoldott példa.",
+  "options": [
+    { "key": "A", "text": "Niels Bohr" },
+    { "key": "B", "text": "Enrico Fermi" },
+    { "key": "C", "text": "Otto Hahn" },
+    { "key": "D", "text": "Werner Heisenberg" },
+    { "key": "E", "text": "Heinrich Hertz" },
+    { "key": "F", "text": "Christiaan Huygens" },
+    { "key": "G", "text": "James Prescott Joule" },
+    { "key": "H", "text": "Johannes Kepler" },
+    { "key": "I", "text": "Hans Christian Ørsted" },
+    { "key": "J", "text": "Max Planck" },
+    { "key": "K", "text": "Wigner Jenő" }
+  ],
+  "example": {
+    "id": "0",
+    "kind": "match",
+    "prompt": "A hőmérsékleti sugárzás magyarázatára feltételezte, hogy a sugárzó rendszer energiája csak h·f adagokban (kvantumokban) változhat (1900).",
+    "answer": "J",
+    "category": "fogalmak",
+    "explanation": "Helyes: J – Max Planck. 1900-ban a feketetest-sugárzás színképének magyarázatához vezette be az energiakvantum fogalmát (E = h·f); a h állandó azóta az ő nevét viseli. Ezt tekintjük a kvantumfizika születésének."
+  },
+  "items": [
+    {
+      "id": "1",
+      "kind": "match",
+      "prompt": "Észrevette, hogy az áramjárta vezető közelében az iránytű kitér, vagyis felfedezte az elektromos áram mágneses hatását (1820).",
+      "answer": "I",
+      "category": "fogalmak",
+      "explanation": "Helyes: I – Hans Christian Ørsted. 1820-ban mutatta ki, hogy az elektromos áram mágneses mezőt kelt; ez volt az első kísérleti kapcsolat az elektromosság és a mágnesség között, amelyre Ampère és Faraday munkája épült."
+    },
+    {
+      "id": "2",
+      "kind": "match",
+      "prompt": "Szikrakisüléses adóval és vevővel kísérletileg kimutatta a Maxwell által megjósolt elektromágneses hullámokat (1887–1888).",
+      "answer": "E",
+      "category": "fogalmak",
+      "explanation": "Helyes: E – Heinrich Hertz. Kísérleteiben az elektromágneses hullámok visszaverődését, törését és polarizációját is igazolta, és megmérte a sebességüket, amely egyezett a fényével. A frekvencia egysége (Hz) róla kapta a nevét."
+    },
+    {
+      "id": "3",
+      "kind": "match",
+      "prompt": "A hidrogénatom modelljében feltételezte, hogy az elektron csak meghatározott (stacionárius) pályákon keringhet sugárzás nélkül, és fényt csak pályaváltáskor bocsát ki (1913).",
+      "answer": "A",
+      "category": "fogalmak",
+      "explanation": "Helyes: A – Niels Bohr. Posztulátumaival a Rutherford-modell stabilitási problémáját oldotta fel, és megmagyarázta a hidrogén vonalas színképét (h·f = E₂ − E₁)."
+    },
+    {
+      "id": "4",
+      "kind": "match",
+      "prompt": "Megfogalmazta a határozatlansági relációt: egy részecske helye és lendülete egyszerre nem határozható meg tetszőleges pontossággal (1927).",
+      "answer": "D",
+      "category": "fogalmak",
+      "explanation": "Helyes: D – Werner Heisenberg. A határozatlansági reláció (Δx·Δp ≥ h/(4π)) a kvantummechanika egyik alapelve; Heisenberg a kvantummechanika megalkotásáért az 1932-es fizikai Nobel-díjat kapta."
+    },
+    {
+      "id": "5",
+      "kind": "match",
+      "prompt": "A fény hullámelméletét képviselte: a hullámfront minden pontja elemi hullámok kiindulópontja, ezekből magyarázta a visszaverődést és a törést (Traité de la lumière, 1690).",
+      "answer": "F",
+      "category": "fogalmak",
+      "explanation": "Helyes: F – Christiaan Huygens. A róla elnevezett elv (Huygens-elv) szerint a hullámfront minden pontjából elemi hullámok indulnak ki; ezzel a hullámelmélettel Newton részecskeelméletével szemben a fénytörést a sebesség csökkenésével magyarázta."
+    },
+    {
+      "id": "6",
+      "kind": "match",
+      "prompt": "Tycho Brahe megfigyelési adataiból levezette a bolygómozgás három törvényét (1609–1619).",
+      "answer": "H",
+      "category": "fogalmak",
+      "explanation": "Helyes: H – Johannes Kepler. Az első két törvényt 1609-ben (Astronomia nova), a harmadikat 1619-ben (Harmonices mundi) tette közzé: ellipszispálya, területi törvény, T²/a³ = állandó. Newton később ezekből vezette le a gravitációs törvényt."
+    },
+    {
+      "id": "7",
+      "kind": "match",
+      "prompt": "Vezetésével valósították meg az első szabályozott, önfenntartó nukleáris láncreakciót egy chicagói reaktorban (1942).",
+      "answer": "B",
+      "category": "fogalmak",
+      "explanation": "Helyes: B – Enrico Fermi. A Chicago Pile–1 nevű grafitmoderátoros reaktor 1942. december 2-án lett kritikus; a programban magyar tudósok (Szilárd Leó, Wigner Jenő) is meghatározó szerepet játszottak."
+    },
+    {
+      "id": "8",
+      "kind": "match",
+      "prompt": "Lehulló súlyok által forgatott lapátkerékkel melegítette a vizet, és megmérte a hő mechanikai egyenértékét.",
+      "answer": "G",
+      "category": "fogalmak",
+      "explanation": "Helyes: G – James Prescott Joule. Kísérletével kimutatta, hogy adott mennyiségű mechanikai munka mindig ugyanannyi hőt termel (kb. 4,2 J munka 1 cal hőnek felel meg); ez az energiamegmaradás tételének egyik kísérleti alapja. Az energia egysége róla kapta a nevét."
+    }
+  ],
+  "glossary": [],
+  "suggestedMinutes": 8
+}

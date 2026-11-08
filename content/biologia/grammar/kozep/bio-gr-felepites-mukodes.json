@@ -1,0 +1,256 @@
+{
+  "schemaVersion": 1,
+  "id": "bio-gr-felepites-mukodes",
+  "subject": "biologia",
+  "revision": 1,
+  "level": "kozep",
+  "source": "generated",
+  "topic": "nyelvtan",
+  "title": "Felépítés és működés kapcsolata",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "grammar",
+  "type": "lesson",
+  "category": "felepites-mukodes",
+  "summaryHu": "A biológia egyik alapelve, hogy a szervek, szövetek és sejtalkotók felépítése a működésükhöz igazodik. Az érettségin gyakori kérdés, hogy „miért” olyan egy képlet, amilyen (miért vékony a léghólyag fala, miért vastagabb a bal kamra), illetve hogy melyik sejtalkotó vagy szerv milyen feladatot lát el – ezek összekeverése a feladatlapon és a szóbelin is pontveszteség.",
+  "rules": [
+    {
+      "title": "Nagy felület – gyors anyagcsere",
+      "explanation": "Ahol sok anyagnak kell rövid idő alatt átjutnia, ott a felület megnövekszik: redők, bolyhok, nyúlványok, sok apró egység. A felület növelése a diffúzió és a szállítás sebességét növeli.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "A vékonybél bolyhai és a hámsejtek mikrobolyhai a felszívó felületet több százszorosára növelik.",
+          "hu": "Felszívás – nagy felület."
+        },
+        {
+          "en": "A tüdő kb. 300–500 millió léghólyagjának összfelülete kb. 70–100 m².",
+          "hu": "Gázcsere – nagy felület, vékony fal."
+        },
+        {
+          "en": "A gyökérszőrök a gyökér vízfelvevő felületét növelik.",
+          "hu": "Növényi példa."
+        }
+      ]
+    },
+    {
+      "title": "Vékony fal – rövid diffúziós út; vastag fal – nagy nyomás",
+      "explanation": "Gázcserénél és anyagkicserélődésnél a fal vékony (egy sejtréteg), mert a diffúzió csak rövid távon gyors. Ahol nagy nyomást kell elviselni vagy létrehozni, a fal vastag és izmos.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "A hajszálér fala egyetlen sejtrétegű, ezért itt zajlik az anyagkicserélődés.",
+          "hu": "Vékony fal."
+        },
+        {
+          "en": "A bal kamra fala kb. háromszor vastagabb a jobbénál, mert a nagy vérkörbe pumpál.",
+          "hu": "Vastag fal – nagy nyomás."
+        }
+      ]
+    },
+    {
+      "title": "Sejtalkotók: felépítés → feladat",
+      "explanation": "Mitokondrium: belső membránja redőzött (kriszták), itt zajlik az ATP-termelés nagy része. Színtest: tilakoidmembránok a fényszakaszhoz. Durva endoplazmatikus hálózat: riboszómák a felszínén – fehérjeszintézis. Lizoszóma: emésztőenzimek membránba zárva. A sok mitokondrium nagy energiaigényre, a fejlett durva ER és Golgi-készülék fehérjeelválasztásra utal.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "A szívizomsejtekben különösen sok mitokondrium van.",
+          "hu": "Folyamatos munka – sok ATP."
+        },
+        {
+          "en": "A hasnyálmirigy enzimtermelő sejtjeiben fejlett a durva endoplazmatikus hálózat és a Golgi-készülék.",
+          "hu": "Fehérjetermelés és -elválasztás."
+        }
+      ]
+    },
+    {
+      "title": "Sejtek specializációja",
+      "explanation": "A sejt alakja és belső felépítése a feladatához alkalmazkodik: a vörösvérsejt sejtmag nélküli, bikonkáv korong, hemoglobinnal telt; az idegsejt hosszú nyúlványokkal vezeti az ingerületet; a spermium ostorral mozog, feje kevés citoplazmát és sok enzimet tartalmaz.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "A vörösvérsejt bikonkáv alakja nagy felületet ad a gázcseréhez, és rugalmasan átfér a hajszálereken.",
+          "hu": "Alak – funkció."
+        },
+        {
+          "en": "A velőshüvely szigetel, ezért gyorsítja az ingerületvezetést.",
+          "hu": "Szerkezet – sebesség."
+        }
+      ]
+    },
+    {
+      "title": "Ellenáramlás és szabályozott áteresztés",
+      "explanation": "A szervezet több helyén két, ellentétes irányú áramlás teszi hatékonnyá a cserét: a halak kopoltyújában a víz és a vér ellentétes irányban áramlik, a vese Henle-kacsában az ellenáramlás tömény velőállományt hoz létre.",
+      "emeltOnly": true,
+      "examples": [
+        {
+          "en": "A hal kopoltyújában a vér a vízzel szemben áramlik, így a vér végig oxigéndúsabb vízzel találkozik.",
+          "hu": "Ellenáramú csere."
+        },
+        {
+          "en": "A Henle-kacs felszálló szára sót pumpál ki, de vizet nem enged át.",
+          "hu": "Eltérő áteresztés – koncentrálás."
+        }
+      ]
+    }
+  ],
+  "commonMistakes": [
+    {
+      "wrong": "Az artériák mindig oxigéndús vért szállítanak.",
+      "right": "Az artéria a szívből elvezető ér; a tüdőartéria oxigénszegény vért szállít.",
+      "why": "Az ereket az áramlás iránya alapján nevezzük el, nem a vér oxigéntartalma alapján."
+    },
+    {
+      "wrong": "A riboszóma a sejt erőműve.",
+      "right": "A mitokondrium a sejt „erőműve”, a riboszóma a fehérjeszintézis helye.",
+      "why": "A két sejtalkotót gyakran összecserélik; az ATP-termelés a mitokondriumhoz kötődik."
+    },
+    {
+      "wrong": "A vénák fala vastagabb, mert több vért szállítanak.",
+      "right": "A vénák fala vékonyabb, tágulékonyabb; a nagyobbakban billentyűk vannak.",
+      "why": "A vénákban kicsi a nyomás, ezért nincs szükség vastag, izmos falra."
+    },
+    {
+      "wrong": "A jobb kamra fala a vastagabb, mert a jobb oldal az erősebb.",
+      "right": "A bal kamra fala vastagabb, mert a nagy vérkörbe pumpál.",
+      "why": "A falvastagság a leküzdendő nyomáshoz igazodik."
+    },
+    {
+      "wrong": "A növényi sejtnek nincs mitokondriuma, mert fotoszintetizál.",
+      "right": "A növényi sejtben is van mitokondrium, mert sejtlégzést is végez.",
+      "why": "A fotoszintézis szerves anyagot állít elő, de az energiát ATP formájában a sejtlégzés teszi felhasználhatóvá."
+    }
+  ],
+  "examTips": [
+    "„Magyarázza meg, miért…” típusú kérdésnél mindig kösd össze a szerkezeti jellemzőt a funkcióval: „vékony a fal, ezért rövid a diffúziós út, ezért gyors a gázcsere”.",
+    "Párosításnál és asszociációnál (pl. növényi–állati sejt, artéria–véna) a kivételekre figyelj: tüdőartéria, tüdővéna, vörösvérsejt sejtmagja.",
+    "Ábraleírásnál (szóbeli B tétel, sertésszív, mikroszkópos kép) a részek nevét mindig a feladatukkal együtt mondd el."
+  ],
+  "practice": [
+    {
+      "id": "1",
+      "kind": "choice",
+      "prompt": "Melyik jellemző NEM a gyors gázcserét szolgálja a tüdőben?",
+      "options": [
+        {
+          "key": "A",
+          "text": "a légcső porcos gyűrűi"
+        },
+        {
+          "key": "B",
+          "text": "a léghólyagok vékony fala"
+        },
+        {
+          "key": "C",
+          "text": "a léghólyagokat sűrűn behálózó hajszálerek"
+        },
+        {
+          "key": "D",
+          "text": "a léghólyagok nagy száma"
+        }
+      ],
+      "answer": "A",
+      "category": "felepites-mukodes",
+      "explanation": "Helyes: A. A légcső porcos gyűrűi a légút nyitva tartását szolgálják, nem a gázcserét; a gázcsere a léghólyagokban zajlik.",
+      "wrongOptions": {
+        "B": "A vékony fal rövid diffúziós utat jelent – gyors gázcsere.",
+        "C": "A sűrű hajszálérhálózat nagy érintkezési felületet és folyamatos koncentrációkülönbséget biztosít.",
+        "D": "A sok léghólyag hatalmas összfelületet ad – ez a gázcserét szolgálja."
+      }
+    },
+    {
+      "id": "2",
+      "kind": "text",
+      "prompt": "Melyik sejtalkotó belső membránja redőzött (kriszták), és melyikben termelődik a legtöbb ATP?",
+      "answer": [
+        "mitokondrium",
+        "a mitokondrium",
+        "mitokondriumban",
+        "mitokondrion"
+      ],
+      "category": "felepites-mukodes",
+      "explanation": "Helyes: mitokondrium. A belső membrán redői (kriszták) növelik az elektronszállító lánc és az ATP-szintáz enzimek felületét, ezért itt képződik a sejtlégzés ATP-jének nagy része.",
+      "maxWords": 2
+    },
+    {
+      "id": "3",
+      "kind": "choice",
+      "prompt": "Miért nincs sejtmagja az érett emberi vörösvérsejtnek?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Mert a sejtmag oxigént fogyasztana."
+        },
+        {
+          "key": "B",
+          "text": "Mert így több hely jut a hemoglobinnak, és rugalmasabb a sejt."
+        },
+        {
+          "key": "C",
+          "text": "Mert a vörösvérsejt prokarióta sejt."
+        },
+        {
+          "key": "D",
+          "text": "Mert a sejtmag a vérlemezkékbe vándorol."
+        }
+      ],
+      "answer": "B",
+      "category": "felepites-mukodes",
+      "explanation": "Helyes: B. A sejtmag kilökődésével több hemoglobin fér a sejtbe, a sejt bikonkáv alakot vehet fel, és rugalmasan átjut a hajszálereken.",
+      "wrongOptions": {
+        "A": "Nem a sejtmag oxigénfogyasztása a lényeg; a vörösvérsejtnek mitokondriuma sincs, glikolízissel nyer energiát, így nem fogyasztja a szállított oxigént.",
+        "C": "A vörösvérsejt eukarióta eredetű sejt, csak érése során veszíti el a sejtmagját.",
+        "D": "A vérlemezkék a csontvelő óriássejtjeinek leváló darabjai, nem a vörösvérsejt magjából lesznek."
+      }
+    },
+    {
+      "id": "4",
+      "kind": "choice",
+      "prompt": "Melyik sejtben várható a legfejlettebb durva endoplazmatikus hálózat?",
+      "options": [
+        {
+          "key": "A",
+          "text": "a zsírsejtben"
+        },
+        {
+          "key": "B",
+          "text": "a bőr elszarusodó hámsejtjében"
+        },
+        {
+          "key": "C",
+          "text": "az érett vörösvérsejtben"
+        },
+        {
+          "key": "D",
+          "text": "a hasnyálmirigy enzimtermelő sejtjében"
+        }
+      ],
+      "answer": "D",
+      "category": "felepites-mukodes",
+      "explanation": "Helyes: D. A hasnyálmirigy emésztőenzimei fehérjék, amelyeket a durva ER riboszómái szintetizálnak, és a Golgi-készülék csomagol – ezért ezekben a sejtekben mindkettő fejlett.",
+      "wrongOptions": {
+        "A": "A zsírsejt zsírt raktároz; a lipidanyagcseréhez inkább sima ER kapcsolódik.",
+        "B": "Az elszarusodó hámsejt elhal, szarufehérjével telik meg; nem elválasztó sejt.",
+        "C": "Az érett vörösvérsejtnek nincs sejtmagja és endoplazmatikus hálózata."
+      }
+    },
+    {
+      "id": "5",
+      "kind": "text",
+      "prompt": "Hogyan nevezzük a vékonybél ujjszerű kitüremkedéseit, amelyek a felszívó felületet növelik?",
+      "answer": [
+        "bélbolyhok",
+        "bélboholy",
+        "bolyhok",
+        "boholy"
+      ],
+      "category": "felepites-mukodes",
+      "explanation": "Helyes: bélbolyhok. Belsejükben hajszálerek (ide a glükóz, aminosavak) és nyirokér (ide a zsírok) futnak; a hámsejtek mikrobolyhai tovább növelik a felületet.",
+      "maxWords": 2
+    }
+  ],
+  "relatedCategories": [
+    "fogalomhasznalat",
+    "rendszertan-fajismeret"
+  ]
+}

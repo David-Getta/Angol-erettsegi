@@ -1,0 +1,70 @@
+{
+  "name": "angol-erettsegi",
+  "version": "1.0.0",
+  "private": true,
+  "main": "desktop/dist/main.cjs",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/David-Getta/Angol-erettsegi.git"
+  },
+  "author": "David Getta",
+  "description": "Érettségi felkészítő app – lokális, API nélkül (böngészőben és asztali appként)",
+  "engines": {
+    "node": ">=20.9.0"
+  },
+  "scripts": {
+    "setup": "npm install && tsx scripts/setup.ts",
+    "predev": "tsx scripts/seed.ts --quiet",
+    "postinstall": "node scripts/postinstall.js",
+    "dev": "next dev",
+    "dev:lan": "tsx scripts/seed.ts --quiet && next dev -H 0.0.0.0",
+    "build": "next build",
+    "start": "next start",
+    "seed": "tsx scripts/seed.ts",
+    "db:generate": "drizzle-kit generate",
+    "db:migrate": "tsx scripts/migrate.ts",
+    "validate-content": "tsx scripts/validate-content.ts",
+    "validate-feedback": "tsx scripts/validate-feedback.ts",
+    "import-feedback": "tsx scripts/import-feedback.ts",
+    "exchange-status": "tsx scripts/exchange-status.ts",
+    "vocab-requests": "tsx scripts/vocab-requests.ts",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:e2e": "playwright test",
+    "check": "npm run typecheck && npm run test && npm run validate-content",
+    "desktop:bundle": "tsx scripts/desktop/bundle.ts",
+    "desktop:dev": "npm run desktop:bundle && electron . --dev-url=http://localhost:3000",
+    "desktop:build": "tsx scripts/desktop/build.ts --dir",
+    "desktop:dist": "tsx scripts/desktop/build.ts",
+    "desktop:smoke": "tsx scripts/desktop/smoke.ts",
+    "release:notes": "tsx scripts/desktop/release-notes.ts",
+    "release": "tsx scripts/release.ts"
+  },
+  "dependencies": {
+    "better-sqlite3": "^12.11.1",
+    "drizzle-orm": "^0.45.4",
+    "next": "^16.4.5",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1",
+    "ts-fsrs": "^5.4.2",
+    "zod": "^4.6.7"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.63.0",
+    "@tailwindcss/postcss": "^4.3.4",
+    "@types/better-sqlite3": "^9.6.0",
+    "@types/node": "^22.20.5",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "drizzle-kit": "^0.31.11",
+    "electron": "^42.11.18",
+    "electron-builder": "^26.18.0",
+    "electron-updater": "^6.8.11",
+    "esbuild": "^0.27.2",
+    "tailwindcss": "^4.3.4",
+    "tsx": "^4.23.15",
+    "typescript": "^5.9.3",
+    "vitest": "^3.2.7"
+  }
+}

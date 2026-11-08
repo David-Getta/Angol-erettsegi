@@ -1,0 +1,271 @@
+{
+  "schemaVersion": 1,
+  "id": "mag-gr-szovegszerkezet",
+  "subject": "magyar",
+  "revision": 1,
+  "level": "kozep",
+  "source": "generated",
+  "topic": "nyelvtan",
+  "title": "Szövegszerkezet, szövegtípus felismerése",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "grammar",
+  "type": "lesson",
+  "category": "szovegszerkezet",
+  "summaryHu": "A szövegszerkezeti kérdések azt mérik, látod-e a szöveg felépítését: hogyan kapcsolódnak egymáshoz a bekezdések, milyen szerepet tölt be egy rész (bevezetés, példa, ellenérv, összegzés), milyen szövegtípusba és műfajba tartozik a szöveg, mi a kommunikációs célja. A kötőszók, utaló szavak és a bekezdések első mondatai adják a legfontosabb jeleket. Ugyanez a tudás a szövegalkotásban is pontot ér, mert a saját szövegedet is így kell felépítened.",
+  "rules": [
+    {
+      "title": "Szövegtípusok",
+      "explanation": "A szövegtípus a szöveg uralkodó közlésmódját jelöli: elbeszélő (eseményeket mond el időrendben), leíró (tárgyat, helyet, személyt jellemez), érvelő (álláspontot bizonyít érvekkel), magyarázó-értekező (jelenséget, fogalmat magyaráz meg). Egy szövegen belül több típus is keveredhet, de általában az egyik uralkodó.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "„A hősziget kialakulásának több oka van, és ezek egymást erősítik.”",
+          "hu": "Magyarázó szövegtípus: egy jelenség okait fejti ki."
+        }
+      ]
+    },
+    {
+      "title": "Műfajok: ismeretterjesztő és publicisztikai szövegek",
+      "explanation": "Az ismeretterjesztő cikk tudományos ismereteket közöl közérthetően. A publicisztika véleményt fejt ki közéleti kérdésről: vezércikk (a lap álláspontja), jegyzet (személyes, egy esetből általánosít), glossza (rövid, ironikus, csattanós), kritika (műalkotást értékel), esszé (személyes hangú, igényes gondolatkifejtés). A hír és a tudósítás tájékoztat, véleményt nem fűz hozzá.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "Egy írás hétköznapi kérdéssel indul, kutatásra hivatkozik, majd tanácsot ad az olvasónak.",
+          "hu": "Ez publicisztikai, véleményt kifejtő cikk; a tanácsadás és a saját álláspont kizárja a hírt."
+        }
+      ]
+    },
+    {
+      "title": "A bekezdések viszonya és a kötőszók",
+      "explanation": "A bekezdések között logikai viszony van: ok–okozat (ezért, mert, így), ellentét (de, azonban, viszont, ezzel szemben), kiegészítés (ráadásul, továbbá, is), példa (például, gondoljunk csak), összegzés (tehát, vagyis, összességében), megengedés (persze, bár, igaz ugyan). A kérdés a bekezdés „szerepére” vonatkozik: mit tesz hozzá a gondolatmenethez?",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "„Persze volna mit felhozni az unalom ellen.”",
+          "hu": "A „Persze” megengedő bekezdést vezet be: a szerző egy ellenvetést fogad be, mielőtt pontosítja álláspontját."
+        }
+      ]
+    },
+    {
+      "title": "Nagyszerkezet: bevezetés – tárgyalás – befejezés, keret",
+      "explanation": "A legtöbb szöveg háromrészes: a bevezetés felkelti az érdeklődést és megnevezi a témát (gyakran kérdéssel), a tárgyalás kifejti, a befejezés összegez vagy kitekint. Keretes a szerkezet, ha a zárás visszatér a kezdő képhez, kérdéshez, idézethez.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "Egy esszé az „Egyszer volt, hol nem volt” formulával kezd, és az „Itt a vége, fuss el véle!” formulával zár.",
+          "hu": "Keretes szerkezet: a kezdő és a záró mesei formula egymásra felel."
+        }
+      ]
+    },
+    {
+      "title": "Előreutalás, visszautalás, a szerző olvasóhoz fordulása",
+      "explanation": "Emelt szinten gyakori kérdés, hogy egy mondat mire utal vissza vagy előre („Erre még visszatérünk.”), és miért fordul a szerző közvetlenül az olvasóhoz (kérdés, felszólítás, magázás/tegezés). Ezek a szerkezeti eszközök a figyelem irányítását és a kapcsolatteremtést szolgálják.",
+      "emeltOnly": true,
+      "examples": [
+        {
+          "en": "„A történet azonban nem ért véget. Erre még visszatérünk.”",
+          "hu": "Előreutalás: a szerző feszültséget kelt, és jelzi, hogy a téma később folytatódik."
+        }
+      ]
+    }
+  ],
+  "commonMistakes": [
+    {
+      "wrong": "A szöveg hír, mert egy kutatásról számol be.",
+      "right": "A szöveg publicisztika, mert a kutatás csak kiindulópont, a szerző véleményt mond és tanácsot ad.",
+      "why": "A műfajt az uralkodó kommunikációs cél dönti el; egy kutatás megemlítése még nem teszi hírré a szöveget."
+    },
+    {
+      "wrong": "Az 5. bekezdés szerepe: a szerző egyetért az előzőekkel.",
+      "right": "Az 5. bekezdés szerepe: az „azonban” után árnyalja, ellenpontozza az előzőeket.",
+      "why": "A bekezdés elején álló kötőszó (azonban, viszont, ezzel szemben) ellentétet jelez – ezt a kérdésnél figyelembe kell venni."
+    },
+    {
+      "wrong": "A zárás új témát vezet be.",
+      "right": "A zárás visszatér a bevezetés képéhez, és keretet ad.",
+      "why": "Ha a zárásban a kezdés kulcsszavai, képei ismétlődnek, keretes szerkezetről van szó."
+    },
+    {
+      "wrong": "Érvelő szöveg, mert sok adat van benne.",
+      "right": "Magyarázó szöveg, mert egy jelenség okait fejti ki, és nem vitatott álláspontot bizonyít.",
+      "why": "Az érvelő szövegben a szerző vitatható álláspontot véd; az adatok magyarázó szövegben is szerepelnek."
+    }
+  ],
+  "examTips": [
+    "Műfajra vonatkozó kérdésnél nézd meg: van-e a szövegben vélemény, tanács, értékelés (publicisztika), vagy csak tények (hír, ismeretterjesztés)?",
+    "A bekezdés szerepére vonatkozó kérdésnél olvasd el a bekezdés első mondatát és az előtte álló bekezdés utolsó mondatát: a kettő közötti kapcsolat (kötőszó) adja meg a választ.",
+    "Saját szövegeidben (műértelmezés, reflektáló szöveg) is használd tudatosan ezeket az eszközöket: tételmondatos bekezdések, átkötő kötőszók, keretes zárás – ez a szövegszerkezeti pontok kulcsa."
+  ],
+  "practice": [
+    {
+      "id": "1",
+      "kind": "choice",
+      "prompt": "Milyen szövegtípusba tartozik az a szöveg, amely egy jelenség (a városi hősziget) okait sorolja és magyarázza?",
+      "options": [
+        {
+          "key": "A",
+          "text": "magyarázó (értekező)"
+        },
+        {
+          "key": "B",
+          "text": "elbeszélő"
+        },
+        {
+          "key": "C",
+          "text": "leíró"
+        },
+        {
+          "key": "D",
+          "text": "felhívó"
+        }
+      ],
+      "answer": "A",
+      "category": "szovegszerkezet",
+      "explanation": "Helyes: magyarázó. A szöveg egy jelenség okait és összefüggéseit fejti ki, ez a magyarázó-értekező szövegtípus lényege.",
+      "wrongOptions": {
+        "B": "Az elbeszélő szöveg eseményeket mond el időrendben, szereplőkkel.",
+        "C": "A leíró szöveg egy tárgy, hely vagy személy jellemzőit mutatja be, nem okokat magyaráz.",
+        "D": "A felhívó szöveg cselekvésre szólít fel (pl. plakát, kiáltvány); a hősziget-szöveg fő célja a magyarázat."
+      }
+    },
+    {
+      "id": "2",
+      "kind": "choice",
+      "prompt": "Melyik publicisztikai műfaj jellemzője a rövidség, az irónia és a csattanós zárás?",
+      "options": [
+        {
+          "key": "A",
+          "text": "vezércikk"
+        },
+        {
+          "key": "B",
+          "text": "glossza"
+        },
+        {
+          "key": "C",
+          "text": "riport"
+        },
+        {
+          "key": "D",
+          "text": "hír"
+        }
+      ],
+      "answer": "B",
+      "category": "szovegszerkezet",
+      "explanation": "Helyes: glossza. Rövid, ironikus, gyakran egy aktuális hírre reagáló, csattanóval záruló publicisztikai műfaj.",
+      "wrongOptions": {
+        "A": "A vezércikk hosszabb, a lap hivatalos álláspontját fejti ki, nem feltétlenül ironikus.",
+        "C": "A riport helyszíni tapasztalatokra épülő, hosszabb tényfeltáró műfaj.",
+        "D": "A hír tényeket közöl, véleményt és iróniát nem tartalmaz."
+      }
+    },
+    {
+      "id": "3",
+      "kind": "choice",
+      "prompt": "Egy bekezdés így kezdődik: „Persze volna mit felhozni az unalom ellen.” Milyen szerepet tölt be valószínűleg a bekezdés?",
+      "options": [
+        {
+          "key": "A",
+          "text": "példa: a szerző egy konkrét esetet mesél el"
+        },
+        {
+          "key": "B",
+          "text": "összegzés: a szerző levonja a végső következtetést"
+        },
+        {
+          "key": "C",
+          "text": "megengedés: a szerző egy ellenvetést mutat be, mielőtt pontosítja álláspontját"
+        },
+        {
+          "key": "D",
+          "text": "bevezetés: a szerző megnevezi a témát"
+        }
+      ],
+      "answer": "C",
+      "category": "szovegszerkezet",
+      "explanation": "Helyes: C. A „Persze” megengedő szó, és a mondat az ellenoldal érveit vezeti be („mit felhozni … ellen”).",
+      "wrongOptions": {
+        "A": "Példát a „például”, „gondoljunk csak” jelezne.",
+        "B": "Összegzést a „tehát”, „vagyis”, „összességében” vezetne be.",
+        "D": "A témát a szöveg eleje nevezi meg; ez a mondat már a gondolatmenet közepén áll."
+      }
+    },
+    {
+      "id": "4",
+      "kind": "choice",
+      "prompt": "Egy esszé a „Mikor unatkozott utoljára?” kérdéssel kezdődik, és a zárásban a csendet „régi ismerősként” mutatja be, visszautalva a bevezetés „elfeledett barát” képére. Milyen szerkezetről van szó?",
+      "options": [
+        {
+          "key": "A",
+          "text": "kérdés–felelet sorozat"
+        },
+        {
+          "key": "B",
+          "text": "időrendi szerkezet"
+        },
+        {
+          "key": "C",
+          "text": "párhuzamos szerkezet két szereplővel"
+        },
+        {
+          "key": "D",
+          "text": "keretes szerkezet"
+        }
+      ],
+      "answer": "D",
+      "category": "szovegszerkezet",
+      "explanation": "Helyes: keretes szerkezet. A zárás visszatér a bevezetés témájához és képéhez, így a szöveg kerek egésszé válik.",
+      "wrongOptions": {
+        "A": "Csak a kezdő mondat kérdés; a szöveg nem kérdések és válaszok sorozata.",
+        "B": "Időrendi szerkezet eseménysorra épül, ez az esszé gondolati.",
+        "C": "Nincs két párhuzamos szereplő."
+      }
+    },
+    {
+      "id": "5",
+      "kind": "text",
+      "prompt": "Szöveg: „A fák árnyékot adnak. Ráadásul párologtatnak is, ami tovább hűti a levegőt.” Melyik szó jelzi, hogy a második mondat kiegészíti az elsőt? Írja ki!",
+      "answer": [
+        "ráadásul"
+      ],
+      "category": "szovegszerkezet",
+      "explanation": "Helyes válasz: ráadásul. A kiegészítő (kapcsolatos) viszonyt jelölő szó azt mutatja, hogy a második mondat egy újabb, az elsőhöz hozzáadódó érvet közöl; az „is” ezt erősíti."
+    },
+    {
+      "id": "6",
+      "kind": "choice",
+      "prompt": "Mit jelez a szöveg első bekezdésének végén álló mondat: „Erre még visszatérünk.”?",
+      "options": [
+        {
+          "key": "A",
+          "text": "a szöveg befejezését"
+        },
+        {
+          "key": "B",
+          "text": "visszautalás a cím jelentésére"
+        },
+        {
+          "key": "C",
+          "text": "előreutalás: a téma a szöveg későbbi részében folytatódik"
+        },
+        {
+          "key": "D",
+          "text": "a szerző bizonytalanságát"
+        }
+      ],
+      "answer": "C",
+      "category": "szovegszerkezet",
+      "explanation": "Helyes: előreutalás. A szerző jelzi, hogy egy megkezdett szálat később folytat – ez felkelti az olvasó kíváncsiságát, és összeköti a szöveg részeit.",
+      "wrongOptions": {
+        "A": "A szöveg elején áll, és éppen a folytatást ígéri.",
+        "B": "A „még visszatérünk” a jövőre, a szöveg későbbi részére vonatkozik, nem a címre.",
+        "D": "Nem bizonytalanságot, hanem tudatos szerkesztést fejez ki."
+      }
+    }
+  ],
+  "relatedCategories": [
+    "lenyegkiemeles",
+    "szerkesztettseg"
+  ]
+}

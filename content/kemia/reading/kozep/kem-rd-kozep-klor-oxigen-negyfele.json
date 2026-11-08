@@ -1,0 +1,185 @@
+{
+  "schemaVersion": 1,
+  "id": "kem-rd-kozep-klor-oxigen-negyfele",
+  "subject": "kemia",
+  "revision": 1,
+  "level": "kozep",
+  "source": "generated",
+  "topic": "szervetlen-nemfemek",
+  "title": "Klór és oxigén – négyféle asszociáció",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "reading",
+  "type": "negyfele-asszociacio",
+  "instructions": "Négyféle asszociáció. Döntsd el, hogy az állítások melyik anyagra vonatkoznak! A) klór (Cl₂), B) oxigén (O₂), C) mindkettő, D) egyik sem. Írd a megfelelő betűt az állítás mellé! A 0. a példa.",
+  "example": {
+    "id": "0",
+    "kind": "choice",
+    "prompt": "Zöldessárga színű, szúrós szagú gáz.",
+    "options": [
+      { "key": "A", "text": "klór" },
+      { "key": "B", "text": "oxigén" },
+      { "key": "C", "text": "mindkettő" },
+      { "key": "D", "text": "egyik sem" }
+    ],
+    "answer": "A",
+    "category": "anyagismeret",
+    "explanation": "Helyes: A. A klórgáz zöldessárga színű, szúrós szagú, mérgező; az oxigén színtelen és szagtalan."
+  },
+  "items": [
+    {
+      "id": "1",
+      "kind": "choice",
+      "prompt": "Standardállapotban kétatomos molekulákból álló gáz.",
+      "options": [
+        { "key": "A", "text": "klór" },
+        { "key": "B", "text": "oxigén" },
+        { "key": "C", "text": "mindkettő" },
+        { "key": "D", "text": "egyik sem" }
+      ],
+      "answer": "C",
+      "category": "kotes-szerkezet",
+      "explanation": "Helyes: C. Mind a klór (Cl₂), mind az oxigén (O₂) kétatomos, apoláris molekulákból áll, és standardállapotban mindkettő gáz.",
+      "wrongOptions": {
+        "A": "Nem csak a klórra igaz: az oxigén is kétatomos molekulájú gáz (O₂).",
+        "B": "Nem csak az oxigénre igaz: a klór is kétatomos molekulájú gáz (Cl₂).",
+        "D": "Mindkét elem kétatomos molekulákat alkot, tehát az állítás nem „egyik sem”."
+      }
+    },
+    {
+      "id": "2",
+      "kind": "choice",
+      "prompt": "Vízzel reagálva hipoklórossav keletkezik belőle.",
+      "options": [
+        { "key": "A", "text": "klór" },
+        { "key": "B", "text": "oxigén" },
+        { "key": "C", "text": "mindkettő" },
+        { "key": "D", "text": "egyik sem" }
+      ],
+      "answer": "A",
+      "category": "reakcioegyenlet",
+      "explanation": "Helyes: A. A klór vízzel részlegesen reagál: Cl₂ + H₂O ⇌ HCl + HOCl; a keletkező hipoklórossav (HOCl) felelős a klóros víz fertőtlenítő és fehérítő hatásáért. Az oxigén vízben csak fizikailag oldódik, nem reagál vele.",
+      "wrongOptions": {
+        "B": "Az oxigén nem reagál a vízzel, csak kis mértékben oldódik benne.",
+        "C": "Csak a klór reagál vízzel, az oxigén nem.",
+        "D": "A klórra igaz az állítás (Cl₂ + H₂O ⇌ HCl + HOCl)."
+      }
+    },
+    {
+      "id": "3",
+      "kind": "choice",
+      "prompt": "Színtelen, szagtalan gáz, az égést táplálja.",
+      "options": [
+        { "key": "A", "text": "klór" },
+        { "key": "B", "text": "oxigén" },
+        { "key": "C", "text": "mindkettő" },
+        { "key": "D", "text": "egyik sem" }
+      ],
+      "answer": "B",
+      "category": "anyagismeret",
+      "explanation": "Helyes: B. Az oxigén színtelen, szagtalan gáz, és az égési folyamatok oxidálószere (az égést táplálja). A klór zöldessárga és szúrós szagú.",
+      "wrongOptions": {
+        "A": "A klór színes (zöldessárga) és szúrós szagú gáz.",
+        "C": "A klór nem színtelen és nem szagtalan.",
+        "D": "Az oxigénre pontosan igaz az állítás."
+      }
+    },
+    {
+      "id": "4",
+      "kind": "choice",
+      "prompt": "Iparilag nátrium-klorid-oldat elektrolízisével állítják elő.",
+      "options": [
+        { "key": "A", "text": "klór" },
+        { "key": "B", "text": "oxigén" },
+        { "key": "C", "text": "mindkettő" },
+        { "key": "D", "text": "egyik sem" }
+      ],
+      "answer": "A",
+      "category": "anyagismeret",
+      "explanation": "Helyes: A. A klórt iparilag konyhasóoldat elektrolízisével gyártják: az anódon klórgáz, a katódon hidrogén fejlődik, az oldatban nátrium-hidroxid marad. Az oxigént a cseppfolyósított levegő szétválasztásával (frakcionált desztillációjával) nyerik.",
+      "wrongOptions": {
+        "B": "Az oxigént nem sóoldat elektrolízisével, hanem a cseppfolyós levegő frakcionált desztillációjával állítják elő iparilag.",
+        "C": "Csak a klór előállítása történik NaCl-oldat elektrolízisével.",
+        "D": "A klórra igaz az állítás."
+      }
+    },
+    {
+      "id": "5",
+      "kind": "choice",
+      "prompt": "Molekulájában az atomokat kettős kovalens kötés kapcsolja össze.",
+      "options": [
+        { "key": "A", "text": "klór" },
+        { "key": "B", "text": "oxigén" },
+        { "key": "C", "text": "mindkettő" },
+        { "key": "D", "text": "egyik sem" }
+      ],
+      "answer": "B",
+      "category": "kotes-szerkezet",
+      "explanation": "Helyes: B. Az oxigénatomnak 6 vegyértékelektronja van, ezért két oxigénatom két-két elektront ad a közös kötésbe: O=O kettős kötés. A klóratomnak 7 vegyértékelektronja van, a Cl₂-molekulában egyszeres kötés van (Cl–Cl).",
+      "wrongOptions": {
+        "A": "A klórmolekulában egyszeres kovalens kötés van, mert a klóratomnak csak egy elektron hiányzik a zárt héjhoz.",
+        "C": "A Cl₂-ben egyszeres, az O₂-ben kettős kötés van, tehát nem igaz mindkettőre.",
+        "D": "Az oxigénmolekulára igaz az állítás (O=O)."
+      }
+    },
+    {
+      "id": "6",
+      "kind": "choice",
+      "prompt": "Standardállapotban folyékony halmazállapotú.",
+      "options": [
+        { "key": "A", "text": "klór" },
+        { "key": "B", "text": "oxigén" },
+        { "key": "C", "text": "mindkettő" },
+        { "key": "D", "text": "egyik sem" }
+      ],
+      "answer": "D",
+      "category": "anyagismeret",
+      "explanation": "Helyes: D. Mind a klór, mind az oxigén standardállapotban (25 °C, 100 kPa) gáz, mert apoláris molekuláik között csak gyenge diszperziós kölcsönhatás működik. A halogének közül a bróm folyékony, a jód szilárd.",
+      "wrongOptions": {
+        "A": "A klór gáz; a folyékony halogén a bróm.",
+        "B": "Az oxigén gáz, forráspontja −183 °C.",
+        "C": "Egyikük sem folyékony standardállapotban."
+      }
+    },
+    {
+      "id": "7",
+      "kind": "choice",
+      "prompt": "Atomja egy vagy több elektron felvételével nemesgáz-szerkezetű aniont képez.",
+      "options": [
+        { "key": "A", "text": "klór" },
+        { "key": "B", "text": "oxigén" },
+        { "key": "C", "text": "mindkettő" },
+        { "key": "D", "text": "egyik sem" }
+      ],
+      "answer": "C",
+      "category": "atomszerkezet",
+      "explanation": "Helyes: C. A klóratom egy elektron felvételével kloridiont (Cl⁻, argonszerkezet), az oxigénatom két elektron felvételével oxidiont (O²⁻, neonszerkezet) képez; mindkettő nemesgáz-szerkezetű anion.",
+      "wrongOptions": {
+        "A": "Az oxigénre is igaz (O²⁻).",
+        "B": "A klórra is igaz (Cl⁻).",
+        "D": "Mindkét nemfém hajlamos anionképzésre."
+      }
+    },
+    {
+      "id": "8",
+      "kind": "choice",
+      "prompt": "Fémekkel alkotott kétkomponensű (biner) vegyületeiben az oxidációs száma mindig −1.",
+      "options": [
+        { "key": "A", "text": "klór" },
+        { "key": "B", "text": "oxigén" },
+        { "key": "C", "text": "mindkettő" },
+        { "key": "D", "text": "egyik sem" }
+      ],
+      "answer": "A",
+      "category": "reakciotipus",
+      "explanation": "Helyes: A. A fém-kloridokban (NaCl, CaCl₂) a klór kloridion formájában van, oxidációs száma mindig −1. Az oxigén a fém-oxidokban −2 oxidációs számú (pl. MgO, Fe₂O₃), −1 csak a peroxidokban (pl. Na₂O₂), tehát rá nem igaz, hogy mindig −1.",
+      "wrongOptions": {
+        "B": "Az oxigén oxidációs száma a fém-oxidokban −2 (−1 csak a peroxidokban, pl. Na₂O₂), tehát nem mindig −1.",
+        "C": "Csak a klórra igaz; az oxigén a fém-oxidokban −2.",
+        "D": "A klórra igaz az állítás (pl. NaCl: Na +1, Cl −1)."
+      }
+    }
+  ],
+  "glossary": [],
+  "suggestedMinutes": 8
+}

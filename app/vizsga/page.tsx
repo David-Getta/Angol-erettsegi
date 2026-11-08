@@ -1,0 +1,203 @@
+import type { Metadata } from "next";
+import Link from "next/link";
+import { configFor, examConfig, levelStructure, oralPart, writtenParts } from "@/lib/exam/config";
+import { minPointsFor } from "@/lib/scoring/exam";
+import { getSettings } from "@/lib/settings";
+import type { Level } from "@/lib/content/schema";
+import { Badge, Card, PageHeader } from "@/components/ui";
+import { t } from "@/lib/i18n/hu";
+import { GuideLinks } from "@/components/guides/GuideLink";
+
+export const metadata: Metadata = { title: t.examInfo.title };
+
+function LevelInfo({ level }: { level: Level }) {
+  const s = levelStructure(level);
+  const grading = examConfig.grading();
+  const cfg = configFor(examConfig.subject().id);
+  const writing = cfg.hasRubric("writing", level) ? examConfig.writingRubric(level) : null;
+  const speaking = cfg.hasRubric("speaking", level) ? examConfig.speakingRubric(level) : null;
+  const written = writtenParts(level).filter((p) => p.maxPoints > 0);
+  const practiceOnly = writtenParts(level).filter((p) => p.maxPoints === 0);
+  const oral = oralPart(level);
+  const writtenApplies = grading.minPartAppliesTo.includes("written");
+  const brk = s.breaks[0];
+  return (
+    <div className="space-y-5">
+      <Card title={`${t.examInfo.written} (${s.writtenTotalMin} ${t.examInfo.minutes})`}>
+        <div className="overflow-x-auto">
+          <table className="w-full min-w-[480px] text-sm" data-testid={`exam-parts-${level}`}>
+            <thead className="text-left text-xs text-muted">
+              <tr>
+                <th className="pb-1">{t.examInfo.part}</th>
+                <th className="pb-1 pl-3 text-right">{t.examInfo.time}</th>
+                <th className="pb-1 pl-3 text-right">{t.examInfo.points}</th>
+                <th className="pb-1 pl-3 text-right">{t.examInfo.minimum}</th>
+              </tr>
+            </thead>
+            <tbody>
+              {[...written, ...(oral ? [oral] : [])].map((p) => (
+                <tr key={p.id} className="border-t border-border">
+                  <td className="py-1.5">
+                    {p.name}
+                    {p.conditional && <Badge tone="accent">{t.examInfo.conditionalOral}</Badge>}
+                    {p.notes.length > 0 && <span className="block text-xs text-muted">{p.notes.join(" ")}</span>}
+                    {p.conditional && <span className="block text-xs text-muted">{p.conditional.note}</span>}
+                  </td>
+                  <td className="py-1.5 text-right tabular-nums">{p.timeMin ? `${p.timeMin} ${t.examInfo.minutes}` : s.oral?.durationMin ? `~${s.oral.durationMin} ${t.examInfo.minutes}` : "–"}</td>
+                  <td className="py-1.5 text-right tabular-nums">{p.maxPoints}</td>
+                  <td className="py-1.5 text-right tabular-nums">{(grading.minPartAppliesTo as string[]).includes(p.id) ? minPointsFor(p.maxPoints, grading) : "–"}</td>
+                </tr>
+              ))}
+              {writtenApplies && written.length > 1 && (
+                <tr className="border-t border-border text-muted">
+                  <td className="py-1.5">{t.mock.writtenTogether}</td>
+                  <td />
+                  <td className="py-1.5 text-right tabular-nums">{written.reduce((n, p) => n + p.maxPoints, 0)}</td>
+                  <td className="py-1.5 text-right tabular-nums">{minPointsFor(written.reduce((n, p) => n + p.maxPoints, 0), grading)}</td>
+                </tr>
+              )}
+              <tr className="border-t border-border font-semibold">
+                <td className="py-1.5">{t.examInfo.total}</td>
+                <td />
+                <td className="py-1.5 text-right tabular-nums">{s.totalPoints}</td>
+                <td />
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        {brk && <p className="mt-2 text-sm text-muted">{t.examInfo.break(brk.minutes)}</p>}
+        {practiceOnly.length > 0 && <p className="mt-2 text-sm text-muted">{t.examInfo.practiceOnly(practiceOnly.map((p) => p.name).join(", "))}</p>}
+      </Card>
+
+      {s.oral && (
+      <Card title={t.examInfo.oral(s.oral.durationMin)}>
+        <ol className="space-y-2 text-sm">
+          {s.oral.parts.map((p) => (
+            <li key={p.number}>
+              <b>
+                {p.number}. {p.name}
+              </b>
+              {p.minutes && <span className="text-muted"> · {p.minutes} {t.examInfo.minutes}</span>}
+              <span className="block">{p.description}</span>
+            </li>
+          ))}
+        </ol>
+        {speaking && speaking.officialScoring.length > 0 && (
+          <ul className="mt-3 list-disc space-y-1 pl-5 text-sm text-muted">
+            {speaking.officialScoring.map((x) => (
+              <li key={x}>{x}</li>
+            ))}
+          </ul>
+        )}
+      </Card>
+      )}
+
+      {writing && (
+      <Card title={written.find((p) => p.kind === "written")?.name ? `${written.find((p) => p.kind === "written")!.name} – pontozás` : t.examInfo.writing}>
+        <div className="grid gap-4 md:grid-cols-2">
+          {writing.tasks.map((task) => (
+            <div key={task.taskNumber}>
+              <h3 className="font-semibold">
+                {t.examInfo.task(task.taskNumber)}: {task.name}
+              </h3>
+              <p className="text-sm text-muted">
+                {task.wordLimit && `${t.examInfo.words(task.wordLimit.min, task.wordLimit.max)} · `}{task.guidingPoints && `${task.guidingPoints} irányító szempont · `}{task.maxRaw} pont
+              </p>
+              <table className="mt-2 w-full text-sm">
+                <tbody>
+                  {task.criteria.map((c) => (
+                    <tr key={c.id} className="border-t border-border">
+                      <td className="py-1">{c.name}</td>
+                      <td className="py-1 text-right tabular-nums">{c.max}</td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+              {task.rules.length > 0 && (
+                <ul className="mt-2 list-disc space-y-0.5 pl-5 text-xs text-muted">
+                  {task.rules.map((r) => (
+                    <li key={r}>{r}</li>
+                  ))}
+                </ul>
+              )}
+            </div>
+          ))}
+        </div>
+        {writing.generalRules.length > 0 && (
+          <ul className="mt-4 list-disc space-y-1 pl-5 text-sm">
+            {writing.generalRules.map((r) => (
+              <li key={r}>{r}</li>
+            ))}
+          </ul>
+        )}
+      </Card>
+      )}
+    </div>
+  );
+}
+
+export default function ExamInfoPage() {
+  const level = getSettings().level;
+  const grading = examConfig.grading();
+  const other: Level = level === "emelt" ? "kozep" : "emelt";
+  // a subject studied at one level only shows that level
+  const levels = examConfig.subject().levels;
+  return (
+    <div>
+      <PageHeader title={t.examInfo.title} intro={t.examInfo.intro(examConfig.subject().name)} />
+      <GuideLinks type="exam" title={t.guides.byPart} names={Object.fromEntries(levelStructure(level).parts.map((p) => [p.id, p.name]))} />
+      <div className="grid grid-cols-1 gap-5 lg:grid-cols-[minmax(0,1fr)_320px]">
+        <div className="min-w-0">
+          <h2 className="mb-3 flex items-center gap-2 text-lg font-semibold">
+            {levelStructure(level).name} {levelStructure(level).cefr && <Badge tone="accent">{levelStructure(level).cefr}</Badge>}
+          </h2>
+          <LevelInfo level={level} />
+          {levels.includes(other) && (
+            <details className="mt-6">
+              <summary className="cursor-pointer text-lg font-semibold">
+                {levelStructure(other).name} {levelStructure(other).cefr && <span className="text-sm font-normal text-muted">({levelStructure(other).cefr})</span>}
+              </summary>
+              <div className="mt-3">
+                <LevelInfo level={other} />
+              </div>
+            </details>
+          )}
+        </div>
+        <aside className="min-w-0 space-y-5">
+          <Card title={t.examInfo.grades}>
+            {(["kozep", "emelt"] as const).filter((lv) => levels.includes(lv)).map((lv) => (
+              <div key={lv} className="mb-3 last:mb-0">
+                <div className="mb-1 text-sm font-medium">{levelStructure(lv).name}</div>
+                <table className="w-full text-sm" data-testid={`grades-${lv}`}>
+                  <tbody>
+                    {grading.gradeBoundaries[lv].map((b) => (
+                      <tr key={b.grade} className="border-t border-border">
+                        <td className="py-1">
+                          {b.grade} ({b.name})
+                        </td>
+                        <td className="py-1 text-right tabular-nums">{b.minPct}%-tól</td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
+            ))}
+          </Card>
+          {grading.languageExamNote && (
+            <Card title={t.examInfo.langExam}>
+              <p className="text-sm">{grading.languageExamNote}</p>
+            </Card>
+          )}
+          <Card title={t.examInfo.rules}>
+            <p className="text-sm">{grading.minPartNote}</p>
+          </Card>
+          <p className="text-xs text-muted">
+            <Link href="/beallitasok" className="hover:underline">
+              {t.examInfo.sources}
+            </Link>
+          </p>
+        </aside>
+      </div>
+    </div>
+  );
+}

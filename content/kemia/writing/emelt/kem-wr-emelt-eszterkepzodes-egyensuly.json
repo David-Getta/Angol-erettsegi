@@ -1,0 +1,96 @@
+{
+  "schemaVersion": 1,
+  "id": "kem-wr-emelt-eszterkepzodes-egyensuly",
+  "subject": "kemia",
+  "revision": 1,
+  "level": "emelt",
+  "source": "generated",
+  "topic": "reakciok",
+  "title": "Az etil-acetát képződésének egyensúlya",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "writing",
+  "type": "szamitasi",
+  "taskNumber": 1,
+  "situation": "Az ecetsav és az etanol kénsav katalizátor jelenlétében megfordítható reakcióban etil-acetátot és vizet képez. A reakció egyensúlyi állandója az adott hőmérsékleten K = 4,00. Az elegy térfogata a reakció során nem változik.\n\na) Írja fel a reakció egyenletét! (1 pont)\nb) 1,00 mol ecetsavat és 1,00 mol etanolt elegyítünk. Számítsa ki az egyensúlyi elegy összetételét (az egyes komponensek anyagmennyiségét)! (4 pont)\nc) Az ecetsav hány százaléka alakult át a b) esetben? (2 pont)\nd) Hány mol etanolt kell 1,00 mol ecetsavhoz keverni, hogy egyensúlyban az ecetsav 90,0 %-a átalakuljon? (4 pont)\ne) Adjon meg egy további módszert, amellyel az egyensúly az észterképződés irányába tolható, és indokolja! (1 pont)",
+  "points": [
+    {
+      "id": "p1",
+      "text": "a) Az észterképződés egyenlete (1 pont)"
+    },
+    {
+      "id": "p2",
+      "text": "b) Az egyensúlyi összetétel kiszámítása az egyensúlyi állandóból (4 pont)"
+    },
+    {
+      "id": "p3",
+      "text": "c) Az ecetsav átalakulási százaléka (2 pont)"
+    },
+    {
+      "id": "p4",
+      "text": "d) A 90 %-os átalakuláshoz szükséges etanol anyagmennyisége (4 pont)"
+    },
+    {
+      "id": "p5",
+      "text": "e) Az egyensúly eltolásának további módja, indoklással (1 pont)"
+    }
+  ],
+  "suggestedMinutes": 30,
+  "usefulPhrases": [
+    {
+      "en": "kiindulás – átalakulás – egyensúly",
+      "hu": "Háromsoros táblázat: az átalakult mennyiséget x-szel jelöld az egyenlet arányai szerint."
+    },
+    {
+      "en": "K = [észter][víz] / ([sav][alkohol])",
+      "hu": "Az észterképződés egyensúlyi állandója."
+    },
+    {
+      "en": "Δn(gáz/oldott) = 0 → a térfogat kiesik",
+      "hu": "Ha a két oldalon azonos a részecskeszám, anyagmennyiségekkel is számolhatsz."
+    },
+    {
+      "en": "csak a 0 < x < n(kiindulás) gyök értelmes",
+      "hu": "A másodfokú egyenlet másik gyökét indokoltan el kell vetni."
+    },
+    {
+      "en": "Le Chatelier–Braun-elv",
+      "hu": "Termékelvonás vagy kiindulási anyag feleslege a termékek felé tolja az egyensúlyt."
+    },
+    {
+      "en": "átalakulási százalék = n(átalakult) / n(kiindulási) · 100 %",
+      "hu": "Konverzió, kitermelés."
+    }
+  ],
+  "checklistExtra": [],
+  "modelAnswer": {
+    "text": "a) CH₃COOH + CH₃CH₂OH ⇌ CH₃COOCH₂CH₃ + H₂O\n\nb) Ha az egyensúly beálltáig x mol ecetsav alakul át, akkor x mol etanol is elfogy, és x mol észter, valamint x mol víz keletkezik:\negyensúlyban n(ecetsav) = n(etanol) = (1,00 − x) mol, n(észter) = n(víz) = x mol.\nA reakcióban az anyagmennyiség nem változik (2 mol → 2 mol), ezért a térfogat kiesik, és az egyensúlyi állandó anyagmennyiségekkel is felírható:\nK = [észter] · [víz] / ([sav] · [alkohol]) = x² / (1,00 − x)² = 4,00\nNégyzetgyököt vonva (0 < x < 1,00, ezért csak a pozitív gyök értelmes): x / (1,00 − x) = 2,00 → x = 2,00 − 2,00x → x = 0,667 mol.\nAz egyensúlyi elegy 0,333 mol ecetsavat, 0,333 mol etanolt, 0,667 mol etil-acetátot és 0,667 mol vizet tartalmaz.\n\nc) Az átalakulás: 0,667 mol / 1,00 mol · 100 % = 66,7 %. Az ecetsav 66,7 %-a alakult át.\n\nd) Ha az ecetsav 90,0 %-a alakul át, egyensúlyban 0,900 mol észter és 0,900 mol víz van, 0,100 mol ecetsav marad, az etanolból pedig (n − 0,900) mol, ha n mol etanolból indulunk ki:\nK = 0,900² / (0,100 · (n − 0,900)) = 4,00\n0,810 = 0,400 · (n − 0,900) → n − 0,900 = 2,025 → n = 2,925 mol ≈ 2,93 mol\n1,00 mol ecetsavhoz kb. 2,93 mol etanolt kell keverni.\n\ne) A keletkező vizet el kell vonni az elegyből (például vízmegkötő tömény kénsavval vagy az észter, illetve a víz folyamatos ledesztillálásával): a termék koncentrációjának csökkenése a Le Chatelier–Braun-elv szerint az egyensúlyt az észterképződés irányába tolja.",
+    "pointsCovered": [
+      {
+        "id": "p1",
+        "quote": "CH₃COOH + CH₃CH₂OH ⇌ CH₃COOCH₂CH₃ + H₂O"
+      },
+      {
+        "id": "p2",
+        "quote": "Az egyensúlyi elegy 0,333 mol ecetsavat, 0,333 mol etanolt, 0,667 mol etil-acetátot és 0,667 mol vizet tartalmaz."
+      },
+      {
+        "id": "p3",
+        "quote": "Az ecetsav 66,7 %-a alakult át."
+      },
+      {
+        "id": "p4",
+        "quote": "0,810 = 0,400 · (n − 0,900) → n − 0,900 = 2,025 → n = 2,925 mol ≈ 2,93 mol"
+      },
+      {
+        "id": "p5",
+        "quote": "a termék koncentrációjának csökkenése a Le Chatelier–Braun-elv szerint az egyensúlyt az észterképződés irányába tolja"
+      }
+    ],
+    "notes": [
+      "Eredmény: helyes az egyensúlyi összetétel (0,333 / 0,333 / 0,667 / 0,667 mol), a 66,7 %-os átalakulás és a 2,93 mol etanol.",
+      "Indoklás: a megoldás megindokolja, miért hagyható el a térfogat (nem változik a részecskeszám), és miért csak a pozitív gyök értelmes; a d) részben is az egyensúlyi mennyiségeket helyettesíti be, nem a kiindulásiakat.",
+      "Elmélet és forma: az e) részben megnevezi az elvet (Le Chatelier–Braun), és az egyenletben az egyensúlyjelet (⇌) használja; minden eredmény mondatos válasszal szerepel."
+    ]
+  }
+}

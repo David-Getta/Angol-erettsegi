@@ -1,0 +1,175 @@
+{
+  "schemaVersion": 1,
+  "id": "ls-kozep-city-bike-scheme-tf",
+  "subject": "angol",
+  "revision": 1,
+  "level": "kozep",
+  "source": "generated",
+  "topic": "kornyezet",
+  "title": "A new bike-sharing scheme",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "reservedFor": "diagnostic",
+  "section": "listening",
+  "type": "true-false",
+  "instructions": "You are going to listen to a local radio report about a new bike-sharing scheme. Decide if the statements are true (T) or false (F). You will hear the recording twice. There is an example (0) at the beginning.",
+  "instructionsHu": "Egy helyi rádióriportot hallasz egy új közbringa-rendszerről. Döntsd el, igazak (T) vagy hamisak (F) az állítások. A felvételt kétszer hallod.",
+  "listening": {
+    "format": "radio",
+    "speakers": [
+      {
+        "id": "P",
+        "name": "Presenter",
+        "gender": "female",
+        "accent": "en-GB",
+        "age": "adult"
+      },
+      {
+        "id": "D",
+        "name": "David Moore (city council)",
+        "gender": "male",
+        "accent": "en-GB",
+        "age": "adult"
+      }
+    ],
+    "script": [
+      {
+        "speaker": "P",
+        "text": "Good morning and welcome to City Talk. From next Monday, people in Brookfield will be able to rent bicycles from twenty stations around the town centre. With me in the studio is David Moore from the city council. Good morning, David."
+      },
+      {
+        "speaker": "D",
+        "text": "Good morning. Yes, we're really excited about it. We've been planning the scheme for almost two years, and now the bikes are finally here."
+      },
+      {
+        "speaker": "P",
+        "text": "So how does it work?"
+      },
+      {
+        "speaker": "D",
+        "text": "It's very simple. You download our app, register with your bank card, and then you can unlock any bike by scanning the code on it. The first thirty minutes of every ride are free, and after that it costs one pound for every half hour."
+      },
+      {
+        "speaker": "P",
+        "text": "And can you leave the bike anywhere?"
+      },
+      {
+        "speaker": "D",
+        "text": "No, you have to return it to one of the stations. If you just leave it in the street, you'll have to pay a fine of twenty pounds. But don't worry, the app shows you where the nearest station is and how many free places it has."
+      },
+      {
+        "speaker": "P",
+        "text": "What about people who don't have a smartphone?"
+      },
+      {
+        "speaker": "D",
+        "text": "Good question. They can buy a card at the library or at the tourist information office. The card works exactly like the app."
+      },
+      {
+        "speaker": "P",
+        "text": "Some listeners have asked about safety. Do you provide helmets?"
+      },
+      {
+        "speaker": "D",
+        "text": "We don't, I'm afraid, because it's difficult to keep them clean. But we strongly recommend wearing one, and local bike shops are offering a fifteen percent discount on helmets this month."
+      },
+      {
+        "speaker": "P",
+        "text": "And the bikes themselves – are they electric?"
+      },
+      {
+        "speaker": "D",
+        "text": "At the moment all two hundred bikes are normal ones. But if the scheme is successful, we'd like to add fifty electric bikes next spring, especially for the hilly area near the university."
+      },
+      {
+        "speaker": "P",
+        "text": "David Moore, thank you very much."
+      }
+    ]
+  },
+  "example": {
+    "id": "0",
+    "kind": "tf",
+    "prompt": "The scheme starts next Monday.",
+    "answer": "T",
+    "category": "detail",
+    "explanation": "A műsorvezető azt mondja: „From next Monday” – tehát jövő hétfőn indul.",
+    "evidence": "From next Monday"
+  },
+  "items": [
+    {
+      "id": "1",
+      "kind": "tf",
+      "prompt": "The council has been working on the scheme for about two years.",
+      "answer": "T",
+      "category": "detail",
+      "explanation": "David szerint majdnem két éve tervezik a rendszert („almost two years”), ez megfelel a „körülbelül két év”-nek.",
+      "evidence": "We've been planning the scheme for almost two years"
+    },
+    {
+      "id": "2",
+      "kind": "tf",
+      "prompt": "You need to pay for the first thirty minutes of a ride.",
+      "answer": "F",
+      "category": "detail",
+      "explanation": "Hamis: az első harminc perc ingyenes („The first thirty minutes of every ride are free”), csak utána kell fizetni.",
+      "evidence": "The first thirty minutes of every ride are free"
+    },
+    {
+      "id": "3",
+      "kind": "tf",
+      "prompt": "You can leave the bike anywhere in the town centre.",
+      "answer": "F",
+      "category": "detail",
+      "explanation": "Hamis: a biciklit valamelyik állomásra kell visszavinni, különben 20 font bírságot kell fizetni.",
+      "evidence": "No, you have to return it to one of the stations."
+    },
+    {
+      "id": "4",
+      "kind": "tf",
+      "prompt": "The app tells you how many places are free at a station.",
+      "answer": "T",
+      "category": "detail",
+      "explanation": "Igaz: az app megmutatja a legközelebbi állomást és azt is, hány szabad hely van rajta.",
+      "evidence": "the app shows you where the nearest station is and how many free places it has"
+    },
+    {
+      "id": "5",
+      "kind": "tf",
+      "prompt": "People without a smartphone cannot use the bikes.",
+      "answer": "F",
+      "category": "detail",
+      "explanation": "Hamis: okostelefon nélkül is lehet használni – a könyvtárban vagy a turisztikai irodában kártyát vehetnek, ami ugyanúgy működik, mint az app.",
+      "evidence": "They can buy a card at the library or at the tourist information office."
+    },
+    {
+      "id": "6",
+      "kind": "tf",
+      "prompt": "Helmets are provided with the bikes.",
+      "answer": "F",
+      "category": "detail",
+      "explanation": "Hamis: nem adnak sisakot („We don't, I'm afraid”), mert nehéz tisztán tartani őket – csak javasolják a viselését.",
+      "evidence": "We don't, I'm afraid, because it's difficult to keep them clean."
+    },
+    {
+      "id": "7",
+      "kind": "tf",
+      "prompt": "Local shops are selling helmets more cheaply this month.",
+      "answer": "T",
+      "category": "detail",
+      "explanation": "Igaz: a helyi kerékpárboltok ebben a hónapban 15% kedvezményt adnak a sisakokra.",
+      "evidence": "local bike shops are offering a fifteen percent discount on helmets this month"
+    },
+    {
+      "id": "8",
+      "kind": "tf",
+      "prompt": "Some of the bikes are already electric.",
+      "answer": "F",
+      "category": "detail",
+      "explanation": "Hamis: jelenleg mind a kétszáz bicikli hagyományos; elektromosakat csak jövő tavasszal szeretnének hozzáadni, ha sikeres lesz a rendszer.",
+      "evidence": "At the moment all two hundred bikes are normal ones."
+    }
+  ],
+  "glossary": [],
+  "suggestedMinutes": 8
+}

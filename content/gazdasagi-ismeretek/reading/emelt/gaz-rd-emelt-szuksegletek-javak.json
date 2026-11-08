@@ -1,0 +1,147 @@
+{
+  "schemaVersion": 1,
+  "id": "gaz-rd-emelt-szuksegletek-javak",
+  "subject": "gazdasagi-ismeretek",
+  "revision": 1,
+  "level": "emelt",
+  "source": "generated",
+  "topic": "alapfogalmak",
+  "title": "Szükségletek és javak csoportosítása",
+  "createdAt": "2026-11-06",
+  "tags": [],
+  "section": "reading",
+  "type": "parositas",
+  "instructions": "Sorolja be a példákat a megfelelő csoportba! Először döntse el, hogy a példa igény (szükséglet) vagy a szükséglet kielégítésére alkalmas eszköz (jószág), majd írja mellé a csoport betűjelét! Minden betűjel csak egyszer használható, két betűjel felesleges. A 0. a megoldott példa.",
+  "options": [
+    {
+      "key": "A",
+      "text": "létszükséglet"
+    },
+    {
+      "key": "B",
+      "text": "kulturális szükséglet"
+    },
+    {
+      "key": "C",
+      "text": "luxusszükséglet"
+    },
+    {
+      "key": "D",
+      "text": "látens (rejtett) szükséglet"
+    },
+    {
+      "key": "E",
+      "text": "szabad jószág"
+    },
+    {
+      "key": "F",
+      "text": "termelési eszköz"
+    },
+    {
+      "key": "G",
+      "text": "fogyasztási cikk"
+    },
+    {
+      "key": "H",
+      "text": "anyagi jellegű szolgáltatás"
+    },
+    {
+      "key": "I",
+      "text": "nem anyagi jellegű szolgáltatás"
+    },
+    {
+      "key": "J",
+      "text": "közjószág"
+    },
+    {
+      "key": "K",
+      "text": "vegyes jószág"
+    }
+  ],
+  "example": {
+    "id": "0",
+    "kind": "match",
+    "prompt": "Az ember igénye ételre, italra és fűtött lakásra.",
+    "answer": "A",
+    "category": "csoportositas",
+    "explanation": "Helyes: A (létszükséglet). A létszükségletek az emberi élet fennmaradásához nélkülözhetetlenek – a dia példái: étel, ital, lakás, ruha, fűtés."
+  },
+  "items": [
+    {
+      "id": "1",
+      "kind": "match",
+      "prompt": "Igény arra, hogy esténként moziba menjünk vagy könyvet olvassunk.",
+      "answer": "B",
+      "category": "csoportositas",
+      "explanation": "Helyes: B (kulturális szükséglet). A kulturális szükségletek a társadalmi élethez, művelődéshez, szórakozáshoz kapcsolódnak (pl. könyv, mozi, internet).",
+      "wrongOptions": {
+        "I": "A mozielőadás maga valóban szolgáltatás, de itt az igényről (hiányérzetről) van szó, vagyis szükségletről, nem jószágról."
+      }
+    },
+    {
+      "id": "2",
+      "kind": "match",
+      "prompt": "Egy jacht birtoklásának vágya, amelyet csak nagyon kevesen tudnak kielégíteni.",
+      "answer": "C",
+      "category": "csoportositas",
+      "explanation": "Helyes: C (luxusszükséglet). A luxusszükségletek csak kevesek által kielégíthető, magas igényszintet jelentő szükségletek (pl. luxusautó, yacht)."
+    },
+    {
+      "id": "3",
+      "kind": "match",
+      "prompt": "Egy ma még gyógyíthatatlan betegség gyógyszere iránti igény.",
+      "answer": "D",
+      "category": "csoportositas",
+      "explanation": "Helyes: D (látens szükséglet). A látens szükséglet jelen van, de pillanatnyilag nem kielégíthető – a dia példája éppen a gyógyíthatatlan betegség gyógyszere."
+    },
+    {
+      "id": "4",
+      "kind": "match",
+      "prompt": "A levegő, amelyet belélegzünk.",
+      "answer": "E",
+      "category": "csoportositas",
+      "explanation": "Helyes: E (szabad jószág). A szabad javak korlátlan mennyiségben állnak rendelkezésre, mindenki szabadon fogyaszthat belőlük (pl. levegő, napfény).",
+      "wrongOptions": {
+        "J": "A közjószágot (pl. közvilágítás) elő kell állítani, tehát gazdasági jószág; a levegő viszont korlátlanul rendelkezésre áll, előállítása nem kerül semmibe."
+      }
+    },
+    {
+      "id": "5",
+      "kind": "match",
+      "prompt": "A pékség kenyérsütő gépe.",
+      "answer": "F",
+      "category": "csoportositas",
+      "explanation": "Helyes: F (termelési eszköz). A termelési eszközök más javak előállításához szükségesek (pl. gépek, nyersanyagok) – a géppel kenyeret sütnek.",
+      "wrongOptions": {
+        "G": "Fogyasztási cikk az, ami közvetlenül elégíti ki a szükségletet (pl. élelmiszer); maga a kenyér az lenne, a sütőgép viszont más jószág előállítását szolgálja."
+      }
+    },
+    {
+      "id": "6",
+      "kind": "match",
+      "prompt": "Egy fuvarozó cég áruszállítása.",
+      "answer": "H",
+      "category": "csoportositas",
+      "explanation": "Helyes: H (anyagi jellegű szolgáltatás). Az anyagi jellegű szolgáltatások közvetlenül kapcsolódnak anyagi javakhoz – a dia példája a fuvarozás."
+    },
+    {
+      "id": "7",
+      "kind": "match",
+      "prompt": "Egy nyelviskola nyelvórája.",
+      "answer": "I",
+      "category": "csoportositas",
+      "explanation": "Helyes: I (nem anyagi jellegű szolgáltatás). A nem anyagi jellegű szolgáltatások nem kötődnek tárgyiasult javakhoz – a dia példája az oktatás és az egészségügy."
+    },
+    {
+      "id": "8",
+      "kind": "match",
+      "prompt": "Az autópálya, amely mindenki előtt nyitva áll, de csak díj (matrica) ellenében használható.",
+      "answer": "K",
+      "category": "csoportositas",
+      "explanation": "Helyes: K (vegyes jószág). A vegyes javak részben közösségi, részben magánfogyasztást szolgálnak – a dia példája az autópálya: közös, de díj ellenében használható.",
+      "wrongOptions": {
+        "J": "Közjószág fogyasztásából senkit nem lehet kizárni (pl. közvilágítás); az autópályáról viszont kizárható, aki nem fizet, ezért vegyes jószág."
+      }
+    }
+  ]
+}

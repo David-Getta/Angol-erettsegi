@@ -1,0 +1,118 @@
+{
+  "schemaVersion": 1,
+  "id": "fol-rd-emelt-afrika-azsia-tajak",
+  "subject": "foldrajz",
+  "revision": 1,
+  "level": "emelt",
+  "source": "generated",
+  "topic": "kontinensek",
+  "title": "Afrika és Ázsia nagytájai leírás alapján",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "reading",
+  "type": "topografia",
+  "instructions": "Nevezze meg a leírás alapján Afrika és Ázsia nagytájait! Írja a földrajzi nevet a kijelölt helyre! A 0. a megoldott példa.",
+  "example": {
+    "id": "0",
+    "kind": "text",
+    "prompt": "A Föld legnagyobb forró sivataga Észak-Afrikában, az Atlanti-óceántól a Vörös-tengerig.",
+    "answer": ["Szahara"],
+    "maxWords": 3,
+    "category": "helymeghatarozas",
+    "explanation": "Szahara: kb. 9 millió km²-es sivatag a Ráktérítő mentén; szárazságát a térítői leszálló légáramlás (passzát anticiklon) okozza."
+  },
+  "items": [
+    {
+      "id": "1",
+      "kind": "text",
+      "prompt": "Dél-Afrika belsejében, Botswana, Namíbia és a Dél-afrikai Köztársaság területén elterülő, homokkal fedett félsivatag.",
+      "answer": ["Kalahári", "Kalahári-sivatag", "Kalahári-medence"],
+      "maxWords": 3,
+      "category": "helymeghatarozas",
+      "explanation": "Kalahári: a Baktérítő mentén fekvő, vörös homokkal borított medence; a Szaharánál csapadékosabb félsivatag, ezért ritkás fás-füves növényzet is él rajta."
+    },
+    {
+      "id": "2",
+      "kind": "text",
+      "prompt": "Kelet-Afrikát észak–déli irányban átszelő hasadékrendszer tavakkal (Tanganyika, Malawi) és vulkánokkal; itt szakad fel a kontinens.",
+      "answer": ["Kelet-afrikai-árokrendszer", "Kelet-afrikai-hasadékvölgy", "Nagy-hasadékvölgy", "Kelet-afrikai árokrendszer", "Kelet-afrikai-árok"],
+      "maxWords": 3,
+      "category": "helymeghatarozas",
+      "explanation": "Kelet-afrikai-árokrendszer: távolodó lemezhatár kezdeti állapota a kontinens belsejében; a süllyedő árkokban mély tavak (Tanganyika), a peremeken vulkánok (Kilimandzsáró) keletkeztek."
+    },
+    {
+      "id": "3",
+      "kind": "text",
+      "prompt": "A Föld legnagyobb félszigete a Vörös-tenger és a Perzsa-öböl között; sivatagos, hatalmas kőolaj- és földgázkészletekkel.",
+      "answer": ["Arab-félsziget", "Arábiai-félsziget"],
+      "maxWords": 3,
+      "category": "helymeghatarozas",
+      "explanation": "Arab-félsziget: ősföld (Arab-lemez) alkotja, nagy része sivatag; a peremén, főleg a Perzsa-öböl partján a Föld legnagyobb kőolajmezői (Szaúd-Arábia, Kuvait, Egyesült Arab Emírségek)."
+    },
+    {
+      "id": "4",
+      "kind": "text",
+      "prompt": "A Föld legmagasabb és legnagyobb kiterjedésű fennsíkja (átlagosan 4500 m), a Himalájától északra; „a világ teteje”.",
+      "answer": ["Tibet", "Tibeti-fennsík", "Tibeti-magasföld"],
+      "maxWords": 3,
+      "category": "helymeghatarozas",
+      "explanation": "Tibeti-fennsík: az Indiai-lemez és az Eurázsiai-lemez ütközése emelte a magasba; hideg, száraz, ritkán lakott magasföld, Ázsia nagy folyóinak (Jangce, Mekong, Brahmaputra) forrásvidéke."
+    },
+    {
+      "id": "5",
+      "kind": "text",
+      "prompt": "Közép-Ázsia nagy kiterjedésű, kavicsos-köves, hideg telű sivataga Mongólia és Kína határvidékén.",
+      "answer": ["Góbi", "Góbi-sivatag"],
+      "maxWords": 3,
+      "category": "helymeghatarozas",
+      "explanation": "Góbi: mérsékelt övezeti (kontinentális) sivatag; az óceántól való nagy távolság és a Himalája–Tibet esőárnyéka miatt száraz, télen −30 °C alá hűl, nyáron forró."
+    },
+    {
+      "id": "6",
+      "kind": "text",
+      "prompt": "Az Indiai-félsziget nagy részét kitöltő ősmasszívum fennsíkja; nyugati peremén a Nyugati-Ghátok emelkednek.",
+      "answer": ["Dekkán", "Dekkán-fennsík", "Dekkán-ősföld"],
+      "maxWords": 3,
+      "category": "helymeghatarozas",
+      "explanation": "Dekkán: Gondwana egykori darabja, idős ősföld, nyugati részét vulkáni bazalt (Dekkán-trapp) fedi; a Nyugati-Ghátok felfogják a nyári monszun csapadékát, ezért a fennsík belseje szárazabb."
+    },
+    {
+      "id": "7",
+      "kind": "text",
+      "prompt": "A Föld egyik legnagyobb kiterjedésű alföldje Szibériában, az Urál és a Jenyiszej között; mocsaras tajga és kőolaj-, földgázmezők jellemzik.",
+      "answer": ["Nyugat-szibériai-alföld", "Nyugat-szibériai alföld", "Nyugat-Szibéria"],
+      "maxWords": 3,
+      "category": "helymeghatarozas",
+      "explanation": "Nyugat-szibériai-alföld: az Ob és az Irtis által feltöltött, rendkívül lapos síkság; rossz lefolyása miatt mocsaras, altalajában Oroszország legfontosabb kőolaj- és földgázmezői vannak."
+    },
+    {
+      "id": "8",
+      "kind": "text",
+      "prompt": "Kelet-Afrika vulkáni fennsíkja, a Kék-Nílus forrásvidéke (Tana-tó); „Afrika víztornya”.",
+      "answer": ["Etióp-magasföld", "Abesszin-magasföld", "Etióp-fennsík"],
+      "maxWords": 3,
+      "category": "helymeghatarozas",
+      "explanation": "Etióp-magasföld: a Kelet-afrikai-árokrendszer mentén feltört bazalt borítja; a nyári monszunesők miatt itt gyűlik össze a Nílus vízhozamának nagy része (Kék-Nílus, Atbara)."
+    },
+    {
+      "id": "9",
+      "kind": "text",
+      "prompt": "A Himalája lábánál húzódó, az Indus és a Gangesz hordalékából feltöltött, sűrűn lakott síkság Pakisztánban, Indiában és Bangladesben.",
+      "answer": ["Hindusztáni-alföld", "Indo-Gangeszi-alföld", "Gangesz-alföld", "Hindusztáni alföld"],
+      "maxWords": 3,
+      "category": "helymeghatarozas",
+      "explanation": "Hindusztáni-alföld: a Himalája előterében süllyedő medencét az Indus, a Gangesz és a Brahmaputra töltötte fel; termékeny talaja és a monszun esői miatt a Föld egyik legsűrűbben lakott vidéke."
+    },
+    {
+      "id": "10",
+      "kind": "text",
+      "prompt": "A Fekete-tengert a Kaszpi-tengertől elválasztó, fiatal lánchegység Európa és Ázsia határán; legmagasabb csúcsa az Elbrusz.",
+      "answer": ["Kaukázus"],
+      "maxWords": 3,
+      "category": "helymeghatarozas",
+      "explanation": "Kaukázus: az Eurázsiai-hegységrendszer tagja, az Arab-lemez északra nyomulásával gyűrődött fel; földrengésveszélyes, déli oldalán Grúzia, Azerbajdzsán és Örményország."
+    }
+  ],
+  "glossary": [],
+  "suggestedMinutes": 9
+}

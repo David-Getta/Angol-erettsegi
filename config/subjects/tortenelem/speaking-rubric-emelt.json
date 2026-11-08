@@ -1,0 +1,206 @@
+{
+  "meta": {
+    "verifiedAt": "2026-11-05",
+    "sources": [
+      {
+        "title": "Oktatási Hivatal: Történelem – részletes érettségi vizsgakövetelmény és vizsgaleírás (2024-től érvényes, Nat2020)",
+        "url": "https://www.oktatas.hu/pub_bin/dload/kozoktatas/erettsegi/vizsgakovetelmenyek2024/tortenelem_2024_e.pdf"
+      },
+      {
+        "title": "Eduline (2024. 04. 12.): Vizsgarészek, pontozás, segédeszközök – minden a 2024-es töriérettségiről (180 perc, 100 + 50 pont, 12 rövid feladat, 4-ből 2 esszé, 7 témakör)",
+        "url": "https://eduline.hu/erettsegi-felveteli/20240412_tortenelem-erettsegi-tudnivalok-erettsegi-2024"
+      },
+      {
+        "title": "Eduline (2024. 05. 24.): Így pontozzák a középszintű töriérettségit (szóbeli szempontok 4/6/10/12/18)",
+        "url": "https://eduline.hu/erettsegi-felveteli/20240524_torierettsegi-pontszaitas-szabalyok-irasbeli-szobeli-vizsga"
+      },
+      {
+        "title": "Eduline (2025. 04. 23.): Így pontozzák az idei töriérettségi írásbeli részét (esszé-szempontok, rövid 17 / hosszú 33 pont, terjedelem)",
+        "url": "https://eduline.hu/erettsegi-felveteli/20250423_tortenelemerettsegi-irasbeli-vizsga-pontozasa-2025"
+      },
+      {
+        "title": "Eduline (2024. 04. 26.): Milyen hosszúnak kell lennie az esszéknek a töri írásbelin (100–130 / 210–260 szó)",
+        "url": "https://eduline.hu/erettsegi-felveteli/20240426_Erettsegi-2024milyen-hosszunak-kell-lennie-a-tori-irasbelin-az-esszeknek"
+      },
+      {
+        "title": "Eduline (2025. 11. 06.): Így számolják a pontokat a történelem szóbelin",
+        "url": "https://eduline.hu/erettsegi-felveteli/20251106_oszi-erettsegi-2025-tortenelem-szobeli-vizsga-pontozas"
+      },
+      {
+        "title": "Eduline (2023. 12. 19.): Ezek lesznek történelemből emelt szinten a témakörök (emelt I. 100 perc + II. 140 perc, 6-ból 3 esszé)",
+        "url": "https://eduline.hu/erettsegi-felveteli/20231219_Erettsegi-2024-ezek-lesznek-tortenelembol-emelt-szinten-a-temakorok"
+      },
+      {
+        "title": "Oktatási Hivatal: Történelem középszint, javítási-értékelési útmutató, 2025. május (K2511) – esszé-szempontok (tükörmásolat)",
+        "url": "https://www.tortenelemtanarok.hu/media/uploads/Tortenelem_erettsegi/Kozep/k_tort_25maj_ut.pdf"
+      },
+      {
+        "title": "Eduline (2026. 03. 14.): Érettségi 2026 – pontozási és osztályozási szabályok (közép 80/60/40/25 %, emelt 60/47/33/25 %, vizsgarészenként 12 %)",
+        "url": "https://eduline.hu/erettsegi-felveteli/20260314_erettsegi-2026-pontozas-osztalyozas"
+      }
+    ],
+    "notes": [
+      "Ellenőrzött: a szempontok és pontok azonosak a középszinttel (4/6/10/12/18 = 50); központi tételsor.",
+      "Az ellenőrzés hírportál-cikkek (Eduline, Telex) és a hivatalos dokumentumok keresőben indexelt szövege alapján történt; az OH oldalát a futtató környezet hálózata nem engedte közvetlenül megnyitni – a hivatalos vizsgaleírással érdemes összevetni."
+    ]
+  },
+  "id": "speaking-emelt",
+  "level": "emelt",
+  "examMaxPoints": 50,
+  "tasks": [
+    {
+      "id": "tetel",
+      "partNumber": 1,
+      "name": "Tétel",
+      "types": [
+        "tetel"
+      ],
+      "criteria": [
+        {
+          "id": "feladatmegertes",
+          "name": "A feladat megértése",
+          "description": "A tétel kérdésére válaszol, a lényeges elemekre összpontosít.",
+          "max": 4,
+          "bands": [
+            {
+              "points": "4",
+              "descriptor": "Maradéktalanul teljesül: A tétel kérdésére válaszol, a lényeges elemekre összpontosít."
+            },
+            {
+              "points": "3",
+              "descriptor": "Kisebb hiányosságokkal vagy pontatlanságokkal teljesül; a lényeg helyes."
+            },
+            {
+              "points": "2",
+              "descriptor": "Részben teljesül: több elem hiányzik, pontatlan vagy indoklás nélküli."
+            },
+            {
+              "points": "0",
+              "descriptor": "Nem teljesül, vagy nem értékelhető."
+            }
+          ]
+        },
+        {
+          "id": "tajekozodas",
+          "name": "Tájékozódás térben és időben",
+          "description": "Évszámok, korszak, helyszínek, térbeli összefüggések helyesen.",
+          "max": 6,
+          "bands": [
+            {
+              "points": "6",
+              "descriptor": "Maradéktalanul teljesül: Évszámok, korszak, helyszínek, térbeli összefüggések helyesen."
+            },
+            {
+              "points": "5",
+              "descriptor": "Kisebb hiányosságokkal vagy pontatlanságokkal teljesül; a lényeg helyes."
+            },
+            {
+              "points": "3–4",
+              "descriptor": "Részben teljesül: több elem hiányzik, pontatlan vagy indoklás nélküli."
+            },
+            {
+              "points": "1–2",
+              "descriptor": "Alig teljesül: csak néhány helyes, odaillő elem van."
+            },
+            {
+              "points": "0",
+              "descriptor": "Nem teljesül, vagy nem értékelhető."
+            }
+          ]
+        },
+        {
+          "id": "kommunikacio",
+          "name": "Kommunikáció, a szaknyelv alkalmazása",
+          "description": "Történelmi szakkifejezések, összefüggő, logikusan felépített, önálló előadás.",
+          "max": 10,
+          "bands": [
+            {
+              "points": "10",
+              "descriptor": "Maradéktalanul teljesül: Történelmi szakkifejezések, összefüggő, logikusan felépített, önálló előadás."
+            },
+            {
+              "points": "8–9",
+              "descriptor": "Kisebb hiányosságokkal vagy pontatlanságokkal teljesül; a lényeg helyes."
+            },
+            {
+              "points": "5–6",
+              "descriptor": "Részben teljesül: több elem hiányzik, pontatlan vagy indoklás nélküli."
+            },
+            {
+              "points": "1–3",
+              "descriptor": "Alig teljesül: csak néhány helyes, odaillő elem van."
+            },
+            {
+              "points": "0",
+              "descriptor": "Nem teljesül, vagy nem értékelhető."
+            }
+          ]
+        },
+        {
+          "id": "forrasok",
+          "name": "Ismeretszerzés, a források használata",
+          "description": "A tételhez adott források értelmezése és saját ismerettel való összekapcsolása.",
+          "max": 12,
+          "bands": [
+            {
+              "points": "12",
+              "descriptor": "Maradéktalanul teljesül: A tételhez adott források értelmezése és saját ismerettel való összekapcsolása."
+            },
+            {
+              "points": "9–11",
+              "descriptor": "Kisebb hiányosságokkal vagy pontatlanságokkal teljesül; a lényeg helyes."
+            },
+            {
+              "points": "5–8",
+              "descriptor": "Részben teljesül: több elem hiányzik, pontatlan vagy indoklás nélküli."
+            },
+            {
+              "points": "1–4",
+              "descriptor": "Alig teljesül: csak néhány helyes, odaillő elem van."
+            },
+            {
+              "points": "0",
+              "descriptor": "Nem teljesül, vagy nem értékelhető."
+            }
+          ]
+        },
+        {
+          "id": "gondolkodas",
+          "name": "Történelmi gondolkodás és történelmi ismeretek",
+          "description": "Okok, következmények, összefüggések feltárása helyes szaktárgyi ismeretekkel.",
+          "max": 18,
+          "bands": [
+            {
+              "points": "18",
+              "descriptor": "Maradéktalanul teljesül: Okok, következmények, összefüggések feltárása helyes szaktárgyi ismeretekkel."
+            },
+            {
+              "points": "13–17",
+              "descriptor": "Kisebb hiányosságokkal vagy pontatlanságokkal teljesül; a lényeg helyes."
+            },
+            {
+              "points": "8–12",
+              "descriptor": "Részben teljesül: több elem hiányzik, pontatlan vagy indoklás nélküli."
+            },
+            {
+              "points": "1–7",
+              "descriptor": "Alig teljesül: csak néhány helyes, odaillő elem van."
+            },
+            {
+              "points": "0",
+              "descriptor": "Nem teljesül, vagy nem értékelhető."
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "overall": [],
+  "conversion": {
+    "method": "identity"
+  },
+  "officialScoring": [
+    "Emelt szóbeli: 20 perc, 30 perc felkészülés, 50 pont; központi tételsor (a tételcímek decemberben nyilvánosak)."
+  ],
+  "generalRules": []
+}

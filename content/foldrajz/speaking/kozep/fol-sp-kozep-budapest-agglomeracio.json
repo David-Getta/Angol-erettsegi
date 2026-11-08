@@ -1,0 +1,82 @@
+{
+  "schemaVersion": 1,
+  "id": "fol-sp-kozep-budapest-agglomeracio",
+  "subject": "foldrajz",
+  "revision": 1,
+  "level": "kozep",
+  "source": "generated",
+  "topic": "magyarorszag",
+  "title": "Budapest és agglomerációja",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "speaking",
+  "type": "tarsadalomfoldrajz-tetel",
+  "partNumber": 2,
+  "instructionsHu": "Mutassa be Budapest szerepét Magyarország településhálózatában, a főváros és agglomerációja közötti kapcsolatokat és a szuburbanizáció folyamatát! Használja a mellékelt forrásokat és az atlaszt!",
+  "prompts": [
+    "Milyen tényezők segítették Budapest kialakulását és fejlődését (fekvés, átkelőhely, tájhatár)?",
+    "Milyen funkciói vannak a fővárosnak, és miért mondjuk, hogy a magyar településhálózat főváros-központú?",
+    "Mi a szuburbanizáció, mi az oka, és milyen következményei vannak?",
+    "Topográfia: mutassa meg a Budai-hegységet, a Gödöllői-dombságot, a Csepel-szigetet, az M0-s körgyűrűt, valamint Szentendrét, Gödöllőt, Budaörsöt és Érdet!"
+  ],
+  "followUpQuestions": [
+    "Mit jelent a dzsentrifikáció, és hol figyelhető meg Budapesten?",
+    "Hogyan lehetne csökkenteni az ingázás terheit?"
+  ],
+  "usefulPhrases": [
+    {
+      "en": "településhálózat",
+      "hu": "egy terület településeinek és a köztük lévő kapcsolatoknak a rendszere"
+    },
+    {
+      "en": "főváros-központú (monocentrikus) szerkezet",
+      "hu": "egyetlen város dominál a hálózatban"
+    },
+    {
+      "en": "agglomeráció",
+      "hu": "a nagyváros és a vele összenőtt, szoros kapcsolatban álló települések együttese"
+    },
+    {
+      "en": "szuburbanizáció",
+      "hu": "kiköltözés a városból az elővárosokba"
+    },
+    {
+      "en": "ingázás",
+      "hu": "a lakóhely és a munkahely közötti napi utazás"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Népességadatok",
+      "text": "Budapest népessége a népszámlálások szerint 1980-ban kb. 2,06 millió, 2001-ben kb. 1,78 millió, 2022-ben kb. 1,69 millió fő volt. Az ország lakosságának kb. 17%-a él a fővárosban, és a budapesti agglomeráció településeivel együtt az ország népességének több mint negyede él a térségben."
+    },
+    {
+      "title": "Térképvázlat (leírás)",
+      "text": "A vázlat Budapestet és környékét ábrázolja. A Duna a várost Budára és Pestre osztja; nyugaton a Budai-hegység, keleten a Pesti-síkság és a Gödöllői-dombság található. A városból sugarasan indulnak ki az autópályák és a vasútvonalak, amelyeket a város körül az M0-s körgyűrű köt össze. A környező települések közül Szentendre, Gödöllő, Budaörs és Érd van megjelölve."
+    }
+  ],
+  "keyPoints": [
+    "Budapest a Duna egyik legjobb átkelőhelyén, hegyvidék és alföld találkozásánál (tájhatáron, vásárvonalon) alakult ki.",
+    "Funkciók: politikai-közigazgatási (főváros), gazdasági (pénzügy, szolgáltatások, ipar), kulturális-oktatási, közlekedési csomópont, idegenforgalom.",
+    "Főváros-központú (monocentrikus) településhálózat: Budapest népessége és gazdasági súlya messze meghaladja a következő városokét; sugaras közlekedési hálózat.",
+    "A főváros népessége 1980 óta csökken (természetes fogyás, kiköltözés).",
+    "Szuburbanizáció: a jobb módú, gyermekes családok kiköltözése az agglomerációba (zöldövezet, olcsóbb telek); az agglomeráció népessége nő.",
+    "Következmények: napi ingázás, forgalmi dugók, közlekedési terhelés, a zöldterületek beépülése, a települések infrastruktúrájának (iskola, csatorna) túlterhelése.",
+    "Topográfia: Duna, Budai-hegység, Pesti-síkság, Gödöllői-dombság, Csepel-sziget, M0, Szentendre, Gödöllő, Budaörs, Érd."
+  ],
+  "speakingSeconds": 480,
+  "prepSeconds": 900,
+  "sampleAnswer": {
+    "turns": [
+      {
+        "speaker": "candidate",
+        "text": "Budapest a Duna egyik legkedvezőbb átkelőhelyén alakult ki, ahol a meder viszonylag keskeny, és szigetek (pl. a Margit-sziget) tagolják a folyót; a város déli részén kezdődik a Csepel-sziget. A város tájhatáron fekszik: nyugaton a Budai-hegység, keleten a Pesti-síkság és a Gödöllői-dombság található, amelyeket most megmutatok a térképen. Ez a fekvés már régen is vásárvonalat jelentett, ahol a hegyvidék és az alföld termékeit cserélték. Budapest ma az ország politikai, gazdasági, kulturális és közlekedési központja: itt van a kormány és az országgyűlés, a bankok és a nagyvállalatok központjainak többsége, a legtöbb egyetem, és ide fut be a sugaras úthálózat és a vasútvonalak nagy része. A forrás szerint az ország lakosságának kb. 17%-a a fővárosban él, a második legnagyobb város, Debrecen népessége ennek csak kb. nyolcada, ezért a magyar településhálózat főváros-központú. A népességadatok azt mutatják, hogy Budapest népessége 1980 óta kb. 2,06 millióról 1,69 millióra csökkent. Ennek egyik oka a természetes fogyás, a másik a szuburbanizáció: sok, főleg gyermekes, jobb anyagi helyzetű család kiköltözött a zöldövezeti agglomerációs településekre, például Szentendrére, Budaörsre, Gödöllőre vagy Érdre, ahol nagyobb kertes házban élhetnek. Munkahelyük viszont a fővárosban maradt, ezért naponta ingáznak. Ennek következménye a reggeli és esti forgalmi dugó a bevezető utakon, a tömegközlekedés túlterhelése, valamint az, hogy az agglomerációs településeken nem elég az óvoda, az iskola és a közmű. A forgalom elterelésére épült az M0-s körgyűrű, amely összeköti a sugaras autópályákat."
+      }
+    ],
+    "notes": [
+      "A felelet a fekvési tényezőktől a funkciókon és a településhálózat szerkezetén át a szuburbanizáció okaiig és következményeiig logikusan halad.",
+      "A forrás adatait (népességcsökkenés, 17%) értelmezi, és összefüggésbe hozza a folyamatokkal, nem csak felolvassa őket.",
+      "A topográfiai elemeket (Budai-hegység, Pesti-síkság, Gödöllői-dombság, Csepel-sziget, M0, agglomerációs városok) megnevezi és térben elhelyezi."
+    ]
+  }
+}

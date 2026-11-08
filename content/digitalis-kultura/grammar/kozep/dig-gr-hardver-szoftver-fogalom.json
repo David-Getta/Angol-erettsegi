@@ -1,0 +1,255 @@
+{
+  "schemaVersion": 1,
+  "id": "dig-gr-hardver-szoftver-fogalom",
+  "subject": "digitalis-kultura",
+  "revision": 1,
+  "level": "kozep",
+  "source": "generated",
+  "topic": "nyelvtan",
+  "title": "Hardver, szoftver, operációs rendszer fogalmai",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "grammar",
+  "type": "lesson",
+  "category": "hardver-szoftver-fogalom",
+  "summaryHu": "A szóbeli elméleti tételeinek egy része a digitális eszközökről szól: a számítógép felépítése, a Neumann-elvek, a memória és a háttértár, a mértékegységek, a szoftverek csoportjai és az operációs rendszer feladatai. Pontot a pontos fogalomhasználat és a példák érnek; a leggyakoribb hibák a fogalmak összekeverése (memória ↔ háttértár, rendszer- ↔ alkalmazói szoftver) és a mértékegységek pontatlan használata.",
+  "rules": [
+    {
+      "title": "Neumann-elvek",
+      "explanation": "Neumann János (1945) elvei: kettes számrendszer; teljesen elektronikus működés; soros (egymás utáni) utasításvégrehajtás; belső memória; tárolt program: a program és az adat ugyanabban a memóriában, azonos módon tárolódik; univerzális gép (programcserével bármilyen feladatra használható).",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "A program és az adatok a RAM-ban vannak",
+          "hu": "a tárolt program elve a mai gépekben"
+        }
+      ]
+    },
+    {
+      "title": "A számítógép felépítése",
+      "explanation": "Központi egység: processzor (vezérlőegység + aritmetikai-logikai egység + regiszterek, gyorsítótár), operatív memória; ezeket az alaplap buszrendszere köti össze. Perifériák: bemeneti (billentyűzet, egér, mikrofon, szkenner), kimeneti (monitor, nyomtató, hangszóró), ki-bemeneti (érintőképernyő, hálózati kártya, háttértár).",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "CPU: 8 mag, 3,6 GHz, 16 MB gyorsítótár",
+          "hu": "magok, órajel, cache"
+        }
+      ]
+    },
+    {
+      "title": "Memória és háttértár",
+      "explanation": "RAM: gyors, írható-olvasható, illékony – a futó programok helye. ROM/firmware (UEFI): csak olvasható, nem illékony, az indításhoz. Gyorsítótár (cache): kicsi, nagyon gyors memória a processzorban a gyakran használt adatoknak. Háttértár (SSD, HDD, pendrive, memóriakártya): nagy kapacitású, tartós, lassabb.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "16 GB RAM, 1 TB SSD",
+          "hu": "memória ≠ háttértár"
+        }
+      ]
+    },
+    {
+      "title": "Mértékegységek és számrendszerek",
+      "explanation": "1 bájt = 8 bit. SI-előtagok: 1 kB = 1000 B, 1 MB = 10⁶ B, 1 GB = 10⁹ B; bináris előtagok: 1 KiB = 1024 B, 1 MiB = 1024 KiB, 1 GiB = 1024 MiB. n biten 2ⁿ különböző érték tárolható. Átváltás kettesből tízesbe a helyiértékekkel (…, 8, 4, 2, 1), tizenhatos számrendszerben A = 10 … F = 15.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "1011₂ = 8 + 2 + 1 = 11",
+          "hu": "kettesből tízesbe"
+        },
+        {
+          "en": "FF₁₆ = 15 · 16 + 15 = 255",
+          "hu": "tizenhatosból tízesbe"
+        }
+      ]
+    },
+    {
+      "title": "Szoftverek csoportosítása és az operációs rendszer",
+      "explanation": "Rendszerszoftver: operációs rendszer, illesztőprogramok, segédprogramok; alkalmazói szoftver: szövegszerkesztő, táblázatkezelő, böngésző, játék; fejlesztői szoftver: fordítóprogram, fejlesztőkörnyezet. Az operációs rendszer feladatai: folyamatkezelés (ütemezés), memóriakezelés, fájlkezelés, perifériakezelés, felhasználókezelés és jogosultságok, felhasználói felület.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "Windows, Linux, macOS, Android, iOS",
+          "hu": "operációs rendszerek"
+        },
+        {
+          "en": "nyomtató-illesztőprogram",
+          "hu": "rendszerszoftver"
+        }
+      ]
+    },
+    {
+      "title": "Emelt szint: adatábrázolás",
+      "explanation": "Előjeles egész: kettes komplemens (8 biten −128…127). Valós szám: lebegőpontos ábrázolás (mantissza és kitevő), korlátozott pontossággal. Karakterkódolás: ASCII (7 bit), UTF-8 (változó hosszúságú: az ékezetes betűk 2 bájtosak). Kép: képpontok · színmélység; hang: mintavételezés és kvantálás.",
+      "emeltOnly": true,
+      "examples": [
+        {
+          "en": "−1 nyolc biten kettes komplemensben: 11111111",
+          "hu": "előjeles ábrázolás"
+        },
+        {
+          "en": "„ő” UTF-8-ban: 2 bájt",
+          "hu": "változó hosszúságú kódolás"
+        }
+      ]
+    }
+  ],
+  "commonMistakes": [
+    {
+      "wrong": "A merevlemez a számítógép memóriája.",
+      "right": "A merevlemez háttértár; a memória (RAM) a futó programok gyors, illékony tára.",
+      "why": "A két fogalom szerepe, sebessége és tartóssága is eltér; a szóbelin az összekeverésük alapfogalmi hiba."
+    },
+    {
+      "wrong": "1 MB pontosan 1024 KB.",
+      "right": "1 MB = 1000 kB (SI); 1 MiB = 1024 KiB (bináris).",
+      "why": "A szabványos jelölés különválasztja a kettőt; ezért mutat egy „512 GB-os” SSD kb. 477 GiB-ot az operációs rendszerben."
+    },
+    {
+      "wrong": "A Word operációs rendszer.",
+      "right": "A Word alkalmazói szoftver; operációs rendszer pl. a Windows.",
+      "why": "Az alkalmazói szoftver a felhasználó feladatát oldja meg, az operációs rendszer a hardvert és a programok futását kezeli."
+    },
+    {
+      "wrong": "A Neumann-elvek szerint a gép tízes számrendszerben számol.",
+      "right": "A Neumann-elvek egyike a kettes (bináris) számrendszer.",
+      "why": "A kettes számrendszert az elektronikus kétállapotú elemek (be/ki) teszik egyszerűvé."
+    }
+  ],
+  "examTips": [
+    "Az elméleti tételben a fogalmakhoz mindig mondj konkrét példát (eszköz, mértékegység, program) – a rubrika a „példákkal” kifejtést várja.",
+    "A gyakorlati vizsgán is jól jön: a feladatlap gyakran megadja a képek méretét pixelben, a fájlok méretét bájtban – ezeket helyesen kell értelmezni.",
+    "A számrendszer-átváltásnál írd le a helyiértékeket, így a levezetés is látszik."
+  ],
+  "practice": [
+    {
+      "kind": "choice",
+      "prompt": "Melyik memória veszíti el a tartalmát a gép kikapcsolásakor?",
+      "options": [
+        {
+          "key": "A",
+          "text": "ROM"
+        },
+        {
+          "key": "B",
+          "text": "SSD"
+        },
+        {
+          "key": "C",
+          "text": "RAM"
+        },
+        {
+          "key": "D",
+          "text": "firmware-tár (UEFI)"
+        }
+      ],
+      "answer": "C",
+      "explanation": "C – RAM: illékony memória, áram nélkül a tartalma elvész.",
+      "wrongOptions": {
+        "A": "A ROM nem illékony, a tartalma megmarad.",
+        "B": "Az SSD háttértár, tartósan tárol.",
+        "D": "A firmware nem illékony tárban van, különben a gép el sem indulna."
+      },
+      "id": "1",
+      "category": "hardver-szoftver-fogalom"
+    },
+    {
+      "kind": "text",
+      "prompt": "Hány bitből áll egy bájt?",
+      "answer": [
+        "8",
+        "8 bit"
+      ],
+      "explanation": "8 bit. Egy bájton 2⁸ = 256 különböző érték ábrázolható (előjel nélkül 0–255).",
+      "id": "2",
+      "category": "hardver-szoftver-fogalom"
+    },
+    {
+      "kind": "text",
+      "prompt": "Írd fel tízes számrendszerben a 11010₂ számot!",
+      "answer": [
+        "26"
+      ],
+      "explanation": "26: 1·16 + 1·8 + 0·4 + 1·2 + 0·1 = 26.",
+      "id": "3",
+      "category": "hardver-szoftver-fogalom"
+    },
+    {
+      "kind": "choice",
+      "prompt": "Melyik rendszerszoftver?",
+      "options": [
+        {
+          "key": "A",
+          "text": "böngésző"
+        },
+        {
+          "key": "B",
+          "text": "képszerkesztő"
+        },
+        {
+          "key": "C",
+          "text": "táblázatkezelő"
+        },
+        {
+          "key": "D",
+          "text": "illesztőprogram (driver)"
+        }
+      ],
+      "answer": "D",
+      "explanation": "D. Az illesztőprogram az operációs rendszer és egy hardvereszköz közti kapcsolatot teremti meg, így a rendszerszoftverek közé tartozik.",
+      "wrongOptions": {
+        "A": "A böngésző alkalmazói szoftver.",
+        "B": "A képszerkesztő alkalmazói szoftver.",
+        "C": "A táblázatkezelő alkalmazói szoftver."
+      },
+      "id": "4",
+      "category": "hardver-szoftver-fogalom"
+    },
+    {
+      "kind": "choice",
+      "prompt": "Mi a gyorsítótár (cache)?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Csak olvasható memória az indításhoz."
+        },
+        {
+          "key": "B",
+          "text": "A háttértár egy része, amelyet a RAM kiegészítésére használnak."
+        },
+        {
+          "key": "C",
+          "text": "Kis méretű, nagyon gyors memória a processzorban (vagy közvetlenül mellette) a gyakran használt adatok és utasítások számára."
+        },
+        {
+          "key": "D",
+          "text": "Felhőben tárolt biztonsági másolat."
+        }
+      ],
+      "answer": "C",
+      "explanation": "C. A gyorsítótár csökkenti, hányszor kell a lassabb RAM-hoz fordulni; több szintje van (L1, L2, L3).",
+      "wrongOptions": {
+        "A": "Ez a ROM, illetve a firmware tára.",
+        "B": "Ez a virtuális memória (lapozófájl).",
+        "D": "Ez felhőalapú mentés, nem a processzor része."
+      },
+      "id": "5",
+      "category": "hardver-szoftver-fogalom"
+    },
+    {
+      "kind": "text",
+      "prompt": "Hány különböző szín ábrázolható 8 bites színmélységgel?",
+      "answer": [
+        "256",
+        "2^8",
+        "2⁸"
+      ],
+      "explanation": "256: n biten 2ⁿ érték ábrázolható, 2⁸ = 256. (24 biten 2²⁴ ≈ 16,7 millió szín.)",
+      "id": "6",
+      "category": "hardver-szoftver-fogalom"
+    }
+  ],
+  "relatedCategories": [
+    "halozat-biztonsag",
+    "informacios-tarsadalom-fogalom"
+  ]
+}

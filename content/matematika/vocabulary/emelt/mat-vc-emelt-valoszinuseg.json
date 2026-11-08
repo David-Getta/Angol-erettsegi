@@ -1,0 +1,176 @@
+{
+  "schemaVersion": 1,
+  "id": "mat-vc-emelt-valoszinuseg",
+  "subject": "matematika",
+  "revision": 1,
+  "level": "emelt",
+  "source": "generated",
+  "topic": "valoszinuseg",
+  "title": "Valószínűség-számítás és mintavétel (emelt)",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "vocabulary",
+  "type": "deck",
+  "cards": [
+    {
+      "term": "eseménytér",
+      "meaning": "Egy véletlen kísérlet összes lehetséges kimenetelének (elemi eseményének) halmaza, jele Ω.",
+      "example": "Két pénzérme feldobásánál az eseménytér {FF, FI, IF, II}.",
+      "collocation": "Ω"
+    },
+    {
+      "term": "elemi esemény",
+      "meaning": "A kísérlet egy lehetséges kimenetele, az eseménytér egy eleme.",
+      "example": "Kockadobásnál a „4-est dobunk” elemi esemény."
+    },
+    {
+      "term": "esemény",
+      "meaning": "Az eseménytér egy részhalmaza; akkor következik be, ha a kísérlet kimenetele eleme.",
+      "example": "A „páros számot dobunk” esemény három elemi eseményből áll.",
+      "collocation": "A ⊆ Ω"
+    },
+    {
+      "term": "komplementer esemény",
+      "meaning": "Az A esemény komplementere (Ā) pontosan akkor következik be, ha A nem.",
+      "example": "A „legalább egy hatos” komplementer eseménye: „egyik dobás sem hatos”.",
+      "collocation": "P(Ā) = 1 − P(A)"
+    },
+    {
+      "term": "események összege",
+      "meaning": "Az A + B esemény akkor következik be, ha A és B közül legalább az egyik bekövetkezik.",
+      "example": "Az események összege a halmazok uniójának felel meg.",
+      "collocation": "P(A + B) = P(A) + P(B) − P(A·B)"
+    },
+    {
+      "term": "események szorzata",
+      "meaning": "Az A·B esemény akkor következik be, ha A és B is bekövetkezik.",
+      "example": "Az események szorzata a halmazok metszetének felel meg.",
+      "collocation": "A·B"
+    },
+    {
+      "term": "egymást kizáró események",
+      "meaning": "Két esemény kizárja egymást, ha a szorzatuk a lehetetlen esemény (nem következhetnek be egyszerre).",
+      "example": "Egymást kizáró események valószínűsége összeadódik.",
+      "collocation": "A·B = ∅"
+    },
+    {
+      "term": "klasszikus valószínűségi modell",
+      "meaning": "Véges sok, egyformán valószínű elemi esemény esetén egy esemény valószínűsége a kedvező és az összes elemi esemény számának hányadosa.",
+      "example": "A klasszikus valószínűségi modell nem alkalmazható, ha a kimenetelek nem egyformán valószínűek.",
+      "collocation": "P(A) = k/n"
+    },
+    {
+      "term": "geometriai valószínűség",
+      "meaning": "Ha a kimenetelek egy tartomány pontjai, és minden egyenlő mértékű rész egyformán valószínű, akkor P(A) = a kedvező rész mértéke (hossz, terület) / a teljes tartomány mértéke.",
+      "example": "Geometriai valószínűség: egy négyzetbe írt kör belsejébe eső véletlen pont valószínűsége π/4.",
+      "collocation": "P(A) = t(A)/t(Ω)"
+    },
+    {
+      "term": "relatív gyakoriság",
+      "meaning": "Egy esemény bekövetkezéseinek száma osztva a kísérletek számával (k/n).",
+      "example": "Sok dobás után a hatos relatív gyakorisága 1/6 körül ingadozik.",
+      "collocation": "k/n"
+    },
+    {
+      "term": "nagy számok törvénye",
+      "meaning": "Ha egy kísérletet egymástól függetlenül sokszor megismétlünk, annak valószínűsége, hogy egy esemény relatív gyakorisága egy tetszőleges ε-nál jobban eltér a valószínűségétől, a kísérletek számának növelésével 0-hoz tart.",
+      "example": "A nagy számok törvénye miatt becsülhető egy esemény valószínűsége a relatív gyakoriságából."
+    },
+    {
+      "term": "feltételes valószínűség",
+      "meaning": "Az A esemény B feltétel melletti valószínűsége: P(A|B) = P(A·B)/P(B), ha P(B) > 0.",
+      "example": "A feltételes valószínűség: ha tudjuk, hogy páros számot dobtunk, a hatos valószínűsége 1/3.",
+      "collocation": "P(A|B) = P(A·B)/P(B)"
+    },
+    {
+      "term": "független események",
+      "meaning": "A és B független, ha P(A·B) = P(A)·P(B); ekkor az egyik bekövetkezése nem változtat a másik valószínűségén.",
+      "example": "Két kockadobás eredménye független esemény, ezért P(két hatos) = 1/36.",
+      "collocation": "P(A·B) = P(A)·P(B)"
+    },
+    {
+      "term": "valószínűségi változó",
+      "meaning": "Olyan függvény, amely az eseménytér minden eleméhez egy valós számot rendel (jele pl. ξ).",
+      "example": "A valószínűségi változó lehet például a két kockával dobott számok összege.",
+      "collocation": "ξ: Ω → ℝ"
+    },
+    {
+      "term": "várható érték",
+      "meaning": "Véges sok értéket felvevő ξ várható értéke az értékek valószínűségekkel súlyozott összege.",
+      "example": "Egy szabályos kockadobás várható értéke 3,5.",
+      "collocation": "M(ξ) = Σ xᵢ·pᵢ"
+    },
+    {
+      "term": "szórás",
+      "meaning": "A ξ valószínűségi változó szórása a várható értéktől való eltérés négyzete várható értékének négyzetgyöke.",
+      "example": "A szórás azt méri, mennyire szóródnak az értékek a várható érték körül.",
+      "collocation": "D(ξ) = √(Σ (xᵢ − M)²·pᵢ)"
+    },
+    {
+      "term": "binomiális eloszlás",
+      "meaning": "Ha egy p valószínűségű eseményt n független kísérletben figyelünk, a bekövetkezések száma binomiális eloszlású.",
+      "example": "Binomiális eloszlás szerint 10 érmedobásból pontosan 3 fej valószínűsége C(10; 3)/2¹⁰.",
+      "collocation": "P(ξ = k) = C(n; k)·pᵏ·(1 − p)ⁿ⁻ᵏ"
+    },
+    {
+      "term": "binomiális eloszlás várható értéke",
+      "meaning": "Az n, p paraméterű binomiális eloszlás várható értéke n·p, szórása √(n·p·(1 − p)).",
+      "example": "A binomiális eloszlás várható értéke 100 dobásnál, p = 1/6 esetén 100/6 ≈ 16,7.",
+      "collocation": "M = np, D = √(np(1 − p))"
+    },
+    {
+      "term": "visszatevéses mintavétel",
+      "meaning": "N elemből, amelyek közül M kitüntetett, n-szer húzunk visszatevéssel: a kitüntetett elemek száma binomiális eloszlású p = M/N paraméterrel.",
+      "example": "Visszatevéses mintavétel esetén minden húzásnál ugyanannyi a selejtes húzásának valószínűsége.",
+      "collocation": "C(n; k)·(M/N)ᵏ·(1 − M/N)ⁿ⁻ᵏ"
+    },
+    {
+      "term": "visszatevés nélküli mintavétel",
+      "meaning": "N elemből (M kitüntetett) n-et húzunk visszatevés nélkül: k kitüntetett húzásának valószínűsége C(M; k)·C(N − M; n − k)/C(N; n).",
+      "example": "Visszatevés nélküli mintavétel: lottóhúzásnál a találatok számát így számoljuk.",
+      "collocation": "C(M; k)·C(N − M; n − k)/C(N; n)"
+    },
+    {
+      "term": "permutáció",
+      "meaning": "n különböző elem összes lehetséges sorrendjének száma n!.",
+      "example": "Öt könyv permutációinak száma a polcon 5! = 120.",
+      "collocation": "Pₙ = n!"
+    },
+    {
+      "term": "ismétléses permutáció",
+      "meaning": "n elem sorrendjeinek száma, ha közöttük k₁, k₂, …, kᵣ darab egyforma van: n!/(k₁!·k₂!·…·kᵣ!).",
+      "example": "A MATEK betűinek permutációja 5! = 120, a KÖRÖK betűinek ismétléses permutációja 5!/(2!·2!) = 30.",
+      "collocation": "n!/(k₁!·…·kᵣ!)"
+    },
+    {
+      "term": "variáció",
+      "meaning": "n különböző elemből k különböző elem kiválasztása, ha a sorrend számít (ismétlés nélküli variáció): n!/(n − k)!.",
+      "example": "A dobogós helyezések száma 10 versenyzőnél (variáció) 10·9·8 = 720.",
+      "collocation": "n!/(n − k)!"
+    },
+    {
+      "term": "ismétléses variáció",
+      "meaning": "n elemből k-szor választunk sorrendben, egy elem többször is választható: nᵏ lehetőség.",
+      "example": "Ismétléses variáció: négyjegyű PIN-kódból 10⁴ = 10 000 van.",
+      "collocation": "nᵏ"
+    },
+    {
+      "term": "kombináció",
+      "meaning": "n különböző elemből k elem kiválasztása, ha a sorrend nem számít: C(n; k) = n!/(k!·(n − k)!).",
+      "example": "Kombináció: 8 tanulóból 3 fős küldöttség C(8; 3) = 56-féleképpen választható.",
+      "collocation": "C(n; k) = n!/(k!(n − k)!)"
+    },
+    {
+      "term": "binomiális tétel",
+      "meaning": "(a + b)ⁿ kifejtésében az aⁿ⁻ᵏbᵏ tag együtthatója C(n; k).",
+      "example": "A binomiális tétel szerint (x + 1)⁴ = x⁴ + 4x³ + 6x² + 4x + 1.",
+      "collocation": "(a + b)ⁿ = Σ C(n; k)·aⁿ⁻ᵏ·bᵏ"
+    },
+    {
+      "term": "Pascal-háromszög",
+      "meaning": "A binomiális együtthatók háromszög alakú elrendezése; minden belső szám a fölötte álló két szám összege.",
+      "example": "A Pascal-háromszög n = 4-hez tartozó sora: 1, 4, 6, 4, 1.",
+      "collocation": "C(n; k) + C(n; k + 1) = C(n + 1; k + 1)"
+    }
+  ]
+}

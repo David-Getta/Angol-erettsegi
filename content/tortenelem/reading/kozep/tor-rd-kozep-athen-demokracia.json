@@ -1,0 +1,165 @@
+{
+  "schemaVersion": 1,
+  "id": "tor-rd-kozep-athen-demokracia",
+  "subject": "tortenelem",
+  "revision": 1,
+  "level": "kozep",
+  "source": "generated",
+  "topic": "okor",
+  "title": "Az athéni demokrácia működése",
+  "createdAt": "2026-11-05",
+  "tags": [
+    "egyetemes"
+  ],
+  "section": "reading",
+  "type": "forraselemzes",
+  "instructions": "Az alábbi feladat az athéni demokrácia működésével kapcsolatos. Olvassa el a forrást, és válaszoljon a kérdésekre a forrás és ismeretei segítségével! A 0. a megoldott példa.",
+  "passage": {
+    "title": "Egy athéni polgár feljegyzése (Kr. e. 5. század közepe)",
+    "sourceNote": "A források a gyakorlás céljára írt, a kor stílusát követő szövegek, illetve leírások – nem hiteles korabeli dokumentumok.",
+    "blocks": [
+      {
+        "text": "„Hajnalban már a Pnüx dombja felé tartottam, mert a népgyűlés ma dönt a hajóhad ügyében. Itt minden athéni férfi polgár felszólalhat és szavazhat, akár gazdag, akár szegény; a nők, a rabszolgák és a városban élő idegenek, a metoikoszok azonban nem vehetnek részt a gyűlésen."
+      },
+      {
+        "text": "A tisztségviselők többségét sorsolással választjuk, hogy ne csak a gazdagok és a jó szónokok jussanak hivatalhoz. A tíz hadvezért, a sztratégoszokat azonban szavazással, mert a háborúban a hozzáértés többet ér a szerencsénél. Periklész javaslatára aki az esküdtbíróságon szolgál, napidíjat kap, így a szegény iparos sem veszít a keresetéből, ha a város ügyeivel foglalkozik."
+      },
+      {
+        "text": "Évente egyszer pedig cserépdarabra karcolhatjuk annak a nevét, akiről úgy véljük, hogy zsarnokságra tör. Akit a legtöbben megneveznek, annak tíz évre el kell hagynia a várost, de vagyonát és polgárjogát megtartja.”"
+      }
+    ]
+  },
+  "example": {
+    "id": "0",
+    "kind": "text",
+    "prompt": "Milyen államformát mutat be a forrás? (Egy-két szó.)",
+    "answer": [
+      "demokrácia",
+      "közvetlen demokrácia",
+      "athéni demokrácia",
+      "attikai demokrácia"
+    ],
+    "category": "fogalomhasznalat",
+    "explanation": "Helyes: demokrácia (közvetlen demokrácia). A forrás szerint a döntéseket a népgyűlésen maguk a polgárok hozzák meg, a tisztségek többségét sorsolják – ez a démosz (nép) uralma, vagyis demokrácia.",
+    "maxWords": 3
+  },
+  "items": [
+    {
+      "id": "1",
+      "kind": "choice",
+      "prompt": "Kik vehettek részt a forrás szerint a népgyűlésen?",
+      "options": [
+        {
+          "key": "A",
+          "text": "a felnőtt athéni férfi polgárok"
+        },
+        {
+          "key": "B",
+          "text": "Athén minden szabad lakosa"
+        },
+        {
+          "key": "C",
+          "text": "csak a vagyonos polgárok"
+        },
+        {
+          "key": "D",
+          "text": "a polgárok és a metoikoszok"
+        }
+      ],
+      "answer": "A",
+      "category": "forras-ertelmezes",
+      "explanation": "Helyes: A. A forrás szerint „minden athéni férfi polgár” felszólalhat és szavazhat, vagyontól függetlenül; a nők, a rabszolgák és a metoikoszok ki vannak zárva.",
+      "wrongOptions": {
+        "B": "A szabad lakosok közé a nők és a metoikoszok is tartoztak, őket a forrás kifejezetten kizárja.",
+        "C": "A forrás hangsúlyozza: „akár gazdag, akár szegény” – a részvétel nem vagyonhoz kötött.",
+        "D": "A metoikoszok (letelepedett idegenek) nem lehettek polgárok, a forrás szerint nem vehettek részt a gyűlésen."
+      }
+    },
+    {
+      "id": "2",
+      "kind": "text",
+      "prompt": "Nevezze meg azt az eljárást, amelyet a forrás utolsó bekezdése ír le!",
+      "answer": [
+        "cserépszavazás",
+        "osztrakiszmosz",
+        "osztrakizmosz",
+        "ostrakismos",
+        "osztrakizmus"
+      ],
+      "category": "fogalomhasznalat",
+      "explanation": "Helyes: cserépszavazás (osztrakiszmosz). A polgárok cserépdarabra (osztrakon) írták annak a nevét, akit a demokráciára veszélyesnek tartottak; a legtöbb szavazatot kapott polgárnak tíz évre száműzetésbe kellett mennie.",
+      "maxWords": 2
+    },
+    {
+      "id": "3",
+      "kind": "tf",
+      "prompt": "A forrás szerint a sztratégoszokat sorsolással választották.",
+      "answer": "F",
+      "category": "forras-ertelmezes",
+      "explanation": "Hamis. A forrás szerint a tisztségviselők többségét sorsolták, de a tíz sztratégoszt „szavazással” választották, mert a hadvezetéshez hozzáértés kellett."
+    },
+    {
+      "id": "4",
+      "kind": "choice",
+      "prompt": "Mi volt a forrás szerint a napidíj bevezetésének célja?",
+      "options": [
+        {
+          "key": "A",
+          "text": "hogy a rabszolgák is részt vehessenek a bíráskodásban"
+        },
+        {
+          "key": "B",
+          "text": "hogy fedezzék a hajóhad legénységének zsoldját"
+        },
+        {
+          "key": "C",
+          "text": "hogy a gazdagok több hivatalt kapjanak"
+        },
+        {
+          "key": "D",
+          "text": "hogy a szegényebb polgárok is részt vehessenek a közügyekben"
+        }
+      ],
+      "answer": "D",
+      "category": "forras-sajat-tudas",
+      "explanation": "Helyes: D. A forrás szerint a napidíj miatt „a szegény iparos sem veszít a keresetéből”, ha közügyekkel foglalkozik. Periklész így tette ténylegesen is elérhetővé a részvételt a vagyontalan polgárok számára – ez a demokrácia kiteljesedése.",
+      "wrongOptions": {
+        "A": "A rabszolgák nem voltak polgárok, nem vehettek részt a közügyekben, napidíjat sem kaptak.",
+        "B": "A napidíjat a forrás szerint az esküdtbírák kapták, nem a hajósok; a zsold más kérdés.",
+        "C": "Éppen ellenkezőleg: a napidíj a szegényebbek részvételét segítette, a sorsolás pedig azt akadályozta, hogy csak a gazdagok jussanak hivatalhoz."
+      }
+    },
+    {
+      "id": "5",
+      "kind": "choice",
+      "prompt": "Melyik athéni államférfi reformjai (Kr. e. 508/507) teremtették meg a demokrácia alapjait, és kinek a nevéhez kötik a cserépszavazás bevezetését?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Kleiszthenész"
+        },
+        {
+          "key": "B",
+          "text": "Szolón"
+        },
+        {
+          "key": "C",
+          "text": "Peiszisztratosz"
+        },
+        {
+          "key": "D",
+          "text": "Drakón"
+        }
+      ],
+      "answer": "A",
+      "category": "szemelyek-esemenyek",
+      "explanation": "Helyes: Kleiszthenész. Kr. e. 508/507-ben területi alapon tíz phülére osztotta a polgárságot, létrehozta az ötszázak tanácsát, és a hagyomány szerint ő vezette be a cserépszavazást is.",
+      "wrongOptions": {
+        "B": "Szolón Kr. e. 594-ben eltörölte az adósrabszolgaságot és vagyoni osztályokat hozott létre (timokrácia) – ez még nem demokrácia, cserépszavazás sem volt.",
+        "C": "Peiszisztratosz türannosz volt (Kr. e. 6. század), egyeduralmat gyakorolt; a cserépszavazást éppen a türannisz visszatérése ellen hozták létre.",
+        "D": "Drakón (Kr. e. 7. század vége) az első írott, rendkívül szigorú törvényeket alkotta, a demokráciához nincs köze."
+      }
+    }
+  ],
+  "suggestedMinutes": 7
+}

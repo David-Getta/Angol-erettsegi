@@ -1,0 +1,251 @@
+{
+  "schemaVersion": 1,
+  "id": "bio-gr-szabalyozas-folyamat",
+  "subject": "biologia",
+  "revision": 1,
+  "level": "kozep",
+  "source": "generated",
+  "topic": "nyelvtan",
+  "title": "Szabályozás és homeosztázis",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "grammar",
+  "type": "lesson",
+  "category": "szabalyozas-folyamat",
+  "summaryHu": "A szabályozási feladatokban (idegrendszer, hormonok, homeosztázis) a leggyakoribb hiba a hatás irányának eltévesztése: melyik hormon emel és melyik csökkent, mit gyorsít a szimpatikus és mit a paraszimpatikus idegrendszer, és merre hat a visszacsatolás. Az érettségin ez feleletválasztásban, ábraelemzésben (pl. vércukorgörbe) és a szóbelin is pontot ér.",
+  "rules": [
+    {
+      "title": "Negatív és pozitív visszacsatolás",
+      "explanation": "Negatív visszacsatolásnál a szabályozott érték eltérése olyan választ vált ki, amely az eltérést csökkenti – így marad állandó a belső környezet (homeosztázis). Pozitív visszacsatolásnál a válasz tovább erősíti a kiváltó változást; ritka, egy folyamat gyors lezajlását szolgálja.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "Magas vércukorszint → inzulin → a sejtek felveszik a glükózt → csökken a vércukorszint → csökken az inzulinelválasztás.",
+          "hu": "Negatív visszacsatolás."
+        },
+        {
+          "en": "Szüléskor a méh összehúzódásai fokozzák az oxitocin elválasztását, ami még erősebb összehúzódást okoz.",
+          "hu": "Pozitív visszacsatolás."
+        }
+      ]
+    },
+    {
+      "title": "Ellentétes hatású hormonpárok",
+      "explanation": "Vércukorszint: inzulin (hasnyálmirigy béta-sejtjei) csökkenti, glukagon (alfa-sejtek) emeli; emeli az adrenalin és a kortizol is. Vér kalciumszintje: a mellékpajzsmirigy parathormonja emeli, a pajzsmirigy kalcitoninja csökkenti. A vízháztartásban az ADH a vízvisszaszívást fokozza.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "Éhezéskor a glukagon a máj glikogénjének bontásával emeli a vércukorszintet.",
+          "hu": "Glukagon – emel."
+        },
+        {
+          "en": "Sok ivás után kevesebb ADH termelődik, több és hígabb vizelet ürül.",
+          "hu": "ADH – vízmegtartás."
+        }
+      ]
+    },
+    {
+      "title": "Hierarchikus hormonszabályozás",
+      "explanation": "A hipotalamusz serkentő (felszabadító) hormonokkal irányítja az agyalapi mirigy elülső lebenyét, amely a környéki mirigyeket serkenti. A környéki mirigy hormonja visszahat a hipotalamuszra és az agyalapi mirigyre: gátolja azokat (negatív visszacsatolás).",
+      "emeltOnly": true,
+      "examples": [
+        {
+          "en": "Hipotalamusz (TRH) → agyalapi mirigy (TSH) → pajzsmirigy (tiroxin); a sok tiroxin gátolja a TRH- és a TSH-termelést.",
+          "hu": "Szabályozási lánc."
+        },
+        {
+          "en": "Jódhiányban kevés tiroxin képződik, ezért a TSH-szint magas marad, és a pajzsmirigy megnagyobbodik (golyva).",
+          "hu": "Visszacsatolás kiesése."
+        }
+      ]
+    },
+    {
+      "title": "A vegetatív idegrendszer két része",
+      "explanation": "A szimpatikus idegrendszer a „harcolj vagy menekülj” helyzetre készít fel: gyorsítja a szívműködést, tágítja a hörgőket és a pupillát, emeli a vércukorszintet, gátolja a bélmozgást. A paraszimpatikus a nyugalmi, „pihenj és eméssz” állapotot: lassítja a szívet, szűkíti a pupillát, fokozza az emésztőnedvek elválasztását és a bélmozgást.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "Vizsga előtti izgalomban gyors a szívverés, száraz a száj: a szimpatikus hatás érvényesül.",
+          "hu": "Szimpatikus."
+        },
+        {
+          "en": "Étkezés után a paraszimpatikus idegrendszer fokozza a bélmozgást és az emésztést.",
+          "hu": "Paraszimpatikus."
+        }
+      ]
+    },
+    {
+      "title": "Reflexív és az idegi–hormonális szabályozás különbsége",
+      "explanation": "A reflexív részei: receptor → érző idegsejt → központ → mozgató idegsejt → végrehajtó szerv. Az idegi szabályozás gyors, pontos célzású és rövid ideig tart; a hormonális lassabban alakul ki, a vérrel az egész testbe eljut (de csak a receptorral rendelkező célsejtekre hat), és tartósabb.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "A térdreflexnél az ingerület néhány század másodperc alatt fut végig a reflexíven.",
+          "hu": "Idegi – gyors."
+        },
+        {
+          "en": "A növekedési hormon hatása hónapok, évek alatt nyilvánul meg.",
+          "hu": "Hormonális – lassú, tartós."
+        }
+      ]
+    }
+  ],
+  "commonMistakes": [
+    {
+      "wrong": "Az inzulin emeli a vércukorszintet.",
+      "right": "Az inzulin csökkenti a vércukorszintet; a glukagon emeli.",
+      "why": "Az inzulin a glükózfelvételt és a glikogénképzést fokozza, ezért a vérből fogy a glükóz."
+    },
+    {
+      "wrong": "A szimpatikus idegrendszer lassítja a szívműködést.",
+      "right": "A szimpatikus gyorsítja, a paraszimpatikus lassítja a szívműködést.",
+      "why": "A szimpatikus hatás a terheléshez, a paraszimpatikus a nyugalomhoz igazítja a szervezetet."
+    },
+    {
+      "wrong": "Sok tiroxin esetén az agyalapi mirigy több TSH-t termel.",
+      "right": "Sok tiroxin gátolja a TSH-termelést (negatív visszacsatolás).",
+      "why": "A környéki hormon visszahat a felsőbb szintekre, és csökkenti a saját termelését serkentő hormont."
+    },
+    {
+      "wrong": "A pozitív visszacsatolás a jó, a negatív a rossz szabályozás.",
+      "right": "A negatív visszacsatolás tartja állandóan a belső környezetet; a pozitív felerősíti a változást.",
+      "why": "A „pozitív” és „negatív” a hatás irányát jelenti, nem értékítéletet."
+    },
+    {
+      "wrong": "A hormonok csak a vérben hatnak.",
+      "right": "A hormonok a vérrel szállítódnak, de a célsejtek receptoraihoz kötődve azokban fejtik ki hatásukat.",
+      "why": "Hatás csak ott van, ahol a hormonnak receptora van."
+    }
+  ],
+  "examTips": [
+    "Ábrán vagy szövegben leírt szabályozási körnél mindig kövesd végig a nyilakat: mi az érzékelő, mi a központ, mi a végrehajtó, és a válasz növeli vagy csökkenti-e a kiinduló eltérést.",
+    "Hormonos feladatnál írd fel magadnak a hormon – termelő mirigy – hatás – ellentétes hormon négyest; a feladatlap gyakran párosítás formájában kérdezi.",
+    "Kifejtős kérdésben a „negatív visszacsatolás” kifejezést ne csak megnevezd, hanem a konkrét példán írd le a menetét – csak így kapsz rá teljes pontot."
+  ],
+  "practice": [
+    {
+      "id": "1",
+      "kind": "choice",
+      "prompt": "Melyik hormon emeli a vércukorszintet?",
+      "options": [
+        {
+          "key": "A",
+          "text": "inzulin"
+        },
+        {
+          "key": "B",
+          "text": "ADH"
+        },
+        {
+          "key": "C",
+          "text": "glukagon"
+        },
+        {
+          "key": "D",
+          "text": "kalcitonin"
+        }
+      ],
+      "answer": "C",
+      "category": "szabalyozas-folyamat",
+      "explanation": "Helyes: C. A glukagont a hasnyálmirigy alfa-sejtjei termelik; a májban glikogénbontást és glükózképzést indít, így emeli a vércukorszintet.",
+      "wrongOptions": {
+        "A": "Az inzulin csökkenti a vércukorszintet.",
+        "B": "Az ADH a vese vízvisszaszívását szabályozza.",
+        "D": "A kalcitonin a vér kalciumszintjét csökkenti."
+      }
+    },
+    {
+      "id": "2",
+      "kind": "choice",
+      "prompt": "Melyik a szimpatikus idegrendszer hatása?",
+      "options": [
+        {
+          "key": "A",
+          "text": "a pupilla szűkítése"
+        },
+        {
+          "key": "B",
+          "text": "a bélmozgás fokozása"
+        },
+        {
+          "key": "C",
+          "text": "a hörgők tágítása"
+        },
+        {
+          "key": "D",
+          "text": "a szívműködés lassítása"
+        }
+      ],
+      "answer": "C",
+      "category": "szabalyozas-folyamat",
+      "explanation": "Helyes: C. A szimpatikus hatás terheléshez igazít: tágítja a hörgőket (több levegő), gyorsítja a szívet, tágítja a pupillát, gátolja az emésztést.",
+      "wrongOptions": {
+        "A": "A pupillát a paraszimpatikus szűkíti, a szimpatikus tágítja.",
+        "B": "A bélmozgást a paraszimpatikus fokozza, a szimpatikus gátolja.",
+        "D": "A szívet a paraszimpatikus lassítja, a szimpatikus gyorsítja."
+      }
+    },
+    {
+      "id": "3",
+      "kind": "text",
+      "prompt": "Hogyan nevezzük azt a szabályozási formát, amelyben a válasz csökkenti a kiváltó eltérést?",
+      "answer": [
+        "negatív visszacsatolás",
+        "negatív visszacsatolással",
+        "negatív feedback"
+      ],
+      "category": "szabalyozas-folyamat",
+      "explanation": "Helyes: negatív visszacsatolás. Például a vér magas ozmotikus koncentrációja ADH-elválasztást vált ki, a vízvisszaszívás hígítja a vért, és ez csökkenti az ADH-elválasztást.",
+      "maxWords": 3
+    },
+    {
+      "id": "4",
+      "kind": "choice",
+      "prompt": "Jódhiányos táplálkozás esetén mi történik?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Nő a tiroxin- és csökken a TSH-szint."
+        },
+        {
+          "key": "B",
+          "text": "Csökken a tiroxin- és nő a TSH-szint, a pajzsmirigy megnagyobbodik."
+        },
+        {
+          "key": "C",
+          "text": "Csökken a TSH-szint, és a pajzsmirigy sorvad."
+        },
+        {
+          "key": "D",
+          "text": "Nő az inzulinszint, és csökken a vércukorszint."
+        }
+      ],
+      "answer": "B",
+      "category": "szabalyozas-folyamat",
+      "explanation": "Helyes: B. Jód nélkül nem képződik elég tiroxin, így elmarad a TSH-termelés gátlása; a sok TSH a pajzsmirigy megnagyobbodását (golyva) okozza.",
+      "wrongOptions": {
+        "A": "Jód nélkül a tiroxin nem tud nőni, hiszen a jód a tiroxin alkotórésze.",
+        "C": "A kevés tiroxin nem gátolja a TSH-t, ezért a TSH nő, és a mirigy megnagyobbodik.",
+        "D": "A jódhiány a pajzsmirigyet érinti, nem az inzulint."
+      }
+    },
+    {
+      "id": "5",
+      "kind": "text",
+      "prompt": "Melyik agyrész a testhőmérséklet és a vízháztartás szabályozásának központja?",
+      "answer": [
+        "hipotalamusz",
+        "hypothalamus",
+        "a hipotalamusz",
+        "köztiagy"
+      ],
+      "category": "szabalyozas-folyamat",
+      "explanation": "Helyes: hipotalamusz (a köztiagy része). Itt vannak a testhőmérsékletet és a vér ozmotikus koncentrációját érzékelő idegsejtek, és itt termelődik az ADH is.",
+      "maxWords": 2
+    }
+  ],
+  "relatedCategories": [
+    "felepites-mukodes",
+    "abra-adatelemzes"
+  ]
+}

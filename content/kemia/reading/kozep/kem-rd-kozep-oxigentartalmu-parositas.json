@@ -1,0 +1,86 @@
+{
+  "schemaVersion": 1,
+  "id": "kem-rd-kozep-oxigentartalmu-parositas",
+  "subject": "kemia",
+  "revision": 1,
+  "level": "kozep",
+  "source": "generated",
+  "topic": "oxigen-nitrogen-vegyuletek",
+  "title": "Oxigén- és nitrogéntartalmú szerves vegyületek – párosítás",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "reading",
+  "type": "parositas",
+  "instructions": "Párosítsd a vegyületeket (1–6) a rájuk vonatkozó leírásokkal (A–I)! Minden leírás legfeljebb egyszer használható, két leírás felesleges. Írd a leírás betűjelét a vegyület mellé! A 0. a példa.",
+  "options": [
+    { "key": "A", "text": "Egyértékű alkohol, az alkoholos italok hatóanyaga, cukrok erjesztésével is előállítható." },
+    { "key": "B", "text": "Három hidroxilcsoportot tartalmazó, édes ízű, sűrűn folyó alkohol; a zsírok és olajok alkotórésze." },
+    { "key": "C", "text": "Szúrós szagú, gáz-halmazállapotú aldehid; 35–40 %-os vizes oldata a formalin, tartósító- és fertőtlenítőszer." },
+    { "key": "D", "text": "A legegyszerűbb keton, kiváló oldószer, körömlakklemosók alkotórésze." },
+    { "key": "E", "text": "Az ecet hatóanyaga, szúrós szagú karbonsav; vizes oldata savas kémhatású." },
+    { "key": "F", "text": "Két etilcsoportot tartalmazó éter, illékony, gyúlékony folyadék, régen altatószerként használták." },
+    { "key": "G", "text": "Nitrogéntartalmú vegyület, a fehérjelebontás végterméke a vizeletben; nitrogénműtrágya." },
+    { "key": "H", "text": "Mérgező, egyértékű alkohol, fogyasztása vakságot, halált okozhat; faszesznek is nevezik." },
+    { "key": "I", "text": "Aromás vegyület, a benzolgyűrűhöz közvetlenül kapcsolódó hidroxilcsoporttal; mérgező, fertőtlenítő hatású." }
+  ],
+  "example": {
+    "id": "0",
+    "kind": "match",
+    "prompt": "etanol (C₂H₅OH)",
+    "answer": "A",
+    "category": "szerves-elnevezes",
+    "explanation": "Helyes: A. Az etanol (etil-alkohol) egyértékű, telített alkohol, a szeszes italok hatóanyaga; glükózból alkoholos erjesztéssel keletkezik: C₆H₁₂O₆ → 2 C₂H₅OH + 2 CO₂."
+  },
+  "items": [
+    {
+      "id": "1",
+      "kind": "match",
+      "prompt": "glicerin (propán-1,2,3-triol)",
+      "answer": "B",
+      "category": "szerves-elnevezes",
+      "explanation": "Helyes: B. A glicerin háromértékű alkohol: a három szénatom mindegyikén egy hidroxilcsoport van. Édes ízű, viszkózus folyadék; a zsírok és olajok a glicerin és zsírsavak észterei."
+    },
+    {
+      "id": "2",
+      "kind": "match",
+      "prompt": "formaldehid (metanal, HCHO)",
+      "answer": "C",
+      "category": "szerves-elnevezes",
+      "explanation": "Helyes: C. A formaldehid a legegyszerűbb aldehid, szúrós szagú gáz; vizes oldata a formalin, amelyet biológiai preparátumok tartósítására használnak, mert a fehérjéket kicsapja."
+    },
+    {
+      "id": "3",
+      "kind": "match",
+      "prompt": "aceton (propanon, CH₃–CO–CH₃)",
+      "answer": "D",
+      "category": "szerves-elnevezes",
+      "explanation": "Helyes: D. Az acetonban az oxocsoport (C=O) a szénlánc belsejében van, ezért keton; a legegyszerűbb keton. Vízzel és szerves oldószerekkel is elegyedik, körömlakklemosó és lakkoldószer."
+    },
+    {
+      "id": "4",
+      "kind": "match",
+      "prompt": "ecetsav (etánsav, CH₃COOH)",
+      "answer": "E",
+      "category": "szerves-elnevezes",
+      "explanation": "Helyes: E. Az ecetsav karboxilcsoportot (–COOH) tartalmazó karbonsav; a háztartási ecet 5–20 %-os vizes oldata. Gyenge sav: vízben részben disszociál, CH₃COOH + H₂O ⇌ CH₃COO⁻ + H₃O⁺."
+    },
+    {
+      "id": "5",
+      "kind": "match",
+      "prompt": "metanol (metil-alkohol, CH₃OH)",
+      "answer": "H",
+      "category": "anyagismeret",
+      "explanation": "Helyes: H. A metanol a legegyszerűbb alkohol; külsőre az etanolhoz hasonló, de erősen mérgező, mert a szervezetben formaldehiddé és hangyasavvá oxidálódik, ami a látóideget károsítja. Régen fa száraz lepárlásával nyerték (faszesz)."
+    },
+    {
+      "id": "6",
+      "kind": "match",
+      "prompt": "karbamid (CO(NH₂)₂)",
+      "answer": "G",
+      "category": "anyagismeret",
+      "explanation": "Helyes: G. A karbamid a szénsav diamidja, nitrogéntartalmú szerves vegyület: az emlősök fehérje-anyagcseréjének végterméke, a vizelettel ürül; nagy nitrogéntartalma (46 %) miatt fontos műtrágya."
+    }
+  ],
+  "glossary": [],
+  "suggestedMinutes": 7
+}

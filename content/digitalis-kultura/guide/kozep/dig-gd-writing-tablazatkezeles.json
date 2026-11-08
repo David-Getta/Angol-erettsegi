@@ -1,0 +1,148 @@
+{
+  "schemaVersion": 1,
+  "id": "dig-gd-writing-tablazatkezeles",
+  "subject": "digitalis-kultura",
+  "revision": 1,
+  "level": "kozep",
+  "source": "generated",
+  "topic": "utmutato",
+  "title": "Táblázatkezelési feladat",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "guide",
+  "type": "writing",
+  "target": "tablazatkezeles",
+  "summaryHu": "A táblázatkezelési feladatban egy szövegfájlból betöltött adatsort kell képletekkel feldolgoznod, formáznod és diagramon ábrázolnod. Középszinten ez a 3. feladat (25 pont), emelt szinten a 2. (15 pont). A pontok nagy része képletekért jár: a javító azt nézi, hogy minden érték képlettel készült-e, a képletek másolhatók-e, és a feladathoz illő függvényt használtad-e.",
+  "steps": [
+    {
+      "title": "Betöltés és mentés",
+      "explanation": "Az adatokat a megadott cellától (általában A1) töltsd be a helyes kódolással és határolóval, majd mentsd a kért néven, a program saját formátumában. Ellenőrizd, hogy a számok és a dátumok számként jelentek-e meg.",
+      "tips": [
+        "Adatok > Szövegből/CSV-ből: UTF-8, Tabulátor.",
+        "A balra igazított „számok” valójában szövegek – így nem lehet velük számolni."
+      ]
+    },
+    {
+      "title": "Képletek oszloponként",
+      "explanation": "Minden számított oszlophoz egyetlen képletet írj az első sorba, és másold le. Előtte gondold végig, mi maradjon fix: közös állandó, összeg, keresési táblázat – ezek abszolút hivatkozást kapnak.",
+      "tips": [
+        "F4: hivatkozástípus váltása.",
+        "A képlet eredményét egy-két sorban kézzel is ellenőrizd."
+      ]
+    },
+    {
+      "title": "Összesítések és feltételes számítások",
+      "explanation": "Az összesítő cellákba (összeg, átlag, maximum, darabszám) a megfelelő függvény kerül; feltételhez DARABTELI, SZUMHA, ÁTLAGHA, több feltételhez a …HATÖBB változatok; keresésre FKERES, XKERES vagy INDEX + HOL.VAN.",
+      "tips": [
+        "A tartományba ne kerüljön bele az összegsor.",
+        "A „kerekítve” kérésnél KEREKÍTÉS függvény kell, a „jelenjen meg” kérésnél formátum."
+      ]
+    },
+    {
+      "title": "Formázás",
+      "explanation": "Számformátum (tizedesjegyek, pénznem, százalék, dátum), fejlécformázás (félkövér, sortörés, igazítás), szegélyek, feltételes formázás – mind a leírás szerint.",
+      "tips": [
+        "A feltételes formázás szabály, nem kézi színezés.",
+        "Az egyéni dátumformátum magyar Excelben: éééé.hh.nn."
+      ]
+    },
+    {
+      "title": "Diagram",
+      "explanation": "A megfelelő típus (oszlop, vonal, kör, pont), pontos adattartomány fejléccel, a kért cím, tengelycímek, jelmagyarázat, és a kért hely.",
+      "tips": [
+        "Nem szomszédos tartományok: Ctrl + kijelölés.",
+        "Oszlopdiagramnál a tengely 0-ról induljon."
+      ]
+    }
+  ],
+  "phrases": [
+    {
+      "group": "Alap",
+      "en": "=SZUM / SUM, =ÁTLAG / AVERAGE, =MIN, =MAX",
+      "hu": "összesítés"
+    },
+    {
+      "group": "Alap",
+      "en": "=KEREKÍTÉS / ROUND",
+      "hu": "kerekítés megadott tizedesjegyre"
+    },
+    {
+      "group": "Feltétel",
+      "en": "=HA / IF, ÉS / AND, VAGY / OR",
+      "hu": "feltételtől függő érték"
+    },
+    {
+      "group": "Feltétel",
+      "en": "=DARABTELI / COUNTIF, =SZUMHA / SUMIF, =ÁTLAGHA / AVERAGEIF",
+      "hu": "feltételes számolás"
+    },
+    {
+      "group": "Feltétel",
+      "en": "=DARABHATÖBB / COUNTIFS, =SZUMHATÖBB / SUMIFS",
+      "hu": "több feltétel"
+    },
+    {
+      "group": "Keresés",
+      "en": "=FKERES / VLOOKUP (…;HAMIS)",
+      "hu": "pontos keresés az első oszlopban"
+    },
+    {
+      "group": "Keresés",
+      "en": "=INDEX(…;HOL.VAN(…;…;0)) / INDEX(…,MATCH(…,…,0))",
+      "hu": "keresés bármely irányban"
+    },
+    {
+      "group": "Dátum",
+      "en": "=ÉV / YEAR, =HÓNAP / MONTH, =HÉT.NAPJA / WEEKDAY",
+      "hu": "dátum részei"
+    },
+    {
+      "group": "Hivatkozás",
+      "en": "$A$1, $A1, A$1",
+      "hu": "abszolút és vegyes hivatkozás"
+    }
+  ],
+  "mistakes": [
+    {
+      "wrong": "A kiszámolt értéket kézzel írom a cellába.",
+      "right": "Képlettel számolok.",
+      "why": "A kézzel beírt érték nem ér pontot."
+    },
+    {
+      "wrong": "=B2*F1 lefelé másolva.",
+      "right": "=B2*$F$1",
+      "why": "A közös szorzó nélkül a másolt képletek üres cellákra mutatnak."
+    },
+    {
+      "wrong": "Kördiagramot készítek idősorra.",
+      "right": "Vonal- vagy oszlopdiagram.",
+      "why": "A kördiagram egy egész részeit mutatja."
+    },
+    {
+      "wrong": "A „kerekítve” kérésnél csak a tizedesjegyeket csökkentem.",
+      "right": "=KEREKÍTÉS(…;0)",
+      "why": "A formátum az értéket nem kerekíti, a további számítások eltérhetnek."
+    }
+  ],
+  "checklist": [
+    "Az adatok a kért cellától, helyes kódolással és típussal kerültek be?",
+    "Minden számítás képlettel készült, és a másolt képletek jók?",
+    "A tartományok nem tartalmazzák az összegsort?",
+    "A kerekítés és a formátum a leírás szerinti?",
+    "A diagram típusa, adatai és feliratai pontosak?",
+    "Mentettem a kért néven?"
+  ],
+  "timing": "Középszinten kb. 45 perc (25 pont): 5 perc betöltés, 25 perc képletek, 10 perc formázás és diagram, 5 perc ellenőrzés. Emelt szinten kb. 35 perc (15 pont), de a képletek összetettebbek – a betöltés és a formázás menjen gyorsan.",
+  "example": {
+    "title": "Minta: másolható képletek",
+    "text": "H2: =SZUM(C2:G2)        (=SUM(C2:G2))\nJ2: =I2/$I$17\nK2: =HA(H2<30;\"kevés\";\"\")   (=IF(H2<30,\"kevés\",\"\"))",
+    "notes": [
+      "Mindhárom képlet az első adatsorba kerül, és lemásolható a 16. sorig.",
+      "Az $I$17 abszolút hivatkozás a teljes összegre."
+    ]
+  },
+  "levelNotes": {
+    "kozep": "Középszinten az alapfüggvények, a HA, a DARABTELI, a KEREKÍTÉS, az abszolút hivatkozás, egy egyszerű keresés (pl. INDEX + HOL.VAN vagy XKERES), formázás és egy diagram a jellemző.",
+    "emelt": "Emelt szinten a többfeltételes függvények (DARABHATÖBB, SZUMHATÖBB), a közelítő keresés sávos táblázatban, a munkalapok közti hivatkozás, a dátum- és szövegfüggvények, valamint a képlet alapú feltételes formázás is előfordul."
+  }
+}

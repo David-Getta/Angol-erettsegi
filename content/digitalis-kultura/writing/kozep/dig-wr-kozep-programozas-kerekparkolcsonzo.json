@@ -1,0 +1,112 @@
+{
+  "schemaVersion": 1,
+  "id": "dig-wr-kozep-programozas-kerekparkolcsonzo",
+  "subject": "digitalis-kultura",
+  "revision": 1,
+  "level": "kozep",
+  "source": "generated",
+  "topic": "algoritmizalas",
+  "title": "Programozás: kerékpárkölcsönző",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "writing",
+  "type": "programozas",
+  "taskNumber": 5,
+  "situation": "Egy kerékpárkölcsönző egynapi bérléseit a berles.txt fájl tartalmazza. Minden sorban egy bérlés adatai állnak pontosvesszővel elválasztva: a kerékpár azonosítója, a bérlő neve és a bérlés hossza percben (pozitív egész). Például:\nK03;Tóth Bálint;45\nK11;Nagy Eszter;20\nK03;Kiss Péter;95\nK07;Szabó Anna;30\nK11;Varga Dóra;61\nK02;Molnár Gergő;130\nK07;Tóth Bálint;15\n\nKészítsen programot kerekpar néven (pl. kerekpar.py)! A képernyőre írás előtt mindig jelenítse meg a feladat sorszámát!\n\n1. Olvassa be a berles.txt adatait, és tárolja el őket a további feldolgozáshoz! A fájlban legfeljebb 500 sor van.\n2. Írja ki, hány bérlés volt a nap folyamán!\n3. Írja ki a bérlések összes időtartamát óra és perc alakban (pl. „6 óra 36 perc”)!\n4. Írja ki a leghosszabb bérlés bérlőjének nevét, a kerékpár azonosítóját és a bérlés hosszát! (Feltételezheti, hogy egy ilyen van.)\n5. Kérjen be egy kerékpár-azonosítót, és írja ki, hányszor bérelték ki aznap! Ha egyszer sem, az „Ezt a kerékpárt nem bérelték.” szöveg jelenjen meg.\n6. A díj: 30 percig 400 Ft, utána minden megkezdett 15 perc további 150 Ft (pl. 45 perc: 550 Ft, 61 perc: 850 Ft). Írja ki a napi teljes bevételt!\n\nMinta (a fenti fájllal, a bekért azonosító: K03):\n2. feladat\nA bérlések száma: 7\n3. feladat\nÖsszes bérlési idő: 6 óra 36 perc\n4. feladat\nA leghosszabb bérlés: Molnár Gergő (K02) 130 perc\n5. feladat\nAdja meg egy kerékpár azonosítóját: K03\nA kerékpárt 2 alkalommal bérelték.\n6. feladat\nA teljes bevétel: 5200 Ft",
+  "points": [
+    {
+      "id": "p1",
+      "text": "1. A fájl beolvasása és az adatok tárolása (2 pont)"
+    },
+    {
+      "id": "p2",
+      "text": "2. A bérlések száma (1 pont)"
+    },
+    {
+      "id": "p3",
+      "text": "3. Az összes időtartam óra–perc alakban (3 pont)"
+    },
+    {
+      "id": "p4",
+      "text": "4. A leghosszabb bérlés adatai (3 pont)"
+    },
+    {
+      "id": "p5",
+      "text": "5. A bekért kerékpár bérléseinek száma, illetve a kért szöveg (3 pont)"
+    },
+    {
+      "id": "p6",
+      "text": "6. A napi bevétel a díjszabás szerint (3 pont)"
+    }
+  ],
+  "suggestedMinutes": 35,
+  "usefulPhrases": [
+    {
+      "en": "with open(\"berles.txt\", encoding=\"utf-8\") as f:",
+      "hu": "a fájl megnyitása UTF-8 kódolással; a blokk végén automatikusan bezárul"
+    },
+    {
+      "en": "sor.strip().split(\";\")",
+      "hu": "a sorvégjel levágása és a sor feldarabolása az elválasztó mentén"
+    },
+    {
+      "en": "perc // 60, perc % 60",
+      "hu": "egészosztás és maradék: óra és perc"
+    },
+    {
+      "en": "(x + 14) // 15",
+      "hu": "felfelé kerekítés 15-tel osztáskor egész aritmetikával (megkezdett negyedórák)"
+    },
+    {
+      "en": "def dij(perc): … return …",
+      "hu": "saját függvény: a szabályt egy helyen írod le, többször használod"
+    },
+    {
+      "en": "leg = berlesek[0]",
+      "hu": "a maximumkiválasztás kezdőértéke: az első elem, nem 0"
+    },
+    {
+      "en": "db = 0 … db += 1",
+      "hu": "megszámlálás a bekért értékre"
+    },
+    {
+      "en": "if db > 0: … else: …",
+      "hu": "a „nincs ilyen” eset külön kiírása"
+    }
+  ],
+  "checklistExtra": [],
+  "modelAnswer": {
+    "text": "Megoldás Pythonban (a minta fájllal és a K03 bemenettel tesztelve a mintakimenetet adja):\n\n# 1. feladat: beolvasás – minden sor egy [azonosító, név, perc] lista\nberlesek = []\nwith open(\"berles.txt\", encoding=\"utf-8\") as f:\n    for sor in f:\n        azon, nev, perc = sor.strip().split(\";\")\n        berlesek.append([azon, nev, int(perc)])\n\n# 2. feladat\nprint(\"2. feladat\")\nprint(\"A bérlések száma:\", len(berlesek))\n\n# 3. feladat: összegzés, átváltás óra-percre\nosszes = 0\nfor b in berlesek:\n    osszes += b[2]\nprint(\"3. feladat\")\nprint(\"Összes bérlési idő:\", osszes // 60, \"óra\", osszes % 60, \"perc\")\n\n# 4. feladat: maximumkiválasztás\nleg = berlesek[0]\nfor b in berlesek:\n    if b[2] > leg[2]:\n        leg = b\nprint(\"4. feladat\")\nprint(\"A leghosszabb bérlés:\", leg[1], \"(\" + leg[0] + \")\", leg[2], \"perc\")\n\n# 5. feladat: megszámlálás a bekért azonosítóra\nkeresett = input(\"5. feladat\\nAdja meg egy kerékpár azonosítóját: \")\ndb = 0\nfor b in berlesek:\n    if b[0] == keresett:\n        db += 1\nif db > 0:\n    print(\"A kerékpárt\", db, \"alkalommal bérelték.\")\nelse:\n    print(\"Ezt a kerékpárt nem bérelték.\")\n\n# 6. feladat: díjszámítás függvénnyel\ndef dij(perc):\n    if perc <= 30:\n        return 400\n    return 400 + (perc - 30 + 14) // 15 * 150   # minden megkezdett 15 perc\n\nbevetel = 0\nfor b in berlesek:\n    bevetel += dij(b[2])\nprint(\"6. feladat\")\nprint(\"A teljes bevétel:\", bevetel, \"Ft\")\n\nMagyarázat: minden sorból a strip() levágja a sorvégjelet, a split(\";\") három részre bontja; a percet int()-tel számmá alakítom, mert számolni kell vele. A 3. feladatban a // egészosztás adja az órákat, a % maradék a perceket. A 4. maximumkiválasztás a teljes rekordot jegyzi meg, így a név és az azonosító is kéznél van. A díjnál a (perc - 30 + 14) // 15 a megkezdett negyedórák száma (felfelé kerekítés egészosztással): 61 perc → (31 + 14) // 15 = 3 negyedóra, 400 + 3 · 150 = 850 Ft.",
+    "pointsCovered": [
+      {
+        "id": "p1",
+        "quote": "azon, nev, perc = sor.strip().split(\";\")"
+      },
+      {
+        "id": "p2",
+        "quote": "print(\"A bérlések száma:\", len(berlesek))"
+      },
+      {
+        "id": "p3",
+        "quote": "print(\"Összes bérlési idő:\", osszes // 60, \"óra\", osszes % 60, \"perc\")"
+      },
+      {
+        "id": "p4",
+        "quote": "if b[2] > leg[2]:"
+      },
+      {
+        "id": "p5",
+        "quote": "print(\"Ezt a kerékpárt nem bérelték.\")"
+      },
+      {
+        "id": "p6",
+        "quote": "return 400 + (perc - 30 + 14) // 15 * 150"
+      }
+    ],
+    "notes": [
+      "A követelmények teljesítése: minden részfeladat a minta szerinti szöveggel és formában írja ki az eredményt, a díjszámítás a példákra (45 perc: 550 Ft, 61 perc: 850 Ft) is helyes értéket ad.",
+      "Szakszerű módszer: a beolvasás egy ciklusban, rekordonként történik; a díjszámítás külön függvényben van, így a 6. feladat egyetlen összegzéssé egyszerűsödik.",
+      "Pontosság: határesetek kezelve – pontosan 30 perc még 400 Ft, a 31. perctől jön az első 150 Ft; ha a bekért azonosító nem szerepel, a kért szöveg jelenik meg."
+    ]
+  }
+}

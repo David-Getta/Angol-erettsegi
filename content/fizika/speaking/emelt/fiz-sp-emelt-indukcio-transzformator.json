@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "id": "fiz-sp-emelt-indukcio-transzformator",
+  "subject": "fizika",
+  "revision": 1,
+  "level": "emelt",
+  "source": "generated",
+  "topic": "elektromossag",
+  "title": "Elektromágneses indukció – a transzformátor feszültségáttételének mérése",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "speaking",
+  "type": "tetel",
+  "partNumber": 1,
+  "instructionsHu": "Fejtsd ki az elektromágneses indukció jelenségét (mágneses fluxus, mozgási és nyugalmi indukció, Faraday és Lenz törvénye, önindukció) és fontos alkalmazásait! Ezután mutasd be kvalitatívan az indukciót tekerccsel és mágnessel, majd mérd meg egy szétszedhető transzformátor feszültségáttételét különböző szekunder menetszámokkal, és értékeld az eredményt!",
+  "prompts": [
+    "A mágneses fluxus fogalma; mikor indukálódik feszültség? Mozgási és nyugalmi indukció",
+    "Faraday indukciós törvénye és Lenz törvénye; az energiamegmaradás szerepe",
+    "Az önindukció, az induktivitás, a tekercs energiája",
+    "A váltakozó áram előállítása (generátor), a transzformátor és az energiaszállítás",
+    "A mérés: a feszültségáttétel és a menetszámarány összevetése, az eltérés okai"
+  ],
+  "sources": [
+    {
+      "title": "Kísérlet és mérés: indukció és transzformátor",
+      "text": "Eszközök: 600 menetes tekercs, rúdmágnes, középállású (nulla középállású) árammérő; szétszedhető U alakú vasmag zárólemezzel, 300, 600 és 1200 menetes tekercsek, 6 V-os váltakozó feszültségű törpefeszültségű tápegység, két váltakozó feszültség mérésére alkalmas multiméter.\nMenet: 1) A tekercsre kapcsolt árammérő mellett told be, tartsd nyugalomban, majd húzd ki a mágnest, gyorsan és lassan is! 2) Állítsd össze a transzformátort: primer tekercs 600 menet, erre 6,0 V váltakozó feszültség. Mérd meg a szekunder feszültséget 300, 600 és 1200 menetes szekunder tekerccsel, zárt vasmaggal, majd a zárólemez nélkül is!\nVárt tapasztalat: 1) a mutató csak a mágnes mozgatása közben tér ki, ellentétes irányba a be- és kihúzáskor, gyorsabb mozgatásnál jobban. 2) zárt vasmagnál U₂/U₁ ≈ N₂/N₁, kissé kisebb; nyitott vasmagnál a szekunder feszültség jóval kisebb."
+    }
+  ],
+  "keyPoints": [
+    "A mágneses fluxus Φ = B·A·cos α (Wb); indukált feszültség a fluxus változásakor jön létre.",
+    "Mozgási indukció: a mezőben mozgó vezetőben a Lorentz-erő választja szét a töltéseket, U = B·l·v; nyugalmi indukció: a változó mágneses mező örvényes elektromos mezőt kelt.",
+    "Faraday indukciós törvénye: U_i = −N·ΔΦ/Δt.",
+    "Lenz törvénye: az indukált áram akadályozza az őt létrehozó változást – az energiamegmaradás következménye.",
+    "Önindukció: a tekercs saját áramának változása is feszültséget indukál; U = −L·ΔI/Δt, a tekercs energiája ½·L·I².",
+    "A generátor forgó tekercsében szinuszos váltakozó feszültség indukálódik; a transzformátor U₁/U₂ ≈ N₁/N₂ szerint alakítja a feszültséget, a nagyfeszültségű szállítás csökkenti a veszteséget (P = I²·R).",
+    "A mérésben a feszültségáttétel közel egyenlő a menetszámaránnyal; az eltérést a szórt fluxus, a tekercsek ellenállása és a vasveszteség okozza, nyitott vasmagnál a szórás nagyon nagy."
+  ],
+  "speakingSeconds": 1200,
+  "prepSeconds": 1800,
+  "sampleAnswer": {
+    "turns": [
+      {
+        "speaker": "candidate",
+        "text": "A tételem az elektromágneses indukció. Faraday 1831-ben fedezte fel, hogy egy tekercsben feszültség indukálódik, ha a rajta áthaladó mágneses fluxus megváltozik. A fluxus Φ = B·A·cos α, mértékegysége a weber. A fluxus kétféleképpen változhat. Mozgási indukciónál a vezető mozog a mágneses mezőben, és a szabad elektronjaira ható Lorentz-erő választja szét a töltéseket; egy l hosszú, v sebességgel, a mezőre merőlegesen mozgó rúdban U = B·l·v feszültség keletkezik. Nyugalmi indukciónál a vezető áll, de a mágneses mező változik, és a változó mágneses mező örvényes elektromos mezőt hoz létre. Mindkét esetet Faraday törvénye írja le: U_i = −N·ΔΦ/Δt. A mínusz előjel Lenz törvényét fejezi ki: az indukált áram mindig akadályozza az őt létrehozó változást. Ez az energiamegmaradásból következik, hiszen különben a mágnes magától gyorsulna. Ha egy tekercs saját árama változik, abban is feszültség indukálódik, ez az önindukció: U = −L·ΔI/Δt, és a tekercs ½·L·I² energiát tárol. Az indukció alkalmazása a generátor, amelyben forgó tekercsben szinuszos feszültség keletkezik, és a transzformátor, amellyel a távvezetékeken nagy feszültségen, kis árammal, így kis hőveszteséggel szállítjuk az energiát.\nA kísérletben először a mágnest toltam a tekercsbe: a műszer mutatója kitért, nyugvó mágnesnél visszaállt nullára, kihúzáskor ellenkező irányba tért ki, és gyorsabb mozgatásnál nagyobb volt a kitérés. Ez igazolja, hogy csak a fluxus változása indukál feszültséget, és a változás sebessége számít; az ellentétes kitérés pedig azt mutatja, hogy az indukált áram iránya a változás irányától függ, összhangban Lenz törvényével.\nUtána a transzformátort mértem. A 600 menetes primer tekercsre 6,0 V váltakozó feszültséget kapcsoltam. Zárt vasmaggal a 300 menetes szekunderen 2,9 V-ot, a 600 menetesen 5,8 V-ot, az 1200 menetesen 11,5 V-ot mértem. A feszültségáttétel tehát 0,48; 0,97 és 1,92, ami a 0,5; 1 és 2 menetszámaránynál mindenhol 3–4 %-kal kisebb. Az eltérés oka, hogy a fluxus egy része nem halad át a szekunder tekercsen (szórt fluxus), és a tekercsek ellenállásán, valamint a vasmagban örvényáram- és átmágnesezési veszteség lép fel. Amikor levettem a zárólemezt, az 1200 menetes tekercsen csak kb. 2 V-ot mértem, mert nyitott vasmagnál a fluxus nagy része a levegőben záródik, és nem jut át a szekunder tekercsen."
+      },
+      {
+        "speaker": "examiner",
+        "text": "Miért lemezekből és nem tömör vasból készül a transzformátor vasmagja?"
+      },
+      {
+        "speaker": "candidate",
+        "text": "A változó fluxus a tömör vasban nagy örvényáramokat indukálna, amelyek melegítenék a vasmagot, és sok energia veszne el. Az egymástól szigetelt vékony lemezek megszakítják az örvényáramok útját, így a veszteség sokkal kisebb."
+      }
+    ],
+    "notes": [
+      "A felelet a fluxus definíciójától Faraday és Lenz törvényén és az önindukción át az alkalmazásokig a teljes témát lefedi, a jelenségeket mechanizmussal (Lorentz-erő, örvényes elektromos mező) magyarázza.",
+      "A mérés két része jól elkülönül: a kvalitatív kísérletből a fluxusváltozás szerepére, a transzformátoros mérésből a menetszámarány és a feszültségáttétel kapcsolatára következtet, számszerű eltéréssel és annak fizikai okaival.",
+      "A vizsgáztató kérdésére az örvényáramokkal érvel, ami a téma mélyebb megértését mutatja."
+    ]
+  }
+}

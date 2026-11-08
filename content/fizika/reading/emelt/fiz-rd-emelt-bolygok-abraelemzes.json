@@ -1,0 +1,136 @@
+{
+  "schemaVersion": 1,
+  "id": "fiz-rd-emelt-bolygok-abraelemzes",
+  "subject": "fizika",
+  "revision": 1,
+  "level": "emelt",
+  "source": "generated",
+  "topic": "vilagegyetem",
+  "title": "Bolygóadatok elemzése – Kepler-törvények, gravitáció",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "reading",
+  "type": "abraelemzes",
+  "instructions": "Olvasd el a táblázat leírását, és válaszolj a kérdésekre! Feleletválasztásnál egy helyes válasz van, számításnál csak a végeredményt írd be. A 0. kérdés a megoldott példa. A földi nehézségi gyorsulás 9,81 m/s², a fény sebessége 3,0 · 10⁸ m/s, 1 CSE (csillagászati egység) = 1,5 · 10¹¹ m.",
+  "passage": {
+    "title": "A Naprendszer hat bolygójának adatai",
+    "blocks": [
+      { "text": "Egy csillagászati évkönyv táblázata hat bolygó adatait közli. Az első oszlop a bolygó Naptól mért közepes távolsága (a pálya fél nagytengelye) csillagászati egységben (CSE), a második a keringési idő földi években, a harmadik a bolygó tömege a Föld tömegének egységében, a negyedik a bolygó közepes sugara a Föld sugarának egységében." },
+      { "text": "Merkúr: 0,387 CSE; 0,241 év; 0,055 földtömeg; 0,383 földsugár. Vénusz: 0,723 CSE; 0,615 év; 0,815 földtömeg; 0,950 földsugár. Föld: 1,000 CSE; 1,000 év; 1,000 földtömeg; 1,000 földsugár." },
+      { "text": "Mars: 1,524 CSE; 1,881 év; 0,107 földtömeg; 0,532 földsugár. Jupiter: 5,203 CSE; 11,86 év; 317,8 földtömeg; 10,97 földsugár. Szaturnusz: 9,537 CSE; 29,46 év; 95,2 földtömeg; 9,14 földsugár." },
+      { "text": "A táblázat alatti megjegyzés szerint a Föld átlagsűrűsége 5,51 g/cm³, a bolygópályák pedig jó közelítéssel körnek tekinthetők." }
+    ]
+  },
+  "example": {
+    "id": "0",
+    "kind": "choice",
+    "prompt": "Melyik bolygónak a legrövidebb a keringési ideje?",
+    "options": [
+      { "key": "A", "text": "A Merkúrnak." },
+      { "key": "B", "text": "A Vénusznak." },
+      { "key": "C", "text": "A Földnek." },
+      { "key": "D", "text": "A Szaturnusznak." }
+    ],
+    "answer": "A",
+    "category": "grafikon",
+    "explanation": "Helyes: A. A táblázat szerint a Merkúr keringési ideje 0,241 év (kb. 88 nap), ez a legkisebb érték; a Naphoz legközelebbi bolygó kering a leggyorsabban körbe.",
+    "evidence": "Merkúr: 0,387 CSE; 0,241 év"
+  },
+  "items": [
+    {
+      "id": "1",
+      "kind": "choice",
+      "prompt": "A táblázat adatai szerint melyik mennyiség közelítőleg azonos (≈ 1) mind a hat bolygóra, ha a távolságot (a) CSE-ben, a keringési időt (T) években mérjük?",
+      "options": [
+        { "key": "A", "text": "a/T" },
+        { "key": "B", "text": "T/a" },
+        { "key": "C", "text": "T²/a³" },
+        { "key": "D", "text": "T·a" }
+      ],
+      "answer": "C",
+      "category": "grafikon",
+      "explanation": "Helyes: C. Kepler III. törvénye: T²/a³ minden bolygóra ugyanaz. Ellenőrzés: Jupiter 11,86² ≈ 140,7 és 5,203³ ≈ 140,9, a hányados ≈ 1,00; Mars 1,881² ≈ 3,54 és 1,524³ ≈ 3,54.",
+      "wrongOptions": {
+        "A": "a/T a Merkúrnál ≈ 1,6, a Szaturnusznál ≈ 0,32 – nem állandó.",
+        "B": "T/a a Merkúrnál ≈ 0,62, a Szaturnusznál ≈ 3,1 – nem állandó.",
+        "D": "T·a a Merkúrnál ≈ 0,09, a Szaturnusznál ≈ 281 – nagyságrendekkel eltér."
+      }
+    },
+    {
+      "id": "2",
+      "kind": "text",
+      "prompt": "Egy kisbolygó a Naptól 4,0 CSE közepes távolságban kering. Kepler III. törvénye alapján hány év a keringési ideje?",
+      "answer": ["8", "8 év", "8,0", "8,0 év"],
+      "maxWords": 2,
+      "category": "kepletek",
+      "explanation": "Helyes: 8 év. A Földre T²/a³ = 1 év²/CSE³, így a kisbolygóra T² = a³ = 4,0³ = 64, T = √64 = 8,0 év."
+    },
+    {
+      "id": "3",
+      "kind": "choice",
+      "prompt": "Mekkora a nehézségi gyorsulás a Mars felszínén a táblázat adatai alapján?",
+      "options": [
+        { "key": "A", "text": "1,0 m/s²" },
+        { "key": "B", "text": "2,0 m/s²" },
+        { "key": "C", "text": "3,7 m/s²" },
+        { "key": "D", "text": "26 m/s²" }
+      ],
+      "answer": "C",
+      "category": "kepletek",
+      "explanation": "Helyes: C. A felszíni gravitációs gyorsulás g = γ·M/R², ezért a földihez viszonyítva g_Mars = 9,81 m/s² · 0,107 / 0,532² = 9,81 · 0,107 / 0,283 ≈ 3,7 m/s².",
+      "wrongOptions": {
+        "A": "1,0 m/s² = 9,81 · 0,107: csak a tömegarányt vette figyelembe, a sugár négyzetét nem.",
+        "B": "2,0 m/s² = 9,81 · 0,107/0,532: a sugárral, nem a sugár NÉGYZETÉVEL osztott.",
+        "D": "26 m/s² = 9,81 · 0,532²/0,107: fordított arányt használt – a kisebb tömegű Mars felszínén kisebb a gyorsulás."
+      }
+    },
+    {
+      "id": "4",
+      "kind": "tf",
+      "prompt": "A táblázat adatai szerint a Jupiter átlagsűrűsége kisebb a Föld átlagsűrűségénél.",
+      "answer": "T",
+      "category": "szamolas",
+      "explanation": "Igaz. A sűrűség ρ ~ M/R³: a Jupiterre 317,8 / 10,97³ ≈ 317,8 / 1320 ≈ 0,24, tehát a sűrűsége kb. 0,24 · 5,51 g/cm³ ≈ 1,3 g/cm³ – jóval kisebb a Földénél. A Jupiter óriási tömege ellenére főleg hidrogénből és héliumból álló gázóriás.",
+      "evidence": "Jupiter: 5,203 CSE; 11,86 év; 317,8 földtömeg; 10,97 földsugár"
+    },
+    {
+      "id": "5",
+      "kind": "text",
+      "prompt": "Hány perc alatt ér el a Nap fénye a Jupiterhez? (Egész percre kerekítve add meg!)",
+      "answer": ["43", "43 perc", "43 min"],
+      "maxWords": 2,
+      "category": "mertekegyseg",
+      "explanation": "Helyes: kb. 43 perc. A távolság s = 5,203 · 1,5 · 10¹¹ m ≈ 7,80 · 10¹¹ m, az idő t = s/c = 7,80 · 10¹¹ / 3,0 · 10⁸ ≈ 2600 s, ami 2600/60 ≈ 43 perc."
+    },
+    {
+      "id": "6",
+      "kind": "choice",
+      "prompt": "Melyik bolygónak a legnagyobb a pályamenti (keringési) sebessége?",
+      "options": [
+        { "key": "A", "text": "A Merkúrnak." },
+        { "key": "B", "text": "A Földnek." },
+        { "key": "C", "text": "A Jupiternek." },
+        { "key": "D", "text": "A Szaturnusznak." }
+      ],
+      "answer": "A",
+      "category": "grafikon",
+      "explanation": "Helyes: A. Körpályán v = 2π·a/T: a Merkúrra 2π · 0,387 / 0,241 ≈ 10,1 CSE/év, a Földre 2π ≈ 6,3 CSE/év, a Jupiterre ≈ 2,8, a Szaturnuszra ≈ 2,0 CSE/év. A gravitációs vonzás miatt v ~ 1/√a, így a Naphoz legközelebbi bolygó a leggyorsabb.",
+      "wrongOptions": {
+        "B": "A Föld (≈ 6,3 CSE/év, kb. 30 km/s) lassabb a Naphoz közelebbi Merkúrnál.",
+        "C": "A Jupiter nagy tömege nem számít: a keringési sebesség a Nap tömegétől és a pályasugártól függ, a bolygó tömegétől nem.",
+        "D": "A Szaturnusz a táblázat legtávolabbi bolygója, ezért a leglassabb (≈ 2,0 CSE/év)."
+      }
+    },
+    {
+      "id": "7",
+      "kind": "tf",
+      "prompt": "A táblázat szerint a Szaturnusz keringési ideje több mint harmincszorosa a Föld keringési idejének.",
+      "answer": "F",
+      "category": "grafikon",
+      "explanation": "Hamis. A Szaturnusz keringési ideje 29,46 év, ami kevesebb a Föld 1 éves keringési idejének harmincszorosánál (30 évnél).",
+      "evidence": "Szaturnusz: 9,537 CSE; 29,46 év"
+    }
+  ],
+  "glossary": [],
+  "suggestedMinutes": 15
+}

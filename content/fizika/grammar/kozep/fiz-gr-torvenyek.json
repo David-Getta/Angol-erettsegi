@@ -1,0 +1,303 @@
+{
+  "schemaVersion": 1,
+  "id": "fiz-gr-torvenyek",
+  "subject": "fizika",
+  "revision": 1,
+  "level": "kozep",
+  "source": "generated",
+  "topic": "nyelvtan",
+  "title": "Fizikai törvények és érvényességi feltételeik",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "grammar",
+  "type": "lesson",
+  "category": "torvenyek",
+  "summaryHu": "Egy fizikai törvény mindig két részből áll: az összefüggésből és azokból a feltételekből, amelyek mellett érvényes. A vizsgán a legtöbb pontot az veszti el, aki a törvényt a feltételei nélkül mondja ki, vagy olyan helyzetre alkalmazza, ahol nem érvényes (pl. mechanikai energiamegmaradás súrlódásnál). A teszt kérdései, a jelenségértelmezés és a szóbeli tétel is erre épít.",
+  "rules": [
+    {
+      "title": "Összefüggés + feltétel",
+      "explanation": "A törvényt mindig az érvényességi feltételével együtt mondd ki és használd. Ha a feladat egy feltételt megad (súrlódásmentes, állandó hőmérséklet, kis kitérés, ideális gáz), az jelzi, melyik törvény alkalmazható.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "Ohm törvénye: I ~ U, ha a vezető hőmérséklete állandó.",
+          "hu": "Az izzószál melegszik, ezért az izzó I–U grafikonja nem egyenes."
+        },
+        {
+          "en": "Boyle–Mariotte: p·V = állandó, ha T és az anyagmennyiség állandó.",
+          "hu": "Gyors összenyomásnál a gáz melegszik, ott már nem izoterm a folyamat."
+        },
+        {
+          "en": "Fonálinga: T = 2π·√(l/g), ha a kitérés kicsi (kb. 10° alatt).",
+          "hu": "Nagy kitérésnél a lengésidő kissé nagyobb a képlet szerintinél."
+        }
+      ]
+    },
+    {
+      "title": "Megmaradási törvények",
+      "explanation": "Az energia, a lendület és a töltés zárt rendszerben marad meg. A MECHANIKAI energia csak akkor állandó, ha nincs súrlódás, közegellenállás vagy rugalmatlan ütközés; ilyenkor a „hiányzó” energia belső energiává (hővé) alakul. A lendület akkor marad meg, ha a rendszerre ható külső erők eredője nulla (ütközések, robbanás rövid ideje alatt jó közelítéssel igaz).",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "Rugalmatlan ütközés: a lendület megmarad, a mozgási energia nem.",
+          "hu": "2 kg, 3 m/s + álló 1 kg → együtt 2 m/s; 9 J helyett 6 J mozgási energia marad."
+        },
+        {
+          "en": "Fékező autó: ½·m·v² = F_s·s",
+          "hu": "A mechanikai energia nem marad meg, de az energiamegmaradás igen: a mozgási energia hővé alakul."
+        }
+      ]
+    },
+    {
+      "title": "Newton törvényeinek helyes alkalmazása",
+      "explanation": "Az I. törvény szerint egyenletes mozgáshoz nem kell eredő erő. A II. törvényben az EREDŐ erő szerepel (F_e = m·a), nem egy kiragadott erő. A III. törvény erőpárja két KÜLÖNBÖZŐ testre hat, ezért sosem oltják ki egymást.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "Az asztalon fekvő könyvre ható nehézségi erő és az asztal nyomóereje nem erő–ellenerő pár.",
+          "hu": "Mindkettő a könyvre hat; a nehézségi erő ellenereje a könyv által a Földre kifejtett vonzóerő."
+        },
+        {
+          "en": "Egyenletesen haladó autó: húzóerő = menetellenállás, F_e = 0.",
+          "hu": "Nem igaz, hogy „a mozgás irányába nagyobb erő kell”."
+        }
+      ]
+    },
+    {
+      "title": "Arányosságok a törvényekben",
+      "explanation": "A törvényekből közvetlenül kiolvasható, hogyan változik egy mennyiség, ha egy másik változik: egyenes arányosság (F = m·a), fordított arányosság (a = F/m), négyzetes arányosság (E = ½mv², F = k·Q₁Q₂/r²). Ezt a tesztkérdések gyakran kérdezik számolás nélkül.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "v kétszeres → E_mozg négyszeres",
+          "hu": "E = ½·m·v², a sebesség négyzetével arányos."
+        },
+        {
+          "en": "r kétszeres → F_grav negyedakkora",
+          "hu": "A gravitációs és a Coulomb-erő a távolság négyzetével fordítottan arányos."
+        },
+        {
+          "en": "l négyszeres → T kétszeres (inga)",
+          "hu": "T ~ √l."
+        }
+      ]
+    },
+    {
+      "title": "A termodinamika főtételei",
+      "explanation": "Az I. főtétel (ΔE = Q + W) az energiamegmaradás hőtani alakja; W a gázon végzett munka. A II. főtétel szerint hő magától csak melegebbről hidegebbre megy át, ezért a hőerőgép hatásfoka mindig kisebb 1-nél, legfeljebb η_max = 1 − T_h/T_m (kelvinben).",
+      "emeltOnly": true,
+      "examples": [
+        {
+          "en": "Gáz 500 J hőt vesz fel, 200 J munkát végez: ΔE = 500 − 200 = 300 J.",
+          "hu": "A gáz által végzett munka a gázon végzett munka ellentettje."
+        },
+        {
+          "en": "527 °C és 27 °C között: η_max = 1 − 300/800 = 62,5 %.",
+          "hu": "A hőmérsékletek kelvinben szerepelnek."
+        }
+      ]
+    }
+  ],
+  "commonMistakes": [
+    {
+      "wrong": "Súrlódásos lejtőn a mechanikai energia megmarad, ezért m·g·h = ½·m·v².",
+      "right": "Súrlódásnál m·g·h = ½·m·v² + F_s·s; a mechanikai energia egy része hővé alakul.",
+      "why": "Az energiamegmaradás mindig igaz, a mechanikai energia megmaradása csak súrlódás és közegellenállás nélkül."
+    },
+    {
+      "wrong": "Az erő és az ellenerő kioltja egymást, ezért a ló nem tudja elhúzni a szekeret.",
+      "right": "Az erő és az ellenerő különböző testekre hat; a szekér mozgását a RÁ ható erők eredője határozza meg.",
+      "why": "Newton III. törvényének erőpárja sosem ugyanarra a testre hat, ezért nem adhatók össze."
+    },
+    {
+      "wrong": "Ohm törvénye minden fogyasztóra igaz, az izzó ellenállása is állandó.",
+      "right": "Ohm törvénye állandó hőmérsékletű fémes vezetőre igaz; az izzó ellenállása melegen sokszorosa a hidegnek.",
+      "why": "A törvény feltétele (állandó hőmérséklet) az izzónál nem teljesül."
+    },
+    {
+      "wrong": "Ütközésnél a mozgási energia mindig megmarad.",
+      "right": "Ütközésnél a lendület marad meg; a mozgási energia csak rugalmas ütközésnél.",
+      "why": "A rugalmatlan ütközésben a mozgási energia egy része belső energiává alakul."
+    }
+  ],
+  "examTips": [
+    "Teszt: a „Mi történik, ha…” típusú kérdéseket az arányosságokból számolás nélkül is meg tudod oldani – mindig írd fel a képletet, és nézd meg, milyen hatványon szerepel a változó mennyiség.",
+    "Összetett feladat és szóbeli: a törvény kimondásánál a feltételt is mondd ki („súrlódásmentes esetben…”, „zárt rendszerben…”) – a javítási útmutató ezt gyakran külön ponttal jutalmazza.",
+    "Jelenségértelmezésnél nevezd meg a törvényt (pl. „Lenz törvénye szerint…”), ne csak a következményét írd le."
+  ],
+  "practice": [
+    {
+      "id": "1",
+      "kind": "choice",
+      "prompt": "Melyik esetben marad meg a test mechanikai energiája?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Légellenállás nélkül szabadon eső kő."
+        },
+        {
+          "key": "B",
+          "text": "Súrlódásos lejtőn lecsúszó doboz."
+        },
+        {
+          "key": "C",
+          "text": "Fékező autó."
+        },
+        {
+          "key": "D",
+          "text": "Összetapadó kocsik ütközése."
+        }
+      ],
+      "answer": "A",
+      "category": "torvenyek",
+      "explanation": "Helyes: A. A mechanikai energia akkor marad meg, ha csak a nehézségi (konzervatív) erő végez munkát; a szabadon eső kőnél a helyzeti energia teljesen mozgási energiává alakul.",
+      "wrongOptions": {
+        "B": "A súrlódási erő munkája miatt a mechanikai energia egy része hővé alakul.",
+        "C": "A fékezés éppen a mozgási energia hővé alakítása.",
+        "D": "Rugalmatlan ütközésnél a mozgási energia egy része belső energiává alakul."
+      }
+    },
+    {
+      "id": "2",
+      "kind": "choice",
+      "prompt": "Egy könyv nyugszik az asztalon. Mi a könyvre ható nehézségi erő ellenereje Newton III. törvénye szerint?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Az asztal által a könyvre kifejtett nyomóerő."
+        },
+        {
+          "key": "B",
+          "text": "A könyv által a Földre kifejtett gravitációs vonzóerő."
+        },
+        {
+          "key": "C",
+          "text": "A könyv által az asztalra kifejtett nyomóerő."
+        },
+        {
+          "key": "D",
+          "text": "Nincs ellenereje, mert a könyv nyugalomban van."
+        }
+      ],
+      "answer": "B",
+      "category": "torvenyek",
+      "explanation": "Helyes: B. A nehézségi erő a Föld és a könyv kölcsönhatása: a Föld vonzza a könyvet, a könyv ugyanakkora erővel vonzza a Földet. Az ellenerő mindig a kölcsönhatásban részt vevő MÁSIK testre hat.",
+      "wrongOptions": {
+        "A": "Ez is a könyvre hat, ezért nem lehet a nehézségi erő ellenereje; az egyensúly (Newton I.) miatt egyenlő vele.",
+        "C": "Ez az asztal nyomóerejének (a könyvre ható tartóerőnek) az ellenereje, nem a nehézségi erőé.",
+        "D": "Minden erőnek van ellenereje, a test mozgásállapotától függetlenül."
+      }
+    },
+    {
+      "id": "3",
+      "kind": "choice",
+      "prompt": "Hogyan változik két pontszerű töltés között ható erő, ha a távolságukat a harmadára csökkentjük?",
+      "options": [
+        {
+          "key": "A",
+          "text": "A harmadára csökken."
+        },
+        {
+          "key": "B",
+          "text": "Háromszorosára nő."
+        },
+        {
+          "key": "C",
+          "text": "Kilencszeresére nő."
+        },
+        {
+          "key": "D",
+          "text": "A kilencedére csökken."
+        }
+      ],
+      "answer": "C",
+      "category": "torvenyek",
+      "explanation": "Helyes: C. Coulomb törvénye szerint F ~ 1/r²; ha r a harmadára csökken, F 3² = 9-szeresére nő.",
+      "wrongOptions": {
+        "A": "Kisebb távolságnál az erő nő, nem csökken.",
+        "B": "Az erő a távolság NÉGYZETÉVEL fordítottan arányos, nem a távolsággal.",
+        "D": "Ez a háromszoros távolságra lenne igaz."
+      }
+    },
+    {
+      "id": "4",
+      "kind": "choice",
+      "prompt": "Egy izzólámpa feszültségét kétszeresére növeljük. Mi történik az áramerősséggel?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Pontosan kétszeresére nő, Ohm törvénye szerint."
+        },
+        {
+          "key": "B",
+          "text": "Kevesebb mint kétszeresére nő, mert az izzószál ellenállása melegedéskor nő."
+        },
+        {
+          "key": "C",
+          "text": "Négyszeresére nő."
+        },
+        {
+          "key": "D",
+          "text": "Nem változik."
+        }
+      ],
+      "answer": "B",
+      "category": "torvenyek",
+      "explanation": "Helyes: B. Az izzószál hőmérséklete nagyobb feszültségen nő, és vele az ellenállása is, ezért Ohm törvényének feltétele (állandó hőmérséklet) nem teljesül: az áram kevesebb mint kétszeresére nő.",
+      "wrongOptions": {
+        "A": "Ohm törvénye csak állandó hőmérsékletű vezetőre igaz; az izzószál erősen melegszik.",
+        "C": "A négyszeres a teljesítményre lenne igaz állandó ellenállásnál (P = U²/R).",
+        "D": "Nagyobb feszültség nagyobb áramot hajt át, csak nem arányosan."
+      }
+    },
+    {
+      "id": "5",
+      "kind": "choice",
+      "prompt": "Egy zárt rendszerben két korcsolyázó egymást ellöki. Melyik mennyiség összege marad biztosan változatlan (a súrlódást elhanyagolva)?",
+      "options": [
+        {
+          "key": "A",
+          "text": "A mozgási energiájuk összege."
+        },
+        {
+          "key": "B",
+          "text": "A sebességük nagyságának összege."
+        },
+        {
+          "key": "C",
+          "text": "A sebességük összege."
+        },
+        {
+          "key": "D",
+          "text": "A lendületük vektori összege."
+        }
+      ],
+      "answer": "D",
+      "category": "torvenyek",
+      "explanation": "Helyes: D. Külső erők nélkül a rendszer lendülete megmarad: kezdetben 0, utána m₁·v₁ + m₂·v₂ = 0, ezért ellentétes irányba mozognak. A mozgási energia nő, mert az izmaik munkát végeznek.",
+      "wrongOptions": {
+        "A": "A mozgási energia 0-ról nő: a korcsolyázók izommunkája mozgási energiává alakul.",
+        "B": "A sebességek nagysága 0-ról nő, ez sem megmaradó mennyiség.",
+        "C": "A sebességek nem maradnak meg; a lendület a tömeggel súlyozott sebesség."
+      }
+    },
+    {
+      "id": "6",
+      "kind": "text",
+      "prompt": "Egy ideális hőerőgép 400 K és 300 K hőmérsékletű tartályok között működik. Legfeljebb hány százalék lehet a hatásfoka?",
+      "answer": [
+        "25",
+        "25 %",
+        "0,25"
+      ],
+      "maxWords": 2,
+      "category": "torvenyek",
+      "explanation": "Helyes: 25 %. Az ideális (Carnot-) hatásfok η = 1 − T_h/T_m = 1 − 300/400 = 0,25 = 25 %. A II. főtétel miatt valódi gép ennél kevesebbet ér el."
+    }
+  ],
+  "relatedCategories": [
+    "fogalmak",
+    "jelenseg-magyarazat",
+    "kepletek"
+  ]
+}

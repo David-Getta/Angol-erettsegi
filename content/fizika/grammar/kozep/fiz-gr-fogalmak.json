@@ -1,0 +1,295 @@
+{
+  "schemaVersion": 1,
+  "id": "fiz-gr-fogalmak",
+  "subject": "fizika",
+  "revision": 1,
+  "level": "kozep",
+  "source": "generated",
+  "topic": "nyelvtan",
+  "title": "Fizikai fogalmak és mennyiségek pontos használata",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "grammar",
+  "type": "lesson",
+  "category": "fogalmak",
+  "summaryHu": "A fizikában minden szónak pontos jelentése van: a tömeg nem súly, a hő nem hőmérséklet, a feszültség nem áramerősség. A feleletválasztós teszt kérdéseinek jó része egy-egy fogalom pontos jelentésére kérdez rá, a szóbelin és a kifejtős feladatokban pedig a fogalmak pontatlan használata a szaknyelvi pontokat viszi el.",
+  "rules": [
+    {
+      "title": "Tömeg és súly",
+      "explanation": "A tömeg (m, kg) a test tehetetlenségének mértéke, mindenhol ugyanannyi. A súly (G, N) erő: az, amellyel a test az alátámasztást nyomja vagy a felfüggesztést húzza; nyugalomban egyenlő a nehézségi erővel, m·g. A súly helyfüggő, és gyorsuló liftben vagy szabadesésben megváltozik (súlytalanság).",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "60 kg-os űrhajós: tömege a Holdon is 60 kg, súlya kb. 100 N.",
+          "hu": "g_Hold ≈ 1,6 m/s²."
+        },
+        {
+          "en": "Felfelé gyorsuló liftben a mérleg többet mutat.",
+          "hu": "A mérleg a súlyt méri, nem a tömeget."
+        }
+      ]
+    },
+    {
+      "title": "Hő, hőmérséklet, belső energia",
+      "explanation": "A hőmérséklet (T, K vagy °C) állapotjelző, a részecskék átlagos mozgási energiájával arányos. A belső energia (E, J) a részecskék összes energiája. A hő (Q, J) nem a test „tartalma”, hanem a hőmérséklet-különbség miatt átadott energia – folyamatot jellemez.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "Egy kád langyos víz belső energiája nagyobb lehet, mint egy csésze forró teáé.",
+          "hu": "A belső energia a tömegtől is függ, a hőmérséklet nem."
+        },
+        {
+          "en": "Olvadáskor hőt közlünk, de a hőmérséklet nem változik.",
+          "hu": "A hő a kötések felbontására fordítódik."
+        }
+      ]
+    },
+    {
+      "title": "Feszültség, áramerősség, ellenállás",
+      "explanation": "A feszültség (U, V) az egységnyi töltésen végzett munka – két pont KÖZÖTT értelmezzük. Az áramerősség (I, A) az időegység alatt átáramló töltés – egy keresztmetszeten ÁT folyik. Az ellenállás (R, Ω) a vezető tulajdonsága, R = U/I.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "„A fogyasztón 2 A feszültség esik” – rossz.",
+          "hu": "Helyesen: a fogyasztón 2 A áram folyik, a két vége között 12 V a feszültség."
+        },
+        {
+          "en": "Voltmérő: párhuzamosan; ampermérő: sorosan.",
+          "hu": "A feszültség két pont közötti, az áram egy ágon átfolyó mennyiség."
+        }
+      ]
+    },
+    {
+      "title": "Munka, energia, teljesítmény, hatásfok",
+      "explanation": "A munka (W, J) az energiaátadás egyik módja: W = F·s·cos α. Az energia (J) a munkavégző képesség. A teljesítmény (P, W) a munka (energia) időegységre jutó része: P = W/t. A hatásfok (η) a hasznos és az összes befektetett energia (teljesítmény) aránya, mindig kisebb 1-nél.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "Egy 60 W-os izzó 1 óra alatt 0,06 kWh = 216 kJ energiát használ.",
+          "hu": "A watt teljesítmény, a kWh energia."
+        },
+        {
+          "en": "A kWh nem teljesítmény-, hanem energiaegység.",
+          "hu": "1 kWh = 1000 W · 3600 s = 3,6 MJ."
+        }
+      ]
+    },
+    {
+      "title": "Skalár és vektor",
+      "explanation": "A vektormennyiségeknek nagysága ÉS iránya van (elmozdulás, sebesség, gyorsulás, erő, lendület, térerősség); a skalároknak csak nagysága (tömeg, idő, út, munka, energia, hőmérséklet, töltés). Az út a pálya hossza, az elmozdulás a kezdőpontból a végpontba mutató vektor.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "Egy kört megtevő futó: út 400 m, elmozdulás 0.",
+          "hu": "Az átlagsebesség (út/idő) és az átlagos sebességvektor (elmozdulás/idő) ezért különbözik."
+        },
+        {
+          "en": "Egyenletes körmozgásnál a sebesség nagysága állandó, iránya változik.",
+          "hu": "Ezért van gyorsulás (centripetális)."
+        }
+      ]
+    }
+  ],
+  "commonMistakes": [
+    {
+      "wrong": "A test súlya 60 kg.",
+      "right": "A test tömege 60 kg, súlya kb. 600 N.",
+      "why": "A súly erő, newtonban mérjük; a kilogramm a tömeg egysége."
+    },
+    {
+      "wrong": "A forró tea több hőt tartalmaz, mint a hideg víz.",
+      "right": "A forró tea hőmérséklete magasabb; hőt csak átadni lehet, a test belső energiával rendelkezik.",
+      "why": "A hő folyamatmennyiség (átadott energia), nem a test állapotát jellemzi."
+    },
+    {
+      "wrong": "A konnektorban 230 V áram van.",
+      "right": "A konnektor két pólusa között 230 V feszültség van; áram csak akkor folyik, ha fogyasztót kapcsolunk rá.",
+      "why": "A feszültség két pont közötti mennyiség, az áram a töltések áramlása zárt körben."
+    },
+    {
+      "wrong": "A villanyszámla kW-ban adja meg a fogyasztást.",
+      "right": "A villanyszámla kWh-ban (kilowattórában), azaz energiában adja meg a fogyasztást.",
+      "why": "A kW teljesítmény, a kWh energia: teljesítmény × idő."
+    }
+  ],
+  "examTips": [
+    "Teszt: a „melyik állítás igaz” kérdéseknél gyakran éppen egy összekevert fogalom a csapda (tömeg–súly, hő–hőmérséklet, út–elmozdulás) – olvasd el pontosan a mennyiség nevét és mértékegységét.",
+    "Szóbeli: minden fogalmat definícióval, jellel és mértékegységgel vezess be („Az áramerősség a keresztmetszeten időegység alatt átáramló töltés, I = Q/t, egysége az amper.”) – ez a tartalmi pontok alapja.",
+    "Forráselemzés: a szaknyelvi pontokat a pontos fogalomhasználat adja; kerüld a hétköznapi pontatlanságokat („áramot fogyaszt”, „hőt tartalmaz”)."
+  ],
+  "practice": [
+    {
+      "id": "1",
+      "kind": "choice",
+      "prompt": "Mi a súly mértékegysége az SI-ben?",
+      "options": [
+        {
+          "key": "A",
+          "text": "newton"
+        },
+        {
+          "key": "B",
+          "text": "kilogramm"
+        },
+        {
+          "key": "C",
+          "text": "joule"
+        },
+        {
+          "key": "D",
+          "text": "kilopond"
+        }
+      ],
+      "answer": "A",
+      "category": "fogalmak",
+      "explanation": "Helyes: A. A súly erő, ezért egysége a newton (N). Egy 1 kg tömegű test súlya nyugalomban a Földön kb. 9,81 N.",
+      "wrongOptions": {
+        "B": "A kilogramm a tömeg egysége, nem a súlyé.",
+        "C": "A joule a munka és az energia egysége.",
+        "D": "A kilopond régi, nem SI-erőegység (≈ 9,81 N); az SI-ben a newton használatos."
+      }
+    },
+    {
+      "id": "2",
+      "kind": "choice",
+      "prompt": "Melyik állítás igaz?",
+      "options": [
+        {
+          "key": "A",
+          "text": "A hőmérséklet a testben lévő hő mennyisége."
+        },
+        {
+          "key": "B",
+          "text": "Két egyforma hőmérsékletű test között hő áramlik."
+        },
+        {
+          "key": "C",
+          "text": "A hő és a belső energia ugyanaz."
+        },
+        {
+          "key": "D",
+          "text": "A hő a hőmérséklet-különbség miatt átadott energia."
+        }
+      ],
+      "answer": "D",
+      "category": "fogalmak",
+      "explanation": "Helyes: D. A hő energiaátadás, amely a hőmérséklet-különbség miatt történik a melegebb testről a hidegebbre; egysége a joule.",
+      "wrongOptions": {
+        "A": "A hőmérséklet állapotjelző, nem a „hő mennyisége”; a testnek belső energiája van.",
+        "B": "Azonos hőmérsékletnél hőmérsékleti egyensúly van, nincs hőáramlás.",
+        "C": "A belső energia a test állapotát jellemzi, a hő az átadott energia egy folyamatban."
+      }
+    },
+    {
+      "id": "3",
+      "kind": "choice",
+      "prompt": "Melyik vektormennyiség?",
+      "options": [
+        {
+          "key": "A",
+          "text": "A munka."
+        },
+        {
+          "key": "B",
+          "text": "A tömeg."
+        },
+        {
+          "key": "C",
+          "text": "A lendület."
+        },
+        {
+          "key": "D",
+          "text": "A hőmérséklet."
+        }
+      ],
+      "answer": "C",
+      "category": "fogalmak",
+      "explanation": "Helyes: C. A lendület (I = m·v) iránya a sebesség iránya, ezért vektor; ütközéseknél vektorként kell összeadni.",
+      "wrongOptions": {
+        "A": "A munka skalár (W = F·s·cos α, egy szám), lehet pozitív vagy negatív, de iránya nincs.",
+        "B": "A tömeg skalár, csak nagysága van.",
+        "D": "A hőmérséklet skalár állapotjelző."
+      }
+    },
+    {
+      "id": "4",
+      "kind": "choice",
+      "prompt": "Egy 2 kW-os vízforraló 6 percig működik. Mennyi energiát használ fel?",
+      "options": [
+        {
+          "key": "A",
+          "text": "12 kW"
+        },
+        {
+          "key": "B",
+          "text": "0,2 kWh"
+        },
+        {
+          "key": "C",
+          "text": "12 kWh"
+        },
+        {
+          "key": "D",
+          "text": "0,33 kW"
+        }
+      ],
+      "answer": "B",
+      "category": "fogalmak",
+      "explanation": "Helyes: B. E = P·t = 2 kW · 0,1 h = 0,2 kWh (6 perc = 0,1 óra), ami 720 kJ. Az energia egysége a kWh, a kW teljesítmény.",
+      "wrongOptions": {
+        "A": "A kW teljesítményegység; ráadásul a percet nem váltotta órára (2 · 6 = 12).",
+        "C": "A 6 percet 6 órának vette: 2 kW · 6 h = 12 kWh lenne.",
+        "D": "Elosztotta a teljesítményt az idővel, és teljesítményegységet adott meg energia helyett."
+      }
+    },
+    {
+      "id": "5",
+      "kind": "choice",
+      "prompt": "Egy futó a 400 m-es pályán egy teljes kört fut le 80 s alatt. Mekkora az átlagsebessége (a megtett út alapján) és az elmozdulása?",
+      "options": [
+        {
+          "key": "A",
+          "text": "5 m/s és 0 m"
+        },
+        {
+          "key": "B",
+          "text": "5 m/s és 400 m"
+        },
+        {
+          "key": "C",
+          "text": "0 m/s és 0 m"
+        },
+        {
+          "key": "D",
+          "text": "0 m/s és 400 m"
+        }
+      ],
+      "answer": "A",
+      "category": "fogalmak",
+      "explanation": "Helyes: A. A megtett út 400 m, az átlagsebesség 400 m / 80 s = 5 m/s. Mivel a futó a kiindulópontba érkezik vissza, az elmozdulása (a kezdőpontból a végpontba mutató vektor) nulla.",
+      "wrongOptions": {
+        "B": "A 400 m az út, nem az elmozdulás; az elmozdulás a kezdő- és végpont távolsága.",
+        "C": "Az átlagsebesség (út/idő) nem nulla, csak az elmozdulás.",
+        "D": "Felcserélte a két mennyiséget."
+      }
+    },
+    {
+      "id": "6",
+      "kind": "text",
+      "prompt": "Melyik mennyiség mértékegysége a V/m (volt per méter)? (Egy szakkifejezés)",
+      "answer": [
+        "elektromos térerősség",
+        "térerősség",
+        "az elektromos térerősség"
+      ],
+      "maxWords": 3,
+      "category": "fogalmak",
+      "explanation": "Helyes: az elektromos térerősség. E = U/d homogén mezőben, ezért egysége V/m, ami megegyezik az N/C egységgel (E = F/q)."
+    }
+  ],
+  "relatedCategories": [
+    "torvenyek",
+    "mertekegyseg",
+    "indoklas-felepites"
+  ]
+}

@@ -1,0 +1,304 @@
+{
+  "schemaVersion": 1,
+  "id": "kem-gr-szerves-elnevezes",
+  "subject": "kemia",
+  "revision": 1,
+  "level": "kozep",
+  "source": "generated",
+  "topic": "nyelvtan",
+  "title": "Szerves vegyületek: elnevezés, csoportok",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "grammar",
+  "type": "lesson",
+  "category": "szerves-elnevezes",
+  "summaryHu": "A szerves kémiai feladatokban gyakran egy névből kell képletet írni vagy fordítva, és fel kell ismerni a funkciós csoportot, a homológ sort és az izomereket. A szabályos elnevezés néhány lépésből áll: leghosszabb lánc, számozás, a szubsztituensek ábécérendben, a funkciós csoport utótagja. A teszt- és az elemző feladatokban, valamint a számítási feladatokban (képletmeghatározás után az izomerek megadása) is pontot ér; tipikus hiba a rossz számozás és a funkciós csoportok összekeverése (aldehid–keton, éter–észter).",
+  "rules": [
+    {
+      "title": "Az alkánok elnevezése",
+      "explanation": "1. Keresd meg a leghosszabb szénláncot – ez adja az alapnevet (met-, et-, prop-, but-, pent-, hex-, hept-, okt-, non-, dek- + -án). 2. A láncot arról a végéről számozd, amelyikhez közelebb esik az első elágazás (a helyzetszámok a lehető legkisebbek legyenek). 3. A szubsztituenseket (metil-, etil-, klór- …) ábécérendben, helyzetszámmal írd a név elé; több azonos csoportnál di-, tri-, tetra- előtag kell, és minden helyzetszámot ki kell írni.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "CH₃–CH(CH₃)–CH₂–CH₃ → 2-metilbután",
+          "hu": "A leghosszabb lánc 4 szénatomos; az elágazáshoz közelebbi végről számozva a metilcsoport a 2. szénatomon van."
+        },
+        {
+          "en": "CH₃–C(CH₃)₂–CH₃ → 2,2-dimetilpropán"
+        },
+        {
+          "en": "CH₃–CHCl–CH₂–CH₃ → 2-klórbután"
+        }
+      ]
+    },
+    {
+      "title": "Többszörös kötés és funkciós csoport a névben",
+      "explanation": "A kettős kötést -én, a hármasat -in utótag jelzi; a helyzetszám a kötés kisebb sorszámú szénatomjáé, és a láncot úgy számozzuk, hogy ez a lehető legkisebb legyen. A legfontosabb funkciós csoportok utótagjai: alkohol -ol (hidroxilcsoport, –OH), aldehid -al (formilcsoport, –CHO), keton -on (oxocsoport a lánc belsejében), karbonsav -sav (karboxilcsoport, –COOH), amin -amin (aminocsoport, –NH₂). Az éterek és az észterek nevét a két csoport nevéből képezzük (dietil-éter, etil-acetát).",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "CH₂=CH–CH₂–CH₃ → but-1-én"
+        },
+        {
+          "en": "CH₃–CH(OH)–CH₃ → propán-2-ol"
+        },
+        {
+          "en": "CH₃–CO–CH₃ → propanon (aceton)"
+        },
+        {
+          "en": "CH₃–CH₂–CHO → propanal"
+        },
+        {
+          "en": "CH₃COOCH₂CH₃ → etil-acetát (etil-etanoát)"
+        }
+      ]
+    },
+    {
+      "title": "A funkciós csoportok felismerése",
+      "explanation": "Az oxigéntartalmú vegyületek könnyen összetéveszthetők, ezért a képletben a kapcsolódást nézd: –OH telített szénatomon → alkohol, aromás gyűrűn → fenol; C–O–C → éter; –CHO a lánc végén → aldehid; C=O két szénatom között → keton; –COOH → karbonsav; –COO– két szénatom között → észter. Nitrogéntartalmúak: –NH₂ → amin, –CO–NH– → amid (a fehérjékben peptidkötés).",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "CH₃–O–CH₃: éter (dimetil-éter)",
+          "hu": "Nincs benne –OH csoport, ezért nem alkohol."
+        },
+        {
+          "en": "HCOOCH₃: észter (metil-formiát)",
+          "hu": "Nem karbonsav: a –COO– csoport oxigénjéhez szénatom kapcsolódik, nem hidrogén."
+        }
+      ]
+    },
+    {
+      "title": "Izoméria",
+      "explanation": "Az izomerek összegképlete azonos, szerkezetük eltérő. Konstitúciós izomerek (eltérő kapcsolódási sorrend): láncizoméria (bután – 2-metilpropán), helyzeti izoméria (propán-1-ol – propán-2-ol), funkcióscsoport-izoméria (etanol – dimetil-éter; propanal – propanon; propánsav – metil-acetát). Térizomerek: geometriai (cisz–transz) izoméria, ha a C=C kettős kötés mindkét szénatomján két különböző csoport van (but-2-én), és optikai izoméria királis molekuláknál.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "C₄H₁₀: bután és 2-metilpropán – 2 izomer"
+        },
+        {
+          "en": "C₃H₈O: propán-1-ol, propán-2-ol, etil-metil-éter – 3 izomer"
+        },
+        {
+          "en": "cisz-but-2-én és transz-but-2-én",
+          "hu": "A but-1-énnek nincs geometriai izomerje, mert az 1. szénatomján két hidrogén van."
+        }
+      ]
+    },
+    {
+      "title": "Általános képletek és homológ sorok",
+      "explanation": "Alkánok CₙH₂ₙ₊₂; alkének és cikloalkánok CₙH₂ₙ; alkinek és alkadiének CₙH₂ₙ₋₂; telített, nyílt láncú egyértékű alkoholok és éterek CₙH₂ₙ₊₂O; telített aldehidek és ketonok CₙH₂ₙO; telített monokarbonsavak és észterek CₙH₂ₙO₂. Az összegképletből így szűkíthető, mely vegyületcsoportok jöhetnek szóba – a képletmeghatározó számítási feladatok utolsó lépése ez.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "C₄H₁₀O → alkohol vagy éter (7 konstitúciós izomer: 4 alkohol és 3 éter)"
+        },
+        {
+          "en": "C₃H₆O₂ → például propánsav, metil-acetát vagy etil-formiát"
+        }
+      ]
+    },
+    {
+      "title": "Kiralitás",
+      "explanation": "Királis (aszimmetrikus) szénatom: négy különböző atomhoz vagy atomcsoporthoz kapcsolódik. A királis molekula és tükörképe nem hozható fedésbe, ezek optikai izomerek (enantiomerek): legtöbb fizikai és kémiai tulajdonságuk azonos, de a síkban poláros fény síkját ellentétes irányba forgatják, és az élő szervezet enzimjei megkülönböztetik őket. Királis például a bután-2-ol, a tejsav és a glicin kivételével az összes fehérjealkotó α-aminosav.",
+      "emeltOnly": true,
+      "examples": [
+        {
+          "en": "CH₃–C*H(OH)–CH₂–CH₃ (bután-2-ol)",
+          "hu": "A *-gal jelölt szénatomhoz H, OH, CH₃ és C₂H₅ kapcsolódik – négy különböző csoport."
+        },
+        {
+          "en": "Tejsav: CH₃–C*H(OH)–COOH"
+        }
+      ]
+    }
+  ],
+  "commonMistakes": [
+    {
+      "wrong": "CH₃–CH₂–CH(CH₃)–CH₃ neve 3-metilbután.",
+      "right": "2-metilbután",
+      "why": "A láncot arról a végéről kell számozni, amelyikhez az elágazás közelebb van; így a metilcsoport a 2. szénatomra kerül."
+    },
+    {
+      "wrong": "A CH₃–CH(C₂H₅)–CH₃ vegyület neve 2-etilpropán.",
+      "right": "A helyes név 2-metilbután.",
+      "why": "Az alapnevet mindig a leghosszabb lánc adja: az etilcsoporton át 4 szénatomos lánc húzható, nem a lerajzolt „vízszintes” rész számít."
+    },
+    {
+      "wrong": "A CH₃–CO–CH₃ aldehid, mert van benne C=O csoport.",
+      "right": "A CH₃–CO–CH₃ keton (propanon).",
+      "why": "Aldehidben az oxocsoport szénatomjához hidrogén is kapcsolódik (–CHO, a lánc végén); ha a C=O két szénatom között van, keton."
+    },
+    {
+      "wrong": "Az etil-acetát karbonsav, mert –COO– csoportot tartalmaz.",
+      "right": "Az etil-acetát észter.",
+      "why": "A karboxilcsoportban (–COOH) az oxigénhez hidrogén kapcsolódik; az észterben (–COO–) ehelyett szénhidrogén-csoport, ezért nem savas."
+    },
+    {
+      "wrong": "A but-1-énnek van cisz- és transz-izomerje.",
+      "right": "Csak a but-2-énnek van geometriai izomerje.",
+      "why": "Geometriai izomériához a kettős kötés mindkét szénatomján két különböző csoportnak kell lennie; a but-1-én 1. szénatomján két hidrogén van."
+    }
+  ],
+  "examTips": [
+    "Számítási feladatban a molekulaképlet meghatározása után gyakran kérdés, hány izomer lehetséges, vagy melyik felel meg a megadott reakcióknak (pl. ketonná oxidálható → szekunder alkohol). Írd fel szisztematikusan az összes izomert.",
+    "Az elnevezésnél a számozás iránya a leggyakoribb pontvesztés: ellenőrizd, hogy a helyzetszámok a lehető legkisebbek-e.",
+    "Párosítós feladatban először a funkciós csoportot azonosítsd, csak utána a konkrét vegyületet."
+  ],
+  "practice": [
+    {
+      "id": "1",
+      "kind": "choice",
+      "prompt": "Mi a CH₃–CH₂–CH(CH₃)–CH₂–CH₃ szabályos neve?",
+      "options": [
+        {
+          "key": "A",
+          "text": "2-etilbután"
+        },
+        {
+          "key": "B",
+          "text": "3-metilpentán"
+        },
+        {
+          "key": "C",
+          "text": "3-etilbután"
+        },
+        {
+          "key": "D",
+          "text": "hexán"
+        }
+      ],
+      "answer": "B",
+      "category": "szerves-elnevezes",
+      "explanation": "Helyes: 3-metilpentán. A leghosszabb lánc 5 szénatomos (pentán), a metilcsoport bármelyik végéről számozva a 3. szénatomon van.",
+      "wrongOptions": {
+        "A": "Az etilcsoport a leghosszabb lánc része, így a lánc 5 szénatomos, az alapnév pentán.",
+        "C": "Az etilcsoport a lánc része, és ilyen helyzetszámmal még a számozás is hibás lenne.",
+        "D": "A hexán elágazás nélküli; ez a vegyület ugyan C₆H₁₄, de elágazó láncú izomer."
+      }
+    },
+    {
+      "id": "2",
+      "kind": "text",
+      "prompt": "Hány konstitúciós izomer alkán felel meg a C₅H₁₂ összegképletnek?",
+      "answer": [
+        "3",
+        "három"
+      ],
+      "category": "szerves-elnevezes",
+      "explanation": "Helyes: 3. Pentán, 2-metilbután és 2,2-dimetilpropán – a lánc egyre jobban elágazik.",
+      "maxWords": 1
+    },
+    {
+      "id": "3",
+      "kind": "choice",
+      "prompt": "Melyik vegyület keton?",
+      "options": [
+        {
+          "key": "A",
+          "text": "CH₃–CO–CH₂–CH₃"
+        },
+        {
+          "key": "B",
+          "text": "CH₃–CHO"
+        },
+        {
+          "key": "C",
+          "text": "CH₃–COOH"
+        },
+        {
+          "key": "D",
+          "text": "CH₃–O–CH₃"
+        }
+      ],
+      "answer": "A",
+      "category": "szerves-elnevezes",
+      "explanation": "Helyes: CH₃–CO–CH₂–CH₃ (butanon). Az oxocsoport két szénatom között van.",
+      "wrongOptions": {
+        "B": "A lánc végi –CHO csoport aldehidre utal (acetaldehid).",
+        "C": "A –COOH csoport karboxilcsoport, ez az ecetsav.",
+        "D": "C–O–C kötés van benne, ez éter (dimetil-éter)."
+      }
+    },
+    {
+      "id": "4",
+      "kind": "choice",
+      "prompt": "Melyik pár tagjai funkcióscsoport-izomerek?",
+      "options": [
+        {
+          "key": "A",
+          "text": "etanol és etanal"
+        },
+        {
+          "key": "B",
+          "text": "etanol és dimetil-éter"
+        },
+        {
+          "key": "C",
+          "text": "metán és etán"
+        },
+        {
+          "key": "D",
+          "text": "cisz-but-2-én és transz-but-2-én"
+        }
+      ],
+      "answer": "B",
+      "category": "szerves-elnevezes",
+      "explanation": "Helyes: etanol és dimetil-éter. Mindkettő C₂H₆O, de az egyik alkohol, a másik éter.",
+      "wrongOptions": {
+        "A": "Az etanal (C₂H₄O) összegképlete különbözik az etanolétól (C₂H₆O), ezért nem izomerek.",
+        "C": "A metán és az etán a homológ sor egymást követő tagjai, összegképletük különböző.",
+        "D": "Ezek izomerek, de geometriai (térbeli), nem funkcióscsoport-izomerek."
+      }
+    },
+    {
+      "id": "5",
+      "kind": "text",
+      "prompt": "Mi a CH₃–CH(OH)–CH₃ szabályos neve?",
+      "answer": [
+        "propán-2-ol",
+        "propan-2-ol",
+        "2-propanol",
+        "izopropil-alkohol"
+      ],
+      "category": "szerves-elnevezes",
+      "explanation": "Helyes: propán-2-ol. Három szénatomos lánc, a hidroxilcsoport a középső (2.) szénatomon van; szekunder alkohol.",
+      "maxWords": 2
+    },
+    {
+      "id": "6",
+      "kind": "choice",
+      "prompt": "Melyik molekula tartalmaz királis szénatomot? (emelt)",
+      "options": [
+        {
+          "key": "A",
+          "text": "bután-2-ol"
+        },
+        {
+          "key": "B",
+          "text": "propán-2-ol"
+        },
+        {
+          "key": "C",
+          "text": "2-metilpropán-2-ol"
+        },
+        {
+          "key": "D",
+          "text": "etanol"
+        }
+      ],
+      "answer": "A",
+      "category": "szerves-elnevezes",
+      "explanation": "Helyes: bután-2-ol. A 2. szénatomhoz H, OH, CH₃ és C₂H₅ kapcsolódik – négy különböző csoport.",
+      "wrongOptions": {
+        "B": "A propán-2-ol 2. szénatomjához két azonos metilcsoport kapcsolódik.",
+        "C": "A 2. szénatomhoz három metilcsoport kapcsolódik.",
+        "D": "Az etanol egyik szénatomjához sem kapcsolódik négy különböző csoport (a CH₂-csoportban két H van)."
+      }
+    }
+  ],
+  "relatedCategories": [
+    "kotes-szerkezet",
+    "anyagismeret"
+  ]
+}

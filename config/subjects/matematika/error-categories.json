@@ -1,0 +1,150 @@
+{
+  "meta": {
+    "verifiedAt": "2026-11-05",
+    "sources": [
+      {
+        "title": "Oktatási Hivatal: Matematika – részletes érettségi vizsgakövetelmény és vizsgaleírás (2024-től érvényes, Nat2020)",
+        "url": "https://www.oktatas.hu/pub_bin/dload/kozoktatas/erettsegi/vizsgakovetelmenyek2024/matematika_2024_e.pdf"
+      },
+      {
+        "title": "Eduline (2025. 04. 28.): Így pontozzák a középszintű matekérettségit (I. rész 45 perc/30 pont, II/A 3 feladat, II/B 3×17 pont – 2 választandó)",
+        "url": "https://eduline.hu/erettsegi-felveteli/20250428_Matekerettsegi-2025-pontozas-feladatok"
+      },
+      {
+        "title": "Eduline (2024. 05. 14.): Mikor kell szóban is érettségizni matekból? (12–24,99 % között; 50 pont = 15 + 30 + 5)",
+        "url": "https://eduline.hu/erettsegi-felveteli/20240514_szobeli-kozepszintu-matekerettsegi-mikor"
+      },
+      {
+        "title": "Eduline (2025. 06. 02.): Hány percesek és hány pontosak a szóbeli érettségik közép- és emelt szinten? (emelt matek szóbeli 20 perc, 35 pont)",
+        "url": "https://eduline.hu/erettsegi-felveteli/20250602_hany-perc-hany-pont-szobeli-erettsegi-kozep-emelt-szint"
+      },
+      {
+        "title": "Eduline (2022. 05. 02.): Itt van minden, amit az emelt matekérettségiről tudnotok kell (240 perc, I. rész 4 feladat 51 pont, II. rész 5-ből 4 × 16 pont)",
+        "url": "https://eduline.hu/erettsegi-felveteli/20220502_emelt-matek-osszefoglalo"
+      },
+      {
+        "title": "Eduline (2019. 11. 12.): Véget értek az emelt szintű szóbelik – így pontozzák (emelt matek szóbeli 35 pont bontása)",
+        "url": "https://eduline.hu/erettsegi-felveteli/20191112_oszi-erettsegi-szobelik-pontozas"
+      },
+      {
+        "title": "Eduline (2024. 03. 27.): Grafikonon mutatjuk, hogyan változnak a matekérettségi témaköreinek arányai (Nat2020 témakörök és súlyok)",
+        "url": "https://eduline.hu/erettsegi-felveteli/20240327_matekerettsegi-temakorok-valtozasok-2024"
+      },
+      {
+        "title": "Oktatási Hivatal: Középszintű matematika javítási-értékelési útmutató, 2025. október – általános javítási elvek (tükörmásolat)",
+        "url": "https://www.mateking.hu/sites/mp/files/uploads/k_mat_25okt_ut.pdf"
+      },
+      {
+        "title": "Eduline (2026. 03. 14.): Érettségi 2026 – pontozási és osztályozási szabályok (közép 80/60/40/25 %, emelt 60/47/33/25 %, vizsgarészenként 12 %)",
+        "url": "https://eduline.hu/erettsegi-felveteli/20260314_erettsegi-2026-pontozas-osztalyozas"
+      }
+    ],
+    "notes": [
+      "Az ellenőrzés hírportál-cikkek (Eduline, Telex) és a hivatalos dokumentumok keresőben indexelt szövege alapján történt; az OH oldalát a futtató környezet hálózata nem engedte közvetlenül megnyitni – a hivatalos vizsgaleírással érdemes összevetni."
+    ]
+  },
+  "groups": [
+    {
+      "id": "szamolas",
+      "name": "Számolás, algebra"
+    },
+    {
+      "id": "fogalom",
+      "name": "Fogalmak, tételek, képletek"
+    },
+    {
+      "id": "modszer",
+      "name": "Módszer, indoklás, ellenőrzés"
+    },
+    {
+      "id": "szoveg",
+      "name": "Szövegértés, válasz"
+    }
+  ],
+  "categories": [
+    {
+      "id": "szamolasi-hiba",
+      "name": "Számolási hiba",
+      "group": "szamolas",
+      "description": "Alapműveleti, előjel- vagy kerekítési hiba, elírás a számolásban."
+    },
+    {
+      "id": "tortek-hatvanyok",
+      "name": "Törtek, hatványok, gyökök, logaritmus",
+      "group": "szamolas",
+      "description": "Törtműveletek, hatványazonosságok, gyökvonás és logaritmus szabályainak hibás alkalmazása."
+    },
+    {
+      "id": "egyenlet-rendezes",
+      "name": "Egyenletrendezés, ekvivalencia",
+      "group": "szamolas",
+      "description": "Hibás átrendezés, nem ekvivalens lépés, hamis gyök, elveszett megoldás, egyenlőtlenség irányának megfordítása."
+    },
+    {
+      "id": "algebrai-atalakitas",
+      "name": "Algebrai átalakítás, zárójelfelbontás",
+      "group": "szamolas",
+      "description": "Nevezetes azonosságok, kiemelés, zárójelek, előjelek az átalakítás során."
+    },
+    {
+      "id": "definicio-tetel",
+      "name": "Definíciók, tételek ismerete",
+      "group": "fogalom",
+      "description": "Fogalom, tétel vagy jelölés hiányos vagy téves ismerete (pl. prímszám, függvény zérushelye, Pitagorasz-tétel feltételei)."
+    },
+    {
+      "id": "kepletek",
+      "name": "Képletek alkalmazása",
+      "group": "fogalom",
+      "description": "Rossz képlet, hibásan behelyettesített vagy felcserélt mennyiségek (terület, térfogat, sorozatok, kombinatorika)."
+    },
+    {
+      "id": "fuggveny-abrazolas",
+      "name": "Függvények: ábrázolás, tulajdonságok",
+      "group": "fogalom",
+      "description": "Grafikon leolvasása, transzformációk, értelmezési tartomány, zérushely, monotonitás, szélsőérték."
+    },
+    {
+      "id": "geometria-osszefuggesek",
+      "name": "Geometriai összefüggések, ábra",
+      "group": "fogalom",
+      "description": "Hiányzó vagy rossz ábra, hibásan felismert szög, hasonlóság, kör- vagy háromszög-összefüggés."
+    },
+    {
+      "id": "valoszinuseg-statisztika",
+      "name": "Valószínűség és statisztika értelmezése",
+      "group": "fogalom",
+      "description": "Kedvező/összes eset összekeverése, függetlenség, átlag–medián–módusz, szórás, diagramok félreolvasása."
+    },
+    {
+      "id": "indoklas-hianya",
+      "name": "Indoklás, lépések hiánya",
+      "group": "modszer",
+      "description": "Eredmény indoklás nélkül, a gondolatmenet lépései nem követhetők, a felhasznált tétel nincs megnevezve."
+    },
+    {
+      "id": "ellenorzes",
+      "name": "Ellenőrzés, feltételek vizsgálata",
+      "group": "modszer",
+      "description": "Elmaradt ellenőrzés, az értelmezési tartomány vagy a feladat feltételeinek figyelmen kívül hagyása (negatív hossz, nem egész darabszám)."
+    },
+    {
+      "id": "mertekegyseg-kerekites",
+      "name": "Mértékegység, kerekítés, pontosság",
+      "group": "modszer",
+      "description": "Hiányzó vagy rossz mértekegység, átváltási hiba, a kért pontosságtól eltérő kerekítés."
+    },
+    {
+      "id": "szoveges-ertelmezes",
+      "name": "Szöveges feladat értelmezése",
+      "group": "szoveg",
+      "description": "A feladat szövegének félreértése, rossz modell felállítása, a kérdés nem arra vonatkozik, amire a válasz."
+    },
+    {
+      "id": "valasz-megfogalmazas",
+      "name": "A válasz megfogalmazása",
+      "group": "szoveg",
+      "description": "Hiányzó szöveges válasz, a részeredmény nem válaszol a kérdésre, több megoldás közül nem derül ki, melyik a végső."
+    }
+  ]
+}

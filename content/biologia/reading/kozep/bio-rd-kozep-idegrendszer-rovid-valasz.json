@@ -1,0 +1,100 @@
+{
+  "schemaVersion": 1,
+  "id": "bio-rd-kozep-idegrendszer-rovid-valasz",
+  "subject": "biologia",
+  "revision": 1,
+  "level": "kozep",
+  "source": "generated",
+  "topic": "szabalyozas",
+  "title": "Idegi és hormonális szabályozás – rövid válasz",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "reading",
+  "type": "rovid-valasz",
+  "instructions": "Válaszoljon a kérdésekre egy-két szóval! A 0. kérdés a példa.",
+  "example": {
+    "id": "0",
+    "kind": "text",
+    "prompt": "Hogyan nevezzük az idegsejt hosszú nyúlványát, amely az ingerületet a sejttesttől elvezeti?",
+    "answer": ["axon", "idegrost", "neurit", "tengelyfonál", "tengelyfonal"],
+    "maxWords": 2,
+    "category": "fogalomhasznalat",
+    "explanation": "Helyes: axon (idegrost, neurit). Az idegsejtnek egy hosszú, elvezető nyúlványa (axon) és több rövid, felvevő nyúlványa (dendrit) van; az axont gyakran velőshüvely borítja, amely gyorsítja az ingerületvezetést."
+  },
+  "items": [
+    {
+      "id": "1",
+      "kind": "text",
+      "prompt": "Mi a neve a két idegsejt közötti kapcsolatnak, ahol az ingerület átadása általában kémiai anyag (ingerületátvivő) segítségével történik?",
+      "answer": ["szinapszis", "szinapszisok"],
+      "maxWords": 2,
+      "category": "fogalomhasznalat",
+      "explanation": "Helyes: szinapszis. A szinapszisban az axonvégződésből ingerületátvivő anyag (pl. acetilkolin) szabadul fel, amely a következő sejt hártyájához kötődve ott új ingerületet vált ki vagy gátol – ezért egyirányú az ingerületvezetés."
+    },
+    {
+      "id": "2",
+      "kind": "text",
+      "prompt": "A térdreflex reflexívében melyik idegsejt szállítja az ingerületet a receptortól a gerincvelő felé?",
+      "answer": ["érző idegsejt", "érzőidegsejt", "érző neuron", "érzőneuron", "szenzoros neuron", "szenzoros idegsejt", "afferens neuron", "afferens idegsejt", "érző", "érzősejt"],
+      "maxWords": 3,
+      "category": "szabalyozas-folyamat",
+      "explanation": "Helyes: az érző (szenzoros, afferens) idegsejt. A reflexív részei: receptor → érző idegsejt → központ (gerincvelő) → mozgató idegsejt → végrehajtó szerv (izom). A térdreflexnél az érző sejt az izom nyúlását érzékelő receptortól vezet a gerincvelőbe."
+    },
+    {
+      "id": "3",
+      "kind": "text",
+      "prompt": "Melyik agyrész felelős a mozgások összerendezéséért és az egyensúly fenntartásáért?",
+      "answer": ["kisagy", "a kisagy"],
+      "maxWords": 2,
+      "category": "felepites-mukodes",
+      "explanation": "Helyes: kisagy. A kisagy a mozgások finom összehangolását, az izomtónust és az egyensúlyt szabályozza; sérülésekor a mozgás bizonytalanná, imbolygóvá válik (ilyen tünetet okoz az alkohol is)."
+    },
+    {
+      "id": "4",
+      "kind": "text",
+      "prompt": "Hogyan nevezzük azokat a hírvivő molekulákat, amelyeket a belső elválasztású mirigyek közvetlenül a vérbe juttatnak?",
+      "answer": ["hormon", "hormonok"],
+      "maxWords": 1,
+      "category": "fogalomhasznalat",
+      "explanation": "Helyes: hormonok. A belső elválasztású (endokrin) mirigyeknek nincs kivezetőcsövük, hormonjaik a vérrel jutnak el a célsejtekhez, amelyek receptoraikkal felismerik őket. Hatásuk lassabban alakul ki, de tartósabb, mint az idegi szabályozásé."
+    },
+    {
+      "id": "5",
+      "kind": "text",
+      "prompt": "Melyik hormon csökkenti a vércukorszintet étkezés után?",
+      "answer": ["inzulin", "az inzulin"],
+      "maxWords": 2,
+      "category": "szabalyozas-folyamat",
+      "explanation": "Helyes: inzulin. A hasnyálmirigy Langerhans-szigeteinek béta-sejtjei termelik; fokozza a glükóz felvételét a sejtekbe és a glikogén képződését a májban és az izmokban. Hiánya vagy hatástalansága cukorbetegséget okoz. Ellentétes hatású párja a glukagon."
+    },
+    {
+      "id": "6",
+      "kind": "text",
+      "prompt": "Melyik mirigy termeli az adrenalint?",
+      "answer": ["mellékvese", "a mellékvese", "mellékvesevelő", "mellékvese velőállománya", "a mellékvese velőállománya", "mellékvese velőállomány", "mellékvese velő"],
+      "maxWords": 4,
+      "category": "felepites-mukodes",
+      "explanation": "Helyes: a mellékvese (velőállománya). Az adrenalin a „vészreakció” hormonja: stresszhelyzetben emeli a pulzust, a vérnyomást és a vércukorszintet, tágítja a légutakat – ugyanazt váltja ki, mint a szimpatikus idegrendszer, csak tartósabban."
+    },
+    {
+      "id": "7",
+      "kind": "text",
+      "prompt": "A térdreflex veleszületett vagy tanult reflex?",
+      "answer": ["veleszületett", "veleszületett reflex", "feltétlen", "feltétlen reflex", "öröklött", "öröklött reflex", "velünk született"],
+      "maxWords": 3,
+      "category": "fogalomhasznalat",
+      "explanation": "Helyes: veleszületett (feltétlen) reflex. A térdreflex öröklött, gerincvelői reflex, amely tanulás nélkül, minden egészséges embernél azonos módon működik. A tanult (feltételes) reflexek – pl. a nyálelválasztás egy étel látványára – egyéni tapasztalat alapján alakulnak ki."
+    },
+    {
+      "id": "8",
+      "kind": "text",
+      "prompt": "A gerincvelő az idegrendszer melyik részéhez tartozik: a központi vagy a környéki idegrendszerhez?",
+      "answer": ["központi", "központi idegrendszer", "a központi idegrendszerhez", "központi idegrendszerhez", "a központihoz"],
+      "maxWords": 3,
+      "category": "felepites-mukodes",
+      "explanation": "Helyes: a központi idegrendszerhez. A központi idegrendszert az agy és a gerincvelő alkotja; a környéki idegrendszerhez az agyból és a gerincvelőből kilépő idegek és az idegdúcok tartoznak."
+    }
+  ],
+  "glossary": [],
+  "suggestedMinutes": 7
+}

@@ -1,0 +1,167 @@
+{
+  "schemaVersion": 1,
+  "id": "kem-vc-kozep-szerves-alapfogalmak",
+  "subject": "kemia",
+  "revision": 1,
+  "level": "kozep",
+  "source": "generated",
+  "topic": "szenhidrogenek",
+  "title": "Fogalmak: szerves kémiai alapok (közép)",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "vocabulary",
+  "type": "deck",
+  "cards": [
+    {
+      "term": "homológ sor",
+      "meaning": "Azonos általános képlettel leírható, hasonló szerkezetű vegyületek sora, amelynek szomszédos tagjai egy CH₂-csoportban különböznek.",
+      "example": "Az alkánok homológ sorában a metánt az etán, majd a propán követi.",
+      "collocation": "CₙH₂ₙ₊₂ (alkánok)"
+    },
+    {
+      "term": "izoméria",
+      "meaning": "Azonos összegképletű, de eltérő szerkezetű – és ezért eltérő tulajdonságú – vegyületek létezése.",
+      "example": "A bután és a 2-metilpropán között konstitúciós izoméria áll fenn."
+    },
+    {
+      "term": "konstitúciós izomer",
+      "meaning": "Azonos összegképletű vegyület, amelyben az atomok kapcsolódási sorrendje eltér.",
+      "example": "Az etanol és a dimetil-éter konstitúciós izomerek: mindkettő C₂H₆O."
+    },
+    {
+      "term": "cisz–transz izoméria",
+      "meaning": "Geometriai izoméria: a kettős kötés (vagy gyűrű) miatt gátolt elfordulás következtében a csoportok eltérő térbeli elhelyezkedése.",
+      "example": "A but-2-én cisz és transz formája között cisz–transz izoméria áll fenn."
+    },
+    {
+      "term": "funkciós csoport",
+      "meaning": "A szerves molekulának az az atomcsoportja, amely a vegyület jellemző kémiai tulajdonságait meghatározza.",
+      "example": "Az alkoholok funkciós csoportja a hidroxilcsoport."
+    },
+    {
+      "term": "alkán",
+      "meaning": "Csak egyszeres kötéseket tartalmazó, nyílt láncú szénhidrogén (paraffin).",
+      "example": "A metán a legegyszerűbb alkán, a földgáz fő alkotója.",
+      "collocation": "CₙH₂ₙ₊₂"
+    },
+    {
+      "term": "alkén",
+      "meaning": "Egy szén-szén kettős kötést tartalmazó, nyílt láncú szénhidrogén (olefin).",
+      "example": "Az etén a legegyszerűbb alkén, a polietilén monomerje.",
+      "collocation": "CₙH₂ₙ"
+    },
+    {
+      "term": "alkin",
+      "meaning": "Egy szén-szén hármas kötést tartalmazó, nyílt láncú szénhidrogén.",
+      "example": "Az etin (acetilén) a legegyszerűbb alkin, hegesztésre használják.",
+      "collocation": "CₙH₂ₙ₋₂"
+    },
+    {
+      "term": "aromás vegyület",
+      "meaning": "Gyűrűs, síkalkatú, delokalizált π-elektronrendszerű vegyület (pl. benzol és származékai).",
+      "example": "A benzol a legegyszerűbb aromás vegyület."
+    },
+    {
+      "term": "telített vegyület",
+      "meaning": "Csak egyszeres szén-szén kötéseket tartalmazó vegyület.",
+      "example": "Az alkánok telített vegyületek, ezért nem színtelenítik el a brómos vizet."
+    },
+    {
+      "term": "telítetlen vegyület",
+      "meaning": "Szén-szén kettős vagy hármas kötést tartalmazó vegyület; addícióra hajlamos.",
+      "example": "A brómos víz elszíntelenedése jelzi, hogy telítetlen vegyületről van szó."
+    },
+    {
+      "term": "szubsztitúció",
+      "meaning": "Olyan reakció, amelyben a molekula egy atomja vagy atomcsoportja egy másikra cserélődik.",
+      "example": "A metán klórral fény hatására szubsztitúcióban klórmetánná alakul: CH₄ + Cl₂ → CH₃Cl + HCl."
+    },
+    {
+      "term": "addíció",
+      "meaning": "Olyan reakció, amelyben a többszörös kötés felszakadásával két molekula egyetlen molekulává egyesül.",
+      "example": "Az etén brómaddíciója során 1,2-dibrómetán keletkezik."
+    },
+    {
+      "term": "elimináció",
+      "meaning": "Olyan reakció, amelyben egy molekulából kis molekula (pl. víz, HCl) lép ki, és többszörös kötés alakul ki.",
+      "example": "Az etanolból tömény kénsavval hevítve vízelimináció során etén keletkezik."
+    },
+    {
+      "term": "polimerizáció",
+      "meaning": "Telítetlen kis molekulák (monomerek) addíciós összekapcsolódása makromolekulává, melléktermék nélkül.",
+      "example": "A vinil-klorid polimerizációjával PVC keletkezik."
+    },
+    {
+      "term": "polikondenzáció",
+      "meaning": "Kétfunkciós monomerek összekapcsolódása makromolekulává kis molekula (pl. víz) kilépése közben.",
+      "example": "A PET polikondenzációval keletkezik tereftálsavból és etilénglikolból."
+    },
+    {
+      "term": "krakkolás",
+      "meaning": "Nagyobb szénatomszámú szénhidrogének hő hatására (gyakran katalizátorral) történő bontása kisebb molekulákra.",
+      "example": "A benzin egy részét a nehezebb kőolajpárlatok krakkolásával állítják elő."
+    },
+    {
+      "term": "halogénszármazék",
+      "meaning": "Olyan szénhidrogén-származék, amelyben hidrogénatomokat halogénatom helyettesít.",
+      "example": "A kloroform (triklórmetán) a metán halogénszármazéka."
+    },
+    {
+      "term": "hidroxilcsoport",
+      "meaning": "Az –OH funkciós csoport; alkoholokban telített szénatomhoz, fenolokban aromás gyűrűhöz kapcsolódik.",
+      "example": "Az etanol hidroxilcsoportja miatt alakul ki hidrogénkötés a molekulák között.",
+      "collocation": "–OH"
+    },
+    {
+      "term": "primer alkohol",
+      "meaning": "Olyan alkohol, amelyben a hidroxilcsoportot hordozó szénatomhoz legfeljebb egy másik szénatom kapcsolódik; enyhe oxidációval aldehiddé alakul.",
+      "example": "Az etanol primer alkohol, ezért réz(II)-oxiddal acetaldehiddé oxidálható."
+    },
+    {
+      "term": "oxocsoport",
+      "meaning": "A C=O atomcsoport (karbonilcsoport); aldehidekben a lánc végén (formilcsoport, –CHO), ketonokban a lánc belsejében van.",
+      "example": "Az acetonban az oxocsoport két szénatom között helyezkedik el, ezért keton.",
+      "collocation": ">C=O"
+    },
+    {
+      "term": "aldehid",
+      "meaning": "Formilcsoportot (–CHO) tartalmazó vegyület; redukáló hatású (ezüsttükörpróba, Fehling-próba).",
+      "example": "A formaldehid a legegyszerűbb aldehid, vizes oldata a formalin.",
+      "collocation": "–CHO"
+    },
+    {
+      "term": "keton",
+      "meaning": "Olyan vegyület, amelyben az oxocsoport két szénatomhoz kapcsolódik; nem adja az ezüsttükörpróbát.",
+      "example": "Az aceton a legegyszerűbb keton, a körömlakklemosó oldószere."
+    },
+    {
+      "term": "karboxilcsoport",
+      "meaning": "A –COOH funkciós csoport; a karbonsavak savas jellegét adja.",
+      "example": "Az ecetsav karboxilcsoportja vízben részben protont ad le.",
+      "collocation": "–COOH"
+    },
+    {
+      "term": "észter",
+      "meaning": "Karbonsav és alkohol vízkilépéssel keletkező vegyülete (–COO– csoport); gyakran kellemes illatú.",
+      "example": "Az etil-acetát gyümölcsillatú észter, ecetsavból és etanolból keletkezik.",
+      "collocation": "–COO–"
+    },
+    {
+      "term": "hidrolízis",
+      "meaning": "Vegyület bomlása víz hatására (pl. észter → karbonsav + alkohol); az észterek lúgos hidrolízise az elszappanosítás.",
+      "example": "A zsírok lúgos hidrolízise során glicerin és szappan keletkezik."
+    },
+    {
+      "term": "amin",
+      "meaning": "Az ammónia hidrogénatomjainak szénhidrogén-csoportokkal való helyettesítésével származtatható, bázikus vegyület.",
+      "example": "A metil-amin az ammóniához hasonlóan bázisként viselkedik vízben.",
+      "collocation": "–NH₂"
+    },
+    {
+      "term": "amidcsoport",
+      "meaning": "A –CO–NH– atomcsoport; a fehérjékben peptidcsoportnak (peptidkötésnek) nevezzük.",
+      "example": "A fehérjékben az aminosavakat amidcsoport, más néven peptidkötés kapcsolja össze.",
+      "collocation": "–CO–NH–"
+    }
+  ]
+}

@@ -1,0 +1,276 @@
+{
+  "schemaVersion": 1,
+  "id": "ls-kozep-student-company-phone-stands-table",
+  "subject": "angol",
+  "revision": 2,
+  "level": "kozep",
+  "source": "generated",
+  "topic": "gazdasag",
+  "title": "A student company",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "listening",
+  "type": "table-completion",
+  "instructions": "You are going to listen to an interview on a school radio station with a student who runs a small company in his business class. Complete the notes with the missing information. Write no more than three words or a number in each gap. You will hear the recording twice. There is an example (0) at the beginning.",
+  "instructionsHu": "Egy iskolarádiós interjút hallasz egy diákkal, aki az üzleti órán egy kis diákvállalkozást vezet. Egészítsd ki a jegyzetet a hiányzó adatokkal (legfeljebb három szó vagy egy szám). A felvételt kétszer hallod. A 0. a példa.",
+  "listening": {
+    "format": "interview",
+    "speakers": [
+      {
+        "id": "C",
+        "name": "Ciara (school radio)",
+        "gender": "female",
+        "accent": "en-IE",
+        "age": "young"
+      },
+      {
+        "id": "K",
+        "name": "Conor Byrne",
+        "gender": "male",
+        "accent": "en-IE",
+        "age": "young"
+      }
+    ],
+    "script": [
+      {
+        "speaker": "C",
+        "text": "Hi everyone, you're listening to Riverside School Radio, and I'm Ciara. This year the students in our business class have been running their own small companies, and today I'm talking to Conor Byrne. He's the managing director of a company called DeskMate. Hi, Conor."
+      },
+      {
+        "speaker": "K",
+        "text": "Hi, Ciara. Thanks for inviting me."
+      },
+      {
+        "speaker": "C",
+        "text": "So, what does DeskMate actually make?"
+      },
+      {
+        "speaker": "K",
+        "text": "We make wooden phone stands. You put your phone in the stand on your desk, and then you can watch videos or make video calls without holding it. There's also a small hole at the back for the charger cable."
+      },
+      {
+        "speaker": "C",
+        "text": "How many people work in the company?"
+      },
+      {
+        "speaker": "K",
+        "text": "There are nine of us. I'm the managing director, so I organise everything. Then we've got two people who do the designs, three in production and three in sales and marketing."
+      },
+      {
+        "speaker": "C",
+        "text": "Where did you get the money to start?"
+      },
+      {
+        "speaker": "K",
+        "text": "We sold shares to our families and our teachers. Each share cost five euro, and in the end we had a hundred and fifty euro to start with. Everyone who bought a share gets their money back at the end of the year, plus a little bit extra if we make a profit."
+      },
+      {
+        "speaker": "C",
+        "text": "And what about the wood? Isn't wood quite expensive?"
+      },
+      {
+        "speaker": "K",
+        "text": "It is, but we don't buy it. There's a furniture factory just down the road from the school, and they give us their small pieces of wood for free. They'd throw them away otherwise, so they're happy to help. Then we cut out the stands with the laser cutter in the school's technology room."
+      },
+      {
+        "speaker": "C",
+        "text": "So what's your biggest cost?"
+      },
+      {
+        "speaker": "K",
+        "text": "Believe it or not, it's the boxes. We wanted nice packaging made from recycled card, and that costs us almost one euro for every stand."
+      },
+      {
+        "speaker": "C",
+        "text": "How much do you sell the stands for?"
+      },
+      {
+        "speaker": "K",
+        "text": "Well, at the beginning we asked twelve euro, but hardly anybody bought them at that price. So we dropped the price to eight euro, and after that they started selling really well."
+      },
+      {
+        "speaker": "C",
+        "text": "Where do you sell most of them?"
+      },
+      {
+        "speaker": "K",
+        "text": "We've got an online shop, but to be honest it hasn't been very successful. We've only sold about twenty there. The best place by far was the Christmas market in the town square. We sold sixty stands there in a single day!"
+      },
+      {
+        "speaker": "C",
+        "text": "Wow! And how many have you sold altogether?"
+      },
+      {
+        "speaker": "K",
+        "text": "Two hundred and forty so far. Our target for the whole year was three hundred, so we're getting quite close."
+      },
+      {
+        "speaker": "C",
+        "text": "And what will you do with the money you make?"
+      },
+      {
+        "speaker": "K",
+        "text": "First we'll pay back everyone who bought shares. Then half of the profit goes to the children's hospital in the city, and with the other half we're having a party for the whole team. I think we've earned it!"
+      },
+      {
+        "speaker": "C",
+        "text": "You definitely have. Conor, thanks for coming in, and good luck for the rest of the year."
+      }
+    ]
+  },
+  "example": {
+    "id": "0",
+    "kind": "text",
+    "prompt": "Product: wooden ______",
+    "answer": [
+      "phone stands",
+      "phone stand",
+      "stands for phones",
+      "phone holders"
+    ],
+    "maxWords": 3,
+    "category": "detail",
+    "explanation": "A helyes válasz: phone stands (telefontartók). Conor rögtön az elején megmondja, hogy fából készült telefontartókat gyártanak.",
+    "evidence": "We make wooden phone stands."
+  },
+  "items": [
+    {
+      "id": "1",
+      "kind": "text",
+      "prompt": "Students in the company: ______",
+      "answer": [
+        "9",
+        "nine",
+        "9 students",
+        "nine students",
+        "9 people",
+        "nine people"
+      ],
+      "maxWords": 3,
+      "category": "detail",
+      "explanation": "A helyes válasz: 9 (nine). Conor szerint kilencen vannak; csapda: a kettő, három és három a részlegek létszáma (tervezés, gyártás, értékesítés), de velük, az igazgatóval együtt összesen kilencen vannak.",
+      "evidence": "There are nine of us."
+    },
+    {
+      "id": "2",
+      "kind": "text",
+      "prompt": "Starting money: € ______",
+      "answer": [
+        "150",
+        "€150",
+        "150 euro",
+        "150 euros",
+        "150.00",
+        "one hundred fifty"
+      ],
+      "maxWords": 3,
+      "category": "detail",
+      "explanation": "A helyes válasz: 150 (a hundred and fifty). Csapda: öt euró egy részvény ára, de összesen százötven euróval indultak.",
+      "evidence": "in the end we had a hundred and fifty euro to start with"
+    },
+    {
+      "id": "3",
+      "kind": "text",
+      "prompt": "The wood comes free from a ______ near the school.",
+      "answer": [
+        "furniture factory",
+        "factory",
+        "the furniture factory",
+        "a furniture factory"
+      ],
+      "maxWords": 3,
+      "category": "detail",
+      "explanation": "A helyes válasz: furniture factory (bútorgyár). Az iskola közelében lévő bútorgyár ingyen adja nekik a kis fadarabokat, amelyeket különben kidobna.",
+      "evidence": "There's a furniture factory just down the road from the school, and they give us their small pieces of wood for free."
+    },
+    {
+      "id": "4",
+      "kind": "text",
+      "prompt": "Biggest cost: ______",
+      "answer": [
+        "boxes",
+        "the boxes",
+        "box",
+        "packaging",
+        "the packaging",
+        "recycled packaging",
+        "cardboard boxes",
+        "card boxes"
+      ],
+      "maxWords": 3,
+      "category": "detail",
+      "explanation": "A helyes válasz: boxes (a dobozok, csomagolás). Meglepő módon nem a fa (azt ingyen kapják), hanem az újrahasznosított kartonból készült dobozok a legnagyobb kiadás – darabonként majdnem egy euró.",
+      "evidence": "Believe it or not, it's the boxes."
+    },
+    {
+      "id": "5",
+      "kind": "text",
+      "prompt": "Current price of one stand: € ______",
+      "answer": [
+        "8",
+        "eight",
+        "€8",
+        "8 euro",
+        "8 euros",
+        "eight euro",
+        "eight euros",
+        "8.00",
+        "€8.00"
+      ],
+      "maxWords": 3,
+      "category": "detail",
+      "explanation": "A helyes válasz: 8 (eight). Csapda: eleinte 12 eurót kértek, de így szinte senki sem vette, ezért levitték az árat nyolc euróra – most ennyi.",
+      "evidence": "So we dropped the price to eight euro"
+    },
+    {
+      "id": "6",
+      "kind": "text",
+      "prompt": "Best place for sales: the ______",
+      "answer": [
+        "Christmas market",
+        "the Christmas market",
+        "Xmas market",
+        "town square",
+        "the town square"
+      ],
+      "maxWords": 3,
+      "category": "detail",
+      "explanation": "A helyes válasz: Christmas market (a karácsonyi vásár a főtéren). Csapda: van webshopjuk is, de ott csak kb. húszat adtak el, a vásáron viszont egyetlen nap alatt hatvanat.",
+      "evidence": "The best place by far was the Christmas market in the town square."
+    },
+    {
+      "id": "7",
+      "kind": "text",
+      "prompt": "Stands sold so far: ______",
+      "answer": [
+        "240",
+        "two hundred forty",
+        "240 stands"
+      ],
+      "maxWords": 3,
+      "category": "detail",
+      "explanation": "A helyes válasz: 240 (two hundred and forty). Csapda: a 300 az egész évre kitűzött cél, a 60 a vásáron egy nap alatt, a 20 a webshopban eladott darabszám.",
+      "evidence": "Two hundred and forty so far."
+    },
+    {
+      "id": "8",
+      "kind": "text",
+      "prompt": "Half of the profit goes to: the ______",
+      "answer": [
+        "children's hospital",
+        "the children's hospital",
+        "a children's hospital",
+        "childrens hospital",
+        "children hospital",
+        "hospital",
+        "the hospital"
+      ],
+      "maxWords": 3,
+      "category": "detail",
+      "explanation": "A helyes válasz: children's hospital (gyermekkórház). Miután visszafizették a részvényeseket, a nyereség fele a város gyermekkórházáé lesz, a másik feléből a csapat bulit tart.",
+      "evidence": "half of the profit goes to the children's hospital in the city"
+    }
+  ],
+  "glossary": [],
+  "suggestedMinutes": 8
+}

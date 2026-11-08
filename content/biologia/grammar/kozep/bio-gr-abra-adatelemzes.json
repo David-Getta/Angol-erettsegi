@@ -1,0 +1,235 @@
+{
+  "schemaVersion": 1,
+  "id": "bio-gr-abra-adatelemzes",
+  "subject": "biologia",
+  "revision": 1,
+  "level": "kozep",
+  "source": "generated",
+  "topic": "nyelvtan",
+  "title": "Ábra, grafikon és táblázat elemzése",
+  "createdAt": "2026-11-05",
+  "tags": [],
+  "section": "grammar",
+  "type": "lesson",
+  "category": "abra-adatelemzes",
+  "summaryHu": "A biológia feladatlapon az ábrák, grafikonok és táblázatok szövegben leírva is szerepelnek, és sokszor számolni is kell belőlük. A pontveszteség oka ritkán a biológiai tudás hiánya – gyakrabban a pontatlan leolvasás, a mértékegység elhagyása, a százalék és a százalékpont összekeverése, vagy az, hogy az együttjárásból ok-okozati következtetést vonunk le.",
+  "rules": [
+    {
+      "title": "Leolvasás: tengely, mértékegység, skála",
+      "explanation": "Mielőtt bármit válaszolnál, nézd meg, mit ábrázol a vízszintes és a függőleges tengely, milyen mértékegységben és milyen beosztással. Táblázatnál olvasd el a fejlécet és a mértékegységet. A válaszban mindig add meg a mértékegységet.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "„A 30. percben a vércukorszint 7,6 mmol/l.”",
+          "hu": "Érték + mértékegység + időpont."
+        },
+        {
+          "en": "Ha a tengely „relatív egység”, a válasz is relatív egységben adható meg.",
+          "hu": "Ne találj ki mértékegységet."
+        }
+      ]
+    },
+    {
+      "title": "Trend leírása és összehasonlítás",
+      "explanation": "A változást szakaszokra bontva írd le: nő, csökken, állandó, maximuma/minimuma van (hol, mekkora). Két görbe összehasonlításánál a kiindulási értéket, a csúcsot, a változás sebességét és a végértéket vesd össze.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "„Az oxigéntartalom hajnali 4 órakor a legkisebb (4,8 mg/l), délután 16 órakor a legnagyobb (12,0 mg/l).”",
+          "hu": "Szélsőértékek adattal."
+        },
+        {
+          "en": "„B értékei végig magasabbak, és lassabban térnek vissza a kiinduló szintre.”",
+          "hu": "Összehasonlítás."
+        }
+      ]
+    },
+    {
+      "title": "Arányok és százalékok",
+      "explanation": "Százalék = rész / egész · 100. A változás mértéke = (új − régi) / régi · 100. Ha két százalékértéket hasonlítasz, a különbségük százalékpont, nem százalék.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "20 magból 9 csírázott: 9 / 20 · 100 = 45%.",
+          "hu": "Arány."
+        },
+        {
+          "en": "A csírázás 92%-ról 56%-ra csökkent: ez 36 százalékpontos, illetve (36 / 92 · 100 ≈) 39%-os csökkenés.",
+          "hu": "Százalékpont ≠ százalék."
+        }
+      ]
+    },
+    {
+      "title": "Együttjárás és ok-okozat",
+      "explanation": "Ha két adat együtt változik (korreláció), abból nem következik, hogy az egyik okozza a másikat; lehet közös oka, vagy véletlen. Ok-okozati következtetést kísérlet (egy tényező változtatása, kontroll) támaszthat alá.",
+      "emeltOnly": false,
+      "examples": [
+        {
+          "en": "A tó oxigéntartalma és hőmérséklete napközben együtt nő, de az oxigént a fotoszintézis termeli, nem a meleg.",
+          "hu": "Közös ok: a napfény."
+        },
+        {
+          "en": "„Az adatok alapján valószínű, hogy…” – óvatos megfogalmazás, ha csak megfigyelésünk van.",
+          "hu": "Következtetés korlátai."
+        }
+      ]
+    },
+    {
+      "title": "Inter- és extrapoláció",
+      "explanation": "A mért pontok között becsülhetünk (interpoláció), de a mért tartományon kívül (extrapoláció) a görbe menete bizonytalan. Az optimumot csak a mért pontok felbontásával lehet megadni.",
+      "emeltOnly": true,
+      "examples": [
+        {
+          "en": "Ha 15, 25 és 35 °C-on mértünk, és 25 °C-on volt a legtöbb csírázás, az optimum „15 és 35 °C között, 25 °C közelében” van.",
+          "hu": "Felbontás."
+        },
+        {
+          "en": "A 70 °C feletti viselkedésről a 70 °C-ig terjedő mérés nem mond biztosat.",
+          "hu": "Extrapoláció veszélye."
+        }
+      ]
+    }
+  ],
+  "commonMistakes": [
+    {
+      "wrong": "„A vércukorszint 30 percnél 7,6.”",
+      "right": "„A vércukorszint 30 percnél 7,6 mmol/l.”",
+      "why": "Mértékegység nélkül az adat nem értékelhető, a javítókulcs gyakran kéri."
+    },
+    {
+      "wrong": "„A csírázási arány 92%-ról 56%-ra, tehát 36%-kal csökkent.”",
+      "right": "„36 százalékponttal (kb. 39%-kal) csökkent.”",
+      "why": "Két százalékérték különbsége százalékpont; a relatív változást a kiinduló értékhez viszonyítva kell számolni."
+    },
+    {
+      "wrong": "„Mivel a jégkrém-fogyasztás és a fulladásos balesetek száma együtt nő, a jégkrém okozza a fulladást.”",
+      "right": "„Mindkettő a meleg időjárással függ össze (közös ok).”",
+      "why": "Együttjárásból nem következik ok-okozat."
+    },
+    {
+      "wrong": "„A görbe nő.” (leírás adatok nélkül)",
+      "right": "„A görbe 0 és 4 között egyenletesen nő −2-ről 6-ra, majd 4 felett állandó.”",
+      "why": "A leírásnak konkrét értékekre és szakaszokra kell hivatkoznia."
+    },
+    {
+      "wrong": "Az optimum pontosan 25 °C.",
+      "right": "A mért értékek közül 25 °C-on volt a legnagyobb az aktivitás; az optimum ennek közelében van.",
+      "why": "A mérések felbontása korlátozza a következtetést."
+    }
+  ],
+  "examTips": [
+    "Mielőtt válaszolsz, húzd alá a kérdésben, mit kell megadni: értéket, időpontot, változást, arányt vagy magyarázatot.",
+    "Számításnál írd le a műveletet is (20 / 200 = 0,1 = 10%) – a kifejtős részben a levezetés is pontot ér, az objektív részben pedig így ellenőrizheted magad.",
+    "Ha a kérdés „az adatok alapján” kér következtetést, csak arra hivatkozz, ami az adatokból következik; a saját tudásodat a magyarázatban használd."
+  ],
+  "practice": [
+    {
+      "id": "1",
+      "kind": "text",
+      "prompt": "Egy táblázat szerint a termelők biomasszája 2000 kg/ha, az elsődleges fogyasztóké 200 kg/ha. Hány százaléka a fogyasztók biomasszája a termelőkének?",
+      "answer": [
+        "10",
+        "10%",
+        "1/10",
+        "0,1"
+      ],
+      "category": "abra-adatelemzes",
+      "explanation": "Helyes: 10%. 200 / 2000 = 0,1, azaz 10%. Ez megfelel annak, hogy szintenként nagyjából egytized rész jut tovább.",
+      "maxWords": 2
+    },
+    {
+      "id": "2",
+      "kind": "choice",
+      "prompt": "Egy grafikon szerint a populáció egyedszáma 1–5. évben gyorsulva nő, 6–10. évben állandó, 800 körüli. Mi a legjobb leírás?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Az egyedszám folyamatosan nő."
+        },
+        {
+          "key": "B",
+          "text": "Az egyedszám csökken."
+        },
+        {
+          "key": "C",
+          "text": "Az egyedszám előbb gyorsulva nő, majd kb. 800 egyednél stabilizálódik (S alakú görbe)."
+        },
+        {
+          "key": "D",
+          "text": "Az egyedszám véletlenszerűen ingadozik."
+        }
+      ],
+      "answer": "C",
+      "category": "abra-adatelemzes",
+      "explanation": "Helyes: C. A leírás szakaszokra bontja a görbét, és megadja a stabil értéket; ez logisztikus (S alakú) növekedés, a 800 az eltartóképesség közelében van.",
+      "wrongOptions": {
+        "A": "A 6–10. évben nem nő, ezért a „folyamatosan nő” pontatlan.",
+        "B": "Az adatok szerint nem csökken.",
+        "D": "Az adatok egyértelmű menetet mutatnak, nem véletlen ingadozást."
+      }
+    },
+    {
+      "id": "3",
+      "kind": "text",
+      "prompt": "A csírázási arány 80%-ról 60%-ra csökkent. Hány százalékpontos a csökkenés?",
+      "answer": [
+        "20",
+        "20 százalékpont",
+        "20 százalékpontos"
+      ],
+      "category": "abra-adatelemzes",
+      "explanation": "Helyes: 20 százalékpont. 80 − 60 = 20; a két százalékérték különbsége százalékpontban adandó meg (relatív csökkenésként ez 20 / 80 = 25%).",
+      "maxWords": 2
+    },
+    {
+      "id": "4",
+      "kind": "choice",
+      "prompt": "Egy városban az elmúlt 20 évben nőtt az autók száma és az asztmás gyerekek száma is. Melyik következtetés a legmegalapozottabb?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Az autók biztosan asztmát okoznak."
+        },
+        {
+          "key": "B",
+          "text": "Az asztma miatt vesznek többen autót."
+        },
+        {
+          "key": "C",
+          "text": "Az adatok együttjárást mutatnak; az ok-okozati kapcsolat igazolásához további vizsgálat kell."
+        },
+        {
+          "key": "D",
+          "text": "A két adat között semmilyen kapcsolat nem lehet."
+        }
+      ],
+      "answer": "C",
+      "category": "abra-adatelemzes",
+      "explanation": "Helyes: C. Két adat együttes növekedése (korreláció) felvet egy lehetséges okot (pl. légszennyezés), de más tényezők (diagnosztika fejlődése, népességnövekedés) is magyarázhatják; ok-okozatot kontrollált vizsgálat igazolhat.",
+      "wrongOptions": {
+        "A": "Együttjárásból nem következik biztos ok-okozat.",
+        "B": "Fordított ok-okozat – az adatok ezt sem támasztják alá.",
+        "D": "Az együttjárás utalhat kapcsolatra, ezért nem zárható ki."
+      }
+    },
+    {
+      "id": "5",
+      "kind": "text",
+      "prompt": "Egy növekedési kísérletben a növény magassága 4 cm-ről 10 cm-re nőtt. Hány százalékkal nőtt?",
+      "answer": [
+        "150",
+        "150%",
+        "1,5-szeresével",
+        "másfélszeresével"
+      ],
+      "category": "abra-adatelemzes",
+      "explanation": "Helyes: 150%. A növekedés 10 − 4 = 6 cm, ezt a kiinduló 4 cm-hez viszonyítjuk: 6 / 4 = 1,5 = 150%. (A végső magasság a kiinduló 250%-a.)",
+      "maxWords": 2
+    }
+  ],
+  "relatedCategories": [
+    "kiserlet-ertelmezes",
+    "okologiai-szamitas",
+    "szovegertelmezes"
+  ]
+}
