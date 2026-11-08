@@ -171,3 +171,15 @@ describe("update banner helpers", () => {
     expect(megabytes(95 * 1024 * 1024)).toBe(95);
   });
 });
+
+describe("own teacher material vs general bank", () => {
+  it("filters by the tanari-diasor tag", async () => {
+    const { filterByOrigin, parseOrigin } = await import("@/lib/tasks");
+    const list = [{ id: "a", tags: ["tanari-diasor"] }, { id: "b", tags: ["altalanos"] }, { id: "c", tags: [] }];
+    expect(filterByOrigin(list, undefined).map((x) => x.id)).toEqual(["a", "b", "c"]);
+    expect(filterByOrigin(list, "tanari").map((x) => x.id)).toEqual(["a"]);
+    expect(filterByOrigin(list, "altalanos").map((x) => x.id)).toEqual(["b", "c"]);
+    expect(parseOrigin("tanari")).toBe("tanari");
+    expect(parseOrigin("x")).toBeUndefined();
+  });
+});

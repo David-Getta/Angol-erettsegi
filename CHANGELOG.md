@@ -11,7 +11,15 @@ előtt) ennek a fájlnak az adott verziójú szakaszából készül
 
 ## Kiadatlan
 
-_(még nincs kiadatlan változás)_
+- **Gazdasági ismeretek – általános feladatbank.** A tanári diasorokon túl a
+  teljes emelt szintű tananyagra: 12 témakör (pénz és bankrendszer, fogyasztó,
+  vállalkozás, termelés és költségek, piaci formák, munkaerőpiac, állam,
+  makrogazdaság, infláció, növekedés, külgazdaság, pénzügyi ismeretek) rövid
+  feladatsorokkal, szóbeli tételekkel és mintafeleletekkel, kifejtendő és
+  elemző feladatokkal, aktuális elemzésekkel és fogalomkártyákkal.
+- **A saját tanári anyag külön marad.** A feltöltött diasorokból készült
+  feladatok „📒 Tanári diasor” jelölést kapnak, és a listák tetején a
+  „Forrás” szűrővel külön is megnézhetők.
 
 ## 1.0.0 – 2026-11-07
 
