@@ -1,0 +1,85 @@
+{
+  "schemaVersion": 1,
+  "id": "gaz-sp-emelt-tetel-makro-gdp-meres",
+  "subject": "gazdasagi-ismeretek",
+  "revision": 1,
+  "level": "emelt",
+  "source": "generated",
+  "topic": "makro",
+  "title": "Makrogazdasági szereplők, a nemzetgazdaság teljesítményének mérése",
+  "createdAt": "2026-11-08",
+  "tags": [
+    "altalanos"
+  ],
+  "section": "speaking",
+  "type": "tetel",
+  "partNumber": 1,
+  "instructionsHu": "Fejtse ki a tételt! Mutassa be a makrogazdaság szereplőit és a makrogazdasági körforgást, a GDP fogalmát és háromféle kiszámítási módját, a GDP és a GNI különbségét, a nominális és a reál GDP közötti eltérést, valamint a nemzetgazdasági mutatók korlátait és a kiegészítő mutatókat! Felkészülési idő: 30 perc.",
+  "prompts": [
+    "Sorold fel a makrogazdaság szereplőit, és mutasd be a makrogazdasági körforgást (piacok, áramlások, szivárgások és injekciók)!",
+    "Határozd meg a GDP fogalmát! Miért csak a végső felhasználásra szánt javakat számítjuk bele? Mi számít bele, és mi nem?",
+    "Mutasd be a GDP kiszámításának három módját (termelési, felhasználási, jövedelmi oldal)!",
+    "Mi a különbség a GDP és a GNI között? Mikor nagyobb az egyik, mint a másik?",
+    "Mi a különbség a nominális és a reál GDP között? Mi a GDP-deflátor szerepe? Miért használjuk az egy főre jutó, vásárlóerő-paritáson számított GDP-t?",
+    "Milyen korlátai vannak a GDP-nek mint jóléti mutatónak, és milyen kiegészítő mutatókat ismersz?"
+  ],
+  "usefulPhrases": [
+    {
+      "en": "GDP = C + I + G + (X − M)",
+      "hu": "felhasználási oldal: fogyasztás, beruházás, állami vásárlások, nettó export"
+    },
+    {
+      "en": "területi elv – honossági elv",
+      "hu": "GDP: az ország területén termelt érték; GNI: a hazai szereplők jövedelme"
+    },
+    {
+      "en": "reál GDP = nominális GDP / árindex",
+      "hu": "az áremelkedés hatásának kiszűrése"
+    }
+  ],
+  "sources": [
+    {
+      "title": "1. forrás – Definíció",
+      "text": "Bruttó hazai termék (GDP): egy ország területén egy adott időszak (általában egy év) alatt előállított, végső felhasználásra szánt termékek és szolgáltatások piaci értéke; másképpen: a hazai termelők által létrehozott hozzáadott értékek összege."
+    },
+    {
+      "title": "2. forrás – Két kitalált ország (leírás)",
+      "text": "„A” ország egy főre jutó GDP-je kétszerese „B” országénak. „A” országban a gyárak jelentős része külföldi tulajdonú, és a profitot a tulajdonosok hazautalják; a levegőszennyezés miatt évente sok ember betegszik meg. „B” országban sok a háztartásban végzett, nem piaci munka (gyereknevelés, kertművelés), és a jövedelmek eloszlása kiegyenlítettebb."
+    }
+  ],
+  "keyPoints": [
+    "A makrogazdaság szereplői: háztartások, vállalatok, állam, külföld (és a pénzügyi közvetítők); a makrogazdasági körforgásban a jószágáramlással ellentétes irányú pénzáramlás halad.",
+    "A körforgás piacai: árupiac (termékek és szolgáltatások), munkapiac, pénz- és tőkepiac; szivárgás a megtakarítás, az adó és az import, injekció a beruházás, az állami kiadás és az export.",
+    "GDP: egy ország területén egy adott időszak alatt előállított, végső felhasználásra szánt javak piaci értéke (= a hozzáadott értékek összege); a köztes termékeket a halmozódás elkerülése miatt nem számítjuk.",
+    "Nem része a GDP-nek: a köztes termék, a használt javak eladása, a pénzügyi ügyletek (részvényvásárlás), a transzferek (nyugdíj, segély), a nem piaci háztartási munka és – mérési okból nagyrészt – a rejtett gazdaság.",
+    "Három számítási mód: termelési oldal (a hozzáadott értékek összege), felhasználási oldal (C + I + G + X − M), jövedelmi oldal (bérek, profitok, kamatok, bérleti díjak, értékcsökkenés és termékadók); elméletben mindhárom ugyanazt az eredményt adja.",
+    "GNI (bruttó nemzeti jövedelem) = GDP + külföldről kapott elsődleges jövedelmek − külföldre fizetett elsődleges jövedelmek; ahol sok a külföldi tulajdonú vállalat és nagy a profit-hazautalás, ott a GNI kisebb a GDP-nél.",
+    "Nominális GDP: folyó áron; reál GDP: változatlan (bázisévi) áron, az árváltozás hatása nélkül; GDP-deflátor = nominális GDP / reál GDP; a gazdasági növekedést a reál GDP változásával mérjük.",
+    "Összehasonlításhoz: egy főre jutó GDP (GDP / népesség) és vásárlóerő-paritáson (PPP) számított GDP, amely kiszűri az árszínvonal- és árfolyam-különbségeket.",
+    "A GDP korlátai: nem méri a nem piaci tevékenységet és a rejtett gazdaságot, a jövedelemeloszlást, a szabadidőt, a környezeti károkat és a természeti erőforrások fogyását, a termékek minőségét; a környezetszennyezés helyreállítása még növeli is.",
+    "Kiegészítő mutatók: emberi fejlettségi index (HDI: várható élettartam, iskolázottság, egy főre jutó jövedelem), nettó gazdasági jólét (NEW), fenntarthatósági (zöld) mutatók, boldogságindexek."
+  ],
+  "speakingSeconds": 720,
+  "prepSeconds": 1800,
+  "sampleAnswer": {
+    "turns": [
+      {
+        "speaker": "candidate",
+        "text": "A tételem a makrogazdasági szereplők és a nemzetgazdaság teljesítményének mérése. A makrogazdaság szereplői a háztartások, a vállalatok, az állam és a külföld, mellettük fontosak a pénzügyi közvetítők, például a bankok. A makrogazdasági körforgásban a háztartások termelési tényezőket adnak el a vállalatoknak, és jövedelmet kapnak érte, ebből fogyasztanak, adót fizetnek és megtakarítanak. A javak és a pénz mindig ellentétes irányban áramlanak. A körforgásból a megtakarítás, az adó és az import kiszivárog, a beruházás, az állami kiadás és az export pedig injekcióként visszakerül. A teljesítmény legfontosabb mutatója a bruttó hazai termék, a GDP: egy ország területén egy adott időszak, általában egy év alatt előállított, végső felhasználásra szánt termékek és szolgáltatások piaci értéke. Azért csak a végső felhasználást számítjuk, hogy elkerüljük a halmozódást: ha a búzát, a lisztet és a kenyeret is összeadnánk, a búzát háromszor számolnánk. Ezért a GDP egyben a hozzáadott értékek összege. Nem része a GDP-nek a használt autó eladása, a részvényvásárlás és a nyugdíj sem, mert ez transzfer, nem termelés ellenértéke. A GDP-t háromféleképpen számíthatjuk. A termelési oldalon a hozzáadott értékeket adjuk össze. A felhasználási oldalon a fogyasztás, a beruházás, az állami vásárlások és a nettó export összegét vesszük: GDP egyenlő C plusz I plusz G plusz X mínusz M. A jövedelmi oldalon a termelés során keletkezett jövedelmeket, a béreket, a profitokat, a kamatokat és a bérleti díjakat összesítjük. Elméletben mindhárom ugyanannyi. A GDP a területi elvet követi. A GNI, a bruttó nemzeti jövedelem a honossági elvet: a GDP-hez hozzáadjuk a külföldről kapott, és levonjuk a külföldre fizetett elsődleges jövedelmeket. A forrásban szereplő „A” országban sok a külföldi tulajdonú gyár, és a profitot hazautalják, ezért ott a GNI valószínűleg kisebb a GDP-nél. A nominális GDP folyó áron, a reál GDP változatlan, bázisévi áron mér; a kettő hányadosa a GDP-deflátor. A növekedést a reál GDP-vel mérjük, mert a nominális érték az áremelkedéstől is nőhet. Országok összehasonlításakor az egy főre jutó, vásárlóerő-paritáson számított GDP-t használjuk. A GDP azonban nem tökéletes jóléti mutató. Nem méri a háztartásban végzett munkát, a rejtett gazdaságot, a jövedelmek eloszlását, a szabadidőt és a környezeti károkat. A forrás alapján a kétszeres egy főre jutó GDP ellenére sem biztos, hogy „A” országban jobb élni, mert ott a szennyezés rontja az egészséget, „B” országban pedig a nem piaci munka és a kiegyenlítettebb eloszlás a GDP-ben nem látszik. Ezért használjuk kiegészítésként például az emberi fejlettségi indexet, amely a várható élettartamot, az iskolázottságot és a jövedelmet is figyelembe veszi."
+      },
+      {
+        "speaker": "examiner",
+        "text": "Hogyan változik a GDP, ha egy gyár szennyezése miatt az államnak kármentesítést kell végeztetnie?"
+      },
+      {
+        "speaker": "candidate",
+        "text": "Paradox módon a GDP nő, mert a kármentesítés is termelés, piaci értéke van, és az állami vásárlások között jelenik meg. A jólét viszont nem nőtt, csak egy korábbi kárt hoztunk helyre. Ez is mutatja, hogy a GDP a gazdasági tevékenység nagyságát méri, nem a jólétet, ezért kellenek a zöld, fenntarthatósági mutatók."
+      }
+    ],
+    "notes": [
+      "A GDP definícióját pontosan, a végső felhasználás és a halmozódás magyarázatával adja meg, és mindhárom számítási módot, valamint a GDP–GNI és a nominális–reál különbséget is bemutatja.",
+      "Mindkét forrást beépíti: az „A” ország profit-hazautalásából a GDP és a GNI viszonyára, a két ország leírásából a GDP korlátaira következtet – ez az összefüggések és az alkalmazás szintje.",
+      "A kiegészítő kérdésnél a kármentesítés példáján önállóan mutatja meg, hogy a GDP a tevékenységet, nem a jólétet méri."
+    ]
+  }
+}

@@ -1,0 +1,77 @@
+{
+  "schemaVersion": 1,
+  "id": "gaz-sp-emelt-tetel-fogyaszto-kereslet",
+  "subject": "gazdasagi-ismeretek",
+  "revision": 1,
+  "level": "emelt",
+  "source": "generated",
+  "topic": "fogyaszto",
+  "title": "A fogyasztó döntései, a kereslet és a fogyasztói tudatosság",
+  "createdAt": "2026-11-08",
+  "tags": [
+    "altalanos"
+  ],
+  "section": "speaking",
+  "type": "tetel",
+  "partNumber": 1,
+  "instructionsHu": "Fejtse ki a tételt! Mutassa be a fogyasztó célját és a hasznosság fogalmait, Gossen két törvényét, a költségvetési korlátot, a keresleti függvényt és a keresletet befolyásoló tényezőket, a kereslet árrugalmasságát, végül a fogyasztói tudatosság és a fogyasztóvédelem szerepét! A mellékelt forrásokat használja fel. Felkészülési idő: 30 perc.",
+  "prompts": [
+    "Mi a fogyasztó célja? Határozd meg az összhaszon és a határhaszon fogalmát, és mondd ki Gossen I. törvényét!",
+    "Mit jelent a költségvetési korlát? Hogyan változik a költségvetési egyenes a jövedelem, illetve egy jószág árának változásakor?",
+    "Mondd ki Gossen II. törvényét (a fogyasztói optimum feltételét), és alkalmazd az 1. forrás adataira!",
+    "Mit fejez ki a keresleti függvény? Mi a különbség a keresett mennyiség változása és a kereslet változása között, és milyen tényezők tolják el a keresleti görbét?",
+    "Mi a kereslet árrugalmassága, mikor rugalmas, rugalmatlan vagy egységnyi rugalmasságú a kereslet, és hogyan hat az áremelés az összkiadásra?",
+    "Mit jelent a tudatos fogyasztó, és miért szükséges a fogyasztóvédelem? Értelmezd a 2. forrás esetét!"
+  ],
+  "usefulPhrases": [
+    { "en": "határhaszon", "hu": "az utolsóként elfogyasztott egység által okozott összhaszon-növekmény" },
+    { "en": "MU_X / P_X = MU_Y / P_Y", "hu": "Gossen II.: az optimumban az egy pénzegységre jutó határhaszon minden jószágnál egyenlő" },
+    { "en": "ceteris paribus", "hu": "a keresleti függvényt az ár hatására rajzoljuk fel, minden más tényező változatlansága mellett" },
+    { "en": "|e| < 1 rugalmatlan, |e| > 1 rugalmas", "hu": "az árrugalmasság abszolút értéke szerinti besorolás" }
+  ],
+  "sources": [
+    {
+      "title": "Forrás 1 – Ádám határhasznai (hipotetikus adatok)",
+      "text": "Ádám 800 Ft-ot költ uzsonnára. Egy szelet pizza 200 Ft, egy üdítő 100 Ft. A pizzaszeletek határhaszna sorban: 800, 600, 400, 200 hasznossági egység; az üdítőké: 300, 200, 100, 50 hasznossági egység."
+    },
+    {
+      "title": "Forrás 2 – Fogyasztói eset",
+      "text": "Lili egy webáruházban fülhallgatót rendelt. A kézhezvétel után öt nappal meggondolta magát, és vissza szeretné küldeni, pedig a termék hibátlan. Az eladó azt írja, hogy hibátlan terméket nem vesz vissza."
+    }
+  ],
+  "keyPoints": [
+    "A fogyasztó célja a hasznosság (szükségletkielégítés) maximalizálása adott jövedelem és adott árak mellett; racionálisan, a határhaszon és az ár összevetésével dönt.",
+    "Összhaszon: a jószág adott mennyiségének elfogyasztásából származó teljes hasznosság; határhaszon: az utolsó (pótlólagos) egység által okozott összhaszon-növekmény.",
+    "Gossen I. törvénye: ugyanabból a jószágból minden további egység egyre kisebb határhaszonnal jár (csökkenő határhaszon); az összhaszon addig nő, amíg a határhaszon pozitív.",
+    "Költségvetési korlát: I = P_X · X + P_Y · Y; a jövedelem változása párhuzamosan tolja el az egyenest, egy ár változása elfordítja (a másik tengelymetszet változatlan).",
+    "Gossen II. törvénye: a fogyasztó akkor van optimumban, ha az egy pénzegységre jutó határhaszon minden jószágnál egyenlő (MU_X / P_X = MU_Y / P_Y), és elkölti a jövedelmét; az 1. forrásban ez 3 pizzánál és 2 üdítőnél teljesül (400/200 = 200/100 = 2; 3 · 200 + 2 · 100 = 800 Ft).",
+    "A keresleti függvény a jószág ára és a keresett mennyiség kapcsolata ceteris paribus; a kereslet törvénye szerint az ár emelkedésével a keresett mennyiség csökken (a görbe mentén mozgunk).",
+    "A keresleti görbét eltolja: a jövedelem (normál jószágnál a kereslet nő, alsóbbrendűnél csökken), a helyettesítő és a kiegészítő javak ára, az ízlés, a várakozások és a vásárlók száma.",
+    "Árrugalmasság = a keresett mennyiség %-os változása / az ár %-os változása; |e| > 1 rugalmas (áremeléskor csökken az összkiadás), |e| < 1 rugalmatlan (nő az összkiadás), |e| = 1 egységnyi (nem változik); rugalmatlan jellemzően a szükségleti cikkek és a nehezen helyettesíthető javak kereslete.",
+    "A tudatos fogyasztó tájékozódik, összehasonlít, ismeri a jogait, és figyelembe veszi döntései környezeti és társadalmi hatását; a fogyasztóvédelem az információs aszimmetria és az erőfölény ellensúlyozása (tájékoztatás, szavatosság, jótállás, elállási jog, fogyasztóvédelmi hatóság, békéltető testület).",
+    "A 2. forrásban Lili az online vásárlásnál az uniós szabályok szerint a kézhezvételtől számított 14 napon belül indoklás nélkül elállhat a szerződéstől, tehát hibátlan termék esetén is; az eladó álláspontja téves."
+  ],
+  "speakingSeconds": 720,
+  "prepSeconds": 1800,
+  "sampleAnswer": {
+    "turns": [
+      {
+        "speaker": "candidate",
+        "text": "A tételem a fogyasztó döntései és a kereslet. A fogyasztó célja, hogy adott jövedelméből, adott árak mellett a lehető legnagyobb hasznosságot érje el. Az összhaszon a jószág adott mennyiségének elfogyasztásából származó teljes hasznosság, a határhaszon pedig az utolsóként elfogyasztott egység által okozott összhaszon-növekmény. Gossen I. törvénye szerint ugyanabból a jószágból minden további egység egyre kisebb határhaszonnal jár: az első szelet pizza sokkal jobban esik, mint a negyedik. A fogyasztót a költségvetési korlát köti: a jövedelme egyenlő a jószágokra költött összegek összegével. Ha nő a jövedelem, a költségvetési egyenes párhuzamosan kifelé tolódik, ha csak az egyik jószág ára nő, az egyenes befelé fordul, a másik tengelymetszet nem változik. Gossen II. törvénye szerint a fogyasztó akkor van optimumban, ha az egy forintra jutó határhaszon minden jószágnál egyenlő, és elkölti a jövedelmét. Az első forrásban Ádám 800 forintjából három szelet pizzát és két üdítőt vesz: a harmadik pizza határhaszna 400, ára 200, az arány kettő, a második üdítőé 200 per 100, szintén kettő, és pontosan 800 forintot költ. A keresleti függvény azt mutatja meg, hogy minden más változatlansága mellett hogyan függ a keresett mennyiség az ártól; a kereslet törvénye szerint drágább termékből kevesebbet vesznek. Ha az ár változik, a görbe mentén mozgunk, ez a keresett mennyiség változása. Ha viszont a jövedelem, a helyettesítő vagy a kiegészítő javak ára, az ízlés, a várakozások vagy a vásárlók száma változik, az egész görbe eltolódik, ez a kereslet változása. Normál jószágnál a jövedelem növekedése növeli, alsóbbrendűnél csökkenti a keresletet. Az árrugalmasság a keresett mennyiség százalékos változása osztva az ár százalékos változásával. Ha az abszolút értéke egynél nagyobb, a kereslet rugalmas, és az áremelés csökkenti az összkiadást; ha kisebb, rugalmatlan, mint a gyógyszereknél vagy az üzemanyagnál, ekkor az áremelés növeli az összkiadást. Végül a tudatos fogyasztó tájékozódik, összehasonlítja az ajánlatokat, és ismeri a jogait. A fogyasztóvédelemre azért van szükség, mert az eladó többet tud a termékről, mint a vevő. A második forrásban Lili online vásárolt, ezért az uniós szabályok szerint tizennégy napon belül indoklás nélkül elállhat a szerződéstől, akkor is, ha a termék hibátlan, tehát az eladónak nincs igaza."
+      },
+      {
+        "speaker": "examiner",
+        "text": "Mi történik Ádám választásával, ha a pizza ára 400 Ft-ra emelkedik?"
+      },
+      {
+        "speaker": "candidate",
+        "text": "A pizza egy forintra jutó határhaszna feleződik: 2; 1,5; 1 és 0,5 lesz, az üdítőé marad 3; 2; 1 és 0,5. Ádám mindig oda költ, ahol egy forint több hasznot hoz: először egy üdítőt, aztán egy pizzát és egy második üdítőt vesz, ez 600 forint. A második pizzára már nem futja, ezért még két üdítőt vesz, így 1 pizza és 4 üdítő pontosan 800 forint, az összhaszon 1450 egység, több, mint két pizza 1400 egysége. Kevesebb pizzát vesz, mint korábban: ez a kereslet törvénye, és a drágult pizzát részben üdítővel helyettesíti."
+      }
+    ],
+    "notes": [
+      "Minden szempontra kitér, a definíciók (összhaszon, határhaszon, Gossen I. és II., árrugalmasság) pontosak, és világosan elkülöníti a keresett mennyiség változását a kereslet változásától – ez a tétel tipikus buktatója.",
+      "Az 1. forrás adataival ellenőrzi az optimum feltételét (400/200 = 200/100 = 2, a kiadás pontosan 800 Ft), a 2. forrás esetét a fogyasztóvédelmi szabállyal oldja meg: a tanult modellt alkalmazza, nem csak felsorol.",
+      "A kiegészítő kérdésre újraszámolja az egy forintra jutó határhasznokat, és a változást a kereslet törvényével és a helyettesítéssel magyarázza."
+    ]
+  }
+}

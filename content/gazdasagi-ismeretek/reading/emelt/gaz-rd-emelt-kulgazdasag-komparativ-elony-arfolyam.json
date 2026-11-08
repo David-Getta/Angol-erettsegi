@@ -1,0 +1,172 @@
+{
+  "schemaVersion": 1,
+  "id": "gaz-rd-emelt-kulgazdasag-komparativ-elony-arfolyam",
+  "subject": "gazdasagi-ismeretek",
+  "revision": 1,
+  "level": "emelt",
+  "source": "generated",
+  "topic": "kulgazdasag",
+  "title": "Komparatív előny és árfolyam: rövid számítások",
+  "createdAt": "2026-11-08",
+  "tags": [
+    "altalanos"
+  ],
+  "section": "reading",
+  "type": "szamitas-rovid",
+  "instructions": "Olvassa el az adatokat, majd végezze el a számításokat! Csak az eredményt írja be (a tört értékeket két tizedesjegyre kerekítve). A 0. a megoldott példa.",
+  "passage": {
+    "title": "Két ország, két termék – és egy exportőr",
+    "sourceNote": "Hipotetikus adatok.",
+    "blocks": [
+      {
+        "heading": "I. Termelés",
+        "text": "Alfa országban 1 tonna búza előállításához 10 munkaóra, 1 bála szövet előállításához 20 munkaóra szükséges. Béta országban 1 tonna búzához 30 munkaóra, 1 bála szövethez 40 munkaóra kell. Mindkét országban csak munkával termelnek, és a munkaerő szabadon átcsoportosítható a két termék között."
+      },
+      {
+        "text": "Az alternatív költség azt mutatja meg, mennyit kell feláldozni a másik termékből egy egység előállításáért: például Alfában 1 tonna búza alternatív költsége = a búza munkaigénye / a szövet munkaigénye, bála szövetben kifejezve."
+      },
+      {
+        "heading": "II. Árfolyam",
+        "text": "Egy magyar bútorgyártó 25 000 euró értékű árut exportál egy német vevőnek, aki euróban fizet. A szerződéskötéskor az árfolyam 1 euró = 400 Ft. A pénz megérkezéséig az árfolyam 1 euró = 380 Ft-ra változik."
+      }
+    ]
+  },
+  "example": {
+    "id": "0",
+    "kind": "text",
+    "prompt": "Mennyi 1 tonna búza alternatív költsége Alfa országban (bála szövetben)?",
+    "answer": [
+      "0,5",
+      "0.5",
+      "0,5 bála",
+      "0.5 bála",
+      "1/2"
+    ],
+    "category": "szamitas",
+    "explanation": "0,5 bála szövet. 1 tonna búza 10 munkaóra; ennyi idő alatt 10 / 20 = 0,5 bála szövetet lehetne előállítani – ennyit kell feláldozni 1 tonna búzáért."
+  },
+  "items": [
+    {
+      "id": "1",
+      "kind": "text",
+      "prompt": "Mennyi 1 tonna búza alternatív költsége Béta országban (bála szövetben)?",
+      "answer": [
+        "0,75",
+        "0.75",
+        "0,75 bála",
+        "0.75 bála",
+        "3/4"
+      ],
+      "category": "szamitas",
+      "explanation": "0,75 bála szövet. Béta országban 1 tonna búza 30 munkaóra, 1 bála szövet 40 munkaóra: 30 / 40 = 0,75 bála szövet."
+    },
+    {
+      "id": "2",
+      "kind": "text",
+      "prompt": "Mennyi 1 bála szövet alternatív költsége Alfa országban (tonna búzában)?",
+      "answer": [
+        "2",
+        "2 tonna",
+        "2 t",
+        "2 tonna búza"
+      ],
+      "category": "szamitas",
+      "explanation": "2 tonna búza. 1 bála szövet 20 munkaóra; ennyi idő alatt 20 / 10 = 2 tonna búza készülhetne. (Ez az előző érték reciproka: 1 / 0,5 = 2.)"
+    },
+    {
+      "id": "3",
+      "kind": "text",
+      "prompt": "Mennyi 1 bála szövet alternatív költsége Béta országban (tonna búzában, két tizedesjegyre kerekítve)?",
+      "answer": [
+        "1,33",
+        "1.33",
+        "1,33 tonna",
+        "1.33 tonna",
+        "1,333",
+        "1.333",
+        "4/3"
+      ],
+      "category": "szamitas",
+      "explanation": "≈ 1,33 tonna búza. 40 / 30 = 1,333… ≈ 1,33 tonna búza (a 0,75 reciproka: 1 / 0,75 = 4/3)."
+    },
+    {
+      "id": "4",
+      "kind": "text",
+      "prompt": "Melyik ország rendelkezik komparatív előnnyel a szövet előállításában? (Írja be az ország nevét!)",
+      "answer": [
+        "Béta",
+        "Beta",
+        "Béta ország",
+        "Béta országban",
+        "Bétában"
+      ],
+      "maxWords": 2,
+      "category": "alapelv-alkalmazas",
+      "explanation": "Béta. Komparatív előnye annak az országnak van egy termékben, ahol annak alternatív költsége kisebb: a szövet alternatív költsége Bétában ≈ 1,33 tonna búza, Alfában 2 tonna búza. Hiába van Alfának mindkét termékben abszolút előnye (kevesebb munkaóra kell), Bétának a szövetet, Alfának a búzát érdemes termelnie (Ricardo tétele)."
+    },
+    {
+      "id": "5",
+      "kind": "text",
+      "prompt": "Alfa búzára specializálódik, és 10 tonna búzát ad el Bétának 1 tonna búza = 0,6 bála szövet cserearányon. Hány munkaórát takarít meg Alfa ahhoz képest, mintha a kapott szövetet maga állította volna elő?",
+      "answer": [
+        "20",
+        "20 óra",
+        "20 munkaóra",
+        "20 munkaórát"
+      ],
+      "maxWords": 2,
+      "category": "szamitas",
+      "explanation": "20 munkaóra. A 10 tonna búza előállítása Alfában 10 × 10 = 100 munkaóra. Érte 10 × 0,6 = 6 bála szövetet kap, amelynek hazai előállítása 6 × 20 = 120 munkaóra lenne. Megtakarítás: 120 − 100 = 20 munkaóra. (A 0,6-os cserearány a két ország alternatív költsége, 0,5 és 0,75 közé esik, ezért Bétának is megéri.)"
+    },
+    {
+      "id": "6",
+      "kind": "text",
+      "prompt": "Hány millió forintot ér a 25 000 eurós export a szerződéskötéskor érvényes árfolyamon?",
+      "answer": [
+        "10",
+        "10 millió",
+        "10 millió Ft",
+        "10 millió forint",
+        "10 000 000",
+        "10 000 000 Ft"
+      ],
+      "maxWords": 4,
+      "category": "szamitas",
+      "explanation": "10 millió Ft. Forintérték = euróösszeg × árfolyam (Ft/EUR) = 25 000 × 400 = 10 000 000 Ft."
+    },
+    {
+      "id": "7",
+      "kind": "text",
+      "prompt": "Hány százalékkal csökkent az euró forintban kifejezett árfolyama (a Ft/EUR érték) a szerződéskötés és a pénz megérkezése között?",
+      "answer": [
+        "5",
+        "5%",
+        "5 %",
+        "5 százalék",
+        "5 százalékkal"
+      ],
+      "maxWords": 2,
+      "category": "szamitas",
+      "explanation": "5 %. Változás = (380 − 400) / 400 × 100 = −20 / 400 × 100 = −5 %. Egy euróért kevesebb forintot adnak, vagyis a forint felértékelődött (az euró leértékelődött a forinttal szemben)."
+    },
+    {
+      "id": "8",
+      "kind": "text",
+      "prompt": "Hány millió forintot kap ténylegesen az exportőr, amikor a pénz megérkezik (380 Ft/EUR árfolyamon)?",
+      "answer": [
+        "9,5",
+        "9.5",
+        "9,5 millió",
+        "9.5 millió",
+        "9,5 millió Ft",
+        "9.5 millió Ft",
+        "9 500 000",
+        "9 500 000 Ft"
+      ],
+      "maxWords": 4,
+      "category": "szamitas",
+      "explanation": "9,5 millió Ft. 25 000 × 380 = 9 500 000 Ft, vagyis 500 000 Ft-tal kevesebb a vártnál. A forint felértékelődése az exportőrnek kedvezőtlen (ugyanannyi euró kevesebb forintot ér), az importőrnek kedvező; ezért viselnek az exportőrök árfolyamkockázatot."
+    }
+  ],
+  "suggestedMinutes": 12
+}

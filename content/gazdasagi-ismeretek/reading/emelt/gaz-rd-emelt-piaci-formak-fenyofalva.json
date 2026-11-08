@@ -1,0 +1,233 @@
+{
+  "schemaVersion": 1,
+  "id": "gaz-rd-emelt-piaci-formak-fenyofalva",
+  "subject": "gazdasagi-ismeretek",
+  "revision": 1,
+  "level": "emelt",
+  "source": "generated",
+  "topic": "piaci-formak",
+  "title": "Piaci formák felismerése egy kisváros piacain",
+  "createdAt": "2026-11-08",
+  "tags": [
+    "altalanos"
+  ],
+  "section": "reading",
+  "type": "szovegertelmezes",
+  "instructions": "Olvassa el a (kitalált) kisváros piacairól szóló leírást, majd oldja meg a feladatokat! Az 1–3. kérdésnél a közös listából válassza ki a piaci formát (egy betű csak egyszer használható, és van egy felesleges lehetőség), a többi kérdésnél kövesse az utasítást! A 0. a megoldott példa.",
+  "passage": {
+    "title": "Fenyőfalva piacai",
+    "sourceNote": "Kitalált esetleírás a gyakorlás céljára.",
+    "blocks": [
+      {
+        "heading": "a) Termelői piac",
+        "text": "A szombati termelői piacon több tucat gazda árul ugyanolyan fajtájú és minőségű étkezési burgonyát. A vevők pontosan látják az összes árat, ezért ha egy gazda drágábban kínálná a burgonyát, mint a többiek, senki sem venne tőle. Asztalt bárki bérelhet, aki árulni szeretne."
+      },
+      {
+        "heading": "b) Ivóvíz-szolgáltatás",
+        "text": "A város vezetékes ivóvizét egyetlen vállalat szolgáltatja. Egy második, párhuzamos csőhálózat kiépítése olyan drága lenne, hogy egyetlen új cégnek sem érné meg belépni; a szolgáltatónak ráadásul nincs közeli helyettesítője, ezért az árát hatósági szabályozás korlátozza."
+      },
+      {
+        "heading": "c) Cementgyártás",
+        "text": "A régió építkezéseit három nagy cementgyár látja el. Egy új gyár felépítése hatalmas beruházást igényel. Ha az egyik gyár csökkenti az árát, a másik kettő általában azonnal követi, ezért mindegyik vállalat úgy dönt, hogy közben a riválisok várható lépéseit is figyelembe veszi. Egy helyi lap szerint a három gyár vezetői egy zártkörű találkozón megállapodtak, hogy egyikük sem ad 5 %-nál nagyobb árengedményt."
+      },
+      {
+        "heading": "d) Kávézók",
+        "text": "A főutcán tizenkét kávézó működik. Mindegyik másként van berendezve, más süteményeket és kávékülönlegességeket kínál, és az áraik is kissé eltérnek. Ha az egyik kávézó kicsit drágít, a törzsvendégei egy része marad, más része átpártol a szomszédba. Új kávézót viszonylag kevés tőkével lehet nyitni, és az utóbbi években többen is nyitottak."
+      }
+    ]
+  },
+  "options": [
+    {
+      "key": "A",
+      "text": "tökéletes (szabad) verseny"
+    },
+    {
+      "key": "B",
+      "text": "monopolisztikus verseny"
+    },
+    {
+      "key": "C",
+      "text": "oligopólium"
+    },
+    {
+      "key": "D",
+      "text": "(természetes) monopólium"
+    },
+    {
+      "key": "E",
+      "text": "monopszónium"
+    }
+  ],
+  "example": {
+    "id": "0",
+    "kind": "match",
+    "prompt": "Melyik piaci formához áll legközelebb az a) termelői piac?",
+    "answer": "A",
+    "category": "csoportositas",
+    "explanation": "Helyes: A. Sok eladó, homogén (azonos minőségű) termék, teljes informáltság (a vevők látják az árakat) és szabad belépés – ezek a tökéletes verseny feltételei, ezért a gazdák árelfogadók."
+  },
+  "items": [
+    {
+      "id": "1",
+      "kind": "match",
+      "prompt": "Melyik piaci forma jellemzi a b) ivóvíz-szolgáltatást?",
+      "answer": "D",
+      "category": "csoportositas",
+      "explanation": "Helyes: D. Egyetlen eladó, nincs közeli helyettesítő termék, és a belépést a hálózatépítés óriási fix költsége akadályozza: ez természetes monopólium, ahol egy vállalat olcsóbban látja el a piacot, mint több.",
+      "wrongOptions": {
+        "C": "Oligopóliumban néhány (legalább kettő) eladó van; itt csak egy szolgáltató működik.",
+        "E": "Monopszóniumban egyetlen VEVŐ van; itt egyetlen eladóról van szó.",
+        "A": "Tökéletes versenyben sok eladó és szabad belépés van – itt egyik feltétel sem teljesül.",
+        "B": "Monopolisztikus versenyben sok eladó van differenciált termékkel; itt egyetlen szolgáltató van."
+      }
+    },
+    {
+      "id": "2",
+      "kind": "match",
+      "prompt": "Melyik piaci forma jellemzi a c) cementgyártást?",
+      "answer": "C",
+      "category": "csoportositas",
+      "explanation": "Helyes: C. Kevés nagy eladó, magas belépési korlát és kölcsönös függőség: a vállalatok a döntéseiknél a riválisok várható reakcióit is figyelembe veszik – ez az oligopólium legfontosabb ismérve.",
+      "wrongOptions": {
+        "D": "Monopóliumban egyetlen eladó van, itt három gyár versenyez.",
+        "B": "Monopolisztikus versenyben sok kis szereplő van és könnyű a belépés; itt három nagy gyár és magas belépési korlát van.",
+        "A": "Tökéletes versenyben az egyes eladók döntése nem hat a többiekre; itt az árváltozást a riválisok azonnal követik.",
+        "E": "Monopszóniumban egyetlen vevő van; a leírás a kínálati oldal szereplőiről szól."
+      }
+    },
+    {
+      "id": "3",
+      "kind": "match",
+      "prompt": "Melyik piaci forma jellemzi a d) kávézók piacát?",
+      "answer": "B",
+      "category": "csoportositas",
+      "explanation": "Helyes: B. Sok eladó, differenciált (egymástól eltérő) termék, ezért mindegyik kávézónak van egy kis piaci ereje (kicsit drágíthat úgy, hogy nem veszít el minden vevőt), és viszonylag szabad a belépés – ez a monopolisztikus verseny.",
+      "wrongOptions": {
+        "A": "Tökéletes versenyben a termék homogén, és a legkisebb drágításra is minden vevő elpártolna; itt a kávézók kínálata eltérő.",
+        "C": "Oligopóliumban kevés, nagy szereplő van magas belépési korláttal; itt tizenkét kávézó van és könnyű a belépés.",
+        "D": "Monopóliumban egyetlen eladó van.",
+        "E": "Monopszóniumban egyetlen vevő van."
+      }
+    },
+    {
+      "id": "4",
+      "kind": "choice",
+      "prompt": "Melyik állítás igaz az a) piac egy gazdájára mint tökéletesen versenyző vállalatra?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Árelfogadó: a piaci áron bármennyit eladhat, ezért a határbevétele megegyezik az árral (MR = P)."
+        },
+        {
+          "key": "B",
+          "text": "Ármeghatározó: a kínált mennyiség csökkentésével emelni tudja a burgonya piaci árát."
+        },
+        {
+          "key": "C",
+          "text": "Hosszú távon is tartós gazdasági (extra)profitot ér el, mert a piacra nehéz belépni."
+        },
+        {
+          "key": "D",
+          "text": "Reklámmal és csomagolással különbözteti meg a burgonyáját, hogy drágábban adhassa."
+        }
+      ],
+      "answer": "A",
+      "category": "definicio",
+      "explanation": "Helyes: A. Tökéletes versenyben egy eladó a piaci kínálatnak elhanyagolhatóan kicsi része, ezért nem befolyásolja az árat (árelfogadó); minden további egység ugyanazon az áron kel el, így MR = P.",
+      "wrongOptions": {
+        "B": "Ez a monopólium (piaci erő) jellemzője; egyetlen gazda kínálata túl kicsi ahhoz, hogy a piaci árat megmozdítsa.",
+        "C": "A szabad belépés miatt hosszú távon az extraprofit eltűnik, a vállalatok csak normálprofitot érnek el.",
+        "D": "A termékdifferenciálás a monopolisztikus verseny jellemzője; itt a termék homogén."
+      }
+    },
+    {
+      "id": "5",
+      "kind": "tf",
+      "prompt": "Ugyanolyan keresleti és költségviszonyok mellett a profitmaximalizáló monopólium a tökéletes versenyhez képest magasabb áron, kisebb mennyiséget értékesít.",
+      "answer": "T",
+      "category": "ok-okozat",
+      "explanation": "Igaz. A monopólium a határbevétel és a határköltség egyenlőségénél (MR = MC) termel, és mivel nála MR < P, ez kisebb mennyiség, mint a tökéletes versenyben (P = MC), a keresleti görbéről leolvasott ár pedig magasabb. A különbség társadalmi (holtteher-) veszteséget okoz – ezért szabályozzák a b) szolgáltató árát."
+    },
+    {
+      "id": "6",
+      "kind": "text",
+      "prompt": "Hogyan nevezzük a c) részben leírt, a versenyt korlátozó, versenytársak közötti titkos megállapodást (egy-két szó)?",
+      "answer": [
+        "kartell",
+        "kartellmegállapodás",
+        "kartell-megállapodás",
+        "kartellezés",
+        "árkartell",
+        "ármegállapodás",
+        "versenykorlátozó megállapodás",
+        "titkos kartell"
+      ],
+      "maxWords": 2,
+      "category": "definicio",
+      "explanation": "Kartell. A kartell a versenytársak (jellemzően oligopolisták) összehangolt, a versenyt korlátozó megállapodása az árakról, a mennyiségről vagy a piacok felosztásáról. Célja, hogy együtt monopóliumként viselkedjenek, ezért a versenytörvény tiltja."
+    },
+    {
+      "id": "7",
+      "kind": "choice",
+      "prompt": "Melyik magyar intézmény feladata a c) részben leírt gyanú kivizsgálása?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Gazdasági Versenyhivatal (GVH)"
+        },
+        {
+          "key": "B",
+          "text": "Magyar Nemzeti Bank (MNB)"
+        },
+        {
+          "key": "C",
+          "text": "Központi Statisztikai Hivatal (KSH)"
+        },
+        {
+          "key": "D",
+          "text": "Nemzeti Adó- és Vámhivatal (NAV)"
+        }
+      ],
+      "answer": "A",
+      "category": "fogalomcsere",
+      "explanation": "Helyes: A. A versenyfelügyeletet Magyarországon a Gazdasági Versenyhivatal látja el: vizsgálja a kartelleket és a gazdasági erőfölénnyel való visszaélést, engedélyezi a vállalati összefonódásokat, és bírságot szabhat ki.",
+      "wrongOptions": {
+        "B": "A jegybank a monetáris politikáért, az árstabilitásért és a pénzügyi rendszer felügyeletéért felel, nem a termékpiaci versenyért.",
+        "C": "A KSH statisztikai adatokat gyűjt és közöl, hatósági jogköre a versenyügyekben nincs.",
+        "D": "A NAV az adók és vámok beszedéséért felel, nem a versenyjogi jogsértésekért."
+      }
+    },
+    {
+      "id": "8",
+      "kind": "choice",
+      "prompt": "Mi várható hosszú távon a d) kávézók piacán, ha a meglévő kávézók jelentős gazdasági (extra)profitot érnek el?",
+      "options": [
+        {
+          "key": "A",
+          "text": "Új kávézók nyílnak, ezért a meglévők vevőköre szűkül, és az extraprofit fokozatosan eltűnik (normálprofit marad)."
+        },
+        {
+          "key": "B",
+          "text": "Az extraprofit tartósan megmarad, mert a piacra nem lehet belépni."
+        },
+        {
+          "key": "C",
+          "text": "A kávézók egyetlen vállalattá olvadnak össze, mert a piac természetes monopólium."
+        },
+        {
+          "key": "D",
+          "text": "Az árak teljesen kiegyenlítődnek, és minden kávézó azonos terméket kínál."
+        }
+      ],
+      "answer": "A",
+      "category": "ok-okozat",
+      "explanation": "Helyes: A. Monopolisztikus versenyben a belépés viszonylag szabad: az extraprofit új vállalkozókat vonz, a kereslet megoszlik több eladó között, és hosszú távon a gazdasági profit nullára (normálprofitra) csökken.",
+      "wrongOptions": {
+        "B": "Ez a monopólium/magas belépési korlát esete; a leírás szerint új kávézót kevés tőkével lehet nyitni.",
+        "C": "Természetes monopólium akkor van, ha a hatalmas fix költség miatt egy vállalat olcsóbban látja el a piacot; egy kávézónál ez nem áll fenn.",
+        "D": "A termékdifferenciálás a monopolisztikus verseny lényege, a belépés nem szünteti meg; homogén termék és egységes ár a tökéletes versenyre jellemző."
+      }
+    }
+  ],
+  "suggestedMinutes": 15
+}

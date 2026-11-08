@@ -1,0 +1,185 @@
+{
+  "schemaVersion": 1,
+  "id": "gaz-rd-emelt-penzugyek-megtakaritas-hitel",
+  "subject": "gazdasagi-ismeretek",
+  "revision": 1,
+  "level": "emelt",
+  "source": "generated",
+  "topic": "penzugyek",
+  "title": "Megtakarítási és hitelajánlatok összehasonlítása",
+  "createdAt": "2026-11-08",
+  "tags": [
+    "altalanos"
+  ],
+  "section": "reading",
+  "type": "adatsor",
+  "instructions": "Olvassa el a megtakarítási és a hitelajánlatok adatait, majd válaszoljon a kérdésekre! A számításoknál csak az eredményt írja be (Ft-ban, illetve százalékban). A 0. a megoldott példa.",
+  "passage": {
+    "title": "Réka pénzügyi döntései",
+    "sourceNote": "Hipotetikus ajánlatok és adatok; a kamatokat és a díjakat nem a valós piacról vettük.",
+    "blocks": [
+      {
+        "heading": "Megtakarítás",
+        "text": "Réka 1 000 000 Ft-ot szeretne két évre félretenni. Három lehetőséget vizsgál:\n– Bankbetét: évi 5 % kamat, a kamatot az év végén jóváírják és hozzáadják a betéthez (tőkésítik), a második évben tehát a kamat is kamatozik. A betétet az Országos Betétbiztosítási Alap (OBA) a jogszabályban rögzített összeghatárig védi, ha a bank fizetésképtelenné válik.\n– Állampapír: évi fix 6 % kamat, amelyet minden év végén kifizetnek Rékának (nem tőkésítik); a futamidő végén a névértéket visszakapja.\n– Egyetlen vállalat részvénye: garantált hozam nincs, az árfolyam ingadozik; a cég osztalékot fizethet, de nem köteles."
+      },
+      {
+        "text": "Az elemzők a következő két évre évi 4 %-os inflációval számolnak."
+      },
+      {
+        "heading": "Hitel",
+        "text": "Réka bátyja 2 000 000 Ft-os személyi kölcsönt venne fel, azonos futamidőre. X bank ajánlata: évi 8 % ügyleti kamat, THM 11,5 %. Y bank ajánlata: évi 9 % ügyleti kamat, THM 10,2 %. A THM (teljes hiteldíj mutató) a kamaton felül a hitelhez kapcsolódó díjakat és költségeket (pl. folyósítási díj, kezelési költség) is tartalmazza, éves százalékban kifejezve."
+      }
+    ]
+  },
+  "example": {
+    "id": "0",
+    "kind": "text",
+    "prompt": "Mennyi kamatot írnak jóvá a bankbetéten az első év végén (Ft)?",
+    "answer": [
+      "50000",
+      "50 000",
+      "50000 Ft",
+      "50 000 Ft"
+    ],
+    "category": "szamitas",
+    "explanation": "50 000 Ft. Kamat = tőke × kamatláb = 1 000 000 Ft × 0,05 = 50 000 Ft."
+  },
+  "items": [
+    {
+      "id": "1",
+      "kind": "text",
+      "prompt": "Mekkora lesz a bankbetét összege a második év végén, a kamatokkal együtt (Ft)?",
+      "answer": [
+        "1102500",
+        "1 102 500",
+        "1102500 Ft",
+        "1 102 500 Ft"
+      ],
+      "category": "szamitas",
+      "explanation": "1 102 500 Ft. Kamatos kamattal: végösszeg = tőke × (1 + kamatláb)^n = 1 000 000 × 1,05² = 1 000 000 × 1,1025 = 1 102 500 Ft. Lépésenként: 1. év végén 1 050 000 Ft; 2. év kamata 1 050 000 × 0,05 = 52 500 Ft; összesen 1 102 500 Ft."
+    },
+    {
+      "id": "2",
+      "kind": "text",
+      "prompt": "Összesen mennyi kamatot kap Réka a két év alatt az állampapíron (Ft)?",
+      "answer": [
+        "120000",
+        "120 000",
+        "120000 Ft",
+        "120 000 Ft"
+      ],
+      "category": "szamitas",
+      "explanation": "120 000 Ft. A kamatot évente kifizetik, nem tőkésítik (egyszerű kamatozás): évente 1 000 000 × 0,06 = 60 000 Ft, két év alatt 2 × 60 000 = 120 000 Ft."
+    },
+    {
+      "id": "3",
+      "kind": "text",
+      "prompt": "Mekkora a bankbetét évi reálkamata (reálhozama) a közelítő képlettel számolva (nominális kamatláb − inflációs ráta), százalékban?",
+      "answer": [
+        "1",
+        "1%",
+        "1 %",
+        "1 százalék",
+        "0,96",
+        "0.96",
+        "0,96%",
+        "0.96%"
+      ],
+      "maxWords": 2,
+      "category": "szamitas",
+      "explanation": "≈ 1 %. Reálkamat ≈ nominális kamatláb − infláció = 5 % − 4 % = 1 %. (A pontos képlettel: 1,05 / 1,04 − 1 ≈ 0,96 %, ezt is elfogadjuk.) A reálkamat azt mutatja, mennyivel nő a megtakarítás vásárlóereje."
+    },
+    {
+      "id": "4",
+      "kind": "choice",
+      "prompt": "Melyik hitelajánlat olcsóbb a bátynak, és miért?",
+      "options": [
+        {
+          "key": "A",
+          "text": "X bank ajánlata, mert alacsonyabb az ügyleti kamata"
+        },
+        {
+          "key": "B",
+          "text": "Y bank ajánlata, mert alacsonyabb a THM-je"
+        },
+        {
+          "key": "C",
+          "text": "a kettő egyforma, mert a kamat és a THM különbsége kiegyenlíti egymást"
+        },
+        {
+          "key": "D",
+          "text": "nem dönthető el, mert a THM csak a bank belső mutatója"
+        }
+      ],
+      "answer": "B",
+      "category": "fogalomcsere",
+      "explanation": "Helyes: B. Azonos összegű és futamidejű hiteleknél a THM alapján kell összehasonlítani az ajánlatokat, mert a kamaton túl a hitelhez kapcsolódó díjakat és költségeket is tartalmazza, egységesen éves százalékban. Y THM-je (10,2 %) kisebb X-énél (11,5 %), tehát Y a teljes költséget tekintve olcsóbb – annak ellenére, hogy az ügyleti kamata magasabb.",
+      "wrongOptions": {
+        "A": "Az ügyleti kamat nem tartalmazza a díjakat; X díjai olyan magasak, hogy a THM-je mégis nagyobb – a kamat és a THM összekeverése tipikus hiba.",
+        "C": "A két THM eltér (11,5 % ≠ 10,2 %), tehát a teljes költség sem egyforma.",
+        "D": "A THM-et éppen az összehasonlíthatóság miatt kötelező feltüntetni a hirdetésekben és a szerződésekben; nem belső mutató."
+      }
+    },
+    {
+      "id": "5",
+      "kind": "tf",
+      "prompt": "Ha Réka a részvényt választja, és a vállalat árfolyama zuhan, a veszteségét az OBA megtéríti.",
+      "answer": "F",
+      "category": "fogalomcsere",
+      "explanation": "Hamis. Az OBA a bankbetéteket védi a bank fizetésképtelensége esetén, a jogszabályban rögzített összeghatárig. A részvény nem betét: az árfolyamveszteség a befektetés kockázata, amelyet senki nem térít meg – a magasabb várható hozam éppen ennek a kockázatnak az ára."
+    },
+    {
+      "id": "6",
+      "kind": "choice",
+      "prompt": "Réka végül a pénzét megosztja bankbetét, állampapír és több különböző ágazatban működő vállalat részvényei között. Melyik befektetési elvet alkalmazza?",
+      "options": [
+        {
+          "key": "A",
+          "text": "diverzifikáció (kockázatmegosztás)"
+        },
+        {
+          "key": "B",
+          "text": "tőkeáttétel"
+        },
+        {
+          "key": "C",
+          "text": "kamatos kamat"
+        },
+        {
+          "key": "D",
+          "text": "likviditás"
+        }
+      ],
+      "answer": "A",
+      "category": "fogalomcsere",
+      "explanation": "Helyes: A. A diverzifikáció azt jelenti, hogy a befektető különböző, egymással nem együtt mozgó befektetési formák között osztja meg a pénzét („ne tegyél minden tojást egy kosárba”), így egy-egy eszköz vesztesége nem sújtja a teljes vagyont.",
+      "wrongOptions": {
+        "B": "A tőkeáttétel kölcsönpénz bevonását jelenti a befektetésbe, ami a nyereséget és a veszteséget is felnagyítja – Réka nem vesz fel hitelt.",
+        "C": "A kamatos kamat a kamat tőkésítését jelenti; ez a betét kamatozási módja, nem a pénz megosztásának elve.",
+        "D": "A likviditás azt mutatja, milyen gyorsan és veszteség nélkül váltható egy befektetés készpénzre; ez a befektetések egyik tulajdonsága, nem a megosztás elve."
+      }
+    },
+    {
+      "id": "7",
+      "kind": "text",
+      "prompt": "Hogyan nevezzük a befektetéseknek azt a tulajdonságát, hogy milyen gyorsan és mekkora veszteség nélkül válthatók készpénzre?",
+      "answer": [
+        "likviditás",
+        "likviditása",
+        "a likviditás"
+      ],
+      "maxWords": 2,
+      "category": "definicio",
+      "explanation": "Likviditás. A befektetéseket három szempont szerint értékeljük: hozam, kockázat, likviditás (befektetési háromszög). A három egyszerre nem lehet kedvező: a nagy hozamú befektetés általában kockázatosabb vagy kevésbé likvid, a látra szóló betét likvid, de kis hozamú."
+    },
+    {
+      "id": "8",
+      "kind": "tf",
+      "prompt": "Ha az infláció a várt 4 % helyett évi 6 % lenne, a bankbetét reálhozama (a közelítő képlettel) negatív lenne.",
+      "answer": "T",
+      "category": "ok-okozat",
+      "explanation": "Igaz. Reálkamat ≈ 5 % − 6 % = −1 %: a betét forintösszege nő, de a vásárlóereje csökken, mert az árak gyorsabban emelkednek, mint a kamat. Ezért a döntéskor a reálhozamot kell nézni, nem a nominális kamatot."
+    }
+  ],
+  "suggestedMinutes": 12
+}

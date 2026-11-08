@@ -1,0 +1,94 @@
+{
+  "schemaVersion": 1,
+  "id": "gaz-wr-emelt-elemzes-komparativ-elony-ket-orszag",
+  "subject": "gazdasagi-ismeretek",
+  "revision": 1,
+  "level": "emelt",
+  "source": "generated",
+  "topic": "kulgazdasag",
+  "title": "Komparatív előny, specializáció és kereskedelem két ország adatain",
+  "createdAt": "2026-11-08",
+  "tags": [
+    "altalanos"
+  ],
+  "section": "writing",
+  "type": "elemzes",
+  "taskNumber": 2,
+  "situation": "Két ország, A és B kerékpárt és almát termel. Mindkét országban csak munkával termelnek, mindkettőben 100 munkanap áll rendelkezésre, és a munkaerő szabadon átcsoportosítható. Az adatok hipotetikusak.\n\nTáblázat (szöveges formában) – 1 munkanap alatt előállítható mennyiség:\n– A ország: 4 db kerékpár VAGY 12 mázsa alma\n– B ország: 1 db kerékpár VAGY 6 mázsa alma\n\nA kereskedelem előtt mindkét ország 50 munkanapot fordít kerékpárra és 50-et almára. A specializáció után A ország 75 munkanapot fordít kerékpárra és 25-öt almára, B ország mind a 100 munkanapot almatermelésre fordítja. Ezután a két ország kereskedik: B 300 mázsa almát ad A-nak 75 db kerékpárért.\n\nVálaszoljon az alábbi kérdésekre, a számításokat képlettel és mértékegységgel írja le!",
+  "points": [
+    {
+      "id": "p1",
+      "text": "Számítsa ki mindkét országban mindkét termék alternatív költségét!"
+    },
+    {
+      "id": "p2",
+      "text": "Melyik ország rendelkezik abszolút előnnyel, és melyik ország melyik termékben rendelkezik komparatív előnnyel? Indokolja!"
+    },
+    {
+      "id": "p3",
+      "text": "Számítsa ki a két ország együttes termelését a specializáció előtt és után! Mekkora a specializációból származó többlet?"
+    },
+    {
+      "id": "p4",
+      "text": "Milyen cserearányon kereskednek a felek? Mutassa meg számokkal, hogy a kereskedelem után mindkét ország jobban jár, mint előtte! Milyen határok között lehet a cserearány, hogy mindkét félnek megérje?"
+    },
+    {
+      "id": "p5",
+      "text": "A ország almatermelői védővámot követelnek a B-ből érkező almára. Értékelje a javaslatot a komparatív előny tana és a protekcionizmus következményei alapján!"
+    }
+  ],
+  "suggestedMinutes": 50,
+  "usefulPhrases": [
+    {
+      "en": "alternatív költség",
+      "hu": "egy termék egy egységéért feláldozott mennyiség a másik termékből (a legjobb feláldozott lehetőség)"
+    },
+    {
+      "en": "abszolút előny",
+      "hu": "az ország adott ráfordítással többet (egységnyit kevesebb ráfordítással) tud előállítani"
+    },
+    {
+      "en": "komparatív előny",
+      "hu": "az adott termék alternatív költsége kisebb, mint a másik országban"
+    },
+    {
+      "en": "cserearány",
+      "hu": "hány egység egyik termékért adnak egy egységet a másikból – a két alternatív költség között előnyös mindkét félnek"
+    },
+    {
+      "en": "protekcionizmus",
+      "hu": "a hazai termelők védelme vámmal, kvótával, támogatással – a fogyasztó és a hatékonyság rovására"
+    }
+  ],
+  "modelAnswer": {
+    "text": "1. Alternatív költségek\nAz alternatív költség = a feláldozott termék mennyisége / az előállított termék mennyisége (ugyanannyi munkanap alatt).\nA ország: 1 db kerékpár alternatív költsége = 12 mázsa / 4 db = 3 mázsa alma; 1 mázsa alma alternatív költsége = 4 db / 12 mázsa ≈ 0,33 db kerékpár (1/3 db).\nB ország: 1 db kerékpár alternatív költsége = 6 mázsa / 1 db = 6 mázsa alma; 1 mázsa alma alternatív költsége = 1 db / 6 mázsa ≈ 0,17 db kerékpár (1/6 db).\n\n2. Abszolút és komparatív előny\nAbszolút előnnyel A ország rendelkezik mindkét termékben, mert 1 munkanap alatt több kerékpárt (4 db > 1 db) és több almát (12 mázsa > 6 mázsa) is előállít. A komparatív előnyt az alternatív költség dönti el: a kerékpár A-ban 3 mázsa almába, B-ben 6 mázsa almába kerül, tehát A-nak a kerékpárban van komparatív előnye. Az alma B-ben 1/6 db kerékpárba, A-ban 1/3 db kerékpárba kerül, tehát B-nek az almában van komparatív előnye. Ricardo tétele szerint ezért a kereskedelem akkor is kölcsönösen előnyös, ha az egyik ország mindkét termékben hatékonyabb.\n\n3. Termelés a specializáció előtt és után\nElőtte:\nA ország: 50 nap × 4 db = 200 db kerékpár; 50 nap × 12 mázsa = 600 mázsa alma.\nB ország: 50 nap × 1 db = 50 db kerékpár; 50 nap × 6 mázsa = 300 mázsa alma.\nÖsszesen: 200 + 50 = 250 db kerékpár és 600 + 300 = 900 mázsa alma.\nUtána:\nA ország: 75 nap × 4 db = 300 db kerékpár; 25 nap × 12 mázsa = 300 mázsa alma.\nB ország: 0 db kerékpár; 100 nap × 6 mázsa = 600 mázsa alma.\nÖsszesen: 300 db kerékpár és 300 + 600 = 900 mázsa alma.\nA specializáció többlete: 300 – 250 = 50 db kerékpár, miközben az alma mennyisége változatlanul 900 mázsa. Ugyanannyi munkával tehát többet termel a két ország együtt.\n\n4. Cserearány és a kereskedelem haszna\nA cserearány: 300 mázsa alma / 75 db kerékpár = 4 mázsa alma / 1 db kerékpár.\nA kereskedelem után:\nA ország: 300 – 75 = 225 db kerékpár; 300 + 300 = 600 mázsa alma. Előtte 200 db és 600 mázsa volt, tehát almából ugyanannyi, kerékpárból 25 db-bal több jut neki.\nB ország: 0 + 75 = 75 db kerékpár; 600 – 300 = 300 mázsa alma. Előtte 50 db és 300 mázsa volt, tehát almából ugyanannyi, kerékpárból 25 db-bal több jut neki.\nA specializáció 50 db-os többlete így egyenlően oszlik meg: 25 + 25 = 50 db.\nA cserearány határai: A csak akkor ad el kerékpárt, ha 1 db-ért több almát kap, mint amennyit otthon feláldozna érte (3 mázsa), B pedig csak akkor vesz, ha kevesebbet kell adnia érte, mint amennyi a saját alternatív költsége (6 mázsa). Mindkét félnek tehát a 3 mázsa < 1 db kerékpár ára < 6 mázsa alma közötti cserearány előnyös; a 4 mázsa ebbe a sávba esik.\n\n5. A védővám értékelése\nA javaslat rövid távon az A-beli almatermelőknek kedvezne: a vám drágábbá tenné a B-ből érkező almát, így ők magasabb áron és többet adhatnának el. A komparatív előny tana szerint azonban A-nak a kerékpárban van komparatív előnye, az almát B olcsóbban, kisebb alternatív költséggel állítja elő. Ha a vám miatt A visszatérne a saját almatermeléshez, munkanapokat kellene elvonnia a kerékpárgyártástól, és elveszne a specializációból származó 25 db-os többlet. A vám terhét az A-beli fogyasztók viselnék drágább alma formájában, és B ellenintézkedése (például vám A kerékpárjaira) A exportját is visszavetné. Közgazdasági szempontból ezért a védővám összességében rontaná A helyzetét; ha a kormány segíteni akar az almatermelőknek, célzottabb eszköz az átképzés vagy az átállás támogatása. Az, hogy a termelők érdekét mennyire kell figyelembe venni, már normatív kérdés.",
+    "pointsCovered": [
+      {
+        "id": "p1",
+        "quote": "B ország: 1 db kerékpár alternatív költsége = 6 mázsa / 1 db = 6 mázsa alma"
+      },
+      {
+        "id": "p2",
+        "quote": "a kerékpár A-ban 3 mázsa almába, B-ben 6 mázsa almába kerül, tehát A-nak a kerékpárban van komparatív előnye"
+      },
+      {
+        "id": "p3",
+        "quote": "A specializáció többlete: 300 – 250 = 50 db kerékpár, miközben az alma mennyisége változatlanul 900 mázsa."
+      },
+      {
+        "id": "p4",
+        "quote": "Mindkét félnek tehát a 3 mázsa < 1 db kerékpár ára < 6 mázsa alma közötti cserearány előnyös; a 4 mázsa ebbe a sávba esik."
+      },
+      {
+        "id": "p5",
+        "quote": "Közgazdasági szempontból ezért a védővám összességében rontaná A helyzetét"
+      }
+    ],
+    "notes": [
+      "Számítás (9 pont): mind a négy alternatív költség képlettel, behelyettesítéssel és mértékegységgel szerepel; a törtek pontos értéke (1/3, 1/6) is megjelenik a kerekített mellett.",
+      "Adatértelmezés (12 pont): a specializáció előtti és utáni termelést országonként és összesítve is kiszámolja, és felismeri, hogy a többlet csak kerékpárban jelentkezik (+50 db), az alma mennyisége változatlan.",
+      "Következtetés (6 pont): a cserearányt kiszámolja (4 mázsa/db), országonként igazolja a kereskedelem hasznát (+25 db kerékpár mindkét félnek), és a két alternatív költséggel indokolja a cserearány határait (3 és 6 mázsa).",
+      "A védővám értékelése elkülöníti a pozitív elemzést (kinek jó, kinek rossz, ellenintézkedés, elvesző többlet) a normatív kérdéstől, és alternatív gazdaságpolitikai eszközt is javasol."
+    ]
+  }
+}

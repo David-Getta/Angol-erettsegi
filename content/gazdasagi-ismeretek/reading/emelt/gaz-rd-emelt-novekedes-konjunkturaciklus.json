@@ -1,0 +1,214 @@
+{
+  "schemaVersion": 1,
+  "id": "gaz-rd-emelt-novekedes-konjunkturaciklus",
+  "subject": "gazdasagi-ismeretek",
+  "revision": 1,
+  "level": "emelt",
+  "source": "generated",
+  "topic": "novekedes",
+  "title": "Konjunktúraciklus, növekedés és fenntarthatóság egy képzeletbeli országban",
+  "createdAt": "2026-11-08",
+  "tags": [
+    "altalanos"
+  ],
+  "section": "reading",
+  "type": "szovegertelmezes",
+  "instructions": "Olvassa el az esetleírást, majd válaszoljon a kérdésekre! A párosító kérdéseknél a közös listából válassza ki a konjunktúraciklus megfelelő szakaszát (minden szakasz legfeljebb egyszer szerepel, egy felesleges). A számításoknál csak az eredményt írja be. A 0. a megoldott példa.",
+  "passage": {
+    "title": "Dombföld gazdasága tíz év alatt",
+    "sourceNote": "Kitalált esetleírás; az ország és minden adat hipotetikus.",
+    "blocks": [
+      {
+        "text": "Dombföld reál-GDP-je az 1. évben 1 000 milliárd tallér volt. A 2–4. évben a vállalatok sokat beruháztak, új gépeket vásároltak, a foglalkoztatás nőtt, a munkanélküliségi ráta csökkent, és a 4. évre a reál-GDP elérte az 1 100 milliárd tallért."
+      },
+      {
+        "text": "Az 5. évben a reál-GDP 1 150 milliárd tallér volt. A gépek és a gyárak kapacitása szinte teljesen ki volt használva, a vállalatok egyre nehezebben találtak munkaerőt, a bérek és az árak a korábbinál gyorsabban emelkedtek."
+      },
+      {
+        "text": "A 6. évben kipukkant az ingatlanpiaci buborék. A bankok visszafogták a hitelezést, a háztartások kevesebbet fogyasztottak, a vállalatok elhalasztották a beruházásaikat. A reál-GDP az előző évihez képest 4 százalékkal csökkent, a munkanélküliség megugrott."
+      },
+      {
+        "text": "A 7. évben a kormány megnövelte a közberuházásokat (utak, iskolák felújítása), és ideiglenesen csökkentette a fogyasztási adókat; a jegybank mérsékelte az alapkamatot. A 8. évtől a termelés ismét bővült."
+      },
+      {
+        "text": "Az elemzők szerint Dombföld hosszú távú növekedését nem a konjunktúra hullámzása, hanem a termelési lehetőségek bővülése határozza meg: a munkaerő képzettsége, a beruházásokkal felhalmozott tőke és a technológiai fejlődés. Egy jelentés arra is figyelmeztet, hogy a gyors iparosodás a folyók szennyezésével járt: a halászok és a folyó mentén élők kárát a szennyező gyárak nem térítik meg, és ez a költség a GDP-ben sem jelenik meg."
+      },
+      {
+        "text": "A kormány ezért fenntartható fejlődési stratégiát fogadott el, amely a jelen nemzedék szükségleteit úgy kívánja kielégíteni, hogy ne veszélyeztesse a jövő nemzedékeinek esélyét saját szükségleteik kielégítésére."
+      }
+    ]
+  },
+  "options": [
+    {
+      "key": "A",
+      "text": "fellendülés (expanzió)"
+    },
+    {
+      "key": "B",
+      "text": "tetőpont (a konjunktúra csúcsa)"
+    },
+    {
+      "key": "C",
+      "text": "visszaesés (recesszió)"
+    },
+    {
+      "key": "D",
+      "text": "mélypont"
+    }
+  ],
+  "example": {
+    "id": "0",
+    "kind": "match",
+    "prompt": "Melyik ciklusszakaszban van Dombföld gazdasága az 5. évben?",
+    "answer": "B",
+    "category": "modell-ertelmezes",
+    "explanation": "B – tetőpont. A kapacitások szinte teljesen kihasználtak, munkaerőhiány van, a bérek és az árak gyorsulva nőnek: a gazdaság a ciklus csúcsán van, innen már csak visszaesés jöhet."
+  },
+  "items": [
+    {
+      "id": "1",
+      "kind": "match",
+      "prompt": "Melyik ciklusszakaszban van Dombföld gazdasága a 2–4. évben?",
+      "answer": "A",
+      "category": "modell-ertelmezes",
+      "explanation": "A – fellendülés (expanzió). Nőnek a beruházások és a foglalkoztatás, csökken a munkanélküliség, a reál-GDP 1 000-ről 1 100 milliárd tallérra emelkedik – ezek a fellendülés ismérvei.",
+      "wrongOptions": {
+        "B": "A tetőpontra a teljes kapacitáskihasználás és a munkaerőhiány jellemző; ez az 5. év, nem a 2–4. év.",
+        "C": "Visszaesésben a GDP csökken és a munkanélküliség nő – a 2–4. évben éppen fordítva történik.",
+        "D": "A mélypont a visszaesés alja, a legalacsonyabb kibocsátás és a legmagasabb munkanélküliség időszaka; a 2–4. évben a gazdaság bővül."
+      }
+    },
+    {
+      "id": "2",
+      "kind": "match",
+      "prompt": "Melyik ciklusszakaszban van Dombföld gazdasága a 6. évben?",
+      "answer": "C",
+      "category": "modell-ertelmezes",
+      "explanation": "C – visszaesés (recesszió). A hitelezés, a fogyasztás és a beruházás visszaesik, a reál-GDP 4 %-kal csökken, a munkanélküliség megugrik: a kibocsátás zsugorodik.",
+      "wrongOptions": {
+        "A": "Fellendülésben a GDP nő; a 6. évben csökken.",
+        "B": "A tetőpont az 5. év volt; a 6. évben már csökken a termelés.",
+        "D": "A mélypont a visszaesés végén lévő fordulópont, ahonnan a gazdaság újra bővülni kezd; a 6. évben a kibocsátás még csökken, tehát a visszaesés zajlik."
+      }
+    },
+    {
+      "id": "3",
+      "kind": "choice",
+      "prompt": "A 7. év intézkedései közül melyik tartozik a költségvetési (fiskális) politikához?",
+      "options": [
+        {
+          "key": "A",
+          "text": "a közberuházások növelése és a fogyasztási adók ideiglenes csökkentése"
+        },
+        {
+          "key": "B",
+          "text": "az alapkamat mérséklése"
+        },
+        {
+          "key": "C",
+          "text": "a bankok hitelezésének visszafogása"
+        },
+        {
+          "key": "D",
+          "text": "a bérek gyorsabb emelkedése"
+        }
+      ],
+      "answer": "A",
+      "category": "fogalomcsere",
+      "explanation": "Helyes: A. A fiskális politikát a kormány viszi a költségvetés bevételein (adók) és kiadásain (pl. közberuházások) keresztül. Recesszióban a kiadások növelése és az adók csökkentése élénkíti a keresletet (expanzív fiskális politika).",
+      "wrongOptions": {
+        "B": "Az alapkamat a jegybank eszköze, tehát monetáris politika, nem fiskális.",
+        "C": "Ez a bankok saját üzleti döntése a válságban, nem állami gazdaságpolitikai intézkedés.",
+        "D": "A béremelkedés piaci folyamat (a munkaerőhiány következménye az 5. évben), nem gazdaságpolitikai eszköz."
+      }
+    },
+    {
+      "id": "4",
+      "kind": "tf",
+      "prompt": "A jegybank kamatcsökkentése a 7. évben szigorító (kontraktív) monetáris politika volt.",
+      "answer": "F",
+      "category": "fogalomcsere",
+      "explanation": "Hamis. A kamatcsökkentés olcsóbbá teszi a hitelt, ösztönzi a fogyasztást és a beruházást, tehát lazító (expanzív) monetáris politika. Szigorító a kamatemelés lenne, amelyet inkább a túlfűtött, gyorsuló inflációjú szakaszban alkalmaznak."
+    },
+    {
+      "id": "5",
+      "kind": "text",
+      "prompt": "Hány százalékkal nőtt Dombföld reál-GDP-je az 1. évtől a 4. évig?",
+      "answer": [
+        "10",
+        "10%",
+        "10 %",
+        "10 százalék",
+        "10 százalékkal"
+      ],
+      "maxWords": 2,
+      "category": "szamitas",
+      "explanation": "10 %. Változás % = (új érték − régi érték) / régi érték × 100 = (1 100 − 1 000) / 1 000 × 100 = 100 / 1 000 × 100 = 10 %."
+    },
+    {
+      "id": "6",
+      "kind": "text",
+      "prompt": "Mekkora volt a reál-GDP a 6. évben (milliárd tallérban)?",
+      "answer": [
+        "1104",
+        "1 104",
+        "1104 milliárd",
+        "1 104 milliárd",
+        "1104 milliárd tallér",
+        "1 104 milliárd tallér"
+      ],
+      "maxWords": 4,
+      "category": "szamitas",
+      "explanation": "1 104 milliárd tallér. Az 5. évi 1 150 milliárd tallér 4 %-kal csökkent: 1 150 × (1 − 0,04) = 1 150 × 0,96 = 1 104 milliárd tallér (a csökkenés 46 milliárd tallér)."
+    },
+    {
+      "id": "7",
+      "kind": "choice",
+      "prompt": "Az esetleírás szerint melyik NEM a hosszú távú gazdasági növekedés forrása?",
+      "options": [
+        {
+          "key": "A",
+          "text": "a munkaerő képzettségének javulása"
+        },
+        {
+          "key": "B",
+          "text": "a beruházásokkal felhalmozott tőke"
+        },
+        {
+          "key": "C",
+          "text": "a technológiai fejlődés"
+        },
+        {
+          "key": "D",
+          "text": "a fogyasztási adók ideiglenes csökkentése"
+        }
+      ],
+      "answer": "D",
+      "category": "ok-okozat",
+      "explanation": "Helyes: D. Az ideiglenes adócsökkentés rövid távon, a kereslet élénkítésével hat a ciklusra (keresletoldali beavatkozás), de nem bővíti tartósan a termelési lehetőségeket. A hosszú távú növekedés forrásai a kínálati oldalon vannak: munka (és annak képzettsége), tőke, technológia.",
+      "wrongOptions": {
+        "A": "A képzettebb munkaerő termelékenyebb – a szöveg kifejezetten a hosszú távú növekedés forrásaként említi (humántőke).",
+        "B": "A beruházással felhalmozott tőke (gépek, épületek, infrastruktúra) bővíti a termelési lehetőségeket – a szöveg felsorolja.",
+        "C": "A technológiai fejlődés ugyanannyi munkával és tőkével több termelést tesz lehetővé – a szöveg felsorolja."
+      }
+    },
+    {
+      "id": "8",
+      "kind": "text",
+      "prompt": "Hogyan nevezzük azt a jelenséget, amikor a gyárak szennyezése a halászoknak és a folyó mentén élőknek kárt okoz, de ezt a kárt a gyárak nem térítik meg (a piaci ügyleten kívül álló harmadik felet éri)?",
+      "answer": [
+        "negatív externália",
+        "externália",
+        "negatív externális hatás",
+        "externális hatás",
+        "negatív külső hatás",
+        "negatív külső gazdasági hatás",
+        "külső gazdasági hatás"
+      ],
+      "maxWords": 4,
+      "category": "definicio",
+      "explanation": "Negatív externália (negatív külső gazdasági hatás): egy gazdasági szereplő tevékenysége piacon kívül, ellentételezés nélkül kárt okoz másoknak. Mivel a szennyező nem fizeti meg ezt a költséget, a piac a társadalmilag optimálisnál többet termel – ezért kell állami beavatkozás (pl. környezetvédelmi adó, szabályozás), és ezért nem mutatja a GDP a fejlődés valódi árát."
+    }
+  ],
+  "suggestedMinutes": 12
+}

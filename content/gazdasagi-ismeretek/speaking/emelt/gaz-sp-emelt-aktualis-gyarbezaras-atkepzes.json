@@ -1,0 +1,88 @@
+{
+  "schemaVersion": 1,
+  "id": "gaz-sp-emelt-aktualis-gyarbezaras-atkepzes",
+  "subject": "gazdasagi-ismeretek",
+  "revision": 1,
+  "level": "emelt",
+  "source": "generated",
+  "topic": "munkaero-piac",
+  "title": "Aktuális elemzés: gyárbezárás, átképzés és munkanélküliség egy régióban",
+  "createdAt": "2026-11-08",
+  "tags": [
+    "altalanos"
+  ],
+  "section": "speaking",
+  "type": "aktualis-elemzes",
+  "partNumber": 2,
+  "instructionsHu": "Értelmezze a forrásban szereplő (kitalált) hírt, és kapcsolja össze a munkaerőpiacról tanult fogalmakkal! Határozza meg, milyen fajta munkanélküliségről van szó, számolja ki a hír hipotetikus adataiból a régió munkanélküliségi rátáját, értékelje a tervezett foglalkoztatáspolitikai intézkedéseket, és különítse el a tényállításokat a véleményektől!",
+  "prompts": [
+    "Foglald össze a hír lényegét! Milyen fajta munkanélküliség keletkezik a gyárbezárás után, és miért?",
+    "Számold ki a hír adataiból a régió munkanélküliségi rátáját a bezárás előtt és után!",
+    "Miért nem tudnak az elbocsátott dolgozók azonnal elhelyezkedni a betöltetlen állásokban? Kapcsold a munkaerő különleges jellegéhez!",
+    "Értékeld a tervezett intézkedéseket: melyik aktív, melyik passzív eszköz, és melyik melyik problémára válasz?",
+    "Melyik állítás pozitív (tényállítás), melyik normatív (vélemény) a hírben? Fogalmazz meg saját következtetést!"
+  ],
+  "usefulPhrases": [
+    {
+      "en": "strukturális munkanélküliség",
+      "hu": "a munkaerő képzettsége vagy lakóhelye nem felel meg a keresletnek"
+    },
+    {
+      "en": "munkanélküliségi ráta",
+      "hu": "munkanélküliek / gazdaságilag aktívak × 100"
+    },
+    {
+      "en": "aktív foglalkoztatáspolitika",
+      "hu": "átképzés, állásközvetítés, bértámogatás, mobilitási támogatás"
+    },
+    {
+      "en": "pozitív – normatív állítás",
+      "hu": "ellenőrizhető tény – értékítélet („kellene”, „igazságtalan”)"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Forrás – kitalált hír",
+      "text": "Kitalált hír (a gyakorlás céljára írt szöveg): „Bezár a Völgyvidék régió legnagyobb munkáltatója, egy hagyományos autóalkatrész-gyár, mert a megrendelői áttértek az elektromos meghajtásra, amelyhez a gyár termékeire már nincs szükség. 3 000 dolgozó veszíti el az állását. A régióban eddig 100 ezer gazdaságilag aktív ember élt, közülük 5 ezer volt munkanélküli. Közben a régió egyik városában az akkumulátorgyártás és az informatika 2 000 betöltetlen állást kínál, ezekhez azonban más szakképzettség kell, és a gyár dolgozóinak többsége egy 60 km-re fekvő kisvárosban lakik. A megyei kormányhivatal ingyenes átképzési programot és ingázási támogatást hirdetett, a gyár pedig hat hónapig kiegészíti az elbocsátottak álláskeresési járadékát. Egy helyi képviselő szerint »igazságtalan, hogy a dolgozók fizetik meg a technológiaváltás árát, az államnak kellene megmentenie a gyárat«.”"
+    },
+    {
+      "title": "Definíciók",
+      "text": "Strukturális (szerkezeti) munkanélküliség: a munkaerő-kínálat és a munkaerő-kereslet összetétele (szakképzettség, földrajzi hely) eltér egymástól.\nMunkanélküliségi ráta: a munkanélküliek aránya a gazdaságilag aktív népességen belül."
+    }
+  ],
+  "keyPoints": [
+    "A hír lényege: a technológiaváltás (elektromos meghajtás) miatt megszűnik egy iparág egy régióban, miközben más ágazatokban betöltetlen állások vannak – a munkaerő-kereslet szerkezete átalakul.",
+    "A keletkező munkanélküliség strukturális (szerkezeti): a dolgozók képzettsége és lakóhelye nem felel meg az új munkahelyek igényeinek; nem ciklikus, mert nem a gazdaság általános visszaesése okozza.",
+    "Ráta a bezárás előtt: 5 000 / 100 000 × 100 = 5 %; utána (ha mindenki munkát keres és a régióban marad): 8 000 / 100 000 × 100 = 8 % – a nevező nem változik, mert a munkanélküliek is a gazdaságilag aktívak közé tartoznak.",
+    "A munkaerő különleges termelési tényező: nem lehet felhalmozni, raktározni, tetszés szerint átcsoportosítani – a képzettség és a lakóhely miatt az átállás időt és költséget igényel (földrajzi és szakmai mobilitás).",
+    "Aktív eszközök: az átképzés a szakképzettségi eltérésre, az ingázási támogatás a földrajzi eltérésre ad választ – ezek a strukturális munkanélküliséget közvetlenül csökkentik.",
+    "Passzív eszköz: az álláskeresési járadék (és a gyár kiegészítése) a kieső jövedelmet pótolja, a munkanélküliséget nem szünteti meg, de időt ad az átképzésre.",
+    "A 2 000 betöltetlen állás nem szívja fel a 3 000 elbocsátottat: még teljes átképzés esetén is maradna munkanélküliség, ezért új munkahelyek (beruházások) is kellenek.",
+    "Pozitív állítások: a bezárás oka, a létszámadatok, a meghirdetett programok; normatív állítás: a képviselő szerint „igazságtalan”, az „államnak kellene megmentenie” – értékítélet, nem ellenőrizhető tény.",
+    "Saját, normatívként jelölt következtetés: a versenyképtelen gyár mesterséges fenntartása helyett hatékonyabb lehet az átképzés és a mobilitás támogatása, mert a szerkezetváltás a gazdasági fejlődés része."
+  ],
+  "speakingSeconds": 480,
+  "prepSeconds": 1800,
+  "sampleAnswer": {
+    "turns": [
+      {
+        "speaker": "candidate",
+        "text": "A kitalált hír szerint egy régió legnagyobb munkáltatója, egy autóalkatrész-gyár bezár, mert a megrendelők áttértek az elektromos meghajtásra, és a termékeire már nincs szükség, így 3 000 ember veszíti el az állását. Ez a munkaerő-kereslet szerkezetének átalakulása: a régióban közben 2 000 betöltetlen állás van az akkumulátorgyártásban és az informatikában. A keletkező munkanélküliség strukturális, más néven szerkezeti: a munkaerő-kínálat és a munkaerő-kereslet összetétele eltér, mert a dolgozók szakképzettsége és lakóhelye nem felel meg az új munkahelyek igényeinek. Nem ciklikus munkanélküliségről van szó, mert nem a gazdaság általános visszaesése okozza, hanem egy technológiaváltás. A munkanélküliségi ráta a munkanélküliek aránya a gazdaságilag aktívakon belül. A bezárás előtt 5 000 osztva 100 000-rel, azaz 5 százalék volt. Ha mind a 3 000 elbocsátott munkát keres és a régióban marad, a munkanélküliek száma 8 000 lesz, a gazdaságilag aktívak száma viszont nem változik, mert a munkanélküliek is aktívak, így a ráta 8 százalékra nő. Az elbocsátottak azért nem tudnak azonnal elhelyezkedni, mert a munkaerő különleges termelési tényező: nem lehet raktározni és tetszés szerint átcsoportosítani. Egy gépsori munkásból nem lesz egyik napról a másikra informatikus, és a 60 kilométeres távolság is akadály. A tervezett intézkedések közül az átképzés és az ingázási támogatás aktív foglalkoztatáspolitikai eszköz: az egyik a szakmai, a másik a földrajzi eltérést csökkenti, vagyis közvetlenül a strukturális munkanélküliség ellen hat. A járadék és annak kiegészítése passzív eszköz, a kieső jövedelmet pótolja, de időt ad az átképzésre. Fontos, hogy a 2 000 állás akkor sem szívná fel mind a 3 000 embert, ha mindenkit átképeznének, tehát új beruházásokra is szükség van. A hírben pozitív, ellenőrizhető állítás a bezárás oka és a létszámadatok, a képviselő mondata viszont normatív, mert értékítéletet tartalmaz: „igazságtalan” és „kellene”. Véleményem szerint, és ez is normatív állítás, a gyár mesterséges megmentése helyett hatékonyabb az átképzés és a mobilitás támogatása, mert a szerkezetváltás a fejlődés része, a terheit viszont valóban enyhíteni kell."
+      },
+      {
+        "speaker": "examiner",
+        "text": "Hogyan változna a régió munkanélküliségi rátája, ha az elbocsátottak közül ezren feladnák a munkakeresést?"
+      },
+      {
+        "speaker": "candidate",
+        "text": "Akkor ők inaktívvá válnának, és kikerülnének a gazdaságilag aktívak közül. A munkanélküliek száma 7 000, az aktívaké 99 000 lenne, így a ráta 7 000 osztva 99 000-rel, körülbelül 7,1 százalék. A ráta tehát kisebb lenne, pedig senki sem talált munkát, ezért a foglalkoztatási adatokat is meg kell nézni."
+      }
+    ],
+    "notes": [
+      "A hír lényegét a strukturális munkanélküliség definíciójával kapcsolja össze, és megindokolja, miért nem ciklikus a munkanélküliség.",
+      "A rátákat a hír hipotetikus adataiból helyes nevezővel számolja (5 % → 8 %), a kiegészítő kérdésben pedig az elbátortalanodott munkanélküliek hatását is helyesen kiszámolja (7 000 / 99 000 ≈ 7,1 %).",
+      "Az intézkedéseket aktív és passzív eszközökre osztja, és mindegyiket a megfelelő problémához (szakmai, földrajzi eltérés, jövedelemkiesés) rendeli; észreveszi, hogy 2 000 állás nem fedezi a 3 000 elbocsátottat.",
+      "A pozitív és a normatív állításokat a hír konkrét mondatain választja szét, a saját véleményét kifejezetten normatívként jelöli."
+    ]
+  }
+}

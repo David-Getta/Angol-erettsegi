@@ -1,0 +1,188 @@
+{
+  "schemaVersion": 1,
+  "id": "gaz-rd-emelt-penz-bankrendszer-penzteremtes",
+  "subject": "gazdasagi-ismeretek",
+  "revision": 1,
+  "level": "emelt",
+  "source": "generated",
+  "topic": "penz",
+  "title": "A pénz, a kétszintű bankrendszer és a pénzteremtés – szövegértelmezés",
+  "createdAt": "2026-11-08",
+  "tags": [
+    "altalanos"
+  ],
+  "section": "reading",
+  "type": "szovegertelmezes",
+  "instructions": "Olvassa el a szöveget, majd oldja meg a feladatokat! A feleletválasztós kérdéseknél egy helyes választ jelöljön meg, az igaz–hamis állításoknál döntse el, igaz (T) vagy hamis (F) az állítás, a többi kérdésnél röviden, illetve számmal válaszoljon. A 0. a megoldott példa.",
+  "passage": {
+    "title": "Honnan jön a pénz?",
+    "sourceNote": "Tankönyvi összefoglaló; a számpélda hipotetikus, a tartalékráta nem a jelenleg érvényes szabályozást mutatja.",
+    "blocks": [
+      {
+        "text": "A cserekereskedelem (barter) csak akkor jön létre, ha mindkét fél éppen azt kínálja, amire a másiknak szüksége van – ez a szükségletek kettős egybeesésének problémája. Ezért alakult ki az árupénz (marha, só, kagyló), majd a jól osztható, tartós és nehezen hamisítható nemesfémpénz, később az érme és a kezdetben aranyra váltható papírpénz. A mai pénz hitelpénz: nincs belső értéke és nem váltható aranyra; értékét az adja, hogy mindenki elfogadja, és hogy a jegybank vigyáz a vásárlóerejére. A pénz egy része készpénz (bankjegy és érme), nagyobb része számlapénz, vagyis bankszámlán nyilvántartott betét."
+      },
+      {
+        "text": "A pénz funkciói: értékmérő (a javak értékét pénzben, árakban fejezzük ki), forgalmi eszköz (az adásvételt közvetíti, az áru és a pénz egyszerre cserél gazdát), fizetési eszköz (a pénz mozgása időben elválik az áruétól, például hitel törlesztésénél, adó- vagy bérfizetésnél), felhalmozási eszköz (a vásárlóerő későbbre tehető félre) és világpénz (nemzetközi elszámolásokban)."
+      },
+      {
+        "text": "Magyarországon 1987 óta kétszintű a bankrendszer. Az első szinten a jegybank, a Magyar Nemzeti Bank áll: kizárólagos joga a bankjegy- és érmekibocsátás, elsődleges célja az árstabilitás elérése és fenntartása, kezeli a devizatartalékot, és ő a bankok bankja. A második szinten a kereskedelmi bankok gyűjtik a háztartások és a vállalatok betéteit, hitelt nyújtanak nekik, és vezetik a számláikat. A jegybank tehát nem vállalkozásoknak és háztartásoknak, hanem a bankoknak nyújt hitelt."
+      },
+      {
+        "text": "A kereskedelmi bankok a hitelezéssel új számlapénzt teremtenek. Tegyük fel, hogy egy bankba 100 millió Ft új betét érkezik, és a kötelező tartalékráta 10%. A bank 10 millió Ft-ot tartalékként megtart, a többit hitelként kihelyezi. A hitelt felvevő vállalat kifizeti a beszállítóját, akinek a számláján – egy másik banknál – ez az összeg ismét betétként jelenik meg, és a folyamat folytatódik. Ha a bankok minden szabad pénzt kihiteleznek, és minden hitel betétként visszatér a bankrendszerbe, az elméleti pénzmultiplikátor a tartalékráta reciproka, a betétállomány legfeljebb az eredeti betét ennyiszeresére nőhet."
+      }
+    ]
+  },
+  "example": {
+    "id": "0",
+    "kind": "text",
+    "prompt": "Hány millió Ft-ot helyezhet ki hitelként az első bank a 100 millió Ft-os betétből?",
+    "answer": [
+      "90",
+      "90 millió",
+      "90 millió Ft",
+      "90 000 000",
+      "90 000 000 Ft"
+    ],
+    "category": "szamitas",
+    "explanation": "90 millió Ft. A 10%-os kötelező tartalékráta miatt 100 × 0,1 = 10 millió Ft-ot tartalékként meg kell tartani, a szabad tartalék 100 − 10 = 90 millió Ft, ezt helyezheti ki hitelként."
+  },
+  "items": [
+    {
+      "id": "1",
+      "kind": "choice",
+      "prompt": "Egy diák a büfében egy szendvicset vesz, és azonnal, készpénzzel fizet érte. A pénz melyik funkciója jelenik meg?",
+      "options": [
+        { "key": "A", "text": "értékmérő" },
+        { "key": "B", "text": "forgalmi eszköz" },
+        { "key": "C", "text": "fizetési eszköz" },
+        { "key": "D", "text": "felhalmozási eszköz" }
+      ],
+      "answer": "B",
+      "category": "fogalomcsere",
+      "explanation": "Helyes: B. A szöveg szerint forgalmi eszköz a pénz, amikor az adásvételt közvetíti, és az áru meg a pénz egyszerre cserél gazdát – a szendvics és a készpénz ugyanabban a pillanatban mozdul.",
+      "evidence": "az áru és a pénz egyszerre cserél gazdát",
+      "wrongOptions": {
+        "A": "Értékmérő funkcióról akkor beszélünk, amikor a szendvics értékét árban fejezzük ki (pl. árcédula); itt maga a csere történik meg.",
+        "C": "Fizetési eszköz a pénz akkor, ha mozgása időben elválik az áruétól (hitel, adó, bér) – itt nincs időbeli eltérés.",
+        "D": "Felhalmozási eszköz akkor, ha a pénzt félretesszük, hogy később költsük el; a diák most költi el."
+      }
+    },
+    {
+      "id": "2",
+      "kind": "choice",
+      "prompt": "Egy vállalkozás az év közben elvégzett munkáért a következő hónapban fizeti ki dolgozóinak a bért. A pénz melyik funkciója ez?",
+      "options": [
+        { "key": "A", "text": "forgalmi eszköz" },
+        { "key": "B", "text": "világpénz" },
+        { "key": "C", "text": "értékmérő" },
+        { "key": "D", "text": "fizetési eszköz" }
+      ],
+      "answer": "D",
+      "category": "fogalomcsere",
+      "explanation": "Helyes: D. A munkát már elvégezték, a pénz később mozdul: a pénz mozgása időben elválik a szolgáltatásétól, ez a fizetési eszköz funkció (a szöveg a bérfizetést külön is említi).",
+      "evidence": "a pénz mozgása időben elválik az áruétól, például hitel törlesztésénél, adó- vagy bérfizetésnél",
+      "wrongOptions": {
+        "A": "Forgalmi eszköz esetén az áru (szolgáltatás) és a pénz egyszerre cserél gazdát; itt a fizetés később történik.",
+        "B": "Világpénz a nemzetközi elszámolásokban betöltött szerep; a hazai bérkifizetés nem ilyen.",
+        "C": "Az értékmérő funkció a bér összegének kifejezése lenne, nem maga a későbbi kifizetés."
+      }
+    },
+    {
+      "id": "3",
+      "kind": "text",
+      "prompt": "Hogyan nevezi a szöveg azt a nehézséget, amely miatt a barter nehézkes? (legfeljebb 5 szó)",
+      "answer": [
+        "a szükségletek kettős egybeesése",
+        "szükségletek kettős egybeesése",
+        "a szükségletek kettős egybeesésének problémája",
+        "szükségletek kettős egybeesésének problémája",
+        "kettős egybeesés",
+        "a kettős egybeesés",
+        "kettős egybeesés problémája",
+        "a kettős egybeesés problémája"
+      ],
+      "maxWords": 5,
+      "category": "definicio",
+      "explanation": "A szükségletek kettős egybeesése: a cserére csak akkor kerül sor, ha mindkét fél éppen azt kínálja, amire a másiknak szüksége van. Ezt a nehézséget oldja meg a pénz mint általános csereeszköz.",
+      "evidence": "ez a szükségletek kettős egybeesésének problémája"
+    },
+    {
+      "id": "4",
+      "kind": "tf",
+      "prompt": "A modern pénz értékét az adja, hogy a jegybank a forgalomban lévő pénzt arannyal fedezi.",
+      "answer": "F",
+      "category": "definicio",
+      "explanation": "Hamis. A mai pénz hitelpénz: nincs belső értéke és nem váltható aranyra; értékét az általános elfogadottság és a jegybank árstabilitási politikája (a vásárlóerő megőrzése) adja.",
+      "evidence": "nincs belső értéke és nem váltható aranyra"
+    },
+    {
+      "id": "5",
+      "kind": "choice",
+      "prompt": "Az alábbiak közül melyik az a feladat, amely a kétszintű bankrendszerben a jegybanké, és NEM tartozik a kereskedelmi bankokéhoz?",
+      "options": [
+        { "key": "A", "text": "lakossági betétek gyűjtése" },
+        { "key": "B", "text": "lakáshitel nyújtása egy családnak" },
+        { "key": "C", "text": "bankjegyek kibocsátása" },
+        { "key": "D", "text": "egy vállalkozás bankszámlájának vezetése" }
+      ],
+      "answer": "C",
+      "category": "csoportositas",
+      "explanation": "Helyes: C. A bankjegy- és érmekibocsátás a jegybank (MNB) kizárólagos joga; a kereskedelmi bankok ezt nem végezhetik.",
+      "evidence": "kizárólagos joga a bankjegy- és érmekibocsátás",
+      "wrongOptions": {
+        "A": "A betétgyűjtés a második szint, a kereskedelmi bankok feladata; a jegybank nem gyűjt lakossági betétet.",
+        "B": "A háztartások hitelezése kereskedelmi banki feladat; a jegybank csak a bankoknak nyújt hitelt.",
+        "D": "A vállalati és lakossági számlavezetés szintén a kereskedelmi bankok tevékenysége."
+      }
+    },
+    {
+      "id": "6",
+      "kind": "tf",
+      "prompt": "A szöveg szerint Magyarországon a kétszintű bankrendszer 1987 óta működik.",
+      "answer": "T",
+      "category": "definicio",
+      "explanation": "Igaz. A kétszintű bankrendszer 1987. január 1-jén jött létre: ekkor vált ki az MNB-ből a kereskedelmi banki tevékenység, és az MNB tisztán jegybankként működik tovább.",
+      "evidence": "Magyarországon 1987 óta kétszintű a bankrendszer."
+    },
+    {
+      "id": "7",
+      "kind": "text",
+      "prompt": "Mekkora a szöveg példájában az elméleti pénzmultiplikátor?",
+      "answer": [
+        "10",
+        "tíz",
+        "10-szeres",
+        "tízszeres"
+      ],
+      "category": "szamitas",
+      "explanation": "10. Az elméleti pénzmultiplikátor a kötelező tartalékráta reciproka: 1 / 0,1 = 10.",
+      "evidence": "az elméleti pénzmultiplikátor a tartalékráta reciproka"
+    },
+    {
+      "id": "8",
+      "kind": "choice",
+      "prompt": "Mi történne a pénzteremtés elméleti maximumával, ha a kötelező tartalékráta (minden más változatlansága mellett) 10%-ról 20%-ra nőne?",
+      "options": [
+        { "key": "A", "text": "A multiplikátor 5-re csökkenne, a betétállomány legfeljebb 500 millió Ft-ra nőhetne." },
+        { "key": "B", "text": "A multiplikátor 20-ra nőne, a betétállomány legfeljebb 2000 millió Ft-ra nőhetne." },
+        { "key": "C", "text": "A multiplikátor 10 maradna, mert a tartalékráta csak az első bankra vonatkozik." },
+        { "key": "D", "text": "A bankok egyáltalán nem tudnának hitelezni." }
+      ],
+      "answer": "A",
+      "category": "ok-okozat",
+      "explanation": "Helyes: A. Magasabb tartalékrátánál a bankok minden betétből kevesebbet hitelezhetnek ki: a multiplikátor 1 / 0,2 = 5, így a 100 millió Ft-os eredeti betétből legfeljebb 5 × 100 = 500 millió Ft betétállomány lehet. Ezért a tartalékráta emelése szigorító (pénzmennyiséget csökkentő) lépés.",
+      "evidence": "az elméleti pénzmultiplikátor a tartalékráta reciproka",
+      "wrongOptions": {
+        "B": "Fordított összefüggés: a multiplikátor a tartalékráta reciproka, így a ráta emelésekor csökken, nem nő (1 / 0,2 = 5, nem 20).",
+        "C": "A tartalékráta minden bankra és minden betétre vonatkozik, ezért a multiplikátor megváltozik.",
+        "D": "20%-os tartalékráta mellett a betétek 80%-a továbbra is kihitelezhető, tehát a hitelezés nem szűnik meg."
+      }
+    }
+  ],
+  "glossary": [
+    { "term": "barter", "meaning": "cserekereskedelem: áru cseréje áruért, pénz közvetítése nélkül" },
+    { "term": "számlapénz", "meaning": "bankszámlán nyilvántartott betét, amellyel átutalással, kártyával lehet fizetni" },
+    { "term": "kötelező tartalékráta", "meaning": "a betéteknek az a hányada, amelyet a bank nem hitelezhet ki, hanem tartalékként tart" },
+    { "term": "pénzmultiplikátor", "meaning": "megmutatja, hogy egységnyi új tartalékból legfeljebb hányszoros betétállomány (számlapénz) jöhet létre" }
+  ]
+}

@@ -1,0 +1,83 @@
+{
+  "schemaVersion": 1,
+  "id": "gaz-sp-emelt-aktualis-kamatemeles-inflacio",
+  "subject": "gazdasagi-ismeretek",
+  "revision": 1,
+  "level": "emelt",
+  "source": "generated",
+  "topic": "inflacio",
+  "title": "Aktuális elemzés: kamatemelés a gyorsuló infláció miatt",
+  "createdAt": "2026-11-08",
+  "tags": [
+    "altalanos"
+  ],
+  "section": "speaking",
+  "type": "aktualis-elemzes",
+  "partNumber": 2,
+  "instructionsHu": "Értelmezze a forrásban szereplő (kitalált) hírt, és kapcsolja össze a tanult fogalmakkal! Mutassa be, miért döntött így a jegybank, milyen csatornákon hat a kamatemelés, számítsa ki a reálkamat változását, és vesse össze a jegybank és a kormány szándékait! Válassza szét a pozitív és a normatív állításokat, és fogalmazzon meg indokolt saját következtetést!",
+  "prompts": [
+    "Foglald össze a hír lényegét! Milyen típusú infláció jelei látszanak a hírben (költség-, keresleti, importált infláció, várakozások)?",
+    "Miért emelt kamatot a jegybank? Mutasd be lépésenként, milyen csatornákon hat a kamatemelés az inflációra!",
+    "Számítsd ki a közelítő reálkamatot a döntés előtt és után! Mit jelent az előjelváltás a megtakarítók és a hitelfelvevők számára?",
+    "Hogyan viszonyul egymáshoz a kormány tervezett kiadásnövelése és a jegybank döntése? Mi a fiskális és a monetáris politika összehangolásának jelentősége?",
+    "Válogasd szét a hírben szereplő pozitív és normatív állításokat, és fogalmazz meg indokolt saját véleményt!"
+  ],
+  "usefulPhrases": [
+    {
+      "en": "szigorító (restriktív) monetáris politika",
+      "hu": "kamatemelés a kereslet és az infláció mérséklésére"
+    },
+    {
+      "en": "a kamatemelés hatása késéssel jelentkezik",
+      "hu": "a monetáris transzmisszió időigénye"
+    },
+    {
+      "en": "„A hír pozitív állítása…, normatív állítása…”",
+      "hu": "a tény és a vélemény elkülönítése"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Forrás – kitalált hír",
+      "text": "Kitalált hír (a gyakorlás céljára írt szöveg): „A jegybank Monetáris Tanácsa keddi ülésén 1 százalékponttal, 6,5%-ról 7,5%-ra emelte az alapkamatot. A friss adatok szerint a fogyasztói árak egy év alatt 6,8%-kal nőttek, ami jóval a 3%-os inflációs cél és a ±1 százalékpontos toleranciasáv fölött van. A drágulást főként az energia és az élelmiszer áremelkedése, valamint a hazai valuta gyengülése okozza, a bérek pedig gyorsan nőnek. A jegybank közleménye szerint »a kamatemelés célja az inflációs várakozások megfékezése«. A kormány közben a jövő évi költségvetésben a nyugdíjak és a közszféra béreinek emelését tervezi. A vállalkozói szövetség elnöke szerint »a jegybanknak inkább a gazdaság növekedését kellene támogatnia, mert a drága hitel visszafogja a beruházásokat«. Egy elemző hozzáteszi: »A kamatemelés hatása általában csak több negyedév múlva jelenik meg az árakban.«”"
+    },
+    {
+      "title": "Kapcsolódás a tananyaghoz",
+      "text": "Reálkamat ≈ nominális kamat − infláció. Kamatemelés → drágább hitel, vonzóbb megtakarítás, erősödő hazai valuta → csökkenő kereslet, olcsóbb import → lassuló infláció."
+    }
+  ],
+  "keyPoints": [
+    "A hír lényege: a jegybank 6,5%-ról 7,5%-ra emelte az alapkamatot, mert a 6,8%-os infláció jóval a 3% ± 1 százalékpontos célsáv fölött van.",
+    "Az infláció jellege: költséginfláció (energia, élelmiszer), importált infláció (a hazai valuta gyengülése), a gyors béremelkedés miatt keresleti elemek és az ár–bér spirál veszélye; a jegybank kifejezetten az inflációs várakozásokat akarja megfékezni.",
+    "Hatásmechanizmus: hitelkamat-csatorna (drágább hitel → kevesebb fogyasztási és beruházási hitel), megtakarítási csatorna, árfolyamcsatorna (erősödő valuta → olcsóbb import), várakozási csatorna (hiteles jegybank → mérsékeltebb ár- és béremelési szándék).",
+    "Reálkamat a döntés előtt ≈ 6,5% − 6,8% = −0,3% (negatív), utána ≈ 7,5% − 6,8% = +0,7% (pozitív): a megtakarítás reálértéke már nem csökken, a hitelfelvétel reálértékben is drágább lett.",
+    "Szakpolitikai feszültség: a kormány kiadásnövelése (expanzív fiskális politika) növeli a keresletet, a jegybank szigorítása (restriktív monetáris politika) csökkenti – az ellentétes irányú politikák gyengítik egymás hatását, ezért fontos az összehangolás; a jegybank függetlensége az árstabilitást védi.",
+    "Az árstabilitás ára: a drágább hitel lassíthatja a beruházást és a növekedést – a vállalkozói szövetség érve egy valós átváltásra (trade-off) utal.",
+    "Pozitív állítások: „a fogyasztói árak egy év alatt 6,8%-kal nőttek”; „a kamatemelés hatása általában csak több negyedév múlva jelenik meg” – ellenőrizhetők.",
+    "Normatív állítás: „a jegybanknak inkább a gazdaság növekedését kellene támogatnia” – értékítélet, a „kellene” jelzi (indoklása részben pozitív állítás: a drága hitel visszafogja a beruházásokat).",
+    "Saját következtetés a tény és a vélemény elkülönítésével, a jegybank elsődleges céljának (árstabilitás) figyelembevételével."
+  ],
+  "speakingSeconds": 480,
+  "prepSeconds": 1800,
+  "sampleAnswer": {
+    "turns": [
+      {
+        "speaker": "candidate",
+        "text": "A forrás egy kitalált hír: a jegybank 1 százalékponttal, 6,5-ről 7,5 százalékra emelte az alapkamatot, mert az infláció 6,8 százalék, ami jóval a 3 százalékos cél és a plusz-mínusz 1 százalékpontos toleranciasáv fölött van. A hír szerint a drágulást az energia és az élelmiszer áremelkedése okozza, ez költséginfláció, a valuta gyengülése pedig importált inflációt jelent, mert drágulnak az importtermékek. A gyorsan növő bérek a keresletet is fűtik, és fennáll az ár–bér spirál veszélye: ha mindenki további drágulásra számít, magasabb bért kér, a vállalatok pedig ezt továbbhárítják az árakba. Ezért mondja a jegybank, hogy a kamatemelés célja a várakozások megfékezése. A kamatemelés több csatornán hat. Drágulnak a hitelek, így kevesebb lakás- és fogyasztási hitelt vesznek fel, és a vállalatok is elhalasztanak beruházásokat. A betét vonzóbb lesz, többen takarítanak meg. A magasabb kamat a valutát is erősítheti, ami olcsóbbá teszi az importot. Mindez mérsékli a keresletet és az inflációt. A reálkamat a döntés előtt közelítőleg 6,5 mínusz 6,8, vagyis mínusz 0,3 százalék volt, utána 7,5 mínusz 6,8, azaz plusz 0,7 százalék. A negatív reálkamat azt jelentette, hogy a megtakarítás vásárlóereje csökkent, most pozitív lett, ez ösztönzi a megtakarítást és fékezi a hitelfelvételt. Feszültséget látok a kormány tervei és a jegybank döntése között: a nyugdíjak és a közszféra béreinek emelése expanzív fiskális politika, növeli a keresletet, a jegybank viszont restriktív monetáris politikával éppen csökkenteni akarja. Ha a két politika ellentétes irányba húz, gyengítik egymás hatását, és a jegybanknak még magasabb kamatra lehet szüksége. Ha szétválasztom az állításokat: pozitív, ellenőrizhető állítás, hogy az árak 6,8 százalékkal nőttek, és hogy a kamatemelés hatása több negyedév múlva jelenik meg. A vállalkozói szövetség elnökének mondata, hogy a jegybanknak a növekedést kellene támogatnia, normatív, értékítélet; az indoklása viszont, hogy a drága hitel visszafogja a beruházást, pozitív és igaz is. Saját véleményem, ami szintén normatív, hogy a döntés indokolt, mert a jegybank elsődleges célja az árstabilitás, és a tartósan magas infláció a megtakarítóknak és a rögzített jövedelműeknek többet árt, mint egy átmeneti lassulás."
+      },
+      {
+        "speaker": "examiner",
+        "text": "Mit tehetne a kormány, hogy segítse az infláció csökkentését?"
+      },
+      {
+        "speaker": "candidate",
+        "text": "Visszafoghatná a kiadások növelését, vagy időben elhalaszthatná a béremeléseket, hogy a költségvetés ne fűtse tovább a keresletet. Ez restriktív fiskális politika lenne, amely egy irányba húz a jegybankkal, így kisebb kamatemelés is elég lenne. Közben célzott támogatással védhetné a leginkább rászorulókat, például a nyugdíjasokat, akiknek a reáljövedelme a leginkább csökken."
+      }
+    ],
+    "notes": [
+      "A hír lényegét és a döntés okát pontosan összefoglalja, az infláció típusait a hír konkrét elemeihez köti (energia – költség, valutagyengülés – importált, bérek – várakozások).",
+      "A reálkamatot a döntés előtt és után helyesen számolja ki, és megmagyarázza az előjelváltás jelentőségét; a kamatemelés csatornáit ok–okozati láncként mutatja be.",
+      "A fiskális és a monetáris politika feszültségét felismeri, a pozitív és normatív állításokat idézetekkel szétválasztja, saját véleményét normatívként jelöli és indokolja."
+    ]
+  }
+}

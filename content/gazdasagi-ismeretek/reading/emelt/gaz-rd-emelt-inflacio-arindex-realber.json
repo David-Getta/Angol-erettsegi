@@ -1,0 +1,244 @@
+{
+  "schemaVersion": 1,
+  "id": "gaz-rd-emelt-inflacio-arindex-realber",
+  "subject": "gazdasagi-ismeretek",
+  "revision": 1,
+  "level": "emelt",
+  "source": "generated",
+  "topic": "inflacio",
+  "title": "Árindex, reálbér, reálkamat: egy kitalált ország öt éve",
+  "createdAt": "2026-11-08",
+  "tags": [
+    "altalanos"
+  ],
+  "section": "reading",
+  "type": "adatsor",
+  "instructions": "Olvassa el a kitalált ország adatsorát, majd válaszoljon a kérdésekre! A számítási feladatoknál csak az eredményt írja be (az indexeket és a százalékokat egy tizedesjegyre kerekítve). A 0. a megoldott példa.",
+  "passage": {
+    "title": "Árak, bérek és kamatok egy kitalált országban",
+    "blocks": [
+      {
+        "text": "A táblázat egy kitalált ország öt egymást követő évének adatait mutatja. Mindkét index az előző év azonos időszakához viszonyít (előző év = 100,0)."
+      },
+      {
+        "heading": "Fogyasztóiár-index (előző év = 100,0)",
+        "text": "1. év: 102,0 | 2. év: 105,0 | 3. év: 110,0 | 4. év: 104,0 | 5. év: 103,0"
+      },
+      {
+        "heading": "Nominálbér-index (előző év = 100,0)",
+        "text": "1. év: 106,0 | 2. év: 108,0 | 3. év: 107,8 | 4. év: 109,2 | 5. év: 106,0"
+      },
+      {
+        "heading": "Kamatok",
+        "text": "A 3. évben a jegybanki alapkamat 9% volt. Az 5. évben a bankok egyéves lekötött betétre évi 5% kamatot fizettek. A reálkamatot a közelítő képlettel számoljuk: reálkamat ≈ nominális kamat − inflációs ráta."
+      }
+    ]
+  },
+  "example": {
+    "id": "0",
+    "kind": "text",
+    "prompt": "Hány százalékos volt az infláció a 2. évben?",
+    "answer": [
+      "5",
+      "5%",
+      "5 %",
+      "5,0",
+      "5.0",
+      "5,0%",
+      "5.0%"
+    ],
+    "category": "adatleolvasas",
+    "explanation": "5%. A fogyasztóiár-index 105,0, vagyis az árszínvonal az előző évhez képest 5%-kal emelkedett: inflációs ráta = index − 100 = 105,0 − 100 = 5%."
+  },
+  "items": [
+    {
+      "id": "1",
+      "kind": "choice",
+      "prompt": "Hogyan nevezzük a 4. évi árszínvonal-változást a 3. évhez viszonyítva?",
+      "options": [
+        {
+          "key": "A",
+          "text": "defláció"
+        },
+        {
+          "key": "B",
+          "text": "dezinfláció"
+        },
+        {
+          "key": "C",
+          "text": "stagfláció"
+        },
+        {
+          "key": "D",
+          "text": "hiperinfláció"
+        }
+      ],
+      "answer": "B",
+      "category": "fogalomcsere",
+      "evidence": "3. év: 110,0 | 4. év: 104,0",
+      "explanation": "Helyes: B. Dezinfláció: az infláció üteme lassul (10%-ról 4%-ra), de az árak továbbra is emelkednek, mert az index 100 fölött van.",
+      "wrongOptions": {
+        "A": "Defláció az árszínvonal általános csökkenése, ekkor az index 100 alatt lenne; a 4. évben az árak 4%-kal nőttek.",
+        "C": "A stagfláció a gazdasági stagnálás (vagy visszaesés) és a magas infláció együttes jelenléte; a táblázat nem tartalmaz termelési adatot, és az infláció éppen mérséklődött.",
+        "D": "A hiperinfláció rendkívül gyors, ellenőrizhetetlen áremelkedés (havonta 50% fölött is lehet); a 4%-os éves ütem ennek a közelében sincs."
+      }
+    },
+    {
+      "id": "2",
+      "kind": "text",
+      "prompt": "Mekkora volt a reálbérindex a 3. évben (előző év = 100,0)?",
+      "answer": [
+        "98",
+        "98,0",
+        "98.0",
+        "98%",
+        "98 %",
+        "98,0%",
+        "98.0%"
+      ],
+      "category": "szamitas",
+      "explanation": "98,0. Reálbérindex = nominálbér-index / fogyasztóiár-index × 100 = 107,8 / 110,0 × 100 = 98,0. A nominálbér 7,8%-kal nőtt, de az árak 10%-kal, így a bérekből vásárolható javak mennyisége 2%-kal csökkent."
+    },
+    {
+      "id": "3",
+      "kind": "text",
+      "prompt": "Mekkora volt a reálbérindex a 4. évben (előző év = 100,0)?",
+      "answer": [
+        "105",
+        "105,0",
+        "105.0",
+        "105%",
+        "105 %",
+        "105,0%",
+        "105.0%"
+      ],
+      "category": "szamitas",
+      "explanation": "105,0. Reálbérindex = 109,2 / 104,0 × 100 = 105,0 (ellenőrzés: 104 × 1,05 = 109,2). A reálbér 5%-kal nőtt, mert a nominálbér gyorsabban emelkedett, mint az árszínvonal."
+    },
+    {
+      "id": "4",
+      "kind": "choice",
+      "prompt": "Ki járt rosszul a 3. évben a vártnál jóval magasabb infláció miatt?",
+      "options": [
+        {
+          "key": "A",
+          "text": "aki a 3. év elején fix kamatozású hitelt vett fel"
+        },
+        {
+          "key": "B",
+          "text": "aki a 3. év elején egy évre, évi 5%-os fix kamatra helyezte el a megtakarítását"
+        },
+        {
+          "key": "C",
+          "text": "az állam, amelynek fix kamatozású adóssága van"
+        },
+        {
+          "key": "D",
+          "text": "aki a megtakarítását a 3. év elején lakásba fektette, amelynek ára az infláció ütemében nőtt"
+        }
+      ],
+      "answer": "B",
+      "category": "ok-okozat",
+      "explanation": "Helyes: B. A váratlan infláció a hitelezőktől (megtakarítóktól) az adósok felé csoportosít át jövedelmet. Az 5%-os fix betéti kamat 10%-os infláció mellett ≈ −5% reálkamatot jelent: a megtakarítás vásárlóereje csökkent.",
+      "wrongOptions": {
+        "A": "Az adós jól jár: a fix törlesztőrészlet és a tartozás reálértéke az infláció miatt csökken.",
+        "C": "Az állam is adós, ezért fix kamatozású adóssága reálértékben csökken – nyertese a váratlan inflációnak.",
+        "D": "Ha a lakás ára az infláció ütemében nőtt, a vagyon reálértéke megmaradt; a reáleszközök védelmet adnak az infláció ellen."
+      }
+    },
+    {
+      "id": "5",
+      "kind": "text",
+      "prompt": "Hány százalékkal emelkedett az árszínvonal a 3. és a 4. év együttesen (a 2. év végéhez képest)?",
+      "answer": [
+        "14,4",
+        "14.4",
+        "14,4%",
+        "14.4%",
+        "14,4 %",
+        "14.4 %"
+      ],
+      "category": "szamitas",
+      "explanation": "14,4%. Az indexeket össze kell szorozni (láncolás): 1,10 × 1,04 = 1,144, vagyis az árszínvonal 14,4%-kal nőtt. Az inflációs ráták összeadása (10% + 4% = 14%) hibás, mert a 4. évi 4% már a 3. évben megemelkedett árszínvonalra vonatkozik."
+    },
+    {
+      "id": "6",
+      "kind": "tf",
+      "prompt": "A 3. évben a 9%-os alapkamat mellett a reálkamat pozitív volt.",
+      "answer": "F",
+      "category": "fogalomcsere",
+      "evidence": "A 3. évben a jegybanki alapkamat 9% volt.",
+      "explanation": "Hamis. Reálkamat ≈ nominális kamat − infláció = 9% − 10% = −1%, tehát negatív. A magas nominális kamat még nem jelent pozitív reálkamatot: a pénz vásárlóerejének változását is figyelembe kell venni."
+    },
+    {
+      "id": "7",
+      "kind": "text",
+      "prompt": "Mekkora volt az 5. évben az egyéves betét reálkamata a közelítő képlettel (%)?",
+      "answer": [
+        "2",
+        "2%",
+        "2 %",
+        "2,0",
+        "2.0",
+        "2,0%",
+        "2.0%",
+        "1,9",
+        "1.9",
+        "1,9%",
+        "1.9%"
+      ],
+      "category": "szamitas",
+      "explanation": "≈ 2%. Reálkamat ≈ nominális kamat − inflációs ráta = 5% − 3% = 2%. (A pontos képlettel 1,05 / 1,03 − 1 ≈ 1,9%, ezt is elfogadjuk.)"
+    },
+    {
+      "id": "8",
+      "kind": "choice",
+      "prompt": "A 3. évi magas infláció mérséklésére melyik jegybanki lépés illik a legjobban?",
+      "options": [
+        {
+          "key": "A",
+          "text": "az alapkamat csökkentése"
+        },
+        {
+          "key": "B",
+          "text": "állampapírok vásárlása a nyíltpiaci műveletek keretében"
+        },
+        {
+          "key": "C",
+          "text": "a kötelező tartalékráta csökkentése"
+        },
+        {
+          "key": "D",
+          "text": "az alapkamat emelése"
+        }
+      ],
+      "answer": "D",
+      "category": "ok-okozat",
+      "explanation": "Helyes: D. Szigorító (restriktív) monetáris politika: a magasabb alapkamat drágítja a hiteleket és vonzóbbá teszi a megtakarítást, ezért mérséklődik a fogyasztási és beruházási kereslet, és ezzel az árak emelkedésének üteme.",
+      "wrongOptions": {
+        "A": "A kamatcsökkentés olcsóbbá teszi a hitelt, növeli a keresletet, ezért inkább gyorsítaná az inflációt (laza monetáris politika).",
+        "B": "Ha a jegybank állampapírt vásárol, pénzt juttat a bankrendszerbe, ez növeli a pénzmennyiséget – lazító lépés.",
+        "C": "Alacsonyabb tartalékráta mellett a bankok többet hitelezhetnek, nő a pénzmennyiség – szintén lazító lépés."
+      }
+    }
+  ],
+  "glossary": [
+    {
+      "term": "fogyasztóiár-index",
+      "meaning": "a háztartások által vásárolt jellemző termékek és szolgáltatások (fogyasztói kosár) árának változását mérő mutató"
+    },
+    {
+      "term": "nominálbér",
+      "meaning": "a pénzben kifejezett, folyó áron mért bér"
+    },
+    {
+      "term": "reálkamat",
+      "meaning": "az inflációval csökkentett kamat: a megtakarítás vásárlóerejének tényleges növekedése"
+    },
+    {
+      "term": "alapkamat",
+      "meaning": "a jegybank által meghatározott irányadó kamat, a monetáris politika fő eszköze"
+    }
+  ],
+  "suggestedMinutes": 12
+}

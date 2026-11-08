@@ -1,0 +1,228 @@
+{
+  "schemaVersion": 1,
+  "id": "gaz-vc-emelt-penz-fogyaszto-vallalkozas",
+  "subject": "gazdasagi-ismeretek",
+  "revision": 1,
+  "level": "emelt",
+  "source": "generated",
+  "topic": "fogyaszto",
+  "title": "Pénz, fogyasztói döntés, vállalkozás – fogalmak",
+  "createdAt": "2026-11-08",
+  "tags": [
+    "altalanos"
+  ],
+  "section": "vocabulary",
+  "type": "deck",
+  "cards": [
+    {
+      "term": "barter",
+      "meaning": "Cserekereskedelem: áru közvetlen cseréje áruért, pénz közvetítése nélkül; feltétele a szükségletek kettős egybeesése.",
+      "example": "A barter csak akkor jön létre, ha mindkét fél azt kínálja, amire a másiknak szüksége van.",
+      "collocation": "↔ pénzközvetítéses adásvétel"
+    },
+    {
+      "term": "árupénz",
+      "meaning": "Olyan áru, amelyet általános csereeszközként fogadtak el, és saját használati értéke is van (pl. marha, só, kagyló).",
+      "example": "A só sok helyen árupénzként szolgált, mert mindenki szívesen elfogadta."
+    },
+    {
+      "term": "hitelpénz",
+      "meaning": "A modern pénz: nincs belső értéke, nem váltható aranyra, hitelezés útján kerül forgalomba; értékét az általános elfogadottság és a jegybank árstabilitási politikája adja.",
+      "example": "A forint hitelpénz, ezért vásárlóerejét a jegybank árstabilitási politikája védi.",
+      "collocation": "készpénz + számlapénz"
+    },
+    {
+      "term": "számlapénz",
+      "meaning": "Bankszámlán nyilvántartott betét, amellyel átutalással vagy bankkártyával lehet fizetni; a pénzmennyiség nagyobb része ilyen.",
+      "example": "A bér jóváírásával a munkavállaló számlapénzhez jut, amellyel kártyával fizethet.",
+      "collocation": "↔ készpénz"
+    },
+    {
+      "term": "értékmérő funkció",
+      "meaning": "A pénz azon funkciója, hogy a javak értékét egységesen, pénzben (árakban) fejezzük ki, így összehasonlíthatóvá válnak.",
+      "example": "Az árcédula a pénz értékmérő funkcióját mutatja."
+    },
+    {
+      "term": "forgalmi eszköz",
+      "meaning": "A pénz funkciója, amikor az adásvételt közvetíti, és az áru és a pénz egyidejűleg cserél gazdát (Á–P–Á).",
+      "example": "Amikor a piacon azonnal fizetünk az almáért, a pénz forgalmi eszköz.",
+      "collocation": "↔ fizetési eszköz"
+    },
+    {
+      "term": "fizetési eszköz",
+      "meaning": "A pénz funkciója, amikor mozgása időben elválik az áru (szolgáltatás) mozgásától: hiteltörlesztés, adó-, bér- vagy részletfizetés.",
+      "example": "A havi bér kifizetésekor a pénz fizetési eszközként működik.",
+      "collocation": "↔ forgalmi eszköz"
+    },
+    {
+      "term": "kétszintű bankrendszer",
+      "meaning": "Olyan bankrendszer, amelyben az első szinten a jegybank, a második szinten a kereskedelmi bankok állnak; Magyarországon 1987 óta működik.",
+      "example": "A kétszintű bankrendszerben a háztartások nem a jegybanknál, hanem kereskedelmi bankoknál vezetik a számlájukat.",
+      "collocation": "jegybank – kereskedelmi bankok"
+    },
+    {
+      "term": "jegybank",
+      "meaning": "Az első szintű bank (Magyarországon az MNB): elsődleges célja az árstabilitás, kizárólagos joga a bankjegy- és érmekibocsátás, kezeli a devizatartalékot, a bankok bankja és végső hitelezője.",
+      "example": "A jegybank nem a vállalatoknak, hanem a kereskedelmi bankoknak nyújt hitelt.",
+      "collocation": "a bankok bankja"
+    },
+    {
+      "term": "kötelező tartalékráta",
+      "meaning": "A betéteknek a jegybank által előírt hányada, amelyet a kereskedelmi bank nem hitelezhet ki, hanem tartalékként köteles tartani.",
+      "example": "Ha nő a kötelező tartalékráta, a bankok kevesebb hitelt nyújthatnak.",
+      "collocation": "monetáris politikai eszköz"
+    },
+    {
+      "term": "pénzmultiplikátor",
+      "meaning": "Megmutatja, hogy egységnyi új tartalékból (betétből) a bankrendszer hitelezéssel elméletileg legfeljebb hányszoros betétállományt (számlapénzt) hozhat létre; egyszerű modellben a tartalékráta reciproka.",
+      "example": "10%-os tartalékráta mellett a pénzmultiplikátor elméleti értéke 10.",
+      "collocation": "= 1 / tartalékráta"
+    },
+    {
+      "term": "M1 pénzaggregátum",
+      "meaning": "A legszűkebb pénzmennyiség-mutató: a forgalomban lévő készpénz és a látra szóló (folyószámla-) betétek összege.",
+      "example": "Ha a háztartások egy évre lekötik a folyószámlájukon lévő pénzt, az M1 pénzaggregátum csökken, az M2 nem változik.",
+      "collocation": "M1 ⊂ M2 ⊂ M3"
+    },
+    {
+      "term": "összhaszon",
+      "meaning": "Egy jószág adott mennyiségének elfogyasztásából származó teljes hasznosság (szükségletkielégítés).",
+      "example": "Az összhaszon addig nő, amíg a határhaszon pozitív."
+    },
+    {
+      "term": "határhaszon",
+      "meaning": "Az utolsóként elfogyasztott (pótlólagos) egység által okozott összhaszon-növekmény.",
+      "example": "A negyedik szelet pizza határhaszna sokkal kisebb, mint az elsőé.",
+      "collocation": "MU = ΔTU / ΔQ"
+    },
+    {
+      "term": "Gossen I. törvénye",
+      "meaning": "A csökkenő határhaszon törvénye: ugyanabból a jószágból minden további elfogyasztott egység egyre kisebb határhaszonnal jár.",
+      "example": "Gossen I. törvénye magyarázza, miért fizetnénk kevesebbet a harmadik fagylaltgombócért, mint az elsőért.",
+      "collocation": "csökkenő határhaszon"
+    },
+    {
+      "term": "Gossen II. törvénye",
+      "meaning": "A fogyasztói optimum feltétele: a fogyasztó akkor maximalizálja hasznosságát, ha elkölti jövedelmét, és az egy pénzegységre jutó határhaszon minden jószágnál egyenlő (MU_X/P_X = MU_Y/P_Y).",
+      "example": "Gossen II. törvénye szerint át kell csoportosítani a kiadást oda, ahol egy forint nagyobb határhaszonnal jár.",
+      "collocation": "MU_X / P_X = MU_Y / P_Y"
+    },
+    {
+      "term": "költségvetési korlát",
+      "meaning": "A fogyasztó adott jövedelméből adott árak mellett megvásárolható jószágkombinációk határa (I = P_X·X + P_Y·Y); a jövedelem változása párhuzamosan eltolja, egy ár változása elfordítja.",
+      "example": "A jövedelem növekedése kifelé tolja a költségvetési korlátot.",
+      "collocation": "költségvetési egyenes"
+    },
+    {
+      "term": "keresleti függvény",
+      "meaning": "Megmutatja, hogy egy jószágból különböző árak mellett mekkora mennyiséget kívánnak megvásárolni a fogyasztók, minden más tényező változatlansága mellett.",
+      "example": "A keresleti függvény grafikonja, a keresleti görbe általában negatív meredekségű.",
+      "collocation": "ceteris paribus"
+    },
+    {
+      "term": "kereslet törvénye",
+      "meaning": "Ceteris paribus egy jószág árának emelkedésével a keresett mennyiség csökken, árának csökkenésével nő.",
+      "example": "A kereslet törvénye szerint a drágább mozijegyből kevesebbet vesznek."
+    },
+    {
+      "term": "helyettesítő javak",
+      "meaning": "Olyan javak, amelyek ugyanazt a szükségletet elégítik ki; az egyik árának emelkedése növeli a másik keresletét.",
+      "example": "A vaj és a margarin helyettesítő javak: ha drágul a vaj, nő a margarin kereslete.",
+      "collocation": "szubsztitúció"
+    },
+    {
+      "term": "kiegészítő javak",
+      "meaning": "Együtt fogyasztott javak; az egyik árának emelkedése csökkenti a másik keresletét.",
+      "example": "A nyomtató és a festékpatron kiegészítő javak.",
+      "collocation": "komplementer javak"
+    },
+    {
+      "term": "alsóbbrendű jószág",
+      "meaning": "Olyan jószág, amelynek kereslete a jövedelem növekedésével csökken (a fogyasztók jobb minőségű helyettesítőre térnek át).",
+      "example": "A legolcsóbb felvágott sok háztartásban alsóbbrendű jószág: a jövedelem növekedésével kevesebbet vesznek belőle.",
+      "collocation": "↔ normál jószág"
+    },
+    {
+      "term": "árrugalmasság",
+      "meaning": "A kereslet árrugalmassága: a keresett mennyiség százalékos változása osztva az ár százalékos változásával; megmutatja, mennyire érzékeny a kereslet az árra.",
+      "example": "Az árrugalmasság −0,4, ha 25%-os áremelés 10%-kal csökkenti a keresett mennyiséget.",
+      "collocation": "|e| > 1 rugalmas, |e| < 1 rugalmatlan"
+    },
+    {
+      "term": "rugalmatlan kereslet",
+      "meaning": "Olyan kereslet, amelynél az árrugalmasság abszolút értéke 1-nél kisebb: a keresett mennyiség kisebb arányban változik, mint az ár; ilyenkor az áremelés növeli az összkiadást.",
+      "example": "A gyógyszerek iránti kereslet többnyire rugalmatlan kereslet.",
+      "collocation": "szükségleti, nehezen helyettesíthető javak"
+    },
+    {
+      "term": "elállási jog",
+      "meaning": "A fogyasztó joga, hogy távollévők között (pl. webáruházban) kötött szerződéstől a termék kézhezvételétől számított 14 napon belül indoklás nélkül elálljon.",
+      "example": "Az elállási jog alapján a hibátlan, online vásárolt terméket is vissza lehet küldeni a határidőn belül.",
+      "collocation": "fogyasztóvédelem"
+    },
+    {
+      "term": "vállalkozás",
+      "meaning": "Üzletszerűen, rendszeresen, saját kockázatra, haszonszerzés céljából végzett gazdasági tevékenység.",
+      "example": "A vállalkozás kockázatvállalás: a tulajdonos veszteséget is elszenvedhet.",
+      "collocation": "↔ vállalat (a gazdálkodó szervezet)"
+    },
+    {
+      "term": "gazdasági profit",
+      "meaning": "A bevétel és az összes költség különbsége, ahol a költségek között az explicit (kifizetett) és az implicit (alternatív) költségek is szerepelnek.",
+      "example": "A gazdasági profit kisebb a számviteli profitnál, mert a feláldozott fizetést is levonjuk.",
+      "collocation": "= számviteli profit − implicit költségek"
+    },
+    {
+      "term": "korlátlan felelősség",
+      "meaning": "A tag (tulajdonos) a vállalkozás vagyonával nem fedezett tartozásokért saját magánvagyonával is felel.",
+      "example": "A közkereseti társaság tagjait korlátlan felelősség terheli.",
+      "collocation": "korlátlan és egyetemleges"
+    },
+    {
+      "term": "betéti társaság",
+      "meaning": "Olyan gazdasági társaság, amelyben legalább egy beltag korlátlanul felel a társaság tartozásaiért, a kültag pedig főszabály szerint csak a vagyoni hozzájárulását kockáztatja.",
+      "example": "A betéti társaság beltagja a saját házával is felelhet a cég tartozásaiért.",
+      "collocation": "beltag – kültag"
+    },
+    {
+      "term": "korlátolt felelősségű társaság",
+      "meaning": "Törzsbetétekből álló törzstőkével alapított gazdasági társaság, amelynek tagjai főszabály szerint nem felelnek a társaság tartozásaiért; egyszemélyes is lehet.",
+      "example": "A korlátolt felelősségű társaság tagja csak a törzsbetétét kockáztatja.",
+      "collocation": "kft., törzstőke"
+    },
+    {
+      "term": "részvénytársaság",
+      "meaning": "Részvényekre osztott alaptőkével működő gazdasági társaság, amelynek részvényesei főszabály szerint nem felelnek a társaság tartozásaiért; lehet zártkörű (zrt.) vagy nyilvános (nyrt.).",
+      "example": "A nyilvános részvénytársaság részvényeit a tőzsdén bárki megvásárolhatja.",
+      "collocation": "zrt. – nyrt."
+    },
+    {
+      "term": "szövetkezet",
+      "meaning": "Változó tőkéjű és taglétszámú szervezet, amely a tagok személyes közreműködésével és vagyoni hozzájárulásával a tagok gazdasági és társadalmi szükségleteinek kielégítésére jön létre.",
+      "example": "A gazdák szövetkezetet alapítottak, hogy közösen vásároljanak gépeket és értékesítsék a terményt."
+    },
+    {
+      "term": "SWOT-elemzés",
+      "meaning": "Stratégiai elemzés, amely a vállalkozás belső erősségeit és gyengeségeit, valamint a külső környezet lehetőségeit és veszélyeit veti össze.",
+      "example": "A SWOT-elemzés szerint az új versenytárs megjelenése veszély, a jól képzett munkaerő erősség.",
+      "collocation": "S, W belső – O, T külső"
+    },
+    {
+      "term": "marketingmix",
+      "meaning": "A vállalkozás piaci eszközeinek összehangolt rendszere: termék, ár, értékesítési csatorna (hely) és marketingkommunikáció (4P).",
+      "example": "A marketingmix ár elemébe tartozik a diákkedvezmény bevezetése.",
+      "collocation": "4P: product, price, place, promotion"
+    },
+    {
+      "term": "üzleti terv",
+      "meaning": "A vállalkozás céljait, piacát, működését és pénzügyeit bemutató írásos terv (vezetői összefoglaló, piac- és versenytárselemzés, marketingterv, működési és pénzügyi terv, kockázatok); a hitelkérelem és a pályázat alapja.",
+      "example": "A bank az üzleti terv alapján dönti el, megéri-e hitelt adni az induló cégnek."
+    },
+    {
+      "term": "idegen tőke",
+      "meaning": "A vállalkozás olyan finanszírozási forrása, amelyet nem a tulajdonosok adnak, és amelyet vissza kell fizetni, általában kamattal együtt (bankhitel, kölcsön, lízing, szállítói hitel).",
+      "example": "Az idegen tőke bevonása kamatköltséggel jár, de nem csökkenti a tulajdonosok irányítási jogát.",
+      "collocation": "↔ saját tőke"
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "schemaVersion": 1,
+  "id": "gaz-sp-emelt-tetel-vallalkozas-formak-mukodes",
+  "subject": "gazdasagi-ismeretek",
+  "revision": 1,
+  "level": "emelt",
+  "source": "generated",
+  "topic": "vallalkozas",
+  "title": "A vállalkozások fogalma, céljai, formái, környezete és indítása",
+  "createdAt": "2026-11-08",
+  "tags": [
+    "altalanos"
+  ],
+  "section": "speaking",
+  "type": "tetel",
+  "partNumber": 1,
+  "instructionsHu": "Fejtse ki a tételt! Határozza meg a vállalat és a vállalkozás fogalmát, mutassa be a vállalkozások célrendszerét, a fő vállalkozási formákat a tulajdonosok felelőssége szerint, a vállalkozás mikro- és makrokörnyezetét, a marketingmixet, végül a vállalkozás indításának lépéseit, az üzleti tervet és a finanszírozási forrásokat! A mellékelt forrást használja fel. Felkészülési idő: 30 perc.",
+  "prompts": [
+    "Mi a különbség a vállalat és a vállalkozás fogalma között? Milyen céljai lehetnek egy vállalkozásnak a profiton kívül?",
+    "Mi a különbség a számviteli és a gazdasági profit között?",
+    "Csoportosítsd a vállalkozási formákat a tulajdonosok felelőssége szerint (egyéni vállalkozó, kkt., bt., kft., zrt., nyrt., szövetkezet)!",
+    "Mutasd be a vállalkozás mikro- és makrokörnyezetét, és helyezd el a környezeti tényezőket egy SWOT-elemzésben!",
+    "Mi a marketingmix (4P)? Mondj mindegyik elemre példát!",
+    "Milyen részei vannak az üzleti tervnek, és milyen saját és idegen források közül választhat egy induló vállalkozás? Alkalmazd a forrás esetére!"
+  ],
+  "usefulPhrases": [
+    { "en": "korlátlan és egyetemleges felelősség", "hu": "a tag saját vagyonával is felel a társaság teljes tartozásáért, a hitelező bármelyik tagtól követelheti" },
+    { "en": "gazdasági profit", "hu": "bevétel − explicit költségek − implicit (alternatív) költségek" },
+    { "en": "SWOT", "hu": "erősségek, gyengeségek (belső) – lehetőségek, veszélyek (külső)" },
+    { "en": "4P: product, price, place, promotion", "hu": "termék, ár, értékesítési csatorna, marketingkommunikáció" }
+  ],
+  "sources": [
+    {
+      "title": "Forrás – Egy induló vállalkozás (hipotetikus eset)",
+      "text": "Két barát kerékpárszervizt és -kölcsönzőt nyitna egy turisztikai kisvárosban. Megtakarításuk összesen 4 millió Ft, az induláshoz azonban 10 millió Ft kellene (helyiség felújítása, szerszámok, 40 kerékpár). Azon gondolkodnak, hogy közkereseti vagy korlátolt felelősségű társaságot alapítsanak. A városba egyre több kerékpáros turista érkezik, de a szomszéd településen tavaly nyílt egy hasonló kölcsönző."
+    }
+  ],
+  "keyPoints": [
+    "A vállalat a gazdaság alapegysége: termelési tényezőket kombinálva javakat állít elő piaci értékesítésre; a vállalkozás üzletszerűen, rendszeresen, saját kockázatra, haszonszerzés céljából végzett gazdasági tevékenység.",
+    "Célrendszer: a profit (hosszú távon a profitmaximalizálás) mellett a túlélés, a növekedés, a piaci részesedés, a vevői elégedettség és a társadalmi felelősségvállalás (CSR).",
+    "Számviteli profit = bevétel − explicit (kifizetett) költségek; gazdasági profit = számviteli profit − implicit költségek (a saját tőke, munka, eszközök alternatív költsége).",
+    "Egyéni vállalkozó: egy természetes személy, teljes vagyonával korlátlanul felel; kkt.: minden tag korlátlanul és egyetemlegesen felel; bt.: legalább egy beltag korlátlanul, a kültag főszabály szerint nem felel.",
+    "Kft.: törzstőke a tagok törzsbetéteiből, a tagok főszabály szerint nem felelnek a társaság tartozásaiért, egyszemélyes is lehet; rt.: részvényekre osztott alaptőke – a zrt. részvényei nyilvánosan nem forgalmazhatók, az nyrt.-éi tőzsdére vezethetők.",
+    "Szövetkezet: változó tőkéjű és taglétszámú szervezet, amely a tagok gazdasági és társadalmi szükségleteinek kielégítésére jön létre a tagok személyes közreműködésével és vagyoni hozzájárulásával.",
+    "Mikrokörnyezet: vevők, beszállítók, versenytársak, pénzintézetek, helyi közösség és hatóságok; makrokörnyezet (PEST): politikai-jogi, gazdasági, társadalmi-demográfiai, technológiai (és természeti) tényezők.",
+    "SWOT: erősségek és gyengeségek belső, lehetőségek és veszélyek külső tényezők; a forrásban a növekvő turistaszám lehetőség, az új szomszédos kölcsönző veszély.",
+    "Marketingmix (4P): termék, ár, értékesítési csatorna (hely), marketingkommunikáció (promóció).",
+    "Üzleti terv: vezetői összefoglaló, termék/szolgáltatás, piac- és versenytárselemzés, marketingterv, működési terv, pénzügyi terv, kockázatok; források: saját (tőkebefizetés, visszaforgatott nyereség) és idegen (bankhitel, lízing, kölcsön), továbbá támogatás (pályázat) és kockázati tőke; a forrásban 6 millió Ft-ot kell külső forrásból előteremteni."
+  ],
+  "speakingSeconds": 720,
+  "prepSeconds": 1800,
+  "sampleAnswer": {
+    "turns": [
+      {
+        "speaker": "candidate",
+        "text": "A tételem a vállalkozások fogalma, céljai, formái és környezete. A vállalat a gazdaság alapegysége, amely termelési tényezőket kombinálva javakat állít elő piaci értékesítésre. A vállalkozás pedig üzletszerűen, rendszeresen, saját kockázatra és haszonszerzés céljából végzett gazdasági tevékenység. A legfontosabb cél a profit, hosszú távon a profitmaximalizálás, de egy vállalkozás célja lehet a túlélés, a növekedés, a piaci részesedés növelése, a vevők elégedettsége vagy a társadalmi felelősségvállalás is. A profitnál meg kell különböztetni a számviteli profitot, amely a bevétel és a kifizetett, explicit költségek különbsége, és a gazdasági profitot, amelynél az implicit költségeket is levonjuk, például azt a fizetést, amelyről a tulajdonos lemond, amikor a saját cégében dolgozik. A vállalkozási formákat a tulajdonosok felelőssége szerint csoportosítom. Az egyéni vállalkozó egyedül, teljes vagyonával korlátlanul felel. A közkereseti társaság minden tagja korlátlanul és egyetemlegesen felel, a betéti társaságban a beltag korlátlanul, a kültag viszont főszabály szerint nem felel a tartozásokért. A korlátolt felelősségű társaság tagjai a törzsbetétjüket kockáztatják, és egyszemélyes kft. is alapítható. A részvénytársaság alaptőkéje részvényekre oszlik: a zártkörű rt. részvényei nyilvánosan nem forgalmazhatók, a nyilvános rt. részvényei tőzsdére vezethetők. A szövetkezet a tagok szükségleteinek kielégítésére jön létre, változó tőkével és taglétszámmal. A vállalkozás mikrokörnyezete a vevők, beszállítók, versenytársak és bankok köre, a makrokörnyezet a politikai-jogi, gazdasági, társadalmi és technológiai tényezőké. A forrásban a növekvő turistaszám lehetőség, a szomszéd település új kölcsönzője veszély; erősség lehet a két barát szakértelme, gyengeség a kevés saját tőke. A marketingmix négy eleme a termék, például jó minőségű kerékpárok, az ár, például családi kedvezmény, a hely, vagyis a szerviz elhelyezkedése és az online foglalás, és a promóció, például szórólap a szállodákban. Indítás előtt üzleti tervet kell írni: vezetői összefoglaló, piac- és versenytárselemzés, marketingterv, működési és pénzügyi terv, kockázatok. A forrásban 4 millió forint saját tőkéjük van, 6 milliót idegen forrásból, bankhitelből vagy lízingből, esetleg pályázati támogatásból kell előteremteniük. Kft.-t javasolnék, mert így hitel felvételekor nem kockáztatják a teljes magánvagyonukat."
+      },
+      {
+        "speaker": "examiner",
+        "text": "Miért nehezebb egy induló vállalkozásnak bankhitelt kapnia, mint egy régóta működő cégnek?"
+      },
+      {
+        "speaker": "candidate",
+        "text": "Mert a bank a kockázatot mérlegeli: az induló vállalkozásnak nincs múltbeli pénzügyi beszámolója, nem tudja bizonyítani, hogy a bevételeiből törleszteni tud, és gyakran fedezete sincs. Ezért a bank magasabb kamatot vagy több saját tőkét, illetve biztosítékot kér. Ilyenkor segíthet egy jól megírt üzleti terv, a kezességvállalás vagy a pályázati támogatás."
+      }
+    ],
+    "notes": [
+      "A vállalat és a vállalkozás definíciója elkülönül, a formákat következetesen egy szempont, a tulajdonosok felelőssége szerint csoportosítja, és a kft.–rt. különbségeit pontosan, a „főszabály szerint” megszorítással mondja el.",
+      "A forrás esetét végigviszi a tételen: SWOT-elemzést készít belőle, a 4P-re a kerékpárkölcsönzőből hoz példát, kiszámolja a külső forrásigényt (10 − 4 = 6 millió Ft), és indokolt javaslatot tesz a társasági formára.",
+      "A kiegészítő kérdésnél a bank szemszögéből (kockázat, fedezet, információhiány) érvel – ez az összefüggések feltárása."
+    ]
+  }
+}

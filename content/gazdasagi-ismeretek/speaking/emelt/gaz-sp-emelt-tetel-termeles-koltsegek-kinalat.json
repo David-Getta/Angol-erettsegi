@@ -1,0 +1,90 @@
+{
+  "schemaVersion": 1,
+  "id": "gaz-sp-emelt-tetel-termeles-koltsegek-kinalat",
+  "subject": "gazdasagi-ismeretek",
+  "revision": 1,
+  "level": "emelt",
+  "source": "generated",
+  "topic": "termeles-koltseg",
+  "title": "A termelés, a költségek és a kínálat",
+  "createdAt": "2026-11-08",
+  "tags": [
+    "altalanos"
+  ],
+  "section": "speaking",
+  "type": "tetel",
+  "partNumber": 1,
+  "instructionsHu": "Fejtse ki a tételt! Mutassa be a termelési tényezőket és a termelési függvényt, a rövid és a hosszú táv különbségét, a költségfajtákat, a bevétel és a profit fogalmát, a profitmaximalizálás szabályát, végül azt, hogyan vezethető le a vállalat kínálati görbéje a költségekből! Felkészülési idő: 30 perc.",
+  "prompts": [
+    "Mik a termelési tényezők, és mit fejez ki a termelési függvény? Mi a különbség a rövid és a hosszú táv között?",
+    "Mit mond ki a csökkenő hozadék (csökkenő határtermék) törvénye? Mondj rá példát!",
+    "Csoportosítsd a költségeket: fix és változó költség, összköltség, átlagköltség, átlagos változó költség, határköltség! Add meg a képleteket!",
+    "Mi a különbség a számviteli és a gazdasági költség, illetve a számviteli és a gazdasági profit között? Mi a normálprofit?",
+    "Mi az árbevétel és a határbevétel? Mi a profitmaximalizálás feltétele?",
+    "Mi a fedezeti pont és az üzemszüneti pont? Hogyan vezethető le a tökéletesen versenyző vállalat kínálati görbéje a határköltség-görbéből?"
+  ],
+  "usefulPhrases": [
+    {
+      "en": "TC = FC + VC; AC = TC / Q; MC = ΔTC / ΔQ",
+      "hu": "összköltség, átlagköltség, határköltség"
+    },
+    {
+      "en": "MR = MC",
+      "hu": "a profitmaximalizálás feltétele"
+    },
+    {
+      "en": "csökkenő hozadék",
+      "hu": "a változó tényező újabb egységei egyre kisebb többletterméket hoznak"
+    },
+    {
+      "en": "normálprofit",
+      "hu": "az a profit, amely éppen megtéríti a vállalkozó saját tényezőinek alternatív költségét (gazdasági profit = 0)"
+    }
+  ],
+  "sources": [
+    {
+      "title": "1. forrás – Egy pizzéria rövid távú adatai (hipotetikus)",
+      "text": "Egy pizzéria konyhájában egy sütő van. 1 szakács óránként 10, 2 szakács 18, 3 szakács 24, 4 szakács 27 pizzát készít. A sütő és a helyiség bérleti díja havonta ugyanannyi, akárhány pizzát sütnek."
+    },
+    {
+      "title": "2. forrás – Idézet egy vállalkozótól (kitalált)",
+      "text": "„A könyvelőm szerint tavaly 6 millió forint nyereségem volt. Csakhogy a saját üzlethelyiségemben dolgozom, és ha nem vállalkoznék, egy cégnél évi 7 millió forintot keresnék.”"
+    }
+  ],
+  "keyPoints": [
+    "Termelési tényezők: munka, tőke, föld (természeti erőforrások), vállalkozói képesség; termelési függvény: a ráfordítások (inputok) és az adott technológia mellett előállítható legnagyobb kibocsátás (output) kapcsolata.",
+    "Rövid táv: legalább egy tényező (pl. a gép, az épület) mennyisége nem változtatható; hosszú táv: minden tényező változtatható.",
+    "Csökkenő hozadék (határtermék) törvénye: ha egy változó tényező mennyiségét rögzített más tényezők mellett növeljük, egy ponton túl a pótlólagos egységek egyre kisebb többletkibocsátást hoznak (1. forrás: +10, +8, +6, +3 pizza).",
+    "Fix költség (FC): a termelés nagyságától független (bérleti díj); változó költség (VC): a termeléssel együtt nő (alapanyag, órabér); TC = FC + VC.",
+    "Átlagköltség AC = TC / Q (= AFC + AVC), átlagos változó költség AVC = VC / Q, határköltség MC = ΔTC / ΔQ – a pótlólagos egység többletköltsége; az MC az AC-görbét annak minimumában metszi.",
+    "Explicit (számviteli) költség: ténylegesen kifizetett; implicit költség: a saját tényezők alternatív költsége; gazdasági profit = árbevétel – explicit – implicit költség; normálprofit esetén a gazdasági profit 0 (2. forrás: 6 millió számviteli profit, de –1 millió gazdasági profit, a saját helyiség bérleti értéke nélkül is).",
+    "Árbevétel TR = P × Q; határbevétel MR = ΔTR / ΔQ; tökéletes versenyben MR = P.",
+    "Profitmaximalizálás: addig érdemes bővíteni, amíg MR ≥ MC, a profit ott maximális, ahol MR = MC (tökéletes versenyben P = MC).",
+    "Fedezeti pont: P = min AC (TR = TC, nulla gazdasági profit); üzemszüneti pont: P = min AVC, ez alatt rövid távon jobb leállni (a veszteség csak az FC).",
+    "A tökéletesen versenyző vállalat rövid távú kínálati görbéje az MC-görbe AVC-minimum feletti szakasza; a piaci kínálat a vállalati kínálatok összege; a kínálat függ az inputáraktól, a technológiától, az adóktól és a várakozásoktól."
+  ],
+  "speakingSeconds": 720,
+  "prepSeconds": 1800,
+  "sampleAnswer": {
+    "turns": [
+      {
+        "speaker": "candidate",
+        "text": "A tételem a termelés, a költségek és a kínálat. A termeléshez termelési tényezőkre van szükség: munkára, tőkére, földre, vagyis természeti erőforrásokra, és vállalkozói képességre. A termelési függvény azt mutatja meg, hogy adott technológia mellett a ráfordításokból legfeljebb mennyi termék állítható elő. Rövid távon legalább egy tényező mennyisége rögzített, például a pizzéria egyetlen sütője, hosszú távon viszont minden tényező változtatható, a vállalat akár új üzemet is építhet. Rövid távon érvényesül a csökkenő hozadék törvénye: ha a rögzített sütő mellé egyre több szakácsot állítunk, egy ponton túl minden újabb szakács egyre kevesebb többletpizzát készít. A forrásban az első szakács 10, a második 8, a harmadik 6, a negyedik már csak 3 pizzával növeli a kibocsátást, mert a sütő körül egyre szűkebb a hely. A költségeket két csoportra osztjuk. A fix költség a termelés nagyságától független, ilyen a bérleti díj, a változó költség a termeléssel együtt nő, ilyen az alapanyag. A kettő összege az összköltség. Az átlagköltség az összköltség és a mennyiség hányadosa, az átlagos változó költség a változó költség osztva a mennyiséggel, a határköltség pedig az összköltség változása osztva a mennyiség változásával, vagyis a pótlólagos egység többletköltsége. A csökkenő hozadék miatt a határköltség egy idő után nő, és az átlagköltség-görbét a minimumában metszi. Fontos a számviteli és a gazdasági szemlélet különbsége. A számviteli költség a ténylegesen kifizetett, explicit költség, a gazdasági költség ehhez hozzáadja az implicit költséget, a saját tényezők alternatív költségét. A második forrás vállalkozójának 6 millió forint számviteli profitja van, de ha 7 millió forintot keresne alkalmazottként, a gazdasági profitja negatív, legalább mínusz 1 millió, és ebben még nincs benne a saját üzlethelyiség bérleti értéke. Ha a gazdasági profit éppen nulla, normálprofitról beszélünk. Az árbevétel az ár és a mennyiség szorzata, a határbevétel pedig az egy egységnyi többlet eladásából származó bevételnövekmény. A vállalat addig bővíti a termelést, amíg a határbevétel legalább akkora, mint a határköltség, a profit ott maximális, ahol a határbevétel egyenlő a határköltséggel. Tökéletes versenyben a határbevétel megegyezik az árral, ezért ott az ár egyenlő a határköltséggel. A fedezeti pontban az ár éppen az átlagköltség minimumával egyenlő, ott a gazdasági profit nulla. Az üzemszüneti pont az átlagos változó költség minimuma: ha az ár ez alá esik, rövid távon jobb leállni, mert akkor a veszteség csak a fix költség. Ebből következik, hogy a tökéletesen versenyző vállalat kínálati görbéje a határköltség-görbe átlagos változó költség minimuma feletti szakasza. A piaci kínálat az egyes vállalatok kínálatának összege, és eltolódik például az alapanyagárak, a technológia vagy az adók változásával."
+      },
+      {
+        "speaker": "examiner",
+        "text": "Miért nem szerepel a fix költség a profitmaximalizáló mennyiség eldöntésében?"
+      },
+      {
+        "speaker": "candidate",
+        "text": "Mert a fix költség nem függ a termelt mennyiségtől, ezért egy pótlólagos egység termelésekor nem változik, a határköltségben tehát nincs benne. Ha például nő a bérleti díj, a határköltség és a határbevétel ugyanaz marad, így az optimális mennyiség sem változik, csak a profit lesz kisebb. A fix költség abban a döntésben számít, hogy hosszú távon érdemes-e a piacon maradni."
+      }
+    ],
+    "notes": [
+      "Minden költségfajtát képlettel definiál, és megkülönbözteti a rövid és a hosszú távot; a csökkenő hozadékot az 1. forrás számaiból kiszámolt határtermékekkel (+10, +8, +6, +3) szemlélteti.",
+      "A 2. forrás alapján helyesen elkülöníti a számviteli és a gazdasági profitot (6 – 7 = –1 millió Ft), és megjegyzi, hogy az implicit bérleti érték miatt a gazdasági veszteség még nagyobb.",
+      "A profitmaximalizálás szabályát (MR = MC, tökéletes versenyben P = MC) és a fedezeti, illetve az üzemszüneti pontot összekapcsolja a kínálati görbe levezetésével – ez az emelt szint elvárt összefüggése.",
+      "A kiegészítő kérdésre pontosan válaszol: a fix költség nem hat a határköltségre, ezért a mennyiségi döntést sem befolyásolja."
+    ]
+  }
+}

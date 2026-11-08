@@ -1,0 +1,166 @@
+{
+  "schemaVersion": 1,
+  "id": "gaz-rd-emelt-fogyaszto-hatarhaszon-rugalmassag",
+  "subject": "gazdasagi-ismeretek",
+  "revision": 1,
+  "level": "emelt",
+  "source": "generated",
+  "topic": "fogyaszto",
+  "title": "Határhaszon, költségvetési korlát, árrugalmasság – adatelemzés",
+  "createdAt": "2026-11-08",
+  "tags": [
+    "altalanos"
+  ],
+  "section": "reading",
+  "type": "adatsor",
+  "instructions": "Olvassa el a hipotetikus adatokat, majd oldja meg a feladatokat! A számítási kérdéseknél csak az eredményt írja be; az igaz–hamis állításoknál döntse el, igaz (T) vagy hamis (F) az állítás, a feleletválasztós kérdéseknél egy helyes választ jelöljön meg. A 0. a megoldott példa.",
+  "passage": {
+    "title": "Egy fogyasztó és egy piac adatai",
+    "sourceNote": "Minden adat hipotetikus, tankönyvi számpélda.",
+    "blocks": [
+      {
+        "heading": "1. táblázat – Bence összhaszna a heti uszodai belépőkből",
+        "text": "1 belépő: 30 hasznossági egység; 2 belépő: 55; 3 belépő: 75; 4 belépő: 90; 5 belépő: 100; 6 belépő: 105 hasznossági egység. A határhaszon az utolsóként elfogyasztott egység által okozott összhaszon-növekmény."
+      },
+      {
+        "heading": "2. táblázat – A tornacipő piaci kereslete egy városban (havonta)",
+        "text": "Ha egy pár tornacipő ára 400 pénzegység, a keresett mennyiség 1000 pár; ha az ár 500 pénzegységre emelkedik, a keresett mennyiség 900 pár. Az árrugalmasság kiszámításakor a százalékos változásokat a kiinduló (400 pénzegységes, 1000 páros) értékhez viszonyítsa."
+      },
+      {
+        "heading": "3. adat – Réka havi szabadidős költségvetése",
+        "text": "Réka havonta 12 000 Ft-ot költ moziba járásra és könyvekre. Egy mozijegy ára 2000 Ft, egy könyvé 3000 Ft; a teljes összeget elkölti, és egész darabokat vásárol."
+      }
+    ]
+  },
+  "example": {
+    "id": "0",
+    "kind": "text",
+    "prompt": "Mekkora a 3. belépő határhaszna (hasznossági egységben)?",
+    "answer": [
+      "20",
+      "20 egység",
+      "20 hasznossági egység"
+    ],
+    "category": "szamitas",
+    "explanation": "20 egység. A határhaszon az összhaszon növekménye: TU(3) − TU(2) = 75 − 55 = 20."
+  },
+  "items": [
+    {
+      "id": "1",
+      "kind": "text",
+      "prompt": "Mekkora az 5. belépő határhaszna (hasznossági egységben)?",
+      "answer": [
+        "10",
+        "10 egység",
+        "10 hasznossági egység"
+      ],
+      "category": "szamitas",
+      "explanation": "10 egység. TU(5) − TU(4) = 100 − 90 = 10. Vigyázat: nem az összhaszon (100) a válasz, hanem az 5. egység által hozzáadott többlet."
+    },
+    {
+      "id": "2",
+      "kind": "tf",
+      "prompt": "Az 1. táblázat szerint a 4. belépőtől kezdve Bence összhaszna csökken.",
+      "answer": "F",
+      "category": "adatleolvasas",
+      "explanation": "Hamis. Az összhaszon végig nő (90 → 100 → 105), csak egyre kisebb mértékben: a határhaszon csökken (15, 10, 5), de pozitív. Az összhaszon csak akkor csökkenne, ha a határhaszon negatívvá válna."
+    },
+    {
+      "id": "3",
+      "kind": "choice",
+      "prompt": "Melyik közgazdasági törvényszerűséget szemlélteti az 1. táblázat?",
+      "options": [
+        { "key": "A", "text": "a csökkenő határhaszon törvényét (Gossen I. törvénye)" },
+        { "key": "B", "text": "a határhaszon és az ár arányának kiegyenlítődését (Gossen II. törvénye)" },
+        { "key": "C", "text": "a kereslet törvényét" },
+        { "key": "D", "text": "a csökkenő hozadék törvényét" }
+      ],
+      "answer": "A",
+      "category": "fogalomcsere",
+      "explanation": "Helyes: A. Ugyanabból a jószágból minden további egység egyre kisebb többlethasznot ad (30, 25, 20, 15, 10, 5) – ez Gossen I. törvénye, a csökkenő határhaszon törvénye.",
+      "wrongOptions": {
+        "B": "Gossen II. törvénye több jószág közötti választásról szól (az optimumban az egy pénzegységre jutó határhaszon minden jószágnál egyenlő); a táblázat egyetlen jószágot mutat, árak nélkül.",
+        "C": "A kereslet törvénye az ár és a keresett mennyiség fordított kapcsolata; az 1. táblázatban nincs ár.",
+        "D": "A csökkenő hozadék törvénye a termelésre (a termelési tényezők hozamára) vonatkozik, nem a fogyasztó hasznára."
+      }
+    },
+    {
+      "id": "4",
+      "kind": "text",
+      "prompt": "Mekkora a tornacipő keresletének árrugalmassága (előjellel, egy tizedesjegyre)?",
+      "answer": [
+        "-0,4",
+        "-0.4",
+        "−0,4",
+        "−0.4",
+        "-0,40",
+        "-0.40"
+      ],
+      "category": "szamitas",
+      "explanation": "−0,4. A keresett mennyiség százalékos változása (900 − 1000) / 1000 = −10%, az áré (500 − 400) / 400 = +25%; az árrugalmasság −10% / 25% = −0,4. Az előjel negatív, mert az ár és a keresett mennyiség ellentétesen mozog."
+    },
+    {
+      "id": "5",
+      "kind": "tf",
+      "prompt": "A tornacipő kereslete a vizsgált szakaszon árrugalmatlan.",
+      "answer": "T",
+      "category": "fogalomcsere",
+      "explanation": "Igaz. Az árrugalmasság abszolút értéke 0,4 < 1, vagyis a keresett mennyiség kisebb arányban változik, mint az ár: a kereslet rugalmatlan. (|e| > 1 lenne rugalmas, |e| = 1 egységnyi rugalmasságú.)"
+    },
+    {
+      "id": "6",
+      "kind": "text",
+      "prompt": "Mennyi a tornacipő-eladók összbevétele (= a vásárlók összkiadása) 500 pénzegységes ár mellett (pénzegységben)?",
+      "answer": [
+        "450000",
+        "450 000",
+        "450 ezer",
+        "450000 pénzegység",
+        "450 000 pénzegység",
+        "450 ezer pénzegység"
+      ],
+      "category": "szamitas",
+      "explanation": "450 000 pénzegység. Összbevétel = ár × mennyiség = 500 × 900 = 450 000. Ez több a 400-as ár melletti 400 × 1000 = 400 000-nél: rugalmatlan keresletnél az áremelés növeli az összbevételt."
+    },
+    {
+      "id": "7",
+      "kind": "text",
+      "prompt": "Legfeljebb hány mozijegyet vehet Réka egy hónapban, ha könyvet nem vásárol?",
+      "answer": [
+        "6",
+        "hat",
+        "6 db",
+        "6 darab",
+        "6 mozijegy",
+        "6 jegy"
+      ],
+      "category": "szamitas",
+      "explanation": "6 darab. A költségvetési egyenes mozijegy-tengelyen lévő pontja = jövedelem / a mozijegy ára = 12 000 / 2000 = 6."
+    },
+    {
+      "id": "8",
+      "kind": "choice",
+      "prompt": "Hogyan változik Réka költségvetési egyenese, ha a mozijegy ára 3000 Ft-ra emelkedik, minden más változatlan?",
+      "options": [
+        { "key": "A", "text": "Párhuzamosan befelé tolódik, mindkét tengelymetszet csökken." },
+        { "key": "B", "text": "A könyv-tengelyen lévő pont (4 könyv) változatlan marad, a mozijegy-tengelyen lévő pont 6-ról 4-re csökken: az egyenes befelé fordul." },
+        { "key": "C", "text": "Párhuzamosan kifelé tolódik, mert Réka többet költ moziba járásra." },
+        { "key": "D", "text": "Nem változik, mert Réka jövedelme ugyanannyi maradt." }
+      ],
+      "answer": "B",
+      "category": "modell-ertelmezes",
+      "explanation": "Helyes: B. Ha csak az egyik jószág ára változik, a költségvetési egyenes elfordul: a könyv-tengely metszéspontja 12 000 / 3000 = 4 marad, a mozijegyé 12 000 / 3000 = 4-re csökken (korábban 6 volt). Párhuzamos eltolódást a jövedelem változása (vagy mindkét ár azonos arányú változása) okoz.",
+      "wrongOptions": {
+        "A": "Párhuzamos befelé tolódás a jövedelem csökkenésekor történik; itt csak a mozijegy ára változik, így a könyv-tengelyen lévő pont nem mozdul.",
+        "C": "Az áremelés szűkíti, nem bővíti a lehetőségeket, és nem párhuzamos eltolódást, hanem elfordulást okoz.",
+        "D": "A költségvetési korlát a jövedelemtől és az áraktól is függ: változatlan jövedelem mellett is változik, ha egy ár változik."
+      }
+    }
+  ],
+  "glossary": [
+    { "term": "határhaszon", "meaning": "az utolsóként elfogyasztott egység által okozott összhaszon-növekmény" },
+    { "term": "árrugalmasság", "meaning": "a keresett mennyiség százalékos változása osztva az ár százalékos változásával" },
+    { "term": "költségvetési korlát", "meaning": "azoknak a jószágkombinációknak a köre, amelyeket a fogyasztó adott jövedelemből, adott árak mellett megvásárolhat; határa a költségvetési egyenes" }
+  ],
+  "suggestedMinutes": 15
+}

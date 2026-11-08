@@ -1,0 +1,90 @@
+{
+  "schemaVersion": 1,
+  "id": "gaz-sp-emelt-tetel-piaci-formak-verseny",
+  "subject": "gazdasagi-ismeretek",
+  "revision": 1,
+  "level": "emelt",
+  "source": "generated",
+  "topic": "piaci-formak",
+  "title": "Piaci formák, a verseny szerepe és a versenyszabályozás",
+  "createdAt": "2026-11-08",
+  "tags": [
+    "altalanos"
+  ],
+  "section": "speaking",
+  "type": "tetel",
+  "partNumber": 1,
+  "instructionsHu": "Fejtse ki a tételt! Mutassa be a piaci formák csoportosításának szempontjait, a tökéletes verseny, a monopolisztikus verseny, az oligopólium és a monopólium jellemzőit, a verseny gazdasági szerepét, végül a versenyszabályozás és a fogyasztóvédelem feladatait! Felkészülési idő: 30 perc.",
+  "prompts": [
+    "Milyen szempontok szerint csoportosítjuk a piaci formákat (szereplők száma, a termék jellege, belépési korlátok, árbefolyásoló képesség)?",
+    "Mik a tökéletes verseny feltételei? Miért árelfogadó a vállalat, és mi történik hosszú távon az extraprofittal?",
+    "Mi jellemzi a monopóliumot? Milyen belépési korlátok tarthatják fenn? Miért termel kevesebbet, magasabb áron, mint a versenyző piac?",
+    "Mi jellemzi az oligopóliumot és a monopolisztikus versenyt? Mi a kartell?",
+    "Mi a verseny szerepe a gazdaságban, és milyen korlátai vannak?",
+    "Milyen eszközökkel védi az állam a versenyt és a fogyasztókat?"
+  ],
+  "usefulPhrases": [
+    {
+      "en": "árelfogadó – ármeghatározó",
+      "hu": "nem tudja befolyásolni az árat – piaci erővel rendelkezik"
+    },
+    {
+      "en": "belépési korlát",
+      "hu": "ami megakadályozza új vállalatok piacra lépését (szabadalom, nagy fix költség, engedély)"
+    },
+    {
+      "en": "kölcsönös függőség",
+      "hu": "az oligopolista döntése a riválisok reakciójától függ"
+    },
+    {
+      "en": "holtteher-veszteség",
+      "hu": "a monopolár miatt elmaradó, a társadalom számára hasznos tranzakciók értéke"
+    }
+  ],
+  "sources": [
+    {
+      "title": "1. forrás – Esetleírások (kitalált)",
+      "text": "a) Egy gyógyszercég 20 évre szabadalmat kap egy új hatóanyagra. b) Egy országban három mobilszolgáltató működik, és a díjcsomagjaik szinte egyszerre változnak. c) Egy nagyvárosban több száz fodrászat versenyez a vendégekért."
+    },
+    {
+      "title": "2. forrás – Definíció",
+      "text": "Kartell: a versenytársak összehangolt magatartása vagy megállapodása, amely az árak rögzítésére, a termelés korlátozására vagy a piacok felosztására irányul, és a verseny korlátozását célozza."
+    }
+  ],
+  "keyPoints": [
+    "Csoportosítási szempontok: az eladók (és vevők) száma, a termék homogén vagy differenciált jellege, a be- és kilépés szabadsága (belépési korlátok), az árbefolyásoló képesség (piaci erő), az informáltság.",
+    "Tökéletes verseny: sok kicsi eladó és vevő, homogén termék, szabad be- és kilépés, teljes informáltság; a vállalat árelfogadó, MR = P, P = MC-nél termel; hosszú távon a belépés miatt az extraprofit eltűnik (normálprofit, P = min AC).",
+    "Monopólium: egyetlen eladó, nincs közeli helyettesítő, belépési korlátok – jogi (szabadalom, koncesszió, engedély), természetes (hatalmas fix költség, pl. hálózatos szolgáltatás), erőforrás feletti kizárólagos rendelkezés; ármeghatározó.",
+    "A monopólium MR = MC-nél termel, de nála MR < P, ezért a versenyhez képest kisebb mennyiséget, magasabb áron kínál; ez holtteher- (társadalmi) veszteséget okoz, és tartós extraprofitot tesz lehetővé.",
+    "Oligopólium: kevés nagy eladó, magas belépési korlát, kölcsönös függőség (a riválisok reakciójának figyelembevétele), jellemző az árvezetés és a kartellre való hajlam; kartell: a versenytársak versenykorlátozó megállapodása.",
+    "Monopolisztikus verseny: sok eladó, differenciált termék (márka, minőség, hely, szolgáltatás), viszonylag szabad belépés; rövid távon kis piaci erő, hosszú távon normálprofit; fontos a reklám.",
+    "A verseny szerepe: alacsonyabb ár, jobb minőség, hatékony erőforrás-felhasználás, innováció ösztönzése, a fogyasztói választék bővülése.",
+    "A verseny korlátai: természetes monopóliumok, a piaci erő koncentrálódása (fúziók), aszimmetrikus információ, externáliák, a rövid távú gondolkodás.",
+    "Versenyszabályozás: kartelltilalom, a gazdasági erőfölénnyel való visszaélés tilalma, a vállalati összefonódások (fúziók) ellenőrzése; Magyarországon a Gazdasági Versenyhivatal, az EU-ban az Európai Bizottság; a természetes monopóliumok árának hatósági szabályozása.",
+    "Fogyasztóvédelem: a fogyasztók tájékoztatáshoz, biztonságos termékhez, jogorvoslathoz való jogának védelme (szavatosság, jótállás, a megtévesztő reklám tilalma)."
+  ],
+  "speakingSeconds": 720,
+  "prepSeconds": 1800,
+  "sampleAnswer": {
+    "turns": [
+      {
+        "speaker": "candidate",
+        "text": "A tételem a piaci formák és a verseny. A piaci formákat több szempont szerint csoportosítjuk: hány eladó van a piacon, homogén vagy differenciált-e a termék, mennyire szabad a piacra lépés, és mekkora a vállalatok árbefolyásoló képessége. A két végpont a tökéletes verseny és a monopólium, közöttük helyezkedik el a monopolisztikus verseny és az oligopólium. A tökéletes verseny feltételei: sok kicsi eladó és vevő, homogén termék, szabad be- és kilépés és teljes informáltság. Ilyenkor egy vállalat nem tudja befolyásolni az árat, árelfogadó, vagyis a határbevétele megegyezik az árral, és ott termel, ahol az ár egyenlő a határköltséggel. Ha a vállalatok extraprofitot érnek el, új vállalatok lépnek be, a kínálat nő, az ár csökken, így hosszú távon csak normálprofit marad. A másik végpont a monopólium: egyetlen eladó, a terméknek nincs közeli helyettesítője, és belépési korlátok védik. Ez lehet jogi korlát, például az első forrásban a gyógyszercég szabadalma, vagy természetes korlát, amikor a hatalmas fix költség miatt egy vállalat olcsóbban látja el a piacot, mint több, például a vízhálózatnál. A monopólium ármeghatározó, de lefelé hajló keresleti görbével szembesül, így ha többet akar eladni, csökkentenie kell az árat, ezért a határbevétele kisebb az árnál. A határbevétel és a határköltség egyenlőségénél termel, ezért a versenyző piachoz képest kisebb mennyiséget kínál magasabb áron, ami holtteher-veszteséget okoz. Az oligopóliumban kevés nagy vállalat van, a belépés nehéz, és a vállalatok kölcsönösen függenek egymástól: minden döntésnél figyelik a riválisok várható reakcióját. Erre példa a forrásban a három mobilszolgáltató, amelyek díjai szinte egyszerre változnak. Az oligopolisták hajlamosak összejátszani; a kartell a második forrás szerint a versenytársak versenykorlátozó megállapodása az árakról, a termelésről vagy a piacok felosztásáról. A monopolisztikus versenyben sok eladó kínál differenciált terméket, mint a fodrászatok: mindegyiknek van egy kis piaci ereje, de mivel a belépés könnyű, hosszú távon ők is csak normálprofitot érnek el. A verseny haszna, hogy alacsonyabb árat, jobb minőséget, nagyobb választékot és innovációt eredményez, és a hatékony vállalatokat jutalmazza. Korlátai is vannak: a természetes monopóliumokban nem működik, a vállalatok összeolvadásával a piaci erő koncentrálódhat, és a fogyasztók gyakran kevesebb információval rendelkeznek, mint az eladók. Ezért az állam szabályozza a versenyt. Magyarországon a Gazdasági Versenyhivatal tiltja és bírságolja a kartelleket, fellép a gazdasági erőfölénnyel való visszaélés ellen, és ellenőrzi a vállalati összefonódásokat; a természetes monopóliumok árát hatóságilag szabályozzák. A fogyasztóvédelem pedig a vásárlók tájékoztatáshoz, biztonságos termékhez és jogorvoslathoz való jogát védi, például a szavatossággal, a jótállással és a megtévesztő reklám tilalmával."
+      },
+      {
+        "speaker": "examiner",
+        "text": "Miért nehéz egy kartellt hosszú távon fenntartani?"
+      },
+      {
+        "speaker": "candidate",
+        "text": "Mert minden tag számára csábító a megállapodás megszegése: ha a többiek magasan tartják az árat, az a vállalat, amelyik titokban kicsit olcsóbban ad, sok vevőt szerez és növeli a saját profitját. Ha ezt többen is megteszik, a kartell felbomlik. Ráadásul a kartell tilos, a versenyhivatal magas bírságot szabhat ki, és a tagok egymást is feljelenthetik."
+      }
+    ],
+    "notes": [
+      "A négy piaci formát következetesen ugyanazokkal a szempontokkal (szereplők száma, termék, belépés, piaci erő) jellemzi, és mindegyikhez a forrásból vett példát kapcsol.",
+      "Az emelt szintű összefüggést (MR < P → MR = MC-nél kisebb mennyiség, magasabb ár, holtteher-veszteség) logikusan levezeti, és megmagyarázza, miért tűnik el az extraprofit a szabad belépésű piacokon.",
+      "A verseny előnyei mellett a korlátait is bemutatja, és a versenyszabályozás három fő területét (kartell, erőfölény, fúziókontroll) pontosan, a felelős intézménnyel együtt nevezi meg.",
+      "A kiegészítő kérdésre a kartell belső instabilitásával (a csalás ösztönzője) és a jogi kockázattal válaszol – ez a kölcsönös függőség helyes alkalmazása."
+    ]
+  }
+}

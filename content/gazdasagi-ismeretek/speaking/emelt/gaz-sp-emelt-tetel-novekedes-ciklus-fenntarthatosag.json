@@ -1,0 +1,86 @@
+{
+  "schemaVersion": 1,
+  "id": "gaz-sp-emelt-tetel-novekedes-ciklus-fenntarthatosag",
+  "subject": "gazdasagi-ismeretek",
+  "revision": 1,
+  "level": "emelt",
+  "source": "generated",
+  "topic": "novekedes",
+  "title": "Gazdasági növekedés, konjunktúraciklus, válságok és fenntarthatóság",
+  "createdAt": "2026-11-08",
+  "tags": [
+    "altalanos"
+  ],
+  "section": "speaking",
+  "type": "tetel",
+  "partNumber": 1,
+  "instructionsHu": "Fejtse ki a tételt! Határozza meg a gazdasági növekedés fogalmát és mérését, mutassa be a növekedés forrásait, a konjunktúraciklus szakaszait, két nagy válság (1929–33, 2008) okait és kezelését, az állam ciklust befolyásoló eszközeit, végül a fenntartható fejlődés fogalmát és a növekedés környezeti korlátait! Használja a forrásokat! Felkészülési idő: 30 perc.",
+  "prompts": [
+    "Mit értünk gazdasági növekedésen, és mivel mérjük (reál-GDP, egy főre jutó reál-GDP)? Mi a különbség a gazdasági növekedés és a gazdasági fejlődés között?",
+    "Melyek a gazdasági növekedés forrásai? Mi a különbség az extenzív és az intenzív növekedés között?",
+    "Mutassa be a konjunktúraciklus szakaszait (fellendülés, tetőpont, visszaesés, mélypont) a GDP, a foglalkoztatás és az árak alakulásával!",
+    "Hasonlítsa össze az 1929–33-as nagy gazdasági világválságot és a 2008-as pénzügyi-gazdasági válságot: mi váltotta ki, mi lett a következménye, hogyan reagált a gazdaságpolitika?",
+    "Hogyan befolyásolhatja az állam és a jegybank a ciklust (anticiklikus fiskális és monetáris politika)? Mit tanított erről Keynes?",
+    "Mit jelent a fenntartható fejlődés? Miért nem mutatja a GDP a környezeti károkat, és milyen eszközökkel kezelhetők a negatív externáliák?"
+  ],
+  "usefulPhrases": [
+    {
+      "en": "reál-GDP",
+      "hu": "az infláció hatásától megtisztított, változatlan árakon számított GDP – a növekedés mérőszáma"
+    },
+    {
+      "en": "anticiklikus gazdaságpolitika",
+      "hu": "a ciklussal ellentétes irányú beavatkozás: válságban élénkítés, túlfűtöttségkor fékezés"
+    },
+    {
+      "en": "negatív externália",
+      "hu": "piacon kívüli, meg nem térített kár, amelyet egy szereplő tevékenysége okoz másoknak"
+    }
+  ],
+  "sources": [
+    {
+      "title": "1. forrás – Egy képzeletbeli ország reál-GDP-jének alakulása (szöveges ábraleírás, hipotetikus adatok)",
+      "text": "A vonaldiagram vízszintes tengelyén az évek (1–10.), a függőlegesen a reál-GDP látható. A görbe hullámzik: az 1–4. évben emelkedik, az 5. évben csúcsot ér, a 6–7. évben csökken, a 7. év végén mélypontra ér, majd a 8. évtől újra emelkedik. Egy szaggatott, egyenletesen emelkedő vonal a hosszú távú növekedési trendet jelöli: a hullámzó görbe e trend körül ingadozik, és a 10. évben magasabban van, mint az 1. évben."
+    },
+    {
+      "title": "2. forrás – A fenntartható fejlődés klasszikus meghatározása (ENSZ Környezet és Fejlődés Világbizottsága, Brundtland-jelentés, 1987)",
+      "text": "„A fenntartható fejlődés olyan fejlődés, amely kielégíti a jelen szükségleteit anélkül, hogy veszélyeztetné a jövő nemzedékek esélyét arra, hogy ők is kielégíthessék a saját szükségleteiket.”"
+    }
+  ],
+  "keyPoints": [
+    "Gazdasági növekedés: a nemzetgazdaság kibocsátásának (a reál-GDP-nek, nemzetközi összehasonlításban az egy főre jutó reál-GDP-nek) tartós bővülése; mérése a reál-GDP százalékos változásával, mert a nominális GDP az árak emelkedése miatt is nőhet.",
+    "Növekedés és fejlődés különbsége: a növekedés mennyiségi változás, a fejlődés minőségi is (gazdasági szerkezet, életminőség, oktatás, egészség, környezet állapota); a GDP nem méri a környezeti károkat, a háztartási munkát és a jövedelem eloszlását.",
+    "A növekedés forrásai: több és képzettebb munkaerő (humántőke), tőkefelhalmozás (beruházás), természeti erőforrások, technológiai fejlődés, intézmények; extenzív növekedés = több tényező bevonása, intenzív növekedés = a tényezők hatékonyabb felhasználása (termelékenység növekedése).",
+    "Konjunktúraciklus: a gazdasági aktivitás hullámzása a hosszú távú trend körül; szakaszai a fellendülés (expanzió: nő a GDP, a beruházás, a foglalkoztatás), a tetőpont (teljes kapacitáskihasználás, munkaerőhiány, gyorsuló infláció), a visszaesés (recesszió: csökkenő GDP, növekvő munkanélküliség) és a mélypont (fordulópont, ahonnan újra élénkülés indul).",
+    "Az 1929–33-as nagy gazdasági világválság: a New York-i tőzsdekrach (1929. október) után túltermelési válság, bankcsődök, deflációs árzuhanás, tömeges munkanélküliség, a világkereskedelem visszaesése, protekcionizmus; a válasz az állami beavatkozás (Roosevelt New Deal programja, közmunkák).",
+    "A 2008-as válság: az amerikai jelzáloghitel-piacról (rossz adósminősítésű, ún. subprime hitelek) indult pénzügyi válság, a Lehman Brothers bankcsődje (2008. szeptember), bizalomvesztés, hitelszűke, majd világméretű recesszió; válasz: bankmentő csomagok, jegybanki kamatcsökkentés és likviditásbővítés, fiskális élénkítés; Magyarországon a devizahitelek törlesztőrészletének emelkedése és nemzetközi (IMF–EU) hitel.",
+    "Keynes (Általános elmélet, 1936): a piac nem mindig tér vissza magától a teljes foglalkoztatáshoz, mert elégtelen lehet az aggregált kereslet; válságban az államnak kell élénkítenie a keresletet (anticiklikus politika), akár költségvetési hiány árán.",
+    "Anticiklikus eszközök: expanzív fiskális politika (kiadásnövelés, adócsökkentés) és lazító monetáris politika (kamatcsökkentés) a visszaesésben; restriktív fiskális és szigorító monetáris politika (kamatemelés) túlfűtöttségkor; automatikus stabilizátorok (munkanélküli-ellátás, progresszív adó).",
+    "Fenntartható fejlődés (Brundtland-jelentés, 1987): a jelen szükségleteinek kielégítése a jövő nemzedékek esélyeinek veszélyeztetése nélkül; három pillére a gazdasági, a társadalmi és a környezeti fenntarthatóság; korlátos, nem megújuló erőforrások (kőolaj, földgáz) és megújuló erőforrások (nap, szél, víz).",
+    "A környezetszennyezés negatív externália: a piac a társadalmilag optimálisnál többet termel belőle; kezelése környezetvédelmi adóval, szabályozással (határértékek), kibocsátási jogok kereskedelmével, a megújuló energia és a körforgásos gazdaság támogatásával."
+  ],
+  "speakingSeconds": 720,
+  "prepSeconds": 1800,
+  "sampleAnswer": {
+    "turns": [
+      {
+        "speaker": "candidate",
+        "text": "A tételem a gazdasági növekedés, a konjunktúraciklus, a válságok és a fenntarthatóság. Gazdasági növekedésen a nemzetgazdaság kibocsátásának tartós bővülését értjük, amelyet a reál-GDP százalékos változásával mérünk. Azért a reál-GDP-t használjuk, mert a nominális GDP pusztán az árak emelkedése miatt is nőhet; az országok összehasonlításához pedig az egy főre jutó reál-GDP a jobb mutató. A növekedés mennyiségi változás, a fejlődés viszont minőségi is: ide tartozik a gazdasági szerkezet átalakulása, az életminőség, az oktatás, az egészség és a környezet állapota. A növekedés forrásai a munkaerő mennyisége és képzettsége, vagyis a humántőke, a beruházásokkal felhalmozott tőke, a természeti erőforrások és a technológiai fejlődés. Ha a gazdaság több tényező bevonásával nő, extenzív, ha a tényezőket hatékonyabban használja, intenzív növekedésről beszélünk. A gazdaság azonban nem egyenletesen nő, hanem a hosszú távú trend körül hullámzik – ezt mutatja az első forrás ábrája is. Ez a konjunktúraciklus. A fellendülésben nő a GDP, a beruházás és a foglalkoztatás. A tetőponton a kapacitások ki vannak használva, munkaerőhiány van, gyorsul az infláció. A visszaesésben, a recesszióban csökken a GDP és nő a munkanélküliség, a mélypont pedig az a fordulópont, ahonnan újra élénkülés indul. A legsúlyosabb visszaesés az 1929–33-as nagy gazdasági világválság volt. A New York-i tőzsdekrach után túltermelési válság, bankcsődök, árzuhanás és tömeges munkanélküliség következett, az országok pedig vámokkal védekeztek, ami tovább rontotta a világkereskedelmet. Ebből a tapasztalatból született Keynes elmélete: a piac nem mindig tér vissza magától a teljes foglalkoztatáshoz, mert elégtelen lehet a kereslet, ezért válságban az államnak kell élénkítenie, akár költségvetési hiány árán is. Ezt nevezzük anticiklikus politikának. A visszaesésben a kormány növeli a kiadásait és csökkenti az adókat, a jegybank csökkenti a kamatot; túlfűtöttségkor fordítva. A 2008-as válság az amerikai jelzáloghitel-piacról indult: a bankok rossz adósoknak is adtak hitelt, és amikor az ingatlanárak esni kezdtek, a hitelekre épülő értékpapírok elvesztették értéküket. A Lehman Brothers csődje után megrendült a bizalom, a bankok nem adtak egymásnak hitelt, és a pénzügyi válság világméretű recesszióvá vált. A kormányok bankmentő csomagokkal, a jegybankok kamatcsökkentéssel válaszoltak. Magyarországon a devizahitelesek törlesztőrészlete a forint gyengülése miatt nagyon megnőtt, és az ország nemzetközi hitelt vett fel. Végül a fenntarthatóság. A második forrás, a Brundtland-jelentés szerint a fenntartható fejlődés kielégíti a jelen szükségleteit anélkül, hogy veszélyeztetné a jövő nemzedékek esélyét. A növekedés gyakran környezetszennyezéssel jár, ez negatív externália: a kárt nem a szennyező fizeti meg, és a GDP sem mutatja ki. Ezt az állam környezetvédelmi adóval, határértékekkel, kibocsátási jogok kereskedelmével és a megújuló energia támogatásával kezelheti, mert a kőolaj és a földgáz nem megújuló, véges erőforrás."
+      },
+      {
+        "speaker": "examiner",
+        "text": "Miért mondjuk, hogy a munkanélküli-ellátás automatikus stabilizátor?"
+      },
+      {
+        "speaker": "candidate",
+        "text": "Mert külön döntés nélkül, magától a ciklussal ellentétesen hat. Visszaeséskor több ember kap ellátást, így az állam kiadásai nőnek, és a háztartások jövedelme kevésbé esik vissza, ami fékezi a kereslet csökkenését. Fellendülésben kevesebb a munkanélküli, a kiadás csökken, ez pedig mérsékli a túlfűtöttséget. Ugyanígy hat a progresszív adó is."
+      }
+    ],
+    "notes": [
+      "A növekedés fogalma és mérése pontos (reál-GDP, egy főre jutó reál-GDP), és a felelet elkülöníti a növekedést a fejlődéstől – ez gyakori hiányosság.",
+      "A ciklus négy szakaszát a GDP, a foglalkoztatás és az árak alakulásával jellemzi, és az 1. forrás ábrájára (trend körüli hullámzás) hivatkozik.",
+      "A két válságot okok, következmények és gazdaságpolitikai válasz szerint hasonlítja össze, és a keynesi elméletet logikusan a nagy válság tapasztalatából vezeti le; magyar vonatkozást is említ.",
+      "A fenntarthatóságnál a 2. forrás definícióját használja, és a környezetszennyezést a negatív externália fogalmával, konkrét állami eszközökkel kapcsolja össze; a kiegészítő kérdésre az automatikus stabilizátor működését indokolja."
+    ]
+  }
+}

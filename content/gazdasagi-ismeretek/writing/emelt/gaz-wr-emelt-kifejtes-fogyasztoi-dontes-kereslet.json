@@ -1,0 +1,53 @@
+{
+  "schemaVersion": 1,
+  "id": "gaz-wr-emelt-kifejtes-fogyasztoi-dontes-kereslet",
+  "subject": "gazdasagi-ismeretek",
+  "revision": 1,
+  "level": "emelt",
+  "source": "generated",
+  "topic": "fogyaszto",
+  "title": "A fogyasztói döntés és a kereslet",
+  "createdAt": "2026-11-08",
+  "tags": [
+    "altalanos"
+  ],
+  "section": "writing",
+  "type": "kifejtes",
+  "taskNumber": 1,
+  "register": "szakszerű kifejtő szöveg",
+  "situation": "Mutassa be, hogyan dönt a fogyasztó, és hogyan vezethető le a fogyasztói döntésből a kereslet! Kifejtésében térjen ki az alábbi szempontokra, a fogalmakat pontosan definiálja, és minden szemponthoz kapcsoljon példát vagy indoklást!",
+  "points": [
+    { "id": "p1", "text": "A fogyasztó célja, az összhaszon és a határhaszon fogalma, Gossen I. törvénye." },
+    { "id": "p2", "text": "A költségvetési korlát, valamint a jövedelem és az árak változásának hatása rá." },
+    { "id": "p3", "text": "A fogyasztói optimum feltétele (Gossen II. törvénye) és a kereslet törvényének levezetése belőle." },
+    { "id": "p4", "text": "A keresett mennyiség változása és a kereslet változása közötti különbség, a keresletet eltoló tényezők." },
+    { "id": "p5", "text": "A kereslet árrugalmassága és kapcsolata a fogyasztók összkiadásával egy saját számpéldával." }
+  ],
+  "suggestedMinutes": 50,
+  "usefulPhrases": [
+    { "en": "határhaszon", "hu": "az utolsóként elfogyasztott egység által okozott összhaszon-növekmény" },
+    { "en": "költségvetési korlát", "hu": "I = P_X · X + P_Y · Y: a jövedelem és az árak által meghatározott vásárlási lehetőségek határa" },
+    { "en": "egy pénzegységre jutó határhaszon", "hu": "MU / P – Gossen II. törvényének kulcsfogalma" },
+    { "en": "normál és alsóbbrendű jószág", "hu": "a jövedelem növekedésekor kereslete nő, illetve csökken" },
+    { "en": "árrugalmasság", "hu": "a keresett mennyiség százalékos változása osztva az ár százalékos változásával" }
+  ],
+  "checklistExtra": [
+    "Elkülönítettem a keresett mennyiség változását (mozgás a görbén) és a kereslet változását (a görbe eltolódása)?",
+    "A számpéldám hipotetikus, és kézzel újraszámoltam?"
+  ],
+  "modelAnswer": {
+    "text": "A fogyasztó a háztartás tagjaként arról dönt, hogyan költse el korlátozott jövedelmét. A közgazdaságtan feltételezi, hogy racionálisan viselkedik: célja a hasznosság maximalizálása adott jövedelem és adott árak mellett.\n\nAz összhaszon egy jószág adott mennyiségének elfogyasztásából származó teljes hasznosság. A határhaszon az utolsóként elfogyasztott egység által okozott összhaszon-növekmény. Gossen I. törvénye szerint ugyanabból a jószágból minden további egység egyre kisebb határhaszonnal jár: az első pohár víz a szomjas embernek nagyon értékes, a negyedik már alig. Az összhaszon addig nő, amíg a határhaszon pozitív.\n\nA fogyasztó lehetőségeit a költségvetési korlát határolja: a jövedelem egyenlő a jószágokra fordított kiadások összegével (I = P_X · X + P_Y · Y). Ha a jövedelem nő, a költségvetési egyenes párhuzamosan kifelé tolódik, mert mindkét jószágból többet vehet. Ha csak az egyik jószág ára emelkedik, az egyenes elfordul: annak a jószágnak a tengelymetszete csökken, a másiké változatlan marad.\n\nKét jószág között a fogyasztó akkor van optimumban, ha elkölti a jövedelmét, és az egy pénzegységre jutó határhaszon minden jószágnál egyenlő (MU_X / P_X = MU_Y / P_Y) – ez Gossen II. törvénye. Ha az egyik jószágnál egy forint több hasznot hoz, érdemes oda átcsoportosítani a kiadást. Ebből vezethető le a kereslet törvénye: ha X ára nő, csökken az X-re jutó egy forintos határhaszon, ezért a fogyasztó kevesebbet vesz belőle, amíg a csökkenő határhaszon miatt az arány ismét ki nem egyenlítődik. Ceteris paribus tehát az ár emelkedésével a keresett mennyiség csökken.\n\nFontos megkülönböztetni két esetet. Ha a jószág saját ára változik, a keresleti görbe mentén mozgunk: ez a keresett mennyiség változása. Ha más tényező változik, maga a görbe tolódik el: ez a kereslet változása. Ilyen tényező a jövedelem (normál jószágnál növeli, alsóbbrendűnél csökkenti a keresletet), a helyettesítő javak ára (ha drágul a vaj, nő a margarin kereslete), a kiegészítő javak ára (ha drágul a benzin, csökken a nagy fogyasztású autók kereslete), az ízlés, a várakozások és a vásárlók száma.\n\nAz árrugalmasság a keresett mennyiség százalékos változása osztva az ár százalékos változásával. Ha abszolút értéke egynél nagyobb, a kereslet rugalmas, ha kisebb, rugalmatlan, ha pontosan egy, egységnyi rugalmasságú. Hipotetikus példa: ha egy buszbérlet ára 10 000 Ft-ról 12 000 Ft-ra nő (+20%), és havi 5000 helyett 4800 darabot vesznek (−4%), az árrugalmasság −4% / 20% = −0,2, a kereslet rugalmatlan. Az összkiadás 50 millió Ft-ról 57,6 millió Ft-ra nő. Rugalmatlan keresletnél tehát az áremelés növeli, rugalmas keresletnél csökkenti a fogyasztók összkiadását. Rugalmatlan jellemzően a szükségleti és a nehezen helyettesíthető javak kereslete.\n\nÖsszegezve: a keresleti görbe a fogyasztók hasznosságmaximalizáló döntéseinek összegzése, a rugalmasság pedig azt mutatja meg, mennyire érzékenyen reagálnak ezek a döntések az árra.",
+    "pointsCovered": [
+      { "id": "p1", "quote": "Gossen I. törvénye szerint ugyanabból a jószágból minden további egység egyre kisebb határhaszonnal jár" },
+      { "id": "p2", "quote": "Ha a jövedelem nő, a költségvetési egyenes párhuzamosan kifelé tolódik" },
+      { "id": "p3", "quote": "Ebből vezethető le a kereslet törvénye" },
+      { "id": "p4", "quote": "Ha más tényező változik, maga a görbe tolódik el: ez a kereslet változása." },
+      { "id": "p5", "quote": "az árrugalmasság −4% / 20% = −0,2, a kereslet rugalmatlan" }
+    ],
+    "notes": [
+      "Tartalmi pontosság (15 pont): mind az öt szempont teljes, a definíciók (összhaszon, határhaszon, költségvetési korlát, Gossen I. és II., árrugalmasság) pontosak, és minden szemponthoz tartozik példa.",
+      "Összefüggések (6 pont): a kereslet törvényét Gossen II. törvényéből vezeti le, a számpéldát kézzel ellenőrizhetően végigszámolja (5000 · 10 000 = 50 millió Ft, 4800 · 12 000 = 57,6 millió Ft), és a rugalmasságot az összkiadás változásával köti össze.",
+      "Szaknyelv (4 pont) és felépítés (5 pont): a fogyasztó céljától a döntésen át a keresletig halad, külön bekezdés jut minden szempontnak, és összegzéssel zárul; a keresett mennyiség és a kereslet változása következetesen elkülönül."
+    ]
+  }
+}

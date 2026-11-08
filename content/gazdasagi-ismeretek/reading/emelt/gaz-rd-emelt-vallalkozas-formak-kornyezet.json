@@ -1,0 +1,186 @@
+{
+  "schemaVersion": 1,
+  "id": "gaz-rd-emelt-vallalkozas-formak-kornyezet",
+  "subject": "gazdasagi-ismeretek",
+  "revision": 1,
+  "level": "emelt",
+  "source": "generated",
+  "topic": "vallalkozas",
+  "title": "Vállalkozási formák, profit, környezet, marketing és finanszírozás",
+  "createdAt": "2026-11-08",
+  "tags": [
+    "altalanos"
+  ],
+  "section": "reading",
+  "type": "feleletvalasztas",
+  "instructions": "Válassza ki minden kérdésnél az egyetlen helyes választ, és írja be a betűjelét! A 0. a megoldott példa.",
+  "example": {
+    "id": "0",
+    "kind": "choice",
+    "prompt": "Melyik gazdasági társaság minden tagja felel korlátlanul és egyetemlegesen a társaság tartozásaiért?",
+    "options": [
+      { "key": "A", "text": "közkereseti társaság (kkt.)" },
+      { "key": "B", "text": "korlátolt felelősségű társaság (kft.)" },
+      { "key": "C", "text": "zártkörűen működő részvénytársaság (zrt.)" },
+      { "key": "D", "text": "nyilvánosan működő részvénytársaság (nyrt.)" }
+    ],
+    "answer": "A",
+    "category": "csoportositas",
+    "explanation": "Helyes: A. A kkt. tagjai a társaság vagyonával nem fedezett tartozásokért saját vagyonukkal is korlátlanul és egyetemlegesen felelnek; a kft. és az rt. tagjai főszabály szerint csak a befizetett tőkéjüket kockáztatják."
+  },
+  "items": [
+    {
+      "id": "1",
+      "kind": "choice",
+      "prompt": "Mi jellemzi a betéti társaság (bt.) kültagját?",
+      "options": [
+        { "key": "A", "text": "A beltaggal együtt korlátlanul és egyetemlegesen felel a társaság tartozásaiért." },
+        { "key": "B", "text": "Ő vezeti a társaságot, a beltag csak tőkét ad." },
+        { "key": "C", "text": "A vagyoni hozzájárulását kockáztatja, a társaság tartozásaiért főszabály szerint nem felel." },
+        { "key": "D", "text": "A részvényei névértékéig felel a társaság tartozásaiért." }
+      ],
+      "answer": "C",
+      "category": "fogalomcsere",
+      "explanation": "Helyes: C. A bt.-ben legalább egy beltag korlátlanul felel, a kültag viszont főszabály szerint nem felel a társaság kötelezettségeiért: csak a befizetett vagyoni hozzájárulását veszítheti el.",
+      "wrongOptions": {
+        "A": "Korlátlanul és egyetemlegesen a beltag (illetve a kkt. minden tagja) felel; a kültag éppen ebben különbözik a beltagtól.",
+        "B": "Fordítva: az ügyvezetés jellemzően a beltagé, a kültag elsősorban tőkét ad.",
+        "D": "Részvény a részvénytársaságban van; a bt.-nek nincsenek részvényei."
+      }
+    },
+    {
+      "id": "2",
+      "kind": "choice",
+      "prompt": "Melyik állítás igaz a korlátolt felelősségű társaságra (kft.)?",
+      "options": [
+        { "key": "A", "text": "Törzstőkéje a tagok törzsbetéteiből áll, és a tagok főszabály szerint nem felelnek a társaság tartozásaiért." },
+        { "key": "B", "text": "Legalább két tag kell az alapításához, egyszemélyes kft. nem létezik." },
+        { "key": "C", "text": "Üzletrészeit a tőzsdén forgalmazzák." },
+        { "key": "D", "text": "A tagok a társaság minden tartozásáért teljes magánvagyonukkal felelnek." }
+      ],
+      "answer": "A",
+      "category": "definicio",
+      "explanation": "Helyes: A. A kft. törzstőkéje a tagok törzsbetéteiből tevődik össze; a tag kötelezettsége a törzsbetét szolgáltatására terjed ki, a társaság tartozásaiért főszabály szerint nem felel – innen a név: korlátolt felelősség.",
+      "wrongOptions": {
+        "B": "Kft.-t egyetlen tag is alapíthat (egyszemélyes kft.).",
+        "C": "Tőzsdére a nyrt. részvényei vezethetők; a kft. üzletrésze nem tőzsdei értékpapír.",
+        "D": "Ez a korlátlan felelősség, amely a kkt. tagjaira és a bt. beltagjára jellemző, nem a kft.-re."
+      }
+    },
+    {
+      "id": "3",
+      "kind": "choice",
+      "prompt": "Mi különbözteti meg a nyilvánosan működő részvénytársaságot (nyrt.) a zártkörűtől (zrt.)?",
+      "options": [
+        { "key": "A", "text": "Az nyrt. tagjai korlátlanul felelnek, a zrt. tagjai nem." },
+        { "key": "B", "text": "Az nyrt. alaptőkéje törzsbetétekből áll, a zrt.-é részvényekből." },
+        { "key": "C", "text": "Az nyrt.-nek nincs közgyűlése, a zrt.-nek van." },
+        { "key": "D", "text": "Az nyrt. részvényei tőzsdére vezethetők, és nyilvános forgalomban bárki megvásárolhatja őket." }
+      ],
+      "answer": "D",
+      "category": "fogalomcsere",
+      "explanation": "Helyes: D. Mindkét rt. alaptőkéje részvényekre oszlik, és a részvényesek főszabály szerint nem felelnek a társaság tartozásaiért; a különbség az, hogy az nyrt. részvényei nyilvánosan forgalomba hozhatók és tőzsdére vezethetők, a zrt.-éi nem.",
+      "wrongOptions": {
+        "A": "Egyik részvénytársaság részvényesei sem felelnek korlátlanul; főszabály szerint csak a részvényeik árát kockáztatják.",
+        "B": "Törzsbetét a kft.-ben van; mindkét rt. alaptőkéje részvényekből áll.",
+        "C": "A közgyűlés minden részvénytársaság legfőbb szerve, a nyilvánosan működőé is."
+      }
+    },
+    {
+      "id": "4",
+      "kind": "choice",
+      "prompt": "Egy fodrász otthagyja évi 5 millió Ft-os fizetésű alkalmazotti állását, és saját szalont nyit. Az első évben a bevétele 20 millió Ft, a kifizetett (explicit) költségei 14 millió Ft. Más alternatív költséggel ne számoljon! Mekkora a számviteli és a gazdasági profitja?",
+      "options": [
+        { "key": "A", "text": "számviteli profit 1 millió Ft, gazdasági profit 6 millió Ft" },
+        { "key": "B", "text": "számviteli profit 6 millió Ft, gazdasági profit 1 millió Ft" },
+        { "key": "C", "text": "számviteli profit 6 millió Ft, gazdasági profit 11 millió Ft" },
+        { "key": "D", "text": "mindkettő 6 millió Ft" }
+      ],
+      "answer": "B",
+      "category": "alapelv-alkalmazas",
+      "explanation": "Helyes: B. Számviteli profit = bevétel − explicit költségek = 20 − 14 = 6 millió Ft. A gazdasági profitnál az implicit költséget, a feláldozott fizetést (alternatív költség) is levonjuk: 20 − 14 − 5 = 1 millió Ft. Mivel a gazdasági profit pozitív, a vállalkozás jobb választás volt az alkalmazotti állásnál.",
+      "wrongOptions": {
+        "A": "A két értéket felcseréli: az implicit költséget a gazdasági profitnál kell levonni, ezért az a kisebb.",
+        "C": "A feláldozott fizetést hozzáadja, pedig költség, ezért le kell vonni.",
+        "D": "A számviteli profit valóban 6 millió Ft, de a gazdasági profit az alternatív költséget is figyelembe veszi, ezért kisebb."
+      }
+    },
+    {
+      "id": "5",
+      "kind": "choice",
+      "prompt": "Melyik a vállalkozás közvetlen (mikro-) környezetének eleme?",
+      "options": [
+        { "key": "A", "text": "a vállalkozás beszállítói és versenytársai" },
+        { "key": "B", "text": "a jegybanki alapkamat megváltozása" },
+        { "key": "C", "text": "a népesség elöregedése" },
+        { "key": "D", "text": "a mesterséges intelligencia terjedése a gazdaságban" }
+      ],
+      "answer": "A",
+      "category": "csoportositas",
+      "explanation": "Helyes: A. A mikrokörnyezet azokból a szereplőkből áll, akikkel a vállalkozás közvetlen kapcsolatban van, és akikre bizonyos mértékig hatni tud: vevők, beszállítók, versenytársak, bankok, helyi hatóságok.",
+      "wrongOptions": {
+        "B": "A kamatkörnyezet a gazdasági makrokörnyezet része: minden vállalkozásra hat, de az egyes cég nem tudja befolyásolni.",
+        "C": "A demográfiai változás a társadalmi makrokörnyezet eleme.",
+        "D": "Az általános technológiai fejlődés a technológiai makrokörnyezethez tartozik."
+      }
+    },
+    {
+      "id": "6",
+      "kind": "choice",
+      "prompt": "Egy asztalosüzem SWOT-elemzésében hová kerül a következő tény: „Elavult a géppark, ezért magas a selejtarány.”?",
+      "options": [
+        { "key": "A", "text": "erősségek (S)" },
+        { "key": "B", "text": "lehetőségek (O)" },
+        { "key": "C", "text": "gyengeségek (W)" },
+        { "key": "D", "text": "veszélyek (T)" }
+      ],
+      "answer": "C",
+      "category": "csoportositas",
+      "explanation": "Helyes: C. A géppark állapota a vállalkozás belső adottsága, és kedvezőtlen, ezért gyengeség. A SWOT-ban az erősségek és a gyengeségek belső, a lehetőségek és a veszélyek külső (környezeti) tényezők.",
+      "wrongOptions": {
+        "A": "Az erősség belső, de kedvező adottság; a magas selejtarány hátrány.",
+        "B": "A lehetőség külső, kedvező körülmény (pl. növekvő kereslet), nem a cég saját hiányossága.",
+        "D": "A veszély külső, kedvezőtlen körülmény (pl. új versenytárs); a saját elavult géppark belső tényező."
+      }
+    },
+    {
+      "id": "7",
+      "kind": "choice",
+      "prompt": "Egy üdítőgyártó cég közösségimédia-kampányt indít, és influenszerekkel működik együtt. A marketingmix (4P) melyik eleméről van szó?",
+      "options": [
+        { "key": "A", "text": "termék (product)" },
+        { "key": "B", "text": "ár (price)" },
+        { "key": "C", "text": "értékesítési csatorna, hely (place)" },
+        { "key": "D", "text": "marketingkommunikáció, promóció (promotion)" }
+      ],
+      "answer": "D",
+      "category": "csoportositas",
+      "explanation": "Helyes: D. A reklám, a közösségi média és az influenszer-együttműködés a vevők tájékoztatását és meggyőzését szolgálja – ez a marketingkommunikáció (promóció).",
+      "wrongOptions": {
+        "A": "A termék elem a kínálat tulajdonságairól (minőség, csomagolás, márka) szól; itt maga az üdítő nem változik.",
+        "B": "Az ár elem az árszint és az árazási döntések (kedvezmény, árdifferenciálás) köre; a kampány nem változtat az áron.",
+        "C": "A hely elem azt jelenti, hogyan és hol jut el a termék a vevőhöz (bolthálózat, webáruház); a kampány nem értékesítési csatorna."
+      }
+    },
+    {
+      "id": "8",
+      "kind": "choice",
+      "prompt": "Az alábbiak közül melyik a vállalkozás idegen (külső) finanszírozási forrása?",
+      "options": [
+        { "key": "A", "text": "a korábbi évek visszaforgatott nyeresége" },
+        { "key": "B", "text": "egy kereskedelmi banktól felvett beruházási hitel" },
+        { "key": "C", "text": "a tulajdonosok által befizetett jegyzett tőke" },
+        { "key": "D", "text": "a tulajdonosok tőkeemelése új üzletrészek átvételével" }
+      ],
+      "answer": "B",
+      "category": "csoportositas",
+      "explanation": "Helyes: B. A banki hitel idegen tőke: vissza kell fizetni, és kamatot kell fizetni utána. A saját tőkét a tulajdonosok adják, illetve a vállalkozás saját nyereségéből képződik.",
+      "wrongOptions": {
+        "A": "A visszaforgatott nyereség saját (belső) forrás: a vállalkozás a saját eredményét nem osztja ki, hanem újra befekteti.",
+        "C": "A jegyzett tőke a tulajdonosok befizetése, tehát saját tőke.",
+        "D": "A tőkeemelés a tulajdonosoktól érkezik, ezért szintén saját forrás, nem kell visszafizetni."
+      }
+    }
+  ],
+  "suggestedMinutes": 12
+}

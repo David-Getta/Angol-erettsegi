@@ -1,0 +1,226 @@
+{
+  "schemaVersion": 1,
+  "id": "gaz-rd-emelt-allam-piaci-kudarcok-koltsegvetes",
+  "subject": "gazdasagi-ismeretek",
+  "revision": 1,
+  "level": "emelt",
+  "source": "generated",
+  "topic": "allam",
+  "title": "Az állam szerepe: piaci kudarcok és a költségvetés",
+  "createdAt": "2026-11-08",
+  "tags": [
+    "altalanos"
+  ],
+  "section": "reading",
+  "type": "szovegertelmezes",
+  "instructions": "Olvassa el a szöveget, majd oldja meg a feladatokat! A 2–5. feladatban a helyzetekhez a közös listából válassza ki a megfelelő fogalmat (egy fogalom csak egyszer használható, kettő kimarad). A számítási feladatoknál csak az eredményt írja be. A 0. a megoldott példa.",
+  "passage": {
+    "title": "Miért és miből gazdálkodik az állam?",
+    "blocks": [
+      {
+        "heading": "Amikor a piac nem elég",
+        "text": "A piacgazdaságban a legtöbb jószág előállításáról és elosztásáról a piac dönt, vannak azonban helyzetek, amikor a piac magára hagyva nem hatékony eredményt hoz. Ezeket piaci kudarcoknak nevezzük. Ilyen a közjavak esete: a közvilágítás vagy az ország védelme esetében senkit sem lehet kizárni a fogyasztásból, és egy újabb fogyasztó nem csökkenti a többiek hasznát. Mivel fizetés nélkül is lehet élvezni a hasznukat, sokan potyautasként viselkednének, ezért magánvállalkozó nem állítaná elő őket elegendő mennyiségben."
+      },
+      {
+        "text": "Piaci kudarc az externália (külső gazdasági hatás) is: egy szereplő tevékenysége másoknak olyan költséget vagy hasznot okoz, amelyet a piaci ár nem tükröz. A folyóba szennyvizet engedő gyár negatív externáliát okoz a halászoknak, egy oltási program pedig azoknak is hasznos, akik nem oltatták be magukat, mert lassul a fertőzés terjedése. Az állam a negatív externáliát adóval vagy szabályozással, a pozitívat támogatással igyekszik kezelni. További piaci kudarc a piaci erőfölény (például a monopólium) és az aszimmetrikus információ, amikor az ügylet egyik fele lényegesen többet tud, mint a másik. Az állami beavatkozás végül azért is indokolt lehet, mert a piac által kialakított jövedelemelosztást a társadalom igazságtalannak tarthatja."
+      },
+      {
+        "heading": "A költségvetés",
+        "text": "Az állam feladatait az államháztartás finanszírozza, amelynek központi eleme a központi költségvetés; ezt törvényként az Országgyűlés fogadja el. A bevételek legnagyobb része adó. A közvetlen adókat (például a személyi jövedelemadót, SZJA) közvetlenül a jövedelem vagy a vagyon után fizetik, a közvetett adók (például az általános forgalmi adó, ÁFA) a termékek és szolgáltatások árába épülnek be, így terhüket a vásárló viseli. A kiadási oldalon szerepelnek a közszolgáltatások (oktatás, egészségügy), a szociális juttatások (nyugdíj, családtámogatás), a beruházások és az államadósság kamatai. Az államháztartás gazdálkodását az Országgyűlés szerveként az Állami Számvevőszék ellenőrzi."
+      },
+      {
+        "heading": "Egy kitalált ország adatai",
+        "text": "Egy kitalált ország központi költségvetésének egy évi bevétele 24 000 milliárd pénzegység, kiadása 25 500 milliárd pénzegység volt, a GDP pedig 60 000 milliárd pénzegység. A hiányt az állam hitelfelvétellel, állampapírok kibocsátásával fedezte, ezért az államadósság az év során nőtt. Ha egy ország tartósan hiányt halmoz fel, egyre több kamatot kell fizetnie, és a kamatkiadások a többi kiadás elől veszik el a forrást."
+      }
+    ]
+  },
+  "options": [
+    {
+      "key": "A",
+      "text": "közjószág"
+    },
+    {
+      "key": "B",
+      "text": "negatív externália"
+    },
+    {
+      "key": "C",
+      "text": "pozitív externália"
+    },
+    {
+      "key": "D",
+      "text": "piaci erőfölény"
+    },
+    {
+      "key": "E",
+      "text": "aszimmetrikus információ"
+    },
+    {
+      "key": "F",
+      "text": "közvetett adó"
+    }
+  ],
+  "example": {
+    "id": "0",
+    "kind": "text",
+    "prompt": "Hogyan nevezi a szöveg azokat a helyzeteket, amikor a piac magára hagyva nem hatékony eredményt hoz?",
+    "answer": [
+      "piaci kudarc",
+      "piaci kudarcok",
+      "piaci kudarcnak",
+      "piaci kudarcoknak"
+    ],
+    "maxWords": 2,
+    "category": "definicio",
+    "evidence": "Ezeket piaci kudarcoknak nevezzük.",
+    "explanation": "Piaci kudarc. Így nevezzük azokat a helyzeteket, amikor a piac magára hagyva nem hatékony eredményt hoz (közjavak, externáliák, piaci erőfölény, aszimmetrikus információ) – ezek adnak okot az állami beavatkozásra."
+  },
+  "items": [
+    {
+      "id": "1",
+      "kind": "choice",
+      "prompt": "Melyik két tulajdonság jellemzi a szöveg szerint a tiszta közjavakat?",
+      "options": [
+        {
+          "key": "A",
+          "text": "ingyenesek, és mindig állami tulajdonban vannak"
+        },
+        {
+          "key": "B",
+          "text": "a fogyasztásból bárki kizárható, és a fogyasztók versengenek értük"
+        },
+        {
+          "key": "C",
+          "text": "a fogyasztásból senki sem zárható ki, és egy újabb fogyasztó nem csökkenti a többiek hasznát"
+        },
+        {
+          "key": "D",
+          "text": "csak a fizetőképes kereslet számára állítják elő, és áruk a piacon alakul ki"
+        }
+      ],
+      "answer": "C",
+      "category": "definicio",
+      "evidence": "senkit sem lehet kizárni a fogyasztásból, és egy újabb fogyasztó nem csökkenti a többiek hasznát",
+      "explanation": "Helyes: C. A tiszta közjószág két ismérve a nem kizárhatóság (senki sem zárható ki a fogyasztásból) és a nem rivalizáló fogyasztás (egy újabb fogyasztó nem csökkenti a többiek hasznát). Emiatt jelentkezik a potyautas-probléma, és ezért a piac nem állítja elő elegendő mennyiségben.",
+      "wrongOptions": {
+        "A": "A közjószág nem ingyenes, csak nem közvetlenül fizetünk érte: az adókból finanszírozzák. A tulajdonforma nem ismérv – a jószág tulajdonságai (kizárhatóság, rivalizálás) döntenek.",
+        "B": "Ez éppen a magánjavak jellemzése: a kizárható és rivalizáló fogyasztású jószág (pl. egy szendvics) magánjószág.",
+        "D": "Ez a piaci (magán)javak működése; a közjavaknál éppen az a probléma, hogy a piac nem tud árat érvényesíteni, mert a nem fizetők sem zárhatók ki."
+      }
+    },
+    {
+      "id": "2",
+      "kind": "match",
+      "prompt": "Egy vegyi üzem füstje miatt a környéken élők gyakrabban betegszenek meg, de ezt a kárt az üzem termékeinek ára nem tartalmazza.",
+      "answer": "B",
+      "category": "csoportositas",
+      "explanation": "Helyes: B, negatív externália. Az üzem tevékenysége harmadik feleknek (a lakóknak) költséget okoz, amelyet a piaci ár nem tükröz – az üzem ezért társadalmi szempontból túl sokat termel. Kezelése: környezetvédelmi adó, kibocsátási határérték.",
+      "wrongOptions": {
+        "C": "Pozitív externáliánál a harmadik fél hasznot élvez; itt kárt szenved.",
+        "D": "Az üzem méretéről, piaci részesedéséről a helyzet semmit nem mond – a probléma a meg nem fizetett kár."
+      }
+    },
+    {
+      "id": "3",
+      "kind": "match",
+      "prompt": "Egy használtautó-kereskedő jóval többet tud az eladott autók rejtett hibáiról, mint a vevők.",
+      "answer": "E",
+      "category": "csoportositas",
+      "explanation": "Helyes: E, aszimmetrikus információ. Az ügylet egyik fele (az eladó) lényegesen többet tud, mint a másik (a vevő), ezért a vevő nem tud megalapozott döntést hozni. Állami válasz lehet a kötelező tájékoztatás, a szavatosság és a fogyasztóvédelem.",
+      "wrongOptions": {
+        "D": "A piaci erőfölény azt jelenti, hogy egy szereplő az árat a verseny ellenére befolyásolni tudja; itt az információ egyenlőtlen eloszlása a gond.",
+        "B": "Nem harmadik fél szenved kárt, hanem maga a vevő az ügyletben – ez nem külső hatás."
+      }
+    },
+    {
+      "id": "4",
+      "kind": "match",
+      "prompt": "Egy város árvízvédelmi gátja mindenkit megvéd, aki mögötte él, akár hozzájárult az építéséhez, akár nem.",
+      "answer": "A",
+      "category": "csoportositas",
+      "explanation": "Helyes: A, közjószág. A gát védelméből senki sem zárható ki (nem kizárható), és egy újabb lakó nem csökkenti a többiek védelmét (nem rivalizáló). A potyautas-probléma miatt a piac nem építené meg, ezért az állam vagy az önkormányzat finanszírozza adóbevételből.",
+      "wrongOptions": {
+        "C": "A gát nem mellékhatásként, egy másik tevékenység melléktermékeként okoz hasznot, hanem maga a gát a jószág, amelynek fogyasztásából senki sem zárható ki."
+      }
+    },
+    {
+      "id": "5",
+      "kind": "match",
+      "prompt": "A szomszéd gondosan ápolt virágoskertje a járókelőknek is örömet okoz, pedig ők semmit sem fizetnek érte.",
+      "answer": "C",
+      "category": "csoportositas",
+      "explanation": "Helyes: C, pozitív externália. A kerttulajdonos tevékenysége harmadik feleknek (a járókelőknek) olyan hasznot okoz, amelyet a piaci ár nem tükröz; az ilyen tevékenységből a piac társadalmi szempontból túl keveset hoz létre, ezért az állam támogatással ösztönözheti.",
+      "wrongOptions": {
+        "A": "A kert a tulajdonos magánjószága; a járókelők haszna a tevékenység mellékhatása, külső hatás.",
+        "B": "Negatív externáliánál a harmadik fél kárt szenved; itt örömet, hasznot élvez."
+      }
+    },
+    {
+      "id": "6",
+      "kind": "tf",
+      "prompt": "A szöveg szerint az ÁFA közvetlen adó, mert közvetlenül a vásárló viseli a terhét.",
+      "answer": "F",
+      "category": "fogalomcsere",
+      "evidence": "a közvetett adók (például az általános forgalmi adó, ÁFA) a termékek és szolgáltatások árába épülnek be",
+      "explanation": "Hamis. Az ÁFA közvetett adó: a termék árába épül be, a vállalkozás fizeti be az államnak, de a terhét a vásárló viseli. Közvetlen adó például az SZJA, amelyet közvetlenül a jövedelem után fizetnek."
+    },
+    {
+      "id": "7",
+      "kind": "text",
+      "prompt": "Mekkora volt a kitalált ország központi költségvetésének hiánya (milliárd pénzegységben)?",
+      "answer": [
+        "1500",
+        "1 500",
+        "1500 milliárd",
+        "1 500 milliárd",
+        "1500 milliárd pénzegység",
+        "1 500 milliárd pénzegység",
+        "1500 milliárd pe",
+        "1 500 milliárd pe",
+        "-1500",
+        "-1 500",
+        "−1500",
+        "−1 500"
+      ],
+      "category": "szamitas",
+      "evidence": "bevétele 24 000 milliárd pénzegység, kiadása 25 500 milliárd pénzegység volt",
+      "explanation": "1 500 milliárd pénzegység. Költségvetési egyenleg = bevétel − kiadás = 24 000 − 25 500 = −1 500 milliárd; a negatív egyenleg a hiány, nagysága 1 500 milliárd pénzegység (az előjeles −1 500 is helyes)."
+    },
+    {
+      "id": "8",
+      "kind": "text",
+      "prompt": "A GDP hány százalékát tette ki a költségvetési hiány?",
+      "answer": [
+        "2,5",
+        "2.5",
+        "2,5%",
+        "2.5%",
+        "2,5 %",
+        "2.5 %",
+        "2,5 százalék",
+        "2.5 százalék"
+      ],
+      "category": "szamitas",
+      "explanation": "2,5%. Hiány / GDP × 100 = 1 500 / 60 000 × 100 = 2,5%. A hiányt mindig a GDP-hez viszonyítjuk, mert így lehet a különböző méretű gazdaságokat és éveket összehasonlítani."
+    }
+  ],
+  "glossary": [
+    {
+      "term": "potyautas",
+      "meaning": "aki egy jószág hasznát élvezi, de nem járul hozzá a költségeihez"
+    },
+    {
+      "term": "externália",
+      "meaning": "külső gazdasági hatás: egy szereplő tevékenysége által másoknak okozott, piaci áron meg nem jelenő költség vagy haszon"
+    },
+    {
+      "term": "aszimmetrikus információ",
+      "meaning": "az ügyletben részt vevő felek eltérő mértékben informáltak"
+    },
+    {
+      "term": "államháztartás",
+      "meaning": "az állami feladatok finanszírozására szolgáló pénzügyi rendszer (központi költségvetés, elkülönített alapok, önkormányzatok)"
+    }
+  ],
+  "suggestedMinutes": 12
+}

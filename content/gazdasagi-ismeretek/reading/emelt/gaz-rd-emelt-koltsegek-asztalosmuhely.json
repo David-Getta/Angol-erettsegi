@@ -1,0 +1,210 @@
+{
+  "schemaVersion": 1,
+  "id": "gaz-rd-emelt-koltsegek-asztalosmuhely",
+  "subject": "gazdasagi-ismeretek",
+  "revision": 1,
+  "level": "emelt",
+  "source": "generated",
+  "topic": "termeles-koltseg",
+  "title": "Költségfajták és profit: egy asztalosműhely heti adatai",
+  "createdAt": "2026-11-08",
+  "tags": [
+    "altalanos"
+  ],
+  "section": "reading",
+  "type": "szamitas-rovid",
+  "instructions": "Olvassa el egy (kitalált) asztalosműhely heti költségadatait, majd végezze el a számításokat! Csak az eredményt írja be; a pénzösszegeket ezer Ft-ban adja meg (a tizedes értékeket egy tizedesjegyre kerekítve), a mennyiségeket darabban. A 0. a megoldott példa.",
+  "passage": {
+    "title": "Egy asztalosműhely heti költségei (hipotetikus adatok)",
+    "blocks": [
+      {
+        "text": "Egy kis asztalosműhely egyféle étkezőasztalt gyárt. Rövid távon a műhely bérleti díja és a gépek törlesztőrészlete a termelt mennyiségtől független, a faanyag, a festék és a besegítő munkások bére viszont a termeléssel együtt nő. A piacon sok hasonló műhely kínál ilyen asztalt, ezért a műhely árelfogadó: egy asztal ára 60 ezer Ft, és ez a vizsgált mennyiségeknél nem változik."
+      },
+      {
+        "text": "A heti összköltség (TC) a termelt mennyiség függvényében, ezer Ft-ban: 0 asztal: 100; 1 asztal: 140; 2 asztal: 170; 3 asztal: 195; 4 asztal: 230; 5 asztal: 280; 6 asztal: 345."
+      },
+      {
+        "text": "Képletek: TC = FC + VC; AC = TC / Q; AVC = VC / Q; MC = ΔTC / ΔQ (itt mindig az utolsó, egy darab többlettermelésre); TR = P × Q; profit = TR − TC."
+      }
+    ]
+  },
+  "example": {
+    "id": "0",
+    "kind": "text",
+    "prompt": "Mekkora a műhely heti fix költsége (ezer Ft)?",
+    "answer": [
+      "100",
+      "100 ezer Ft",
+      "100 ezer",
+      "100 eFt",
+      "100 ezer forint",
+      "100000",
+      "100000 Ft",
+      "100 000",
+      "100 000 Ft"
+    ],
+    "category": "szamitas",
+    "explanation": "100 ezer Ft. A fix költség a termelés nagyságától független, ezért akkor is felmerül, ha a műhely egyetlen asztalt sem gyárt: FC = TC(Q = 0) = 100 ezer Ft."
+  },
+  "items": [
+    {
+      "id": "1",
+      "kind": "text",
+      "prompt": "Mekkora a változó költség heti 4 asztal gyártásakor (ezer Ft)?",
+      "answer": [
+        "130",
+        "130 ezer Ft",
+        "130 ezer",
+        "130 eFt",
+        "130 ezer forint",
+        "130000",
+        "130000 Ft",
+        "130 000",
+        "130 000 Ft"
+      ],
+      "category": "szamitas",
+      "explanation": "130 ezer Ft. VC = TC − FC = 230 − 100 = 130 ezer Ft. Gyakori hiba, hogy a teljes 230 ezer Ft-ot tekintik változó költségnek – a fix költséget le kell vonni."
+    },
+    {
+      "id": "2",
+      "kind": "text",
+      "prompt": "Mekkora az átlagköltség (AC) heti 4 asztal gyártásakor (ezer Ft/db)?",
+      "answer": [
+        "57,5",
+        "57.5",
+        "57,5 ezer Ft",
+        "57,5 ezer",
+        "57,5 eFt",
+        "57,5 ezer forint",
+        "57,5 ezer Ft/db",
+        "57.5 ezer Ft",
+        "57.5 ezer",
+        "57.5 eFt",
+        "57.5 ezer forint",
+        "57.5 ezer Ft/db",
+        "57500",
+        "57500 Ft",
+        "57 500",
+        "57 500 Ft"
+      ],
+      "category": "szamitas",
+      "explanation": "57,5 ezer Ft/db. AC = TC / Q = 230 / 4 = 57,5 ezer Ft/db. Az átlagköltségbe a fix költség is beletartozik (ATC = AFC + AVC = 25 + 32,5 = 57,5)."
+    },
+    {
+      "id": "3",
+      "kind": "text",
+      "prompt": "Mekkora az 5. asztal határköltsége (MC, ezer Ft/db)?",
+      "answer": [
+        "50",
+        "50 ezer Ft",
+        "50 ezer",
+        "50 eFt",
+        "50 ezer forint",
+        "50 ezer Ft/db",
+        "50000",
+        "50000 Ft",
+        "50 000",
+        "50 000 Ft"
+      ],
+      "category": "szamitas",
+      "explanation": "50 ezer Ft/db. MC = ΔTC / ΔQ = (280 − 230) / (5 − 4) = 50 ezer Ft. A határköltség csak a változó költségek változásából adódik, a fix költség nem befolyásolja (ΔVC = 180 − 130 = 50 is ugyanezt adja)."
+    },
+    {
+      "id": "4",
+      "kind": "text",
+      "prompt": "Mekkora az átlagos változó költség (AVC) heti 3 asztal gyártásakor (ezer Ft/db, egy tizedesjegyre kerekítve)?",
+      "answer": [
+        "31,7",
+        "31.7",
+        "31,67",
+        "31.67",
+        "31,7 ezer Ft",
+        "31.7 ezer Ft",
+        "31,7 ezer Ft/db",
+        "31.7 ezer Ft/db",
+        "31,7 ezer",
+        "31.7 ezer",
+        "31 667",
+        "31667",
+        "31 667 Ft",
+        "31667 Ft",
+        "31 700",
+        "31700"
+      ],
+      "category": "szamitas",
+      "explanation": "≈ 31,7 ezer Ft/db. VC(3) = 195 − 100 = 95 ezer Ft; AVC = VC / Q = 95 / 3 = 31,666… ≈ 31,7 ezer Ft/db. Ez a táblázat legkisebb AVC-értéke (1 db: 40; 2 db: 35; 4 db: 32,5; 5 db: 36): rövid távon ez az üzemszüneti pont, ennél alacsonyabb ár mellett jobb leállni."
+    },
+    {
+      "id": "5",
+      "kind": "text",
+      "prompt": "Mekkora a műhely heti profitja 5 asztal gyártásakor és eladásakor (ezer Ft)?",
+      "answer": [
+        "20",
+        "20 ezer Ft",
+        "20 ezer",
+        "20 eFt",
+        "20 ezer forint",
+        "20000",
+        "20000 Ft",
+        "20 000",
+        "20 000 Ft",
+        "+20",
+        "+20 ezer Ft"
+      ],
+      "category": "szamitas",
+      "explanation": "+20 ezer Ft. TR = P × Q = 60 × 5 = 300 ezer Ft; profit = TR − TC = 300 − 280 = 20 ezer Ft."
+    },
+    {
+      "id": "6",
+      "kind": "text",
+      "prompt": "Hány asztalt érdemes hetente gyártania a profitmaximalizáló műhelynek 60 ezer Ft-os ár mellett (db)?",
+      "answer": [
+        "5",
+        "5 db",
+        "5 darab",
+        "5 asztal",
+        "5 asztalt",
+        "5 db/hét",
+        "öt"
+      ],
+      "category": "alapelv-alkalmazas",
+      "explanation": "5 db. Árelfogadó vállalatnál a határbevétel az ár (MR = P = 60), és addig érdemes bővíteni, amíg MR ≥ MC. Az 5. asztal MC-je 50 < 60, tehát növeli a profitot (+10); a 6. asztalé 65 > 60, tehát csökkentené (−5). Ellenőrzés: profit 4 db-nál 10, 5 db-nál 20, 6 db-nál 15 ezer Ft."
+    },
+    {
+      "id": "7",
+      "kind": "text",
+      "prompt": "Legalább hány asztalt kell hetente gyártania és eladnia a műhelynek 60 ezer Ft-os ár mellett ahhoz, hogy a profitja ne legyen negatív (db)?",
+      "answer": [
+        "4",
+        "4 db",
+        "4 darab",
+        "4 asztal",
+        "4 asztalt",
+        "4 db/hét",
+        "négy"
+      ],
+      "category": "szamitas",
+      "explanation": "4 db. 3 asztalnál TR = 180 < TC = 195, a profit −15 ezer Ft; 4 asztalnál TR = 240 > TC = 230, a profit +10 ezer Ft. A fedezeti pont (TR = TC) tehát 3 és 4 db között van, a nem negatív profithoz legalább 4 asztal kell."
+    },
+    {
+      "id": "8",
+      "kind": "text",
+      "prompt": "Tegyük fel, hogy az asztal piaci ára – minden egyéb változatlansága mellett – 30 ezer Ft-ra esik. Hány asztalt gyártson rövid távon a veszteségminimalizáló műhely (db)?",
+      "answer": [
+        "0",
+        "0 db",
+        "0 darab",
+        "0 asztal",
+        "0 asztalt",
+        "egyet sem",
+        "semennyit",
+        "nulla",
+        "egyetlen asztalt sem",
+        "egy asztalt sem"
+      ],
+      "category": "alapelv-alkalmazas",
+      "explanation": "0 db (üzemszünet). 30 ezer Ft-os ár alatta van a legkisebb átlagos változó költségnek (≈ 31,7 ezer Ft/db), így egyetlen termelési szinten sem fedezi a bevétel még a változó költséget sem. Leállva a veszteség csak a fix költség (−100 ezer Ft), termelve nagyobb: 3 db-nál 90 − 195 = −105, 4 db-nál 120 − 230 = −110 ezer Ft. Rövid távon akkor érdemes termelni, ha P ≥ min AVC."
+    }
+  ],
+  "suggestedMinutes": 15
+}

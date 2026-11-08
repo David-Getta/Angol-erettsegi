@@ -1,0 +1,98 @@
+{
+  "schemaVersion": 1,
+  "id": "gaz-wr-emelt-elemzes-profitmaximalas-taskamuhely",
+  "subject": "gazdasagi-ismeretek",
+  "revision": 1,
+  "level": "emelt",
+  "source": "generated",
+  "topic": "termeles-koltseg",
+  "title": "Profitmaximalizálás a határbevétel és a határköltség alapján: egy táskaműhely adatai",
+  "createdAt": "2026-11-08",
+  "tags": [
+    "altalanos"
+  ],
+  "section": "writing",
+  "type": "elemzes",
+  "taskNumber": 2,
+  "situation": "Egy kis kézműves műhely egyedi, formatervezési mintaoltalom alatt álló bőrtáskát gyárt. A dizájn miatt a táskának nincs közeli helyettesítője, ezért a műhely maga határozza meg az árat, de ha többet akar eladni, minden vevő számára egységesen csökkentenie kell. A táblázat a napi eladható mennyiséget, a hozzá tartozó legmagasabb árat és a napi összköltséget mutatja (hipotetikus adatok).\n\nTáblázat (szöveges formában):\n– 0 db/nap: ár –; összköltség 12 ezer Ft\n– 1 db/nap: ár 20 ezer Ft/db; összköltség 18 ezer Ft\n– 2 db/nap: ár 18 ezer Ft/db; összköltség 22 ezer Ft\n– 3 db/nap: ár 16 ezer Ft/db; összköltség 28 ezer Ft\n– 4 db/nap: ár 14 ezer Ft/db; összköltség 35 ezer Ft\n– 5 db/nap: ár 12 ezer Ft/db; összköltség 47 ezer Ft\n– 6 db/nap: ár 10 ezer Ft/db; összköltség 60 ezer Ft\n\nA határbevételt és a határköltséget mindig egy darab többletre számítsa! Válaszoljon az alábbi kérdésekre, a számításokat képlettel, behelyettesítéssel és mértékegységgel írja le!",
+  "points": [
+    {
+      "id": "p1",
+      "text": "Számítsa ki minden termelési szinten az árbevételt (TR) és a határbevételt (MR)!"
+    },
+    {
+      "id": "p2",
+      "text": "Számítsa ki minden termelési szinten a határköltséget (MC) és az átlagköltséget (AC)!"
+    },
+    {
+      "id": "p3",
+      "text": "Számítsa ki a profitot minden szinten! Hány táskát gyártson naponta a profitmaximalizáló műhely, milyen áron? Indokolja a határbevétel és a határköltség összevetésével!"
+    },
+    {
+      "id": "p4",
+      "text": "A műhely napi bérleti díja 8 ezer Ft-tal emelkedik. Hogyan változik a profitmaximalizáló mennyiség és a profit? Indokolja!"
+    },
+    {
+      "id": "p5",
+      "text": "Magyarázza meg, miért kisebb a műhely határbevétele az árnál, és hasonlítsa össze a helyzetét egy tökéletesen versenyző (árelfogadó) vállalatéval!"
+    }
+  ],
+  "suggestedMinutes": 50,
+  "usefulPhrases": [
+    {
+      "en": "TR = P × Q; MR = ΔTR / ΔQ",
+      "hu": "árbevétel, illetve a pótlólagos egység eladásából származó bevételnövekmény (ezer Ft)"
+    },
+    {
+      "en": "MC = ΔTC / ΔQ; AC = TC / Q",
+      "hu": "határköltség, illetve egy darabra jutó összköltség"
+    },
+    {
+      "en": "MR = MC",
+      "hu": "a profitmaximalizálás feltétele: addig bővít, amíg MR ≥ MC"
+    },
+    {
+      "en": "ármeghatározó – árelfogadó",
+      "hu": "piaci erővel rendelkező vállalat (MR < P) – tökéletesen versenyző vállalat (MR = P)"
+    },
+    {
+      "en": "a fix költség nem hat a határköltségre",
+      "hu": "a bérleti díj változása a profitot módosítja, az optimális mennyiséget nem"
+    }
+  ],
+  "checklistExtra": [
+    "Minden számításnál szerepel a képlet, a behelyettesítés és a mértékegység (ezer Ft, ezer Ft/db).",
+    "A döntést az MR és az MC összevetésével indokoltam, nem az átlagköltséggel vagy az árbevétellel."
+  ],
+  "modelAnswer": {
+    "text": "1. Árbevétel és határbevétel\nÁrbevétel: TR = P × Q. Határbevétel: MR = ΔTR / ΔQ (itt mindig egy darab többletre).\n1 db: TR = 20 × 1 = 20 ezer Ft; MR = (20 – 0) / 1 = 20 ezer Ft\n2 db: TR = 18 × 2 = 36 ezer Ft; MR = 36 – 20 = 16 ezer Ft\n3 db: TR = 16 × 3 = 48 ezer Ft; MR = 48 – 36 = 12 ezer Ft\n4 db: TR = 14 × 4 = 56 ezer Ft; MR = 56 – 48 = 8 ezer Ft\n5 db: TR = 12 × 5 = 60 ezer Ft; MR = 60 – 56 = 4 ezer Ft\n6 db: TR = 10 × 6 = 60 ezer Ft; MR = 60 – 60 = 0 ezer Ft\nA határbevétel minden szinten kisebb az árnál (az 1. darabot kivéve), és gyorsabban csökken, mint az ár.\n\n2. Határköltség és átlagköltség\nHatárköltség: MC = ΔTC / ΔQ; átlagköltség: AC = TC / Q. A fix költség a 0 db-hoz tartozó összköltség: FC = 12 ezer Ft.\n1 db: MC = 18 – 12 = 6 ezer Ft; AC = 18 / 1 = 18 ezer Ft/db\n2 db: MC = 22 – 18 = 4 ezer Ft; AC = 22 / 2 = 11 ezer Ft/db\n3 db: MC = 28 – 22 = 6 ezer Ft; AC = 28 / 3 ≈ 9,33 ezer Ft/db\n4 db: MC = 35 – 28 = 7 ezer Ft; AC = 35 / 4 = 8,75 ezer Ft/db\n5 db: MC = 47 – 35 = 12 ezer Ft; AC = 47 / 5 = 9,4 ezer Ft/db\n6 db: MC = 60 – 47 = 13 ezer Ft; AC = 60 / 6 = 10 ezer Ft/db\nA határköltség előbb csökken, majd nő (a csökkenő hozadék miatt), az átlagköltség 4 db-nál a legkisebb, és ott a határköltség (7) még alatta van, 5 db-nál (12) már felette – ezért kezd az AC nőni.\n\n3. Profit és a profitmaximalizáló mennyiség\nProfit = TR – TC.\n0 db: 0 – 12 = –12 ezer Ft\n1 db: 20 – 18 = 2 ezer Ft\n2 db: 36 – 22 = 14 ezer Ft\n3 db: 48 – 28 = 20 ezer Ft\n4 db: 56 – 35 = 21 ezer Ft\n5 db: 60 – 47 = 13 ezer Ft\n6 db: 60 – 60 = 0 ezer Ft\nA profitmaximalizálás szabálya: addig érdemes növelni a termelést, amíg a pótlólagos egység határbevétele legalább akkora, mint a határköltsége (MR ≥ MC); folytonos esetben a profit ott maximális, ahol MR = MC. A 4. táska MR-je 8 ezer Ft, MC-je 7 ezer Ft, tehát még 1 ezer Ft-tal növeli a profitot. Az 5. táska MR-je csak 4 ezer Ft, MC-je viszont 12 ezer Ft, tehát 8 ezer Ft-tal csökkentené a profitot (21 – 8 = 13). Ezért a profitmaximalizáló mennyiség napi 4 táska, a hozzá tartozó ár a keresleti adatok szerint 14 ezer Ft/db, a maximális profit 21 ezer Ft naponta.\n\n4. A bérleti díj emelkedésének hatása\nA napi bérleti díj fix költség, ezért az összköltség minden termelési szinten 8 ezer Ft-tal nő, a határköltség viszont egyik szinten sem változik, mert a fix költség nem függ a mennyiségtől (pl. 4 db-nál MC = 43 – 36 = 7 ezer Ft marad). Mivel az MR és az MC változatlan, a profitmaximalizáló mennyiség továbbra is 4 db, az ár 14 ezer Ft. A profit 8 ezer Ft-tal csökken: 56 – 43 = 13 ezer Ft. A műhely nem áll le, mert a profit továbbra is pozitív; a fix költség változása a „mennyit termeljek?” döntést nem befolyásolja, csak azt, hogy hosszú távon megéri-e a piacon maradni.\n\n5. Miért kisebb a határbevétel az árnál?\nA műhely egyedi, oltalom alatt álló dizájnja miatt nincs közeli helyettesítője, ezért a vállalkozás ármeghatározó, és lefelé hajló keresleti görbével szembesül: ha többet akar eladni, minden vevőnek csökkentenie kell az árat. A 4. táska 14 ezer Ft-ért kel el, de az első három táskán darabonként 2 ezer Ft-ot veszít (16-ról 14-re csökken az ár), így MR = 14 – 3 × 2 = 8 ezer Ft < P. Egy tökéletesen versenyző, árelfogadó vállalatnál MR = P, mert a piaci áron bármennyit eladhat. Ha a műhely minden táskát 14 ezer Ft-ért adhatna el, a 6. darabig bővítené a termelést (MC = 12, illetve 13 ezer Ft ≤ 14). A piaci erő miatt tehát a vállalkozás kisebb mennyiséget kínál magasabb áron, mint versenyző piacon – ez a monopolhelyzet (piaci erő) következménye, amely a fogyasztók számára kedvezőtlen, és társadalmi veszteséggel jár.",
+    "pointsCovered": [
+      {
+        "id": "p1",
+        "quote": "4 db: TR = 14 × 4 = 56 ezer Ft; MR = 56 – 48 = 8 ezer Ft"
+      },
+      {
+        "id": "p2",
+        "quote": "5 db: MC = 47 – 35 = 12 ezer Ft; AC = 47 / 5 = 9,4 ezer Ft/db"
+      },
+      {
+        "id": "p3",
+        "quote": "Ezért a profitmaximalizáló mennyiség napi 4 táska, a hozzá tartozó ár a keresleti adatok szerint 14 ezer Ft/db, a maximális profit 21 ezer Ft naponta."
+      },
+      {
+        "id": "p4",
+        "quote": "Mivel az MR és az MC változatlan, a profitmaximalizáló mennyiség továbbra is 4 db, az ár 14 ezer Ft. A profit 8 ezer Ft-tal csökken: 56 – 43 = 13 ezer Ft."
+      },
+      {
+        "id": "p5",
+        "quote": "Egy tökéletesen versenyző, árelfogadó vállalatnál MR = P, mert a piaci áron bármennyit eladhat."
+      }
+    ],
+    "notes": [
+      "Adatértelmezés és számítás: mind a hat termelési szinten szerepel a TR, az MR, az MC, az AC és a profit képlettel, behelyettesítéssel és mértékegységgel; a 3 db-os átlagköltség helyesen kerekítve (≈ 9,33 ezer Ft/db), a fix költséget a 0 db-os sorból olvassa ki.",
+      "Következtetés: a döntés az MR ≥ MC (folytonosan MR = MC) szabályra épül, és a 4→5 db-os lépés profitcsökkenését (MR 4 – MC 12 = –8 ezer Ft) számszerűen is igazolja; a profitsor ezt ellenőrzi (21 > 13).",
+      "A bérleti díjas kérdésnél kimondja a kulcsösszefüggést: a fix költség nem változtatja a határköltséget, ezért az optimális mennyiséget sem, csak a profitot – ez a tanult elv alkalmazása új helyzetre.",
+      "Az MR < P magyarázata konkrét számpéldán (14 – 3 × 2 = 8) mutatja be az egységes árcsökkentés hatását, és összekapcsolja a piaci formák témakörével (ármeghatározó vs. árelfogadó, kisebb mennyiség magasabb áron)."
+    ]
+  }
+}

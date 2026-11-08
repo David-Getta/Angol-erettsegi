@@ -1,0 +1,86 @@
+{
+  "schemaVersion": 1,
+  "id": "gaz-sp-emelt-tetel-allam-gazdasagi-szerepe",
+  "subject": "gazdasagi-ismeretek",
+  "revision": 1,
+  "level": "emelt",
+  "source": "generated",
+  "topic": "allam",
+  "title": "Az állam gazdasági szerepvállalása, a költségvetés",
+  "createdAt": "2026-11-08",
+  "tags": [
+    "altalanos"
+  ],
+  "section": "speaking",
+  "type": "tetel",
+  "partNumber": 1,
+  "instructionsHu": "Fejtse ki a tételt! Mutassa be, miért és milyen területeken avatkozik be az állam a piacgazdaság működésébe (piaci kudarcok, közjavak, externáliák), az állam gazdasági funkcióit, a költségvetési politika eszközeit és az államháztartás bevételeit és kiadásait, a költségvetési hiány és az államadósság összefüggését, valamint a jóléti állam és az újraelosztás lényegét! Felkészülési idő: 30 perc.",
+  "prompts": [
+    "Miért van szükség állami beavatkozásra egy piacgazdaságban? Sorold fel a piaci kudarcokat!",
+    "Határozd meg a közjószág fogalmát és két ismérvét! Mi a potyautas-probléma? Mondj példát!",
+    "Mi az externália? Mondj példát pozitív és negatív externáliára, és mutasd be, hogyan kezelheti az állam!",
+    "Mutasd be az állam gazdasági funkcióit (szabályozás, allokáció, újraelosztás, stabilizáció)!",
+    "Mi a költségvetés? Csoportosítsd a bevételeket és a kiadásokat! Mi a különbség a közvetlen és a közvetett adók között?",
+    "Hogyan függ össze a költségvetési hiány és az államadósság? Milyen kockázatai vannak a tartós eladósodásnak?",
+    "Mi a jóléti állam lényege, milyen eszközei vannak az újraelosztásnak, és mi az ára a túlzott újraelosztásnak?"
+  ],
+  "usefulPhrases": [
+    {
+      "en": "piaci kudarc",
+      "hu": "a piac magára hagyva nem hatékony eredményt hoz – az állami beavatkozás fő indoka"
+    },
+    {
+      "en": "nem kizárható, nem rivalizáló",
+      "hu": "a tiszta közjószág két ismérve"
+    },
+    {
+      "en": "hiány = áramlás, adósság = állomány",
+      "hu": "az évi hiányok halmozódnak fel államadóssággá"
+    }
+  ],
+  "sources": [
+    {
+      "title": "1. forrás – Definíció",
+      "text": "Közjószág: olyan jószág, amelynek fogyasztásából senki sem zárható ki (nem kizárható), és egy további fogyasztó belépése nem csökkenti a többiek számára elérhető mennyiséget (nem rivalizáló)."
+    },
+    {
+      "title": "2. forrás – Egy kitalált ország költségvetésének bevételi szerkezete",
+      "text": "Kördiagram leírása (kitalált adatok): általános forgalmi adó 35%, társadalombiztosítási járulékok 28%, személyi jövedelemadó 22%, társasági adó 6%, egyéb bevételek 9%. Felirat: „A költségvetés egyenlege: a GDP 3%-ának megfelelő hiány.”"
+    }
+  ],
+  "keyPoints": [
+    "Az állami beavatkozás oka a piaci kudarc: a piac magára hagyva nem hatékony eredményt hoz (közjavak, externáliák, piaci erőfölény/monopólium, aszimmetrikus információ), továbbá a piaci jövedelemelosztás igazságtalannak tartott eredménye és a gazdaság ciklikus ingadozása.",
+    "Közjószág: nem kizárható és nem rivalizáló fogyasztású jószág (honvédelem, közvilágítás, árvízvédelem); a potyautas-probléma miatt a piac nem állítja elő elegendő mennyiségben, ezért adóból finanszírozzák.",
+    "Externália (külső gazdasági hatás): egy szereplő tevékenysége másoknak olyan költséget vagy hasznot okoz, amelyet a piaci ár nem tükröz; negatív (környezetszennyezés) – adó, szabályozás; pozitív (oltás, oktatás) – támogatás.",
+    "Az állam funkciói: jogi és intézményi keret (szabályozás, tulajdonjog, versenyszabályozás), allokáció (közjavak biztosítása), újraelosztás (jövedelmek átcsoportosítása), stabilizáció (konjunktúra, foglalkoztatás, árstabilitás).",
+    "Költségvetési (fiskális) politika: a kormány az adók és a kiadások alakításával befolyásolja a gazdaságot; expanzív (adócsökkentés, kiadásnövelés) és restriktív (adóemelés, kiadáscsökkentés) irány.",
+    "Államháztartás: központi költségvetés, elkülönített állami pénzalapok, társadalombiztosítási alapok, önkormányzatok; a központi költségvetést törvényként az Országgyűlés fogadja el, az ellenőrzést az Állami Számvevőszék végzi.",
+    "Bevételek: adók (közvetlen: SZJA, társasági adó; közvetett: ÁFA, jövedéki adó), járulékok, egyéb bevételek; kiadások: közszolgáltatások (oktatás, egészségügy), szociális transzferek (nyugdíj, családtámogatás), beruházások, kamatkiadások.",
+    "Költségvetési hiány: a kiadások meghaladják a bevételeket (évi áramlás, a GDP %-ában mérjük); államadósság: a felhalmozott, még vissza nem fizetett tartozás állománya; a hiányt hitelfelvétel, állampapír-kibocsátás fedezi.",
+    "A tartós eladósodás kockázatai: növekvő kamatkiadások, kiszorítási hatás (az állami hitelfelvétel a magánberuházások elől veszi el a forrást), a befektetői bizalom romlása, a jövő nemzedékek terhei.",
+    "Jóléti állam: széles körű közszolgáltatások és szociális ellátások, jelentős újraelosztás (progresszív adózás, transzferek, ingyenes vagy támogatott szolgáltatások); ára a magas adóterhelés, a csökkenő munkára ösztönzés és a túlzott állami méret veszélye (állami kudarc)."
+  ],
+  "speakingSeconds": 720,
+  "prepSeconds": 1800,
+  "sampleAnswer": {
+    "turns": [
+      {
+        "speaker": "candidate",
+        "text": "A tételem az állam gazdasági szerepvállalása. A piacgazdaságban a legtöbb döntést a piac hozza meg, vannak azonban helyzetek, amikor a piac magára hagyva nem hatékony eredményt ad – ezeket piaci kudarcoknak nevezzük, és ezek adják az állami beavatkozás fő indokát. Az első a közjavak esete. A közjószág olyan jószág, amelynek fogyasztásából senki sem zárható ki, és egy további fogyasztó nem csökkenti a többiek számára elérhető mennyiséget. Ilyen a honvédelem vagy az árvízvédelmi gát. Mivel fizetés nélkül is élvezhető, megjelenik a potyautas-probléma: senki nem akar fizetni érte, ezért a piac nem állítaná elő, így az állam adóból finanszírozza. A második az externália, vagyis a külső gazdasági hatás: egy szereplő tevékenysége másoknak olyan költséget vagy hasznot okoz, amelyet a piaci ár nem tükröz. Negatív externália a környezetszennyezés, ezt az állam adóval vagy határértékekkel kezeli; pozitív externália az oltás vagy az oktatás, ezt támogatással ösztönzi. Piaci kudarc még a monopólium és az aszimmetrikus információ is, ezekre a versenyszabályozás és a fogyasztóvédelem válasz. Az államnak négy fő funkciója van: megteremti a jogi és intézményi keretet, biztosítja a közjavakat, ez az allokáció, újraosztja a jövedelmeket, és stabilizálja a gazdaságot. Az állam pénzügyeit az államháztartás foglalja keretbe, amelynek központi eleme a központi költségvetés: ezt törvényként az Országgyűlés fogadja el, az Állami Számvevőszék pedig ellenőrzi a gazdálkodást. A bevételek döntő része adó. A közvetlen adót, például a személyi jövedelemadót, a jövedelem után fizetjük, a közvetett adó, például az ÁFA, beépül a termék árába. A második forrás egy kitalált ország bevételi szerkezetét mutatja: ott a legnagyobb tétel az ÁFA, vagyis egy közvetett adó. A kiadások között szerepelnek az oktatás és az egészségügy, a nyugdíjak és a családtámogatások, a beruházások és a kamatok. Ha a kiadások meghaladják a bevételeket, költségvetési hiány keletkezik; ez egy évre vonatkozó áramlás, amelyet a GDP százalékában mérünk. A hiányt az állam állampapírok kibocsátásával fedezi, így a hiányok államadóssággá halmozódnak fel – az adósság tehát állomány. A tartós eladósodás veszélye, hogy nőnek a kamatkiadások, az állam a magánberuházások elől szívja el a megtakarításokat, ez a kiszorítási hatás, és a terhet a következő nemzedékek viselik. Végül a jóléti állam széles körű közszolgáltatásokat és szociális ellátásokat nyújt, és jelentősen újraosztja a jövedelmeket progresszív adózással és transzferekkel. Ennek ára a magas adóterhelés és az, hogy a túl bőkezű ellátás csökkentheti a munkára ösztönzést – vagyis az államnak is lehetnek kudarcai."
+      },
+      {
+        "speaker": "examiner",
+        "text": "Mondjon példát arra, amikor ugyanaz az állami döntés egyszerre szolgálja az újraelosztást és a stabilizációt!"
+      },
+      {
+        "speaker": "candidate",
+        "text": "Ilyen a munkanélküli-ellátás. Újraelosztás, mert a dolgozók járulékaiból azok kapnak jövedelmet, akik elvesztették a munkájukat. Egyúttal stabilizál is: válság idején nő a munkanélküliek száma, ezért automatikusan nő a kifizetés, és ez fenntartja a fogyasztási keresletet. Ezt nevezzük automatikus stabilizátornak, mert külön döntés nélkül fékezi a visszaesést."
+      }
+    ],
+    "notes": [
+      "A közjószág és az externália definícióját pontosan adja meg, és mindkettőhöz példát és állami megoldást kapcsol – ez a tartalmi pontosság fő eleme.",
+      "A hiány (áramlás) és az adósság (állomány) megkülönböztetése, a kiszorítási hatás és a jóléti állam árának megemlítése az összefüggések szintjén is teljessé teszi a feleletet.",
+      "A forrást beépíti a feleletbe (a legnagyobb bevétel közvetett adó), a kiegészítő kérdésre az automatikus stabilizátor fogalmával, önállóan válaszol."
+    ]
+  }
+}

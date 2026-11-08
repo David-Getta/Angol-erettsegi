@@ -1,0 +1,76 @@
+{
+  "schemaVersion": 1,
+  "id": "gaz-sp-emelt-tetel-penz-bankrendszer",
+  "subject": "gazdasagi-ismeretek",
+  "revision": 1,
+  "level": "emelt",
+  "source": "generated",
+  "topic": "penz",
+  "title": "A pénz kialakulása és funkciói, a kétszintű bankrendszer és a pénzteremtés",
+  "createdAt": "2026-11-08",
+  "tags": [
+    "altalanos"
+  ],
+  "section": "speaking",
+  "type": "tetel",
+  "partNumber": 1,
+  "instructionsHu": "Fejtse ki a tételt! Mutassa be, hogyan alakult ki a pénz, és mit nevezünk modern pénznek, sorolja fel és példával szemléltesse a pénz funkcióit, ismertesse a kétszintű bankrendszer felépítését, a jegybank és a kereskedelmi bankok feladatait, végül magyarázza el a pénzteremtés folyamatát és a pénzmennyiség mérését! A mellékelt forrásokat használja fel. Felkészülési idő: 30 perc.",
+  "prompts": [
+    "Miért nehézkes a barter, és milyen szakaszokon keresztül alakult ki a pénz (árupénz, nemesfémpénz, papírpénz, hitelpénz)?",
+    "Mi a modern pénz (hitelpénz), milyen formái vannak (készpénz, számlapénz), és mi adja az értékét?",
+    "Sorold fel a pénz funkcióit, és mondj mindegyikre egy példát! Mi a különbség a forgalmi és a fizetési eszköz funkció között?",
+    "Mutasd be a kétszintű bankrendszert: mi a Magyar Nemzeti Bank és mi a kereskedelmi bankok feladata?",
+    "Hogyan teremtenek pénzt a kereskedelmi bankok? Magyarázd el a pénzmultiplikátort a forrás számpéldáján!",
+    "Mit mérnek a pénzaggregátumok (M1, M2, M3), és milyen szempont szerint épülnek egymásra?"
+  ],
+  "usefulPhrases": [
+    { "en": "szükségletek kettős egybeesése", "hu": "a barter feltétele: mindkét fél azt kínálja, amire a másiknak szüksége van" },
+    { "en": "hitelpénz", "hu": "belső érték és aranyfedezet nélküli pénz, amely hitelezés útján kerül forgalomba" },
+    { "en": "bankok bankja, végső hitelező", "hu": "a jegybank a kereskedelmi bankoknak nyújt hitelt és likviditást" },
+    { "en": "pénzmultiplikátor = 1 / tartalékráta", "hu": "egységnyi tartalékból elméletileg legfeljebb hányszoros betétállomány jöhet létre" }
+  ],
+  "sources": [
+    {
+      "title": "Forrás 1 – Hipotetikus számpélda a pénzteremtésre",
+      "text": "Egy kereskedelmi bankba 50 millió Ft új betét érkezik. A kötelező tartalékráta (feltételezve) 20%. A bank a tartalékot megtartja, a többit hitelként kihelyezi; a hitel összege egy másik bankban ismét betétként jelenik meg, és a folyamat folytatódik."
+    },
+    {
+      "title": "Forrás 2 – Egy bankszámlakivonat leírása",
+      "text": "Egy háztartás folyószámláján jóváírták a havi bért, majd lekötöttek belőle egy éves futamidejű betétet; a fennmaradó összegből kártyával fizettek a boltban, és átutalták a havi lakáshitel-törlesztést."
+    }
+  ],
+  "keyPoints": [
+    "A barter feltétele a szükségletek kettős egybeesése; ezt a nehézséget az általánosan elfogadott csereeszköz, a pénz oldja fel.",
+    "A pénz fejlődése: árupénz (marha, só) → nemesfémpénz (osztható, tartós, nehezen hamisítható) → érme → aranyra váltható papírpénz → hitelpénz (aranyfedezet és belső érték nélkül).",
+    "A modern pénz formái: készpénz (bankjegy, érme) és számlapénz (bankbetét); a pénz értékét az általános elfogadottság és a jegybank árstabilitási politikája biztosítja.",
+    "Funkciók: értékmérő (árak), forgalmi eszköz (az áru és a pénz egyszerre cserél gazdát), fizetési eszköz (a pénz mozgása időben elválik az áruétól: hiteltörlesztés, adó, bér), felhalmozási eszköz (megtakarítás), világpénz.",
+    "Magyarországon 1987 óta kétszintű a bankrendszer: első szinten a jegybank (MNB), második szinten a kereskedelmi bankok és más pénzügyi intézmények.",
+    "Az MNB elsődleges célja az árstabilitás elérése és fenntartása; kizárólagos joga a bankjegy- és érmekibocsátás, kezeli a devizatartalékot, a bankok bankja (végső hitelező), monetáris politikát folytat (alapkamat, kötelező tartalék, nyíltpiaci műveletek).",
+    "A kereskedelmi bankok betétet gyűjtenek (passzív ügylet), hitelt nyújtanak (aktív ügylet), számlát vezetnek és fizetéseket bonyolítanak (semleges ügylet).",
+    "Pénzteremtés: a jegybank jegybankpénzt teremt, a kereskedelmi bankok a hitelezéssel számlapénzt; a forrás példájában a multiplikátor 1 / 0,2 = 5, az elméleti maximális betétállomány 5 × 50 = 250 millió Ft, a hitelezéssel létrejövő új pénz 200 millió Ft.",
+    "A pénzmennyiséget aggregátumokkal mérik, a likviditás szerint: M1 = forgalomban lévő készpénz + látra szóló (folyószámla-) betétek; az M2 és az M3 ehhez egyre kevésbé likvid elemeket (lekötött betétek, egyéb rövid lejáratú eszközök) ad hozzá."
+  ],
+  "speakingSeconds": 720,
+  "prepSeconds": 1800,
+  "sampleAnswer": {
+    "turns": [
+      {
+        "speaker": "candidate",
+        "text": "A tételem a pénz kialakulása és funkciói, a bankrendszer és a pénzteremtés. A pénz előtt az emberek barterrel, vagyis áru áruért cserével jutottak hozzá a javakhoz. Ennek nagy nehézsége a szükségletek kettős egybeesése: a cipész csak akkor kap kenyeret, ha a péknek éppen cipő kell. Ezért alakult ki az árupénz, például a marha vagy a só, majd a nemesfémpénz, mert az arany és az ezüst jól osztható, tartós és nehezen hamisítható. Később megjelent az érme és a kezdetben aranyra váltható papírpénz. A mai pénz hitelpénz: nincs belső értéke, nem váltható aranyra, hitelezés útján kerül forgalomba, értékét pedig az adja, hogy mindenki elfogadja, és hogy a jegybank vigyáz a vásárlóerejére. Formái a készpénz, azaz a bankjegy és az érme, és a számlapénz, vagyis a bankbetét. A pénz első funkciója az értékmérő: az árcédulán forintban fejezzük ki egy jószág értékét. Forgalmi eszköz, amikor a boltban azonnal fizetek, tehát az áru és a pénz egyszerre cserél gazdát. Fizetési eszköz, amikor a pénz mozgása időben elválik az áruétól: a második forrásban ilyen a bér jóváírása és a lakáshitel törlesztése. Felhalmozási eszköz, ha megtakarítunk, mint a lekötött betét, végül világpénz a nemzetközi elszámolásokban. Magyarországon 1987 óta kétszintű a bankrendszer. Az első szinten a Magyar Nemzeti Bank áll, amelynek elsődleges célja az árstabilitás. Kizárólagos joga a bankjegy- és érmekibocsátás, kezeli a devizatartalékot, és a bankok bankja: nem a háztartásoknak, hanem a kereskedelmi bankoknak ad hitelt. Monetáris politikájának eszközei az alapkamat, a kötelező tartalék és a nyíltpiaci műveletek. A második szinten a kereskedelmi bankok betétet gyűjtenek, hitelt nyújtanak és számlát vezetnek. A kereskedelmi bankok a hitelezéssel pénzt teremtenek. Az első forrásban az 50 millió forintos betétből 20 százalékot, vagyis 10 milliót tartalékolni kell, 40 milliót kihitelezhet a bank. Ez egy másik bankban újra betét lesz, és a folyamat folytatódik. Az elméleti pénzmultiplikátor a tartalékráta reciproka, egy per nulla egész kettő, azaz öt, így a betétállomány legfeljebb 250 millió forintra nőhet, ebből 200 millió a hitelezéssel teremtett új pénz. A pénzmennyiséget aggregátumokkal mérjük: az M1 a készpénz és a látra szóló betétek összege, az M2 és az M3 ehhez kevésbé likvid elemeket, például lekötött betéteket ad hozzá."
+      },
+      {
+        "speaker": "examiner",
+        "text": "Miért mondjuk, hogy a valóságban a pénzteremtés kisebb lehet, mint amit a multiplikátor mutat?"
+      },
+      {
+        "speaker": "candidate",
+        "text": "Mert a multiplikátor azt feltételezi, hogy a bankok minden szabad pénzt kihiteleznek, és minden hitel betétként visszatér a bankrendszerbe. A valóságban az emberek a pénz egy részét készpénzben tartják, a bankok önkéntes tartalékot is képeznek, és ha nincs elég hitelképes ügyfél vagy hitelkereslet, kevesebb hitel jön létre. Ezért az elméleti érték csak felső korlát."
+      }
+    ],
+    "notes": [
+      "A felelet a pénz kialakulásától a pénzmennyiség méréséig logikus sorrendben halad, és minden szempontra kitér; a fogalmak (hitelpénz, számlapénz, fizetési eszköz, végső hitelező) pontosak.",
+      "Mindkét forrást felhasználja: az első forrás számait helyesen számolja végig (tartalék 10 millió, hitel 40 millió, multiplikátor 5, legfeljebb 250 millió Ft betét), a második forrás eseményeit a pénz funkcióihoz kapcsolja – ez az összefüggések és a forráshasználat.",
+      "A kiegészítő kérdésre a modell feltevéseiből indul ki, és megmutatja, miért csak felső korlát az elméleti multiplikátor – ez emelt szinten elvárt modellkritika."
+    ]
+  }
+}

@@ -1,0 +1,218 @@
+{
+  "schemaVersion": 1,
+  "id": "gaz-rd-emelt-munkanelkuliseg-mutatok",
+  "subject": "gazdasagi-ismeretek",
+  "revision": 1,
+  "level": "emelt",
+  "source": "generated",
+  "topic": "munkaero-piac",
+  "title": "A munkaerőpiac mutatói és a munkanélküliség fajtái",
+  "createdAt": "2026-11-08",
+  "tags": [
+    "altalanos"
+  ],
+  "section": "reading",
+  "type": "adatsor",
+  "instructions": "Olvassa el egy kitalált ország munkaerő-piaci adatait, majd válaszoljon a kérdésekre! A számításoknál csak az eredményt írja be (a százalékokat egy tizedesjegyre kerekítve, ha szükséges). A 0. a megoldott példa.",
+  "passage": {
+    "title": "Kitalált ország munkaerő-piaci adatai (hipotetikus adatok, ezer fő)",
+    "blocks": [
+      {
+        "text": "A statisztikai hivatal a 15–74 éves népességet vizsgálja. Munkanélküli az, aki a vizsgált héten nem dolgozott, az elmúlt négy hétben aktívan keresett munkát, és két héten belül munkába tudna állni. A gazdaságilag aktívak (a munkaerő) a foglalkoztatottak és a munkanélküliek együtt; aki se nem dolgozik, se nem keres munkát (például nappali tagozatos diák, nyugdíjas), az gazdaságilag inaktív."
+      },
+      {
+        "heading": "1. év",
+        "text": "15–74 éves népesség: 8 000; foglalkoztatottak: 4 600; munkanélküliek: 400; gazdaságilag inaktívak: 3 000. A munkanélküliek közül 120 ezren munkahelyváltás vagy pályakezdés miatt rövid ideje keresnek állást, 200 ezren megszűnt iparágakban dolgoztak, és a szakképzettségükre ma nincs kereslet, 80 ezer főt pedig a gazdasági visszaesés miatt bocsátottak el."
+      },
+      {
+        "heading": "2. év",
+        "text": "15–74 éves népesség: 8 000; foglalkoztatottak: 4 600; munkanélküliek: 300; gazdaságilag inaktívak: 3 100. A hivatal szerint az inaktívak száma azért nőtt, mert 100 ezer korábbi munkanélküli szeretne ugyan dolgozni, de hosszú sikertelen keresés után feladta a munkakeresést."
+      }
+    ]
+  },
+  "example": {
+    "id": "0",
+    "kind": "text",
+    "prompt": "Hány gazdaságilag aktív ember volt az 1. évben (ezer fő)?",
+    "answer": [
+      "5000",
+      "5 000",
+      "5000 ezer fő",
+      "5 000 ezer fő",
+      "5000 ezer",
+      "5 000 ezer",
+      "5 millió",
+      "5 millió fő",
+      "5000000",
+      "5 000 000"
+    ],
+    "category": "adatleolvasas",
+    "explanation": "5 000 ezer fő. Gazdaságilag aktívak = foglalkoztatottak + munkanélküliek = 4 600 + 400 = 5 000 ezer fő. Az inaktívak nem tartoznak a munkaerőbe."
+  },
+  "items": [
+    {
+      "id": "1",
+      "kind": "text",
+      "prompt": "Mekkora volt a munkanélküliségi ráta az 1. évben (%)?",
+      "answer": [
+        "8",
+        "8%",
+        "8 %",
+        "8 százalék",
+        "8,0",
+        "8,0%",
+        "8,0 %",
+        "8,0 százalék",
+        "8.0",
+        "8.0%",
+        "8.0 %",
+        "8.0 százalék"
+      ],
+      "category": "szamitas",
+      "explanation": "8 %. Munkanélküliségi ráta = munkanélküliek / gazdaságilag aktívak × 100 = 400 / 5 000 × 100 = 8 %. Gyakori hiba a teljes népességgel (400 / 8 000 = 5 %) osztani – a ráta nevezője a munkaerő."
+    },
+    {
+      "id": "2",
+      "kind": "text",
+      "prompt": "Mekkora volt az aktivitási ráta az 1. évben (%)?",
+      "answer": [
+        "62,5",
+        "62,5%",
+        "62,5 %",
+        "62,5 százalék",
+        "62.5",
+        "62.5%",
+        "62.5 %",
+        "62.5 százalék"
+      ],
+      "category": "szamitas",
+      "explanation": "62,5 %. Aktivitási ráta = gazdaságilag aktívak / 15–74 éves népesség × 100 = 5 000 / 8 000 × 100 = 62,5 %."
+    },
+    {
+      "id": "3",
+      "kind": "text",
+      "prompt": "Mekkora volt a foglalkoztatási ráta az 1. évben (%)?",
+      "answer": [
+        "57,5",
+        "57,5%",
+        "57,5 %",
+        "57,5 százalék",
+        "57.5",
+        "57.5%",
+        "57.5 %",
+        "57.5 százalék"
+      ],
+      "category": "szamitas",
+      "explanation": "57,5 %. Foglalkoztatási ráta = foglalkoztatottak / 15–74 éves népesség × 100 = 4 600 / 8 000 × 100 = 57,5 %. Nem a munkaerőhöz viszonyítjuk (az 92 % lenne, ami a munkanélküliségi ráta kiegészítője)."
+    },
+    {
+      "id": "4",
+      "kind": "text",
+      "prompt": "Mekkora volt a munkanélküliségi ráta a 2. évben (%, egy tizedesjegyre kerekítve)?",
+      "answer": [
+        "6,1",
+        "6,1%",
+        "6,1 %",
+        "6,1 százalék",
+        "6.1",
+        "6.1%",
+        "6.1 %",
+        "6.1 százalék",
+        "6,12",
+        "6.12",
+        "6,12%",
+        "6.12%"
+      ],
+      "category": "szamitas",
+      "explanation": "≈ 6,1 %. Gazdaságilag aktívak = 4 600 + 300 = 4 900 ezer fő; ráta = 300 / 4 900 × 100 = 6,122… ≈ 6,1 %. Figyelem: a nevező is megváltozott, nem 300 / 5 000 = 6 %."
+    },
+    {
+      "id": "5",
+      "kind": "tf",
+      "prompt": "A munkanélküliségi ráta 1. évről 2. évre történt csökkenése azt mutatja, hogy 100 ezer munkanélküli talált munkát.",
+      "answer": "F",
+      "category": "adatleolvasas",
+      "explanation": "Hamis. A foglalkoztatottak száma mindkét évben 4 600 ezer fő, tehát senki sem helyezkedett el többletként: a 100 ezer fő feladta a munkakeresést, és átkerült az inaktívak közé. A ráta csökkenése ezért nem a munkaerőpiac javulását mutatja – a munkanélküliségi rátát mindig a foglalkoztatási rátával együtt kell értelmezni."
+    },
+    {
+      "id": "6",
+      "kind": "choice",
+      "prompt": "Hogyan nevezzük a 2. évben inaktívvá vált 100 ezer embert?",
+      "options": [
+        {
+          "key": "A",
+          "text": "elbátortalanodott (passzív) munkanélküliek: dolgoznának, de feladták a munkakeresést"
+        },
+        {
+          "key": "B",
+          "text": "súrlódásos munkanélküliek"
+        },
+        {
+          "key": "C",
+          "text": "önkéntesen inaktív nyugdíjasok"
+        },
+        {
+          "key": "D",
+          "text": "részmunkaidős foglalkoztatottak"
+        }
+      ],
+      "answer": "A",
+      "category": "fogalomcsere",
+      "explanation": "Helyes: A. Ők szeretnének dolgozni, de nem keresnek aktívan munkát, ezért a munkanélküli-definíció (aktív keresés) szerint nem munkanélküliek, hanem inaktívak. Ezt a rejtett munkanélküliséget a ráta nem mutatja.",
+      "wrongOptions": {
+        "B": "A súrlódásos munkanélküli aktívan keres állást (munkahelyváltás, pályakezdés miatt), tehát benne van a munkaerőben; ezek az emberek már nem keresnek.",
+        "C": "A forrás szerint korábbi munkanélküliekről van szó, akik dolgoznának – nem nyugdíjba vonultak.",
+        "D": "Foglalkoztatott az, aki a vizsgált héten dolgozott; a foglalkoztatottak száma nem nőtt."
+      }
+    },
+    {
+      "id": "7",
+      "kind": "text",
+      "prompt": "A súrlódásos és a strukturális (szerkezeti) munkanélküliség összegét tekintsük a természetes munkanélküliségnek. Mekkora volt az 1. évben a természetes munkanélküliségi ráta (%)?",
+      "answer": [
+        "6,4",
+        "6,4%",
+        "6,4 %",
+        "6,4 százalék",
+        "6.4",
+        "6.4%",
+        "6.4 %",
+        "6.4 százalék"
+      ],
+      "category": "szamitas",
+      "explanation": "6,4 %. Súrlódásos: 120 ezer (állásváltás, pályakezdés), strukturális: 200 ezer (a képzettség nem felel meg a keresletnek); együtt 320 ezer fő. Ráta = 320 / 5 000 × 100 = 6,4 %. A 80 ezer fő ciklikus (konjunkturális) munkanélküli, ez nem része a természetes rátának."
+    },
+    {
+      "id": "8",
+      "kind": "choice",
+      "prompt": "Az 1. évi munkanélküliség legnagyobb csoportját melyik intézkedés csökkentené a legközvetlenebbül?",
+      "options": [
+        {
+          "key": "A",
+          "text": "átképzési programok a keresett szakmákra"
+        },
+        {
+          "key": "B",
+          "text": "gyorsabb, online állásközvetítő adatbázis"
+        },
+        {
+          "key": "C",
+          "text": "a kereslet élénkítése állami beruházásokkal"
+        },
+        {
+          "key": "D",
+          "text": "az álláskeresési járadék folyósítási idejének meghosszabbítása"
+        }
+      ],
+      "answer": "A",
+      "category": "alapelv-alkalmazas",
+      "explanation": "Helyes: A. A legnagyobb csoport (200 ezer fő) strukturális munkanélküli: a szakképzettsége nem felel meg a munkáltatók igényeinek. Ezen az aktív foglalkoztatáspolitika eszköze, az átképzés segít a legközvetlenebbül.",
+      "wrongOptions": {
+        "B": "Az állásközvetítés gyorsítása a súrlódásos munkanélküliséget (120 ezer fő) csökkenti, a képzettségi eltérést nem oldja meg.",
+        "C": "A keresletélénkítés a ciklikus munkanélküliség (80 ezer fő) ellen hat; a megszűnt iparágak munkásainak képzettségére élénkülés esetén sem lesz kereslet.",
+        "D": "Ez passzív eszköz: a munkanélküliek jövedelmét pótolja, de nem csökkenti a munkanélküliséget – a keresési időt akár meg is hosszabbíthatja."
+      }
+    }
+  ],
+  "suggestedMinutes": 15
+}

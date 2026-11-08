@@ -1,0 +1,86 @@
+{
+  "schemaVersion": 1,
+  "id": "gaz-sp-emelt-tetel-kulgazdasag-kereskedelem-eu",
+  "subject": "gazdasagi-ismeretek",
+  "revision": 1,
+  "level": "emelt",
+  "source": "generated",
+  "topic": "kulgazdasag",
+  "title": "Nemzetközi kereskedelem, fizetési mérleg, árfolyam, globalizáció és az Európai Unió",
+  "createdAt": "2026-11-08",
+  "tags": [
+    "altalanos"
+  ],
+  "section": "speaking",
+  "type": "tetel",
+  "partNumber": 1,
+  "instructionsHu": "Fejtse ki a tételt! Mutassa be, miért kereskednek egymással az országok (abszolút és komparatív előny), a szabadkereskedelem és a protekcionizmus eszközeit, a fizetési mérleg szerkezetét, az árfolyam fogalmát és változásának hatásait, a globalizációt és a nemzetközi gazdasági szervezeteket, végül az Európai Unió egységes piacát és az eurót! Használja a forrásokat! Felkészülési idő: 30 perc.",
+  "prompts": [
+    "Miért kereskednek egymással az országok? Mi a különbség az abszolút előny (Smith) és a komparatív előny (Ricardo) között? Mutassa be egy számpéldán!",
+    "Mit jelent a szabadkereskedelem és a protekcionizmus? Milyen eszközei vannak a protekcionizmusnak, és milyen érvek szólnak mellette, illetve ellene?",
+    "Milyen részekből áll a fizetési mérleg? Mit mutat a folyó fizetési mérleg egyenlege?",
+    "Mi az árfolyam? Hogyan hat a hazai valuta le- és felértékelődése az exportra és az importra? Mi a különbség a rögzített és a lebegő árfolyamrendszer között?",
+    "Mit értünk globalizáción? Mik a hajtóerői, előnyei és hátrányai? Mutasson be néhány nemzetközi gazdasági szervezetet (WTO, IMF, Világbank, OECD)!",
+    "Mi az Európai Unió egységes belső piaca (négy szabadság, vámunió)? Mi a gazdasági és monetáris unió, mik az euró bevezetésének feltételei (maastrichti kritériumok)? Mit jelent Magyarország számára az uniós tagság?"
+  ],
+  "usefulPhrases": [
+    {
+      "en": "komparatív előny",
+      "hu": "annak az országnak van egy termékben, amelyben annak alternatív költsége kisebb"
+    },
+    {
+      "en": "a forint leértékelődése",
+      "hu": "egy euróért több forintot kell adni – az export olcsóbb lesz külföldön, az import drágább itthon"
+    },
+    {
+      "en": "négy szabadság",
+      "hu": "az áruk, a szolgáltatások, a tőke és a személyek szabad áramlása az EU egységes piacán"
+    }
+  ],
+  "sources": [
+    {
+      "title": "1. forrás – Két ország munkaigénye (hipotetikus adatok)",
+      "text": "Egy egység előállításához szükséges munkaóra:\n– Kelet ország: 1 db okostelefon 5 óra, 1 tonna kukorica 10 óra\n– Nyugat ország: 1 db okostelefon 20 óra, 1 tonna kukorica 20 óra"
+    },
+    {
+      "title": "2. forrás – Rövid hír (kitalált)",
+      "text": "„Egy nagy gazdasági hatalom 25 %-os vámot vezetett be a külföldi acélra. A hazai acélgyártók üdvözölték a döntést, az acélt felhasználó autógyárak és gépgyártók viszont költségeik emelkedésére panaszkodnak, a kereskedelmi partnerek pedig ellenintézkedéseket helyeztek kilátásba.”"
+    }
+  ],
+  "keyPoints": [
+    "Abszolút előny (Adam Smith): az az ország rendelkezik vele, amely egy terméket kevesebb ráfordítással (munkaórával) tud előállítani; komparatív előny (David Ricardo): annak van egy termékben, amelyben annak alternatív költsége kisebb – a kölcsönösen előnyös kereskedelemhez a komparatív előny elég.",
+    "Az 1. forrás alapján: Keletnek mindkét termékben abszolút előnye van; az okostelefon alternatív költsége Keleten 5/10 = 0,5 tonna kukorica, Nyugaton 20/20 = 1 tonna kukorica, a kukoricáé Keleten 2 db, Nyugaton 1 db telefon – Kelet a telefonra, Nyugat a kukoricára specializálódjon; a cserearány 1 telefon = 0,5 és 1 tonna kukorica között előnyös mindkettőnek.",
+    "Szabadkereskedelem: a nemzetközi kereskedelem korlátozások nélkül folyik; protekcionizmus: az állam a hazai termelők védelmében korlátozza az importot, illetve támogatja az exportot – eszközei a vám, a mennyiségi korlátozás (kvóta), az exporttámogatás és a nem vámjellegű akadályok (szabványok, engedélyek, bürokratikus előírások).",
+    "Érvek a protekcionizmus mellett: csecsemőipar védelme, munkahelyek megőrzése, stratégiai ágazatok, nemzetbiztonság; ellene: drágább termékek a fogyasztónak és a felhasználó iparágaknak, gyengülő verseny és hatékonyság, a partnerek ellenintézkedései (vámháború) – ezt mutatja a 2. forrás is.",
+    "Fizetési mérleg: egy ország és a külföld közötti gazdasági tranzakciók rendszerezett kimutatása egy adott időszakra; részei a folyó fizetési mérleg (áruk és szolgáltatások exportja és importja, elsődleges jövedelmek pl. bérek, osztalékok, kamatok, másodlagos jövedelmek pl. transzferek), a tőkemérleg (pl. uniós beruházási támogatások egy része) és a pénzügyi mérleg (közvetlen tőkebefektetések, portfólióbefektetések, hitelek, tartalékok).",
+    "A folyó fizetési mérleg hiánya azt jelzi, hogy az ország többet költ, mint amennyi jövedelmet a külföldtől szerez, ezt külföldi forrásból (tőkebeáramlásból, hitelből) finanszírozza; többlete esetén nettó hitelező a külföld felé.",
+    "Árfolyam: egy valuta ára egy másik valutában kifejezve (pl. Ft/EUR); a forint leértékelődése (több Ft egy euróért) olcsóbbá teszi az exportot külföldön és drágábbá az importot itthon – javítja a versenyképességet, de importált inflációt okozhat; felértékelődéskor fordítva; rögzített árfolyamnál a jegybank tartja a hivatalos árfolyamot, lebegőnél a devizapiaci kereslet és kínálat alakítja.",
+    "Globalizáció: a világgazdaság szereplőinek egyre szorosabb összefonódása (áruk, szolgáltatások, tőke, információ, munkaerő áramlása); hajtóerői a szállítás és a kommunikáció olcsóbbá válása, a kereskedelmi akadályok lebontása, a multinacionális vállalatok; előnyei a specializáció, az olcsóbb termékek, a tudás terjedése; hátrányai a válságok gyors terjedése, az egyenlőtlenségek, a környezeti terhelés, a függés a hosszú ellátási láncoktól.",
+    "Nemzetközi szervezetek: WTO (Kereskedelmi Világszervezet, 1995: a kereskedelem liberalizálása, vitarendezés), IMF (Nemzetközi Valutaalap: fizetésimérleg-gondokkal küzdő országok hitelezése, pénzügyi stabilitás), Világbank (fejlesztési hitelek), OECD (fejlett piacgazdaságok együttműködése, elemzések).",
+    "EU: az egységes belső piac (1993) a négy szabadságra (áruk, szolgáltatások, tőke, személyek szabad mozgása) és a vámunióra (belső vámok nincsenek, közös külső vámtarifa) épül; a gazdasági és monetáris unió része az euró (számlapénzként 1999, készpénzként 2002), az Európai Központi Bank közös monetáris politikájával; maastrichti kritériumok: árstabilitás, a költségvetési hiány legfeljebb a GDP 3 %-a, az államadósság legfeljebb a GDP 60 %-a, a hosszú távú kamatok alacsony szintje, árfolyam-stabilitás (ERM II); Magyarország 2004 óta tag, fizetőeszköze a forint, előnyei a nagy piac, a működőtőke és az uniós források."
+  ],
+  "speakingSeconds": 720,
+  "prepSeconds": 1800,
+  "sampleAnswer": {
+    "turns": [
+      {
+        "speaker": "candidate",
+        "text": "A tételem a külgazdasági kapcsolatok. Az országok azért kereskednek egymással, mert specializációval többet tudnak előállítani ugyanannyi erőforrásból. Adam Smith szerint az az ország rendelkezik abszolút előnnyel, amely egy terméket kevesebb ráfordítással állít elő. Ricardo megmutatta, hogy a kereskedelem akkor is előnyös, ha az egyik ország mindkét termékben jobb: a komparatív előny számít, vagyis az, hogy hol kisebb egy termék alternatív költsége. Az első forrásban Kelet mindkét termékben abszolút előnyben van, de az okostelefon alternatív költsége Keleten 0,5 tonna kukorica, Nyugaton 1 tonna, a kukoricáé pedig Keleten 2, Nyugaton 1 telefon. Ezért Keletnek a telefonra, Nyugatnak a kukoricára érdemes specializálódnia, és egy telefonért 0,5 és 1 tonna közötti kukoricát adva mindkettő jobban jár. A szabadkereskedelemben nincsenek korlátozások, a protekcionizmus viszont a hazai termelőket védi vámmal, kvótával, exporttámogatással vagy szabványokkal. Mellette szólhat a csecsemőipar vagy a munkahelyek védelme, ellene, hogy drágább lesz a termék, gyengül a verseny, és a partnerek visszavágnak – a második forrásban a vám a hazai acélgyártóknak jó, az acélt felhasználó autógyáraknak viszont rossz, és vámháború fenyeget. Az ország külföldi kapcsolatait a fizetési mérleg mutatja. Három része a folyó fizetési mérleg az áruk és szolgáltatások forgalmával és a jövedelmekkel, a tőkemérleg és a pénzügyi mérleg, amely a közvetlen és a portfólióbefektetéseket, valamint a hiteleket tartalmazza. Ha a folyó fizetési mérleg hiányos, az ország külföldi forrásból finanszírozza a többletköltését. Az árfolyam egy valuta ára egy másikban kifejezve, például forint per euró. Ha a forint leértékelődik, egy euróért több forintot kell adni, ezért a magyar export olcsóbb lesz külföldön, az import pedig drágább itthon, ami inflációt is okozhat. Felértékelődéskor fordítva. Lebegő árfolyamnál a devizapiac, rögzítettnél a jegybank határozza meg. A globalizáció a világgazdaság egyre szorosabb összefonódása: olcsóbb lett a szállítás és a kommunikáció, lebontották a vámokat, a multinacionális cégek a világon szétszórva termelnek. Előnye a specializáció és az olcsóbb termék, hátránya, hogy a válságok gyorsan terjednek, és nőhetnek az egyenlőtlenségek. A szabályokat nemzetközi szervezetek alakítják: a WTO a kereskedelmet liberalizálja, az IMF a fizetésimérleg-gondokkal küzdő országoknak ad hitelt, a Világbank fejlesztéseket finanszíroz. Végül az Európai Unió. Az egységes belső piac a négy szabadságra épül: az áruk, a szolgáltatások, a tőke és a személyek szabad mozgására, és vámunió is, vagyis belül nincs vám, kifelé közös a vámtarifa. Az euróövezetben közös a pénz, a monetáris politikát az Európai Központi Bank irányítja. Az euró bevezetéséhez teljesíteni kell a maastrichti kritériumokat: árstabilitás, a költségvetési hiány legfeljebb a GDP 3, az államadósság legfeljebb 60 százaléka, alacsony hosszú távú kamat és stabil árfolyam. Magyarország 2004 óta uniós tag, de a fizetőeszköze a forint; a tagság nagy piacot, külföldi működőtőkét és uniós forrásokat jelent."
+      },
+      {
+        "speaker": "examiner",
+        "text": "Miért nem lehet egy euróövezeti ország önálló kamatpolitikával kezelni a saját recesszióját?"
+      },
+      {
+        "speaker": "candidate",
+        "text": "Mert az euróövezetben a kamatot az Európai Központi Bank az egész övezetre egységesen határozza meg, a nemzeti jegybank nem dönthet róla, és a saját valuta leértékelése sem lehetséges. Egy ország ezért főleg a költségvetési politikával élénkíthet, de ezt is korlátozzák a hiányra és az adósságra vonatkozó uniós szabályok."
+      }
+    ],
+    "notes": [
+      "A komparatív előnyt az 1. forrás adataival ki is számolja (0,5 és 1 tonna, illetve 2 és 1 telefon), és megadja az előnyös cserearány határait – ez az emelt szint elvárása.",
+      "A protekcionizmus eszközeit és az érveket a 2. forrás hírével kapcsolja össze (kinek jó, kinek rossz a vám, vámháború veszélye).",
+      "A fizetési mérleg három részét, az árfolyamváltozás export- és importhatását és a két árfolyamrendszert pontos szaknyelvvel mutatja be.",
+      "Az EU-nál a négy szabadságot, a vámuniót, az eurót és a maastrichti kritériumokat is felsorolja; a kiegészítő kérdésre a közös monetáris politika következményével válaszol."
+    ]
+  }
+}

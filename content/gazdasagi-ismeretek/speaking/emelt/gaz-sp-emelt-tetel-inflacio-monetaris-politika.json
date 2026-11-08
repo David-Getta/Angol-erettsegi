@@ -1,0 +1,89 @@
+{
+  "schemaVersion": 1,
+  "id": "gaz-sp-emelt-tetel-inflacio-monetaris-politika",
+  "subject": "gazdasagi-ismeretek",
+  "revision": 1,
+  "level": "emelt",
+  "source": "generated",
+  "topic": "inflacio",
+  "title": "Infláció, árstabilitás, monetáris politika",
+  "createdAt": "2026-11-08",
+  "tags": [
+    "altalanos"
+  ],
+  "section": "speaking",
+  "type": "tetel",
+  "partNumber": 1,
+  "instructionsHu": "Fejtse ki a tételt! Mutassa be az infláció fogalmát, mérését és fajtáit, az infláció okait és gazdasági hatásait (köztük a reáljövedelemre gyakorolt hatást), valamint a jegybank szerepét és a monetáris politika eszközeit és hatásmechanizmusát! Felkészülési idő: 30 perc.",
+  "prompts": [
+    "Határozd meg az infláció fogalmát! Mi a különbség az infláció, a dezinfláció és a defláció között?",
+    "Hogyan mérjük az inflációt? Mi a fogyasztói kosár és a fogyasztóiár-index?",
+    "Csoportosítsd az inflációt mértéke és oka szerint (keresleti, költség-, várakozási és importált infláció)!",
+    "Milyen hatásai vannak az inflációnak? Ki jár jól és ki rosszul a váratlan inflációval? Hogyan számoljuk a reálbért és a reálkamatot?",
+    "Mi a jegybank szerepe a kétszintű bankrendszerben, és mi az MNB elsődleges célja? Mi az inflációs célkövetés?",
+    "Mutasd be a monetáris politika eszközeit és a kamatemelés hatásmechanizmusát!"
+  ],
+  "usefulPhrases": [
+    {
+      "en": "az árszínvonal tartós, általános emelkedése",
+      "hu": "az infláció pontos definíciója (nem egyetlen termék drágulása)"
+    },
+    {
+      "en": "reálbérindex = nominálbér-index / fogyasztóiár-index × 100",
+      "hu": "a bérek vásárlóerejének változása"
+    },
+    {
+      "en": "reálkamat ≈ nominális kamat − infláció",
+      "hu": "a megtakarítás tényleges hozama"
+    }
+  ],
+  "sources": [
+    {
+      "title": "1. forrás – Definíció",
+      "text": "Infláció: az általános árszínvonal tartós emelkedése, amely a pénz vásárlóerejének csökkenésével jár. Mérésére leggyakrabban a fogyasztóiár-indexet használjuk, amely a háztartások által vásárolt jellemző termékek és szolgáltatások (a fogyasztói kosár) árának változását mutatja, a kiadásokban betöltött súlyukkal."
+    },
+    {
+      "title": "2. forrás – A jegybank feladata",
+      "text": "A Magyar Nemzeti Bank elsődleges célja az árstabilitás elérése és fenntartása. Az MNB inflációs célkövetést folytat: középtávú inflációs célja 3%, amely körül ±1 százalékpontos toleranciasávot határoz meg. Fő eszköze a jegybanki alapkamat, amelyről a Monetáris Tanács dönt."
+    },
+    {
+      "title": "3. forrás – Pénztörténeti adat",
+      "text": "Magyarországon 1945–1946-ban a pengő a világtörténelem egyik legsúlyosabb hiperinflációját élte át; a válságot az 1946. augusztus 1-jén bevezetett forint zárta le."
+    }
+  ],
+  "keyPoints": [
+    "Infláció: az általános árszínvonal tartós emelkedése, a pénz vásárlóerejének csökkenése; dezinfláció: az infláció ütemének lassulása (az árak még nőnek); defláció: az árszínvonal általános csökkenése.",
+    "Mérés: fogyasztóiár-index (a fogyasztói kosár súlyozott árváltozása; Magyarországon a KSH számítja), GDP-deflátor, termelői árindex; inflációs ráta = árindex − 100 (%).",
+    "Fajták mérték szerint: mérsékelt (kúszó), vágtató (két-három számjegyű), hiperinfláció (az árak havonta akár 50%-nál is jobban nőnek – pl. a pengő 1945–1946-ban); nyílt és rejtett (hiánygazdaság) infláció.",
+    "Okok szerint: keresleti infláció (az összkereslet gyorsabban nő, mint a kínálat, pl. túlzott pénzkiáramlás), költséginfláció (energia-, nyersanyagár, bér), inflációs várakozások (ár–bér spirál), importált infláció (külföldi áremelkedés, a hazai valuta gyengülése); monetarista nézet: tartósan a pénzmennyiség túlzott növekedése okozza.",
+    "Hatások: a váratlan infláció a hitelezőktől és a megtakarítóktól az adósok felé csoportosít át; a rögzített jövedelműek (nyugdíj, fix bér) reáljövedelme csökken; bizonytalanság, rövid távú döntések, menükköltség, „cipőtalp-költség”, versenyképesség romlása.",
+    "Reálbér: a nominálbérből vásárolható javak mennyisége; reálbérindex = nominálbér-index / fogyasztóiár-index × 100; reálkamat ≈ nominális kamat − infláció (Fisher-féle összefüggés).",
+    "Kétszintű bankrendszer: a jegybank (MNB) a bankok bankja, kibocsátja a törvényes fizetőeszközt, és ő felel a monetáris politikáért; az üzleti bankok az ügyfeleket szolgálják ki.",
+    "Az MNB elsődleges célja az árstabilitás; inflációs célkövetés: 3%-os középtávú cél ±1 százalékpontos toleranciasávval; a monetáris politikáról a Monetáris Tanács dönt.",
+    "Eszközök: jegybanki alapkamat (és kamatfolyosó), nyíltpiaci műveletek (értékpapír-vásárlás és -eladás), kötelező tartalékráta, jegybanki kommunikáció (a várakozások befolyásolása).",
+    "Hatásmechanizmus: kamatemelés → drágább hitel, vonzóbb megtakarítás, erősödő hazai valuta → csökkenő fogyasztási és beruházási kereslet, olcsóbb import → mérséklődő infláció; a hatás késéssel jelentkezik, és ára a lassuló növekedés lehet."
+  ],
+  "speakingSeconds": 720,
+  "prepSeconds": 1800,
+  "sampleAnswer": {
+    "turns": [
+      {
+        "speaker": "candidate",
+        "text": "A tételem az infláció és a monetáris politika. Az infláció az általános árszínvonal tartós emelkedése, amely a pénz vásárlóerejének csökkenésével jár. Fontos, hogy nem egyetlen termék drágulásáról van szó, hanem az árak általános és tartós növekedéséről. Ha az infláció üteme lassul, de az árak még nőnek, dezinflációról beszélünk, ha az árszínvonal csökken, az defláció. Az inflációt leggyakrabban a fogyasztóiár-indexszel mérjük, amelyet Magyarországon a KSH számít: ez a fogyasztói kosárban lévő termékek és szolgáltatások árváltozását mutatja, a kiadásokban betöltött súlyukkal. Ha az index 105, az infláció 5 százalék. Mértéke szerint megkülönböztetünk mérsékelt, vágtató és hiperinflációt; ez utóbbira példa a pengő 1945–46-os inflációja, amelyet a forint bevezetése zárt le. Okai szerint keresleti infláció lép fel, ha az összkereslet gyorsabban nő, mint a termelés, költséginfláció, ha például az energia vagy a bérek drágulnak, és fontos a várakozások szerepe is: ha mindenki áremelkedésre számít, magasabb bért kér, a vállalatok emelik az árakat, és kialakul az ár–bér spirál. Importált infláció akkor van, ha a külföldi árak nőnek vagy a forint gyengül. A monetaristák, Friedman nyomán, a tartós infláció fő okának a pénzmennyiség túlzott növekedését tartják. Az infláció hatásai közül a legfontosabb a jövedelmek átrendeződése. A váratlan infláció a hitelezőktől az adósok felé csoportosít át, és rosszul járnak a rögzített jövedelműek. A bérek vásárlóerejét a reálbér mutatja: a reálbérindex a nominálbér-index és a fogyasztóiár-index hányadosa. Ha a bérem 8 százalékkal, az árak 10 százalékkal nőnek, a reálbérem csökken. Hasonlóan a reálkamat közelítőleg a nominális kamat és az infláció különbsége, ezért 5 százalékos betéti kamat és 10 százalékos infláció mellett a megtakarító veszít. Az infláció ellen a jegybank lép fel. A kétszintű bankrendszerben a jegybank a bankok bankja, és ő felel a monetáris politikáért. A forrás szerint az MNB elsődleges célja az árstabilitás, inflációs célkövetést folytat, a középtávú cél 3 százalék, plusz-mínusz 1 százalékpontos toleranciasávval. Fő eszköze az alapkamat, emellett a nyíltpiaci műveletek, a kötelező tartalékráta és a kommunikáció. Ha a jegybank kamatot emel, drágulnak a hitelek, vonzóbb lesz a megtakarítás, a forint erősödik, ezért csökken a kereslet és olcsóbb lesz az import, így mérséklődik az infláció. Ennek ára, hogy lassulhat a gazdasági növekedés, és a hatás csak hónapok múlva jelentkezik."
+      },
+      {
+        "speaker": "examiner",
+        "text": "Miért káros a defláció, ha ilyenkor az árak csökkennek?"
+      },
+      {
+        "speaker": "candidate",
+        "text": "Mert ha a háztartások további árcsökkenésre számítanak, elhalasztják a vásárlásokat, a vállalatok pedig a beruházásokat. Csökken a kereslet, a vállalatok kevesebbet termelnek, elbocsátanak, ami tovább csökkenti a keresletet. Ráadásul az adósságok reálértéke nő, így az adósok terhei súlyosbodnak. Ezért a jegybankok nem nulla, hanem enyhén pozitív inflációt céloznak meg."
+      }
+    ],
+    "notes": [
+      "Az infláció, a dezinfláció és a defláció definícióját pontosan elkülöníti, a mérést, a fajtákat és az okokat a tananyag szerint, teljesen mutatja be.",
+      "A reálbér és a reálkamat számítását egy-egy számpéldával kapcsolja az infláció hatásaihoz, a kamatemelés hatásmechanizmusát lépésenként, ok–okozati láncként írja le.",
+      "A forrásokat (definíció, MNB-cél, pengő) beépíti; a kiegészítő kérdésnél a deflációs spirált és az adósságok reálértékének növekedését önállóan magyarázza."
+    ]
+  }
+}

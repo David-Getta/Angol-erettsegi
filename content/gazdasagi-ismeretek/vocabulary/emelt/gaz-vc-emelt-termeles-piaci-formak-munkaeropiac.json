@@ -1,0 +1,270 @@
+{
+  "schemaVersion": 1,
+  "id": "gaz-vc-emelt-termeles-piaci-formak-munkaeropiac",
+  "subject": "gazdasagi-ismeretek",
+  "revision": 1,
+  "level": "emelt",
+  "source": "generated",
+  "topic": "termeles-koltseg",
+  "title": "Termelés és költségek, piaci formák, munkaerőpiac – fogalmak",
+  "createdAt": "2026-11-08",
+  "tags": [
+    "altalanos"
+  ],
+  "section": "vocabulary",
+  "type": "deck",
+  "cards": [
+    {
+      "term": "termelési függvény",
+      "meaning": "Az a kapcsolat, amely megmutatja, hogy adott technológia mellett a termelési tényezők (inputok) adott mennyiségéből legfeljebb mennyi termék (output) állítható elő.",
+      "pos": "n",
+      "example": "A termelési függvény szerint két szakács óránként legfeljebb 18 pizzát készít.",
+      "collocation": "input – output"
+    },
+    {
+      "term": "rövid táv",
+      "meaning": "Az az időszak, amelyben legalább egy termelési tényező (pl. épület, gép) mennyisége nem változtatható.",
+      "pos": "n",
+      "example": "Rövid távon a pékség nem tud új kemencét építeni, csak több pékkel dolgozhat.",
+      "collocation": "legalább egy fix tényező"
+    },
+    {
+      "term": "csökkenő hozadék törvénye",
+      "meaning": "Ha egy változó tényező mennyiségét a többi tényező rögzítése mellett növeljük, egy ponton túl a pótlólagos egységek egyre kisebb többletkibocsátást hoznak (csökken a határtermék).",
+      "pos": "n",
+      "example": "A csökkenő hozadék törvénye miatt a negyedik szakács már csak 3 pizzával növeli a termelést.",
+      "collocation": "csökkenő határtermék"
+    },
+    {
+      "term": "fix költség (FC)",
+      "meaning": "A termelés nagyságától független költség, amely akkor is felmerül, ha a vállalat nem termel (pl. bérleti díj, hiteltörlesztés).",
+      "pos": "n",
+      "example": "A műhely fix költsége a bérleti díj, amelyet akkor is fizetni kell, ha egy asztalt sem gyártanak.",
+      "collocation": "állandó költség"
+    },
+    {
+      "term": "változó költség (VC)",
+      "meaning": "A termelés mennyiségével együtt változó költség (alapanyag, energia, darabbér).",
+      "pos": "n",
+      "example": "A faanyag a változó költség része, mert minél több asztal készül, annál több kell belőle.",
+      "collocation": "VC = TC – FC"
+    },
+    {
+      "term": "összköltség (TC)",
+      "meaning": "Egy adott mennyiség előállításának teljes költsége: a fix és a változó költség összege (TC = FC + VC).",
+      "pos": "n",
+      "example": "Négy asztal összköltsége 230 ezer Ft, ebből 100 ezer Ft fix költség.",
+      "collocation": "TC = FC + VC"
+    },
+    {
+      "term": "átlagköltség (AC)",
+      "meaning": "Az egy termékegységre jutó összköltség: AC = TC / Q (= AFC + AVC).",
+      "pos": "n",
+      "example": "Négy asztalnál az átlagköltség 230 / 4 = 57,5 ezer Ft/db.",
+      "collocation": "egységköltség"
+    },
+    {
+      "term": "átlagos változó költség (AVC)",
+      "meaning": "Az egy termékegységre jutó változó költség: AVC = VC / Q; minimuma az üzemszüneti pont.",
+      "pos": "n",
+      "example": "Ha az ár az átlagos változó költség minimuma alá esik, rövid távon jobb leállni.",
+      "collocation": "AVC = VC / Q"
+    },
+    {
+      "term": "határköltség (MC)",
+      "meaning": "Egy pótlólagos termékegység előállításának többletköltsége: MC = ΔTC / ΔQ; a fix költség nem befolyásolja.",
+      "pos": "n",
+      "example": "Az ötödik asztal határköltsége 50 ezer Ft, mert ennyivel nő az összköltség.",
+      "collocation": "MC = ΔTC / ΔQ"
+    },
+    {
+      "term": "gazdasági profit",
+      "meaning": "Az árbevétel és a teljes gazdasági költség (explicit + implicit költség) különbsége; kisebb a számviteli profitnál.",
+      "pos": "n",
+      "example": "Hiába 6 millió a számviteli nyereség, a gazdasági profit negatív, ha alkalmazottként 7 milliót keresne.",
+      "collocation": "számviteli profit – implicit költség"
+    },
+    {
+      "term": "normálprofit",
+      "meaning": "Az a profit, amely éppen megtéríti a vállalkozó saját tényezőinek alternatív költségét; ekkor a gazdasági profit nulla.",
+      "pos": "n",
+      "example": "Tökéletes versenyben hosszú távon a vállalatok csak normálprofitot érnek el.",
+      "collocation": "nulla gazdasági profit"
+    },
+    {
+      "term": "határbevétel (MR)",
+      "meaning": "Egy pótlólagos termékegység eladásából származó bevételnövekmény: MR = ΔTR / ΔQ; tökéletes versenyben MR = P, piaci erő esetén MR < P.",
+      "pos": "n",
+      "example": "A negyedik táska határbevétele csak 8 ezer Ft, mert az árat mind a négy táskánál csökkenteni kell.",
+      "collocation": "MR = ΔTR / ΔQ"
+    },
+    {
+      "term": "profitmaximalizálás feltétele",
+      "meaning": "A vállalat addig bővíti a termelést, amíg a határbevétel legalább akkora, mint a határköltség; a profit ott maximális, ahol MR = MC.",
+      "pos": "n",
+      "example": "A profitmaximalizálás feltétele szerint a műhely ott áll meg, ahol MR = MC.",
+      "collocation": "MR = MC"
+    },
+    {
+      "term": "fedezeti pont",
+      "meaning": "Az a termelési szint, ahol az árbevétel éppen fedezi az összköltséget (TR = TC); tökéletes versenyben ott, ahol P = min AC.",
+      "pos": "n",
+      "example": "A fedezeti pont felett a vállalat már nyereséges.",
+      "collocation": "TR = TC"
+    },
+    {
+      "term": "üzemszüneti pont",
+      "meaning": "Az átlagos változó költség minimuma; ha az ár ez alá esik, rövid távon jobb leállni, mert a veszteség így csak a fix költség.",
+      "pos": "n",
+      "example": "Az üzemszüneti pont alatt a bevétel a változó költséget sem fedezi.",
+      "collocation": "P = min AVC"
+    },
+    {
+      "term": "vállalati kínálati görbe",
+      "meaning": "Tökéletes versenyben a határköltség-görbe átlagos változó költség minimuma feletti szakasza: minden árhoz megmutatja a profitmaximalizáló mennyiséget.",
+      "pos": "n",
+      "example": "A vállalati kínálati görbe azért emelkedik, mert a határköltség a csökkenő hozadék miatt nő.",
+      "collocation": "MC-görbe az AVC minimuma felett"
+    },
+    {
+      "term": "tökéletes verseny",
+      "meaning": "Piaci forma: sok kis eladó és vevő, homogén termék, szabad be- és kilépés, teljes informáltság; a vállalat árelfogadó.",
+      "pos": "n",
+      "example": "A tökéletes versenyben egyetlen gazda sem tudja megemelni a burgonya árát.",
+      "collocation": "homogén termék, szabad belépés"
+    },
+    {
+      "term": "piaci erő",
+      "meaning": "A vállalat képessége, hogy a versenyárnál magasabb árat szabjon anélkül, hogy minden vevőjét elveszítené; ármeghatározó helyzet.",
+      "pos": "n",
+      "example": "A szabadalom piaci erőt ad a gyógyszercégnek.",
+      "collocation": "ármeghatározó képesség"
+    },
+    {
+      "term": "monopólium",
+      "meaning": "Piaci forma: egyetlen eladó, közeli helyettesítő nélküli termék, belépési korlátok; a vállalat ármeghatározó, MR = MC-nél kisebb mennyiséget kínál magasabb áron.",
+      "pos": "n",
+      "example": "A monopólium magasabb áron kevesebbet ad el, mint a versenyző piac.",
+      "collocation": "egyetlen eladó"
+    },
+    {
+      "term": "természetes monopólium",
+      "meaning": "Olyan piac, ahol a hatalmas fix költség (pl. hálózat) miatt egyetlen vállalat olcsóbban látja el a teljes keresletet, mint több; árát gyakran hatóság szabályozza.",
+      "pos": "n",
+      "example": "A vezetékes vízszolgáltatás természetes monopólium, mert két csőhálózat pazarlás lenne.",
+      "collocation": "hálózatos szolgáltatás"
+    },
+    {
+      "term": "belépési korlát",
+      "meaning": "Minden olyan tényező, amely megakadályozza vagy megnehezíti új vállalatok piacra lépését (szabadalom, engedély, nagy fix költség, kulcsfontosságú erőforrás birtoklása).",
+      "pos": "n",
+      "example": "A cementgyártásban a hatalmas beruházási igény belépési korlát.",
+      "collocation": "jogi és gazdasági korlát"
+    },
+    {
+      "term": "oligopólium",
+      "meaning": "Piaci forma: kevés nagy eladó, magas belépési korlátok és kölcsönös függőség – minden vállalat számol a riválisok reakciójával.",
+      "pos": "n",
+      "example": "Az oligopólium tagjai figyelik, mit lép a versenytárs, mielőtt árat változtatnak.",
+      "collocation": "kölcsönös függőség"
+    },
+    {
+      "term": "kartell",
+      "meaning": "A versenytársak versenykorlátozó megállapodása vagy összehangolt magatartása az árakról, a termelésről vagy a piacok felosztásáról; tilos.",
+      "pos": "n",
+      "example": "A versenyhivatal megbírságolta a kartellt, mert a tagok közösen rögzítették az árat.",
+      "collocation": "ármegállapodás"
+    },
+    {
+      "term": "monopolisztikus verseny",
+      "meaning": "Piaci forma: sok eladó, differenciált termék, viszonylag szabad belépés; rövid távon kis piaci erő, hosszú távon normálprofit.",
+      "pos": "n",
+      "example": "A főutca kávézói monopolisztikus versenyben állnak: mindegyik kicsit mást kínál.",
+      "collocation": "differenciált termék"
+    },
+    {
+      "term": "holtteher-veszteség",
+      "meaning": "A piaci erő (vagy más torzítás) miatt elmaradó, a társadalom számára hasznos tranzakciók értéke: a monopolár miatt nem jön létre minden olyan adásvétel, amely a hatékony piacon létrejönne.",
+      "pos": "n",
+      "example": "A monopólium holtteher-veszteséget okoz, mert kevesebbet termel a hatékony mennyiségnél.",
+      "collocation": "társadalmi veszteség"
+    },
+    {
+      "term": "Gazdasági Versenyhivatal (GVH)",
+      "meaning": "A magyar versenyhatóság: vizsgálja és bírságolja a kartelleket és a gazdasági erőfölénnyel való visszaélést, ellenőrzi a vállalati összefonódásokat.",
+      "pos": "n",
+      "example": "A Gazdasági Versenyhivatal vizsgálatot indított a cementgyárak ellen.",
+      "collocation": "versenyfelügyelet"
+    },
+    {
+      "term": "származékos kereslet",
+      "meaning": "A termelési tényezők (így a munka) iránti kereslet abból ered, hogy a velük előállított termékekre van kereslet.",
+      "pos": "n",
+      "example": "A munkaerő iránti kereslet származékos kereslet: ha kevesebb autót vesznek, kevesebb autógyári munkás kell.",
+      "collocation": "derivált kereslet"
+    },
+    {
+      "term": "határtermék értéke",
+      "meaning": "Egy pótlólagos munkás által előállított többlettermék értéke (határtermék × termékár); a vállalat addig alkalmaz újabb dolgozót, amíg ez legalább akkora, mint a bér.",
+      "pos": "n",
+      "example": "A cég akkor vesz fel új dolgozót, ha a határtermék értéke eléri a bért.",
+      "collocation": "VMP ≥ bér"
+    },
+    {
+      "term": "helyettesítési és jövedelmi hatás",
+      "meaning": "A bér emelkedésekor a helyettesítési hatás több munkára ösztönöz (drágább a szabadidő), a jövedelmi hatás több szabadidőre (gazdagabbak vagyunk); ettől visszahajolhat a munkakínálati görbe.",
+      "pos": "n",
+      "example": "A helyettesítési és jövedelmi hatás magyarázza, miért dolgozik kevesebbet valaki nagyon magas bérnél.",
+      "collocation": "visszahajló kínálati görbe"
+    },
+    {
+      "term": "gazdaságilag aktív népesség",
+      "meaning": "A foglalkoztatottak és a munkanélküliek együtt (munkaerő); a munkanélküliségi ráta nevezője.",
+      "pos": "n",
+      "example": "A gazdaságilag aktív népesség 5 000 ezer fő: 4 600 foglalkoztatott és 400 munkanélküli.",
+      "collocation": "munkaerő"
+    },
+    {
+      "term": "munkanélküliségi ráta",
+      "meaning": "A munkanélküliek aránya a gazdaságilag aktív népességen belül: munkanélküliek / aktívak × 100.",
+      "pos": "n",
+      "example": "A munkanélküliségi ráta 400 / 5 000 × 100 = 8 %.",
+      "collocation": "munkanélküli / aktív"
+    },
+    {
+      "term": "strukturális munkanélküliség",
+      "meaning": "Szerkezeti munkanélküliség: a munkaerő képzettsége vagy lakóhelye nem felel meg a munkáltatók igényeinek (pl. egy iparág megszűnése után); átképzéssel, mobilitással csökkenthető.",
+      "pos": "n",
+      "example": "A bányabezárás után strukturális munkanélküliség alakult ki, mert a bányászok szakmájára nincs kereslet.",
+      "collocation": "szerkezeti munkanélküliség"
+    },
+    {
+      "term": "súrlódásos munkanélküliség",
+      "meaning": "Munkahelyváltás vagy pályakezdés miatti, átmeneti munkanélküliség, amíg a munkavállaló és a munkáltató egymásra talál.",
+      "pos": "n",
+      "example": "A friss diplomás három hónapos álláskeresése súrlódásos munkanélküliség.",
+      "collocation": "átmeneti, keresési"
+    },
+    {
+      "term": "ciklikus munkanélküliség",
+      "meaning": "Konjunkturális munkanélküliség: a gazdasági visszaesés miatt csökkenő munkakereslet okozza; fellendüléskor mérséklődik.",
+      "pos": "n",
+      "example": "A válság idején a ciklikus munkanélküliség gyorsan nőtt.",
+      "collocation": "konjunkturális munkanélküliség"
+    },
+    {
+      "term": "természetes munkanélküliségi ráta",
+      "meaning": "A súrlódásos és a strukturális munkanélküliség együttes aránya, amely konjunktúra idején, teljes foglalkoztatás mellett is fennmarad.",
+      "pos": "n",
+      "example": "Teljes foglalkoztatásnál is van munkanélküliség, ezt a természetes munkanélküliségi ráta mutatja.",
+      "collocation": "teljes foglalkoztatás"
+    },
+    {
+      "term": "aktív foglalkoztatáspolitika",
+      "meaning": "A munkanélküliség csökkentését célzó állami eszközök: átképzés, állásközvetítés, bértámogatás, vállalkozóvá válás támogatása, közfoglalkoztatás (szemben a jövedelmet pótló passzív eszközökkel, pl. álláskeresési járadék).",
+      "pos": "n",
+      "example": "Az átképzési program az aktív foglalkoztatáspolitika eszköze, a járadék viszont passzív.",
+      "collocation": "aktív – passzív eszköz"
+    }
+  ]
+}

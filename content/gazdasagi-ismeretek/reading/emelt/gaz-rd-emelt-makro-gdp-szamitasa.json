@@ -1,0 +1,180 @@
+{
+  "schemaVersion": 1,
+  "id": "gaz-rd-emelt-makro-gdp-szamitasa",
+  "subject": "gazdasagi-ismeretek",
+  "revision": 1,
+  "level": "emelt",
+  "source": "generated",
+  "topic": "makro",
+  "title": "A nemzetgazdaság teljesítménye: GDP, GNI, nominális és reál GDP",
+  "createdAt": "2026-11-08",
+  "tags": [
+    "altalanos"
+  ],
+  "section": "reading",
+  "type": "szamitas-rovid",
+  "instructions": "Egy kitalált ország adatai alapján számítsa ki a kért mutatókat! Csak az eredményt írja be (a megadott mértékegységben; a százalékokat egy tizedesjegyre kerekítve). A 0. a megoldott példa.",
+  "passage": {
+    "title": "Egy kitalált ország nemzeti számlái",
+    "blocks": [
+      {
+        "heading": "Az 1. év adatai (milliárd pénzegység)",
+        "text": "A háztartások fogyasztása 30 000, a vállalatok beruházásai 9 000, az állam termék- és szolgáltatásvásárlásai 8 000 milliárd pénzegység voltak. Az ország exportja 20 000, importja 19 000 milliárd pénzegység volt. Az állam ezenkívül 5 000 milliárd pénzegységet fizetett ki nyugdíjakra és családi pótlékra; ezek transzferek, amelyekért az állam nem kap terméket vagy szolgáltatást."
+      },
+      {
+        "text": "A külföldi tulajdonú vállalatok 3 000 milliárd pénzegység profitot utaltak haza a saját országukba, a külföldön dolgozó hazai munkavállalók és a külföldön befektető hazai vállalatok pedig összesen 1 000 milliárd pénzegység jövedelmet kaptak külföldről. Az ország népessége 4 millió fő."
+      },
+      {
+        "heading": "A 2. év adatai",
+        "text": "A 2. évben a folyó áron számított (nominális) GDP 54 000 milliárd pénzegység volt. Az árszínvonal – a GDP-deflátor szerint – 8%-kal emelkedett az 1. évhez képest."
+      },
+      {
+        "heading": "A hozzáadott érték",
+        "text": "Egy termékláncban a gazda 200 pénzegységért adja el a búzát a malomnak, a malom 500 pénzegységért a lisztet a péknek, a pék pedig 900 pénzegységért a kenyeret a fogyasztóknak. A búza és a liszt köztes termék (folyó termelő felhasználás), a kenyér végső felhasználásra kerül."
+      }
+    ]
+  },
+  "example": {
+    "id": "0",
+    "kind": "text",
+    "prompt": "Mekkora volt az 1. évben a nettó export (milliárd pénzegység)?",
+    "answer": [
+      "1000",
+      "1 000",
+      "+1000",
+      "+1 000",
+      "1000 milliárd",
+      "1 000 milliárd"
+    ],
+    "category": "szamitas",
+    "explanation": "1 000 milliárd pénzegység. Nettó export = export − import = 20 000 − 19 000 = 1 000 milliárd pénzegység."
+  },
+  "items": [
+    {
+      "id": "1",
+      "kind": "text",
+      "prompt": "Mekkora volt az 1. évben a GDP a felhasználási (kiadási) oldalról számítva (milliárd pénzegység)?",
+      "answer": [
+        "48000",
+        "48 000",
+        "48000 milliárd",
+        "48 000 milliárd",
+        "48000 milliárd pénzegység",
+        "48 000 milliárd pénzegység"
+      ],
+      "category": "szamitas",
+      "evidence": "ezek transzferek, amelyekért az állam nem kap terméket vagy szolgáltatást",
+      "explanation": "48 000 milliárd pénzegység. GDP = C + I + G + (X − M) = 30 000 + 9 000 + 8 000 + (20 000 − 19 000) = 48 000. Az 5 000 milliárdos nyugdíj és családi pótlék transzfer: nem ellenértéke semmilyen termelésnek, csak jövedelmet csoportosít át, ezért nem része a GDP-nek (aki hozzáadja, 53 000-et kap – ez hibás)."
+    },
+    {
+      "id": "2",
+      "kind": "text",
+      "prompt": "Mekkora volt az 1. évben a GNI, vagyis a bruttó nemzeti jövedelem (milliárd pénzegység)?",
+      "answer": [
+        "46000",
+        "46 000",
+        "46000 milliárd",
+        "46 000 milliárd",
+        "46000 milliárd pénzegység",
+        "46 000 milliárd pénzegység"
+      ],
+      "category": "szamitas",
+      "explanation": "46 000 milliárd pénzegység. GNI = GDP + a külföldről kapott elsődleges jövedelmek − a külföldre fizetett elsődleges jövedelmek = 48 000 + 1 000 − 3 000 = 46 000. A GDP a területi elv (az ország területén termelt érték), a GNI a honossági elv szerint méri a teljesítményt: a hazaiak által megszerzett jövedelmet."
+    },
+    {
+      "id": "3",
+      "kind": "text",
+      "prompt": "Mekkora volt az 1. évben az egy főre jutó GDP (millió pénzegység/fő)?",
+      "answer": [
+        "12",
+        "12 millió",
+        "12 millió pénzegység",
+        "12 millió pénzegység/fő",
+        "12 millió pe/fő",
+        "12000000",
+        "12 000 000"
+      ],
+      "category": "szamitas",
+      "explanation": "12 millió pénzegység/fő. Egy főre jutó GDP = GDP / népesség = 48 000 milliárd / 4 millió fő = 48 000 000 millió / 4 millió = 12 millió pénzegység/fő. A mértékegységekre figyelni kell: 1 milliárd = 1 000 millió."
+    },
+    {
+      "id": "4",
+      "kind": "text",
+      "prompt": "Hány százalékkal nőtt a nominális GDP a 2. évben?",
+      "answer": [
+        "12,5",
+        "12.5",
+        "12,5%",
+        "12.5%",
+        "12,5 %",
+        "12.5 %",
+        "12,5 százalék",
+        "12.5 százalék"
+      ],
+      "category": "szamitas",
+      "explanation": "12,5%. Nominális növekedés = (54 000 / 48 000 − 1) × 100 = (1,125 − 1) × 100 = 12,5%. Ez a növekedés azonban az áremelkedés hatását is tartalmazza, ezért önmagában nem mutatja a termelés bővülését."
+    },
+    {
+      "id": "5",
+      "kind": "text",
+      "prompt": "Mekkora volt a 2. évi reál GDP az 1. év árain számítva (milliárd pénzegység)?",
+      "answer": [
+        "50000",
+        "50 000",
+        "50000 milliárd",
+        "50 000 milliárd",
+        "50000 milliárd pénzegység",
+        "50 000 milliárd pénzegység"
+      ],
+      "category": "szamitas",
+      "evidence": "Az árszínvonal – a GDP-deflátor szerint – 8%-kal emelkedett az 1. évhez képest.",
+      "explanation": "50 000 milliárd pénzegység. Reál GDP = nominális GDP / árindex = 54 000 / 1,08 = 50 000. Ellenőrzés: 50 000 × 1,08 = 54 000. Hibás az az eljárás, amely a 8%-ot egyszerűen kivonja (54 000 × 0,92 = 49 680), mert az áremelkedés az 1. évi árakra vonatkozik – osztani kell az árindexszel."
+    },
+    {
+      "id": "6",
+      "kind": "text",
+      "prompt": "Hány százalékkal nőtt a reál GDP a 2. évben (egy tizedesjegyre kerekítve)?",
+      "answer": [
+        "4,2",
+        "4.2",
+        "4,2%",
+        "4.2%",
+        "4,2 %",
+        "4.2 %",
+        "4,17",
+        "4.17",
+        "4,17%",
+        "4.17%"
+      ],
+      "category": "szamitas",
+      "explanation": "≈ 4,2%. Reálnövekedés = (50 000 / 48 000 − 1) × 100 = 4,166…% ≈ 4,2%. A gyors közelítés (12,5% − 8% = 4,5%) pontatlan: a pontos számításhoz az árindexszel kell osztani (1,125 / 1,08 = 1,0417)."
+    },
+    {
+      "id": "7",
+      "kind": "text",
+      "prompt": "Mennyivel növeli a búza–liszt–kenyér termékláncban előállított érték a GDP-t (pénzegység)?",
+      "answer": [
+        "900",
+        "900 pénzegység",
+        "900 pe"
+      ],
+      "category": "fogalomcsere",
+      "explanation": "900 pénzegység. A GDP csak a végső felhasználásra szánt javak értékét tartalmazza, vagyis a hozzáadott értékek összegét: 200 (gazda) + (500 − 200) (malom) + (900 − 500) (pék) = 200 + 300 + 400 = 900, ami éppen a kenyér ára. Ha az összes eladást összeadnánk (200 + 500 + 900 = 1 600), a búzát és a lisztet többször számolnánk (halmozódás)."
+    }
+  ],
+  "glossary": [
+    {
+      "term": "transzfer",
+      "meaning": "ellenszolgáltatás nélküli jövedelem-átcsoportosítás (pl. nyugdíj, családi pótlék, segély)"
+    },
+    {
+      "term": "GDP-deflátor",
+      "meaning": "a GDP-ben szereplő összes jószág árszínvonalának változását mérő árindex (nominális GDP / reál GDP)"
+    },
+    {
+      "term": "köztes termék",
+      "meaning": "más termék előállításához felhasznált jószág (folyó termelő felhasználás), a GDP-be külön nem számít bele"
+    }
+  ],
+  "suggestedMinutes": 12
+}

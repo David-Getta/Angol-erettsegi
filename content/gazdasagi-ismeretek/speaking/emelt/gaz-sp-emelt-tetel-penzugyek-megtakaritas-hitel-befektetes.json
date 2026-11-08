@@ -1,0 +1,86 @@
+{
+  "schemaVersion": 1,
+  "id": "gaz-sp-emelt-tetel-penzugyek-megtakaritas-hitel-befektetes",
+  "subject": "gazdasagi-ismeretek",
+  "revision": 1,
+  "level": "emelt",
+  "source": "generated",
+  "topic": "penzugyek",
+  "title": "Pénzügyi ismeretek: megtakarítás, hitel, értékpapírok, biztosítás",
+  "createdAt": "2026-11-08",
+  "tags": [
+    "altalanos"
+  ],
+  "section": "speaking",
+  "type": "tetel",
+  "partNumber": 1,
+  "instructionsHu": "Fejtse ki a tételt! Mutassa be a háztartás pénzügyi tervezését és a megtakarítás formáit, a kamatszámítás alapjait és a reálkamatot, a hitelek fajtáit, a THM-et és az eladósodás kockázatait, az értékpapírokat (részvény, kötvény, állampapír) és a tőzsdét, a befektetési döntés szempontjait, végül a biztosítás és a nyugdíj-előtakarékosság szerepét! Használja a forrásokat! Felkészülési idő: 30 perc.",
+  "prompts": [
+    "Mi a háztartási költségvetés, és hogyan keletkezik a megtakarítás? Miért fontos a tartalék (vésztartalék) képzése?",
+    "Mi a különbség az egyszerű és a kamatos kamatozás között? Mit mutat a reálkamat? Számoljon a forrás adataival!",
+    "Milyen hiteltípusokat ismer (fogyasztási hitel, személyi kölcsön, lakáshitel, jelzáloghitel)? Mit fejez ki a THM, és miért ez alapján kell összehasonlítani a hiteleket? Milyen kockázatai vannak az eladósodásnak?",
+    "Mutassa be a részvényt, a kötvényt és az állampapírt (kibocsátó, a befektető jogai, hozam, kockázat)! Mi a tőzsde szerepe?",
+    "Milyen szempontok szerint döntünk a befektetésekről (hozam, kockázat, likviditás)? Mit jelent a diverzifikáció? Mit véd a betétbiztosítás (OBA)?",
+    "Miért van szükség biztosításra és nyugdíj-előtakarékosságra (öngondoskodás)? Mutasson példákat kötelező és önkéntes formákra!"
+  ],
+  "usefulPhrases": [
+    {
+      "en": "kamatos kamat",
+      "hu": "a kamatot tőkésítik, így a következő időszakban a kamat is kamatozik"
+    },
+    {
+      "en": "THM (teljes hiteldíj mutató)",
+      "hu": "a hitel összes költségét (kamat, díjak, költségek) egyetlen éves százalékban kifejező mutató"
+    },
+    {
+      "en": "befektetési háromszög",
+      "hu": "hozam – kockázat – likviditás: a három egyszerre nem lehet kedvező"
+    }
+  ],
+  "sources": [
+    {
+      "title": "1. forrás – Egy család havi költségvetése (hipotetikus adatok)",
+      "text": "Nettó jövedelem összesen: 800 000 Ft. Kiadások: lakhatás és rezsi 260 000 Ft, élelmiszer 200 000 Ft, közlekedés 80 000 Ft, hiteltörlesztés 120 000 Ft, egyéb 60 000 Ft. A család a maradékot egy évi 4 %-os kamatozású betétbe teszi; a várható infláció évi 5 %."
+    },
+    {
+      "title": "2. forrás – Részlet egy fogyasztóvédelmi tájékoztatóból (kitalált)",
+      "text": "„A hirdetésekben szereplő alacsony kamat még nem jelenti, hogy a hitel olcsó. Mindig a THM-et hasonlítsa össze, és gondolja végig, ki tudja-e fizetni a törlesztőrészletet akkor is, ha a jövedelme csökken vagy a kamat emelkedik!”"
+    }
+  ],
+  "keyPoints": [
+    "Háztartási költségvetés: a háztartás bevételeinek és kiadásainak terve egy időszakra; megtakarítás = a rendelkezésre álló jövedelem el nem fogyasztott része; az 1. forrásban 800 000 − (260 000 + 200 000 + 80 000 + 120 000 + 60 000) = 800 000 − 720 000 = 80 000 Ft havonta; a vésztartalék váratlan kiadásokra, jövedelemkiesésre szolgál.",
+    "Kamat: a pénz időleges átengedésének ára; egyszerű kamatozásnál csak az eredeti tőke kamatozik, kamatos kamatnál a kamatot tőkésítik (végösszeg = tőke × (1 + i)^n), ezért hosszabb távon nagyobb a végösszeg.",
+    "Reálkamat ≈ nominális kamatláb − inflációs ráta; az 1. forrás alapján 4 % − 5 % = −1 %: a betét forintösszege nő, de a vásárlóereje csökken – negatív reálkamat.",
+    "Hitelfajták: fogyasztási hitel (áruhitel), szabad felhasználású személyi kölcsön, folyószámlahitel, lakáshitel; jelzáloghitel: ingatlanfedezettel biztosított hitel – ha az adós nem fizet, a bank az ingatlanból elégítheti ki a követelését; fedezet, hitelképesség, futamidő, törlesztőrészlet.",
+    "THM (teljes hiteldíj mutató): a hitel teljes díját – az ügyleti kamatot és a hitelhez kapcsolódó egyéb díjakat, költségeket – egyetlen éves százalékban kifejező mutató; azonos összegű és futamidejű hiteleknél a kisebb THM jelenti az olcsóbb hitelt (2. forrás).",
+    "Az eladósodás kockázatai: a törlesztőrészlet túl nagy része a jövedelemnek, változó kamatozásnál a kamatemelkedés, devizahitelnél az árfolyamkockázat (ezt mutatta a 2008 utáni magyar devizahitel-válság), jövedelemkiesés; adósságspirál, ha új hitelből törlesztik a régit.",
+    "Részvény: a részvénytársaság alaptőkéjének egy részét megtestesítő, tulajdonosi (tagsági) jogot biztosító értékpapír – osztalékra, szavazásra a közgyűlésen jogosít, hozama az osztalék és az árfolyamnyereség, kockázatos; kötvény: hitelviszonyt megtestesítő értékpapír, a kibocsátó kölcsönt vesz fel, a kamatot és a névértéket a futamidő végéig visszafizeti; állampapír: az állam által kibocsátott hitelviszonyt megtestesítő értékpapír, kis kockázatú.",
+    "Tőzsde: szervezett, szabályozott értékpapír-piac, ahol a meglévő értékpapírokkal kereskednek (másodlagos piac), az árfolyamot a kereslet és a kínálat alakítja; a Budapesti Értéktőzsde részvényindexe a BUX.",
+    "Befektetési döntés: hozam, kockázat és likviditás (befektetési háromszög) – a nagyobb hozam általában nagyobb kockázattal jár; diverzifikáció: a megtakarítás megosztása különböző befektetések között a kockázat csökkentésére; a betétbiztosítás (Országos Betétbiztosítási Alap, OBA) a bank fizetésképtelensége esetén a betéteket a jogszabályban rögzített összeghatárig védi, a részvények árfolyamvesztesége ellen nem véd.",
+    "Biztosítás: a kockázatközösség révén a ritka, de nagy kárt sokan kis díjjal fedezik; kötelező pl. a gépjármű-felelősségbiztosítás, önkéntes pl. az élet-, a lakás- és az utasbiztosítás; nyugdíj: a kötelező társadalombiztosítási nyugdíj mellett öngondoskodás – önkéntes nyugdíjpénztár, nyugdíj-előtakarékossági számla, nyugdíjbiztosítás; azért fontos, mert az idősödő társadalomban a társadalombiztosítási nyugdíj egyre nagyobb terhet jelent az aktív korúaknak."
+  ],
+  "speakingSeconds": 720,
+  "prepSeconds": 1800,
+  "sampleAnswer": {
+    "turns": [
+      {
+        "speaker": "candidate",
+        "text": "A tételem a pénzügyi ismeretek: megtakarítás, hitel, befektetés és biztosítás. A háztartási költségvetés a háztartás bevételeinek és kiadásainak terve egy adott időszakra. A megtakarítás a jövedelem el nem fogyasztott része. Az első forrásban a család kiadásai összesen 720 000 forintot tesznek ki, így a 800 000 forintos nettó jövedelemből havi 80 000 forintot tud megtakarítani. Először érdemes vésztartalékot képezni, amely váratlan kiadás vagy jövedelemkiesés esetén segít. A megtakarítás kamatot hoz. A kamat a pénz időleges átengedésének ára. Egyszerű kamatozásnál csak az eredeti tőke kamatozik, kamatos kamatnál a kamatot tőkésítik, így a következő évben a kamat is kamatozik; a végösszeg a tőke szorozva egy plusz kamatláb az n-ediken. Fontos azonban a reálkamat, amely közelítőleg a nominális kamatláb és az infláció különbsége. Az első forrásban ez 4 mínusz 5, vagyis mínusz 1 százalék: a betét összege nő, de a vásárlóereje csökken. A hitel a megtakarítás ellentéte: a jövőbeli jövedelmünket költjük el előre. Van fogyasztási hitel, személyi kölcsön, folyószámlahitel és lakáshitel; a jelzáloghitel fedezete ingatlan, amelyből a bank behajthatja a követelését, ha az adós nem fizet. A hiteleket a THM, a teljes hiteldíj mutató alapján kell összehasonlítani, mert az a kamaton kívül a díjakat és a költségeket is tartalmazza, éves százalékban. Ahogy a második forrás is írja, az alacsony kamat még nem jelent olcsó hitelt, és azt is végig kell gondolni, hogy jövedelemcsökkenés vagy kamatemelkedés esetén is ki tudjuk-e fizetni a törlesztőrészletet. Ennek elmulasztása vezethet eladósodáshoz; Magyarországon 2008 után a devizahitelesek a forint gyengülése miatt kerültek bajba. A befektetések közül a részvény tulajdonosi jogot megtestesítő értékpapír: osztalékra és szavazásra jogosít, hozama az osztalék és az árfolyamnyereség, de az árfolyama ingadozik. A kötvény hitelviszonyt megtestesítő értékpapír: a kibocsátó kölcsönt vesz fel, kamatot fizet és lejáratkor visszafizeti a névértéket. Az állampapír az állam kötvénye, ezért kis kockázatú. A tőzsde szervezett értékpapírpiac, Budapesten a BUX a részvényindex. A befektetésnél három szempontot mérlegelünk: hozam, kockázat és likviditás, és ez a három egyszerre nem lehet kedvező. A kockázatot diverzifikációval csökkenthetjük, vagyis több különböző befektetés között osztjuk meg a pénzünket. A bankbetéteket az Országos Betétbiztosítási Alap egy jogszabályban rögzített összeghatárig védi a bank csődje esetén, a részvény árfolyamesését viszont senki nem téríti meg. Végül a biztosítás a kockázatközösség elvén működik: sokan kis díjat fizetnek, és abból térítik meg a kevesek nagy kárát. Kötelező például a gépjármű-felelősségbiztosítás, önkéntes az életbiztosítás vagy a lakásbiztosítás. A nyugdíjnál a kötelező társadalombiztosítási nyugdíj mellett öngondoskodásra is szükség van, például önkéntes nyugdíjpénztárral vagy nyugdíj-előtakarékossági számlával, mert a társadalom öregedése miatt egyre kevesebb aktív korú jut egy nyugdíjasra."
+      },
+      {
+        "speaker": "examiner",
+        "text": "Miért kisebb általában egy állampapír hozama, mint egy részvény várható hozama?"
+      },
+      {
+        "speaker": "candidate",
+        "text": "Mert a hozam a vállalt kockázat ellenértéke. Az állampapír kamatát és névértékét az állam fizeti vissza, ezért a nemfizetés kockázata kicsi, és a hozam is előre ismert. A részvénynél sem az osztalék, sem az árfolyam nem garantált, a befektető akár el is veszítheti a pénzét, ezért csak akkor vállalja ezt a kockázatot, ha cserébe nagyobb hozamot vár."
+      }
+    ],
+    "notes": [
+      "A felelet a források adataival számol: a havi megtakarítást (800 000 − 720 000 = 80 000 Ft) és a negatív reálkamatot (4 % − 5 % = −1 %) is kiszámolja és értelmezi.",
+      "A kamatos kamat képlete, a THM fogalma és a hitelösszehasonlítás szabálya pontos; a 2. forrás figyelmeztetését az eladósodás kockázataival és magyar példával (devizahitelek) kapcsolja össze.",
+      "A három értékpapírt a tulajdonosi és a hitelviszony megkülönböztetésével definiálja, és a befektetési háromszöget, a diverzifikációt és az OBA szerepét (és korlátját) is bemutatja.",
+      "A kiegészítő kérdésre a hozam–kockázat összefüggéssel válaszol – ez a tétel egyik legfontosabb összefüggése."
+    ]
+  }
+}

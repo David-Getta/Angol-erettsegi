@@ -1,0 +1,90 @@
+{
+  "schemaVersion": 1,
+  "id": "gaz-sp-emelt-tetel-munkaeropiac-munkanelkuliseg",
+  "subject": "gazdasagi-ismeretek",
+  "revision": 1,
+  "level": "emelt",
+  "source": "generated",
+  "topic": "munkaero-piac",
+  "title": "A munkaerőpiac és a munkanélküliség",
+  "createdAt": "2026-11-08",
+  "tags": [
+    "altalanos"
+  ],
+  "section": "speaking",
+  "type": "tetel",
+  "partNumber": 1,
+  "instructionsHu": "Fejtse ki a tételt! Mutassa be a munkakeresletet és a munkakínálatot, a bér kialakulását és a munkaerő-piaci egyensúlyt, a munkanélküliség fogalmát, mérését és fajtáit, végül a foglalkoztatáspolitika aktív és passzív eszközeit! Felkészülési idő: 30 perc.",
+  "prompts": [
+    "Kik a munkaerőpiac szereplői? Miért származékos a munkakereslet, és mitől függ?",
+    "Mitől függ a munkakínálat? Mi a helyettesítési és a jövedelmi hatás a munka és a szabadidő közötti választásban?",
+    "Hogyan alakul ki az egyensúlyi bér? Mi történik, ha a bért (pl. minimálbérrel) az egyensúlyi szint fölött rögzítik?",
+    "Ki számít munkanélkülinek? Hogyan számítjuk a munkanélküliségi, az aktivitási és a foglalkoztatási rátát?",
+    "Milyen fajtái vannak a munkanélküliségnek? Mi a természetes munkanélküliségi ráta?",
+    "Milyen aktív és passzív foglalkoztatáspolitikai eszközöket ismersz?"
+  ],
+  "usefulPhrases": [
+    {
+      "en": "származékos kereslet",
+      "hu": "a munkát azért keresik, mert a vele előállított termékre van kereslet"
+    },
+    {
+      "en": "gazdaságilag aktív népesség",
+      "hu": "foglalkoztatottak + munkanélküliek (munkaerő)"
+    },
+    {
+      "en": "súrlódásos – strukturális – ciklikus",
+      "hu": "a munkanélküliség fő fajtái"
+    },
+    {
+      "en": "aktív – passzív eszköz",
+      "hu": "a munkanélküliség csökkentése – a munkanélküliek jövedelmének pótlása"
+    }
+  ],
+  "sources": [
+    {
+      "title": "1. forrás – Hipotetikus adatok (ezer fő)",
+      "text": "Egy kitalált régió 15–74 éves népessége 1 000 ezer fő: 560 ezer foglalkoztatott, 40 ezer munkanélküli, 400 ezer gazdaságilag inaktív."
+    },
+    {
+      "title": "2. forrás – Kitalált ábraleírás",
+      "text": "A munkaerőpiac ábráján a munkakeresleti görbe lefelé, a munkakínálati görbe felfelé hajlik. A metszéspont fölött egy vízszintes vonal jelzi a jogszabályban rögzített legkisebb bért; ennél a bérnél a kínálati görbe jobbra esik a keresleti görbétől."
+    }
+  ],
+  "keyPoints": [
+    "A munkaerőpiac a munkakereslet és a munkakínálat találkozásának helye; keresleti oldal: a vállalatok (és az állam), kínálati oldal: a háztartások; a munka ára a bér.",
+    "A munkakereslet származékos: a termékek iránti keresletből ered; a vállalat addig alkalmaz újabb dolgozót, amíg a határtermék értéke (a többlettermék × ár) legalább akkora, mint a bér; a keresleti görbe lefelé hajlik.",
+    "A munkakínálat a munka és a szabadidő közötti választás eredménye; a bér emelkedésekor a helyettesítési hatás több munkára, a jövedelmi hatás több szabadidőre ösztönöz, magas bérnél a kínálati görbe visszahajolhat; függ a népesség számától, korösszetételétől, az iskolázottságtól, az adóktól és a juttatásoktól.",
+    "Egyensúlyi bér: ahol a munkakereslet egyenlő a munkakínálattal; az egyensúlyi szint fölött rögzített bér (pl. minimálbér) mellett a munkakínálat meghaladja a keresletet: túlkínálat, azaz munkanélküliség (2. forrás) – a valóságos hatás a bérszint és a piac jellemzőitől függ.",
+    "Munkanélküli: a 15–74 éves, aki a vizsgált héten nem dolgozott, az elmúlt négy hétben aktívan keresett munkát, és két héten belül munkába tudna állni; a gazdaságilag aktívak = foglalkoztatottak + munkanélküliek; inaktív, aki nem dolgozik és nem keres munkát.",
+    "Munkanélküliségi ráta = munkanélküliek / gazdaságilag aktívak × 100; aktivitási ráta = aktívak / 15–74 éves népesség × 100; foglalkoztatási ráta = foglalkoztatottak / 15–74 éves népesség × 100 (1. forrás: 40 / 600 ≈ 6,7 %; 600 / 1 000 = 60 %; 560 / 1 000 = 56 %).",
+    "Mérés: lakossági munkaerő-felmérés (KSH) és a regisztrált álláskeresők nyilvántartása; az elbátortalanodott (passzív) munkanélküliek a ráta szerint inaktívak, ezért a ráta önmagában félrevezető lehet.",
+    "Fajták: súrlódásos (munkahelyváltás, pályakezdés), strukturális vagy szerkezeti (a kereslet és a képzettség, illetve a földrajzi hely eltérése), ciklikus vagy konjunkturális (gazdasági visszaesés), szezonális (idénymunkák); önkéntes – kényszerű munkanélküliség.",
+    "Természetes munkanélküliség: a súrlódásos és a strukturális munkanélküliség együtt, amely konjunktúra idején sem tűnik el; teljes foglalkoztatás esetén is van munkanélküliség.",
+    "Foglalkoztatáspolitika: aktív eszközök (átképzés, állásközvetítés, bértámogatás, vállalkozóvá válás támogatása, közfoglalkoztatás) a munkanélküliség csökkentésére; passzív eszközök (álláskeresési járadék, segély) a kieső jövedelem pótlására."
+  ],
+  "speakingSeconds": 720,
+  "prepSeconds": 1800,
+  "sampleAnswer": {
+    "turns": [
+      {
+        "speaker": "candidate",
+        "text": "A tételem a munkaerőpiac és a munkanélküliség. A munkaerőpiac a munkakereslet és a munkakínálat találkozásának helye. A keresleti oldalon a vállalatok és az állam mint munkáltató állnak, a kínálati oldalon a háztartások, a munka ára pedig a bér. A munkakereslet származékos kereslet: a vállalat azért keres munkaerőt, mert a vele előállított termékre van kereslet. A vállalat addig vesz fel újabb dolgozót, amíg az általa előállított többlettermék értéke legalább akkora, mint a bére; mivel a csökkenő hozadék miatt a határtermék csökken, a munkakeresleti görbe lefelé hajlik. A munkakínálat a munka és a szabadidő közötti választás eredménye. Ha nő a bér, a helyettesítési hatás miatt a szabadidő drágább lesz, ezért többet akarunk dolgozni, a jövedelmi hatás miatt viszont a magasabb jövedelemből több szabadidőt engedhetünk meg magunknak. Alacsony bérnél általában a helyettesítési hatás erősebb, ezért a kínálati görbe felfelé hajlik, nagyon magas bérnél visszahajolhat. A kínálatot a népesség száma és korösszetétele, az iskolázottság és az adók is befolyásolják. Az egyensúlyi bér ott alakul ki, ahol a munkakereslet egyenlő a munkakínálattal. Ha a bért az egyensúlyi szint fölött rögzítik, például minimálbérrel, mint a második forrás ábráján, a munkakínálat nagyobb lesz a keresletnél, ez túlkínálat, vagyis munkanélküliség. A valóságban ennek mértéke függ attól, mennyivel magasabb a minimálbér az egyensúlyinál. Munkanélküli az, aki a vizsgált héten nem dolgozott, aktívan keresett munkát, és két héten belül munkába tudna állni. A foglalkoztatottak és a munkanélküliek együtt a gazdaságilag aktív népesség, aki pedig nem dolgozik és nem is keres munkát, például a nappali tagozatos diák vagy a nyugdíjas, inaktív. A munkanélküliségi ráta a munkanélküliek aránya a gazdaságilag aktívakon belül: az első forrás adataival 40 osztva 600-zal, ez körülbelül 6,7 százalék. Az aktivitási ráta 600 osztva 1000-rel, azaz 60 százalék, a foglalkoztatási ráta 560 osztva 1000-rel, 56 százalék. A munkanélküliségnek több fajtája van. A súrlódásos munkanélküliség munkahelyváltás vagy pályakezdés miatt átmenetileg alakul ki. A strukturális, más néven szerkezeti munkanélküliség akkor jön létre, ha a munkavállalók képzettsége vagy lakóhelye nem felel meg a munkáltatók igényeinek, például egy iparág leépülése után. A ciklikus munkanélküliség a gazdasági visszaesés következménye, a szezonális pedig az idénymunkákhoz kötődik. A súrlódásos és a strukturális munkanélküliség együtt a természetes munkanélküliség, ezért teljes foglalkoztatás mellett sem nulla a ráta. Az állam foglalkoztatáspolitikája aktív és passzív eszközöket használ. Az aktív eszközök csökkentik a munkanélküliséget: ilyen az átképzés, az állásközvetítés, a bértámogatás, a vállalkozóvá válás támogatása vagy a közfoglalkoztatás. A passzív eszközök, például az álláskeresési járadék, a kieső jövedelmet pótolják, de magát a munkanélküliséget nem szüntetik meg."
+      },
+      {
+        "speaker": "examiner",
+        "text": "Csökkenhet-e úgy a munkanélküliségi ráta, hogy közben senki sem talál munkát?"
+      },
+      {
+        "speaker": "candidate",
+        "text": "Igen. Ha a munkanélküliek egy része hosszú sikertelen keresés után feladja a munkakeresést, akkor a statisztika szerint inaktívvá válik, kikerül a számlálóból és a nevezőből is, így a ráta csökken, pedig a foglalkoztatottak száma nem nőtt. Ezért a munkanélküliségi rátát érdemes a foglalkoztatási rátával együtt vizsgálni."
+      }
+    ],
+    "notes": [
+      "A munkaerőpiac mindkét oldalát indokolja: a származékos keresletet a határtermék értékéhez, a kínálatot a helyettesítési és a jövedelmi hatáshoz köti; a minimálbér hatását a 2. forrás ábraleírásával és óvatos, a mértéktől függő következtetéssel mutatja be.",
+      "A három rátát helyes nevezővel számolja ki az 1. forrás hipotetikus adataiból (≈ 6,7 %, 60 %, 56 %), és pontosan adja meg a munkanélküli statisztikai definícióját.",
+      "A munkanélküliség négy fajtáját példával jellemzi, kimondja a természetes ráta tartalmát, és a foglalkoztatáspolitika eszközeit célszerűen aktív és passzív csoportra osztja.",
+      "A kiegészítő kérdésnél felismeri az elbátortalanodott munkanélküliek statisztikai hatását – ez az adatok kritikus értelmezése, amit az emelt szint elvár."
+    ]
+  }
+}
